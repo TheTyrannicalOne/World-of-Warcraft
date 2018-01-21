@@ -1,20 +1,39 @@
 #################
-# Warcraft Game Files
+####
+#Warcraft Game Files
+
 #################
 
+####
+
 Cache/*
+
 Data/*
+
 Logs/*
+
 Utils/*
+
 Interface/Addons/Blizzard_*
+
 Updates/*
+
 *.exe
+
 *.dll
+
 *.*fil
+
 *.db
+
 *cache*.*
+
 *.manifest
+
 *.mpq
+
 *.info
+
 *.curseclient
+
 *patch.result
