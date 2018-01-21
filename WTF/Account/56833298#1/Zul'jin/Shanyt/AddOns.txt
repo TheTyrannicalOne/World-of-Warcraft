@@ -1,0 +1,4 @@
+ACP: enabled
+DynamicCam: enabled
+GW2_UI: enabled
+Immersion: enabled

@@ -1,0 +1,6 @@
+ACP: enabled
+DynamicCam: enabled
+GW2_UI: enabled
+Immersion: enabled
+Ace3: enabled
+ConsolePort: enabled
