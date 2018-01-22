@@ -1,14 +1,14 @@
 
 HandyNotes_MailboxesDB = {
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+	},
 	["global"] = {
 		["mailboxes"] = {
 			["Orgrimmar"] = {
-				[67493886] = true,
+				[67373879] = true,
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {

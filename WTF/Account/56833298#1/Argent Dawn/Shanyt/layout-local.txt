@@ -8,9 +8,9 @@ W: 64
 H: 64
 Frame: BNToastFrame
 FrameLevel: 1
-Anchor: LEFT
-X: 25
-Y: -227
+Anchor: CENTER
+X: 0
+Y: 50
 W: 250
 H: 50
 Frame: ItemRefTooltip
@@ -30,7 +30,7 @@ H: 424
 Frame: ChannelPulloutTab
 FrameLevel: 1
 Anchor: RIGHT
-X: 2960
+X: 3038
 Y: 61
 W: 90
 H: 32

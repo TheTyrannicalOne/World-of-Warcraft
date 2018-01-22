@@ -2,11 +2,10 @@
 MSBTProfiles_SavedVars = {
 	["profiles"] = {
 		["Default"] = {
-			["qualityExclusions"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
+			["triggers"] = {
+				["MSBT_TRIGGER_LOW_MANA"] = {
+					["mainEvents"] = "UNIT_POWER{powerType;;eq;;0;;unitID;;eq;;player;;threshold;;lt;;20}",
+				},
 			},
 			["shadow"] = {
 				["colorR"] = 0.568627450980392,
@@ -15,25 +14,16 @@ MSBTProfiles_SavedVars = {
 			},
 			["critFontName"] = "Prototype",
 			["normalOutlineIndex"] = 2,
-			["normalFontSize"] = 20,
-			["fire"] = {
-				["colorG"] = 0.682352941176471,
-				["colorB"] = 0.282352941176471,
-			},
+			["critOutlineIndex"] = 3,
+			["normalFontName"] = "Prototype",
 			["cooldownExclusions"] = {
 				["Survey"] = true,
 			},
 			["creationVersion"] = "5.5.91",
 			["critFontSize"] = 32,
-			["abilitySuppressions"] = {
-				["Judgements of the Bold"] = true,
-				["Fishing"] = true,
-				["Bear Form"] = true,
-				["Cat Form"] = true,
-				["Swift Flight Form"] = true,
-			},
+			["hideNames"] = true,
 			["events"] = {
-				["NOTIFICATION_REP_GAIN"] = {
+				["NOTIFICATION_LOOT"] = {
 					["disabled"] = true,
 				},
 				["NOTIFICATION_MONEY"] = {
@@ -51,50 +41,60 @@ MSBTProfiles_SavedVars = {
 				["NOTIFICATION_HOLY_POWER_CHANGE"] = {
 					["disabled"] = true,
 				},
-				["NOTIFICATION_LOOT"] = {
+				["NOTIFICATION_REP_GAIN"] = {
 					["disabled"] = true,
 				},
 			},
-			["hideNames"] = true,
+			["abilitySuppressions"] = {
+				["Bear Form"] = true,
+				["Fishing"] = true,
+				["Swift Flight Form"] = true,
+				["Cat Form"] = true,
+				["Judgements of the Bold"] = true,
+			},
 			["scrollAreas"] = {
-				["Static"] = {
-					["offsetY"] = -264,
-					["disabled"] = true,
-					["offsetX"] = -25,
-				},
 				["Incoming"] = {
 					["stickyDirection"] = "Up",
 					["direction"] = "Up",
 					["offsetX"] = -244,
+					["scrollHeight"] = 200,
 					["animationSpeed"] = 110,
-					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = -158,
 					["animationStyle"] = "Straight",
-					["scrollHeight"] = 200,
-				},
-				["Notification"] = {
-					["scrollHeight"] = 150,
-					["offsetX"] = -174,
-					["disabled"] = true,
-					["offsetY"] = 92,
-					["animationStyle"] = "Static",
-					["direction"] = "Up",
+					["behavior"] = "MSBT_NORMAL",
 				},
 				["Outgoing"] = {
 					["direction"] = "Up",
 					["offsetX"] = 239,
 					["behavior"] = "MSBT_NORMAL",
-					["animationSpeed"] = 80,
-					["animationStyle"] = "Straight",
 					["scrollHeight"] = 200,
+					["animationStyle"] = "Straight",
+					["animationSpeed"] = 80,
+				},
+				["Notification"] = {
+					["scrollHeight"] = 150,
+					["offsetX"] = -174,
+					["direction"] = "Up",
+					["offsetY"] = 92,
+					["animationStyle"] = "Static",
+					["disabled"] = true,
+				},
+				["Static"] = {
+					["offsetY"] = -264,
+					["disabled"] = true,
+					["offsetX"] = -25,
 				},
 			},
-			["normalFontName"] = "Prototype",
-			["critOutlineIndex"] = 3,
-			["triggers"] = {
-				["MSBT_TRIGGER_LOW_MANA"] = {
-					["mainEvents"] = "UNIT_POWER{powerType;;eq;;0;;unitID;;eq;;player;;threshold;;lt;;20}",
-				},
+			["fire"] = {
+				["colorG"] = 0.682352941176471,
+				["colorB"] = 0.282352941176471,
+			},
+			["normalFontSize"] = 20,
+			["qualityExclusions"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
 			},
 		},
 	},

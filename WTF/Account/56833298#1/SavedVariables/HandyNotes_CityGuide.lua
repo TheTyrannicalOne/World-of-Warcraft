@@ -1,15 +1,15 @@
 
 HandyNotes_CityGuideDB = {
-	["factionrealm"] = {
-		["Horde - Argent Dawn"] = {
+	["faction"] = {
+		["Horde"] = {
 			["dbversion"] = 3,
 		},
 	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
-	["faction"] = {
-		["Horde"] = {
+	["factionrealm"] = {
+		["Horde - Argent Dawn"] = {
 			["dbversion"] = 3,
 		},
 	},

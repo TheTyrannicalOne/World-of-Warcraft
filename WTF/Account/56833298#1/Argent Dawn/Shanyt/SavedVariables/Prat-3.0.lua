@@ -14,32 +14,20 @@ Prat3CharDB = {
 			},
 			["ChatFrame6EditBox"] = {
 			},
-			["ChatFrame1EditBox"] = {
-			},
-			["ChatFrame3EditBox"] = {
+			["ChatFrame9EditBox"] = {
 			},
 			["ChatFrame2EditBox"] = {
 			},
-			["ChatFrame9EditBox"] = {
+			["ChatFrame3EditBox"] = {
+			},
+			["ChatFrame1EditBox"] = {
 			},
 		},
 	},
 }
 Prat3HighCPUPerCharDB = {
-	["time"] = 1516585088,
+	["time"] = 1516591287,
 	["scrollback"] = {
-		["ChatFrame1"] = {
-			{
-				"|cff979797[20:36:53]|r|c00000000|r |cff0070ddKoppi|r has gone offline.", -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-				1, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [1]
-		},
 		["ChatFrame4"] = {
 			{
 				"|cff979797[19:04:50]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
@@ -131,6 +119,188 @@ Prat3HighCPUPerCharDB = {
 				6, -- [7]
 				7, -- [8]
 			}, -- [9]
+			{
+				"|cff979797[22:09:56]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				66, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [10]
+			{
+				"|cff979797[22:09:56]|r|c00000000|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				4, -- [7]
+				5, -- [8]
+			}, -- [11]
+			{
+				"|cff979797[22:12:40]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poseiduu:1:CHANNEL:2|h|cffff7c0aPoseiduu|r|h|cffd8d8d8]|r: apparently nothing interesting posted on the command board", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [12]
+			{
+				"|cff979797[22:12:41]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Jargane:2:CHANNEL:2|h|cfffff468Jargane|r|h|cffd8d8d8]|r: Spy", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				4, -- [8]
+			}, -- [13]
+			{
+				"|cff979797[22:12:48]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Madamshadow:3:CHANNEL:2|h|cffffffffMadamshadow|r|h|cffd8d8d8]|r: or at your garrison there a booad to", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				6, -- [8]
+			}, -- [14]
+			{
+				"|cff979797[22:13:12]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Poseiduu-ArgentDawn:4:CHANNEL:2|h|cffff7c0aPoseiduu|r|h|cffd8d8d8]|r: btw, three alliance above the org entrance", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [15]
+			{
+				"|cff979797[22:13:45]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Oierth-TheScryers:5:CHANNEL:2|h|cff8787edOierth|r-|cffa7e77bThe|r|h|cffd8d8d8]|r: kill them", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				8, -- [8]
+			}, -- [16]
+			{
+				"|cff979797[22:14:05]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Oierth-TheScryers:6:CHANNEL:2|h|cff8787edOierth|r-|cffa7e77bThe|r|h|cffd8d8d8]|r: now", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				8, -- [8]
+			}, -- [17]
+			{
+				"|cff979797[22:14:15]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Mitchhunt:7:CHANNEL:2|h|cfffff468Mitchhunt|r|h|cffd8d8d8]|r: theyre porting", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				10, -- [8]
+			}, -- [18]
+			{
+				"|cff979797[22:14:47]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Jargane-ArgentDawn:8:CHANNEL:2|h|cfffff468Jargane|r|h|cffd8d8d8]|r: I hate humans.", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				4, -- [8]
+			}, -- [19]
+			{
+				"|cff979797[22:17:37]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Sukkit-TheScryers:9:CHANNEL:2|h|cffaad372Sukkit|r-|cffa7e77bThe|r|h|cffd8d8d8]|r: Bling 5 > Bling 6", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				12, -- [8]
+			}, -- [20]
+			{
+				"|cff979797[22:19:44]|r|c00000000|r |Hchannel:channel:1|h[1] |h Changed Channel: |Hchannel:1|h[1. General - Deepholm]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				66, -- [5]
+				false, -- [6]
+				14, -- [7]
+				15, -- [8]
+			}, -- [21]
+			{
+				"|cff979797[22:19:44]|r|c00000000|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				17, -- [8]
+			}, -- [22]
+			{
+				"|cff979797[22:21:20]|r|c00000000|r |Hchannel:channel:1|h[1] |h Changed Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				66, -- [5]
+				false, -- [6]
+				14, -- [7]
+				15, -- [8]
+			}, -- [23]
+			{
+				"|cff979797[22:21:20]|r|c00000000|r |Hchannel:channel:2|h[2] |h Changed Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				17, -- [8]
+			}, -- [24]
+			{
+				"|cff979797[22:21:27]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				66, -- [5]
+				false, -- [6]
+				14, -- [7]
+				15, -- [8]
+			}, -- [25]
+			{
+				"|cff979797[22:21:27]|r|c00000000|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				17, -- [8]
+			}, -- [26]
+		},
+		["ChatFrame1"] = {
+			{
+				"|cff979797[20:36:53]|r|c00000000|r |cff0070ddKoppi|r has gone offline.", -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+				1, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [1]
 		},
 	},
 }
