@@ -1,4 +1,11 @@
 Version: 1
+Frame: MBB_MinimapButtonFrame
+FrameLevel: 2
+Anchor: BOTTOMRIGHT
+X: 11
+Y: -11
+W: 33
+H: 33
 Frame: ScriptErrorsFrame
 FrameLevel: 0
 Anchor: RIGHT

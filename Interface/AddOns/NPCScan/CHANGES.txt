@@ -1,0 +1,12 @@
+tag 7fbb6e3f71571f9737086fa100ba71bab8676ed6 7.3.2.1
+Author:	James D. Callahan III <jcallahan@curse.com>
+Date:	Tue Jan 9 19:51:53 2018 -0600
+
+Localization update.
+
+commit c11d617ae2766bdb9dd686ae20528f0ee2b40f71
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Oct 27 03:59:26 2017 -0500
+
+    Do not alert on NPCs from the World Map if they have no associated quest - fixes https://www.wowace.com/projects/npcscan/issues/188
+
