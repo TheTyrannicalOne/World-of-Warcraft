@@ -50,13 +50,21 @@ L= DBM:GetModLocalization(1897)
 L= DBM:GetModLocalization(1873)
 
 L:SetOptionLocalization({
-	InfoFrame =	"為首領能量顯示訊息框架"
+	InfoFrame =	"為戰鬥總覽顯示訊息框架"
+})
+
+L:SetMiscLocalization({
+	FallenAvatarDialog	= "你看到的這個軀殼原本蘊含薩格拉斯的力量，但我們要的是這整座聖殿！只要得到聖殿，就能把你們的世界燒成灰燼！"
 })
 
 ---------------------------
 -- Kil'jaeden --
 ---------------------------
 L= DBM:GetModLocalization(1898)
+
+L:SetWarningLocalization({
+	warnSingularitySoon		= "%d秒後擊退"
+})
 
 L:SetMiscLocalization({
 	Obelisklasers	= "石碑雷射"

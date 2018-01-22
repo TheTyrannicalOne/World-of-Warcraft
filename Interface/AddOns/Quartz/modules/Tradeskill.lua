@@ -1,6 +1,6 @@
 --[[
 	Copyright (C) 2006-2007 Nymbia
-	Copyright (C) 2010 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
+	Copyright (C) 2010-2017 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -29,6 +29,8 @@ local TimeFmt = Quartz3.Util.TimeFormat
 -- Upvalues
 local GetTime, UnitCastingInfo = GetTime, UnitCastingInfo
 local unpack, tonumber, format = unpack, tonumber, format
+
+local IsLegion = select(4, GetBuildInfo()) >= 70000
 
 local getOptions
 
@@ -89,7 +91,11 @@ function Tradeskill:OnEnable()
 	self:RegisterEvent("UNIT_SPELLCAST_STOP")
 	self:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
 	self:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED")
-	self:SecureHook("DoTradeSkill")
+	if IsLegion then
+		self:SecureHook(C_TradeSkillUI, "CraftRecipe", "DoTradeSkill")
+	else
+		self:SecureHook("DoTradeSkill")
+	end
 end
 
 function Tradeskill:UNIT_SPELLCAST_START(object, event, unit)

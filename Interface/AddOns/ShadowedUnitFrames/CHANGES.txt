@@ -1,12 +1,27 @@
-tag 52f4ef593f61e4b56fea8b2d6ea0d6c0361fab84 v4.1.19
+tag 15f235f3a6857c8d76cbf02f5744094ad39e07ad v4.1.21
 Author:	Hendrik Leppkes <h.leppkes@gmail.com>
-Date:	Thu Jun 29 15:56:16 2017 +0200
+Date:	Thu Jan 18 10:49:40 2018 +0100
 
-Tag as v4.1.19
+Tag as v4.1.21
 
-commit 48bc8b5fdafa01ce5b162bf1eb8b23cf687d242e
+commit 5425159707808326b5ff9bc981ac0a0398014390
 Author: Hendrik Leppkes <h.leppkes@gmail.com>
-Date:   Thu Jun 29 15:56:00 2017 +0200
+Date:   Thu Jan 18 10:43:12 2018 +0100
 
-    Fix combo points in "bar" layout
+    Update TOC of the options addon
+
+commit 95d06b32b758a169407dff511f2164e0c10a2bb1
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Thu Jan 18 10:38:05 2018 +0100
+
+    Update totem module for recent-ish class changes
+
+commit 6c2e324f4f8312184421f479c96df66f179e2d90
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Thu Jan 18 10:23:43 2018 +0100
+
+    Properly handle raid members in vehicles which should not cause targeting to change
+    
+    7.3.5 finally added the APIs required to properly fix this.
+    Fixes ticket #1081
 

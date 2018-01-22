@@ -1,0 +1,12 @@
+## Interface: 70100
+## Title: HandyNotes_LegionTownPortals
+## Notes: Legion Town Portal Scrolls
+## Author: Wickwrackrum
+## Version: 0.0.1
+## DefaultState: enabled
+## SavedVariables: HandyNotes_LegionTownPortalsDB
+## RequiredDeps: HandyNotes
+
+handler.lua
+config.lua
+nodes.lua

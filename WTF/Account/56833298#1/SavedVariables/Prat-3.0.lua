@@ -9,17 +9,17 @@ Prat3DB = {
 		},
 		["Prat_Frames"] = {
 			["profiles"] = {
-				["Bathal - Argent Dawn"] = {
+				["Vaddor - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Datgorg - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
@@ -27,23 +27,107 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
+				["Tyrannithal - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Brokehorn - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Shaewong - Dalaran"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Goramor - Runetotem"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Shaekhan - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Shanyt - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Bathal - Argent Dawn"] = {
+					["minchatwidthdefault"] = 296,
+					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
+				},
+				["Gangus - Runetotem"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
 				["Shaekhan - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Malivant - Dalaran"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Mulmok - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
+				["Claugh - Runetotem"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Tyriinid - Dalaran"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Datgorg - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Panboozled - Runetotem"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Fantastiburo - Argent Dawn"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
 				["Brotus - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["LUI-Towelliee"] = {
 					["minchatwidthdefault"] = 296,
@@ -53,13 +137,13 @@ Prat3DB = {
 				},
 				["Tyrannithal - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
+					["initialized"] = true,
 					["maxchatheightdefault"] = 400,
-					["initialized"] = true,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
-				["Towel-Monk"] = {
-					["initialized"] = true,
+				["Zulbathal - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
 				},
@@ -69,23 +153,95 @@ Prat3DB = {
 					["maxchatwidthdefault"] = 608.000061035156,
 					["initialized"] = true,
 				},
-				["Tyran - Argent Dawn"] = {
+				["Brotuss - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Brewnheimer - Darkspear"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Gillbourn - Runetotem"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Urbul - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Migimong - Runetotem"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Shathiel - Darkspear"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Sinh - Dalaran"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Vadder - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Mulmok - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Tyran - Argent Dawn"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Tynster - Dalaran"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Towel-Monk"] = {
+					["initialized"] = true,
+					["minchatwidthdefault"] = 296,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Default"] = {
 					["minchatwidthdefault"] = 296,
@@ -93,11 +249,35 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Tyrann - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Beeronimo - Dalaran"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Dialdaas - Darkspear"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Serbitechna - Darkspear"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Narisaric - Dalaran"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 			},
 		},
@@ -115,23 +295,23 @@ Prat3DB = {
 		},
 		["Prat_Font"] = {
 			["profiles"] = {
-				["Bathal - Argent Dawn"] = {
+				["Vaddor - Zul'jin"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Datgorg - Argent Dawn"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["rememberfont"] = true,
@@ -142,6 +322,78 @@ Prat3DB = {
 						["ChatFrame3"] = 15,
 					},
 				},
+				["Tyrannithal - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Brokehorn - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Shaewong - Dalaran"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Goramor - Runetotem"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Shaekhan - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Shanyt - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Bathal - Argent Dawn"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+				},
+				["Gangus - Runetotem"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
 				["Shaekhan - Argent Dawn"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
@@ -151,7 +403,16 @@ Prat3DB = {
 						["ChatFrame3"] = 15,
 					},
 				},
-				["Vadder - Argent Dawn"] = {
+				["Malivant - Dalaran"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Mulmok - Argent Dawn"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
@@ -160,14 +421,59 @@ Prat3DB = {
 						["ChatFrame3"] = 15,
 					},
 				},
-				["Brotus - Argent Dawn"] = {
+				["Claugh - Runetotem"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
+				},
+				["Tyriinid - Dalaran"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Datgorg - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Panboozled - Runetotem"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Fantastiburo - Argent Dawn"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Brotus - Argent Dawn"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
 				},
 				["LUI-Towelliee"] = {
 					["rememberfont"] = true,
@@ -180,19 +486,19 @@ Prat3DB = {
 				},
 				["Tyrannithal - Argent Dawn"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
-				["Towel-Monk"] = {
+				["Zulbathal - Zul'jin"] = {
 					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
 					["fontface"] = "weezerfont",
 				},
@@ -205,7 +511,88 @@ Prat3DB = {
 						["ChatFrame3"] = 15,
 					},
 				},
-				["Tyran - Argent Dawn"] = {
+				["Brotuss - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Brewnheimer - Darkspear"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Gillbourn - Runetotem"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Urbul - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Migimong - Runetotem"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Shathiel - Darkspear"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Sinh - Dalaran"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Vadder - Argent Dawn"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
@@ -214,23 +601,50 @@ Prat3DB = {
 						["ChatFrame3"] = 15,
 					},
 				},
-				["Mulmok - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
+				},
+				["Tyran - Argent Dawn"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Tynster - Dalaran"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Towel-Monk"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+					["fontface"] = "weezerfont",
 				},
 				["Default"] = {
 					["rememberfont"] = true,
@@ -241,14 +655,50 @@ Prat3DB = {
 					},
 					["fontface"] = "weezerfont",
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Tyrann - Zul'jin"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
+				},
+				["Beeronimo - Dalaran"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Dialdaas - Darkspear"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Serbitechna - Darkspear"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+				["Narisaric - Dalaran"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+					["fontface"] = "weezerfont",
 				},
 			},
 		},
@@ -286,11 +736,11 @@ Prat3DB = {
 		},
 		["Prat_Buttons"] = {
 			["profiles"] = {
-				["Bathal - Argent Dawn"] = {
+				["Vaddor - Zul'jin"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 				["Datgorg - Argent Dawn"] = {
 					["showBnet"] = false,
@@ -304,25 +754,97 @@ Prat3DB = {
 					["showMenu"] = false,
 					["showminimize"] = false,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Tyrannithal - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Brokehorn - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shaewong - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Goramor - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shaekhan - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shanyt - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Bathal - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showMenu"] = false,
 					["showminimize"] = false,
+				},
+				["Gangus - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shaekhan - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Malivant - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Urbul - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Claugh - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Tyriinid - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Datgorg - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Panboozled - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 				["Brotus - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Towel-Monk"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Tyrannithal - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showMenu"] = false,
@@ -334,11 +856,89 @@ Prat3DB = {
 					["showMenu"] = false,
 					["showminimize"] = false,
 				},
+				["Tyrannithal - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Zulbathal - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
 				["Shanyt - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showminimize"] = false,
 					["showMenu"] = false,
+				},
+				["Brotuss - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Brewnheimer - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Gillbourn - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Fantastiburo - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shathiel - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Migimong - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Sinh - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Vadder - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
 				},
 				["Mulmok - Argent Dawn"] = {
 					["showBnet"] = false,
@@ -352,23 +952,53 @@ Prat3DB = {
 					["showMenu"] = false,
 					["showminimize"] = false,
 				},
-				["Cowtastraphy - Argent Dawn"] = {
+				["Towel-Monk"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
-				["Shaekhan - Argent Dawn"] = {
+				["Tyrann - Zul'jin"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Serbitechna - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Beeronimo - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Dialdaas - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Tynster - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Narisaric - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 			},
 		},
@@ -378,26 +1008,56 @@ Prat3DB = {
 		},
 	},
 	["profileKeys"] = {
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Vaddor - Zul'jin"] = "Vaddor - Zul'jin",
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
+		["Brokehorn - Zul'jin"] = "Brokehorn - Zul'jin",
+		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
+		["Goramor - Runetotem"] = "Goramor - Runetotem",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Urbul - Zul'jin"] = "Urbul - Zul'jin",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Datgorg - Zul'jin"] = "Datgorg - Zul'jin",
+		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Brotuss - Zul'jin"] = "Brotuss - Zul'jin",
+		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
+		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
-		["Bathal - Argent Dawn"] = {
+		["Vaddor - Zul'jin"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
 				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Alias"] = 2,
@@ -407,9 +1067,9 @@ Prat3DB = {
 		["Datgorg - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
 				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["ChatLog"] = 2,
@@ -428,6 +1088,102 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
+		["Tyrannithal - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Brokehorn - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Shaewong - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Goramor - Runetotem"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Shaekhan - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Shanyt - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Bathal - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Gangus - Runetotem"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
 		["Shaekhan - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
@@ -440,7 +1196,19 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
-		["Vadder - Argent Dawn"] = {
+		["Malivant - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Mulmok - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
@@ -452,12 +1220,72 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
+		["Claugh - Runetotem"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Tyriinid - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Datgorg - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Panboozled - Runetotem"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Fantastiburo - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
 		["Brotus - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
 				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["ChatLog"] = 2,
@@ -479,16 +1307,16 @@ Prat3DB = {
 		["Tyrannithal - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
 				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
-		["Towel-Monk"] = {
+		["Zulbathal - Zul'jin"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["OriginalButtons"] = 2,
@@ -512,24 +1340,132 @@ Prat3DB = {
 				["ChatLog"] = 2,
 			},
 		},
-		["Tyran - Argent Dawn"] = {
+		["Brotuss - Zul'jin"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
 				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Brewnheimer - Darkspear"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Fantastiburo - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Gillbourn - Runetotem"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Urbul - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Migimong - Runetotem"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Shathiel - Darkspear"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Sinh - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Jingojaggot - Zul'jin"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Vadder - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["ChatLog"] = 2,
 				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Thromar - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Alias"] = 2,
@@ -539,9 +1475,45 @@ Prat3DB = {
 		["Cowtastraphy - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
 				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Tyran - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Tynster - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Towel-Monk"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["ChatLog"] = 2,
@@ -560,15 +1532,63 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Tyrann - Zul'jin"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
 				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Beeronimo - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Dialdaas - Darkspear"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Serbitechna - Darkspear"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Narisaric - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},

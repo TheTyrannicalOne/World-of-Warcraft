@@ -1,4 +1,4 @@
-local VERSION = 40
+local VERSION = 49
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -107,6 +107,34 @@ Added ignoring quests [right click on quest name]
 
 Added option for changing arrow style (TomTom or ExRT)
 Minor 7.3.0 Updates
+
+7.3.0 Update
+Graphical updates
+New anchor position: inside map [experimental]
+Frame now movable if you run it via "/wql" [Use "/wql reset" if you somehow lost frame out of the screen]
+
+Added "Ignore filter" oprions for factions "Army of the Light" & "Argussian Reach"
+Added new anchor position: free outside [Use "/wql resetanchor" or "/wql reset" if you somehow lost frame out of the screen]
+Minor fixes
+
+Added Invasion Points
+
+Fixes
+
+General Argus Map were replaced with zones map [in testing, you can disable this in options]
+Readded info for AP quests that can be done with next Aknowledge level [only for EU and US servers]
+
+Fixes for ADDON_ACTION_BLOCKED errors
+Added "/wql argus" command
+
+Fixes
+
+Added option for percentage of the current level's max AP number (by Corveroth)
+Update for korean translation (by yuk6196)
+Fixes (Frame strata for free position)
+
+Minor fixes
+Update for chinese translation (by dxlmike)
 ]]
 
 
@@ -156,6 +184,8 @@ local LOCALE =
 		distance = "Расстояние",
 		disableBountyIcon = "Отключить иконку фракций для заданий посланника",
 		arrow = "Стрелка",
+		invasionPoints = "Точки вторжения",
+		argusMap = "Включить карту Аргуса",
 	} or
 	locale == "deDE" and {
 		gear = "Ausrüstung",
@@ -180,6 +210,8 @@ local LOCALE =
 		distance = "Distance",
 		disableBountyIcon = "Disable Emissary icons for faction names",
 		arrow = "Arrow",
+		invasionPoints = "Invasion Points",
+		argusMap = "Enable Argus map",
 	} or
 	locale == "frFR" and {
 		gear = "Équipement",
@@ -204,6 +236,8 @@ local LOCALE =
 		distance = "Distance",
 		disableBountyIcon = "Disable Emissary icons for faction names",
 		arrow = "Arrow",
+		invasionPoints = "Invasion Points",
+		argusMap = "Enable Argus map",
 	} or
 	(locale == "esES" or locale == "esMX") and {
 		gear = "Equipo",
@@ -228,6 +262,8 @@ local LOCALE =
 		distance = "Distance",
 		disableBountyIcon = "Disable Emissary icons for faction names",
 		arrow = "Arrow",
+		invasionPoints = "Invasion Points",
+		argusMap = "Enable Argus map",
 	} or	
 	locale == "itIT" and {
 		gear = "Equipaggiamento",
@@ -252,6 +288,8 @@ local LOCALE =
 		distance = "Distance",
 		disableBountyIcon = "Disable Emissary icons for faction names",
 		arrow = "Arrow",
+		invasionPoints = "Invasion Points",
+		argusMap = "Enable Argus map",
 	} or
 	locale == "ptBR" and {
 		gear = "Equipamento",
@@ -276,32 +314,36 @@ local LOCALE =
 		distance = "Distance",
 		disableBountyIcon = "Disable Emissary icons for faction names",
 		arrow = "Arrow",
+		invasionPoints = "Invasion Points",
+		argusMap = "Enable Argus map",
 	} or
 	locale == "koKR" and {
-		gear = "Gear",
-		gold = "금메달",
+		gear = "장비",
+		gold = "골드",
 		blood = "살게라스의 피",
-		knowledgeTooltip = "** Can be completed after reaching next artifact knowledge level",
-		disableArrow = "Disable arrow",
-		anchor = "Anchor",
-		totalap = "Total Artifact Power: ",
-		totalapdisable = 'Disable "Total AP"',
-		timeToComplete = "Time to complete: ",
-		bountyIgnoreFilter = "Emissary quests",
-		enigmaHelper = "Enable Enigma Helper",
-		barrelsHelper = "Enable Barrels Helper",
-		honorIgnoreFilter = "PvP quests",
-		ignoreFilter = "Ignore filter for",
-		epicIgnoreFilter = '"Golden" quests',
-		wantedIgnoreFilter = "WANTED quests",		
-		apFormatSetup = "Artifact Power format",
-		headerEnable = "Enable header line",
-		disabeHighlightNewQuests = "Disable highlight for new quests",
-		distance = "Distance",
-		disableBountyIcon = "Disable Emissary icons for faction names",
-		arrow = "Arrow",
+		knowledgeTooltip = "** 다음 유물 지식 레벨에 도달한 후 완료할 수 있습니다",
+		disableArrow = "화살표 비활성화",
+		anchor = "고정기",
+		totalap = "총 유물력: ",
+		totalapdisable = '"총 유물력" 비활성화',
+		timeToComplete = "완료까지 시간: ",
+		bountyIgnoreFilter = "사절 퀘스트",
+		enigmaHelper = "수수께끼 도우미 활성화",
+		barrelsHelper = "통 토우미 활성화",
+		honorIgnoreFilter = "PvP 퀘스트",
+		ignoreFilter = "다음에 필터 무시",
+		epicIgnoreFilter = '"금테" 퀘스트',
+		wantedIgnoreFilter = "현상수배 퀘스트", 
+		apFormatSetup = "유물력 형식",
+		headerEnable = "제목 줄 활성화",
+		disabeHighlightNewQuests = "새로운 퀘스트 강조 비활성화",
+		distance = "거리",
+		disableBountyIcon = "평판 이름에 사절 아이콘 비활성화",
+		arrow = "화살표",
+		invasionPoints = "침공 거점",
+		argusMap = "아르거스 지도 활성화",
 	} or
-	(locale == "zhCN" or locale == "zhTW") and {	--by cuihuanyu1986
+	(locale == "zhCN" or locale == "zhTW") and {	--by dxlmike, cuihuanyu1986
 		gear = "装备",
 		gold = "黄金",
 		blood = "萨格拉斯之血",
@@ -322,8 +364,10 @@ local LOCALE =
 		headerEnable = "开启 标题行",
 		disabeHighlightNewQuests = "禁用 新任务高亮",
 		distance = "距离",
-		disableBountyIcon = "Disable Emissary icons for faction names",
-		arrow = "Arrow",
+		disableBountyIcon = "大使任务不在列表中显示派系图标",
+		arrow = "箭头",
+		invasionPoints = "入侵点",
+		argusMap = "启用阿古斯地图",
 	} or	
 	{
 		gear = "Gear",
@@ -348,6 +392,8 @@ local LOCALE =
 		distance = "Distance",
 		disableBountyIcon = "Disable Emissary icons for faction names",
 		arrow = "Arrow",
+		invasionPoints = "Invasion Points",
+		argusMap = "Enable Argus map",
 	}
 
 local orderResName = GetCurrencyInfo(1220)
@@ -397,8 +443,186 @@ local TomTomQuests = {}
 local UpdateTicker = nil
 
 local ELib = {}
+ELib.Templates = {}
+function ELib.Templates:Border(self,cR,cG,cB,cA,size,offsetX,offsetY)
+	offsetX = offsetX or 0
+	offsetY = offsetY or 0
+
+	self.BorderTop = self:CreateTexture(nil,"BACKGROUND")
+	self.BorderTop:SetColorTexture(cR,cG,cB,cA)
+	self.BorderTop:SetPoint("TOPLEFT",-size-offsetX,size+offsetY)
+	self.BorderTop:SetPoint("BOTTOMRIGHT",self,"TOPRIGHT",size+offsetX,offsetY)
+
+	self.BorderLeft = self:CreateTexture(nil,"BACKGROUND")
+	self.BorderLeft:SetColorTexture(cR,cG,cB,cA)
+	self.BorderLeft:SetPoint("TOPLEFT",-size-offsetX,offsetY)
+	self.BorderLeft:SetPoint("BOTTOMRIGHT",self,"BOTTOMLEFT",-offsetX,-offsetY)
+
+	self.BorderBottom = self:CreateTexture(nil,"BACKGROUND")
+	self.BorderBottom:SetColorTexture(cR,cG,cB,cA)
+	self.BorderBottom:SetPoint("BOTTOMLEFT",-size-offsetX,-size-offsetY)
+	self.BorderBottom:SetPoint("TOPRIGHT",self,"BOTTOMRIGHT",size+offsetX,-offsetY)
+
+	self.BorderRight = self:CreateTexture(nil,"BACKGROUND")
+	self.BorderRight:SetColorTexture(cR,cG,cB,cA)
+	self.BorderRight:SetPoint("BOTTOMRIGHT",size+offsetX,offsetY)
+	self.BorderRight:SetPoint("TOPLEFT",self,"TOPRIGHT",offsetX,-offsetY)
+	
+	self.BorderColor = {cR,cG,cB,cA}
+end
+function ELib:Shadow(parent,size,edgeSize)
+	local self = CreateFrame("Frame",nil,parent)
+	self:SetPoint("LEFT",-size,0)
+	self:SetPoint("RIGHT",size,0)
+	self:SetPoint("TOP",0,size)
+	self:SetPoint("BOTTOM",0,-size)
+	self:SetBackdrop({edgeFile="Interface/AddOns/WorldQuestsList/shadow",edgeSize=edgeSize or 28,insets={left=size,right=size,top=size,bottom=size}})
+	self:SetBackdropBorderColor(0,0,0,.45)
+
+	return self
+end
+
+function ELib:Shadow2(self,size,offsetX,offsetY,isBold)
+	offsetX = offsetX or 0
+	offsetY = offsetY or 0
+	isBold = true
+
+	self.ShadowTop = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowTop:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowTop:SetPoint("TOPLEFT",10,size+offsetY)
+	self.ShadowTop:SetPoint("BOTTOMRIGHT",self,"TOPRIGHT",-10,offsetY)
+	self.ShadowTop:SetVertexColor(0,0,0,.45)
+	self.ShadowTop:SetTexCoord((128+31)/256,(128+32)/256,0,22/32)
+	
+	self.ShadowTopLeftInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowTopLeftInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowTopLeftInside:SetPoint("TOPLEFT",-offsetX,size+offsetY)
+	self.ShadowTopLeftInside:SetPoint("BOTTOMRIGHT",self,"TOPLEFT",-offsetX+10,offsetY)
+	self.ShadowTopLeftInside:SetVertexColor(0,0,0,.45)
+	self.ShadowTopLeftInside:SetTexCoord((128+22)/256,(128+32)/256,0,22/32)	
+	
+	self.ShadowTopLeft = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowTopLeft:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowTopLeft:SetPoint("TOPLEFT",-offsetX-size,size+offsetY)
+	self.ShadowTopLeft:SetPoint("BOTTOMRIGHT",self,"TOPLEFT",-offsetX,offsetY)
+	self.ShadowTopLeft:SetVertexColor(0,0,0,.45)
+	self.ShadowTopLeft:SetTexCoord((128+0)/256,(128+22)/256,0,22/32)	
+
+	self.ShadowTopRightInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowTopRightInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowTopRightInside:SetPoint("TOPLEFT",self,"TOPRIGHT",offsetX-10,size+offsetY)
+	self.ShadowTopRightInside:SetPoint("BOTTOMRIGHT",self,"TOPRIGHT",offsetX,offsetY)
+	self.ShadowTopRightInside:SetVertexColor(0,0,0,.45)
+	self.ShadowTopRightInside:SetTexCoord((128+32)/256,(128+22)/256,0,22/32)	
+
+	self.ShadowTopRight = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowTopRight:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowTopRight:SetPoint("TOPLEFT",self,"TOPRIGHT",offsetX,size+offsetY)
+	self.ShadowTopRight:SetPoint("BOTTOMRIGHT",self,"TOPRIGHT",offsetX+size,offsetY)
+	self.ShadowTopRight:SetVertexColor(0,0,0,.45)
+	self.ShadowTopRight:SetTexCoord((128+22)/256,(128+0)/256,0,22/32)
+	
+	self.ShadowLeftTopInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowLeftTopInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowLeftTopInside:SetPoint("TOPLEFT",-offsetX-size,offsetY)
+	self.ShadowLeftTopInside:SetPoint("BOTTOMRIGHT",self,"TOPLEFT",-offsetX,offsetY-10)
+	self.ShadowLeftTopInside:SetVertexColor(0,0,0,.45)
+	self.ShadowLeftTopInside:SetTexCoord((128+0)/256,(128+22)/256,22/32,32/32)
+	
+	self.ShadowLeft = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowLeft:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowLeft:SetPoint("TOPLEFT",-offsetX-size,offsetY-10)
+	self.ShadowLeft:SetPoint("BOTTOMRIGHT",self,"BOTTOMLEFT",-offsetX,-offsetY+10)
+	self.ShadowLeft:SetVertexColor(0,0,0,.45)
+	self.ShadowLeft:SetTexCoord((128+0)/256,(128+22)/256,31/32,32/32)		
+		
+	self.ShadowLeftBottomInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowLeftBottomInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowLeftBottomInside:SetPoint("TOPLEFT",self,"BOTTOMLEFT",-offsetX-size,-offsetY+10)
+	self.ShadowLeftBottomInside:SetPoint("BOTTOMRIGHT",self,"BOTTOMLEFT",-offsetX,-offsetY)
+	self.ShadowLeftBottomInside:SetVertexColor(0,0,0,.45)
+	self.ShadowLeftBottomInside:SetTexCoord((128+0)/256,(128+22)/256,32/32,22/32)
+	
+	self.ShadowLeftBottom = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowLeftBottom:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowLeftBottom:SetPoint("TOPLEFT",self,"BOTTOMLEFT",-offsetX-size,-offsetY)
+	self.ShadowLeftBottom:SetPoint("BOTTOMRIGHT",self,"BOTTOMLEFT",-offsetX,-offsetY-size)
+	self.ShadowLeftBottom:SetVertexColor(0,0,0,.45)
+	self.ShadowLeftBottom:SetTexCoord((128+0)/256,(128+22)/256,22/32,0)
+
+	self.ShadowBottomLeftInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowBottomLeftInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowBottomLeftInside:SetPoint("TOPLEFT",self,"BOTTOMLEFT",-offsetX,-offsetY)
+	self.ShadowBottomLeftInside:SetPoint("BOTTOMRIGHT",self,"BOTTOMLEFT",-offsetX+10,-offsetY-size)
+	self.ShadowBottomLeftInside:SetVertexColor(0,0,0,.45)
+	self.ShadowBottomLeftInside:SetTexCoord((128+22)/256,(128+32)/256,22/32,0)
+
+	self.ShadowBottom = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowBottom:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowBottom:SetPoint("TOPLEFT",self,"BOTTOMLEFT",-offsetX+10,-offsetY)
+	self.ShadowBottom:SetPoint("BOTTOMRIGHT",self,"BOTTOMRIGHT",offsetX-10,-offsetY-size)
+	self.ShadowBottom:SetVertexColor(0,0,0,.45)
+	self.ShadowBottom:SetTexCoord((128+31)/256,(128+32)/256,22/32,0)	
+
+	self.ShadowBottomRightInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowBottomRightInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowBottomRightInside:SetPoint("TOPLEFT",self,"BOTTOMRIGHT",offsetX-10,-offsetY)
+	self.ShadowBottomRightInside:SetPoint("BOTTOMRIGHT",self,"BOTTOMRIGHT",offsetX,-offsetY-size)
+	self.ShadowBottomRightInside:SetVertexColor(0,0,0,.45)
+	self.ShadowBottomRightInside:SetTexCoord((128+32)/256,(128+22)/256,22/32,0)
+	
+	self.ShadowBottomRight = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowBottomRight:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowBottomRight:SetPoint("TOPLEFT",self,"BOTTOMRIGHT",offsetX,-offsetY)
+	self.ShadowBottomRight:SetPoint("BOTTOMRIGHT",self,"BOTTOMRIGHT",offsetX+size,-offsetY-size)
+	self.ShadowBottomRight:SetVertexColor(0,0,0,.45)
+	self.ShadowBottomRight:SetTexCoord((128+22)/256,(128+0)/256,22/32,0)
+	
+	self.ShadowRightBottomInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowRightBottomInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowRightBottomInside:SetPoint("TOPLEFT",self,"BOTTOMRIGHT",offsetX,-offsetY+10)
+	self.ShadowRightBottomInside:SetPoint("BOTTOMRIGHT",self,"BOTTOMRIGHT",offsetX+size,-offsetY)
+	self.ShadowRightBottomInside:SetVertexColor(0,0,0,.45)
+	self.ShadowRightBottomInside:SetTexCoord((128+22)/256,(128+0)/256,32/32,22/32)
+	
+	self.ShadowRight = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowRight:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowRight:SetPoint("TOPLEFT",self,"TOPRIGHT",offsetX,offsetY-10)
+	self.ShadowRight:SetPoint("BOTTOMRIGHT",self,"BOTTOMRIGHT",offsetX+size,-offsetY+10)
+	self.ShadowRight:SetVertexColor(0,0,0,.45)
+	self.ShadowRight:SetTexCoord((128+22)/256,(128+0)/256,31/32,32/32)
+	
+	self.ShadowRightTopInside = self:CreateTexture(nil,"BACKGROUND")
+	self.ShadowRightTopInside:SetTexture("Interface/AddOns/WorldQuestsList/shadow")
+	self.ShadowRightTopInside:SetPoint("TOPLEFT",self,"TOPRIGHT",offsetX,offsetY)
+	self.ShadowRightTopInside:SetPoint("BOTTOMRIGHT",self,"TOPRIGHT",offsetX+size,offsetY-10)
+	self.ShadowRightTopInside:SetVertexColor(0,0,0,.45)
+	self.ShadowRightTopInside:SetTexCoord((128+22)/256,(128+0)/256,22/32,32/32)
+	
+	if isBold then
+		self.ShadowTop:SetTexCoord((192+31)/256,(192+32)/256,1,10/32)
+		self.ShadowTopLeftInside:SetTexCoord((192+22)/256,(192+32)/256,1,10/32)	
+		self.ShadowTopLeft:SetTexCoord((192+0)/256,(192+22)/256,1,10/32)	
+		self.ShadowTopRightInside:SetTexCoord((192+32)/256,(192+22)/256,1,10/32)	
+		self.ShadowTopRight:SetTexCoord((192+22)/256,(192+0)/256,1,10/32)
+		self.ShadowLeftTopInside:SetTexCoord((192+0)/256,(192+22)/256,10/32,0)
+		self.ShadowLeft:SetTexCoord((192+0)/256,(192+22)/256,1/32,0)		
+		self.ShadowLeftBottomInside:SetTexCoord((192+0)/256,(192+22)/256,0,10/32)
+		self.ShadowLeftBottom:SetTexCoord((192+0)/256,(192+22)/256,10/32,1)
+		self.ShadowBottomLeftInside:SetTexCoord((192+22)/256,(192+32)/256,10/32,1)
+		self.ShadowBottom:SetTexCoord((192+31)/256,(192+32)/256,10/32,1)	
+		self.ShadowBottomRightInside:SetTexCoord((192+32)/256,(192+22)/256,10/32,1)
+		self.ShadowBottomRight:SetTexCoord((192+22)/256,(192+0)/256,10/32,1)
+		self.ShadowRightBottomInside:SetTexCoord((192+22)/256,(192+0)/256,0,10/32)
+		self.ShadowRight:SetTexCoord((192+22)/256,(192+0)/256,1/32,0)
+		self.ShadowRightTopInside:SetTexCoord((192+22)/256,(192+0)/256,10/32,0)
+	end
+end
 
 local function AddArrow(x,y,worldX,worldY,map,continent,name,questID)
+	if VWQL.DisableArrow then
+		return
+	end
 	if VWQL.ArrowStyle == 2 and TomTom then
 		TomTomQuests[questID or -1] = TomTom:AddZWaypoint(continent, map, x*100, y*100, name) or true
 	end
@@ -407,12 +631,26 @@ local function AddArrow(x,y,worldX,worldY,map,continent,name,questID)
 	end
 end
 
+local WorldQuestList
+
 local function EnableClickArrow()
-	hooksecurefunc("TaskPOI_OnClick", function (self,button)
+	local function TOnClick(self,button)
 		if VWQL.DisableArrow then
 			return
 		end
 		if self.worldQuest and button == "LeftButton" then
+			if self.WCLdata then
+				local info = self.WCLdata
+				local x,y,Wx,Wy = info.Dx,info.Dy,info.Zx,info.Zy
+				if x and y then
+					local questId = info.questId
+					local name = questId and C_TaskQuest.GetQuestInfoByQuestID(questId) or info.name or "unk"
+					local continent = GetCurrentMapContinent()
+					AddArrow(x,y,Wx,Wy,info.map or 0,continent,name,questId)
+					return
+				end
+			end
+		
 			local mapAreaID = GetCurrentMapAreaID()
 			local taskInfo = C_TaskQuest.GetQuestsForPlayerByMapID(mapAreaID)
 			local numTaskPOIs = 0
@@ -440,8 +678,10 @@ local function EnableClickArrow()
 					end
 				end
 			end
-		end
-	end)
+		end	  
+	end
+	hooksecurefunc("TaskPOI_OnClick", TOnClick)
+	WorldQuestList.TaskPOI_OnClick_hook = TOnClick
 	EnableClickArrow = nil
 end
 
@@ -449,11 +689,13 @@ end
 local WorldQuestList_Width = 450+70
 local WorldQuestList_ZoneWidth = 100
 
-local WorldQuestList = CreateFrame("Frame","WorldQuestsListFrame",WorldMapFrame)
+WorldQuestList = CreateFrame("Frame","WorldQuestsListFrame",WorldMapFrame)
 WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-4)
 WorldQuestList:SetSize(550,300)
 
 WorldQuestList:SetScript("OnHide",function(self)
+	WorldQuestList.IsSoloRun = false
+	WorldQuestList.moveHeader:Hide()
 	if self:GetParent() ~= WorldMapFrame then
 		self:SetParent(WorldMapFrame)
 		UpdateAnchor()
@@ -519,11 +761,14 @@ WorldQuestList.Cheader:SetScript("OnVerticalScroll",function(self,val)
 	UpdateScrollButtonsState()
 end)
 
+WorldQuestList.SCROLL_FIX_BOTTOM = 0
+WorldQuestList.SCROLL_FIX_TOP = 0
+
 WorldQuestList.ScrollDownLine = CreateFrame("Button", nil, WorldQuestList)
-WorldQuestList.ScrollDownLine:SetPoint("LEFT",-1,0)
-WorldQuestList.ScrollDownLine:SetPoint("RIGHT",1,0)
-WorldQuestList.ScrollDownLine:SetPoint("BOTTOM",0,-1)
-WorldQuestList.ScrollDownLine:SetHeight(15)
+WorldQuestList.ScrollDownLine:SetPoint("LEFT",0,0)
+WorldQuestList.ScrollDownLine:SetPoint("RIGHT",0,0)
+WorldQuestList.ScrollDownLine:SetPoint("BOTTOM",WorldQuestList.Cheader,0,-1)
+WorldQuestList.ScrollDownLine:SetHeight(16)
 WorldQuestList.ScrollDownLine:SetFrameLevel(120)
 WorldQuestList.ScrollDownLine:Hide()
 WorldQuestList.ScrollDownLine:SetScript("OnEnter",function(self)
@@ -564,11 +809,410 @@ WorldQuestList.ScrollDownLine.i:SetPoint("CENTER")
 WorldQuestList.ScrollDownLine.i:SetTexCoord(0,.25,0,1)
 WorldQuestList.ScrollDownLine.i:SetSize(14,14)
 
+
+local _BonusObjectiveTracker_TrackWorldQuest, _BonusObjectiveTracker_UntrackWorldQuest = BonusObjectiveTracker_TrackWorldQuest, BonusObjectiveTracker_UntrackWorldQuest
+local lastTrackedQuestID = nil
+local BonusObjectiveTracker_TrackWorldQuest = function(questID, hardWatch)
+	if InCombatLockdown() then
+		if AddWorldQuestWatch(questID, hardWatch) then
+			if lastTrackedQuestID and lastTrackedQuestID ~= questID then
+				if not IsWorldQuestHardWatched(lastTrackedQuestID) and hardWatch then
+					AddWorldQuestWatch(lastTrackedQuestID, true) -- Promote to a hard watch
+				end
+			end
+			lastTrackedQuestID = questID
+		end
+	
+		if not hardWatch or GetSuperTrackedQuestID() == 0 then
+			SetSuperTrackedQuestID(questID)
+		end
+	else
+		return _BonusObjectiveTracker_TrackWorldQuest(questID, hardWatch)
+	end
+end
+
+local BonusObjectiveTracker_UntrackWorldQuest = function(questID)
+	if InCombatLockdown() then
+		if RemoveWorldQuestWatch(questID) then
+			if lastTrackedQuestID == questID then
+				lastTrackedQuestID = nil
+			end
+			if questID == GetSuperTrackedQuestID() then
+				QuestSuperTracking_ChooseClosestQuest()
+			end
+		end
+	else
+		return _BonusObjectiveTracker_UntrackWorldQuest(questID)
+	end
+end
+
+do
+	local WORLDMAP_TASK_POIS, WORLDMAP_POIS = {},{}
+	
+	local function TaskPOI_OnClick(self, button)
+		if self.worldQuest and not ChatEdit_TryInsertQuestLinkForQuestID(self.questID) then
+			PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON);
+
+			if IsShiftKeyDown() then
+				if IsWorldQuestHardWatched(self.questID) or (IsWorldQuestWatched(self.questID) and GetSuperTrackedQuestID() == self.questID) then
+					BonusObjectiveTracker_UntrackWorldQuest(self.questID);
+				else
+					BonusObjectiveTracker_TrackWorldQuest(self.questID, true);
+				end
+			else
+				if IsWorldQuestHardWatched(self.questID) then
+					SetSuperTrackedQuestID(self.questID);
+				else
+					BonusObjectiveTracker_TrackWorldQuest(self.questID);
+				end
+			end
+		end
+		if WorldQuestList.TaskPOI_OnClick_hook then
+			WorldQuestList.TaskPOI_OnClick_hook(self, button)
+		end
+	end
+	local function WorldMap_GetOrCreateTaskPOI(index)
+		local existingButton = _G["WorldMapFrameWCLTaskPOI"..index];
+		if existingButton then
+			return existingButton;
+		end
+	
+		local button = CreateFrame("Button", "WorldMapFrameWCLTaskPOI"..index, WorldMapPOIFrame);
+		WORLDMAP_TASK_POIS[index] = button
+		button:SetFlattensRenderLayers(true);
+		button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+		button:SetScript("OnEnter", TaskPOI_OnEnter);
+		button:SetScript("OnLeave", TaskPOI_OnLeave);
+		button:SetScript("OnClick", TaskPOI_OnClick);
+		button:SetScript("OnHide", TaskPOI_OnHide);
+	
+		button.UpdateTooltip = TaskPOI_OnEnter;
+	
+		button.Texture = button:CreateTexture(button:GetName().."Texture", "OVERLAY");
+	
+		button.Glow = button:CreateTexture(button:GetName().."Glow", "BACKGROUND", nil, -2);
+		button.Glow:SetSize(50, 50);
+		button.Glow:SetPoint("CENTER");
+		button.Glow:SetTexture("Interface/WorldMap/UI-QuestPoi-IconGlow.tga");
+		button.Glow:SetBlendMode("ADD");
+	
+		button.SelectedGlow = button:CreateTexture(button:GetName().."SelectedGlow", "OVERLAY", nil, 2);
+		button.SelectedGlow:SetBlendMode("ADD");
+	
+		button.CriteriaMatchRing = button:CreateTexture(button:GetName().."CriteriaMatchRing", "BACKGROUND", nil, 2);
+		button.CriteriaMatchRing:SetAtlas("worldquest-emissary-ring", true)
+		button.CriteriaMatchRing:SetPoint("CENTER", 0, 0)
+	
+		button.SpellTargetGlow = button:CreateTexture(button:GetName().."SpellTargetGlow", "OVERLAY", nil, 1);
+		button.SpellTargetGlow:SetAtlas("worldquest-questmarker-abilityhighlight", true);
+		button.SpellTargetGlow:SetAlpha(.6);
+		button.SpellTargetGlow:SetBlendMode("ADD");
+		button.SpellTargetGlow:SetPoint("CENTER", 0, 0);
+	
+		button.Underlay = button:CreateTexture(button:GetName().."Underlay", "BACKGROUND");
+		button.Underlay:SetWidth(34);
+		button.Underlay:SetHeight(34);
+		button.Underlay:SetPoint("CENTER", 0, -1);
+	
+		button.TimeLowFrame = CreateFrame("Frame", nil, button);
+		button.TimeLowFrame:SetSize(22, 22);
+		button.TimeLowFrame:SetPoint("CENTER", -10, -10);
+		button.TimeLowFrame.Texture = button.TimeLowFrame:CreateTexture(nil, "OVERLAY");
+		button.TimeLowFrame.Texture:SetAllPoints(button.TimeLowFrame);
+		button.TimeLowFrame.Texture:SetAtlas("worldquest-icon-clock");
+	
+		button.TrackedCheck = button:CreateTexture(button:GetName().."TrackedCheck", "OVERLAY", nil, 1);
+		button.TrackedCheck:SetAtlas("worldquest-emissary-tracker-checkmark", true);
+		button.TrackedCheck:SetPoint("BOTTOM", button, "BOTTOMRIGHT", 0, -2);
+	
+		WorldMap_ResetPOI(button, true, false);
+	
+		return button;
+	end
+	local function WorldMap_CreatePOI(index, isObjectIcon, atlasIcon)
+		local button = CreateFrame("Button", "WorldMapFrameWCLPOI"..index, WorldMapPOIFrame);
+		WORLDMAP_POIS[index] = button
+		button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+		button:SetScript("OnEnter", WorldMapPOI_OnEnter);
+		button:SetScript("OnLeave", WorldMapPOI_OnLeave);
+		button:SetScript("OnClick", WorldMapPOI_OnClick);
+	
+		button.UpdateTooltip = WorldMapPOI_OnEnter;
+	
+		button.Texture = button:CreateTexture(button:GetName().."Texture", "BACKGROUND");
+		button.HighlightTexture = button:CreateTexture(button:GetName().."HighlightTexture", "HIGHLIGHT");
+		button.HighlightTexture:SetBlendMode("ADD");
+		button.HighlightTexture:SetAlpha(.4);
+		button.HighlightTexture:SetAllPoints(button.Texture);
+	
+		WorldMap_ResetPOI(button, isObjectIcon, atlasIcon);
+	end
+	local NUM_WORLDMAP_TASK_POIS = 0
+	local NUM_WORLDMAP_POIS = 0
+	local NUM_WORLDMAP_TASK_POIS_LAST = 0
+	local NUM_WORLDMAP_POIS_LAST = 0	
+	
+	local function HidePOIs()
+		for i = 1, NUM_WORLDMAP_TASK_POIS_LAST do
+			WORLDMAP_TASK_POIS[i]:Hide()
+		end
+		NUM_WORLDMAP_TASK_POIS_LAST = 0
+		for i = 1, NUM_WORLDMAP_POIS_LAST do
+			WORLDMAP_POIS[i]:Hide()
+		end
+		NUM_WORLDMAP_POIS_LAST = 0
+	end
+
+	local texturesList = {}
+	local bountyPosOverride = nil
+	local bountyFrame = WorldMapFrame.UIElementsFrame.BountyBoard
+	local mapChecker = CreateFrame("Frame")
+	mapChecker:RegisterEvent("WORLD_MAP_UPDATE")
+	mapChecker:RegisterEvent("QUEST_LOG_UPDATE")
+	local prevUpdatePOIsTime,prevUpdatePOIs = 0
+	local UpdatePOIsTimer
+	local function UpdatePOIs()
+		if GetCurrentMapAreaID() ~= 1184 then
+			return
+		end
+		if prevUpdatePOIs then
+			return
+		end
+		local currTime = GetTime()
+		if (currTime - prevUpdatePOIsTime) < .7 then
+			prevUpdatePOIs = C_Timer.NewTimer(.7,UpdatePOIsTimer)
+			return
+		end
+		prevUpdatePOIsTime = currTime
+		local taskIconIndex = 1
+		local numGraveyards = 0
+
+		local questsData = WorldQuestList.argusWorldQuests
+		local worldQuestPOIs = {}
+		
+		local numTaskPOIs = 0
+		local numPOIs = 0
+		if questsData then
+			numTaskPOIs = #questsData
+			numPOIs = #questsData.poi
+		end
+				
+		if ( NUM_WORLDMAP_TASK_POIS < numTaskPOIs ) then
+			for i=NUM_WORLDMAP_TASK_POIS+1, numTaskPOIs do
+				WorldMap_GetOrCreateTaskPOI(i)
+			end
+			NUM_WORLDMAP_TASK_POIS = numTaskPOIs
+		end
+		
+		if ( NUM_WORLDMAP_POIS < numPOIs ) then
+			for i=NUM_WORLDMAP_POIS+1, numPOIs do
+				WorldMap_CreatePOI(i)
+			end
+			NUM_WORLDMAP_POIS = numPOIs
+		end
+		
+		if questsData then
+			for i, info  in ipairs(questsData) do
+				local tagID, tagName, worldQuestType, rarity, isElite, tradeskillLineIndex, displayTimeLeft = GetQuestTagInfo(info.questId)
+			
+				local taskPOI = WorldMap_GetOrCreateTaskPOI(taskIconIndex)
+				local selected = info.questId == GetSuperTrackedQuestID()
+			
+				local isCriteria = WorldMapFrame.UIElementsFrame.BountyBoard:IsWorldQuestCriteriaForSelectedBounty(info.questId)
+				local isSpellTarget = false
+				local isEffectivelyTracked = WorldMap_IsWorldQuestEffectivelyTracked(info.questId)
+			
+				taskPOI.worldQuest = true
+				taskPOI.Texture:SetDrawLayer("OVERLAY")
+			
+				WorldMap_SetupWorldQuestButton(taskPOI, worldQuestType, rarity, isElite, tradeskillLineIndex, info.inProgress, selected, isCriteria, isSpellTarget, isEffectivelyTracked)
+			
+				C_TaskQuest.RequestPreloadRewardData(info.questId)
+				
+				if taskPOI and info.quantizedX then
+					taskPOI.x = info.quantizedX
+					taskPOI.y = info.quantizedY
+					taskPOI.quantizedX = nil
+					taskPOI.quantizedY = nil
+					taskPOI.questID = info.questId
+					taskPOI.numObjectives = info.numObjectives
+					taskPOI.WCLdata = info
+					taskPOI:Show()
+
+					taskIconIndex = taskIconIndex + 1
+
+					worldQuestPOIs[#worldQuestPOIs + 1] = taskPOI
+				end		
+			end
+			
+			for i=1, NUM_WORLDMAP_POIS do
+				local worldMapPOIName = "WorldMapFrameWCLPOI"..i
+				local worldMapPOI = WORLDMAP_POIS[i]
+				if ( i <= numPOIs ) then
+					local poiData = questsData.poi[i]
+					local landmarkType, name, description, textureIndex, x, y, mapLinkID, inBattleMap, graveyardID, areaID, poiID, isObjectIcon, atlasIcon, displayAsBanner, mapFloor, textureKitPrefix = 
+						poiData[1],poiData[2],poiData[3],poiData[4],poiData[5],poiData[6],poiData[7],poiData[8],poiData[9],poiData[10],poiData[11],poiData[12],poiData[13],poiData[14],poiData[15],poiData[16],poiData[17]
+					if (type(atlasIcon)=='string' and atlasIcon:find("Vindicaar")) or (type(textureKitPrefix)=='string' and textureKitPrefix:find("Vindicaar")) then
+						displayAsBanner = true
+					end
+					if not WorldMap_ShouldShowLandmark(landmarkType) or displayAsBanner then
+						worldMapPOI:Hide()
+					else
+						WorldMapPOIFrame_AnchorPOI(worldMapPOI, x, y, WorldMap_GetFrameLevelForLandmark(landmarkType));
+						WorldMap_ResetPOI(worldMapPOI, isObjectIcon, atlasIcon, textureKitPrefix);
+						
+						if (not atlasIcon) then
+							local x1, x2, y1, y2;
+							if (isObjectIcon) then
+								x1, x2, y1, y2 = GetObjectIconTextureCoords(textureIndex);
+							else
+								x1, x2, y1, y2 = GetPOITextureCoords(textureIndex);
+							end
+							worldMapPOI.Texture:SetTexCoord(x1, x2, y1, y2);
+							worldMapPOI.HighlightTexture:SetTexCoord(x1, x2, y1, y2);
+						else
+							worldMapPOI.Texture:SetTexCoord(0, 1, 0, 1);
+							worldMapPOI.HighlightTexture:SetTexCoord(0, 1, 0, 1);
+						end
+	
+						worldMapPOI.name = name;
+						worldMapPOI.description = description;
+						worldMapPOI.mapLinkID = mapLinkID;
+						worldMapPOI.mapFloor = mapFloor;
+						worldMapPOI.poiID = poiID;
+						worldMapPOI.landmarkType = landmarkType;
+						worldMapPOI.textureKitPrefix = textureKitPrefix;
+						worldMapPOI.graveyard = nil;
+						worldMapPOI:Hide();		-- lame way to force tooltip redraw
+						worldMapPOI:Show();
+					end
+				else
+					worldMapPOI:Hide();
+				end
+			end
+			
+		end
+		
+		for i = taskIconIndex, NUM_WORLDMAP_TASK_POIS do
+			WORLDMAP_TASK_POIS[i]:Hide()
+		end
+		for i = numPOIs + 1, NUM_WORLDMAP_POIS do
+			WORLDMAP_POIS[i]:Hide()
+		end
+		NUM_WORLDMAP_TASK_POIS_LAST = taskIconIndex - 1
+		NUM_WORLDMAP_POIS_LAST = numPOIs
+		
+		--WorldMap_QuantizeWorldQuestPOIs(worldQuestPOIs,true)
+		for i, worldQuestPOI in ipairs(worldQuestPOIs) do
+			WorldMapPOIFrame_AnchorPOI(worldQuestPOI, worldQuestPOI.quantizedX or worldQuestPOI.x, worldQuestPOI.quantizedY or worldQuestPOI.y, WORLD_MAP_POI_FRAME_LEVEL_OFFSETS.WORLD_QUEST);
+		end
+	end
+	function UpdatePOIsTimer()
+		prevUpdatePOIs = nil
+		prevUpdatePOIsTime = 0
+		UpdatePOIs()
+	end
+	local textureState = nil
+	local prevScale = nil
+	local CreateArgusMap
+	mapChecker:SetScript("OnEvent",function(self,event)
+		if not WorldMapFrame:IsVisible() then
+			return
+		end
+		local mapAreaID = GetCurrentMapAreaID()
+		if mapAreaID == 1184 and not VWQL.ArgusMap and not VWQL[charKey].HideMap then
+			if CreateArgusMap then
+				CreateArgusMap()
+			end
+			if not textureState then
+				for i=1,#texturesList do
+					texturesList[i]:SetAlpha(1)
+				end
+				textureState = true
+			end
+			WorldMapFrame_SetOverlayLocation(bountyFrame, 3)
+			bountyPosOverride = 3
+			UpdatePOIs()
+		else
+			if not CreateArgusMap then
+				if textureState then
+					for i=1,#texturesList do
+						texturesList[i]:SetAlpha(0)
+					end
+					textureState = nil
+				end
+			end
+			HidePOIs()
+			bountyPosOverride = nil
+			if mapAreaID == 1170 or mapAreaID == 1171 or mapAreaID == 1135 then
+				if prevUpdatePOIs then
+					prevUpdatePOIs:Cancel()
+				end
+				prevUpdatePOIs = nil
+				prevUpdatePOIsTime = 0			
+			end 
+		end
+		
+		--antiErrors
+		if bountyPosOverride then
+			WorldMapFrame_SetOverlayLocation(bountyFrame, bountyPosOverride)
+		end
+	end)
+	local prev_bonusObjectiveUpdateTimeLeft = 0
+	local antiErrorsFrame = CreateFrame("Frame",nil,WorldMapButton)
+	antiErrorsFrame:SetPoint("TOPLEFT")
+	antiErrorsFrame:SetSize(1,1)
+	antiErrorsFrame:SetScript("OnUpdate",function()
+		if bountyPosOverride then
+			if bountyFrame:GetPoint() ~= "TOPLEFT" then
+				WorldMapFrame_SetOverlayLocation(bountyFrame, bountyPosOverride)
+			end
+			
+			local t = WorldMapFrame.bonusObjectiveUpdateTimeLeft
+			if type(t) == 'number' and type(prev_bonusObjectiveUpdateTimeLeft) == 'number' and t > prev_bonusObjectiveUpdateTimeLeft then
+				local scale = WorldMapDetailFrame:GetScale()
+				if prevScale ~= scale then
+					UpdatePOIsTimer()
+					prevScale = scale
+				else
+					UpdatePOIs()
+				end				
+			end
+			prev_bonusObjectiveUpdateTimeLeft = t
+			
+			local scale = WorldMapDetailFrame:GetScale()
+			if prevScale ~= scale then
+				UpdatePOIsTimer()
+				prevScale = scale
+			else
+				UpdatePOIs()
+			end
+		end
+
+	end)
+
+	function CreateArgusMap()
+		local size = 70
+		for i=1,10 do
+			for j=1,15 do
+				local t = WorldMapButton:CreateTexture(nil,"BACKGROUND")
+				texturesList[#texturesList + 1] = t
+				t:SetSize(size,size)
+				t:SetPoint("TOPLEFT",size*(j-1),-size*(i-1))
+				t:SetTexture("Interface\\AdventureMap\\Argus\\AM_"..((i-1)*15 + j - 1))
+				t:SetAlpha(0)
+			end
+		end
+		CreateArgusMap = nil	  
+	end
+end
+
+
 WorldQuestList.ScrollUpLine = CreateFrame("Button", nil, WorldQuestList)
-WorldQuestList.ScrollUpLine:SetPoint("LEFT",-1,0)
-WorldQuestList.ScrollUpLine:SetPoint("RIGHT",1,0)
-WorldQuestList.ScrollUpLine:SetPoint("TOP",WorldQuestList.Cheader,0,1)
-WorldQuestList.ScrollUpLine:SetHeight(15)
+WorldQuestList.ScrollUpLine:SetPoint("LEFT",0,0)
+WorldQuestList.ScrollUpLine:SetPoint("RIGHT",0,0)
+WorldQuestList.ScrollUpLine:SetPoint("TOP",WorldQuestList.Cheader,0,0)
+WorldQuestList.ScrollUpLine:SetHeight(16)
 WorldQuestList.ScrollUpLine:SetFrameLevel(120)
 WorldQuestList.ScrollUpLine:Hide()
 WorldQuestList.ScrollUpLine:SetScript("OnEnter",function(self)
@@ -610,12 +1254,14 @@ WorldQuestList.ScrollUpLine.i:SetSize(14,14)
 
 WorldQuestList.b = WorldQuestList:CreateTexture(nil,"BACKGROUND")
 WorldQuestList.b:SetAllPoints()
-WorldQuestList.b:SetColorTexture(0,0,0,1)
+WorldQuestList.b:SetColorTexture(0.04,0.04,0.04,.97)
+WorldQuestList.b.A = .97
 
 WorldQuestList.backdrop = CreateFrame("Frame",nil,WorldQuestList)
-WorldQuestList.backdrop:SetPoint("TOPLEFT",-4,4)
-WorldQuestList.backdrop:SetPoint("BOTTOMRIGHT",4,-4)
-WorldQuestList.backdrop:SetBackdrop({edgeFile="Interface/Tooltips/UI-Tooltip-Border",tile=false,edgeSize=14,insets={left=2.5,right=2.5,top=2.5,bottom=2.5}})
+WorldQuestList.backdrop:SetAllPoints()
+
+ELib.Templates:Border(WorldQuestList.backdrop,.3,.3,.3,1,1)
+WorldQuestList.shadow = ELib:Shadow(WorldQuestList.backdrop,20,28)
 
 WorldQuestList.mapB = WorldMapButton:CreateTexture(nil,"OVERLAY")
 WorldQuestList.mapB:SetSize(80,80)
@@ -638,25 +1284,17 @@ WorldQuestList.mapD:SetAtlas("XMarksTheSpot")
 WorldQuestList.mapD:SetPoint("CENTER",WorldQuestList.mapC)
 WorldQuestList.mapD:Hide()
 
-WorldQuestList.TotalAP = WorldQuestList:CreateFontString(nil,"ARTWORK","GameFontWhite")
-WorldQuestList.TotalAP:SetPoint("TOPLEFT",WorldQuestList,"BOTTOMLEFT",5,-4)
-WorldQuestList.TotalAP:SetJustifyH("LEFT")
-WorldQuestList.TotalAP:SetJustifyV("TOP")
-WorldQuestList.TotalAP:SetSize(1000,1000)
-do
-	local a1,a2 = WorldQuestList.TotalAP:GetFont()
-	WorldQuestList.TotalAP:SetFont(a1,a2,"OUTLINE")
-end
-local ArtifactRelicSubclass = "Artifact Relic"
-
 WorldQuestList.Close = CreateFrame("Button",nil,WorldQuestList)
-WorldQuestList.Close:SetPoint("BOTTOMLEFT",WorldQuestList,"TOPRIGHT",5,5)
-WorldQuestList.Close:SetSize(25,25)
+WorldQuestList.Close:SetPoint("BOTTOMLEFT",WorldQuestList,"TOPRIGHT",1,1)
+WorldQuestList.Close:SetSize(22,22)
 WorldQuestList.Close:SetScript("OnClick",function()
 	WorldQuestList:Hide()
 	WorldQuestList:Show()
 end)
 WorldQuestList.Close:Hide()
+
+ELib.Templates:Border(WorldQuestList.Close,.22,.22,.3,1,1)
+WorldQuestList.shadow = ELib:Shadow2(WorldQuestList.Close,16)
 
 WorldQuestList.Close.X = WorldQuestList.Close:CreateFontString(nil,"ARTWORK","GameFontWhite")
 WorldQuestList.Close.X:SetPoint("CENTER",WorldQuestList.Close)
@@ -667,7 +1305,17 @@ do
 end
 WorldQuestList.Close.b = WorldQuestList.Close:CreateTexture(nil,"BACKGROUND")
 WorldQuestList.Close.b:SetAllPoints()
-WorldQuestList.Close.b:SetColorTexture(0,0,0,.8)
+WorldQuestList.Close.b:SetColorTexture(0.14,0.04,0.04,.97)
+
+WorldQuestList.Close.hl = WorldQuestList.Close:CreateTexture(nil, "BACKGROUND",nil,1)
+WorldQuestList.Close.hl:SetPoint("TOPLEFT", 0, 0)
+WorldQuestList.Close.hl:SetPoint("BOTTOMRIGHT", 0, 0)
+WorldQuestList.Close.hl:SetTexture("Interface\\Buttons\\WHITE8X8")
+WorldQuestList.Close.hl:SetVertexColor(1,.7,.7,.25)
+WorldQuestList.Close.hl:Hide()
+
+WorldQuestList.Close:SetScript("OnEnter",function(self) self.hl:Show() end)
+WorldQuestList.Close:SetScript("OnLeave",function(self) self.hl:Hide() end)
 
 
 WorldQuestList:RegisterEvent('ADDON_LOADED')
@@ -706,13 +1354,7 @@ WorldQuestList:SetScript("OnEvent",function(self,event,...)
 		
 		WorldMapHideWQLCheck:SetChecked(not VWQL[charKey].HideMap)
 		
-		WorldQuestList.modeSwitcherCheck:SetChecked(not VWQL[charKey].RegularQuestMode)
-
-		local _,_,arsc = GetItemInfoInstant(138227)
-		ArtifactRelicSubclass = arsc
-		if not ArtifactRelicSubclass then
-			ArtifactRelicSubclass = "Artifact Relic"
-		end
+		WorldQuestList.modeSwitcherCheck.s:SetValue(VWQL[charKey].RegularQuestMode and 1 or 0)
 
 		if not VWQL.DisableArrow and EnableClickArrow then
 			EnableClickArrow()
@@ -730,7 +1372,7 @@ WorldQuestList:SetScript("OnEvent",function(self,event,...)
 					TomTom:RemoveWaypoint(qKey)
 				end
 				return
-			elseif type(TomTom) == 'table' and not VWQL.DisableArrow then
+			elseif type(TomTom) == 'table' and not VWQL.DisableArrow and VWQL.ArrowStyle == 2 then
 				local map = GetCurrentMapAreaID()
 				local continent = GetCurrentMapContinent()
 				local name = C_TaskQuest.GetQuestInfoByQuestID(questID)
@@ -753,6 +1395,7 @@ WorldQuestList:SetScript("OnEvent",function(self,event,...)
 	end
 end)
 
+--[[
 do
 	local version, buildVersion, buildDate, uiVersion = GetBuildInfo()
 	
@@ -760,45 +1403,182 @@ do
 	
 	WorldQuestList.is73 = ((expansion or 0) * 10000 + (majorPatch or 0) * 100 + (minorPatch or 0)) >= 70300
 end
+]]
 
-if WorldQuestList.is73 then
-	WorldQuestList:RegisterEvent('ARTIFACT_UPDATE')
+do
+	local realmsDB = {	--1:US 2:EU 0:Other
+		[500]=2,	[501]=2,	[502]=2,	[503]=2,	[504]=2,	[505]=2,
+		[506]=2,	[507]=2,	[508]=2,	[509]=2,	[510]=2,	[511]=2,
+		[512]=2,	[513]=2,	[515]=2,	[516]=2,	[517]=2,	[518]=2,
+		[519]=2,	[521]=2,	[522]=2,	[523]=2,	[524]=2,	[525]=2,
+		[526]=2,	[527]=2,	[528]=2,	[529]=2,	[531]=2,	[533]=2,
+		[535]=2,	[536]=2,	[537]=2,	[538]=2,	[539]=2,	[540]=2,
+		[541]=2,	[542]=2,	[543]=2,	[544]=2,	[545]=2,	[546]=2,
+		[547]=2,	[548]=2,	[549]=2,	[550]=2,	[551]=2,	[552]=2,
+		[553]=2,	[554]=2,	[556]=2,	[557]=2,	[558]=2,	[559]=2,
+		[560]=2,	[561]=2,	[562]=2,	[563]=2,	[564]=2,	[565]=2,
+		[566]=2,	[567]=2,	[568]=2,	[569]=2,	[570]=2,	[571]=2,
+		[572]=2,	[573]=2,	[574]=2,	[575]=2,	[576]=2,	[577]=2,
+		[578]=2,	[579]=2,	[580]=2,	[581]=2,	[582]=2,	[583]=2,
+		[584]=2,	[585]=2,	[586]=2,	[587]=2,	[588]=2,	[589]=2,
+		[590]=2,	[591]=2,	[592]=2,	[593]=2,	[594]=2,	[600]=2,
+		[601]=2,	[602]=2,	[604]=2,	[605]=2,	[606]=2,	[607]=2,
+		[608]=2,	[609]=2,	[610]=2,	[611]=2,	[612]=2,	[613]=2,
+		[614]=2,	[615]=2,	[616]=2,	[617]=2,	[618]=2,	[619]=2,
+		[621]=2,	[622]=2,	[623]=2,	[624]=2,	[625]=2,	[626]=2,
+		[627]=2,	[628]=2,	[629]=2,	[630]=2,	[631]=2,	[632]=2,
+		[633]=2,	[635]=2,	[636]=2,	[637]=2,	[638]=2,	[639]=2,
+		[640]=2,	[641]=2,	[642]=2,	[643]=2,	[644]=2,	[645]=2,
+		[646]=2,	[647]=2,	[1080]=2,	[1081]=2,	[1082]=2,	[1083]=2,
+		[1084]=2,	[1085]=2,	[1086]=2,	[1087]=2,	[1088]=2,	[1089]=2,
+		[1090]=2,	[1091]=2,	[1092]=2,	[1093]=2,	[1096]=2,	[1097]=2,
+		[1098]=2,	[1099]=2,	[1104]=2,	[1105]=2,	[1106]=2,	[1117]=2,
+		[1118]=2,	[1119]=2,	[1121]=2,	[1122]=2,	[1123]=2,	[1127]=2,
+		[1298]=2,	[1299]=2,	[1300]=2,	[1301]=2,	[1303]=2,	[1304]=2,
+		[1305]=2,	[1306]=2,	[1307]=2,	[1308]=2,	[1309]=2,	[1310]=2,
+		[1311]=2,	[1312]=2,	[1313]=2,	[1314]=2,	[1316]=2,	[1317]=2,
+		[1318]=2,	[1319]=2,	[1320]=2,	[1321]=2,	[1322]=2,	[1323]=2,
+		[1324]=2,	[1326]=2,	[1327]=2,	[1328]=2,	[1330]=2,	[1331]=2,
+		[1332]=2,	[1333]=2,	[1334]=2,	[1335]=2,	[1336]=2,	[1337]=2,
+		[1378]=2,	[1379]=2,	[1380]=2,	[1381]=2,	[1382]=2,	[1383]=2,
+		[1384]=2,	[1385]=2,	[1386]=2,	[1387]=2,	[1388]=2,	[1389]=2,
+		[1391]=2,	[1392]=2,	[1393]=2,	[1394]=2,	[1395]=2,	[1400]=2,
+		[1401]=2,	[1404]=2,	[1405]=2,	[1406]=2,	[1407]=2,	[1408]=2,
+		[1409]=2,	[1413]=2,	[1415]=2,	[1416]=2,	[1417]=2,	[1587]=2,
+		[1588]=2,	[1589]=2,	[1595]=2,	[1596]=2,	[1597]=2,	[1598]=2,
+		[1602]=2,	[1603]=2,	[1604]=2,	[1605]=2,	[1606]=2,	[1607]=2,
+		[1608]=2,	[1609]=2,	[1610]=2,	[1611]=2,	[1612]=2,	[1613]=2,
+		[1614]=2,	[1615]=2,	[1616]=2,	[1617]=2,	[1618]=2,	[1619]=2,
+		[1620]=2,	[1621]=2,	[1622]=2,	[1623]=2,	[1624]=2,	[1625]=2,
+		[1626]=2,	[1922]=2,	[1923]=2,	[1924]=2,	[1925]=2,	[1926]=2,
+		[1927]=2,	[1928]=2,	[1929]=2,
+		[1]=1,	[2]=1,	[3]=1,	[4]=1,	[5]=1,	[6]=1,
+		[7]=1,	[8]=1,	[9]=1,	[10]=1,	[11]=1,	[12]=1,
+		[13]=1,	[14]=1,	[15]=1,	[16]=1,	[47]=1,	[51]=1,
+		[52]=1,	[53]=1,	[54]=1,	[55]=1,	[56]=1,	[57]=1,
+		[58]=1,	[59]=1,	[60]=1,	[61]=1,	[62]=1,	[63]=1,
+		[64]=1,	[65]=1,	[66]=1,	[67]=1,	[68]=1,	[69]=1,
+		[70]=1,	[71]=1,	[72]=1,	[73]=1,	[74]=1,	[75]=1,
+		[76]=1,	[77]=1,	[78]=1,	[79]=1,	[80]=1,	[81]=1,
+		[82]=1,	[83]=1,	[84]=1,	[85]=1,	[86]=1,	[87]=1,
+		[88]=1,	[89]=1,	[90]=1,	[91]=1,	[92]=1,	[93]=1,
+		[94]=1,	[95]=1,	[96]=1,	[97]=1,	[98]=1,	[99]=1,
+		[100]=1,	[101]=1,	[102]=1,	[103]=1,	[104]=1,	[105]=1,
+		[106]=1,	[107]=1,	[108]=1,	[109]=1,	[110]=1,	[111]=1,
+		[112]=1,	[113]=1,	[114]=1,	[115]=1,	[116]=1,	[117]=1,
+		[118]=1,	[119]=1,	[120]=1,	[121]=1,	[122]=1,	[123]=1,
+		[124]=1,	[125]=1,	[126]=1,	[127]=1,	[128]=1,	[129]=1,
+		[130]=1,	[131]=1,	[151]=1,	[153]=1,	[154]=1,	[155]=1,
+		[156]=1,	[157]=1,	[158]=1,	[159]=1,	[160]=1,	[162]=1,
+		[163]=1,	[164]=1,	[1067]=1,	[1068]=1,	[1069]=1,	[1070]=1,
+		[1071]=1,	[1072]=1,	[1075]=1,	[1128]=1,	[1129]=1,	[1130]=1,
+		[1131]=1,	[1132]=1,	[1136]=1,	[1137]=1,	[1138]=1,	[1139]=1,
+		[1140]=1,	[1141]=1,	[1142]=1,	[1143]=1,	[1145]=1,	[1146]=1,
+		[1147]=1,	[1148]=1,	[1151]=1,	[1154]=1,	[1165]=1,	[1173]=1,
+		[1175]=1,	[1182]=1,	[1184]=1,	[1185]=1,	[1190]=1,	[1258]=1,
+		[1259]=1,	[1260]=1,	[1262]=1,	[1263]=1,	[1264]=1,	[1265]=1,
+		[1266]=1,	[1267]=1,	[1268]=1,	[1270]=1,	[1271]=1,	[1276]=1,
+		[1277]=1,	[1278]=1,	[1280]=1,	[1282]=1,	[1283]=1,	[1284]=1,
+		[1285]=1,	[1286]=1,	[1287]=1,	[1288]=1,	[1289]=1,	[1290]=1,
+		[1291]=1,	[1292]=1,	[1293]=1,	[1294]=1,	[1295]=1,	[1296]=1,
+		[1297]=1,	[1342]=1,	[1344]=1,	[1345]=1,	[1346]=1,	[1347]=1,
+		[1348]=1,	[1349]=1,	[1350]=1,	[1351]=1,	[1352]=1,	[1353]=1,
+		[1354]=1,	[1355]=1,	[1356]=1,	[1357]=1,	[1358]=1,	[1359]=1,
+		[1360]=1,	[1361]=1,	[1362]=1,	[1363]=1,	[1364]=1,	[1365]=1,
+		[1367]=1,	[1368]=1,	[1369]=1,	[1370]=1,	[1371]=1,	[1372]=1,
+		[1373]=1,	[1374]=1,	[1375]=1,	[1377]=1,	[1425]=1,	[1427]=1,
+		[1428]=1,	[1549]=1,	[1555]=1,	[1556]=1,	[1557]=1,	[1558]=1,
+		[1559]=1,	[1563]=1,	[1564]=1,	[1565]=1,	[1566]=1,	[1567]=1,
+		[1570]=1,	[1572]=1,	[1576]=1,	[1578]=1,	[1579]=1,	[1581]=1,
+		[1582]=1,	[3207]=1,	[3208]=1,	[3209]=1,	[3210]=1,	[3234]=1,
+		[3721]=1,	[3722]=1,	[3723]=1,	[3724]=1,	[3725]=1,	[3726]=1,
+		[3733]=1,	[3734]=1,	[3735]=1,	[3736]=1,	[3737]=1,	[3738]=1,
+	}
+	function WorldQuestList:GetCurrentRegion()
+		if WorldQuestList.currentRegion then
+			return WorldQuestList.currentRegion
+		end
+		local guid = UnitGUID("player")
+		local _,serverID = strsplit("-",guid)
+		local regionID = 0
+		if serverID then
+			regionID = realmsDB[tonumber(serverID) or -1] or 0
+		end
+		WorldQuestList.currentRegion = regionID
+		return regionID
+	end
+	
 end
 
+do
+	local resetTimes = {
+		[1] = 1505228400,	--us
+		[2] = 1505286000,	--eu
+	}
+	function WorldQuestList:GetNextResetTime(region)
+		if region and resetTimes[region] then
+			local t = resetTimes[region]
+			local c = GetServerTime()
+			while t < c do
+				t = t + 604800
+			end
+			return (t - c) / 60 + 60
+		end
+	end
+
+end
+
+WorldQuestList:RegisterEvent('ARTIFACT_UPDATE')
+
 local function WorldQuestList_Line_OnEnter(self)
-	if not self.questID then
-		return
-	end
 	local isButtonExist = false
-	for i=1,500 do
-		local existingButton = _G["WorldMapFrameTaskPOI"..i]
-		if not existingButton then
-			break
+	if self.questID then
+		for i=1,500 do
+			local existingButton = _G["WorldMapFrameTaskPOI"..i]
+			if not existingButton then
+				break
+			end
+			if existingButton.questID == self.questID and existingButton:IsVisible() and existingButton:IsShown() then
+				WorldQuestList.mapB:ClearAllPoints()
+				WorldQuestList.mapB:SetPoint("CENTER",existingButton,0,0)
+				WorldQuestList.mapB:Show()
+				isButtonExist = true
+			end
 		end
-		if existingButton.questID == self.questID and existingButton:IsVisible() and existingButton:IsShown() then
-			WorldQuestList.mapB:ClearAllPoints()
-			WorldQuestList.mapB:SetPoint("CENTER",existingButton,0,0)
-			WorldQuestList.mapB:Show()
-			isButtonExist = true
+		for i=1,500 do
+			local existingButton = _G["WorldMapFrameWCLTaskPOI"..i]
+			if not existingButton then
+				break
+			end
+			if existingButton.questID == self.questID and existingButton:IsVisible() and existingButton:IsShown() then
+				WorldQuestList.mapB:ClearAllPoints()
+				WorldQuestList.mapB:SetPoint("CENTER",existingButton,0,0)
+				WorldQuestList.mapB:Show()
+				isButtonExist = true
+			end
 		end
 	end
-	if not isButtonExist and self.data and self.data.Wx and not self.isLeveling then
+	if self.isInvasionPoint and self.data and self.data.x then
+		WorldQuestList.mapB:ClearAllPoints()
+		WorldQuestList.mapB:SetPoint("CENTER",WorldMapButton,"BOTTOMRIGHT",-WorldMapButton:GetWidth() * (1 - self.data.x),WorldMapButton:GetHeight() * (1 - self.data.y))
+		WorldQuestList.mapB:Show()
+	elseif not isButtonExist and self.data and self.data.x and not self.isLeveling then
 		WorldQuestList.mapC:ClearAllPoints()
-		WorldQuestList.mapC:SetPoint("CENTER",WorldMapButton,"BOTTOMRIGHT",-WorldMapButton:GetWidth() * self.data.Wx,WorldMapButton:GetHeight() * self.data.Wy)
+		WorldQuestList.mapC:SetPoint("CENTER",WorldMapButton,"BOTTOMRIGHT",-WorldMapButton:GetWidth() * (1 - self.data.x),WorldMapButton:GetHeight() * (1 - self.data.y))
 		WorldQuestList.mapC:Show()
 		WorldQuestList.mapD:Show()
 	end
 	self.hl:Show()
 	
-	if self.isLeveling then
+	if self.isLeveling and self.questID then
 		local existingButton = QuestPOI_FindButton(WorldMapPOIFrame, self.questID)
 		if existingButton then
 			WorldQuestList.mapB:ClearAllPoints()
 			WorldQuestList.mapB:SetPoint("CENTER",existingButton,0,0)
 			WorldQuestList.mapB:Show()		
-		elseif self.data and self.data.Wx then
+		elseif self.data and self.data.x then
 			WorldQuestList.mapC:ClearAllPoints()
-			WorldQuestList.mapC:SetPoint("CENTER",WorldMapButton,"BOTTOMRIGHT",-WorldMapButton:GetWidth() * self.data.Wx,WorldMapButton:GetHeight() * self.data.Wy)
+			WorldQuestList.mapC:SetPoint("CENTER",WorldMapButton,"BOTTOMRIGHT",-WorldMapButton:GetWidth() * (1 - self.data.x),WorldMapButton:GetHeight() * (1 - self.data.y))
 			WorldQuestList.mapC:Show()
 			WorldQuestList.mapD:Show()
 		end
@@ -988,26 +1768,11 @@ local function WorldQuestList_LineName_OnLeave(self)
 end
 
 local function WorldQuestList_LineName_OnClick(self,button)
+	local line = self:GetParent()
 	if button == "LeftButton" then
-		local line = self:GetParent()
 		local questID = line.questID
 
-		--[[
-		if questID and line.data.x then
-			for i=1,500 do
-				local existingButton = _G["WorldMapFrameTaskPOI"..i]
-				if not existingButton then
-					break
-				end
-				if existingButton.questID == questID and existingButton:IsVisible() then
-					existingButton:Click()
-					return				
-				end
-			end
-		end
-		]]
-
-		if not line.isLeveling then
+		if not line.isLeveling and questID then
 			if IsShiftKeyDown() then
 				if IsWorldQuestHardWatched(questID) or (IsWorldQuestWatched(questID) and GetSuperTrackedQuestID() == questID) then
 					BonusObjectiveTracker_UntrackWorldQuest(questID)
@@ -1025,33 +1790,33 @@ local function WorldQuestList_LineName_OnClick(self,button)
 		
 		local mapAreaID = GetCurrentMapAreaID()
 		
-		if mapAreaID == 1184 then
-			return
-		end
-		
-		if line.data and not IsShiftKeyDown() then
-			local Wx,Wy = line.data.Wx,line.data.Wy
-			if not VWQL.DisableArrow and Wx and Wy then
-				Wx = 1 - Wx
-				Wy = 1 - Wy
+		if line.data and not IsShiftKeyDown() and not (mapAreaID == 1184) then
+			local x,y = line.data.x,line.data.y
+			if x and y then
 				local floor, a1, b1, c1, d1 = GetCurrentMapDungeonLevel()
 				local z, a2, b2, c2, d2 = GetCurrentMapZone()
 				if not a1 or not b1 or not c1 or not d1 then
 					a1, b1, c1, d1 = c2, d2, a2, b2
 				end
-				local x = c1 - Wx * abs(c1-a1)
-				local y = d1 - Wy * abs(d1-b1)
+				local Wx = c1 - x * abs(c1-a1)
+				local Wy = d1 - y * abs(d1-b1)
 			
-				--GExRT.F.Arrow:ShowRunTo(x,y,30,nil,true)
-				local name = C_TaskQuest.GetQuestInfoByQuestID(line.questID)
+				local name = questID and C_TaskQuest.GetQuestInfoByQuestID(line.questID) or line.data.name or "unk"
 				local continent = GetCurrentMapContinent()
-				AddArrow(Wx,Wy,x,y,z,continent,name,line.questID)
+				AddArrow(x,y,Wx,Wy,z,continent,name,line.questID)
+			end
+		elseif line.data and not IsShiftKeyDown() then
+			local x,y,Wx,Wy = line.data.Dx,line.data.Dy,line.data.Zx,line.data.Zy
+			if x and y then
+				local name = questID and C_TaskQuest.GetQuestInfoByQuestID(line.questID) or line.data.name or "unk"
+				local continent = GetCurrentMapContinent()
+				AddArrow(x,y,Wx,Wy,line.data.map or 0,continent,name,line.questID)			
 			end
 		end
 
 
 		local info = line.data
-		if info and info.zoneMapID and mapAreaID == 1007 and not IsShiftKeyDown() then
+		if info and info.zoneMapID and (mapAreaID == 1007 or mapAreaID == 1184) and not IsShiftKeyDown() and WorldMapFrame:IsVisible() then
 			WorldQuestList.mapC:Hide()
 			WorldQuestList.mapD:Hide()
 			SetMapByID(info.zoneMapID)
@@ -1068,13 +1833,16 @@ local function WorldQuestList_LineName_OnClick(self,button)
 						WorldQuestList.mapB:ClearAllPoints()
 						WorldQuestList.mapB:SetPoint("CENTER",existingButton,0,0)
 						WorldQuestList.mapB:Show()
+						break
 					end
 				end
 			end)
 		end
 	elseif button == "RightButton" then
+		if not line.questID then
+			return
+		end
 		ELib.ScrollDropDown.ClickButton(self)
-		--WorldQuestList_Line_OnClick(self:GetParent(),"RightButton")
 	end
 end
 
@@ -1140,7 +1908,7 @@ local IgnoreListDropDown = {
 	},	
 }
 
-local NAME_WIDTH = 135
+WorldQuestList.NAME_WIDTH = 135
 
 WorldQuestList.l = {}
 local function WorldQuestList_CreateLine(i)
@@ -1158,7 +1926,7 @@ local function WorldQuestList_CreateLine(i)
 	line:RegisterForClicks("RightButtonUp")
 	
 	line.nameicon = line:CreateTexture(nil, "BACKGROUND")
-	line.nameicon:SetPoint("LEFT",3,0)
+	line.nameicon:SetPoint("LEFT",4,0)
 	line.nameicon:SetSize(1,16)
 	
 	line.secondicon = line:CreateTexture(nil, "BACKGROUND")
@@ -1167,7 +1935,7 @@ local function WorldQuestList_CreateLine(i)
 
 	line.name = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
 	line.name:SetPoint("LEFT",line.secondicon,"RIGHT",0,0)
-	line.name:SetSize(135,20)
+	line.name:SetSize(WorldQuestList.NAME_WIDTH,20)
 	line.name:SetJustifyH("LEFT")
 
 	line.reward = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
@@ -1192,7 +1960,8 @@ local function WorldQuestList_CreateLine(i)
 
 	line.zone = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
 	line.zone:SetPoint("LEFT",line.timeleft,"RIGHT",5,0)
-	line.zone:SetSize(100,20)
+	line.zone:SetPoint("RIGHT",-5,0)
+	line.zone:SetHeight(20)
 	line.zone:SetJustifyH("LEFT")
 	
 	line.zone.f = CreateFrame("Button",nil,line)
@@ -1229,19 +1998,18 @@ local function WorldQuestList_CreateLine(i)
 	line.timeleft.f:SetScript("OnLeave",WorldQuestList_Timeleft_OnLeave)
 	
 	line.hl = line:CreateTexture(nil, "BACKGROUND")
-	line.hl:SetPoint("TOPLEFT", 0, -1)
-	line.hl:SetPoint("BOTTOMRIGHT", 0, 1)
-	line.hl:SetTexture("Interface\\QuestFrame\\UI-QuestLogTitleHighlight")
-	line.hl:SetBlendMode("ADD")
-	line.hl:SetVertexColor(.6,.6,1,1)
+	line.hl:SetPoint("TOPLEFT", 0, 0)
+	line.hl:SetPoint("BOTTOMRIGHT", 0, 0)
+	line.hl:SetTexture("Interface\\Buttons\\WHITE8X8")
+	line.hl:SetVertexColor(.7,.7,1,.25)
 	line.hl:Hide()
 	
 	line.nqhl = line:CreateTexture(nil, "BACKGROUND",nil,-1)
-	line.nqhl:SetPoint("TOPLEFT", 0, -1)
-	line.nqhl:SetPoint("BOTTOMRIGHT", 0, 1)
+	line.nqhl:SetPoint("TOPLEFT", 0, 0)
+	line.nqhl:SetPoint("BOTTOMRIGHT", 0, 0)
 	line.nqhl:SetTexture("Interface\\Buttons\\WHITE8X8")
 	line.nqhl:SetBlendMode("ADD")
-	line.nqhl:SetVertexColor(.7,.7,1,.2)
+	line.nqhl:SetVertexColor(.7,.7,1,.1)
 	line.nqhl:Hide()
 end
 
@@ -1265,20 +2033,23 @@ do
 		local _,parent = self:GetPoint()
 		parent:SetTextColor(1,1,1)
 	end	
+	
+	WorldQuestList.HEADER_HEIGHT = 18
 
 	WorldQuestList.header = CreateFrame("Button",nil,WorldQuestList)
 	local line = WorldQuestList.header
 	line:SetPoint("TOPLEFT",0,0)
-	line:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",0,-16)
+	line:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",0,-WorldQuestList.HEADER_HEIGHT)
 	
 	line.b = line:CreateTexture(nil,"BACKGROUND")
 	line.b:SetAllPoints()
-	line.b:SetColorTexture(.3,.3,.3,1)
+	line.b:SetColorTexture(.25,.25,.25,1)
 	
 	line.name = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
-	line.name:SetPoint("LEFT",3,0)
-	line.name:SetSize(135,20)
+	line.name:SetPoint("LEFT",4,0)
+	line.name:SetSize(WorldQuestList.NAME_WIDTH,WorldQuestList.HEADER_HEIGHT)
 	line.name:SetJustifyH("LEFT")
+	line.name:SetJustifyV("MIDDLE")
 	line.name.text = CALENDAR_EVENT_NAME
 	
 	line.name.f = CreateFrame("Button",nil,line)
@@ -1291,8 +2062,9 @@ do
 
 	line.reward = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
 	line.reward:SetPoint("LEFT",line.name,"RIGHT",5,0)
-	line.reward:SetSize(180,20)
+	line.reward:SetSize(180,WorldQuestList.HEADER_HEIGHT)
 	line.reward:SetJustifyH("LEFT")
+	line.reward:SetJustifyV("MIDDLE")
 	line.reward.text = REWARDS
 
 	line.reward.f = CreateFrame("Button",nil,line)
@@ -1305,8 +2077,9 @@ do
 
 	line.faction = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
 	line.faction:SetPoint("LEFT",line.reward,"RIGHT",5,0)
-	line.faction:SetSize(115,20)
+	line.faction:SetSize(115,WorldQuestList.HEADER_HEIGHT)
 	line.faction:SetJustifyH("LEFT")
+	line.faction:SetJustifyV("MIDDLE")
 	line.faction.text = FACTION
 	
 	line.faction.f = CreateFrame("Button",nil,line)
@@ -1319,8 +2092,9 @@ do
 
 	line.timeleft = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
 	line.timeleft:SetPoint("LEFT",line.faction,"RIGHT",5,0)
-	line.timeleft:SetSize(65,20)
+	line.timeleft:SetSize(65,WorldQuestList.HEADER_HEIGHT)
 	line.timeleft:SetJustifyH("LEFT")
+	line.timeleft:SetJustifyV("MIDDLE")
 	line.timeleft.text = TIME_LABEL:match("^[^:]+")
 	
 	line.timeleft.f = CreateFrame("Button",nil,line)
@@ -1333,8 +2107,9 @@ do
 
 	line.zone = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
 	line.zone:SetPoint("LEFT",line.timeleft,"RIGHT",5,0)
-	line.zone:SetSize(100,20)
+	line.zone:SetSize(100,WorldQuestList.HEADER_HEIGHT)
 	line.zone:SetJustifyH("LEFT")
+	line.zone:SetJustifyV("MIDDLE")
 	line.zone.text = ZONE
 	
 	line.zone.f = CreateFrame("Button",nil,line)
@@ -1350,18 +2125,20 @@ do
 	line.Update = function(self,disable,disabeZone)
 		if VWQL.DisableHeader or disable then
 			self:Hide()
-			WorldQuestList.Cheader:SetPoint("TOP",0,0)
+			WorldQuestList.Cheader:SetPoint("TOP",0,-1)
+			WorldQuestList.SCROLL_FIX_TOP = 1
 			return
 		else
 			self:Show()
-			WorldQuestList.Cheader:SetPoint("TOP",0,-16)
+			WorldQuestList.Cheader:SetPoint("TOP",0,-WorldQuestList.HEADER_HEIGHT)
+			WorldQuestList.SCROLL_FIX_TOP = 0
 		end
 		
 		line.zone:SetShown(disabeZone)
 		line.zone.f:SetShown(disabeZone)
 		
 		for _,n in pairs(str) do
-			line[n]:SetText(line[n].text)
+			line[n]:SetText("  "..line[n].text)
 		end
 
 		local currSort = nil
@@ -1378,30 +2155,162 @@ do
 		end
 		
 		if currSort and VWQL.ReverseSort then
-			currSort:SetText("|TInterface\\AddOns\\WorldQuestsList\\navButtons:16:16:0:0:64:16:17:32:0:16|t "..currSort:GetText())
+			currSort:SetText("|TInterface\\AddOns\\WorldQuestsList\\navButtons:16:16:0:0:64:16:17:32:0:16|t "..currSort:GetText():gsub("^ *",""))
 		elseif currSort and not VWQL.ReverseSort then
-			currSort:SetText("|TInterface\\AddOns\\WorldQuestsList\\navButtons:16:16:0:0:64:16:0:16:0:16|t "..currSort:GetText())
+			currSort:SetText("|TInterface\\AddOns\\WorldQuestsList\\navButtons:16:16:0:0:64:16:0:16:0:16|t "..currSort:GetText():gsub("^ *",""))
 		end
 	end
-	
 end
 
-local ViewAllButton = CreateFrame("Button",nil,WorldQuestList,"UIPanelButtonTemplate")
-ViewAllButton:SetPoint("TOPLEFT",0,0)
-ViewAllButton:SetSize(300,25)
-ViewAllButton:SetText("World Quests List: "..(QUEST_MAP_VIEW_ALL_FORMAT:gsub("|c.+$","")))
+
+do
+	WorldQuestList.FOOTER_HEIGHT = 18
+
+	WorldQuestList.footer = CreateFrame("Button",nil,WorldQuestList)
+	local line = WorldQuestList.footer
+	line:SetPoint("BOTTOMLEFT",0,0)
+	line:SetPoint("TOPRIGHT",WorldQuestList,"BOTTOMRIGHT",0,WorldQuestList.FOOTER_HEIGHT)
+	
+	line.BorderTop = line:CreateTexture(nil,"BACKGROUND")
+	line.BorderTop:SetColorTexture(unpack(WorldQuestList.backdrop.BorderColor))
+	line.BorderTop:SetPoint("TOPLEFT",0,-1)
+	line.BorderTop:SetPoint("BOTTOMRIGHT",line,"TOPRIGHT",0,0)
+	
+	line.ap = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
+	line.ap:SetPoint("LEFT",5,0)
+	line.ap:SetHeight(WorldQuestList.FOOTER_HEIGHT)
+	line.ap:SetJustifyH("LEFT")
+	line.ap:SetJustifyV("MIDDLE")
+	
+	line.OR = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
+	line.OR:SetPoint("CENTER",0,0)
+	line.OR:SetHeight(WorldQuestList.FOOTER_HEIGHT)
+	line.OR:SetJustifyH("CENTER")
+	line.OR:SetJustifyV("MIDDLE")
+
+	line.gold = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
+	line.gold:SetPoint("RIGHT",-5,0)
+	line.gold:SetHeight(WorldQuestList.FOOTER_HEIGHT)
+	line.gold:SetJustifyH("RIGHT")
+	line.gold:SetJustifyV("MIDDLE")
+	
+	line.Update = function(self,disable)
+		if VWQL.DisableTotalAP or disable then
+			self:Hide()
+			WorldQuestList.Cheader:SetPoint("BOTTOM",0,2)
+			WorldQuestList.SCROLL_FIX_BOTTOM = 2
+		else
+			self:Show()
+			WorldQuestList.Cheader:SetPoint("BOTTOM",0,WorldQuestList.FOOTER_HEIGHT+1)
+			WorldQuestList.SCROLL_FIX_BOTTOM = 1
+		end
+	end
+end
+
+
+local ViewAllButton = CreateFrame("Button", nil, WorldQuestList)
+ViewAllButton:SetPoint("TOPLEFT",0,-5)
+ViewAllButton:SetSize(400,25)
 ViewAllButton:SetScript("OnClick",function()
 	SetMapByID(1007)
 end)
 ViewAllButton:Hide()
 
-WorldQuestList.sortDropDown = CreateFrame("Frame", "WorldQuestListSortDropDown", WorldQuestList, "UIDropDownMenuTemplate")
-WorldQuestList.sortDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120,0)
-WorldQuestList.sortDropDown.Text:SetText(RAID_FRAME_SORT_LABEL:gsub(" ([^ ]+)$",""), nil)
-UIDropDownMenu_SetWidth(WorldQuestList.sortDropDown, 100)
+ViewAllButton.b = ViewAllButton:CreateTexture(nil,"BACKGROUND",nil,1)
+ViewAllButton.b:SetAllPoints()
+ViewAllButton.b:SetColorTexture(0.28,0.08,0.08,1)
+
+ViewAllButton.t = ViewAllButton:CreateFontString(nil,"ARTWORK","GameFontWhite")
+ViewAllButton.t:SetPoint("CENTER",0,0)
+ViewAllButton.t:SetText("World Quests List: "..(QUEST_MAP_VIEW_ALL_FORMAT:gsub("|c.+$","")))
+
+ELib.Templates:Border(ViewAllButton,.3,.12,.12,1,1)
+WorldQuestList.shadow = ELib:Shadow2(ViewAllButton,16)
+
+ViewAllButton:SetScript("OnEnter",function(self) self.b:SetColorTexture(0.42,0.12,0.12,1) end)
+ViewAllButton:SetScript("OnLeave",function(self) self.b:SetColorTexture(0.28,0.08,0.08,1) end)
+
+
+ViewAllButton.Argus = CreateFrame("Button", nil, ViewAllButton)
+ViewAllButton.Argus:SetPoint("TOP",ViewAllButton,"BOTTOM",0,-5)
+ViewAllButton.Argus:SetSize(400,25)
+ViewAllButton.Argus:SetScript("OnClick",function()
+	LastUpdateReset()
+	SetMapByID(1184)
+end)
+
+ViewAllButton.Argus.b = ViewAllButton.Argus:CreateTexture(nil,"BACKGROUND",nil,1)
+ViewAllButton.Argus.b:SetAllPoints()
+ViewAllButton.Argus.b:SetColorTexture(0.28,0.08,0.08,1)
+
+ViewAllButton.Argus.t = ViewAllButton.Argus:CreateFontString(nil,"ARTWORK","GameFontWhite")
+ViewAllButton.Argus.t:SetPoint("CENTER",0,0)
+ViewAllButton.Argus.t:SetText("World Quests List: "..(GetMapNameByID(1184) or "Argus"))
+
+ELib.Templates:Border(ViewAllButton.Argus,.3,.12,.12,1,1)
+WorldQuestList.shadow = ELib:Shadow2(ViewAllButton.Argus,16)
+
+ViewAllButton.Argus:SetScript("OnEnter",function(self) self.b:SetColorTexture(0.42,0.12,0.12,1) end)
+ViewAllButton.Argus:SetScript("OnLeave",function(self) self.b:SetColorTexture(0.28,0.08,0.08,1) end)
+
+function ELib:DropDown(parent,text)
+	local self = CreateFrame("Frame", nil, parent)
+	self:SetHeight(22)
+	
+	self.b = self:CreateTexture(nil,"BACKGROUND",nil,1)
+	self.b:SetAllPoints()
+	self.b:SetColorTexture(0.04,0.04,0.14,.97)
+	
+	self.t = self:CreateFontString(nil,"ARTWORK","GameFontHighlightSmall")
+	self.t:SetPoint("LEFT",8,0)
+	self.t:SetText(text)
+	
+	self.l = self:CreateTexture(nil,"BACKGROUND",nil,2)
+	self.l:SetColorTexture(.22,.22,.3,1)
+	self.l:SetPoint("TOPLEFT",self,"TOPRIGHT",-23,0)
+	self.l:SetPoint("BOTTOMRIGHT",self,"BOTTOMRIGHT",-22,0)
+	
+	ELib.Templates:Border(self,.22,.22,.3,1,1)
+	WorldQuestList.shadow = ELib:Shadow2(self,16)
+	
+	self.ShadowLeftBottom:Hide()
+	self.ShadowBottom:Hide()
+	self.ShadowBottomLeftInside:Hide()
+	self.ShadowBottomRightInside:Hide()
+	self.ShadowBottomRight:Hide()
+	
+	self.Button = CreateFrame("Button", nil, self)
+	self.Button:SetSize(22,22)
+	self.Button:SetPoint("RIGHT")
+	
+	self.Button.i = self.Button:CreateTexture(nil,"ARTWORK")
+	self.Button.i:SetTexture("Interface\\AddOns\\WorldQuestsList\\navButtons")
+	self.Button.i:SetPoint("CENTER")
+	self.Button.i:SetTexCoord(0,.25,0,1)
+	self.Button.i:SetSize(22,22)
+	
+	self.Button.hl = self.Button:CreateTexture(nil, "BACKGROUND")
+	self.Button.hl:SetPoint("TOPLEFT", 0, 0)
+	self.Button.hl:SetPoint("BOTTOMRIGHT", 0, 0)
+	self.Button.hl:SetTexture("Interface\\Buttons\\WHITE8X8")
+	self.Button.hl:SetVertexColor(.7,.7,1,.25)
+	self.Button.hl:Hide()
+	
+	self.Button:SetScript("OnEnter",function(self) self.hl:Show() end)
+	self.Button:SetScript("OnLeave",function(self) self.hl:Hide() end)
+	self:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
+	self.Button:SetScript("OnClick",function(self) ELib.ScrollDropDown.ClickButton(self) end)
+	
+	self.Button.isButton = true
+
+	return self
+end	
+
+
+WorldQuestList.sortDropDown = ELib:DropDown(WorldQuestList,RAID_FRAME_SORT_LABEL:gsub(" ([^ ]+)$",""), nil)
+WorldQuestList.sortDropDown:SetWidth(110)
 WorldQuestList.sortDropDown.Button.Width = 150
-WorldQuestList.sortDropDown.Button.isButton = true
-WorldQuestList.sortDropDown:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
+
 
 local function SetSort(_, arg1)
 	ActiveSort = arg1
@@ -1409,6 +2318,7 @@ local function SetSort(_, arg1)
 	VWQL.ReverseSort = false
 	ELib.ScrollDropDown.Close()
 	WorldQuestList_Update_PrevZone = nil
+	LastUpdateReset()
 	WorldQuestList_Update()
 end
 
@@ -1440,17 +2350,9 @@ do
 end
 
 
-WorldQuestList.sortDropDown.Button:SetScript("OnClick",function(self)
-	ELib.ScrollDropDown.ClickButton(self)
-end)
-
-WorldQuestList.filterDropDown = CreateFrame("Frame", "WorldQuestListFilterDropDown", WorldQuestList, "UIDropDownMenuTemplate")
-WorldQuestList.filterDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15,0)
-WorldQuestList.filterDropDown.Text:SetText(FILTERS)
-UIDropDownMenu_SetWidth(WorldQuestList.filterDropDown, 100)
+WorldQuestList.filterDropDown = ELib:DropDown(WorldQuestList,FILTERS)
+WorldQuestList.filterDropDown:SetWidth(110)
 WorldQuestList.filterDropDown.Button.Width = 220
-WorldQuestList.filterDropDown.Button.isButton = true
-WorldQuestList.filterDropDown:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
 
 local function SetFilter(_, arg1)
 	if bit.band(filters[arg1][2],ActiveFilter) > 0 then
@@ -1461,6 +2363,7 @@ local function SetFilter(_, arg1)
 	VWQL[charKey].Filter = ActiveFilter
 	ELib.ScrollDropDown.UpdateChecks()
 	WorldQuestList_Update_PrevZone = nil
+	LastUpdateReset()
 	WorldQuestList_Update()
 end
 
@@ -1468,6 +2371,7 @@ local function SetFilterType(_, arg1)
 	ActiveFilterType[arg1] = not ActiveFilterType[arg1]
 	ELib.ScrollDropDown.UpdateChecks()
 	WorldQuestList_Update_PrevZone = nil
+	LastUpdateReset()
 	WorldQuestList_Update()
 end
 
@@ -1482,6 +2386,7 @@ do
 			VWQL[charKey].Filter = ActiveFilter
 			ELib.ScrollDropDown.Close()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 	}
@@ -1492,6 +2397,7 @@ do
 			VWQL[charKey].Filter = ActiveFilter
 			ELib.ScrollDropDown.Close()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 	}
@@ -1503,6 +2409,18 @@ do
 			checkable = true,
 		}
 	end
+	tinsert(list,8,{
+		text = LOCALE.invasionPoints,
+		func = function()
+			VWQL[charKey].invasionPointsFilter = not VWQL[charKey].invasionPointsFilter
+			ELib.ScrollDropDown.UpdateChecks()
+			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
+			WorldQuestList_Update()
+		end,
+		arg1 = "!invasionPointsFilter",
+		checkable = true,
+	})	
 	list[#list+1] = {
 		text = TYPE,
 		isTitle = true,
@@ -1541,6 +2459,7 @@ do
 			VWQL[charKey].bountyIgnoreFilter = not VWQL[charKey].bountyIgnoreFilter
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreFilter",
@@ -1552,6 +2471,7 @@ do
 			VWQL[charKey].apIgnoreFilter = not VWQL[charKey].apIgnoreFilter
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreFilterAP",
@@ -1563,6 +2483,7 @@ do
 			VWQL[charKey].honorIgnoreFilter = not VWQL[charKey].honorIgnoreFilter
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreFilterPvP",
@@ -1574,6 +2495,7 @@ do
 			VWQL[charKey].petIgnoreFilter = not VWQL[charKey].petIgnoreFilter
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreFilterPB",
@@ -1585,6 +2507,7 @@ do
 			VWQL[charKey].wantedIgnoreFilter = not VWQL[charKey].wantedIgnoreFilter
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreFilterWanted",
@@ -1596,6 +2519,7 @@ do
 			VWQL[charKey].epicIgnoreFilter = not VWQL[charKey].epicIgnoreFilter
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreFilterEpic",
@@ -1607,6 +2531,7 @@ do
 			VWQL[charKey].legionfallIgnoreFilter = not VWQL[charKey].legionfallIgnoreFilter
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreFilterLegionfall",
@@ -1618,14 +2543,36 @@ do
 			VWQL[charKey].ignoreIgnore = not VWQL[charKey].ignoreIgnore
 			ELib.ScrollDropDown.UpdateChecks()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		arg1 = "!ignoreIgnore",
 		checkable = true,
-	}	
-	
-	
-	
+	}
+	list[#list+1] = {
+		text = FACTION.." "..(GetFactionInfoByID(2165) or "Army of the Light"),
+		func = function()
+			VWQL[charKey].aotlIgnoreFilter = not VWQL[charKey].aotlIgnoreFilter
+			ELib.ScrollDropDown.UpdateChecks()
+			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
+			WorldQuestList_Update()
+		end,
+		arg1 = "!ignoreFilterArmyOfTheLight",
+		checkable = true,
+	}
+	list[#list+1] = {
+		text = FACTION.." "..(GetFactionInfoByID(2170) or "Argussian Reach"),
+		func = function()
+			VWQL[charKey].argusReachIgnoreFilter = not VWQL[charKey].argusReachIgnoreFilter
+			ELib.ScrollDropDown.UpdateChecks()
+			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
+			WorldQuestList_Update()
+		end,
+		arg1 = "!ignoreFilterArgusReach",
+		checkable = true,
+	}
 	
 	
 	function WorldQuestList.filterDropDown.Button:additionalToggle()
@@ -1650,14 +2597,16 @@ do
 				self.List[i].checkState = VWQL[charKey].legionfallIgnoreFilter
 			elseif self.List[i].arg1 == "!ignoreIgnore" then
 				self.List[i].checkState = VWQL[charKey].ignoreIgnore
+			elseif self.List[i].arg1 == "!ignoreFilterArmyOfTheLight" then
+				self.List[i].checkState = VWQL[charKey].aotlIgnoreFilter
+			elseif self.List[i].arg1 == "!ignoreFilterArgusReach" then
+				self.List[i].checkState = VWQL[charKey].argusReachIgnoreFilter
+			elseif self.List[i].arg1 == "!invasionPointsFilter" then
+				self.List[i].checkState = not VWQL[charKey].invasionPointsFilter
 			end
 		end
 	end	
 end
-
-WorldQuestList.filterDropDown.Button:SetScript("OnClick",function(self)
-	ELib.ScrollDropDown.ClickButton(self)
-end)
 
 function UpdateScale()
 	WorldQuestList:SetScale(tonumber(VWQL.Scale) or 1)
@@ -1666,43 +2615,94 @@ function UpdateAnchor()
 	WorldQuestList:ClearAllPoints()
 	if VWQL.Anchor == 1 then
 		WorldQuestList.filterDropDown:ClearAllPoints()
-		WorldQuestList.filterDropDown:SetPoint("TOPLEFT",WorldQuestList,"TOPRIGHT",-5,5)
+		WorldQuestList.filterDropDown:SetPoint("TOPLEFT",WorldQuestList,"TOPRIGHT",1,0)
 
 		WorldQuestList.sortDropDown:ClearAllPoints()
-		WorldQuestList.sortDropDown:SetPoint("TOPLEFT",WorldQuestList,"TOPRIGHT",-5,-20)
+		WorldQuestList.sortDropDown:SetPoint("TOP",WorldQuestList.filterDropDown,"BOTTOM",0,-3)
 
 		WorldQuestList.optionsDropDown:ClearAllPoints()
-		WorldQuestList.optionsDropDown:SetPoint("TOPLEFT",WorldQuestList,"TOPRIGHT",-5,-45)
+		WorldQuestList.optionsDropDown:SetPoint("TOP",WorldQuestList.sortDropDown,"BOTTOM",0,-3)
 		
 		WorldQuestList.modeSwitcherCheck:ClearAllPoints()
-		WorldQuestList.modeSwitcherCheck:SetPoint("TOPLEFT", WorldQuestList.optionsDropDown, 13, -25)
+		WorldQuestList.modeSwitcherCheck:SetPoint("TOP",WorldQuestList.optionsDropDown,"BOTTOM",0,-3)
 			
+		WorldQuestList:SetParent(WorldMapFrame)
 		WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"BOTTOMLEFT",3,-7)
+		
+		ELib.ScrollDropDown.DropDownList[1]:SetParent(UIParent)	
+		ELib.ScrollDropDown.DropDownList[2]:SetParent(UIParent)	
+	elseif VWQL.Anchor == 2 then
+		WorldQuestList.filterDropDown:ClearAllPoints()
+		WorldQuestList.filterDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",0,1)
+
+		WorldQuestList.sortDropDown:ClearAllPoints()
+		WorldQuestList.sortDropDown:SetPoint("RIGHT",WorldQuestList.filterDropDown,"LEFT",-5,0)
+
+		WorldQuestList.optionsDropDown:ClearAllPoints()
+		WorldQuestList.optionsDropDown:SetPoint("RIGHT",WorldQuestList.sortDropDown,"LEFT",-5,0)
+		
+		WorldQuestList.modeSwitcherCheck:ClearAllPoints()
+		WorldQuestList.modeSwitcherCheck:SetPoint("RIGHT",WorldQuestList.optionsDropDown,"LEFT",-5,0)
+	
+		WorldQuestList:SetParent(WorldMapButton)
+		WorldQuestList:SetPoint("TOPRIGHT",WorldMapButton,"TOPRIGHT",-10,-70)
+		
+		WorldQuestList.moveHeader:Show()
+		
+		ELib.ScrollDropDown.DropDownList[1]:SetParent(WorldMapFrame)	
+		ELib.ScrollDropDown.DropDownList[2]:SetParent(WorldMapFrame)
+	elseif VWQL.Anchor == 3 then
+		WorldQuestList.filterDropDown:ClearAllPoints()
+		WorldQuestList.filterDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",0,1)
+
+		WorldQuestList.sortDropDown:ClearAllPoints()
+		WorldQuestList.sortDropDown:SetPoint("RIGHT",WorldQuestList.filterDropDown,"LEFT",-5,0)
+
+		WorldQuestList.optionsDropDown:ClearAllPoints()
+		WorldQuestList.optionsDropDown:SetPoint("RIGHT",WorldQuestList.sortDropDown,"LEFT",-5,0)
+		
+		WorldQuestList.modeSwitcherCheck:ClearAllPoints()
+		WorldQuestList.modeSwitcherCheck:SetPoint("RIGHT",WorldQuestList.optionsDropDown,"LEFT",-5,0)
+	
+		WorldQuestList:SetParent(WorldMapFrame)
+		if VWQL.Anchor3PosLeft and VWQL.Anchor3PosTop then
+			WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"BOTTOMRIGHT",VWQL.Anchor3PosLeft,VWQL.Anchor3PosTop)
+		else
+			WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-4)
+		end
+		
+		WorldQuestList.moveHeader:Show()
+		
+		WorldQuestList:SetFrameStrata("DIALOG")
+		
+		ELib.ScrollDropDown.DropDownList[1]:SetParent(UIParent)	
+		ELib.ScrollDropDown.DropDownList[2]:SetParent(UIParent)	
 	else
 		WorldQuestList.filterDropDown:ClearAllPoints()
-		WorldQuestList.filterDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15,0)
+		WorldQuestList.filterDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",0,1)
 
 		WorldQuestList.sortDropDown:ClearAllPoints()
-		WorldQuestList.sortDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120,0)
+		WorldQuestList.sortDropDown:SetPoint("RIGHT",WorldQuestList.filterDropDown,"LEFT",-5,0)
 
 		WorldQuestList.optionsDropDown:ClearAllPoints()
-		WorldQuestList.optionsDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120*2,0)
+		WorldQuestList.optionsDropDown:SetPoint("RIGHT",WorldQuestList.sortDropDown,"LEFT",-5,0)
 		
 		WorldQuestList.modeSwitcherCheck:ClearAllPoints()
-		WorldQuestList.modeSwitcherCheck:SetPoint("LEFT", WorldQuestList.optionsDropDown, -50, 3)
+		WorldQuestList.modeSwitcherCheck:SetPoint("RIGHT",WorldQuestList.optionsDropDown,"LEFT",-5,0)
 	
+		WorldQuestList:SetParent(WorldMapFrame)
 		WorldQuestList:SetPoint("TOPLEFT",WorldMapFrame,"TOPRIGHT",10,-4)
+		
+		ELib.ScrollDropDown.DropDownList[1]:SetParent(UIParent)	
+		ELib.ScrollDropDown.DropDownList[2]:SetParent(UIParent)	
 	end
 end
 
 
-WorldQuestList.optionsDropDown = CreateFrame("Frame", "WorldQuestListOptionsDropDown", WorldQuestList, "UIDropDownMenuTemplate")
-WorldQuestList.optionsDropDown:SetPoint("BOTTOMRIGHT",WorldQuestList,"TOPRIGHT",15-120*2,0)
-WorldQuestList.optionsDropDown.Text:SetText(GAMEOPTIONS_MENU)
-UIDropDownMenu_SetWidth(WorldQuestList.optionsDropDown, 100)
+WorldQuestList.optionsDropDown = ELib:DropDown(WorldQuestList,GAMEOPTIONS_MENU)
+WorldQuestList.optionsDropDown:SetWidth(110)
 WorldQuestList.optionsDropDown.Button.Width = 220
-WorldQuestList.optionsDropDown.Button.isButton = true
-WorldQuestList.optionsDropDown:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
+
 
 do
 	local list = {}
@@ -1745,20 +2745,141 @@ do
 		text = LOCALE.arrow,
 		subMenu = arrowMenu,
 		padding = 16,	
+	}	
+	
+	local apFormatSubMenu = {
+		{
+			text = "2100000",
+			func = function()
+				VWQL.APFormat = 1
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},	
+		{
+			text = "1100k",
+			func = function()
+				VWQL.APFormat = 2
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
+		{
+			text = "1.1M",
+			func = function()
+				VWQL.APFormat = 3
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
+		{
+			text = "1M",
+			func = function()
+				VWQL.APFormat = 4
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
+		{
+			text = "1.1B",
+			func = function()
+				VWQL.APFormat = 5
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
+		{
+			text = "1B",
+			func = function()
+				VWQL.APFormat = 6
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
+		{
+			text = "Auto",
+			func = function()
+				VWQL.APFormat = nil
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
+		{
+			text = "1.1%",
+			func = function()
+				VWQL.APFormat = 10
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},	
+	}	
+	
+	
+	list[#list+1] = {
+		text = LOCALE.apFormatSetup,
+		subMenu = apFormatSubMenu,
+		padding = 16,
 	}
 	
+	list[#list+1] = {
+		text = LOCALE.headerEnable,
+		func = function()
+			VWQL.DisableHeader = not VWQL.DisableHeader
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
+			WorldQuestList_Update()
+		end,
+		checkable = true,
+	}
+		
 	list[#list+1] = {
 		text = LOCALE.totalapdisable,
 		func = function()
 			VWQL.DisableTotalAP = not VWQL.DisableTotalAP
 			ELib.ScrollDropDown.Close()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		checkable = true,
 	}
 	
 	local scaleSubMenu = {
+		{
+			text = "1.4",
+			func = function()
+				VWQL.Scale = 1.4
+				ELib.ScrollDropDown.Close()
+				UpdateScale()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
 		{
 			text = "1.25",
 			func = function()
@@ -1829,6 +2950,26 @@ do
 			end,
 			radio = true,
 		},
+		{
+			text = "0.50",
+			func = function()
+				VWQL.Scale = 0.5
+				ELib.ScrollDropDown.Close()
+				UpdateScale()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
+		{
+			text = "0.40",
+			func = function()
+				VWQL.Scale = 0.4
+				ELib.ScrollDropDown.Close()
+				UpdateScale()
+				WorldQuestList_Update()
+			end,
+			radio = true,
+		},
 	}
 	
 	list[#list+1] = {
@@ -1840,21 +2981,49 @@ do
 
 	local anchorSubMenu = {
 		{
-			text = "1",
+			text = "1 Right",
 			func = function()
 				VWQL.Anchor = nil
 				UpdateAnchor()
 				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
 				WorldQuestList_Update()
 			end,
 			radio = true,
 		},
 		{
-			text = "2",
+			text = "2 Bottom",
 			func = function()
 				VWQL.Anchor = 1
 				UpdateAnchor()
 				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,	
+		},
+		{
+			text = "3 Inside",
+			func = function()
+				VWQL.Anchor = 2
+				UpdateAnchor()
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
+				WorldQuestList_Update()
+			end,
+			radio = true,	
+		},
+		{
+			text = "4 Free (Outside)",
+			func = function()
+				VWQL.Anchor = 3
+				UpdateAnchor()
+				ELib.ScrollDropDown.Close()
+				WorldQuestList_Update_PrevZone = nil
+				LastUpdateReset()
 				WorldQuestList_Update()
 			end,
 			radio = true,	
@@ -1866,6 +3035,39 @@ do
 		subMenu = anchorSubMenu,
 		padding = 16,
 	}
+	
+	list[#list+1] = {
+		text = LOCALE.disabeHighlightNewQuests,
+		func = function()
+			VWQL.DisableHighlightNewQuest = not VWQL.DisableHighlightNewQuest
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
+			WorldQuestList_Update()
+		end,
+		checkable = true,
+	}
+
+	list[#list+1] = {
+		text = LOCALE.disableBountyIcon,
+		func = function()
+			VWQL.DisableBountyIcon = not VWQL.DisableBountyIcon
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
+			WorldQuestList_Update()
+		end,
+		checkable = true,
+	}	
+	
+	list[#list+1] = {
+		text = IGNORE,
+		func = function()
+			ELib.ScrollDropDown.Close()
+			WorldQuestList.BlackListWindow:Show()
+		end,
+	}
+
 
 	list[#list+1] = {
 		text = LOCALE.enigmaHelper,
@@ -1882,118 +3084,17 @@ do
 			ELib.ScrollDropDown.Close()
 		end,
 		checkable = true,
-	}	
-	
-
-	local apFormatSubMenu = {
-		{
-			text = "2100000",
-			func = function()
-				VWQL.APFormat = 1
-				ELib.ScrollDropDown.Close()
-				WorldQuestList_Update_PrevZone = nil
-				WorldQuestList_Update()
-			end,
-			radio = true,
-		},	
-		{
-			text = "1100k",
-			func = function()
-				VWQL.APFormat = 2
-				ELib.ScrollDropDown.Close()
-				WorldQuestList_Update_PrevZone = nil
-				WorldQuestList_Update()
-			end,
-			radio = true,
-		},
-		{
-			text = "1.1M",
-			func = function()
-				VWQL.APFormat = 3
-				ELib.ScrollDropDown.Close()
-				WorldQuestList_Update_PrevZone = nil
-				WorldQuestList_Update()
-			end,
-			radio = true,
-		},
-		{
-			text = "1M",
-			func = function()
-				VWQL.APFormat = 4
-				ELib.ScrollDropDown.Close()
-				WorldQuestList_Update_PrevZone = nil
-				WorldQuestList_Update()
-			end,
-			radio = true,
-		},
-		{
-			text = "1.1B",
-			func = function()
-				VWQL.APFormat = 5
-				ELib.ScrollDropDown.Close()
-				WorldQuestList_Update_PrevZone = nil
-				WorldQuestList_Update()
-			end,
-			radio = true,
-		},
-		{
-			text = "Auto",
-			func = function()
-				VWQL.APFormat = nil
-				ELib.ScrollDropDown.Close()
-				WorldQuestList_Update_PrevZone = nil
-				WorldQuestList_Update()
-			end,
-			radio = true,
-		},		
-	}	
-	
-	
-	list[#list+1] = {
-		text = LOCALE.apFormatSetup,
-		subMenu = apFormatSubMenu,
-		padding = 16,
 	}
-	
 	list[#list+1] = {
-		text = LOCALE.headerEnable,
+		text = "|cff00ff00"..LOCALE.argusMap,
 		func = function()
-			VWQL.DisableHeader = not VWQL.DisableHeader
+			VWQL.ArgusMap = not VWQL.ArgusMap
 			ELib.ScrollDropDown.Close()
 			WorldQuestList_Update_PrevZone = nil
+			LastUpdateReset()
 			WorldQuestList_Update()
 		end,
 		checkable = true,
-	}
-	
-	list[#list+1] = {
-		text = LOCALE.disabeHighlightNewQuests,
-		func = function()
-			VWQL.DisableHighlightNewQuest = not VWQL.DisableHighlightNewQuest
-			ELib.ScrollDropDown.Close()
-			WorldQuestList_Update_PrevZone = nil
-			WorldQuestList_Update()
-		end,
-		checkable = true,
-	}
-
-	list[#list+1] = {
-		text = LOCALE.disableBountyIcon,
-		func = function()
-			VWQL.DisableBountyIcon = not VWQL.DisableBountyIcon
-			ELib.ScrollDropDown.Close()
-			WorldQuestList_Update_PrevZone = nil
-			WorldQuestList_Update()
-		end,
-		checkable = true,
-	}	
-	
-	list[#list+1] = {
-		text = IGNORE,
-		func = function()
-			ELib.ScrollDropDown.Close()
-			WorldQuestList.BlackListWindow:Show()
-		end,
 	}
 	
 	function WorldQuestList.optionsDropDown.Button:additionalToggle()
@@ -2010,46 +3111,139 @@ do
 				self.List[i].checkState = VWQL.DisableHighlightNewQuest
 			elseif self.List[i].text == LOCALE.disableBountyIcon then
 				self.List[i].checkState = VWQL.DisableBountyIcon
+			elseif self.List[i].text == "|cff00ff00"..LOCALE.argusMap then
+				self.List[i].checkState = not VWQL.ArgusMap
 			end
 		end
 		anchorSubMenu[1].checkState = not VWQL.Anchor
 		anchorSubMenu[2].checkState = VWQL.Anchor == 1
-		scaleSubMenu[1].checkState = VWQL.Scale == 1.25
-		scaleSubMenu[2].checkState = VWQL.Scale == 1.1
-		scaleSubMenu[3].checkState = not VWQL.Scale
-		scaleSubMenu[4].checkState = VWQL.Scale == 0.9
-		scaleSubMenu[5].checkState = VWQL.Scale == 0.8
-		scaleSubMenu[6].checkState = VWQL.Scale == 0.7
-		scaleSubMenu[7].checkState = VWQL.Scale == 0.6
+		anchorSubMenu[3].checkState = VWQL.Anchor == 2
+		anchorSubMenu[4].checkState = VWQL.Anchor == 3
+		scaleSubMenu[1].checkState = VWQL.Scale == 1.4
+		scaleSubMenu[2].checkState = VWQL.Scale == 1.25
+		scaleSubMenu[3].checkState = VWQL.Scale == 1.1
+		scaleSubMenu[4].checkState = not VWQL.Scale
+		scaleSubMenu[5].checkState = VWQL.Scale == 0.9
+		scaleSubMenu[6].checkState = VWQL.Scale == 0.8
+		scaleSubMenu[7].checkState = VWQL.Scale == 0.7
+		scaleSubMenu[8].checkState = VWQL.Scale == 0.6
+		scaleSubMenu[9].checkState = VWQL.Scale == 0.5
+		scaleSubMenu[10].checkState = VWQL.Scale == 0.4
 		apFormatSubMenu[1].checkState = VWQL.APFormat == 1
 		apFormatSubMenu[2].checkState = VWQL.APFormat == 2
 		apFormatSubMenu[3].checkState = VWQL.APFormat == 3
 		apFormatSubMenu[4].checkState = VWQL.APFormat == 4
 		apFormatSubMenu[5].checkState = VWQL.APFormat == 5
-		apFormatSubMenu[6].checkState = not VWQL.APFormat
+		apFormatSubMenu[6].checkState = VWQL.APFormat == 6
+		apFormatSubMenu[7].checkState = not VWQL.APFormat
+		apFormatSubMenu[8].checkState = VWQL.APFormat == 10
 		arrowMenu[1].checkState = VWQL.DisableArrow
 		arrowMenu[2].checkState = VWQL.ArrowStyle == 2
 		arrowMenu[3].checkState = not VWQL.ArrowStyle
 	end	
 end
 
-WorldQuestList.optionsDropDown.Button:SetScript("OnClick",function(self)
-	ELib.ScrollDropDown.ClickButton(self)
-end)
 
-WorldQuestList.modeSwitcherCheck = CreateFrame("CheckButton",nil,WorldQuestList,"UICheckButtonTemplate")  
-WorldQuestList.modeSwitcherCheck:SetPoint("LEFT", WorldQuestList.optionsDropDown, -50, 3)
-WorldQuestList.modeSwitcherCheck.text:SetText("WQ")
-WorldQuestList.modeSwitcherCheck:SetScript("OnClick", function(self,event) 
-	if self:GetChecked() then
+WorldQuestList.modeSwitcherCheck = CreateFrame("Frame", nil, WorldQuestList)
+WorldQuestList.modeSwitcherCheck:SetSize(110,22)
+
+WorldQuestList.modeSwitcherCheck.b = WorldQuestList.modeSwitcherCheck:CreateTexture(nil,"BACKGROUND",nil,1)
+WorldQuestList.modeSwitcherCheck.b:SetAllPoints()
+WorldQuestList.modeSwitcherCheck.b:SetColorTexture(0.04,0.04,0.14,.97)
+
+ELib.Templates:Border(WorldQuestList.modeSwitcherCheck,.22,.22,.3,1,1)
+WorldQuestList.shadow = ELib:Shadow2(WorldQuestList.modeSwitcherCheck,16)
+
+WorldQuestList.modeSwitcherCheck.ShadowLeftBottom:Hide()
+WorldQuestList.modeSwitcherCheck.ShadowBottom:Hide()
+WorldQuestList.modeSwitcherCheck.ShadowBottomLeftInside:Hide()
+WorldQuestList.modeSwitcherCheck.ShadowBottomRightInside:Hide()
+WorldQuestList.modeSwitcherCheck.ShadowBottomRight:Hide()
+
+WorldQuestList.modeSwitcherCheck.tl = WorldQuestList.modeSwitcherCheck:CreateFontString(nil,"ARTWORK","GameFontHighlightSmall")
+WorldQuestList.modeSwitcherCheck.tl:SetPoint("LEFT",8,0)
+WorldQuestList.modeSwitcherCheck.tl:SetText("WQ")
+
+WorldQuestList.modeSwitcherCheck.tr = WorldQuestList.modeSwitcherCheck:CreateFontString(nil,"ARTWORK","GameFontHighlightSmall")
+WorldQuestList.modeSwitcherCheck.tr:SetPoint("RIGHT",-8,0)
+WorldQuestList.modeSwitcherCheck.tr:SetText("Q")
+
+WorldQuestList.modeSwitcherCheck.s = CreateFrame("Slider", nil, WorldQuestList.modeSwitcherCheck)
+WorldQuestList.modeSwitcherCheck.s:SetPoint("CENTER")
+WorldQuestList.modeSwitcherCheck.s:SetSize(32,16)
+ELib.Templates:Border(WorldQuestList.modeSwitcherCheck.s,.22,.22,.3,1,1,2)
+
+WorldQuestList.modeSwitcherCheck.s.thumb = WorldQuestList.modeSwitcherCheck.s:CreateTexture(nil, "OVERLAY")
+WorldQuestList.modeSwitcherCheck.s.thumb:SetColorTexture(.32,.32,.4,1)
+WorldQuestList.modeSwitcherCheck.s.thumb:SetSize(14,12)
+
+WorldQuestList.modeSwitcherCheck.s:SetThumbTexture(WorldQuestList.modeSwitcherCheck.s.thumb)
+WorldQuestList.modeSwitcherCheck.s:SetOrientation("HORIZONTAL")
+WorldQuestList.modeSwitcherCheck.s:SetMinMaxValues(0,1)
+WorldQuestList.modeSwitcherCheck.s:SetValue(0)
+WorldQuestList.modeSwitcherCheck.s:SetValueStep(1)
+WorldQuestList.modeSwitcherCheck.s:SetObeyStepOnDrag(true)
+
+WorldQuestList.modeSwitcherCheck.s:SetScript("OnValueChanged",function(self)
+	if self:GetValue() < .5 then
 		VWQL[charKey].RegularQuestMode = nil
-		WorldQuestList_Update()
+		LastUpdateReset()
+		WorldQuestList_Update()	
 	else
 		VWQL[charKey].RegularQuestMode = true
-		WorldQuestList_Update()
+		WorldQuestList_Update()	
 	end
 end)
 
+WorldQuestList.modeSwitcherCheck.s.hl = WorldQuestList.modeSwitcherCheck.s:CreateTexture(nil, "BACKGROUND")
+WorldQuestList.modeSwitcherCheck.s.hl:SetPoint("TOPLEFT", -2, 0)
+WorldQuestList.modeSwitcherCheck.s.hl:SetPoint("BOTTOMRIGHT", 2, 0)
+WorldQuestList.modeSwitcherCheck.s.hl:SetTexture("Interface\\Buttons\\WHITE8X8")
+WorldQuestList.modeSwitcherCheck.s.hl:SetVertexColor(.7,.7,1,.15)
+WorldQuestList.modeSwitcherCheck.s.hl:Hide()
+
+WorldQuestList.modeSwitcherCheck.s:SetScript("OnEnter",function(self) self.hl:Show() end)
+WorldQuestList.modeSwitcherCheck.s:SetScript("OnLeave",function(self) self.hl:Hide() end)
+
+
+WorldQuestList.moveHeader = ELib:DropDown(WorldQuestList,"WQL")
+WorldQuestList.moveHeader:SetPoint("BOTTOMLEFT",WorldQuestList,"TOPLEFT",0,1)
+WorldQuestList.moveHeader:SetPoint("RIGHT",WorldQuestList.modeSwitcherCheck,"LEFT",-5,0)
+--WorldQuestList.moveHeader:SetWidth(50)
+WorldQuestList.moveHeader.l:Hide()
+WorldQuestList.moveHeader.Button.i:Hide()
+WorldQuestList.moveHeader.Button:SetAllPoints()
+WorldQuestList.moveHeader.Button:SetScript("OnClick",nil)
+WorldQuestList.moveHeader.Button:RegisterForDrag("LeftButton")
+
+WorldQuestList.moveHeader.Button:SetScript("OnDragStart", function(self)
+	WorldQuestList:SetMovable(true)
+	--WorldQuestList:SetClampedToScreen(true)
+	WorldQuestList:StartMoving()
+	self.ticker = C_Timer.NewTicker(0.5,function()
+		WorldQuestList_Update_PrevZone = nil
+		LastUpdateReset()
+		WorldQuestList_Update()
+	end)
+end)
+WorldQuestList.moveHeader.Button:SetScript("OnDragStop", function(self)
+	WorldQuestList:StopMovingOrSizing()
+	WorldQuestList:SetMovable(false)
+	WorldQuestList:SetClampedToScreen(false)
+	if WorldQuestList.IsSoloRun then
+		VWQL.PosLeft = WorldQuestList:GetLeft()
+		VWQL.PosTop = WorldQuestList:GetTop()
+	end
+	if VWQL.Anchor == 3 and WorldMapFrame:IsVisible() then
+		VWQL.Anchor3PosLeft = WorldQuestList:GetLeft() - WorldMapFrame:GetRight()
+		VWQL.Anchor3PosTop = WorldQuestList:GetTop() - WorldMapFrame:GetBottom()
+	end
+	if self.ticker then
+		self.ticker:Cancel()
+		self.ticker = nil
+	end
+end)
+WorldQuestList.moveHeader:Hide()
 
 local SortFuncs = {
 	function(a,b) if a and b and a.time and b.time then 
@@ -2060,7 +3254,18 @@ local SortFuncs = {
 			end 
 		end 
 	end,
-	function(a,b) return a.zoneTime < b.zoneTime end,
+	function(a,b) if a and b then 
+			if a.zoneID == b.zoneID then
+				if abs(a.time - b.time) <= 2 then 
+					return a.name < b.name 
+				else
+					return a.time < b.time 
+				end
+			else
+				return a.zoneID < b.zoneID
+			end
+		end
+	end,
 	function(a,b) return a.name < b.name end,
 	function(a,b) if a.faction == b.faction then 
 			if a.time and b.time then 
@@ -2080,14 +3285,13 @@ local SortFuncs = {
 			if a.rewardType ~= b.rewardType then 
 				return a.rewardType < b.rewardType 
 			elseif a.rewardSort == b.rewardSort then
-				return a.questID > b.questID 
+				return (a.questID or 0) > (b.questID or 0)
 			else
 				return a.rewardSort > b.rewardSort 
 			end 
 		end 
 	end,
 	function(a,b) if a and b then return a.distance < b.distance end end,
-	
 }
 
 local GlobalAddonName = ...
@@ -2232,8 +3436,8 @@ local function WorldQuestList_Leveling_Update()
 					questID = questID,
 					name = (questData.isCompleted and "|cff00ff00" or "")..title,
 					info = {
-						Wx = 1 - x,
-						Wy = 1 - y,
+						x = x,
+						y = y,
 					},
 					rewardXP = rewardXP,
 					reward = reward,
@@ -2276,7 +3480,7 @@ local function WorldQuestList_Leveling_Update()
 			line.reward.IDs = nil
 		end
 		
-		local questNameWidth = NAME_WIDTH
+		local questNameWidth = WorldQuestList.NAME_WIDTH
 		if data.isInvasion then
 			line.secondicon:SetAtlas("worldquest-icon-burninglegion")
 			line.secondicon:SetWidth(16)
@@ -2298,7 +3502,7 @@ local function WorldQuestList_Leveling_Update()
 		line.faction:SetTextColor(1,1,1)
 		
 		line.zone:SetText("")
-		line.timeleft:SetText(data.rewardXP or "0")
+		line.timeleft:SetText(data.rewardXP or "")
 
 		line.zone:Hide()
 		line.zone.f:Hide()
@@ -2311,6 +3515,7 @@ local function WorldQuestList_Leveling_Update()
 		line.rewardLink = nil
 		line.data = data.info
 		line.faction.f.tooltip = nil
+		line.isInvasionPoint = nil
 		
 		line.isLeveling = true
 		
@@ -2320,13 +3525,13 @@ local function WorldQuestList_Leveling_Update()
 	end
 
 
-	WorldQuestList:SetHeight(max(16*(taskIconIndex-1),1))
+	WorldQuestList:SetHeight(max(16*(taskIconIndex-1)+WorldQuestList.SCROLL_FIX_BOTTOM+WorldQuestList.SCROLL_FIX_TOP,1))
 	WorldQuestList.C:SetHeight(max(16*(taskIconIndex-1),1))
 	
 	
 	local lowestLine = #WorldQuestList.Cheader.lines
 	for i=1,#WorldQuestList.Cheader.lines do
-		local bottomPos = WorldQuestList.Cheader.lines[i]:GetBottom()
+		local bottomPos = WorldQuestList.Cheader.lines[i]:GetBottom() or 0
 		if bottomPos and bottomPos < 40 then
 			lowestLine = i - 1
 			break
@@ -2343,6 +3548,7 @@ local function WorldQuestList_Leveling_Update()
 	C_Timer.After(0.05,UpdateScrollButtonsState)
 	
 	WorldQuestList.header:Update(true)
+	WorldQuestList.footer:Update(true)
 	ViewAllButton:Hide()
 	
 	for i = taskIconIndex, NUM_WORLDMAP_TASK_POIS do
@@ -2351,17 +3557,15 @@ local function WorldQuestList_Leveling_Update()
 	
 	if taskIconIndex == 1 then
 		WorldQuestList.b:SetAlpha(0)
-		WorldQuestList.backdrop:SetAlpha(0)
+		WorldQuestList.backdrop:Hide()
 	else
 		WorldQuestList.b:SetAlpha(WorldQuestList.b.A or 1)
-		WorldQuestList.backdrop:SetAlpha(1)
+		WorldQuestList.backdrop:Show()
 	end
-	
-	WorldQuestList.TotalAP:SetText("")
 end
 
 
-local function FormatAPnumber(ap,artifactKnowlegeLevel)
+local function FormatAPnumber(ap,artifactKnowlegeLevel,ignorePercentForm)
 	if VWQL.APFormat == 1 then
 		return tostring(ap)
 	elseif VWQL.APFormat == 2 then
@@ -2372,12 +3576,21 @@ local function FormatAPnumber(ap,artifactKnowlegeLevel)
 		return format("%dM",ap / 1000000)
 	elseif VWQL.APFormat == 5 then
 		return format("%.1fB",ap / 1000000000)
+	elseif VWQL.APFormat == 6 then
+		return format("%dB",ap / 1000000000)
+	elseif VWQL.APFormat == 10 and not ignorePercentForm then		--by Corveroth
+		local artifactItemID, _, _, _, artifactTotalXP, artifactPointsSpent, _, _, _, _, _, _, artifactTier = C_ArtifactUI.GetEquippedArtifactInfo()
+		if artifactItemID then
+			local numPointsAvailableToSpend, xp, xpForNextPoint = MainMenuBar_GetNumArtifactTraitsPurchasableFromXP(artifactPointsSpent, artifactTotalXP, artifactTier)
+			if xpForNextPoint and xpForNextPoint ~= 0 then
+				return format("%.1f%%%%", ap*100 / xpForNextPoint)
+			end
+		end
+		return FormatAPnumber(ap,artifactKnowlegeLevel,true)
 	else
 		artifactKnowlegeLevel = artifactKnowlegeLevel or 0
 		if artifactKnowlegeLevel >= 53 then
 			return format("%.1fB",ap / 1000000000)
-		elseif artifactKnowlegeLevel >= 50 then
-			return format("%dB",ap / 1000000000)
 		elseif artifactKnowlegeLevel >= 40 then
 			return format("%dM",ap / 1000000)
 		elseif artifactKnowlegeLevel >= 35 then
@@ -2388,6 +3601,115 @@ local function FormatAPnumber(ap,artifactKnowlegeLevel)
 			return tostring(ap)
 		end	
 	end
+end
+
+WorldQuestList.ArtifactKnowlegeMult = {	--PTR 7.3 23.08.2017
+	[40]=	40001,
+	[41]=	160001,
+	[42]=	208001,
+	[43]=	270401,
+	[44]=	351501,
+	[45]=	457001,
+	[46]=	594001,
+	[47]=	772501,
+	[48]=	1004001,
+	[49]=	1305001,
+	[50]=	1696501,
+	[51]=	2205501,
+	[52]=	2867501,
+	[53]=	3727501,
+	[54]=	4846001,
+	[55]=	6300001,
+}
+function WorldQuestList:DetectCurrentAK()
+	if self.ak73 then
+		return self.ak73
+	end
+	inspectScantip:SetHyperlink("item:141681")
+	for j=2, inspectScantip:NumLines() do
+		local tooltipLine = _G[GlobalAddonName.."WorldQuestListInspectScanningTooltipTextLeft"..j]
+		local text = tooltipLine:GetText()
+		if text and text:find("^"..LE.ITEM_SPELL_TRIGGER_ONUSE) then
+			local ap = tonumber((text:gsub("(%d)[ %.,]+(%d)","%1%2"):match("%d+[,%d%.]*") or "?"):gsub(",",""):gsub("%.",""),nil)
+			if ap then
+				inspectScantip:ClearLines()
+				if SECOND_NUMBER then	--Check 7.2
+					local isLarge = nil
+					if text:find("%d+ *"..SECOND_NUMBER:gsub("%.","%%.")) then
+						isLarge = 10 ^ 6
+						if locale == "zhCN" or locale == "koKR" or locale == "zhTW" then
+							isLarge = 10 ^ 4
+						end
+					elseif text:find("%d+ *"..THIRD_NUMBER:gsub("%.","%%.")) then
+						isLarge = 10 ^ 9
+						if locale == "zhCN" or locale == "koKR" or locale == "zhTW" then
+							isLarge = 10 ^ 8
+						end											
+					elseif text:find("%d+ *"..FOURTH_NUMBER:gsub("%.","%%.")) then
+						isLarge = 10 ^ 12
+					end
+					if isLarge then
+						if text:find("%d+[%.,]*%d*") then
+							ap = tonumber( text:gsub("(%d+)[%.,](%d+)","%1.%2"):match("%d+%.*%d*") or "0",nil )
+						end
+						ap = ap * isLarge
+					end
+				end
+
+				local akMult = ap / 1000
+				for ak = 55,41,-1 do
+					if akMult >= ((self.ArtifactKnowlegeMult[ak] + self.ArtifactKnowlegeMult[ak - 1]) / 2 ) then
+						self.ak73 = ak
+						return ak
+					end
+				end
+				return 41
+			end
+		end
+	end
+	inspectScantip:ClearLines()
+	return 41
+end
+
+function WorldQuestList:FormatTime(timeLeftMinutes)
+	if not timeLeftMinutes then
+		return ""
+	end
+	local color
+	local timeString
+	if ( timeLeftMinutes <= WORLD_QUESTS_TIME_CRITICAL_MINUTES ) then
+		color = "|cffff3333"
+		timeString = SecondsToTime(timeLeftMinutes * 60)
+	else
+		if timeLeftMinutes <= 30 then
+			color = "|cffff3333"
+		elseif timeLeftMinutes <= 180 then
+			color = "|cffffff00"
+		end
+	
+		if timeLeftMinutes >= 14400 then	--A lot, 10+ days
+			timeString = format("%dd",floor(timeLeftMinutes / 1440))
+		elseif timeLeftMinutes >= 1440 then
+			timeString = format("%d.%02d:%02d",floor(timeLeftMinutes / 1440),floor(timeLeftMinutes / 60) % 24, timeLeftMinutes % 60)
+		else
+			timeString = (timeLeftMinutes >= 60 and (floor(timeLeftMinutes / 60) % 24) or "0")..":"..format("%02d",timeLeftMinutes % 60)
+		end
+	end
+	return (color or "")..(timeString or "")
+end
+
+function WorldQuestList:CalculateSqDistanceTo(x2, y2)
+	local y1,x1 = UnitPosition'player'
+	local _,xR,yT,xL,yB = GetCurrentMapZone()
+	if not x1 or not xR then
+		return 0
+	end
+	x2 = xR - abs(xR - xL) * x2
+	y2 = yT - abs(yT - yB) * y2
+	
+	local dX = (x1 - x2)
+	local dY = (y1 - y2)
+	return dX * dX + dY * dY
 end
 
 local QuestsCachedPosX,QuestsCachedPosY = {},{}
@@ -2407,14 +3729,17 @@ local FactionBountyIcons,FactionBountyIconsCounter = {},0
 
 local WANTED_TEXT,DANGER_TEXT,DANGER_TEXT_2,DANGER_TEXT_3
 
-function WorldQuestList_Update(preTastInfo)
+WorldQuestList.MAX_LEVEL = MAX_PLAYER_LEVEL_TABLE and MAX_PLAYER_LEVEL_TABLE[LE_EXPANSION_8_0] or 110
+WorldQuestList.WQ_LEVEL = MAX_PLAYER_LEVEL_TABLE and MAX_PLAYER_LEVEL_TABLE[LE_EXPANSION_LEGION] or 110
+
+function WorldQuestList_Update(preTaskInfo)
 	if not WorldQuestList:IsVisible() or UpdateDisabled then
 		return
 	end
 
 	local mapAreaID = GetCurrentMapAreaID()
 
-	if UnitLevel'player' < 110 or VWQL[charKey].RegularQuestMode then
+	if UnitLevel'player' ~= WorldQuestList.WQ_LEVEL or VWQL[charKey].RegularQuestMode then
 		WorldQuestList.sortDropDown:Hide()
 		WorldQuestList.filterDropDown:Hide()
 		WorldQuestList.optionsDropDown:Hide()
@@ -2444,8 +3769,8 @@ function WorldQuestList_Update(preTastInfo)
 			LastUpdateCounter = 0
 		end
 		
-		if preTastInfo then
-			taskInfo = preTastInfo
+		if preTaskInfo then
+			taskInfo = preTaskInfo
 		else
 			if currTime < LastUpdateHappened then
 				if not LastUpdateSch then
@@ -2460,6 +3785,9 @@ function WorldQuestList_Update(preTastInfo)
 			LastUpdateHappened = currTime + (LastUpdateCounter <= 2 and .5 or LastUpdateCounter <= 4 and 2 or LastUpdateCounter % 2 == 0 and .5 or 10)
 			
 			taskInfo = {}
+			WorldQuestList.argusWorldQuests = {
+				poi = {},
+			}
 			UpdateDisabled = true
 			
 			for i=1,#ArgusZones do
@@ -2467,6 +3795,8 @@ function WorldQuestList_Update(preTastInfo)
 				SetMapByID(mapID)
 				
 				local zoneName = GetMapNameByID(mapID)
+				
+				local _, c1, d1, a1, b1 = GetCurrentMapZone()
 				
 				local z = C_TaskQuest.GetQuestsForPlayerByMapID(mapID)
 				local c = 0
@@ -2480,21 +3810,34 @@ function WorldQuestList_Update(preTastInfo)
 					end
 					if not findExisted then
 						tinsert(taskInfo, info)
+						tinsert(WorldQuestList.argusWorldQuests, info)
 						info.zone = zoneName
 						info.zoneID = i
 						info.zoneMapID = mapID
 						
-						if i == 1 then
+						info.Zx,info.Zy = c1 - info.x * abs(c1-a1),d1 - info.y * abs(d1-b1)
+						info.Dx,info.Dy = info.x,info.y
+						if i == 1 then	--1170,macari
+							QuestsCachedPosX[info.questId] = 0.155 + info.x * 0.697
+							QuestsCachedPosY[info.questId] = -0.038 + info.y * 0.699
+
 							info.x,info.y = 0.63,0.28
-							info.Wx,info.Wy = 1 - info.x,1 - info.y
-						elseif i == 2 then
-							info.x = 0.34
-							info.y = 0.28
-							info.Wx,info.Wy = 1 - info.x,1 - info.y
-						elseif i == 3 then
-							info.x = 0.30
-							info.y = 0.60
-							info.Wx,info.Wy = 1 - info.x,1 - info.y
+							info.quantizedX,info.quantizedY = QuestsCachedPosX[info.questId],QuestsCachedPosY[info.questId]
+							info.map = 2
+						elseif i == 2 then	--1135,krokun
+							QuestsCachedPosX[info.questId] = 0.487 + info.x * 0.619
+							QuestsCachedPosY[info.questId] = 0.398 + info.y * 0.624
+
+							info.x,info.y = 0.60,0.65
+							info.quantizedX,info.quantizedY = QuestsCachedPosX[info.questId],QuestsCachedPosY[info.questId]
+							info.map = 1
+						elseif i == 3 then	--1171,antorus
+							QuestsCachedPosX[info.questId] = -0.164 + info.x * 0.697
+							QuestsCachedPosY[info.questId] = 0.383 + info.y * 0.699
+
+							info.x,info.y = 0.30,0.48
+							info.quantizedX,info.quantizedY = QuestsCachedPosX[info.questId],QuestsCachedPosY[info.questId]
+							info.map = 3
 						elseif info.x and info.y then
 							info.x = nil
 							info.y = nil
@@ -2502,6 +3845,45 @@ function WorldQuestList_Update(preTastInfo)
 						
 						c = c + 1
 					end
+				end
+				
+				for j=1,(GetNumMapLandmarks() or 0) do
+					local landmarkType, name, description, textureIndex, x, y, mapLinkID, inBattleMap, graveyardID, areaID, poiID, isObjectIcon, atlasIcon, displayAsBanner, mapFloor, textureKitPrefix = C_WorldMap.GetMapLandmarkInfo(j)
+					
+					tinsert(WorldQuestList.argusWorldQuests.poi, {landmarkType, name, description, textureIndex, i == 1 and (0.155 + x * 0.697) or i == 2 and (0.487 + x * 0.619) or i == 3 and (-0.164 + x * 0.697), i == 1 and (-0.038 + y * 0.699) or i == 2 and (0.398 + y * 0.624) or i == 3 and (0.383 + y * 0.699), mapLinkID, inBattleMap, graveyardID, areaID, poiID, isObjectIcon, atlasIcon, displayAsBanner, mapFloor, textureKitPrefix})
+					
+					if poiID and type(atlasIcon)=='string' and atlasIcon:find("^poi%-rift%d+$") then
+						local worldX, worldY = c1 - x * abs(c1-a1),d1 - y * abs(d1-b1)
+						local defX, defY = x, y
+						local genX, genY
+						local map
+						if i == 1 then	--1170,macari
+							if not VWQL.ArgusMap then
+								x,y = 0.155 + x * 0.697,-0.038 + y * 0.699
+							else
+								x,y = 0.63,0.28
+							end
+							map = 2
+						elseif i == 2 then	--1135,krokun
+							if not VWQL.ArgusMap then
+								x,y = 0.487 + x * 0.619,0.398 + y * 0.624
+							else
+								x,y = 0.60,0.65
+							end
+							map = 1
+						elseif i == 3 then	--1171,antorus
+							if not VWQL.ArgusMap then
+								x,y = -0.164 + x * 0.697,0.383 + y * 0.699
+							else
+								x,y = 0.30,0.48
+							end
+							map = 3
+						end
+					
+						taskInfo.poi = taskInfo.poi or {}
+						tinsert(taskInfo.poi, {name, description, x, y, poiID, atlasIcon, 1, zoneName, mapID, worldX, worldY, defX, defY, map})
+					end
+					
 				end
 			end
 			SetMapByID(1184)
@@ -2512,6 +3894,7 @@ function WorldQuestList_Update(preTastInfo)
 		end
 	elseif mapAreaID == 1007 then
 		O.isGeneralMap = true
+				
 		taskInfo = {}
 		
 		local _,xR,yT,xL,yB = GetCurrentMapZone()
@@ -2529,9 +3912,6 @@ function WorldQuestList_Update(preTastInfo)
 				info.zoneMapID = mapID
 				
 				if info.x and info.y then
-					info.Wx = 1 - info.x
-					info.Wy = 1 - info.y
-					
 					QuestsCachedPosX[info.questId] = xR - abs(xR - xL) * info.x
 					QuestsCachedPosY[info.questId] = yT - abs(yT - yB) * info.y
 				end
@@ -2558,8 +3938,6 @@ function WorldQuestList_Update(preTastInfo)
 						if x and x > 0 and y and y > 0 then
 							info.x = x
 							info.y = y
-							info.Wx = 1 - info.x
-							info.Wy = 1 - info.y
 							
 							QuestsCachedPosX[info.questId] = xR - abs(xR - xL) * info.x
 							QuestsCachedPosY[info.questId] = yT - abs(yT - yB) * info.y
@@ -2575,10 +3953,16 @@ function WorldQuestList_Update(preTastInfo)
 		
 		for _, info  in ipairs(taskInfo or {}) do			
 			if info.x and info.y then
-				info.Wx = 1 - info.x
-				info.Wy = 1 - info.y
-				
-				if mapAreaID ~= 1014 then
+				if mapAreaID == 1170 then	--1170,macari
+					QuestsCachedPosX[info.questId] = 0.155 + info.x * 0.697
+					QuestsCachedPosY[info.questId] = -0.038 + info.y * 0.699
+				elseif mapAreaID == 1135 then	--1135,krokun
+					QuestsCachedPosX[info.questId] = 0.487 + info.x * 0.619
+					QuestsCachedPosY[info.questId] = 0.398 + info.y * 0.624
+				elseif mapAreaID == 1171 then	--1171,antorus
+					QuestsCachedPosX[info.questId] = -0.164 + info.x * 0.697
+					QuestsCachedPosY[info.questId] = 0.383 + info.y * 0.699
+				elseif mapAreaID ~= 1014 then
 					QuestsCachedPosX[info.questId] = xR - abs(xR - xL) * info.x
 					QuestsCachedPosY[info.questId] = yT - abs(yT - yB) * info.y
 				end
@@ -2599,28 +3983,13 @@ function WorldQuestList_Update(preTastInfo)
 	end
 	WorldQuestList_Update_PrevZone = mapAreaID
 	
-	local looseShipments = C_Garrison.GetLooseShipments(3)
-	for i = 1, #looseShipments do
-		local name, texture, shipmentCapacity, shipmentsReady, shipmentsTotal, creationTime, duration, timeleftString = C_Garrison.GetLandingPageShipmentInfoByContainerID(looseShipments[i])
-		if texture == 237446 and creationTime then
-			O.nextResearch = (creationTime + duration - time()) / 60 + 60
-			if O.nextResearch < 0 then
-				O.nextResearch = nil
-			end
-			if shipmentsReady and shipmentsReady > 0 then
-				O.nextResearch = 0
-			end
-			break
-		end
+	O.artifactKnowlegeLevel = WorldQuestList:DetectCurrentAK()
+
+	if O.artifactKnowlegeLevel ~= 55 then
+		O.nextResearch = WorldQuestList:GetNextResetTime(WorldQuestList:GetCurrentRegion())
 	end
 	
-	O.artifactKnowlegeLevel = select(2,GetCurrencyInfo(1171)) or 0
-	
-	if WorldQuestList.is73 then
-		O.artifactKnowlegeLevel = WorldQuestList.ak73 or O.artifactKnowlegeLevel or 40
-	end
-	
-	O.isGearLessRelevant = (select(2,GetAverageItemLevel()) or 0) >= 880
+	O.isGearLessRelevant = (select(2,GetAverageItemLevel()) or 0) >= 910
 		
 	local bounties = GetQuestBountyInfoForMapID(1007)
 	local bountiesInProgress = {}
@@ -2634,13 +4003,6 @@ function WorldQuestList_Update(preTastInfo)
 	local numTaskPOIs = 0
 	if(taskInfo ~= nil) then
 		numTaskPOIs = #taskInfo
-	end
-	
-	if ( NUM_WORLDMAP_TASK_POIS < numTaskPOIs ) then
-		for i=NUM_WORLDMAP_TASK_POIS+1, numTaskPOIs do
-			WorldQuestList_CreateLine(i)
-		end
-		NUM_WORLDMAP_TASK_POIS = numTaskPOIs
 	end
 	
 	local result = {}
@@ -2686,7 +4048,7 @@ function WorldQuestList_Update(preTastInfo)
 	local taskIconIndex = 1
 	local totalQuestsNumber = 0
 	if ( numTaskPOIs > 0 ) then
-		for i, info  in pairs(taskInfo) do
+		for i, info  in pairs(taskInfo) do if type(i)=='number' then
 			local questID = info.questId
 			if HaveQuestData(questID) and QuestUtils_IsQuestWorldQuest(questID) and (VWQL[charKey].ignoreIgnore or not VWQL.Ignore[questID]) then
 				local isNewQuest = not VWQL[charKey].Quests[ questID ] or (TableQuestsViewed_Time[ questID ] and TableQuestsViewed_Time[ questID ] > currTime)
@@ -2782,12 +4144,9 @@ function WorldQuestList_Update(preTastInfo)
 					end
 				end
 				
-				--FactionBountyIconsCounter = 0
 				for bountyQuestID,bountyIcon in pairs(bountiesInProgress) do
 					if IsQuestCriteriaForBounty(questID, bountyQuestID) then
 						if not VWQL.DisableBountyIcon then
-							--FactionBountyIconsCounter = FactionBountyIconsCounter + 1
-							--FactionBountyIcons[FactionBountyIconsCounter] = "|T" .. bountyIcon .. ":0|t "
 							faction = "|T" .. bountyIcon .. ":0|t " .. (faction or "")
 						end
 					
@@ -2799,15 +4158,6 @@ function WorldQuestList_Update(preTastInfo)
 						end
 					end
 				end
-				
-				--[[
-				if FactionBountyIconsCounter > 0 then
-					sort(FactionBountyIcons)
-					for i=1,FactionBountyIconsCounter do
-						faction = FactionBountyIcons[i] .. (faction or "")
-					end
-				end
-				]]
 				
 				if ( GetQuestLogRewardXP(questID) > 0 or GetNumQuestLogRewardCurrencies(questID) > 0 or GetNumQuestLogRewards(questID) > 0 or GetQuestLogRewardMoney(questID) > 0 or GetQuestLogRewardArtifactXP(questID) > 0 or (GetQuestLogRewardHonor and GetQuestLogRewardHonor(questID) > 0) ) then
 					local hasRewardFiltered = false
@@ -2853,6 +4203,10 @@ function WorldQuestList_Update(preTastInfo)
 						if currencyID == 1508 then	--Veiled Argunite
 							hasRewardFiltered = true
 							rewardType = 30.1508
+							rewardSort = numItems or 0
+						elseif currencyID == 1506 then	
+							hasRewardFiltered = true
+							rewardType = 30.15085
 							rewardSort = numItems or 0
 						end
 					
@@ -2986,23 +4340,15 @@ function WorldQuestList_Update(preTastInfo)
 							if bit.band(filters[4][2],ActiveFilter) == 0 then 
 								isValidLine = 0 
 							end
-						end
-						
-						--[[
-						if itemID then
-							local _, _, subclass, invType = GetItemInfoInstant(itemID)
-						
-							if invType and invType ~= "" and subclass == ArtifactRelicSubclass then
-								if rewardType > 0 and rewardType ~= 37 then
-									rewardType = 5
-								end
-								hasRewardFiltered = true
-								if bit.band(filters[1][2],ActiveFilter) == 0 then 
-									isValidLine = 0 
-								end
+						elseif itemID == 151568 then
+							rewardType = 35.1
+							rewardSort = numItems or 0
+							hasRewardFiltered = true
+							if bit.band(filters[4][2],ActiveFilter) == 0 then 
+								isValidLine = 0 
 							end
 						end
-						]]
+						
 						if itemID and (rewardType == 0 or rewardType == 37) then
 							hasRewardFiltered = true
 							if bit.band(filters[1][2],ActiveFilter) == 0 then 
@@ -3014,10 +4360,13 @@ function WorldQuestList_Update(preTastInfo)
 							reward = reward:gsub("(|t %d+) ","%1 BOE ")
 						end
 						
+						if itemID and rewardType == 10 then
+							rewardSort = itemID + min(numItems,999) / 1000
+						end
 					end
 					
 					-- honor
-					local honorAmount = GetQuestLogRewardHonor and GetQuestLogRewardHonor(questID)
+					local honorAmount = GetQuestLogRewardHonor(questID)
 					if ( honorAmount and honorAmount > 0 ) then
 						if reward ~= "" then
 							reward = reward .. ", "
@@ -3075,31 +4424,10 @@ function WorldQuestList_Update(preTastInfo)
 						end
 					end
 				end
-				
 							
 				local timeLeftMinutes = C_TaskQuest.GetQuestTimeLeftMinutes(questID)
 				if ( timeLeftMinutes ) then
-					local color
-					local timeString
-					if ( timeLeftMinutes <= WORLD_QUESTS_TIME_CRITICAL_MINUTES ) then
-						color = "|cffff3333"
-						timeString = SecondsToTime(timeLeftMinutes * 60)
-					else
-						if timeLeftMinutes <= 30 then
-							color = "|cffff3333"
-						elseif timeLeftMinutes <= 180 then
-							color = "|cffffff00"
-						end
-					
-						if timeLeftMinutes >= 14400 then	--A lot, 10+ days
-							timeString = format("%dd",floor(timeLeftMinutes / 1440))
-						elseif timeLeftMinutes >= 1440 then
-							timeString = format("%d.%02d:%02d",floor(timeLeftMinutes / 1440),floor(timeLeftMinutes / 60) % 24, timeLeftMinutes % 60)
-						else
-							timeString = (timeLeftMinutes >= 60 and (floor(timeLeftMinutes / 60) % 24) or "0")..":"..format("%02d",timeLeftMinutes % 60)
-						end
-					end
-					timeleft = (color or "")..(timeString or "")
+					timeleft = WorldQuestList:FormatTime(timeLeftMinutes)
 					
 					if rewardType == 20 and O.nextResearch and timeLeftMinutes > O.nextResearch and reward then
 						timeToComplete = timeLeftMinutes - O.nextResearch + 60
@@ -3138,6 +4466,12 @@ function WorldQuestList_Update(preTastInfo)
 					if VWQL[charKey].wantedIgnoreFilter and IsWantedQuest then
 						isValidLine = 1
 					end
+					if VWQL[charKey].aotlIgnoreFilter and factionID == 2165 then
+						isValidLine = 1
+					end
+					if VWQL[charKey].argusReachIgnoreFilter and factionID == 2170 then
+						isValidLine = 1
+					end
 				end
 									
 				
@@ -3156,7 +4490,7 @@ function WorldQuestList_Update(preTastInfo)
 						faction = faction,
 						factionInProgress = factionInProgress,
 						zone = info.zone or "",
-						zoneTime = (info.zoneID or 0) * 1000000000 + (timeLeftMinutes or 0),
+						zoneID = info.zoneMapID or 0,
 						timeleft = timeleft,
 						time = timeLeftMinutes or 0,
 						numObjectives = info.numObjectives,
@@ -3179,6 +4513,55 @@ function WorldQuestList_Update(preTastInfo)
 				
 				totalQuestsNumber = totalQuestsNumber + 1
 			end
+		end end
+	end
+	
+	if mapAreaID ~= 1184 then
+		for i=1,(GetNumMapLandmarks() or 0) do
+			local landmarkType, name, description, textureIndex, x, y, mapLinkID, inBattleMap, graveyardID, areaID, poiID, isObjectIcon, atlasIcon, displayAsBanner, mapFloor, textureKitPrefix = C_WorldMap.GetMapLandmarkInfo(i)
+			if poiID and type(atlasIcon)=='string' and atlasIcon:find("^poi%-rift%d+$") then
+				taskInfo.poi = taskInfo.poi or {}
+				tinsert(taskInfo.poi, {name, description, x, y, poiID, atlasIcon, 1})
+			end
+		end
+	end
+	
+	if taskInfo.poi then
+		for i=1,#taskInfo.poi do
+			local name, description, x, y, poiID, atlasIcon, poiWQLType, zoneName, zoneID, worldX, worldY, defX, defY, map = unpack(taskInfo.poi[i])
+			if poiWQLType == 1 and not VWQL[charKey].invasionPointsFilter then	--invasion points
+				local timeLeftMinutes = C_WorldMap.GetAreaPOITimeLeft(poiID) or 0
+				local isGreat = atlasIcon:match("%d+$") == "2"
+				tinsert(result,{
+					info = {
+						x = x,
+						y = y,
+						zoneMapID = zoneID,
+						Zx = worldX,
+						Zy = worldY,
+						name = description,
+						Dx = defX,
+						Dy = defY,
+						map = map,
+					},
+					reward = description and description:gsub("^.-: ","") or "",
+					faction = "",
+					zone = zoneName,
+					zoneID = zoneID or 0,
+					timeleft = WorldQuestList:FormatTime(timeLeftMinutes),
+					time = timeLeftMinutes,
+					numObjectives = 0,
+					name = name,
+					rewardType = 70,
+					rewardSort = poiID,
+					nameicon = isGreat and -9 or -8,
+					distance = WorldQuestList:CalculateSqDistanceTo(x, y),
+					questColor = 3,
+					isInvasionPoint = true,
+				})				
+				numTaskPOIs = numTaskPOIs + 1
+			end
+			totalQuestsNumber = totalQuestsNumber + 1
 		end
 	end
 
@@ -3190,6 +4573,13 @@ function WorldQuestList_Update(preTastInfo)
 			newResult[#newResult+1] = result[i]
 		end
 		result = newResult
+	end
+	
+	if ( NUM_WORLDMAP_TASK_POIS < numTaskPOIs ) then
+		for i=NUM_WORLDMAP_TASK_POIS+1, numTaskPOIs do
+			WorldQuestList_CreateLine(i)
+		end
+		NUM_WORLDMAP_TASK_POIS = numTaskPOIs
 	end
 	
 	--taskIconIndex = taskIconIndex + 1
@@ -3208,7 +4598,7 @@ function WorldQuestList_Update(preTastInfo)
 			line.name:SetTextColor(1,1,1)
 		end
 		
-		local questNameWidth = NAME_WIDTH
+		local questNameWidth = WorldQuestList.NAME_WIDTH
 		if data.nameicon then
 			line.nameicon:SetWidth(16)
 			if data.nameicon == -1 then
@@ -3225,6 +4615,10 @@ function WorldQuestList_Update(preTastInfo)
 				line.nameicon:SetAtlas("Dungeon")
 			elseif data.nameicon == -7 then
 				line.nameicon:SetAtlas("Raid")
+			elseif data.nameicon == -8 then
+				line.nameicon:SetAtlas("poi-rift1")
+			elseif data.nameicon == -9 then
+				line.nameicon:SetAtlas("poi-rift2")
 			end
 			questNameWidth = questNameWidth - 15
 		else
@@ -3240,6 +4634,12 @@ function WorldQuestList_Update(preTastInfo)
 		else
 			line.secondicon:SetTexture("")
 			line.secondicon:SetWidth(1)	
+		end
+		
+		if data.isInvasionPoint and (not O.isGeneralMap or not VWQL.ArgusMap) then
+			line.isInvasionPoint = true
+		else
+			line.isInvasionPoint = nil
 		end
 		
 		line.name:SetWidth(questNameWidth)
@@ -3309,13 +4709,16 @@ function WorldQuestList_Update(preTastInfo)
 		taskIconIndex = taskIconIndex + 1
 	end
 	
-	WorldQuestList:SetHeight(max(16*(taskIconIndex-1+(VWQL.DisableHeader and 0 or 1)),1))
+	WorldQuestList.currentResult = result
+	
+	WorldQuestList:SetHeight(max(16*(taskIconIndex-1)+(VWQL.DisableHeader and 0 or WorldQuestList.HEADER_HEIGHT)+(VWQL.DisableTotalAP and 0 or WorldQuestList.FOOTER_HEIGHT)+WorldQuestList.SCROLL_FIX_BOTTOM+WorldQuestList.SCROLL_FIX_TOP,1))
 	WorldQuestList.C:SetHeight(max(16*(taskIconIndex-1),1))
 	
 	local lowestLine = #WorldQuestList.Cheader.lines
-	local lowestPosConst = VWQL.DisableHeader and 60 or 40
+	local lowestPosConst = 30
+	local lowestFixAnchorInside = VWQL.Anchor == 2 and WorldMapButton:GetBottom() or 0
 	for i=1,#WorldQuestList.Cheader.lines do
-		local bottomPos = WorldQuestList.Cheader.lines[i]:GetBottom()
+		local bottomPos = (WorldQuestList.Cheader.lines[i]:GetBottom() or 0) - lowestFixAnchorInside
 		if bottomPos and bottomPos < lowestPosConst then
 			lowestLine = i - 1
 			break
@@ -3325,7 +4728,7 @@ function WorldQuestList_Update(preTastInfo)
 	if lowestLine >= taskIconIndex then
 		WorldQuestList.Cheader:SetVerticalScroll(0)
 	else
-		WorldQuestList:SetHeight((lowestLine+1)*16)
+		WorldQuestList:SetHeight((lowestLine+1)*16+WorldQuestList.SCROLL_FIX_BOTTOM+WorldQuestList.SCROLL_FIX_TOP+(VWQL.DisableTotalAP and 0 or WorldQuestList.FOOTER_HEIGHT)+(VWQL.DisableHeader and 0 or WorldQuestList.HEADER_HEIGHT-16))
 		WorldQuestList.Cheader:SetVerticalScroll( min(WorldQuestList.Cheader:GetVerticalScrollRange(),WorldQuestList.Cheader:GetVerticalScroll()) )
 	end
 	UpdateScrollButtonsState()
@@ -3337,7 +4740,7 @@ function WorldQuestList_Update(preTastInfo)
 	
 	if taskIconIndex == 1 then
 		WorldQuestList.b:SetAlpha(0)
-		WorldQuestList.backdrop:SetAlpha(0)
+		WorldQuestList.backdrop:Hide()
 		if mapAreaID == 1007 then
 			ViewAllButton:Hide()
 		elseif mapAreaID == 1184 then
@@ -3346,29 +4749,18 @@ function WorldQuestList_Update(preTastInfo)
 			ViewAllButton:Show()
 		end
 		WorldQuestList.header:Update(true)
-		WorldQuestList.TotalAP:SetText("")
+		WorldQuestList.footer:Update(true)
 	else
 		WorldQuestList.b:SetAlpha(WorldQuestList.b.A or 1)
-		WorldQuestList.backdrop:SetAlpha(1)
+		WorldQuestList.backdrop:Show()
 		ViewAllButton:Hide()
 		WorldQuestList.header:Update(false,O.isGeneralMap)
+		WorldQuestList.footer:Update(false,O.isGeneralMap)
 	end
 	
-	if not VWQL.DisableTotalAP then
-		local fString = ""
-		if totalAP > 0 then
-			fString = fString .. (fString ~= "" and "|n" or "") .. LOCALE.totalap .. FormatAPnumber(totalAP,O.artifactKnowlegeLevel)
-		end
-		if totalOR > 0 then
-			fString = fString .. (fString ~= "" and "|n" or "") .. format("%s: %d",orderResName,totalOR)
-		end
-		if totalG > 0 then
-			fString = fString .. (fString ~= "" and "|n" or "") .. LOCALE.gold..": "..GetCoinTextureString(totalG)
-		end
-		WorldQuestList.TotalAP:SetText(fString)
-	else
-		WorldQuestList.TotalAP:SetText("")
-	end
+	WorldQuestList.footer.ap:SetText(LOCALE.totalap .. FormatAPnumber(totalAP,O.artifactKnowlegeLevel):gsub("%%%%","%%"))
+	WorldQuestList.footer.OR:SetText(format("|T%d:0|t %d",1397630,totalOR))
+	WorldQuestList.footer.gold:SetText(totalG > 0 and GetCoinTextureString(totalG) or "")
 	
 	if totalQuestsNumber == 0 then
 		WorldQuestList.sortDropDown:Hide()
@@ -3388,6 +4780,7 @@ C_Timer.NewTicker(.7,function()
 	end
 end)
 
+--[[
 local prevZone
 hooksecurefunc("WorldMap_UpdateQuestBonusObjectives", function ()
 	local currZone = GetCurrentMapAreaID()
@@ -3397,6 +4790,7 @@ hooksecurefunc("WorldMap_UpdateQuestBonusObjectives", function ()
 	prevZone = currZone
 	UpdateTicker = true
 end)
+]]
 --[[
 local WorldMap_UpdateQuestBonusObjectives_Replace = CreateFrame'Frame'
 WorldMap_UpdateQuestBonusObjectives_Replace:RegisterEvent("QUEST_LOG_UPDATE")
@@ -3424,6 +4818,23 @@ local function UpdateDB()
 	local questsList = {}
 	for i=1,#BrokenIslesZones do
 		local z = C_TaskQuest.GetQuestsForPlayerByMapID(BrokenIslesZones[i])
+		for i, info  in ipairs(z) do
+			local questID = info.questId
+			if HaveQuestData(questID) and QuestUtils_IsQuestWorldQuest(questID) then
+				questsList[ questID ] = true
+			end
+		end
+	end
+	for j=1,#dalaranWQs do
+		local questID = dalaranWQs[j]
+		local timeLeft = C_TaskQuest.GetQuestTimeLeftMinutes(questID)
+		if (timeLeft or 0) > 0 then
+			questsList[ questID ] = true
+		end
+	end
+	for i=1,#ArgusZones do
+		SetMapByID(ArgusZones[i])
+		local z = C_TaskQuest.GetQuestsForPlayerByMapID(ArgusZones[i])
 		for i, info  in ipairs(z) do
 			local questID = info.questId
 			if HaveQuestData(questID) and QuestUtils_IsQuestWorldQuest(questID) then
@@ -3473,22 +4884,70 @@ WorldMapButton_HookShowHide:SetScript('OnShow',function()
 	end
 	C_Garrison.RequestLandingPageShipmentInfo()
 end)
+local prevZone
+WorldMapButton_HookShowHide:SetScript('OnUpdate',function()
+	local currZone = GetCurrentMapAreaID()
+	if currZone ~= prevZone then
+		WorldQuestList_Update()
+	end
+	prevZone = currZone
+	UpdateTicker = true
+end)
+WorldMapButton_HookShowHide:RegisterEvent("QUEST_LOG_UPDATE")
+WorldMapButton_HookShowHide:SetScript("OnEvent",function()
+	if WorldMapFrame:IsVisible() then
+		UpdateTicker = true
+	end
+end)
 
-SlashCmdList["WQLSlash"] = function() 
-	if WorldQuestList:IsVisible() then
+SlashCmdList["WQLSlash"] = function(arg)
+	local argL = strlower(arg)
+	if argL == "reset" then
+		VWQL.PosLeft = nil
+		VWQL.PosTop = nil
+		VWQL.Anchor3PosLeft = nil
+		VWQL.Anchor3PosTop = nil
+	elseif argL == "resetanchor" then 
+		VWQL.Anchor = nil
+		print("Anchor Reseted")
+		return
+	elseif WorldQuestList:IsVisible() then
 		WorldQuestList:Hide()
 		WorldQuestList:Show()
 		return
 	end
 	WorldQuestList:ClearAllPoints()
 	WorldQuestList:SetParent(UIParent)
-	WorldQuestList:SetPoint("TOPLEFT",WorldMapScreenAnchor,20)
-	SetMapByID(1007)
-	WorldQuestList_Update()
-	C_Timer.NewTimer(.5,WorldQuestList_Update)
-	C_Timer.NewTimer(1.5,WorldQuestList_Update)
+	if type(VWQL)=='table' and type(VWQL.PosLeft)=='number' and type(VWQL.PosTop) == 'number' then
+		WorldQuestList:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",VWQL.PosLeft,VWQL.PosTop)
+	else
+		WorldQuestList:SetPoint("TOPLEFT",WorldMapScreenAnchor,20)
+	end
+	WorldQuestList.IsSoloRun = true
+	SetMapToCurrentZone()
+	local currZone = GetCurrentMapAreaID()
+	local isArgus = false
+	if argL == "argus" then
+		SetMapByID(1184)
+		currZone = 1184
+	end
+	if currZone == 1170 or currZone == 1135 or currZone == 1171 or currZone == 1184 or currZone == 1171 then
+		LastUpdateReset()
+		SetMapByID(1184)
+		isArgus = true
+	else
+		SetMapByID(1007)
+	end
 	WorldQuestList.Close:Show()
+	WorldQuestList.moveHeader:Show()
 	WorldQuestList:Show()
+	WorldQuestList_Update()
+	if not isArgus then
+		C_Timer.After(.5,WorldQuestList_Update)
+		C_Timer.After(1.5,WorldQuestList_Update)
+	else
+		C_Timer.After(1,WorldQuestList_Update)
+	end
 end
 SLASH_WQLSlash1 = "/wql"
 SLASH_WQLSlash2 = "/worldquestslist"
@@ -3996,30 +5455,12 @@ SlashCmdList["WQLBarrelsSlash"] = function(arg)
 end
 SLASH_WQLBarrelsSlash1 = "/barrelshelper"
 
+--Flight Map X
 
----- ElvUI
-
-C_Timer.After(5,function()
-	if ElvUI and ElvUI[1] and ElvUI[1].GetModule then
-		local S = ElvUI[1]:GetModule('Skins')
-		if S then
-			S:HandleButton(ViewAllButton, true)
-			S:HandleDropDownBox(WorldQuestList.sortDropDown)
-			S:HandleDropDownBox(WorldQuestList.filterDropDown)
-			S:HandleDropDownBox(WorldQuestList.optionsDropDown)
-			
-			WorldQuestList.backdrop:SetBackdrop({})
-			DEV_CreateBorder(WorldQuestList.backdrop,2)
-			WorldQuestList.backdrop:SetBorderColor(0,0,0,1)
-			WorldQuestList.b.A = .7
-			
-			WorldQuestList.backdrop:SetPoint("TOPLEFT",0,0)
-			WorldQuestList.backdrop:SetPoint("BOTTOMRIGHT",0,0)
-		end
-	end
-end)
-
-local FlightMap_Pos = {13100.099609375,7262.1298828125,-5738.080078125,-5296.6899414063}
+local FlightMap_Pos = {
+	[1007] = {13100.099609375,7262.1298828125,-5738.080078125,-5296.6899414063},
+	[1184] = {0,0,1,1},
+}
 
 local FlightMap = CreateFrame("Frame")
 FlightMap:RegisterEvent("ADDON_LOADED")
@@ -4031,12 +5472,13 @@ FlightMap:SetScript("OnEvent",function (self, event, arg)
 		f:SetSize(1,1)
 		f:SetScript("OnShow",function()
 			local mapID = GetTaxiMapID()
-			if mapID == 1007 then
+			if mapID and FlightMap_Pos[mapID] then
+				local mapPos = FlightMap_Pos[mapID]
 				for i=1,GetNumWorldQuestWatches() do
 					local questID = GetWorldQuestWatchInfo(i)
 					if QuestsCachedPosX[questID] then
-						local posX = abs((FlightMap_Pos[1] - QuestsCachedPosX[questID]) / (FlightMap_Pos[1] - FlightMap_Pos[3]))
-						local posY = abs((FlightMap_Pos[2] - QuestsCachedPosY[questID]) / (FlightMap_Pos[2] - FlightMap_Pos[4]))
+						local posX = abs((mapPos[1] - QuestsCachedPosX[questID]) / (mapPos[1] - mapPos[3]))
+						local posY = abs((mapPos[2] - QuestsCachedPosY[questID]) / (mapPos[2] - mapPos[4]))
 						
 						local width = FlightMapFrame.ScrollContainer.Child:GetWidth()
 						if width == 0 then
@@ -4095,7 +5537,7 @@ end)
 
 
 do
-	local Templates = {}
+	local Templates = ELib.Templates
 	function ELib:Template(name,parent)
 		if not Templates[name] then
 			return
@@ -4104,42 +5546,6 @@ do
 		--obj:SetParent(parent or UIParent)
 		return obj
 	end
-	ELib.Templates = Templates
-	function Templates:Border(self,cR,cG,cB,cA,size,offsetX,offsetY)
-		offsetX = offsetX or 0
-		offsetY = offsetY or 0
-	
-		self.BorderTop = self:CreateTexture(nil,"BACKGROUND")
-		self.BorderTop:SetColorTexture(cR,cG,cB,cA)
-		self.BorderTop:SetPoint("TOPLEFT",-size-offsetX,size+offsetY)
-		self.BorderTop:SetPoint("BOTTOMRIGHT",self,"TOPRIGHT",size+offsetX,offsetY)
-
-		self.BorderLeft = self:CreateTexture(nil,"BACKGROUND")
-		self.BorderLeft:SetColorTexture(cR,cG,cB,cA)
-		self.BorderLeft:SetPoint("TOPLEFT",-size-offsetX,offsetY)
-		self.BorderLeft:SetPoint("BOTTOMRIGHT",self,"BOTTOMLEFT",-offsetX,-offsetY)
-
-		self.BorderBottom = self:CreateTexture(nil,"BACKGROUND")
-		self.BorderBottom:SetColorTexture(cR,cG,cB,cA)
-		self.BorderBottom:SetPoint("BOTTOMLEFT",-size-offsetX,-size-offsetY)
-		self.BorderBottom:SetPoint("TOPRIGHT",self,"BOTTOMRIGHT",size+offsetX,-offsetY)
-
-		self.BorderRight = self:CreateTexture(nil,"BACKGROUND")
-		self.BorderRight:SetColorTexture(cR,cG,cB,cA)
-		self.BorderRight:SetPoint("BOTTOMRIGHT",size+offsetX,offsetY)
-		self.BorderRight:SetPoint("TOPLEFT",self,"TOPRIGHT",offsetX,-offsetY)
-	end
-	function ELib:Shadow(parent,size,edgeSize)
-		local self = CreateFrame("Frame",nil,parent)
-		self:SetPoint("LEFT",-size,0)
-		self:SetPoint("RIGHT",size,0)
-		self:SetPoint("TOP",0,size)
-		self:SetPoint("BOTTOM",0,-size)
-		self:SetBackdrop({edgeFile="Interface/AddOns/WorldQuestsList/shadow",edgeSize=edgeSize or 28,insets={left=size,right=size,top=size,bottom=size}})
-		self:SetBackdropBorderColor(0,0,0,.45)
-	
-		return self
-	end	
 	do
 		local function OnEnter(self, motion)
 			UIDropDownMenu_StopCounting(self, motion)
@@ -4462,8 +5868,10 @@ do
 		else
 			dropDown = self:GetParent()
 		end
+		ELib.ScrollDropDown.DropDownList[1]:SetFrameStrata("TOOLTIP")
+		ELib.ScrollDropDown.DropDownList[2]:SetFrameStrata("TOOLTIP")
 		ELib.ScrollDropDown.ToggleDropDownMenu(dropDown)
-		--PlaySound("igMainMenuOptionCheckBoxOn")
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
 	end
 	
 	function ELib.ScrollDropDown:Reload(level)

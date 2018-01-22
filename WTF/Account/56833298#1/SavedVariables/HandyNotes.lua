@@ -1,43 +1,133 @@
 
 HandyNotesDB = {
 	["profileKeys"] = {
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Vaddor - Zul'jin"] = "Vaddor - Zul'jin",
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
+		["Brokehorn - Zul'jin"] = "Brokehorn - Zul'jin",
+		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
+		["Goramor - Runetotem"] = "Goramor - Runetotem",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Urbul - Zul'jin"] = "Urbul - Zul'jin",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Datgorg - Zul'jin"] = "Datgorg - Zul'jin",
+		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Brotuss - Zul'jin"] = "Brotuss - Zul'jin",
+		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
+		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
-		["Bathal - Argent Dawn"] = {
+		["Vaddor - Zul'jin"] = {
 		},
 		["Datgorg - Argent Dawn"] = {
 		},
 		["Jingojaggot - Argent Dawn"] = {
 		},
-		["Vadder - Argent Dawn"] = {
+		["Tyrannithal - Zul'jin"] = {
 		},
-		["Brotus - Argent Dawn"] = {
+		["Brokehorn - Zul'jin"] = {
+		},
+		["Shaewong - Dalaran"] = {
+		},
+		["Goramor - Runetotem"] = {
+		},
+		["Shaekhan - Zul'jin"] = {
+		},
+		["Shanyt - Zul'jin"] = {
+		},
+		["Bathal - Argent Dawn"] = {
+		},
+		["Gangus - Runetotem"] = {
+		},
+		["Shaekhan - Argent Dawn"] = {
+		},
+		["Malivant - Dalaran"] = {
+		},
+		["Urbul - Zul'jin"] = {
+		},
+		["Claugh - Runetotem"] = {
+		},
+		["Tyriinid - Dalaran"] = {
+		},
+		["Datgorg - Zul'jin"] = {
+		},
+		["Panboozled - Runetotem"] = {
+		},
+		["Tynster - Dalaran"] = {
 		},
 		["LUI-Towelliee"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
+		["Zulbathal - Zul'jin"] = {
+		},
 		["Shanyt - Argent Dawn"] = {
+		},
+		["Brotuss - Zul'jin"] = {
+		},
+		["Brewnheimer - Darkspear"] = {
+		},
+		["Jingojaggot - Zul'jin"] = {
+		},
+		["Gillbourn - Runetotem"] = {
+		},
+		["Narisaric - Dalaran"] = {
+		},
+		["Sinh - Dalaran"] = {
+		},
+		["Serbitechna - Darkspear"] = {
+		},
+		["Dialdaas - Darkspear"] = {
+		},
+		["Shathiel - Darkspear"] = {
+		},
+		["Vadder - Argent Dawn"] = {
 		},
 		["Mulmok - Argent Dawn"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
+		["Thromar - Dalaran"] = {
+		},
+		["Brotus - Argent Dawn"] = {
+		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Fantastiburo - Zul'jin"] = {
+		},
+		["Beeronimo - Dalaran"] = {
+		},
+		["Migimong - Runetotem"] = {
+		},
+		["Tyrann - Zul'jin"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},
@@ -45,43 +135,133 @@ HandyNotesDB = {
 }
 HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Vaddor - Zul'jin"] = "Vaddor - Zul'jin",
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
+		["Brokehorn - Zul'jin"] = "Brokehorn - Zul'jin",
+		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
+		["Goramor - Runetotem"] = "Goramor - Runetotem",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Urbul - Zul'jin"] = "Urbul - Zul'jin",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Datgorg - Zul'jin"] = "Datgorg - Zul'jin",
+		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Brotuss - Zul'jin"] = "Brotuss - Zul'jin",
+		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
+		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
-		["Bathal - Argent Dawn"] = {
+		["Vaddor - Zul'jin"] = {
 		},
 		["Datgorg - Argent Dawn"] = {
 		},
 		["Jingojaggot - Argent Dawn"] = {
 		},
-		["Vadder - Argent Dawn"] = {
+		["Tyrannithal - Zul'jin"] = {
 		},
-		["Brotus - Argent Dawn"] = {
+		["Brokehorn - Zul'jin"] = {
+		},
+		["Shaewong - Dalaran"] = {
+		},
+		["Goramor - Runetotem"] = {
+		},
+		["Shaekhan - Zul'jin"] = {
+		},
+		["Shanyt - Zul'jin"] = {
+		},
+		["Bathal - Argent Dawn"] = {
+		},
+		["Gangus - Runetotem"] = {
+		},
+		["Shaekhan - Argent Dawn"] = {
+		},
+		["Malivant - Dalaran"] = {
+		},
+		["Urbul - Zul'jin"] = {
+		},
+		["Claugh - Runetotem"] = {
+		},
+		["Tyriinid - Dalaran"] = {
+		},
+		["Datgorg - Zul'jin"] = {
+		},
+		["Panboozled - Runetotem"] = {
+		},
+		["Tynster - Dalaran"] = {
 		},
 		["LUI-Towelliee"] = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
+		["Zulbathal - Zul'jin"] = {
+		},
 		["Shanyt - Argent Dawn"] = {
+		},
+		["Brotuss - Zul'jin"] = {
+		},
+		["Brewnheimer - Darkspear"] = {
+		},
+		["Jingojaggot - Zul'jin"] = {
+		},
+		["Gillbourn - Runetotem"] = {
+		},
+		["Narisaric - Dalaran"] = {
+		},
+		["Sinh - Dalaran"] = {
+		},
+		["Serbitechna - Darkspear"] = {
+		},
+		["Dialdaas - Darkspear"] = {
+		},
+		["Shathiel - Darkspear"] = {
+		},
+		["Vadder - Argent Dawn"] = {
 		},
 		["Mulmok - Argent Dawn"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
+		["Thromar - Dalaran"] = {
+		},
+		["Brotus - Argent Dawn"] = {
+		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Fantastiburo - Zul'jin"] = {
+		},
+		["Beeronimo - Dalaran"] = {
+		},
+		["Migimong - Runetotem"] = {
+		},
+		["Tyrann - Zul'jin"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},

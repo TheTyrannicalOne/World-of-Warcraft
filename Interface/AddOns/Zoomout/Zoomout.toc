@@ -1,6 +1,0 @@
-﻿## Interface: 70200
-## Author: Krappyzappy
-## Title: Zoomout
-## Notes: Executes the "/console cameradistancemaxfactor 2.6" command on login
-## Version: 1.6.0
-Zoomout.lua

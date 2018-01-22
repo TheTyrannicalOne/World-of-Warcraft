@@ -306,7 +306,6 @@ L:SetGeneralLocalization{
 
 L:SetWarningLocalization{
 	MagneticCore		= ">%s< has Magnetic Core",
-	WarningShockBlast	= "Shock Blast - Run away",
 	WarnBombSpawn		= "Bomb Bot spawned"
 }
 
@@ -326,8 +325,6 @@ L:SetOptionLocalization{
 	AutoChangeLootToFFA		= "Switch loot mode to Free for All in Phase 3",
 	WarnBombSpawn			= "Show warning for Bomb Bots",
 	TimerHardmode			= "Show timer for hard mode",
-	ShockBlastWarningInP1	= "Show special warning for $spell:63631 in Phase 1",
-	ShockBlastWarningInP4	= "Show special warning for $spell:63631 in Phase 4",
 	RangeFrame				= "Show range frame in Phase 1 (6 yards)",
 	SetIconOnNapalm			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(65026),
 	SetIconOnPlasmaBlast	= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(62997)
@@ -339,9 +336,6 @@ L:SetMiscLocalization{
 	MobPhase3		= "Aerial Command Unit",
 	YellPull		= "We haven't much time, friends! You're going to help me test out my latest and greatest creation. Now, before you change your minds, remember that you kind of owe it to me after the mess you made with the XT-002.",	
 	YellHardPull	= "Self-destruct sequence initiated.",
-	YellPhase2		= "WONDERFUL! Positively marvelous results! Hull integrity at 98.9 percent! Barely a dent! Moving right along.",
-	YellPhase3		= "Thank you, friends! Your efforts have yielded some fantastic data! Now, where did I put-- oh, there it is.",
-	YellPhase4		= "Preliminary testing phase complete. Now comes the true test!",
 	LootMsg			= "([^%s]+).*Hitem:(%d+)"
 }
 
@@ -358,20 +352,10 @@ L:SetTimerLocalization{
 	hardmodeSpawn = "Saronite Animus spawn"
 }
 
-L:SetWarningLocalization{
-	SpecialWarningShadowCrash		= "Shadow Crash on you - Move away",
-	SpecialWarningShadowCrashNear	= "Shadow Crash near you - Watch out",
-	SpecialWarningLLNear			= "Mark of the Faceless on %s near you"
-}
-
 L:SetOptionLocalization{
 	SetIconOnShadowCrash			= "Set icons on $spell:62660 targets (skull)",
 	SetIconOnLifeLeach				= "Set icons on $spell:63276 targets (cross)",
-	SpecialWarningShadowCrash		= "Show special warning for $spell:62660<br/>(must be targeted or focused by at least one raid member)",
-	SpecialWarningShadowCrashNear	= "Show special warning for $spell:62660 near you",
-	SpecialWarningLLNear			= "Show special warning for $spell:63276 near you",
 	hardmodeSpawn					= "Show timer for Saronite Animus spawn (hard mode)",
-	CrashArrow						= "Show DBM arrow when $spell:62660 is near you"
 }
 
 L:SetMiscLocalization{
@@ -392,11 +376,8 @@ L:SetWarningLocalization{
 	WarningCrusherTentacleSpawned	= "Crusher Tentacle spawned",
 	WarningSanity 					= "%d Sanity remaining",
 	SpecWarnSanity 					= "%d Sanity remaining",
-	SpecWarnGuardianLow				= "Stop attacking this Guardian",
 	SpecWarnMadnessOutNow			= "Induce Madness ending - Move out",
 	WarnBrainPortalSoon				= "Brain Portal in 3 seconds",	
-	SpecWarnFervor					= "Sara's Fervor on you",
-	SpecWarnFervorCast				= "Sara's Fervor is being cast on you",
 	specWarnBrainPortalSoon			= "Brain Portal soon"
 }
 
@@ -409,17 +390,14 @@ L:SetOptionLocalization{
 	WarningCrusherTentacleSpawned	= "Show warning for Crusher Tentacle spawns",
 	WarningSanity					= "Show warning when $spell:63050 is low",
 	SpecWarnSanity					= "Show special warning when $spell:63050 is very low",
-	SpecWarnGuardianLow				= "Show special warning when Guardian (Phase 1) is low (for DDs)",
 	WarnBrainPortalSoon				= "Show pre-warning for Brain Portal",
 	SpecWarnMadnessOutNow			= "Show special warning shortly before $spell:64059 ends",
 	SetIconOnFearTarget				= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(63881),
-	SpecWarnFervorCast				= "Show special warning when $spell:63138 is being cast on you (must be targeted or focused by at least one raid member)",
 	specWarnBrainPortalSoon			= "Show special warning for next Brain Portal",
 	NextPortal						= "Show timer for next Brain Portal",
 	SetIconOnFervorTarget			= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(63138),
 	ShowSaraHealth					= "Show health frame for Sara in Phase 1 (must be targeted or focused by at least one raid member)",
-	SetIconOnBrainLinkTarget		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(63802),
-	MaladyArrow						= "Show DBM arrow when $spell:63881 is near you"
+	SetIconOnBrainLinkTarget		= DBM_CORE_AUTO_ICONS_OPTION_TEXT:format(63802)
 }
 
 L:SetMiscLocalization{

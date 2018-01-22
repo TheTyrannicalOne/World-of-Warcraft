@@ -1,6 +1,6 @@
 --[[
 	Copyright (C) 2006-2007 Nymbia
-	Copyright (C) 2010 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
+	Copyright (C) 2010-2017 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -66,9 +66,9 @@ end
 function Latency:OnEnable()
 	self:RawHook(Player, "UNIT_SPELLCAST_START")
 	self:RawHook(Player, "UNIT_SPELLCAST_DELAYED")
-	
-	self:RegisterEvent("UNIT_SPELLCAST_SENT")
-    self:RegisterEvent("CURRENT_SPELL_CAST_CHANGED") -- ICY: latency fix
+
+	self:RegisterEvent("CURRENT_SPELL_CAST_CHANGED")
+	--self:RegisterEvent("UNIT_SPELLCAST_SENT")
 	self:RegisterEvent("UNIT_SPELLCAST_INTERRUPTED")
 	self:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
 	media.RegisterCallback(self, "LibSharedMedia_SetGlobal", function(mtype, override)
@@ -91,14 +91,14 @@ function Latency:OnDisable()
 	lagtext:Hide()
 end
 
+function Latency:CURRENT_SPELL_CAST_CHANGED(event)
+	sendTime = GetTime()
+end
+
 function Latency:UNIT_SPELLCAST_SENT(event, unit)
 	if unit ~= "player" and unit ~= "vehicle" then
 		return
 	end
-	-- sendTime = GetTime() -- ICY: latency fix
-end
-
-function Latency:CURRENT_SPELL_CAST_CHANGED(event, unit)
 	sendTime = GetTime()
 end
 
@@ -147,10 +147,7 @@ function Latency:UNIT_SPELLCAST_START(object, bar, unit)
 	lagbox:SetDrawLayer(side == "LEFT" and "OVERLAY" or "BACKGROUND")
 	lagbox:SetPoint(side, Player.Bar.Bar, side)
 	lagbox:SetWidth(Player.Bar.Bar:GetWidth() * perc)
-	if perc == 0 then -- ICY: processing 0 lag
-        lagbox:SetWidth(1)
-    end
-    lagbox:Show()
+	lagbox:SetShown(perc > 0)
 	
 	if db.lagtext then
 		if alignoutside then
@@ -190,7 +187,7 @@ end
 function Latency:UNIT_SPELLCAST_DELAYED(object, bar, unit)
 	self.hooks[object].UNIT_SPELLCAST_DELAYED(object, bar, unit)
 
-	if db.lagembed then
+	if db.lagembed and timeDiff then
 		local startTime = bar.startTime - timeDiff + db.lagpadding
 		bar.startTime = startTime
 		local endTime = bar.endTime - timeDiff + db.lagpadding

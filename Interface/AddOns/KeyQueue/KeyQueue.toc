@@ -1,8 +1,9 @@
-## Interface: 70100
+## Interface: 70300
 ## Title: KeyQueue
 ## Notes: Play with your favorite streamer!
 ## Author: Simon Carlsson
-## Version: 1.5.0.2
+## Updatedby: James Younger
+## Version: 2.0.2
 ## SavedVariablesPerCharacter: KQ_applicants, KQ_settings, KQ_isKeyQueueShown
 
 KeystoneHelper.xml

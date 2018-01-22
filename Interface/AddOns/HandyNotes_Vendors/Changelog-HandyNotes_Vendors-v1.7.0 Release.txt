@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r90 | nevcairiel | 2015-09-28 17:59:35 +0000 (Mon, 28 Sep 2015) | 1 line
+Changed paths:
+   A /tags/v1.7.0 Release (from /trunk:89)
+
+Tagging as v1.7.0 Release
+------------------------------------------------------------------------
+r89 | nevcairiel | 2015-09-28 17:58:49 +0000 (Mon, 28 Sep 2015) | 1 line
+Changed paths:
+   M /trunk/HandyNotes_Vendors.toc
+   M /trunk/addon.lua
+
+Update to latest HandyNotes version
+------------------------------------------------------------------------

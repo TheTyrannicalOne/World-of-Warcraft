@@ -1,0 +1,42 @@
+tag 7d67a79e3c766aea131679c079692dcafb927d2a 7.2.5.1
+Author:	Ressy <resa1983@hotmail.com>
+Date:	Mon Jul 3 13:39:45 2017 -0400
+
+7.2.5.1 update
+
+commit 753b27a3aa3efdd5a89359a955142c3d2c8dc32e
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Jun 17 11:39:57 2017 -0400
+
+    Comment out Enchanted Bobber, cuz Blizz temporarily hotfixed it out
+
+commit 72fb35053568fa69ce7643d49c238281882451c6
+Author: Ressy <resa1983@hotmail.com>
+Date:   Fri Jun 16 22:17:20 2017 -0400
+
+    Add 7.2.5 items.
+
+commit f93fa06d765244d375eb92ad02bd7c6afc592c1f
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun May 28 10:08:18 2017 -0400
+
+    Add 7.2.5 items/pets
+
+commit f93fa06d765244d375eb92ad02bd7c6afc592c1f
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun May 28 10:08:18 2017 -0400
+
+    Add 7.2.5 items/pets
+
+commit 2b81cd6a7fa1b73e189f7aa801759f60463224cc
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sun May 28 10:03:39 2017 -0400
+
+    Add Dalaran vendors to garrison pet items
+
+commit fe7a28f7ed4b81d83ca8e7cad79e58ab83dd0ce9
+Author: Ressy <resa1983@hotmail.com>
+Date:   Sat Apr 29 12:02:49 2017 -0400
+
+    Update Curious Wyrmtongue Cache
+

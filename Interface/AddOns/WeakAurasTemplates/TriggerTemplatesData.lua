@@ -1525,7 +1525,7 @@ templates.class.SHAMAN = {
         { spell = 210652, type = "buff", unit = "player", talent = 1 }, -- Storm Totem
         { spell = 210658, type = "buff", unit = "player", talent = 1 }, -- Ember Totem
         { spell = 210659, type = "buff", unit = "player", talent = 1 }, -- Tailwind Totem
-        { spell = 210714, type = "buff", unit = "player", talent = 15 }, -- Icefury
+        { spell = 210714, type = "buff", unit = "player", talent = 21 }, -- Icefury
       },
       icon = 451169
     },
@@ -1656,6 +1656,7 @@ templates.class.SHAMAN = {
         { spell = 188089, type = "ability", talent = 21}, -- Earthen Spike
         { spell = 192058, type = "ability", talent = 7}, -- Lightning Surge Totem
         { spell = 192077, type = "ability", talent = 6}, -- Wind Rush Totem
+        { spell = 193786, type = "ability"}, -- Rock Biter
         { spell = 193796, type = "ability"}, -- Flametongue
         { spell = 196884, type = "ability", talent = 5}, -- Feral Lunge
         { spell = 196932, type = "ability", talent = 9}, -- Voodoo Totem
@@ -2719,7 +2720,7 @@ templates.class.DRUID = {
         { spell = 5217, type = "buff", unit = "player" }, -- Tiger's Fury
         { spell = 8936, type = "buff", unit = "player"}, -- Regrowth
         { spell = 22842, type = "buff", unit = "player", talent = 8 }, -- Frenzied Regeneration
-        { spell = 52610, type = "buff", unit = "player", talent = 15 }, -- Savage Roar
+        { spell = 52610, type = "buff", unit = "player", talent = 18 }, -- Savage Roar
         { spell = 61336, type = "buff", unit = "player" }, -- Survival Instincts
         { spell = 69369, type = "buff", unit = "player" }, -- Predatory Swiftness
         { spell = 102543, type = "buff", unit = "player", talent = 14 }, -- Incarnation: King of the Jungle

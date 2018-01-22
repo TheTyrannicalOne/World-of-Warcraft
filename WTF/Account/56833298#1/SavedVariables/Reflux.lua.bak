@@ -2,15 +2,15 @@
 RefluxDB = {
 	["emulated"] = {
 	},
-	["activeProfile"] = "Bathal - Argent Dawn",
+	["activeProfile"] = "Brewnheimer - Darkspear",
 	["addons"] = {
 	},
 	["ignored"] = {
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
-		},
 		["Towel-Monk"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

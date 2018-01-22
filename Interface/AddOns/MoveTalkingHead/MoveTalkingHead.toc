@@ -1,5 +1,5 @@
-## Interface: 70200
-## Version: v1.2.0
+## Interface: 70300
+## Version: v1.2.1
 ## Title: MoveTalkingHead
 ## Notes: Makes the message dialog movable
 ## Author: Ketho @ EU-Boulderfist

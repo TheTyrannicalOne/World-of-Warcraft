@@ -1,5 +1,4 @@
 if GetLocale() ~= "itIT" then return end
-DBM_CORE_NEED_LOCALS				= "Sei bravo come programmatore? Se si, il team di DBM ha bisogno del tuo aiuto per mantenere DBM il miglior Boss Mod per WoW. Entra nel nostro gruppo visitando |HDBM:localizersneeded|h|cff3588ffhere|r"
 DBM_HOW_TO_USE_MOD					= "Benvenuto in DBM. Scrivi /dbm help per avere una lista dei comandi supportati. Per accedere alle opzioni scrivi in chat /dbm. Carica le zone specifiche per configurare manualmente ogni settaggio di ogni boss. DBM prova a farlo per te controllando la tua specializzazione alla prima esecuzione, ma alcuni potrebbero volere alcune opzioni attivate."
 
 DBM_CORE_LOAD_MOD_ERROR				= "Errore nel caricamento del Boss Mod per %s: %s"
@@ -134,7 +133,7 @@ DBM_CORE_AUTO_TIMER_TEXTS.cast			= "%s"
 DBM_CORE_AUTO_TIMER_TEXTS.active		= "%s finisce" --Buff/Debuff/event on boss
 DBM_CORE_AUTO_TIMER_TEXTS.fades			= "%s svanisce" --Buff/Debuff on players
 DBM_CORE_AUTO_TIMER_TEXTS.cd			= "%s CD"
-DBM_CORE_AUTO_TIMER_TEXTS.cdcount		= "%s CD (%%d)"
+DBM_CORE_AUTO_TIMER_TEXTS.cdcount		= "%s CD (%%s)"
 DBM_CORE_AUTO_TIMER_TEXTS.cdsource		= "%s CD: >%%s<"
 DBM_CORE_AUTO_TIMER_TEXTS.next			= "Prossimo %s"
 DBM_CORE_AUTO_TIMER_TEXTS.nextcount		= "Prossimo %s (%%s)"
@@ -161,8 +160,8 @@ DBM_CORE_AUTO_ANNOUNCE_TEXTS.adds			= "%s rimanente: %%d"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.cast			= "Lancio di %s: %.1f sec"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.soon			= "%s imminente"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.prewarn		= "%s in %s"
-DBM_CORE_AUTO_ANNOUNCE_TEXTS.phase			= "Fase %s"
-DBM_CORE_AUTO_ANNOUNCE_TEXTS.prephase		= "Fase %s imminente"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.stage			= "Fase %s"
+DBM_CORE_AUTO_ANNOUNCE_TEXTS.prestage		= "Fase %s imminente"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.count			= "%s (%%s)"
 DBM_CORE_AUTO_ANNOUNCE_TEXTS.stack			= "%s su >%%s< (%%d)"
 
@@ -174,8 +173,8 @@ DBM_CORE_AUTO_ANNOUNCE_OPTIONS.adds			= "Annuncia quanto rimane di $spell:%s"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.cast			= "Mostra un avviso quando sta per partire $spell:%s"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.soon			= prewarnOption
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.prewarn 		= prewarnOption
-DBM_CORE_AUTO_ANNOUNCE_OPTIONS.phase		= "Anuncia la fase %s"
-DBM_CORE_AUTO_ANNOUNCE_OPTIONS.prephase		= "Mostra un pre-Avvertimento per la Fase %s"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.stage		= "Anuncia la fase %s"
+DBM_CORE_AUTO_ANNOUNCE_OPTIONS.prestage		= "Mostra un pre-Avvertimento per la Fase %s"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.count		= "Mostra un Avviso per $spell:%s"
 DBM_CORE_AUTO_ANNOUNCE_OPTIONS.stack		= "Annuncia l'accumulo di $spell:%s"
 

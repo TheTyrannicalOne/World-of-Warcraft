@@ -104,7 +104,7 @@ local function SoundPlayHelper(self)
     return;
   end
 
-  if (WeakAuras.IsOptionsOpen()) then
+  if (WeakAuras.IsOptionsOpen() or WeakAuras.SquelchingActions() or WeakAuras.InLoadingScreen()) then
     return;
   end
 
@@ -115,7 +115,7 @@ local function SoundPlayHelper(self)
     end
   elseif (options.sound == " KitID") then
     if (options.sound_kit_id) then
-      local _, handle = PlaySoundKitID(options.sound_kit_id, options.sound_channel or "Master");
+      local _, handle = PlaySound(options.sound_kit_id, options.sound_channel or "Master");
       self.soundHandle = handle;
     end
   else
@@ -132,7 +132,7 @@ local function SoundPlay(self, options)
   SoundPlayHelper(self);
 
   local loop = options.do_loop or options.sound_type == "Loop";
-  if (loop and options.sound_repeat) then
+  if (loop and options.sound_repeat and options.sound_repeat < WeakAuras.maxTimerDuration) then
     self.soundRepeatTimer = WeakAuras.timer:ScheduleRepeatingTimer(SoundPlayHelper, options.sound_repeat, self);
   end
 end
@@ -228,6 +228,7 @@ function WeakAuras.regionPrototype.modify(parent, region, data)
 
   region.adjustedMin = hasAdjustedMin and data.adjustedMin and data.adjustedMin > 0 and data.adjustedMin;
   region.adjustedMax = hasAdjustedMax and data.adjustedMax and data.adjustedMax > 0 and data.adjustedMax;
+  region.inverse = false;
 
   region:SetOffset(data.xOffset, data.yOffset);
   region:SetOffsetAnim(0, 0);
@@ -302,10 +303,11 @@ end
 function WeakAuras.regionPrototype.AddSetDurationInfo(region)
   if (region.SetValue and region.SetTime and region.TimerTick) then
     region.generatedSetDurationInfo = true;
+
     region.SetValueFromCustomValueFunc = function()
-      local value, total = region.customValueFunc(region.state.trigger);
+      local value, total, _ = region.customValueFunc(region.state.trigger);
       value = type(value) == "number" and value or 0
-      total = type(value) == "number" and total or 0
+      total = type(total) == "number" and total or 0
       SetProgressValue(region, value, total);
     end
 
@@ -320,7 +322,7 @@ function WeakAuras.regionPrototype.AddSetDurationInfo(region)
         if type(customValue) == "function" then
           local value, total = customValue(region.state.trigger);
           value = type(value) == "number" and value or 0
-          total = type(value) == "number" and total or 0
+          total = type(total) == "number" and total or 0
           if total > 0 and value < total then
             self.customValueFunc = customValue;
             self:SetScript("OnUpdate", region.SetValueFromCustomValueFunc);
@@ -468,4 +470,13 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, id, cloneId, 
   if not region.Expand then
     function region:Expand() end
   end
+end
+
+-- WORKAROUND Texts don't get the right size by default in WoW 7.3
+function WeakAuras.regionPrototype.SetTextOnText(text, str)
+  text:SetWidth(0); -- This makes the text use its internal text size calculation
+  text:SetText(str);
+  local w = text:GetWidth();
+  w = w + max(4, w / 40);
+  text:SetWidth(w); -- But that internal text size calculation is wrong, see ticket 1014
 end

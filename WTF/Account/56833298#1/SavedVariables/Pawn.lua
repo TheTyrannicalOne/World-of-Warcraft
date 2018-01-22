@@ -9,8 +9,6 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -30,6 +28,9 @@ PawnCommon = {
 		["\"MrRobot\":WARLOCK1"] = {
 			["IconTexturePath"] = 136145,
 			["PerCharacterOptions"] = {
+				["Urbul-Zul'jin"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "8788ee",
 			["ClassID"] = 9,
@@ -45,7 +46,16 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN1"] = {
 			["IconTexturePath"] = 136048,
 			["PerCharacterOptions"] = {
+				["Sinh-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Brotuss-Zul'jin"] = {
+					["Visible"] = true,
+				},
 				["Brotus-Argent Dawn"] = {
+					["Visible"] = true,
+				},
+				["Brewnheimer-Darkspear"] = {
 					["Visible"] = true,
 				},
 			},
@@ -63,6 +73,9 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST1"] = {
 			["IconTexturePath"] = 135940,
 			["PerCharacterOptions"] = {
+				["Jingojaggot-Zul'jin"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["ClassID"] = 5,
@@ -96,6 +109,9 @@ PawnCommon = {
 				["Tyran-Argent Dawn"] = {
 					["Visible"] = true,
 				},
+				["Tyrann-Zul'jin"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "3fc7eb",
 			["ClassID"] = 8,
@@ -111,6 +127,9 @@ PawnCommon = {
 		["\"MrRobot\":MAGE2"] = {
 			["IconTexturePath"] = 135810,
 			["PerCharacterOptions"] = {
+				["Shathiel-Darkspear"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "3fc7eb",
 			["ClassID"] = 8,
@@ -129,6 +148,9 @@ PawnCommon = {
 				["Mulmok-Argent Dawn"] = {
 					["Visible"] = true,
 				},
+				["Claugh-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "8788ee",
 			["ClassID"] = 9,
@@ -144,7 +166,13 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 135340,
 			["PerCharacterOptions"] = {
+				["Malivant-Dalaran"] = {
+					["Visible"] = true,
+				},
 				["Vadder-Argent Dawn"] = {
+					["Visible"] = true,
+				},
+				["Panboozled-Runetotem"] = {
 					["Visible"] = true,
 				},
 			},
@@ -210,6 +238,9 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE3"] = {
 			["IconTexturePath"] = 132320,
 			["PerCharacterOptions"] = {
+				["Migimong-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "fff569",
 			["ClassID"] = 4,
@@ -225,6 +256,9 @@ PawnCommon = {
 		["\"MrRobot\":WARRIOR3"] = {
 			["IconTexturePath"] = 132341,
 			["PerCharacterOptions"] = {
+				["Goramor-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "c79c6e",
 			["ClassID"] = 1,
@@ -240,6 +274,9 @@ PawnCommon = {
 		["\"MrRobot\":DRUID1"] = {
 			["IconTexturePath"] = 136096,
 			["PerCharacterOptions"] = {
+				["Fantastiburo-Zul'jin"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7d0a",
 			["ClassID"] = 11,
@@ -255,6 +292,9 @@ PawnCommon = {
 		["\"MrRobot\":PRIEST2"] = {
 			["IconTexturePath"] = 237542,
 			["PerCharacterOptions"] = {
+				["Tynster-Dalaran"] = {
+					["Visible"] = true,
+				},
 				["Jingojaggot-Argent Dawn"] = {
 					["Visible"] = true,
 				},
@@ -273,6 +313,12 @@ PawnCommon = {
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
 			["PerCharacterOptions"] = {
+				["Shanyt-Zul'jin"] = {
+					["Visible"] = true,
+				},
+				["Tyrannithal-Zul'jin"] = {
+					["Visible"] = true,
+				},
 				["Shanyt-Argent Dawn"] = {
 					["Visible"] = true,
 				},
@@ -292,6 +338,12 @@ PawnCommon = {
 			["IconTexturePath"] = 135873,
 			["PerCharacterOptions"] = {
 				["Cowtastraphy-Argent Dawn"] = {
+					["Visible"] = true,
+				},
+				["Brokehorn-Zul'jin"] = {
+					["Visible"] = true,
+				},
+				["Thromar-Dalaran"] = {
 					["Visible"] = true,
 				},
 			},
@@ -321,21 +373,6 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "6566b2",
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "0070de",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a6",
-		},
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
@@ -351,20 +388,44 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "7a2496",
 		},
-		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = 236264,
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "f58cba",
-			["ClassID"] = 2,
-			["LocalizedName"] = "Paladin: Protection",
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a6",
+		},
+		["\"MrRobot\":DRUID2"] = {
+			["IconTexturePath"] = 132115,
+			["PerCharacterOptions"] = {
+				["Narisaric-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Gillbourn-Runetotem"] = {
+					["Visible"] = true,
+				},
+				["Fantastiburo-Argent Dawn"] = {
+					["Visible"] = true,
+				},
+			},
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Feral",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
 			["SpecID"] = 2,
-			["UnenchantedColor"] = "b7698b",
+			["UnenchantedColor"] = "bf5d07",
 		},
 		["\"MrRobot\":DEATHKNIGHT1"] = {
 			["IconTexturePath"] = 135770,
@@ -384,6 +445,15 @@ PawnCommon = {
 		["\"MrRobot\":HUNTER1"] = {
 			["IconTexturePath"] = 461112,
 			["PerCharacterOptions"] = {
+				["Serbitechna-Darkspear"] = {
+					["Visible"] = true,
+				},
+				["Datgorg-Zul'jin"] = {
+					["Visible"] = true,
+				},
+				["Beeronimo-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "abd473",
 			["ClassID"] = 3,
@@ -400,6 +470,9 @@ PawnCommon = {
 			["IconTexturePath"] = 135775,
 			["PerCharacterOptions"] = {
 				["Bathal-Argent Dawn"] = {
+					["Visible"] = true,
+				},
+				["Zulbathal-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},
@@ -465,6 +538,9 @@ PawnCommon = {
 		["\"MrRobot\":DEATHKNIGHT2"] = {
 			["IconTexturePath"] = 135773,
 			["PerCharacterOptions"] = {
+				["Gangus-Runetotem"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff4d6b",
 			["ClassID"] = 6,
@@ -480,6 +556,9 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE1"] = {
 			["IconTexturePath"] = 236270,
 			["PerCharacterOptions"] = {
+				["Vaddor-Zul'jin"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "fff569",
 			["ClassID"] = 4,
@@ -495,6 +574,9 @@ PawnCommon = {
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
+				["Tyriinid-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "3fc7eb",
 			["ClassID"] = 8,
@@ -507,23 +589,23 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "2f95b0",
 		},
-		["\"MrRobot\":DRUID2"] = {
-			["IconTexturePath"] = 132115,
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
-				["Fantastiburo-Argent Dawn"] = {
+				["Dialdaas-Darkspear"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "ff7d0a",
-			["ClassID"] = 11,
-			["LocalizedName"] = "Druid: Feral",
-			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Protection",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
 			["SpecID"] = 2,
-			["UnenchantedColor"] = "bf5d07",
+			["UnenchantedColor"] = "b7698b",
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
@@ -576,6 +658,12 @@ PawnCommon = {
 				["Shaekhan-Argent Dawn"] = {
 					["Visible"] = true,
 				},
+				["Shaekhan-Zul'jin"] = {
+					["Visible"] = true,
+				},
+				["Shaewong-Dalaran"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "00ff96",
 			["ClassID"] = 10,
@@ -589,10 +677,12 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
+	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0209,
+	["LastVersion"] = 2.0217,
 	["Digits"] = 1,
 }

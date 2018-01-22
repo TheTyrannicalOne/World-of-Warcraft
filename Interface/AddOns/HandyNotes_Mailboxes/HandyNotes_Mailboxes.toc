@@ -1,0 +1,16 @@
+﻿## Interface: 60200
+## Title: HandyNotes_Mailboxes
+## Notes: Database of Mailbox locations for HandyNotes
+## Author: Kagaro
+## Version: 1
+## DefaultState: enabled
+## X-Category: Map
+## X-eMail: sal.scotto @ gmail DOT com
+## SavedVariables: HandyNotes_MailboxesDB
+## RequiredDeps: HandyNotes
+## X-Curse-Packaged-Version: v1.08
+## X-Curse-Project-Name: HandyNotes_Mailboxes
+## X-Curse-Project-ID: handy-notes_mailboxes
+## X-Curse-Repository-ID: wow/handy-notes_mailboxes/mainline
+
+HandyNotes_Mailboxes.lua

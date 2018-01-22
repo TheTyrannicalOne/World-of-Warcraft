@@ -1,0 +1,9 @@
+## Interface: 60000
+## Title: Hadouken |cffff7d0aby Flaric / Unknown999
+## Author: Henrik Andersen
+## Version: 1.4
+## Notes: Street Fighter sound effects for spells.
+## SavedVariablesPerCharacter: savedVariables
+## DefaultState: Enabled
+Hadouken.lua
+Hadouken.xml

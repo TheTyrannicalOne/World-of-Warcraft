@@ -39,7 +39,7 @@ topBarButton:SetNormalTexture(topBarButtonTex) ]]--
 
 	-- Top bar string
 local topBarString = UIMAIN:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-topBarString:SetText("KeyQueue - /kq")
+topBarString:SetText("KeyQueue 2.0 - /kq")
 topBarString:SetPoint("TOP", UIMAIN, "TOP", 0, -5)
 
 
@@ -328,38 +328,26 @@ end
 local function handleWhisper()
 	originalLinkSubstring = strsub(KQ_whisperMessage, 11, strfind(KQ_whisperMessage, '|h') - 1)
 	parts = { strsplit(':', originalLinkSubstring) }
-	local length = #parts
-	if tonumber(parts[2]) == 138019 then
-		dungeonID = tonumber(parts[15])
-		keystoneLevel = tonumber(parts[16])
-		local affixes = parts[12]
-		local key_depleted_mask = 4194304
-		local depleted = (bit.band(affixes, key_depleted_mask) ~= key_depleted_mask)
-		print(depleted)
-		addApplicant(dungeonID, keystoneLevel, depleted, KQ_whisperSender, 0, 0)
-		
+	if(tonumber(parts[3]) > 2) then 
+		dungeonID = tonumber(parts[2])
+		keystoneLevel = tonumber(parts[3])
+		local depleted = tonumber(parts[4])
+		addApplicant(dungeonID, keystoneLevel, depleted, KQ_whisperSender, KQ_whisperClass, 0)
+
 	end
 end
 
 local function handleWhisperBN()
 	originalLinkSubstring = strsub(KQ_whisperMessage, 11, strfind(KQ_whisperMessage, '|h') - 1)
 	parts = { strsplit(':', originalLinkSubstring) }
-	
-	local length = #parts
-	
-	
-	if tonumber(parts[1]) == 8019 then
-		dungeonID = tonumber(parts[14])
-		keystoneLevel = tonumber(parts[15])
-		--KQ_HideSystemMSG = true
-		--SendWho(KQ_whisperSender)
-		--name, guild, level, race, class, zone, classFileName, sex = GetWhoInfo(1)
-		local affixes = parts[12]
-		local key_depleted_mask = 4194304
-		local depleted = (bit.band(affixes, key_depleted_mask) ~= key_depleted_mask)
+	if(tonumber(parts[3]) > 2) then 
+		dungeonID = tonumber(parts[2])
+		keystoneLevel = tonumber(parts[3])
+		local depleted = tonumber(parts[4])
 		addApplicant(dungeonID, keystoneLevel, depleted, KQ_whisperSender, KQ_whisperClass, 0)
 	end
 end
+
 
 local function eventHandler(self, event, prefix, msg, channel, sender, presenceID)
 	KQ_whisperClass = 0
@@ -376,9 +364,9 @@ local function eventHandler(self, event, prefix, msg, channel, sender, presenceI
 		KQ_whisperMessage = prefix
 		--originalLinkSubstring = strsub(msg, 11, strfind(msg, '|h') - 1)
 		if pcall(handleWhisper) then
-			--print("Success")
+			--print("Success 1")
 		else
-			--print("Failure")
+			--print("Failure 1")
 		end
 	end
 	if event == 'CHAT_MSG_BN_WHISPER'  then
@@ -399,9 +387,9 @@ local function eventHandler(self, event, prefix, msg, channel, sender, presenceI
 						KQ_whisperClass = converClassToNumber(class)
 						KQ_whisperSender = characterName.."-"..realmName
 						if pcall(handleWhisperBN) then
-							--print("Success")
+							--print("Success 2")
 						else
-							--print("Failure")
+							--print("Failure 2")
 						end
 					end
 				end

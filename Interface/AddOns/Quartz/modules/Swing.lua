@@ -1,6 +1,6 @@
 --[[
 	Copyright (C) 2006-2007 Nymbia
-	Copyright (C) 2010 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
+	Copyright (C) 2010-2017 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -224,6 +224,13 @@ end
 
 function Swing:MeleeSwing()
 	duration = UnitAttackSpeed("player")
+	if not duration or duration == 0 then
+		duration = nil
+		starttime = nil
+		swingbar:Hide()
+		return
+	end
+
 	durationtext:SetFormattedText("%.1f", duration)
 	starttime = GetTime()
 	swingbar:Show()
@@ -231,6 +238,13 @@ end
 
 function Swing:Shoot()
 	duration = UnitRangedDamage("player")
+	if not duration or duration == 0 then
+		duration = nil
+		starttime = nil
+		swingbar:Hide()
+		return
+	end
+
 	durationtext:SetFormattedText("%.1f", duration)
 	starttime = GetTime()
 	swingbar:Show()

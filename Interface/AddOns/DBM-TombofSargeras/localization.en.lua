@@ -52,10 +52,22 @@ L:SetOptionLocalization({
 	InfoFrame =	"Show InfoFrame for fight overview"
 })
 
+L:SetMiscLocalization({
+	FallenAvatarDialog	= "The husk before you was once a vessel for the might of Sargeras. But this temple itself is our prize. The means by which we will reduce your world to cinders!"
+})
+
 ---------------------------
 -- Kil'jaeden --
 ---------------------------
 L= DBM:GetModLocalization(1898)
+
+L:SetWarningLocalization({
+	warnSingularitySoon		= "Knockback in %ds"
+})
+
+L:SetOptionLocalization({
+	warnSingularitySoon		= DBM_CORE_AUTO_ANNOUNCE_OPTIONS.soon:format(235059)
+})
 
 L:SetMiscLocalization({
 	Obelisklasers	= "Obelisk Lasers"

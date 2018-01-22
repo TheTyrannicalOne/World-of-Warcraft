@@ -1,6 +1,6 @@
 --[[
 	Copyright (C) 2006-2007 Nymbia
-	Copyright (C) 2010 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
+	Copyright (C) 2010-2017 Hendrik "Nevcairiel" Leppkes < h.leppkes@gmail.com >
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -93,6 +93,8 @@ end
 function Player:OnEnable()
 	self.Bar:RegisterEvents()
 	self:ApplySettings()
+
+	self:UpdateChannelingTicks()
 end
 
 function Player:OnDisable()
@@ -188,26 +190,23 @@ end
 
 local channelingTicks = {
 	-- warlock
-	[GetSpellInfo(689)] = 6, -- drain life
-	-- [GetSpellInfo(103103)] = 4, -- drain soul
-    [GetSpellInfo(198590)] = 6, -- drain soul -- ICY: new drain soul
-	[GetSpellInfo(5740)] = 6, -- rain of fire
+	[GetSpellInfo(234153)] = 6, -- drain life
+	[GetSpellInfo(193440)] = 3, -- demonwrath
+	[GetSpellInfo(198590)] = 6, -- drain soul
 	-- druid
-	[GetSpellInfo(740)] = 4, -- Tranquility
-	-- [GetSpellInfo(16914)] = 10, -- Hurricane -- ICY: removed
-	-- [GetSpellInfo(106996)] = 10, -- Astral Storm
+	[GetSpellInfo(740)] = 4, -- tranquility
 	-- priest
-	[GetSpellInfo(15407)] = 3, -- mind flay
-	-- [GetSpellInfo(129197)] = 3, -- mind flay: insanity -- ICY: TODO
-	[GetSpellInfo(48045)] = 5, -- mind sear
+	[GetSpellInfo(64843)] = 4, -- divine hymn
+	[GetSpellInfo(15407)] = 4, -- mind flay
 	[GetSpellInfo(47540)] = 2, -- penance
+	[GetSpellInfo(205065)] = 4, -- void torrent
 	-- mage
 	[GetSpellInfo(5143)] = 5, -- arcane missiles
-	-- [GetSpellInfo(10)] = 8, -- blizzard -- ICY: TODO
 	[GetSpellInfo(12051)] = 3, -- evocation
+	[GetSpellInfo(205021)] = 10, -- ray of frost
 	-- monk
-	-- [GetSpellInfo(125953)] = 9, -- soothing mist -- ICY: TODO
 	[GetSpellInfo(117952)] = 4, -- crackling jade lightning
+	[GetSpellInfo(191837)] = 3, -- essence font
 }
 
 local function getChannelingTicks(spell)
@@ -216,6 +215,10 @@ local function getChannelingTicks(spell)
 	end
 	
 	return channelingTicks[spell] or 0
+end
+
+function Player:UpdateChannelingTicks()
+	-- nothing here right now
 end
 
 function Player:UNIT_SPELLCAST_START(bar, unit)

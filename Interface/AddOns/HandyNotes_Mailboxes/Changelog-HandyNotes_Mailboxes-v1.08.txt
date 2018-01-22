@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r58 | nevcairiel | 2015-09-28 17:37:37 +0000 (Mon, 28 Sep 2015) | 1 line
+Changed paths:
+   A /tags/v1.08 (from /trunk:57)
+
+Tagging as v1.08
+------------------------------------------------------------------------
+r57 | nevcairiel | 2015-09-28 17:36:59 +0000 (Mon, 28 Sep 2015) | 1 line
+Changed paths:
+   M /trunk/HandyNotes_Mailboxes.lua
+   M /trunk/HandyNotes_Mailboxes.toc
+
+Update to latest HandyNotes version
+------------------------------------------------------------------------
