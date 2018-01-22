@@ -29,17 +29,17 @@ GottaGoFastHistoryDB = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
-		["Shanyt - Argent Dawn"] = {
-		},
 		["Default"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Shanyt - Argent Dawn"] = {
+		},
+		["Mulmok - Argent Dawn"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},

@@ -1,19 +1,5 @@
 
 RCLootCouncilDB = {
-	["profileKeys"] = {
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
-		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
-		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-	},
 	["global"] = {
 		["log"] = {
 			"01/21/18", -- [1]
@@ -445,6 +431,16 @@ RCLootCouncilDB = {
 			"19:18:54 - GetPlayersGuildRank()", -- [427]
 			"19:18:54 - Found Guild Rank: Thuerge", -- [428]
 			"19:18:54 - Comm received:^1^SverTest^T^N1^S2.4.5^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [429]
+			"01/21/18", -- [430]
+			"19:28:22 - Logged In", -- [431]
+			"19:28:22 - ML initialized!", -- [432]
+			"19:28:31 - Shanyt-ArgentDawn (2.4.5) (nil)", -- [433]
+			"19:28:31 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [434]
+			"19:28:31 - GetML()", -- [435]
+			"19:28:31 - LootMethod =  (personalloot)", -- [436]
+			"19:28:32 - GetPlayersGuildRank()", -- [437]
+			"19:28:32 - Found Guild Rank: Thuerge", -- [438]
+			"19:28:32 - Comm received:^1^SverTest^T^N1^S2.4.5^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [439]
 		},
 		["version"] = "2.4.5",
 		["localizedSubTypes"] = {
@@ -458,19 +454,33 @@ RCLootCouncilDB = {
 			["created"] = true,
 			["Shields"] = "Shields",
 			["Polearms"] = "Polearms",
-			["Warglaives"] = "Warglaives",
+			["Daggers"] = "Daggers",
 			["Bows"] = "Bows",
 			["Two-Handed Swords"] = "Two-Handed Swords",
 			["One-Handed Axes"] = "One-Handed Axes",
 			["Leather"] = "Leather",
-			["Mail"] = "Mail",
+			["Cloth"] = "Cloth",
 			["Guns"] = "Guns",
 			["Fist Weapons"] = "Fist Weapons",
-			["Cloth"] = "Cloth",
+			["Mail"] = "Mail",
 			["Wands"] = "Wands",
-			["Daggers"] = "Daggers",
+			["Warglaives"] = "Warglaives",
 			["Two-Handed Axes"] = "Two-Handed Axes",
 		},
+	},
+	["profileKeys"] = {
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Bathal - Argent Dawn"] = {
@@ -487,17 +497,17 @@ RCLootCouncilDB = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
-		["Shanyt - Argent Dawn"] = {
-		},
 		["Default"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Shanyt - Argent Dawn"] = {
+		},
+		["Mulmok - Argent Dawn"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},
@@ -537,11 +547,11 @@ RCLootCouncilLootDB = {
 		},
 		["Mulmok - Argent Dawn"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Tyran - Argent Dawn"] = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Tyran - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},

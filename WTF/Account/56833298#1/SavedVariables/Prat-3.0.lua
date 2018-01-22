@@ -11,49 +11,55 @@ Prat3DB = {
 			["profiles"] = {
 				["Bathal - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Datgorg - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Shaekhan - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Vadder - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Brotus - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["LUI-Towelliee"] = {
 					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Tyrannithal - Argent Dawn"] = {
+					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Tyrannithal - Argent Dawn"] = {
-					["minchatwidthdefault"] = 296,
+				["Towel-Monk"] = {
 					["initialized"] = true,
+					["minchatwidthdefault"] = 296,
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
 				},
@@ -63,41 +69,35 @@ Prat3DB = {
 					["maxchatwidthdefault"] = 608.000061035156,
 					["initialized"] = true,
 				},
-				["Default"] = {
-					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
-					["initialized"] = true,
-				},
 				["Tyran - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Mulmok - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
-				["Towel-Monk"] = {
-					["initialized"] = true,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
+				["Default"] = {
 					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 			},
 		},
@@ -107,61 +107,70 @@ Prat3DB = {
 		},
 		["Prat_Fading"] = {
 		},
-		["Prat_Substitutions"] = {
+		["Prat_UrlCopy"] = {
 		},
 		["Prat_History"] = {
 		},
-		["Prat_Bubbles"] = {
+		["Prat_KeyBindings"] = {
 		},
 		["Prat_Font"] = {
 			["profiles"] = {
 				["Bathal - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Datgorg - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Shaekhan - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Vadder - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Brotus - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+				},
+				["LUI-Towelliee"] = {
+					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame3"] = 15,
@@ -169,7 +178,7 @@ Prat3DB = {
 					},
 					["fontface"] = "weezerfont",
 				},
-				["LUI-Towelliee"] = {
+				["Tyrannithal - Argent Dawn"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
@@ -178,7 +187,7 @@ Prat3DB = {
 						["ChatFrame3"] = 15,
 					},
 				},
-				["Tyrannithal - Argent Dawn"] = {
+				["Towel-Monk"] = {
 					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
@@ -192,95 +201,86 @@ Prat3DB = {
 					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
-						["ChatFrame1"] = 15,
-					},
-				},
-				["Default"] = {
-					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
-					["size"] = {
-						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
 				},
 				["Tyran - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Mulmok - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
-				["Towel-Monk"] = {
+				["Default"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 			},
 		},
-		["Prat_KeyBindings"] = {
+		["Prat_Bubbles"] = {
 		},
 		["Prat_ChannelNames"] = {
 		},
 		["Prat_Scroll"] = {
 		},
-		["Prat_PopupMessage"] = {
+		["Prat_Timestamps"] = {
 		},
 		["Prat_Paragraph"] = {
 		},
-		["Prat_Clear"] = {
-		},
 		["Prat_Alias"] = {
+		},
+		["Prat_Clear"] = {
 		},
 		["Prat_OriginalButtons"] = {
 		},
 		["Prat_TellTarget"] = {
 		},
-		["Prat_ChatLog"] = {
+		["Prat_Sounds"] = {
 		},
 		["Prat_ChannelSticky"] = {
 		},
-		["Prat_Sounds"] = {
+		["Prat_ChatLog"] = {
 		},
 		["Prat_CustomFilters"] = {
 		},
 		["Prat_CopyChat"] = {
 		},
-		["Prat_Timestamps"] = {
+		["Prat_PopupMessage"] = {
 		},
 		["Prat_Search"] = {
 		},
@@ -337,10 +337,10 @@ Prat3DB = {
 				["Shanyt - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
-				["Shaekhan - Argent Dawn"] = {
+				["Mulmok - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showMenu"] = false,
@@ -358,7 +358,7 @@ Prat3DB = {
 					["showMenu"] = false,
 					["showminimize"] = false,
 				},
-				["Mulmok - Argent Dawn"] = {
+				["Shaekhan - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showMenu"] = false,
@@ -374,7 +374,7 @@ Prat3DB = {
 		},
 		["Prat_ServerNames"] = {
 		},
-		["Prat_UrlCopy"] = {
+		["Prat_Substitutions"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -395,88 +395,100 @@ Prat3DB = {
 		["Bathal - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Alias"] = 2,
-				["OriginalButtons"] = 2,
 				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Datgorg - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["ChatLog"] = 2,
 				["Paragraph"] = 2,
+				["Alias"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Jingojaggot - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["Alias"] = 2,
 				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Shaekhan - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["Alias"] = 2,
 				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Vadder - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["Alias"] = 2,
 				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Brotus - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["ChatLog"] = 2,
 				["Paragraph"] = 2,
+				["Alias"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["LUI-Towelliee"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["AltNames"] = 2,
 				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["Alias"] = 2,
-				["ChatLog"] = 2,
+				["AltNames"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Tyrannithal - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Towel-Monk"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["OriginalButtons"] = 2,
@@ -490,70 +502,58 @@ Prat3DB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["modules"] = {
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
 				["PopupMessage"] = 2,
 				["OriginalButtons"] = 2,
-				["Alias"] = 2,
-			},
-		},
-		["Default"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
 				["ChatLog"] = 2,
-				["KeyBindings"] = 2,
 			},
 		},
 		["Tyran - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["ChatLog"] = 2,
 				["Paragraph"] = 2,
+				["Alias"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Mulmok - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["Alias"] = 2,
 				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["ChatLog"] = 2,
 				["Paragraph"] = 2,
+				["Alias"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
-		["Towel-Monk"] = {
+		["Default"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
 				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Alias"] = 2,
@@ -563,12 +563,12 @@ Prat3DB = {
 		["Fantastiburo - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["ChatLog"] = 2,
 				["Paragraph"] = 2,
+				["Alias"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},

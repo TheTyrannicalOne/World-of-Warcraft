@@ -33,11 +33,11 @@ HandyNotesDB = {
 		},
 		["Mulmok - Argent Dawn"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Tyran - Argent Dawn"] = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Tyran - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},
@@ -77,11 +77,11 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Mulmok - Argent Dawn"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Tyran - Argent Dawn"] = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Tyran - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},

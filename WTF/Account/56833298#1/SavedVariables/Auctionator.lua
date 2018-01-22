@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
+	["_200000"] = 1000,
+	["_10000"] = 200,
 	["_1000000"] = 2500,
 	["_5000000"] = 10000,
+	["STARTING_DISCOUNT"] = 5,
 	["_500"] = 5,
-	["_10000"] = 200,
-	["_200000"] = 1000,
+	["LOG_DE_DATA_X"] = true,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }
@@ -40,62 +40,62 @@ AUCTIONATOR_LAST_SCAN_TIME = nil
 AUCTIONATOR_TOONS = {
 	["Tyrannithal"] = {
 		["firstSeen"] = 1516579566,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-0AB344B4",
+		["firstVersion"] = "4.0.17",
 	},
 	["Cowtastraphy"] = {
 		["firstSeen"] = 1516579942,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-09DDC32A",
+		["firstVersion"] = "4.0.17",
 	},
 	["Tyran"] = {
 		["firstSeen"] = 1516580054,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-0A33732A",
+		["firstVersion"] = "4.0.17",
 	},
 	["Datgorg"] = {
 		["firstSeen"] = 1516579687,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-0A2CCBC8",
-	},
-	["Bathal"] = {
-		["firstSeen"] = 1516580272,
 		["firstVersion"] = "4.0.17",
-		["guid"] = "Player-75-0AB08C15",
 	},
 	["Vadder"] = {
 		["firstSeen"] = 1516579882,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-09DDA318",
+		["firstVersion"] = "4.0.17",
+	},
+	["Bathal"] = {
+		["firstSeen"] = 1516580272,
+		["guid"] = "Player-75-0AB08C15",
+		["firstVersion"] = "4.0.17",
 	},
 	["Mulmok"] = {
 		["firstSeen"] = 1516580001,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-071FB80A",
+		["firstVersion"] = "4.0.17",
 	},
 	["Brotus"] = {
 		["firstSeen"] = 1516579821,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-071FB336",
+		["firstVersion"] = "4.0.17",
 	},
 	["Jingojaggot"] = {
 		["firstSeen"] = 1516579759,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-0A31081D",
+		["firstVersion"] = "4.0.17",
+	},
+	["Shaekhan"] = {
+		["firstSeen"] = 1516580117,
+		["guid"] = "Player-75-0A3EC0ED",
+		["firstVersion"] = "4.0.17",
 	},
 	["Shanyt"] = {
 		["firstSeen"] = 1516579420,
 		["firstVersion"] = "4.0.17",
 	},
-	["Shaekhan"] = {
-		["firstSeen"] = 1516580117,
-		["firstVersion"] = "4.0.17",
-		["guid"] = "Player-75-0A3EC0ED",
-	},
 	["Fantastiburo"] = {
 		["firstSeen"] = 1516580174,
-		["firstVersion"] = "4.0.17",
 		["guid"] = "Player-75-0A336CBF",
+		["firstVersion"] = "4.0.17",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {

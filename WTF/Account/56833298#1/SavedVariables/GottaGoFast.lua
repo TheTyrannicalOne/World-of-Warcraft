@@ -35,13 +35,13 @@ GottaGoFastDB = {
 		["Tyrannithal - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
-		["Shanyt - Argent Dawn"] = {
-			["Version"] = 26500,
-		},
 		["Default"] = {
 			["Version"] = 26500,
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Shanyt - Argent Dawn"] = {
+			["Version"] = 26500,
+		},
+		["Mulmok - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
 		["Tyran - Argent Dawn"] = {
@@ -50,7 +50,7 @@ GottaGoFastDB = {
 		["Cowtastraphy - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
 		["Fantastiburo - Argent Dawn"] = {

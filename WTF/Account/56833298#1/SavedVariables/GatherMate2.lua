@@ -1,5 +1,8 @@
 
 GatherMate2DB = {
+	["global"] = {
+		["data_version"] = 4,
+	},
 	["profileKeys"] = {
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
@@ -13,9 +16,6 @@ GatherMate2DB = {
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-	},
-	["global"] = {
-		["data_version"] = 4,
 	},
 	["profiles"] = {
 		["Bathal - Argent Dawn"] = {
@@ -32,17 +32,17 @@ GatherMate2DB = {
 		},
 		["Tyrannithal - Argent Dawn"] = {
 		},
-		["Shanyt - Argent Dawn"] = {
-		},
 		["Default"] = {
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Shanyt - Argent Dawn"] = {
+		},
+		["Mulmok - Argent Dawn"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},

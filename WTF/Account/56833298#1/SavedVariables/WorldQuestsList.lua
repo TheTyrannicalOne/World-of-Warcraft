@@ -1,66 +1,34 @@
 
 VWQL = {
 	["Shaekhan-ArgentDawn"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
 	["Vadder-ArgentDawn"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
-	["Brotus-ArgentDawn"] = {
-		["FilterType"] = {
-		},
+	["Tyrannithal-ArgentDawn"] = {
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
 	["Cowtastraphy-ArgentDawn"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
-	},
-	["Bathal-ArgentDawn"] = {
 		["FilterType"] = {
 		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
 	},
-	["Ignore"] = {
-	},
-	["Datgorg-ArgentDawn"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
-	["Jingojaggot-ArgentDawn"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
-	["Tyran-ArgentDawn"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
-	["Sort"] = 5,
-	["VERSION"] = 40,
-	["Shanyt-ArgentDawn"] = {
+	["Mulmok-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -68,24 +36,56 @@ VWQL = {
 		},
 	},
 	["Fantastiburo-ArgentDawn"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Ignore"] = {
+	},
+	["Jingojaggot-ArgentDawn"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Shanyt-ArgentDawn"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
 		["Filter"] = 63,
 	},
-	["Mulmok-ArgentDawn"] = {
-		["FilterType"] = {
-		},
+	["Tyran-ArgentDawn"] = {
+		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
-	["Tyrannithal-ArgentDawn"] = {
-		["FilterType"] = {
-		},
+	["VERSION"] = 40,
+	["Sort"] = 5,
+	["Datgorg-ArgentDawn"] = {
+		["Filter"] = 63,
 		["Quests"] = {
 		},
+		["FilterType"] = {
+		},
+	},
+	["Bathal-ArgentDawn"] = {
 		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Brotus-ArgentDawn"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
 	},
 }

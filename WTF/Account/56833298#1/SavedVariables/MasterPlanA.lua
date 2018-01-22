@@ -2,52 +2,52 @@
 MasterPlanAG = {
 	["Argent Dawn"] = {
 		["Tyrannithal"] = {
-			["faction"] = "Horde",
 			["class"] = "DEMONHUNTER",
+			["faction"] = "Horde",
 		},
 		["Cowtastraphy"] = {
-			["faction"] = "Horde",
 			["class"] = "PALADIN",
+			["faction"] = "Horde",
 		},
 		["Tyran"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
 		["Datgorg"] = {
-			["faction"] = "Horde",
 			["class"] = "HUNTER",
-		},
-		["Bathal"] = {
 			["faction"] = "Horde",
-			["class"] = "DEATHKNIGHT",
 		},
 		["Vadder"] = {
-			["faction"] = "Horde",
 			["class"] = "ROGUE",
+			["faction"] = "Horde",
+		},
+		["Bathal"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Horde",
 		},
 		["Mulmok"] = {
-			["faction"] = "Horde",
 			["class"] = "WARLOCK",
+			["faction"] = "Horde",
 		},
 		["Brotus"] = {
-			["faction"] = "Horde",
 			["class"] = "SHAMAN",
+			["faction"] = "Horde",
 		},
 		["Jingojaggot"] = {
-			["faction"] = "Horde",
 			["class"] = "PRIEST",
+			["faction"] = "Horde",
+		},
+		["Shaekhan"] = {
+			["class"] = "MONK",
+			["faction"] = "Horde",
 		},
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
 			["faction"] = "Horde",
 		},
-		["Shaekhan"] = {
-			["faction"] = "Horde",
-			["class"] = "MONK",
-		},
 		["Fantastiburo"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
 }
