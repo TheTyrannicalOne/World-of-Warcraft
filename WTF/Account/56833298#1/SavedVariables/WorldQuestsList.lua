@@ -121,7 +121,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Jingojaggot-ArgentDawn"] = {
+	["Gangus-Runetotem"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -135,7 +135,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Gangus-Runetotem"] = {
+	["Jingojaggot-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -173,10 +173,6 @@ VWQL = {
 	["Shanyt-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
-			[44050] = true,
-			[44894] = true,
-			[43328] = true,
-			[40299] = true,
 			[43943] = true,
 		},
 		["FilterType"] = {
@@ -196,7 +192,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Bathal-ArgentDawn"] = {
+	["Dialdaas-Darkspear"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -226,7 +222,7 @@ VWQL = {
 	},
 	["Ignore"] = {
 	},
-	["Dialdaas-Darkspear"] = {
+	["Bathal-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},

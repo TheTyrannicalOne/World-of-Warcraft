@@ -5,8 +5,14 @@ HandyNotes_MailboxesDB = {
 	},
 	["global"] = {
 		["mailboxes"] = {
+			["garrisonffhorde_tier3"] = {
+				[44914930] = true,
+			},
+			["ValeofEternalBlossoms"] = {
+				[64947172] = true,
+			},
 			["Orgrimmar"] = {
-				[67373879] = true,
+				[67303885] = true,
 			},
 		},
 	},

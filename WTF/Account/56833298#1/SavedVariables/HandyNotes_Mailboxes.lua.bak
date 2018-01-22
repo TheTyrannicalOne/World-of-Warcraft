@@ -3,7 +3,7 @@ HandyNotes_MailboxesDB = {
 	["global"] = {
 		["mailboxes"] = {
 			["Orgrimmar"] = {
-				[67363898] = true,
+				[67303884] = true,
 			},
 		},
 	},

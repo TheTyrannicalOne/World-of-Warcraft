@@ -460,7 +460,7 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1579.26550292969,
+						["CoordX"] = 1580.03295898438,
 						["ItemQuality"] = true,
 						["CoordY"] = 773.63671875,
 					},
@@ -787,12 +787,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -800,6 +794,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -818,6 +818,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -825,12 +831,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -849,6 +849,12 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -856,12 +862,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -871,6 +871,13 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -878,13 +885,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -912,6 +912,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -919,12 +925,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -943,6 +943,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -950,12 +956,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -974,12 +974,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -987,6 +981,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1005,6 +1005,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1012,12 +1018,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1036,6 +1036,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1043,12 +1049,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1067,12 +1067,6 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1080,6 +1074,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1098,6 +1098,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1105,12 +1111,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1129,12 +1129,6 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1142,6 +1136,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1160,6 +1160,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1167,12 +1173,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1191,6 +1191,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1198,12 +1204,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1222,12 +1222,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1235,6 +1229,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1253,6 +1253,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1260,12 +1266,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1284,6 +1284,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1291,12 +1297,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1315,6 +1315,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1322,12 +1328,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1346,6 +1346,13 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1353,13 +1360,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1369,13 +1369,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1383,6 +1376,13 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -1410,6 +1410,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1417,12 +1423,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1441,6 +1441,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1448,12 +1454,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1504,6 +1504,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1511,12 +1517,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1535,6 +1535,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1542,12 +1548,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1566,12 +1566,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1579,6 +1573,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1597,6 +1597,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1604,12 +1610,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1628,12 +1628,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1641,6 +1635,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1659,6 +1659,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1666,12 +1672,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1690,13 +1690,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1704,6 +1697,13 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1722,12 +1722,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1735,6 +1729,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1753,6 +1753,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1760,12 +1766,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1784,12 +1784,6 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1797,6 +1791,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1815,6 +1815,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1822,12 +1828,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1846,12 +1846,6 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1859,6 +1853,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1877,6 +1877,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1884,12 +1890,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1908,6 +1908,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1915,12 +1921,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1939,6 +1939,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1946,12 +1952,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1970,6 +1970,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1977,12 +1983,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2001,6 +2001,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -2008,12 +2014,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2032,6 +2032,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -2039,12 +2045,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2063,6 +2063,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -2070,12 +2076,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2094,6 +2094,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -2101,12 +2107,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2125,6 +2125,12 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -2132,12 +2138,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2613,6 +2613,16 @@ LUIDB = {
 						},
 					},
 				},
+				["Darkspear"] = {
+					["Gold"] = {
+						["Alliance"] = {
+							["Shathiel"] = 44039224,
+							["Dialdaas"] = 11338409,
+							["Serbitechna"] = 7681888,
+							["Brewnheimer"] = 836,
+						},
+					},
+				},
 				["Dalaran"] = {
 					["Gold"] = {
 						["Neutral"] = {
@@ -2626,16 +2636,6 @@ LUIDB = {
 							["Tyriinid"] = 9855,
 							["Sinh"] = 2333,
 							["Narisaric"] = 11117,
-						},
-					},
-				},
-				["Darkspear"] = {
-					["Gold"] = {
-						["Alliance"] = {
-							["Shathiel"] = 44039224,
-							["Brewnheimer"] = 836,
-							["Dialdaas"] = 11338409,
-							["Serbitechna"] = 7681888,
 						},
 					},
 				},
@@ -2659,7 +2659,7 @@ LUIDB = {
 							["Jingojaggot"] = 356823,
 							["Shaekhan"] = 12334,
 							["Bathal"] = 2000,
-							["Shanyt"] = 17636676663,
+							["Shanyt"] = 17636650161,
 						},
 					},
 				},
@@ -2771,13 +2771,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -2789,17 +2783,23 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.95, -- [1]
@@ -2934,13 +2934,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -2952,17 +2946,23 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.22, -- [1]
@@ -3097,13 +3097,7 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -3115,17 +3109,23 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.9, -- [1]
@@ -3260,13 +3260,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -3278,17 +3272,23 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.12, -- [1]
@@ -3423,13 +3423,7 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -3441,17 +3435,23 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.96, -- [1]
@@ -3586,17 +3586,11 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
 					},
 					["chat2"] = {
 						0.11, -- [1]
@@ -3604,17 +3598,23 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
 					["sidebar"] = {
 						0.2, -- [1]
 						0.6, -- [2]
 						0.6, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
+					["micromenu_btn_hover"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.4, -- [1]
@@ -3749,13 +3749,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -3767,17 +3761,23 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -3912,17 +3912,11 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
 					},
 					["chat2"] = {
 						0.11, -- [1]
@@ -3930,17 +3924,23 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
 					["sidebar"] = {
 						0.2, -- [1]
 						0.6, -- [2]
 						0.6, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
+					["micromenu_btn_hover"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.4, -- [1]
@@ -4075,13 +4075,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -4093,17 +4087,23 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -4238,13 +4238,7 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -4256,17 +4250,23 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.8, -- [1]
@@ -4401,13 +4401,7 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -4419,17 +4413,23 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.8, -- [1]
@@ -4564,17 +4564,11 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
 					},
 					["chat2"] = {
 						0.11, -- [1]
@@ -4582,17 +4576,23 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
 					["sidebar"] = {
 						0.2, -- [1]
 						0.6, -- [2]
 						0.6, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
+					["micromenu_btn_hover"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.4, -- [1]
@@ -4727,13 +4727,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -4745,17 +4739,23 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.95, -- [1]
@@ -4890,13 +4890,7 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -4908,17 +4902,23 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.57, -- [1]
@@ -5053,13 +5053,7 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -5071,17 +5065,23 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.57, -- [1]
@@ -5216,13 +5216,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -5234,17 +5228,23 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.12, -- [1]
@@ -5379,13 +5379,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -5397,17 +5391,23 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.22, -- [1]
@@ -5542,13 +5542,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -5560,17 +5554,23 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.95, -- [1]
@@ -5705,13 +5705,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -5723,17 +5717,23 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.04, -- [1]
@@ -5866,17 +5866,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0, -- [1]
 						0, -- [2]
 						0, -- [3]
-						0.86, -- [4]
+						0.83, -- [4]
 					},
 					["micromenu_btn_hover"] = {
 						1, -- [1]
@@ -5884,17 +5878,23 @@ LUIDB = {
 						0, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
+					["orb_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
 						0, -- [3]
-						0.83, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -6030,13 +6030,7 @@ LUIDB = {
 						0.79, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.64, -- [1]
 						0.19, -- [2]
 						0.79, -- [3]
@@ -6048,17 +6042,23 @@ LUIDB = {
 						0.79, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.64, -- [1]
 						0.19, -- [2]
 						0.79, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.64, -- [1]
 						0.19, -- [2]
 						0.79, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.64, -- [1]
@@ -6193,13 +6193,7 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -6211,17 +6205,23 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.8, -- [1]
@@ -6356,13 +6356,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -6374,17 +6368,23 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -6519,13 +6519,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -6537,17 +6531,23 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.04, -- [1]
@@ -6682,13 +6682,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -6700,17 +6694,23 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.04, -- [1]
@@ -6845,13 +6845,7 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -6863,17 +6857,23 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -7008,13 +7008,7 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -7026,17 +7020,23 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -7171,13 +7171,7 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -7189,17 +7183,23 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -7334,13 +7334,7 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -7352,17 +7346,23 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.57, -- [1]
@@ -7497,13 +7497,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -7515,17 +7509,23 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.12, -- [1]
@@ -7660,13 +7660,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -7678,17 +7672,23 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.95, -- [1]
@@ -7823,13 +7823,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -7841,17 +7835,23 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.04, -- [1]
@@ -7986,13 +7986,7 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -8004,17 +7998,23 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.96, -- [1]
@@ -8149,13 +8149,7 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -8167,17 +8161,23 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.96, -- [1]
@@ -8310,17 +8310,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0, -- [1]
 						0, -- [2]
 						0, -- [3]
-						0.86, -- [4]
+						0.83, -- [4]
 					},
 					["micromenu_btn_hover"] = {
 						1, -- [1]
@@ -8328,17 +8322,23 @@ LUIDB = {
 						0, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
+					["orb_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
 						0, -- [3]
-						0.83, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -8474,13 +8474,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -8492,17 +8486,23 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.12, -- [1]
@@ -8637,13 +8637,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -8655,17 +8649,23 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -8800,13 +8800,7 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -8818,17 +8812,23 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.9, -- [1]
@@ -8963,13 +8963,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -8981,17 +8975,23 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.95, -- [1]
@@ -9126,13 +9126,7 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -9144,17 +9138,23 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.9, -- [1]
@@ -9289,13 +9289,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -9307,17 +9301,23 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.22, -- [1]
@@ -9452,13 +9452,7 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -9470,17 +9464,23 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.96, -- [1]
@@ -9615,13 +9615,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -9633,17 +9627,23 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						0.22, -- [1]
@@ -9778,13 +9778,7 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -9796,17 +9790,23 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -9859,36 +9859,36 @@ LUIDB = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
 							"/TRAIN", -- [1]
-							"/sit", -- [2]
+							"/wa", -- [2]
 							"/TRAIN", -- [3]
-							"/sit", -- [4]
+							"/wa", -- [4]
 							"/TRAIN", -- [5]
 							"/sit", -- [6]
 							"/TRAIN", -- [7]
 							"/wa", -- [8]
 							"/TRAIN", -- [9]
-							"/sit", -- [10]
-							"/TRAIN", -- [11]
-							"/wa", -- [12]
-							"/sit", -- [13]
-							"/wa", -- [14]
-							"/TRAIN", -- [15]
-							"/wa", -- [16]
-							"/TRAIN", -- [17]
-							"/sit", -- [18]
-							"/TRAIN", -- [19]
-							"/sit", -- [20]
-							"/TRAIN", -- [21]
+							"/wa", -- [10]
+							"/sit", -- [11]
+							"/TRAIN", -- [12]
+							"/wa", -- [13]
+							"/TRAIN", -- [14]
+							"/wa", -- [15]
+							"/TRAIN", -- [16]
+							"/sit", -- [17]
+							"/TRAIN", -- [18]
+							"/wa", -- [19]
+							"/TRAIN", -- [20]
+							"/wa", -- [21]
 							"/sit", -- [22]
-							"/TRAIN", -- [23]
-							"/wa", -- [24]
-							"/sit", -- [25]
-							"/wa", -- [26]
+							"/wa", -- [23]
+							"/TRAIN", -- [24]
+							"/wa", -- [25]
+							"/sit", -- [26]
 							"/TRAIN", -- [27]
 							"/sit", -- [28]
-							"/TRAIN", -- [29]
-							"/wa", -- [30]
-							"/TRAIN", -- [31]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [29]
+							"/p got 2 of 4", -- [30]
+							"/p im for sure doing something wrong", -- [31]
 							"/wa", -- [32]
 						},
 					},

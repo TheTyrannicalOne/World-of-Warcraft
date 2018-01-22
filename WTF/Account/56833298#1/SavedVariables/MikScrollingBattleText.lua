@@ -46,23 +46,13 @@ MSBTProfiles_SavedVars = {
 				},
 			},
 			["abilitySuppressions"] = {
-				["Bear Form"] = true,
-				["Fishing"] = true,
 				["Swift Flight Form"] = true,
-				["Cat Form"] = true,
+				["Fishing"] = true,
 				["Judgements of the Bold"] = true,
+				["Cat Form"] = true,
+				["Bear Form"] = true,
 			},
 			["scrollAreas"] = {
-				["Incoming"] = {
-					["stickyDirection"] = "Up",
-					["direction"] = "Up",
-					["offsetX"] = -244,
-					["scrollHeight"] = 200,
-					["animationSpeed"] = 110,
-					["offsetY"] = -158,
-					["animationStyle"] = "Straight",
-					["behavior"] = "MSBT_NORMAL",
-				},
 				["Outgoing"] = {
 					["direction"] = "Up",
 					["offsetX"] = 239,
@@ -70,6 +60,11 @@ MSBTProfiles_SavedVars = {
 					["scrollHeight"] = 200,
 					["animationStyle"] = "Straight",
 					["animationSpeed"] = 80,
+				},
+				["Static"] = {
+					["offsetY"] = -264,
+					["disabled"] = true,
+					["offsetX"] = -25,
 				},
 				["Notification"] = {
 					["scrollHeight"] = 150,
@@ -79,10 +74,15 @@ MSBTProfiles_SavedVars = {
 					["animationStyle"] = "Static",
 					["disabled"] = true,
 				},
-				["Static"] = {
-					["offsetY"] = -264,
-					["disabled"] = true,
-					["offsetX"] = -25,
+				["Incoming"] = {
+					["stickyDirection"] = "Up",
+					["direction"] = "Up",
+					["offsetX"] = -244,
+					["scrollHeight"] = 200,
+					["behavior"] = "MSBT_NORMAL",
+					["offsetY"] = -158,
+					["animationStyle"] = "Straight",
+					["animationSpeed"] = 110,
 				},
 			},
 			["fire"] = {

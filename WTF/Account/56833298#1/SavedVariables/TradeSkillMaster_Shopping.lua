@@ -52,11 +52,11 @@ TradeSkillMaster_ShoppingDB = {
 	["g@ @postUndercut"] = "1c",
 	["g@ @minDeSearchLvl"] = 1,
 	["g@ @maxDeSearchLvl"] = 735,
-	["_hash"] = 1861581,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
 	["g@ @marketValueSource"] = "dbmarket",
 	["g@ @savedSearches"] = {
 	},
-	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["_hash"] = 1861581,
 	["g@ @normalPostPrice"] = "150% dbmarket",
 	["g@ @maxDeSearchPercent"] = 1,
 	["g@ @sniperCustomPrice"] = "check(minprice - 100000g, 90% minprice, check(minprice - 50000g, 80% minprice, check(minprice - 10000g, 60% minprice, check(minprice - 5000g, 50% minprice, check(minprice - 1000g, 30% minprice, check(minprice - 500g, 20% minprice))))))",

@@ -26,11 +26,11 @@ MSBTProfiles_SavedVars = {
 			["creationVersion"] = "5.5.91",
 			["critFontSize"] = 32,
 			["abilitySuppressions"] = {
-				["Swift Flight Form"] = true,
-				["Fishing"] = true,
 				["Judgements of the Bold"] = true,
-				["Cat Form"] = true,
+				["Fishing"] = true,
 				["Bear Form"] = true,
+				["Cat Form"] = true,
+				["Swift Flight Form"] = true,
 			},
 			["events"] = {
 				["NOTIFICATION_REP_GAIN"] = {
@@ -57,18 +57,20 @@ MSBTProfiles_SavedVars = {
 			},
 			["hideNames"] = true,
 			["scrollAreas"] = {
-				["Outgoing"] = {
-					["direction"] = "Up",
-					["offsetX"] = 239,
-					["behavior"] = "MSBT_NORMAL",
-					["animationSpeed"] = 80,
-					["animationStyle"] = "Straight",
-					["scrollHeight"] = 200,
-				},
 				["Static"] = {
 					["offsetY"] = -264,
 					["disabled"] = true,
 					["offsetX"] = -25,
+				},
+				["Incoming"] = {
+					["stickyDirection"] = "Up",
+					["direction"] = "Up",
+					["offsetX"] = -244,
+					["behavior"] = "MSBT_NORMAL",
+					["animationSpeed"] = 110,
+					["offsetY"] = -158,
+					["animationStyle"] = "Straight",
+					["scrollHeight"] = 200,
 				},
 				["Notification"] = {
 					["scrollHeight"] = 150,
@@ -78,13 +80,11 @@ MSBTProfiles_SavedVars = {
 					["animationStyle"] = "Static",
 					["direction"] = "Up",
 				},
-				["Incoming"] = {
-					["stickyDirection"] = "Up",
+				["Outgoing"] = {
 					["direction"] = "Up",
-					["offsetX"] = -244,
-					["animationSpeed"] = 110,
+					["offsetX"] = 239,
 					["behavior"] = "MSBT_NORMAL",
-					["offsetY"] = -158,
+					["animationSpeed"] = 80,
 					["animationStyle"] = "Straight",
 					["scrollHeight"] = 200,
 				},
