@@ -1,0 +1,12 @@
+tag 8f4c8c2686accd77c50ac847eb42fac722cf9555 4.7.9
+Author:	Hendrik Leppkes <h.leppkes@gmail.com>
+Date:	Wed Jul 12 14:01:33 2017 +0200
+
+Tag as 4.7.9
+
+commit 862369fb3f5098cae426f88b749138e367b1ad66
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Wed Jul 12 13:56:41 2017 +0200
+
+    Switch to ignoring unlocalized strings due to bugs in the locale export
+

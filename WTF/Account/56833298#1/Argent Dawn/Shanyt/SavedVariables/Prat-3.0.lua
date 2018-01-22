@@ -1,0 +1,84 @@
+
+Prat3CharDB = {
+	["history"] = {
+		["cmdhistory"] = {
+			["ChatFrame10EditBox"] = {
+			},
+			["ChatFrame7EditBox"] = {
+			},
+			["ChatFrame5EditBox"] = {
+			},
+			["ChatFrame8EditBox"] = {
+			},
+			["ChatFrame4EditBox"] = {
+			},
+			["ChatFrame6EditBox"] = {
+			},
+			["ChatFrame1EditBox"] = {
+			},
+			["ChatFrame3EditBox"] = {
+			},
+			["ChatFrame2EditBox"] = {
+			},
+			["ChatFrame9EditBox"] = {
+			},
+		},
+	},
+}
+Prat3HighCPUPerCharDB = {
+	["time"] = 1516580486,
+	["scrollback"] = {
+		["ChatFrame4"] = {
+			{
+				"|cff979797[19:04:50]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				66, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [1]
+			{
+				"|cff979797[19:04:50]|r|c00000000|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				4, -- [7]
+				5, -- [8]
+			}, -- [2]
+			{
+				"|cff979797[19:19:15]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Uldaren-TheScryers:60:CHANNEL:2|h|cffc69b6dUldaren|r-|cffa7e77bThe|r|h|cffd8d8d8]|r: so, |cffe6cc80|Hitem:128289::152293:152030:147756::::110:73:16777472:9:1:752:861:1:3:3613:1457:3528:3:3614:1472:3528:3:3573:1492:3528|h[Scale of the Earth-Warder]|h|r. is that a hydralisk or what", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [3]
+			{
+				"|cff979797[19:21:26]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				66, -- [5]
+				false, -- [6]
+				4, -- [7]
+				5, -- [8]
+			}, -- [4]
+			{
+				"|cff979797[19:21:26]|r|c00000000|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				7, -- [8]
+			}, -- [5]
+		},
+	},
+}

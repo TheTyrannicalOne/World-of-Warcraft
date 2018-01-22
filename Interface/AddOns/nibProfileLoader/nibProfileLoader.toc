@@ -1,0 +1,6 @@
+## Interface: 50400
+## Title: |cffaaaaaanib|rProfileLoader
+## Notes: Automatic profile loader for Reflux
+## SavedVariables: nibPLNames
+## Dependencies: Reflux
+nibProfileLoader.lua
