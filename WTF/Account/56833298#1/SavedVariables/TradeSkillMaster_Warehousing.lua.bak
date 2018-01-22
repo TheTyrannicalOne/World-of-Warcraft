@@ -1,5 +1,7 @@
 
 TradeSkillMaster_WarehousingDB = {
+	["f@Horde - Zul'jin@BagState"] = {
+	},
 	["_hash"] = 185553,
 	["g@ @ShowLogData"] = false,
 	["f@Horde - Argent Dawn@BagState"] = {
@@ -19,17 +21,20 @@ TradeSkillMaster_WarehousingDB = {
 			"Fantastiburo - Argent Dawn", -- [11]
 			"Bathal - Argent Dawn", -- [12]
 			"Shathiel - Darkspear", -- [13]
-		},
-		["factionrealm"] = {
-			"Horde - Argent Dawn", -- [1]
-			"Alliance - Darkspear", -- [2]
-		},
-		["profile"] = {
-			"Default", -- [1]
+			"Urbul - Zul'jin", -- [14]
 		},
 		["realm"] = {
 			"Argent Dawn", -- [1]
 			"Darkspear", -- [2]
+			"Zul'jin", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Argent Dawn", -- [1]
+			"Alliance - Darkspear", -- [2]
+			"Horde - Zul'jin", -- [3]
 		},
 	},
 	["f@Alliance - Darkspear@BagState"] = {
@@ -45,6 +50,7 @@ TradeSkillMaster_WarehousingDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+		["Urbul - Zul'jin"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",

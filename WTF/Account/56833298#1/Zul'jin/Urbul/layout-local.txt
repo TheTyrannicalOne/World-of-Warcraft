@@ -1,6 +1,6 @@
 Version: 1
 Frame: MBB_MinimapButtonFrame
-FrameLevel: 2
+FrameLevel: 10000
 Anchor: BOTTOMRIGHT
 X: 11
 Y: -11
