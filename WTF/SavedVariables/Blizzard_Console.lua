@@ -4,859 +4,859 @@ Blizzard_Console_SavedVars = {
 	["height"] = 300,
 	["messageHistory"] = {
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [1]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [2]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [3]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [4]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [5]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [6]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [7]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [8]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [9]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [10]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [11]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [12]
 		{
-			"Got new connection 2", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [13]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [14]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [15]
 		{
-			"[IBN_Login] Requesting change realm list", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [16]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [17]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [18]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [19]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [20]
 		{
-			"[IBN_Login] Requesting realm listsnumSubRegions=\"4\"", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [21]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [22]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [23]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [24]
 		{
-			"NetClient::HandleDisconnect()", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [25]
 		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [26]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [27]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [28]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [29]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [30]
 		{
-			"Got new connection 3", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [31]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [32]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [33]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [34]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [35]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [36]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [37]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [38]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [39]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [40]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [41]
 		{
-			"Time set to 1/21/2018 (Sun) 14:22", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [42]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [43]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.35 (default 0.4)", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [44]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [45]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
 			0, -- [2]
 		}, -- [46]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [47]
 		{
-			"set pending gxRestart", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
 			0, -- [2]
 		}, -- [48]
 		{
-			"set pending gxRestart", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [49]
 		{
-			"set pending gxRestart", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [50]
 		{
-			"set pending gxRestart", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [51]
 		{
-			"set pending gxRestart", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [52]
 		{
-			"set pending gxRestart", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [53]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [54]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [55]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [56]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [57]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [58]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [59]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [60]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [61]
 		{
-			"Sorting particles normally.", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [62]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [63]
 		{
-			"Water detail changed to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [64]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [65]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [66]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [67]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [68]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [69]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Time set to 1/21/2018 (Sun) 14:31", -- [1]
 			0, -- [2]
 		}, -- [70]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"Hardware PCF enabled.", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
-			"Projected textures enabled.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [75]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [76]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [77]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [78]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [79]
 		{
-			"SSAO mode set to 3", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [80]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [81]
 		{
-			"SSAO blur set to 2", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [82]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [83]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [84]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [85]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [86]
 		{
-			"LightBuffer mode changed to 2", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [87]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [88]
 		{
-			"Render scale changed to 1", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [89]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [90]
 		{
-			"MSAA disabled", -- [1]
+			"Hardware PCF enabled.", -- [1]
 			0, -- [2]
 		}, -- [91]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [92]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"World load object sort enabled.", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"World preload non critical enabled.", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [98]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [99]
 		{
-			"Error display disabled", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [100]
 		{
-			"Error display shown", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [101]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [102]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [103]
 		{
-			"Now filtering: all messages", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [104]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [105]
 		{
-			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [106]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [107]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [108]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [109]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [110]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [111]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [112]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [113]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [114]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [115]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [116]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [117]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [118]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [119]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [120]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [121]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [122]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
+			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [123]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [124]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [125]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [126]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [127]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [128]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [129]
 		{
-			"Got new connection 2", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [130]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [131]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [132]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [133]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [134]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [135]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [136]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [137]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [138]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [139]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
 			0, -- [2]
 		}, -- [140]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [141]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
 			0, -- [2]
 		}, -- [142]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [143]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [144]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [145]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [146]
 		{
-			"Time set to 1/21/2018 (Sun) 14:31", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [147]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [148]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [149]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [150]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [151]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [152]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [153]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [154]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [155]
 		{
-			"Sorting particles normally.", -- [1]
+			"Time set to 1/21/2018 (Sun) 14:34", -- [1]
 			0, -- [2]
 		}, -- [156]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [157]
 		{
-			"Water detail changed to 3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [158]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [159]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [160]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [161]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [162]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [163]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [164]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [165]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [166]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [167]
 		{
-			"Hardware PCF enabled.", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [168]
 		{
-			"Projected textures enabled.", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [169]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [170]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Hardware PCF enabled.", -- [1]
 			0, -- [2]
 		}, -- [171]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [172]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [173]
 		{
-			"SSAO mode set to 3", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [174]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [175]
 		{
-			"SSAO blur set to 2", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [176]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [177]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [178]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [179]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [180]
 		{
-			"LightBuffer mode changed to 2", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [181]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [182]
 		{
-			"Render scale changed to 1", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [183]
 		{
-			"Resample quality changed to 0", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [184]
 		{
-			"MSAA disabled", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [185]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [186]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [187]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [188]
 		{
-			"World preload object sort enabled.", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [189]
 		{
-			"World load object sort enabled.", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [190]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [191]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [192]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [193]
 		{
-			"Error display disabled", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [194]
 		{
-			"Error display shown", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [195]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [196]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [197]
 		{
-			"Now filtering: all messages", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [198]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [199]
 		{
-			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [200]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [201]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [202]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [203]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [204]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [205]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [206]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [207]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [208]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [209]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [210]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [211]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [212]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [213]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [214]
 		{
@@ -864,1107 +864,1107 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [215]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [216]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [217]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [218]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [219]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
 			0, -- [2]
 		}, -- [220]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [221]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
 			0, -- [2]
 		}, -- [222]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [223]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [224]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [225]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [226]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [227]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [228]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [229]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [230]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [231]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [232]
 		{
-			"Time set to 1/21/2018 (Sun) 14:34", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [233]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [234]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [235]
 		{
-			"Sorting particles normally.", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [236]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [237]
 		{
-			"Water detail changed to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [238]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [239]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [240]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [241]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [242]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [243]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Time set to 1/21/2018 (Sun) 14:35", -- [1]
 			0, -- [2]
 		}, -- [244]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [245]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [246]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [247]
 		{
-			"Hardware PCF enabled.", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [248]
 		{
-			"Projected textures enabled.", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [249]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [250]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [251]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [252]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [253]
 		{
-			"SSAO mode set to 3", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [254]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [255]
 		{
-			"SSAO blur set to 2", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [256]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [257]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [258]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Hardware PCF enabled.", -- [1]
 			0, -- [2]
 		}, -- [259]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [260]
 		{
-			"LightBuffer mode changed to 2", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [261]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [262]
 		{
-			"Render scale changed to 1", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [263]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [264]
 		{
-			"MSAA disabled", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [265]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [266]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [267]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [268]
 		{
-			"World preload object sort enabled.", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [269]
 		{
-			"World load object sort enabled.", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [270]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [271]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [272]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [273]
 		{
-			"Error display disabled", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [274]
 		{
-			"Error display shown", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [275]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [276]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [277]
 		{
-			"Now filtering: all messages", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [278]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [279]
 		{
-			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [280]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [281]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [282]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [283]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [284]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [285]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [286]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [287]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [288]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [289]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [290]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [291]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [292]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [293]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [294]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [295]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [296]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [297]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [298]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [299]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [300]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [301]
 		{
-			"Got new connection 2", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [302]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [303]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [304]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [305]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [306]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [307]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
 			0, -- [2]
 		}, -- [308]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [309]
 		{
-			"Got new connection 3", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
 			0, -- [2]
 		}, -- [310]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [311]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [312]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [313]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [314]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [315]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [316]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [317]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [318]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [319]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [320]
 		{
-			"Time set to 1/21/2018 (Sun) 14:35", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [321]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [322]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [323]
 		{
-			"Sorting particles normally.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [324]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [325]
 		{
-			"Water detail changed to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [326]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [327]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [328]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [329]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [330]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Time set to 1/21/2018 (Sun) 14:38", -- [1]
 			0, -- [2]
 		}, -- [331]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [332]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Test CVar test_cameraHeadMovementDeadZone has been set to 0 (default 0.015)", -- [1]
 			0, -- [2]
 		}, -- [333]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [334]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 2.5 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [335]
 		{
-			"Hardware PCF enabled.", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [336]
 		{
-			"Projected textures enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [337]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [338]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [339]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [340]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [341]
 		{
-			"SSAO mode set to 3", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [342]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [343]
 		{
-			"SSAO blur set to 2", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [344]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [345]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [346]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [347]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [348]
 		{
-			"LightBuffer mode changed to 2", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [349]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [350]
 		{
-			"Render scale changed to 1", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [351]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [352]
 		{
-			"MSAA disabled", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [353]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [354]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [355]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [356]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [357]
 		{
-			"World load object sort enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [358]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [359]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.5 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [360]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 1.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [361]
 		{
-			"Error display disabled", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.31 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [362]
 		{
-			"Error display shown", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [363]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 10.5 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [364]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Test CVar test_cameraTargetFocusEnemyEnable has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [365]
 		{
-			"Now filtering: all messages", -- [1]
+			"Test CVar test_cameraTargetFocusInteractEnable has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [366]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [367]
 		{
-			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [368]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [369]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [370]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [371]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [372]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [373]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [374]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [375]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [376]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [377]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [378]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [379]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [380]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [381]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [382]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [383]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [384]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [385]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [386]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [387]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [388]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [389]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [390]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [391]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [392]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [393]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [394]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Hardware PCF enabled.", -- [1]
 			0, -- [2]
 		}, -- [395]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [396]
 		{
-			"Got new connection 3", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [397]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [398]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [399]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [400]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [401]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [402]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [403]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [404]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [405]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [406]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [407]
 		{
-			"Time set to 1/21/2018 (Sun) 14:38", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [408]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [409]
 		{
-			"Test CVar test_cameraHeadMovementDeadZone has been set to 0 (default 0.015)", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [410]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [411]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 2.5 (default 5)", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [412]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [413]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [414]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [415]
 		{
-			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [416]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [417]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [418]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [419]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [420]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [421]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [422]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [423]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [424]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [425]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [426]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [427]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [428]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [429]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [430]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [431]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [432]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [433]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [434]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [435]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [436]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.5 (default 0.4)", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [437]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 1.8 (default 0)", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [438]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.31 (default 0.25)", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [439]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [440]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 10.5 (default 10)", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [441]
 		{
-			"Test CVar test_cameraTargetFocusEnemyEnable has been set to 1 (default 0)", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [442]
 		{
-			"Test CVar test_cameraTargetFocusInteractEnable has been set to 1 (default 0)", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [443]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
 			0, -- [2]
 		}, -- [444]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [445]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
 			0, -- [2]
 		}, -- [446]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [447]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [448]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [449]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [450]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [451]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [452]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [453]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [454]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [455]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [456]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [457]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [458]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [459]
 		{
-			"Sorting particles normally.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [460]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [461]
 		{
-			"Water detail changed to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [462]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [463]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [464]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [465]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [466]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Time set to 1/21/2018 (Sun) 14:44", -- [1]
 			0, -- [2]
 		}, -- [467]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [468]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [469]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [470]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [471]
 		{
-			"Hardware PCF enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [472]
 		{
-			"Projected textures enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [473]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [474]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [475]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [476]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [477]
 		{
-			"SSAO mode set to 3", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [478]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [479]
 		{
-			"SSAO blur set to 2", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [480]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [481]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [482]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"set pending gxRestart", -- [1]
 			0, -- [2]
 		}, -- [483]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [484]
 		{
-			"LightBuffer mode changed to 2", -- [1]
+			"Shadow mode changed to 3 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [485]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [486]
 		{
-			"Render scale changed to 1", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [487]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [488]
 		{
-			"MSAA disabled", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [489]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [490]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [491]
 		{
@@ -1972,275 +1972,275 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [492]
 		{
-			"World preload object sort enabled.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [493]
 		{
-			"World load object sort enabled.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [494]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [495]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [496]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [497]
 		{
-			"Error display disabled", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [498]
 		{
-			"Error display shown", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [499]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [500]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [501]
 		{
-			"Now filtering: all messages", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [502]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [503]
 		{
-			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [504]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [505]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"Hardware PCF enabled.", -- [1]
 			0, -- [2]
 		}, -- [506]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [507]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [508]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Shadow mode changed to 3 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [509]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [510]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [511]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"SSAO mode set to 3", -- [1]
 			0, -- [2]
 		}, -- [512]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [513]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [514]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [515]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [516]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [517]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [518]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [519]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [520]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [521]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Resample quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [522]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [523]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [524]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [525]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [526]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [527]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [528]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [529]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [530]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [531]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [532]
 		{
-			"Got new connection 3", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [533]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [534]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [535]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [536]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [537]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [538]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [539]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [540]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [541]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [542]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [543]
 		{
-			"Time set to 1/21/2018 (Sun) 14:44", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [544]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [545]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [546]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [547]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [548]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [549]
 		{
-			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [550]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [551]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [552]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [553]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [554]
 		{
-			"set pending gxRestart", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
 			0, -- [2]
 		}, -- [555]
 		{
-			"set pending gxRestart", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [556]
 		{
-			"set pending gxRestart", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
 			0, -- [2]
 		}, -- [557]
 		{
-			"set pending gxRestart", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [558]
 		{
-			"set pending gxRestart", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [559]
 		{
-			"set pending gxRestart", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [560]
 		{
@@ -2248,303 +2248,303 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [561]
 		{
-			"Shadow mode changed to 3 - 3 band dynamic shadows, 2048", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [562]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [563]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [564]
 		{
-			"Water detail changed to 2", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [565]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [566]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [567]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [568]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [569]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [570]
 		{
-			"Sorting particles normally.", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [571]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [572]
 		{
-			"Water detail changed to 2", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [573]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [574]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [575]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [576]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [577]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [578]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [579]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [580]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [581]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
 		}, -- [582]
 		{
-			"Hardware PCF enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
 		}, -- [583]
 		{
-			"Projected textures enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x000000018d", -- [1]
 			0, -- [2]
 		}, -- [584]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Proficiency in item class 2 set to 0x000000058d", -- [1]
 			0, -- [2]
 		}, -- [585]
 		{
-			"Shadow mode changed to 3 - 3 band dynamic shadows, 2048", -- [1]
+			"Proficiency in item class 2 set to 0x000000058f", -- [1]
 			0, -- [2]
 		}, -- [586]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Proficiency in item class 2 set to 0x000000858f", -- [1]
 			0, -- [2]
 		}, -- [587]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [588]
 		{
-			"SSAO mode set to 3", -- [1]
+			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
 			0, -- [2]
 		}, -- [589]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
 			0, -- [2]
 		}, -- [590]
 		{
-			"SSAO blur set to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
 			0, -- [2]
 		}, -- [591]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"Proficiency in item class 4 set to 0x0000000029", -- [1]
 			0, -- [2]
 		}, -- [592]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Proficiency in item class 4 set to 0x000000002d", -- [1]
 			0, -- [2]
 		}, -- [593]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [594]
 		{
-			"Outline mode changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000004e5cf", -- [1]
 			0, -- [2]
 		}, -- [595]
 		{
-			"LightBuffer mode changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000004e5cf", -- [1]
 			0, -- [2]
 		}, -- [596]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"Proficiency in item class 4 set to 0x000000002f", -- [1]
 			0, -- [2]
 		}, -- [597]
 		{
-			"Render scale changed to 1", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [598]
 		{
-			"Resample quality changed to 0", -- [1]
+			"Time set to 1/21/2018 (Sun) 15:21", -- [1]
 			0, -- [2]
 		}, -- [599]
 		{
-			"MSAA disabled", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [600]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Test CVar test_cameraHeadMovementDeadZone has been set to 0 (default 0.015)", -- [1]
 			0, -- [2]
 		}, -- [601]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [602]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 2.5 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [603]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [604]
 		{
-			"World load object sort enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [605]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [606]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [607]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [608]
 		{
-			"Error display disabled", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [609]
 		{
-			"Error display shown", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [610]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [611]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [612]
 		{
-			"Now filtering: all messages", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [613]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [614]
 		{
-			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [615]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [616]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [617]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [618]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [619]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [620]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [621]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [622]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [623]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [624]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [625]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [626]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [627]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [628]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [629]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [630]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [631]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"4\"", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [632]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [633]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [634]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [635]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [636]
 		{
@@ -2560,299 +2560,299 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [639]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [640]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
 			0, -- [2]
 		}, -- [641]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000000430", -- [1]
 			0, -- [2]
 		}, -- [642]
 		{
-			"Sorting particles normally.", -- [1]
+			"Proficiency in item class 2 set to 0x0000008430", -- [1]
 			0, -- [2]
 		}, -- [643]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [644]
 		{
-			"Water detail changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000000c430", -- [1]
 			0, -- [2]
 		}, -- [645]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Proficiency in item class 2 set to 0x000000c470", -- [1]
 			0, -- [2]
 		}, -- [646]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
 			0, -- [2]
 		}, -- [647]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
 			0, -- [2]
 		}, -- [648]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
 			0, -- [2]
 		}, -- [649]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Proficiency in item class 2 set to 0x000000e470", -- [1]
 			0, -- [2]
 		}, -- [650]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Proficiency in item class 4 set to 0x0000000027", -- [1]
 			0, -- [2]
 		}, -- [651]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [652]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Time set to 1/21/2018 (Sun) 15:26", -- [1]
 			0, -- [2]
 		}, -- [653]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [654]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Test CVar test_cameraHeadMovementDeadZone has been set to 0 (default 0.015)", -- [1]
 			0, -- [2]
 		}, -- [655]
 		{
-			"Got new connection 3", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [656]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 2.5 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [657]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [658]
 		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [659]
 		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [660]
 		{
-			"Proficiency in item class 2 set to 0x000000018d", -- [1]
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [661]
 		{
-			"Proficiency in item class 2 set to 0x000000058d", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [662]
 		{
-			"Proficiency in item class 2 set to 0x000000058f", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [663]
 		{
-			"Proficiency in item class 2 set to 0x000000858f", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [664]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [665]
 		{
-			"Proficiency in item class 2 set to 0x000000c58f", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [666]
 		{
-			"Proficiency in item class 2 set to 0x000004c58f", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [667]
 		{
-			"Proficiency in item class 2 set to 0x000004c5cf", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [668]
 		{
-			"Proficiency in item class 4 set to 0x0000000029", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [669]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [670]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [671]
 		{
-			"Proficiency in item class 2 set to 0x000004e5cf", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [672]
 		{
-			"Proficiency in item class 2 set to 0x000004e5cf", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [673]
 		{
-			"Proficiency in item class 4 set to 0x000000002f", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [674]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [675]
 		{
-			"Time set to 1/21/2018 (Sun) 15:21", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [676]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [677]
 		{
-			"Test CVar test_cameraHeadMovementDeadZone has been set to 0 (default 0.015)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [678]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [679]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 2.5 (default 5)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [680]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [681]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [682]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [683]
 		{
-			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [684]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [685]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [686]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [687]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [688]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [689]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [690]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000091", -- [1]
 			0, -- [2]
 		}, -- [691]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000491", -- [1]
 			0, -- [2]
 		}, -- [692]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [693]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Proficiency in item class 2 set to 0x0000004491", -- [1]
 			0, -- [2]
 		}, -- [694]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Proficiency in item class 2 set to 0x00000044d1", -- [1]
 			0, -- [2]
 		}, -- [695]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
+			"Proficiency in item class 4 set to 0x0000000025", -- [1]
 			0, -- [2]
 		}, -- [696]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [697]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [698]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [699]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [700]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [701]
 		{
-			"Sorting particles normally.", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [702]
 		{
-			"Detail doodad instancing enabled.", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [703]
 		{
-			"Water detail changed to 2", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [704]
 		{
-			"Ripple detail changed to 1", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [705]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [706]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [707]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [708]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [709]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [710]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [711]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [712]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [713]
 		{
@@ -2860,223 +2860,223 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [714]
 		{
-			"Texture cache size set to 512MB.", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [715]
 		{
-			"Got new connection 3", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [716]
 		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [717]
 		{
-			"Proficiency in item class 2 set to 0x0000000410", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [718]
 		{
-			"Proficiency in item class 2 set to 0x0000000430", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [719]
 		{
-			"Proficiency in item class 2 set to 0x0000008430", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [720]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [721]
 		{
-			"Proficiency in item class 2 set to 0x000000c430", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [722]
 		{
-			"Proficiency in item class 2 set to 0x000000c470", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [723]
 		{
-			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [724]
 		{
-			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [725]
 		{
-			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [726]
 		{
-			"Proficiency in item class 2 set to 0x000000e470", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [727]
 		{
-			"Proficiency in item class 4 set to 0x0000000027", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [728]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [729]
 		{
-			"Time set to 1/21/2018 (Sun) 15:26", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [730]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [731]
 		{
-			"Test CVar test_cameraHeadMovementDeadZone has been set to 0 (default 0.015)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [732]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [733]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 2.5 (default 5)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [734]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [735]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [736]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [737]
 		{
-			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [738]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [739]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [740]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [741]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [742]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [743]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [744]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [745]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [746]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [747]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [748]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [749]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [750]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [751]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [752]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [753]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [754]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [755]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [756]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [757]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [758]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [759]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [760]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [761]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [762]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [763]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [764]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [765]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Proficiency in item class 2 set to 0x0000000091", -- [1]
 			0, -- [2]
 		}, -- [766]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Proficiency in item class 2 set to 0x0000000191", -- [1]
 			0, -- [2]
 		}, -- [767]
 		{
-			"Proficiency in item class 2 set to 0x0000000091", -- [1]
+			"Proficiency in item class 2 set to 0x00000001b1", -- [1]
 			0, -- [2]
 		}, -- [768]
 		{
-			"Proficiency in item class 2 set to 0x0000000491", -- [1]
+			"Proficiency in item class 2 set to 0x00000001b3", -- [1]
 			0, -- [2]
 		}, -- [769]
 		{
@@ -3084,119 +3084,119 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [770]
 		{
-			"Proficiency in item class 2 set to 0x0000004491", -- [1]
+			"Proficiency in item class 2 set to 0x00000041b3", -- [1]
 			0, -- [2]
 		}, -- [771]
 		{
-			"Proficiency in item class 2 set to 0x00000044d1", -- [1]
+			"Proficiency in item class 2 set to 0x00000041f3", -- [1]
 			0, -- [2]
 		}, -- [772]
 		{
-			"Proficiency in item class 4 set to 0x0000000025", -- [1]
+			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
 		}, -- [773]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
 		}, -- [774]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
 		}, -- [775]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
 		}, -- [776]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [777]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [778]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [779]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [780]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [781]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [782]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [783]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [784]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [785]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [786]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [787]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [788]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [789]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [790]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [791]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [792]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [793]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [794]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [795]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [796]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [797]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [798]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [799]
 		{
@@ -3204,303 +3204,303 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [800]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [801]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [802]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [803]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [804]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [805]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [806]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [807]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [808]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [809]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [810]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [811]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [812]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [813]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [814]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [816]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [817]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [818]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [819]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000011", -- [1]
 			0, -- [2]
 		}, -- [820]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000411", -- [1]
 			0, -- [2]
 		}, -- [821]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000431", -- [1]
 			0, -- [2]
 		}, -- [822]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000000433", -- [1]
 			0, -- [2]
 		}, -- [823]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000008433", -- [1]
 			0, -- [2]
 		}, -- [824]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [825]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 2 set to 0x000000c433", -- [1]
 			0, -- [2]
 		}, -- [826]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Proficiency in item class 4 set to 0x0000000029", -- [1]
 			0, -- [2]
 		}, -- [827]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Proficiency in item class 4 set to 0x000000002d", -- [1]
 			0, -- [2]
 		}, -- [828]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [829]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [830]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [831]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [832]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [833]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [834]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [835]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [836]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [837]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [838]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [839]
 		{
-			"Got new connection 3", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [840]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [841]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [842]
 		{
-			"Proficiency in item class 2 set to 0x0000000091", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [843]
 		{
-			"Proficiency in item class 2 set to 0x0000000191", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [844]
 		{
-			"Proficiency in item class 2 set to 0x00000001b1", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [845]
 		{
-			"Proficiency in item class 2 set to 0x00000001b3", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [846]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [847]
 		{
-			"Proficiency in item class 2 set to 0x00000041b3", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [848]
 		{
-			"Proficiency in item class 2 set to 0x00000041f3", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [849]
 		{
-			"Proficiency in item class 4 set to 0x0000000031", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [850]
 		{
-			"Proficiency in item class 4 set to 0x0000000039", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [851]
 		{
-			"Proficiency in item class 4 set to 0x000000003d", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [852]
 		{
-			"Proficiency in item class 4 set to 0x000000003f", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [853]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [854]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [855]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.35 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [873]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [874]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [875]
 		{
@@ -3508,191 +3508,191 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [876]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [877]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [878]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [879]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [880]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [881]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [882]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [883]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [884]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [885]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.5 (default 0)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [887]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [888]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [889]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [890]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [891]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [892]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [893]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [894]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [895]
 		{
-			"Proficiency in item class 2 set to 0x0000000001", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [896]
 		{
-			"Proficiency in item class 2 set to 0x0000000011", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [897]
 		{
-			"Proficiency in item class 2 set to 0x0000000411", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [898]
 		{
-			"Proficiency in item class 2 set to 0x0000000431", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [899]
 		{
-			"Proficiency in item class 2 set to 0x0000000433", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [900]
 		{
-			"Proficiency in item class 2 set to 0x0000008433", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [901]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [902]
 		{
-			"Proficiency in item class 2 set to 0x000000c433", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [903]
 		{
-			"Proficiency in item class 4 set to 0x0000000029", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [904]
 		{
-			"Proficiency in item class 4 set to 0x000000002d", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [905]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [906]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [907]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [908]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [909]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [910]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [911]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [912]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [913]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [914]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [915]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Detail doodad instancing enabled.", -- [1]
 			0, -- [2]
 		}, -- [917]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Water detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [918]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
 		}, -- [919]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [920]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [921]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
@@ -3700,273 +3700,109 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [924]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Texture cache size set to 512MB.", -- [1]
 			0, -- [2]
 		}, -- [925]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [926]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [927]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
 			0, -- [2]
 		}, -- [928]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
 			0, -- [2]
 		}, -- [929]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.22 (default 0.75)", -- [1]
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
 		}, -- [930]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.84 (default 0.25)", -- [1]
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 0.9 (default 0)", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
 			0, -- [2]
 		}, -- [934]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
 			0, -- [2]
 		}, -- [935]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.17 (default 0.4)", -- [1]
+			"Time set to 1/21/2018 (Sun) 16:23", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.27 (default 0.25)", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [939]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.35 (default 0.4)", -- [1]
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
 			0, -- [2]
 		}, -- [940]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
 			0, -- [2]
 		}, -- [945]
 		{
-			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
-			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [947]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
+			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
 			0, -- [2]
 		}, -- [950]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
-			0, -- [2]
-		}, -- [951]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [952]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [953]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
-			0, -- [2]
-		}, -- [954]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
-			0, -- [2]
-		}, -- [955]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [956]
-		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
-		}, -- [957]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [958]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [959]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [960]
-		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
-		}, -- [961]
-		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
-			0, -- [2]
-		}, -- [962]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [963]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [964]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [965]
-		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
-			0, -- [2]
-		}, -- [966]
-		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
-			0, -- [2]
-		}, -- [967]
-		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
-			0, -- [2]
-		}, -- [968]
-		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
-			0, -- [2]
-		}, -- [969]
-		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
-			0, -- [2]
-		}, -- [970]
-		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
-			0, -- [2]
-		}, -- [971]
-		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
-			0, -- [2]
-		}, -- [972]
-		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
-			0, -- [2]
-		}, -- [973]
-		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
-			0, -- [2]
-		}, -- [974]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [975]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [976]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [977]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [978]
-		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
-		}, -- [979]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [980]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
-			0, -- [2]
-		}, -- [981]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
-			0, -- [2]
-		}, -- [982]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
-			0, -- [2]
-		}, -- [983]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [984]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [985]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [986]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.46 (default 0.4)", -- [1]
-			0, -- [2]
-		}, -- [987]
-		{
-			"Test CVar test_cameraHeadMovementStrength has been set to 0.8 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [988]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0.66 (default 0.25)", -- [1]
-			0, -- [2]
-		}, -- [989]
-		{
-			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
-			0, -- [2]
-		}, -- [990]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 1 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [991]
 	},
 	["isShown"] = false,
 	["fontHeight"] = 14,
