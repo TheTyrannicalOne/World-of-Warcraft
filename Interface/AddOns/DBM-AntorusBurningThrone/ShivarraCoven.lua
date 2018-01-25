@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1986, "DBM-AntorusBurningThrone", nil, 946)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17190 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17191 $"):sub(12, -3))
 mod:SetCreatureID(122468, 122467, 122469)--122468 Noura, 122467 Asara, 122469 Diima, 125436 Thu'raya (mythic only)
 mod:SetEncounterID(2073)
 mod:SetZone()
@@ -199,13 +199,7 @@ function mod:SPELL_CAST_START(args)
 		end
 		local kickCount = self.vb.touchCosmosCast
 		specWarnTouchoftheCosmos:Show(args.sourceName, kickCount)
-		if kickCount == 1 then
-			specWarnTouchoftheCosmos:Play("kick1r")
-		elseif kickCount == 2 then
-			specWarnTouchoftheCosmos:Play("kick2r")
-		elseif kickCount == 3 then
-			specWarnTouchoftheCosmos:Play("kick3r")
-		end
+		specWarnTouchoftheCosmos:Play("kick"..kickCount.."r")
 	end
 end
 

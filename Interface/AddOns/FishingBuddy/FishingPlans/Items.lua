@@ -20,7 +20,7 @@ local TuskarrItem = {
 }
 
 local function TuskarrPlan(queue)
-    if (not GSB(TuskarrItem.setting)) then
+    if (not GSB(TuskarrItem.setting) or IsMounted()) then
         return
     end
 

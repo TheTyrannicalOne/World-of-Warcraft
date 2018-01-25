@@ -172,6 +172,28 @@ local function IsQuestFishing(item)
 	end
 end
 
+local function SetupSpecialItem(id, info, fixsetting, fixloc)
+	info.id = id
+	if (info.spell and not info.buff) then
+		info.buff = GetSpellInfo(info.spell);
+	end
+	if (fixsetting and info.enUS and not info.setting) then
+		info.setting = info.enUS:gsub("%s+", "")
+	end
+	if (fixloc and not info[CurLoc]) then
+		local link = "item:"..id;
+		local n,l,_,_,_,_,_,_ = FL:GetItemInfo(link);
+		if (n and l) then
+			info[CurLoc] = n
+		else
+			info[CurLoc] = info.enUS
+		end
+	end
+
+	return info;
+end
+FishingBuddy.SetupSpecialItem = SetupSpecialItem
+
 local function AlreadyUsedFishingItem(id, info)
 	SetupSpecialItem(id, info)
 	if (info.buff) then
@@ -691,28 +713,6 @@ local function UpdateItemOptions()
 	
 	FishingBuddy.FluffOptions = FluffOptions;
 end
-
-local function SetupSpecialItem(id, info, fixsetting, fixloc)
-	info.id = id
-	if (info.spell and not info.buff) then
-		info.buff = GetSpellInfo(info.spell);
-	end
-	if (fixsetting and info.enUS and not info.setting) then
-		info.setting = info.enUS:gsub("%s+", "")
-	end
-	if (fixloc and not info[CurLoc]) then
-		local link = "item:"..id;
-		local n,l,_,_,_,_,_,_ = FL:GetItemInfo(link);
-		if (n and l) then
-			info[CurLoc] = n
-		else
-			info[CurLoc] = info.enUS
-		end
-	end
-
-	return info;
-end
-FishingBuddy.SetupSpecialItem = SetupSpecialItem
 
 local function SetupSpecialItems(items, fixsetting, fixloc, skipitem)
 	for id,info in pairs(items) do

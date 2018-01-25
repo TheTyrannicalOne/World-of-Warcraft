@@ -855,6 +855,7 @@ PagleFish[127994] = {
 
 PagleFish[116158] = {
 	["enUS"] = "Lunarfall Carp",
+	limit = 5
 };
 PagleFish[112633] = {
 	["enUS"] = "Frostdeep Minnow",

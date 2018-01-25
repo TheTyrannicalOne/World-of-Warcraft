@@ -1,4 +1,9 @@
-﻿Version 1.8
+﻿Version 1.8a
+- Fix random issues with the newly update code
+- Show the count of Lunarfall Carp (since we only get 5 at a time)
+- Don't use the Tuskarr Spear if we're mounted (trying to  make it smarter)
+
+Version 1.8
 - Consistent bobber handling (currently it will only check when you start fishing)
 - Substantial rewrite to use libraries for cleaner code
 - Fix leaking variables and potential taint hazards (thanks Resike!)
