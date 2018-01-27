@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1203, "DBM-BlackrockFoundry", nil, 457)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 26 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 mod:SetCreatureID(77557, 77231, 77477)
 mod:SetEncounterID(1695)
 mod:SetZone()
@@ -27,8 +27,6 @@ mod:RegisterEventsInCombat(
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3",
 	"UNIT_POWER_FREQUENT boss1 boss2 boss3"
 )
-
-mod:SetBossHealthInfo(77557, 77231, 77477)
 
 local Ship	= DBM:EJ_GetSectionInfo(10019)
 local Marak = DBM:EJ_GetSectionInfo(10033)

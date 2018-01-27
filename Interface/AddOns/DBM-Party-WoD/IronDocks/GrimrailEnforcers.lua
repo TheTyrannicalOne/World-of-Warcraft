@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1236, "DBM-Party-WoD", 4, 558)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 24 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 mod:SetCreatureID(80805, 80816, 80808)
 mod:SetEncounterID(1748)
 mod:SetZone()
@@ -16,8 +16,6 @@ mod:RegisterEventsInCombat(
 	"UNIT_DIED",
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2 boss3"
 )
-
-mod:SetBossHealthInfo(80816, 80805, 80808)
 
 local warnOgreTraps				= mod:NewCastAnnounce(163390, 3)
 

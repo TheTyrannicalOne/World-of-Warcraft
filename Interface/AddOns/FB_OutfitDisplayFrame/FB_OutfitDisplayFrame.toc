@@ -1,7 +1,0 @@
-## Interface: 70300
-## Title: Fishing Buddy - Outfit Frame
-## Version: 1.7.13d
-## Author: Sutorix=AT=hotmail.com
-## RequiredDeps: FishingBuddy
-## SavedVariablesPerCharacter: FBODF_PlayerInfo
-FishingOutfitFrame.xml

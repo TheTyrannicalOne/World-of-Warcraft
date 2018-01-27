@@ -1,11 +1,20 @@
 
 HandyNotes_SpecialNPCsEtcDB = {
+	["faction"] = {
+		["Horde"] = {
+			["nodes"] = {
+				["Orgrimmar"] = {
+					[67745315] = "Banker:Binzella:Banker:288281",
+				},
+			},
+			["dbversion"] = 2,
+		},
+	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
-	["faction"] = {
-		["Horde"] = {
-			["dbversion"] = 2,
+	["profiles"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
 	},
 }

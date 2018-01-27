@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2031, "DBM-AntorusBurningThrone", nil, 946)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17197 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17209 $"):sub(12, -3))
 mod:SetCreatureID(124828)
 mod:SetEncounterID(2092)
 mod:SetZone()
@@ -18,7 +18,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_SUCCESS 248499 258039 258838 252729 252616 256388 258029",
 	"SPELL_AURA_APPLIED 248499 248396 250669 251570 255199 253021 255496 255496 255478 252729 252616 255433 255430 255429 255425 255422 255419 255418 258647 258646 257869 257931 257966 258838",
 	"SPELL_AURA_APPLIED_DOSE 248499 258039 258838",
-	"SPELL_AURA_REMOVED 250669 251570 255199 253021 255496 255496 255478 255433 255430 255429 255425 255422 255419 255418 258039 257966 258647 258646 258838",
+	"SPELL_AURA_REMOVED 250669 251570 255199 253021 255496 255496 255478 255433 255430 255429 255425 255422 255419 255418 258039 257966 258647 258646 258838 248396",
 	"SPELL_INTERRUPT",
 	"SPELL_PERIODIC_DAMAGE 248167",
 	"SPELL_PERIODIC_MISSED 248167",
@@ -66,6 +66,7 @@ local specWarnSweepingScytheTaunt	= mod:NewSpecialWarningTaunt(248499, nil, nil,
 local specWarnConeofDeath			= mod:NewSpecialWarningDodge(248165, nil, nil, nil, 1, 2)
 local specWarnSoulblight			= mod:NewSpecialWarningMoveAway(248396, nil, nil, nil, 1, 2)
 local yellSoulblight				= mod:NewYell(248396)
+local yellSoulblightFades			= mod:NewShortFadesYell(248396)
 local specWarnGiftofSea				= mod:NewSpecialWarningYou(258647, nil, nil, nil, 1, 2)
 local yellGiftofSea					= mod:NewPosYell(258647, L.SeaText)
 local specWarnGiftofSky				= mod:NewSpecialWarningYou(258646, nil, nil, nil, 1, 2)
@@ -89,8 +90,6 @@ local specWarnAvatarofAggra			= mod:NewSpecialWarningYou(255199, nil, nil, nil, 
 --Stage Three: The Arcane Masters
 local specWarnCosmicRay				= mod:NewSpecialWarningYou(252729, nil, nil, nil, 1, 2)
 local yellCosmicRay					= mod:NewYell(252729)
-local specWarnCosmicBeacon			= mod:NewSpecialWarningMoveAway(252616, nil, nil, nil, 1, 2)
-local yellCosmicBeacon				= mod:NewYell(252616)
 --Stage Three Mythic
 local specWarnSargSentence			= mod:NewSpecialWarningYou(257966, nil, nil, nil, 1, 2)
 local yellSargSentence				= mod:NewYell(257966)
@@ -439,6 +438,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnSoulblight:Show()
 			specWarnSoulblight:Play("runout")
 			yellSoulblight:Yell()
+			yellSoulblightFades:Countdown(8)
 		end
 	elseif spellId == 250669 then
 		warnSoulburst:CombinedShow(0.3, args.destName)--2 Targets
@@ -519,13 +519,7 @@ function mod:SPELL_AURA_APPLIED(args)
 			warnCosmicRay:CombinedShow(0.3, args.destName)
 		end
 	elseif spellId == 252616 then
-		if args:IsPlayer() then
-			specWarnCosmicBeacon:Show()
-			specWarnCosmicBeacon:Play("runout")
-			yellCosmicBeacon:Yell()
-		else
-			warnCosmicBeacon:CombinedShow(0.3, args.destName)
-		end
+		warnCosmicBeacon:CombinedShow(0.3, args.destName)
 	elseif spellId == 258647 then--Gift of Sea
 		warnSkyandSea:CombinedShow(0.3, args.destName)
 		if args:IsPlayer() then
@@ -671,6 +665,8 @@ function mod:SPELL_AURA_REMOVED(args)
 		if args:IsPlayer() then
 			yellSargSentenceFades:Cancel()
 		end
+	elseif spellId == 248396 and args:IsPlayer() then
+		yellSoulblightFades:Cancel()
 	end
 end
 

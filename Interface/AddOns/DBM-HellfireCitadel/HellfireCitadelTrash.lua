@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("HellfireCitadelTrash", "DBM-HellfireCitadel")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 24 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 --mod:SetModelID(47785)
 mod:SetZone()
 mod.isTrashMod = true
@@ -41,7 +41,6 @@ local specWarnFocusedFire			= mod:NewSpecialWarningYou(187110)
 local yellFocusedFire				= mod:NewYell(187110)
 local specWarnMarkofKaz				= mod:NewSpecialWarningYou(189512)
 
-mod:RemoveOption("HealthFrame")
 mod:AddRangeFrameOption(15)
 
 local Bloodthirster = DBM:EJ_GetSectionInfo(11266)

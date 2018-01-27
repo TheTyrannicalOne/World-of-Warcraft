@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 57,
+	["session"] = 67,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Kui_Nameplates\\messages.lua:373: Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.",
@@ -79,28 +79,51 @@ BugGrabberDB = {
 			["counter"] = 861,
 		}, -- [10]
 		{
-			["message"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: attempt to concatenate local 'icon' (a nil value)",
-			["time"] = "2018/01/21 19:03:35",
-			["locals"] = "Parrot = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n EnableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n IterateEmbeds = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n RegisterAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:77\n SecureHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n RawHookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n debug = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:40\n Printf = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n newDict = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:97\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n psize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:74\n DisableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n RegisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n unpackDictAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:206\n ShowConfig = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:319\n hooks = <table> {\n }\n RegisterThrottleType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1737\n RegisterFilterType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1769\n RegisterSecondaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:239\n SetConfigMode = <function> defined @Interface\\AddOns\\Parrot\\Code\\ScrollAreas.lua:103\n SetEnabledState = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = true\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:347\n RegisterEvent = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterCombatLog = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:332\n IterateModules = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n RawHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n ChangeProfile = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:283\n OnBlizzardEvent = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:393\n OnInitialize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:251\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n del = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:143\n GetModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n HasAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:126\n defaultModuleLibraries = <table> {\n }\n unpackSetAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:188\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n options = <table> {\n }\n GetName = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n name = \"Parrot\"\n RegisterPrimaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:158\n HookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:366\n orderedModules = <table> {\n }\n OnOptionsCreate = <function> defined @I",
-			["stack"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: in main chunk",
-			["session"] = 57,
-			["counter"] = 57,
-		}, -- [11]
-		{
-			["message"] = "...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:472: Usage: UnitBuff(\"unit\", [index] or [\"name\", \"rank\"][, \"filter\"])",
-			["time"] = "2018/01/21 20:36:35",
-			["locals"] = "(*temporary) = \"player\"\n(*temporary) = nil\n",
-			["stack"] = "[C]: in function `UnitBuff'\n...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:472: in function <...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:469>\n(tail call): ?",
-			["session"] = 57,
-			["counter"] = 16,
-		}, -- [12]
-		{
 			["message"] = "Interface\\FrameXML\\MainMenuBar.lua:185: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
 			["time"] = "2018/01/21 23:07:30",
 			["locals"] = "(*temporary) = 71\n(*temporary) = nil\n",
 			["stack"] = "[C]: in function `GetCostForPointAtRank'\nInterface\\FrameXML\\MainMenuBar.lua:185: in function `MainMenuBar_GetNumArtifactTraitsPurchasableFromXP'\n[string \"--[[ Error in ' AP Percent 2' ]]return func...\"]:3: in function <[string \"--[[ Error in ' AP Percent 2' ]]return func...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
 			["session"] = 57,
 			["counter"] = 16,
+		}, -- [11]
+		{
+			["message"] = "integer overflow attempting to store 5219352193",
+			["time"] = "2018/01/24 22:59:23",
+			["stack"] = "[C]: in function `GetItemInfoInstant'\nInterface\\AddOns\\TradeSkillMaster\\CoreAPI\\Items-Items.lua:717: in function <Interface\\AddOns\\TradeSkillMaster\\CoreAPI\\Items.lua:707>\n(tail call): ?\n...TradeSkillMaster\\GUI\\TSMWidgets\\TSMGroupItemList.lua:54: in function <...TradeSkillMaster\\GUI\\TSMWidgets\\TSMGroupItemList.lua:38>\n...TradeSkillMaster\\GUI\\TSMWidgets\\TSMGroupItemList.lua:299: in function `SetListCallback'\n...terface\\AddOns\\TradeSkillMaster\\GUI\\BuildOptions.lua:71: in function `AddGUIElement'\n...terface\\AddOns\\TradeSkillMaster\\GUI\\BuildOptions.lua:25: in function `BuildOptions'\n...terface\\AddOns\\TradeSkillMaster\\GUI\\BuildOptions.lua:50: in function `AddGUIElement'\n...terface\\AddOns\\TradeSkillMaster\\GUI\\BuildOptions.lua:25: in function `BuildOptions'\n...ace\\AddOns\\TradeSkillMaster\\Private\\GroupOptions.lua:469: in function `DrawGroupItemsPage'\n...ace\\AddOns\\TradeSkillMaster\\Private\\GroupOptions.lua:131: in function <...ace\\AddOns\\TradeSkillMaster\\Private\\GroupOptions.lua:123>\n(tail call): ?\n...\n...dOns\\TradeSkillMaster\\GUI\\TSMWidgets\\TSMTabGroup.lua:179: in function `SelectTab'\n...ace\\AddOns\\TradeSkillMaster\\Private\\GroupOptions.lua:142: in function `SelectTree'\n...ace\\AddOns\\TradeSkillMaster\\Private\\GroupOptions.lua:35: in function <...ace\\AddOns\\TradeSkillMaster\\Private\\GroupOptions.lua:35>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:9: in function <[string \"safecall Dispatcher[3]\"]:5>\n(tail call): ?\n...ace\\AddOns\\AskMrRobot\\Libs\\AceGUI-3.0\\AceGUI-3.0-34.lua:314: in function `Fire'\n...Ons\\TradeSkillMaster\\GUI\\TSMWidgets\\TSMTreeGroup.lua:534: in function `SetSelected'\n...Ons\\TradeSkillMaster\\GUI\\TSMWidgets\\TSMTreeGroup.lua:200: in function <...Ons\\TradeSkillMaster\\GUI\\TSMWidgets\\TSMTreeGroup.lua:196>",
+			["session"] = 59,
+			["counter"] = 2,
+		}, -- [12]
+		{
+			["message"] = "[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:5: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
+			["time"] = "2018/01/25 00:10:11",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:5: in function <[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
+			["session"] = 66,
+			["counter"] = 963,
 		}, -- [13]
+		{
+			["message"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: attempt to concatenate local 'icon' (a nil value)",
+			["time"] = "2018/01/21 19:03:35",
+			["locals"] = "Parrot = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n EnableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n IterateEmbeds = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n RegisterAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:77\n SecureHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n RawHookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n debug = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:40\n Printf = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n newDict = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:97\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n psize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:74\n DisableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n RegisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n unpackDictAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:206\n ShowConfig = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:319\n hooks = <table> {\n }\n RegisterThrottleType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1737\n RegisterFilterType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1769\n RegisterSecondaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:239\n SetConfigMode = <function> defined @Interface\\AddOns\\Parrot\\Code\\ScrollAreas.lua:103\n SetEnabledState = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = true\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:347\n RegisterEvent = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterCombatLog = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:332\n IterateModules = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n RawHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n ChangeProfile = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:283\n OnBlizzardEvent = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:393\n OnInitialize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:251\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n del = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:143\n GetModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n HasAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:126\n defaultModuleLibraries = <table> {\n }\n unpackSetAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:188\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n options = <table> {\n }\n GetName = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n name = \"Parrot\"\n RegisterPrimaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:158\n HookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:366\n orderedModules = <table> {\n }\n OnOptionsCreate = <function> defined @I",
+			["stack"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: in main chunk",
+			["session"] = 67,
+			["counter"] = 67,
+		}, -- [14]
+		{
+			["message"] = "[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
+			["time"] = "2018/01/27 18:16:46",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: in function <[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:5>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
+			["session"] = 67,
+			["counter"] = 101,
+		}, -- [15]
+		{
+			["message"] = "...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:472: Usage: UnitBuff(\"unit\", [index] or [\"name\", \"rank\"][, \"filter\"])",
+			["time"] = "2018/01/21 20:36:35",
+			["locals"] = "(*temporary) = \"player\"\n(*temporary) = nil\n",
+			["stack"] = "[C]: in function `UnitBuff'\n...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:472: in function <...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:469>\n(tail call): ?",
+			["session"] = 67,
+			["counter"] = 30,
+		}, -- [16]
 	},
 }

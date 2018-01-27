@@ -1,5 +1,98 @@
 Changes since tag 7.3.18
 
+commit d90d12f91694c006cf2fd9a312eb1735e4287d8a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 23:40:18 2018 +0100
+
+    Omega via svn r17210:
+    Actually fix this
+
+commit 90f75bbfa6f4e6d206a3ea0ceecd560837762c38
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 23:37:16 2018 +0100
+
+    Omega via svn r17209:
+    Kill special warning for cosmic beacon, leave yell though.
+
+commit 9d35ac5bd675fb48e03cda1bcdf42e3ae675e36d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 19:55:10 2018 +0100
+
+    Omega via svn r17208:
+    Don?\226?\128?\153t understand why they?\226?\128?\153d be needed, but add () anyways to try and get it to behave properly
+
+commit 09726da4d74a7cd96b52f997906ec3de195d4fe2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 19:33:21 2018 +0100
+
+    Omega via svn r17207:
+    Fix missing bool
+
+commit 04a501cf8bb2634dd6555667dfdbef17f92c7c0f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 08:57:22 2018 +0100
+
+    Omega via svn r17206:
+    Sound tweaks
+
+commit 16c429b1020cd160613489a918e9c3db0592acf4
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 06:26:04 2018 +0100
+
+    Omega via svn r17205:
+    more variable cleanup
+
+commit a45c5d4dacb75d05e0ed5028b7cc6fbe783dc54a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 06:18:39 2018 +0100
+
+    Omega via svn r17204:
+    Deleted depricated BossHealth frame.
+
+commit dba0f55250ddc9f81ed63d07f741ec3b0e119a2d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 03:42:04 2018 +0100
+
+    Omega via svn r17203:
+    delete depricated health frame functions that rely on CLEU. Info frame versions of these functions are more efficient and don?\226?\128?\153t rely on CLEU. CLEU is also getting significant overhaul in 8.0 and less places it needs fixing the better. Not to mention, DBM BossHealth frame itself is highly depricated too sine blizzard implemented their own boss frames.
+
+commit 94ba3592117cc2a7a1236988e5d3d81224ef4053
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 00:23:17 2018 +0100
+
+    Omega via svn r17202:
+    With a cancel
+
+commit 976d0de981218ec1b47e9deffff3e50e0155e53d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jan 27 00:22:13 2018 +0100
+
+    Omega via svn r17201:
+    Add soulblight count yell by request
+
+commit 555660b1afc7ebf2aa46881834939e83bb93e8e2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jan 25 21:04:13 2018 +0100
+
+    Omega via svn r17200:
+    es update
+
+commit 4e44bfd5abd87eaf9d52abd6c50979df0ce74ba9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jan 25 07:15:11 2018 +0100
+
+    Omega via svn r17199:
+    auto handling of lighting on coven for windows client.
+
+commit b42a60a413e89e7cb9fc421b50b13cb435f01cb8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jan 25 04:29:23 2018 +0100
+
+    Omega via svn r17198:
+    Throttle trash warning
+    change voice for waves on coven
+    change icon option to true by default for glare
+
 commit 487007487beeb59574f99b2f05c9dbcb8d198bea
 Author: subversion <svn@deadlybossmods.com>
 Date:   Thu Jan 25 00:08:37 2018 +0100

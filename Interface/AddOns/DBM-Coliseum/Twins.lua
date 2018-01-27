@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("ValkTwins", "DBM-Coliseum")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 254 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 255 $"):sub(12, -3))
 mod:SetCreatureID(34497, 34496)
 mod:SetEncounterID(1089)
 mod:SetModelID(29240)
@@ -15,11 +15,6 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED",
 	"SPELL_AURA_REMOVED",
 	"SPELL_INTERRUPT"
-)
-
-mod:SetBossHealthInfo(
-	34497, L.Fjola,
-	34496, L.Eydis
 )
 
 local warnSpecial					= mod:NewAnnounce("WarnSpecialSpellSoon", 3)

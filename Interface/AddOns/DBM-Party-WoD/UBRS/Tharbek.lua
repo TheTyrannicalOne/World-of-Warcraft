@@ -1,15 +1,13 @@
 local mod	= DBM:NewMod(1228, "DBM-Party-WoD", 8, 559)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 24 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 mod:SetCreatureID(79912, 80098)--80098 is mount(Ironbarb Skyreaver), 79912 is boss
 mod:SetEncounterID(1759)
 mod:SetZone()
 mod:SetBossHPInfoToHighest(false)
 
 mod:RegisterCombat("combat")
-
-mod:SetBossHealthInfo(80098)
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_SUCCESS 162090",
@@ -80,16 +78,5 @@ end
 function mod:UNIT_TARGETABLE_CHANGED()
 	if UnitExists("boss1") then
 		warnTharbek:Show()
-		if DBM.BossHealth:IsShown() then
-			DBM.BossHealth:AddBoss(79912)
-		end
-	end
-end
-
-function mod:UNIT_DIED(args)
-	if not DBM.BossHealth:IsShown() then return end
-	local cid = self:GetCIDFromGUID(args.destGUID)
-	if cid == 80098 then
-		DBM.BossHealth:RemoveBoss(80098)
 	end
 end

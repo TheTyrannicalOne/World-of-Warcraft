@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("HighmaulTrash", "DBM-Highmaul")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 23 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 --mod:SetModelID(47785)
 mod:SetZone()
 
@@ -25,7 +25,6 @@ local specWarnArcaneVol				= mod:NewSpecialWarningMoveAway(166200)
 local yellArcaneVol					= mod:NewYell(166200)
 local specWarnWildFlames			= mod:NewSpecialWarningMove(173827)
 
-mod:RemoveOption("HealthFrame")
 mod:AddRangeFrameOption(8, 166200)
 
 local debuff = DBM:GetSpellInfo(166200)

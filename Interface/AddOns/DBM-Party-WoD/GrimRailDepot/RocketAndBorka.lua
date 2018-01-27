@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1138, "DBM-Party-WoD", 3, 536)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 24 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 mod:SetCreatureID(77803, 77816)
 mod:SetEncounterID(1715)
 mod:SetZone()
@@ -14,8 +14,6 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED 163947",
 	"UNIT_DIED"
 )
-
-mod:SetBossHealthInfo(77803, 77816)
 
 local warnVX18B					= mod:NewCountAnnounce(162500, 2)--Cast twice, 3rd cast is X2101, then repeats
 local warnX2101AMissile			= mod:NewSpellAnnounce(162407, 4)

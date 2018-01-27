@@ -1,5 +1,0 @@
-
-FBODF_PlayerInfo = {
-	["Outfit"] = {
-	},
-}

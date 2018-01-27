@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1195, "DBM-Highmaul", nil, 477)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 23 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 mod:SetCreatureID(78948, 80557, 80551, 99999)--78948 Tectus, 80557 Mote of Tectus, 80551 Shard of Tectus
 mod:SetEncounterID(1722)--Hopefully win will work fine off this because otherwise tracking shard deaths is crappy
 mod:SetZone()
@@ -113,38 +113,6 @@ function mod:CustomHealthUpdate()
 			end
 		end
 	end
-	if DBM.BossHealth:IsShown() then
-		if DBM.BossHealth:HasBoss(78948) then
-			DBM.BossHealth:RemoveBoss(78948)
-		end
-		if tectusGUID then
-			if tectusH > 0 then
-				if not DBM.BossHealth:HasBoss(tectusGUID) then
-					DBM.BossHealth:AddBoss(tectusGUID, tectusN)
-				end
-			else
-				if DBM.BossHealth:HasBoss(tectusGUID) then
-					DBM.BossHealth:RemoveBoss(tectusGUID)
-				end
-			end
-		end
-		for guid, value in pairs(shardGUID) do
-			if shardT > 0 then
-				if not DBM.BossHealth:HasBoss(guid) then
-					DBM.BossHealth:AddBoss(guid, shardN)
-				end
-			else
-				if DBM.BossHealth:HasBoss(guid) then
-					DBM.BossHealth:RemoveBoss(guid)
-				end
-			end
-		end
-		for guid, health in pairs(moteH) do
-			if not DBM.BossHealth:HasBoss(guid) then
-				DBM.BossHealth:AddBoss(guid, moteN)
-			end
-		end
-	end
 	if self.vb.healthPhase == 1 then
 		return ("(%d%%, %s)"):format(tectusH > 0 and tectusH or ltectusH, tectusN)
 	elseif self.vb.healthPhase == 2 then
@@ -171,9 +139,6 @@ function mod:OnCombatStart(delay)
 		berserkTimer:Start(-delay)--Confirmed 10 min in both.
 	else
 		--Find LFR berserk for LFR
-	end
-	if DBM.BossHealth:IsShown() then
-		DBM.BossHealth:Clear()
 	end
 end
 

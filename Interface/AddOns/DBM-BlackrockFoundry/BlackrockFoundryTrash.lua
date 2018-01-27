@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("BlackrockFoundryTrash", "DBM-BlackrockFoundry")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 23 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 --mod:SetModelID(47785)
 mod:SetZone()
 mod.isTrashMod = true
@@ -30,8 +30,6 @@ local specWarnFinalFlame			= mod:NewSpecialWarningDodge(163194, "MeleeDps")
 local specWarnReapingWhirl			= mod:NewSpecialWarningDodge(171537, "MeleeDps")
 local specWarnBurning				= mod:NewSpecialWarningStack(175594, nil, 8, nil, nil, 1, 6)
 local specWarnBurningOther			= mod:NewSpecialWarningTaunt(175594, nil, nil, nil, nil, 2)
-
-mod:RemoveOption("HealthFrame")
 
 local volcanicBomb = DBM:GetSpellInfo(156413)
 local blastCount = 0--Non synced variable, because mods that don't use start/endcombat don't have timer recovery

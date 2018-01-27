@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1207, "DBM-Party-WoD", 5, 556)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 24 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 29 $"):sub(12, -3))
 mod:SetCreatureID(83894, 83892, 83893)--Dulhu 83894, Gola 83892, Telu
 mod:SetEncounterID(1757)
 mod:SetBossHPInfoToHighest()
@@ -17,8 +17,6 @@ mod:RegisterEventsInCombat(
 	"SPELL_ABSORBED 167977",
 	"UNIT_DIED"
 )
-
-mod:SetBossHealthInfo(83894, 83892, 83893)
 
 --Timers are too difficult to do, rapidTides messes up any chance of ever having decent timers.
 local warnGraspingVine				= mod:NewTargetAnnounce(168375, 2)
