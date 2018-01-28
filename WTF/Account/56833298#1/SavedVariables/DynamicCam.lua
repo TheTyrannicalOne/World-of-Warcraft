@@ -82,13 +82,13 @@ DynamicCamDB = {
 					["cameraActions"] = {
 						["zoomFitUseCurAsMin"] = true,
 						["zoomFitIncrements"] = 0.5,
-						["zoomValue"] = 5.5,
+						["zoomSetting"] = "fit",
 						["zoomMax"] = 6.5,
 						["zoomMin"] = 3.5,
 						["transitionTime"] = 1.5,
-						["zoomSetting"] = "fit",
-						["zoomFitContinous"] = true,
 						["zoomFitToggleNameplate"] = true,
+						["zoomFitContinous"] = true,
+						["zoomValue"] = 5.5,
 					},
 					["cameraCVars"] = {
 						["test_cameraDynamicPitchBaseFovPad"] = 0.5,
@@ -120,6 +120,12 @@ DynamicCamDB = {
 						["zoomFitToggleNameplate"] = true,
 					},
 					["condition"] = "return (UnitChannelInfo(\"player\") == GetSpellInfo(7620))",
+					["name"] = "Fishing",
+					["extras"] = {
+						["nameplates"] = false,
+						["enemyNameplates"] = true,
+						["friendlyNameplates"] = true,
+					},
 					["events"] = {
 						"UNIT_SPELLCAST_START", -- [1]
 						"UNIT_SPELLCAST_STOP", -- [2]
@@ -129,37 +135,37 @@ DynamicCamDB = {
 						"UNIT_SPELLCAST_CHANNEL_UPDATE", -- [6]
 						"UNIT_SPELLCAST_INTERRUPTED", -- [7]
 					},
-					["extras"] = {
-						["nameplates"] = false,
-						["enemyNameplates"] = true,
-						["friendlyNameplates"] = true,
-					},
+					["priority"] = 20,
+					["delay"] = 2,
 					["cameraCVars"] = {
 						["test_cameraDynamicPitch"] = 1,
 					},
-					["priority"] = 20,
-					["delay"] = 2,
-					["name"] = "Fishing",
 				},
-				["031"] = {
-					["enabled"] = false,
-					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and IsOutdoors();",
-					["events"] = {
-						"ZONE_CHANGED_INDOORS", -- [1]
-						"ZONE_CHANGED", -- [2]
-						"ZONE_CHANGED_NEW_AREA", -- [3]
-						"SPELL_UPDATE_USABLE", -- [4]
-					},
-					["name"] = "Raid (Outdoors)",
-					["priority"] = 13,
-					["extras"] = {
-						["nameplates"] = false,
-						["enemyNameplates"] = true,
-						["friendlyNameplates"] = true,
-					},
+				["101"] = {
 					["cameraActions"] = {
 						["zoomMax"] = 20,
+						["zoomSetting"] = "set",
+						["rotateSpeed"] = 0.100000000000001,
 						["zoomFitToggleNameplate"] = true,
+						["rotate"] = true,
+						["zoomValue"] = 12,
+					},
+					["name"] = "Taxi",
+					["condition"] = "return UnitOnTaxi(\"player\");",
+					["events"] = {
+						"PLAYER_CONTROL_LOST", -- [1]
+						"PLAYER_CONTROL_GAINED", -- [2]
+					},
+					["priority"] = 1000,
+					["extras"] = {
+						["nameplates"] = false,
+						["friendlyNameplates"] = true,
+						["enemyNameplates"] = true,
+						["hideUI"] = true,
+					},
+					["cameraCVars"] = {
+						["test_cameraHeadMovementStrength"] = 2,
+						["test_cameraOverShoulder"] = 3.8,
 					},
 				},
 				["002"] = {
@@ -306,11 +312,11 @@ DynamicCamDB = {
 						["rotateSetting"] = "degrees",
 						["zoomMax"] = 20,
 						["rotateDegrees"] = 360,
-						["zoomFitToggleNameplate"] = true,
-						["transitionTime"] = 10,
-						["zoomValue"] = 4,
-						["rotate"] = true,
 						["zoomSetting"] = "in",
+						["transitionTime"] = 10,
+						["zoomFitToggleNameplate"] = true,
+						["rotate"] = true,
+						["zoomValue"] = 4,
 					},
 					["priority"] = 20,
 					["extras"] = {
@@ -361,19 +367,17 @@ DynamicCamDB = {
 						["zoomFitToggleNameplate"] = true,
 					},
 				},
-				["034"] = {
+				["031"] = {
 					["enabled"] = false,
-					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and UnitAffectingCombat(\"player\") and not IsEncounterInProgress();",
+					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and IsOutdoors();",
 					["events"] = {
-						"PLAYER_REGEN_DISABLED", -- [1]
-						"PLAYER_REGEN_ENABLED", -- [2]
+						"ZONE_CHANGED_INDOORS", -- [1]
+						"ZONE_CHANGED", -- [2]
 						"ZONE_CHANGED_NEW_AREA", -- [3]
-						"ENCOUNTER_START", -- [4]
-						"ENCOUNTER_STOP", -- [5]
-						"INSTANCE_ENCOUNTER_ENGAGE_UNIT", -- [6]
+						"SPELL_UPDATE_USABLE", -- [4]
 					},
-					["name"] = "Raid (Combat, Trash)",
-					["priority"] = 203,
+					["name"] = "Raid (Outdoors)",
+					["priority"] = 13,
 					["extras"] = {
 						["nameplates"] = false,
 						["enemyNameplates"] = true,
@@ -619,31 +623,27 @@ DynamicCamDB = {
 						["zoomFitToggleNameplate"] = true,
 					},
 				},
-				["101"] = {
-					["cameraActions"] = {
-						["zoomMax"] = 20,
-						["zoomSetting"] = "set",
-						["rotateSpeed"] = 0.100000000000001,
-						["zoomFitToggleNameplate"] = true,
-						["rotate"] = true,
-						["zoomValue"] = 12,
-					},
-					["name"] = "Taxi",
-					["condition"] = "return UnitOnTaxi(\"player\");",
+				["034"] = {
+					["enabled"] = false,
+					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and UnitAffectingCombat(\"player\") and not IsEncounterInProgress();",
 					["events"] = {
-						"PLAYER_CONTROL_LOST", -- [1]
-						"PLAYER_CONTROL_GAINED", -- [2]
+						"PLAYER_REGEN_DISABLED", -- [1]
+						"PLAYER_REGEN_ENABLED", -- [2]
+						"ZONE_CHANGED_NEW_AREA", -- [3]
+						"ENCOUNTER_START", -- [4]
+						"ENCOUNTER_STOP", -- [5]
+						"INSTANCE_ENCOUNTER_ENGAGE_UNIT", -- [6]
 					},
-					["priority"] = 1000,
+					["name"] = "Raid (Combat, Trash)",
+					["priority"] = 203,
 					["extras"] = {
 						["nameplates"] = false,
-						["friendlyNameplates"] = true,
 						["enemyNameplates"] = true,
-						["hideUI"] = true,
+						["friendlyNameplates"] = true,
 					},
-					["cameraCVars"] = {
-						["test_cameraHeadMovementStrength"] = 2,
-						["test_cameraOverShoulder"] = 3.8,
+					["cameraActions"] = {
+						["zoomMax"] = 20,
+						["zoomFitToggleNameplate"] = true,
 					},
 				},
 				["005"] = {
@@ -784,28 +784,26 @@ DynamicCamDB = {
 						["friendlyNameplates"] = true,
 					},
 				},
-				["034"] = {
+				["031"] = {
 					["enabled"] = false,
 					["events"] = {
-						"PLAYER_REGEN_DISABLED", -- [1]
-						"PLAYER_REGEN_ENABLED", -- [2]
+						"ZONE_CHANGED_INDOORS", -- [1]
+						"ZONE_CHANGED", -- [2]
 						"ZONE_CHANGED_NEW_AREA", -- [3]
-						"ENCOUNTER_START", -- [4]
-						"ENCOUNTER_STOP", -- [5]
-						"INSTANCE_ENCOUNTER_ENGAGE_UNIT", -- [6]
+						"SPELL_UPDATE_USABLE", -- [4]
 					},
 					["extras"] = {
 						["nameplates"] = false,
 						["enemyNameplates"] = true,
 						["friendlyNameplates"] = true,
 					},
-					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and UnitAffectingCombat(\"player\") and not IsEncounterInProgress();",
-					["priority"] = 203,
+					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and IsOutdoors();",
+					["priority"] = 13,
 					["cameraActions"] = {
 						["zoomMax"] = 20,
 						["zoomFitToggleNameplate"] = true,
 					},
-					["name"] = "Raid (Combat, Trash)",
+					["name"] = "Raid (Outdoors)",
 				},
 				["002"] = {
 					["events"] = {
@@ -994,37 +992,39 @@ DynamicCamDB = {
 					},
 					["name"] = "Battleground",
 				},
-				["101"] = {
-					["cameraCVars"] = {
-						["test_cameraHeadMovementStrength"] = 0,
-						["test_cameraOverShoulder"] = -1,
-					},
+				["034"] = {
+					["enabled"] = false,
 					["events"] = {
-						"PLAYER_CONTROL_LOST", -- [1]
-						"PLAYER_CONTROL_GAINED", -- [2]
+						"PLAYER_REGEN_DISABLED", -- [1]
+						"PLAYER_REGEN_ENABLED", -- [2]
+						"ZONE_CHANGED_NEW_AREA", -- [3]
+						"ENCOUNTER_START", -- [4]
+						"ENCOUNTER_STOP", -- [5]
+						"INSTANCE_ENCOUNTER_ENGAGE_UNIT", -- [6]
 					},
-					["condition"] = "return UnitOnTaxi(\"player\");",
-					["name"] = "Taxi",
-					["priority"] = 1000,
 					["extras"] = {
 						["nameplates"] = false,
-						["friendlyNameplates"] = true,
 						["enemyNameplates"] = true,
-						["hideUI"] = true,
+						["friendlyNameplates"] = true,
 					},
+					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and UnitAffectingCombat(\"player\") and not IsEncounterInProgress();",
+					["priority"] = 203,
 					["cameraActions"] = {
 						["zoomMax"] = 20,
 						["zoomFitToggleNameplate"] = true,
-						["zoomSetting"] = "set",
-						["zoomValue"] = 15,
 					},
+					["name"] = "Raid (Combat, Trash)",
 				},
 				["201"] = {
+					["cameraCVars"] = {
+						["test_cameraDynamicPitch"] = 0,
+						["test_cameraHeadMovementStrength"] = 0,
+						["test_cameraOverShoulder"] = 0,
+					},
+					["condition"] = "for k,v in pairs(this.buffs) do \n    if (UnitBuff(\"player\", GetSpellInfo(v))) then\n        return true;\n    end\nend\nreturn false;",
 					["events"] = {
 						"UNIT_AURA", -- [1]
 					},
-					["condition"] = "for k,v in pairs(this.buffs) do \n    if (UnitBuff(\"player\", GetSpellInfo(v))) then\n        return true;\n    end\nend\nreturn false;",
-					["name"] = "Annoying Spells",
 					["executeOnInit"] = "this.buffs = {46924, 51690, 188499, 210152};",
 					["extras"] = {
 						["nameplates"] = false,
@@ -1036,11 +1036,7 @@ DynamicCamDB = {
 						["zoomMax"] = 20,
 						["zoomFitToggleNameplate"] = true,
 					},
-					["cameraCVars"] = {
-						["test_cameraDynamicPitch"] = 0,
-						["test_cameraHeadMovementStrength"] = 0,
-						["test_cameraOverShoulder"] = 0,
-					},
+					["name"] = "Annoying Spells",
 				},
 				["061"] = {
 					["enabled"] = false,
@@ -1174,12 +1170,12 @@ DynamicCamDB = {
 					},
 					["cameraActions"] = {
 						["zoomFitIncrements"] = 0.5,
+						["zoomFitToggleNameplate"] = true,
 						["zoomValue"] = 4,
-						["zoomMax"] = 30,
 						["zoomFitPosition"] = 90,
 						["zoomMin"] = 3,
 						["zoomSetting"] = "fit",
-						["zoomFitToggleNameplate"] = true,
+						["zoomMax"] = 30,
 					},
 					["name"] = "NPC Interaction",
 					["priority"] = 20,
@@ -1226,26 +1222,30 @@ DynamicCamDB = {
 					},
 					["name"] = "Raid",
 				},
-				["031"] = {
-					["enabled"] = false,
-					["events"] = {
-						"ZONE_CHANGED_INDOORS", -- [1]
-						"ZONE_CHANGED", -- [2]
-						"ZONE_CHANGED_NEW_AREA", -- [3]
-						"SPELL_UPDATE_USABLE", -- [4]
+				["101"] = {
+					["cameraCVars"] = {
+						["test_cameraHeadMovementStrength"] = 0,
+						["test_cameraOverShoulder"] = -1,
 					},
+					["events"] = {
+						"PLAYER_CONTROL_LOST", -- [1]
+						"PLAYER_CONTROL_GAINED", -- [2]
+					},
+					["condition"] = "return UnitOnTaxi(\"player\");",
+					["name"] = "Taxi",
+					["priority"] = 1000,
 					["extras"] = {
 						["nameplates"] = false,
-						["enemyNameplates"] = true,
 						["friendlyNameplates"] = true,
+						["enemyNameplates"] = true,
+						["hideUI"] = true,
 					},
-					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and IsOutdoors();",
-					["priority"] = 13,
 					["cameraActions"] = {
 						["zoomMax"] = 20,
 						["zoomFitToggleNameplate"] = true,
+						["zoomSetting"] = "set",
+						["zoomValue"] = 15,
 					},
-					["name"] = "Raid (Outdoors)",
 				},
 				["005"] = {
 					["events"] = {
@@ -1286,9 +1286,9 @@ DynamicCamDB = {
 				["test_cameraDynamicPitchSmartPivotCutoffDist"] = 0,
 			},
 			["reactiveZoom"] = {
+				["addIncrements"] = 5,
 				["addIncrementsAlways"] = 0,
 				["maxZoomTime"] = 2,
-				["addIncrements"] = 5,
 			},
 			["defaultVersion"] = 1,
 			["situations"] = {
@@ -1400,21 +1400,23 @@ DynamicCamDB = {
 					["condition"] = "return (UnitChannelInfo(\"player\") == GetSpellInfo(7620))",
 					["delay"] = 2,
 				},
-				["031"] = {
+				["034"] = {
 					["enabled"] = false,
 					["events"] = {
-						"ZONE_CHANGED_INDOORS", -- [1]
-						"ZONE_CHANGED", -- [2]
+						"PLAYER_REGEN_DISABLED", -- [1]
+						"PLAYER_REGEN_ENABLED", -- [2]
 						"ZONE_CHANGED_NEW_AREA", -- [3]
-						"SPELL_UPDATE_USABLE", -- [4]
+						"ENCOUNTER_START", -- [4]
+						"ENCOUNTER_STOP", -- [5]
+						"INSTANCE_ENCOUNTER_ENGAGE_UNIT", -- [6]
 					},
-					["name"] = "Raid (Outdoors)",
+					["name"] = "Raid (Combat, Trash)",
 					["cameraActions"] = {
 						["zoomMax"] = 20,
 						["zoomFitToggleNameplate"] = true,
 					},
-					["priority"] = 13,
-					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and IsOutdoors();",
+					["priority"] = 203,
+					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and UnitAffectingCombat(\"player\") and not IsEncounterInProgress();",
 					["extras"] = {
 						["nameplates"] = false,
 						["enemyNameplates"] = true,
@@ -1558,12 +1560,12 @@ DynamicCamDB = {
 						["zoomMax"] = 20,
 						["rotateDegrees"] = 360,
 						["timeIsMax"] = false,
+						["zoomSetting"] = "in",
 						["zoomValue"] = 4,
-						["zoomFitToggleNameplate"] = true,
 						["transitionTime"] = 10,
 						["rotate"] = true,
 						["rotateSetting"] = "degrees",
-						["zoomSetting"] = "in",
+						["zoomFitToggleNameplate"] = true,
 					},
 					["priority"] = 20,
 					["extras"] = {
@@ -1628,29 +1630,23 @@ DynamicCamDB = {
 						["friendlyNameplates"] = true,
 					},
 				},
-				["101"] = {
-					["name"] = "Taxi",
+				["031"] = {
+					["enabled"] = false,
 					["events"] = {
-						"PLAYER_CONTROL_LOST", -- [1]
-						"PLAYER_CONTROL_GAINED", -- [2]
+						"ZONE_CHANGED_INDOORS", -- [1]
+						"ZONE_CHANGED", -- [2]
+						"ZONE_CHANGED_NEW_AREA", -- [3]
+						"SPELL_UPDATE_USABLE", -- [4]
 					},
+					["name"] = "Raid (Outdoors)",
 					["cameraActions"] = {
-						["rotateSpeed"] = 0.100000000000001,
 						["zoomMax"] = 20,
-						["zoomValue"] = 12,
-						["rotate"] = true,
 						["zoomFitToggleNameplate"] = true,
-						["zoomSetting"] = "set",
 					},
-					["cameraCVars"] = {
-						["test_cameraHeadMovementStrength"] = 2,
-						["test_cameraOverShoulder"] = 3.8,
-					},
-					["priority"] = 1000,
-					["condition"] = "return UnitOnTaxi(\"player\");",
+					["priority"] = 13,
+					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and IsOutdoors();",
 					["extras"] = {
 						["nameplates"] = false,
-						["hideUI"] = true,
 						["enemyNameplates"] = true,
 						["friendlyNameplates"] = true,
 					},
@@ -1824,12 +1820,12 @@ DynamicCamDB = {
 						["rotateBack"] = true,
 						["transitionTime"] = 0.5,
 						["zoomFitIncrements"] = 0.5,
+						["zoomValue"] = 3.5,
 						["zoomSetting"] = "range",
-						["zoomFitToggleNameplate"] = true,
 						["zoomFitPosition"] = 90,
 						["rotate"] = true,
 						["rotateSetting"] = "degrees",
-						["zoomValue"] = 3.5,
+						["zoomFitToggleNameplate"] = true,
 					},
 					["priority"] = 20,
 					["delay"] = 0.5,
@@ -1888,25 +1884,29 @@ DynamicCamDB = {
 						["friendlyNameplates"] = true,
 					},
 				},
-				["034"] = {
-					["enabled"] = false,
+				["101"] = {
+					["name"] = "Taxi",
 					["events"] = {
-						"PLAYER_REGEN_DISABLED", -- [1]
-						"PLAYER_REGEN_ENABLED", -- [2]
-						"ZONE_CHANGED_NEW_AREA", -- [3]
-						"ENCOUNTER_START", -- [4]
-						"ENCOUNTER_STOP", -- [5]
-						"INSTANCE_ENCOUNTER_ENGAGE_UNIT", -- [6]
+						"PLAYER_CONTROL_LOST", -- [1]
+						"PLAYER_CONTROL_GAINED", -- [2]
 					},
-					["name"] = "Raid (Combat, Trash)",
 					["cameraActions"] = {
+						["rotateSpeed"] = 0.100000000000001,
 						["zoomMax"] = 20,
+						["zoomValue"] = 12,
+						["rotate"] = true,
 						["zoomFitToggleNameplate"] = true,
+						["zoomSetting"] = "set",
 					},
-					["priority"] = 203,
-					["condition"] = "local isInstance, instanceType = IsInInstance(); return (isInstance and instanceType == \"raid\") and UnitAffectingCombat(\"player\") and not IsEncounterInProgress();",
+					["cameraCVars"] = {
+						["test_cameraHeadMovementStrength"] = 2,
+						["test_cameraOverShoulder"] = 3.8,
+					},
+					["priority"] = 1000,
+					["condition"] = "return UnitOnTaxi(\"player\");",
 					["extras"] = {
 						["nameplates"] = false,
+						["hideUI"] = true,
 						["enemyNameplates"] = true,
 						["friendlyNameplates"] = true,
 					},

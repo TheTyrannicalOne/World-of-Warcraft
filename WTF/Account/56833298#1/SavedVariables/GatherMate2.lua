@@ -28,6 +28,9 @@ GatherMate2FishDB = {
 GatherMate2GasDB = {
 }
 GatherMate2TreasureDB = {
+	[4] = {
+		[4304389400] = 535,
+	},
 }
 GatherMate2ArchaeologyDB = {
 }
