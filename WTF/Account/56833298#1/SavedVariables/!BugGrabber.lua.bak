@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 68,
+	["session"] = 76,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -102,28 +102,60 @@ BugGrabberDB = {
 			["counter"] = 963,
 		}, -- [13]
 		{
+			["message"] = "Interface\\AddOns\\DBM-AQ40\\ThreeBugs.lua:14: attempt to call method 'SetBossHealthInfo' (a nil value)",
+			["time"] = "2018/01/27 18:42:33",
+			["locals"] = "mod = <table> {\n timers = <table> {\n }\n categorySort = <table> {\n }\n modelId = 15657\n SyncThreshold = 8\n modId = \"DBM-AQ40\"\n combatInfo = <table> {\n }\n specwarns = <table> {\n }\n zones = <table> {\n }\n revision = 596\n Options = <table> {\n }\n DefaultOptions = <table> {\n }\n id = \"ThreeBugs\"\n multiMobPullDetection = <table> {\n }\n creatureId = 15544\n countdowns = <table> {\n }\n addon = <table> {\n }\n encounterId = 710\n iconRestore = <table> {\n }\n optionCategories = <table> {\n }\n localization = <table> {\n }\n announces = <table> {\n }\n vb = <table> {\n }\n subTab = 1\n}\nL = <table> {\n Kri = \"Lord Kri\"\n Vem = \"Vem\"\n name = \"Bug Trio\"\n Yauj = \"Princess Yauj\"\n}\n(*temporary) = nil\n(*temporary) = <table> {\n timers = <table> {\n }\n categorySort = <table> {\n }\n modelId = 15657\n SyncThreshold = 8\n modId = \"DBM-AQ40\"\n combatInfo = <table> {\n }\n specwarns = <table> {\n }\n zones = <table> {\n }\n revision = 596\n Options = <table> {\n }\n DefaultOptions = <table> {\n }\n id = \"ThreeBugs\"\n multiMobPullDetection = <table> {\n }\n creatureId = 15544\n countdowns = <table> {\n }\n addon = <table> {\n }\n encounterId = 710\n iconRestore = <table> {\n }\n optionCategories = <table> {\n }\n localization = <table> {\n }\n announces = <table> {\n }\n vb = <table> {\n }\n subTab = 1\n}\n(*temporary) = 15543\n(*temporary) = \"Princess Yauj\"\n(*temporary) = 15544\n(*temporary) = \"Vem\"\n(*temporary) = 15511\n(*temporary) = \"Lord Kri\"\n(*temporary) = \"attempt to call method 'SetBossHealthInfo' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\DBM-AQ40\\ThreeBugs.lua:14: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3650: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3608: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3570: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3541>\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3589: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:623: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:610>",
+			["session"] = 69,
+			["counter"] = 1,
+		}, -- [14]
+		{
+			["message"] = "Interface\\AddOns\\DBM-AQ40\\TwinEmps.lua:9: attempt to call method 'SetBossHealthInfo' (a nil value)",
+			["time"] = "2018/01/27 18:42:33",
+			["locals"] = "mod = <table> {\n timers = <table> {\n }\n categorySort = <table> {\n }\n modelId = 15778\n SyncThreshold = 8\n modId = \"DBM-AQ40\"\n combatInfo = <table> {\n }\n specwarns = <table> {\n }\n zones = <table> {\n }\n revision = 596\n Options = <table> {\n }\n DefaultOptions = <table> {\n }\n id = \"TwinEmpsAQ\"\n multiMobPullDetection = <table> {\n }\n creatureId = 15276\n countdowns = <table> {\n }\n addon = <table> {\n }\n encounterId = 715\n iconRestore = <table> {\n }\n optionCategories = <table> {\n }\n localization = <table> {\n }\n announces = <table> {\n }\n vb = <table> {\n }\n subTab = 1\n}\nL = <table> {\n Veknil = \"Emperor Vek'nilash\"\n name = \"Twin Emperors\"\n Veklor = \"Emperor Vek'lor\"\n}\n(*temporary) = nil\n(*temporary) = <table> {\n timers = <table> {\n }\n categorySort = <table> {\n }\n modelId = 15778\n SyncThreshold = 8\n modId = \"DBM-AQ40\"\n combatInfo = <table> {\n }\n specwarns = <table> {\n }\n zones = <table> {\n }\n revision = 596\n Options = <table> {\n }\n DefaultOptions = <table> {\n }\n id = \"TwinEmpsAQ\"\n multiMobPullDetection = <table> {\n }\n creatureId = 15276\n countdowns = <table> {\n }\n addon = <table> {\n }\n encounterId = 715\n iconRestore = <table> {\n }\n optionCategories = <table> {\n }\n localization = <table> {\n }\n announces = <table> {\n }\n vb = <table> {\n }\n subTab = 1\n}\n(*temporary) = 15276\n(*temporary) = \"Emperor Vek'lor\"\n(*temporary) = 15275\n(*temporary) = \"Emperor Vek'nilash\"\n(*temporary) = \"attempt to call method 'SetBossHealthInfo' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\DBM-AQ40\\TwinEmps.lua:9: in main chunk\n[C]: ?\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3650: in function `LoadMod'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3608: in function `LoadModsOnDemand'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3570: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:3541>\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:3589: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:623: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:610>",
+			["session"] = 69,
+			["counter"] = 1,
+		}, -- [15]
+		{
+			["message"] = "Interface\\AddOns\\DBM-AQ40\\CThun.lua:48: attempt to index field 'BossHealth' (a nil value)",
+			["time"] = "2018/01/27 19:04:31",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\DBM-AQ40\\CThun.lua:48: in function `OnCombatStart'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:5506: in function `StartCombat'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:5127: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:623: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:610>",
+			["session"] = 69,
+			["counter"] = 1,
+		}, -- [16]
+		{
+			["message"] = "Interface\\AddOns\\DBM-AQ40\\CThun.lua:89: attempt to index field 'BossHealth' (a nil value)",
+			["time"] = "2018/01/27 19:04:32",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\DBM-AQ40\\CThun.lua:89: in function `handler'\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:623: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:610>\n(tail call): ?\nInterface\\AddOns\\DBM-Core\\DBM-Core-7.3.18-18-gd90d12f91.lua:623: in function <Interface\\AddOns\\DBM-Core\\DBM-Core.lua:610>",
+			["session"] = 69,
+			["counter"] = 1,
+		}, -- [17]
+		{
 			["message"] = "[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
 			["time"] = "2018/01/27 18:16:46",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
 			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: in function <[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:5>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
-			["session"] = 67,
-			["counter"] = 101,
-		}, -- [14]
+			["session"] = 70,
+			["counter"] = 249,
+		}, -- [18]
 		{
 			["message"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: attempt to concatenate local 'icon' (a nil value)",
 			["time"] = "2018/01/21 19:03:35",
 			["locals"] = "Parrot = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n EnableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n IterateEmbeds = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n RegisterAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:77\n SecureHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n RawHookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n debug = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:40\n Printf = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n newDict = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:97\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n psize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:74\n DisableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n RegisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n unpackDictAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:206\n ShowConfig = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:319\n hooks = <table> {\n }\n RegisterThrottleType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1737\n RegisterFilterType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1769\n RegisterSecondaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:239\n SetConfigMode = <function> defined @Interface\\AddOns\\Parrot\\Code\\ScrollAreas.lua:103\n SetEnabledState = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = true\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:347\n RegisterEvent = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterCombatLog = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:332\n IterateModules = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n RawHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n ChangeProfile = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:283\n OnBlizzardEvent = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:393\n OnInitialize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:251\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n del = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:143\n GetModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n HasAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:126\n defaultModuleLibraries = <table> {\n }\n unpackSetAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:188\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n options = <table> {\n }\n GetName = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n name = \"Parrot\"\n RegisterPrimaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:158\n HookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:366\n orderedModules = <table> {\n }\n OnOptionsCreate = <function> defined @I",
 			["stack"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: in main chunk",
-			["session"] = 68,
-			["counter"] = 68,
-		}, -- [15]
+			["session"] = 76,
+			["counter"] = 76,
+		}, -- [19]
 		{
 			["message"] = "...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:472: Usage: UnitBuff(\"unit\", [index] or [\"name\", \"rank\"][, \"filter\"])",
 			["time"] = "2018/01/21 20:36:35",
 			["locals"] = "(*temporary) = \"player\"\n(*temporary) = nil\n",
 			["stack"] = "[C]: in function `UnitBuff'\n...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:472: in function <...erface\\AddOns\\HandyNotes_FieldPhotographer\\Addon.lua:469>\n(tail call): ?",
-			["session"] = 68,
-			["counter"] = 31,
-		}, -- [16]
+			["session"] = 76,
+			["counter"] = 67,
+		}, -- [20]
 	},
 }

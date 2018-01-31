@@ -460,9 +460,9 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1569.28833007813,
+						["CoordX"] = 1587.70922851563,
 						["ItemQuality"] = true,
-						["CoordY"] = 779.776672363281,
+						["CoordY"] = 772.869201660156,
 					},
 					["Reagents"] = {
 						["CoordY"] = 870.341247558594,
@@ -472,7 +472,7 @@ LUIDB = {
 						["FontSize"] = 12,
 						["CoordX"] = 1128.98742675781,
 						["ItemQuality"] = true,
-						["CoordY"] = 665.419799804688,
+						["CoordY"] = 665.419921875,
 						["Font"] = "AvantGarde_LT_Medium",
 					},
 				},
@@ -1478,10 +1478,11 @@ LUIDB = {
 						["Height"] = 218,
 					},
 					["Raid"] = {
+						["IsShown"] = true,
 						["Width"] = 612,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
 						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2609,7 +2610,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 17873549779,
+							["Shanyt"] = 18199824973,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2642,9 +2643,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
-							["Serbitechna"] = 7681888,
 							["Brewnheimer"] = 836,
 							["Dialdaas"] = 11338409,
+							["Serbitechna"] = 7681888,
 						},
 					},
 				},
@@ -2681,38 +2682,38 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/TRAIN", -- [1]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [1]
 							"/p im for sure doing something wrong", -- [2]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [3]
-							"/TRAIN", -- [4]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [5]
-							"/s thanks", -- [6]
-							"/TRAIN", -- [7]
-							"/p im for sure doing something wrong", -- [8]
+							"/TRAIN", -- [3]
+							"/reload", -- [4]
+							"/p im for sure doing something wrong", -- [5]
+							"/reload", -- [6]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [7]
+							"/reload", -- [8]
 							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [9]
-							"/TRAIN", -- [10]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [11]
-							"/p im for sure doing something wrong", -- [12]
-							"/wa", -- [13]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [14]
-							"/wa", -- [15]
-							"/TRAIN", -- [16]
-							"/p im for sure doing something wrong", -- [17]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [18]
-							"/TRAIN", -- [19]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [20]
-							"/s thanks", -- [21]
+							"/p im for sure doing something wrong", -- [10]
+							"/reload", -- [11]
+							"/TRAIN", -- [12]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [13]
+							"/reload", -- [14]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [15]
+							"/p im for sure doing something wrong", -- [16]
+							"/TRAIN", -- [17]
+							"/reload", -- [18]
+							"/p im for sure doing something wrong", -- [19]
+							"/reload", -- [20]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [21]
 							"/p im for sure doing something wrong", -- [22]
 							"/TRAIN", -- [23]
-							"/p im for sure doing something wrong", -- [24]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [25]
-							"/TRAIN", -- [26]
+							"/reload", -- [24]
+							"/p im for sure doing something wrong", -- [25]
+							"/reload", -- [26]
 							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [27]
-							"/s thanks", -- [28]
-							"/TRAIN", -- [29]
+							"/TRAIN", -- [28]
+							"/p im for sure doing something wrong", -- [29]
 							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [30]
-							"/s thanks", -- [31]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [32]
+							"/p im for sure doing something wrong", -- [31]
+							"/reload", -- [32]
 						},
 					},
 				},

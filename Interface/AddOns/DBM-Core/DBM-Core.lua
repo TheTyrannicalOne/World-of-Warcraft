@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17210 $"):sub(12, -3)),
-	DisplayVersion = "7.3.19 alpha", -- the string that is shown as version
-	ReleaseRevision = 17191 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 17236 $"):sub(12, -3)),
+	DisplayVersion = "7.3.21 alpha", -- the string that is shown as version
+	ReleaseRevision = 17234 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -204,26 +204,6 @@ DBM.DefaultOptions = {
 	SpecialWarningFlashRepeat5 = true,
 	SpecialWarningFlashRepeatAmount = 2,--Repeat 2 times, mean 3 flashes (first plus 2 repeat)
 	SWarnClassColor = true,
-	HUDColorOverride = false,
-	HUDSizeOverride = false,
-	HUDAlphaOverride = false,
-	HUDTextureOverride = false,
-	HUDSize1 = 5,
-	HUDSize2 = 5,
-	HUDSize3 = 5,
-	HUDSize4 = 5,
-	HUDAlpha1 = 0.5,
-	HUDAlpha2 = 0.5,
-	HUDAlpha3 = 0.5,
-	HUDAlpha4 = 0.5,
-	HUDColor1 = {1.0, 1.0, 0.0},--Yellow
-	HUDColor2 = {1.0, 0.0, 0.0},--Red
-	HUDColor3 = {1.0, 0.5, 0.0},--Orange
-	HUDColor4 = {0.0, 1.0, 0.0},--Green
-	HUDTexture1 = "highlight",
-	HUDTexture2 = "highlight",
-	HUDTexture3 = "highlight",
-	HUDTexture4 = "highlight",
 	ArrowPosX = 0,
 	ArrowPosY = -150,
 	ArrowPoint = "TOP",
@@ -378,7 +358,7 @@ local UpdateChestTimer
 local breakTimerStart
 local AddMsg
 
-local fakeBWVersion, fakeBWHash = 86, "2adc318"
+local fakeBWVersion, fakeBWHash = 87, "299b522"
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
@@ -386,8 +366,8 @@ local enableIcons = true -- set to false when a raid leader or a promoted player
 local bannedMods = { -- a list of "banned" (meaning they are replaced by another mod like DBM-Battlegrounds (replaced by DBM-PvP)) boss mods, these mods will not be loaded by DBM (and they wont show up in the GUI)
 	"DBM-Battlegrounds", --replaced by DBM-PvP
 	-- ZG and ZA are now part of the party mods for Cataclysm
-	"DBM-ZulAman",
-	"DBM-ZG",
+	"DBM-ZulAman",--Remove restriction in 8.0 classic wow
+	"DBM-ZG",--Remove restriction in 8.0 classic wow
 	"DBM-SiegeOfOrgrimmar",--Block legacy version. New version is "DBM-SiegeOfOrgrimmarV2"
 	"DBM-HighMail",
 	"DBM-ProvingGrounds-MoP",--Renamed to DBM-ProvingGrounds in 6.0 version since blizzard updated content for WoD
@@ -1747,7 +1727,11 @@ do
 			end
 		end
 		if not success then
-			DBM:AddMsg(DBM_ARROW_WAY_USAGE)
+			if DBM.Arrow:IsShown() then
+				DBM.Arrow:Hide()--Hide
+			else--error
+				DBM:AddMsg(DBM_ARROW_WAY_USAGE)
+			end
 		else
 			DBM:AddMsg(DBM_ARROW_WAY_SUCCESS)
 		end
@@ -5443,6 +5427,12 @@ do
 					self.Options.sfxDisabled = true
 					SetCVar("Sound_EnableSFX", 0)
 				end
+				--boss health info scheduler
+				if not mod.CustomHealthUpdate then
+					self:Schedule(1, checkBossHealth, self)
+				else
+					self:Schedule(1, checkCustomBossHealth, self, mod)
+				end
 			end
 			--process global options
 			self:HideBlizzardEvents(1)
@@ -7881,13 +7871,14 @@ function DBM:GetBossHP(cId)
 		return hp, "focus", UnitName("focus")
 	else
 		for i = 1, 5 do
-			local guid = UnitGUID("boss"..i)
-			if self:GetCIDFromGUID(guid) == cId and UnitHealthMax("boss"..i) ~= 0 then
-				if bossHealth[cId] and (UnitHealth("boss"..i) == 0 and not UnitIsDead("boss"..i)) then return bossHealth[cId], "boss"..i, UnitName("boss"..i) end--Return last non 0 value if value is 0, since it's last valid value we had.
-				local hp = UnitHealth("boss"..i) / UnitHealthMax("boss"..i) * 100
+			local unitID = "boss"..i
+			local guid = UnitGUID(unitID)
+			if self:GetCIDFromGUID(guid) == cId and UnitHealthMax(unitID) ~= 0 then
+				if bossHealth[cId] and (UnitHealth(unitID) == 0 and not UnitIsDead(unitID)) then return bossHealth[cId], unitID, UnitName(unitID) end--Return last non 0 value if value is 0, since it's last valid value we had.
+				local hp = UnitHealth(unitID) / UnitHealthMax(unitID) * 100
 				bossHealth[cId] = hp
-				bossHealthuIdCache[cId] = "boss"..i
-				return hp, "boss"..i, UnitName("boss"..i)
+				bossHealthuIdCache[cId] = unitID
+				return hp, unitID, UnitName(unitID)
 			end
 		end
 		local idType = (IsInRaid() and "raid") or "party"
@@ -7920,13 +7911,14 @@ function DBM:GetBossHPByGUID(guid)
 		return hp, "focus", UnitName("focus")
 	else
 		for i = 1, 5 do
-			local guid2 = UnitGUID("boss"..i)
-			if guid == guid2 and UnitHealthMax("boss"..i) ~= 0 then
-				if bossHealth[guid] and (UnitHealth("boss"..i) == 0 and not UnitIsDead("boss"..i)) then return bossHealth[guid], "boss"..i, UnitName("boss"..i) end--Return last non 0 value if value is 0, since it's last valid value we had.
-				local hp = UnitHealth("boss"..i) / UnitHealthMax("boss"..i) * 100
+			local unitID = "boss"..i
+			local guid2 = UnitGUID(unitID)
+			if guid == guid2 and UnitHealthMax(unitID) ~= 0 then
+				if bossHealth[guid] and (UnitHealth(unitID) == 0 and not UnitIsDead(unitID)) then return bossHealth[guid], unitID, UnitName(unitID) end--Return last non 0 value if value is 0, since it's last valid value we had.
+				local hp = UnitHealth(unitID) / UnitHealthMax(unitID) * 100
 				bossHealth[guid] = hp
-				bossHealthuIdCache[guid] = "boss"..i
-				return hp, "boss"..i, UnitName("boss"..i)
+				bossHealthuIdCache[guid] = unitID
+				return hp, unitID, UnitName(unitID)
 			end
 		end
 		local idType = (IsInRaid() and "raid") or "party"
@@ -9655,18 +9647,6 @@ do
 			local repeatCount = self.Options["SpecialWarningFlashRepeat"..number] and self.Options.SpecialWarningFlashRepeatAmount or 0
 			self.Flash:Show(flashColor[1], flashColor[2], flashColor[3], self.Options["SpecialWarningFlashDura"..number], self.Options["SpecialWarningFlashAlph"..number], repeatCount)
 		end
-	end
-	
-	function DBM:ShowTestHUD()
-		if self:HasMapRestrictions() then
-			self:AddMsg(DBM_CORE_NO_HUD)
-			return
-		end
-		local x, y = UnitPosition("player")
-		DBMHudMap:RegisterPositionMarker(10000, "Test1", "highlight", x, y-20, 5, 10, 1, 1, 0, 0.5, nil, 1):Pulse(0.5, 0.5)
-		DBMHudMap:RegisterPositionMarker(20000, "Test2", "highlight", x-20, y, 5, 10, 1, 0, 0, 0.5, nil, 2):Pulse(0.5, 0.5)
-		DBMHudMap:RegisterPositionMarker(30000, "Test3", "highlight", x+20, y, 5, 10, 1, 0.5, 0, 0.5, nil, 3):Pulse(0.5, 0.5)
-		DBMHudMap:RegisterPositionMarker(40000, "Test4", "highlight", x, y+20, 5, 10, 0, 1, 0, 0.5, nil, 4):Pulse(0.5, 0.5)
 	end
 end
 

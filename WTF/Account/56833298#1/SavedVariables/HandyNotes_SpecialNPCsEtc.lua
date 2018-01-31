@@ -10,11 +10,16 @@ HandyNotes_SpecialNPCsEtcDB = {
 	["faction"] = {
 		["Horde"] = {
 			["nodes"] = {
+				["ShattrathCity"] = {
+					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
+				},
 				["garrisonffhorde_tier3"] = {
 					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
+					[48143253] = "Banker:Yorn Longhoof:Banker:497762",
 				},
 				["Orgrimmar"] = {
 					[67745315] = "Banker:Binzella:Banker:288281",
+					[67305312] = "Banker:Vink:Banker:288288",
 				},
 			},
 			["dbversion"] = 2,

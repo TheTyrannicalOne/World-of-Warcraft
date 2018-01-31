@@ -7575,6 +7575,20 @@ VExRT = {
 				"^715^9^1517097586^14^1^40^283.50^", -- [8]
 				"^716^9^1517097751^1^1^40^283.50^", -- [9]
 				"^717^9^1517097871^17^1^40^283.50^", -- [10]
+				"^649^4^1517178146^3^1^25^908.81^", -- [11]
+				"^650^4^1517178200^1^1^25^908.81^", -- [12]
+				"^651^4^1517179487^7^1^25^908.81^", -- [13]
+				"^1292^4^1517183900^5^1^25^908.81^", -- [14]
+				"^1294^4^1517184025^6^1^25^908.81^", -- [15]
+				"^1295^4^1517184133^9^1^25^908.81^", -- [16]
+				"^1296^4^1517184355^6^1^25^908.81^", -- [17]
+				"^1297^4^1517184675^3^1^25^908.81^", -- [18]
+				"^1298^4^1517184776^166^1^25^908.81^", -- [19]
+				"^1291^4^1517184974^295^1^25^908.81^", -- [20]
+				"^1299^4^1517185325^47^1^25^908.81^", -- [21]
+				"^601^14^1517185918^2^1^10^908.81^", -- [22]
+				"^602^14^1517186047^1^1^10^908.81^", -- [23]
+				"^605^14^1517186294^1^1^10^908.81^", -- [24]
 			},
 			["Cowtastraphy"] = {
 			},
@@ -15665,36 +15679,38 @@ VExRT = {
 			["Towelliee"] = 66,
 			["Pereadin"] = 65,
 			["Eeillewot"] = 581,
-			["Eymath-Bronzebeard"] = 71,
 			["Khrôn-Ragnaros"] = 267,
+			["Xnoss-Mal'Ganis"] = 262,
+			["Eymath-Bronzebeard"] = 71,
+			["Jinxedpriest-Proudmoore"] = 256,
 			["Thelsia-Turalyon"] = 63,
 			["Ragnarökk-Gallywix"] = 251,
 			["Vånhelsing-Windrunner"] = 254,
-			["Ohshi-Kargath"] = 262,
-			["Xnoss-Mal'Ganis"] = 262,
-			["Jinxedpriest-Proudmoore"] = 256,
+			["Thacheron-TheScryers"] = 70,
+			["Beatbachs-Eonar"] = 70,
+			["Netharell-Goldrinn"] = 577,
 			["Faetalknight-Kel'Thuzad"] = 70,
 			["Vikktorr-BleedingHollow"] = 266,
-			["Beatbachs-Eonar"] = 70,
-			["Dominar-Baelgun"] = 64,
-			["Cramer-Magtheridon"] = 577,
 			["Pattycake-Malfurion"] = 63,
-			["Shanyt"] = 71,
+			["Dominar-Baelgun"] = 64,
 			["Wälterwhite-Nemesis"] = 256,
+			["Orkz-Azralon"] = 253,
+			["Shanyt"] = 71,
+			["Datgorg"] = 254,
 			["Mersum-Aman'Thul"] = 105,
 			["Geniie"] = 102,
-			["Cleth-AlteracMountains"] = 70,
-			["Datgorg"] = 254,
 			["Fuamnache-Goldrinn"] = 267,
+			["Cleth-AlteracMountains"] = 70,
 			["Magetableplx"] = 63,
+			["Cramer-Magtheridon"] = 577,
 			["Calimari-Shadowmoon"] = 262,
 			["Mindstrike"] = 263,
 			["Mulmok"] = 267,
 			["Slypaws"] = 103,
-			["Orkz-Azralon"] = 253,
-			["Netharell-Goldrinn"] = 577,
 			["Tòtemz-Proudmoore"] = 264,
+			["Ohshi-Kargath"] = 262,
 			["Saxkitten-Thaurissan"] = 63,
+			["Tandina"] = 577,
 		},
 		["NoRaid"] = true,
 		["CDECol"] = {
@@ -15919,12 +15935,12 @@ VExRT = {
 			[254] = "Towelliee",
 			[247] = "Primetime",
 			[240] = "Branhista",
-			["sync"] = true,
+			["time"] = 1471398751,
 			[241] = "Sparty",
 			[246] = "Natoro",
 			[227] = "Ganor",
+			["sync"] = true,
 			["name"] = "Branhista-Stormrage",
-			["time"] = 1471398751,
 		},
 		["MalkorokLeft"] = 736.189575195313,
 		["ArchimondeLeft"] = 1159.71081542969,
@@ -15973,9 +15989,9 @@ VExRT = {
 			"Panzar", -- [18]
 			"Brainded", -- [19]
 			[21] = "Ariyana",
-			["time"] = 1476408888,
 			["name"] = "Branhista-Stormrage",
 			["sync"] = true,
+			["time"] = 1476408888,
 		},
 		["Kromog"] = {
 		},

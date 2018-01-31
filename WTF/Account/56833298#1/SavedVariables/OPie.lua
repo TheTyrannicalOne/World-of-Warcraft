@@ -25,8 +25,8 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Mounts"] = {
 				{
-					["sliceToken"] = "ABueoDKPMqf",
 					["id"] = 150544,
+					["sliceToken"] = "ABueoDKPMqf",
 				}, -- [1]
 				{
 					["sliceToken"] = "ABueoDKPMqd",

@@ -3960,23 +3960,6 @@ ParrotDB = {
 					["hideSkillNames"] = true,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
 					["Incoming"] = {
 						["Heals over time"] = {
 							["disabled"] = true,
@@ -4018,6 +4001,12 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
@@ -4129,6 +4118,17 @@ ParrotDB = {
 						},
 					},
 					["hideUnitNames"] = true,
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+					},
 					["hideSkillNames"] = true,
 				},
 				["Brotuss - Zul'jin"] = {
