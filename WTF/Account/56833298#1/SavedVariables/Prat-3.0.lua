@@ -148,9 +148,9 @@ Prat3DB = {
 					["initialized"] = true,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["minchatwidthdefault"] = 296,
-					["maxchatheightdefault"] = 400,
-					["maxchatwidthdefault"] = 608.000061035156,
+					["minchatwidthdefault"] = 296.000030517578,
+					["maxchatheightdefault"] = 400.000030517578,
+					["maxchatwidthdefault"] = 608,
 					["initialized"] = true,
 				},
 				["Brotuss - Zul'jin"] = {

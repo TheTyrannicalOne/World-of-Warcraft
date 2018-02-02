@@ -1,7 +1,7 @@
-changeset:   118:5cb881417bbf
-tag:         v55
+changeset:   120:42ce010b6253
+tag:         v56
 user:        yellowfive
-date:        Fri Nov 24 19:46:27 2017 -0800
-summary:     Added Antorus to auto-logging.
+date:        Thu Feb 01 00:17:42 2018 -0800
+summary:     Added new allied races.
 
 

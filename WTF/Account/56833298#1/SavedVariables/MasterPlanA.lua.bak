@@ -67,10 +67,6 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
 		},
-		["Dialdaas"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
 		["Serbitechna"] = {
 			["faction"] = "Alliance",
 			["class"] = "HUNTER",
@@ -78,6 +74,10 @@ MasterPlanAG = {
 		["Brewnheimer"] = {
 			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
+		},
+		["Dialdaas"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
 		},
 	},
 	["Zul'jin"] = {
@@ -168,7 +168,7 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Shanyt"] = {
-			["lastCacheTime"] = 1517286251,
+			["class"] = "WARRIOR",
 			["summary"] = {
 				["lastOilTime"] = 1517286337,
 				["tt2"] = 1517173745,
@@ -195,11 +195,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122484,
 			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 9293,
 			["curOil"] = 39400,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1517286251,
+			["curRes"] = 9293,
+			["faction"] = "Horde",
 		},
 		["Shaekhan"] = {
 			["class"] = "MONK",

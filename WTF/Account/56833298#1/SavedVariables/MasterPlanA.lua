@@ -42,7 +42,7 @@ MasterPlanAG = {
 			["class"] = "MONK",
 		},
 		["Shanyt"] = {
-			["curOil"] = 39400,
+			["faction"] = "Horde",
 			["summary"] = {
 				["lastOilTime"] = 1517286337,
 				["ti2"] = 122484,
@@ -69,11 +69,11 @@ MasterPlanAG = {
 				},
 				["tt2"] = 1517173745,
 			},
-			["faction"] = "Horde",
+			["curOil"] = 39400,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1517286251,
-			["curRes"] = 9293,
 			["class"] = "WARRIOR",
+			["curRes"] = 9293,
+			["lastCacheTime"] = 1517286251,
 		},
 		["Fantastiburo"] = {
 			["class"] = "DRUID",
@@ -135,16 +135,16 @@ MasterPlanAG = {
 			["class"] = "MAGE",
 			["faction"] = "Alliance",
 		},
-		["Brewnheimer"] = {
-			["class"] = "SHAMAN",
-			["faction"] = "Alliance",
-		},
 		["Dialdaas"] = {
 			["class"] = "PALADIN",
 			["faction"] = "Alliance",
 		},
 		["Serbitechna"] = {
 			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Brewnheimer"] = {
+			["class"] = "SHAMAN",
 			["faction"] = "Alliance",
 		},
 	},

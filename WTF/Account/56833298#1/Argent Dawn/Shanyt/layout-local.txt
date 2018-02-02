@@ -32,7 +32,7 @@ FrameLevel: 1
 Anchor: RIGHT
 X: 3168
 Y: 61
-W: 90
+W: 85
 H: 32
 Frame: WorldMapScreenAnchor
 FrameLevel: 0
@@ -90,10 +90,17 @@ X: 0
 Y: 0
 W: 205
 H: 205
+Frame: TSMMainFrame1
+FrameLevel: 0
+Anchor: CENTER
+X: -126
+Y: 2
+W: 823
+H: 686
 Frame: AuctionFrame
 FrameLevel: 1
 Anchor: TOPLEFT
-X: 45
+X: 44
 Y: -116
 W: 832
 H: 447
