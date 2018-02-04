@@ -27,22 +27,22 @@ GottaGoFastHistoryDB = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Thromar - Dalaran"] = "Thromar - Dalaran",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Vaddor - Zul'jin"] = {
@@ -99,17 +99,17 @@ GottaGoFastHistoryDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Narisaric - Dalaran"] = {
+		["Fantastiburo - Argent Dawn"] = {
 		},
-		["Serbitechna - Darkspear"] = {
+		["Mulmok - Argent Dawn"] = {
 		},
 		["Shathiel - Darkspear"] = {
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 		},
 		["Sinh - Dalaran"] = {
 		},
-		["Cowtastraphy - Argent Dawn"] = {
+		["Fantastiburo - Zul'jin"] = {
 		},
 		["Thromar - Dalaran"] = {
 		},
@@ -117,21 +117,21 @@ GottaGoFastHistoryDB = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
-		["Tynster - Dalaran"] = {
-		},
 		["Tyrannithal - Zul'jin"] = {
+		},
+		["Tynster - Dalaran"] = {
 		},
 		["Default"] = {
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Cowtastraphy - Argent Dawn"] = {
 		},
 		["Beeronimo - Dalaran"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Serbitechna - Darkspear"] = {
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
 		},
 	},
 }

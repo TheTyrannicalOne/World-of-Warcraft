@@ -27,22 +27,22 @@ LegionRaresTreasuresDB = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["profiles"] = {
 		["Vaddor - Zul'jin"] = {
@@ -99,17 +99,17 @@ LegionRaresTreasuresDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Serbitechna - Darkspear"] = {
 		},
 		["Shathiel - Darkspear"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 		},
 		["Sinh - Dalaran"] = {
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Cowtastraphy - Argent Dawn"] = {
 		},
 		["Thromar - Dalaran"] = {
 		},
@@ -117,21 +117,21 @@ LegionRaresTreasuresDB = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
-		["Tyrannithal - Zul'jin"] = {
-		},
 		["Tynster - Dalaran"] = {
+		},
+		["Tyrannithal - Zul'jin"] = {
 		},
 		["Default"] = {
 		},
-		["Cowtastraphy - Argent Dawn"] = {
+		["Fantastiburo - Zul'jin"] = {
 		},
 		["Beeronimo - Dalaran"] = {
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 		},
-		["Serbitechna - Darkspear"] = {
+		["Mulmok - Argent Dawn"] = {
 		},
-		["Narisaric - Dalaran"] = {
+		["Fantastiburo - Argent Dawn"] = {
 		},
 	},
 }

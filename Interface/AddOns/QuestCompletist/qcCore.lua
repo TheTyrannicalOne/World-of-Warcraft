@@ -25,7 +25,7 @@ local qcMutuallyExclusiveAlertTooltip = nil
 
 
 --[[ Constants ]]--
-local QCADDON_VERSION = 109.4
+local QCADDON_VERSION = 109.5
 local QCADDON_PURGE = true
 local QCDEBUG_MODE = false
 local QCADDON_CHAT_TITLE = "|CFF9482C9Quest Completist:|r "
@@ -69,7 +69,7 @@ qcRaceBits = {
 	["HUMAN"]=1,["ORC"]=2,["DWARF"]=4,["NIGHTELF"]=8,
 	["SCOURGE"]=16,["TAUREN"]=32,["GNOME"]=64,["TROLL"]=128,
 	["GOBLIN"]=256,["BLOODELF"]=512,["DRAENEI"]=1024,["WORGEN"]=2048,
-	["PANDAREN"]=4096
+	["PANDAREN"]=4096,["VOIDELF"]=8192,["NIGHTBORNE"]=16384
 }
 qcClassBits = {
 	["WARRIOR"]=1,["PALADIN"]=2,["HUNTER"]=4,["ROGUE"]=8,["PRIEST"]=16,
@@ -1426,7 +1426,7 @@ end
 --[[ ##### INTERFACE OPTIONS END ##### ]]--
 
 local function qcWelcomeMessage()
-	print(string.format("%sThanks for using Quest Completist. Spot a quest innaccuracy? Please contribute to the accuracy of the database by using the new Community Editor! (Link on Curse)",QCADDON_CHAT_TITLE))
+	print(string.format("%sThanks for using Quest Completist. Spot a quest innaccuracy? Please report it on curse",QCADDON_CHAT_TITLE))
 end
 
 local function qcCheckSettings()

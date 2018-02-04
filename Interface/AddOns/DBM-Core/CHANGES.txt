@@ -1,5 +1,19 @@
 Changes since tag 7.3.21
 
+commit b9ed64f60b93ffb18852b4bd5591229a1e562c7a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Feb 3 17:33:58 2018 +0100
+
+    Omega via svn r17246:
+    creative fix to handle situations like coven
+
+commit 3466d2f969b78afb62e0434daeee58bb59b8368d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 2 09:00:19 2018 +0100
+
+    Omega via svn r17245:
+    Fixed bug where DBM didn?\226?\128?\153t correctly set lighting back up on coven.
+
 commit 472b68a6d89d62c86ff89c3c11178afb6783353e
 Author: subversion <svn@deadlybossmods.com>
 Date:   Fri Feb 2 07:15:42 2018 +0100
