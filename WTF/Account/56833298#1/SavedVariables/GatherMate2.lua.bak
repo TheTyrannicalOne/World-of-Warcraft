@@ -1,10 +1,10 @@
 
 GatherMate2DB = {
-	["profileKeys"] = {
-		["Urbul - Zul'jin"] = "Default",
-	},
 	["global"] = {
 		["data_version"] = 4,
+	},
+	["profileKeys"] = {
+		["Urbul - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -28,6 +28,9 @@ GatherMate2FishDB = {
 GatherMate2GasDB = {
 }
 GatherMate2TreasureDB = {
+	[4] = {
+		[4304389400] = 535,
+	},
 }
 GatherMate2ArchaeologyDB = {
 }

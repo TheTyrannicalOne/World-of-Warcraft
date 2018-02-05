@@ -396,6 +396,11 @@ qcLocalize = {
 	ANTORANWASTES = "Antoran Wastes",
 	ARGUS = "Argus",
 	MACAREE = "Mac'Aree",
+	DREADSCARRIFT = "Dreadscar Rift",
+	ANTORUSTHEBURNINGTHRONE = "Antorus, the Burning Throne",
+	HELHEIM = "Helheim",
+	THESEATOFTHETRIUMVIRATE = "The Seat Of The Triumvirate",
+	EMERALDDREAMWAY = "Emerald Dreamway",
 }
 
 end
