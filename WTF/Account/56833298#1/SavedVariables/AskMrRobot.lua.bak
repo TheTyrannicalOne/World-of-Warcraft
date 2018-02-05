@@ -109,8 +109,8 @@ AskMrRobotDb3 = {
 				"|cff0070dd|Hitem:63378::::::::110:71::::::|h[Hellscream's Reach Tabard]|h|r", -- [7]
 				"|cffa335ee|Hitem:64402::::::::110:71::::::|h[Battle Standard of Coordination]|h|r", -- [8]
 				"|cffffffff|Hitem:71634:::::::535792352:110:71::::::|h[Darkmoon Adventurer's Guide]|h|r", -- [9]
-				"|cffffffff|Hitem:5956::::::::110:71::14::::|h[Blacksmith Hammer]|h|r", -- [10]
-				"|cffffffff|Hitem:2901::::::::110:71::14::::|h[Mining Pick]|h|r", -- [11]
+				"|cffffffff|Hitem:2901::::::::110:71::14::::|h[Mining Pick]|h|r", -- [10]
+				"|cffffffff|Hitem:5956::::::::110:71::14::::|h[Blacksmith Hammer]|h|r", -- [11]
 				"|cff0070dd|Hitem:84661:5357:::::::110:71::::::|h[Dragon Fishing Pole]|h|r", -- [12]
 				"|cff1eff00|Hitem:82960::::::::110:71::::::|h[Ghostly Skeleton Key]|h|r", -- [13]
 				"|cff0070dd|Hitem:118922::::::::110:71::11::::|h[Oralius' Whispering Crystal]|h|r", -- [14]
@@ -124,8 +124,8 @@ AskMrRobotDb3 = {
 				"|cff1eff00|Hitem:17905::::::::110:71::11::::|h[Frostwolf Insignia Rank 2]|h|r", -- [22]
 				"|cff0070dd|Hitem:127770::::::::110:71::::::|h[Brazier of Awakening]|h|r", -- [23]
 				"|cff0070dd|Hitem:128320::::::::110:71::::::|h[Corrupted Primal Obelisk]|h|r", -- [24]
-				"|cffffffff|Hitem:101677::::::::110:71::11::::|h[Thunderlord Grapple]|h|r", -- [25]
-				"|cff0070dd|Hitem:129295::::::::110:71::::::|h[Spike-Toed Booterang]|h|r", -- [26]
+				"|cff0070dd|Hitem:129295::::::::110:71::::::|h[Spike-Toed Booterang]|h|r", -- [25]
+				"|cffffffff|Hitem:101677::::::::110:71::11::::|h[Thunderlord Grapple]|h|r", -- [26]
 				"|cffffffff|Hitem:103977:::::::315897728:110:71::::::|h[Time-Worn Journal]|h|r", -- [27]
 				"|cffffffff|Hitem:46070::::::::110:71::::::|h[Horde Lance]|h|r", -- [28]
 				"|cffffffff|Hitem:87399::::::::110:71::::::|h[Restored Artifact]|h|r", -- [29]
@@ -1039,17 +1039,17 @@ AskMrRobotDb3 = {
 					},
 					[1492] = {
 					},
-					[1705] = {
+					[1516] = {
 					},
 					[1626] = {
 					},
-					[595] = {
+					[1489] = {
 					},
 					[1571] = {
 					},
 					[1477] = {
 					},
-					[1516] = {
+					[1705] = {
 					},
 					[1520] = {
 						[14] = false,
@@ -1061,7 +1061,7 @@ AskMrRobotDb3 = {
 					},
 					[646] = {
 					},
-					[1489] = {
+					[595] = {
 					},
 					[560] = {
 					},
@@ -1081,19 +1081,19 @@ AskMrRobotDb3 = {
 					},
 					[1064] = {
 					},
-					[1466] = {
+					[469] = {
 					},
 					[544] = {
 					},
 					[1706] = {
 					},
-					[1458] = {
+					[548] = {
 					},
 					[1651] = {
 					},
-					[469] = {
+					[1466] = {
 					},
-					[548] = {
+					[1458] = {
 					},
 					[967] = {
 					},

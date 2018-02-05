@@ -1,5 +1,33 @@
 Changes since tag 7.3.21
 
+commit 0939b0800ce6e9e554de18e97afa5fce1f1bb414
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 5 04:16:11 2018 +0100
+
+    ultrashining via svn r17250:
+    zhTW update
+
+commit 165a9febf180a4cfa73cfd3d39d0f4037a65cdeb
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 5 03:53:45 2018 +0100
+
+    Omega via svn r17249:
+    fix message
+
+commit e1750631140ec84db7c3920f7c98a321c17a128e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Feb 4 23:11:29 2018 +0100
+
+    Omega via svn r17248:
+    Fix double usage of antispam number
+
+commit 2d4b7ce8d1393b6b5e8658d203eaa45fd0c30965
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Feb 4 22:39:35 2018 +0100
+
+    Omega via svn r17247:
+    DMF will now utilize voice packs
+
 commit b9ed64f60b93ffb18852b4bd5591229a1e562c7a
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Feb 3 17:33:58 2018 +0100

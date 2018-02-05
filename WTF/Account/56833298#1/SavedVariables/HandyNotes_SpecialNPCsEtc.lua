@@ -14,6 +14,7 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[67745315] = "Banker:Binzella:Banker:288281",
 					[67305312] = "Banker:Vink:Banker:288288",
 					[48788382] = "Banker:Rilgiz:Banker:280658",
+					[48918360] = "Banker:Perixa:Banker:280662",
 				},
 			},
 			["dbversion"] = 2,
