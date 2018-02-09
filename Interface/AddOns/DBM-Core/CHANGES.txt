@@ -1,5 +1,175 @@
 Changes since tag 7.3.21
 
+commit 027a3ee820aaa3a2287414c600890dcc04508d07
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 10:40:28 2018 +0100
+
+    Omega via svn r17272:
+    Finally fix GTFO for trio, even though it?\226?\128?\153s utterly trivial now. it might not be next year, post squish and all
+
+commit cd5f7d6d0c7fb970d5bfc0690a6a5d81312bffca
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 10:22:19 2018 +0100
+
+    Omega via svn r17271:
+    Leak fix
+
+commit 174c81b6c68c96fb457d2b266933f5cb6d33a909
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 10:18:49 2018 +0100
+
+    Omega via svn r17270:
+    More simplification
+
+commit 752f45c10412a414106c798333e1485fe1d3d890
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 09:31:06 2018 +0100
+
+    Omega via svn r17269:
+    Fixed a bug with dungeon assignment
+
+commit bdc33f9f4dcd897e9ecead79fd8cc32d20863dab
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 09:23:01 2018 +0100
+
+    Omega via svn r17268:
+    Fix one load zone so it doesn?\226?\128?\153t try to load that on live automatically
+
+commit bdc33f9f4dcd897e9ecead79fd8cc32d20863dab
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 09:23:01 2018 +0100
+
+    Omega via svn r17268:
+    Fix one load zone so it doesn?\226?\128?\153t try to load that on live automatically
+
+commit f15e06efea267aa925e9d4aa0f4a813dc2627b7c
+Author: MysticalOS <MysticalOS@nomail.com>
+Date:   Thu Feb 8 03:21:37 2018 -0500
+
+    Update pkgmeta
+
+commit f237d81ae5ac2a0bde718ea3367cff1cc1c3addd
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 09:15:42 2018 +0100
+
+    Omega via svn r17267:
+    stub in the two dungeons from alpha.
+    I have data for rest of dungeons, but so many place holder names, best to only push stubs for the ones that are currently being tested since they?\226?\128?\153ll be populated soon.
+
+commit 81140e6326a42cad6cb06145421765519b57af39
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 06:57:18 2018 +0100
+
+    Omega via svn r17266:
+    kill a redundant call
+
+commit 52f1145a361c4ac807310cdea860e887648fdc36
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 02:35:59 2018 +0100
+
+    Omega via svn r17265:
+    CLEU now 8.0.1 ready
+
+commit 97949079345ed2b6ab3eae56a90d1f062a6ca5c9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 01:54:57 2018 +0100
+
+    Omega via svn r17264:
+    Preliminary work around until further review
+
+commit 289944ce9b7ca697f82615ca21ca4ce970affc16
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 8 01:31:35 2018 +0100
+
+    Omega via svn r17263:
+    Handle situation where EJ_SetDifficulty would fail because difficultyIndex not yet set
+
+commit c3aaae41a3f35d0e3c143aa377a052b85e66f029
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 7 04:41:33 2018 +0100
+
+    Omega via svn r17262:
+    Change this timer too
+
+commit 4d04bb0121ea1c1522574e6b9b170c5a3614d502
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 7 04:36:28 2018 +0100
+
+    Omega via svn r17261:
+    Try this fix, cause I don?\226?\128?\153t know why else timerForgingStrikeCD:Stop() isn?\226?\128?\153t working
+
+commit a558ea7231e0426f0c73d46679b2b8cda041fc77
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 6 01:22:50 2018 +0100
+
+    Omega via svn r17260:
+    add fallback in case it still couldn?\226?\128?\153t be found
+
+commit 2cc9a3510a82b4c83fcdda5e53efe72ec01bc4b7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 6 01:18:34 2018 +0100
+
+    Omega via svn r17259:
+    Add way for TColor to be pulled from a different bool when using a combined option
+
+commit 82b0331073fe48a6c25094215a01b73ae319e894
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 6 01:06:45 2018 +0100
+
+    Omega via svn r17258:
+    Fix timer type again
+
+commit a3b1f72773155d44b843c6197116c5893316fc66
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 6 00:53:38 2018 +0100
+
+    Omega via svn r17257:
+    Some holiday updates with timer bar colors and voice pack support
+
+commit b923fef0723a8ccc401657e1856688ee10f926c3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 6 00:39:57 2018 +0100
+
+    Omega via svn r17256:
+    Fix mod sort order for world events
+
+commit 8f1aca0152645015b9c133f9138b4a4e0f384a32
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 5 09:38:35 2018 +0100
+
+    Omega via svn r17255:
+    tweak
+
+commit 10e4700e8d4915b17a084ff9d1647a23ed671d49
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 5 09:23:05 2018 +0100
+
+    Omega via svn r17254:
+    fix SOUNDKIT.UI_RAID_BOSS_WHISPER_WARNING once and for all by erasing it during pulls and restoring it on combat end if hide RaidBossEmoteFrame is enabled
+    Apparently, RaidBossEmoteFrame_OnEvent runs NO MATTER what. even if you unregister every event frame has, it STILL runs and plays annoying sound. Now, it?\226?\128?\153ll just silently fail to play a sound that doesn?\226?\128?\153t exist.
+
+commit af5f97aa8d1cb2a48342f62124510ad9366b7416
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 5 07:07:13 2018 +0100
+
+    Omega via svn r17253:
+    Redundancy
+
+commit 35f27749cafe4db51e862f05699021d53d9623ba
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 5 06:43:04 2018 +0100
+
+    Omega via svn r17252:
+    Revert but with fixes to test
+
+commit bc356a566cfa47261097ed76ac1c2f00a3b2bddb
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 5 06:26:34 2018 +0100
+
+    Omega via svn r17251:
+    Scrap SetLighting feature, since blizzards api is broken and doesn?\226?\128?\153t work correctly
+    Also fix a bug with duplicate option description tables in some locals that caused option text to be invalid too
+
 commit 0939b0800ce6e9e554de18e97afa5fce1f1bb414
 Author: subversion <svn@deadlybossmods.com>
 Date:   Mon Feb 5 04:16:11 2018 +0100

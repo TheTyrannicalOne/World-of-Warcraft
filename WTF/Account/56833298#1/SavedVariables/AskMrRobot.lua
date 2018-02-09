@@ -378,8 +378,8 @@ AskMrRobotDb3 = {
 						[102] = 4,
 						[104] = 1,
 						[106] = 4,
-						[1395] = 1,
 						[1716] = 1,
+						[1395] = 1,
 					},
 					["Crucible"] = {
 						["Equipped"] = {
@@ -575,7 +575,7 @@ AskMrRobotDb3 = {
 				[141001] = 1,
 				[133704] = 1,
 				[45991] = 1,
-				[120945] = 656,
+				[120945] = 688,
 				[113821] = 1,
 				[117491] = 55,
 				[118054] = 10,
@@ -657,6 +657,9 @@ AskMrRobotDb3 = {
 			},
 		},
 	},
+	["global"] = {
+		["Region"] = "US",
+	},
 	["profileKeys"] = {
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
@@ -671,9 +674,6 @@ AskMrRobotDb3 = {
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-	},
-	["global"] = {
-		["Region"] = "US",
 	},
 	["profiles"] = {
 		["Bathal - Argent Dawn"] = {
@@ -723,11 +723,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[0] = {
 					},
 					[1530] = {
 						[14] = false,
@@ -735,7 +731,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[0] = {
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 				},
 			},
@@ -787,7 +787,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[0] = {
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 					[1530] = {
 						[14] = false,
@@ -795,11 +799,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[0] = {
 					},
 				},
 			},
@@ -883,11 +883,7 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[530] = {
 					},
 					[1530] = {
 						[14] = false,
@@ -895,7 +891,11 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[530] = {
+					[1648] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
 				},
 			},
@@ -981,23 +981,19 @@ AskMrRobotDb3 = {
 					},
 					[939] = {
 					},
-					[580] = {
+					[531] = {
 					},
 					[1492] = {
 					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1705] = {
 					},
 					[1626] = {
 					},
-					[565] = {
+					[595] = {
 					},
 					[1571] = {
 					},
-					[230] = {
+					[1477] = {
 					},
 					[1516] = {
 					},
@@ -1007,49 +1003,49 @@ AskMrRobotDb3 = {
 						[17] = false,
 						[15] = false,
 					},
-					[530] = {
+					[269] = {
 					},
 					[646] = {
 					},
-					[532] = {
+					[1489] = {
 					},
-					[938] = {
+					[560] = {
 					},
-					[1477] = {
+					[230] = {
 					},
 					[1544] = {
 					},
-					[269] = {
+					[530] = {
 					},
-					[1489] = {
+					[532] = {
 					},
 					[1493] = {
 					},
 					[534] = {
 					},
-					[967] = {
+					[870] = {
 					},
 					[1064] = {
 					},
-					[1458] = {
+					[1466] = {
 					},
 					[544] = {
 					},
 					[1706] = {
 					},
-					[548] = {
+					[1458] = {
 					},
 					[1651] = {
 					},
 					[469] = {
 					},
-					[1466] = {
+					[548] = {
 					},
-					[870] = {
+					[967] = {
 					},
 					[409] = {
 					},
-					[560] = {
+					[938] = {
 					},
 					[940] = {
 					},
@@ -1057,11 +1053,15 @@ AskMrRobotDb3 = {
 					},
 					[1116] = {
 					},
-					[595] = {
+					[565] = {
 					},
-					[1705] = {
+					[1676] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
 					},
-					[531] = {
+					[580] = {
 					},
 				},
 			},
