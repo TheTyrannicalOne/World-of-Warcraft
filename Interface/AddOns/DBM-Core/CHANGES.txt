@@ -1,5 +1,13 @@
 Changes since tag 7.3.21
 
+commit bf57a3f4bb6317350432a15d50d3ea48ac124f97
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Feb 10 01:56:04 2018 +0100
+
+    Omega via svn r17279:
+    Reduce unnecessary amount of upvalues for things that aren?\226?\128?\153t actually used that much, as well as eliminate some no longer needed one
+    Updated chat/addon comm code for alpha build 26010
+
 commit e1f1aa78c055d8110cb7a09f845c48568e75672b
 Author: subversion <svn@deadlybossmods.com>
 Date:   Fri Feb 9 23:41:58 2018 +0100

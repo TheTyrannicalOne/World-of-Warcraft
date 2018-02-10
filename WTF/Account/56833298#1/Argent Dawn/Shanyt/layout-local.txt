@@ -83,13 +83,6 @@ X: 0
 Y: 60
 W: 370
 H: 110
-Frame: _NPCScanOverlayKey
-FrameLevel: 121
-Anchor: CENTER
-X: -58
-Y: 61
-W: 172
-H: 364
 Frame: SpellActivationOverlayFrame
 FrameLevel: 1
 Anchor: CENTER

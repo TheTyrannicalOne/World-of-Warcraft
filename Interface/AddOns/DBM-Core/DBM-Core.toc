@@ -17,7 +17,7 @@
 ## DefaultState: enabled
 ## Author: Tandanu and Nitram
 ## X-Website: http://www.deadlybossmods.com
-## Version: 7.3.21-38-ge1f1aa78c
+## Version: 7.3.21-39-gbf57a3f4b
 
 #@no-lib-strip@
 Libs\LibStub\LibStub.lua
