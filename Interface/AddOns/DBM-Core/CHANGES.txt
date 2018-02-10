@@ -1,5 +1,47 @@
 Changes since tag 7.3.21
 
+commit e1f1aa78c055d8110cb7a09f845c48568e75672b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 9 23:41:58 2018 +0100
+
+    Omega via svn r17278:
+    Fix gtfo for real this time
+
+commit 7d553b9c2c35c230afe5b52f7fafe9cb2bd0bbfb
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 9 07:40:40 2018 +0100
+
+    Omega via svn r17277:
+    tweak filter and make it apply to foe as well
+
+commit c4a3901ed1ea5031121e20d71c2e31346b679815
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 9 07:37:40 2018 +0100
+
+    Omega via svn r17276:
+    add improved taunt warning feature to aggramar with flame rend warning in 2 tank strats (or 3 if you disable new filter but it won?\226?\128?\153t work very well in that case). warns the tank that was NOT hit by flame rends to taunt boss to minimize movements
+
+commit c8e179475ff81732e1ff98067e56c370c990e13d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 9 02:57:50 2018 +0100
+
+    Omega via svn r17275:
+    Fix bad regression with CLEU code update that broke some arg orders
+
+commit 915302a556be6dba107f948ba3dd1f775db07d9f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 9 02:09:10 2018 +0100
+
+    Omega via svn r17274:
+    Change couple names with some new encounter data, and add available encounterIds which will enable pull/kill/wipe detection for most of these
+
+commit 705bb4b6b9afe97c7a0bffa39c4d9c45de5b09a1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 9 01:42:26 2018 +0100
+
+    Omega via svn r17273:
+    Populate more BfA dungeons, everything except for clear and obvious placeholder boss names like ?\226?\128?\156priest?\226?\128?\157. these will be added only after they have proper names
+
 commit 027a3ee820aaa3a2287414c600890dcc04508d07
 Author: subversion <svn@deadlybossmods.com>
 Date:   Thu Feb 8 10:40:28 2018 +0100

@@ -1,9 +1,9 @@
 local mod	= DBM:NewMod(2082, "DBM-Party-BfA", 1, 968)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17267 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17274 $"):sub(12, -3))
 --mod:SetCreatureID(98542)
---mod:SetEncounterID(1832)
+mod:SetEncounterID(2084)
 mod:SetZone()
 
 mod:RegisterCombat("combat")
