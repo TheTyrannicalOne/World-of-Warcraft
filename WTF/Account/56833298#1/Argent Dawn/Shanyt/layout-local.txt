@@ -6,13 +6,6 @@ X: -249
 Y: -140
 W: 64
 H: 64
-Frame: BNToastFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 50
-W: 250
-H: 50
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: TOP
@@ -90,3 +83,10 @@ X: 0
 Y: 0
 W: 205
 H: 205
+Frame: BNToastFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 25
+Y: -220
+W: 250
+H: 63

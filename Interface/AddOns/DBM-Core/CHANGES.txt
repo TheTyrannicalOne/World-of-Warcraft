@@ -1,5 +1,33 @@
 Changes since tag 7.3.21
 
+commit 81bfcd30d17f3392d2a4daa2954fe1d618d7f9c4
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Feb 11 08:33:27 2018 +0100
+
+    Omega via svn r17283:
+    3/4 for freehold, will do sweete tommorrow.
+
+commit be313c9d2f24907d2a628fb828e57e5321ccddb3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Feb 11 03:51:11 2018 +0100
+
+    Omega via svn r17282:
+    Push Atal?\226?\128?\153Dazar, Freehold will come later
+
+commit 00c0185ef704deb7f926ee192f27b06c2cd5f760
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Feb 10 17:03:11 2018 +0100
+
+    Omega via svn r17281:
+    Kr Update
+
+commit 5bd924d4e32a2f70c91052f7064ef67ae51237fe
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Feb 10 02:47:17 2018 +0100
+
+    Omega via svn r17280:
+    Fix coding on that
+
 commit bf57a3f4bb6317350432a15d50d3ea48ac124f97
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Feb 10 01:56:04 2018 +0100

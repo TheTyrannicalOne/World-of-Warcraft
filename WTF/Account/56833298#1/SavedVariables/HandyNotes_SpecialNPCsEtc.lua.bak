@@ -1,24 +1,10 @@
 
 HandyNotes_SpecialNPCsEtcDB = {
-	["profiles"] = {
-		["Shanyt - Argent Dawn"] = {
-		},
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-	},
 	["faction"] = {
 		["Horde"] = {
 			["nodes"] = {
-				["garrisonffhorde_tier3"] = {
-					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
-					[48173262] = "Banker:Yorn Longhoof:Banker:497762",
-				},
 				["ShattrathCity"] = {
 					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
-				},
-				["ValeofEternalBlossoms"] = {
-					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
 				},
 				["ShadowmoonValley"] = {
 					[29212942] = "Stable:Gedrah:Stable Master:135990",
@@ -30,8 +16,22 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[48788382] = "Banker:Rilgiz:Banker:280658",
 					[48918360] = "Banker:Perixa:Banker:280662",
 				},
+				["garrisonffhorde_tier3"] = {
+					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
+					[48173262] = "Banker:Yorn Longhoof:Banker:497762",
+				},
+				["ValeofEternalBlossoms"] = {
+					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
+				},
 			},
 			["dbversion"] = 2,
+		},
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+	},
+	["profiles"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
 	},
 }
