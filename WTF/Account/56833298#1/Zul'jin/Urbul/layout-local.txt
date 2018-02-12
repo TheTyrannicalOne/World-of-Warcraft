@@ -1,6 +1,6 @@
 Version: 1
 Frame: MBB_MinimapButtonFrame
-FrameLevel: 9990
+FrameLevel: 9988
 Anchor: BOTTOMRIGHT
 X: 11
 Y: -11
@@ -13,3 +13,10 @@ X: -135
 Y: 26
 W: 384
 H: 260
+Frame: _NPCScanOverlayKey
+FrameLevel: 121
+Anchor: CENTER
+X: -245
+Y: 15
+W: 214
+H: 262

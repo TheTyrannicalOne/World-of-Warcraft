@@ -64,6 +64,7 @@ TradeSkillMaster_MailingDB = {
 	["c@Shaekhan - Argent Dawn@goldMailTarget"] = "",
 	["g@ @defaultMailTab"] = true,
 	["c@Urbul - Zul'jin@goldKeepAmount"] = 1000000,
+	["g@ @autoCheck"] = true,
 	["_currentProfile"] = {
 		["Bathal - Argent Dawn"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
@@ -80,7 +81,6 @@ TradeSkillMaster_MailingDB = {
 		["Shaekhan - Argent Dawn"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
 	},
-	["g@ @autoCheck"] = true,
 	["g@ @resendDelay"] = 1,
 	["c@Datgorg - Argent Dawn@goldMailTarget"] = "",
 	["g@ @keepMailSpace"] = 0,
