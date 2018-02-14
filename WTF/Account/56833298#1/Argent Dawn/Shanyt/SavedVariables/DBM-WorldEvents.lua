@@ -1,7 +1,7 @@
 
 DBMWorldEvents_SavedStats = {
 	["d288"] = {
-		["normalPulls"] = 18,
+		["normalPulls"] = 20,
 		["challengeKills"] = 0,
 		["normal25Kills"] = 0,
 		["flexKills"] = 0,
@@ -11,10 +11,10 @@ DBMWorldEvents_SavedStats = {
 		["heroicPulls"] = 0,
 		["lfr25Pulls"] = 0,
 		["normal25Pulls"] = 0,
-		["normalLastTime"] = 34.6970000000001,
-		["normalKills"] = 18,
-		["heroic25Kills"] = 0,
+		["normalLastTime"] = 30.238,
+		["normalKills"] = 20,
 		["normalBestTime"] = 23.3910000000001,
+		["heroic25Kills"] = 0,
 		["heroicKills"] = 0,
 		["timewalkerPulls"] = 0,
 		["flexPulls"] = 0,

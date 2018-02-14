@@ -393,7 +393,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -492,7 +492,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -512,7 +512,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -601,7 +601,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -616,7 +616,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -714,7 +714,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -729,17 +729,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -828,13 +827,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -877,7 +877,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -926,7 +926,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -971,12 +971,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1387,7 +1387,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1486,7 +1486,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1506,7 +1506,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1595,7 +1595,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1610,7 +1610,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1708,7 +1708,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1723,17 +1723,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1822,13 +1821,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -1871,7 +1871,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1920,7 +1920,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -1965,12 +1965,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2381,7 +2381,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2480,7 +2480,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2500,7 +2500,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2589,7 +2589,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2604,7 +2604,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2702,7 +2702,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2717,17 +2717,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2816,13 +2815,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -2865,7 +2865,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2914,7 +2914,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -2959,12 +2959,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3375,7 +3375,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3474,7 +3474,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3494,7 +3494,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3583,7 +3583,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3598,7 +3598,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3696,7 +3696,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3711,17 +3711,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3810,13 +3809,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -3859,7 +3859,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3908,7 +3908,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -3953,12 +3953,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4369,7 +4369,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4468,7 +4468,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4488,7 +4488,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4577,7 +4577,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4592,7 +4592,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4690,7 +4690,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4705,17 +4705,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4804,13 +4803,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -4853,7 +4853,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4902,7 +4902,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -4947,12 +4947,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5363,7 +5363,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5462,7 +5462,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5482,7 +5482,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5571,7 +5571,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5586,7 +5586,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5684,7 +5684,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5699,17 +5699,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5798,13 +5797,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -5847,7 +5847,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5896,7 +5896,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -5941,12 +5941,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -6457,10 +6457,10 @@ MasqueDB = {
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["WeakAuras_bellowing_roar_2"] = {
 					["Gloss"] = 1,
@@ -6477,10 +6477,10 @@ MasqueDB = {
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
-					["SkinID"] = "Darion",
 					["Inherit"] = false,
+					["SkinID"] = "Darion",
 				},
 				["WeakAuras_creeping_nightmares"] = {
 					["Gloss"] = 1,
@@ -6502,7 +6502,7 @@ MasqueDB = {
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["WeakAuras_annihilate"] = {
+				["WeakAuras_mark_of_emeriss"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
@@ -6512,12 +6512,12 @@ MasqueDB = {
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["WeakAuras_toxic_spores"] = {
+				["WeakAuras_annihilate"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["WeakAuras_mark_of_emeriss"] = {
+				["WeakAuras_toxic_spores"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
@@ -6670,16 +6670,15 @@ MasqueDB = {
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
-					["Inherit"] = false,
 				},
 				["Bartender4_StanceBar"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_yellow_2"] = {
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
@@ -6694,16 +6693,17 @@ MasqueDB = {
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["BalancePowerTracker"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
@@ -6787,12 +6787,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fetid_rot"] = {
+				["WeakAuras_branded_yellow_2"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
@@ -6891,7 +6891,7 @@ MasqueDB = {
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 					["Inherit"] = false,
@@ -7351,7 +7351,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7450,7 +7450,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7470,7 +7470,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7559,7 +7559,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7574,7 +7574,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7672,7 +7672,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7687,17 +7687,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7786,13 +7785,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -7835,7 +7835,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7884,7 +7884,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -7929,12 +7929,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8436,7 +8436,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8535,7 +8535,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8555,7 +8555,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8644,7 +8644,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8659,7 +8659,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8757,7 +8757,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8772,17 +8772,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8871,13 +8870,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -8920,7 +8920,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -8969,7 +8969,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9014,12 +9014,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9430,7 +9430,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9529,7 +9529,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9549,7 +9549,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9638,7 +9638,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9653,7 +9653,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9751,7 +9751,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9766,17 +9766,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9865,13 +9864,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -9914,7 +9914,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -9963,7 +9963,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10008,12 +10008,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10424,7 +10424,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10523,7 +10523,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10543,7 +10543,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10632,7 +10632,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10647,7 +10647,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10745,7 +10745,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10760,17 +10760,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10859,13 +10858,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -10908,7 +10908,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -10957,7 +10957,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -11002,12 +11002,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -11408,7 +11408,7 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -11423,7 +11423,7 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -11567,7 +11567,7 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_annihilate"] = {
+				["WeakAuras_mark_of_emeriss"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -11577,12 +11577,12 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_toxic_spores"] = {
+				["WeakAuras_annihilate"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_mark_of_emeriss"] = {
+				["WeakAuras_toxic_spores"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -11735,7 +11735,7 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -11745,7 +11745,7 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fetid_rot"] = {
+				["WeakAuras_branded_yellow_2"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -11760,17 +11760,16 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
-					["Inherit"] = false,
-					["Gloss"] = 1,
+				["Bartender4_1"] = {
 					["SkinID"] = "Darion",
+					["Gloss"] = 1,
 				},
 				["Bartender4_MicroMenu"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_yellow_2"] = {
+				["WeakAuras_collapsing_nightmare"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -11854,14 +11853,15 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
-					["SkinID"] = "Darion",
+				["WeakAuras_shadowy_volatile_distance"] = {
+					["Inherit"] = false,
 					["Gloss"] = 1,
+					["SkinID"] = "Darion",
 				},
 				["Bartender4_StanceBar"] = {
 					["SkinID"] = "Darion",
@@ -11996,7 +11996,7 @@ MasqueDB = {
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Inherit"] = false,
 					["Gloss"] = 1,
 					["SkinID"] = "Darion",
@@ -12417,7 +12417,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_fiery_phlegm"] = {
+				["WeakAuras_shield_of_light"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12516,7 +12516,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_BagBar"] = {
+				["Hermes-UI-GridButtons"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12536,7 +12536,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_bond_of_terror_1"] = {
+				["Bartender4_BagBar"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12625,7 +12625,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
+				["WeakAuras_defiled_vines"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12640,7 +12640,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_briney_volatile_foam"] = {
+				["WeakAuras_cd_bar:_soul_of_the_forest_talented"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12738,7 +12738,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shadowy_volatile_distance"] = {
+				["WeakAuras_twisting_shadows"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12753,17 +12753,16 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_twisting_shadows"] = {
+				["Bartender4_1"] = {
 					["Gloss"] = 1,
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["WeakAuras_fetid_rot"] = {
-					["Gloss"] = 1,
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_branded_yellow_2"] = {
+					["Gloss"] = 1,
+					["Inherit"] = false,
+					["SkinID"] = "Darion",
+				},
+				["WeakAuras_collapsing_nightmare"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12852,13 +12851,14 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_collapsing_nightmare"] = {
+				["WeakAuras_fetid_rot"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Bartender4_1"] = {
+				["WeakAuras_shadowy_volatile_distance"] = {
 					["Gloss"] = 1,
+					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
 				["WeakAuras_mark_of_ysondre"] = {
@@ -12901,7 +12901,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_defiled_vines"] = {
+				["WeakAuras_briney_volatile_foam"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12950,7 +12950,7 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["Hermes-UI-GridButtons"] = {
+				["WeakAuras_bond_of_terror_1"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
@@ -12995,12 +12995,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_branded_blue_2"] = {
+				["WeakAuras_fiery_phlegm"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",
 				},
-				["WeakAuras_shield_of_light"] = {
+				["WeakAuras_branded_blue_2"] = {
 					["Gloss"] = 1,
 					["Inherit"] = false,
 					["SkinID"] = "Darion",

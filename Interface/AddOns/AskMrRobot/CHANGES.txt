@@ -1,7 +1,7 @@
-changeset:   120:42ce010b6253
-tag:         v56
+changeset:   122:f1da233629be
+tag:         v57
 user:        yellowfive
-date:        Thu Feb 01 00:17:42 2018 -0800
-summary:     Added new allied races.
+date:        Mon Feb 12 19:33:34 2018 -0800
+summary:     Added portuguese translation. Turned off team optimizer for now.
 
 

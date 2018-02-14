@@ -1,5 +1,224 @@
 Changes since tag 7.3.21
 
+commit 79b23e8ac0e0db71140b4adad8647f49d01602f3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 14 07:22:41 2018 +0100
+
+    Omega via svn r17312:
+    Fix duplication
+
+commit 6cc790e399373d23e2d07bb2be056d73610ea347
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 14 07:04:16 2018 +0100
+
+    Omega via svn r17311:
+    Pretty it up a little
+
+commit 7851b794f7cd2a6fe23749d8c7e364d2684892d7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 14 06:36:00 2018 +0100
+
+    Omega via svn r17310:
+    Patch libs for C_ChatInfo, will grab official versions when available
+
+commit 33bbb4130dcd75a4b4979fcd0add98c9c460419f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 14 06:12:18 2018 +0100
+
+    Omega via svn r17309:
+    CN update
+
+commit ee73f0e0a6e8a0244454ea901781a0d5dd042698
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 14 04:24:41 2018 +0100
+
+    Omega via svn r17308:
+    Fix warning sound priority
+
+commit e99587766327c7f1ac32750cef1128e0a702ce4d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 14 00:03:41 2018 +0100
+
+    Omega via svn r17307:
+    Bug fixes
+
+commit 5612416313b2b96db94c0d17e7a755c18d7b4135
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 22:50:53 2018 +0100
+
+    Omega via svn r17306:
+    Schedule checkForMissingSentence on phase change, to fix issue where 2nd timer might not show
+
+commit 10f3e2c6fe27c4c10e943b813bbf7cd8741e4b50
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 22:34:28 2018 +0100
+
+    Omega via svn r17305:
+    KR update
+
+commit 62824f28b078d16272baa631775736d0d35c0ec1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 21:15:11 2018 +0100
+
+    Omega via svn r17304:
+    manual localize this
+
+commit 624ec8948a1ce8b3f7859899a66658db45a7413b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 12:16:51 2018 +0100
+
+    Omega via svn r17303:
+    Kr update
+
+commit 54e4b1b3ffb57ebeb71ed43903c726467c4cf287
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 12:03:49 2018 +0100
+
+    Omega via svn r17302:
+    Fix one of spells which doesn?\226?\128?\153t auto localize correctly in non english
+
+commit ad440a3e74aab2aa8ec3fe662d3e91c4af245bfa
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 11:45:21 2018 +0100
+
+    Omega via svn r17301:
+    Remove unused
+
+commit d37c4b8c88216314288458c34ad18432e600de62
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 11:29:17 2018 +0100
+
+    Omega via svn r17300:
+    Lua is dumb sometimes. why a + WITHIN quotes is still treated as addiction instead of a fucking string is beyond me
+
+commit ec14130e0af72d2ed1da78f1fc1315336ab743f4
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 11:13:50 2018 +0100
+
+    Omega via svn r17299:
+    It expects this as well
+
+commit d7c3b5d2e0d1b95d4015366cfcaeb69c22cb5b64
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 11:11:44 2018 +0100
+
+    Omega via svn r17298:
+    Fix one bug
+
+commit 17dcd25b94d7a741655a1987fb9b68b656ec98cd
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 06:12:13 2018 +0100
+
+    Omega via svn r17297:
+    Voice tweaks
+
+commit f8f405a647bd8cc146b4f81c31d087bff969acf1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 05:55:06 2018 +0100
+
+    Omega via svn r17296:
+    More shortening
+
+commit af4a3227cd47f11912463bedf2b91f45ce6641a2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 05:37:12 2018 +0100
+
+    Omega via svn r17295:
+    Icon tweaks to some GTFOs
+
+commit e6d8b078f265a7d4ebbb42b3078d807529f5300b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 05:28:23 2018 +0100
+
+    Omega via svn r17294:
+    use short names for yells to reduce clutter on argus.
+    use short name in sentence timer as well since it?\226?\128?\153s a bit long
+    Added repeating combo yell option for fear+other crap at same time to eliminate need to run custom weak auras on the side.
+
+commit 7806e3047d7a9c65cfe2835fdc7f011e9aa13cef
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Feb 13 03:28:20 2018 +0100
+
+    ultrashining via svn r17293:
+    zhTW update
+
+commit 858f27ace4d2d275dab2c15d5e355cc8ed310189
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 09:25:03 2018 +0100
+
+    Omega via svn r17292:
+    Improve text
+
+commit 73f93aa2ce41267419caa5f5127642ac3e74cd9b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 09:23:16 2018 +0100
+
+    Omega via svn r17291:
+    that doesn?\226?\128?\153t need throttle since it?\226?\128?\153ll never be an issue with world bosses.
+
+commit 79095b7f6e9edc53430e5b1ce0bd76f141fbe7a2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 04:19:46 2018 +0100
+
+    Omega via svn r17290:
+    Populate Zandalar mods with drycodes since journals for both bosses look pretty flushed out and provided enough info for preliminary mods
+
+commit 79095b7f6e9edc53430e5b1ce0bd76f141fbe7a2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 04:19:46 2018 +0100
+
+    Omega via svn r17290:
+    Populate Zandalar mods with drycodes since journals for both bosses look pretty flushed out and provided enough info for preliminary mods
+
+commit 6e6834825ad8d52318a199fe3ecf4aca44a94e9e
+Author: MysticalOS <MysticalOS@nomail.com>
+Date:   Sun Feb 11 21:24:47 2018 -0500
+
+    pkgmeta update
+
+commit 6a933b61e7b14309c0ce8df838ac3f71f29e28f8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 03:22:47 2018 +0100
+
+    Omega via svn r17289:
+    Add temp name for live, doesn?\226?\128?\153t need to be localized, it?\226?\128?\153ll auto localize off zoneID in BfA and Name will be removed, it?\226?\128?\153s more to avoid errors in mod list on live from nil name
+
+commit ce2a114b1bddb6ca9cdd4558e8c8f5e582d950b1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 03:20:56 2018 +0100
+
+    Omega via svn r17288:
+    Zandalar template
+
+commit 36b6f4ec051708df93f3579252353b76d47cb6c7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 02:58:00 2018 +0100
+
+    Omega via svn r17287:
+    Fix mod name
+
+commit e8ec79139cd4fdb692095423732e8ca169a5584e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 02:46:23 2018 +0100
+
+    Omega via svn r17286:
+    Add new function for checking expansion level and blocking mod loading by expansion level when appropriate (such as blocking BfA dungeon mods being force loaded on live by user without ugly build checks in each mod)
+
+commit 5185c12d1c5b5dc7b3c541dbec364559c09d19e2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 02:00:03 2018 +0100
+
+    Omega via svn r17285:
+    Protect the CLEU handler from errors caused by loading BFA mods on live
+
+commit a0847e48f23b72eea6bf003cbf95bc76e1ab2dfe
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Feb 12 01:27:17 2018 +0100
+
+    Omega via svn r17284:
+    Finished Sweete mod
+    Popualted Atal and freehold trash mods with notable interrupts
+
 commit 81bfcd30d17f3392d2a4daa2954fe1d618d7f9c4
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sun Feb 11 08:33:27 2018 +0100

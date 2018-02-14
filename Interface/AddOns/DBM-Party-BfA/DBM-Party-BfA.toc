@@ -16,9 +16,11 @@
 ## X-DBM-Mod-Name-koKR: 5인 던전 (격전의 아제로스)
 ## X-DBM-Mod-Sort: 415
 ## X-DBM-Mod-MapID: 1763, 1754, 1762, 1864, 1822, 1877, 1594, 1841, 1771, 1862
-## X-DBM-Mod-MinCoreRevision: 14737
+## X-DBM-Mod-MinCoreRevision: 17286
+## X-DBM-Mod-MinExpansion: 7
 localization.en.lua
 localization.kr.lua
+localization.cn.lua
 AtalDazar\Alunza.lua
 AtalDazar\Volkaal.lua
 AtalDazar\Rezan.lua
@@ -38,7 +40,7 @@ Boralus\Ashvane.lua
 Boralus\BoralusTrash.lua
 TempleofSethraliss\AdderisandAspix.lua
 TempleofSethraliss\Merektha.lua
-TempleofSethraliss\LightingElemental.lua
+TempleofSethraliss\Galvazzt.lua
 TempleofSethraliss\AvatarofSethraliss.lua
 TempleofSethraliss\SethralissTrash.lua
 TheUndermine\CrowdPummeler.lua

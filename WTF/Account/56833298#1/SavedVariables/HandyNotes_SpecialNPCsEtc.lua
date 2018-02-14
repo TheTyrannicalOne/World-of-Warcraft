@@ -13,16 +13,16 @@ HandyNotes_SpecialNPCsEtcDB = {
 				["ShattrathCity"] = {
 					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
 				},
-				["garrisonffhorde_tier3"] = {
-					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
-					[48173262] = "Banker:Yorn Longhoof:Banker:497762",
-				},
 				["ValeofEternalBlossoms"] = {
 					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
 				},
 				["ShadowmoonValley"] = {
 					[29212942] = "Stable:Gedrah:Stable Master:135990",
 					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
+				},
+				["garrisonffhorde_tier3"] = {
+					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
+					[48173262] = "Banker:Yorn Longhoof:Banker:497762",
 				},
 				["Orgrimmar"] = {
 					[67745315] = "Banker:Binzella:Banker:288281",

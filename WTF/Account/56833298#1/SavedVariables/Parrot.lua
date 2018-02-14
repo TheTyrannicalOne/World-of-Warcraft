@@ -3960,26 +3960,6 @@ ParrotDB = {
 					["hideSkillNames"] = true,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -4087,7 +4067,15 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
 					["Incoming"] = {
 						["Heals over time"] = {
 							["disabled"] = true,
@@ -4126,6 +4114,18 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
 							["disabled"] = true,
 						},
 					},

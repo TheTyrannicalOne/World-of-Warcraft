@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1983, "DBM-AntorusBurningThrone", nil, 946)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17272 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17308 $"):sub(12, -3))
 mod:SetCreatureID(122366)
 mod:SetEncounterID(2069)
 mod:SetZone()
@@ -39,7 +39,7 @@ local warnNecroticEmbrace				= mod:NewTargetAnnounce(244094, 4)
 local warnEchoesofDoom					= mod:NewTargetAnnounce(248732, 3)
 
 --Torments of the Shivarra
-local specWarnGTFO						= mod:NewSpecialWarningGTFO(243968, nil, nil, nil, 1, 2)
+local specWarnGTFO						= mod:NewSpecialWarningGTFO(244005, nil, nil, nil, 1, 2)
 --The Fallen Nathrezim
 local specWarnMisery					= mod:NewSpecialWarningYou(243961, nil, nil, nil, 1, 2)
 local specWarnMiseryTaunt				= mod:NewSpecialWarningTaunt(243961, nil, nil, nil, 1, 2)
@@ -47,7 +47,7 @@ local specWarnDarkFissure				= mod:NewSpecialWarningDodge(243999, nil, nil, nil,
 local specWarnMarkedPrey				= mod:NewSpecialWarningYou(244042, nil, nil, 2, 1, 2)
 local yellMarkedPrey					= mod:NewYell(244042)
 local yellMarkedPreyFades				= mod:NewShortFadesYell(244042)
-local specWarnNecroticEmbrace			= mod:NewSpecialWarningYouPos(244094, nil, nil, 2, 1, 2)
+local specWarnNecroticEmbrace			= mod:NewSpecialWarningYouPos(244094, nil, nil, 3, 3, 2)
 local yellNecroticEmbrace				= mod:NewPosYell(244094)
 local yellNecroticEmbraceFades			= mod:NewIconFadesYell(244094)
 local specWarnEchoesOfDoom				= mod:NewSpecialWarningYou(248732, nil, nil, nil, 1, 2)

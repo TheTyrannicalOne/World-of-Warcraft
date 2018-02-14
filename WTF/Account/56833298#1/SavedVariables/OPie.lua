@@ -4,7 +4,7 @@ OneRing_Config = {
 		["Darkspear-Serbitechna"] = "default",
 	},
 	["_GameVersion"] = "7.3.5",
-	["_OPieVersion"] = "Vanilla 1 (3.90)",
+	["_OPieVersion"] = "Vanilla 2 (3.91)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
@@ -25,8 +25,8 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Mounts"] = {
 				{
-					["sliceToken"] = "ABueoDKPMqf",
 					["id"] = 150544,
+					["sliceToken"] = "ABueoDKPMqf",
 				}, -- [1]
 				{
 					["sliceToken"] = "ABueoDKPMqd",
