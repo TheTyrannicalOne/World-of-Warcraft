@@ -90,3 +90,10 @@ X: 0
 Y: 0
 W: 205
 H: 205
+Frame: AuctionFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 45
+Y: -116
+W: 832
+H: 447
