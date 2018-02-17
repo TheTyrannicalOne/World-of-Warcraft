@@ -166,123 +166,120 @@ AskMrRobotDb3 = {
 				"|cffffffff|Hitem:138400::::::::110:71::::::|h[Petey]|h|r", -- [64]
 				"|cffffffff|Hitem:138414::::::::110:71::::::|h[Emergency Pirate Outfit]|h|r", -- [65]
 				"|cffffffff|Hitem:133704::::::::110:71::::::|h[Rusty Queenfish Brooch]|h|r", -- [66]
-				"|cffffffff|Hitem:49661::::::::110:71::::::|h[Lovely Charm Collector's Kit]|h|r", -- [67]
-				"|cffffffff|Hitem:49655::::::::110:71::::::|h[Lovely Charm]|h|r", -- [68]
-				"|cffffffff|Hitem:49927::::::::110:71::::::|h[Love Token]|h|r", -- [69]
-				"|cff0070dd|Hitem:137642::::::::110:71::::::|h[Mark of Honor]|h|r", -- [70]
-				"|cffffffff|Hitem:133720::::::::110:71::::::|h[Demonic Detritus]|h|r", -- [71]
-				"|cffa335ee|Hitem:124125::::::::110:71::::::|h[Obliterum]|h|r", -- [72]
-				"|cffa335ee|Hitem:140583::::::::110:71::::::|h[Vial of Timeless Breath]|h|r", -- [73]
-				"|cffffffff|Hitem:71037::::::::110:71::14::::|h[Black Diamond Ring]|h|r", -- [74]
-				"|cffffffff|Hitem:38090::::::::110:71::14::::|h[Sapphire Pinky Ring]|h|r", -- [75]
-				"|cffffffff|Hitem:37934::::::::110:71::14::::|h[Noble's Elementium Signet]|h|r", -- [76]
-				"|cffa335ee|Hitem:139854::::::::110:71::::::|h[Skull of a Fallen Foe]|h|r", -- [77]
-				"|cffa335ee|Hitem:139812::::::::110:71::::::|h[Potion of Triton]|h|r", -- [78]
-				"|cffa335ee|Hitem:139809::::::::110:71::::::|h[Elixir of Plenty]|h|r", -- [79]
-				"|cff0070dd|Hitem:139853::::::::110:71::::::|h[Axe of the Valkyra]|h|r", -- [80]
-				"|cff0070dd|Hitem:140582::::::::110:71::::::|h[Bottomless Flask]|h|r", -- [81]
-				"|cff1eff00|Hitem:140581::::::::110:71::::::|h[Sturdy Hiking Boots]|h|r", -- [82]
-				"|cff1eff00|Hitem:139813::::::::110:71::::::|h[Swift Boots]|h|r", -- [83]
-				"|cff1eff00|Hitem:139851::::::::110:71::::::|h[Valarjar's Might]|h|r", -- [84]
+				"|cff0070dd|Hitem:137642::::::::110:71::::::|h[Mark of Honor]|h|r", -- [67]
+				"|cffffffff|Hitem:133720::::::::110:71::::::|h[Demonic Detritus]|h|r", -- [68]
+				"|cffa335ee|Hitem:124125::::::::110:71::::::|h[Obliterum]|h|r", -- [69]
+				"|cffa335ee|Hitem:140583::::::::110:71::::::|h[Vial of Timeless Breath]|h|r", -- [70]
+				"|cffffffff|Hitem:71037::::::::110:71::14::::|h[Black Diamond Ring]|h|r", -- [71]
+				"|cffffffff|Hitem:38090::::::::110:71::14::::|h[Sapphire Pinky Ring]|h|r", -- [72]
+				"|cffffffff|Hitem:37934::::::::110:71::14::::|h[Noble's Elementium Signet]|h|r", -- [73]
+				"|cffa335ee|Hitem:139854::::::::110:71::::::|h[Skull of a Fallen Foe]|h|r", -- [74]
+				"|cffa335ee|Hitem:139812::::::::110:71::::::|h[Potion of Triton]|h|r", -- [75]
+				"|cffa335ee|Hitem:139809::::::::110:71::::::|h[Elixir of Plenty]|h|r", -- [76]
+				"|cff0070dd|Hitem:139853::::::::110:71::::::|h[Axe of the Valkyra]|h|r", -- [77]
+				"|cff0070dd|Hitem:140582::::::::110:71::::::|h[Bottomless Flask]|h|r", -- [78]
+				"|cff1eff00|Hitem:140581::::::::110:71::::::|h[Sturdy Hiking Boots]|h|r", -- [79]
+				"|cff1eff00|Hitem:139813::::::::110:71::::::|h[Swift Boots]|h|r", -- [80]
+				"|cff1eff00|Hitem:139851::::::::110:71::::::|h[Valarjar's Might]|h|r", -- [81]
+				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [82]
+				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [83]
+				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [84]
 				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [85]
 				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [86]
-				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [87]
-				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [88]
-				"|cff1eff00|Hitem:121331::::::::110:71::::::|h[Leystone Lockbox]|h|r", -- [89]
-				"|cff0070dd|Hitem:139801::::::::110:71::::::|h[Lucky Doodad]|h|r", -- [90]
-				"|cff0070dd|Hitem:139808::::::::110:71::::::|h[Curio of Abundant Happiness]|h|r", -- [91]
-				"|cff1eff00|Hitem:139795::::::::110:71::::::|h[Draught of Courage]|h|r", -- [92]
-				"|cff1eff00|Hitem:139816::::::::110:71::::::|h[Well-Worn Stone]|h|r", -- [93]
-				"|cff1eff00|Hitem:82960::::::::110:71::::::|h[Ghostly Skeleton Key]|h|r", -- [94]
-				"|cffa335ee|Hitem:145497::::::::110:71::8:4:3567:41:1512:3528:::|h[Ferocious Gladiator's Necklace]|h|r", -- [95]
-				"|cff1eff00|Hitem:23192::::::::110:71::2::::|h[Tabard of the Scarlet Crusade]|h|r", -- [96]
-				"|cffe6cc80|Hitem:140133::::::::110:71::::::|h[Axe, Blade, and Fist]|h|r", -- [97]
-				"|cff0070dd|Hitem:86574:::::::1211166592:110:71::::::|h[Elixir of Ancient Knowledge]|h|r", -- [98]
-				"|cffffffff|Hitem:8827:::::::1464113024:110:71::::::|h[Elixir of Water Walking]|h|r", -- [99]
-				"|cffffffff|Hitem:8827:::::::170887168:110:71::::::|h[Elixir of Water Walking]|h|r", -- [100]
-				"|cffffffff|Hitem:109076::::::::110:71::::::|h[Goblin Glider Kit]|h|r", -- [101]
-				"|cffa335ee|Hitem:32757::::::::110:71::11::::|h[Blessed Medallion of Karabor]|h|r", -- [102]
-				"|cff0070dd|Hitem:126580::127760::::::110:71::7:1:608:::|h[Warmongering Combatant's Girdle of Cruelty]|h|r", -- [103]
-				"|cff0070dd|Hitem:126585::::::::110:71::14::::|h[Warmongering Combatant's Armplates of Prowess]|h|r", -- [104]
-				"|cffa335ee|Hitem:126407::::::::110:71::11::::|h[Warmongering Gladiator's Plate Helmet]|h|r", -- [105]
-				"|cff0070dd|Hitem:126653::::::::110:71::14::::|h[Warmongering Combatant's Plate Shoulders]|h|r", -- [106]
-				"|cffa335ee|Hitem:126400::::::::110:71::14::::|h[Warmongering Gladiator's Warboots of Prowess]|h|r", -- [107]
-				"|cff0070dd|Hitem:126637::::::::110:71::7:1:605:::|h[Warmongering Combatant's Accolade of Victory]|h|r", -- [108]
-				"|cff0070dd|Hitem:126628::::::::110:71::14::::|h[Warmongering Combatant's Medallion of Cruelty]|h|r", -- [109]
-				"|cff0070dd|Hitem:126609::::::::110:71::14::::|h[Warmongering Combatant's Slicer]|h|r", -- [110]
-				"|cff0070dd|Hitem:126606::::::::110:71::14::::|h[Warmongering Combatant's Hacker]|h|r", -- [111]
-				"|cffa335ee|Hitem:126411::::::::110:71::11::::|h[Warmongering Gladiator's Plate Grips]|h|r", -- [112]
-				"|cffa335ee|Hitem:126474::::::::110:71::14::::|h[Warmongering Gladiator's Plate Legguards]|h|r", -- [113]
-				"|cff0070dd|Hitem:126615:5317:::::::110:71::7::::|h[Warmongering Combatant's Choker of Cruelty]|h|r", -- [114]
-				"|cff0070dd|Hitem:126620::::::::110:71::14::::|h[Warmongering Combatant's Shield Wall]|h|r", -- [115]
-				"|cff0070dd|Hitem:126650::::::::110:71::14::::|h[Warmongering Combatant's Plate Gauntlets]|h|r", -- [116]
-				"|cff0070dd|Hitem:126612::::::::110:71::14::::|h[Warmongering Combatant's Greatsword]|h|r", -- [117]
-				"|cffa335ee|Hitem:126434:5384:::::::110:71::14::::|h[Warmongering Gladiator's Decapitator]|h|r", -- [118]
-				"|cff0070dd|Hitem:126619:5324:::::::110:71::14::::|h[Warmongering Combatant's Signet of Ruthlessness]|h|r", -- [119]
-				"|cff0070dd|Hitem:126649::::::::110:71::14::::|h[Warmongering Combatant's Plate Chestpiece]|h|r", -- [120]
-				"|cffa335ee|Hitem:145617::::::::110:71::8:4:3567:1680:1512:3528:::|h[Ferocious Gladiator's Plate Shoulders]|h|r", -- [121]
-				"|cffa335ee|Hitem:149879::::::::110:71::7:4:3582:1808:1532:3528:::|h[Dominant Combatant's Pendant]|h|r", -- [122]
-				"|cffa335ee|Hitem:145535::::::::110:71::8:3:3567:1522:3336:::|h[Ferocious Gladiator's Ring]|h|r", -- [123]
-				"|cff0070dd|Hitem:138429::::::::110:71::14::::|h[Cropped Tabard of the Scarlet Crusade]|h|r", -- [124]
-				"|cffa335ee|Hitem:141001::::::::110:71::::::|h[Replica Blood Guard's Cleaver]|h|r", -- [125]
-				"|cffa335ee|Hitem:141002::::::::110:71::::::|h[Replica Staff of Gul'dan]|h|r", -- [126]
-				"|cff0070dd|Hitem:56836:::::::995972352:110:71::::::|h[Overflowing Purple Brewfest Stein]|h|r", -- [127]
-				"|cffa335ee|Hitem:142544::::::::110:71::::::|h[Horadric Satchel]|h|r", -- [128]
-				"|cff1eff00|Hitem:11733:::::::706535424:110:71::::::|h[Libram of Constitution]|h|r", -- [129]
-				"|cffffffff|Hitem:127408::::::::110:71::::::|h[Adventuring Journal]|h|r", -- [130]
-				"|cffffffff|Hitem:24581:::::::1185156736:110:71::::::|h[Mark of Thrallmar]|h|r", -- [131]
-				"|cffffffff|Hitem:45192:::::::1256768128:110:71::::::|h[Aspirant's Seal]|h|r", -- [132]
-				"|cffffffff|Hitem:29736:::::::428915840:110:71::::::|h[Arcane Rune]|h|r", -- [133]
-				"|cffffffff|Hitem:29735:::::::1621428224:110:71::::::|h[Holy Dust]|h|r", -- [134]
-				"|cff0070dd|Hitem:116820::::::::110:71::::::|h[Blind Lake Lunker]|h|r", -- [135]
-				"|cff1eff00|Hitem:108439::::::::110:71::::::|h[Draenor Clan Orator Cane]|h|r", -- [136]
-				"|cff1eff00|Hitem:109585::::::::110:71::::::|h[Arakkoa Cipher]|h|r", -- [137]
-				"|cff0070dd|Hitem:118100::::::::110:71::::::|h[Highmaul Relic]|h|r", -- [138]
-				"|cffffffff|Hitem:118099::::::::110:71::::::|h[Gorian Artifact Fragment]|h|r", -- [139]
-				"|cffffffff|Hitem:117491::::::::110:71::::::|h[Ogre Waystone]|h|r", -- [140]
-				"|cffa335ee|Hitem:118656::::::::110:71::::::|h[Dekorhan's Tusk]|h|r", -- [141]
-				"|cffffffff|Hitem:128650::::::::110:71::::::|h[\"Merry Munchkin\" Costume]|h|r", -- [142]
-				"|cff1eff00|Hitem:118054::::::::110:71::::::|h[Discarded Bone]|h|r", -- [143]
-				"|cff0070dd|Hitem:94221::::::::110:71::::::|h[Shan'ze Ritual Stone]|h|r", -- [144]
-				"|cffffffff|Hitem:97560::::::::110:71::::::|h[Challenge Card: Ro-Shambo]|h|r", -- [145]
-				"|cff0070dd|Hitem:45858:::::::154321808:110:71::::::|h[Nat's Lucky Fishing Pole]|h|r", -- [146]
-				"|cff0070dd|Hitem:45991:::::::1882496384:110:71::::::|h[Bone Fishing Pole]|h|r", -- [147]
-				"|cff0070dd|Hitem:45992:::::::1406695680:110:71::::::|h[Jeweled Fishing Pole]|h|r", -- [148]
-				"|cffffffff|Hitem:113822::::::::110:71::::::|h[Ravaged Iron Horde Belt]|h|r", -- [149]
-				"|cffffffff|Hitem:113823::::::::110:71::::::|h[Crusted Iron Horde Pauldrons]|h|r", -- [150]
-				"|cffffffff|Hitem:113821::::::::110:71::::::|h[Battered Iron Horde Helmet]|h|r", -- [151]
-				"|cffffffff|Hitem:113681::::::::110:71::::::|h[Iron Horde Scraps]|h|r", -- [152]
-				"|cffffffff|Hitem:113681::::::::110:71::::::|h[Iron Horde Scraps]|h|r", -- [153]
-				"|cffffffff|Hitem:113681::::::::110:71::::::|h[Iron Horde Scraps]|h|r", -- [154]
-				"|cffa335ee|Hitem:118661::::::::110:71::::::|h[Xelganak's Stinger]|h|r", -- [155]
-				"|cff1eff00|Hitem:118236::::::::110:71::::::|h[Counterfeit Coin]|h|r", -- [156]
-				"|cff1eff00|Hitem:118046::::::::110:71::::::|h[Rubber Duck]|h|r", -- [157]
-				"|cff1eff00|Hitem:86143::::::::110:71::::::|h[Battle Pet Bandage]|h|r", -- [158]
-				"|cffffffff|Hitem:116415::::::::110:71::::::|h[Pet Charm]|h|r", -- [159]
-				"|cff1eff00|Hitem:63127:::::::2101265024:110:71::::::|h[Highborne Scroll]|h|r", -- [160]
-				"|cff1eff00|Hitem:79869:::::::61322496:110:71::::::|h[Mogu Statue Piece]|h|r", -- [161]
-				"|cff1eff00|Hitem:87549:::::::1621365760:110:71::::::|h[Lorewalker's Map]|h|r", -- [162]
-				"|cff1eff00|Hitem:108439::::::::110:71::::::|h[Draenor Clan Orator Cane]|h|r", -- [163]
-				"|cff1eff00|Hitem:79868:::::::1948090112:110:71::::::|h[Pandaren Pottery Shard]|h|r", -- [164]
-				"|cffffffff|Hitem:92440:::::::126195712:110:71::::::|h[Reliquary Facsimile]|h|r", -- [165]
-				"|cffffffff|Hitem:104198::::::::110:71::::::|h[Mantid Artifact Hunter's Kit]|h|r", -- [166]
-				"|cffffffff|Hitem:104198::::::::110:71::::::|h[Mantid Artifact Hunter's Kit]|h|r", -- [167]
-				"|cff1eff00|Hitem:109585::::::::110:71::::::|h[Arakkoa Cipher]|h|r", -- [168]
-				"|cff1eff00|Hitem:109584::::::::110:71::::::|h[Ogre Missive]|h|r", -- [169]
-				"|cff1eff00|Hitem:104330:::::::17005696:110:71::::::|h[Warped Warning Sign]|h|r", -- [170]
-				"|cff0070dd|Hitem:86591:::::::823260032:110:71::::::|h[Magic Banana]|h|r", -- [171]
-				"|cff0070dd|Hitem:45047::::::::110:71::::::|h[Sandbox Tiger]|h|r", -- [172]
-				"|cffffffff|Hitem:55121:::::::773175040:110:71::::::|h[River Boat]|h|r", -- [173]
-				"|cff1eff00|Hitem:9974::::::-78:1474035724:110:71::::::|h[Overlord's Shield of the Monkey]|h|r", -- [174]
-				"|cffff8000|Hitem:32837::::::::110:71::::::|h[Warglaive of Azzinoth]|h|r", -- [175]
-				"|cffff8000|Hitem:32838::::::::110:71::::::|h[Warglaive of Azzinoth]|h|r", -- [176]
-				"|cffff8000|Hitem:124634:5324:::::::110:71::11:2:650:624:::|h[Thorasus, the Stone Heart of Draenor]|h|r", -- [177]
-				"|cffff8000|Hitem:34334::::::::110:71::::::|h[Thori'dal, the Stars' Fury]|h|r", -- [178]
-				"|cffff8000|Hitem:19019::::::::110:71::11::::|h[Thunderfury, Blessed Blade of the Windseeker]|h|r", -- [179]
-				"|cffff8000|Hitem:17204::::::::110:71::::::|h[Eye of Sulfuras]|h|r", -- [180]
-				"|cffff8000|Hitem:93403::::::::110:71::11::::|h[Eye of the Black Prince]|h|r", -- [181]
-				"|cffff8000|Hitem:89881:::::::1200743552:110:71::::::|h[Crystallized Terror]|h|r", -- [182]
-				"|cffff8000|Hitem:94593::::::::110:71::::::|h[Secrets of the Empire]|h|r", -- [183]
+				"|cff0070dd|Hitem:139801::::::::110:71::::::|h[Lucky Doodad]|h|r", -- [87]
+				"|cff0070dd|Hitem:139808::::::::110:71::::::|h[Curio of Abundant Happiness]|h|r", -- [88]
+				"|cff1eff00|Hitem:139795::::::::110:71::::::|h[Draught of Courage]|h|r", -- [89]
+				"|cff1eff00|Hitem:139816::::::::110:71::::::|h[Well-Worn Stone]|h|r", -- [90]
+				"|cff1eff00|Hitem:82960::::::::110:71::::::|h[Ghostly Skeleton Key]|h|r", -- [91]
+				"|cffa335ee|Hitem:145497::::::::110:71::8:4:3567:41:1512:3528:::|h[Ferocious Gladiator's Necklace]|h|r", -- [92]
+				"|cff1eff00|Hitem:23192::::::::110:71::2::::|h[Tabard of the Scarlet Crusade]|h|r", -- [93]
+				"|cffe6cc80|Hitem:140133::::::::110:71::::::|h[Axe, Blade, and Fist]|h|r", -- [94]
+				"|cff0070dd|Hitem:86574:::::::1211166592:110:71::::::|h[Elixir of Ancient Knowledge]|h|r", -- [95]
+				"|cffffffff|Hitem:8827:::::::1464113024:110:71::::::|h[Elixir of Water Walking]|h|r", -- [96]
+				"|cffffffff|Hitem:8827:::::::170887168:110:71::::::|h[Elixir of Water Walking]|h|r", -- [97]
+				"|cffffffff|Hitem:109076::::::::110:71::::::|h[Goblin Glider Kit]|h|r", -- [98]
+				"|cffa335ee|Hitem:32757::::::::110:71::11::::|h[Blessed Medallion of Karabor]|h|r", -- [99]
+				"|cff0070dd|Hitem:126580::127760::::::110:71::7:1:608:::|h[Warmongering Combatant's Girdle of Cruelty]|h|r", -- [100]
+				"|cff0070dd|Hitem:126585::::::::110:71::14::::|h[Warmongering Combatant's Armplates of Prowess]|h|r", -- [101]
+				"|cffa335ee|Hitem:126407::::::::110:71::11::::|h[Warmongering Gladiator's Plate Helmet]|h|r", -- [102]
+				"|cff0070dd|Hitem:126653::::::::110:71::14::::|h[Warmongering Combatant's Plate Shoulders]|h|r", -- [103]
+				"|cffa335ee|Hitem:126400::::::::110:71::14::::|h[Warmongering Gladiator's Warboots of Prowess]|h|r", -- [104]
+				"|cff0070dd|Hitem:126637::::::::110:71::7:1:605:::|h[Warmongering Combatant's Accolade of Victory]|h|r", -- [105]
+				"|cff0070dd|Hitem:126628::::::::110:71::14::::|h[Warmongering Combatant's Medallion of Cruelty]|h|r", -- [106]
+				"|cff0070dd|Hitem:126609::::::::110:71::14::::|h[Warmongering Combatant's Slicer]|h|r", -- [107]
+				"|cff0070dd|Hitem:126606::::::::110:71::14::::|h[Warmongering Combatant's Hacker]|h|r", -- [108]
+				"|cffa335ee|Hitem:126411::::::::110:71::11::::|h[Warmongering Gladiator's Plate Grips]|h|r", -- [109]
+				"|cffa335ee|Hitem:126474::::::::110:71::14::::|h[Warmongering Gladiator's Plate Legguards]|h|r", -- [110]
+				"|cff0070dd|Hitem:126615:5317:::::::110:71::7::::|h[Warmongering Combatant's Choker of Cruelty]|h|r", -- [111]
+				"|cff0070dd|Hitem:126620::::::::110:71::14::::|h[Warmongering Combatant's Shield Wall]|h|r", -- [112]
+				"|cff0070dd|Hitem:126650::::::::110:71::14::::|h[Warmongering Combatant's Plate Gauntlets]|h|r", -- [113]
+				"|cff0070dd|Hitem:126612::::::::110:71::14::::|h[Warmongering Combatant's Greatsword]|h|r", -- [114]
+				"|cffa335ee|Hitem:126434:5384:::::::110:71::14::::|h[Warmongering Gladiator's Decapitator]|h|r", -- [115]
+				"|cff0070dd|Hitem:126619:5324:::::::110:71::14::::|h[Warmongering Combatant's Signet of Ruthlessness]|h|r", -- [116]
+				"|cff0070dd|Hitem:126649::::::::110:71::14::::|h[Warmongering Combatant's Plate Chestpiece]|h|r", -- [117]
+				"|cffa335ee|Hitem:145617::::::::110:71::8:4:3567:1680:1512:3528:::|h[Ferocious Gladiator's Plate Shoulders]|h|r", -- [118]
+				"|cffa335ee|Hitem:149879::::::::110:71::7:4:3582:1808:1532:3528:::|h[Dominant Combatant's Pendant]|h|r", -- [119]
+				"|cffa335ee|Hitem:145535::::::::110:71::8:3:3567:1522:3336:::|h[Ferocious Gladiator's Ring]|h|r", -- [120]
+				"|cff0070dd|Hitem:138429::::::::110:71::14::::|h[Cropped Tabard of the Scarlet Crusade]|h|r", -- [121]
+				"|cffa335ee|Hitem:141001::::::::110:71::::::|h[Replica Blood Guard's Cleaver]|h|r", -- [122]
+				"|cffa335ee|Hitem:141002::::::::110:71::::::|h[Replica Staff of Gul'dan]|h|r", -- [123]
+				"|cff0070dd|Hitem:56836:::::::995972352:110:71::::::|h[Overflowing Purple Brewfest Stein]|h|r", -- [124]
+				"|cffa335ee|Hitem:142544::::::::110:71::::::|h[Horadric Satchel]|h|r", -- [125]
+				"|cff1eff00|Hitem:11733:::::::706535424:110:71::::::|h[Libram of Constitution]|h|r", -- [126]
+				"|cffffffff|Hitem:127408::::::::110:71::::::|h[Adventuring Journal]|h|r", -- [127]
+				"|cffffffff|Hitem:24581:::::::1185156736:110:71::::::|h[Mark of Thrallmar]|h|r", -- [128]
+				"|cffffffff|Hitem:45192:::::::1256768128:110:71::::::|h[Aspirant's Seal]|h|r", -- [129]
+				"|cffffffff|Hitem:29736:::::::428915840:110:71::::::|h[Arcane Rune]|h|r", -- [130]
+				"|cffffffff|Hitem:29735:::::::1621428224:110:71::::::|h[Holy Dust]|h|r", -- [131]
+				"|cff0070dd|Hitem:116820::::::::110:71::::::|h[Blind Lake Lunker]|h|r", -- [132]
+				"|cff1eff00|Hitem:108439::::::::110:71::::::|h[Draenor Clan Orator Cane]|h|r", -- [133]
+				"|cff1eff00|Hitem:109585::::::::110:71::::::|h[Arakkoa Cipher]|h|r", -- [134]
+				"|cff0070dd|Hitem:118100::::::::110:71::::::|h[Highmaul Relic]|h|r", -- [135]
+				"|cffffffff|Hitem:118099::::::::110:71::::::|h[Gorian Artifact Fragment]|h|r", -- [136]
+				"|cffffffff|Hitem:117491::::::::110:71::::::|h[Ogre Waystone]|h|r", -- [137]
+				"|cffa335ee|Hitem:118656::::::::110:71::::::|h[Dekorhan's Tusk]|h|r", -- [138]
+				"|cffffffff|Hitem:128650::::::::110:71::::::|h[\"Merry Munchkin\" Costume]|h|r", -- [139]
+				"|cff1eff00|Hitem:118054::::::::110:71::::::|h[Discarded Bone]|h|r", -- [140]
+				"|cff0070dd|Hitem:94221::::::::110:71::::::|h[Shan'ze Ritual Stone]|h|r", -- [141]
+				"|cffffffff|Hitem:97560::::::::110:71::::::|h[Challenge Card: Ro-Shambo]|h|r", -- [142]
+				"|cff0070dd|Hitem:45858:::::::154321808:110:71::::::|h[Nat's Lucky Fishing Pole]|h|r", -- [143]
+				"|cff0070dd|Hitem:45991:::::::1882496384:110:71::::::|h[Bone Fishing Pole]|h|r", -- [144]
+				"|cff0070dd|Hitem:45992:::::::1406695680:110:71::::::|h[Jeweled Fishing Pole]|h|r", -- [145]
+				"|cffffffff|Hitem:113822::::::::110:71::::::|h[Ravaged Iron Horde Belt]|h|r", -- [146]
+				"|cffffffff|Hitem:113823::::::::110:71::::::|h[Crusted Iron Horde Pauldrons]|h|r", -- [147]
+				"|cffffffff|Hitem:113821::::::::110:71::::::|h[Battered Iron Horde Helmet]|h|r", -- [148]
+				"|cffffffff|Hitem:113681::::::::110:71::::::|h[Iron Horde Scraps]|h|r", -- [149]
+				"|cffffffff|Hitem:113681::::::::110:71::::::|h[Iron Horde Scraps]|h|r", -- [150]
+				"|cffffffff|Hitem:113681::::::::110:71::::::|h[Iron Horde Scraps]|h|r", -- [151]
+				"|cffa335ee|Hitem:118661::::::::110:71::::::|h[Xelganak's Stinger]|h|r", -- [152]
+				"|cff1eff00|Hitem:118236::::::::110:71::::::|h[Counterfeit Coin]|h|r", -- [153]
+				"|cff1eff00|Hitem:118046::::::::110:71::::::|h[Rubber Duck]|h|r", -- [154]
+				"|cff1eff00|Hitem:86143::::::::110:71::::::|h[Battle Pet Bandage]|h|r", -- [155]
+				"|cffffffff|Hitem:116415::::::::110:71::::::|h[Pet Charm]|h|r", -- [156]
+				"|cff1eff00|Hitem:63127:::::::2101265024:110:71::::::|h[Highborne Scroll]|h|r", -- [157]
+				"|cff1eff00|Hitem:79869:::::::61322496:110:71::::::|h[Mogu Statue Piece]|h|r", -- [158]
+				"|cff1eff00|Hitem:87549:::::::1621365760:110:71::::::|h[Lorewalker's Map]|h|r", -- [159]
+				"|cff1eff00|Hitem:108439::::::::110:71::::::|h[Draenor Clan Orator Cane]|h|r", -- [160]
+				"|cff1eff00|Hitem:79868:::::::1948090112:110:71::::::|h[Pandaren Pottery Shard]|h|r", -- [161]
+				"|cffffffff|Hitem:92440:::::::126195712:110:71::::::|h[Reliquary Facsimile]|h|r", -- [162]
+				"|cffffffff|Hitem:104198::::::::110:71::::::|h[Mantid Artifact Hunter's Kit]|h|r", -- [163]
+				"|cffffffff|Hitem:104198::::::::110:71::::::|h[Mantid Artifact Hunter's Kit]|h|r", -- [164]
+				"|cff1eff00|Hitem:109585::::::::110:71::::::|h[Arakkoa Cipher]|h|r", -- [165]
+				"|cff1eff00|Hitem:109584::::::::110:71::::::|h[Ogre Missive]|h|r", -- [166]
+				"|cff1eff00|Hitem:104330:::::::17005696:110:71::::::|h[Warped Warning Sign]|h|r", -- [167]
+				"|cff0070dd|Hitem:86591:::::::823260032:110:71::::::|h[Magic Banana]|h|r", -- [168]
+				"|cff0070dd|Hitem:45047::::::::110:71::::::|h[Sandbox Tiger]|h|r", -- [169]
+				"|cffffffff|Hitem:55121:::::::773175040:110:71::::::|h[River Boat]|h|r", -- [170]
+				"|cff1eff00|Hitem:9974::::::-78:1474035724:110:71::::::|h[Overlord's Shield of the Monkey]|h|r", -- [171]
+				"|cffff8000|Hitem:32837::::::::110:71::::::|h[Warglaive of Azzinoth]|h|r", -- [172]
+				"|cffff8000|Hitem:32838::::::::110:71::::::|h[Warglaive of Azzinoth]|h|r", -- [173]
+				"|cffff8000|Hitem:124634:5324:::::::110:71::11:2:650:624:::|h[Thorasus, the Stone Heart of Draenor]|h|r", -- [174]
+				"|cffff8000|Hitem:34334::::::::110:71::::::|h[Thori'dal, the Stars' Fury]|h|r", -- [175]
+				"|cffff8000|Hitem:19019::::::::110:71::11::::|h[Thunderfury, Blessed Blade of the Windseeker]|h|r", -- [176]
+				"|cffff8000|Hitem:17204::::::::110:71::::::|h[Eye of Sulfuras]|h|r", -- [177]
+				"|cffff8000|Hitem:93403::::::::110:71::11::::|h[Eye of the Black Prince]|h|r", -- [178]
+				"|cffff8000|Hitem:89881:::::::1200743552:110:71::::::|h[Crystallized Terror]|h|r", -- [179]
+				"|cffff8000|Hitem:94593::::::::110:71::::::|h[Secrets of the Empire]|h|r", -- [180]
 			},
 			["Artifacts"] = {
 				{
@@ -465,14 +462,14 @@ AskMrRobotDb3 = {
 			["BankItemsAndCounts"] = {
 				[116820] = 4,
 				[43007] = 18,
-				[49661] = 1,
+				[126606] = 1,
 				[104198] = 2,
 				[124120] = 3,
 				[121331] = 5,
 				[34664] = 40,
 				[138429] = 1,
-				[133680] = 80,
-				[10025] = 1,
+				[133680] = 75,
+				[141012] = 1,
 				[139801] = 1,
 				[126400] = 1,
 				[109076] = 20,
@@ -487,17 +484,16 @@ AskMrRobotDb3 = {
 				[118656] = 1,
 				[45192] = 5,
 				[126609] = 1,
-				[124107] = 20,
+				[124107] = 15,
 				[72103] = 109,
 				[126434] = 1,
 				[118099] = 136,
 				[149879] = 1,
-				[49655] = 20,
 				[128650] = 30,
 				[86591] = 1,
-				[124108] = 20,
-				[110609] = 1,
-				[139808] = 2,
+				[124108] = 15,
+				[124124] = 19,
+				[118100] = 18,
 				[133720] = 1,
 				[71037] = 1,
 				[139809] = 2,
@@ -509,16 +505,16 @@ AskMrRobotDb3 = {
 				[87549] = 4,
 				[126580] = 1,
 				[37934] = 1,
-				[49927] = 50,
+				[126628] = 1,
 				[56836] = 1,
 				[123919] = 353,
 				[11733] = 1,
 				[139812] = 2,
 				[134234] = 1,
 				[82960] = 20,
-				[89112] = 293,
+				[89112] = 296,
 				[139813] = 1,
-				[124111] = 41,
+				[124111] = 36,
 				[9974] = 1,
 				[79869] = 1,
 				[140133] = 1,
@@ -529,7 +525,7 @@ AskMrRobotDb3 = {
 				[139816] = 3,
 				[136342] = 140,
 				[138414] = 4,
-				[7069] = 1,
+				[126615] = 1,
 				[142335] = 1,
 				[140582] = 3,
 				[45992] = 1,
@@ -537,93 +533,91 @@ AskMrRobotDb3 = {
 				[140583] = 1,
 				[34334] = 1,
 				[32828] = 1,
-				[94593] = 1,
 				[137492] = 1,
-				[89881] = 1,
 				[72094] = 220,
-				[45047] = 49,
-				[118100] = 18,
-				[19019] = 1,
+				[94593] = 1,
+				[89881] = 1,
+				[113681] = 2594,
 				[115508] = 61,
+				[110609] = 1,
+				[19019] = 1,
 				[124634] = 1,
 				[32838] = 1,
-				[126606] = 1,
-				[55121] = 1,
 				[93403] = 1,
-				[104330] = 1,
+				[55121] = 1,
 				[126585] = 1,
 				[111556] = 3,
-				[109584] = 4,
-				[92440] = 1,
+				[45047] = 49,
+				[104330] = 1,
 				[126649] = 1,
 				[72095] = 24,
 				[23192] = 1,
-				[79868] = 1,
-				[109118] = 83,
+				[109584] = 4,
+				[8827] = 29,
 				[126474] = 1,
+				[92440] = 1,
+				[79868] = 1,
 				[63127] = 3,
-				[116415] = 257,
-				[145535] = 1,
 				[139854] = 1,
-				[86574] = 1,
-				[113681] = 2594,
+				[116415] = 257,
+				[126612] = 1,
 				[94221] = 8,
 				[111557] = 87,
 				[32837] = 1,
-				[139853] = 5,
+				[45858] = 1,
 				[126650] = 1,
 				[3823] = 6,
 				[145497] = 1,
 				[102218] = 2,
 				[109119] = 58,
-				[45991] = 1,
+				[124461] = 35,
 				[137465] = 1,
-				[45858] = 1,
+				[141001] = 1,
 				[133704] = 1,
-				[109585] = 21,
-				[120945] = 738,
+				[45991] = 1,
+				[120945] = 768,
 				[113821] = 1,
 				[117491] = 55,
 				[118054] = 10,
 				[126619] = 1,
 				[85580] = 1,
 				[118236] = 5,
-				[29735] = 14,
-				[140581] = 1,
+				[86574] = 1,
+				[139808] = 2,
 				[17204] = 1,
-				[139851] = 1,
+				[140581] = 1,
 				[124436] = 15,
-				[147885] = 1,
+				[139851] = 1,
 				[116053] = 1,
-				[124115] = 20,
-				[24581] = 3,
-				[126628] = 1,
+				[109585] = 21,
+				[38090] = 1,
+				[147885] = 1,
 				[113822] = 1,
 				[80433] = 2,
-				[141012] = 1,
+				[29735] = 14,
 				[126620] = 1,
 				[139795] = 1,
+				[139853] = 5,
+				[109118] = 83,
+				[24581] = 3,
 				[127408] = 1,
-				[126615] = 1,
-				[8827] = 29,
-				[141001] = 1,
 				[118046] = 2,
 				[124437] = 200,
-				[126653] = 1,
-				[7070] = 2,
-				[126612] = 1,
-				[111366] = 26,
-				[126411] = 1,
-				[113823] = 1,
-				[124124] = 19,
 				[72092] = 250,
-				[141002] = 1,
+				[126653] = 1,
+				[7069] = 1,
+				[145535] = 1,
+				[7070] = 2,
+				[113823] = 1,
+				[111366] = 26,
+				[10025] = 1,
+				[126411] = 1,
 				[126637] = 1,
 				[139064] = 1,
 				[87399] = 109,
-				[38090] = 1,
+				[141002] = 1,
 				[139670] = 1,
-				[124461] = 35,
+				[124115] = 20,
 			},
 		},
 		["Shaekhan - Argent Dawn"] = {
@@ -967,6 +961,18 @@ AskMrRobotDb3 = {
 					},
 					[720] = {
 					},
+					[43] = {
+					},
+					[249] = {
+					},
+					[580] = {
+					},
+					[1676] = {
+						[14] = false,
+						[16] = false,
+						[17] = false,
+						[15] = false,
+					},
 					[1515] = {
 					},
 					[1456] = {
@@ -976,6 +982,8 @@ AskMrRobotDb3 = {
 						[16] = false,
 						[17] = false,
 						[15] = false,
+					},
+					[565] = {
 					},
 					[1153] = {
 					},
@@ -987,25 +995,21 @@ AskMrRobotDb3 = {
 					},
 					[939] = {
 					},
-					[580] = {
+					[129] = {
 					},
 					[1492] = {
 					},
-					[1676] = {
-						[14] = false,
-						[16] = false,
-						[17] = false,
-						[15] = false,
+					[1489] = {
 					},
 					[1626] = {
 					},
-					[565] = {
+					[230] = {
 					},
 					[1571] = {
 					},
-					[230] = {
+					[1764] = {
 					},
-					[1516] = {
+					[1705] = {
 					},
 					[1520] = {
 						[14] = false,
@@ -1017,9 +1021,9 @@ AskMrRobotDb3 = {
 					},
 					[646] = {
 					},
-					[532] = {
-					},
 					[938] = {
+					},
+					[532] = {
 					},
 					[1477] = {
 					},
@@ -1027,31 +1031,31 @@ AskMrRobotDb3 = {
 					},
 					[269] = {
 					},
-					[1489] = {
+					[595] = {
 					},
 					[1493] = {
 					},
-					[534] = {
-					},
 					[967] = {
+					},
+					[548] = {
 					},
 					[1064] = {
 					},
-					[1458] = {
+					[469] = {
 					},
 					[544] = {
 					},
 					[1706] = {
 					},
-					[548] = {
+					[1458] = {
 					},
 					[1651] = {
-					},
-					[469] = {
 					},
 					[1466] = {
 					},
 					[870] = {
+					},
+					[534] = {
 					},
 					[409] = {
 					},
@@ -1063,11 +1067,11 @@ AskMrRobotDb3 = {
 					},
 					[1116] = {
 					},
-					[595] = {
-					},
-					[1705] = {
+					[1516] = {
 					},
 					[531] = {
+					},
+					[47] = {
 					},
 				},
 			},
