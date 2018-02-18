@@ -1,10 +1,10 @@
 
 PetTracker_Sets = {
-	["HideSpecies"] = true,
+	["MainTutorial"] = 6,
 	["JournalTutorial"] = 4,
 	["MapFilter"] = "",
 	["TamerHistory"] = {
 	},
-	["MainTutorial"] = 6,
+	["HideSpecies"] = true,
 	["HideStables"] = true,
 }

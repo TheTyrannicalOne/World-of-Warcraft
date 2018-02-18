@@ -12,6 +12,16 @@ FishingBuddy_Info = {
 	["FishingHoles"] = {
 	},
 	["Version"] = 18000,
+	["FishInfo2"] = 0,
+	["ZoneIndex"] = {
+		"The Culling of Stratholme", -- [1]
+		"Stormheim", -- [2]
+		"Azsuna", -- [3]
+		"Serpentshrine Cavern", -- [4]
+	},
+	["ImppDBLoaded"] = 0,
+	["Fishies"] = {
+	},
 	["SubZones"] = {
 		[3001] = "Farondale",
 		[1000] = 2,
@@ -23,14 +33,4 @@ FishingBuddy_Info = {
 		[3000] = 1,
 		[2000] = 1,
 	},
-	["ZoneIndex"] = {
-		"The Culling of Stratholme", -- [1]
-		"Stormheim", -- [2]
-		"Azsuna", -- [3]
-		"Serpentshrine Cavern", -- [4]
-	},
-	["ImppDBLoaded"] = 0,
-	["Fishies"] = {
-	},
-	["FishInfo2"] = 0,
 }

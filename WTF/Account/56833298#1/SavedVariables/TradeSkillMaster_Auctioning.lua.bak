@@ -3,7 +3,20 @@ TradeSkillMaster_AuctioningDB = {
 	["g@ @confirmCompleteSound"] = "TSM_NO_SOUND",
 	["g@ @roundNormalPrice"] = false,
 	["g@ @disableInvalidMsg"] = false,
-	["f@Alliance - Darkspear@whitelist"] = {
+	["_currentProfile"] = {
+		["Bathal - Argent Dawn"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
+		["Datgorg - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Mulmok - Argent Dawn"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
 	},
 	["_scopeKeys"] = {
 		["char"] = {
@@ -21,24 +34,22 @@ TradeSkillMaster_AuctioningDB = {
 			"Bathal - Argent Dawn", -- [12]
 			"Shathiel - Darkspear", -- [13]
 		},
-		["factionrealm"] = {
-			"Horde - Argent Dawn", -- [1]
-			"Alliance - Darkspear", -- [2]
+		["realm"] = {
+			"Argent Dawn", -- [1]
+			"Darkspear", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Argent Dawn", -- [1]
-			"Darkspear", -- [2]
+		["factionrealm"] = {
+			"Horde - Argent Dawn", -- [1]
+			"Alliance - Darkspear", -- [2]
 		},
 	},
 	["g@ @priceColumn"] = 1,
 	["f@Horde - Argent Dawn@whitelist"] = {
 	},
-	["g@ @helpPlatesShown"] = {
-		["selection"] = true,
-	},
+	["g@ @cancelWithBid"] = false,
 	["g@ @scanCompleteSound"] = "TSM_NO_SOUND",
 	["_hash"] = 5870975,
 	["g@ @matchWhitelist"] = true,
@@ -47,33 +58,22 @@ TradeSkillMaster_AuctioningDB = {
 		["Cowtastraphy"] = true,
 		["Tyran"] = true,
 		["Datgorg"] = true,
-		["Bathal"] = true,
 		["Vadder"] = true,
+		["Bathal"] = true,
 		["Mulmok"] = true,
 		["Brotus"] = true,
 		["Jingojaggot"] = true,
-		["Shaekhan"] = true,
 		["Shanyt"] = true,
+		["Shaekhan"] = true,
 		["Fantastiburo"] = true,
 	},
 	["f@Alliance - Darkspear@player"] = {
 		["Shathiel"] = true,
 	},
-	["g@ @cancelWithBid"] = false,
+	["g@ @helpPlatesShown"] = {
+		["selection"] = true,
+	},
 	["_version"] = 1,
-	["_currentProfile"] = {
-		["Bathal - Argent Dawn"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
-		["Datgorg - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Mulmok - Argent Dawn"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
+	["f@Alliance - Darkspear@whitelist"] = {
 	},
 }
