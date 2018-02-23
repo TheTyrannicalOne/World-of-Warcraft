@@ -1,6 +1,7 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
+	["height"] = 300,
 	["messageHistory"] = {
 		{
 			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.3 (default 0.4)", -- [1]
@@ -3134,10 +3135,789 @@ Blizzard_Console_SavedVars = {
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [783]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [784]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [785]
+		{
+			"Detail doodad instancing enabled.", -- [1]
+			0, -- [2]
+		}, -- [786]
+		{
+			"Water detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [787]
+		{
+			"Ripple detail changed to 1", -- [1]
+			0, -- [2]
+		}, -- [788]
+		{
+			"Reflection mode changed to 0", -- [1]
+			0, -- [2]
+		}, -- [789]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [790]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [791]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [792]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [793]
+		{
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			0, -- [2]
+		}, -- [794]
+		{
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [795]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [796]
+		{
+			"Hardware PCF enabled.", -- [1]
+			0, -- [2]
+		}, -- [797]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [798]
+		{
+			"Texture cache size set to 512MB.", -- [1]
+			0, -- [2]
+		}, -- [799]
+		{
+			"Shadow mode changed to 3 - 3 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [800]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [801]
+		{
+			"Soft shadows changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [802]
+		{
+			"SSAO mode set to 3", -- [1]
+			0, -- [2]
+		}, -- [803]
+		{
+			"SSAO distance value set to 100.000000", -- [1]
+			0, -- [2]
+		}, -- [804]
+		{
+			"SSAO blur set to 2", -- [1]
+			0, -- [2]
+		}, -- [805]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [806]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [807]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [808]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [809]
+		{
+			"LightBuffer mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [810]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [811]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [812]
+		{
+			"Resample quality changed to 0", -- [1]
+			0, -- [2]
+		}, -- [813]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [814]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [815]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [816]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [817]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [818]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [819]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [820]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [821]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [822]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [823]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [824]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [825]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [826]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [827]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [828]
+		{
+			"CVar 'Sound_OtherPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [829]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [830]
+		{
+			"FFX: Anti Aliasing Mode disabled", -- [1]
+			0, -- [2]
+		}, -- [831]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [832]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [833]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [834]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [835]
+		{
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [836]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [837]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [838]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [839]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [840]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [841]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [842]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [843]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [844]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [845]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"3\"", -- [1]
+			0, -- [2]
+		}, -- [846]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [847]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			0, -- [2]
+		}, -- [848]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [849]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [850]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [851]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [852]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [853]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [854]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [855]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [856]
+		{
+			"[IBN_Login] Requesting change realm list", -- [1]
+			0, -- [2]
+		}, -- [857]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [858]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [859]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [860]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [861]
+		{
+			"[IBN_Login] Requesting realm listsnumSubRegions=\"3\"", -- [1]
+			0, -- [2]
+		}, -- [862]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [863]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			0, -- [2]
+		}, -- [864]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [865]
+		{
+			"NetClient::HandleDisconnect()", -- [1]
+			0, -- [2]
+		}, -- [866]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [867]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [868]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [869]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [870]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [871]
+		{
+			"Texture cache size set to 512MB.", -- [1]
+			0, -- [2]
+		}, -- [872]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [873]
+		{
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			0, -- [2]
+		}, -- [874]
+		{
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			0, -- [2]
+		}, -- [875]
+		{
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			0, -- [2]
+		}, -- [876]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [877]
+		{
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			0, -- [2]
+		}, -- [878]
+		{
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			0, -- [2]
+		}, -- [879]
+		{
+			"Proficiency in item class 2 set to 0x000018c480", -- [1]
+			0, -- [2]
+		}, -- [880]
+		{
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			0, -- [2]
+		}, -- [881]
+		{
+			"Proficiency in item class 2 set to 0x000018c480", -- [1]
+			0, -- [2]
+		}, -- [882]
+		{
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			0, -- [2]
+		}, -- [883]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [884]
+		{
+			"Time set to 2/22/2018 (Thu) 21:56", -- [1]
+			0, -- [2]
+		}, -- [885]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [886]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			0, -- [2]
+		}, -- [887]
+		{
+			"Test CVar test_cameraHeadMovementRangeScale has been set to 4 (default 5)", -- [1]
+			0, -- [2]
+		}, -- [888]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			0, -- [2]
+		}, -- [889]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [890]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [891]
+		{
+			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [892]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [893]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.11 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [894]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [895]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [896]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [897]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [898]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [899]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.3 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [900]
+		{
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.4 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [901]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [902]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 8.5 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [903]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [904]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [905]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [906]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.11 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [907]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [908]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [909]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [910]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [911]
+		{
+			"Test CVar test_cameraHeadMovementStrength has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [912]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 1 (default 0.25)", -- [1]
+			0, -- [2]
+		}, -- [913]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
+			0, -- [2]
+		}, -- [914]
+		{
+			"Test CVar test_cameraOverShoulder has been set to -1.8 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [915]
+		{
+			"Test CVar test_cameraTargetFocusEnemyEnable has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [916]
+		{
+			"Test CVar test_cameraTargetFocusInteractEnable has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [917]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			0, -- [2]
+		}, -- [918]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			0, -- [2]
+		}, -- [919]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [920]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [921]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.11 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [922]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [923]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [924]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [925]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [926]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [927]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.3 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [928]
+		{
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.4 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [929]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [930]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 8.5 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [931]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [932]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [933]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [934]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.11 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [935]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [936]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [937]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [938]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [939]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [940]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.3 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [941]
+		{
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.4 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [942]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [943]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 8.5 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [944]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [945]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [946]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [947]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.11 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [948]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [949]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [950]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [951]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 1 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [952]
+		{
+			"Test CVar test_cameraHeadMovementStrength has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [953]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 1 (default 0.25)", -- [1]
+			0, -- [2]
+		}, -- [954]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.66 (default 0.75)", -- [1]
+			0, -- [2]
+		}, -- [955]
+		{
+			"Test CVar test_cameraOverShoulder has been set to -1.8 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [956]
+		{
+			"Test CVar test_cameraTargetFocusEnemyEnable has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [957]
+		{
+			"Test CVar test_cameraTargetFocusInteractEnable has been set to 1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [958]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadFlying has been set to 0.46 (default 0.75)", -- [1]
+			0, -- [2]
+		}, -- [959]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPadDownScale has been set to 0 (default 0.25)", -- [1]
+			0, -- [2]
+		}, -- [960]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [961]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [962]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.11 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [963]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [964]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [965]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [966]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [967]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [968]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.3 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [969]
+		{
+			"Test CVar test_cameraHeadMovementStrength has been set to 0.4 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [970]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 5 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [971]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 8.5 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [972]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.08 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [973]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.1 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [974]
+		{
+			"Test CVar test_cameraDynamicPitchSmartPivotCutoffDist has been set to 0 (default 10)", -- [1]
+			0, -- [2]
+		}, -- [975]
+		{
+			"Test CVar test_cameraDynamicPitchBaseFovPad has been set to 0.11 (default 0.4)", -- [1]
+			0, -- [2]
+		}, -- [976]
+		{
+			"Test CVar test_cameraOverShoulder has been set to 1.2 (default 0)", -- [1]
+			0, -- [2]
+		}, -- [977]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [978]
 	},
-	["height"] = 300,
-	["fontHeight"] = 14,
 	["isShown"] = false,
+	["fontHeight"] = 14,
 	["commandHistory"] = {
 	},
 }

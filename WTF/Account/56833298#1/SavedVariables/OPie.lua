@@ -15,9 +15,9 @@ OneRing_Config = {
 				["RaidSymbols"] = false,
 				["OPieTracking"] = false,
 				["HunterShots"] = false,
-				["WorldMarkers"] = false,
-				["OPieTrinkets"] = false,
 				["OPieAutoQuest"] = false,
+				["OPieTrinkets"] = false,
+				["WorldMarkers"] = false,
 			},
 		},
 	},
@@ -92,10 +92,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABuescjG5z1K",
 					["id"] = 228919,
 				}, -- [17]
-				["limit"] = "Urbul-Zul'jin",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Urbul-Zul'jin",
 			},
 			["Mounts1"] = {
 				{
@@ -110,10 +110,10 @@ OneRing_Config = {
 					["id"] = 64731,
 					["sliceToken"] = "ABueoFiE/rt",
 				}, -- [3]
-				["limit"] = "Serbitechna-Darkspear",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Serbitechna-Darkspear",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
