@@ -1,23 +1,44 @@
-Changes since tag 7.3.22
+Changes since tag 7.3.23
 
-commit 16c4a3d1281351f119b035d0032d6e90d6d9124e
+commit 67af4e75ec980ee4edb51f319147608a039eb266
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Feb 16 06:20:37 2018 +0100
+Date:   Fri Feb 23 06:15:26 2018 +0100
 
-    Omega via svn r17319:
-    small fix with warning text firing before variable reset.
+    Omega via svn r17334:
+    Couple tweaks
 
-commit b9d7f09a5d74acf74fc2993fe392de0420689b76
+commit 613ffd4671012bc65f4178b505d04cda30f1f9fa
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Feb 15 06:21:20 2018 +0100
+Date:   Fri Feb 23 00:32:33 2018 +0100
 
-    Omega via svn r17318:
-    timer fixes and new countdown for mythic only
+    Omega via svn r17333:
+    Populate some more dungeon data in rom latest build.
 
-commit 4406eb46353eaf7086e986d168060c323e26a582
+commit 00ccbae6bd731c026cccdf8cf60c81bb222c60ad
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Feb 14 23:58:10 2018 +0100
+Date:   Thu Feb 22 09:57:17 2018 +0100
 
-    tandanu via svn r17317:
+    Omega via svn r17332:
+    More manual stuff
+
+commit 57cb5b95bb90e7abd8a3ec169f9b981de35be0c2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 22 09:49:15 2018 +0100
+
+    Omega via svn r17331:
+    Manual localize all
+
+commit e7f925533aaa1ed17fb03ffb3427930108c4aa88
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Feb 22 06:27:53 2018 +0100
+
+    Omega via svn r17330:
+    Minor tweaks
+
+commit cfe43c433c977a7dcdf4ea6a99191b3ef821bbbd
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Feb 21 22:15:08 2018 +0100
+
+    tandanu via svn r17329:
     increment alpha version
 
