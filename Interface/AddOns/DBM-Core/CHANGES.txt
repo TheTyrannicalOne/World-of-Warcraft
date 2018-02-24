@@ -1,5 +1,32 @@
 Changes since tag 7.3.23
 
+commit 7373d4fc4646a5b12125ed0c502ab91f30fabdec
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 23 17:09:05 2018 +0100
+
+    ultrashining via svn r17336:
+    zhTW update
+
+commit 7373d4fc4646a5b12125ed0c502ab91f30fabdec
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 23 17:09:05 2018 +0100
+
+    ultrashining via svn r17336:
+    zhTW update
+
+commit 41acdc77e898791524a400a99bab2a3d899683d5
+Author: MysticalOS <MysticalOS@nomail.com>
+Date:   Fri Feb 23 03:33:47 2018 -0500
+
+    Update pkgmeta
+
+commit 86a821b5d195289ee2a85bafca0359f21e835714
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Feb 23 09:31:53 2018 +0100
+
+    Omega via svn r17335:
+    Begin Uldir stub
+
 commit 67af4e75ec980ee4edb51f319147608a039eb266
 Author: subversion <svn@deadlybossmods.com>
 Date:   Fri Feb 23 06:15:26 2018 +0100
