@@ -1,422 +1,418 @@
-2018-02-23T00:56:35:903 [11276] | INFO  | Initializing crosire's ReShade version '3.1.1.243' (64-bit) built on '2018-01-13 10:40:57' loaded from 'D:\Program Files (x86)\World of Warcraft\dxgi.dll' to 'D:\Program Files (x86)\World of Warcraft\Wow-64.exe' ...
-2018-02-23T00:56:35:904 [11276] | INFO  | Installing hook for 'LoadLibraryA' at 0x00007FF877C313F0 with 0x00007FF85F864A60 using method 1 ...
-2018-02-23T00:56:35:904 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:35:933 [11276] | INFO  | Installing hook for 'LoadLibraryExA' at 0x00007FF877C30A90 with 0x00007FF85F864C60 using method 1 ...
-2018-02-23T00:56:35:933 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:35:961 [11276] | INFO  | Installing hook for 'LoadLibraryW' at 0x00007FF877C30B00 with 0x00007FF85F864D20 using method 1 ...
-2018-02-23T00:56:35:961 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:35:989 [11276] | INFO  | Installing hook for 'LoadLibraryExW' at 0x00007FF877C2C0F0 with 0x00007FF85F864F20 using method 1 ...
-2018-02-23T00:56:35:989 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:018 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\d3d9.dll' ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Libraries loaded.
-2018-02-23T00:56:36:019 [11276] | INFO  | > Dumping matches in export table:
-2018-02-23T00:56:36:019 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:019 [11276] | INFO  |   | Address            | Ordinal | Name                                               |
-2018-02-23T00:56:36:019 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F055650 | 26      | D3DPERF_BeginEvent                                 |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F0556A0 | 27      | D3DPERF_EndEvent                                   |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F0556D0 | 28      | D3DPERF_GetStatus                                  |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F0556F0 | 29      | D3DPERF_QueryRepeatFrame                           |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F055730 | 30      | D3DPERF_SetMarker                                  |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F055770 | 31      | D3DPERF_SetOptions                                 |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F0557A0 | 32      | D3DPERF_SetRegion                                  |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F00DE10 | 36      | Direct3DCreate9                                    |
-2018-02-23T00:56:36:019 [11276] | INFO  |   | 0x00007FF86F00DE40 | 37      | Direct3DCreate9Ex                                  |
-2018-02-23T00:56:36:019 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:019 [11276] | INFO  | > Found 9 match(es). Installing ...
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'D3DPERF_BeginEvent' at 0x00007FF86F055650 with 0x00007FF85F839870 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'D3DPERF_EndEvent' at 0x00007FF86F0556A0 with 0x00007FF85F839870 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'D3DPERF_GetStatus' at 0x00007FF86F0556D0 with 0x00007FF85F839870 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'D3DPERF_QueryRepeatFrame' at 0x00007FF86F0556F0 with 0x00007FF85F839870 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'D3DPERF_SetMarker' at 0x00007FF86F055730 with 0x00007FF85F830BC0 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'D3DPERF_SetOptions' at 0x00007FF86F055770 with 0x00007FF85F830BC0 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'D3DPERF_SetRegion' at 0x00007FF86F0557A0 with 0x00007FF85F830BC0 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'Direct3DCreate9' at 0x00007FF86F00DE10 with 0x00007FF85F850C10 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:019 [11276] | INFO  | Installing hook for 'Direct3DCreate9Ex' at 0x00007FF86F00DE40 with 0x00007FF85F850D90 using method 1 ...
-2018-02-23T00:56:36:019 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:047 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\d3d10.dll' ...
-2018-02-23T00:56:36:048 [11276] | INFO  | > Delayed.
-2018-02-23T00:56:36:048 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\d3d10_1.dll' ...
-2018-02-23T00:56:36:048 [11276] | INFO  | > Delayed.
-2018-02-23T00:56:36:049 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\d3d11.dll' ...
-2018-02-23T00:56:36:049 [11276] | INFO  | > Libraries loaded.
-2018-02-23T00:56:36:049 [11276] | INFO  | > Dumping matches in export table:
-2018-02-23T00:56:36:049 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:049 [11276] | INFO  |   | Address            | Ordinal | Name                                               |
-2018-02-23T00:56:36:049 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:049 [11276] | INFO  |   | 0x00007FF873EB4030 | 22      | D3D11CreateDevice                                  |
-2018-02-23T00:56:36:049 [11276] | INFO  |   | 0x00007FF873EB3EC0 | 23      | D3D11CreateDeviceAndSwapChain                      |
-2018-02-23T00:56:36:049 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:049 [11276] | INFO  | > Found 2 match(es). Installing ...
-2018-02-23T00:56:36:049 [11276] | INFO  | Installing hook for 'D3D11CreateDevice' at 0x00007FF873EB4030 with 0x00007FF85F842D20 using method 1 ...
-2018-02-23T00:56:36:049 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:049 [11276] | INFO  | Installing hook for 'D3D11CreateDeviceAndSwapChain' at 0x00007FF873EB3EC0 with 0x00007FF85F843000 using method 1 ...
-2018-02-23T00:56:36:049 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:078 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\dxgi.dll' ...
-2018-02-23T00:56:36:078 [11276] | INFO  | > Delayed until first call to an exported function.
-2018-02-23T00:56:36:079 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\opengl32.dll' ...
-2018-02-23T00:56:36:079 [11276] | INFO  | > Delayed.
-2018-02-23T00:56:36:079 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\user32.dll' ...
-2018-02-23T00:56:36:080 [11276] | INFO  | > Libraries loaded.
-2018-02-23T00:56:36:080 [11276] | INFO  | > Dumping matches in export table:
-2018-02-23T00:56:36:080 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:080 [11276] | INFO  |   | Address            | Ordinal | Name                                               |
-2018-02-23T00:56:36:080 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF878137AA0 | 1826    | GetCursorPos                                       |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF8781306E0 | 1891    | GetMessageA                                        |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF878133F50 | 1895    | GetMessageW                                        |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF878130040 | 2186    | PeekMessageA                                       |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF878130170 | 2187    | PeekMessageW                                       |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF8781389C0 | 2190    | PostMessageA                                       |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF878112A40 | 2191    | PostMessageW                                       |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF87812A2C0 | 2234    | RegisterClassA                                     |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF87818D400 | 2235    | RegisterClassExA                                   |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF87812D170 | 2236    | RegisterClassExW                                   |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF87812D1A0 | 2237    | RegisterClassW                                     |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF8781420F0 | 2253    | RegisterRawInputDevices                            |
-2018-02-23T00:56:36:080 [11276] | INFO  |   | 0x00007FF87813AF80 | 2308    | SetCursorPos                                       |
-2018-02-23T00:56:36:080 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:080 [11276] | INFO  | > Found 13 match(es). Installing ...
-2018-02-23T00:56:36:080 [11276] | INFO  | Installing hook for 'GetCursorPos' at 0x00007FF878137AA0 with 0x00007FF85F86C170 using method 1 ...
-2018-02-23T00:56:36:080 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:080 [11276] | INFO  | Installing hook for 'GetMessageA' at 0x00007FF8781306E0 with 0x00007FF85F86B4D0 using method 1 ...
-2018-02-23T00:56:36:080 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:080 [11276] | INFO  | Installing hook for 'GetMessageW' at 0x00007FF878133F50 with 0x00007FF85F86B5A0 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'PeekMessageA' at 0x00007FF878130040 with 0x00007FF85F86B670 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'PeekMessageW' at 0x00007FF878130170 with 0x00007FF85F86B750 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'PostMessageA' at 0x00007FF8781389C0 with 0x00007FF85F86BF50 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'PostMessageW' at 0x00007FF878112A40 with 0x00007FF85F86C010 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'RegisterClassA' at 0x00007FF87812A2C0 with 0x00007FF85F8B0F30 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'RegisterClassExA' at 0x00007FF87818D400 with 0x00007FF85F8B1270 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'RegisterClassExW' at 0x00007FF87812D170 with 0x00007FF85F8B1400 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'RegisterClassW' at 0x00007FF87812D1A0 with 0x00007FF85F8B10D0 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'RegisterRawInputDevices' at 0x00007FF8781420F0 with 0x00007FF85F86B830 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:081 [11276] | INFO  | Installing hook for 'SetCursorPos' at 0x00007FF87813AF80 with 0x00007FF85F86C0D0 using method 1 ...
-2018-02-23T00:56:36:081 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:109 [11276] | INFO  | Registering hooks for 'C:\Windows\system32\ws2_32.dll' ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Libraries loaded.
-2018-02-23T00:56:36:110 [11276] | INFO  | > Dumping matches in export table:
-2018-02-23T00:56:36:110 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:110 [11276] | INFO  |   | Address            | Ordinal | Name                                               |
-2018-02-23T00:56:36:110 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A8AD90 | 91      | WSARecv                                            |
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A96780 | 93      | WSARecvFrom                                        |
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A8A8A0 | 96      | WSASend                                            |
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A96D80 | 99      | WSASendTo                                          |
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A89EC0 | 16      | recv                                               |
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A89CC0 | 17      | recvfrom                                           |
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A8BA40 | 19      | send                                               |
-2018-02-23T00:56:36:110 [11276] | INFO  |   | 0x00007FF878A8F0B0 | 20      | sendto                                             |
-2018-02-23T00:56:36:110 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:110 [11276] | INFO  | > Found 8 match(es). Installing ...
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'WSARecv' at 0x00007FF878A8AD90 with 0x00007FF85F8B1740 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'WSARecvFrom' at 0x00007FF878A96780 with 0x00007FF85F8B18D0 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'WSASend' at 0x00007FF878A8A8A0 with 0x00007FF85F8B15A0 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'WSASendTo' at 0x00007FF878A96D80 with 0x00007FF85F8B1670 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'recv' at 0x00007FF878A89EC0 with 0x00007FF85F8B1B50 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'recvfrom' at 0x00007FF878A89CC0 with 0x00007FF85F8B1C00 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'send' at 0x00007FF878A8BA40 with 0x00007FF85F8B19D0 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:110 [11276] | INFO  | Installing hook for 'sendto' at 0x00007FF878A8F0B0 with 0x00007FF85F8B1A80 using method 1 ...
-2018-02-23T00:56:36:110 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:138 [11276] | INFO  | Initialized.
-2018-02-23T00:56:36:138 [11276] | INFO  | Redirecting 'D3D11CreateDevice(0000000000000000, 1, 0000000000000000, 0x1, 0000007C70DEF5B0, 3, 7, 0000000000000000, 0000007C70DEF5D0, 0000000000000000)' ...
-2018-02-23T00:56:36:138 [11276] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
-2018-02-23T00:56:36:138 [11276] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(0000000000000000, 1, 0000000000000000, 0x1, 0000007C70DEF5B0, 3, 7, 0000000000000000, 0000000000000000, 0000000000000000, 0000007C70DEF5D0, 0000000000000000)' ...
-2018-02-23T00:56:36:139 [11276] | INFO  | Redirecting 'CreateDXGIFactory2(2147483648, {7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C70DEED38)' ...
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing export hooks for 'C:\Windows\system32\dxgi.dll' ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Dumping matches in export table:
-2018-02-23T00:56:36:140 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:140 [11276] | INFO  |   | Address            | Ordinal | Name                                               |
-2018-02-23T00:56:36:140 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:140 [11276] | INFO  |   | 0x00007FF875928D00 | 11      | CreateDXGIFactory                                  |
-2018-02-23T00:56:36:140 [11276] | INFO  |   | 0x00007FF875927F00 | 12      | CreateDXGIFactory1                                 |
-2018-02-23T00:56:36:140 [11276] | INFO  |   | 0x00007FF8759153A0 | 13      | CreateDXGIFactory2                                 |
-2018-02-23T00:56:36:140 [11276] | INFO  |   | 0x00007FF87592C2F0 | 14      | DXGID3D10CreateDevice                              |
-2018-02-23T00:56:36:140 [11276] | INFO  |   | 0x00007FF87592C2F0 | 15      | DXGID3D10CreateLayeredDevice                       |
-2018-02-23T00:56:36:140 [11276] | INFO  |   | 0x00007FF87592C2D0 | 17      | DXGID3D10GetLayeredDeviceSize                      |
-2018-02-23T00:56:36:140 [11276] | INFO  |   | 0x00007FF87592C2F0 | 18      | DXGID3D10RegisterLayers                            |
-2018-02-23T00:56:36:140 [11276] | INFO  |   +--------------------+---------+----------------------------------------------------+
-2018-02-23T00:56:36:140 [11276] | INFO  | > Found 7 match(es). Installing ...
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing hook for 'CreateDXGIFactory' at 0x00007FF875928D00 with 0x00007FF85F884E30 using method 0 ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing hook for 'CreateDXGIFactory1' at 0x00007FF875927F00 with 0x00007FF85F884F70 using method 0 ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing hook for 'CreateDXGIFactory2' at 0x00007FF8759153A0 with 0x00007FF85F885220 using method 0 ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing hook for 'DXGID3D10CreateDevice' at 0x00007FF87592C2F0 with 0x00007FF85F884D60 using method 0 ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing hook for 'DXGID3D10CreateLayeredDevice' at 0x00007FF87592C2F0 with 0x00007FF85F884DB0 using method 0 ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing hook for 'DXGID3D10GetLayeredDeviceSize' at 0x00007FF87592C2D0 with 0x00007FF85F884E00 using method 0 ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:140 [11276] | INFO  | Installing hook for 'DXGID3D10RegisterLayers' at 0x00007FF87592C2F0 with 0x00007FF85F884E00 using method 0 ...
-2018-02-23T00:56:36:140 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:143 [11276] | INFO  | Installing hook for 'IDXGIFactory::CreateSwapChain' at 0x00007FF8759642A0 with 0x00007FF85F882FF0 using method 2 ...
-2018-02-23T00:56:36:143 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:143 [11276] | INFO  | Installing hook for 'IDXGIFactory2::CreateSwapChainForHwnd' at 0x00007FF875964A90 with 0x00007FF85F8836F0 using method 2 ...
-2018-02-23T00:56:36:143 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:143 [11276] | INFO  | Installing hook for 'IDXGIFactory2::CreateSwapChainForCoreWindow' at 0x00007FF8759648B0 with 0x00007FF85F883ED0 using method 2 ...
-2018-02-23T00:56:36:143 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:143 [11276] | INFO  | Installing hook for 'IDXGIFactory2::CreateSwapChainForComposition' at 0x00007FF875964710 with 0x00007FF85F884620 using method 2 ...
-2018-02-23T00:56:36:143 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:143 [11276] | INFO  | Returning 'IDXGIFactory2' object 000001F1353808C0
-2018-02-23T00:56:36:170 [11276] | INFO  | > Using feature level 0xb000.
-2018-02-23T00:56:36:177 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:36:194 [11276] | INFO  | Installing hook for 'IDirect3D9::CreateDevice' at 0x00007FF86EFF2490 with 0x00007FF85F84FE80 using method 2 ...
-2018-02-23T00:56:36:194 [11276] | INFO  | > Succeeded.
-2018-02-23T00:56:36:194 [11276] | INFO  | Returning 'IDirect3D9' object 000001F13F82A860
-2018-02-23T00:56:36:201 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C70DEF428)' ...
-2018-02-23T00:56:36:202 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F1353808C0
-2018-02-23T00:56:36:216 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C70DEF3D0)' ...
-2018-02-23T00:56:36:216 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F1353808C0
-2018-02-23T00:56:36:224 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:36:238 [11276] | INFO  | Returning 'IDirect3D9' object 000001F13F7B5D20
-2018-02-23T00:56:36:241 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C70DEF3E0)' ...
-2018-02-23T00:56:36:241 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F13415D660
-2018-02-23T00:56:36:250 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C70DEF348)' ...
-2018-02-23T00:56:36:250 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F13415CA20
-2018-02-23T00:56:36:264 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C70DEF408)' ...
-2018-02-23T00:56:36:264 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F13415CA20
-2018-02-23T00:56:36:278 [11276] | INFO  | Redirecting 'RegisterClassExW(0000007C70DEF430)' ...
-2018-02-23T00:56:36:286 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 000001F13F7B8668)' ...
-2018-02-23T00:56:36:286 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F13415C0F0
-2018-02-23T00:56:36:335 [11276] | INFO  | Redirecting 'D3D11CreateDevice(000001F13F827730, 0, 0000000000000000, 0x1, 0000007C70DEF338, 3, 7, 000001F13F7B8660, 0000007C70DEF308, 000001F13F7B8680)' ...
-2018-02-23T00:56:36:335 [11276] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
-2018-02-23T00:56:36:335 [11276] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(000001F13F827730, 0, 0000000000000000, 0x1, 0000007C70DEF338, 3, 7, 0000000000000000, 0000000000000000, 000001F13F7B8660, 0000007C70DEF308, 000001F13F7B8680)' ...
-2018-02-23T00:56:36:362 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C70DEB268)' ...
-2018-02-23T00:56:36:362 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F13415C400
-2018-02-23T00:56:36:362 [11276] | INFO  | Redirecting 'D3D11CreateDevice(000001F1341CD180, 0, 0000000000000000, 0, 0000007C70DEB3A0, 4, 7, 000001F1341C3068, 000001F1341C30A4, 000001F1341C3070)' ...
-2018-02-23T00:56:36:362 [11276] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
-2018-02-23T00:56:36:362 [11276] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(000001F1341CD180, 0, 0000000000000000, 0, 0000007C70DEB3A0, 4, 7, 0000000000000000, 0000000000000000, 000001F1341C3068, 000001F1341C30A4, 000001F1341C3070)' ...
-2018-02-23T00:56:36:382 [11276] | INFO  | > Using feature level 0xb100.
-2018-02-23T00:56:36:382 [11276] | INFO  | Returning 'IDXGIDevice1' object 000001F1341D2400
-2018-02-23T00:56:36:382 [11276] | INFO  | Returning 'ID3D11Device' object 000001F13F840070
-2018-02-23T00:56:36:382 [11276] | INFO  | Returning 'ID3D11DeviceContext' object 000001F13F7CCA50
-2018-02-23T00:56:36:383 [11276] | INFO  | Redirecting 'CreateDXGIFactory({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C70DEB4A0)' ...
-2018-02-23T00:56:36:383 [11276] | INFO  | > Passing on to 'CreateDXGIFactory1':
-2018-02-23T00:56:36:383 [11276] | INFO  | Redirecting 'CreateDXGIFactory1({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C70DEB4A0)' ...
-2018-02-23T00:56:36:383 [11276] | INFO  | Returning 'IDXGIFactory1' object 000001F13415CA20
-2018-02-23T00:56:36:611 [11276] | INFO  | > Using feature level 0xb000.
-2018-02-23T00:56:36:611 [11276] | INFO  | Returning 'IDXGIDevice1' object 000001F13F7A6740
-2018-02-23T00:56:36:611 [11276] | INFO  | Returning 'ID3D11Device' object 000001F13FB05780
-2018-02-23T00:56:36:611 [11276] | INFO  | Returning 'ID3D11DeviceContext' object 000001F13FD45BD0
-2018-02-23T00:56:36:611 [11276] | INFO  | Redirecting 'IDXGIFactory::CreateSwapChain(000001F13415C0F0, 000001F13FB05780, 0000007C70DEF2B0, 000001F13F7B8678)' ...
-2018-02-23T00:56:36:611 [11276] | INFO  | > Dumping swap chain description:
-2018-02-23T00:56:36:611 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:36:611 [11276] | INFO  |   | Parameter                               | Value                                   |
-2018-02-23T00:56:36:611 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:36:611 [11276] | INFO  |   | Width                                   | 2560                                    |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | Height                                  | 1440                                    |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | RefreshRate                             | 165000              1000                |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | Format                                  | 28                                      |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | ScanlineOrdering                        | 1                                       |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | Scaling                                 | 0                                       |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | SampleCount                             | 1                                       |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | SampleQuality                           | 0                                       |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | BufferUsage                             | 48                                      |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | BufferCount                             | 1                                       |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | OutputWindow                            | 00000000001A03C6                        |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | Windowed                                | FALSE                                   |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | SwapEffect                              | 0                                       |
-2018-02-23T00:56:36:611 [11276] | INFO  |   | Flags                                   | 0x2                                     |
-2018-02-23T00:56:36:611 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:36:716 [11276] | INFO  | Starting input capture for window 00000000001A03C6 ...
-2018-02-23T00:56:36:722 [11276] | INFO  | Recreated runtime environment on runtime 000001F13FF63EC0.
-2018-02-23T00:56:36:723 [11276] | INFO  | Returning 'IDXGISwapChain' object 000001F13F81A640
-2018-02-23T00:56:36:790 [11276] | INFO  | Redirecting 'IDXGISwapChain::SetFullscreenState(000001F13F81A640, TRUE, 0000000000000000)' ...
-2018-02-23T00:56:36:910 [11276] | INFO  | Redirecting 'RegisterRawInputDevices(0000007C70DEF5A0, 1, 16)' ...
-2018-02-23T00:56:36:910 [11276] | INFO  | > Dumping device registration at index 0:
-2018-02-23T00:56:36:910 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:36:910 [11276] | INFO  |   | Parameter                               | Value                                   |
-2018-02-23T00:56:36:910 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:36:910 [11276] | INFO  |   | UsagePage                               | 0x1                                     |
-2018-02-23T00:56:36:910 [11276] | INFO  |   | Usage                                   | 0x2                                     |
-2018-02-23T00:56:36:910 [11276] | INFO  |   | Flags                                   | 0x1                                     |
-2018-02-23T00:56:36:910 [11276] | INFO  |   | TargetWindow                            | 0000000000000000                        |
-2018-02-23T00:56:36:910 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:117 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:37:132 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1494261E0
-2018-02-23T00:56:37:133 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:37:139 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1D45ED360
-2018-02-23T00:56:37:362 [11276] | INFO  | Redirecting 'IDXGISwapChain::ResizeBuffers(000001F13F81A640, 1, 2560, 1440, 28, 0x2)' ...
-2018-02-23T00:56:37:362 [11276] | INFO  | Destroyed runtime environment on runtime 000001F13FF63EC0.
-2018-02-23T00:56:37:365 [01496] | INFO  | Redirecting 'Direct3DCreate9Ex(32, 00007FF86CB83498)' ...
-2018-02-23T00:56:37:372 [01496] | INFO  | Installing hook for 'IDirect3D9Ex::CreateDeviceEx' at 0x00007FF86EFF25E0 with 0x00007FF85F850530 using method 2 ...
-2018-02-23T00:56:37:372 [01496] | INFO  | > Succeeded.
-2018-02-23T00:56:37:372 [01496] | INFO  | Returning 'IDirect3D9Ex' object 000001F13FE325E0
-2018-02-23T00:56:37:372 [01496] | INFO  | Redirecting 'IDirect3D9Ex::CreateDeviceEx(000001F13FE325E0, 0, 4, 00000000001A03C6, 0x840, 0000007C718FF110, 0000000000000000, 0000007C718FF160)' ...
-2018-02-23T00:56:37:372 [01496] | INFO  | > Dumping presentation parameters:
-2018-02-23T00:56:37:372 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:372 [01496] | INFO  |   | Parameter                               | Value                                   |
-2018-02-23T00:56:37:372 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:372 [01496] | INFO  |   | BackBufferWidth                         | 0                                       |
-2018-02-23T00:56:37:372 [01496] | INFO  |   | BackBufferHeight                        | 0                                       |
-2018-02-23T00:56:37:372 [01496] | INFO  |   | BackBufferFormat                        | 22                                      |
-2018-02-23T00:56:37:372 [01496] | INFO  |   | BackBufferCount                         | 0                                       |
-2018-02-23T00:56:37:372 [01496] | INFO  |   | MultiSampleType                         | 0                                       |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | MultiSampleQuality                      | 0                                       |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | SwapEffect                              | 1                                       |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | DeviceWindow                            | 0000000000000000                        |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | Windowed                                | TRUE                                    |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | EnableAutoDepthStencil                  | FALSE                                   |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | AutoDepthStencilFormat                  | 0                                       |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | Flags                                   | 0                                       |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | FullScreen_RefreshRateInHz              | 0                                       |
-2018-02-23T00:56:37:373 [01496] | INFO  |   | PresentationInterval                    | 0                                       |
-2018-02-23T00:56:37:373 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:377 [11276] | INFO  | Recreated runtime environment on runtime 000001F13FF63EC0.
-2018-02-23T00:56:37:451 [01496] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C718FBCD8)' ...
-2018-02-23T00:56:37:451 [01496] | INFO  | Returning 'IDXGIFactory1' object 000001F14938FC00
-2018-02-23T00:56:37:451 [01496] | INFO  | Redirecting 'D3D11CreateDevice(000001F13F7D1050, 0, 0000000000000000, 0, 0000007C718FBE10, 4, 7, 000001F1356BFE98, 000001F1356BFED4, 000001F1356BFEA0)' ...
-2018-02-23T00:56:37:451 [01496] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
-2018-02-23T00:56:37:452 [01496] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(000001F13F7D1050, 0, 0000000000000000, 0, 0000007C718FBE10, 4, 7, 0000000000000000, 0000000000000000, 000001F1356BFE98, 000001F1356BFED4, 000001F1356BFEA0)' ...
-2018-02-23T00:56:37:480 [01496] | INFO  | > Using feature level 0xb100.
-2018-02-23T00:56:37:480 [01496] | INFO  | Returning 'IDXGIDevice1' object 000001F1D6011640
-2018-02-23T00:56:37:480 [01496] | INFO  | Returning 'ID3D11Device' object 000001F13FB047C0
-2018-02-23T00:56:37:480 [01496] | INFO  | Returning 'ID3D11DeviceContext' object 000001F1D62EA280
-2018-02-23T00:56:37:480 [01496] | INFO  | Redirecting 'CreateDXGIFactory({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C718FBF10)' ...
-2018-02-23T00:56:37:481 [01496] | INFO  | > Passing on to 'CreateDXGIFactory1':
-2018-02-23T00:56:37:481 [01496] | INFO  | Redirecting 'CreateDXGIFactory1({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C718FBF10)' ...
-2018-02-23T00:56:37:481 [01496] | INFO  | Returning 'IDXGIFactory1' object 000001F14938ECB0
-2018-02-23T00:56:37:484 [01496] | WARN  | > Skipping device due to device type being 'D3DDEVTYPE_NULLREF'.
-2018-02-23T00:56:37:484 [01496] | INFO  | Returning 'IDirect3DDevice9Ex' object 000001F1D5B28400
-2018-02-23T00:56:37:484 [01496] | WARN  | Reference count for 'IDXGIDevice1' object 000001F1D6011640 is inconsistent: 2, but expected 1.
-2018-02-23T00:56:37:484 [01496] | INFO  | Destroyed 'IDXGIDevice1' object 000001F1D6011640.
-2018-02-23T00:56:37:484 [01496] | INFO  | Destroyed 'ID3D11DeviceContext' object 000001F1D62EA280.
-2018-02-23T00:56:37:496 [01496] | INFO  | Destroyed 'ID3D11Device' object 000001F13FB047C0.
-2018-02-23T00:56:37:581 [01496] | INFO  | Redirecting 'D3D11CreateDevice(0000000000000000, 1, 0000000000000000, 0, 0000000000000000, 0, 7, 00007FF86CB7FDF0, 0000007C718FF110, 00007FF86CB7FDF8)' ...
-2018-02-23T00:56:37:581 [01496] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
-2018-02-23T00:56:37:581 [01496] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(0000000000000000, 1, 0000000000000000, 0, 0000000000000000, 0, 7, 0000000000000000, 0000000000000000, 00007FF86CB7FDF0, 0000007C718FF110, 00007FF86CB7FDF8)' ...
-2018-02-23T00:56:37:581 [01496] | INFO  | Redirecting 'CreateDXGIFactory2(2147483648, {7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C718FE898)' ...
-2018-02-23T00:56:37:581 [01496] | INFO  | Returning 'IDXGIFactory2' object 000001F149391170
-2018-02-23T00:56:37:591 [01496] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000007C718FB0D8)' ...
-2018-02-23T00:56:37:591 [01496] | INFO  | Returning 'IDXGIFactory1' object 000001F149390220
-2018-02-23T00:56:37:591 [01496] | INFO  | Redirecting 'D3D11CreateDevice(000001F1D5B18470, 0, 0000000000000000, 0, 0000007C718FB210, 4, 7, 000001F1D5EC3358, 000001F1D5EC3394, 000001F1D5EC3360)' ...
-2018-02-23T00:56:37:591 [01496] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
-2018-02-23T00:56:37:591 [01496] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(000001F1D5B18470, 0, 0000000000000000, 0, 0000007C718FB210, 4, 7, 0000000000000000, 0000000000000000, 000001F1D5EC3358, 000001F1D5EC3394, 000001F1D5EC3360)' ...
-2018-02-23T00:56:37:606 [01496] | INFO  | > Using feature level 0xb100.
-2018-02-23T00:56:37:606 [01496] | INFO  | Returning 'IDXGIDevice1' object 000001F1D5911510
-2018-02-23T00:56:37:606 [01496] | INFO  | Returning 'ID3D11Device' object 000001F13FE55BF0
-2018-02-23T00:56:37:606 [01496] | INFO  | Returning 'ID3D11DeviceContext' object 000001F1D62E9C00
-2018-02-23T00:56:37:606 [01496] | INFO  | Redirecting 'CreateDXGIFactory({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C718FB310)' ...
-2018-02-23T00:56:37:607 [01496] | INFO  | > Passing on to 'CreateDXGIFactory1':
-2018-02-23T00:56:37:607 [01496] | INFO  | Redirecting 'CreateDXGIFactory1({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000007C718FB310)' ...
-2018-02-23T00:56:37:607 [01496] | INFO  | Returning 'IDXGIFactory1' object 000001F149390840
-2018-02-23T00:56:37:623 [01496] | INFO  | > Using feature level 0xb000.
-2018-02-23T00:56:37:623 [01496] | INFO  | Returning 'IDXGIDevice1' object 000001F1D59130A0
-2018-02-23T00:56:37:623 [01496] | INFO  | Returning 'ID3D11Device' object 000001F13FE555D0
-2018-02-23T00:56:37:623 [01496] | INFO  | Returning 'ID3D11DeviceContext' object 000001F1D628CD20
-2018-02-23T00:56:37:623 [01496] | INFO  | Redirecting 'IDXGIFactory::CreateSwapChain(000001F149391170, 000001F13FE555D0, 0000007C718FF120, 00007FF86CB7FE20)' ...
-2018-02-23T00:56:37:623 [01496] | INFO  | > Dumping swap chain description:
-2018-02-23T00:56:37:623 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:623 [01496] | INFO  |   | Parameter                               | Value                                   |
-2018-02-23T00:56:37:623 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:623 [01496] | INFO  |   | Width                                   | 0                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | Height                                  | 0                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | RefreshRate                             | 60                  1                   |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | Format                                  | 28                                      |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | ScanlineOrdering                        | 0                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | Scaling                                 | 0                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | SampleCount                             | 1                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | SampleQuality                           | 0                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | BufferUsage                             | 32                                      |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | BufferCount                             | 1                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | OutputWindow                            | 000000000005115E                        |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | Windowed                                | TRUE                                    |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | SwapEffect                              | 0                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   | Flags                                   | 0                                       |
-2018-02-23T00:56:37:623 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:656 [01496] | INFO  | Starting input capture for window 000000000005115E ...
-2018-02-23T00:56:37:662 [01496] | INFO  | Recreated runtime environment on runtime 000001F1D614DDF0.
-2018-02-23T00:56:37:662 [01496] | INFO  | Returning 'IDXGISwapChain' object 000001F1356C1350
-2018-02-23T00:56:37:662 [01496] | INFO  | Redirecting 'IDXGIFactory2::CreateSwapChainForHwnd(000001F149391170, 000001F13FE555D0, 000000000005115E, 0000007C718FF170, 0000000000000000, 0000000000000000, 00007FF86CB7FE90)' ...
-2018-02-23T00:56:37:662 [01496] | INFO  | > Dumping swap chain description:
-2018-02-23T00:56:37:662 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:662 [01496] | INFO  |   | Parameter                               | Value                                   |
-2018-02-23T00:56:37:662 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:663 [01496] | INFO  |   | Width                                   | 0                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | Height                                  | 0                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | Format                                  | 28                                      |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | Stereo                                  | FALSE                                   |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | SampleCount                             | 1                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | SampleQuality                           | 0                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | BufferUsage                             | 32                                      |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | BufferCount                             | 1                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | Scaling                                 | 0                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | SwapEffect                              | 0                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | AlphaMode                               | 0                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   | Flags                                   | 0                                       |
-2018-02-23T00:56:37:663 [01496] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T00:56:37:674 [01496] | INFO  | Recreated runtime environment on runtime 000001F1D5F867E0.
-2018-02-23T00:56:37:674 [01496] | INFO  | Returning 'IDXGISwapChain1' object 000001F1D67E1DB0
-2018-02-23T00:56:37:712 [01496] | INFO  | Destroyed runtime environment on runtime 000001F1D614DDF0.
-2018-02-23T00:56:37:713 [01496] | INFO  | Destroyed 'IDXGISwapChain' object 000001F1356C1350.
-2018-02-23T00:56:37:713 [01496] | INFO  | Destroyed runtime environment on runtime 000001F1D5F867E0.
-2018-02-23T00:56:37:713 [01496] | INFO  | Destroyed 'IDXGISwapChain1' object 000001F1D67E1DB0.
-2018-02-23T00:56:37:713 [01496] | INFO  | Destroyed 'ID3D11DeviceContext' object 000001F1D628CD20.
-2018-02-23T00:56:37:713 [01496] | WARN  | Reference count for 'ID3D11Device' object 000001F13FE555D0 is inconsistent: 1, but expected 0.
-2018-02-23T00:56:37:713 [01496] | INFO  | Destroyed 'ID3D11Device' object 000001F13FE555D0.
-2018-02-23T00:56:37:747 [01496] | WARN  | Reference count for 'IDXGIDevice1' object 000001F1D5911510 is inconsistent: 2, but expected 1.
-2018-02-23T00:56:37:747 [01496] | INFO  | Destroyed 'IDXGIDevice1' object 000001F1D5911510.
-2018-02-23T00:56:37:747 [01496] | INFO  | Destroyed 'ID3D11DeviceContext' object 000001F1D62E9C00.
-2018-02-23T00:56:37:765 [01496] | INFO  | Destroyed 'ID3D11Device' object 000001F13FE55BF0.
-2018-02-23T00:56:37:766 [01496] | WARN  | Reference count for 'IDXGIDevice1' object 000001F1D59130A0 is inconsistent: 0, but expected 1.
-2018-02-23T00:56:37:766 [01496] | INFO  | Destroyed 'IDXGIDevice1' object 000001F1D59130A0.
-2018-02-23T00:56:43:151 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:43:158 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1DDCF6280
-2018-02-23T00:56:43:159 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:43:166 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1DDAA7560
-2018-02-23T00:56:43:168 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:43:174 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1DDAA7560
-2018-02-23T00:56:43:176 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:43:182 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1DDAA7560
-2018-02-23T00:56:51:452 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:51:458 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1D6E76620
-2018-02-23T00:56:51:459 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T00:56:51:465 [11276] | INFO  | Returning 'IDirect3D9' object 000001F1D6E76620
-2018-02-23T01:02:02:467 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T01:02:02:473 [11276] | INFO  | Returning 'IDirect3D9' object 000001F238176940
-2018-02-23T01:02:02:475 [11276] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
-2018-02-23T01:02:02:480 [11276] | INFO  | Returning 'IDirect3D9' object 000001F238176940
-2018-02-23T01:02:02:844 [11276] | INFO  | Redirecting 'IDXGISwapChain::SetFullscreenState(000001F13F81A640, FALSE, 0000000000000000)' ...
-2018-02-23T01:02:03:030 [11276] | INFO  | Destroyed runtime environment on runtime 000001F13FF63EC0.
-2018-02-23T01:02:03:030 [11276] | INFO  | Destroyed 'IDXGISwapChain' object 000001F13F81A640.
-2018-02-23T01:02:03:030 [11276] | WARN  | Reference count for 'IDXGIDevice1' object 000001F13F7A6740 is inconsistent: 8, but expected 1.
-2018-02-23T01:02:03:030 [11276] | INFO  | Destroyed 'IDXGIDevice1' object 000001F13F7A6740.
-2018-02-23T01:02:03:030 [11276] | WARN  | Reference count for 'ID3D11Device' object 000001F13FB05780 is inconsistent: 7, but expected 0.
-2018-02-23T01:02:03:030 [11276] | INFO  | Destroyed 'ID3D11Device' object 000001F13FB05780.
-2018-02-23T01:02:03:182 [11276] | INFO  | Redirecting 'RegisterRawInputDevices(0000007C70DEF8F0, 1, 16)' ...
-2018-02-23T01:02:03:182 [11276] | INFO  | > Dumping device registration at index 0:
-2018-02-23T01:02:03:182 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T01:02:03:182 [11276] | INFO  |   | Parameter                               | Value                                   |
-2018-02-23T01:02:03:182 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
-2018-02-23T01:02:03:182 [11276] | INFO  |   | UsagePage                               | 0x1                                     |
-2018-02-23T01:02:03:182 [11276] | INFO  |   | Usage                                   | 0x2                                     |
-2018-02-23T01:02:03:182 [11276] | INFO  |   | Flags                                   | 0x1                                     |
-2018-02-23T01:02:03:182 [11276] | INFO  |   | TargetWindow                            | 0000000000000000                        |
-2018-02-23T01:02:03:182 [11276] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:37:268 [03760] | INFO  | Initializing crosire's ReShade version '3.1.1.243' (64-bit) built on '2018-01-13 10:40:57' loaded from 'D:\Program Files (x86)\World of Warcraft\dxgi.dll' to 'D:\Program Files (x86)\World of Warcraft\Wow-64.exe' ...
+2018-02-24T02:46:37:268 [03760] | INFO  | Installing hook for 'LoadLibraryA' at 0x00007FFFCC2113F0 with 0x00007FFFB2DE4A60 using method 1 ...
+2018-02-24T02:46:37:268 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:295 [03760] | INFO  | Installing hook for 'LoadLibraryExA' at 0x00007FFFCC210A90 with 0x00007FFFB2DE4C60 using method 1 ...
+2018-02-24T02:46:37:295 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:322 [03760] | INFO  | Installing hook for 'LoadLibraryW' at 0x00007FFFCC210B00 with 0x00007FFFB2DE4D20 using method 1 ...
+2018-02-24T02:46:37:322 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:348 [03760] | INFO  | Installing hook for 'LoadLibraryExW' at 0x00007FFFCC20C0F0 with 0x00007FFFB2DE4F20 using method 1 ...
+2018-02-24T02:46:37:349 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:375 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\d3d9.dll' ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Libraries loaded.
+2018-02-24T02:46:37:376 [03760] | INFO  | > Dumping matches in export table:
+2018-02-24T02:46:37:376 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:376 [03760] | INFO  |   | Address            | Ordinal | Name                                               |
+2018-02-24T02:46:37:376 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1C05650 | 26      | D3DPERF_BeginEvent                                 |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1C056A0 | 27      | D3DPERF_EndEvent                                   |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1C056D0 | 28      | D3DPERF_GetStatus                                  |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1C056F0 | 29      | D3DPERF_QueryRepeatFrame                           |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1C05730 | 30      | D3DPERF_SetMarker                                  |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1C05770 | 31      | D3DPERF_SetOptions                                 |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1C057A0 | 32      | D3DPERF_SetRegion                                  |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1BBDE10 | 36      | Direct3DCreate9                                    |
+2018-02-24T02:46:37:376 [03760] | INFO  |   | 0x00007FFFC1BBDE40 | 37      | Direct3DCreate9Ex                                  |
+2018-02-24T02:46:37:376 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:376 [03760] | INFO  | > Found 9 match(es). Installing ...
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'D3DPERF_BeginEvent' at 0x00007FFFC1C05650 with 0x00007FFFB2DB9870 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'D3DPERF_EndEvent' at 0x00007FFFC1C056A0 with 0x00007FFFB2DB9870 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'D3DPERF_GetStatus' at 0x00007FFFC1C056D0 with 0x00007FFFB2DB9870 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'D3DPERF_QueryRepeatFrame' at 0x00007FFFC1C056F0 with 0x00007FFFB2DB9870 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'D3DPERF_SetMarker' at 0x00007FFFC1C05730 with 0x00007FFFB2DB0BC0 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'D3DPERF_SetOptions' at 0x00007FFFC1C05770 with 0x00007FFFB2DB0BC0 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'D3DPERF_SetRegion' at 0x00007FFFC1C057A0 with 0x00007FFFB2DB0BC0 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'Direct3DCreate9' at 0x00007FFFC1BBDE10 with 0x00007FFFB2DD0C10 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:376 [03760] | INFO  | Installing hook for 'Direct3DCreate9Ex' at 0x00007FFFC1BBDE40 with 0x00007FFFB2DD0D90 using method 1 ...
+2018-02-24T02:46:37:376 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:402 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\d3d10.dll' ...
+2018-02-24T02:46:37:403 [03760] | INFO  | > Delayed.
+2018-02-24T02:46:37:403 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\d3d10_1.dll' ...
+2018-02-24T02:46:37:404 [03760] | INFO  | > Delayed.
+2018-02-24T02:46:37:404 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\d3d11.dll' ...
+2018-02-24T02:46:37:404 [03760] | INFO  | > Libraries loaded.
+2018-02-24T02:46:37:404 [03760] | INFO  | > Dumping matches in export table:
+2018-02-24T02:46:37:404 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:404 [03760] | INFO  |   | Address            | Ordinal | Name                                               |
+2018-02-24T02:46:37:404 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:404 [03760] | INFO  |   | 0x00007FFFC6634030 | 22      | D3D11CreateDevice                                  |
+2018-02-24T02:46:37:404 [03760] | INFO  |   | 0x00007FFFC6633EC0 | 23      | D3D11CreateDeviceAndSwapChain                      |
+2018-02-24T02:46:37:404 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:404 [03760] | INFO  | > Found 2 match(es). Installing ...
+2018-02-24T02:46:37:404 [03760] | INFO  | Installing hook for 'D3D11CreateDevice' at 0x00007FFFC6634030 with 0x00007FFFB2DC2D20 using method 1 ...
+2018-02-24T02:46:37:404 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:404 [03760] | INFO  | Installing hook for 'D3D11CreateDeviceAndSwapChain' at 0x00007FFFC6633EC0 with 0x00007FFFB2DC3000 using method 1 ...
+2018-02-24T02:46:37:404 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:431 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\dxgi.dll' ...
+2018-02-24T02:46:37:431 [03760] | INFO  | > Delayed until first call to an exported function.
+2018-02-24T02:46:37:431 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\opengl32.dll' ...
+2018-02-24T02:46:37:432 [03760] | INFO  | > Delayed.
+2018-02-24T02:46:37:432 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\user32.dll' ...
+2018-02-24T02:46:37:432 [03760] | INFO  | > Libraries loaded.
+2018-02-24T02:46:37:432 [03760] | INFO  | > Dumping matches in export table:
+2018-02-24T02:46:37:432 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:432 [03760] | INFO  |   | Address            | Ordinal | Name                                               |
+2018-02-24T02:46:37:432 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:432 [03760] | INFO  |   | 0x00007FFFCCE27AA0 | 1826    | GetCursorPos                                       |
+2018-02-24T02:46:37:432 [03760] | INFO  |   | 0x00007FFFCCE206E0 | 1891    | GetMessageA                                        |
+2018-02-24T02:46:37:432 [03760] | INFO  |   | 0x00007FFFCCE23F50 | 1895    | GetMessageW                                        |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE20040 | 2186    | PeekMessageA                                       |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE20170 | 2187    | PeekMessageW                                       |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE289C0 | 2190    | PostMessageA                                       |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE02A40 | 2191    | PostMessageW                                       |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE1A2C0 | 2234    | RegisterClassA                                     |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE7D400 | 2235    | RegisterClassExA                                   |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE1D170 | 2236    | RegisterClassExW                                   |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE1D1A0 | 2237    | RegisterClassW                                     |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE320F0 | 2253    | RegisterRawInputDevices                            |
+2018-02-24T02:46:37:433 [03760] | INFO  |   | 0x00007FFFCCE2AF80 | 2308    | SetCursorPos                                       |
+2018-02-24T02:46:37:433 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:433 [03760] | INFO  | > Found 13 match(es). Installing ...
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'GetCursorPos' at 0x00007FFFCCE27AA0 with 0x00007FFFB2DEC170 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'GetMessageA' at 0x00007FFFCCE206E0 with 0x00007FFFB2DEB4D0 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'GetMessageW' at 0x00007FFFCCE23F50 with 0x00007FFFB2DEB5A0 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'PeekMessageA' at 0x00007FFFCCE20040 with 0x00007FFFB2DEB670 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'PeekMessageW' at 0x00007FFFCCE20170 with 0x00007FFFB2DEB750 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'PostMessageA' at 0x00007FFFCCE289C0 with 0x00007FFFB2DEBF50 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'PostMessageW' at 0x00007FFFCCE02A40 with 0x00007FFFB2DEC010 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'RegisterClassA' at 0x00007FFFCCE1A2C0 with 0x00007FFFB2E30F30 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'RegisterClassExA' at 0x00007FFFCCE7D400 with 0x00007FFFB2E31270 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'RegisterClassExW' at 0x00007FFFCCE1D170 with 0x00007FFFB2E31400 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'RegisterClassW' at 0x00007FFFCCE1D1A0 with 0x00007FFFB2E310D0 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'RegisterRawInputDevices' at 0x00007FFFCCE320F0 with 0x00007FFFB2DEB830 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:433 [03760] | INFO  | Installing hook for 'SetCursorPos' at 0x00007FFFCCE2AF80 with 0x00007FFFB2DEC0D0 using method 1 ...
+2018-02-24T02:46:37:433 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:460 [03760] | INFO  | Registering hooks for 'C:\Windows\system32\ws2_32.dll' ...
+2018-02-24T02:46:37:460 [03760] | INFO  | > Libraries loaded.
+2018-02-24T02:46:37:460 [03760] | INFO  | > Dumping matches in export table:
+2018-02-24T02:46:37:460 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:460 [03760] | INFO  |   | Address            | Ordinal | Name                                               |
+2018-02-24T02:46:37:460 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:460 [03760] | INFO  |   | 0x00007FFFCC8BAD90 | 91      | WSARecv                                            |
+2018-02-24T02:46:37:460 [03760] | INFO  |   | 0x00007FFFCC8C6780 | 93      | WSARecvFrom                                        |
+2018-02-24T02:46:37:460 [03760] | INFO  |   | 0x00007FFFCC8BA8A0 | 96      | WSASend                                            |
+2018-02-24T02:46:37:460 [03760] | INFO  |   | 0x00007FFFCC8C6D80 | 99      | WSASendTo                                          |
+2018-02-24T02:46:37:461 [03760] | INFO  |   | 0x00007FFFCC8B9EC0 | 16      | recv                                               |
+2018-02-24T02:46:37:461 [03760] | INFO  |   | 0x00007FFFCC8B9CC0 | 17      | recvfrom                                           |
+2018-02-24T02:46:37:461 [03760] | INFO  |   | 0x00007FFFCC8BBA40 | 19      | send                                               |
+2018-02-24T02:46:37:461 [03760] | INFO  |   | 0x00007FFFCC8BF0B0 | 20      | sendto                                             |
+2018-02-24T02:46:37:461 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:461 [03760] | INFO  | > Found 8 match(es). Installing ...
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'WSARecv' at 0x00007FFFCC8BAD90 with 0x00007FFFB2E31740 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'WSARecvFrom' at 0x00007FFFCC8C6780 with 0x00007FFFB2E318D0 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'WSASend' at 0x00007FFFCC8BA8A0 with 0x00007FFFB2E315A0 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'WSASendTo' at 0x00007FFFCC8C6D80 with 0x00007FFFB2E31670 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'recv' at 0x00007FFFCC8B9EC0 with 0x00007FFFB2E31B50 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'recvfrom' at 0x00007FFFCC8B9CC0 with 0x00007FFFB2E31C00 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'send' at 0x00007FFFCC8BBA40 with 0x00007FFFB2E319D0 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:461 [03760] | INFO  | Installing hook for 'sendto' at 0x00007FFFCC8BF0B0 with 0x00007FFFB2E31A80 using method 1 ...
+2018-02-24T02:46:37:461 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:488 [03760] | INFO  | Initialized.
+2018-02-24T02:46:37:488 [03760] | INFO  | Redirecting 'D3D11CreateDevice(0000000000000000, 1, 0000000000000000, 0x1, 0000002C72CFF720, 3, 7, 0000000000000000, 0000002C72CFF740, 0000000000000000)' ...
+2018-02-24T02:46:37:490 [03760] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
+2018-02-24T02:46:37:490 [03760] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(0000000000000000, 1, 0000000000000000, 0x1, 0000002C72CFF720, 3, 7, 0000000000000000, 0000000000000000, 0000000000000000, 0000002C72CFF740, 0000000000000000)' ...
+2018-02-24T02:46:37:490 [03760] | INFO  | Redirecting 'CreateDXGIFactory2(2147483648, {7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C72CFEEA8)' ...
+2018-02-24T02:46:37:491 [03760] | INFO  | Installing export hooks for 'C:\Windows\system32\dxgi.dll' ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Dumping matches in export table:
+2018-02-24T02:46:37:492 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:492 [03760] | INFO  |   | Address            | Ordinal | Name                                               |
+2018-02-24T02:46:37:492 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:492 [03760] | INFO  |   | 0x00007FFFC84D8D00 | 11      | CreateDXGIFactory                                  |
+2018-02-24T02:46:37:492 [03760] | INFO  |   | 0x00007FFFC84D7F00 | 12      | CreateDXGIFactory1                                 |
+2018-02-24T02:46:37:492 [03760] | INFO  |   | 0x00007FFFC84C53A0 | 13      | CreateDXGIFactory2                                 |
+2018-02-24T02:46:37:492 [03760] | INFO  |   | 0x00007FFFC84DC2F0 | 14      | DXGID3D10CreateDevice                              |
+2018-02-24T02:46:37:492 [03760] | INFO  |   | 0x00007FFFC84DC2F0 | 15      | DXGID3D10CreateLayeredDevice                       |
+2018-02-24T02:46:37:492 [03760] | INFO  |   | 0x00007FFFC84DC2D0 | 17      | DXGID3D10GetLayeredDeviceSize                      |
+2018-02-24T02:46:37:492 [03760] | INFO  |   | 0x00007FFFC84DC2F0 | 18      | DXGID3D10RegisterLayers                            |
+2018-02-24T02:46:37:492 [03760] | INFO  |   +--------------------+---------+----------------------------------------------------+
+2018-02-24T02:46:37:492 [03760] | INFO  | > Found 7 match(es). Installing ...
+2018-02-24T02:46:37:492 [03760] | INFO  | Installing hook for 'CreateDXGIFactory' at 0x00007FFFC84D8D00 with 0x00007FFFB2E04E30 using method 0 ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:492 [03760] | INFO  | Installing hook for 'CreateDXGIFactory1' at 0x00007FFFC84D7F00 with 0x00007FFFB2E04F70 using method 0 ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:492 [03760] | INFO  | Installing hook for 'CreateDXGIFactory2' at 0x00007FFFC84C53A0 with 0x00007FFFB2E05220 using method 0 ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:492 [03760] | INFO  | Installing hook for 'DXGID3D10CreateDevice' at 0x00007FFFC84DC2F0 with 0x00007FFFB2E04D60 using method 0 ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:492 [03760] | INFO  | Installing hook for 'DXGID3D10CreateLayeredDevice' at 0x00007FFFC84DC2F0 with 0x00007FFFB2E04DB0 using method 0 ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:492 [03760] | INFO  | Installing hook for 'DXGID3D10GetLayeredDeviceSize' at 0x00007FFFC84DC2D0 with 0x00007FFFB2E04E00 using method 0 ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:492 [03760] | INFO  | Installing hook for 'DXGID3D10RegisterLayers' at 0x00007FFFC84DC2F0 with 0x00007FFFB2E04E00 using method 0 ...
+2018-02-24T02:46:37:492 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:494 [03760] | INFO  | Installing hook for 'IDXGIFactory::CreateSwapChain' at 0x00007FFFC85142A0 with 0x00007FFFB2E02FF0 using method 2 ...
+2018-02-24T02:46:37:494 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:494 [03760] | INFO  | Installing hook for 'IDXGIFactory2::CreateSwapChainForHwnd' at 0x00007FFFC8514A90 with 0x00007FFFB2E036F0 using method 2 ...
+2018-02-24T02:46:37:494 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:494 [03760] | INFO  | Installing hook for 'IDXGIFactory2::CreateSwapChainForCoreWindow' at 0x00007FFFC85148B0 with 0x00007FFFB2E03ED0 using method 2 ...
+2018-02-24T02:46:37:494 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:494 [03760] | INFO  | Installing hook for 'IDXGIFactory2::CreateSwapChainForComposition' at 0x00007FFFC8514710 with 0x00007FFFB2E04620 using method 2 ...
+2018-02-24T02:46:37:494 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:494 [03760] | INFO  | Returning 'IDXGIFactory2' object 00000225209862C0
+2018-02-24T02:46:37:519 [03760] | INFO  | > Using feature level 0xb000.
+2018-02-24T02:46:37:521 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:37:821 [03760] | INFO  | Installing hook for 'IDirect3D9::CreateDevice' at 0x00007FFFC1BA2490 with 0x00007FFFB2DCFE80 using method 2 ...
+2018-02-24T02:46:37:821 [03760] | INFO  | > Succeeded.
+2018-02-24T02:46:37:821 [03760] | INFO  | Returning 'IDirect3D9' object 000002252ABF1000
+2018-02-24T02:46:37:828 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C72CFF598)' ...
+2018-02-24T02:46:37:828 [03760] | INFO  | Returning 'IDXGIFactory1' object 00000225209862C0
+2018-02-24T02:46:37:839 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C72CFF540)' ...
+2018-02-24T02:46:37:840 [03760] | INFO  | Returning 'IDXGIFactory1' object 00000225209862C0
+2018-02-24T02:46:37:846 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:37:859 [03760] | INFO  | Returning 'IDirect3D9' object 000002252AC0D500
+2018-02-24T02:46:37:862 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C72CFF550)' ...
+2018-02-24T02:46:37:862 [03760] | INFO  | Returning 'IDXGIFactory1' object 00000225209862C0
+2018-02-24T02:46:37:868 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C72CFF4B8)' ...
+2018-02-24T02:46:37:869 [03760] | INFO  | Returning 'IDXGIFactory1' object 00000225209862C0
+2018-02-24T02:46:37:880 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C72CFF578)' ...
+2018-02-24T02:46:37:880 [03760] | INFO  | Returning 'IDXGIFactory1' object 00000225209862C0
+2018-02-24T02:46:37:891 [03760] | INFO  | Redirecting 'RegisterClassExW(0000002C72CFF5A0)' ...
+2018-02-24T02:46:37:895 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 000002252ABF3948)' ...
+2018-02-24T02:46:37:895 [03760] | INFO  | Returning 'IDXGIFactory1' object 00000225209862C0
+2018-02-24T02:46:38:015 [03760] | INFO  | Redirecting 'D3D11CreateDevice(000002252AC6FC20, 0, 0000000000000000, 0x1, 0000002C72CFF4A8, 3, 7, 000002252ABF3940, 0000002C72CFF478, 000002252ABF3960)' ...
+2018-02-24T02:46:38:015 [03760] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
+2018-02-24T02:46:38:015 [03760] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(000002252AC6FC20, 0, 0000000000000000, 0x1, 0000002C72CFF4A8, 3, 7, 0000000000000000, 0000000000000000, 000002252ABF3940, 0000002C72CFF478, 000002252ABF3960)' ...
+2018-02-24T02:46:38:038 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C72CFB3D8)' ...
+2018-02-24T02:46:38:038 [03760] | INFO  | Returning 'IDXGIFactory1' object 000002252AC87230
+2018-02-24T02:46:38:038 [03760] | INFO  | Redirecting 'D3D11CreateDevice(000002252AC6EDB0, 0, 0000000000000000, 0, 0000002C72CFB510, 4, 7, 000002252AC3D098, 000002252AC3D0D4, 000002252AC3D0A0)' ...
+2018-02-24T02:46:38:038 [03760] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
+2018-02-24T02:46:38:038 [03760] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(000002252AC6EDB0, 0, 0000000000000000, 0, 0000002C72CFB510, 4, 7, 0000000000000000, 0000000000000000, 000002252AC3D098, 000002252AC3D0D4, 000002252AC3D0A0)' ...
+2018-02-24T02:46:38:053 [03760] | INFO  | > Using feature level 0xb100.
+2018-02-24T02:46:38:053 [03760] | INFO  | Returning 'IDXGIDevice1' object 000002252AE53CE0
+2018-02-24T02:46:38:053 [03760] | INFO  | Returning 'ID3D11Device' object 000002252AC06C10
+2018-02-24T02:46:38:053 [03760] | INFO  | Returning 'ID3D11DeviceContext' object 000002252AC17380
+2018-02-24T02:46:38:054 [03760] | INFO  | Redirecting 'CreateDXGIFactory({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C72CFB610)' ...
+2018-02-24T02:46:38:054 [03760] | INFO  | > Passing on to 'CreateDXGIFactory1':
+2018-02-24T02:46:38:054 [03760] | INFO  | Redirecting 'CreateDXGIFactory1({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C72CFB610)' ...
+2018-02-24T02:46:38:054 [03760] | INFO  | Returning 'IDXGIFactory1' object 000002252B016C60
+2018-02-24T02:46:38:254 [03760] | INFO  | > Using feature level 0xb000.
+2018-02-24T02:46:38:254 [03760] | INFO  | Returning 'IDXGIDevice1' object 000002252B20DEE0
+2018-02-24T02:46:38:254 [03760] | INFO  | Returning 'ID3D11Device' object 000002252AC07070
+2018-02-24T02:46:38:254 [03760] | INFO  | Returning 'ID3D11DeviceContext' object 000002252B22B640
+2018-02-24T02:46:38:254 [03760] | INFO  | Redirecting 'IDXGIFactory::CreateSwapChain(00000225209862C0, 000002252AC07070, 0000002C72CFF420, 000002252ABF3958)' ...
+2018-02-24T02:46:38:254 [03760] | INFO  | > Dumping swap chain description:
+2018-02-24T02:46:38:255 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:38:255 [03760] | INFO  |   | Parameter                               | Value                                   |
+2018-02-24T02:46:38:255 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:38:255 [03760] | INFO  |   | Width                                   | 2560                                    |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | Height                                  | 1440                                    |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | RefreshRate                             | 165000              1000                |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | Format                                  | 28                                      |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | ScanlineOrdering                        | 1                                       |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | Scaling                                 | 0                                       |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | SampleCount                             | 1                                       |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | SampleQuality                           | 0                                       |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | BufferUsage                             | 48                                      |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | BufferCount                             | 1                                       |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | OutputWindow                            | 00000000000610F0                        |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | Windowed                                | FALSE                                   |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | SwapEffect                              | 0                                       |
+2018-02-24T02:46:38:255 [03760] | INFO  |   | Flags                                   | 0x2                                     |
+2018-02-24T02:46:38:255 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:38:330 [03760] | INFO  | Starting input capture for window 00000000000610F0 ...
+2018-02-24T02:46:38:336 [03760] | INFO  | Recreated runtime environment on runtime 000002252B3AE4D0.
+2018-02-24T02:46:38:336 [03760] | INFO  | Returning 'IDXGISwapChain' object 000002252B397C60
+2018-02-24T02:46:38:401 [03760] | INFO  | Redirecting 'IDXGISwapChain::SetFullscreenState(000002252B397C60, TRUE, 0000000000000000)' ...
+2018-02-24T02:46:38:528 [03760] | INFO  | Redirecting 'RegisterRawInputDevices(0000002C72CFF710, 1, 16)' ...
+2018-02-24T02:46:38:528 [03760] | INFO  | > Dumping device registration at index 0:
+2018-02-24T02:46:38:528 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:38:528 [03760] | INFO  |   | Parameter                               | Value                                   |
+2018-02-24T02:46:38:528 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:38:528 [03760] | INFO  |   | UsagePage                               | 0x1                                     |
+2018-02-24T02:46:38:528 [03760] | INFO  |   | Usage                                   | 0x2                                     |
+2018-02-24T02:46:38:528 [03760] | INFO  |   | Flags                                   | 0x1                                     |
+2018-02-24T02:46:38:528 [03760] | INFO  |   | TargetWindow                            | 0000000000000000                        |
+2018-02-24T02:46:38:528 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:38:809 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:38:821 [03760] | INFO  | Returning 'IDirect3D9' object 00000225C0086CA0
+2018-02-24T02:46:38:823 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:38:828 [03760] | INFO  | Returning 'IDirect3D9' object 00000225C0185CA0
+2018-02-24T02:46:39:053 [03760] | INFO  | Redirecting 'IDXGISwapChain::ResizeBuffers(000002252B397C60, 1, 2560, 1440, 28, 0x2)' ...
+2018-02-24T02:46:39:053 [03760] | INFO  | Destroyed runtime environment on runtime 000002252B3AE4D0.
+2018-02-24T02:46:39:063 [03760] | INFO  | Recreated runtime environment on runtime 000002252B3AE4D0.
+2018-02-24T02:46:39:069 [12816] | INFO  | Redirecting 'Direct3DCreate9Ex(32, 00007FFFB3D93498)' ...
+2018-02-24T02:46:39:077 [12816] | INFO  | Installing hook for 'IDirect3D9Ex::CreateDeviceEx' at 0x00007FFFC1BA25E0 with 0x00007FFFB2DD0530 using method 2 ...
+2018-02-24T02:46:39:077 [12816] | INFO  | > Succeeded.
+2018-02-24T02:46:39:077 [12816] | INFO  | Returning 'IDirect3D9Ex' object 00000225C0402100
+2018-02-24T02:46:39:077 [12816] | INFO  | Redirecting 'IDirect3D9Ex::CreateDeviceEx(00000225C0402100, 0, 4, 00000000000610F0, 0x840, 0000002C73DFECA0, 0000000000000000, 0000002C73DFECF0)' ...
+2018-02-24T02:46:39:077 [12816] | INFO  | > Dumping presentation parameters:
+2018-02-24T02:46:39:077 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:077 [12816] | INFO  |   | Parameter                               | Value                                   |
+2018-02-24T02:46:39:077 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:077 [12816] | INFO  |   | BackBufferWidth                         | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | BackBufferHeight                        | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | BackBufferFormat                        | 22                                      |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | BackBufferCount                         | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | MultiSampleType                         | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | MultiSampleQuality                      | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | SwapEffect                              | 1                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | DeviceWindow                            | 0000000000000000                        |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | Windowed                                | TRUE                                    |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | EnableAutoDepthStencil                  | FALSE                                   |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | AutoDepthStencilFormat                  | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | Flags                                   | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | FullScreen_RefreshRateInHz              | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   | PresentationInterval                    | 0                                       |
+2018-02-24T02:46:39:077 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:118 [12816] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C73DFB868)' ...
+2018-02-24T02:46:39:118 [12816] | INFO  | Returning 'IDXGIFactory1' object 000002252B701C70
+2018-02-24T02:46:39:118 [12816] | INFO  | Redirecting 'D3D11CreateDevice(00000225C17E8660, 0, 0000000000000000, 0, 0000002C73DFB9A0, 4, 7, 000002252AC39C78, 000002252AC39CB4, 000002252AC39C80)' ...
+2018-02-24T02:46:39:119 [12816] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
+2018-02-24T02:46:39:119 [12816] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(00000225C17E8660, 0, 0000000000000000, 0, 0000002C73DFB9A0, 4, 7, 0000000000000000, 0000000000000000, 000002252AC39C78, 000002252AC39CB4, 000002252AC39C80)' ...
+2018-02-24T02:46:39:138 [12816] | INFO  | > Using feature level 0xb100.
+2018-02-24T02:46:39:138 [12816] | INFO  | Returning 'IDXGIDevice1' object 000002252A9480E0
+2018-02-24T02:46:39:138 [12816] | INFO  | Returning 'ID3D11Device' object 00000225207F4900
+2018-02-24T02:46:39:138 [12816] | INFO  | Returning 'ID3D11DeviceContext' object 00000225C0E96E50
+2018-02-24T02:46:39:138 [12816] | INFO  | Redirecting 'CreateDXGIFactory({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C73DFBAA0)' ...
+2018-02-24T02:46:39:138 [12816] | INFO  | > Passing on to 'CreateDXGIFactory1':
+2018-02-24T02:46:39:138 [12816] | INFO  | Redirecting 'CreateDXGIFactory1({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C73DFBAA0)' ...
+2018-02-24T02:46:39:139 [12816] | INFO  | Returning 'IDXGIFactory1' object 000002252B701F80
+2018-02-24T02:46:39:141 [12816] | WARN  | > Skipping device due to device type being 'D3DDEVTYPE_NULLREF'.
+2018-02-24T02:46:39:141 [12816] | INFO  | Returning 'IDirect3DDevice9Ex' object 00000225C12FDB80
+2018-02-24T02:46:39:142 [12816] | WARN  | Reference count for 'IDXGIDevice1' object 000002252A9480E0 is inconsistent: 2, but expected 1.
+2018-02-24T02:46:39:142 [12816] | INFO  | Destroyed 'IDXGIDevice1' object 000002252A9480E0.
+2018-02-24T02:46:39:142 [12816] | INFO  | Destroyed 'ID3D11DeviceContext' object 00000225C0E96E50.
+2018-02-24T02:46:39:147 [12816] | INFO  | Destroyed 'ID3D11Device' object 00000225207F4900.
+2018-02-24T02:46:39:215 [12816] | INFO  | Redirecting 'D3D11CreateDevice(0000000000000000, 1, 0000000000000000, 0, 0000000000000000, 0, 7, 00007FFFB3D8FDF0, 0000002C73DFECA0, 00007FFFB3D8FDF8)' ...
+2018-02-24T02:46:39:215 [12816] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
+2018-02-24T02:46:39:215 [12816] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(0000000000000000, 1, 0000000000000000, 0, 0000000000000000, 0, 7, 0000000000000000, 0000000000000000, 00007FFFB3D8FDF0, 0000002C73DFECA0, 00007FFFB3D8FDF8)' ...
+2018-02-24T02:46:39:215 [12816] | INFO  | Redirecting 'CreateDXGIFactory2(2147483648, {7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C73DFE428)' ...
+2018-02-24T02:46:39:215 [12816] | INFO  | Returning 'IDXGIFactory2' object 000002252B701960
+2018-02-24T02:46:39:223 [12816] | INFO  | Redirecting 'CreateDXGIFactory1({770AAE78-F26F-4DBA-A829-253C83D1B387}, 0000002C73DFAC68)' ...
+2018-02-24T02:46:39:224 [12816] | INFO  | Returning 'IDXGIFactory1' object 000002252B701340
+2018-02-24T02:46:39:224 [12816] | INFO  | Redirecting 'D3D11CreateDevice(00000225C17EACE0, 0, 0000000000000000, 0, 0000002C73DFADA0, 4, 7, 000002252AC39C78, 000002252AC39CB4, 000002252AC39C80)' ...
+2018-02-24T02:46:39:224 [12816] | INFO  | > Passing on to 'D3D11CreateDeviceAndSwapChain':
+2018-02-24T02:46:39:224 [12816] | INFO  | Redirecting 'D3D11CreateDeviceAndSwapChain(00000225C17EACE0, 0, 0000000000000000, 0, 0000002C73DFADA0, 4, 7, 0000000000000000, 0000000000000000, 000002252AC39C78, 000002252AC39CB4, 000002252AC39C80)' ...
+2018-02-24T02:46:39:236 [12816] | INFO  | > Using feature level 0xb100.
+2018-02-24T02:46:39:236 [12816] | INFO  | Returning 'IDXGIDevice1' object 00000225C131C5E0
+2018-02-24T02:46:39:236 [12816] | INFO  | Returning 'ID3D11Device' object 00000225C3B93300
+2018-02-24T02:46:39:236 [12816] | INFO  | Returning 'ID3D11DeviceContext' object 00000225C038CF50
+2018-02-24T02:46:39:236 [12816] | INFO  | Redirecting 'CreateDXGIFactory({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C73DFAEA0)' ...
+2018-02-24T02:46:39:236 [12816] | INFO  | > Passing on to 'CreateDXGIFactory1':
+2018-02-24T02:46:39:236 [12816] | INFO  | Redirecting 'CreateDXGIFactory1({7B7166EC-21C7-44AE-B21A-C9AE321AE369}, 0000002C73DFAEA0)' ...
+2018-02-24T02:46:39:237 [12816] | INFO  | Returning 'IDXGIFactory1' object 000002252B7025A0
+2018-02-24T02:46:39:249 [12816] | INFO  | > Using feature level 0xb000.
+2018-02-24T02:46:39:250 [12816] | INFO  | Returning 'IDXGIDevice1' object 000002252AC36530
+2018-02-24T02:46:39:250 [12816] | INFO  | Returning 'ID3D11Device' object 00000225C3B93220
+2018-02-24T02:46:39:250 [12816] | INFO  | Returning 'ID3D11DeviceContext' object 00000225C0E96450
+2018-02-24T02:46:39:250 [12816] | INFO  | Redirecting 'IDXGIFactory::CreateSwapChain(000002252B701960, 00000225C3B93220, 0000002C73DFECB0, 00007FFFB3D8FE20)' ...
+2018-02-24T02:46:39:250 [12816] | INFO  | > Dumping swap chain description:
+2018-02-24T02:46:39:250 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:250 [12816] | INFO  |   | Parameter                               | Value                                   |
+2018-02-24T02:46:39:250 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:250 [12816] | INFO  |   | Width                                   | 0                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | Height                                  | 0                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | RefreshRate                             | 60                  1                   |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | Format                                  | 28                                      |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | ScanlineOrdering                        | 0                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | Scaling                                 | 0                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | SampleCount                             | 1                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | SampleQuality                           | 0                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | BufferUsage                             | 32                                      |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | BufferCount                             | 1                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | OutputWindow                            | 00000000000305A4                        |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | Windowed                                | TRUE                                    |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | SwapEffect                              | 0                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   | Flags                                   | 0                                       |
+2018-02-24T02:46:39:250 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:270 [12816] | INFO  | Starting input capture for window 00000000000305A4 ...
+2018-02-24T02:46:39:283 [12816] | INFO  | Recreated runtime environment on runtime 00000225C417A660.
+2018-02-24T02:46:39:284 [12816] | INFO  | Returning 'IDXGISwapChain' object 000002252AC66710
+2018-02-24T02:46:39:284 [12816] | INFO  | Redirecting 'IDXGIFactory2::CreateSwapChainForHwnd(000002252B701960, 00000225C3B93220, 00000000000305A4, 0000002C73DFED00, 0000000000000000, 0000000000000000, 00007FFFB3D8FE90)' ...
+2018-02-24T02:46:39:284 [12816] | INFO  | > Dumping swap chain description:
+2018-02-24T02:46:39:284 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:284 [12816] | INFO  |   | Parameter                               | Value                                   |
+2018-02-24T02:46:39:284 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:284 [12816] | INFO  |   | Width                                   | 0                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | Height                                  | 0                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | Format                                  | 28                                      |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | Stereo                                  | FALSE                                   |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | SampleCount                             | 1                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | SampleQuality                           | 0                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | BufferUsage                             | 32                                      |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | BufferCount                             | 1                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | Scaling                                 | 0                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | SwapEffect                              | 0                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | AlphaMode                               | 0                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   | Flags                                   | 0                                       |
+2018-02-24T02:46:39:284 [12816] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:46:39:298 [12816] | INFO  | Recreated runtime environment on runtime 00000225C0811890.
+2018-02-24T02:46:39:298 [12816] | INFO  | Returning 'IDXGISwapChain1' object 000002252AC67BB0
+2018-02-24T02:46:39:338 [12816] | INFO  | Destroyed runtime environment on runtime 00000225C417A660.
+2018-02-24T02:46:39:338 [12816] | INFO  | Destroyed 'IDXGISwapChain' object 000002252AC66710.
+2018-02-24T02:46:39:338 [12816] | INFO  | Destroyed runtime environment on runtime 00000225C0811890.
+2018-02-24T02:46:39:338 [12816] | INFO  | Destroyed 'IDXGISwapChain1' object 000002252AC67BB0.
+2018-02-24T02:46:39:338 [12816] | INFO  | Destroyed 'ID3D11DeviceContext' object 00000225C0E96450.
+2018-02-24T02:46:39:338 [12816] | WARN  | Reference count for 'ID3D11Device' object 00000225C3B93220 is inconsistent: 1, but expected 0.
+2018-02-24T02:46:39:338 [12816] | INFO  | Destroyed 'ID3D11Device' object 00000225C3B93220.
+2018-02-24T02:46:39:361 [12816] | WARN  | Reference count for 'IDXGIDevice1' object 00000225C131C5E0 is inconsistent: 2, but expected 1.
+2018-02-24T02:46:39:361 [12816] | INFO  | Destroyed 'IDXGIDevice1' object 00000225C131C5E0.
+2018-02-24T02:46:39:361 [12816] | INFO  | Destroyed 'ID3D11DeviceContext' object 00000225C038CF50.
+2018-02-24T02:46:39:371 [12816] | INFO  | Destroyed 'ID3D11Device' object 00000225C3B93300.
+2018-02-24T02:46:39:371 [12816] | WARN  | Reference count for 'IDXGIDevice1' object 000002252AC36530 is inconsistent: 0, but expected 1.
+2018-02-24T02:46:39:371 [12816] | INFO  | Destroyed 'IDXGIDevice1' object 000002252AC36530.
+2018-02-24T02:46:44:476 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:44:480 [03760] | INFO  | Returning 'IDirect3D9' object 000002251C1230A0
+2018-02-24T02:46:44:482 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:44:487 [03760] | INFO  | Returning 'IDirect3D9' object 000002251C1230A0
+2018-02-24T02:46:44:489 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:44:494 [03760] | INFO  | Returning 'IDirect3D9' object 000002251C1230A0
+2018-02-24T02:46:44:496 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:46:44:501 [03760] | INFO  | Returning 'IDirect3D9' object 000002251C1230A0
+2018-02-24T02:49:05:245 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:49:05:250 [03760] | INFO  | Returning 'IDirect3D9' object 00000225E9371460
+2018-02-24T02:49:05:252 [03760] | INFO  | Redirecting 'Direct3DCreate9(32)' ...
+2018-02-24T02:49:05:256 [03760] | INFO  | Returning 'IDirect3D9' object 00000225E9371460
+2018-02-24T02:49:05:814 [03760] | INFO  | Redirecting 'IDXGISwapChain::SetFullscreenState(000002252B397C60, FALSE, 0000000000000000)' ...
+2018-02-24T02:49:05:934 [03760] | INFO  | Destroyed runtime environment on runtime 000002252B3AE4D0.
+2018-02-24T02:49:05:934 [03760] | INFO  | Destroyed 'IDXGISwapChain' object 000002252B397C60.
+2018-02-24T02:49:05:934 [03760] | WARN  | Reference count for 'IDXGIDevice1' object 000002252B20DEE0 is inconsistent: 5, but expected 1.
+2018-02-24T02:49:05:934 [03760] | INFO  | Destroyed 'IDXGIDevice1' object 000002252B20DEE0.
+2018-02-24T02:49:05:934 [03760] | WARN  | Reference count for 'ID3D11Device' object 000002252AC07070 is inconsistent: 4, but expected 0.
+2018-02-24T02:49:05:935 [03760] | INFO  | Destroyed 'ID3D11Device' object 000002252AC07070.
+2018-02-24T02:49:06:055 [03760] | INFO  | Redirecting 'RegisterRawInputDevices(0000002C72CFFA60, 1, 16)' ...
+2018-02-24T02:49:06:055 [03760] | INFO  | > Dumping device registration at index 0:
+2018-02-24T02:49:06:055 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:49:06:055 [03760] | INFO  |   | Parameter                               | Value                                   |
+2018-02-24T02:49:06:055 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+
+2018-02-24T02:49:06:055 [03760] | INFO  |   | UsagePage                               | 0x1                                     |
+2018-02-24T02:49:06:055 [03760] | INFO  |   | Usage                                   | 0x2                                     |
+2018-02-24T02:49:06:055 [03760] | INFO  |   | Flags                                   | 0x1                                     |
+2018-02-24T02:49:06:055 [03760] | INFO  |   | TargetWindow                            | 0000000000000000                        |
+2018-02-24T02:49:06:055 [03760] | INFO  |   +-----------------------------------------+-----------------------------------------+

@@ -41,29 +41,30 @@ TradeSkillMaster_MailingDB = {
 			"Shathiel - Darkspear", -- [13]
 			"Urbul - Zul'jin", -- [14]
 		},
-		["factionrealm"] = {
-			"Horde - Argent Dawn", -- [1]
-			"Alliance - Darkspear", -- [2]
-			"Horde - Zul'jin", -- [3]
-		},
-		["profile"] = {
-			"Default", -- [1]
-		},
 		["realm"] = {
 			"Argent Dawn", -- [1]
 			"Darkspear", -- [2]
 			"Zul'jin", -- [3]
 		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Argent Dawn", -- [1]
+			"Alliance - Darkspear", -- [2]
+			"Horde - Zul'jin", -- [3]
+		},
 	},
 	["c@Brotus - Argent Dawn@goldKeepAmount"] = 1000000,
-	["f@Alliance - Darkspear@deMailTarget"] = "",
-	["c@Shathiel - Darkspear@goldKeepAmount"] = 1000000,
-	["c@Shathiel - Darkspear@goldMailTarget"] = "",
-	["c@Shaekhan - Argent Dawn@goldKeepAmount"] = 1000000,
+	["g@ @sendItemsIndividually"] = false,
+	["c@Fantastiburo - Argent Dawn@goldMailTarget"] = "",
+	["c@Tyran - Argent Dawn@goldKeepAmount"] = 1000000,
+	["c@Tyran - Argent Dawn@goldMailTarget"] = "",
 	["g@ @inboxMessages"] = true,
-	["c@Shaekhan - Argent Dawn@goldMailTarget"] = "",
+	["c@Shanyt - Argent Dawn@goldKeepAmount"] = 1000000,
 	["g@ @defaultMailTab"] = true,
 	["c@Urbul - Zul'jin@goldKeepAmount"] = 1000000,
+	["g@ @deMaxQuality"] = 2,
 	["_currentProfile"] = {
 		["Bathal - Argent Dawn"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
@@ -75,26 +76,25 @@ TradeSkillMaster_MailingDB = {
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Urbul - Zul'jin"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
 	},
-	["g@ @autoCheck"] = true,
 	["g@ @resendDelay"] = 1,
 	["c@Datgorg - Argent Dawn@goldMailTarget"] = "",
-	["g@ @keepMailSpace"] = 0,
-	["g@ @displayMoneyCollected"] = true,
+	["c@Jingojaggot - Argent Dawn@goldMailTarget"] = "",
+	["g@ @sendMessages"] = true,
 	["c@Bathal - Argent Dawn@goldMailTarget"] = "",
 	["g@ @defaultPage"] = 1,
 	["g@ @sendDelay"] = 0.5,
 	["g@ @openMailSound"] = "TSM_NO_SOUND",
-	["g@ @sendMessages"] = true,
-	["c@Jingojaggot - Argent Dawn@goldMailTarget"] = "",
-	["g@ @deMaxQuality"] = 2,
-	["c@Shanyt - Argent Dawn@goldKeepAmount"] = 1000000,
-	["c@Tyran - Argent Dawn@goldMailTarget"] = "",
-	["c@Tyran - Argent Dawn@goldKeepAmount"] = 1000000,
-	["c@Fantastiburo - Argent Dawn@goldMailTarget"] = "",
-	["g@ @sendItemsIndividually"] = false,
+	["g@ @displayMoneyCollected"] = true,
+	["g@ @keepMailSpace"] = 0,
+	["g@ @autoCheck"] = true,
+	["c@Shaekhan - Argent Dawn@goldMailTarget"] = "",
+	["c@Shaekhan - Argent Dawn@goldKeepAmount"] = 1000000,
+	["c@Shathiel - Darkspear@goldMailTarget"] = "",
+	["c@Shathiel - Darkspear@goldKeepAmount"] = 1000000,
+	["f@Alliance - Darkspear@deMailTarget"] = "",
 }
