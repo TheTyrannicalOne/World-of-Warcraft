@@ -17,6 +17,7 @@
 --	limitations under the License.
 ----------------------------------------------------------------------------------
 
+---@class Storyline_API
 Storyline_API = {
 	lib = {},
 	locale = {},
@@ -90,7 +91,7 @@ The frame cannot be moved when using the default position. This option requires 
 			SL_RESIZE = "Resize",
 			SL_RESIZE_TT = "Drag and drop to resize",
 			SL_ABOUT = "About",
-			SL_ABOUT_TEXT = [[This is add-on is being maintained and updated thanks to the help of Ellype's Patreon (|cffcccccchttp://patreon.com/Ellypse|r) supporters:
+			SL_ABOUT_TEXT = [[This is add-on is being maintained and updated thanks to the help of Ellypse's Patreon (|cffcccccchttp://patreon.com/Ellypse|r) supporters:
 
 %s
 ]],
@@ -106,7 +107,7 @@ The frame cannot be moved when using the default position. This option requires 
 		localeContent =
 {
 	["SL_ABOUT"] = "À propos",
-	["SL_ABOUT_TEXT"] = [=[Cette add-on est développé et maintenant grâce à l'aide des supportaires du Patreon de Ellypse  (|cffcccccchttp://patreon.com/Ellypse|r):
+	["SL_ABOUT_TEXT"] = [=[Cet add-on est développé et maintenu grâce à l'aide des supporters du Patreon de Ellypse  (|cffcccccchttp://patreon.com/Ellypse|r):
 
 %s]=],
 	["SL_ACCEPTANCE"] = "J'accepte.",
@@ -381,30 +382,39 @@ Esperienza: |cffffffff%s xp|r
 		localeText = "Russian",
 		localeContent =
 {
+	["SL_ABOUT"] = "Около",
+	["SL_ABOUT_TEXT"] = [=[Это дополнение поддерживается и обновляется благодаря помощи сторонников Ellypse's Patreon (|cffcccccchttp://patreon.com/Ellypse|r):
+
+%s]=],
 	["SL_ACCEPTANCE"] = "Принимаю",
 	["SL_CHECK_OBJ"] = "Показать цель задания",
 	["SL_CONFIG"] = "Параметры",
 	["SL_CONFIG_AUTOEQUIP"] = "Автоматически экипировать награды (Экспериментальная функция)",
 	["SL_CONFIG_AUTOEQUIP_TT"] = "Автоматически экипировать награду, если она имеет более высокий уровень предмета.",
-	["SL_CONFIG_BIG_SAMPLE_TEXT"] = "Когда я переводил эту строчку, со мной связались представители одной крупной компании, предложив разместить здесь рекламу. Деньги были неплохие, но я отказался. Ведь, есть вещи, которые не продаются... А для всего остального есть мастеркард! Ведь мастеркард, это мировая система, объединяющая более 22 тысяч компаний в 210 странах мира! Это самые удобные сервисы и гарантия безопасности ваших денег!",
+	["SL_CONFIG_BIG_SAMPLE_TEXT"] = "Перевел и исправил кучу ошибок Хоргул (Гордунни).",
 	["SL_CONFIG_DEBUG"] = "Режим отладки",
 	["SL_CONFIG_DEBUG_TT"] = "Включить отладочный фрейм, отображающий информацию для разработчиков под фреймом Storyline",
+	["SL_CONFIG_DIALOG_CHOICES"] = "Выбор диалога",
 	["SL_CONFIG_DIALOG_TEXT"] = "Текст диалога",
-	["SL_CONFIG_DISABLE_IN_INSTANCES"] = "Скрывать Storylline в инстансах",
-	["SL_CONFIG_DISABLE_IN_INSTANCES_TT"] = "Автоматически скрывать Storyline внутри инстансов (подземельях, полях битв, рейдах, сценариях...) ",
+	["SL_CONFIG_DISABLE_IN_DMF"] = "Отключить сюжетную линию на Ярмарке Новолуния",
+	["SL_CONFIG_DISABLE_IN_DMF_TT"] = "Автоматически отключать сюжетную линию, когда вы находитесь на Ярмарке Новолуния.",
+	["SL_CONFIG_DISABLE_IN_INSTANCES"] = "Скрывать Storylline в подземельях",
+	["SL_CONFIG_DISABLE_IN_INSTANCES_TT"] = "Автоматически скрывать Storyline внутри подземелий (подземельях, полях битв, рейдах, сценариях...) ",
 	["SL_CONFIG_FORCEGOSSIP"] = "Включить диалоги НИП.",
 	["SL_CONFIG_FORCEGOSSIP_TT"] = "Включает диалоги с некоторыми НИП, такими как торговцы и укротители грифонов, при взаимодействии с ними.",
 	["SL_CONFIG_HIDEORIGINALFRAMES"] = "Скрыть стандартные окна",
-	["SL_CONFIG_HIDEORIGINALFRAMES_TT"] = "Скрыть оригинальные квестовые и диалоговые окна.",
+	["SL_CONFIG_HIDEORIGINALFRAMES_TT"] = "Скрыть оригинальные диалоговые окна заданий и НПС.",
 	["SL_CONFIG_LANGUAGE"] = "Язык",
 	["SL_CONFIG_LOCKFRAME"] = "Закрепить окно",
 	["SL_CONFIG_LOCKFRAME_TT"] = "Зафиксировать окно Storyline, чтобы его нельзя было сдвинуть по ошибке.",
 	["SL_CONFIG_MISCELLANEOUS"] = "Прочие опции",
+	["SL_CONFIG_MISCELLANEOUS_SUBTEXT"] = ".",
 	["SL_CONFIG_NEXT_ACTION"] = "Далее",
 	["SL_CONFIG_NPC_NAME"] = "Имя НИП",
 	["SL_CONFIG_QUEST_TITLE"] = "Название задания",
 	["SL_CONFIG_SAMPLE_TEXT"] = "Съешь же ещё этих мягких французских булок, да выпей чаю.",
 	["SL_CONFIG_STYLING_OPTIONS"] = "Настройки отображения",
+	["SL_CONFIG_STYLING_OPTIONS_SUBTEXT"] = ".",
 	["SL_CONFIG_TEXTSPEED"] = "%.1fx",
 	["SL_CONFIG_TEXTSPEED_HIGH"] = "Высокая",
 	["SL_CONFIG_TEXTSPEED_INSTANT"] = "Без анимации",
@@ -412,7 +422,7 @@ Esperienza: |cffffffff%s xp|r
 	["SL_CONFIG_UI_LAYOUT_ENGINE"] = "Использовать стандартное местоположение окна",
 	["SL_CONFIG_UI_LAYOUT_ENGINE_TT"] = [=[Использовать стандартное расположение, Storyline появится слева, подобно окну персонажа или заклинаний и будет сдвигаться, если новые окна будут открыты.
 
-Окно нельзя передвигать когда используется стандартное расположение. Использование данной настройки требует перезагрузки интерфейса..]=],
+Окно нельзя передвигать когда используется стандартное расположение. Использование данной настройки требует перезагрузки интерфейса.]=],
 	["SL_CONFIG_USE_KEYBOARD"] = "Использовать горячие клавиши",
 	["SL_CONFIG_USE_KEYBOARD_TT"] = "Использовать горячие клавиши во время диалогов. Пробел - далее. Backspace - назад. Кнопки от 1 до 0 - выбор варианта.",
 	["SL_CONFIG_WELCOME"] = [=[Спасибо за использование Storyline!

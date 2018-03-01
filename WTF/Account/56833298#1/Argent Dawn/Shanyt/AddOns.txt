@@ -20,3 +20,7 @@ LibStub: enabled
 CallbackHandler-1.0: enabled
 Ace3: enabled
 StopResetingMyCameraPlease: enabled
+HandyNotes_Achievements: enabled
+HandyNotes: enabled
+TomTom: enabled
+HereBeDragons-1.0: enabled

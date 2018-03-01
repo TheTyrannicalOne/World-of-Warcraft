@@ -1,7 +1,6 @@
 
 DBMOnyxia_AllSavedVars = {
 	["Shanyt-Argent Dawn"] = {
-		["talent1"] = "Arms",
 		["Onyxia"] = {
 			{
 				["Timer18584cdTColor"] = 3,
@@ -12,20 +11,21 @@ DBMOnyxia_AllSavedVars = {
 				["SpecWarn68958runSWNote"] = true,
 				["SpecWarn18584spellSWSound"] = 2,
 				["Enabled"] = true,
-				["Timer18584cast"] = true,
-				["TimerWhelpsTColor"] = 1,
+				["announce3stage"] = true,
+				["SpecWarn68958run"] = true,
 				["Timer18435cd2TColor"] = 5,
-				["SpecWarn18584spell"] = true,
-				["Timer18584cd"] = true,
+				["announce2stage"] = true,
+				["TimerWhelps"] = true,
 				["SpecWarn68958runSWSound"] = 4,
 				["SoundWTF3"] = true,
 				["announce2prestage"] = true,
-				["TimerWhelps"] = true,
+				["TimerWhelpsTColor"] = 1,
 				["Timer18584castTColor"] = 3,
-				["announce2stage"] = true,
-				["SpecWarn68958run"] = true,
-				["announce3stage"] = true,
+				["Timer18584cd"] = true,
+				["SpecWarn18584spell"] = true,
+				["Timer18584cast"] = true,
 			}, -- [1]
 		},
+		["talent1"] = "Arms",
 	},
 }

@@ -91,6 +91,7 @@ local NUM_BOBBERS = FL:tablecount(Bobbers);
 local chosenbobbers = {};
 local chosenlist = {};
 local numchosen = 0;
+local bobberkeys = FL:keytable(Bobbers)
 
 local GSB = FishingBuddy.GetSettingBool;
 local GSR = FishingBuddy.GetSetting
@@ -112,7 +113,7 @@ end
 
 local function PickRandomBobber(bobbersetting)
 	local baits = {};
-	for id,_ in pairs(bobbersetting) do
+	for _,id in ipairs(bobbersetting) do
 		if (PlayerHasToy(id) and C_ToyBox.IsToyUsable(id)) then
 			local start, duration, enable = GetItemCooldown(id);
 			local et = (start + duration) - GetTime();
@@ -151,8 +152,10 @@ end
 
 local function unwind(table)
 	local unwound = {}
-	for id,_ in pairs(table) do
-		tinsert(unwound, id)
+	if (table) then
+		for id,_ in pairs(table) do
+			tinsert(unwound, id)
+		end
 	end
 
 	return unwound
@@ -174,7 +177,7 @@ local function SpecialBobberPlan(queue)
 	if ( bobbersetting ~= BOBBER_NONE and not GetSpecialBobberBuff()) then
 		-- We either don't want to use an oversized bobber, or we don't have any
 		if (bobbersetting == BOBBER_ALL) then
-			bobbersetting = Bobbers
+			bobbersetting = bobberkeys
 		end
 
 		local itemid = PickRandomBobber(bobbersetting);

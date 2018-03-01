@@ -106,7 +106,7 @@ credits[FBConstants.ROLE_HELP_BUGS] = {
 	["callumw"] = { "Typo identification in fishing lib" },
 	["Ninmah"] = { "Beta tester", "Auto-loot reset bug" },
 	["WildCard_25"] = { "Fish Watcher update bug" },
-	["Grizzly_UK"] = { "Forum support and understanding", "Debugging watcher location", },
+	["Grizzly_UK"] = { "Forum support and understanding", "Debugging watcher location", "Tuskarr spear bug help!" },
 	["Badmunkay@Shadow Council"] = { "Better Extravaganza time handling", },
 	["esiemiat"] = { "Minimap icon move bug help", },
 	["DirtyHarryGermany"] = { "Beta tester", },
@@ -118,7 +118,8 @@ credits[FBConstants.ROLE_HELP_BUGS] = {
 	["Baconslicer"] = { "Lure managment bug"},
 	["Gulduka"] = { "German language testing for LibBabble-SubZone" },
 	["Mastigophoran"] = { "Help with Truthseeker/Oathbreaker issue" },
-	["Resike"] = { "Help fix leaking globals, potentional taint hazards" }
+	["Resike"] = { "Help fix leaking globals, potentional taint hazards" },
+	["HarlequinBonse"] = { "Found the Tuskarr spear bug!"},
 };
 
 -- Ideas and suggestions

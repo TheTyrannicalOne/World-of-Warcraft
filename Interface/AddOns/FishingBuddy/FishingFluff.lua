@@ -248,6 +248,127 @@ FishingItems[116755] = {
 	usable = IsQuestFishing,
 };
 
+local LevelingItems = {}
+LevelingItems[139652] = {
+	["enUS"] = "Leyshimmer Blenny", -- AP
+}
+LevelingItems[133725] = {
+	["enUS"] = "Leyshimmer Blenny", -- skill
+}
+LevelingItems[139653] = {
+	["enUS"] = "Nar'thalas Hermit", -- AP
+}
+LevelingItems[133726] = {
+	["enUS"] = "Nar'thalas Hermit", -- skill
+}
+LevelingItems[139654] = {
+	["enUS"] = "Ghostly Queenfish", -- AP
+}
+LevelingItems[133727] = {
+	["enUS"] = "Ghostly Queenfish", -- skill
+}
+LevelingItems[139655] = {
+	["enUS"] = "Terrorfin", -- AP
+}
+LevelingItems[133728] = {
+	["enUS"] = "Terrorfin", -- skill
+}
+LevelingItems[139656] = {
+	["enUS"] = "Thorned Flounder*", -- AP
+}
+LevelingItems[133729] = {
+	["enUS"] = "Thorned Flounder*", -- skill
+}
+LevelingItems[139657] = {
+	["enUS"] = "Ancient Mossgill", -- AP
+}
+LevelingItems[133730] = {
+	["enUS"] = "Ancient Mossgill", -- skill
+}
+LevelingItems[139658] = {
+	["enUS"] = "Mountain Puffer", -- AP
+}
+LevelingItems[133731] = {
+	["enUS"] = "Mountain Puffer", -- skill
+}
+LevelingItems[139659] = {
+	["enUS"] = "Coldriver Carp", -- AP
+}
+LevelingItems[133732] = {
+	["enUS"] = "Coldriver Carp", -- skill
+}
+LevelingItems[139660] = {
+	["enUS"] = "Ancient Highmountain Salmon", -- AP
+}
+LevelingItems[133733] = {
+	["enUS"] = "Ancient Highmountain Salmon", -- skill
+}
+LevelingItems[139661] = {
+	["enUS"] = "Oodelfjisk", -- AP
+}
+LevelingItems[133734] = {
+	["enUS"] = "Oodelfjisk", -- skill
+}
+LevelingItems[139662] = {
+	["enUS"] = "Graybelly Lobster", -- AP
+}
+LevelingItems[133735] = {
+	["enUS"] = "Graybelly Lobster", -- skill
+}
+LevelingItems[139663] = {
+	["enUS"] = "Thundering Stormray", -- AP
+}
+LevelingItems[133736] = {
+	["enUS"] = "Thundering Stormray", -- skill
+}
+LevelingItems[139664] = {
+	["enUS"] = "Magic-Eater Frog", -- AP
+}
+LevelingItems[133737] = {
+	["enUS"] = "Magic-Eater Frog", -- skill
+}
+LevelingItems[139665] = {
+	["enUS"] = "Seerspine Puffer", -- AP
+}
+LevelingItems[133738] = {
+	["enUS"] = "Seerspine Puffer", -- skill
+}
+LevelingItems[139666] = {
+	["enUS"] = "Tainted Runescale Koi", -- AP
+}
+LevelingItems[133739] = {
+	["enUS"] = "Tainted Runescale Koi", -- skill
+}
+LevelingItems[139667] = {
+	["enUS"] = "Axefish", -- AP
+}
+LevelingItems[133740] = {
+	["enUS"] = "Axefish", -- skill
+}
+LevelingItems[139668] = {
+	["enUS"] = "Seabottom Squid", -- AP
+}
+LevelingItems[133741] = {
+	["enUS"] = "Seabottom Squid", -- skill
+}
+LevelingItems[139669] = {
+	["enUS"] = "Ancient Black Barracuda", -- AP
+}
+LevelingItems[133742] = {
+	["enUS"] = "Ancient Black Barracuda", -- skill
+}
+
+local function CastAndThrow()
+	if GSB("AutoOpen") then
+		for id,info in pairs(LevelingItems) do
+			if GetItemCount(id) > 0 then
+				return "/use "..info[CurLoc].."\n/cast "..PROFESSIONS_FISHING
+			end
+		end
+	end
+end
+FishingBuddy.CastAndThrow = CastAndThrow
+
 -- Dalaran coin lures
 local CoinLures = {};
 local function CanUseCoinLure()
@@ -513,6 +634,12 @@ FishingItems[139175] = {
 
 FishingBuddy.FishingItems = FishingItems;
 
+local FISHINGHATS = {
+	[118393] = true,        -- Tentacled Hat
+	[118380] = true,        -- HightFish Cap
+};
+FishingBuddy.FishingHats = FISHINGHATS;
+
 local FluffOptions = {
 	["FishingFluff"] = {
 		["text"] = FBConstants.CONFIG_FISHINGFLUFF_ONOFF,
@@ -579,11 +706,18 @@ local BergOptions = {
 	},
 };
 
-local function PickRaft(info, buff, need, itemid)
+local function HasRaftBuff()
 	local bergbuff = GetSpellInfo(BergOptions.spell);
 	local raftbuff = GetSpellInfo(RaftOptions.spell);
 	local hasberg = FL:HasBuff(bergbuff);
 	local hasraft = FL:HasBuff(raftbuff);
+
+	return bergbuff, raftbuff, hasberg, hasraft
+end
+FishingBuddy.HasRaftBuff = HasRaftBuff
+
+local function PickRaft(info, buff, need, itemid)
+	local bergbuff, raftbuff, hasberg, hasraft = HasRaftBuff();
 	
 	need = not (hasberg or hasraft);
 	
@@ -732,6 +866,7 @@ FluffEvents["VARIABLES_LOADED"] = function(started)
 	end
 
 	SetupSpecialItems(CoinLures);
+	SetupSpecialItems(LevelingItems, false, true, true);
 
 	-- we have to wait until the toys are actually available
 	local toydelayframe = CreateFrame("Frame");

@@ -64,8 +64,10 @@ end
 
 local function unwind(table)
 	local unwound = {}
-	for id,_ in pairs(table) do
-		tinsert(unwound, id)
+	if (table) then
+		for id,_ in pairs(table) do
+			tinsert(unwound, id)
+		end
 	end
 
 	return unwound
@@ -152,6 +154,10 @@ PetEvents[FBConstants.FISHING_ENABLED_EVT] = function()
     -- only do the fluff stuff if we're actually wearing any fishing gear
 	-- we don't do this stuff if we're "no pole equipped" fishing
 	local petsetting = FishingBuddy.GetSetting(PETSETTING)
+	if (petsetting == nil) then
+		-- timing issue if we start off fishing. Hrm.
+		petsetting = PET_NONE
+	end
     if ( petsetting ~= PET_NONE and
         FishingBuddy.ReadyForFishing() and
         not FishingBuddy.CheckCombat()) then

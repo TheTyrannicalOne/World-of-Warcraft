@@ -10,6 +10,7 @@ PasteDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
@@ -41,6 +42,9 @@ PasteDB = {
 			["loaded"] = true,
 		},
 		["Shanyt - Argent Dawn"] = {
+			["loaded"] = true,
+		},
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Shaekhan - Argent Dawn"] = {

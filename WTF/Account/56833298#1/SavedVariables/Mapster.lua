@@ -27,8 +27,8 @@ MapsterDB = {
 				["Tyrannithal - Argent Dawn"] = {
 					["version"] = 2,
 				},
-				["Default"] = {
-					["version"] = 2,
+				["LUI-Towelliee"] = {
+					["version"] = 1,
 				},
 				["Shanyt - Argent Dawn"] = {
 					["version"] = 2,
@@ -42,8 +42,8 @@ MapsterDB = {
 				["Cowtastraphy - Argent Dawn"] = {
 					["version"] = 2,
 				},
-				["LUI-Towelliee"] = {
-					["version"] = 1,
+				["Default"] = {
+					["version"] = 2,
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["version"] = 2,
@@ -66,6 +66,7 @@ MapsterDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
@@ -120,10 +121,14 @@ MapsterDB = {
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
 		},
-		["Default"] = {
+		["Towel-Monk"] = {
+			["scale"] = 0.915698230266571,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["scale"] = 1.05987179279327,
+			["scale"] = 1.06784820556641,
 			["y"] = -71.1882280573341,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
@@ -146,11 +151,7 @@ MapsterDB = {
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
 		},
-		["Towel-Monk"] = {
-			["scale"] = 0.915698230266571,
-			["x"] = 193.15725667162,
-			["point"] = "TOPLEFT",
-			["y"] = -71.1882280573341,
+		["Default"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,

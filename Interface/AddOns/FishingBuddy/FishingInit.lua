@@ -345,7 +345,7 @@ FishingInit.UpdateFishingDB = function()
 	end
 
 	-- We should have been doing this all along, so let's go way, way back
-	playerversion = FishingBuddy_Player["Version"];
+	local playerversion = FishingBuddy_Player["Version"];
 	if ( not playerversion ) then
 		playerversion = 8700;
 	end
@@ -478,8 +478,8 @@ FishingInit.UpdateFishingDB = function()
 		end
 	end
 
-	if (type(FishingBuddy_Player["TotalTimeFishing"]) ~= "number") then
-		FishingBuddy_Player["TotalTimeFishing"] = 1;
+	if (type(FishingBuddy_Player["Settings"]["TotalTimeFishing"]) ~= "number") then
+		FishingBuddy_Player["Settings"]["TotalTimeFishing"] = 1;
 	end
 
 	-- save this for other pieces that might need to update

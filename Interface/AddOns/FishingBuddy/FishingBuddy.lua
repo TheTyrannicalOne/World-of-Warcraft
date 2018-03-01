@@ -30,11 +30,6 @@ local POLES = {
 	["Nat Pagle's Fish Terminator"] = "19944:0:0:0",
 }
 
-local FISHINGHATS = {
-	[118393] = true,	-- Tentacled Hat
-	[118380] = true,	-- HightFish Cap
-};
-
 local GeneralOptions = {
 	["ShowNewFishies"] = {
 		["text"] = FBConstants.CONFIG_SHOWNEWFISHIES_ONOFF,
@@ -409,8 +404,6 @@ FishingBuddy.GlobalSetSetting = function(setting, value)
 		FishingBuddy_Info["Settings"][setting] = value;
 	end
 end
-
-FishingBuddy.FishingHats = FISHINGHATS;
 
 FishingBuddy.ByFishie = nil;
 FishingBuddy.SortedFishies = nil;
@@ -1221,24 +1214,9 @@ end
 
 local function GetUpdateLure()
 	local GSB = FishingBuddy.GetSettingBool;
-	local usedrinks = GSB("FishingFluff") and GSB("DrinkHeavily");
-	local lureinventory, useinventory = FL:GetLureInventory();
+	local lureinventory, _ = FL:GetLureInventory();
 
 	DoAutoOpenLoot = nil;
-
-	-- drink first, then apply a lure if we need to
-	if ( usedrinks ) then
-		-- Drink, drink, drink
-		if ( #useinventory > 0 ) then
-			if ( not LastUsed or not FL:HasBuff(LastUsed.n) ) then
-				local id = useinventory[1].id;
-				if ( not FL:HasBuff(useinventory[1].n) ) then
-					LastUsed = useinventory[1];
-					return true, LastUsed.id, LastUsed.n;
-				end
-			end
-		end
-	end
 
 	local doit, id, name, it = FishingBuddy.GetPlan()
 	if ( doit ) then
@@ -1278,7 +1256,6 @@ local function GetUpdateLure()
 
 		-- only apply a lure if we're actually fishing with a "real" pole
 		if (FL:IsFishingPole()) then
-
 			-- Let's wait a bit so that the enchant can show up before we lure again
 			if ( LastLure and LastLure.time and ((LastLure.time - GetTime()) > 0) ) then
 				return false;
@@ -1289,14 +1266,14 @@ local function GetUpdateLure()
 			end
 
 			local skill, _, _, _ = FL:GetCurrentSkill();
-
 			if (skill > 0) then
 				local NextLure, NextState;
 				local pole, tempenchant = FL:GetPoleBonus();
 				local continent = GetCurrentMapContinent()
 				local bigdraenor = (GSB("BigDraenor") and (continent == 7 or continent == 8 or continent == 9));
 				local state, bestlure = FL:FindBestLure(tempenchant, LureState, false, bigdraenor);
-				if ( DoEscaped ) then
+				-- If we could use a lure based on skill, or we lost a fish.
+				if ( DoEscaped or not FL:HasLureBuff() ) then
 					if ( state or bestlure ) then
 						NextState = state or LureState;
 						NextLure = bestlure;
@@ -1325,7 +1302,6 @@ local function GetUpdateLure()
 					NextLure = nil;
 				end
 				local DoLure = NextLure;
-
 				if ( DoLure and DoLure.id ) then
 					-- if the pole has an enchantment, we can assume it's got a lure on it (so far, anyway)
 					-- remove the main hand enchantment (since it's a fishing pole, we know what it is)
@@ -1368,19 +1344,38 @@ local function ClearAddingLure()
 	AddingLure = false;
 end
 
-CaptureEvents["UNIT_SPELLCAST_STOP"] = ClearAddingLure;
-CaptureEvents["UNIT_SPELLCAST_INTERRUPTED"] = ClearAddingLure;
+-- we don't want to interrupt ourselves if we're casting.
+local fishing_buff = GetSpellInfo(131474)
+local current_spell_id = nil
+local current_spell_name = nil
+CaptureEvents["UNIT_SPELLCAST_CHANNEL_START"] = function(unit, name, rank, lineid, spellid)
+	current_spell_name = name
+	current_spell_id = spellid
+end
+
+CaptureEvents["UNIT_SPELLCAST_CHANNEL_STOP"] = function(unit, name, rank, lineid, spellid)
+	-- we may want to wait a bit here for any buff to come back...
+	current_spell_name = nil
+	current_spell_id = nil
+	ClearAddingLure()
+end
+
+CaptureEvents["UNIT_SPELLCAST_INTERRUPTED"] = function(unit, name, rank, lineid, spellid)
+	current_spell_name = nil
+	current_spell_id = nil
+	ClearAddingLure()
+end
+
 CaptureEvents["UNIT_SPELLCAST_FAILED"] = ClearAddingLure;
 CaptureEvents["UNIT_SPELLCAST_FAILED_QUIET"] = ClearAddingLure;
 
-StatusEvents = {};
-StatusEvents["ACTIONBAR_SLOT_CHANGED"] = function()
+CaptureEvents["ACTIONBAR_SLOT_CHANGED"] = function()
 	if ( FishingBuddy.GetSettingBool("UseAction") ) then
 		FL:GetFishingActionBarID(true);
 	end
 end
 
-StatusEvents["UNIT_AURA"] = function(arg1)
+CaptureEvents["UNIT_AURA"] = function(arg1)
 	if ( arg1 == "player" ) then
 		local hmhe,_,_,_,_,_ = GetWeaponEnchantInfo();
 		if ( not hmhe ) then
@@ -1388,6 +1383,11 @@ StatusEvents["UNIT_AURA"] = function(arg1)
 		end
 	end
 end
+
+local function GetCurrentSpell()
+	return current_spell_name, current_spell_id
+end
+FishingBuddy.GetCurrentSpell = GetCurrentSpell
 
 local function ReadyForFishing()
 	local GSB = FishingBuddy.GetSettingBool;
@@ -1443,7 +1443,12 @@ local function CentralCasting()
 			end
 			LastCastTime = GetTime();
 			autopoleframe:Show();
-			FL:InvokeFishing(FishingBuddy.GetSettingBool("UseAction"));
+			local macrotext = FishingBuddy.CastAndThrow()
+			if macrotext then
+				FL:InvokeMacro(macrotext)
+			else
+				FL:InvokeFishing(FishingBuddy.GetSettingBool("UseAction"));
+			end
 		end
 	end
 	FL:OverrideClick(HideAwayAll);
@@ -2162,7 +2167,6 @@ FishingBuddy.OnLoad = function(self)
 		end);
 
 	RegisterHandlers(CaptureEvents);
-	RegisterHandlers(StatusEvents);
 
 	-- Set up command
 	SlashCmdList["fishingbuddy"] = FishingBuddy.Command;

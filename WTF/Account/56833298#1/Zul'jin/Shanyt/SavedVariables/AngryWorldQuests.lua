@@ -1,0 +1,2 @@
+
+AngryWorldQuests_CharacterConfig = nil

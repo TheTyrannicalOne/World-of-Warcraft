@@ -17,6 +17,12 @@ local SSR = FishingBuddy.SetSetting;
 local GSR = FishingBuddy.GetSetting;
 local GSB = FishingBuddy.GetSettingBool;
 
+--local function SSR(setting, value)
+--    print("SSR1", setting, FL:printable(value))
+--    FishingBuddy.SetSetting(setting, value)
+--    print("SSR2", setting, FL:printable(GSR(setting)))
+--end
+
 local FSF = {}
 -- Scrolling menu handling
 FSF.HM_DISPLAYED_LINES = 14;
@@ -92,10 +98,11 @@ function FSF:InitMenuItems(holder)
                     end
                 end
 
+                local map = FL:tablemap(current)
                 local total = FL:tablecount(data.table)
                 local count = 0
                 for _,entry in pairs(data.table) do
-                    if (current[entry.value]) then
+                    if (map[entry.value]) then
                         choices[entry.index].checked = true
                         count = count + 1
                         if (data.groups) then
@@ -123,7 +130,7 @@ function FSF:InitMenuItems(holder)
                                 text:SetText(group.menutext)
                                 set = true
                             else
-                                self:SetChecked(choices, group, false)
+                                self:SetChecked(choices, group, group.menutext, false)
                             end
                         end
                     end
@@ -145,7 +152,11 @@ function FSF:ProcessMenuItems(holder, choice)
 
     choice.checked = not choice.checked
     if ( data.raw ) then
-        SSR(entry.setting, entry.value)
+        if data.bool then
+            SSR(entry.setting, choices[data.index].checked)
+        else
+            SSR(entry.setting, entry.value)
+        end
     else
         if (data.all and data.all.value == entry.value) then
             self:SetAllOrNone(choices, data, text, true)
@@ -225,7 +236,7 @@ function FSF:ProcessMenuItems(holder, choice)
                     end
                 end
                 if (not set) then
-                    SSR(choice.setting, value)
+                    SSR(entry.setting, value)
                     text:SetText(data.menutext)
                 end
             end
@@ -306,7 +317,7 @@ function FSF:CreateMenuChoices(scrollmenu, simple, complex)
             tinsert(choices, choice)
             local idx = #choices
 
-            map = mapping[entry.setting]
+            local map = mapping[entry.setting]
             if (not map) then
                 map = {}
                 mapping[entry.setting] = map

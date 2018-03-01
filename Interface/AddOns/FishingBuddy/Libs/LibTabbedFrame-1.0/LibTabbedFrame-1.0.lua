@@ -22,7 +22,7 @@ function FrameLib:GetFrameInfo(f)
 	local n;
 	if ( type(f) == "string" ) then
 		n = f;
-		f = getglobal(f);
+		f = _G[f];
 	else
 		n = f:GetName();
 	end
@@ -393,8 +393,8 @@ function FrameLib:CreateFrameHandler(frameName, icon, title, toggle, onshow, onh
 	-- Close with escape key
 	tinsert(UISpecialFrames, frameName); 
 
-	getglobal(frameName.."Portrait"):SetTexture(icon);
-	getglobal(frameName.."TitleText"):SetText(title);
+	_G[frameName.."Portrait"]:SetTexture(icon);
+	_G[frameName.."TitleText"]:SetText(title);
 
 	-- set up some frame local values
 	frame.name = frameName;

@@ -22,7 +22,7 @@ function SideTabLib:GetFrameInfo(f)
 	local n;
 	if ( type(f) == "string" ) then
 		n = f;
-		f = getglobal(f);
+		f = _G[f];
 	else
 		n = f:GetName();
 	end

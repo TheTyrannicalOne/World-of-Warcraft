@@ -15,14 +15,32 @@ OneRing_Config = {
 				["RaidSymbols"] = false,
 				["OPieTracking"] = false,
 				["HunterShots"] = false,
-				["OPieAutoQuest"] = false,
-				["OPieTrinkets"] = false,
 				["WorldMarkers"] = false,
+				["OPieTrinkets"] = false,
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},
 	["PersistentStorage"] = {
 		["RingKeeper"] = {
+			["Mounts1"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABueoFiE/ru",
+				}, -- [1]
+				{
+					["id"] = 179245,
+					["sliceToken"] = "ABueoFiE/ry",
+				}, -- [2]
+				{
+					["id"] = 64731,
+					["sliceToken"] = "ABueoFiE/rt",
+				}, -- [3]
+				["limit"] = "Serbitechna-Darkspear",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["name"] = "Mounts",
+			},
 			["Mounts"] = {
 				{
 					["sliceToken"] = "ABueoDKPMqf",
@@ -47,24 +65,6 @@ OneRing_Config = {
 				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-			},
-			["Mounts1"] = {
-				{
-					["id"] = 150544,
-					["sliceToken"] = "ABueoFiE/ru",
-				}, -- [1]
-				{
-					["id"] = 179245,
-					["sliceToken"] = "ABueoFiE/ry",
-				}, -- [2]
-				{
-					["id"] = 64731,
-					["sliceToken"] = "ABueoFiE/rt",
-				}, -- [3]
-				["name"] = "Mounts",
-				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["limit"] = "Serbitechna-Darkspear",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

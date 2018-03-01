@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1197, "DBM-Highmaul", nil, 477)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 23 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 32 $"):sub(12, -3))
 mod:SetCreatureID(77428, 78623)
 mod:SetEncounterID(1705)
 mod:SetZone()
@@ -22,7 +22,6 @@ mod:RegisterEventsInCombat(
 	"UNIT_SPELLCAST_SUCCEEDED boss1 boss2"
 )
 
---TODO, do more fancy stuff with radar in phase 4 when i have more logs, like closing it when it's not needed. Or may just leave it as is depending on preferences.
 --TODO, Night-Twisted Faithful stuff (no spawn trigger or yell, but 30 second loop, like oozes on that boss in ToT)
 --TODO, see if target scanning works on dark star, or if that player gets an emote whisper or something. If can find dark star target, then need "nearby" warnings to move away from location
 --TODO, 3 tank strat makes the accelerated confusing. todo, check number of tanks on pull, if 3, require margok be current target for accelerated warning
@@ -162,7 +161,7 @@ local jumpDistance2 = {
 }
 local UnitDebuff, UnitDetailedThreatSituation, select = UnitDebuff, UnitDetailedThreatSituation, select
 local playerName = UnitName("player")
-local chogallName, inter1, inter2 = DBM:EJ_GetEncounterInfo(167), DBM:EJ_GetSectionInfo(9891), DBM:EJ_GetSectionInfo(9893)
+local chogallName, inter1, inter2 = EJ_GetEncounterInfo(167), DBM:EJ_GetSectionInfo(9891), DBM:EJ_GetSectionInfo(9893)
 local fixateDebuff, gazeDebuff = DBM:GetSpellInfo(157763), DBM:GetSpellInfo(165595)
 local chaosDebuff1, chaosDebuff2, chaosDebuff3, chaosDebuff4 = DBM:GetSpellInfo(158605), DBM:GetSpellInfo(164176), DBM:GetSpellInfo(164178), DBM:GetSpellInfo(164191)
 local brandedDebuff1, brandedDebuff2, brandedDebuff3, brandedDebuff4 = DBM:GetSpellInfo(156225), DBM:GetSpellInfo(164004), DBM:GetSpellInfo(164005), DBM:GetSpellInfo(164006)

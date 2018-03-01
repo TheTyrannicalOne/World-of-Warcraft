@@ -1,8 +1,16 @@
 
 TradeSkillMaster_AuctioningDB = {
 	["g@ @confirmCompleteSound"] = "TSM_NO_SOUND",
-	["g@ @roundNormalPrice"] = false,
+	["g@ @scanCompleteSound"] = "TSM_NO_SOUND",
 	["g@ @disableInvalidMsg"] = false,
+	["g@ @cancelWithBid"] = false,
+	["g@ @helpPlatesShown"] = {
+		["selection"] = true,
+	},
+	["_hash"] = 5870975,
+	["f@Alliance - Darkspear@player"] = {
+		["Shathiel"] = true,
+	},
 	["_currentProfile"] = {
 		["Bathal - Argent Dawn"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
@@ -13,10 +21,35 @@ TradeSkillMaster_AuctioningDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
+	},
+	["g@ @roundNormalPrice"] = false,
+	["g@ @priceColumn"] = 1,
+	["f@Horde - Zul'jin@player"] = {
+		["Shanyt"] = true,
+	},
+	["f@Horde - Zul'jin@whitelist"] = {
+	},
+	["g@ @matchWhitelist"] = true,
+	["f@Horde - Argent Dawn@player"] = {
+		["Tyrannithal"] = true,
+		["Cowtastraphy"] = true,
+		["Tyran"] = true,
+		["Datgorg"] = true,
+		["Bathal"] = true,
+		["Vadder"] = true,
+		["Mulmok"] = true,
+		["Brotus"] = true,
+		["Jingojaggot"] = true,
+		["Shaekhan"] = true,
+		["Shanyt"] = true,
+		["Fantastiburo"] = true,
+	},
+	["f@Horde - Argent Dawn@whitelist"] = {
 	},
 	["_scopeKeys"] = {
 		["char"] = {
@@ -33,45 +66,21 @@ TradeSkillMaster_AuctioningDB = {
 			"Fantastiburo - Argent Dawn", -- [11]
 			"Bathal - Argent Dawn", -- [12]
 			"Shathiel - Darkspear", -- [13]
-		},
-		["realm"] = {
-			"Argent Dawn", -- [1]
-			"Darkspear", -- [2]
-		},
-		["profile"] = {
-			"Default", -- [1]
+			"Shanyt - Zul'jin", -- [14]
 		},
 		["factionrealm"] = {
 			"Horde - Argent Dawn", -- [1]
 			"Alliance - Darkspear", -- [2]
+			"Horde - Zul'jin", -- [3]
 		},
-	},
-	["g@ @priceColumn"] = 1,
-	["f@Horde - Argent Dawn@whitelist"] = {
-	},
-	["g@ @cancelWithBid"] = false,
-	["g@ @scanCompleteSound"] = "TSM_NO_SOUND",
-	["_hash"] = 5870975,
-	["g@ @matchWhitelist"] = true,
-	["f@Horde - Argent Dawn@player"] = {
-		["Tyrannithal"] = true,
-		["Cowtastraphy"] = true,
-		["Tyran"] = true,
-		["Datgorg"] = true,
-		["Vadder"] = true,
-		["Bathal"] = true,
-		["Mulmok"] = true,
-		["Brotus"] = true,
-		["Jingojaggot"] = true,
-		["Shanyt"] = true,
-		["Shaekhan"] = true,
-		["Fantastiburo"] = true,
-	},
-	["f@Alliance - Darkspear@player"] = {
-		["Shathiel"] = true,
-	},
-	["g@ @helpPlatesShown"] = {
-		["selection"] = true,
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Argent Dawn", -- [1]
+			"Darkspear", -- [2]
+			"Zul'jin", -- [3]
+		},
 	},
 	["_version"] = 1,
 	["f@Alliance - Darkspear@whitelist"] = {

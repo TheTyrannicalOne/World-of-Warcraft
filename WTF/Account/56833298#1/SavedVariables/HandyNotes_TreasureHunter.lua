@@ -10,6 +10,7 @@ HandyNotes_TreasureHunterDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
@@ -33,6 +34,8 @@ HandyNotes_TreasureHunterDB = {
 		["Mulmok - Argent Dawn"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
+		},
+		["Shanyt - Zul'jin"] = {
 		},
 		["Shaekhan - Argent Dawn"] = {
 		},

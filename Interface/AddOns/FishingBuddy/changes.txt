@@ -1,4 +1,15 @@
-﻿Version 1.8a
+﻿Version 1.8.2
+- Fix issue with LibStub and initialization that would cause the broker to fail
+
+Version 1.8.1
+- If "Open Quest Items" is checked, throw Legion bonus fish with every cast
+- Display "The Wish Remover" status when we're near the fountain.
+- "Oh, and it's also a great excuse to drink. Heavily."
+- Fix the bug(s) that stopped bobber and pet choices from sticking.
+- Fix the annoying bug that stopped many people from casting (thanks HarlequinBonse and Grizzly_UK!)
+- Many small bug fixes, work towards better buff handling
+
+Version 1.8a
 - Fix random issues with the newly update code
 - Show the count of Lunarfall Carp (since we only get 5 at a time)
 - Don't use the Tuskarr Spear if we're mounted (trying to  make it smarter)

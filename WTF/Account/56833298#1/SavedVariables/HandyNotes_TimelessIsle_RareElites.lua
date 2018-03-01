@@ -10,6 +10,7 @@ TimelessIsle_RareElitesDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",

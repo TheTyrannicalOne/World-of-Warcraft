@@ -1,7 +1,5 @@
 -- Display the fish you're catching and/or have caught in a live display
 
-FishingBuddy.WatchFrame = {};
-
 -- 5.0.4 has a problem with a global "_" (see some for loops below)
 local _
 
@@ -91,11 +89,72 @@ local WatcherOptions = {
 		["parents"] = { ["WatchFishies"] = "d" } },
 };
 
+local FWF = {};
+
+FWF.HEADER = 1
+FWF.LAST_PRIORITY = 999
+FWF.fishingWatchMaxWidth = 0
+FWF.current_line = 1
+FWF.Handlers = {}
+FWF.First = {}
+FWF.Last = {}
+
+function FWF:RegisterLineHandler(renderline, priority, first, last)
+	handler = {}
+	handler.first = first
+	handler.last = last
+	handler.render = renderline
+
+	priority = priority or FWF.LAST_PRIORITY
+	if not self.Handlers[priority] then
+		self.Handlers[priority] = {}
+	end
+	tinsert(self.Handlers[priority], handler)
+end
+
+function FWF:UpdateLine(index, text)
+	if text then
+		local name = "FishingWatchLine"..index;
+		local entry = _G[name];
+		if ( not entry ) then
+			local first = _G["FishingWatchLine1"];
+			entry = FishingWatchFrame:CreateFontString(name, "BACKGROUND", "FishingWatchFontTemplate");
+			entry:SetJustifyH("LEFT");
+			entry:SetHeight(first:GetHeight());
+			entry:SetPoint("TOPLEFT", "FishingWatchLine"..(index-1), "BOTTOMLEFT");
+			local fontFile, fontSize, fontFlags = first:GetFont();
+			entry:SetFont(fontFile, fontSize, fontFlags);
+				MAX_FISHINGWATCH_LINES = MAX_FISHINGWATCH_LINES + 1;
+		end
+
+		entry:SetText(text);
+		local tempWidth = entry:GetWidth();
+		if ( not self.fishingWatchMaxWidth or tempWidth > self.fishingWatchMaxWidth ) then
+			self.fishingWatchMaxWidth = tempWidth;
+		end
+		entry:Show();
+	end
+end
+
+function FWF:SetCurrentEntry(text)
+	if text then
+		if type(text) == 'string' then
+			self:UpdateLine(self.current_line, text)
+			self.current_line = self.current_line + 1
+		else
+			for _,line in ipairs(text) do
+				self:UpdateLine(self.current_line, line)
+				self.current_line = self.current_line + 1
+			end
+		end
+	end
+end
+
 -- handle special frame actions
 local function FadingFinished()
 	FishingWatchHighlight:Hide();
 	FishingWatchTab:Hide();
-	FishingWatchTab.finishedFunc = nil;	
+	FishingWatchTab.finishedFunc = nil;
 end
 
 local function ShowDraggerFrame()
@@ -107,7 +166,7 @@ end
 local function HideDraggerFrame()
 	FishingWatchFrame:EnableMouse(false);
 	if (FishingWatchTab:IsShown()) then
-		FishingWatchTab.finishedFunc = FadingFinished;	
+		FishingWatchTab.finishedFunc = FadingFinished;
 		UIFrameFadeOut(FishingWatchHighlight, WATCHDRAGGER_FADE_TIME, 0.15, 0);
 		UIFrameFadeOut(FishingWatchTab, WATCHDRAGGER_FADE_TIME, 1.0, 0);
 	end
@@ -139,12 +198,16 @@ local totalSchool = 0;
 local totalCurrent = 0;
 local gotDiffs = false;
 
+local wish_remover = { ["count"] = 0, ["current"] = 0, ["text"] = nil, ["calc"] = 1, ["quality"] = 5 };
 local goldcoins = { ["count"] = 0, ["current"] = 0, ["text"] = FBConstants.GOLD_COIN, ["calc"] = 1 };
 local silvercoins = { ["count"] = 0, ["current"] = 0, ["text"] = FBConstants.SILVER_COIN, ["calc"] = 1 };
 local coppercoins = { ["count"] = 0, ["current"] = 0, ["text"] = FBConstants.COPPER_COIN, ["calc"] = 1 };
 local missed = { ["count"] = 0, ["current"] = 0, ["text"] = SPELL_FAILED_TRY_AGAIN, ["quality"] = 0, ["calc"] = 1, ["skipped"] = 1 };
 local fishdata = nil;
 local fishsort = nil;
+
+local legion_count = 0
+local legion_coins = nil
 
 -- is this one of the four kinds of catch we're not going to sort into
 -- our "fish" list
@@ -154,7 +217,11 @@ local function IsSpecialFish(fishid, itemTexture)
 	local silvertexture = "_18";
 	local coppertexture = "_19";
 
-	if (string.find(itemTexture, basetexture)) then
+	if legion_coins[fishid] then
+		if not legion_coins[fishid].show then
+			return wish_remover
+		end
+	elseif (string.find(itemTexture, basetexture)) then
 		if (string.find(itemTexture, goldtexture)) then
 			return goldcoins;
 		elseif (string.find(itemTexture, silvertexture)) then
@@ -176,7 +243,7 @@ local function UpdateUnknownZone(zone, subzone, zidx, sidx)
 	if ( subzone == UNKNOWN or subzone == FBConstants.UNKNOWN ) then
 		return;
 	end
-	
+
 	local uzidx = FishingBuddy.GetZoneIndex(UNKNOWN);
 	if ( uzidx ) then
 		local fh = FishingBuddy_Info["FishingHoles"];
@@ -240,6 +307,43 @@ local function SortFishData(forcename)
 	end
 end
 
+-- Handle legion fountain coins
+local _achievement_pattern = "|c%x+|Hachievement:[^|]+|h%[(.*)%]|h|r"
+local function SetupLegionCoinCount()
+	local wishid = 10722
+	if not wish_remover["text"] then
+		local link = GetAchievementLink(wishid)
+		_,_,wish_remover["text"] = string.find(link, _achievement_pattern)
+	end
+
+	if not legion_coins then
+		local ff = FishingBuddy_Info["Fishies"];
+
+		legion_count = GetAchievementNumCriteria(wishid)
+		legion_coins = {}
+
+		local done = 0
+		for idx = 1, legion_count do
+			local name, _, completed, q, r, _, _, id, _, _, _ =  GetAchievementCriteriaInfo(wishid, idx)
+			legion_coins[id] = { ["completed"] = completed, ["show"] = not completed, ["name"] = name }
+		end
+	end
+end
+
+local function DisplayLegionCoinCount()
+	local bZ, bS = FL:GetBaseZoneInfo()
+	if (bZ == "Dalaran (Broken Isles)" and bS == "The Eventide") then
+		local done = 0
+		for id, info in pairs(legion_coins) do
+			if info.completed then
+				done = done + 1
+			end
+		end
+
+		return wish_remover["text"]..": "..string.format(ACHIEVEMENT_META_COMPLETED_DATE, done.."/"..legion_count);
+	end
+end
+
 -- for the specified zone and subzone, display the watch data
 -- we might want to display multiple zones someday, so this
 -- will need to be rewrittent to store the data differently
@@ -252,7 +356,9 @@ local function BuildCurrentData(zone, subzone, zidx, sidx)
 	fishdata = {};
 	fishsort = {};
 	gotDiffs = false;
-	
+
+	wish_remover.count = 0
+	wish_remover.current = 0
 	goldcoins.count = 0;
 	goldcoins.current = 0;
 	silvercoins.count = 0;
@@ -261,6 +367,8 @@ local function BuildCurrentData(zone, subzone, zidx, sidx)
 	coppercoins.current = 0;
 	missed.count = 0;
 	missed.current = 0;
+
+	SetupLegionCoinCount()
 
 	local idx = zmto(zidx, sidx);
 	local fz = FishingBuddy_Info["FishingHoles"];
@@ -271,6 +379,7 @@ local function BuildCurrentData(zone, subzone, zidx, sidx)
 		for fishid,count in pairs(fz[idx]) do
 			local itemTexture = ff[fishid].texture;
 			local info = IsSpecialFish(fishid, itemTexture);
+
 			if ( info ) then
 				info.count = info.count + count;
 				totalCount = totalCount + count;
@@ -325,6 +434,16 @@ end
 WatchEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, zone, subzone, texture, quantity, quality, level, idx, poolhint)
 	if ( FishingWatchFrame:IsVisible() ) then
 		local info = false
+
+		if legion_coins and legion_coins[id] ~= nil then
+			if not legion_coins[id].completed then
+				legion_coins[id].completed = true
+				if ( GSB("DingQuestFish") ) then
+					PlaySound(SOUNDKIT.IG_QUEST_LIST_COMPLETE, "master");
+				end
+			end
+		end
+
 		if ( fishdata[id] ) then
 			info = fishdata[id];
 		else
@@ -340,7 +459,7 @@ WatchEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, zone, subzone, text
 		if (not info) then
 			info = BuildInfoEntry(id, 1);
 		end
-		
+
 		info.count = info.count + quantity;
 		info.current = info.current + quantity;
 		if ( FishingBuddy.IsCountedFish(id) ) then
@@ -349,6 +468,7 @@ WatchEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, zone, subzone, text
 			gotDiffs = true;
 		end
 		SortFishData();
+
 		FishingBuddy.WatchUpdate();
 	end
 end
@@ -369,7 +489,7 @@ WatchEvents["VARIABLES_LOADED"] = function()
 
 	FishingWatchTab:SetText(FBConstants.NAME);
 	PanelTemplates_TabResize(FishingWatchTab, 10);
-	
+
 	FishingBuddy.OptionsFrame.HandleOptions(FBConstants.WATCHER_TAB, "Interface\\Icons\\Inv_Misc_Spyglass_03", WatcherOptions);
 	-- FishingBuddy.OptionsFrame.HandleOptions(nil, nil, InvisibleOptions);
 
@@ -402,6 +522,11 @@ WatchEvents[FBConstants.FISHING_DISABLED_EVT] = function(started)
 	FishingBuddy.SetSetting("CaughtSoFar", FL:GetCaughtSoFar());
 end
 
+WatchEvents[FBConstants.OPT_UPDATE_EVT] = function(changed)
+	FishingBuddy.WatchUpdate();
+end
+
+
 -- Display world quests
 local legionmaps = {
 	[1015] = "Azsuna",
@@ -413,13 +538,17 @@ local legionmaps = {
 }
 
 function DisplayFishingWorldQuests()
+	if not GSB("WatchWorldQuests") then
+		return nil
+	end
+
 	local GetQuestsForPlayerByMapID = C_TaskQuest.GetQuestsForPlayerByMapID
 	local line = nil;
 
 	local questdone = {};
 	local id = 10598;
 	local numCriteria = GetAchievementNumCriteria(id);
-	for i = 1,numCriteria do 
+	for i = 1,numCriteria do
 		local criteriaString, _, completed, _, _, _, _, _, _ = GetAchievementCriteriaInfo(id, i);
 		questdone[criteriaString] = completed;
 	end
@@ -460,6 +589,10 @@ end
 
 -- Handle display of caught Pagle fish
 local function DisplayPagleFish()
+	if not GSB("WatchPagleFish") then
+		return nil
+	end
+
 	local line = nil;
 	local zone, subzone = FL:GetZoneInfo();
 	for id,info in pairs(FishingBuddy.PagleFish) do
@@ -507,34 +640,12 @@ local function DisplayedTime(elapsed)
 	t = ( t - mins ) /60;
 	local hrs  = t % 24;
 	t = ( t - hrs ) / 24;
-	
+
 	if ( t > 0 ) then
 		return( string.format( "%d %.2d:%.2d:%.2d", t, hrs, mins, secs ) );
 	else
 		return( string.format( "%.2d:%.2d:%.2d", hrs, mins, secs ) );
 	end
-end
-
-local fishingWatchMaxWidth;
-local function SetEntry(index, text)
-	local name = "FishingWatchLine"..index;
-	local entry = _G[name];
-	if ( not entry ) then
-		local first = _G["FishingWatchLine1"];
-		entry = FishingWatchFrame:CreateFontString(name, "BACKGROUND", "FishingWatchFontTemplate");
-		entry:SetJustifyH("LEFT");
-		entry:SetHeight(first:GetHeight());
-		entry:SetPoint("TOPLEFT", "FishingWatchLine"..(index-1), "BOTTOMLEFT");
-		local fontFile, fontSize, fontFlags = first:GetFont();
-	  entry:SetFont(fontFile, fontSize, fontFlags);
-		MAX_FISHINGWATCH_LINES = MAX_FISHINGWATCH_LINES + 1;
-	end
-	entry:SetText(text);
-	local tempWidth = entry:GetWidth();
-	if ( not fishingWatchMaxWidth or tempWidth > fishingWatchMaxWidth ) then
-		fishingWatchMaxWidth = tempWidth;
-	end
-	entry:Show();
 end
 
 -- Fish watcher functions
@@ -543,7 +654,7 @@ local function NoShow()
 end
 
 local function UpdateTimerLine()
-	if ( not NoShow() and FishingBuddy.GetSettingBool("WatchElapsedTime") ) then
+	if ( not NoShow() and GSB("WatchElapsedTime") ) then
 		local StartedFishing = FishingBuddy.StartedFishing;
 		if ( StartedFishing ) then
 			if ( not TotalTimeFishing ) then
@@ -551,15 +662,23 @@ local function UpdateTimerLine()
 			end
 			local elapsed = math.floor(ZoneFishingTime + GetTime() - StartedFishing);
 			local text = FBConstants.ELAPSED..": "..DisplayedTime(elapsed).."/"..DisplayedTime(math.floor(elapsed + TotalTimeFishing));
-			SetEntry(ELAPSEDTIME_LINE, text);
 			timerframe:Show();
+			return text
 		end
 	elseif ( timerframe:IsShown() ) then
 		timerframe:Hide();
 	end
 end
 
-function UpdateTotalsLine(index)
+local function UpdateZoneLine()
+	if ( GSB("WatchCurrentZone") ) then
+		local skill, mods, skillmax = FL:GetCurrentSkill();
+		local zoneskill, _ = FL:GetFishingSkillLine(false, true);
+		return zoneskill
+	end
+end
+
+local function UpdateTotalsLine()
 	if ( not NoShow() ) then
 		local totalpart = ": "..totalCount;
 		local line;
@@ -576,23 +695,11 @@ function UpdateTotalsLine(index)
 				line = line.." ("..caughtSoFar.."/~"..needed..")";
 			end
 		end
-		if ( not index ) then
-			index = 1;
-			if ( GSB("WatchElapsedTime") ) then
-				index = index + 1;
-			end
-			if ( GSB("WatchCurrentZone") ) then
-				index = index + 1;
-			end
-			if ( GSB("WatchPagleFish") ) then
-				index = index + 1;
-			end
-		end
-		SetEntry(index, line);
+		return line
 	end
 end
 
-local function UpdateFishieEntry(index, info)
+local function UpdateFishieEntry(info)
 	local fishietext = FishingBuddy.StripRaw(info.text);
 	local dopercent = FishingBuddy.GetSettingBool("WatchFishPercent");
 	local amount = info.count;
@@ -601,7 +708,7 @@ local function UpdateFishieEntry(index, info)
 
 	if (currentonly) then
 		if (info.current == 0) then
-			return index;
+			return nil;
 		end
 
 		amount = info.current;
@@ -618,7 +725,7 @@ local function UpdateFishieEntry(index, info)
 		if ( info.quality and ITEM_QUALITY_COLORS[info.quality] ) then
 			fishietext = ITEM_QUALITY_COLORS[info.quality].hex..fishietext.."|r ";
 		else
-			fishietext = Crayon:Red(fishietext);
+			fishietext = Crayon:Red(fishietext.." ");
 		end
 
 		local white = "|cff"..Crayon.COLOR_HEX_WHITE;
@@ -650,22 +757,51 @@ local function UpdateFishieEntry(index, info)
 		end
 		fishietext = fishietext..numbers..white..")|r";
 	end
-	SetEntry(index, fishietext);
-	return index + 1;
+	return fishietext;
 end
 
-WatchEvents[FBConstants.OPT_UPDATE_EVT] = function(changed)
-	FishingBuddy.WatchUpdate();
+local function UpdateFishCounts()
+	local lines = {}
+	for idx,fishid in ipairs(fishsort) do
+		local info = fishdata[fishid];
+		if (info) then
+			local fishie = info.text;
+			if ( fishie ) then
+				tinsert(lines, UpdateFishieEntry(info));
+			end
+		end
+	end
+	return lines
 end
 
-local function WatchUpdate()
+local function UpdateCoinLines()
+	local lines = {}
+	if (coppercoins.count > 0) then
+		tinsert(lines, UpdateFishieEntry(coppercoins));
+	end
+	if (silvercoins.count > 0) then
+		tinsert(lines, UpdateFishieEntry(silvercoins));
+	end
+	if (goldcoins.count > 0) then
+		tinsert(lines, UpdateFishieEntry(goldcoins));
+	end
+	if (wish_remover.count > 0) then
+		tinsert(lines, UpdateFishieEntry(wish_remover));
+	end
+	if (missed.count > 0) then
+		tinsert(lines, UpdateFishieEntry(missed));
+	end
+	return lines
+end
+
+function FWF:WatchUpdate()
 	local noshow = NoShow();
 
 	local zone, subzone = FL:GetZoneInfo();
 	if ( zone == FBConstants.UNKNOWN ) then
 		noshow = true;
 	end
-	
+
 	if ( noshow ) then
 		HideAway();
 		return;
@@ -681,76 +817,57 @@ local function WatchUpdate()
 		local zidx, sidx = FishingBuddy.AddZoneIndex(zone, subzone);
 		BuildCurrentData(zone, subzone, zidx, sidx);
 	end
-	
-	local index = 1;
-	fishingWatchMaxWidth = 0;
-	if (GSB("WatchElapsedTime")) then
-		UpdateTimerLine();
-		index = index + 1;
-	end
-	
-	if ( GSB("WatchCurrentZone") ) then
-		local skill, mods, skillmax = FL:GetCurrentSkill();
-		local zoneskill, _ = FL:GetFishingSkillLine(false, true);
-		SetEntry(index, zoneskill);
-		index = index + 1;
-	end
 
-	if ( GSB("WatchPagleFish") ) then
-		SetEntry(index, DisplayPagleFish());
-		index = index + 1;
-	end
-
-	if ( GSB("WatchWorldQuests")) then
-		SetEntry(index, DisplayFishingWorldQuests());
-		index = index + 1;
-	end
-
-	UpdateTotalsLine(index);
-	index = index + 1;
-
-	for idx,fishid in ipairs(fishsort) do
-		local info = fishdata[fishid];
-		if (info) then
-			local fishie = info.text;
-			if ( fishie ) then
-				index = UpdateFishieEntry(index, info);
+	self.current_line = 1;
+	self.fishingWatchMaxWidth = 0;
+	-- this uses an custom sorting function ordering by score descending
+	for priority,handlers in FL:spairs(FWF.Handlers) do
+		local do_last = false
+		for _,handler in ipairs(handlers) do
+			if handler.first then
+				self:SetCurrentEntry(handler.render())
 			end
+			if handler.last then
+				do_last = handler
+			end
+		end
+		for _,handler in ipairs(handlers) do
+			if not handler.first and not handler.last then
+				self:SetCurrentEntry(handler.render())
+			end
+		end
+		if do_last then
+			self:SetCurrentEntry(do_last.render())
 		end
 	end
 
-	if (coppercoins.count > 0) then
-		index = UpdateFishieEntry(index, coppercoins);
-	end
-	if (silvercoins.count > 0) then
-		index = UpdateFishieEntry(index, silvercoins);
-	end
-	if (goldcoins.count > 0) then
-		index = UpdateFishieEntry(index, goldcoins);
-	end
-	if (missed.count > 0) then
-		index = UpdateFishieEntry(index, missed);
-	end
-
-	for i=index, MAX_FISHINGWATCH_LINES, 1 do
+	for i=self.current_line, MAX_FISHINGWATCH_LINES, 1 do
 		local line = _G["FishingWatchLine"..i];
 		line:Hide();
 	end
 
-	FishingWatchFrame:SetHeight((index - 1) * 13 + FishingWatchTab:GetHeight());
-	FishingWatchFrame:SetWidth(fishingWatchMaxWidth + 10);
+	FishingWatchFrame:SetHeight((self.current_line - 1) * 13 + FishingWatchTab:GetHeight());
+	FishingWatchFrame:SetWidth(self.fishingWatchMaxWidth + 10);
 end
-FishingBuddy.WatchUpdate = WatchUpdate;
+
+FishingBuddy.WatchUpdate = function()
+	FWF:WatchUpdate()
+end
 
 local function HideOnEscape()
 	LW.OnDragStop(FishingWatchFrame);
 	HideDraggerFrame();
 end
 
-FishingBuddy.WatchFrame.OnLoad = function(self)
+local function TimerUpdate()
+	FWF:UpdateLine(ELAPSEDTIME_LINE, UpdateTimerLine())
+end
+
+local WatWin = {}
+function WatWin:OnLoad()
 	timerframe = CreateFrame("FRAME");
 	timerframe:Hide();
-	timerframe:SetScript("OnUpdate", UpdateTimerLine);
+	timerframe:SetScript("OnUpdate", TimerUpdate);
 
 	-- since we can leave this open all the time, register these against the window itself
 	self:RegisterEvent("ZONE_CHANGED");
@@ -759,26 +876,35 @@ FishingBuddy.WatchFrame.OnLoad = function(self)
 	self:SetScript("OnEvent", HandleZoneChange);
 	-- this should not be necessary
 	self:SetClampedToScreen(true);
-	
+
 	local framelevel = self:GetFrameLevel();
 	FishingWatchHighlight:SetFrameLevel(framelevel-1);
 	FishingWatchTab:SetFrameLevel(framelevel-1);
 
 	FishingWatchTab:SetScript("OnHide", HideOnEscape);
-	
+
 	tinsert(UISpecialFrames, "FishingWatchTab");
 
 	FishingBuddy.RegisterHandlers(WatchEvents);
+
+	FWF:RegisterLineHandler(UpdateTimerLine, 0, true)
+	FWF:RegisterLineHandler(UpdateZoneLine, FWF.HEADER, true)
+	FWF:RegisterLineHandler(DisplayPagleFish, FWF.HEADER)
+	FWF:RegisterLineHandler(DisplayFishingWorldQuests, FWF.HEADER)
+	FWF:RegisterLineHandler(DisplayLegionCoinCount, FWF.HEADER)
+	FWF:RegisterLineHandler(UpdateTotalsLine, FWF.HEADER, false, true)
+	FWF:RegisterLineHandler(UpdateFishCounts, FWF.LAST_PRIORITY, true, false)
+	FWF:RegisterLineHandler(UpdateCoinLines, FWF.LAST_PRIORITY, false, true)
 end
 
 local isDragging = nil;
 local hover;
-FishingBuddy.WatchFrame.OnUpdate = function(self, elapsed)
-	if ( FishingWatchFrame:IsVisible() ) then
+function WatWin:OnUpdate(elapsed)
+	if ( self:IsVisible() ) then
 		if ( isDragging ) then
 			return;
 		end
-		if ( MouseIsOver(FishingWatchFrame) or MouseIsOver(FishingWatchTab) ) then
+		if ( MouseIsOver(self) or MouseIsOver(FishingWatchTab) ) then
 			local xPos, yPos = GetCursorPosition();
 			if ( hover ) then
 				if ( hover.xPos == xPos and hover.yPos == yPos ) then
@@ -834,7 +960,7 @@ local function WatcherMakeToggle(fishid)
 	end
 	return WatcherToggleFunctions[fishid];
 end
-FishingBuddy.WatchFrame.MakeToggle = WatcherMakeToggle;
+FWF.MakeToggle = WatcherMakeToggle;
 
 local function WatchMenu_Initialize()
 	local zidx, sidx = FishingBuddy.GetZoneIndex();
@@ -853,7 +979,7 @@ local function WatchMenu_Initialize()
 	end
 end
 
-FishingBuddy.WatchFrame.OnClick = function(self)
+FWF.OnClick = function(self)
 -- we need to be smarter about the things we filter (trash, coins, etc.)
 	if ( false ) then
 		local menu = _G["FishingBuddyWatcherMenu"];
@@ -873,3 +999,6 @@ FishingBuddy.Commands[FBConstants.CURRENT].func =
 			return true;
 		end
 	end;
+
+FishingBuddy.FWF = FWF;
+FishingBuddy.WatWin = WatWin;

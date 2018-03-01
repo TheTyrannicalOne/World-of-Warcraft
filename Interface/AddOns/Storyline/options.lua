@@ -17,6 +17,8 @@
 -- limitations under the License.
 ----------------------------------------------------------------------------------
 
+local Ellyb = Ellyb(...);
+
 -- Storyline API
 local loc = Storyline_API.locale.getText;
 local setupListBox = Storyline_API.lib.setupListBox;
@@ -350,21 +352,9 @@ Storyline_API.options.init = function()
 	end
 	StorylineMiscellaneousOptionsPanel.DebugMode:SetChecked(Storyline_Data.config.debug);
 
-	local PATREON_SUPPORTERS = {
-		"Connor Macleod",
-		"Bas (AstaLawl)",
-		"Vlad",
-	}
-	table.sort(PATREON_SUPPORTERS);
-
-	local patreonMessage = "|cffffd100";
-	for _, patreonSupporter in pairs(PATREON_SUPPORTERS) do
-		patreonMessage = strconcat(patreonMessage, "- ", patreonSupporter, "\n");
-	end
-
 	-- Options main panel
 	StorylineAboutPanel.Title:SetText(loc("SL_ABOUT"));
-	StorylineAboutPanel.SubText:SetText(loc("SL_ABOUT_TEXT"):format(patreonMessage));
+	StorylineAboutPanel.SubText:SetText(loc("SL_ABOUT_TEXT"):format(Ellyb:GetPatreonSupporters()));
 	local font, _, flag = StorylineAboutPanel.SubText:GetFont();
 	StorylineAboutPanel.SubText:SetFont(font, 16, flag)
 
