@@ -1,5 +1,82 @@
 Changes since tag 7.3.23
 
+commit 541574377e1e7a274c6a6b7fd69e9e0720959cee
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Mar 4 14:30:35 2018 +0100
+
+    ultrashining via svn r17366:
+    zhTW update
+
+commit 5604c4ee464305c2b75b70451d57d10b6f794e39
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Mar 4 05:27:30 2018 +0100
+
+    Omega via svn r17365:
+    Fix last
+
+commit fb31132caff0122dafde4b8f2071bd9d7a0d5baa
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Mar 4 05:11:42 2018 +0100
+
+    Omega via svn r17364:
+    This should be true by default
+
+commit 34182b6eb729874da43096ef8e8d473882ca1026
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Mar 4 00:07:01 2018 +0100
+
+    Omega via svn r17363:
+    add temp media file
+
+commit 8ed39f530e4f8442e0bfb312730219e2f38a8cf7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Mar 3 01:02:51 2018 +0100
+
+    Omega via svn r17362:
+    Kr update
+
+commit 64ae3b0e36cf4a8a288188f1988cbb2c7f00988f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Mar 2 08:48:18 2018 +0100
+
+    Omega via svn r17361:
+    Fix size
+
+commit 16490b115fae16cd273af46f4a09fb52946b9ef8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Mar 2 08:36:10 2018 +0100
+
+    Omega via svn r17360:
+    Add mythic/mythic+ music filter option
+
+commit 2655fa920710a221b6b2ccbf5ad5d96d9b79dc25
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Mar 2 02:26:59 2018 +0100
+
+    Omega via svn r17359:
+    Actually, only half of that
+
+commit 8328337be23142cb8c202b431018b96baa01d0ce
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Mar 2 02:25:44 2018 +0100
+
+    Omega via svn r17358:
+    Tweak defaults, for more spice
+
+commit 8bb062797ba81287a69c675fa09f52cd600c531b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Mar 2 01:11:45 2018 +0100
+
+    Omega via svn r17357:
+    Update to latest libDur and liblat
+
+commit a183bc8c57c32c531f1274b237a4d5ec5c9bf2d9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Mar 2 00:51:21 2018 +0100
+
+    Omega via svn r17356:
+    Might be a while til get audio file so just pushing code now
+
 commit 925f6cac0e928662170ad7116bf51ab981789c32
 Author: subversion <svn@deadlybossmods.com>
 Date:   Thu Mar 1 19:37:11 2018 +0100

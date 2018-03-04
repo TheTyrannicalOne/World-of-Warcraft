@@ -44,19 +44,22 @@ HandyNotes_SpecialNPCsEtcDB = {
 				["ValeofEternalBlossoms"] = {
 					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
 				},
-				["ShadowmoonValley"] = {
-					[29212942] = "Stable:Gedrah:Stable Master:135990",
-					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
-				},
-				["Nagrand"] = {
-					[56693457] = "Innkeeper:Matron Tikkit:Innkeeper:100627",
-					[56093744] = "Armorsmith:Osrok the Immovable:Armorsmith & Blacksmithing Supplies:102417",
-				},
 				["Orgrimmar"] = {
 					[67745315] = "Banker:Binzella:Banker:288281",
 					[67305312] = "Banker:Vink:Banker:288288",
 					[48788382] = "Banker:Rilgiz:Banker:280658",
 					[48918360] = "Banker:Perixa:Banker:280662",
+				},
+				["ShadowmoonValley"] = {
+					[29212942] = "Stable:Gedrah:Stable Master:135990",
+					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
+				},
+				["Silverpine"] = {
+					[42884092] = "Blacksmithing:Guillaume Sorouy:Blacksmithing Trainer:13655",
+				},
+				["Nagrand"] = {
+					[56693457] = "Innkeeper:Matron Tikkit:Innkeeper:100627",
+					[56093744] = "Armorsmith:Osrok the Immovable:Armorsmith & Blacksmithing Supplies:102417",
 				},
 			},
 			["dbversion"] = 2,

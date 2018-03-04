@@ -174,13 +174,13 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 135340,
 			["PerCharacterOptions"] = {
-				["Malivant-Dalaran"] = {
-					["Visible"] = true,
-				},
 				["Vadder-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 				["Panboozled-Runetotem"] = {
+					["Visible"] = true,
+				},
+				["Malivant-Dalaran"] = {
 					["Visible"] = true,
 				},
 			},

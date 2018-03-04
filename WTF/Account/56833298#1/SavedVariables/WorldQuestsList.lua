@@ -174,8 +174,6 @@ VWQL = {
 		["Filter"] = 63,
 		["Quests"] = {
 			[43798] = true,
-			[44737] = true,
-			[43598] = true,
 			[43943] = true,
 		},
 		["FilterType"] = {

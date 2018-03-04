@@ -24,3 +24,12 @@ HandyNotes_Achievements: enabled
 HandyNotes: enabled
 TomTom: enabled
 HereBeDragons-1.0: enabled
+LUI: enabled
+Bartender4: enabled
+ButtonFacade: enabled
+LibButtonGlow-1.0: enabled
+LibActionButton-1.0: enabled
+LibKeyBound-1.0: enabled
+LibDBIcon-1.0: enabled
+LibWindow-1.1: enabled
+LibDualSpec-1.0: enabled
