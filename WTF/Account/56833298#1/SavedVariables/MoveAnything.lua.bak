@@ -11,11 +11,11 @@ MADB = {
 			["frames"] = {
 				["ExtraActionBarFrame"] = {
 					["orgPos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
+						"TOPLEFT", -- [1]
+						"BT4BarExtraActionBar", -- [2]
+						"TOPLEFT", -- [3]
 						0, -- [4]
-						75, -- [5]
+						0, -- [5]
 					},
 					["name"] = "ExtraActionBarFrame",
 					["scale"] = 1.08436968959678,

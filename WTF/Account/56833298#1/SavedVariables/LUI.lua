@@ -1478,10 +1478,11 @@ LUIDB = {
 						["Anchor"] = "SkadaBarWindowSkada",
 					},
 					["Raid"] = {
+						["IsShown"] = true,
 						["Width"] = 612,
-						["Height"] = 237,
-						["OffsetY"] = 1,
 						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2609,7 +2610,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 2226598719,
+							["Shanyt"] = 2372612553,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2642,9 +2643,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
+							["Brewnheimer"] = 836,
 							["Dialdaas"] = 11338409,
 							["Serbitechna"] = 7681888,
-							["Brewnheimer"] = 836,
 						},
 					},
 				},
@@ -2681,38 +2682,38 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/moo", -- [1]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [2]
-							" hello", -- [3]
+							" hello", -- [1]
+							"/moo", -- [2]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [3]
 							"/SLEEP", -- [4]
-							"/moo", -- [5]
-							" hello", -- [6]
-							"/moo", -- [7]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [8]
-							"/SLEEP", -- [9]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [10]
-							" hello", -- [11]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [12]
+							" hello", -- [5]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [6]
+							" hello", -- [7]
+							"/moo", -- [8]
+							" hello", -- [9]
+							"/moo", -- [10]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [11]
+							" hello", -- [12]
 							"/SLEEP", -- [13]
-							" hello", -- [14]
-							"/moo", -- [15]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [16]
-							" hello", -- [17]
+							"/moo", -- [14]
+							" hello", -- [15]
+							"/moo", -- [16]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [17]
 							"/SLEEP", -- [18]
-							"/moo", -- [19]
-							" hello", -- [20]
-							"/moo", -- [21]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [22]
-							" hello", -- [23]
+							" hello", -- [19]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [20]
+							" hello", -- [21]
+							"/moo", -- [22]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [23]
 							"/SLEEP", -- [24]
-							"/moo", -- [25]
-							" hello", -- [26]
-							"/moo", -- [27]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [28]
+							" hello", -- [25]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [26]
+							" hello", -- [27]
+							"/moo", -- [28]
 							"/SLEEP", -- [29]
-							" hello", -- [30]
-							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [31]
-							" hello", -- [32]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [30]
+							"/moo", -- [31]
+							"/p i think you have to collect gear wear it and click on the totems or something like that", -- [32]
 						},
 					},
 				},

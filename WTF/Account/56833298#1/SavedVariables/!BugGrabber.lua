@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 157,
+	["session"] = 161,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Kui_Nameplates\\messages.lua:373: Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.",
@@ -150,21 +150,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [19]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Mapster' tried to call the protected function '<unnamed>:ClearAllPoints()'.",
-			["time"] = "2018/02/20 00:33:08",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\WorldMapFrame.lua:1576: in function `WorldMapFrame_SetOverlayLocation'\nInterface\\FrameXML\\WorldMapFrame.lua:1599: in function `WorldMapFrame_UpdateOverlayLocations'\nInterface\\FrameXML\\WorldMapFrame.lua:540: in function <Interface\\FrameXML\\WorldMapFrame.lua:445>",
-			["session"] = 120,
-			["counter"] = 1,
-		}, -- [20]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'LUI' tried to call the protected function 'UIParent:SetAttribute()'.",
 			["time"] = "2018/02/08 23:33:39",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\LUI\\modules\\bars.lua:361: in function <Interface\\AddOns\\LUI\\modules\\bars.lua:353>\nInterface\\AddOns\\LUI\\modules\\bars.lua:448: in function <Interface\\AddOns\\LUI\\modules\\bars.lua:437>",
 			["session"] = 120,
 			["counter"] = 2,
-		}, -- [21]
+		}, -- [20]
 		{
 			["message"] = "Interface\\AddOns\\Kui_Nameplates\\messages.lua:391: Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.",
 			["time"] = "2018/02/24 02:52:48",
@@ -172,7 +164,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Kui_Nameplates\\messages.lua:391: in function `NewPlugin'\nInterface\\AddOns\\Kui_Nameplates_BarAuras\\mod.lua:3: in main chunk",
 			["session"] = 127,
 			["counter"] = 1,
-		}, -- [22]
+		}, -- [21]
 		{
 			["message"] = "Interface\\AddOns\\FishingBuddy\\FishingBuddy-1.8a.lua:1936: attempt to index global 'FishingBuddy_Player' (a nil value)",
 			["time"] = "2018/02/24 02:52:53",
@@ -180,14 +172,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\FishingBuddy\\FishingBuddy-1.8a.lua:1936: in function `EnhanceFishingSounds'\nInterface\\AddOns\\FishingBuddy\\FishingBuddy-1.8a.lua:1572: in function <Interface\\AddOns\\FishingBuddy\\FishingBuddy.lua:1559>\nInterface\\AddOns\\FishingBuddy\\FishingBuddy-1.8a.lua:2068: in function <Interface\\AddOns\\FishingBuddy\\FishingBuddy.lua:1992>",
 			["session"] = 127,
 			["counter"] = 1,
-		}, -- [23]
+		}, -- [22]
 		{
 			["message"] = "Interface\\AddOns\\Parrot\\Data\\Cooldowns.lua:192: bad argument #1 to 'format' (string expected, got nil)",
 			["time"] = "2018/02/04 03:00:19",
 			["stack"] = "[C]: in function `format'\nInterface\\AddOns\\Parrot\\Data\\Cooldowns.lua:192: in function `OnUpdate'\nInterface\\AddOns\\Parrot\\Data\\Cooldowns.lua:93: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 134,
 			["counter"] = 18,
-		}, -- [24]
+		}, -- [23]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'PetTracker' tried to call the protected function 'MountJournal:SetShown()'.",
 			["time"] = "2018/02/25 16:23:01",
@@ -195,15 +187,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetShown'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:50: in function `CollectionsJournal_UpdateSelectedTab'\n...AddOns\\Blizzard_Collections\\Blizzard_Collections-1.0.lua:86: in function <...AddOns\\Blizzard_Collections\\Blizzard_Collections.lua:80>\n[C]: ?\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2493: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2334: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2203: in function <Interface\\FrameXML\\UIParent.lua:2199>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2987: in function <Interface\\FrameXML\\UIParent.lua:2975>\n[C]: in function `ShowUIPanel'\nInterface\\AddOns\\PetTracker\\Core\\Journal.lua:29: in function `Display'\nInterface\\AddOns\\PetTracker\\Tracking\\Tracker.lua:77: in function <Interface\\AddOns\\PetTracker\\Tracking\\Tracker.lua:76>",
 			["session"] = 140,
 			["counter"] = 1,
-		}, -- [25]
-		{
-			["message"] = "Interface\\AddOns\\Kui_Nameplates\\elements/auras.lua:571: TexCoord out of range",
-			["time"] = "2018/02/09 00:30:11",
-			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = 0.1\n(*temporary) = 0.9\n(*temporary) = -1.#IND\n(*temporary) = -1.#IND\n",
-			["stack"] = "[C]: in function `SetTexCoord'\nInterface\\AddOns\\Kui_Nameplates\\elements/auras.lua:571: in function `SetIconSize'\nInterface\\AddOns\\Kui_Nameplates_Core\\create.lua:1268: in function <Interface\\AddOns\\Kui_Nameplates_Core\\create.lua:1253>\nInterface\\AddOns\\Kui_Nameplates_Core\\create.lua:1280: in function `UpdateAuras'\nInterface\\AddOns\\Kui_Nameplates_Core\\create.lua:404: in function `UpdateFrameSize'\nInterface\\AddOns\\Kui_Nameplates_Core\\hook.lua:64: in function `func'\nInterface\\AddOns\\Kui_Nameplates\\messages.lua:53: in function `DispatchMessage'\nInterface\\AddOns\\Kui_Nameplates\\nameplate.lua:75: in function `OnShow'\nInterface\\AddOns\\Kui_Nameplates\\nameplate.lua:69: in function `OnUnitAdded'\nInterface\\AddOns\\Kui_Nameplates\\addon.lua:64: in function `?'\nInterface\\AddOns\\Kui_Nameplates\\addon.lua:108: in function <Interface\\AddOns\\Kui_Nameplates\\addon.lua:105>",
-			["session"] = 149,
-			["counter"] = 50,
-		}, -- [26]
+		}, -- [24]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'LegionWardrobe' tried to call the protected function '<unnamed>:Hide()'.",
 			["time"] = "2018/02/28 23:46:42",
@@ -211,7 +195,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\FrameXML\\WorldMapActionButton.lua:58: in function `Clear'\nInterface\\FrameXML\\WorldMapActionButton.lua:67: in function `Refresh'\nInterface\\FrameXML\\WorldMapActionButton.lua:19: in function `SetMapAreaID'\nInterface\\FrameXML\\WorldMapFrame.lua:1380: in function <Interface\\FrameXML\\WorldMapFrame.lua:1328>\n[C]: in function `WorldMapFrame_Update'\nInterface\\FrameXML\\WorldMapFrame.lua:2970: in function `WorldMapFrame_UpdateMap'\nInterface\\FrameXML\\WorldMapFrame.lua:469: in function <Interface\\FrameXML\\WorldMapFrame.lua:445>\n[C]: in function `SetMapToCurrentZone'\nInterface\\FrameXML\\WorldMapFrame.lua:390: in function <Interface\\FrameXML\\WorldMapFrame.lua:369>\n[C]: ?\n...\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2493: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:2295: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2203: in function <Interface\\FrameXML\\UIParent.lua:2199>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2987: in function <Interface\\FrameXML\\UIParent.lua:2975>\n[C]: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:2971: in function `ToggleFrame'\nInterface\\FrameXML\\WorldMapFrame.lua:267: in function `ToggleWorldMap'\n[string \"TOGGLEWORLDMAP\"]:1: in function <[string \"TOGGLEWORLDMAP\"]:1>",
 			["session"] = 149,
 			["counter"] = 1,
-		}, -- [27]
+		}, -- [25]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'PetTracker' tried to call the protected function 'SetTargetClampingInsets()'.",
 			["time"] = "2018/03/03 19:26:03",
@@ -219,7 +203,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `SetTargetClampingInsets'\n...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:242: in function `SetupClassNameplateBars'\n...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:87: in function `OnNamePlateAdded'\n...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:44: in function <...e\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:35>",
 			["session"] = 151,
 			["counter"] = 1,
-		}, -- [28]
+		}, -- [26]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'VuhDo' tried to call the protected function 'Vd1:Hide()'.",
 			["time"] = "2018/03/03 19:26:56",
@@ -227,7 +211,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `Hide'\nInterface\\AddOns\\LUI\\modules\\panels.lua:511: in function <Interface\\AddOns\\LUI\\modules\\panels.lua:496>",
 			["session"] = 151,
 			["counter"] = 1,
-		}, -- [29]
+		}, -- [27]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'CompactRaidFrame2:ClearAllPoints()'.",
 			["time"] = "2018/03/03 19:34:14",
@@ -235,7 +219,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 151,
 			["counter"] = 1,
-		}, -- [30]
+		}, -- [28]
 		{
 			["message"] = "[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
 			["time"] = "2018/01/27 18:16:46",
@@ -243,7 +227,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: in function <[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:5>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
 			["session"] = 152,
 			["counter"] = 832,
-		}, -- [31]
+		}, -- [29]
 		{
 			["message"] = "...terface\\AddOns\\nibProfileLoader\\nibProfileLoader.lua:87: attempt to index global 'LUI' (a nil value)",
 			["time"] = "2018/03/04 05:45:04",
@@ -251,7 +235,7 @@ BugGrabberDB = {
 			["stack"] = "...terface\\AddOns\\nibProfileLoader\\nibProfileLoader.lua:87: in function <...terface\\AddOns\\nibProfileLoader\\nibProfileLoader.lua:86>\n...terface\\AddOns\\nibProfileLoader\\nibProfileLoader.lua:99: in function <...terface\\AddOns\\nibProfileLoader\\nibProfileLoader.lua:97>",
 			["session"] = 153,
 			["counter"] = 1,
-		}, -- [32]
+		}, -- [30]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ACP' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
 			["time"] = "2018/03/04 05:47:47",
@@ -259,22 +243,46 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 155,
 			["counter"] = 2,
-		}, -- [33]
+		}, -- [31]
 		{
 			["message"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: attempt to concatenate local 'icon' (a nil value)",
 			["time"] = "2018/01/21 19:03:35",
 			["locals"] = "Parrot = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n EnableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n IterateEmbeds = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n RegisterAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:77\n SecureHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n RawHookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n debug = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:40\n Printf = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n newDict = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:97\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n psize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:74\n DisableModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n RegisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n unpackDictAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:206\n ShowConfig = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:319\n hooks = <table> {\n }\n RegisterThrottleType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1737\n RegisterFilterType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1769\n RegisterSecondaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:239\n SetConfigMode = <function> defined @Interface\\AddOns\\Parrot\\Code\\ScrollAreas.lua:103\n SetEnabledState = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = true\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:347\n RegisterEvent = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterCombatLog = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:332\n IterateModules = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n RawHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n ChangeProfile = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:283\n OnBlizzardEvent = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:393\n OnInitialize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:251\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\Masque\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n del = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:143\n GetModule = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n HasAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:126\n defaultModuleLibraries = <table> {\n }\n unpackSetAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:188\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n options = <table> {\n }\n GetName = <function> defined @Interface\\AddOns\\Masque\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n name = \"Parrot\"\n RegisterPrimaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:158\n HookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:366\n orderedModules = <table> {\n }\n OnOptionsCreate = <function> defined @I",
 			["stack"] = "Interface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2046: in main chunk",
-			["session"] = 157,
-			["counter"] = 157,
-		}, -- [34]
+			["session"] = 161,
+			["counter"] = 161,
+		}, -- [32]
 		{
 			["message"] = "[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:5: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
 			["time"] = "2018/01/25 00:10:11",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
 			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:5: in function <[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
-			["session"] = 157,
-			["counter"] = 1638,
+			["session"] = 161,
+			["counter"] = 1664,
+		}, -- [33]
+		{
+			["message"] = "...rface\\AddOns\\TradeSkillMaster\\Private\\TooltipLib.lua:95: Invalid quest item in SetQuestItem(\"type\", index)",
+			["time"] = "2018/03/07 02:14:54",
+			["locals"] = "(*temporary) = GameTooltip {\n 0 = <userdata>\n SetCurrencyByID = <function> defined =[C]:-1\n SetExistingSocketGem = <function> defined =[C]:-1\n SetCurrencyToken = <function> defined =[C]:-1\n SetGuildBankItem = <function> defined =[C]:-1\n SetVoidItem = <function> defined =[C]:-1\n SetVoidDepositItem = <function> defined =[C]:-1\n SetVoidWithdrawalItem = <function> defined =[C]:-1\n hasMoney = 1\n comparing = false\n SetSocketGem = <function> defined =[C]:-1\n Show = <function> defined @Interface\\AddOns\\TipTac\\core.lua:920\n SetUnitDebuff = <function> defined =[C]:-1\n SetHeirloomByItemID = <function> defined =[C]:-1\n SetLootItem = <function> defined =[C]:-1\n SetQuestItem = <function> defined =[C]:-1\n SetHyperlink = <function> defined =[C]:-1\n SetTrainerService = <function> defined =[C]:-1\n numMoneyFrames = 1\n Hide = <function> defined =[C]:-1\n SetItemByID = <function> defined =[C]:-1\n SetInboxItem = <function> defined =[C]:-1\n SetBuybackItem = <function> defined =[C]:-1\n shoppingTooltips = <table> {\n }\n FadeOut = <function> defined @Interface\\AddOns\\TipTac\\core.lua:906\n SetMerchantItem = <function> defined =[C]:-1\n SetMerchantCostItem = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Private\\TooltipLib.lua:93\n SetCurrencyTokenByID = <function> defined =[C]:-1\n SetTradeTargetItem = <function> defined =[C]:-1\n SetRecipeReagentItem = <function> defined @Interface\\AddOns\\TradeSkillMaster\\Private\\TooltipLib.lua:93\n SetTradePlayerItem = <function> defined =[C]:-1\n SetIconTextureAndText = <function> defined @Interface\\AddOns\\TipTacItemRef\\core.lua:53\n SetSendMailItem = <function> defined =[C]:-1\n SetQuestLogItem = <function> defined =[C]:-1\n updateTooltip = 0.13999999575317\n SetInventoryItem = <function> defined =[C]:-1\n ttGradient = <unnamed> {\n }\n ttCount = <unnamed> {\n }\n SetLootRollItem = <function> defined =[C]:-1\n SetUnitAura = <function> defined =[C]:-1\n SetUnitBuff = <function> defined =[C]:-1\n SetAuctionSellItem = <function> defined =[C]:-1\n SetBagItem = <function> defined =[C]:-1\n needsReset = true\n CIMI_tooltipWritten = false\n ttIcon = <unnamed> {\n }\n SetRecipeResultItem = <function> defined =[C]:-1\n SetAuctionItem = <function> defined =[C]:-1\n}\n(*temporary) = \"required\"\n(*temporary) = 1\n",
+			["stack"] = "[C]: ?\n...rface\\AddOns\\TradeSkillMaster\\Private\\TooltipLib.lua:95: in function <...rface\\AddOns\\TradeSkillMaster\\Private\\TooltipLib.lua:93>\n[C]: in function `SetQuestItem'\n...terface\\AddOns\\Storyline\\rewards\\rewards_buttons.lua:49: in function <...terface\\AddOns\\Storyline\\rewards\\rewards_buttons.lua:47>",
+			["session"] = 161,
+			["counter"] = 1,
+		}, -- [34]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Mapster' tried to call the protected function '<unnamed>:ClearAllPoints()'.",
+			["time"] = "2018/02/20 00:33:08",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:573>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\WorldMapFrame.lua:1576: in function `WorldMapFrame_SetOverlayLocation'\nInterface\\FrameXML\\WorldMapFrame.lua:1599: in function `WorldMapFrame_UpdateOverlayLocations'\nInterface\\FrameXML\\WorldMapFrame.lua:540: in function <Interface\\FrameXML\\WorldMapFrame.lua:445>",
+			["session"] = 161,
+			["counter"] = 2,
 		}, -- [35]
+		{
+			["message"] = "Interface\\AddOns\\Kui_Nameplates\\elements/auras.lua:571: TexCoord out of range",
+			["time"] = "2018/02/09 00:30:11",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = 0.1\n(*temporary) = 0.9\n(*temporary) = -1.#IND\n(*temporary) = -1.#IND\n",
+			["stack"] = "[C]: in function `SetTexCoord'\nInterface\\AddOns\\Kui_Nameplates\\elements/auras.lua:571: in function `SetIconSize'\nInterface\\AddOns\\Kui_Nameplates_Core\\create.lua:1268: in function <Interface\\AddOns\\Kui_Nameplates_Core\\create.lua:1253>\nInterface\\AddOns\\Kui_Nameplates_Core\\create.lua:1280: in function `UpdateAuras'\nInterface\\AddOns\\Kui_Nameplates_Core\\create.lua:404: in function `UpdateFrameSize'\nInterface\\AddOns\\Kui_Nameplates_Core\\hook.lua:64: in function `func'\nInterface\\AddOns\\Kui_Nameplates\\messages.lua:53: in function `DispatchMessage'\nInterface\\AddOns\\Kui_Nameplates\\nameplate.lua:75: in function `OnShow'\nInterface\\AddOns\\Kui_Nameplates\\nameplate.lua:69: in function `OnUnitAdded'\nInterface\\AddOns\\Kui_Nameplates\\addon.lua:64: in function `?'\nInterface\\AddOns\\Kui_Nameplates\\addon.lua:108: in function <Interface\\AddOns\\Kui_Nameplates\\addon.lua:105>",
+			["session"] = 161,
+			["counter"] = 125,
+		}, -- [36]
 	},
 }

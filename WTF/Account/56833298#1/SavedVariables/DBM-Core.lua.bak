@@ -13,7 +13,7 @@ DBM_AllSavedOptions = {
 		["StatusEnabled"] = true,
 		["InfoFrameX"] = 225.429138183594,
 		["DontShowNameplateIcons"] = false,
-		["CoreSavedRevision"] = 17365,
+		["CoreSavedRevision"] = 17378,
 		["RangeFrameX"] = 405.147338867188,
 		["AlwaysShowSpeedKillTimer"] = true,
 		["RangeFrameY"] = 174.876266479492,
@@ -74,8 +74,12 @@ DBM_AllSavedOptions = {
 		["UseSoundChannel"] = "Master",
 		["RangeFrameRadarX"] = 228.939483642578,
 		["ShowRespawn"] = true,
+		["EventSoundVictory"] = "Interface\\AddOns\\DBM-Core\\sounds\\Victory\\SmoothMcGroove_Fanfare.ogg",
 		["HideQuestTooltips"] = true,
+		["EventSoundMusic"] = "None",
+		["EventSoundEngage"] = "",
 		["EventEngageSound"] = "",
+		["EventSoundWipe"] = "None",
 		["ShowFlashFrame"] = true,
 		["ShowAllVersions"] = true,
 		["SpamBlockBossWhispers"] = true,
@@ -203,17 +207,13 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFontStyle"] = "THICKOUTLINE",
 		["WarningY"] = 260,
 		["CustomSounds"] = 0,
-		["HUDColor3"] = {
-			1, -- [1]
-			0.5, -- [2]
-			0, -- [3]
-		},
-		["SpecialWarningFlashRepeat3"] = true,
 		["RoleSpecAlert"] = true,
+		["SpecialWarningFlashRepeat3"] = true,
+		["ShortTimerText"] = true,
 		["WhisperStats"] = false,
 		["VoiceOverSpecW2"] = "DefaultOnly",
+		["MISTSTWMessageShown"] = false,
 		["DontPlayPTCountdown"] = false,
-		["HUDAlpha3"] = 0.5,
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 200,
@@ -256,11 +256,15 @@ DBM_AllSavedOptions = {
 		["WarningDuration"] = 4,
 		["WarningFontShadow"] = true,
 		["RangeFrameSound1"] = "none",
-		["MISTSTWMessageShown"] = false,
+		["HUDAlpha3"] = 0.5,
 		["DontShowBossTimers"] = false,
 		["HUDTexture4"] = "highlight",
-		["ShortTimerText"] = true,
 		["AutoCorrectTimer"] = false,
+		["HUDColor3"] = {
+			1, -- [1]
+			0.5, -- [2]
+			0, -- [3]
+		},
 		["HUDTexture2"] = "highlight",
 		["WorldBossNearAlert"] = false,
 		["HPFrameMaxEntries"] = 5,
