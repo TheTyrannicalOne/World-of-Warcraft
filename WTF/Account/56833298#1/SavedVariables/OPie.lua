@@ -4,7 +4,7 @@ OneRing_Config = {
 		["Darkspear-Serbitechna"] = "default",
 	},
 	["_GameVersion"] = "7.3.5",
-	["_OPieVersion"] = "Vanilla 2 (3.91)",
+	["_OPieVersion"] = "Vanilla 3 (3.91)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
@@ -15,9 +15,9 @@ OneRing_Config = {
 				["RaidSymbols"] = false,
 				["OPieTracking"] = false,
 				["HunterShots"] = false,
-				["OPieAutoQuest"] = false,
-				["OPieTrinkets"] = false,
 				["WorldMarkers"] = false,
+				["OPieTrinkets"] = false,
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},
@@ -36,10 +36,10 @@ OneRing_Config = {
 					["id"] = 64731,
 					["sliceToken"] = "ABueoFiE/rt",
 				}, -- [3]
-				["name"] = "Mounts",
+				["limit"] = "Serbitechna-Darkspear",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Serbitechna-Darkspear",
+				["name"] = "Mounts",
 			},
 			["Mounts"] = {
 				{

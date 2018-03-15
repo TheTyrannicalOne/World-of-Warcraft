@@ -4,6 +4,7 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128910] = {
 			["Relics"] = {
@@ -16,14 +17,13 @@ PawnOptions = {
 					["Type"] = "Blood",
 				}, -- [2]
 				{
-					["ItemLevel"] = 52,
+					["ItemLevel"] = 55,
 					["Type"] = "Shadow",
 				}, -- [3]
 			},
 			["Name"] = "Strom'kar, the Warbreaker",
 		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "WARRIOR",
