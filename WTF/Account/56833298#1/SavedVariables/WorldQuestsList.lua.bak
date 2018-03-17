@@ -122,7 +122,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Gangus-Runetotem"] = {
+	["Jingojaggot-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -136,7 +136,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Jingojaggot-ArgentDawn"] = {
+	["Gangus-Runetotem"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -174,59 +174,20 @@ VWQL = {
 	["Shanyt-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
-			[41789] = true,
-			[44815] = true,
-			[43431] = true,
-			[40850] = true,
-			[44002] = true,
-			[44067] = true,
-			[43943] = true,
-			[43632] = true,
 			[43762] = true,
-			[42506] = true,
-			[42004] = true,
-			[41691] = true,
-			[41701] = true,
-			[46113] = true,
-			[42209] = true,
-			[42026] = true,
-			[43758] = true,
-			[42713] = true,
-			[43152] = true,
-			[44936] = true,
-			[43324] = true,
-			[41980] = true,
-			[41351] = true,
-			[41227] = true,
-			[42111] = true,
-			[44192] = true,
-			[41926] = true,
-			[41487] = true,
-			[42119] = true,
-			[41554] = true,
-			[44895] = true,
-			[41936] = true,
-			[42442] = true,
-			[42799] = true,
-			[43769] = true,
-			[43456] = true,
-			[44017] = true,
-			[44011] = true,
+			[43943] = true,
+			[41896] = true,
 			[43777] = true,
-			[42015] = true,
-			[44923] = true,
-			[41497] = true,
-			[41013] = true,
-			[41950] = true,
-			[43600] = true,
-			[42067] = true,
-			[44293] = true,
-			[45307] = true,
-			[44805] = true,
-			[41930] = true,
-			[43247] = true,
-			[46844] = true,
-			[42711] = true,
+			[43610] = true,
+			[42070] = true,
+			[42160] = true,
+			[44936] = true,
+			[42799] = true,
+			[44847] = true,
+			[43325] = true,
+			[42830] = true,
+			[42276] = true,
+			[43612] = true,
 		},
 		["FilterType"] = {
 		},
@@ -245,7 +206,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Dialdaas-Darkspear"] = {
+	["Bathal-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -275,7 +236,7 @@ VWQL = {
 	},
 	["Ignore"] = {
 	},
-	["Bathal-ArgentDawn"] = {
+	["Dialdaas-Darkspear"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},

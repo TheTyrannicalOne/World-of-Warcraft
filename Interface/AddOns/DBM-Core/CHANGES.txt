@@ -1,5 +1,12 @@
 Changes since tag 7.3.25
 
+commit 9703c1531ece55eead9f79f7eeee3f26d3aab5a7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Mar 17 06:58:42 2018 +0100
+
+    Omega via svn r17413:
+    update VC
+
 commit 38d1788599c341d6eb1173e37fbb03d08f50e3f3
 Author: subversion <svn@deadlybossmods.com>
 Date:   Thu Mar 15 20:59:34 2018 +0100

@@ -136,7 +136,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Gangus-Runetotem"] = {
+	["Jingojaggot-ArgentDawn"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -178,7 +178,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Bathal-ArgentDawn"] = {
+	["Dialdaas-Darkspear"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -192,7 +192,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Dialdaas-Darkspear"] = {
+	["Bathal-ArgentDawn"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -233,27 +233,20 @@ VWQL = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
-			[41789] = true,
-			[43431] = true,
-			[43943] = true,
 			[43762] = true,
-			[42209] = true,
-			[42026] = true,
-			[46844] = true,
+			[43943] = true,
+			[41896] = true,
+			[43612] = true,
+			[42160] = true,
+			[42070] = true,
+			[42830] = true,
 			[44936] = true,
-			[42111] = true,
-			[44192] = true,
-			[41487] = true,
-			[41554] = true,
-			[44895] = true,
-			[41936] = true,
 			[42799] = true,
+			[44847] = true,
+			[43610] = true,
+			[43325] = true,
+			[42276] = true,
 			[43777] = true,
-			[43600] = true,
-			[44923] = true,
-			[43152] = true,
-			[42713] = true,
-			[43758] = true,
 		},
 		["Filter"] = 63,
 	},
@@ -271,7 +264,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Jingojaggot-ArgentDawn"] = {
+	["Gangus-Runetotem"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {

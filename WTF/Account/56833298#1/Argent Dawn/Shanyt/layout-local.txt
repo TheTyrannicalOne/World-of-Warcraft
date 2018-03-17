@@ -1,4 +1,11 @@
 Version: 1
+Frame: ExtraActionBarFrame
+FrameLevel: 2
+Anchor: CENTER
+X: -249
+Y: -140
+W: 64
+H: 64
 Frame: BNToastFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -76,13 +83,6 @@ X: 0
 Y: 60
 W: 370
 H: 110
-Frame: ExtraActionBarFrame
-FrameLevel: 2
-Anchor: CENTER
-X: -249
-Y: -140
-W: 64
-H: 64
 Frame: SpellActivationOverlayFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -90,10 +90,3 @@ X: 0
 Y: 0
 W: 205
 H: 205
-Frame: _NPCScanOverlayKey
-FrameLevel: 121
-Anchor: CENTER
-X: -63
-Y: -98
-W: 146
-H: 53

@@ -38,13 +38,13 @@ TipTac_Config = {
 	["healthBarText"] = "value",
 	["reactColoredBackdrop"] = false,
 	["hideAllTipsInCombat"] = true,
-	["classification_worldboss"] = "%s|r (Boss) ",
 	["backdropInsets"] = 2.5,
+	["classification_worldboss"] = "%s|r (Boss) ",
 	["hideWorldTips"] = true,
 	["gradientTip"] = true,
 	["classColoredBorder"] = false,
 	["showTalents"] = true,
-	["manaBar"] = false,
+	["colorNameByClass"] = false,
 	["gradientColor"] = {
 		0.8, -- [1]
 		0.8, -- [2]
@@ -64,7 +64,7 @@ TipTac_Config = {
 	["top"] = 460.156231195646,
 	["colSameGuild"] = "|cffff32ff",
 	["barFontFace"] = "Fonts\\ARIALN.TTF",
-	["colorNameByClass"] = false,
+	["manaBar"] = false,
 	["optionsBottom"] = 658.106306185674,
 	["barFontSize"] = 10,
 	["tipBackdropBG"] = "Interface\\Buttons\\WHITE8X8",
