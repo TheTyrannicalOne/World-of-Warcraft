@@ -10,11 +10,11 @@ PasteDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Bathal - Argent Dawn"] = {
@@ -44,19 +44,19 @@ PasteDB = {
 		["Shanyt - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Fantastiburo - Argent Dawn"] = {
-			["loaded"] = true,
-		},
-		["Tyrannithal - Argent Dawn"] = {
-			["loaded"] = true,
-		},
-		["Cowtastraphy - Argent Dawn"] = {
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 		["Shaekhan - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Shanyt - Zul'jin"] = {
+		["Cowtastraphy - Argent Dawn"] = {
+			["loaded"] = true,
+		},
+		["Tyrannithal - Argent Dawn"] = {
+			["loaded"] = true,
+		},
+		["Fantastiburo - Argent Dawn"] = {
 			["loaded"] = true,
 		},
 	},

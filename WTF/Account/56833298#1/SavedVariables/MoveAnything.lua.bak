@@ -19,6 +19,7 @@ MADB = {
 					},
 					["name"] = "ExtraActionBarFrame",
 					["scale"] = 1.08436968959678,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"BT4BarExtraActionBar", -- [2]
@@ -26,7 +27,6 @@ MADB = {
 						-251.970013288487, -- [4]
 						195.347820312248, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["FriendsFrame"] = {
 					["UIPanelWindows"] = {
@@ -88,8 +88,8 @@ MADB = {
 			},
 		},
 	},
-	["frameListRows"] = 18,
-	["noBags"] = false,
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["noBags"] = false,
+	["frameListRows"] = 18,
 }

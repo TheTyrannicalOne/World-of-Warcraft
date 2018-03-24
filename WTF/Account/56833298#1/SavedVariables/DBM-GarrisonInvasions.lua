@@ -39,9 +39,9 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["Yell180908"] = true,
 				["SpecWarn180819spellSWSound"] = 2,
 				["SpecWarn180908moveaway"] = true,
-				["SpecWarn180816dispelSWSound"] = 1,
-				["HealthFrame"] = false,
 				["SpecWarn180819spellSWNote"] = true,
+				["HealthFrame"] = false,
+				["SpecWarn180816dispelSWSound"] = 1,
 				["RangeFrame"] = true,
 			}, -- [2]
 			{
@@ -60,9 +60,9 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["Yell180908"] = true,
 				["SpecWarn180819spellSWSound"] = 2,
 				["SpecWarn180908moveaway"] = true,
-				["SpecWarn180816dispelSWSound"] = 1,
-				["HealthFrame"] = false,
 				["SpecWarn180819spellSWNote"] = true,
+				["HealthFrame"] = false,
+				["SpecWarn180816dispelSWSound"] = 1,
 				["RangeFrame"] = true,
 			}, -- [3]
 		},
@@ -90,12 +90,12 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["specWarnRylakSWSound"] = 1,
 				["specWarnWorkerSWSound"] = 1,
 				["specWarnSpy"] = true,
-				["specWarnBuildingSWSound"] = 1,
+				["specWarnBuilding"] = true,
 				["specWarnWorkerSWNote"] = true,
 				["specWarnRylakSWNote"] = true,
 				["specWarnSpySWSound"] = 1,
 				["specWarnSpySWNote"] = true,
-				["specWarnBuilding"] = true,
+				["specWarnBuildingSWSound"] = 1,
 				["specWarnBuildingSWNote"] = true,
 			}, -- [2]
 			{
@@ -106,12 +106,12 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["specWarnRylakSWSound"] = 1,
 				["specWarnWorkerSWSound"] = 1,
 				["specWarnSpy"] = true,
-				["specWarnBuildingSWSound"] = 1,
+				["specWarnBuilding"] = true,
 				["specWarnWorkerSWNote"] = true,
 				["specWarnRylakSWNote"] = true,
 				["specWarnSpySWSound"] = 1,
 				["specWarnSpySWNote"] = true,
-				["specWarnBuilding"] = true,
+				["specWarnBuildingSWSound"] = 1,
 				["specWarnBuildingSWNote"] = true,
 			}, -- [3]
 		},

@@ -1,5 +1,12 @@
 Changes since tag 7.3.25
 
+commit a03a9f3011c8ce7058446447dc65a3a5b6f7e65c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Mar 17 21:08:17 2018 +0100
+
+    Omega via svn r17414:
+    Add cosmic beacon cast warning, and improved visibility of interrupt timer (by actually making it an interrupt timer)
+
 commit 9703c1531ece55eead9f79f7eeee3f26d3aab5a7
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Mar 17 06:58:42 2018 +0100
