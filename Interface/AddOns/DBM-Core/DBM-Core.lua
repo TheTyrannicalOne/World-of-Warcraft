@@ -41,7 +41,7 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17414 $"):sub(12, -3)),
+	Revision = tonumber(("$Revision: 17418 $"):sub(12, -3)),
 	DisplayVersion = "7.3.26 alpha", -- the string that is shown as version
 	ReleaseRevision = 17402 -- the revision of the latest stable version that is available
 }
@@ -400,7 +400,7 @@ local breakTimerStart
 local AddMsg
 local delayedFunction
 
-local fakeBWVersion, fakeBWHash = 91, "571062d"
+local fakeBWVersion, fakeBWHash = 91, "eb13dfc"
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM

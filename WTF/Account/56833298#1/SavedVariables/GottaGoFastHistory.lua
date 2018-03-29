@@ -90,6 +90,21 @@ GottaGoFastHistoryDB = {
 		["Zulbathal - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
+			["History"] = {
+				[1466] = {
+					["objectives"] = {
+						"Archdruid Glaidalis", -- [1]
+						"Oakheart", -- [2]
+						"Dresaron", -- [3]
+						"Shade of Xavius", -- [4]
+						"Enemy Forces", -- [5]
+					},
+					["zoneID"] = 1466,
+					["name"] = "Darkheart Thicket",
+					["runs"] = {
+					},
+				},
+			},
 		},
 		["Brotuss - Zul'jin"] = {
 		},

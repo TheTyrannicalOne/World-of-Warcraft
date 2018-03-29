@@ -7,7 +7,6 @@ local _
 
 local Crayon = LibStub("LibCrayon-3.0");
 local FL = LibStub("LibFishing-1.0");
-local Crayon = LibStub("LibCrayon-3.0");
 local LO = LibStub("LibOptionsFrame-1.0");
 
 -- Information for the stylin' fisherman
@@ -449,6 +448,25 @@ end
 -- let's delay bag update when we leave the world
 local bagupdateframe = CreateFrame("Frame");
 bagupdateframe:Hide();
+-- we could watch for UNIT_INVENTORY_CHANGED, if we wanted to check for "player" in the args
+local InventoryEvents = {
+	["BAG_UPDATE"] = true,
+	["PLAYER_EQUIPMENT_CHANGED"] = true,
+	["EQUIPMENT_SWAP_FINISHED"] = true,
+	["WEAR_EQUIPMENT_SET"] = true,
+}
+
+function bagupdateframe:StartInventory()
+	for event,_ in pairs(InventoryEvents) do
+		self.fbframe:RegisterEvent(event)
+	end
+end
+
+function bagupdateframe:StopInventory()
+	for event,_ in pairs(InventoryEvents) do
+		self.fbframe:UnregisterEvent(event)
+	end
+end
 
 -- we want to do all the magic stuff even when we didn't equip anything
 local autopoleframe = CreateFrame("Frame");
@@ -860,64 +878,6 @@ PagleFish[110508] = {
 	["enUS"] = "Sea Scorpion Minnow",
 };
 
-PagleFish[138777] = {
-	["enUS"] = "Drowned Mana",
-	zone = "Dalaran (Broken Isles)",
-	silent = 1,
-	limit = 100
-};
-
-PagleFish[146959] = {
-	["enUS"] = "Corrupted Globule",
-	zone = "Val'sharah",
-	silent = 1,
-	limit = 100
-};
-PagleFish[146960] = {
-	["enUS"] = "Ancient Totem Fragment",
-	zone = "Thunder Totem",
-	silent = 1,
-	limit = 100
-};
-PagleFish[146961] = {
-	["enUS"] = "Shiny Bauble",
-	zone = "Stormheim",
-	silent = 1,
-	limit = 100
-};
-PagleFish[146962] = {
-	["enUS"] = "Golden Minnow",
-	zone = "Suramar",
-	silent = 1,
-	limit = 100
-};
-PagleFish[146963] = {
-	["enUS"] = "Desecrated Seaweed",
-	zone = "Broken Shore",
-	silent = 1,
-	limit = 100
-};
-PagleFish[146848] = {
-	["enUS"] = "Fragmented Enchantment",
-	zone = "Azsuna",
-	silent = 1,
-	limit = 100
-};
-
-PagleFish[141975] = {
-	["enUS"] = "Mark of Aquaos",
-	getcolor = function ()
-			local mana = GetItemCount(138777);
-			if (mana < 70) then
-				return Crayon.COLOR_HEX_GREEN;
-			elseif (mana > 79) then
-				return Crayon.COLOR_HEX_RED;
-			else
-				return Crayon.COLOR_HEX_YELLOW;
-			end
-		end
-};
-
 FishingBuddy.PagleFish = PagleFish;
 
 local QuestLures = {};
@@ -995,7 +955,7 @@ local function AddFishie(color, id, name, zone, subzone, texture, quantity, qual
 	if ( (it and it == questType) or QuestItems[id] ) then
 		-- subtype is Quest as well
 		if ( FishingBuddy_Info["Fishies"][id].canopen == nil ) then
-		FishingBuddy_Info["Fishies"][id].quest = true;
+			FishingBuddy_Info["Fishies"][id].quest = true;
 			local canopen, locked;
 			if ( QuestItems[id] and QuestItems[id].open ) then
 				canopen = QuestItems[id].open;
@@ -1014,7 +974,7 @@ local function AddFishie(color, id, name, zone, subzone, texture, quantity, qual
 	end
 
 	-- Play a sound on Nat Pagle rep
-	if ( PagleFish[id] and not PagleFish[id].silent and GSB("DingQuestFish") ) then
+	if ( PagleFish[id] and GSB("DingQuestFish") ) then
 		PlaySound(SOUNDKIT.IG_QUEST_LIST_COMPLETE, "master");
 	end
 
@@ -1969,6 +1929,22 @@ local function DumpZoneEvents()
 	ZoneEvents = nil;
 end
 
+-- Thanks bsmorgan!
+local minRarity = 2;		-- uncommon
+local function SilenceOfTheFishies(self,event,msg,author)
+	if not ReadyForFishing() or author == UnitName("player") or string.match(msg,'Hbattlepet') then
+		return false
+	else
+		local itemID = select(3, string.find(msg, "item:(%d+):"))
+		local itemRarity = select(3, GetItemInfo(itemID))
+		if (itemRarity < minRarity) and (string.find(msg, "receives") or string.find(msg, "gets") or string.find(msg, "creates")) then
+			return true
+		else
+			return false
+		end
+	end
+end
+
 local lootcache = {}
 local lootcheck = false;
 local lootcount = 0;
@@ -2007,6 +1983,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
 		  event == "WEAR_EQUIPMENT_SET" or
 		  event == "EQUIPMENT_SWAP_FINISHED") then
 		FishingMode();
+		RunHandlers(FBConstants.INVENTORY_EVT)
     elseif (event == "BAG_UPDATE" ) then
 		if (lootcheck) then
 			if (lootcount > 0) then
@@ -2018,6 +1995,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
 			end
 		end
 		FishingMode();
+		RunHandlers(FBConstants.INVENTORY_EVT)
 	elseif ( event == "LOOT_OPENED" ) then
 		local doautoloot = ShouldAutoLoot() and (GetCVar("autoLootDefault") ~= "1" );
 		if ( IsFishingLoot() ) then
@@ -2031,7 +2009,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
 			-- if we want to autoloot, and Blizz isn't, let's grab stuff
 			local checkloot = LootSlotIsItem or LootSlotHasItem;
 			for index = 1, GetNumLootItems(), 1 do
-				local texture, fishie, quantity, quality, locked = GetLootSlotInfo(index);
+				local texture, fishie, quantity, quality, locked, qitem, questID, qactive = GetLootSlotInfo(index);
 				if (checkloot(index)) then
 					local link = GetLootSlotLink(index);
 
@@ -2098,12 +2076,6 @@ FishingBuddy.OnEvent = function(self, event, ...)
 	elseif ( event == "PLAYER_ENTERING_WORLD" ) then
 		IsZoning = nil;
 --		DumpZoneEvents();
--- we could watch for UNIT_INVENTORY_CHANGED, if we wanted to check for "player" in the args
-		self:RegisterEvent("PLAYER_EQUIPMENT_CHANGED");
-		self:RegisterEvent("EQUIPMENT_SWAP_FINISHED");
-		self:RegisterEvent("WEAR_EQUIPMENT_SET");
-
--- BAG_UPDATE
 		bagupdateframe:Show();
 
 		if (FishingBuddy.StartedFishing and not handlerframe:IsShown()) then
@@ -2127,10 +2099,8 @@ FishingBuddy.OnEvent = function(self, event, ...)
 
 -- Don't reenable BAG_UPDATE until we're back
 		bagupdateframe:Hide();
-		self:UnregisterEvent("BAG_UPDATE");
-		self:UnregisterEvent("PLAYER_EQUIPMENT_CHANGED");
-		self:UnregisterEvent("EQUIPMENT_SWAP_FINISHED");
-		self:UnregisterEvent("WEAR_EQUIPMENT_SET");
+		bagupdateframe:StopInventory()
+
 		if (handlerframe:IsShown()) then
 			handlerframe:Hide();
 		end
@@ -2160,13 +2130,20 @@ FishingBuddy.OnLoad = function(self)
 
 	bagupdateframe.fbframe = self;
 	bagupdateframe:SetScript("OnUpdate", function(self, ...)
-			if (self.fbframe) then
-				self.fbframe:RegisterEvent("BAG_UPDATE");
-				self:Hide();
+		if (self.fbframe) then
+			self:StartInventory()
+			self:Hide();
+			if not self.calopened then
+				OpenCalendar()
+				self.calopened = true
 			end
-		end);
+		end
+	end);
 
 	RegisterHandlers(CaptureEvents);
+
+	-- Chat filter
+	ChatFrame_AddMessageEventFilter("CHAT_MSG_LOOT", SilenceOfTheFishies)
 
 	-- Set up command
 	SlashCmdList["fishingbuddy"] = FishingBuddy.Command;

@@ -34,7 +34,7 @@ local function TuskarrPlan(queue)
         TuskarrItem.tension = GetSpellInfo(201944);
     end
     if (FL:HasBuff(TuskarrItem.tension)) then
-        local bergbuff, raftbuff, hasberg, hasraft =FishingBuddy.HasRaftBuff();
+        local bergbuff, raftbuff, hasberg, hasraft = FishingBuddy.HasRaftBuff();
         if not (hasberg or hasraft) then
             return
         end
@@ -45,7 +45,6 @@ local function TuskarrPlan(queue)
         if ( s == 0 ) then
             local pole = FL:IsFishingPole();
             local main = FL:GetMainHandItem(true);
-
             if (pole) then
                 tinsert(queue, {
                     ["itemid"] = TuskarrItem.id,

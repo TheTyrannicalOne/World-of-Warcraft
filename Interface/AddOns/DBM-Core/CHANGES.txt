@@ -1,5 +1,34 @@
 Changes since tag 7.3.25
 
+commit aa1d740255b8c1c0ca43c42a1bda37eca449999f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Mar 28 16:39:46 2018 +0200
+
+    Omega via svn r17418:
+    Es update
+
+commit ba31165058f432405d5a60b39732af7b5907cb50
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Mar 26 04:09:10 2018 +0200
+
+    Omega via svn r17417:
+    Add taloc stub
+    Rename titan discs stub
+
+commit 92de292369278a6f489a58bcd03de69091094cda
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Mar 26 03:42:51 2018 +0200
+
+    Omega via svn r17416:
+    Rename Undermine to Motherload
+
+commit dc1eb5b14ce2895eb2c6501886ef93f11d5e8223
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Mar 25 21:43:34 2018 +0200
+
+    Omega via svn r17415:
+    Disable boss to beam in LFR, there is no add in LFR
+
 commit a03a9f3011c8ce7058446447dc65a3a5b6f7e65c
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Mar 17 21:08:17 2018 +0100

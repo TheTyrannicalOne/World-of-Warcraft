@@ -460,12 +460,12 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1570.11572265625,
+						["CoordX"] = 1558.60290527344,
 						["ItemQuality"] = true,
-						["CoordY"] = 784.90625,
+						["CoordY"] = 764.183959960938,
 					},
 					["Reagents"] = {
-						["CoordY"] = 882.62109375,
+						["CoordY"] = 881.853576660156,
 						["CoordX"] = 627.428527832031,
 					},
 					["Bank"] = {
@@ -2610,7 +2610,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 1555813571,
+							["Shanyt"] = 1869343341,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2643,9 +2643,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
-							["Brewnheimer"] = 836,
 							["Dialdaas"] = 11338409,
 							["Serbitechna"] = 7681888,
+							["Brewnheimer"] = 836,
 						},
 					},
 				},
@@ -2683,37 +2683,37 @@ LUIDB = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
 							"/i TY", -- [1]
-							"/hello", -- [2]
-							"/p ready", -- [3]
-							" hello", -- [4]
-							"/i TY", -- [5]
-							"/p ready", -- [6]
-							"/i TY", -- [7]
-							"/hello", -- [8]
-							"/i TY", -- [9]
-							"/hello", -- [10]
-							"/p ready", -- [11]
+							"/p ready", -- [2]
+							"/cw Zumok-Eitrigg not sure for your class i have to kill them so i can sap life from him", -- [3]
+							"/p ready", -- [4]
+							"/s hi", -- [5]
+							"/p hi", -- [6]
+							"/p TY!!!", -- [7]
+							" hello", -- [8]
+							"/p ready", -- [9]
+							"/cw Zumok-Eitrigg not sure for your class i have to kill them so i can sap life from him", -- [10]
+							"/cw Zumok-Eitrigg we atleast we killed hiom", -- [11]
 							"/i TY", -- [12]
-							" hello", -- [13]
-							"/hello", -- [14]
-							"/i TY", -- [15]
-							"/hello", -- [16]
-							"/p ready", -- [17]
-							" hello", -- [18]
-							"/i TY", -- [19]
+							"/cw Zumok-Eitrigg sorry was away", -- [13]
+							"/p ready", -- [14]
+							"/cw Zumok-Eitrigg sorry was away", -- [15]
+							"/cw Zumok-Eitrigg not sure for your class i have to kill them so i can sap life from him", -- [16]
+							"/i TY", -- [17]
+							"/p ready", -- [18]
+							"/cw Zumok-Eitrigg not sure for your class i have to kill them so i can sap life from him", -- [19]
 							"/p ready", -- [20]
-							"/i TY", -- [21]
-							"/hello", -- [22]
+							"/s hi", -- [21]
+							"/p TY!!!", -- [22]
 							"/p ready", -- [23]
-							" hello", -- [24]
-							"/i TY", -- [25]
-							"/p ready", -- [26]
-							"/i TY", -- [27]
-							"/hello", -- [28]
-							" hello", -- [29]
-							"/p ready", -- [30]
-							"/hello", -- [31]
-							"/p ready", -- [32]
+							"/cw Zumok-Eitrigg we atleast we killed hiom", -- [24]
+							"/cw Zumok-Eitrigg sorry was away", -- [25]
+							"/cw Zumok-Eitrigg not sure for your class i have to kill them so i can sap life from him", -- [26]
+							"/p ready", -- [27]
+							"/s hi", -- [28]
+							"/p ready", -- [29]
+							"/cw Zumok-Eitrigg sorry was away", -- [30]
+							"/p ready", -- [31]
+							"/cw Zumok-Eitrigg sorry was away", -- [32]
 						},
 					},
 				},

@@ -150,6 +150,58 @@ function FWF:SetCurrentEntry(text)
 	end
 end
 
+function FWF:ColorInfoString(info, name, count)
+	if (not name) then
+		name = UNKNOWN;
+	end
+
+	if (info.color) then
+		name = Crayon:Colorize(info.color, name);
+	elseif (info.getcolor) then
+		name = Crayon:Colorize(info.getcolor(), name);
+	elseif (info.limit) then
+		local color = Crayon:GetThresholdHexColor(count, info.limit, info.limit / 5);
+		name = name.." ("..count.."/"..info.limit..")"
+		name = Crayon:Colorize(color, name);
+	elseif (not info.quest or IsUnitOnQuest(info.quest, "player")) then
+		name = Crayon:Green(name);
+	else
+		name = Crayon:Red(name);
+	end
+
+	return name
+end
+
+function FWF:DisplayFishLine(fish, label, area)
+	local line = nil;
+	local zone, subzone = FL:GetZoneInfo();
+	if(not WorldMapFrame:IsShown()) then
+		SetMapToCurrentZone()
+	end
+	area = area or GetCurrentMapAreaID()
+	for id,info in pairs(fish) do
+		local havesome = GetItemCount(id);
+		if ( havesome > 0 and ((info.area and info.area == area) or (not info.zone or zone == info.zone)) ) then
+			local _,_,_,_,_,name,_ = FishingBuddy.GetFishieRaw(id);
+
+			name = self:ColorInfoString(info, name, havesome)
+
+			if (line) then
+				line = line..", "..name
+			else
+				line = name;
+			end
+		end
+	end
+	if (not line) then
+		line = Crayon:Yellow(NONE);
+	end
+	if not string.find(label, ':') then
+		line = ": "..line;
+	end
+	return label..line
+end
+
 -- handle special frame actions
 local function FadingFinished()
 	FishingWatchHighlight:Hide();
@@ -593,42 +645,7 @@ local function DisplayPagleFish()
 		return nil
 	end
 
-	local line = nil;
-	local zone, subzone = FL:GetZoneInfo();
-	for id,info in pairs(FishingBuddy.PagleFish) do
-		local havesome = GetItemCount(id);
-		if ( havesome > 0 and (not info.zone or zone == info.zone) ) then
-			local _,_,_,_,_,name,_ = FishingBuddy.GetFishieRaw(id);
-
-			if (not name) then
-				name = UNKNOWN;
-			end
-
-			if (info.color) then
-				name = Crayon:Colorize(info.color, name);
-			elseif (info.getcolor) then
-				name = Crayon:Colorize(info.getcolor(), name);
-			elseif (info.limit) then
-				local color = Crayon:GetThresholdHexColor(havesome, info.limit, info.limit / 5);
-				name = name.." ("..havesome.."/"..info.limit..")"
-				name = Crayon:Colorize(color, name);
-			elseif (not info.quest or IsUnitOnQuest(info.quest, "player")) then
-				name = Crayon:Green(name);
-			else
-				name = Crayon:Red(name);
-			end
-
-			if (line) then
-				line = line..", "..name
-			else
-				line = name;
-			end
-		end
-	end
-	if (not line) then
-		line = Crayon:Yellow(NONE);
-	end
-	return QUEST_COMPLETE..": "..line;
+	return FWF:DisplayFishLine(FishingBuddy.PagleFish, QUEST_COMPLETE)
 end
 
 -- Handle display elapsed time in some reasonable fashion
@@ -859,8 +876,11 @@ local function HideOnEscape()
 	HideDraggerFrame();
 end
 
+local calopened = nil
 local function TimerUpdate()
-	FWF:UpdateLine(ELAPSEDTIME_LINE, UpdateTimerLine())
+	if not NoShow() then
+		FWF:UpdateLine(ELAPSEDTIME_LINE, UpdateTimerLine())
+	end
 end
 
 local WatWin = {}
@@ -868,6 +888,8 @@ function WatWin:OnLoad()
 	timerframe = CreateFrame("FRAME");
 	timerframe:Hide();
 	timerframe:SetScript("OnUpdate", TimerUpdate);
+	timerframe:SetScript("OnEvent", TimerEvent);
+	timerframe:RegisterEvent("CALENDAR_UPDATE_EVENT_LIST")
 
 	-- since we can leave this open all the time, register these against the window itself
 	self:RegisterEvent("ZONE_CHANGED");

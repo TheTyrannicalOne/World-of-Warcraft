@@ -1,4 +1,12 @@
-﻿Version 1.8.2
+﻿Version 1.8.3
+- Raid Support: Filter loot when in a raid
+- Raid Support: Display today's FisherFriend boss
+- Raid Support: Extra action button when you get the special item
+- Raid Support: Show how many of the currency item you have
+- Bug #311: Oversized bobber applied inappropriately
+- Lots of little code fixes and improvements
+
+Version 1.8.2
 - Fix issue with LibStub and initialization that would cause the broker to fail
 
 Version 1.8.1

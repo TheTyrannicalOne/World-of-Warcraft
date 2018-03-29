@@ -1,20 +1,9 @@
 ﻿-- Thanks to SOCD and QuickQuest for inspiration
 
+local _
+
+local LEW = LibStub("LibEventWindow-1.0");
 local GSB = FishingBuddy.GetSettingBool;
-
-local _fqframe = CreateFrame('Frame')
-_fqframe:SetScript('OnEvent', function(self, event, ...) self[event](...) end)
-_fqframe:Show();
-
-function _fqframe:Register(event, method, override)
-	local methods = self[event]
-	if(methods) then
-		self[event] = setmetatable({methods, newmethod or method}, metatable)
-	else
-		self[event] = method
-		self:RegisterEvent(event)
-	end
-end
 
 local function GetNPCID()
 	return tonumber(string.match(UnitGUID('npc') or UnitGUID('target') or '', 'Creature%-.-%-.-%-.-%-.-%-(.-)%-'))
@@ -37,6 +26,7 @@ local function procLunkerQuests(index, title, level, isTrivial, frequency, isRep
 end
 
 -- 109098
+local _fqframe = LEW:CreateWindow()
 
 _fqframe:Register('GOSSIP_SHOW', function()
 	local npcID = GetNPCID()

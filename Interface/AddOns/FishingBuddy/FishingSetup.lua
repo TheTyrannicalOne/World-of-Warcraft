@@ -112,49 +112,30 @@ FBConstants.CastClick[FBConstants.MOUSE1] = KEY_BUTTON2;
 FBConstants.CastClick[FBConstants.MOUSE2] = KEY_BUTTON4;
 FBConstants.CastClick[FBConstants.MOUSE3] = KEY_BUTTON5;
 
-FBConstants.WILDCARD_EVT = "*";
-FBConstants.ADD_FISHIE_EVT = "ADD_FISHIE";
-FBConstants.ADD_SCHOOL_EVT = "ADD_SCHOOL";
-FBConstants.RESET_FISHDATA_EVT = "RESET_FISHDATA";
+local CustomEvents = {
+	["WILDCARD_EVT"] = "*",
+	["ADD_FISHIE_EVT"] = "ADD_FISHIE",
+	["ADD_SCHOOL_EVT"] = "ADD_SCHOOL",
+	["RESET_FISHDATA_EVT"] = "RESET_FISHDATA",
+	
+	["FISHING_ENABLED_EVT"] = "FISHING_ENABLED",
+	["FISHING_DISABLED_EVT"] = "FISHING_DISABLED",
 
-FBConstants.FISHING_ENABLED_EVT = "FISHING_ENABLED";
-FBConstants.FISHING_DISABLED_EVT = "FISHING_DISABLED";
+	["INVENTORY_EVT"] = "INVENTORY",
+	
+	["LOGIN_EVT"] = "LOGIN",
+	["LOGOUT_EVT"] = "LOGOUT",
+	["LEAVING_EVT"] = "LEAVING",
 
-FBConstants.LOGIN_EVT = "LOGIN";
-FBConstants.LOGOUT_EVT = "LOGOUT";
-FBConstants.LEAVING_EVT = "LEAVING";
-
--- option frame
-FBConstants.OPT_UPDATE_EVT = "OPT_UPDATE_EVT";
-
--- main FB frame handler
-FBConstants.FRAME_SHOW_EVT = "FRAME_SHOW_EVT";
-
--- register "fake" events
+	-- option frame
+	["OPT_UPDATE_EVT"] = "OPT_UPDATE_EVT",
+	-- main FB frame handler
+	["FRAME_SHOW_EVT"] = "FRAME_SHOW_EVT",
+}
 
 FBConstants.FBEvents = {};
--- FB will call your routine for every event it receives
-FBConstants.FBEvents[FBConstants.WILDCARD_EVT] = 1;
-
--- FB will call your function when a fish is caught
-FBConstants.FBEvents[FBConstants.ADD_FISHIE_EVT] = 1;
--- FB will call your function when a school is added
-FBConstants.FBEvents[FBConstants.ADD_SCHOOL_EVT] = 1;
-
--- FB will call your function after the player is fully logged in
-FBConstants.FBEvents[FBConstants.LOGIN_EVT] = 1;
--- FB will call your function when the user is logging out
-FBConstants.FBEvents[FBConstants.LOGOUT_EVT] = 1;
--- FB will call your function when the user leaves the world
-FBConstants.FBEvents[FBConstants.LEAVING_EVT] = 1;
-
--- FB will call your function when the user starts fishing (equips a pole)
-FBConstants.FBEvents[FBConstants.FISHING_ENABLED_EVT] = 1;
--- FB will call your function when the user stops fishing (unequips a pole)
-FBConstants.FBEvents[FBConstants.FISHING_DISABLED_EVT] = 1;
-
--- FB will call your function any options are changed
-FBConstants.FBEvents[FBConstants.OPT_UPDATE_EVT] = 1;
-
--- FB will call your function when the fishing buddy frame is about to display
-FBConstants.FBEvents[FBConstants.FRAME_SHOW_EVT] = 1;
+for event,constant in pairs(CustomEvents) do
+	FBConstants[event] = constant;
+	-- register "fake" events
+	FBConstants.FBEvents[constant] = 1;
+end

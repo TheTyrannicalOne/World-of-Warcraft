@@ -162,7 +162,11 @@ local function unwind(table)
 end
 
 local function SpecialBobberPlan(queue)
-    for id,bobber in pairs(BigBobbers) do
+	for id,bobber in pairs(BigBobbers) do
+		if FL:HasBuff(bobber.buff) then
+			return
+		end
+
 		if UseThisBobber(id, bobber) then
 			ClearSpecialBobberBuffs()
 			tinsert(queue, {
@@ -170,7 +174,8 @@ local function SpecialBobberPlan(queue)
 				["name"] = bobber[CurLoc],
 				["targetid"] = nil
 			})
-			end
+			return
+		end
 	end
 
 	local bobbersetting = GSR(BOBBERSETTING);

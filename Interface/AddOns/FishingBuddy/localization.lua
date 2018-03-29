@@ -9,11 +9,11 @@ FishingTranslations["Inject"] = {
 	BINDING_HEADER_FISHINGBUDDY_BINDINGS = "#NAME#",
 
 	FISHCAUGHT = "%d/%d %s",
-	
+
 	BR = "\n",
 	BRSPCS = "\n    ",
 	DASH = " -- ",
-	
+
 	AUTHOR = "Sutorix (sutorix@hotmail.com)",
 	COPYRIGHT = "(c) 2005-2015 by The Software Cobbler",
 
@@ -35,11 +35,11 @@ FishingTranslations["Inject"] = {
 
 FishingTranslations["enUS"] = {
 	NAME = "Fishing Buddy",
-	
+
 	MACRONAME = "FishingBuddy",
 	NOCREATEMACROPER = "Could not create per character macro: ", -- Could name create macro: "name of macro"
 	NOCREATEMACROGLOB = "Could not create global macro: ", -- Could name create macro: "name of macro"
-	
+
 	-- we can (should?) translate everything below here
 	DESCRIPTION1 = "Keep track of the fish you've caught",
 	DESCRIPTION2 = "and manage your fishing gear.",
@@ -72,13 +72,13 @@ FishingTranslations["enUS"] = {
 	FLOATING_DEBRIS = "Floating Debris",
 	ELEM_WATER = "Elemental Water",
 	OIL_SPILL = "Oil Spill",
-	
+
 	GOLD_COIN = "Gold coin",
 	SILVER_COIN = "Silver coin",
 	COPPER_COIN = "Copper coin",
 
 	LAGER = "Captain Rumsey's Lager",
-	
+
 	NOREALM = "unknown realm",
 
 	OFFSET_LABEL_TEXT = "Offset:";
@@ -92,7 +92,7 @@ FishingTranslations["enUS"] = {
 
 	CONFIG_MOUSEEVENT_ONOFF = "Casting Button",
 	CONFIG_MOUSEEVENT_INFO = "Use this mouse button to cast.",
-	
+
 	SHOWFISHIES = "Show fish",
 	SHOWFISHIES_INFO = "Display fishing history grouped by fish type.",
 
@@ -129,7 +129,7 @@ FishingTranslations["enUS"] = {
 	CONFIG_LUNKERQUESTS_INFO     = "Automatically turn in lunker quests",
 	CONFIG_DROWNEDMANA_ONOFF     = "Margoss reputation",
 	CONFIG_DROWNEDMANA_INFO      = "If enabled, turn in Drowned Mana for reputation",
-	
+
 	CONFIG_EASYCAST_ONOFF	 = "Easy Cast",
 	CONFIG_EASYCAST_INFO     = "Enable double-right-click casting.",
 	CONFIG_EASYCAST_INFOD    = "Easy cast is disabled because Fishing Ace! is turned on.",
@@ -142,7 +142,7 @@ FishingTranslations["enUS"] = {
 	CONFIG_MOUNTEDCAST_INFO  = "If enabled, allow casting while mounted.",
 	CONFIG_PARTIALGEAR_ONOFF = "Partial Outfit",
 	CONFIG_PARTIALGEAR_INFO  = "If enabled, cast when wearing any fishing gear at all, even if a pole is not equipped.",
-	
+
 	CONFIG_FISHINGCHARM_INFO  = "If enabled, use the fishing charm while in Pandaria.",
 	CONFIG_TUSKAARSPEAR_INFO  = "If enabled, do the complicated dance to use the Tuskaar Spear.",
 
@@ -151,11 +151,11 @@ FishingTranslations["enUS"] = {
 	CONFIG_BOBBINGBERG_INFO   = "If enabled, use the bobbing berg.",
 	CONFIG_MAINTAINBERG_INFO  = "If enabled, do not use the bobbing berg item, only maintain it if it is already being used.",
 	CONFIG_MAINTAINRAFTBERG_ONOFF = "Maintain only",
-	
+
 	CONFIG_USERAFTS_ONOFF     = "Use rafts",
 	CONFIG_USERAFTS_INFO      = "If enabled, use a fishing raft item.",
 	CONFIG_BOBBINGBERG_ONOFF  = "Use Bipsi's Berg",
-	
+
 	CONFIG_EASYLURES_ONOFF	 = "Easy Lures",
 	CONFIG_EASYLURES_INFO	 = "If enabled, a lure will applied to your fishing pole before you start fishing, whenever you need one.",
 	CONFIG_ALWAYSLURE_ONOFF	  = "Always Lure",
@@ -172,7 +172,7 @@ FishingTranslations["enUS"] = {
 	CONFIG_DALARANLURES_INFO  = "If enabled, apply special Dalaran coin lures when available.",
 	CONFIG_SPECIALBOBBERS_ONOFF = "Bobbers",
 	CONFIG_SPECIALBOBBERS_INFO  = "If enabled, apply a randomly selected custom bobber.",
-	
+
 	CONFIG_SHOWLOCATIONZONES_ONOFF	= "Show Zones",
 	CONFIG_SHOWLOCATIONZONES_INFO = "Display both zones and subzones.",
 	CONFIG_SORTBYPERCENT_ONOFF = "Sort by number caught",
@@ -197,7 +197,16 @@ FishingTranslations["enUS"] = {
 	CONFIG_TURNONSOUND_INFO   = "If enabled, always turn on sounds while fishing.",
 	CONFIG_DINGQUESTFISH_ONOFF = "Fish Ringer",
 	CONFIG_DINGQUESTFISH_INFO = "If enabled, the quest added sound will play when a Nat Pagle reputation fish is caught.",
-	
+
+	CONFIG_FISHINGRAID_ONOFF  = "Raid Support",
+	CONFIG_FISHINGRAID_INFO  = "Turn on Fishing Raid features.",
+	CONFIG_FILTERRAIDLOOT_ONOFF = "Filter Loot",
+	CONFIG_FILTERRAIDLOOT_INFO = "If enabled, low level loot in a fishing raid is filtered.",
+	CONFIG_RAIDACTION_ONOFF	   = "Action Button",
+	CONFIG_RAIDACTION_INFO     = "If enabled, show an action button when the special item is in inventory.",
+	CONFIG_RAIDWATCH_ONOFF     = "Watch currecny",
+	CONFIG_RAIDWATCH_INFO      = "If enabled, the Fish Watcher will show the currency fish for this raid boss.",
+
 	CONFIG_AUTOOPEN_ONOFF	  = "Open quest items",
 	CONFIG_AUTOOPEN_INFO	  = "If enabled, use a double-click to open up fishing quest items.",
 
@@ -209,13 +218,13 @@ FishingTranslations["enUS"] = {
 	CONFIG_DRINKHEAVILY_INFO  = "If enabled, drink #LAGER# whenever you're fishing and 'dry'.",
 	CONFIG_FISHINGBUDDY_ONOFF = "Fishing Buddy",
 	CONFIG_FISHINGBUDDY_INFO  = "Bring out that special buddy while you fish.",
-	
+
 	CONFIG_WATCHBOBBER_ONOFF  = "Watch bobber",
 	CONFIG_WATCHBOBBER_INFO	  = "If enabled, #NAME# will not cast if the cursor is over the Fishing Bobber.",
-	
+
 	CONFIG_CONTESTS_ONOFF	  = "Fishing contest support",
 	CONFIG_CONTESTS_INFO	   = "Display timers for fishing contests.",
-	
+
 	CONFIG_STVTIMER_ONOFF	  = "Extravaganza timer",
 	CONFIG_STVTIMER_INFO	  = "If enabled, display a countdown timer for the start of the Fishing Extravaganza and a countdown of the time left.",
 	CONFIG_STVPOOLSONLY_ONOFF = "Only cast in pools",
@@ -224,7 +233,7 @@ FishingTranslations["enUS"] = {
 	CONFIG_DERBYTIMER_INFO	  = "If enabled, display a countdown timer for the start of the Kalu'ak Fishing Derby and a countdown of the time left.",
 	CONFIG_SHOWPOOLS_ONOFF	  = "Show pools",
 	CONFIG_SHOWPOOLS_INFO	  = "If enabled, known pool locations will be displayed on the minimap.",
-	
+
 	CONFIG_OUTFITTER_TEXT	  = "Outfit skill bonus: %s#BR#Draznar's style score: %d ",
 
 	CONFIG_CREATEMACRO_ONOFF  = "Create macro",
@@ -273,12 +282,12 @@ FishingTranslations["enUS"] = {
 
 	EXTRAVAGANZA = "Extravaganza",
 	DERBY = "Derby",
-	
+
 	TIMETOGO = "%s starts in %d:%02d",
 	TIMELEFT = "%s ends in %d:%02d",
-	
+
 	FATLADYSINGS = "|c#RED#%s is over|r (%d:%02d left)",
-	
+
 	-- Riggle Bassbait yells: We have a winner! NAME is the Master Angler!
 	RIGGLE_BASSBAIT = "Riggle Bassbait yells: We have a winner! (%a+) is the Master Angler!",
 	ELDER_CLEARWATER = "Elder Clearwater yells: (%a)+ has won the Kalu'ak Fishing Derby!",
@@ -310,7 +319,7 @@ FishingTranslations["enUS"] = {
 	FISHDATARESETMORE_MSG = "Run |c#GREEN#/fb #FISHDATA# #RESET#|r one more time to reset fish location data.",
 
 	THANKS = "Thank you, everyone!",
-	
+
 	ROLE_TRANSLATE_ITIT = "Italian translation",
 	ROLE_TRANSLATE_ZHTW = "Traditional Chinese translation",
 	ROLE_TRANSLATE_ZHCN = "Simplified Chinese translation",

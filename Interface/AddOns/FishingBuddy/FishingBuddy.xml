@@ -3,7 +3,7 @@
     <Script file="FishingBuddy.lua"/>
     <Script file="FishingInit.lua"/>
     <!-- Frame to handle all core events --> 
-    <Frame name="FishingBuddyRoot" toplevel="true" enableMouse="false" movable="true" parent="UIParent" hidden="true">
+    <Frame name="FishingBuddyRoot" enableMouse="false" movable="true" parent="UIParent" hidden="true">
         <Scripts>
 	    <OnLoad>
 			FishingBuddy.OnLoad(self);

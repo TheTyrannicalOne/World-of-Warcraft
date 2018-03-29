@@ -1521,7 +1521,7 @@ function FishLib:InvokeFishing(useaction)
 	end
 	btn:SetAttribute("item", nil);
 	btn:SetAttribute("target-slot", nil);
-	btn.postclick = nil;
+	-- btn.postclick = nil;
 end
 
 function FishLib:InvokeLuring(id, itemtype, targetslot)
@@ -1547,7 +1547,7 @@ function FishLib:InvokeLuring(id, itemtype, targetslot)
 	end
 	btn:SetAttribute("spell", nil);
 	btn:SetAttribute("action", nil);
-	btn.postclick = nil;
+	-- btn.postclick = nil;
 end
 
 function FishLib:InvokeMacro(macrotext)
@@ -1567,7 +1567,7 @@ function FishLib:InvokeMacro(macrotext)
 	btn:SetAttribute("target-slot", nil);
 	btn:SetAttribute("spell", nil);
 	btn:SetAttribute("action", nil);
-	btn.postclick = nil;
+	-- btn.postclick = nil;
 end
 
 function FishLib:OverrideClick(postclick)
