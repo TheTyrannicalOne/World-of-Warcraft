@@ -11,49 +11,6 @@ HandyNotes_SpecialNPCsEtcDB = {
 	["faction"] = {
 		["Horde"] = {
 			["nodes"] = {
-				["Netherstorm"] = {
-					[32036441] = "Innkeeper:Innkeeper Remi Dodoso:Innkeeper:103793",
-					[32126483] = "Stable:Liza Cutlerflix:Stable Master:149876",
-				},
-				["ThunderTotem"] = {
-					[44564509] = "Enchanting:Guron Twaintail:Enchanting Trainer:622615",
-					[44885372] = "Innkeeper:Ernu Mesawind:Innkeeper:620626",
-				},
-				["Zangarmarsh"] = {
-					[31814969] = "Stable:Khalan:Stable Master:98884",
-				},
-				["Silverpine"] = {
-					[42884092] = "Blacksmithing:Guillaume Sorouy:Blacksmithing Trainer:13655",
-				},
-				["Orgrimmar"] = {
-					[67745315] = "Banker:Binzella:Banker:288281",
-					[48788382] = "Banker:Rilgiz:Banker:280658",
-					[48918360] = "Banker:Perixa:Banker:280662",
-					[67305312] = "Banker:Vink:Banker:288288",
-					[67885279] = "Banker:Fibi:Banker:288280",
-				},
-				["Highmountain"] = {
-					[55128420] = "Blacksmithing:Barm Stonebreaker:Blacksmithing Trainer:598594",
-					[55098414] = "Mining:Ronos Ironhorn:Mining Trainer:603793",
-				},
-				["garrisonffhorde_tier3"] = {
-					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
-					[47933212] = "Banker:Yorn Longhoof:Banker:497762",
-				},
-				["BladesEdgeMountains"] = {
-					[76076030] = "Innkeeper:Matron Varah:Innkeeper:135304",
-					[53275541] = "Innkeeper:Gholah:Innkeeper:103536",
-					[62813834] = "Innkeeper:Innkeeper Aelerya:Innkeeper:141602",
-					[53905506] = "First Aid:Fera Palerunner:First Aid Trainer:103544",
-					[76836545] = "Leatherworking:Grikka:Leatherworking Trainer:135303",
-				},
-				["ShattrathCity"] = {
-					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
-					[48372913] = "Banker:Gromden:Banker:103192",
-				},
-				["ValeofEternalBlossoms"] = {
-					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
-				},
 				["Dalaran70"] = {
 					[46212632] = "Mining:Mama Diggs:Mining Trainer:602505",
 					[38594064] = "Enchanting:Enchanter Nalthanis:Enchanting Trainer:603441",
@@ -62,8 +19,8 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[44982871] = "Blacksmithing:Arcanomancer Vridiel:Blacksmithing Trainer:1074773",
 					[58933780] = "Stable:Tassia Whisperglen:Stable Master:615687",
 					[36353727] = "First Aid:Olisarra the Kind:First Aid Trainer:603433",
-					[52471473] = "Banker:Teller Rames:Banker:616471",
 					[35283423] = "Tailoring:Tanithria:Tailoring Trainer:603458",
+					[52471473] = "Banker:Teller Rames:Banker:616471",
 					[69913846] = "Cooking:Awilo Lon'gomba:Cooking Trainer:603446",
 					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
 					[52991513] = "Banker:Teller Hanners:Banker:616472",
@@ -78,13 +35,72 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
 					[42983410] = "Herbalism:Kuhuine Tenderstride:Herbalism Trainer:599140",
 				},
-				["ShadowmoonValley"] = {
-					[29212942] = "Stable:Gedrah:Stable Master:135990",
-					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
+				["AzuremystScenario"] = {
+					[31403860] = "First Aid:Anchorite Lysara:First Aid Trainer:1204258",
+				},
+				["ThunderTotem"] = {
+					[44564509] = "Enchanting:Guron Twaintail:Enchanting Trainer:622615",
+					[44885372] = "Innkeeper:Ernu Mesawind:Innkeeper:620626",
+				},
+				["Zangarmarsh"] = {
+					[31814969] = "Stable:Khalan:Stable Master:98884",
+				},
+				["ArgusMacAree"] = {
+					[49396934] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
+				},
+				["Silverpine"] = {
+					[42884092] = "Blacksmithing:Guillaume Sorouy:Blacksmithing Trainer:13655",
+				},
+				["ArgusSurface"] = {
+					[64376264] = "Stable:Lead Rider Jerek:Stable Master:1204576",
+					[50587459] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
+					[62694761] = "Stable:Raelaara the Kind:Stable Master:1210194",
+				},
+				["Highmountain"] = {
+					[55128420] = "Blacksmithing:Barm Stonebreaker:Blacksmithing Trainer:598594",
+					[55098414] = "Mining:Ronos Ironhorn:Mining Trainer:603793",
+				},
+				["ShattrathCity"] = {
+					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
+					[48372913] = "Banker:Gromden:Banker:103192",
+				},
+				["garrisonffhorde_tier3"] = {
+					[42095354] = "Innkeeper:Provisioner Rashma:Innkeeper:524625",
+					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
+					[48143302] = "Banker:Yorn Longhoof:Banker:497762",
+				},
+				["BladesEdgeMountains"] = {
+					[76076030] = "Innkeeper:Matron Varah:Innkeeper:135304",
+					[53275541] = "Innkeeper:Gholah:Innkeeper:103536",
+					[62813834] = "Innkeeper:Innkeeper Aelerya:Innkeeper:141602",
+					[53905506] = "First Aid:Fera Palerunner:First Aid Trainer:103544",
+					[76836545] = "Leatherworking:Grikka:Leatherworking Trainer:135303",
+				},
+				["Durotar"] = {
+					[52014179] = "Stable:Shoja'my:Stable Master:39303",
+					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
+				},
+				["ValeofEternalBlossoms"] = {
+					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
+				},
+				["Orgrimmar"] = {
+					[67745315] = "Banker:Binzella:Banker:288281",
+					[48788382] = "Banker:Rilgiz:Banker:280658",
+					[48918360] = "Banker:Perixa:Banker:280662",
+					[67305312] = "Banker:Vink:Banker:288288",
+					[67885279] = "Banker:Fibi:Banker:288280",
 				},
 				["Suramar"] = {
 					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
 					[29775383] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
+				},
+				["ShadowmoonValley"] = {
+					[29212942] = "Stable:Gedrah:Stable Master:135990",
+					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
+				},
+				["Netherstorm"] = {
+					[32036441] = "Innkeeper:Innkeeper Remi Dodoso:Innkeeper:103793",
+					[32126483] = "Stable:Liza Cutlerflix:Stable Master:149876",
 				},
 				["Nagrand"] = {
 					[56693457] = "Innkeeper:Matron Tikkit:Innkeeper:100627",

@@ -5,9 +5,9 @@
 -- 5.0.4 has a problem with a global "_" (see some for loops below)
 local _
 
-local Crayon = LibStub("LibCrayon-3.0");
 local FL = LibStub("LibFishing-1.0");
 local LO = LibStub("LibOptionsFrame-1.0");
+local LEW = LibStub("LibEventWindow-1.0");
 
 -- Information for the stylin' fisherman
 local POLES = {
@@ -239,6 +239,13 @@ local CastingOptions = {
 		["m"] = 1,
 		["depends"] = { ["EasyCast"] = "d" },
 		["default"] = false },
+	["AlwaysHat"] = {
+		["text"] = FBConstants.CONFIG_ALWAYSHAT_ONOFF,
+		["tooltip"] = FBConstants.CONFIG_ALWAYSHAT_INFO,
+		["v"] = 1,
+		["m"] = 1,
+		["parents"] = { ["EasyLures"] = "d" },
+		["default"] = true },
 	["AlwaysLure"] = {
 		["text"] = FBConstants.CONFIG_ALWAYSLURE_ONOFF,
 		["tooltip"] = FBConstants.CONFIG_ALWAYSLURE_INFO,
@@ -485,23 +492,61 @@ handlerframe:Hide();
 local reg_events = {};
 local event_handlers = {};
 
-local function AddHandler(evt, func)
-	if ( not event_handlers[evt] ) then
-		event_handlers[evt] = {};
+-- allow other parts of the code to watch for events when not fishing
+local isunit = "UNIT_";
+local function RegisterEvent(event)
+	if ( not reg_events[event] ) then
+		if (string.sub(event, 1, string.len(isunit)) == isunit) then
+			handlerframe:RegisterUnitEvent(event, "player");
+		else
+			handlerframe:RegisterEvent(event);
+		end
+		reg_events[event] = 1;
 	end
-	tinsert(event_handlers[evt], func);
 end
 
-local function RemoveHandler(evt, func)
-	if ( event_handlers[evt] ) then
-		local jdx;
-		for idx,f in ipairs(event_handlers[evt]) do
+local function AddHandler(event, info)
+	local func, fake;
+	if ( not event_handlers[event] ) then
+		event_handlers[event] = {};
+	end
+	fake = IsFakeEvent(event);
+	if ( type(info) == "function" ) then
+		func = info;
+	else
+		func = info.func;
+		fake = fake or info.fake;
+	end
+	tinsert(event_handlers[event], func);
+	if ( not fake ) then
+		-- register the event, if we haven't already
+		RegisterEvent(event);
+	end
+end
+
+local function RemoveHandler(event, info)
+	if ( event_handlers[event] ) then
+		local func;
+		if ( type(info) == "function" ) then
+			func = info;
+		else
+			func = info.func;
+		end
+		local jdx = nil;
+		for idx,f in ipairs(event_handlers[event]) do
 			if ( f == func ) then
 				jdx = idx;
 			end
 		end
-		if ( jdx) then
-			table.remove(event_handlers[evt], jdx);
+		if ( jdx ) then
+			table.remove(event_handlers[event], jdx);
+		end
+		if ( table.getn(event_handlers[event]) == 0 ) then
+			event_handlers[event] = nil;
+			if (reg_events[event]) then
+				reg_events[event] = nil;
+				handlerframe:UnregisterEvent(event);
+			end
 		end
 	end
 end
@@ -512,25 +557,7 @@ local function RegisterHandlers(handlers)
 	end
 
 	for evt,info in pairs(handlers) do
-		local func, fake;
-		if ( not event_handlers[evt] ) then
-			event_handlers[evt] = {};
-		end
-		fake = IsFakeEvent(evt);
-		if ( type(info) == "function" ) then
-			func = info;
-		else
-			func = info.func;
-			fake = fake or info.fake;
-		end
-		tinsert(event_handlers[evt], func);
-		if ( not fake ) then
-			-- register the event, if we haven't already
-			if ( not reg_events[evt] ) then
-				FishingBuddy.RegisterEvent(evt, nil, handlerframe);
-			end
-			reg_events[evt] = 1;
-		end
+		AddHandler(evt, info)
 	end
 end
 -- these should be internal use only, FBAPI has "constant" interfaces
@@ -1261,6 +1288,12 @@ local function GetUpdateLure()
 				else
 					NextLure = nil;
 				end
+				if ( GSB("AlwaysHat")) then
+					local _, hat = FL:FindBestHat()
+					if (hat) then
+						return true, hat['id'], hat['n']
+					end
+				end
 				local DoLure = NextLure;
 				if ( DoLure and DoLure.id ) then
 					-- if the pole has an enchantment, we can assume it's got a lure on it (so far, anyway)
@@ -1846,7 +1879,7 @@ FishingBuddy.TooltipBody = function(hintcheck)
 		else
 			hint = hint..FBConstants.TOOLTIP_HINTTOGGLE;
 		end
-		text = text.."\n"..Crayon:Green(hint);
+		text = text.."\n"..FL:Green(hint);
 	end
 	return text;
 end
@@ -1927,22 +1960,6 @@ end
 local function DumpZoneEvents()
 	FishingBuddy.Dump(ZoneEvents);
 	ZoneEvents = nil;
-end
-
--- Thanks bsmorgan!
-local minRarity = 2;		-- uncommon
-local function SilenceOfTheFishies(self,event,msg,author)
-	if not ReadyForFishing() or author == UnitName("player") or string.match(msg,'Hbattlepet') then
-		return false
-	else
-		local itemID = select(3, string.find(msg, "item:(%d+):"))
-		local itemRarity = select(3, GetItemInfo(itemID))
-		if (itemRarity < minRarity) and (string.find(msg, "receives") or string.find(msg, "gets") or string.find(msg, "creates")) then
-			return true
-		else
-			return false
-		end
-	end
 end
 
 local lootcache = {}
@@ -2142,42 +2159,12 @@ FishingBuddy.OnLoad = function(self)
 
 	RegisterHandlers(CaptureEvents);
 
-	-- Chat filter
-	ChatFrame_AddMessageEventFilter("CHAT_MSG_LOOT", SilenceOfTheFishies)
-
 	-- Set up command
 	SlashCmdList["fishingbuddy"] = FishingBuddy.Command;
 	SLASH_fishingbuddy1 = "/fishingbuddy";
 	SLASH_fishingbuddy2 = "/fb";
 
 	FishingBuddy.Output(FBConstants.WINDOW_TITLE.." loaded");
-end
-
--- allow other parts of the code to watch for events when not fishing
-local isunit = "UNIT_";
-FishingBuddy.RegisterEvent = function(event, handler, frame)
-	frame = frame or FishingBuddyRoot;
-	if (string.sub(event, 1, string.len(isunit)) == isunit) then
-		frame:RegisterUnitEvent(event, "player");
-	else
-		frame:RegisterEvent(event);
-	end
-	if (handler) then
-		AddHandler(event, handler);
-	end
-end
-
-FishingBuddy.UnregisterEvent = function(event, handler)
-	FishingBuddyRoot:UnregisterEvent(event);
-	RemoveHandler(event, handler);
-	if ( event_handlers[event] and table.getn(event_handlers[event]) == 0 ) then
-		event_handlers[event] = nil;
-		FishingBuddyRoot:UnregisterEvent(event);
-		if (reg_events[event]) then
-			reg_events[event] = nil;
-			handlerframe:UnregisterEvent(event);
-		end
-	end
 end
 
 FishingBuddy.PrintHelp = function(tab)

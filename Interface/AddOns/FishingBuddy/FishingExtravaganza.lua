@@ -4,7 +4,6 @@
 
 FishingBuddy.Extravaganza = {};
 
-local Crayon = LibStub("LibCrayon-3.0");
 local FL = LibStub("LibFishing-1.0");
 local LT = LibStub("LibTourist-3.0");
 
@@ -347,7 +346,7 @@ FishingBuddy.Extravaganza.OnUpdate = function(self, elapsed)
 					line = FBConstants.TIMELEFT;
 				end
 				line = line..FBConstants.DASH.." |cff";
-				line = line..Crayon:GetThresholdHexColor(numCaught/40);
+				line = line..FL:GetThresholdHexColor(numCaught/40);
 				line = line..FBConstants.FISHCAUGHT.."|r";
 				contestNow = true;
 			else

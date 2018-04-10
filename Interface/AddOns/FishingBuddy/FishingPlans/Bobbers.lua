@@ -142,9 +142,9 @@ local function UseThisBobber(itemid, info)
         end
     else
         canuse = (GetItemCount(itemid) > 0)
-    end
+	end
     if (canuse and not FL:HasBuff(info.buff)) then
-        return itemid
+        return canuse
     end
 
     -- return nil
@@ -162,19 +162,21 @@ local function unwind(table)
 end
 
 local function SpecialBobberPlan(queue)
-	for id,bobber in pairs(BigBobbers) do
-		if FL:HasBuff(bobber.buff) then
-			return
-		end
+	if GSB(BigBobbers[136377].setting) then
+		for id,bobber in pairs(BigBobbers) do
+			if FL:HasBuff(bobber.buff) then
+				return
+			end
 
-		if UseThisBobber(id, bobber) then
-			ClearSpecialBobberBuffs()
-			tinsert(queue, {
-				["itemid"] = id,
-				["name"] = bobber[CurLoc],
-				["targetid"] = nil
-			})
-			return
+			if UseThisBobber(id, bobber) then
+				ClearSpecialBobberBuffs()
+				tinsert(queue, {
+					["itemid"] = id,
+					["name"] = bobber[CurLoc],
+					["targetid"] = nil
+				})
+				return
+			end
 		end
 	end
 
@@ -191,7 +193,7 @@ local function SpecialBobberPlan(queue)
 				["itemid"] = itemid,
 				["targetid"] = nil
 			})
-			end
+		end
 	end
 end
 

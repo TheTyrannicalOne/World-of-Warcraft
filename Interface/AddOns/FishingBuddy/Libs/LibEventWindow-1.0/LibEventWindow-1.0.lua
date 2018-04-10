@@ -16,17 +16,51 @@ if not EventLib then
 	return
 end
 
+local metatable = {
+	__call = function(methods, ...)
+		for _, method in next, methods do
+			method(...)
+		end
+	end
+}
+
 local copyfuncs = {};
-function EventLib:Register(event, method, override)
+function EventLib:Register(event, method)
 	local methods = self[event]
-	if(methods) then
-		self[event] = setmetatable({methods, newmethod or method}, metatable)
+	if (methods) then
+		self[event] = setmetatable({methods, method}, metatable)
 	else
-		self[event] = method
+		self[event] = setmetatable({method}, metatable)
 		self:RegisterEvent(event)
 	end
 end
 tinsert(copyfuncs, "Register");
+
+function EventLib:UnRegister(event, method)
+	local methods = self[event]
+	if (methods) then
+		local jdx;
+		for idx,f in ipairs(self[event]) do
+			if ( f == func ) then
+				jdx = idx;
+			end
+		end
+		if ( jdx) then
+			table.remove(self[event], jdx);
+		end
+	end
+end
+tinsert(copyfuncs, "UnRegister");
+
+function EventLib:PreEvent(method)
+	self.preevent = method
+end
+tinsert(copyfuncs, "PreEvent");
+
+function EventLib:PostEvent(method)
+	self.postevent = method
+end
+tinsert(copyfuncs, "PostEvent");
 
 function EventLib:Embed(target)
 	for _,name in pairs(copyfuncs) do
@@ -36,7 +70,15 @@ end
 
 function EventLib:CreateWindow()
     local frame = CreateFrame('Frame')
-    frame:SetScript('OnEvent', function(self, event, ...) self[event](...) end)
+	frame:SetScript('OnEvent', function(self, event, ...)
+		if self.preevent then
+			self:preevent(event, ...)
+		end
+		self[event](...)
+		if self.postevent then
+			self:postevent(event, ...)
+		end
+	end)
     frame:Hide();
 
     EventLib:Embed(frame)

@@ -7,7 +7,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 --]]
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 90984
+local MINOR_VERSION = 90986
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -25,7 +25,6 @@ end
 -- 5.0.4 has a problem with a global "_" (see some for loops below)
 local _
 
-local Crayon = LibStub("LibCrayon-3.0");
 local LT = LibStub("LibTourist-3.0");
 
 -- Secure action button
@@ -101,7 +100,7 @@ end
 -- Lure library
 local DRAENOR_HATS = {
 	["118393"] =  {
-		["n"] = "Tentacled Hat",
+		["enUS"] = "Tentacled Hat",
 		["b"] = 100,
 		["spell"] = 174479,
 	},
@@ -252,8 +251,16 @@ local FISHINGLURES = {
 	}
 }
 
+local FISHINGHATS = {}
 for _,info in ipairs(NATS_HATS) do
 	tinsert(FISHINGLURES, info)
+	tinsert(FISHINGHATS, info)
+end
+
+for id,info in ipairs(DRAENOR_HATS) do
+	info["id"] = id
+	info["n"] = info["enUS"]
+	tinsert(FISHINGHATS, info)
 end
 
 for _,info in ipairs(FISHINGLURES) do
@@ -270,6 +277,13 @@ table.sort(FISHINGLURES,
 			return a.b < b.b;
 		end
 	end);
+
+table.sort(FISHINGHATS,
+function(a,b)
+	return a.b > b.b;
+end);
+
+
 
 function FishLib:GetLureTable()
 	return FISHINGLURES;
@@ -473,6 +487,17 @@ function FishLib:FindBestLure(b, state, usedrinks, forcemax)
 		end
 	end
 	-- return nil;
+end
+
+function FishLib:FindBestHat()
+	for _,hat in ipairs(FISHINGHATS) do
+		if GetItemCount(hat["id"]) > 0 then
+			local startTime, _, _ = GetItemCooldown(hat["id"]);
+			if ( startTime == 0 ) then
+				return 1, hat;
+			end
+		end
+	end
 end
 
 -- Handle events we care about
@@ -763,9 +788,9 @@ end
 function FishLib:ChatLink(item, name, color)
 	if( item and name and ChatFrameEditBox:IsVisible() ) then
 		if ( not color ) then
-			color = Crayon.COLOR_HEX_WHITE;
-		elseif ( Crayon["COLOR_HEX_"..color] ) then
-			color = Crayon["COLOR_HEX_"..color];
+			color = self.COLOR_HEX_WHITE;
+		elseif ( self["COLOR_HEX_"..color] ) then
+			color = self["COLOR_HEX_"..color];
 		end
 		if ( string.len(color) == 6) then
 			color = "ff"..color;
@@ -1192,21 +1217,21 @@ function FishLib:GetFishingSkillLine(join, withzone, isfishing)
 			if (perc > 1.0) then
 				perc = 1.0;
 			end
-			part1 = part1.."|cff"..Crayon:GetThresholdHexColor(perc*perc)..level.." ("..math.floor(perc*perc*100).."%)|r";
+			part1 = part1.."|cff"..self:GetThresholdHexColor(perc*perc)..level.." ("..math.floor(perc*perc*100).."%)|r";
 		else
 			-- need to translate this on our own
-			part1 = part1..Crayon:Red(NONE_KEY);
+			part1 = part1..self:Red(NONE_KEY);
 		end
 	else
-		part1 = part1..Crayon:Red(UNKNOWN);
+		part1 = part1..self:Red(UNKNOWN);
 	end
 	-- have some more details if we've got a pole equipped
 	if ( isfishing or self:IsFishingGear() ) then
-		part2 = Crayon:Green(skill.."+"..mods).." "..Crayon:Silver("["..totskill.."]");
+		part2 = self:Green(skill.."+"..mods).." "..self:Silver("["..totskill.."]");
 	end
 	if ( join ) then
 		if (part1 ~= "" and part2 ~= "" ) then
-			part1 = part1..Crayon:White(" | ")..part2;
+			part1 = part1..self:White(" | ")..part2;
 			part2 = "";
 		end
 	end
@@ -1872,6 +1897,111 @@ function FishLib:GetCurrentPlayerPosition()
 	return lC, lZ, x, y;
 end
 
+-- Functions from LibCrayon, since somehow it's crashing some people
+FishLib.COLOR_HEX_RED       = "ff0000"
+FishLib.COLOR_HEX_ORANGE    = "ff7f00"
+FishLib.COLOR_HEX_YELLOW    = "ffff00"
+FishLib.COLOR_HEX_GREEN     = "00ff00"
+FishLib.COLOR_HEX_WHITE     = "ffffff"
+FishLib.COLOR_HEX_COPPER    = "eda55f"
+FishLib.COLOR_HEX_SILVER    = "c7c7cf"
+FishLib.COLOR_HEX_GOLD      = "ffd700"
+FishLib.COLOR_HEX_PURPLE    = "9980CC"
+FishLib.COLOR_HEX_BLUE	   = "0000ff"
+FishLib.COLOR_HEX_CYAN	   = "00ffff"
+FishLib.COLOR_HEX_BLACK	   = "000000"
+
+function FishLib:Colorize(hexColor, text)
+	return "|cff" .. tostring(hexColor or 'ffffff') .. tostring(text) .. "|r"
+end
+function FishLib:Red(text) return self:Colorize(self.COLOR_HEX_RED, text) end
+function FishLib:Orange(text) return self:Colorize(self.COLOR_HEX_ORANGE, text) end
+function FishLib:Yellow(text) return self:Colorize(self.COLOR_HEX_YELLOW, text) end
+function FishLib:Green(text) return self:Colorize(self.COLOR_HEX_GREEN, text) end
+function FishLib:White(text) return self:Colorize(self.COLOR_HEX_WHITE, text) end
+function FishLib:Copper(text) return self:Colorize(self.COLOR_HEX_COPPER, text) end
+function FishLib:Silver(text) return self:Colorize(self.COLOR_HEX_SILVER, text) end
+function FishLib:Gold(text) return self:Colorize(self.COLOR_HEX_GOLD, text) end
+function FishLib:Purple(text) return self:Colorize(self.COLOR_HEX_PURPLE, text) end
+function FishLib:Blue(text) return self:Colorize(self.COLOR_HEX_BLUE, text) end
+function FishLib:Cyan(text) return self:Colorize(self.COLOR_HEX_CYAN, text) end
+function FishLib:Black(text) return self:Colorize(self.COLOR_HEX_BLACK, text) end
+
+local inf = math.huge
+
+local function GetThresholdPercentage(quality, ...)
+	local n = select('#', ...)
+	if n <= 1 then
+		return GetThresholdPercentage(quality, 0, ... or 1)
+	end
+
+	local worst = ...
+	local best = select(n, ...)
+
+	if worst == best and quality == worst then
+		return 0.5
+	end
+
+	if worst <= best then
+		if quality <= worst then
+			return 0
+		elseif quality >= best then
+			return 1
+		end
+		local last = worst
+		for i = 2, n-1 do
+			local value = select(i, ...)
+			if quality <= value then
+				return ((i-2) + (quality - last) / (value - last)) / (n-1)
+			end
+			last = value
+		end
+
+		local value = select(n, ...)
+		return ((n-2) + (quality - last) / (value - last)) / (n-1)
+	else
+		if quality >= worst then
+			return 0
+		elseif quality <= best then
+			return 1
+		end
+		local last = worst
+		for i = 2, n-1 do
+			local value = select(i, ...)
+			if quality >= value then
+				return ((i-2) + (quality - last) / (value - last)) / (n-1)
+			end
+			last = value
+		end
+
+		local value = select(n, ...)
+		return ((n-2) + (quality - last) / (value - last)) / (n-1)
+	end
+end
+
+function FishLib:GetThresholdColor(quality, ...)
+	if quality ~= quality or quality == inf or quality == -inf then
+		return 1, 1, 1
+	end
+
+	local percent = GetThresholdPercentage(quality, ...)
+
+	if percent <= 0 then
+		return 1, 0, 0
+	elseif percent <= 0.5 then
+		return 1, percent*2, 0
+	elseif percent >= 1 then
+		return 0, 1, 0
+	else
+		return 2 - percent*2, 1, 0
+	end
+end
+
+function FishLib:GetThresholdHexColor(quality, ...)
+	local r, g, b = self:GetThresholdColor(quality, ...)
+	return string.format("%02x%02x%02x", r*255, g*255, b*255)
+end
+
 -- translation support functions
 -- replace #KEYWORD# with the value of keyword (which might be a color)
 local function FixupThis(target, tag, what)
@@ -1893,10 +2023,10 @@ local function FixupThis(target, tag, what)
 				local s2 = strsub(what, e+1);
 				what = s1..target[w]..s2;
 				s,e,w = string.find(what, pattern);
-			elseif ( Crayon and Crayon["COLOR_HEX_"..w] ) then
+			elseif ( FishLib["COLOR_HEX_"..w] ) then
 				local s1 = strsub(what, 1, s-1);
 				local s2 = strsub(what, e+1);
-				what = s1.."ff"..Crayon["COLOR_HEX_"..w]..s2;
+				what = s1.."ff"..FishLib["COLOR_HEX_"..w]..s2;
 				s,e,w = string.find(what, pattern);
 			else
 				-- stop if we can't find something to replace it with

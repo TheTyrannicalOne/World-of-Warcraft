@@ -1,9 +1,10 @@
 local mod	= DBM:NewMod("CoSTrash", "DBM-Party-Legion", 7)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17418 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17436 $"):sub(12, -3))
 --mod:SetModelID(47785)
 mod:SetZone()
+mod:SetOOCBWComms()
 
 mod.isTrashMod = true
 
@@ -250,11 +251,12 @@ do
 			self:ResetGossipState()
 		end
 	end
-	function mod:OnBWSync(msg)
-		msg = tonumber(msg)
-		if msg and msg > 0 and msg < 15 then
-			DBM:Debug("Recieved BigWigs Comm:"..msg)
-			local bwClue = bwClues[msg]
+	function mod:OnBWSync(msg, extra)
+		if msg ~= "clue" then return end
+		extra = tonumber(extra)
+		if extra and extra > 0 and extra < 15 then
+			DBM:Debug("Recieved BigWigs Comm:"..extra)
+			local bwClue = bwClues[extra]
 			hints[bwClue] = true
 			DBM.InfoFrame:Show(5, "function", updateInfoFrame)
 		end

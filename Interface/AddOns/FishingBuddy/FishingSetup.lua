@@ -2,7 +2,7 @@
 --
 -- Load out translation strings and such
 
-local Crayon = LibStub("LibCrayon-3.0");
+local FL = LibStub("LibFishing-1.0");
 
 FBConstants = {};
 
@@ -36,7 +36,7 @@ FishingBuddy.Output = function(msg, r, g, b)
 end
 
 FishingBuddy.Message = function(msg, r, g, b)
-	FishingBuddy.Output(Crayon:Green(FBConstants.NAME)..": "..msg, r, g, b);
+	FishingBuddy.Output(FL:Green(FBConstants.NAME)..": "..msg, r, g, b);
 end
 
 FishingBuddy.Error = function(msg)

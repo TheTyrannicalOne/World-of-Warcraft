@@ -1,6 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
-	<Button name="FishingActionButton" enableMouse="true" inherits="SecureActionButtonTemplate, SecureHandlerStateTemplate, SecureHandlerAttributeTemplate" parentKey="button">
+	<Button name="FishingActionButton" parent="MainMenuBar" enableMouse="true" inherits="SecureActionButtonTemplate, SecureHandlerStateTemplate, SecureHandlerAttributeTemplate">
+		<Size x="52" y="52"/>
 		<Animations>
 			<AnimationGroup parentKey="Intro">
 				<Alpha fromAlpha="0" toAlpha="1" duration="0.3" order="1"/>

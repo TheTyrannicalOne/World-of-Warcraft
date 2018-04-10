@@ -1,101 +1,88 @@
-Changes since tag 7.3.25
+Changes since tag 7.3.26
 
-commit aa1d740255b8c1c0ca43c42a1bda37eca449999f
+commit 496e9470e92e45aed99380db21a624b6a533250f
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 28 16:39:46 2018 +0200
+Date:   Tue Apr 10 04:38:36 2018 +0200
 
-    Omega via svn r17418:
-    Es update
+    Omega via svn r17437:
+    Zekvhozj drycode
 
-commit ba31165058f432405d5a60b39732af7b5907cb50
+commit b876eb93b3608e38120baefa5ca0b6bcf8905afc
 Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Mar 26 04:09:10 2018 +0200
+Date:   Mon Apr 9 22:01:26 2018 +0200
 
-    Omega via svn r17417:
-    Add taloc stub
-    Rename titan discs stub
+    Omega via svn r17436:
+    Fix another bug causing BW comms not to work in court of stars trash mod
 
-commit 92de292369278a6f489a58bcd03de69091094cda
+commit 32648148aec0bc42fdbd617082d34b3168d0618a
 Author: subversion <svn@deadlybossmods.com>
-Date:   Mon Mar 26 03:42:51 2018 +0200
+Date:   Mon Apr 9 10:00:02 2018 +0200
 
-    Omega via svn r17416:
-    Rename Undermine to Motherload
+    Omega via svn r17435:
+    Health based, disable timer
 
-commit dc1eb5b14ce2895eb2c6501886ef93f11d5e8223
+commit 589e60b71214d54f9c7149665246e2316bd07bf3
 Author: subversion <svn@deadlybossmods.com>
-Date:   Sun Mar 25 21:43:34 2018 +0200
+Date:   Sat Apr 7 06:50:45 2018 +0200
 
-    Omega via svn r17415:
-    Disable boss to beam in LFR, there is no add in LFR
+    Omega via svn r17434:
+    Adjust antispam more on this
 
-commit a03a9f3011c8ce7058446447dc65a3a5b6f7e65c
+commit f9611f7af329a0a802ef89e56d0fbe3487887183
 Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 17 21:08:17 2018 +0100
+Date:   Fri Apr 6 21:06:44 2018 +0200
 
-    Omega via svn r17414:
-    Add cosmic beacon cast warning, and improved visibility of interrupt timer (by actually making it an interrupt timer)
+    Omega via svn r17433:
+    Handle addons that user hide before show when updating arrow location
 
-commit 9703c1531ece55eead9f79f7eeee3f26d3aab5a7
+commit 6e463149130154fb1a9429c622c302f14b253887
 Author: subversion <svn@deadlybossmods.com>
-Date:   Sat Mar 17 06:58:42 2018 +0100
+Date:   Thu Apr 5 22:09:05 2018 +0200
 
-    Omega via svn r17413:
-    update VC
+    Omega via svn r17432:
+    Use regular GetSpellInto in these two conditions
 
-commit 38d1788599c341d6eb1173e37fbb03d08f50e3f3
+commit 69c84af4e221a158486e04b0496c0a68ecee9bc6
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Mar 15 20:59:34 2018 +0100
+Date:   Thu Apr 5 00:55:47 2018 +0200
 
-    Omega via svn r17412:
-    Add counter to collapsing world
+    Omega via svn r17431:
+    Simplify async stuff since GetSpellInfo now returns spellname at all times, and it?\226?\128?\153s just description that is queued
 
-commit 0c8ddceb143101691c96f37fa0ac36b5a9f27860
+commit 3a7ccbca2b60015090b2bb0cf7dbe43b63c65e00
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 14 07:06:08 2018 +0100
+Date:   Wed Apr 4 06:35:55 2018 +0200
 
-    Omega via svn r17411:
-    Shorten. thought I had already done this
+    Omega via svn r17430:
+    Add zul, rename Mythrax
+    Fix encounter/dungeon journal IDs
+    Updated Loading
 
-commit 684c23471263df035f8008501c9aa8e7ebebad23
+commit 00d73df3baab12d23de5822a8387b1ba5a4aea42
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 14 03:09:48 2018 +0100
+Date:   Wed Apr 4 06:07:23 2018 +0200
 
-    Omega via svn r17410:
-    Revert last
+    Omega via svn r17429:
+    More 8.x drycode fixes. unable to really test more right now
 
-commit 44e92b214e97b13cc714576930b23da75909ab98
+commit 67ee61ebfb327cda3bbfed7a0534ee4554dac184
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 14 02:57:14 2018 +0100
+Date:   Wed Apr 4 05:23:46 2018 +0200
 
-    Omega via svn r17409:
-    Another fix
+    Omega via svn r17428:
+    Some 8.x drycode fixes. unable to really test more right now
 
-commit ea9267ba49c4b49e57b49f86dc356d46c8f3a9fb
+commit 0737880cd8c0a1b2c6c75d8e2de476aa688ffa78
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 14 02:52:15 2018 +0100
+Date:   Wed Apr 4 04:59:50 2018 +0200
 
-    Omega via svn r17408:
-    Handle fact ready checks screw with music
+    Omega via svn r17427:
+    CN update
 
-commit 2e81489b4e458fec439b8cb2eed740342efa45f1
+commit d686f6fedefa8aac47d2be215f2dfc0ceb9dac59
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 14 02:20:03 2018 +0100
+Date:   Tue Apr 3 22:43:29 2018 +0200
 
-    Omega via svn r17407:
-    Fix bug with checkbox
-
-commit afbbca4d2c217a4718a4b7fe0a6ed0ffbde5d000
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 14 02:10:23 2018 +0100
-
-    Omega via svn r17406:
-    GUI tweak
-
-commit 9efe7d8d6cd647d5a6ce18d9de4e0276142069d4
-Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Mar 14 01:47:54 2018 +0100
-
-    tandanu via svn r17405:
+    tandanu via svn r17426:
     increment alpha version
 

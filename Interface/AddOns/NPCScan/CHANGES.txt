@@ -1,10 +1,10 @@
-tag 76cf862c1d84aa7b6b8bc80bd0a69cbfe3934fa7 7.3.5.3
-Author:	Telshin <aldrt@twitch.tv>
-Date:	Fri Feb 23 18:46:56 2018 -0800
+tag 2acd2aa7de127413168b42b7806653dd4d29dccc 7.3.5.7
+Author:	James D. Callahan III <jcallahan@curse.com>
+Date:	Tue Apr 10 07:40:40 2018 -0500
 
-commit c11d617ae2766bdb9dd686ae20528f0ee2b40f71
+commit bfda9b46383a63eea10b536ed3fc99cd2af0cb37
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Oct 27 03:59:26 2017 -0500
+Date:   Tue Apr 10 06:57:42 2018 -0500
 
-    Do not alert on NPCs from the World Map if they have no associated quest - fixes https://www.wowace.com/projects/npcscan/issues/188
+    Give Archmagus Tekar and Soulbinder Naylana the same questID as Strategist Ankor. Both are required for Ankor's Cut off the Head achievement criteria, but neither are tracked individually by Blizzard.
 

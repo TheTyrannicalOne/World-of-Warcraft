@@ -1,7 +1,6 @@
 -- Manage outfits, whether they're from OutfitDisplayFrame or something else
 FishingBuddy.OutfitManager = {};
 
-local Crayon = LibStub("LibCrayon-3.0");
 local FL = LibStub("LibFishing-1.0");
 local FBAPI = LibStub("FishingBuddyApi-1.0");
 
@@ -131,13 +130,13 @@ end
 local function SetOutfitManagerDisplay()
 	if ( OutfitManagerCount == 0 ) then
 		OutfitManagerFrame.menu:Hide();
-		OutfitManagerFrame.html:SetText(FBConstants.OUTFITS..": "..Crayon:Red(FBConstants.NONEAVAILABLE_MSG));
+		OutfitManagerFrame.html:SetText(FBConstants.OUTFITS..": "..FL:Red(FBConstants.NONEAVAILABLE_MSG));
 		OutfitManagerFrame.html:Show();
 		OutfitManagerFrame:SetWidth(OutfitManagerFrame.html:GetWidth());
 		OutfitManagerFrame:SetHeight(OutfitManagerFrame.html:GetHeight());
 	elseif ( OutfitManagerCount == 1 ) then
 		OutfitManagerFrame.menu:Hide();
-		OutfitManagerFrame.html:SetText(FBConstants.OUTFITS..": "..Crayon:Green(current_manager));
+		OutfitManagerFrame.html:SetText(FBConstants.OUTFITS..": "..FL:Green(current_manager));
 		OutfitManagerFrame.html:Show();
 		OutfitManagerFrame:SetWidth(OutfitManagerFrame.html:GetWidth());
 		OutfitManagerFrame:SetHeight(OutfitManagerFrame.html:GetHeight());

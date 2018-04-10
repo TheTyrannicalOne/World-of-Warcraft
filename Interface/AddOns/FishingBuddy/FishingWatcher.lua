@@ -17,7 +17,6 @@ local zmex = FishingBuddy.ZoneMarkerEx;
 local ZoneFishingTime = 0;
 local TotalTimeFishing = nil;
 
-local Crayon = LibStub("LibCrayon-3.0");
 local FL = LibStub("LibFishing-1.0");
 local LT = LibStub("LibTourist-3.0");
 local LW = LibStub("LibWindow-1.1");
@@ -156,17 +155,17 @@ function FWF:ColorInfoString(info, name, count)
 	end
 
 	if (info.color) then
-		name = Crayon:Colorize(info.color, name);
+		name = FL:Colorize(info.color, name);
 	elseif (info.getcolor) then
-		name = Crayon:Colorize(info.getcolor(), name);
+		name = FL:Colorize(info.getcolor(), name);
 	elseif (info.limit) then
-		local color = Crayon:GetThresholdHexColor(count, info.limit, info.limit / 5);
+		local color = FL:GetThresholdHexColor(count, info.limit, info.limit / 5);
 		name = name.." ("..count.."/"..info.limit..")"
-		name = Crayon:Colorize(color, name);
+		name = FL:Colorize(color, name);
 	elseif (not info.quest or IsUnitOnQuest(info.quest, "player")) then
-		name = Crayon:Green(name);
+		name = FL:Green(name);
 	else
-		name = Crayon:Red(name);
+		name = FL:Red(name);
 	end
 
 	return name
@@ -194,7 +193,7 @@ function FWF:DisplayFishLine(fish, label, area)
 		end
 	end
 	if (not line) then
-		line = Crayon:Yellow(NONE);
+		line = FL:Yellow(NONE);
 	end
 	if not string.find(label, ':') then
 		line = ": "..line;
@@ -618,9 +617,9 @@ function DisplayFishingWorldQuests()
 						if ( tradeskillLineIndex == fish ) then
 							local title, factionID, capped = C_TaskQuest.GetQuestInfoByQuestID(questID);
 							if (questdone[title]) then
-								title = Crayon:Green(title);
+								title = FL:Green(title);
 							else
-								title = Crayon:Red(title);
+								title = FL:Red(title);
 							end
 							if (line) then
 								line = line..", "..title;
@@ -634,7 +633,7 @@ function DisplayFishingWorldQuests()
 		end
 	end
 	if (not line) then
-		line = Crayon:Yellow(NONE);
+		line = FL:Yellow(NONE);
 	end
 	return TRACKER_HEADER_WORLD_QUESTS..": "..line;
 end
@@ -700,13 +699,13 @@ local function UpdateTotalsLine()
 		local totalpart = ": "..totalCount;
 		local line;
 		if ( gotDiffs ) then
-			line = FBConstants.TOTALS..totalpart.." "..Crayon:Green("("..totalCurrent..")");
+			line = FBConstants.TOTALS..totalpart.." "..FL:Green("("..totalCurrent..")");
 		else
 			line = FBConstants.TOTAL..totalpart;
 		end
 		if ( GSB("WatchCurrentSkill") ) then
 			local _, playerskill = FL:GetFishingSkillLine(false, true, true);
-			line = line..Crayon:White(" | ")..CHAT_MSG_SKILL..": "..playerskill;
+			line = line..FL:White(" | ")..CHAT_MSG_SKILL..": "..playerskill;
 			local caughtSoFar, needed = FL:GetSkillUpInfo();
 			if ( needed ) then
 				line = line.." ("..caughtSoFar.."/~"..needed..")";
@@ -736,17 +735,17 @@ local function UpdateFishieEntry(info)
 		if ( info.quest ) then
 			fishietext = fishietext.." ("..amount..")";
 		else
-			fishietext = Crayon:Copper(fishietext.." ("..amount..")");
+			fishietext = FL:Copper(fishietext.." ("..amount..")");
 		end
 	else
 		if ( info.quality and ITEM_QUALITY_COLORS[info.quality] ) then
 			fishietext = ITEM_QUALITY_COLORS[info.quality].hex..fishietext.."|r ";
 		else
-			fishietext = Crayon:Red(fishietext.." ");
+			fishietext = FL:Red(fishietext.." ");
 		end
 
-		local white = "|cff"..Crayon.COLOR_HEX_WHITE;
-		local silver = "|cff"..Crayon.COLOR_HEX_SILVER;
+		local white = "|cff"..FL.COLOR_HEX_WHITE;
+		local silver = "|cff"..FL.COLOR_HEX_SILVER;
 		local color1, color2;
 		if ( gotDiffs ) then
 			color1 = silver;

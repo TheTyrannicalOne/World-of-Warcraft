@@ -13,16 +13,18 @@ local IsShiftKeyDown = IsShiftKeyDown;
 
 local EditBoxes = {};
 
+local readOnlyEditBoxes = {};
+
 ---@param editBox EditBox|ScriptObject
 local function saveEditBoxOriginalText(editBox)
-	if editBox.readOnly then
+	if readOnlyEditBoxes[editBox] then
 		editBox.originalText = editBox:GetText();
 	end
 end
 
 ---@param editBox EditBox|ScriptObject
 local function restoreOriginalText(editBox, userInput)
-	if userInput and editBox.readOnly then
+	if userInput and readOnlyEditBoxes[editBox] then
 		editBox:SetText(editBox.originalText);
 	end
 end
@@ -30,7 +32,7 @@ end
 ---@param editBox EditBox|ScriptObject
 function EditBoxes.makeReadOnly(editBox)
 
-	editBox.readOnly = true;
+	readOnlyEditBoxes[editBox] = true;
 
 	editBox:HookScript("OnShow", saveEditBoxOriginalText);
 
@@ -56,7 +58,7 @@ function EditBoxes.setupTabKeyNavigation(...)
 	local maxBound = #editBoxes;
 	local minBound = 1;
 	for index, editbox in pairs(editBoxes) do
-		editbox:SetScript("OnTabPressed", function(self, button)
+		editbox:HookScript("OnTabPressed", function(self, button)
 			local cursor = index
 			if IsShiftKeyDown() then
 				if cursor == minBound then

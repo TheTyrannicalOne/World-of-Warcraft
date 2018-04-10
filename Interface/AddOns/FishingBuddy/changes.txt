@@ -1,4 +1,15 @@
-﻿Version 1.8.3
+﻿Version 1.8.4.1
+- Fix raid filtering function (Curse bug #314)
+- Oversized bobbers should work now (Curse bug #311)
+- Remove abandoned LibCrayon (Curse bug #310)
+
+Version 1.8.4
+- Make the extra action button prettier
+- Fix the "Fishing Raid" of the day code so that it actually does that
+- Wear the damned hat! (Curse issue #312)
+- Clean up event handling code so that it's internally consistent (part of the "Better Code for Tomorrow (tm)" effort)
+
+Version 1.8.3
 - Raid Support: Filter loot when in a raid
 - Raid Support: Display today's FisherFriend boss
 - Raid Support: Extra action button when you get the special item

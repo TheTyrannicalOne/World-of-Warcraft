@@ -250,6 +250,7 @@ VL["Seek & Destroy Squad"] = true
 VL["Seersei"] = true
 VL["Sekhan"] = true
 VL["Selia, Master of Balefire"] = true       -- The NPC isn't in the game (yet?). Quest ID 42698
+VL["Seemingly Unguarded Treasure"] = true
 VL["Shadowflame Terror"] = true
 VL["Shadowmoon Cultist Ritual"] = true
 VL["Shadowquill"] = true
@@ -268,6 +269,7 @@ VL["Slumbering Bear"] = true
 VL["Soulfang"] = true
 VL["Soulthirster"] = true
 VL["Starbuck"] = true
+VL["Stingtail Nest"] = true
 VL["Stomper Kreego"] = true
 VL["Stoneshard Broodmother"] = true
 VL["Stormwing Matriarch"] = true
@@ -297,6 +299,7 @@ VL["Trecherous Stallions"] = true
 
 VL["Unbound Rift"] = true
 VL["Undgrell Attack"] = true
+VL["Unguarded Thistleleaf Treasure"] = true
 VL["Urgev the Flayer"] = true
 
 VL["Valiyaka the Stormbringer"] = true

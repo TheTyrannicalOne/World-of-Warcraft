@@ -22,8 +22,9 @@ Storyline_Data = {
 		},
 		["forceGossip"] = false,
 		["width"] = 700,
-		["debug"] = false,
+		["seriousBusiness"] = true,
 		["autoEquip"] = false,
+		["debug"] = false,
 		["lockFrame"] = true,
 		["height"] = 450,
 		["DialogOptions"] = {

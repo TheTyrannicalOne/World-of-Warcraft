@@ -158,6 +158,8 @@ FishingTranslations["enUS"] = {
 
 	CONFIG_EASYLURES_ONOFF	 = "Easy Lures",
 	CONFIG_EASYLURES_INFO	 = "If enabled, a lure will applied to your fishing pole before you start fishing, whenever you need one.",
+	CONFIG_ALWAYSHAT_ONOFF	  = "Use hats",
+	CONFIG_ALWAYSHAT_INFO	  = "If enabled, just use the damned hat (even if you don't need it).",
 	CONFIG_ALWAYSLURE_ONOFF	  = "Always Lure",
 	CONFIG_ALWAYSLURE_INFO	  = "If enabled, put a lure on every time the pole doesn't have one.",
 	CONFIG_LASTRESORT_ONOFF   = "Lure of last resort",
@@ -204,7 +206,7 @@ FishingTranslations["enUS"] = {
 	CONFIG_FILTERRAIDLOOT_INFO = "If enabled, low level loot in a fishing raid is filtered.",
 	CONFIG_RAIDACTION_ONOFF	   = "Action Button",
 	CONFIG_RAIDACTION_INFO     = "If enabled, show an action button when the special item is in inventory.",
-	CONFIG_RAIDWATCH_ONOFF     = "Watch currecny",
+	CONFIG_RAIDWATCH_ONOFF     = "Watch currency",
 	CONFIG_RAIDWATCH_INFO      = "If enabled, the Fish Watcher will show the currency fish for this raid boss.",
 
 	CONFIG_AUTOOPEN_ONOFF	  = "Open quest items",

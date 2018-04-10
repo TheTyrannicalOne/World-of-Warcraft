@@ -2,11 +2,17 @@ local AddOnName = ...;
 
 -- Lua imports
 local pairs = pairs;
+local assert = assert;
 
-local VERSION_NUMBER = 1.3;
+local VERSION_NUMBER = 1.8;
 local DEBUG_MODE = true;
 local instances = {};
 local addonVersions = {};
+
+local ERROR_MODULE_ALREADY_DECLARED = [[Trying to add an Ellyb module that has already been declared before: "%s"]];
+
+-- Used to securely store modules and to be checked when trying to override existing modules
+local EllybModulesProxyTables = {};
 
 ---@class Ellyb
 local Ellyb = setmetatable({}, {
@@ -15,8 +21,18 @@ local Ellyb = setmetatable({}, {
 	---@param self Ellyb
 	__call = function(self, addOnName)
 		return self:GetInstance(addOnName);
-	end
+	end,
 
+	__index = function(self, key)
+		return EllybModulesProxyTables[key];
+	end,
+
+	--- Prevent overriding existing modules (we might handle that better in the future)
+	__newindex = function(self, key, value)
+		-- assert(not EllybModulesProxyTables[key], ERROR_MODULE_ALREADY_DECLARED:format(key));
+
+		EllybModulesProxyTables[key] = value;
+	end
 });
 
 ---Returns the version number of this instance of the library
@@ -57,7 +73,7 @@ end
 ---@return Ellyb Ellyb @ Returns the most up to date version of Ellyb from all the registered instances
 function Ellyb:GetMostUpToDateVersion()
 	---@type Ellyb
-	local mostUpToDateInstance;
+	local mostUpToDateInstance = self;
 	for _, instance in pairs(instances) do
 		if not mostUpToDateInstance or mostUpToDateInstance:GetVersionNumber() < instance:GetVersionNumber() then
 			mostUpToDateInstance = instance;
@@ -83,12 +99,19 @@ function Ellyb:_GetInstances()
 	return instances;
 end
 
+function Ellyb:_GetAddonVersions()
+	return addonVersions;
+end
+
 ---Internal function necessary for versioning. Do not use.
 ---Will import all instances from a previous global version of the library into our current version
 ---that will be the new global library
 function Ellyb:_ImportInstances(EllybInstance)
 	for k, v in pairs(EllybInstance:_GetInstances()) do
 		instances[k] = v;
+	end
+	for k, v in pairs(EllybInstance:_GetAddonVersions()) do
+		addonVersions[k] = v;
 	end
 end
 

@@ -163,23 +163,31 @@ local RaidBosses = {
 local lastday = 0
 local bossadex = 0
 local function CurrentBoss()
-	local _, _, day, _ = CalendarGetDate()
-	if day ~= lastday then
-		local month, year, numdays, firstday = CalendarGetMonth()
-		
-		local startyear = 2018
-		local startmonth = 1
-		
-		local minus = startmonth - month + (startyear - year) * 12
-		local days = day
-		for offset=minus,-1 do
-			local _, _, n, _ = CalendarGetMonth(offset)
-			days = days + n
+	local zone, subzone = FL:GetZoneInfo();
+
+	if subzone == "Margoss's Retreat" then
+		return RaidBosses[7]
+	else
+		local _, _, today, _ = CalendarGetDate()
+		if today ~= lastday then
+			local month, year, numdays, firstday = CalendarGetMonth()
+
+			local startyear = 2018
+			local startmonth = 1
+			local firstboss = 1
+
+			local minus = startmonth - month + (startyear - year) * 12
+			local days = firstboss
+			for offset=minus,-1 do
+				local _, _, n, _ = CalendarGetMonth(offset)
+				days = days + n
+			end
+			days = days + today
+			bossadex = (days % 6) + 1
 		end
-		bossadex = (days % 6) + 1
-	end
-	if bossadex > 0 then
-		return RaidBosses[bossadex]
+		if bossadex > 0 then
+			return RaidBosses[bossadex]
+		end
 	end
 end
 
@@ -247,7 +255,7 @@ tinsert(copyfuncs, "BAG_UPDATE_COOLDOWN");
 
 function FBR:BAG_UPDATE_DELAYED()
 	self:Update()
-	if(self:IsShown()) then
+	if (self:IsShown()) then
 		local count = GetItemCount(self.itemLink)
 		self.Count:SetText(count and count > 1 and count or '')
 	end
@@ -345,13 +353,19 @@ function FBR:Update()
 			if numItems > 0 then
 				local _, itemLink, _, _, _, _, _, _, texture, _, _ = FL:GetItemInfo(fishid);
 				self:SetItem(itemLink, texture)
+				return
 			end
 		end
-	elseif (self:IsShown()) then
-		self:RemoveItem()
+	end
+	if (self:IsShown()) then
+		self:FadeOut()
 	end
 end
 tinsert(copyfuncs, "Update");
+
+local function ClickHandled(self)
+	self:Update()
+end
 
 function FBR:FishingAction_Toggle()
 	if ( FishingActionButton:IsShown() ) then
@@ -360,13 +374,31 @@ function FBR:FishingAction_Toggle()
 		FishingActionButton:FadeIn()
     end
 end
-    
+
 local function FishingAction_OnHide(self)
     UIParent_ManageFramePositions();
 end
 
 local function FishingAction_OnShow(self)
     UIParent_ManageFramePositions();
+end
+
+-- Thanks bsmorgan!
+local minRarity = 2;		-- uncommon
+local function SilenceOfTheFishies(self, event, msg, author, ...)
+	if not IsInRaid() or not FishingBuddy.ReadyForFishing() or author == UnitName("player") or string.match(msg,'Hbattlepet') then
+		return false, msg, author, ...
+	else
+		local itemID = select(3, string.find(msg, "item:(%d+):"))
+		local itemRarity = select(3, GetItemInfo(itemID))
+		if (itemRarity < minRarity) then
+			local lootmatch = string.format(LOOT_ITEM, author, "")
+			if string.find(msg, lootmatch) then
+				return true
+			end
+		end
+		return false, msg, author, ...
+	end
 end
 
 RaidEvents = {}
@@ -380,8 +412,6 @@ RaidEvents["VARIABLES_LOADED"] = function(started)
 		button[name] = FBR[name];
 	end
 
-	button:SetSize(ExtraActionButton1:GetSize())
-	button:SetScale(ExtraActionButton1:GetScale())
 	button:SetPoint('CENTER', ExtraActionButton1)
 
 	button:SetHighlightTexture([[Interface\Buttons\ButtonHilight-Square]])
@@ -399,6 +429,7 @@ RaidEvents["VARIABLES_LOADED"] = function(started)
 	RegisterStateDriver(button, 'visible', visibilityState)
 	button:SetAttribute('_onattributechanged', onAttributeChanged)
 	button:SetAttribute('type', 'item')
+	button:SetScript("PostClick", ClickHandled);
 
 	button:SetScript('OnEnter', function(self)
 		if self.itemLink then
@@ -418,23 +449,24 @@ RaidEvents["VARIABLES_LOADED"] = function(started)
     button.buff = GetSpellInfo(239673)
 
 	button:SetItem()
+
+	-- Chat filter
+	ChatFrame_AddMessageEventFilter("CHAT_MSG_LOOT", SilenceOfTheFishies)
 end
 
 RaidEvents[FBConstants.INVENTORY_EVT] = function(...)
 	local button = _G['FishingActionButton'];
 	local shown = button:IsShown()
 	if FL:HasBuff(button.buff) then
-		if shown then
-			return
-		end
-
 		local boss = CurrentBoss()
 		if boss then
 			local fishid = boss.fish.id;
 			local numItems = GetItemCount(fishid)
 			if numItems > 0 then
-				button:Update()
-				button:FadeIn()
+				if not shown then
+					button:Update()
+					button:FadeIn()
+				end
 				return
 			end
 		end
@@ -451,7 +483,8 @@ if ( FishingBuddy.Debugging ) then
 	FishingBuddy.FBR = FBR
     FishingBuddy.Commands["action"] = {};
 	FishingBuddy.Commands["action"].func =
-		function()
+		function(id)
+			id = id or 133703
 			for _,info in ipairs(RaidBosses) do
 				local cname = GetItemInfo(info.currency)
 				local fname = GetItemInfo(info.fish.id)
@@ -461,7 +494,7 @@ if ( FishingBuddy.Debugging ) then
 			local boss = CurrentBoss();
 			if boss then
 				if GetItemCount(boss.fish.id) == 0 then
-					boss.fish.id = 34832
+					boss.fish.id = id
 				end
 				RaidEvents[FBConstants.INVENTORY_EVT]()
 			end
@@ -476,4 +509,4 @@ if ( FishingBuddy.Debugging ) then
 				print("After", FishingActionButton:IsShown())
 				return true
 			end
-	end
+end

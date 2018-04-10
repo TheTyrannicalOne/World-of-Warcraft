@@ -2,7 +2,6 @@
 
 FishingBuddy.Locations = {};
 
-local Crayon = LibStub("LibCrayon-3.0");
 local FL = LibStub("LibFishing-1.0");
 
 -- 5.0.4 has a problem with a global "_" (see some for loops below)
@@ -380,8 +379,8 @@ FishingBuddy.Locations.Update = function(self, forced)
 	local bf = FishingBuddy.ByFishie;
 	local ft = FishingBuddy_Info["FishTotals"];
 
-	local green = "ff"..Crayon.COLOR_HEX_GREEN;
-	local white = "ff"..Crayon.COLOR_HEX_WHITE;
+	local green = "ff"..FL.COLOR_HEX_GREEN;
+	local white = "ff"..FL.COLOR_HEX_WHITE;
 	for odx=0,LocationLastLine,1 do
 		local info = LocationLines[j];
 		if ( info and info ~= 0 ) then
@@ -476,7 +475,7 @@ FishingBuddy.Locations.Update = function(self, forced)
 								end
 								table.sort(inz);
 								tinsert(locButton.tooltip,
-										  Crayon:Green(ZONE_COLON.." ")..Crayon:White(FishingBuddy.EnglishList(inz)));
+										  FL:Green(ZONE_COLON.." ")..FL:White(FishingBuddy.EnglishList(inz)));
 							end
 							if ( lastfid ) then
 								if ( bf[lastfid][zid] ) then
@@ -505,7 +504,7 @@ FishingBuddy.Locations.Update = function(self, forced)
 								tinsert(ins, subsorted[s]);
 							end
 							tinsert(locButton.tooltip,
-									  Crayon:Green("Subzones: ")..Crayon:White(FishingBuddy.EnglishList(ins)));
+									  FL:Green("Subzones: ")..FL:White(FishingBuddy.EnglishList(ins)));
 							tinsert(locButton.tooltip,
 										  { { FBConstants.CAUGHTTHISTOTAL, green },
 											 { totals[level], white } } );
@@ -657,7 +656,7 @@ FishingBuddy.Locations.Button_OnEnter = function(self)
 			else
 				local tip = {};
 				tip[1] = self.name;
-				tip[2] = { FBConstants.NOTLINKABLE, "ff"..Crayon.COLOR_HEX_RED };
+				tip[2] = { FBConstants.NOTLINKABLE, "ff"..FL.COLOR_HEX_RED };
 				if ( self.tooltip ) then
 					if ( type(self.tooltip) == "table" ) then
 						for _,l in pairs(self.tooltip) do

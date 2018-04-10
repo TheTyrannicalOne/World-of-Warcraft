@@ -32,10 +32,11 @@ Storyline_Data = {
 			["Font"] = "Friz Quadrata TT",
 			["Size"] = 13,
 		},
-		["height"] = 450,
 		["lockFrame"] = true,
-		["autoEquip"] = false,
+		["height"] = 450,
 		["debug"] = false,
+		["autoEquip"] = false,
+		["seriousBusiness"] = true,
 	},
 	["customscale"] = {
 		["personal"] = {
