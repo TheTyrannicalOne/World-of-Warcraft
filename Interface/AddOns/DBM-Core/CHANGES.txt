@@ -1,5 +1,76 @@
 Changes since tag 7.3.26
 
+commit 72840ca6be5b3259e37dbf98ceffed81e09491fa
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 14 07:48:27 2018 +0200
+
+    Omega via svn r17447:
+    Add auto pre special warning for rage/fear soon. it will also auto toggle range finder before rages go out and auto hide it after they go out (if you aren?\226?\128?\153t affected by rage). It won?\226?\128?\153t run at all for tanks
+
+commit f2c47dfe42557543887d99048c1e81ba43873a94
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 14 03:44:40 2018 +0200
+
+    Omega via svn r17446:
+    Handle 1 renaming
+
+commit f922d0a1478263b43b66ff8a72b6d585595536c4
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 13 23:19:44 2018 +0200
+
+    Omega via svn r17445:
+    In case they fix it, tweak this code
+
+commit 79f9ccce8cfb13dbf4506748474ffc4e6f5d78c2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 13 22:40:08 2018 +0200
+
+    Omega via svn r17444:
+    Some notes
+
+commit 895a224fc40f00bbe4af8f22bbdbfb0cdc04f344
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 13 22:09:36 2018 +0200
+
+    Omega via svn r17443:
+    respawn timer. yay for solo testing. only thing I could grab
+
+commit 90e1e0f2e008d454be3cb020fceda896365e3ad5
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 13 07:34:47 2018 +0200
+
+    Omega via svn r17442:
+    Attempt to fix a scenario where timer/variable recovery would fail do to inability to validate sender in raid roster (cause raid roster table not yet build). This change will force build roster table on timer recovery request to ensure table exists
+
+commit 9d268ed39249ad75fa9998fbd44833b436ec5edf
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 13 07:03:36 2018 +0200
+
+    Omega via svn r17441:
+    Attempt to work around niche case where Foe Tempest doesn?\226?\128?\153t flag Foe Empowered Tempest as used, allowing fight to repeat that combo a 2nd time before all 4 are used. Seems to be only place I?\226?\128?\153ve seen bug occur as any other combo still flags used and doesn?\226?\128?\153t repeat for empowered versions until all 4 used.
+
+commit ffce0f84391f755933568d4e76cb55d1ea4fc01d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 12 04:54:33 2018 +0200
+
+    Omega via svn r17440:
+    Remove all redundant getspellinfo calls that are no longer required in async 8.x code like they were in 7.3.5 async code.
+    Finally fix Hasabel since guild finally did it again this week after 6 weeks of only argus.
+
+commit 0c152e664a39ae5c8cb2d531a66e56d181e9146b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Apr 11 07:17:29 2018 +0200
+
+    Omega via svn r17439:
+    Tweaks
+
+commit 97f4a7230127abdc9eafe5a556e2ec1968b5a6df
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Apr 11 07:04:38 2018 +0200
+
+    Omega via svn r17438:
+    reclassify target switches as role warnings not other target warnings. Target warnings generally means other players, while switch warnings are warnings for a role (dps or tank) to swap to a new non player target.
+
 commit 496e9470e92e45aed99380db21a624b6a533250f
 Author: subversion <svn@deadlybossmods.com>
 Date:   Tue Apr 10 04:38:36 2018 +0200

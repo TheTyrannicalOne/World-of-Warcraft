@@ -10,6 +10,8 @@ local FWF = FishingBuddy.FWF;
 
 local GSB = FishingBuddy.GetSettingBool;
 
+local MARGOSS_RETREAT = "Margoss's Retreat"
+
 local RaidOptions = {
 	["FishingRaid"] = {
 		["text"] = FBConstants.CONFIG_FISHINGRAID_ONOFF,
@@ -82,7 +84,8 @@ RaidCurrency[146963] = {
 
 RaidCurrency[138777] = {
 	["enUS"] = "Drowned Mana",
-    zone = "Dalaran (Broken Isles)",
+	zone = "Dalaran (Broken Isles)",
+	subzone = MARGOSS_RETREAT,
     area = 1014,
 	limit = 100
 };
@@ -119,7 +122,7 @@ local RaidBosses = {
 		}
 	},
 	{
-		["boss"] = "Keeper Raynae",
+		["boss"] = "Keeper Rayne",
 		["area"] = 1018,
 		["currency"] = 146959,
 		["fish"] = {
@@ -156,6 +159,7 @@ local RaidBosses = {
 			["enUS"] = "Mark of Aquaos",
 			["id"] = 141975,
 			zone = "Dalaran (Broken Isles)",
+			subzone = MARGOSS_RETREAT,
 		}
 	},
 }
@@ -165,7 +169,7 @@ local bossadex = 0
 local function CurrentBoss()
 	local zone, subzone = FL:GetZoneInfo();
 
-	if subzone == "Margoss's Retreat" then
+	if subzone == MARGOSS_RETREAT then
 		return RaidBosses[7]
 	else
 		local _, _, today, _ = CalendarGetDate()
@@ -191,6 +195,13 @@ local function CurrentBoss()
 	end
 end
 
+local function CheckMagicFish()
+	local button = _G['FishingActionButton'];
+	local zone, subzone = FL:GetZoneInfo();
+
+	return FL:HasBuff(button.buff) or subzone == "Margoss's Retreat";
+end
+
 -- Handle display of caught Pagle fish
 local function DisplayRaidFish()
 	if not GSB("WatchRaidCurrency") then
@@ -198,13 +209,15 @@ local function DisplayRaidFish()
 	end
 
 	local info = CurrentBoss()
-	local label = CHAT_MSG_RAID;
 	if info then
-		label = label.." "..BOSS.." "..info.boss
-	end
-	label = label..": "
+		local label = CHAT_MSG_RAID;
+		if info then
+			label = label.." "..BOSS.." "..info.boss
+		end
+		label = label..": "
 
-	return FWF:DisplayFishLine(RaidCurrency, label)
+		return FWF:DisplayFishLine(RaidCurrency, label, info.area)
+	end
 end
 
 -- Thank you, p3lim ExtraQuestButton! You're in the About box!
@@ -218,20 +231,16 @@ local onAttributeChanged = [[
 			self:ClearBindings()
 		end
 	elseif (name == 'state-visible') then
+		self:ClearBindings()
 		if(value == 'show') then
 			self:CallMethod('Update')
+
+			local key = GetBindingKey('EXTRAACTIONBUTTON1')
+			if (key) then
+				self:SetBindingClick(1, key, self, 'LeftButton')
+			end
 		else
 			self:CallMethod('FadeOut')
-			self:ClearBindings()
-		end
-	end
-
-	if (self:IsShown() and (name == 'item' or name == 'binding')) then
-		self:ClearBindings()
-
-		local key = GetBindingKey('EXTRAACTIONBUTTON1')
-		if (key) then
-			self:SetBindingClick(1, key, self, 'LeftButton')
 		end
 	end
 ]]
@@ -255,7 +264,7 @@ tinsert(copyfuncs, "BAG_UPDATE_COOLDOWN");
 
 function FBR:BAG_UPDATE_DELAYED()
 	self:Update()
-	if (self:IsShown()) then
+	if (self:IsShown() and self.itemLink) then
 		local count = GetItemCount(self.itemLink)
 		self.Count:SetText(count and count > 1 and count or '')
 	end
@@ -300,7 +309,7 @@ function FBR:SetItem(itemLink, texture)
 	if (key) then
 		HotKey:SetText(GetBindingText(key, 1))
 		HotKey:Show()
-	elseif (ItemHasRange(itemLink)) then
+	elseif (itemLink and ItemHasRange(itemLink)) then
 		HotKey:SetText(RANGE_INDICATOR)
 		HotKey:Show()
 	else
@@ -344,8 +353,14 @@ function FBR:FadeOut()
 end
 tinsert(copyfuncs, "FadeOut");
 
+function FBR:Clear()
+	self.itemLink = nil;
+	self.item = nil;
+end
+tinsert(copyfuncs, "Clear");
+
 function FBR:Update()
-	if FL:HasBuff(self.buff) then
+	if CheckMagicFish() then
 		local boss = CurrentBoss()
 		if boss then
 			local fishid = boss.fish.id;
@@ -376,6 +391,7 @@ function FBR:FishingAction_Toggle()
 end
 
 local function FishingAction_OnHide(self)
+	self:Clear()
     UIParent_ManageFramePositions();
 end
 
@@ -457,7 +473,8 @@ end
 RaidEvents[FBConstants.INVENTORY_EVT] = function(...)
 	local button = _G['FishingActionButton'];
 	local shown = button:IsShown()
-	if FL:HasBuff(button.buff) then
+
+	if CheckMagicFish() then
 		local boss = CurrentBoss()
 		if boss then
 			local fishid = boss.fish.id;

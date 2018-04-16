@@ -122,7 +122,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Jingojaggot-ArgentDawn"] = {
+	["Gangus-Runetotem"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -136,7 +136,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Gangus-Runetotem"] = {
+	["Jingojaggot-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -174,56 +174,38 @@ VWQL = {
 	["Shanyt-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
-			[44939] = true,
-			[41224] = true,
-			[40978] = true,
-			[43766] = true,
-			[42004] = true,
-			[43772] = true,
-			[43963] = true,
-			[42077] = true,
-			[41705] = true,
-			[42276] = true,
-			[41144] = true,
-			[41965] = true,
-			[41024] = true,
-			[44867] = true,
-			[42160] = true,
-			[43451] = true,
-			[42178] = true,
-			[41914] = true,
-			[43932] = true,
-			[44303] = true,
-			[41227] = true,
-			[42111] = true,
-			[43247] = true,
-			[41926] = true,
-			[48732] = true,
-			[43712] = true,
-			[44893] = true,
-			[43600] = true,
-			[42755] = true,
-			[42064] = true,
-			[42241] = true,
-			[42962] = true,
-			[42511] = true,
-			[41316] = true,
-			[43460] = true,
-			[42025] = true,
-			[42275] = true,
-			[46112] = true,
-			[43027] = true,
-			[42145] = true,
-			[43346] = true,
-			[42151] = true,
-			[41964] = true,
-			[42176] = true,
-			[48953] = true,
-			[44301] = true,
-			[44744] = true,
+			[42177] = true,
+			[41961] = true,
+			[43324] = true,
+			[41622] = true,
+			[44291] = true,
+			[42027] = true,
+			[40850] = true,
+			[43827] = true,
+			[43456] = true,
+			[44932] = true,
+			[41691] = true,
+			[42723] = true,
 			[42924] = true,
-			[44811] = true,
-			[40277] = true,
+			[42159] = true,
+			[44299] = true,
+			[41944] = true,
+			[43712] = true,
+			[42101] = true,
+			[47496] = true,
+			[42785] = true,
+			[45049] = true,
+			[44895] = true,
+			[43951] = true,
+			[41687] = true,
+			[42276] = true,
+			[43752] = true,
+			[42784] = true,
+			[42173] = true,
+			[42174] = true,
+			[46112] = true,
+			[41122] = true,
+			[43639] = true,
 		},
 		["FilterType"] = {
 		},
@@ -242,7 +224,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Bathal-ArgentDawn"] = {
+	["Dialdaas-Darkspear"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -272,7 +254,7 @@ VWQL = {
 	},
 	["Ignore"] = {
 	},
-	["Dialdaas-Darkspear"] = {
+	["Bathal-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},

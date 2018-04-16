@@ -1,10 +1,10 @@
-tag 2acd2aa7de127413168b42b7806653dd4d29dccc 7.3.5.7
+tag 0adba7ed5a88e815ecda48fab7ffffb08e9ca466 7.3.5.8
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Tue Apr 10 07:40:40 2018 -0500
+Date:	Wed Apr 11 20:13:33 2018 -0500
 
-commit bfda9b46383a63eea10b536ed3fc99cd2af0cb37
+commit 047a849633c638bf89719bec3e29442b9464803e
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Tue Apr 10 06:57:42 2018 -0500
+Date:   Wed Apr 11 20:11:57 2018 -0500
 
-    Give Archmagus Tekar and Soulbinder Naylana the same questID as Strategist Ankor. Both are required for Ankor's Cut off the Head achievement criteria, but neither are tracked individually by Blizzard.
+    Fix display for Detection ➜ Continent
 

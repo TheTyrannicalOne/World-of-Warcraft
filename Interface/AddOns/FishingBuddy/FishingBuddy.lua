@@ -27,6 +27,8 @@ local POLES = {
 	["Dwarven Fishing Pole"] = "3567:0:0:0",
 	["Goblin Fishing Pole"] = "4598:0:0:0",
 	["Nat Pagle's Fish Terminator"] = "19944:0:0:0",
+-- one can only hope
+	["Crafty's Pole"] = "43651:0:0:0"
 }
 
 local GeneralOptions = {
@@ -2071,7 +2073,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
 	elseif ( event == "VARIABLES_LOADED" ) then
 		local _, name = FL:GetFishingSkillInfo();
 		FishingBuddy.Initialize();
-		FishingBuddy.Slider_Create(VolumeSlider);
+		LO:CreateSlider(VolumeSlider);
 		FishingBuddy.OptionsFrame.HandleOptions(GENERAL, nil, GeneralOptions);
 		FishingBuddy.AddSchoolFish();
 
@@ -2150,9 +2152,10 @@ FishingBuddy.OnLoad = function(self)
 		if (self.fbframe) then
 			self:StartInventory()
 			self:Hide();
-			if not self.calopened then
+			if not self.firsttime then
 				OpenCalendar()
-				self.calopened = true
+				RunHandlers(FBConstants.FIRST_UPDATE_EVT);
+				self.firsttime = true
 			end
 		end
 	end);
@@ -2165,6 +2168,8 @@ FishingBuddy.OnLoad = function(self)
 	SLASH_fishingbuddy2 = "/fb";
 
 	FishingBuddy.Output(FBConstants.WINDOW_TITLE.." loaded");
+
+	RegisterAddonMessagePrefix(FBConstants.MSGID)
 end
 
 FishingBuddy.PrintHelp = function(tab)

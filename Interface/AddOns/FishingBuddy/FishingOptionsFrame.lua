@@ -328,55 +328,6 @@ local function OptionsFrame_OnShow(self)
 	self:ShowButtons();
 end
 
--- managed control support
-local function Slider_OnLoad(self, info, height, width)
-	self.info = info;
-	self.textfield = _G[info.name.."Text"];
-	_G[info.name.."High"]:SetText();
-	_G[info.name.."Low"]:SetText();
-	self:SetMinMaxValues(info.min, info.max);
-	self:SetValueStep(info.step or 1);
-	self:SetHeight(height or 17);
-	self:SetWidth(width or 130);
-end
-
-local function Slider_OnShow(self)
-	local where = FishingBuddy.GetSetting(self.info.setting);
-	if (where) then
-		self:SetValue(where);
-		self.textfield:SetText(string.format(self.info.format, where));
-	end
-end
-
-local function Slider_OnValueChanged(self)
-	local where = self:GetValue();
-	self.textfield:SetText(string.format(self.info.format, where));
-	FishingBuddy.SetSetting(self.info.setting, where);
-	if (self.info.action) then
-		self.info.action(self);
-	end
-end
-
--- info contains
--- name
--- format -- how to print the value
--- min
--- max
--- step -- default to 1
--- rightextra -- extra room needed, if any
--- setting -- what this slider changes
-local function Slider_Create(info)
-	local s = _G[info.name];
-	if (not s) then
-		s = CreateFrame("Slider", info.name, nil, "OptionsSliderTemplate");
-	end
-	Slider_OnLoad(s, info);
-	s:SetScript("OnShow", Slider_OnShow);
-	s:SetScript("OnValueChanged", Slider_OnValueChanged);
-	return s;
-end
-FishingBuddy.Slider_Create = Slider_Create
-
 -- Drop-down menu support
 local function ToggleSetting(setting)
 	local value = GetSetting(setting);

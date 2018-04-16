@@ -128,9 +128,10 @@ local CustomEvents = {
 	["LEAVING_EVT"] = "LEAVING",
 
 	-- option frame
-	["OPT_UPDATE_EVT"] = "OPT_UPDATE_EVT",
+	["OPT_UPDATE_EVT"] = "OPT_UPDATE",
 	-- main FB frame handler
-	["FRAME_SHOW_EVT"] = "FRAME_SHOW_EVT",
+	["FRAME_SHOW_EVT"] = "FRAME_SHOW",
+	["FIRST_UPDATE_EVT"] = "FIRST_UPDATE"
 }
 
 FBConstants.FBEvents = {};

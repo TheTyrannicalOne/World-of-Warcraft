@@ -106,35 +106,7 @@ FluffEvents[FBConstants.LOGIN_EVT] = function()
 	end
 end
 
--- Don't cast the angler's raft if we're doing Scavenger Hunt or on Inkgill Mere
 local GSB = FishingBuddy.GetSettingBool;
-local function RaftBergUsable(info)
-	return ( GSB(info.setting) and not IsMounted() and
-		not FL:HasBuff(GetSpellInfo(201944)) and
-		not FL:HasBuff(GetSpellInfo(116032)) and
-		not FL:HasBuff(GetSpellInfo(119700)));
-end
-
-local function RaftBergCheck(info, buff, need, itemid)
-	if (GSB(info.option.setting) and need) then
-		return false;
-	end
-
-	if (info.time) then
-		local _, _, _, _, _, _, et, _, _, _, _ = UnitBuff("player", buff);
-		et = (et or 0) - GetTime();
-		need = (et <= info.time);
-	end
-
-	if (need) then
-		if (info.toy) then
-			_, itemid = C_ToyBox.GetToyInfo(itemid)
-		end
-		return true, itemid;
-	end
-	--return nil;
-end
-
 local QuestBaits = {
 	{
 		item = 114628,		-- Icespine Stinger Bait
@@ -667,126 +639,6 @@ local FluffOptions = {
 	},
 };
 
-local RAFT_RESET_TIME = 30
-local RaftOptions = {
-	["enUS"] = "Angler's Fishing Raft",
-	["tooltip"] = FBConstants.CONFIG_FISHINGRAFT_INFO,
-	itemid = 85500;
-	spell = 124036,
-	toy = 1,
-	always = 1, -- this is now a toy!
-	time = RAFT_RESET_TIME,
-	setting = "UseAnglersRaft",
-	usable = RaftBergUsable,
-	check = RaftBergCheck,
-	["default"] = true,
-	["option"] = {
-		["setting"] = "BergMaintainOnly",
-		["text"] = FBConstants.CONFIG_MAINTAINRAFTBERG_ONOFF,
-		["tooltip"] = FBConstants.CONFIG_MAINTAINRAFT_INFO,
-		["default"] = true,
-	},
-};
-local BergOptions = {
-	["enUS"] = "Bipsi's Bobbing Berg",
-		-- Don't cast the angler's raft if we're doing Scavenger Hunt or on Inkgill Mere
-	["tooltip"] = FBConstants.CONFIG_BOBBINGBERG_INFO,
-	itemid = 107950;
-	spell = 152421,
-	time = RAFT_RESET_TIME,
-	setting = "UseBobbingBerg",
-	usable = RaftBergUsable,
-	check = RaftBergCheck,
-	["default"] = true,
-	["option"] = {
-		["setting"] = "BergMaintainOnly",
-		["text"] = FBConstants.CONFIG_MAINTAINRAFTBERG_ONOFF,
-		["tooltip"] = FBConstants.CONFIG_MAINTAINBERG_INFO,
-		["default"] = true,
-	},
-};
-
-local function HasRaftBuff()
-	local bergbuff = GetSpellInfo(BergOptions.spell);
-	local raftbuff = GetSpellInfo(RaftOptions.spell);
-	local hasberg = FL:HasBuff(bergbuff);
-	local hasraft = FL:HasBuff(raftbuff);
-
-	return bergbuff, raftbuff, hasberg, hasraft
-end
-FishingBuddy.HasRaftBuff = HasRaftBuff
-
-local function PickRaft(info, buff, need, itemid)
-	local bergbuff, raftbuff, hasberg, hasraft = HasRaftBuff();
-	
-	need = not (hasberg or hasraft);
-	
-	-- if we need it, but we're maintaining only, skip it
-	if (GSB("BergMaintainOnly") and need) then
-		return false;
-	end
-
-	local it = nil;
-	if (not hasraft and GSB("UseBobbingBerg")) then
-		buff = bergbuff;
-		itemid = BergOptions.itemid;
-	else
-		buff = raftbuff;
-		_, itemid = C_ToyBox.GetToyInfo(RaftOptions.itemid)
-		-- it = "item"
-	end
-
-	local _, _, _, _, _, _, et, _, _, _, _ = UnitBuff("player", buff);
-	et = (et or 0) - GetTime();
-	if (need or et <= RAFT_RESET_TIME) then
-		return true, itemid, it;
-	end
-	--return nil;
-end
-
-local function HandleRaftItems()
-	local haveRaft = PlayerHasToy(RaftOptions.itemid);
-	local haveBerg = GetItemCount(BergOptions.itemid);
-
-	if (haveRaft and haveBerg) then
-		-- if we have both, be smarter about rafts
-		FluffOptions["UseRaft"] = {
-			["text"] = FBConstants.CONFIG_USERAFTS_ONOFF,
-			["tooltip"] = FBConstants.CONFIG_USERAFTS_INFO,
-			["v"] = 1,
-			["default"] = true
-		};
-		FluffOptions["BergMaintainOnly"] = {
-			["text"] = FBConstants.CONFIG_MAINTAINRAFTBERG_ONOFF,
-			["tooltip"] = FBConstants.CONFIG_MAINTAINRAFT_INFO,
-			["v"] = 1,
-			["default"] = true,
-			["parents"] = { ["UseRaft"] = "d", },
-		};
-		FluffOptions["UseBobbingBerg"] = {
-			["text"] = FBConstants.CONFIG_BOBBINGBERG_ONOFF,
-			["tooltip"] = FBConstants.CONFIG_BOBBINGBERG_INFO,
-			["v"] = 1,
-			["default"] = true,
-			["parents"] = { ["UseRaft"] = "d", },
-		};
-		
-		FishingItems[RaftOptions.itemid] = {
-			setting = "UseRaft",
-			ignore = 1,
-			spell = 124036,
-			always = 1,
-			usable = RaftBergUsable,
-			check = PickRaft,
-		};
-	elseif (haveRaft) then
-		-- if we just have one or the other, then use our regular item option
-		FishingItems[RaftOptions.itemid] = RaftOptions;
-	else
-		FishingItems[BergOptions.itemid] = BergOptions;
-	end
-end
-
 local function ItemInit(option, button)
 	local n, _, _, _, _, _, _, _,_, _ = GetItemInfo(option.id);
 	if (n) then
@@ -859,6 +711,11 @@ local function SetupSpecialItems(items, fixsetting, fixloc, skipitem)
 end
 FishingBuddy.SetupSpecialItems = SetupSpecialItems
 
+local function AddFluffOptions(options)
+	FishingBuddy.OptionsFrame.HandleOptions(FBConstants.CONFIG_FISHINGFLUFF_ONOFF, "Interface\\Icons\\inv_misc_food_164_fish_seadog", options);
+end
+FishingBuddy.AddFluffOptions = AddFluffOptions
+
 FluffEvents["VARIABLES_LOADED"] = function(started)
 	-- Let's make sure we have buffs on all the items we currently know about
 	for id,info in pairs(FishingItems) do
@@ -867,18 +724,11 @@ FluffEvents["VARIABLES_LOADED"] = function(started)
 
 	SetupSpecialItems(CoinLures);
 	SetupSpecialItems(LevelingItems, false, true, true);
+end
 
-	-- we have to wait until the toys are actually available
-	local toydelayframe = CreateFrame("Frame");
-	toydelayframe:Hide();
-
-	toydelayframe:SetScript("OnUpdate", function(self, ...)
-			HandleRaftItems();
-			UpdateItemOptions();
-			FishingBuddy.OptionsFrame.HandleOptions(FBConstants.CONFIG_FISHINGFLUFF_ONOFF, "Interface\\Icons\\inv_misc_food_164_fish_seadog", FluffOptions);
-			self:Hide();
-		end);
-	toydelayframe:Show();
+FluffEvents[FBConstants.FIRST_UPDATE_EVT] = function()
+	UpdateItemOptions();
+	AddFluffOptions(FluffOptions)
 end
 
 FishingBuddy.RegisterHandlers(FluffEvents);

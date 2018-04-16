@@ -2,5 +2,6 @@
 ..\FrameXML\UI.xsd">
 	<Include file="Bobbers.xml" />
 	<Include file="Pets.xml" />
+	<Include file="Rafts.lua" />
 	<Include file="Items.lua" />
 </Ui>

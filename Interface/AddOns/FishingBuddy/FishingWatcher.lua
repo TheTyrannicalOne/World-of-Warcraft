@@ -174,13 +174,19 @@ end
 function FWF:DisplayFishLine(fish, label, area)
 	local line = nil;
 	local zone, subzone = FL:GetZoneInfo();
-	if(not WorldMapFrame:IsShown()) then
-		SetMapToCurrentZone()
-	end
 	area = area or GetCurrentMapAreaID()
 	for id,info in pairs(fish) do
 		local havesome = GetItemCount(id);
-		if ( havesome > 0 and ((info.area and info.area == area) or (not info.zone or zone == info.zone)) ) then
+		local here = false
+		if info.area then
+			here = info.area == area;
+		else
+			here = not info.zone or zone == info.zone;
+		end
+		if here and info.subzone then
+			here = info.subzone == subzone
+		end
+		if ( havesome > 0 and here) then
 			local _,_,_,_,_,name,_ = FishingBuddy.GetFishieRaw(id);
 
 			name = self:ColorInfoString(info, name, havesome)

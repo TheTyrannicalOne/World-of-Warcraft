@@ -7,7 +7,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 --]]
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 90986
+local MINOR_VERSION = 90987
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -1055,6 +1055,9 @@ function FishLib:ExtendDoubleClick()
 end
 
 function FishLib:GetZoneInfo()
+	if(not WorldMapFrame:IsShown()) then
+		SetMapToCurrentZone()
+	end
 	local zone = GetRealZoneText();
 	local subzone = GetSubZoneText();
 	if ( not zone or zone == "" ) then

@@ -151,6 +151,8 @@ FishingTranslations["enUS"] = {
 	CONFIG_BOBBINGBERG_INFO   = "If enabled, use the bobbing berg.",
 	CONFIG_MAINTAINBERG_INFO  = "If enabled, do not use the bobbing berg item, only maintain it if it is already being used.",
 	CONFIG_MAINTAINRAFTBERG_ONOFF = "Maintain only",
+	CONFIG_OVERWALKING_ONOFF  = "Always Raft",
+	CONFIG_OVERWALKING_INFO   = "If enabled, use the raft even if we're using the artifact pole.",
 
 	CONFIG_USERAFTS_ONOFF     = "Use rafts",
 	CONFIG_USERAFTS_INFO      = "If enabled, use a fishing raft item.",

@@ -1,4 +1,9 @@
-﻿Version 1.8.4.1
+﻿Version 1.8.4.2
+- More raid boss display cleanup, translations for boss names.
+- Make rafts more reliable, add option to use even if using Legendary (still has some issues with buff lag)
+- Fix issue with the raid code stealing the extra action bind.
+
+Version 1.8.4.1
 - Fix raid filtering function (Curse bug #314)
 - Oversized bobbers should work now (Curse bug #311)
 - Remove abandoned LibCrayon (Curse bug #310)
