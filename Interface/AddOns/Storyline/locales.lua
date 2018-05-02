@@ -104,8 +104,7 @@ The frame cannot be moved when using the default position. This option requires 
 	
 	["frFR"] = {
 		localeText = "Français",
-		localeContent =
-{
+		localeContent = {
 	["SL_ABOUT"] = "À propos",
 	["SL_ABOUT_TEXT"] = [=[Cet add-on est développé et maintenu grâce à l'aide des supporters du Patreon de Ellypse  (|cffcccccchttp://patreon.com/Ellypse|r):
 
@@ -174,6 +173,8 @@ Expérience: |cffffffff%s xp|r
 	["SL_SELECT_REWARD"] = "Choisissez votre récompense",
 	["SL_STORYLINE"] = "Storyline"
 }
+
+		
 	},
 
 	--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -182,8 +183,7 @@ Expérience: |cffffffff%s xp|r
 
 	["esES"] = {
 		localeText = "Español",
-		localeContent =
-{
+		localeContent = {
 	["SL_ACCEPTANCE"] = "Acepto",
 	["SL_CHECK_OBJ"] = "Comprueba los objetivos",
 	["SL_CONFIG"] = "Configuración",
@@ -242,6 +242,8 @@ Experiencia: |cffffffff%s exp|r
 	["SL_SELECT_REWARD"] = "Selecciona tu recompensa",
 	["SL_STORYLINE"] = "Storyline"
 }
+
+		
 	},
 
 	--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -250,8 +252,7 @@ Experiencia: |cffffffff%s exp|r
 
 	["deDE"] = {
 		localeText = "Deutsch",
-		localeContent =
-{
+		localeContent = {
 	["SL_ACCEPTANCE"] = "Ich akzeptiere.",
 	["SL_CHECK_OBJ"] = "Questziele überprüfen",
 	["SL_CONFIG"] = "Einstellungen",
@@ -302,6 +303,8 @@ Erfahrung: |cffffffff%s EP|r
 	["SL_STORYLINE"] = "Storyline"
 }
 
+		
+
 	},
 
 	--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -310,8 +313,7 @@ Erfahrung: |cffffffff%s EP|r
 
 	["itIT"] = {
 		localeText = "Italiano",
-		localeContent =
-{
+		localeContent = {
 	["SL_ACCEPTANCE"] = "Accetto.",
 	["SL_CHECK_OBJ"] = "Controlla gli obiettivi",
 	["SL_CONFIG"] = "Impostazioni",
@@ -371,6 +373,8 @@ Esperienza: |cffffffff%s xp|r
 	["SL_STORYLINE"] = "Storyline"
 }
 
+		
+
 	},
 
 	--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -380,8 +384,7 @@ Esperienza: |cffffffff%s xp|r
 
 	["ruRU"] = {
 		localeText = "Russian",
-		localeContent =
-{
+		localeContent = {
 	["SL_ABOUT"] = "Около",
 	["SL_ABOUT_TEXT"] = [=[Это дополнение поддерживается и обновляется благодаря помощи сторонников Ellypse's Patreon (|cffcccccchttp://patreon.com/Ellypse|r):
 
@@ -447,6 +450,8 @@ Esperienza: |cffffffff%s xp|r
 	["SL_SELECT_REWARD"] = "Выберите награду",
 	["SL_STORYLINE"] = "Storyline"
 }
+
+		
 	},
 
 	--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -456,8 +461,7 @@ Esperienza: |cffffffff%s xp|r
 
 	["zhTW"] = {
 		localeText = "Traditional Chinese",
-		localeContent =
-{
+		localeContent = {
 	["SL_ACCEPTANCE"] = "我接受。",
 	["SL_CHECK_OBJ"] = "任務目標是...",
 	["SL_CONFIG"] = "設定",
@@ -514,6 +518,8 @@ Esperienza: |cffffffff%s xp|r
 	["SL_SELECT_REWARD"] = "選擇你的獎勵",
 	["SL_STORYLINE"] = "任務故事劇情"
 }
+
+		
 	},
 
 	--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
@@ -523,8 +529,7 @@ Esperienza: |cffffffff%s xp|r
 
 	["koKR"] = {
 		localeText = "Korean",
-		localeContent =
-{
+		localeContent = {
 	["SL_ACCEPTANCE"] = "알겠습니다.",
 	["SL_CHECK_OBJ"] = "임무 확인하기",
 	["SL_CONFIG"] = "설정",
@@ -580,6 +585,8 @@ Esperienza: |cffffffff%s xp|r
 	["SL_STORYLINE"] = "스토리라인"
 }
 
+		
+
 	},
 
 
@@ -589,8 +596,7 @@ Esperienza: |cffffffff%s xp|r
 
 	["ptBR"] = {
 		localeText = "Brazilian Portuguese",
-		localeContent =
-{
+		localeContent = {
 	["SL_ACCEPTANCE"] = "Aceito.",
 	["SL_CHECK_OBJ"] = "Checar objetivos.",
 	["SL_CONFIG"] = "Configurações.",
@@ -645,6 +651,8 @@ Experiência: |cffffffff%s|r
 	["SL_SELECT_REWARD"] = "Escolha a recompensa",
 	["SL_STORYLINE"] = "Enredo"
 }
+
+		
 
 	},
 }

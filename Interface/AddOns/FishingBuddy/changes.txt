@@ -1,4 +1,17 @@
-﻿Version 1.8.4.2
+﻿Version 1.8.4.5
+- Fix Curse bug #321 (console spam)
+
+Version 1.8.4.4
+- Fix Curse bug #275 (protected function)
+- Fix Curse bug #291 (cast button setting)
+- Raid boss names were lost in translation, now they're back.
+
+Version 1.8.4.3
+- Track the server reset times for Raid Boss changes (thanks Zeglar!)
+- Use the Trawler Totem, if you have it.
+- Resolve CurseForge issues #315 and #316
+
+Version 1.8.4.2
 - More raid boss display cleanup, translations for boss names.
 - Make rafts more reliable, add option to use even if using Legendary (still has some issues with buff lag)
 - Fix issue with the raid code stealing the extra action bind.

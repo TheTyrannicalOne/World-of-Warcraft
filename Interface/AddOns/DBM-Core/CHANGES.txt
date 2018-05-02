@@ -1,5 +1,242 @@
 Changes since tag 7.3.26
 
+commit e06fce989ee3f68229ea08beb97e9d15ce7dc814
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 2 04:04:41 2018 +0200
+
+    Omega via svn r17478:
+    This is important to stress
+
+commit 92e3c8649578b826214e2ac06fb49f2a2df108e1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed May 2 03:57:07 2018 +0200
+
+    Omega via svn r17477:
+    There Is No Dana, Only Zul
+
+commit 52eab25708651211b0400ab55fca07fa1e33432d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue May 1 20:55:00 2018 +0200
+
+    Omega via svn r17476:
+    rename
+
+commit cdf7f8a029cec7fdbc81b759b51b15cbbdde0a3f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue May 1 05:23:35 2018 +0200
+
+    Omega via svn r17475:
+    Mythrax Drycode
+
+commit d6dbf157219bb49a67cb252328b3268c44ed3232
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Apr 29 19:53:36 2018 +0200
+
+    Omega via svn r17474:
+    Kr update
+
+commit 6d20b91a6a44d571266bcc65c2d3bed7fd37a4c9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Apr 29 05:02:45 2018 +0200
+
+    Omega via svn r17473:
+    Add full support to Toldagor
+    
+    Added warning clarity to Rezan in ATalDazar
+    
+    Fix some infoframe bugs on Smashspite so it works better at filtering incorrect versions of Hateful Gaze by only matching spellID instead of spell name, as it should have been all along. Also fixed gaze target no longer announcing since target filter change, this warning should ignore target filter.
+    
+    Improvements to UnitDebuff/UnitBuff checks to permit exact spellID matching when needed.
+
+commit d4392e3ce5932eefc6964d50eecd0c6113400219
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 26 09:48:09 2018 +0200
+
+    Omega via svn r17472:
+    Kill these chat messages
+
+commit da3d15eb287b0e6aa640bf7e5f2885fceb76d555
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Apr 25 02:12:58 2018 +0200
+
+    Omega via svn r17471:
+    Create a unitbuff/unitdebuff wrapper to handle 8.x requests
+
+commit 10d2d4ac6a2eab9ab981c20873bb55e59ca0a886
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Apr 23 03:55:23 2018 +0200
+
+    Omega via svn r17470:
+    Add mods for all bosses in shrine of the storm
+
+commit 9481ac67371e30fda4e405a96c557c2a878b1006
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Apr 22 23:40:31 2018 +0200
+
+    Omega via svn r17469:
+    Because shrine trash was so terrible, i?\226?\128?\153ll push that trash mod right away while I continue working on bosses, which were much less annoying than trash (then again maybe i?\226?\128?\153m just tilted because group had 2 hunters barraging extra mobs every pulls)
+
+commit bb48bf7d0e59d502a4b91fa14a10cdcc3faa97f6
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Apr 22 05:39:45 2018 +0200
+
+    Omega via svn r17468:
+    Add warnings/timers to waycrest Manor
+
+commit 148333c1e701daf93e63fc66c7c75518c6db5077
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Apr 22 03:19:46 2018 +0200
+
+    Omega via svn r17467:
+    Push this lua fix now, while I work in these dungeon mods
+
+commit 9bf9d9263c86a4b2c311edcdda44f6f827266ef7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Apr 21 06:40:37 2018 +0200
+
+    Omega via svn r17466:
+    Add very basic MOTHER stuff. most of it is scripts and can?\226?\128?\153t add right ones on pure drycode so a lot of the containment mechanics missing from drycode
+
+commit c3d380b32b2e5cf3769a25ae7d73e80e01baf032
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 23:31:58 2018 +0200
+
+    Omega via svn r17465:
+    Full Taloc Drycode
+
+commit ab911489a1d4ee6a990f10b8c638f1627a2c34c2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 21:20:55 2018 +0200
+
+    Omega via svn r17464:
+    Some LFR fixes to kingaroth, at some point they changed timers to match non LFR
+
+commit fcaead762bebd5c9a31dc6e7ac701c53bbd164e3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 20:00:28 2018 +0200
+
+    Omega via svn r17463:
+    Fix rangecheck option
+
+commit e1a1f26920ad12f89ecba0a635c84e3afec2abc4
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 07:31:37 2018 +0200
+
+    Omega via svn r17462:
+    Fix load error
+
+commit 346c4cb4b4f3b7c91f4e9960870c05a6622f8c48
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 07:26:13 2018 +0200
+
+    Omega via svn r17461:
+    KulTiras loading & combat detection with 3 new boss entires
+
+commit 346c4cb4b4f3b7c91f4e9960870c05a6622f8c48
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 07:26:13 2018 +0200
+
+    Omega via svn r17461:
+    KulTiras loading & combat detection with 3 new boss entires
+
+commit 6eadbb3a83b0ea2291b477715cb6ebd773ec4b3f
+Author: MysticalOS <MysticalOS@nomail.com>
+Date:   Fri Apr 20 01:24:58 2018 -0400
+
+    Update pkgmeta
+
+commit cfe321abf3154953a1c6109f7cda66593984a79c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 06:47:22 2018 +0200
+
+    Omega via svn r17460:
+    More 8.x fixes, for map stuff
+
+commit 8b9ebd981a040c1965190e11856c2305f44cdaed
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Apr 20 04:01:30 2018 +0200
+
+    Omega via svn r17459:
+    Remove yell and icon restrictions for 8.x
+
+commit 1a8f28e578cdca685f4e579c28685a12cd938b10
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 19 06:36:25 2018 +0200
+
+    Omega via svn r17458:
+    Even more debug to try and figure out what breaks the 4 before repeat sequences some pulls
+    Once again disable prediction since it?\226?\128?\153s clear this problem won?\226?\128?\153t be fixed so I just need to figure out exact cause and account for it somehow.
+
+commit 95cbab70707092cd4521eb2e188d4bae4e77492e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 19 05:04:13 2018 +0200
+
+    Omega via svn r17457:
+    Final version
+
+commit 0290db723b844e435884740f08a4eed7b2657d16
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 19 04:17:10 2018 +0200
+
+    Omega via svn r17456:
+    Working edition
+
+commit 6f36e0bf70324be0e6a029dc9fa4c3b0ec470b8c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 19 03:46:14 2018 +0200
+
+    Omega via svn r17455:
+    Fix two
+
+commit 3576fbeebf2c6479e4566140a60e63cfb6ab1363
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 19 03:27:14 2018 +0200
+
+    Omega via svn r17454:
+    First round of fixes
+
+commit 695b79e9274e22619204957c32c31b3f1bc385a2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 19 02:16:09 2018 +0200
+
+    Omega via svn r17453:
+    This is probably required
+
+commit 6d7075478cd9450883459474107c05718080dd5d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Apr 19 02:10:13 2018 +0200
+
+    Omega via svn r17452:
+    Experimental nameplate stuff that?\226?\128?\153s placeholder only until can properly be supported as a DBM-Nameplate feature one day
+
+commit 6b9c75b74ae3228cc3d85df9e5bcbb5de9d45722
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Apr 18 06:58:16 2018 +0200
+
+    Omega via svn r17451:
+    tweaks and cleanups to better handle kingaroth still somehow managing to start timers on a wipe
+
+commit 4e5cca3158a18c7a8c4b6bc0c808c92e7fb6de43
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Apr 18 06:34:08 2018 +0200
+
+    Omega via svn r17450:
+    Re-enable prediction for now, but add debug to help find cases where encounter bugs out on blizzards end to determine the cases it happens more accurately. It happens so infrequently that there has to be a niche case that can be spotted and coded around.
+
+commit 10e587ddbaed6df1f78cdeaba0a4f465e17619f0
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Apr 18 04:52:55 2018 +0200
+
+    Omega via svn r17449:
+    Also fix a taunt bug
+
+commit 2833d69c439f283a2d5c643e1c17ccbfab8e0fbc
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Apr 18 04:36:12 2018 +0200
+
+    Omega via svn r17448:
+    Just disable the smart prediction for now, since fight is bugged and blizz unlikley to ever fix it (sometimes aggramar can re-use a combo before he?\226?\128?\153s used all 4. happens maybe 1 in 10 pulls, but it?\226?\128?\153s enough to ruin having a better mod, since having prediction be wrong 10% of time is unacceptable. so now there is no prediction)
+
 commit 72840ca6be5b3259e37dbf98ceffed81e09491fa
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Apr 14 07:48:27 2018 +0200

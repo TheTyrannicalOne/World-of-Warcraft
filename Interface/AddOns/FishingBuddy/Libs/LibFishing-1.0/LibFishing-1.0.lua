@@ -7,7 +7,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 --]]
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 90987
+local MINOR_VERSION = 90988
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -611,6 +611,17 @@ local slotmap = {
 	[""] = { },
 };
 
+local infoslot = nil;
+function FishLib:GetInfoSlot()
+	if not infoslot then
+		infoslot = {}
+		for idx=1,17,1 do
+			infoslot[slotinfo[idx].id] = slotinfo[idx]
+		end
+	end
+	return infoslot
+end
+
 function FishLib:GetSlotInfo()
 	return INVSLOT_MAINHAND, INVSLOT_OFFHAND, slotinfo;
 end
@@ -862,7 +873,7 @@ end
 
 function FishLib:GetWornItem(get_id, slot)
 	local itemLink = GetInventoryItemLink("player", slot);
-	if ( not id ) then
+	if ( not get_id ) then
 		return itemLink;
 	end
 	_, id, _ = self:SplitFishLink(itemLink);
@@ -1426,11 +1437,20 @@ function FishLib:GetChatWindow(name)
 	return DEFAULT_CHAT_FRAME, nil;
 end
 
+local function HideHolder(self)
+	if not UnitAffectingCombat("player") then
+		self.holder:Hide();
+		self:SetScript("OnUpdate", nil);
+	else
+		self:SetScript("OnUpdate", HideHolder);
+	end
+end
+
 function FishLib:ResetOverride()
 	local btn = _G[SABUTTONNAME];
 	if ( btn ) then
-		btn.holder:Hide();
 		ClearOverrideBindings(btn);
+		HideHolder(btn)
 	end
 end
 
@@ -1718,59 +1738,58 @@ function FishLib:GetOutfitBonus()
 	return bonus + pole, lure;
 end
 
+function FishLib:GetBestFishingItem(slotid)
+	local item = nil
+	local maxb = 0;
+	if not infoslot then
+		self:GetInfoSlot()
+	end
+	local slotname = infoslot[slotid].name;
+
+	local link = GetInventoryItemLink("player", slotid);
+	if ( link ) then
+		maxb = self:FishingBonusPoints(link);
+		if (maxb > 0) then
+			item = { link=link, slot=slotid, bonus=maxb, slotname=slotname };
+		end
+	end
+
+	-- this only gets items in bags, hence the check above for slots
+	local itemtable = {}
+	itemtable = GetInventoryItemsForSlot(slotid, itemtable);
+	for location,id in pairs(itemtable) do
+		if (not ignore or not ignore[id]) then
+			local player, bank, bags, void, slot, bag = EquipmentManager_UnpackLocation(location);
+			if ( bags and slot and bag ) then
+				link = GetContainerItemLink(bag, slot);
+			else
+				link = nil;
+			end
+			if ( link ) then
+				local b = self:FishingBonusPoints(link);
+				if (b > maxb) then
+					maxb = b;
+					item = { link=link, bag=bag, slot=slot, slotname=slotname, bonus=maxb };
+				end
+			end
+		end
+	end
+	return item
+end
+
 -- return a list of the best items we have for a fishing outfit
 function FishLib:GetFishingOutfitItems(wearing, nopole, ignore)
-	local ibp = function(link) return self:FishingBonusPoints(link); end;
 	-- find fishing gear
 	-- no affinity, check all bags
 	local outfit = nil;
-	local itemtable = {};
 	for invslot=1,17,1 do
 		local slotid = slotinfo[invslot].id;
 		local ismain = (slotid == INVSLOT_MAINHAND);
 		if ( not nopole or not ismain ) then
-			local slotname = slotinfo[invslot].name;
-			local maxb = -1;
-			local link;
-			-- should we include what we're already wearing?
-			if ( wearing ) then
-				link = GetInventoryItemLink("player", slotid);
-				if ( link ) then
-					maxb = self:FishingBonusPoints(link);
-					if (maxb > 0) then
-						outfit = outfit or {};
-						outfit[invslot] = { link=link, slot=slotid };
-					end
-				end
-			end
-
-			-- this only gets items in bags, hence the check above for slots
-			wipe(itemtable);
-			itemtable = GetInventoryItemsForSlot(slotid, itemtable);
-			for location,id in pairs(itemtable) do
-				if (not ignore or not ignore[id]) then
-					local player, bank, bags, void, slot, bag = EquipmentManager_UnpackLocation(location);
-					if ( bags and slot and bag ) then
-						link = GetContainerItemLink(bag, slot);
-					else
-						link = nil;
-					end
-					if ( link ) then
-						local b = self:FishingBonusPoints(link);
-						local go = false;
-						if ( ismain ) then
-							go = self:IsFishingPole(link);
-						end
-						if (go or (b > 0)) then
-							local usable, _ = IsUsableItem(link);
-							if ( usable and (b > maxb) ) then
-								maxb = b;
-								outfit = outfit or {};
-								outfit[slotid] = { link=link, bag=bag, slot=slot, slotname=slotname };
-							end
-						end
-					end
-				end
+			item = self:GetBestFishingItem(slotid)
+			if item then
+				outfit = outfit or {};
+				outfit[slotid] = item
 			end
 		end
 	end

@@ -16,14 +16,14 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[35283423] = "Tailoring:Tanithria:Tailoring Trainer:603458",
 					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
 					[39773487] = "Jewelcrafting:Timothy Jones:Jewelcrafting Trainer:603431",
-					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
 					[52991513] = "Banker:Teller Hanners:Banker:616472",
+					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
 					[35412971] = "Leatherworking:Diane Cannings:Leather Armor Expert:603426",
 					[34772858] = "Leatherworking:Thanid Glowergold:Mail Armor Expert:624945",
 					[44582853] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:598403",
 					[65483242] = "Innkeeper:Uda the Beast:Innkeeper:616342",
 					[35782854] = "Skinning:Kondal Huntsworn:Skinning Trainer:603457",
-					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
+					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
 					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
 					[69913846] = "Cooking:Awilo Lon'gomba:Cooking Trainer:603446",
 					[52471473] = "Banker:Teller Rames:Banker:616471",
@@ -38,32 +38,29 @@ HandyNotes_SpecialNPCsEtcDB = {
 				["Zangarmarsh"] = {
 					[31814969] = "Stable:Khalan:Stable Master:98884",
 				},
-				["Suramar"] = {
-					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
-					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
-				},
 				["ArgusMacAree"] = {
 					[49396934] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
 				},
 				["Silverpine"] = {
 					[42884092] = "Blacksmithing:Guillaume Sorouy:Blacksmithing Trainer:13655",
 				},
-				["Orgrimmar"] = {
-					[67745315] = "Banker:Binzella:Banker:288281",
-					[48788382] = "Banker:Rilgiz:Banker:280658",
-					[48918360] = "Banker:Perixa:Banker:280662",
-					[67885279] = "Banker:Fibi:Banker:288280",
-					[67305312] = "Banker:Vink:Banker:288288",
+				["ArgusSurface"] = {
+					[47197541] = "Stable:Tassia Whisperglen:Stable Master:615687",
+					[64376264] = "Stable:Lead Rider Jerek:Stable Master:1204576",
+					[50587459] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
+					[62694761] = "Stable:Raelaara the Kind:Stable Master:1210194",
 				},
 				["Highmountain"] = {
 					[55098414] = "Mining:Ronos Ironhorn:Mining Trainer:603793",
+					[40005250] = "Innkeeper:Greta Stonebrow:Innkeeper:606361",
 					[59928030] = "Innkeeper:Folla Sternhoof:Innkeeper:1050438",
 					[55128420] = "Blacksmithing:Barm Stonebreaker:Blacksmithing Trainer:598594",
+					[54658413] = "Blacksmithing:Muirn Ironhorn:Blacksmithing Trainer:598595",
 				},
 				["garrisonffhorde_tier3"] = {
 					[42095354] = "Innkeeper:Provisioner Rashma:Innkeeper:524625",
 					[59032585] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
-					[48343236] = "Banker:Yorn Longhoof:Banker:497762",
+					[48603449] = "Banker:Yorn Longhoof:Banker:497762",
 				},
 				["BladesEdgeMountains"] = {
 					[76076030] = "Innkeeper:Matron Varah:Innkeeper:135304",
@@ -80,22 +77,28 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[56693457] = "Innkeeper:Matron Tikkit:Innkeeper:100627",
 					[56093744] = "Armorsmith:Osrok the Immovable:Armorsmith & Blacksmithing Supplies:102417",
 				},
+				["Orgrimmar"] = {
+					[67745315] = "Banker:Binzella:Banker:288281",
+					[48788382] = "Banker:Rilgiz:Banker:280658",
+					[48918360] = "Banker:Perixa:Banker:280662",
+					[67885279] = "Banker:Fibi:Banker:288280",
+					[67305312] = "Banker:Vink:Banker:288288",
+				},
 				["Durotar"] = {
 					[52014179] = "Stable:Shoja'my:Stable Master:39303",
 					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
 				},
-				["Netherstorm"] = {
-					[32036441] = "Innkeeper:Innkeeper Remi Dodoso:Innkeeper:103793",
-					[32126483] = "Stable:Liza Cutlerflix:Stable Master:149876",
+				["Suramar"] = {
+					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
+					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
 				},
 				["ShadowmoonValley"] = {
 					[29212942] = "Stable:Gedrah:Stable Master:135990",
 					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
 				},
-				["ArgusSurface"] = {
-					[64376264] = "Stable:Lead Rider Jerek:Stable Master:1204576",
-					[50587459] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
-					[62694761] = "Stable:Raelaara the Kind:Stable Master:1210194",
+				["Netherstorm"] = {
+					[32036441] = "Innkeeper:Innkeeper Remi Dodoso:Innkeeper:103793",
+					[32126483] = "Stable:Liza Cutlerflix:Stable Master:149876",
 				},
 				["ValeofEternalBlossoms"] = {
 					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",

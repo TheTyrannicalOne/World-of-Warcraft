@@ -144,7 +144,7 @@ local function UseThisBobber(itemid, info)
         canuse = (GetItemCount(itemid) > 0)
 	end
     if (canuse and not FL:HasBuff(info.buff)) then
-        return canuse
+        return itemid, canuse
     end
 
     -- return nil
@@ -168,10 +168,11 @@ local function SpecialBobberPlan(queue)
 				return
 			end
 
-			if UseThisBobber(id, bobber) then
+			local itemid, canuse = UseThisBobber(id, bobber);
+			if canuse then
 				ClearSpecialBobberBuffs()
 				tinsert(queue, {
-					["itemid"] = id,
+					["itemid"] = itemid,
 					["name"] = bobber[CurLoc],
 					["targetid"] = nil
 				})

@@ -145,6 +145,7 @@ FishingTranslations["enUS"] = {
 
 	CONFIG_FISHINGCHARM_INFO  = "If enabled, use the fishing charm while in Pandaria.",
 	CONFIG_TUSKAARSPEAR_INFO  = "If enabled, do the complicated dance to use the Tuskaar Spear.",
+	CONFIG_TRAWLERTOTEM_INFO  = "If enabled, use the toy.",
 
 	CONFIG_FISHINGRAFT_INFO   = "If enabled, use the fishing raft.",
 	CONFIG_MAINTAINRAFT_INFO  = "If enabled, do not use the raft item, only maintain it if it is already being used.",

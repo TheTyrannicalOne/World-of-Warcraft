@@ -30,7 +30,7 @@ H: 424
 Frame: ChannelPulloutTab
 FrameLevel: 1
 Anchor: RIGHT
-X: 3530
+X: 3534
 Y: 61
 W: 90
 H: 32
@@ -79,8 +79,8 @@ H: 24
 Frame: WQGFManualActionsFrame
 FrameLevel: 0
 Anchor: CENTER
-X: -15
-Y: 55
+X: -14
+Y: 42
 W: 370
 H: 110
 Frame: SpellActivationOverlayFrame

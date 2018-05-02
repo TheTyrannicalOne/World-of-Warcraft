@@ -1531,6 +1531,20 @@ FishingBuddy.GetFishie = function(fishid)
 	end
 end
 
+local function PushOptionChanges()
+	FL:WatchBobber(FishingBuddy.GetSettingBool("WatchBobber"));
+	FL:SetSAMouseEvent(FishingBuddy.GetSetting("MouseEvent"));
+	FishingBuddy.WatchUpdate();
+
+	if (false) then
+		if (FishingBuddy.GetSettingBool("CreateMacro")) then
+			CreateFishingMacro();
+		else
+			DeleteMacro(FBConstants.MACRONAME);
+		end
+	end
+end
+
 -- do everything we think is necessary when we start fishing
 -- even if we didn't do the switch to a fishing pole
 local resetClickToMove = nil;
@@ -1775,16 +1789,7 @@ FishingBuddy.Commands[FBConstants.FISHINGMODE].func =
 	end;
 
 local function OptionsUpdate(changed, closing)
-	FL:WatchBobber(FishingBuddy.GetSettingBool("WatchBobber"));
-	FL:SetSAMouseEvent(FishingBuddy.GetSetting("MouseEvent"));
-
-	if (false) then
-		if (FishingBuddy.GetSettingBool("CreateMacro")) then
-			CreateFishingMacro();
-		else
-			DeleteMacro(FBConstants.MACRONAME);
-		end
-	end
+	PushOptionChanges(changed, closing)
 	RunHandlers(FBConstants.OPT_UPDATE_EVT, changed, closing);
 end
 FishingBuddy.OptionsUpdate = OptionsUpdate;
@@ -2082,7 +2087,6 @@ FishingBuddy.OnEvent = function(self, event, ...)
 
 		FishingBuddy.OptionsFrame.HandleOptions(name, "Interface\\Icons\\INV_Fishingpole_02", CastingOptions);
 		FishingBuddy.OptionsFrame.HandleOptions(nil, nil, InvisibleOptions);
-		FishingBuddy.OptionsUpdate();
 
 		-- make sure we have the Macro globals
 		-- if (not IsAddOnLoaded("Blizzard_MacroUI")) then

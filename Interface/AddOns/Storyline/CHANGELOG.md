@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.13](https://github.com/Ellypse/Storyline/compare/2.0.12...2.0.13) - 2018-04-18
+
+### Fixed
+
+- Fixed an error when displaying the tooltip for currency quest objectives (order hall resources, nethershards, etc.).
+
+### Fixed
+
+- You can now right-click the objectives and rewards popup frames to close them.
+
+### Modified
+
+- Updated libraries and in-game list of Patreon supporters.
+
 ## [2.0.12](https://github.com/Ellypse/Storyline/compare/2.0.11...2.0.12) - 2018-04-01
 
 ### Removed

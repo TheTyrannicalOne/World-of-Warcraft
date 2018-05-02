@@ -111,7 +111,7 @@ GottaGoFastDB = {
 			["Version"] = 26500,
 		},
 		["Shanyt - Argent Dawn"] = {
-			["Version"] = 26500,
+			["Version"] = 27000,
 		},
 		["Brotuss - Zul'jin"] = {
 			["Version"] = 26500,

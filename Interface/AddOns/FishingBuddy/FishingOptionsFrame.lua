@@ -283,6 +283,7 @@ local function HandleOptions(name, icon, options, setter, getter, last, frame)
 							ProcessOptions(rec.name, rec.icon, rec.options, rec.setter, rec.getter, rec.last, rec.frame);
 						end
 						_delayedoptions = nil;
+						FishingBuddy.OptionsUpdate(true, false)
 					end
 					_delayedframe:Hide();
 				end);
@@ -503,6 +504,7 @@ local function SetMappedValue(self, what, value)
 	FishingBuddy.SetSetting(what, value);
 	UIDropDownMenu_SetSelectedValue(self, show);
 	UIDropDownMenu_SetText(self, show);
+	FishingBuddy.OptionsUpdate();
 end
 
 local function LoadMappedMenu(keymenu)

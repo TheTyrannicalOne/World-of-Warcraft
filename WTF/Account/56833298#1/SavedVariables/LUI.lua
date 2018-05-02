@@ -460,13 +460,13 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1557.8359375,
+						["CoordX"] = 1560.1376953125,
 						["ItemQuality"] = true,
-						["CoordY"] = 775.695983886719,
+						["CoordY"] = 776.463562011719,
 					},
 					["Reagents"] = {
-						["CoordY"] = 880.318542480469,
-						["CoordX"] = 625.893676757813,
+						["CoordY"] = 878.783569335938,
+						["CoordX"] = 620.521179199219,
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
@@ -2610,7 +2610,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 3066421279,
+							["Shanyt"] = 4393190531,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2643,9 +2643,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
-							["Serbitechna"] = 7681888,
 							["Brewnheimer"] = 836,
 							["Dialdaas"] = 11338409,
+							["Serbitechna"] = 7681888,
 						},
 					},
 				},
@@ -2682,38 +2682,38 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/g TY", -- [1]
-							"/p Hi", -- [2]
-							"/p gigady", -- [3]
-							"/g TY", -- [4]
-							"/p gigady", -- [5]
-							"/p boss", -- [6]
-							"/p TY", -- [7]
-							"/p TY and GJ", -- [8]
-							"/p til next week", -- [9]
-							"/g TY", -- [10]
-							"/salute", -- [11]
-							"/p Hi", -- [12]
-							"/p it gave me credit", -- [13]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [1]
+							"/p gigady", -- [2]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [3]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [4]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [5]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [6]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [7]
+							"/p gigady", -- [8]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [9]
+							"/p gigady", -- [10]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [11]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [12]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [13]
 							"/p gigady", -- [14]
-							"/salute", -- [15]
-							"/g TY", -- [16]
-							"/p Hi", -- [17]
-							"/p gigady", -- [18]
-							"/g TY", -- [19]
-							"/p gigady", -- [20]
-							"/p boss", -- [21]
-							"/p TY and GJ", -- [22]
-							"/g TY", -- [23]
-							"/p Hi", -- [24]
-							"/p gigady", -- [25]
-							"/g TY", -- [26]
-							"/p gigady", -- [27]
-							"/p boss", -- [28]
-							"/g TY", -- [29]
-							"/p gigady", -- [30]
-							"/p boss", -- [31]
-							"/p gigady", -- [32]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [15]
+							"/p gigady", -- [16]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [17]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [18]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [19]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [20]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [21]
+							"/p gigady", -- [22]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [23]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [24]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [25]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [26]
+							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [27]
+							"/p gigady", -- [28]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [29]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [30]
+							"/p gigady", -- [31]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [32]
 						},
 					},
 				},

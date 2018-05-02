@@ -208,3 +208,24 @@ function GottaGoFast.HandleGossip()
     GottaGoFast.HandleSpy(mobID);
   end
 end
+
+-- Checks Nil And Gathers Data
+-- Mob Percentage Is Expected 10x Too High
+-- I.E 7% = 7 instead of .7
+function GottaGoFast.CalculateIndividualMobPointsWrapper(mobPercentage)
+  if (ggf.inCM == true and ggf.CurrentCM ~= nil 
+      and next(ggf.CurrentCM) ~= nil and ggf.CurrentCM["Steps"] ~= nil
+      and ggf.CurrentCM["FinalValues"] ~= nil and ggf.CurrentCM["FinalValues"][ggf.CurrentCM["Steps"]] ~= nil) then
+        mobPercentage = mobPercentage * .1
+        local totalMobPoints = ggf.MobPointsToInteger(ggf.CurrentCM["FinalValues"][ggf.CurrentCM["Steps"]]);
+        return ggf.CalculateIndividualMobPoints(mobPercentage, totalMobPoints);
+  else 
+    ggf.Utility.DebugPrint("Trying to calculate individual mob points, but a value is nil!");
+    return nil;
+  end
+end
+
+-- Expecting 2 Numbers, Non Nil
+function GottaGoFast.CalculateIndividualMobPoints(mobPercentage, totalMobPoints)
+  return mobPercentage * totalMobPoints;
+end

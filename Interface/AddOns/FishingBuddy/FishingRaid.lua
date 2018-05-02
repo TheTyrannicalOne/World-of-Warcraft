@@ -12,6 +12,8 @@ local GSB = FishingBuddy.GetSettingBool;
 
 local MARGOSS_RETREAT = "Margoss's Retreat"
 
+local CurLoc = GetLocale();
+
 local RaidOptions = {
 	["FishingRaid"] = {
 		["text"] = FBConstants.CONFIG_FISHINGRAID_ONOFF,
@@ -92,27 +94,18 @@ RaidCurrency[138777] = {
 
 local RaidBosses = {
 	{
-		["boss"] = "Sha'leth",
-		["area"] = 1033,
-		["currency"] = 146962,
-		["fish"] = {
-			["enUS"] = "Glowing Fish Scale",
-			["id"] = 146968,
-			zone = "Suramar",
-		}
-	},
-	{
-		["boss"] = "Impus",
-		["area"] = 1021,
-		["currency"] = 146963,
-		["fish"] = {
-			["enUS"] = "Faintly Pulsing Felstone",
-			["id"] = 146969,
-			zone = "Broken Shore",
-		}
-	},
-	{
-		["boss"] = "Ilyssia of the Waters",
+		["faction"] = 2097,
+		["ruRU"] = "Илиссия Водная",
+		["zhTW"] = "“活水”伊丽西娅",
+		["frFR"] = "Ilyssia des Eaux",
+		["itIT"] = "Ilyssia delle Acque",
+		["deDE"] = "Ilyssia von den Wassern",
+		["enGB"] = "Ilyssia of the Waters",
+		["esES"] = "Ilyssia de las Aguas",
+		["enUS"] = "Ilyssia of the Waters",
+		["zhCN"] = "“活水”伊丽西娅",
+		["ptBR"] = "Ilyssia das Águas",
+		["koKR"] = "물의 일리시아",
 		["area"] = 1015,
 		["currency"] = 146848,
 		["fish"] = {
@@ -122,7 +115,18 @@ local RaidBosses = {
 		}
 	},
 	{
-		["boss"] = "Keeper Rayne",
+		["faction"] = 2098,
+		["ruRU"] = "Хранительница Рейна",
+		["zhTW"] = "守护者蕾娜",
+		["frFR"] = "Gardienne Raynae",
+		["itIT"] = "Custode Raynae",
+		["deDE"] = "Hüterin Raynae",
+		["enGB"] = "Keeper Raynae",
+		["esES"] = "Guardiana Raynae",
+		["enUS"] = "Keeper Raynae",
+		["zhCN"] = "守护者蕾娜",
+		["ptBR"] = "Guardiã Raynae",
+		["koKR"] = "수호자 레이내",
 		["area"] = 1018,
 		["currency"] = 146959,
 		["fish"] = {
@@ -132,7 +136,18 @@ local RaidBosses = {
 		}
 	},
 	{
-		["boss"] = "Akule Riverhorn",
+		["faction"] = 2099,
+		["ruRU"] = "Акуле Речной Рог",
+		["zhTW"] = "阿库勒·河角",
+		["frFR"] = "Akule Ruissecorne",
+		["itIT"] = "Akule Corno Sinuoso",
+		["deDE"] = "Akule Flusshorn",
+		["enGB"] = "Akule Riverhorn",
+		["esES"] = "Akule Cuerno de Río",
+		["enUS"] = "Akule Riverhorn",
+		["zhCN"] = "阿库勒·河角",
+		["ptBR"] = "Akule Chifre do Rio",
+		["koKR"] = "아쿨레 리버혼",
 		["area"] = 1080,
 		["currency"] = 146960,
 		["fish"] = {
@@ -142,7 +157,18 @@ local RaidBosses = {
 		}
 	},
 	{
-		["boss"] = "Corbyn",
+		["faction"] = 2100,
+		["ruRU"] = "Корбин",
+		["zhTW"] = "科尔宾",
+		["frFR"] = "Corbyn",
+		["itIT"] = "Corbyn",
+		["deDE"] = "Corbyn",
+		["enGB"] = "Corbyn",
+		["esES"] = "Corbyn",
+		["enUS"] = "Corbyn",
+		["zhCN"] = "科尔宾",
+		["ptBR"] = "Corbyn",
+		["koKR"] = "코르빈",
 		["area"] = 1017,
 		["currency"] = 146961,
 		["fish"] = {
@@ -152,7 +178,60 @@ local RaidBosses = {
 		}
 	},
 	{
-		["boss"] = "Conjurer Margoss",
+		["faction"] = 2101,
+		["ruRU"] = "Ша'лет",
+		["zhTW"] = "莎乐丝",
+		["frFR"] = "Sha’leth",
+		["itIT"] = "Sha'leth",
+		["deDE"] = "Sha'leth",
+		["enGB"] = "Sha'leth",
+		["esES"] = "Sha'leth",
+		["enUS"] = "Sha'leth",
+		["zhCN"] = "莎乐丝",
+		["ptBR"] = "Sha'leth",
+		["koKR"] = "샤레스",
+		["area"] = 1033,
+		["currency"] = 146962,
+		["fish"] = {
+			["enUS"] = "Glowing Fish Scale",
+			["id"] = 146968,
+			zone = "Suramar",
+		}
+	},
+	{
+		["faction"] = 2102,
+		["ruRU"] = "Бесс",
+		["zhTW"] = "英帕斯",
+		["frFR"] = "Diablotus",
+		["itIT"] = "Impus",
+		["deDE"] = "Wichtlus",
+		["enGB"] = "Impus",
+		["esES"] = "Diablillus",
+		["enUS"] = "Impus",
+		["zhCN"] = "英帕斯",
+		["ptBR"] = "Diabrius",
+		["koKR"] = "임푸스",
+		["area"] = 1021,
+		["currency"] = 146963,
+		["fish"] = {
+			["enUS"] = "Faintly Pulsing Felstone",
+			["id"] = 146969,
+			zone = "Broken Shore",
+		}
+	},
+	{
+		["faction"] = 1975,
+		["ruRU"] = "Кудесник Маргосс",
+		["zhTW"] = "咒法师马戈斯",
+		["frFR"] = "Adjurateur Margoss",
+		["itIT"] = "Evocatore Margoss",
+		["deDE"] = "Beschwörer Margoss",
+		["enGB"] = "Conjurer Margoss",
+		["esES"] = "Conjurador Margoss",
+		["enUS"] = "Conjurer Margoss",
+		["zhCN"] = "咒法师马戈斯",
+		["ptBR"] = "Conjurador Margoss",
+		["koKR"] = "창조술사 마르고스",
 		["area"] = 1014,
 		["currency"] = 138777,
 		["fish"] = {
@@ -166,29 +245,34 @@ local RaidBosses = {
 
 local lastday = 0
 local bossadex = 0
+local lastday = 0
+local bossadex = 0
 local function CurrentBoss()
 	local zone, subzone = FL:GetZoneInfo();
 
 	if subzone == MARGOSS_RETREAT then
 		return RaidBosses[7]
 	else
-		local _, _, today, _ = CalendarGetDate()
-		if today ~= lastday then
-			local month, year, numdays, firstday = CalendarGetMonth()
-
-			local startyear = 2018
-			local startmonth = 1
-			local firstboss = 1
-
-			local minus = startmonth - month + (startyear - year) * 12
-			local days = firstboss
-			for offset=minus,-1 do
-				local _, _, n, _ = CalendarGetMonth(offset)
-				days = days + n
-			end
-			days = days + today
-			bossadex = (days % 6) + 1
+		-- Set initial time window to server reset time on 2018/01/01 for each region, or 00:00 UTC if unknown.
+		region = GetCurrentRegion()
+		if region == 1 then
+			start_time = 1514818800    -- NA Realm; 2018/01/01 15:00 UTC
+		elseif region == 2 then
+			start_time = 1514768400    -- KR Realm, 2018/01/01 01:00 UTC (guess)
+		elseif region == 3 then
+			start_time = 1514793600    -- EU Realm, 2018/01/01 08:00 UTC
+		elseif region == 4 then
+			start_time = 1514768400    -- TW Realm, 2018/01/01 01:00 UTC
+		elseif region == 5 then
+			start_time = 1514768400    -- CN Realm, 2018/01/01 01:00 UTC (guess)
+		else
+			start_time = 1514764800    -- Unknown Region, set to 2018/01/01 00:00 UTC
 		end
+
+		-- Get number of whole days (rounded down) that have elapsed since the initial date/time above
+		days = math.floor((GetServerTime() - start_time) / 86400)
+
+		bossadex = (days % 6) + 1
 		if bossadex > 0 then
 			return RaidBosses[bossadex]
 		end
@@ -211,8 +295,15 @@ local function DisplayRaidFish()
 	local info = CurrentBoss()
 	if info then
 		local label = CHAT_MSG_RAID;
+		if not info[CurLoc] then
+			if CurLoc == 'esMX' then
+				info[CurLoc] = info.esES;
+			else
+				info[CurLoc] = info.enUS;
+			end
+		end
 		if info then
-			label = label.." "..BOSS.." "..info.boss
+			label = label.." "..BOSS.." "..info[CurLoc]
 		end
 		label = label..": "
 

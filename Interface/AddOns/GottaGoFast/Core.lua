@@ -111,6 +111,15 @@ function GottaGoFast:UPDATE_MOUSEOVER_UNIT()
       local weight = ggf.LOP:GetNPCWeightByMap(mapID, npcID, isTeeming, upper);
       if (weight ~= nil) then
         local appendString = string.format(" (%.2f%%)", weight);
+
+        -- Give Point Estimate
+        if (GottaGoFast.GetMobPoints(nil)) then
+          local mobPoints = ggf.CalculateIndividualMobPointsWrapper(weight)
+          if (mobPoints ~= nil) then
+            appendString = appendString .. string.format(" [%.2f]", mobPoints)
+          end
+        end
+
         GameTooltip:AppendText(appendString);
       end
     end

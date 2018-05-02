@@ -154,7 +154,8 @@ credits[FBConstants.ROLE_HELP_SUGGESTIONS] = {
 	["El's Extreme Anglin'"] = { "Subzone fishing levels", "Fishing skill up table" },
 	["brykrys"] = { "Corpse Worm" },
 	["Ross"] = { "Improved action button" },
-	["p3lim"] = { "For the ExtraQuestButton addon!"}
+	["p3lim"] = { "For the ExtraQuestButton addon!" },
+	["Zeglar"] = { "Raid Boss and server reset time" }
 };
 
 credits[FBConstants.ROLE_ADDON_AUTHORS] = {
