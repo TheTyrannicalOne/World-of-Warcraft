@@ -130,7 +130,9 @@ SET gxVSync "1"
 SET Sound_MasterVolume "1"
 
 SET hdPlayerModels "1"
-SET gxWindowedResolution "3620x2036"
-SET gxFullscreenResolution "3620x2036"
+SET gxWindowedResolution "2560x1440"
+SET gxFullscreenResolution "2560x1440"
 SET MSAAAlphaTest "1"
 SET ffxAntiAliasingMode "3"
+
+
