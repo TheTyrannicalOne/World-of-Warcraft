@@ -283,7 +283,7 @@ local function CheckMagicFish()
 	local button = _G['FishingActionButton'];
 	local zone, subzone = FL:GetZoneInfo();
 
-	return FL:HasBuff(button.buff) or subzone == "Margoss's Retreat";
+	return FL:HasBuff(button.spell) or subzone == "Margoss's Retreat";
 end
 
 -- Handle display of caught Pagle fish
@@ -553,7 +553,7 @@ RaidEvents["VARIABLES_LOADED"] = function(started)
 	button:RegisterEvent('BAG_UPDATE_DELAYED');
 
     -- Something's Fishy
-    button.buff = GetSpellInfo(239673)
+    button.spell = 239673;
 
 	button:SetItem()
 

@@ -9,8 +9,8 @@ DBMWorldEvents_AllSavedVars = {
 				["SpecWarn68927gtfo"] = true,
 				["TrioActiveTimerTColor"] = 1,
 				["TrioActiveTimer"] = true,
-				["Timer68821cast"] = true,
 				["SpecWarn68927gtfoSWSound"] = 1,
+				["Timer68821cast"] = true,
 				["SpecWarn68927gtfoSWNote"] = true,
 			}, -- [1]
 			{
@@ -101,8 +101,8 @@ DBMWorldEvents_AllSavedVars = {
 				["Timer47310cast2"] = true,
 				["Timer47376targetTColor"] = 3,
 				["specWarnBrewStunSWSound"] = 1,
-				["Timer47340targetTColor"] = 3,
 				["Yell47442"] = false,
+				["Timer47340targetTColor"] = 3,
 				["specWarnBrewSWNote"] = true,
 				["Timer47310cast2TColor"] = 2,
 			}, -- [1]

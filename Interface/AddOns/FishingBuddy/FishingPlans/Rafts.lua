@@ -29,12 +29,10 @@ RaftItems[BERG_ID] = {
 };
 
 local function HasRaftBuff()
-	local bergbuff = GetSpellInfo(RaftItems[BERG_ID].spell);
-	local raftbuff = GetSpellInfo(RaftItems[RAFT_ID].spell);
-	local hasberg = FL:HasBuff(bergbuff);
-	local hasraft = FL:HasBuff(raftbuff);
+	local hasberg = FL:HasBuff(RaftItems[BERG_ID].spell);
+	local hasraft = FL:HasBuff(RaftItems[RAFT_ID].spell);
 
-	return bergbuff, raftbuff, hasberg, hasraft
+	return RaftItems[BERG_ID].spell, RaftItems[RAFT_ID].spell, hasberg, hasraft
 end
 FishingBuddy.HasRaftBuff = HasRaftBuff
 
@@ -91,7 +89,7 @@ local function SetupRaftOptions()
         options["OverWalking"] = {
             ["text"] = FBConstants.CONFIG_OVERWALKING_ONOFF,
             ["tooltip"] = FBConstants.CONFIG_OVERWALKING_INFO,
-            ["default"] = true,
+            ["default"] = false,
             ["v"] = 1,
             ["parents"] = { [RaftOption] = "d", }
         };
@@ -103,14 +101,14 @@ end
 
 -- Don't cast the angler's raft if we're doing Scavenger Hunt or on Inkgill Mere
 local function RaftBergUsable()
-    if not GSB(RaftOption) or IsMounted() then
+    if (not GSB(RaftOption) or IsMounted()) then
         return false
-    elseif FL:HasBuff(GetSpellInfo(201944)) then
+    elseif FL:HasBuff(201944) then
         -- Surface Tension
         return GSB("OverWalking");
     else
         -- Raft quests
-        return not (FL:HasBuff(GetSpellInfo(116032)) or FL:HasBuff(GetSpellInfo(119700)));
+        return not (FL:HasBuff(116032) or FL:HasBuff(119700));
     end
 end
 
@@ -120,12 +118,16 @@ local function RaftingPlan(queue)
         local bergbuff, raftbuff, hasberg, hasraft = HasRaftBuff();
 
         local need = not (hasberg or hasraft);
+        if (not need) then
+            return false
+        end
+
         -- if we need it, but we're maintaining only, skip it
         if (GSB("BergMaintainOnly") and need) then
             return false;
         end
 
-        local buff, itemid, name
+        local buff, itemid, name;
         if (not hasraft and haveBerg and GSB("UseBobbingBerg")) then
             buff = bergbuff;
             itemid = BERG_ID;
@@ -146,6 +148,7 @@ local function RaftingPlan(queue)
         end
     end
 end
+FishingBuddy.RaftingPlan = RaftingPlan;
 
 local RaftEvents = {}
 RaftEvents[FBConstants.FIRST_UPDATE_EVT] = function()

@@ -18,7 +18,6 @@ local ZoneFishingTime = 0;
 local TotalTimeFishing = nil;
 
 local FL = LibStub("LibFishing-1.0");
-local LT = LibStub("LibTourist-3.0");
 local LW = LibStub("LibWindow-1.1");
 
 local FBAPI = LibStub("FishingBuddyApi-1.0");
@@ -479,7 +478,7 @@ WatchEvents["SKILL_LINES_CHANGED"] = function()
 	end
 end
 
-WatchEvents["SPELLCAST_STOP"] = function()
+WatchEvents["UNIT_SPELLCAST_STOP"] = function()
 	if ( FishingWatchFrame:IsVisible() ) then
 		-- update the skill line if we have one
 		if ( FishingBuddy.GetSettingBool("WatchCurrentSkill") ) then

@@ -1146,7 +1146,7 @@ local function GetFishingItem(itemtable)
 				info[CurLoc] = GetItemInfo(itemid);
 			end
 			if ( not info.usable or info.usable(info) ) then
-				local buff = GetSpellInfo(info.spell);
+				local buff = info.spell;
 				local doit = not FL:HasBuff(buff);
 				local it = nil;
 				if ( info.check ) then
@@ -1340,7 +1340,7 @@ local function ClearAddingLure()
 end
 
 -- we don't want to interrupt ourselves if we're casting.
-local fishing_buff = GetSpellInfo(131474)
+local fishing_buff = 131474;
 local current_spell_id = nil
 local current_spell_name = nil
 CaptureEvents["UNIT_SPELLCAST_CHANNEL_START"] = function(unit, name, rank, lineid, spellid)
@@ -2172,8 +2172,6 @@ FishingBuddy.OnLoad = function(self)
 	SLASH_fishingbuddy2 = "/fb";
 
 	FishingBuddy.Output(FBConstants.WINDOW_TITLE.." loaded");
-
-	RegisterAddonMessagePrefix(FBConstants.MSGID)
 end
 
 FishingBuddy.PrintHelp = function(tab)

@@ -138,7 +138,7 @@ local function IsQuestFishing(item)
 
 	-- and intro quest baits
 	for _,bait in ipairs(QuestBaits) do
-		if (GetItemCount(bait.item) > 0 or FL:HasBuff(GetSpellInfo(bait.spell))) then
+		if (GetItemCount(bait.item) > 0 or FL:HasBuff(bait.spell)) then
 			return true;
 		end
 	end
@@ -146,9 +146,6 @@ end
 
 local function SetupSpecialItem(id, info, fixsetting, fixloc)
 	info.id = id
-	if (info.spell and not info.buff) then
-		info.buff = GetSpellInfo(info.spell);
-	end
 	if (fixsetting and info.enUS and not info.setting) then
 		info.setting = info.enUS:gsub("%s+", "")
 	end
@@ -167,9 +164,8 @@ end
 FishingBuddy.SetupSpecialItem = SetupSpecialItem
 
 local function AlreadyUsedFishingItem(id, info)
-	SetupSpecialItem(id, info)
-	if (info.buff) then
-		return FL:HasBuff(info.buff)
+	if (info.spell) then
+		return FL:HasBuff(info.spell)
 	end
 end
 
@@ -479,7 +475,7 @@ local function CurrentSpecialBait()
 	if (baits) then
 		for _,id in ipairs(baits) do
 			local bait = FishingItems[id];
-			if (bait and FL:HasBuff(GetSpellInfo(bait.spell))) then
+			if (bait and FL:HasBuff(bait.spell)) then
 				return id;
 			end
 		end
@@ -493,10 +489,7 @@ local function CheckSpecialBait(info, buff, need)
 		if ( GSB("DraenorBaitMaintainOnly") and LastSpecialBait ) then
 			return true, LastSpecialBait;
 		else
-			if (not info.buff) then
-				info.buff = GetSpellInfo(info.spell);
-			end
-			if (not FL:HasBuff(info.buff)) then
+			if (not FL:HasBuff(info.spell)) then
 				return true, info.id;
 			end
 		end

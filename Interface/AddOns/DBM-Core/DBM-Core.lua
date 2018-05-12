@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17478 $"):sub(12, -3)),
-	DisplayVersion = "7.3.27 alpha", -- the string that is shown as version
-	ReleaseRevision = 17424 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 17517 $"):sub(12, -3)),
+	DisplayVersion = "7.3.30 alpha", -- the string that is shown as version
+	ReleaseRevision = 17510 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -219,6 +219,7 @@ DBM.DefaultOptions = {
 	DontShowBossAnnounces = false,
 	DontShowTargetAnnouncements = true,
 	DontShowSpecialWarnings = false,
+	DontShowSpecialWarningText = false,
 	DontShowBossTimers = false,
 	DontShowUserTimers = false,
 	DontShowFarWarnings = true,
@@ -401,7 +402,7 @@ local breakTimerStart
 local AddMsg
 local delayedFunction
 
-local fakeBWVersion, fakeBWHash = 93, "aaab2d6"
+local fakeBWVersion, fakeBWHash = 97, "10064f7"
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
@@ -2155,12 +2156,12 @@ do
 		elseif cmd:sub(1, 8) == "whereiam" or cmd:sub(1, 8) == "whereami" then
 			if DBM:HasMapRestrictions() then
 				local _, _, _, map = UnitPosition("player")
-				local mapID = C_Map and C_Map.GetCurrentMapID() or GetCurrentMapAreaID()
+				local mapID = C_Map and C_Map.GetBestMapForUnit("player") or GetCurrentMapAreaID()
 				DBM:AddMsg(("Location Information\nYou are at zone %u (%s).\nLocal Map ID %u (%s)"):format(map, GetRealZoneText(map), mapID, GetZoneText()))
 			else
 				local x, y, _, map = UnitPosition("player")
 				SetMapToCurrentZone()
-				local mapID = C_Map and C_Map.GetCurrentMapID() or GetCurrentMapAreaID()
+				local mapID = C_Map and C_Map.GetBestMapForUnit("player") or GetCurrentMapAreaID()
 				local mapx, mapy = GetPlayerMapPosition("player")
 				DBM:AddMsg(("Location Information\nYou are at zone %u (%s): x=%f, y=%f.\nLocal Map ID %u (%s): x=%f, y=%f"):format(map, GetRealZoneText(map), x, y, mapID, GetZoneText(), mapx, mapy))
 			end
@@ -6294,31 +6295,51 @@ function DBM:GetSpellInfo(spellId)
 	end
 end
 
-function DBM:UnitDebuff(uId, spellInput)
+function DBM:UnitDebuff(uId, spellInput, spellInput2, spellInput3)
 	if wowTOC == 80000 then
 		for i = 1, 60 do
 			local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitDebuff(uId, i)
 			if not spellName then return end
-			if spellInput == spellName or spellInput == spellId then
+			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
 				return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 			end
 		end
 	else
-		return UnitDebuff(uId, spellInput)
+		if type(spellInput) == "number" then
+			for i = 1, 60 do
+				local spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitDebuff(uId, i)
+				if not spellName then return end
+				if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
+					return spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
+				end
+			end
+		else
+			return UnitDebuff(uId, spellInput)
+		end
 	end
 end
 
-function DBM:UnitBuff(uId, spellInput)
+function DBM:UnitBuff(uId, spellInput, spellInput2, spellInput3)
 	if wowTOC == 80000 then
 		for i = 1, 60 do
 			local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff(uId, i)
 			if not spellName then return end
-			if spellInput == spellName or spellInput == spellId then
+			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
 				return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 			end
 		end
 	else
-		return UnitBuff(uId, spellInput)
+		if type(spellInput) == "number" then
+			for i = 1, 60 do
+				local spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff(uId, i)
+				if not spellName then return end
+				if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
+					return spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
+				end
+			end
+		else
+			return UnitBuff(uId, spellInput)
+		end
 	end
 end
 
@@ -6561,10 +6582,10 @@ do
 	local function getNumRealAlivePlayers()
 		local alive = 0
 		local isInInstance = IsInInstance() or false
-		local currentMapId = isInInstance and select(4, UnitPosition("player")) or C_Map and C_Map.GetCurrentMapID() or GetPlayerMapAreaID("player")
+		local currentMapId = isInInstance and select(4, UnitPosition("player")) or C_Map and C_Map.GetBestMapForUnit("player") or GetPlayerMapAreaID("player")
 		if not currentMapId then--REMOVE in 8.x, C_Map should never fail
 			SetMapToCurrentZone()
-			currentMapId = C_Map and C_Map.GetCurrentMapID() or GetCurrentMapAreaID()
+			currentMapId = C_Map and C_Map.GetCurrentMapID("player") or GetCurrentMapAreaID()
 		end
 		local currentMapName = C_Map and C_Map.GetMapInfo(currentMapId) or GetMapNameByID(currentMapId)
 		if IsInRaid() then
@@ -6979,7 +7000,13 @@ do
 		local isInstance, instanceType = IsInInstance()
 		if not isInstance or C_Garrison:IsOnGarrisonMap() or instanceType == "scenario" or self.Options.MovieFilter == "Never" then return end
 		SetMapToCurrentZone()
-		local currentMapID = C_Map and C_Map.GetCurrentMapID() or GetCurrentMapAreaID()
+		local currentMapID
+		if C_Map then
+			currentMapID = C_Map.GetBestMapForUnit("player")
+		else
+			currentMapID = GetCurrentMapAreaID()
+		end
+		if not currentMapID then return end--Protection from map failures in zones that have no maps yet
 		local currentFloor = GetCurrentMapDungeonLevel and GetCurrentMapDungeonLevel() or 0--REMOVE In 8.x
 		if self.Options.MovieFilter == "Block" or self.Options.MovieFilter == "AfterFirst" and self.Options.MoviesSeen[currentMapID..currentFloor] then
 			CinematicFrame_CancelCinematic()
@@ -9421,7 +9448,7 @@ do
 	end
 
 	function specialWarningPrototype:Show(...)
-		if not DBM.Options.DontShowSpecialWarnings and (not self.option or self.mod.Options[self.option]) and not moving and frame then
+		if not DBM.Options.DontShowSpecialWarnings and not DBM.Options.DontShowSpecialWarningText and (not self.option or self.mod.Options[self.option]) and not moving and frame then
 			if self.announceType == "taunt" and DBM.Options.FilterTankSpec and not self.mod:IsTank() then return end--Don't tell non tanks to taunt, ever.
 			local argTable = {...}
 			-- add a default parameter for move away warnings
@@ -9538,7 +9565,7 @@ do
 	end
 
 	function specialWarningPrototype:CombinedShow(delay, ...)
-		if DBM.Options.DontShowSpecialWarnings then return end
+		if DBM.Options.DontShowSpecialWarnings or DBM.Options.DontShowSpecialWarningText then return end
 		if self.option and not self.mod.Options[self.option] then return end
 		local argTable = {...}
 		for i = 1, #argTable do
@@ -10620,7 +10647,11 @@ function bossModPrototype:AddInfoFrameOption(spellId, default)
 	end
 	self.Options["InfoFrame"] = (default == nil) or default
 	self:SetOptionCategory("InfoFrame", "misc")
-	self.localization.options["InfoFrame"] = DBM_CORE_AUTO_INFO_FRAME_OPTION_TEXT:format(spellId)
+	if spellId then
+		self.localization.options["InfoFrame"] = DBM_CORE_AUTO_INFO_FRAME_OPTION_TEXT:format(spellId)
+	else
+		self.localization.options["InfoFrame"] = DBM_CORE_AUTO_INFO_FRAME_OPTION_TEXT2
+	end
 end
 
 function bossModPrototype:AddReadyCheckOption(questId, default)
@@ -10708,6 +10739,10 @@ end
 
 function bossModPrototype:AddTimerLine(text)
 	return self:AddOptionLine(text, "timer")
+end
+
+function bossModPrototype:AddMiscLine(text)
+	return self:AddOptionLine(text, "misc")
 end
 
 function bossModPrototype:RemoveOption(name)

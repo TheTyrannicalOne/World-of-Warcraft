@@ -98,7 +98,7 @@ local GSR = FishingBuddy.GetSetting
 
 local function GetSpecialBobberBuff()
     for id,info in pairs(Bobbers) do
-        if (FL:HasBuff(info.buff)) then
+        if (FL:HasBuff(info.spell)) then
             return id, info
         end
     end
@@ -107,7 +107,7 @@ end
 local function ClearSpecialBobberBuffs()
 	local id, info = GetSpecialBobberBuff()
 	if (info) then
-		CancelUnitBuff("player", info.buff)
+		CancelUnitBuff("player", info.spell)
 	end
 end
 
@@ -143,7 +143,7 @@ local function UseThisBobber(itemid, info)
     else
         canuse = (GetItemCount(itemid) > 0)
 	end
-    if (canuse and not FL:HasBuff(info.buff)) then
+    if (canuse and not FL:HasBuff(info.spell)) then
         return itemid, canuse
     end
 
@@ -164,7 +164,7 @@ end
 local function SpecialBobberPlan(queue)
 	if GSB(BigBobbers[136377].setting) then
 		for id,bobber in pairs(BigBobbers) do
-			if FL:HasBuff(bobber.buff) then
+			if FL:HasBuff(bobber.spell) then
 				return
 			end
 
@@ -254,3 +254,23 @@ BobberEvents["VARIABLES_LOADED"] = function(started)
 end
 
 FishingBuddy.RegisterHandlers(BobberEvents);
+
+if ( FishingBuddy.Debugging ) then
+	FishingBuddy.Commands["bobbers"] = {};
+	FishingBuddy.Commands["bobbers"].func =
+		function()
+			local baits = {};
+			for _,id in ipairs(bobberkeys) do
+				if (PlayerHasToy(id) and C_ToyBox.IsToyUsable(id)) then
+					local start, duration, enable = GetItemCooldown(id);
+					local et = (start + duration) - GetTime();
+					print(id, et)
+					if (et <= 0) then
+						_, id = C_ToyBox.GetToyInfo(id);
+						tinsert(baits, id);
+					end
+				end
+			end
+			return true;
+		end
+end

@@ -1,16 +1,10 @@
-tag fc8c6cd07b68617633456840cc9cd78408ac5dea 7.3.5.10
+tag fced2c1506076dda2bab9aba594298bdbd7a7a6d 7.3.5.11
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Tue May 1 02:10:32 2018 -0500
+Date:	Fri May 4 03:15:48 2018 -0500
 
-commit cb0afb86589f5970c48a5e05fe5a44e4fdaf8ae9
+commit e9b6bf14d457fe7f05d34d934844a6e8e66c5518
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Tue May 1 02:09:50 2018 -0500
+Date:   Fri May 4 03:07:00 2018 -0500
 
-    Add "Battle of the Barnacle" vignetteName for Rattleskew.
-
-commit 1930cc89930ce2c381c7ce8256c05f23c9800791
-Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Tue May 1 02:08:56 2018 -0500
-
-    Add "Soulgrinder Portal" vignetteName for Gorivax
+    Add support for The Song of Silence achievement.
 

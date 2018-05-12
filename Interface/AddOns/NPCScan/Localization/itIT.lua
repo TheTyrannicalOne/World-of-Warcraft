@@ -2,12 +2,9 @@ local AddOnFolderName, private = ...
 local L = _G.LibStub("AceLocale-3.0"):NewLocale(AddOnFolderName, "itIT")
 if not L then return end
 
---[[Translation missing --]]
---[[ L["%1$s (%2$d) is already on the user-defined NPC list."] = "%1$s (%2$d) is already on the user-defined NPC list."--]] 
---[[Translation missing --]]
---[[ L["%1$s (%2$d) is not on the user-defined NPC list."] = "%1$s (%2$d) is not on the user-defined NPC list."--]] 
---[[Translation missing --]]
---[[ L["Added %1$s (%2$d) to the user-defined NPC list."] = "Added %1$s (%2$d) to the user-defined NPC list."--]] 
+L["%1$s (%2$d) is already on the user-defined NPC list."] = "%1$s (%2$d) è già nella lista degli NPC definiti dal giocatore."
+L["%1$s (%2$d) is not on the user-defined NPC list."] = "%1$s (%2$d) non è nella lista degli NPC definiti dal giocatore."
+L["Added %1$s (%2$d) to the user-defined NPC list."] = "%1$s (%2$d) è stato aggiunto alla lista degli NPC definiti dal giocatore."
 --[[Translation missing --]]
 --[[ L["Alerts"] = "Alerts"--]] 
 --[[Translation missing --]]
@@ -20,10 +17,8 @@ if not L then return end
 --[[ L["CENTER"] = "Center"--]] 
 --[[Translation missing --]]
 --[[ L["Completed Achievement Criteria"] = "Completed Achievement Criteria"--]] 
---[[Translation missing --]]
---[[ L["Completed Quest Objectives"] = "Completed Quest Objectives"--]] 
---[[Translation missing --]]
---[[ L["Dead NPCs"] = "Dead NPCs"--]] 
+L["Completed Quest Objectives"] = "Obiettivi delle quest completati"
+L["Dead NPCs"] = "NPC morti"
 --[[Translation missing --]]
 --[[ L["Detection"] = "Detection"--]] 
 --[[Translation missing --]]
@@ -42,10 +37,8 @@ if not L then return end
 --[[ L["Interval"] = "Interval"--]] 
 --[[Translation missing --]]
 --[[ L["LEFT"] = "Left"--]] 
---[[Translation missing --]]
---[[ L["NPCs"] = "NPCs"--]] 
---[[Translation missing --]]
---[[ L["Play alert sounds when sound is muted."] = "Play alert sounds when sound is muted."--]] 
+L["NPCs"] = "NPC"
+L["Play alert sounds when sound is muted."] = "Riproduci un suono quando il suono è disattivato."
 --[[Translation missing --]]
 --[[ L["Predefined NPCs cannot be added to or removed from the user-defined NPC list."] = "Predefined NPCs cannot be added to or removed from the user-defined NPC list."--]] 
 --[[Translation missing --]]

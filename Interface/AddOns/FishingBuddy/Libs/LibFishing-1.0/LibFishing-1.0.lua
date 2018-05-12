@@ -335,9 +335,6 @@ function FishLib:UpdateLureInventory()
 		if ( count > 0 ) then
 			local startTime, _, _ = GetItemCooldown(id);
 			if (startTime == 0) then
-				if not lure.buff then
-					lure.buff = GetSpellInfo(lure.spell)
-				end
 				if (lure.w) then
 					if (self:IsWorn(id)) then
 						tinsert(lureinventory, lure);
@@ -364,22 +361,32 @@ end
 
 -- Handle buffs
 local BuffWatch = {}
-function FishLib:WaitForBuff(buffName)
+function FishLib:WaitForBuff(buffId)
 	local btn = _G[SABUTTONNAME];
 	if ( btn ) then
-		BuffWatch[buffName] = GetTime() + 0.6
+		BuffWatch[buffId] = GetTime() + 0.6
 		btn.updater:Show()
 	end
 end
 
-function FishLib:HasBuff(buffName, skipWait)
-	if ( buffName ) then
+local spellidx = nil;
+function FishLib:HasBuff(buffId, skipWait)
+	if ( buffId ) then
 		-- if we're waiting, assume we're going to have it
-		if ( not skipWait and BuffWatch[buffName] ) then
+		if ( not skipWait and BuffWatch[buffId] ) then
 			return true
 		else
-			local name, _, _, _, _, _, _, _, _ = UnitBuff("player", buffName);
-			return name ~= nil;
+			for i=1,40 do
+				local current_buff = UnitBuff("player",i);
+				if current_buff then
+					local spellid = select(11, UnitBuff("player", i));
+					if (buffId == spellid) then
+						return true;
+					end
+				else
+					return nil
+				end
+			end
 		end
 	end
 	-- return nil
@@ -387,10 +394,7 @@ end
 
 function FishLib:HasLureBuff()
 	for _,lure in ipairs(FISHINGLURES) do
-		if not lure.buff then
-			lure.buff = GetSpellInfo(lure.spell)
-		end
-		if self:HasBuff(lure.buff) then
+		if self:HasBuff(lure.spell) then
 			return true
 		end
 	end
@@ -2026,14 +2030,18 @@ end
 
 -- translation support functions
 -- replace #KEYWORD# with the value of keyword (which might be a color)
+local visited = {}
 local function FixupThis(target, tag, what)
 	if ( type(what) == "table" ) then
 		local fixed = {};
-		for idx,str in pairs(what) do
-			fixed[idx] = FixupThis(target, tag, str);
-		end
-		for idx,str in pairs(fixed) do
-			what[idx] = str;
+		if (visited[what] == nil) then
+			visited[what] = 1;
+			for idx,str in pairs(what) do
+				fixed[idx] = FixupThis(target, tag, str);
+			end
+			for idx,str in pairs(fixed) do
+				what[idx] = str;
+			end
 		end
 		return what;
 	elseif ( type(what) == "string" ) then
@@ -2065,10 +2073,14 @@ function FishLib:FixupEntry(constants, tag)
 	FixupThis(constants, tag, constants[tag]);
 end
 
+-- let's not recurse too far
 local function FixupStrings(target)
 	local fixed = {};
 	for tag,_ in pairs(target) do
-		fixed[tag] = FixupThis(target, tag, target[tag]);
+		if (visited[tag] == nil) then
+			fixed[tag] = FixupThis(target, tag, target[tag]);
+			visited[tag] = 1
+		end
 	end
 	for tag,str in pairs(fixed) do
 		target[tag] = str;
@@ -2107,6 +2119,7 @@ function FishLib:Translate(addon, source, target, forced)
 		LoadTranslation(source, "enUS", target, forced);
 	end
 	LoadTranslation(source, "Inject", target);
+	visited = {}
 	FixupStrings(target);
 	FixupBindings(target);
 	if (forced) then

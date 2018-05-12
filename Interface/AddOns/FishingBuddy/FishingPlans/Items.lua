@@ -36,10 +36,10 @@ local buffs = nil
 local function WWJD()
     if not buffs then
         buffs = {}
-        buffs[1] = GetSpellInfo(546); -- Shaman Water Walking
-        buffs[2] = GetSpellInfo(3714); -- DK Path of Frost
-        buffs[3] = GetSpellInfo(11319); -- Elixir of Water Walking
-        buffs[4] = GetSpellInfo(175841); -- Draenic Water Walking Elixir
+        buffs[1] = 546; -- Shaman Water Walking
+        buffs[2] = 3714; -- DK Path of Frost
+        buffs[3] = 11319; -- Elixir of Water Walking
+        buffs[4] = 175841; -- Draenic Water Walking Elixir
     end
     for _,buff in ipairs(buffs) do
         if FL:HasBuff(buff) then
@@ -62,7 +62,7 @@ local function TuskarrPlan(queue)
     if (main ~= TuskarrItem.id) then
         -- Only use this if we're not using the Legendary pole (Surface Tension)
         if (not TuskarrItem.tension) then
-            TuskarrItem.tension = GetSpellInfo(201944);
+            TuskarrItem.tension = 201944;
         end
         if (FL:HasBuff(TuskarrItem.tension)) then
             local bergbuff, raftbuff, hasberg, hasraft = FishingBuddy.HasRaftBuff();
@@ -72,7 +72,7 @@ local function TuskarrPlan(queue)
         end
     end
 
-    if (main == TuskarrItem.id or not FL:HasBuff(TuskarrItem.buff)) then
+    if (main == TuskarrItem.id or not FL:HasBuff(TuskarrItem.spell)) then
         local s,_,_ = GetItemCooldown(TuskarrItem.id);
         local pole = FL:IsFishingPole();
         if (s == 0 and pole) then
@@ -98,7 +98,7 @@ local function TuskarrPlan(queue)
                         ["name"] = name
                     })
                 end
-            else
+            elseif (not pole) then
                 tinsert(queue, {
                     ["itemid"] = main,
                     ["name"] = "fishing pole"
@@ -113,7 +113,7 @@ local function TrawlerPlan(queue)
         return
     end
 
-    if (PlayerHasToy(TRAWLER_ID) and C_ToyBox.IsToyUsable(TRAWLER_ID) and not FL:HasBuff(TrawlerTotem.buff)) then
+    if (PlayerHasToy(TRAWLER_ID) and C_ToyBox.IsToyUsable(TRAWLER_ID) and not FL:HasBuff(TrawlerTotem.spell)) then
         local pole = FL:IsFishingPole();
         if (pole) then
             local start, duration, enable = GetItemCooldown(TRAWLER_ID);
@@ -139,12 +139,12 @@ local LagerItem =  {
 local function LagerPlan(queue)
     if GSB("FishingFluff") and GSB("DrinkHeavily") then
         if not FishingBuddy.GetCurrentSpell() then
-            if (GetItemCount(LagerItem.id) > 0 and not FL:HasBuff(LagerItem.buff)) then
+            if (GetItemCount(LagerItem.id) > 0 and not FL:HasBuff(LagerItem.spell)) then
                 tinsert(queue, {
                     ["itemid"] = LagerItem.id,
                     ["name"] = LagerItem[CurLoc],
                 })
-                FL:WaitForBuff(LagerItem.buff)
+                FL:WaitForBuff(LagerItem.spell)
             end
         end
     end

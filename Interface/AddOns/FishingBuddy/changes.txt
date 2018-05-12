@@ -1,4 +1,11 @@
-﻿Version 1.8.4.5
+﻿Version 1.8.4.7
+- Fix edge case when using Tuskaar Spear
+
+Version 1.8.4.6
+- Start code changes for BfA (general code cleanup)
+- Attempt to fix Curse bug #319 (stack overflow)
+
+Version 1.8.4.5
 - Fix Curse bug #321 (console spam)
 
 Version 1.8.4.4

@@ -13,8 +13,13 @@ end
 FishingBuddy.RegisterPlan = RegisterPlan
 
 local planqueue = {}
+local function HavePlans()
+    return #planqueue > 0
+end
+FishingBuddy.HavePlans = HavePlans
+
 local function GetPlan()
-    if #planqueue > 0 then
+    if HavePlans() then
         local head = table.remove(planqueue, 1)
         return true, head.itemid, head.name, head.targetid
     end
@@ -22,13 +27,8 @@ local function GetPlan()
 end
 FishingBuddy.GetPlan = GetPlan
 
-local function HavePlans()
-    return #planqueue > 0
-end
-FishingBuddy.HavePlans = HavePlans
-
 local function ExecutePlans(force)
-    if (force or #planqueue == 0) then
+    if (force or not HavePlans()) then
         planqueue = {}
         for _,planner in ipairs(planners) do
             planner(planqueue)
@@ -43,3 +43,13 @@ PlanEvents[FBConstants.FISHING_DISABLED_EVT] = function()
 end
 
 FishingBuddy.RegisterHandlers(PlanEvents);
+
+if ( FishingBuddy.Debugging ) then
+	FishingBuddy.Commands["plans"] = {};
+	FishingBuddy.Commands["plans"].func =
+        function(what)
+            ExecutePlans(what);
+            FishingBuddy.Dump(planqueue)
+			return true;
+		end
+end
