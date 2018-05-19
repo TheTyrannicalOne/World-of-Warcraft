@@ -220,6 +220,7 @@ local function ShowDraggerFrame()
 end
 
 local function HideDraggerFrame()
+	LW.OnDragStop(FishingWatchFrame);
 	FishingWatchFrame:EnableMouse(false);
 	if (FishingWatchTab:IsShown()) then
 		FishingWatchTab.finishedFunc = FadingFinished;
@@ -876,7 +877,6 @@ FishingBuddy.WatchUpdate = function()
 end
 
 local function HideOnEscape()
-	LW.OnDragStop(FishingWatchFrame);
 	HideDraggerFrame();
 end
 

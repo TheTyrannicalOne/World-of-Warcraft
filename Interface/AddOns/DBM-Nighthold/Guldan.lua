@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1737, "DBM-Nighthold", nil, 786)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17440 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17533 $"):sub(12, -3))
 mod:SetCreatureID(104154)--The Demon Within (111022)
 mod:SetEncounterID(1866)
 mod:SetZone()
@@ -92,7 +92,7 @@ local specWarnParasiticWound		= mod:NewSpecialWarningMoveAway(206847, nil, nil, 
 local yellParasiticWound			= mod:NewYell(206847, 36469)
 local yellParasiticWoundFades		= mod:NewFadesYell(206847, 36469)
 --local specWarnShearedSoul			= mod:NewSpecialWarningYou(206458, nil, nil, nil, 1)
-local specWarnSoulsever				= mod:NewSpecialWarningCount(220957, nil, nil, nil, 3)--Needs voice, but what?
+local specWarnSoulsever				= mod:NewSpecialWarningCount(220957, nil, nil, nil, 3, 2)--Needs voice, but what?
 local specWarnVisionsofDarkTitan	= mod:NewSpecialWarningMoveTo(227008, nil, nil, nil, 3, 7)
 local specWarnSummonNightorb		= mod:NewSpecialWarningSwitchCount(227283, "-Healer", nil, nil, 1, 2)
 --Shard
@@ -391,7 +391,7 @@ function mod:SPELL_CAST_START(args)
 			end
 		end
 	elseif spellId == 208672 then
-		if self:CheckInterruptFilter(args.sourceGUID) then
+		if self:CheckInterruptFilter(args.sourceGUID, false, true) then
 			specWarnCarrionWave:Show(args.sourceName)
 			specWarnCarrionWave:Play("kickcast")
 		end
@@ -435,7 +435,9 @@ function mod:SPELL_CAST_START(args)
 		upValueCapsAreStupid(self)
 	elseif spellId == 220957 then
 		self.vb.severCastCount = self.vb.severCastCount + 1
-		if self:IsTank() then
+		local _, _, bossuid = self:GetBossTarget(111022, true)
+		local tanking, status = UnitDetailedThreatSituation("player", bossuid)
+		if tanking or (status == 3) then--Player is current target
 			specWarnSoulsever:Show(self.vb.severCastCount)
 			specWarnSoulsever:Play("defensive")
 		end

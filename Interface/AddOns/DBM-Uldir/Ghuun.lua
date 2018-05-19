@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2147, "DBM-Uldir", nil, 1031)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17515 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17522 $"):sub(12, -3))
 mod:SetCreatureID(132998)
 mod:SetEncounterID(2122)
 mod:SetZone()
@@ -235,10 +235,10 @@ function mod:SPELL_CAST_START(args)
 		if timer then
 			timerThousandMawsCD:Start(timer, self.vb.mawCastCount+1)
 		end
-	elseif spellId == 267427 and self:CheckInterruptFilter(args.sourceGUID) then
+	elseif spellId == 267427 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
 		specWarnTorment:Show(args.sourceName)
 		specWarnTorment:Play("kickcast")
-	elseif spellId == 267462 and self:CheckInterruptFilter(args.sourceGUID) then
+	elseif spellId == 267462 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
 		specWarnDecayingEruption:Show(args.sourceName)
 		specWarnDecayingEruption:Play("kickcast")
 	elseif spellId == 267412 and self:CheckInterruptFilter(args.sourceGUID, true) then

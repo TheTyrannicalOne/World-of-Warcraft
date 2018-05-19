@@ -1,4 +1,10 @@
-﻿Version 1.8.4.7
+﻿Version 1.8.4.9
+- Update fishing library (so outfit display does trasmog)
+
+Version 1.8.4.8
+- Fix Curse bug #323 (watcher drag issue)
+
+Version 1.8.4.7
 - Fix edge case when using Tuskaar Spear
 
 Version 1.8.4.6

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2194, "DBM-Uldir", nil, 1031)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17491 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17542 $"):sub(12, -3))
 mod:SetCreatureID(134546)--138324 Xalzaix
 mod:SetEncounterID(2135)
 --mod:DisableESCombatDetection()
@@ -38,7 +38,7 @@ local warnPhase2						= mod:NewPhaseAnnounce(2, 2, nil, nil, nil, nil, nil, 2)
 local specWarnEssenceShearDodge			= mod:NewSpecialWarningDodge(274693, false, nil, nil, 3, 2)
 local specWarnEssenceShear				= mod:NewSpecialWarningDefensive(274693, nil, nil, nil, 1, 2)
 local specWarnEssenceShearOther			= mod:NewSpecialWarningTaunt(274693, nil, nil, nil, 1, 2)
-local specWarnObliterationWave			= mod:NewSpecialWarningDodge(273538, nil, nil, nil, 2, 2)
+local specWarnObliterationWave			= mod:NewSpecialWarningDodge(273538, nil, nil, nil, 2, 2)--Mythic
 local specWarnOblivionSphere			= mod:NewSpecialWarningSwitch(272407, "RangedDps", nil, nil, 1, 2)
 local yellOblivionSphere				= mod:NewYell(272407)
 local specWarnImminentRuin				= mod:NewSpecialWarningMoveAway(272536, nil, nil, nil, 1, 2)
@@ -148,7 +148,7 @@ function mod:SPELL_CAST_START(args)
 		specWarnVisionsofMadness:Show()
 		specWarnVisionsofMadness:Play("killmob")
 		timerVisionsoMadnessCD:Start()
-	elseif spellId == 274019 and self:CheckInterruptFilter(args.sourceGUID) then
+	elseif spellId == 274019 and self:CheckInterruptFilter(args.sourceGUID, false, true) then
 		specWarnMindFlay:Show(args.sourceName)
 		specWarnMindFlay:Play("kickcast")
 	end

@@ -460,12 +460,12 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1567.81213378906,
+						["CoordX"] = 1563.97497558594,
 						["ItemQuality"] = true,
-						["CoordY"] = 780.301147460938,
+						["CoordY"] = 773.393737792969,
 					},
 					["Reagents"] = {
-						["CoordY"] = 878.783569335938,
+						["CoordY"] = 878.783508300781,
 						["CoordX"] = 620.521179199219,
 					},
 					["Bank"] = {
@@ -1480,9 +1480,9 @@ LUIDB = {
 					["Raid"] = {
 						["IsShown"] = true,
 						["Width"] = 612,
-						["Height"] = 237,
-						["OffsetY"] = 1,
 						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2617,7 +2617,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 4726589101,
+							["Shanyt"] = 5161734956,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2689,38 +2689,38 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [1]
-							"/p gigady", -- [2]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [3]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [4]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [5]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [6]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [7]
-							"/p gigady", -- [8]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [9]
-							"/p gigady", -- [10]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [11]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [12]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [13]
-							"/p gigady", -- [14]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [15]
-							"/p gigady", -- [16]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [17]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [18]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [19]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [20]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [21]
-							"/p gigady", -- [22]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [23]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [24]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [25]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [26]
-							"/cw Thorinmcbeef-ArgentDawn yes across the bridge top of the cave", -- [27]
-							"/p gigady", -- [28]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [29]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [30]
-							"/p gigady", -- [31]
-							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [32]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [1]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [2]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [3]
+							"/p gigady", -- [4]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [5]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [6]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [7]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [8]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [9]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [10]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [11]
+							"/cw Bothra-TheScryers i can i havent done but the first part in lfr so far though so dont know the raid", -- [12]
+							"/p gigady", -- [13]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [14]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [15]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [16]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [17]
+							"/p gigady", -- [18]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [19]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [20]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [21]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [22]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [23]
+							"/p gigady", -- [24]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [25]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [26]
+							"/cw Bothra-TheScryers sorry got to pass this time", -- [27]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [28]
+							"/p gigady", -- [29]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [30]
+							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [31]
+							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [32]
 						},
 					},
 				},

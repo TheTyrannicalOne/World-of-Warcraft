@@ -7,7 +7,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 --]]
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 90988
+local MINOR_VERSION = 90990
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -562,24 +562,24 @@ fishlibframe:Show();
 
 -- set up a table of slot mappings for looking up item information
 local slotinfo = {
-	[1] = { name = "HeadSlot", tooltip = HEADSLOT, id = INVSLOT_HEAD },
-	[2] = { name = "NeckSlot", tooltip = NECKSLOT, id = INVSLOT_NECK },
-	[3] = { name = "ShoulderSlot", tooltip = SHOULDERSLOT, id = INVSLOT_SHOULDER },
-	[4] = { name = "BackSlot", tooltip = BACKSLOT, id = INVSLOT_BACK },
-	[5] = { name = "ChestSlot", tooltip = CHESTSLOT, id = INVSLOT_CHEST },
-	[6] = { name = "ShirtSlot", tooltip = SHIRTSLOT, id = INVSLOT_BODY },
-	[7] = { name = "TabardSlot", tooltip = TABARDSLOT, id = INVSLOT_TABARD },
-	[8] = { name = "WristSlot", tooltip = WRISTSLOT, id = INVSLOT_WRIST },
-	[9] = { name = "HandsSlot", tooltip = HANDSSLOT, id = INVSLOT_HAND },
-	[10] = { name = "WaistSlot", tooltip = WAISTSLOT, id = INVSLOT_WAIST },
-	[11] = { name = "LegsSlot", tooltip = LEGSSLOT, id = INVSLOT_LEGS },
-	[12] = { name = "FeetSlot", tooltip = FEETSLOT, id = INVSLOT_FEET },
-	[13] = { name = "Finger0Slot", tooltip = FINGER0SLOT, id = INVSLOT_FINGER1 },
-	[14] = { name = "Finger1Slot", tooltip = FINGER1SLOT, id = INVSLOT_FINGER2 },
-	[15] = { name = "Trinket0Slot", tooltip = TRINKET0SLOT, id = INVSLOT_TRINKET1 },
-	[16] = { name = "Trinket1Slot", tooltip = TRINKET1SLOT, id = INVSLOT_TRINKET2 },
-	[17] = { name = "MainHandSlot", tooltip = MAINHANDSLOT, id = INVSLOT_MAINHAND },
-	[18] = { name = "SecondaryHandSlot", tooltip = SECONDARYHANDSLOT, id = INVSLOT_OFFHAND },
+	[1] = { name = "HeadSlot", tooltip = HEADSLOT, id = INVSLOT_HEAD, transmog = true },
+	[2] = { name = "NeckSlot", tooltip = NECKSLOT, id = INVSLOT_NECK, transmog = false },
+	[3] = { name = "ShoulderSlot", tooltip = SHOULDERSLOT, id = INVSLOT_SHOULDER, transmog = true },
+	[4] = { name = "BackSlot", tooltip = BACKSLOT, id = INVSLOT_BACK, transmog = true },
+	[5] = { name = "ChestSlot", tooltip = CHESTSLOT, id = INVSLOT_CHEST, transmog = true },
+	[6] = { name = "ShirtSlot", tooltip = SHIRTSLOT, id = INVSLOT_BODY, transmog = true },
+	[7] = { name = "TabardSlot", tooltip = TABARDSLOT, id = INVSLOT_TABARD, transmog = true },
+	[8] = { name = "WristSlot", tooltip = WRISTSLOT, id = INVSLOT_WRIST, transmog = true },
+	[9] = { name = "HandsSlot", tooltip = HANDSSLOT, id = INVSLOT_HAND, transmog = true },
+	[10] = { name = "WaistSlot", tooltip = WAISTSLOT, id = INVSLOT_WAIST, transmog = true },
+	[11] = { name = "LegsSlot", tooltip = LEGSSLOT, id = INVSLOT_LEGS, transmog = true },
+	[12] = { name = "FeetSlot", tooltip = FEETSLOT, id = INVSLOT_FEET, transmog = true },
+	[13] = { name = "Finger0Slot", tooltip = FINGER0SLOT, id = INVSLOT_FINGER1, transmog = false },
+	[14] = { name = "Finger1Slot", tooltip = FINGER1SLOT, id = INVSLOT_FINGER2, transmog = false },
+	[15] = { name = "Trinket0Slot", tooltip = TRINKET0SLOT, id = INVSLOT_TRINKET1, transmog = false },
+	[16] = { name = "Trinket1Slot", tooltip = TRINKET1SLOT, id = INVSLOT_TRINKET2, transmog = false },
+	[17] = { name = "MainHandSlot", tooltip = MAINHANDSLOT, id = INVSLOT_MAINHAND, transmog = true },
+	[18] = { name = "SecondaryHandSlot", tooltip = SECONDARYHANDSLOT, id = INVSLOT_OFFHAND, transmog = true },
 }
 
 -- A map of item types to locations
@@ -2026,6 +2026,15 @@ end
 function FishLib:GetThresholdHexColor(quality, ...)
 	local r, g, b = self:GetThresholdColor(quality, ...)
 	return string.format("%02x%02x%02x", r*255, g*255, b*255)
+end
+
+-- addon message support
+function FishLib:RegisterAddonMessagePrefix(prefix)
+	if (WOW.major < 8) then
+		RegisterAddonMessagePrefix(prefix)
+	else
+		C_ChatInfo.RegisterAddonMessagePrefix(prefix)
+	end
 end
 
 -- translation support functions

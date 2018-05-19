@@ -2038,7 +2038,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
 					local link = GetLootSlotLink(index);
 
 					-- should we track "locked" items we couldn't loot?'
-					tinsert(lootcache, {texture = texture, fishie = fishie, quantity = quantity, quality = quality, link = link});
+					tinsert(lootcache, {texture = texture, fishie = fishie, quantity = quantity, quality = quality, link = link, poolhit=poolhint});
 					local _, id, _ = FL:SplitFishLink(link);
 
 					-- handle things we can't actually count that might be in our fish (e.g. Garrison Resources)
@@ -2172,6 +2172,8 @@ FishingBuddy.OnLoad = function(self)
 	SLASH_fishingbuddy2 = "/fb";
 
 	FishingBuddy.Output(FBConstants.WINDOW_TITLE.." loaded");
+
+	FL:RegisterAddonMessagePrefix(FBConstants.MSGID)
 end
 
 FishingBuddy.PrintHelp = function(tab)

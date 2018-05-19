@@ -41,8 +41,8 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17517 $"):sub(12, -3)),
-	DisplayVersion = "7.3.30 alpha", -- the string that is shown as version
+	Revision = tonumber(("$Revision: 17545 $"):sub(12, -3)),
+	DisplayVersion = "7.3.31 alpha", -- the string that is shown as version
 	ReleaseRevision = 17510 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
@@ -136,10 +136,10 @@ DBM.DefaultOptions = {
 	CustomSounds = 0,
 	ShowBigBrotherOnCombatStart = false,
 	FilterTankSpec = true,
-	FilterInterrupt = true,
+	FilterInterrupt2 = "TandFandBossCooldown",
 	FilterInterruptNoteName = false,
 	FilterDispel = true,
-	FilterSelfHud = true,
+	--FilterSelfHud = true,
 	AutologBosses = false,
 	AdvancedAutologBosses = false,
 	LogOnlyRaidBosses = false,
@@ -511,13 +511,28 @@ local function sendSync(prefix, msg)
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then--For BGs, LFR and LFG (we also check IsInInstance() so if you're in queue but fighting something outside like a world boss, it'll sync in "RAID" instead)
 		SendAddonMessage("D4", prefix .. "\t" .. msg, "INSTANCE_CHAT")
 	else
-		--if IsInRaid() and not wowTOC == 80000 then--Don't send syncs to raid in 8.x, raid no longer exists
 		if IsInRaid() then
 			SendAddonMessage("D4", prefix .. "\t" .. msg, "RAID")
 		elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
 			SendAddonMessage("D4", prefix .. "\t" .. msg, "PARTY")
 		else--for solo raid
 			SendAddonMessage("D4", prefix .. "\t" .. msg, "WHISPER", playerName)
+		end
+	end
+end
+
+--Custom sync function that should only be used for user generated sync messages
+local function sendLoggedSync(prefix, msg)
+	msg = msg or ""
+	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then--For BGs, LFR and LFG (we also check IsInInstance() so if you're in queue but fighting something outside like a world boss, it'll sync in "RAID" instead)
+		C_ChatInfo.SendAddonMessageLogged("D4", prefix .. "\t" .. msg, "INSTANCE_CHAT")
+	else
+		if IsInRaid() then
+			C_ChatInfo.SendAddonMessageLogged("D4", prefix .. "\t" .. msg, "RAID")
+		elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
+			C_ChatInfo.SendAddonMessageLogged("D4", prefix .. "\t" .. msg, "PARTY")
+		else--for solo raid
+			C_ChatInfo.SendAddonMessageLogged("D4", prefix .. "\t" .. msg, "WHISPER", playerName)
 		end
 	end
 end
@@ -2430,9 +2445,17 @@ do
 		fireEvent("DBM_TimerStart", "DBMPizzaTimer", text, time, "Interface\\Icons\\Spell_Holy_BorrowedTime", "pizzatimer", nil, 0)
 		if broadcast then
 			if count then
-				sendSync("CU", ("%s\t%s"):format(time, text))
+				if wowTOC == 80000 then
+					sendLoggedSync("CU", ("%s\t%s"):format(time, text))
+				else
+					sendSync("CU", ("%s\t%s"):format(time, text))
+				end
 			else
-				sendSync("U", ("%s\t%s"):format(time, text))
+				if wowTOC == 80000 then
+					sendLoggedSync("U", ("%s\t%s"):format(time, text))
+				else
+					sendSync("U", ("%s\t%s"):format(time, text))
+				end
 			end
 		end
 		if sender then self:ShowPizzaInfo(text, sender) end
@@ -3730,7 +3753,8 @@ do
 		timerRequestInProgress = false
 		self:Debug("LOADING_SCREEN_DISABLED fired")
 		self:Unschedule(SecondaryLoadCheck)
-		SecondaryLoadCheck(self)
+		--SecondaryLoadCheck(self)
+		self:Schedule(1, SecondaryLoadCheck, self)--Now delayed by one second to work around an issue on beta where spec info isn't available yet on reloadui
 		self:TransitionToDungeonBGM(false, true)
 		self:Schedule(5, SecondaryLoadCheck, self)
 		if DBM:HasMapRestrictions() then
@@ -7281,9 +7305,20 @@ function bossModPrototype:IsTrivial(level)
 	return false
 end
 
-function bossModPrototype:CheckInterruptFilter(sourceGUID, skip)
-	if not DBM.Options.FilterInterrupt and not skip then return true end
-	if UnitGUID("target") == sourceGUID or UnitGUID("focus") == sourceGUID then
+--Skip param is used when CheckInterruptFilter is actually being used for a simpe target/focus check and nothing more.
+--checkCooldown should never be passed with skip or COUNT interrupt warnings. It should be passed with any other interrupt filter
+function bossModPrototype:CheckInterruptFilter(sourceGUID, skip, checkCooldown)
+	if DBM.Options.FilterInterrupt2 == "None" and not skip then return true end--use doesn't want to use interrupt filter, always return true
+	--Pummel, Mind Freeze, Counterspell, Kick, Skull Bash, Rebuke, Silence, Wind Shear
+	local InterruptAvailable = true
+	local requireCooldown = checkCooldown
+	if (DBM.Options.FilterInterrupt2 == "onlyTandF") or self.isTrashMod and (DBM.Options.FilterInterrupt2 == "TandFandBossCooldown") then
+		requireCooldown = false
+	end
+	if requireCooldown and ((GetSpellCooldown(6552)) ~= 0 or (GetSpellCooldown(47528)) ~= 0 or (GetSpellCooldown(2139)) ~= 0 or (GetSpellCooldown(1766)) ~= 0 or (GetSpellCooldown(106839)) ~= 0 or (GetSpellCooldown(96231)) ~= 0 or (GetSpellCooldown(15487)) ~= 0 or (GetSpellCooldown(57994)) ~= 0) then
+		InterruptAvailable = false--checkCooldown check requested and player has no spell that can interrupt available
+	end
+	if InterruptAvailable and (UnitGUID("target") == sourceGUID or UnitGUID("focus") == sourceGUID) then
 		return true
 	end
 	return false
@@ -7656,21 +7691,21 @@ do
 		["Tank"] = true,
 		["Dps"] = true,
 		["Healer"] = true,
-		["Melee"] = true,
+		["Melee"] = true,--ANY melee, including tanks or healers that are 100% excempt from healer/ranged mechanics (like mistweaver monks)
 		["MeleeDps"] = true,
 		["Physical"] = true,
-		["Ranged"] = true,
-		["RangedDps"] = true,
+		["Ranged"] = true,--ANY ranged, healer and dps included
+		["RangedDps"] = true,--Only ranged dps
 		["ManaUser"] = true,--Affected by things like mana drains, or mana detonation, etc
 		["SpellCaster"] = true,--Has channeled casts, can be interrupted/spell locked by roars, etc, include healers. Use CasterDps if dealing with reflect
 		["CasterDps"] = true,--Ranged dps that uses spells, relevant for spell reflect type abilities that only reflect spells but not ranged physical such as hunters
 		["RaidCooldown"] = true,
-		["RemovePoison"] = true,
-		["RemoveDisease"] = true,
-		["RemoveEnrage"] = true,--Depricated, no one can remove enrage anymore, returning in classic!
-		["RemoveCurse"] = true,
-		["MagicDispeller"] = true--Buffs on targets, not debuffs on players
-		["HasInterrupt"] = true,--Has an interrupt that is 24 seconds or less CD.
+		["RemovePoison"] = true,--from ally
+		["RemoveDisease"] = true,--from ally
+		["RemoveEnrage"] = true,--Unused, no one can remove enrage anymore, returning in classic/8.x!
+		["RemoveCurse"] = true,--from ally
+		["MagicDispeller"] = true--from ENEMY, not debuffs on players. use "Healer" for ally magic dispels. ALL healers can do that.
+		["HasInterrupt"] = true,--Has an interrupt that is 24 seconds or less CD that is BASELINE (not a talent)
 	}]]
 
 	local specRoleTable = {
@@ -7725,6 +7760,7 @@ do
 			["Melee"] = true,
 			["Physical"] = true,
 			["HasInterrupt"] = true,
+			--["RaidCooldown"] = true,--Rallying Cry (in 8.x)
 		},
 		[102] = {	--Balance Druid
 			["Dps"] = true,
@@ -7794,7 +7830,7 @@ do
 			["Ranged"] = true,
 			["ManaUser"] = true,
 			["SpellCaster"] = true,
-			["CasterDps"] = true,--Iffy
+			["CasterDps"] = true,--Iffy. Technically yes, but this can't be used to determine eligable target for dps only debuffs
 			["RaidCooldown"] = true,--Power Word: Barrier(Discipline) / Divine Hymn (Holy)
 			["RemoveDisease"] = true,
 			["MagicDispeller"] = true,
@@ -7896,16 +7932,16 @@ do
 			["HasInterrupt"] = true,
 		},
 	}
-	specRoleTable[63] = specRoleTable[62]--Frost Mage
-	specRoleTable[64] = specRoleTable[62]--Fire Mage
-	specRoleTable[72] = specRoleTable[71]--Fury Warrior
-	specRoleTable[252] = specRoleTable[251]--Unholy DK
-	specRoleTable[254] = specRoleTable[253]--Markmanship Hunter
-	specRoleTable[257] = specRoleTable[256]--Holy Priest
-	specRoleTable[260] = specRoleTable[259]--Combat Rogue
-	specRoleTable[261] = specRoleTable[259]--Subtlety Rogue
-	specRoleTable[266] = specRoleTable[265]--Demonology Warlock
-	specRoleTable[267] = specRoleTable[265]--Destruction Warlock
+	specRoleTable[63] = specRoleTable[62]--Frost Mage same as arcane
+	specRoleTable[64] = specRoleTable[62]--Fire Mage same as arcane
+	specRoleTable[72] = specRoleTable[71]--Fury Warrior same as Arms
+	specRoleTable[252] = specRoleTable[251]--Unholy DK same as frost
+	specRoleTable[254] = specRoleTable[253]--Markmanship Hunter same as beast
+	specRoleTable[257] = specRoleTable[256]--Holy Priest same as disc
+	specRoleTable[260] = specRoleTable[259]--Combat Rogue same as Assassination
+	specRoleTable[261] = specRoleTable[259]--Subtlety Rogue same as Assassination
+	specRoleTable[266] = specRoleTable[265]--Demonology Warlock same as Affliction
+	specRoleTable[267] = specRoleTable[265]--Destruction Warlock same as Affliction
 
 	--[[function bossModPrototype:GetRoleFlagValue(flag)
 		if not flag then return false end
@@ -9799,6 +9835,10 @@ do
 	
 	function bossModPrototype:NewSpecialWarningDodge(text, optionDefault, ...)
 		return newSpecialWarning(self, "dodge", text, nil, optionDefault, ...)
+	end
+	
+	function bossModPrototype:NewSpecialWarningDodgeLoc(text, optionDefault, ...)
+		return newSpecialWarning(self, "dodgeloc", text, nil, optionDefault, ...)
 	end
 	
 	function bossModPrototype:NewSpecialWarningMoveAway(text, optionDefault, ...)
