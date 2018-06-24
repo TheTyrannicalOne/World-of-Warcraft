@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2169, "DBM-Uldir", nil, 1031)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17522 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17579 $"):sub(12, -3))
 mod:SetCreatureID(134445)--Zek'vhozj, 134503/qiraji-warrior
 mod:SetEncounterID(2136)
 --mod:DisableESCombatDetection()
@@ -32,6 +32,11 @@ mod:RegisterEventsInCombat(
 --TODO, mark mind controlled players?
 --TODO, find a log that drags out P1 so can see timer between eye beams/warrior adds. Or wait til mythic when P1 mechanics don't disable
 --TODO, maybe a "next bounce" timer
+--[[
+(ability.id = 267239 or ability.id = 265231 or ability.id = 265530) and type = "begincast"
+ or ability.id = 264382 and type = "cast"
+ or (ability.id = 267180 or ability.id = 270620) and type = "begincast"
+--]]
 --local warnXorothPortal					= mod:NewSpellAnnounce(244318, 2, nil, nil, nil, nil, nil, 7)
 local warnVoidLash						= mod:NewStackAnnounce(265264, 2, nil, "Tank")
 --Stage One: Chaos
@@ -133,8 +138,7 @@ function mod:SPELL_CAST_START(args)
 		specWarnEntropicBlast:Play("kickcast")
 	elseif spellId == 265231 then--First Void Lash
 		timerMightofVoidCD:Start()
-		local tanking, status = UnitDetailedThreatSituation("player", "boss1")
-		if tanking or (status == 3) then
+		if self:IsTanking("player", "boss1", nil, true) then
 			specWarnMightofVoid:Show()
 			specWarnMightofVoid:Play("defensive")
 		end

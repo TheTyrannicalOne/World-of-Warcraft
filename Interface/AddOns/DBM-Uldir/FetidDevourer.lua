@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2146, "DBM-Uldir", nil, 1031)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17544 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17579 $"):sub(12, -3))
 mod:SetCreatureID(133298)
 mod:SetEncounterID(2128)
 mod:SetZone()
@@ -21,6 +21,9 @@ mod:RegisterEventsInCombat(
 	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 
+--[[
+(ability.id = 262292 or ability.id = 262288 or ability.id = 262364) and type = "begincast"
+--]]
 local warnFrenzy						= mod:NewSpellAnnounce(262378, 3)
 local warnThrashNotTanking				= mod:NewSpellAnnounce(262277, 3, nil, "Tank|Healer")
 
@@ -235,8 +238,7 @@ function mod:SPELL_AURA_REMOVED_DOSE(args)
 	if spellId == 262256 then
 		local amount = args.amount or 0
 		if amount == 1 then
-			local tanking, status = UnitDetailedThreatSituation("player", "boss1")
-			if tanking or (status == 3) then--Not thrash target
+			if self:IsTanking("player", "boss1", nil, true) then
 				warnThrashNotTanking:Show()
 			else
 				specWarnThrash:Show()

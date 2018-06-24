@@ -1,34 +1,13 @@
-changeset:   1113:f66d8c38eb95
-tag:         3.6.56
+changeset:   1145:24e7f4c7119e
+tag:         3.5.70
 user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Thu May 17 14:53:34 2018 -0700
-summary:     Fix some additional button errors in BFA
+date:        Sat Jun 02 11:46:15 2018 -0700
+summary:     Fix not being able to disable whispers
 
 
-changeset:   1112:8e1e2b321bd4
+changeset:   1144:b3a3699d562b
 user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Thu May 17 14:46:28 2018 -0700
-summary:     _G
-
-
-changeset:   1111:6418775e14b9
-parent:      1110:dafe7377c031
-parent:      1109:1a7c1ea67abe
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Thu May 17 14:44:03 2018 -0700
-summary:     Merge
-
-
-changeset:   1110:dafe7377c031
-parent:      1108:39b150d87e76
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Thu May 17 14:43:34 2018 -0700
-summary:     Fix for some channel join messages
-
-
-changeset:   1109:1a7c1ea67abe
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Tue May 15 19:17:44 2018 -0700
-summary:     No grats link if they didn't complete the achievement yet
+date:        Mon May 28 20:52:13 2018 -0700
+summary:     - Disable the broken search mobule
 
 

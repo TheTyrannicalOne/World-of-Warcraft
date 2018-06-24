@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2004, "DBM-AntorusBurningThrone", nil, 946)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17506 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17603 $"):sub(12, -3))
 mod:SetCreatureID(122578)
 mod:SetEncounterID(2088)
 mod:SetZone()
@@ -210,8 +210,7 @@ function mod:SPELL_CAST_START(args)
 	local spellId = args.spellId
 	if spellId == 244312 or spellId == 257978 or spellId == 254919 then
 		self.vb.forgingStrikeCast = self.vb.forgingStrikeCast + 1
-		local tanking, status = UnitDetailedThreatSituation("player", "boss1")
-		if tanking or (status == 3) then--Player is current target
+		if self:IsTanking("player", "boss1", nil, true) then
 			specWarnForgingStrike:Show()
 			specWarnForgingStrike:Play("defensive")
 		end
@@ -404,7 +403,8 @@ function mod:UNIT_DIED(args)
 	end
 end
 
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
+function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, bfaSpellId, _, legacySpellId)
+	local spellId = legacySpellId or bfaSpellId
 	if spellId == 248319 then--Consume Energy 100% (reaver fully charged and activated)
 		--Info Frame usage situation?
 	elseif spellId == 246686 then--Decimation (ignore 246691 I'm pretty sure)

@@ -460,19 +460,19 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1563.97497558594,
+						["CoordX"] = 1570.68310546875,
 						["ItemQuality"] = true,
-						["CoordY"] = 772.626220703125,
+						["CoordY"] = 779.533142089844,
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
-						["CoordX"] = 1116.58703613281,
+						["CoordX"] = 1110.44702148438,
 						["ItemQuality"] = true,
-						["CoordY"] = 687.134643554688,
+						["CoordY"] = 694.809509277344,
 						["Font"] = "AvantGarde_LT_Medium",
 					},
 					["Reagents"] = {
-						["CoordY"] = 878.783508300781,
+						["CoordY"] = 879.551025390625,
 						["CoordX"] = 620.521179199219,
 					},
 				},
@@ -1411,15 +1411,16 @@ LUIDB = {
 						["Width"] = 198,
 					},
 					["Raid"] = {
+						["Anchor"] = "Vd1",
 						["Height"] = 237,
 						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
+						["IsShown"] = true,
 						["Width"] = 612,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1461,11 +1462,10 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Raid"] = {
-						["IsShown"] = true,
 						["Width"] = 612,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
 						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
 					},
 					["MicroMenu"] = {
 						["IsShown"] = true,
@@ -1483,9 +1483,9 @@ LUIDB = {
 						["Direction"] = "TOPLEFT",
 						["IsShown"] = true,
 						["Width"] = 189,
-						["Height"] = 218,
-						["OffsetY"] = 17,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["Height"] = 218,
 					},
 					["Minimap"] = {
 						["IsShown"] = true,
@@ -2649,7 +2649,7 @@ LUIDB = {
 				["Argent Dawn"] = {
 					["Gold"] = {
 						["Horde"] = {
-							["Tyrannithal"] = 9874308,
+							["Tyrannithal"] = 11550276,
 							["Cowtastraphy"] = 892725,
 							["Tyran"] = 884,
 							["Datgorg"] = 16550111,
@@ -2659,7 +2659,7 @@ LUIDB = {
 							["Jingojaggot"] = 356823,
 							["Shaekhan"] = 12334,
 							["Bathal"] = 2000,
-							["Shanyt"] = 5173696788,
+							["Shanyt"] = 11020714082,
 						},
 					},
 				},
@@ -9865,38 +9865,38 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [1]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [2]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [3]
-							"/p gigady", -- [4]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [5]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [6]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [7]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [8]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [9]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [10]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [11]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [12]
-							"/p gigady", -- [13]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [14]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [15]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [16]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [17]
-							"/p gigady", -- [18]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [19]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [20]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [21]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [22]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [23]
-							"/p gigady", -- [24]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [25]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [26]
-							"/cw Bothra-TheScryers hopefuly i can get in next week thursday night", -- [27]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [28]
-							"/p gigady", -- [29]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [30]
-							"/cw Bothra-TheScryers sorry got to pass this time", -- [31]
-							"/cw Bothra-TheScryers would like to but playing with my wife trying to get her hunter geared up for the raids she hasnt played hardly the xpac til now ", -- [32]
+							"/dance", -- [1]
+							"/train", -- [2]
+							"/sit", -- [3]
+							"/i can we do armor of the triumvirate to the left after this", -- [4]
+							"/dance", -- [5]
+							"/sit", -- [6]
+							"/dance", -- [7]
+							"/train", -- [8]
+							"/dance", -- [9]
+							"/train", -- [10]
+							"/sit", -- [11]
+							"/dance", -- [12]
+							"/i can we do armor of the triumvirate to the left after this", -- [13]
+							"/train", -- [14]
+							"/dance", -- [15]
+							"/train", -- [16]
+							"/sit", -- [17]
+							"/i can we do armor of the triumvirate to the left after this", -- [18]
+							"/dance", -- [19]
+							"/sit", -- [20]
+							"/dance", -- [21]
+							"/train", -- [22]
+							"/sit", -- [23]
+							"/i can we do armor of the triumvirate to the left after this", -- [24]
+							"/dance", -- [25]
+							"/sit", -- [26]
+							"/dance", -- [27]
+							"/train", -- [28]
+							"/i can we do armor of the triumvirate to the left after this", -- [29]
+							"/sit", -- [30]
+							"/train", -- [31]
+							"/sit", -- [32]
 						},
 					},
 				},
@@ -10025,10 +10025,10 @@ LUIDB = {
 					["y"] = 46.0004300258579,
 				},
 				["Tyrannithal - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
 				},
 				["Zulbathal - Zul'jin"] = {
 					["modules"] = {
@@ -10037,10 +10037,10 @@ LUIDB = {
 					["y"] = 46.0004300258579,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
 				},
 				["Brotuss - Zul'jin"] = {
 					["modules"] = {

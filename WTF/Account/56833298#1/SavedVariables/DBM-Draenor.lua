@@ -64,11 +64,11 @@ DBMDraenor_AllSavedVars = {
 				["Yell187668"] = true,
 				["Timer187466cd"] = true,
 				["SpecWarn187668youSWNote"] = true,
+				["RangeFrame"] = true,
 				["SpecWarn187668youSWSound"] = 1,
-				["SpecWarn187466spellSWNote"] = true,
 				["SpecWarn187668you"] = true,
 				["SpecWarn187466spellSWSound"] = 2,
-				["RangeFrame"] = true,
+				["SpecWarn187466spellSWNote"] = true,
 				["Timer187664cd"] = true,
 			}, -- [1]
 		},

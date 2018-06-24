@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0209,
+	["LastVersion"] = 2.0218,
 	["LastPlayerFullName"] = "Tyrannithal-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,

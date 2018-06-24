@@ -1,8 +1,8 @@
-## Interface: 70320
+## Interface: 70300
 ## Title: HandyNotes_CamelFigurines
 ## Notes: Shows location of Mysterious Camel Figurines in Uldum
 ## Author: AdmiralBlackfur
-## Version: 1
+## Version: 1.3
 ## DefaultState: enabled
 ## X-Category: Achievements
 ## SavedVariables: HandyNotes_CamelFigurinesDB

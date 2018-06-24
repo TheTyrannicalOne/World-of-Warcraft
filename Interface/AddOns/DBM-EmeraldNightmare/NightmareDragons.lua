@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1704, "DBM-EmeraldNightmare", nil, 768)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17522 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17603 $"):sub(12, -3))
 mod:SetCreatureID(102679)--Ysondre, 102683 (Emeriss), 102682 (Lethon), 102681 (Taerar)
 mod:SetEncounterID(1854)
 mod:SetZone()
@@ -236,8 +236,7 @@ function mod:SPELL_CAST_START(args)
 			DBM:Debug("GetBossTarget failed, no bossuid")
 			return
 		end
-		local tanking, status = UnitDetailedThreatSituation("player", bossuid)
-		if tanking or (status == 3) then--Player is current target
+		if self:IsTanking("player", bossuid, nil, true) then
 			warnBreath:Show()
 		end
 		if args:GetSrcCreatureID() ~= 103145 then--Filter shades
@@ -403,7 +402,8 @@ local function delayedClear(self, GUID)
 	activeBossGUIDS[GUID] = nil
 end
 
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, _, _, spellId)
+function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, bfaSpellId, _, legacySpellId)
+	local spellId = legacySpellId or bfaSpellId
 	if spellId == 203147 then--Nightmare Blast
 		warnNightmareBlast:Show()
 		timerNightmareBlastCD:Start()

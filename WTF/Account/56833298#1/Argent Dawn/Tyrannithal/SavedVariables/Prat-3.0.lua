@@ -14,23 +14,23 @@ Prat3CharDB = {
 			},
 			["ChatFrame6EditBox"] = {
 			},
-			["ChatFrame3EditBox"] = {
-			},
-			["ChatFrame1EditBox"] = {
+			["ChatFrame9EditBox"] = {
 			},
 			["ChatFrame2EditBox"] = {
 			},
-			["ChatFrame9EditBox"] = {
+			["ChatFrame3EditBox"] = {
+			},
+			["ChatFrame1EditBox"] = {
 			},
 		},
 	},
 }
 Prat3HighCPUPerCharDB = {
-	["time"] = 1516579663,
+	["time"] = 1527540075,
 	["scrollback"] = {
 		["ChatFrame4"] = {
 			{
-				"|cff979797[19:07:43]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
+				"|cff979797[16:41:15]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Orgrimmar]|h", -- [1]
 				1, -- [2]
 				0.752941250801086, -- [3]
 				0.752941250801086, -- [4]
@@ -39,16 +39,6 @@ Prat3HighCPUPerCharDB = {
 				1, -- [7]
 				2, -- [8]
 			}, -- [1]
-			{
-				"|cff979797[19:07:43]|r|c00000000|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				4, -- [7]
-				5, -- [8]
-			}, -- [2]
 		},
 	},
 }

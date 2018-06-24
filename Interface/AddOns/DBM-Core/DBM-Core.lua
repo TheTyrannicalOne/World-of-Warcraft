@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17545 $"):sub(12, -3)),
-	DisplayVersion = "7.3.31 alpha", -- the string that is shown as version
-	ReleaseRevision = 17510 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 17605 $"):sub(12, -3)),
+	DisplayVersion = "7.3.32 alpha", -- the string that is shown as version
+	ReleaseRevision = 17598 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -53,7 +53,7 @@ if not DBM.Revision then
 	DBM.Revision = DBM.ReleaseRevision
 end
 
-local wowVersionString, _, _, wowTOC = GetBuildInfo()
+local wowVersionString, wowBuild, _, wowTOC = GetBuildInfo()
 local testBuild = false
 if IsTestBuild() then
 	testBuild = true
@@ -407,7 +407,7 @@ local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
 
-local bannedMods = { -- a list of "banned" (meaning they are replaced by another mod like DBM-Battlegrounds (replaced by DBM-PvP)) boss mods, these mods will not be loaded by DBM (and they wont show up in the GUI)
+local bannedMods = { -- a list of "banned" (meaning they are replaced by another mod or discontinued). These mods will not be loaded by DBM (and they wont show up in the GUI)
 	"DBM-Battlegrounds", --replaced by DBM-PvP
 	-- ZG and ZA are now part of the party mods for Cataclysm
 	"DBM-ZulAman",--Remove restriction in 8.0 classic wow
@@ -418,6 +418,9 @@ local bannedMods = { -- a list of "banned" (meaning they are replaced by another
 	"DBM-ProvingGrounds",--Renamed to DBM-Challenges going forward to include proving grounds and any new single player challendges of similar design such as mage tower artifact quests
 	"DBM-VPKiwiBeta",--Renamed to DBM-VPKiwi in final version.
 	"DBM-Suramar",--Renamed to DBM-Nighthold
+	"DBM-KulTiras",--Merged to DBM-Azeroth-BfA
+	"DBM-Zandalar",--Merged to DBM-Azeroth-BfA
+--	"DBM-PvP",--Discontinued do to inability to maintain such large scale external projects with limitted time/resources
 }
 
 
@@ -583,7 +586,7 @@ local BNSendWhisper = sendWhisper
 local function stripServerName(cap)
 	cap = cap:sub(2, -2)
 	if DBM.Options.StripServerName then
-		cap = Ambiguate(cap, "short")
+		cap = Ambiguate(cap, "none")
 	end
 	return cap
 end
@@ -1148,17 +1151,17 @@ do
 			onLoadCallbacks = nil
 			loadOptions(self)
 			if GetAddOnEnableState(playerName, "VEM-Core") >= 1 then
-				self:Disable()
+				self:Disable(true)
 				C_TimerAfter(15, function() AddMsg(self, DBM_CORE_VEM) end)
 				return
 			end
 			if GetAddOnEnableState(playerName, "DBM-Profiles") >= 1 then
-				self:Disable()
+				self:Disable(true)
 				C_TimerAfter(15, function() AddMsg(self, DBM_CORE_3RDPROFILES) end)
 				return
 			end
 			if GetAddOnEnableState(playerName, "DPMCore") >= 1 then
-				self:Disable()
+				self:Disable(true)
 				C_TimerAfter(15, function() AddMsg(self, DBM_CORE_DPMCORE) end)
 				return
 			end
@@ -1312,6 +1315,7 @@ do
 				"GROUP_ROSTER_UPDATE",
 				"INSTANCE_GROUP_SIZE_CHANGED",
 				"CHAT_MSG_ADDON",
+				--"CHAT_MSG_ADDON_LOGGED",--Enable in next Beta Build
 				"BN_CHAT_MSG_ADDON",
 				"PLAYER_REGEN_DISABLED",
 				"PLAYER_REGEN_ENABLED",
@@ -2175,9 +2179,16 @@ do
 				DBM:AddMsg(("Location Information\nYou are at zone %u (%s).\nLocal Map ID %u (%s)"):format(map, GetRealZoneText(map), mapID, GetZoneText()))
 			else
 				local x, y, _, map = UnitPosition("player")
-				SetMapToCurrentZone()
-				local mapID = C_Map and C_Map.GetBestMapForUnit("player") or GetCurrentMapAreaID()
-				local mapx, mapy = GetPlayerMapPosition("player")
+				local mapID, mapx, mapy
+				if wowTOC == 80000 then
+					mapID = C_Map.GetBestMapForUnit("player")
+					local tempTable = C_Map.GetPlayerMapPosition(mapID, "player")
+					mapx, mapy = tempTable.x, tempTable.y
+				else
+					SetMapToCurrentZone()
+					mapID = GetCurrentMapAreaID()
+					mapx, mapy = GetPlayerMapPosition("player")
+				end
 				DBM:AddMsg(("Location Information\nYou are at zone %u (%s): x=%f, y=%f.\nLocal Map ID %u (%s): x=%f, y=%f"):format(map, GetRealZoneText(map), x, y, mapID, GetZoneText(), mapx, mapy))
 			end
 		elseif cmd:sub(1, 7) == "request" then
@@ -4282,14 +4293,14 @@ do
 							if updateNotificationDisplayed < 3 then
 								updateNotificationDisplayed = 3
 								AddMsg(DBM, DBM_CORE_UPDATEREMINDER_DISABLE)
-								DBM:Disable()
+								DBM:Disable(true)
 							end
 						end
 					--Disable if out of date and it's a major patch.
 					elseif not testBuild and dbmToc < wowTOC then
 						updateNotificationDisplayed = 3
 						AddMsg(DBM, DBM_CORE_UPDATEREMINDER_MAJORPATCH)
-						DBM:Disable()
+						DBM:Disable(true)
 					end
 				end
 			end
@@ -4304,7 +4315,7 @@ do
 				if testBuild and revDifference > 5 then
 					updateNotificationDisplayed = 3
 					AddMsg(DBM, DBM_CORE_UPDATEREMINDER_DISABLE)
-					DBM:Disable()
+					DBM:Disable(true)
 				else
 					updateNotificationDisplayed = 2
 					AddMsg(DBM, DBM_CORE_UPDATEREMINDER_HEADER_ALPHA:format(revDifference))
@@ -4903,6 +4914,7 @@ do
 			end
 		end
 	end
+	--DBM.CHAT_MSG_ADDON_LOGGED = DBM.CHAT_MSG_ADDON
 	
 	function DBM:BN_CHAT_MSG_ADDON(prefix, msg, channel, sender)
 		if prefix == "D4" and msg then
@@ -6709,7 +6721,7 @@ end
 
 --This completely unregisteres or registers distruptive events so they don't obstruct combat
 --Toggle is for if we are turning off or on.
---Custom is for pvp mods to call function without duplication and allowing pvp mods custom toggle.
+--Custom is for external mods to call function without duplication and allowing pvp mods custom toggle.
 do
 	local unregisteredEvents = {}
 	local function DisableEvent(frameName, eventName)
@@ -6766,17 +6778,23 @@ end
 --------------------------
 --  Enable/Disable DBM  --
 --------------------------
-function DBM:Disable()
-	unscheduleAll()
-	dbmIsEnabled = false
-end
+do
+	local forceDisabled = false
+	function DBM:Disable(forceDisable)
+		unscheduleAll()
+		dbmIsEnabled = false
+		forceDisabled = forceDisable
+	end
 
-function DBM:Enable()
-	dbmIsEnabled = true
-end
+	function DBM:Enable()
+		if not forceDisabled then
+			dbmIsEnabled = true
+		end
+	end
 
-function DBM:IsEnabled()
-	return dbmIsEnabled
+	function DBM:IsEnabled()
+		return dbmIsEnabled
+	end
 end
 
 -----------------------
@@ -6928,7 +6946,7 @@ function DBM:AntiSpam(time, id)
 end
 
 function DBM:GetTOC()
-	return wowTOC, testBuild, wowVersionString
+	return wowTOC, testBuild, wowVersionString, wowBuild
 end
 
 function DBM:InCombat()
@@ -6973,8 +6991,7 @@ function DBM:FindInstanceIDs()
 	end
 end
 
---/run DBM:FindEncounterIDs(1028)--Kul Tiras
---/run DBM:FindEncounterIDs(1029)--Zandalar
+--/run DBM:FindEncounterIDs(1028)--Azeroth (BfA)
 --/run DBM:FindEncounterIDs(1031)--Uldir
 --/run DBM:FindEncounterIDs(1001, 23)--Dungeon Template (mythic difficulty)
 function DBM:FindEncounterIDs(instanceID, diff)
@@ -7301,6 +7318,14 @@ function bossModPrototype:IsTrivial(level)
 	if difficultyIndex == 24 then return false end--Timewalker dungeon, ignore level and return false for trivial
 	if playerLevel >= level then
 		return true
+	end
+	return false
+end
+
+function bossModPrototype:IsValidWarning(sourceGUID)
+	for uId in DBM:GetGroupMembers() do
+		local target = uId.."target"
+		if UnitExists(target) and UnitGUID(target) == sourceGUID and UnitAffectingCombat(target) then return true end
 	end
 	return false
 end
@@ -7706,6 +7731,7 @@ do
 		["RemoveCurse"] = true,--from ally
 		["MagicDispeller"] = true--from ENEMY, not debuffs on players. use "Healer" for ally magic dispels. ALL healers can do that.
 		["HasInterrupt"] = true,--Has an interrupt that is 24 seconds or less CD that is BASELINE (not a talent)
+		["HasImmunity"] = true,--Has an immunity that can prevent or remove a spell effect (not just one that reduces damage like turtle or dispursion)
 	}]]
 
 	local specRoleTable = {
@@ -7718,6 +7744,7 @@ do
 			["CasterDps"] = true,
 			["MagicDispeller"] = true,
 			["HasInterrupt"] = true,
+			["HasImmunity"] = true,
 		},
 		[65] = {	--Holy Paladin
 			["Healer"] = true,
@@ -7727,6 +7754,7 @@ do
 			["RaidCooldown"] = true,--Devotion Aura
 			["RemovePoison"] = true,
 			["RemoveDisease"] = true,
+			["HasImmunity"] = true,
 		},
 		[66] = {	--Protection Paladin
 			["Tank"] = true,
@@ -7736,6 +7764,7 @@ do
 			["RemovePoison"] = true,
 			["RemoveDisease"] = true,
 			["HasInterrupt"] = true,
+			["HasImmunity"] = true,
 		},
 		[70] = {	--Retribution Paladin
 			["Dps"] = true,
@@ -7746,6 +7775,7 @@ do
 			["RemovePoison"] = true,
 			["RemoveDisease"] = true,
 			["HasInterrupt"] = true,
+			["HasImmunity"] = true,
 		},
 		[71] = {	--Arms Warrior
 			["Dps"] = true,
@@ -7850,6 +7880,7 @@ do
 			["MeleeDps"] = true,
 			["Physical"] = true,
 			["HasInterrupt"] = true,
+			["HasImmunity"] = true,
 		},
 		[262] = {	--Elemental Shaman
 			["Dps"] = true,
@@ -8126,7 +8157,7 @@ function bossModPrototype:IsHealer(uId)
 	end
 end
 
-function bossModPrototype:IsTanking(unit, boss, isName)
+function bossModPrototype:IsTanking(unit, boss, isName, onlyRequested)
 	if isName then--Passed combat log name, so pull unit ID
 		unit = DBM:GetRaidUnitId(unit)
 	end
@@ -8135,27 +8166,29 @@ function bossModPrototype:IsTanking(unit, boss, isName)
 		return false
 	end
 	--Prefer threat target first
-	if boss and UnitExists(boss) then--Only checking one bossID as requested
+	if boss then--Only checking one bossID as requested
 		local tanking, status = UnitDetailedThreatSituation(unit, boss)
 		if tanking or (status == 3) then
 			return true
 		end
 	else--Check all of them if one isn't defined
 		for i = 1, 5 do
-			if UnitExists("boss"..i) then
+			--if UnitExists("boss"..i) then
 				local tanking, status = UnitDetailedThreatSituation(unit, "boss"..i)
 				if tanking or (status == 3) then
 					return true
 				end
-			end
+			--end
 		end
 	end
-	--Use these as fallback if threat target not found
-	if GetPartyAssignment("MAINTANK", unit, 1) then
-		return true
-	end
-	if UnitGroupRolesAssigned(unit) == "TANK" then
-		return true
+	if not onlyRequested then
+		--Use these as fallback if threat target not found
+		if GetPartyAssignment("MAINTANK", unit, 1) then
+			return true
+		end
+		if UnitGroupRolesAssigned(unit) == "TANK" then
+			return true
+		end
 	end
 	return false
 end
