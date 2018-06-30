@@ -1,5 +1,26 @@
 Changes since tag 7.3.31
 
+commit e40545a955f382e9dbcb2419a594ffac1f790bdb
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jun 30 01:33:36 2018 +0200
+
+    Omega via svn r17608:
+    Support stats layout too
+
+commit 1583be71531fdbf85f8f52c51732caa88eecf69e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Jun 30 01:26:31 2018 +0200
+
+    Omega via svn r17607:
+    Add isles difficulty detection
+
+commit 458d0bbe842fe392dbc14fc0c317739328f2d199
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Jun 25 05:12:33 2018 +0200
+
+    Omega via svn r17606:
+    Most of motherload drycoded
+
 commit 262b3de40119a974f2854ffcc5a6c6e1307c1fac
 Author: subversion <svn@deadlybossmods.com>
 Date:   Wed Jun 20 20:44:33 2018 +0200

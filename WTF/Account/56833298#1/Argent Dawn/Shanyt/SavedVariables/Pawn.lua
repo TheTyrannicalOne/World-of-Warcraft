@@ -4,7 +4,6 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128910] = {
 			["Relics"] = {
@@ -41,6 +40,7 @@ PawnOptions = {
 			["Name"] = "Warswords of the Valarjar",
 		},
 	},
+	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "WARRIOR",

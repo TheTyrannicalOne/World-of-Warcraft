@@ -41,7 +41,7 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17605 $"):sub(12, -3)),
+	Revision = tonumber(("$Revision: 17608 $"):sub(12, -3)),
 	DisplayVersion = "7.3.32 alpha", -- the string that is shown as version
 	ReleaseRevision = 17598 -- the revision of the latest stable version that is available
 }
@@ -1203,6 +1203,7 @@ do
 								hasMythic		= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-Has-Mythic") or 0) == 1,
 								hasTimeWalker	= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-Has-TimeWalker") or 0) == 1,
 								isWorldBoss		= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-World-Boss") or 0) == 1,
+								isExpedition	= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-Expedition") or 0) == 1,
 								minRevision		= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-MinCoreRevision") or 0),
 								minExpansion	= tonumber(GetAddOnMetadata(i, "X-DBM-Mod-MinExpansion") or 0),
 								modId			= addonName,
@@ -6223,6 +6224,7 @@ function DBM:SetCurrentSpecInfo()
 	currentSpecID = tonumber(currentSpecID)
 end
 
+--TODO C_IslandsQueue.GetIslandDifficultyInfo(), if 38-40 don't work
 function DBM:GetCurrentInstanceDifficulty()
 	local _, instanceType, difficulty, difficultyName, _, _, _, _, instanceGroupSize = GetInstanceInfo()
 	local keystoneLevel = C_ChallengeMode.GetActiveKeystoneInfo() or 0
@@ -6250,11 +6252,11 @@ function DBM:GetCurrentInstanceDifficulty()
 		return "heroic5", difficultyName.." - ", difficulty, instanceGroupSize, keystoneLevel
 	elseif difficulty == 12 then
 		return "normal5", difficultyName.." - ", difficulty, instanceGroupSize, keystoneLevel
-	elseif difficulty == 14 then
+	elseif difficulty == 14 or difficulty == 38 then
 		return "normal", difficultyName.." - ", difficulty, instanceGroupSize, keystoneLevel
-	elseif difficulty == 15 then
+	elseif difficulty == 15 or difficulty == 39 then
 		return "heroic", difficultyName.." - ", difficulty, instanceGroupSize, keystoneLevel
-	elseif difficulty == 16 then
+	elseif difficulty == 16 or difficulty == 40 then
 		return "mythic", difficultyName.." - ", difficulty, instanceGroupSize, keystoneLevel
 	elseif difficulty == 17 then--Variable LFR (ie post WoD zones)
 		return "lfr", difficultyName.." - ", difficulty, instanceGroupSize, keystoneLevel

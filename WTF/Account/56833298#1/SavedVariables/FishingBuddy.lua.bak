@@ -6,10 +6,10 @@ FishingBuddy_Info = {
 		[8001] = 8,
 		[7000] = 15,
 		[3006] = 1,
-		[3013] = 3,
+		[7001] = 15,
 		[3000] = 7,
 		[3008] = 2,
-		[7001] = 15,
+		[3013] = 3,
 	},
 	["HiddenFishies"] = {
 	},
@@ -47,6 +47,32 @@ FishingBuddy_Info = {
 			[124107] = 3,
 		},
 	},
+	["FishSchools"] = {
+		[8] = {
+			{
+				["y"] = 0.258821285050758,
+				["x"] = 0.342897241360431,
+				["sidx"] = 8001,
+				["kind"] = 0,
+				["fish"] = {
+					[134574] = 7,
+				},
+				["count"] = 7,
+			}, -- [1]
+		},
+		[3] = {
+			{
+				["y"] = 0.459589991479309,
+				["x"] = 0.50088853988631,
+				["sidx"] = 3013,
+				["kind"] = 0,
+				["count"] = 3,
+				["fish"] = {
+					[124107] = 3,
+				},
+			}, -- [1]
+		},
+	},
 	["SubZones"] = {
 		[3004] = "Shackle's Den",
 		[3012] = "Llothien",
@@ -74,17 +100,16 @@ FishingBuddy_Info = {
 		[6002] = "Garden of the Moon",
 		[6003] = "Dreadroot",
 		[3010] = "Drowned Gardens",
-		[6001] = "Emerald Bay",
-		[8001] = "Moonwhisper Gulch",
+		[8002] = "Meredil",
+		[3002] = "Lair of the Deposed",
 		[1001] = "The Culling of Stratholme",
 		[3003] = "Faronaar Front",
 		[3011] = "El'dranil Shallows",
 		[3005] = "Old Coast Path",
 		[2002] = "Stormheim",
-		[3002] = "Lair of the Deposed",
-		[8002] = "Meredil",
+		[8001] = "Moonwhisper Gulch",
+		[6001] = "Emerald Bay",
 	},
-	["Version"] = 18000,
 	["FishInfo2"] = 0,
 	["ZoneIndex"] = {
 		"The Culling of Stratholme", -- [1]
@@ -101,88 +126,63 @@ FishingBuddy_Info = {
 		[138777] = {
 			["enUS"] = "Drowned Mana",
 			["mods"] = 0,
-			["texture"] = 132852,
+			["quality"] = 1,
 			["level"] = 800,
 			["skill"] = 800,
-			["quality"] = 1,
+			["texture"] = 132852,
 		},
 		[133703] = {
 			["enUS"] = "Pearlescent Conch",
 			["mods"] = 0,
-			["texture"] = 134434,
+			["quality"] = 1,
 			["level"] = 800,
 			["skill"] = 800,
-			["quality"] = 1,
+			["texture"] = 134434,
 		},
 		[124107] = {
 			["enUS"] = "Cursed Queenfish",
 			["mods"] = 0,
-			["quality"] = 1,
+			["texture"] = 1387364,
 			["level"] = 800,
 			["skill"] = 800,
-			["texture"] = 1387364,
+			["quality"] = 1,
 		},
 		[133607] = {
 			["enUS"] = "Silver Mackerel",
 			["mods"] = 0,
-			["quality"] = 1,
+			["texture"] = 133934,
 			["level"] = 800,
 			["skill"] = 800,
-			["texture"] = 133934,
+			["quality"] = 1,
 		},
 		[134574] = {
-			["texture"] = 237316,
+			["quality"] = 1,
 			["enUS"] = "Huge Runescale Koi",
 			["mods"] = 0,
-			["quest"] = true,
+			["skill"] = 800,
 			["canopen"] = false,
 			["level"] = 800,
-			["skill"] = 800,
+			["quest"] = true,
+			["texture"] = 237316,
+		},
+		[134564] = {
 			["quality"] = 1,
+			["enUS"] = "Lively Cursed Queenfish",
+			["mods"] = 0,
+			["skill"] = 800,
+			["canopen"] = false,
+			["level"] = 800,
+			["quest"] = true,
+			["texture"] = 237324,
 		},
 		[124110] = {
 			["enUS"] = "Stormray",
 			["mods"] = 0,
-			["quality"] = 1,
-			["level"] = 800,
-			["skill"] = 800,
 			["texture"] = 1387376,
-		},
-		[134564] = {
-			["texture"] = 237324,
-			["enUS"] = "Lively Cursed Queenfish",
-			["mods"] = 0,
-			["quest"] = true,
-			["canopen"] = false,
 			["level"] = 800,
 			["skill"] = 800,
 			["quality"] = 1,
 		},
 	},
-	["FishSchools"] = {
-		[8] = {
-			{
-				["y"] = 0.258821285050758,
-				["x"] = 0.342897241360431,
-				["sidx"] = 8001,
-				["kind"] = 0,
-				["count"] = 7,
-				["fish"] = {
-					[134574] = 7,
-				},
-			}, -- [1]
-		},
-		[3] = {
-			{
-				["y"] = 0.459589991479309,
-				["x"] = 0.50088853988631,
-				["sidx"] = 3013,
-				["kind"] = 0,
-				["fish"] = {
-					[124107] = 3,
-				},
-				["count"] = 3,
-			}, -- [1]
-		},
-	},
+	["Version"] = 18000,
 }

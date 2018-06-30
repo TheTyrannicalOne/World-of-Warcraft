@@ -1,305 +1,307 @@
 
 VWQL = {
 	["Gillbourn-Runetotem"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Cowtastraphy-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Brokehorn-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Urbul-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Sort"] = 3,
 	["VERSION"] = 40,
 	["Jingojaggot-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Datgorg-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["ReverseSort"] = true,
 	["Narisaric-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Tyran-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Vaddor-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Tyrannithal-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Serbitechna-Darkspear"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Fantastiburo-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Goramor-Runetotem"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Shaekhan-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Claugh-Runetotem"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Zulbathal-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Migimong-Runetotem"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Panboozled-Runetotem"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Vadder-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Brotuss-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Jingojaggot-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Thromar-Dalaran"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Fantastiburo-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Gangus-Runetotem"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Jingojaggot-ArgentDawn"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Shaewong-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Malivant-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Beeronimo-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Brewnheimer-Darkspear"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Sinh-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Shanyt-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-			[43943] = true,
-			[43798] = true,
-			[42830] = true,
-		},
+	["Tyrann-Zul'jin"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Datgorg-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Dialdaas-Darkspear"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Brotus-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Bathal-ArgentDawn"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
-	},
-	["Shanyt-Zul'jin"] = {
-		["Filter"] = 63,
 		["Quests"] = {
 		},
-		["FilterType"] = {
-		},
-	},
-	["Mulmok-ArgentDawn"] = {
 		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["Tyriinid-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
 	},
 	["Ignore"] = {
 	},
-	["Dialdaas-Darkspear"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Tyriinid-Dalaran"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Tyrann-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Mulmok-ArgentDawn"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Brewnheimer-Darkspear"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Shanyt-Zul'jin"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Datgorg-ArgentDawn"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Shanyt-ArgentDawn"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+			[43798] = true,
+			[42178] = true,
+			[42177] = true,
+			[43943] = true,
+			[46113] = true,
+		},
+		["Filter"] = 63,
+	},
+	["Beeronimo-Dalaran"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Shathiel-Darkspear"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Thromar-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Gangus-Runetotem"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Shaekhan-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Tynster-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Migimong-Runetotem"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Zulbathal-Zul'jin"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Tyrannithal-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Goramor-Runetotem"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Fantastiburo-Zul'jin"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
-	["Serbitechna-Darkspear"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
+	["Tyrannithal-ArgentDawn"] = {
 		["FilterType"] = {
 		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 }

@@ -5,11 +5,11 @@ DeathNoteDB = {
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Shanyt - Zul'jin"] = {
+		["LUI-Towelliee"] = {
 		},
 	},
 }
