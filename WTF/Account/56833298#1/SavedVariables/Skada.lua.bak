@@ -282,18 +282,34 @@ SkadaDB = {
 				["channel"] = "Party",
 			},
 		},
-		["Default"] = {
+		["Shanyt - Argent Dawn"] = {
 			["windows"] = {
 				{
-					["y"] = 0.0013580322265625,
-					["x"] = 9.15527343750e-005,
-					["point"] = "CENTER",
+					["barheight"] = 22,
+					["barmax"] = 7,
+					["barslocked"] = true,
+					["y"] = 39.4273262023926,
+					["barfont"] = "ABF",
+					["barfontsize"] = 15,
+					["mode"] = "DPS",
+					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["barwidth"] = 188,
+					["point"] = "BOTTOMRIGHT",
+					["x"] = -25.509765625,
 				}, -- [1]
 			},
+			["icon"] = {
+				["minimapPos"] = 136.914267178511,
+			},
+			["report"] = {
+				["channel"] = "Party",
+				["mode"] = "Healing",
+			},
 			["versions"] = {
-				["1.6.3"] = true,
-				["1.6.4"] = true,
 				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
 			},
 		},
 		["Tyran - Argent Dawn"] = {
@@ -386,34 +402,18 @@ SkadaDB = {
 				["mode"] = "Healing",
 			},
 		},
-		["Shanyt - Argent Dawn"] = {
+		["Default"] = {
 			["windows"] = {
 				{
-					["barheight"] = 22,
-					["barmax"] = 7,
-					["barslocked"] = true,
-					["y"] = 39.4273262023926,
-					["barfont"] = "ABF",
-					["barfontsize"] = 15,
-					["mode"] = "DPS",
-					["spark"] = false,
-					["bartexture"] = "Tukui",
-					["barwidth"] = 188,
-					["point"] = "BOTTOMRIGHT",
-					["x"] = -25.509765625,
+					["y"] = 0.0013580322265625,
+					["x"] = 9.15527343750e-005,
+					["point"] = "CENTER",
 				}, -- [1]
 			},
-			["icon"] = {
-				["minimapPos"] = 136.914267178511,
-			},
-			["report"] = {
-				["channel"] = "Party",
-				["mode"] = "Healing",
-			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 		},
 		["Fantastiburo - Argent Dawn"] = {

@@ -1,5 +1,39 @@
 
 OmniCC4Config = {
+	["groups"] = {
+		{
+			["id"] = "action",
+			["rules"] = {
+				"Action", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [1]
+		{
+			["id"] = "aura",
+			["rules"] = {
+				"Aura", -- [1]
+				"Buff", -- [2]
+				"Debuff", -- [3]
+				"PitBull", -- [4]
+			},
+			["enabled"] = true,
+		}, -- [2]
+		{
+			["id"] = "pet",
+			["rules"] = {
+				"PetActionButton", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [3]
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [4]
+	},
 	["groupSettings"] = {
 		["action"] = {
 			["enabled"] = true,
@@ -282,40 +316,6 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
-	["groups"] = {
-		{
-			["id"] = "action",
-			["rules"] = {
-				"Action", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [1]
-		{
-			["id"] = "aura",
-			["rules"] = {
-				"Aura", -- [1]
-				"Buff", -- [2]
-				"Debuff", -- [3]
-				"PitBull", -- [4]
-			},
-			["enabled"] = true,
-		}, -- [2]
-		{
-			["id"] = "pet",
-			["rules"] = {
-				"PetActionButton", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [3]
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [4]
-	},
-	["version"] = "7.3.1",
 	["engine"] = "AniUpdater",
+	["version"] = "7.3.1",
 }

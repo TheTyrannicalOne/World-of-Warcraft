@@ -41,7 +41,7 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17608 $"):sub(12, -3)),
+	Revision = tonumber(("$Revision: 17616 $"):sub(12, -3)),
 	DisplayVersion = "7.3.32 alpha", -- the string that is shown as version
 	ReleaseRevision = 17598 -- the revision of the latest stable version that is available
 }
@@ -6333,12 +6333,12 @@ function DBM:GetSpellInfo(spellId)
 	end
 end
 
-function DBM:UnitDebuff(uId, spellInput, spellInput2, spellInput3)
+function DBM:UnitDebuff(uId, spellInput, spellInput2, spellInput3, spellInput4)
 	if wowTOC == 80000 then
 		for i = 1, 60 do
 			local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitDebuff(uId, i)
 			if not spellName then return end
-			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
+			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId then
 				return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 			end
 		end
@@ -6347,7 +6347,7 @@ function DBM:UnitDebuff(uId, spellInput, spellInput2, spellInput3)
 			for i = 1, 60 do
 				local spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitDebuff(uId, i)
 				if not spellName then return end
-				if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
+				if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId then
 					return spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 				end
 			end
@@ -6357,12 +6357,12 @@ function DBM:UnitDebuff(uId, spellInput, spellInput2, spellInput3)
 	end
 end
 
-function DBM:UnitBuff(uId, spellInput, spellInput2, spellInput3)
+function DBM:UnitBuff(uId, spellInput, spellInput2, spellInput3, spellInput4)
 	if wowTOC == 80000 then
 		for i = 1, 60 do
 			local spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff(uId, i)
 			if not spellName then return end
-			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
+			if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId then
 				return spellName, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 			end
 		end
@@ -6371,7 +6371,7 @@ function DBM:UnitBuff(uId, spellInput, spellInput2, spellInput3)
 			for i = 1, 60 do
 				local spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3 = UnitBuff(uId, i)
 				if not spellName then return end
-				if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId then
+				if spellInput == spellName or spellInput == spellId or spellInput2 == spellName or spellInput2 == spellId or spellInput3 == spellName or spellInput3 == spellId or spellInput4 == spellName or spellInput4 == spellId then
 					return spellName, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossDebuff, nameplateShowAll, timeMod, value1, value2, value3
 				end
 			end
@@ -6625,7 +6625,7 @@ do
 			SetMapToCurrentZone()
 			currentMapId = C_Map and C_Map.GetCurrentMapID("player") or GetCurrentMapAreaID()
 		end
-		local currentMapName = C_Map and C_Map.GetMapInfo(currentMapId) or GetMapNameByID(currentMapId)
+		local currentMapName = C_Map and C_Map.GetMapInfo(currentMapId) or GetMapNameByID and GetMapNameByID(currentMapId) or DBM_CORE_UNKNOWN
 		if IsInRaid() then
 			for i = 1, GetNumGroupMembers() do
 				if isInInstance and select(4, UnitPosition("raid"..i)) == currentMapId or select(7, GetRaidRosterInfo(i)) == currentMapName then

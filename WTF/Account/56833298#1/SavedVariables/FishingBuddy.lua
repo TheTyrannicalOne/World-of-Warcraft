@@ -47,7 +47,6 @@ FishingBuddy_Info = {
 			[124107] = 3,
 		},
 	},
-	["Version"] = 18000,
 	["SubZones"] = {
 		[3004] = "Shackle's Den",
 		[3012] = "Llothien",
@@ -85,6 +84,7 @@ FishingBuddy_Info = {
 		[3002] = "Lair of the Deposed",
 		[8002] = "Meredil",
 	},
+	["Version"] = 18000,
 	["FishInfo2"] = 0,
 	["ZoneIndex"] = {
 		"The Culling of Stratholme", -- [1]

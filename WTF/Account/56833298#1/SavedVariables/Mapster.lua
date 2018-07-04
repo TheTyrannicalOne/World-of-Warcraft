@@ -27,10 +27,10 @@ MapsterDB = {
 				["Tyrannithal - Argent Dawn"] = {
 					["version"] = 2,
 				},
-				["Shanyt - Argent Dawn"] = {
+				["Default"] = {
 					["version"] = 2,
 				},
-				["Default"] = {
+				["Shanyt - Argent Dawn"] = {
 					["version"] = 2,
 				},
 				["Tyran - Argent Dawn"] = {
@@ -121,13 +121,13 @@ MapsterDB = {
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
 		},
+		["Default"] = {
+		},
 		["Shanyt - Argent Dawn"] = {
 			["scale"] = 1.0691260099411,
 			["y"] = -71.1882280573341,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
-		},
-		["Default"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,

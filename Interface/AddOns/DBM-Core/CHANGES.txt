@@ -1,5 +1,62 @@
 Changes since tag 7.3.31
 
+commit 9c4f3395c3d77eddc67ba89abc68f8928172a681
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Jul 3 06:10:45 2018 +0200
+
+    Omega via svn r17616:
+    add -delay
+
+commit 16b12909e7f58a534f5a5e9de5059fc0c33ed045
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Jul 3 05:17:17 2018 +0200
+
+    Omega via svn r17615:
+    More nil protection against maps with no name
+
+commit 035ad51438e724b4b7f543433df08d915f0afa0e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Jul 2 21:03:45 2018 +0200
+
+    ebmor via svn r17614:
+    deDE update
+
+commit 219e8e6af1f8238589112936a66d6dae648a61b7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Jul 1 22:14:01 2018 +0200
+
+    Omega via svn r17613:
+    Kr update
+
+commit 4b14075517f868393167e0d568b56b9087291389
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Jul 1 19:30:17 2018 +0200
+
+    Omega via svn r17612:
+    Support up to 4 checks at once, as it makes sense to do for legacy mods
+
+commit 02658597594819e245344b00f8644e398a02f0ca
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Jul 1 19:04:19 2018 +0200
+
+    Omega via svn r17611:
+    Some more Unit_spellcast fixes for bfa
+
+commit 6933273eae85b4705e9220c6b48ae59e779f4eb7
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Jul 1 18:10:29 2018 +0200
+
+    Omega via svn r17610:
+    Finally dd Skovald RP
+    Fixed court of stars helper not closing earlier, when finding correct noble
+
+commit eaf0b2cd1a5bc60b2ea84cd4fe354e45780f72c8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Jul 1 03:58:52 2018 +0200
+
+    Omega via svn r17609:
+    Antispam this for when mass pulling
+
 commit e40545a955f382e9dbcb2419a594ffac1f790bdb
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Jun 30 01:33:36 2018 +0200
