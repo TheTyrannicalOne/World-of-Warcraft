@@ -1,5 +1,19 @@
 Changes since tag 7.3.31
 
+commit f78983583f89cb688ae035835260895758146bc2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Jul 6 09:21:39 2018 +0200
+
+    Omega via svn r17618:
+    handle dooms howl and lions roar being same boss (but faction dependent) much like boralas boss
+
+commit 95e87fb9ba248c2fa869e60341450a41699ce52a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jul 4 21:12:22 2018 +0200
+
+    Omega via svn r17617:
+    Fix dooms howl not loading
+
 commit 9c4f3395c3d77eddc67ba89abc68f8928172a681
 Author: subversion <svn@deadlybossmods.com>
 Date:   Tue Jul 3 06:10:45 2018 +0200

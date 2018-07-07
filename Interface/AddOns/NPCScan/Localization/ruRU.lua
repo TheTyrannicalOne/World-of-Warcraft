@@ -207,6 +207,8 @@ VL["Mrrgrl the Tide Reaver"] = "Мрргл Разоритель Морей"
 --[[Translation missing --]]
 --[[ VL["Murktide Alpha"] = "Murktide Alpha"--]] 
 VL["Myonix"] = "Мионикс"
+--[[Translation missing --]]
+--[[ VL["Naroua, King of the Forest"] = "Naroua, King of the Forest"--]] 
 VL["Nas Dunberlin"] = "Наз Данберлин"
 VL["Night Haunter"] = "Ужас ночи"
 --[[Translation missing --]]

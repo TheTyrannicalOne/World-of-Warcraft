@@ -355,6 +355,8 @@ VL["Abandoned Fishing Pole"] = "Caña de pescar abandonada"
 --[[Translation missing --]]
 --[[ VL["Myonix"] = "Myonix"--]] 
 --[[Translation missing --]]
+--[[ VL["Naroua, King of the Forest"] = "Naroua, King of the Forest"--]] 
+--[[Translation missing --]]
 --[[ VL["Nas Dunberlin"] = "Nas Dunberlin"--]] 
 --[[Translation missing --]]
 --[[ VL["Night Haunter"] = "Night Haunter"--]] 

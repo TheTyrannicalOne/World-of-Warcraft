@@ -20,16 +20,16 @@ TradeSkillMaster_WarehousingDB = {
 			"Bathal - Argent Dawn", -- [12]
 			"Shathiel - Darkspear", -- [13]
 		},
-		["factionrealm"] = {
-			"Horde - Argent Dawn", -- [1]
-			"Alliance - Darkspear", -- [2]
+		["realm"] = {
+			"Argent Dawn", -- [1]
+			"Darkspear", -- [2]
 		},
 		["profile"] = {
 			"Default", -- [1]
 		},
-		["realm"] = {
-			"Argent Dawn", -- [1]
-			"Darkspear", -- [2]
+		["factionrealm"] = {
+			"Horde - Argent Dawn", -- [1]
+			"Alliance - Darkspear", -- [2]
 		},
 	},
 	["f@Alliance - Darkspear@BagState"] = {

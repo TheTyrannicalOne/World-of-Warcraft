@@ -324,6 +324,8 @@ VL["Lost Ettin"] = "Ettin perdu"
 --[[Translation missing --]]
 --[[ VL["Myonix"] = "Myonix"--]] 
 --[[Translation missing --]]
+--[[ VL["Naroua, King of the Forest"] = "Naroua, King of the Forest"--]] 
+--[[Translation missing --]]
 --[[ VL["Nas Dunberlin"] = "Nas Dunberlin"--]] 
 VL["Night Haunter"] = "Hante-la-Nuit"
 --[[Translation missing --]]

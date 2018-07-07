@@ -191,6 +191,8 @@ VL["Mother Om'ra"] = "Mutter Om'ra"
 VL["Mrrgrl the Tide Reaver"] = "Mrrgrl der Gezeitenhäscher"
 VL["Murktide Alpha"] = "Glub'glok"
 VL["Myonix"] = "Myonix"
+--[[Translation missing --]]
+--[[ VL["Naroua, King of the Forest"] = "Naroua, King of the Forest"--]] 
 VL["Nas Dunberlin"] = "Nas Dunberlinn"
 VL["Night Haunter"] = "Der Nachtschatten"
 VL["Noble Blademaster"] = "Adliger Klingenmeister"
