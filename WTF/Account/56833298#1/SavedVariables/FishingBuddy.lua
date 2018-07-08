@@ -2,8 +2,9 @@
 FishingBuddy_Info = {
 	["FishTotals"] = {
 		[3009] = 1,
-		[8000] = 8,
+		[8000] = 9,
 		[8001] = 8,
+		[8002] = 1,
 		[7000] = 15,
 		[3006] = 1,
 		[7001] = 15,
@@ -17,9 +18,10 @@ FishingBuddy_Info = {
 		[3008] = 0,
 		[3009] = 0,
 		[7001] = 0,
-		[3006] = 0,
-		[8001] = 0,
+		[8002] = 0,
 		[3013] = 0,
+		[8001] = 0,
+		[3006] = 0,
 	},
 	["DataFish"] = 0,
 	["Locales"] = {
@@ -37,14 +39,17 @@ FishingBuddy_Info = {
 			[138777] = 10,
 			[133607] = 4,
 		},
-		[3006] = {
-			[133607] = 1,
+		[8002] = {
+			[124111] = 1,
+		},
+		[3013] = {
+			[124107] = 3,
 		},
 		[8001] = {
 			[134574] = 8,
 		},
-		[3013] = {
-			[124107] = 3,
+		[3006] = {
+			[133607] = 1,
 		},
 	},
 	["FishSchools"] = {
@@ -59,6 +64,16 @@ FishingBuddy_Info = {
 				},
 				["count"] = 7,
 			}, -- [1]
+			{
+				["y"] = 0.519867647661105,
+				["x"] = 0.376433458558074,
+				["sidx"] = 8002,
+				["kind"] = 0,
+				["fish"] = {
+					[124111] = 1,
+				},
+				["count"] = 1,
+			}, -- [2]
 		},
 		[3] = {
 			{
@@ -91,15 +106,18 @@ FishingBuddy_Info = {
 		[4000] = 1,
 		[3000] = 14,
 		[3008] = "Azsuna",
-		[8000] = 2,
+		[8000] = 3,
 		[6000] = 3,
 		[4001] = "Serpentshrine Cavern",
 		[3001] = "Farondale",
 		[3009] = "Faronaar",
 		[2001] = "Stonescar Gorge",
 		[6002] = "Garden of the Moon",
+		[8003] = "Suramar",
 		[6003] = "Dreadroot",
 		[3010] = "Drowned Gardens",
+		[9001] = "Snarlpaw Ledge",
+		[9000] = 1,
 		[8002] = "Meredil",
 		[3002] = "Lair of the Deposed",
 		[1001] = "The Culling of Stratholme",
@@ -120,6 +138,7 @@ FishingBuddy_Info = {
 		"Val'sharah", -- [6]
 		"Dalaran (Broken Isles)", -- [7]
 		"Suramar", -- [8]
+		"Nagrand (Draenor)", -- [9]
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
@@ -164,6 +183,14 @@ FishingBuddy_Info = {
 			["level"] = 800,
 			["quest"] = true,
 			["texture"] = 237316,
+		},
+		[124111] = {
+			["enUS"] = "Runescale Koi",
+			["mods"] = 0,
+			["quality"] = 1,
+			["level"] = 800,
+			["skill"] = 800,
+			["texture"] = 1387371,
 		},
 		[134564] = {
 			["quality"] = 1,

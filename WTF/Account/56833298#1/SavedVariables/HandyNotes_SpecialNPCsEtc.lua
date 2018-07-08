@@ -14,49 +14,64 @@ HandyNotes_SpecialNPCsEtcDB = {
 	["faction"] = {
 		["Horde"] = {
 			["nodes"] = {
-				["Netherstorm"] = {
-					[32126483] = "Stable:Liza Cutlerflix:Stable Master:149876",
-					[32296717] = "Banker:Meeda:Banker:164675",
-					[32036441] = "Innkeeper:Innkeeper Remi Dodoso:Innkeeper:103793",
+				["Dalaran70"] = {
+					[69973938] = "Cooking:Awilo Lon'gomba:Cooking Trainer:603446",
+					[46212632] = "Mining:Mama Diggs:Mining Trainer:602505",
+					[38594064] = "Enchanting:Enchanter Nalthanis:Enchanting Trainer:603441",
+					[54491920] = "GuildVault:Dalaran:Guild Vault:0",
+					[35462956] = "Leatherworking:Namha Moonwater:Leatherworking Trainer:603427",
+					[38292585] = "Engineering:Timofey Oshenko:Engineering Trainer:598420",
+					[44982871] = "Blacksmithing:Arcanomancer Vridiel:Blacksmithing Trainer:1074773",
+					[58933780] = "Stable:Tassia Whisperglen:Stable Master:615687",
+					[36353727] = "First Aid:Olisarra the Kind:First Aid Trainer:603433",
+					[52726542] = "Fishing:Marcia Chase:Fishing Trainer & Supplies:612420",
+					[35283423] = "Tailoring:Tanithria:Tailoring Trainer:603458",
+					[35782854] = "Skinning:Kondal Huntsworn:Skinning Trainer:603457",
+					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
+					[52991513] = "Banker:Teller Hanners:Banker:616472",
+					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
+					[35412971] = "Leatherworking:Diane Cannings:Leather Armor Expert:603426",
+					[52471473] = "Banker:Teller Rames:Banker:616471",
+					[44582853] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:598403",
+					[65483242] = "Innkeeper:Uda the Beast:Innkeeper:616342",
+					[34772858] = "Leatherworking:Thanid Glowergold:Mail Armor Expert:624945",
+					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
+					[39773487] = "Jewelcrafting:Timothy Jones:Jewelcrafting Trainer:603431",
+					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
+					[42983410] = "Herbalism:Kuhuine Tenderstride:Herbalism Trainer:599140",
 				},
 				["AzuremystScenario"] = {
 					[31403860] = "First Aid:Anchorite Lysara:First Aid Trainer:1204258",
-				},
-				["Zangarmarsh"] = {
-					[31814969] = "Stable:Khalan:Stable Master:98884",
 				},
 				["ThunderTotem"] = {
 					[44564509] = "Enchanting:Guron Twaintail:Enchanting Trainer:622615",
 					[44885372] = "Innkeeper:Ernu Mesawind:Innkeeper:620626",
 				},
-				["TerokkarForest"] = {
-					[30907611] = "First Aid:Anchorite Ensham:First Aid Trainer:140407",
+				["Zangarmarsh"] = {
+					[31814969] = "Stable:Khalan:Stable Master:98884",
 				},
-				["Suramar"] = {
-					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
-					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
+				["Netherstorm"] = {
+					[32126483] = "Stable:Liza Cutlerflix:Stable Master:149876",
+					[32296717] = "Banker:Meeda:Banker:164675",
+					[32036441] = "Innkeeper:Innkeeper Remi Dodoso:Innkeeper:103793",
 				},
 				["ArgusMacAree"] = {
 					[49396934] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
 				},
 				["Dalaran"] = {
 					[45282792] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:165524",
+					[45582846] = "Blacksmithing:Imindril Spearsong:Blacksmithing Trainer:169221",
 					[65162389] = "Auctioneer:Reginald Arcfire:Steam-Powered Auctioneer:218631",
 					[44832808] = "Blacksmithing:Orland Schaeffer:Blacksmithing Trainer:169222",
-					[45582846] = "Blacksmithing:Imindril Spearsong:Blacksmithing Trainer:169221",
 				},
 				["Silverpine"] = {
 					[42884092] = "Blacksmithing:Guillaume Sorouy:Blacksmithing Trainer:13655",
 				},
-				["Orgrimmar"] = {
-					[67745315] = "Banker:Binzella:Banker:288281",
-					[48788382] = "Banker:Rilgiz:Banker:280658",
-					[37928690] = "Stable:Bezzil:Stable Master:284553",
-					[48918360] = "Banker:Perixa:Banker:280662",
-					[38108688] = "Tailoring:Nivi Weavewell:Tailoring Trainer:283993",
-					[38338643] = "First Aid:Krenk Choplimb:First Aid Trainer:283968",
-					[67305312] = "Banker:Vink:Banker:288288",
-					[67885279] = "Banker:Fibi:Banker:288280",
+				["ArgusSurface"] = {
+					[48787464] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
+					[64376264] = "Stable:Lead Rider Jerek:Stable Master:1204576",
+					[47197541] = "Stable:Tassia Whisperglen:Stable Master:615687",
+					[62694761] = "Stable:Raelaara the Kind:Stable Master:1210194",
 				},
 				["FrostfireRidge"] = {
 					[20945656] = "Innkeeper:Humble Sak'ko:Innkeeper:488544",
@@ -77,36 +92,14 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[21584797] = "Banker:Vaultkeeper Shifen:Banker:407910",
 					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
 				},
-				["Dalaran70"] = {
-					[69973938] = "Cooking:Awilo Lon'gomba:Cooking Trainer:603446",
-					[46212632] = "Mining:Mama Diggs:Mining Trainer:602505",
-					[38594064] = "Enchanting:Enchanter Nalthanis:Enchanting Trainer:603441",
-					[54491920] = "GuildVault:Dalaran:Guild Vault:0",
-					[35462956] = "Leatherworking:Namha Moonwater:Leatherworking Trainer:603427",
-					[38292585] = "Engineering:Timofey Oshenko:Engineering Trainer:598420",
-					[44982871] = "Blacksmithing:Arcanomancer Vridiel:Blacksmithing Trainer:1074773",
-					[58933780] = "Stable:Tassia Whisperglen:Stable Master:615687",
-					[36353727] = "First Aid:Olisarra the Kind:First Aid Trainer:603433",
-					[52726542] = "Fishing:Marcia Chase:Fishing Trainer & Supplies:612420",
-					[35283423] = "Tailoring:Tanithria:Tailoring Trainer:603458",
-					[35782854] = "Skinning:Kondal Huntsworn:Skinning Trainer:603457",
-					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
-					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
-					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
-					[35412971] = "Leatherworking:Diane Cannings:Leather Armor Expert:603426",
-					[52471473] = "Banker:Teller Rames:Banker:616471",
-					[44582853] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:598403",
-					[65483242] = "Innkeeper:Uda the Beast:Innkeeper:616342",
-					[34772858] = "Leatherworking:Thanid Glowergold:Mail Armor Expert:624945",
-					[52991513] = "Banker:Teller Hanners:Banker:616472",
-					[39773487] = "Jewelcrafting:Timothy Jones:Jewelcrafting Trainer:603431",
-					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
-					[42983410] = "Herbalism:Kuhuine Tenderstride:Herbalism Trainer:599140",
+				["Azsuna"] = {
+					[47514419] = "Leatherworking:Celea:Leatherworking Trainer:624996",
+					[46994507] = "Skinning:Glielle:Skinning Trainer:624529",
 				},
 				["garrisonffhorde_tier3"] = {
 					[42095354] = "Innkeeper:Provisioner Rashma:Innkeeper:524625",
-					[59452551] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
-					[48343311] = "Banker:Yorn Longhoof:Banker:497762",
+					[48503389] = "Banker:Yorn Longhoof:Banker:497762",
+					[59622532] = "Auctioneer:Ancient Trading Mechanism:Auctioneer:553225",
 				},
 				["BladesEdgeMountains"] = {
 					[76076030] = "Innkeeper:Matron Varah:Innkeeper:135304",
@@ -115,23 +108,20 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[53905506] = "First Aid:Fera Palerunner:First Aid Trainer:103544",
 					[76836545] = "Leatherworking:Grikka:Leatherworking Trainer:135303",
 				},
-				["Azsuna"] = {
-					[47514419] = "Leatherworking:Celea:Leatherworking Trainer:624996",
-					[46994507] = "Skinning:Glielle:Skinning Trainer:624529",
-				},
 				["Durotar"] = {
 					[52014179] = "Stable:Shoja'my:Stable Master:39303",
 					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
 				},
-				["ArgusSurface"] = {
-					[48787464] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
-					[64376264] = "Stable:Lead Rider Jerek:Stable Master:1204576",
-					[47197541] = "Stable:Tassia Whisperglen:Stable Master:615687",
-					[62694761] = "Stable:Raelaara the Kind:Stable Master:1210194",
-				},
 				["ShattrathCity"] = {
 					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
 					[48372913] = "Banker:Gromden:Banker:103192",
+				},
+				["TerokkarForest"] = {
+					[30907611] = "First Aid:Anchorite Ensham:First Aid Trainer:140407",
+				},
+				["Suramar"] = {
+					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
+					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
 				},
 				["TimelessIsle"] = {
 					[36424690] = "Innkeeper:Graceful Swan:Innkeeper:472610",
@@ -139,6 +129,16 @@ HandyNotes_SpecialNPCsEtcDB = {
 				["ShadowmoonValley"] = {
 					[29212942] = "Stable:Gedrah:Stable Master:135990",
 					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
+				},
+				["Orgrimmar"] = {
+					[67745315] = "Banker:Binzella:Banker:288281",
+					[48788382] = "Banker:Rilgiz:Banker:280658",
+					[37928690] = "Stable:Bezzil:Stable Master:284553",
+					[48918360] = "Banker:Perixa:Banker:280662",
+					[38108688] = "Tailoring:Nivi Weavewell:Tailoring Trainer:283993",
+					[38338643] = "First Aid:Krenk Choplimb:First Aid Trainer:283968",
+					[67305312] = "Banker:Vink:Banker:288288",
+					[67885279] = "Banker:Fibi:Banker:288280",
 				},
 				["Nagrand"] = {
 					[56693457] = "Innkeeper:Matron Tikkit:Innkeeper:100627",

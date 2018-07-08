@@ -240,6 +240,8 @@ VL["Rauren"] = "Рорен"
 --[[Translation missing --]]
 --[[ VL["Ravager Broodlord"] = "Ravager Broodlord"--]] 
 VL["Ravyn-Drath"] = "Райвин-Драт"
+--[[Translation missing --]]
+--[[ VL["Really Skunky Beer"] = "Really Skunky Beer"--]] 
 VL["Reef Lord Raj'his"] = "Повелитель рифов Раж'хис"
 VL["Remnant of the Blood Moon"] = "Частица Кровавой Луны"
 VL["Rogond"] = "Рогонд"

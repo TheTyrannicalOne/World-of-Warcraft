@@ -1,22 +1,46 @@
-tag ced71b3f4bab2b11cd2dc9a9ddbaf787d7eb77dd 7.3.5.15
+tag 565f4ba13e15e8054e25e701dd34f4066f06f9d3 7.3.5.17
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Sat Jul 7 03:37:09 2018 -0500
+Date:	Sun Jul 8 07:20:48 2018 -0500
 
-commit 35a3a3b314e0f5cf946aeea9b6a57b82d65ec6e4
+commit 103717f079ba279c335f02bfc3dbc81a39df6f8c
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Jul 7 03:36:49 2018 -0500
+Date:   Sun Jul 8 07:15:33 2018 -0500
 
-    Fix logic error for ignored achievement criteria - the setting was being completely ignored instead of only being ignored if an NPC has an active tracking quest.
+    Fix addition of custom NPC entries, and don't try to show these in the tooltip.
 
-commit c5aadc7ee1bcc9151bcb3cb15e0fd5ca0181b5b6
+commit e0c72ecd3bb056022eb0e3b36905e33833208e37
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Jul 6 02:17:49 2018 -0500
+Date:   Sun Jul 8 07:14:47 2018 -0500
 
-    Add quest ID for Malificus.
+    Fix NPC reference when looking up achievement data in the target button.
 
-commit 0d1458d9770818bd9535f967b99d6e679d2c6788
+commit 21114e130f4a716c1de0c94f6eb94fff9d79d89c
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Jul 6 02:17:22 2018 -0500
+Date:   Sun Jul 8 06:15:40 2018 -0500
 
-    Add vignette name for Naroua.
+    Modify IsNPCQuestComplete to use the NPC object instead of its ID to obviate the need to check for existence within the function.
+
+commit 64286e1e2b7f68dff86056fcdd36d57ca3efef1d
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:14:26 2018 -0500
+
+    Add tracking for the 'Praise the Sun!' achievement, and manually add Nalak as criteria.
+
+commit ba8d8aa19c22645afd1cb9e8bfe20f2c6b839feb
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:13:24 2018 -0500
+
+    Add support for adding an NPC to an achievement despite its criteria, since Blizzard isn't super consistent with how they track things.
+
+commit 09705e154ecb6682e178e2eeca2de997a83f2a2f
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:09:18 2018 -0500
+
+    Add tracking quest for Nalak.
+
+commit 1bb64f4882182226163ab29df756ade31b975ab1
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 8 06:08:40 2018 -0500
+
+    Re-add removed ID for Cranegnasher - it's the one used for the achievement.
 

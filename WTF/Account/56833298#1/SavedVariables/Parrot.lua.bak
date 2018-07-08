@@ -4073,9 +4073,6 @@ ParrotDB = {
 						},
 					},
 					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
 					["Incoming"] = {
 						["Heals over time"] = {
 							["disabled"] = true,
@@ -4117,7 +4114,9 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
 					["Outgoing"] = {
 						["Skill absorbs"] = {
 							["disabled"] = true,
@@ -4129,6 +4128,7 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Brotuss - Zul'jin"] = {

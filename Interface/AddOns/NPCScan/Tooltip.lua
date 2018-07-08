@@ -44,6 +44,23 @@ TitleFont:SetFontObject("QuestTitleFont")
 -- ----------------------------------------------------------------------------
 -- Helpers
 -- ----------------------------------------------------------------------------
+local function FormatAtlasTexture(atlasName)
+	local filename, width, height, txLeft, txRight, txTop, txBottom = _G.GetAtlasInfo(atlasName)
+
+	if not filename then
+		return
+	end
+
+	local atlasWidth = width / (txRight - txLeft)
+	local atlasHeight = height / (txBottom - txTop)
+	local pxLeft = atlasWidth * txLeft
+	local pxRight = atlasWidth * txRight
+	local pxTop = atlasHeight * txTop
+	local pxBottom = atlasHeight * txBottom
+
+	return ("|T%s:%d:%d:0:0:%d:%d:%d:%d:%d:%d|t"):format(filename, 0, 0, atlasWidth, atlasHeight, pxLeft, pxRight, pxTop, pxBottom)
+end
+
 local function SortByNPCNameThenByID(a, b)
 	local nameA = npcNames[a]
 	local nameB = npcNames[b]
@@ -106,8 +123,22 @@ end
 -- ----------------------------------------------------------------------------
 -- DataBroker Tooltip.
 -- ----------------------------------------------------------------------------
-local NUM_TOOLTIP_COLUMNS = 2
-local ICON_PATH_TAMEABLE = [[Interface\ICONS\Ability_Hunter_BeastTaming]]
+local NUM_TOOLTIP_COLUMNS = 3
+
+local QUEST_COLUMN = 2
+local TAMEABLE_COLUMN = 3
+
+local ICON_QUEST_ACTIVE = FormatAtlasTexture("QuestDaily")
+local ICON_QUEST_COMPLETE = FormatAtlasTexture("QuestRepeatableTurnin")
+
+local ICON_TAMEABLE
+do
+	local textureFormat = [[|TInterface\TargetingFrame\UI-CLASSES-CIRCLES:0:0:0:0:256:256:%d:%d:%d:%d|t]]
+	local textureSize = 256
+	local left, right, top, bottom = _G.unpack(_G.CLASS_ICON_TCOORDS["HUNTER"])
+
+	ICON_TAMEABLE = textureFormat:format(left * textureSize, right * textureSize, top * textureSize, bottom * textureSize)
+end
 
 local Tooltip
 
@@ -136,7 +167,8 @@ local function OpenToAchievement(_, achievementID)
 end
 
 local function ShowAchievementTooltip(cell, achievementID)
-	GameTooltip:SetOwner(cell, "ANCHOR_PRESERVE")
+	_G.GameTooltip_SetDefaultAnchor(GameTooltip, cell)
+
 	GameTooltip:SetText(Data.Achievements[achievementID].description, 1, 1, 1, 1, true)
 	GameTooltip:Show()
 end
@@ -182,10 +214,13 @@ local function DrawTooltip(anchorFrame)
 	for npcID in pairs(DataObject.scannerData.NPCs) do
 		local npc = Data.NPCs[npcID]
 
-		npcAchievementNames[npcID] = npc.achievementID and Data.Achievements[npc.achievementID].name or "ZZZZZ"
-		npcDisplayNames[npcID] = private.GetNPCOptionsName(npcID)
-		npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
-		npcIDs[#npcIDs + 1] = npcID
+		-- The npcID may belong to a custom NPC, which will not have further information.
+		if npc then
+			npcAchievementNames[npcID] = npc.achievementID and Data.Achievements[npc.achievementID].name or "ZZZZZ"
+			npcDisplayNames[npcID] = private.GetNPCOptionsName(npcID)
+			npcNames[npcID] = NPCScan:GetNPCNameFromID(npcID)
+			npcIDs[#npcIDs + 1] = npcID
+		end
 	end
 
 	table.sort(npcIDs, SortByNPCAchievementNameThenByNameThenByID)
@@ -232,8 +267,12 @@ local function DrawTooltip(anchorFrame)
 
 		Tooltip:SetCell(line, 1, npcDisplayNames[npcID])
 
+		if npc.questID then
+			Tooltip:SetCell(line, QUEST_COLUMN, private.IsNPCQuestComplete(npc) and ICON_QUEST_COMPLETE or ICON_QUEST_ACTIVE)
+		end
+
 		if npc.isTameable then
-			Tooltip:SetCell(line, 2, ("|T%s:0|t"):format(ICON_PATH_TAMEABLE))
+			Tooltip:SetCell(line, TAMEABLE_COLUMN, ICON_TAMEABLE)
 		end
 	end
 end

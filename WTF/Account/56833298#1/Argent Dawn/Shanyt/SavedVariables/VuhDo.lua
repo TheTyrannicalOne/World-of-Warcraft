@@ -120,16 +120,78 @@ VUHDO_CONFIG = {
 	["DETECT_DEBUFFS_IGNORE_DURATION"] = false,
 	["RES_ANNOUNCE_MASS_TEXT"] = "Casting mass resurrection!",
 	["IS_SHARE"] = true,
-	["INC_BOMBED_SECS"] = 3,
+	["SHOW_OVERHEAL"] = 1,
 	["SCAN_RANGE"] = "2",
 	["PARSE_COMBAT_LOG"] = true,
 	["ON_MOUSE_UP"] = false,
-	["BLIZZ_UI_HIDE_RAID"] = 2,
+	["OVERHEAL_EXTRA_SCALE"] = 1.9,
 	["BLIZZ_UI_HIDE_FOCUS"] = 1,
 	["DETECT_DEBUFFS_IGNORE_NO_HARM"] = true,
 	["DETECT_DEBUFFS_IGNORE_BY_CLASS"] = true,
+	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
+	["INC_BOMBED_SECS"] = 3,
+	["MAX_EMERGENCIES"] = 6,
+	["BLIZZ_UI_HIDE_RAID"] = 2,
 	["BLIZZ_UI_HIDE_TARGET"] = 1,
-	["OVERHEAL_EXTRA_SCALE"] = 1.9,
+	["SHOW_PLAYER_TAGS"] = true,
+	["DETECT_DEBUFFS"] = true,
+	["UPDATE_HOTS_MS"] = 250,
+	["SHOW_INC_CASTED"] = true,
+	["AUTO_ARRANGEMENTS"] = {
+		["25"] = "current",
+		["15"] = "current",
+		["lastAutoSaveSlot"] = 0,
+		["5"] = "current",
+		["dirty"] = false,
+		["40"] = "current",
+		["10"] = "current",
+	},
+	["HIDE_PANELS_SOLO"] = false,
+	["CURRENT_PROFILE"] = "LUI-Towelliee",
+	["EMERGENCY_TRIGGER"] = 100,
+	["doCompress"] = true,
+	["AUTO_PROFILES"] = {
+	},
+	["OMIT_FOCUS"] = 1,
+	["SPELL_TRACE"] = {
+		["isOthers"] = false,
+		["STORED_SETTINGS"] = {
+			["596"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+			["194509"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+			["34861"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+			["1064"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+		},
+		["version"] = 1,
+		["SELECTED"] = "",
+		["duration"] = 2,
+		["showTrailOfLight"] = false,
+		["isMine"] = true,
+		["STORED"] = {
+			"1064", -- [1]
+			"34861", -- [2]
+			"596", -- [3]
+			"194509", -- [4]
+		},
+	},
+	["MODE"] = 1,
+	["PLAYER_TARGET_FRAME_THICKNESS"] = 1,
+	["SHOW_INCOMING"] = true,
 	["CUSTOM_DEBUFF"] = {
 		["animate"] = true,
 		["scale"] = 0.8,
@@ -840,9 +902,9 @@ VUHDO_CONFIG = {
 			["Mystic Buffet"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["isIcon"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
 				["timer"] = true,
-				["isIcon"] = true,
 			},
 			["228914"] = {
 				["isStacks"] = 1,
@@ -1622,9 +1684,9 @@ VUHDO_CONFIG = {
 			["unbound plague"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["isIcon"] = true,
 				["timer"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
-				["isIcon"] = true,
 			},
 			["230139"] = {
 				["isStacks"] = 1,
@@ -4056,9 +4118,9 @@ VUHDO_CONFIG = {
 			["Essence of the Blood Queen"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["timer"] = true,
 				["isIcon"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
-				["timer"] = true,
 			},
 			["Serpent's Vitality"] = {
 				["isStacks"] = 1,
@@ -4413,14 +4475,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["156047"] = {
+			["Petrified"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Iron Tomb"] = {
+			["156047"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4549,9 +4611,9 @@ VUHDO_CONFIG = {
 			["Unbound Plague"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["isIcon"] = true,
 				["timer"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
-				["isIcon"] = true,
 			},
 			["167200"] = {
 				["isStacks"] = 1,
@@ -4694,7 +4756,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Petrified"] = {
+			["Iron Tomb"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -5542,68 +5604,6 @@ VUHDO_CONFIG = {
 		["xAdjust"] = -2,
 		["BUTTON_FACADE"] = "Blizzard",
 	},
-	["PLAYER_TARGET_FRAME_THICKNESS"] = 1,
-	["SHOW_OVERHEAL"] = 1,
-	["SHOW_PLAYER_TAGS"] = true,
-	["DETECT_DEBUFFS"] = true,
-	["UPDATE_HOTS_MS"] = 250,
-	["SHOW_INC_CASTED"] = true,
-	["AUTO_ARRANGEMENTS"] = {
-		["25"] = "current",
-		["15"] = "current",
-		["lastAutoSaveSlot"] = 0,
-		["5"] = "current",
-		["dirty"] = false,
-		["40"] = "current",
-		["10"] = "current",
-	},
-	["HIDE_PANELS_SOLO"] = false,
-	["CURRENT_PROFILE"] = "LUI-Towelliee",
-	["AUTO_PROFILES"] = {
-	},
-	["doCompress"] = true,
-	["EMERGENCY_TRIGGER"] = 100,
-	["OMIT_FOCUS"] = 1,
-	["SPELL_TRACE"] = {
-		["isOthers"] = false,
-		["STORED_SETTINGS"] = {
-			["596"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-			["194509"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-			["34861"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-			["1064"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-		},
-		["version"] = 1,
-		["SELECTED"] = "",
-		["duration"] = 2,
-		["showTrailOfLight"] = false,
-		["isMine"] = true,
-		["STORED"] = {
-			"1064", -- [1]
-			"34861", -- [2]
-			"596", -- [3]
-			"194509", -- [4]
-		},
-	},
-	["MODE"] = 1,
-	["MAX_EMERGENCIES"] = 6,
-	["SHOW_INCOMING"] = true,
-	["RES_ANNOUNCE_TEXT"] = "Come to life, vuhdo, you b00n!",
 	["THREAT"] = {
 		["AGGRO_TEXT_RIGHT"] = "<<",
 		["AGGRO_TEXT_LEFT"] = ">>",
@@ -5613,8 +5613,8 @@ VUHDO_CONFIG = {
 	},
 	["SHOW_TEXT_OVERHEAL"] = true,
 	["SHOW_OWN_INCOMING"] = true,
-	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
 	["INC_CHANNELLED_SECS"] = 3,
+	["RES_ANNOUNCE_TEXT"] = "Come to life, vuhdo, you b00n!",
 }
 VUHDO_PANEL_SETUP = {
 	{
@@ -5643,6 +5643,8 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
+			["sort"] = 0,
+			["ordering"] = 0,
 			["groups"] = {
 				1, -- [1]
 				2, -- [2]
@@ -5650,8 +5652,6 @@ VUHDO_PANEL_SETUP = {
 				4, -- [4]
 				5, -- [5]
 			},
-			["sort"] = 0,
-			["ordering"] = 0,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
@@ -5808,7 +5808,7 @@ VUHDO_PANEL_SETUP = {
 		},
 		["IS_RAID_ICON"] = true,
 		["ID_TEXT"] = {
-			["_spacing"] = 20,
+			["_spacing"] = 19.9999923706055,
 			["showName"] = true,
 			["version"] = 2,
 			["position"] = "TOPLEFT+TOPLEFT",
@@ -9978,18 +9978,18 @@ VUHDO_SPELLS_KEYBOARD = {
 }
 VUHDO_SPELL_CONFIG = {
 	["IS_LOAD_HOTS"] = false,
-	["IS_FIRE_OUT_FIGHT"] = false,
+	["IS_TOOLTIP_INFO"] = false,
 	["IS_AUTO_FIRE"] = false,
 	["IS_FIRE_CUSTOM_2"] = false,
 	["IS_FIRE_TRINKET_2"] = false,
-	["IS_KEEP_STANCE"] = false,
+	["IS_FIRE_OUT_FIGHT"] = false,
 	["IS_AUTO_TARGET"] = false,
-	["IS_TOOLTIP_INFO"] = false,
+	["IS_FIRE_HOT"] = false,
 	["FIRE_CUSTOM_1_SPELL"] = "Divine Illumination",
 	["FIRE_CUSTOM_2_SPELL"] = "Divine Favor",
-	["IS_FIRE_HOT"] = false,
-	["IS_FIRE_CUSTOM_1"] = false,
 	["smartCastModi"] = "all",
+	["IS_FIRE_CUSTOM_1"] = false,
+	["IS_KEEP_STANCE"] = false,
 }
 VUHDO_BUFF_ORDER = {
 	["Shout"] = 1,
@@ -10000,47 +10000,14 @@ VUHDO_SPEC_LAYOUTS = {
 	["selected"] = "",
 	["2"] = "",
 }
-VUHDO_GROUP_SIZE = 2
+VUHDO_GROUP_SIZE = 1
 VUHDO_RAID = {
-	["party1"] = {
-		["zone"] = "Vol'mar",
-		["baseRange"] = false,
-		["class"] = "HUNTER",
-		["role"] = 62,
-		["sortMaxHp"] = 4807380,
-		["map"] = "garrisonffhorde_tier3",
-		["threat"] = 0,
-		["powermax"] = 120,
-		["threatPerc"] = 0,
-		["isPet"] = false,
-		["name"] = "Lillys",
-		["number"] = 1,
-		["isVehicle"] = false,
-		["group"] = 1,
-		["classId"] = 22,
-		["unit"] = "party1",
-		["powertype"] = 2,
-		["healthmax"] = 4807380,
-		["dead"] = false,
-		["charmed"] = false,
-		["fullName"] = "Lillys-Blackhand",
-		["power"] = 120,
-		["aggro"] = false,
-		["visible"] = false,
-		["targetUnit"] = "party1target",
-		["health"] = 4807380,
-		["className"] = "Hunter",
-		["afk"] = false,
-		["debuff"] = 0,
-		["connected"] = true,
-		["petUnit"] = "partypet1",
-	},
 	["player"] = {
-		["zone"] = "Trading Post",
+		["zone"] = "Frostwall",
 		["baseRange"] = true,
 		["class"] = "WARRIOR",
 		["role"] = 61,
-		["sortMaxHp"] = 4913460,
+		["sortMaxHp"] = 4918320,
 		["map"] = "garrisonffhorde_tier3",
 		["threat"] = 0,
 		["powermax"] = 150,
@@ -10054,7 +10021,7 @@ VUHDO_RAID = {
 		["range"] = true,
 		["unit"] = "player",
 		["powertype"] = 1,
-		["healthmax"] = 4913460,
+		["healthmax"] = 4918320,
 		["dead"] = false,
 		["charmed"] = false,
 		["fullName"] = "Shanyt",
@@ -10062,7 +10029,7 @@ VUHDO_RAID = {
 		["aggro"] = false,
 		["visible"] = true,
 		["targetUnit"] = "target",
-		["health"] = 4913460,
+		["health"] = 4918320,
 		["className"] = "Warrior",
 		["afk"] = false,
 		["debuff"] = 0,
@@ -10088,16 +10055,16 @@ VUHDO_INDICATOR_CONFIG = {
 			"", -- [9]
 			"", -- [10]
 		},
-		["SWIFTMEND_INDICATOR"] = "",
+		["CLUSTER_BORDER"] = "",
 		["INCOMING_BAR"] = "",
-		["SIDE_LEFT"] = "",
+		["DAMAGE_FLASH_BAR"] = "",
 		["THREAT_MARK"] = "Threat: Marks",
-		["MANA_BAR"] = "Manabars: Mana only",
 		["BAR_BORDER"] = "",
 		["SIDE_RIGHT"] = "",
+		["MANA_BAR"] = "Manabars: Mana only",
 		["HEALTH_BAR"] = "Health (generic, class col)",
-		["DAMAGE_FLASH_BAR"] = "",
-		["CLUSTER_BORDER"] = "",
+		["SIDE_LEFT"] = "",
+		["SWIFTMEND_INDICATOR"] = "",
 	},
 	["CUSTOM"] = {
 		["THREAT_BAR"] = {

@@ -4,7 +4,7 @@ OneRing_Config = {
 		["Darkspear-Serbitechna"] = "default",
 	},
 	["_GameVersion"] = "7.3.5",
-	["_OPieVersion"] = "Vanilla 4 (3.92)",
+	["_OPieVersion"] = "Vanilla 5 (3.93)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {

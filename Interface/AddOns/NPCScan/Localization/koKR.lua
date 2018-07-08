@@ -239,6 +239,8 @@ VL["Rauren"] = "로우렌"
 --[[Translation missing --]]
 --[[ VL["Ravager Broodlord"] = "Ravager Broodlord"--]] 
 VL["Ravyn-Drath"] = "라빈드라스"
+--[[Translation missing --]]
+--[[ VL["Really Skunky Beer"] = "Really Skunky Beer"--]] 
 VL["Reef Lord Raj'his"] = "산호초 군주 라즈히스"
 VL["Remnant of the Blood Moon"] = "핏빛 달의 잔재"
 VL["Rogond"] = "로곤드"

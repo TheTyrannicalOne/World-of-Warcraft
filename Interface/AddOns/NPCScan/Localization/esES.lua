@@ -409,6 +409,8 @@ VL["Abandoned Fishing Pole"] = "Caña de pescar abandonada"
 --[[Translation missing --]]
 --[[ VL["Ravyn-Drath"] = "Ravyn-Drath"--]] 
 --[[Translation missing --]]
+--[[ VL["Really Skunky Beer"] = "Really Skunky Beer"--]] 
+--[[Translation missing --]]
 --[[ VL["Reef Lord Raj'his"] = "Reef Lord Raj'his"--]] 
 --[[Translation missing --]]
 --[[ VL["Remnant of the Blood Moon"] = "Remnant of the Blood Moon"--]] 

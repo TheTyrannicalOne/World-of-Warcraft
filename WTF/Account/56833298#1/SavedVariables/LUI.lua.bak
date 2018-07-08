@@ -460,19 +460,19 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1567.61267089844,
+						["CoordX"] = 1566.84497070313,
 						["ItemQuality"] = true,
-						["CoordY"] = 781.067810058594,
+						["CoordY"] = 775.695373535156,
 					},
 					["Reagents"] = {
 						["CoordY"] = 879.551025390625,
-						["CoordX"] = 620.521179199219,
+						["CoordX"] = 619.753662109375,
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordX"] = 1112.74987792969,
 						["ItemQuality"] = true,
-						["CoordY"] = 697.112060546875,
+						["CoordY"] = 694.042175292969,
 						["Font"] = "AvantGarde_LT_Medium",
 					},
 				},
@@ -2618,7 +2618,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 11592916452,
+							["Shanyt"] = 11848572106,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2651,9 +2651,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
+							["Brewnheimer"] = 836,
 							["Dialdaas"] = 11338409,
 							["Serbitechna"] = 7681888,
-							["Brewnheimer"] = 836,
 						},
 					},
 				},
@@ -2690,35 +2690,35 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/sit", -- [1]
-							"/train", -- [2]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [3]
-							"/i can we do armor of the triumvirate to the left after this", -- [4]
-							"/sit", -- [5]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [6]
-							"/sit", -- [7]
-							"/train", -- [8]
-							"/sit", -- [9]
-							"/train", -- [10]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [11]
-							"/sit", -- [12]
+							"/i can we do armor of the triumvirate to the left after this", -- [1]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [2]
+							"/train", -- [3]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [4]
+							"/train", -- [5]
+							"/moo", -- [6]
+							"/train", -- [7]
+							"/moo", -- [8]
+							"/cw Crukarn-TheScryers sorry i cant", -- [9]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [10]
+							"/train", -- [11]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [12]
 							"/i can we do armor of the triumvirate to the left after this", -- [13]
-							"/train", -- [14]
-							"/sit", -- [15]
-							"/train", -- [16]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [17]
+							"/sit", -- [14]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [15]
+							"/sit", -- [16]
+							"/train", -- [17]
 							"/i can we do armor of the triumvirate to the left after this", -- [18]
-							"/sit", -- [19]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [20]
-							"/sit", -- [21]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [19]
+							"/train", -- [20]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [21]
 							"/train", -- [22]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [23]
-							"/i can we do armor of the triumvirate to the left after this", -- [24]
-							"/sit", -- [25]
+							"/moo", -- [23]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [24]
+							"/i can we do armor of the triumvirate to the left after this", -- [25]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [26]
-							"/sit", -- [27]
-							"/train", -- [28]
-							"/i can we do armor of the triumvirate to the left after this", -- [29]
+							"/train", -- [27]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [28]
+							"/train", -- [29]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [30]
 							"/train", -- [31]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [32]
