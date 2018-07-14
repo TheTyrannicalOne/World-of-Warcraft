@@ -41,7 +41,7 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17618 $"):sub(12, -3)),
+	Revision = tonumber(("$Revision: 17622 $"):sub(12, -3)),
 	DisplayVersion = "7.3.32 alpha", -- the string that is shown as version
 	ReleaseRevision = 17598 -- the revision of the latest stable version that is available
 }
@@ -420,7 +420,7 @@ local bannedMods = { -- a list of "banned" (meaning they are replaced by another
 	"DBM-Suramar",--Renamed to DBM-Nighthold
 	"DBM-KulTiras",--Merged to DBM-Azeroth-BfA
 	"DBM-Zandalar",--Merged to DBM-Azeroth-BfA
---	"DBM-PvP",--Discontinued do to inability to maintain such large scale external projects with limitted time/resources
+	"DBM-PvP",--Discontinued do to inability to maintain such large scale external projects with limitted time/resources
 }
 
 

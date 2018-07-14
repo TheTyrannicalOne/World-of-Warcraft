@@ -7,10 +7,10 @@ FishingBuddy_Info = {
 		[8002] = 1,
 		[7000] = 15,
 		[3006] = 1,
-		[7001] = 15,
+		[3013] = 3,
 		[3000] = 7,
 		[3008] = 2,
-		[3013] = 3,
+		[7001] = 15,
 	},
 	["HiddenFishies"] = {
 	},
@@ -18,10 +18,10 @@ FishingBuddy_Info = {
 		[3008] = 0,
 		[3009] = 0,
 		[7001] = 0,
-		[8002] = 0,
 		[3013] = 0,
-		[8001] = 0,
 		[3006] = 0,
+		[8001] = 0,
+		[8002] = 0,
 	},
 	["DataFish"] = 0,
 	["Locales"] = {
@@ -39,53 +39,17 @@ FishingBuddy_Info = {
 			[138777] = 10,
 			[133607] = 4,
 		},
-		[8002] = {
-			[124111] = 1,
-		},
 		[3013] = {
 			[124107] = 3,
-		},
-		[8001] = {
-			[134574] = 8,
 		},
 		[3006] = {
 			[133607] = 1,
 		},
-	},
-	["FishSchools"] = {
-		[8] = {
-			{
-				["y"] = 0.258821285050758,
-				["x"] = 0.342897241360431,
-				["sidx"] = 8001,
-				["kind"] = 0,
-				["fish"] = {
-					[134574] = 7,
-				},
-				["count"] = 7,
-			}, -- [1]
-			{
-				["y"] = 0.519867647661105,
-				["x"] = 0.376433458558074,
-				["sidx"] = 8002,
-				["kind"] = 0,
-				["fish"] = {
-					[124111] = 1,
-				},
-				["count"] = 1,
-			}, -- [2]
+		[8001] = {
+			[134574] = 8,
 		},
-		[3] = {
-			{
-				["y"] = 0.459589991479309,
-				["x"] = 0.50088853988631,
-				["sidx"] = 3013,
-				["kind"] = 0,
-				["count"] = 3,
-				["fish"] = {
-					[124107] = 3,
-				},
-			}, -- [1]
+		[8002] = {
+			[124111] = 1,
 		},
 	},
 	["SubZones"] = {
@@ -103,6 +67,7 @@ FishingBuddy_Info = {
 		[1002] = "King's Square",
 		[3007] = "The Royal Pond",
 		[2000] = 3,
+		[9002] = "The Cliffs of Highmaul",
 		[4000] = 1,
 		[3000] = 14,
 		[3008] = "Azsuna",
@@ -116,18 +81,19 @@ FishingBuddy_Info = {
 		[8003] = "Suramar",
 		[6003] = "Dreadroot",
 		[3010] = "Drowned Gardens",
-		[9001] = "Snarlpaw Ledge",
-		[9000] = 1,
+		[6001] = "Emerald Bay",
+		[8001] = "Moonwhisper Gulch",
 		[8002] = "Meredil",
-		[3002] = "Lair of the Deposed",
+		[3005] = "Old Coast Path",
 		[1001] = "The Culling of Stratholme",
 		[3003] = "Faronaar Front",
 		[3011] = "El'dranil Shallows",
-		[3005] = "Old Coast Path",
+		[3002] = "Lair of the Deposed",
 		[2002] = "Stormheim",
-		[8001] = "Moonwhisper Gulch",
-		[6001] = "Emerald Bay",
+		[9000] = 2,
+		[9001] = "Snarlpaw Ledge",
 	},
+	["Version"] = 18000,
 	["FishInfo2"] = 0,
 	["ZoneIndex"] = {
 		"The Culling of Stratholme", -- [1]
@@ -145,71 +111,106 @@ FishingBuddy_Info = {
 		[138777] = {
 			["enUS"] = "Drowned Mana",
 			["mods"] = 0,
-			["quality"] = 1,
+			["texture"] = 132852,
 			["level"] = 800,
 			["skill"] = 800,
-			["texture"] = 132852,
+			["quality"] = 1,
 		},
 		[133703] = {
 			["enUS"] = "Pearlescent Conch",
 			["mods"] = 0,
-			["quality"] = 1,
+			["texture"] = 134434,
 			["level"] = 800,
 			["skill"] = 800,
-			["texture"] = 134434,
+			["quality"] = 1,
 		},
 		[124107] = {
 			["enUS"] = "Cursed Queenfish",
 			["mods"] = 0,
-			["texture"] = 1387364,
+			["quality"] = 1,
 			["level"] = 800,
 			["skill"] = 800,
-			["quality"] = 1,
+			["texture"] = 1387364,
 		},
 		[133607] = {
 			["enUS"] = "Silver Mackerel",
 			["mods"] = 0,
-			["texture"] = 133934,
+			["quality"] = 1,
 			["level"] = 800,
 			["skill"] = 800,
-			["quality"] = 1,
+			["texture"] = 133934,
 		},
 		[134574] = {
-			["quality"] = 1,
+			["texture"] = 237316,
 			["enUS"] = "Huge Runescale Koi",
 			["mods"] = 0,
-			["skill"] = 800,
+			["quest"] = true,
 			["canopen"] = false,
 			["level"] = 800,
-			["quest"] = true,
-			["texture"] = 237316,
-		},
-		[124111] = {
-			["enUS"] = "Runescale Koi",
-			["mods"] = 0,
-			["quality"] = 1,
-			["level"] = 800,
 			["skill"] = 800,
-			["texture"] = 1387371,
-		},
-		[134564] = {
 			["quality"] = 1,
-			["enUS"] = "Lively Cursed Queenfish",
-			["mods"] = 0,
-			["skill"] = 800,
-			["canopen"] = false,
-			["level"] = 800,
-			["quest"] = true,
-			["texture"] = 237324,
 		},
 		[124110] = {
 			["enUS"] = "Stormray",
 			["mods"] = 0,
+			["quality"] = 1,
+			["level"] = 800,
+			["skill"] = 800,
 			["texture"] = 1387376,
+		},
+		[134564] = {
+			["texture"] = 237324,
+			["enUS"] = "Lively Cursed Queenfish",
+			["mods"] = 0,
+			["quest"] = true,
+			["canopen"] = false,
+			["level"] = 800,
+			["skill"] = 800,
+			["quality"] = 1,
+		},
+		[124111] = {
+			["enUS"] = "Runescale Koi",
+			["mods"] = 0,
+			["texture"] = 1387371,
 			["level"] = 800,
 			["skill"] = 800,
 			["quality"] = 1,
 		},
 	},
-	["Version"] = 18000,
+	["FishSchools"] = {
+		[8] = {
+			{
+				["y"] = 0.258821285050758,
+				["x"] = 0.342897241360431,
+				["sidx"] = 8001,
+				["kind"] = 0,
+				["count"] = 7,
+				["fish"] = {
+					[134574] = 7,
+				},
+			}, -- [1]
+			{
+				["y"] = 0.519867647661105,
+				["x"] = 0.376433458558074,
+				["sidx"] = 8002,
+				["kind"] = 0,
+				["count"] = 1,
+				["fish"] = {
+					[124111] = 1,
+				},
+			}, -- [2]
+		},
+		[3] = {
+			{
+				["y"] = 0.459589991479309,
+				["x"] = 0.50088853988631,
+				["sidx"] = 3013,
+				["kind"] = 0,
+				["fish"] = {
+					[124107] = 3,
+				},
+				["count"] = 3,
+			}, -- [1]
+		},
+	},
 }

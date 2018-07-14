@@ -4,6 +4,7 @@ PawnOptions = {
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
 	["Artifacts"] = {
 		[128910] = {
 			["Relics"] = {
@@ -39,8 +40,24 @@ PawnOptions = {
 			},
 			["Name"] = "Warswords of the Valarjar",
 		},
+		[128289] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 42,
+					["Type"] = "Iron",
+				}, -- [1]
+				{
+					["ItemLevel"] = 46,
+					["Type"] = "Blood",
+				}, -- [2]
+				{
+					["ItemLevel"] = 43,
+					["Type"] = "Fire",
+				}, -- [3]
+			},
+			["Name"] = "Scale of the Earth-Warder",
+		},
 	},
-	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {
 	["LastClass"] = "WARRIOR",

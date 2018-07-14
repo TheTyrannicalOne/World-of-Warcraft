@@ -21,33 +21,22 @@ TradeSkillMaster_DestroyingDB = {
 			"Shathiel - Darkspear", -- [13]
 			"Shanyt - Zul'jin", -- [14]
 		},
-		["realm"] = {
-			"Argent Dawn", -- [1]
-			"Darkspear", -- [2]
-			"Zul'jin", -- [3]
-		},
-		["profile"] = {
-			"Default", -- [1]
-		},
 		["factionrealm"] = {
 			"Horde - Argent Dawn", -- [1]
 			"Alliance - Darkspear", -- [2]
 			"Horde - Zul'jin", -- [3]
 		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Argent Dawn", -- [1]
+			"Darkspear", -- [2]
+			"Zul'jin", -- [3]
+		},
 	},
 	["g@ @autoShow"] = true,
 	["g@ @autoStack"] = true,
-	["g@ @logDays"] = 14,
-	["g@ @deAbovePrice"] = "0c",
-	["g@ @history"] = {
-	},
-	["g@ @helpPlatesShown"] = {
-		["destroyingFrame"] = true,
-	},
-	["_hash"] = 14107345,
-	["g@ @includeSoulbound"] = false,
-	["g@ @deMaxQuality"] = 3,
-	["_version"] = 1,
 	["_currentProfile"] = {
 		["Bathal - Argent Dawn"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
@@ -58,10 +47,21 @@ TradeSkillMaster_DestroyingDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
 		["Shanyt - Zul'jin"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
 	},
+	["_version"] = 1,
+	["g@ @history"] = {
+	},
+	["g@ @helpPlatesShown"] = {
+		["destroyingFrame"] = true,
+	},
+	["g@ @includeSoulbound"] = false,
+	["_hash"] = 14107345,
+	["g@ @deMaxQuality"] = 3,
+	["g@ @deAbovePrice"] = "0c",
+	["g@ @logDays"] = 14,
 }

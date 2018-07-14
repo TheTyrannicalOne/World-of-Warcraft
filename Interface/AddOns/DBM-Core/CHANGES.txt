@@ -1,5 +1,33 @@
 Changes since tag 7.3.31
 
+commit c9786eefa77b2901b568b46aad2c5e68d5a38bb9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jul 12 09:56:43 2018 +0200
+
+    Omega via svn r17622:
+    CN update
+
+commit bef01d1fb3f6b5b0109118e4d3f0ef86791f04cc
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Jul 10 10:25:05 2018 +0200
+
+    Omega via svn r17621:
+    CN update
+
+commit d7a387c4601e4c7b4ef952fa89fa22021afe82af
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Jul 9 03:40:20 2018 +0200
+
+    Omega via svn r17620:
+    Push the partial razzdunk mod
+
+commit 24d0c38c5503e2c0a05b5df323bd7662206bd6cb
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Jul 9 02:58:42 2018 +0200
+
+    Omega via svn r17619:
+    remove support for DBM pvp mods. without a maintainer, they will break in about a week for everyone and only spam hella lua errors with obsolete map code. I have to focus my one man crew effort on pve content and can?\226?\128?\153t maintain side projects like this anymore without more support, so some things have to give.
+
 commit f78983583f89cb688ae035835260895758146bc2
 Author: subversion <svn@deadlybossmods.com>
 Date:   Fri Jul 6 09:21:39 2018 +0200
