@@ -6,7 +6,7 @@ local assert = assert;
 local format = format;
 
 -- We will remember if the locale is French or not, as French has some special cases we need to handle
-local IS_FRENCH_LOCALE = _G.GetLocale() == "frFR";
+-- local IS_FRENCH_LOCALE = _G.GetLocale() == "frFR";
 local DEFAULT_LOCALE_CODE = "default";
 
 ---@class Localization
@@ -80,9 +80,18 @@ function Localization:GetLocale(code)
 	return _private[self].locales[code];
 end
 
----@return Locale[] locales
-function Localization:GetLocales()
-	return _private[self].locales
+---@param withoutDefaultLocale boolean @ Do not include the default localization in the result
+---@return Locale[] locales @ The list of currently registered locales
+function Localization:GetLocales(withoutDefaultLocale)
+	local locales = {};
+
+	for localeCode, locale in pairs(_private[self].locales) do
+		if not (withoutDefaultLocale and  localeCode == DEFAULT_LOCALE_CODE) then
+			locales[localeCode] = locale;
+		end
+	end
+
+	return locales;
 end
 
 ---@return Locale locale
@@ -130,12 +139,6 @@ function Localization:GetText(localizationKey)
 		(self:GetLocale(DEFAULT_LOCALE_CODE) and self:GetLocale(DEFAULT_LOCALE_CODE):GetText(localizationKey)) or -- Look in the English locale from Curse
 		self:GetDefaultLocale():GetText(localizationKey) or -- Look in the default locale
 		localizationKey; -- As a last resort, to avoid nil strings, return the key itself
-end
-
---- Get the list of registered locales
----@return Locale[] locales @ A table of registered locales
-function Localization:GetLocales()
-	return _private[self].locales;
 end
 
 Ellyb.Localization = Localization;

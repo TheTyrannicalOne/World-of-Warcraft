@@ -18,7 +18,7 @@ FishingBuddy_Player = {
 		["LastResort"] = true,
 		["UseAction"] = true,
 		["WatchCurrentZone"] = true,
-		["TotalTimeFishing"] = 8695.7789999999,
+		["TotalTimeFishing"] = 9397.15199999991,
 		["STVTimer"] = true,
 		["TurnOnSound"] = true,
 		["UseTuskarrSpear"] = true,
@@ -42,5 +42,5 @@ FishingBuddy_Player = {
 		["point"] = "TOP",
 		["scale"] = 1,
 	},
-	["Version"] = 18000,
+	["Version"] = 18001,
 }

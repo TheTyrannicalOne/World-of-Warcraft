@@ -3,7 +3,7 @@ OneRing_Config = {
 	["CharProfiles"] = {
 		["Darkspear-Serbitechna"] = "default",
 	},
-	["_GameVersion"] = "7.3.5",
+	["_GameVersion"] = "8.0.1",
 	["_OPieVersion"] = "Vanilla 5 (3.93)",
 	["ProfileStorage"] = {
 		["default"] = {

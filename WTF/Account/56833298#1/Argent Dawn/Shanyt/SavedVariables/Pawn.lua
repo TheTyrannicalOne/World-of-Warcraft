@@ -1,62 +1,9 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0218,
+	["LastVersion"] = 2.0219,
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
-	["Artifacts"] = {
-		[128910] = {
-			["Relics"] = {
-				{
-					["ItemLevel"] = 62,
-					["Type"] = "Iron",
-				}, -- [1]
-				{
-					["ItemLevel"] = 62,
-					["Type"] = "Blood",
-				}, -- [2]
-				{
-					["ItemLevel"] = 67,
-					["Type"] = "Shadow",
-				}, -- [3]
-			},
-			["Name"] = "Strom'kar, the Warbreaker",
-		},
-		[128908] = {
-			["Relics"] = {
-				{
-					["ItemLevel"] = 42,
-					["Type"] = "Fire",
-				}, -- [1]
-				{
-					["ItemLevel"] = 51,
-					["Type"] = "Wind",
-				}, -- [2]
-				{
-					["ItemLevel"] = 24,
-					["Type"] = "Iron",
-				}, -- [3]
-			},
-			["Name"] = "Warswords of the Valarjar",
-		},
-		[128289] = {
-			["Relics"] = {
-				{
-					["ItemLevel"] = 42,
-					["Type"] = "Iron",
-				}, -- [1]
-				{
-					["ItemLevel"] = 46,
-					["Type"] = "Blood",
-				}, -- [2]
-				{
-					["ItemLevel"] = 43,
-					["Type"] = "Fire",
-				}, -- [3]
-			},
-			["Name"] = "Scale of the Earth-Warder",
-		},
-	},
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

@@ -1,7 +1,6 @@
 -- Support for schools
 
 local FL = LibStub("LibFishing-1.0");
-local LT = LibStub("LibTourist-3.0");
 
 -- 5.0.4 has a problem with a global "_" (see some for loops below)
 local _
@@ -16,12 +15,10 @@ local CLOSEENOUGH = 15; -- fifteen yards
 -- FishingBuddy_Info["Schools"][ZONE]
 -- Store everything to two digits?
 
-local function AddFishingSchool(kind, fishid, zidx, sidx, x, y)
+local function AddFishingSchool(kind, fishid, mapId, sidx, x, y)
 	local entry = {};
-	if ( not zidx ) then
-		zidx, sidx = FishingBuddy.GetZoneIndex();
-	elseif ( type(zidx) == "string" ) then
-		zidx, sidx = FishingBuddy.GetZoneIndex(zidx, 0);
+	if ( not mapId ) then
+		mapId, _ = FishingBuddy.GetCurrentMapIdInfo();
 	end
 	if ( not x or not y ) then
 		_,_,x,y = FL:GetCurrentPlayerPosition();
@@ -31,13 +28,8 @@ local function AddFishingSchool(kind, fishid, zidx, sidx, x, y)
 	-- roughly in the direction that we're pointing now
 	-- since most people face the hole directly, it's a good bet anyway
 	local facing = GetPlayerFacing();
-	if ( facing ) then
-		local zone = FishingBuddy_Info["ZoneIndex"][zidx];
-		if ( zone == "UNKNOWN") then
-			return;
-		end
-		
-		local yx, yy = LT:GetZoneYardSize(zone);
+	if ( facing ) then		
+		local yx, yy = FL:GetZoneSize(mapId);
 		if ( yx ) then
 			facing = facing + math.pi;
 			-- let's average the distance and say 15 yards
@@ -49,7 +41,7 @@ local function AddFishingSchool(kind, fishid, zidx, sidx, x, y)
 	end
 	
 	local fszc = FishingBuddy.SZSchoolCounts;
-	local midx = zmto(zidx, sidx);
+	local midx = zmto(mapId, sidx);
 	if ( fishid ) then
 		if (not fszc[midx]) then
 			fszc[midx] = {};
@@ -64,20 +56,15 @@ local function AddFishingSchool(kind, fishid, zidx, sidx, x, y)
 	if ( not FishingBuddy_Info["FishSchools"] ) then
 		FishingBuddy_Info["FishSchools"] = {};
 	end
-	if ( not FishingBuddy_Info["FishSchools"][zidx] ) then
-		FishingBuddy_Info["FishSchools"][zidx] = {};
+	if ( not FishingBuddy_Info["FishSchools"][mapId] ) then
+		FishingBuddy_Info["FishSchools"][mapId] = {};
 	else
 		-- how do we find the same pool?
 		local C, _, x1, y1 = FL:GetCurrentPlayerPosition();
 		-- if we're in an instance, don't do math
 		if ( C ) then
-			local Z = FishingBuddy.GetBaseZoneIndex(zidx);
-			if ( Z == "UNKNOWN") then
-				return;
-			end
-			
-			for _,hole in pairs(FishingBuddy_Info["FishSchools"][zidx]) do
-				local d,_,_ = LT:GetYardDistance(Z, x, y, Z, hole.x or x, hole.y or y);
+			for _,hole in pairs(FishingBuddy_Info["FishSchools"][mapId]) do
+				local d,_,_ = FL:GetWorldDistance(Z, x, y, hole.x or x, hole.y or y);
 				
 				if ( d and d < CLOSEENOUGH ) then
 					hole.x = hole.x or x;
@@ -113,9 +100,9 @@ local function AddFishingSchool(kind, fishid, zidx, sidx, x, y)
 		entry.fish = {};
 		entry.fish[fishid] = 1;
 	end
-	tinsert(FishingBuddy_Info["FishSchools"][zidx], entry);
+	tinsert(FishingBuddy_Info["FishSchools"][mapId], entry);
 
-	FishingBuddy.RunHandlers(FBConstants.ADD_SCHOOL_EVT, kind, fishid, zidx, sidx, x, y);
+	FishingBuddy.RunHandlers(FBConstants.ADD_SCHOOL_EVT, kind, fishid, mapId, sidx, x, y);
 
 	return true;
 end
@@ -136,53 +123,22 @@ local function CheckFishingPool(fishid, poolhint)
 			info = FL:IsFishingPool(FL.SCHOOL);
 		end
 		if ( AddFishingSchool(info.kind, fishid) and FishingBuddy.GetSettingBool("ShowNewSchools") ) then
-			local zone,_ = FL:GetZoneInfo();
-			FishingBuddy.Print(FBConstants.ADDFISHINFOMSG, text, zone);
+			FishingBuddy.Print(FBConstants.ADDFISHINFOMSG, text, GetRealZoneText());
 		end
 	end
 end
 
-local function GetSchools(zidx)
-	if ( not zidx ) then
-		zidx = FishingBuddy.GetZoneIndex();
-	elseif ( type(zidx) == "string" ) then
-		zidx = FishingBuddy.GetZoneIndex(zidx);
+local function GetSchools(mapId)
+	if ( not mapId ) then
+		mapId, _ = FishingBuddy.GetCurrentMapIdInfo();
 	end
-	if ( FishingBuddy_Info["FishSchools"] and FishingBuddy_Info["FishSchools"][zidx] ) then
-		return FishingBuddy_Info["FishSchools"][zidx];
+	if ( FishingBuddy_Info["FishSchools"] and FishingBuddy_Info["FishSchools"][mapId] ) then
+		return FishingBuddy_Info["FishSchools"][mapId];
 	else
 		return {};
 	end
 end
 FishingBuddy.Schools.GetSchools = GetSchools;
-
-local function CollapseHoles()
-	if ( FishingBuddy_Info["FishSchools"] ) then
-		local zonecopy = {};
-		for zidx,holes in pairs(FishingBuddy_Info["FishSchools"]) do
-			local copy = {};
-			for _,hole in pairs(holes) do
-				tinsert(copy, hole);
-			end
-			zonecopy[zidx] = copy;
-		end
-		for zidx,holes in pairs(zonecopy) do
-			FishingBuddy_Info["FishSchools"][zidx] = nil;
-			for _,hole in pairs(holes) do
-				if ( hole.fish ) then
-					for f,c in pairs(hole.fish) do
-						for i=1,c do
-							AddFishingSchool(hole.kind, f, zidx, hole.sidx, hole.x or 0, hole.y or 0);
-						end
-					end
-				else
-					AddFishingSchool(hole.kind, nil, zidx, hole.sidx, hole.x or 0, hole.y or 0);
-				end
-			end
-		end
-	end
-end
-FishingBuddy.Schools.CollapseHoles = CollapseHoles;
 
 -- The ones that have "school" in their names shouldn't be
 -- necessary, but do they all translate that way? We'll skip
@@ -246,7 +202,7 @@ FishingBuddy.AddSchoolFish = function()
 end
 
 local SchoolEvents = {};
-SchoolEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, zone, subzone, texture, quantity, quality, level, idx, poolhint)
+SchoolEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, mapId, subzone, texture, quantity, quality, level, idx, poolhint)
 	CheckFishingPool(id, poolhint);
 end
 
@@ -255,13 +211,3 @@ SchoolEvents[FBConstants.RESET_FISHDATA_EVT] = function()
 end
 
 FishingBuddy.RegisterHandlers(SchoolEvents);
-
-if (FishingBuddy.Debugging) then
-	-- let an external entity forcibly mark a school
-	local function MarkSchool()
-		local zone, subzone = FL:GetZoneInfo();
-		if ( zone == FBConstants.STVZONENAME ) then
-			AddFishingSchool(FL.SCHOOL_TASTY, 19807, zone);
-		end
-	end
-end

@@ -68,6 +68,7 @@ MADB = {
 					},
 				},
 				["SpellActivationOverlayFrame"] = {
+					["name"] = "SpellActivationOverlayFrame",
 					["orgPos"] = {
 						"CENTER", -- [1]
 						"UIParent", -- [2]
@@ -75,7 +76,6 @@ MADB = {
 						0, -- [4]
 						0, -- [5]
 					},
-					["name"] = "SpellActivationOverlayFrame",
 					["hidden"] = true,
 					["pos"] = {
 						"CENTER", -- [1]

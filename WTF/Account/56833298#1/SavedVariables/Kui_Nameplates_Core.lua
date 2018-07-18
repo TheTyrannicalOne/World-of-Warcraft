@@ -1,5 +1,6 @@
 
 KuiNameplatesCoreSaved = {
+	["216_HEALTH_TRANSITION"] = true,
 	["profiles"] = {
 		["default"] = {
 			["auras_icon_squareness"] = 1,

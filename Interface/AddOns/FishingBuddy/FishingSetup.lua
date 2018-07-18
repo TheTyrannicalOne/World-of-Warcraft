@@ -6,7 +6,7 @@ local FL = LibStub("LibFishing-1.0");
 
 FBConstants = {};
 
-FBConstants.CURRENTVERSION = 18000;
+FBConstants.CURRENTVERSION = 18001;
 FBConstants.DEFAULT_MINIMAP_POSITION = 256;
 FBConstants.DEFAULT_MINIMAP_RADIUS = 80;
 

@@ -190,9 +190,9 @@ FishingItems[85973] = {
 	spell = 125167,
 	setting = "UsePandarenCharm",
 	usable = function(item)
-			-- only usable in Pandoria
-			local C,_,_,_ = FL:GetCurrentPlayerPosition();
-			return (C == 6);
+			-- only usable in Pandaria
+			local C = FL:GetCurrentMapContinent();
+			return (C == 424);
 		end,
 	["default"] = true,
 };
@@ -205,8 +205,8 @@ FishingItems[122742] = {
 		end,
 	usable = function(item)
 			-- only usable in Draenor
-			local C,_,_,_ = FL:GetCurrentPlayerPosition();
-			return (C == 7);
+			local C = FL:GetCurrentMapContinent();
+			return (C == 572);
 		end,
 	["default"] = false,
 };
@@ -401,19 +401,19 @@ CoinLures[138958] = {
 };
 
 local seascorpion = {
-	["Shadowmoon Valley (Draenor)"] = {
+	[947] = {
 		["Darktide Strait"] = true,
 		["The Evanescent Sea"] = true,
 		["Karabor Harbor"] = true,
 		["Tanaan Channel"] = true,
 	},
-	["Gorgrond"] = {
+	[949] = {
 		["Colossal Depths"] = true,
 		["Barrier Sea"] = true,
 		["Iron Sea"] = true,
 		["Orunai Coast"] = true,
 	},
-	["Talador"] = {
+	[946] = {
 		["Aarko's Estate"] = true,
 		["Orunai Delta"] = true,
 		["The South Sea"] = true,
@@ -424,7 +424,7 @@ local seascorpion = {
 		["Orunai Bay"] = true,
 		["Orunai Coast"] = true,
 	},
-	["Frostfire Ridge"] = {
+	[941] = {
 		["Colossal Depths"] = true,
 		["Frostboar Point"] = true,
 		["Frostbite Deep"] = true,
@@ -441,7 +441,7 @@ local seascorpion = {
 		["Ozgor's Launch"] = true,
 		["Iron Sea"] = true,
 	},
-	["Nagrand (Draenor)"] = {
+	[950] = {
 		["The Colossal's Fist"] = true,
 		["Lernaen Shore"] = true,
 		["Zangar Shore"] = true,
@@ -453,11 +453,11 @@ local seascorpion = {
 		["The Cliffs of Highmaul"] = true,
 		["Highmaul Harbor"] = true,
 	},
-	["Tanaan Jungle"] = {
+	[970] = {
 		["Tanaan Channel"] = true,
 		["Barrier Sea"] = true,
 	},
-	["Spires of Arak"] = {
+	[948] = {
 		["Pinchwhistle Gearworks"] = true,
 		["Echidnean Shelf"] = true,
 		["The South Sea"] = true,
@@ -510,11 +510,11 @@ local function VerifySpecialBait(info, checkscorpion)
 					LastSpecialBait = baitid;
 				end
 			elseif (continent == 7 ) then
-				local zone, subzone = FL:GetBaseZoneInfo();
+				local mapId, subzone = FL:GetBaseZoneInfo();
 				if ( checkscorpion ) then
-					return (seascorpion[zone] and seascorpion[zone][subzone]);
-				elseif ( zone == info.zone) then
-					return not seascorpion[zone][subzone];
+					return (seascorpion[mapId] and seascorpion[mapId][subzone]);
+				elseif ( mapId == info.mapId) then
+					return not seascorpion[mapId][subzone];
 				end
 			end
 		end
@@ -535,49 +535,49 @@ end
 FishingItems[110290] = {
 	["enUS"] = "Blind Lake Sturgeon Bait",
 	spell = 158035,
-	zone = "Shadowmoon Valley (Draenor)",
+	mapId = 947,
 	usable = UsableSpecialBait,
 	check = CheckSpecialBait,
 };
 FishingItems[110293] = {
 	["enUS"] = "Abyssal Gulper Eel Bait",
 	spell = 158038,
-	zone = "Spires of Arak",
+	mapId = 948,
 	usable = UsableSpecialBait,
 	check = CheckSpecialBait,
 };
 FishingItems[110294] = {
 	["enUS"] = "Blackwater Whiptail Bait",
 	spell = 158039,
-	zone = "Talador",
+	mapId = 946,
 	usable = UsableSpecialBait,
 	check = CheckSpecialBait,
 };
 FishingItems[110289] = {
 	["enUS"] = "Fat Sleeper Bait",
 	spell = 158034,
-	zone = "Nagrand (Draenor)",
+	mapId = 950,
 	usable = UsableSpecialBait,
 	check = CheckSpecialBait,
 };
 FishingItems[110291] = {
 	["enUS"] = "Fire Ammonite Bait",
 	spell = 158036,
-	zone = "Frostfire Ridge",
+	mapId = 941,
 	usable = UsableSpecialBait,
 	check = CheckSpecialBait,
 };
 FishingItems[110274] = {
 	["enUS"] = "Jawless Skulker Bait",
 	spell = 158031,
-	zone = "Gorgrond",
+	mapid = 949,
 	usable = UsableSpecialBait,
 	check = CheckSpecialBait,
 };
 FishingItems[128229] = {
 	["enUS"] = "Felmouth Frenzy Bait",
 	spell = 188904,
-	zone = "Tanaan Jungle",
+	mapId = 945,
 	usable = UsableSpecialBait,
 	check = CheckSpecialBait,
 };
@@ -585,6 +585,7 @@ FishingItems[128229] = {
 FishingItems[110292] = {
 	["enUS"] = "Sea Scorpion Bait",
 	spell = 158037,
+	mapId = -1,
 	zone = "Non-inland water",
 	usable = UseSeaScorpionBait,
 	check = CheckSpecialBait,

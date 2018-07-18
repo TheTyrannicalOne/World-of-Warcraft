@@ -152,18 +152,18 @@ local function BothLocationsChanged()
 	local zonecount = table.getn(sorted);
 	for i=1,zonecount,1 do
 		local zone = sorted[i];
-		local zidx = FishingBuddy.GetZoneIndex(zone);
-		if ( zidx ) then
+		local mapId = FishingBuddy.MappedZones[zone];
+		if ( mapId ) then
 			local addedzone = false;
 			local subsorted = FishingBuddy.SortedByZone[zone];
 			local subcount = table.getn(subsorted);
 			for s=1,subcount,1 do
 				local subzone = subsorted[s];
-				local where = FishingBuddy.GetZoneIndex(zone, subzone, true);
+				local where = FishingBuddy.GetZoneIndex(mapId, subzone, true);
 				local count, total = FishCount(where);
 				if ( total > 0 ) then
 					if ( not addedzone ) then
-						MakeInfo(line, zmto(zidx, 0), 0, 1, 0);
+						MakeInfo(line, zmto(mapId, 0), 0, 1, 0);
 						line = line + 1;
 						addedzone = true;
 					end
@@ -470,7 +470,7 @@ FishingBuddy.Locations.Update = function(self, forced)
 								for idx,_ in pairs(ztab) do
 									local tz,ts = zmex(idx);
 									-- need a non-ordered list of zone names
-									local n = FishingBuddy.GetLocZoneIndex(tz);
+									local n = FL:GetLocZone(tz)
 									tinsert(inz, n);
 								end
 								table.sort(inz);
@@ -495,7 +495,7 @@ FishingBuddy.Locations.Update = function(self, forced)
 								end
 							end
 						else
-							text = FishingBuddy.GetLocZoneIndex(zidx);
+							text = FL:GetLocZone(zidx);
 							tinsert(locButton.tooltip, text);
 							local subsorted = FishingBuddy.SortedByZone[text];
 							local subcount = table.getn(subsorted or {});

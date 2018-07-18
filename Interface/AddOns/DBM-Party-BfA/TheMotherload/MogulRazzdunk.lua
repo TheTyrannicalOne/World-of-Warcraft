@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2116, "DBM-Party-BfA", 7, 1001)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17620 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17623 $"):sub(12, -3))
 mod:SetCreatureID(131227)
 mod:SetEncounterID(2108)
 mod:SetZone()
@@ -78,7 +78,7 @@ function mod:SPELL_CAST_START(args)
 	if spellId == 260280 then
 		specWarnGatlingGun:Show()
 		specWarnGatlingGun:Play("shockwave")
-		specWarnGatlingGun:Start()
+		timerGatlingGunCD:Start()
 	elseif spellId == 260811 then
 		specWarnHomingMissile:Show()
 		--specWarnHomingMissile:Play("")

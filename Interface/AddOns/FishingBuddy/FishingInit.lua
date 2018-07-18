@@ -40,54 +40,12 @@ local function copytable(tab, level)
 end
 
 FishingInit.ResetHelpers = function()
+	FishingBuddy.MappedZones = {};
 	FishingBuddy.SortedZones = {};
 	FishingBuddy.SortedByZone = {};
 	FishingBuddy.SortedSubZones = {};
 	FishingBuddy.UniqueSubZones = {};
 	FishingBuddy.SubZoneMap = {};
-end
-
-FishingInit.CopyFishingHoles = function()
-	local sorted = FishingBuddy.SortedZones;
-	local zonecount = table.getn(sorted);
-	
-	local fh = {};
-	local fbfh = FishingBuddy_Info[GetLocale()]["FishingHoles"];
-	for i=1,zonecount,1 do
-		local zone = sorted[i];
-		local subsorted = FishingBuddy.SortedByZone[zone];
-		if ( subsorted ) then
-			local subcount = table.getn(subsorted);
-			for s=1,subcount,1 do
-				local subzone = subsorted[s];
-				local where = FishingBuddy.GetZoneIndex(zone, subzone, true);
-				local _, total = FishingBuddy.FishCount(where);
-				if ( fbfh[where] and total > 0) then
-					if ( not fh[zone] ) then
-						fh[zone] = {};
-					end
-					if ( not fh[zone][subzone] ) then
-						fh[zone][subzone] = {};
-					end
-					for fishid,count in pairs(fbfh[where]) do
-						fh[zone][subzone][fishid] = count;
-					end
-				end
-			end
-		end
-	end
-	return fh;
-end
-
-FishingInit.CopyFishSchools = function()
-	schools = {};
-	if ( FishingBuddy_Info["FishSchools"] ) then
-		for zidx,holes in pairs(FishingBuddy_Info["FishSchools"]) do
-			local zone = FishingBuddy_Info["ZoneIndex"][zidx];
-			schools[zone] = copytable(holes);
-		end
-	end
-	return schools;
 end
 
 -- Fill in the player name and realm
@@ -188,9 +146,9 @@ FishingInit.CheckRealm = function()
 end
 
 FishingInit.SetupZoneMapping = function()
-	local continentNames = { GetMapContinents() };
-	if ( not FishingBuddy_Info["ZoneIndex"] ) then
-		FishingBuddy_Info["ZoneIndex"] = {};
+
+	if ( not FishingBuddy_Info["KnownZones"] ) then
+		FishingBuddy_Info["KnownZones"] = {};
 	end
 	if ( not FishingBuddy_Info["SubZones"] ) then
 		FishingBuddy_Info["SubZones"] = {};
@@ -214,128 +172,256 @@ FishingInit.CleanLocales = function(loc)
 	return havelocs, locales;
 end
 
-FishingInit.ResetFishies = function(zones, subzones, holes, skills)
-	local AddFishie = FishingBuddy.AddFishie;
-	local questType = _G.GetItemClassInfo(LE_ITEM_CLASS_QUESTITEM);
-	FishingInit.ResetHelpers();
+FishingInit.mapid_lookup = {
+	["Dire Maul"] = 234,
+	["Eye of the Storm"] = 112,
+	["Broken Isles"] = 619,
+	["Northrend"] = 113,
+	["The Cape of Stranglethorn"] = 210,
+	["Ashran"] = 588,
+	["Bloodmyst Isle"] = 106,
+	["Hrothgar's Landing"] = 170,
+	["Arathi Highlands"] = 14,
+	["The Wandering Isle"] = 709,
+	["Isle of Conquest"] = 169,
+	["Orgrimmar"] = 85,
+	["Eastern Kingdoms"] = 13,
+	["Undercity"] = 998,
+	["Townlong Steppes"] = 388,
+	["Warsong Gulch"] = 92,
+	["Kalimdor"] = 12,
+	["Warspear"] = 624,
+	["Hour of Twilight"] = 399,
+	["The Cove of Nashal"] = 671,
+	["A Little Patience"] = 487,
+	["Azuremyst Isle"] = 776,
+	["Tol Barad"] = 244,
+	["Ruins of Ahn'Qiraj"] = 247,
+	["Dragon Soul"] = 409,
+	["Gundrak"] = 153,
+	["Alterac Valley"] = 91,
+	["Un'Goro Crater"] = 78,
+	["Ironforge"] = 87,
+	["Spires of Arak"] = 542,
+	["Burning Steppes"] = 36,
+	["Gorgrond"] = 543,
+	["Wetlands"] = 56,
+	["The Jade Forest"] = 448,
+	["Plaguelands: The Scarlet Enclave"] = 124,
+	["Twin Peaks"] = 206,
+	["Trueshot Lodge"] = 739,
+	["Arathi Basin"] = 837,
+	["Niskara"] = 714,
+	["Ruins of Gilneas City"] = 218,
+	["Mardum, the Shattered Abyss"] = 719,
+	["Darkshore"] = 62,
+	["Loch Modan"] = 48,
+	["Blade's Edge Mountains"] = 105,
+	["Hyjal Summit"] = 329,
+	["Helmouth Shallows"] = 694,
+	["Helheim"] = 649,
+	["Defense of Karabor"] = 592,
+	["Emerald Dreamway"] = 715,
+	["The Veiled Stair"] = 433,
+	["Silithus"] = 81,
+	["Shattrath City"] = 594,
+	["Frostfire Ridge"] = 525,
+	["Grizzly Hills"] = 116,
+	["Unga Ingoo"] = 450,
+	["Brewmoon Festival"] = 452,
+	["Ashenvale"] = 63,
+	["Pit of Saron"] = 184,
+	["Hillsbrad Foothills (Southshore vs. Tarren Mill)"] = 623,
+	["Kelp'thar Forest"] = 201,
+	["Isle of Giants"] = 507,
+	["Hillsbrad Foothills"] = 25,
+	["Krasarang Wilds"] = 418,
+	["Coldridge Valley"] = 427,
+	["Vale of Eternal Blossoms"] = 390,
+	["Assault on Zan'vess"] = 451,
+	["Terrace of Endless Spring"] = 728,
+	["Thunder Totem"] = 750,
+	["Desolace"] = 66,
+	["Malorne's Nightmare"] = 760,
+	["Stormshield"] = 622,
+	["Northern Barrens"] = 10,
+	["Western Plaguelands"] = 22,
+	["Hellfire Citadel"] = 661,
+	["A Brewing Storm"] = 447,
+	["Zangarmarsh"] = 102,
+	["Shado-Pan Monastery"] = 443,
+	["Nagrand"] = 107,
+	["End Time"] = 401,
+	["The Everbloom"] = 620,
+	["Wintergrasp"] = 123,
+	["Shimmering Expanse"] = 205,
+	["Talador"] = 535,
+	["Abyssal Depths"] = 204,
+	["Isle of Thunder"] = 516,
+	["Ursoc's Lair"] = 757,
+	["Dragonblight"] = 115,
+	["Dread Wastes"] = 422,
+	["The Maelstrom"] = 948,
+	["Eversong Woods"] = 94,
+	["Silvermoon City"] = 110,
+	["Durotar"] = 1,
+	["Trial of Valor"] = 806,
+	["Vashj'ir"] = 203,
+	["Broken Shore"] = 676,
+	["Zul'Gurub"] = 233,
+	["Celestial Tournament"] = 571,
+	["Valley of Trials"] = 461,
+	["Stormheim"] = 696,
+	["Tanaris"] = 71,
+	["Stormwind City"] = 84,
+	["Borean Tundra"] = 114,
+	["The Storm Peaks"] = 120,
+	["Battle on the High Seas"] = 524,
+	["Darkmoon Island"] = 407,
+	["Hellfire Peninsula"] = 100,
+	["Draenor"] = 572,
+	["Swamp of Sorrows"] = 51,
+	["Camp Narache"] = 462,
+	["Zul'Aman"] = 333,
+	["The Culling of Stratholme"] = 130,
+	["Shadowmoon Valley (Draenor)"] = 539,
+	["Stranglethorn Vale"] = 224,
+	["Eastern Plaguelands"] = 23,
+	["Sunstrider Isle"] = 467,
+	["Siege of Orgrimmar"] = 556,
+	["The Battle for Gilneas"] = 275,
+	["Shado-Pan Showdown"] = 843,
+	["Shadowmoon Valley"] = 104,
+	["Elwynn Forest"] = 37,
+	["Netherstorm"] = 109,
+	["Mulgore"] = 7,
+	["Well of Eternity"] = 398,
+	["Deadwind Pass"] = 42,
+	["Temple of Kotmogu"] = 449,
+	["Battle for Blackrock Mountain"] = 838,
+	["Eye of Azshara"] = 713,
+	["Howling Fjord"] = 117,
+	["Azshara"] = 697,
+	["The Exodar"] = 775,
+	["Deepwind Gorge"] = 519,
+	["Highmaul"] = 610,
+	["The Obsidian Sanctum"] = 155,
+	["Molten Front"] = 338,
+	["Ammen Vale"] = 468,
+	["Timeless Isle"] = 554,
+	["Zul'Farrak"] = 219,
+	["Dustwallow Marsh"] = 416,
+	["Thunder Bluff"] = 88,
+	["Deathknell"] = 465,
+	["Stonetalon Mountains"] = 65,
+	["The Dreamgrove"] = 747,
+	["Searing Gorge"] = 32,
+	["Suramar"] = 680,
+	["Fields of the Eternal Hunt"] = 877,
+	["Moonglade"] = 80,
+	["Thousand Needles"] = 64,
+	["Siege of Niuzao Temple"] = 457,
+	["Outland"] = 101,
+	["Silverpine Forest"] = 21,
+	["Mount Hyjal"] = 198,
+	["Court of Stars"] = 761,
+	["The Ruby Sanctum"] = 200,
+	["Neltharion's Lair"] = 731,
+	["Felwood"] = 77,
+	["Badlands"] = 15,
+	["The Black Morass"] = 273,
+	["Teldrassil"] = 57,
+	["Val'sharah"] = 641,
+	["Tanaan Jungle"] = 534,
+	["Redridge Mountains"] = 49,
+	["Ruins of Gilneas"] = 217,
+	["Ahn'Qiraj: The Fallen Kingdom"] = 327,
+	["Valley of the Four Winds"] = 376,
+	["Old Hillsbrad Foothills"] = 274,
+	["Sunwell Plateau"] = 335,
+	["Echo Isles"] = 463,
+	["Tol Barad Peninsula"] = 245,
+	["Gilneas City"] = 202,
+	["Twisting Nether"] = 645,
+	["Sholazar Basin"] = 119,
+	["New Tinkertown"] = 469,
+	["Pandaria"] = 424,
+	["Firelands"] = 367,
+	["Icecrown"] = 118,
+	["Strand of the Ancients"] = 128,
+	["Dalaran (Broken Isles)"] = 625,
+	["Shadowglen"] = 460,
+	["Duskwood"] = 47,
+	["Dreadscar Rift"] = 717,
+	["Terokkar Forest"] = 108,
+	["The Hinterlands"] = 26,
+	["Ghostlands"] = 95,
+	["Isle of Quel'Danas"] = 122,
+	["Westfall"] = 52,
+	["Southern Barrens"] = 199,
+	["Kezan"] = 194,
+	["Zul'Drak"] = 121,
+	["Northern Stranglethorn"] = 50,
+	["Lost City of the Tol'vir"] = 277,
+	["Nagrand (Draenor)"] = 550,
+	["Darnassus"] = 89,
+	["The Maelstrom (zone)"] = 276,
+	["Crystalsong Forest"] = 127,
+	["Twilight Highlands"] = 241,
+	["Northshire"] = 425,
+	["Gloaming Reef"] = 758,
+	["Winterspring"] = 83,
+	["Assault on Broken Shore"] = 858,
+	["Feralas"] = 69,
+	["Dagger in the Dark"] = 488,
+	["The Lost Glacier"] = 871,
+	["Darkheart Thicket"] = 733,
+	["The Oculus"] = 799,
+	["Dun Morogh"] = 27,
+	["Helmouth Cliffs"] = 706,
+}
 
-	local loc = GetLocale();
-	local FI = FishingBuddy_Info["Fishies"];
-	for zidx,zone in ipairs(zones) do
-		local zmarker = zmto(zidx, 0);
-		local szcount = subzones[zmarker];
-		if ( szcount ) then
-			for sidx=1,szcount do
-				local marker = zmto(zidx,sidx);
-				local subzone = subzones[marker];
-				if ( subzone and holes[marker] ) then
-					subzone = FL:GetBaseSubZone(subzone);
-					 local level = skills[marker];
-					 for fid,count in pairs(holes[marker]) do
-						 local color = FI[fid].color;
-						 local texture = FI[fid].texture;
-						 local name = FI[fid][loc];
-						 local quality = FI[fid].quality;
-						 local level = skills[marker] or nil;
-						 local it, st;
-						 if ( FI[fid].quest ) then
-							 it = questType;
-							 st = questType;
-						 end
-						 if ( zone == UNKNOWN ) then
-							 zone = FBConstants.UNKNOWN;
-						 end
-						 AddFishie(color, fid, name, zone, subzone, texture, count, quality, level, it, st)
-					 end
+FishingInit.ConvertToMapId = function()
+	if FishingBuddy_Info['ZoneIndex'] and FL:tablecount(FishingBuddy_Info['ZoneIndex']) > 0 then
+		local skills = {}
+		local totals = {}
+		local holes = {}
+		local subzones = {}
+		local known = {}
+		local schools = {}
+		local missing = {}
+		for zidx, name in ipairs(FishingBuddy_Info['ZoneIndex']) do
+			local mapId = FishingInit.mapid_lookup[name]
+			if mapId then
+				known[mapId] = name
+				local zidm = FishingBuddy.ZoneMarkerTo(zidx)
+				local newzidm = FishingBuddy.ZoneMarkerTo(mapId)
+				local szcount = FishingBuddy_Info['SubZones'][zidm]
+				subzones[newzidm] = szcount
+				totals[newzidm] = FishingBuddy_Info['FishTotals'][zidm]
+				schools[mapId] = FishingBuddy_Info['FishSchools'][zidx]
+				for idx=1,szcount do
+					local sidm = FishingBuddy.ZoneMarkerTo(zidx, idx)
+					local newsidm = FishingBuddy.ZoneMarkerTo(mapId, idx)
+					subzones[newsidm] = FishingBuddy_Info['SubZones'][sidm]
+					totals[newsidm] = FishingBuddy_Info['FishTotals'][sidm]
+					skills[newsidm] = FishingBuddy_Info['FishingSkill'][sidm]
+					holes[newsidm] = FishingBuddy_Info['FishingHoles'][sidm]
 				end
+			else
+				FishingBuddy.Debug("Failed to find zone ", name)
+				missing[name] = true
 			end
 		end
+		FishingBuddy_Info['SubZones'] = subzones
+		FishingBuddy_Info['FishTotals'] = totals
+		FishingBuddy_Info['FishingSkill'] = skills
+		FishingBuddy_Info['FishingHoles'] = holes
+		FishingBuddy_Info['FishSchools'] = schools
+		FishingBuddy_Info['KnownZones'] = known
+		FishingBuddy_Info['missing'] = missing
 	end
-end
-
--- Now that we have LibBabble-SubZone, let's just use one table (yay!)
-FishingInit.MergeLocale = function(loc)
-	if ( not FishingBuddy_Info[loc] ) then
-		FishingInit.CleanLocales(loc);
-		return;
-	end
-
-	local GetZoneIndex = FishingBuddy.GetZoneIndex;
-	local AddZoneIndex = FishingBuddy.AddZoneIndex;
-
-	local subzones = copytable(FishingBuddy_Info[loc]["SubZones"], 0);
-	local totals = copytable(FishingBuddy_Info[loc]["FishTotals"], 0);
-	local skills = copytable(FishingBuddy_Info[loc]["FishingSkill"], 0);
-	local holes = copytable(FishingBuddy_Info[loc]["FishingHoles"], 0);
-	
-	FishingBuddy_Info[loc]["SubZones"] = nil;
-	FishingBuddy_Info[loc]["FishTotals"] = nil;
-	FishingBuddy_Info[loc]["FishingSkill"] = nil;
-	FishingBuddy_Info[loc]["FishingHoles"] = nil;
-	FishingBuddy_Info[loc] = nil;
-
-	-- moving data to the top if we're doing this the first time
-	if ( not FishingBuddy_Info["FishingHoles"] ) then
-		for zidx,name in pairs(FishingBuddy_Info["ZoneIndex"]) do
-			local zmarker = zmto(zidx, 0);
-			local szcount = subzones[zmarker];
-			if ( szcount ) then
-				for sidx=1,szcount do
-					local marker = zmto(zidx,sidx);
-					local name = subzones[marker];
-					local newname = FL:GetBaseSubZone(name);
-					if ( newname ~= name ) then
-						subzones[marker] = newname;
-					end
-				end
-			end
-		end
-		
-		FishingBuddy_Info["SubZones"] = subzones;
-		FishingBuddy_Info["FishTotals"] = totals;
-		FishingBuddy_Info["FishingSkill"] = skills;
-		FishingBuddy_Info["FishingHoles"] = holes;
-		
-		FishingInit.CleanLocales(loc);
-		-- we're done the first time...
-		return;
-	end
-
-	-- since we're leaving the zones "as is", we don't need to redo FishSchools
-	FishingInit.ResetFishies(FishingBuddy_Info["ZoneIndex"], subzones, holes, skills);
-	FishingInit.CleanLocales(loc);
-end
-
-FishingInit.ResetZones = function()
-	FishingInit.ResetHelpers();
-
-	local zones = copytable(FishingBuddy_Info["ZoneIndex"], 0);
-	local subzones = copytable(FishingBuddy_Info["SubZones"], 0);
-	local totals = copytable(FishingBuddy_Info["FishTotals"], 0);
-	local skills = copytable(FishingBuddy_Info["FishingSkill"], 0);
-	local holes = copytable(FishingBuddy_Info["FishingHoles"], 0);
-
-	FishingBuddy_Info["ZoneIndex"] = {};
-	tinsert(FishingBuddy_Info["ZoneIndex"], FBConstants.UNKNOWN);
-
-	FishingBuddy_Info["SubZones"] = {};
-	FishingBuddy_Info["FishTotals"] = {};
-	FishingBuddy_Info["FishingSkill"] = {};
-	FishingBuddy_Info["FishingHoles"] = {};
-	
-	FishingInit.ResetFishies(zones, subzones, holes, skills);
-
-	local GetZoneIndex = FishingBuddy.GetZoneIndex;
-	local schools = copytable(FishingBuddy_Info["FishSchools"], 0);
-	FishingBuddy_Info["FishSchools"] = {};
-	for zold,school in pairs(schools) do
-		local zidx = GetZoneIndex(zones[zold]);
-		if ( zidx ) then
-			FishingBuddy_Info["FishSchools"][zidx] = school;
-		else
-			FishingBuddy.Debug("Failed to find zone '%s' (%d)", zones[zold] or "nil", zold);
-		end
-	end
+	FishingBuddy_Info['ZoneIndex'] = nil
 end
 
 FishingInit.UpdateFishingDB = function()
@@ -349,125 +435,7 @@ FishingInit.UpdateFishingDB = function()
 	if ( not playerversion ) then
 		playerversion = 8700;
 	end
-	
-	local loc = GetLocale();
-	-- keep doing this for really, really old versions.
-	if ( version < 9701 ) then
-		FishingBuddy_Info[loc] = {};
-		FishingBuddy_Info[loc]["SubZones"] = copytable(FishingBuddy_Info["SubZones"], 0);
-		FishingBuddy_Info[loc]["FishTotals"] = copytable(FishingBuddy_Info["FishTotals"], 0);
-		FishingBuddy_Info[loc]["FishingSkill"] = copytable(FishingBuddy_Info["FishingSkill"], 0);
-		FishingBuddy_Info[loc]["FishingHoles"] = copytable(FishingBuddy_Info["FishingHoles"], 0);
 
-		FishingBuddy_Info["SubZones"] = nil;
-		FishingBuddy_Info["FishTotals"] = nil;
-		FishingBuddy_Info["FishingSkill"] = nil;
-		FishingBuddy_Info["FishingHoles"] = nil;
-		
-		for id,info in pairs(FishingBuddy_Info["Fishies"]) do
-			if ( info.name ) then
-				info[loc] = info.name;
-				info.name = nil;
-			end
-		end
-	end
-	
-	if ( playerversion < 9701 ) then
-		if ( FishingBuddy_Player["Settings"]["ClickToSwitch"] ) then
-			FishingBuddy_Player["Settings"]["ClickToSwitch"] = 1;
-		end
-		if ( FishingBuddy_Player["Settings"]["MinimapClickToSwitch"] ) then
-			FishingBuddy_Player["Settings"]["MinimapClickToSwitch"] = 1;
-		end
-	end
-	
-	if ( not FishingBuddy_Info["Locales"] ) then
-		local locales = {};
-		for k,v in pairs(FishingBuddy_Info) do
-			if ( type(v) == "table" and v["SubZones"] and v["FishingHoles"] ) then
-				locales[k] = 1;
-			end
-		end
-		FishingBuddy_Info["Locales"] = locales;
-	end
-
-	if (version < 9817) then
-		-- Same id, different fish :-(
-		local fish = FishingBuddy_Info["Fishies"][45328];
-		if ( fish ) then
-			local info = {};
-			info.mods = fish.mods;
-			info.quality = fish.quality;
-			info.quest = true;
-			info.level = fish.level;
-			info.skill = fish.skill;
-			info.texture = fish.texture;
-			FishingBuddy_Info["Fishies"][45328] = info;
-		end
-	end
-
-	if (version < 9901) then
-		FishingBuddy_Info["GreatAndSmall"] = nil;
-		local buddy = FishingBuddy_Info["FishingBuddy"];
-		if ( buddy and buddy > 0) then
-			FishingBuddy_Info["FishingPetBuddies"] = { buddy  };
-		end
-		FishingBuddy_Info["FishingBuddy"] = nil;
-	end
-	
-	if (version < 9907) then
-		-- throw away bad top level copies of these, we have "loc" versions, which we'll merge below
-		FishingBuddy_Info["SubZones"] = nil;
-		FishingBuddy_Info["FishTotals"] = nil;
-		FishingBuddy_Info["FishingSkill"] = nil;
-		FishingBuddy_Info["FishingHoles"] = nil;
-		
-		-- for now, just do the current locale
-		FishingInit.MergeLocale(loc);
-	else
-		if ( FishingBuddy_Info["Locales"] and FishingBuddy_Info["Locales"][loc] ) then
-			-- for now, just do the current locale
-			FishingInit.MergeLocale(loc);
-		end
-	end
-
-	if ( not FishingBuddy_Info["Locales"] or #FishingBuddy_Info["Locales"] == 0 ) then
-		-- look for broken ZoneIndex
-		local broken = false;
-		local check = {};
-		for zidx,zone in ipairs(FishingBuddy_Info["ZoneIndex"]) do
-			if ( check[zone] ) then
-				broken = true;
-			else
-				check[zone] = zidx;
-			end
-		end
-		if ( broken ) then
-			FishingBuddy.Message("Duplicate zones, fixing");
-			FishingInit.ResetZones();
-		end
-	end
-
-	if ( playerversion < 10003 ) then
-		FishingBuddy_Player["MinimapButtonVisible"] = nil;
-		FishingBuddy_Player["ResetWatcher"] = nil;
-	end
-	
-	if ( playerversion < 10005) then
-		if (not FishingBuddy_Player["WatcherLocation"]) then
-			FishingBuddy_Player["WatcherLocation"] = {};
-
-			local loc = FishingBuddy_Player["Settings"]["WatcherLocation"];
-			if (loc) then
-				FishingBuddy_Player["WatcherLocation"].y = loc.y;
-				FishingBuddy_Player["WatcherLocation"].x = loc.x;
-				FishingBuddy_Player["WatcherLocation"]["point"] = "TOPLEFT";
-				FishingBuddy_Player["WatcherLocation"]["scale"] = 1;
-			end
-		end
-		FishingBuddy_Player["Settings"]["WatcherLocation"] = nil;
-	end
-	
 	if ( playerversion < 18000 ) then
 		if ( FishingBuddy_Player["Settings"]["SpecialBobbers"] ) then
 			-- Set to ALL
@@ -477,6 +445,11 @@ FishingInit.UpdateFishingDB = function()
 			FishingBuddy_Player["Settings"]["SpecialBobbers"] = -1
 		end
 	end
+
+	-- Let's use map ids for where we find fish, and get ready
+	-- for handling uiMapIDs.
+	-- Still doesn't help use for subzone names though :-(
+	FishingInit.ConvertToMapId()
 
 	if (type(FishingBuddy_Player["Settings"]["TotalTimeFishing"]) ~= "number") then
 		FishingBuddy_Player["Settings"]["TotalTimeFishing"] = 1;
@@ -536,24 +509,29 @@ end
 FishingInit.InitSortHelpers = function()
 	local fh = FishingBuddy_Info["FishingHoles"];
 	FishingInit.ResetHelpers();
-	for zidx,zone in ipairs(FishingBuddy_Info["ZoneIndex"]) do
-		zone = FL:GetLocZone(zone);
-		tinsert(FishingBuddy.SortedZones, zone);
-		FishingBuddy.SortedByZone[zone] = {};
-		local idx = zmto(zidx, 0);
-		local count = FishingBuddy_Info["SubZones"][idx];
-		if ( count ) then
-			for s=1,count,1 do
-				idx = zmto(zidx,s);
-				local subzone = FL:GetLocSubZone(FishingBuddy_Info["SubZones"][idx]);
-				tinsert(FishingBuddy.SortedByZone[zone], subzone);
-				FishingBuddy.UniqueSubZones[subzone] = 1;
-				if ( not FishingBuddy.SubZoneMap[subzone] ) then
-					FishingBuddy.SubZoneMap[subzone] = {};
+	for mapId, name in pairs(FishingBuddy_Info["KnownZones"]) do
+		zone = FL:GetLocZone(mapId)
+		if not zone then
+			print("missing", mapId, name)
+		else	
+			FishingBuddy.MappedZones[zone] = mapId
+			tinsert(FishingBuddy.SortedZones, zone);
+			FishingBuddy.SortedByZone[zone] = {};
+			local idx = zmto(mapId, 0);
+			local count = FishingBuddy_Info["SubZones"][idx];
+			if ( count ) then
+				for s=1,count,1 do
+					idx = zmto(mapId,s);
+					local subzone = FL:GetLocSubZone(FishingBuddy_Info["SubZones"][idx]);
+					tinsert(FishingBuddy.SortedByZone[zone], subzone);
+					FishingBuddy.UniqueSubZones[subzone] = 1;
+					if ( not FishingBuddy.SubZoneMap[subzone] ) then
+						FishingBuddy.SubZoneMap[subzone] = {};
+					end
+					FishingBuddy.SubZoneMap[subzone][idx] = 1;
 				end
-				FishingBuddy.SubZoneMap[subzone][idx] = 1;
+				table.sort(FishingBuddy.SortedByZone[zone]);
 			end
-			table.sort(FishingBuddy.SortedByZone[zone]);
 		end
 	end
 	table.sort(FishingBuddy.SortedZones);
@@ -567,13 +545,13 @@ FishingInit.SetupSchoolCounts = function()
 	local counts = {};
 	local zmto = FishingBuddy.ZoneMarkerTo;
 	if ( FishingBuddy_Info["FishSchools"] ) then
-		for zidx,holes in pairs(FishingBuddy_Info["FishSchools"]) do
+		for mapId,holes in pairs(FishingBuddy_Info["FishSchools"]) do
 			for _,hole in pairs(holes) do
 				local sidx = hole.sidx;
 				if ( sidx ) then
 					-- Fix bad data
 					if ( sidx < 1000 ) then
-						sidx = zmto(zidx, sidx);
+						sidx = zmto(mapId, sidx);
 						hole.sidx = sidx;
 					end
 					if ( hole.fish ) then

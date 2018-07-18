@@ -76,7 +76,7 @@ local methods = {
 		-- reset the flag
 		self.resizing = nil
 		-- run the update explicitly
-		updateSize(self)
+		--updateSize(self)
 	end,
 	
 	-- ["OnRelease"] = nil,
@@ -134,6 +134,7 @@ local function Constructor()
 	frame:SetScript("OnMouseUp", frameOnMouseUp)
 
 	local label = frame:CreateFontString(nil, "ARTWORK")
+	label:SetPoint("TOPLEFT")
 	label:SetFontObject(Amr.CreateFont("Regular", 16, Amr.Colors.Text))
 
 	-- create widget

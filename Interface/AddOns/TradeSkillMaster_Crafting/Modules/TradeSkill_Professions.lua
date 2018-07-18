@@ -22,7 +22,7 @@ function Professions:OnInitialize()
 	Professions:RawHook("ChatEdit_InsertLink", private.InsertLinkHook, true)
 	TSMAPI.Delay:AfterTime("craftTimeText", 0.5, private.UpdateCraftTimeText, 0.5)
 	TSMAPI.Delay:AfterTime("craftingUpdateTradeSkill", 1, function() Professions:SetSelectedTradeSkill(private.selectedTradeSkill) end, 0.1)
-	Professions:RegisterEvent("TRADE_SKILL_UPDATE", private.UpdateProfessionDropdown)
+	Professions:RegisterEvent("TRADE_SKILL_LIST_UPDATE", private.UpdateProfessionDropdown)
 end
 
 function private.SetSlotFilter(inventorySlotIndex, categoryId, subCategoryId)

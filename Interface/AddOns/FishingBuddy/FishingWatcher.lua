@@ -172,8 +172,7 @@ end
 
 function FWF:DisplayFishLine(fish, label, area)
 	local line = nil;
-	local zone, subzone = FL:GetZoneInfo();
-	area = area or GetCurrentMapAreaID()
+	local area, subzone = FishingBuddy.GetCurrentMapIdInfo();
 	for id,info in pairs(fish) do
 		local havesome = GetItemCount(id);
 		local here = false
@@ -293,42 +292,6 @@ local function IsSpecialFish(fishid, itemTexture)
 	-- return nil;
 end
 
--- fix old data that had UNKNOWN as a zone name.
--- this is *really* old data, and we might not need it
--- unless, of course, there is a bug in LibBabble-Zone. Sigh.
-local function UpdateUnknownZone(zone, subzone, zidx, sidx)
-	if ( subzone == UNKNOWN or subzone == FBConstants.UNKNOWN ) then
-		return;
-	end
-
-	local uzidx = FishingBuddy.GetZoneIndex(UNKNOWN);
-	if ( uzidx ) then
-		local fh = FishingBuddy_Info["FishingHoles"];
-		local uidx = zmto(uzidx,0);
-		local count = FishingBuddy_Info["SubZones"][uidx];
-		if ( count ) then
-			for s=1,count,1 do
-				uidx = zmto(uzidx, s);
-				if ( fh[uidx] ) then
-					local uszone = FL:GetBaseSubZone(FishingBuddy_Info["SubZones"][uidx]);
-					if ( uszone == subzone ) then
-						for k,v in pairs(fh[uidx]) do
-							if ( fh[sidx][k] ) then
-								fh[sidx][k] = fh[sidx][k] + v;
-							else
-								fh[sidx][k] = v;
-							end
-						end
-						for k,_ in pairs(fh[uidx]) do
-							fh[uidx][k] = nil;
-						end
-					end
-				end
-			end
-		end
-	end
-end
-
 -- build a single info entry for a given fish
 local function BuildInfoEntry(fishid, count)
 	local IsCountedFish = FishingBuddy.IsCountedFish;
@@ -388,8 +351,8 @@ local function SetupLegionCoinCount()
 end
 
 local function DisplayLegionCoinCount()
-	local bZ, bS = FL:GetBaseZoneInfo()
-	if (bZ == "Dalaran (Broken Isles)" and bS == "The Eventide") then
+	local bZ, bS = FishingBuddy.GetCurrentMapIdInfo()
+	if (bZ == 1014 and bS == "The Eventide") then
 		local done = 0
 		for id, info in pairs(legion_coins) do
 			if info.completed then
@@ -404,10 +367,7 @@ end
 -- for the specified zone and subzone, display the watch data
 -- we might want to display multiple zones someday, so this
 -- will need to be rewrittent to store the data differently
-local function BuildCurrentData(zone, subzone, zidx, sidx)
-	-- catch any errors in the unknown zone update
-	pcall(UpdateUnknownZone, zone, subzone, zidx, sidx);
-
+local function BuildCurrentData()
 	totalCount = 0;
 	totalCurrent = 0;
 	fishdata = {};
@@ -427,13 +387,13 @@ local function BuildCurrentData(zone, subzone, zidx, sidx)
 
 	SetupLegionCoinCount()
 
-	local idx = zmto(zidx, sidx);
+	local zidm = FishingBuddy.GetCurrentZoneIndex(true);
 	local fz = FishingBuddy_Info["FishingHoles"];
 	local fszc = FishingBuddy.SZSchoolCounts;
-	if ( fz and fz[idx] ) then
-		local sc = fszc[idx];
+	if ( fz and fz[zidm] ) then
+		local sc = fszc[zidm];
 		local ff = FishingBuddy_Info["Fishies"];
-		for fishid,count in pairs(fz[idx]) do
+		for fishid,count in pairs(fz[zidm]) do
 			local itemTexture = ff[fishid].texture;
 			local info = IsSpecialFish(fishid, itemTexture);
 
@@ -488,7 +448,7 @@ WatchEvents["UNIT_SPELLCAST_STOP"] = function()
 	end
 end
 
-WatchEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, zone, subzone, texture, quantity, quality, level, idx, poolhint)
+WatchEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, mapId, subzone, texture, quantity, quality, level, idx, poolhint)
 	if ( FishingWatchFrame:IsVisible() ) then
 		local info = false
 
@@ -819,11 +779,6 @@ end
 function FWF:WatchUpdate()
 	local noshow = NoShow();
 
-	local zone, subzone = FL:GetZoneInfo();
-	if ( zone == FBConstants.UNKNOWN ) then
-		noshow = true;
-	end
-
 	if ( noshow ) then
 		HideAway();
 		return;
@@ -834,10 +789,9 @@ function FWF:WatchUpdate()
 	end
 
 	local line;
-
+	local mapId, subzone = FishingBuddy.GetCurrentMapIdInfo();
 	if ( not fishsort ) then
-		local zidx, sidx = FishingBuddy.AddZoneIndex(zone, subzone);
-		BuildCurrentData(zone, subzone, zidx, sidx);
+		BuildCurrentData();
 	end
 
 	self.current_line = 1;
@@ -989,12 +943,11 @@ end
 FWF.MakeToggle = WatcherMakeToggle;
 
 local function WatchMenu_Initialize()
-	local zidx, sidx = FishingBuddy.GetZoneIndex();
-	local idx = zmto(zidx, sidx);
+	local zidm = FishingBuddy.GetCurrentZoneIndex(true);
 	local fz = FishingBuddy_Info["FishingHoles"];
-	if ( fz and fz[idx] ) then
+	if ( fz and fz[zidm] ) then
 		local ff = FishingBuddy_Info["Fishies"];
-		for fishid in pairs(fz[idx]) do
+		for fishid in pairs(fz[zidm]) do
 			local info = {};
 			info.text = ff[fishid][loc];
 			info.func = WatcherMakeToggle(fishid);

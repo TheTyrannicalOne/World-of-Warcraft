@@ -1,6 +1,8 @@
 
 Bartender4DB = {
 	["namespaces"] = {
+		["StatusTrackingBar"] = {
+		},
 		["APBar"] = {
 		},
 		["ActionBars"] = {
@@ -34777,16 +34779,16 @@ Bartender4DB = {
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
+					["version"] = 3,
+					["visibility"] = {
+						["possess"] = false,
+					},
 					["position"] = {
 						["y"] = 218.971488047664,
 						["x"] = 398.390317150055,
 						["point"] = "BOTTOMLEFT",
 						["scale"] = 0.9,
 					},
-					["visibility"] = {
-						["possess"] = false,
-					},
-					["version"] = 3,
 				},
 				["Brotuss - Zul'jin"] = {
 					["visibility"] = {
@@ -48065,12 +48067,12 @@ Bartender4DB = {
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
+					["version"] = 3,
 					["position"] = {
 						["y"] = 9.99997877283215,
 						["x"] = 361.714377491161,
 						["point"] = "LEFT",
 					},
-					["version"] = 3,
 				},
 				["Brotuss - Zul'jin"] = {
 					["version"] = 3,

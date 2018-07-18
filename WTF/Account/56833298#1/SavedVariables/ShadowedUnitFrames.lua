@@ -44561,12 +44561,7 @@ ShadowedUFDB = {
 						["order"] = 15,
 						["width"] = 0.22,
 					},
-					["emptyBar"] = {
-						["reactionType"] = "none",
-						["background"] = true,
-						["height"] = 1,
-						["order"] = 0,
-					},
+					["unitsPerColumn"] = 5,
 					["auras"] = {
 						["debuffs"] = {
 							["anchorPoint"] = "BL",
@@ -44604,8 +44599,13 @@ ShadowedUFDB = {
 						["icon"] = "HIDE",
 						["order"] = 60,
 					},
-					["unitsPerColumn"] = 5,
-					["columnSpacing"] = 5,
+					["emptyBar"] = {
+						["reactionType"] = "none",
+						["background"] = true,
+						["height"] = 1,
+						["order"] = 0,
+					},
+					["height"] = 40,
 					["powerBar"] = {
 						["colorType"] = "type",
 						["height"] = 1,
@@ -44623,7 +44623,18 @@ ShadowedUFDB = {
 						["height"] = 1.2,
 						["reactionType"] = "npc",
 					},
-					["height"] = 40,
+					["columnSpacing"] = 5,
+					["attribAnchorPoint"] = "LEFT",
+					["width"] = 150,
+					["maxColumns"] = 1,
+					["altPowerBar"] = {
+						["order"] = 100,
+						["background"] = true,
+						["height"] = 0.4,
+					},
+					["incHeal"] = {
+						["cap"] = 1,
+					},
 					["text"] = {
 						{
 							["text"] = "[(()afk() )][name]",
@@ -44635,17 +44646,6 @@ ShadowedUFDB = {
 							["text"] = "[(()afk() )][name]",
 						},
 					},
-					["width"] = 150,
-					["maxColumns"] = 1,
-					["altPowerBar"] = {
-						["order"] = 100,
-						["background"] = true,
-						["height"] = 0.4,
-					},
-					["incHeal"] = {
-						["cap"] = 1,
-					},
-					["attribAnchorPoint"] = "LEFT",
 				},
 				["player"] = {
 					["portrait"] = {
@@ -45340,15 +45340,16 @@ ShadowedUFDB = {
 					},
 				},
 				["maintank"] = {
-					["highlight"] = {
-						["size"] = 10,
+					["portrait"] = {
+						["type"] = "3D",
+						["alignment"] = "LEFT",
+						["fullAfter"] = 50,
+						["height"] = 0.5,
+						["fullBefore"] = 0,
+						["order"] = 15,
+						["width"] = 0.22,
 					},
-					["emptyBar"] = {
-						["reactionType"] = "none",
-						["background"] = true,
-						["height"] = 1,
-						["order"] = 0,
-					},
+					["attribAnchorPoint"] = "LEFT",
 					["indicators"] = {
 						["raidTarget"] = {
 							["y"] = 0,
@@ -45372,7 +45373,12 @@ ShadowedUFDB = {
 							["size"] = 16,
 						},
 					},
-					["attribAnchorPoint"] = "LEFT",
+					["emptyBar"] = {
+						["reactionType"] = "none",
+						["background"] = true,
+						["height"] = 1,
+						["order"] = 0,
+					},
 					["auras"] = {
 						["debuffs"] = {
 							["anchorPoint"] = "BL",
@@ -45410,7 +45416,7 @@ ShadowedUFDB = {
 						["icon"] = "HIDE",
 						["order"] = 60,
 					},
-					["columnSpacing"] = 5,
+					["height"] = 40,
 					["powerBar"] = {
 						["colorType"] = "type",
 						["height"] = 1,
@@ -45418,14 +45424,8 @@ ShadowedUFDB = {
 						["order"] = 20,
 					},
 					["offset"] = 5,
-					["portrait"] = {
-						["type"] = "3D",
-						["alignment"] = "LEFT",
-						["fullAfter"] = 50,
-						["height"] = 0.5,
-						["fullBefore"] = 0,
-						["order"] = 15,
-						["width"] = 0.22,
+					["highlight"] = {
+						["size"] = 10,
 					},
 					["healthBar"] = {
 						["colorType"] = "class",
@@ -45434,18 +45434,7 @@ ShadowedUFDB = {
 						["height"] = 1.2,
 						["reactionType"] = "npc",
 					},
-					["height"] = 40,
-					["unitsPerColumn"] = 5,
-					["width"] = 150,
-					["maxColumns"] = 1,
-					["altPowerBar"] = {
-						["order"] = 100,
-						["background"] = true,
-						["height"] = 0.4,
-					},
-					["incHeal"] = {
-						["cap"] = 1,
-					},
+					["columnSpacing"] = 5,
 					["text"] = {
 						{
 							["text"] = "[(()afk() )][name]",
@@ -45457,6 +45446,17 @@ ShadowedUFDB = {
 							["text"] = "[(()afk() )][name]",
 						},
 					},
+					["width"] = 150,
+					["maxColumns"] = 1,
+					["altPowerBar"] = {
+						["order"] = 100,
+						["background"] = true,
+						["height"] = 0.4,
+					},
+					["incHeal"] = {
+						["cap"] = 1,
+					},
+					["unitsPerColumn"] = 5,
 				},
 				["boss"] = {
 					["indicators"] = {
@@ -45783,7 +45783,7 @@ ShadowedUFDB = {
 					["b"] = 0.41,
 				},
 			},
-			["wowBuild"] = 70300,
+			["wowBuild"] = 80000,
 			["bars"] = {
 				["texture"] = "Minimalist",
 				["backgroundAlpha"] = 0.2,

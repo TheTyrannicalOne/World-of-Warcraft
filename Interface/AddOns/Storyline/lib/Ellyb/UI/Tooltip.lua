@@ -87,6 +87,13 @@ function Tooltip:AddLine(text, customColor)
 	return self;
 end
 
+function Tooltip:AddEmptyLine()
+	insert(_private[self].content, {
+		text = " ",
+	});
+	return self;
+end
+
 function Tooltip:AddTempLine(text, customColor)
 	insert(_private[self].tempContent, {
 		text = text,
@@ -105,10 +112,12 @@ end
 
 function Tooltip:ClearLines()
 	_private[self].content = {};
+	return self;
 end
 
 function Tooltip:ClearTempLines()
 	_private[self].tempContent = {};
+	return self;
 end
 
 function Tooltip:SetLines(lines)
@@ -178,7 +187,7 @@ function Tooltip:Show()
 		if line.customColor then
 			r, g, b = line.customColor:GetRGBAAsBytes();
 		end
-		tooltip:AddLine(line.text, line.text, r, g, b, true);
+		tooltip:AddLine(line.text, r, g, b, true);
 	end
 
 	tooltip:Show();

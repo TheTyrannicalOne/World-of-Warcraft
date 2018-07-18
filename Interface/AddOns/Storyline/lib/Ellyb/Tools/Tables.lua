@@ -8,6 +8,7 @@ end
 -- WoW imports
 local tinsert = table.insert;
 local tremove = table.remove;
+local format = string.format;
 local type = type;
 local pairs = pairs;
 local wipe = wipe;
@@ -31,11 +32,19 @@ end
 
 --- Recursively copy all content from a table to another one.
 --- Argument "destination" must be a non nil table reference.
----@param destination table @ The table that will receive the new content
+---@param optional destination table @ The table that will receive the new content
 ---@param source table @ The table that contains the thing we want to put in the destination
+---@overload fun(source:table)
 function Tables.copy(destination, source)
 	assert(isType(destination, "table", "destination"));
-	assert(isType(source, "table", "source"));
+
+	-- If we are only given one table, the that table is the source a new table is the destination
+	if not source then
+		source = destination;
+		destination = {};
+	else
+		assert(isType(source, "table", "source"));
+	end
 
 	for k, v in pairs(source) do
 		if (type(v) == "table") then
@@ -45,6 +54,8 @@ function Tables.copy(destination, source)
 			destination[k] = v;
 		end
 	end
+
+	return destination;
 end
 
 --- Return the table size.
@@ -123,4 +134,28 @@ end
 function Tables.releaseTempTable(table)
 	assert(isType(table, "table", "table"));
 	TABLE_POOL[table] = true;
+end
+
+-- The %q format will automatically quote and escape some special characters (thanks Itarater for the tip)
+local VALUE_TO_STRING = "[%q]=%q,"
+-- We do not escape the string representation of a table (it was already escaped before!)
+local TABLE_VALUE_TO_STRING = "[%q]=%s,"
+
+--- Return a string representation of the table in Lua syntax, suitable for a loadstring()
+---@param table table @ A valid table
+---@return string stringTable @ A string representation of the table in Lua syntax
+function Tables.toString(table)
+	assert(isType(table, "table", "table"));
+
+	local t = "{";
+	for key, value in pairs(table) do
+		if type(value) == "table" then
+			t = t .. format(TABLE_VALUE_TO_STRING, key, Tables.toString(value));
+		else
+			t = t .. format(VALUE_TO_STRING, key, value);
+		end
+	end
+	t = t .. "}";
+
+	return t;
 end

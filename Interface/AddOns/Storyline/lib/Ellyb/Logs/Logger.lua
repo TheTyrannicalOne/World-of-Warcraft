@@ -11,6 +11,7 @@ local format = string.format;
 local insert = table.insert;
 local pairs = pairs;
 local date = date;
+local print = print;
 
 -- Ellyb imports
 local Log = Ellyb.Log;
@@ -70,6 +71,23 @@ function Logger:Log(level, ...)
 
 	if LogFrame:IsShown() then
 		self:Show();
+	elseif Ellyb:IsDebugModeEnabled() then
+
+		local ChatFrame;
+		for i = 0, NUM_CHAT_WINDOWS do
+			if GetChatWindowInfo(i) == "Logs" then
+				ChatFrame = _G["ChatFrame"..i]
+			end
+		end
+		local logText = log:GetText();
+		local logHeader = self:GetLogHeader(log:GetLevel());
+		local timestamp = format("[%s]", date("%X", log:GetTimestamp()));
+		local message = Ellyb.ColorManager.GREY(timestamp) .. logHeader .. logText;
+		if ChatFrame and log:GetLevel() ~= self.LEVELS.WARNING and log:GetLevel() ~= self.LEVELS.SEVERE then
+			ChatFrame:AddMessage(message)
+		else
+			print(message)
+		end
 	end
 end
 
@@ -93,7 +111,7 @@ function Logger:Show()
 	---@type Log[]
 	local logs = _private[self].logs;
 	local text = "";
-	for index, log in pairs(logs) do
+	for _, log in pairs(logs) do
 		local logText = Ellyb.ColorManager.GREY(log:GetText());
 		local logHeader = self:GetLogHeader(log:GetLevel());
 		local timestamp = format("[%s]", date("%X", log:GetTimestamp()));

@@ -248,7 +248,7 @@ local bossadex = 0
 local lastday = 0
 local bossadex = 0
 local function CurrentBoss()
-	local zone, subzone = FL:GetZoneInfo();
+	local zone, subzone = FishingBuddy.GetCurrentMapIdInfo();
 
 	if subzone == MARGOSS_RETREAT then
 		return RaidBosses[7]
@@ -281,7 +281,7 @@ end
 
 local function CheckMagicFish()
 	local button = _G['FishingActionButton'];
-	local zone, subzone = FL:GetZoneInfo();
+	local zone, subzone = FishingBuddy.GetCurrentMapIdInfo();
 
 	return FL:HasBuff(button.spell) or subzone == "Margoss's Retreat";
 end

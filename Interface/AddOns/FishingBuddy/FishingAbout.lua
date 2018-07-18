@@ -181,6 +181,7 @@ credits[FBConstants.ROLE_ADDON_AUTHORS] = {
 	["Xinhuan"] = { "LibGraph-2.0", },
 	["KarlKFI"] = { "MobileMinimapButtons" },
 	["endx7"] = { "LibPetJournal-2.0" },
+	["Nevcairiel"] = { "HereBeDragons" },
 };
 
 local CREDITSKIP = 7;

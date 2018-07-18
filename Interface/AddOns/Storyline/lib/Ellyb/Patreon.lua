@@ -23,19 +23,17 @@ local format = format;
 local PURPLE = Ellyb.ColorManager.PURPLE;
 
 local GOLDEN_SUPPORTERS = {
-	"Bas(AstaLawl)",
 	"Connor Macleod",
 	"Vlad",
-	"Daelorh",
 }
 
 local PATREON_SUPPORTERS = {
-	"Nikradical",
+	"Adam M",
+	"Valnoressa",
 	"Solanya",
-	"Ripperley",
 	"Keyboardturner",
 	"Petr Cihelka",
-	"Julien Mtrd",
+	"Syccor",
 }
 
 sort(GOLDEN_SUPPORTERS);
@@ -64,7 +62,7 @@ end
 ---@param HTML SimpleHTML
 function Ellyb:SetUpHTMLPatreonMessage(HTML)
 	HTML:SetText(format(Ellyb.loc.PATREON_SUPPORTERS, Ellyb:GetPatreonSupporters()));
-	HTML:HookScript("OnHyperlinkClick", function(self, url, text, button)
+	HTML:HookScript("OnHyperlinkClick", function(_, url)
 		if url == "ellypse_patreon" then
 			Ellyb.Popups:OpenURL("http://patreon.com/Ellypse");
 		end

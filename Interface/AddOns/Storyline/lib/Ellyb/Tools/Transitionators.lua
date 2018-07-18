@@ -5,6 +5,13 @@ if Ellyb.Transitionator then
 	return
 end
 
+-- Lua imports
+local pairs = pairs;
+local insert = table.insert;
+
+-- WoW Imports
+local GetTime = GetTime;
+
 ---@class Transitionator : Object
 local Transitionator, _p = Ellyb.Class("Transitionator");
 
@@ -28,7 +35,7 @@ function Transitionator:initialize()
 	_p[self].value = 0;
 	_p[self].shouldBeUpdated = false;
 
-	table.insert(transitionators, self);
+	insert(transitionators, self);
 end
 
 function Transitionator:ShouldBeUpdated()
@@ -39,7 +46,7 @@ function Transitionator:Tick()
 	local elapsed = GetTime() - _p[self].timeStarted;
 	local currentValue = _p[self].customEasing(elapsed, _p[self].startValue, _p[self].change, _p[self].overTime, unpack(_p[self].customEasingArgs));
 	if elapsed >= _p[self].overTime then
-		_p[self].shouldBeUpdated = true;
+		_p[self].shouldBeUpdated = false;
 		_p[self].callback(_p[self].endValue);
 	else
 		_p[self].callback(currentValue);

@@ -7,7 +7,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 --]]
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 90990
+local MINOR_VERSION = 90996
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -24,8 +24,6 @@ end
 
 -- 5.0.4 has a problem with a global "_" (see some for loops below)
 local _
-
-local LT = LibStub("LibTourist-3.0");
 
 -- Secure action button
 local SABUTTONNAME = "LibFishingSAButton";
@@ -47,13 +45,10 @@ function FishLib_GetLocaleLibBabble(typ)
 	return rettab;
 end
 
--- These are now provided by LibTourist
-local BZ = LibStub("LibTourist-3.0"):GetLookupTable()
-local BZR = LibStub("LibTourist-3.0"):GetReverseLookupTable();
-
 local BSZ = FishLib_GetLocaleLibBabble("LibBabble-SubZone-3.0");
 local BSL = LibStub("LibBabble-SubZone-3.0"):GetBaseLookupTable();
 local BSZR = LibStub("LibBabble-SubZone-3.0"):GetReverseLookupTable();
+local HBD = LibStub("HereBeDragons-2.0")
 
 FishLib.UNKNOWN = "UNKNOWN";
 
@@ -379,7 +374,7 @@ function FishLib:HasBuff(buffId, skipWait)
 			for i=1,40 do
 				local current_buff = UnitBuff("player",i);
 				if current_buff then
-					local spellid = select(11, UnitBuff("player", i));
+					local spellid = select(10, UnitBuff("player", i));
 					if (buffId == spellid) then
 						return true;
 					end
@@ -436,8 +431,7 @@ function FishLib:FindNextLure(b, state)
 end
 
 function FishLib:FindBestLure(b, state, usedrinks, forcemax)
-	local zone, subzone = self:GetZoneInfo();
-	local level = self:GetFishingLevel(zone, subzone);
+	local level = self:GetCurrentFishingLevel();
 	if ( level and level > 1 ) then
 		if (forcemax) then
 			level = 9999;
@@ -614,6 +608,125 @@ local slotmap = {
 	["INVTYPE_QUIVER"] = { 20,21,22,23 },
 	[""] = { },
 };
+
+-- Fishing level by 8.0 map id
+local FishingLevels = {
+	[1] = 25,
+	[241] = 650,
+	[122] = 450,
+	[123] = 525,
+	[32] = 425,
+	[36] = 425,
+	[37] = 25,
+	[425] = 25,
+	[433] = 750,
+	[10] = 75,
+	[624] = 950,
+	[102] = 400,
+	[418] = 700,
+	[42] = 425,
+	[461] = 25,
+	[170] = 550,
+	[469] = 25,
+	[543] = 950,
+	[696] = 950,
+	[205] = 575,
+	[116] = 475,
+	[516] = 750,
+	[184] = 550,
+	[47] = 150,
+	[998] = 75,
+	[48] = 75,
+	[49] = 75,
+	[194] = 25,
+	[390] = 825,
+	[50] = 150,
+	[200] = 650,
+	[51] = 425,
+	[554] = 825,
+	[52] = 75,
+	[204] = 575,
+	[210] = 225,
+	[422] = 625,
+	[245] = 675,
+	[427] = 25,
+	[218] = 75,
+	[14] = 150,
+	[56] = 150,
+	[224] = 150,
+	[57] = 25,
+	[523] = 25,
+	[676] = 950,
+	[539] = 375,
+	[77] = 300,
+	[15] = 300,
+	[71] = 300,
+	[155] = 1,
+	[121] = 475,
+	[244] = 675,
+	[62] = 75,
+	[100] = 375,
+	[63] = 150,
+	[535] = 950,
+	[64] = 300,
+	[65] = 150,
+	[66] = 225,
+	[201] = 575,
+	[83] = 425,
+	[69] = 225,
+	[95] = 75,
+	[407] = 75,
+	[85] = 75,
+	[468] = 25,
+	[199] = 225,
+	[588] = 950,
+	[76] = 75,
+	[153] = 475,
+	[78] = 375,
+	[198] = 575,
+	[80] = 300,
+	[81] = 425,
+	[109] = 475,
+	[525] = 950,
+	[84] = 75,
+	[463] = 25,
+	[467] = 25,
+	[87] = 75,
+	[88] = 75,
+	[89] = 75,
+	[465] = 25,
+	[23] = 300,
+	[462] = 25,
+	[127] = 500,
+	[94] = 25,
+	[376] = 700,
+	[507] = 750,
+	[891] = 25,
+	[388] = 700,
+	[25] = 150,
+	[534] = 950,
+	[542] = 950,
+	[203] = 575,
+	[26] = 225,
+	[460] = 25,
+	[416] = 225,
+	[106] = 75,
+	[107] = 475,
+	[108] = 450,
+	[217] = 75,
+	[7] = 25,
+	[622] = 950,
+	[21] = 75,
+	[448] = 650,
+	[114] = 475,
+	[115] = 475,
+	[333] = 425,
+	[117] = 475,
+	[118] = 550,
+	[119] = 525,
+	[120] = 550,
+	[22] = 225,
+}
 
 local infoslot = nil;
 function FishLib:GetInfoSlot()
@@ -1069,32 +1182,61 @@ function FishLib:ExtendDoubleClick()
 	end
 end
 
-function FishLib:GetZoneInfo()
-	if(not WorldMapFrame:IsShown()) then
-		SetMapToCurrentZone()
+function FishLib:GetLocZone(mapId)
+	return HBD:GetLocalizedMap(mapId);
+end
+
+function FishLib:GetZoneSize(mapId)
+	return HBD:GetZoneSize(mapId);
+end
+
+function FishLib:GetWorldDistance(zone, x1, y1, x2, y2)
+	return HBD:GetWorldDistance(zone, x1, y1, x2, y2)
+end
+
+
+-- Continents
+-- Pandaria, 6, 424
+-- Draenor, 7, 572
+-- Broken Isles, 8, 619
+function FishLib:GetCurrentMapContinent()
+	if select(4, GetBuildInfo()) < 80000 then
+		return GetCurrentMapContinent()
+	else
+		local mapID = self:GetCurrentMapId()
+		if HBD.mapData[mapId] and mapID then
+			return HBD.mapData[mapId].parent
+		else
+			return 0
+		end
 	end
+end
+
+function FishLib:GetCurrentMapId()
+	if select(4, GetBuildInfo()) < 80000 then
+		return GetCurrentMapAreaID()
+	else
+		local mapId, _ = HBD:GetPlayerZone()
+		return mapId or 0
+	end
+end
+
+function FishLib:GetZoneInfo()
 	local zone = GetRealZoneText();
-	local subzone = GetSubZoneText();
 	if ( not zone or zone == "" ) then
 		zone = UNKNOWN;
 	end
+	local subzone = GetSubZoneText();
 	if ( not subzone or subzone == "" ) then
 		subzone = zone;
 	end
-
-	-- Hack to fix issues with 4.1 and LibBabbleZone and LibTourist
-	if (zone == "City of Ironforge" ) then
-		zone = "Ironforge";
-	end
-
-	local continent = GetCurrentMapContinent();
-	zone = LT:GetUniqueEnglishZoneNameForLookup(zone, continent)
-
-	return zone, subzone;
+	
+	return self:GetCurrentMapId(), subzone
 end
 
 function FishLib:GetBaseZoneInfo()
-	local zone = GetRealZoneText();
+	local mapID = self:GetCurrentMapId()
+	local zone = GetMapNameByID(mapID);
 	local subzone = GetSubZoneText();
 	if ( not zone or zone == "" ) then
 		zone = UNKNOWN;
@@ -1108,30 +1250,11 @@ function FishLib:GetBaseZoneInfo()
 		zone = "Ironforge";
 	end
 
-	return self:GetBaseZone(zone), self:GetBaseSubZone(subzone);
+	return zone, self:GetBaseSubZone(subzone);
 end
 
 -- translate zones and subzones
 -- need to handle the fact that French uses "Stormwind" instead of "Stormwind City"
-function FishLib:GetBaseZone(zname)
-	if ( zname == FishLib.UNKNOWN or zname == UNKNOWN ) then
-		return FishLib.UNKNOWN;
-	end
-
-	if (zname and not BZ[zname] and BZR[zname]) then
-		zname = BZR[zname];
-	end
-
-	if (not zname) then
-		zname = FishLib.UNKNOWN;
-	else
-		local continent = GetCurrentMapContinent();
-		zname = LT:GetUniqueEnglishZoneNameForLookup(zname, continent)
-	end
-
-	return zname;
-end
-
 function FishLib:GetBaseSubZone(sname)
 	if ( sname == FishLib.UNKNOWN or sname == UNKNOWN ) then
 		return FishLib.UNKNOWN;
@@ -1146,25 +1269,6 @@ function FishLib:GetBaseSubZone(sname)
 	end
 
 	return sname;
-end
-
-function FishLib:GetLocZone(zname)
-	if ( zname == FishLib.UNKNOWN or zname == UNKNOWN ) then
-		return UNKNOWN;
-	end
-
-	if (zname and BZR[zname]) then
-		zname = BZ[zname];
-	end
-
-	if (not zname) then
-		zname = FishLib.UNKNOWN;
-	else
-		local continent = GetCurrentMapContinent();
-		zname = LT:GetUniqueEnglishZoneNameForLookup(zname, continent)
-	end
-
-	return zname;
 end
 
 function FishLib:GetLocSubZone(sname)
@@ -1207,14 +1311,24 @@ local subzoneskills = {
 	["Binan Village"] = 750,	-- seems to be higher here, for some reason
 };
 
-function FishLib:GetFishingLevel(zone, subzone)
-	subzone = self:GetBaseSubZone(subzone);
+-- this should be something useful for BfA
+local DEFAULT_FISHING = 950;
+function FishLib:GetCurrentFishingLevel()
+	local mapID = self:GetCurrentMapId()
+	local continent = self:GetCurrentMapContinent()
+	local _, subzone = self:GetZoneInfo()
+	local draenor
 
-	local continent = GetCurrentMapContinent();
-	if (continent ~= 7 and subzoneskills[subzone]) then
+	if select(4, GetBuildInfo()) < 80000 then
+		draenor = 7
+	else
+		draenor = 572
+	end
+
+	if (continent ~= draenor and subzoneskills[subzone]) then
 		return subzoneskills[subzone];
 	else
-		return LT:GetFishingLevel(zone);
+		return FishingLevels[mapID] or DEFAULT_FISHING;
 	end
 end
 
@@ -1224,8 +1338,9 @@ function FishLib:GetFishingSkillLine(join, withzone, isfishing)
 	local part2 = "";
 	local skill, mods, skillmax = self:GetCurrentSkill();
 	local totskill = skill + mods;
-	local zone, subzone = self:GetZoneInfo();
-	local level = self:GetFishingLevel(zone, subzone);
+	local subzone = GetSubZoneText();
+	local zone = GetRealZoneText() or "Unknown";
+	local level = self:GetCurrentFishingLevel();
 	if ( withzone ) then
 		part1 = zone.." : "..subzone.. " ";
 	end
@@ -1896,31 +2011,10 @@ end
 
 -- Find out where the player is. Based on code from Astrolabe and wowwiki notes
 function FishLib:GetCurrentPlayerPosition()
-	local x, y = GetPlayerMapPosition("player");
-	local lC, lZ = GetCurrentMapContinent(), GetCurrentMapZone();
-	-- if the current location is 0,0 we need to call SetMapToCurrentZone()
-	if ( x <= 0 and y <= 0 ) then
-		-- find out where we are now
-		SetMapToCurrentZone();
-		-- if we haven't changed zones yet, the zoom is incorrect
-		SetMapZoom(GetCurrentMapContinent());
+	local x, y, mapId, _ = HBD:GetPlayerZonePosition();
+	local C = self:GetCurrentMapContinent();
 
-		local C, Z = GetCurrentMapContinent(), GetCurrentMapZone();
-		x, y = GetPlayerMapPosition("player");
-
-		-- put everything back, if we need to
-		if ( C ~= lC or Z ~= lZ ) then
-			SetMapZoom(lC, lZ); --set map zoom back to what it was before
-		end
-
-		if ( x <= 0 and y <= 0 ) then
-			-- we are in an instance or otherwise off the continent map
-			return C, Z, 0, 0;
-		else
-			return C, Z, x, y;
-		end
-	end
-	return lC, lZ, x, y;
+	return C, mapId, x, y;
 end
 
 -- Functions from LibCrayon, since somehow it's crashing some people

@@ -5,7 +5,6 @@
 FishingBuddy.Extravaganza = {};
 
 local FL = LibStub("LibFishing-1.0");
-local LT = LibStub("LibTourist-3.0");
 
 local UPDATETIME_SCHOOLS = 5.0;
 local UPDATETIME_COUNTER = 20.0;
@@ -36,6 +35,7 @@ Contests[1] = {
 	["count"] = 40,
 	["continent"] = "Eastern Kingdoms",
 	["zones"] = { "Stranglethorn Vale", "The Cape of Stranglethorn", "Northern Stranglethorn" },
+	["mapIds"] = { 689, 673, 37 },
 	["kind"] = FL.SCHOOL_TASTY,
 	["setting"] = "STVTimer",
 	["name"] = FBConstants.EXTRAVAGANZA,
@@ -73,17 +73,17 @@ end
 
 local function IsContestZone()
 	if ( CurrentContest ) then
-		local zone,_ = FL:GetZoneInfo();
-		local landmass = LT:GetContinent(zone);
+		local mapId,_ = FishingBuddy.GetCurrentMapIdInfo();
+		local landmass = GetCurrentMapContinent();
 		-- Are we on the right continent?
 		if ( landmass == CurrentContest.continent ) then
 			-- if not zone limited, we're there
-			if ( not CurrentContest.zones ) then
+			if ( not CurrentContest.mapIds ) then
 				return true;
 			else
 				-- otherwise, see if we're in the right zone
-				for _,conzone in ipairs(CurrentContest.zones) do
-					if ( conzone == zone) then
+				for _,map in ipairs(CurrentContest.mapIds) do
+					if ( map == mapId) then
 						return true;
 					end
 				end
@@ -164,7 +164,13 @@ local function IsTime(activate)
 	local startHour = 14; -- default to 14 regardless of player time zone
 
 	-- Loop through all CalendarEvents for the currentDay
-	for idx=1, CalendarGetNumDayEvents(currentMonthOffset, currentDay) do
+	local numDayEvents
+	if C_Calendar.GetNumDayEvents then
+		numDayEvents = C_Calendar.GetNumDayEvents(currentMonthOffset, currentDay)
+	else
+		numDayEvents = CalendarGetNumDayEvents(currentMonthOffset, currentDay)
+	end
+	for idx=1,numDayEvents  do
 		-- Can't use eventTitle as it is localized, but eventTexture does not appear to be localized.
 		local eventTexture;
 		local eventTitle, eh, _, calendarType, _, eventType, eventTexture, _, inviteStatus = CalendarGetDayEvent(currentMonthOffset, currentDay, idx);

@@ -12,7 +12,7 @@ PawnCommon = {
 	["Digits"] = 1,
 	["ShowSocketingAdvisor"] = true,
 	["ShowSpecIcons"] = true,
-	["LastVersion"] = 2.0218,
+	["LastVersion"] = 2.0219,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
@@ -172,7 +172,7 @@ PawnCommon = {
 			["UnenchantedColor"] = "6566b2",
 		},
 		["\"MrRobot\":ROGUE2"] = {
-			["IconTexturePath"] = 135340,
+			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
 				["Malivant-Dalaran"] = {
 					["Visible"] = true,

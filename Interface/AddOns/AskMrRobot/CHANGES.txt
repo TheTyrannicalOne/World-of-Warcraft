@@ -1,7 +1,7 @@
-changeset:   122:f1da233629be
-tag:         v57
+changeset:   127:65c285394049
+tag:         v59
 user:        yellowfive
-date:        Mon Feb 12 19:33:34 2018 -0800
-summary:     Added portuguese translation. Turned off team optimizer for now.
+date:        Tue Jul 17 16:32:12 2018 -0700
+summary:     Fixed an issue with reading bank data.
 
 

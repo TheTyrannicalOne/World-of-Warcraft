@@ -1,46 +1,64 @@
-tag 565f4ba13e15e8054e25e701dd34f4066f06f9d3 7.3.5.17
+tag 55e71bd1ff3a5808368b69b086dfe55b9a5daf73 8.0.1.1
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Sun Jul 8 07:20:48 2018 -0500
+Date:	Tue Jul 17 14:15:11 2018 -0500
 
-commit 103717f079ba279c335f02bfc3dbc81a39df6f8c
+commit a942e55cc1267a619a805df30c11b5c64e24d6e5
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 8 07:15:33 2018 -0500
+Date:   Tue Jul 17 14:14:09 2018 -0500
 
-    Fix addition of custom NPC entries, and don't try to show these in the tooltip.
+    Update URLs for .pkgmeta externals.
 
-commit e0c72ecd3bb056022eb0e3b36905e33833208e37
+commit 58b5464ad9b207987b4b07b38c2667329fb8bc2e
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 8 07:14:47 2018 -0500
+Date:   Tue Jul 17 12:07:36 2018 -0500
 
-    Fix NPC reference when looking up achievement data in the target button.
+    Convert previous WORLD_MAP_UPDATE code to use VIGNETTES_UPDATED with similar code to that of minimap vignettes.
 
-commit 21114e130f4a716c1de0c94f6eb94fff9d79d89c
+commit c950bc38a4da163827288e7d5fad7f0a89169c53
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 8 06:15:40 2018 -0500
+Date:   Tue Jul 17 03:41:05 2018 -0500
 
-    Modify IsNPCQuestComplete to use the NPC object instead of its ID to obviate the need to check for existence within the function.
+    Disable WORLD_MAP_UPDATE code pending further investigation on a replacement - was only ever used for the four Hellbane achievement NPCs, so if this isn't possible in WoW 8.x... whatever.
 
-commit 64286e1e2b7f68dff86056fcdd36d57ca3efef1d
+commit 16e12db320fe81f9902d801c7519dc07d866ec1d
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 8 06:14:26 2018 -0500
+Date:   Tue Jul 17 03:30:14 2018 -0500
 
-    Add tracking for the 'Praise the Sun!' achievement, and manually add Nalak as criteria.
+    Use CombatLogGetCurrentEventInfo to get proper data from the CLEU event.
 
-commit ba8d8aa19c22645afd1cb9e8bfe20f2c6b839feb
+commit 82f567c2f8c2100a044b28f63b055dad7250ffaa
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 8 06:13:24 2018 -0500
+Date:   Tue Jul 17 02:35:01 2018 -0500
 
-    Add support for adding an NPC to an achievement despite its criteria, since Blizzard isn't super consistent with how they track things.
+    Update ToC Interface to 80000.
 
-commit 09705e154ecb6682e178e2eeca2de997a83f2a2f
+commit a85ca8c5cce7c85b15ae5f92318454640482fa02
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 8 06:09:18 2018 -0500
+Date:   Tue Jul 17 02:34:39 2018 -0500
 
-    Add tracking quest for Nalak.
+    Update vignette processing for new APIs.
 
-commit 1bb64f4882182226163ab29df756ade31b975ab1
+commit e7fa50f0f096dad4bf19e8645f93fb5e15103f26
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Jul 8 06:08:40 2018 -0500
+Date:   Tue Jul 17 02:31:49 2018 -0500
 
-    Re-add removed ID for Cranegnasher - it's the one used for the achievement.
+    Update all Map IDs to their WoW 8.x versions, using Enum values rather than magic numbers, and update API/library calls as appropriate.
+
+commit 2d342b23eff6b63021175663bb0030908e8e7aa4
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Tue Jul 17 02:00:02 2018 -0500
+
+    Split achievement data out of Data/_Main.lua into Data/Achievements.lua
+
+commit cf182490998f3931487e0a30dc85bb78b5ecc1d4
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 15 18:55:06 2018 -0500
+
+    Fix entry for Son of Galleon's Saddle.
+
+commit 9136e4e79dd72c13b3c85c3269cea2b0ff26882f
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Jul 15 18:54:22 2018 -0500
+
+    Add tracking quest to Ataxon.
 

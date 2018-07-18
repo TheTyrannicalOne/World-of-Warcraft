@@ -164,7 +164,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"MrRobot\":ROGUE2"] = {
-			["IconTexturePath"] = 135340,
+			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
 				["Panboozled-Runetotem"] = {
 					["Visible"] = true,
@@ -683,6 +683,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0218,
+	["LastVersion"] = 2.0219,
 	["Digits"] = 1,
 }

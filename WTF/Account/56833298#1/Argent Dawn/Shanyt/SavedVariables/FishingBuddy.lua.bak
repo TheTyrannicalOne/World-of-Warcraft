@@ -17,7 +17,7 @@ FishingBuddy_Player = {
 		["DrownedMana"] = true,
 		["LastResort"] = true,
 		["MountedCast"] = true,
-		["TotalTimeFishing"] = 8695.7789999999,
+		["TotalTimeFishing"] = 9397.15199999991,
 		["EasyCastKeys"] = 1,
 		["EnhanceFishingSounds"] = true,
 		["AutoLoot"] = true,
@@ -42,5 +42,5 @@ FishingBuddy_Player = {
 		["point"] = "TOP",
 		["scale"] = 1,
 	},
-	["Version"] = 18000,
+	["Version"] = 18001,
 }

@@ -1,5 +1,8 @@
-﻿Version 1.8.4.9
-- Update fishing library (so outfit display does trasmog)
+﻿Version 1.9
+- Minimally updated for BfA
+
+Version 1.8.4.9
+- Update fishing library (so outfit display does transmog)
 
 Version 1.8.4.8
 - Fix Curse bug #323 (watcher drag issue)

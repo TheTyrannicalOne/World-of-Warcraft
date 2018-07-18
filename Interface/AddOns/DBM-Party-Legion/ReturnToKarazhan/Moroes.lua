@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1837, "DBM-Party-Legion", 11, 860)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision(("$Revision: 17606 $"):sub(12, -3))
+mod:SetRevision(("$Revision: 17623 $"):sub(12, -3))
 mod:SetCreatureID(114312)
 mod:SetEncounterID(1961)
 mod:SetZone()
@@ -67,7 +67,7 @@ do
 		[7] = DBM:GetSpellInfo(3355),--Hunter Freezing Trap
 	}
 	local lines = {}
-	local UnitDebuff, floor = UnitDebuff, math.floor
+	local floor = math.floor
 	updateInfoFrame = function()
 		table.wipe(lines)
 		for i = 1, 5 do
