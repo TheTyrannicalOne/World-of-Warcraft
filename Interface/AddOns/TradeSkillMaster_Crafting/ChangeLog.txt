@@ -1,3 +1,6 @@
+v3.2.8
+*Fixed another bug from 8.0.
+
 v3.2.7
 *Fixed some bugs from 8.0.
 

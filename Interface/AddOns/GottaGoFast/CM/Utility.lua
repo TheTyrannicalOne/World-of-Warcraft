@@ -152,8 +152,49 @@ function GottaGoFast.InitCM(currentZoneID)
   GottaGoFast.Utility.DebugPrint("Showing Frames");
 end
 
+function GottaGoFast.HandleSpy(mobID)
+  if (GottaGoFast.GetSpyHelper(nil)) then
+    if (GossipTitleButton1:IsVisible()) then
+      GossipTitleButton1:Click();
+    elseif (GossipGreetingText ~= nil) then
+      local text = GossipGreetingText:GetText();
+      local short = "";
+      if (courtText[text] ~= nil) then
+        short = " [" .. courtText[text] .. "]";
+      end
+      SendChatMessage("GGF" .. short .. ": " .. text, "PARTY");
+    end
+  end
+end
+
+function GottaGoFast.HandleGossip()
+  local mobID = GottaGoFast.UnitID(UnitGUID("target"));
+  if (GottaGoFast.GetAutoDialog(nil) and GossipTitleButton1:IsVisible() and autoExceptionList[mobID] == nil) then
+    GossipTitleButton1:Click();
+  end
+  if (GottaGoFast.CurrentCM["ZoneID"] == 1571 and mobID == 107486) then
+    GottaGoFast.HandleSpy(mobID);
+  end
+end
+
+-- Mob Point Utilities
+
 function GottaGoFast.MobPointsToInteger(mobPoints)
   return tonumber(utility.ShortenStr(mobPoints, 1));
+end
+
+function GottaGoFast.IsAlternate(cmID, mapID)
+  -- isAlternate is for upper kara, or the horde version of siege of boralus
+  local isAlternate = cmID == 234;
+  if (not isAlternate and mapID == 1822) then
+    isAlternate = ggf.PlayerIsHorde();
+  end
+
+  return isAlternate;
+end
+
+function GottaGoFast.PlayerIsHorde()
+  return UnitFactionGroup("player") == "Horde"
 end
 
 function GottaGoFast.HasTeeming(affixes)
@@ -184,31 +225,6 @@ function GottaGoFast.UnitID(guid)
   return nil;
 end
 
-function GottaGoFast.HandleSpy(mobID)
-  if (GottaGoFast.GetSpyHelper(nil)) then
-    if (GossipTitleButton1:IsVisible()) then
-      GossipTitleButton1:Click();
-    elseif (GossipGreetingText ~= nil) then
-      local text = GossipGreetingText:GetText();
-      local short = "";
-      if (courtText[text] ~= nil) then
-        short = " [" .. courtText[text] .. "]";
-      end
-      SendChatMessage("GGF" .. short .. ": " .. text, "PARTY");
-    end
-  end
-end
-
-function GottaGoFast.HandleGossip()
-  local mobID = GottaGoFast.UnitID(UnitGUID("target"));
-  if (GottaGoFast.GetAutoDialog(nil) and GossipTitleButton1:IsVisible() and autoExceptionList[mobID] == nil) then
-    GossipTitleButton1:Click();
-  end
-  if (GottaGoFast.CurrentCM["ZoneID"] == 1571 and mobID == 107486) then
-    GottaGoFast.HandleSpy(mobID);
-  end
-end
-
 -- Checks Nil And Gathers Data
 -- Mob Percentage Is Expected 10x Too High
 -- I.E 7% = 7 instead of .7
@@ -228,4 +244,27 @@ end
 -- Expecting 2 Numbers, Non Nil
 function GottaGoFast.CalculateIndividualMobPoints(mobPercentage, totalMobPoints)
   return mobPercentage * totalMobPoints;
+end
+
+function GottaGoFast.AddMobPointsToTooltip()
+  local npcID = GottaGoFast.MouseoverUnitID();
+  local mapID = ggf.CurrentCM["ZoneID"];
+  local cmID = ggf.CurrentCM["CmID"]
+  local isTeeming = ggf.HasTeeming(ggf.CurrentCM["Affixes"]);
+  if (npcID ~= nil and mapID ~= nil and isTeeming ~= nil) then
+    local isAlternate = GottaGoFast.IsAlternate(cmID, mapID);
+    local weight = ggf.LOP:GetNPCWeightByMap(mapID, npcID, isTeeming, isAlternate);
+    if (weight ~= nil) then
+      local appendString = string.format(" (%.2f%%)", weight);
+
+      -- Give Point Estimate
+      if (GottaGoFast.GetMobPoints(nil)) then
+        local mobPoints = ggf.CalculateIndividualMobPointsWrapper(weight)
+        if (mobPoints ~= nil) then
+          appendString = appendString .. string.format(" [%.2f]", mobPoints)
+        end
+      end
+      GameTooltip:AppendText(appendString);
+    end
+  end
 end

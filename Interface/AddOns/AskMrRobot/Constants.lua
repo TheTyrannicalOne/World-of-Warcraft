@@ -24,6 +24,7 @@ Amr.IsSupportedInstance = Amr.Serializer.IsSupportedInstance
 Amr.GetItemTooltip = Amr.Serializer.GetItemTooltip
 Amr.GetItemLevel = Amr.Serializer.GetItemLevel
 Amr.GetItemUniqueId = Amr.Serializer.GetItemUniqueId
+Amr.ReadAzeritePowers = Amr.Serializer.ReadAzeritePowers
 
 -- map of slot ID to display text
 Amr.SlotDisplayText = {

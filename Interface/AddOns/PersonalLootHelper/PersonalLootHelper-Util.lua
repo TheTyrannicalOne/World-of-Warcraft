@@ -146,7 +146,7 @@ function PLH_SendUserMessage(message)
 end	
 
 function PLH_SendDebugMessage(message)
-	if PLH_PREFS[PLH_DEBUG] then
+	if PLH_PREFS[PLH_PREFS_DEBUG] then
 		print(GetColoredMessage('<PLH>', _G.YELLOW_FONT_COLOR_CODE) .. GetColoredMessage(message, _G.GRAY_FONT_COLOR_CODE))
 	end		
 end	
@@ -154,7 +154,7 @@ end
 -- Returns the message that would be whispered when player requests an item
 function PLH_GetWhisperMessage(itemLink, message)
 	if message == nil then
-		message = PLH_PREFS[PLH_WHISPER_MESSAGE]
+		message = PLH_PREFS[PLH_PREFS_WHISPER_MESSAGE]
 	end
 	return message:gsub('%%item', itemLink)
 end

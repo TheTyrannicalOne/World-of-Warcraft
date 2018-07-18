@@ -675,7 +675,7 @@ end
 
 function private:UpdateCraftTimeText()
 	if not TradeSkill:GetVisibilityInfo().professionsTab then return end
-	local startTime, endTime, isTradeSkill = select(5, UnitCastingInfo("player"))
+	local startTime, endTime, isTradeSkill = select(4, UnitCastingInfo("player"))
 	if isTradeSkill then
 		local timePerCraft = endTime - startTime
 		endTime = endTime + (timePerCraft * (C_TradeSkillUI.GetRecipeRepeatCount() - 1))

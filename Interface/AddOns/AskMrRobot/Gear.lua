@@ -84,7 +84,7 @@ local function findMatchingItemFromTable(item, list, bestItem, bestDiff, bestLoc
 	if not list then return nil end
 	
 	local found = false
-	for k,listItem in pairs(list) do
+	for k,listItem in pairs(list) do		
 		if listItem then
 			local diff = countItemDifferences(item, listItem)
 			if diff < bestDiff then
@@ -112,9 +112,7 @@ function Amr:FindMatchingItem(item, player, usedItems)
 	local bestItem, bestDiff, bestLoc = findMatchingItemFromTable(item, equipped, nil, 10000, nil, usedItems, "equip")
 	bestItem, bestDiff, bestLoc = findMatchingItemFromTable(item, player.BagItems, bestItem, bestDiff, bestLoc, usedItems, "bag")
 	if player.BankItems then
-		for bagId,bagList in pairs(player.BankItems) do
-			bestItem, bestDiff, bestLoc = findMatchingItemFromTable(item, bagList, bestItem, bestDiff, bestLoc, usedItems, "bank" .. bagId)
-		end
+		bestItem, bestDiff, bestLoc = findMatchingItemFromTable(item, player.BankItems, bestItem, bestDiff, bestLoc, usedItems, "bank")		
 	end	
 
 	if bestDiff >= 10000 then
@@ -592,6 +590,8 @@ local function findCurrentGearOpItem()
 		bestItem, bestDiff, bestLink = scanBagForItem(item, bagId, bestItem, bestDiff, bestLink)
 	end
 
+	-- with new approach, the item to use should never be equipped, should be in bags at this point
+	--[[
 	-- equipped items, but skip slots we have just equipped (to avoid e.g. just moving 2 of the same item back and forth between mh oh weapon slots)
 	for slotNum = 1, #Amr.SlotIds do
 		local slotId = Amr.SlotIds[slotNum]
@@ -610,7 +610,8 @@ local function findCurrentGearOpItem()
 			end
 		end
 	end
-	
+	]]
+
 	-- bank
 	if bestDiff > 0 then
 		bestItem, bestDiff, bestLink = scanBagForItem(item, BANK_CONTAINER, bestItem, bestDiff, bestLink)
@@ -753,6 +754,8 @@ function processCurrentGearOp()
 			disposeGearOp()
 
 		else
+
+			--print("equipping " .. bestLink .. " in slot " .. _currentGearOp.nextSlot)
 
 			-- an item in the player's bags or already equipped, equip it
 			if bestItem.bag then
@@ -897,6 +900,12 @@ local function shuffle(tbl)
 	return tbl
 end
 
+local _ohFirst = {
+    [20] = true, -- PaladinProtection
+    [32] = true, -- WarlockDemonology
+    [36] = true -- WarriorProtection
+}
+
 function beginEquipGearSet(spec, passes)
 
 	local gear = Amr.db.char.GearSets[spec]
@@ -907,17 +916,20 @@ function beginEquipGearSet(spec, passes)
 
 	-- ensure all our stored data is up to date
 	local player = Amr:ExportCharacter()
+	local doOhFirst = _ohFirst[player.Specs[spec]]
 
 	local itemsToEquip = {
 		legendaries = {},
 		weapons = {},
+		mh = {},
+		oh = {},
 		rings = {},
 		trinkets = {},
 		others = {},
 		blanks = {}
 	}
 	local remaining = 0
-	local usedItems = {}	
+	local usedItems = {}
 
 	-- check for items that need to be equipped, do in a random order to try and defeat any unique constraint issues we might hit
 	local slots = {}
@@ -930,8 +942,10 @@ function beginEquipGearSet(spec, passes)
 
 		-- we do stuff in batches that avoids most unique conflicts
 		local list = itemsToEquip.others
-		if slotId == 16 or slotId == 17 then
-			list = itemsToEquip.weapons
+		if slotId == 16 then
+			list = itemsToEquip.mh
+		elseif slotId == 17 then
+			list = itemsToEquip.oh
 		elseif slotId == 11 or slotId == 12 then
 			list = itemsToEquip.rings
 		elseif slotId == 13 or slotId == 14 then
@@ -948,10 +962,19 @@ function beginEquipGearSet(spec, passes)
 			if quality == 6 then
 				if not old or new.id ~= old.id then
 					list[slotId] = new
+					if list == itemsToEquip.mh or list == itemsToEquip.oh then
+						itemsToEquip.weapons[slotId] = {}
+					end
 					remaining = remaining + 1
 				end
-			else				
+			else
+				-- find the best matching item anywhere in the player's gear
+				local bestItem, bestDiff = Amr:FindMatchingItem(new, player, usedItems)
+				new = bestItem
+
 				local diff = countItemDifferences(old, new)
+
+				--[[
 				if diff > 0 and diff < 1000 then
 					-- same item, see if inventory has one that is closer (e.g. a duplicate item with correct enchants/gems)
 					local bestItem, bestDiff = Amr:FindMatchingItem(new, player, usedItems)
@@ -960,13 +983,17 @@ function beginEquipGearSet(spec, passes)
 						diff = bestDiff
 					end
 				end
+				]]
 
-				if diff > 0 then
+				if diff > 0 then	
 					list[slotId] = new
+					if list == itemsToEquip.mh or list == itemsToEquip.oh then
+						itemsToEquip.weapons[slotId] = {}
+					end
 					remaining = remaining + 1
 				end
 			end
-		else
+		elseif old then
 			-- need to remove this item
 			itemsToEquip.blanks[slotId] = {}
 			remaining = remaining + 1
@@ -988,14 +1015,21 @@ function beginEquipGearSet(spec, passes)
 		if passes < 5 then
 			_pendingGearOps = {}
 
-			if not Amr.IsEmpty(itemsToEquip.blanks) then
+			if not Amr.IsEmpty(itemsToEquip.blanks) then				
 				-- if gear set wants slots to be blank, do that first
 				table.insert(_pendingGearOps, { items = itemsToEquip.blanks, remove = true, label = "blanks" }) 
-			end
+			end			
 			if not Amr.IsEmpty(itemsToEquip.weapons) then
-				-- change weapons first: remove both, wait, then equip new ones
-				table.insert(_pendingGearOps, { items = itemsToEquip.weapons, remove = true, label = "remove weapons" })				
-				table.insert(_pendingGearOps, { items = itemsToEquip.weapons, wait = true, label = "equip weapons" })
+				-- change weapons first: remove both, wait, then equip each weapon one by one, waiting after each
+				table.insert(_pendingGearOps, { items = itemsToEquip.weapons, remove = true, label = "remove weapons" })
+				local thisWeapon = doOhFirst and itemsToEquip.oh or itemsToEquip.mh
+				if not Amr.IsEmpty(thisWeapon) then
+					table.insert(_pendingGearOps, { items = thisWeapon, wait = true, label = "equip weapon 1" })
+				end
+				thisWeapon = doOhFirst and itemsToEquip.mh or itemsToEquip.oh
+				if not Amr.IsEmpty(thisWeapon) then
+					table.insert(_pendingGearOps, { items = thisWeapon, wait = true, label = "equip weapon 2" })
+				end
 			end
 			if not Amr.IsEmpty(itemsToEquip.legendaries) then 
 				-- remove any legendaries, wait
@@ -1041,13 +1075,15 @@ local function onActiveTalentGroupChanged()
 
 	local auto = Amr.db.profile.options.autoGear
 	local currentSpec = GetSpecialization()
-	
-	if currentSpec == _waitingForSpec or auto then
-		-- spec is what we want, now equip the gear
-		beginEquipGearSet(currentSpec, 0)
-	end
-	
+	local waitingSpec = _waitingForSpec
 	_waitingForSpec = 0
+	
+	if currentSpec == waitingSpec or auto then
+		-- spec is what we want, now equip the gear but after a short delay because the game auto-swaps artifact weapons
+		Amr.Wait(2, function()
+			beginEquipGearSet(GetSpecialization(), 0)
+		end)
+	end
 end
 
 -- activate the specified spec and then equip the saved gear set
@@ -1069,13 +1105,13 @@ function Amr:EquipGearSet(spec)
 		return
 	end
 	
-	_waitingForSpec = spec
-	
 	local currentSpec = GetSpecialization()
 	if currentSpec ~= spec then
+		_waitingForSpec = spec
 		SetSpecialization(spec)
 	else
-		onActiveTalentGroupChanged()
+		-- spec is what we want, now equip the gear
+		beginEquipGearSet(currentSpec, 0)
 	end
 end
 

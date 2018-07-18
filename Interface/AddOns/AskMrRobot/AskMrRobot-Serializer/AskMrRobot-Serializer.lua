@@ -1,6 +1,6 @@
 -- AskMrRobot-Serializer will serialize and communicate character data between users.
 
-local MAJOR, MINOR = "AskMrRobot-Serializer", 59
+local MAJOR, MINOR = "AskMrRobot-Serializer", 60
 local Amr, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not Amr then return end -- already loaded by something else
@@ -228,20 +228,24 @@ function Amr.ParseItemLink(itemLink)
 				item.relicBonusIds[1] = readBonusIdList(parts, 17 + offset, 16 + offset + numBonuses)
 			end
 					
-			offset= offset + numBonuses
+			offset = offset + numBonuses
 			if #parts > 17 + offset then
 				numBonuses = tonumber(parts[17 + offset])
-				if numBonuses > 0 then
-					item.relicBonusIds[2] = readBonusIdList(parts, 18 + offset, 17 + offset + numBonuses)
-				end
-
-				offset= offset + numBonuses
-				if #parts > 18 + offset then
-					numBonuses = tonumber(parts[18 + offset])
+				if numBonuses then
 					if numBonuses > 0 then
-						item.relicBonusIds[3] = readBonusIdList(parts, 19 + offset, 18 + offset + numBonuses)
-					end	
-				end		
+						item.relicBonusIds[2] = readBonusIdList(parts, 18 + offset, 17 + offset + numBonuses)
+					end
+
+					offset= offset + numBonuses
+					if #parts > 18 + offset then
+						numBonuses = tonumber(parts[18 + offset])
+						if numBonuses then
+							if numBonuses > 0 then
+								item.relicBonusIds[3] = readBonusIdList(parts, 19 + offset, 18 + offset + numBonuses)
+							end	
+						end
+					end
+				end
 			end
 		end
 	end

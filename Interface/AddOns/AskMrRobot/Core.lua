@@ -4,8 +4,6 @@ Amr.Serializer = LibStub("AskMrRobot-Serializer")
 
 Amr.ADDON_NAME = "AskMrRobot"
 
-local VAR_VERSION = 1
-
 -- types of inter-addon messages that we receive, used to parcel them out to the proper handlers
 Amr.MessageTypes = {
 	Version = "_V",
@@ -43,26 +41,24 @@ local _icon = LibStub("LibDBIcon-1.0")
 -- initialize the database
 local function initializeDb()
 
-	local charDefaults = {			
-		FirstUse = true,           -- true if this is first time use, gets cleared after seeing the export help splash window
-		Talents = {},              -- for each spec, selected talents
-		Equipped = {},             -- for each spec, slot id to item info
-		BagItems = {},             -- list of item info for bags
-		BankItems = {},            -- list of item info for bank
-		BagItemsAndCounts = {},    -- used mainly for the shopping list
-		BankItemsAndCounts = {},   -- used mainly for the shopping list			
-		GearSets = {},             -- imported gear sets
-		ExtraEnchantData = {},     -- enchant id to enchant display information and material information
-		Logging = {                -- character logging settings
-			Enabled = false,       -- whether logging is currently on or not
-			LastZone = nil,        -- last zone the player was in
-			LastDiff = nil,        -- last difficulty for the last zone the player was in
-			LastWipe = nil         -- last time a wipe was called by this player
-		}
-	}
-
 	local defaults = {
-		char = charDefaults,
+		char = {			
+			FirstUse = true,           -- true if this is first time use, gets cleared after seeing the export help splash window
+			Talents = {},              -- for each spec, selected talents
+			Equipped = {},             -- for each spec, slot id to item info
+			BagItems = {},             -- list of item info for bags
+			BankItems = {},            -- list of item info for bank
+			BagItemsAndCounts = {},    -- used mainly for the shopping list
+			BankItemsAndCounts = {},   -- used mainly for the shopping list			
+			GearSets = {},             -- imported gear sets
+			ExtraEnchantData = {},     -- enchant id to enchant display information and material information
+			Logging = {                -- character logging settings
+				Enabled = false,       -- whether logging is currently on or not
+				LastZone = nil,        -- last zone the player was in
+				LastDiff = nil,        -- last difficulty for the last zone the player was in
+				LastWipe = nil         -- last time a wipe was called by this player
+			}
+		},
 		profile = {
 			minimap = {                -- minimap hide/show and position settings
 				hide = false
@@ -92,11 +88,6 @@ local function initializeDb()
 	
 	Amr.db = LibStub("AceDB-3.0"):New("AskMrRobotDb4", defaults)
 	
-	-- make sure character data is on current version
-	if not Amr.db.char.VarVersion or Amr.db.char.VarVersion ~= VAR_VERSION then
-		Amr.db.char = charDefaults
-	end
-
 	-- set defaults for auto logging; if a new zone is added and some other stuff was turned on, turn on the new zone too
 	local hasSomeLogging = false
 	local addedLogging = {}

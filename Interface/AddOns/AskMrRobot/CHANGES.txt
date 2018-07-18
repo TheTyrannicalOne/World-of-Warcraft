@@ -1,7 +1,7 @@
-changeset:   127:65c285394049
-tag:         v59
+changeset:   129:d9a059484b22
+tag:         v60
 user:        yellowfive
-date:        Tue Jul 17 16:32:12 2018 -0700
-summary:     Fixed an issue with reading bank data.
+date:        Wed Jul 18 13:08:22 2018 -0700
+summary:     Several bug fixes for 8.0.
 
 

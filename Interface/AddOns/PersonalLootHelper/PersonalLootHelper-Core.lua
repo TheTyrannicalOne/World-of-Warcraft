@@ -1,6 +1,7 @@
 --[[
 
 TODOs:
+	Possible bug when running with characters who have the same name as each other from different realms...IsPlayer() gets screwy
 	Add BfA trinkets
 	Azerite armor is not tradeable - look for "Active Azerite Powers" string (TOOLTIP_AZERITE_UNLOCK_LEVELS or CURRENTLY_SELECTED_AZERITE_POWERS) in tooltip
 
@@ -34,6 +35,17 @@ Future Enhancement Ideas:
 
 CHANGELOG:
 
+20180718 - 2.03
+	Hopefully fixed bug reported by many players of preferences not saving (config was only setting values in OnShow, not during creation)
+
+20180718 - 2.02
+	Fixed bug in which whisper message was incorrectly showing %item
+	
+20180718 - 2.01
+	Updated to WoW version 8.0
+	Fixed bug reported by many players of preferences not saving (issue was same name used for prior version preferences)
+	Fixed bug reported by pro100tehb re: wrong buttons shown for looted item (I think problem was SHOW_LOOT_TOAST event)
+	
 20180427 - 2.00
 	Updated for Battle for Azeroth - First revision to include a window for trading loot!
 	Removed all relic logic since relics are being removed with BfA
@@ -42,9 +54,6 @@ CHANGELOG:
 	Removed raid frame highlight
 	
 ]]--
-
---TODO remove in 8.x
-local RegisterAddonMessagePrefix, SendAddonMessage = RegisterAddonMessagePrefix or C_ChatInfo.RegisterAddonMessagePrefix, SendAddonMessage or C_ChatInfo.SendAddonMessage
 
 -- Constants to control inspection process
 local DELAY_BETWEEN_INSPECTIONS			= .5	-- in seconds
@@ -645,7 +654,7 @@ local function IsEquippableItemForCharacter(fullItemInfo, characterName)
 			if itemPrimaryAttribute ~= nil then
 				local isValidPrimaryAttribute = false
 				for _, spec in pairs(SPEC_BY_CLASS[characterClass]) do
-					if characterSpec == spec or not PLH_PREFS[PLH_CURRENT_SPEC_ONLY] then
+					if characterSpec == spec or not PLH_PREFS[PLH_PREFS_CURRENT_SPEC_ONLY] then
 						if PRIMARY_ATTRIBUTE_BY_SPEC[spec] == itemPrimaryAttribute then
 							isValidPrimaryAttribute = true
 							break;
@@ -659,7 +668,7 @@ local function IsEquippableItemForCharacter(fullItemInfo, characterName)
 
 			if fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_TRINKET' then
 				for _, spec in pairs(SPEC_BY_CLASS[characterClass]) do
-					if characterSpec == spec or not PLH_PREFS[PLH_CURRENT_SPEC_ONLY] then
+					if characterSpec == spec or not PLH_PREFS[PLH_PREFS_CURRENT_SPEC_ONLY] then
 						if IsTrinketUsable(fullItemInfo[FII_ITEM], ROLE_BY_SPEC[spec]) then
 							return true
 						end
@@ -669,7 +678,7 @@ local function IsEquippableItemForCharacter(fullItemInfo, characterName)
 			else
 				local subClasses		
 				for _, spec in pairs(SPEC_BY_CLASS[characterClass]) do
-					if characterSpec == spec or not PLH_PREFS[PLH_CURRENT_SPEC_ONLY] then
+					if characterSpec == spec or not PLH_PREFS[PLH_PREFS_CURRENT_SPEC_ONLY] then
 						if fullItemInfo[FII_CLASS] == LE_ITEM_CLASS_ARMOR then
 							subClasses = EQUIPPABLE_ARMOR_BY_SPEC[spec]
 						else
@@ -1135,7 +1144,7 @@ local function UpdateLootedItemsDisplay()
 	buttonIndex = 0
 	itemFrameIndex = 0
 
-	if ShouldShowLootedItemsDisplay() or not PLH_PREFS[PLH_AUTO_HIDE] then
+	if ShouldShowLootedItemsDisplay() or not PLH_PREFS[PLH_PREFS_AUTO_HIDE] then
 		ClearLootedItemsDisplay()
 
 		for lootedItemIndex = 1, #lootedItems do
@@ -1309,7 +1318,7 @@ local function UpdateLootedItemsDisplay()
 						CreateButton("PASS", 50, INDENT, verticalOffset, PLH_DoHideItem, lootedItemIndex)
 
 						if IsPLHUser(lootedItem[LOOTER_NAME]) then
---							if IsAnUpgradeForCharacter(lootedItem[FULL_ITEM_INFO], PLH_GetFullName('player'), PLH_PREFS[PLH_ILVL_THRESHOLD]) then
+--							if IsAnUpgradeForCharacter(lootedItem[FULL_ITEM_INFO], PLH_GetFullName('player'), PLH_PREFS[PLH_PREFS_ILVL_THRESHOLD]) then
 								CreateButton("MS", 50, INDENT + 65, verticalOffset, PLH_DoRequestItem, lootedItemIndex, REQUEST_TYPE_MAIN_SPEC)
 								CreateButton("OS", 50, INDENT + 115, verticalOffset, PLH_DoRequestItem, lootedItemIndex, REQUEST_TYPE_OFF_SPEC)
 --							end
@@ -1322,7 +1331,7 @@ local function UpdateLootedItemsDisplay()
 						else
 							local button = CreateButton("WHISPER", 80, INDENT + 65, verticalOffset)
 							button:SetScript('OnClick', function(self)
-								if PLH_PREFS[PLH_WHISPER_MESSAGE] == nil or PLH_PREFS[PLH_WHISPER_MESSAGE] == '' then
+								if PLH_PREFS[PLH_PREFS_WHISPER_MESSAGE] == nil or PLH_PREFS[PLH_PREFS_WHISPER_MESSAGE] == '' then
 									PLH_SendUserMessage("You must configure a personalized whisper message in PLH options [/plh] to whisper requests for loot.")
 								else
 									PLH_DoWhisper(lootedItemIndex)
@@ -1354,7 +1363,7 @@ local function UpdateLootedItemsDisplay()
 		HideOffScreenWidgets()
 
 		lootedItemsFrame:Show()
-	elseif PLH_PREFS[PLH_AUTO_HIDE] then
+	elseif PLH_PREFS[PLH_PREFS_AUTO_HIDE] then
 		lootedItemsFrame:Hide()
 	end
 end
@@ -1494,7 +1503,7 @@ local function CreateLootedItemsDisplay()
 		end
 	end)
 
-	if PLH_PREFS[PLH_AUTO_HIDE] then
+	if PLH_PREFS[PLH_PREFS_AUTO_HIDE] then
 		lootedItemsFrame:Hide()
 	end
 	
@@ -1593,7 +1602,7 @@ end
 
 local function shouldAddLootedItem(fullItemInfo)
 	return IsEquippableItemForCharacter(fullItemInfo, PLH_GetFullName('player')) and
-		((PLH_PREFS[PLH_INCLUDE_XMOG] and fullItemInfo[FII_XMOGGABLE]) or IsAnUpgradeForCharacter(fullItemInfo, PLH_GetFullName('player'), PLH_PREFS[PLH_ILVL_THRESHOLD]))
+		((PLH_PREFS[PLH_PREFS_INCLUDE_XMOG] and fullItemInfo[FII_XMOGGABLE]) or IsAnUpgradeForCharacter(fullItemInfo, PLH_GetFullName('player'), PLH_PREFS[PLH_PREFS_ILVL_THRESHOLD]))
 end
 
 --[[ FUNCTIONS FOR SENDING ADDON MESSAGES TO OTHER PLAYERS ]]
@@ -1623,19 +1632,18 @@ local function PLH_SendAddonMessage(addonTextString, characterName)
 		PLH_SendDebugMessage('Sending AddonMessage: ' .. addonTextString .. ' to ' .. characterName)
 	end
 
-	-- TODO per DBM may need to be C_ChatInfo.SendAddonMessage in 8.x?
 	if IsInGroup() then
 		if characterName ~= nil then
-			SendAddonMessage('PLH', addonTextString, 'WHISPER', Ambiguate(characterName, 'mail'))
+			C_ChatInfo.SendAddonMessage('PLH', addonTextString, 'WHISPER', Ambiguate(characterName, 'mail'))
 		elseif IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
-			SendAddonMessage('PLH', addonTextString, 'INSTANCE_CHAT')
+			C_ChatInfo.SendAddonMessage('PLH', addonTextString, 'INSTANCE_CHAT')
 		elseif IsInRaid() then
-			SendAddonMessage('PLH', addonTextString, 'RAID')  -- TODO per DBM sendSync() comments this may be going away in 8.x?  Test in beta
+			C_ChatInfo.SendAddonMessage('PLH', addonTextString, 'RAID')  -- TODO per DBM sendSync() comments this may be going away in 8.x?  Test in beta
 		else
-			SendAddonMessage('PLH', addonTextString, 'PARTY')
+			C_ChatInfo.SendAddonMessage('PLH', addonTextString, 'PARTY')
 		end
 	else
-		SendAddonMessage('PLH', addonTextString, 'WHISPER', PLH_GetFullName('player'))  -- for testing purpose
+		C_ChatInfo.SendAddonMessage('PLH', addonTextString, 'WHISPER', PLH_GetFullName('player'))  -- for testing purpose
 	end
 end
 
@@ -1812,7 +1820,7 @@ end
 function PLH_DoTradeItem(lootedItemIndex)
 	local lootedItem = lootedItems[lootedItemIndex]
 	lootedItem[STATUS] = STATUS_AVAILABLE
-	if not PLH_PREFS[PLH_SKIP_CONFIRMATION] then
+	if not PLH_PREFS[PLH_PREFS_SKIP_CONFIRMATION] then
 		lootedItem[CONFIRMATION_MESSAGE] = "Thank you! Other PLH users are being told this item is\navailable. If anyone requests the item, PLH will notify you."
 	end
 	UpdateLootedItemsDisplay()
@@ -1842,7 +1850,7 @@ end
 function PLH_DoRequestItem(lootedItemIndex, requestType)
 	local lootedItem = lootedItems[lootedItemIndex]
 	lootedItem[STATUS] = STATUS_REQUESTED
-	if not PLH_PREFS[PLH_SKIP_CONFIRMATION] then
+	if not PLH_PREFS[PLH_PREFS_SKIP_CONFIRMATION] then
 		lootedItem[CONFIRMATION_MESSAGE] = "Your request is being sent to " .. Ambiguate(lootedItem[LOOTER_NAME], 'all') .. ".\nPLH will notify you when they make their decision."
 	end
 	UpdateLootedItemsDisplay()
@@ -1857,7 +1865,7 @@ function PLH_DoWhisper(lootedItemIndex)
 	lootedItem[STATUS] = STATUS_REQUESTED_VIA_WHISPER
 	UpdateLootedItemsDisplay()
 
-	SendChatMessage(PLH_PREFS[PLH_WHISPER_MESSAGE], 'WHISPER', nil, Ambiguate(lootedItem[LOOTER_NAME], 'mail'))
+	SendChatMessage(PLH_GetWhisperMessage(lootedItem[FULL_ITEM_INFO][FII_ITEM]), 'WHISPER', nil, Ambiguate(lootedItem[LOOTER_NAME], 'mail'))
 end
 
 --[[ FUNCTIONS FOR TAKING ACTION WHEN ITEMS ARE LOOTED ]]--
@@ -1869,7 +1877,7 @@ end
 local function ShouldBeEvaluated(fullItemInfo)
 	return fullItemInfo[FII_IS_EQUIPPABLE]
 		and (fullItemInfo[FII_QUALITY] == LE_ITEM_QUALITY_RARE or fullItemInfo[FII_QUALITY] == LE_ITEM_QUALITY_EPIC)
-		and (fullItemInfo[FII_BIND_TYPE] == LE_ITEM_BIND_ON_ACQUIRE or (fullItemInfo[FII_BIND_TYPE] == LE_ITEM_BIND_ON_EQUIP and not PLH_PREFS[PLH_NEVER_OFFER_BOE]))
+		and (fullItemInfo[FII_BIND_TYPE] == LE_ITEM_BIND_ON_ACQUIRE or (fullItemInfo[FII_BIND_TYPE] == LE_ITEM_BIND_ON_EQUIP and not PLH_PREFS[PLH_PREFS_NEVER_OFFER_BOE]))
 end		
 
 -- Checks whether or not the loot items should be added to the lootedItems array; adds item if it meets the criteria
@@ -1880,7 +1888,7 @@ local function PerformNotify(fullItemInfo, looterName)
 --				local isTradeable = fullItemInfo[FII_TRADE_TIME_WARNING_SHOWN] or not IsAnUpgradeForCharacter(fullItemInfo, looterName)
 				local isTradeable = not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0)
 				if isTradeable then
-					if not PLH_PREFS[PLH_ONLY_OFFER_IF_UPGRADE] or IsAnUpgradeForAnyCharacter(fullItemInfo) then
+					if not PLH_PREFS[PLH_PREFS_ONLY_OFFER_IF_UPGRADE] or IsAnUpgradeForAnyCharacter(fullItemInfo) then
 						AddLootedItem(fullItemInfo, looterName)
 						UpdateLootedItemsDisplay()
 					end
@@ -2170,7 +2178,7 @@ local function Enable()
 	priorCacheRefreshTime = 0
 	groupInfoCache = {}
 	eventHandlerFrame:RegisterEvent('CHAT_MSG_LOOT')
-	eventHandlerFrame:RegisterEvent('SHOW_LOOT_TOAST')
+--	eventHandlerFrame:RegisterEvent('SHOW_LOOT_TOAST')
 	eventHandlerFrame:RegisterEvent('CHAT_MSG_ADDON')
 	eventHandlerFrame:RegisterEvent('INSPECT_READY')
 	eventHandlerFrame:RegisterEvent('PLAYER_REGEN_DISABLED')   -- player entered combat
@@ -2258,7 +2266,7 @@ local function AddonLoadedEvent(self, event, addonName, ...)
 			enableOrDisableEventFrame:RegisterEvent('PLAYER_ENTERING_WORLD')
 		end
 		
-		RegisterAddonMessagePrefix('PLH')	-- TODO per DBM comments, this may need to be C_ChatInfo.RegisterAddonMessagePrefix in 8.x?
+		C_ChatInfo.RegisterAddonMessagePrefix('PLH')
 
 		CreateLootedItemsDisplay()
 		PLH_CreateOptionsPanel()		
@@ -2268,7 +2276,8 @@ end
 local function ProcessEvent(self, event, ...)
 	if event == 'ADDON_LOADED' then
 		AddonLoadedEvent(self, event, ...)
-	elseif event == 'CHAT_MSG_LOOT' or event == 'SHOW_LOOT_TOAST' then
+--	elseif event == 'CHAT_MSG_LOOT' or event == 'SHOW_LOOT_TOAST' then
+	elseif event == 'CHAT_MSG_LOOT' then
 		LootReceivedEvent(self, event, ...)
 	elseif event == 'CHAT_MSG_ADDON' then
 		AddonMessageReceivedEvent(self, event, ...)
@@ -2304,7 +2313,7 @@ function SlashCmdList.PLHCommand(msg)
 		if itemInfo ~= nil then
 			local lootedItemIndex = AddLootedItem(GetFullItemInfo(itemLink), PLH_GetFullName('player'))
 			PLH_DoTradeItem(lootedItemIndex)
-			if PLH_PREFS[PLH_SKIP_CONFIRMATION] then  -- show confirmation as chat since they won't see it in window
+			if PLH_PREFS[PLH_PREFS_SKIP_CONFIRMATION] then  -- show confirmation as chat since they won't see it in window
 				PLH_SendUserMessage("Thank you! Other PLH users have been notified that " .. itemLink .. " is available.")
 			end
 		else
@@ -2333,7 +2342,7 @@ Debug/Testing functions
 
 -- pass in a non-character name (ex: 'test') to show counts for each member
 function PLH_PrintCache(characterName)
-	if PLH_PREFS[PLH_DEBUG] then
+	if PLH_PREFS[PLH_PREFS_DEBUG] then
 		local num_characters = 0
 		local item_msg = ''
 		for name, characterDetails in pairs(groupInfoCache) do
@@ -2361,7 +2370,7 @@ end
 
 function PLH_PrintLootedItems()
 	local requestor
-	if PLH_PREFS[PLH_DEBUG] then
+	if PLH_PREFS[PLH_PREFS_DEBUG] then
 		for lootedItemIndex = 1, #lootedItems do
 			PLH_SendDebugMessage(lootedItems[lootedItemIndex][LOOTER_NAME] .. ' looted ' .. lootedItems[lootedItemIndex][FULL_ITEM_INFO][FII_ITEM])
 			PLH_SendDebugMessage('   ' .. lootedItems[lootedItemIndex][STATUS] .. ' Req = ' .. lootedItems[lootedItemIndex][SELECTED_REQUESTOR_INDEX] .. ', Def = ' .. lootedItems[lootedItemIndex][DEFAULT_REQUESTOR_INDEX])
@@ -2378,11 +2387,11 @@ function PLH_PrintLootedItems()
 end
 
 function PLH_EnableDebug()
-	PLH_PREFS[PLH_DEBUG] = true
+	PLH_PREFS[PLH_PREFS_DEBUG] = true
 end
 
 function PLH_DisableDebug()
-	PLH_PREFS[PLH_DEBUG] = false
+	PLH_PREFS[PLH_PREFS_DEBUG] = false
 end
 
 function PLH_RefreshCache()

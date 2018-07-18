@@ -26,17 +26,19 @@ function PLH_CreateOptionsPanel()
 	displayLabel:SetPoint('TOPLEFT', titleLabel, 'BOTTOMLEFT', 0, -20)
 	displayLabel:SetText("Display options")
 	
-	--[[ PLH_AUTO_HIDE ]]--
+	--[[ PLH_PREFS_AUTO_HIDE ]]--
 	local autoHideCheckbox = CreateFrame('CheckButton', nil, configFrame, 'InterfaceOptionsCheckButtonTemplate')
 	autoHideCheckbox:SetPoint('TOPLEFT', displayLabel, 'BOTTOMLEFT', 20, -5)
+	autoHideCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_AUTO_HIDE])
 
 	local autoHideLabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	autoHideLabel:SetPoint('LEFT', autoHideCheckbox, 'RIGHT', 0, 0)
 	autoHideLabel:SetText("Automatically hide PLH when there is no loot to trade")
 
-	--[[ PLH_SKIP_CONFIRMATION ]]--
+	--[[ PLH_PREFS_SKIP_CONFIRMATION ]]--
 	local skipConfirmationCheckbox = CreateFrame('CheckButton', nil, configFrame, 'InterfaceOptionsCheckButtonTemplate')
 	skipConfirmationCheckbox:SetPoint('TOPLEFT', autoHideCheckbox, 'BOTTOMLEFT', 0, -5)
+	skipConfirmationCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_SKIP_CONFIRMATION])
 
 	local skipConfirmationLabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	skipConfirmationLabel:SetPoint('LEFT', skipConfirmationCheckbox, 'RIGHT', 0, 0)
@@ -47,17 +49,19 @@ function PLH_CreateOptionsPanel()
 	looterLabel:SetPoint('TOPLEFT', skipConfirmationCheckbox, 'BOTTOMLEFT', -20, -15)
 	looterLabel:SetText("When I receive tradeable loot...")
 	
-	--[[ PLH_ONLY_OFFER_IF_UPGRADE ]]
+	--[[ PLH_PREFS_ONLY_OFFER_IF_UPGRADE ]]
 	local onlyOfferIfUpgradeCheckbox = CreateFrame('CheckButton', nil, configFrame, 'InterfaceOptionsCheckButtonTemplate')
 	onlyOfferIfUpgradeCheckbox:SetPoint('TOPLEFT', looterLabel, 'BOTTOMLEFT', 20, -5)
+	onlyOfferIfUpgradeCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_ONLY_OFFER_IF_UPGRADE])
 
 	local onlyOfferIfUpgradeLabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	onlyOfferIfUpgradeLabel:SetPoint('LEFT', onlyOfferIfUpgradeCheckbox, 'RIGHT', 0, 0)
 	onlyOfferIfUpgradeLabel:SetText("Only prompt me to trade if loot is an ilvl upgrade for other players")
 
-	--[[ PLH_NEVER_OFFER_BOE ]]--
+	--[[ PLH_PREFS_NEVER_OFFER_BOE ]]--
 	local neverOfferBOECheckbox = CreateFrame('CheckButton', nil, configFrame, 'InterfaceOptionsCheckButtonTemplate')
 	neverOfferBOECheckbox:SetPoint('TOPLEFT', onlyOfferIfUpgradeCheckbox, 'BOTTOMLEFT', 0, -5)
+	neverOfferBOECheckbox:SetChecked(PLH_PREFS[PLH_PREFS_NEVER_OFFER_BOE])
 
 	local neverOfferBOELabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	neverOfferBOELabel:SetPoint('LEFT', neverOfferBOECheckbox, 'RIGHT', 0, 0)
@@ -68,15 +72,16 @@ function PLH_CreateOptionsPanel()
 	nonLooterLabel:SetPoint('TOPLEFT', neverOfferBOECheckbox, 'BOTTOMLEFT', -20, -15)
 	nonLooterLabel:SetText("When others receive tradeable loot...")
 
-	--[[ PLH_CURRENT_SPEC_ONLY ]]--
+	--[[ PLH_PREFS_CURRENT_SPEC_ONLY ]]--
 	local currentSpecOnlyCheckbox = CreateFrame('CheckButton', nil, configFrame, 'InterfaceOptionsCheckButtonTemplate')
 	currentSpecOnlyCheckbox:SetPoint('TOPLEFT', nonLooterLabel, 'BOTTOMLEFT', 20, -5)
+	currentSpecOnlyCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_CURRENT_SPEC_ONLY])
 
 	local currentSpecOnlyLabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	currentSpecOnlyLabel:SetPoint('LEFT', currentSpecOnlyCheckbox, 'RIGHT', 0, 0)
 	currentSpecOnlyLabel:SetText("Only prompt me if I can equip in current spec")
 
-	--[[ PLH_ILVL_THRESHOLD ]]--
+	--[[ PLH_PREFS_ILVL_THRESHOLD ]]--
 
 	local ilvlThresholdLabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	ilvlThresholdLabel:SetPoint('TOPLEFT', currentSpecOnlyCheckbox, 'BOTTOMLEFT', 5, -10)
@@ -144,25 +149,28 @@ function PLH_CreateOptionsPanel()
 		end
 		return ilvlThresholdValue[2]  -- we couldn't find a match, so return default
 	end
+
+	MSA_DropDownMenu_SetText(ilvlThresholdMenu, GetILVLThresholdDescription(PLH_PREFS[PLH_PREFS_ILVL_THRESHOLD]))
 	
-	--[[ PLH_INCLUDE_XMOG ]]--
+	--[[ PLH_PREFS_INCLUDE_XMOG ]]--
 	
 	local includeXMOGCheckbox = CreateFrame('CheckButton', nil, configFrame, 'InterfaceOptionsCheckButtonTemplate')
 	includeXMOGCheckbox:SetPoint('TOPLEFT', neverOfferBOECheckbox, 'BOTTOMLEFT', 0, -90)
+	includeXMOGCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_INCLUDE_XMOG])
 
 	local includeXMOGLabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	includeXMOGLabel:SetPoint('LEFT', includeXMOGCheckbox, 'RIGHT', 0, 0)
 	includeXMOGLabel:SetText("Prompt me for transmog even if item is not an upgrade")
 
-	-- [[ PLH_WHISPER_MESSAGE ]]--
+	-- [[ PLH_PREFS_WHISPER_MESSAGE ]]--
 	
 	local sampleItem = '\124cffa335ee\124Hitem:151981::::::::110::::2:1522:3610:\124h[Life-Bearing Footpads]\124h\124r'
 	local whisperMessageLabel = configFrame:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	whisperMessageLabel:SetPoint('TOPLEFT', includeXMOGCheckbox, 'BOTTOMLEFT', -25, -15)
 	whisperMessageLabel:SetText("Enter message to whisper when requesting loot from players who are not using PLH.\n" ..
 		"You may include the looted item by using %item.  For example:\n" ..
-		"      \"" .. PLH_DEFAULT_PREFS[PLH_WHISPER_MESSAGE] .. "\" could appear as\n" ..
-		"      \"" .. PLH_GetWhisperMessage(sampleItem, PLH_DEFAULT_PREFS[PLH_WHISPER_MESSAGE]) .. "\"\n")
+		"      \"" .. PLH_DEFAULT_PREFS[PLH_PREFS_WHISPER_MESSAGE] .. "\" could appear as\n" ..
+		"      \"" .. PLH_GetWhisperMessage(sampleItem, PLH_DEFAULT_PREFS[PLH_PREFS_WHISPER_MESSAGE]) .. "\"\n")
 	whisperMessageLabel:SetWordWrap(true)
 	whisperMessageLabel:SetJustifyH('LEFT')
 	whisperMessageLabel:SetWidth(500)
@@ -176,6 +184,7 @@ function PLH_CreateOptionsPanel()
 	whisperMessageEditBox:SetAutoFocus(false)
 	whisperMessageEditBox:SetFont('Fonts\\FRIZQT__.TTF', 11)
 	whisperMessageEditBox:SetPoint('TOPLEFT', whisperMessageLabel, 'BOTTOMLEFT', 20, -10)
+	whisperMessageEditBox:SetText(PLH_PREFS[PLH_PREFS_WHISPER_MESSAGE])
 	
 	local whisperMessageEditBoxBackdrop = {
 		bgFile = nil, 
@@ -216,28 +225,28 @@ function PLH_CreateOptionsPanel()
 	
 	--[[ OnShow Event]]
 	configFrame:SetScript('OnShow', function(frame)
-		autoHideCheckbox:SetChecked(PLH_PREFS[PLH_AUTO_HIDE])
-		skipConfirmationCheckbox:SetChecked(PLH_PREFS[PLH_SKIP_CONFIRMATION])
-		onlyOfferIfUpgradeCheckbox:SetChecked(PLH_PREFS[PLH_ONLY_OFFER_IF_UPGRADE])
-		neverOfferBOECheckbox:SetChecked(PLH_PREFS[PLH_NEVER_OFFER_BOE])
-		currentSpecOnlyCheckbox:SetChecked(PLH_PREFS[PLH_CURRENT_SPEC_ONLY])
-		MSA_DropDownMenu_SetText(ilvlThresholdMenu, GetILVLThresholdDescription(PLH_PREFS[PLH_ILVL_THRESHOLD]))
-		includeXMOGCheckbox:SetChecked(PLH_PREFS[PLH_INCLUDE_XMOG])
-		whisperMessageEditBox:SetText(PLH_PREFS[PLH_WHISPER_MESSAGE])
+		autoHideCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_AUTO_HIDE])
+		skipConfirmationCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_SKIP_CONFIRMATION])
+		onlyOfferIfUpgradeCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_ONLY_OFFER_IF_UPGRADE])
+		neverOfferBOECheckbox:SetChecked(PLH_PREFS[PLH_PREFS_NEVER_OFFER_BOE])
+		currentSpecOnlyCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_CURRENT_SPEC_ONLY])
+		MSA_DropDownMenu_SetText(ilvlThresholdMenu, GetILVLThresholdDescription(PLH_PREFS[PLH_PREFS_ILVL_THRESHOLD]))
+		includeXMOGCheckbox:SetChecked(PLH_PREFS[PLH_PREFS_INCLUDE_XMOG])
+		whisperMessageEditBox:SetText(PLH_PREFS[PLH_PREFS_WHISPER_MESSAGE])
 		UpdateThankYouLabel()
 	end)
 
 	--[[ Okay Action ]]--
 	function configFrame.okay(arg1, arg2, arg3, ...)
-		PLH_PREFS[PLH_AUTO_HIDE] = autoHideCheckbox:GetChecked()
-		PLH_PREFS[PLH_SKIP_CONFIRMATION] = skipConfirmationCheckbox:GetChecked()
-		PLH_PREFS[PLH_ONLY_OFFER_IF_UPGRADE] = onlyOfferIfUpgradeCheckbox:GetChecked()
-		PLH_PREFS[PLH_NEVER_OFFER_BOE] = neverOfferBOECheckbox:GetChecked()
-		PLH_PREFS[PLH_CURRENT_SPEC_ONLY] = currentSpecOnlyCheckbox:GetChecked()
-		PLH_PREFS[PLH_ILVL_THRESHOLD] = GetILVLThresholdValue(MSA_DropDownMenu_GetText(ilvlThresholdMenu))
-		PLH_PREFS[PLH_INCLUDE_XMOG] = includeXMOGCheckbox:GetChecked()
-		if PLH_PREFS[PLH_WHISPER_MESSAGE] ~= whisperMessageEditBox:GetText() then
-			PLH_PREFS[PLH_WHISPER_MESSAGE] = whisperMessageEditBox:GetText()
+		PLH_PREFS[PLH_PREFS_AUTO_HIDE] = autoHideCheckbox:GetChecked()
+		PLH_PREFS[PLH_PREFS_SKIP_CONFIRMATION] = skipConfirmationCheckbox:GetChecked()
+		PLH_PREFS[PLH_PREFS_ONLY_OFFER_IF_UPGRADE] = onlyOfferIfUpgradeCheckbox:GetChecked()
+		PLH_PREFS[PLH_PREFS_NEVER_OFFER_BOE] = neverOfferBOECheckbox:GetChecked()
+		PLH_PREFS[PLH_PREFS_CURRENT_SPEC_ONLY] = currentSpecOnlyCheckbox:GetChecked()
+		PLH_PREFS[PLH_PREFS_ILVL_THRESHOLD] = GetILVLThresholdValue(MSA_DropDownMenu_GetText(ilvlThresholdMenu))
+		PLH_PREFS[PLH_PREFS_INCLUDE_XMOG] = includeXMOGCheckbox:GetChecked()
+		if PLH_PREFS[PLH_PREFS_WHISPER_MESSAGE] ~= whisperMessageEditBox:GetText() then
+			PLH_PREFS[PLH_PREFS_WHISPER_MESSAGE] = whisperMessageEditBox:GetText()
 			PLH_META[PLH_SHOW_WHISPER_WARNING] = true
 		end
 	end

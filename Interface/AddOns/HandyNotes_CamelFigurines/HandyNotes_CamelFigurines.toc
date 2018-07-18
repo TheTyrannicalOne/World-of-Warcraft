@@ -1,4 +1,4 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: HandyNotes_CamelFigurines
 ## Notes: Shows location of Mysterious Camel Figurines in Uldum
 ## Author: AdmiralBlackfur
