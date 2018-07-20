@@ -112,6 +112,17 @@ FBConstants.CastClick[FBConstants.MOUSE1] = KEY_BUTTON2;
 FBConstants.CastClick[FBConstants.MOUSE2] = KEY_BUTTON4;
 FBConstants.CastClick[FBConstants.MOUSE3] = KEY_BUTTON5;
 
+-- Continents
+FBConstants.KALIMDOR = 1
+FBConstants.EASTERN_KINDOMS = 2
+FBConstants.OUTLAND = 3
+FBConstants.NORTHREND = 4
+FBConstants.THE_MAELSTROM = 5
+FBConstants.PANDARIA = 6
+FBConstants.DRAENOR = 7
+FBConstants.BROKEN_ISLES = 8
+FBConstants.KUL_TIRAS = 9
+
 local CustomEvents = {
 	["WILDCARD_EVT"] = "*",
 	["ADD_FISHIE_EVT"] = "ADD_FISHIE",

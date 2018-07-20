@@ -21,11 +21,11 @@ TradeSkillMaster_AuctioningDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
 		["Shanyt - Zul'jin"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
 	},
 	["g@ @roundNormalPrice"] = false,
 	["g@ @priceColumn"] = 1,
@@ -40,13 +40,13 @@ TradeSkillMaster_AuctioningDB = {
 		["Cowtastraphy"] = true,
 		["Tyran"] = true,
 		["Datgorg"] = true,
-		["Vadder"] = true,
 		["Bathal"] = true,
+		["Vadder"] = true,
 		["Mulmok"] = true,
 		["Brotus"] = true,
 		["Jingojaggot"] = true,
-		["Shanyt"] = true,
 		["Shaekhan"] = true,
+		["Shanyt"] = true,
 		["Fantastiburo"] = true,
 	},
 	["f@Horde - Argent Dawn@whitelist"] = {
@@ -68,18 +68,18 @@ TradeSkillMaster_AuctioningDB = {
 			"Shathiel - Darkspear", -- [13]
 			"Shanyt - Zul'jin", -- [14]
 		},
-		["realm"] = {
-			"Argent Dawn", -- [1]
-			"Darkspear", -- [2]
-			"Zul'jin", -- [3]
-		},
-		["profile"] = {
-			"Default", -- [1]
-		},
 		["factionrealm"] = {
 			"Horde - Argent Dawn", -- [1]
 			"Alliance - Darkspear", -- [2]
 			"Horde - Zul'jin", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Argent Dawn", -- [1]
+			"Darkspear", -- [2]
+			"Zul'jin", -- [3]
 		},
 	},
 	["_version"] = 1,

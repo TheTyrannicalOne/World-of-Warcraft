@@ -45,42 +45,36 @@ local RaidCurrency = {}
 RaidCurrency[146848] = {
 	["enUS"] = "Fragmented Enchantment",
 	zone = "Azsuna",
-    area = 1015,
 	limit = 100
 };
 
 RaidCurrency[146959] = {
 	["enUS"] = "Corrupted Globule",
     zone = "Val'sharah",
-    area = 1018,
 	limit = 100
 };
 
 RaidCurrency[146960] = {
 	["enUS"] = "Ancient Totem Fragment",
 	zone = "Thunder Totem",
-    area = 1080,
 	limit = 100
 };
 
 RaidCurrency[146961] = {
 	["enUS"] = "Shiny Bauble",
     zone = "Stormheim",
-    area = 1017,
 	limit = 100
 };
 
 RaidCurrency[146962] = {
 	["enUS"] = "Golden Minnow",
 	zone = "Suramar",
-    area = 1033,
 	limit = 100
 };
 
 RaidCurrency[146963] = {
 	["enUS"] = "Desecrated Seaweed",
 	zone = "Broken Shore",
-    area = 1021,
 	limit = 100
 };
 
@@ -88,7 +82,6 @@ RaidCurrency[138777] = {
 	["enUS"] = "Drowned Mana",
 	zone = "Dalaran (Broken Isles)",
 	subzone = MARGOSS_RETREAT,
-    area = 1014,
 	limit = 100
 };
 
@@ -106,7 +99,7 @@ local RaidBosses = {
 		["zhCN"] = "“活水”伊丽西娅",
 		["ptBR"] = "Ilyssia das Águas",
 		["koKR"] = "물의 일리시아",
-		["area"] = 1015,
+		["area"] = 630,
 		["currency"] = 146848,
 		["fish"] = {
 			["enUS"] = "Hatecoil Spearhead",
@@ -127,7 +120,7 @@ local RaidBosses = {
 		["zhCN"] = "守护者蕾娜",
 		["ptBR"] = "Guardiã Raynae",
 		["koKR"] = "수호자 레이내",
-		["area"] = 1018,
+		["area"] = 641,
 		["currency"] = 146959,
 		["fish"] = {
 			["enUS"] = "Disgusting Ooze",
@@ -148,7 +141,7 @@ local RaidBosses = {
 		["zhCN"] = "阿库勒·河角",
 		["ptBR"] = "Akule Chifre do Rio",
 		["koKR"] = "아쿨레 리버혼",
-		["area"] = 1080,
+		["area"] = 750,
 		["currency"] = 146960,
 		["fish"] = {
 			["enUS"] = "Water Totem Figurine",
@@ -169,7 +162,7 @@ local RaidBosses = {
 		["zhCN"] = "科尔宾",
 		["ptBR"] = "Corbyn",
 		["koKR"] = "코르빈",
-		["area"] = 1017,
+		["area"] = 634,
 		["currency"] = 146961,
 		["fish"] = {
 			["enUS"] = "White Sparkly Bauble",
@@ -190,7 +183,7 @@ local RaidBosses = {
 		["zhCN"] = "莎乐丝",
 		["ptBR"] = "Sha'leth",
 		["koKR"] = "샤레스",
-		["area"] = 1033,
+		["area"] = 680,
 		["currency"] = 146962,
 		["fish"] = {
 			["enUS"] = "Glowing Fish Scale",
@@ -211,7 +204,7 @@ local RaidBosses = {
 		["zhCN"] = "英帕斯",
 		["ptBR"] = "Diabrius",
 		["koKR"] = "임푸스",
-		["area"] = 1021,
+		["area"] = 646,
 		["currency"] = 146963,
 		["fish"] = {
 			["enUS"] = "Faintly Pulsing Felstone",
@@ -232,7 +225,7 @@ local RaidBosses = {
 		["zhCN"] = "咒法师马戈斯",
 		["ptBR"] = "Conjurador Margoss",
 		["koKR"] = "창조술사 마르고스",
-		["area"] = 1014,
+		["area"] = 625,
 		["currency"] = 138777,
 		["fish"] = {
 			["enUS"] = "Mark of Aquaos",
@@ -306,7 +299,7 @@ local function DisplayRaidFish()
 			label = label.." "..BOSS.." "..info[CurLoc]
 		end
 		label = label..": "
-
+		RaidCurrency[info['currency']]['area'] = info['area']
 		return FWF:DisplayFishLine(RaidCurrency, label, info.area)
 	end
 end
@@ -617,4 +610,15 @@ if ( FishingBuddy.Debugging ) then
 				print("After", FishingActionButton:IsShown())
 				return true
 			end
-end
+		FishingBuddy.Commands["boss"] = {};
+		FishingBuddy.Commands["boss"].func =
+			function()
+				local bosses = {}
+				for _, boss in ipairs(RaidBosses) do
+					boss['area'] = FishingBuddy.GetNewMapId(boss['area'])
+					tinsert(bosses, boss)
+				end
+				FishingBuddy_Info['RaidBosses'] = bosses
+				return true
+			end
+	end

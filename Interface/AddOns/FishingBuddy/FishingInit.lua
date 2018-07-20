@@ -399,7 +399,9 @@ FishingInit.ConvertToMapId = function()
 				local szcount = FishingBuddy_Info['SubZones'][zidm]
 				subzones[newzidm] = szcount
 				totals[newzidm] = FishingBuddy_Info['FishTotals'][zidm]
-				schools[mapId] = FishingBuddy_Info['FishSchools'][zidx]
+				if FishingBuddy_Info['FishSchools'] then
+					schools[mapId] = FishingBuddy_Info['FishSchools'][zidx]
+				end
 				for idx=1,szcount do
 					local sidm = FishingBuddy.ZoneMarkerTo(zidx, idx)
 					local newsidm = FishingBuddy.ZoneMarkerTo(mapId, idx)

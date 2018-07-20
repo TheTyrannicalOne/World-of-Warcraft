@@ -19,7 +19,6 @@ MADB = {
 					},
 					["name"] = "ExtraActionBarFrame",
 					["scale"] = 1.08436968959678,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"BT4BarExtraActionBar", -- [2]
@@ -27,12 +26,15 @@ MADB = {
 						-251.970013288487, -- [4]
 						195.347820312248, -- [5]
 					},
+					["orgScale"] = 1,
 				},
 				["FriendsFrame"] = {
-					["UIPanelWindows"] = {
-						["whileDead"] = 1,
-						["pushable"] = 0,
-						["area"] = "left",
+					["pos"] = {
+						"BOTTOMLEFT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMLEFT", -- [3]
+						0, -- [4]
+						0, -- [5]
 					},
 					["orgPos"] = {
 						"BOTTOMLEFT", -- [1]
@@ -42,12 +44,10 @@ MADB = {
 						0, -- [5]
 					},
 					["name"] = "FriendsFrame",
-					["pos"] = {
-						"BOTTOMLEFT", -- [1]
-						"UIParent", -- [2]
-						"BOTTOMLEFT", -- [3]
-						0, -- [4]
-						0, -- [5]
+					["UIPanelWindows"] = {
+						["whileDead"] = 1,
+						["pushable"] = 0,
+						["area"] = "left",
 					},
 				},
 				["BNToastFrame"] = {
@@ -68,7 +68,7 @@ MADB = {
 					},
 				},
 				["SpellActivationOverlayFrame"] = {
-					["name"] = "SpellActivationOverlayFrame",
+					["hidden"] = true,
 					["orgPos"] = {
 						"CENTER", -- [1]
 						"UIParent", -- [2]
@@ -76,7 +76,7 @@ MADB = {
 						0, -- [4]
 						0, -- [5]
 					},
-					["hidden"] = true,
+					["name"] = "SpellActivationOverlayFrame",
 					["pos"] = {
 						"CENTER", -- [1]
 						"UIParent", -- [2]
@@ -88,8 +88,8 @@ MADB = {
 			},
 		},
 	},
-	["closeGUIOnEscape"] = false,
-	["playSound"] = false,
-	["noBags"] = false,
 	["frameListRows"] = 18,
+	["noBags"] = false,
+	["playSound"] = false,
+	["closeGUIOnEscape"] = false,
 }

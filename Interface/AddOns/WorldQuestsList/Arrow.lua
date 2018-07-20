@@ -135,13 +135,14 @@ do
 						frame:Hide()
 					end
 				else
-					local perc = min(distance, 40)
-					if perc > 20 then
-						local green = 1 - ((perc-20) / 20)
+					local perc = distance > 300 and distance or distance
+					if perc > 150 then
+						local green = 1 - ((perc-150) / 150)
 						arrow:SetVertexColor(1, green, 0)
 						txtrng:SetTextColor(1, green, 0)
 					else
-						local red = perc / 20
+						perc = perc < 40 and 0 or perc - 40
+						local red = perc / 110
 						arrow:SetVertexColor(red, 1, 0)
 						txtrng:SetTextColor(red, 1, 0)
 					end

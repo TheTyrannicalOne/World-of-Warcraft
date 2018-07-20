@@ -1,4 +1,4 @@
-local VERSION = 60
+local VERSION = 61
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -151,6 +151,8 @@ second icon for profession quests
 standalone arrow, no addons required
 text color for zone names
 added treasure/rares mode [beta]
+
+Added LFG (group finder) option [in testing]
 ]]
 
 local GlobalAddonName, WQLdb = ...
@@ -225,6 +227,9 @@ local LOCALE =
 		shellGameHelper = "Включить Shell Game Helper",
 		iconsOnMinimap = "Включить иконки на общих картах",
 		addQuestsArgus = "Добавить задания Аргуса",
+		lfgSearchOption = "Включить поиск в LFG",
+		lfgAutoinvite = "Включите опцию автоприглашения",
+		lfgTypeText = "Введите цифры (ID квеста) в поле для ввода",
 	} or
 	locale == "deDE" and {
 		gear = "Ausrüstung",
@@ -258,6 +263,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	} or
 	locale == "frFR" and {
 		gear = "Équipement",
@@ -291,6 +299,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	} or
 	(locale == "esES" or locale == "esMX") and {
 		gear = "Equipo",
@@ -324,6 +335,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	} or	
 	locale == "itIT" and {
 		gear = "Equipaggiamento",
@@ -357,6 +371,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	} or
 	locale == "ptBR" and {
 		gear = "Equipamento",
@@ -390,6 +407,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	} or
 	locale == "koKR" and {
 		gear = "장비",
@@ -423,6 +443,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	} or
 	(locale == "zhCN" or locale == "zhTW") and {	--by dxlmike, cuihuanyu1986
 		gear = "装备",
@@ -456,6 +479,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	} or	
 	{
 		gear = "Gear",
@@ -489,6 +515,9 @@ local LOCALE =
 		shellGameHelper = "Enable Shell Game Helper",
 		iconsOnMinimap = "Enable icons on General maps",
 		addQuestsArgus = "Add quests from Argus",
+		lfgSearchOption = "Enable LFG search",
+		lfgAutoinvite = "Set autoinvite option on",
+		lfgTypeText = "Type numbers (QuestID) to edit box",
 	}
 
 local filters = {
@@ -952,6 +981,11 @@ WorldQuestList:SetScript("OnEvent",function(self,event,...)
 		
 		if VWQL.DisableArrowMove then
 			WQLdb.Arrow.frame:SetMovable(false)
+		end
+		
+		if VWQL.AnchorQCBLeft and VWQL.AnchorQCBTop then
+			WorldQuestList.QuestCreationBox:ClearAllPoints()
+			WorldQuestList.QuestCreationBox:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",VWQL.AnchorQCBLeft,VWQL.AnchorQCBTop)
 		end
 		
 		VWQL.VERSION = VERSION
@@ -1777,6 +1811,47 @@ local function WorldQuestList_Timeleft_OnLeave(self)
 	GameTooltip_Hide()
 end
 
+local function WorldQuestList_LFGButton_OnClick(self,button)
+	local questID = self.questID
+	if not questID then
+		return
+	elseif button == "RightButton" then
+		WorldQuestList.LFG_StartQuest(questID)
+	else
+		WorldQuestList.LFG_Search(questID)
+	end
+end
+local function WorldQuestList_LFGButton_OnEnter(self)
+	WorldQuestList_Line_OnEnter(self:GetParent())
+end
+local function WorldQuestList_LFGButton_OnLeave(self)
+	WorldQuestList_Line_OnLeave(self:GetParent())
+end
+local function WorldQuestList_LFGButton_OnShow(self)
+	self:SetWidth(18)
+end
+local function WorldQuestList_LFGButton_OnHide(self)
+	self:SetWidth(1)
+end
+local function WorldQuestList_LFGButton_OnUpdate(self,el)
+	if self.t > 1 then
+		self.t = 0
+		local questID = self.questID
+		if questID then
+			local n = WorldQuestList.LFG_LastResult[questID]
+			if n then
+				self.text:SetText(n)
+			else
+				self.text:SetText("")
+			end
+		else
+			self.text:SetText("")
+		end
+	end
+	self.t = self.t + el
+end
+
+
 local IgnoreListDropDown = {
 	{
 		text = IGNORE_QUEST,
@@ -1853,12 +1928,38 @@ local function WorldQuestList_CreateLine(i)
 	line.name:SetPoint("LEFT",line.secondicon,"RIGHT",0,0)
 	line.name:SetSize(WorldQuestList.NAME_WIDTH,20)
 	line.name:SetJustifyH("LEFT")
+	
+	line.LFGButton = CreateFrame("Button",nil,line)
+	line.LFGButton:SetPoint("LEFT",line.name,"RIGHT")
+	line.LFGButton:SetSize(18,18)
+	line.LFGButton:SetScript("OnClick",WorldQuestList_LFGButton_OnClick)
+	line.LFGButton:SetScript("OnEnter",WorldQuestList_LFGButton_OnEnter)
+	line.LFGButton:SetScript("OnLeave",WorldQuestList_LFGButton_OnLeave)
+	line.LFGButton:SetScript("OnShow",WorldQuestList_LFGButton_OnShow)
+	line.LFGButton:SetScript("OnHide",WorldQuestList_LFGButton_OnHide)
+	line.LFGButton.t = 0
+	--line.LFGButton:SetScript("OnUpdate",WorldQuestList_LFGButton_OnUpdate)
+	line.LFGButton:RegisterForClicks("LeftButtonDown","RightButtonUp")
+	line.LFGButton.texture = line.LFGButton:CreateTexture(nil, "BACKGROUND")
+	line.LFGButton.texture:SetPoint("CENTER")
+	line.LFGButton.texture:SetSize(16,16)
+	line.LFGButton.texture:SetAtlas("socialqueuing-icon-eye")
+
+	line.LFGButton.HighlightTexture = line.LFGButton:CreateTexture()
+	line.LFGButton.HighlightTexture:SetTexture("Interface\\Buttons\\UI-Common-MouseHilight")
+	line.LFGButton.HighlightTexture:SetSize(16,16)
+	line.LFGButton.HighlightTexture:SetPoint("CENTER")
+	line.LFGButton:SetHighlightTexture(line.LFGButton.HighlightTexture,"ADD")
+
+	line.LFGButton.text = line.LFGButton:CreateFontString(nil,"OVERLAY")
+	line.LFGButton.text:SetPoint("BOTTOMLEFT",2,0)
+	line.LFGButton.text:SetFont("Interface\\AddOns\\WorldQuestsList\\ariblk.ttf", 14, "OUTLINE")
 
 	line.reward = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
-	line.reward:SetPoint("LEFT",line.name,"RIGHT",5,0)
+	line.reward:SetPoint("LEFT",line.LFGButton,"RIGHT",3,0)
 	line.reward:SetSize(180,20)
 	line.reward:SetJustifyH("LEFT")
-
+	
 	line.faction = line:CreateFontString(nil,"ARTWORK","GameFontWhite")
 	line.faction:SetPoint("LEFT",line.reward,"RIGHT",5,0)
 	line.faction:SetSize(115,20)
@@ -2495,6 +2596,16 @@ do
 	local list = {}
 	WorldQuestList.optionsDropDown.Button.List = list
 	
+	list[#list+1] = {
+		text = LOCALE.lfgSearchOption,
+		func = function()
+			VWQL.DisableLFG = not VWQL.DisableLFG
+			ELib.ScrollDropDown.Close()
+			WorldQuestList_Update()
+		end,
+		checkable = true,
+	}	
+	
 	local function SetScaleArrow(_, arg1)
 		VWQL.Arrow_Scale = arg1
 		ELib.ScrollDropDown.Close()
@@ -2822,6 +2933,8 @@ do
 				self.List[i].checkState = not VWQL.OppositeContinentArgus
 			elseif self.List[i].text == LOCALE.argusMap then
 				self.List[i].checkState = not VWQL.ArgusMap
+			elseif self.List[i].text == LOCALE.lfgSearchOption then
+				self.List[i].checkState = not VWQL.DisableLFG
 			end
 		end
 		anchorSubMenu[1].checkState = not VWQL.Anchor
@@ -3433,6 +3546,8 @@ local function WorldQuestList_Leveling_Update()
 		
 		line.nqhl:Hide()
 		
+		line.LFGButton:Hide()
+		
 		line.rewardLink = nil
 		line.data = data.info
 		line.faction.f.tooltip = nil
@@ -3639,6 +3754,8 @@ local function WorldQuestList_Treasure_Update()
 		line.numObjectives = 0
 		
 		line.nqhl:Hide()
+		
+		line.LFGButton:Hide()
 		
 		line.rewardLink = nil
 		line.data = data.info
@@ -4815,6 +4932,11 @@ function WorldQuestList_Update(preMapID)
 		NUM_WORLDMAP_TASK_POIS = numTaskPOIs
 	end
 	
+	local lfgEyeStatus = true
+	if C_LFGList.GetActiveEntryInfo() or VWQL.DisableLFG then
+		lfgEyeStatus = false
+	end
+	
 	--taskIconIndex = taskIconIndex + 1
 	for i=1,#result do
 		local data = result[i]
@@ -4878,6 +5000,13 @@ function WorldQuestList_Update(preMapID)
 			line.isInvasionPoint = true
 		else
 			line.isInvasionPoint = nil
+		end
+		
+		if lfgEyeStatus then
+			line.LFGButton.questID = data.questID
+			line.LFGButton:Show()
+		else
+			line.LFGButton:Hide()
 		end
 		
 		line.name:SetWidth(questNameWidth)
@@ -6577,3 +6706,376 @@ WorldQuestList.TreasureData = {		--x,y,name,type,reward,note,questID if done,spe
 {0.6151,0.5233,"Guardian of the Spring",1,nil,"Ride him to southwind station",nil},
 	},
 }
+
+
+
+
+
+
+
+
+
+
+local QuestCreationBox = CreateFrame("Frame",nil,UIParent)
+QuestCreationBox:SetSize(350,120)
+QuestCreationBox:SetPoint("CENTER")
+QuestCreationBox:SetMovable(false)
+QuestCreationBox:EnableMouse(true)
+QuestCreationBox:SetClampedToScreen(true)
+QuestCreationBox:RegisterForDrag("LeftButton")
+QuestCreationBox:Hide()
+
+WorldQuestList.QuestCreationBox = QuestCreationBox
+
+QuestCreationBox.b = QuestCreationBox:CreateTexture(nil,"BACKGROUND")
+QuestCreationBox.b:SetAllPoints()
+QuestCreationBox.b:SetColorTexture(0.04,0.04,0.04,.97)
+QuestCreationBox.b.A = .97
+
+QuestCreationBox.Text1 = QuestCreationBox:CreateFontString(nil,"ARTWORK","GameFontWhite")
+QuestCreationBox.Text1:SetPoint("TOP",0,-5)
+QuestCreationBox.Text1:SetText("Type numbers (QuestID) to edit box")
+do
+	local a1,a2 = QuestCreationBox.Text1:GetFont()
+	QuestCreationBox.Text1:SetFont(a1,12)
+end
+
+QuestCreationBox.Text2 = QuestCreationBox:CreateFontString(nil,"ARTWORK","GameFontWhite")
+QuestCreationBox.Text2:SetPoint("TOP",0,-25)
+QuestCreationBox.Text2:SetText("99999")
+QuestCreationBox.Text2:SetTextColor(0,1,0)
+do
+	local a1,a2 = QuestCreationBox.Text2:GetFont()
+	QuestCreationBox.Text2:SetFont(a1,20)
+end
+
+QuestCreationBox.Close = CreateFrame("Button",nil,QuestCreationBox)
+QuestCreationBox.Close:SetPoint("TOPRIGHT")
+QuestCreationBox.Close:SetSize(22,22)
+QuestCreationBox.Close:SetScript("OnClick",function()
+	QuestCreationBox:Hide()
+end)
+
+ELib.Templates:Border(QuestCreationBox.Close,.22,.22,.3,1,1)
+
+QuestCreationBox.Close.X = QuestCreationBox.Close:CreateFontString(nil,"ARTWORK","GameFontWhite")
+QuestCreationBox.Close.X:SetPoint("CENTER",QuestCreationBox.Close)
+QuestCreationBox.Close.X:SetText("X")
+do
+	local a1,a2 = QuestCreationBox.Close.X:GetFont()
+	QuestCreationBox.Close.X:SetFont(a1,14)
+end
+
+QuestCreationBox.PartyLeave = ELib:Button(QuestCreationBox,PARTY_LEAVE)
+QuestCreationBox.PartyLeave:SetSize(220,25)
+QuestCreationBox.PartyLeave:SetPoint("BOTTOM",0,5)
+QuestCreationBox.PartyLeave:SetScript("OnClick",function()
+	local n = GetNumGroupMembers() or 0
+	if n == 0 then
+		if C_LFGList.GetActiveEntryInfo() then
+			C_LFGList.RemoveListing()
+		end
+	else
+		LeaveParty()
+	end
+	QuestCreationBox:Hide()
+end)
+QuestCreationBox.PartyLeave:Hide()
+
+
+QuestCreationBox:SetScript("OnDragStart", function(self)
+	self:SetMovable(true)
+	self:StartMoving()
+end)
+QuestCreationBox:SetScript("OnDragStop", function(self)
+	self:StopMovingOrSizing()
+	self:SetMovable(false)
+
+	if VWQL then
+		VWQL.AnchorQCBLeft = self:GetLeft()
+		VWQL.AnchorQCBTop = self:GetTop() 
+	end
+end)
+QuestCreationBox:SetScript("OnUpdate",function(self)
+	if LFGListFrame.EntryCreation.Name:GetText() == QuestCreationBox.Text2:GetText() then
+		QuestCreationBox.Text2:SetTextColor(0,1,0)
+	else
+		QuestCreationBox.Text2:SetTextColor(1,1,0)
+	end
+end)
+
+ELib.Templates:Border(QuestCreationBox,.22,.22,.3,1,1)
+QuestCreationBox.shadow = ELib:Shadow2(QuestCreationBox,16)
+
+local defPoints
+
+function WQL_LFG_StartQuest(questID)
+	if GroupFinderFrame:IsVisible() or C_LFGList.GetActiveEntryInfo() then
+		return
+	end
+	
+	QuestCreationBox:Show()
+	QuestCreationBox:SetSize(350,120)
+	QuestCreationBox.PartyLeave:Hide()
+
+	LFGListUtil_OpenBestWindow()
+	
+	PVEFrame:ClearAllPoints() 
+	PVEFrame:SetPoint("TOP",UIParent,"BOTTOM",0,-100)
+	
+	local catID = nil
+	
+	local categories = C_LFGList.GetAvailableCategories()
+	for i=1, #categories do
+		if C_LFGList.GetCategoryInfo(categories[i]) == QUESTS_LABEL then
+			catID = i
+			break
+		end
+	end
+	
+	LFGListEntryCreation_Show(LFGListFrame.EntryCreation, LFGListFrame.baseFilters, catID, 0)
+	
+	local activityID, categoryID, filters, questName = LFGListUtil_GetQuestCategoryData(questID)
+	if activityID then
+		LFGListEntryCreation_Select(LFGListFrame.EntryCreation, filters, categoryID, nil, activityID)
+	end
+
+	
+	local edit = LFGListFrame.EntryCreation.Name
+	local button = LFGListFrame.EntryCreation.ListGroupButton
+	local check = LFGListFrame.ApplicationViewer.AutoAcceptButton
+	
+	--LFGListFrame.CategorySelection.CategoryButtons[1]:Click()
+	
+	if not defPoints then
+		defPoints = {
+			[edit] = {edit:GetPoint()},
+			[button] = {button:GetPoint()},
+			[check] = {check:GetPoint()},
+			checkSize = {check:GetSize()},
+		}
+		button:HookScript("OnClick",function()
+			edit:ClearAllPoints()
+			edit:SetPoint(unpack(defPoints[edit]))
+			
+			button:ClearAllPoints()
+			button:SetPoint(unpack(defPoints[button]))
+						
+			check:ClearAllPoints()
+			check:SetPoint("TOP",QuestCreationBox,"TOP",0,-40)
+			check:SetPoint("BOTTOM",QuestCreationBox,"BOTTOM",0,0)
+			check:SetWidth(80)
+			--check:SetSize(button:GetSize())
+			
+			QuestCreationBox.Text1:SetText(LOCALE.lfgAutoinvite)
+			QuestCreationBox.Text2:SetText("")
+		end)
+		check:HookScript("OnClick",function()
+			check:ClearAllPoints()
+			check:SetPoint(unpack(defPoints[check]))
+			check:SetSize(unpack(defPoints.checkSize))
+						
+			PVEFrame_ToggleFrame()
+			QuestCreationBox:Hide()
+		end)
+	end
+		
+	QuestCreationBox.Text1:SetText("WQL: "..LOCALE.lfgTypeText)
+	QuestCreationBox.Text2:SetText(questID)
+	
+	edit:ClearAllPoints()
+	edit:SetPoint("TOP",QuestCreationBox,"TOP",0,-50)
+	
+	button:ClearAllPoints()
+	button:SetPoint("BOTTOM",QuestCreationBox,"BOTTOM",0,5)
+end
+WorldQuestList.LFG_StartQuest = WQL_LFG_StartQuest
+
+LFGListFrame.EntryCreation:HookScript("OnShow",function()
+	if not defPoints then
+		return
+	end
+	local edit = LFGListFrame.EntryCreation.Name
+	local button = LFGListFrame.EntryCreation.ListGroupButton
+	local check = LFGListFrame.ApplicationViewer.AutoAcceptButton
+
+	edit:ClearAllPoints()
+	edit:SetPoint(unpack(defPoints[edit]))
+	
+	button:ClearAllPoints()
+	button:SetPoint(unpack(defPoints[button]))
+				
+	check:ClearAllPoints()
+	check:SetPoint(unpack(defPoints[check]))
+	check:SetSize(unpack(defPoints.checkSize))
+end)
+
+QuestCreationBox:SetScript("OnHide",function()
+	if not defPoints then
+		return
+	end
+	local edit = LFGListFrame.EntryCreation.Name
+	local button = LFGListFrame.EntryCreation.ListGroupButton
+	local check = LFGListFrame.ApplicationViewer.AutoAcceptButton
+
+	edit:ClearAllPoints()
+	edit:SetPoint(unpack(defPoints[edit]))
+	
+	button:ClearAllPoints()
+	button:SetPoint(unpack(defPoints[button]))
+				
+	check:ClearAllPoints()
+	check:SetPoint(unpack(defPoints[check]))
+	check:SetSize(unpack(defPoints.checkSize))
+	
+	edit:ClearFocus()
+	
+	if GroupFinderFrame:IsVisible() then
+		PVEFrame_ToggleFrame()
+	end
+end)
+
+local searchQuestID = nil
+local isAfterSearch = nil
+
+function WQL_LFG_Search(questID)
+	if C_LFGList.GetActiveEntryInfo() then
+		return
+	end
+
+	if not GroupFinderFrame:IsVisible() then
+		LFGListUtil_OpenBestWindow()
+	end
+	
+	local categoryID = nil
+	
+	local categories = C_LFGList.GetAvailableCategories()
+	for i=1, #categories do
+		if C_LFGList.GetCategoryInfo(categories[i]) == QUESTS_LABEL then
+			categoryID = categories[i]
+			break
+		end
+	end
+
+	local panel = LFGListFrame.CategorySelection
+	LFGListCategorySelection_SelectCategory(panel, categoryID, 0)
+	LFGListCategorySelection_StartFindGroup(panel, tostring(questID))
+	
+	searchQuestID = questID
+end
+WorldQuestList.LFG_Search = WQL_LFG_Search
+
+WorldQuestList.LFG_LastResult = {}
+
+QuestCreationBox:RegisterEvent("LFG_LIST_SEARCH_RESULTS_RECEIVED")
+QuestCreationBox:RegisterEvent("QUEST_REMOVED")
+--QuestCreationBox:RegisterEvent("ADDON_LOADED")
+QuestCreationBox:SetScript("OnEvent",function (self,event,arg1)
+	if event == "LFG_LIST_SEARCH_RESULTS_RECEIVED" then
+		local total,results = C_LFGList.GetSearchResults()
+		if total == 0 and searchQuestID and (VWQL and not VWQL.DisableLFG) then
+			isAfterSearch = true
+		else
+			isAfterSearch = nil
+			searchQuestID = nil
+		end
+	elseif event == "QUEST_REMOVED" then
+		if not VWQL or VWQL.DisableLFG then
+			return
+		end
+		if arg1 then
+			local name = select(5,C_LFGList.GetActiveEntryInfo())
+			if name and name == tostring(arg1) and not QuestCreationBox:IsVisible() then
+				QuestCreationBox.Text1:SetText("WQL")
+				QuestCreationBox.Text2:SetText("")
+				QuestCreationBox.PartyLeave:Show()
+
+				QuestCreationBox:Show()
+				QuestCreationBox:SetSize(350,60)
+			end
+		end
+	end
+end)
+
+function R()
+QuestCreationBox:GetScript("OnEvent")(QuestCreationBox,"QUEST_REMOVED",tonumber(select(5,C_LFGList.GetActiveEntryInfo()),nil))
+end
+
+LFGListSearchPanelScrollFrame.StartGroupButton:HookScript("OnClick",function()
+	if isAfterSearch then
+		PVEFrame_ToggleFrame()
+		WQL_LFG_StartQuest(searchQuestID)
+	end
+end)
+LFGListSearchPanelScrollFrame.StartGroupButton:HookScript("OnHide",function()
+	C_Timer.After(0.1,function()
+		isAfterSearch = nil	
+		searchQuestID = nil
+	end)
+end)
+
+local objectiveTrackerButtons = {}
+WorldQuestList.LFG_objectiveTrackerButtons = objectiveTrackerButtons
+
+local function objectiveTrackerButtons_OnClick(self,button)
+	if C_LFGList.GetActiveEntryInfo() then
+		--if LFGListUtil_CanListGroup() then
+		--	C_LFGList.RemoveListing()
+		--end
+		return
+	end
+	if button == "RightButton" then
+		WorldQuestList.LFG_StartQuest(self.questID)
+	else
+		WorldQuestList.LFG_Search(self.questID)
+	end
+end
+
+local function ObjectiveTracker_Update_hook(reason, questID)
+	for _,b in pairs(objectiveTrackerButtons) do
+		if b:IsShown() and (b.questID ~= b.parent.id or not VWQL or VWQL.DisableLFG) then
+			b:Hide()
+		end
+	end
+	if not VWQL or VWQL.DisableLFG then
+		return
+	end
+	if reason and reason ~= 1 then
+		for _,module in pairs(ObjectiveTrackerFrame.MODULES) do
+			if module.usedBlocks then
+				for _,block in pairs(module.usedBlocks) do
+					local questID = block.id
+					if questID and QuestUtils_IsQuestWorldQuest(questID) then
+						local b = objectiveTrackerButtons[block]
+						if not b then
+							b = CreateFrame("Button",nil,block)
+							objectiveTrackerButtons[block] = b
+							b:SetSize(24,24)
+							b:SetPoint("TOPRIGHT",-16,0)
+							b:SetScript("OnClick",objectiveTrackerButtons_OnClick)
+							b:RegisterForClicks("LeftButtonDown","RightButtonUp")
+							b.parent = block
+							
+							b.HighlightTexture = b:CreateTexture()
+							b.HighlightTexture:SetTexture("Interface\\Buttons\\UI-Common-MouseHilight")
+							b.HighlightTexture:SetSize(24,24)
+							b.HighlightTexture:SetPoint("CENTER")
+							b:SetHighlightTexture(b.HighlightTexture,"ADD")
+							
+							b.texture = b:CreateTexture(nil, "BACKGROUND")
+							b.texture:SetPoint("CENTER")
+							b.texture:SetSize(24,24)
+							--b.texture:SetAtlas("socialqueuing-icon-eye")
+							b.texture:SetAtlas("hud-microbutton-LFG-Up")
+						end
+						b.questID = questID
+						b:Show()
+					end
+				end
+			end
+		end
+	end
+end
+
+hooksecurefunc("ObjectiveTracker_Update", ObjectiveTracker_Update_hook)
+C_Timer.After(5,function() ObjectiveTracker_Update_hook(2) end)

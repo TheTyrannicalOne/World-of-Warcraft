@@ -1,5 +1,33 @@
 Changes since tag 8.0.0
 
+commit 9b6760fd782660ebbafa8d357472494d183e0402
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Jul 20 01:30:21 2018 +0200
+
+    Omega via svn r17630:
+    Fixed some errors in kara
+
+commit ddc709baf1874cc139c655f398202bba3f2eb4e2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jul 19 06:12:51 2018 +0200
+
+    Omega via svn r17629:
+    Fix a bug where PARTY_KILL would be registered as a regular event instead of CLEU event
+
+commit f1b6a563947e4686dc2134d7b4820031c90e1049
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jul 19 05:30:13 2018 +0200
+
+    Omega via svn r17628:
+    fix elisande error
+
+commit 8063d1699965622683e6bfc2528ac25c774edf00
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Jul 19 05:25:20 2018 +0200
+
+    Omega via svn r17627:
+    Remove invalid spell
+
 commit 65dab7c8e1c5b5a8d333b01c91ca6c06fa9a60b3
 Author: subversion <svn@deadlybossmods.com>
 Date:   Wed Jul 18 00:58:27 2018 +0200

@@ -812,7 +812,7 @@ local function GetUpdateLure()
 				local NextLure, NextState;
 				local pole, tempenchant = FL:GetPoleBonus();
 				local continent = FL:GetCurrentMapContinent()
-				local bigdraenor = (GSB("BigDraenor") and (continent == 572 or continent == 619));
+				local bigdraenor = (GSB("BigDraenor") and (continent == FBConstants.DRAENOR));
 				local state, bestlure = FL:FindBestLure(tempenchant, LureState, false, bigdraenor);
 				-- If we could use a lure based on skill, or we lost a fish.
 				if ( DoEscaped or not FL:HasLureBuff() ) then

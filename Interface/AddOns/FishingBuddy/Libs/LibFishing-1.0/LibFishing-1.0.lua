@@ -7,7 +7,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 --]]
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 90996
+local MINOR_VERSION = 90997
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -1194,6 +1194,16 @@ function FishLib:GetWorldDistance(zone, x1, y1, x2, y2)
 	return HBD:GetWorldDistance(zone, x1, y1, x2, y2)
 end
 
+local continent_map = {
+	[12] = 1,		-- Kalimdor
+	[13] = 2,		-- Eastern Kingons
+	[101] = 3,		-- Outland
+	[113] = 4,		-- Northrend
+	[276] = 5,      -- The Maelstrom
+	[424] = 6,		-- Pandaria
+	[572] = 7,		-- Draenor
+	[619] = 8,		-- Broken Isles
+}
 
 -- Continents
 -- Pandaria, 6, 424
@@ -1205,9 +1215,10 @@ function FishLib:GetCurrentMapContinent()
 	else
 		local mapID = self:GetCurrentMapId()
 		if HBD.mapData[mapId] and mapID then
-			return HBD.mapData[mapId].parent
+			local parent = HBD.mapData[mapId].parent
+			return continent_map[parent] or -1, parent
 		else
-			return 0
+			return -1, -1
 		end
 	end
 end
@@ -1315,17 +1326,10 @@ local subzoneskills = {
 local DEFAULT_FISHING = 950;
 function FishLib:GetCurrentFishingLevel()
 	local mapID = self:GetCurrentMapId()
-	local continent = self:GetCurrentMapContinent()
+	local continent, _ = self:GetCurrentMapContinent()
 	local _, subzone = self:GetZoneInfo()
-	local draenor
 
-	if select(4, GetBuildInfo()) < 80000 then
-		draenor = 7
-	else
-		draenor = 572
-	end
-
-	if (continent ~= draenor and subzoneskills[subzone]) then
+	if (continent ~= 7 and subzoneskills[subzone]) then
 		return subzoneskills[subzone];
 	else
 		return FishingLevels[mapID] or DEFAULT_FISHING;

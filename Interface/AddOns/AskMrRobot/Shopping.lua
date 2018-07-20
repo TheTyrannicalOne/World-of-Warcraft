@@ -210,13 +210,16 @@ local function renderShopSection(list, scroll, header)
 		panel:AddChild(btn)
 		btn:SetPoint("LEFT", icon.frame, "RIGHT", 5, 0)
 		
-		Amr.GetItemInfo(itemId, function(obj, name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture)					
-			-- set icon, name, and a tooltip
-			obj.itemIcon:SetIcon(texture)
-			obj.itemText:SetText(link:gsub("%[", ""):gsub("%]", ""))
-			obj.itemText:SetUserData("itemName", name)
-			Amr:SetItemTooltip(obj.itemText, link)
-		end, { itemIcon = icon, itemText = btn })
+		local item = Item:CreateFromItemID(itemId)		
+		if item then
+			local itemLink = item:GetItemLink()
+			if itemLink then
+				icon:SetIcon(item:GetItemIcon())
+				btn:SetText(itemLink:gsub("%[", ""):gsub("%]", ""))
+				btn:SetUserData("itemName", item:GetItemName())
+				Amr:SetItemTooltip(btn, itemLink)
+			end
+		end
 	end
 	
 end
@@ -362,7 +365,7 @@ end
 
 -- compare gear to everything the player owns, and return the minimum gems/enchants/materials needed to optimize, 
 -- grouped by inventory ID so that we can combine multiple specs without double-counting
-local function getShoppingData(player, gear, spec)
+local function getShoppingData(player, gear)
 
 	local ret = {}
 	
@@ -379,8 +382,7 @@ local function getShoppingData(player, gear, spec)
 		if not optimalItem.relicBonusIds and (not matchItem or not matchItem.relicBonusIds) then
 			for i = 1, 3 do
 				local g = optimalItem.gemIds[i]
-				local isGemEquipped = g ~= 0 and matchItem and matchItem.gemIds and matchItem.gemIds[i] == g
-				
+				local isGemEquipped = g == 0 or (matchItem and matchItem.gemIds and matchItem.gemIds[i] == g)
 				if not isGemEquipped then
 					if not ret[inventoryId] then
 						ret[inventoryId] = { gems = {}, enchants = {}, materials = {} }
@@ -428,9 +430,9 @@ function Amr:UpdateShoppingData(player)
 	local enchantItemIdToId = {}
 	
 	for i, spec in ipairs(required.specs) do
-		local gear = Amr.db.char.GearSets[spec]
+		local gear = Amr.db.char.GearSets[i]
 		if gear then
-			required.stuff[i] = getShoppingData(player, gear, spec)
+			required.stuff[i] = getShoppingData(player, gear)
 		else
 			required.stuff[i] = {}
 		end

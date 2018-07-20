@@ -191,8 +191,8 @@ FishingItems[85973] = {
 	setting = "UsePandarenCharm",
 	usable = function(item)
 			-- only usable in Pandaria
-			local C = FL:GetCurrentMapContinent();
-			return (C == 424);
+			local C, _ = FL:GetCurrentMapContinent();
+			return (C == FBConstants.PANDARIA);
 		end,
 	["default"] = true,
 };
@@ -205,8 +205,8 @@ FishingItems[122742] = {
 		end,
 	usable = function(item)
 			-- only usable in Draenor
-			local C = FL:GetCurrentMapContinent();
-			return (C == 572);
+			local C, _ = FL:GetCurrentMapContinent();
+			return (C == FBConstants.DRAENOR);
 		end,
 	["default"] = false,
 };
@@ -470,7 +470,7 @@ local seascorpion = {
 };
 
 local function CurrentSpecialBait()
-	local continent = GetCurrentMapContinent();
+	local continent, _ = FL:GetCurrentMapContinent();
 	local baits = SpecialBait[continent];
 	if (baits) then
 		for _,id in ipairs(baits) do
@@ -484,7 +484,7 @@ local function CurrentSpecialBait()
 end
 
 local function CheckSpecialBait(info, buff, need)
-	local continent = GetCurrentMapContinent();
+	local continent, _ = FL:GetCurrentMapContinent();
 	if (SpecialBait[continent]) then
 		if ( GSB("DraenorBaitMaintainOnly") and LastSpecialBait ) then
 			return true, LastSpecialBait;
@@ -499,7 +499,7 @@ end
 local function VerifySpecialBait(info, checkscorpion)
 	if (not IsQuestFishing()) then
 		if (GSB("EasyLures") and GSB("DraenorBait")) then
-			local continent = GetCurrentMapContinent();
+			local continent, _ = FL:GetCurrentMapContinent();
 			if ( GSB("DraenorBaitMaintainOnly") ) then
 				local baitid = CurrentSpecialBait();
 				if ( not baitid and LastSpecialBait ) then
@@ -509,7 +509,7 @@ local function VerifySpecialBait(info, checkscorpion)
 				else
 					LastSpecialBait = baitid;
 				end
-			elseif (continent == 7 ) then
+			elseif (continent == FBConstants.DRAENOR ) then
 				local mapId, subzone = FL:GetBaseZoneInfo();
 				if ( checkscorpion ) then
 					return (seascorpion[mapId] and seascorpion[mapId][subzone]);

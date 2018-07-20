@@ -10,11 +10,11 @@ HandyNotes_TreasureHunterDB = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Bathal - Argent Dawn"] = {
@@ -35,15 +35,15 @@ HandyNotes_TreasureHunterDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Fantastiburo - Argent Dawn"] = {
-		},
-		["Tyrannithal - Argent Dawn"] = {
-		},
-		["Cowtastraphy - Argent Dawn"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 		["Shaekhan - Argent Dawn"] = {
 		},
-		["Shanyt - Zul'jin"] = {
+		["Cowtastraphy - Argent Dawn"] = {
+		},
+		["Tyrannithal - Argent Dawn"] = {
+		},
+		["Fantastiburo - Argent Dawn"] = {
 		},
 	},
 }

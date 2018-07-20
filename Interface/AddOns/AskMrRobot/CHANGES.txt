@@ -1,7 +1,7 @@
-changeset:   129:d9a059484b22
-tag:         v60
+changeset:   131:318c93e0cd6b
+tag:         v61
 user:        yellowfive
-date:        Wed Jul 18 13:08:22 2018 -0700
-summary:     Several bug fixes for 8.0.
+date:        Wed Jul 18 15:19:04 2018 -0700
+summary:     Fixed an issue with the shopping list.
 
 

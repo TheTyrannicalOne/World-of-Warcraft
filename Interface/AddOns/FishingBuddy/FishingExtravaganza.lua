@@ -33,9 +33,9 @@ Contests[1] = {
 	["dur"] = 2,
 	["fishid"] = 19807,
 	["count"] = 40,
-	["continent"] = "Eastern Kingdoms",
+	["continent"] = FBConstants.EASTERN_KINGDOMS,
 	["zones"] = { "Stranglethorn Vale", "The Cape of Stranglethorn", "Northern Stranglethorn" },
-	["mapIds"] = { 689, 673, 37 },
+	["mapIds"] = { 224, 210, 50 },
 	["kind"] = FL.SCHOOL_TASTY,
 	["setting"] = "STVTimer",
 	["name"] = FBConstants.EXTRAVAGANZA,
@@ -74,7 +74,7 @@ end
 local function IsContestZone()
 	if ( CurrentContest ) then
 		local mapId,_ = FishingBuddy.GetCurrentMapIdInfo();
-		local landmass = GetCurrentMapContinent();
+		local landmass, _ = FL:GetCurrentMapContinent();
 		-- Are we on the right continent?
 		if ( landmass == CurrentContest.continent ) then
 			-- if not zone limited, we're there
