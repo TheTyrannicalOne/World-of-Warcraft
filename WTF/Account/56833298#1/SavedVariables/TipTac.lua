@@ -42,7 +42,7 @@ TipTac_Config = {
 	["backdropInsets"] = 2.5,
 	["hideWorldTips"] = true,
 	["gradientTip"] = true,
-	["colSameGuild"] = "|cffff32ff",
+	["classification_rareelite"] = "+%s|r (Rare) ",
 	["showTalents"] = true,
 	["manaBar"] = false,
 	["gradientColor"] = {
@@ -51,7 +51,7 @@ TipTac_Config = {
 		0.8, -- [3]
 		0.2, -- [4]
 	},
-	["classColoredBorder"] = false,
+	["colSameGuild"] = "|cffff32ff",
 	["healthBarColor"] = {
 		0.3, -- [1]
 		0.9, -- [2]
@@ -62,7 +62,7 @@ TipTac_Config = {
 	["targetYouText"] = "<<YOU>>",
 	["hideUFTipsInCombat"] = false,
 	["top"] = 460.156231195646,
-	["classification_rareelite"] = "+%s|r (Rare) ",
+	["classColoredBorder"] = false,
 	["barFontFace"] = "Fonts\\ARIALN.TTF",
 	["colorNameByClass"] = false,
 	["optionsBottom"] = 658.106306185674,

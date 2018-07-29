@@ -396,7 +396,7 @@ FishingInit.ConvertToMapId = function()
 				known[mapId] = name
 				local zidm = FishingBuddy.ZoneMarkerTo(zidx)
 				local newzidm = FishingBuddy.ZoneMarkerTo(mapId)
-				local szcount = FishingBuddy_Info['SubZones'][zidm]
+				local szcount = FishingBuddy_Info['SubZones'][zidm] or 0
 				subzones[newzidm] = szcount
 				totals[newzidm] = FishingBuddy_Info['FishTotals'][zidm]
 				if FishingBuddy_Info['FishSchools'] then
@@ -452,6 +452,93 @@ FishingInit.UpdateFishingDB = function()
 	-- for handling uiMapIDs.
 	-- Still doesn't help use for subzone names though :-(
 	FishingInit.ConvertToMapId()
+
+	if (version < 19500) then
+		-- Possible double subzones
+		local founddump = false
+		local counter = {}
+		local dups = {}
+		local fisubzones = FishingBuddy_Info['SubZones']
+		for sidm,data in pairs(fisubzones) do
+			if type(data) ~= "number" then
+				local mapId, _ = zmex(sidm)
+				if not counter[mapId] then
+					counter[mapId] = { sidm }
+				else
+					founddup = true
+					dups[mapId] = true
+					tinsert(counter[mapId], sidm)
+				end
+			end
+		end
+
+		if founddup then
+			local ft = FishingBuddy_Info["FishTotals"]
+			for mapId,_ in pairs(dups) do
+				counters = counter[mapId]
+				table.sort(counters, function(a,b) return a>b end)
+				local sidm = counters[#counters]
+				if not FishingBuddy_Info['KnownZones'][mapId] then
+					FishingBuddy_Info['KnownZones'][mapId] = true
+				end
+				-- Remove the duplicates
+				zidm = zmto(mapId, 0)
+				for idx=#counters,2,-1 do
+					local badm = zmto(mapId, idx)
+					FishingBuddy_Info["FishingSkill"][badm] = nil
+					FishingBuddy_Info['SubZones'][badm] = nil
+					FishingBuddy_Info['SubZones'][zidm] = FishingBuddy_Info['SubZones'][zidm] - 1
+					if (FishingBuddy_Info["FishingHoles"][badm]) then
+						if (not FishingBuddy_Info["FishingHoles"][sidm]) then
+							FishingBuddy_Info["FishingHoles"][sidm] = {}
+						end
+						local fh = FishingBuddy_Info["FishingHoles"][sidm]
+						for fishid,count in pairs(FishingBuddy_Info["FishingHoles"][badm]) do
+							if not fh[fishid] then
+								fh[fishid] = 0
+							end
+							fh[fishid] = fh[fishid] + count
+						end
+						FishingBuddy_Info["FishingHoles"][badm] = nil
+					end
+					if (ft[badm]) then
+						ft[sidm] = (ft[sidm] or 0) + ft[badm]
+						ft[badm] = nil
+					end
+				end
+				-- Now make sure we don't have any holes in our subzone map
+				counter = {}
+				for sidm,data in pairs(fisubzones) do
+					if type(data) ~= "number" then
+						local mapId, _ = zmex(sidm)
+						if not counter[mapId] then
+							counter[mapId] = { sidm }
+						else
+							tinsert(counter[mapId], sidm)
+						end
+					end
+				end
+				for mapId,szidms in pairs(counter) do
+					local updates = { 'FishingSkill', 'SubZones', 'FishingHoles', 'FishTotals' }
+					table.sort(szidms)
+					local sidmcount = #szidms
+					local zidx, maxsidm = zmex(szidms[sidmcount])
+					if maxsidm > sidmcount then
+						for idx=1,sidmcount do
+							local sidm = zmto(zidx, idx)
+							local badm = szidms[idx]
+							if sidm < badm then
+								for _,update in ipairs(updates) do
+									FishingBuddy_Info[update][sidm] = FishingBuddy_Info[update][badm]
+									FishingBuddy_Info[update][badm] = nil
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
 
 	if (type(FishingBuddy_Player["Settings"]["TotalTimeFishing"]) ~= "number") then
 		FishingBuddy_Player["Settings"]["TotalTimeFishing"] = 1;
@@ -515,7 +602,7 @@ FishingInit.InitSortHelpers = function()
 		zone = FL:GetLocZone(mapId)
 		if not zone then
 			print("missing", mapId, name)
-		else	
+		else
 			FishingBuddy.MappedZones[zone] = mapId
 			tinsert(FishingBuddy.SortedZones, zone);
 			FishingBuddy.SortedByZone[zone] = {};
@@ -634,7 +721,7 @@ FishingBuddy.Initialize = function()
 		FishingBuddy.WatchUpdate();
 		-- debugging state
 		FishingBuddy.Debugging = FishingBuddy.BaseGetSetting("FishDebug");
-		
+
 		-- we don't need these functions anymore, gc 'em
 		FishingInit = nil;
 	end

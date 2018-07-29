@@ -1251,22 +1251,37 @@ function module:SetGold()
 
 		-- Local functions
 		local function formatMoney(money)
+			if db.Gold.Shorten then
+				local shortnum = function(v)
+					if v <= 9999 then
+						return v
+					elseif v >= 1000000 then
+						return format("%.1fM", v/1000000)
+					elseif v >= 10000 then
+						return format("%.1fk", v/1000)
+					end
+				end
+
+				return shortnum(money / 10000)
+			end
+
+
 			money = abs(money)
 			local gold, silver, copper = floor(money / 10000), mod(floor(money / 100), 100), mod(floor(money), 100)
 
 			if gold ~= 0 then
-				return format(db.Gold.ColorType and "%d|cffffd700g|r %d|cffc7c7cfs|r" or "%dg %ds", gold, silver)
+				return format(db.Gold.ColorType and "%s|cffffd700g|r %d|cffc7c7cfs|r" or "%sg %ds", BreakUpLargeNumbers(gold), silver)
 			elseif silver ~= 0 then
-				return format(db.Gold.ColorType and "%d|cffc7c7cfs|r %d|cffeda55fc|r" or "%ds %dc", silver, copper)
+				return format(db.Gold.ColorType and "%d|cffc7c7cfs|r %d|cffeda55fc|r" or "%ss %dc", silver, copper)
 			else
-				return format(db.Gold.ColorType and "%d|cffeda55fc|r" or "%dc", copper)
+				return format(db.Gold.ColorType and "%d|cffeda55fc|r" or "%sc", copper)
 			end
 		end
 
 		local function formatTooltipMoney(money)
 			money = abs(money)
 			local gold, silver, copper = floor(money / 10000), mod(floor(money / 100), 100), mod(floor(money), 100)
-			local cash = format("%d|cffffd700g|r %d|cffc7c7cfs|r %d|cffeda55fc|r", gold, silver, copper)
+			local cash = format("%s|cffffd700g|r %d|cffc7c7cfs|r %d|cffeda55fc|r", BreakUpLargeNumbers(gold), silver, copper)
 
 			return cash
 		end
@@ -2057,7 +2072,8 @@ function module:SetGF()
 					local a1, r1, g1, b1 = GF_Colors.OrderA[4], unpack(GF_Colors.OrderA)
 					local a2, r2, g2, b2 = 0, GameTooltip:GetBackdropColor()
 					if asc then r1,g1,b1,a1, r2,g2,b2,a2 = r2,g2,b2,a2, r1,g1,b1,a1 end
-					texOrder1:SetGradientAlpha("VERTICAL", r1,g1,b1,a1, r2,g2,b2,a2)
+					-- texOrder1:SetGradientAlpha("VERTICAL", r1,g1,b1,a1, r2,g2,b2,a2)
+					texOrder1:SetAlpha(0)
 				else
 					texOrder1:SetAlpha(0)
 				end
@@ -2831,8 +2847,8 @@ function module:SetEquipmentSets()
 
 		stat.UNIT_INVENTORY_CHANGED = function(self, unit)
 			local text = "No set equipped."
-			for set = 1,C_EquipmentSet.GetNumEquipmentSets() do
-				local name, _, setID, isEquipped, _, _, _, numMissing, _ = GetEquipmentSetInfo(set)
+			for set = 1, C_EquipmentSet.GetNumEquipmentSets() do
+				local name, _, setID, isEquipped, _, _, _, numMissing, _ = C_EquipmentSet.GetEquipmentSetInfo(set)
 				if isEquipped then
 					text = string.format("%s%s", db.EquipmentSets.Text, name)
 				end
@@ -3134,6 +3150,7 @@ module.defaults = {
 			FontSize = 12,
 			Outline = "NONE",
 			ColorType = false,
+			Shorten = false,
 			Color = {
 				r = 1,
 				g = 1,
@@ -3204,11 +3221,11 @@ module.defaults = {
 		},
 		WeaponInfo = {
 			Enable = false,
-			X = 610,
+			X = -350,
 			Y = 0,
 			InfoPanel = {
-				Horizontal = "Left",
-				Vertical = "Top",
+				Horizontal = "Right",
+				Vertical = "Bottom",
 			},
 			Font = "vibroceb",
 			FontSize = 12,
@@ -3223,11 +3240,11 @@ module.defaults = {
 		EquipmentSets = {
 			Enable = false,
 			Text = "Equipped Set: ",
-			X = 610,
+			X = -225,
 			Y = 0,
 			InfoPanel = {
-				Horizontal = "Left",
-				Vertical = "Top",
+				Horizontal = "Right",
+				Vertical = "Bottom",
 			},
 			Font = "vibroceb",
 			FontSize = 12,
@@ -3242,11 +3259,11 @@ module.defaults = {
 		LootSpec = {
 			Enable = false,
 			Text = "Loot Spec: ",
-			X = 610,
+			X = -75,
 			Y = 0,
 			InfoPanel = {
-				Horizontal = "Left",
-				Vertical = "Top",
+				Horizontal = "Right",
+				Vertical = "Bottom",
 			},
 			Font = "vibroceb",
 			FontSize = 12,
@@ -3656,7 +3673,7 @@ function module:LoadOptions()
 						ToggleStat("Currency")
 					end,
 					order = 2,
-				},
+				},				
 				Display = {
 					name = "Currency On Display",
 					desc = "Select the currency to display",
@@ -3919,12 +3936,24 @@ function module:LoadOptions()
 					end,
 					order = 4,
 				},
+				Shorten = {
+					name = "Shorten gold value",
+					desc = "Whether you want to shorten your gold number (8000 to 8k and etc...) or not.",
+					type = "toggle",
+					width = "full",
+					get = function() return db.Gold.Shorten end,
+					set = function(info, value)
+						db.Gold.Shorten = value
+						InfoStats.Gold:PLAYER_MONEY()
+					end,
+					order = 5,
+				},
 				GoldPlayerReset = {
 					name = "Reset Player",
 					desc = "Choose the player you want to clear Gold data for.\n",
 					type = "select",
 					disabled = StatDisabled,
-					order = 5,
+					order = 6,
 					values = goldPlayerArray,
 					get = function()
 						return goldPlayerArray[db.Gold.PlayerReset] or "ALL"
@@ -3937,12 +3966,12 @@ function module:LoadOptions()
 					name = "Reset",
 					type = "execute",
 					disabled = StatDisabled,
-					order = 6,
+					order = 7,
 					func = resetGold,
 				},
-				Position = PositionOptions(7),
-				Font = FontOptions(8),
-				Reset = ResetOption(9),
+				Position = PositionOptions(8),
+				Font = FontOptions(9),
+				Reset = ResetOption(10),
 			},
 		},
 		Guild = {

@@ -1,7 +1,23 @@
 
 DBMAQ20_AllSavedVars = {
 	["Shanyt-Argent Dawn"] = {
-		["talent1"] = "Arms",
+		["Rajaxx"] = {
+			{
+				["Enabled"] = true,
+				["Timer26550activeTColor"] = 3,
+				["SpecWarn25471youSWNote"] = true,
+				["Timer26550active"] = true,
+				["announceother25471target"] = true,
+				["announce25599spell"] = true,
+				["Timer25471targetTColor"] = 3,
+				["Yell25471"] = true,
+				["WarnWave"] = true,
+				["Timer25471target"] = true,
+				["SpecWarn25471youSWSound"] = 1,
+				["SpecWarn25471you"] = true,
+				["announce26550spell"] = true,
+			}, -- [1]
+		},
 		["Buru"] = {
 			{
 				["announceother96stack2"] = false,
@@ -20,23 +36,7 @@ DBMAQ20_AllSavedVars = {
 				["Timer96target2"] = false,
 			}, -- [1]
 		},
-		["Rajaxx"] = {
-			{
-				["Enabled"] = true,
-				["Timer26550activeTColor"] = 3,
-				["SpecWarn25471youSWNote"] = true,
-				["Timer26550active"] = true,
-				["announceother25471target"] = true,
-				["announce25599spell"] = true,
-				["Timer25471targetTColor"] = 3,
-				["Yell25471"] = true,
-				["WarnWave"] = true,
-				["Timer25471target"] = true,
-				["SpecWarn25471youSWSound"] = 1,
-				["SpecWarn25471you"] = true,
-				["announce26550spell"] = true,
-			}, -- [1]
-		},
+		["talent1"] = "Arms",
 		["Kurinnaxx"] = {
 			{
 				["Enabled"] = true,
@@ -54,14 +54,13 @@ DBMAQ20_AllSavedVars = {
 				["announceother25646stack"] = false,
 			}, -- [1]
 		},
-		["Moam"] = {
+		["Ayamiss"] = {
 			{
+				["Timer25725target"] = true,
+				["announce2stage"] = true,
+				["Timer25725targetTColor"] = 3,
+				["announceother25725target"] = true,
 				["Enabled"] = true,
-				["Timer25685activeTColor"] = 6,
-				["announce25685spell"] = true,
-				["Timer25685active"] = true,
-				["Timer25685nextTColor"] = 6,
-				["Timer25685next"] = true,
 			}, -- [1]
 		},
 		["Ossirian"] = {
@@ -76,13 +75,14 @@ DBMAQ20_AllSavedVars = {
 				["Enabled"] = true,
 			}, -- [1]
 		},
-		["Ayamiss"] = {
+		["Moam"] = {
 			{
-				["Timer25725target"] = true,
-				["announce2stage"] = true,
-				["Timer25725targetTColor"] = 3,
-				["announceother25725target"] = true,
 				["Enabled"] = true,
+				["Timer25685activeTColor"] = 6,
+				["announce25685spell"] = true,
+				["Timer25685active"] = true,
+				["Timer25685nextTColor"] = 6,
+				["Timer25685next"] = true,
 			}, -- [1]
 		},
 	},

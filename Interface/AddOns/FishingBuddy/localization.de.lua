@@ -25,8 +25,7 @@ FishingTranslations["deDE"] = {
 	CAUGHTTHISTOTAL = "Insgesamt:",
 	CLEANUP_DONEMSG = "Alte Einstellungen f\195\188r |c#RED#%s|r entfernt: %s.",
 	CLEANUP_NONEMSG = "Keine der alten Einstellungen bleiben vorhanden.",
-	CLEANUP_NOOLDMSG = "Es gibt keine alten Einstellungen f\\195\\188r den Spieler |c#GREEN#%s|r.\
-",
+	CLEANUP_NOOLDMSG = "Es gibt keine alten Einstellungen f\\195\\188r den Spieler |c#GREEN#%s|r.",
 	CLEANUP_WILLMSG = "Alte Einstellungen bleiben f\195\188r |c#RED#%s|r: %s.",
 	CLICKTOSWITCH_INFO = "Falls aktiviert, wird ein Linksklick die Ausr\195\188stungen wechseln, ansonsten wird er das Fishing-Buddy-Fenster \195\182ffnen.",
 	CLICKTOSWITCH_ONOFF = "Anklicken, um zu wechseln",

@@ -118,14 +118,22 @@ local QuestBaits = {
 	},
 };
 
-local objectiveMapID = { 941, 946, 947, 948, 949, 950 }
+local objectiveMapID =  {
+	525, -- [1]
+	535, -- [2]
+	539, -- [3]
+	542, -- [4]
+	543, -- [5]
+	550, -- [6]
+}
+
 local function IsQuestFishing(item)
 	-- Check for hookshot
 	if (GetItemCount(116755) > 0) then
 		-- Better Nat's quest checking by Bodar (Curse)
 		local questLogIndex = GetQuestLogIndexByID(36611);
 		if (questLogIndex > 0) then
-			local currentMapID = GetCurrentMapAreaID();
+			local currentMapID = FL:GetCurrentMapId();
 			local numObjectives = GetNumQuestLeaderBoards(questLogIndex);
 			for i = 1, numObjectives do
 				local text, objectiveType, finished = GetQuestLogLeaderBoard(i, questLogIndex);

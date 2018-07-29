@@ -251,36 +251,36 @@ local GetTexCoordSpark = function(degree, mirror)
 end
 
 local GetTexCoordFunctions =
-{
-  ["HORIZONTAL"] = function(startProgress, endProgress)
-    local TLx,  TLy = startProgress, 0;
-    local TRx,  TRy = endProgress, 0;
-    local BLx,  BLy = startProgress, 1;
-    local BRx,  BRy = endProgress, 1;
-    return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
-  end,
-  ["HORIZONTAL_INVERSE"] = function(startProgress, endProgress)
-    local TLx,  TLy = endProgress, 0;
-    local TRx,  TRy = startProgress, 0;
-    local BLx,  BLy = endProgress, 1;
-    local BRx,  BRy = startProgress, 1;
-    return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
-  end,
-  ["VERTICAL"] = function(startProgress, endProgress)
-    local TLx,  TLy = startProgress, 1;
-    local TRx,  TRy = startProgress, 0;
-    local BLx,  BLy = endProgress, 1;
-    local BRx,  BRy = endProgress, 0;
-    return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
-  end,
-  ["VERTICAL_INVERSE"] = function(startProgress, endProgress)
-    local TLx,  TLy = endProgress, 0;
-    local TRx,  TRy = endProgress, 1;
-    local BLx,  BLy = startProgress, 0;
-    local BRx,  BRy = startProgress, 1;
-    return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
-  end
-}
+  {
+    ["HORIZONTAL"] = function(startProgress, endProgress)
+      local TLx,  TLy = startProgress, 0;
+      local TRx,  TRy = endProgress, 0;
+      local BLx,  BLy = startProgress, 1;
+      local BRx,  BRy = endProgress, 1;
+      return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
+    end,
+    ["HORIZONTAL_INVERSE"] = function(startProgress, endProgress)
+      local TLx,  TLy = endProgress, 0;
+      local TRx,  TRy = startProgress, 0;
+      local BLx,  BLy = endProgress, 1;
+      local BRx,  BRy = startProgress, 1;
+      return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
+    end,
+    ["VERTICAL"] = function(startProgress, endProgress)
+      local TLx,  TLy = startProgress, 1;
+      local TRx,  TRy = startProgress, 0;
+      local BLx,  BLy = endProgress, 1;
+      local BRx,  BRy = endProgress, 0;
+      return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
+    end,
+    ["VERTICAL_INVERSE"] = function(startProgress, endProgress)
+      local TLx,  TLy = endProgress, 0;
+      local TRx,  TRy = endProgress, 1;
+      local BLx,  BLy = startProgress, 0;
+      local BRx,  BRy = startProgress, 1;
+      return TLx, TLy, BLx, BLy, TRx, TRy, BRx, BRy;
+    end
+  }
 
 local anchorAlignment = {
   ["HORIZONTAL"] = { "TOPLEFT", "BOTTOMLEFT", "RIGHT" },
@@ -1287,19 +1287,11 @@ local function modify(parent, region, data)
 
     -- Save custom text function
     region.UpdateCustomText = function()
-      -- Evaluate and update text
       WeakAuras.ActivateAuraEnvironment(region.id, region.cloneId, region.state);
-      local ok, custom = xpcall(customTextFunc, geterrorhandler(), region.expirationTime, region.duration,
-        values.progress, values.duration, values.name, values.icon, values.stacks);
-      if (not ok) then
-        custom = "";
-      end
+      values.custom = {select(2, xpcall(customTextFunc, geterrorhandler(), region.expirationTime, region.duration,
+        values.progress, values.duration, values.name, values.icon, values.stacks))}
       WeakAuras.ActivateAuraEnvironment(nil);
-      custom = WeakAuras.EnsureString(custom);
-      if custom ~= values.custom then
-        values.custom = custom;
-        UpdateText(region, data);
-      end
+      UpdateText(region, data);
     end
 
     -- Add/Remove custom text update

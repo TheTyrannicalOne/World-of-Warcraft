@@ -47,6 +47,12 @@ for k,v in pairs(RAID_CLASS_COLORS) do
 	Amr.Colors.Classes[k] = { R = v.r, G = v.g, B = v.b }
 end
 
+-- get colors for item qualities from WoW's constants
+Amr.Colors.Qualities = {}
+for k,v in pairs(ITEM_QUALITY_COLORS) do
+	Amr.Colors.Qualities[k] = { R = v.r, G = v.g, B = v.b }
+end
+
 -- helper to take 0-1 value and turn into 2-digit hex value
 local function decToHex(num)
 	num = math.ceil(num * 255)
@@ -171,7 +177,7 @@ local function createMainWindow()
 	f:AddChild(lblStatus)
 	lblStatus:SetWidth(900)
 	lblStatus:SetFont(Amr.CreateFont("Italic", 12, Amr.Colors.TextTan))
-	lblStatus:SetText("Ask Mr. Robot " .. L.MainStatusText("v" .. GetAddOnMetadata(Amr.ADDON_NAME, "Version"), "https://www.askmrrobot.com/wow/addon"))
+	lblStatus:SetText("Ask Mr. Robot " .. L.MainStatusText("v" .. GetAddOnMetadata(Amr.ADDON_NAME, "Version"), "https://www.askmrrobot.com/addon"))
 	lblStatus:SetJustifyH("CENTER")
 	lblStatus:SetWordWrap(false)
 	lblStatus:SetPoint("TOP", f.content, "BOTTOM")

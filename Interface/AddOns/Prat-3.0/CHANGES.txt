@@ -1,19 +1,7 @@
-changeset:   1149:fe402521b2ac
-tag:         3.5.71
+changeset:   1168:656b03a1110b
+tag:         3.7.7
 user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Tue Jun 26 16:07:38 2018 -0700
-summary:     Dim the "say grats" link a bit.
-
-
-changeset:   1148:cca3df1f5abf
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Tue Jun 26 14:50:48 2018 -0700
-summary:     Add a nil check, and fix spelling errors
-
-
-changeset:   1147:ad01beed1f11
-user:        sylvanaar <sylvanaar@mindspring.com>
-date:        Tue Jun 26 14:33:50 2018 -0700
-summary:     Make the grats link more expressive.
+date:        Sat Jul 28 11:50:36 2018 -0700
+summary:     Remove code related to CHAT_MSG_PARTY_GUIDE
 
 

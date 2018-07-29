@@ -29,7 +29,7 @@ VWQL = {
 		},
 	},
 	["Sort"] = 3,
-	["VERSION"] = 60,
+	["VERSION"] = 67,
 	["Jingojaggot-Zul'jin"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -88,14 +88,14 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Shaekhan-ArgentDawn"] = {
+	["Zulbathal-Zul'jin"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
 		["FilterType"] = {
 		},
 	},
-	["Zulbathal-Zul'jin"] = {
+	["Shaekhan-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -117,6 +117,13 @@ VWQL = {
 		},
 	},
 	["DisableIconsGeneralMap947"] = true,
+	["Gangus-Runetotem"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
 	["Brotuss-Zul'jin"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -124,7 +131,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Gangus-Runetotem"] = {
+	["Beeronimo-Dalaran"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -145,7 +152,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Beeronimo-Dalaran"] = {
+	["Shaewong-Dalaran"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -159,13 +166,6 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Shaewong-Dalaran"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
 	["Sinh-Dalaran"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -173,12 +173,24 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
+	["Shanyt-Zul'jin"] = {
+		["Filter"] = 63,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
 	["Shanyt-ArgentDawn"] = {
-		["VERSION"] = 60,
+		["VERSION"] = 67,
 		["Filter"] = 63,
 		["Quests"] = {
 			[43798] = true,
-			[41697] = true,
+			[48985] = true,
+			[45379] = true,
+			[43600] = true,
+			[42779] = true,
+			[43943] = true,
+			[44939] = true,
 		},
 		["FilterType"] = {
 		},
@@ -204,13 +216,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Shanyt-Zul'jin"] = {
-		["Filter"] = 63,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
+	["DisableRewardIcons"] = true,
 	["Mulmok-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -218,14 +224,14 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Tyriinid-Dalaran"] = {
+	["Bathal-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
 		["FilterType"] = {
 		},
 	},
-	["Bathal-ArgentDawn"] = {
+	["Tyriinid-Dalaran"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},

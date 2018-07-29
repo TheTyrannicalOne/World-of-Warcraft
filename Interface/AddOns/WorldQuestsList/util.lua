@@ -227,7 +227,7 @@ function ELib:DropDown(parent,text)
 	
 	self.Button:SetScript("OnEnter",function(self) self.hl:Show() end)
 	self.Button:SetScript("OnLeave",function(self) self.hl:Hide() end)
-	self:SetScript("OnHide",function () ELib.ScrollDropDown.Close() end)
+	self:SetScript("OnHide",function (self) ELib.ScrollDropDown.AutoClose(self.Button) end)
 	self.Button:SetScript("OnClick",function(self) ELib.ScrollDropDown.ClickButton(self) end)
 	
 	self.Button.isButton = true
@@ -852,6 +852,11 @@ do
 		return self.List
 	end
 	
+	function ELib.ScrollDropDown.AutoClose(self)
+		if self and ELib.ScrollDropDown.DropDownList[1]:IsVisible() and ELib.ScrollDropDown.DropDownList[1].parent == self then
+			ELib.ScrollDropDown.Close()
+		end
+	end
 	function ELib.ScrollDropDown.Close()
 		ELib.ScrollDropDown.DropDownList[1]:Hide()
 		ELib.ScrollDropDown:CloseSecondLevel()

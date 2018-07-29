@@ -314,8 +314,4 @@ L["Yaris Darkclaw <Recruiter>"] = "亞里斯·暗爪 <招募員>"
 L["Yushi <Seal of Broken Fate Shipment>"] = "遊曦 <破碎命運徽印貨物>"
 L["Zen'kiki"] = "贊基奇"
 
--- ToC
-L["Description"] = "顯示各職業大廳裡 NPC 與主要的 POI 的位置"
-L["Title"] = "HandyNotes - 職業大廳"
-
 end

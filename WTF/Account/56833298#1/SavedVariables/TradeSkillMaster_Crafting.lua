@@ -1,24 +1,24 @@
 
 TradeSkillMaster_CraftingDB = {
 	["f@Horde - Zul'jin@gathering"] = {
-		["destroyingMats"] = {
-		},
 		["extraMats"] = {
+		},
+		["availableMats"] = {
 		},
 		["shortItems"] = {
 		},
-		["sessionOptions"] = {
-		},
-		["selectedSourceStatus"] = {
+		["gatheredMats"] = false,
+		["neededMats"] = {
 		},
 		["selectedSources"] = {
 		},
 		["professions"] = {
 		},
-		["neededMats"] = {
+		["selectedSourceStatus"] = {
 		},
-		["gatheredMats"] = false,
-		["availableMats"] = {
+		["sessionOptions"] = {
+		},
+		["destroyingMats"] = {
 		},
 	},
 	["g@ @helpPlatesShown"] = {
@@ -37,16 +37,35 @@ TradeSkillMaster_CraftingDB = {
 		["collapsed"] = {
 		},
 	},
-	["g@ @profitPercent"] = 0,
-	["f@Horde - Zul'jin@professionScanCache"] = {
+	["g@ @ignoreGuilds"] = {
 	},
-	["f@Horde - Zul'jin@playerProfessions"] = {
+	["f@Alliance - Darkspear@gathering"] = {
+		["extraMats"] = {
+		},
+		["availableMats"] = {
+		},
+		["shortItems"] = {
+		},
+		["gatheredMats"] = false,
+		["neededMats"] = {
+		},
+		["selectedSources"] = {
+		},
+		["professions"] = {
+		},
+		["selectedSourceStatus"] = {
+		},
+		["sessionOptions"] = {
+		},
+		["destroyingMats"] = {
+		},
 	},
+	["f@Horde - Argent Dawn@buyAH"] = false,
 	["f@Horde - Zul'jin@queueStatus"] = {
 		["collapsed"] = {
 		},
 	},
-	["f@Horde - Zul'jin@disableCheckBox"] = false,
+	["f@Alliance - Darkspear@disableCheckBox"] = false,
 	["f@Alliance - Darkspear@crafts"] = {
 	},
 	["g@ @defaultMatCostMethod"] = "min(dbmarket, crafting, vendorbuy, convert(dbmarket))",
@@ -54,6052 +73,7 @@ TradeSkillMaster_CraftingDB = {
 		["collapsed"] = {
 		},
 	},
-	["f@Alliance - Darkspear@gathering"] = {
-		["destroyingMats"] = {
-		},
-		["extraMats"] = {
-		},
-		["shortItems"] = {
-		},
-		["sessionOptions"] = {
-		},
-		["selectedSourceStatus"] = {
-		},
-		["selectedSources"] = {
-		},
-		["professions"] = {
-		},
-		["neededMats"] = {
-		},
-		["gatheredMats"] = false,
-		["availableMats"] = {
-		},
-	},
-	["f@Alliance - Darkspear@mats"] = {
-	},
-	["f@Horde - Argent Dawn@buyAH"] = false,
-	["f@Horde - Zul'jin@ignoreDECheckBox"] = false,
-	["_version"] = 7,
-	["f@Horde - Argent Dawn@ignoreIntermediate"] = false,
-	["g@ @showingDefaultFrame"] = false,
-	["g@ @queueSort"] = 1,
-	["f@Alliance - Darkspear@playerProfessions"] = {
-		["Shathiel"] = {
-			["Cooking"] = {
-				["isSecondary"] = true,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-			["First Aid"] = {
-				["isSecondary"] = true,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-		},
-	},
-	["f@Horde - Zul'jin@ignoreAlts"] = false,
-	["f@Horde - Argent Dawn@crafts"] = {
-		[139750] = {
-			["mats"] = {
-				["i:72096"] = 9,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95357",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Hook",
-		},
-		[45557] = {
-			["mats"] = {
-				["i:43010"] = 2,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34756",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spiced Worm Burger",
-		},
-		[124233] = {
-			["mats"] = {
-				["i:85583"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81412",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blanched Needle Mushrooms",
-		},
-		[88016] = {
-			["mats"] = {
-				["i:53072"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62666",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Delicious Sagefish Tail",
-		},
-		[145308] = {
-			["mats"] = {
-				["i:102540"] = 5,
-				["i:102541"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101745",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mango Ice",
-		},
-		[139751] = {
-			["mats"] = {
-				["i:72096"] = 15,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95358",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Spatulas",
-		},
-		[57438] = {
-			["mats"] = {
-				["i:43011"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42997",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackened Worg Steak",
-		},
-		[180759] = {
-			["mats"] = {
-				["i:109137"] = 6,
-				["i:109138"] = 12,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:122346",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Jumbo Sea Dog",
-		},
-		[160958] = {
-			["mats"] = {
-				["i:109134"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111431",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hearty Elekk Steak",
-		},
-		[145309] = {
-			["mats"] = {
-				["i:102538"] = 2,
-				["i:102539"] = 1,
-				["i:102541"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101747",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Farmer's Delight",
-		},
-		[53462] = {
-			["mats"] = {
-				["i:39334"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:39774",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Midnight Ink",
-		},
-		[9058] = {
-			["mats"] = {
-				["i:2318"] = 2,
-				["i:2320"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Handstitched Leather Cloak",
-			["players"] = {
-				["Tyrannithal"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:7276",
-		},
-		[104305] = {
-			["mats"] = {
-				["i:74837"] = 1,
-				["i:74841"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74649",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Braised Turtle",
-		},
-		[88017] = {
-			["mats"] = {
-				["i:62785"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62673",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Feathered Lure",
-		},
-		[45382] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39469"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:1180",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Stamina",
-		},
-		[145310] = {
-			["mats"] = {
-				["i:102536"] = 5,
-				["i:102543"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101749",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Stuffed Lushrooms",
-		},
-		[139753] = {
-			["mats"] = {
-				["i:72096"] = 20,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95359",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Decorative Spoons",
-		},
-		[180761] = {
-			["mats"] = {
-				["i:109140"] = 12,
-				["i:109137"] = 6,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:122348",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Buttered Sturgeon",
-		},
-		[2538] = {
-			["mats"] = {
-				["i:2672"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2679",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Mulmok"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Charred Wolf Meat",
-		},
-		[2539] = {
-			["mats"] = {
-				["i:2672"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2680",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spiced Wolf Meat",
-		},
-		[2540] = {
-			["mats"] = {
-				["i:769"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2681",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Mulmok"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Roasted Boar Meat",
-		},
-		[2541] = {
-			["mats"] = {
-				["i:2673"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2684",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Coyote Steak",
-		},
-		[2542] = {
-			["mats"] = {
-				["i:723"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:724",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Goretusk Liver Pie",
-		},
-		[33278] = {
-			["mats"] = {
-				["i:27669"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27636",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Bat Bites",
-		},
-		[45558] = {
-			["mats"] = {
-				["i:43011"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34757",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Very Burnt Worg",
-		},
-		[7126] = {
-			["mats"] = {
-				["i:2318"] = 3,
-				["i:2320"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Handstitched Leather Vest",
-			["players"] = {
-				["Tyrannithal"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:5957",
-		},
-		[2546] = {
-			["mats"] = {
-				["i:2677"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2687",
-			["players"] = {
-				["Shanyt"] = true,
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dry Pork Ribs",
-		},
-		[88018] = {
-			["mats"] = {
-				["i:53062"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62677",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fish Fry",
-		},
-		[2548] = {
-			["mats"] = {
-				["i:2677"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2685",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Succulent Pork Ribs",
-		},
-		[2549] = {
-			["mats"] = {
-				["i:1015"] = 2,
-			},
-			["numResult"] = 3,
-			["profession"] = "Cooking",
-			["itemString"] = "i:1017",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Seasoned Wolf Kabob",
-		},
-		[57423] = {
-			["mats"] = {
-				["i:41809"] = 2,
-				["i:41813"] = 2,
-				["i:43007"] = 1,
-				["i:41806"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43015",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fish Feast",
-		},
-		[57439] = {
-			["mats"] = {
-				["i:41801"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42998",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Cuttlesteak",
-		},
-		[160962] = {
-			["mats"] = {
-				["i:109136"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111433",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackrock Ham",
-		},
-		[58525] = {
-			["mats"] = {
-				["i:41810"] = 1,
-				["i:12808"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43492",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Haunted Herring",
-		},
-		[139756] = {
-			["mats"] = {
-				["i:72096"] = 35,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95363",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Barrel",
-		},
-		[104307] = {
-			["mats"] = {
-				["i:74857"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74651",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Shrimp Dumplings",
-		},
-		[88019] = {
-			["mats"] = {
-				["i:60838"] = 1,
-				["i:30817"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62649",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fortune Cookie",
-		},
-		[139757] = {
-			["mats"] = {
-				["i:72096"] = 30,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95364",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Saw",
-		},
-		[15861] = {
-			["mats"] = {
-				["i:12202"] = 1,
-				["i:159"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12212",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Jungle Stew",
-		},
-		[15865] = {
-			["mats"] = {
-				["i:12037"] = 1,
-				["i:2596"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12214",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mystery Stew",
-		},
-		[125067] = {
-			["mats"] = {
-				["i:74854"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86026",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Perfectly Cooked Instant Noodles",
-		},
-		[50605] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39774"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:1712",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Versatility II",
-		},
-		[38868] = {
-			["mats"] = {
-				["i:31671"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:31673",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crunchy Serpent",
-		},
-		[201525] = {
-			["mats"] = {
-				["i:124108"] = 5,
-				["i:133590"] = 5,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133561",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Deep-Fried Mossgill",
-		},
-		[33279] = {
-			["mats"] = {
-				["i:27671"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27651",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Buzzard Bites",
-		},
-		[48114] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39469"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:955",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Intellect",
-		},
-		[104308] = {
-			["mats"] = {
-				["i:74859"] = 1,
-				["i:74843"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74652",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fire Spirit Salmon",
-		},
-		[88020] = {
-			["mats"] = {
-				["i:62782"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62662",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Grilled Dragon",
-		},
-		[139759] = {
-			["mats"] = {
-				["i:72096"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95365",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Wire",
-		},
-		[57440] = {
-			["mats"] = {
-				["i:34736"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43005",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spiced Mammoth Treats",
-		},
-		[145061] = {
-			["mats"] = {
-				["i:74649"] = 5,
-				["i:74645"] = 5,
-				["i:74652"] = 5,
-				["i:74655"] = 5,
-				["i:75037"] = 5,
-				["i:74647"] = 5,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101661",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Deluxe Noodle Cart Kit",
-		},
-		[160966] = {
-			["mats"] = {
-				["i:109132"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111434",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pan-Seared Talbuk",
-		},
-		[139760] = {
-			["mats"] = {
-				["i:72096"] = 30,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95366",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Pot",
-		},
-		[104309] = {
-			["mats"] = {
-				["i:74850"] = 25,
-				["i:74662"] = 1,
-				["i:74863"] = 5,
-				["i:74838"] = 5,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74653",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Steamed Crab Surprise",
-		},
-		[145062] = {
-			["mats"] = {
-				["i:74653"] = 5,
-				["i:75038"] = 5,
-				["i:74646"] = 5,
-				["i:74648"] = 5,
-				["i:74650"] = 5,
-				["i:74656"] = 5,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101662",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pandaren Treasure Noodle Cart Kit",
-		},
-		[88021] = {
-			["mats"] = {
-				["i:62791"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62659",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hearty Seafood Soup",
-		},
-		[42302] = {
-			["mats"] = {
-				["i:27515"] = 1,
-			},
-			["numResult"] = 6,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33052",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fisherman's Feast",
-		},
-		[139761] = {
-			["mats"] = {
-				["i:72096"] = 40,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95367",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Cups",
-		},
-		[7751] = {
-			["mats"] = {
-				["i:6291"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6290",
-			["players"] = {
-				["Jingojaggot"] = true,
-				["Shanyt"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Brilliant Smallfish",
-		},
-		[160968] = {
-			["mats"] = {
-				["i:109135"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111436",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Braised Riverbeast",
-		},
-		[7755] = {
-			["mats"] = {
-				["i:6308"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:4593",
-			["players"] = {
-				["Shanyt"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Bristle Whisker Catfish",
-		},
-		[139762] = {
-			["mats"] = {
-				["i:72096"] = 65,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95368",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Bowls",
-		},
-		[33296] = {
-			["mats"] = {
-				["i:27439"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27667",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spicy Crawdad",
-		},
-		[104310] = {
-			["mats"] = {
-				["i:74839"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74654",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Wildfowl Roast",
-		},
-		[88022] = {
-			["mats"] = {
-				["i:58265"] = 1,
-				["i:159"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62674",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Highland Spirits",
-		},
-		[18245] = {
-			["mats"] = {
-				["i:13888"] = 1,
-				["i:159"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13933",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lobster Stew",
-		},
-		[201530] = {
-			["mats"] = {
-				["i:133593"] = 4,
-				["i:124117"] = 5,
-				["i:124111"] = 5,
-				["i:133588"] = 2,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133566",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Suramar Surf and Turf",
-		},
-		[139763] = {
-			["mats"] = {
-				["i:72096"] = 90,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95369",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Bells",
-		},
-		[57441] = {
-			["mats"] = {
-				["i:41807"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42999",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackened Dragonfin",
-		},
-		[58527] = {
-			["mats"] = {
-				["i:43007"] = 1,
-				["i:41800"] = 2,
-				["i:34736"] = 2,
-				["i:41803"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43478",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Gigantic Feast",
-		},
-		[201531] = {
-			["mats"] = {
-				["i:133591"] = 1,
-				["i:124120"] = 5,
-				["i:133590"] = 4,
-				["i:124112"] = 5,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133567",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Barracuda Mrglgagh",
-		},
-		[139764] = {
-			["mats"] = {
-				["i:72096"] = 50,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95370",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Crate",
-		},
-		[43772] = {
-			["mats"] = {
-				["i:27671"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33874",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Kibler's Bits",
-		},
-		[104311] = {
-			["mats"] = {
-				["i:74865"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74655",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Twin Fish Platter",
-		},
-		[160971] = {
-			["mats"] = {
-				["i:109131"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111438",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Clefthoof Sausages",
-		},
-		[201533] = {
-			["mats"] = {
-				["i:133593"] = 10,
-				["i:124109"] = 5,
-				["i:133589"] = 4,
-				["i:133592"] = 10,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["name"] = "Drogbar-Style Salmon",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:133569",
-		},
-		[48116] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39469"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:1181",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Versatility",
-		},
-		[104312] = {
-			["mats"] = {
-				["i:74662"] = 1,
-				["i:74844"] = 25,
-				["i:74833"] = 5,
-				["i:74860"] = 5,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74656",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Chun Tian Spring Rolls",
-		},
-		[88024] = {
-			["mats"] = {
-				["i:53068"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62654",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lavascale Fillet",
-		},
-		[201534] = {
-			["mats"] = {
-				["i:124109"] = 5,
-				["i:133565"] = 1,
-				["i:133588"] = 3,
-				["i:133589"] = 2,
-				["i:124118"] = 5,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133570",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "The Hungry Magister",
-		},
-		[57442] = {
-			["mats"] = {
-				["i:41807"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43000",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dragonfin Filet",
-		},
-		[58512] = {
-			["mats"] = {
-				["i:43501"] = 1,
-				["i:30817"] = 2,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43490",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tasty Cupcake",
-		},
-		[58528] = {
-			["mats"] = {
-				["i:41809"] = 2,
-				["i:43012"] = 2,
-				["i:43007"] = 1,
-				["i:41813"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43480",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Small Feast",
-		},
-		[201535] = {
-			["mats"] = {
-				["i:124104"] = 5,
-				["i:124102"] = 5,
-				["i:124101"] = 5,
-				["i:133566"] = 1,
-				["i:124103"] = 5,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133571",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Azshari Salad",
-		},
-		[58065] = {
-			["mats"] = {
-				["i:36782"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43268",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dalaran Clam Chowder",
-		},
-		[9059] = {
-			["mats"] = {
-				["i:2318"] = 2,
-				["i:2320"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Handstitched Leather Bracers",
-			["players"] = {
-				["Tyrannithal"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:7277",
-		},
-		[88025] = {
-			["mats"] = {
-				["i:53068"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62663",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lavascale Minestrone",
-		},
-		[2149] = {
-			["mats"] = {
-				["i:2318"] = 2,
-				["i:2320"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Handstitched Leather Boots",
-			["players"] = {
-				["Tyrannithal"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:2302",
-		},
-		[2152] = {
-			["mats"] = {
-				["i:2318"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Light Armor Kit",
-			["players"] = {
-				["Tyrannithal"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:2304",
-		},
-		[24801] = {
-			["mats"] = {
-				["i:20424"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:20452",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Smoked Desert Dumplings",
-		},
-		[201537] = {
-			["mats"] = {
-				["i:133607"] = 5,
-				["i:133590"] = 3,
-				["i:128304"] = 20,
-				["i:133568"] = 1,
-				["i:133589"] = 2,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133573",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Seed-Battered Fish Plate",
-		},
-		[45562] = {
-			["mats"] = {
-				["i:41812"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34761",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sauteed Goby",
-		},
-		[18238] = {
-			["mats"] = {
-				["i:4603"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6887",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spotted Yellowtail",
-		},
-		[18246] = {
-			["mats"] = {
-				["i:13893"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13934",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mightfish Steak",
-		},
-		[201538] = {
-			["mats"] = {
-				["i:133589"] = 5,
-				["i:124108"] = 5,
-				["i:124107"] = 5,
-				["i:133569"] = 1,
-				["i:133592"] = 10,
-				["i:124112"] = 5,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133574",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fishbrul Special",
-		},
-		[57443] = {
-			["mats"] = {
-				["i:43009"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43001",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tracker Snacks",
-		},
-		[24418] = {
-			["mats"] = {
-				["i:3667"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["name"] = "Heavy Crocolisk Stew",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:20074",
-		},
-		[160978] = {
-			["mats"] = {
-				["i:109143"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111441",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Grilled Gulper",
-		},
-		[7929] = {
-			["mats"] = {
-				["i:4306"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:6451",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Heavy Silk Bandage",
-		},
-		[42305] = {
-			["mats"] = {
-				["i:27516"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33053",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hot Buttered Trout",
-		},
-		[7428] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:10938"] = 1,
-				["i:10940"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Dodge",
-			["players"] = {
-				["Mulmok"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38768",
-		},
-		[64358] = {
-			["mats"] = {
-				["i:41805"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:45932",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Black Jelly",
-		},
-		[124053] = {
-			["mats"] = {
-				["i:74847"] = 5,
-				["i:74846"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:75037",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Jade Witch Brew",
-		},
-		[6414] = {
-			["mats"] = {
-				["i:5467"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["name"] = "Roasted Kodo Meat",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:5474",
-		},
-		[6416] = {
-			["mats"] = {
-				["i:5469"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5477",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Strider Stew",
-		},
-		[6418] = {
-			["mats"] = {
-				["i:5470"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5479",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crispy Lizard Tail",
-		},
-		[45563] = {
-			["mats"] = {
-				["i:41806"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34762",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Grilled Sculpin",
-		},
-		[15906] = {
-			["mats"] = {
-				["i:12037"] = 1,
-				["i:4402"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12217",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dragonbreath Chili",
-		},
-		[15910] = {
-			["mats"] = {
-				["i:12204"] = 2,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12215",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Heavy Kodo Stew",
-		},
-		[25704] = {
-			["mats"] = {
-				["i:21071"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:21072",
-			["players"] = {
-				["Shanyt"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Smoked Sagefish",
-		},
-		[124054] = {
-			["mats"] = {
-				["i:74661"] = 1,
-				["i:74849"] = 50,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:75038",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mad Brewer's Breakfast",
-		},
-		[20626] = {
-			["mats"] = {
-				["i:7974"] = 2,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:16766",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Undermine Clam Chowder",
-		},
-		[6458] = {
-			["mats"] = {
-				["i:1206"] = 1,
-				["i:4375"] = 2,
-				["i:4371"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Ornate Spyglass",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:5507",
-		},
-		[160983] = {
-			["mats"] = {
-				["i:109138"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111446",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Skulker Chowder",
-		},
-		[201544] = {
-			["mats"] = {
-				["i:124117"] = 5,
-				["i:133589"] = 2,
-				["i:133588"] = 2,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133557",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Salt & Pepper Shank",
-		},
-		[160984] = {
-			["mats"] = {
-				["i:111439"] = 5,
-				["i:111431"] = 5,
-				["i:109129"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111447",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Talador Surf and Turf",
-		},
-		[125141] = {
-			["mats"] = {
-				["i:74850"] = 50,
-				["i:74860"] = 10,
-				["i:74838"] = 10,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87226",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Banquet of the Grill",
-		},
-		[185704] = {
-			["mats"] = {
-				["i:124669"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:126934",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lemon Herb Filet",
-		},
-		[33284] = {
-			["mats"] = {
-				["i:27674"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27655",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ravager Dog",
-		},
-		[45564] = {
-			["mats"] = {
-				["i:41809"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34763",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Smoked Salmon",
-		},
-		[165456] = {
-			["mats"] = {
-				["i:39354"] = 3,
-				["i:43116"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:141644",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Assorted Glyphs",
-		},
-		[18239] = {
-			["mats"] = {
-				["i:13754"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13927",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Cooked Glossy Mightfish",
-		},
-		[18247] = {
-			["mats"] = {
-				["i:13889"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13935",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Baked Salmon",
-		},
-		[201546] = {
-			["mats"] = {
-				["i:124110"] = 5,
-				["i:133588"] = 3,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["name"] = "Pickled Stormray",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:133562",
-		},
-		[6500] = {
-			["mats"] = {
-				["i:5504"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5527",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Goblin Deviled Clams",
-		},
-		[48247] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:43115"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:37168",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mysterious Tarot",
-		},
-		[160986] = {
-			["mats"] = {
-				["i:111433"] = 5,
-				["i:111441"] = 5,
-				["i:109125"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111449",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackrock Barbecue",
-		},
-		[125142] = {
-			["mats"] = {
-				["i:74850"] = 100,
-				["i:74860"] = 20,
-				["i:74838"] = 20,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87228",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Banquet of the Grill",
-		},
-		[201547] = {
-			["mats"] = {
-				["i:133591"] = 2,
-				["i:124121"] = 5,
-				["i:133593"] = 3,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133563",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Faronaar Fizz",
-		},
-		[201541] = {
-			["mats"] = {
-				["i:133593"] = 1,
-				["i:124107"] = 5,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133577",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fighter Chow",
-		},
-		[145307] = {
-			["mats"] = {
-				["i:102542"] = 1,
-				["i:79246"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101748",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spiced Blossom Soup",
-		},
-		[13028] = {
-			["mats"] = {
-				["i:159"] = 1,
-				["i:3821"] = 1,
-			},
-			["numResult"] = 4,
-			["profession"] = "Cooking",
-			["itemString"] = "i:10841",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Goldthorn Tea",
-		},
-		[88031] = {
-			["mats"] = {
-				["i:53066"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62667",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mushroom Sauce Mudfish",
-		},
-		[201549] = {
-			["mats"] = {
-				["i:124120"] = 5,
-				["i:124119"] = 5,
-				["i:133589"] = 5,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["name"] = "Leybeque Ribs",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:133565",
-		},
-		[45561] = {
-			["mats"] = {
-				["i:41808"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34760",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Grilled Bonescale",
-		},
-		[201548] = {
-			["mats"] = {
-				["i:124119"] = 5,
-				["i:133589"] = 5,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["name"] = "Spiced Rib Roast",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:133564",
-		},
-		[18241] = {
-			["mats"] = {
-				["i:13758"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13930",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Filet of Redgill",
-		},
-		[3942] = {
-			["mats"] = {
-				["i:2592"] = 1,
-				["i:2841"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Whirring Bronze Gizmo",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4375",
-		},
-		[88028] = {
-			["mats"] = {
-				["i:53067"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62651",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lightly Fried Lurker",
-		},
-		[2544] = {
-			["mats"] = {
-				["i:2674"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2683",
-			["players"] = {
-				["Shanyt"] = true,
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crab Cake",
-		},
-		[125121] = {
-			["mats"] = {
-				["i:74845"] = 1,
-				["i:74839"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86070",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Wildfowl Ginseng Soup",
-		},
-		[3275] = {
-			["mats"] = {
-				["i:2589"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:1251",
-			["players"] = {
-				["Vadder"] = true,
-				["Mulmok"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Linen Bandage",
-		},
-		[140165] = {
-			["mats"] = {
-				["i:72096"] = 100,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95483",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Picks",
-		},
-		[3277] = {
-			["mats"] = {
-				["i:2592"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:3530",
-			["players"] = {
-				["Vadder"] = true,
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Wool Bandage",
-		},
-		[3278] = {
-			["mats"] = {
-				["i:2592"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:3531",
-			["players"] = {
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Heavy Wool Bandage",
-		},
-		[45565] = {
-			["mats"] = {
-				["i:41813"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34764",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Poached Nettlefish",
-		},
-		[125078] = {
-			["mats"] = {
-				["i:74832"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81406",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Roasted Barley Tea",
-		},
-		[185708] = {
-			["mats"] = {
-				["i:124669"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:126936",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sugar-Crusted Fish Feast",
-		},
-		[160989] = {
-			["mats"] = {
-				["i:109127"] = 1,
-				["i:111444"] = 5,
-				["i:111436"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111452",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sleeper Surprise",
-		},
-		[165304] = {
-			["mats"] = {
-				["i:39354"] = 3,
-				["i:39774"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:141644",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Assorted Glyphs",
-		},
-		[140166] = {
-			["mats"] = {
-				["i:72096"] = 75,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95484",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Frames",
-		},
-		[7828] = {
-			["mats"] = {
-				["i:6362"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:4594",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Rockscale Cod",
-		},
-		[160981] = {
-			["mats"] = {
-				["i:109139"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111444",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fat Sleeper Cakes",
-		},
-		[48248] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39469"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:37118",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Recall",
-		},
-		[58484] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39469"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:954",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Strength",
-		},
-		[124232] = {
-			["mats"] = {
-				["i:74660"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81411",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Peach Pie",
-		},
-		[125080] = {
-			["mats"] = {
-				["i:74852"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81414",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pearl Milk Tea",
-		},
-		[104301] = {
-			["mats"] = {
-				["i:74841"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74643",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sauteed Carrots",
-		},
-		[140167] = {
-			["mats"] = {
-				["i:72096"] = 25,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95485",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Pans",
-		},
-		[45549] = {
-			["mats"] = {
-				["i:34736"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34748",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mammoth Meal",
-		},
-		[7430] = {
-			["mats"] = {
-				["i:2840"] = 6,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Arclight Spanner",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:6219",
-		},
-		[6415] = {
-			["mats"] = {
-				["i:5468"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5476",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fillet of Frenzy",
-		},
-		[15863] = {
-			["mats"] = {
-				["i:12037"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12213",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Carrion Surprise",
-		},
-		[45566] = {
-			["mats"] = {
-				["i:41810"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34765",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pickled Fangtooth",
-		},
-		[88033] = {
-			["mats"] = {
-				["i:53064"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62660",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pickled Guppy",
-		},
-		[18243] = {
-			["mats"] = {
-				["i:159"] = 1,
-				["i:13759"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13931",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Nightfin Soup",
-		},
-		[140168] = {
-			["mats"] = {
-				["i:72096"] = 80,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95486",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Statue",
-		},
-		[139755] = {
-			["mats"] = {
-				["i:72096"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95362",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Needles",
-		},
-		[57437] = {
-			["mats"] = {
-				["i:41808"] = 3,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42996",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Snapper Extreme",
-		},
-		[6499] = {
-			["mats"] = {
-				["i:5503"] = 1,
-				["i:159"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5525",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Boiled Clams",
-		},
-		[125596] = {
-			["mats"] = {
-				["i:74864"] = 10,
-				["i:74841"] = 50,
-				["i:74834"] = 10,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87234",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Banquet of the Pot",
-		},
-		[62350] = {
-			["mats"] = {
-				["i:43011"] = 2,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:44953",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Worg Tartare",
-		},
-		[2795] = {
-			["mats"] = {
-				["i:2886"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2888",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Beer Basted Boar Ribs",
-		},
-		[50612] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39774"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:1711",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Stamina II",
-		},
-		[6412] = {
-			["mats"] = {
-				["i:5465"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5472",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Kaldorei Spider Kabob",
-		},
-		[104298] = {
-			["mats"] = {
-				["i:74833"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74642",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Charbroiled Tiger Steak",
-		},
-		[33286] = {
-			["mats"] = {
-				["i:27677"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27657",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackened Basilisk",
-		},
-		[92026] = {
-			["mats"] = {
-				["i:39774"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:64670",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Vanishing Powder",
-		},
-		[104306] = {
-			["mats"] = {
-				["i:75014"] = 5,
-				["i:74842"] = 25,
-				["i:74859"] = 5,
-				["i:74661"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74650",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mogu Fish Stew",
-		},
-		[124231] = {
-			["mats"] = {
-				["i:74851"] = 1,
-				["i:74866"] = 2,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81410",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Green Curry Fish",
-		},
-		[18240] = {
-			["mats"] = {
-				["i:13755"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13928",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Grilled Squid",
-		},
-		[33292] = {
-			["mats"] = {
-				["i:27429"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27663",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackened Sporefish",
-		},
-		[7418] = {
-			["mats"] = {
-				["i:38682"] = 1,
-				["i:10940"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Minor Health",
-			["players"] = {
-				["Mulmok"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:38679",
-		},
-		[46684] = {
-			["mats"] = {
-				["i:35562"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:35563",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Charred Bear Kabobs",
-		},
-		[59475] = {
-			["mats"] = {
-				["i:39354"] = 10,
-				["i:43117"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:43654",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tome of the Dawn",
-		},
-		[125597] = {
-			["mats"] = {
-				["i:74864"] = 20,
-				["i:74841"] = 100,
-				["i:74834"] = 20,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87236",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Banquet of the Pot",
-		},
-		[58485] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39774"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:2289",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Strength II",
-		},
-		[28267] = {
-			["mats"] = {
-				["i:22644"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:22645",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crunchy Spider Surprise",
-		},
-		[139747] = {
-			["mats"] = {
-				["i:72096"] = 15,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95354",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Wok",
-		},
-		[3929] = {
-			["mats"] = {
-				["i:2836"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Coarse Blasting Powder",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4364",
-		},
-		[3945] = {
-			["mats"] = {
-				["i:2838"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Heavy Blasting Powder",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4377",
-		},
-		[58565] = {
-			["mats"] = {
-				["i:39354"] = 10,
-				["i:43115"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:43515",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mystic Tome",
-		},
-		[3953] = {
-			["mats"] = {
-				["i:2592"] = 1,
-				["i:2841"] = 2,
-				["i:2319"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Bronze Framework",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4382",
-		},
-		[7754] = {
-			["mats"] = {
-				["i:6317"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6316",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Loch Frenzy Delight",
-		},
-		[3371] = {
-			["mats"] = {
-				["i:3173"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3220",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blood Sausage",
-		},
-		[88003] = {
-			["mats"] = {
-				["i:53071"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62661",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Baked Rockfish",
-		},
-		[88035] = {
-			["mats"] = {
-				["i:62780"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62653",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Salted Eye",
-		},
-		[88006] = {
-			["mats"] = {
-				["i:62778"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62676",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackened Surprise",
-		},
-		[53056] = {
-			["mats"] = {
-				["i:35949"] = 2,
-				["i:35948"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:39520",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Kungaloosh",
-		},
-		[201556] = {
-			["mats"] = {
-				["i:124105"] = 1,
-				["i:124121"] = 5,
-				["i:133592"] = 10,
-				["i:129100"] = 20,
-				["i:133567"] = 1,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133572",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Nightborne Delicacy Platter",
-		},
-		[45569] = {
-			["mats"] = {
-				["i:41802"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42942",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Baked Manta Ray",
-		},
-		[57703] = {
-			["mats"] = {
-				["i:43103"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:43115",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hunter's Ink",
-		},
-		[185705] = {
-			["mats"] = {
-				["i:124669"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:126935",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fancy Darkmoon Feast",
-		},
-		[124029] = {
-			["mats"] = {
-				["i:85506"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:85501",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Viseclaw Soup",
-		},
-		[125594] = {
-			["mats"] = {
-				["i:75014"] = 10,
-				["i:74844"] = 50,
-				["i:74857"] = 10,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87230",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Banquet of the Wok",
-		},
-		[64054] = {
-			["mats"] = {
-				["i:7974"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33004",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Clamlette Magnifique",
-		},
-		[10841] = {
-			["mats"] = {
-				["i:4338"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:8545",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Heavy Mageweave Bandage",
-		},
-		[88030] = {
-			["mats"] = {
-				["i:53067"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62657",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lurker Lunch",
-		},
-		[33287] = {
-			["mats"] = {
-				["i:27678"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27658",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Roasted Clefthoof",
-		},
-		[45567] = {
-			["mats"] = {
-				["i:43007"] = 1,
-				["i:41806"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34766",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Poached Northern Sculpin",
-		},
-		[33294] = {
-			["mats"] = {
-				["i:27437"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27665",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Poached Bluefish",
-		},
-		[88004] = {
-			["mats"] = {
-				["i:62783"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62665",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Basilisk Liverdog",
-		},
-		[88036] = {
-			["mats"] = {
-				["i:53064"] = 2,
-				["i:53068"] = 2,
-				["i:53070"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62290",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Seafood Magnifique Feast",
-		},
-		[230046] = {
-			["mats"] = {
-				["i:142336"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:142334",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spiced Falcosaur Omelet",
-		},
-		[15915] = {
-			["mats"] = {
-				["i:12206"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12216",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spiced Chili Crab",
-		},
-		[8238] = {
-			["mats"] = {
-				["i:6522"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6657",
-			["players"] = {
-				["Shanyt"] = true,
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Savory Deviate Delight",
-		},
-		[45571] = {
-			["mats"] = {
-				["i:43007"] = 1,
-				["i:41813"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34768",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spicy Blue Nettlefish",
-		},
-		[45695] = {
-			["mats"] = {
-				["i:2596"] = 1,
-				["i:2594"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34832",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Captain Rumsey's Lager",
-		},
-		[145311] = {
-			["mats"] = {
-				["i:102537"] = 5,
-				["i:102543"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101750",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fluffy Silkfeather Omelet",
-		},
-		[15935] = {
-			["mats"] = {
-				["i:12223"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["name"] = "Crispy Bat Wing",
-			["players"] = {
-				["Jingojaggot"] = true,
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:12224",
-		},
-		[125595] = {
-			["mats"] = {
-				["i:75014"] = 20,
-				["i:74844"] = 100,
-				["i:74857"] = 20,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87232",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Banquet of the Wok",
-		},
-		[7213] = {
-			["mats"] = {
-				["i:4655"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6038",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Giant Clam Scorcho",
-		},
-		[45560] = {
-			["mats"] = {
-				["i:41803"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34759",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Smoked Rockfin",
-		},
-		[201559] = {
-			["mats"] = {
-				["i:133607"] = 5,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133575",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dried Mackerel Strips",
-		},
-		[59478] = {
-			["mats"] = {
-				["i:39354"] = 10,
-				["i:43117"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:43655",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Book of Survival",
-		},
-		[4094] = {
-			["mats"] = {
-				["i:3404"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:4457",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Barbecued Buzzard Wing",
-		},
-		[33295] = {
-			["mats"] = {
-				["i:27438"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27666",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Golden Fish Sticks",
-		},
-		[88005] = {
-			["mats"] = {
-				["i:62784"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62670",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Beer-Basted Crocolisk",
-		},
-		[88037] = {
-			["mats"] = {
-				["i:62779"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62652",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Seasoned Crab",
-		},
-		[59480] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:43117"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:44142",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Strange Tarot",
-		},
-		[6413] = {
-			["mats"] = {
-				["i:5466"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5473",
-			["players"] = {
-				["Shanyt"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scorpid Surprise",
-		},
-		[36210] = {
-			["mats"] = {
-				["i:24477"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:30155",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Clam Bar",
-		},
-		[66036] = {
-			["mats"] = {
-				["i:44853"] = 1,
-				["i:46796"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:44836",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pumpkin Pie",
-		},
-		[57704] = {
-			["mats"] = {
-				["i:39338"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:43116",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Lion's Ink",
-		},
-		[37836] = {
-			["mats"] = {
-				["i:2678"] = 1,
-				["i:30817"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:30816",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spice Bread",
-		},
-		[7752] = {
-			["mats"] = {
-				["i:6303"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:787",
-			["players"] = {
-				["Jingojaggot"] = true,
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Slitherskin Mackerel",
-		},
-		[161000] = {
-			["mats"] = {
-				["i:109126"] = 1,
-				["i:111446"] = 5,
-				["i:111438"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111454",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Gorgrond Chowder",
-		},
-		[125117] = {
-			["mats"] = {
-				["i:74660"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86057",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sliced Peaches",
-		},
-		[3372] = {
-			["mats"] = {
-				["i:1468"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3663",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Murloc Fin Soup",
-		},
-		[3373] = {
-			["mats"] = {
-				["i:3667"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3664",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crocolisk Gumbo",
-		},
-		[33288] = {
-			["mats"] = {
-				["i:27681"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27659",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Warp Burger",
-		},
-		[124223] = {
-			["mats"] = {
-				["i:74851"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81400",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pounded Rice Cake",
-		},
-		[3376] = {
-			["mats"] = {
-				["i:3685"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3665",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Curiously Tasty Omelet",
-		},
-		[3377] = {
-			["mats"] = {
-				["i:2251"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3666",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Gooey Spider Cake",
-		},
-		[161001] = {
-			["mats"] = {
-				["i:109137"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111455",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Saberfish Broth",
-		},
-		[2543] = {
-			["mats"] = {
-				["i:159"] = 1,
-				["i:769"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:733",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Westfall Stew",
-		},
-		[50598] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39774"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:2290",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Intellect II",
-		},
-		[201562] = {
-			["mats"] = {
-				["i:133680"] = 3,
-				["i:133564"] = 3,
-				["i:133562"] = 3,
-				["i:133563"] = 3,
-				["i:133561"] = 3,
-				["i:133557"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133578",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hearty Feast",
-		},
-		[57433] = {
-			["mats"] = {
-				["i:41810"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42993",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spicy Fried Herring",
-		},
-		[104304] = {
-			["mats"] = {
-				["i:74856"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74644",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Swirling Mist Soup",
-		},
-		[25954] = {
-			["mats"] = {
-				["i:21153"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:21217",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sagefish Delight",
-		},
-		[124032] = {
-			["mats"] = {
-				["i:74865"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:85504",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Krasarang Fritters",
-		},
-		[161002] = {
-			["mats"] = {
-				["i:109137"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111456",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Grilled Saberfish",
-		},
-		[104300] = {
-			["mats"] = {
-				["i:74840"] = 25,
-				["i:74834"] = 5,
-				["i:74661"] = 1,
-				["i:74857"] = 5,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74646",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Black Pepper Ribs and Shrimp",
-		},
-		[33291] = {
-			["mats"] = {
-				["i:27425"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27662",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Feltail Delight",
-		},
-		[3934] = {
-			["mats"] = {
-				["i:2841"] = 8,
-				["i:818"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Flying Tiger Goggles",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4368",
-		},
-		[42296] = {
-			["mats"] = {
-				["i:27422"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33048",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Stewed Trout",
-		},
-		[124224] = {
-			["mats"] = {
-				["i:74852"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81401",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Yak Cheese Curds",
-		},
-		[2881] = {
-			["mats"] = {
-				["i:2934"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Leatherworking",
-			["name"] = "Light Leather",
-			["players"] = {
-				["Tyrannithal"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:2318",
-		},
-		[20916] = {
-			["mats"] = {
-				["i:8365"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:8364",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mithril Head Trout",
-		},
-		[88039] = {
-			["mats"] = {
-				["i:53072"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62671",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Severed Sagefish Head",
-		},
-		[105194] = {
-			["mats"] = {
-				["i:74833"] = 20,
-				["i:74849"] = 100,
-				["i:74863"] = 20,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:75016",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Pandaren Banquet",
-		},
-		[3977] = {
-			["mats"] = {
-				["i:4359"] = 1,
-				["i:2840"] = 2,
-				["i:774"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Crude Scope",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4405",
-		},
-		[180758] = {
-			["mats"] = {
-				["i:109137"] = 6,
-				["i:109143"] = 12,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:122345",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pickled Eel",
-		},
-		[3398] = {
-			["mats"] = {
-				["i:3731"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3727",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hot Lion Chops",
-		},
-		[3399] = {
-			["mats"] = {
-				["i:3731"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3728",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tasty Lion Steak",
-		},
-		[3400] = {
-			["mats"] = {
-				["i:3712"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3729",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Soothing Turtle Bisque",
-		},
-		[21175] = {
-			["mats"] = {
-				["i:12205"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:17222",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spider Sausage",
-		},
-		[125598] = {
-			["mats"] = {
-				["i:74847"] = 50,
-				["i:74839"] = 10,
-				["i:74859"] = 10,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87238",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Banquet of the Steamer",
-		},
-		[105190] = {
-			["mats"] = {
-				["i:74833"] = 10,
-				["i:74849"] = 50,
-				["i:74863"] = 10,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74919",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Pandaren Banquet",
-		},
-		[22480] = {
-			["mats"] = {
-				["i:12208"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:18045",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tender Wolf Steak",
-		},
-		[2547] = {
-			["mats"] = {
-				["i:1080"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:1082",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Redridge Goulash",
-		},
-		[45553] = {
-			["mats"] = {
-				["i:43012"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34752",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Rhino Dogs",
-		},
-		[124225] = {
-			["mats"] = {
-				["i:74866"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81402",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Toasted Fish Jerky",
-		},
-		[52739] = {
-			["mats"] = {
-				["i:39354"] = 2,
-				["i:39469"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Inscription",
-			["itemString"] = "i:38682",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Enchanting Vellum",
-		},
-		[66035] = {
-			["mats"] = {
-				["i:44853"] = 1,
-				["i:46793"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:44840",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Cranberry Chutney",
-		},
-		[173978] = {
-			["mats"] = {
-				["i:109131"] = 10,
-				["i:109133"] = 10,
-				["i:109134"] = 10,
-				["i:109132"] = 10,
-				["i:109136"] = 10,
-				["i:109135"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111457",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Feast of Blood",
-		},
-		[3922] = {
-			["mats"] = {
-				["i:2840"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Handful of Copper Bolts",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4359",
-		},
-		[3923] = {
-			["mats"] = {
-				["i:4359"] = 1,
-				["i:4357"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Rough Copper Bomb",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4360",
-		},
-		[3949] = {
-			["mats"] = {
-				["i:4375"] = 2,
-				["i:4400"] = 1,
-				["i:2842"] = 3,
-				["i:4371"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Silver-Plated Shotgun",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4379",
-		},
-		[3925] = {
-			["mats"] = {
-				["i:4359"] = 3,
-				["i:2840"] = 4,
-				["i:4399"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Rough Boomstick",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4362",
-		},
-		[58472] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39469"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:3012",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Agility",
-		},
-		[124227] = {
-			["mats"] = {
-				["i:85583"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81404",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dried Needle Mushrooms",
-		},
-		[57434] = {
-			["mats"] = {
-				["i:43010"] = 1,
-				["i:43012"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42994",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Rhinolicious Wormsteak",
-		},
-		[125599] = {
-			["mats"] = {
-				["i:74847"] = 100,
-				["i:74839"] = 20,
-				["i:74859"] = 20,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87240",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Banquet of the Steamer",
-		},
-		[125120] = {
-			["mats"] = {
-				["i:74848"] = 25,
-				["i:74851"] = 1,
-				["i:74859"] = 5,
-				["i:74846"] = 25,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86073",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spicy Salmon",
-		},
-		[3931] = {
-			["mats"] = {
-				["i:4364"] = 1,
-				["i:2589"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Coarse Dynamite",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4365",
-		},
-		[3932] = {
-			["mats"] = {
-				["i:2592"] = 2,
-				["i:2841"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Target Dummy",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4366",
-		},
-		[43765] = {
-			["mats"] = {
-				["i:27682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:33872",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spicy Hot Talbuk",
-		},
-		[124226] = {
-			["mats"] = {
-				["i:74660"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81403",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dried Peaches",
-		},
-		[145038] = {
-			["mats"] = {
-				["i:74644"] = 5,
-				["i:74654"] = 5,
-				["i:74651"] = 5,
-				["i:75026"] = 5,
-				["i:74643"] = 5,
-				["i:74642"] = 5,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:101630",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Noodle Cart Kit",
-		},
-		[3936] = {
-			["mats"] = {
-				["i:4406"] = 1,
-				["i:4371"] = 4,
-				["i:4399"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Deadly Blunderbuss",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4369",
-		},
-		[3937] = {
-			["mats"] = {
-				["i:4404"] = 1,
-				["i:2840"] = 3,
-				["i:4364"] = 4,
-			},
-			["numResult"] = 3,
-			["profession"] = "Engineering",
-			["name"] = "Large Copper Bomb",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4370",
-		},
-		[3938] = {
-			["mats"] = {
-				["i:2841"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Bronze Tube",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4371",
-		},
-		[3939] = {
-			["mats"] = {
-				["i:4359"] = 2,
-				["i:1206"] = 3,
-				["i:4400"] = 1,
-				["i:4371"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Lovingly Crafted Boomstick",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4372",
-		},
-		[88011] = {
-			["mats"] = {
-				["i:62785"] = 2,
-				["i:62782"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62289",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Broiled Dragon Feast",
-		},
-		[3941] = {
-			["mats"] = {
-				["i:4404"] = 1,
-				["i:2841"] = 2,
-				["i:4364"] = 4,
-				["i:2592"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Engineering",
-			["name"] = "Small Bronze Bomb",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4374",
-		},
-		[57706] = {
-			["mats"] = {
-				["i:43104"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:43117",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dawnstar Ink",
-		},
-		[22761] = {
-			["mats"] = {
-				["i:18255"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:18254",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Runn Tum Tuber Surprise",
-		},
-		[8604] = {
-			["mats"] = {
-				["i:6889"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6888",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Mulmok"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Herb Baked Egg",
-		},
-		[125600] = {
-			["mats"] = {
-				["i:74842"] = 50,
-				["i:74865"] = 10,
-				["i:74837"] = 10,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87242",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Banquet of the Oven",
-		},
-		[126654] = {
-			["mats"] = {
-				["i:74660"] = 1,
-				["i:74844"] = 200,
-				["i:74662"] = 1,
-				["i:74661"] = 1,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87264",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Four Senses Brew",
-		},
-		[104299] = {
-			["mats"] = {
-				["i:74856"] = 1,
-				["i:74848"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74645",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Eternal Blossom Fish",
-		},
-		[15933] = {
-			["mats"] = {
-				["i:12207"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12218",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Monster Omelet",
-		},
-		[45554] = {
-			["mats"] = {
-				["i:43013"] = 2,
-				["i:43009"] = 1,
-				["i:34736"] = 1,
-				["i:43010"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34753",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Feast",
-		},
-		[3950] = {
-			["mats"] = {
-				["i:4377"] = 2,
-				["i:2841"] = 3,
-				["i:4404"] = 1,
-			},
-			["numResult"] = 3,
-			["profession"] = "Engineering",
-			["name"] = "Big Bronze Bomb",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4380",
-		},
-		[21144] = {
-			["mats"] = {
-				["i:17196"] = 1,
-				["i:17194"] = 1,
-				["i:6889"] = 1,
-				["i:1179"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:17198",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Winter Veil Egg Nog",
-		},
-		[66037] = {
-			["mats"] = {
-				["i:44853"] = 2,
-				["i:44834"] = 1,
-				["i:44835"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:44838",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Slow-Roasted Turkey",
-		},
-		[18242] = {
-			["mats"] = {
-				["i:13756"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13929",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hot Smoked Bass",
-		},
-		[180760] = {
-			["mats"] = {
-				["i:109144"] = 12,
-				["i:109137"] = 6,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:122347",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Whiptail Fillet",
-		},
-		[126655] = {
-			["mats"] = {
-				["i:4537"] = 1,
-				["i:74846"] = 200,
-				["i:85584"] = 1,
-				["i:74661"] = 1,
-				["i:9260"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86432",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Banana Infused Rum",
-		},
-		[46688] = {
-			["mats"] = {
-				["i:35562"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:35565",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Juicy Bear Burger",
-		},
-		[57435] = {
-			["mats"] = {
-				["i:43013"] = 2,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 4,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43004",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Critter Bites",
-		},
-		[58473] = {
-			["mats"] = {
-				["i:39354"] = 1,
-				["i:39774"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:1477",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scroll of Agility II",
-		},
-		[125601] = {
-			["mats"] = {
-				["i:74842"] = 100,
-				["i:74865"] = 20,
-				["i:74837"] = 20,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87244",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Banquet of the Oven",
-		},
-		[180762] = {
-			["mats"] = {
-				["i:109137"] = 6,
-				["i:109139"] = 12,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:122343",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sleeper Sushi",
-		},
-		[58521] = {
-			["mats"] = {
-				["i:34736"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43488",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Last Week's Mammoth",
-		},
-		[125122] = {
-			["mats"] = {
-				["i:74851"] = 1,
-				["i:74852"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86069",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Rice Pudding",
-		},
-		[3276] = {
-			["mats"] = {
-				["i:2589"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:2581",
-			["players"] = {
-				["Jingojaggot"] = true,
-				["Vadder"] = true,
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Heavy Linen Bandage",
-		},
-		[33289] = {
-			["mats"] = {
-				["i:27682"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27660",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Talbuk Steak",
-		},
-		[45559] = {
-			["mats"] = {
-				["i:43007"] = 1,
-				["i:43012"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34758",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mighty Rhino Dogs",
-		},
-		[124228] = {
-			["mats"] = {
-				["i:85584"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81405",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Boiled Silkworm Pupa",
-		},
-		[88042] = {
-			["mats"] = {
-				["i:53070"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62669",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Skewered Eel",
-		},
-		[7928] = {
-			["mats"] = {
-				["i:4306"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:6450",
-			["players"] = {
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Silk Bandage",
-		},
-		[3370] = {
-			["mats"] = {
-				["i:2924"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:3662",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crocolisk Steak",
-		},
-		[7421] = {
-			["mats"] = {
-				["i:10938"] = 1,
-				["i:6217"] = 1,
-				["i:10940"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Enchanting",
-			["name"] = "Runed Copper Rod",
-			["players"] = {
-				["Mulmok"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:6218",
-		},
-		[7934] = {
-			["mats"] = {
-				["i:1475"] = 1,
-			},
-			["numResult"] = 3,
-			["profession"] = "First Aid",
-			["itemString"] = "i:6452",
-			["players"] = {
-				["Vadder"] = true,
-				["Datgorg"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Anti-Venom",
-		},
-		[15856] = {
-			["mats"] = {
-				["i:12203"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13851",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hot Wolf Ribs",
-		},
-		[3973] = {
-			["mats"] = {
-				["i:2842"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Silver Contact",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4404",
-		},
-		[165564] = {
-			["mats"] = {
-				["i:39354"] = 3,
-				["i:39469"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:141644",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Assorted Glyphs",
-		},
-		[3946] = {
-			["mats"] = {
-				["i:4377"] = 2,
-				["i:2592"] = 1,
-			},
-			["numResult"] = 3,
-			["profession"] = "Engineering",
-			["name"] = "Heavy Dynamite",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4378",
-		},
-		[7827] = {
-			["mats"] = {
-				["i:6361"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5095",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Rainbow Fin Albacore",
-		},
-		[125602] = {
-			["mats"] = {
-				["i:74840"] = 50,
-				["i:74846"] = 50,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87246",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Banquet of the Brew",
-		},
-		[125123] = {
-			["mats"] = {
-				["i:74847"] = 25,
-				["i:74849"] = 25,
-				["i:74841"] = 25,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:86074",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spicy Vegetable Chips",
-		},
-		[6417] = {
-			["mats"] = {
-				["i:5051"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5478",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Dig Rat Stew",
-		},
-		[173979] = {
-			["mats"] = {
-				["i:109140"] = 10,
-				["i:109139"] = 10,
-				["i:109141"] = 10,
-				["i:109138"] = 10,
-				["i:109142"] = 10,
-				["i:109143"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111458",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Feast of the Waters",
-		},
-		[45555] = {
-			["mats"] = {
-				["i:34736"] = 2,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34754",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mega Mammoth Meal",
-		},
-		[124229] = {
-			["mats"] = {
-				["i:85585"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81408",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Red Bean Bun",
-		},
-		[21143] = {
-			["mats"] = {
-				["i:6889"] = 1,
-				["i:17194"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:17197",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Gingerbread Cookie",
-		},
-		[88012] = {
-			["mats"] = {
-				["i:53063"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62655",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Broiled Mountain Trout",
-		},
-		[88044] = {
-			["mats"] = {
-				["i:159"] = 1,
-				["i:58278"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62672",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "South Island Iced Tea",
-		},
-		[2545] = {
-			["mats"] = {
-				["i:2675"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:2682",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Cooked Crab Claw",
-		},
-		[3919] = {
-			["mats"] = {
-				["i:4357"] = 1,
-				["i:2589"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Rough Dynamite",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4358",
-		},
-		[3918] = {
-			["mats"] = {
-				["i:2835"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Rough Blasting Powder",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4357",
-		},
-		[57436] = {
-			["mats"] = {
-				["i:43007"] = 1,
-				["i:43012"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:42995",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hearty Rhino",
-		},
-		[96133] = {
-			["mats"] = {
-				["i:53069"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:68687",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Scalding Murglesnout",
-		},
-		[38867] = {
-			["mats"] = {
-				["i:31670"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:31672",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mok'Nathal Shortribs",
-		},
-		[33290] = {
-			["mats"] = {
-				["i:27422"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27661",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackened Trout",
-		},
-		[125603] = {
-			["mats"] = {
-				["i:74840"] = 100,
-				["i:74846"] = 100,
-				["i:74853"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:87248",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Great Banquet of the Brew",
-		},
-		[66034] = {
-			["mats"] = {
-				["i:44853"] = 1,
-				["i:44835"] = 1,
-				["i:46797"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:44839",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Candied Sweet Potato",
-		},
-		[160969] = {
-			["mats"] = {
-				["i:109133"] = 5,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111437",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Rylak Crepes",
-		},
-		[104237] = {
-			["mats"] = {
-				["i:74866"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74636",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Golden Carp Consomme",
-		},
-		[15855] = {
-			["mats"] = {
-				["i:12184"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:12210",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Roast Raptor",
-		},
-		[124230] = {
-			["mats"] = {
-				["i:74660"] = 1,
-				["i:74852"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81409",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tangy Yogurt",
-		},
-		[18244] = {
-			["mats"] = {
-				["i:13760"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:13932",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Poached Sunscale Salmon",
-		},
-		[88013] = {
-			["mats"] = {
-				["i:62786"] = 1,
-				["i:30817"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62680",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Chocolate Cookie",
-		},
-		[88045] = {
-			["mats"] = {
-				["i:62786"] = 1,
-				["i:159"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62675",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Starfire Espresso",
-		},
-		[45568] = {
-			["mats"] = {
-				["i:41809"] = 1,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34767",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Firecracker Salmon",
-		},
-		[45552] = {
-			["mats"] = {
-				["i:43011"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34751",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Roasted Worg",
-		},
-		[139745] = {
-			["mats"] = {
-				["i:72096"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95351",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Pins",
-		},
-		[8334] = {
-			["mats"] = {
-				["i:2841"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Clockwork Box",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:6712",
-		},
-		[160973] = {
-			["mats"] = {
-				["i:109142"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111439",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Steamed Scorpion",
-		},
-		[45022] = {
-			["mats"] = {
-				["i:34412"] = 1,
-				["i:17196"] = 1,
-				["i:17194"] = 1,
-			},
-			["numResult"] = 2,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34411",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Hot Apple Cider",
-		},
-		[201560] = {
-			["mats"] = {
-				["i:133591"] = 1,
-				["i:124118"] = 5,
-			},
-			["numResult"] = 10,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133576",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Bear Tartare",
-		},
-		[33293] = {
-			["mats"] = {
-				["i:27435"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:27664",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Grilled Mudfish",
-		},
-		[160999] = {
-			["mats"] = {
-				["i:111437"] = 5,
-				["i:111445"] = 5,
-				["i:109128"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111453",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Calamari Crepes",
-		},
-		[7753] = {
-			["mats"] = {
-				["i:6289"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:4592",
-			["players"] = {
-				["Shanyt"] = true,
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Longjaw Mud Snapper",
-		},
-		[139746] = {
-			["mats"] = {
-				["i:72096"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95353",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Simple Eating Utensils",
-		},
-		[45556] = {
-			["mats"] = {
-				["i:43009"] = 2,
-				["i:43007"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34755",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tender Shoveltusk Steak",
-		},
-		[104302] = {
-			["mats"] = {
-				["i:74864"] = 1,
-				["i:74839"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74647",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Valley Stir Fry",
-		},
-		[66038] = {
-			["mats"] = {
-				["i:30816"] = 1,
-				["i:44835"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:44837",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Spice Bread Stuffing",
-		},
-		[88014] = {
-			["mats"] = {
-				["i:62784"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62664",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crocolisk Au Gratin",
-		},
-		[88046] = {
-			["mats"] = {
-				["i:62781"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62658",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Tender Baked Turtle",
-		},
-		[104297] = {
-			["mats"] = {
-				["i:74866"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74641",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fish Cake",
-		},
-		[160979] = {
-			["mats"] = {
-				["i:109140"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111442",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sturgeon Stew",
-		},
-		[57421] = {
-			["mats"] = {
-				["i:43013"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34747",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Northern Stew",
-		},
-		[6501] = {
-			["mats"] = {
-				["i:5503"] = 1,
-				["i:1179"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:5526",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Clam Chowder",
-		},
-		[45551] = {
-			["mats"] = {
-				["i:43010"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34750",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Worm Delight",
-		},
-		[10840] = {
-			["mats"] = {
-				["i:4338"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "First Aid",
-			["itemString"] = "i:8544",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Mageweave Bandage",
-		},
-		[45550] = {
-			["mats"] = {
-				["i:43009"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34749",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Shoveltusk Steak",
-		},
-		[58523] = {
-			["mats"] = {
-				["i:22577"] = 1,
-				["i:36782"] = 1,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:43491",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Bad Clams",
-		},
-		[45570] = {
-			["mats"] = {
-				["i:43007"] = 1,
-				["i:41802"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:34769",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Imperial Manta Steak",
-		},
-		[139754] = {
-			["mats"] = {
-				["i:72096"] = 25,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95361",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Spade",
-		},
-		[139748] = {
-			["mats"] = {
-				["i:72096"] = 4,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95355",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Ladle",
-		},
-		[160982] = {
-			["mats"] = {
-				["i:109141"] = 10,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111445",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Fiery Calamari",
-		},
-		[104303] = {
-			["mats"] = {
-				["i:74662"] = 1,
-				["i:74861"] = 5,
-				["i:74837"] = 5,
-				["i:74843"] = 25,
-			},
-			["numResult"] = 5,
-			["profession"] = "Cooking",
-			["itemString"] = "i:74648",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Sea Mist Rice Noodles",
-		},
-		[88034] = {
-			["mats"] = {
-				["i:53066"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62668",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Blackbelly Sushi",
-		},
-		[88015] = {
-			["mats"] = {
-				["i:2596"] = 2,
-				["i:2595"] = 1,
-			},
-			["numResult"] = 4,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62790",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Darkbrew Lager",
-		},
-		[88047] = {
-			["mats"] = {
-				["i:62791"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:62656",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Whitecrest Gumbo",
-		},
-		[8607] = {
-			["mats"] = {
-				["i:3173"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:6890",
-			["players"] = {
-				["Jingojaggot"] = true,
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Smoked Bear Meat",
-		},
-		[124052] = {
-			["mats"] = {
-				["i:74845"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:75026",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ginseng Tea",
-		},
-		[139749] = {
-			["mats"] = {
-				["i:72096"] = 20,
-			},
-			["numResult"] = 1,
-			["profession"] = "Blacksmithing",
-			["itemString"] = "i:95356",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Ghost Iron Poker",
-		},
-		[201684] = {
-			["mats"] = {
-				["i:133680"] = 5,
-				["i:133589"] = 5,
-			},
-			["numResult"] = 7,
-			["profession"] = "Cooking",
-			["itemString"] = "i:133681",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Crispy Bacon",
-		},
-		[180757] = {
-			["mats"] = {
-				["i:109141"] = 12,
-				["i:109137"] = 6,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:122344",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Salty Squid Roll",
-		},
-		[3978] = {
-			["mats"] = {
-				["i:4371"] = 1,
-				["i:1206"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Engineering",
-			["name"] = "Standard Scope",
-			["players"] = {
-				["Vadder"] = true,
-			},
-			["queued"] = 0,
-			["itemString"] = "i:4406",
-		},
-		[93741] = {
-			["mats"] = {
-				["i:67229"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:67230",
-			["players"] = {
-				["Shanyt"] = true,
-				["Vadder"] = true,
-				["Brotus"] = true,
-				["Jingojaggot"] = true,
-				["Datgorg"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Venison Jerky",
-		},
-		[160987] = {
-			["mats"] = {
-				["i:111434"] = 5,
-				["i:111442"] = 5,
-				["i:109124"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:111450",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Frosty Stew",
-		},
-		[52843] = {
-			["mats"] = {
-				["i:39151"] = 2,
-			},
-			["numResult"] = 1,
-			["profession"] = "Inscription",
-			["itemString"] = "i:39469",
-			["players"] = {
-				["Brotus"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Moonglow Ink",
-		},
-		[65454] = {
-			["mats"] = {
-				["i:1179"] = 1,
-				["i:30817"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:46691",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Bread of the Dead",
-		},
-		[124234] = {
-			["mats"] = {
-				["i:74659"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Cooking",
-			["itemString"] = "i:81413",
-			["players"] = {
-				["Shanyt"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Skewered Peanut Chicken",
-		},
-	},
-	["f@Alliance - Darkspear@professionScanCache"] = {
-	},
-	["f@Alliance - Darkspear@ignoreDECheckBox"] = false,
-	["f@Horde - Argent Dawn@ignoreDECheckBox"] = false,
-	["f@Horde - Zul'jin@mats"] = {
-	},
-	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
-	["g@ @frameQueueOpen"] = true,
-	["f@Horde - Argent Dawn@professionScanCache"] = {
-		["VadderEngineering"] = {
-			["hash"] = 15241658,
-			["scanTime"] = 1502555804,
-		},
-		["BrotusHerbalism"] = {
-			["hash"] = 5381,
-			["scanTime"] = 1502555751,
-		},
-		["DatgorgCooking"] = {
-			["hash"] = 7513889,
-			["scanTime"] = 1502555656,
-		},
-		["VadderCooking"] = {
-			["hash"] = 6281733,
-			["scanTime"] = 1502555809,
-		},
-		["TyrannithalSkinning"] = {
-			["hash"] = 5381,
-			["scanTime"] = 1502556271,
-		},
-		["JingojaggotHerbalism"] = {
-			["hash"] = 5381,
-			["scanTime"] = 1502555708,
-		},
-		["ShanytFirst Aid"] = {
-			["hash"] = 3704287,
-			["scanTime"] = 1531790488,
-		},
-		["MulmokFirst Aid"] = {
-			["hash"] = 7987926,
-			["scanTime"] = 1502555886,
-		},
-		["VadderFirst Aid"] = {
-			["hash"] = 9879888,
-			["scanTime"] = 1502555812,
-		},
-		["BrotusFirst Aid"] = {
-			["hash"] = 14798118,
-			["scanTime"] = 1502555765,
-		},
-		["ShanytBlacksmithing"] = {
-			["hash"] = 13081576,
-			["scanTime"] = 1531790695,
-		},
-		["DatgorgSkinning"] = {
-			["hash"] = 5381,
-			["scanTime"] = 1502555670,
-		},
-		["TyrannithalLeatherworking"] = {
-			["hash"] = 15734742,
-			["scanTime"] = 1502556274,
-		},
-		["DatgorgFirst Aid"] = {
-			["hash"] = 9669336,
-			["scanTime"] = 1502555649,
-		},
-		["BrotusCooking"] = {
-			["hash"] = 14454299,
-			["scanTime"] = 1502555761,
-		},
-		["MulmokCooking"] = {
-			["hash"] = 14108490,
-			["scanTime"] = 1502555883,
-		},
-		["ShanytDraenor Mining"] = {
-			["hash"] = 13593634,
-			["scanTime"] = 1531888178,
-		},
-		["ShanytCooking"] = {
-			["hash"] = 6618513,
-			["scanTime"] = 1531674165,
-		},
-		["JingojaggotFirst Aid"] = {
-			["hash"] = 5474448,
-			["scanTime"] = 1502555718,
-		},
-		["JingojaggotMining"] = {
-			["hash"] = 7956281,
-			["scanTime"] = 1502555711,
-		},
-		["MulmokEnchanting"] = {
-			["hash"] = 6233554,
-			["scanTime"] = 1502555879,
-		},
-		["JingojaggotCooking"] = {
-			["hash"] = 16298563,
-			["scanTime"] = 1502555715,
-		},
-		["VadderMining"] = {
-			["hash"] = 11099079,
-			["scanTime"] = 1502555800,
-		},
-		["BrotusInscription"] = {
-			["hash"] = 972300,
-			["scanTime"] = 1502555755,
-		},
-		["ShanytLegion Blacksmithing"] = {
-			["hash"] = 1744634,
-			["scanTime"] = 1531888162,
-		},
-		["ShanytMining"] = {
-			["hash"] = 13593634,
-			["scanTime"] = 1527565353,
-		},
-	},
-	["f@Horde - Zul'jin@buyAH"] = false,
-	["f@Horde - Argent Dawn@disableCheckBox"] = false,
-	["f@Horde - Zul'jin@inkTrade"] = false,
-	["_currentProfile"] = {
-		["Bathal - Argent Dawn"] = "Default",
-		["Shathiel - Darkspear"] = "Default",
-		["Datgorg - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
-		["Vadder - Argent Dawn"] = "Default",
-		["Brotus - Argent Dawn"] = "Default",
-		["Tyran - Argent Dawn"] = "Default",
-		["Mulmok - Argent Dawn"] = "Default",
-		["Shanyt - Argent Dawn"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
-		["Tyrannithal - Argent Dawn"] = "Default",
-		["Fantastiburo - Argent Dawn"] = "Default",
-	},
-	["g@ @ignoreCDCraftCost"] = true,
-	["f@Horde - Zul'jin@ignoreIntermediate"] = false,
-	["f@Horde - Argent Dawn@gathering"] = {
-		["availableMats"] = {
-		},
-		["extraMats"] = {
-		},
-		["shortItems"] = {
-		},
-		["gatheredMats"] = false,
-		["neededMats"] = {
-		},
-		["destroyingMats"] = {
-		},
-		["professions"] = {
-		},
-		["selectedSourceStatus"] = {
-		},
-		["sessionOptions"] = {
-		},
-		["selectedSources"] = {
-		},
-	},
-	["f@Horde - Zul'jin@crafts"] = {
-	},
-	["f@Alliance - Darkspear@evenStacks"] = false,
-	["g@ @priceColumn"] = 1,
-	["_scopeKeys"] = {
-		["char"] = {
-			"Shanyt - Argent Dawn", -- [1]
-			"Tyrannithal - Argent Dawn", -- [2]
-			"Datgorg - Argent Dawn", -- [3]
-			"Jingojaggot - Argent Dawn", -- [4]
-			"Brotus - Argent Dawn", -- [5]
-			"Vadder - Argent Dawn", -- [6]
-			"Cowtastraphy - Argent Dawn", -- [7]
-			"Mulmok - Argent Dawn", -- [8]
-			"Tyran - Argent Dawn", -- [9]
-			"Shaekhan - Argent Dawn", -- [10]
-			"Fantastiburo - Argent Dawn", -- [11]
-			"Bathal - Argent Dawn", -- [12]
-			"Shathiel - Darkspear", -- [13]
-			"Shanyt - Zul'jin", -- [14]
-		},
-		["factionrealm"] = {
-			"Horde - Argent Dawn", -- [1]
-			"Alliance - Darkspear", -- [2]
-			"Horde - Zul'jin", -- [3]
-		},
-		["profile"] = {
-			"Default", -- [1]
-		},
-		["realm"] = {
-			"Argent Dawn", -- [1]
-			"Darkspear", -- [2]
-			"Zul'jin", -- [3]
-		},
-	},
-	["f@Alliance - Darkspear@buyAH"] = false,
-	["f@Alliance - Darkspear@ignoreIntermediate"] = false,
-	["f@Horde - Argent Dawn@playerProfessions"] = {
-		["Shanyt"] = {
-			["Cooking"] = {
-				["prompted"] = true,
-				["link"] = "|cffffd000|Htrade:Player-75-058380E2:195128:185|h[Cooking]|h|r",
-				["isSecondary"] = true,
-				["level"] = 100,
-				["maxLevel"] = 100,
-			},
-			["Blacksmithing"] = {
-				["prompted"] = true,
-				["link"] = "|cffffd000|Htrade:Player-75-058380E2:195097:164|h[Blacksmithing]|h|r",
-				["isSecondary"] = false,
-				["level"] = 100,
-				["maxLevel"] = 100,
-			},
-			["Mining"] = {
-				["prompted"] = true,
-				["isSecondary"] = false,
-				["level"] = 100,
-				["maxLevel"] = 100,
-			},
-		},
-		["Cowtastraphy"] = {
-			["Alchemy"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-09DDC32A:2259:171|h[Alchemy]|h|r",
-				["isSecondary"] = false,
-				["level"] = 1,
-				["prompted"] = true,
-			},
-		},
-		["Tyran"] = {
-			["Jewelcrafting"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-0A33732A:25229:755|h[Jewelcrafting]|h|r",
-				["isSecondary"] = false,
-				["level"] = 1,
-				["prompted"] = true,
-			},
-		},
-		["Datgorg"] = {
-			["Cooking"] = {
-				["maxLevel"] = 150,
-				["link"] = "|cffffd000|Htrade:Player-75-0A2CCBC8:3102:185|h[Cooking]|h|r",
-				["isSecondary"] = true,
-				["level"] = 97,
-				["prompted"] = true,
-			},
-			["Leatherworking"] = {
-				["maxLevel"] = 150,
-				["link"] = "|cffffd000|Htrade:Player-75-0A2CCBC8:3104:165|h[Leatherworking]|h|r",
-				["isSecondary"] = false,
-				["level"] = 93,
-				["prompted"] = true,
-			},
-			["Skinning"] = {
-				["isSecondary"] = false,
-				["level"] = 154,
-				["maxLevel"] = 225,
-				["prompted"] = true,
-			},
-			["First Aid"] = {
-				["maxLevel"] = 225,
-				["link"] = "|cffffd000|Htrade:Player-75-0A2CCBC8:7924:129|h[First Aid]|h|r",
-				["isSecondary"] = true,
-				["level"] = 162,
-				["prompted"] = true,
-			},
-		},
-		["Vadder"] = {
-			["Engineering"] = {
-				["maxLevel"] = 225,
-				["link"] = "|cffffd000|Htrade:Player-75-09DDA318:4038:202|h[Engineering]|h|r",
-				["isSecondary"] = false,
-				["level"] = 150,
-				["prompted"] = true,
-			},
-			["Mining"] = {
-				["isSecondary"] = false,
-				["level"] = 109,
-				["maxLevel"] = 150,
-				["prompted"] = true,
-			},
-			["First Aid"] = {
-				["maxLevel"] = 150,
-				["link"] = "|cffffd000|Htrade:Player-75-09DDA318:3274:129|h[First Aid]|h|r",
-				["isSecondary"] = true,
-				["level"] = 91,
-				["prompted"] = true,
-			},
-			["Cooking"] = {
-				["maxLevel"] = 150,
-				["link"] = "|cffffd000|Htrade:Player-75-09DDA318:3102:185|h[Cooking]|h|r",
-				["isSecondary"] = true,
-				["level"] = 59,
-				["prompted"] = true,
-			},
-		},
-		["Mulmok"] = {
-			["Tailoring"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:3908:197|h[Tailoring]|h|r",
-				["isSecondary"] = false,
-				["level"] = 14,
-				["prompted"] = true,
-			},
-			["Cooking"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:2550:185|h[Cooking]|h|r",
-				["isSecondary"] = true,
-				["level"] = 9,
-				["prompted"] = true,
-			},
-			["First Aid"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:3273:129|h[First Aid]|h|r",
-				["isSecondary"] = true,
-				["level"] = 1,
-				["prompted"] = true,
-			},
-			["Enchanting"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:7411:333|h[Enchanting]|h|r",
-				["isSecondary"] = false,
-				["level"] = 1,
-				["prompted"] = true,
-			},
-		},
-		["Brotus"] = {
-			["Inscription"] = {
-				["maxLevel"] = 225,
-				["link"] = "|cffffd000|Htrade:Player-75-071FB336:45359:773|h[Inscription]|h|r",
-				["isSecondary"] = false,
-				["level"] = 134,
-				["prompted"] = true,
-			},
-			["Herbalism"] = {
-				["isSecondary"] = false,
-				["level"] = 181,
-				["maxLevel"] = 225,
-				["prompted"] = true,
-			},
-			["First Aid"] = {
-				["maxLevel"] = 300,
-				["link"] = "|cffffd000|Htrade:Player-75-071FB336:10846:129|h[First Aid]|h|r",
-				["isSecondary"] = true,
-				["level"] = 248,
-				["prompted"] = true,
-			},
-			["Cooking"] = {
-				["maxLevel"] = 150,
-				["link"] = "|cffffd000|Htrade:Player-75-071FB336:3102:185|h[Cooking]|h|r",
-				["isSecondary"] = true,
-				["level"] = 122,
-				["prompted"] = true,
-			},
-		},
-		["Jingojaggot"] = {
-			["Herbalism"] = {
-				["isSecondary"] = false,
-				["level"] = 65,
-				["maxLevel"] = 150,
-				["prompted"] = true,
-			},
-			["Mining"] = {
-				["isSecondary"] = false,
-				["level"] = 22,
-				["maxLevel"] = 75,
-				["prompted"] = true,
-			},
-			["First Aid"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-0A31081D:3273:129|h[First Aid]|h|r",
-				["isSecondary"] = true,
-				["level"] = 53,
-				["prompted"] = true,
-			},
-			["Cooking"] = {
-				["maxLevel"] = 150,
-				["link"] = "|cffffd000|Htrade:Player-75-0A31081D:3102:185|h[Cooking]|h|r",
-				["isSecondary"] = true,
-				["level"] = 67,
-				["prompted"] = true,
-			},
-		},
-		["Tyrannithal"] = {
-			["Skinning"] = {
-				["isSecondary"] = false,
-				["level"] = 1,
-				["prompted"] = true,
-				["maxLevel"] = 75,
-			},
-			["Leatherworking"] = {
-				["prompted"] = true,
-				["link"] = "|cffffd000|Htrade:Player-75-0AB344B4:2108:165|h[Leatherworking]|h|r",
-				["isSecondary"] = false,
-				["level"] = 1,
-				["maxLevel"] = 75,
-			},
-		},
-		["Bathal"] = {
-			["First Aid"] = {
-				["maxLevel"] = 300,
-				["link"] = "|cffffd000|Htrade:Player-75-0AB08C15:10846:129|h[First Aid]|h|r",
-				["isSecondary"] = true,
-				["level"] = 270,
-				["prompted"] = true,
-			},
-		},
-		["Shaekhan"] = {
-			["Enchanting"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-0A3EC0ED:7411:333|h[Enchanting]|h|r",
-				["isSecondary"] = false,
-				["level"] = 1,
-				["prompted"] = true,
-			},
-			["Leatherworking"] = {
-				["maxLevel"] = 75,
-				["link"] = "|cffffd000|Htrade:Player-75-0A3EC0ED:2108:165|h[Leatherworking]|h|r",
-				["isSecondary"] = false,
-				["level"] = 1,
-				["prompted"] = true,
-			},
-		},
-	},
-	["g@ @questSmartCrafting"] = true,
+	["f@Horde - Argent Dawn@ignoreAlts"] = false,
 	["f@Horde - Argent Dawn@mats"] = {
 		["i:109118"] = {
 			["name"] = "Blackrock Ore",
@@ -6116,8 +90,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:52329"] = {
 			["name"] = "Volatile Life",
 		},
-		["i:124110"] = {
-			["name"] = "Stormray",
+		["i:74646"] = {
+			["name"] = "Black Pepper Ribs and Shrimp",
 		},
 		["i:124117"] = {
 			["name"] = "Lean Shank",
@@ -6149,11 +123,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:4357"] = {
 			["name"] = "Rough Blasting Powder",
 		},
-		["i:17011"] = {
-			["name"] = "Lava Core",
+		["i:74842"] = {
+			["name"] = "Mogu Pumpkin",
 		},
-		["i:7911"] = {
-			["name"] = "Truesilver Ore",
+		["i:74651"] = {
+			["name"] = "Shrimp Dumplings",
 		},
 		["i:39469"] = {
 			["name"] = "Moonglow Ink",
@@ -6227,11 +201,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:41808"] = {
 			["name"] = "Bonescale Snapper",
 		},
-		["i:8153"] = {
-			["name"] = "Wildvine",
+		["i:2924"] = {
+			["name"] = "Crocolisk Meat",
 		},
-		["i:109135"] = {
-			["name"] = "Raw Riverbeast Meat",
+		["i:151564"] = {
+			["name"] = "Empyrium",
 		},
 		["i:17196"] = {
 			["name"] = "Holiday Spirits",
@@ -6248,8 +222,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:124113"] = {
 			["name"] = "Stonehide Leather",
 		},
-		["i:74857"] = {
-			["name"] = "Giant Mantis Shrimp",
+		["i:6317"] = {
+			["name"] = "Raw Loch Frenzy",
 		},
 		["i:52186"] = {
 			["name"] = "Elementium Bar",
@@ -6371,11 +345,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:7077"] = {
 			["name"] = "Heart of Fire",
 		},
-		["i:12811"] = {
-			["name"] = "Righteous Orb",
+		["i:12204"] = {
+			["name"] = "Heavy Kodo Meat",
 		},
-		["i:130179"] = {
-			["name"] = "Eye of Prophecy",
+		["i:22456"] = {
+			["name"] = "Primal Shadow",
 		},
 		["i:72093"] = {
 			["name"] = "Kyparite",
@@ -6410,11 +384,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:2840"] = {
 			["name"] = "Copper Bar",
 		},
-		["i:4375"] = {
-			["name"] = "Whirring Bronze Gizmo",
+		["i:35624"] = {
+			["name"] = "Eternal Earth",
 		},
-		["i:43011"] = {
-			["name"] = "Worg Haunch",
+		["i:6303"] = {
+			["name"] = "Raw Slitherskin Mackerel",
 		},
 		["i:17010"] = {
 			["name"] = "Fiery Core",
@@ -6422,11 +396,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:62782"] = {
 			["name"] = "Dragon Flank",
 		},
-		["i:3486"] = {
-			["name"] = "Heavy Grinding Stone",
+		["i:124438"] = {
+			["name"] = "Unbroken Claw",
 		},
-		["i:27435"] = {
-			["name"] = "Figluster's Mudfish",
+		["i:75026"] = {
+			["name"] = "Ginseng Tea",
 		},
 		["i:6522"] = {
 			["name"] = "Deviate Fish",
@@ -6443,14 +417,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:124112"] = {
 			["name"] = "Black Barracuda",
 		},
-		["i:5504"] = {
-			["name"] = "Tangy Clam Meat",
+		["i:7909"] = {
+			["name"] = "Aquamarine",
 		},
 		["i:102537"] = {
 			["name"] = "Fresh Silkfeather Hawk Eggs",
 		},
-		["i:74832"] = {
-			["name"] = "Barley",
+		["i:109127"] = {
+			["name"] = "Starflower",
 		},
 		["i:3173"] = {
 			["name"] = "Bear Meat",
@@ -6482,8 +456,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:23447"] = {
 			["name"] = "Eternium Bar",
 		},
-		["i:22449"] = {
-			["name"] = "Large Prismatic Shard",
+		["i:818"] = {
+			["name"] = "Tigerseye",
 		},
 		["i:21877"] = {
 			["name"] = "Netherweave Cloth",
@@ -6590,8 +564,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:4338"] = {
 			["name"] = "Mageweave Cloth",
 		},
-		["i:12365"] = {
-			["name"] = "Dense Stone",
+		["i:60838"] = {
+			["name"] = "Mysterious Fortune Card",
 		},
 		["i:32428"] = {
 			["name"] = "Heart of Darkness",
@@ -6602,8 +576,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:67229"] = {
 			["name"] = "Stag Flank",
 		},
-		["i:52185"] = {
-			["name"] = "Elementium Ore",
+		["i:77467"] = {
+			["name"] = "Ghost Iron Bolts",
 		},
 		["i:74656"] = {
 			["name"] = "Chun Tian Spring Rolls",
@@ -6704,8 +678,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:24477"] = {
 			["name"] = "Jaggal Clam Meat",
 		},
-		["i:74647"] = {
-			["name"] = "Valley Stir Fry",
+		["i:2321"] = {
+			["name"] = "Fine Thread",
 		},
 		["i:53068"] = {
 			["name"] = "Lavascale Catfish",
@@ -6713,8 +687,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:30816"] = {
 			["name"] = "Spice Bread",
 		},
-		["i:102543"] = {
-			["name"] = "Aged Mogu'shan Cheese",
+		["i:74655"] = {
+			["name"] = "Twin Fish Platter",
 		},
 		["i:7067"] = {
 			["name"] = "Elemental Earth",
@@ -6752,8 +726,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:133589"] = {
 			["name"] = "Dalapeño Pepper",
 		},
-		["i:2594"] = {
-			["name"] = "Flagon of Dwarven Mead",
+		["i:22203"] = {
+			["name"] = "Large Obsidian Shard",
 		},
 		["i:27681"] = {
 			["name"] = "Warped Flesh",
@@ -6779,8 +753,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:85583"] = {
 			["name"] = "Needle Mushrooms",
 		},
-		["i:13758"] = {
-			["name"] = "Raw Redgill",
+		["i:124102"] = {
+			["name"] = "Dreamleaf",
 		},
 		["i:21884"] = {
 			["name"] = "Primal Fire",
@@ -6821,14 +795,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:2835"] = {
 			["name"] = "Rough Stone",
 		},
-		["i:102536"] = {
-			["name"] = "Fresh Lushroom",
+		["i:124669"] = {
+			["name"] = "Darkmoon Daggermaw",
 		},
 		["i:124115"] = {
 			["name"] = "Stormscale",
 		},
-		["i:109131"] = {
-			["name"] = "Raw Clefthoof Meat",
+		["i:109119"] = {
+			["name"] = "True Iron Ore",
 		},
 		["i:2318"] = {
 			["name"] = "Light Leather",
@@ -6836,8 +810,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:2770"] = {
 			["name"] = "Copper Ore",
 		},
-		["i:27516"] = {
-			["name"] = "Enormous Barbed Gill Trout",
+		["i:18255"] = {
+			["name"] = "Runn Tum Tuber",
 		},
 		["i:22202"] = {
 			["name"] = "Small Obsidian Shard",
@@ -6848,8 +822,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:142335"] = {
 			["name"] = "Pristine Falcosaur Feather",
 		},
-		["i:3685"] = {
-			["name"] = "Raptor Egg",
+		["i:85585"] = {
+			["name"] = "Red Beans",
 		},
 		["i:111446"] = {
 			["name"] = "Skulker Chowder",
@@ -6869,8 +843,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:2595"] = {
 			["name"] = "Jug of Badlands Bourbon",
 		},
-		["i:85584"] = {
-			["name"] = "Silkworm Pupa",
+		["i:53071"] = {
+			["name"] = "Algaefin Rockfish",
 		},
 		["i:27438"] = {
 			["name"] = "Golden Darter",
@@ -6902,11 +876,11 @@ TradeSkillMaster_CraftingDB = {
 		["i:34412"] = {
 			["name"] = "Sparkling Apple Cider",
 		},
-		["i:39354"] = {
-			["name"] = "Light Parchment",
+		["i:12202"] = {
+			["name"] = "Tiger Meat",
 		},
-		["i:7076"] = {
-			["name"] = "Essence of Earth",
+		["i:111442"] = {
+			["name"] = "Sturgeon Stew",
 		},
 		["i:120945"] = {
 			["name"] = "Primal Spirit",
@@ -6920,8 +894,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:151924"] = {
 			["name"] = "Empyrial Chest Plate",
 		},
-		["i:74849"] = {
-			["name"] = "Pink Turnip",
+		["i:133565"] = {
+			["name"] = "Leybeque Ribs",
 		},
 		["i:5465"] = {
 			["name"] = "Small Spider Leg",
@@ -7079,8 +1053,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:30183"] = {
 			["name"] = "Nether Vortex",
 		},
-		["i:108257"] = {
-			["name"] = "Truesteel Ingot",
+		["i:111433"] = {
+			["name"] = "Blackrock Ham",
 		},
 		["i:3404"] = {
 			["name"] = "Buzzard Wing",
@@ -7112,44 +1086,32 @@ TradeSkillMaster_CraftingDB = {
 		["i:111557"] = {
 			["name"] = "Sumptuous Fur",
 		},
-		["i:52178"] = {
-			["name"] = "Zephyrite",
+		["i:74837"] = {
+			["name"] = "Raw Turtle Meat",
 		},
-		["i:5469"] = {
-			["name"] = "Strider Meat",
+		["i:109142"] = {
+			["name"] = "Sea Scorpion Segment",
 		},
-		["i:7070"] = {
-			["name"] = "Elemental Water",
+		["i:1179"] = {
+			["name"] = "Ice Cold Milk",
 		},
-		["i:52191"] = {
-			["name"] = "Ocean Sapphire",
+		["i:34054"] = {
+			["name"] = "Infinite Dust",
 		},
-		["i:12655"] = {
-			["name"] = "Enchanted Thorium Bar",
+		["i:74661"] = {
+			["name"] = "Black Pepper",
 		},
-		["i:133563"] = {
-			["name"] = "Faronaar Fizz",
+		["i:12365"] = {
+			["name"] = "Dense Stone",
 		},
-		["i:133562"] = {
-			["name"] = "Pickled Stormray",
+		["i:12205"] = {
+			["name"] = "White Spider Meat",
 		},
 		["i:1288"] = {
 			["name"] = "Large Venom Sac",
 		},
-		["i:133557"] = {
-			["name"] = "Salt & Pepper Shank",
-		},
-		["i:47556"] = {
-			["name"] = "Crusader Orb",
-		},
-		["i:133565"] = {
-			["name"] = "Leybeque Ribs",
-		},
-		["i:133591"] = {
-			["name"] = "River Onion",
-		},
-		["i:36782"] = {
-			["name"] = "Succulent Clam Meat",
+		["i:12037"] = {
+			["name"] = "Mystery Meat",
 		},
 		["i:2771"] = {
 			["name"] = "Tin Ore",
@@ -7157,11 +1119,23 @@ TradeSkillMaster_CraftingDB = {
 		["i:4304"] = {
 			["name"] = "Thick Leather",
 		},
+		["i:133591"] = {
+			["name"] = "River Onion",
+		},
+		["i:74845"] = {
+			["name"] = "Ginseng",
+		},
+		["i:23446"] = {
+			["name"] = "Adamantite Bar",
+		},
+		["i:110609"] = {
+			["name"] = "Raw Beast Hide",
+		},
 		["i:5467"] = {
 			["name"] = "Kodo Meat",
 		},
-		["i:5470"] = {
-			["name"] = "Thunder Lizard Tail",
+		["i:74865"] = {
+			["name"] = "Krasarang Paddlefish",
 		},
 		["i:43103"] = {
 			["name"] = "Verdant Pigment",
@@ -7175,38 +1149,38 @@ TradeSkillMaster_CraftingDB = {
 		["i:133566"] = {
 			["name"] = "Suramar Surf and Turf",
 		},
-		["i:13755"] = {
-			["name"] = "Winter Squid",
+		["i:3860"] = {
+			["name"] = "Mithril Bar",
 		},
-		["i:27503"] = {
-			["name"] = "Scroll of Strength V",
+		["i:12809"] = {
+			["name"] = "Guardian Stone",
 		},
-		["i:3576"] = {
-			["name"] = "Tin Bar",
+		["i:23425"] = {
+			["name"] = "Adamantite Ore",
 		},
-		["i:4234"] = {
-			["name"] = "Heavy Leather",
+		["i:7966"] = {
+			["name"] = "Solid Grinding Stone",
 		},
 		["i:13760"] = {
 			["name"] = "Raw Sunscale Salmon",
 		},
-		["i:74646"] = {
-			["name"] = "Black Pepper Ribs and Shrimp",
+		["i:74848"] = {
+			["name"] = "Striped Melon",
 		},
-		["i:23427"] = {
-			["name"] = "Eternium Ore",
+		["i:118472"] = {
+			["name"] = "Savage Blood",
 		},
-		["i:102538"] = {
-			["name"] = "Fresh Shao-Tien Rice",
+		["i:5503"] = {
+			["name"] = "Clam Meat",
 		},
-		["i:74860"] = {
-			["name"] = "Redbelly Mandarin",
+		["i:43011"] = {
+			["name"] = "Worg Haunch",
 		},
 		["i:133607"] = {
 			["name"] = "Silver Mackerel",
 		},
-		["i:111441"] = {
-			["name"] = "Grilled Gulper",
+		["i:80433"] = {
+			["name"] = "Blood Spirit",
 		},
 		["i:74654"] = {
 			["name"] = "Wildfowl Roast",
@@ -7217,50 +1191,50 @@ TradeSkillMaster_CraftingDB = {
 		["i:4404"] = {
 			["name"] = "Silver Contact",
 		},
-		["i:74865"] = {
-			["name"] = "Krasarang Paddlefish",
+		["i:41807"] = {
+			["name"] = "Dragonfin Angelfish",
 		},
 		["i:3829"] = {
 			["name"] = "Frost Oil",
 		},
-		["i:60838"] = {
-			["name"] = "Mysterious Fortune Card",
+		["i:46796"] = {
+			["name"] = "Ripe Tirisfal Pumpkin",
 		},
 		["i:41245"] = {
 			["name"] = "Deadly Saronite Dirk",
 		},
-		["i:124111"] = {
-			["name"] = "Runescale Koi",
+		["i:74853"] = {
+			["name"] = "100 Year Soy Sauce",
 		},
-		["i:12808"] = {
-			["name"] = "Essence of Undeath",
+		["i:124119"] = {
+			["name"] = "Big Gamy Ribs",
 		},
 		["i:53039"] = {
 			["name"] = "Hardened Elementium Bar",
 		},
-		["i:74851"] = {
-			["name"] = "Rice",
+		["i:74834"] = {
+			["name"] = "Mushan Ribs",
 		},
-		["i:72092"] = {
-			["name"] = "Ghost Iron Ore",
+		["i:12808"] = {
+			["name"] = "Essence of Undeath",
 		},
-		["i:124101"] = {
-			["name"] = "Aethril",
+		["i:72094"] = {
+			["name"] = "Black Trillium Ore",
 		},
-		["i:27439"] = {
-			["name"] = "Furious Crawdad",
+		["i:27435"] = {
+			["name"] = "Figluster's Mudfish",
 		},
-		["i:111433"] = {
-			["name"] = "Blackrock Ham",
+		["i:5470"] = {
+			["name"] = "Thunder Lizard Tail",
 		},
-		["i:110609"] = {
-			["name"] = "Raw Beast Hide",
+		["i:109133"] = {
+			["name"] = "Rylak Egg",
 		},
-		["i:75026"] = {
-			["name"] = "Ginseng Tea",
+		["i:2841"] = {
+			["name"] = "Bronze Bar",
 		},
-		["i:22203"] = {
-			["name"] = "Large Obsidian Shard",
+		["i:109144"] = {
+			["name"] = "Blackwater Whiptail Flesh",
 		},
 		["i:74659"] = {
 			["name"] = "Farm Chicken",
@@ -7268,17 +1242,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:3470"] = {
 			["name"] = "Rough Grinding Stone",
 		},
-		["i:2841"] = {
-			["name"] = "Bronze Bar",
+		["i:2776"] = {
+			["name"] = "Gold Ore",
 		},
-		["i:2321"] = {
-			["name"] = "Fine Thread",
+		["i:2605"] = {
+			["name"] = "Green Dye",
 		},
-		["i:74655"] = {
-			["name"] = "Twin Fish Platter",
+		["i:2594"] = {
+			["name"] = "Flagon of Dwarven Mead",
 		},
-		["i:74842"] = {
-			["name"] = "Mogu Pumpkin",
+		["i:74645"] = {
+			["name"] = "Eternal Blossom Fish",
 		},
 		["i:36910"] = {
 			["name"] = "Titanium Ore",
@@ -7286,14 +1260,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:1475"] = {
 			["name"] = "Small Venom Sac",
 		},
-		["i:74651"] = {
-			["name"] = "Shrimp Dumplings",
+		["i:22449"] = {
+			["name"] = "Large Prismatic Shard",
 		},
-		["i:146659"] = {
-			["name"] = "Nethershard Essence",
+		["i:5504"] = {
+			["name"] = "Tangy Clam Meat",
 		},
-		["i:35624"] = {
-			["name"] = "Eternal Earth",
+		["i:74838"] = {
+			["name"] = "Raw Crab Meat",
 		},
 		["i:18567"] = {
 			["name"] = "Elemental Flux",
@@ -7301,29 +1275,29 @@ TradeSkillMaster_CraftingDB = {
 		["i:2592"] = {
 			["name"] = "Wool Cloth",
 		},
-		["i:74645"] = {
-			["name"] = "Eternal Blossom Fish",
+		["i:62779"] = {
+			["name"] = "Monstrous Claw",
 		},
 		["i:6362"] = {
 			["name"] = "Raw Rockscale Cod",
 		},
-		["i:109124"] = {
-			["name"] = "Frostweed",
+		["i:41806"] = {
+			["name"] = "Musselback Sculpin",
 		},
-		["i:74838"] = {
-			["name"] = "Raw Crab Meat",
+		["i:74652"] = {
+			["name"] = "Fire Spirit Salmon",
 		},
-		["i:53063"] = {
-			["name"] = "Mountain Trout",
+		["i:124105"] = {
+			["name"] = "Starlight Rose",
 		},
 		["i:7910"] = {
 			["name"] = "Star Ruby",
 		},
-		["i:46796"] = {
-			["name"] = "Ripe Tirisfal Pumpkin",
+		["i:23449"] = {
+			["name"] = "Khorium Bar",
 		},
-		["i:124102"] = {
-			["name"] = "Dreamleaf",
+		["i:4234"] = {
+			["name"] = "Heavy Leather",
 		},
 		["i:2673"] = {
 			["name"] = "Coyote Meat",
@@ -7340,8 +1314,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:774"] = {
 			["name"] = "Malachite",
 		},
-		["i:109144"] = {
-			["name"] = "Blackwater Whiptail Flesh",
+		["i:5637"] = {
+			["name"] = "Large Fang",
 		},
 		["i:3864"] = {
 			["name"] = "Citrine",
@@ -7349,8 +1323,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:2674"] = {
 			["name"] = "Crawler Meat",
 		},
-		["i:22456"] = {
-			["name"] = "Primal Shadow",
+		["i:53063"] = {
+			["name"] = "Mountain Trout",
 		},
 		["i:17194"] = {
 			["name"] = "Holiday Spices",
@@ -7358,32 +1332,32 @@ TradeSkillMaster_CraftingDB = {
 		["i:6291"] = {
 			["name"] = "Raw Brilliant Smallfish",
 		},
-		["i:56516"] = {
-			["name"] = "Heavy Savage Leather",
+		["i:74832"] = {
+			["name"] = "Barley",
 		},
-		["i:12204"] = {
-			["name"] = "Heavy Kodo Meat",
+		["i:72988"] = {
+			["name"] = "Windwool Cloth",
 		},
-		["i:12184"] = {
-			["name"] = "Raptor Flesh",
+		["i:13758"] = {
+			["name"] = "Raw Redgill",
 		},
 		["i:2775"] = {
 			["name"] = "Silver Ore",
 		},
-		["i:123919"] = {
-			["name"] = "Felslate",
+		["i:74650"] = {
+			["name"] = "Mogu Fish Stew",
 		},
-		["i:4400"] = {
-			["name"] = "Heavy Stock",
+		["i:41810"] = {
+			["name"] = "Fangtooth Herring",
 		},
-		["i:124669"] = {
-			["name"] = "Darkmoon Daggermaw",
+		["i:12184"] = {
+			["name"] = "Raptor Flesh",
 		},
-		["i:23573"] = {
-			["name"] = "Hardened Adamantite Bar",
+		["i:27503"] = {
+			["name"] = "Scroll of Strength V",
 		},
-		["i:35562"] = {
-			["name"] = "Bear Flank",
+		["i:3575"] = {
+			["name"] = "Iron Bar",
 		},
 		["i:27674"] = {
 			["name"] = "Ravager Flesh",
@@ -7391,29 +1365,29 @@ TradeSkillMaster_CraftingDB = {
 		["i:74642"] = {
 			["name"] = "Charbroiled Tiger Steak",
 		},
-		["i:12207"] = {
-			["name"] = "Giant Egg",
+		["i:133567"] = {
+			["name"] = "Barracuda Mrglgagh",
 		},
 		["i:12208"] = {
 			["name"] = "Tender Wolf Meat",
 		},
-		["i:109119"] = {
-			["name"] = "True Iron Ore",
+		["i:111439"] = {
+			["name"] = "Steamed Scorpion",
 		},
-		["i:18255"] = {
-			["name"] = "Runn Tum Tuber",
+		["i:4359"] = {
+			["name"] = "Handful of Copper Bolts",
 		},
 		["i:4371"] = {
 			["name"] = "Bronze Tube",
 		},
+		["i:111441"] = {
+			["name"] = "Grilled Gulper",
+		},
+		["i:8153"] = {
+			["name"] = "Wildvine",
+		},
 		["i:74856"] = {
 			["name"] = "Jade Lungfish",
-		},
-		["i:2924"] = {
-			["name"] = "Crocolisk Meat",
-		},
-		["i:151564"] = {
-			["name"] = "Empyrium",
 		},
 		["i:7971"] = {
 			["name"] = "Black Pearl",
@@ -7424,17 +1398,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:124107"] = {
 			["name"] = "Cursed Queenfish",
 		},
-		["i:85585"] = {
-			["name"] = "Red Beans",
+		["i:43010"] = {
+			["name"] = "Worm Meat",
 		},
-		["i:53071"] = {
-			["name"] = "Algaefin Rockfish",
+		["i:124120"] = {
+			["name"] = "Leyblood",
 		},
 		["i:85506"] = {
 			["name"] = "Viseclaw Meat",
 		},
-		["i:6317"] = {
-			["name"] = "Raw Loch Frenzy",
+		["i:4603"] = {
+			["name"] = "Raw Spotted Yellowtail",
 		},
 		["i:34736"] = {
 			["name"] = "Chunk o' Mammoth",
@@ -7442,23 +1416,23 @@ TradeSkillMaster_CraftingDB = {
 		["i:22824"] = {
 			["name"] = "Elixir of Major Strength",
 		},
-		["i:124120"] = {
-			["name"] = "Leyblood",
+		["i:74857"] = {
+			["name"] = "Giant Mantis Shrimp",
 		},
 		["i:124109"] = {
 			["name"] = "Highmountain Salmon",
 		},
-		["i:74863"] = {
-			["name"] = "Jewel Danio",
+		["i:35623"] = {
+			["name"] = "Eternal Air",
 		},
-		["i:5635"] = {
-			["name"] = "Sharp Claw",
+		["i:75038"] = {
+			["name"] = "Mad Brewer's Breakfast",
 		},
-		["i:12809"] = {
-			["name"] = "Guardian Stone",
+		["i:35948"] = {
+			["name"] = "Savory Snowplum",
 		},
-		["i:124119"] = {
-			["name"] = "Big Gamy Ribs",
+		["i:27669"] = {
+			["name"] = "Bat Flesh",
 		},
 		["i:111438"] = {
 			["name"] = "Clefthoof Sausages",
@@ -7466,44 +1440,44 @@ TradeSkillMaster_CraftingDB = {
 		["i:8365"] = {
 			["name"] = "Raw Mithril Head Trout",
 		},
-		["i:41810"] = {
-			["name"] = "Fangtooth Herring",
+		["i:47556"] = {
+			["name"] = "Crusader Orb",
 		},
-		["i:12202"] = {
-			["name"] = "Tiger Meat",
+		["i:2672"] = {
+			["name"] = "Stringy Wolf Meat",
 		},
 		["i:27425"] = {
 			["name"] = "Spotted Feltail",
 		},
-		["i:3577"] = {
-			["name"] = "Gold Bar",
+		["i:52185"] = {
+			["name"] = "Elementium Ore",
 		},
 		["i:53066"] = {
 			["name"] = "Blackbelly Mudfish",
 		},
-		["i:23446"] = {
-			["name"] = "Adamantite Bar",
+		["i:7076"] = {
+			["name"] = "Essence of Earth",
 		},
-		["i:111442"] = {
-			["name"] = "Sturgeon Stew",
+		["i:43009"] = {
+			["name"] = "Shoveltusk Flank",
 		},
-		["i:71998"] = {
-			["name"] = "Essence of Destruction",
+		["i:3577"] = {
+			["name"] = "Gold Bar",
 		},
 		["i:62778"] = {
 			["name"] = "Toughened Flesh",
 		},
-		["i:3860"] = {
-			["name"] = "Mithril Bar",
+		["i:159"] = {
+			["name"] = "Refreshing Spring Water",
 		},
-		["i:74845"] = {
-			["name"] = "Ginseng",
+		["i:109128"] = {
+			["name"] = "Nagrand Arrowbloom",
 		},
-		["i:12037"] = {
-			["name"] = "Mystery Meat",
+		["i:2251"] = {
+			["name"] = "Gooey Spider Leg",
 		},
-		["i:43009"] = {
-			["name"] = "Shoveltusk Flank",
+		["i:74849"] = {
+			["name"] = "Pink Turnip",
 		},
 		["i:13759"] = {
 			["name"] = "Raw Nightfin Snapper",
@@ -7511,8 +1485,8 @@ TradeSkillMaster_CraftingDB = {
 		["i:12803"] = {
 			["name"] = "Living Essence",
 		},
-		["i:35948"] = {
-			["name"] = "Savory Snowplum",
+		["i:71998"] = {
+			["name"] = "Essence of Destruction",
 		},
 		["i:7974"] = {
 			["name"] = "Zesty Clam Meat",
@@ -7523,35 +1497,35 @@ TradeSkillMaster_CraftingDB = {
 		["i:109137"] = {
 			["name"] = "Crescent Saberfish Flesh",
 		},
-		["i:2672"] = {
-			["name"] = "Stringy Wolf Meat",
+		["i:85584"] = {
+			["name"] = "Silkworm Pupa",
 		},
-		["i:27669"] = {
-			["name"] = "Bat Flesh",
+		["i:36782"] = {
+			["name"] = "Succulent Clam Meat",
 		},
-		["i:111439"] = {
-			["name"] = "Steamed Scorpion",
+		["i:111436"] = {
+			["name"] = "Braised Riverbeast",
 		},
-		["i:75038"] = {
-			["name"] = "Mad Brewer's Breakfast",
+		["i:39354"] = {
+			["name"] = "Light Parchment",
 		},
-		["i:2251"] = {
-			["name"] = "Gooey Spider Leg",
+		["i:5635"] = {
+			["name"] = "Sharp Claw",
 		},
-		["i:4603"] = {
-			["name"] = "Raw Spotted Yellowtail",
+		["i:74863"] = {
+			["name"] = "Jewel Danio",
 		},
 		["i:111431"] = {
 			["name"] = "Hearty Elekk Steak",
 		},
-		["i:35623"] = {
-			["name"] = "Eternal Air",
+		["i:3685"] = {
+			["name"] = "Raptor Egg",
 		},
 		["i:10940"] = {
 			["name"] = "Strange Dust",
 		},
-		["i:43010"] = {
-			["name"] = "Worm Meat",
+		["i:109135"] = {
+			["name"] = "Raw Riverbeast Meat",
 		},
 		["i:7069"] = {
 			["name"] = "Elemental Air",
@@ -7559,17 +1533,17 @@ TradeSkillMaster_CraftingDB = {
 		["i:109136"] = {
 			["name"] = "Raw Boar Meat",
 		},
-		["i:34054"] = {
-			["name"] = "Infinite Dust",
+		["i:27516"] = {
+			["name"] = "Enormous Barbed Gill Trout",
 		},
-		["i:4359"] = {
-			["name"] = "Handful of Copper Bolts",
+		["i:109131"] = {
+			["name"] = "Raw Clefthoof Meat",
 		},
-		["i:74650"] = {
-			["name"] = "Mogu Fish Stew",
+		["i:102536"] = {
+			["name"] = "Fresh Lushroom",
 		},
-		["i:3575"] = {
-			["name"] = "Iron Bar",
+		["i:4400"] = {
+			["name"] = "Heavy Stock",
 		},
 		["i:7078"] = {
 			["name"] = "Essence of Fire",
@@ -7577,26 +1551,26 @@ TradeSkillMaster_CraftingDB = {
 		["i:43013"] = {
 			["name"] = "Chilled Meat",
 		},
-		["i:74848"] = {
-			["name"] = "Striped Melon",
+		["i:23573"] = {
+			["name"] = "Hardened Adamantite Bar",
 		},
-		["i:124105"] = {
-			["name"] = "Starlight Rose",
+		["i:35562"] = {
+			["name"] = "Bear Flank",
 		},
 		["i:2772"] = {
 			["name"] = "Iron Ore",
 		},
-		["i:72988"] = {
-			["name"] = "Windwool Cloth",
+		["i:56516"] = {
+			["name"] = "Heavy Savage Leather",
 		},
-		["i:74652"] = {
-			["name"] = "Fire Spirit Salmon",
+		["i:12655"] = {
+			["name"] = "Enchanted Thorium Bar",
 		},
-		["i:62779"] = {
-			["name"] = "Monstrous Claw",
+		["i:37663"] = {
+			["name"] = "Titansteel Bar",
 		},
-		["i:7966"] = {
-			["name"] = "Solid Grinding Stone",
+		["i:123919"] = {
+			["name"] = "Felslate",
 		},
 		["i:1015"] = {
 			["name"] = "Lean Wolf Flank",
@@ -7604,20 +1578,20 @@ TradeSkillMaster_CraftingDB = {
 		["i:41800"] = {
 			["name"] = "Deep Sea Monsterbelly",
 		},
-		["i:818"] = {
-			["name"] = "Tigerseye",
+		["i:146659"] = {
+			["name"] = "Nethershard Essence",
 		},
-		["i:41806"] = {
-			["name"] = "Musselback Sculpin",
+		["i:109124"] = {
+			["name"] = "Frostweed",
 		},
-		["i:6303"] = {
-			["name"] = "Raw Slitherskin Mackerel",
+		["i:12811"] = {
+			["name"] = "Righteous Orb",
 		},
-		["i:2776"] = {
-			["name"] = "Gold Ore",
+		["i:74843"] = {
+			["name"] = "Scallions",
 		},
-		["i:109128"] = {
-			["name"] = "Nagrand Arrowbloom",
+		["i:130179"] = {
+			["name"] = "Eye of Prophecy",
 		},
 		["i:37702"] = {
 			["name"] = "Crystallized Fire",
@@ -7628,14 +1602,14 @@ TradeSkillMaster_CraftingDB = {
 		["i:133569"] = {
 			["name"] = "Drogbar-Style Salmon",
 		},
-		["i:133567"] = {
-			["name"] = "Barracuda Mrglgagh",
+		["i:17011"] = {
+			["name"] = "Lava Core",
 		},
-		["i:5637"] = {
-			["name"] = "Large Fang",
+		["i:7911"] = {
+			["name"] = "Truesilver Ore",
 		},
-		["i:124438"] = {
-			["name"] = "Unbroken Claw",
+		["i:102543"] = {
+			["name"] = "Aged Mogu'shan Cheese",
 		},
 		["i:94111"] = {
 			["name"] = "Lightning Steel Ingot",
@@ -7643,47 +1617,47 @@ TradeSkillMaster_CraftingDB = {
 		["i:74859"] = {
 			["name"] = "Emperor Salmon",
 		},
-		["i:74853"] = {
-			["name"] = "100 Year Soy Sauce",
+		["i:27439"] = {
+			["name"] = "Furious Crawdad",
 		},
-		["i:74661"] = {
-			["name"] = "Black Pepper",
+		["i:12207"] = {
+			["name"] = "Giant Egg",
 		},
-		["i:72094"] = {
-			["name"] = "Black Trillium Ore",
+		["i:124101"] = {
+			["name"] = "Aethril",
 		},
-		["i:74834"] = {
-			["name"] = "Mushan Ribs",
+		["i:124111"] = {
+			["name"] = "Runescale Koi",
 		},
-		["i:7909"] = {
-			["name"] = "Aquamarine",
+		["i:3486"] = {
+			["name"] = "Heavy Grinding Stone",
 		},
-		["i:109127"] = {
-			["name"] = "Starflower",
+		["i:74647"] = {
+			["name"] = "Valley Stir Fry",
 		},
-		["i:80433"] = {
-			["name"] = "Blood Spirit",
+		["i:4375"] = {
+			["name"] = "Whirring Bronze Gizmo",
 		},
-		["i:23449"] = {
-			["name"] = "Khorium Bar",
+		["i:72092"] = {
+			["name"] = "Ghost Iron Ore",
 		},
-		["i:5503"] = {
-			["name"] = "Clam Meat",
+		["i:74851"] = {
+			["name"] = "Rice",
 		},
 		["i:7075"] = {
 			["name"] = "Core of Earth",
 		},
-		["i:37663"] = {
-			["name"] = "Titansteel Bar",
+		["i:124110"] = {
+			["name"] = "Stormray",
 		},
-		["i:118472"] = {
-			["name"] = "Savage Blood",
+		["i:23427"] = {
+			["name"] = "Eternium Ore",
 		},
-		["i:109133"] = {
-			["name"] = "Rylak Egg",
+		["i:13755"] = {
+			["name"] = "Winter Squid",
 		},
-		["i:23425"] = {
-			["name"] = "Adamantite Ore",
+		["i:3576"] = {
+			["name"] = "Tin Bar",
 		},
 		["i:52327"] = {
 			["name"] = "Volatile Earth",
@@ -7691,49 +1665,6075 @@ TradeSkillMaster_CraftingDB = {
 		["i:109140"] = {
 			["name"] = "Blind Lake Sturgeon Flesh",
 		},
-		["i:2605"] = {
-			["name"] = "Green Dye",
+		["i:108257"] = {
+			["name"] = "Truesteel Ingot",
 		},
 		["i:124444"] = {
 			["name"] = "Infernal Brimstone",
 		},
-		["i:77467"] = {
-			["name"] = "Ghost Iron Bolts",
-		},
-		["i:12205"] = {
-			["name"] = "White Spider Meat",
+		["i:102538"] = {
+			["name"] = "Fresh Shao-Tien Rice",
 		},
 		["i:41355"] = {
 			["name"] = "Vengeance Bindings",
 		},
+		["i:74860"] = {
+			["name"] = "Redbelly Mandarin",
+		},
 		["i:124439"] = {
 			["name"] = "Unbroken Tooth",
 		},
-		["i:111436"] = {
-			["name"] = "Braised Riverbeast",
+		["i:133557"] = {
+			["name"] = "Salt & Pepper Shank",
 		},
-		["i:74843"] = {
-			["name"] = "Scallions",
+		["i:133562"] = {
+			["name"] = "Pickled Stormray",
 		},
-		["i:159"] = {
-			["name"] = "Refreshing Spring Water",
+		["i:133563"] = {
+			["name"] = "Faronaar Fizz",
 		},
-		["i:1179"] = {
-			["name"] = "Ice Cold Milk",
+		["i:52191"] = {
+			["name"] = "Ocean Sapphire",
 		},
-		["i:74837"] = {
-			["name"] = "Raw Turtle Meat",
+		["i:7070"] = {
+			["name"] = "Elemental Water",
 		},
-		["i:109142"] = {
-			["name"] = "Sea Scorpion Segment",
+		["i:5469"] = {
+			["name"] = "Strider Meat",
 		},
-		["i:41807"] = {
-			["name"] = "Dragonfin Angelfish",
+		["i:52178"] = {
+			["name"] = "Zephyrite",
 		},
 	},
-	["f@Alliance - Darkspear@disableCheckBox"] = false,
 	["f@Horde - Argent Dawn@inkTrade"] = false,
-	["f@Horde - Argent Dawn@ignoreAlts"] = false,
-	["g@ @ignoreGuilds"] = {
+	["f@Horde - Zul'jin@ignoreDECheckBox"] = false,
+	["_version"] = 7,
+	["f@Horde - Argent Dawn@ignoreIntermediate"] = false,
+	["f@Horde - Argent Dawn@playerProfessions"] = {
+		["Shanyt"] = {
+			["Cooking"] = {
+				["prompted"] = true,
+				["link"] = "|cffffd000|Htrade:Player-75-058380E2:195128:185|h[Cooking]|h|r",
+				["isSecondary"] = true,
+				["level"] = 100,
+				["maxLevel"] = 100,
+			},
+			["Blacksmithing"] = {
+				["prompted"] = true,
+				["link"] = "|cffffd000|Htrade:Player-75-058380E2:195097:164|h[Blacksmithing]|h|r",
+				["isSecondary"] = false,
+				["level"] = 100,
+				["maxLevel"] = 100,
+			},
+			["Mining"] = {
+				["isSecondary"] = false,
+				["level"] = 100,
+				["prompted"] = true,
+				["maxLevel"] = 100,
+			},
+		},
+		["Cowtastraphy"] = {
+			["Alchemy"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-09DDC32A:2259:171|h[Alchemy]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["prompted"] = true,
+			},
+		},
+		["Tyran"] = {
+			["Jewelcrafting"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-0A33732A:25229:755|h[Jewelcrafting]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["prompted"] = true,
+			},
+		},
+		["Datgorg"] = {
+			["Cooking"] = {
+				["maxLevel"] = 150,
+				["link"] = "|cffffd000|Htrade:Player-75-0A2CCBC8:3102:185|h[Cooking]|h|r",
+				["isSecondary"] = true,
+				["level"] = 97,
+				["prompted"] = true,
+			},
+			["Leatherworking"] = {
+				["maxLevel"] = 150,
+				["link"] = "|cffffd000|Htrade:Player-75-0A2CCBC8:3104:165|h[Leatherworking]|h|r",
+				["isSecondary"] = false,
+				["level"] = 93,
+				["prompted"] = true,
+			},
+			["Skinning"] = {
+				["isSecondary"] = false,
+				["level"] = 154,
+				["maxLevel"] = 225,
+				["prompted"] = true,
+			},
+			["First Aid"] = {
+				["maxLevel"] = 225,
+				["link"] = "|cffffd000|Htrade:Player-75-0A2CCBC8:7924:129|h[First Aid]|h|r",
+				["isSecondary"] = true,
+				["level"] = 162,
+				["prompted"] = true,
+			},
+		},
+		["Vadder"] = {
+			["Engineering"] = {
+				["maxLevel"] = 225,
+				["link"] = "|cffffd000|Htrade:Player-75-09DDA318:4038:202|h[Engineering]|h|r",
+				["isSecondary"] = false,
+				["level"] = 150,
+				["prompted"] = true,
+			},
+			["Mining"] = {
+				["isSecondary"] = false,
+				["level"] = 109,
+				["maxLevel"] = 150,
+				["prompted"] = true,
+			},
+			["First Aid"] = {
+				["maxLevel"] = 150,
+				["link"] = "|cffffd000|Htrade:Player-75-09DDA318:3274:129|h[First Aid]|h|r",
+				["isSecondary"] = true,
+				["level"] = 91,
+				["prompted"] = true,
+			},
+			["Cooking"] = {
+				["maxLevel"] = 150,
+				["link"] = "|cffffd000|Htrade:Player-75-09DDA318:3102:185|h[Cooking]|h|r",
+				["isSecondary"] = true,
+				["level"] = 59,
+				["prompted"] = true,
+			},
+		},
+		["Mulmok"] = {
+			["Tailoring"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:3908:197|h[Tailoring]|h|r",
+				["isSecondary"] = false,
+				["level"] = 14,
+				["prompted"] = true,
+			},
+			["Cooking"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:2550:185|h[Cooking]|h|r",
+				["isSecondary"] = true,
+				["level"] = 9,
+				["prompted"] = true,
+			},
+			["First Aid"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:3273:129|h[First Aid]|h|r",
+				["isSecondary"] = true,
+				["level"] = 1,
+				["prompted"] = true,
+			},
+			["Enchanting"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-071FB80A:7411:333|h[Enchanting]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["prompted"] = true,
+			},
+		},
+		["Brotus"] = {
+			["Inscription"] = {
+				["maxLevel"] = 225,
+				["link"] = "|cffffd000|Htrade:Player-75-071FB336:45359:773|h[Inscription]|h|r",
+				["isSecondary"] = false,
+				["level"] = 134,
+				["prompted"] = true,
+			},
+			["Cooking"] = {
+				["maxLevel"] = 150,
+				["link"] = "|cffffd000|Htrade:Player-75-071FB336:3102:185|h[Cooking]|h|r",
+				["isSecondary"] = true,
+				["level"] = 122,
+				["prompted"] = true,
+			},
+			["First Aid"] = {
+				["maxLevel"] = 300,
+				["link"] = "|cffffd000|Htrade:Player-75-071FB336:10846:129|h[First Aid]|h|r",
+				["isSecondary"] = true,
+				["level"] = 248,
+				["prompted"] = true,
+			},
+			["Herbalism"] = {
+				["isSecondary"] = false,
+				["level"] = 181,
+				["maxLevel"] = 225,
+				["prompted"] = true,
+			},
+		},
+		["Jingojaggot"] = {
+			["Herbalism"] = {
+				["isSecondary"] = false,
+				["level"] = 65,
+				["maxLevel"] = 150,
+				["prompted"] = true,
+			},
+			["Mining"] = {
+				["isSecondary"] = false,
+				["level"] = 22,
+				["maxLevel"] = 75,
+				["prompted"] = true,
+			},
+			["First Aid"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-0A31081D:3273:129|h[First Aid]|h|r",
+				["isSecondary"] = true,
+				["level"] = 53,
+				["prompted"] = true,
+			},
+			["Cooking"] = {
+				["maxLevel"] = 150,
+				["link"] = "|cffffd000|Htrade:Player-75-0A31081D:3102:185|h[Cooking]|h|r",
+				["isSecondary"] = true,
+				["level"] = 67,
+				["prompted"] = true,
+			},
+		},
+		["Shaekhan"] = {
+			["Leatherworking"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-0A3EC0ED:2108:165|h[Leatherworking]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["prompted"] = true,
+			},
+			["Enchanting"] = {
+				["maxLevel"] = 75,
+				["link"] = "|cffffd000|Htrade:Player-75-0A3EC0ED:7411:333|h[Enchanting]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["prompted"] = true,
+			},
+		},
+		["Bathal"] = {
+			["First Aid"] = {
+				["maxLevel"] = 300,
+				["link"] = "|cffffd000|Htrade:Player-75-0AB08C15:10846:129|h[First Aid]|h|r",
+				["isSecondary"] = true,
+				["level"] = 270,
+				["prompted"] = true,
+			},
+		},
+		["Tyrannithal"] = {
+			["Skinning"] = {
+				["isSecondary"] = false,
+				["level"] = 1,
+				["prompted"] = true,
+				["maxLevel"] = 75,
+			},
+			["Leatherworking"] = {
+				["prompted"] = true,
+				["link"] = "|cffffd000|Htrade:Player-75-0AB344B4:2108:165|h[Leatherworking]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+		},
 	},
+	["g@ @questSmartCrafting"] = true,
+	["f@Alliance - Darkspear@playerProfessions"] = {
+		["Shathiel"] = {
+			["Cooking"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["First Aid"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+		},
+	},
+	["f@Horde - Zul'jin@ignoreAlts"] = false,
+	["f@Horde - Argent Dawn@crafts"] = {
+		[139750] = {
+			["mats"] = {
+				["i:72096"] = 9,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Hook",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95357",
+		},
+		[33293] = {
+			["mats"] = {
+				["i:27435"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Grilled Mudfish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27664",
+		},
+		[104304] = {
+			["mats"] = {
+				["i:74856"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Swirling Mist Soup",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74644",
+		},
+		[88016] = {
+			["mats"] = {
+				["i:53072"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Delicious Sagefish Tail",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62666",
+		},
+		[145308] = {
+			["mats"] = {
+				["i:102541"] = 1,
+				["i:102540"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mango Ice",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101745",
+		},
+		[139751] = {
+			["mats"] = {
+				["i:72096"] = 15,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Spatulas",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95358",
+		},
+		[57438] = {
+			["mats"] = {
+				["i:43011"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackened Worg Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42997",
+		},
+		[180759] = {
+			["mats"] = {
+				["i:109137"] = 6,
+				["i:109138"] = 12,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Jumbo Sea Dog",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:122346",
+		},
+		[160958] = {
+			["mats"] = {
+				["i:109134"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Hearty Elekk Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111431",
+		},
+		[145309] = {
+			["mats"] = {
+				["i:102538"] = 2,
+				["i:102539"] = 1,
+				["i:102541"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Farmer's Delight",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101747",
+		},
+		[53462] = {
+			["mats"] = {
+				["i:39334"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Midnight Ink",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:39774",
+		},
+		[9058] = {
+			["mats"] = {
+				["i:2318"] = 2,
+				["i:2320"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Leatherworking",
+			["itemString"] = "i:7276",
+			["players"] = {
+				["Tyrannithal"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Handstitched Leather Cloak",
+		},
+		[124234] = {
+			["mats"] = {
+				["i:74659"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Skewered Peanut Chicken",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81413",
+		},
+		[88017] = {
+			["mats"] = {
+				["i:62785"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Feathered Lure",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62673",
+		},
+		[45382] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39469"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Stamina",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1180",
+		},
+		[145310] = {
+			["mats"] = {
+				["i:102536"] = 5,
+				["i:102543"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Stuffed Lushrooms",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101749",
+		},
+		[139753] = {
+			["mats"] = {
+				["i:72096"] = 20,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Decorative Spoons",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95359",
+		},
+		[180761] = {
+			["mats"] = {
+				["i:109140"] = 12,
+				["i:109137"] = 6,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Buttered Sturgeon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:122348",
+		},
+		[2538] = {
+			["mats"] = {
+				["i:2672"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Charred Wolf Meat",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Mulmok"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2679",
+		},
+		[2539] = {
+			["mats"] = {
+				["i:2672"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spiced Wolf Meat",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2680",
+		},
+		[2540] = {
+			["mats"] = {
+				["i:769"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Roasted Boar Meat",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Mulmok"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2681",
+		},
+		[2541] = {
+			["mats"] = {
+				["i:2673"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Coyote Steak",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2684",
+		},
+		[145311] = {
+			["mats"] = {
+				["i:102543"] = 1,
+				["i:102537"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fluffy Silkfeather Omelet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101750",
+		},
+		[165304] = {
+			["mats"] = {
+				["i:39354"] = 3,
+				["i:39774"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Assorted Glyphs",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:141644",
+		},
+		[2544] = {
+			["mats"] = {
+				["i:2674"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Crab Cake",
+			["players"] = {
+				["Shanyt"] = true,
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2683",
+		},
+		[104306] = {
+			["mats"] = {
+				["i:75014"] = 5,
+				["i:74842"] = 25,
+				["i:74859"] = 5,
+				["i:74661"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Mogu Fish Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74650",
+		},
+		[2546] = {
+			["mats"] = {
+				["i:2677"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Dry Pork Ribs",
+			["players"] = {
+				["Shanyt"] = true,
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2687",
+		},
+		[88018] = {
+			["mats"] = {
+				["i:53062"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fish Fry",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62677",
+		},
+		[2548] = {
+			["mats"] = {
+				["i:2677"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Succulent Pork Ribs",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2685",
+		},
+		[2549] = {
+			["mats"] = {
+				["i:1015"] = 2,
+			},
+			["numResult"] = 3,
+			["profession"] = "Cooking",
+			["name"] = "Seasoned Wolf Kabob",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1017",
+		},
+		[57423] = {
+			["mats"] = {
+				["i:41809"] = 2,
+				["i:41806"] = 2,
+				["i:43007"] = 1,
+				["i:41813"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fish Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43015",
+		},
+		[57439] = {
+			["mats"] = {
+				["i:41801"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Cuttlesteak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42998",
+		},
+		[160962] = {
+			["mats"] = {
+				["i:109136"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackrock Ham",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111433",
+		},
+		[58525] = {
+			["mats"] = {
+				["i:41810"] = 1,
+				["i:12808"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Haunted Herring",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43492",
+		},
+		[139756] = {
+			["mats"] = {
+				["i:72096"] = 35,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Barrel",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95363",
+		},
+		[4094] = {
+			["mats"] = {
+				["i:3404"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Barbecued Buzzard Wing",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:4457",
+		},
+		[88019] = {
+			["mats"] = {
+				["i:60838"] = 1,
+				["i:30817"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fortune Cookie",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62649",
+		},
+		[139757] = {
+			["mats"] = {
+				["i:72096"] = 30,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Saw",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95364",
+		},
+		[15861] = {
+			["mats"] = {
+				["i:12202"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Jungle Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12212",
+		},
+		[15865] = {
+			["mats"] = {
+				["i:12037"] = 1,
+				["i:2596"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mystery Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12214",
+		},
+		[125067] = {
+			["mats"] = {
+				["i:74854"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Perfectly Cooked Instant Noodles",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:86026",
+		},
+		[50605] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39774"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Versatility II",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1712",
+		},
+		[38868] = {
+			["mats"] = {
+				["i:31671"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Crunchy Serpent",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:31673",
+		},
+		[201525] = {
+			["mats"] = {
+				["i:124108"] = 5,
+				["i:133590"] = 5,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Deep-Fried Mossgill",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133561",
+		},
+		[33279] = {
+			["mats"] = {
+				["i:27671"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Buzzard Bites",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27651",
+		},
+		[45559] = {
+			["mats"] = {
+				["i:43007"] = 1,
+				["i:43012"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mighty Rhino Dogs",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34758",
+		},
+		[104308] = {
+			["mats"] = {
+				["i:74859"] = 1,
+				["i:74843"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fire Spirit Salmon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74652",
+		},
+		[88020] = {
+			["mats"] = {
+				["i:62782"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Grilled Dragon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62662",
+		},
+		[139759] = {
+			["mats"] = {
+				["i:72096"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Wire",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95365",
+		},
+		[57440] = {
+			["mats"] = {
+				["i:34736"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spiced Mammoth Treats",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43005",
+		},
+		[145061] = {
+			["mats"] = {
+				["i:74649"] = 5,
+				["i:74645"] = 5,
+				["i:74652"] = 5,
+				["i:74655"] = 5,
+				["i:74647"] = 5,
+				["i:75037"] = 5,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Deluxe Noodle Cart Kit",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101661",
+		},
+		[160966] = {
+			["mats"] = {
+				["i:109132"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Pan-Seared Talbuk",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111434",
+		},
+		[139760] = {
+			["mats"] = {
+				["i:72096"] = 30,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Pot",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95366",
+		},
+		[104309] = {
+			["mats"] = {
+				["i:74850"] = 25,
+				["i:74838"] = 5,
+				["i:74863"] = 5,
+				["i:74662"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Steamed Crab Surprise",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74653",
+		},
+		[145062] = {
+			["mats"] = {
+				["i:74653"] = 5,
+				["i:75038"] = 5,
+				["i:74646"] = 5,
+				["i:74656"] = 5,
+				["i:74650"] = 5,
+				["i:74648"] = 5,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Pandaren Treasure Noodle Cart Kit",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101662",
+		},
+		[88021] = {
+			["mats"] = {
+				["i:62791"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Hearty Seafood Soup",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62659",
+		},
+		[42302] = {
+			["mats"] = {
+				["i:27515"] = 1,
+			},
+			["numResult"] = 6,
+			["profession"] = "Cooking",
+			["name"] = "Fisherman's Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:33052",
+		},
+		[139761] = {
+			["mats"] = {
+				["i:72096"] = 40,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Cups",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95367",
+		},
+		[7751] = {
+			["mats"] = {
+				["i:6291"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Brilliant Smallfish",
+			["players"] = {
+				["Jingojaggot"] = true,
+				["Shanyt"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6290",
+		},
+		[7753] = {
+			["mats"] = {
+				["i:6289"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Longjaw Mud Snapper",
+			["players"] = {
+				["Shanyt"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:4592",
+		},
+		[7755] = {
+			["mats"] = {
+				["i:6308"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Bristle Whisker Catfish",
+			["players"] = {
+				["Shanyt"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:4593",
+		},
+		[139762] = {
+			["mats"] = {
+				["i:72096"] = 65,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Bowls",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95368",
+		},
+		[45560] = {
+			["mats"] = {
+				["i:41803"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Smoked Rockfin",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34759",
+		},
+		[104310] = {
+			["mats"] = {
+				["i:74839"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Wildfowl Roast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74654",
+		},
+		[88022] = {
+			["mats"] = {
+				["i:58265"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Highland Spirits",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62674",
+		},
+		[18245] = {
+			["mats"] = {
+				["i:13888"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Lobster Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13933",
+		},
+		[201530] = {
+			["mats"] = {
+				["i:124117"] = 5,
+				["i:133593"] = 4,
+				["i:124111"] = 5,
+				["i:133588"] = 2,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Suramar Surf and Turf",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133566",
+		},
+		[139763] = {
+			["mats"] = {
+				["i:72096"] = 90,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Bells",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95369",
+		},
+		[57441] = {
+			["mats"] = {
+				["i:41807"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackened Dragonfin",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42999",
+		},
+		[58527] = {
+			["mats"] = {
+				["i:43007"] = 1,
+				["i:41800"] = 2,
+				["i:34736"] = 2,
+				["i:41803"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Gigantic Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43478",
+		},
+		[201531] = {
+			["mats"] = {
+				["i:133591"] = 1,
+				["i:124120"] = 5,
+				["i:133590"] = 4,
+				["i:124112"] = 5,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Barracuda Mrglgagh",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133567",
+		},
+		[139764] = {
+			["mats"] = {
+				["i:72096"] = 50,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Crate",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95370",
+		},
+		[43772] = {
+			["mats"] = {
+				["i:27671"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Kibler's Bits",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:33874",
+		},
+		[104311] = {
+			["mats"] = {
+				["i:74865"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Twin Fish Platter",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74655",
+		},
+		[160971] = {
+			["mats"] = {
+				["i:109131"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Clefthoof Sausages",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111438",
+		},
+		[201533] = {
+			["mats"] = {
+				["i:133593"] = 10,
+				["i:124109"] = 5,
+				["i:133589"] = 4,
+				["i:133592"] = 10,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["itemString"] = "i:133569",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Drogbar-Style Salmon",
+		},
+		[48116] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39469"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Versatility",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1181",
+		},
+		[104312] = {
+			["mats"] = {
+				["i:74662"] = 1,
+				["i:74860"] = 5,
+				["i:74833"] = 5,
+				["i:74844"] = 25,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Chun Tian Spring Rolls",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74656",
+		},
+		[88024] = {
+			["mats"] = {
+				["i:53068"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Lavascale Fillet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62654",
+		},
+		[201534] = {
+			["mats"] = {
+				["i:124109"] = 5,
+				["i:133565"] = 1,
+				["i:133588"] = 3,
+				["i:133589"] = 2,
+				["i:124118"] = 5,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "The Hungry Magister",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133570",
+		},
+		[52843] = {
+			["mats"] = {
+				["i:39151"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Moonglow Ink",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:39469",
+		},
+		[58512] = {
+			["mats"] = {
+				["i:43501"] = 1,
+				["i:30817"] = 2,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Tasty Cupcake",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43490",
+		},
+		[58528] = {
+			["mats"] = {
+				["i:41809"] = 2,
+				["i:43012"] = 2,
+				["i:43007"] = 1,
+				["i:41813"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Small Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43480",
+		},
+		[201535] = {
+			["mats"] = {
+				["i:124104"] = 5,
+				["i:124101"] = 5,
+				["i:124102"] = 5,
+				["i:133566"] = 1,
+				["i:124103"] = 5,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Azshari Salad",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133571",
+		},
+		[58065] = {
+			["mats"] = {
+				["i:36782"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Dalaran Clam Chowder",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43268",
+		},
+		[9059] = {
+			["mats"] = {
+				["i:2318"] = 2,
+				["i:2320"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Leatherworking",
+			["itemString"] = "i:7277",
+			["players"] = {
+				["Tyrannithal"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Handstitched Leather Bracers",
+		},
+		[88025] = {
+			["mats"] = {
+				["i:53068"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Lavascale Minestrone",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62663",
+		},
+		[2149] = {
+			["mats"] = {
+				["i:2318"] = 2,
+				["i:2320"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Leatherworking",
+			["itemString"] = "i:2302",
+			["players"] = {
+				["Tyrannithal"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Handstitched Leather Boots",
+		},
+		[2152] = {
+			["mats"] = {
+				["i:2318"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Leatherworking",
+			["itemString"] = "i:2304",
+			["players"] = {
+				["Tyrannithal"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Light Armor Kit",
+		},
+		[24801] = {
+			["mats"] = {
+				["i:20424"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Smoked Desert Dumplings",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:20452",
+		},
+		[201537] = {
+			["mats"] = {
+				["i:133607"] = 5,
+				["i:133590"] = 3,
+				["i:128304"] = 20,
+				["i:133568"] = 1,
+				["i:133589"] = 2,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Seed-Battered Fish Plate",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133573",
+		},
+		[45562] = {
+			["mats"] = {
+				["i:41812"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sauteed Goby",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34761",
+		},
+		[18238] = {
+			["mats"] = {
+				["i:4603"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spotted Yellowtail",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6887",
+		},
+		[18246] = {
+			["mats"] = {
+				["i:13893"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mightfish Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13934",
+		},
+		[201538] = {
+			["mats"] = {
+				["i:133589"] = 5,
+				["i:124108"] = 5,
+				["i:124112"] = 5,
+				["i:133569"] = 1,
+				["i:133592"] = 10,
+				["i:124107"] = 5,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Fishbrul Special",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133574",
+		},
+		[57443] = {
+			["mats"] = {
+				["i:43009"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Tracker Snacks",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43001",
+		},
+		[24418] = {
+			["mats"] = {
+				["i:3667"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["itemString"] = "i:20074",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Heavy Crocolisk Stew",
+		},
+		[124052] = {
+			["mats"] = {
+				["i:74845"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Ginseng Tea",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:75026",
+		},
+		[7929] = {
+			["mats"] = {
+				["i:4306"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Heavy Silk Bandage",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6451",
+		},
+		[42305] = {
+			["mats"] = {
+				["i:27516"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Hot Buttered Trout",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:33053",
+		},
+		[7428] = {
+			["mats"] = {
+				["i:38682"] = 1,
+				["i:10938"] = 1,
+				["i:10940"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38768",
+			["players"] = {
+				["Mulmok"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Minor Dodge",
+		},
+		[64358] = {
+			["mats"] = {
+				["i:41805"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Black Jelly",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:45932",
+		},
+		[124053] = {
+			["mats"] = {
+				["i:74847"] = 5,
+				["i:74846"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Jade Witch Brew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:75037",
+		},
+		[6414] = {
+			["mats"] = {
+				["i:5467"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["itemString"] = "i:5474",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Roasted Kodo Meat",
+		},
+		[6416] = {
+			["mats"] = {
+				["i:5469"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Strider Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5477",
+		},
+		[6418] = {
+			["mats"] = {
+				["i:5470"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Crispy Lizard Tail",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5479",
+		},
+		[45563] = {
+			["mats"] = {
+				["i:41806"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Grilled Sculpin",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34762",
+		},
+		[15906] = {
+			["mats"] = {
+				["i:12037"] = 1,
+				["i:4402"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Dragonbreath Chili",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12217",
+		},
+		[15910] = {
+			["mats"] = {
+				["i:12204"] = 2,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Heavy Kodo Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12215",
+		},
+		[25704] = {
+			["mats"] = {
+				["i:21071"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Smoked Sagefish",
+			["players"] = {
+				["Shanyt"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:21072",
+		},
+		[124054] = {
+			["mats"] = {
+				["i:74661"] = 1,
+				["i:74849"] = 50,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Mad Brewer's Breakfast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:75038",
+		},
+		[20626] = {
+			["mats"] = {
+				["i:7974"] = 2,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Undermine Clam Chowder",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:16766",
+		},
+		[6458] = {
+			["mats"] = {
+				["i:1206"] = 1,
+				["i:4375"] = 2,
+				["i:4371"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:5507",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Ornate Spyglass",
+		},
+		[160983] = {
+			["mats"] = {
+				["i:109138"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Skulker Chowder",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111446",
+		},
+		[201544] = {
+			["mats"] = {
+				["i:124117"] = 5,
+				["i:133589"] = 2,
+				["i:133588"] = 2,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["name"] = "Salt & Pepper Shank",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133557",
+		},
+		[160984] = {
+			["mats"] = {
+				["i:111439"] = 5,
+				["i:111431"] = 5,
+				["i:109129"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Talador Surf and Turf",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111447",
+		},
+		[125141] = {
+			["mats"] = {
+				["i:74850"] = 50,
+				["i:74853"] = 1,
+				["i:74838"] = 10,
+				["i:74860"] = 10,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Banquet of the Grill",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87226",
+		},
+		[185704] = {
+			["mats"] = {
+				["i:124669"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Lemon Herb Filet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:126934",
+		},
+		[33284] = {
+			["mats"] = {
+				["i:27674"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Ravager Dog",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27655",
+		},
+		[45564] = {
+			["mats"] = {
+				["i:41809"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Smoked Salmon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34763",
+		},
+		[165456] = {
+			["mats"] = {
+				["i:39354"] = 3,
+				["i:43116"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Assorted Glyphs",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:141644",
+		},
+		[18239] = {
+			["mats"] = {
+				["i:13754"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Cooked Glossy Mightfish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13927",
+		},
+		[18247] = {
+			["mats"] = {
+				["i:13889"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Baked Salmon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13935",
+		},
+		[185705] = {
+			["mats"] = {
+				["i:124669"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fancy Darkmoon Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:126935",
+		},
+		[6500] = {
+			["mats"] = {
+				["i:5504"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Goblin Deviled Clams",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5527",
+		},
+		[48247] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:43115"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Mysterious Tarot",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:37168",
+		},
+		[125078] = {
+			["mats"] = {
+				["i:74832"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Roasted Barley Tea",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81406",
+		},
+		[125142] = {
+			["mats"] = {
+				["i:74850"] = 100,
+				["i:74853"] = 1,
+				["i:74838"] = 20,
+				["i:74860"] = 20,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Great Banquet of the Grill",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87228",
+		},
+		[201547] = {
+			["mats"] = {
+				["i:133591"] = 2,
+				["i:124121"] = 5,
+				["i:133593"] = 3,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["name"] = "Faronaar Fizz",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133563",
+		},
+		[180760] = {
+			["mats"] = {
+				["i:109144"] = 12,
+				["i:109137"] = 6,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Whiptail Fillet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:122347",
+		},
+		[145307] = {
+			["mats"] = {
+				["i:102542"] = 1,
+				["i:79246"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spiced Blossom Soup",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101748",
+		},
+		[13028] = {
+			["mats"] = {
+				["i:3821"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 4,
+			["profession"] = "Cooking",
+			["name"] = "Goldthorn Tea",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:10841",
+		},
+		[88031] = {
+			["mats"] = {
+				["i:53066"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mushroom Sauce Mudfish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62667",
+		},
+		[93741] = {
+			["mats"] = {
+				["i:67229"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Venison Jerky",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:67230",
+		},
+		[21143] = {
+			["mats"] = {
+				["i:6889"] = 1,
+				["i:17194"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Gingerbread Cookie",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:17197",
+		},
+		[201548] = {
+			["mats"] = {
+				["i:124119"] = 5,
+				["i:133589"] = 5,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["itemString"] = "i:133564",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Spiced Rib Roast",
+		},
+		[88030] = {
+			["mats"] = {
+				["i:53067"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Lurker Lunch",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62657",
+		},
+		[160986] = {
+			["mats"] = {
+				["i:111433"] = 5,
+				["i:111441"] = 5,
+				["i:109125"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackrock Barbecue",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111449",
+		},
+		[160979] = {
+			["mats"] = {
+				["i:109140"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sturgeon Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111442",
+		},
+		[45022] = {
+			["mats"] = {
+				["i:34412"] = 1,
+				["i:17196"] = 1,
+				["i:17194"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Hot Apple Cider",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34411",
+		},
+		[185708] = {
+			["mats"] = {
+				["i:124669"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sugar-Crusted Fish Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:126936",
+		},
+		[3275] = {
+			["mats"] = {
+				["i:2589"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Linen Bandage",
+			["players"] = {
+				["Vadder"] = true,
+				["Mulmok"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1251",
+		},
+		[140165] = {
+			["mats"] = {
+				["i:72096"] = 100,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Picks",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95483",
+		},
+		[3277] = {
+			["mats"] = {
+				["i:2592"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Wool Bandage",
+			["players"] = {
+				["Vadder"] = true,
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3530",
+		},
+		[45549] = {
+			["mats"] = {
+				["i:34736"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mammoth Meal",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34748",
+		},
+		[45565] = {
+			["mats"] = {
+				["i:41813"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Poached Nettlefish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34764",
+		},
+		[139754] = {
+			["mats"] = {
+				["i:72096"] = 25,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Spade",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95361",
+		},
+		[201541] = {
+			["mats"] = {
+				["i:124107"] = 5,
+				["i:133593"] = 1,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Fighter Chow",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133577",
+		},
+		[160989] = {
+			["mats"] = {
+				["i:109127"] = 1,
+				["i:111444"] = 5,
+				["i:111436"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sleeper Surprise",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111452",
+		},
+		[48114] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39469"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Intellect",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:955",
+		},
+		[140166] = {
+			["mats"] = {
+				["i:72096"] = 75,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Frames",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95484",
+		},
+		[45558] = {
+			["mats"] = {
+				["i:43011"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Very Burnt Worg",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34757",
+		},
+		[7126] = {
+			["mats"] = {
+				["i:2318"] = 3,
+				["i:2320"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Leatherworking",
+			["itemString"] = "i:5957",
+			["players"] = {
+				["Tyrannithal"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Handstitched Leather Vest",
+		},
+		[48248] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39469"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Recall",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:37118",
+		},
+		[58484] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39469"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Strength",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:954",
+		},
+		[124232] = {
+			["mats"] = {
+				["i:74660"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Peach Pie",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81411",
+		},
+		[125080] = {
+			["mats"] = {
+				["i:74852"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Pearl Milk Tea",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81414",
+		},
+		[7418] = {
+			["mats"] = {
+				["i:10940"] = 1,
+				["i:38682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:38679",
+			["players"] = {
+				["Mulmok"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Minor Health",
+		},
+		[140167] = {
+			["mats"] = {
+				["i:72096"] = 25,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Pans",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95485",
+		},
+		[64054] = {
+			["mats"] = {
+				["i:7974"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Clamlette Magnifique",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:33004",
+		},
+		[160969] = {
+			["mats"] = {
+				["i:109133"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Rylak Crepes",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111437",
+		},
+		[139755] = {
+			["mats"] = {
+				["i:72096"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Needles",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95362",
+		},
+		[21175] = {
+			["mats"] = {
+				["i:12205"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spider Sausage",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:17222",
+		},
+		[160982] = {
+			["mats"] = {
+				["i:109141"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fiery Calamari",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111445",
+		},
+		[88033] = {
+			["mats"] = {
+				["i:53064"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Pickled Guppy",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62660",
+		},
+		[33294] = {
+			["mats"] = {
+				["i:27437"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Poached Bluefish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27665",
+		},
+		[140168] = {
+			["mats"] = {
+				["i:72096"] = 80,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Statue",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95486",
+		},
+		[6499] = {
+			["mats"] = {
+				["i:5503"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Boiled Clams",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5525",
+		},
+		[6501] = {
+			["mats"] = {
+				["i:5503"] = 1,
+				["i:1179"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Clam Chowder",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5526",
+		},
+		[57421] = {
+			["mats"] = {
+				["i:43013"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Northern Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34747",
+		},
+		[28267] = {
+			["mats"] = {
+				["i:22644"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Crunchy Spider Surprise",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:22645",
+		},
+		[18244] = {
+			["mats"] = {
+				["i:13760"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Poached Sunscale Salmon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13932",
+		},
+		[2795] = {
+			["mats"] = {
+				["i:2886"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Beer Basted Boar Ribs",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2888",
+		},
+		[50612] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39774"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Stamina II",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1711",
+		},
+		[18243] = {
+			["mats"] = {
+				["i:13759"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Nightfin Soup",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13931",
+		},
+		[45550] = {
+			["mats"] = {
+				["i:43009"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Shoveltusk Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34749",
+		},
+		[33286] = {
+			["mats"] = {
+				["i:27677"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackened Basilisk",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27657",
+		},
+		[45566] = {
+			["mats"] = {
+				["i:41810"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Pickled Fangtooth",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34765",
+		},
+		[18240] = {
+			["mats"] = {
+				["i:13755"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Grilled Squid",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13928",
+		},
+		[104302] = {
+			["mats"] = {
+				["i:74864"] = 1,
+				["i:74839"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Valley Stir Fry",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74647",
+		},
+		[88034] = {
+			["mats"] = {
+				["i:53066"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackbelly Sushi",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62668",
+		},
+		[45556] = {
+			["mats"] = {
+				["i:43009"] = 2,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Tender Shoveltusk Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34755",
+		},
+		[201546] = {
+			["mats"] = {
+				["i:124110"] = 5,
+				["i:133588"] = 3,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["itemString"] = "i:133562",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Pickled Stormray",
+		},
+		[46684] = {
+			["mats"] = {
+				["i:35562"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Charred Bear Kabobs",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:35563",
+		},
+		[59475] = {
+			["mats"] = {
+				["i:39354"] = 10,
+				["i:43117"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Tome of the Dawn",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43654",
+		},
+		[160978] = {
+			["mats"] = {
+				["i:109143"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Grilled Gulper",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111441",
+		},
+		[58485] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39774"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Strength II",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2289",
+		},
+		[15933] = {
+			["mats"] = {
+				["i:12207"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Monster Omelet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12218",
+		},
+		[8604] = {
+			["mats"] = {
+				["i:6889"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Herb Baked Egg",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Mulmok"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6888",
+		},
+		[96133] = {
+			["mats"] = {
+				["i:53069"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Scalding Murglesnout",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:68687",
+		},
+		[2542] = {
+			["mats"] = {
+				["i:723"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Goretusk Liver Pie",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:724",
+		},
+		[58565] = {
+			["mats"] = {
+				["i:39354"] = 10,
+				["i:43115"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Mystic Tome",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43515",
+		},
+		[37836] = {
+			["mats"] = {
+				["i:30817"] = 1,
+				["i:2678"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spice Bread",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:30816",
+		},
+		[33295] = {
+			["mats"] = {
+				["i:27438"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Golden Fish Sticks",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27666",
+		},
+		[22480] = {
+			["mats"] = {
+				["i:12208"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Tender Wolf Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:18045",
+		},
+		[88003] = {
+			["mats"] = {
+				["i:53071"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Baked Rockfish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62661",
+		},
+		[88035] = {
+			["mats"] = {
+				["i:62780"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Salted Eye",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62653",
+		},
+		[15863] = {
+			["mats"] = {
+				["i:12037"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Carrion Surprise",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12213",
+		},
+		[53056] = {
+			["mats"] = {
+				["i:35949"] = 2,
+				["i:35948"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Kungaloosh",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:39520",
+		},
+		[15855] = {
+			["mats"] = {
+				["i:12184"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Roast Raptor",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12210",
+		},
+		[57703] = {
+			["mats"] = {
+				["i:43103"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Hunter's Ink",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43115",
+		},
+		[201684] = {
+			["mats"] = {
+				["i:133680"] = 5,
+				["i:133589"] = 5,
+			},
+			["numResult"] = 7,
+			["profession"] = "Cooking",
+			["name"] = "Crispy Bacon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133681",
+		},
+		[125594] = {
+			["mats"] = {
+				["i:75014"] = 10,
+				["i:74853"] = 1,
+				["i:74857"] = 10,
+				["i:74844"] = 50,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Banquet of the Wok",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87230",
+		},
+		[124029] = {
+			["mats"] = {
+				["i:85506"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Viseclaw Soup",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:85501",
+		},
+		[62350] = {
+			["mats"] = {
+				["i:43011"] = 2,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Worg Tartare",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44953",
+		},
+		[21144] = {
+			["mats"] = {
+				["i:17196"] = 1,
+				["i:17194"] = 1,
+				["i:6889"] = 1,
+				["i:1179"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Winter Veil Egg Nog",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:17198",
+		},
+		[45551] = {
+			["mats"] = {
+				["i:43010"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Worm Delight",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34750",
+		},
+		[104301] = {
+			["mats"] = {
+				["i:74841"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sauteed Carrots",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74643",
+		},
+		[33287] = {
+			["mats"] = {
+				["i:27678"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Roasted Clefthoof",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27658",
+		},
+		[45567] = {
+			["mats"] = {
+				["i:43007"] = 1,
+				["i:41806"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Poached Northern Sculpin",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34766",
+		},
+		[88004] = {
+			["mats"] = {
+				["i:62783"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Basilisk Liverdog",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62665",
+		},
+		[8238] = {
+			["mats"] = {
+				["i:6522"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Savory Deviate Delight",
+			["players"] = {
+				["Shanyt"] = true,
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6657",
+		},
+		[88036] = {
+			["mats"] = {
+				["i:53064"] = 2,
+				["i:53068"] = 2,
+				["i:53070"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Seafood Magnifique Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62290",
+		},
+		[230046] = {
+			["mats"] = {
+				["i:142336"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spiced Falcosaur Omelet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:142334",
+		},
+		[15915] = {
+			["mats"] = {
+				["i:12206"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spiced Chili Crab",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12216",
+		},
+		[50598] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39774"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Intellect II",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2290",
+		},
+		[36210] = {
+			["mats"] = {
+				["i:24477"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Clam Bar",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:30155",
+		},
+		[45695] = {
+			["mats"] = {
+				["i:2596"] = 1,
+				["i:2594"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Captain Rumsey's Lager",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34832",
+		},
+		[7752] = {
+			["mats"] = {
+				["i:6303"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Slitherskin Mackerel",
+			["players"] = {
+				["Jingojaggot"] = true,
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:787",
+		},
+		[15935] = {
+			["mats"] = {
+				["i:12223"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["itemString"] = "i:12224",
+			["players"] = {
+				["Jingojaggot"] = true,
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Crispy Bat Wing",
+		},
+		[125595] = {
+			["mats"] = {
+				["i:75014"] = 20,
+				["i:74853"] = 1,
+				["i:74857"] = 20,
+				["i:74844"] = 100,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Great Banquet of the Wok",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87232",
+		},
+		[7213] = {
+			["mats"] = {
+				["i:4655"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Giant Clam Scorcho",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6038",
+		},
+		[88037] = {
+			["mats"] = {
+				["i:62779"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Seasoned Crab",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62652",
+		},
+		[10841] = {
+			["mats"] = {
+				["i:4338"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Heavy Mageweave Bandage",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:8545",
+		},
+		[3371] = {
+			["mats"] = {
+				["i:3173"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Blood Sausage",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3220",
+		},
+		[161001] = {
+			["mats"] = {
+				["i:109137"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Saberfish Broth",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111455",
+		},
+		[45569] = {
+			["mats"] = {
+				["i:41802"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Baked Manta Ray",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42942",
+		},
+		[88005] = {
+			["mats"] = {
+				["i:62784"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Beer-Basted Crocolisk",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62670",
+		},
+		[160999] = {
+			["mats"] = {
+				["i:111437"] = 5,
+				["i:111445"] = 5,
+				["i:109128"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Calamari Crepes",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111453",
+		},
+		[59480] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:43117"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Strange Tarot",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44142",
+		},
+		[104300] = {
+			["mats"] = {
+				["i:74840"] = 25,
+				["i:74661"] = 1,
+				["i:74834"] = 5,
+				["i:74857"] = 5,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Black Pepper Ribs and Shrimp",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74646",
+		},
+		[201560] = {
+			["mats"] = {
+				["i:124118"] = 5,
+				["i:133591"] = 1,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["name"] = "Bear Tartare",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133576",
+		},
+		[66034] = {
+			["mats"] = {
+				["i:44853"] = 1,
+				["i:44835"] = 1,
+				["i:46797"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Candied Sweet Potato",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44839",
+		},
+		[57704] = {
+			["mats"] = {
+				["i:39338"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Lion's Ink",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43116",
+		},
+		[105194] = {
+			["mats"] = {
+				["i:74853"] = 1,
+				["i:74863"] = 20,
+				["i:74849"] = 100,
+				["i:74833"] = 20,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Great Pandaren Banquet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:75016",
+		},
+		[8334] = {
+			["mats"] = {
+				["i:2841"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:6712",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Clockwork Box",
+		},
+		[7754] = {
+			["mats"] = {
+				["i:6317"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Loch Frenzy Delight",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6316",
+		},
+		[125117] = {
+			["mats"] = {
+				["i:74660"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sliced Peaches",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:86057",
+		},
+		[3372] = {
+			["mats"] = {
+				["i:1468"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Murloc Fin Soup",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3663",
+		},
+		[3373] = {
+			["mats"] = {
+				["i:3667"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Crocolisk Gumbo",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3664",
+		},
+		[45552] = {
+			["mats"] = {
+				["i:43011"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Roasted Worg",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34751",
+		},
+		[124223] = {
+			["mats"] = {
+				["i:74851"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Pounded Rice Cake",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81400",
+		},
+		[3376] = {
+			["mats"] = {
+				["i:3685"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Curiously Tasty Omelet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3665",
+		},
+		[3377] = {
+			["mats"] = {
+				["i:2251"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Gooey Spider Cake",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3666",
+		},
+		[18241] = {
+			["mats"] = {
+				["i:13758"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Filet of Redgill",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13930",
+		},
+		[3977] = {
+			["mats"] = {
+				["i:4359"] = 1,
+				["i:2840"] = 2,
+				["i:774"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4405",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Crude Scope",
+		},
+		[45553] = {
+			["mats"] = {
+				["i:43012"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Rhino Dogs",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34752",
+		},
+		[201562] = {
+			["mats"] = {
+				["i:133680"] = 3,
+				["i:133564"] = 3,
+				["i:133562"] = 3,
+				["i:133563"] = 3,
+				["i:133557"] = 3,
+				["i:133561"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Hearty Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133578",
+		},
+		[57433] = {
+			["mats"] = {
+				["i:41810"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spicy Fried Herring",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42993",
+		},
+		[3918] = {
+			["mats"] = {
+				["i:2835"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4357",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Rough Blasting Powder",
+		},
+		[25954] = {
+			["mats"] = {
+				["i:21153"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sagefish Delight",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:21217",
+		},
+		[124032] = {
+			["mats"] = {
+				["i:74865"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Krasarang Fritters",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:85504",
+		},
+		[161002] = {
+			["mats"] = {
+				["i:109137"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Grilled Saberfish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111456",
+		},
+		[45571] = {
+			["mats"] = {
+				["i:43007"] = 1,
+				["i:41813"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spicy Blue Nettlefish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34768",
+		},
+		[33291] = {
+			["mats"] = {
+				["i:27425"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Feltail Delight",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27662",
+		},
+		[3919] = {
+			["mats"] = {
+				["i:2589"] = 1,
+				["i:4357"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4358",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Rough Dynamite",
+		},
+		[57434] = {
+			["mats"] = {
+				["i:43010"] = 1,
+				["i:43012"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Rhinolicious Wormsteak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42994",
+		},
+		[124224] = {
+			["mats"] = {
+				["i:74852"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Yak Cheese Curds",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81401",
+		},
+		[2881] = {
+			["mats"] = {
+				["i:2934"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Leatherworking",
+			["itemString"] = "i:2318",
+			["players"] = {
+				["Tyrannithal"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Light Leather",
+		},
+		[20916] = {
+			["mats"] = {
+				["i:8365"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mithril Head Trout",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:8364",
+		},
+		[88039] = {
+			["mats"] = {
+				["i:53072"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Severed Sagefish Head",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62671",
+		},
+		[3978] = {
+			["mats"] = {
+				["i:1206"] = 1,
+				["i:4371"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4406",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Standard Scope",
+		},
+		[6413] = {
+			["mats"] = {
+				["i:5466"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Scorpid Surprise",
+			["players"] = {
+				["Shanyt"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5473",
+		},
+		[3929] = {
+			["mats"] = {
+				["i:2836"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4364",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Coarse Blasting Powder",
+		},
+		[3398] = {
+			["mats"] = {
+				["i:3731"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Hot Lion Chops",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3727",
+		},
+		[3399] = {
+			["mats"] = {
+				["i:3731"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Tasty Lion Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3728",
+		},
+		[3400] = {
+			["mats"] = {
+				["i:3712"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Soothing Turtle Bisque",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3729",
+		},
+		[104297] = {
+			["mats"] = {
+				["i:74866"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fish Cake",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74641",
+		},
+		[125598] = {
+			["mats"] = {
+				["i:74847"] = 50,
+				["i:74839"] = 10,
+				["i:74859"] = 10,
+				["i:74853"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Banquet of the Steamer",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87238",
+		},
+		[105190] = {
+			["mats"] = {
+				["i:74853"] = 1,
+				["i:74863"] = 10,
+				["i:74849"] = 50,
+				["i:74833"] = 10,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Pandaren Banquet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74919",
+		},
+		[3937] = {
+			["mats"] = {
+				["i:4404"] = 1,
+				["i:2840"] = 3,
+				["i:4364"] = 4,
+			},
+			["numResult"] = 3,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4370",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Large Copper Bomb",
+		},
+		[66038] = {
+			["mats"] = {
+				["i:30816"] = 1,
+				["i:44835"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spice Bread Stuffing",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44837",
+		},
+		[33289] = {
+			["mats"] = {
+				["i:27682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Talbuk Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27660",
+		},
+		[7828] = {
+			["mats"] = {
+				["i:6362"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Rockscale Cod",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:4594",
+		},
+		[52739] = {
+			["mats"] = {
+				["i:39354"] = 2,
+				["i:39469"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Inscription",
+			["name"] = "Enchanting Vellum",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:38682",
+		},
+		[66035] = {
+			["mats"] = {
+				["i:44853"] = 1,
+				["i:46793"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Cranberry Chutney",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44840",
+		},
+		[173978] = {
+			["mats"] = {
+				["i:109131"] = 10,
+				["i:109132"] = 10,
+				["i:109136"] = 10,
+				["i:109133"] = 10,
+				["i:109134"] = 10,
+				["i:109135"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Feast of Blood",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111457",
+		},
+		[3922] = {
+			["mats"] = {
+				["i:2840"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4359",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Handful of Copper Bolts",
+		},
+		[3923] = {
+			["mats"] = {
+				["i:4359"] = 1,
+				["i:4357"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4360",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Rough Copper Bomb",
+		},
+		[3942] = {
+			["mats"] = {
+				["i:2592"] = 1,
+				["i:2841"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4375",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Whirring Bronze Gizmo",
+		},
+		[3925] = {
+			["mats"] = {
+				["i:4359"] = 3,
+				["i:2840"] = 4,
+				["i:4399"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4362",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Rough Boomstick",
+		},
+		[58472] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39469"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Agility",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3012",
+		},
+		[3945] = {
+			["mats"] = {
+				["i:2838"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4377",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Heavy Blasting Powder",
+		},
+		[124227] = {
+			["mats"] = {
+				["i:85583"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Dried Needle Mushrooms",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81404",
+		},
+		[125599] = {
+			["mats"] = {
+				["i:74847"] = 100,
+				["i:74839"] = 20,
+				["i:74859"] = 20,
+				["i:74853"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Great Banquet of the Steamer",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87240",
+		},
+		[125120] = {
+			["mats"] = {
+				["i:74846"] = 25,
+				["i:74859"] = 5,
+				["i:74851"] = 1,
+				["i:74848"] = 25,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Spicy Salmon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:86073",
+		},
+		[3931] = {
+			["mats"] = {
+				["i:4364"] = 1,
+				["i:2589"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4365",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Coarse Dynamite",
+		},
+		[3932] = {
+			["mats"] = {
+				["i:2592"] = 2,
+				["i:2841"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4366",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Target Dummy",
+		},
+		[43765] = {
+			["mats"] = {
+				["i:27682"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spicy Hot Talbuk",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:33872",
+		},
+		[124226] = {
+			["mats"] = {
+				["i:74660"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Dried Peaches",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81403",
+		},
+		[145038] = {
+			["mats"] = {
+				["i:74644"] = 5,
+				["i:74654"] = 5,
+				["i:74651"] = 5,
+				["i:75026"] = 5,
+				["i:74643"] = 5,
+				["i:74642"] = 5,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Noodle Cart Kit",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:101630",
+		},
+		[66036] = {
+			["mats"] = {
+				["i:44853"] = 1,
+				["i:46796"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Pumpkin Pie",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44836",
+		},
+		[42296] = {
+			["mats"] = {
+				["i:27422"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Stewed Trout",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:33048",
+		},
+		[3938] = {
+			["mats"] = {
+				["i:2841"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4371",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Bronze Tube",
+		},
+		[3939] = {
+			["mats"] = {
+				["i:4359"] = 2,
+				["i:1206"] = 3,
+				["i:4400"] = 1,
+				["i:4371"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4372",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Lovingly Crafted Boomstick",
+		},
+		[88011] = {
+			["mats"] = {
+				["i:62782"] = 3,
+				["i:62785"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Broiled Dragon Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62289",
+		},
+		[3941] = {
+			["mats"] = {
+				["i:4404"] = 1,
+				["i:2841"] = 2,
+				["i:4364"] = 4,
+				["i:2592"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4374",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Small Bronze Bomb",
+		},
+		[57706] = {
+			["mats"] = {
+				["i:43104"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Dawnstar Ink",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43117",
+		},
+		[22761] = {
+			["mats"] = {
+				["i:18255"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Runn Tum Tuber Surprise",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:18254",
+		},
+		[3949] = {
+			["mats"] = {
+				["i:4375"] = 2,
+				["i:4400"] = 1,
+				["i:2842"] = 3,
+				["i:4371"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4379",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Silver-Plated Shotgun",
+		},
+		[125600] = {
+			["mats"] = {
+				["i:74865"] = 10,
+				["i:74842"] = 50,
+				["i:74837"] = 10,
+				["i:74853"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Banquet of the Oven",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87242",
+		},
+		[3946] = {
+			["mats"] = {
+				["i:4377"] = 2,
+				["i:2592"] = 1,
+			},
+			["numResult"] = 3,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4378",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Heavy Dynamite",
+		},
+		[104299] = {
+			["mats"] = {
+				["i:74856"] = 1,
+				["i:74848"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Eternal Blossom Fish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74645",
+		},
+		[45570] = {
+			["mats"] = {
+				["i:43007"] = 1,
+				["i:41802"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Imperial Manta Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34769",
+		},
+		[45554] = {
+			["mats"] = {
+				["i:43013"] = 2,
+				["i:43010"] = 1,
+				["i:34736"] = 1,
+				["i:43009"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Great Feast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34753",
+		},
+		[104298] = {
+			["mats"] = {
+				["i:74833"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Charbroiled Tiger Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74642",
+		},
+		[18242] = {
+			["mats"] = {
+				["i:13756"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Hot Smoked Bass",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13929",
+		},
+		[66037] = {
+			["mats"] = {
+				["i:44853"] = 2,
+				["i:44834"] = 1,
+				["i:44835"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Slow-Roasted Turkey",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:44838",
+		},
+		[3953] = {
+			["mats"] = {
+				["i:2592"] = 1,
+				["i:2841"] = 2,
+				["i:2319"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4382",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Bronze Framework",
+		},
+		[10840] = {
+			["mats"] = {
+				["i:4338"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Mageweave Bandage",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:8544",
+		},
+		[126655] = {
+			["mats"] = {
+				["i:4537"] = 1,
+				["i:74846"] = 200,
+				["i:85584"] = 1,
+				["i:74661"] = 1,
+				["i:9260"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Banana Infused Rum",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:86432",
+		},
+		[46688] = {
+			["mats"] = {
+				["i:35562"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Juicy Bear Burger",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:35565",
+		},
+		[57435] = {
+			["mats"] = {
+				["i:43013"] = 2,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 4,
+			["profession"] = "Cooking",
+			["name"] = "Critter Bites",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43004",
+		},
+		[58473] = {
+			["mats"] = {
+				["i:39354"] = 1,
+				["i:39774"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Scroll of Agility II",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1477",
+		},
+		[125601] = {
+			["mats"] = {
+				["i:74865"] = 20,
+				["i:74842"] = 100,
+				["i:74837"] = 20,
+				["i:74853"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Great Banquet of the Oven",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87244",
+		},
+		[104305] = {
+			["mats"] = {
+				["i:74837"] = 1,
+				["i:74841"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Braised Turtle",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74649",
+		},
+		[58521] = {
+			["mats"] = {
+				["i:34736"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Last Week's Mammoth",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43488",
+		},
+		[125122] = {
+			["mats"] = {
+				["i:74851"] = 1,
+				["i:74852"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Rice Pudding",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:86069",
+		},
+		[59478] = {
+			["mats"] = {
+				["i:39354"] = 10,
+				["i:43117"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Book of Survival",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43655",
+		},
+		[88042] = {
+			["mats"] = {
+				["i:53070"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Skewered Eel",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62669",
+		},
+		[3950] = {
+			["mats"] = {
+				["i:4377"] = 2,
+				["i:2841"] = 3,
+				["i:4404"] = 1,
+			},
+			["numResult"] = 3,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4380",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Big Bronze Bomb",
+		},
+		[124228] = {
+			["mats"] = {
+				["i:85584"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Boiled Silkworm Pupa",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81405",
+		},
+		[33290] = {
+			["mats"] = {
+				["i:27422"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackened Trout",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27661",
+		},
+		[7928] = {
+			["mats"] = {
+				["i:4306"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Silk Bandage",
+			["players"] = {
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6450",
+		},
+		[126654] = {
+			["mats"] = {
+				["i:74660"] = 1,
+				["i:74844"] = 200,
+				["i:74662"] = 1,
+				["i:74661"] = 1,
+				["i:74853"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Four Senses Brew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87264",
+		},
+		[7421] = {
+			["mats"] = {
+				["i:6217"] = 1,
+				["i:10938"] = 1,
+				["i:10940"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Enchanting",
+			["itemString"] = "i:6218",
+			["players"] = {
+				["Mulmok"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Runed Copper Rod",
+		},
+		[7934] = {
+			["mats"] = {
+				["i:1475"] = 1,
+			},
+			["numResult"] = 3,
+			["profession"] = "First Aid",
+			["name"] = "Anti-Venom",
+			["players"] = {
+				["Vadder"] = true,
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6452",
+		},
+		[15856] = {
+			["mats"] = {
+				["i:12203"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Hot Wolf Ribs",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:13851",
+		},
+		[3973] = {
+			["mats"] = {
+				["i:2842"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4404",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Silver Contact",
+		},
+		[3936] = {
+			["mats"] = {
+				["i:4406"] = 1,
+				["i:4399"] = 1,
+				["i:4371"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4369",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Deadly Blunderbuss",
+		},
+		[3934] = {
+			["mats"] = {
+				["i:818"] = 2,
+				["i:2841"] = 8,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:4368",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Flying Tiger Goggles",
+		},
+		[125121] = {
+			["mats"] = {
+				["i:74845"] = 1,
+				["i:74839"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Wildfowl Ginseng Soup",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:86070",
+		},
+		[125602] = {
+			["mats"] = {
+				["i:74840"] = 50,
+				["i:74853"] = 1,
+				["i:74846"] = 50,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Banquet of the Brew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87246",
+		},
+		[125123] = {
+			["mats"] = {
+				["i:74847"] = 25,
+				["i:74849"] = 25,
+				["i:74841"] = 25,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Spicy Vegetable Chips",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:86074",
+		},
+		[6417] = {
+			["mats"] = {
+				["i:5051"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Dig Rat Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5478",
+		},
+		[173979] = {
+			["mats"] = {
+				["i:109140"] = 10,
+				["i:109139"] = 10,
+				["i:109141"] = 10,
+				["i:109138"] = 10,
+				["i:109142"] = 10,
+				["i:109143"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Feast of the Waters",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111458",
+		},
+		[45555] = {
+			["mats"] = {
+				["i:34736"] = 2,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mega Mammoth Meal",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34754",
+		},
+		[124229] = {
+			["mats"] = {
+				["i:85585"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Red Bean Bun",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81408",
+		},
+		[124225] = {
+			["mats"] = {
+				["i:74866"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Toasted Fish Jerky",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81402",
+		},
+		[88012] = {
+			["mats"] = {
+				["i:53063"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Broiled Mountain Trout",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62655",
+		},
+		[88044] = {
+			["mats"] = {
+				["i:58278"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "South Island Iced Tea",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62672",
+		},
+		[6415] = {
+			["mats"] = {
+				["i:5468"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Fillet of Frenzy",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5476",
+		},
+		[125597] = {
+			["mats"] = {
+				["i:74864"] = 20,
+				["i:74834"] = 20,
+				["i:74841"] = 100,
+				["i:74853"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Great Banquet of the Pot",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87236",
+		},
+		[88006] = {
+			["mats"] = {
+				["i:62778"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackened Surprise",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62676",
+		},
+		[57436] = {
+			["mats"] = {
+				["i:43007"] = 1,
+				["i:43012"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Hearty Rhino",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42995",
+		},
+		[45568] = {
+			["mats"] = {
+				["i:41809"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Firecracker Salmon",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34767",
+		},
+		[33288] = {
+			["mats"] = {
+				["i:27681"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Warp Burger",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27659",
+		},
+		[3370] = {
+			["mats"] = {
+				["i:2924"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Crocolisk Steak",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3662",
+		},
+		[125603] = {
+			["mats"] = {
+				["i:74840"] = 100,
+				["i:74853"] = 1,
+				["i:74846"] = 100,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Great Banquet of the Brew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87248",
+		},
+		[125596] = {
+			["mats"] = {
+				["i:74864"] = 10,
+				["i:74834"] = 10,
+				["i:74841"] = 50,
+				["i:74853"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Banquet of the Pot",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:87234",
+		},
+		[201559] = {
+			["mats"] = {
+				["i:133607"] = 5,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["name"] = "Dried Mackerel Strips",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133575",
+		},
+		[104237] = {
+			["mats"] = {
+				["i:74866"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Golden Carp Consomme",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74636",
+		},
+		[161000] = {
+			["mats"] = {
+				["i:109126"] = 1,
+				["i:111446"] = 5,
+				["i:111438"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Gorgrond Chowder",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111454",
+		},
+		[124230] = {
+			["mats"] = {
+				["i:74660"] = 1,
+				["i:74852"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Tangy Yogurt",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81409",
+		},
+		[33296] = {
+			["mats"] = {
+				["i:27439"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spicy Crawdad",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27667",
+		},
+		[88013] = {
+			["mats"] = {
+				["i:62786"] = 1,
+				["i:30817"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Chocolate Cookie",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62680",
+		},
+		[88045] = {
+			["mats"] = {
+				["i:62786"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Starfire Espresso",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62675",
+		},
+		[92026] = {
+			["mats"] = {
+				["i:39774"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Vanishing Powder",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:64670",
+		},
+		[201556] = {
+			["mats"] = {
+				["i:124105"] = 1,
+				["i:129100"] = 20,
+				["i:133592"] = 10,
+				["i:124121"] = 5,
+				["i:133567"] = 1,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["name"] = "Nightborne Delicacy Platter",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:133572",
+		},
+		[139745] = {
+			["mats"] = {
+				["i:72096"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Pins",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95351",
+		},
+		[57442] = {
+			["mats"] = {
+				["i:41807"] = 1,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Dragonfin Filet",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43000",
+		},
+		[124233] = {
+			["mats"] = {
+				["i:85583"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blanched Needle Mushrooms",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81412",
+		},
+		[180758] = {
+			["mats"] = {
+				["i:109137"] = 6,
+				["i:109143"] = 12,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Pickled Eel",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:122345",
+		},
+		[45557] = {
+			["mats"] = {
+				["i:43010"] = 2,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Spiced Worm Burger",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34756",
+		},
+		[160968] = {
+			["mats"] = {
+				["i:109135"] = 5,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Braised Riverbeast",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111436",
+		},
+		[180762] = {
+			["mats"] = {
+				["i:109137"] = 6,
+				["i:109139"] = 12,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Sleeper Sushi",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:122343",
+		},
+		[6412] = {
+			["mats"] = {
+				["i:5465"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Kaldorei Spider Kabob",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+				["Jingojaggot"] = true,
+				["Datgorg"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5472",
+		},
+		[139746] = {
+			["mats"] = {
+				["i:72096"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Simple Eating Utensils",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95353",
+		},
+		[33292] = {
+			["mats"] = {
+				["i:27429"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Blackened Sporefish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27663",
+		},
+		[124231] = {
+			["mats"] = {
+				["i:74851"] = 1,
+				["i:74866"] = 2,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Green Curry Fish",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:81410",
+		},
+		[7827] = {
+			["mats"] = {
+				["i:6361"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Rainbow Fin Albacore",
+			["players"] = {
+				["Shanyt"] = true,
+				["Vadder"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:5095",
+		},
+		[88014] = {
+			["mats"] = {
+				["i:62784"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Crocolisk Au Gratin",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62664",
+		},
+		[88046] = {
+			["mats"] = {
+				["i:62781"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Tender Baked Turtle",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62658",
+		},
+		[3276] = {
+			["mats"] = {
+				["i:2589"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Heavy Linen Bandage",
+			["players"] = {
+				["Jingojaggot"] = true,
+				["Vadder"] = true,
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2581",
+		},
+		[104307] = {
+			["mats"] = {
+				["i:74857"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Shrimp Dumplings",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74651",
+		},
+		[139747] = {
+			["mats"] = {
+				["i:72096"] = 15,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Wok",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95354",
+		},
+		[57437] = {
+			["mats"] = {
+				["i:41808"] = 3,
+				["i:43007"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Snapper Extreme",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:42996",
+		},
+		[33278] = {
+			["mats"] = {
+				["i:27669"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Bat Bites",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:27636",
+		},
+		[2547] = {
+			["mats"] = {
+				["i:1080"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Redridge Goulash",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:1082",
+		},
+		[165564] = {
+			["mats"] = {
+				["i:39354"] = 3,
+				["i:39469"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Inscription",
+			["name"] = "Assorted Glyphs",
+			["players"] = {
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:141644",
+		},
+		[58523] = {
+			["mats"] = {
+				["i:36782"] = 1,
+				["i:22577"] = 1,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Bad Clams",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:43491",
+		},
+		[2543] = {
+			["mats"] = {
+				["i:769"] = 1,
+				["i:159"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Cooking",
+			["name"] = "Westfall Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:733",
+		},
+		[88028] = {
+			["mats"] = {
+				["i:53067"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Lightly Fried Lurker",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62651",
+		},
+		[139748] = {
+			["mats"] = {
+				["i:72096"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Ladle",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95355",
+		},
+		[160973] = {
+			["mats"] = {
+				["i:109142"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Steamed Scorpion",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111439",
+		},
+		[104303] = {
+			["mats"] = {
+				["i:74662"] = 1,
+				["i:74861"] = 5,
+				["i:74837"] = 5,
+				["i:74843"] = 25,
+			},
+			["numResult"] = 5,
+			["profession"] = "Cooking",
+			["name"] = "Sea Mist Rice Noodles",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:74648",
+		},
+		[45561] = {
+			["mats"] = {
+				["i:41808"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Grilled Bonescale",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:34760",
+		},
+		[88015] = {
+			["mats"] = {
+				["i:2596"] = 2,
+				["i:2595"] = 1,
+			},
+			["numResult"] = 4,
+			["profession"] = "Cooking",
+			["name"] = "Darkbrew Lager",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62790",
+		},
+		[88047] = {
+			["mats"] = {
+				["i:62791"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Whitecrest Gumbo",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:62656",
+		},
+		[2545] = {
+			["mats"] = {
+				["i:2675"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Cooked Crab Claw",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2682",
+		},
+		[3278] = {
+			["mats"] = {
+				["i:2592"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "First Aid",
+			["name"] = "Heavy Wool Bandage",
+			["players"] = {
+				["Datgorg"] = true,
+				["Brotus"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3531",
+		},
+		[139749] = {
+			["mats"] = {
+				["i:72096"] = 20,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["name"] = "Ghost Iron Poker",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:95356",
+		},
+		[201549] = {
+			["mats"] = {
+				["i:124120"] = 5,
+				["i:124119"] = 5,
+				["i:133589"] = 5,
+			},
+			["numResult"] = 10,
+			["profession"] = "Cooking",
+			["itemString"] = "i:133565",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Leybeque Ribs",
+		},
+		[180757] = {
+			["mats"] = {
+				["i:109141"] = 12,
+				["i:109137"] = 6,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Salty Squid Roll",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:122344",
+		},
+		[160981] = {
+			["mats"] = {
+				["i:109139"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Fat Sleeper Cakes",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111444",
+		},
+		[8607] = {
+			["mats"] = {
+				["i:3173"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Smoked Bear Meat",
+			["players"] = {
+				["Jingojaggot"] = true,
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6890",
+		},
+		[38867] = {
+			["mats"] = {
+				["i:31670"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Mok'Nathal Shortribs",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:31672",
+		},
+		[160987] = {
+			["mats"] = {
+				["i:111434"] = 5,
+				["i:111442"] = 5,
+				["i:109124"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Frosty Stew",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:111450",
+		},
+		[65454] = {
+			["mats"] = {
+				["i:30817"] = 1,
+				["i:1179"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Cooking",
+			["name"] = "Bread of the Dead",
+			["players"] = {
+				["Shanyt"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:46691",
+		},
+		[7430] = {
+			["mats"] = {
+				["i:2840"] = 6,
+			},
+			["numResult"] = 1,
+			["profession"] = "Engineering",
+			["itemString"] = "i:6219",
+			["players"] = {
+				["Vadder"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Arclight Spanner",
+		},
+	},
+	["f@Alliance - Darkspear@buyAH"] = false,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Shanyt - Argent Dawn", -- [1]
+			"Tyrannithal - Argent Dawn", -- [2]
+			"Datgorg - Argent Dawn", -- [3]
+			"Jingojaggot - Argent Dawn", -- [4]
+			"Brotus - Argent Dawn", -- [5]
+			"Vadder - Argent Dawn", -- [6]
+			"Cowtastraphy - Argent Dawn", -- [7]
+			"Mulmok - Argent Dawn", -- [8]
+			"Tyran - Argent Dawn", -- [9]
+			"Shaekhan - Argent Dawn", -- [10]
+			"Fantastiburo - Argent Dawn", -- [11]
+			"Bathal - Argent Dawn", -- [12]
+			"Shathiel - Darkspear", -- [13]
+			"Shanyt - Zul'jin", -- [14]
+		},
+		["realm"] = {
+			"Argent Dawn", -- [1]
+			"Darkspear", -- [2]
+			"Zul'jin", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Argent Dawn", -- [1]
+			"Alliance - Darkspear", -- [2]
+			"Horde - Zul'jin", -- [3]
+		},
+	},
+	["f@Horde - Argent Dawn@ignoreDECheckBox"] = false,
+	["f@Horde - Zul'jin@mats"] = {
+	},
+	["_currentProfile"] = {
+		["Bathal - Argent Dawn"] = "Default",
+		["Shathiel - Darkspear"] = "Default",
+		["Datgorg - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Mulmok - Argent Dawn"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Fantastiburo - Argent Dawn"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
+	},
+	["g@ @frameQueueOpen"] = true,
+	["f@Alliance - Darkspear@evenStacks"] = false,
+	["f@Horde - Zul'jin@buyAH"] = false,
+	["f@Horde - Argent Dawn@disableCheckBox"] = false,
+	["f@Horde - Zul'jin@inkTrade"] = false,
+	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
+	["f@Horde - Zul'jin@crafts"] = {
+	},
+	["f@Horde - Zul'jin@ignoreIntermediate"] = false,
+	["f@Horde - Argent Dawn@gathering"] = {
+		["destroyingMats"] = {
+		},
+		["extraMats"] = {
+		},
+		["shortItems"] = {
+		},
+		["sessionOptions"] = {
+		},
+		["selectedSourceStatus"] = {
+		},
+		["selectedSources"] = {
+		},
+		["professions"] = {
+		},
+		["neededMats"] = {
+		},
+		["gatheredMats"] = false,
+		["availableMats"] = {
+		},
+	},
+	["g@ @ignoreCDCraftCost"] = true,
+	["f@Horde - Argent Dawn@professionScanCache"] = {
+		["VadderEngineering"] = {
+			["hash"] = 15241658,
+			["scanTime"] = 1502555804,
+		},
+		["BrotusHerbalism"] = {
+			["hash"] = 5381,
+			["scanTime"] = 1502555751,
+		},
+		["DatgorgCooking"] = {
+			["hash"] = 7513889,
+			["scanTime"] = 1502555656,
+		},
+		["VadderCooking"] = {
+			["hash"] = 6281733,
+			["scanTime"] = 1502555809,
+		},
+		["TyrannithalSkinning"] = {
+			["hash"] = 5381,
+			["scanTime"] = 1502556271,
+		},
+		["JingojaggotHerbalism"] = {
+			["hash"] = 5381,
+			["scanTime"] = 1502555708,
+		},
+		["ShanytFirst Aid"] = {
+			["hash"] = 3704287,
+			["scanTime"] = 1531790488,
+		},
+		["MulmokFirst Aid"] = {
+			["hash"] = 7987926,
+			["scanTime"] = 1502555886,
+		},
+		["VadderFirst Aid"] = {
+			["hash"] = 9879888,
+			["scanTime"] = 1502555812,
+		},
+		["BrotusFirst Aid"] = {
+			["hash"] = 14798118,
+			["scanTime"] = 1502555765,
+		},
+		["ShanytBlacksmithing"] = {
+			["hash"] = 13081576,
+			["scanTime"] = 1531790695,
+		},
+		["DatgorgSkinning"] = {
+			["hash"] = 5381,
+			["scanTime"] = 1502555670,
+		},
+		["ShanytMining"] = {
+			["hash"] = 13593634,
+			["scanTime"] = 1527565353,
+		},
+		["DatgorgFirst Aid"] = {
+			["hash"] = 9669336,
+			["scanTime"] = 1502555649,
+		},
+		["ShanytLegion Blacksmithing"] = {
+			["hash"] = 1744634,
+			["scanTime"] = 1532062644,
+		},
+		["MulmokCooking"] = {
+			["hash"] = 14108490,
+			["scanTime"] = 1502555883,
+		},
+		["ShanytDraenor Mining"] = {
+			["hash"] = 13593634,
+			["scanTime"] = 1531888178,
+		},
+		["ShanytCooking"] = {
+			["hash"] = 6618513,
+			["scanTime"] = 1531674165,
+		},
+		["JingojaggotFirst Aid"] = {
+			["hash"] = 5474448,
+			["scanTime"] = 1502555718,
+		},
+		["JingojaggotMining"] = {
+			["hash"] = 7956281,
+			["scanTime"] = 1502555711,
+		},
+		["MulmokEnchanting"] = {
+			["hash"] = 6233554,
+			["scanTime"] = 1502555879,
+		},
+		["JingojaggotCooking"] = {
+			["hash"] = 16298563,
+			["scanTime"] = 1502555715,
+		},
+		["VadderMining"] = {
+			["hash"] = 11099079,
+			["scanTime"] = 1502555800,
+		},
+		["BrotusInscription"] = {
+			["hash"] = 972300,
+			["scanTime"] = 1502555755,
+		},
+		["BrotusCooking"] = {
+			["hash"] = 14454299,
+			["scanTime"] = 1502555761,
+		},
+		["TyrannithalLeatherworking"] = {
+			["hash"] = 15734742,
+			["scanTime"] = 1502556274,
+		},
+	},
+	["g@ @priceColumn"] = 1,
+	["f@Alliance - Darkspear@ignoreDECheckBox"] = false,
+	["f@Alliance - Darkspear@professionScanCache"] = {
+	},
+	["f@Alliance - Darkspear@ignoreIntermediate"] = false,
+	["g@ @queueSort"] = 1,
+	["g@ @showingDefaultFrame"] = false,
+	["f@Alliance - Darkspear@mats"] = {
+	},
+	["f@Horde - Zul'jin@disableCheckBox"] = false,
+	["f@Horde - Zul'jin@playerProfessions"] = {
+	},
+	["f@Horde - Zul'jin@professionScanCache"] = {
+	},
+	["g@ @profitPercent"] = 0,
 }

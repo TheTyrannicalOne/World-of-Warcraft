@@ -1,10 +1,9 @@
 
 FishingBuddy_Info = {
 	["FishTotals"] = {
-		[680002] = 1,
-		[625000] = 15,
+		[680001] = 9,
 		[625001] = 15,
-		[680001] = 8,
+		[625000] = 15,
 		[680000] = 9,
 	},
 	["HiddenFishies"] = {
@@ -12,7 +11,6 @@ FishingBuddy_Info = {
 	["FishingSkill"] = {
 		[680001] = 0,
 		[625001] = 0,
-		[680002] = 0,
 	},
 	["DataFish"] = 0,
 	["Locales"] = {
@@ -24,41 +22,30 @@ FishingBuddy_Info = {
 	["FishingHoles"] = {
 		[680001] = {
 			[134574] = 8,
+			[124111] = 1,
 		},
 		[625001] = {
 			[124110] = 1,
 			[138777] = 10,
 			[133607] = 4,
 		},
-		[680002] = {
-			[124111] = 1,
-		},
 	},
-	["Version"] = 18001,
+	["Version"] = 19500,
 	["SubZones"] = {
-		[696003] = "Cove of Nashal",
-		[625000] = 1,
-		[625001] = "Margoss's Retreat",
-		[130000] = 2,
-		[130002] = "King's Square",
-		[641000] = 4,
-		[550000] = 2,
-		[676000] = 1,
-		[550001] = "Snarlpaw Ledge",
-		[676001] = "Felrage Strand",
-		[550002] = "The Cliffs of Highmaul",
-		[641003] = "Dreadroot",
-		[641004] = "Moonclaw Vale",
-		[680002] = "Meredil",
-		[680003] = "Suramar",
-		[130001] = "The Culling of Stratholme",
-		[696000] = 3,
-		[680001] = "Moonwhisper Gulch",
-		[696001] = "Stonescar Gorge",
-		[680000] = 3,
-		[696002] = "Stormheim",
+		[641000] = 1,
 		[641001] = "Emerald Bay",
-		[641002] = "Garden of the Moon",
+		[680001] = "Moonwhisper Gulch",
+		[625001] = "Margoss's Retreat",
+		[696000] = 1,
+		[676001] = "Felrage Strand",
+		[696001] = "Stonescar Gorge",
+		[550001] = "Snarlpaw Ledge",
+		[550000] = 1,
+		[676000] = 1,
+		[625000] = 1,
+		[130000] = 1,
+		[130001] = "The Culling of Stratholme",
+		[680000] = 1,
 	},
 	["FishSchools"] = {
 		[680] = {

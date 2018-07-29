@@ -1,7 +1,7 @@
 --Easy Obliterate by Motig
 LoadAddOn("Blizzard_ObliterumUI")
 
-local addonVersion = 30
+local addonVersion = 31
 local currentPage = 1
 local selectedButton = nil
 local previousSelectedButton = nil
@@ -76,13 +76,13 @@ local function getEligibleAshTotal()
 end
 
 local function itemInWardrobeSet(itemID, bag, slot)
-    for i = 1, GetNumEquipmentSets() do
-        local setName = GetEquipmentSetInfo(i)
-        local items = GetEquipmentSetItemIDs(setName)
+    for i = 0, C_EquipmentSet.GetNumEquipmentSets()-1 do
+        local setName = C_EquipmentSet.GetEquipmentSetInfo(i)
+        local items = C_EquipmentSet.GetItemIDs(i)
         for z = 1, 19 do --would be nicer to get the slot id beforehand so we don't have to loop over all the items in a set
             if items[z] then
                 if itemID == items[z] then
-                    local equipmentSetInfo = GetEquipmentSetLocations(setName)
+                    local equipmentSetInfo = C_EquipmentSet.GetItemLocations(i)
                     local onPlayer, inBank, inBags, inVoidStorage, slotNumber, bagNumber = EquipmentManager_UnpackLocation(equipmentSetInfo[z])
                     if bag == bagNumber and slot == slotNumber then
                         return true

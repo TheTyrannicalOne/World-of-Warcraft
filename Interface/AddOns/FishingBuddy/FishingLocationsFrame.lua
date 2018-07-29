@@ -295,8 +295,9 @@ local function SetSelectedLocLine(id, line)
 	end
 end
 
-local function UpdateLocLine(id, line, leveloffset, c, e, text, texture)
+local function UpdateLocLine(id, line, leveloffset, c, e, text, append, texture)
 	local locButton = _G["FishingLocations"..id];
+	local locButtonFS = _G["FishingLocations"..id.."NormalText"];
 	local locHilite = _G["FishingLocations"..id.."Highlight"];
 	local icon = _G["FishingLocations"..id.."Icon"];
 	local icontex = _G["FishingLocations"..id.."IconTexture"];
@@ -351,7 +352,7 @@ local function UpdateLocLine(id, line, leveloffset, c, e, text, texture)
 		 textfield:SetPoint("LEFT", offset, 0);
 	end
 
-	locButton:SetText( text );
+	FL:EllipsizeText(locButtonFS, text, FishingLocsScrollFrameScrollChildFrame:GetWidth() - leveloffset - 4, append)
 	locButton:Show();
 end
 
@@ -370,6 +371,7 @@ FishingBuddy.Locations.Update = function(self, forced)
 	FishingLocationHighlightFrame:Hide();
 	UpdateLocationScrollPosition();
 
+	local append = ""
 	local j = 1;
 	local i = 1;
 	local limit = offset + NUM_THINGIES_DISPLAYED;
@@ -520,10 +522,12 @@ FishingBuddy.Locations.Update = function(self, forced)
 					local leveloffset = (level - lastlevel)*16;
 					if ( percent ) then
 						percent = math.floor(percent*100);
-						text = text.." ("..percent.."%)";
+						append = " ("..percent.."%)";
 						percent = nil;
+					else
+						append = ""
 					end
-					UpdateLocLine(i, j, leveloffset, c, e, text, texture);
+					UpdateLocLine(i, j, leveloffset, c, e, text, append, texture);
 					lastlevel = level;
 					if ( FishingBuddy.Debugging) then
 						tinsert(locButton.tooltip, { "LocationLines["..j.."] = "..info, FBConstants.RED });

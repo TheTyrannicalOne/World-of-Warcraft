@@ -427,8 +427,6 @@ function Amr:UpdateShoppingData(player)
 		specs = player.Specs
 	}
 	
-	local enchantItemIdToId = {}
-	
 	for i, spec in ipairs(required.specs) do
 		local gear = Amr.db.char.GearSets[i]
 		if gear then

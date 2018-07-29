@@ -120,89 +120,14 @@ VUHDO_CONFIG = {
 	["DETECT_DEBUFFS_IGNORE_DURATION"] = false,
 	["RES_ANNOUNCE_MASS_TEXT"] = "Casting mass resurrection!",
 	["IS_SHARE"] = true,
-	["AUTO_PROFILES"] = {
-	},
+	["EMERGENCY_TRIGGER"] = 100,
 	["SCAN_RANGE"] = "2",
 	["PARSE_COMBAT_LOG"] = true,
 	["ON_MOUSE_UP"] = false,
-	["MAX_EMERGENCIES"] = 6,
+	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
 	["BLIZZ_UI_HIDE_FOCUS"] = 1,
 	["DETECT_DEBUFFS_IGNORE_NO_HARM"] = true,
 	["DETECT_DEBUFFS_IGNORE_BY_CLASS"] = true,
-	["MODE"] = 1,
-	["INC_CHANNELLED_SECS"] = 3,
-	["BLIZZ_UI_HIDE_TARGET"] = 1,
-	["RES_ANNOUNCE_TEXT"] = "Come to life, vuhdo, you b00n!",
-	["SHOW_OVERHEAL"] = 1,
-	["SHOW_PLAYER_TAGS"] = true,
-	["DETECT_DEBUFFS"] = true,
-	["UPDATE_HOTS_MS"] = 250,
-	["SHOW_INC_CASTED"] = true,
-	["AUTO_ARRANGEMENTS"] = {
-		["25"] = "current",
-		["15"] = "current",
-		["lastAutoSaveSlot"] = 0,
-		["5"] = "current",
-		["dirty"] = false,
-		["40"] = "current",
-		["10"] = "current",
-	},
-	["HIDE_PANELS_SOLO"] = false,
-	["CURRENT_PROFILE"] = "LUI-Towelliee",
-	["EMERGENCY_TRIGGER"] = 100,
-	["SHOW_INCOMING"] = true,
-	["PLAYER_TARGET_FRAME_THICKNESS"] = 1,
-	["OMIT_FOCUS"] = 1,
-	["SPELL_TRACE"] = {
-		["isOthers"] = false,
-		["STORED_SETTINGS"] = {
-			["596"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-			["194509"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-			["34861"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-			["1064"] = {
-				["duration"] = 2,
-				["isMine"] = true,
-				["isOthers"] = false,
-			},
-		},
-		["version"] = 1,
-		["SELECTED"] = "",
-		["duration"] = 2,
-		["showTrailOfLight"] = false,
-		["isMine"] = true,
-		["STORED"] = {
-			"1064", -- [1]
-			"34861", -- [2]
-			"596", -- [3]
-			"194509", -- [4]
-		},
-	},
-	["OVERHEAL_EXTRA_SCALE"] = 1.9,
-	["INC_BOMBED_SECS"] = 3,
-	["doCompress"] = true,
-	["BLIZZ_UI_HIDE_RAID"] = 2,
-	["THREAT"] = {
-		["AGGRO_TEXT_RIGHT"] = "<<",
-		["AGGRO_TEXT_LEFT"] = ">>",
-		["AGGRO_USE_TEXT"] = true,
-		["IS_TANK_MODE"] = false,
-		["AGGRO_REFRESH_MS"] = 300,
-	},
-	["SHOW_TEXT_OVERHEAL"] = true,
-	["SHOW_OWN_INCOMING"] = true,
-	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
 	["CUSTOM_DEBUFF"] = {
 		["animate"] = true,
 		["scale"] = 0.8,
@@ -832,9 +757,9 @@ VUHDO_CONFIG = {
 			["Mystic Buffet"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["isIcon"] = true,
 				["timer"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
-				["isIcon"] = true,
 			},
 			["228914"] = {
 				["isStacks"] = 1,
@@ -1628,9 +1553,9 @@ VUHDO_CONFIG = {
 			["unbound plague"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["isIcon"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
 				["timer"] = true,
-				["isIcon"] = true,
 			},
 			["230139"] = {
 				["isStacks"] = 1,
@@ -4108,9 +4033,9 @@ VUHDO_CONFIG = {
 			["Essence of the Blood Queen"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["timer"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
 				["isIcon"] = true,
-				["timer"] = true,
 			},
 			["156297"] = {
 				["isStacks"] = 1,
@@ -4401,7 +4326,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["219049"] = {
+			["Bathed in Light"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4415,7 +4340,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Bathed in Light"] = {
+			["219049"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4500,7 +4425,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Iron Tomb"] = {
+			["Arcing Energy"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4535,14 +4460,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Arcing Energy"] = {
+			["156047"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Petrified"] = {
+			["Iron Tomb"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4671,9 +4596,9 @@ VUHDO_CONFIG = {
 			["Unbound Plague"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
+				["isIcon"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
 				["timer"] = true,
-				["isIcon"] = true,
 			},
 			["Burning Wound"] = {
 				["isStacks"] = 1,
@@ -4760,7 +4685,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["156047"] = {
+			["Petrified"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -5609,6 +5534,81 @@ VUHDO_CONFIG = {
 		["xAdjust"] = -2,
 		["BUTTON_FACADE"] = "Blizzard",
 	},
+	["INC_BOMBED_SECS"] = 3,
+	["MODE"] = 1,
+	["INC_CHANNELLED_SECS"] = 3,
+	["RES_ANNOUNCE_TEXT"] = "Come to life, vuhdo, you b00n!",
+	["SHOW_PLAYER_TAGS"] = true,
+	["DETECT_DEBUFFS"] = true,
+	["UPDATE_HOTS_MS"] = 250,
+	["SHOW_INC_CASTED"] = true,
+	["AUTO_ARRANGEMENTS"] = {
+		["25"] = "current",
+		["15"] = "current",
+		["lastAutoSaveSlot"] = 0,
+		["5"] = "current",
+		["dirty"] = false,
+		["40"] = "current",
+		["10"] = "current",
+	},
+	["HIDE_PANELS_SOLO"] = false,
+	["CURRENT_PROFILE"] = "LUI-Towelliee",
+	["AUTO_PROFILES"] = {
+	},
+	["SHOW_INCOMING"] = true,
+	["BLIZZ_UI_HIDE_RAID"] = 2,
+	["OMIT_FOCUS"] = 1,
+	["SPELL_TRACE"] = {
+		["isOthers"] = false,
+		["STORED_SETTINGS"] = {
+			["596"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+			["194509"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+			["34861"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+			["1064"] = {
+				["duration"] = 2,
+				["isMine"] = true,
+				["isOthers"] = false,
+			},
+		},
+		["version"] = 1,
+		["SELECTED"] = "",
+		["duration"] = 2,
+		["showTrailOfLight"] = false,
+		["isMine"] = true,
+		["STORED"] = {
+			"1064", -- [1]
+			"34861", -- [2]
+			"596", -- [3]
+			"194509", -- [4]
+		},
+	},
+	["OVERHEAL_EXTRA_SCALE"] = 1.9,
+	["PLAYER_TARGET_FRAME_THICKNESS"] = 1,
+	["doCompress"] = true,
+	["BLIZZ_UI_HIDE_TARGET"] = 1,
+	["THREAT"] = {
+		["AGGRO_TEXT_RIGHT"] = "<<",
+		["AGGRO_TEXT_LEFT"] = ">>",
+		["AGGRO_USE_TEXT"] = true,
+		["IS_TANK_MODE"] = false,
+		["AGGRO_REFRESH_MS"] = 300,
+	},
+	["SHOW_TEXT_OVERHEAL"] = true,
+	["SHOW_OWN_INCOMING"] = true,
+	["SHOW_OVERHEAL"] = 1,
+	["MAX_EMERGENCIES"] = 6,
 }
 VUHDO_PANEL_SETUP = {
 	{
@@ -5637,6 +5637,8 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
+			["sort"] = 0,
+			["ordering"] = 0,
 			["groups"] = {
 				1, -- [1]
 				2, -- [2]
@@ -5644,8 +5646,6 @@ VUHDO_PANEL_SETUP = {
 				4, -- [4]
 				5, -- [5]
 			},
-			["sort"] = 0,
-			["ordering"] = 0,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
@@ -5802,7 +5802,7 @@ VUHDO_PANEL_SETUP = {
 		},
 		["IS_RAID_ICON"] = true,
 		["ID_TEXT"] = {
-			["_spacing"] = 19.9999694824219,
+			["_spacing"] = 20,
 			["yAdjust"] = 0,
 			["showTags"] = 1,
 			["position"] = "TOPLEFT+TOPLEFT",
@@ -10012,18 +10012,18 @@ VUHDO_SPELLS_KEYBOARD = {
 }
 VUHDO_SPELL_CONFIG = {
 	["IS_LOAD_HOTS"] = false,
-	["IS_FIRE_OUT_FIGHT"] = false,
+	["smartCastModi"] = "all",
 	["IS_AUTO_FIRE"] = false,
 	["IS_FIRE_CUSTOM_2"] = false,
 	["IS_FIRE_TRINKET_2"] = false,
-	["IS_KEEP_STANCE"] = false,
-	["IS_AUTO_TARGET"] = false,
 	["IS_TOOLTIP_INFO"] = false,
+	["IS_AUTO_TARGET"] = false,
+	["IS_FIRE_HOT"] = false,
 	["FIRE_CUSTOM_1_SPELL"] = "Divine Illumination",
 	["FIRE_CUSTOM_2_SPELL"] = "Divine Favor",
-	["smartCastModi"] = "all",
+	["IS_KEEP_STANCE"] = false,
 	["IS_FIRE_CUSTOM_1"] = false,
-	["IS_FIRE_HOT"] = false,
+	["IS_FIRE_OUT_FIGHT"] = false,
 }
 VUHDO_BUFF_ORDER = {
 	["Battle Shout"] = 1,
@@ -10034,15 +10034,48 @@ VUHDO_SPEC_LAYOUTS = {
 	["selected"] = "",
 	["2"] = "",
 }
-VUHDO_GROUP_SIZE = 1
+VUHDO_GROUP_SIZE = 2
 VUHDO_RAID = {
+	["party1"] = {
+		["zone"] = "Garrison",
+		["baseRange"] = false,
+		["class"] = "HUNTER",
+		["role"] = 62,
+		["sortMaxHp"] = 26120,
+		["map"] = "Frostwall",
+		["threat"] = 0,
+		["powermax"] = 120,
+		["threatPerc"] = 0,
+		["isPet"] = false,
+		["name"] = "Lillys",
+		["number"] = 1,
+		["isVehicle"] = false,
+		["group"] = 1,
+		["classId"] = 22,
+		["unit"] = "party1",
+		["powertype"] = 2,
+		["healthmax"] = 26120,
+		["dead"] = false,
+		["charmed"] = false,
+		["fullName"] = "Lillys-Blackhand",
+		["power"] = 120,
+		["aggro"] = false,
+		["visible"] = false,
+		["targetUnit"] = "party1target",
+		["health"] = 26120,
+		["className"] = "Hunter",
+		["afk"] = false,
+		["debuff"] = 0,
+		["connected"] = true,
+		["petUnit"] = "partypet1",
+	},
 	["player"] = {
-		["zone"] = "The Cape of Stranglethorn",
+		["zone"] = "Frostwall",
 		["baseRange"] = true,
 		["class"] = "WARRIOR",
 		["role"] = 61,
-		["sortMaxHp"] = 25020,
-		["map"] = "The Cape of Stranglethorn",
+		["sortMaxHp"] = 26500,
+		["map"] = "Frostwall",
 		["threat"] = 0,
 		["powermax"] = 100,
 		["threatPerc"] = 0,
@@ -10055,7 +10088,7 @@ VUHDO_RAID = {
 		["range"] = true,
 		["unit"] = "player",
 		["powertype"] = 1,
-		["healthmax"] = 25020,
+		["healthmax"] = 26500,
 		["dead"] = false,
 		["charmed"] = false,
 		["fullName"] = "Shanyt",
@@ -10063,7 +10096,7 @@ VUHDO_RAID = {
 		["aggro"] = false,
 		["visible"] = true,
 		["targetUnit"] = "target",
-		["health"] = 25020,
+		["health"] = 26500,
 		["className"] = "Warrior",
 		["afk"] = false,
 		["debuff"] = 0,
@@ -10078,7 +10111,7 @@ VUHDO_INDICATOR_CONFIG = {
 		["AGGRO_BAR"] = "Aggro Indicator",
 		["BACKGROUND_BAR"] = "Background: Solid",
 		["INCOMING_BAR"] = "",
-		["SIDE_LEFT"] = "",
+		["DAMAGE_FLASH_BAR"] = "",
 		["HEALTH_BAR_PANEL"] = {
 			"", -- [1]
 			"", -- [2]
@@ -10091,14 +10124,14 @@ VUHDO_INDICATOR_CONFIG = {
 			"", -- [9]
 			"", -- [10]
 		},
-		["CLUSTER_BORDER"] = "",
+		["SWIFTMEND_INDICATOR"] = "",
 		["THREAT_MARK"] = "Threat: Marks",
-		["SIDE_RIGHT"] = "",
 		["MANA_BAR"] = "Manabars: Mana only",
 		["BAR_BORDER"] = "",
+		["SIDE_RIGHT"] = "",
 		["HEALTH_BAR"] = "Health (generic, class col)",
-		["SWIFTMEND_INDICATOR"] = "",
-		["DAMAGE_FLASH_BAR"] = "",
+		["CLUSTER_BORDER"] = "",
+		["SIDE_LEFT"] = "",
 	},
 	["CUSTOM"] = {
 		["THREAT_BAR"] = {

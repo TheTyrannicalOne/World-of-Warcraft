@@ -12,7 +12,7 @@ PawnCommon = {
 	["Digits"] = 1,
 	["ShowSocketingAdvisor"] = true,
 	["ShowSpecIcons"] = true,
-	["LastVersion"] = 2.0219,
+	["LastVersion"] = 2.0222,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
@@ -174,13 +174,13 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
+				["Vadder-Argent Dawn"] = {
+					["Visible"] = true,
+				},
 				["Panboozled-Runetotem"] = {
 					["Visible"] = true,
 				},
 				["Malivant-Dalaran"] = {
-					["Visible"] = true,
-				},
-				["Vadder-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 			},

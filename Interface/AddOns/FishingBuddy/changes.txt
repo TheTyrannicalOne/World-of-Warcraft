@@ -1,4 +1,25 @@
-﻿Version 1.9
+﻿Version 1.9.6
+- Fix broken data collection, reclaim misplaced catches
+- Random code cleanups and some prettification of data display
+
+Version 1.9.5
+- Fix bugs in frame handling so that plugins work more reliably
+- Much hackery to get at per-expansion fishing skills
+
+Version 1.9.4
+- Simplify skill to be per "expansion" until subzones get sorted
+- Keep track of where Margoss really lives
+- Bug fixes in map handling
+
+Version 1.9.3
+- Handle map based quest items
+- Handle continents better
+
+Version 1.9.1-2
+- Internal map id cleanup
+- More BfA bug fixes
+
+Version 1.9
 - Minimally updated for BfA
 
 Version 1.8.4.9

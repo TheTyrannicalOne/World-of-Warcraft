@@ -65,6 +65,8 @@ L["Absorbed"] = "Absorbiert"
 L["Action Usable"] = "Aktion nutzbar"
 L["Active"] = "Aktiv"
 L["Additional Trigger Replacements"] = "Zusätzlicher Auslöser Ersatz"
+--[[Translation missing --]]
+L["Adjust Timer"] = "Adjust Timer"
 L["Affected"] = "Betroffen"
 L["Aggro"] = "Aggro (Bedrohung)"
 --[[Translation missing --]]
@@ -183,6 +185,10 @@ L["Cross"] = "Kreuz"
 L["Crowd Controlled"] = "Kontrollverlust"
 L["Crushing"] = "Zerschmettern"
 --[[Translation missing --]]
+L["Cunning"] = "Cunning"
+--[[Translation missing --]]
+L["Current Zone Group ID: "] = "Current Zone Group ID: "
+--[[Translation missing --]]
 L["Current Zone ID: "] = "Current Zone ID: "
 L["Curse"] = "Fluch"
 L["Custom"] = "Benutzerdefiniert"
@@ -254,6 +260,8 @@ L["Falling"] = "Fallen (FALLING)"
 L["False"] = "Nicht Zutrifft"
 L["Fatigue"] = "Erschöpfung (FATIGUE)"
 L["Feet"] = "Füße"
+--[[Translation missing --]]
+L["Ferocity"] = "Ferocity"
 L["Finger 1"] = "Finger 1"
 L["Finger 2"] = "Finger 2"
 L["Fire"] = "Feuer"
@@ -317,6 +325,8 @@ L["Immune"] = "Immun (IMMUNE)"
 L["Import"] = "Import"
 L["Import disabled"] = "Import gesperrt"
 L["In Combat"] = "im Kampf"
+--[[Translation missing --]]
+L["In Encounter"] = "In Encounter"
 L["In Group"] = "In Gruppe"
 L["In Pet Battle"] = "Im Haustierkampf"
 --[[Translation missing --]]
@@ -334,6 +344,8 @@ L["Instance Type"] = "Instanztyp"
 L["Interrupt"] = "Unterbrechen (INTERRUPT)"
 L["Interruptible"] = "Unterbrechbar"
 L["Inverse"] = "Invertieren"
+--[[Translation missing --]]
+L["Inverse Pet Behavior"] = "Inverse Pet Behavior"
 L["Is Exactly"] = "Strikter Vergleich"
 L["Is Moving"] = "am Bewegen"
 L["Is Off Hand"] = "Ist Schildhand"
@@ -409,6 +421,8 @@ L["Multistrike"] = "Mehrfachschlag"
 L["Multi-target"] = "Mehrfachziel"
 L["Music"] = "Musik"
 L["Mythic"] = "Mythisch"
+--[[Translation missing --]]
+L["Mythic+ Affix"] = "Mythic+ Affix"
 L["Name"] = "Name"
 L["Neck"] = "Hals"
 L["Neutral"] = "Neutral"
@@ -417,6 +431,8 @@ L["Next"] = "Weiter"
 L["No Children:"] = "Keine Kinder:"
 L["No Instance"] = "Keine Instanz"
 L["No Profiling information saved."] = "Keine Profilinginformationen vorhanden."
+--[[Translation missing --]]
+L["none"] = "none"
 L["None"] = "Keine(r)"
 L["Non-player Character"] = "Nicht-Spieler-Charakter (NPC)"
 L["Normal"] = "Normal"
@@ -456,6 +472,8 @@ L["Periodic Spell"] = "Periodischer Zauber (PERIODIC_SPELL)"
 L["Personal Resource Display"] = "Persönliche Ressourcenanzeige"
 L["Pet"] = "Begleiter"
 L["Pet Behavior"] = "Begleiterverhalten"
+--[[Translation missing --]]
+L["Pet Specialization"] = "Pet Specialization"
 L["Pet Spell"] = "Begleiterzauber"
 --[[Translation missing --]]
 L["Play"] = "Play"
@@ -502,8 +520,7 @@ L["Region type %s not supported"] = "Regiontyp %s wird nicht unterstützt"
 L["Relative"] = "Relativ"
 L["Remaining Duration"] = "Verbleibende Dauer"
 L["Remaining Time"] = "Verbleibende Zeit"
---[[Translation missing --]]
-L["Repeat"] = "Repeat"
+L["Repeat"] = "Wiederhole"
 L["Requested display does not exist"] = "Angeforderte Anzeige existiert nicht"
 L["Requested display not authorized"] = "Angeforderte Anzeige ist nicht autorisiert"
 --[[Translation missing --]]
@@ -642,6 +659,8 @@ L["Tank"] = "Tank"
 L["Tanking And Highest"] = "Höchster und Aggro"
 L["Tanking But Not Highest"] = "Aggro aber nicht höchste"
 L["Target"] = "Ziel"
+--[[Translation missing --]]
+L["Tenacity"] = "Tenacity"
 L["Thick Outline"] = "Dicke Kontur"
 --[[Translation missing --]]
 L["Third"] = "Third"
@@ -701,7 +720,8 @@ L["X-Offset"] = "X-Versatz"
 L["Yell"] = "Schreien"
 L["Y-Offset"] = "Y-Versatz"
 --[[Translation missing --]]
-L["Zone ID(s)"] = "Zone ID(s)"
+L["Zone Group ID(s)"] = "Zone Group ID(s)"
 --[[Translation missing --]]
-L["Zone Name"] = "Zone Name"
+L["Zone ID(s)"] = "Zone ID(s)"
+L["Zone Name"] = "Gebietsname"
 

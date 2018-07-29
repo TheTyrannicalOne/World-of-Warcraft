@@ -243,7 +243,7 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 |cFF00CC00<= 0.8|r Löst aus, wenn weniger als 80%% in der %s betroffen sind (4 von 5 Gruppenmitgliedern, 8 von 10 oder 20 von 25 Schlachtzugsmitgliedern).
 |cFF00CC00> 1/2|r Löst aus, wenn mehr als die Hälfte der %s betroffen sind.
 |cFF00CC00>= 0|r Löst immer aus.]=]
-	L["Group Member Count"] = "Gruppengröße"
+	L["Group Member Count"] = "Anzahl der Gruppenmitglieder"
 	--[[Translation missing --]]
 	L["Group Scale"] = "Group Scale"
 	--[[Translation missing --]]
@@ -379,15 +379,13 @@ Nur ein Wert kann ausgewählt werden.]=]
 	L["Regions of type \"%s\" are not supported."] = "Regions of type \"%s\" are not supported."
 	L["Remaining Time"] = "Verbleibende Zeit"
 	L["Remaining Time Precision"] = "Genauigkeit der Restzeit"
-	--[[Translation missing --]]
-	L["Remove"] = "Remove"
+	L["Remove"] = "Entfernen"
 	L["Remove this condition"] = "Bedingung entfernen"
 	L["Remove this display from its group"] = "Diese Anzeige aus seiner Gruppe entfernen"
 	L["Remove this property"] = "Eigenschaft entfernen"
 	L["Rename"] = "Umbenennen"
 	L["Repeat After"] = "Wiederholen nach"
-	--[[Translation missing --]]
-	L["Repeat every"] = "Repeat every"
+	L["Repeat every"] = "Wiederhole alle"
 	L["Required for Activation"] = "Benötigt zur Aktivierung"
 	--[[Translation missing --]]
 	L["Right 2 HUD position"] = "Right 2 HUD position"
@@ -496,8 +494,7 @@ Nur ein Wert kann ausgewählt werden.]=]
 	L["Trigger"] = "Auslöser"
 	L["Trigger %d"] = "Auslöser %d"
 	L["Trigger:"] = "Auslöser:"
-	--[[Translation missing --]]
-	L["True"] = "True"
+	L["True"] = "Wahr"
 	L["Type"] = "Typ"
 	L["Undefined"] = "Undefiniert"
 	L["Ungroup"] = "Gruppierung aufheben"
@@ -529,6 +526,7 @@ Nur ein Wert kann ausgewählt werden.]=]
 	L["Y Scale"] = "Skalierung (Y)"
 	L["Yellow Rune"] = "Gelbe Rune"
 	L["Yes"] = "Ja"
+	L["You are about to delete %d aura(s). |cFFFF0000This cannot be undone!|r Would you like to continue?"] = "Du bist im Begriff %d Aura/Auren zu löschen. |cFFFF0000Das Löschen kann nicht rückgängig gemacht werden!|r Willst du fortfahren?"
 	L["Z Offset"] = "Z-Versatz"
 	L["Z Rotation"] = "Z-Rotation"
 	L["Zoom"] = "Zoom"

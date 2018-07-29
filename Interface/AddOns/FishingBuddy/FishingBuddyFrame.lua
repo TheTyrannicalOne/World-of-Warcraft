@@ -46,32 +46,64 @@ local function Group_OnClick(tabframe, tabname)
 	end
 end
 
-local function CreateManagedFrameGroup(tabname, tooltip, toggle, groups, optiontab)
-	local target = FishingBuddyFrame:CreateManagedFrame("Managed"..tabname, tabname, tooltip, toggle);
-	LS:Embed(target)	
-	target:SetScript("OnShow", function (self) self:HandleOnShow(self:GetSelected()); end);
-	target:SetScript("OnHide", function (self) self:HideTabs(); end);
-	target.groups = groups
-	for idx,group in ipairs(groups) do
-		local tabframe = target:CreateTab(group.name, group.icon, Group_OnClick, group.tooltip or group.name);
-		group.frame:SetParent(target)
+local function ShowFrameGroup(self)
+	self:HandleOnShow(self:GetSelected());
+end
+
+local function HideFrameGroup(self)
+	self:HideTabs();
+	for _,group in ipairs(groups) do
 		group.frame:Hide()
 	end
-	if ( optiontab ) then
-		local frame = CreateFrame("Frame", "Options"..tabname, target)
-		FishingBuddy.EmbeddedOptions(frame)
-		frame:SetScript("OnShow", function (self)
+end
+
+local function CreateOptionsTab(target, tabname, groups, optiontab)
+	local tabframe = _G["Options"..tabname];
+	if (not tabframe) then
+		tabframe = CreateFrame("Frame", "Options"..tabname, target);
+		FishingBuddy.EmbeddedOptions(tabframe)
+		tabframe:SetScript("OnShow", function (self)
 			self:ShowButtons();
 		end)
 		tinsert(groups, {
 			["name"] = optiontab.name,
 			["icon"] = optiontab.icon,
-			["frame"] = frame
+			["frame"] = tabframe
 		})
-		frame.options = optiontab
-		frame.ontabclick = Group_OnClick
-		target.handoff = frame
-		FishingBuddy.OptionsFrame.HandleOptions(optiontab.name, optiontab.icon, optiontab.options, optiontab.setter, optiontab.getter, optiontab.last, target)
+		tabframe.options = optiontab
+		tabframe.ontabclick = Group_OnClick
+		target.handoff = tabframe
+		target:MakeUltimate(tabframe)
+	end
+	FishingBuddy.OptionsFrame.HandleOptions(optiontab.name, optiontab.icon, optiontab.options, optiontab.setter, optiontab.getter, optiontab.last, target)
+end
+
+local function CreateManagedFrameGroup(tabname, tooltip, toggle, groups, optiontab)
+	local target = _G["Managed"..tabname];
+	if not target then
+		target = FishingBuddyFrame:CreateManagedFrame("Managed"..tabname, tabname, tooltip, toggle);
+		LS:Embed(target)
+		target:SetScript("OnShow", ShowFrameGroup);
+		target:SetScript("OnHide", HideFrameGroup);
+		target.groups = groups
+		for idx,group in ipairs(groups) do
+			local tabframe = target:CreateTab(group.name, group.icon, Group_OnClick, group.tooltip or group.name);
+			group.frame:Hide()
+		end
+		if ( optiontab ) then
+			CreateOptionsTab(target, tabname, groups, optiontab)
+		end
+	else
+		-- Add new groups to the target.
+		for idx,group in ipairs(groups) do
+			local tabframe = target:CreateTab(group.name, group.icon, Group_OnClick, group.tooltip or group.name);
+			group.frame:Hide()
+			tinsert(target.groups, group)
+		end
+
+		if (optiontab) then
+			CreateOptionsTab(target, tabname, groups, optiontab)
+		end
 	end
 	target:ResetTabFrames();
 	target:SelectTab(target:GetSelected());

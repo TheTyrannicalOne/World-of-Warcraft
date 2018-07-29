@@ -29,25 +29,25 @@ MADB = {
 					["orgScale"] = 1,
 				},
 				["FriendsFrame"] = {
-					["pos"] = {
-						"BOTTOMLEFT", -- [1]
-						"UIParent", -- [2]
-						"BOTTOMLEFT", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["orgPos"] = {
-						"BOTTOMLEFT", -- [1]
-						"UIParent", -- [2]
-						"BOTTOMLEFT", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["name"] = "FriendsFrame",
 					["UIPanelWindows"] = {
 						["whileDead"] = 1,
 						["pushable"] = 0,
 						["area"] = "left",
+					},
+					["orgPos"] = {
+						"LEFT", -- [1]
+						"UIParent", -- [2]
+						"LEFT", -- [3]
+						87, -- [4]
+						-12, -- [5]
+					},
+					["name"] = "FriendsFrame",
+					["pos"] = {
+						"BOTTOMLEFT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMLEFT", -- [3]
+						87.4946594238281, -- [4]
+						328.488586425781, -- [5]
 					},
 				},
 				["BNToastFrame"] = {
@@ -68,7 +68,6 @@ MADB = {
 					},
 				},
 				["SpellActivationOverlayFrame"] = {
-					["hidden"] = true,
 					["orgPos"] = {
 						"CENTER", -- [1]
 						"UIParent", -- [2]
@@ -77,6 +76,7 @@ MADB = {
 						0, -- [5]
 					},
 					["name"] = "SpellActivationOverlayFrame",
+					["hidden"] = true,
 					["pos"] = {
 						"CENTER", -- [1]
 						"UIParent", -- [2]

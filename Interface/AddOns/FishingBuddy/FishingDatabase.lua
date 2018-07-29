@@ -511,7 +511,7 @@ FishingBuddy.GetZoneIndex = GetZoneIndex;
 local function GetCurrentZoneIndex(marker)
 	initmappings();
 	mapId, subzone = GetCurrentMapIdInfo();
-	return GetZoneIndex(mapId, subzone)
+	return GetZoneIndex(mapId, subzone, marker)
 end
 FishingBuddy.GetCurrentZoneIndex = GetCurrentZoneIndex;
 
@@ -520,14 +520,16 @@ local function AddZoneIndex(mapId, subzone, marker)
 		mapId, subzone = GetCurrentMapIdInfo();
 	end
 	subzone = FL:GetBaseSubZone(subzone);
+	FishingBuddy_Info["KnownZones"][mapId] = subzone
+
 	local loczone = FL:GetLocZone(mapId);
 	local zidx, sidx = GetZoneIndex(mapId, subzone);
 
 	if ( FishingBuddy.SortedZones ) then
 		if not FishingBuddy.MappedZones[loczone] then
-		tinsert(FishingBuddy.SortedZones, loczone);
-		table.sort(FishingBuddy.SortedZones);
-	end
+			tinsert(FishingBuddy.SortedZones, loczone);
+			table.sort(FishingBuddy.SortedZones);
+		end
 		FishingBuddy.MappedZones[loczone] = mapId
 	end
 

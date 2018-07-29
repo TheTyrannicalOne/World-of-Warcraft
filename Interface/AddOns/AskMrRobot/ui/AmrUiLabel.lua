@@ -9,7 +9,7 @@ if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 local Amr = LibStub("AceAddon-3.0"):GetAddon("AskMrRobot")
 
 -- Lua APIs
-local max, select, pairs = math.max, select, pairs
+local pairs = pairs
 
 -- WoW APIs
 local CreateFrame, UIParent = CreateFrame, UIParent

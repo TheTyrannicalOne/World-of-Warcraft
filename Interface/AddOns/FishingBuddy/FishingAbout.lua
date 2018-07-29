@@ -120,6 +120,7 @@ credits[FBConstants.ROLE_HELP_BUGS] = {
 	["Mastigophoran"] = { "Help with Truthseeker/Oathbreaker issue" },
 	["Resike"] = { "Help fix leaking globals, potentional taint hazards" },
 	["HarlequinBonse"] = { "Found the Tuskarr spear bug!"},
+	["chadcloman"] = { "Most detailed bug ever!", },
 };
 
 -- Ideas and suggestions

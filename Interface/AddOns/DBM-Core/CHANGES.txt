@@ -1,44 +1,117 @@
-Changes since tag 8.0.0
+Changes since tag 8.0.1
 
-commit 9b6760fd782660ebbafa8d357472494d183e0402
+commit 53b46c1295d539715e6823c6c0fa932c3be26735
 Author: subversion <svn@deadlybossmods.com>
-Date:   Fri Jul 20 01:30:21 2018 +0200
+Date:   Sun Jul 29 03:35:42 2018 +0200
 
-    Omega via svn r17630:
-    Fixed some errors in kara
+    Omega via svn r17654:
+    Don?\226?\128?\153t check gold/xp. not reliable for over leveling
 
-commit ddc709baf1874cc139c655f398202bba3f2eb4e2
+commit 51c99fe0d9a7240d9c9967c05ebeed2409d67998
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jul 19 06:12:51 2018 +0200
+Date:   Sun Jul 29 02:51:01 2018 +0200
 
-    Omega via svn r17629:
-    Fix a bug where PARTY_KILL would be registered as a regular event instead of CLEU event
+    Omega via svn r17653:
+    Add SCENARIO_COMPLETED for scenario complete checks to see if it works for MOP complete detection
 
-commit f1b6a563947e4686dc2134d7b4820031c90e1049
+commit 34941ff0a2e4a08fc79a6be7e92df7b42bf626b3
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jul 19 05:30:13 2018 +0200
+Date:   Fri Jul 27 23:45:38 2018 +0200
 
-    Omega via svn r17628:
-    fix elisande error
+    Omega via svn r17652:
+    For most part, mod was fine, just a couple fixes
 
-commit 8063d1699965622683e6bfc2528ac25c774edf00
+commit d4bd6c44010d73cf0275df970fdfd7bdff84e9f8
 Author: subversion <svn@deadlybossmods.com>
-Date:   Thu Jul 19 05:25:20 2018 +0200
+Date:   Fri Jul 27 23:35:34 2018 +0200
 
-    Omega via svn r17627:
-    Remove invalid spell
+    Omega via svn r17651:
+    Some timer updates for Zekvhoz
+    enabled some countdowns for zekvhoz
+    enabled surgical beam countdown for ALL beams on mother.
 
-commit 65dab7c8e1c5b5a8d333b01c91ca6c06fa9a60b3
+commit f359178f985eb09a26129d37b4288a9d7d1620b3
 Author: subversion <svn@deadlybossmods.com>
-Date:   Wed Jul 18 00:58:27 2018 +0200
+Date:   Fri Jul 27 22:48:43 2018 +0200
 
-    Omega via svn r17626:
-    Mac client supports low lighting now
+    Omega via svn r17650:
+    Fix top down beam detection for heroic
+    fixed countdown for purifying flame
 
-commit d1f34c8be76dc71e9abba2dd88291bf96384f308
+commit a0fffb64b451da4acfef0cc542716f24fb90e5ba
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Jul 17 15:18:42 2018 +0200
+Date:   Fri Jul 27 22:24:45 2018 +0200
 
-    tandanu via svn r17625:
+    Omega via svn r17649:
+    Fix bug with spell name on purifying flame
+
+commit 112d2dc78795faeb1785351abf357f014e3c46ad
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Jul 27 22:16:55 2018 +0200
+
+    Omega via svn r17648:
+    Don?\226?\128?\153t announce pull cleansing purges
+
+commit 50c2049a1fbd3ab1970b27993b2271d8ac28a32b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Jul 27 21:25:59 2018 +0200
+
+    Omega via svn r17647:
+    Fix bug where taunt warning showed if you were the target
+
+commit e498e243614035e036ae1e4c9aa74cd589b656e8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jul 25 10:28:55 2018 +0200
+
+    Omega via svn r17646:
+    Improve media again, and add a reverb version
+
+commit 0c50d7af315431f6b82cb747dd562b9042b83855
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jul 25 09:44:11 2018 +0200
+
+    Omega via svn r17645:
+    voice file rename
+
+commit f6d0a78c5c6d8b60ab2b44c27c971b02e15a7afd
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jul 25 09:40:53 2018 +0200
+
+    Omega via svn r17644:
+    A better, more normalized sample
+
+commit a8ebb5aae164d2c4ccc04ad6368afbcdb4ccd546
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jul 25 09:36:19 2018 +0200
+
+    Omega via svn r17643:
+    Add reddit request
+
+commit 00894290329d7d10e6f08fde12df9ade7f9e7330
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jul 25 05:36:40 2018 +0200
+
+    Omega via svn r17642:
+    This should fix waypoint arrow. didn?\226?\128?\153tr ealize it was expecting decimal, easy fix then
+
+commit a300dd5cb895b5274d2f52e67a16c0d86238c6de
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Jul 25 02:37:23 2018 +0200
+
+    Omega via svn r17641:
+    well code works, but it doesn?\226?\128?\153t actually return a valid arrow what so ever so apparently that function is screwed up
+
+commit e2a6f2cbf73f489668feafd79a625f901f8ca4ef
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Jul 23 02:53:04 2018 +0200
+
+    Omega via svn r17640:
+    Adderis and Ass Pix drycode
+
+commit afcd7f107face275e1b414ed2be0b0c1847b5231
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Jul 22 22:14:32 2018 +0200
+
+    tandanu via svn r17637:
     increment alpha version
 

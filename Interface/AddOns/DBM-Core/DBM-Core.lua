@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17630 $"):sub(12, -3)),
-	DisplayVersion = "8.0.1 alpha", -- the string that is shown as version
-	ReleaseRevision = 17623 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 17654 $"):sub(12, -3)),
+	DisplayVersion = "8.0.2 alpha", -- the string that is shown as version
+	ReleaseRevision = 17635 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -817,7 +817,7 @@ do
 		for i = 1, select("#", ...) do
 			local event = select(i, ...)
 			-- spell events with special care.
-			if event:sub(0, 6) == "SPELL_" and event ~= "SPELL_NAME_UPDATE" or event:sub(0, 6) == "RANGE_" or event == "UNIT_DIED" or event == "UNIT_DESTROYED" or event == "PARTY_KILL" then
+			if event:sub(0, 6) == "SPELL_" and event ~= "SPELL_NAME_UPDATE" or event:sub(0, 6) == "RANGE_" or event:sub(0, 6) == "SWING_" or event == "UNIT_DIED" or event == "UNIT_DESTROYED" or event == "PARTY_KILL" then
 				registerCLEUEvent(self, event)
 			else
 				local eventWithArgs = event
@@ -1347,7 +1347,8 @@ do
 				"PLAYER_SPECIALIZATION_CHANGED",
 				"PARTY_INVITE_REQUEST",
 				"LOADING_SCREEN_DISABLED",
-				"SCENARIO_CRITERIA_UPDATE"
+				"SCENARIO_CRITERIA_UPDATE",
+				"SCENARIO_COMPLETED"
 			)
 			if RolePollPopup:IsEventRegistered("ROLE_POLL_BEGIN") then
 				RolePollPopup:UnregisterEvent("ROLE_POLL_BEGIN")
@@ -3618,6 +3619,17 @@ end
 function DBM:SCENARIO_CRITERIA_UPDATE()
 	local _, currentStage, numStages = C_Scenario.GetInfo()
 	if #inCombat > 0 and currentStage > numStages and C_Scenario.IsInScenario() then
+		for i = #inCombat, 1, -1 do
+			local v = inCombat[i]
+			if v.inScenario then
+				self:EndCombat(v)
+			end
+		end
+	end
+end
+
+function DBM:SCENARIO_COMPLETED()
+	if #inCombat > 0 and C_Scenario.IsInScenario() then
 		for i = #inCombat, 1, -1 do
 			local v = inCombat[i]
 			if v.inScenario then
@@ -9925,13 +9937,13 @@ do
 		local activeVP = self.Options.ChosenVoicePack
 		--Check if voice pack out of date
 		if activeVP ~= "None" and activeVP == value then
-			if self.VoiceVersions[value] < 7 then--Version will be bumped when new voice packs released that contain new voices.
+			if self.VoiceVersions[value] < 8 then--Version will be bumped when new voice packs released that contain new voices.
 				if not self.Options.DontShowReminders then
 					self:AddMsg(DBM_CORE_VOICE_PACK_OUTDATED)
 				end
 				SWFilterDisabed = self.VoiceVersions[value]--Set disable to version on current voice pack
 			else
-				SWFilterDisabed = 7
+				SWFilterDisabed = 8
 			end
 		end
 	end

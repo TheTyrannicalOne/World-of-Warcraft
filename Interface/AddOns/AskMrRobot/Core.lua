@@ -137,7 +137,7 @@ end
 local _enteredWorld = false
 local _pendingInit = false
 
-function finishInitialize()
+local function finishInitialize()
 
 	-- record region, the only thing that we still can't get from the log file
 	Amr.db.global.Region = Amr.RegionNames[GetCurrentRegion()]
@@ -152,7 +152,7 @@ function finishInitialize()
 	end)
 end
 
-function onPlayerEnteringWorld()
+local function onPlayerEnteringWorld()
 
 	_enteredWorld = true
 	
@@ -500,7 +500,7 @@ function Amr:GetUnitId(unitRealm, unitName)
 	return nil
 end
 
-
+--[[
 -- search the tooltip for txt, returns true if it is encountered on any line
 function Amr:IsTextInTooltip(tt, txt)
 	local regions = { tt:GetRegions() }
@@ -513,6 +513,7 @@ function Amr:IsTextInTooltip(tt, txt)
 	end
 	return false
 end
+]]
 
 -- helper to determine if we can equip an item (it is soulbound)
 function Amr:CanEquip(bagId, slotId)
@@ -532,12 +533,14 @@ function Amr:CanEquip(bagId, slotId)
 end
 
 -- helper to determine if an item has a unique constraint
+--[[
 function Amr:IsUnique(bagId, slotId)
 	local tt = Amr.GetItemTooltip(bagId, slotId)
 	if self:IsTextInTooltip(tt, ITEM_UNIQUE_EQUIPPABLE)	then return true end
 	if self:IsTextInTooltip(tt, ITEM_UNIQUE) then return true end
 	return false
 end
+]]
 
 
 ----------------------------------------------------------------------------------------
@@ -647,46 +650,5 @@ function Amr:dump(o)
 end
 
 function Amr:Test()
-
-	--local itemLink = GetInventoryItemLink("player", 17)
-
-	--print(itemLink)
 	
-	--local blah = Amr.ParseItemLink(itemLink)
-
-	--print(dump(blah.relicBonusIds))
-
-	--[[
-	--print(NUM_BANKBAGSLOTS)
-
-	local bagId = NUM_BAG_SLOTS + 1
-
-	local item = Item:CreateFromBagAndSlot(bagId, 2)
-	if item then
-		print(item:GetItemName())
-	else
-		print("no item")
-	end
-
-	local numSlots = GetContainerNumSlots(bagId)
-	print(numSlots .. " bag slots")
-	]]
-
-	-- EquipItemByName
-
-	--[[
-	for slotId = 1, numSlots do
-		local _, itemCount, _, _, _, _, itemLink = GetContainerItemInfo(bagId, slotId)
-		if itemLink ~= nil then
-			print(slotId .. " " .. itemLink)
-		end
-	end
-	]]
-
-	--[[
-	local s = "|cff0070dd|Hitem:127224:5337:0:0:0:0:0:0:100:105:512:22:2:615:656:100|h[Staff of Polarities]|h|r"
-	Amr.GetItemInfo(s, function(obj, name, link, quality, iLevel)
-		print(iLevel)
-	end)
-	]]
 end

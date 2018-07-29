@@ -1,6 +1,6 @@
 -- AskMrRobot-Serializer will serialize and communicate character data between users.
 
-local MAJOR, MINOR = "AskMrRobot-Serializer", 61
+local MAJOR, MINOR = "AskMrRobot-Serializer", 62
 local Amr, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
 
 if not Amr then return end -- already loaded by something else
@@ -284,34 +284,11 @@ end
 
 -- returns true if currently in a supported instance for logging
 function Amr.IsSupportedInstance()
-	local zone, _, difficultyIndex, _, _, _, _, instanceMapID = GetInstanceInfo()
+	local _, _, _, _, _, _, _, instanceMapID = GetInstanceInfo()
 	return Amr.IsSupportedInstanceId(instanceMapID)
 end
 
--- helper to iterate over a table in order by its keys
-local function spairs(t, order)
-    -- collect the keys
-    local keys = {}
-    for k in pairs(t) do keys[#keys+1] = k end
-
-    -- if order function given, sort by it by passing the table and keys a, b,
-    -- otherwise just sort the keys 
-    if order then
-        table.sort(keys, function(a,b) return order(t, a, b) end)
-    else
-        table.sort(keys)
-    end
-
-    -- return the iterator function
-    local i = 0
-    return function()
-        i = i + 1
-        if keys[i] then
-            return keys[i], t[keys[i]]
-        end
-    end
-end
-
+--[[
 -- scanning tooltip b/c for some odd reason the api has no way to get basic item properties...
 -- so you have to generate a fake item tooltip and search for pre-defined strings in the display text
 local _scanTt
@@ -336,7 +313,9 @@ function Amr.GetItemTooltip(bagId, slotId, link)
 	end
 	return tt
 end
+]]
 
+--[[
 function Amr.GetItemLevel(bagId, slotId, link)	
 	local itemLevelPattern = _G["ITEM_LEVEL"]:gsub("%%d", "(%%d+)")
 	local tt = Amr.GetItemTooltip(bagId, slotId, link)
@@ -357,6 +336,7 @@ function Amr.GetItemLevel(bagId, slotId, link)
 	-- 0 means we couldn't find it for whatever reason
 	return 0
 end
+]]
 
 
 ----------------------------------------------------------------------------------------
@@ -365,7 +345,7 @@ end
 
 local function readProfessionInfo(prof, ret)
 	if prof then
-		local name, icon, skillLevel, maxSkillLevel, numAbilities, spelloffset, skillLine, skillModifier = GetProfessionInfo(prof);
+		local _, _, skillLevel, _, _, _, skillLine = GetProfessionInfo(prof);
 		if Amr.ProfessionSkillLineToName[skillLine] ~= nil then
 			ret.Professions[Amr.ProfessionSkillLineToName[skillLine]] = skillLevel;
 		end
@@ -489,10 +469,10 @@ function Amr:GetPlayerData()
     ret.Level = UnitLevel("player");
 	readHeartOfAzerothLevel(ret)
 	
-    local cls, clsEn = UnitClass("player")
+    local _, clsEn = UnitClass("player")
     ret.Class = clsEn;
     
-    local race, raceEn = UnitRace("player")
+    local _, raceEn = UnitRace("player")
 	ret.Race = raceEn;
 	ret.Faction = UnitFactionGroup("player")
     

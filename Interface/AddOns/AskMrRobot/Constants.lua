@@ -21,8 +21,8 @@ Amr.SupportedInstanceIds = Amr.Serializer.SupportedInstanceIds
 Amr.ParseItemLink = Amr.Serializer.ParseItemLink
 Amr.IsSupportedInstanceId = Amr.Serializer.IsSupportedInstanceId
 Amr.IsSupportedInstance = Amr.Serializer.IsSupportedInstance
-Amr.GetItemTooltip = Amr.Serializer.GetItemTooltip
-Amr.GetItemLevel = Amr.Serializer.GetItemLevel
+--Amr.GetItemTooltip = Amr.Serializer.GetItemTooltip
+--Amr.GetItemLevel = Amr.Serializer.GetItemLevel
 Amr.GetItemUniqueId = Amr.Serializer.GetItemUniqueId
 Amr.ReadAzeritePowers = Amr.Serializer.ReadAzeritePowers
 
@@ -193,7 +193,7 @@ function Amr.CreateItemLink(itemObj)
     return table.concat(parts, ":")
 end
 
-
+--[[
 -- the server event for getting item info does not specify which item it just fetched... have to track manually
 local _pendingItemIds = {}
 
@@ -237,3 +237,4 @@ Amr:AddEventHandler("GET_ITEM_INFO_RECEIVED", function()
 		end
 	end
 end)
+]]

@@ -341,7 +341,7 @@ function Amr:ImportCharacter(data, isTest)
                 print(blah)
                 print("bad item: " .. v.id)
             end
-        end                
+        end              
     else
         -- we have succeeded, record the result
 		Amr.db.char.GearSets[specSlot] = importData

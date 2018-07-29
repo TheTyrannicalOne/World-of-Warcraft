@@ -251,7 +251,7 @@ local function renderGear(spec, container)
 			local slotId = Amr.SlotIds[slotNum]
 			
 			local equippedItem = equipped and equipped[slotId] or nil
-			local equippedItemLink = equipped and equipped.link or nil
+			--local equippedItemLink = equipped and equipped.link or nil
 			local optimalItem = gear[slotId]			
 			local optimalItemLink = Amr.CreateItemLink(optimalItem)
 			
@@ -298,43 +298,24 @@ local function renderGear(spec, container)
 			lblItem:SetWidth(345)
 			lblItem:SetFont(Amr.CreateFont(isEquipped and "Regular" or "Bold", isEquipped and 14 or 15, Amr.Colors.White))		
 			
-			-- fill the name/ilvl labels, which may require asynchronous loading of item information
+			-- fill the name/ilvl labels, which may require asynchronous loading of item information			
 			if optimalItemLink then
-				Amr.GetItemInfo(optimalItemLink, function(obj, name, link, quality, iLevel)					
-					-- set item name, tooltip, and ilvl
-					obj.nameLabel:SetText(link:gsub("%[", ""):gsub("%]", ""))
-					
-					if quality == 6 then
-						-- not quite right but whatever... close enough, artifacts are a thing of the past
-						local tmprel = obj.optimalItem.relicBonusIds
-						obj.optimalItem.relicBonusIds = nil
-						link = Amr.CreateItemLink(obj.optimalItem)
-						obj.optimalItem.relicBonusIds = tmprel
-
+				local gameItem = Item:CreateFromItemLink(optimalItemLink)
+				if gameItem then
+					local q = gameItem:GetItemQuality()
+					if q == 6 then
 						-- for artifacts, we consider it equipped if the item id alone matches
-						if obj.equippedItem and obj.equippedItem.id == obj.optimalItem.id then
-							obj.isEquipped = true
+						if equippedItem and equippedItem.id == optimalItem.id then
+							isEquipped = true
 						end
-						obj.equipLabel:SetText(obj.isEquipped and "E" or "")
+						lblEquipped:SetText(isEquipped and "E" or "")
 					end
-					
-					Amr:SetItemTooltip(obj.nameLabel, link, "ANCHOR_TOPRIGHT")
-					
-					local itemObj = Item:CreateFromItemLink(link)
-					if itemObj then
-						-- game's GetItemInfo method returns the wrong ilvl sometimes, so use the new item api to get it
-						iLevel = itemObj:GetCurrentItemLevel()
-					end
-					obj.ilvlLabel:SetText(iLevel)					
 
-				end, { 
-					ilvlLabel = lblIlvl, 
-					nameLabel = lblItem, 
-					equipLabel = lblEquipped,
-					optimalItem = optimalItem,
-					equippedItem = equippedItem,
-					isEquipped = isEquipped
-				})
+					lblItem:SetFont(Amr.CreateFont(isEquipped and "Regular" or "Bold", isEquipped and 14 or 15, Amr.Colors.Qualities[q]))				
+					lblItem:SetText(gameItem:GetItemName())
+					lblIlvl:SetText(gameItem:GetCurrentItemLevel())
+					Amr:SetItemTooltip(lblItem, gameItem:GetItemLink(), "ANCHOR_TOPRIGHT")
+				end
 			end
 						
 			-- modifications
@@ -353,7 +334,7 @@ local function renderGear(spec, container)
 							local socketBorder, socketIcon = createSocketWidget(panelMods, prevSocket or lblItem, prevSocket, isPowerActive)
 							
 							-- set icon and tooltip
-							local spellName, _, spellIcon = GetSpellInfo(spellId)
+							local _, _, spellIcon = GetSpellInfo(spellId)
 							socketIcon:SetIcon(spellIcon)
 							Amr:SetSpellTooltip(socketIcon, spellId, "ANCHOR_TOPRIGHT")
 							
@@ -372,11 +353,11 @@ local function renderGear(spec, container)
 						local socketBorder, socketIcon = createSocketWidget(panelMods, prevSocket or lblItem, prevSocket, isGemEquipped)
 						
 						-- get icon for optimized gem
-						Amr.GetItemInfo(g, function(obj, name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture)					
-							-- set icon and a tooltip
-							obj:SetIcon(texture)
-							Amr:SetItemTooltip(obj, link, "ANCHOR_TOPRIGHT")
-						end, socketIcon)
+						local gameItem = Item:CreateFromItemID(g)
+						if gameItem then
+							socketIcon:SetIcon(gameItem:GetItemIcon())
+							Amr:SetItemTooltip(socketIcon, gameItem:GetItemLink(), "ANCHOR_TOPRIGHT")
+						end
 						
 						prevSocket = socketBorder
 					end
@@ -397,10 +378,10 @@ local function renderGear(spec, container)
 					if enchInfo then
 						lblEnchant:SetText(enchInfo.text)
 						
-						Amr.GetItemInfo(enchInfo.itemId, function(obj, name, link)					
-							Amr:SetItemTooltip(obj, link, "ANCHOR_TOPRIGHT")
-						end, lblEnchant)						
-						--Amr:SetSpellTooltip(lblEnchant, enchInfo.spellId)
+						local gameItem = Item:CreateFromItemID(enchInfo.itemId)
+						if gameItem then
+							Amr:SetItemTooltip(lblEnchant, gameItem:GetItemLink(), "ANCHOR_TOPRIGHT")
+						end
 					end
 					
 				end
@@ -628,22 +609,42 @@ local function onEquipGearSetComplete()
 	if Amr.db.profile.options.disableEm then return end
 	
 	-- create an equipment manager set
-	local specId, specName = GetSpecializationInfo(GetSpecialization())
+
+	-- note: ignore slots and/or saveset need to be called twice
+    -- for some reason, the slot is treated as blank if you try to ignore once on the first load of the equipment manager
+ 
+    -- clear any currently ignored slots
+    C_EquipmentSet.ClearIgnoredSlotsForSave()
+    C_EquipmentSet.ClearIgnoredSlotsForSave()
+ 
+    -- ignore shirt and tabard
+    C_EquipmentSet.IgnoreSlotForSave(INVSLOT_BODY) -- shirt
+    C_EquipmentSet.IgnoreSlotForSave(INVSLOT_TABARD)
+    C_EquipmentSet.IgnoreSlotForSave(INVSLOT_BODY) -- shirt
+	C_EquipmentSet.IgnoreSlotForSave(INVSLOT_TABARD)
+		
+	-- for now use icon of the spec
+	local _, specName, _, setIcon = GetSpecializationInfo(GetSpecialization())
 	
+	--[[
 	local item = Amr.ParseItemLink(GetInventoryItemLink("player", INVSLOT_MAINHAND))
 	if not item then
 		item = Amr.ParseItemLink(GetInventoryItemLink("player", INVSLOT_OFFHAND))
 	end
 	if item then
-		Amr.GetItemInfo(item.id, function(customArg, name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture)
-			local setname = "AMR " .. specName
-			local setid = C_EquipmentSet.GetEquipmentSetID(setname)
-			if setid then
-				C_EquipmentSet.SaveEquipmentSet(setid, texture)
-			else
-				C_EquipmentSet.CreateEquipmentSet(setname, texture)
-			end
-		end)
+		local itemObj = Item:CreateFromItemID(item.id)
+		if itemObj then
+			setIcon = itemObj:GetItemIcon()
+		end
+	end
+	]]
+
+	local setname = "AMR " .. specName
+	local setid = C_EquipmentSet.GetEquipmentSetID(setname)
+	if setid then
+		C_EquipmentSet.SaveEquipmentSet(setid, setIcon)
+	else
+		C_EquipmentSet.CreateEquipmentSet(setname, setIcon)
 	end
 end
 

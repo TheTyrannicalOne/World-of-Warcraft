@@ -2,6 +2,7 @@ local Amr = LibStub("AceAddon-3.0"):GetAddon("AskMrRobot")
 local L = LibStub("AceLocale-3.0"):GetLocale("AskMrRobot", true)
 local AceGUI = LibStub("AceGUI-3.0")
 
+local _lblLogging = nil
 local _btnToggle = nil
 local _panelUndoWipe = nil
 local _chkAutoAll = nil
@@ -215,6 +216,7 @@ function Amr:RenderTabLog(container)
 end
 
 function Amr:ReleaseTabLog()
+	_lblLogging = nil
 	_btnToggle = nil
 	_panelUndoWipe = nil
 	_chkAutoAll = nil

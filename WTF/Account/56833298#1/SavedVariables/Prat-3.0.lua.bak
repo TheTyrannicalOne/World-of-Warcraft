@@ -299,6 +299,8 @@ Prat3DB = {
 		},
 		["Prat_ChatTabs"] = {
 		},
+		["Prat_ChannelNames"] = {
+		},
 		["Prat_Font"] = {
 			["profiles"] = {
 				["Vaddor - Zul'jin"] = {
@@ -724,7 +726,7 @@ Prat3DB = {
 		},
 		["Prat_OriginalButtons"] = {
 		},
-		["Prat_ChannelNames"] = {
+		["Prat_Highlight"] = {
 		},
 		["Prat_KeyBindings"] = {
 		},

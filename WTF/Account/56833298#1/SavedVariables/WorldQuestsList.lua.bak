@@ -29,7 +29,7 @@ VWQL = {
 		["Filter"] = 63,
 	},
 	["Sort"] = 3,
-	["VERSION"] = 60,
+	["VERSION"] = 67,
 	["Jingojaggot-Zul'jin"] = {
 		["FilterType"] = {
 		},
@@ -88,14 +88,14 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Shaekhan-ArgentDawn"] = {
+	["Migimong-Runetotem"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
 		["Filter"] = 63,
 	},
-	["Migimong-Runetotem"] = {
+	["Shaekhan-ArgentDawn"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -123,6 +123,13 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
+	["Jingojaggot-ArgentDawn"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
 	["Brotuss-Zul'jin"] = {
 		["FilterType"] = {
 		},
@@ -130,7 +137,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Jingojaggot-ArgentDawn"] = {
+	["Brewnheimer-Darkspear"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -151,7 +158,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Brewnheimer-Darkspear"] = {
+	["Tyrann-Zul'jin"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -165,21 +172,21 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Tyrann-Zul'jin"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
-	["Sinh-Dalaran"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
 	["Ignore"] = {
+	},
+	["Shanyt-Zul'jin"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Tyriinid-Dalaran"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Dialdaas-Darkspear"] = {
 		["FilterType"] = {
@@ -202,21 +209,8 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Tyriinid-Dalaran"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
+	["DisableRewardIcons"] = true,
 	["Mulmok-ArgentDawn"] = {
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
-	["Shanyt-Zul'jin"] = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -236,9 +230,21 @@ VWQL = {
 		["Filter"] = 63,
 		["Quests"] = {
 			[43798] = true,
-			[41697] = true,
+			[43943] = true,
+			[45379] = true,
+			[44939] = true,
+			[42779] = true,
+			[43600] = true,
+			[48985] = true,
 		},
-		["VERSION"] = 60,
+		["VERSION"] = 67,
+	},
+	["Sinh-Dalaran"] = {
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Shaewong-Dalaran"] = {
 		["FilterType"] = {

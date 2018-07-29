@@ -299,6 +299,310 @@ Prat3DB = {
 		},
 		["Prat_ChatTabs"] = {
 		},
+		["Prat_Substitutions"] = {
+		},
+		["Prat_ChannelNames"] = {
+		},
+		["Prat_Bubbles"] = {
+		},
+		["Prat_UrlCopy"] = {
+		},
+		["Prat_History"] = {
+		},
+		["Prat_Paragraph"] = {
+		},
+		["Prat_Achievements"] = {
+		},
+		["Prat_Scroll"] = {
+		},
+		["Prat_Alias"] = {
+		},
+		["Prat_OriginalButtons"] = {
+		},
+		["Prat_Highlight"] = {
+		},
+		["Prat_KeyBindings"] = {
+		},
+		["Prat_Timestamps"] = {
+		},
+		["Prat_Invites"] = {
+		},
+		["Prat_CustomFilters"] = {
+		},
+		["Prat_Clear"] = {
+		},
+		["Prat_ChatLog"] = {
+		},
+		["Prat_Search"] = {
+		},
+		["Prat_Buttons"] = {
+			["profiles"] = {
+				["Vaddor - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Datgorg - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Jingojaggot - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Brokehorn - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shaewong - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Goramor - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shaekhan - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shanyt - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Bathal - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Gangus - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shaekhan - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Malivant - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Urbul - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Claugh - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Tyriinid - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Datgorg - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Panboozled - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Brotus - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["LUI-Towelliee"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Tyrannithal - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Zulbathal - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shanyt - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Brotuss - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Brewnheimer - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Gillbourn - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Narisaric - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Tynster - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shathiel - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Dialdaas - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Serbitechna - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Vadder - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Thromar - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Tyran - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Tyrann - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Towel-Monk"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Mulmok - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Sinh - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Beeronimo - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Migimong - Runetotem"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Fantastiburo - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+			},
+		},
 		["Prat_Font"] = {
 			["profiles"] = {
 				["Vaddor - Zul'jin"] = {
@@ -707,308 +1011,6 @@ Prat3DB = {
 					},
 				},
 			},
-		},
-		["Prat_Bubbles"] = {
-		},
-		["Prat_Substitutions"] = {
-		},
-		["Prat_History"] = {
-		},
-		["Prat_Paragraph"] = {
-		},
-		["Prat_Achievements"] = {
-		},
-		["Prat_Clear"] = {
-		},
-		["Prat_Alias"] = {
-		},
-		["Prat_OriginalButtons"] = {
-		},
-		["Prat_Scroll"] = {
-		},
-		["Prat_KeyBindings"] = {
-		},
-		["Prat_Timestamps"] = {
-		},
-		["Prat_Invites"] = {
-		},
-		["Prat_CustomFilters"] = {
-		},
-		["Prat_ChannelNames"] = {
-		},
-		["Prat_ChatLog"] = {
-		},
-		["Prat_Search"] = {
-		},
-		["Prat_Buttons"] = {
-			["profiles"] = {
-				["Vaddor - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Datgorg - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Jingojaggot - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Brokehorn - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Shaewong - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Goramor - Runetotem"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Shaekhan - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Shanyt - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Bathal - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Gangus - Runetotem"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Shaekhan - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Malivant - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Urbul - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Claugh - Runetotem"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Tyriinid - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Datgorg - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Panboozled - Runetotem"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Brotus - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["LUI-Towelliee"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Tyrannithal - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Zulbathal - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Shanyt - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Brotuss - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Brewnheimer - Darkspear"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Gillbourn - Runetotem"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Narisaric - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Tynster - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Shathiel - Darkspear"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Dialdaas - Darkspear"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Serbitechna - Darkspear"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Vadder - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Thromar - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Tyran - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Tyrann - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Towel-Monk"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Mulmok - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Sinh - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Beeronimo - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Migimong - Runetotem"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Fantastiburo - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Fantastiburo - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-			},
-		},
-		["Prat_UrlCopy"] = {
 		},
 		["Prat_HoverTips"] = {
 		},

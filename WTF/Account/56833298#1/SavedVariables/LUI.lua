@@ -460,9 +460,9 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1576.8232421875,
+						["CoordX"] = 1569.91638183594,
 						["ItemQuality"] = true,
-						["CoordY"] = 778.765625,
+						["CoordY"] = 777.99853515625,
 					},
 					["Reagents"] = {
 						["CoordY"] = 879.551025390625,
@@ -470,9 +470,9 @@ LUIDB = {
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
-						["CoordX"] = 1112.74975585938,
+						["CoordX"] = 1115.05224609375,
 						["ItemQuality"] = true,
-						["CoordY"] = 693.274658203125,
+						["CoordY"] = 694.042175292969,
 						["Font"] = "AvantGarde_LT_Medium",
 					},
 				},
@@ -1333,6 +1333,14 @@ LUIDB = {
 						["IsShown"] = true,
 					},
 				},
+				["Argent Dawn"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+				},
 				["Brotus - Argent Dawn"] = {
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1464,7 +1472,7 @@ LUIDB = {
 					["Tps"] = {
 						["IsShown"] = true,
 						["Width"] = 198,
-						["OffsetX"] = 1,
+						["OffsetX"] = 43,
 						["OffsetY"] = 1,
 					},
 					["Minimap"] = {
@@ -1647,7 +1655,7 @@ LUIDB = {
 						["IsShown"] = true,
 					},
 				},
-				["Tyrann - Zul'jin"] = {
+				["Migimong - Runetotem"] = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
@@ -1710,7 +1718,7 @@ LUIDB = {
 						["IsShown"] = true,
 					},
 				},
-				["Migimong - Runetotem"] = {
+				["Tyrann - Zul'jin"] = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
@@ -1803,28 +1811,28 @@ LUIDB = {
 						["IsShown"] = true,
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
 						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
 					["MicroMenu"] = {
@@ -1958,28 +1966,28 @@ LUIDB = {
 						["IsShown"] = true,
 					},
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["IsShown"] = true,
+					["Raid"] = {
+						["Height"] = 237,
 						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Tps"] = {
 						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
 						["Width"] = 198,
 					},
 					["MicroMenu"] = {
@@ -2618,7 +2626,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 12277990333,
+							["Shanyt"] = 12814347088,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2635,9 +2643,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
+							["Dialdaas"] = 11338409,
 							["Serbitechna"] = 7681888,
 							["Brewnheimer"] = 836,
-							["Dialdaas"] = 11338409,
 						},
 					},
 				},
@@ -2690,38 +2698,38 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/i can we do armor of the triumvirate to the left after this", -- [1]
-							"/moo", -- [2]
-							"/i can we do armor of the triumvirate to the left after this", -- [3]
+							"/moveexport", -- [1]
+							"/omen show", -- [2]
+							"/fishingbuddy", -- [3]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [4]
-							"/i can we do armor of the triumvirate to the left after this", -- [5]
-							"/moo", -- [6]
-							"/i can we do armor of the triumvirate to the left after this", -- [7]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [8]
-							"/moo", -- [9]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [10]
-							"/s no idea ", -- [11]
-							"/s supposed to be an hour but i dont know when the last kill was", -- [12]
-							"/moo", -- [13]
-							"/i can we do armor of the triumvirate to the left after this", -- [14]
-							"/moo", -- [15]
-							"/i can we do armor of the triumvirate to the left after this", -- [16]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [17]
-							"/i can we do armor of the triumvirate to the left after this", -- [18]
-							"/moo", -- [19]
-							"/i can we do armor of the triumvirate to the left after this", -- [20]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [21]
-							"/moo", -- [22]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [23]
-							"/s no idea ", -- [24]
-							"/moo", -- [25]
-							"/i can we do armor of the triumvirate to the left after this", -- [26]
-							"/moo", -- [27]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [28]
-							"/s no idea ", -- [29]
-							"/i can we do armor of the triumvirate to the left after this", -- [30]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [31]
-							"/i can we do armor of the triumvirate to the left after this", -- [32]
+							"/moveexport", -- [5]
+							"/fishingbuddy", -- [6]
+							"/moveexport", -- [7]
+							"/omen show", -- [8]
+							"/moveexport", -- [9]
+							"/omen show", -- [10]
+							"/fishingbuddy", -- [11]
+							"/moveexport", -- [12]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [13]
+							"/omen show", -- [14]
+							"/moveexport", -- [15]
+							"/omen show", -- [16]
+							"/fishingbuddy", -- [17]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [18]
+							"/moveexport", -- [19]
+							"/fishingbuddy", -- [20]
+							"/moveexport", -- [21]
+							"/omen show", -- [22]
+							"/fishingbuddy", -- [23]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [24]
+							"/moveexport", -- [25]
+							"/fishingbuddy", -- [26]
+							"/moveexport", -- [27]
+							"/omen show", -- [28]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [29]
+							"/fishingbuddy", -- [30]
+							"/omen show", -- [31]
+							"/fishingbuddy", -- [32]
 						},
 					},
 				},
@@ -2835,6 +2843,12 @@ LUIDB = {
 					["x"] = 28.0002389903592,
 					["y"] = 46.0004300258579,
 				},
+				["Argent Dawn"] = {
+					["y"] = 46.0000018399687,
+					["x"] = 27.9999974495862,
+					["modules"] = {
+					},
+				},
 				["Brotus - Argent Dawn"] = {
 					["y"] = 46.0004300258579,
 					["x"] = 28.0002389903592,
@@ -2860,7 +2874,7 @@ LUIDB = {
 					["y"] = 46.0004300258579,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
+					["y"] = 46.0004382602019,
 					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
@@ -2895,7 +2909,7 @@ LUIDB = {
 					["x"] = 28.0002389903592,
 					["y"] = 46.0004300258579,
 				},
-				["Serbitechna - Darkspear"] = {
+				["Dialdaas - Darkspear"] = {
 					["modules"] = {
 					},
 					["x"] = 28.0002389903592,
@@ -2907,7 +2921,7 @@ LUIDB = {
 					["modules"] = {
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Serbitechna - Darkspear"] = {
 					["modules"] = {
 					},
 					["x"] = 28.0002389903592,
@@ -5939,6 +5953,169 @@ LUIDB = {
 						0.7, -- [4]
 					},
 				},
+				["Argent Dawn"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.48, -- [2]
+						0.25, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warrior",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.5, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.7, -- [4]
+					},
+				},
 				["Brotus - Argent Dawn"] = {
 					["micromenu_btn"] = {
 						0.04, -- [1]
@@ -7568,68 +7745,68 @@ LUIDB = {
 						0.7, -- [4]
 					},
 				},
-				["Serbitechna - Darkspear"] = {
+				["Dialdaas - Darkspear"] = {
 					["micromenu_btn"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.8, -- [4]
 					},
 					["color_bottom"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.5, -- [4]
 					},
 					["tpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["tps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["chat"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["navi_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["micromenu_bg"] = {
-						0, -- [1]
-						0.61, -- [2]
-						0, -- [3]
+						0.66, -- [1]
+						0, -- [2]
+						0.43, -- [3]
 						0.8, -- [4]
 					},
 					["orb_cycle"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["color_top"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.5, -- [4]
 					},
 					["raid"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["theme"] = "Hunter",
+					["theme"] = "Paladin",
 					["micromenu_bg2"] = {
 						0, -- [1]
 						0, -- [2]
@@ -7637,97 +7814,97 @@ LUIDB = {
 						0.7, -- [4]
 					},
 					["orb"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 					},
 					["chat2border"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["navi"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.6, -- [4]
 					},
 					["bar2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.6, -- [4]
 					},
 					["dpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["dps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["chat2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.8, -- [4]
 					},
 					["raidborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["sidebar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["micromenu"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 					},
 					["editbox"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["minimap"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						1, -- [4]
 					},
 					["chatborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.4, -- [4]
 					},
 					["bar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.7, -- [4]
 					},
 				},
@@ -7894,68 +8071,68 @@ LUIDB = {
 						0.8, -- [4]
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Serbitechna - Darkspear"] = {
 					["micromenu_btn"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.8, -- [4]
 					},
 					["color_bottom"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.5, -- [4]
 					},
 					["tpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["tps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["chat"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["navi_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["micromenu_bg"] = {
-						0.66, -- [1]
-						0, -- [2]
-						0.43, -- [3]
+						0, -- [1]
+						0.61, -- [2]
+						0, -- [3]
 						0.8, -- [4]
 					},
 					["orb_cycle"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["color_top"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.5, -- [4]
 					},
 					["raid"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["theme"] = "Paladin",
+					["theme"] = "Hunter",
 					["micromenu_bg2"] = {
 						0, -- [1]
 						0, -- [2]
@@ -7963,97 +8140,97 @@ LUIDB = {
 						0.7, -- [4]
 					},
 					["orb"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 					},
 					["chat2border"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["navi"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.6, -- [4]
 					},
 					["bar2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.6, -- [4]
 					},
 					["dpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["dps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["chat2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.8, -- [4]
 					},
 					["raidborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["sidebar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["micromenu"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 					},
 					["editbox"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["minimap"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						1, -- [4]
 					},
 					["chatborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.4, -- [4]
 					},
 					["bar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
 						0.7, -- [4]
 					},
 				},
@@ -12109,6 +12286,25 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
+		["Serbitechna - Darkspear"] = {
+			["Map"] = {
+				["Enable"] = false,
+			},
+			["General"] = {
+				["HideErrors"] = true,
+			},
+			["Nameplates"] = {
+				["Enable"] = false,
+			},
+			["Tooltip"] = {
+				["Enable"] = false,
+			},
+			["modules"] = {
+				["Merchant"] = false,
+				["Cooldown"] = false,
+				["WorldMap"] = false,
+			},
+		},
 		["Brotus - Argent Dawn"] = {
 			["Map"] = {
 				["Enable"] = false,
@@ -12280,7 +12476,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Serbitechna - Darkspear"] = {
+		["Dialdaas - Darkspear"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12299,7 +12495,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Dialdaas - Darkspear"] = {
+		["Urbul - Zul'jin"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12337,25 +12533,6 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Sinh - Dalaran"] = {
-			["Map"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["HideErrors"] = true,
-			},
-			["Nameplates"] = {
-				["Enable"] = false,
-			},
-			["Tooltip"] = {
-				["Enable"] = false,
-			},
-			["modules"] = {
-				["Merchant"] = false,
-				["Cooldown"] = false,
-				["WorldMap"] = false,
-			},
-		},
 		["Tyrann - Zul'jin"] = {
 			["Map"] = {
 				["Enable"] = false,
@@ -12375,26 +12552,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Thromar - Dalaran"] = {
-			["Map"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["HideErrors"] = true,
-			},
-			["Nameplates"] = {
-				["Enable"] = false,
-			},
-			["Tooltip"] = {
-				["Enable"] = false,
-			},
-			["modules"] = {
-				["Merchant"] = false,
-				["Cooldown"] = false,
-				["WorldMap"] = false,
-			},
-		},
-		["Vadder - Argent Dawn"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12432,7 +12590,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Tyran - Argent Dawn"] = {
+		["Thromar - Dalaran"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12470,7 +12628,45 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
+		["Tyran - Argent Dawn"] = {
+			["Map"] = {
+				["Enable"] = false,
+			},
+			["General"] = {
+				["HideErrors"] = true,
+			},
+			["Nameplates"] = {
+				["Enable"] = false,
+			},
+			["Tooltip"] = {
+				["Enable"] = false,
+			},
+			["modules"] = {
+				["Merchant"] = false,
+				["Cooldown"] = false,
+				["WorldMap"] = false,
+			},
+		},
 		["Cowtastraphy - Argent Dawn"] = {
+			["Map"] = {
+				["Enable"] = false,
+			},
+			["General"] = {
+				["HideErrors"] = true,
+			},
+			["Nameplates"] = {
+				["Enable"] = false,
+			},
+			["Tooltip"] = {
+				["Enable"] = false,
+			},
+			["modules"] = {
+				["Merchant"] = false,
+				["Cooldown"] = false,
+				["WorldMap"] = false,
+			},
+		},
+		["Vadder - Argent Dawn"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12491,7 +12687,7 @@ LUIDB = {
 		},
 		["Default"] = {
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Sinh - Dalaran"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12548,7 +12744,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Urbul - Zul'jin"] = {
+		["Fantastiburo - Argent Dawn"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12567,23 +12763,9 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Fantastiburo - Argent Dawn"] = {
-			["Map"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["HideErrors"] = true,
-			},
-			["Nameplates"] = {
-				["Enable"] = false,
-			},
-			["Tooltip"] = {
-				["Enable"] = false,
-			},
+		["Argent Dawn"] = {
 			["modules"] = {
 				["Merchant"] = false,
-				["Cooldown"] = false,
-				["WorldMap"] = false,
 			},
 		},
 	},

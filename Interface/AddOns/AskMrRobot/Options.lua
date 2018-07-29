@@ -42,11 +42,6 @@ local function onCheckClick(widget)
 	Amr:RefreshConfig()
 end
 
-local function onChkMinimapClick()
-	Amr.db.profile.minimap.hide = _chkMinimap:GetChecked()	
-	Amr:RefreshConfig()
-end
-
 local function createCheck(container, setting, text, description)
 
 	local chk = AceGUI:Create("AmrUiCheckBox")

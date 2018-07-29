@@ -33,3 +33,12 @@ LibKeyBound-1.0: enabled
 LibDBIcon-1.0: enabled
 LibWindow-1.1: enabled
 LibDualSpec-1.0: enabled
+TradeSkillMaster_Accounting: disabled
+TradeSkillMaster_AuctionDB: disabled
+TradeSkillMaster_Auctioning: disabled
+TradeSkillMaster_Crafting: disabled
+TradeSkillMaster_Destroying: disabled
+TradeSkillMaster_Mailing: disabled
+TradeSkillMaster_Shopping: disabled
+TradeSkillMaster_Vendoring: disabled
+TradeSkillMaster_Warehousing: disabled

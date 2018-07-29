@@ -243,8 +243,4 @@ L["Yaris Darkclaw <Recruiter>"] = "Yaris Sombregriffe <Recruteur>"
 L["Yushi <Seal of Broken Fate Shipment>"] = "Yushi <Commande de sceau du destin brisé>"
 L["Zen'kiki"] = "Zen’Kiki"
 
--- ToC
-L["Description"] = "Description"
-L["Title"] = "HandyNotes - Domaine de classe de Legion"
-
 end

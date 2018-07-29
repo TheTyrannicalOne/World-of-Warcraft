@@ -122,7 +122,7 @@ function FWF:UpdateLine(index, text)
 			entry:SetPoint("TOPLEFT", "FishingWatchLine"..(index-1), "BOTTOMLEFT");
 			local fontFile, fontSize, fontFlags = first:GetFont();
 			entry:SetFont(fontFile, fontSize, fontFlags);
-				MAX_FISHINGWATCH_LINES = MAX_FISHINGWATCH_LINES + 1;
+			MAX_FISHINGWATCH_LINES = MAX_FISHINGWATCH_LINES + 1;
 		end
 
 		entry:SetText(text);
@@ -431,14 +431,6 @@ end
 -- keep track of what's going on
 local WatchEvents = {};
 
-WatchEvents["SKILL_LINES_CHANGED"] = function()
-	if ( FishingWatchFrame:IsVisible() ) then
-		if ( FishingBuddy.GetSettingBool("WatchCurrentSkill") ) then
-			FishingBuddy.WatchUpdate();
-		end
-	end
-end
-
 WatchEvents["UNIT_SPELLCAST_STOP"] = function()
 	if ( FishingWatchFrame:IsVisible() ) then
 		-- update the skill line if we have one
@@ -518,6 +510,14 @@ WatchEvents["VARIABLES_LOADED"] = function()
 	LW.RestorePosition(FishingWatchFrame);
 	LW.MakeDraggable(FishingWatchFrame);
 	FishingWatchFrame:EnableMouse(false);
+
+	FL.RegisterCallback(FBConstants.ID, FL.PLAYER_SKILL_READY, function()
+		if ( FishingWatchFrame:IsVisible() ) then
+			if ( FishingBuddy.GetSettingBool("WatchCurrentSkill") ) then
+				FishingBuddy.WatchUpdate();
+			end
+		end
+	end);
 end
 
 WatchEvents[FBConstants.FISHING_ENABLED_EVT] = function()
