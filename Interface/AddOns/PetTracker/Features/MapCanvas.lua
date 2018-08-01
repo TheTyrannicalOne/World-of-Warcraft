@@ -16,16 +16,29 @@ This file is part of PetTracker.
 --]]
 
 local ADDON, Addon = ...
-local Journal, Tamer = Addon.Journal, Addon.Tamer
+local Journal, Rival = Addon.Journal, Addon.Rival
 local MapCanvas = Addon:NewModule('MapCanvas')
-MapCanvas.pins = {}
-MapCanvas.tips = {}
+MapCanvas.pins, MapCanvas.tips = {}, {}
 
 hooksecurefunc(MapCanvasMixin, 'OnMapChanged', function(frame)
 	MapCanvas:Init(frame)
-	MapCanvas:Clear(frame)
-	MapCanvas:Draw(frame)
+	MapCanvas:Redraw(frame)
 end)
+
+
+--[[ Events ]]--
+
+function MapCanvas:Startup()
+	self:TrackingChanged()
+end
+
+function MapCanvas:TrackingChanged()
+	for frame in pairs(self.pins) do
+		if frame:IsVisible() then
+			self:Redraw(frame)
+		end
+	end
+end
 
 
 --[[ API ]]--
@@ -40,8 +53,14 @@ function MapCanvas:Init(frame)
 
 	hooksecurefunc(frame, 'OnCanvasScaleChanged', function(f) self:Scale(f) end)
 	frame:HookScript('OnShow', function(f) self:Draw(f) end)
-	frame:HookScript('OnUpdate', function(f) self:DrawTip(f) end)
+	frame:HookScript('OnUpdate', function(f) self:AnchorTip(f) end)
 	frame:HookScript('OnHide', function(f) self:Clear(f) end)
+end
+
+function MapCanvas:Redraw(frame)
+		self:Clear(frame)
+		self:Draw(frame)
+		self:Scale(frame)
 end
 
 function MapCanvas:Clear(frame)
@@ -51,29 +70,42 @@ function MapCanvas:Clear(frame)
 	wipe(self.pins[frame])
 end
 
+function MapCanvas:Validate(frame)
+	for provider in pairs(frame.dataProviders) do
+		if provider.RefreshAllData == PetTamerDataProviderMixin.RefreshAllData then
+			return true
+		end
+	end
+end
+
 function MapCanvas:Draw(frame)
-	local mapID = frame:GetMapID()
-	local species = Journal.GetSpeciesIn(mapID)
-	local canvas = frame:GetCanvas()
+	if Addon.Sets and self:Validate(frame) then
+		local mapID = frame:GetMapID()
+		local canvas = frame:GetCanvas()
 
-	for specie, spots in pairs(species) do
-		local specie = Addon.Specie:Get(specie)
+		if not Addon.Sets.HideSpecies then
+			local species = Journal.GetSpeciesIn(mapID)
+			for specie, spots in pairs(species) do
+				local specie = Addon.Specie:Get(specie)
 
-		if Addon:Filter(specie, Addon.Sets.MapFilter) then
-			local icon = specie:GetTypeIcon()
+				if Addon:Filter(specie, Addon.Sets.MapFilter) then
+					local icon = specie:GetTypeIcon()
 
-			for x, y in gmatch(spots, '(%w%w)(%w%w)') do
-				local x = tonumber(x, 36) / 1000
-				local y = tonumber(y, 36) / 1000
+					for x, y in gmatch(spots, '(%w%w)(%w%w)') do
+						local pin = Addon.SpeciePin(canvas):PlaceEncoded(frame, x, y)
+						pin.icon:SetTexture(icon)
+						pin.specie = specie
 
-				local pin = Addon.SpeciePin(canvas)
-				pin:SetPoint('CENTER', canvas, 'TOPLEFT', canvas:GetWidth() * x, -canvas:GetHeight() * y)
-				pin:SetFrameLevel(frame:GetPinFrameLevelsManager():GetValidFrameLevel('PIN_FRAME_LEVEL_FLIGHT_POINT'))
-				pin.icon:SetTexture(icon)
-				pin.specie = specie
-				pin:Show()
+						tinsert(self.pins[frame], pin)
+					end
+				end
+			end
+		end
 
-				tinsert(self.pins[frame], pin)
+		if not Addon.Sets.HideStables then
+			local stables = Journal.GetStablesIn(mapID)
+			for x, y in gmatch(stables, '(%w%w)(%w%w)') do
+				tinsert(self.pins[frame], Addon.StablePin(canvas):PlaceEncoded(frame, x, y))
 			end
 		end
 	end
@@ -86,7 +118,7 @@ function MapCanvas:Scale(frame)
 	end
 end
 
-function MapCanvas:DrawTip(frame)
+function MapCanvas:AnchorTip(frame)
 	local tip = self.tips[frame]
 
 	if GameTooltip:IsVisible() then
@@ -101,8 +133,6 @@ function MapCanvas:DrawTip(frame)
 				tip:AddHeader(title)
 				tip:AddLine(text, 1,1,1)
 			end
-
-			--pin:SetFocus(focus)
 		end
 
 		tip:Display()

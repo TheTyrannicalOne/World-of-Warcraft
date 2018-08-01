@@ -1,172 +1,50 @@
 
 MasterPlanAG = {
-	["Runetotem"] = {
-		["Migimong"] = {
-			["faction"] = "Alliance",
-			["class"] = "ROGUE",
-		},
-		["Gangus"] = {
-			["faction"] = "Alliance",
-			["class"] = "DEATHKNIGHT",
-		},
-		["Claugh"] = {
-			["faction"] = "Horde",
-			["class"] = "WARLOCK",
-		},
-		["Panboozled"] = {
-			["faction"] = "Alliance",
-			["class"] = "ROGUE",
-		},
-		["Goramor"] = {
-			["faction"] = "Horde",
-			["class"] = "WARRIOR",
-		},
-		["Gillbourn"] = {
-			["faction"] = "Alliance",
-			["class"] = "DRUID",
-		},
-	},
-	["Zul'jin"] = {
-		["Tyrannithal"] = {
-			["faction"] = "Horde",
-			["class"] = "WARRIOR",
-		},
-		["Tyrann"] = {
-			["faction"] = "Horde",
-			["class"] = "MAGE",
-		},
-		["Urbul"] = {
-			["faction"] = "Horde",
-			["class"] = "WARLOCK",
-		},
-		["Datgorg"] = {
-			["faction"] = "Horde",
-			["class"] = "HUNTER",
-		},
-		["Brotuss"] = {
-			["faction"] = "Horde",
-			["class"] = "SHAMAN",
-		},
-		["Shanyt"] = {
-			["faction"] = "Horde",
-			["class"] = "WARRIOR",
-		},
-		["Zulbathal"] = {
-			["faction"] = "Horde",
-			["class"] = "DEATHKNIGHT",
-		},
-		["Vaddor"] = {
-			["faction"] = "Horde",
-			["class"] = "ROGUE",
-		},
-		["Jingojaggot"] = {
-			["faction"] = "Horde",
-			["class"] = "PRIEST",
-		},
-		["Brokehorn"] = {
-			["faction"] = "Horde",
-			["class"] = "PALADIN",
-		},
-		["Shaekhan"] = {
-			["faction"] = "Neutral",
-			["class"] = "MONK",
-		},
-		["Fantastiburo"] = {
-			["faction"] = "Horde",
-			["class"] = "DRUID",
-		},
-	},
-	["Darkspear"] = {
-		["Shathiel"] = {
-			["faction"] = "Alliance",
-			["class"] = "MAGE",
-		},
-		["Brewnheimer"] = {
-			["faction"] = "Alliance",
-			["class"] = "SHAMAN",
-		},
-		["Dialdaas"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
-		},
-	},
-	["Dalaran"] = {
-		["Malivant"] = {
-			["faction"] = "Alliance",
-			["class"] = "ROGUE",
-		},
-		["Beeronimo"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
-		},
-		["Tynster"] = {
-			["faction"] = "Alliance",
-			["class"] = "PRIEST",
-		},
-		["Thromar"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Tyriinid"] = {
-			["faction"] = "Alliance",
-			["class"] = "MAGE",
-		},
-		["Shaewong"] = {
-			["faction"] = "Neutral",
-			["class"] = "MONK",
-		},
-		["Sinh"] = {
-			["faction"] = "Alliance",
-			["class"] = "SHAMAN",
-		},
-		["Narisaric"] = {
-			["faction"] = "Alliance",
-			["class"] = "DRUID",
-		},
+	["IgnoreRewards"] = {
 	},
 	["Argent Dawn"] = {
 		["Tyrannithal"] = {
-			["class"] = "DEMONHUNTER",
 			["faction"] = "Horde",
+			["class"] = "DEMONHUNTER",
 		},
 		["Cowtastraphy"] = {
-			["faction"] = "Horde",
 			["class"] = "PALADIN",
+			["faction"] = "Horde",
 		},
 		["Tyran"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
 		["Datgorg"] = {
-			["faction"] = "Horde",
 			["class"] = "HUNTER",
-		},
-		["Bathal"] = {
-			["class"] = "DEATHKNIGHT",
 			["faction"] = "Horde",
 		},
 		["Vadder"] = {
-			["class"] = "ROGUE",
 			["faction"] = "Horde",
+			["class"] = "ROGUE",
+		},
+		["Bathal"] = {
+			["faction"] = "Horde",
+			["class"] = "DEATHKNIGHT",
 		},
 		["Mulmok"] = {
-			["class"] = "WARLOCK",
 			["faction"] = "Horde",
+			["class"] = "WARLOCK",
 		},
 		["Brotus"] = {
-			["faction"] = "Horde",
 			["class"] = "SHAMAN",
+			["faction"] = "Horde",
 		},
 		["Jingojaggot"] = {
-			["class"] = "PRIEST",
 			["faction"] = "Horde",
+			["class"] = "PRIEST",
+		},
+		["Shaekhan"] = {
+			["faction"] = "Horde",
+			["class"] = "MONK",
 		},
 		["Shanyt"] = {
-			["lastCacheTime"] = 1532823562,
+			["faction"] = "Horde",
 			["summary"] = {
 				["lastOilTime"] = 1532813925,
 				["tt2"] = 1532826451,
@@ -175,37 +53,153 @@ MasterPlanAG = {
 				["tt1"] = 1532816872,
 				["ti3"] = 128391,
 				["inProgress"] = {
-					[668] = 1532828309,
-					[306] = 1532842711,
-					[132] = 1532835506,
-					[399] = 1532855278,
-					[326] = 1532828302,
-					[266] = 1532828313,
-					[541] = 1532828322,
-					[396] = 1532842700,
-					[570] = 1532828320,
 					[276] = 1532849915,
-					[453] = 1532837875,
-					[696] = 1532828323,
+					[361] = 1532866290,
+					[495] = 1532863956,
+					[399] = 1532855278,
+					[262] = 1532856758,
 					[745] = 1532878725,
+					[538] = 1532864202,
 				},
 				["ti2"] = 122486,
 			},
-			["faction"] = "Horde",
+			["curOil"] = 55025,
 			["cacheSize"] = 1000,
 			["class"] = "WARRIOR",
-			["curRes"] = 6046,
-			["curOil"] = 55110,
+			["curRes"] = 6968,
+			["lastCacheTime"] = 1532849535,
+		},
+		["Fantastiburo"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
+	["Dalaran"] = {
+		["Malivant"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Beeronimo"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Tynster"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Alliance",
+		},
+		["Thromar"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Tyriinid"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Narisaric"] = {
+			["class"] = "DRUID",
+			["faction"] = "Alliance",
+		},
+		["Sinh"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+		["Shaewong"] = {
+			["class"] = "MONK",
+			["faction"] = "Neutral",
+		},
+	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Brewnheimer"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+		["Dialdaas"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+	},
+	["Zul'jin"] = {
+		["Tyrannithal"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["Tyrann"] = {
+			["class"] = "MAGE",
+			["faction"] = "Horde",
+		},
+		["Urbul"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Horde",
+		},
+		["Datgorg"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Horde",
+		},
+		["Brotuss"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Horde",
+		},
+		["Shanyt"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["Zulbathal"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Horde",
 		},
 		["Shaekhan"] = {
 			["class"] = "MONK",
+			["faction"] = "Neutral",
+		},
+		["Jingojaggot"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Horde",
+		},
+		["Brokehorn"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Horde",
+		},
+		["Vaddor"] = {
+			["class"] = "ROGUE",
 			["faction"] = "Horde",
 		},
 		["Fantastiburo"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
-	["IgnoreRewards"] = {
+	["Runetotem"] = {
+		["Migimong"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Gangus"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
+		},
+		["Gillbourn"] = {
+			["class"] = "DRUID",
+			["faction"] = "Alliance",
+		},
+		["Panboozled"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Goramor"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Horde",
+		},
+		["Claugh"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Horde",
+		},
 	},
 }

@@ -1,3 +1,7 @@
+### Version 8.0.0.0
+
+* Updated for WoW 8.0 (thanks bkhablenko!)
+
 ### Version 7.3.5.0
 
 * Fixed the position of "Beyond the Dark Portal" in Stormwind

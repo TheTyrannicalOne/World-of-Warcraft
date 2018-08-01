@@ -41,7 +41,7 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17654 $"):sub(12, -3)),
+	Revision = tonumber(("$Revision: 17657 $"):sub(12, -3)),
 	DisplayVersion = "8.0.2 alpha", -- the string that is shown as version
 	ReleaseRevision = 17635 -- the revision of the latest stable version that is available
 }
@@ -1347,7 +1347,6 @@ do
 				"PLAYER_SPECIALIZATION_CHANGED",
 				"PARTY_INVITE_REQUEST",
 				"LOADING_SCREEN_DISABLED",
-				"SCENARIO_CRITERIA_UPDATE",
 				"SCENARIO_COMPLETED"
 			)
 			if RolePollPopup:IsEventRegistered("ROLE_POLL_BEGIN") then
@@ -3616,18 +3615,6 @@ function DBM:UPDATE_BATTLEFIELD_STATUS()
 	end
 end
 
-function DBM:SCENARIO_CRITERIA_UPDATE()
-	local _, currentStage, numStages = C_Scenario.GetInfo()
-	if #inCombat > 0 and currentStage > numStages and C_Scenario.IsInScenario() then
-		for i = #inCombat, 1, -1 do
-			local v = inCombat[i]
-			if v.inScenario then
-				self:EndCombat(v)
-			end
-		end
-	end
-end
-
 function DBM:SCENARIO_COMPLETED()
 	if #inCombat > 0 and C_Scenario.IsInScenario() then
 		for i = #inCombat, 1, -1 do
@@ -3760,7 +3747,7 @@ do
 		self:Debug("LOADING_SCREEN_DISABLED fired")
 		self:Unschedule(SecondaryLoadCheck)
 		--SecondaryLoadCheck(self)
-		self:Schedule(1, SecondaryLoadCheck, self)--Now delayed by one second to work around an issue on beta where spec info isn't available yet on reloadui
+		self:Schedule(1, SecondaryLoadCheck, self)--Now delayed by one second to work around an issue on 8.x where spec info isn't available yet on reloadui
 		self:TransitionToDungeonBGM(false, true)
 		self:Schedule(5, SecondaryLoadCheck, self)
 		if DBM:HasMapRestrictions() then

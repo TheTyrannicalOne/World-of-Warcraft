@@ -1,4 +1,7 @@
-﻿Version 1.9.6
+﻿Version 1.9.7
+- Frame handling cleanup (needed for tracking plugin support)
+
+Version 1.9.6
 - Fix broken data collection, reclaim misplaced catches
 - Random code cleanups and some prettification of data display
 

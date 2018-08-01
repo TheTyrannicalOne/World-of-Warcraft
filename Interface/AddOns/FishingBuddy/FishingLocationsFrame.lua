@@ -24,7 +24,7 @@ local zmex = FishingBuddy.ZoneMarkerEx;
 --							level
 --				 expanded
 --		 collapsible
---			  
+--
 -- number * 1000
 --		 negative --> zone marker
 --		 positive --> fish
@@ -346,7 +346,7 @@ local function UpdateLocLine(id, line, leveloffset, c, e, text, append, texture)
 		icontex:Hide();
 		icon:Hide();
 	end
-	
+
 	local textfield = _G["FishingLocations"..id.."NormalText"];
 	if ( textfield ~= nil ) then
 		 textfield:SetPoint("LEFT", offset, 0);
@@ -629,7 +629,7 @@ function FishingLocationsCollapseAllButton_OnClick()
 		FishingLocsScrollFrameScrollBar:SetValue(0);
 		LocationLineSelected = 1;
 	end
-	
+
 	for j=1,table.getn(LocationLines) do
 		local check = LocationLines[j];
 		if ( check ~= 0 ) then
@@ -748,12 +748,16 @@ FishingBuddy.Locations.OnLoad = function(self)
 	self:RegisterEvent("VARIABLES_LOADED");
 	FishingLocationsSwitchButton:SetText(FBConstants.SHOWFISHIES);
 	-- Set up checkbox
+	FishingBuddy.EmbeddedOptions(self)
 	FishingBuddy.OptionsFrame.HandleOptions(nil, nil, LocOptions);
+	FishingBuddyOptionSLZ:SetFrameLevel(FishingLocationsFrame:GetFrameLevel()+1)
+	FishingBuddyOptionSLZ:SetText(FBConstants.CONFIG_SHOWLOCATIONZONES_ONOFF);
 	FishingBuddy.RegisterHandlers(LocationEvents);
 end
 
-FishingBuddy.Locations.OnShow = function()
+FishingBuddy.Locations.OnShow = function(self)
 	if ( FishingBuddy.IsLoaded() ) then
+		self:InitializeOptions(LocOptions);
 		UpdateButtonDisplay();
 		FishingBuddy.Locations.Update(FishingLocsScrollFrame);
 	end
@@ -762,6 +766,18 @@ end
 FishingBuddy.Locations.OnEvent = function(self, event, ...)
 	-- this crashes the client when enabled
 	-- self:EnableMouseWheel(0);
+
+	groups = {}
+	tinsert(groups, {
+		["name"] = FBConstants.LOCATIONS_TAB,
+		["icon"] = "Interface\\Icons\\INV_Misc_Note_01",
+		["frame"] = "FishingLocationsFrame"
+	})
+	local frame = FishingBuddy.CreateManagedFrameGroup(FBConstants.LOCATIONS_TAB,
+														FBConstants.LOCATIONS_INFO,
+														"_LOC",
+														groups);
+	FishingBuddyFrame:MakePrimary(frame);
 end
 
 FishingBuddy.Locations.DataChanged = function(zone, subzone, fishie)

@@ -1,10 +1,10 @@
-lightweight tag 362a9d7652bdddeb6225c606d74462dd39fcf1ff v1.3.0
+lightweight tag 38420bc448febe29cab390454069ee7d8e2eacbe v1.3.2
 Author:	Ketho <sghs17@outlook.com>
-Date:	Sun Jul 22 17:01:38 2018 +0200
+Date:	Tue Jul 31 18:55:59 2018 +0200
 
-commit 362a9d7652bdddeb6225c606d74462dd39fcf1ff
+commit 38420bc448febe29cab390454069ee7d8e2eacbe
 Author: Ketho <sghs17@outlook.com>
-Date:   Sun Jul 22 17:01:38 2018 +0200
+Date:   Tue Jul 31 18:55:59 2018 +0200
 
-    Bump TOC
+    Disable self when ElvUI is loaded
 

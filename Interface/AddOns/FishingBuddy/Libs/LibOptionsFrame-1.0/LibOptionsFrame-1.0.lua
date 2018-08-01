@@ -447,18 +447,16 @@ local function CleanupButton(button)
 	end
 end
 
-local insidewidth = 0;
-function OptionsLib:LayoutOptions(options)
-	insidewidth = self.reference:GetWidth();
+function OptionsLib:InitializeOptions(options)
+	local overlayidx = 1;
+	local index = 1;
 
--- Clear out all the stuff we put on the old buttons
+	-- Clear out all the stuff we put on the old buttons
 	for name,button in pairs(optionmap) do
 		CleanupButton(button);
 	end
 	optionmap = {};
 
-	local overlayidx = 1;
-	local index = 1;
 	for name,option in pairs(options) do
 		local button = nil;
 		if (not option.visible or option.visible(option)) then
@@ -568,6 +566,14 @@ function OptionsLib:LayoutOptions(options)
 			end
 		end
 	end
+end
+tinsert(copyfuncs, "InitializeOptions");
+
+local insidewidth = 0;
+function OptionsLib:LayoutOptions(options)
+	insidewidth = self.reference:GetWidth();
+
+	self:InitializeOptions(options)
 
 	local toplevel = {};
 	for name,option in pairs(options) do

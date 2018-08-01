@@ -483,6 +483,7 @@ function private.SubjectBtnOnClick(button)
 					:SetScript("OnSizeChanged", private.DesciptionOnSizeChanged)
 				)
 			)
+			:SetScript("OnMouseUp", private.DescriptionOnMouseUp)
 		)
 		:AddChild(TSMAPI_FOUR.UI.NewElement("Frame", "footer")
 			:SetLayout("HORIZONTAL")
@@ -670,7 +671,7 @@ function private.RecipientOnTextChanged(input)
 	local text = strtrim(input:GetText())
 	if input._compStart then
 		if text == private.recipient then
-			input:HighlightText(input._compStart, strlenutf8(text))
+			input:HighlightText(input._compStart, #text)
 			input._compStart = nil
 		else
 			private.recipient = text
@@ -714,6 +715,10 @@ function private.DesciptionOnTextChanged(input)
 
 	input:GetElement("__parent.__parent.__parent.footer.title"):SetFormattedText(L["(%d/500 Characters)"], #private.body)
 		:Draw()
+end
+
+function private.DescriptionOnMouseUp(frame)
+	frame:GetElement("scroll.input"):SetFocused(true)
 end
 
 function private.DesciptionOnSizeChanged(input, width, height)
@@ -860,8 +865,9 @@ end
 function private.GenerateListElements(category, filterText)
 	private.listElements = {}
 	if category == L["Alts"] then
-		for factionrealm in TSM.db:GetConnectedRealmIterator("factionrealm") do
+		for factionrealm in TSM.db:GetConnectedRealmIterator("realm") do
 			for _, character in TSM.db:FactionrealmCharacterIterator(factionrealm) do
+				character = Ambiguate(gsub(strmatch(character, "(%a*) -").."-"..factionrealm, " ", ""), "none")
 				if character ~= UnitName("player") then
 					if filterText and filterText ~= "" then
 						if strfind(strlower(character), filterText) then

@@ -156,7 +156,7 @@ end
 tinsert(copyfuncs, "CreateTab");
 
 function SideTabLib:GetSelected()
-	if ( not self.currentTab and #self.TabFrames > 1) then
+	if ( not self.currentTab and #self.TabFrames > 0) then
 		self.currentTab = self.TabFrames[1]
 	end
 

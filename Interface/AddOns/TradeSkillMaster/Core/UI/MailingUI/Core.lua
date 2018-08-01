@@ -92,8 +92,11 @@ end
 -- ============================================================================
 
 function private.FSMCreate()
-	TSMAPI_FOUR.Event.Register("MAIL_SHOW", function()
+	local function MailShowDelayed()
 		private.fsm:ProcessEvent("EV_MAIL_SHOW")
+	end
+	TSMAPI_FOUR.Event.Register("MAIL_SHOW", function()
+		TSMAPI_FOUR.Delay.AfterFrame("MAIL_SHOW_DELAYED", 0, MailShowDelayed)
 	end)
 	TSMAPI_FOUR.Event.Register("MAIL_CLOSED", function()
 		private.fsm:ProcessEvent("EV_MAIL_CLOSED")
@@ -149,7 +152,7 @@ function private.FSMCreate()
 					private.defaultUISwitchBtn:Draw()
 				end
 
-				MailFrame:SetScript("OnHide", DefaultFrameOnHide)
+				MailFrame:HookScript("OnHide", DefaultFrameOnHide)
 			end)
 			:AddTransition("ST_CLOSED")
 			:AddTransition("ST_FRAME_OPEN")

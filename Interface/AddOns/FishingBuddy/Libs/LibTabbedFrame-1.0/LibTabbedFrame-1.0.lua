@@ -229,19 +229,19 @@ local function CreateEmbeddedScrollFrame(self)
 
 	-- Set up internal textures for the scrollbar, background and thumb texture
 	scrollBar.top = scrollBar:CreateTexture(nil, "ARTWORK");
-	scrollBar.top:SetTexture("Interface\PaperDollInfoFrame\UI-Character-ScrollBar");
+	scrollBar.top:SetTexture("Interface\\PaperDollInfoFrame\\UI-Character-ScrollBar");
 	scrollBar.top:SetTexCoord(0, 0.45, 0, .20);
 	scrollBar.top:SetSize(24, 48);
 	scrollBar.top:SetPoint("TOPLEFT", -4, 17);
 	
 	scrollBar.bot = scrollBar:CreateTexture(nil, "ARTWORK");
-	scrollBar.bot:SetTexture("Interface\PaperDollInfoFrame\UI-Character-ScrollBar");
+	scrollBar.bot:SetTexture("Interface\\PaperDollInfoFrame\\UI-Character-ScrollBar");
 	scrollBar.bot:SetTexCoord(0.515625, 0.97, 0.1440625, 0.4140625);
 	scrollBar.bot:SetSize(24, 64);
 	scrollBar.bot:SetPoint("BOTTOMLEFT", -4, -15);
 	
 	scrollBar.mid = scrollBar:CreateTexture(nil, "ARTWORK");
-	scrollBar.mid:SetTexture("Interface\PaperDollInfoFrame\UI-Character-ScrollBar");
+	scrollBar.mid:SetTexture("Interface\\PaperDollInfoFrame\\UI-Character-ScrollBar");
 	scrollBar.top:SetTexCoord(0, 0.45, 0.1640625, 1);
 	scrollBar.mid:SetSize(24, 64);
 	scrollBar.mid:SetPoint("TOPLEFT", scrollBar.top, "BOTTOMLEFT");
@@ -331,9 +331,16 @@ function FrameLib:MakePrimary(target)
 	if (tab) then
 		tab.first = true;
 		self.FirstAmongTabs = tab;
+		self.currentTab = tab;
+		self:ResetTabFrames();
 	end
 end
 tinsert(copyfuncs, "MakePrimary");
+
+function FrameLib:GetPrimary()
+	return self.FirstAmongTabs;
+end
+tinsert(copyfuncs, "GetPrimary");
 
 function FrameLib:MakeUltimate(target)
 	local tab = self:FindTab(target);
@@ -343,6 +350,11 @@ function FrameLib:MakeUltimate(target)
 	end
 end
 tinsert(copyfuncs, "MakeUltimate");
+
+function FrameLib:GetUltimate()
+	return self.UltimateTab;
+end
+tinsert(copyfuncs, "GetUltimate");
 
 function FrameLib:ToggleTab(target)
 	local frame, frameName = self:GetFrameInfo(target);

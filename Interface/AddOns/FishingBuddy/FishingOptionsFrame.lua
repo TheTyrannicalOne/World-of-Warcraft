@@ -270,7 +270,7 @@ local _delayedframe = nil;
 local _delayedoptions = nil;
 local function HandleOptions(name, icon, options, setter, getter, last, frame)
 	if (not frame) then
-		frame = FishingOptionsFrame
+		frame = FishingOptionsFrame;
 	end
 	if (not _delayedoptions) then
 		_delayedoptions = {};
@@ -392,7 +392,7 @@ local function MakeDropDownInitialize(self, level)
         	entry.notCheckable = 1;
         	UIDropDownMenu_AddButton(entry, level);
         end
-		
+
 		-- If no outfit frame, we can't switch outfits...
 		if ( FishingBuddy.OutfitManager.HasManager() ) then
 			MakeClickToSwitchEntry(self.switchText, self.switchSetting, level, 1);
@@ -434,13 +434,13 @@ FishingBuddy.GetDropDown = function(switchText, switchSetting, title, frame)
 		frame = FB_DropDownMenu;
 		frame.displayMode = "MENU"
 	end
-	
+
 	frame.title = title or FBConstants.NAME;
 	frame.switchText = switchText;
 	frame.switchSetting = switchSetting;
 	frame.initialize = MakeDropDownInitialize;
 	frame.UncheckHack = UncheckHack;
-	
+
 	return frame;
 end
 
@@ -478,12 +478,12 @@ FishingBuddy.CreateFBDropDownMenu = function(holdername, menuname)
 	holder.fontstring = holder.html:CreateFontString(nil, nil, "GameFontNormalSmall");
 	holder.fontstring:SetAllPoints(holder.html);
 	holder.fontstring:SetSize(183, 0);
-	
+
 	function holder:FixSizes()
 		self:SetWidth(self.menu:GetWidth() + self.menu.label:GetWidth() + 4);
 		self:SetHeight(self.menu:GetHeight());
 	end
-	
+
 	function holder:SetLabel(text)
 		if (text) then
 			self.menu.label:Show();
@@ -494,7 +494,7 @@ FishingBuddy.CreateFBDropDownMenu = function(holdername, menuname)
 		end
 		self:FixSizes();
 	end
-	
+
 	return holder;
 end
 
@@ -542,7 +542,7 @@ end
 
 FishingBuddy.CreateFBMappedDropDown = function(holdername, setting, label, mapping, menuname)
 	local keymenu = FishingBuddy.CreateFBDropDownMenu(holdername, menuname);
-	keymenu.html:Hide();	
+	keymenu.html:Hide();
 	keymenu.menu.label:SetText(label);
 	keymenu.Label = label;
 	keymenu.Setting = setting;
@@ -566,6 +566,11 @@ end
 -- Helper function
 FishingBuddy.FitInOptionFrame = function(width)
 	return FishingOptionsFrame:FitInFrame(width);
+end
+
+FishingBuddy.OptionCheckButton = function(button)
+	button:SetScript("OnShow", CheckButton_OnShow);
+	button:SetScript("OnClick", CheckButton_OnClick);
 end
 
 FishingBuddy.EmbeddedOptions = function(frame)

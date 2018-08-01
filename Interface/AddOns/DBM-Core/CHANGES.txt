@@ -1,5 +1,26 @@
 Changes since tag 8.0.1
 
+commit cf905b2c346d4a530cea9f10c08f78dfd98b28c8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Aug 1 05:40:04 2018 +0200
+
+    Omega via svn r17657:
+    Correctly block starting of rings (in p2/p3) or orbs (in p3) timers for first cast, if you zerg elisande before she ever casts abilities
+
+commit df1339b798e6d9d94b2a0dc002552116a510d312
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Aug 1 02:34:39 2018 +0200
+
+    Omega via svn r17656:
+    Make sentence an unfiltered announce
+
+commit 06183a68fa590e19b60d9a57abc23588bea0de80
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Jul 30 05:24:34 2018 +0200
+
+    Omega via svn r17655:
+    remove SCENARIO_CRITERIA_UPDATE, since it?\226?\128?\153s not effectively used anymore
+
 commit 53b46c1295d539715e6823c6c0fa932c3be26735
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sun Jul 29 03:35:42 2018 +0200
