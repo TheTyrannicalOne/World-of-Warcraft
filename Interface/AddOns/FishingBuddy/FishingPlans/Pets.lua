@@ -108,14 +108,17 @@ local function HandlePetsUpdate()
 end
 
 local function DoPetReset(pet)
-	if ( pet ) then
-		C_PetJournal.SummonPetByGUID(pet);
-	elseif (FishingBuddy.GetSetting(PETSETTING) ~= PET_NONE) then
-		local nowpet = C_PetJournal.GetSummonedPetGUID();
-		if ( nowpet ) then
-			C_PetJournal.SummonPetByGUID(nowpet);
-		end
-	end
+    if (not FishingBuddy.CheckCombat()) then
+        if ( pet ) then
+            C_PetJournal.SummonPetByGUID(pet);
+        elseif (FishingBuddy.GetSetting(PETSETTING) ~= PET_NONE) then
+            local nowpet = C_PetJournal.GetSummonedPetGUID();
+            if ( nowpet ) then
+                C_PetJournal.SummonPetByGUID(nowpet);
+            end
+        end
+        return true
+    end
 end
 
 local function GetMenuData()
@@ -159,9 +162,8 @@ PetEvents[FBConstants.FISHING_ENABLED_EVT] = function()
 		petsetting = PET_NONE
 	end
     if ( petsetting ~= PET_NONE and
-        FishingBuddy.ReadyForFishing() and
-        not FishingBuddy.CheckCombat()) then
-        if ( not (IsFlying() or IsMounted()) ) then
+        FishingBuddy.ReadyForFishing() and not FishingBuddy.CheckCombat()) then
+        if ( not (IsFlying() or IsMounted() ) ) then
             local nowpet = C_PetJournal.GetSummonedPetGUID();
 			local petid = nowpet;
 			local idx
@@ -189,15 +191,6 @@ PetEvents[FBConstants.FISHING_ENABLED_EVT] = function()
     end
 end
 
-PetEvents[FBConstants.FISHING_DISABLED_EVT] = function(started, logout)
-	if ( logout ) then
-		FishingBuddy_Player["ResetPet"] = resetPet;
-	else
-		DoPetReset(resetPet);
-	end
-	resetPet = nil;
-end
-
 PetEvents[FBConstants.LOGIN_EVT] = function()
 	if ( FishingBuddy_Player ) then
 		if ( FishingBuddy_Player["ResetPet"] ) then
@@ -211,9 +204,10 @@ PetEvents[FBConstants.FISHING_DISABLED_EVT] = function(started, logout)
 	if ( logout ) then
 		FishingBuddy_Player["ResetPet"] = resetPet;
 	else
-		DoPetReset(resetPet);
+        if (DoPetReset(resetPet)) then
+            resetPet = nil;
+        end
 	end
-	resetPet = nil;
 end
 
 PetEvents[FBConstants.LOGIN_EVT] = function()

@@ -122,7 +122,7 @@ local function CheckButton_OnClick(button, quiet)
 		return;
 	end
 	local value = true;
-	if ( button.checkbox) then
+	if ( button.checkbox ) then
 		if ( not button:GetChecked() ) then
 			value = false;
 		end
@@ -568,11 +568,6 @@ FishingBuddy.FitInOptionFrame = function(width)
 	return FishingOptionsFrame:FitInFrame(width);
 end
 
-FishingBuddy.OptionCheckButton = function(button)
-	button:SetScript("OnShow", CheckButton_OnShow);
-	button:SetScript("OnClick", CheckButton_OnClick);
-end
-
 FishingBuddy.EmbeddedOptions = function(frame)
 	frame.GetSettingBool = FishingBuddy.GetSettingBool
 	LO:Embed(frame, CheckButton_OnClick, CheckButton_OnShow, FishingBuddyFrameInset);
@@ -580,11 +575,12 @@ end
 
 -- Create the options frame, unmanaged -- we get managed specially later
 local f = FishingBuddyFrame:CreateManagedFrame("FishingOptionsFrame");
-f:SetScript("OnShow", OptionsFrame_OnShow);
-f:SetScript("OnHide", function (self) self:HideTabs() end);
 
-FishingBuddy.EmbeddedOptions(FishingOptionsFrame);
-LS:Embed(FishingOptionsFrame);
+FishingBuddy.EmbeddedOptions(f);
+LS:Embed(f);
+
+f:SetScript("OnShow", OptionsFrame_OnShow);
+f:SetScript("OnHide", function (self) self:HideTabs(); end);
 
 if ( FishingBuddy.Debugging ) then
 	FishingBuddy.FBOptionsTable = FBOptionsTable;

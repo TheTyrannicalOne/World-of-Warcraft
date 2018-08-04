@@ -1,14 +1,12 @@
 
 COLLECTINATORDB2 = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
-			["exclusionlist"] = {
-				["CRITTER"] = {
-				},
-			},
+		},
+		["Default"] = {
 		},
 	},
 }

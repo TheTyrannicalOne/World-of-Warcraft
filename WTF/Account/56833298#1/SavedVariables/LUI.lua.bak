@@ -460,9 +460,9 @@ LUIDB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1569.91638183594,
+						["CoordX"] = 1579.12646484375,
 						["ItemQuality"] = true,
-						["CoordY"] = 778.766052246094,
+						["CoordY"] = 769.55615234375,
 					},
 					["Reagents"] = {
 						["CoordY"] = 879.551025390625,
@@ -2626,7 +2626,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 12775025955,
+							["Shanyt"] = 12885703390,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2659,9 +2659,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
-							["Serbitechna"] = 7681888,
 							["Brewnheimer"] = 836,
 							["Dialdaas"] = 11338409,
+							["Serbitechna"] = 7681888,
 						},
 					},
 				},
@@ -2698,38 +2698,38 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/omen show", -- [1]
-							"/fishingbuddy", -- [2]
-							"/moveexport", -- [3]
+							"/fishingbuddy", -- [1]
+							"/moveexport", -- [2]
+							"/omen show", -- [3]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [4]
-							"/omen show", -- [5]
-							"/moveexport", -- [6]
-							"/omen show", -- [7]
-							"/fishingbuddy", -- [8]
-							"/omen show", -- [9]
-							"/fishingbuddy", -- [10]
-							"/moveexport", -- [11]
-							"/omen show", -- [12]
+							"/fishingbuddy", -- [5]
+							"/omen show", -- [6]
+							"/fishingbuddy", -- [7]
+							"/moveexport", -- [8]
+							"/fishingbuddy", -- [9]
+							"/moveexport", -- [10]
+							"/omen show", -- [11]
+							"/fishingbuddy", -- [12]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [13]
-							"/fishingbuddy", -- [14]
-							"/omen show", -- [15]
-							"/fishingbuddy", -- [16]
-							"/moveexport", -- [17]
+							"/moveexport", -- [14]
+							"/fishingbuddy", -- [15]
+							"/moveexport", -- [16]
+							"/omen show", -- [17]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [18]
-							"/omen show", -- [19]
-							"/moveexport", -- [20]
-							"/omen show", -- [21]
-							"/fishingbuddy", -- [22]
-							"/moveexport", -- [23]
+							"/fishingbuddy", -- [19]
+							"/omen show", -- [20]
+							"/fishingbuddy", -- [21]
+							"/moveexport", -- [22]
+							"/omen show", -- [23]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [24]
-							"/omen show", -- [25]
-							"/moveexport", -- [26]
-							"/omen show", -- [27]
-							"/fishingbuddy", -- [28]
+							"/fishingbuddy", -- [25]
+							"/omen show", -- [26]
+							"/fishingbuddy", -- [27]
+							"/moveexport", -- [28]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [29]
-							"/moveexport", -- [30]
-							"/fishingbuddy", -- [31]
-							"/moveexport", -- [32]
+							"/omen show", -- [30]
+							"/moveexport", -- [31]
+							"/omen show", -- [32]
 						},
 					},
 				},

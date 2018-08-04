@@ -101,7 +101,10 @@ FishingTranslations["enUS"] = {
 
 	ALLZOMGPETS = "Include all pets",
 
-	-- Option names and tooltips
+    -- Option names and tooltips
+    CONFIG_SHOWBANNER_ONOFF       = "Show banner",
+    CONFIG_SHOWBANNER_INFO        = "If enabled, show the #NAME# banner on login.",
+
 	CONFIG_SHOWNEWFISHIES_ONOFF	 = "Show new fish",
 	CONFIG_SHOWNEWFISHIES_INFO	 = "Display a message in the chat area when a new fish for the current location is caught.",
 	CONFIG_FISHWATCH_ONOFF		 = "Fish watcher",

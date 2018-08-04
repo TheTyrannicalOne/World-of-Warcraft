@@ -1,5 +1,96 @@
 Changes since tag 8.0.1
 
+commit 436833104c4242a8fe4ccf70fb4a260c21b569c1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Aug 4 08:11:51 2018 +0200
+
+    Omega via svn r17670:
+    Update mythrax, vectis and zul from todays testing data
+
+commit 4c28863d808e8d42b6020b01a0accc8ac12cfff2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Aug 4 03:48:39 2018 +0200
+
+    Omega via svn r17669:
+    Update ?\226?\128?\156don?\226?\128?\153t die?\226?\128?\157 with the blakbird remastered version that removes armor noises and improves the stereo sound.
+
+commit cd425fafc4a72e60ec038c9c25992fd7ccbc4c47
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Aug 4 00:08:52 2018 +0200
+
+    Omega via svn r17668:
+    Add new media ?\226?\128?\156Don?\226?\128?\153t Die?\226?\128?\157 by user request
+
+commit feb6f811d864e30881f705cd230267e687f21aa3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 23:49:37 2018 +0200
+
+    Omega via svn r17667:
+    Fix ruin fades SAYs since it?\226?\128?\153s 12 second debuff (up from 8)
+
+commit 06326058c0d1bd8a6350c2100e6973d51d247950
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 22:50:16 2018 +0200
+
+    Omega via svn r17666:
+    Fix voices on hounds for fire/shadow debuffs
+
+commit 85e88bd0ca4c9473d62f3f04cd3870a14e38e94c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 22:40:16 2018 +0200
+
+    Omega via svn r17665:
+    Fix double gestate warning
+
+commit 3ff15f8e671187a95193e1fb7b805c6aef04c54b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 21:56:51 2018 +0200
+
+    Omega via svn r17664:
+    Fix incoming adds bar
+
+commit df17c618d731ea9219ed4e4bbba64f8a02ea5af4
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 21:51:56 2018 +0200
+
+    Omega via svn r17663:
+    Shorten add timers so they are actually more readable
+
+commit 3d88e3286c06f4c2b3dc2c660ec997d3b3d77998
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 21:38:44 2018 +0200
+
+    Omega via svn r17662:
+    Make blood shard interrupt true by default since it uses the new interrupt warning filter tech
+
+commit 25825fd0fa82156198d6da67122252eb24848fa2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 21:21:41 2018 +0200
+
+    Omega via svn r17661:
+    Migrate expansion agnostic mods to BFA list
+
+commit 69fa047248f807588eb329e4d766e5ea6abc7ecc
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 21:09:01 2018 +0200
+
+    Omega via svn r17660:
+    Update version check
+
+commit ecf1d858905f21b7cb13c5976ea690428cbadae9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 03:46:39 2018 +0200
+
+    Omega via svn r17659:
+    Prep for new voice file
+
+commit e8824ac447671690dc8227fb0809d4f011dd52b6
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 3 03:11:26 2018 +0200
+
+    Omega via svn r17658:
+    Preliminary Merektha mod (more work needed for sure)
+
 commit cf905b2c346d4a530cea9f10c08f78dfd98b28c8
 Author: subversion <svn@deadlybossmods.com>
 Date:   Wed Aug 1 05:40:04 2018 +0200

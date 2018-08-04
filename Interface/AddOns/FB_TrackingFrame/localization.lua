@@ -9,6 +9,8 @@ FB_TFTranslations["enUS"] = {
    TRACKING_INFO = "Show #NAME# cycle fish information",
    TRACKING_TAB = "Tracking",
 
+   FILTER_TAB = "Filter",
+
    TRACK = "track",
    NOTRACK = "notrack",
    TRACKING = "tracking",
@@ -33,10 +35,10 @@ FB_TFTranslations["enUS"] = {
    ABBREV_JULY = "Jul",
    ABBREV_OCTOBER = "Oct",
    ABBREV_DECEMBER = "Dec",
-   
+
    TOOLTIP_HOURLY = "Track this fish by hour when set",
    TOOLTIP_WEEKLY = "Track this fish by week when set",
-   
+
    CONFIG_TRACKHIDDEN_ONOFF = "Track hidden",
    CONFIG_TRACKHIDDEN_INFO = "Continue tracking fish even if they're not displayed on the graph",
 

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.0.06 (1st August 2018, www.leatrix.com)
+-- 	Leatrix Plus 8.0.07 (3rd August 2018, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.0.06"
+	LeaPlusLC["AddonVer"] = "8.0.07"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -1029,7 +1029,7 @@
 
 			-- Function to skip gossip
 			local function SkipGossip()
-				if not IsAltKeyDown() then return end
+				if not IsControlKeyDown() then return end
 				local void, gossipType = GetGossipOptions()
 				if gossipType and gossipType == "gossip" then
 					SelectGossipOption(1)
@@ -3553,60 +3553,6 @@
 						LeaPlusLC["DragUIWidgetTopCenterContainerFrame"]:SetSize(160 * LeaPlusLC["gscale"], 79 * LeaPlusLC["gscale"]);
 						LeaPlusLC["DragBuffFrame"]:SetSize(280 * LeaPlusLC["gscale"], 225 * LeaPlusLC["gscale"]);
 					end
-				end
-			end)
-
-			----------------------------------------------------------------------
-			-- Move buff frame when order hall bar is shown
-			----------------------------------------------------------------------
-
-			-- Function to move the buff frame down if necessary when order hall bar is shown
-			local function ManageCommandBar()
-				OrderHallCommandBar:HookScript("OnShow", function()
-					C_Timer.After(0.1, function()
-						if OrderHallCommandBar and OrderHallCommandBar:IsShown() and not LeaPlusLC["DragBuffFrame"]:IsShown() then
-							BuffFrame:SetClampRectInsets(0, 0, 38, 0)
-							BuffFrame:ClearAllPoints()
-							buffSetPos(BuffFrame, LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
-						end
-					end)
-				end)
-				OrderHallCommandBar:HookScript("OnHide", function()
-					C_Timer.After(0.1, function()
-						BuffFrame:SetClampRectInsets(0, 0, 0, 0)
-						BuffFrame:ClearAllPoints()
-						buffSetPos(BuffFrame, LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
-					end)
-				end)
-			end
-
-			-- Run function when Blizzard addon has loaded
-			if IsAddOnLoaded("Blizzard_OrderHallUI") then
-				ManageCommandBar()
-			else
-				local waitFrame = CreateFrame("FRAME")
-				waitFrame:RegisterEvent("ADDON_LOADED")
-				waitFrame:SetScript("OnEvent", function(self, event, arg1)
-					if arg1 == "Blizzard_OrderHallUI" then
-						ManageCommandBar()
-						waitFrame:UnregisterAllEvents()
-					end
-				end)
-			end
-
-			-- When moving buff frame, ignore order hall bar
-			LeaPlusLC["DragBuffFrame"]:HookScript("OnShow", function()
-				BuffFrame:SetClampRectInsets(0, 0, 0, 0)
-				BuffFrame:ClearAllPoints()
-				buffSetPos(BuffFrame, LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
-			end)
-
-			-- When moving has finished, move buff frame down if order hall bar is showing
-			LeaPlusLC["DragBuffFrame"]:HookScript("OnHide", function()
-				if OrderHallCommandBar and OrderHallCommandBar:IsShown() then
-					BuffFrame:SetClampRectInsets(0, 0, 38, 0)
-					BuffFrame:ClearAllPoints()
-					buffSetPos(BuffFrame, LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
 				end
 			end)
 
@@ -8431,7 +8377,9 @@
 				LeaPlusDB["NoHitIndicators"] = "On"				-- Hide portrait text
 				LeaPlusDB["HideCraftedNames"] = "On"			-- Hide crafted names
 				LeaPlusDB["MailFontChange"] = "On"				-- Resize mail text
+				LeaPlusDB["LeaPlusMailFontSize"] = 22			-- Mail font size
 				LeaPlusDB["QuestFontChange"] = "On"				-- Resize quest text
+				LeaPlusDB["LeaPlusQuestFontSize"] = 18			-- Quest font size
 
 				-- Interface
 				LeaPlusDB["MinimapMod"] = "On"					-- Customise minimap
@@ -8758,7 +8706,7 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Character"					, 	146, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateQuests"			,	"Automate quests"				,	146, -92, 	false,	"If checked, quests will be selected, accepted and turned-in automatically.|n|nYou can hold the shift key down when you talk to a quest giver to override this setting.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateGossip"			,	"Automate gossip"				,	146, -112, 	false,	"If checked, you can hold down the alt key while opening a gossip window to automatically select a single gossip option.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateGossip"			,	"Automate gossip"				,	146, -112, 	false,	"If checked, you can hold down the control key while opening a gossip window to automatically select a single gossip option.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptSummon"			,	"Accept summon"					, 	146, -132, 	false,	"If checked, summon requests will be accepted automatically unless you are in combat.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptRes"				,	"Accept resurrection"			, 	146, -152, 	false,	"If checked, resurrection requests will be accepted automatically as long as the player resurrecting you is not in combat.|n|nResurrection requests from a Brazier of Awakening or a Failure Detection Pylon will not be accepted automatically.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoReleasePvP"			,	"Release in PvP"				, 	146, -172, 	false,	"If checked, you will release automatically after you die in Ashran, Tol Barad (PvP), Wintergrasp or any battleground.|n|nYou will not release automatically if you have the ability to self-resurrect (soulstone, reincarnation, etc).")

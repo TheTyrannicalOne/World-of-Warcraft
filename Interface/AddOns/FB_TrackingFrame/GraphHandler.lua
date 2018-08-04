@@ -245,7 +245,7 @@ function GraphHandler:PlotLabels()
    if ( self.label ) then
       local button = self:GetElement(GraphHandler.TEXT, tdx);
       if ( button ) then
-         local text = getglobal(button:GetName().."T");
+         local text = _G[button:GetName().."T"];
          if (self.graphLabel) then
             text:SetText(self.graphLabel..": "..self.label);
          else
@@ -266,7 +266,7 @@ function GraphHandler:PlotLabels()
       for idx,label in pairs(ytext) do
          local button = self:GetElement(GraphHandler.TEXT, tdx);
          if ( button ) then
-            local text = getglobal(button:GetName().."T");
+            local text = _G[button:GetName().."T"];
             if ( type(label) ~= "string" ) then
                label = string.format("%3d", label);
             end
@@ -284,7 +284,7 @@ function GraphHandler:PlotLabels()
       local button = self:GetElement(GraphHandler.TEXT, tdx);
       if ( button ) then
          local label = self.xlabels[1];
-         local text = getglobal(button:GetName().."T");
+         local text = _G[button:GetName().."T"];
          if ( type(label) ~= "string" ) then
             label = string.format("%3d", label);
          end
@@ -302,7 +302,7 @@ function GraphHandler:PlotLabels()
       for idx,label in pairs(ytext) do
          local button = self:GetElement(GraphHandler.TEXT, tdx);
          if ( button ) then
-            local text = getglobal(button:GetName().."T");
+            local text = _G[button:GetName().."T"];
             if ( type(label) ~= "string" ) then
                label = string.format("%3d", label);
             end
@@ -322,7 +322,7 @@ function GraphHandler:PlotLabels()
       for tick,label in pairs(xtext) do
          local button = self:GetElement(GraphHandler.TEXT, tdx);
          if ( button ) then
-            local text = getglobal(button:GetName().."T");
+            local text = _G[button:GetName().."T"];
             if ( type(label) ~= "string" ) then
                label = string.format("%3d", label);
             end

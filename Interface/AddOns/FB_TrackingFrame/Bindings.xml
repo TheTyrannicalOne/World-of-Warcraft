@@ -1,6 +1,6 @@
 <Bindings>
 	<!-- window commands -->
-	<Binding name="TOGGLEFISHINGBUDDY_TRK" header="FISHINGBUDDY_BINDINGS">
+	<Binding name="TOGGLEFISHINGBUDDY_TRK">
 		if ( keystate == "down" ) then
 			ToggleFishingBuddyFrame("FishingTrackingFrame");
 		end

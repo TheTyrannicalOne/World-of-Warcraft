@@ -119,11 +119,19 @@ VUHDO_CONFIG = {
 	["SHOW_INC_CHANNELLED"] = true,
 	["DETECT_DEBUFFS_IGNORE_DURATION"] = false,
 	["RES_ANNOUNCE_MASS_TEXT"] = "Casting mass resurrection!",
-	["BLIZZ_UI_HIDE_TARGET"] = 1,
+	["SHOW_OVERHEAL"] = 1,
 	["SHOW_INCOMING"] = true,
 	["SCAN_RANGE"] = "2",
 	["PARSE_COMBAT_LOG"] = true,
 	["ON_MOUSE_UP"] = false,
+	["INC_CHANNELLED_SECS"] = 3,
+	["BLIZZ_UI_HIDE_FOCUS"] = 1,
+	["DETECT_DEBUFFS_IGNORE_NO_HARM"] = true,
+	["DETECT_DEBUFFS_IGNORE_BY_CLASS"] = true,
+	["MAX_EMERGENCIES"] = 6,
+	["RES_ANNOUNCE_TEXT"] = "Come to life, vuhdo, you b00n!",
+	["PLAYER_TARGET_FRAME_THICKNESS"] = 1,
+	["INC_BOMBED_SECS"] = 3,
 	["CUSTOM_DEBUFF"] = {
 		["animate"] = true,
 		["scale"] = 0.8,
@@ -753,9 +761,9 @@ VUHDO_CONFIG = {
 			["Mystic Buffet"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
-				["isIcon"] = true,
 				["timer"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
+				["isIcon"] = true,
 			},
 			["228914"] = {
 				["isStacks"] = 1,
@@ -1549,9 +1557,9 @@ VUHDO_CONFIG = {
 			["unbound plague"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
-				["isIcon"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
 				["timer"] = true,
+				["isIcon"] = true,
 			},
 			["230139"] = {
 				["isStacks"] = 1,
@@ -4455,14 +4463,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["156047"] = {
+			["Iron Tomb"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Iron Tomb"] = {
+			["Petrified"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4591,9 +4599,9 @@ VUHDO_CONFIG = {
 			["Unbound Plague"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
-				["isIcon"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
 				["timer"] = true,
+				["isIcon"] = true,
 			},
 			["162185"] = {
 				["isStacks"] = 1,
@@ -4680,7 +4688,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Petrified"] = {
+			["156047"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4891,9 +4899,9 @@ VUHDO_CONFIG = {
 			["Essence of the Blood Queen"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
 				["SOUND"] = "Interface\\Quiet.mp3",
 				["isIcon"] = true,
+				["timer"] = true,
 			},
 			["Storm Unleashed"] = {
 				["isStacks"] = 1,
@@ -5530,14 +5538,6 @@ VUHDO_CONFIG = {
 		["xAdjust"] = -2,
 		["BUTTON_FACADE"] = "Blizzard",
 	},
-	["BLIZZ_UI_HIDE_FOCUS"] = 1,
-	["DETECT_DEBUFFS_IGNORE_NO_HARM"] = true,
-	["DETECT_DEBUFFS_IGNORE_BY_CLASS"] = true,
-	["PLAYER_TARGET_FRAME_THICKNESS"] = 1,
-	["MODE"] = 1,
-	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
-	["MAX_EMERGENCIES"] = 6,
-	["INC_BOMBED_SECS"] = 3,
 	["SHOW_PLAYER_TAGS"] = true,
 	["DETECT_DEBUFFS"] = true,
 	["UPDATE_HOTS_MS"] = 250,
@@ -5555,7 +5555,7 @@ VUHDO_CONFIG = {
 	["CURRENT_PROFILE"] = "LUI-Towelliee",
 	["EMERGENCY_TRIGGER"] = 100,
 	["doCompress"] = true,
-	["RES_ANNOUNCE_TEXT"] = "Come to life, vuhdo, you b00n!",
+	["BLIZZ_UI_HIDE_TARGET"] = 1,
 	["OMIT_FOCUS"] = 1,
 	["SPELL_TRACE"] = {
 		["STORED"] = {
@@ -5597,7 +5597,7 @@ VUHDO_CONFIG = {
 	["IS_SHARE"] = true,
 	["AUTO_PROFILES"] = {
 	},
-	["INC_CHANNELLED_SECS"] = 3,
+	["MODE"] = 1,
 	["THREAT"] = {
 		["AGGRO_TEXT_RIGHT"] = "<<",
 		["AGGRO_TEXT_LEFT"] = ">>",
@@ -5607,8 +5607,8 @@ VUHDO_CONFIG = {
 	},
 	["SHOW_TEXT_OVERHEAL"] = true,
 	["SHOW_OWN_INCOMING"] = true,
-	["SHOW_OVERHEAL"] = 1,
 	["BLIZZ_UI_HIDE_RAID"] = 2,
+	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
 }
 VUHDO_PANEL_SETUP = {
 	{
@@ -5637,8 +5637,6 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["sort"] = 0,
-			["ordering"] = 0,
 			["groups"] = {
 				1, -- [1]
 				2, -- [2]
@@ -5646,6 +5644,8 @@ VUHDO_PANEL_SETUP = {
 				4, -- [4]
 				5, -- [5]
 			},
+			["sort"] = 0,
+			["ordering"] = 0,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
@@ -10012,18 +10012,18 @@ VUHDO_SPELLS_KEYBOARD = {
 }
 VUHDO_SPELL_CONFIG = {
 	["IS_LOAD_HOTS"] = false,
-	["IS_KEEP_STANCE"] = false,
+	["IS_TOOLTIP_INFO"] = false,
 	["IS_AUTO_FIRE"] = false,
 	["IS_FIRE_CUSTOM_2"] = false,
 	["IS_FIRE_TRINKET_2"] = false,
-	["IS_FIRE_HOT"] = false,
-	["IS_AUTO_TARGET"] = false,
 	["IS_FIRE_OUT_FIGHT"] = false,
+	["IS_AUTO_TARGET"] = false,
+	["smartCastModi"] = "all",
 	["FIRE_CUSTOM_1_SPELL"] = "Divine Illumination",
 	["FIRE_CUSTOM_2_SPELL"] = "Divine Favor",
-	["IS_TOOLTIP_INFO"] = false,
+	["IS_FIRE_HOT"] = false,
 	["IS_FIRE_CUSTOM_1"] = false,
-	["smartCastModi"] = "all",
+	["IS_KEEP_STANCE"] = false,
 }
 VUHDO_BUFF_ORDER = {
 	["Battle Shout"] = 1,
@@ -10037,7 +10037,7 @@ VUHDO_SPEC_LAYOUTS = {
 VUHDO_GROUP_SIZE = 1
 VUHDO_RAID = {
 	["player"] = {
-		["zone"] = "Trading Post",
+		["zone"] = "Town Hall",
 		["baseRange"] = true,
 		["class"] = "WARRIOR",
 		["role"] = 61,
@@ -10093,9 +10093,9 @@ VUHDO_INDICATOR_CONFIG = {
 		},
 		["SWIFTMEND_INDICATOR"] = "",
 		["THREAT_MARK"] = "Threat: Marks",
+		["SIDE_RIGHT"] = "",
 		["MANA_BAR"] = "Manabars: Mana only",
 		["BAR_BORDER"] = "",
-		["SIDE_RIGHT"] = "",
 		["HEALTH_BAR"] = "Health (generic, class col)",
 		["SIDE_LEFT"] = "",
 		["INCOMING_BAR"] = "",

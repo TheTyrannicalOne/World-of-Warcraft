@@ -138,8 +138,6 @@ Tutorial:Register('Main', {
 		text = L.Tutorial[5],
 		point = 'TOPLEFT', relPoint = 'BOTTOMRIGHT',
 		shineLeft = -2, shineTop = 2,
-		shine = Addon.WorldMap.TrackButton,
-		anchor = Addon.WorldMap.TrackButton,
 		y = 5
 	},
 	{
@@ -159,6 +157,9 @@ Tutorial:Register('Main', {
 			self[i].shine = header
 		elseif i == 4 then
 			Tutorial:Split()
+		elseif i == 5 then
+			self[i].anchor = Addon.MapFilter.frames[WorldMapFrame]
+			self[i].shine = Addon.MapFilter.frames[WorldMapFrame]
 		end
 	end
 })

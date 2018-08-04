@@ -3960,68 +3960,6 @@ ParrotDB = {
 					["hideSkillNames"] = true,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["Incoming"] = {
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -4126,6 +4064,68 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["Incoming"] = {
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
 							["disabled"] = true,
 						},
 					},

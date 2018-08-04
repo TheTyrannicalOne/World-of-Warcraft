@@ -59,9 +59,9 @@ function Journal:Startup()
 	self.Map.BorderFrame.Bg:Hide()
 	self.Map.Shadow:SetFrameLevel(mapLevel+1)
 	self.Map.BorderFrame:SetFrameLevel(mapLevel+1)
-	self.Map.Destination = Addon.TargetPin(self.Map:GetCanvas())
 	self.Map:AddDataProvider(CreateFromMixins(MapExplorationDataProviderMixin))
 	self.Map:AddDataProvider(CreateFromMixins(GroupMembersDataProviderMixin))
+	self.Map.Destination = Addon.RivalPin()
 
 	for i = 1, 4 do
 		local loot = CreateFrame('Button', '$parentLoot' .. i, self.Card, ADDON..'Reward')
@@ -241,8 +241,10 @@ function Journal.Map:Display(rival)
 		scroll:SetZoomTarget(scale)
 		scroll:SetPanTarget(Clamp(x, minX, maxX), Clamp(y, minY, maxY))
 
-		self.Destination:Place(self, x, y)
-		self.Destination:Show()
+		self.Destination:Place(self, 1, x, y)
+		self.Destination:Display(rival)
+
+		Addon.MapCanvas.pins[self] = {self.Destination}
 	else
 		self.Destination:Hide()
 	end

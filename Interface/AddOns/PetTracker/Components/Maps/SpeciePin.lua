@@ -34,10 +34,10 @@ function Pin:OnClick(button)
 	 end
 end
 
-function Pin:GetTooltip()
+function Pin:OnTooltip(tip)
 	local name, icon, _,_, source = self.specie:GetInfo()
-	local title = ('|T%s:%d:%d:-2:0|t'):format(icon, 20, 20) .. name
 	local owned = self.specie:GetOwnedText()
 
-	return title, (owned and (owned .. '|n') or '') .. Addon.KeepShort(source)
+	tip:AddHeader(('|T%s:%d:%d:-2:0|t'):format(icon, 20, 20) .. name)
+	tip:AddLine((owned and (owned .. '|n') or '') .. Addon.KeepShort(source), 1,1,1)
 end
