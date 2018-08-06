@@ -35,11 +35,11 @@ MADB = {
 						["area"] = "left",
 					},
 					["orgPos"] = {
-						"LEFT", -- [1]
+						"TOP", -- [1]
 						"UIParent", -- [2]
-						"LEFT", -- [3]
-						87, -- [4]
-						-12, -- [5]
+						"TOP", -- [3]
+						0, -- [4]
+						-135, -- [5]
 					},
 					["name"] = "FriendsFrame",
 					["pos"] = {

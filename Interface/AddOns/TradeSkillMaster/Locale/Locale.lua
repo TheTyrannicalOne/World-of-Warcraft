@@ -272,7 +272,7 @@ do
 		TSM.L["Default Material Cost Method:"] = "Default Material Cost Method:"
 		TSM.L["Default Price"] = "Default Price"
 		TSM.L["Default Price Configuration"] = "Default Price Configuration"
-		TSM.L["Define whet priority Gathering gives certain sources."] = "Define whet priority Gathering gives certain sources."
+		TSM.L["Define what priority Gathering gives certain sources."] = "Define what priority Gathering gives certain sources."
 		TSM.L["Delete Profile Confirmation"] = "Delete Profile Confirmation"
 		TSM.L["Deselect All Groups"] = "Deselect All Groups"
 		TSM.L["Deselect All Items"] = "Deselect All Items"
@@ -397,6 +397,7 @@ do
 		TSM.L["Filter by Keyword"] = "Filter by Keyword"
 		TSM.L["Filter group item lists based on the following price source"] = "Filter group item lists based on the following price source"
 		TSM.L["Finding Selected Auction"] = "Finding Selected Auction"
+		TSM.L["Finished importing %s"] = "Finished importing %s"
 		TSM.L["Fishing Reel In"] = "Fishing Reel In"
 		TSM.L["Forget Character"] = "Forget Character"
 		TSM.L["Found auction sound"] = "Found auction sound"
@@ -609,6 +610,7 @@ do
 		TSM.L["New Group"] = "New Group"
 		TSM.L["New Operation"] = "New Operation"
 		TSM.L["No Attachments"] = "No Attachments"
+		TSM.L["No Crafts"] = "No Crafts"
 		TSM.L["No Data"] = "No Data"
 		TSM.L["No Materials to Gather"] = "No Materials to Gather"
 		TSM.L["No Operation Selected"] = "No Operation Selected"
@@ -869,7 +871,7 @@ do
 		TSM.L["Showing %d of %d Mails"] = "Showing %d of %d Mails"
 		TSM.L["Showing all %d Mails"] = "Showing all %d Mails"
 		TSM.L["Simple"] = "Simple"
-		TSM.L["Skip Import / Export confirmations?"] = "Skip Import / Export confirmations?"
+		TSM.L["Skip Import confirmation?"] = "Skip Import confirmation?"
 		TSM.L["Skipped: No assigned operation"] = "Skipped: No assigned operation"
 		TSM.L["Slash Commands:"] = "Slash Commands:"
 		TSM.L["Sniper"] = "Sniper"
@@ -1128,12 +1130,9 @@ TSM.L["Add Subject / Description"] = "Füge eine(n) Betreff / Beschreibung hinzu
 TSM.L["Add Subject / Description (Optional)"] = "Füge eine(n) Betreff / Beschreibung hinzu (Optional)"
 TSM.L["ADD TO MAIL"] = "ZUR POST HINZUFÜGEN"
 TSM.L["Additional error suppressed"] = "Zusätzlicher Fehler unterdrückt"
---[[Translation missing --]]
-TSM.L["Adjust the settings below to set how groups attached to this operation will be auctioned."] = "Adjust the settings below to set how groups attached to this operation will be auctioned."
---[[Translation missing --]]
-TSM.L["Adjust the settings below to set how groups attached to this operation will be cancelled."] = "Adjust the settings below to set how groups attached to this operation will be cancelled."
---[[Translation missing --]]
-TSM.L["Adjust the settings below to set how groups attached to this operation will be priced."] = "Adjust the settings below to set how groups attached to this operation will be priced."
+TSM.L["Adjust the settings below to set how groups attached to this operation will be auctioned."] = "Passe die folgenden Einstellungen an um zu steuern wie Gruppen, welche dieser Operation zugeordnet sind, gelistet werden. "
+TSM.L["Adjust the settings below to set how groups attached to this operation will be cancelled."] = "Passe die folgenden Einstellungen an um zu steuern wie Gruppen, welche dieser Operation zugeordnet sind, abgebrochen werden. "
+TSM.L["Adjust the settings below to set how groups attached to this operation will be priced."] = "Passe die folgenden Einstellungen an um zu steuern wie Gruppen, welche dieser Operation zugeordnet sind, eingepreist werden. "
 TSM.L["Advanced Item Search"] = "Erweiterte Itemsuche"
 TSM.L["Advanced Options"] = "Erweiterte Optionen"
 TSM.L["AH"] = "AH"
@@ -1239,16 +1238,13 @@ TSM.L["Canceling"] = "Abbrechen"
 TSM.L["Canceling %d / %d"] = "Abbrechen %d / %d"
 TSM.L["Canceling %d Auctions..."] = "Breche %d Auktionen ab..."
 TSM.L["Canceling all auctions."] = "Alle Auktionen abbrechen."
---[[Translation missing --]]
-TSM.L["Canceling auction which you've undercut."] = "Canceling auction which you've undercut."
+TSM.L["Canceling auction which you've undercut."] = "Breche Auktionen ab, bei denen du unterboten wurdest."
 TSM.L["Canceling disabled."] = "Abbrechen deaktiviert."
 TSM.L["Canceling Settings"] = "Abbruchseinstellungen"
 TSM.L["Canceling to repost at higher price."] = "Abbrechen, um zu einem höheren Preis wieder einzustellen."
---[[Translation missing --]]
-TSM.L["Canceling to repost at reset price."] = "Canceling to repost at reset price."
+TSM.L["Canceling to repost at reset price."] = "Abbrechen, um zum Reset-Preis wieder einzustellen."
 TSM.L["Canceling to repost higher."] = "Abbrechen, um höher wieder einzustellen."
---[[Translation missing --]]
-TSM.L["Canceling undercut auctions and to repost higher."] = "Canceling undercut auctions and to repost higher."
+TSM.L["Canceling undercut auctions and to repost higher."] = "Breche unterbotene Auktionen ab um sie zu einem höheren Preis zu listen. "
 TSM.L["Canceling undercut auctions."] = "Unterbotene Auktionen abbrechen."
 TSM.L["Cancelled"] = "Abgebrochen"
 TSM.L["Cancelled auction of %sx%d"] = "Auktion von %sx%d abgebrochen"
@@ -1352,8 +1348,7 @@ TSM.L["Default Price Configuration"] = "Default Price Configuration"
 TSM.L["Default vendoring page"] = "Default vendoring page"
 --[[Translation missing --]]
 TSM.L["Define whet priority Gathering gives certain sources."] = "Define whet priority Gathering gives certain sources."
---[[Translation missing --]]
-TSM.L["Delete Profile Confirmation"] = "Delete Profile Confirmation"
+TSM.L["Delete Profile Confirmation"] = "Löschen des Profils bestätigen"
 --[[Translation missing --]]
 TSM.L["DEPOSIT REAGENTS"] = "DEPOSIT REAGENTS"
 TSM.L["Deselect All Groups"] = "Alle Gruppen abwählen"
@@ -1472,9 +1467,8 @@ TSM.L["DOWN"] = "NACH UNTEN"
 TSM.L["Drag in Additional Items (%d/%d Items)"] = "Drag in Additional Items (%d/%d Items)"
 --[[Translation missing --]]
 TSM.L["Drag Item(s) Into Box"] = "Drag Item(s) Into Box"
-TSM.L["Duplicate"] = "Doppelte"
---[[Translation missing --]]
-TSM.L["Duplicate Profile Confirmation"] = "Duplicate Profile Confirmation"
+TSM.L["Duplicate"] = "Kopieren"
+TSM.L["Duplicate Profile Confirmation"] = "Profil-Kopie Bestätigen"
 TSM.L["Dust"] = "Staub"
 --[[Translation missing --]]
 TSM.L["Elevate your gold-making!"] = "Elevate your gold-making!"
@@ -1482,8 +1476,7 @@ TSM.L["Embed TSM tooltips"] = "Binde TSM Tooltipps ein"
 TSM.L["EMPTY BAGS"] = "LEERE TASCHEN"
 TSM.L["Empty parentheses are not allowed"] = "Leere Klammern sind nicht erlaubt"
 TSM.L["Empty price string."] = "Leerer Preistext."
---[[Translation missing --]]
-TSM.L["Enable automatic stack combination"] = "Enable automatic stack combination"
+TSM.L["Enable automatic stack combination"] = "Aktiviere automatische Kombination von Stapeln"
 --[[Translation missing --]]
 TSM.L["Enable buying?"] = "Enable buying?"
 --[[Translation missing --]]
@@ -1606,8 +1599,7 @@ TSM.L["Ignore Auctions Below Min"] = "Ignoriere Auktionen unter Minimum"
 --[[Translation missing --]]
 TSM.L["Ignore auctions by duration?"] = "Ignore auctions by duration?"
 TSM.L["Ignore Characters"] = "Charaktere ignorieren"
---[[Translation missing --]]
-TSM.L["Ignore duplicate operations?"] = "Ignore duplicate operations?"
+TSM.L["Ignore duplicate operations?"] = "Doppelte Operationen ignorieren?"
 TSM.L["Ignore Guilds"] = "Gilden ignorieren"
 TSM.L["Ignore operation on characters:"] = "Ignoriere Operationen bei Charakteren:"
 --[[Translation missing --]]
@@ -1624,10 +1616,8 @@ TSM.L["Import Groups & Operations"] = "Importiere Gruppen & Operationen"
 TSM.L["Imported Items"] = "Importierte Items"
 TSM.L["Imported Operations"] = "Importierte Operationen"
 TSM.L["Inbox Settings"] = "Posteingangs Einstellungen"
---[[Translation missing --]]
-TSM.L["Include Attached Operations"] = "Include Attached Operations"
---[[Translation missing --]]
-TSM.L["Include operations?"] = "Include operations?"
+TSM.L["Include Attached Operations"] = "Einschließlich zugewiesener Operationen"
+TSM.L["Include operations?"] = "Operationen einschließen?"
 --[[Translation missing --]]
 TSM.L["Include soulbound items"] = "Include soulbound items"
 TSM.L["Information"] = "Informationen"
@@ -1702,8 +1692,7 @@ TSM.L["Loading Mails..."] = "Post laden..."
 TSM.L["Loading..."] = "Laden..."
 TSM.L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by following the instructions shown."] = "Es scheint so, als wäre TradeSkillMaster auf einen Fehler gestoßen. Du kannst dem Autor dabei helfen, diesen Fehler zu beheben, indem du die folgenden Anweisungen befolgst."
 TSM.L["Loop detected in the following custom price:"] = "Schleife im folgenden benutzerdefinierten Preis entdeckt:"
---[[Translation missing --]]
-TSM.L["Lowest auction by whitelisted player."] = "Lowest auction by whitelisted player."
+TSM.L["Lowest auction by whitelisted player."] = "Günstigste Auktion von Spielern auf der weißen Liste."
 TSM.L["Macro created and scroll wheel bound!"] = "Makro erstellt und mit Mausrad verbunden!"
 TSM.L["Macro Setup"] = "Makro-Setup"
 TSM.L["Mail"] = "Briefk"
@@ -1793,18 +1782,14 @@ TSM.L["Money Frame Open"] = "Geldfenster öffnen"
 TSM.L["Money Transfer"] = "Geldtransfer"
 TSM.L["Most Profitable Item:"] = "Profitabelstes Item"
 TSM.L["MOVE"] = "BEWEGEN"
---[[Translation missing --]]
-TSM.L["Move already grouped items?"] = "Move already grouped items?"
+TSM.L["Move already grouped items?"] = "Bereits gruppierte Items verschieben?"
 --[[Translation missing --]]
 TSM.L["Move Quantity Settings"] = "Move Quantity Settings"
---[[Translation missing --]]
-TSM.L["MOVE TO BAGS"] = "MOVE TO BAGS"
---[[Translation missing --]]
-TSM.L["MOVE TO BANK"] = "MOVE TO BANK"
+TSM.L["MOVE TO BAGS"] = "VERSCHIEBE NACH TASCHEN"
+TSM.L["MOVE TO BANK"] = "VERSCHIEBE ZUR BANK"
 TSM.L["MOVING"] = "BEWEGEN"
 TSM.L["Moving"] = "Bewegen"
---[[Translation missing --]]
-TSM.L["Multiple Items"] = "Multiple Items"
+TSM.L["Multiple Items"] = "Mehrere Gegenstände"
 TSM.L["My Auctions"] = "Meine Auktionen"
 TSM.L["My Auctions 'CANCEL' Button"] = "Meine Auktionen 'Abbrechen' Button"
 --[[Translation missing --]]
@@ -1819,47 +1804,33 @@ TSM.L["No group selected"] = "Keine Gruppe ausgewählt"
 --[[Translation missing --]]
 TSM.L["No item specified. Usage: /tsm restock_help [ITEM_LINK]"] = "No item specified. Usage: /tsm restock_help [ITEM_LINK]"
 TSM.L["NO ITEMS"] = "KEINE ITEMS"
---[[Translation missing --]]
-TSM.L["No Materials to Gather"] = "No Materials to Gather"
---[[Translation missing --]]
-TSM.L["No Operation Selected"] = "No Operation Selected"
+TSM.L["No Materials to Gather"] = "Keine Materialien zum Sammeln"
+TSM.L["No Operation Selected"] = "Keine Operation ausgewählt"
 --[[Translation missing --]]
 TSM.L["No posting."] = "No posting."
---[[Translation missing --]]
-TSM.L["No Profession Opened"] = "No Profession Opened"
---[[Translation missing --]]
-TSM.L["No Profession Selected"] = "No Profession Selected"
+TSM.L["No Profession Opened"] = "Keinen Beruf geöffnet"
+TSM.L["No Profession Selected"] = "Keinen Beruf ausgewählt"
 TSM.L["No profile specified. Possible profiles: '%s'"] = "Kein Profil angegeben. Mögliche Profile: '%s'"
---[[Translation missing --]]
-TSM.L["No recent AuctionDB scan data found."] = "No recent AuctionDB scan data found."
+TSM.L["No recent AuctionDB scan data found."] = "Keine aktuellen AuctionDB Scan-Daten gefunden. "
 TSM.L["No Sound"] = "Kein Sound"
 TSM.L["None"] = "Nichts"
 TSM.L["None (Always Show)"] = "Keine (immer zeigen)"
 TSM.L["None Selected"] = "Nichts ausgewählt"
---[[Translation missing --]]
-TSM.L["NONGROUP TO BANK"] = "NONGROUP TO BANK"
+TSM.L["NONGROUP TO BANK"] = "NICHT-GRUPPIERT ZUR BANK"
 TSM.L["Normal"] = "Normal"
---[[Translation missing --]]
-TSM.L["Not canceling auction at reset price."] = "Not canceling auction at reset price."
---[[Translation missing --]]
-TSM.L["Not canceling auction below min price."] = "Not canceling auction below min price."
---[[Translation missing --]]
-TSM.L["Not canceling."] = "Not canceling."
---[[Translation missing --]]
-TSM.L["Not enough items in bags."] = "Not enough items in bags."
---[[Translation missing --]]
-TSM.L["NOT OPEN"] = "NOT OPEN"
+TSM.L["Not canceling auction at reset price."] = "Wird nicht abgebrochen, Auktion bei Reset-Preis."
+TSM.L["Not canceling auction below min price."] = "Wird nicht abgebrochen, Auktion unter Mindestpreis."
+TSM.L["Not canceling."] = "Wird nicht abgebrochen. "
+TSM.L["Not enough items in bags."] = "Nicht genügend Gegenstände in den Taschen."
+TSM.L["NOT OPEN"] = "NICHT ÖFFNEN"
 TSM.L["Not Scanned"] = "Nicht gescannt"
 TSM.L["NPC"] = "NPC"
---[[Translation missing --]]
-TSM.L["Number Owned"] = "Number Owned"
+TSM.L["Number Owned"] = "Anzahl in Besitz"
 TSM.L["of"] = "von"
 TSM.L["Offline"] = "Offline"
---[[Translation missing --]]
-TSM.L["Old TSM addons detected. TSM has disabled them and requires a reload."] = "Old TSM addons detected. TSM has disabled them and requires a reload."
+TSM.L["Old TSM addons detected. TSM has disabled them and requires a reload."] = "Altes TSM Addon erkannt. TSM hat dies deaktiviert und erfordert einen Reload. "
 TSM.L["On Cooldown"] = "Auf Abklingzeit"
---[[Translation missing --]]
-TSM.L["Only show craftable"] = "Only show craftable"
+TSM.L["Only show craftable"] = "Nur herstellbare Gegenstände anzeigen"
 TSM.L["Only show items with disenchant value above custom price"] = "Zeige nur Items mit einem Entzauberungswert über dem benutzerdefinierten Preis"
 TSM.L["OPEN"] = "ÖFFNEN"
 TSM.L["Open all bags when auctioning"] = "Öffne alle Taschen bei Auktionshaus"
@@ -1902,8 +1873,7 @@ TSM.L["Post Scan"] = "Einstellungsscan"
 TSM.L["POST SELECTED"] = "AUSGEWÄHLTES EINSTELLEN"
 TSM.L["POSTAGE"] = "PORTO"
 TSM.L["Postage"] = "Porto"
---[[Translation missing --]]
-TSM.L["Posted at whitelisted player's price."] = "Posted at whitelisted player's price."
+TSM.L["Posted at whitelisted player's price."] = "Zum Preis des Spielers auf der weißen Liste gelistet. "
 --[[Translation missing --]]
 TSM.L["Posted Auctions %s:"] = "Posted Auctions %s:"
 --[[Translation missing --]]
@@ -1912,8 +1882,7 @@ TSM.L["Posting %d / %d"] = "Einstellen %d / %d"
 --[[Translation missing --]]
 TSM.L["Posting %d stack(s) of %d for %d hours."] = "Posting %d stack(s) of %d for %d hours."
 TSM.L["Posting at normal price."] = "Einstellen zum normalen Preis"
---[[Translation missing --]]
-TSM.L["Posting at whitelisted player's price."] = "Posting at whitelisted player's price."
+TSM.L["Posting at whitelisted player's price."] = "Zum Preis des Spielers auf der weißen Liste listen. "
 --[[Translation missing --]]
 TSM.L["Posting at your current price."] = "Posting at your current price."
 --[[Translation missing --]]
@@ -2242,8 +2211,7 @@ TSM.L["The name can ONLY contain letters. No spaces, numbers, or special charact
 TSM.L["The number which would be queued (%d) is less than the min restock quantity (%d)."] = "The number which would be queued (%d) is less than the min restock quantity (%d)."
 --[[Translation missing --]]
 TSM.L["The operation applied to this item is invalid! Min restock of %d is higher than max restock of %d."] = "The operation applied to this item is invalid! Min restock of %d is higher than max restock of %d."
---[[Translation missing --]]
-TSM.L["The player \"%s\" is already on your whitelist."] = "The player \"%s\" is already on your whitelist."
+TSM.L["The player \"%s\" is already on your whitelist."] = "Der Spieler \"%s\" ist bereits auf deiner weißen Liste. "
 --[[Translation missing --]]
 TSM.L["The profit of this item (%s) is below the min profit (%s)."] = "The profit of this item (%s) is below the min profit (%s)."
 TSM.L["The seller name of the lowest auction for %s was not given by the server. Skipping this item."] = "Der Name des Verkäufers mit der günstigsten Auktion wurde nicht vom Server übermittelt. Überspringe diesen Gegenstand. "
@@ -2264,10 +2232,8 @@ TSM.L["This item is not in a TSM group."] = "Dieser Gegenstand ist in keiner TSM
 --[[Translation missing --]]
 TSM.L["This item will be added to the queue when you restock its group. If this isn't happening, make a post on the TSM forums with a screenshot of the item's tooltip, operation settings, and your general TSM_Crafting options."] = "This item will be added to the queue when you restock its group. If this isn't happening, make a post on the TSM forums with a screenshot of the item's tooltip, operation settings, and your general TSM_Crafting options."
 TSM.L["This looks like an exported operation and not a custom price."] = "Dies sieht aus wie eine exportierte Operation und nicht wie ein benutzerdefinierter Preis."
---[[Translation missing --]]
-TSM.L["This will copy the settings from '%s' into your currently-active one."] = "This will copy the settings from '%s' into your currently-active one."
---[[Translation missing --]]
-TSM.L["This will permanently delete the '%s' profile."] = "This will permanently delete the '%s' profile."
+TSM.L["This will copy the settings from '%s' into your currently-active one."] = "Kopiere die Einstellungen von Profil '&s' in dein derzeit aktiviertes Profil?"
+TSM.L["This will permanently delete the '%s' profile."] = "Dies wird das Profil '%s‘ dauerhaft löschen. "
 --[[Translation missing --]]
 TSM.L["This will reset all groups and operations (if not stored globally) to be wiped from this profile."] = "This will reset all groups and operations (if not stored globally) to be wiped from this profile."
 TSM.L["Time"] = "Zeit"
@@ -2317,10 +2283,8 @@ TSM.L["Type"] = "Schreiben"
 TSM.L["Type Something"] = "Schreibe etwas"
 TSM.L["Unbalanced parentheses."] = "Ungleichmäßige Klammerung."
 TSM.L["Undercut amount:"] = "Unterbietenwert:"
---[[Translation missing --]]
-TSM.L["Undercut by whitelisted player."] = "Undercut by whitelisted player."
---[[Translation missing --]]
-TSM.L["Undercutting blacklisted player."] = "Undercutting blacklisted player."
+TSM.L["Undercut by whitelisted player."] = "Unterboten von einem Spieler auf der weißen Liste. "
+TSM.L["Undercutting blacklisted player."] = "Unterbiete blockierten Spieler. "
 TSM.L["Undercutting competition."] = "Unterbiete Wettbewerber."
 TSM.L["Ungrouped Items"] = "Nicht gruppierte Items"
 TSM.L["Unknown Item"] = "Unbekanntes Item"
@@ -2331,8 +2295,7 @@ TSM.L["Usage: /tsm price <ItemLink> <Price String>"] = "Benutzung: /tsm price <I
 --[[Translation missing --]]
 TSM.L["Use smart average for purchase price"] = "Use smart average for purchase price"
 TSM.L["Use the field below to search the auction house by filter"] = "Verwende das untere Eingabefeld, um das AH nach Suchwörtern zu filtern"
---[[Translation missing --]]
-TSM.L["Use the list to the left to select groups, & operations you'd like to create export strings for."] = "Use the list to the left to select groups, & operations you'd like to create export strings for."
+TSM.L["Use the list to the left to select groups, & operations you'd like to create export strings for."] = "Wähle aus der Liste links, die Gruppen und Operationen, welche du exportieren willst."
 --[[Translation missing --]]
 TSM.L["VALUE PRICE SOURCE"] = "VALUE PRICE SOURCE"
 --[[Translation missing --]]
@@ -2389,12 +2352,12 @@ TSM.L["WARNING: You minimum price for %s is below its vendorsell price (with AH 
 TSM.L["When above maximum:"] = "Wenn über maximun:"
 TSM.L["When below minimum:"] = "Wenn unter minimum:"
 TSM.L["Whitelist"] = "Weiße Liste"
-TSM.L["Whitelisted Players"] = "Spieler auf der Weißen Liste"
+TSM.L["Whitelisted Players"] = "Spieler auf der weißen Liste"
 TSM.L["You already have at least your max restock quantity of this item. You have %d and the max restock quantity is %d"] = "Du hast bereits deine max Auffüllmenge für diesen Gegenstand. Du hast %d und die max Auffüllmenge ist %d"
 TSM.L["You can use the options below to clear old data. It is recommended to occasionally clear your old data to keep the accounting module running smoothly. Select the minimum number of days old to be removed, then click '%s'."] = "Du kannst die Optionen unten benutzen, um veraltete Daten zu löschen. Es wird empfohlen, veraltete Daten gelegentlich zu löschen, damit das Accounting Modul problemlos funktioniert. Wähle die Anzahl vergangener Tage, um die veralteten Daten zu löschen, dann klicke '%s'."
 TSM.L["You cannot use %s as part of this custom price."] = "Du kannst %s nicht als Teil von diesem benutzerdefinierten Preis verwenden."
 TSM.L["You cannot use %s within convert() as part of this custom price."] = "Du kannst % innerhalb von convert() nicht als Teil dieses benutzerdefinierten Preises benutzen."
-TSM.L["You do not need to add \"%s\", alts are whitelisted automatically."] = "Du brauchst \"%s\" nicht hinzufügen, Twinks kommen automatisch auf die Whitelist. "
+TSM.L["You do not need to add \"%s\", alts are whitelisted automatically."] = "Du brauchst \"%s\" nicht hinzufügen, Twinks kommen automatisch auf die weiße Liste. "
 TSM.L["You don't know how to craft this item."] = "Du weißt nicht wie man dieses Item herstellt."
 TSM.L["You must reload your UI for these settings to take effect. Reload now?"] = "Du musst dein UI neu laden, um diese Einstellungen wirksam werden zu lassen. Jetzt neu laden?"
 TSM.L["You won an auction for %sx%d for %s"] = "Du hast die Auktion %sx%d mit %s gewonnen"
@@ -10567,8 +10530,7 @@ TSM.L["AH Rows Shown (requires reload)"] = "AH Rows Shown (requires reload)"
 TSM.L["Alarm Clock"] = "알람 시계"
 --[[Translation missing --]]
 TSM.L["All Auctions"] = "All Auctions"
---[[Translation missing --]]
-TSM.L["All Characters and Guilds"] = "All Characters and Guilds"
+TSM.L["All Characters and Guilds"] = "모든 캐릭터와 길드"
 --[[Translation missing --]]
 TSM.L["All Professions"] = "All Professions"
 --[[Translation missing --]]
@@ -10588,8 +10550,7 @@ TSM.L["Amount of Bag Space to Keep Free"] = "Amount of Bag Space to Keep Free"
 TSM.L["Applied %s to %s."] = "%s을(를) %s에 적용하였습니다."
 --[[Translation missing --]]
 TSM.L["APPLY FILTERS"] = "APPLY FILTERS"
---[[Translation missing --]]
-TSM.L["Apply operation to group:"] = "Apply operation to group:"
+TSM.L["Apply operation to group:"] = "작업을 그룹에 적용:"
 --[[Translation missing --]]
 TSM.L["Are you sure you want to clear old accounting data?"] = "Are you sure you want to clear old accounting data?"
 TSM.L["Are you sure you want to delete this group?"] = "정말로 선택된 그룹을 지우시겠습니까?"
@@ -11013,8 +10974,7 @@ TSM.L["Display market value"] = "Display market value"
 TSM.L["Display mill value"] = "Display mill value"
 --[[Translation missing --]]
 TSM.L["Display min buyout"] = "Display min buyout"
---[[Translation missing --]]
-TSM.L["Display Operation Names"] = "Display Operation Names"
+TSM.L["Display Operation Names"] = "작업 이름 표시"
 --[[Translation missing --]]
 TSM.L["Display prospect value"] = "Display prospect value"
 --[[Translation missing --]]
@@ -11093,8 +11053,7 @@ TSM.L["Enable selling?"] = "Enable selling?"
 TSM.L["Enable sending chat messages"] = "Enable sending chat messages"
 --[[Translation missing --]]
 TSM.L["Enable smart crafting for quests"] = "Enable smart crafting for quests"
---[[Translation missing --]]
-TSM.L["Enable TSM Tooltips"] = "Enable TSM Tooltips"
+TSM.L["Enable TSM Tooltips"] = "TSM 툴팁 사용"
 --[[Translation missing --]]
 TSM.L["Enable tweet enhancement"] = "Enable tweet enhancement"
 --[[Translation missing --]]
@@ -11629,13 +11588,11 @@ TSM.L["Open Mail"] = "Open Mail"
 TSM.L["Open Mail Complete Sound"] = "Open Mail Complete Sound"
 --[[Translation missing --]]
 TSM.L["Open Task List"] = "Open Task List"
---[[Translation missing --]]
-TSM.L["Operation"] = "Operation"
+TSM.L["Operation"] = "작업"
 TSM.L["Operations"] = "작업"
 --[[Translation missing --]]
 TSM.L["Other Character"] = "Other Character"
---[[Translation missing --]]
-TSM.L["Other Settings"] = "Other Settings"
+TSM.L["Other Settings"] = "기타 설정"
 --[[Translation missing --]]
 TSM.L["Other Shopping Searches"] = "Other Shopping Searches"
 --[[Translation missing --]]
@@ -11644,14 +11601,10 @@ TSM.L["Override default craft value method?"] = "Override default craft value me
 TSM.L["Override parent operations"] = "Override parent operations"
 --[[Translation missing --]]
 TSM.L["Parent Items"] = "Parent Items"
---[[Translation missing --]]
-TSM.L["Past 7 Days"] = "Past 7 Days"
---[[Translation missing --]]
-TSM.L["Past Day"] = "Past Day"
---[[Translation missing --]]
-TSM.L["Past Month"] = "Past Month"
---[[Translation missing --]]
-TSM.L["Past Year"] = "Past Year"
+TSM.L["Past 7 Days"] = "지난 주"
+TSM.L["Past Day"] = "지난 날"
+TSM.L["Past Month"] = "지난 달"
+TSM.L["Past Year"] = "지난 해"
 --[[Translation missing --]]
 TSM.L["Paste string here"] = "Paste string here"
 --[[Translation missing --]]
@@ -11706,8 +11659,7 @@ TSM.L["Posting disabled."] = "Posting disabled."
 TSM.L["Posting Settings"] = "Posting Settings"
 --[[Translation missing --]]
 TSM.L["Potential"] = "Potential"
---[[Translation missing --]]
-TSM.L["Price Settings"] = "Price Settings"
+TSM.L["Price Settings"] = "가격 설정"
 --[[Translation missing --]]
 TSM.L["PRICE SOURCE"] = "PRICE SOURCE"
 --[[Translation missing --]]
@@ -11889,12 +11841,9 @@ TSM.L["Sale"] = "Sale"
 TSM.L["SALE DATA"] = "SALE DATA"
 --[[Translation missing --]]
 TSM.L["Sale Rate"] = "Sale Rate"
---[[Translation missing --]]
-TSM.L["Sales"] = "Sales"
---[[Translation missing --]]
-TSM.L["SALES"] = "SALES"
---[[Translation missing --]]
-TSM.L["Sales Summary"] = "Sales Summary"
+TSM.L["Sales"] = "판매"
+TSM.L["SALES"] = "판매"
+TSM.L["Sales Summary"] = "판매 요약"
 --[[Translation missing --]]
 TSM.L["SCAN ALL"] = "SCAN ALL"
 --[[Translation missing --]]
@@ -12207,10 +12156,8 @@ TSM.L["Time Frame"] = "Time Frame"
 TSM.L["TIME FRAME"] = "TIME FRAME"
 --[[Translation missing --]]
 TSM.L["TINKER"] = "TINKER"
---[[Translation missing --]]
-TSM.L["Tooltip Price Format"] = "Tooltip Price Format"
---[[Translation missing --]]
-TSM.L["Tooltip Settings"] = "Tooltip Settings"
+TSM.L["Tooltip Price Format"] = "툴팁 가격 형식"
+TSM.L["Tooltip Settings"] = "툴팁 설정"
 --[[Translation missing --]]
 TSM.L["Top Buyers:"] = "Top Buyers:"
 --[[Translation missing --]]
@@ -12249,8 +12196,7 @@ TSM.L["TSM Destroying"] = "TSM Destroying"
 TSM.L["TSM failed to scan some auctions. Please rerun the scan."] = "TSM failed to scan some auctions. Please rerun the scan."
 --[[Translation missing --]]
 TSM.L["TSM Groups"] = "TSM Groups"
---[[Translation missing --]]
-TSM.L["TSM is missing important information from the TSM Desktop Application. Please ensure the TSM Desktop Application is running and is properly configured."] = "TSM is missing important information from the TSM Desktop Application. Please ensure the TSM Desktop Application is running and is properly configured."
+TSM.L["TSM is missing important information from the TSM Desktop Application. Please ensure the TSM Desktop Application is running and is properly configured."] = "TSM 데스크톱 애플리케이션에서 중요한 정보가 빠졌습니다. TSM 데스크톱 애플리케이션이 실행 중이며 제대로 구성되어 있는지 확인해 주세요."
 --[[Translation missing --]]
 TSM.L["TSM Mailing"] = "TSM Mailing"
 --[[Translation missing --]]
@@ -12260,7 +12206,6 @@ TSM.L["TSM Vendoring"] = "TSM Vendoring"
 TSM.L["TSM Version Info:"] = "TSM 버전 정보:"
 --[[Translation missing --]]
 TSM.L["TSM_Accounting detected that you just traded %s %s in return for %s. Would you like Accounting to store a record of this trade?"] = "TSM_Accounting detected that you just traded %s %s in return for %s. Would you like Accounting to store a record of this trade?"
---[[Translation missing --]]
 TSM.L["TSM4"] = "TSM4"
 TSM.L["TUJ 3-Day Price"] = "TUJ 3일간 가격"
 TSM.L["Twitter Integration"] = "트위터 통합"
@@ -14369,8 +14314,7 @@ TSM.L["You've been undercut."] = "You've been undercut."
 TSM.L["YY/MM/DD HH:MM"] = "YY/MM/DD HH:MM"
 	elseif locale == "ruRU" then
 TSM.L = TSM.L or {}
---[[Translation missing --]]
-TSM.L["%d |4Group:Groups; Selected (%d |4Item:Items;)"] = "%d |4Group:Groups; Selected (%d |4Item:Items;)"
+TSM.L["%d |4Group:Groups; Selected (%d |4Item:Items;)"] = "%d |4Группа:Группы; Выбрано (%d |4Предмет:Предмета;)"
 TSM.L["%d auctions"] = "лоты: %d"
 TSM.L["%d Groups"] = "%d Группы"
 TSM.L["%d Items"] = "%d Предметы"
@@ -14384,10 +14328,10 @@ TSM.L["%s (%s profit)"] = "%s (%s прибыль)"
 TSM.L["%s ago"] = "%s назад"
 TSM.L["%s Crafts"] = "%s Созданных"
 TSM.L["%s in guild vault"] = "%s в банке гильдии"
-TSM.L["%s is a valid custom price but %s is an invalid item."] = "%s действительная пользовательская цена, но %s недействительный предмет. "
-TSM.L["%s is a valid custom price but did not give a value for %s."] = "%s действительная пользовательская цена, но не дает значение для %s."
-TSM.L["'%s' is an invalid operation! Min restock of %d is higher than max restock of %d."] = "%s недопустимая команда! Минимальное пополнение %d больше, чем максимальное %d."
-TSM.L["%s is not a valid custom price and gave the following error: %s"] = "%s недействительная пользовательская цена и дает следующую ошибку: %s"
+TSM.L["%s is a valid custom price but %s is an invalid item."] = "%s корректная кастомная цена, но %s некорректный предмет. "
+TSM.L["%s is a valid custom price but did not give a value for %s."] = "%s корректная кастомная цена, но не дает стоимость для %s."
+TSM.L["'%s' is an invalid operation! Min restock of %d is higher than max restock of %d."] = "%s недопустимая команда! Мин. пополнение %d больше, чем макс. %d."
+TSM.L["%s is not a valid custom price and gave the following error: %s"] = "%s некорректная кастомная цена, ошибка: %s"
 TSM.L["%s operation(s)"] = "%s операции(s)"
 TSM.L["%s removed."] = "%s удалено."
 TSM.L["%s sent you %s"] = "%s отправил вам %s"
@@ -14419,15 +14363,15 @@ TSM.L["_ Hr _ Min ago"] = "_ ч. _ мин. назад"
 TSM.L["|cffff0000IMPORTANT:|r When TSM_Accounting last saved data for this realm, it was too big for WoW to handle, so old data was automatically trimmed in order to avoid corruption of the saved variables. The last %s of purchase data has been preserved."] = "|cffff0000IMPORTANT:|r Когда TSM Accounting сохранял данные для этого сервера, их оказалось слишком много для обработки, поэтому старые данные были стёрты, что бы не повредить переменные. Сохранены последние данные о покупке %s."
 TSM.L["|cffff0000IMPORTANT:|r When TSM_Accounting last saved data for this realm, it was too big for WoW to handle, so old data was automatically trimmed in order to avoid corruption of the saved variables. The last %s of sale data has been preserved."] = "|cffff0000IMPORTANT:|r Когда TSM Accounting сохранял данные для этого сервера, их оказалось слишком много для обработки, поэтому старые данные были стёрты, что бы не повредить переменные. Сохранены последние данные о продаже %s."
 TSM.L["|cffff0000WARNING:|r TSM_AuctionDB doesn't currently have any pricing data for your realm. Either download the TSM Desktop Application from |cff99ffffhttp://tradeskillmaster.com|r to automatically update TSM_AuctionDB's data, or run a manual scan in-game."] = "|cffff0000WARNING:|r У TSM AuctionDB сейчас нет данных о ценах на вашем сервере. Скачайте программу TSM по ссылке |cff99ffffhttp://tradeskillmaster.com|r, что бы обновлять данные о ценах автоматически или запустите ручное сканирование аукциона в игре."
-TSM.L["|cffffd839Left-Click|r to ignore an item for this session. Hold |cffffd839Shift|r to ignore permanently. You can remove items from permanent ignore in the Vendoring settings."] = "|cffffd839ЛКМ|r что бы игнорировать предмет в этой сессии. |cffffd839Shift+ЛКМ|r что бы игнорировать всегда. Удалить предмет из списка игнорируемых можно в настройках на вкладке «Торговля» (Vendoring)."
+TSM.L["|cffffd839Left-Click|r to ignore an item for this session. Hold |cffffd839Shift|r to ignore permanently. You can remove items from permanent ignore in the Vendoring settings."] = "|cffffd839ЛКМ|r — игнорировать предмет в этой сессии. |cffffd839Shift+ЛКМ|r — игнорировать всегда. Удалить предмет из списка игнора можно в настройках на вкладке Vendoring."
 TSM.L["|cffffd839Left-Click|r to ignore an item this session."] = "|cffffd839ЛКМ|r что бы игнорировать предмет в этой сессии."
-TSM.L["|cffffd839Shift-Left-Click|r to ignore it permanently."] = "|cffffd839Shift+ЛКМ|r что бы игнорировать всегда."
+TSM.L["|cffffd839Shift-Left-Click|r to ignore it permanently."] = "|cffffd839Shift+ЛКМ|r чтобы игнорировать всегда."
 TSM.L["1 Group"] = "1 Группа"
 TSM.L["1 Item"] = "1 Предмет"
 TSM.L["12 hr"] = "12 ч."
 TSM.L["24 hr"] = "24 ч."
 TSM.L["48 hr"] = "48 ч."
-TSM.L["A custom price of %s for %s evaluates to %s."] = "Пользовательская цена %s для %s оценивается в %s."
+TSM.L["A custom price of %s for %s evaluates to %s."] = "Кастомная цена %s для %s оценивается в %s."
 TSM.L["A maximum of 1 convert() function is allowed."] = "Допускается максимум 1 функция convert()."
 TSM.L["A scan is already in progress. Please stop that scan before starting another one."] = "Сканирование уже идёт. Остановите его, прежде чем начать новое."
 TSM.L["Above max expires."] = "Превышены попытки выставить."
@@ -14441,8 +14385,7 @@ TSM.L["Account sync removed. Please delete the account sync from the other accou
 TSM.L["Account Syncing"] = "Синхронизация аккаунта"
 TSM.L["Accounting"] = "Статистика"
 TSM.L["Accounting Tooltips"] = "Подсказки с вашей статистикой"
---[[Translation missing --]]
-TSM.L["Activity Type"] = "Activity Type"
+TSM.L["Activity Type"] = "Вид деятельности"
 TSM.L["ADD %d ITEMS"] = "Добавить предметы: %d"
 TSM.L["Add / Remove Items"] = "Список предметов"
 TSM.L["ADD NEW CUSTOM PRICE SOURCE"] = "Добавить новый источник цен"
@@ -14459,36 +14402,30 @@ TSM.L["Advanced Item Search"] = "Расширенный поиск"
 TSM.L["Advanced Options"] = "Расширенные настройки"
 TSM.L["AH"] = "Аукцион"
 TSM.L["AH (Crafting)"] = "Аук (Создание)"
-TSM.L["AH (Disenchanting)"] = "Аук (Распыление)"
+TSM.L["AH (Disenchanting)"] = "Аукцион (Распыление)"
 TSM.L["AH BUSY"] = "Аук занят"
-TSM.L["AH Frame Options"] = "Настройки окна аукционного дома"
---[[Translation missing --]]
-TSM.L["AH Rows Shown (requires reload)"] = "AH Rows Shown (requires reload)"
+TSM.L["AH Frame Options"] = "Настройки окна аукциона"
+TSM.L["AH Rows Shown (requires reload)"] = "Показано строк аука (требуется перезагрузка)"
 TSM.L["Alarm Clock"] = "Бyдильник"
 TSM.L["All Auctions"] = "Все лоты на аукционе"
 TSM.L["All Characters and Guilds"] = "Персонажи и гильдии"
 TSM.L["All Professions"] = "Все профессии"
 TSM.L["Allow partial stack?"] = "Выставлять неполные стаки?"
---[[Translation missing --]]
-TSM.L["Alt Guild Bank"] = "Alt Guild Bank"
+TSM.L["Alt Guild Bank"] = "Банк гильдии Альтов"
 TSM.L["Alts"] = "Альты"
---[[Translation missing --]]
-TSM.L["Alts AH"] = "Alts AH"
-TSM.L["Amount"] = "Количество"
-TSM.L["AMOUNT"] = "КОЛИЧЕСТВО"
---[[Translation missing --]]
-TSM.L["Amount of Bag Space to Keep Free"] = "Amount of Bag Space to Keep Free"
-TSM.L["Applied %s to %s."] = "Присоeдинить %s к %s."
+TSM.L["Alts AH"] = "Аукционы альтов"
+TSM.L["Amount"] = "Сумма"
+TSM.L["AMOUNT"] = "СУММА"
+TSM.L["Amount of Bag Space to Keep Free"] = "Оставлять свободных ячеек в сумках"
+TSM.L["Applied %s to %s."] = "%s привязано к %s."
 TSM.L["APPLY FILTERS"] = "Применить фильтры"
 TSM.L["Apply operation to group:"] = "Применить операцию к группе:"
 TSM.L["Are you sure you want to clear old accounting data?"] = "Очистить старые данные вашей статистики?"
 TSM.L["Are you sure you want to delete this group?"] = "Удалить этy грyппу?"
 TSM.L["Are you sure you want to delete this operation?"] = "Удалить эту операцию?"
 TSM.L["Are you sure you want to reset all operation settings?"] = "Сбросить все настройки операции?"
---[[Translation missing --]]
-TSM.L["At above max price and not undercut."] = "At above max price and not undercut."
---[[Translation missing --]]
-TSM.L["At normal price and not undercut."] = "At normal price and not undercut."
+TSM.L["At above max price and not undercut."] = "При превышении макс. цены и не перебит."
+TSM.L["At normal price and not undercut."] = "По нормальной цене и не перебит."
 TSM.L["Auction"] = "Аукцион"
 TSM.L["AUCTION DETAILS"] = "Детали аукциона"
 TSM.L["Auction Duration"] = "Длительность"
@@ -14520,66 +14457,49 @@ TSM.L["Bags"] = "Сyмки"
 TSM.L["Banks"] = "Банки"
 TSM.L["BankUI Move Delay"] = "BankUI Задержка перемещения"
 TSM.L["Base Group"] = "Базовая группа"
---[[Translation missing --]]
-TSM.L["Base Item"] = "Base Item"
---[[Translation missing --]]
-TSM.L["Batch size"] = "Batch size"
-TSM.L["Below are your currently available price sources organized by module. The %skey|r is what you would type into a custom price box."] = "Ниже приведены доступные в настоящее время источники цен, организованные модулем. %skey|r  - это тo, что вы должны ввести в пользовательское поле цены."
---[[Translation missing --]]
-TSM.L["Below custom price:"] = "Below custom price:"
+TSM.L["Base Item"] = "Базовый предмет"
+TSM.L["Batch size"] = "Размер партии"
+TSM.L["Below are your currently available price sources organized by module. The %skey|r is what you would type into a custom price box."] = "Ниже показаны доступные источники цен. %skey|r  - это тo, что вы должны ввести в поле кастомной цены."
+TSM.L["Below custom price:"] = "Ниже кастомной цены:"
 TSM.L["Below min price. Posting at max price."] = "Ниже мин. Ставим по макс. цене."
 TSM.L["Below min price. Posting at min price."] = "Ниже мин. Ставим по мин. цене."
 TSM.L["Below min price. Posting at normal price."] = "Ниже мин. Ставим по норм. цене."
---[[Translation missing --]]
-TSM.L["Below, you can manage your profiles which allow you to have entirely different sets of groups."] = "Below, you can manage your profiles which allow you to have entirely different sets of groups."
+TSM.L["Below, you can manage your profiles which allow you to have entirely different sets of groups."] = "Ниже настройки ваших профилей. Они позволят вам иметь разные наборы групп."
 TSM.L["Bid %d / %d"] = "Ставка %d / %d"
 TSM.L["Bid (item)"] = "Ставка (шт)"
 TSM.L["Bid (stack)"] = "Ставка (стак)"
 TSM.L["Bid Price"] = "Цена ставки"
---[[Translation missing --]]
-TSM.L["Bid Sniper Paused"] = "Bid Sniper Paused"
---[[Translation missing --]]
-TSM.L["Bid Sniper Running"] = "Bid Sniper Running"
+TSM.L["Bid Sniper Paused"] = "Ставка \"Снайпера\" приостановлена"
+TSM.L["Bid Sniper Running"] = "Ставка \"Снайпера\" запущена"
 TSM.L["Blacklisted players:"] = "Игроки в черном списке"
 --[[Translation missing --]]
 TSM.L["Bought"] = "Bought"
 --[[Translation missing --]]
 TSM.L["Bought %sx%d for %s from %s"] = "Bought %sx%d for %s from %s"
---[[Translation missing --]]
-TSM.L["Bound Actions"] = "Bound Actions"
+TSM.L["Bound Actions"] = "Связанные действия"
 TSM.L["BUSY"] = "Занят"
-TSM.L["BUY"] = "КУПИТЬ"
+TSM.L["BUY"] = "Купить"
 TSM.L["Buy"] = "Купить"
 TSM.L["Buy %d / %d"] = "Купить %d / %d"
---[[Translation missing --]]
-TSM.L["Buy %d / %d (Confirming %d / %d)"] = "Buy %d / %d (Confirming %d / %d)"
+TSM.L["Buy %d / %d (Confirming %d / %d)"] = "Покупка %d / %d (Подтверждение %d / %d)"
 TSM.L["Buy from AH"] = "Купить на аукционе"
 TSM.L["Buy from Vendor"] = "Купить у торговца"
---[[Translation missing --]]
-TSM.L["BUY GROUPS"] = "BUY GROUPS"
---[[Translation missing --]]
-TSM.L["Buy Options"] = "Buy Options"
+TSM.L["BUY GROUPS"] = "Купить группы"
+TSM.L["Buy Options"] = "Параметры покупки"
 TSM.L["BUYBACK ALL"] = "Выкупить всё"
---[[Translation missing --]]
-TSM.L["Buyer/Seller"] = "Buyer/Seller"
+TSM.L["Buyer/Seller"] = "Покупатель/Продавец"
 TSM.L["Buyout (item)"] = "Выкуп (шт)"
 TSM.L["Buyout (stack)"] = "Выкуп (стак)"
 TSM.L["Buyout Price"] = "Цена выкупа"
---[[Translation missing --]]
-TSM.L["Buyout Sniper Paused"] = "Buyout Sniper Paused"
---[[Translation missing --]]
-TSM.L["Buyout Sniper Running"] = "Buyout Sniper Running"
+TSM.L["Buyout Sniper Paused"] = "Выкуп \"Снайпера\" приостановлен"
+TSM.L["Buyout Sniper Running"] = "Выкуп \"Снайпера\" запущен"
 TSM.L["BUYS"] = "Покупки"
 TSM.L["By default, this group houses all items that aren't assigned to a group. You cannot modify or delete this group."] = "В эту группу по умолчанию входят все предметы, которые вы не добавили в другие группы. Эту группу нельзя изменить или удалить."
---[[Translation missing --]]
-TSM.L["Can Craft At Least One, Profit, Craftable Quantity"] = "Can Craft At Least One, Profit, Craftable Quantity"
---[[Translation missing --]]
-TSM.L["Cancel auctions with bids"] = "Cancel auctions with bids"
-TSM.L["Cancel Scan"] = "Отменить сканирование"
---[[Translation missing --]]
-TSM.L["Cancel to repost higher?"] = "Cancel to repost higher?"
---[[Translation missing --]]
-TSM.L["Cancel undercut auctions?"] = "Cancel undercut auctions?"
+TSM.L["Can Craft At Least One, Profit, Craftable Quantity"] = "Может создан по крайней мере один, Прибыль, Качество"
+TSM.L["Cancel auctions with bids"] = "Отменять аукционы со ставками"
+TSM.L["Cancel Scan"] = "Отменить скан."
+TSM.L["Cancel to repost higher?"] = "Отменять для повышения цены?"
+TSM.L["Cancel undercut auctions?"] = "Отменять перебитые аукционы?"
 TSM.L["Canceling"] = "Отмена"
 TSM.L["Canceling %d / %d"] = "Отмена %d / %d"
 TSM.L["Canceling %d Auctions..."] = "Отмена лотов: %d..."
@@ -14588,8 +14508,7 @@ TSM.L["Canceling all auctions."] = "Отмена всех аукционов."
 TSM.L["Canceling auction which you've undercut."] = "Canceling auction which you've undercut."
 TSM.L["Canceling disabled."] = "Отмена отключена."
 TSM.L["Canceling Settings"] = "Настройки отмены аукциона"
---[[Translation missing --]]
-TSM.L["Canceling to repost at higher price."] = "Canceling to repost at higher price."
+TSM.L["Canceling to repost at higher price."] = "Отмена для перевыставления по высшей цене."
 --[[Translation missing --]]
 TSM.L["Canceling to repost at reset price."] = "Canceling to repost at reset price."
 --[[Translation missing --]]
@@ -14601,21 +14520,18 @@ TSM.L["Canceling undercut auctions."] = "Canceling undercut auctions."
 TSM.L["Cancelled"] = "Отменен"
 --[[Translation missing --]]
 TSM.L["Cancelled auction of %sx%d"] = "Cancelled auction of %sx%d"
---[[Translation missing --]]
-TSM.L["Cancelled Since Last Sale"] = "Cancelled Since Last Sale"
+TSM.L["Cancelled Since Last Sale"] = "Отменено с момента последней продажи"
 TSM.L["CANCELS"] = "Отменённые"
---[[Translation missing --]]
-TSM.L["Cannot repair from the guild bank!"] = "Cannot repair from the guild bank!"
+TSM.L["Cannot repair from the guild bank!"] = "Невозможно починиться за счёт гильдии!"
 TSM.L["Can't load TSM tooltip while in combat"] = "Нельзя вывести подсказку TSM в бою"
 TSM.L["Cash Register"] = "Сyмма зарегистрированна"
 TSM.L["Character"] = "Персонаж"
-TSM.L["CHARACTER"] = "Персонаж"
+TSM.L["CHARACTER"] = "ПЕРСОНАЖ"
 TSM.L["Character Bags"] = "Сумки персонажа"
 TSM.L["Character Bank"] = "Банк персонажа"
 TSM.L["CHARACTERS"] = "Персонажи"
 TSM.L["Chat Tab"] = "Вкладка чатa"
---[[Translation missing --]]
-TSM.L["Cheapest auction below min price."] = "Cheapest auction below min price."
+TSM.L["Cheapest auction below min price."] = "Самый дешевый лот ниже минимальной цены."
 TSM.L["Clean Automatically"] = "Очистить автоматически"
 TSM.L["Clear"] = "Oчистить"
 TSM.L["Clear All"] = "Очистить все"
@@ -14626,29 +14542,22 @@ TSM.L["Clear Old Data"] = "Очистить старые данные"
 TSM.L["Clear Old Data Confirmation"] = "Подтверждение очистки старых данных"
 TSM.L["Clear Queue"] = "Очистить"
 TSM.L["Clear Selection"] = "Очистить выбрaнное"
---[[Translation missing --]]
-TSM.L["COD"] = "COD"
+TSM.L["COD"] = "наложенный платеж"
 TSM.L["Coins (%s)"] = "Монеты (%s)"
 TSM.L["Combine Partial Stacks"] = "Объединить неполные стаки"
---[[Translation missing --]]
-TSM.L["Combining..."] = "Combining..."
---[[Translation missing --]]
-TSM.L["Configuration Scroll Wheel"] = "Configuration Scroll Wheel"
+TSM.L["Combining..."] = "Объединение ..."
+TSM.L["Configuration Scroll Wheel"] = "Настройка колеса мыши"
 TSM.L["Confirm"] = "Подтвердить"
---[[Translation missing --]]
-TSM.L["Confirm Complete Sound"] = "Confirm Complete Sound"
---[[Translation missing --]]
-TSM.L["Confirming %d / %d"] = "Confirming %d / %d"
+TSM.L["Confirm Complete Sound"] = "Звук окончания подтверждения"
+TSM.L["Confirming %d / %d"] = "Подтверждение %d / %d"
 TSM.L["Connected to %s"] = "Пoдключен к %s"
 TSM.L["Connecting to %s"] = "Подключение к %s"
 TSM.L["CONTACTS"] = "Контакты"
 TSM.L["Contacts Menu"] = "Список контактов"
 TSM.L["Cooldown"] = "Кулдаун"
 TSM.L["Cooldowns"] = "Кулдауны"
---[[Translation missing --]]
-TSM.L["Cost"] = "Cost"
---[[Translation missing --]]
-TSM.L["Could not apply %s operation %s to %s - it has too many operations already."] = "Could not apply %s operation %s to %s - it has too many operations already."
+TSM.L["Cost"] = "Цена"
+TSM.L["Could not apply %s operation %s to %s - it has too many operations already."] = "Нельзя применить %s операцию %s для %s - уже слишком много операций."
 TSM.L["Could not apply %s operation to group %s because the group does not exist"] = "Операция %s не привязана к группе %s. Такой группы не существует."
 TSM.L["Could not create macro as you already have too many. Delete one of your existing macros and try again."] = "Макрос не создан, потому что их уже слишком много. Удалите один из них и попробуйте снова."
 --[[Translation missing --]]
@@ -14667,10 +14576,8 @@ TSM.L["Craft All"] = "Создать всё"
 TSM.L["CRAFT ALL"] = "Создать всё"
 TSM.L["Craft Name"] = "Название рецепта"
 TSM.L["CRAFT NEXT"] = "Создать след."
---[[Translation missing --]]
-TSM.L["Craft value method:"] = "Craft value method:"
---[[Translation missing --]]
-TSM.L["Craftable Quantity, Profit"] = "Craftable Quantity, Profit"
+TSM.L["Craft value method:"] = "Метод расчета стоимости крафта:"
+TSM.L["Craftable Quantity, Profit"] = "Создаваемое количество, Прибыль"
 TSM.L["CRAFTER"] = "СОЗДАТЕЛЬ"
 TSM.L["CRAFTING"] = "Создание"
 TSM.L["Crafting"] = "Создание"
@@ -14689,139 +14596,83 @@ TSM.L["Current Profiles"] = "Текущие профили"
 TSM.L["CURRENT SEARCH"] = "Текущий поиск"
 --[[Translation missing --]]
 TSM.L["CUSTOM POST"] = "CUSTOM POST"
---[[Translation missing --]]
-TSM.L["Custom Price"] = "Custom Price"
-TSM.L["Custom Price Source"] = "Пользовательский источник цен"
---[[Translation missing --]]
-TSM.L["Custom Sources"] = "Custom Sources"
---[[Translation missing --]]
-TSM.L["Database Sources"] = "Database Sources"
+TSM.L["Custom Price"] = "Кастомная цена"
+TSM.L["Custom Price Source"] = "Кастомный источник цен"
+TSM.L["Custom Sources"] = "Кастомный источник"
+TSM.L["Database Sources"] = "Показ источников данных в подсказке"
 TSM.L["DD/MM/YY HH:MM"] = "ДД/ММ/ГГ ЧЧ:ММ"
---[[Translation missing --]]
-TSM.L["Default Craft Value Method:"] = "Default Craft Value Method:"
+TSM.L["Default Craft Value Method:"] = "Метод расчета стоимости крафта по-умолчанию:"
 TSM.L["Default Material Cost Method:"] = "Метод расчёта стоимости материалов по умолчанию:"
 TSM.L["Default Price"] = "Стандартная цена"
---[[Translation missing --]]
-TSM.L["Default Price Configuration"] = "Default Price Configuration"
+TSM.L["Default Price Configuration"] = "Конфигурация цены по-умолчанию"
 TSM.L["Default vendoring page"] = "Вкладка по умолчанию в окне торговли"
---[[Translation missing --]]
-TSM.L["Define whet priority Gathering gives certain sources."] = "Define whet priority Gathering gives certain sources."
---[[Translation missing --]]
-TSM.L["Delete Profile Confirmation"] = "Delete Profile Confirmation"
---[[Translation missing --]]
-TSM.L["DEPOSIT REAGENTS"] = "DEPOSIT REAGENTS"
+TSM.L["Define whet priority Gathering gives certain sources."] = "Приоритет источников для сбора материалов."
+TSM.L["Delete Profile Confirmation"] = "Подтвердите удаление профиля"
+TSM.L["DEPOSIT REAGENTS"] = "Сложить реагенты"
 TSM.L["Deselect All Groups"] = "Снять выделение"
 TSM.L["Deselect All Items"] = "Снять выделение"
---[[Translation missing --]]
-TSM.L["Destroy Next"] = "Destroy Next"
+TSM.L["Destroy Next"] = "Уничтожить следующее"
 TSM.L["Destroy Value"] = "Стоимость yничтожения"
---[[Translation missing --]]
-TSM.L["Destroy Value Source"] = "Destroy Value Source"
---[[Translation missing --]]
-TSM.L["Destroying"] = "Destroying"
+TSM.L["Destroy Value Source"] = "Источник стоимости уничтожения"
+TSM.L["Destroying"] = "Уничтожение"
 --[[Translation missing --]]
 TSM.L["Destroying 'DESTROY NEXT' Button"] = "Destroying 'DESTROY NEXT' Button"
---[[Translation missing --]]
-TSM.L["Destroying Tooltips"] = "Destroying Tooltips"
---[[Translation missing --]]
-TSM.L["Destroying..."] = "Destroying..."
---[[Translation missing --]]
-TSM.L["Details"] = "Details"
+TSM.L["Destroying Tooltips"] = "Подсказки уничтожения"
+TSM.L["Destroying..."] = "Уничтожение..."
+TSM.L["Details"] = "Детали"
 --[[Translation missing --]]
 TSM.L["Did not cancel %s because your cancel to repost threshold (%s) is invalid. Check your settings."] = "Did not cancel %s because your cancel to repost threshold (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not cancel %s because your maximum price (%s) is invalid. Check your settings."] = "Did not cancel %s because your maximum price (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not cancel %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."] = "Did not cancel %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."
---[[Translation missing --]]
-TSM.L["Did not cancel %s because your minimum price (%s) is invalid. Check your settings."] = "Did not cancel %s because your minimum price (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not cancel %s because your normal price (%s) is invalid. Check your settings."] = "Did not cancel %s because your normal price (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not cancel %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."] = "Did not cancel %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."
---[[Translation missing --]]
-TSM.L["Did not cancel %s because your undercut (%s) is invalid. Check your settings."] = "Did not cancel %s because your undercut (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not post %s because Blizzard didn't provide all necessary information for it. Try again later."] = "Did not post %s because Blizzard didn't provide all necessary information for it. Try again later."
---[[Translation missing --]]
-TSM.L["Did not post %s because the owner of the lowest auction (%s) is on both the blacklist and whitelist which is not allowed. Adjust your settings to correct this issue."] = "Did not post %s because the owner of the lowest auction (%s) is on both the blacklist and whitelist which is not allowed. Adjust your settings to correct this issue."
---[[Translation missing --]]
-TSM.L["Did not post %s because you or one of your alts (%s) is on the blacklist which is not allowed. Remove this character from your blacklist."] = "Did not post %s because you or one of your alts (%s) is on the blacklist which is not allowed. Remove this character from your blacklist."
---[[Translation missing --]]
-TSM.L["Did not post %s because your maximum price (%s) is invalid. Check your settings."] = "Did not post %s because your maximum price (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not post %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."] = "Did not post %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."
---[[Translation missing --]]
-TSM.L["Did not post %s because your minimum price (%s) is invalid. Check your settings."] = "Did not post %s because your minimum price (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not post %s because your normal price (%s) is invalid. Check your settings."] = "Did not post %s because your normal price (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Did not post %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."] = "Did not post %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."
---[[Translation missing --]]
-TSM.L["Did not post %s because your stack size (%d) is higher than the max stack size of the item (%d)."] = "Did not post %s because your stack size (%d) is higher than the max stack size of the item (%d)."
---[[Translation missing --]]
-TSM.L["Did not post %s because your undercut (%s) is invalid. Check your settings."] = "Did not post %s because your undercut (%s) is invalid. Check your settings."
---[[Translation missing --]]
-TSM.L["Disable invalid price warnings"] = "Disable invalid price warnings"
---[[Translation missing --]]
-TSM.L["Disenchant Search"] = "Disenchant Search"
---[[Translation missing --]]
-TSM.L["DISENCHANT SEARCH"] = "DISENCHANT SEARCH"
---[[Translation missing --]]
-TSM.L["Disenchant Search Options"] = "Disenchant Search Options"
---[[Translation missing --]]
-TSM.L["Disenchant Value"] = "Disenchant Value"
+TSM.L["Did not cancel %s because your maximum price (%s) is invalid. Check your settings."] = "Лот %s не отменен. Ваша максимальная цена (%s) не верна. Проверьте настройки."
+TSM.L["Did not cancel %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."] = "Лот %s не отменен. Ваша максимальная цена (%s) ниже минимальной цены (%s). Проверьте настройки."
+TSM.L["Did not cancel %s because your minimum price (%s) is invalid. Check your settings."] = "Лот %s не отменен. Ваша минимальная цена (%s) не верна. Проверьте настройки."
+TSM.L["Did not cancel %s because your normal price (%s) is invalid. Check your settings."] = "Лот %s не отменен. Ваша нормальная цена (%s) не верна. Проверьте настройки."
+TSM.L["Did not cancel %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."] = "Лот %s не отменен. Ваша нормальная цена (%s) ниже минимальной цены (%s). Проверьте настройки."
+TSM.L["Did not cancel %s because your undercut (%s) is invalid. Check your settings."] = "Лот %s не отменен. Ваша цена сбивания (%s) не верна. Проверьте настройки."
+TSM.L["Did not post %s because Blizzard didn't provide all necessary information for it. Try again later."] = "Лот %s не выставлен. Blizzard не предоставила для этого нужную информацию. Попробуйте позже."
+TSM.L["Did not post %s because the owner of the lowest auction (%s) is on both the blacklist and whitelist which is not allowed. Adjust your settings to correct this issue."] = "Лот %s не выставлен. Владелец лота (%s) с самой низкой ценой находится в вашем черном и белом списке одновременно, так быть не должно. Измените настройки, чтобы исправить эту проблему."
+TSM.L["Did not post %s because you or one of your alts (%s) is on the blacklist which is not allowed. Remove this character from your blacklist."] = "Лот %s не выставлен. Вы или ваш альт (%s) находитесь в черном списке, так быть не должно. Удалите персонажа из черного списка."
+TSM.L["Did not post %s because your maximum price (%s) is invalid. Check your settings."] = "Лот %s не выставлен. Ваша максимальная цена (%s) не верна. Проверьте настройки."
+TSM.L["Did not post %s because your maximum price (%s) is lower than your minimum price (%s). Check your settings."] = "Лот %s не выставлен. Ваша максимальная цена (%s) ниже, вашей минимальной цены (%s). Проверьте настройки."
+TSM.L["Did not post %s because your minimum price (%s) is invalid. Check your settings."] = "Лот %s не выставлен. Ваша минимальная цена (%s) не верна. Проверьте настройки."
+TSM.L["Did not post %s because your normal price (%s) is invalid. Check your settings."] = "Лот %s не выставлен. Ваша нормальная цена (%s) не верна. Проверьте настройки."
+TSM.L["Did not post %s because your normal price (%s) is lower than your minimum price (%s). Check your settings."] = "Лот %s не выставлен. Ваша нормальная цена (%s) ниже, вашей минимальной цены (%s). Проверьте настройки."
+TSM.L["Did not post %s because your stack size (%d) is higher than the max stack size of the item (%d)."] = "Лот %s не выставлен. Ваш размер стака (%d) больше, чем максимальный размер стака для предмета (%d)."
+TSM.L["Did not post %s because your undercut (%s) is invalid. Check your settings."] = "Лот %s не выставлен. Ваша цена сбития (%s) не верна. Проверьте настройки."
+TSM.L["Disable invalid price warnings"] = "Отключить предупреждения о неверной цене"
+TSM.L["Disenchant Search"] = "Поиск для распыления"
+TSM.L["DISENCHANT SEARCH"] = "Поиск для распыления"
+TSM.L["Disenchant Search Options"] = "Параметры поиска распыления"
+TSM.L["Disenchant Value"] = "Стоимость распыления"
 TSM.L["Disenchanting Options"] = "Настройки распыления"
---[[Translation missing --]]
-TSM.L["Display auctioning values"] = "Display auctioning values"
+TSM.L["Display auctioning values"] = "Показать цены на аукционе"
 TSM.L["Display cancelled since last sale"] = "Показать сколько раз отменено после последней продажи"
-TSM.L["Display crafting cost"] = "Показывать стоимость создания"
---[[Translation missing --]]
-TSM.L["Display detailed destroy info"] = "Display detailed destroy info"
---[[Translation missing --]]
-TSM.L["Display disenchant value"] = "Display disenchant value"
---[[Translation missing --]]
-TSM.L["Display global historical price"] = "Display global historical price"
---[[Translation missing --]]
-TSM.L["Display global market value avg"] = "Display global market value avg"
---[[Translation missing --]]
-TSM.L["Display global min buyout avg"] = "Display global min buyout avg"
---[[Translation missing --]]
-TSM.L["Display global sale avg"] = "Display global sale avg"
+TSM.L["Display crafting cost"] = "Показать стоимость создания"
+TSM.L["Display detailed destroy info"] = "Показать подробности уничтожения"
+TSM.L["Display disenchant value"] = "Показать стоимость распыления"
+TSM.L["Display global historical price"] = "Показать историческую цену по миру"
+TSM.L["Display global market value avg"] = "Показать среднюю рыночную стоимость по миру"
+TSM.L["Display global min buyout avg"] = "Показать среднюю минимальную цену по миру"
+TSM.L["Display global sale avg"] = "Показать среднюю цену продажи по миру"
 TSM.L["Display group name"] = "Показать имя группы"
---[[Translation missing --]]
-TSM.L["Display historical price"] = "Display historical price"
---[[Translation missing --]]
-TSM.L["Display market value"] = "Display market value"
---[[Translation missing --]]
-TSM.L["Display mill value"] = "Display mill value"
---[[Translation missing --]]
-TSM.L["Display min buyout"] = "Display min buyout"
+TSM.L["Display historical price"] = "Показать историческую цену"
+TSM.L["Display market value"] = "Показать рыночную стоимость"
+TSM.L["Display mill value"] = "Показать стоимость измельчения"
+TSM.L["Display min buyout"] = "Показать минимальную цену"
 TSM.L["Display Operation Names"] = "Показать имена операций"
---[[Translation missing --]]
-TSM.L["Display prospect value"] = "Display prospect value"
---[[Translation missing --]]
-TSM.L["Display purchase info"] = "Display purchase info"
---[[Translation missing --]]
-TSM.L["Display region historical price"] = "Display region historical price"
---[[Translation missing --]]
-TSM.L["Display region market value avg"] = "Display region market value avg"
---[[Translation missing --]]
-TSM.L["Display region min buyout avg"] = "Display region min buyout avg"
---[[Translation missing --]]
-TSM.L["Display region sale avg"] = "Display region sale avg"
---[[Translation missing --]]
-TSM.L["Display region sale rate"] = "Display region sale rate"
---[[Translation missing --]]
-TSM.L["Display region sold per day"] = "Display region sold per day"
-TSM.L["Display sale info"] = "Показать информацию о ваших продажах"
+TSM.L["Display prospect value"] = "Показать стоимость просеивания"
+TSM.L["Display purchase info"] = "Показать информацию о покупках"
+TSM.L["Display region historical price"] = "Показать историческую цену по региону"
+TSM.L["Display region market value avg"] = "Показать среднюю рыночную стоимость по региону"
+TSM.L["Display region min buyout avg"] = "Показать среднюю минимальную цену по региону"
+TSM.L["Display region sale avg"] = "Показать среднюю цену продажи по региону"
+TSM.L["Display region sale rate"] = "Показать шанс продажи по региону"
+TSM.L["Display region sold per day"] = "Показать статистику ежедневных продаж по региону"
+TSM.L["Display sale info"] = "Показать информацию о продажах"
 TSM.L["Display sale rate"] = "Показать шанс продажи"
 --[[Translation missing --]]
 TSM.L["Display shopping max price"] = "Display shopping max price"
---[[Translation missing --]]
-TSM.L["Display total money recieved in chat?"] = "Display total money recieved in chat?"
---[[Translation missing --]]
-TSM.L["Display transform value"] = "Display transform value"
+TSM.L["Display total money recieved in chat?"] = "Показывать общую сумму полученных денег в чат?"
+TSM.L["Display transform value"] = "Показать стоимость трансформации (например разделки рыбы)"
 TSM.L["Display vendor buy price"] = "Показать цену покупки у торговца"
 TSM.L["Display vendor sell price"] = "Показать цену продажи торговцу"
 TSM.L["Doing so will also remove any sub-groups attached to this group."] = "Вместе с группой вы удалите все её подгруппы."
@@ -14829,45 +14680,34 @@ TSM.L["Done Canceling"] = "Лоты сняты с аукциона"
 TSM.L["Done Posting"] = "Лоты выставлены :)"
 TSM.L["Done Scanning"] = "Сканирование закончено"
 TSM.L["Don't post after this many expires:"] = "Количество попыток выставить лот:"
---[[Translation missing --]]
-TSM.L["Don't Post Items"] = "Don't Post Items"
+TSM.L["Don't Post Items"] = "Не выставлять"
 --[[Translation missing --]]
 TSM.L["Don't prompt to record trades"] = "Don't prompt to record trades"
 TSM.L["DOWN"] = "Вниз"
-TSM.L["Drag in Additional Items (%d/%d Items)"] = "Предметы: %d / %d. Продолжайте перетаскивать предметы."
+TSM.L["Drag in Additional Items (%d/%d Items)"] = "Предметы: %d / %d"
 TSM.L["Drag Item(s) Into Box"] = "Перетащите предметы сюда"
---[[Translation missing --]]
-TSM.L["Duplicate"] = "Duplicate"
---[[Translation missing --]]
-TSM.L["Duplicate Profile Confirmation"] = "Duplicate Profile Confirmation"
+TSM.L["Duplicate"] = "Скопировать"
+TSM.L["Duplicate Profile Confirmation"] = "Подтвердите копирование данных"
 TSM.L["Dust"] = "Пыль "
---[[Translation missing --]]
-TSM.L["Elevate your gold-making!"] = "Elevate your gold-making!"
+TSM.L["Elevate your gold-making!"] = "Прокачай свои доходы!"
 TSM.L["Embed TSM tooltips"] = "Встроить TSM в стандартную подсказку"
 TSM.L["EMPTY BAGS"] = "ПУСТЫЕ СУМКИ"
 TSM.L["Empty parentheses are not allowed"] = "Пустые круглые скобки не допускаются"
 TSM.L["Empty price string."] = "Пyстая строка цены."
 --[[Translation missing --]]
 TSM.L["Enable automatic stack combination"] = "Enable automatic stack combination"
---[[Translation missing --]]
-TSM.L["Enable buying?"] = "Enable buying?"
---[[Translation missing --]]
-TSM.L["Enable inbox chat messages"] = "Enable inbox chat messages"
---[[Translation missing --]]
-TSM.L["Enable restock?"] = "Enable restock?"
---[[Translation missing --]]
-TSM.L["Enable selling?"] = "Enable selling?"
---[[Translation missing --]]
-TSM.L["Enable sending chat messages"] = "Enable sending chat messages"
---[[Translation missing --]]
-TSM.L["Enable smart crafting for quests"] = "Enable smart crafting for quests"
+TSM.L["Enable buying?"] = "Включить покупки?"
+TSM.L["Enable inbox chat messages"] = "Уведомлять о входящих в чате"
+TSM.L["Enable restock?"] = "Активировать пополнение запасов?"
+TSM.L["Enable selling?"] = "Включить продажи?"
+TSM.L["Enable sending chat messages"] = "Включить сообщения в чат об исходящих"
+TSM.L["Enable smart crafting for quests"] = "Включить умный крафт для заданий"
 TSM.L["Enable TSM Tooltips"] = "Показывать подсказки TSM"
 --[[Translation missing --]]
 TSM.L["Enable tweet enhancement"] = "Enable tweet enhancement"
 --[[Translation missing --]]
 TSM.L["Enchant Vellum"] = "Enchant Vellum"
---[[Translation missing --]]
-TSM.L["Enter a name for the new profile"] = "Enter a name for the new profile"
+TSM.L["Enter a name for the new profile"] = "Введите имя нового профиля"
 --[[Translation missing --]]
 TSM.L["Enter Filter"] = "Enter Filter"
 --[[Translation missing --]]
@@ -14879,85 +14719,61 @@ TSM.L["Essences"] = "Эссенции"
 TSM.L["Establishing connection to %s. Make sure that you've entered this character's name on the other account."] = "Установка соединения с %s. Убедитесь, что вы ввели имя этого персонажа на другой учeтной записи."
 TSM.L["Estimated Cost:"] = "Примерная стоимость:"
 TSM.L["Estimated Profit:"] = "Планируемая прибыль:"
---[[Translation missing --]]
-TSM.L["Exact Match Only?"] = "Exact Match Only?"
---[[Translation missing --]]
-TSM.L["Exclude crafts with cooldowns"] = "Exclude crafts with cooldowns"
+TSM.L["Exact Match Only?"] = "Только точное соответствие?"
+TSM.L["Exclude crafts with cooldowns"] = "Исключить крафты с кулдауном"
 TSM.L["Expenses"] = "Расходы"
 TSM.L["EXPENSES"] = "РАСХОДЫ"
---[[Translation missing --]]
-TSM.L["Expired"] = "Expired"
---[[Translation missing --]]
-TSM.L["Expired Since Last Sale"] = "Expired Since Last Sale"
+TSM.L["Expired"] = "Истек"
+TSM.L["Expired Since Last Sale"] = "Истекший с момента последней продажи"
 TSM.L["Expires"] = "Истёкшие"
 TSM.L["EXPIRES"] = "Истёкшие"
 TSM.L["Exploration"] = "Иcследование"
 TSM.L["Export"] = "Экспорт"
 TSM.L["Export List"] = "Экспорт"
---[[Translation missing --]]
-TSM.L["Failed Auctions"] = "Failed Auctions"
+TSM.L["Failed Auctions"] = "Неудавшиеся аукционы"
 --[[Translation missing --]]
 TSM.L["Failed Since Last Sale (Expired/Cancelled)"] = "Failed Since Last Sale (Expired/Cancelled)"
 TSM.L["Failed to bid on auction of %s."] = "Не удалось сделать ставку на %s."
---[[Translation missing --]]
-TSM.L["Failed to buy auction of %s."] = "Failed to buy auction of %s."
---[[Translation missing --]]
-TSM.L["Failed to find auction for %s, so removing it from the results."] = "Failed to find auction for %s, so removing it from the results."
---[[Translation missing --]]
-TSM.L["Favorite Scans"] = "Favorite Scans"
---[[Translation missing --]]
-TSM.L["Favorite Searches"] = "Favorite Searches"
+TSM.L["Failed to buy auction of %s."] = "Не удалось купить лот %s."
+TSM.L["Failed to find auction for %s, so removing it from the results."] = "Не удалось найти лот %s, поэтому он исключен из результатов."
+TSM.L["Favorite Scans"] = "Избранные сканирования"
+TSM.L["Favorite Searches"] = "Избранный поиск"
 TSM.L["Filter Auctions by Duration"] = "Фильтр по длительности"
 TSM.L["Filter Auctions by Keyword"] = "Фильтр по ключевым словам"
 TSM.L["FILTER BY KEYWORD"] = "Поиск по ключевым словам"
 TSM.L["Filter by Keyword"] = "Поиск по ключевым словам"
 --[[Translation missing --]]
 TSM.L["Filter group item lists based on the following price source"] = "Filter group item lists based on the following price source"
-TSM.L["Filter Items"] = "Поиск по предметам. Работают фильтры типа: /расходуемое"
+TSM.L["Filter Items"] = "Поиск по предметам"
 --[[Translation missing --]]
 TSM.L["Filter Shopping"] = "Filter Shopping"
 --[[Translation missing --]]
 TSM.L["Finding Selected Auction"] = "Finding Selected Auction"
 TSM.L["Fishing Reel In"] = "Звук рыболовной катушки"
---[[Translation missing --]]
-TSM.L["Forget Character"] = "Forget Character"
+TSM.L["Forget Character"] = "Забыть персонажа"
 --[[Translation missing --]]
 TSM.L["Found auction sound"] = "Found auction sound"
 TSM.L["Friends"] = "Друзья"
---[[Translation missing --]]
-TSM.L["From"] = "From"
+TSM.L["From"] = "От"
 TSM.L["Full"] = "Полный"
 TSM.L["Garrison"] = "Гарнизон"
---[[Translation missing --]]
-TSM.L["Gathering"] = "Gathering"
+TSM.L["Gathering"] = "Сбор"
 --[[Translation missing --]]
 TSM.L["Gathering Search"] = "Gathering Search"
 TSM.L["General Options"] = "Основные настройки"
---[[Translation missing --]]
-TSM.L["Get from Bank"] = "Get from Bank"
---[[Translation missing --]]
-TSM.L["Get from Guild Bank"] = "Get from Guild Bank"
---[[Translation missing --]]
-TSM.L["Global Data Tooltips"] = "Global Data Tooltips"
---[[Translation missing --]]
-TSM.L["Global Historical Price"] = "Global Historical Price"
---[[Translation missing --]]
-TSM.L["Global Market Value Avg"] = "Global Market Value Avg"
---[[Translation missing --]]
-TSM.L["Global Min Buyout Avg"] = "Global Min Buyout Avg"
---[[Translation missing --]]
-TSM.L["Global Operation Confirmation"] = "Global Operation Confirmation"
---[[Translation missing --]]
-TSM.L["Global Sale Avg"] = "Global Sale Avg"
+TSM.L["Get from Bank"] = "Забрать из банка"
+TSM.L["Get from Guild Bank"] = "Забрать из банка гильдии"
+TSM.L["Global Data Tooltips"] = "Мировые данные"
+TSM.L["Global Historical Price"] = "Историческая цена по миру"
+TSM.L["Global Market Value Avg"] = "Средняя рыночная стоимость по миру"
+TSM.L["Global Min Buyout Avg"] = "Средняя минимальная цена по миру"
+TSM.L["Global Operation Confirmation"] = "Сделать операции глобальными?"
+TSM.L["Global Sale Avg"] = "Средняя цена продажи по миру"
 TSM.L["Gold"] = "Золото"
---[[Translation missing --]]
-TSM.L["Gold Earned:"] = "Gold Earned:"
---[[Translation missing --]]
-TSM.L["GOLD ON HAND"] = "GOLD ON HAND"
---[[Translation missing --]]
-TSM.L["Gold Spent:"] = "Gold Spent:"
---[[Translation missing --]]
-TSM.L["GREAT DEALS SEARCH"] = "GREAT DEALS SEARCH"
+TSM.L["Gold Earned:"] = "Золота получено:"
+TSM.L["GOLD ON HAND"] = "ЗОЛОТО ПЕРСОНАЖА"
+TSM.L["Gold Spent:"] = "Золота потрачено:"
+TSM.L["GREAT DEALS SEARCH"] = "Поиск выгодных предложений"
 --[[Translation missing --]]
 TSM.L["Group already exists."] = "Group already exists."
 TSM.L["Group Management"] = "Менеджер групп"
@@ -14982,41 +14798,30 @@ TSM.L["Hiding the TSM Task List UI. Type '/tsm tasklist' to reopen it."] = "Ск
 --[[Translation missing --]]
 TSM.L["High Bidder"] = "High Bidder"
 TSM.L["Historical Price"] = "Историческая цена"
---[[Translation missing --]]
-TSM.L["Hold ALT to repair from the guild bank."] = "Hold ALT to repair from the guild bank."
---[[Translation missing --]]
-TSM.L["Hr"] = "Hr"
---[[Translation missing --]]
-TSM.L["Hrs"] = "Hrs"
+TSM.L["Hold ALT to repair from the guild bank."] = "Удерживайте ALT для починки за счёт гильдии"
+TSM.L["Hr"] = "Час"
+TSM.L["Hrs"] = "Часов"
 TSM.L["I just bought [%s]x%d for %s! %s #TSM4 #warcraft"] = "Я только что купил [%s]x%d за %s! %s #TSM4 #warcraft"
 TSM.L["I just sold [%s] for %s! %s #TSM4 #warcraft"] = "Я только что продал [%s] за %s! %s #TSM4 #warcraft"
---[[Translation missing --]]
-TSM.L["If you don't want to undercut another player, you can add them to your whitelist and TSM will not undercut them. Note that if somebody on your whitelist matches your buyout but lists a lower bid, TSM will still consider them undercutting you."] = "If you don't want to undercut another player, you can add them to your whitelist and TSM will not undercut them. Note that if somebody on your whitelist matches your buyout but lists a lower bid, TSM will still consider them undercutting you."
-TSM.L["If you have multiple profile set up with operations, enabling this will cause all but the current profile's operations to be irreversibly lost. Are you sure you want to continue?"] = "Включив эту функцию, вы удалите операции всех своих профилей кроме текущего. Уверены что хотите продолжить?"
+TSM.L["If you don't want to undercut another player, you can add them to your whitelist and TSM will not undercut them. Note that if somebody on your whitelist matches your buyout but lists a lower bid, TSM will still consider them undercutting you."] = "Не хотите сбивать цены других игроков? Вы можете добавить их в белый список и TSM не будет сбивать их цены. Помните: если кто-то из списка выставит лот с вашей ценой выкупа, но меньшей ставкой, TSM все-равно будет сбивать цену такого лота."
+TSM.L["If you have multiple profile set up with operations, enabling this will cause all but the current profile's operations to be irreversibly lost. Are you sure you want to continue?"] = "Включив эту функцию, вы удалите операции всех своих профилей кроме текущего. С этого момента операции будут одинаковы для всех профилей. Уверены что хотите продолжить?"
 --[[Translation missing --]]
 TSM.L["If you have WoW's Twitter integration setup, TSM will add a share link to its enhanced auction sale / purchase messages, as well as replace URLs with a TSM link."] = "If you have WoW's Twitter integration setup, TSM will add a share link to its enhanced auction sale / purchase messages, as well as replace URLs with a TSM link."
---[[Translation missing --]]
-TSM.L["Ignore Auctions Below Min"] = "Ignore Auctions Below Min"
+TSM.L["Ignore Auctions Below Min"] = "Игнорировать аукционы ниже минимума"
 TSM.L["Ignore auctions by duration?"] = "Игнорировать аукционы по длительности?"
---[[Translation missing --]]
-TSM.L["Ignore Characters"] = "Ignore Characters"
---[[Translation missing --]]
-TSM.L["Ignore duplicate operations?"] = "Ignore duplicate operations?"
+TSM.L["Ignore Characters"] = "Игнорировать персонажей"
+TSM.L["Ignore duplicate operations?"] = "Игнорировать дублирующие операции?"
 TSM.L["Ignore Guilds"] = "Игнорировaть гильдии"
---[[Translation missing --]]
-TSM.L["Ignore operation on characters:"] = "Ignore operation on characters:"
---[[Translation missing --]]
-TSM.L["Ignore operation on faction-realms:"] = "Ignore operation on faction-realms:"
+TSM.L["Ignore operation on characters:"] = "Игнорировать операцию на персонажах:"
+TSM.L["Ignore operation on faction-realms:"] = "Игнорировать операцию на фракциях-серверах:"
 TSM.L["Ignore random enchants?"] = "Игнор. случайных чар"
 --[[Translation missing --]]
 TSM.L["Ignored Cooldowns"] = "Ignored Cooldowns"
---[[Translation missing --]]
-TSM.L["Ignored Items"] = "Ignored Items"
+TSM.L["Ignored Items"] = "Игнорируемые предметы"
 TSM.L["ilvl"] = "ilvl"
 TSM.L["Import"] = "Импорт"
 TSM.L["IMPORT"] = "Импорт"
---[[Translation missing --]]
-TSM.L["Import %d Items and %s Operations?"] = "Import %d Items and %s Operations?"
+TSM.L["Import %d Items and %s Operations?"] = "Импортировать %d предметы и %s операции?"
 TSM.L["Import Groups & Operations"] = "Импорт групп и операций"
 TSM.L["Imported Items"] = "Импортированные предметы"
 TSM.L["Imported Operations"] = "Импортированные операции"
@@ -15027,51 +14832,38 @@ TSM.L["Include operations?"] = "Include operations?"
 --[[Translation missing --]]
 TSM.L["Include soulbound items"] = "Include soulbound items"
 TSM.L["Information"] = "Информация"
---[[Translation missing --]]
-TSM.L["Invalid custom price entered."] = "Invalid custom price entered."
---[[Translation missing --]]
-TSM.L["Invalid custom price source for %s. %s"] = "Invalid custom price source for %s. %s"
-TSM.L["Invalid custom price."] = "Недопустимая пользовательская цена. "
+TSM.L["Invalid custom price entered."] = "Введена неверная «своя» цена."
+TSM.L["Invalid custom price source for %s. %s"] = "Неверный источник «своей» цены для %s. %s"
+TSM.L["Invalid custom price."] = "Недопустимая кастомная цена. "
 TSM.L["Invalid function."] = "Недопустимая фyнкция."
---[[Translation missing --]]
-TSM.L["Invalid group name."] = "Invalid group name."
+TSM.L["Invalid group name."] = "Неверное название группы."
 TSM.L["Invalid item link."] = "Недопyстимая ссылка на предмет."
---[[Translation missing --]]
-TSM.L["Invalid operation name."] = "Invalid operation name."
-TSM.L["Invalid operator at end of custom price."] = "Некoрректный оператор в конце пользовательской цены."
+TSM.L["Invalid operation name."] = "Неверное название операции."
+TSM.L["Invalid operator at end of custom price."] = "Некoрректный оператор в конце кастомной цены."
 TSM.L["Invalid parameter to price source."] = "Некoрректный параметр в источнике цены."
---[[Translation missing --]]
-TSM.L["Invalid player name."] = "Invalid player name."
+TSM.L["Invalid player name."] = "Неверное имя игрока."
 TSM.L["Invalid price source in convert."] = "Недoпустимая цена источника при преобразовании."
---[[Translation missing --]]
-TSM.L["Invalid price source."] = "Invalid price source."
+TSM.L["Invalid price source."] = "Неверный источник цены."
 --[[Translation missing --]]
 TSM.L["Invalid seller data returned by server."] = "Invalid seller data returned by server."
 TSM.L["Invalid word: '%s'"] = "Недoпустимое слово: '%s'"
 TSM.L["Inventory"] = "Инвентарь"
---[[Translation missing --]]
-TSM.L["Inventory / Mailing"] = "Inventory / Mailing"
---[[Translation missing --]]
-TSM.L["Inventory Options"] = "Inventory Options"
-TSM.L["Inventory Tooltip Format"] = "Формат инвенторя в подсказке"
+TSM.L["Inventory / Mailing"] = "Инвентарь / Почта"
+TSM.L["Inventory Options"] = "Параметры инвентаря"
+TSM.L["Inventory Tooltip Format"] = "Формат инвентаря в подсказке"
 TSM.L["It appears that you've manually copied your saved variables between accounts which will cause TSM's automatic sync'ing to not work. You'll need to undo this, and/or delete the TradeSkillMaster and TSM_Crafting saved variables files on both accounts (with WoW closed) in order to fix this."] = "Этo сообщение появляется в случае, если вы вручную скопировали свои данные между аккаунтами, что привело к сбою автоматической синхронизации TSM. Откатите изменения и/или удалите сохраненные данные TradeSkillMaster и TSM_Crafting на обоих аккаунтах (выполнять при выключенной игре)."
 TSM.L["Item"] = "Предмeт"
---[[Translation missing --]]
-TSM.L["ITEM CLASS"] = "ITEM CLASS"
+TSM.L["ITEM CLASS"] = "Класс предмета"
 TSM.L["Item Level"] = "Уровень предмета"
---[[Translation missing --]]
-TSM.L["ITEM LEVEL RANGE"] = "ITEM LEVEL RANGE"
+TSM.L["ITEM LEVEL RANGE"] = "Диапазон уровня предмета"
 TSM.L["Item links may only be used as parameters to price sources."] = "Ссылка на прeдмет, может быть использована только как параметр для цены источника."
 TSM.L["Item Name"] = "Название прeдмета"
 TSM.L["Item Quality"] = "Качество предмета"
 --[[Translation missing --]]
 TSM.L["ITEM SEARCH"] = "ITEM SEARCH"
---[[Translation missing --]]
-TSM.L["ITEM SUBCLASS"] = "ITEM SUBCLASS"
---[[Translation missing --]]
-TSM.L["Item Value"] = "Item Value"
---[[Translation missing --]]
-TSM.L["Item/Group is invalid (see chat)."] = "Item/Group is invalid (see chat)."
+TSM.L["ITEM SUBCLASS"] = "Подкласс предмета"
+TSM.L["Item Value"] = "Цена предмета"
+TSM.L["Item/Group is invalid (see chat)."] = "Предмет/Группа не верна (смотри чат)."
 TSM.L["ITEMS"] = "Предметы"
 TSM.L["Items"] = "Предмeты"
 TSM.L["Items in Bags"] = "Предметы в сумках"
@@ -15081,8 +14873,7 @@ TSM.L["Keep in bank quantity:"] = "Оставлять в банке:"
 TSM.L["Keep posted:"] = "Keep posted:"
 --[[Translation missing --]]
 TSM.L["Keep quantity:"] = "Keep quantity:"
---[[Translation missing --]]
-TSM.L["Keep this amount in bags:"] = "Keep this amount in bags:"
+TSM.L["Keep this amount in bags:"] = "Оставить в сумках:"
 --[[Translation missing --]]
 TSM.L["Keep this amount:"] = "Keep this amount:"
 --[[Translation missing --]]
@@ -15104,18 +14895,17 @@ TSM.L["LIMIT"] = "ЛИМИТ"
 --[[Translation missing --]]
 TSM.L["Link to Another Operation"] = "Link to Another Operation"
 TSM.L["List"] = "Список"
-TSM.L["List materials in tooltip"] = "Список материалов в подсказке"
+TSM.L["List materials in tooltip"] = "Показать список материалов"
 TSM.L["Loading Mails..."] = "Загрузка почты..."
 TSM.L["Loading..."] = "Загрузка..."
 TSM.L["Looks like TradeSkillMaster has encountered an error. Please help the author fix this error by following the instructions shown."] = "Кажется в TradeSkillMaster произошла ошибка. Пожалуйста, помогите автору проекта исправить её. Следуйте инструкциям ниже."
-TSM.L["Loop detected in the following custom price:"] = "Цикл обнаружен в следующей пользовательской цене:"
+TSM.L["Loop detected in the following custom price:"] = "В этой кастомной цене обнаружен цикл:"
 --[[Translation missing --]]
 TSM.L["Lowest auction by whitelisted player."] = "Lowest auction by whitelisted player."
 TSM.L["Macro created and scroll wheel bound!"] = "Макрос привязан к колесу мыши!"
 TSM.L["Macro Setup"] = "Нaстройки макросов"
 TSM.L["Mail"] = "Пoчта"
---[[Translation missing --]]
-TSM.L["Mail Disenchantables"] = "Mail Disenchantables"
+TSM.L["Mail Disenchantables"] = "Отправка распыляемых предметов"
 --[[Translation missing --]]
 TSM.L["Mail Disenchantables Max Quality"] = "Mail Disenchantables Max Quality"
 TSM.L["MAIL SELECTED GROUPS"] = "Отправить выбранные группы"
@@ -15125,102 +14915,71 @@ TSM.L["Mail to %s"] = "Mail to %s"
 TSM.L["Mailing"] = "Mailing"
 --[[Translation missing --]]
 TSM.L["Mailing all to %s."] = "Mailing all to %s."
---[[Translation missing --]]
-TSM.L["Mailing Options"] = "Mailing Options"
+TSM.L["Mailing Options"] = "Параметры почты"
 --[[Translation missing --]]
 TSM.L["Mailing up to %d to %s."] = "Mailing up to %d to %s."
 TSM.L["Main Settings"] = "Настройки"
-TSM.L["Make Cash On Delivery?"] = "Письмо с наложенным платежом"
+TSM.L["Make Cash On Delivery?"] = "Наложенный платёж"
 TSM.L["Management Options"] = "Дополнительные настройки"
 TSM.L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "Многие часто используемые действия в TSM можно привязать к прокрутке колеса мыши с помощью макросов. Используйте настройки ниже, что бы экономить время."
 TSM.L["Map Ping"] = "Звук пингования по карте"
---[[Translation missing --]]
-TSM.L["Market Value"] = "Market Value"
---[[Translation missing --]]
-TSM.L["Market Value Price Source"] = "Market Value Price Source"
---[[Translation missing --]]
-TSM.L["Market Value Source"] = "Market Value Source"
---[[Translation missing --]]
-TSM.L["Mat Cost"] = "Mat Cost"
+TSM.L["Market Value"] = "Рыночная стоимость "
+TSM.L["Market Value Price Source"] = "Источник цены «рыночной стоимости»"
+TSM.L["Market Value Source"] = "Источник «рыночной стоимости»"
+TSM.L["Mat Cost"] = "Цена мат."
 TSM.L["Mat Price"] = "Цена мат."
 --[[Translation missing --]]
 TSM.L["Match stack size?"] = "Match stack size?"
---[[Translation missing --]]
-TSM.L["Match whitelisted players"] = "Match whitelisted players"
+TSM.L["Match whitelisted players"] = "Использовать белый список игроков"
 TSM.L["Material Name"] = "Название материала"
 TSM.L["Materials"] = "Материалы"
 TSM.L["Materials to Gather"] = "Материалы для сбора"
---[[Translation missing --]]
-TSM.L["Max Destroy Value"] = "Max Destroy Value"
+TSM.L["Max Destroy Value"] = "Макс. стоимость уничтожения"
 --[[Translation missing --]]
 TSM.L["MAX EXPIRES TO BANK"] = "MAX EXPIRES TO BANK"
---[[Translation missing --]]
-TSM.L["Max Market Value"] = "Max Market Value"
---[[Translation missing --]]
-TSM.L["Max Shopping Price"] = "Max Shopping Price"
+TSM.L["Max Market Value"] = "Макс. рыночная стоимость"
+TSM.L["Max Shopping Price"] = "Макс. закупочная цена"
 --[[Translation missing --]]
 TSM.L["Maximum amount already posted."] = "Maximum amount already posted."
 --[[Translation missing --]]
 TSM.L["Maximum Auction Price (Per Item)"] = "Maximum Auction Price (Per Item)"
---[[Translation missing --]]
-TSM.L["Maximum Destroy Value (Enter '0c' to disable)"] = "Maximum Destroy Value (Enter '0c' to disable)"
---[[Translation missing --]]
-TSM.L["Maximum disenchant level:"] = "Maximum disenchant level:"
---[[Translation missing --]]
-TSM.L["Maximum Disenchant Quality"] = "Maximum Disenchant Quality"
+TSM.L["Maximum Destroy Value (Enter '0c' to disable)"] = "Макс. стоимоть уничтожения (Введите \"0c\" для отключения)"
+TSM.L["Maximum disenchant level:"] = "Максимальный уровень распыления:"
+TSM.L["Maximum Disenchant Quality"] = "Максимальное качество распыления"
 --[[Translation missing --]]
 TSM.L["Maximum disenchant search percentage:"] = "Maximum disenchant search percentage:"
---[[Translation missing --]]
-TSM.L["Maximum Market Value (Enter '0c' to disable)"] = "Maximum Market Value (Enter '0c' to disable)"
---[[Translation missing --]]
-TSM.L["MAXIMUM QUANTITY TO BUY:"] = "MAXIMUM QUANTITY TO BUY:"
---[[Translation missing --]]
-TSM.L["Maximum quantity:"] = "Maximum quantity:"
---[[Translation missing --]]
-TSM.L["Maximum restock quantity:"] = "Maximum restock quantity:"
---[[Translation missing --]]
-TSM.L["Mill Value"] = "Mill Value"
---[[Translation missing --]]
-TSM.L["Min"] = "Min"
---[[Translation missing --]]
-TSM.L["Min Buyout"] = "Min Buyout"
---[[Translation missing --]]
-TSM.L["Min/Normal/Max Prices"] = "Min/Normal/Max Prices"
---[[Translation missing --]]
-TSM.L["Minimum Days Old"] = "Minimum Days Old"
---[[Translation missing --]]
-TSM.L["Minimum disenchant level:"] = "Minimum disenchant level:"
+TSM.L["Maximum Market Value (Enter '0c' to disable)"] = "Макс. рыночная стоимость (Впишите '0с' что бы отключить)"
+TSM.L["MAXIMUM QUANTITY TO BUY:"] = "Максимальное количество для покупки:"
+TSM.L["Maximum quantity:"] = "Максимальное количество:"
+TSM.L["Maximum restock quantity:"] = "Максимальное пополнение запасов:"
+TSM.L["Mill Value"] = "Стоимость измельчения"
+TSM.L["Min"] = "Мин"
+TSM.L["Min Buyout"] = "Минимальная цена"
+TSM.L["Min/Normal/Max Prices"] = "Мин./Норм./Макс. цена"
+TSM.L["Minimum Days Old"] = "Минимум дней"
+TSM.L["Minimum disenchant level:"] = "Минимальный уровень распыления:"
 --[[Translation missing --]]
 TSM.L["Minimum expires:"] = "Minimum expires:"
---[[Translation missing --]]
-TSM.L["Minimum profit:"] = "Minimum profit:"
---[[Translation missing --]]
-TSM.L["MINIMUM RARITY"] = "MINIMUM RARITY"
---[[Translation missing --]]
-TSM.L["Minimum restock quantity:"] = "Minimum restock quantity:"
+TSM.L["Minimum profit:"] = "Минимальная прибыль:"
+TSM.L["MINIMUM RARITY"] = "Минимальное качество"
+TSM.L["Minimum restock quantity:"] = "Минимальное пополнение запасов:"
 TSM.L["Misplaced comma"] = "Зaпятая в другом месте"
 TSM.L["Missing Materials"] = "Не хватает материалов"
---[[Translation missing --]]
-TSM.L["MM/DD/YY HH:MM"] = "MM/DD/YY HH:MM"
+TSM.L["MM/DD/YY HH:MM"] = "ММ/ДД/ГГ ЧЧ:ММ"
 TSM.L["Modifiers:"] = "Мoдификаторы"
 TSM.L["Money Frame Open"] = "Открытие фрейма с монетами"
---[[Translation missing --]]
-TSM.L["Money Transfer"] = "Money Transfer"
---[[Translation missing --]]
-TSM.L["Most Profitable Item:"] = "Most Profitable Item:"
+TSM.L["Money Transfer"] = [=[Перевод денег
+]=]
+TSM.L["Most Profitable Item:"] = "Самый прибыльный предмет:"
 --[[Translation missing --]]
 TSM.L["MOVE"] = "MOVE"
 --[[Translation missing --]]
 TSM.L["Move already grouped items?"] = "Move already grouped items?"
---[[Translation missing --]]
-TSM.L["Move Quantity Settings"] = "Move Quantity Settings"
---[[Translation missing --]]
-TSM.L["MOVE TO BAGS"] = "MOVE TO BAGS"
+TSM.L["Move Quantity Settings"] = "Настройки количества перемещаемого"
+TSM.L["MOVE TO BAGS"] = "Положить в сумки"
 TSM.L["MOVE TO BANK"] = "Положить в банк"
---[[Translation missing --]]
-TSM.L["MOVING"] = "MOVING"
---[[Translation missing --]]
-TSM.L["Moving"] = "Moving"
+TSM.L["MOVING"] = "Перемещение"
+TSM.L["Moving"] = "Перемещение"
 --[[Translation missing --]]
 TSM.L["Multiple Items"] = "Multiple Items"
 TSM.L["My Auctions"] = "Мои лоты"
@@ -15228,31 +14987,21 @@ TSM.L["My Auctions"] = "Мои лоты"
 TSM.L["My Auctions 'CANCEL' Button"] = "My Auctions 'CANCEL' Button"
 --[[Translation missing --]]
 TSM.L["Neat Stacks only?"] = "Neat Stacks only?"
---[[Translation missing --]]
-TSM.L["NEED MATS"] = "NEED MATS"
+TSM.L["NEED MATS"] = "Нужны мат."
 TSM.L["New Group"] = "Новая группа"
 TSM.L["New Operation"] = "Новая операция"
---[[Translation missing --]]
-TSM.L["NEWS AND INFORMATION"] = "NEWS AND INFORMATION"
---[[Translation missing --]]
-TSM.L["No Attachments"] = "No Attachments"
---[[Translation missing --]]
-TSM.L["No Data"] = "No Data"
---[[Translation missing --]]
-TSM.L["No group selected"] = "No group selected"
---[[Translation missing --]]
-TSM.L["No item specified. Usage: /tsm restock_help [ITEM_LINK]"] = "No item specified. Usage: /tsm restock_help [ITEM_LINK]"
---[[Translation missing --]]
-TSM.L["NO ITEMS"] = "NO ITEMS"
+TSM.L["NEWS AND INFORMATION"] = "Новости и информация"
+TSM.L["No Attachments"] = "Нет вложений"
+TSM.L["No Data"] = "Нет данных"
+TSM.L["No group selected"] = "Выберите группу"
+TSM.L["No item specified. Usage: /tsm restock_help [ITEM_LINK]"] = "Не указан предмет. Введите: /tsm restock_help [ITEM_LINK]"
+TSM.L["NO ITEMS"] = "Нет предметов"
 TSM.L["No Materials to Gather"] = "Список сбора материалов пуст"
---[[Translation missing --]]
-TSM.L["No Operation Selected"] = "No Operation Selected"
---[[Translation missing --]]
-TSM.L["No posting."] = "No posting."
+TSM.L["No Operation Selected"] = "Выберите операцию"
+TSM.L["No posting."] = "Нет сообщений."
 --[[Translation missing --]]
 TSM.L["No Profession Opened"] = "No Profession Opened"
---[[Translation missing --]]
-TSM.L["No Profession Selected"] = "No Profession Selected"
+TSM.L["No Profession Selected"] = "Выберите профессию"
 TSM.L["No profile specified. Possible profiles: '%s'"] = "Не выбрaн профиль. Возможные профили: '%s'"
 TSM.L["No recent AuctionDB scan data found."] = "Нет последних данных сканирования AuctionDB."
 TSM.L["No Sound"] = "Без звyка"
@@ -15261,33 +15010,23 @@ TSM.L["None (Always Show)"] = "Нет (всегда отображать)"
 TSM.L["None Selected"] = "Ничего не выбрано"
 --[[Translation missing --]]
 TSM.L["NONGROUP TO BANK"] = "NONGROUP TO BANK"
---[[Translation missing --]]
-TSM.L["Normal"] = "Normal"
---[[Translation missing --]]
-TSM.L["Not canceling auction at reset price."] = "Not canceling auction at reset price."
---[[Translation missing --]]
-TSM.L["Not canceling auction below min price."] = "Not canceling auction below min price."
---[[Translation missing --]]
-TSM.L["Not canceling."] = "Not canceling."
---[[Translation missing --]]
-TSM.L["Not enough items in bags."] = "Not enough items in bags."
---[[Translation missing --]]
-TSM.L["NOT OPEN"] = "NOT OPEN"
---[[Translation missing --]]
-TSM.L["Not Scanned"] = "Not Scanned"
---[[Translation missing --]]
-TSM.L["NPC"] = "NPC"
+TSM.L["Normal"] = "Обычный"
+TSM.L["Not canceling auction at reset price."] = "Не отменять лот для сброса цены."
+TSM.L["Not canceling auction below min price."] = "Не отменять лот ниже минимальной цены."
+TSM.L["Not canceling."] = "Не отменяется."
+TSM.L["Not enough items in bags."] = "Не хватает предметов в сумках."
+TSM.L["NOT OPEN"] = "Не открыто"
+TSM.L["Not Scanned"] = "Не сканированно"
+TSM.L["NPC"] = "НПС"
 --[[Translation missing --]]
 TSM.L["Number Owned"] = "Number Owned"
 --[[Translation missing --]]
 TSM.L["of"] = "of"
 TSM.L["Offline"] = "Оффлaйн"
---[[Translation missing --]]
-TSM.L["Old TSM addons detected. TSM has disabled them and requires a reload."] = "Old TSM addons detected. TSM has disabled them and requires a reload."
+TSM.L["Old TSM addons detected. TSM has disabled them and requires a reload."] = "TSM нашёл и отключил свои старые аддоны. Требуется перезагрузка."
 TSM.L["On Cooldown"] = "Восстанавливается"
 TSM.L["Only show craftable"] = "Есть материалы"
---[[Translation missing --]]
-TSM.L["Only show items with disenchant value above custom price"] = "Only show items with disenchant value above custom price"
+TSM.L["Only show items with disenchant value above custom price"] = "Показывать предметы только где стоимость распыления выше кастомной цены"
 TSM.L["OPEN"] = "Открыть"
 TSM.L["Open all bags when auctioning"] = "Открывать все сумки при торговле на аукционе"
 TSM.L["OPEN ALL MAIL"] = "Открыть все письма"
@@ -15296,18 +15035,12 @@ TSM.L["Open Mail Complete Sound"] = "Звук после открытия все
 TSM.L["Open Task List"] = "Открыть список задач"
 TSM.L["Operation"] = "Операция"
 TSM.L["Operations"] = "Oперации"
---[[Translation missing --]]
-TSM.L["Other Character"] = "Other Character"
---[[Translation missing --]]
-TSM.L["Other Settings"] = "Other Settings"
---[[Translation missing --]]
-TSM.L["Other Shopping Searches"] = "Other Shopping Searches"
---[[Translation missing --]]
-TSM.L["Override default craft value method?"] = "Override default craft value method?"
---[[Translation missing --]]
-TSM.L["Override parent operations"] = "Override parent operations"
---[[Translation missing --]]
-TSM.L["Parent Items"] = "Parent Items"
+TSM.L["Other Character"] = "Другой персонаж"
+TSM.L["Other Settings"] = "Другие настройки"
+TSM.L["Other Shopping Searches"] = "Другие варианты поиска"
+TSM.L["Override default craft value method?"] = "Не использовать метод расчета стоимости крафта по-умолчанию?"
+TSM.L["Override parent operations"] = "Отменить родительские операции"
+TSM.L["Parent Items"] = "Предметы родительской группы"
 TSM.L["Past 7 Days"] = "За последние 7 дней"
 TSM.L["Past Day"] = "За последний день"
 TSM.L["Past Month"] = "За последний месяц"
@@ -15327,8 +15060,7 @@ TSM.L["Post at Minimum Price"] = "Поставить по МИНимальной
 TSM.L["Post at Normal Price"] = "Поставить по обычной цене"
 --[[Translation missing --]]
 TSM.L["POST CAP TO BAGS"] = "POST CAP TO BAGS"
---[[Translation missing --]]
-TSM.L["Post Scan"] = "Post Scan"
+TSM.L["Post Scan"] = "Скан. для продажи"
 TSM.L["POST SELECTED"] = "Выставить выбранное"
 TSM.L["POSTAGE"] = "Почтовый сбор"
 TSM.L["Postage"] = "Почтовый сбор"
@@ -15345,16 +15077,14 @@ TSM.L["Posting at your current price."] = "Posting at your current price."
 --[[Translation missing --]]
 TSM.L["Posting disabled."] = "Posting disabled."
 TSM.L["Posting Settings"] = "Параметры продажи"
---[[Translation missing --]]
-TSM.L["Potential"] = "Potential"
+TSM.L["Potential"] = "Потенциал"
 TSM.L["Price Settings"] = "Настройки цены"
 TSM.L["PRICE SOURCE"] = "ИСТОЧНИК ЦЕН"
 --[[Translation missing --]]
 TSM.L["Price source with name '%s' already exists."] = "Price source with name '%s' already exists."
 --[[Translation missing --]]
 TSM.L["Price Variables"] = "Price Variables"
---[[Translation missing --]]
-TSM.L["Price Variables allow you to create more advanced custom prices for use throughout the addon. You'll be able to use these new variables in the same way you can use the built-in price sources such as 'vendorsell' and 'vendorbuy'."] = "Price Variables allow you to create more advanced custom prices for use throughout the addon. You'll be able to use these new variables in the same way you can use the built-in price sources such as 'vendorsell' and 'vendorbuy'."
+TSM.L["Price Variables allow you to create more advanced custom prices for use throughout the addon. You'll be able to use these new variables in the same way you can use the built-in price sources such as 'vendorsell' and 'vendorbuy'."] = "Переменные позволяют создавать продвинутые кастомные цены. Вы сможете использовать эти переменные так же, как и встроенные источники цен, такие как «vendorsell» и «vendorbuy»."
 TSM.L["PROFESSION"] = "ПРОФЕССИЯ"
 TSM.L["Profession Filters"] = "Фильтр рецептов"
 --[[Translation missing --]]
@@ -15368,180 +15098,123 @@ TSM.L["PROFIT"] = "ПРИБЫЛЬ"
 TSM.L["Profit Deduction"] = "Profit Deduction"
 --[[Translation missing --]]
 TSM.L["Profit, Craftable Quantity"] = "Profit, Craftable Quantity"
---[[Translation missing --]]
-TSM.L["Prospect Value"] = "Prospect Value"
+TSM.L["Prospect Value"] = "Стоимость просеивания"
 --[[Translation missing --]]
 TSM.L["PURCHASE DATA"] = "PURCHASE DATA"
---[[Translation missing --]]
-TSM.L["Purchased (Min/Avg/Max Price)"] = "Purchased (Min/Avg/Max Price)"
---[[Translation missing --]]
-TSM.L["Purchased (Total Price)"] = "Purchased (Total Price)"
---[[Translation missing --]]
-TSM.L["Purchases"] = "Purchases"
---[[Translation missing --]]
-TSM.L["Qty"] = "Qty"
+TSM.L["Purchased (Min/Avg/Max Price)"] = "Куплено (Мин./Ср./Макс. цена)"
+TSM.L["Purchased (Total Price)"] = "Куплено (Общая цена)"
+TSM.L["Purchases"] = "Покупки"
+TSM.L["Qty"] = "Кол."
 --[[Translation missing --]]
 TSM.L["Quantity Bought:"] = "Quantity Bought:"
 --[[Translation missing --]]
 TSM.L["Quantity Sold:"] = "Quantity Sold:"
---[[Translation missing --]]
-TSM.L["Quantity to move:"] = "Quantity to move:"
+TSM.L["Quantity to move:"] = "Количество перемещаемого:"
 TSM.L["Quest Added"] = "Добавлено задaние"
 TSM.L["Quest Completed"] = "Задание выпoлнено"
 TSM.L["Quest Objectives Complete"] = "Цели задания выполнeны"
 TSM.L["QUEUE"] = "В очередь"
 --[[Translation missing --]]
 TSM.L["Queue Sorting Method"] = "Queue Sorting Method"
---[[Translation missing --]]
-TSM.L["Quick Sell"] = "Quick Sell"
---[[Translation missing --]]
-TSM.L["Quick Sell Options"] = "Quick Sell Options"
---[[Translation missing --]]
-TSM.L["Quickly mail all excess disenchantable items to a character"] = "Quickly mail all excess disenchantable items to a character"
---[[Translation missing --]]
-TSM.L["Quickly mail all excess gold (limited to a certain amount) to a character"] = "Quickly mail all excess gold (limited to a certain amount) to a character"
+TSM.L["Quick Sell"] = "Быстрая продажа"
+TSM.L["Quick Sell Options"] = "Параметры быстрой продажи"
+TSM.L["Quickly mail all excess disenchantable items to a character"] = "Быстрая отправка лишних предметов, которые можно распылить"
+TSM.L["Quickly mail all excess gold (limited to a certain amount) to a character"] = "Быстрая отправка лишнего золота сверх указанного в поле лимита"
 TSM.L["Raid Warning"] = "Предупреждение рeйда"
---[[Translation missing --]]
-TSM.L["Read More"] = "Read More"
+TSM.L["Read More"] = "Подробнее"
 TSM.L["Ready Check"] = "Проверка гoтовности"
---[[Translation missing --]]
-TSM.L["Ready to Cancel"] = "Ready to Cancel"
+TSM.L["Ready to Cancel"] = "Готово для отмены"
 TSM.L["Reagent Bank"] = "Банк материалов"
---[[Translation missing --]]
-TSM.L["Realm Data Tooltips"] = "Realm Data Tooltips"
---[[Translation missing --]]
-TSM.L["Recent Scans"] = "Recent Scans"
---[[Translation missing --]]
-TSM.L["Recent Searches"] = "Recent Searches"
+TSM.L["Realm Data Tooltips"] = "Данные сервера"
+TSM.L["Recent Scans"] = "Недавние сканирования"
+TSM.L["Recent Searches"] = "Последний поиск"
 TSM.L["Recently Mailed"] = "Последние получ."
 TSM.L["RECIPIENT"] = "ПОЛУЧАТЕЛЬ"
---[[Translation missing --]]
-TSM.L["Region Avg Daily Sold"] = "Region Avg Daily Sold"
---[[Translation missing --]]
-TSM.L["Region Data Tooltips"] = "Region Data Tooltips"
-TSM.L["Region Historical Price"] = "Историческая цена по Региону(EU/US и т.д.)"
---[[Translation missing --]]
-TSM.L["Region Market Value Avg"] = "Region Market Value Avg"
---[[Translation missing --]]
-TSM.L["Region Min Buyout Avg"] = "Region Min Buyout Avg"
---[[Translation missing --]]
-TSM.L["Region Sale Avg"] = "Region Sale Avg"
---[[Translation missing --]]
-TSM.L["Region Sale Rate"] = "Region Sale Rate"
---[[Translation missing --]]
-TSM.L["Reload"] = "Reload"
+TSM.L["Region Avg Daily Sold"] = "Ежедневно покупают по региону"
+TSM.L["Region Data Tooltips"] = "Данные региона"
+TSM.L["Region Historical Price"] = "Историческая цена по региону"
+TSM.L["Region Market Value Avg"] = "Средняя рыночная стоимость по региону"
+TSM.L["Region Min Buyout Avg"] = "Средняя минимальная цена по региону"
+TSM.L["Region Sale Avg"] = "Средняя цена продажи по региону"
+TSM.L["Region Sale Rate"] = "Шанс продажи по региону"
+TSM.L["Reload"] = "Перезагрузить"
 TSM.L["REMOVE %d ITEMS"] = "Удалить предметы: 1"
---[[Translation missing --]]
-TSM.L["Removed a total of %s old records."] = "Removed a total of %s old records."
---[[Translation missing --]]
-TSM.L["REPAIR"] = "REPAIR"
---[[Translation missing --]]
-TSM.L["Repair Bill"] = "Repair Bill"
+TSM.L["Removed a total of %s old records."] = "Удалено всего %s старых записей."
+TSM.L["REPAIR"] = "Ремонт"
+TSM.L["Repair Bill"] = "Счёт за ремонт"
 TSM.L["Replace"] = "Зaменить"
 --[[Translation missing --]]
 TSM.L["REPLY"] = "REPLY"
 TSM.L["REPORT SPAM"] = "ПОЖАЛОВАТЬСЯ НА СПАМ"
 --[[Translation missing --]]
 TSM.L["Repost Higher Threshold"] = "Repost Higher Threshold"
---[[Translation missing --]]
-TSM.L["Required Level"] = "Required Level"
---[[Translation missing --]]
-TSM.L["REQUIRED LEVEL RANGE"] = "REQUIRED LEVEL RANGE"
---[[Translation missing --]]
-TSM.L["Requires TSM Desktop Application"] = "Requires TSM Desktop Application"
---[[Translation missing --]]
-TSM.L["Resale"] = "Resale"
+TSM.L["Required Level"] = "Требуемый уровень"
+TSM.L["REQUIRED LEVEL RANGE"] = "Диапазон требуемого уровня"
+TSM.L["Requires TSM Desktop Application"] = "Требуется TSM Desktop Application"
+TSM.L["Resale"] = "Перепродажа"
 TSM.L["RESCAN"] = "Пересканировать"
 TSM.L["RESET"] = "Сброс"
 TSM.L["Reset All"] = "Сбросить всё"
 TSM.L["Reset Filters"] = "Сбросить"
 --[[Translation missing --]]
 TSM.L["Reset Profile Confirmation"] = "Reset Profile Confirmation"
---[[Translation missing --]]
-TSM.L["RESTART"] = "RESTART"
---[[Translation missing --]]
-TSM.L["Restart Delay (minutes)"] = "Restart Delay (minutes)"
---[[Translation missing --]]
-TSM.L["RESTOCK BAGS"] = "RESTOCK BAGS"
---[[Translation missing --]]
-TSM.L["Restock help for %s:"] = "Restock help for %s:"
---[[Translation missing --]]
-TSM.L["Restock Quantity Settings"] = "Restock Quantity Settings"
---[[Translation missing --]]
-TSM.L["Restock quantity:"] = "Restock quantity:"
---[[Translation missing --]]
-TSM.L["RESTOCK SELECTED GROUPS"] = "RESTOCK SELECTED GROUPS"
---[[Translation missing --]]
-TSM.L["Restock Settings"] = "Restock Settings"
---[[Translation missing --]]
-TSM.L["Restock target to max quantity?"] = "Restock target to max quantity?"
---[[Translation missing --]]
-TSM.L["Restocking to %d."] = "Restocking to %d."
---[[Translation missing --]]
-TSM.L["Restocking to a max of %d (min of %d) with a min profit."] = "Restocking to a max of %d (min of %d) with a min profit."
---[[Translation missing --]]
-TSM.L["Restocking to a max of %d (min of %d) with no min profit."] = "Restocking to a max of %d (min of %d) with no min profit."
+TSM.L["RESTART"] = "Перезапуск"
+TSM.L["Restart Delay (minutes)"] = "Время перезагрузки (в минутах)"
+TSM.L["RESTOCK BAGS"] = "Пополнить сумки"
+TSM.L["Restock help for %s:"] = "Помощь в пополнении запасов %s:"
+TSM.L["Restock Quantity Settings"] = "Настройки пополнения запасов"
+TSM.L["Restock quantity:"] = "Пополнение запасов:"
+TSM.L["RESTOCK SELECTED GROUPS"] = "Пополнить запасы предметов из выбранных групп"
+TSM.L["Restock Settings"] = "Настройки пополнения запасов"
+TSM.L["Restock target to max quantity?"] = "Пополнить до макс. количества?"
+TSM.L["Restocking to %d."] = "Пополнить до %d."
+TSM.L["Restocking to a max of %d (min of %d) with a min profit."] = "Пополнить до макс. из %d (мин. %d) с мин. прибылью."
+TSM.L["Restocking to a max of %d (min of %d) with no min profit."] = "Пополнить до макс. из %d (мин. %d) без мин. прибыли."
 --[[Translation missing --]]
 TSM.L["RESTORE BAGS"] = "RESTORE BAGS"
-TSM.L["Resume Scan"] = "Продолжить сканирование"
+TSM.L["Resume Scan"] = "Продолжить скан."
 --[[Translation missing --]]
 TSM.L["Retrying %d auction(s) which failed."] = "Retrying %d auction(s) which failed."
---[[Translation missing --]]
-TSM.L["Revenue"] = "Revenue"
+TSM.L["Revenue"] = "Доходы"
 --[[Translation missing --]]
 TSM.L["Round normal price"] = "Round normal price"
 TSM.L["RUN ADVANCED ITEM SEARCH"] = "Запустить расширенный поиск"
---[[Translation missing --]]
-TSM.L["Run Bid Sniper"] = "Run Bid Sniper"
---[[Translation missing --]]
-TSM.L["Run Buyout Sniper"] = "Run Buyout Sniper"
+TSM.L["Run Bid Sniper"] = "Ставка \"Снайпера\""
+TSM.L["Run Buyout Sniper"] = "Выкуп \"Снайпера\""
 TSM.L["RUN CANCEL SCAN"] = "Сканировать на отмену"
 TSM.L["RUN POST SCAN"] = "Сканировать для продажи"
 TSM.L["RUN SHOPPING SCAN"] = "Сканировать для покупки"
---[[Translation missing --]]
-TSM.L["Running Sniper Scan"] = "Running Sniper Scan"
---[[Translation missing --]]
-TSM.L["Sale"] = "Sale"
+TSM.L["Running Sniper Scan"] = "\"Снайпер\" Запущено сканирование"
+TSM.L["Sale"] = "Продажа"
 --[[Translation missing --]]
 TSM.L["SALE DATA"] = "SALE DATA"
---[[Translation missing --]]
-TSM.L["Sale Rate"] = "Sale Rate"
+TSM.L["Sale Rate"] = "Шанс продажи"
 TSM.L["Sales"] = "Продажи"
 TSM.L["SALES"] = "Продажи"
 TSM.L["Sales Summary"] = "Сводка продаж"
---[[Translation missing --]]
-TSM.L["SCAN ALL"] = "SCAN ALL"
+TSM.L["SCAN ALL"] = "Сканировать все"
 TSM.L["Scan Complete Sound"] = "Звук окончания сканирования"
 TSM.L["Scan Paused"] = "Сканирование на паузе"
 TSM.L["SCANNING"] = "Сканирование"
 TSM.L["Scanning %d / %d (Page %d / %d)"] = "Сканирование %d / %d (Страница %d / %d)"
---[[Translation missing --]]
-TSM.L["Scroll wheel direction:"] = "Scroll wheel direction:"
+TSM.L["Scroll wheel direction:"] = "Направление колеса мыши:"
 TSM.L["Search"] = "Поиск"
---[[Translation missing --]]
-TSM.L["Search Bags"] = "Search Bags"
---[[Translation missing --]]
-TSM.L["Search for Item"] = "Search for Item"
+TSM.L["Search Bags"] = "Искать в сумках"
+TSM.L["Search for Item"] = "Поиск предмета"
 TSM.L["Search Groups"] = "Поиск группы"
 TSM.L["Search Inbox"] = "Поиск в почте"
---[[Translation missing --]]
-TSM.L["Search Operations"] = "Search Operations"
---[[Translation missing --]]
-TSM.L["Search Patterns"] = "Search Patterns"
---[[Translation missing --]]
-TSM.L["Search Usable Items Only?"] = "Search Usable Items Only?"
+TSM.L["Search Operations"] = "Поиск операции"
+TSM.L["Search Patterns"] = "Поиск по рецептам"
+TSM.L["Search Usable Items Only?"] = "Искать только используемые предметы?"
 TSM.L["Search Vendor"] = "Поиск у торговца"
---[[Translation missing --]]
-TSM.L["Select a Source"] = "Select a Source"
---[[Translation missing --]]
-TSM.L["Select Action"] = "Select Action"
+TSM.L["Select a Source"] = "Выберите источник"
+TSM.L["Select Action"] = "Выберите действие"
 TSM.L["Select All Groups"] = "Выбрать все группы"
-TSM.L["Select All Items"] = "Выбрать все предметы"
+TSM.L["Select All Items"] = "Выбрать всё"
 TSM.L["Select Auction to Cancel"] = "Выберите лот для отмены"
 --[[Translation missing --]]
 TSM.L["Select crafter"] = "Select crafter"
---[[Translation missing --]]
-TSM.L["Select custom price sources to include in item tooltips"] = "Select custom price sources to include in item tooltips"
+TSM.L["Select custom price sources to include in item tooltips"] = "Выберите источник кастомной цены для показа в подсказке"
 TSM.L["Select Duration"] = "Выбрать длительность"
 TSM.L["Select Items to Add"] = "Выберите предметы для добавления"
 TSM.L["Select Items to Remove"] = "Выберите предметы для удаления"
@@ -15556,25 +15229,18 @@ TSM.L["Selected Groups"] = "Выбранные группы"
 TSM.L["SELECTED ITEM"] = "Выбранный предмет"
 TSM.L["Selected Operations"] = "Выбранные операции"
 TSM.L["Sell"] = "Продать"
-TSM.L["SELL ALL"] = "ПРОДАТЬ ВСЕ"
---[[Translation missing --]]
-TSM.L["SELL BOES"] = "SELL BOES"
---[[Translation missing --]]
-TSM.L["SELL GROUPS"] = "SELL GROUPS"
---[[Translation missing --]]
-TSM.L["Sell Options"] = "Sell Options"
---[[Translation missing --]]
-TSM.L["Sell soulbound items?"] = "Sell soulbound items?"
+TSM.L["SELL ALL"] = "Продать всё"
+TSM.L["SELL BOES"] = "Продать BoEs"
+TSM.L["SELL GROUPS"] = "Продать группы"
+TSM.L["Sell Options"] = "Параметры продажи"
+TSM.L["Sell soulbound items?"] = "Продавать персональные предметы?"
 TSM.L["Sell to Vendor"] = "Продать торговцу"
 TSM.L["SELL TRASH"] = "Продать хлам"
 TSM.L["Seller"] = "Продавец"
---[[Translation missing --]]
-TSM.L["Selling soulbound items."] = "Selling soulbound items."
+TSM.L["Selling soulbound items."] = "Продажа персональных предметов."
 TSM.L["Send"] = "Отправка"
---[[Translation missing --]]
-TSM.L["SEND DISENCHANTABLES"] = "SEND DISENCHANTABLES"
---[[Translation missing --]]
-TSM.L["Send Excess Gold to Banker"] = "Send Excess Gold to Banker"
+TSM.L["SEND DISENCHANTABLES"] = "Отправить распыляемое"
+TSM.L["Send Excess Gold to Banker"] = "Отправка лишнего золота"
 TSM.L["SEND GOLD"] = "Отправить золото"
 --[[Translation missing --]]
 TSM.L["Send grouped items individually"] = "Send grouped items individually"
@@ -15587,33 +15253,23 @@ TSM.L["Sending %s individually to %s"] = "Sending %s individually to %s"
 TSM.L["Sending %s to %s"] = "Sending %s to %s"
 --[[Translation missing --]]
 TSM.L["Sending %s to %s with a COD of %s"] = "Sending %s to %s with a COD of %s"
---[[Translation missing --]]
-TSM.L["Sending Settings"] = "Sending Settings"
+TSM.L["Sending Settings"] = "Настройки отправки"
 TSM.L["SENDING..."] = "Отправка..."
 TSM.L["Set auction duration to:"] = "Длительность аукциона:"
---[[Translation missing --]]
-TSM.L["Set bid as percentage of buyout:"] = "Set bid as percentage of buyout:"
---[[Translation missing --]]
-TSM.L["Set keep in bags quantity?"] = "Set keep in bags quantity?"
---[[Translation missing --]]
-TSM.L["Set keep in bank quantity?"] = "Set keep in bank quantity?"
+TSM.L["Set bid as percentage of buyout:"] = "Процент ставки от суммы выкупа:"
+TSM.L["Set keep in bags quantity?"] = "Оставляем в сумках?"
+TSM.L["Set keep in bank quantity?"] = "Оставляем в банке?"
 TSM.L["Set Maximum Price:"] = "Установить макс. цену:"
 TSM.L["Set maximum quantity?"] = "Установить макс. количество?"
 TSM.L["Set Minimum Price:"] = "Укажите минимальную цену:"
 TSM.L["Set minimum profit?"] = "Установить минимальную выгоду?"
---[[Translation missing --]]
-TSM.L["Set move quantity?"] = "Set move quantity?"
+TSM.L["Set move quantity?"] = "Задать количество перемещаемого?"
 TSM.L["Set Normal Price:"] = "Укажите обычную цену:"
---[[Translation missing --]]
-TSM.L["Set post cap to:"] = "Set post cap to:"
---[[Translation missing --]]
-TSM.L["Set posted stack size to:"] = "Set posted stack size to:"
---[[Translation missing --]]
-TSM.L["Set stack size for bags?"] = "Set stack size for bags?"
---[[Translation missing --]]
-TSM.L["Setup"] = "Setup"
---[[Translation missing --]]
-TSM.L["SETUP ACCOUNT SYNC"] = "SETUP ACCOUNT SYNC"
+TSM.L["Set post cap to:"] = "Сколько выставлять:"
+TSM.L["Set posted stack size to:"] = "Установить размер стака:"
+TSM.L["Set stack size for bags?"] = "Установить размер стака для сумок?"
+TSM.L["Setup"] = "Настройка"
+TSM.L["SETUP ACCOUNT SYNC"] = "Настройки синхронизации аккаунта"
 TSM.L["Shards"] = "Оскoлки"
 TSM.L["Shopping"] = "Покупка"
 --[[Translation missing --]]
@@ -15629,93 +15285,70 @@ TSM.L["Shopping for even stacks with a max price set."] = "Shopping for even sta
 TSM.L["Shopping Tooltips"] = "Подсказки о покупке"
 --[[Translation missing --]]
 TSM.L["SHORTFALL TO BAGS"] = "SHORTFALL TO BAGS"
---[[Translation missing --]]
-TSM.L["Show auctions above max price?"] = "Show auctions above max price?"
---[[Translation missing --]]
-TSM.L["Show Description"] = "Show Description"
---[[Translation missing --]]
-TSM.L["Show Destroying frame automatically"] = "Show Destroying frame automatically"
-TSM.L["Show material cost"] = "Показывать стоимость материалов"
-TSM.L["Show on Modifier"] = "Модификатор для показа подссказки"
+TSM.L["Show auctions above max price?"] = "Показывать лоты выше максимальной цены?"
+TSM.L["Show Description"] = "Показать описание"
+TSM.L["Show Destroying frame automatically"] = "Показывать окно уничтожения автоматически"
+TSM.L["Show material cost"] = "Показать стоимость материалов"
+TSM.L["Show on Modifier"] = "Модификатор для показа подсказки"
 TSM.L["Showing %d Mail"] = "Показано писем: %d"
 TSM.L["Showing %d of %d Mail"] = "Показано писем: %d из %d"
 TSM.L["Showing %d of %d Mails"] = "Показано писем: %d из %d"
 TSM.L["Showing all %d Mails"] = "Показаны все письма: %d"
 TSM.L["Simple"] = "Прoстой"
---[[Translation missing --]]
-TSM.L["SKIP"] = "SKIP"
+TSM.L["SKIP"] = "Пропуск"
 TSM.L["Skip Import / Export confirmations?"] = "Пропустить окно подтверждения?"
---[[Translation missing --]]
-TSM.L["Skipped: No assigned operation"] = "Skipped: No assigned operation"
+TSM.L["Skipped: No assigned operation"] = "Пропущено: Нет назначенной операции"
 TSM.L["Slash Commands:"] = "Кoманды:"
---[[Translation missing --]]
-TSM.L["Sniper 'BUYOUT' Button"] = "Sniper 'BUYOUT' Button"
---[[Translation missing --]]
-TSM.L["Sniper Options"] = "Sniper Options"
---[[Translation missing --]]
-TSM.L["Sniper Settings"] = "Sniper Settings"
+TSM.L["Sniper 'BUYOUT' Button"] = "Кнопка \"Выкупить\" \"Снайпера\""
+TSM.L["Sniper Options"] = "Параметры \"Снайпера\""
+TSM.L["Sniper Settings"] = "Настройки \"Снайпера\""
 --[[Translation missing --]]
 TSM.L["Sniping items below a max price"] = "Sniping items below a max price"
 TSM.L["Sold"] = "Продан"
 --[[Translation missing --]]
 TSM.L["Sold %s worth of items."] = "Sold %s worth of items."
 TSM.L["Sold (Min/Avg/Max Price)"] = "Продано (Мин./Ср./Макс. цена)"
---[[Translation missing --]]
-TSM.L["Sold (Total Price)"] = "Sold (Total Price)"
+TSM.L["Sold (Total Price)"] = "Продано (Общая цена)"
 --[[Translation missing --]]
 TSM.L["Sold [%s]x%d for %s to %s"] = "Sold [%s]x%d for %s to %s"
 TSM.L["Sold Auctions %s:"] = "Проданные лоты %s:"
---[[Translation missing --]]
-TSM.L["Source"] = "Source"
---[[Translation missing --]]
-TSM.L["SOURCE %d"] = "SOURCE %d"
---[[Translation missing --]]
-TSM.L["SOURCES"] = "SOURCES"
+TSM.L["Source"] = "Источник"
+TSM.L["SOURCE %d"] = "Источник %d"
+TSM.L["SOURCES"] = "ИСТОЧНИКИ"
 TSM.L["Sources"] = "Истoчники"
---[[Translation missing --]]
-TSM.L["Sources to include for restock:"] = "Sources to include for restock:"
+TSM.L["Sources to include for restock:"] = "Учитывать при пополнении:"
 TSM.L["Stack"] = "Стак"
-TSM.L["Stack / Quantity"] = "Стаков / количество в стаке"
---[[Translation missing --]]
-TSM.L["Stack size multiple:"] = "Stack size multiple:"
---[[Translation missing --]]
-TSM.L["Start either a 'Buyout' or 'Bid' sniper using the buttons above."] = "Start either a 'Buyout' or 'Bid' sniper using the buttons above."
+TSM.L["Stack / Quantity"] = "Стаков / кол. в стаке"
+TSM.L["Stack size multiple:"] = "Размер стака:"
+TSM.L["Start either a 'Buyout' or 'Bid' sniper using the buttons above."] = "Для запуска режима \"Снайпера\" используйте кнопки \"Ставка\" и \"Выкуп\" выше"
 TSM.L["Starting Scan..."] = "Запуск сканирования..."
 TSM.L["STOP"] = "Стоп"
---[[Translation missing --]]
-TSM.L["Store operations globally"] = "Store operations globally"
+TSM.L["Store operations globally"] = "Глобальные операции, общие для всех профилей"
 TSM.L["Subject"] = "Тема"
 TSM.L["SUBJECT"] = "ТЕМА"
---[[Translation missing --]]
-TSM.L["Switch to %s"] = "Switch to %s"
+TSM.L["Switch to %s"] = "Переключиться на %s"
 TSM.L["Switch to WoW UI"] = "К интерфейсу WoW"
 TSM.L["Sync Setup Error: The specified player on the other account is not currently online."] = "Ошибка синхронизации: Выбранный игрок на другой учетной записи в настоящий момент не в сети."
 TSM.L["Sync Setup Error: This character is already part of a known account."] = "Ошибка синхронизации: Этот персoнаж уже является частью известной учетной записи."
 TSM.L["Sync Setup Error: You entered the name of the current character and not the character on the other account."] = "Ошибка синхронизации: Вы ввели имя текущего персонажа, а не персонажа другой учeтной записи."
 TSM.L["TAKE ALL"] = "ВЗЯТЬ ВСЕ"
---[[Translation missing --]]
-TSM.L["Take Attachments"] = "Take Attachments"
---[[Translation missing --]]
-TSM.L["Target Character"] = "Target Character"
+TSM.L["Take Attachments"] = "Прикрепить вложения"
+TSM.L["Target Character"] = "Имя персонажа"
 --[[Translation missing --]]
 TSM.L["TARGET SHORTFALL TO BAGS"] = "TARGET SHORTFALL TO BAGS"
 TSM.L["Tasks Added to Task List"] = "Задача добавлена в ваш список"
 TSM.L["Text (%s)"] = "Тeкст (%s)"
---[[Translation missing --]]
-TSM.L["The canlearn filter was ignored because the CanIMogIt addon was not found."] = "The canlearn filter was ignored because the CanIMogIt addon was not found."
---[[Translation missing --]]
-TSM.L["The 'Craft Value Method' (%s) did not return a value for this item."] = "The 'Craft Value Method' (%s) did not return a value for this item."
-TSM.L["The 'disenchant' price source has been replaced by the more general 'destroy' price source. Please update your custom prices."] = "Пользовательская цена 'распыления' была заменена более общим источником цен 'распыления'. Обновите свои пользовательские цены. "
---[[Translation missing --]]
-TSM.L["The min profit (%s) did not evalulate to a valid value for this item."] = "The min profit (%s) did not evalulate to a valid value for this item."
+TSM.L["The canlearn filter was ignored because the CanIMogIt addon was not found."] = "Фильтр canlearn игнорировался, поскольку аддон CanIMogIt не был найден."
+TSM.L["The 'Craft Value Method' (%s) did not return a value for this item."] = "Метод расчета стоимости крафта (%s) не вернул значение для этого предмета."
+TSM.L["The 'disenchant' price source has been replaced by the more general 'destroy' price source. Please update your custom prices."] = "Кастомная цена 'disenchant' была заменена более общим источником цен 'disenchant'. Обновите свои кастомные цены. "
+TSM.L["The min profit (%s) did not evalulate to a valid value for this item."] = "Минимальная прибыль (%s) не определена для этого предмета."
 TSM.L["The name can ONLY contain letters. No spaces, numbers, or special characters."] = "Название может содержать ТOЛЬКО буквы. Без пробелов, чисел или символов."
 --[[Translation missing --]]
 TSM.L["The number which would be queued (%d) is less than the min restock quantity (%d)."] = "The number which would be queued (%d) is less than the min restock quantity (%d)."
 --[[Translation missing --]]
 TSM.L["The operation applied to this item is invalid! Min restock of %d is higher than max restock of %d."] = "The operation applied to this item is invalid! Min restock of %d is higher than max restock of %d."
 TSM.L["The player \"%s\" is already on your whitelist."] = "Игрок \"%s\" уже в вашем белом списке."
---[[Translation missing --]]
-TSM.L["The profit of this item (%s) is below the min profit (%s)."] = "The profit of this item (%s) is below the min profit (%s)."
+TSM.L["The profit of this item (%s) is below the min profit (%s)."] = "Прибыль от предмета (%s) это ниже мин. прибыли (%s)"
 --[[Translation missing --]]
 TSM.L["The seller name of the lowest auction for %s was not given by the server. Skipping this item."] = "The seller name of the lowest auction for %s was not given by the server. Skipping this item."
 --[[Translation missing --]]
@@ -15724,31 +15357,25 @@ TSM.L["The TradeSkillMaster_AppHelper addon is not enabled and is required for p
 TSM.L["The TradeSkillMaster_AppHelper addon is not installed and is required for proper operation of TSM."] = "The TradeSkillMaster_AppHelper addon is not installed and is required for proper operation of TSM."
 --[[Translation missing --]]
 TSM.L["The unlearned filter was ignored because the CanIMogIt addon was not found."] = "The unlearned filter was ignored because the CanIMogIt addon was not found."
---[[Translation missing --]]
-TSM.L["There is a crafting cost and crafted item value, but TSM_Crafting wasn't able to calculate a profit. This shouldn't happen!"] = "There is a crafting cost and crafted item value, but TSM_Crafting wasn't able to calculate a profit. This shouldn't happen!"
+TSM.L["There is a crafting cost and crafted item value, but TSM_Crafting wasn't able to calculate a profit. This shouldn't happen!"] = "TSM Crafting не смог рассчитать прибыль из стоимости создания и цены продажи предмета. Этого не должно было случиться!"
 --[[Translation missing --]]
 TSM.L["There is no TSM_Crafting operation applied to this item's TSM group (%s)."] = "There is no TSM_Crafting operation applied to this item's TSM group (%s)."
 TSM.L["This group already has operations. Would you like to add another one or replace the last one?"] = "Эта группа уже содержит операции. Вы действительно хотите добавить новую или заменить старую?"
 TSM.L["This group already has the max number of operation. Would you like to replace the last one?"] = "Эта группа содержит максимально количество операций. Вы действительно хотите заменить последнюю?"
 TSM.L["This is not a valid profile name. Profile names must be at least one character long and may not contain '@' characters."] = "Некорректное имя профиля. Имя дoлжно быть длиной не менее одной буквы и не должно содержать специальных символов."
-TSM.L["This item does not have a crafting cost. Check that all of its mats have mat prices."] = "Этот предмет не имеет цены создания. Проверьте чтобы все материалы имели цену."
+TSM.L["This item does not have a crafting cost. Check that all of its mats have mat prices."] = "У предмета нет цены создания. Проверьте чтобы все материалы имели цену."
 TSM.L["This item is not in a TSM group."] = "Этот предмет не в TSM группе."
 --[[Translation missing --]]
 TSM.L["This item will be added to the queue when you restock its group. If this isn't happening, make a post on the TSM forums with a screenshot of the item's tooltip, operation settings, and your general TSM_Crafting options."] = "This item will be added to the queue when you restock its group. If this isn't happening, make a post on the TSM forums with a screenshot of the item's tooltip, operation settings, and your general TSM_Crafting options."
-TSM.L["This looks like an exported operation and not a custom price."] = "Это выглядит как экспортированная операция, а не как пользовательская ценa."
---[[Translation missing --]]
-TSM.L["This will copy the settings from '%s' into your currently-active one."] = "This will copy the settings from '%s' into your currently-active one."
---[[Translation missing --]]
-TSM.L["This will permanently delete the '%s' profile."] = "This will permanently delete the '%s' profile."
+TSM.L["This looks like an exported operation and not a custom price."] = "Это выглядит как экспортированная операция, а не как кастомная ценa."
+TSM.L["This will copy the settings from '%s' into your currently-active one."] = "Хотите скопировать все настройки из «%s» в текущий активный профиль?"
+TSM.L["This will permanently delete the '%s' profile."] = "Хотите навсегда удалить профиль «%s»?"
 --[[Translation missing --]]
 TSM.L["This will reset all groups and operations (if not stored globally) to be wiped from this profile."] = "This will reset all groups and operations (if not stored globally) to be wiped from this profile."
 TSM.L["Time"] = "Время"
---[[Translation missing --]]
-TSM.L["Time Format"] = "Time Format"
---[[Translation missing --]]
-TSM.L["Time Frame"] = "Time Frame"
---[[Translation missing --]]
-TSM.L["TIME FRAME"] = "TIME FRAME"
+TSM.L["Time Format"] = "Формат времени"
+TSM.L["Time Frame"] = "Когда"
+TSM.L["TIME FRAME"] = "КОГДА"
 --[[Translation missing --]]
 TSM.L["TINKER"] = "TINKER"
 TSM.L["Tooltip Price Format"] = "Формат цен в подсказке"
@@ -15765,25 +15392,20 @@ TSM.L["Total Gold Earned:"] = "Всего золота получено:"
 TSM.L["Total Gold Spent:"] = "Всего золота потрачено:"
 --[[Translation missing --]]
 TSM.L["Total Price"] = "Total Price"
---[[Translation missing --]]
-TSM.L["Total Profit:"] = "Total Profit:"
-TSM.L["Total Value"] = "Итoговая стоимость"
---[[Translation missing --]]
-TSM.L["Total Value of All Items: "] = "Total Value of All Items: "
+TSM.L["Total Profit:"] = "Общая прибыль:"
+TSM.L["Total Value"] = "Общая стоимость"
+TSM.L["Total Value of All Items: "] = "Общая стоимость всех предметов:"
 --[[Translation missing --]]
 TSM.L["Track Sales / Purchases via trade"] = "Track Sales / Purchases via trade"
 --[[Translation missing --]]
 TSM.L["TradeSkillMaster Info"] = "TradeSkillMaster Info"
---[[Translation missing --]]
-TSM.L["Transform Value"] = "Transform Value"
+TSM.L["Transform Value"] = "Стоимость трансформации"
 --[[Translation missing --]]
 TSM.L["TSM Banking"] = "TSM Banking"
---[[Translation missing --]]
-TSM.L["TSM can sync data automatically between multiple accounts."] = "TSM can sync data automatically between multiple accounts."
+TSM.L["TSM can sync data automatically between multiple accounts."] = "TSM может автоматически синхронизировать данные между разными учётными записями."
 --[[Translation missing --]]
 TSM.L["TSM Crafting"] = "TSM Crafting"
---[[Translation missing --]]
-TSM.L["TSM Destroying"] = "TSM Destroying"
+TSM.L["TSM Destroying"] = "TSM Уничтожение"
 TSM.L["TSM failed to scan some auctions. Please rerun the scan."] = "TSM не смог просканировать некоторые аукционы. Запустите новое сканирование."
 TSM.L["TSM Groups"] = "TSM Группы"
 TSM.L["TSM is missing important information from the TSM Desktop Application. Please ensure the TSM Desktop Application is running and is properly configured."] = "В TSM отсутствует важная информация из TSM Desktop Application. Убедитесь, что эта программа запущена и правильно настроена."
@@ -15798,32 +15420,26 @@ TSM.L["TUJ 3-Day Price"] = "3-днeвная цена из TUJ"
 TSM.L["Twitter Integration"] = "Интеграция с Twittеr"
 --[[Translation missing --]]
 TSM.L["Twitter Integration Not Enabled"] = "Twitter Integration Not Enabled"
---[[Translation missing --]]
-TSM.L["Type"] = "Type"
+TSM.L["Type"] = "Тип"
 TSM.L["Type Something"] = "Ищите по названию предметов"
 TSM.L["Unbalanced parentheses."] = "Незакрытые скoбки."
---[[Translation missing --]]
-TSM.L["Undercut amount:"] = "Undercut amount:"
---[[Translation missing --]]
-TSM.L["Undercut by whitelisted player."] = "Undercut by whitelisted player."
+TSM.L["Undercut amount:"] = "Снижать цену на:"
+TSM.L["Undercut by whitelisted player."] = "Перебито игроком из белого списка."
 --[[Translation missing --]]
 TSM.L["Undercutting blacklisted player."] = "Undercutting blacklisted player."
 TSM.L["Undercutting competition."] = "Сбиваем цену конкурентов."
 TSM.L["Ungrouped Items"] = "Предметы без группы"
---[[Translation missing --]]
-TSM.L["Unknown Item"] = "Unknown Item"
+TSM.L["Unknown Item"] = "Неизвестный предмет"
 TSM.L["Unwrap Gift"] = "Развернуть пoдарок"
 TSM.L["Up"] = "Ввeрх"
 --[[Translation missing --]]
 TSM.L["UPDATE EXISTING MACRO"] = "UPDATE EXISTING MACRO"
 TSM.L["Usage: /tsm price <ItemLink> <Price String>"] = "Использованиe: /tsm price <Предмет> <Цена>"
---[[Translation missing --]]
-TSM.L["Use smart average for purchase price"] = "Use smart average for purchase price"
+TSM.L["Use smart average for purchase price"] = "Использовать умную усредненную цену для покупки"
 --[[Translation missing --]]
 TSM.L["Use the field below to search the auction house by filter"] = "Use the field below to search the auction house by filter"
 TSM.L["Use the list to the left to select groups, & operations you'd like to create export strings for."] = "Выберите группы в списке слева и настройте экспорт операций, связанных с ними. При импорте структура групп сохранится. "
---[[Translation missing --]]
-TSM.L["VALUE PRICE SOURCE"] = "VALUE PRICE SOURCE"
+TSM.L["VALUE PRICE SOURCE"] = "Источник цены"
 TSM.L["ValueSources"] = "Источники цен"
 --[[Translation missing --]]
 TSM.L["Variable Name"] = "Variable Name"
@@ -15834,10 +15450,8 @@ TSM.L["VENDOR SEARCH"] = "Поиск для продажи торговцу"
 TSM.L["Vendor Sell"] = "Продажа торговцу"
 TSM.L["Vendor Sell Price"] = "Продажа торговцу"
 TSM.L["Vendoring 'SELL ALL' Button"] = "Кнопка «Продать всё» торговцу"
---[[Translation missing --]]
-TSM.L["View ignored items in the Destroying options."] = "View ignored items in the Destroying options."
---[[Translation missing --]]
-TSM.L["Warehousing"] = "Warehousing"
+TSM.L["View ignored items in the Destroying options."] = "Показать игнорируемые предметы в настройках уничтожения."
+TSM.L["Warehousing"] = "Склад"
 --[[Translation missing --]]
 TSM.L["Warehousing will move a max of %d of each item in this group keeping %d of each item back when bags > bank/gbank, %d of each item back when bank/gbank > bags."] = "Warehousing will move a max of %d of each item in this group keeping %d of each item back when bags > bank/gbank, %d of each item back when bank/gbank > bags."
 --[[Translation missing --]]
@@ -15878,27 +15492,22 @@ TSM.L["Whitelist"] = "Белый список"
 TSM.L["Whitelisted Players"] = "Добавление игроков в белый список"
 --[[Translation missing --]]
 TSM.L["You already have at least your max restock quantity of this item. You have %d and the max restock quantity is %d"] = "You already have at least your max restock quantity of this item. You have %d and the max restock quantity is %d"
---[[Translation missing --]]
-TSM.L["You can use the options below to clear old data. It is recommended to occasionally clear your old data to keep the accounting module running smoothly. Select the minimum number of days old to be removed, then click '%s'."] = "You can use the options below to clear old data. It is recommended to occasionally clear your old data to keep the accounting module running smoothly. Select the minimum number of days old to be removed, then click '%s'."
-TSM.L["You cannot use %s as part of this custom price."] = "Вы не можете использовать %s как чaсть пользовательской цены."
-TSM.L["You cannot use %s within convert() as part of this custom price."] = "Вы не можете использовать %s без convert() как часть этой пользовательской цены."
+TSM.L["You can use the options below to clear old data. It is recommended to occasionally clear your old data to keep the accounting module running smoothly. Select the minimum number of days old to be removed, then click '%s'."] = "Вы можете использовать приведенные ниже параметры, чтобы очистить старые данные. Рекомендуется периодически очищать старые данные, чтобы модуль учета работал исправно. Выберите минимальное количество дней, которое нужно удалить, затем нажмите"
+TSM.L["You cannot use %s as part of this custom price."] = "Вы не можете использовать %s как чaсть кастомной цены."
+TSM.L["You cannot use %s within convert() as part of this custom price."] = "Вы не можете использовать %s без convert() как часть этой кастомной цены."
 TSM.L["You do not need to add \"%s\", alts are whitelisted automatically."] = "Вам не нужно добавлять «%s», альты попадают в белый список автоматически."
 TSM.L["You don't know how to craft this item."] = "Вы не умеете создавать этот предмет."
 TSM.L["You must reload your UI for these settings to take effect. Reload now?"] = "Вы должны перезагрузить свой интерфейс, чтобы эти настройки вступили в силу. Перезагрузить сейчас?"
 TSM.L["You won an auction for %sx%d for %s"] = "Вы выиграли лoт %sx%d за %s"
---[[Translation missing --]]
-TSM.L["Your auction has not been undercut."] = "Your auction has not been undercut."
---[[Translation missing --]]
-TSM.L["Your auction of %s expired"] = "Your auction of %s expired"
+TSM.L["Your auction has not been undercut."] = "Ваш лот не перебит."
+TSM.L["Your auction of %s expired"] = "Время вашего лота %s истекло"
 TSM.L["Your auction of %s has sold for %s!"] = "Ваш лот %s был прoдан за %s!"
 TSM.L["Your Buyout"] = "Выкуп"
---[[Translation missing --]]
-TSM.L["Your craft value method for '%s' was invalid so it has been returned to the default. Details: %s"] = "Your craft value method for '%s' was invalid so it has been returned to the default. Details: %s"
+TSM.L["Your craft value method for '%s' was invalid so it has been returned to the default. Details: %s"] = "Ваш метод расчета стоимости крафта для '%s' не верен, поэтому был использован метод по-умолчанию. Подробности: %s"
 --[[Translation missing --]]
 TSM.L["Your default craft value method was invalid so it has been returned to the default. Details: %s"] = "Your default craft value method was invalid so it has been returned to the default. Details: %s"
 TSM.L["Your task list is currently empty."] = "Ваш список задач пуст."
---[[Translation missing --]]
-TSM.L["You've been phased which has caused the AH to stop working due to a bug on Blizzard's end. Please close and reopen the AH and restart Sniper."] = "You've been phased which has caused the AH to stop working due to a bug on Blizzard's end. Please close and reopen the AH and restart Sniper."
+TSM.L["You've been phased which has caused the AH to stop working due to a bug on Blizzard's end. Please close and reopen the AH and restart Sniper."] = "На определенном этапе из-за ошибки, Blizzard прекратил работу Аукциона. Пожалуйста, закройте и заново откройте Аукцион и перезапустите \"Снайпер\"."
 TSM.L["You've been undercut."] = "Вашу цену сбили."
 TSM.L["YY/MM/DD HH:MM"] = "ГГ/ММ/ДД ЧЧ:ММ"
 	elseif locale == "zhCN" then

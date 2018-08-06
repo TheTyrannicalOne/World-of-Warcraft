@@ -1,0 +1,155 @@
+
+FishingBuddy_Info = {
+	["FishTotals"] = {
+		[680001] = 9,
+		[625001] = 15,
+		[625000] = 15,
+		[680000] = 9,
+	},
+	["HiddenFishies"] = {
+	},
+	["FishingSkill"] = {
+		[680001] = 0,
+		[625001] = 0,
+	},
+	["DataFish"] = 0,
+	["Locales"] = {
+	},
+	["KnownZones"] = {
+		[130] = "The Culling of Stratholme",
+		[625] = "Dalaran (Broken Isles)",
+		[676] = "Broken Shore",
+		[641] = "Val'sharah",
+		[680] = "Suramar",
+		[696] = "Stormheim",
+		[550] = "Nagrand (Draenor)",
+	},
+	["FishingHoles"] = {
+		[680001] = {
+			[134574] = 8,
+			[124111] = 1,
+		},
+		[625001] = {
+			[124110] = 1,
+			[138777] = 10,
+			[133607] = 4,
+		},
+	},
+	["SubZones"] = {
+		[641000] = 1,
+		[641001] = "Emerald Bay",
+		[680000] = 1,
+		[130000] = 1,
+		[696000] = 1,
+		[625001] = "Margoss's Retreat",
+		[696001] = "Stonescar Gorge",
+		[625000] = 1,
+		[676000] = 1,
+		[550000] = 1,
+		[550001] = "Snarlpaw Ledge",
+		[676001] = "Felrage Strand",
+		[130001] = "The Culling of Stratholme",
+		[680001] = "Moonwhisper Gulch",
+	},
+	["Version"] = 19500,
+	["FishSchools"] = {
+		[680] = {
+			{
+				["y"] = 0.258821285050758,
+				["x"] = 0.342897241360431,
+				["sidx"] = 8001,
+				["kind"] = 0,
+				["count"] = 7,
+				["fish"] = {
+					[134574] = 7,
+				},
+			}, -- [1]
+			{
+				["y"] = 0.519867647661105,
+				["x"] = 0.376433458558074,
+				["sidx"] = 8002,
+				["kind"] = 0,
+				["count"] = 1,
+				["fish"] = {
+					[124111] = 1,
+				},
+			}, -- [2]
+		},
+	},
+	["FishInfo2"] = 0,
+	["ImppDBLoaded"] = 0,
+	["Fishies"] = {
+		[138777] = {
+			["enUS"] = "Drowned Mana",
+			["mods"] = 0,
+			["texture"] = 132852,
+			["level"] = 800,
+			["skill"] = 800,
+			["quality"] = 1,
+		},
+		[133703] = {
+			["enUS"] = "Pearlescent Conch",
+			["mods"] = 0,
+			["texture"] = 134434,
+			["level"] = 800,
+			["skill"] = 800,
+			["quality"] = 1,
+		},
+		[124107] = {
+			["enUS"] = "Cursed Queenfish",
+			["mods"] = 0,
+			["quality"] = 1,
+			["level"] = 800,
+			["skill"] = 800,
+			["texture"] = 1387364,
+		},
+		[133607] = {
+			["enUS"] = "Silver Mackerel",
+			["mods"] = 0,
+			["quality"] = 1,
+			["level"] = 800,
+			["skill"] = 800,
+			["texture"] = 133934,
+		},
+		[134574] = {
+			["texture"] = 237316,
+			["enUS"] = "Huge Runescale Koi",
+			["mods"] = 0,
+			["quest"] = true,
+			["canopen"] = false,
+			["level"] = 800,
+			["skill"] = 800,
+			["quality"] = 1,
+		},
+		[124110] = {
+			["enUS"] = "Stormray",
+			["mods"] = 0,
+			["quality"] = 1,
+			["level"] = 800,
+			["skill"] = 800,
+			["texture"] = 1387376,
+		},
+		[134564] = {
+			["texture"] = 237324,
+			["enUS"] = "Lively Cursed Queenfish",
+			["mods"] = 0,
+			["quest"] = true,
+			["canopen"] = false,
+			["level"] = 800,
+			["skill"] = 800,
+			["quality"] = 1,
+		},
+		[124111] = {
+			["enUS"] = "Runescale Koi",
+			["mods"] = 0,
+			["texture"] = 1387371,
+			["level"] = 800,
+			["skill"] = 800,
+			["quality"] = 1,
+		},
+	},
+	["missing"] = {
+		["Azsuna"] = true,
+		["Serpentshrine Cavern"] = true,
+	},
+}

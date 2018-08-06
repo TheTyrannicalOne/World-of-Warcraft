@@ -2,7 +2,7 @@
 RefluxDB = {
 	["emulated"] = {
 	},
-	["activeProfile"] = "Brewnheimer - Darkspear",
+	["activeProfile"] = "Fantastiburo - Zul'jin",
 	["addons"] = {
 	},
 	["ignored"] = {

@@ -3,25 +3,16 @@ MapsterDB = {
 	["namespaces"] = {
 		["FogClear"] = {
 			["profiles"] = {
-				["Bathal - Argent Dawn"] = {
-					["version"] = 2,
-				},
 				["Datgorg - Argent Dawn"] = {
 					["version"] = 2,
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["version"] = 2,
 				},
-				["Shaekhan - Argent Dawn"] = {
-					["version"] = 2,
-				},
-				["Vadder - Argent Dawn"] = {
-					["version"] = 2,
-				},
 				["Brotus - Argent Dawn"] = {
 					["version"] = 2,
 				},
-				["Towel-Monk"] = {
+				["LUI-Towelliee"] = {
 					["version"] = 1,
 				},
 				["Tyrannithal - Argent Dawn"] = {
@@ -30,7 +21,16 @@ MapsterDB = {
 				["Shanyt - Argent Dawn"] = {
 					["version"] = 2,
 				},
-				["Default"] = {
+				["Cowtastraphy - Argent Dawn"] = {
+					["version"] = 2,
+				},
+				["Bathal - Argent Dawn"] = {
+					["version"] = 2,
+				},
+				["Shaekhan - Argent Dawn"] = {
+					["version"] = 2,
+				},
+				["Vadder - Argent Dawn"] = {
 					["version"] = 2,
 				},
 				["Tyran - Argent Dawn"] = {
@@ -39,10 +39,16 @@ MapsterDB = {
 				["Mulmok - Argent Dawn"] = {
 					["version"] = 2,
 				},
-				["Cowtastraphy - Argent Dawn"] = {
+				["Default"] = {
 					["version"] = 2,
 				},
-				["LUI-Towelliee"] = {
+				["Fantastiburo - Zul'jin"] = {
+					["version"] = 1,
+				},
+				["Vancard - Zul'jin"] = {
+					["version"] = 1,
+				},
+				["Towel-Monk"] = {
 					["version"] = 1,
 				},
 				["Fantastiburo - Argent Dawn"] = {
@@ -61,24 +67,20 @@ MapsterDB = {
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Shanyt - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
-		["Bathal - Argent Dawn"] = {
-			["scale"] = 0.915698230266571,
-			["x"] = 193.15725667162,
-			["point"] = "TOPLEFT",
-			["y"] = -71.1882280573341,
-		},
 		["Datgorg - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
@@ -86,6 +88,42 @@ MapsterDB = {
 			["y"] = -71.1882280573341,
 		},
 		["Jingojaggot - Argent Dawn"] = {
+			["scale"] = 0.915698230266571,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
+		},
+		["Brotus - Argent Dawn"] = {
+			["scale"] = 0.915698230266571,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
+		},
+		["Towel-Monk"] = {
+			["scale"] = 0.915698230266571,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
+		},
+		["Tyrannithal - Argent Dawn"] = {
+			["scale"] = 0.915698230266571,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
+		},
+		["Shanyt - Argent Dawn"] = {
+			["scale"] = 1.0691260099411,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
+		},
+		["Cowtastraphy - Argent Dawn"] = {
+			["scale"] = 0.915698230266571,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
+		},
+		["Bathal - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
@@ -103,32 +141,6 @@ MapsterDB = {
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
 		},
-		["Brotus - Argent Dawn"] = {
-			["scale"] = 0.915698230266571,
-			["x"] = 193.15725667162,
-			["point"] = "TOPLEFT",
-			["y"] = -71.1882280573341,
-		},
-		["LUI-Towelliee"] = {
-			["scale"] = 0.915698230266571,
-			["x"] = 193.15725667162,
-			["point"] = "TOPLEFT",
-			["y"] = -71.1882280573341,
-		},
-		["Tyrannithal - Argent Dawn"] = {
-			["scale"] = 0.915698230266571,
-			["x"] = 193.15725667162,
-			["point"] = "TOPLEFT",
-			["y"] = -71.1882280573341,
-		},
-		["Shanyt - Argent Dawn"] = {
-			["scale"] = 1.0691260099411,
-			["y"] = -71.1882280573341,
-			["x"] = 193.15725667162,
-			["point"] = "TOPLEFT",
-		},
-		["Default"] = {
-		},
 		["Tyran - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
@@ -141,13 +153,21 @@ MapsterDB = {
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
 		},
-		["Cowtastraphy - Argent Dawn"] = {
+		["Default"] = {
+		},
+		["Fantastiburo - Zul'jin"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
 		},
-		["Towel-Monk"] = {
+		["Vancard - Zul'jin"] = {
+			["scale"] = 0.915698230266571,
+			["y"] = -71.1882280573341,
+			["x"] = 193.15725667162,
+			["point"] = "TOPLEFT",
+		},
+		["LUI-Towelliee"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",

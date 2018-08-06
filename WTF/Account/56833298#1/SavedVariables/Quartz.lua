@@ -113,6 +113,11 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
+				["Serbitechna - Darkspear"] = {
+					["y"] = 173,
+					["x"] = 869,
+					["w"] = 218,
+				},
 				["Brotus - Argent Dawn"] = {
 					["y"] = 173,
 					["x"] = 869,
@@ -158,12 +163,12 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Serbitechna - Darkspear"] = {
+				["Dialdaas - Darkspear"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Dialdaas - Darkspear"] = {
+				["Urbul - Zul'jin"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -173,22 +178,12 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Sinh - Dalaran"] = {
-					["y"] = 173,
-					["x"] = 869,
-					["w"] = 218,
-				},
 				["Tyrann - Zul'jin"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Thromar - Dalaran"] = {
-					["y"] = 173,
-					["x"] = 869,
-					["w"] = 218,
-				},
-				["Vadder - Argent Dawn"] = {
+				["Jingojaggot - Zul'jin"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -198,7 +193,7 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Tyran - Argent Dawn"] = {
+				["Vadder - Argent Dawn"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -208,7 +203,17 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
+				["Tyran - Argent Dawn"] = {
+					["y"] = 173,
+					["x"] = 869,
+					["w"] = 218,
+				},
 				["Cowtastraphy - Argent Dawn"] = {
+					["y"] = 173,
+					["x"] = 869,
+					["w"] = 218,
+				},
+				["Thromar - Dalaran"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -216,7 +221,7 @@ Quartz3DB = {
 				["Default"] = {
 					["x"] = 857.395568847656,
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -231,7 +236,7 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Urbul - Zul'jin"] = {
+				["Vancard - Zul'jin"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -306,6 +311,9 @@ Quartz3DB = {
 				["Narisaric - Dalaran"] = {
 					["x"] = 882.395558221442,
 				},
+				["Serbitechna - Darkspear"] = {
+					["x"] = 882.395558221442,
+				},
 				["Brotus - Argent Dawn"] = {
 					["x"] = 882.395558221442,
 				},
@@ -333,43 +341,43 @@ Quartz3DB = {
 				["Gillbourn - Runetotem"] = {
 					["x"] = 882.395558221442,
 				},
-				["Serbitechna - Darkspear"] = {
+				["Dialdaas - Darkspear"] = {
 					["x"] = 882.395558221442,
 				},
-				["Dialdaas - Darkspear"] = {
+				["Urbul - Zul'jin"] = {
 					["x"] = 882.395558221442,
 				},
 				["Shathiel - Darkspear"] = {
 					["x"] = 882.395558221442,
 				},
-				["Sinh - Dalaran"] = {
-					["x"] = 882.395558221442,
-				},
 				["Tyrann - Zul'jin"] = {
 					["x"] = 882.395558221442,
 				},
-				["Thromar - Dalaran"] = {
-					["x"] = 882.395558221442,
-				},
-				["Vadder - Argent Dawn"] = {
+				["Jingojaggot - Zul'jin"] = {
 					["x"] = 882.395558221442,
 				},
 				["Towel-Monk"] = {
 					["x"] = 882.395558221442,
 				},
-				["Tyran - Argent Dawn"] = {
+				["Vadder - Argent Dawn"] = {
 					["x"] = 882.395558221442,
 				},
 				["Tynster - Dalaran"] = {
 					["x"] = 882.395558221442,
 				},
+				["Tyran - Argent Dawn"] = {
+					["x"] = 882.395558221442,
+				},
 				["Cowtastraphy - Argent Dawn"] = {
+					["x"] = 882.395558221442,
+				},
+				["Thromar - Dalaran"] = {
 					["x"] = 882.395558221442,
 				},
 				["Default"] = {
 					["x"] = 882.395568847656,
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["x"] = 882.395558221442,
 				},
 				["Beeronimo - Dalaran"] = {
@@ -378,7 +386,7 @@ Quartz3DB = {
 				["Migimong - Runetotem"] = {
 					["x"] = 882.395558221442,
 				},
-				["Urbul - Zul'jin"] = {
+				["Vancard - Zul'jin"] = {
 					["x"] = 882.395558221442,
 				},
 				["Fantastiburo - Argent Dawn"] = {
@@ -597,6 +605,17 @@ Quartz3DB = {
 					["font"] = "weezerfont",
 					["texture"] = "Tukui",
 				},
+				["Serbitechna - Darkspear"] = {
+					["w"] = 447,
+					["y"] = 104.687440020117,
+					["h"] = 37,
+					["fontsize"] = 19,
+					["x"] = 752.432429475146,
+					["border"] = "RothSquare",
+					["nametextx"] = 14,
+					["font"] = "weezerfont",
+					["texture"] = "Tukui",
+				},
 				["Brotus - Argent Dawn"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
@@ -614,9 +633,9 @@ Quartz3DB = {
 					["h"] = 37,
 					["fontsize"] = 19,
 					["x"] = 752.432429475146,
-					["border"] = "RothSquare",
-					["nametextx"] = 14,
 					["font"] = "weezerfont",
+					["nametextx"] = 14,
+					["border"] = "RothSquare",
 					["texture"] = "Tukui",
 				},
 				["Tyrannithal - Argent Dawn"] = {
@@ -696,7 +715,7 @@ Quartz3DB = {
 					["font"] = "weezerfont",
 					["texture"] = "Tukui",
 				},
-				["Serbitechna - Darkspear"] = {
+				["Dialdaas - Darkspear"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
@@ -707,7 +726,7 @@ Quartz3DB = {
 					["font"] = "weezerfont",
 					["texture"] = "Tukui",
 				},
-				["Dialdaas - Darkspear"] = {
+				["Urbul - Zul'jin"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
@@ -729,17 +748,6 @@ Quartz3DB = {
 					["x"] = 752.432429475146,
 					["texture"] = "Tukui",
 				},
-				["Sinh - Dalaran"] = {
-					["w"] = 447,
-					["y"] = 104.687440020117,
-					["h"] = 37,
-					["fontsize"] = 19,
-					["x"] = 752.432429475146,
-					["border"] = "RothSquare",
-					["nametextx"] = 14,
-					["font"] = "weezerfont",
-					["texture"] = "Tukui",
-				},
 				["Tyrann - Zul'jin"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
@@ -751,7 +759,18 @@ Quartz3DB = {
 					["font"] = "weezerfont",
 					["texture"] = "Tukui",
 				},
-				["Thromar - Dalaran"] = {
+				["Jingojaggot - Zul'jin"] = {
+					["w"] = 447,
+					["y"] = 104.687440020117,
+					["h"] = 37,
+					["fontsize"] = 19,
+					["x"] = 752.432429475146,
+					["border"] = "RothSquare",
+					["nametextx"] = 14,
+					["font"] = "weezerfont",
+					["texture"] = "Tukui",
+				},
+				["Towel-Monk"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
@@ -773,7 +792,7 @@ Quartz3DB = {
 					["border"] = "RothSquare",
 					["texture"] = "Tukui",
 				},
-				["Towel-Monk"] = {
+				["Tynster - Dalaran"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
@@ -795,17 +814,6 @@ Quartz3DB = {
 					["x"] = 752.432429475146,
 					["texture"] = "Tukui",
 				},
-				["Tynster - Dalaran"] = {
-					["w"] = 447,
-					["y"] = 104.687440020117,
-					["h"] = 37,
-					["fontsize"] = 19,
-					["x"] = 752.432429475146,
-					["border"] = "RothSquare",
-					["nametextx"] = 14,
-					["font"] = "weezerfont",
-					["texture"] = "Tukui",
-				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
@@ -817,10 +825,21 @@ Quartz3DB = {
 					["x"] = 752.432429475146,
 					["texture"] = "Tukui",
 				},
+				["Thromar - Dalaran"] = {
+					["w"] = 447,
+					["y"] = 104.687440020117,
+					["h"] = 37,
+					["fontsize"] = 19,
+					["x"] = 752.432429475146,
+					["border"] = "RothSquare",
+					["nametextx"] = 14,
+					["font"] = "weezerfont",
+					["texture"] = "Tukui",
+				},
 				["Default"] = {
 					["x"] = 882.395568847656,
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
@@ -853,15 +872,15 @@ Quartz3DB = {
 					["font"] = "weezerfont",
 					["texture"] = "Tukui",
 				},
-				["Urbul - Zul'jin"] = {
+				["Vancard - Zul'jin"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
 					["fontsize"] = 19,
 					["x"] = 752.432429475146,
-					["border"] = "RothSquare",
-					["nametextx"] = 14,
 					["font"] = "weezerfont",
+					["nametextx"] = 14,
+					["border"] = "RothSquare",
 					["texture"] = "Tukui",
 				},
 				["Fantastiburo - Argent Dawn"] = {
@@ -912,9 +931,10 @@ Quartz3DB = {
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Thromar - Dalaran"] = "Thromar - Dalaran",
@@ -1233,6 +1253,22 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
+		["Serbitechna - Darkspear"] = {
+			["modules"] = {
+				["Tradeskill"] = false,
+				["Buff"] = false,
+				["Interrupt"] = false,
+				["Flight"] = false,
+				["Pet"] = false,
+				["Range"] = false,
+				["GCD"] = false,
+				["Focus"] = false,
+				["Timer"] = false,
+				["Swing"] = false,
+				["Mirror"] = false,
+				["Latency"] = false,
+			},
+		},
 		["Brotus - Argent Dawn"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
@@ -1377,7 +1413,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Serbitechna - Darkspear"] = {
+		["Dialdaas - Darkspear"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1393,7 +1429,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Dialdaas - Darkspear"] = {
+		["Urbul - Zul'jin"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1425,22 +1461,6 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Sinh - Dalaran"] = {
-			["modules"] = {
-				["Tradeskill"] = false,
-				["Buff"] = false,
-				["Interrupt"] = false,
-				["Flight"] = false,
-				["Pet"] = false,
-				["Range"] = false,
-				["GCD"] = false,
-				["Focus"] = false,
-				["Timer"] = false,
-				["Swing"] = false,
-				["Mirror"] = false,
-				["Latency"] = false,
-			},
-		},
 		["Tyrann - Zul'jin"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
@@ -1457,23 +1477,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Thromar - Dalaran"] = {
-			["modules"] = {
-				["Tradeskill"] = false,
-				["Buff"] = false,
-				["Interrupt"] = false,
-				["Flight"] = false,
-				["Pet"] = false,
-				["Range"] = false,
-				["GCD"] = false,
-				["Focus"] = false,
-				["Timer"] = false,
-				["Swing"] = false,
-				["Mirror"] = false,
-				["Latency"] = false,
-			},
-		},
-		["Vadder - Argent Dawn"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1505,7 +1509,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Tyran - Argent Dawn"] = {
+		["Vadder - Argent Dawn"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1537,7 +1541,39 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
+		["Tyran - Argent Dawn"] = {
+			["modules"] = {
+				["Tradeskill"] = false,
+				["Buff"] = false,
+				["Interrupt"] = false,
+				["Flight"] = false,
+				["Pet"] = false,
+				["Range"] = false,
+				["GCD"] = false,
+				["Focus"] = false,
+				["Timer"] = false,
+				["Swing"] = false,
+				["Mirror"] = false,
+				["Latency"] = false,
+			},
+		},
 		["Cowtastraphy - Argent Dawn"] = {
+			["modules"] = {
+				["Tradeskill"] = false,
+				["Buff"] = false,
+				["Interrupt"] = false,
+				["Flight"] = false,
+				["Pet"] = false,
+				["Range"] = false,
+				["GCD"] = false,
+				["Focus"] = false,
+				["Timer"] = false,
+				["Swing"] = false,
+				["Mirror"] = false,
+				["Latency"] = false,
+			},
+		},
+		["Thromar - Dalaran"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1555,7 +1591,7 @@ Quartz3DB = {
 		},
 		["Default"] = {
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Sinh - Dalaran"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1603,7 +1639,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Urbul - Zul'jin"] = {
+		["Vancard - Zul'jin"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,

@@ -135,6 +135,12 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
+				["Serbitechna - Darkspear"] = {
+					["minchatwidthdefault"] = 296,
+					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
+				},
 				["Brotus - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
@@ -143,9 +149,9 @@ Prat3DB = {
 				},
 				["LUI-Towelliee"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Tyrannithal - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
@@ -189,13 +195,13 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Serbitechna - Darkspear"] = {
+				["Dialdaas - Darkspear"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Dialdaas - Darkspear"] = {
+				["Urbul - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
@@ -207,29 +213,17 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Sinh - Dalaran"] = {
-					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
-					["initialized"] = true,
-				},
 				["Tyrann - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Thromar - Dalaran"] = {
+				["Jingojaggot - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
-				},
-				["Vadder - Argent Dawn"] = {
-					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
-					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Towel-Monk"] = {
 					["initialized"] = true,
@@ -237,13 +231,19 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["minchatwidthdefault"] = 296,
 				},
-				["Tyran - Argent Dawn"] = {
+				["Vadder - Argent Dawn"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Tynster - Dalaran"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Tynster - Dalaran"] = {
+				["Tyran - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
@@ -255,13 +255,19 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Default"] = {
+				["Thromar - Dalaran"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Default"] = {
+					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Sinh - Dalaran"] = {
 					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
@@ -279,11 +285,11 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
 				},
-				["Urbul - Zul'jin"] = {
+				["Vancard - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
@@ -445,6 +451,12 @@ Prat3DB = {
 					["showminimize"] = false,
 					["showMenu"] = false,
 				},
+				["Narisaric - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
 				["Brotus - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
@@ -487,11 +499,11 @@ Prat3DB = {
 					["showminimize"] = false,
 					["showMenu"] = false,
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Cowtastraphy - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showminimize"] = false,
 					["showMenu"] = false,
+					["showminimize"] = false,
 				},
 				["Gillbourn - Runetotem"] = {
 					["showBnet"] = false,
@@ -499,7 +511,61 @@ Prat3DB = {
 					["showminimize"] = false,
 					["showMenu"] = false,
 				},
-				["Narisaric - Dalaran"] = {
+				["Mulmok - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Dialdaas - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Sinh - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Serbitechna - Darkspear"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Thromar - Dalaran"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Vadder - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Tyrann - Zul'jin"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Tyran - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["Towel-Monk"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showminimize"] = false,
@@ -517,65 +583,11 @@ Prat3DB = {
 					["showMenu"] = false,
 					["showminimize"] = false,
 				},
-				["Dialdaas - Darkspear"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Cowtastraphy - Argent Dawn"] = {
+				["Vancard - Zul'jin"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showMenu"] = false,
 					["showminimize"] = false,
-				},
-				["Serbitechna - Darkspear"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Vadder - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Thromar - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Tyran - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Tyrann - Zul'jin"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Towel-Monk"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
-				},
-				["Mulmok - Argent Dawn"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showMenu"] = false,
-					["showminimize"] = false,
-				},
-				["Sinh - Dalaran"] = {
-					["showBnet"] = false,
-					["showButtons"] = false,
-					["showminimize"] = false,
-					["showMenu"] = false,
 				},
 				["Beeronimo - Dalaran"] = {
 					["showBnet"] = false,
@@ -589,7 +601,7 @@ Prat3DB = {
 					["showminimize"] = false,
 					["showMenu"] = false,
 				},
-				["Fantastiburo - Zul'jin"] = {
+				["Jingojaggot - Zul'jin"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showminimize"] = false,
@@ -776,6 +788,15 @@ Prat3DB = {
 						["ChatFrame1"] = 15,
 					},
 				},
+				["Serbitechna - Darkspear"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+				},
 				["Brotus - Argent Dawn"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
@@ -787,12 +808,12 @@ Prat3DB = {
 				},
 				["LUI-Towelliee"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Tyrannithal - Argent Dawn"] = {
 					["rememberfont"] = true,
@@ -857,7 +878,7 @@ Prat3DB = {
 						["ChatFrame1"] = 15,
 					},
 				},
-				["Serbitechna - Darkspear"] = {
+				["Dialdaas - Darkspear"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
@@ -866,7 +887,7 @@ Prat3DB = {
 						["ChatFrame1"] = 15,
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Urbul - Zul'jin"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
@@ -884,15 +905,6 @@ Prat3DB = {
 						["ChatFrame1"] = 15,
 					},
 				},
-				["Sinh - Dalaran"] = {
-					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
-						["ChatFrame1"] = 15,
-					},
-				},
 				["Tyrann - Zul'jin"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
@@ -902,13 +914,22 @@ Prat3DB = {
 						["ChatFrame1"] = 15,
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Jingojaggot - Zul'jin"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
+					},
+				},
+				["Towel-Monk"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
 					},
 				},
 				["Vadder - Argent Dawn"] = {
@@ -920,25 +941,16 @@ Prat3DB = {
 					},
 					["fontface"] = "weezerfont",
 				},
-				["Towel-Monk"] = {
+				["Tynster - Dalaran"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
 					},
 				},
 				["Tyran - Argent Dawn"] = {
-					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
-						["ChatFrame1"] = 15,
-					},
-				},
-				["Tynster - Dalaran"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
@@ -956,16 +968,25 @@ Prat3DB = {
 						["ChatFrame1"] = 15,
 					},
 				},
-				["Default"] = {
+				["Thromar - Dalaran"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+				},
+				["Default"] = {
+					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
 					["size"] = {
@@ -992,14 +1013,14 @@ Prat3DB = {
 						["ChatFrame1"] = 15,
 					},
 				},
-				["Urbul - Zul'jin"] = {
+				["Vancard - Zul'jin"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["rememberfont"] = true,
@@ -1043,9 +1064,10 @@ Prat3DB = {
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Thromar - Dalaran"] = "Thromar - Dalaran",
@@ -1288,6 +1310,18 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
+		["Serbitechna - Darkspear"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
 		["Brotus - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
@@ -1303,12 +1337,12 @@ Prat3DB = {
 		["LUI-Towelliee"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["AltNames"] = 2,
 				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
 				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
 				["ChatLog"] = 2,
+				["AltNames"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
@@ -1396,7 +1430,7 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
-		["Serbitechna - Darkspear"] = {
+		["Dialdaas - Darkspear"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
@@ -1408,15 +1442,15 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
-		["Dialdaas - Darkspear"] = {
+		["Urbul - Zul'jin"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
@@ -1432,103 +1466,7 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
-		["Sinh - Dalaran"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["Alias"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
 		["Tyrann - Zul'jin"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["ChatLog"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Thromar - Dalaran"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["ChatLog"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Vadder - Argent Dawn"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["Alias"] = 2,
-				["Paragraph"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["ChatLog"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Towel-Monk"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["Alias"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Tyran - Argent Dawn"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["Alias"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Tynster - Dalaran"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["ChatLog"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Cowtastraphy - Argent Dawn"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["Alias"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Default"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
@@ -1549,6 +1487,102 @@ Prat3DB = {
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Towel-Monk"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Vadder - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Tynster - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["Alias"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Tyran - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Cowtastraphy - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Thromar - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["Alias"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Default"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Sinh - Dalaran"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
@@ -1576,15 +1610,15 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
-		["Urbul - Zul'jin"] = {
+		["Vancard - Zul'jin"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 				["OriginalButtons"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},

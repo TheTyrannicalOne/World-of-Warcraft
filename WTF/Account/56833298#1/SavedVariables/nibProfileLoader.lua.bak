@@ -12,4 +12,6 @@ nibPLNames = {
 	"Argent Dawn - Shaekhan", -- [10]
 	"Argent Dawn - Fantastiburo", -- [11]
 	"Argent Dawn - Bathal", -- [12]
+	"Zul'jin - Vancard", -- [13]
+	"Zul'jin - Fantastiburo", -- [14]
 }

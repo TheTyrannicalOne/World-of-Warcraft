@@ -48,13 +48,16 @@ PawnCommon = {
 		["\"MrRobot\":SHAMAN1"] = {
 			["IconTexturePath"] = 136048,
 			["PerCharacterOptions"] = {
+				["Brotuss-Zul'jin"] = {
+					["Visible"] = true,
+				},
 				["Sinh-Dalaran"] = {
 					["Visible"] = true,
 				},
 				["Brotus-Argent Dawn"] = {
 					["Visible"] = true,
 				},
-				["Brotuss-Zul'jin"] = {
+				["Fantastiburo-Zul'jin"] = {
 					["Visible"] = true,
 				},
 				["Brewnheimer-Darkspear"] = {
@@ -109,6 +112,9 @@ PawnCommon = {
 			["IconTexturePath"] = 135846,
 			["PerCharacterOptions"] = {
 				["Tyran-Argent Dawn"] = {
+					["Visible"] = true,
+				},
+				["Vancard-Zul'jin"] = {
 					["Visible"] = true,
 				},
 				["Tyrann-Zul'jin"] = {
@@ -168,13 +174,13 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
+				["Vadder-Argent Dawn"] = {
+					["Visible"] = true,
+				},
 				["Panboozled-Runetotem"] = {
 					["Visible"] = true,
 				},
 				["Malivant-Dalaran"] = {
-					["Visible"] = true,
-				},
-				["Vadder-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 			},
@@ -276,9 +282,6 @@ PawnCommon = {
 		["\"MrRobot\":DRUID1"] = {
 			["IconTexturePath"] = 136096,
 			["PerCharacterOptions"] = {
-				["Fantastiburo-Zul'jin"] = {
-					["Visible"] = true,
-				},
 			},
 			["Color"] = "ff7d0a",
 			["LocalizedName"] = "Druid: Balance",

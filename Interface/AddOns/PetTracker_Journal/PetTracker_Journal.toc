@@ -3,7 +3,7 @@
 ## Notes: Load on demand modification for the Pet Journal.
 ## Author: Jaliborc (João Cardoso)
 ## X-Category: Battle Pets
-## Version: 8.0.4
+## Version: 8.0.5
 
 ## Dependencies: PetTracker
 ## LoadWith: Blizzard_Collections

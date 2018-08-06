@@ -28,9 +28,10 @@ GottaGoFastDB = {
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Thromar - Dalaran"] = "Thromar - Dalaran",
@@ -99,6 +100,9 @@ GottaGoFastDB = {
 		["Panboozled - Runetotem"] = {
 			["Version"] = 26500,
 		},
+		["Narisaric - Dalaran"] = {
+			["Version"] = 26500,
+		},
 		["Brotus - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
@@ -125,43 +129,43 @@ GottaGoFastDB = {
 		["Gillbourn - Runetotem"] = {
 			["Version"] = 26500,
 		},
-		["Narisaric - Dalaran"] = {
-			["Version"] = 26500,
-		},
 		["Serbitechna - Darkspear"] = {
-			["Version"] = 26500,
-		},
-		["Shathiel - Darkspear"] = {
 			["Version"] = 26500,
 		},
 		["Dialdaas - Darkspear"] = {
 			["Version"] = 26500,
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
+			["Version"] = 26500,
+		},
+		["Mulmok - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
+		["Fantastiburo - Zul'jin"] = {
+			["Version"] = 30000,
+		},
 		["Thromar - Dalaran"] = {
-			["Version"] = 26500,
-		},
-		["Vadder - Argent Dawn"] = {
-			["Version"] = 26500,
-		},
-		["Tyran - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
 		["Tynster - Dalaran"] = {
 			["Version"] = 26500,
 		},
+		["Tyran - Argent Dawn"] = {
+			["Version"] = 26500,
+		},
 		["Tyrannithal - Zul'jin"] = {
 			["Version"] = 26500,
 		},
-		["Default"] = {
+		["Vadder - Argent Dawn"] = {
 			["Version"] = 26500,
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Default"] = {
+			["Version"] = 30000,
+		},
+		["Sinh - Dalaran"] = {
 			["Version"] = 26500,
 		},
 		["Beeronimo - Dalaran"] = {
@@ -170,8 +174,8 @@ GottaGoFastDB = {
 		["Migimong - Runetotem"] = {
 			["Version"] = 26500,
 		},
-		["Mulmok - Argent Dawn"] = {
-			["Version"] = 26500,
+		["Vancard - Zul'jin"] = {
+			["Version"] = 30000,
 		},
 		["Fantastiburo - Argent Dawn"] = {
 			["Version"] = 26500,

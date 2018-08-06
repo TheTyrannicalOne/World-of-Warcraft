@@ -28,9 +28,10 @@ GottaGoFastHistoryDB = {
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
 		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
 		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Thromar - Dalaran"] = "Thromar - Dalaran",
@@ -81,6 +82,8 @@ GottaGoFastHistoryDB = {
 		},
 		["Panboozled - Runetotem"] = {
 		},
+		["Narisaric - Dalaran"] = {
+		},
 		["Brotus - Argent Dawn"] = {
 		},
 		["LUI-Towelliee"] = {
@@ -114,37 +117,37 @@ GottaGoFastHistoryDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Narisaric - Dalaran"] = {
-		},
 		["Serbitechna - Darkspear"] = {
-		},
-		["Shathiel - Darkspear"] = {
 		},
 		["Dialdaas - Darkspear"] = {
 		},
-		["Sinh - Dalaran"] = {
+		["Shathiel - Darkspear"] = {
+		},
+		["Mulmok - Argent Dawn"] = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
+		["Fantastiburo - Zul'jin"] = {
+		},
 		["Thromar - Dalaran"] = {
-		},
-		["Vadder - Argent Dawn"] = {
-		},
-		["Tyran - Argent Dawn"] = {
 		},
 		["Tynster - Dalaran"] = {
 		},
+		["Tyran - Argent Dawn"] = {
+		},
 		["Tyrannithal - Zul'jin"] = {
+		},
+		["Vadder - Argent Dawn"] = {
 		},
 		["Default"] = {
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Sinh - Dalaran"] = {
 		},
 		["Beeronimo - Dalaran"] = {
 		},
 		["Migimong - Runetotem"] = {
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Vancard - Zul'jin"] = {
 		},
 		["Fantastiburo - Argent Dawn"] = {
 		},

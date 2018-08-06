@@ -1,0 +1,45 @@
+
+FishingBuddy_Player = {
+	["MinimapData"] = {
+		["minimapPos"] = 225,
+		["hide"] = false,
+	},
+	["Settings"] = {
+		["OverWalking"] = true,
+		["AutoOpen"] = true,
+		["OutfitManager"] = "Equipment Manager",
+		["EasyCastKeys"] = 1,
+		["STVPoolsOnly"] = true,
+		["BackgroundSounds"] = true,
+		["DrownedMana"] = true,
+		["LastResort"] = true,
+		["MountedCast"] = true,
+		["FishingPetBuddies"] = -3,
+		["TotalTimeFishing"] = 396.552000000054,
+		["SpecialBobbers"] = -2,
+		["AlwaysLure"] = true,
+		["UseTuskarrSpear"] = true,
+		["WatchCurrentZone"] = true,
+		["WatchElapsedTime"] = true,
+		["AutoLoot"] = true,
+		["UseBladeboneHook"] = true,
+		["EnhancePools"] = true,
+		["TurnOnSound"] = true,
+		["EnhanceFishingSounds"] = true,
+		["UseAction"] = true,
+		["EasyLures"] = true,
+		["STVTimer"] = true,
+		["ContestSupport"] = true,
+	},
+	["WasWearing"] = {
+	},
+	["Outfit"] = {
+	},
+	["WatcherLocation"] = {
+		["y"] = -9.8770751953125,
+		["x"] = -283.973724365234,
+		["point"] = "TOP",
+		["scale"] = 1,
+	},
+	["Version"] = 19500,
+}

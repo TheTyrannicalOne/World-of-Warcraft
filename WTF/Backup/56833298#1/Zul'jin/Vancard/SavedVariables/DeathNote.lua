@@ -1,0 +1,66 @@
+
+DeathNoteData = {
+	["log"] = {
+		[1533513093] = {
+			{
+				981, -- [1]
+				981, -- [2]
+				1533513093.38, -- [3]
+				"SPELL_AURA_APPLIED", -- [4]
+				false, -- [5]
+				"Player-61-0BAB1BE0", -- [6]
+				"Vancard", -- [7]
+				1297, -- [8]
+				0, -- [9]
+				"Player-61-0BAB1BE0", -- [10]
+				"Vancard", -- [11]
+				1297, -- [12]
+				0, -- [13]
+				186406, -- [14]
+				"Sign of the Critter", -- [15]
+				1, -- [16]
+				"BUFF", -- [17]
+				false, -- [18]
+				false, -- [19]
+				false, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				false, -- [24]
+				false, -- [25]
+				false, -- [26]
+			}, -- [1]
+			{
+				981, -- [1]
+				981, -- [2]
+				1533513093.38, -- [3]
+				"SPELL_AURA_APPLIED", -- [4]
+				false, -- [5]
+				"Player-61-0BAB1BE0", -- [6]
+				"Vancard", -- [7]
+				1297, -- [8]
+				0, -- [9]
+				"Player-61-0BAB1BE0", -- [10]
+				"Vancard", -- [11]
+				1297, -- [12]
+				0, -- [13]
+				186406, -- [14]
+				"Sign of the Critter", -- [15]
+				1, -- [16]
+				"BUFF", -- [17]
+				false, -- [18]
+				false, -- [19]
+				false, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				false, -- [24]
+				false, -- [25]
+				false, -- [26]
+			}, -- [2]
+		},
+	},
+	["deaths"] = {
+	},
+	["v"] = 1,
+}

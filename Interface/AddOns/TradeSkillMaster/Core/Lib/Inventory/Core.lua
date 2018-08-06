@@ -19,6 +19,7 @@ local SUMMARY_DB_SCHEMA = {
 		itemString = "string",
 		bagQuantity = "number",
 		bankQuantity = "number",
+		reagentBankQuantity = "number",
 		auctionQuantity = "number",
 		mailQuantity = "number",
 		guildQuantity = "number",
@@ -32,6 +33,7 @@ local SUMMARY_DB_SCHEMA = {
 		"itemString",
 		"bagQuantity",
 		"bankQuantity",
+		"reagentBankQuantity",
 		"auctionQuantity",
 		"mailQuantity",
 		"guildQuantity",
@@ -65,7 +67,7 @@ function Inventory.OnInitialize()
 			for key, tbl in pairs(itemQuantities) do
 				local dbTbl = private.GetCharacterInventoryData(key, character, factionrealm)
 				for itemString, quantity in pairs(dbTbl) do
-					if type(quantity) ~= "number" or quantity == 0 then
+					if type(quantity) ~= "number" or quantity <= 0 then
 						dbTbl[itemString] = nil
 					elseif isPlayer then
 						tbl[itemString] = (tbl[itemString] or 0) + quantity
@@ -79,7 +81,7 @@ function Inventory.OnInitialize()
 			local pendingMail = TSM.db:Get("factionrealm", factionrealm, "internalData", "pendingMail")[character]
 			if pendingMail then
 				for itemString, quantity in pairs(pendingMail) do
-					if type(quantity) ~= "number" or quantity == 0 then
+					if type(quantity) ~= "number" or quantity <= 0 then
 						pendingMail[itemString] = nil
 					elseif isPlayer then
 						itemQuantities.mailQuantity[itemString] = (itemQuantities.mailQuantity[itemString] or 0) + quantity
@@ -96,14 +98,15 @@ function Inventory.OnInitialize()
 	private.db:BulkInsertStart()
 	for itemString in pairs(items) do
 		local bagQuantity = itemQuantities.bagQuantity[itemString] or 0
-		local bankQuantity = (itemQuantities.bankQuantity[itemString] or 0) + (itemQuantities.reagentBankQuantity[itemString] or 0)
+		local bankQuantity = itemQuantities.bankQuantity[itemString] or 0
+		local reagentBankQuantity = itemQuantities.reagentBankQuantity[itemString] or 0
 		local auctionQuantity = itemQuantities.auctionQuantity[itemString] or 0
 		local mailQuantity = itemQuantities.mailQuantity[itemString] or 0
 		local altQuantity = altItemQuantity[itemString] or 0
-		local totalQuantity = bagQuantity + bankQuantity + auctionQuantity + mailQuantity + altQuantity
+		local totalQuantity = bagQuantity + bankQuantity + reagentBankQuantity + auctionQuantity + mailQuantity + altQuantity
 		assert(totalQuantity > 0)
 		-- guildQuantity is set later, so just set it to 0 for now
-		private.db:BulkInsertNewRow(itemString, bagQuantity, bankQuantity, auctionQuantity, mailQuantity, 0, altQuantity, totalQuantity)
+		private.db:BulkInsertNewRow(itemString, bagQuantity, bankQuantity, reagentBankQuantity, auctionQuantity, mailQuantity, 0, altQuantity, totalQuantity)
 	end
 	private.db:BulkInsertEnd()
 
@@ -134,7 +137,7 @@ function Inventory.ChangeBagItemTotal(bag, itemString, changeQuantity)
 		field = "bankQuantity"
 	elseif bag == REAGENTBANK_CONTAINER then
 		totalsTable = TSM.db.sync.internalData.reagentBankQuantity
-		field = "bankQuantity"
+		field = "reagentBankQuantity"
 	else
 		error("Unexpected bag: "..tostring(bag))
 	end
@@ -191,7 +194,7 @@ end
 
 function Inventory.WipeReagentBankQuantity()
 	wipe(TSM.db.sync.internalData.reagentBankQuantity)
-	private.WipeQuantity("bankQuantity")
+	private.WipeQuantity("reagentBankQuantity")
 end
 
 function Inventory.WipeMailQuantity()
@@ -215,34 +218,11 @@ function Inventory.CreateQuery()
 	return private.db:NewQuery()
 end
 
+
+
 -- ============================================================================
 -- TSMAPI Functions
 -- ============================================================================
-
---- Check if an item will go in a bag.
--- @tparam string link The item
--- @tparam number bag The bag index
--- @treturn boolean Whether or not the item will go in the bag
-function TSMAPI_FOUR.Inventory.ItemWillGoInBag(link, bag)
-	if not link or not bag then
-		return
-	end
-	if bag == BACKPACK_CONTAINER or bag == BANK_CONTAINER then
-		return true
-	elseif bag == REAGENTBANK_CONTAINER then
-		return TSMAPI_FOUR.Item.IsCraftingReagent(link)
-	end
-	local itemFamily = GetItemFamily(link) or 0
-	if TSMAPI_FOUR.Item.GetClassId(link) == LE_ITEM_CLASS_CONTAINER then
-		-- bags report their family as what can go inside them, not what they can go inside
-		itemFamily = 0
-	end
-	local _, bagFamily = GetContainerNumFreeSlots(bag)
-	if not bagFamily then
-		return
-	end
-	return bagFamily == 0 or bit.band(itemFamily, bagFamily) > 0
-end
 
 function TSMAPI_FOUR.Inventory.GetBagQuantity(itemString, character, factionrealm)
 	return private.InventoryQuantityHelper(itemString, "bagQuantity", character, factionrealm)
@@ -417,6 +397,7 @@ function private.UpdateQuantity(itemString, field, quantity)
 			:SetField("itemString", itemString)
 			:SetField("bagQuantity", 0)
 			:SetField("bankQuantity", 0)
+			:SetField("reagentBankQuantity", 0)
 			:SetField("auctionQuantity", 0)
 			:SetField("mailQuantity", 0)
 			:SetField("guildQuantity", 0)

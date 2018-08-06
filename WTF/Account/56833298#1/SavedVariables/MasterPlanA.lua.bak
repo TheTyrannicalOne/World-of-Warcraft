@@ -47,17 +47,21 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 			["class"] = "SHAMAN",
 		},
-		["Shanyt"] = {
+		["Vancard"] = {
+			["class"] = "MAGE",
 			["faction"] = "Horde",
-			["class"] = "WARRIOR",
+		},
+		["Vaddor"] = {
+			["faction"] = "Horde",
+			["class"] = "ROGUE",
 		},
 		["Zulbathal"] = {
 			["faction"] = "Horde",
 			["class"] = "DEATHKNIGHT",
 		},
-		["Vaddor"] = {
-			["faction"] = "Horde",
-			["class"] = "ROGUE",
+		["Shaekhan"] = {
+			["faction"] = "Neutral",
+			["class"] = "MONK",
 		},
 		["Jingojaggot"] = {
 			["faction"] = "Horde",
@@ -67,19 +71,23 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 			["class"] = "PALADIN",
 		},
-		["Shaekhan"] = {
-			["faction"] = "Neutral",
-			["class"] = "MONK",
+		["Shanyt"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
 		},
 		["Fantastiburo"] = {
 			["faction"] = "Horde",
-			["class"] = "DRUID",
+			["class"] = "SHAMAN",
 		},
 	},
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
+		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
 		},
 		["Brewnheimer"] = {
 			["faction"] = "Alliance",
@@ -88,10 +96,6 @@ MasterPlanAG = {
 		["Dialdaas"] = {
 			["faction"] = "Alliance",
 			["class"] = "PALADIN",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
 		},
 	},
 	["Dalaran"] = {
@@ -166,32 +170,35 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Shanyt"] = {
-			["lastCacheTime"] = 1533365347,
+			["lastCacheTime"] = 1533502699,
 			["summary"] = {
-				["lastOilTime"] = 1533334600,
-				["inProgress"] = {
-					[335] = 1533401386,
-					[131] = 1533379795,
-					[308] = 1533372590,
-					[276] = 1533370587,
-					[540] = 1533399399,
-					[563] = 1533394226,
-					[503] = 1533386984,
-					[190] = 1533368088,
-					[745] = 1533399400,
-				},
-				["ti3"] = 127854,
-				["ti2"] = 122486,
-				["tt1"] = 1532816872,
-				["ti1"] = 118531,
-				["tt3"] = 1533179495,
+				["lastOilTime"] = 1533501211,
 				["tt2"] = 1532826451,
+				["tt3"] = 1533179495,
+				["ti1"] = 118531,
+				["tt1"] = 1532816872,
+				["ti3"] = 127854,
+				["inProgress"] = {
+					[276] = 1533537202,
+					[444] = 1533529992,
+					[588] = 1533517073,
+					[179] = 1533504791,
+					[676] = 1533529994,
+					[119] = 1533515598,
+					[538] = 1533530008,
+					[585] = 1533515609,
+					[174] = 1533504789,
+					[664] = 1533508397,
+					[190] = 1533503887,
+					[745] = 1533566011,
+				},
+				["ti2"] = 122486,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
 			["class"] = "WARRIOR",
-			["curRes"] = 7584,
-			["curOil"] = 54900,
+			["curRes"] = 5985,
+			["curOil"] = 55240,
 		},
 		["Shaekhan"] = {
 			["class"] = "MONK",
@@ -201,7 +208,5 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 			["class"] = "DRUID",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

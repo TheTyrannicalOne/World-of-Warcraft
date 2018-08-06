@@ -1,0 +1,16 @@
+
+RefluxDB = {
+	["emulated"] = {
+	},
+	["activeProfile"] = "Vancard - Zul'jin",
+	["addons"] = {
+	},
+	["ignored"] = {
+	},
+	["profiles"] = {
+		["LUI-Towelliee"] = {
+		},
+		["Towel-Monk"] = {
+		},
+	},
+}

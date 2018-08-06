@@ -21,8 +21,7 @@ local private = {
 -- ============================================================================
 
 function ProfessionUtil.OnInitialize()
-	TSMAPI_FOUR.Event.Register("UNIT_SPELLCAST_SUCCEEDED", function(_, unit, _, spellId, _, spellId73)
-		spellId = select(4, GetBuildInfo()) >= 80000 and spellId or spellId73
+	TSMAPI_FOUR.Event.Register("UNIT_SPELLCAST_SUCCEEDED", function(_, unit, _, spellId)
 		if unit ~= "player" or spellId ~= private.craftSpellId then
 			return
 		end
@@ -49,8 +48,7 @@ function ProfessionUtil.OnInitialize()
 		-- ignore profession updates from crafting something
 		TSM.Crafting.ProfessionScanner.IgnoreNextProfessionUpdates()
 	end)
-	local function SpellcastFailedEventHandler(_, unit, _, spellId, _, spellId73)
-		spellId = select(4, GetBuildInfo()) >= 80000 and spellId or spellId73
+	local function SpellcastFailedEventHandler(_, unit, _, spellId)
 		if unit ~= "player" or spellId ~= private.craftSpellId then
 			return
 		end
@@ -142,6 +140,12 @@ function ProfessionUtil.OpenProfession(profession)
 	if profession == GetSpellInfo(TSM.CONST.MINING_SPELLID) then
 		-- mining needs to be opened as smelting
 		profession = GetSpellInfo(TSM.CONST.SMELTING_SPELLID)
+	elseif profession == GetSpellInfo(TSM.CONST.HERBALISM_SPELLID) then
+		-- herbalism needs to be opened as herbalism skills
+		profession = GetSpellInfo(TSM.CONST.HERBALISM_SKILLS_SPELLID)
+	elseif profession == GetSpellInfo(TSM.CONST.SKINNING_SPELLID) then
+		-- skinning needs to be opened as skinning skills
+		profession = GetSpellInfo(TSM.CONST.SKINNING_SKILLS_SPELLID)
 	end
 	CastSpellByName(profession)
 end

@@ -1,5 +1,26 @@
 Changes since tag 8.0.1
 
+commit d469e063882eb963e757b1bacccd60ae4ef8fcb1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 5 07:00:29 2018 +0200
+
+    Omega via svn r17673:
+    Fix voice pack bug on goroth
+
+commit bea7be4279f80a73e123a9d9c294f6e6ac7855bd
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 5 06:21:16 2018 +0200
+
+    Omega via svn r17672:
+    Add completed mod for doomshowl/Lionspride
+
+commit c0ffb980556ca8dbaecae98a9a476db26bedd9bb
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 5 02:51:34 2018 +0200
+
+    Omega via svn r17671:
+    Fix missing mod load
+
 commit 436833104c4242a8fe4ccf70fb4a260c21b569c1
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Aug 4 08:11:51 2018 +0200

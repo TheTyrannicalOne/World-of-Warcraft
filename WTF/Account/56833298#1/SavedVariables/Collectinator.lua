@@ -1,12 +1,7 @@
 
 COLLECTINATORDB2 = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
-	},
-	["profiles"] = {
-		["Shanyt - Argent Dawn"] = {
-		},
-		["Default"] = {
-		},
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 	},
 }

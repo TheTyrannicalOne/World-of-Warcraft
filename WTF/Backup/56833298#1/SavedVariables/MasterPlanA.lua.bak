@@ -1,0 +1,212 @@
+
+MasterPlanAG = {
+	["Runetotem"] = {
+		["Migimong"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Gangus"] = {
+			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
+		},
+		["Claugh"] = {
+			["faction"] = "Horde",
+			["class"] = "WARLOCK",
+		},
+		["Panboozled"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Goramor"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["Gillbourn"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
+	["Zul'jin"] = {
+		["Tyrannithal"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["Tyrann"] = {
+			["faction"] = "Horde",
+			["class"] = "MAGE",
+		},
+		["Urbul"] = {
+			["faction"] = "Horde",
+			["class"] = "WARLOCK",
+		},
+		["Datgorg"] = {
+			["faction"] = "Horde",
+			["class"] = "HUNTER",
+		},
+		["Brotuss"] = {
+			["faction"] = "Horde",
+			["class"] = "SHAMAN",
+		},
+		["Vancard"] = {
+			["faction"] = "Horde",
+			["class"] = "MAGE",
+		},
+		["Vaddor"] = {
+			["faction"] = "Horde",
+			["class"] = "ROGUE",
+		},
+		["Zulbathal"] = {
+			["faction"] = "Horde",
+			["class"] = "DEATHKNIGHT",
+		},
+		["Shaekhan"] = {
+			["faction"] = "Neutral",
+			["class"] = "MONK",
+		},
+		["Jingojaggot"] = {
+			["faction"] = "Horde",
+			["class"] = "PRIEST",
+		},
+		["Brokehorn"] = {
+			["faction"] = "Horde",
+			["class"] = "PALADIN",
+		},
+		["Shanyt"] = {
+			["faction"] = "Horde",
+			["class"] = "WARRIOR",
+		},
+		["Fantastiburo"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Horde",
+		},
+	},
+	["Dalaran"] = {
+		["Malivant"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Beeronimo"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["Tynster"] = {
+			["faction"] = "Alliance",
+			["class"] = "PRIEST",
+		},
+		["Thromar"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Tyriinid"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Shaewong"] = {
+			["faction"] = "Neutral",
+			["class"] = "MONK",
+		},
+		["Sinh"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Narisaric"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Brewnheimer"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Dialdaas"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+	},
+	["Argent Dawn"] = {
+		["Tyrannithal"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Horde",
+		},
+		["Cowtastraphy"] = {
+			["faction"] = "Horde",
+			["class"] = "PALADIN",
+		},
+		["Tyran"] = {
+			["faction"] = "Horde",
+			["class"] = "MAGE",
+		},
+		["Datgorg"] = {
+			["faction"] = "Horde",
+			["class"] = "HUNTER",
+		},
+		["Bathal"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Horde",
+		},
+		["Vadder"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Horde",
+		},
+		["Mulmok"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Horde",
+		},
+		["Brotus"] = {
+			["faction"] = "Horde",
+			["class"] = "SHAMAN",
+		},
+		["Jingojaggot"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Horde",
+		},
+		["Shanyt"] = {
+			["class"] = "WARRIOR",
+			["summary"] = {
+				["lastOilTime"] = 1533501211,
+				["tt2"] = 1532826451,
+				["tt3"] = 1533179495,
+				["tt1"] = 1532816872,
+				["ti1"] = 118531,
+				["ti3"] = 127854,
+				["inProgress"] = {
+					[276] = 1533537202,
+					[444] = 1533529992,
+					[588] = 1533517073,
+					[179] = 1533504791,
+					[676] = 1533529994,
+					[119] = 1533515598,
+					[538] = 1533530008,
+					[585] = 1533515609,
+					[174] = 1533504789,
+					[664] = 1533508397,
+					[190] = 1533503887,
+					[745] = 1533566011,
+				},
+				["ti2"] = 122486,
+			},
+			["curOil"] = 55240,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1533502699,
+			["curRes"] = 5985,
+			["faction"] = "Horde",
+		},
+		["Shaekhan"] = {
+			["class"] = "MONK",
+			["faction"] = "Horde",
+		},
+		["Fantastiburo"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
+	},
+}
