@@ -167,9 +167,9 @@ Prat3DB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Brotuss - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
@@ -225,17 +225,17 @@ Prat3DB = {
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
 				},
-				["Vadder - Argent Dawn"] = {
-					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
-					["initialized"] = true,
-				},
 				["Thromar - Dalaran"] = {
 					["minchatwidthdefault"] = 296,
 					["initialized"] = true,
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+				},
+				["Vadder - Argent Dawn"] = {
+					["minchatwidthdefault"] = 296,
+					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
@@ -304,8 +304,6 @@ Prat3DB = {
 		["Prat_ChannelSticky"] = {
 		},
 		["Prat_ChatTabs"] = {
-		},
-		["Prat_ChannelNames"] = {
 		},
 		["Prat_Font"] = {
 			["profiles"] = {
@@ -527,12 +525,12 @@ Prat3DB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Brotuss - Zul'jin"] = {
 					["rememberfont"] = true,
@@ -615,15 +613,6 @@ Prat3DB = {
 					},
 					["fontface"] = "weezerfont",
 				},
-				["Vadder - Argent Dawn"] = {
-					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame1"] = 15,
-						["ChatFrame3"] = 15,
-					},
-				},
 				["Thromar - Dalaran"] = {
 					["rememberfont"] = true,
 					["size"] = {
@@ -632,6 +621,15 @@ Prat3DB = {
 						["ChatFrame3"] = 15,
 					},
 					["fontface"] = "weezerfont",
+				},
+				["Vadder - Argent Dawn"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["rememberfont"] = true,
@@ -725,6 +723,8 @@ Prat3DB = {
 				},
 			},
 		},
+		["Prat_ChannelNames"] = {
+		},
 		["Prat_Bubbles"] = {
 		},
 		["Prat_UrlCopy"] = {
@@ -735,9 +735,9 @@ Prat3DB = {
 		},
 		["Prat_Paragraph"] = {
 		},
-		["Prat_Alias"] = {
-		},
 		["Prat_Clear"] = {
+		},
+		["Prat_Alias"] = {
 		},
 		["Prat_OriginalButtons"] = {
 		},
@@ -900,8 +900,8 @@ Prat3DB = {
 				["Shanyt - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showminimize"] = false,
 					["showMenu"] = false,
+					["showminimize"] = false,
 				},
 				["Brotuss - Zul'jin"] = {
 					["showBnet"] = false,
@@ -954,8 +954,8 @@ Prat3DB = {
 				["Vancard - Zul'jin"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 				["Shathiel - Darkspear"] = {
 					["showBnet"] = false,
@@ -963,11 +963,11 @@ Prat3DB = {
 					["showMenu"] = false,
 					["showminimize"] = false,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 				["Tynster - Dalaran"] = {
 					["showBnet"] = false,
@@ -993,11 +993,11 @@ Prat3DB = {
 					["showminimize"] = false,
 					["showMenu"] = false,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showminimize"] = false,
 					["showMenu"] = false,
+					["showminimize"] = false,
 				},
 				["Fantastiburo - Zul'jin"] = {
 					["showBnet"] = false,
@@ -1373,9 +1373,9 @@ Prat3DB = {
 		["Shanyt - Argent Dawn"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
 				["Alias"] = 2,
 				["OriginalButtons"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["ChatLog"] = 2,
@@ -1490,24 +1490,24 @@ Prat3DB = {
 				["KeyBindings"] = 2,
 			},
 		},
-		["Vadder - Argent Dawn"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["ChatLog"] = 2,
-				["OriginalButtons"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
-				["Alias"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
 		["Thromar - Dalaran"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["OriginalButtons"] = 2,
 				["ChatLog"] = 2,
 				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Vadder - Argent Dawn"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Alias"] = 2,

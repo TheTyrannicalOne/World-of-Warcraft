@@ -8,17 +8,21 @@
 --
 -- HealthBar/CastBar ###########################################################
 -- ARTWORK
--- castbar spark = 7
 -- powerbar spark = 7
 -- raid icon (bar) = 6
 -- target arrows = 4
 -- spell shield = 3
 -- health bar highlight = 2
 -- spell icon = 2
+-- castbar spark = 1
 -- absorb bar = 1
 -- power bar = 0
 -- health bar = 0
 -- cast bar = 0
+--
+-- BACKGROUND
+-- castbar background = 1
+-- spell icon bg = 1
 --
 -- Frame #######################################################################
 -- ARTWORK
@@ -27,8 +31,6 @@
 -- BACKGROUND
 -- healthbar fill background = 2
 -- frame background = 1
--- castbar background = 1
--- spell icon bg = 1
 -- threat brackets = 0
 -- frame glow = -5
 -- target glow = -5
@@ -98,12 +100,7 @@ do
         end
 
         if self.spark then
-            local col = {...}
-            self.spark:SetVertexColor(
-                col[1]+.3,
-                col[2]+.3,
-                col[3]+.3
-            )
+            self.spark:SetVertexColor(kui.Brighten(.3,...))
         end
     end
     local function FilledBar_Show(self)
@@ -115,7 +112,7 @@ do
         self.fill:Hide()
     end
 
-    function CreateStatusBar(parent,spark,no_fill,no_fade_spark)
+    function CreateStatusBar(parent,spark,no_fill,no_fade_spark,spark_level)
         local bar = CreateFrame('StatusBar',nil,parent)
         bar:SetStatusBarTexture(BAR_TEXTURE)
         bar:SetFrameLevel(0)
@@ -137,7 +134,7 @@ do
 
         if spark then
             local texture = bar:GetStatusBarTexture()
-            local spark = bar:CreateTexture(nil,'ARTWORK',nil,7)
+            local spark = bar:CreateTexture(nil,'ARTWORK',nil,spark_level or 7)
             spark:SetTexture('interface/addons/kui_media/t/spark')
             spark:SetWidth(8)
 
@@ -165,10 +162,10 @@ local function UpdateFontObject(object)
     object:SetFont(
         FONT,
         object.fontobject_small and FONT_SIZE_SMALL or FONT_SIZE_NORMAL,
-        FONT_STYLE
+        not object.fontobject_no_style and FONT_STYLE or nil
     )
 
-    if FONT_SHADOW then
+    if object.fontobject_shadow or FONT_SHADOW then
         object:SetShadowColor(0,0,0,1)
         object:SetShadowOffset(1,-1)
     else
@@ -1020,6 +1017,10 @@ do
           CASTBAR_SHOW_ICON,CASTBAR_SHOW_NAME,CASTBAR_SHOW_SHIELD,
           CASTBAR_NAME_VERTICAL_OFFSET
 
+    local function AnimGroup_Stop(self)
+        self.frame:HideCastBar(nil,true)
+        self:GetParent().highlight:Hide()
+    end
     local function SpellIconSetWidth(f)
         -- set spell icon width (as it's based on height)
         if not f.SpellIcon then return end
@@ -1029,19 +1030,27 @@ do
     end
     local function ShowCastBar(f)
         if not f.elements.CastBar then
-            -- keep attached elements hidden
-            f:HideCastBar()
+            -- element disabled; stop CastBarUpdateFrame
+            -- TODO don't get this far if the element is disabled
+            f:HideCastBar(nil,true)
             return
         end
+
+        f.CastBar.AnimGroup:Stop()
 
         if f.cast_state.interruptible then
             f.CastBar:SetStatusBarColor(unpack(CASTBAR_COLOUR))
         else
             f.CastBar:SetStatusBarColor(unpack(CASTBAR_UNIN_COLOUR))
+
+            if f.elements.SpellShield then
+                f.SpellShield:Show()
+            end
         end
 
-        -- also show attached elements
+        f.CastBar:Show()
         f.CastBar.bg:Show()
+        f.CastBar.spark:Show()
 
         if CASTBAR_SHOW_ICON and f.SpellIcon then
             f.SpellIcon.bg:Show()
@@ -1056,19 +1065,52 @@ do
             plugin_fading:UpdateFrame(f)
         end
     end
-    local function HideCastBar(f)
-        -- also hide attached elements
-        f.CastBar:Hide()
-        f.CastBar.bg:Hide()
+    local function HideCastBar(f,hide_cause,force)
+        -- always hide spark instantly
+        f.CastBar.spark:Hide()
 
-        if f.SpellName then
-            f.SpellName:Hide()
-        end
-        if f.SpellIcon then
-            f.SpellIcon.bg:Hide()
-        end
-        if f.SpellShield then
-            f.SpellShield:Hide()
+        if force then
+            -- hide instantly
+            f.CastBar:Hide()
+            f.CastBar.bg:Hide()
+
+            if f.SpellName then
+                f.SpellName:Hide()
+            end
+            if f.SpellIcon then
+                f.SpellIcon.bg:Hide()
+            end
+            if f.SpellShield then
+                f.SpellShield:Hide()
+            end
+
+            if f.CastBar.AnimGroup:IsPlaying() then
+                f.CastBar.AnimGroup:Stop()
+            end
+        else
+            if hide_cause == 2 then
+                -- stopped
+                f.CastBar:SetMinMaxValues(0,1)
+                f.CastBar:SetValue(0)
+            else
+                if hide_cause == 1 then
+                    -- interrupted
+                    if f.SpellName then
+                        f.SpellName:SetText(INTERRUPTED)
+                    end
+
+                    f.CastBar:SetStatusBarColor(unpack(CASTBAR_UNIN_COLOUR))
+                else
+                    -- succeeded
+                    f.CastBar:SetStatusBarColor(unpack(CASTBAR_COLOUR))
+                end
+
+                f.CastBar:SetMinMaxValues(0,1)
+                f.CastBar:SetValue(1)
+                f.CastBar.highlight:Show()
+            end
+
+            f.CastBar.AnimGroup:Play()
         end
 
         if FADE_AVOID_CASTING then
@@ -1079,6 +1121,12 @@ do
         if not CASTBAR_ENABLED then return end
         if f.IN_NAMEONLY then
             f.handler:DisableElement('CastBar')
+
+            if f.CastBar.AnimGroup:IsPlaying() then
+                -- disabling the element only fires a force hide if the unit
+                -- is currently casting; the animation can be left playing
+                f.CastBar.AnimGroup:Stop()
+            end
         else
             if f.state.player then
                 if core.profile.castbar_showpersonal then
@@ -1119,7 +1167,7 @@ do
     local function CreateSpellIcon(f)
         assert(not f.SpellIcon)
 
-        local bg = f:CreateTexture(nil, 'BACKGROUND', nil, 1)
+        local bg = f.CastBar:CreateTexture(nil, 'BACKGROUND', nil, 1)
         bg:SetTexture(kui.m.t.solid)
         bg:SetVertexColor(0,0,0,.8)
         bg:SetPoint('BOTTOMRIGHT', f.CastBar.bg, 'BOTTOMLEFT', -1, 0)
@@ -1140,7 +1188,7 @@ do
         assert(not f.SpellShield)
 
         -- cast shield
-        local shield = f.HealthBar:CreateTexture(nil, 'ARTWORK', nil, 3)
+        local shield = f.CastBar:CreateTexture(nil, 'ARTWORK', nil, 3)
         shield:SetTexture(MEDIA..'Shield')
         shield:SetTexCoord(0, .84375, 0, 1)
         shield:SetSize(13.5, 16) -- 16 * .84375
@@ -1154,7 +1202,7 @@ do
     local function CreateSpellName(f)
         assert(not f.SpellName)
 
-        local spellname = CreateFontString(f.HealthBar,FONT_SIZE_SMALL)
+        local spellname = CreateFontString(f.CastBar,FONT_SIZE_SMALL)
         spellname:SetWordWrap()
         spellname:Hide()
 
@@ -1163,18 +1211,53 @@ do
     end
 
     function core:CreateCastBar(f)
-        local bg = f:CreateTexture(nil,'BACKGROUND',nil,1)
+        local castbar = CreateStatusBar(f,true,nil,true,1)
+        castbar:Hide()
+
+        local hl = castbar:CreateTexture(nil,'ARTWORK',nil,1)
+        hl:SetTexture(BAR_TEXTURE)
+        hl:SetAllPoints(castbar)
+        hl:SetVertexColor(1,1,1,.4)
+        hl:SetBlendMode('ADD')
+        hl:Hide()
+        castbar.highlight = hl
+
+        local bg = castbar:CreateTexture(nil,'BACKGROUND',nil,1)
         bg:SetTexture(kui.m.t.solid)
         bg:SetVertexColor(0,0,0,.8)
         bg:SetPoint('TOPLEFT', f.bg, 'BOTTOMLEFT', 0, -1)
         bg:SetPoint('TOPRIGHT', f.bg, 'BOTTOMRIGHT')
         bg:Hide()
 
-        local castbar = CreateStatusBar(f,true,nil,true)
         castbar:SetPoint('TOPLEFT', bg, 1, -1)
         castbar:SetPoint('BOTTOMRIGHT', bg, -1, 1)
-        castbar:Hide()
         castbar.bg = bg
+
+        do -- create animations;
+            local grp = castbar:CreateAnimationGroup()
+            -- bar fade
+            local bar = grp:CreateAnimation("Alpha")
+            bar:SetStartDelay(.5)
+            bar:SetDuration(.5)
+            bar:SetFromAlpha(1)
+            bar:SetToAlpha(0)
+            grp.bar = bar
+
+            -- highlight flash
+            local highlight = grp:CreateAnimation("Alpha")
+            highlight:SetChildKey('highlight')
+            highlight:SetStartDelay(.05)
+            highlight:SetDuration(.25)
+            highlight:SetSmoothing('IN')
+            highlight:SetFromAlpha(.4)
+            highlight:SetToAlpha(0)
+            grp.highlight = highlight
+
+            grp.frame = f
+            castbar.AnimGroup = grp
+            grp:SetScript('OnFinished',AnimGroup_Stop)
+            grp:SetScript('OnStop',AnimGroup_Stop)
+        end
 
         -- register base elements
         f.handler:RegisterElement('CastBar', castbar)
@@ -1387,14 +1470,12 @@ do
     function core.Auras_PostCreateAuraButton(frame,button)
         -- move text to obey our settings
         button.cd:ClearAllPoints()
-        button.cd:SetPoint('TOPLEFT',-2,2+TEXT_VERTICAL_OFFSET)
-        button.cd:SetShadowOffset(1,-1)
-        button.cd:SetShadowColor(0,0,0,1)
+        button.cd:SetPoint('TOPLEFT',-4,3+TEXT_VERTICAL_OFFSET)
+        button.cd.fontobject_shadow = true
 
         button.count:ClearAllPoints()
-        button.count:SetPoint('BOTTOMRIGHT',4,-2+TEXT_VERTICAL_OFFSET)
-        button.count:SetShadowOffset(1,-1)
-        button.count:SetShadowColor(0,0,0,1)
+        button.count:SetPoint('BOTTOMRIGHT',5,-2+TEXT_VERTICAL_OFFSET)
+        button.count.fontobject_shadow = true
 
         core.AurasButton_SetFont(button)
     end
@@ -1711,20 +1792,19 @@ do
         f.ThreatGlow:Hide()
         f.ThreatBrackets:Hide()
 
-        f.NameText:SetShadowOffset(1,-1)
-        f.NameText:SetShadowColor(0,0,0,1)
         f.NameText:SetParent(f)
         f.NameText:ClearAllPoints()
         f.NameText:SetPoint('CENTER',.5,0)
         f.NameText:Show()
 
-        f.GuildText:SetShadowOffset(1,-1)
-        f.GuildText:SetShadowColor(0,0,0,1)
+        f.NameText.fontobject_shadow = true
+        f.GuildText.fontobject_shadow = true
+        f.NameText.fontobject_no_style = NAMEONLY_NO_FONT_STYLE
+        f.GuildText.fontobject_no_style = NAMEONLY_NO_FONT_STYLE
 
-        if NAMEONLY_NO_FONT_STYLE then
-            f.NameText:SetFont(FONT,FONT_SIZE_NORMAL,nil)
-            f.GuildText:SetFont(FONT,FONT_SIZE_SMALL,nil)
-        end
+        UpdateFontObject(f.NameText)
+        UpdateFontObject(f.GuildText)
+
         if FADE_AVOID_NAMEONLY then
             plugin_fading:UpdateFrame(f)
         end
@@ -1735,22 +1815,25 @@ do
 
         f.NameText:SetText(f.state.name)
         f.NameText:SetTextColor(1,1,1,1)
-        f.NameText:SetShadowColor(0,0,0,0)
         f.NameText:ClearAllPoints()
         f.NameText:SetParent(f.HealthBar)
         f:UpdateNameTextPosition()
 
         f.GuildText:SetTextColor(1,1,1,1)
-        f.GuildText:SetShadowColor(0,0,0,0)
 
         f.bg:Show()
         f.HealthBar:Show()
         f.HealthBar.fill:Show()
 
-        if NAMEONLY_NO_FONT_STYLE or FONT_SHADOW then
-            UpdateFontObject(f.NameText)
-            UpdateFontObject(f.GuildText)
-        end
+        -- nil fontobject overrides
+        f.NameText.fontobject_shadow = nil
+        f.NameText.fontobject_no_style = nil
+        f.GuildText.fontobject_shadow = nil
+        f.GuildText.fontobject_no_style = nil
+
+        UpdateFontObject(f.NameText)
+        UpdateFontObject(f.GuildText)
+
         if FADE_AVOID_NAMEONLY then
             plugin_fading:UpdateFrame(f)
         end
@@ -1870,7 +1953,11 @@ function core:InitialiseElements()
 
     self:configChangedCombatAction()
 
-    self.Auras = {}
+    self.Auras = {
+        colour_short = self.profile.auras_colour_short,
+        colour_medium = self.profile.auras_colour_medium,
+        colour_long = self.profile.auras_colour_long,
+    }
 
     self.ClassPowers = {
         on_target = self.profile.classpowers_on_target,

@@ -64,6 +64,11 @@ function ProfessionUtil.OnInitialize()
 	TSMAPI_FOUR.Event.Register("UNIT_SPELLCAST_FAILED_QUIET", SpellcastFailedEventHandler)
 end
 
+function ProfessionUtil.GetCurrentProfessionName()
+	local _, name, _, _, _, _, parentName = C_TradeSkillUI.GetTradeSkillLine()
+	return parentName or name
+end
+
 function ProfessionUtil.GetResultInfo(spellId)
 	-- get the links
 	local itemLink = C_TradeSkillUI.GetRecipeItemLink(spellId)
@@ -123,14 +128,15 @@ function ProfessionUtil.GetNumCraftableFromDB(spellId)
 end
 
 function ProfessionUtil.IsEnchant(spellId)
-	local _, _, _, _, _, _, name = C_TradeSkillUI.GetTradeSkillLine()
+	local name = TSM.Crafting.ProfessionUtil.GetCurrentProfessionName()
 	if name ~= GetSpellInfo(7411) then
 		return false
 	end
 	if not strfind(C_TradeSkillUI.GetRecipeItemLink(spellId), "enchant:") then
 		return false
 	end
-	local recipeInfo = C_TradeSkillUI.GetRecipeInfo(spellId, TSMAPI_FOUR.Util.AcquireTempTable())
+	local recipeInfo = TSMAPI_FOUR.Util.AcquireTempTable()
+	assert(C_TradeSkillUI.GetRecipeInfo(spellId, recipeInfo) == recipeInfo)
 	local altVerb = recipeInfo.alternateVerb
 	TSMAPI_FOUR.Util.ReleaseTempTable(recipeInfo)
 	return altVerb and true or false

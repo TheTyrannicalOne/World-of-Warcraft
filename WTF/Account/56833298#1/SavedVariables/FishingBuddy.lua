@@ -5,8 +5,8 @@ FishingBuddy_Info = {
 		[625000] = 15,
 		[680000] = 9,
 		[625001] = 15,
-		[85000] = 37,
 		[680001] = 9,
+		[85000] = 37,
 	},
 	["HiddenFishies"] = {
 	},
@@ -45,10 +45,10 @@ FishingBuddy_Info = {
 	},
 	["Version"] = 19500,
 	["SubZones"] = {
-		[680001] = "Moonwhisper Gulch",
-		[641000] = 1,
-		[130001] = "The Culling of Stratholme",
 		[641001] = "Emerald Bay",
+		[680000] = 1,
+		[130001] = "The Culling of Stratholme",
+		[680001] = "Moonwhisper Gulch",
 		[130000] = 1,
 		[550001] = "Snarlpaw Ledge",
 		[696000] = 1,
@@ -60,7 +60,7 @@ FishingBuddy_Info = {
 		[625001] = "Margoss's Retreat",
 		[85000] = 1,
 		[85001] = "Valley of Honor",
-		[680000] = 1,
+		[641000] = 1,
 	},
 	["FishSchools"] = {
 		[680] = {

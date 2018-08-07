@@ -336,10 +336,14 @@ LevelingItems[133742] = {
 
 local function CastAndThrow()
 	if GSB("AutoOpen") then
-		for id,info in pairs(LevelingItems) do
-			if GetItemCount(id) > 0 then
-				return "/use "..info[CurLoc].."\n/cast "..PROFESSIONS_FISHING
-			end
+        for id,info in pairs(LevelingItems) do
+            local rank, _, skillmax, _ = FL:GetCurrentSkill();
+            local _, _, _, _, _, levels, _, _, _, _, _, _ = C_ArtifactUI.GetArtifactInfo()
+            if rank < skillmax or not levels or levels >= 24 then
+                if GetItemCount(id) > 0 then
+                    return "/use "..info[CurLoc].."\n/cast "..PROFESSIONS_FISHING
+                end
+            end
 		end
 	end
 end

@@ -126,7 +126,7 @@ local function IsWardenEnabled()
     return "d", doautoloot;
 end
 
-local function ShouldAutoLoot()
+local function CustomLooting()
     local _, autoloot = IsWardenEnabled();
     return FishingBuddy.GetSettingBool("AutoLoot") and (autoloot == 1);
 end
@@ -437,6 +437,8 @@ local LastLure = nil;
 local LastUsed = nil;
 local OpenThisFishId = {};
 local DoAutoOpenLoot = nil;
+
+FishingBuddy.OpenThisFishId = OpenThisFishId;
 
 -- handle zone markers
 local function zmto(zidx, sidx)
@@ -1501,9 +1503,13 @@ FishingBuddy.OnEvent = function(self, event, ...)
         end
         FishingMode();
         RunHandlers(FBConstants.INVENTORY_EVT)
-    elseif ( event == "LOOT_READY" ) then
-        local doautoloot = ShouldAutoLoot() and (GetCVarBool("autoLootDefault") ~= IsModifiedClick("AUTOLOOTTOGGLE"));
-        if ( IsFishingLoot() ) then
+    elseif ( event == "LOOT_OPENED" ) then
+        local autoLoot = ...;
+        local doautoloot = false;
+        if not autoloot and not IsModifiedClick("AUTOLOOTTOGGLE") then
+            doautoloot = CustomLooting()
+        end
+        if ( ReadyForFishing() ) then
             local poolhint = nil;
             -- How long ago did the achievement fire?
             local elapsedtime = GetTime() - trackedtime;
@@ -1514,7 +1520,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
             -- if we want to autoloot, and Blizz isn't, let's grab stuff
             local checkloot = LootSlotIsItem or LootSlotHasItem;
             for index = GetNumLootItems(), 1, -1 do
-                local texture, fishie, quantity, quality, locked, qitem, questID, qactive = GetLootSlotInfo(index);
+                local texture, fishie, quantity, currency, quality, locked, qitem, questID, qactive = GetLootSlotInfo(index);
                 if (checkloot(index)) then
                     local link = GetLootSlotLink(index);
 
@@ -1626,7 +1632,7 @@ FishingBuddy.OnLoad = function(self)
     self:RegisterEvent("VARIABLES_LOADED");
 
     -- we want to deal with fishing loot windows all the time
-    self:RegisterEvent("LOOT_READY");
+    self:RegisterEvent("LOOT_OPENED");
     self:RegisterEvent("LOOT_CLOSED");
 
     -- Handle item lock separately to reduce churn during world load
@@ -1840,7 +1846,6 @@ if ( FishingBuddy.Debugging ) then
             for idx,info in pairs(OpenThisFishId) do
                 FishingBuddy.Debug(idx, info);
             end
-            FishingBuddy.OpenThisFishId = OpenThisFishId;
             return true;
         end
 

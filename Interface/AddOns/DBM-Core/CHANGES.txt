@@ -1,5 +1,19 @@
 Changes since tag 8.0.1
 
+commit 4a27452e36a793ec649b349933b30febd1c460a6
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 7 02:23:43 2018 +0200
+
+    Omega via svn r17675:
+    Slight media restructure
+
+commit 10a09850c980e563191def0447c9c5c44a4ea5a5
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 7 01:58:29 2018 +0200
+
+    Omega via svn r17674:
+    Add last two bosses of Sethraliss
+
 commit d469e063882eb963e757b1bacccd60ae4ef8fcb1
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sun Aug 5 07:00:29 2018 +0200

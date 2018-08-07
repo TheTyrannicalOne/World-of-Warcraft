@@ -1,7 +1,12 @@
-$Id: ChangeLog.txt 93 2018-07-27 13:24:51Z arith $
+$Id: ChangeLog.txt 95 2018-08-06 14:29:47Z arith $
 
 Revision History:
 =================
+
+* v1.29 (Aug. 06, 2018)
+-----------------------
+- Remove LibUIDropDown
+- Fixed TomTom waypoint's function call issue
 
 * v1.28 (Jul. 27, 2018)
 -----------------------
