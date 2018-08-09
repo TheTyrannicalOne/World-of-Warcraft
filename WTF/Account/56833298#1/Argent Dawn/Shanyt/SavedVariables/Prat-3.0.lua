@@ -14,9 +14,9 @@ Prat3CharDB = {
 			},
 			["ChatFrame6EditBox"] = {
 			},
-			["ChatFrame3EditBox"] = {
-			},
 			["ChatFrame1EditBox"] = {
+			},
+			["ChatFrame3EditBox"] = {
 			},
 			["ChatFrame2EditBox"] = {
 			},
@@ -26,11 +26,11 @@ Prat3CharDB = {
 	},
 }
 Prat3HighCPUPerCharDB = {
-	["time"] = 1533616348,
+	["time"] = 1533701538,
 	["scrollback"] = {
 		["ChatFrame1"] = {
 			{
-				"|cff979797[00:31:22]|r|c00000000|r You receive item: |cffffffff|Hitem:10286::::::::110:71::::::|h[Heart of the Wild]|h|r.", -- [1]
+				"|cff979797[00:11:15]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -40,7 +40,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [1]
 			{
-				"|cff979797[00:31:22]|r|c00000000|r You receive item: |cffffffff|Hitem:10286::::::::110:71::::::|h[Heart of the Wild]|h|r.", -- [1]
+				"|cff979797[00:11:15]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -50,7 +50,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [2]
 			{
-				"|cff979797[00:31:23]|r|c00000000|r You receive item: |cffffffff|Hitem:8839::::::::110:71::::::|h[Blindweed]|h|r.", -- [1]
+				"|cff979797[00:11:15]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -60,7 +60,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [3]
 			{
-				"|cff979797[00:31:23]|r|c00000000|r You receive item: |cffffffff|Hitem:2594::::::::110:71::::::|h[Flagon of Dwarven Mead]|h|r.", -- [1]
+				"|cff979797[00:11:16]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -70,7 +70,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [4]
 			{
-				"|cff979797[00:31:23]|r|c00000000|r You receive item: |cffffffff|Hitem:39520::::::::110:71::::::|h[Kungaloosh]|h|r.", -- [1]
+				"|cff979797[00:11:16]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -80,7 +80,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [5]
 			{
-				"|cff979797[00:31:24]|r|c00000000|r You receive item: |cffffffff|Hitem:118428::::::::110:71::::::|h[Legion Chili]|h|r.", -- [1]
+				"|cff979797[00:11:16]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -90,7 +90,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [6]
 			{
-				"|cff979797[00:31:24]|r|c00000000|r You receive item: |cffffffff|Hitem:87228::::::::110:71::::::|h[Great Banquet of the Grill]|h|rx10.", -- [1]
+				"|cff979797[00:11:16]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -100,7 +100,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [7]
 			{
-				"|cff979797[00:31:24]|r|c00000000|r You receive item: |cffffffff|Hitem:3770::::::::110:71::::::|h[Mutton Chop]|h|r.", -- [1]
+				"|cff979797[00:11:17]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -110,7 +110,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [8]
 			{
-				"|cff979797[00:31:25]|r|c00000000|r You receive item: |cffffffff|Hitem:39520::::::::110:71::::::|h[Kungaloosh]|h|r.", -- [1]
+				"|cff979797[00:11:17]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -120,7 +120,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [9]
 			{
-				"|cff979797[00:31:25]|r|c00000000|r You receive item: |cffffffff|Hitem:44599::::::::110:71::::::|h[Zippy Copper Racer]|h|rx5.", -- [1]
+				"|cff979797[00:11:17]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -130,7 +130,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [10]
 			{
-				"|cff979797[00:31:25]|r|c00000000|r You receive item: |cffffffff|Hitem:44599::::::::110:71::::::|h[Zippy Copper Racer]|h|rx5.", -- [1]
+				"|cff979797[00:11:17]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -140,7 +140,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [11]
 			{
-				"|cff979797[00:31:26]|r|c00000000|r You receive item: |cffffffff|Hitem:128793::::::::110:71::::::|h[Sack of Spiders]|h|r.", -- [1]
+				"|cff979797[00:11:18]|r|c00000000|r You receive item: |cffffffff|Hitem:76094:::::::1413198464:110:71::::::|h[Alchemist's Rejuvenation]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -150,7 +150,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [12]
 			{
-				"|cff979797[00:31:26]|r|c00000000|r You receive item: |cffffffff|Hitem:118428::::::::110:71::::::|h[Legion Chili]|h|r.", -- [1]
+				"|cff979797[00:11:18]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -160,7 +160,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [13]
 			{
-				"|cff979797[00:31:26]|r|c00000000|r You receive item: |cffffffff|Hitem:89683::::::::110:71::::::|h[Hozen Cuervo]|h|r.", -- [1]
+				"|cff979797[00:11:18]|r|c00000000|r You receive item: |cffffffff|Hitem:2455::::::::110:71::::::|h[Minor Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -170,17 +170,17 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [14]
 			{
-				"|cff979797[00:31:26]|r|c00000000|r You receive item: |cffffffff|Hitem:3770::::::::110:71::::::|h[Mutton Chop]|h|r.", -- [1]
-				0, -- [2]
-				0.666666686534882, -- [3]
+				"|cff979797[00:11:24]|r|c00000000|r |cff0070dd|Hbattlepet:2119:1:3:155:13:10:BattlePet-0-00000715087C|h[Fel-Afflicted Skyfin]|h|r has been added to your pet journal!", -- [1]
+				1, -- [2]
+				1, -- [3]
 				0, -- [4]
-				28, -- [5]
+				1, -- [5]
 				false, -- [6]
-				3, -- [7]
-				4, -- [8]
+				5, -- [7]
+				6, -- [8]
 			}, -- [15]
 			{
-				"|cff979797[00:31:27]|r|c00000000|r You receive item: |cffffffff|Hitem:118428::::::::110:71::::::|h[Legion Chili]|h|r.", -- [1]
+				"|cff979797[00:11:42]|r|c00000000|r You receive item: |cff0070dd|Hbattlepet:2119:1:3:155:13:10:0000000000000000|h[Fel-Afflicted Skyfin]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -190,7 +190,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [16]
 			{
-				"|cff979797[00:31:27]|r|c00000000|r You receive item: |cffffffff|Hitem:128793::::::::110:71::::::|h[Sack of Spiders]|h|r.", -- [1]
+				"|cff979797[00:12:02]|r|c00000000|r You receive item: |cffffffff|Hitem:39684::::::::110:71::::::|h[Hair Trigger]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -200,7 +200,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [17]
 			{
-				"|cff979797[00:31:27]|r|c00000000|r You receive item: |cffffffff|Hitem:3770::::::::110:71::::::|h[Mutton Chop]|h|r.", -- [1]
+				"|cff979797[00:12:03]|r|c00000000|r You receive item: |cffffffff|Hitem:40533::::::::110:71::::::|h[Walnut Stock]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -210,7 +210,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [18]
 			{
-				"|cff979797[00:31:27]|r|c00000000|r You receive item: |cffffffff|Hitem:128793::::::::110:71::::::|h[Sack of Spiders]|h|rx5.", -- [1]
+				"|cff979797[00:12:03]|r|c00000000|r You receive item: |cffffffff|Hitem:10561::::::::110:71::::::|h[Mithril Casing]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -220,7 +220,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [19]
 			{
-				"|cff979797[00:31:28]|r|c00000000|r You receive item: |cffffffff|Hitem:33454::::::::110:71::::::|h[Salted Venison]|h|r.", -- [1]
+				"|cff979797[00:12:03]|r|c00000000|r You receive item: |cffffffff|Hitem:8845::::::::110:71::::::|h[Ghost Mushroom]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -230,7 +230,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [20]
 			{
-				"|cff979797[00:31:28]|r|c00000000|r You receive item: |cffffffff|Hitem:95412::::::::110:71::::::|h[Frayed Zandalari Journal]|h|r.", -- [1]
+				"|cff979797[00:12:04]|r|c00000000|r You receive item: |cffffffff|Hitem:8845::::::::110:71::::::|h[Ghost Mushroom]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -240,7 +240,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [21]
 			{
-				"|cff979797[00:31:28]|r|c00000000|r You receive item: |cffffffff|Hitem:87244::::::::110:71::::::|h[Great Banquet of the Oven]|h|rx10.", -- [1]
+				"|cff979797[00:12:04]|r|c00000000|r You receive item: |cffffffff|Hitem:8845::::::::110:71::::::|h[Ghost Mushroom]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -250,7 +250,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [22]
 			{
-				"|cff979797[00:31:29]|r|c00000000|r You receive item: |cffffffff|Hitem:87240::::::::110:71::::::|h[Great Banquet of the Steamer]|h|rx10.", -- [1]
+				"|cff979797[00:12:04]|r|c00000000|r You receive item: |cffffffff|Hitem:8845::::::::110:71::::::|h[Ghost Mushroom]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -260,7 +260,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [23]
 			{
-				"|cff979797[00:31:29]|r|c00000000|r You receive item: |cffffffff|Hitem:33454::::::::110:71::::::|h[Salted Venison]|h|r.", -- [1]
+				"|cff979797[00:12:11]|r|c00000000|r You receive item: |cffffffff|Hitem:81414::::::::110:71::::::|h[Pearl Milk Tea]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -270,7 +270,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [24]
 			{
-				"|cff979797[00:31:29]|r|c00000000|r You receive item: |cffffffff|Hitem:124661::::::::110:71::::::|h[Gladiator's Healing Potion]|h|r.", -- [1]
+				"|cff979797[00:12:11]|r|c00000000|r You receive item: |cffffffff|Hitem:81414::::::::110:71::::::|h[Pearl Milk Tea]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -280,7 +280,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [25]
 			{
-				"|cff979797[00:31:30]|r|c00000000|r You receive item: |cffffffff|Hitem:116119::::::::110:71::::::|h[Ango'rosh Sorcerer Stone]|h|rx5.", -- [1]
+				"|cff979797[00:12:12]|r|c00000000|r You receive item: |cffffffff|Hitem:81409::::::::110:71::::::|h[Tangy Yogurt]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -290,7 +290,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [26]
 			{
-				"|cff979797[00:31:30]|r|c00000000|r You receive item: |cffffffff|Hitem:33454::::::::110:71::::::|h[Salted Venison]|h|r.", -- [1]
+				"|cff979797[00:12:12]|r|c00000000|r You receive item: |cffffffff|Hitem:13444::::::::110:71::::::|h[Major Mana Potion]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -300,7 +300,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [27]
 			{
-				"|cff979797[00:31:30]|r|c00000000|r You receive item: |cffffffff|Hitem:124661::::::::110:71::::::|h[Gladiator's Healing Potion]|h|r.", -- [1]
+				"|cff979797[00:12:12]|r|c00000000|r You receive item: |cffffffff|Hitem:81409::::::::110:71::::::|h[Tangy Yogurt]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -310,7 +310,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [28]
 			{
-				"|cff979797[00:31:30]|r|c00000000|r You receive item: |cffffffff|Hitem:18640::::::::110:71::::::|h[Happy Fun Rock]|h|r.", -- [1]
+				"|cff979797[00:12:13]|r|c00000000|r You receive item: |cffffffff|Hitem:81409::::::::110:71::::::|h[Tangy Yogurt]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -320,7 +320,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [29]
 			{
-				"|cff979797[00:31:31]|r|c00000000|r You receive item: |cffffffff|Hitem:43467::::::::110:71::::::|h[Scroll of Protection VII]|h|r.", -- [1]
+				"|cff979797[00:12:13]|r|c00000000|r You receive item: |cff1eff00|Hitem:9809::::::::110:71::54:1:1680:::|h[Superior Tunic of the Quickblade]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -330,7 +330,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [30]
 			{
-				"|cff979797[00:32:20]|r|c00000000|r You receive item: |cffffffff|Hitem:133575::::::::110:71::::::|h[Dried Mackerel Strips]|h|r.", -- [1]
+				"|cff979797[00:12:13]|r|c00000000|r You receive item: |cffffffff|Hitem:81409::::::::110:71::::::|h[Tangy Yogurt]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -340,7 +340,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [31]
 			{
-				"|cff979797[00:32:20]|r|c00000000|r You receive item: |cffffffff|Hitem:133575::::::::110:71::::::|h[Dried Mackerel Strips]|h|r.", -- [1]
+				"|cff979797[00:12:14]|r|c00000000|r You receive item: |cff1eff00|Hitem:6397::::::::110:71:512:54:1:4277:110:::|h[Emblazoned Gloves]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -350,7 +350,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [32]
 			{
-				"|cff979797[00:32:20]|r|c00000000|r You receive item: |cffffffff|Hitem:1179::::::::110:71::::::|h[Ice Cold Milk]|h|r.", -- [1]
+				"|cff979797[00:12:14]|r|c00000000|r You receive item: |cff1eff00|Hitem:6611::::::::110:71::54:1:1677:::|h[Sage's Sash of the Quickblade]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -360,7 +360,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [33]
 			{
-				"|cff979797[00:32:21]|r|c00000000|r You receive item: |cffffffff|Hitem:10562::::::::110:71::::::|h[Hi-Explosive Bomb]|h|r.", -- [1]
+				"|cff979797[00:12:14]|r|c00000000|r You receive item: |cffffffff|Hitem:1015::::::::110:71::::::|h[Lean Wolf Flank]|h|rx10.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -370,7 +370,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [34]
 			{
-				"|cff979797[00:32:21]|r|c00000000|r You receive item: |cffffffff|Hitem:133575::::::::110:71::::::|h[Dried Mackerel Strips]|h|r.", -- [1]
+				"|cff979797[00:12:14]|r|c00000000|r You receive item: |cffffffff|Hitem:4306::::::::110:71::::::|h[Silk Cloth]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -380,7 +380,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [35]
 			{
-				"|cff979797[00:32:21]|r|c00000000|r You receive item: |cffffffff|Hitem:10562::::::::110:71::::::|h[Hi-Explosive Bomb]|h|r.", -- [1]
+				"|cff979797[00:12:15]|r|c00000000|r You receive item: |cff1eff00|Hitem:82295::::::::110:71::36:1:1691:::|h[Temple Vambraces of the Fireflash]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -390,7 +390,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [36]
 			{
-				"|cff979797[00:32:22]|r|c00000000|r You receive item: |cffffffff|Hitem:10562::::::::110:71::::::|h[Hi-Explosive Bomb]|h|r.", -- [1]
+				"|cff979797[00:12:15]|r|c00000000|r You receive item: |cffffffff|Hitem:4306::::::::110:71::::::|h[Silk Cloth]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -400,7 +400,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [37]
 			{
-				"|cff979797[00:32:23]|r|c00000000|r You receive item: |cffffffff|Hitem:11590:::::::288954496:110:71::::::|h[Mechanical Repair Kit]|h|r.", -- [1]
+				"|cff979797[00:12:15]|r|c00000000|r You receive item: |cff1eff00|Hitem:82246::::::::110:71::2:1:1679:::|h[Yak Legguards of the Quickblade]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -410,7 +410,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [38]
 			{
-				"|cff979797[00:32:23]|r|c00000000|r You receive item: |cffffffff|Hitem:77589::::::::110:71::::::|h[G91 Landshark]|h|r.", -- [1]
+				"|cff979797[00:12:16]|r|c00000000|r You receive item: |cffffffff|Hitem:4306::::::::110:71::::::|h[Silk Cloth]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -420,7 +420,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [39]
 			{
-				"|cff979797[00:32:23]|r|c00000000|r You receive item: |cffffffff|Hitem:42546::::::::110:71::::::|h[Mana Injector Kit]|h|r.", -- [1]
+				"|cff979797[00:12:16]|r|c00000000|r You receive item: |cffffffff|Hitem:81409::::::::110:71::::::|h[Tangy Yogurt]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -430,7 +430,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [40]
 			{
-				"|cff979797[00:32:24]|r|c00000000|r You receive item: |cff0070dd|Hitem:62000:::::::2097944576:110:71::::::|h[Five of Stones]|h|r.", -- [1]
+				"|cff979797[00:12:16]|r|c00000000|r You receive item: |cffffffff|Hitem:4306::::::::110:71::::::|h[Silk Cloth]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -440,7 +440,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [41]
 			{
-				"|cff979797[00:32:24]|r|c00000000|r You receive item: |cffffffff|Hitem:42546::::::::110:71::::::|h[Mana Injector Kit]|h|r.", -- [1]
+				"|cff979797[00:12:16]|r|c00000000|r You receive item: |cffffffff|Hitem:81409::::::::110:71::::::|h[Tangy Yogurt]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -450,7 +450,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [42]
 			{
-				"|cff979797[00:32:24]|r|c00000000|r You receive item: |cffffffff|Hitem:23737::::::::110:71::::::|h[Adamantite Grenade]|h|r.", -- [1]
+				"|cff979797[00:12:17]|r|c00000000|r You receive item: |cffffffff|Hitem:2592::::::::110:71::::::|h[Wool Cloth]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -460,7 +460,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [43]
 			{
-				"|cff979797[00:32:25]|r|c00000000|r You receive item: |cffffffff|Hitem:23737::::::::110:71::::::|h[Adamantite Grenade]|h|r.", -- [1]
+				"|cff979797[00:12:17]|r|c00000000|r You receive item: |cffffffff|Hitem:2592::::::::110:71::::::|h[Wool Cloth]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -470,7 +470,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [44]
 			{
-				"|cff979797[00:32:26]|r|c00000000|r You receive item: |cffffffff|Hitem:77589::::::::110:71::::::|h[G91 Landshark]|h|r.", -- [1]
+				"|cff979797[00:12:17]|r|c00000000|r You receive item: |cffffffff|Hitem:1015::::::::110:71::::::|h[Lean Wolf Flank]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -480,7 +480,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [45]
 			{
-				"|cff979797[00:32:26]|r|c00000000|r You receive item: |cffffffff|Hitem:23737::::::::110:71::::::|h[Adamantite Grenade]|h|r.", -- [1]
+				"|cff979797[00:12:17]|r|c00000000|r You receive item: |cffffffff|Hitem:1015::::::::110:71::::::|h[Lean Wolf Flank]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -490,7 +490,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [46]
 			{
-				"|cff979797[00:32:26]|r|c00000000|r You receive item: |cffffffff|Hitem:42546::::::::110:71::::::|h[Mana Injector Kit]|h|r.", -- [1]
+				"|cff979797[00:12:18]|r|c00000000|r You receive item: |cffffffff|Hitem:1015::::::::110:71::::::|h[Lean Wolf Flank]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -500,7 +500,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [47]
 			{
-				"|cff979797[00:32:27]|r|c00000000|r You receive item: |cffffffff|Hitem:22728::::::::110:71::::::|h[Steam Tonk Controller]|h|r.", -- [1]
+				"|cff979797[00:12:18]|r|c00000000|r You receive item: |cffffffff|Hitem:1015::::::::110:71::::::|h[Lean Wolf Flank]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -510,7 +510,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [48]
 			{
-				"|cff979797[00:32:27]|r|c00000000|r You receive item: |cffffffff|Hitem:42546::::::::110:71::::::|h[Mana Injector Kit]|h|r.", -- [1]
+				"|cff979797[00:12:18]|r|c00000000|r You receive item: |cffffffff|Hitem:1015::::::::110:71::::::|h[Lean Wolf Flank]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -520,7 +520,7 @@ Prat3HighCPUPerCharDB = {
 				4, -- [8]
 			}, -- [49]
 			{
-				"|cff979797[00:32:28]|r|c00000000|r You receive item: |cff0070dd|Hitem:31894::::::::110:71::::::|h[Five of Storms]|h|r.", -- [1]
+				"|cff979797[00:12:18]|r|c00000000|r You receive item: |cffffffff|Hitem:2592::::::::110:71::::::|h[Wool Cloth]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]

@@ -1,5 +1,12 @@
 Changes since tag 8.0.1
 
+commit d5e72c0b3c38d17504b4db2546f3f581260af0d2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Aug 8 06:15:58 2018 +0200
+
+    Omega via svn r17676:
+    Fix bug that caused interrupt order to be buggy. broken for weeks and no one reported. I only found it cause i saw it on a stream :(
+
 commit 4a27452e36a793ec649b349933b30febd1c460a6
 Author: subversion <svn@deadlybossmods.com>
 Date:   Tue Aug 7 02:23:43 2018 +0200

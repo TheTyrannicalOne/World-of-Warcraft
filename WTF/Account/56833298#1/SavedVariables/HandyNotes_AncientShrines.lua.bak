@@ -16,9 +16,9 @@ HandyNotes_AncientShrinesDB = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
-		["LUI-Towelliee"] = {
-		},
 		["Shanyt - Zul'jin"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

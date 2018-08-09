@@ -1,4 +1,11 @@
 Version: 1
+Frame: ExtraActionBarFrame
+FrameLevel: 2
+Anchor: CENTER
+X: -239
+Y: -150
+W: 64
+H: 64
 Frame: BNToastFrame
 FrameLevel: 1
 Anchor: LEFT
@@ -27,13 +34,6 @@ X: -141
 Y: -170
 W: 32
 H: 32
-Frame: ExtraActionBarFrame
-FrameLevel: 2
-Anchor: CENTER
-X: -239
-Y: -150
-W: 64
-H: 64
 Frame: SpellActivationOverlayFrame
 FrameLevel: 1
 Anchor: BOTTOM

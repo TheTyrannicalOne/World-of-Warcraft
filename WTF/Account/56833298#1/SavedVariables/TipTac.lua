@@ -30,21 +30,21 @@ TipTac_Config = {
 	["healthBarClassColor"] = true,
 	["barFontFlags"] = "OUTLINE",
 	["classification_rare"] = "%s|r (Rare) ",
-	["showHiddenTipsOnShift"] = false,
-	["preFadeTime"] = 0.1,
+	["showDebuffs"] = false,
+	["tipBackdropBG"] = "Interface\\Buttons\\WHITE8X8",
 	["showBuffs"] = false,
 	["left"] = 1729.96415592263,
 	["showTargetedBy"] = true,
 	["healthBarText"] = "value",
 	["reactColoredBackdrop"] = false,
 	["hideAllTipsInCombat"] = true,
-	["backdropInsets"] = 2.5,
+	["optionsBottom"] = 658.106306185674,
 	["classification_worldboss"] = "%s|r (Boss) ",
-	["hideWorldTips"] = true,
-	["gradientTip"] = true,
+	["colorNameByClass"] = false,
+	["barFontFace"] = "Fonts\\ARIALN.TTF",
 	["classification_rareelite"] = "+%s|r (Rare) ",
 	["showTalents"] = true,
-	["colorNameByClass"] = false,
+	["manaBar"] = false,
 	["gradientColor"] = {
 		0.8, -- [1]
 		0.8, -- [2]
@@ -52,21 +52,21 @@ TipTac_Config = {
 		0.2, -- [4]
 	},
 	["colSameGuild"] = "|cffff32ff",
+	["fadeTime"] = 0.100000001490116,
 	["healthBarColor"] = {
 		0.3, -- [1]
 		0.9, -- [2]
 		0.3, -- [3]
 		1, -- [4]
 	},
-	["fadeTime"] = 0.100000001490116,
 	["targetYouText"] = "<<YOU>>",
 	["hideUFTipsInCombat"] = false,
 	["top"] = 460.156231195646,
 	["classColoredBorder"] = false,
-	["barFontFace"] = "Fonts\\ARIALN.TTF",
-	["manaBar"] = false,
-	["optionsBottom"] = 658.106306185674,
+	["gradientTip"] = true,
+	["hideWorldTips"] = true,
+	["backdropInsets"] = 2.5,
 	["barFontSize"] = 10,
-	["tipBackdropBG"] = "Interface\\Buttons\\WHITE8X8",
-	["showDebuffs"] = false,
+	["preFadeTime"] = 0.1,
+	["showHiddenTipsOnShift"] = false,
 }

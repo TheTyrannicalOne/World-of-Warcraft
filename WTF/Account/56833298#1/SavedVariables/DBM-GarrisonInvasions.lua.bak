@@ -1,26 +1,14 @@
 
 DBMGarrisonInvasions_AllSavedVars = {
 	["Shanyt-Argent Dawn"] = {
-		["Goggnathog"] = {
+		["Drogan"] = {
 			{
-				["announceother180908target"] = true,
-				["announceother180815target"] = true,
-				["SpecWarn180816interruptSWSound"] = 1,
-				["SpecWarn180908moveawaySWSound"] = 1,
-				["SpecWarn180816dispelSWNote"] = true,
-				["HudMapOnUnleashed"] = true,
-				["SpecWarn180819spell"] = true,
+				["SpecWarn180880you"] = true,
+				["announce180882spell"] = true,
+				["SpecWarn180880youSWNote"] = true,
+				["SpecWarn180880youSWSound"] = 1,
+				["announceother180880target"] = true,
 				["Enabled"] = true,
-				["SpecWarn180816dispel"] = false,
-				["SpecWarn180816interrupt"] = false,
-				["SpecWarn180908moveawaySWNote"] = true,
-				["SpecWarn180816interruptSWNote"] = true,
-				["Yell180908"] = true,
-				["RangeFrame"] = true,
-				["SpecWarn180819spellSWNote"] = true,
-				["SpecWarn180819spellSWSound"] = 2,
-				["SpecWarn180816dispelSWSound"] = 1,
-				["SpecWarn180908moveaway"] = true,
 			}, -- [1]
 		},
 		["Gaur"] = {
@@ -45,14 +33,36 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["SpecWarn180779spellSWNote"] = true,
 				["SpecWarn180776moveawaySWSound"] = 1,
 				["SpecWarn180776moveaway"] = true,
-				["SpecWarn180775moveSWNote"] = true,
 				["SpecWarn180779spell"] = true,
+				["SpecWarn180775moveSWNote"] = true,
 				["SpecWarn180779spellSWSound"] = 2,
 				["SpecWarn180776moveawaySWNote"] = true,
 				["SpecWarn180775moveSWSound"] = 1,
 			}, -- [1]
 		},
 		["talent1"] = "Arms",
+		["Goggnathog"] = {
+			{
+				["announceother180908target"] = true,
+				["announceother180815target"] = true,
+				["SpecWarn180816interruptSWSound"] = 1,
+				["SpecWarn180908moveawaySWSound"] = 1,
+				["SpecWarn180816dispelSWNote"] = true,
+				["HudMapOnUnleashed"] = true,
+				["SpecWarn180819spell"] = true,
+				["Enabled"] = true,
+				["SpecWarn180816dispel"] = false,
+				["SpecWarn180816interrupt"] = false,
+				["SpecWarn180908moveawaySWNote"] = true,
+				["SpecWarn180816interruptSWNote"] = true,
+				["Yell180908"] = true,
+				["RangeFrame"] = true,
+				["SpecWarn180819spellSWNote"] = true,
+				["SpecWarn180819spellSWSound"] = 2,
+				["SpecWarn180816dispelSWSound"] = 1,
+				["SpecWarn180908moveaway"] = true,
+			}, -- [1]
+		},
 		["Teluur"] = {
 			{
 				["Enabled"] = true,
@@ -64,16 +74,6 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["announceother180836target"] = true,
 			}, -- [1]
 		},
-		["Drogan"] = {
-			{
-				["SpecWarn180880you"] = true,
-				["announce180882spell"] = true,
-				["SpecWarn180880youSWNote"] = true,
-				["SpecWarn180880youSWSound"] = 1,
-				["announceother180880target"] = true,
-				["Enabled"] = true,
-			}, -- [1]
-		},
 		["Annihilon"] = {
 			{
 				["announceother180950target"] = true,
@@ -81,11 +81,11 @@ DBMGarrisonInvasions_AllSavedVars = {
 				["SpecWarn180950switch"] = true,
 				["SpecWarn180950switchSWSound"] = 1,
 				["announceother180932target"] = true,
-				["SpecWarn180950switchSWNote"] = true,
-				["Yell180939"] = true,
-				["SpecWarn180939youSWSound"] = 1,
-				["SpecWarn180939youSWNote"] = true,
 				["SpecWarn180939you"] = true,
+				["Yell180939"] = true,
+				["SpecWarn180950switchSWNote"] = true,
+				["SpecWarn180939youSWNote"] = true,
+				["SpecWarn180939youSWSound"] = 1,
 				["Enabled"] = true,
 				["announceother180939target"] = true,
 			}, -- [1]

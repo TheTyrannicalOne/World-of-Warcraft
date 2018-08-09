@@ -11,20 +11,20 @@ HNFieldPhotographerDB = {
 		["Mulmok - Argent Dawn"] = "Default",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Tyrannithal - Argent Dawn"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
+		["Vancard - Zul'jin"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
 		["Default"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["LUI-Towelliee"] = {
 		},
 	},
 }

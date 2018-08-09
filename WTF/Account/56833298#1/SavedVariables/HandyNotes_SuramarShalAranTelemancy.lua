@@ -16,9 +16,9 @@ HandyNotes_SuramarShalAranTelemancyDB = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
-		["Shanyt - Zul'jin"] = {
-		},
 		["LUI-Towelliee"] = {
+		},
+		["Shanyt - Zul'jin"] = {
 		},
 	},
 }
