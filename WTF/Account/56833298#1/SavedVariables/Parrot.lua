@@ -3379,58 +3379,6 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -3440,7 +3388,59 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
+					["Incoming"] = {
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+					},
 					["hideUnitNames"] = true,
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+					},
 					["hideSkillNames"] = true,
 				},
 				["Brotus - Argent Dawn"] = {
@@ -4239,6 +4239,58 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -4248,59 +4300,7 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["Incoming"] = {
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-					},
 					["hideUnitNames"] = true,
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-					},
 					["hideSkillNames"] = true,
 				},
 				["Brotuss - Zul'jin"] = {
@@ -9554,12 +9554,12 @@ ParrotDB = {
 					["font"] = "Prototype",
 				},
 				["Vancard - Zul'jin"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["stickyFontSize"] = 28,
-					["fontOutline"] = "NONE",
 					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
 					["font"] = "Prototype",
+					["fontOutline"] = "NONE",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
 				},
 				["Brotus - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
@@ -9594,12 +9594,12 @@ ParrotDB = {
 					["font"] = "Prototype",
 				},
 				["Shanyt - Argent Dawn"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["font"] = "Prototype",
-					["stickyFontSize"] = 28,
 					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
+					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
 				["Brotuss - Zul'jin"] = {
 					["fontSize"] = 16,
@@ -11068,25 +11068,55 @@ ParrotDB = {
 				["Vancard - Zul'jin"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
-						[1004] = {
+						[1013] = {
 							["disabled"] = true,
 						},
-						[1020] = {
+						[1017] = {
 							["disabled"] = true,
 						},
 						[1021] = {
 							["disabled"] = true,
 						},
-						[1006] = {
-							["disabled"] = true,
-						},
-						[1022] = {
-							["disabled"] = true,
-						},
 						[1023] = {
 							["disabled"] = true,
 						},
+						[1026] = {
+							["disabled"] = true,
+						},
+						[1034] = {
+							["disabled"] = true,
+						},
+						[1031] = {
+							["disabled"] = true,
+						},
+						[1035] = {
+							["disabled"] = true,
+						},
+						[1002] = {
+							["disabled"] = true,
+						},
+						[1004] = {
+							["disabled"] = true,
+						},
+						[1006] = {
+							["disabled"] = true,
+						},
 						[1008] = {
+							["disabled"] = true,
+						},
+						[1010] = {
+							["disabled"] = true,
+						},
+						[1016] = {
+							["disabled"] = true,
+						},
+						[1018] = {
+							["disabled"] = true,
+						},
+						[1020] = {
+							["disabled"] = true,
+						},
+						[1022] = {
 							["disabled"] = true,
 						},
 						[1024] = {
@@ -11095,37 +11125,7 @@ ParrotDB = {
 						[1025] = {
 							["disabled"] = true,
 						},
-						[1026] = {
-							["disabled"] = true,
-						},
-						[1010] = {
-							["disabled"] = true,
-						},
-						[1031] = {
-							["disabled"] = true,
-						},
-						[1013] = {
-							["disabled"] = true,
-						},
-						[1034] = {
-							["disabled"] = true,
-						},
-						[1035] = {
-							["disabled"] = true,
-						},
 						[1037] = {
-							["disabled"] = true,
-						},
-						[1016] = {
-							["disabled"] = true,
-						},
-						[1017] = {
-							["disabled"] = true,
-						},
-						[1002] = {
-							["disabled"] = true,
-						},
-						[1018] = {
 							["disabled"] = true,
 						},
 						[1009] = {
@@ -11408,55 +11408,25 @@ ParrotDB = {
 				["Shanyt - Argent Dawn"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
-						[1013] = {
-							["disabled"] = true,
-						},
-						[1017] = {
-							["disabled"] = true,
-						},
-						[1021] = {
-							["disabled"] = true,
-						},
-						[1023] = {
-							["disabled"] = true,
-						},
-						[1026] = {
-							["disabled"] = true,
-						},
-						[1034] = {
-							["disabled"] = true,
-						},
-						[1031] = {
-							["disabled"] = true,
-						},
-						[1035] = {
-							["disabled"] = true,
-						},
-						[1002] = {
-							["disabled"] = true,
-						},
 						[1004] = {
-							["disabled"] = true,
-						},
-						[1006] = {
-							["disabled"] = true,
-						},
-						[1008] = {
-							["disabled"] = true,
-						},
-						[1010] = {
-							["disabled"] = true,
-						},
-						[1016] = {
-							["disabled"] = true,
-						},
-						[1018] = {
 							["disabled"] = true,
 						},
 						[1020] = {
 							["disabled"] = true,
 						},
+						[1021] = {
+							["disabled"] = true,
+						},
+						[1006] = {
+							["disabled"] = true,
+						},
 						[1022] = {
+							["disabled"] = true,
+						},
+						[1023] = {
+							["disabled"] = true,
+						},
+						[1008] = {
 							["disabled"] = true,
 						},
 						[1024] = {
@@ -11465,7 +11435,37 @@ ParrotDB = {
 						[1025] = {
 							["disabled"] = true,
 						},
+						[1026] = {
+							["disabled"] = true,
+						},
+						[1010] = {
+							["disabled"] = true,
+						},
+						[1031] = {
+							["disabled"] = true,
+						},
+						[1013] = {
+							["disabled"] = true,
+						},
+						[1034] = {
+							["disabled"] = true,
+						},
+						[1035] = {
+							["disabled"] = true,
+						},
 						[1037] = {
+							["disabled"] = true,
+						},
+						[1016] = {
+							["disabled"] = true,
+						},
+						[1017] = {
+							["disabled"] = true,
+						},
+						[1002] = {
+							["disabled"] = true,
+						},
+						[1018] = {
 							["disabled"] = true,
 						},
 						[1009] = {

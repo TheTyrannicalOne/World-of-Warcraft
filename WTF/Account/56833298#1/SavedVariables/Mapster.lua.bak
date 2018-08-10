@@ -113,9 +113,9 @@ MapsterDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["scale"] = 1.0691260099411,
+			["y"] = -71.1882280573341,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
-			["y"] = -71.1882280573341,
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,
@@ -169,9 +169,9 @@ MapsterDB = {
 		},
 		["Vancard - Zul'jin"] = {
 			["scale"] = 0.915698230266571,
-			["y"] = -71.1882280573341,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
 		},
 		["Fantastiburo - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,

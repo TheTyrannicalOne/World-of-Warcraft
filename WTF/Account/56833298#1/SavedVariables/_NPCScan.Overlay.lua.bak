@@ -17,7 +17,7 @@ _NPCScanOverlayOptions = {
 	["Version"] = "7.1.0.1",
 	["KeyAutoHideAlpha"] = 0.25,
 	["MiniMapIcon"] = {
-		["hide"] = true,
+		["hide"] = false,
 	},
 	["ModulesExtra"] = {
 		["Minimap"] = {

@@ -1,5 +1,50 @@
 Changes since tag 8.0.1
 
+commit d3961f5001c176352cf9a86fd07f0f01663483d3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 10 06:38:33 2018 +0200
+
+    Omega via svn r17682:
+    Update ghuun timers, especially since blizzard fixed bug with drive stunning him for double time.
+    Fixed Wave of corruption detection in P3 (diff spellID)
+
+commit b0c942a94c287d44e6ee8a3d4a3bbefdad440258
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 10 00:00:13 2018 +0200
+
+    Omega via svn r17681:
+    Fix custom timers not showing (because I forgot to uncomment CHAT_MSG_ADDON_LOGGED when 8.0 shipped)
+
+commit fabbf744bcb039586ab225c84714274c7f062455
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Aug 9 23:41:14 2018 +0200
+
+    Omega via svn r17680:
+    Another info frame fix
+
+commit 878713344fe6737b3d60e820be5a8f214a657e35
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Aug 9 23:10:54 2018 +0200
+
+    Omega via svn r17679:
+    Fix matrix target not clearing from table
+    Attempt to hide adds and only show ghuun and drive on energy tracker
+    More Taloc timer updates
+
+commit fc4bd02218dfd4c75deda61bf709bc4797ea1d05
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Aug 9 22:42:21 2018 +0200
+
+    Omega via svn r17678:
+    Keep infoframe in P3
+
+commit 4a4aeaa00ad12527fdc7c490ba4070973b1db00e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Aug 9 22:36:00 2018 +0200
+
+    Omega via svn r17677:
+    Push first batch of taloc fixes. timer tweaks, fixed P2 debuff (diff spell ID), added yell for wave.
+
 commit d5e72c0b3c38d17504b4db2546f3f581260af0d2
 Author: subversion <svn@deadlybossmods.com>
 Date:   Wed Aug 8 06:15:58 2018 +0200

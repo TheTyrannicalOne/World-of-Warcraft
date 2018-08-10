@@ -2025,12 +2025,32 @@ Omen3DB = {
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
+			["MinimapIcon"] = {
+				["hide"] = true,
+			},
 			["PositionW"] = 198.88604152751,
 			["NumBars"] = 7,
 			["Shown"] = true,
+			["ShowWith"] = {
+				["Alone"] = true,
+				["Resting"] = true,
+				["UseShowWith"] = false,
+				["PVP"] = true,
+				["HideWhileResting"] = false,
+				["HideInPVP"] = false,
+			},
+			["PositionX"] = 428.618218069226,
 			["PositionH"] = 196.984932998413,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014743744153,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
+			["Warnings"] = {
+				["Sound"] = false,
+			},
 			["Locked"] = true,
 			["Background"] = {
 				["EdgeSize"] = 9,
@@ -2048,27 +2068,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["MinimapIcon"] = {
-				["hide"] = true,
-			},
-			["ShowWith"] = {
-				["UseShowWith"] = false,
-				["HideWhileResting"] = false,
-				["Alone"] = true,
-				["Resting"] = true,
-				["PVP"] = true,
-				["HideInPVP"] = false,
-			},
 			["VGrip1"] = 155.316689874038,
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
-			["Warnings"] = {
-				["Sound"] = false,
-			},
-			["PositionX"] = 428.618218069226,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3745,32 +3745,12 @@ Omen3DB = {
 			},
 		},
 		["Vancard - Zul'jin"] = {
-			["MinimapIcon"] = {
-				["hide"] = true,
-			},
 			["PositionW"] = 198.886058857751,
 			["NumBars"] = 7,
 			["Shown"] = true,
-			["ShowWith"] = {
-				["Alone"] = true,
-				["Resting"] = true,
-				["UseShowWith"] = false,
-				["HideWhileResting"] = false,
-				["PVP"] = true,
-				["HideInPVP"] = false,
-			},
-			["PositionX"] = 451.131409021275,
 			["PositionH"] = 196.984924238223,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014660035749,
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
-			["Warnings"] = {
-				["Sound"] = false,
-			},
 			["Locked"] = true,
 			["Background"] = {
 				["EdgeSize"] = 9,
@@ -3788,7 +3768,27 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
+			["MinimapIcon"] = {
+				["hide"] = true,
+			},
+			["ShowWith"] = {
+				["UseShowWith"] = false,
+				["PVP"] = true,
+				["Alone"] = true,
+				["Resting"] = true,
+				["HideWhileResting"] = false,
+				["HideInPVP"] = false,
+			},
 			["VGrip1"] = 155.316689874038,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
+			["Warnings"] = {
+				["Sound"] = false,
+			},
+			["PositionX"] = 451.131409021275,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {

@@ -478,19 +478,19 @@ LUIDB = {
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
 						["CoordX"] = 1570.68566894531,
-						["ItemQuality"] = true,
 						["CoordY"] = 776.463745117188,
+						["ItemQuality"] = true,
 					},
 					["Reagents"] = {
-						["CoordY"] = 879.551025390625,
 						["CoordX"] = 619.753662109375,
+						["CoordY"] = 879.551025390625,
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
-						["CoordX"] = 1115.05224609375,
-						["ItemQuality"] = true,
 						["CoordY"] = 694.042175292969,
+						["CoordX"] = 1115.05224609375,
 						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
 					},
 				},
 				["Brotuss - Zul'jin"] = {
@@ -550,17 +550,17 @@ LUIDB = {
 					},
 				},
 				["Vancard - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1576.43774414063,
+						["ItemQuality"] = true,
+						["CoordY"] = 828.128723144531,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
-						["CoordY"] = 916.390502929688,
-						["CoordX"] = 1122.07983398438,
+						["CoordX"] = 1120.54467773438,
+						["ItemQuality"] = true,
+						["CoordY"] = 895.668151855469,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1577.97253417969,
-						["CoordY"] = 898.738220214844,
-						["ItemQuality"] = true,
 					},
 				},
 				["Migimong - Runetotem"] = {
@@ -1359,32 +1359,32 @@ LUIDB = {
 					},
 				},
 				["Vancard - Zul'jin"] = {
+					["Tps"] = {
+						["IsShown"] = true,
+						["Width"] = 198,
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+					},
 					["Minimap"] = {
 						["IsShown"] = true,
 					},
 					["MicroMenu"] = {
 						["IsShown"] = true,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["Anchor"] = "SkadaBarWindowSkada",
 					},
 					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
 						["IsShown"] = true,
 						["Width"] = 612,
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1518,29 +1518,29 @@ LUIDB = {
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["IsShown"] = true,
-						["Width"] = 189,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["Height"] = 218,
-					},
 					["Minimap"] = {
 						["IsShown"] = true,
 					},
 					["Tps"] = {
-						["IsShown"] = true,
-						["Width"] = 198,
 						["OffsetX"] = 43,
 						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
 					},
 					["Raid"] = {
-						["IsShown"] = true,
-						["Width"] = 612,
+						["Anchor"] = "Vd1",
 						["Height"] = 237,
 						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -2704,7 +2704,7 @@ LUIDB = {
 							["Mulmok"] = 193803,
 							["Brotus"] = 20307798,
 							["Jingojaggot"] = 356823,
-							["Shanyt"] = 13201840486,
+							["Shanyt"] = 13273032321,
 							["Bathal"] = 2000,
 							["Shaekhan"] = 12334,
 						},
@@ -2713,7 +2713,7 @@ LUIDB = {
 				["Zul'jin"] = {
 					["Gold"] = {
 						["Horde"] = {
-							["Vancard"] = 3822817,
+							["Vancard"] = 13687438,
 							["Zulbathal"] = 2000,
 							["Fantastiburo"] = 10000,
 						},
@@ -2778,72 +2778,72 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
-							"/omen show", -- [1]
-							"/fishingbuddy", -- [2]
-							"/moveexport", -- [3]
+							"/moveexport", -- [1]
+							"/omen show", -- [2]
+							"/fishingbuddy", -- [3]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [4]
-							"/omen show", -- [5]
-							"/moveexport", -- [6]
-							"/omen show", -- [7]
-							"/fishingbuddy", -- [8]
-							"/omen show", -- [9]
-							"/fishingbuddy", -- [10]
-							"/moveexport", -- [11]
-							"/omen show", -- [12]
+							"/moveexport", -- [5]
+							"/fishingbuddy", -- [6]
+							"/moveexport", -- [7]
+							"/omen show", -- [8]
+							"/moveexport", -- [9]
+							"/omen show", -- [10]
+							"/fishingbuddy", -- [11]
+							"/moveexport", -- [12]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [13]
-							"/fishingbuddy", -- [14]
-							"/omen show", -- [15]
-							"/fishingbuddy", -- [16]
-							"/moveexport", -- [17]
+							"/omen show", -- [14]
+							"/moveexport", -- [15]
+							"/omen show", -- [16]
+							"/fishingbuddy", -- [17]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [18]
-							"/omen show", -- [19]
-							"/moveexport", -- [20]
-							"/omen show", -- [21]
-							"/fishingbuddy", -- [22]
-							"/moveexport", -- [23]
+							"/moveexport", -- [19]
+							"/fishingbuddy", -- [20]
+							"/moveexport", -- [21]
+							"/omen show", -- [22]
+							"/fishingbuddy", -- [23]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [24]
-							"/omen show", -- [25]
-							"/moveexport", -- [26]
-							"/omen show", -- [27]
-							"/fishingbuddy", -- [28]
+							"/moveexport", -- [25]
+							"/fishingbuddy", -- [26]
+							"/moveexport", -- [27]
+							"/omen show", -- [28]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [29]
-							"/moveexport", -- [30]
-							"/fishingbuddy", -- [31]
-							"/moveexport", -- [32]
+							"/fishingbuddy", -- [30]
+							"/omen show", -- [31]
+							"/fishingbuddy", -- [32]
 						},
 						["Horde - Zul'jin"] = {
-							"/TRAIN", -- [1]
-							"/s i promoted you to leader tank", -- [2]
-							"/s thanks for being a good tank", -- [3]
-							"/i healer will be right back", -- [4]
-							"/i assk for a moment", -- [5]
-							"/dance", -- [6]
-							"/i Thanks!", -- [7]
-							"/i gotta go", -- [8]
-							"/sleep", -- [9]
-							"/vuhdo", -- [10]
-							"/fishingbuddy", -- [11]
-							"/dance", -- [12]
-							"/vuhdo", -- [13]
-							"/dance", -- [14]
+							"/vuhdo", -- [1]
+							"/i i dont know if i would go that far but the deed is done", -- [2]
+							"/i THAKS", -- [3]
+							"/TRAIN", -- [4]
+							"/i i dont know if i would go that far but the deed is done", -- [5]
+							"/i THAKS", -- [6]
+							"/i i dont know if i would go that far but the deed is done", -- [7]
+							"/vuhdo", -- [8]
+							"/i i dont know if i would go that far but the deed is done", -- [9]
+							"/i THAKS", -- [10]
+							"/dance", -- [11]
+							"/TRAIN", -- [12]
+							"/sleep", -- [13]
+							"/i i dont know if i would go that far but the deed is done", -- [14]
 							"/vuhdo", -- [15]
-							"/dance", -- [16]
-							"/TRAIN", -- [17]
-							"/MOO", -- [18]
-							"/s i promoted you to leader tank", -- [19]
-							"/i healer will be right back", -- [20]
-							"/dance", -- [21]
-							"/i gotta go", -- [22]
-							"/vuhdo", -- [23]
-							"/dance", -- [24]
-							"/vuhdo", -- [25]
-							"/TRAIN", -- [26]
-							"/s i promoted you to leader tank", -- [27]
-							"/dance", -- [28]
-							"/vuhdo", -- [29]
-							"/TRAIN", -- [30]
-							"/dance", -- [31]
-							"/TRAIN", -- [32]
+							"/i i dont know if i would go that far but the deed is done", -- [16]
+							"/i THAKS", -- [17]
+							"/TRAIN", -- [18]
+							"/i i dont know if i would go that far but the deed is done", -- [19]
+							"/i THAKS", -- [20]
+							"/i i dont know if i would go that far but the deed is done", -- [21]
+							"/vuhdo", -- [22]
+							"/i THAKS", -- [23]
+							"/TRAIN", -- [24]
+							"/i i dont know if i would go that far but the deed is done", -- [25]
+							"/i THAKS", -- [26]
+							"/i i dont know if i would go that far but the deed is done", -- [27]
+							"/vuhdo", -- [28]
+							"/TRAIN", -- [29]
+							"/i THAKS", -- [30]
+							"/vuhdo", -- [31]
+							"/i THAKS", -- [32]
 						},
 					},
 				},
@@ -2994,10 +2994,10 @@ LUIDB = {
 					["y"] = 46.0004300258579,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["y"] = 46.0004382602019,
-					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004382602019,
 				},
 				["Brotuss - Zul'jin"] = {
 					["modules"] = {
@@ -3112,10 +3112,10 @@ LUIDB = {
 					["y"] = 46.0004300258579,
 				},
 				["Vancard - Zul'jin"] = {
+					["y"] = 46.0004382602019,
+					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004382602019,
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["y"] = 46.0004300258579,
@@ -10893,17 +10893,17 @@ LUIDB = {
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
-					["General"] = {
-						["Enable"] = false,
-					},
-					["BottomTexture"] = {
-						["Enable"] = false,
-					},
 					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["SidebarLeft1"] = {
 						["Enable"] = true,
+					},
+					["General"] = {
+						["Enable"] = false,
+					},
+					["BottomTexture"] = {
+						["Enable"] = false,
 					},
 				},
 				["Brotuss - Zul'jin"] = {
@@ -10951,13 +10951,13 @@ LUIDB = {
 					},
 				},
 				["Vancard - Zul'jin"] = {
-					["TopTexture"] = {
-						["Enable"] = false,
-					},
 					["General"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
+						["Enable"] = false,
+					},
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 				},

@@ -1,7 +1,5 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
 	["Runetotem"] = {
 		["Migimong"] = {
 			["faction"] = "Alliance",
@@ -50,8 +48,8 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 		["Vancard"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
 		["Vaddor"] = {
 			["faction"] = "Horde",
@@ -80,6 +78,24 @@ MasterPlanAG = {
 		["Fantastiburo"] = {
 			["faction"] = "Horde",
 			["class"] = "SHAMAN",
+		},
+	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["Brewnheimer"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Dialdaas"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
 		},
 	},
 	["Dalaran"] = {
@@ -114,24 +130,6 @@ MasterPlanAG = {
 		["Narisaric"] = {
 			["faction"] = "Alliance",
 			["class"] = "DRUID",
-		},
-	},
-	["Darkspear"] = {
-		["Shathiel"] = {
-			["faction"] = "Alliance",
-			["class"] = "MAGE",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
-		},
-		["Brewnheimer"] = {
-			["faction"] = "Alliance",
-			["class"] = "SHAMAN",
-		},
-		["Dialdaas"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
 		},
 	},
 	["Argent Dawn"] = {
@@ -174,26 +172,24 @@ MasterPlanAG = {
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
 			["summary"] = {
-				["lastOilTime"] = 1533691247,
+				["lastOilTime"] = 1533868689,
 				["inProgress"] = {
-					[260] = 1533705630,
-					[261] = 1533705628,
-					[695] = 1533705645,
-					[617] = 1533720044,
-					[745] = 1533756047,
-					[671] = 1533705620,
-					[188] = 1533702731,
-					[486] = 1533712834,
-					[302] = 1533712827,
-					[258] = 1533722716,
-					[379] = 1533720025,
-					[482] = 1533712832,
+					[500] = 1533904679,
+					[745] = 1533933489,
+					[262] = 1533883076,
+					[503] = 1533882023,
+					[676] = 1533889230,
+					[695] = 1533883092,
+					[179] = 1533878044,
+					[128] = 1533889234,
+					[675] = 1533889228,
+					[538] = 1533897487,
 				},
 			},
-			["curOil"] = 55725,
+			["curOil"] = 56160,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1533701419,
-			["curRes"] = 8233,
+			["lastCacheTime"] = 1533875970,
+			["curRes"] = 7684,
 			["faction"] = "Horde",
 		},
 		["Shaekhan"] = {

@@ -574,10 +574,10 @@ PawnCommon = {
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
-				["Vancard-Zul'jin"] = {
+				["Tyriinid-Dalaran"] = {
 					["Visible"] = true,
 				},
-				["Tyriinid-Dalaran"] = {
+				["Vancard-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},
@@ -686,6 +686,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0222,
+	["LastVersion"] = 2.0223,
 	["Digits"] = 1,
 }

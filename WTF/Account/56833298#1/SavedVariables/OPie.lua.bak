@@ -46,8 +46,8 @@ OneRing_Config = {
 					["id"] = 64731,
 				}, -- [5]
 				{
-					["id"] = 229388,
 					["sliceToken"] = "ABue3P0AP5b",
+					["id"] = 229388,
 				}, -- [6]
 				{
 					["sliceToken"] = "ABue3P0AP5v",
