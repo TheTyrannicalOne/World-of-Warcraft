@@ -45,10 +45,10 @@ MapsterDB = {
 				["Fantastiburo - Zul'jin"] = {
 					["version"] = 1,
 				},
-				["Vancard - Zul'jin"] = {
+				["Towel-Monk"] = {
 					["version"] = 1,
 				},
-				["Towel-Monk"] = {
+				["Vancard - Zul'jin"] = {
 					["version"] = 1,
 				},
 				["Fantastiburo - Argent Dawn"] = {
@@ -67,18 +67,18 @@ MapsterDB = {
 		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Default",
 		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Shanyt - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Datgorg - Argent Dawn"] = {
@@ -113,9 +113,9 @@ MapsterDB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["scale"] = 1.0691260099411,
+			["y"] = -71.1882280573341,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
-			["y"] = -71.1882280573341,
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,
@@ -161,13 +161,13 @@ MapsterDB = {
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
 		},
-		["Vancard - Zul'jin"] = {
+		["LUI-Towelliee"] = {
 			["scale"] = 0.915698230266571,
-			["y"] = -71.1882280573341,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
+			["y"] = -71.1882280573341,
 		},
-		["LUI-Towelliee"] = {
+		["Vancard - Zul'jin"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",

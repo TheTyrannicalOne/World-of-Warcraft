@@ -16,9 +16,9 @@ OneRing_Config = {
 				["RaidSymbols"] = false,
 				["OPieTracking"] = false,
 				["HunterShots"] = false,
-				["WorldMarkers"] = false,
-				["OPieTrinkets"] = false,
 				["OPieAutoQuest"] = false,
+				["OPieTrinkets"] = false,
+				["WorldMarkers"] = false,
 			},
 		},
 	},
@@ -46,8 +46,8 @@ OneRing_Config = {
 					["id"] = 64731,
 				}, -- [5]
 				{
-					["id"] = 229388,
 					["sliceToken"] = "ABue3P0AP5b",
+					["id"] = 229388,
 				}, -- [6]
 				{
 					["sliceToken"] = "ABue3P0AP5v",
@@ -109,10 +109,10 @@ OneRing_Config = {
 					["id"] = 64731,
 					["sliceToken"] = "ABueoFiE/rt",
 				}, -- [3]
-				["limit"] = "Serbitechna-Darkspear",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Serbitechna-Darkspear",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

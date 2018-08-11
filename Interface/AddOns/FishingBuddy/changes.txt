@@ -1,4 +1,8 @@
-﻿Version 1.9.9
+﻿Version 1.9.10
+- Try harder not to throw away Legion bonus fish if you don't need the bonus
+- "Setup Skills" option so we don't get your skils at startup (TSM users)
+
+Version 1.9.9
 - Don't throw special fish if at max skill or full power Artifact pole (#335)
 - Count fish in a barrel (#322)
 - Fix Curse bugs #338, #339, #340

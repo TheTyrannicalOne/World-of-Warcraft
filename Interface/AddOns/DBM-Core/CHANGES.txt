@@ -1,5 +1,40 @@
 Changes since tag 8.0.1
 
+commit d52bd95ff56886941806e195ef7e573abd6c48d9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Aug 11 08:10:33 2018 +0200
+
+    Omega via svn r17687:
+    Kr Update
+
+commit 19989dbce4974b7b9e0aeca0b9666a3676bb08e2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Aug 11 06:06:40 2018 +0200
+
+    Omega via svn r17686:
+    improve warning clarity some
+
+commit f02d1579225b017c82f6e52b57b9f110909eff2a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 10 23:10:42 2018 +0200
+
+    Omega via svn r17685:
+    Remove unused
+
+commit bf21efbfeb5f74c0a0f5f811657f27614b4d289c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 10 23:08:36 2018 +0200
+
+    Omega via svn r17684:
+    Merge DBM-LDB
+
+commit 8fe61a1506fcc31119f8209c1d99b33368607791
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Aug 10 21:17:23 2018 +0200
+
+    Omega via svn r17683:
+    Support minimap icon as a broker, with LibDBIcon support
+
 commit d3961f5001c176352cf9a86fd07f0f01663483d3
 Author: subversion <svn@deadlybossmods.com>
 Date:   Fri Aug 10 06:38:33 2018 +0200

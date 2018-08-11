@@ -8,9 +8,9 @@ RefluxDB = {
 	["ignored"] = {
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
-		},
 		["Towel-Monk"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

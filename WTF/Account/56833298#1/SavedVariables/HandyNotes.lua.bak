@@ -27,23 +27,23 @@ HandyNotesDB = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Thromar - Dalaran"] = "Thromar - Dalaran",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Vaddor - Zul'jin"] = {
@@ -100,39 +100,39 @@ HandyNotesDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Fantastiburo - Argent Dawn"] = {
-		},
-		["Vancard - Zul'jin"] = {
-		},
-		["Sinh - Dalaran"] = {
-		},
-		["Migimong - Runetotem"] = {
-		},
-		["Tyrann - Zul'jin"] = {
-		},
-		["Shathiel - Darkspear"] = {
-		},
-		["Vadder - Argent Dawn"] = {
-		},
-		["Fantastiburo - Zul'jin"] = {
-		},
-		["Tyran - Argent Dawn"] = {
-		},
-		["Cowtastraphy - Argent Dawn"] = {
-		},
-		["Brotus - Argent Dawn"] = {
-		},
-		["Thromar - Dalaran"] = {
-		},
-		["Mulmok - Argent Dawn"] = {
-		},
-		["Beeronimo - Dalaran"] = {
-		},
-		["Dialdaas - Darkspear"] = {
+		["Narisaric - Dalaran"] = {
 		},
 		["Serbitechna - Darkspear"] = {
 		},
-		["Narisaric - Dalaran"] = {
+		["Sinh - Dalaran"] = {
+		},
+		["Dialdaas - Darkspear"] = {
+		},
+		["Tyrann - Zul'jin"] = {
+		},
+		["Mulmok - Argent Dawn"] = {
+		},
+		["Vadder - Argent Dawn"] = {
+		},
+		["Thromar - Dalaran"] = {
+		},
+		["Tyran - Argent Dawn"] = {
+		},
+		["Brotus - Argent Dawn"] = {
+		},
+		["Cowtastraphy - Argent Dawn"] = {
+		},
+		["Fantastiburo - Zul'jin"] = {
+		},
+		["Shathiel - Darkspear"] = {
+		},
+		["Beeronimo - Dalaran"] = {
+		},
+		["Migimong - Runetotem"] = {
+		},
+		["Vancard - Zul'jin"] = {
+		},
+		["Fantastiburo - Argent Dawn"] = {
 		},
 	},
 }
@@ -164,23 +164,23 @@ HandyNotes_HandyNotesDB = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Thromar - Dalaran"] = "Thromar - Dalaran",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Vaddor - Zul'jin"] = {
@@ -237,39 +237,39 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Fantastiburo - Argent Dawn"] = {
-		},
-		["Vancard - Zul'jin"] = {
-		},
-		["Sinh - Dalaran"] = {
-		},
-		["Migimong - Runetotem"] = {
-		},
-		["Tyrann - Zul'jin"] = {
-		},
-		["Shathiel - Darkspear"] = {
-		},
-		["Vadder - Argent Dawn"] = {
-		},
-		["Fantastiburo - Zul'jin"] = {
-		},
-		["Tyran - Argent Dawn"] = {
-		},
-		["Cowtastraphy - Argent Dawn"] = {
-		},
-		["Brotus - Argent Dawn"] = {
-		},
-		["Thromar - Dalaran"] = {
-		},
-		["Mulmok - Argent Dawn"] = {
-		},
-		["Beeronimo - Dalaran"] = {
-		},
-		["Dialdaas - Darkspear"] = {
+		["Narisaric - Dalaran"] = {
 		},
 		["Serbitechna - Darkspear"] = {
 		},
-		["Narisaric - Dalaran"] = {
+		["Sinh - Dalaran"] = {
+		},
+		["Dialdaas - Darkspear"] = {
+		},
+		["Tyrann - Zul'jin"] = {
+		},
+		["Mulmok - Argent Dawn"] = {
+		},
+		["Vadder - Argent Dawn"] = {
+		},
+		["Thromar - Dalaran"] = {
+		},
+		["Tyran - Argent Dawn"] = {
+		},
+		["Brotus - Argent Dawn"] = {
+		},
+		["Cowtastraphy - Argent Dawn"] = {
+		},
+		["Fantastiburo - Zul'jin"] = {
+		},
+		["Shathiel - Darkspear"] = {
+		},
+		["Beeronimo - Dalaran"] = {
+		},
+		["Migimong - Runetotem"] = {
+		},
+		["Vancard - Zul'jin"] = {
+		},
+		["Fantastiburo - Argent Dawn"] = {
 		},
 	},
 }

@@ -25,6 +25,7 @@ local POLES = {
     ["Mastercraft Kalu'ak Fishing Pole"] = "44050:0:0:0",
     ["Bone Fishing Pole"] = "45991:0:0:0",
     ["Jeweled Fishing Pole"] = "45992:0:0:0",
+    ["Underlight Angler"] = "133755:0:0:0",
 -- yeah, so you can't really use these (for now :-)
     ["Dwarven Fishing Pole"] = "3567:0:0:0",
     ["Goblin Fishing Pole"] = "4598:0:0:0",
@@ -58,6 +59,11 @@ local GeneralOptions = {
     ["ShowBanner"] = {
         ["text"] = FBConstants.CONFIG_SHOWBANNER_ONOFF,
         ["tooltip"] = FBConstants.CONFIG_SHOWBANNER_INFO,
+        ["v"] = 1,
+        ["default"] = true, },
+    ["SetupSkills"] = {
+        ["text"] = FBConstants.CONFIG_TRADESKILL_ONOFF,
+        ["tooltip"] = FBConstants.CONFIG_TRADESKILL_INFO,
         ["v"] = 1,
         ["default"] = true, },
     ["EnhanceFishingSounds"] = {
@@ -1600,6 +1606,11 @@ FishingBuddy.OnEvent = function(self, event, ...)
             efsv = FishingBuddy_Player["ResetEnhance"];
             FishingBuddy.EnhanceFishingSounds(false, false);
             FishingBuddy_Player["ResetEnhance"] = nil;
+        end
+
+        -- Default is true, not saved, therefor implicitly nil
+        if (FishingBuddy_Player["Settings"]["SetupSkills"] == nil) then
+            FL:GetTradeSkillData()
         end
     elseif ( event == "PLAYER_ALIVE" ) then
         FishingMode();
