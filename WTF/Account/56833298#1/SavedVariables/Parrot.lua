@@ -4,6 +4,17 @@ ParrotDB = {
 		["CombatEvents"] = {
 			["profiles"] = {
 				["Vaddor - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -83,54 +94,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -154,10 +144,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -166,57 +156,26 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Datgorg - Argent Dawn"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -296,43 +255,74 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
 						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
 					},
 					["Outgoing"] = {
 						["Pet heals"] = {
@@ -345,9 +335,30 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Jingojaggot - Argent Dawn"] = {
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -370,7 +381,7 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Skill deflects"] = {
@@ -382,23 +393,22 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
 						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -479,47 +489,48 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Tyrannithal - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -599,54 +610,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -670,10 +660,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -682,16 +672,37 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Brokehorn - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -714,10 +725,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -726,33 +737,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -833,37 +823,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Shaewong - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -886,10 +897,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -898,33 +909,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -1005,37 +995,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Goramor - Runetotem"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -1115,54 +1126,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -1186,10 +1176,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1198,16 +1188,37 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Shaekhan - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -1230,10 +1241,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1242,33 +1253,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -1349,78 +1339,47 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Shanyt - Zul'jin"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -1500,43 +1459,74 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
 						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
 					},
 					["Outgoing"] = {
 						["Skill absorbs"] = {
@@ -1549,9 +1539,30 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Bathal - Argent Dawn"] = {
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -1574,7 +1585,7 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Skill deflects"] = {
@@ -1586,23 +1597,22 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
 						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -1683,47 +1693,48 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Gangus - Runetotem"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -1746,10 +1757,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1758,33 +1769,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -1865,37 +1855,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Shaekhan - Argent Dawn"] = {
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -1918,7 +1929,7 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Skill blocks"] = {
@@ -1930,23 +1941,22 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
 						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -2027,47 +2037,48 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Malivant - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -2090,10 +2101,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2102,33 +2113,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -2209,37 +2199,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Mulmok - Argent Dawn"] = {
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -2262,7 +2273,7 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Skill deflects"] = {
@@ -2274,23 +2285,22 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
 						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -2371,47 +2381,48 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Claugh - Runetotem"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -2434,10 +2445,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2446,33 +2457,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -2553,37 +2543,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Tyriinid - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -2606,10 +2617,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2618,33 +2629,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -2725,37 +2715,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Datgorg - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -2778,10 +2789,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2790,33 +2801,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -2897,37 +2887,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Panboozled - Runetotem"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -2950,10 +2961,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2962,33 +2973,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -3069,37 +3059,47 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -3179,54 +3179,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -3250,10 +3229,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -3262,57 +3241,37 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
-				["Serbitechna - Darkspear"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
+				["Vancard - Zul'jin"] = {
 					["Outgoing"] = {
 						["Skill absorbs"] = {
 							["disabled"] = true,
@@ -3323,16 +3282,6 @@ ParrotDB = {
 						["Pet heals over time"] = {
 							["disabled"] = true,
 						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -3413,13 +3362,13 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
@@ -3431,60 +3380,70 @@ ParrotDB = {
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["NPC killing blows"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Brotus - Argent Dawn"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -3564,43 +3523,74 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
 						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
 					},
 					["Outgoing"] = {
 						["Pet heals"] = {
@@ -3613,20 +3603,19 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["LUI-Towelliee"] = {
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -3706,33 +3695,54 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["NPC killing blows"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Player killing blows"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
+					},
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -3756,10 +3766,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill dodges"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {
@@ -3768,37 +3778,16 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill dodges"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Tyrannithal - Argent Dawn"] = {
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -3821,7 +3810,7 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Skill blocks"] = {
@@ -3833,12 +3822,33 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
+					},
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -3919,47 +3929,48 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Zulbathal - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -3982,10 +3993,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -3994,33 +4005,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -4101,99 +4091,47 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Shanyt - Argent Dawn"] = {
-					["Incoming"] = {
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -4273,37 +4211,110 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
 						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["Incoming"] = {
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
 							["disabled"] = true,
 						},
 					},
 					["hideSkillNames"] = true,
 				},
 				["Brotuss - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -4326,10 +4337,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4338,33 +4349,12 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -4445,37 +4435,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Brewnheimer - Darkspear"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -4555,54 +4566,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -4626,10 +4616,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4638,27 +4628,26 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Fantastiburo - Zul'jin"] = {
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -4681,10 +4670,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4693,22 +4682,23 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
 						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -4789,37 +4779,58 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
 						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Gillbourn - Runetotem"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -4899,54 +4910,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -4970,10 +4960,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4982,57 +4972,26 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
-				["Dialdaas - Darkspear"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
+				["Migimong - Runetotem"] = {
 					["Outgoing"] = {
 						["Skill absorbs"] = {
 							["disabled"] = true,
@@ -5043,16 +5002,6 @@ ParrotDB = {
 						["Pet heals over time"] = {
 							["disabled"] = true,
 						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -5133,37 +5082,99 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Urbul - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -5243,54 +5254,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -5314,10 +5304,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -5326,704 +5316,26 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Shathiel - Darkspear"] = {
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideSkillNames"] = true,
-				},
-				["Tyrann - Zul'jin"] = {
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideSkillNames"] = true,
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideSkillNames"] = true,
-				},
-				["Towel-Monk"] = {
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
-					["hideSkillNames"] = true,
-				},
-				["Vadder - Argent Dawn"] = {
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -6049,306 +5361,6 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["hideUnitNames"] = true,
-					["hideSkillNames"] = true,
-				},
-				["Tynster - Dalaran"] = {
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
 						["Skill deflects"] = {
 							["disabled"] = true,
 						},
@@ -6358,51 +5370,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideSkillNames"] = true,
-				},
-				["Tyran - Argent Dawn"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
 						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -6488,43 +5456,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Outgoing"] = {
 						["Pet heals"] = {
@@ -6534,512 +5492,6 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideSkillNames"] = true,
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideSkillNames"] = true,
-				},
-				["Thromar - Dalaran"] = {
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideSkillNames"] = true,
-				},
-				["Default"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
@@ -7056,6 +5508,17 @@ ParrotDB = {
 					["hideSkillNames"] = true,
 				},
 				["Sinh - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -7078,10 +5541,526 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
 						["Skill blocks"] = {
 							["disabled"] = true,
 						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
 						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
+					["hideSkillNames"] = true,
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
+					["hideSkillNames"] = true,
+				},
+				["Thromar - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
+					["hideSkillNames"] = true,
+				},
+				["Vadder - Argent Dawn"] = {
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -7094,17 +6073,6 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
 							["disabled"] = true,
 						},
 					},
@@ -7197,6 +6165,673 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideSkillNames"] = true,
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
+					["hideSkillNames"] = true,
+				},
+				["Tyran - Argent Dawn"] = {
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
+					["hideSkillNames"] = true,
+				},
+				["Tynster - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
+					["hideSkillNames"] = true,
+				},
+				["Towel-Monk"] = {
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
 						["Target buff gains"] = {
 							["disabled"] = true,
 						},
@@ -7209,10 +6844,10 @@ ParrotDB = {
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
+						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Buff gains"] = {
+						["Player killing blows"] = {
 							["disabled"] = true,
 						},
 						["Loot items"] = {
@@ -7225,9 +6860,385 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideSkillNames"] = true,
+				},
+				["Default"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideSkillNames"] = true,
+				},
+				["Tyrann - Zul'jin"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Beeronimo - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -7307,54 +7318,33 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
 					},
 					["Incoming"] = {
 						["Self heals over time"] = {
@@ -7378,10 +7368,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -7390,16 +7380,78 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -7479,46 +7531,34 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -7528,91 +7568,10 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
-				["Vancard - Zul'jin"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
+				["Serbitechna - Darkspear"] = {
 					["Outgoing"] = {
 						["Skill absorbs"] = {
 							["disabled"] = true,
@@ -7624,15 +7583,46 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
 						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -7713,13 +7703,13 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
@@ -7731,57 +7721,37 @@ ParrotDB = {
 						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["NPC killing blows"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
-				["Fantastiburo - Argent Dawn"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
+				["Narisaric - Dalaran"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
 							["disabled"] = true,
 						},
-						["Pet skill evades"] = {
+						["Pet heals"] = {
 							["disabled"] = true,
 						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
+						["Pet heals over time"] = {
 							["disabled"] = true,
 						},
 					},
@@ -7864,35 +7834,75 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Enemy debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -7902,17 +7912,7 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 			},
@@ -7922,276 +7922,276 @@ ParrotDB = {
 				["Vaddor - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Datgorg - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Tyrannithal - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Brokehorn - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Shaewong - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Goramor - Runetotem"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Shaekhan - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Shanyt - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Bathal - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Gangus - Runetotem"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Shaekhan - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Malivant - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Mulmok - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Claugh - Runetotem"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Tyriinid - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Datgorg - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Panboozled - Runetotem"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Serbitechna - Darkspear"] = {
+				["Vancard - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Brotus - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["LUI-Towelliee"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Ferocious Inspiration"] = true,
 						["Undying Resolve"] = true,
+						["Ferocious Inspiration"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Tyrannithal - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Zulbathal - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Brotuss - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Brewnheimer - Darkspear"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Fantastiburo - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Gillbourn - Runetotem"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Migimong - Runetotem"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Urbul - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Shathiel - Darkspear"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Tyrann - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Jingojaggot - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Towel-Monk"] = {
+				["Thromar - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
 						["Ferocious Inspiration"] = true,
@@ -8202,36 +8202,36 @@ ParrotDB = {
 				["Vadder - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
-						["Arcane Empowerment"] = true,
-					},
-				},
-				["Tynster - Dalaran"] = {
-					["suppressions"] = {
-						["Desecration"] = true,
 						["Undying Resolve"] = true,
-						["Ferocious Inspiration"] = true,
-						["Arcane Empowerment"] = true,
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["suppressions"] = {
-						["Desecration"] = true,
-						["Undying Resolve"] = true,
-						["Ferocious Inspiration"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Tyran - Argent Dawn"] = {
+					["suppressions"] = {
+						["Desecration"] = true,
+						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
+						["Arcane Empowerment"] = true,
+					},
+				},
+				["Tynster - Dalaran"] = {
+					["suppressions"] = {
+						["Desecration"] = true,
+						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
+						["Arcane Empowerment"] = true,
+					},
+				},
+				["Towel-Monk"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
 						["Undying Resolve"] = true,
@@ -8242,48 +8242,48 @@ ParrotDB = {
 				["Default"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Sinh - Dalaran"] = {
+				["Tyrann - Zul'jin"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
 				["Beeronimo - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Vancard - Zul'jin"] = {
+				["Serbitechna - Darkspear"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Narisaric - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
@@ -8293,15 +8293,6 @@ ParrotDB = {
 			["profiles"] = {
 				["Vaddor - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8309,23 +8300,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Datgorg - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8333,23 +8324,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8357,23 +8348,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Tyrannithal - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8381,23 +8372,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Brokehorn - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8405,23 +8396,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Shaewong - Dalaran"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8429,23 +8420,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Goramor - Runetotem"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8453,23 +8444,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Shaekhan - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8477,23 +8468,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Shanyt - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8501,23 +8492,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Bathal - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8525,23 +8516,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Gangus - Runetotem"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8549,23 +8540,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Shaekhan - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8573,23 +8564,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Malivant - Dalaran"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8597,23 +8588,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Mulmok - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8621,23 +8612,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Claugh - Runetotem"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8645,23 +8636,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Tyriinid - Dalaran"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8669,23 +8660,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Datgorg - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8693,23 +8684,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Panboozled - Runetotem"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8717,23 +8708,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8741,23 +8732,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Serbitechna - Darkspear"] = {
+				["Vancard - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8765,23 +8756,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Brotus - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8789,14 +8780,32 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["LUI-Towelliee"] = {
 					["areas"] = {
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["yOffset"] = -57.4493713378906,
+							["xOffset"] = 239.082946777344,
+							["size"] = 200,
+							["animationStyle"] = "Straight",
+							["stickyAnimationStyle"] = "Pow",
+						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8804,32 +8813,14 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
-							["stickyAnimationStyle"] = "Pow",
-							["animationStyle"] = "Straight",
-							["size"] = 200,
-						},
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["stickyAnimationStyle"] = "Pow",
-							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["yOffset"] = -57.4493713378906,
+							["stickyAnimationStyle"] = "Pow",
 						},
 					},
 				},
 				["Tyrannithal - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8837,23 +8828,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Zulbathal - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8861,23 +8852,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8885,23 +8876,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Brotuss - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8909,23 +8900,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Brewnheimer - Darkspear"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8933,23 +8924,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Fantastiburo - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8957,23 +8948,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Gillbourn - Runetotem"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -8981,23 +8972,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Migimong - Runetotem"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9005,23 +8996,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Urbul - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9029,23 +9020,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Shathiel - Darkspear"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9053,23 +9044,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Tyrann - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9077,23 +9068,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Jingojaggot - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9101,13 +9092,22 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Towel-Monk"] = {
+				["Thromar - Dalaran"] = {
 					["areas"] = {
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
@@ -9133,15 +9133,6 @@ ParrotDB = {
 				},
 				["Vadder - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9149,71 +9140,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
 							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
 						},
-					},
-				},
-				["Tynster - Dalaran"] = {
-					["areas"] = {
 						["Outgoing"] = {
 							["stickyDirection"] = "UP;LEFT",
 							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
+							["stickyAnimationStyle"] = "Pow",
 							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
-						["Incoming"] = {
-							["direction"] = "UP;RIGHT",
-							["xOffset"] = -244.198974609375,
-							["yOffset"] = -58.4725341796875,
-							["stickyDirection"] = "UP;RIGHT",
-							["iconSide"] = "RIGHT",
-							["speed"] = 2,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
 							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
-						["Incoming"] = {
-							["direction"] = "UP;RIGHT",
-							["xOffset"] = -244.198974609375,
-							["yOffset"] = -58.4725341796875,
-							["stickyDirection"] = "UP;RIGHT",
-							["iconSide"] = "RIGHT",
-							["speed"] = 2,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
 						},
 					},
 				},
 				["Cowtastraphy - Argent Dawn"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9221,13 +9164,70 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Tyran - Argent Dawn"] = {
+					["areas"] = {
+						["Incoming"] = {
+							["direction"] = "UP;RIGHT",
+							["xOffset"] = -244.198974609375,
+							["yOffset"] = -58.4725341796875,
+							["stickyDirection"] = "UP;RIGHT",
+							["iconSide"] = "RIGHT",
+							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
+							["size"] = 200,
+							["animationStyle"] = "Straight",
+							["yOffset"] = -57.4493713378906,
+						},
+					},
+				},
+				["Tynster - Dalaran"] = {
+					["areas"] = {
+						["Incoming"] = {
+							["direction"] = "UP;RIGHT",
+							["xOffset"] = -244.198974609375,
+							["yOffset"] = -58.4725341796875,
+							["stickyDirection"] = "UP;RIGHT",
+							["iconSide"] = "RIGHT",
+							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
+							["size"] = 200,
+							["animationStyle"] = "Straight",
+							["yOffset"] = -57.4493713378906,
+						},
+					},
+				},
+				["Towel-Monk"] = {
 					["areas"] = {
 						["Outgoing"] = {
 							["stickyDirection"] = "UP;LEFT",
@@ -9253,15 +9253,6 @@ ParrotDB = {
 				},
 				["Default"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9269,23 +9260,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Sinh - Dalaran"] = {
+				["Tyrann - Zul'jin"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9293,23 +9284,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
 				["Beeronimo - Dalaran"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9317,23 +9308,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9341,23 +9332,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Vancard - Zul'jin"] = {
+				["Serbitechna - Darkspear"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9365,23 +9356,23 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Narisaric - Dalaran"] = {
 					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -9389,9 +9380,18 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
@@ -9405,193 +9405,193 @@ ParrotDB = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Datgorg - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["font"] = "Prototype",
-					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
 				["Jingojaggot - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["stickyFontSize"] = 28,
-					["fontSize"] = 16,
 					["font"] = "Prototype",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
 				},
 				["Tyrannithal - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Brokehorn - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Shaewong - Dalaran"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Goramor - Runetotem"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Shaekhan - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Shanyt - Zul'jin"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["font"] = "Prototype",
-					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
 				["Bathal - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["stickyFontSize"] = 28,
-					["fontSize"] = 16,
 					["font"] = "Prototype",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
 				},
 				["Gangus - Runetotem"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Shaekhan - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["stickyFontSize"] = 28,
-					["fontSize"] = 16,
 					["font"] = "Prototype",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
 				},
 				["Malivant - Dalaran"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Mulmok - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["stickyFontSize"] = 28,
-					["fontSize"] = 16,
 					["font"] = "Prototype",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
 				},
 				["Claugh - Runetotem"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Tyriinid - Dalaran"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Datgorg - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Panboozled - Runetotem"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
-				["Narisaric - Dalaran"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
+				["Fantastiburo - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
+					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
-				["Serbitechna - Darkspear"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
+				["Vancard - Zul'jin"] = {
 					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
+					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
 				["Brotus - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["font"] = "Prototype",
-					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
 				["LUI-Towelliee"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["stickyFontSize"] = 28,
-					["fontSize"] = 16,
 					["font"] = "Prototype",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
 				},
 				["Tyrannithal - Argent Dawn"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["fontOutline"] = "NONE",
-					["stickyFont"] = "Prototype",
 					["font"] = "Prototype",
+					["stickyFont"] = "Prototype",
+					["fontOutline"] = "NONE",
 				},
 				["Zulbathal - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Shanyt - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
@@ -9605,99 +9605,83 @@ ParrotDB = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Brewnheimer - Darkspear"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Fantastiburo - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Gillbourn - Runetotem"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
-				["Dialdaas - Darkspear"] = {
+				["Migimong - Runetotem"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Urbul - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Shathiel - Darkspear"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["font"] = "Prototype",
-					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
-				["Tyrann - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Jingojaggot - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
-				["Towel-Monk"] = {
+				["Thromar - Dalaran"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Vadder - Argent Dawn"] = {
-					["stickyFont"] = "Prototype",
-					["stickyFontOutline"] = "OUTLINE",
-					["fontOutline"] = "NONE",
-					["stickyFontSize"] = 28,
-					["fontSize"] = 16,
-					["font"] = "Prototype",
-				},
-				["Tynster - Dalaran"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
-					["fontOutline"] = "NONE",
-				},
-				["Tyran - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
@@ -9709,65 +9693,81 @@ ParrotDB = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
-					["font"] = "Prototype",
-					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
-				["Thromar - Dalaran"] = {
+				["Tyran - Argent Dawn"] = {
+					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
+					["fontOutline"] = "NONE",
+					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
+				},
+				["Tynster - Dalaran"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
+				},
+				["Towel-Monk"] = {
+					["fontSize"] = 16,
+					["stickyFontOutline"] = "OUTLINE",
+					["stickyFontSize"] = 28,
+					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Default"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["fontOutline"] = "NONE",
-					["stickyFont"] = "Prototype",
 					["font"] = "Prototype",
+					["stickyFont"] = "Prototype",
+					["fontOutline"] = "NONE",
 				},
-				["Sinh - Dalaran"] = {
+				["Tyrann - Zul'jin"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 				["Beeronimo - Dalaran"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
-				["Vancard - Zul'jin"] = {
+				["Serbitechna - Darkspear"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
-				["Fantastiburo - Argent Dawn"] = {
-					["stickyFont"] = "Prototype",
-					["stickyFontOutline"] = "OUTLINE",
-					["fontOutline"] = "NONE",
-					["font"] = "Prototype",
+				["Narisaric - Dalaran"] = {
 					["fontSize"] = 16,
+					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
+					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
 			},
 		},
@@ -10997,7 +10997,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -11065,7 +11065,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Serbitechna - Darkspear"] = {
+				["Vancard - Zul'jin"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -11745,7 +11745,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Migimong - Runetotem"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -11949,7 +11949,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Tyrann - Zul'jin"] = {
+				["Sinh - Dalaran"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12085,7 +12085,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Towel-Monk"] = {
+				["Thromar - Dalaran"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12221,7 +12221,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Tynster - Dalaran"] = {
+				["Cowtastraphy - Argent Dawn"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12357,7 +12357,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Cowtastraphy - Argent Dawn"] = {
+				["Tynster - Dalaran"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12425,7 +12425,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Towel-Monk"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12561,7 +12561,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Sinh - Dalaran"] = {
+				["Tyrann - Zul'jin"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12697,7 +12697,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12765,7 +12765,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Vancard - Zul'jin"] = {
+				["Serbitechna - Darkspear"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12833,7 +12833,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Narisaric - Dalaran"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12931,23 +12931,23 @@ ParrotDB = {
 		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Thromar - Dalaran"] = "Thromar - Dalaran",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
 		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Vaddor - Zul'jin"] = {
@@ -12986,9 +12986,9 @@ ParrotDB = {
 		},
 		["Panboozled - Runetotem"] = {
 		},
-		["Narisaric - Dalaran"] = {
+		["Fantastiburo - Argent Dawn"] = {
 		},
-		["Serbitechna - Darkspear"] = {
+		["Vancard - Zul'jin"] = {
 		},
 		["Brotus - Argent Dawn"] = {
 		},
@@ -13008,39 +13008,39 @@ ParrotDB = {
 		},
 		["Gillbourn - Runetotem"] = {
 		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 		},
 		["Urbul - Zul'jin"] = {
 		},
 		["Shathiel - Darkspear"] = {
 		},
-		["Tyrann - Zul'jin"] = {
+		["Sinh - Dalaran"] = {
 		},
 		["Jingojaggot - Zul'jin"] = {
 		},
-		["Towel-Monk"] = {
+		["Thromar - Dalaran"] = {
 		},
 		["Vadder - Argent Dawn"] = {
 		},
-		["Tynster - Dalaran"] = {
+		["Cowtastraphy - Argent Dawn"] = {
 		},
 		["Tyran - Argent Dawn"] = {
 		},
-		["Cowtastraphy - Argent Dawn"] = {
+		["Tynster - Dalaran"] = {
 		},
-		["Thromar - Dalaran"] = {
+		["Towel-Monk"] = {
 		},
 		["Default"] = {
 		},
-		["Sinh - Dalaran"] = {
+		["Tyrann - Zul'jin"] = {
 		},
 		["Beeronimo - Dalaran"] = {
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["Serbitechna - Darkspear"] = {
 		},
-		["Fantastiburo - Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
 		},
 	},
 }

@@ -41,9 +41,9 @@
 --  Globals/Default Options  --
 -------------------------------
 DBM = {
-	Revision = tonumber(("$Revision: 17687 $"):sub(12, -3)),
-	DisplayVersion = "8.0.2 alpha", -- the string that is shown as version
-	ReleaseRevision = 17635 -- the revision of the latest stable version that is available
+	Revision = tonumber(("$Revision: 17702 $"):sub(12, -3)),
+	DisplayVersion = "8.0.4 alpha", -- the string that is shown as version
+	ReleaseRevision = 17699 -- the revision of the latest stable version that is available
 }
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
 
@@ -402,7 +402,7 @@ local AddMsg
 local delayedFunction
 local dataBroker
 
-local fakeBWVersion, fakeBWHash = 103, "a1726b8"
+local fakeBWVersion, fakeBWHash = 104, "1585351"
 local versionQueryString, versionResponseString = "Q^%d^%s", "V^%d^%s"
 
 local enableIcons = true -- set to false when a raid leader or a promoted player has a newer version of DBM
@@ -434,7 +434,7 @@ end
 local LD
 if LibStub("LibDurability", true) then
 	LD = LibStub("LibDurability")
-end 
+end
 
 
 --------------------------------------------------------
@@ -1163,7 +1163,6 @@ do
 			end
 			if GetAddOnEnableState(playerName, "DBM-LDB") >= 1 then
 				C_TimerAfter(15, function() AddMsg(self, DBM_CORE_DBMLDB) end)
-				return
 			end
 			self.Bars:LoadOptions("DBM")
 			self.Arrow:LoadPosition()
@@ -1171,7 +1170,9 @@ do
 			if type(DBM_MinimapIcon) ~= "table" then
 				DBM_MinimapIcon = {}
 			end
-			LibStub("LibDBIcon-1.0"):Register("DBM", dataBroker, DBM_MinimapIcon)
+			if LibStub("LibDBIcon-1.0", true) then
+				LibStub("LibDBIcon-1.0"):Register("DBM", dataBroker, DBM_MinimapIcon)
+			end
 			--[[local soundChannels = tonumber(GetCVar("Sound_NumChannels")) or 24--if set to 24, may return nil, Defaults usually do
 			--If this messes with your fps, stop raiding with a toaster. It's only fix for addon sound ducking.
 			if soundChannels < 64 then
@@ -2683,7 +2684,7 @@ do
 						info = UIDropDownMenu_CreateInfo()
 						info.text = v.name
 						info.notCheckable = true
-						info.func = function() DBM:LoadMod(v) CloseDropDownMenus() end
+						info.func = function() DBM:LoadMod(v, true) CloseDropDownMenus() end
 						UIDropDownMenu_AddButton(info, 3)
 					end
 				end
@@ -2704,27 +2705,29 @@ do
 	end
 
 	--New LDB Object
-    dataBroker = LibStub("LibDataBroker-1.1"):NewDataObject("DBM",
-        {type = "launcher", label = "DBM", icon = "Interface\\AddOns\\DBM-Core\\textures\\Minimap-Button-Up"}
-    )
+	if LibStub("LibDataBroker-1.1", true) then
+		dataBroker = LibStub("LibDataBroker-1.1"):NewDataObject("DBM",
+        	{type = "launcher", label = "DBM", icon = "Interface\\AddOns\\DBM-Core\\textures\\Minimap-Button-Up"}
+    	)
  
-    function dataBroker.OnClick(self, button)
-        if IsShiftKeyDown() then return end
-        if button == "RightButton" then
-			UIDropDownMenu_Initialize(dropdownFrame, initialize)
-			ToggleDropDownMenu(1, nil, dropdownFrame, "cursor", 5, -10)
-    	else
-       		DBM:LoadGUI()
-       	end
-    end
+		function dataBroker.OnClick(self, button)
+			if IsShiftKeyDown() then return end
+			if button == "RightButton" then
+				UIDropDownMenu_Initialize(dropdownFrame, initialize)
+				ToggleDropDownMenu(1, nil, dropdownFrame, "cursor", 5, -10)
+    		else
+       			DBM:LoadGUI()
+       		end
+    	end
  
-    function dataBroker.OnTooltipShow(GameTooltip)
-        GameTooltip:SetText(DBM_CORE_MINIMAP_TOOLTIP_HEADER, 1, 1, 1)
-        GameTooltip:AddLine(ver, NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
-        GameTooltip:AddLine(" ")
-        GameTooltip:AddLine(DBM_CORE_MINIMAP_TOOLTIP_FOOTER, RAID_CLASS_COLORS.MAGE.r, RAID_CLASS_COLORS.MAGE.g, RAID_CLASS_COLORS.MAGE.b, 1)
-		GameTooltip:AddLine(DBM_LDB_TOOLTIP_HELP1, RAID_CLASS_COLORS.MAGE.r, RAID_CLASS_COLORS.MAGE.g, RAID_CLASS_COLORS.MAGE.b)
-		GameTooltip:AddLine(DBM_LDB_TOOLTIP_HELP2, RAID_CLASS_COLORS.MAGE.r, RAID_CLASS_COLORS.MAGE.g, RAID_CLASS_COLORS.MAGE.b)
+    	function dataBroker.OnTooltipShow(GameTooltip)
+        	GameTooltip:SetText(DBM_CORE_MINIMAP_TOOLTIP_HEADER, 1, 1, 1)
+        	GameTooltip:AddLine(ver, NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b, 1)
+        	GameTooltip:AddLine(" ")
+        	GameTooltip:AddLine(DBM_CORE_MINIMAP_TOOLTIP_FOOTER, RAID_CLASS_COLORS.MAGE.r, RAID_CLASS_COLORS.MAGE.g, RAID_CLASS_COLORS.MAGE.b, 1)
+			GameTooltip:AddLine(DBM_LDB_TOOLTIP_HELP1, RAID_CLASS_COLORS.MAGE.r, RAID_CLASS_COLORS.MAGE.g, RAID_CLASS_COLORS.MAGE.b)
+			GameTooltip:AddLine(DBM_LDB_TOOLTIP_HELP2, RAID_CLASS_COLORS.MAGE.r, RAID_CLASS_COLORS.MAGE.g, RAID_CLASS_COLORS.MAGE.b)
+    	end
     end
  
     function DBM:ToggleMinimapButton()

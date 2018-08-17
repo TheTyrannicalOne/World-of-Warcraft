@@ -163,6 +163,8 @@ local default_config = {
     castbar_showall = true,
     castbar_showfriend = true,
     castbar_showenemy = true,
+    castbar_animate = true,
+    castbar_animate_change_colour = true,
     castbar_name_vertical_offset = -1,
 
     tank_mode = true,
@@ -206,7 +208,8 @@ local default_config = {
     cvar_max_distance = GetCVarDefault('nameplateMaxDistance'),
     cvar_clamp_top = GetCVarDefault('nameplateOtherTopInset'),
     cvar_clamp_bottom = GetCVarDefault('nameplateOtherBottomInset'),
-    cvar_overlap_v = GetCVarDefault('nameplateOverlapV')
+    cvar_overlap_v = GetCVarDefault('nameplateOverlapV'),
+    cvar_disable_scale = true,
 }
 -- local functions #############################################################
 local function UpdateClickboxSize()
@@ -587,6 +590,8 @@ configChanged.castbar_icon = configChangedCastBar
 configChanged.castbar_name = configChangedCastBar
 configChanged.castbar_shield = configChangedCastBar
 configChanged.castbar_name_vertical_offset = configChangedCastBar
+configChanged.castbar_animate = configChangedCastBar
+configChanged.castbar_animate_change_colour = configChangedCastBar
 
 function configChanged.classpowers_enable(v)
     if v then
@@ -725,6 +730,11 @@ local function UpdateCVars()
     SetCVar('nameplateOtherBottomInset',core.profile.cvar_clamp_bottom)
     SetCVar('nameplateLargeBottomInset',core.profile.cvar_clamp_bottom)
     SetCVar('nameplateOverlapV',core.profile.cvar_overlap_v)
+
+    if core.profile.cvar_disable_scale then
+        SetCVar('nameplateMinScale',1)
+        SetCVar('nameplateMaxScale',1)
+    end
 end
 local function configChangedCVar()
     if InCombatLockdown() then
@@ -748,6 +758,7 @@ configChanged.cvar_max_distance = configChangedCVar
 configChanged.cvar_clamp_top = configChangedCVar
 configChanged.cvar_clamp_bottom = configChangedCVar
 configChanged.cvar_overlap_v = configChangedCVar
+configChanged.cvar_disable_scale = configChangedCVar
 
 -- config loaded functions #####################################################
 local configLoaded = {}

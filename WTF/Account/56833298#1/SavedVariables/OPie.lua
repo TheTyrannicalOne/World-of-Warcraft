@@ -4,7 +4,7 @@ OneRing_Config = {
 		["Darkspear-Serbitechna"] = "default",
 	},
 	["_GameVersion"] = "8.0.1",
-	["_OPieVersion"] = "Vanilla 6 (3.93)",
+	["_OPieVersion"] = "Vanilla 7 (3.93)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
@@ -16,9 +16,9 @@ OneRing_Config = {
 				["RaidSymbols"] = false,
 				["OPieTracking"] = false,
 				["HunterShots"] = false,
-				["OPieAutoQuest"] = false,
-				["OPieTrinkets"] = false,
 				["WorldMarkers"] = false,
+				["OPieTrinkets"] = false,
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},

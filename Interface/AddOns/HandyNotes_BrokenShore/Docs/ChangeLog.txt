@@ -1,7 +1,11 @@
-$Id: ChangeLog.txt 96 2018-08-06 15:41:05Z arith $
+$Id: ChangeLog.txt 98 2018-08-11 17:12:26Z arith $
 
 Revision History:
 =================
+
+* v1.29 (Aug. 12, 2018)
+-----------------------
+- Lib Update: LibBabble-SubZone-3.0
 
 * v1.28 (Aug. 06, 2018)
 -----------------------

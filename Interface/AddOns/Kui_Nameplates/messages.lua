@@ -80,10 +80,9 @@ do
         ev_count[uid] = 1 + (ev_count[uid] or 0)
         ev_sum[uid] = ev_delta + (ev_sum[uid] or 0)
     end
-    function addon:PrintTrace(sort_key,limit)
+    function addon:PrintTrace(sort_key)
         if not ev_count or not ev_sum then return end
         sort_key = (sort_key or 3)+1
-        limit = limit or 10
         local ev_sort = {}
         for uid,count in pairs(ev_count) do
             local sum = ev_sum[uid]
@@ -95,7 +94,6 @@ do
         end)
         local d = kui:DebugPopup()
         for i,v in ipairs(ev_sort) do
-            if limit and i > limit then break end
             d:AddText('|cffffff88'..v[1]..'|r #'..v[2]..' | sum:'..format('%.4f',v[3])..'ms | avg:'..format('%.4f',v[4])..'ms')
         end
         d:Show()
@@ -448,14 +446,27 @@ function message.RunCallback(table,name,...)
     if addon.debug_callbacks then
         PrintDebugForCallback(table,name,...)
     end
+    --[===[@debug@
+    TraceStart('c:'..name)
+    --@end-debug@]===]
 
     if table.__CALLBACKS[name] == 2 then
         -- inherit return from forced single callback
+        --[===[@debug@
+        if addon.profiling then
+            local r = {table.callbacks[name][1](...)}
+            TraceEnd('c:'..name)
+            return unpack(r)
+        end
+        --@end-debug@]===]
         return table.callbacks[name][1](...)
     else
         for i,cb in ipairs(table.callbacks[name]) do
             cb[1](...)
         end
+        --[===[@debug@
+        TraceEnd('c:'..name)
+        --@end-debug@]===]
         return true
     end
 end

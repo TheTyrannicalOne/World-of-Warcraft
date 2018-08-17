@@ -8,6 +8,7 @@ local _
 local FL = LibStub("LibFishing-1.0");
 local LO = LibStub("LibOptionsFrame-1.0");
 local LEW = LibStub("LibEventWindow-1.0");
+local HBD = LibStub("HereBeDragons-2.0")
 
 local CurLoc = GetLocale();
 
@@ -195,7 +196,7 @@ local CastingOptions = {
         ["tooltip"] = FBConstants.CONFIG_PARTIALGEAR_INFO,
         ["v"] = 1,
         ["parents"] = { ["EasyCast"] = "d" },
-        ["default"] = true },
+        ["default"] = false },
     ["WatchBobber"] = {
         ["text"] = FBConstants.CONFIG_WATCHBOBBER_ONOFF,
         ["tooltip"] = FBConstants.CONFIG_WATCHBOBBER_INFO,
@@ -499,6 +500,14 @@ autopoleframe:Hide();
 local LastCastTime = nil;
 local FISHINGSPAN = 60;
 
+local function SetLastCastTime()
+    LastCastTime = GetTime();
+end
+
+local function ClearLastCastTime()
+    LastCastTime = nil
+end
+
 local handlerframe = CreateFrame("Frame");
 handlerframe:Hide();
 
@@ -758,7 +767,7 @@ FishingBuddy.GetFishieRaw = GetFishieRaw;
 local function OnNatPagleQuest()
     local i = 1;
     while GetQuestLogTitle(i) do
-        local questTitle, level, questTag, suggestedGroup, isHeader, isCollapsed, isComplete, isDaily, questID = GetQuestLogTitle(i)
+        local questTitle, level, suggestedGroup, isHeader, isCollapsed, isComplete, isDaily, questID = GetQuestLogTitle(i)
         if ( questID == 36611) then
             return true;
         end
@@ -907,22 +916,29 @@ end
 
 -- we don't want to interrupt ourselves if we're casting.
 local fishing_buff = 131474;
+local fishing_spellid = 131490;
 local current_spell_id = nil
-local current_spell_name = nil
-CaptureEvents["UNIT_SPELLCAST_CHANNEL_START"] = function(unit, name, rank, lineid, spellid)
-    current_spell_name = name
+
+CaptureEvents["UNIT_SPELLCAST_CHANNEL_START"] = function(unit, lineid, spellid)
     current_spell_id = spellid
+    if current_spell_id == fishing_spellid then
+        SetLastCastTime();
+    end
 end
 
-CaptureEvents["UNIT_SPELLCAST_CHANNEL_STOP"] = function(unit, name, rank, lineid, spellid)
+CaptureEvents["UNIT_SPELLCAST_CHANNEL_STOP"] = function(unit, lineid, spellid)
     -- we may want to wait a bit here for any buff to come back...
-    current_spell_name = nil
+    if current_spell_id == fishing_spellid then
+        SetLastCastTime();
+    end
     current_spell_id = nil
     ClearAddingLure()
 end
 
-CaptureEvents["UNIT_SPELLCAST_INTERRUPTED"] = function(unit, name, rank, lineid, spellid)
-    current_spell_name = nil
+CaptureEvents["UNIT_SPELLCAST_INTERRUPTED"] = function(unit, lineid, spellid)
+    if current_spell_id == fishing_spellid then
+        SetLastCastTime();
+    end
     current_spell_id = nil
     ClearAddingLure()
 end
@@ -946,7 +962,7 @@ CaptureEvents["UNIT_AURA"] = function(arg1)
 end
 
 local function GetCurrentSpell()
-    return current_spell_name, current_spell_id
+    return current_spell_id
 end
 FishingBuddy.GetCurrentSpell = GetCurrentSpell
 
@@ -1002,7 +1018,7 @@ local function CentralCasting()
                  -- watch for fishing holes
                 FL:SaveTooltipText();
             end
-            LastCastTime = GetTime();
+            SetLastCastTime();
             autopoleframe:Show();
             local macrotext = FishingBuddy.CastAndThrow()
             if macrotext then
@@ -1160,7 +1176,7 @@ local function StopFishingMode(logout)
 end
 
 local function FishingMode()
-    local ready = ReadyForFishing();
+    local ready = ReadyForFishing() or autopoleframe:IsShown();
     if ( ready ) then
         StartFishingMode();
     else
@@ -1173,23 +1189,48 @@ local function AutoPoleCheck(self, ...)
     if (not CheckCombat() ) then
         if ( not LastCastTime or ReadyForFishing() ) then
             self:Hide();
-            LastCastTime = nil;
+            ClearLastCastTime();
+            self.x, self.y, self.instanceID = nil, nil, nil
             return;
         end
         local elapsed = (GetTime() - LastCastTime);
         if ( elapsed > FISHINGSPAN ) then
-            LastCastTime = nil;
+            ClearLastCastTime();
+            self.x, self.y, self.instanceID = nil, nil, nil
             StopFishingMode();
         elseif ( not FishingBuddy.StartedFishing ) then
             StartFishingMode();
+            self.x, self.y, self.instanceID = HBD:GetPlayerWorldPosition();
+        elseif (self.x) then
+            if (self.moving) then
+                local x, y, instanceID = HBD:GetPlayerWorldPosition();
+                local _, distance = HBD:GetWorldVector(instanceId, self.x, self.y, x, y);
+                if instanceID ~= self.instanceID or distance > 10 then
+                    LastCastTime = GetTime() - FISHINGSPAN - 1
+                end
+            elseif (self.stopped) then
+                self.x, self.y, self.instanceID = HBD:GetPlayerWorldPosition();
+                self.stopped = nil;
+            end
         end
     end
 end
-autopoleframe:SetScript("OnUpdate", AutoPoleCheck);
 
-FishingBuddy.AreWeFishing = function()
-    return (FishingBuddy.StartedFishing ~= nil);
+local function AutoPoleEvent(self, event, ...)
+    self.moving = (event == "PLAYER_STARTED_MOVING")
+    self.stopped = (event == "PLAYER_STOPPED_MOVING")
 end
+
+autopoleframe:SetScript("OnEvent", AutoPoleEvent)
+autopoleframe:SetScript("OnUpdate", AutoPoleCheck);
+autopoleframe:RegisterEvent("PLAYER_STARTED_MOVING");
+autopoleframe:RegisterEvent("PLAYER_STOPPED_MOVING");
+
+
+local function AreWeFishing()
+    return (FishingBuddy.StartedFishing ~= nil or autopoleframe:IsShown());
+end
+FishingBuddy.AreWeFishing = AreWeFishing
 
 FishingBuddy.IsSwitchClick = function(setting)
     if ( not setting ) then
@@ -1515,7 +1556,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
         if not autoloot and not IsModifiedClick("AUTOLOOTTOGGLE") then
             doautoloot = CustomLooting()
         end
-        if ( ReadyForFishing() ) then
+        if ( AreWeFishing() ) then
             local poolhint = nil;
             -- How long ago did the achievement fire?
             local elapsedtime = GetTime() - trackedtime;
@@ -1665,6 +1706,7 @@ FishingBuddy.OnLoad = function(self)
                     OpenCalendar()
                 end
                 RunHandlers(FBConstants.FIRST_UPDATE_EVT);
+                FishingBuddy.WatchUpdate();
                 self.firsttime = true
             end
         end

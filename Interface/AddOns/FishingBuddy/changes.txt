@@ -1,6 +1,18 @@
-﻿Version 1.9.10
+﻿Version 1.9.12
+- Default "Partial Gear" casting to "off" (fixes surprise in Drustvar)
+- Count the fish we catch when we fish without an actual pole
+- Fix raft timer issue (CurseForge #348)
+
+Version 1.9.11
+- The watcher window behaves better when fishing without a pole.
+- Update to latest LibBabble-SubZone.
+- The quest API changed (CurseForge #342)
+- Eliminate call to out of date API (CurseForge #344)
+- Fixed uninitalized variable (CurseForge #345)
+
+Version 1.9.10
 - Try harder not to throw away Legion bonus fish if you don't need the bonus
-- "Setup Skills" option so we don't get your skils at startup (TSM users)
+- "Setup Skills" option so we don't get your skills at startup (TSM users)
 
 Version 1.9.9
 - Don't throw special fish if at max skill or full power Artifact pole (#335)

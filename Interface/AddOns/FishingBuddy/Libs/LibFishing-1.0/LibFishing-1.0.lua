@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 91003
+local MINOR_VERSION = 91005
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -495,6 +495,24 @@ function FishLib:WaitForBuff(buffId)
 end
 
 local spellidx = nil;
+function FishLib:GetBuff(buffId)
+    if ( buffId ) then
+        for i=1,40 do
+            local current_buff = UnitBuff("player",i);
+            if current_buff then
+                local info = {UnitBuff("player", i)}
+                local spellid = select(10, unpack(info));
+                if (buffId == spellid) then
+                    return unpack(info)
+                end
+            else
+                return nil
+            end
+        end
+    end
+    -- return nil
+end
+
 function FishLib:HasBuff(buffId, skipWait)
     if ( buffId ) then
         -- if we're waiting, assume we're going to have it
@@ -502,9 +520,10 @@ function FishLib:HasBuff(buffId, skipWait)
             return true
         else
             for i=1,40 do
-                local current_buff = UnitBuff("player",i);
+                local info = {UnitBuff("player", i)}
+                local current_buff = select(1, unpack(info))
                 if current_buff then
-                    local spellid = select(10, UnitBuff("player", i));
+                    local spellid = select(10, unpack(info));
                     if (buffId == spellid) then
                         return true;
                     end
@@ -1408,21 +1427,12 @@ end
 
 function FishLib:GetBaseZoneInfo()
     local mapID = self:GetCurrentMapId()
-    local zone = GetMapNameByID(mapID);
     local subzone = GetSubZoneText();
-    if ( not zone or zone == "" ) then
-        zone = UNKNOWN;
-    end
     if ( not subzone or subzone == "" ) then
-        subzone = zone;
+        subzone = UNKNOWN;
     end
 
-    -- Hack to fix issues with 4.1 and LibBabbleZone and LibTourist
-    if (zone == "City of Ironforge" ) then
-        zone = "Ironforge";
-    end
-
-    return zone, self:GetBaseSubZone(subzone);
+    return mapID, self:GetBaseSubZone(subzone);
 end
 
 -- translate zones and subzones
@@ -1724,6 +1734,19 @@ function FishLib:GetChatWindow(name)
     -- if we didn't find our frame, something bad has happened, so
     -- let's just use the default chat frame
     return DEFAULT_CHAT_FRAME, nil;
+end
+
+function FishLib:GetFrameInfo(framespec)
+    local n = nil;
+    if framespec then
+        if ( type(framespec) == "string" ) then
+            n = framespec;
+            framespec = _G[framespec];
+        else
+            n = framespec:GetName();
+        end
+    end
+    return framespec, n;
 end
 
 local function HideHolder(self)

@@ -2,7 +2,7 @@
 -- Please use the Localization App on WoWAce to Update this
 -- http://www.wowace.com/projects/gathermate2/localization
 
-local L = LibStub("AceLocale-3.0"):NewLocale("GatherMate2", "esES") or LibStub("AceLocale-3.0"):NewLocale("GatherMate", "esMX")
+local L = LibStub("AceLocale-3.0"):NewLocale("GatherMate2", "esES")
 if not L then return end
 
 -- Options
@@ -205,7 +205,7 @@ L["World Map Icons"] = "Iconos del Mapa del mundo"
 L["Wrath of the Lich King"] = "Wrath of the Lich King"
 
 
-local NL = LibStub("AceLocale-3.0"):NewLocale("GatherMate2Nodes", "esES") or LibStub("AceLocale-3.0"):NewLocale("GatherMateNodes", "esMX")
+local NL = LibStub("AceLocale-3.0"):NewLocale("GatherMate2Nodes", "esES")
 if not NL then return end
 
 -- Nodes

@@ -8,13 +8,13 @@ SuramarLocationsDB = {
 		["Shanyt - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
+		["Vancard - Zul'jin"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
 		["Default"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["LUI-Towelliee"] = {
 		},
 	},
 }

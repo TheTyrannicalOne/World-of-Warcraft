@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.0.09 (8th August 2018, www.leatrix.com)
+-- 	Leatrix Plus 8.0.10 (13th August 2018, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.0.09"
+	LeaPlusLC["AddonVer"] = "8.0.10"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -2713,83 +2713,26 @@
 
 		end
 
+		-- Release memory
+		LeaPlusLC.Isolated = nil
+
+	end
+
+----------------------------------------------------------------------
+--	L40: Player
+----------------------------------------------------------------------
+
+	function LeaPlusLC:Player()
+
 		----------------------------------------------------------------------
 		--	Minimap button
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["ShowMinimapIcon"] == "On" then
-	
-			-- Create minimap button
-			local minibtn = CreateFrame("Button", "LibDBIcon10_Leatrix_Plus", Minimap)
 
-			minibtn:SetFrameStrata("MEDIUM")
-			minibtn:SetFrameLevel(8)
-			minibtn:SetSize(31, 31)
-			minibtn:RegisterForClicks("AnyUp")
-			minibtn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
-			minibtn:SetMovable(true)
+			-- Minimap button click function
+			local function MiniBtnClickFunc(arg1)
 
-			local overlay = minibtn:CreateTexture(nil, "OVERLAY")
-			overlay:SetSize(53, 53)
-			overlay:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
-			overlay:SetPoint("TOPLEFT")
-
-			local background = minibtn:CreateTexture(nil, "BACKGROUND")
-			background:SetSize(20, 20)
-			background:SetTexture("Interface\\Minimap\\UI-Minimap-Background")
-			background:SetPoint("TOPLEFT", 7, -5)
-
-			local icon = minibtn:CreateTexture(nil, "ARTWORK")
-			icon:SetSize(20, 20)
-			icon:SetTexture("Interface\\HELPFRAME\\ReportLagIcon-Movement.png")
-			icon:SetPoint("CENTER", 0, 0)
-
-			minibtn:HookScript("OnMouseDown", function() icon:SetSize(18, 18) end)
-			minibtn:HookScript("OnMouseUp", function() icon:SetSize(20, 20)	end)
-
-			-- Minimap buton tooltip
-			minibtn:SetScript("OnEnter", function()
-				GameTooltip:SetOwner(minibtn, "ANCHOR_NONE")
-				local x, y = minibtn:GetCenter()
-				local hhalf = (x > UIParent:GetWidth() * 2 / 3) and "RIGHT" or (x < UIParent:GetWidth()/3) and "LEFT" or ""
-				local vhalf = (y > UIParent:GetHeight() / 2) and "TOP" or "BOTTOM"
-				GameTooltip:ClearAllPoints()
-				GameTooltip:SetPoint(vhalf .. hhalf, minibtn, (vhalf == "TOP" and "BOTTOM" or "TOP") .. hhalf)
-				GameTooltip:SetText("Leatrix Plus", nil, nil, nil, nil, true)
-				GameTooltip:Show()
-			end)
-			minibtn:SetScript("OnLeave", GameTooltip_Hide)
-
-			local function UpdateMapBtn()
-				local Xpoa, Ypoa = GetCursorPosition()
-				local Xmin, Ymin = Minimap:GetLeft(), Minimap:GetBottom()
-				Xpoa = Xmin - Xpoa / Minimap:GetEffectiveScale() + 70
-				Ypoa = Ypoa / Minimap:GetEffectiveScale() - Ymin - 70
-				LeaPlusLC["MinimapIconPos"] = math.deg(math.atan2(Ypoa, Xpoa))
-				minibtn:ClearAllPoints()
-				minibtn:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * cos(LeaPlusLC["MinimapIconPos"])), (80 * sin(LeaPlusLC["MinimapIconPos"])) - 52)
-			end
-
-			-- Control movement
-			minibtn:RegisterForDrag("LeftButton")
-			minibtn:SetScript("OnDragStart", function()
-				minibtn:StartMoving()
-				minibtn:SetScript("OnUpdate", UpdateMapBtn)
-			end)
-
-			minibtn:SetScript("OnDragStop", function()
-				minibtn:StopMovingOrSizing();
-				minibtn:SetUserPlaced(false);
-				minibtn:SetScript("OnUpdate", nil)
-				UpdateMapBtn();
-			end)
-
-			-- Set position
-			minibtn:ClearAllPoints();
-			minibtn:SetPoint("TOPLEFT",Minimap,"TOPLEFT",52-(80*cos(LeaPlusLC["MinimapIconPos"])),(80*sin(LeaPlusLC["MinimapIconPos"]))-52)
-
-			-- Control clicks
-			minibtn:SetScript("OnClick", function(self,arg1)
 				-- Prevent options panel from showing if Blizzard options panel is showing
 				if InterfaceOptionsFrame:IsShown() or VideoOptionsFrame:IsShown() or ChatConfigFrame:IsShown() then return end
 				-- Prevent options panel from showing if Blizzard Store is showing
@@ -2882,20 +2825,105 @@
 				if arg1 == "MiddleButton" then
 					-- Nothing (yet)
 				end
-			end)
+
+			end
+
+			-- Create minimap button
+			if LibStub and LibStub("LibDBIcon-1.0", true) and LibStub("CallbackHandler-1.0", true) and LibStub("LibDataBroker-1.1", true) then
+
+				-- LibDBIcon is being used so create LibDBIcon button
+				local ldb = LibStub("LibDataBroker-1.1", true)
+				local miniButton = ldb:NewDataObject("Leatrix_Plus", {
+					type = "launcher",
+					icon = "Interface\\HELPFRAME\\ReportLagIcon-Movement",
+					OnClick = function(self, btn)
+						MiniBtnClickFunc(btn)
+					end,
+					OnTooltipShow = function(tooltip)
+						if not tooltip or not tooltip.AddLine then return end
+						tooltip:AddLine("Leatrix Plus")
+					end,
+				})
+				local icon = LibStub("LibDBIcon-1.0", true)
+				icon:Register("Leatrix_Plus", miniButton, LeaPlusDB)
+
+			else
+
+				-- LibDBIcon is not being used so create proprietary button
+				local minibtn = CreateFrame("Button", nil, Minimap)
+
+				minibtn:SetFrameStrata("MEDIUM")
+				minibtn:SetFrameLevel(8)
+				minibtn:SetSize(31, 31)
+				minibtn:RegisterForClicks("AnyUp")
+				minibtn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+				minibtn:SetMovable(true)
+
+				minibtn.o = minibtn:CreateTexture(nil, "OVERLAY")
+				minibtn.o:SetSize(53, 53)
+				minibtn.o:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+				minibtn.o:SetPoint("TOPLEFT")
+
+				minibtn.b = minibtn:CreateTexture(nil, "BACKGROUND")
+				minibtn.b:SetSize(20, 20)
+				minibtn.b:SetTexture("Interface\\Minimap\\UI-Minimap-Background")
+				minibtn.b:SetPoint("TOPLEFT", 7, -5)
+
+				minibtn.i = minibtn:CreateTexture(nil, "ARTWORK")
+				minibtn.i:SetSize(20, 20)
+				minibtn.i:SetTexture("Interface\\HELPFRAME\\ReportLagIcon-Movement.png")
+				minibtn.i:SetPoint("CENTER", 0, 0)
+
+				minibtn:HookScript("OnMouseDown", function() minibtn.i:SetSize(18, 18) end)
+				minibtn:HookScript("OnMouseUp", function() minibtn.i:SetSize(20, 20) end)
+
+				-- Minimap buton tooltip
+				minibtn:SetScript("OnEnter", function()
+					GameTooltip:SetOwner(minibtn, "ANCHOR_NONE")
+					local x, y = minibtn:GetCenter()
+					local hhalf = (x > UIParent:GetWidth() * 2 / 3) and "RIGHT" or (x < UIParent:GetWidth()/3) and "LEFT" or ""
+					local vhalf = (y > UIParent:GetHeight() / 2) and "TOP" or "BOTTOM"
+					GameTooltip:ClearAllPoints()
+					GameTooltip:SetPoint(vhalf .. hhalf, minibtn, (vhalf == "TOP" and "BOTTOM" or "TOP") .. hhalf)
+					GameTooltip:SetText("Leatrix Plus", nil, nil, nil, nil, true)
+					GameTooltip:Show()
+				end)
+				minibtn:SetScript("OnLeave", GameTooltip_Hide)
+
+				local function UpdateMapBtn()
+					local Xpoa, Ypoa = GetCursorPosition()
+					local Xmin, Ymin = Minimap:GetLeft(), Minimap:GetBottom()
+					Xpoa = Xmin - Xpoa / Minimap:GetEffectiveScale() + 70
+					Ypoa = Ypoa / Minimap:GetEffectiveScale() - Ymin - 70
+					LeaPlusLC["MinimapIconPos"] = math.deg(math.atan2(Ypoa, Xpoa))
+					minibtn:ClearAllPoints()
+					minibtn:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * cos(LeaPlusLC["MinimapIconPos"])), (80 * sin(LeaPlusLC["MinimapIconPos"])) - 52)
+				end
+
+				-- Control movement
+				minibtn:RegisterForDrag("LeftButton")
+				minibtn:SetScript("OnDragStart", function()
+					minibtn:StartMoving()
+					minibtn:SetScript("OnUpdate", UpdateMapBtn)
+				end)
+
+				minibtn:SetScript("OnDragStop", function()
+					minibtn:StopMovingOrSizing()
+					minibtn:SetUserPlaced(false)
+					minibtn:SetScript("OnUpdate", nil)
+					UpdateMapBtn()
+				end)
+
+				-- Set position
+				minibtn:ClearAllPoints()
+				minibtn:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * cos(LeaPlusLC["MinimapIconPos"])), (80 * sin(LeaPlusLC["MinimapIconPos"])) - 52)
+
+				-- Control clicks
+				minibtn:SetScript("OnClick", function(self, btn) MiniBtnClickFunc(btn) end)
+
+			end
 
 		end
-
-		-- Release memory
-		LeaPlusLC.Isolated = nil
-
-	end
-
-----------------------------------------------------------------------
---	L40: Player
-----------------------------------------------------------------------
-
-	function LeaPlusLC:Player()
 
 		----------------------------------------------------------------------
 		-- Auction House Extras
@@ -5616,7 +5644,7 @@
 			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
 			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["An Unclear Path"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
-			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["Battle for Lordaeron (Alliance)"] .. " |r(854)", L["Battle for Lordaeron (Horde)"] .. " |r(855)", L["Battle for Lordaeron (Jaina)"] .. " |r(856)"})
+			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["Battle for Lordaeron (Jaina)"] .. " |r(856)", L["Battle for Lordaeron (Horde)"] .. " |r(855)", L["Battle for Lordaeron (Alliance)"] .. " |r(854)"})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
