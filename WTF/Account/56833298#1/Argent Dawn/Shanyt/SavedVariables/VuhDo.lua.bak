@@ -4219,7 +4219,7 @@ VUHDO_PANEL_SETUP = {
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
-			["height"] = 97.9999923706055,
+			["height"] = 52.0000152587891,
 			["growth"] = "TOPLEFT",
 			["width"] = 123.999923706055,
 		},
@@ -7130,12 +7130,12 @@ VUHDO_SPEC_LAYOUTS = {
 VUHDO_GROUP_SIZE = 1
 VUHDO_RAID = {
 	["player"] = {
-		["zone"] = "Town Hall",
+		["zone"] = "Orgrimmar",
 		["baseRange"] = true,
 		["class"] = "WARRIOR",
 		["role"] = 61,
 		["sortMaxHp"] = 42660,
-		["map"] = "Frostwall",
+		["map"] = "Orgrimmar",
 		["threat"] = 0,
 		["powermax"] = 100,
 		["threatPerc"] = 0,
@@ -7170,8 +7170,8 @@ VUHDO_INDICATOR_CONFIG = {
 		["MOUSEOVER_HIGHLIGHT"] = "Mouseover: Single",
 		["AGGRO_BAR"] = "Aggro Indicator",
 		["BACKGROUND_BAR"] = "Background: Solid",
-		["SWIFTMEND_INDICATOR"] = "",
-		["DAMAGE_FLASH_BAR"] = "",
+		["SIDE_LEFT"] = "",
+		["CLUSTER_BORDER"] = "",
 		["HEALTH_BAR_PANEL"] = {
 			"", -- [1]
 			"", -- [2]
@@ -7184,13 +7184,13 @@ VUHDO_INDICATOR_CONFIG = {
 			"", -- [9]
 			"", -- [10]
 		},
-		["SIDE_LEFT"] = "",
+		["SWIFTMEND_INDICATOR"] = "",
 		["THREAT_MARK"] = "Threat: Marks",
 		["MANA_BAR"] = "Manabars: Mana only",
 		["BAR_BORDER"] = "",
 		["SIDE_RIGHT"] = "",
 		["HEALTH_BAR"] = "Health (generic, class col)",
-		["CLUSTER_BORDER"] = "",
+		["DAMAGE_FLASH_BAR"] = "",
 		["INCOMING_BAR"] = "",
 	},
 	["CUSTOM"] = {

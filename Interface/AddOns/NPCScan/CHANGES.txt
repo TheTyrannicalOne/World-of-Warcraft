@@ -1,10 +1,16 @@
-tag a6867e85b4433f64f282c47ba3b724c84cf8397f 8.0.1.5
+tag 59f9b374c1a8349b7915d84bc50bb4a3c46a8c15 8.0.1.6
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Thu Aug 16 10:54:19 2018 -0500
+Date:	Fri Aug 17 10:49:36 2018 -0500
 
-commit d9cab411bf6b06401bc1025efa7015a6727ffade
+commit edbb718086b0846ba169135f5a19d455d3053280
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Thu Aug 16 10:53:43 2018 -0500
+Date:   Fri Aug 17 10:49:12 2018 -0500
 
-    Add initial data for Kul Tiras NPCs.
+    Add vignetteID for Urn of Agussu.
+
+commit 35ce17a64d0c1c43204b3160b5dc1063aaf8a5cb
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Aug 17 10:48:34 2018 -0500
+
+    Fix library load ordering.
 

@@ -16,9 +16,9 @@ HandyNotes_LegionClassOrderHallsDB = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
-		["LUI-Towelliee"] = {
-		},
 		["Shanyt - Zul'jin"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

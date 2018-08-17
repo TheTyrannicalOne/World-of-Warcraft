@@ -16,9 +16,9 @@ HandyNotes_CamelFigurinesDB = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
-		["LUI-Towelliee"] = {
-		},
 		["Shanyt - Zul'jin"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

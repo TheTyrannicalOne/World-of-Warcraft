@@ -6,6 +6,13 @@ X: -239
 Y: -150
 W: 64
 H: 64
+Frame: BNToastFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 24
+Y: -227
+W: 250
+H: 50
 Frame: FriendsFrame
 FrameLevel: 1
 Anchor: LEFT
@@ -27,10 +34,3 @@ X: -6
 Y: -94
 W: 205
 H: 205
-Frame: BNToastFrame
-FrameLevel: 1
-Anchor: LEFT
-X: 24
-Y: -227
-W: 250
-H: 50

@@ -57,7 +57,7 @@ LUIDB = {
 				["Panboozled - Runetotem"] = {
 					["Enable"] = false,
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Narisaric - Dalaran"] = {
 					["Enable"] = false,
 				},
 				["Brotus - Argent Dawn"] = {
@@ -87,10 +87,10 @@ LUIDB = {
 				["Gillbourn - Runetotem"] = {
 					["Enable"] = false,
 				},
-				["Vancard - Zul'jin"] = {
+				["Serbitechna - Darkspear"] = {
 					["Enable"] = false,
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
 					["Enable"] = false,
 				},
 				["Shathiel - Darkspear"] = {
@@ -99,16 +99,16 @@ LUIDB = {
 				["Tyrann - Zul'jin"] = {
 					["Enable"] = false,
 				},
-				["Sinh - Dalaran"] = {
+				["Cowtastraphy - Argent Dawn"] = {
 					["Enable"] = false,
 				},
-				["Mulmok - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["Enable"] = false,
 				},
 				["Vadder - Argent Dawn"] = {
 					["Enable"] = false,
 				},
-				["Tyrannithal - Zul'jin"] = {
+				["Jingojaggot - Zul'jin"] = {
 					["Enable"] = false,
 				},
 				["Tyran - Argent Dawn"] = {
@@ -117,25 +117,25 @@ LUIDB = {
 				["Tynster - Dalaran"] = {
 					["Enable"] = false,
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Tyrannithal - Zul'jin"] = {
 					["Enable"] = false,
 				},
-				["Thromar - Dalaran"] = {
+				["Mulmok - Argent Dawn"] = {
 					["Enable"] = false,
 				},
-				["Cowtastraphy - Argent Dawn"] = {
+				["Sinh - Dalaran"] = {
 					["Enable"] = false,
 				},
 				["Beeronimo - Dalaran"] = {
 					["Enable"] = false,
 				},
-				["Dialdaas - Darkspear"] = {
+				["Migimong - Runetotem"] = {
 					["Enable"] = false,
 				},
-				["Serbitechna - Darkspear"] = {
+				["Vancard - Zul'jin"] = {
 					["Enable"] = false,
 				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
 					["Enable"] = false,
 				},
 			},
@@ -154,336 +154,332 @@ LUIDB = {
 		["Bags"] = {
 			["profiles"] = {
 				["Vaddor - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Datgorg - Argent Dawn"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Jingojaggot - Argent Dawn"] = {
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["ItemQuality"] = true,
-						["CoordY"] = 692.281490904737,
-					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Towel-Monk"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["Font"] = "AvantGarde_LT_Medium",
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["FontSize"] = 12,
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Brokehorn - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Shaewong - Dalaran"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Goramor - Runetotem"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Shaekhan - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Shanyt - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Bathal - Argent Dawn"] = {
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["ItemQuality"] = true,
-						["CoordY"] = 692.281490904737,
-					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Gangus - Runetotem"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Shaekhan - Argent Dawn"] = {
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["ItemQuality"] = true,
-						["CoordY"] = 692.281490904737,
-					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Malivant - Dalaran"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Urbul - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Claugh - Runetotem"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Tyriinid - Dalaran"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Datgorg - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Panboozled - Runetotem"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Narisaric - Dalaran"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Brotus - Argent Dawn"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["LUI-Towelliee"] = {
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["ItemQuality"] = true,
-						["CoordY"] = 692.281490904737,
-					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Tyrannithal - Argent Dawn"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Zulbathal - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
 					["Bags"] = {
-						["CoordX"] = 1566.08081054688,
+						["CoordX"] = 1568.38354492188,
 						["ItemQuality"] = true,
-						["CoordY"] = 774.928955078125,
-					},
-					["Reagents"] = {
-						["CoordY"] = 879.551025390625,
-						["CoordX"] = 619.753662109375,
+						["CoordY"] = 775.696533203125,
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
@@ -492,148 +488,110 @@ LUIDB = {
 						["CoordY"] = 694.042175292969,
 						["Font"] = "AvantGarde_LT_Medium",
 					},
+					["Reagents"] = {
+						["CoordY"] = 879.551025390625,
+						["CoordX"] = 619.753662109375,
+					},
 				},
 				["Brotuss - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Brewnheimer - Darkspear"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Fantastiburo - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Gillbourn - Runetotem"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
-				["Vancard - Zul'jin"] = {
+				["Serbitechna - Darkspear"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
-						["CoordY"] = 895.668151855469,
-						["CoordX"] = 1120.54467773438,
+						["CoordY"] = 692.281490904737,
+						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1576.43774414063,
-						["CoordY"] = 828.128723144531,
 						["ItemQuality"] = true,
 					},
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
 				["Shathiel - Darkspear"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96789550781,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281494140625,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96789550781,
-						["CoordY"] = 692.281494140625,
 						["ItemQuality"] = true,
 					},
 				},
 				["Tyrann - Zul'jin"] = {
-					["Bank"] = {
-						["FontSize"] = 12,
-						["CoordY"] = 692.281490904737,
-						["CoordX"] = 1511.96771301651,
-						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
-						["ItemQuality"] = true,
-					},
-				},
-				["Sinh - Dalaran"] = {
-					["Bank"] = {
-						["FontSize"] = 12,
-						["CoordY"] = 692.281490904737,
-						["CoordX"] = 1511.96771301651,
-						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
-						["ItemQuality"] = true,
-					},
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["Bank"] = {
-						["FontSize"] = 12,
-						["CoordY"] = 692.281490904737,
-						["CoordX"] = 1511.96771301651,
-						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
-						["ItemQuality"] = true,
-					},
-				},
-				["Vadder - Argent Dawn"] = {
 					["Bags"] = {
 						["CoordX"] = 1511.96771301651,
 						["ItemQuality"] = true,
@@ -647,49 +605,7 @@ LUIDB = {
 						["ItemQuality"] = true,
 					},
 				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["Bank"] = {
-						["FontSize"] = 12,
-						["CoordY"] = 692.281490904737,
-						["CoordX"] = 1511.96771301651,
-						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
-						["ItemQuality"] = true,
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["Bank"] = {
-						["FontSize"] = 12,
-						["CoordY"] = 692.281490904737,
-						["CoordX"] = 1511.96771301651,
-						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
-						["ItemQuality"] = true,
-					},
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["Bank"] = {
-						["FontSize"] = 12,
-						["CoordY"] = 692.281490904737,
-						["CoordX"] = 1511.96771301651,
-						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
-						["ItemQuality"] = true,
-					},
-				},
-				["Tynster - Dalaran"] = {
+				["Mulmok - Argent Dawn"] = {
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
@@ -704,6 +620,20 @@ LUIDB = {
 					},
 				},
 				["Thromar - Dalaran"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
+					["Bank"] = {
+						["FontSize"] = 12,
+						["CoordY"] = 692.281490904737,
+						["CoordX"] = 1511.96771301651,
+						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+				},
+				["Vadder - Argent Dawn"] = {
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
@@ -717,7 +647,77 @@ LUIDB = {
 						["ItemQuality"] = true,
 					},
 				},
-				["Mulmok - Argent Dawn"] = {
+				["Tynster - Dalaran"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
+					["Bank"] = {
+						["FontSize"] = 12,
+						["CoordY"] = 692.281490904737,
+						["CoordX"] = 1511.96771301651,
+						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+				},
+				["Tyran - Argent Dawn"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
+					["Bank"] = {
+						["FontSize"] = 12,
+						["CoordY"] = 692.281490904737,
+						["CoordX"] = 1511.96771301651,
+						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
+					["Bank"] = {
+						["FontSize"] = 12,
+						["CoordY"] = 692.281490904737,
+						["CoordX"] = 1511.96771301651,
+						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
+					["Bank"] = {
+						["FontSize"] = 12,
+						["CoordY"] = 692.281490904737,
+						["CoordX"] = 1511.96771301651,
+						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
+					["Bank"] = {
+						["FontSize"] = 12,
+						["CoordY"] = 692.281490904737,
+						["CoordX"] = 1511.96771301651,
+						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+				},
+				["Sinh - Dalaran"] = {
 					["Bags"] = {
 						["CoordX"] = 1511.96771301651,
 						["ItemQuality"] = true,
@@ -732,58 +732,58 @@ LUIDB = {
 					},
 				},
 				["Beeronimo - Dalaran"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Migimong - Runetotem"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
-				["Serbitechna - Darkspear"] = {
+				["Vancard - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1576.43774414063,
+						["ItemQuality"] = true,
+						["CoordY"] = 828.128723144531,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
-						["CoordY"] = 692.281490904737,
-						["CoordX"] = 1511.96771301651,
+						["CoordY"] = 895.668151855469,
+						["CoordX"] = 1120.54467773438,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
@@ -792,8 +792,17 @@ LUIDB = {
 		["Panels"] = {
 			["profiles"] = {
 				["Vaddor - Zul'jin"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Raid"] = {
 						["Height"] = 237,
@@ -803,33 +812,33 @@ LUIDB = {
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Datgorg - Argent Dawn"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -840,27 +849,27 @@ LUIDB = {
 						["Height"] = 237,
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Jingojaggot - Argent Dawn"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -871,59 +880,59 @@ LUIDB = {
 						["Height"] = 237,
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["IsShown"] = true,
-						["OffsetY"] = 1,
-						["OffsetX"] = 1,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Towel-Monk"] = {
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Chat"] = {
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Brokehorn - Zul'jin"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -934,27 +943,27 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Shaewong - Dalaran"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -965,22 +974,22 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Goramor - Runetotem"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Raid"] = {
 						["Height"] = 237,
@@ -990,33 +999,33 @@ LUIDB = {
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Shaekhan - Zul'jin"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1027,27 +1036,27 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Shanyt - Zul'jin"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1058,22 +1067,22 @@ LUIDB = {
 						["Height"] = 237,
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Bathal - Argent Dawn"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
 					},
 					["Raid"] = {
 						["Anchor"] = "Vd1",
@@ -1083,33 +1092,33 @@ LUIDB = {
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["IsShown"] = true,
-						["OffsetY"] = 1,
-						["OffsetX"] = 1,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Gangus - Runetotem"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1120,22 +1129,22 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Shaekhan - Argent Dawn"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
 					},
 					["Raid"] = {
 						["Anchor"] = "Vd1",
@@ -1145,33 +1154,33 @@ LUIDB = {
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["IsShown"] = true,
-						["OffsetY"] = 1,
-						["OffsetX"] = 1,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Malivant - Dalaran"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1182,27 +1191,27 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Urbul - Zul'jin"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1213,22 +1222,22 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Claugh - Runetotem"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Raid"] = {
 						["Height"] = 237,
@@ -1238,33 +1247,33 @@ LUIDB = {
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Tyriinid - Dalaran"] = {
-					["Chat"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1275,22 +1284,146 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
+					["Chat"] = {
 						["IsShown"] = true,
 					},
 				},
 				["Datgorg - Zul'jin"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Chat"] = {
 						["IsShown"] = true,
+					},
+				},
+				["Panboozled - Runetotem"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Narisaric - Dalaran"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Serbitechna - Darkspear"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Brotus - Argent Dawn"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
@@ -1301,10 +1434,34 @@ LUIDB = {
 						["Width"] = 189,
 					},
 					["Raid"] = {
+						["Anchor"] = "Vd1",
 						["Height"] = 237,
 						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
+						["IsShown"] = true,
 						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["LUI-Towelliee"] = {
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1319,14 +1476,55 @@ LUIDB = {
 						["IsShown"] = true,
 					},
 				},
-				["Panboozled - Runetotem"] = {
-					["Chat"] = {
+				["Tyrannithal - Argent Dawn"] = {
+					["Minimap"] = {
 						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
 						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Zulbathal - Zul'jin"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
@@ -1337,10 +1535,656 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
 					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Shanyt - Argent Dawn"] = {
+					["Raid"] = {
+						["IsShown"] = true,
+						["Width"] = 612,
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["Width"] = 198,
+						["OffsetX"] = 43,
+						["OffsetY"] = 1,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["IsShown"] = true,
+						["Width"] = 189,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["Height"] = 218,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Brotuss - Zul'jin"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Brewnheimer - Darkspear"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Gillbourn - Runetotem"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Dialdaas - Darkspear"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Fantastiburo - Argent Dawn"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Shathiel - Darkspear"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Mulmok - Argent Dawn"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
 					["Tps"] = {
 						["OffsetX"] = 1,
 						["OffsetY"] = 1,
 						["IsShown"] = true,
+						["Width"] = 198,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Tynster - Dalaran"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Thromar - Dalaran"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Vadder - Argent Dawn"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Tyran - Argent Dawn"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Sinh - Dalaran"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Tyrann - Zul'jin"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Beeronimo - Dalaran"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Migimong - Runetotem"] = {
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Vancard - Zul'jin"] = {
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
 					["MicroMenu"] = {
@@ -1351,850 +2195,6 @@ LUIDB = {
 					},
 				},
 				["Argent Dawn"] = {
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Vancard - Zul'jin"] = {
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Brotus - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["LUI-Towelliee"] = {
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Tps"] = {
-						["IsShown"] = true,
-						["OffsetY"] = 1,
-						["OffsetX"] = 1,
-						["Width"] = 198,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tyrannithal - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Zulbathal - Zul'jin"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Shanyt - Argent Dawn"] = {
-					["Tps"] = {
-						["IsShown"] = true,
-						["Width"] = 198,
-						["OffsetX"] = 43,
-						["OffsetY"] = 1,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["IsShown"] = true,
-						["Width"] = 189,
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["Anchor"] = "SkadaBarWindowSkada",
-					},
-					["Raid"] = {
-						["IsShown"] = true,
-						["Width"] = 612,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-					},
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Brotuss - Zul'jin"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Brewnheimer - Darkspear"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Fantastiburo - Zul'jin"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Gillbourn - Runetotem"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Migimong - Runetotem"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Fantastiburo - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Shathiel - Darkspear"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tyrann - Zul'jin"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Sinh - Dalaran"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Vadder - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["IsShown"] = true,
-						["OffsetY"] = 1,
-						["OffsetX"] = 1,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Thromar - Dalaran"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tynster - Dalaran"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Mulmok - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["IsShown"] = true,
-						["OffsetY"] = 1,
-						["OffsetX"] = 1,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Beeronimo - Dalaran"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Dialdaas - Darkspear"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Serbitechna - Darkspear"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Narisaric - Dalaran"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
 					["MicroMenu"] = {
 						["IsShown"] = true,
 					},
@@ -2260,7 +2260,7 @@ LUIDB = {
 				["Panboozled - Runetotem"] = {
 					["Enable"] = false,
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Narisaric - Dalaran"] = {
 					["Enable"] = false,
 				},
 				["Brotus - Argent Dawn"] = {
@@ -2302,6 +2302,51 @@ LUIDB = {
 				["Gillbourn - Runetotem"] = {
 					["Enable"] = false,
 				},
+				["Serbitechna - Darkspear"] = {
+					["Enable"] = false,
+				},
+				["Dialdaas - Darkspear"] = {
+					["Enable"] = false,
+				},
+				["Shathiel - Darkspear"] = {
+					["Enable"] = false,
+				},
+				["Tyrann - Zul'jin"] = {
+					["Enable"] = false,
+				},
+				["Mulmok - Argent Dawn"] = {
+					["Enable"] = false,
+				},
+				["Thromar - Dalaran"] = {
+					["Enable"] = false,
+				},
+				["Vadder - Argent Dawn"] = {
+					["Enable"] = false,
+				},
+				["Tynster - Dalaran"] = {
+					["Enable"] = false,
+				},
+				["Tyran - Argent Dawn"] = {
+					["Enable"] = false,
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["Enable"] = false,
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["Enable"] = false,
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["Enable"] = false,
+				},
+				["Sinh - Dalaran"] = {
+					["Enable"] = false,
+				},
+				["Beeronimo - Dalaran"] = {
+					["Enable"] = false,
+				},
+				["Migimong - Runetotem"] = {
+					["Enable"] = false,
+				},
 				["Vancard - Zul'jin"] = {
 					["Enable"] = false,
 					["Player"] = {
@@ -2311,52 +2356,7 @@ LUIDB = {
 						},
 					},
 				},
-				["Migimong - Runetotem"] = {
-					["Enable"] = false,
-				},
-				["Shathiel - Darkspear"] = {
-					["Enable"] = false,
-				},
-				["Tyrann - Zul'jin"] = {
-					["Enable"] = false,
-				},
-				["Sinh - Dalaran"] = {
-					["Enable"] = false,
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["Enable"] = false,
-				},
-				["Vadder - Argent Dawn"] = {
-					["Enable"] = false,
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["Enable"] = false,
-				},
-				["Tyran - Argent Dawn"] = {
-					["Enable"] = false,
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["Enable"] = false,
-				},
-				["Tynster - Dalaran"] = {
-					["Enable"] = false,
-				},
-				["Thromar - Dalaran"] = {
-					["Enable"] = false,
-				},
-				["Mulmok - Argent Dawn"] = {
-					["Enable"] = false,
-				},
-				["Beeronimo - Dalaran"] = {
-					["Enable"] = false,
-				},
-				["Dialdaas - Darkspear"] = {
-					["Enable"] = false,
-				},
-				["Serbitechna - Darkspear"] = {
-					["Enable"] = false,
-				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
 					["Enable"] = false,
 				},
 			},
@@ -2489,7 +2489,7 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Fantastiburo - Argent Dawn"] = {
+				["Narisaric - Dalaran"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2559,14 +2559,14 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Vancard - Zul'jin"] = {
+				["Serbitechna - Darkspear"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
 						["X"] = -10,
 					},
 				},
-				["Migimong - Runetotem"] = {
+				["Dialdaas - Darkspear"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2587,14 +2587,14 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Sinh - Dalaran"] = {
+				["Cowtastraphy - Argent Dawn"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
 						["X"] = -10,
 					},
 				},
-				["Mulmok - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2608,7 +2608,7 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Tyrannithal - Zul'jin"] = {
+				["Jingojaggot - Zul'jin"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2629,21 +2629,21 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Jingojaggot - Zul'jin"] = {
+				["Tyrannithal - Zul'jin"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
 						["X"] = -10,
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Mulmok - Argent Dawn"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
 						["X"] = -10,
 					},
 				},
-				["Cowtastraphy - Argent Dawn"] = {
+				["Sinh - Dalaran"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2657,21 +2657,21 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Dialdaas - Darkspear"] = {
+				["Migimong - Runetotem"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
 						["X"] = -10,
 					},
 				},
-				["Serbitechna - Darkspear"] = {
+				["Vancard - Zul'jin"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
 						["X"] = -10,
 					},
 				},
-				["Narisaric - Dalaran"] = {
+				["Fantastiburo - Argent Dawn"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2685,47 +2685,18 @@ LUIDB = {
 		["RemoveThatBuff"] = {
 		},
 		["Infotext"] = {
-			["profiles"] = {
-				["Shanyt - Argent Dawn"] = {
-					["Gold"] = {
-						["ServerTotal"] = true,
-					},
-				},
-			},
 			["realm"] = {
-				["Argent Dawn"] = {
+				["Runetotem"] = {
 					["Gold"] = {
 						["Horde"] = {
-							["Tyrannithal"] = 11550276,
-							["Cowtastraphy"] = 892725,
-							["Tyran"] = 884,
-							["Datgorg"] = 16550111,
-							["Vadder"] = 2339333,
-							["Mulmok"] = 193803,
-							["Brotus"] = 20307798,
-							["Jingojaggot"] = 356823,
-							["Shanyt"] = 13908040962,
-							["Bathal"] = 2000,
-							["Shaekhan"] = 12334,
+							["Goramor"] = 3757221,
+							["Claugh"] = 11861196,
 						},
-					},
-				},
-				["Zul'jin"] = {
-					["Gold"] = {
-						["Horde"] = {
-							["Vancard"] = 25177530,
-							["Zulbathal"] = 2000,
-							["Fantastiburo"] = 10000,
-						},
-					},
-				},
-				["Darkspear"] = {
-					["Gold"] = {
 						["Alliance"] = {
-							["Shathiel"] = 44039224,
-							["Dialdaas"] = 11338409,
-							["Serbitechna"] = 7681888,
-							["Brewnheimer"] = 836,
+							["Panboozled"] = 597782,
+							["Migimong"] = 3127969,
+							["Gangus"] = 227983612,
+							["Gillbourn"] = 1381,
 						},
 					},
 				},
@@ -2745,35 +2716,7566 @@ LUIDB = {
 						},
 					},
 				},
-				["Runetotem"] = {
+				["Darkspear"] = {
+					["Gold"] = {
+						["Alliance"] = {
+							["Shathiel"] = 44039224,
+							["Brewnheimer"] = 836,
+							["Dialdaas"] = 11338409,
+							["Serbitechna"] = 7681888,
+						},
+					},
+				},
+				["Zul'jin"] = {
 					["Gold"] = {
 						["Horde"] = {
-							["Goramor"] = 3757221,
-							["Claugh"] = 11861196,
+							["Vancard"] = 25648287,
+							["Zulbathal"] = 2000,
+							["Fantastiburo"] = 10000,
 						},
-						["Alliance"] = {
-							["Migimong"] = 3127969,
-							["Panboozled"] = 597782,
-							["Gangus"] = 227983612,
-							["Gillbourn"] = 1381,
+					},
+				},
+				["Argent Dawn"] = {
+					["Gold"] = {
+						["Horde"] = {
+							["Tyrannithal"] = 11550276,
+							["Cowtastraphy"] = 892725,
+							["Tyran"] = 884,
+							["Datgorg"] = 16550111,
+							["Vadder"] = 2339333,
+							["Mulmok"] = 193803,
+							["Brotus"] = 20307798,
+							["Jingojaggot"] = 356823,
+							["Shaekhan"] = 12334,
+							["Bathal"] = 2000,
+							["Shanyt"] = 13689107143,
 						},
 					},
 				},
 			},
+			["profiles"] = {
+				["Shanyt - Argent Dawn"] = {
+					["Gold"] = {
+						["ServerTotal"] = true,
+					},
+				},
+			},
 		},
-		["Merchant"] = {
+		["Themes"] = {
+			["profiles"] = {
+				["Vaddor - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.65, -- [1]
+						0.56, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Rogue",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Datgorg - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.61, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Hunter",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Jingojaggot - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.6, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Priest",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Tyrann - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.22, -- [2]
+						0.47, -- [3]
+						1, -- [4]
+					},
+					["orb_cycle"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Mage",
+					["micromenu_bg2"] = {
+						0.12, -- [1]
+						0.12, -- [2]
+						0.12, -- [3]
+						0.6, -- [4]
+					},
+					["chatborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Brokehorn - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.66, -- [1]
+						0, -- [2]
+						0.43, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Paladin",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Shaewong - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["tpsborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.3, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["color_top"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["raid"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Monk",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.63, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["chat2"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.2, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.4, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.38, -- [1]
+						0.75, -- [2]
+						0, -- [3]
+						0.76, -- [4]
+					},
+					["chat2border"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.28, -- [1]
+						0.8, -- [2]
+						0.76, -- [3]
+					},
+					["navi_hover"] = {
+						0.43, -- [1]
+						0.8, -- [2]
+						0.82, -- [3]
+						0.65, -- [4]
+					},
+				},
+				["Goramor - Runetotem"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.48, -- [2]
+						0.25, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warrior",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Shaekhan - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["tpsborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.3, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["color_top"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["raid"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Monk",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.63, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["chat2"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.2, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.4, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.38, -- [1]
+						0.75, -- [2]
+						0, -- [3]
+						0.76, -- [4]
+					},
+					["chat2border"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.28, -- [1]
+						0.8, -- [2]
+						0.76, -- [3]
+					},
+					["navi_hover"] = {
+						0.43, -- [1]
+						0.8, -- [2]
+						0.82, -- [3]
+						0.65, -- [4]
+					},
+				},
+				["Shanyt - Zul'jin"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.48, -- [2]
+						0.25, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warrior",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Bathal - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Death Knight",
+					["micromenu_bg2"] = {
+						0.1, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Gangus - Runetotem"] = {
+					["micromenu_btn"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Death Knight",
+					["micromenu_bg2"] = {
+						0.1, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Shaekhan - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["tpsborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.3, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["color_top"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["raid"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Monk",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.63, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.23, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
+					},
+					["chat2"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.2, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.4, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.38, -- [1]
+						0.75, -- [2]
+						0, -- [3]
+						0.76, -- [4]
+					},
+					["chat2border"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.28, -- [1]
+						0.8, -- [2]
+						0.76, -- [3]
+					},
+					["navi_hover"] = {
+						0.43, -- [1]
+						0.8, -- [2]
+						0.82, -- [3]
+						0.65, -- [4]
+					},
+				},
+				["Malivant - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.65, -- [1]
+						0.56, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Rogue",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Urbul - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.27, -- [1]
+						0, -- [2]
+						0.7, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warlock",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+					},
+					["navi"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+					},
+					["navi_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Claugh - Runetotem"] = {
+					["micromenu_btn"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.27, -- [1]
+						0, -- [2]
+						0.7, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warlock",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+					},
+					["navi"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+					},
+					["navi_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Tyriinid - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.22, -- [2]
+						0.47, -- [3]
+						1, -- [4]
+					},
+					["orb_cycle"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Mage",
+					["micromenu_bg2"] = {
+						0.12, -- [1]
+						0.12, -- [2]
+						0.12, -- [3]
+						0.6, -- [4]
+					},
+					["chatborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Datgorg - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.61, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Hunter",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Panboozled - Runetotem"] = {
+					["micromenu_btn"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.65, -- [1]
+						0.56, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Rogue",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Fantastiburo - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Druid",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Vancard - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["navi_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.22, -- [2]
+						0.47, -- [3]
+						1, -- [4]
+					},
+					["orb_cycle"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Mage",
+					["micromenu_bg2"] = {
+						0.12, -- [1]
+						0.12, -- [2]
+						0.12, -- [3]
+						0.6, -- [4]
+					},
+					["orb"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["chat2border"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["navi"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["bar2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["sidebar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["editbox"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+				},
+				["Brotus - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.09, -- [2]
+						0.68, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Shaman",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["LUI-Towelliee"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["tps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["chat"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.24, -- [2]
+						0.02, -- [3]
+						0.8, -- [4]
+					},
+					["chat2border"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["orb"] = {
+						0.8, -- [1]
+						0.38, -- [2]
+						0.05, -- [3]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["navi"] = {
+						0.72, -- [1]
+						0.75, -- [2]
+						0.72, -- [3]
+						0.38, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.48, -- [2]
+						0, -- [3]
+						0.81, -- [4]
+					},
+					["dpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["dps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.48, -- [2]
+						0, -- [3]
+						0.5, -- [4]
+					},
+					["chat2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.54, -- [2]
+						0.32, -- [3]
+					},
+					["editbox"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.5, -- [4]
+					},
+					["minimap"] = {
+						0.85, -- [1]
+						0.35, -- [2]
+						0, -- [3]
+						0.58, -- [4]
+					},
+					["chatborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.48, -- [2]
+						0, -- [3]
+						0.81, -- [4]
+					},
+				},
+				["Tyrannithal - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.48, -- [1]
+						0.13, -- [2]
+						0.62, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Demon Hunter",
+					["micromenu_bg2"] = {
+						0.1, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+					},
+					["navi"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+					},
+					["navi_hover"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Zulbathal - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Death Knight",
+					["micromenu_bg2"] = {
+						0.1, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+					},
+					["navi_hover"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Shanyt - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.48, -- [2]
+						0.25, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warrior",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Brotuss - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.09, -- [2]
+						0.68, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Shaman",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Brewnheimer - Darkspear"] = {
+					["micromenu_btn"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.09, -- [2]
+						0.68, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Shaman",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.09, -- [2]
+						0.68, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Shaman",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Gillbourn - Runetotem"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Druid",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Migimong - Runetotem"] = {
+					["micromenu_btn"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.65, -- [1]
+						0.56, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Rogue",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Mulmok - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.27, -- [1]
+						0, -- [2]
+						0.7, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warlock",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+					},
+					["navi"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+					},
+					["navi_hover"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Shathiel - Darkspear"] = {
+					["micromenu_btn"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.22, -- [2]
+						0.47, -- [3]
+						1, -- [4]
+					},
+					["orb_cycle"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Mage",
+					["micromenu_bg2"] = {
+						0.12, -- [1]
+						0.12, -- [2]
+						0.12, -- [3]
+						0.6, -- [4]
+					},
+					["chatborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Serbitechna - Darkspear"] = {
+					["micromenu_btn"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.61, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Hunter",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.66, -- [1]
+						0, -- [2]
+						0.43, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Paladin",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Towel-Monk"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["tps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["chat"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.24, -- [2]
+						0.02, -- [3]
+						0.8, -- [4]
+					},
+					["chat2border"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["orb"] = {
+						0.8, -- [1]
+						0.38, -- [2]
+						0.05, -- [3]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["navi"] = {
+						0.72, -- [1]
+						0.75, -- [2]
+						0.72, -- [3]
+						0.38, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.48, -- [2]
+						0, -- [3]
+						0.81, -- [4]
+					},
+					["dpsborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["dps"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.48, -- [2]
+						0, -- [3]
+						0.5, -- [4]
+					},
+					["chat2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.54, -- [2]
+						0.32, -- [3]
+					},
+					["editbox"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.5, -- [4]
+					},
+					["minimap"] = {
+						0.85, -- [1]
+						0.35, -- [2]
+						0, -- [3]
+						0.58, -- [4]
+					},
+					["chatborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.48, -- [2]
+						0, -- [3]
+						0.81, -- [4]
+					},
+				},
+				["Vadder - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.65, -- [1]
+						0.56, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Rogue",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.5, -- [4]
+					},
+					["dpsborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+					},
+					["navi_hover"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.48, -- [2]
+						0.25, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warrior",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Tyran - Argent Dawn"] = {
+					["micromenu_btn"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.22, -- [2]
+						0.47, -- [3]
+						1, -- [4]
+					},
+					["orb_cycle"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Mage",
+					["micromenu_bg2"] = {
+						0.12, -- [1]
+						0.12, -- [2]
+						0.12, -- [3]
+						0.6, -- [4]
+					},
+					["chatborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+					},
+					["navi_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Tynster - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.6, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Priest",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Thromar - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.66, -- [1]
+						0, -- [2]
+						0.43, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Paladin",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["micromenu_btn"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.6, -- [1]
+						0.6, -- [2]
+						0.6, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Priest",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+					},
+					["navi_hover"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Sinh - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.09, -- [2]
+						0.68, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Shaman",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["chatborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+					},
+					["navi_hover"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Beeronimo - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0, -- [1]
+						0.61, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Hunter",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+					},
+					["navi_hover"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Dialdaas - Darkspear"] = {
+					["micromenu_btn"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.66, -- [1]
+						0, -- [2]
+						0.43, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Paladin",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["navi_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Narisaric - Dalaran"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Druid",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.5, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
+				},
+				["Argent Dawn"] = {
+					["micromenu_btn"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["tpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.7, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.7, -- [1]
+						0.48, -- [2]
+						0.25, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.55, -- [4]
+					},
+					["raid"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Warrior",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["chatborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						1, -- [4]
+					},
+					["editbox"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["bar2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.5, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["micromenu"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.6, -- [4]
+					},
+					["chat2border"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["orb"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+					},
+					["navi_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+				},
+			},
 		},
-		["Micromenu"] = {
+		["WorldMap"] = {
+			["namespaces"] = {
+				["FogClear"] = {
+				},
+				["Coords"] = {
+				},
+			},
+			["profiles"] = {
+			},
 		},
-		["Forte"] = {
-		},
-		["Auras"] = {
+		["Fader"] = {
 		},
 		["Chat"] = {
 			["namespaces"] = {
 				["StickyChannels"] = {
-				},
-				["Buttons"] = {
 				},
 				["EditBox"] = {
 					["factionrealm"] = {
@@ -2812,31 +10314,31 @@ LUIDB = {
 							"/kick", -- [32]
 						},
 						["Horde - Zul'jin"] = {
-							"/i i dont know if i would go that far but the deed is done", -- [1]
-							"/i THAKS", -- [2]
-							"/i i dont know if i would go that far but the deed is done", -- [3]
-							"/i THAKS", -- [4]
-							"/i i dont know if i would go that far but the deed is done", -- [5]
-							"/i THAKS", -- [6]
-							"/i i dont know if i would go that far but the deed is done", -- [7]
-							"/vuhdo", -- [8]
-							"/i i dont know if i would go that far but the deed is done", -- [9]
-							"/i THAKS", -- [10]
-							"/i i dont know if i would go that far but the deed is done", -- [11]
-							"/vuhdo", -- [12]
-							"/i THAKS", -- [13]
-							"/vuhdo", -- [14]
-							"/i i dont know if i would go that far but the deed is done", -- [15]
-							"/vuhdo", -- [16]
-							"/i i dont know if i would go that far but the deed is done", -- [17]
-							"/i THAKS", -- [18]
-							"/i i dont know if i would go that far but the deed is done", -- [19]
-							"/i THAKS", -- [20]
+							"/i THAKS", -- [1]
+							"/i i dont know if i would go that far but the deed is done", -- [2]
+							"/i THAKS", -- [3]
+							"/i i dont know if i would go that far but the deed is done", -- [4]
+							"/i THAKS", -- [5]
+							"/i i dont know if i would go that far but the deed is done", -- [6]
+							"/vuhdo", -- [7]
+							"/i THAKS", -- [8]
+							"/vuhdo", -- [9]
+							"/i i dont know if i would go that far but the deed is done", -- [10]
+							"/i THAKS", -- [11]
+							"/i i dont know if i would go that far but the deed is done", -- [12]
+							"/vuhdo", -- [13]
+							"/i i dont know if i would go that far but the deed is done", -- [14]
+							"/vuhdo", -- [15]
+							"/i i dont know if i would go that far but the deed is done", -- [16]
+							"/i THAKS", -- [17]
+							"/i i dont know if i would go that far but the deed is done", -- [18]
+							"/i THAKS", -- [19]
+							"/vuhdo", -- [20]
 							"/i i dont know if i would go that far but the deed is done", -- [21]
 							"/i THAKS", -- [22]
 							"/i i dont know if i would go that far but the deed is done", -- [23]
 							"/vuhdo", -- [24]
-							"/i THAKS", -- [25]
+							"/i i dont know if i would go that far but the deed is done", -- [25]
 							"/vuhdo", -- [26]
 							"/i i dont know if i would go that far but the deed is done", -- [27]
 							"/i THAKS", -- [28]
@@ -2846,6 +10348,8 @@ LUIDB = {
 							"/vuhdo", -- [32]
 						},
 					},
+				},
+				["Buttons"] = {
 				},
 			},
 			["profiles"] = {
@@ -2952,6 +10456,166 @@ LUIDB = {
 					["y"] = 46.0004300258579,
 				},
 				["Panboozled - Runetotem"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Fantastiburo - Argent Dawn"] = {
+					["y"] = 46.0004300258579,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["Vancard - Zul'jin"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004382602019,
+				},
+				["Brotus - Argent Dawn"] = {
+					["y"] = 46.0004300258579,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["LUI-Towelliee"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004382602019,
+				},
+				["Tyrannithal - Argent Dawn"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Zulbathal - Zul'jin"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Shanyt - Argent Dawn"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004382602019,
+				},
+				["Brotuss - Zul'jin"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Brewnheimer - Darkspear"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Fantastiburo - Zul'jin"] = {
+					["y"] = 46.0004382602019,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["Gillbourn - Runetotem"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Migimong - Runetotem"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Mulmok - Argent Dawn"] = {
+					["y"] = 46.0004300258579,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["Shathiel - Darkspear"] = {
+					["y"] = 46.0004300258579,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["Serbitechna - Darkspear"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["y"] = 46.0004300258579,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["Towel-Monk"] = {
+					["modules"] = {
+					},
+				},
+				["Vadder - Argent Dawn"] = {
+					["y"] = 46.0004300258579,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Tyran - Argent Dawn"] = {
+					["y"] = 46.0004300258579,
+					["x"] = 28.0002389903592,
+					["modules"] = {
+					},
+				},
+				["Tynster - Dalaran"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Thromar - Dalaran"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Sinh - Dalaran"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Beeronimo - Dalaran"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Dialdaas - Darkspear"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
+				},
+				["Narisaric - Dalaran"] = {
 					["modules"] = {
 					},
 					["x"] = 28.0002389903592,
@@ -2963,7687 +10627,23 @@ LUIDB = {
 					["modules"] = {
 					},
 				},
-				["Narisaric - Dalaran"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Brotus - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["LUI-Towelliee"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004382602019,
-				},
-				["Tyrannithal - Argent Dawn"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Zulbathal - Zul'jin"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Shanyt - Argent Dawn"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004382602019,
-				},
-				["Brotuss - Zul'jin"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Brewnheimer - Darkspear"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Fantastiburo - Zul'jin"] = {
-					["y"] = 46.0004382602019,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["Gillbourn - Runetotem"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Dialdaas - Darkspear"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Mulmok - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["Shathiel - Darkspear"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["Sinh - Dalaran"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Vadder - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["Thromar - Dalaran"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Tynster - Dalaran"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Tyran - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Towel-Monk"] = {
-					["modules"] = {
-					},
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["Serbitechna - Darkspear"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Beeronimo - Dalaran"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Migimong - Runetotem"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
-				["Vancard - Zul'jin"] = {
-					["y"] = 46.0004382602019,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
-				["Fantastiburo - Argent Dawn"] = {
-					["y"] = 46.0004300258579,
-					["x"] = 28.0002389903592,
-					["modules"] = {
-					},
-				},
 			},
 		},
-		["Fader"] = {
+		["Auras"] = {
 		},
-		["WorldMap"] = {
-			["namespaces"] = {
-				["FogClear"] = {
-				},
-				["Coords"] = {
-				},
-			},
-			["profiles"] = {
-			},
+		["Forte"] = {
 		},
-		["Themes"] = {
-			["profiles"] = {
-				["Vaddor - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.65, -- [1]
-						0.56, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Rogue",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["orb"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["chat2border"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["editbox"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Datgorg - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.61, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Hunter",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["chat2border"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["editbox"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Jingojaggot - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.6, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Priest",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["chat2border"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Tyrann - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.22, -- [2]
-						0.47, -- [3]
-						1, -- [4]
-					},
-					["orb_cycle"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Mage",
-					["micromenu_bg2"] = {
-						0.12, -- [1]
-						0.12, -- [2]
-						0.12, -- [3]
-						0.6, -- [4]
-					},
-					["orb"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["chat2border"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["editbox"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Brokehorn - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.66, -- [1]
-						0, -- [2]
-						0.43, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Paladin",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["chat2border"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["editbox"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Shaewong - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["tpsborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.43, -- [1]
-						0.8, -- [2]
-						0.82, -- [3]
-						0.65, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.3, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["color_top"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["raid"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Monk",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.28, -- [1]
-						0.8, -- [2]
-						0.76, -- [3]
-					},
-					["chat2border"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.38, -- [1]
-						0.75, -- [2]
-						0, -- [3]
-						0.76, -- [4]
-					},
-					["bar2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.2, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["micromenu"] = {
-						0.4, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.63, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Goramor - Runetotem"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0.48, -- [2]
-						0.25, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warrior",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Shaekhan - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["tpsborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.43, -- [1]
-						0.8, -- [2]
-						0.82, -- [3]
-						0.65, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.3, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["color_top"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["raid"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Monk",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.28, -- [1]
-						0.8, -- [2]
-						0.76, -- [3]
-					},
-					["chat2border"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.38, -- [1]
-						0.75, -- [2]
-						0, -- [3]
-						0.76, -- [4]
-					},
-					["bar2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.2, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["micromenu"] = {
-						0.4, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.63, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Shanyt - Zul'jin"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0.48, -- [2]
-						0.25, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warrior",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Bathal - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Death Knight",
-					["micromenu_bg2"] = {
-						0.1, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-					},
-					["chat2border"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-					},
-					["editbox"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Gangus - Runetotem"] = {
-					["micromenu_btn"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Death Knight",
-					["micromenu_bg2"] = {
-						0.1, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-					},
-					["chat2border"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-					},
-					["editbox"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Shaekhan - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["tpsborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.43, -- [1]
-						0.8, -- [2]
-						0.82, -- [3]
-						0.65, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.3, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["color_top"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["raid"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Monk",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.28, -- [1]
-						0.8, -- [2]
-						0.76, -- [3]
-					},
-					["chat2border"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.38, -- [1]
-						0.75, -- [2]
-						0, -- [3]
-						0.76, -- [4]
-					},
-					["bar2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.2, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["micromenu"] = {
-						0.4, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.23, -- [1]
-						0.6, -- [2]
-						0.63, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Malivant - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.65, -- [1]
-						0.56, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Rogue",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["orb"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["chat2border"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["editbox"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Urbul - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.27, -- [1]
-						0, -- [2]
-						0.7, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warlock",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-					},
-					["chat2border"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-					},
-					["editbox"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Claugh - Runetotem"] = {
-					["micromenu_btn"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.27, -- [1]
-						0, -- [2]
-						0.7, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warlock",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-					},
-					["chat2border"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-					},
-					["editbox"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Tyriinid - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.22, -- [2]
-						0.47, -- [3]
-						1, -- [4]
-					},
-					["orb_cycle"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Mage",
-					["micromenu_bg2"] = {
-						0.12, -- [1]
-						0.12, -- [2]
-						0.12, -- [3]
-						0.6, -- [4]
-					},
-					["orb"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["chat2border"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["editbox"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Datgorg - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.61, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Hunter",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["chat2border"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["editbox"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Panboozled - Runetotem"] = {
-					["micromenu_btn"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.65, -- [1]
-						0.56, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Rogue",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["orb"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["chat2border"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["editbox"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Argent Dawn"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0.48, -- [2]
-						0.25, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warrior",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.5, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Narisaric - Dalaran"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Druid",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Brotus - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.09, -- [2]
-						0.68, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Shaman",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["chat2border"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["editbox"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["LUI-Towelliee"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.55, -- [4]
-					},
-					["tpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["tps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["chat"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0.24, -- [2]
-						0.02, -- [3]
-						0.8, -- [4]
-					},
-					["chat2border"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.55, -- [4]
-					},
-					["raid"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.48, -- [2]
-						0, -- [3]
-						0.81, -- [4]
-					},
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["chatborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["minimap"] = {
-						0.85, -- [1]
-						0.35, -- [2]
-						0, -- [3]
-						0.58, -- [4]
-					},
-					["editbox"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.5, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.48, -- [2]
-						0, -- [3]
-						0.81, -- [4]
-					},
-					["dpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["dps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.48, -- [2]
-						0, -- [3]
-						0.5, -- [4]
-					},
-					["raidborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.54, -- [2]
-						0.32, -- [3]
-					},
-					["navi"] = {
-						0.72, -- [1]
-						0.75, -- [2]
-						0.72, -- [3]
-						0.38, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["orb"] = {
-						0.8, -- [1]
-						0.38, -- [2]
-						0.05, -- [3]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-				},
-				["Tyrannithal - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.48, -- [1]
-						0.13, -- [2]
-						0.62, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Demon Hunter",
-					["micromenu_bg2"] = {
-						0.1, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-					},
-					["chat2border"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-					},
-					["editbox"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Zulbathal - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Death Knight",
-					["micromenu_bg2"] = {
-						0.1, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-					},
-					["chat2border"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-					},
-					["editbox"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Shanyt - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0.48, -- [2]
-						0.25, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warrior",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Brotuss - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.09, -- [2]
-						0.68, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Shaman",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["chat2border"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["editbox"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Brewnheimer - Darkspear"] = {
-					["micromenu_btn"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.09, -- [2]
-						0.68, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Shaman",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["chat2border"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["editbox"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Fantastiburo - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.09, -- [2]
-						0.68, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Shaman",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["chat2border"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["editbox"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Gillbourn - Runetotem"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Druid",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Dialdaas - Darkspear"] = {
-					["micromenu_btn"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.66, -- [1]
-						0, -- [2]
-						0.43, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Paladin",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["chat2border"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["editbox"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Mulmok - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.27, -- [1]
-						0, -- [2]
-						0.7, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warlock",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-					},
-					["chat2border"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-					},
-					["editbox"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Shathiel - Darkspear"] = {
-					["micromenu_btn"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.22, -- [2]
-						0.47, -- [3]
-						1, -- [4]
-					},
-					["orb_cycle"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Mage",
-					["micromenu_bg2"] = {
-						0.12, -- [1]
-						0.12, -- [2]
-						0.12, -- [3]
-						0.6, -- [4]
-					},
-					["orb"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["chat2border"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["editbox"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Sinh - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.09, -- [2]
-						0.68, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Shaman",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["chat2border"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-					},
-					["editbox"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.6, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Priest",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["chat2border"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Vadder - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.65, -- [1]
-						0.56, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Rogue",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["orb"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["chat2border"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["editbox"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Thromar - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.66, -- [1]
-						0, -- [2]
-						0.43, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Paladin",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["chat2border"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["editbox"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Tynster - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.6, -- [1]
-						0.6, -- [2]
-						0.6, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Priest",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["chat2border"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-					},
-					["editbox"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.22, -- [2]
-						0.47, -- [3]
-						1, -- [4]
-					},
-					["orb_cycle"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Mage",
-					["micromenu_bg2"] = {
-						0.12, -- [1]
-						0.12, -- [2]
-						0.12, -- [3]
-						0.6, -- [4]
-					},
-					["orb"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["chat2border"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["editbox"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0.48, -- [2]
-						0.25, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.55, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Warrior",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Towel-Monk"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.55, -- [4]
-					},
-					["tpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["tps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["chat"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.7, -- [1]
-						0.24, -- [2]
-						0.02, -- [3]
-						0.8, -- [4]
-					},
-					["chat2border"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.55, -- [4]
-					},
-					["raid"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.48, -- [2]
-						0, -- [3]
-						0.81, -- [4]
-					},
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["chatborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["minimap"] = {
-						0.85, -- [1]
-						0.35, -- [2]
-						0, -- [3]
-						0.58, -- [4]
-					},
-					["editbox"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.5, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.48, -- [2]
-						0, -- [3]
-						0.81, -- [4]
-					},
-					["dpsborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["dps"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.48, -- [2]
-						0, -- [3]
-						0.5, -- [4]
-					},
-					["raidborder"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.86, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.54, -- [2]
-						0.32, -- [3]
-					},
-					["navi"] = {
-						0.72, -- [1]
-						0.75, -- [2]
-						0.72, -- [3]
-						0.38, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["orb"] = {
-						0.8, -- [1]
-						0.38, -- [2]
-						0.05, -- [3]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.66, -- [1]
-						0, -- [2]
-						0.43, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Paladin",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["chat2border"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["editbox"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Serbitechna - Darkspear"] = {
-					["micromenu_btn"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.61, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Hunter",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["chat2border"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["editbox"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Beeronimo - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.61, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Hunter",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["chat2border"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-					},
-					["editbox"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Migimong - Runetotem"] = {
-					["micromenu_btn"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.65, -- [1]
-						0.56, -- [2]
-						0, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Rogue",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["orb"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["chat2border"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.5, -- [4]
-					},
-					["dpsborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-					},
-					["editbox"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Vancard - Zul'jin"] = {
-					["micromenu_btn"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["micromenu_bg"] = {
-						0, -- [1]
-						0.22, -- [2]
-						0.47, -- [3]
-						1, -- [4]
-					},
-					["orb_cycle"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Mage",
-					["micromenu_bg2"] = {
-						0.12, -- [1]
-						0.12, -- [2]
-						0.12, -- [3]
-						0.6, -- [4]
-					},
-					["chatborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						1, -- [4]
-					},
-					["editbox"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["bar2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["navi"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.6, -- [4]
-					},
-					["chat2border"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["orb"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-					},
-					["navi_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-				},
-				["Fantastiburo - Argent Dawn"] = {
-					["micromenu_btn"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Druid",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["chat2border"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.8, -- [4]
-					},
-					["raidborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["sidebar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.5, -- [4]
-					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-					},
-					["editbox"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.7, -- [4]
-					},
-				},
-			},
+		["Micromenu"] = {
+		},
+		["Merchant"] = {
 		},
 		["Bars"] = {
 			["profiles"] = {
 				["Vaddor - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10651,10 +10651,10 @@ LUIDB = {
 					},
 				},
 				["Datgorg - Argent Dawn"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10662,10 +10662,10 @@ LUIDB = {
 					},
 				},
 				["Jingojaggot - Argent Dawn"] = {
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10673,10 +10673,10 @@ LUIDB = {
 					},
 				},
 				["Towel-Monk"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10684,10 +10684,10 @@ LUIDB = {
 					},
 				},
 				["Brokehorn - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10695,10 +10695,10 @@ LUIDB = {
 					},
 				},
 				["Shaewong - Dalaran"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10706,10 +10706,10 @@ LUIDB = {
 					},
 				},
 				["Goramor - Runetotem"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10717,10 +10717,10 @@ LUIDB = {
 					},
 				},
 				["Shaekhan - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10728,10 +10728,10 @@ LUIDB = {
 					},
 				},
 				["Shanyt - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10739,10 +10739,10 @@ LUIDB = {
 					},
 				},
 				["Bathal - Argent Dawn"] = {
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10750,10 +10750,10 @@ LUIDB = {
 					},
 				},
 				["Gangus - Runetotem"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10761,10 +10761,10 @@ LUIDB = {
 					},
 				},
 				["Shaekhan - Argent Dawn"] = {
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10772,10 +10772,10 @@ LUIDB = {
 					},
 				},
 				["Malivant - Dalaran"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10783,10 +10783,10 @@ LUIDB = {
 					},
 				},
 				["Urbul - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10794,10 +10794,10 @@ LUIDB = {
 					},
 				},
 				["Claugh - Runetotem"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10805,10 +10805,10 @@ LUIDB = {
 					},
 				},
 				["Tyriinid - Dalaran"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10816,10 +10816,10 @@ LUIDB = {
 					},
 				},
 				["Datgorg - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10827,21 +10827,21 @@ LUIDB = {
 					},
 				},
 				["Panboozled - Runetotem"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Fantastiburo - Argent Dawn"] = {
-					["TopTexture"] = {
+				["Narisaric - Dalaran"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10849,10 +10849,10 @@ LUIDB = {
 					},
 				},
 				["Brotus - Argent Dawn"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10860,10 +10860,10 @@ LUIDB = {
 					},
 				},
 				["LUI-Towelliee"] = {
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10871,10 +10871,10 @@ LUIDB = {
 					},
 				},
 				["Tyrannithal - Argent Dawn"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10882,10 +10882,10 @@ LUIDB = {
 					},
 				},
 				["Zulbathal - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10907,10 +10907,10 @@ LUIDB = {
 					},
 				},
 				["Brotuss - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10918,10 +10918,10 @@ LUIDB = {
 					},
 				},
 				["Brewnheimer - Darkspear"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10929,10 +10929,10 @@ LUIDB = {
 					},
 				},
 				["Fantastiburo - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10940,32 +10940,32 @@ LUIDB = {
 					},
 				},
 				["Gillbourn - Runetotem"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Vancard - Zul'jin"] = {
-					["TopTexture"] = {
+				["Serbitechna - Darkspear"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Migimong - Runetotem"] = {
-					["TopTexture"] = {
+				["Dialdaas - Darkspear"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10973,10 +10973,10 @@ LUIDB = {
 					},
 				},
 				["Shathiel - Darkspear"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -10984,28 +10984,28 @@ LUIDB = {
 					},
 				},
 				["Tyrann - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Sinh - Dalaran"] = {
-					["TopTexture"] = {
+				["Cowtastraphy - Argent Dawn"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Mulmok - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["General"] = {
 						["Enable"] = false,
 					},
@@ -11017,39 +11017,6 @@ LUIDB = {
 					},
 				},
 				["Vadder - Argent Dawn"] = {
-					["General"] = {
-						["Enable"] = false,
-					},
-					["TopTexture"] = {
-						["Enable"] = false,
-					},
-					["BottomTexture"] = {
-						["Enable"] = false,
-					},
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["TopTexture"] = {
-						["Enable"] = false,
-					},
-					["General"] = {
-						["Enable"] = false,
-					},
-					["BottomTexture"] = {
-						["Enable"] = false,
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["TopTexture"] = {
-						["Enable"] = false,
-					},
-					["General"] = {
-						["Enable"] = false,
-					},
-					["BottomTexture"] = {
-						["Enable"] = false,
-					},
-				},
-				["Tynster - Dalaran"] = {
 					["TopTexture"] = {
 						["Enable"] = false,
 					},
@@ -11061,6 +11028,50 @@ LUIDB = {
 					},
 				},
 				["Jingojaggot - Zul'jin"] = {
+					["General"] = {
+						["Enable"] = false,
+					},
+					["TopTexture"] = {
+						["Enable"] = false,
+					},
+					["BottomTexture"] = {
+						["Enable"] = false,
+					},
+				},
+				["Tyran - Argent Dawn"] = {
+					["General"] = {
+						["Enable"] = false,
+					},
+					["TopTexture"] = {
+						["Enable"] = false,
+					},
+					["BottomTexture"] = {
+						["Enable"] = false,
+					},
+				},
+				["Tynster - Dalaran"] = {
+					["General"] = {
+						["Enable"] = false,
+					},
+					["TopTexture"] = {
+						["Enable"] = false,
+					},
+					["BottomTexture"] = {
+						["Enable"] = false,
+					},
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["General"] = {
+						["Enable"] = false,
+					},
+					["TopTexture"] = {
+						["Enable"] = false,
+					},
+					["BottomTexture"] = {
+						["Enable"] = false,
+					},
+				},
+				["Mulmok - Argent Dawn"] = {
 					["TopTexture"] = {
 						["Enable"] = false,
 					},
@@ -11071,22 +11082,11 @@ LUIDB = {
 						["Enable"] = false,
 					},
 				},
-				["Thromar - Dalaran"] = {
-					["TopTexture"] = {
-						["Enable"] = false,
-					},
+				["Sinh - Dalaran"] = {
 					["General"] = {
 						["Enable"] = false,
 					},
-					["BottomTexture"] = {
-						["Enable"] = false,
-					},
-				},
-				["Cowtastraphy - Argent Dawn"] = {
 					["TopTexture"] = {
-						["Enable"] = false,
-					},
-					["General"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -11094,43 +11094,43 @@ LUIDB = {
 					},
 				},
 				["Beeronimo - Dalaran"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Dialdaas - Darkspear"] = {
-					["TopTexture"] = {
+				["Migimong - Runetotem"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Serbitechna - Darkspear"] = {
-					["TopTexture"] = {
+				["Vancard - Zul'jin"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
 						["Enable"] = false,
 					},
 				},
-				["Narisaric - Dalaran"] = {
-					["TopTexture"] = {
+				["Fantastiburo - Argent Dawn"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -11359,119 +11359,7 @@ LUIDB = {
 						["EnableParty"] = false,
 					},
 				},
-				["Fantastiburo - Argent Dawn"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Tyrann - Zul'jin"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Shathiel - Darkspear"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Migimong - Runetotem"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Sinh - Dalaran"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Mulmok - Argent Dawn"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Thromar - Dalaran"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Tynster - Dalaran"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Jingojaggot - Zul'jin"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Vadder - Argent Dawn"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Beeronimo - Dalaran"] = {
-					["Enable"] = false,
-					["General"] = {
-						["EnableRaid"] = false,
-						["EnablePet"] = false,
-						["EnableParty"] = false,
-					},
-				},
-				["Dialdaas - Darkspear"] = {
+				["Narisaric - Dalaran"] = {
 					["Enable"] = false,
 					["General"] = {
 						["EnableRaid"] = false,
@@ -11487,7 +11375,119 @@ LUIDB = {
 						["EnableParty"] = false,
 					},
 				},
-				["Narisaric - Dalaran"] = {
+				["Shathiel - Darkspear"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Dialdaas - Darkspear"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Sinh - Dalaran"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Thromar - Dalaran"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Vadder - Argent Dawn"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Tyran - Argent Dawn"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Jingojaggot - Zul'jin"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Tynster - Dalaran"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Mulmok - Argent Dawn"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Beeronimo - Dalaran"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Migimong - Runetotem"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Tyrann - Zul'jin"] = {
+					["Enable"] = false,
+					["General"] = {
+						["EnableRaid"] = false,
+						["EnablePet"] = false,
+						["EnableParty"] = false,
+					},
+				},
+				["Fantastiburo - Argent Dawn"] = {
 					["Enable"] = false,
 					["General"] = {
 						["EnableRaid"] = false,
@@ -11497,6 +11497,51 @@ LUIDB = {
 				},
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Vaddor - Zul'jin"] = "Vaddor - Zul'jin",
+		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
+		["Brokehorn - Zul'jin"] = "Brokehorn - Zul'jin",
+		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
+		["Goramor - Runetotem"] = "Goramor - Runetotem",
+		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
+		["Gangus - Runetotem"] = "Gangus - Runetotem",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Malivant - Dalaran"] = "Malivant - Dalaran",
+		["Urbul - Zul'jin"] = "Urbul - Zul'jin",
+		["Claugh - Runetotem"] = "Claugh - Runetotem",
+		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
+		["Datgorg - Zul'jin"] = "Datgorg - Zul'jin",
+		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Brotuss - Zul'jin"] = "Brotuss - Zul'jin",
+		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
+		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
+		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Sinh - Dalaran"] = "Sinh - Dalaran",
+		["Migimong - Runetotem"] = "Migimong - Runetotem",
+		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
+		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Thromar - Dalaran"] = "Thromar - Dalaran",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
+		["Tynster - Dalaran"] = "Tynster - Dalaran",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
+		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
+		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
+		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
 	},
 	["global"] = {
 		["luiconfig"] = {
@@ -11916,7 +11961,7 @@ LUIDB = {
 					["mirrorbar"] = 1,
 				},
 			},
-			["Narisaric - Dalaran"] = {
+			["Fantastiburo - Argent Dawn"] = {
 				["IsConfigured"] = true,
 				["Versions"] = {
 					["raidmenu"] = 2.4,
@@ -11932,199 +11977,22 @@ LUIDB = {
 					["mirrorbar"] = 1,
 				},
 			},
-			["Serbitechna - Darkspear"] = {
+			["Vancard - Zul'jin"] = {
 				["IsConfigured"] = true,
 				["Versions"] = {
 					["raidmenu"] = 2.4,
 					["swing"] = 2,
 					["RaidMenu"] = true,
-					["interrupt"] = 2,
 					["threatbar"] = 2,
 					["Auras"] = 2,
 					["lui"] = 3403,
-					["Micromenu"] = 1.5,
+					["mirrorbar"] = 1,
 					["bars"] = 2.4,
 					["omen"] = 3300,
-					["mirrorbar"] = 1,
+					["Micromenu"] = 1.5,
 				},
 			},
 			["Sinh - Dalaran"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Dialdaas - Darkspear"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Jingojaggot - Zul'jin"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Mulmok - Argent Dawn"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Vadder - Argent Dawn"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Tynster - Dalaran"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Tyran - Argent Dawn"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Tyrannithal - Zul'jin"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Cowtastraphy - Argent Dawn"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Thromar - Dalaran"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Shathiel - Darkspear"] = {
-				["IsConfigured"] = true,
-				["Versions"] = {
-					["raidmenu"] = 2.4,
-					["swing"] = 2,
-					["RaidMenu"] = true,
-					["interrupt"] = 2,
-					["threatbar"] = 2,
-					["Auras"] = 2,
-					["lui"] = 3403,
-					["Micromenu"] = 1.5,
-					["bars"] = 2.4,
-					["omen"] = 3300,
-					["mirrorbar"] = 1,
-				},
-			},
-			["Beeronimo - Dalaran"] = {
 				["IsConfigured"] = true,
 				["Versions"] = {
 					["raidmenu"] = 2.4,
@@ -12156,22 +12024,199 @@ LUIDB = {
 					["mirrorbar"] = 1,
 				},
 			},
-			["Vancard - Zul'jin"] = {
+			["Jingojaggot - Zul'jin"] = {
 				["IsConfigured"] = true,
 				["Versions"] = {
 					["raidmenu"] = 2.4,
 					["swing"] = 2,
 					["RaidMenu"] = true,
+					["interrupt"] = 2,
 					["threatbar"] = 2,
 					["Auras"] = 2,
 					["lui"] = 3403,
-					["mirrorbar"] = 1,
+					["Micromenu"] = 1.5,
 					["bars"] = 2.4,
 					["omen"] = 3300,
-					["Micromenu"] = 1.5,
+					["mirrorbar"] = 1,
 				},
 			},
-			["Fantastiburo - Argent Dawn"] = {
+			["Shathiel - Darkspear"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Vadder - Argent Dawn"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Thromar - Dalaran"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Tyran - Argent Dawn"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Cowtastraphy - Argent Dawn"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Tyrannithal - Zul'jin"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Tynster - Dalaran"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Mulmok - Argent Dawn"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Beeronimo - Dalaran"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Dialdaas - Darkspear"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Serbitechna - Darkspear"] = {
+				["IsConfigured"] = true,
+				["Versions"] = {
+					["raidmenu"] = 2.4,
+					["swing"] = 2,
+					["RaidMenu"] = true,
+					["interrupt"] = 2,
+					["threatbar"] = 2,
+					["Auras"] = 2,
+					["lui"] = 3403,
+					["Micromenu"] = 1.5,
+					["bars"] = 2.4,
+					["omen"] = 3300,
+					["mirrorbar"] = 1,
+				},
+			},
+			["Narisaric - Dalaran"] = {
 				["IsConfigured"] = true,
 				["Versions"] = {
 					["raidmenu"] = 2.4,
@@ -12188,51 +12233,6 @@ LUIDB = {
 				},
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Vaddor - Zul'jin"] = "Vaddor - Zul'jin",
-		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
-		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
-		["Brokehorn - Zul'jin"] = "Brokehorn - Zul'jin",
-		["Shaewong - Dalaran"] = "Shaewong - Dalaran",
-		["Goramor - Runetotem"] = "Goramor - Runetotem",
-		["Shaekhan - Zul'jin"] = "Shaekhan - Zul'jin",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Bathal - Argent Dawn"] = "Bathal - Argent Dawn",
-		["Gangus - Runetotem"] = "Gangus - Runetotem",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-		["Malivant - Dalaran"] = "Malivant - Dalaran",
-		["Urbul - Zul'jin"] = "Urbul - Zul'jin",
-		["Claugh - Runetotem"] = "Claugh - Runetotem",
-		["Tyriinid - Dalaran"] = "Tyriinid - Dalaran",
-		["Datgorg - Zul'jin"] = "Datgorg - Zul'jin",
-		["Panboozled - Runetotem"] = "Panboozled - Runetotem",
-		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
-		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Zulbathal - Zul'jin"] = "Zulbathal - Zul'jin",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Brotuss - Zul'jin"] = "Brotuss - Zul'jin",
-		["Brewnheimer - Darkspear"] = "Brewnheimer - Darkspear",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Gillbourn - Runetotem"] = "Gillbourn - Runetotem",
-		["Narisaric - Dalaran"] = "Narisaric - Dalaran",
-		["Serbitechna - Darkspear"] = "Serbitechna - Darkspear",
-		["Sinh - Dalaran"] = "Sinh - Dalaran",
-		["Dialdaas - Darkspear"] = "Dialdaas - Darkspear",
-		["Jingojaggot - Zul'jin"] = "Jingojaggot - Zul'jin",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
-		["Tynster - Dalaran"] = "Tynster - Dalaran",
-		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
-		["Tyrannithal - Zul'jin"] = "Tyrannithal - Zul'jin",
-		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
-		["Thromar - Dalaran"] = "Thromar - Dalaran",
-		["Shathiel - Darkspear"] = "Shathiel - Darkspear",
-		["Beeronimo - Dalaran"] = "Beeronimo - Dalaran",
-		["Migimong - Runetotem"] = "Migimong - Runetotem",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-		["Fantastiburo - Argent Dawn"] = "Fantastiburo - Argent Dawn",
 	},
 	["profiles"] = {
 		["Vaddor - Zul'jin"] = {
@@ -12577,7 +12577,12 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Narisaric - Dalaran"] = {
+		["Argent Dawn"] = {
+			["modules"] = {
+				["Merchant"] = false,
+			},
+		},
+		["Vancard - Zul'jin"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12596,26 +12601,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Serbitechna - Darkspear"] = {
-			["Map"] = {
-				["Enable"] = false,
-			},
-			["General"] = {
-				["HideErrors"] = true,
-			},
-			["Nameplates"] = {
-				["Enable"] = false,
-			},
-			["Tooltip"] = {
-				["Enable"] = false,
-			},
-			["modules"] = {
-				["Merchant"] = false,
-				["Cooldown"] = false,
-				["WorldMap"] = false,
-			},
-		},
-		["Dialdaas - Darkspear"] = {
+		["Migimong - Runetotem"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12824,7 +12810,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Tyrann - Zul'jin"] = {
+		["Urbul - Zul'jin"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12881,7 +12867,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Towel-Monk"] = {
+		["Jingojaggot - Zul'jin"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12900,7 +12886,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Tynster - Dalaran"] = {
+		["Vadder - Argent Dawn"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12976,7 +12962,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Vadder - Argent Dawn"] = {
+		["Tynster - Dalaran"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12995,7 +12981,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Jingojaggot - Zul'jin"] = {
+		["Towel-Monk"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -13016,7 +13002,7 @@ LUIDB = {
 		},
 		["Default"] = {
 		},
-		["Urbul - Zul'jin"] = {
+		["Tyrann - Zul'jin"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -13054,7 +13040,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Migimong - Runetotem"] = {
+		["Dialdaas - Darkspear"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -13073,7 +13059,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Vancard - Zul'jin"] = {
+		["Serbitechna - Darkspear"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -13092,9 +13078,23 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Argent Dawn"] = {
+		["Narisaric - Dalaran"] = {
+			["Map"] = {
+				["Enable"] = false,
+			},
+			["General"] = {
+				["HideErrors"] = true,
+			},
+			["Nameplates"] = {
+				["Enable"] = false,
+			},
+			["Tooltip"] = {
+				["Enable"] = false,
+			},
 			["modules"] = {
 				["Merchant"] = false,
+				["Cooldown"] = false,
+				["WorldMap"] = false,
 			},
 		},
 	},

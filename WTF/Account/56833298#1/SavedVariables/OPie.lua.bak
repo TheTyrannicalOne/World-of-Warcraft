@@ -16,9 +16,9 @@ OneRing_Config = {
 				["RaidSymbols"] = false,
 				["OPieTracking"] = false,
 				["HunterShots"] = false,
-				["OPieAutoQuest"] = false,
-				["OPieTrinkets"] = false,
 				["WorldMarkers"] = false,
+				["OPieTrinkets"] = false,
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},
@@ -26,39 +26,39 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Mounts"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABueoDKPMqf",
+					["id"] = 150544,
 				}, -- [1]
 				{
-					["id"] = 122708,
 					["sliceToken"] = "ABueoDKPMq3",
+					["id"] = 122708,
 				}, -- [2]
 				{
-					["id"] = 118089,
 					["sliceToken"] = "ABueoDKPMqd",
+					["id"] = 118089,
 				}, -- [3]
 				{
-					["id"] = 98718,
 					["sliceToken"] = "ABue3Apyc4e",
+					["id"] = 98718,
 				}, -- [4]
 				{
-					["id"] = 64731,
 					["sliceToken"] = "ABueoDKPMqs",
+					["id"] = 64731,
 				}, -- [5]
 				{
-					["id"] = 229388,
 					["sliceToken"] = "ABue3P0AP5b",
+					["id"] = 229388,
 				}, -- [6]
 				{
-					["id"] = 245725,
 					["sliceToken"] = "ABue3P0AP5v",
+					["id"] = 245725,
 				}, -- [7]
 				{
-					["id"] = 75973,
 					["sliceToken"] = "ABueoDKPMqa",
+					["id"] = 75973,
 				}, -- [8]
-				["save"] = true,
 				["name"] = "Mounts",
+				["save"] = true,
 				["hotkey"] = "ALT-Q",
 			},
 			["Utilities"] = {
@@ -92,8 +92,8 @@ OneRing_Config = {
 					128636, -- [2]
 					["sliceToken"] = "ABue3Apyc41",
 				}, -- [6]
-				["save"] = true,
 				["name"] = "Utilities",
+				["save"] = true,
 				["hotkey"] = "ALT-E",
 			},
 			["Mounts1"] = {
@@ -109,10 +109,10 @@ OneRing_Config = {
 					["id"] = 64731,
 					["sliceToken"] = "ABueoFiE/rt",
 				}, -- [3]
-				["limit"] = "Serbitechna-Darkspear",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Serbitechna-Darkspear",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

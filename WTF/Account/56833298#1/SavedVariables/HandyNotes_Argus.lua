@@ -8,13 +8,13 @@ HandyNotesArgusDB = {
 		["Shanyt - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
-		["Vancard - Zul'jin"] = {
+		["LUI-Towelliee"] = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
 		["Default"] = {
 		},
-		["LUI-Towelliee"] = {
+		["Vancard - Zul'jin"] = {
 		},
 	},
 }
