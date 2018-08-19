@@ -1,82 +1,76 @@
-tag 75182e9d2473496710ea03580c02a5b883c94d85 8.0.1.7
+tag a8efe3240619d2fd69ff32bf7f134b91489adbcc 8.0.1.8
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Sat Aug 18 13:36:34 2018 -0500
+Date:	Sun Aug 19 13:12:55 2018 -0500
 
-commit 683737e2f08c0e46a6940f559fd953c26579b37b
+commit 2849a294da2a766c346271e2b52d16eb6cb4f9fb
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 13:35:25 2018 -0500
+Date:   Sun Aug 19 12:02:25 2018 -0500
 
-    Remove all support for vignette names, replacing valid instances with vignette IDs.
+    Add data for NPCs in Tiragarde Sound.
 
-commit dae04ff2b452c0dd34b06f5a5f4921ca647ccdac
+commit 7d960b249a64246c10fab60600452ae26ad1ed32
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 10:55:00 2018 -0500
+Date:   Sun Aug 19 09:30:14 2018 -0500
 
-    Add more data for Tiragarde Sound and Vol'dun NPCs.
+    Change missing questID check to not ignore the npc if it has an achievementID assigned. Instead, report missing questIDs if the npc lacks both a questID and  an achievementQuestID.
 
-commit d4ed6217725f28af0b74f76584b4786e2fb02a5c
+commit 3d260874326009ac852befc34c31dea6bf1899ac
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 10:35:50 2018 -0500
+Date:   Sun Aug 19 09:24:50 2018 -0500
 
-    Finish addition of initial data for Stormsong Valley NPCs.
+    Remove support for the Shanty Raid achievement. While it was a somewhat fun idea, only two of the six shanties were carried by NPCs, and both of them already belonged to other achievements; that isn't reason enough to add support for multiple achievements to NPCs.
 
-commit d4db7354c914b5ac72c5b13c70591892e2bc84c3
+commit 0bcc9ee5fb4c04903a6cbd882a0399c134f15579
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 09:06:30 2018 -0500
+Date:   Sun Aug 19 07:18:21 2018 -0500
 
-    Add support for the Sabertron Assemble and Shanty Raid achievements.
+    Fold body of second iteration into the first - we already have the NPC object when iterating over Maps, so ignoring it only to then iterate over NPCs to do stuff to it is insane.
 
-commit 694a31cc60a564a1b8f4a17baaa76ad9d84b381d
+commit c3dbc98e97b4737c3baea2c0f42bdb582acda719
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 09:05:53 2018 -0500
+Date:   Sun Aug 19 06:57:15 2018 -0500
 
-    Fix format for achievement debug output.
+    Check mapID before looping to check for quest assignments instead of the other way around in order to avoid the appearance of brain damage.
 
-commit a4d8fadb40eac6e1b6d616e74ff48bc3c389af5e
+commit c0fca137f2fbd77a5c93b7ce3d1e69a376942f90
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 08:11:42 2018 -0500
+Date:   Sun Aug 19 04:48:39 2018 -0500
 
-    Place KulTiras.lua files in the correct directories; they were backward.
+    Remove the last vestiges of the vignetteName localization code.
 
-commit 8a72ef78cec2c3966a1ba0a2e2c1b1021898b66f
+commit e89df8c5acf43bc0407a8007212ebd641918ccca
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 08:09:12 2018 -0500
+Date:   Sun Aug 19 04:47:58 2018 -0500
 
-    Remove support for multiple vignettIDs - the one usecase I had for it was invalid.
+    Add npcIDs for Vengeful Dead, Manifested Hate, and Strange Mushroom Ring to the Drustvar map data.
 
-commit a8bfbdde0a75c5575b7065157b3eb8aa6888f21a
+commit 061c1e8071cf957e73928e870dde93069ec950a3
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 08:07:56 2018 -0500
+Date:   Sun Aug 19 04:46:54 2018 -0500
 
-    Add some missing NPCs and data for Kul Tiras and Zandalar.
+    Add data for several NPCs in Zandalar.
 
-commit 85d1435ed0b048494e4c36980ee8ff10e50f2e1a
+commit f0d3a9298def7bd3bd8080372ac9286dbec33f99
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 06:26:35 2018 -0500
+Date:   Sun Aug 19 04:45:56 2018 -0500
 
-    Refactor achievement initialization code to be more resilient and simplified. NPCs now require an achievementQuestID to be properly attributed; this also allows for repeatable quests to be registered to the NPC via the old questID. NPCs will now display their achievement criteria name in parenthesis if it differs from their actual name.
+    mapData => map
 
-commit 9011eaa0c1ca2f44bf2ba7d2418298e5ae476ab7
+commit cff83c52a7ef41e788d1cfe9bed600ef18c736ae
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 05:41:53 2018 -0500
+Date:   Sun Aug 19 04:45:30 2018 -0500
 
-    Remove duplicate entry for Tideclaw.
+    Fix several incorrect questIDs and erroneous factionGroup settings, add vignetteIDs where appropriate, and remove all World Quests save for a very few where that is the only time the NPC spawns - it was an ill-conceived idea that only served to have NPCs alert continually until said quest was back up and subsequently completed.
 
-commit c37879369c1b3fc9f7aafb92dd5959d0a9c1a958
+commit f4fd5f15eb8e0e7123c8e5fd18863f150331a3bc
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 18 05:40:47 2018 -0500
+Date:   Sun Aug 19 04:32:01 2018 -0500
 
-    Add Zujothgul to Nazmir
+    Add Strange Mushroom Ring, Doc Marrtens, and Jakala the Cruel to Stormsong Valley.
 
-commit e23d1e021b323e71c1de2e5255c638944ffc6b32
+commit 13c9f69ef56fe7f70db82c84f95aa9f358225019
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Aug 17 11:10:05 2018 -0500
+Date:   Sun Aug 19 04:21:53 2018 -0500
 
-    Fix map entries for Westfall and Wetlands. Fixes https://www.wowace.com/projects/npcscan/issues/243
-
-commit 8bad7acf7a411c4e7cb34bc859cb9c45575ccbf8
-Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Aug 17 11:08:24 2018 -0500
-
-    Handle search cases where a map has not been assigned a name. Fixes https://www.wowace.com/projects/npcscan/issues/235
+    Add Vengeful Dead (Ancient Sarcophagus) and Manifested Hate (Seething Cache) for the Adventurer of Drustvar achievement.
 
