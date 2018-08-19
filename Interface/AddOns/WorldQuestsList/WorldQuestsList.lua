@@ -1,4 +1,4 @@
-local VERSION = 76
+local VERSION = 77
 
 --[[
 Special icons for rares, pvp or pet battle quests in list
@@ -218,6 +218,12 @@ LFG Hotfixes
 LFG fixes
 
 Added option to highlight quest for selected factions reputations
+Minor fixes
+
+LFG: no more 'wwwwwww' in searchbox if player is moving
+LFG: leave party popup only for quest groups
+Added shift+right click to expand azerite gear rewards
+Localizations updates by sprider00
 Minor fixes
 ]]
 
@@ -653,62 +659,118 @@ local LOCALE =
 		unlimited = "Unlimited",
 		maxLines = "Max lines",
 	} or
-	(locale == "zhCN" or locale == "zhTW") and {	--by dxlmike, cuihuanyu1986
+	locale == "zhCN" and {	--by sprider00
 		gear = "装备",
-		gold = "黄金",
+		gold = "金币",
 		blood = "萨格拉斯之血",
-		knowledgeTooltip = "** 可在达到下一个神器知识等级后完成",
-		disableArrow = "禁用 箭头",
-		anchor = "插件位置",
-		totalap = "神器能量总数：",
-		totalapdisable = '禁用 "神器能量总数"',
-		timeToComplete = "剩余时间：",
+		knowledgeTooltip = "** 在达到下个神器知识等级后完成",
+		disableArrow = "关闭箭头",
+		anchor = "锚点",
+		totalap = "神器点数: ",
+		totalapdisable = '禁用列表点数汇总',
+		timeToComplete = "剩余: ",
 		bountyIgnoreFilter = "宝箱任务",
-		enigmaHelper = "开启 迷宫助手",
-		barrelsHelper = "开启 欢乐桶助手",
+		enigmaHelper = "开启解密助手",
+		barrelsHelper = "开启欢乐桶助手",
 		honorIgnoreFilter = "PvP 任务",
 		ignoreFilter = "不过滤：",
 		epicIgnoreFilter = '精英任务',
 		wantedIgnoreFilter = "通缉任务", 
-		apFormatSetup = "神器能量数字格式",
-		headerEnable = "开启 标题行",
-		disabeHighlightNewQuests = "禁用 新任务高亮",
+		apFormatSetup = "神器点显示格式",
+		headerEnable = "显示标题栏",
+		disabeHighlightNewQuests = "关闭新任务高亮",
 		distance = "距离",
-		disableBountyIcon = "大使任务不在列表中显示派系图标",
+		disableBountyIcon = "关闭列表中大使任务的阵营图标",
 		arrow = "箭头",
 		invasionPoints = "入侵点",
 		argusMap = "启用阿古斯地图",
-		ignoreList = "Ignore list",
-		addQuestsOpposite = "Add quests from the opposite continent",
-		hideLegion = "Hide quests from Legion",
-		disableArrowMove = "Disable moving",
-		shellGameHelper = "Enable Shell Game Helper",
-		iconsOnMinimap = "Enable icons on General maps",
-		addQuestsArgus = "Add quests from Argus",
-		lfgSearchOption = "Enable LFG search",
-		lfgAutoinvite = "Set autoinvite option on",
-		lfgTypeText = "Type numbers (QuestID) to edit box",
-		lfgLeftButtonClick = "Left Click - find group",
-		lfgLeftButtonClick2 = "Left Click + shift - find group by name",
-		lfgRightButtonClick = "Right Click - create group",
-		lfgDisablePopup = "Disable popup in questarea",
-		lfgDisableRightClickIcons = "Disable right click on map icons",
-		disableRewardIcons = "Enable reward on map icons",
-		mapIconsScale = "Map icons scale",
-		disableRibbon = "Disable ribbon graphic",
-		enableRibbonGeneralMap = "Enable ribbon on general maps",
-		enableArrowQuests = "Enable arrow for regular quests",
-		tryWithQuestID = "Try by quest ID",
-		lfgDisableAll = "Disable all, except LFG",
-		lfgDisableAll2 = "All addon settings will be lost. Disable all options, except LFG?",
-		lfgDisableEyeRight = "Disable eye for quest tracker on right",
-		lfgDisableEyeList = "Hide eye in list",
-		listSize = "List size",
-		topLine = "Top line",
-		bottomLine = "Bottom line",
-		unlimited = "Unlimited",
-		maxLines = "Max lines",
-	} or	
+		ignoreList = "忽略列表",
+		addQuestsOpposite = "相应地图显示任务",
+		hideLegion = "隐藏军团空袭任务",
+		disableArrowMove = "锁定位置",
+		shellGameHelper = "启用ShellGame助手",
+		iconsOnMinimap = "地图上显示任务图标",
+		addQuestsArgus = "列表中添加阿古斯任务",
+		lfgSearchOption = "启用LFG搜索",
+		lfgAutoinvite = "自动邀请选项",
+		lfgTypeText = "任务ID类型",
+		lfgLeftButtonClick = "查找(按任务名)：点击",
+		lfgLeftButtonClick2 = "查找(按任务ID)：Shift+点击",
+		lfgRightButtonClick = "创建(输入ID/任务名)：右键",
+		lfgDisablePopup = "禁止自动弹出组队框",
+		lfgDisableRightClickIcons = "禁用任务图标右键互动",
+		disableRewardIcons = "图标上显示奖励",
+		mapIconsScale = "任务图标缩放",
+		disableRibbon = "关闭背景条",
+		enableRibbonGeneralMap = "一般任务背景条",
+		enableArrowQuests = "一般任务也启用箭头",
+		tryWithQuestID = "刷新任务ID",
+		lfgDisableAll = "禁用所有LFG",
+		lfgDisableAll2 = "关闭所有LFG选项，LFG设置将丢失",
+		lfgDisableEyeRight = "追踪的任务禁用眼睛",
+		lfgDisableEyeList = "任务列表中禁用眼睛",
+		listSize = "列表大小",
+		topLine = "名称列",
+		bottomLine = "总数列",
+		unlimited = "无限制",
+		maxLines = "列数上限",
+	} or
+	locale == "zhTW" and {	--by sprider00
+		gear = "裝備",
+		gold = "金幣",
+		blood = "薩格拉斯之血",
+		knowledgeTooltip = "** 可在達到下一個神器知識等級後完成",
+		disableArrow = "禁用 箭頭",
+		anchor = "外掛程式位置",
+		totalap = "神兵之力總數：",
+		totalapdisable = '禁用 "神兵之力總數"',
+		timeToComplete = "剩餘時間：",
+		bountyIgnoreFilter = "寶箱任務",
+		enigmaHelper = "開啟迷宮助手",
+		barrelsHelper = "開啟桶樂會助手",
+		honorIgnoreFilter = "PvP 任務",
+		ignoreFilter = "不過濾：",
+		epicIgnoreFilter = '精英任務',
+		wantedIgnoreFilter = "通緝任務", 
+		apFormatSetup = "神兵之力數位格式",
+		headerEnable = "開啟 標題行",
+		disabeHighlightNewQuests = "禁用新任務高亮",
+		distance = "距離",
+		disableBountyIcon = "大使任務不在清單中顯示派系圖示",
+		arrow = "箭頭",
+		invasionPoints = "入侵點",
+		argusMap = "啟用阿古斯地圖",
+		ignoreList = "忽略列表",
+		addQuestsOpposite = "顯示對面地圖的任務",
+		hideLegion = "隱藏軍團入侵的任務",
+		disableArrowMove = "鎖定箭頭位置",
+		shellGameHelper = "開啟龜殼遊戲助手",
+		iconsOnMinimap = "大地圖上顯示任務圖示",
+		addQuestsArgus = "顯示阿古斯的任務",
+		lfgSearchOption = "啟用預組搜索",
+		lfgAutoinvite = "自動邀請設定",
+		lfgTypeText = "輸入任務ID",
+		lfgLeftButtonClick = "左鍵 - 尋找隊伍（任務ID）",
+		lfgLeftButtonClick2 = "SHIFT + 左鍵 - 尋找隊伍（任務名稱）",
+		lfgRightButtonClick = "右鍵 - 編組隊伍",
+		lfgDisablePopup = "禁止自動彈出組隊框架",
+		lfgDisableRightClickIcons = "禁用任務圖示右鍵互動",
+		disableRewardIcons = "地圖圖標顯示獎勵",
+		mapIconsScale = "地圖圖標大小",
+		disableRibbon = "禁用背景條",
+		enableRibbonGeneralMap = "大地圖圖標上顯示背景條",
+		enableArrowQuests = "一般任務啟用箭頭",
+		tryWithQuestID = "刷新任務ID",
+		lfgDisableAll = "禁用所有設定，除了預組",
+		lfgDisableAll2 = "所有設定將會丟失。確定禁用所有設定，除了預組？",
+		lfgDisableEyeRight = "追蹤任務禁用眼睛",
+		lfgDisableEyeList = "任務列表禁用眼睛",
+		listSize = "列表大小",
+		topLine = "名稱列",
+		bottomLine = "總數列",
+		unlimited = "無限制",
+		maxLines = "列數上限",
+	} or 
 	{
 		gear = "Gear",
 		gold = "Gold",
@@ -1875,6 +1937,15 @@ local function WorldQuestList_LineReward_OnClick(self,button)
 			end
 		end
 	elseif button == "RightButton" then
+		if ( IsModifiedClick("EXPANDITEM") ) then
+			local link = self:GetParent().rewardLink
+			if link and C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(link) then
+				OpenAzeriteEmpoweredItemUIFromLink(link)
+				return
+			end
+		end
+
+
 		WorldQuestList_Line_OnClick(self:GetParent(),"RightButton")
 	end
 end
@@ -6530,6 +6601,9 @@ function WQL_LFG_Search(questID)
 	edit:SetPoint("TOP",QuestCreationBox,"TOP",0,-50)
 	edit.Instructions:SetText(questID)
 	edit:SetFocus()
+	if IsPlayerMoving() then
+		edit:ClearFocus()
+	end
 	
 	edit.WQL_questID = questID
 	
@@ -6818,6 +6892,12 @@ QuestCreationBox:SetScript("OnEvent",function (self,event,arg1,arg2)
 		--local name = select(5,C_LFGList.GetActiveEntryInfo())
 		--if name and name == tostring(arg1) and (not QuestCreationBox:IsVisible() or (QuestCreationBox.type ~= 1)) then
 		if C_LFGList.GetActiveEntryInfo() and QuestUtils_IsQuestWorldQuest(arg1) and CheckQuestPassPopup(arg1) and (not QuestCreationBox:IsVisible() or (QuestCreationBox.type ~= 1 and QuestCreationBox.type ~= 4) or (QuestCreationBox.type == 1 and QuestCreationBox.questID == arg1) or (QuestCreationBox.type == 4 and QuestCreationBox.questID == arg1)) then
+			local _, activityID = C_LFGList.GetActiveEntryInfo()
+			local _, _, categoryID = C_LFGList.GetActivityInfo(activityID)
+			if categoryID ~= 1 then
+				return
+			end
+			
 			QuestCreationBox.Text1:SetText("WQL")
 			QuestCreationBox.Text2:SetText("")
 			QuestCreationBox.PartyLeave:Show()
@@ -7294,7 +7374,7 @@ do
 							obj.WQL_iconTopRight:SetAtlas("worldquest-icon-pvp-ffa")
 							obj.WQL_iconTopRight.curr = "worldquest-icon-pvp-ffa"
 						end
-					elseif worldQuestType == LE.LE_QUEST_TAG_TYPE_PET_BATTLE and not (iconTexture or iconAtlas or iconVirtual) then
+					elseif worldQuestType == LE.LE_QUEST_TAG_TYPE_PET_BATTLE and (iconTexture or iconAtlas) then
 						if obj.WQL_iconTopRight.curr ~= "worldquest-icon-petbattle" then
 							obj.WQL_iconTopRight:SetAtlas("worldquest-icon-petbattle")
 							obj.WQL_iconTopRight.curr = "worldquest-icon-petbattle"

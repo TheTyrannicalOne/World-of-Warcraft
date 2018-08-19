@@ -1,5 +1,69 @@
 Changes since tag 8.0.3
 
+commit 6494138abfd523b737a1be434eebad2fd762b253
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 19 11:11:54 2018 +0200
+
+    Omega via svn r17708:
+    Add new filter option to just completely disable all trash warnings in normal and heroic 5 man dungeons
+
+commit 6990e61a8b122d7d96ebbf46edb45d6e51759e7e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 19 10:53:40 2018 +0200
+
+    Omega via svn r17707:
+    Fix remaining adds for unbound
+
+commit d116f8dda04e6d0d54766cdda791540f83b9976e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 19 08:30:20 2018 +0200
+
+    Omega via svn r17706:
+    Fixed spam for electroshock
+    changed interrupt warning on tidesage council and made off by default, since it conflicts with strategy
+    Kr Update
+
+commit 0280124da45410286613696afa9f538bc07ef832
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 19 03:43:27 2018 +0200
+
+    Omega via svn r17705:
+    Push a voice pack fix
+    Pushed some failsafe antispams for some SoS warnings
+
+commit 04d41677998281a108f797f2c5992763934e92e1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Aug 18 12:14:17 2018 +0200
+
+    Omega via svn r17704:
+    Added Transfusion trash warning to Atal Dazar
+    Fixed interrupt warnings showing ?\226?\128?\156unknown?\226?\128?\157 instead of mob name in Atal Dazar
+    Added Goin?\226?\128?\153 Bananas warning to Freehold Trash
+    Added Shattering Toss warning to Freehold Trash
+    Fixed RP timer on freehold trash (blizzard corrected typo for Gurgthok)
+    Added Quake Warning to Azerokk in MOTHERLOAD
+    Updated timers for all bosses in MOTHERLOAD
+    Fixed creature ID for 3/4 bosses in MOTHERLOAD so they once again report health % in status messages and wipes
+    Fixed Footbomb launcher warning on Crowd Pummeler
+    Improved warnings for Homing Missile and Drill Smash on Mogul Razzdunk in MOTHERLOAD
+    Added new warning for Heartseeker to mogul razzdunk in MOTHERLOAD
+    Added Trash warning for Cover to MOTHERLOAD trash
+    Added Trash warning for Earth Shield to MOTHERLOAD trash
+    Added trash warning for Furious Quake to MOTHERLOAD trash
+    Fixed some bad timers on Goraktul that changed since beta in waycrest Manor
+    Re-added interrupt warning and updated interrupt timer on Goraktul in Waycrest Manor, since interrupts on dark lightning work again during the encounter.
+    Added Soul Volley trash warning to Waycrest Manor
+    Added Decaying Touch Warning to waycrest manor
+
+commit 69df8486af346dd8f21db7b327f2f4e57709055b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Aug 18 07:20:23 2018 +0200
+
+    Omega via svn r17703:
+    Fixed crowd pummeler spam
+    Fixed Alunza health reporting
+    Fixed trio engaging from trash do to blizzard firing encounter_start for entryway trash for some reason.
+
 commit 7283410d614da2add47d526d3d90bf93cd080304
 Author: subversion <svn@deadlybossmods.com>
 Date:   Thu Aug 16 08:51:10 2018 +0200

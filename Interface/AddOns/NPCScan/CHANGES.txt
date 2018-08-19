@@ -1,16 +1,82 @@
-tag 59f9b374c1a8349b7915d84bc50bb4a3c46a8c15 8.0.1.6
+tag 75182e9d2473496710ea03580c02a5b883c94d85 8.0.1.7
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Fri Aug 17 10:49:36 2018 -0500
+Date:	Sat Aug 18 13:36:34 2018 -0500
 
-commit edbb718086b0846ba169135f5a19d455d3053280
+commit 683737e2f08c0e46a6940f559fd953c26579b37b
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Aug 17 10:49:12 2018 -0500
+Date:   Sat Aug 18 13:35:25 2018 -0500
 
-    Add vignetteID for Urn of Agussu.
+    Remove all support for vignette names, replacing valid instances with vignette IDs.
 
-commit 35ce17a64d0c1c43204b3160b5dc1063aaf8a5cb
+commit dae04ff2b452c0dd34b06f5a5f4921ca647ccdac
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Fri Aug 17 10:48:34 2018 -0500
+Date:   Sat Aug 18 10:55:00 2018 -0500
 
-    Fix library load ordering.
+    Add more data for Tiragarde Sound and Vol'dun NPCs.
+
+commit d4ed6217725f28af0b74f76584b4786e2fb02a5c
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 10:35:50 2018 -0500
+
+    Finish addition of initial data for Stormsong Valley NPCs.
+
+commit d4db7354c914b5ac72c5b13c70591892e2bc84c3
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 09:06:30 2018 -0500
+
+    Add support for the Sabertron Assemble and Shanty Raid achievements.
+
+commit 694a31cc60a564a1b8f4a17baaa76ad9d84b381d
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 09:05:53 2018 -0500
+
+    Fix format for achievement debug output.
+
+commit a4d8fadb40eac6e1b6d616e74ff48bc3c389af5e
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 08:11:42 2018 -0500
+
+    Place KulTiras.lua files in the correct directories; they were backward.
+
+commit 8a72ef78cec2c3966a1ba0a2e2c1b1021898b66f
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 08:09:12 2018 -0500
+
+    Remove support for multiple vignettIDs - the one usecase I had for it was invalid.
+
+commit a8bfbdde0a75c5575b7065157b3eb8aa6888f21a
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 08:07:56 2018 -0500
+
+    Add some missing NPCs and data for Kul Tiras and Zandalar.
+
+commit 85d1435ed0b048494e4c36980ee8ff10e50f2e1a
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 06:26:35 2018 -0500
+
+    Refactor achievement initialization code to be more resilient and simplified. NPCs now require an achievementQuestID to be properly attributed; this also allows for repeatable quests to be registered to the NPC via the old questID. NPCs will now display their achievement criteria name in parenthesis if it differs from their actual name.
+
+commit 9011eaa0c1ca2f44bf2ba7d2418298e5ae476ab7
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 05:41:53 2018 -0500
+
+    Remove duplicate entry for Tideclaw.
+
+commit c37879369c1b3fc9f7aafb92dd5959d0a9c1a958
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 18 05:40:47 2018 -0500
+
+    Add Zujothgul to Nazmir
+
+commit e23d1e021b323e71c1de2e5255c638944ffc6b32
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Aug 17 11:10:05 2018 -0500
+
+    Fix map entries for Westfall and Wetlands. Fixes https://www.wowace.com/projects/npcscan/issues/243
+
+commit 8bad7acf7a411c4e7cb34bc859cb9c45575ccbf8
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Fri Aug 17 11:08:24 2018 -0500
+
+    Handle search cases where a map has not been assigned a name. Fixes https://www.wowace.com/projects/npcscan/issues/235
 
