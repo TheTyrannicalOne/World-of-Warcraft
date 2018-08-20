@@ -1,30 +1,12 @@
-tag 29e95b0784697299b22e29205aee20f8ffadfdef 1.7.0
+tag f422b3105033a58805a295599d6dda681a1861be 1.7.2
 Author:	Alar of Runetotem <alar@aspide.it>
-Date:	Sat Aug 18 23:56:48 2018 +0200
+Date:	Mon Aug 20 16:37:40 2018 +0200
 
-Feature: fully working under Battle for Azeroth
-Fix: error in autocomplete.lua line 484
+Fix: OrderHallCommander\tutorials.lua:498: '<eof>' expected near 'end'
 
-commit 62eaafb68c84a78b65c772d75986b98c8bafe65f
+commit b8d6ab02b5eebe961a50a38d0aebcbbe786f63fd
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Sat Aug 18 23:56:20 2018 +0200
+Date:   Mon Aug 20 16:37:07 2018 +0200
 
-    Feature: When viewing a mission you can now see all available parties
-    clicking "Analyze"
-    Feature: To manage BFA Missions, please install MissionCommander
-
-commit 91ff690184f587e62c8a172b4c5b16c20fde5a85
-Author: Alar of Runetotem <alar@aspide.it>
-Date:   Thu Aug 16 09:51:23 2018 +0200
-
-    WOW version comment updated
-
-commit 5258def170c09e3d400107c87db0cf96137790e6
-Author: Alar of Runetotem <alar@aspide.it>
-Date:   Sat Jul 21 20:00:47 2018 +0200
-
-    Fix: removed lua error
-    
-    Message: ..\AddOns\OrderHallCommander\core.lua line 196:
-       attempt to call field 'GetArtifactKnowledgeMultiplier' (a nil value)
+    Fix: OrderHallCommander\tutorials.lua:498: '<eof>' expected near 'end'
 

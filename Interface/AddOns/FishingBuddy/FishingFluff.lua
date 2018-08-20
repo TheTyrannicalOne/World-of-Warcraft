@@ -352,10 +352,12 @@ LevelingItems[133742] = {
     ["skill"] = true
 }
 
+FBConstants.UNDERLIGHT_ANGLER = 133755;
+
 local function CastAndThrow()
     if GSB("AutoOpen") then
         -- Only do this is we're using the Underlight Angler
-        if FL:GetMainHandItem(true) == 133755 then
+        if FL:GetMainHandItem(true) == FBConstants.UNDERLIGHT_ANGLER then
             for id,info in pairs(LevelingItems) do
                 if GetItemCount(id) > 0 then
                     local rank, _, skillmax, _ = FL:GetCurrentSkill();

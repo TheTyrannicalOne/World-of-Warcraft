@@ -1,5 +1,43 @@
 Changes since tag 8.0.3
 
+commit 7525db5f9a4f32abd515bcffc82a83a093e971bb
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Aug 20 11:30:52 2018 +0200
+
+    Omega via svn r17713:
+    Raising going bannanas antispam
+
+commit 7e56423a324d888bd1048ee4fc7839c4c1cb62d8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Aug 20 10:56:08 2018 +0200
+
+    Omega via svn r17712:
+    Another shrine of storm update
+    Temple of Sethraliss
+    Underot
+
+commit ee382d7691e9f50b237edbf251b83bbe93ec98c5
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Aug 20 07:37:43 2018 +0200
+
+    Omega via svn r17711:
+    Tol Dagor and Temple of Sethtraliss updates
+
+commit 1d36d284e746666ddd8378812cc83b3f56b365f1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Aug 20 03:17:32 2018 +0200
+
+    Omega via svn r17710:
+    Another pass of fixes to ataldazar, freehold and waycrest manor. new warnings were added, timer updates, and bug fixes
+
+commit 0efffda7b884eba417fb15ee457bfa9d87c0ac23
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 19 22:53:39 2018 +0200
+
+    Omega via svn r17709:
+    Kr Update
+    Fix html coding on English text for new filter option
+
 commit 6494138abfd523b737a1be434eebad2fd762b253
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sun Aug 19 11:11:54 2018 +0200

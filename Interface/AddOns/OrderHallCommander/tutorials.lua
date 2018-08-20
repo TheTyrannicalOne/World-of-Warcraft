@@ -383,7 +383,6 @@ function module:Refresh()
   end
 end
 function module:Hide(this)
-  addon:Print("Hide")
   HelpPlateTooltip.HookedByOHC=nil
   HelpPlateTooltip:SetFrameStrata(platestrata)
   HelpPlate_TooltipHide()
@@ -412,7 +411,6 @@ function addon:NeedsTutorial()
   end
 end
 function module:Show(opening)
-  addon:Print("Show")
   HelpPlateTooltip.HookedByOHC=nil
   if not currentTutorialIndex then currentTutorialIndex=addon.db.global.tutorialStep or 1 end
   local tutorial=tutorials[currentTutorialIndex]
@@ -445,7 +443,6 @@ function module:Show(opening)
   end
 end
 function module:Terminate()
-  addon:Print("Terminate")
   self:Hide()
   addon.db.global.tutorialStep=#tutorials +1
 end
@@ -464,37 +461,38 @@ function module:OnInitialized()
   if not Enhancer then
     Enhancer = CreateFrame("Frame",nil,nil,"GlowBoxTemplate")
   end
-  local status,reason=select(4,GetAddOnInfo("ChampionCommander"))
-  if not status and reason ~="DEMAND_LOADED" then
-    self:SecureHookScript(BFAMissionFrame,"OnShow","AdvertiseCC")
-  end
   self:Hide()
-
+  local dt=C_Calendar.GetDate()
+  if type(addon.db.global.warn03_seen)~="number" then addon.db.global.warn03_seen =0 end
+  if addon.db.global.warn03_seen < 3 then
+    addon.db.global.warn03_seen = addon.db.global.warn03_seen +1
+    local status,reason=select(4,GetAddOnInfo("ChampionCommander"))
+    if not status and reason ~="DEMAND_LOADED" then
+      self:SecureHookScript(BFAMissionFrame,"OnShow","AdvertiseCC")
+    end
+  end
 end
 function module:GetMenuItem(flag)
   return addon:GetMissionlistModule():GetMenuItem(flag)
 end
 function module:AdvertiseCC()
-  local dt=C_Calendar.GetDate()
-  if dt.year==2018 and dt.month==8 then
-    local a1 ="CENTER"
-    local a2="CENTER"
-    local arrow="ArrowLEFT"
-    local glow="ArrowGlowLEFT"
-    local x= 0
-    local y= 0
-    local o=BFAMissionFrame
-    --module:Hide()
-    --if arrow then HelpPlateTooltip[arrow]:Show() end
-    --if glow then HelpPlateTooltip[glow]:Show() end
-    HelpPlateTooltip:SetPoint(a1, o, a2, x, y)
-    HelpPlateTooltip:SetParent(o)
-    HelpPlateTooltip:SetFrameStrata("TOOLTIP")
-    HelpPlateTooltip.Text:SetText("OrderHallCommander has no support for Battle For Azerorth missions\nYou can install\n" .. C("ChampionCommander","Green") .. "\n for them")
-    HelpPlateTooltip.Text:SetJustifyH("CENTER")
-    HelpPlateTooltip:Show()
-    HelpPlateTooltip.LingerAndFade:Play()
-  end
+  local a1 ="CENTER"
+  local a2="CENTER"
+  local arrow="ArrowLEFT"
+  local glow="ArrowGlowLEFT"
+  local x= 0
+  local y= 0
+  local o=BFAMissionFrame
+  --module:Hide()
+  --if arrow then HelpPlateTooltip[arrow]:Show() end
+  --if glow then HelpPlateTooltip[glow]:Show() end
+  HelpPlateTooltip:SetPoint(a1, o, a2, x, y)
+  HelpPlateTooltip:SetParent(o)
+  HelpPlateTooltip:SetFrameStrata("TOOLTIP")
+  HelpPlateTooltip.Text:SetText("OrderHallCommander has no support for Battle For Azerorth missions\nYou can install\n" .. C("ChampionCommander","Green") .. "\n for them")
+  HelpPlateTooltip.Text:SetJustifyH("CENTER")
+  HelpPlateTooltip:Show()
+  HelpPlateTooltip.LingerAndFade:Play()
   self:Unhook(BFAMissionFrame,"OnShow")
 end
 
