@@ -48,10 +48,10 @@ do -- zone:Zone/Sub Zone
 		KR:SetStateConditionalValue("zone", cz or false)
 	end
 	onZoneUpdate()
-	EV.RegisterEvent("ZONE_CHANGED", onZoneUpdate)
-	EV.RegisterEvent("ZONE_CHANGED_INDOORS", onZoneUpdate)
-	EV.RegisterEvent("ZONE_CHANGED_NEW_AREA", onZoneUpdate)
-	EV.RegisterEvent("PLAYER_ENTERING_WORLD", onZoneUpdate)
+	EV.ZONE_CHANGED = onZoneUpdate
+	EV.ZONE_CHANGED_INDOORS = onZoneUpdate
+	EV.ZONE_CHANGED_NEW_AREA = onZoneUpdate
+	EV.PLAYER_ENTERING_WORLD = onZoneUpdate
 end
 do -- me:Player Name/Class
 	KR:SetStateConditionalValue("me", UnitName("player") .. "/" .. playerClassLocal .. "/" .. playerClass)
@@ -78,22 +78,16 @@ do -- known:spell id
 	f:RegisterEvent("PLAYER_ENTERING_WORLD")
 end
 do -- spec:id/name
-	local _, _, cid = UnitClass("player")
-	local function sync()
-		local idx, s = GetSpecialization(), "-1/unspec"
-		if idx then
-			local id, name = GetSpecializationInfoForClassID(cid, idx)
-			if id and name then
-				s = id .. "/" .. name
-			end
+	local s, _, _, cid = nil, UnitClass("player")
+	for i=1,5 do
+		local id, name = GetSpecializationInfoForClassID(cid, i)
+		if id and name then
+			s = ("%s[spec:%d] %d/%d/%s"):format(s and s .. "; " or "", i, i, id, name:lower())
 		end
-		if idx then
-			s = s .. "/" .. idx
-		end
-		KR:SetStateConditionalValue("spec", s)
 	end
-	EV.PLAYER_SPECIALIZATION_CHANGED = sync
-	sync()
+	if s then
+		RegisterStateConditional("spec", "spec", s, false)
+	end
 end
 do -- form:token
 	if playerClass == "DRUID" then
@@ -113,7 +107,8 @@ do -- form:token
 		local function sync()
 			local s = ""
 			for i=1,10 do
-				local _, name = GetShapeshiftFormInfo(i)
+				local _, _, _, fsid = GetShapeshiftFormInfo(i)
+				local name = GetSpellInfo(fsid)
 				s = ("%s[form:%d] %d%s;"):format(s, i,i, map[name] or "")
 			end
 			if curCnd ~= s then
@@ -122,15 +117,14 @@ do -- form:token
 			pending = nil
 			return "remove"
 		end
-		EV.RegisterEvent("PLAYER_LOGIN", sync)
-		EV.RegisterEvent("UPDATE_SHAPESHIFT_FORMS", function()
-			if not InCombatLockdown() then
+		EV.PLAYER_LOGIN = sync
+		function EV.UPDATE_SHAPESHIFT_FORMS()
+			if InCombatLockdown() then
+				pending = pending or EV.RegisterEvent("PLAYER_REGEN_ENABLED", sync) or 1
+			else
 				sync()
-			elseif not pending then
-				pending = 1
-				EV.RegisterEvent("PLAYER_REGEN_ENABLED", sync)
 			end
-		end)
+		end
 	end
 end
 do -- talent:tier.num/name
@@ -150,7 +144,7 @@ do -- talent:tier.num/name
 			KR:SetStateConditionalValue("talent", cur or "")
 		end
 	end
-	EV.RegisterEvent("PLAYER_TALENT_UPDATE", updateTalents)
+	EV.PLAYER_TALENT_UPDATE = updateTalents
 	updateTalents()
 end
 do -- instance:arena/bg/ratedbg/raid/instance/scenario + draenor/pandaria
@@ -159,12 +153,12 @@ do -- instance:arena/bg/ratedbg/raid/instance/scenario + draenor/pandaria
 		[1116]="world/draenor", [1464]="world/draenor", [1191]="world/draenor/ashran/worldpvp",
 		[870]="world/pandaria", [1064]="world/pandaria",
 		[530]="world/outland", [571]="world/northrend",
-		[1220]="world/broken isles",
+		[1220]="world/broken isles", [1669]="world/argus",
 	}
 	for n in ("1158 1331 1159 1152 1330 1153"):gmatch("%d+") do
 		mapTypes[tonumber(n)] = "world/draenor/garrison"
 	end
-	EV.RegisterEvent("PLAYER_ENTERING_WORLD", function()
+	function EV.PLAYER_ENTERING_WORLD()
 		local _, itype, did, _, _, _, _, imid = GetInstanceInfo()
 		if imid and mapTypes[imid] then
 			itype = mapTypes[imid]
@@ -178,7 +172,7 @@ do -- instance:arena/bg/ratedbg/raid/instance/scenario + draenor/pandaria
 			end
 		end
 		KR:SetStateConditionalValue("in", mapTypes[itype] or itype)
-	end)
+	end
 	KR:SetAliasConditional("instance", "in")
 	KR:SetStateConditionalValue("in", "daze")
 end
@@ -186,12 +180,12 @@ do -- petcontrol
 	local hasControl = (playerClass ~= "HUNTER" and playerClass ~= "WARLOCK") or UnitLevel("player") >= 10
 	KR:SetStateConditionalValue("petcontrol", hasControl)
 	if not hasControl then
-		EV.RegisterEvent("PLAYER_LEVEL_UP", function(_, level)
+		function EV.PLAYER_LEVEL_UP(_, level)
 			if level >= 10 then
 				KR:SetStateConditionalValue("petcontrol", "*")
 				return "remove"
 			end
-		end)
+		end
 	end
 end
 do -- outpost
@@ -209,7 +203,7 @@ do -- outpost
 			state = ns
 		end
 	end
-	EV.RegisterEvent("SPELLS_CHANGED", sync)
+	EV.SPELLS_CHANGED = sync
 	sync()
 end
 do -- glyph:(defunct)
@@ -308,8 +302,13 @@ do -- selfbuff:name
 		
 		local at, query = stringArgCache[args], name == "selfbuff" and UnitBuff or UnitDebuff
 		for i=1,#at do
-			if query("player", at[i]) then
-				return true
+			local ati = at[i]
+			local j, r = 2, query("player", 1)
+			while r do
+				if strcmputf8i(r, ati) == 0 then
+					return true
+				end
+				j, r = j + 1, query("player", j)
 			end
 		end
 		
@@ -323,12 +322,18 @@ do -- debuff:name
 		if not args or args == "" then
 			return false
 		end
+		target = target or "target"
 		local at = stringArgCache[args], name == "owndebuff" and "PLAYER" or ""
 		local filter = (name == "owndebuff" or name == "ownbuff") and "PLAYER" or ""
 		local query = (name == "debuff" or name == "owndebuff") and UnitDebuff or UnitBuff
 		for i=1,#at do
-			if query(target, at[i], nil, filter) then
-				return true
+			local ati = at[i]
+			local j, r = 2, query(target, 1, filter)
+			while r do
+				if strcmputf8i(r, ati) == 0 then
+					return true
+				end
+				j, r = j + 1, query(target, j, filter)
 			end
 		end
 		return false
@@ -360,6 +365,7 @@ do -- professions
 	local ct, ot, map = {}, {}, {
 		[197]="tail", [165]="lw", [164]="bs",
 		[171]="alch", [202]="engi", [333]="ench", [744]="jc", [773]="scri",
+		[182]="herb", [794]="arch", [185]="cook", [356]="fish",
 		[20219]="nomeng", [20222]="gobeng",
 	}
 	local function syncInner(id, ...)
@@ -394,7 +400,7 @@ do -- professions
 	for _, v in pairs(map) do
 		KR:SetThresholdConditionalValue(v, false)
 	end
-	for alias, real in ("tailoring:tail leatherworking:lw alchemy:alch engineering:engi enchanting:ench jewelcrafting:jc blacksmithing:bs inscription:scri"):gmatch("(%a+):(%a+)") do
+	for alias, real in ("tailoring:tail leatherworking:lw alchemy:alch engineering:engi enchanting:ench jewelcrafting:jc blacksmithing:bs inscription:scri herbalism:herb archaeology:arch cooking:cook fishing:fish"):gmatch("(%a+):(%a+)") do
 		KR:SetAliasConditional(alias, real)
 	end
 	EV.PLAYER_LOGIN, EV.CHAT_MSG_SKILL = sync, sync
@@ -430,4 +436,99 @@ if playerClass == "HUNTER" then -- pet:stable id; havepet:stable id
 	EV.PLAYER_LOGIN, EV.PET_STABLE_UPDATE, EV.LOCALPLAYER_PET_RENAMED = sync, sync, sync
 else
 	KR:SetStateConditionalValue("havepet", false)
+end
+
+do -- Managed role units
+	local mh = CreateFrame("Frame", nil, nil, "SecureFrameTemplate")
+	SecureHandlerSetFrameRef(mh, "KR", KR:seclib())
+	SecureHandlerExecute(mh, [=[-- MRU_Init_Manager
+		KR, uf, ul, spare = self:GetFrameRef("KR"), newtable(), newtable(), newtable()
+		self:SetAttribute("frameref-KR", nil)
+	]=])
+	local syncUnits = [==[-- MRU_Sync
+		local nl, key, nj, fa = spare, %q, 1
+		ul[key], spare, fa = nl, ul[key], uf[key]
+		for i=1,40 do
+			local u = fa[i]:GetAttribute("unit")
+			if u then
+				nl[i] = u
+			else
+				for j=i,#nl do
+					nl[j] = nil
+				end
+				break
+			end
+		end
+		for i=1,#nl do
+			local u = nl[i]
+			if u ~= playerUnit then
+				KR:RunAttribute("SetAliasUnit", key .. nj, u)
+				nj = nj + 1
+			end
+		end
+		for i=nj,#spare do
+			KR:RunAttribute("SetAliasUnit", key .. i, "raid42")
+		end
+		self:Show()
+	]==]
+	local function SpawnHeader(key, ...)
+		local h = CreateFrame("Frame", nil, nil, "SecureGroupHeaderTemplate")
+		for i=1,40 do
+			local c = CreateFrame("Frame", nil, h, "SecureFrameTemplate")
+			h:SetAttribute("child" .. i, c)
+			SecureHandlerSetFrameRef(mh, "u" .. i, c)
+			KR:SetAliasUnit(key .. i, "raid42")
+		end
+		SecureHandlerExecute(mh, ([[-- MRU_SpawnHeader_Init
+			local a, k = newtable(), %q
+			for i=1,40 do
+				a[i] = self:GetFrameRef("u" .. i)
+				self:SetAttribute("frameref-u" .. i, nil)
+			end
+			uf[k], ul[k] = a, newtable()
+		]]):format(key))
+		local cu = CreateFrame("Frame", nil, h, "SecureFrameTemplate")
+		SecureHandlerWrapScript(cu, "OnHide", mh, syncUnits:format(key))
+		h:SetAttribute("child41", cu)
+		h:SetAttribute("template", "ImpossibleFrameTemplate")
+		h:SetAttribute("templateType", "Frame")
+		h:SetAttribute("showRaid", true)
+		h:SetAttribute("showParty", true)
+		h:SetAttribute("showPlayer", false)
+		h:SetAttribute("groupingOrder", "1,2,3,4,5,6,7,8")
+		h:SetAttribute("sortMethod", "NAME")
+		for i=1, select("#", ...), 2 do
+			local k, v = select(i, ...)
+			h:SetAttribute(k, v)
+		end
+		return h
+	end
+	local ph = CreateFrame("Frame", nil, nil, "SecureGroupHeaderTemplate") do
+		local c = CreateFrame("Frame", nil, ph, "SecureFrameTemplate")
+		ph:SetAttribute("child1", c)
+		SecureHandlerWrapScript(c, "OnAttributeChanged", mh, [=[-- MRU_Player_Change
+			if name ~= "unit" or value == playerUnit then return end
+			playerUnit = value
+			for key, v in pairs(ul) do
+				local nj = 1
+				for i=1,#v do
+					local u = v[i]
+					if u ~= playerUnit then
+						KR:RunAttribute("SetAliasUnit", key .. nj, u)
+						nj = nj + 1
+					end
+				end
+				KR:RunAttribute("SetAliasUnit", key .. nj, "raid42")
+			end
+		]=])
+		ph:SetAttribute("showRaid", true)
+		ph:SetAttribute("showParty", false)
+		ph:SetAttribute("showPlayer", false)
+		ph:SetAttribute("nameList", (UnitName("player")))
+		ph:Show()
+	end
+	SpawnHeader("tank", "roleFilter","TANK"):Show()
+	SpawnHeader("mtank", "roleFilter","MAINTANK"):Show()
+	SpawnHeader("assist", "roleFilter","MAINASSIST"):Show()
+	SpawnHeader("healer", "roleFilter","HEALER"):Show()
 end

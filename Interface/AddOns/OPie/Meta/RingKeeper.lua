@@ -14,9 +14,17 @@ local CLASS, FULLNAME
 local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groundSpellID, airSpellID)
 	local castAlias = {[SLASH_CAST1]=1,[SLASH_CAST2]=1,[SLASH_CAST3]=1,[SLASH_CAST4]=1,[SLASH_USE1]=1,[SLASH_USE2]=1,["#show"]=1,["#showtooltip"]=1,[SLASH_CASTSEQUENCE1]=2,[SLASH_CASTSEQUENCE2]=2,[SLASH_CASTRANDOM1]=3,[SLASH_CASTRANDOM2]=3}
 	local function replaceSpellID(sidlist, prefix)
+		local sr
 		for id, sn in sidlist:gmatch("%d+") do
-			id, sn = id+0, GetSpellInfo(id)
-			if RW:IsSpellCastable(id) then
+			id = id + 0
+			sn, sr = GetSpellInfo(id), GetSpellSubtext(id)
+			local isCastable, castFlag = RW:IsSpellCastable(id)
+			if isCastable then
+				if castFlag == "forced-id-cast" then
+					sn = "spell:" .. id
+				elseif sr and sr ~= "" then
+					sn = sn .. "(" .. sr .. ")"
+				end
 				return prefix .. sn
 			end
 		end
@@ -24,7 +32,7 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 	local replaceMountTag do
 		local skip, gmSid, gmPref, fmSid, fmPref = {[44153]=1, [44151]=1, [61451]=1, [75596]=1, [61309]=1, [169952]=1, [171844]=1, [213339]=1,}
 		local function IsKnownSpell(sid)
-			local sn, sr = GetSpellInfo(sid or 0)
+			local sn, sr = GetSpellInfo(sid or 0), GetSpellSubtext(sid or 0)
 			return GetSpellInfo(sn, sr) ~= nil and sid or (RW:GetCastEscapeAction(sn) and sid)
 		end
 		local function findMount(prefSID, mtype)
@@ -126,7 +134,7 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 			end
 			return value
 		end)
-		local spells = {}
+		local spells, OTHER_SPELL_IDS = {}, {150544, 243819}
 		quantizeLine = genLineParser(function(value)
 			local mark, name = value:match("^%s*(!?)(.-)%s*$")
 			local sid = spells[name:lower()]
@@ -136,9 +144,13 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 		function prepareQuantizer(reuse)
 			if reuse and next(spells) then return end
 			wipe(spells)
-			spells[GetSpellInfo(150544):lower()] = 150544
-			local idm = C_MountJournal.GetMountIDs()
-			local gmi = C_MountJournal.GetMountInfoByID
+			for i=1,#OTHER_SPELL_IDS do
+				local sn = GetSpellInfo(OTHER_SPELL_IDS[i])
+				if sn then
+					spells[sn:lower()] = OTHER_SPELL_IDS[i]
+				end
+			end
+			local gmi, idm = C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs()
 			for i=1, #idm do
 				local _, sid = gmi(idm[i])
 				local sname = GetSpellInfo(sid)
@@ -164,11 +176,21 @@ local RK_ParseMacro, RK_QuantizeMacro do -- +RingKeeper:SetMountPreference(groun
 					if type(n) ~= "string" or not id then
 					elseif st == "SPELL" or st == "FUTURESPELL" then
 						spells[n:lower()] = id
+						local sr = GetSpellSubtext(id)
+						if sr and sr ~= "" then
+							spells[n:lower() .."(" .. sr:lower() .. ")"] = id
+							spells[n:lower() .." (" .. sr:lower() .. ")"] = id
+						end
 					elseif st == "FLYOUT" then
 						for j=1,select(3,GetFlyoutInfo(id)) do
 							local sid, _, _, sname = GetFlyoutSlotInfo(id, j)
 							if sid and type(sname) == "string" then
 								spells[sname:lower()] = sid
+								local sr = GetSpellSubtext(sid)
+								if sr and sr ~= "" then
+									spells[sname:lower() .."(" .. sr:lower() .. ")"] = sid
+									spells[sname:lower() .." (" .. sr:lower() .. ")"] = sid
+								end
 							end
 						end
 					end
@@ -325,11 +347,13 @@ local function unpackABAction(e, s)
 end
 local function RK_SyncRing(name, force, tok)
 	local desc, changed, cid = RK_RingDesc[name], (force == true), RK_CollectionIDs[name]
-	if not RK_IsRelevantRingDescription(desc) then return; end
+	if not RK_IsRelevantRingDescription(desc) then return end
 	tok = tok or AB:GetLastObserverUpdateToken("*")
 	if not force and tok == desc._lastUpdateToken then return end
 	desc._lastUpdateToken = tok
 	
+	local limit = desc.limit
+	desc.sortScope = limit == FULLNAME and 30 or limit == CLASS and 20 or 10
 	if not cid then
 		wipe(sharedCollection)
 		changed, cid = true, AB:CreateActionSlot(nil, nil, "collection", sharedCollection)
@@ -407,6 +431,7 @@ local function RK_SerializeDescription(props)
 		dropUnderscoreKeys(slice)
 	end
 	dropUnderscoreKeys(props)
+	props.sortScope = nil
 	return props
 end
 function EV.PLAYER_REGEN_DISABLED()
@@ -477,7 +502,7 @@ function RingKeeper:GetVersion()
 	return RK_Version, RK_Rev
 end
 function RingKeeper:SetRing(name, desc)
-	assert(type(name) == "string" and (type(desc) == "table" or desc == false), "Syntax: RingKeeper:SetRing(name, descTable or false)", 2);
+	assert(type(name) == "string" and (type(desc) == "table" or desc == false), "Syntax: RingKeeper:SetRing(name, descTable or false)", 2)
 	if not unlocked then
 		queue[name] = desc
 	elseif desc == false then

@@ -1,940 +1,584 @@
-GW_VERSION_STRING = 'GW2_UI v4.2.3'
+local _, GW = ...
+local RoundInt = GW.RoundInt
+local GetSetting = GW.GetSetting
+local SetSetting = GW.SetSetting
+local GetDefault = GW.GetDefault
+local bloodSpark = GW.BLOOD_SPARK
+local CLASS_ICONS = GW.CLASS_ICONS
+local IsFrameModified = GW.IsFrameModified
+local Debug = GW.Debug
 
+GW.VERSION_STRING = "GW2_UI v5.0.7"
 
+local loaded = false
+local forcedMABags = false
 
-GW2UI_SETTINGS = {}
-GW_DEFAULT ={}
-    
-GW_DEFAULT['TARGET_ENABLED'] = true
-GW_DEFAULT['FOCUS_ENABLED'] = true
-GW_DEFAULT['PET_ENABLED'] = true
-GW_DEFAULT['POWERBAR_ENABLED'] = true
-GW_DEFAULT['CHATBUBBLES_ENABLED'] = true
-GW_DEFAULT['NAMEPLATES_ENABLED'] = true
-GW_DEFAULT['MINIMAP_ENABLED'] = true
-GW_DEFAULT['QUESTTRACKER_ENABLED'] = true
-GW_DEFAULT['TOOLTIPS_ENABLED'] = true
-GW_DEFAULT['CHATFRAME_ENABLED'] = true
-GW_DEFAULT['QUESTVIEW_ENABLED'] = true
-GW_DEFAULT['HEALTHGLOBE_ENABLED'] = true
-GW_DEFAULT['PLAYER_BUFFS_ENABLED'] = true
-GW_DEFAULT['ACTIONBARS_ENABLED'] = true
-GW_DEFAULT['BAGS_ENABLED'] = true
-GW_DEFAULT['NPC_CAM_ENABLED'] = false
-GW_DEFAULT['FONTS_ENABLED'] = true
-GW_DEFAULT['CASTINGBAR_ENABLED'] = true
-GW_DEFAULT['HIDEACTIONBAR_BACKGROUND_ENABLED'] = false
-GW_DEFAULT['SHOW_QUESTTRACKER_COMPASS'] = true
-GW_DEFAULT['MINIMAP_HOVER'] = 'NONE'
-GW_DEFAULT['CLASS_POWER'] = true
-GW_DEFAULT['GROUP_FRAMES'] = true
-GW_DEFAULT['PETBAR_ENABLED'] = true
-GW_DEFAULT['PETBAR_LOCKED'] = true
-
-GW_DEFAULT['BUTTON_ASSIGNMENTS'] = true
-
-GW_DEFAULT['HUD_SPELL_SWAP'] = true
-
-
-GW_DEFAULT['BAG_ITEM_SIZE'] = 45
-GW_DEFAULT['BANK_ITEM_SIZE'] = 45
-
-
-GW_DEFAULT['BAG_WIDTH'] = 480
-GW_DEFAULT['BAG_REVERSE_SORT'] = true
-
-GW_DEFAULT['BAG_POSITION'] = {}
-GW_DEFAULT['BAG_POSITION']['point'] = 'RIGHT'
-GW_DEFAULT['BAG_POSITION']['relativePoint'] = 'RIGHT'
-GW_DEFAULT['BAG_POSITION']['xOfs'] = -256
-GW_DEFAULT['BAG_POSITION']['yOfs'] = 256
-
-GW_DEFAULT['BANK_WIDTH'] = 720
-GW_DEFAULT['BANK_REVERSE_SORT'] = false
-
-GW_DEFAULT['BANK_POSITION'] = {}
-GW_DEFAULT['BANK_POSITION']['point'] = 'LEFT'
-GW_DEFAULT['BANK_POSITION']['relativePoint'] = 'LEFT'
-GW_DEFAULT['BANK_POSITION']['xOfs'] = 256
-GW_DEFAULT['BANK_POSITION']['yOfs'] = 256
-
-
-GW_DEFAULT['RAID_CLASS_COLOR'] = false
-GW_DEFAULT['RAID_STYLE_PARTY'] = false
-GW_DEFAULT['RAID_UNIT_FLAGS'] = 'NONE'
-GW_DEFAULT['RAID_UNIT_MARKERS'] = false
-
-    
-GW_DEFAULT['target_HEALTH_VALUE_ENABLED'] = false
-GW_DEFAULT['target_HEALTH_VALUE_TYPE'] = false
-GW_DEFAULT['target_CLASS_COLOR'] = true
-        
-GW_DEFAULT['FADE_BOTTOM_ACTIONBAR'] = true
-GW_DEFAULT['HIDE_CHATSHADOW'] = false
-GW_DEFAULT['HIDE_QUESTVIEW'] = false;
-GW_DEFAULT['USE_CHAT_BUBBLES'] = false;
-GW_DEFAULT['DISABLE_NAMEPLATES'] = false
-GW_DEFAULT['DISABLE_TOOLTIPS'] = false
-GW_DEFAULT['DISABLE_CHATFRAME'] = false
-GW_DEFAULT['CHATFRAME_FADE'] = true
-    
-GW_DEFAULT['target_TARGET_ENABLED'] = true
-GW_DEFAULT['target_DEBUFFS'] = true
-GW_DEFAULT['target_DEBUFFS_FILTER'] = true
-GW_DEFAULT['target_BUFFS'] = true
-GW_DEFAULT['target_BUFFS_FILTER'] = true
-GW_DEFAULT['target_BUFFS_FILTER_ALL'] = false
-
-GW_DEFAULT['focus_TARGET_ENABLED'] = true
-GW_DEFAULT['focus_DEBUFFS'] = true
-GW_DEFAULT['focus_DEBUFFS_FILTER'] = true
-GW_DEFAULT['focus_BUFFS'] = true
-GW_DEFAULT['focus_BUFFS_FILTER'] = true
-GW_DEFAULT['focus_BUFFS_FILTER_ALL'] = false
-
-GW_DEFAULT['focus_HEALTH_VALUE_ENABLED'] = false
-GW_DEFAULT['focus_HEALTH_VALUE_TYPE'] = false
-GW_DEFAULT['focus_CLASS_COLOR'] = true
-                    
-GW_DEFAULT['target_x_position'] = -100
-GW_DEFAULT['target_y_position'] = -100
-
-GW_DEFAULT['focus_x_position'] = -350
-GW_DEFAULT['focus_y_position'] = -100
-
-GW_DEFAULT['multibarleft_x_position'] = -300
-GW_DEFAULT['multibarleft_y_position'] = -0
-    
-GW_DEFAULT['multibarright_x_position'] = -260
-GW_DEFAULT['multibarright_y_position'] = -0
-    
-GW_DEFAULT['multibarleft_pos'] ={}
-GW_DEFAULT['multibarleft_pos']['point'] = 'RIGHT'
-GW_DEFAULT['multibarleft_pos']['relativePoint'] = 'RIGHT'
-GW_DEFAULT['multibarleft_pos']['xOfs'] = -300
-GW_DEFAULT['multibarleft_pos']['yOfs']= 0
-
-GW_DEFAULT['multibarright_pos'] ={}
-GW_DEFAULT['multibarright_pos']['point'] = 'RIGHT'
-GW_DEFAULT['multibarright_pos']['relativePoint'] = 'RIGHT'
-GW_DEFAULT['multibarright_pos']['xOfs'] = -260
-GW_DEFAULT['multibarright_pos']['yOfs']  = 0
-
-GW_DEFAULT['target_pos'] ={}
-GW_DEFAULT['target_pos']['point'] = 'TOP'
-GW_DEFAULT['target_pos']['relativePoint'] = 'TOP'
-GW_DEFAULT['target_pos']['xOfs'] =  -56
-GW_DEFAULT['target_pos']['yOfs']  = -100
-
-GW_DEFAULT['pet_pos'] ={}
-GW_DEFAULT['pet_pos']['point'] = 'BOTTOMLEFT'
-GW_DEFAULT['pet_pos']['relativePoint'] = 'BOTTOM'
-GW_DEFAULT['pet_pos']['xOfs'] =  -372
-GW_DEFAULT['pet_pos']['yOfs']  = 86  
-
-GW_DEFAULT['castingbar_pos'] ={}
-GW_DEFAULT['castingbar_pos']['point'] = 'BOTTOM'
-GW_DEFAULT['castingbar_pos']['relativePoint'] = 'BOTTOM'
-GW_DEFAULT['castingbar_pos']['xOfs'] =  0
-GW_DEFAULT['castingbar_pos']['yOfs']  = 300
- 
-    
-    
-GW_DEFAULT['targettarget_pos'] ={}
-GW_DEFAULT['targettarget_pos']['point'] = 'TOP'
-GW_DEFAULT['targettarget_pos']['relativePoint'] = 'TOP'
-GW_DEFAULT['targettarget_pos']['xOfs'] =  250
-GW_DEFAULT['targettarget_pos']['yOfs']  = -100
-
-
-GW_DEFAULT['focus_pos'] ={}
-GW_DEFAULT['focus_pos']['point'] = 'CENTER'
-GW_DEFAULT['focus_pos']['relativePoint'] = 'CENTER'
-GW_DEFAULT['focus_pos']['xOfs'] =  -350
-GW_DEFAULT['focus_pos']['yOfs']  = 0
-
-    
-GW_DEFAULT['focustarget_pos'] ={}
-GW_DEFAULT['focustarget_pos']['point'] = 'CENTER'
-GW_DEFAULT['focustarget_pos']['relativePoint'] = 'CENTER'
-GW_DEFAULT['focustarget_pos']['xOfs'] =  -80
-GW_DEFAULT['focustarget_pos']['yOfs']  = 0
-
-GW_DEFAULT['MultiBarBottomLeft'] ={}
-GW_DEFAULT['MultiBarBottomLeft']['point'] = 'BOTTOMLEFT'
-GW_DEFAULT['MultiBarBottomLeft']['relativePoint'] = 'BOTTOM'
-GW_DEFAULT['MultiBarBottomLeft']['xOfs'] = -372
-GW_DEFAULT['MultiBarBottomLeft']['yOfs'] = 120
-
-GW_DEFAULT['MultiBarBottomLeft']['size'] = 38
-GW_DEFAULT['MultiBarBottomLeft']['margin'] = 2
-GW_DEFAULT['MultiBarBottomLeft']['ButtonsPerRow'] = 6
-GW_DEFAULT['MultiBarBottomLeft']['hideDefaultBackground'] = true
-    
-GW_DEFAULT['MultiBarBottomRight'] ={}
-GW_DEFAULT['MultiBarBottomRight']['point'] = 'BOTTOMRIGHT'
-GW_DEFAULT['MultiBarBottomRight']['relativePoint'] = 'BOTTOM'
-GW_DEFAULT['MultiBarBottomRight']['xOfs'] = 372
-GW_DEFAULT['MultiBarBottomRight']['yOfs'] = 120
-
-    
-GW_DEFAULT['MultiBarBottomRight']['size'] = 38
-GW_DEFAULT['MultiBarBottomRight']['margin'] = 2
-GW_DEFAULT['MultiBarBottomRight']['ButtonsPerRow'] = 6
-GW_DEFAULT['MultiBarBottomRight']['hideDefaultBackground'] = true
-    
-
-GW_DEFAULT['MultiBarRight'] ={}
-GW_DEFAULT['MultiBarRight']['point'] = 'RIGHT'
-GW_DEFAULT['MultiBarRight']['relativePoint'] = 'RIGHT'
-GW_DEFAULT['MultiBarRight']['xOfs'] = -320
-GW_DEFAULT['MultiBarRight']['yOfs'] = 0
-
-    
-GW_DEFAULT['MultiBarRight']['size'] = 38
-GW_DEFAULT['MultiBarRight']['margin'] = 2
-GW_DEFAULT['MultiBarRight']['ButtonsPerRow'] = 1
-GW_DEFAULT['MultiBarRight']['hideDefaultBackground'] = true
-
-GW_DEFAULT['MultiBarLeft'] ={}
-GW_DEFAULT['MultiBarLeft']['point'] = 'RIGHT'
-GW_DEFAULT['MultiBarLeft']['relativePoint'] = 'RIGHT'
-GW_DEFAULT['MultiBarLeft']['xOfs'] = -368
-GW_DEFAULT['MultiBarLeft']['yOfs'] = 0
-
-    
-GW_DEFAULT['MultiBarLeft']['size'] = 38
-GW_DEFAULT['MultiBarLeft']['margin'] = 2
-GW_DEFAULT['MultiBarLeft']['ButtonsPerRow'] = 1
-GW_DEFAULT['MultiBarLeft']['hideDefaultBackground'] = true
-
-
-GW_DEFAULT['raid_pos'] ={}
-GW_DEFAULT['raid_pos']['point'] = 'TOPLEFT'
-GW_DEFAULT['raid_pos']['relativePoint'] = 'TOPLEFT'
-GW_DEFAULT['raid_pos']['xOfs'] =  65
-GW_DEFAULT['raid_pos']['yOfs']  = -60
-
-GW_DEFAULT['RAID_WIDTH'] = 55
-GW_DEFAULT['RAID_HEIGHT'] = 47
-GW_DEFAULT['RAID_POWER_BARS'] = false
-GW_DEFAULT['RAID_UNITS_PER_COLUMN'] = 5
-GW_DEFAULT['RAID_ONLY_DISPELL_DEBUFFS'] = false
-
-GW_DEFAULT['HUD_SCALE'] = 1
-GW_DEFAULT['MINIMAP_SCALE'] = 170
-GW_DEFAULT['CASTINGBAR_DATA'] = false
-GW_DEFAULT['USE_CHARACTER_WINDOW'] = true
-GW_DEFAULT['USE_SPELLBOOK_WINDOW'] = true
-GW_DEFAULT['USE_TALENT_WINDOW'] = true
-GW_DEFAULT['USE_TALENT_WINDOW_DEV'] = false
-
-
-GW_DEFAULT['USE_BATTLEGROUND_HUD'] = true
-
-
-GW_DEFAULT['ACTIVE_PROFILE'] = nil
-
-GW_DEFAULT['WARNIG_MESSAGE'] ={}
-GW_DEFAULT['WARNIG_MESSAGE']['point'] = 'TOP'
-GW_DEFAULT['WARNIG_MESSAGE']['relativePoint'] = 'TOP'
-GW_DEFAULT['WARNIG_MESSAGE']['xOfs'] =  0
-GW_DEFAULT['WARNIG_MESSAGE']['yOfs']  = 0
-
-
-
-
-local ADDOON_LOADED = false;
-local PLAYER_ENTERING_WORLD = false;
-local SETTINGS_LOADED = false;
-local GW_UI_LOADED = false;
-
-
-GW_MOVABLE_FRAMES ={}
-GW_MOVABLE_FRAMES_REF ={}
-GW_MOVABLE_FRAMES_SETTINGS_KEY ={}
+local MOVABLE_FRAMES = {}
+GW.MOVABLE_FRAMES = MOVABLE_FRAMES
+local MOVABLE_FRAMES_REF = {}
+local MOVABLE_FRAMES_SETTINGS_KEY = {}
 
 local swimAnimation = 0
 local lastSwimState = true
 
-function gwGetActiveProfile()
-    if GW2UI_SETTINGS_DB_03==nil then
-        GW2UI_SETTINGS_DB_03 = {}
-    end
-    return GW2UI_SETTINGS_DB_03['ACTIVE_PROFILE']
+if Profiler then
+    _G.GW_Addon_Scope = GW
 end
 
-function gwSetProfileSettings()
-    
-    local profileIndex = gwGetActiveProfile()
-    
-    if profileIndex==nil then return end
-    if GW2UI_SETTINGS_PROFILES[profileIndex]==nil then return end
-    
-    
-    
-    for k,v in pairs(GW2UI_SETTINGS_DB_03) do
-        GW2UI_SETTINGS_PROFILES[profileIndex][k] = v
-    end
-    
-end
-
-function gwGetSetting(name)
-    
-    local profileIndex = gwGetActiveProfile()
-    
-    if GW2UI_SETTINGS_PROFILES==nil then 
-        GW2UI_SETTINGS_PROFILES = {}
-    end
-    
-    if profileIndex~=nil and GW2UI_SETTINGS_PROFILES[profileIndex]~=nil then
-        if GW2UI_SETTINGS_PROFILES[profileIndex][name]==nil then
-            GW2UI_SETTINGS_PROFILES[profileIndex][name] = gwGetDefault(name)
-        end
-        return GW2UI_SETTINGS_PROFILES[profileIndex][name]
-    end
-    
-    
-    if GW2UI_SETTINGS_DB_03==nil then
-        GW2UI_SETTINGS_DB_03 = GW_DEFAULT
-    end
-    if GW2UI_SETTINGS_DB_03[name]==nil then
-        GW2UI_SETTINGS_DB_03[name] = gwGetDefault(name)
-    end
-    
-    return GW2UI_SETTINGS_DB_03[name]
-end
-
-function gwSetSetting(name,state)
-    
-    local profileIndex = gwGetActiveProfile()
-    
-    if profileIndex~=nil and GW2UI_SETTINGS_PROFILES[profileIndex]~=nil then
-        
-        GW2UI_SETTINGS_PROFILES[profileIndex][name] = state
-        GW2UI_SETTINGS_PROFILES[profileIndex]['profileLastUpdated'] = date("%m/%d/%y %H:%M:%S")
+local function disableMABags()
+    local bags = GetSetting("BAGS_ENABLED")
+    if not bags or not MovAny or not MADB then
         return
-        
     end
-    
-    GW2UI_SETTINGS_DB_03[name] = state
+    MADB.noBags = true
+    MAOptNoBags:SetEnabled(false)
+    forcedMABags = true
 end
+GW.AddForProfiling("index", "disableMABags", disableMABags)
 
-function gwGetDefault(name)    
-    return GW_DEFAULT[name]
-end
-function gwResetToDefault()    
-    
-    local profileIndex = gwGetActiveProfile()
-    
-    if profileIndex~=nil and GW2UI_SETTINGS_PROFILES[profileIndex]~=nil then
-        for k,v in pairs(GW_DEFAULT) do
-            GW2UI_SETTINGS_PROFILES[profileIndex][k] = v 
-        end
-        GW2UI_SETTINGS_PROFILES[profileIndex]['profileLastUpdated'] = date("%m/%d/%y %H:%M:%S")
-        return
-        
-    end
-    GW2UI_SETTINGS_DB_03 = GW_DEFAULT
-end
-
-function gwGetSettingsProfiles()
-    
-    if GW2UI_SETTINGS_PROFILES==nil then
-        GW2UI_SETTINGS_PROFILES = {}
-    end
-    return GW2UI_SETTINGS_PROFILES;
-
-end
-
-function gwLockableOnClick(name, frame, moveframe, settingsName, lockAble)
-    local dummyPoint = gwGetDefault(settingsName)
+local function lockableOnClick(name, frame, moveframe, settingsName, lockAble)
+    local dummyPoint = GetDefault(settingsName)
     moveframe:ClearAllPoints()
-    moveframe:SetPoint(dummyPoint['point'], UIParent, dummyPoint['relativePoint'], dummyPoint['xOfs'], dummyPoint['yOfs'])
-    GW_MOVABLE_FRAMES[name] = moveframe
-    GW_MOVABLE_FRAMES_REF[name] = frame
-    GW_MOVABLE_FRAMES_SETTINGS_KEY[name] = settingsName    
-                
-    local point, relativeTo, relativePoint, xOfs, yOfs = moveframe:GetPoint()
-            
-    local new_point = gwGetSetting(settingsName)
-    new_point['point'] = point
-    new_point['relativePoint'] = relativePoint
-    new_point['xOfs'] = math.floor(xOfs)
-    new_point['yOfs'] = math.floor(yOfs)
-    gwSetSetting(settingsName, new_point)
+    moveframe:SetPoint(
+        dummyPoint["point"],
+        UIParent,
+        dummyPoint["relativePoint"],
+        dummyPoint["xOfs"],
+        dummyPoint["yOfs"]
+    )
+    MOVABLE_FRAMES[name] = moveframe
+    MOVABLE_FRAMES_REF[name] = frame
+    MOVABLE_FRAMES_SETTINGS_KEY[name] = settingsName
 
-    gwSetSetting(lockAble, true)
+    local point, _, relativePoint, xOfs, yOfs = moveframe:GetPoint()
+
+    local new_point = GetSetting(settingsName)
+    new_point["point"] = point
+    new_point["relativePoint"] = relativePoint
+    new_point["xOfs"] = math.floor(xOfs)
+    new_point["yOfs"] = math.floor(yOfs)
+    SetSetting(settingsName, new_point)
+
+    SetSetting(lockAble, true)
 end
-function gwMoveOnDragStop(moveframe, settingsName, lockAble)
-    moveframe:StopMovingOrSizing()
-    local point, relativeTo, relativePoint, xOfs, yOfs = moveframe:GetPoint()
-            
-    local new_point = gwGetSetting(settingsName)
-    new_point['point'] = point
-    new_point['relativePoint'] = relativePoint
-    new_point['xOfs'] = math.floor(xOfs)
-    new_point['yOfs'] = math.floor(yOfs)
-    gwSetSetting(settingsName, new_point)
+GW.AddForProfiling("index", "lockableOnClick", lockableOnClick)
+
+local function lockFrame_OnEnter(self)
+    GameTooltip:SetOwner(self, "ANCHOR_CURSOR")
+    GameTooltip:ClearLines()
+    GameTooltip:AddLine("Lock to default position", 1, 1, 1)
+    GameTooltip:Show()
+end
+GW.AddForProfiling("index", "lockFrame_OnEnter", lockFrame_OnEnter)
+
+local function mover_OnDragStart(self)
+    self.IsMoving = true
+    self:StartMoving()
+end
+GW.AddForProfiling("index", "mover_OnDragStart", mover_OnDragStart)
+
+local function mover_OnDragStop(self)
+    local settingsName = self.gw_Settings
+    local lockAble = self.gw_Lockable
+    self:StopMovingOrSizing()
+    local point, _, relativePoint, xOfs, yOfs = self:GetPoint()
+
+    local new_point = GetSetting(settingsName)
+    new_point["point"] = point
+    new_point["relativePoint"] = relativePoint
+    new_point["xOfs"] = math.floor(xOfs)
+    new_point["yOfs"] = math.floor(yOfs)
+    SetSetting(settingsName, new_point)
     if lockAble ~= nil then
-        gwSetSetting(lockAble, false)
+        SetSetting(lockAble, false)
     end
-end
-function gw_register_movable_frame(name,frame,settingsName,dummyFrame,lockAble)
-    
-    local moveframe = CreateFrame('Frame', name..'MoveAble',UIParent,dummyFrame);
 
+    self.IsMoving = false
+end
+GW.AddForProfiling("index", "mover_OnDragStop", mover_OnDragStop)
+
+local function RegisterMovableFrame(name, frame, settingsName, dummyFrame, lockAble)
+    local moveframe = CreateFrame("Frame", name .. "MoveAble", UIParent, dummyFrame)
     moveframe:SetSize(frame:GetSize())
-    moveframe.frameName:SetText(name)    
- 
-    
-    local dummyPoint = gwGetSetting(settingsName)
+    moveframe.frameName:SetText(name)
+    moveframe.gw_Settings = settingsName
+    moveframe.gw_Lockable = lockAble
+
+    local dummyPoint = GetSetting(settingsName)
     moveframe:ClearAllPoints()
-    moveframe:SetPoint(dummyPoint['point'],UIParent,dummyPoint['relativePoint'],dummyPoint['xOfs'],dummyPoint['yOfs'])
-    GW_MOVABLE_FRAMES[name]=moveframe
-    GW_MOVABLE_FRAMES_REF[name]=frame
-    GW_MOVABLE_FRAMES_SETTINGS_KEY[name]=settingsName
+    moveframe:SetPoint(
+        dummyPoint["point"],
+        UIParent,
+        dummyPoint["relativePoint"],
+        dummyPoint["xOfs"],
+        dummyPoint["yOfs"]
+    )
+    MOVABLE_FRAMES[name] = moveframe
+    MOVABLE_FRAMES_REF[name] = frame
+    MOVABLE_FRAMES_SETTINGS_KEY[name] = settingsName
     moveframe:Hide()
     moveframe:RegisterForDrag("LeftButton")
-    
-    
-    if lockAble~=nil then
-        
-        local lockFrame = CreateFrame('Button', name..'LockButton',moveframe,'GwDummyLockButton');
-        lockFrame:SetScript('OnClick', function()
-            gwLockableOnClick(name, frame, moveframe, settingsName, lockAble)
-        end)
-        
-    end
 
-    moveframe:SetScript("OnDragStart", frame.StartMoving)
-    moveframe:SetScript("OnDragStop", function()
-        gwMoveOnDragStop(moveframe, settingsName, lockAble)
-    end)
-    
-end
-
-function gw_update_moveableframe_positions()
-    
-    for k,v in pairs(GW_MOVABLE_FRAMES_REF) do
-        local newp = gwGetSetting(GW_MOVABLE_FRAMES_SETTINGS_KEY[k])
-        v:ClearAllPoints()
-        GW_MOVABLE_FRAMES_REF[k]:SetPoint(newp['point'],UIParent,newp['relativePoint'],newp['xOfs'],newp['yOfs'])
-       
-    end
-    
-end
-
-function gwUpdateHudScale(scale)
-  
-    for k,v in pairs(GW_MAIN_HUD_FRAMES) do
-      if _G[v] then
-        _G[v]:SetScale(gwGetSetting('HUD_SCALE')) 
-      end
-    end
-    
-end
-
-function gwToggleMainHud(b)
-  
-    for k,v in pairs(GW_MAIN_HUD_FRAMES) do
-        if v~=nil then
-            if b then
-                if GW_MAIN_HUD_FRAMES_OLD_STATE[k] then
-                    _G[v]:Show()
-                end
-            else
-                GW_MAIN_HUD_FRAMES_OLD_STATE[k] = _G[v]:IsShown()
-                _G[v]:Hide()
+    if lockAble ~= nil then
+        local lockFrame = CreateFrame("Button", name .. "LockButton", moveframe, "GwDummyLockButton")
+        lockFrame:SetScript("OnEnter", lockFrame_OnEnter)
+        lockFrame:SetScript("OnLeave", GameTooltip_Hide)
+        lockFrame:SetScript(
+            "OnClick",
+            function()
+                lockableOnClick(name, frame, moveframe, settingsName, lockAble)
             end
-        end
+        )
     end
-    
+
+    moveframe:SetScript("OnDragStart", mover_OnDragStart)
+    moveframe:SetScript("OnDragStop", mover_OnDragStop)
 end
+GW.RegisterMovableFrame = RegisterMovableFrame
 
+local function UpdateFramePositions()
+    for k, v in pairs(MOVABLE_FRAMES_REF) do
+        local newp = GetSetting(MOVABLE_FRAMES_SETTINGS_KEY[k])
+        v:ClearAllPoints()
+        MOVABLE_FRAMES_REF[k]:SetPoint(newp["point"], UIParent, newp["relativePoint"], newp["xOfs"], newp["yOfs"])
+    end
+end
+GW.UpdateFramePositions = UpdateFramePositions
 
-if AchievementMicroButton_Update==nil then
-   function AchievementMicroButton_Update()
+-- https://us.battle.net/forums/en/wow/topic/6036615884
+if AchievementMicroButton_Update == nil then
+    function AchievementMicroButton_Update()
         return
     end
 end
 
-if UnitIsTapDenied==nil then
-   function UnitIsTapDenied()
-        if (UnitIsTapped("target")) and (not UnitIsTappedByPlayer("target")) then
-            return true
-        end
-        return false
-    end
-end
-
-function countTable(T)
-  local c = 0
-    if T~=nil and type(T) == 'table' then
-        for _ in pairs(T) do c = c + 1 end
-    end
-  return c
-end
-
-function timeCount(numSec, com)
-	local nSeconds = tonumber(numSec)
-    if nSeconds == nil then
-        nSeconds = 0
-    end
-    if nSeconds == 0 then
-        return '0'
-    end
-    
-    local nHours = math.floor(nSeconds/3600)
-    if nHours > 0 then
-        return nHours .. 'h'
-    end
-    
-    local nMins = math.floor(nSeconds/60)
-    if nMins > 0 then
-        return nMins .. 'm'
-    end
-        
-    if com ~= nil then
-        local nMilsecs = math.max(math.floor((nSeconds * 10^1) + 0.5) / (10^1), 0)
-        return nMilsecs .. 's'
-    end
-    
-    local nSecs = math.max(math.floor(nSeconds), 0)
-    return nSecs .. 's'
-end
-
-
-function comma_value(n)
-    n = round(n)
-	local left,num,right = string.match(n,'^([^%d]*%d)(%d*)(.-)$')
-	return left..(num:reverse():gsub('(%d%d%d)','%1,'):reverse())..right
-end
-
-animations = {}
-
-function round(number, decimals)
-    return (("%%.%df"):format(decimals)):format(number)
-end
-function intRound(v)
-    if v==nil then return 0 end
-    vf = math.floor(v)
-    if (v-vf)>0.5 then return vf+1 end
-    return vf
-end
-function dif(a,b)
-    
-    if a==nil then a = 0 end
-    if b==nil then b = 0 end
-    
-    if a > b then
-        return a-b
-    else
-        return b-a 
-    end
-end
-function  lerp( v0,  v1,  t) 
-    if v0==nil then 
-        v0=0
-    end
-    local p = (v1-v0)
-  return v0 + t*p;
-end
-function length(T)
-  local count = 0
-  for _ in pairs(T) do count = count + 1 end
-  return count
-end
-function splitString(inputstr, sep,sep2,sep3)
-        if sep == nil then
-                sep = "%s"
-        end
-        inputstr = inputstr:gsub ('\n','')
-        local t={} ; i=1
-        for str in string.gmatch(inputstr, "([^"..sep.."|"..sep2.."|"..sep3.."]+)") do
-            st, en, cap1, cap2, cap3 = string.find (inputstr, str)
-            if en ~= nil then
-                s = string.sub (inputstr, en+1, en+1)
-
-                if s ~= nil or s ~= '' then
-                    str =  str..s
-                end
-            end
-            t[i] = str
-            i = i + 1
-        end
-        return t
-end
-
-function gwButtonAnimation(self, name, w)
-    local prog = animations[name]['progress']
-    local l = lerp(0, w, prog)
-            
-    _G[name..'OnHover']:SetPoint('RIGHT', self, 'LEFT', l, 0)
-    _G[name..'OnHover']:SetVertexColor(1, 1, 1, lerp(0, 1, ((prog) - 0.5)/0.5))
-end
-function gw_button_enter(self)
-    local name = self:GetName()
-    local startTime = GetTime()
-    local w = self:GetWidth()
-    _G[name..'OnHover']:SetAlpha(1)
-    
-    self.animationValue = 0
-    
-    addToAnimation(name, self.animationValue, 1, GetTime(), 0.2, function()
-        gwButtonAnimation(self, name, w)
-    end)
-end
-
-function gw_button_leave(self)
-    local name = self:GetName()
-    local startTime = GetTime()
-    local w = self:GetWidth()
-    _G[name..'OnHover']:SetAlpha(1)
-    
-    self.animationValue = 1
-    
-    addToAnimation(name, self.animationValue, 0, GetTime(), 0.2, function()
-        gwButtonAnimation(self, name, w)
-    end)
-end
-
-function gwBarAnimation(self, barWidth, sparkWidth)
-    local snap = (animations[self.animationName]['progress']*100)/5
-            
-    local round_closest = 0.05 * snap
-  
-    local spark_min =  math.floor(snap)
-    local spark_max =  math.ceil(snap) 
-    local spark_current = snap
-
-    local spark_prec = spark_current - spark_min            
-                            
-    local spark = math.min(barWidth - sparkWidth,math.floor(barWidth*round_closest) - math.floor(sparkWidth*spark_prec))
-    local bI = 17 - math.max(1,intRound(16 * spark_prec))
-
-    self.spark:SetTexCoord(
-        bloodSpark[bI].left,
-        bloodSpark[bI].right,
-        bloodSpark[bI].top,
-        bloodSpark[bI].bottom)
-
-    self:SetValue(round_closest)
-    self.spark:ClearAllPoints()
-    self.spark:SetPoint('LEFT', spark, 0)
-end
-function gwBar(self,value)
-
-    if self==nil then return end
-    local barWidth = self:GetWidth()
-    local sparkWidth = self.spark:GetWidth()
-    
-    addToAnimation(self.animationName, self.animationValue, value, GetTime(), 0.2, function()
-        gwBarAnimation(self, barWidth, sparkWidth)
-    end)
-    self.animationValue = value
-end
-function gw_setClassIcon(self,class)
-    
-    if class==nil or class>12 then
-        class = 0
-    end
-    
-  
-  self:SetTexCoord(
-        GW_CLASS_ICONS[class].l,
-        GW_CLASS_ICONS[class].r,
-        GW_CLASS_ICONS[class].t,
-        GW_CLASS_ICONS[class].b
-    )
-end
-function gw_setDeadIcon(self)
-    self:SetTexCoord(GW_CLASS_ICONS['dead'].l,
-        GW_CLASS_ICONS['dead'].r,
-        GW_CLASS_ICONS['dead'].t,
-        GW_CLASS_ICONS['dead'].b
-    )
-end
-
-function isnan(n) return tostring(n) == '-1.#IND' end
-function addToAnimation(name,from,to,start,duration,method,easeing,onCompleteCallback,doCompleteOnOverider)
-
+local animations = {}
+GW.animations = animations
+local function AddToAnimation(name, from, to, start, duration, method, easeing, onCompleteCallback, doCompleteOnOverider)
     newAnimation = true
-    if animations[name]~=nil then
-        if (animations[name]['start'] + animations[name]['duration'])>GetTime() then
+    if animations[name] ~= nil then
+        if (animations[name]["start"] + animations[name]["duration"]) > GetTime() then
             newAnimation = false
         end
     end
-    if doCompleteOnOverider==nil then
-         newAnimation = true
+    if doCompleteOnOverider == nil then
+        newAnimation = true
     end
-    
-    if newAnimation==false then
-  --      animations[name]['start'] = start
-        animations[name]['duration'] = duration 
-        animations[name]['to'] = to 
-        animations[name]['progress'] = 0
-        animations[name]['method'] = method
-        animations[name]['completed'] = false
-        animations[name]['easeing'] = easeing
-        animations[name]['onCompleteCallback'] = onCompleteCallback
-      
+
+    if newAnimation == false then
+        animations[name]["duration"] = duration
+        animations[name]["to"] = to
+        animations[name]["progress"] = 0
+        animations[name]["method"] = method
+        animations[name]["completed"] = false
+        animations[name]["easeing"] = easeing
+        animations[name]["onCompleteCallback"] = onCompleteCallback
     else
         animations[name] = {}
-        animations[name]['start'] = start
-        animations[name]['duration'] = duration 
-        animations[name]['from'] = from 
-        animations[name]['to'] = to 
-        animations[name]['progress'] = 0
-        animations[name]['method'] = method
-        animations[name]['completed'] = false
-        animations[name]['easeing'] = easeing
-        animations[name]['onCompleteCallback'] = onCompleteCallback
-
-    end
-   
-end
-
-function GwStopAnimation(k)
-    if animations[k]~=nil then
-        animations[k]=nil
+        animations[name]["start"] = start
+        animations[name]["duration"] = duration
+        animations[name]["from"] = from
+        animations[name]["to"] = to
+        animations[name]["progress"] = 0
+        animations[name]["method"] = method
+        animations[name]["completed"] = false
+        animations[name]["easeing"] = easeing
+        animations[name]["onCompleteCallback"] = onCompleteCallback
     end
 end
+GW.AddToAnimation = AddToAnimation
 
-local l = CreateFrame("Frame",nil,UIParent)
-local OnUpdateActionBars = nil
-function gwSwimAnimation()
-    local r, g, b = _G['GwActionBarHudRIGHTSWIM']:GetVertexColor()
-    _G['GwActionBarHudRIGHTSWIM']:SetVertexColor(r, g, b, animations['swimAnimation']['progress'])
-    _G['GwActionBarHudLEFTSWIM']:SetVertexColor(r, g, b, animations['swimAnimation']['progress'])
+local function buttonAnim(self, name, w, hover)
+    local prog = animations[name]["progress"]
+    local l = GW.lerp(0, w, prog)
+
+    hover:SetPoint("RIGHT", self, "LEFT", l, 0)
+    hover:SetVertexColor(1, 1, 1, GW.lerp(0, 1, ((prog) - 0.5) / 0.5))
 end
-function GwOnUpdate()
-    if ADDOON_LOADED~=true or ADDOON_LOADED~=true then
+GW.AddForProfiling("index", "buttonAnim", buttonAnim)
+
+function GwStandardButton_OnEnter(self)
+    local name = tostring(self)
+    local w = self:GetWidth()
+    local hover = self.hover
+    if not hover then
         return
     end
+
+    hover:SetAlpha(1)
+    self.animationValue = 0
+
+    AddToAnimation(
+        name,
+        self.animationValue,
+        1,
+        GetTime(),
+        0.2,
+        function()
+            buttonAnim(self, name, w, hover)
+        end
+    )
+end
+
+function GwStandardButton_OnLeave(self)
+    local name = tostring(self)
+    local w = self:GetWidth()
+    local hover = self.hover
+    if not hover then
+        return
+    end
+
+    hover:SetAlpha(1)
+    self.animationValue = 1
+
+    AddToAnimation(
+        name,
+        self.animationValue,
+        0,
+        GetTime(),
+        0.2,
+        function()
+            buttonAnim(self, name, w, hover)
+        end
+    )
+end
+
+function gw_button_font_black_OnLoad(self)
+    self:SetFont(GwLocalization["FONT_BOLD"], 14)
+end
+
+local function barAnimation(self, barWidth, sparkWidth)
+    local snap = (animations[self.animationName]["progress"] * 100) / 5
+
+    local round_closest = 0.05 * snap
+
+    local spark_min = math.floor(snap)
+    local spark_current = snap
+
+    local spark_prec = spark_current - spark_min
+
+    local spark =
+        math.min(barWidth - sparkWidth, math.floor(barWidth * round_closest) - math.floor(sparkWidth * spark_prec))
+    local bI = 17 - math.max(1, RoundInt(16 * spark_prec))
+
+    self.spark:SetTexCoord(bloodSpark[bI].left, bloodSpark[bI].right, bloodSpark[bI].top, bloodSpark[bI].bottom)
+
+    self:SetValue(round_closest)
+    self.spark:ClearAllPoints()
+    self.spark:SetPoint("LEFT", spark, 0)
+end
+GW.AddForProfiling("index", "barAnimation", barAnimation)
+
+local function Bar(self, value)
+    if self == nil then
+        return
+    end
+    local barWidth = self:GetWidth()
+    local sparkWidth = self.spark:GetWidth()
+
+    AddToAnimation(
+        self.animationName,
+        self.animationValue,
+        value,
+        GetTime(),
+        0.2,
+        function()
+            barAnimation(self, barWidth, sparkWidth)
+        end
+    )
+    self.animationValue = value
+end
+GW.Bar = Bar
+
+local function SetClassIcon(self, class)
+    if class == nil or class > 12 then
+        class = 0
+    end
+
+    self:SetTexCoord(CLASS_ICONS[class].l, CLASS_ICONS[class].r, CLASS_ICONS[class].t, CLASS_ICONS[class].b)
+end
+GW.SetClassIcon = SetClassIcon
+
+local function SetDeadIcon(self)
+    self:SetTexCoord(CLASS_ICONS["dead"].l, CLASS_ICONS["dead"].r, CLASS_ICONS["dead"].t, CLASS_ICONS["dead"].b)
+end
+GW.SetDeadIcon = SetDeadIcon
+
+local function StopAnimation(k)
+    if animations[k] ~= nil then
+        animations[k] = nil
+    end
+end
+GW.StopAnimation = StopAnimation
+
+local l = CreateFrame("Frame", nil, UIParent)
+
+local function swimAnim()
+    local r, g, b = _G["GwActionBarHudRIGHTSWIM"]:GetVertexColor()
+    _G["GwActionBarHudRIGHTSWIM"]:SetVertexColor(r, g, b, animations["swimAnimation"]["progress"])
+    _G["GwActionBarHudLEFTSWIM"]:SetVertexColor(r, g, b, animations["swimAnimation"]["progress"])
+end
+GW.AddForProfiling("index", "swimAnim", swimAnim)
+
+local updateCB = {}
+local function AddUpdateCB(func, payload)
+    if type(func) ~= "function" then
+        return
+    end
+
+    tinsert(
+        updateCB,
+        {
+            ["func"] = func,
+            ["payload"] = payload
+        }
+    )
+end
+GW.AddUpdateCB = AddUpdateCB
+
+local function gw_OnUpdate(self, elapsed)
     local foundAnimation = false
     local count = 0
-    for k,v in pairs(animations) do
+    for k, v in pairs(animations) do
         count = count + 1
-
-        if v['completed']==false and GetTime()>=(v['start']+ v['duration']) then
-            if  v['easeing']==nil then
-                v['progress'] = lerp(v['from'],v['to'],math.sin(1 * math.pi * 0.5))
+        if v["completed"] == false and GetTime() >= (v["start"] + v["duration"]) then
+            if v["easeing"] == nil then
+                v["progress"] = GW.lerp(v["from"], v["to"], math.sin(1 * math.pi * 0.5))
             else
-                v['progress'] = lerp(v['from'],v['to'],1)
+                v["progress"] = GW.lerp(v["from"], v["to"], 1)
             end
-            if  v['method']~=nil then
-                v['method'](v['progress'])
-            end
-
-            if v['onCompleteCallback']~=nil then
-                v['onCompleteCallback']()
+            if v["method"] ~= nil then
+                v["method"](v["progress"])
             end
 
-            v['completed'] = true
+            if v["onCompleteCallback"] ~= nil then
+                v["onCompleteCallback"]()
+            end
+
+            v["completed"] = true
             foundAnimation = true
         end
-        if v['completed']==false then
-
-            if  v['easeing']==nil then
-                v['progress'] = lerp(v['from'],v['to'],math.sin((GetTime() - v['start'])/v['duration'] * math.pi * 0.5))
+        if v["completed"] == false then
+            if v["easeing"] == nil then
+                v["progress"] =
+                    GW.lerp(v["from"], v["to"], math.sin((GetTime() - v["start"]) / v["duration"] * math.pi * 0.5))
             else
-                v['progress'] = lerp(v['from'],v['to'],(GetTime() - v['start'])/v['duration'])
+                v["progress"] = GW.lerp(v["from"], v["to"], (GetTime() - v["start"]) / v["duration"])
             end
-        v['method'](v['progress'])
+            v["method"](v["progress"])
             foundAnimation = true
         end
     end
 
-    if foundAnimation==false and count ~= 0 then
-        animations = {}
-    end
-
-    if OnUpdateActionBars then
-        OnUpdateActionBars()
+    if foundAnimation == false and count ~= 0 then
+        table.wipe(animations)
     end
 
     --Swim hud
-    if  lastSwimState~=IsSwimming() then
+    if lastSwimState ~= IsSwimming() then
         if IsSwimming() then
-            addToAnimation('swimAnimation', swimAnimation, 1, GetTime(), 0.1, gwSwimAnimation)
+            AddToAnimation("swimAnimation", swimAnimation, 1, GetTime(), 0.1, swimAnim)
             swimAnimation = 1
         else
-            addToAnimation('swimAnimation', swimAnimation, 0, GetTime(), 3.0, gwSwimAnimation)
+            AddToAnimation("swimAnimation", swimAnimation, 0, GetTime(), 3.0, swimAnim)
             swimAnimation = 0
         end
         lastSwimState = IsSwimming()
     end
+
+    for _, cb in ipairs(updateCB) do
+        cb.func(cb.payload, elapsed)
+    end
 end
+GW.AddForProfiling("index", "gw_OnUpdate", gw_OnUpdate)
 
-l.TotalElapsed = 0
-l:SetScript('OnUpdate', function(self, elapsed)
-    -- every frame is not needed; cap update calls at 60 FPS
-    self.TotalElapsed = self.TotalElapsed + elapsed
-    if self.TotalElapsed < 0.016 then
+local function gw_OnEvent(self, event, name)
+    if loaded then
         return
     end
-    self.TotalElapsed = 0
-    GwOnUpdate()
-end)
-
-function gwOnEvent(self, event, name)
-    if GW_UI_LOADED then
+    if event ~= "PLAYER_LOGIN" then
         return
     end
-        
-    if event == 'ADDON_LOADED' and name == 'GW2_UI' then
-        ADDOON_LOADED = true
-        SETTINGS_LOADED = true
-        return    
-    end
-    if event == 'ADDON_LOADED' and name ~= 'GW2_UI' then
-        return
-    end
-    if event == 'PLAYER_ENTERING_WORLD' then
-        PLAYER_ENTERING_WORLD = true;
-    end
+    loaded = true
 
-    GW_UI_LOADED = true
-            
+    -- setup our frame pool
+    GW.Pools = CreatePoolCollection()
+
+    -- disable Move Anything bag handling
+    disableMABags()
+
+    -- hook debug output if relevant
+    --[===[@debug@
+    local dev_dbg_tab = GetSetting("DEV_DBG_CHAT_TAB")
+    if dev_dbg_tab and dev_dbg_tab > 0 and _G["ChatFrame" .. dev_dbg_tab] then
+        DEFAULT_CHAT_FRAME:AddMessage("hooking Debug to chat tab #" .. dev_dbg_tab)
+        GW.dbgTab = dev_dbg_tab
+        GW.AlertTestsSetup()
+        GW.inDebug = true
+    else
+        GW.inDebug = false
+    end
+    --@end-debug@]===]
+    --@non-debug@
+    GW.inDebug = false
+    --@end-non-debug@
+
     --Create Settings window
-    create_settings_window()
-    display_options()
-            
+    GW.LoadSettings()
+    GW.DisplaySettings()
+
     --Create hud art
-    loadHudArt()
-            
+    GW.LoadHudArt()
+
     --Create experiencebar
-    loadExperienceBar() 
-        
-    if gwGetSetting('FONTS_ENABLED') then
-        gw_register_fonts()
-    end  
-    if gwGetSetting('CASTINGBAR_ENABLED') then
-        gw_register_castingbar()
-    end  
-        
-    if gwGetSetting('MINIMAP_ENABLED') then
-        gw_set_minimap()
+    GW.LoadXPBar()
+
+    if GetSetting("FONTS_ENABLED") then
+        GW.LoadFonts()
     end
-    if gwGetSetting('QUESTTRACKER_ENABLED') then
-        --QUESTTRACKER
-        gw_load_questTracker()
+
+    if GetSetting("CASTINGBAR_ENABLED") then
+        GW.LoadCastingBar()
     end
-    if gwGetSetting('TOOLTIPS_ENABLED') then
-        gw_set_tooltips()
+
+    if GetSetting("MINIMAP_ENABLED") then
+        GW.LoadMinimap()
     end
-    if gwGetSetting('QUESTVIEW_ENABLED') then
-        gw_create_questview()
+
+    if GetSetting("QUESTTRACKER_ENABLED") then
+        GW.LoadQuestTracker()
     end
-    if gwGetSetting('CHATFRAME_ENABLED') then            
-        gw_set_chatframe_bg()
+
+    if GetSetting("TOOLTIPS_ENABLED") then
+        GW.LoadTooltips()
     end
+
+    if GetSetting("QUESTVIEW_ENABLED") then
+        GW.LoadQuestview()
+    end
+
+    if GetSetting("CHATFRAME_ENABLED") then
+        GW.LoadChat()
+    end
+
     --Create player hud
-    if gwGetSetting('HEALTHGLOBE_ENABLED') then    
-        gw_create_player_hud()
-    end
-        
-    if gwGetSetting('POWERBAR_ENABLED') then
-        gw_create_power_bar()
-    end
-        
-    if gwGetSetting('CLASS_POWER') then
-        create_classpowers()
+    if GetSetting("HEALTHGLOBE_ENABLED") then
+        GW.LoadPlayerHud()
     end
 
-    if gwGetSetting('BAGS_ENABLED') then
-        gw_create_bgframe()
-        gw_create_bankframe()
-    end 
-    if gwGetSetting('USE_BATTLEGROUND_HUD') then
-        gwLoadBattlegrounds()
-    end 
-        
-    Gw_LoadWindows();
-        
-    gw_breath_meter()
-        
+    if GetSetting("POWERBAR_ENABLED") then
+        GW.LoadPowerBar()
+    end
+
+    if GetSetting("CLASS_POWER") then
+        GW.LoadClassPowers()
+    end
+
+    if GetSetting("BAGS_ENABLED") then
+        GW.LoadBag()
+        GW.LoadBank()
+    end
+
+    --if GetSetting("USE_BATTLEGROUND_HUD") then
+    -- GW.LoadBattlegrounds()
+    --end
+
+    GW.LoadCharacter()
+
+    GW.LoadBreathMeter()
+
     --Create unitframes
-    if gwGetSetting('FOCUS_ENABLED') then
-        gw_unitframes_register_Focus()
-        if gwGetSetting('focus_TARGET_ENABLED') then         
-            gw_unitframes_register_Focusstarget()
+    if GetSetting("FOCUS_ENABLED") then
+        GW.LoadFocus()
+        if GetSetting("focus_TARGET_ENABLED") then
+            GW.LoadTargetOfFocus()
         end
     end
-    if gwGetSetting('TARGET_ENABLED') then
-        gw_unitframes_register_Target()
-        if gwGetSetting('target_TARGET_ENABLED') then
-            gw_unitframes_register_Targetstarget()
+    if GetSetting("TARGET_ENABLED") then
+        GW.LoadTarget()
+        if GetSetting("target_TARGET_ENABLED") then
+            GW.LoadTargetOfTarget()
         end
-    end    
-        
-    --create buff frame        
-    if gwGetSetting('PLAYER_BUFFS_ENABLED') then
-        gw_set_buffframe()
-    end
-        		
-    if gwGetSetting('PETBAR_ENABLED') then
-        gw_create_pet_frame()
-    end
-        
-    if gwGetSetting('ACTIONBARS_ENABLED') then
-        gw_setupActionbars()
-        OnUpdateActionBars = function()
-            fadet_action_bar_check(MultiBarBottomLeft)
-            fadet_action_bar_check(MultiBarBottomRight)
+
+        -- move zone text frame
+        if not IsFrameModified("ZoneTextFrame") then
+            Debug("moving ZoneTextFrame")
+            ZoneTextFrame:ClearAllPoints()
+            ZoneTextFrame:SetPoint("TOP", UIParent, "TOP", 0, -175)
         end
-    end  
-                        
-    if gwGetSetting('CHATBUBBLES_ENABLED') then
-        --    gw_register_chatbubbles()
+
+        -- move error frame
+        if not IsFrameModified("UIErrorsFrame") then
+            Debug("moving UIErrorsFrame")
+            UIErrorsFrame:ClearAllPoints()
+            UIErrorsFrame:SetPoint("TOP", UIParent, "TOP", 0, -190)
+            UIErrorsFrame:SetFont(STANDARD_TEXT_FONT, 14)
+        end
     end
-        
+
+    -- create action bars
+    if GetSetting("ACTIONBARS_ENABLED") then
+        GW.LoadActionBars()
+    end
+
+    -- create pet frame
+    if GetSetting("PETBAR_ENABLED") then
+        GW.LoadPetFrame()
+    end
+
+    -- create buff frame
+    if GetSetting("PLAYER_BUFFS_ENABLED") then
+        GW.LoadBuffs()
+    end
+
     -- create new microbuttons
-    create_micro_menu()
-        
-    if gwGetSetting('GROUP_FRAMES') then
-        gw_register_partyframes()
-        gw_register_raidframes()
+    --[[
+    if GetSetting('CHATBUBBLES_ENABLED') then
+        GW.LoadChatBubbles()
     end
-        
-    -- move error frame
-    UIErrorsFrame:ClearAllPoints()
-	gw_register_movable_frame('errorframe',UIErrorsFrame,'WARNIG_MESSAGE','GwErrorFrameDummy')
-    UIErrorsFrame:SetPoint(gwGetSetting('WARNIG_MESSAGE')['point'],UIParent,gwGetSetting('WARNIG_MESSAGE')['relativePoint'],gwGetSetting('WARNIG_MESSAGE')['xOfs'],gwGetSetting('WARNIG_MESSAGE')['yOfs'])
-        
-    gwUpdateHudScale()    
+    --]]
+    GW.LoadMicroMenu()
+
+    if GetSetting("GROUP_FRAMES") then
+        GW.LoadPartyFrames()
+        GW.LoadRaidFrames()
+    end
+
+    GW.UpdateHudScale()
+
+    if (forcedMABags) then
+        GW.Notice(GwLocalization["DISABLED_MA_BAGS"])
+    end
+
+    l:SetScript("OnUpdate", gw_OnUpdate)
 end
-l:SetScript('OnEvent', gwOnEvent)
-l:RegisterEvent('ADDON_LOADED')
-l:RegisterEvent('PLAYER_ENTERING_WORLD')
+GW.AddForProfiling("index", "gw_OnEvent", gw_OnEvent)
+l:SetScript("OnEvent", gw_OnEvent)
+l:RegisterEvent("PLAYER_LOGIN")
 
-
-function GwaddTOClique(frame)
+local function AddToClique(frame)
     if type(frame) == "string" then
         local frameName = frame
         frame = _G[frameName]
-        if not frame then
-          
-        end
     end
 
-    if frame and frame.RegisterForClicks and ClickCastFrames~=nil then
+    if frame and frame.RegisterForClicks and ClickCastFrames ~= nil then
         ClickCastFrames[frame] = true
     end
 end
+GW.AddToClique = AddToClique
 
-local waitTable = {};
-local waitFrame = nil;
-function gwWaitOnUpdate(self, elapse)
+local waitTable = {}
+local waitFrame = nil
+local function wait_OnUpdate(self, elapse)
     local count = #waitTable
     local i = 1
-    while(i <= count) do
+    while (i <= count) do
         local waitRecord = tremove(waitTable, i)
         local d = tremove(waitRecord, 1)
         local f = tremove(waitRecord, 1)
         local p = tremove(waitRecord, 1)
-        if(d > elapse) then
+        if (d > elapse) then
             tinsert(waitTable, i, {d - elapse, f, p})
             i = i + 1
         else
@@ -943,14 +587,22 @@ function gwWaitOnUpdate(self, elapse)
         end
     end
 end
-function gw_wait(delay, func, ...)
+GW.AddForProfiling("index", "wait_OnUpdate", wait_OnUpdate)
+
+local function Wait(delay, func, ...)
     if type(delay) ~= "number" or type(func) ~= "function" then
         return false
     end
     if waitFrame == nil then
         waitFrame = CreateFrame("Frame", "GwWaitFrame", UIParent)
-        waitFrame:SetScript("OnUpdate", gwWaitOnUpdate)
+        waitFrame:SetScript("OnUpdate", wait_OnUpdate)
     end
     tinsert(waitTable, {delay, func, {...}})
     return true
 end
+GW.Wait = Wait
+
+local function Self_Hide(self)
+    self:Hide()
+end
+GW.Self_Hide = Self_Hide

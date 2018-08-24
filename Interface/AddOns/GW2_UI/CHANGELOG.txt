@@ -1,94 +1,119 @@
-4.2.3
+5.0.7
 
 NEW
-   - GW2 UI is now available in Brazilian Portuguese, thanks to Pyrefox from Curseforge!
+    - Changed the default quest BG texture and made it easier to replace this texture
+    - Add enrage class power bar for Fury Warriors
+    - Talents now show whether you can change them in the toolip just like the default UI
 
 FIXED
-   - Fixed a bug wherein the inventory would not display correctly.
+    - Made the gold counter on the bag a bit wider for all the goblins out there
+    - No more flickering on Azerite compare tooltips! (CF#211)
+    - Totem frames (e.g. Black Ox Statue, Earth Elemental, etc.) should now show in the upper-right roughly where buffs used to be until we can build a better solution (CF#93)
+    - Voice chat button should now fade properly (CF#213)
 
-MISCELLANEOUS
-   - Latin American Spanish strings have been updated, thanks to HackoJero84650 from Curseforge!
 
-4.2.2
 
-FIXED
-   - Fixed an error with the minimap icon consolidation frame.
-   - Fixed a bug wherein the inventory icons may be out of sync.
-   - Fixed a bug wherein the bank sorting function would not sort the reagent bank.
-   - Fixed a bug wherein reverse sorting for the inventory would be disabled by default.
-   - Fixed a bug wherein the currency tab would become unsynced with the inventory frame.
-   - Fixed a bug wherein talent points would not be shown in the Next Level Rewards screen.
-   - Fixed a bug wherein the character window would display an error in patch 7.3.5.
-
-MISCELLANEOUS
-   - The Russian localization has been updated.
- 
-
-4.2.1 - We would like to welcome nezroy123 to the development team!
+5.0.6
 
 NEW
-   - Added the minimap button consolidation area. The new button next to the minimap gathers all the extra minimap buttons added by other addons and compiles them into a simple menu.
-   - GW2 UI is now available in Latin American Spanish. (Thanks to astral210 from Curseforge.)
-   - GW2 UI is now available in European Spanish.
-   - GW2 UI is now available in Russian. (Thanks to espenwald, timur_gir & xDark0ne from Curseforge.)
-   - The health globe absorb fill now has texture.
-   - A latency indicator was added to the cast bar.
-   - The Brewmaster Monk class power bar has received an additional art pass.
-
-REWORKS
-   - Immersive Questing has received an overhaul.
-      - Progress quest dialog is now available.
-      - Closing quest windows is more consistent.
-      - Auto-quests should now be correctly ignored.
-      - There should now be fewer or no instances of stale quest data not being reset between dialogs.
-      - The final quest line should now require fewer clicks.
-      - Quest text parsing has been overhauled.
-      - Required quest items are now displayed in the Immersive Questing window.
-      - Player Model frames now use more dynamic animations.
-      - Model animations have been adjusted for better flow.
-      - Player Model size and positioning have been readjusted.
-      - Automatic (pop-up) quests should now behave more consistently.
-      - Added a new model to replace "talking to yourself".
-   - Bank and Bag windows have received an overhaul.
-      - The scroll wheel is now tracked when scrolling the currency window.
-      - Fixed instances of currencies showing incorrect maximum values.
-      - Resizing the windows now produces consistent padding.
-      - The window will no longer reposition itself when finished resizing.
-      - Columns will no longer be lost on custom sized windows when reloading the UI.
-      - Large icon size is slightly smaller.
-      - Bank and bag icon sizes can now be set independently.
-      - The free space indicator now works correctly.
-      - Bag container slots on the bank have been repositioned.
-      - The bank frame will now save its size and position.
-      - The bag icon has received an additional art pass.
-      - The option to reverse bank and bag display order has been added.
-      - The bag item backdrop artwork has received an additional art pass.
+    - Add HUD option to toggle black edge borders (CF#197)
 
 FIXED
-   - Tracked achievements will now correctly update in the quest tracker when completed.
-   - Settings labels should now correctly wrap to a new line when using languages other than English.
-   - Fixed instances of the ESC key breaking.
-   - Fixed tainting issue when upgrading a legendary item.
-
-MISCELLANEOUS
-   - Addon performance improvements.
+    - Un-break auto-quest tracking
+    - Only show Hunter Mongoose bar when talented
+    - Test for disabled default CompactRaidFrame addon (CF#142)
+    - Garrison button should show (when appropriate) on initial load now
 
 
-4.2.0
+
+5.0.5
 
 NEW
+    - Add ability to bind Keys by hover
+    - Minimap can now be placed at top or bottom (CF#113)
+    - Include Azerite item overlays in hero panel
+	
+LOCALIZATION
+	- Simplified Chinese and Italian are now available, thanks to all of our volunteer translators from Curseforge!
+	- All existing localizations updated with new strings.
+    
+FIXED
+    - Fix quest tracker moving to bottom of screen sometimes (CF#195, CF#168)
+    - Fix an actionbar overlapping issue (CF#37)
+    - Fix some classpowerbar issues (colors and displaying) (CF#128)
+    - Fix some issues with the Garrison-/Orderhall Minimapbutton (CF#13)
+    - Fix problem where UI can disappear after vehicles, taxis, etc. (CF#200)
+    - Default objective tracker placement improved when using custom minimap/actionbars
+    - Fix Hunter MongooseBar
 
-   - All new battleground interface. Starting with Arathi Basin, we've completely overhauled the battleground UI.
-   - Brand new icons for all Death Knights specializations.
-   - Icons for the Arcane Mage specialization have been redesigned.
-   - The pet frame has been completely rebuilt from the ground up.
-   - The mana bar and health globe animations have been improved.
-   - Brand new world quest completion globe, showing overall progress for the current world quest.
+
+
+5.0.4
 
 FIXED
+    - Fix a Lua error that occurs when selecting equipment in hero panel (CF#183)
+    - Properly hide multibars during pet battles
+    - Error frame font now tied to font setting toggle (CF#196)
+    - Fix a legacy map API issue in M+
+    - Fix problem where UI can disappear after vehicles, taxis, etc. (CF#185, CF#193)
 
-   - The character window mover frame should no longer obstruct frames when the window is closed.
-   - Fixed a UI taint issue with the Store button in the micromenu.
-   - The focus target frame should now update correctly. 
-   - Fixed an issue wherein spells with charges were not being properly tracked by the dodge bar.
-   - Fixed an issue wherein the dodge bar would not track the Mage talent Shimmer.
+MISCELLANEOUS
+    - Changed many strings to use default Blizz translations to simplify translation contributions
+
+
+
+5.0.3
+
+FIXED
+    - More actionbar fixes (CF#169... I hope)
+    - Allow shift-click to link spells and abilities in chat & macros
+    - Fix problems with HUD movers when HUD is scaled
+    - Handle API change in several class powers (CF#178)
+
+MISCELLANEOUS
+    - Disabled PvP HUD for now because of API changes (CF#173)
+
+
+
+5.0.2
+
+FIXED
+   - Fix missing chi bar for windwalker monks (CF#170)
+   - Fix flicker on comparison tooltips (CF#166)
+
+
+
+5.0.1
+
+FIXED
+   - Zone transitions should not cause intermittent map errors (CF#162)
+   - Resolve monk power bar problems (CF#161)
+   - Clicking quest name will no longer cause a lua error (CF#165)
+   - Warmode/pvp tooltip will now show properly outside of Org/SW
+   - Fixed actionbar and vehicle UI issues (CF#163, CF#164)
+
+
+
+5.0.0
+
+NEW
+   - Updated for 8.x Battle For Azeroth!
+   - Added custom talent and spellbook panels to the character window
+   - Bag micro button now includes empty bag slot counter (contributor inzenir, CF#152)
+   - Health globe now includes PvP/War Mode flag indicator (CF#95)
+
+FIXED
+   - Right-side multi action bars no longer show after load/zoning when set to fade (CF#137, CF#102)
+   - Resolved multiple issues with character panel key bindings (including CF#107 and CF#121)
+   - The custom player aura frame can now be disabled without causing errors (CF#117)
+   - Fix starting bag/bank icon size inconsistencies (CF#138)
+   - Game menu hover is more efficient and also now only shows GW2 and total mem usage (CF#122)
+   - Action bars now remain un-faded when a flyout skill menu is open
+   - Fixed missing stat tooltips in character screen
+   - Hide macro name on action bar buttons
+
+MISCELLANEOUS
+   - A significant refactoring took place to reduce addon conflicts and taint issues
+   - Reputation has been moved to a top-level character tab
+   - Currency has been moved from bags to a top-level character tab (CF#76)
+

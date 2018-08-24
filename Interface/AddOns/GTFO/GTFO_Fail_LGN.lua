@@ -424,6 +424,31 @@ GTFO.SpellID["241666"] = {
   sound = 3;
 };
 
+-- *******************
+-- * Brawler's Guild *
+-- *******************
+
+GTFO.SpellID["229420"] = {
+  --desc = "Devour (Hippo)";
+  sound = 3;
+};
+
+GTFO.SpellID["229926"] = {
+  --desc = "Path of Despair";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["228988"] = {
+  --desc = "Burning Ground";
+  sound = 3;
+};
+
+GTFO.SpellID["229126"] = {
+  --desc = "Peck (Slippy)";
+  sound = 3;
+};
+
 -- **********
 -- * Mardum *
 -- **********
@@ -2362,9 +2387,43 @@ GTFO.SpellID["248321"] = {
   sound = 3;
 };
 
+GTFO.SpellID["250191"] = {
+  --desc = "Conflagration (Imonar)";
+  applicationOnly = true;
+  sound = 3;
+};
+
 GTFO.SpellID["247932"] = {
   --desc = "Shrapnel Blast (Imonar)";
   applicationOnly = true;
   sound = 3;
+};
+
+GTFO.SpellID["244899"] = {
+  --desc = "Fiery Strike (Noura, Mother of Flames)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["245629"] = {
+  --desc = "Whirling Saber (Noura, Mother of Flames)";
+  sound = 3;
+};
+
+GTFO.SpellID["253588"] = {
+  --desc = "Fulminating Burst (Noura, Mother of Flames)";
+  sound = 3;
+  ignoreEvent = "Fulminating";
+};
+
+GTFO.SpellID["246663"] = {
+  --desc = "Surging Fel (Garothi Worldbreaker)";
+  sound = 3;
+};
+
+GTFO.SpellID["250007"] = {
+  --desc = "Empowered Pulse Grenade (Imonar)";
+  sound = 4;
+  test = true;
 };
 

@@ -1,60 +1,64 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: GW2 UI
 ## Notes: Hud Replacement addon.
-
+## OptionalDeps: MoveAnything
 
 ## Author: deadend06
 
 ## SavedVariablesPerCharacter: GW2UI_SETTINGS_DB_03
 ## SavedVariables: GW2UI_SETTINGS_PROFILES
 
-
-frames/shared.xml
-frames/target.xml
-frames/experiencebar.xml
-frames/hudart.xml
-frames/hudelements.xml
-frames/settings.xml
-frames/questview.xml
-frames/bag.xml
-frames/bank.xml
-frames/questtracker.xml
-frames/party.xml
-frames/raidframes.xml
-
-frames/unitframes.xml
-frames/character.xml
-frames/spellbook.xml
-frames/talents.xml
-frames/toast.xml
-frames/battlegrounds.xml
-
+core/consts.lua
+core/utils.lua
+core/settings_default.lua
+core/settings_api.lua
 
 GW2_ui.lua
-flags.lua
-fonts.lua
-hud.lua
-buffs.lua
-map.lua
-castingbar.lua
-questview.lua
-chatframe.lua
-settings.lua
-chatbubbles.lua
-tooltips.lua
-fader.lua
-actionbars2.lua
-playerhud.lua
 
-classpowers.lua
-bag.lua
-bank.lua
-party.lua
-raidframes.lua
-unitframes.lua
-toast.lua
+core/shared.xml
+core/settings.xml
+core/flags.lua
+core/fonts.lua
+core/settings.lua
+core/hover_binding.lua
 
+units/target.xml
+units/target.lua
+units/party.xml
+units/raidframes.xml
+units/unitframes.xml
+units/raidframes.lua
+units/unitframes.lua
+units/party.lua
 
+mainbar/experiencebar.xml
+mainbar/hudart.xml
+mainbar/hudelements.xml
+mainbar/actionbars.xml
+mainbar/petbar.xml
+mainbar/hud.lua
+mainbar/actionbars2.lua
+mainbar/petbar.lua
+mainbar/buffs.lua
+mainbar/castingbar.lua
+mainbar/playerhud.lua
+mainbar/classpowers.lua
+
+inventory/bag.xml
+inventory/bank.xml
+inventory/bag.lua
+inventory/bank.lua
+
+immersive/questview.xml
+#immersive/toast.xml
+immersive/questview.lua
+immersive/chatframe.lua
+#immersive/chatbubbles.lua
+immersive/tooltips.lua
+#immersive/toast.lua
+
+objectives/questtracker.xml
+objectives/map.lua
 objectives/objectives.lua
 objectives/scenario.lua
 objectives/notifications.lua
@@ -62,16 +66,24 @@ objectives/bonusObjective.lua
 objectives/bossFrames.lua
 objectives/achievement.lua
 
-
-
+character/character.xml
+character/paperdoll.xml
+character/reputation.xml
+character/currency.xml
+character/talents.xml
+character/professions.xml
 character/character.lua
-character/spellbook.lua
+character/paperdoll.lua
+character/paperdoll_equipment.lua
+character/paperdoll_equipset.lua
+character/paperdoll_titles.lua
+character/reputation.lua
+character/currency.lua
+character/talents_pvp.lua
 character/talents.lua
+character/professions.lua
 
-
-character/windowManager.lua
-
-
+battlegrounds/battlegrounds.xml
 battlegrounds/battlegrounds.lua
 
 locales/deDE.lua
@@ -82,3 +94,9 @@ locales/esMX.lua
 locales/esES.lua
 locales/ruRU.lua
 locales/ptBR.lua
+locales/frFR.lua
+locales/zhCN.lua
+locales/itIT.lua
+
+tests/mocks.lua
+tests/alert_tests.lua

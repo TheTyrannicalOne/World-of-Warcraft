@@ -62,6 +62,7 @@ L.defaults = {
 	scale = 1,
 	strata = 'MEDIUM',
 	hideui = false,
+--	theme = 'DEFAULT',
 
 	titlescale = 1,
 	titleoffset = 500,
@@ -96,16 +97,23 @@ local stratas = {
 }
 
 local modifiers = {
-	SHIFT = SHIFT_KEY_TEXT,
-	CTRL = CTRL_KEY_TEXT,
-	ALT = ALT_KEY_TEXT,
-	NOMOD = NONE,
+	SHIFT 	= SHIFT_KEY_TEXT,
+	CTRL 	= CTRL_KEY_TEXT,
+	ALT 	= ALT_KEY_TEXT,
+	NOMOD 	= NONE,
 }
+--[[
+local themes = {
+	DEFAULT 	= DEFAULT;
+	ALLIANCE 	= ALLIANCE_CHEER;
+	HORDE 		= HORDE_CHEER;
+	NEUTRAL		= BUG_CATEGORY8;
+}]]
 
 local titleanis = {
-	[0] = OFF,
-	[1] = SPELL_CAST_TIME_INSTANT,
-	[5] = FAST,
+	[0]  = OFF,
+	[1]  = SPELL_CAST_TIME_INSTANT,
+	[5]  = FAST,
 	[10] = SLOW,
 }
 
@@ -117,6 +125,28 @@ L.options = {
 			name = GENERAL,
 			order = 1,
 			args = {
+				framelock = {
+					type = 'group',
+					name = LOCK_FOCUS_FRAME,
+					inline = true,
+					order = 0,
+					args = {
+						boxlock = {
+							type = 'toggle',
+							name = MODEL .. ' / ' .. LOCALE_TEXT_LABEL,
+							get = L.GetFromSV,
+							set = function(_, val) L.cfg.boxlock = val end,
+							order = 0,
+						},
+						titlelock = {
+							type = 'toggle',
+							name = QUESTS_LABEL .. ' / ' .. GOSSIP_OPTIONS,
+							get = L.GetFromSV,
+							set = function(_, val) L.cfg.titlelock = val end,
+							order = 1,
+						},
+					},
+				},
 				text = {
 					type = 'group',
 					name = L['Behavior'],
@@ -245,18 +275,10 @@ L.options = {
 							get = L.GetFromSV,
 							set = function(_, val) L.cfg.onthefly = val end,
 						},
-						ontheflyalways = {
-							type = 'toggle',
-							name = ALWAYS,
-							order = 1,
-							get = L.GetFromSV,
-							set = function(_, val) L.cfg.ontheflyalways = val end,
-							disabled = function() return not L('onthefly') end,
-						},
 						ontheflydesc = {
 							type = 'description',
 							fontSize = 'medium',
-							order = 2,
+							order = 1,
 							name = L["The quest/gossip text doesn't vanish when you stop interacting with the NPC or when accepting a new quest. Instead, it vanishes at the end of the text sequence. This allows you to maintain your immersive experience when speed leveling."],
 						},
 					},
@@ -297,7 +319,7 @@ L.options = {
 				accept = {
 					type = 'keybinding',
 					name = ACCEPT,
-					desc = L.GetListString(ACCEPT, NEXT, CONTINUE, COMPLETE_QUEST),
+					desc = L.GetListString(ACCEPT, NEXT, CONTINUE, COMPLETE_QUEST, SPELL_CAST_TIME_INSTANT .. ': ' .. modifiers[L('inspect')]),
 					get = L.GetFromSV,
 					set = function(_, val) L.cfg.accept = L.ValidateKey(val) end,
 					order = 1,
@@ -417,13 +439,6 @@ L.options = {
 							get = L.GetFromSV,
 							set = function(_, val) L.cfg.disableglowani = val end,
 						},
-						boxlock = {
-							type = 'toggle',
-							name = LOCK,
-							get = L.GetFromSV,
-							set = function(_, val) L.cfg.boxlock = val end,
-							order = 2,
-						},
 						disableportrait = {
 							type = 'toggle',
 							name = L['Disable portrait border'],
@@ -484,13 +499,6 @@ L.options = {
 							set = function(_, val) L.cfg.gossipatcursor = val end,
 							order = 0,
 						},
-						titlelock = {
-							type = 'toggle',
-							name = LOCK,
-							get = L.GetFromSV,
-							set = function(_, val) L.cfg.titlelock = val end,
-							order = 1,
-						},
 						titlescale = {
 							type = 'range',
 							name = 'Scale',
@@ -535,6 +543,66 @@ L.options = {
 								L.cfg.inspect = val
 							end,
 							style = 'dropdown',
+						},
+					},
+				},
+			},
+		},	
+		experimental = {
+			type = 'group',
+			name = 'Experimental',
+			order = 5,
+			args = {
+				nameplatemodebox = {
+					type = 'group',
+					name = 'Anchor to NPC nameplate',
+					inline = true,
+					order = 0,
+					args = {
+						nameplatemode = {
+							type = 'toggle',
+							name = VIDEO_OPTIONS_ENABLED,
+							order = 0,
+							get = L.GetFromSV,
+							set = function(_, val) L.cfg.nameplatemode = val end,
+						},						
+						nameplatemodecvar = {
+							type = 'execute',
+							name = 'Toggle CVar',
+							order = 1,
+							func = function(self)
+								local state = GetCVarBool('nameplateShowFriends')
+								SetCVar('nameplateShowFriends', not state)
+								local msg = state and NAMEPLATES_MESSAGE_FRIENDLY_OFF or NAMEPLATES_MESSAGE_FRIENDLY_ON
+								UIErrorsFrame:AddMessage(msg, YELLOW_FONT_COLOR.r, YELLOW_FONT_COLOR.g, YELLOW_FONT_COLOR.b)
+							end,
+						},
+						nameplatemodedesc = {
+							type = 'description',
+							fontSize = 'medium',
+							order = 2,
+							name = 'Show frame on NPC nameplate. This feature requires a CVar to be enabled (nameplateShowFriends).\nClick on the button above to toggle this CVar on/off.\n\nNote that you might have to press Cancel in the interface options for the CVar changes to take effect.',
+						},
+					},
+				},
+				supertrackedbox = {
+					type = 'group',
+					name = 'Toast when quest is supertracked',
+					inline = true,
+					order = 1,
+					args = {
+						supertracked = {
+							type = 'toggle',
+							name = VIDEO_OPTIONS_ENABLED,
+							order = 0,
+							get = L.GetFromSV,
+							set = function(_, val) L.cfg.supertracked = val end,
+						},
+						supertrackeddesc = {
+							type = 'description',
+							fontSize = 'medium',
+							order = 1,
+							name = 'When a quest is supertracked (clicked on in the objective tracker, or set automatically by proximity), the quest text will play if nothing else is obstructing it.',
 						},
 					},
 				},

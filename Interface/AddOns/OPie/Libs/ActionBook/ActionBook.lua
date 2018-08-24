@@ -1,4 +1,4 @@
-local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 19, ...
+local apiV, api, MAJ, REV, ext, T = {}, {}, 2, 22, ...
 if T.ActionBook then return end
 apiV[MAJ], ext, T.Kindred, T.Rewire = api, {Kindred=T.Kindred, Rewire=T.Rewire, ActionBook={}}
 
@@ -20,6 +20,7 @@ local listToString do
 			elseif at == "number" then
 				p = p .. c .. ("%g"):format(a)
 			else
+				-- RE unpack does not accept start/finish indices, so replace nil/invalid values by a special table.
 				p = p .. c .. (at == "boolean" and (a and "true" or "false") or "_NIL")
 			end
 			return walk(p, n-1, ...)
@@ -83,6 +84,22 @@ local istore do
 	meta.__index, meta.__len, meta.__call = api, api.size, api.get
 end
 
+local LW, L do
+	local LT = {}
+	local function lookup(_, k)
+		return LT[k] or k
+	end
+	L, LW = newproxy(true), newproxy(true)
+	local LM, LWM = getmetatable(L), getmetatable(LW)
+	LM.__index, LM.__call = lookup, lookup
+	function LWM:__newindex(k, v)
+		if type(k) ~= "string" or (v ~= nil and type(v) ~= "string") then
+			error("Localization phrase invalid", 2)
+		end
+		LT[k] = v
+	end
+end
+
 local actionCallbacks, core, coreEnv = {}, CreateFrame("FRAME", nil, nil, "SecureHandlerBaseTemplate") do
 	core:SetFrameRef("KR", ext.Kindred:compatible(1,0):seclib())
 	for s in ("0123456789QWERTYUIOP"):gmatch(".") do
@@ -107,7 +124,8 @@ local actionCallbacks, core, coreEnv = {}, CreateFrame("FRAME", nil, nil, "Secur
 	end
 	core:Execute([=[-- AB_Init
 		collections, tokens, metadata, actConditionals, tokConditionals = newtable(), newtable(), newtable(), newtable(), newtable()
-		actInfo, busy, idle, _NIL = newtable(), newtable(), newtable(), newtable()
+		actInfo, busy, idle, _NIL, sidCastID = newtable(), newtable(), newtable(), newtable(), 30 + math.random(9)
+		actInfo[sidCastID] = newtable("attribute", 6, "spell",nil, "target",nil, "type","spell")
 		for _, c in pairs(self:GetChildList(newtable())) do idle[c] = c:GetName() end
 		KR, colStack, idxStack, ecStack, outCount = self:GetFrameRef("KR"), newtable(), newtable(), newtable(), newtable()
 	]=])
@@ -163,7 +181,7 @@ core:SetAttribute("GetCollectionContent", [[-- AB:GetCollectionContent(slot)
 	until i == 0
 	return ret, metadata["openAction-" .. root]
 ]])
-core:SetAttribute("UseAction", [[-- AB:UseAction(slot)
+core:SetAttribute("UseAction", [[-- AB:UseAction(slot[, ...])
 	local at = actInfo[...]
 	if at == "icall" then
 		return self:CallMethod("icall", ...) or ""
@@ -175,6 +193,11 @@ core:SetAttribute("UseAction", [[-- AB:UseAction(slot)
 		return at[2]:RunAttribute(select(3, unpack(at))) or ""
 	end
 	return ""
+]])
+core:SetAttribute("CastSpellByID", [[-- AB:CastSpellByID(sid[, "target"])
+	local at = actInfo[sidCastID]
+	at[4], at[6] = ...
+	return self:RunAttribute("UseAction", sidCastID)
 ]])
 
 function core:notifyCollectionOpen(id)
@@ -208,7 +231,7 @@ local DeferExecute do
 	core:RegisterEvent("PLAYER_REGEN_ENABLED")
 end
 
-local actionCreators, actionDescribers, optData, optStart, optEnd, categories = {}, {}, {}, {}, {}, {Miscellaneous={}}
+local actionCreators, actionDescribers, optData, optStart, optEnd, categories = {}, {}, {}, {}, {}, {}
 local nextActionId, allocatedActions, allocatedActionType, allocatedActionArg = 42, {}, {}, {}
 
 local createHandlers, updateHandlers = {}, {}
@@ -273,7 +296,7 @@ function updateHandlers.collection(id, _count, idList)
 	return true
 end
 function createHandlers.clone(id, _count, id2)
-	DeferExecute(("actInfo[%d] = actInfo[%d]"):format(id, id2))
+	DeferExecute(("local d,s = %d, %d; actInfo[d], actConditionals[d] = actInfo[s], actConditionals[s]"):format(id, id2))
 	return true
 end
 local function nullInfoFunc() return false end
@@ -306,8 +329,22 @@ local getActionIdent, getActionArgs do
 		return ...
 	end
 end
+local categoryAliases = {}
 local function getCategoryName(id)
-	return categories[id] or (id == (#categories+1) and "Miscellaneous") or nil
+	local LM = id == (#categories+1) and L"Miscellaneous"
+	return categories[id] or (LM and categories[LM] and LM) or nil
+end
+local function getCategoryTable(name)
+	name = categoryAliases[name] or name
+	local r = categories[name]
+	if not r then
+		r = {}
+		categories[name] = r
+		if name ~= L"Miscellaneous" then
+			categories[#categories + 1] = name
+		end
+	end
+	return r
 end
 
 do -- api:CreateToken()
@@ -391,23 +428,23 @@ function api:UpdateActionSlot(id, ...)
 	assert(updateHandlers[allocatedActionType[id]](id, select("#", ...), ...))
 end
 
+function api:AddCategoryAlias(name, aliasOf)
+	assert(type(name) == "string" and type(aliasOf) == "string", 'Syntax: ActionBook:AddCategoryAlias("name", "aliasOf")')
+	assert(name == aliasOf or categories[name] == nil, "Category %q already exists.", name)
+	categoryAliases[name] = categoryAliases[name] or aliasOf
+end
 function api:AugmentCategory(name, augFunc)
 	assert(type(name) == "string" and type(augFunc) == "function" and name ~= "*", 'Syntax: ActionBook:AugmentCategory("name", augFunc)')
-	if not categories[name] then
-		categories[#categories + 1], categories[name] = name, {}
-	end
-	table.insert(categories[name], augFunc)
+	table.insert(getCategoryTable(name), augFunc)
 end
 function api:AddActionToCategory(name, actionType, ...)
 	assert(type(name) == "string" and type(actionType) == "string" and name ~= "*", 'Syntax: ActionBook:AddActionToCategory("name", "actionType"[, ...])')
-	if not categories[name] then
-		categories[#categories + 1], categories[name] = name, {}
-	end
-	categories[name].extra = categories[name].extra or istore()
-	categories[name].extra:insert(actionType, ...)
+	local ct = getCategoryTable(name)
+	ct.extra = ct.extra or istore()
+	ct.extra:insert(actionType, ...)
 end
 function api:GetNumCategories()
-	return #categories + 1
+	return #categories + (categories[L"Miscellaneous"] and 1 or 0)
 end
 function api:GetCategoryInfo(id)
 	assert(type(id) == "number", 'Syntax: name = ActionBook:GetCategoryInfo(index)')
@@ -463,9 +500,18 @@ function api:compatible(module, maj, rev, ...)
 	end
 end
 
+function api:locale(getWritableHandle)
+	if getWritableHandle then
+		local r = LW
+		LW = nil
+		return assert(r, "A writable handle has already been returned once")
+	end
+	return L
+end
+
 apiV[1] = {uniq=api.CreateToken, get=api.GetActionSlot, describe=api.GetActionDescription, info=api.GetSlotInfo, options=api.GetActionOptions, actionType=api.GetSlotImplementation,
 	register=api.RegisterActionType, update=api.UpdateActionSlot, notify=api.NotifyObservers, observe=api.AddObserver, lastupdate=api.GetLastObserverUpdateToken, compatible=api.compatible} do
-	apiV[1].miscaction = function(_self, ...) return api:AddActionToCategory("Miscellaneous", ...) end
+	apiV[1].miscaction = function(_self, ...) return api:AddActionToCategory(L"Miscellaneous", ...) end
 	apiV[1].category = function(_self, name, numFunc, getFunc)
 		assert(type(name) == "string" and type(numFunc) == "function" and type(getFunc) == "function", 'Syntax: ActionBook:category("name", countFunc, entryFunc)')
 		local count = numFunc()
