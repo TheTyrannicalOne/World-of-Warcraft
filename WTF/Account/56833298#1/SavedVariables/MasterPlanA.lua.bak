@@ -26,48 +26,10 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 		},
 	},
-	["Dalaran"] = {
-		["Malivant"] = {
-			["faction"] = "Alliance",
-			["class"] = "ROGUE",
-		},
-		["Beeronimo"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
-		},
-		["Tynster"] = {
-			["faction"] = "Alliance",
-			["class"] = "PRIEST",
-		},
-		["Thromar"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Tyriinid"] = {
-			["faction"] = "Alliance",
-			["class"] = "MAGE",
-		},
-		["Shaewong"] = {
-			["faction"] = "Neutral",
-			["class"] = "MONK",
-		},
-		["Sinh"] = {
-			["faction"] = "Alliance",
-			["class"] = "SHAMAN",
-		},
-		["Narisaric"] = {
-			["faction"] = "Alliance",
-			["class"] = "DRUID",
-		},
-	},
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
 		},
 		["Brewnheimer"] = {
 			["faction"] = "Alliance",
@@ -76,6 +38,10 @@ MasterPlanAG = {
 		["Dialdaas"] = {
 			["faction"] = "Alliance",
 			["class"] = "PALADIN",
+		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
 		},
 	},
 	["Zul'jin"] = {
@@ -132,6 +98,40 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 	},
+	["Dalaran"] = {
+		["Malivant"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Beeronimo"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["Tynster"] = {
+			["faction"] = "Alliance",
+			["class"] = "PRIEST",
+		},
+		["Thromar"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Tyriinid"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Shaewong"] = {
+			["faction"] = "Neutral",
+			["class"] = "MONK",
+		},
+		["Sinh"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Narisaric"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
 	["Argent Dawn"] = {
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",
@@ -170,13 +170,13 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Shanyt"] = {
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1535082618,
 			["summary"] = {
 				["lastOilTime"] = 1535082634,
 				["tt2"] = 1534037743,
 				["tt3"] = 1534468063,
-				["ti1"] = 118531,
 				["tt1"] = 1533940261,
+				["ti1"] = 118531,
 				["ti3"] = 127854,
 				["inProgress"] = {
 					[302] = 1535097521,
@@ -186,11 +186,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["curOil"] = 60775,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1535082618,
-			["curRes"] = 7045,
 			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 7045,
+			["curOil"] = 60775,
 		},
 		["Shaekhan"] = {
 			["class"] = "MONK",

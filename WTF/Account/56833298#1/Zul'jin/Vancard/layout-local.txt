@@ -48,13 +48,6 @@ X: 0
 Y: 0
 W: 300
 H: 300
-Frame: AllTheThings-Window-Tradeskills
-FrameLevel: 1
-Anchor: RIGHT
-X: 0
-Y: 0
-W: 300
-H: 496
 Frame: SpellActivationOverlayFrame
 FrameLevel: 1
 Anchor: BOTTOM
@@ -62,6 +55,13 @@ X: -6
 Y: -94
 W: 205
 H: 205
+Frame: AllTheThings-Window-Tradeskills
+FrameLevel: 1
+Anchor: RIGHT
+X: 0
+Y: 0
+W: 300
+H: 496
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER

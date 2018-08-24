@@ -44,31 +44,88 @@ MasterPlanAG = {
 			["class"] = "MONK",
 		},
 		["Shanyt"] = {
-			["faction"] = "Horde",
+			["curOil"] = 61420,
 			["summary"] = {
-				["lastOilTime"] = 1535082634,
-				["ti2"] = 122486,
+				["lastOilTime"] = 1535150185,
 				["inProgress"] = {
-					[302] = 1535097521,
-					[745] = 1535147434,
-					[538] = 1535104727,
-					[677] = 1535093908,
+					[276] = 1535186174,
+					[126] = 1535164567,
+					[444] = 1535164563,
+					[328] = 1535178959,
+					[733] = 1535151983,
+					[189] = 1535152865,
+					[745] = 1535214985,
+					[394] = 1535178961,
+					[130] = 1535157369,
 				},
 				["ti3"] = 127854,
+				["ti2"] = 122486,
+				["tt1"] = 1535153073,
 				["ti1"] = 118531,
-				["tt1"] = 1533940261,
 				["tt3"] = 1534468063,
 				["tt2"] = 1534037743,
 			},
-			["curOil"] = 60775,
+			["faction"] = "Horde",
 			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1535150137,
+			["curRes"] = 6927,
 			["class"] = "WARRIOR",
-			["curRes"] = 7045,
-			["lastCacheTime"] = 1535082618,
 		},
 		["Fantastiburo"] = {
 			["class"] = "DRUID",
 			["faction"] = "Horde",
+		},
+	},
+	["Dalaran"] = {
+		["Malivant"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+		["Beeronimo"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Tynster"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Alliance",
+		},
+		["Thromar"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Tyriinid"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Narisaric"] = {
+			["class"] = "DRUID",
+			["faction"] = "Alliance",
+		},
+		["Sinh"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+		["Shaewong"] = {
+			["class"] = "MONK",
+			["faction"] = "Neutral",
+		},
+	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Brewnheimer"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+		["Dialdaas"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
 		},
 	},
 	["Zul'jin"] = {
@@ -123,58 +180,6 @@ MasterPlanAG = {
 		["Fantastiburo"] = {
 			["class"] = "SHAMAN",
 			["faction"] = "Horde",
-		},
-	},
-	["Dalaran"] = {
-		["Malivant"] = {
-			["class"] = "ROGUE",
-			["faction"] = "Alliance",
-		},
-		["Beeronimo"] = {
-			["class"] = "HUNTER",
-			["faction"] = "Alliance",
-		},
-		["Tynster"] = {
-			["class"] = "PRIEST",
-			["faction"] = "Alliance",
-		},
-		["Thromar"] = {
-			["class"] = "PALADIN",
-			["faction"] = "Alliance",
-		},
-		["Tyriinid"] = {
-			["class"] = "MAGE",
-			["faction"] = "Alliance",
-		},
-		["Narisaric"] = {
-			["class"] = "DRUID",
-			["faction"] = "Alliance",
-		},
-		["Sinh"] = {
-			["class"] = "SHAMAN",
-			["faction"] = "Alliance",
-		},
-		["Shaewong"] = {
-			["class"] = "MONK",
-			["faction"] = "Neutral",
-		},
-	},
-	["Darkspear"] = {
-		["Shathiel"] = {
-			["class"] = "MAGE",
-			["faction"] = "Alliance",
-		},
-		["Dialdaas"] = {
-			["class"] = "PALADIN",
-			["faction"] = "Alliance",
-		},
-		["Serbitechna"] = {
-			["class"] = "HUNTER",
-			["faction"] = "Alliance",
-		},
-		["Brewnheimer"] = {
-			["class"] = "SHAMAN",
-			["faction"] = "Alliance",
 		},
 	},
 	["Runetotem"] = {
