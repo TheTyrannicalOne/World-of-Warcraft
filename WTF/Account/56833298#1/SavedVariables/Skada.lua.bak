@@ -174,29 +174,29 @@ SkadaDB = {
 				{
 					["barheight"] = 22,
 					["barmax"] = 7,
-					["barslocked"] = true,
-					["y"] = 39.4273262023926,
-					["x"] = -25.509765625,
-					["barfontsize"] = 15,
-					["mode"] = "DPS",
-					["spark"] = false,
-					["bartexture"] = "Tukui",
 					["barwidth"] = 188,
-					["point"] = "BOTTOMRIGHT",
+					["barfontsize"] = 15,
+					["y"] = 39.4273262023926,
 					["barfont"] = "ABF",
+					["barslocked"] = true,
+					["x"] = -25.509765625,
+					["point"] = "BOTTOMRIGHT",
+					["mode"] = "DPS",
+					["bartexture"] = "Tukui",
+					["spark"] = false,
 				}, -- [1]
-			},
-			["icon"] = {
-				["minimapPos"] = 136.914267178511,
-			},
-			["report"] = {
-				["channel"] = "Party",
-				["mode"] = "Healing",
 			},
 			["versions"] = {
 				["1.6.3"] = true,
 				["1.6.4"] = true,
 				["1.6.7"] = true,
+			},
+			["icon"] = {
+				["minimapPos"] = 136.914267178511,
+			},
+			["report"] = {
+				["mode"] = "Healing",
+				["channel"] = "Party",
 			},
 		},
 		["Cowtastraphy - Argent Dawn"] = {
@@ -428,29 +428,29 @@ SkadaDB = {
 				{
 					["barheight"] = 22,
 					["barmax"] = 7,
-					["barwidth"] = 188,
-					["barfontsize"] = 15,
-					["y"] = 39.4273262023926,
-					["barfont"] = "ABF",
 					["barslocked"] = true,
+					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
-					["point"] = "BOTTOMRIGHT",
+					["barfontsize"] = 15,
 					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["barwidth"] = 188,
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
-			},
-			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
-				["1.6.3"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
+			},
+			["versions"] = {
+				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
 			},
 		},
 		["LUI-Towelliee"] = {

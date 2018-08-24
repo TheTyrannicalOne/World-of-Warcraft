@@ -1,7 +1,5 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
 	["Runetotem"] = {
 		["Migimong"] = {
 			["faction"] = "Alliance",
@@ -67,10 +65,6 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 			["class"] = "MAGE",
 		},
-		["Dialdaas"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
 		["Serbitechna"] = {
 			["faction"] = "Alliance",
 			["class"] = "HUNTER",
@@ -78,6 +72,10 @@ MasterPlanAG = {
 		["Brewnheimer"] = {
 			["faction"] = "Alliance",
 			["class"] = "SHAMAN",
+		},
+		["Dialdaas"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
 		},
 	},
 	["Zul'jin"] = {
@@ -102,8 +100,8 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 		["Vancard"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
 		["Vaddor"] = {
 			["faction"] = "Horde",
@@ -174,33 +172,24 @@ MasterPlanAG = {
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
 			["summary"] = {
-				["lastOilTime"] = 1534471891,
+				["lastOilTime"] = 1535082634,
 				["tt2"] = 1534037743,
 				["tt3"] = 1534468063,
 				["ti1"] = 118531,
 				["tt1"] = 1533940261,
 				["ti3"] = 127854,
 				["inProgress"] = {
-					[486] = 1534493476,
-					[642] = 1534486289,
-					[385] = 1534486269,
-					[258] = 1534500657,
-					[194] = 1534484609,
-					[175] = 1534481912,
-					[125] = 1534486415,
-					[304] = 1534500649,
-					[396] = 1534500606,
-					[482] = 1534493466,
-					[544] = 1534500687,
-					[651] = 1534481023,
-					[745] = 1534536691,
+					[302] = 1535097521,
+					[745] = 1535147434,
+					[677] = 1535093908,
+					[538] = 1535104727,
 				},
 				["ti2"] = 122486,
 			},
-			["curOil"] = 59120,
+			["curOil"] = 60775,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1534479241,
-			["curRes"] = 8970,
+			["lastCacheTime"] = 1535082618,
+			["curRes"] = 7045,
 			["faction"] = "Horde",
 		},
 		["Shaekhan"] = {

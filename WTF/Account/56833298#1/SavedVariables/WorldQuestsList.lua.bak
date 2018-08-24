@@ -29,7 +29,7 @@ VWQL = {
 		["Filter"] = 63,
 	},
 	["Sort"] = 3,
-	["VERSION"] = 76,
+	["VERSION"] = 78,
 	["Jingojaggot-Zul'jin"] = {
 		["FilterType"] = {
 		},
@@ -220,7 +220,7 @@ VWQL = {
 	},
 	["Shanyt-ArgentDawn"] = {
 		["Filter"] = 63,
-		["VERSION"] = 76,
+		["VERSION"] = 78,
 		["RegularQuestMode"] = true,
 		["Quests"] = {
 		},
@@ -292,7 +292,7 @@ VWQL = {
 	},
 	["Vancard-Zul'jin"] = {
 		["Filter"] = 63,
-		["VERSION"] = 76,
+		["VERSION"] = 78,
 		["RegularQuestMode"] = true,
 		["Quests"] = {
 		},

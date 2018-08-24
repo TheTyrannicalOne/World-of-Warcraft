@@ -103,23 +103,22 @@ WeakAurasSaved = {
 		["Aura of Decay"] = {
 			[234422] = 136144,
 		},
+		["Soul Fragments"] = {
+			[203981] = "Interface\\Icons\\Spell_Shadow_SoulGem",
+		},
+		["Volatile Rot"] = {
+			[204463] = 236271,
+		},
+		["Consecration"] = {
+			[188370] = 135926,
+		},
 		["Gravitational Pull"] = {
 			[205984] = 1041234,
 			[214167] = 1041234,
 			[214335] = 1041234,
 		},
-		["Soul Fragments"] = {
-			[203981] = "Interface\\Icons\\Spell_Shadow_SoulGem",
-		},
-		["Consecration"] = {
-			[188370] = 135926,
-		},
-		["Volatile Rot"] = {
-			[204463] = 236271,
-		},
-		["Darkening Soul"] = {
-			[206651] = 1396972,
-			[222209] = "Interface\\Icons\\ability_xavius_blackened",
+		["Fiery Phlegm"] = {
+			[228758] = 135265,
 		},
 		["Frenzied Regeneration"] = {
 			[22842] = "Interface\\Icons\\Ability_BullRush",
@@ -127,8 +126,8 @@ WeakAurasSaved = {
 		["Artillery"] = {
 			[182280] = "Interface\\Icons\\Ability_Hunter_MarkedForDeath",
 		},
-		["Fiery Phlegm"] = {
-			[228758] = 135265,
+		["Corruption Meteor"] = {
+			[224508] = "Interface\\Icons\\ability_xavius_corruptionmeteor",
 		},
 		["Annihilated"] = {
 			[215458] = 135642,
@@ -351,8 +350,9 @@ WeakAurasSaved = {
 		["Coronal Ejection"] = {
 			[206464] = 1029591,
 		},
-		["Corruption Meteor"] = {
-			[224508] = "Interface\\Icons\\ability_xavius_corruptionmeteor",
+		["Darkening Soul"] = {
+			[206651] = 1396972,
+			[222209] = "Interface\\Icons\\ability_xavius_blackened",
 		},
 		["Star Sign: Dragon"] = {
 			[216344] = "Interface\\Icons\\icon_7fx_nightborn_astromancer_blue",
@@ -1188,21 +1188,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1854",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -1218,11 +1218,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1854",
 				["size"] = {
 					["multi"] = {
 					},
@@ -1481,9 +1481,9 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message_type"] = "SAY",
-					["do_custom"] = false,
 					["custom"] = "",
 					["do_message"] = false,
+					["do_custom"] = false,
 				},
 				["init"] = {
 					["do_custom"] = true,
@@ -1525,19 +1525,19 @@ WeakAurasSaved = {
 				},
 				["count"] = "3",
 				["custom_hide"] = "timed",
-				["buffShowOn"] = "showOnActive",
-				["group_count"] = "1",
 				["debuffType"] = "HARMFUL",
-				["event"] = "Combat Log",
+				["group_count"] = "1",
 				["spellName"] = "Lightning Bolt",
-				["use_sourceName"] = false,
-				["sourceName"] = "Elder Regail",
-				["subeventSuffix"] = "_CREATE",
+				["event"] = "Combat Log",
+				["buffShowOn"] = "showOnActive",
+				["type"] = "aura",
+				["spell"] = "Lightning Bolt",
 				["unevent"] = "timed",
 				["custom_type"] = "status",
-				["spell"] = "Lightning Bolt",
+				["subeventSuffix"] = "_CREATE",
+				["sourceName"] = "Elder Regail",
 				["countOperator"] = ">=",
-				["type"] = "aura",
+				["use_sourceName"] = false,
 				["group_countOperator"] = ">=",
 				["use_spellName"] = false,
 				["events"] = "",
@@ -1549,8 +1549,8 @@ WeakAurasSaved = {
 				["sourceUnit"] = "target",
 				["use_specific_unit"] = true,
 			},
-			["desaturate"] = false,
 			["stickyDuration"] = false,
+			["desaturate"] = false,
 			["selfPoint"] = "CENTER",
 			["text1Point"] = "BOTTOM",
 			["internalVersion"] = 6,
@@ -1569,14 +1569,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Blackrock Foundry",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1864",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -1605,7 +1602,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1864",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -1681,9 +1681,14 @@ WeakAurasSaved = {
 			["icon"] = true,
 		},
 		["ISB 3 Empty"] = {
-			["xOffset"] = -150,
-			["yOffset"] = 0,
 			["parent"] = "ISB/Stagger",
+			["yOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.200000047683716, -- [4]
+			},
 			["conditions"] = {
 			},
 			["mirror"] = false,
@@ -1858,12 +1863,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.200000047683716, -- [4]
-			},
+			["xOffset"] = -150,
 		},
 		["CD Bar: Typhoon Off Bar"] = {
 			["textFlags"] = "None",
@@ -2910,15 +2910,15 @@ WeakAurasSaved = {
 			},
 			["stickyDuration"] = false,
 			["text1Point"] = "BOTTOM",
+			["text2Font"] = "Friz Quadrata TT",
+			["text2FontFlags"] = "OUTLINE",
+			["height"] = 50,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["text2FontFlags"] = "OUTLINE",
-			["height"] = 50,
-			["parent"] = "TowellieesCD",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -2956,12 +2956,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -2972,8 +2972,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["icon"] = true,
+			["parent"] = "TowellieesCD",
+			["internalVersion"] = 6,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -3027,8 +3027,8 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["conditions"] = {
 			},
-			["internalVersion"] = 6,
 			["text1Containment"] = "INSIDE",
+			["icon"] = true,
 		},
 		["Moderate Stagger"] = {
 			["user_y"] = 0,
@@ -3109,15 +3109,15 @@ WeakAurasSaved = {
 			},
 			["trigger"] = {
 				["subeventPrefix"] = "SPELL",
-				["ownOnly"] = true,
+				["use_genericShowOn"] = true,
 				["spellId"] = "85247",
 				["names"] = {
 				},
 				["useCount"] = true,
-				["use_genericShowOn"] = true,
+				["use_power"] = false,
 				["genericShowOn"] = "showAlways",
 				["use_unit"] = true,
-				["debuffType"] = "HELPFUL",
+				["spellName"] = 213652,
 				["powertype"] = 99,
 				["spellIds"] = {
 				},
@@ -3125,7 +3125,7 @@ WeakAurasSaved = {
 				["type"] = "status",
 				["unevent"] = "auto",
 				["use_powertype"] = true,
-				["spellName"] = 213652,
+				["custom_hide"] = "timed",
 				["event"] = "Power",
 				["use_remaining"] = true,
 				["subeventSuffix"] = "_CAST_START",
@@ -3137,10 +3137,10 @@ WeakAurasSaved = {
 				["realSpellName"] = "Hand of the Protector",
 				["use_spellId"] = true,
 				["name"] = "Holy Power",
-				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
 				["count"] = "1",
 				["unit"] = "player",
-				["use_power"] = false,
+				["ownOnly"] = true,
 				["fullscan"] = true,
 			},
 			["yOffset"] = 0,
@@ -3214,9 +3214,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["textureWrapMode"] = "CLAMP",
-			["useAdjustededMax"] = false,
 			["fontSize"] = 12,
+			["useAdjustededMax"] = false,
+			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
 			["numTriggers"] = 2,
 			["foregroundTexture"] = "Interface\\Addons\\SlootAuras\\GeneralAura4-CircleQuarterBottomRight.tga",
 			["startAngle"] = 90,
@@ -3262,7 +3262,7 @@ WeakAurasSaved = {
 			["stickyDuration"] = false,
 			["anchorPoint"] = "CENTER",
 			["inverse"] = false,
-			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["textureWrapMode"] = "CLAMP",
 			["orientation"] = "CLOCKWISE",
 			["crop_x"] = 0.41,
 			["selfPoint"] = "CENTER",
@@ -3332,15 +3332,12 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["encounterid"] = "1876",
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -3349,10 +3346,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -3365,8 +3359,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
-				["encounterid"] = "1876",
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -4933,8 +4933,8 @@ WeakAurasSaved = {
 			["trigger"] = {
 				["custom_hide"] = "custom",
 				["type"] = "custom",
-				["subeventSuffix"] = "_DAMAGE",
 				["unevent"] = "timed",
+				["custom_type"] = "event",
 				["event"] = "Combat Log",
 				["names"] = {
 				},
@@ -4942,12 +4942,12 @@ WeakAurasSaved = {
 				["unit"] = "player",
 				["destUnit"] = "player",
 				["subeventPrefix"] = "SPELL",
+				["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 				["spellIds"] = {
 				},
 				["custom"] = "function(event, time, subevent, ...)\n    --target = player\n    if select(6, ...) == UnitGUID(\"player\") then\n        \n        --set selection offset to amount for baseline SWING_DAMAGE\n        local offset = 10\n        \n        --handle SPELL_ABSORBED events\n        if subevent == \"SPELL_ABSORBED\" then\n            \n            --if a spell gets absorbed, there are 3 additional parameters regarding which spell got absorbed, so move the offset 3 more places\n            if GetSpellInfo((select(offset, ...))) == (select(offset + 1, ...)) then\n                offset = offset + 3\n            end\n            \n            --absorb value is 7 places further\n            offset = offset + 7\n            table.insert(aura_env.table, {GetTime(), (select(offset, ...))})\n            \n            --handle regular XYZ_DAMAGE events\n        elseif subevent:find(\"_DAMAGE\") then\n            \n            --don't include environmental damage (like falling etc)\n            if not subevent:find(\"ENVIRONMENTAL\") then\n                \n                --move offset by 3 places for spell info for RANGE_ and SPELL_ prefixes\n                if subevent:find(\"SPELL\") then\n                    offset = offset + 3\n                elseif subevent:find(\"RANGE\") then\n                    offset = offset + 3\n                end\n                \n                table.insert(aura_env.table, {GetTime(), (select(offset, ...))})\n            end\n        end\n    end\nend",
-				["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 				["use_destUnit"] = false,
-				["custom_type"] = "event",
+				["subeventSuffix"] = "_DAMAGE",
 				["debuffType"] = "HELPFUL",
 			},
 			["desc"] = "by Hamsda of Mannoroth-EU and Yumari of TheMaelstrom-EU",
@@ -4986,15 +4986,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["use_combat"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -5183,12 +5183,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -5915,7 +5915,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -5924,6 +5923,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_combat"] = true,
 				["use_class"] = true,
 				["size"] = {
@@ -5989,11 +5989,11 @@ WeakAurasSaved = {
 				["debuffType"] = "HELPFUL",
 				["custom"] = "function()\n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 				["spellName"] = 53600,
-				["charges"] = "1",
+				["use_remaining"] = false,
 				["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 				["custom_hide"] = "custom",
 				["charges_operator"] = ">=",
-				["use_remaining"] = false,
+				["type"] = "custom",
 				["unevent"] = "auto",
 				["subeventSuffix"] = "_CAST_START",
 				["use_showOn"] = true,
@@ -6004,7 +6004,7 @@ WeakAurasSaved = {
 				["use_spellName"] = true,
 				["spellIds"] = {
 				},
-				["type"] = "custom",
+				["charges"] = "1",
 				["check"] = "update",
 				["unit"] = "player",
 				["names"] = {
@@ -6251,14 +6251,14 @@ WeakAurasSaved = {
 				},
 				["debuffType"] = "HELPFUL",
 			},
-			["xOffset"] = 0,
+			["init_started"] = 1,
 			["stickyDuration"] = false,
 			["rotation"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["version"] = 2,
-			["crop_y"] = 0.41,
+			["xOffset"] = 0,
 			["height"] = 170,
-			["crop_x"] = 0.41,
+			["crop_y"] = 0.41,
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -6309,13 +6309,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["orientation"] = "CLOCKWISE",
+			["crop_x"] = 0.41,
 			["useAdjustededMax"] = false,
 			["textureWrapMode"] = "CLAMP",
+			["fontSize"] = 12,
+			["foregroundTexture"] = "Spells\\AURARUNE256",
 			["color"] = {
 			},
-			["foregroundTexture"] = "Spells\\AURARUNE256",
 			["numTriggers"] = 1,
+			["mirror"] = false,
+			["useAdjustededMin"] = false,
+			["regionType"] = "progresstexture",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -6330,19 +6334,16 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["mirror"] = false,
-			["useAdjustededMin"] = false,
-			["regionType"] = "progresstexture",
+			["blendMode"] = "ADD",
 			["backgroundColor"] = {
 				0.5, -- [1]
 				0.5, -- [2]
 				0.5, -- [3]
 				0.5, -- [4]
 			},
-			["blendMode"] = "ADD",
 			["width"] = 170,
-			["frameStrata"] = 1,
 			["slantMode"] = "INSIDE",
+			["frameStrata"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -6352,20 +6353,19 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "AP Circle Progress 2 2",
-			["crop"] = 0.41,
-			["startAngle"] = 0,
 			["yOffset"] = 0,
+			["startAngle"] = 0,
 			["compress"] = false,
 			["additional_triggers"] = {
 			},
-			["init_completed"] = 1,
+			["crop"] = 0.41,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["init_completed"] = 1,
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
-			["parent"] = "AP/AM 2",
 			["inverse"] = false,
-			["fontSize"] = 12,
-			["init_started"] = 1,
+			["parent"] = "AP/AM 2",
+			["orientation"] = "CLOCKWISE",
 			["conditions"] = {
 			},
 			["anchorPoint"] = "CENTER",
@@ -7638,16 +7638,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["single"] = "TANK",
+					["multi"] = {
+						["TANK"] = true,
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
+				["race"] = {
 					["multi"] = {
-						["TANK"] = true,
 					},
 				},
 				["class"] = {
@@ -7662,10 +7665,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent"] = {
 					["multi"] = {
 					},
@@ -7787,24 +7787,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["encounterid"] = "1854",
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -7814,11 +7811,14 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1854",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -7983,14 +7983,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
+					["single"] = "TANK",
 					["multi"] = {
+						["TANK"] = true,
 					},
 				},
 				["class"] = {
@@ -8005,12 +8010,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
+				["use_zone"] = false,
 				["zone"] = "Hellfire Citadel",
 				["size"] = {
 					["multi"] = {
@@ -8906,14 +8906,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -8940,7 +8937,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -9262,15 +9262,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["use_combat"] = true,
 				["use_class"] = true,
 				["size"] = {
@@ -9337,14 +9337,14 @@ WeakAurasSaved = {
 			["icon"] = true,
 		},
 		["Ironfur Aura"] = {
-			["parent"] = "Ironfur",
-			["anchorPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				0.890196078431373, -- [2]
 				0, -- [3]
 				0.829999998211861, -- [4]
 			},
+			["anchorPoint"] = "CENTER",
+			["xOffset"] = 270,
 			["conditions"] = {
 			},
 			["mirror"] = false,
@@ -9462,7 +9462,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = 270,
+			["parent"] = "Ironfur",
 		},
 		["Star Sign: Crab"] = {
 			["text2Point"] = "CENTER",
@@ -10445,14 +10445,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1962",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -10479,7 +10476,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1962",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -10788,14 +10788,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1873",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -10822,7 +10819,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -11280,16 +11280,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["single"] = "TANK",
+					["multi"] = {
+						["TANK"] = true,
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
+				["race"] = {
 					["multi"] = {
-						["TANK"] = true,
 					},
 				},
 				["class"] = {
@@ -11304,10 +11307,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent"] = {
 					["multi"] = {
 					},
@@ -11619,7 +11619,6 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 72,
 			["displayStacks"] = " ",
-			["wordWrap"] = "WordWrap",
 			["actions"] = {
 				["start"] = {
 					["do_custom"] = true,
@@ -11634,8 +11633,9 @@ WeakAurasSaved = {
 					["custom"] = "aura_env.texturePool = {}\naura_env.textureIndex = 0\n\naura_env.getTextureFromPool = function()\n    aura_env.textureIndex = aura_env.textureIndex + 1\n    if aura_env.textureIndex > #aura_env.texturePool then\n        local frame = CreateFrame(\"Frame\") --, nil, UIParent)\n        frame:SetFrameStrata(\"BACKGROUND\")\n        frame:SetFrameLevel(0)\n        frame:SetSize(60, 60)\n        frame:SetPoint(\"CENTER\", 0, 0)\n        frame:Hide()\n        \n        frame.icon = frame:CreateTexture(nil, \"BACKGROUND\", nil, -8)\n        frame.icon:SetAllPoints()\n        frame.icon:SetVertexColor(1, 1, 1, 1)\n        \n        frame.string2 = frame:CreateFontString(nil, \"BACKGROUND\", nil, -7)\n        frame.string2:SetFont(\"Fonts\\\\FRIZQT__.TTF\", 14, \"OUTLINE\")\n        frame.string2:SetPoint(\"BOTTOMLEFT\", frame, \"BOTTOMLEFT\", 0, 0)\n        \n        frame.string = frame:CreateFontString(nil, \"BACKGROUND\", nil, -7)\n        frame.string:SetFont(\"Fonts\\\\FRIZQT__.TTF\", 20, \"OUTLINE\")\n        frame.string:SetPoint(\"TOPLEFT\", frame, \"TOPLEFT\", 0, 0)\n        \n        aura_env.texturePool[aura_env.textureIndex] = frame\n        \n    end\n    return aura_env.texturePool[aura_env.textureIndex]\nend\n\naura_env.addTextureToNameplate = function(unit, icon, text, text2)\n    local nameplate = C_NamePlate.GetNamePlateForUnit(unit)\n    if not nameplate then return end\n    local frame = aura_env.getTextureFromPool()\n    frame:ClearAllPoints()\n    --frame:SetParent(nameplate)\n    frame:SetPoint(\"CENTER\", nameplate, \"CENTER\", 0, -20)\n    frame.icon:SetTexture(icon)\n    frame.string:SetText(text)\n    frame.string2:SetText(text2)\n    frame:Show()\nend\n\naura_env.everyFrame = function()\n    for i=1, #aura_env.texturePool do\n        aura_env.texturePool[i]:Hide()\n    end\n    aura_env.textureIndex = 0\nend",
 				},
 			},
-			["regionType"] = "text",
 			["selfPoint"] = "CENTER",
+			["regionType"] = "text",
+			["wordWrap"] = "WordWrap",
 			["fixedWidth"] = 200,
 			["untrigger"] = {
 				["custom"] = "function()\n    return true\nend",
@@ -12001,24 +12001,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["encounterid"] = "1873",
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -12031,11 +12028,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -12139,10 +12139,12 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Stormforged Spear", -- [1]
+				},
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["use_specific_unit"] = false,
+				["unit"] = "player",
 				["use_unit"] = true,
 				["name"] = " ",
 				["spellIds"] = {
@@ -12150,10 +12152,8 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["names"] = {
-					"Stormforged Spear", -- [1]
-				},
+				["use_specific_unit"] = false,
+				["subeventPrefix"] = "SPELL",
 				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
@@ -12444,16 +12444,16 @@ WeakAurasSaved = {
 				["use_powertype"] = true,
 				["subeventSuffix"] = "_CAST_START",
 				["genericShowOn"] = "showOnActive",
-				["use_percentpower"] = true,
-				["event"] = "Power",
 				["subeventPrefix"] = "SPELL",
+				["event"] = "Power",
+				["use_unit"] = true,
 				["names"] = {
 				},
 				["powertype"] = 3,
 				["spellIds"] = {
 				},
 				["unit"] = "player",
-				["use_unit"] = true,
+				["use_percentpower"] = true,
 				["unevent"] = "auto",
 				["percentpower"] = "60",
 				["percentpower_operator"] = "<",
@@ -12784,12 +12784,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -12860,14 +12860,14 @@ WeakAurasSaved = {
 				["genericShowOn"] = "showAlways",
 				["use_unit"] = true,
 				["use_genericShowOn"] = true,
-				["use_remaining"] = false,
+				["type"] = "custom",
 				["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 				["custom_hide"] = "custom",
-				["type"] = "custom",
+				["charges"] = "1",
 				["custom"] = "function()\n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 				["debuffType"] = "HELPFUL",
 				["charges_operator"] = ">=",
-				["charges"] = "1",
+				["use_remaining"] = false,
 				["subeventSuffix"] = "_CAST_START",
 				["custom_type"] = "status",
 				["use_showOn"] = true,
@@ -13267,6 +13267,26 @@ WeakAurasSaved = {
 					["use_alpha"] = true,
 				},
 			},
+			["id"] = "Hand of the Protector Empty 2",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["texture"] = "Interface\\Addons\\SlootAuras\\GeneralAura4-CircleQuarterBottomRight.tga",
+			["rotation"] = 0,
+			["internalVersion"] = 6,
+			["width"] = 200,
+			["selfPoint"] = "CENTER",
+			["additional_triggers"] = {
+			},
+			["alpha"] = 1,
+			["frameStrata"] = 1,
+			["desaturate"] = false,
+			["discrete_rotation"] = 0,
 			["trigger"] = {
 				["use_power"] = false,
 				["useCount"] = true,
@@ -13306,26 +13326,6 @@ WeakAurasSaved = {
 				["names"] = {
 				},
 				["subeventPrefix"] = "SPELL",
-			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["texture"] = "Interface\\Addons\\SlootAuras\\GeneralAura4-CircleQuarterBottomRight.tga",
-			["rotation"] = 0,
-			["internalVersion"] = 6,
-			["width"] = 200,
-			["selfPoint"] = "CENTER",
-			["id"] = "Hand of the Protector Empty 2",
-			["alpha"] = 1,
-			["frameStrata"] = 1,
-			["desaturate"] = false,
-			["discrete_rotation"] = 0,
-			["additional_triggers"] = {
 			},
 			["numTriggers"] = 1,
 			["anchorFrameType"] = "SCREEN",
@@ -14179,14 +14179,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -14213,7 +14210,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -14418,9 +14418,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["textureWrapMode"] = "CLAMP",
-			["useAdjustededMax"] = false,
 			["backgroundTexture"] = "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+			["useAdjustededMax"] = false,
+			["fontSize"] = 12,
 			["numTriggers"] = 2,
 			["foregroundTexture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Circle_Smooth_Border",
 			["selfPoint"] = "CENTER",
@@ -14466,7 +14466,7 @@ WeakAurasSaved = {
 			["xOffset"] = -141.700256347656,
 			["anchorPoint"] = "CENTER",
 			["inverse"] = false,
-			["fontSize"] = 12,
+			["textureWrapMode"] = "CLAMP",
 			["orientation"] = "VERTICAL",
 			["crop_x"] = 0.41,
 			["discrete_rotation"] = 0,
@@ -14563,8 +14563,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
+					["single"] = "TANK",
 					["multi"] = {
+						["TANK"] = true,
 					},
 				},
 				["use_encounterid"] = true,
@@ -14572,12 +14574,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
+				["use_zone"] = false,
 				["class"] = {
 					["multi"] = {
 					},
@@ -14590,7 +14587,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["zone"] = "Hellfire Citadel",
 				["size"] = {
 					["multi"] = {
@@ -15011,14 +15011,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -15045,7 +15042,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -15349,12 +15349,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -16193,11 +16193,11 @@ WeakAurasSaved = {
 				["type"] = "custom",
 				["custom_type"] = "event",
 				["subeventSuffix"] = "_CAST_START",
-				["custom"] = "function(event, timestamp, e, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellID, spellName, spellSchool) \n    \n    \n    \n    if e == \"SPELL_CAST_START\" and spellID == 221486 and aura_env.check == false then\n        aura_env.check = true\n        return true\n    end\n    \n    if e == \"SPELL_CAST_SUCCESS\" and spellID == 221486 then\n        aura_env.check = false\n    end\n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-				["event"] = "Combat Log",
 				["spellIds"] = {
 				},
+				["event"] = "Combat Log",
 				["name"] = "Purified Essence",
+				["custom"] = "function(event, timestamp, e, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellID, spellName, spellSchool) \n    \n    \n    \n    if e == \"SPELL_CAST_START\" and spellID == 221486 and aura_env.check == false then\n        aura_env.check = true\n        return true\n    end\n    \n    if e == \"SPELL_CAST_SUCCESS\" and spellID == 221486 then\n        aura_env.check = false\n    end\n    \n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 				["use_spellId"] = true,
 				["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 				["unevent"] = "timed",
@@ -16532,14 +16532,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -16566,7 +16563,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -17319,21 +17319,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1958",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -17346,11 +17346,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1958",
 				["size"] = {
 					["multi"] = {
 					},
@@ -18289,10 +18289,12 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["use_specific_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["unit"] = "member",
+				["names"] = {
+					"Valarjar's Bond", -- [1]
+				},
 				["unevent"] = "timed",
 				["name"] = " ",
 				["spellIds"] = {
@@ -18300,10 +18302,8 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["use_unit"] = true,
-				["names"] = {
-					"Valarjar's Bond", -- [1]
-				},
-				["subeventPrefix"] = "SPELL",
+				["unit"] = "member",
+				["use_specific_unit"] = true,
 				["debuffType"] = "HELPFUL",
 			},
 			["desaturate"] = false,
@@ -18327,21 +18327,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1958",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -18354,11 +18354,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1958",
 				["size"] = {
 					["multi"] = {
 					},
@@ -19852,15 +19852,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["encounterid"] = "1876",
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -19869,10 +19866,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -19882,8 +19876,14 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["use_zone"] = false,
-				["encounterid"] = "1876",
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -20002,11 +20002,11 @@ WeakAurasSaved = {
 			},
 			["stickyDuration"] = false,
 			["text1Point"] = "BOTTOM",
-			["untrigger"] = {
-			},
+			["text2Font"] = "Friz Quadrata TT",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 50,
-			["parent"] = "TowellieesCD",
+			["untrigger"] = {
+			},
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -20044,15 +20044,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["use_combat"] = true,
 				["use_class"] = true,
 				["size"] = {
@@ -20060,8 +20060,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["text2Font"] = "Friz Quadrata TT",
-			["desaturate"] = false,
+			["parent"] = "TowellieesCD",
+			["internalVersion"] = 6,
 			["text1Color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -20115,8 +20115,8 @@ WeakAurasSaved = {
 			["text1Enabled"] = true,
 			["conditions"] = {
 			},
-			["internalVersion"] = 6,
 			["text1Containment"] = "INSIDE",
+			["desaturate"] = false,
 		},
 		["Monk Absorb Percent Text"] = {
 			["sparkWidth"] = 10,
@@ -20236,15 +20236,15 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["outline"] = "OUTLINE",
-			["parent"] = "Monk Health/Absorb",
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["width"] = 21.1399726867676,
 			["color"] = {
 				0, -- [1]
 				0.650980392156863, -- [2]
 				1, -- [3]
 				0.75, -- [4]
 			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["width"] = 21.1399726867676,
+			["disjunctive"] = "any",
 			["barInFront"] = true,
 			["customText"] = "function()\n    if not WA_absorption then return \"\" end\n    \n    local absorb = (WA_absorption/UnitHealthMax(\"player\"))*100\n    \n    if absorb < .5 then return \"\" end\n    \n    return(\"%i\"):format(absorb)\nend",
 			["untrigger"] = {
@@ -20349,7 +20349,7 @@ WeakAurasSaved = {
 			["displayTextLeft"] = "%c",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["disjunctive"] = "any",
+			["parent"] = "Monk Health/Absorb",
 			["fixedWidth"] = 200,
 			["numTriggers"] = 1,
 			["sparkDesature"] = false,
@@ -20702,14 +20702,14 @@ WeakAurasSaved = {
 			["fontSize"] = 17,
 			["regionType"] = "text",
 			["init_completed"] = 1,
-			["disjunctive"] = "all",
-			["id"] = "AP Percent 2 2",
-			["justify"] = "CENTER",
-			["conditions"] = {
-			},
 			["additional_triggers"] = {
 			},
 			["wordWrap"] = "WordWrap",
+			["justify"] = "CENTER",
+			["disjunctive"] = "all",
+			["id"] = "AP Percent 2 2",
+			["conditions"] = {
+			},
 			["frameStrata"] = 1,
 			["width"] = 29.5824317932129,
 			["parent"] = "AP/AM 2",
@@ -20745,24 +20745,6 @@ WeakAurasSaved = {
 			["anchorPoint"] = "CENTER",
 			["conditions"] = {
 			},
-			["id"] = "Energy Text",
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["automaticWidth"] = "Auto",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["wordWrap"] = "WordWrap",
-			["additional_triggers"] = {
-			},
-			["internalVersion"] = 6,
-			["justify"] = "CENTER",
-			["selfPoint"] = "CENTER",
 			["trigger"] = {
 				["use_power"] = false,
 				["genericShowOn"] = "showOnActive",
@@ -20787,12 +20769,21 @@ WeakAurasSaved = {
 				["percentpower"] = "60",
 				["percentpower_operator"] = ">=",
 			},
-			["width"] = 22.6749114990234,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = -545,
-			["font"] = "MSBT Transformers",
-			["numTriggers"] = 1,
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["selfPoint"] = "CENTER",
+			["id"] = "Energy Text",
+			["internalVersion"] = 6,
+			["justify"] = "CENTER",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -20807,6 +20798,15 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
+			["additional_triggers"] = {
+			},
+			["width"] = 22.6749114990234,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = -545,
+			["font"] = "MSBT Transformers",
+			["numTriggers"] = 1,
+			["wordWrap"] = "WordWrap",
 			["height"] = 17.6524181365967,
 			["fixedWidth"] = 200,
 			["load"] = {
@@ -20927,14 +20927,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1873",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -20961,7 +20958,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -21265,14 +21265,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1873",
 				["zone"] = "Hellfire Citadel",
 				["use_encounterid"] = true,
 				["difficulty"] = {
@@ -21296,7 +21293,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -21706,14 +21706,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -21740,7 +21737,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -22103,8 +22103,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
+					["single"] = "TANK",
 					["multi"] = {
+						["TANK"] = true,
 					},
 				},
 				["use_encounterid"] = true,
@@ -22112,12 +22114,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
+				["use_zone"] = false,
 				["class"] = {
 					["multi"] = {
 					},
@@ -22130,7 +22127,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["zone"] = "Hellfire Citadel",
 				["size"] = {
 					["multi"] = {
@@ -22416,14 +22416,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["zone"] = "Hellfire Citadel",
 				["use_encounterid"] = true,
 				["difficulty"] = {
@@ -22447,7 +22444,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -22958,12 +22958,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Protected", -- [1]
-				},
+				["unit"] = "player",
 				["use_specific_unit"] = false,
 				["name"] = " ",
 				["spellIds"] = {
@@ -22971,8 +22969,10 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_unit"] = true,
+				["names"] = {
+					"Protected", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HARMFUL",
 			},
 			["desaturate"] = false,
@@ -22992,21 +22992,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1958",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -23022,11 +23022,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1958",
 				["size"] = {
 					["multi"] = {
 					},
@@ -23100,15 +23100,15 @@ WeakAurasSaved = {
 			["text2Font"] = "Friz Quadrata TT",
 		},
 		["Demon Spikes Aura"] = {
-			["xOffset"] = 270,
-			["untrigger"] = {
-			},
 			["color"] = {
 				1, -- [1]
 				0.890196078431373, -- [2]
 				0, -- [3]
 				0.829999998211861, -- [4]
 			},
+			["untrigger"] = {
+			},
+			["parent"] = "Demon Spikes",
 			["conditions"] = {
 			},
 			["mirror"] = false,
@@ -23225,7 +23225,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Demon Spikes",
+			["xOffset"] = 270,
 		},
 		["ISB 2"] = {
 			["user_y"] = 0.44,
@@ -23768,6 +23768,33 @@ WeakAurasSaved = {
 			["anchorPoint"] = "CENTER",
 			["conditions"] = {
 			},
+			["additional_triggers"] = {
+			},
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
 			["trigger"] = {
 				["use_power"] = false,
 				["genericShowOn"] = "showOnActive",
@@ -23792,44 +23819,17 @@ WeakAurasSaved = {
 				["percentpower"] = "60",
 				["percentpower_operator"] = "<",
 			},
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["automaticWidth"] = "Auto",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["wordWrap"] = "WordWrap",
-			["id"] = "Energy Low Text",
 			["internalVersion"] = 6,
 			["justify"] = "CENTER",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["additional_triggers"] = {
-			},
+			["selfPoint"] = "CENTER",
+			["id"] = "Energy Low Text",
 			["width"] = 22.6749114990234,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = -545,
 			["font"] = "MSBT Transformers",
 			["numTriggers"] = 1,
-			["selfPoint"] = "CENTER",
+			["wordWrap"] = "WordWrap",
 			["height"] = 17.6524181365967,
 			["fixedWidth"] = 200,
 			["load"] = {
@@ -24812,8 +24812,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
+					["single"] = "TANK",
 					["multi"] = {
+						["TANK"] = true,
 					},
 				},
 				["use_encounterid"] = true,
@@ -24821,12 +24823,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
+				["use_zone"] = false,
 				["class"] = {
 					["multi"] = {
 					},
@@ -24839,7 +24836,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["zone"] = "Hellfire Citadel",
 				["size"] = {
 					["multi"] = {
@@ -25204,21 +25204,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1877",
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -25231,11 +25231,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["race"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1877",
 				["size"] = {
 					["multi"] = {
 					},
@@ -25375,14 +25375,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1841",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -25411,7 +25408,10 @@ WeakAurasSaved = {
 						["TANK"] = true,
 					},
 				},
-				["encounterid"] = "1841",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -25832,10 +25832,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["use_specific_unit"] = false,
+				["unit"] = "player",
 				["names"] = {
 					"Salty Spittle", -- [1]
 				},
@@ -25845,8 +25845,8 @@ WeakAurasSaved = {
 				["name"] = " ",
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_unit"] = true,
+				["use_specific_unit"] = false,
+				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HARMFUL",
 			},
 			["desaturate"] = false,
@@ -25866,21 +25866,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1962",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -25896,11 +25896,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1962",
 				["size"] = {
 					["multi"] = {
 					},
@@ -26006,10 +26006,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_specific_unit"] = false,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["use_unit"] = true,
+				["unit"] = "player",
 				["names"] = {
 					"Expel Light", -- [1]
 				},
@@ -26019,8 +26019,8 @@ WeakAurasSaved = {
 				["name"] = " ",
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_specific_unit"] = false,
+				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
@@ -26040,14 +26040,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -26074,7 +26071,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -26691,14 +26691,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2008",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -26725,7 +26722,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2008",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -26865,15 +26865,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["encounterid"] = "1841",
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -26882,10 +26879,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -26895,8 +26889,14 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["use_zone"] = false,
-				["encounterid"] = "1841",
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -27078,6 +27078,10 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["regionType"] = "text",
 			["init_completed"] = 1,
+			["additional_triggers"] = {
+			},
+			["wordWrap"] = "WordWrap",
+			["justify"] = "LEFT",
 			["color"] = {
 				1, -- [1]
 				0.61960784313726, -- [2]
@@ -27085,12 +27089,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["id"] = "AP Amount 2 2",
-			["justify"] = "LEFT",
 			["conditions"] = {
 			},
-			["additional_triggers"] = {
-			},
-			["wordWrap"] = "WordWrap",
 			["frameStrata"] = 1,
 			["width"] = 21.1400394439697,
 			["parent"] = "AP/AM 2",
@@ -27171,14 +27171,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2008",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -27205,7 +27202,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "2008",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -28210,14 +28210,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2008",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -28244,7 +28241,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2008",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -28380,7 +28380,7 @@ WeakAurasSaved = {
 			["text1Point"] = "BOTTOMRIGHT",
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 50,
-			["text1Containment"] = "INSIDE",
+			["disjunctive"] = "all",
 			["load"] = {
 				["talent2"] = {
 					["multi"] = {
@@ -28427,9 +28427,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["text1Containment"] = "INSIDE",
 			["xOffset"] = 177.036926269531,
-			["disjunctive"] = "all",
-			["glow"] = false,
+			["internalVersion"] = 6,
 			["text2Containment"] = "INSIDE",
 			["text2Font"] = "Friz Quadrata TT",
 			["text1Color"] = {
@@ -28469,8 +28469,8 @@ WeakAurasSaved = {
 			["parent"] = "TowellieesCD",
 			["conditions"] = {
 			},
-			["internalVersion"] = 6,
 			["icon"] = true,
+			["glow"] = false,
 		},
 		["Immolation Aura"] = {
 			["backdropColor"] = {
@@ -28610,9 +28610,9 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message_type"] = "SAY",
-					["do_message"] = false,
 					["do_custom"] = false,
 					["custom"] = "if _G[\"WA_MARKED4DEATH_POS\"] then\n    SendChatMessage(_G[\"WA_MARKED4DEATH_POS\"]..\" MARK!\" ,\"SAY\") \nend",
+					["do_message"] = false,
 				},
 				["finish"] = {
 					["do_custom"] = true,
@@ -28701,15 +28701,15 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Blackrock Foundry",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1864",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["single"] = "mythic",
@@ -28717,7 +28717,7 @@ WeakAurasSaved = {
 						["mythic"] = true,
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -28733,11 +28733,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1864",
 				["size"] = {
 					["multi"] = {
 					},
@@ -28813,7 +28813,20 @@ WeakAurasSaved = {
 				},
 			},
 			["internalVersion"] = 6,
-			["wordWrap"] = "WordWrap",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
 			["trigger"] = {
 				["unit"] = "member",
 				["useCount"] = true,
@@ -28829,10 +28842,10 @@ WeakAurasSaved = {
 				},
 				["use_unit"] = true,
 				["custom_hide"] = "timed",
+				["count"] = "4",
 				["name"] = "Searing Brand",
 				["spellIds"] = {
 				},
-				["count"] = "4",
 				["subeventSuffix"] = "_CAST_START",
 				["event"] = "Health",
 				["subeventPrefix"] = "SPELL",
@@ -28891,38 +28904,6 @@ WeakAurasSaved = {
 			["fontSize"] = 27,
 			["regionType"] = "text",
 			["init_completed"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["justify"] = "LEFT",
-			["anchorFrameType"] = "SCREEN",
-			["id"] = "Krosus taunt!",
-			["selfPoint"] = "BOTTOM",
-			["frameStrata"] = 1,
-			["width"] = 144.289367675781,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
-			["numTriggers"] = 2,
-			["yOffset"] = 140.196044921875,
-			["fixedWidth"] = 200,
-			["xOffset"] = -2.0465087890625,
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -28943,6 +28924,25 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
+			["justify"] = "LEFT",
+			["selfPoint"] = "BOTTOM",
+			["id"] = "Krosus taunt!",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 144.289367675781,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["numTriggers"] = 2,
+			["yOffset"] = 140.196044921875,
+			["fixedWidth"] = 200,
+			["xOffset"] = -2.0465087890625,
+			["wordWrap"] = "WordWrap",
 		},
 		["Monk Absorb Aura"] = {
 			["user_y"] = -0.03,
@@ -28983,10 +28983,10 @@ WeakAurasSaved = {
 				["event"] = "Health",
 				["unit"] = "player",
 				["customDuration"] = "function()\n    local total = 0\n    local index = 0\n    repeat\n        index = index + 1\n        local _,_,_,_,_,_,_,_,_,_,id,_,_,_,amt = UnitAura(\"player\",index,\"HELPFUL\")\n        if amt then\n            -- raid absorbs\n            if id == 77535 -- Blood Shield\n            --or id == 155784 -- Primal Tenacity\n            or id == 48707 -- AMS\n            or id == 123402 -- Glyphed Guard\n            then\n                total = total + amt\n            end\n        end\n    until not id\n    \n    WA_absorption = UnitGetTotalAbsorbs(\"player\")-total\n    return WA_absorption/UnitHealthMax(\"player\"),1,true\nend",
-				["spellIds"] = {
-				},
 				["custom"] = "function()\n    return true\nend",
 				["events"] = "UNIT_ABSORB_AMOUNT_CHANGED",
+				["spellIds"] = {
+				},
 				["unevent"] = "auto",
 				["use_percenthealth"] = false,
 				["percenthealth_operator"] = ">=",
@@ -29189,15 +29189,12 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["encounterid"] = "1876",
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -29206,10 +29203,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -29222,8 +29216,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
-				["encounterid"] = "1876",
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -29951,9 +29951,9 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message_type"] = "SAY",
-					["do_custom"] = false,
 					["custom"] = "",
 					["do_message"] = false,
+					["do_custom"] = false,
 				},
 				["init"] = {
 					["do_custom"] = false,
@@ -29989,7 +29989,7 @@ WeakAurasSaved = {
 				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HARMFUL",
 				["unit"] = "player",
-				["sourceName"] = "Elder Regail",
+				["spell"] = "Lightning Bolt",
 				["type"] = "status",
 				["unevent"] = "timed",
 				["events"] = "",
@@ -30002,8 +30002,8 @@ WeakAurasSaved = {
 				["use_spellName"] = false,
 				["health"] = "0",
 				["group_countOperator"] = "==",
+				["sourceName"] = "Elder Regail",
 				["use_sourceName"] = false,
-				["spell"] = "Lightning Bolt",
 				["sourceUnit"] = "target",
 				["health_operator"] = ">",
 			},
@@ -30067,12 +30067,11 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 20,
 			["displayStacks"] = "%c",
-			["fixedWidth"] = 200,
+			["displayIcon"] = "",
 			["yOffset"] = 119.300109863281,
 			["regionType"] = "text",
 			["stacksPoint"] = "BOTTOM",
-			["conditions"] = {
-			},
+			["fixedWidth"] = 200,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -30112,7 +30111,8 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["numTriggers"] = 1,
 			["xOffset"] = -155.740112304688,
-			["displayIcon"] = "",
+			["conditions"] = {
+			},
 			["cooldown"] = true,
 			["textColor"] = {
 				1, -- [1]
@@ -30746,14 +30746,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2008",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -30780,7 +30777,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "2008",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -31502,14 +31502,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -31536,7 +31533,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -31676,21 +31676,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1873",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -31703,11 +31703,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1873",
 				["size"] = {
 					["multi"] = {
 					},
@@ -32035,14 +32035,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
+					["single"] = "TANK",
 					["multi"] = {
+						["TANK"] = true,
 					},
 				},
 				["class"] = {
@@ -32057,12 +32062,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
+				["use_zone"] = false,
 				["zone"] = "Hellfire Citadel",
 				["size"] = {
 					["multi"] = {
@@ -32205,8 +32205,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
+					["single"] = "TANK",
 					["multi"] = {
+						["TANK"] = true,
 					},
 				},
 				["use_encounterid"] = true,
@@ -32214,12 +32216,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
-					["multi"] = {
-						["TANK"] = true,
-					},
-				},
+				["use_zone"] = false,
 				["class"] = {
 					["multi"] = {
 					},
@@ -32232,7 +32229,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["zone"] = "Hellfire Citadel",
 				["size"] = {
 					["multi"] = {
@@ -33134,14 +33134,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1873",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -33168,7 +33165,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -34046,14 +34046,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2008",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -34080,7 +34077,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2008",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -34240,14 +34240,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -34274,7 +34271,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -34416,24 +34416,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["encounterid"] = "1854",
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -34443,11 +34440,14 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1854",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -34599,15 +34599,15 @@ WeakAurasSaved = {
 			},
 			["trigger"] = {
 				["subeventPrefix"] = "SPELL",
-				["use_power"] = false,
+				["use_genericShowOn"] = true,
 				["spellId"] = "85247",
 				["names"] = {
 				},
 				["powertype"] = 99,
-				["use_genericShowOn"] = true,
+				["ownOnly"] = true,
 				["genericShowOn"] = "showAlways",
 				["use_unit"] = true,
-				["spellName"] = 213652,
+				["debuffType"] = "HELPFUL",
 				["useCount"] = true,
 				["spellIds"] = {
 				},
@@ -34615,7 +34615,7 @@ WeakAurasSaved = {
 				["use_remaining"] = true,
 				["unevent"] = "auto",
 				["use_powertype"] = true,
-				["debuffType"] = "HELPFUL",
+				["custom_hide"] = "timed",
 				["countOperator"] = "==",
 				["type"] = "status",
 				["power"] = "3",
@@ -34627,10 +34627,10 @@ WeakAurasSaved = {
 				["realSpellName"] = "Hand of the Protector",
 				["use_spellName"] = true,
 				["count"] = "1",
-				["custom_hide"] = "timed",
+				["spellName"] = 213652,
 				["name"] = "Holy Power",
 				["unit"] = "player",
-				["ownOnly"] = true,
+				["use_power"] = false,
 				["fullscan"] = true,
 			},
 			["selfPoint"] = "CENTER",
@@ -35147,10 +35147,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["use_specific_unit"] = false,
+				["unit"] = "player",
 				["names"] = {
 					"Flaming Volatile Foam", -- [1]
 				},
@@ -35160,8 +35160,8 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_unit"] = true,
+				["use_specific_unit"] = false,
+				["subeventPrefix"] = "SPELL",
 				["custom_hide"] = "timed",
 			},
 			["stickyDuration"] = false,
@@ -35343,14 +35343,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2008",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -35377,7 +35374,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "2008",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -35541,16 +35541,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["single"] = "TANK",
+					["multi"] = {
+						["TANK"] = true,
+					},
+				},
 				["class"] = {
 					["multi"] = {
 					},
@@ -35563,10 +35565,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
+				["race"] = {
 					["multi"] = {
-						["TANK"] = true,
 					},
 				},
 				["talent"] = {
@@ -36004,22 +36004,22 @@ WeakAurasSaved = {
 			},
 			["trigger"] = {
 				["use_unit"] = true,
-				["use_power"] = false,
+				["use_genericShowOn"] = true,
 				["spellId"] = "85247",
 				["names"] = {
 				},
 				["powertype"] = 99,
-				["use_genericShowOn"] = true,
+				["ownOnly"] = true,
 				["genericShowOn"] = "showAlways",
 				["unit"] = "player",
-				["custom_hide"] = "timed",
+				["debuffType"] = "HELPFUL",
 				["useCount"] = true,
 				["name"] = "Holy Power",
 				["use_spellId"] = true,
 				["use_remaining"] = true,
 				["power"] = "3",
 				["use_powertype"] = true,
-				["debuffType"] = "HELPFUL",
+				["spellName"] = 213652,
 				["countOperator"] = "==",
 				["type"] = "status",
 				["unevent"] = "auto",
@@ -36031,11 +36031,11 @@ WeakAurasSaved = {
 				["realSpellName"] = "Hand of the Protector",
 				["use_spellName"] = true,
 				["count"] = "1",
-				["spellName"] = 213652,
+				["custom_hide"] = "timed",
 				["spellIds"] = {
 				},
 				["subeventPrefix"] = "SPELL",
-				["ownOnly"] = true,
+				["use_power"] = false,
 				["fullscan"] = true,
 			},
 			["selfPoint"] = "CENTER",
@@ -36515,21 +36515,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1873",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -36542,11 +36542,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1873",
 				["size"] = {
 					["multi"] = {
 					},
@@ -37027,14 +37027,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1873",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -37061,7 +37058,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -37486,16 +37486,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["single"] = "TANK",
+					["multi"] = {
+						["TANK"] = true,
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
+				["race"] = {
 					["multi"] = {
-						["TANK"] = true,
 					},
 				},
 				["class"] = {
@@ -37510,10 +37513,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent"] = {
 					["multi"] = {
 					},
@@ -37642,15 +37642,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["use_combat"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -37784,14 +37784,14 @@ WeakAurasSaved = {
 				["genericShowOn"] = "showAlways",
 				["use_unit"] = true,
 				["use_genericShowOn"] = true,
-				["use_remaining"] = false,
+				["charges"] = "1",
 				["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 				["spellName"] = 53600,
-				["charges"] = "1",
+				["type"] = "custom",
 				["custom"] = "function()\n    return true\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 				["debuffType"] = "HELPFUL",
 				["charges_operator"] = ">=",
-				["type"] = "custom",
+				["use_remaining"] = false,
 				["subeventSuffix"] = "_CAST_START",
 				["custom_type"] = "status",
 				["use_showOn"] = true,
@@ -37834,7 +37834,7 @@ WeakAurasSaved = {
 				["unevent"] = "auto",
 				["genericShowOn"] = "showOnActive",
 				["event"] = "Conditions",
-				["use_unit"] = true,
+				["unit"] = "player",
 				["names"] = {
 				},
 				["spellIds"] = {
@@ -37842,8 +37842,8 @@ WeakAurasSaved = {
 				["custom"] = "function() return GetZoneText() == \"Broken Shore\" end\n\n\n",
 				["customIcon"] = "\n\n",
 				["check"] = "update",
+				["use_unit"] = true,
 				["subeventPrefix"] = "SPELL",
-				["unit"] = "player",
 				["debuffType"] = "HELPFUL",
 			},
 			["stickyDuration"] = false,
@@ -38026,14 +38026,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -38060,7 +38057,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -38207,12 +38207,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -38313,15 +38313,15 @@ WeakAurasSaved = {
 					["type"] = "none",
 					["scaleType"] = "straightScale",
 					["colorR"] = 0.964705882352941,
-					["scaley"] = 3,
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
 					["use_color"] = false,
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["preset"] = "flip",
 					["alpha"] = 0,
 					["colorA"] = 1,
 					["y"] = 0,
 					["x"] = 0,
 					["colorType"] = "straightColor",
-					["preset"] = "flip",
+					["scaley"] = 3,
 					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      return r1 + (progress * (r2 - r1)), g1 + (progress * (g2 - g1)), b1 + (progress * (b2 - b1)), a1 + (progress * (a2 - a1))\n    end\n  ",
 					["rotate"] = 0,
 					["duration_type"] = "relative",
@@ -38821,14 +38821,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "2008",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -38855,7 +38852,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "2008",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -39418,13 +39418,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -39440,10 +39443,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent"] = {
 					["multi"] = {
 					},
@@ -40311,21 +40311,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1854",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -40338,11 +40338,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1854",
 				["size"] = {
 					["multi"] = {
 					},
@@ -40907,10 +40907,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["use_specific_unit"] = false,
+				["unit"] = "player",
 				["names"] = {
 					"Fiery Phlegm", -- [1]
 				},
@@ -40920,8 +40920,8 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_unit"] = true,
+				["use_specific_unit"] = false,
+				["subeventPrefix"] = "SPELL",
 				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
@@ -40941,14 +40941,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1962",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -40975,7 +40972,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1962",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -41126,10 +41126,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["class"] = {
 					["multi"] = {
 					},
@@ -41142,11 +41139,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["size"] = {
 					["multi"] = {
 					},
@@ -41420,14 +41420,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -41454,7 +41451,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -41708,26 +41708,26 @@ WeakAurasSaved = {
 				["use_spell"] = true,
 				["subeventPrefix"] = "SPELL",
 				["use_unit"] = true,
-				["events"] = "",
-				["buffShowOn"] = "showOnActive",
-				["spellIds"] = {
-					204463, -- [1]
-				},
-				["group_count"] = "1",
-				["debuffType"] = "HARMFUL",
-				["spellName"] = "Lightning Bolt",
+				["custom"] = "\n\n",
 				["custom_hide"] = "timed",
+				["events"] = "",
+				["group_count"] = "1",
+				["spellName"] = "Lightning Bolt",
+				["debuffType"] = "HARMFUL",
+				["buffShowOn"] = "showOnActive",
 				["group_countOperator"] = "==",
-				["type"] = "aura",
+				["sourceName"] = "Elder Regail",
 				["spell"] = "Lightning Bolt",
 				["unevent"] = "timed",
 				["subeventSuffix"] = "_CREATE",
 				["custom_type"] = "status",
 				["event"] = "Combat Log",
+				["type"] = "aura",
 				["use_sourceName"] = false,
-				["sourceName"] = "Elder Regail",
 				["use_spellName"] = false,
-				["custom"] = "\n\n",
+				["spellIds"] = {
+					204463, -- [1]
+				},
 				["use_sourceUnit"] = true,
 				["check"] = "event",
 				["name_info"] = "aura",
@@ -41770,7 +41770,10 @@ WeakAurasSaved = {
 						["mythic"] = true,
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["multi"] = {
 					},
@@ -41783,11 +41786,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
 				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -41905,16 +41905,16 @@ WeakAurasSaved = {
 				["use_powertype"] = true,
 				["subeventSuffix"] = "_CAST_START",
 				["genericShowOn"] = "showOnActive",
-				["use_percentpower"] = true,
-				["event"] = "Power",
 				["subeventPrefix"] = "SPELL",
+				["event"] = "Power",
+				["unit"] = "player",
 				["names"] = {
 				},
 				["powertype"] = 3,
 				["spellIds"] = {
 				},
 				["use_unit"] = true,
-				["unit"] = "player",
+				["use_percentpower"] = true,
 				["unevent"] = "auto",
 				["percentpower"] = "60",
 				["percentpower_operator"] = ">=",
@@ -42190,11 +42190,24 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["wordWrap"] = "WordWrap",
+			["selfPoint"] = "CENTER",
 			["id"] = "Druid Rage Area Text",
 			["internalVersion"] = 6,
 			["justify"] = "CENTER",
-			["selfPoint"] = "CENTER",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["trigger"] = {
 				["use_power"] = true,
 				["genericShowOn"] = "showOnActive",
@@ -42226,20 +42239,7 @@ WeakAurasSaved = {
 			},
 			["font"] = "MSBT Transformers",
 			["numTriggers"] = 1,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
+			["wordWrap"] = "WordWrap",
 			["height"] = 29.9323196411133,
 			["fixedWidth"] = 200,
 			["load"] = {
@@ -42547,14 +42547,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1876",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -42581,7 +42578,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1876",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -43006,24 +43006,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["encounterid"] = "1841",
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -43036,11 +43033,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1841",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -43360,12 +43360,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Flame Lick", -- [1]
-				},
+				["unit"] = "player",
 				["use_specific_unit"] = false,
 				["name"] = " ",
 				["spellIds"] = {
@@ -43373,8 +43371,10 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_unit"] = true,
+				["names"] = {
+					"Flame Lick", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HARMFUL",
 			},
 			["desaturate"] = false,
@@ -43397,21 +43397,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1962",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -43424,11 +43424,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1962",
 				["size"] = {
 					["multi"] = {
 					},
@@ -43568,24 +43568,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["encounterid"] = "1854",
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -43595,11 +43592,14 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1854",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -43703,10 +43703,12 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["names"] = {
+					"Dark Discharge", -- [1]
+				},
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["use_specific_unit"] = false,
+				["unit"] = "player",
 				["use_unit"] = true,
 				["spellIds"] = {
 					228769, -- [1]
@@ -43714,10 +43716,8 @@ WeakAurasSaved = {
 				["name"] = " ",
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["names"] = {
-					"Dark Discharge", -- [1]
-				},
+				["use_specific_unit"] = false,
+				["subeventPrefix"] = "SPELL",
 				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
@@ -43740,14 +43740,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1962",
 				["zone"] = "Hellfire Citadel",
 				["use_encounterid"] = true,
 				["difficulty"] = {
@@ -43771,7 +43768,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1962",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -43909,14 +43909,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1873",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -43943,7 +43940,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -44047,12 +44047,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Storm of Justice", -- [1]
-				},
+				["unit"] = "player",
 				["use_specific_unit"] = false,
 				["name"] = " ",
 				["spellIds"] = {
@@ -44060,8 +44058,10 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_unit"] = true,
+				["names"] = {
+					"Storm of Justice", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HARMFUL",
 			},
 			["desaturate"] = false,
@@ -44081,21 +44081,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1958",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -44111,11 +44111,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1958",
 				["size"] = {
 					["multi"] = {
 					},
@@ -44200,37 +44200,6 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["id"] = "EB Stacks",
-			["activeTriggerMode"] = 0,
-			["customTextUpdate"] = "update",
-			["automaticWidth"] = "Auto",
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["wordWrap"] = "WordWrap",
-			["additional_triggers"] = {
-			},
-			["internalVersion"] = 6,
-			["justify"] = "LEFT",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
 			["trigger"] = {
 				["type"] = "aura",
 				["subeventSuffix"] = "_CAST_START",
@@ -44246,13 +44215,44 @@ WeakAurasSaved = {
 				},
 				["debuffType"] = "HELPFUL",
 			},
+			["activeTriggerMode"] = 0,
+			["customTextUpdate"] = "update",
+			["automaticWidth"] = "Auto",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+				},
+			},
+			["id"] = "EB Stacks",
+			["internalVersion"] = 6,
+			["justify"] = "LEFT",
+			["selfPoint"] = "BOTTOM",
+			["additional_triggers"] = {
+			},
 			["width"] = 24.2099151611328,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["progressPrecision"] = 0,
 			["font"] = "ElvUI Font",
 			["numTriggers"] = 1,
-			["selfPoint"] = "BOTTOM",
+			["wordWrap"] = "WordWrap",
 			["height"] = 22.2574310302734,
 			["fixedWidth"] = 200,
 			["load"] = {
@@ -44290,12 +44290,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -44546,14 +44546,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1876",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -44580,7 +44577,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1876",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -44855,14 +44855,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -44889,7 +44886,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -45758,12 +45758,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Runic Shield", -- [1]
-				},
+				["use_specific_unit"] = false,
 				["unit"] = "target",
 				["name"] = " ",
 				["spellIds"] = {
@@ -45771,8 +45769,10 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["use_specific_unit"] = false,
-				["use_unit"] = true,
+				["names"] = {
+					"Runic Shield", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HELPFUL",
 			},
 			["desaturate"] = false,
@@ -45964,14 +45964,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1876",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -45998,7 +45995,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1876",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -46297,21 +46297,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1877",
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -46327,11 +46327,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1877",
 				["size"] = {
 					["multi"] = {
 					},
@@ -46470,21 +46470,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["encounterid"] = "1877",
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -46497,11 +46497,11 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["use_zone"] = false,
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1877",
 				["size"] = {
 					["multi"] = {
 					},
@@ -46605,12 +46605,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_specific_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Odyn's Test", -- [1]
-				},
+				["use_unit"] = true,
 				["unit"] = "member",
 				["name"] = " ",
 				["spellIds"] = {
@@ -46618,8 +46616,10 @@ WeakAurasSaved = {
 				},
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["use_unit"] = true,
-				["use_specific_unit"] = true,
+				["names"] = {
+					"Odyn's Test", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HELPFUL",
 			},
 			["desaturate"] = false,
@@ -46813,24 +46813,21 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["encounterid"] = "1873",
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -46843,11 +46840,14 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1873",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -47175,10 +47175,10 @@ WeakAurasSaved = {
 				["custom_hide"] = "timed",
 			},
 			["internalVersion"] = 6,
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["progressPrecision"] = 0,
 			["text1Point"] = "CENTER",
-			["stickyDuration"] = false,
+			["desaturate"] = false,
 			["text2FontFlags"] = "OUTLINE",
 			["height"] = 56,
 			["parent"] = "CD Bar: Druid",
@@ -47968,16 +47968,11 @@ WeakAurasSaved = {
 			["backgroundOffset"] = 2,
 		},
 		["Shield of the Righteous Aura"] = {
-			["color"] = {
-				1, -- [1]
-				0.890196078431373, -- [2]
-				0, -- [3]
-				0.829999998211861, -- [4]
-			},
+			["parent"] = "Shield of the Righteous Buff",
 			["yOffset"] = 0,
 			["conditions"] = {
 			},
-			["parent"] = "Shield of the Righteous Buff",
+			["xOffset"] = 270,
 			["anchorPoint"] = "CENTER",
 			["mirror"] = false,
 			["untrigger"] = {
@@ -48094,7 +48089,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = 270,
+			["color"] = {
+				1, -- [1]
+				0.890196078431373, -- [2]
+				0, -- [3]
+				0.829999998211861, -- [4]
+			},
 		},
 		["Briney Volatile Foam"] = {
 			["text2Point"] = "CENTER",
@@ -48130,12 +48130,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_unit"] = true,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["names"] = {
-					"Briney Volatile Foam", -- [1]
-				},
+				["unit"] = "player",
 				["use_specific_unit"] = false,
 				["spellIds"] = {
 					228810, -- [1]
@@ -48143,8 +48141,10 @@ WeakAurasSaved = {
 				["name"] = " ",
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_unit"] = true,
+				["names"] = {
+					"Briney Volatile Foam", -- [1]
+				},
+				["subeventPrefix"] = "SPELL",
 				["custom_hide"] = "timed",
 			},
 			["desaturate"] = false,
@@ -48285,9 +48285,9 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 					["message_type"] = "SAY",
-					["custom"] = "if _G[\"WA_MARKED4DEATH_POS\"] then\n    SendChatMessage(_G[\"WA_MARKED4DEATH_POS\"]..\" MARK!\" ,\"SAY\") \nend",
 					["do_message"] = false,
 					["do_custom"] = false,
+					["custom"] = "if _G[\"WA_MARKED4DEATH_POS\"] then\n    SendChatMessage(_G[\"WA_MARKED4DEATH_POS\"]..\" MARK!\" ,\"SAY\") \nend",
 				},
 				["init"] = {
 					["do_custom"] = true,
@@ -48379,14 +48379,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1864",
 				["zone"] = "Blackrock Foundry",
 				["use_encounterid"] = true,
 				["difficulty"] = {
@@ -48412,7 +48409,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1864",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -48488,7 +48488,7 @@ WeakAurasSaved = {
 				},
 			},
 			["internalVersion"] = 6,
-			["wordWrap"] = "WordWrap",
+			["selfPoint"] = "BOTTOM",
 			["trigger"] = {
 				["unit"] = "member",
 				["useCount"] = true,
@@ -48502,10 +48502,10 @@ WeakAurasSaved = {
 				["countOperator"] = ">=",
 				["subeventSuffix"] = "_CAST_START",
 				["custom_hide"] = "timed",
+				["count"] = "4",
 				["spellIds"] = {
 				},
 				["name"] = "Searing Brand",
-				["count"] = "4",
 				["use_specific_unit"] = true,
 				["names"] = {
 					"Recursive Strikes", -- [1]
@@ -48566,9 +48566,22 @@ WeakAurasSaved = {
 			["fontSize"] = 27,
 			["regionType"] = "text",
 			["init_completed"] = 1,
-			["selfPoint"] = "BOTTOM",
+			["id"] = "Arcanist taunt!",
 			["justify"] = "LEFT",
-			["anchorFrameType"] = "SCREEN",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["additional_triggers"] = {
 				{
 					["trigger"] = {
@@ -48589,20 +48602,7 @@ WeakAurasSaved = {
 					},
 				}, -- [1]
 			},
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-				},
-			},
+			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
 			["width"] = 144.289367675781,
 			["disjunctive"] = "all",
@@ -48617,7 +48617,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["id"] = "Arcanist taunt!",
+			["wordWrap"] = "WordWrap",
 		},
 		["CD Bar: Incapacitating Roar Off Bar"] = {
 			["sparkWidth"] = 10,
@@ -49154,14 +49154,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1958",
 				["zone"] = "Hellfire Citadel",
 				["use_encounterid"] = true,
 				["difficulty"] = {
@@ -49185,7 +49182,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1958",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -50096,10 +50096,10 @@ WeakAurasSaved = {
 				["type"] = "aura",
 				["buffShowOn"] = "showOnActive",
 				["subeventSuffix"] = "_CAST_START",
-				["subeventPrefix"] = "SPELL",
+				["use_specific_unit"] = false,
 				["duration"] = "4",
 				["event"] = "Combat Log",
-				["use_unit"] = true,
+				["unit"] = "player",
 				["names"] = {
 					"Shadowy Volatile Foam", -- [1]
 				},
@@ -50109,8 +50109,8 @@ WeakAurasSaved = {
 				["name"] = " ",
 				["specificUnit"] = "boss1",
 				["unevent"] = "timed",
-				["unit"] = "player",
-				["use_specific_unit"] = false,
+				["use_unit"] = true,
+				["subeventPrefix"] = "SPELL",
 				["debuffType"] = "HARMFUL",
 			},
 			["desaturate"] = false,
@@ -50496,16 +50496,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["single"] = "TANK",
+					["multi"] = {
+						["TANK"] = true,
+					},
+				},
 				["class"] = {
 					["multi"] = {
 					},
@@ -50518,10 +50520,8 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["single"] = "TANK",
+				["race"] = {
 					["multi"] = {
-						["TANK"] = true,
 					},
 				},
 				["talent"] = {
@@ -50645,24 +50645,21 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
+				["encounterid"] = "1854",
+				["use_zone"] = false,
 				["use_encounterid"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -50672,11 +50669,14 @@ WeakAurasSaved = {
 					},
 				},
 				["zone"] = "Hellfire Citadel",
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["encounterid"] = "1854",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -51155,14 +51155,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1841",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -51191,7 +51188,10 @@ WeakAurasSaved = {
 						["TANK"] = true,
 					},
 				},
-				["encounterid"] = "1841",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
@@ -51968,6 +51968,9 @@ WeakAurasSaved = {
 			["fontSize"] = 17,
 			["regionType"] = "text",
 			["init_completed"] = 1,
+			["id"] = "equiped ilvl",
+			["wordWrap"] = "WordWrap",
+			["justify"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				0.58039215686275, -- [2]
@@ -51976,11 +51979,8 @@ WeakAurasSaved = {
 			},
 			["additional_triggers"] = {
 			},
-			["justify"] = "CENTER",
 			["conditions"] = {
 			},
-			["id"] = "equiped ilvl",
-			["wordWrap"] = "WordWrap",
 			["frameStrata"] = 1,
 			["width"] = 77.9350662231445,
 			["disjunctive"] = "all",
@@ -52685,14 +52685,11 @@ WeakAurasSaved = {
 				},
 				["use_never"] = false,
 				["zone"] = "Hellfire Citadel",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
+				["encounterid"] = "1841",
 				["talent"] = {
 					["multi"] = {
 					},
@@ -52721,7 +52718,10 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zone"] = false,
-				["encounterid"] = "1841",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},

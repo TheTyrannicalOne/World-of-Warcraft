@@ -4,7 +4,7 @@ PawnCommon = {
 	["AlignNumbersRight"] = false,
 	["ShowBagUpgradeAdvisor"] = true,
 	["ShowItemID"] = false,
-	["ShowRelicUpgrades"] = true,
+	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
@@ -171,13 +171,13 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
-				["Panboozled-Runetotem"] = {
-					["Visible"] = true,
-				},
 				["Malivant-Dalaran"] = {
 					["Visible"] = true,
 				},
 				["Vadder-Argent Dawn"] = {
+					["Visible"] = true,
+				},
+				["Panboozled-Runetotem"] = {
 					["Visible"] = true,
 				},
 			},
@@ -429,10 +429,10 @@ PawnCommon = {
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
-				["Vancard-Zul'jin"] = {
+				["Tyriinid-Dalaran"] = {
 					["Visible"] = true,
 				},
-				["Tyriinid-Dalaran"] = {
+				["Vancard-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},
@@ -682,7 +682,7 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 	},
-	["LastVersion"] = 2.0226,
+	["LastVersion"] = 2.0227,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,

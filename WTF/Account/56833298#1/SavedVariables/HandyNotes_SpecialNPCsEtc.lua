@@ -28,14 +28,14 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[35283423] = "Tailoring:Tanithria:Tailoring Trainer:603458",
 					[35782854] = "Skinning:Kondal Huntsworn:Skinning Trainer:603457",
 					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
-					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
 					[52991513] = "Banker:Teller Hanners:Banker:616472",
+					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
 					[35412971] = "Leatherworking:Diane Cannings:Leather Armor Expert:603426",
 					[52471473] = "Banker:Teller Rames:Banker:616471",
 					[44582853] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:598403",
 					[65483242] = "Innkeeper:Uda the Beast:Innkeeper:616342",
 					[34772858] = "Leatherworking:Thanid Glowergold:Mail Armor Expert:624945",
-					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
+					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
 					[39773487] = "Jewelcrafting:Timothy Jones:Jewelcrafting Trainer:603431",
 					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
 					[42983410] = "Herbalism:Kuhuine Tenderstride:Herbalism Trainer:599140",
@@ -61,9 +61,9 @@ HandyNotes_SpecialNPCsEtcDB = {
 				},
 				["Dalaran"] = {
 					[45282792] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:165524",
-					[44832808] = "Blacksmithing:Orland Schaeffer:Blacksmithing Trainer:169222",
 					[45582846] = "Blacksmithing:Imindril Spearsong:Blacksmithing Trainer:169221",
 					[65162389] = "Auctioneer:Reginald Arcfire:Steam-Powered Auctioneer:218631",
+					[44832808] = "Blacksmithing:Orland Schaeffer:Blacksmithing Trainer:169222",
 				},
 				["Silverpine"] = {
 					[42884092] = "Blacksmithing:Guillaume Sorouy:Blacksmithing Trainer:13655",
@@ -84,9 +84,9 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[55128420] = "Blacksmithing:Barm Stonebreaker:Blacksmithing Trainer:598594",
 					[54658413] = "Blacksmithing:Muirn Ironhorn:Blacksmithing Trainer:598595",
 				},
-				["Durotar"] = {
-					[52014179] = "Stable:Shoja'my:Stable Master:39303",
-					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
+				["Suramar"] = {
+					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
+					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
 				},
 				["ShadowmoonValley"] = {
 					[29212942] = "Stable:Gedrah:Stable Master:135990",
@@ -105,13 +105,13 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[53905506] = "First Aid:Fera Palerunner:First Aid Trainer:103544",
 					[76836545] = "Leatherworking:Grikka:Leatherworking Trainer:135303",
 				},
-				["Suramar"] = {
-					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
-					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
-				},
 				["ShattrathCity"] = {
 					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
 					[48372913] = "Banker:Gromden:Banker:103192",
+				},
+				["Durotar"] = {
+					[52014179] = "Stable:Shoja'my:Stable Master:39303",
+					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
 				},
 				["Orgrimmar"] = {
 					[67745315] = "Banker:Binzella:Banker:288281",

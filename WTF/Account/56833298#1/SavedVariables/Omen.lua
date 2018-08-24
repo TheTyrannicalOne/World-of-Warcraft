@@ -2053,10 +2053,10 @@ Omen3DB = {
 			},
 			["ShowWith"] = {
 				["UseShowWith"] = false,
-				["PVP"] = true,
+				["HideWhileResting"] = false,
 				["Alone"] = true,
 				["Resting"] = true,
-				["HideWhileResting"] = false,
+				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
 			["VGrip1"] = 155.316689874038,
@@ -2465,15 +2465,19 @@ Omen3DB = {
 				["Alone"] = true,
 				["Resting"] = true,
 				["UseShowWith"] = false,
-				["HideWhileResting"] = false,
 				["PVP"] = true,
+				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 451.131409021275,
 			["PositionH"] = 196.984924238223,
-			["VGrip1"] = 155.316689874038,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014660035749,
-			["PositionX"] = 451.131409021275,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2494,11 +2498,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["VGrip1"] = 155.316689874038,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {

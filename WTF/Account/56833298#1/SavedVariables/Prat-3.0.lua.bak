@@ -137,9 +137,9 @@ Prat3DB = {
 				},
 				["Vancard - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
+					["initialized"] = true,
 				},
 				["Brotus - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
@@ -167,9 +167,9 @@ Prat3DB = {
 				},
 				["Shanyt - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
+					["initialized"] = true,
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
-					["initialized"] = true,
 				},
 				["Brotuss - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
@@ -479,13 +479,13 @@ Prat3DB = {
 					["fontface"] = "weezerfont",
 				},
 				["Vancard - Zul'jin"] = {
+					["fontface"] = "weezerfont",
 					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
-					["fontface"] = "weezerfont",
 				},
 				["Brotus - Argent Dawn"] = {
 					["rememberfont"] = true,
@@ -524,13 +524,13 @@ Prat3DB = {
 					["fontface"] = "weezerfont",
 				},
 				["Shanyt - Argent Dawn"] = {
-					["fontface"] = "weezerfont",
 					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Brotuss - Zul'jin"] = {
 					["rememberfont"] = true,
@@ -900,8 +900,8 @@ Prat3DB = {
 				["Shanyt - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showminimize"] = false,
 					["showMenu"] = false,
+					["showminimize"] = false,
 				},
 				["Brotuss - Zul'jin"] = {
 					["showBnet"] = false,
@@ -954,8 +954,8 @@ Prat3DB = {
 				["Vancard - Zul'jin"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 				["Shathiel - Darkspear"] = {
 					["showBnet"] = false,
@@ -1312,14 +1312,14 @@ Prat3DB = {
 		},
 		["Vancard - Zul'jin"] = {
 			["modules"] = {
-				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
 				["Alias"] = 2,
-				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["ChatLog"] = 2,
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
+				["OriginalButtons"] = 2,
+				["ChatLog"] = 2,
 			},
 		},
 		["Brotus - Argent Dawn"] = {
@@ -1372,14 +1372,14 @@ Prat3DB = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["modules"] = {
+				["Sounds"] = 2,
 				["Alias"] = 2,
+				["OriginalButtons"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
-				["Sounds"] = 2,
-				["Paragraph"] = 2,
-				["KeyBindings"] = 2,
-				["OriginalButtons"] = 2,
 				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
 			},
 		},
 		["Brotuss - Zul'jin"] = {

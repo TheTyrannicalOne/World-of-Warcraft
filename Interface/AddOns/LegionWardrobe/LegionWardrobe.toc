@@ -1,8 +1,8 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: Legion Wardrobe
 ## Author: ykiigor
 ## Notes: Improvement for default UI
-## Version: 29
+## Version: 30
 ## SavedVariables: VLTW
 Data.lua
 LegionTransmog.lua

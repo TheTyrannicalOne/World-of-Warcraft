@@ -11,6 +11,7 @@ dbOHC = {
 		["news"] = {
 		},
 		["warn02_seen"] = 0,
+		["warn03_seen"] = 3,
 	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Default",

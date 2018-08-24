@@ -1,5 +1,7 @@
 
 MasterPlanAG = {
+	["IgnoreRewards"] = {
+	},
 	["Argent Dawn"] = {
 		["Tyrannithal"] = {
 			["faction"] = "Horde",
@@ -44,32 +46,25 @@ MasterPlanAG = {
 		["Shanyt"] = {
 			["faction"] = "Horde",
 			["summary"] = {
-				["lastOilTime"] = 1534471891,
+				["lastOilTime"] = 1535082634,
+				["ti2"] = 122486,
 				["inProgress"] = {
-					[486] = 1534493476,
-					[398] = 1534496182,
-					[652] = 1534490802,
-					[544] = 1534500687,
-					[739] = 1534490800,
-					[304] = 1534500649,
-					[396] = 1534500606,
-					[482] = 1534493466,
-					[258] = 1534500657,
-					[666] = 1534503389,
-					[745] = 1534536691,
+					[302] = 1535097521,
+					[745] = 1535147434,
+					[538] = 1535104727,
+					[677] = 1535093908,
 				},
 				["ti3"] = 127854,
-				["ti2"] = 122486,
-				["tt1"] = 1533940261,
 				["ti1"] = 118531,
+				["tt1"] = 1533940261,
 				["tt3"] = 1534468063,
 				["tt2"] = 1534037743,
 			},
-			["curOil"] = 59020,
+			["curOil"] = 60775,
 			["cacheSize"] = 1000,
 			["class"] = "WARRIOR",
-			["curRes"] = 9177,
-			["lastCacheTime"] = 1534489029,
+			["curRes"] = 7045,
+			["lastCacheTime"] = 1535082618,
 		},
 		["Fantastiburo"] = {
 			["class"] = "DRUID",
@@ -98,8 +93,8 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Vancard"] = {
-			["class"] = "MAGE",
 			["faction"] = "Horde",
+			["class"] = "MAGE",
 		},
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
@@ -128,24 +123,6 @@ MasterPlanAG = {
 		["Fantastiburo"] = {
 			["class"] = "SHAMAN",
 			["faction"] = "Horde",
-		},
-	},
-	["Darkspear"] = {
-		["Shathiel"] = {
-			["class"] = "MAGE",
-			["faction"] = "Alliance",
-		},
-		["Brewnheimer"] = {
-			["class"] = "SHAMAN",
-			["faction"] = "Alliance",
-		},
-		["Dialdaas"] = {
-			["class"] = "PALADIN",
-			["faction"] = "Alliance",
-		},
-		["Serbitechna"] = {
-			["class"] = "HUNTER",
-			["faction"] = "Alliance",
 		},
 	},
 	["Dalaran"] = {
@@ -182,6 +159,24 @@ MasterPlanAG = {
 			["faction"] = "Neutral",
 		},
 	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Dialdaas"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Brewnheimer"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+	},
 	["Runetotem"] = {
 		["Migimong"] = {
 			["class"] = "ROGUE",
@@ -207,7 +202,5 @@ MasterPlanAG = {
 			["class"] = "WARLOCK",
 			["faction"] = "Horde",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }

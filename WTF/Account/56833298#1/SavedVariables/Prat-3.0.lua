@@ -287,9 +287,9 @@ Prat3DB = {
 				},
 				["Vancard - Zul'jin"] = {
 					["minchatwidthdefault"] = 296,
-					["maxchatwidthdefault"] = 608.000061035156,
-					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
@@ -707,12 +707,12 @@ Prat3DB = {
 				},
 				["Vancard - Zul'jin"] = {
 					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
 					},
+					["fontface"] = "weezerfont",
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["rememberfont"] = true,
@@ -900,8 +900,8 @@ Prat3DB = {
 				["Shanyt - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 				["Brotuss - Zul'jin"] = {
 					["showBnet"] = false,
@@ -1002,8 +1002,8 @@ Prat3DB = {
 				["Vancard - Zul'jin"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showMenu"] = false,
 					["showminimize"] = false,
+					["showMenu"] = false,
 				},
 				["Beeronimo - Dalaran"] = {
 					["showBnet"] = false,
@@ -1613,9 +1613,9 @@ Prat3DB = {
 		["Vancard - Zul'jin"] = {
 			["modules"] = {
 				["Sounds"] = 2,
-				["Paragraph"] = 2,
 				["ChatLog"] = 2,
 				["OriginalButtons"] = 2,
+				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Alias"] = 2,
