@@ -1360,7 +1360,11 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
+<<<<<<< HEAD
 			["Plucked"] = {
+=======
+			["Bloodletting"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1381,7 +1385,10 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Arterial Cut"] = {
+=======
+			["Reaching Attack"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1389,19 +1396,36 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Bonecracker"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
+			["Bonecracker"] = {
+=======
 			["Maddening Shout"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
+			["Maddening Shout"] = {
+=======
+			["Poison Soaked Shell"] = {
+>>>>>>> parent of 76f5add1... addon updates
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
 			["244849"] = {
 				["isStacks"] = false,
 				["animate"] = true,
@@ -1410,6 +1434,9 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 			["Bloodletting"] = {
+=======
+			["Soul Fragment"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1430,14 +1457,18 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Reaching Attack"] = {
+=======
+			["Discharged Energy"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Poison Soaked Shell"] = {
+			["Carnivorous Bite"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1479,7 +1510,11 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Discharged Energy"] = {
+=======
+			["Arterial Cut"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1717,7 +1752,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Pact of the Darkfallen"] = {
+			["Slag Pot"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1851,6 +1886,16 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Focused Lightning"] = {
+<<<<<<< HEAD
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Matter Swap"] = {
+=======
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1864,12 +1909,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["243961"] = {
-				["isStacks"] = false,
+			["Pact of the Darkfallen"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Brutal Strike"] = {
 				["isStacks"] = 1,
@@ -1934,12 +1979,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Slag Pot"] = {
-				["isStacks"] = 1,
+			["243961"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Icy Ground"] = {
 				["isStacks"] = 1,
@@ -2165,14 +2210,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Defile"] = {
+			["Vengeful Strikes"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Vengeful Strikes"] = {
+			["Body Slam"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2291,12 +2336,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Crashing Thunder"] = {
-				["isStacks"] = 1,
+			["249014"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Chilled to the Bone"] = {
 				["isStacks"] = 1,
@@ -2312,12 +2357,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["253520"] = {
-				["isStacks"] = false,
+			["The Widow's Kiss"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Gas Spore"] = {
 				["isStacks"] = 1,
@@ -2348,6 +2393,40 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Blood Corruption: Earth"] = {
+<<<<<<< HEAD
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Overcharged"] = {
+=======
+>>>>>>> parent of 76f5add1... addon updates
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Crashing Thunder"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
+=======
+			["253520"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+>>>>>>> parent of 76f5add1... addon updates
+			["Exhale"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2362,27 +2441,6 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Sonic Breath"] = {
-				["isStacks"] = 1,
-				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
-			},
-			["Exhale"] = {
-				["isStacks"] = 1,
-				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
-			},
-			["249014"] = {
-				["isStacks"] = false,
-				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
-				["isIcon"] = true,
-			},
-			["The Widow's Kiss"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2690,7 +2748,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Dissonance Field"] = {
+			["Shockwave"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2739,7 +2797,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Low Health"] = {
+			["Dissonance Field"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2788,7 +2846,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Shockwave"] = {
+			["Low Health"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3055,6 +3113,8 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Soothing Breeze"] = {
+<<<<<<< HEAD
+=======
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3062,11 +3122,24 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Cutter Laser Target"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
+			},
+<<<<<<< HEAD
+			["Cutter Laser Target"] = {
+				["isStacks"] = 1,
+=======
+			["263334"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 76f5add1... addon updates
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["263334"] = {
 				["isStacks"] = false,
@@ -3628,7 +3701,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Body Slam"] = {
+			["Defile"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3860,6 +3933,7 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Freeze"] = {
+<<<<<<< HEAD
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3867,40 +3941,68 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 			["Toxic Mist"] = {
+=======
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Engulfing Magic"] = {
+=======
+			["Toxic Mist"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Fracture"] = {
+=======
+			["Engulfing Magic"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Overwhelming Corruption"] = {
+=======
+			["Fracture"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Carnivorous Bite"] = {
+=======
+			["Overwhelming Corruption"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
+=======
+			["244849"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["Malformed Blood"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
@@ -3957,7 +4059,11 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Soul Fragment"] = {
+=======
+			["Plucked"] = {
+>>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4232,6 +4338,7 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
+			["sort"] = 0,
 			["ordering"] = 0,
 			["groups"] = {
 				1, -- [1]
@@ -4240,7 +4347,6 @@ VUHDO_PANEL_SETUP = {
 				4, -- [4]
 				5, -- [5]
 			},
-			["sort"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
@@ -6929,9 +7035,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w10", -- [2]
 			"", -- [3]
 		},
-		["ctrlshift2"] = {
-			"CTRL-SHIFT-", -- [1]
-			"-w14", -- [2]
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
 			"", -- [3]
 		},
 		["2"] = {
@@ -6939,9 +7045,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
-		["shift1"] = {
-			"SHIFT-", -- [1]
-			"-w7", -- [2]
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -6994,9 +7100,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w5", -- [2]
 			"", -- [3]
 		},
-		["ctrl2"] = {
-			"CTRL-", -- [1]
-			"-w6", -- [2]
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
 			"", -- [3]
 		},
 	},
@@ -7023,9 +7129,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w10", -- [2]
 			"", -- [3]
 		},
-		["ctrlshift2"] = {
-			"CTRL-SHIFT-", -- [1]
-			"-w14", -- [2]
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
 			"", -- [3]
 		},
 		["2"] = {
@@ -7033,9 +7139,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
-		["shift1"] = {
-			"SHIFT-", -- [1]
-			"-w7", -- [2]
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -7088,9 +7194,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w5", -- [2]
 			"", -- [3]
 		},
-		["ctrl2"] = {
-			"CTRL-", -- [1]
-			"-w6", -- [2]
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
 			"", -- [3]
 		},
 	},
@@ -7130,7 +7236,11 @@ VUHDO_SPEC_LAYOUTS = {
 VUHDO_GROUP_SIZE = 1
 VUHDO_RAID = {
 	["player"] = {
+<<<<<<< HEAD
 		["zone"] = "Ashenvale",
+=======
+		["zone"] = "Trading Post",
+>>>>>>> parent of 76f5add1... addon updates
 		["baseRange"] = true,
 		["class"] = "WARRIOR",
 		["role"] = 61,
@@ -7170,8 +7280,13 @@ VUHDO_INDICATOR_CONFIG = {
 		["MOUSEOVER_HIGHLIGHT"] = "Mouseover: Single",
 		["AGGRO_BAR"] = "Aggro Indicator",
 		["BACKGROUND_BAR"] = "Background: Solid",
+<<<<<<< HEAD
 		["SWIFTMEND_INDICATOR"] = "",
 		["DAMAGE_FLASH_BAR"] = "",
+=======
+		["SIDE_LEFT"] = "",
+		["CLUSTER_BORDER"] = "",
+>>>>>>> parent of 76f5add1... addon updates
 		["HEALTH_BAR_PANEL"] = {
 			"", -- [1]
 			"", -- [2]
@@ -7184,13 +7299,17 @@ VUHDO_INDICATOR_CONFIG = {
 			"", -- [9]
 			"", -- [10]
 		},
-		["SIDE_LEFT"] = "",
+		["SWIFTMEND_INDICATOR"] = "",
 		["THREAT_MARK"] = "Threat: Marks",
+		["BAR_BORDER"] = "",
 		["SIDE_RIGHT"] = "",
 		["MANA_BAR"] = "Manabars: Mana only",
-		["BAR_BORDER"] = "",
 		["HEALTH_BAR"] = "Health (generic, class col)",
+<<<<<<< HEAD
 		["CLUSTER_BORDER"] = "",
+=======
+		["DAMAGE_FLASH_BAR"] = "",
+>>>>>>> parent of 76f5add1... addon updates
 		["INCOMING_BAR"] = "",
 	},
 	["CUSTOM"] = {

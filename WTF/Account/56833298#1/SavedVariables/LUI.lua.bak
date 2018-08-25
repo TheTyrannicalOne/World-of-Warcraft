@@ -105,7 +105,7 @@ LUIDB = {
 				["Mulmok - Argent Dawn"] = {
 					["Enable"] = false,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["Enable"] = false,
 				},
 				["Tyrannithal - Zul'jin"] = {
@@ -120,7 +120,7 @@ LUIDB = {
 				["Jingojaggot - Zul'jin"] = {
 					["Enable"] = false,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["Enable"] = false,
 				},
 				["Cowtastraphy - Argent Dawn"] = {
@@ -633,17 +633,17 @@ LUIDB = {
 						["ItemQuality"] = true,
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["ItemQuality"] = true,
+						["CoordY"] = 692.281490904737,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
@@ -703,17 +703,17 @@ LUIDB = {
 						["ItemQuality"] = true,
 					},
 				},
-				["Vadder - Argent Dawn"] = {
-					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
-						["ItemQuality"] = true,
-						["CoordY"] = 692.281490904737,
-					},
+				["Thromar - Dalaran"] = {
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 692.281490904737,
 						["CoordX"] = 1511.96771301651,
 						["Font"] = "AvantGarde_LT_Medium",
+						["ItemQuality"] = true,
+					},
+					["Bags"] = {
+						["CoordX"] = 1511.96771301651,
+						["CoordY"] = 692.281490904737,
 						["ItemQuality"] = true,
 					},
 				},
@@ -795,6 +795,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -802,12 +808,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -826,12 +826,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -839,6 +833,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -857,12 +857,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -870,6 +864,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -897,6 +897,13 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 198,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -904,13 +911,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -920,12 +920,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -933,6 +927,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -951,12 +951,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -964,6 +958,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -982,6 +982,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -989,12 +995,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1013,12 +1013,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1026,6 +1020,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1044,12 +1044,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1057,6 +1051,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1075,6 +1075,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1082,12 +1088,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -1106,12 +1106,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1119,6 +1113,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1137,6 +1137,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1144,12 +1150,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -1168,12 +1168,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1181,6 +1175,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1199,12 +1199,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1212,6 +1206,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1230,6 +1230,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1237,12 +1243,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1261,12 +1261,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1274,6 +1268,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1292,12 +1292,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1305,6 +1299,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1323,12 +1323,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1336,6 +1330,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1378,13 +1378,28 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 612,
 					},
+					["Raid"] = {
+						["IsShown"] = true,
+						["Width"] = 612,
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
+<<<<<<< HEAD
 						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+=======
+						["IsShown"] = true,
+						["Width"] = 189,
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["Anchor"] = "SkadaBarWindowSkada",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1394,13 +1409,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1408,6 +1416,13 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1435,13 +1450,6 @@ LUIDB = {
 						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1449,6 +1457,13 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Chat"] = {
 						["IsShown"] = true,
@@ -1458,13 +1473,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1472,6 +1480,13 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1490,12 +1505,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1503,6 +1512,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1518,24 +1533,45 @@ LUIDB = {
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
+<<<<<<< HEAD
 					["Tps"] = {
 						["IsShown"] = true,
 						["Width"] = 198,
 						["OffsetX"] = 43,
 						["OffsetY"] = 1,
 					},
+=======
+>>>>>>> parent of 76f5add1... addon updates
 					["Minimap"] = {
 						["IsShown"] = true,
 					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
+<<<<<<< HEAD
+=======
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+>>>>>>> parent of 76f5add1... addon updates
 						["IsShown"] = true,
 						["Width"] = 189,
 						["Height"] = 218,
 						["OffsetY"] = 17,
 						["Anchor"] = "SkadaBarWindowSkada",
 					},
+					["Tps"] = {
+						["OffsetX"] = 43,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
+					},
 					["Raid"] = {
+<<<<<<< HEAD
+=======
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+>>>>>>> parent of 76f5add1... addon updates
 						["IsShown"] = true,
 						["Width"] = 612,
 						["Anchor"] = "Vd1",
@@ -1553,12 +1589,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1566,6 +1596,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1584,12 +1620,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1597,6 +1627,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1615,6 +1651,13 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1622,13 +1665,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1647,12 +1683,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1660,6 +1690,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1678,12 +1714,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1691,6 +1721,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1709,12 +1745,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1722,6 +1752,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1740,6 +1776,13 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -1747,13 +1790,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1772,12 +1808,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1785,6 +1815,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1803,12 +1839,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1816,6 +1846,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1834,12 +1870,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -1848,129 +1878,11 @@ LUIDB = {
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Thromar - Dalaran"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
 					["Raid"] = {
 						["Height"] = 237,
 						["OffsetY"] = 1,
 						["Anchor"] = "Vd1",
 						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Cowtastraphy - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tyran - Argent Dawn"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
-					},
-					["Tps"] = {
-						["OffsetX"] = 1,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 198,
-					},
-					["MicroMenu"] = {
-						["IsShown"] = true,
-					},
-					["Minimap"] = {
-						["IsShown"] = true,
-					},
-				},
-				["Tyrannithal - Zul'jin"] = {
-					["Chat"] = {
-						["IsShown"] = true,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
-					["Dps"] = {
-						["Direction"] = "TOPLEFT",
-						["Anchor"] = "SkadaBarWindowSkada",
-						["Height"] = 218,
-						["OffsetY"] = 17,
-						["IsShown"] = true,
-						["Width"] = 189,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -1989,6 +1901,37 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
+						["Width"] = 198,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Cowtastraphy - Argent Dawn"] = {
+					["Chat"] = {
+						["IsShown"] = true,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -2004,9 +1947,102 @@ LUIDB = {
 						["Width"] = 612,
 					},
 					["Tps"] = {
-						["IsShown"] = true,
-						["OffsetY"] = 1,
 						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Tyran - Argent Dawn"] = {
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Height"] = 218,
+						["Anchor"] = "SkadaBarWindowSkada",
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
+					["Tps"] = {
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Tyrannithal - Zul'jin"] = {
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Tps"] = {
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 198,
+					},
+					["MicroMenu"] = {
+						["IsShown"] = true,
+					},
+					["Minimap"] = {
+						["IsShown"] = true,
+					},
+				},
+				["Thromar - Dalaran"] = {
+					["Chat"] = {
+						["IsShown"] = true,
+					},
+					["Dps"] = {
+						["Direction"] = "TOPLEFT",
+						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
+						["OffsetY"] = 17,
+						["IsShown"] = true,
+						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
+					["Tps"] = {
+						["OffsetX"] = 1,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
 						["Width"] = 198,
 					},
 					["MicroMenu"] = {
@@ -2020,12 +2056,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -2033,6 +2063,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -2051,6 +2087,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Height"] = 218,
@@ -2058,12 +2100,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["Height"] = 237,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -2082,12 +2118,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -2095,6 +2125,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -2113,6 +2149,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -2120,12 +2162,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -2144,12 +2180,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -2157,6 +2187,12 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -2175,6 +2211,12 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["Anchor"] = "Vd1",
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -2182,12 +2224,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["Anchor"] = "Vd1",
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -2326,7 +2362,7 @@ LUIDB = {
 				["Jingojaggot - Zul'jin"] = {
 					["Enable"] = false,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["Enable"] = false,
 				},
 				["Cowtastraphy - Argent Dawn"] = {
@@ -2341,7 +2377,7 @@ LUIDB = {
 				["Tynster - Dalaran"] = {
 					["Enable"] = false,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["Enable"] = false,
 				},
 				["Mulmok - Argent Dawn"] = {
@@ -2601,7 +2637,7 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2636,7 +2672,7 @@ LUIDB = {
 						["X"] = -10,
 					},
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["Enable"] = false,
 					["General"] = {
 						["Y"] = 410,
@@ -2713,9 +2749,19 @@ LUIDB = {
 				["Zul'jin"] = {
 					["Gold"] = {
 						["Horde"] = {
-							["Vancard"] = 26872802,
+							["Vancard"] = 26747177,
 							["Zulbathal"] = 2000,
 							["Fantastiburo"] = 10000,
+						},
+					},
+				},
+				["Darkspear"] = {
+					["Gold"] = {
+						["Alliance"] = {
+							["Shathiel"] = 44039224,
+							["Serbitechna"] = 7681888,
+							["Brewnheimer"] = 836,
+							["Dialdaas"] = 11338409,
 						},
 					},
 				},
@@ -2735,6 +2781,7 @@ LUIDB = {
 						},
 					},
 				},
+<<<<<<< HEAD
 				["Darkspear"] = {
 					["Gold"] = {
 						["Alliance"] = {
@@ -2745,6 +2792,8 @@ LUIDB = {
 						},
 					},
 				},
+=======
+>>>>>>> parent of 76f5add1... addon updates
 				["Runetotem"] = {
 					["Gold"] = {
 						["Horde"] = {
@@ -2778,6 +2827,7 @@ LUIDB = {
 				["EditBox"] = {
 					["factionrealm"] = {
 						["Horde - Argent Dawn"] = {
+<<<<<<< HEAD
 							"/omen show", -- [1]
 							"/help", -- [2]
 							"/kick", -- [3]
@@ -2810,6 +2860,40 @@ LUIDB = {
 							"/kick", -- [30]
 							"/help", -- [31]
 							"/kick", -- [32]
+=======
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [1]
+							"/kick", -- [2]
+							"/omen show", -- [3]
+							"/kick", -- [4]
+							"/help", -- [5]
+							"/omen show", -- [6]
+							"/kick", -- [7]
+							"/help", -- [8]
+							"/kick", -- [9]
+							"/omen show", -- [10]
+							"/kick", -- [11]
+							"/help", -- [12]
+							"/kick", -- [13]
+							"/omen show", -- [14]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [15]
+							"/kick", -- [16]
+							"/omen show", -- [17]
+							"/kick", -- [18]
+							"/help", -- [19]
+							"/omen show", -- [20]
+							"/kick", -- [21]
+							"/help", -- [22]
+							"/kick", -- [23]
+							"/omen show", -- [24]
+							"/help", -- [25]
+							"/omen show", -- [26]
+							"/kick", -- [27]
+							"/help", -- [28]
+							"/kick", -- [29]
+							"/omen show", -- [30]
+							"/kick", -- [31]
+							"/omen show", -- [32]
+>>>>>>> parent of 76f5add1... addon updates
 						},
 						["Horde - Zul'jin"] = {
 							"/vuhdo", -- [1]
@@ -2817,6 +2901,7 @@ LUIDB = {
 							"/i i dont know if i would go that far but the deed is done", -- [3]
 							"/i THAKS", -- [4]
 							"/i i dont know if i would go that far but the deed is done", -- [5]
+<<<<<<< HEAD
 							"/vuhdo", -- [6]
 							"/i THAKS", -- [7]
 							"/i i dont know if i would go that far but the deed is done", -- [8]
@@ -2825,12 +2910,23 @@ LUIDB = {
 							"/vuhdo", -- [11]
 							"/i i dont know if i would go that far but the deed is done", -- [12]
 							"/vuhdo", -- [13]
+=======
+							"/i THAKS", -- [6]
+							"/vuhdo", -- [7]
+							"/i i dont know if i would go that far but the deed is done", -- [8]
+							"/i THAKS", -- [9]
+							"/i i dont know if i would go that far but the deed is done", -- [10]
+							"/i THAKS", -- [11]
+							"/vuhdo", -- [12]
+							"/i i dont know if i would go that far but the deed is done", -- [13]
+>>>>>>> parent of 76f5add1... addon updates
 							"/i THAKS", -- [14]
-							"/i i dont know if i would go that far but the deed is done", -- [15]
-							"/i THAKS", -- [16]
-							"/i i dont know if i would go that far but the deed is done", -- [17]
-							"/vuhdo", -- [18]
+							"/vuhdo", -- [15]
+							"/i i dont know if i would go that far but the deed is done", -- [16]
+							"/i THAKS", -- [17]
+							"/i i dont know if i would go that far but the deed is done", -- [18]
 							"/i THAKS", -- [19]
+<<<<<<< HEAD
 							"/i i dont know if i would go that far but the deed is done", -- [20]
 							"/i THAKS", -- [21]
 							"/i i dont know if i would go that far but the deed is done", -- [22]
@@ -2844,6 +2940,21 @@ LUIDB = {
 							"/vuhdo", -- [30]
 							"/i i dont know if i would go that far but the deed is done", -- [31]
 							"/vuhdo", -- [32]
+=======
+							"/vuhdo", -- [20]
+							"/i i dont know if i would go that far but the deed is done", -- [21]
+							"/i THAKS", -- [22]
+							"/i i dont know if i would go that far but the deed is done", -- [23]
+							"/i THAKS", -- [24]
+							"/i i dont know if i would go that far but the deed is done", -- [25]
+							"/vuhdo", -- [26]
+							"/i THAKS", -- [27]
+							"/vuhdo", -- [28]
+							"/i THAKS", -- [29]
+							"/i i dont know if i would go that far but the deed is done", -- [30]
+							"/i THAKS", -- [31]
+							"/i i dont know if i would go that far but the deed is done", -- [32]
+>>>>>>> parent of 76f5add1... addon updates
 						},
 					},
 				},
@@ -3053,17 +3164,17 @@ LUIDB = {
 					["x"] = 28.0002389903592,
 					["y"] = 46.0004300258579,
 				},
-				["Thromar - Dalaran"] = {
-					["modules"] = {
-					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
-				},
 				["Vadder - Argent Dawn"] = {
 					["y"] = 46.0004300258579,
 					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
+				},
+				["Thromar - Dalaran"] = {
+					["modules"] = {
+					},
+					["x"] = 28.0002389903592,
+					["y"] = 46.0004300258579,
 				},
 				["Tynster - Dalaran"] = {
 					["modules"] = {
@@ -3242,13 +3353,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -3260,13 +3365,19 @@ LUIDB = {
 						0.16, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -3405,13 +3516,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -3423,13 +3528,19 @@ LUIDB = {
 						0.18, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -3568,13 +3679,7 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -3586,13 +3691,19 @@ LUIDB = {
 						0.9, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -3731,13 +3842,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -3749,13 +3854,19 @@ LUIDB = {
 						0.89, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -3894,13 +4005,7 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -3912,13 +4017,19 @@ LUIDB = {
 						0.73, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -4057,13 +4168,7 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.11, -- [1]
 						0.67, -- [2]
 						0.63, -- [3]
@@ -4075,17 +4180,23 @@ LUIDB = {
 						0.62, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.2, -- [1]
 						0.6, -- [2]
 						0.6, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
 					},
 					["micromenu"] = {
 						0.4, -- [1]
@@ -4220,13 +4331,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -4238,13 +4343,19 @@ LUIDB = {
 						0.55, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -4383,13 +4494,7 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.11, -- [1]
 						0.67, -- [2]
 						0.63, -- [3]
@@ -4401,17 +4506,23 @@ LUIDB = {
 						0.62, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.2, -- [1]
 						0.6, -- [2]
 						0.6, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
 					},
 					["micromenu"] = {
 						0.4, -- [1]
@@ -4546,13 +4657,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -4564,13 +4669,19 @@ LUIDB = {
 						0.55, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -4709,13 +4820,7 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -4727,13 +4832,19 @@ LUIDB = {
 						0.1, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -4872,13 +4983,7 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -4890,13 +4995,19 @@ LUIDB = {
 						0.1, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -5035,13 +5146,7 @@ LUIDB = {
 						0.63, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.33, -- [1]
-						0.6, -- [2]
-						0.62, -- [3]
-						0.65, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.11, -- [1]
 						0.67, -- [2]
 						0.63, -- [3]
@@ -5053,17 +5158,23 @@ LUIDB = {
 						0.62, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.11, -- [1]
+						0.67, -- [2]
+						0.63, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.2, -- [1]
 						0.6, -- [2]
 						0.6, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
-						0.11, -- [1]
-						0.67, -- [2]
-						0.63, -- [3]
-						0.4, -- [4]
+					["orb_hover"] = {
+						0.33, -- [1]
+						0.6, -- [2]
+						0.62, -- [3]
+						0.65, -- [4]
 					},
 					["micromenu"] = {
 						0.4, -- [1]
@@ -5198,13 +5309,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -5216,13 +5321,19 @@ LUIDB = {
 						0.16, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -5361,13 +5472,7 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -5379,13 +5484,19 @@ LUIDB = {
 						1, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -5524,13 +5635,7 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -5542,13 +5647,19 @@ LUIDB = {
 						1, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -5687,13 +5798,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -5705,13 +5810,19 @@ LUIDB = {
 						0.89, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -5850,13 +5961,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -5868,13 +5973,19 @@ LUIDB = {
 						0.18, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -6013,13 +6124,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -6031,13 +6136,19 @@ LUIDB = {
 						0.16, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -6176,7 +6287,13 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
+					["raidborder"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -6188,19 +6305,13 @@ LUIDB = {
 						0.55, -- [3]
 						0.8, -- [4]
 					},
-					["raidborder"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["orb_hover"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -6339,13 +6450,7 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -6357,13 +6462,19 @@ LUIDB = {
 						0.15, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -6502,13 +6613,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -6520,13 +6625,19 @@ LUIDB = {
 						0.98, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -6665,17 +6776,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["raidborder"] = {
-						0, -- [1]
-						0, -- [2]
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
 						0, -- [3]
-						0.86, -- [4]
-					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
+						0.8, -- [4]
 					},
 					["orb_hover"] = {
 						1, -- [1]
@@ -6683,17 +6788,23 @@ LUIDB = {
 						0, -- [3]
 						0.4, -- [4]
 					},
+					["chat2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
 						0, -- [3]
-						0.8, -- [4]
+						0.86, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -6827,13 +6938,7 @@ LUIDB = {
 						0.79, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.64, -- [1]
-						0.19, -- [2]
-						0.79, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.64, -- [1]
 						0.19, -- [2]
 						0.79, -- [3]
@@ -6845,13 +6950,19 @@ LUIDB = {
 						0.79, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.64, -- [1]
+						0.19, -- [2]
+						0.79, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.64, -- [1]
 						0.19, -- [2]
 						0.79, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.64, -- [1]
 						0.19, -- [2]
 						0.79, -- [3]
@@ -6990,13 +7101,7 @@ LUIDB = {
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.8, -- [1]
-						0.1, -- [2]
-						0.1, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -7008,13 +7113,19 @@ LUIDB = {
 						0.1, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.8, -- [1]
+						0.1, -- [2]
+						0.1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.8, -- [1]
 						0.1, -- [2]
 						0.1, -- [3]
@@ -7153,13 +7264,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -7171,13 +7276,19 @@ LUIDB = {
 						0.55, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -7316,13 +7427,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -7334,13 +7439,19 @@ LUIDB = {
 						0.98, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -7479,13 +7590,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -7497,13 +7602,19 @@ LUIDB = {
 						0.98, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -7642,13 +7753,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -7660,13 +7765,19 @@ LUIDB = {
 						0.98, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -7805,13 +7916,7 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -7823,13 +7928,19 @@ LUIDB = {
 						0.15, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -7968,13 +8079,7 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -7986,13 +8091,19 @@ LUIDB = {
 						0.73, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -8131,13 +8242,7 @@ LUIDB = {
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.57, -- [1]
-						0.22, -- [2]
-						1, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -8149,13 +8254,19 @@ LUIDB = {
 						1, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.57, -- [1]
+						0.22, -- [2]
+						1, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.57, -- [1]
 						0.22, -- [2]
 						1, -- [3]
@@ -8294,13 +8405,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -8312,13 +8417,19 @@ LUIDB = {
 						0.89, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -8457,13 +8568,7 @@ LUIDB = {
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.04, -- [1]
-						0.39, -- [2]
-						0.98, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -8475,13 +8580,19 @@ LUIDB = {
 						0.98, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.04, -- [1]
+						0.39, -- [2]
+						0.98, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.04, -- [1]
 						0.39, -- [2]
 						0.98, -- [3]
@@ -8620,13 +8731,7 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -8638,13 +8743,19 @@ LUIDB = {
 						0.9, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -8677,169 +8788,6 @@ LUIDB = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
-						0.7, -- [4]
-					},
-				},
-				["Thromar - Dalaran"] = {
-					["micromenu_btn"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["color_bottom"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["tpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["tps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_bg"] = {
-						0.66, -- [1]
-						0, -- [2]
-						0.43, -- [3]
-						0.8, -- [4]
-					},
-					["orb_cycle"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["color_top"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.5, -- [4]
-					},
-					["raid"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["theme"] = "Paladin",
-					["micromenu_bg2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.7, -- [4]
-					},
-					["orb"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["chat2border"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["navi"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["bar2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.6, -- [4]
-					},
-					["dpsborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["dps"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu_btn_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.8, -- [4]
-					},
-					["sidebar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["chat2"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["micromenu"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-					},
-					["editbox"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["minimap"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						1, -- [4]
-					},
-					["chatborder"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["bar"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
 						0.7, -- [4]
 					},
 				},
@@ -8946,13 +8894,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -8964,13 +8906,19 @@ LUIDB = {
 						0.16, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -9003,6 +8951,169 @@ LUIDB = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
+						0.7, -- [4]
+					},
+				},
+				["Thromar - Dalaran"] = {
+					["micromenu_btn"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["color_bottom"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["tpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["tps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["navi_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_bg"] = {
+						0.66, -- [1]
+						0, -- [2]
+						0.43, -- [3]
+						0.8, -- [4]
+					},
+					["orb_cycle"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["color_top"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.5, -- [4]
+					},
+					["raid"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["theme"] = "Paladin",
+					["micromenu_bg2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.7, -- [4]
+					},
+					["orb"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["chat2border"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["navi"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["bar2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.6, -- [4]
+					},
+					["dpsborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["dps"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["chat2"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu_btn_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.8, -- [4]
+					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["sidebar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["orb_hover"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["micromenu"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+					},
+					["editbox"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["minimap"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						1, -- [4]
+					},
+					["chatborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
+					["bar"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
 						0.7, -- [4]
 					},
 				},
@@ -9109,13 +9220,7 @@ LUIDB = {
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.9, -- [1]
-						0.9, -- [2]
-						0.9, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -9127,13 +9232,19 @@ LUIDB = {
 						0.9, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.9, -- [1]
+						0.9, -- [2]
+						0.9, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.9, -- [1]
 						0.9, -- [2]
 						0.9, -- [3]
@@ -9272,13 +9383,7 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -9290,13 +9395,19 @@ LUIDB = {
 						0.89, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -9435,13 +9546,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -9453,13 +9558,19 @@ LUIDB = {
 						0.55, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -9598,17 +9709,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["raidborder"] = {
-						0, -- [1]
-						0, -- [2]
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
 						0, -- [3]
-						0.86, -- [4]
-					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
+						0.8, -- [4]
 					},
 					["orb_hover"] = {
 						1, -- [1]
@@ -9616,17 +9721,23 @@ LUIDB = {
 						0, -- [3]
 						0.4, -- [4]
 					},
+					["chat2"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.83, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
 						0, -- [3]
-						0.8, -- [4]
+						0.86, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -9760,13 +9871,7 @@ LUIDB = {
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.96, -- [1]
-						0.21, -- [2]
-						0.73, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -9778,13 +9883,19 @@ LUIDB = {
 						0.73, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.96, -- [1]
+						0.21, -- [2]
+						0.73, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.96, -- [1]
 						0.21, -- [2]
 						0.73, -- [3]
@@ -9923,13 +10034,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -9941,13 +10046,19 @@ LUIDB = {
 						0.18, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -10086,13 +10197,7 @@ LUIDB = {
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.22, -- [1]
-						0.91, -- [2]
-						0.18, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -10104,13 +10209,19 @@ LUIDB = {
 						0.18, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.22, -- [1]
+						0.91, -- [2]
+						0.18, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.22, -- [1]
 						0.91, -- [2]
 						0.18, -- [3]
@@ -10249,13 +10360,7 @@ LUIDB = {
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.95, -- [1]
-						0.86, -- [2]
-						0.16, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -10267,13 +10372,19 @@ LUIDB = {
 						0.16, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0.95, -- [1]
+						0.86, -- [2]
+						0.16, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
 						0.4, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						0.95, -- [1]
 						0.86, -- [2]
 						0.16, -- [3]
@@ -10413,7 +10524,13 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
+						0.12, -- [1]
+						0.58, -- [2]
+						0.89, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
@@ -10425,23 +10542,17 @@ LUIDB = {
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						0.12, -- [1]
-						0.58, -- [2]
-						0.89, -- [3]
-						0.4, -- [4]
-					},
 					["sidebar"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
+					["raidborder"] = {
 						0.12, -- [1]
 						0.58, -- [2]
 						0.89, -- [3]
-						0.8, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu"] = {
 						0.12, -- [1]
@@ -10575,13 +10686,7 @@ LUIDB = {
 						0.15, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.44, -- [2]
-						0.15, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -10593,13 +10698,19 @@ LUIDB = {
 						0.15, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						1, -- [1]
+						0.44, -- [2]
+						0.15, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.44, -- [2]
 						0.15, -- [3]
@@ -11016,11 +11127,11 @@ LUIDB = {
 						["Enable"] = false,
 					},
 				},
-				["Thromar - Dalaran"] = {
-					["TopTexture"] = {
+				["Vadder - Argent Dawn"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -11071,11 +11182,11 @@ LUIDB = {
 						["Enable"] = false,
 					},
 				},
-				["Vadder - Argent Dawn"] = {
-					["General"] = {
+				["Thromar - Dalaran"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {
@@ -12919,7 +13030,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Vadder - Argent Dawn"] = {
+		["Thromar - Dalaran"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},
@@ -12976,7 +13087,7 @@ LUIDB = {
 				["WorldMap"] = false,
 			},
 		},
-		["Thromar - Dalaran"] = {
+		["Vadder - Argent Dawn"] = {
 			["Map"] = {
 				["Enable"] = false,
 			},

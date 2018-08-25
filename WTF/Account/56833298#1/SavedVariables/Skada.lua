@@ -458,6 +458,13 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
+<<<<<<< HEAD
+=======
+					["barfont"] = "ABF",
+					["point"] = "BOTTOMRIGHT",
+					["mode"] = "DPS",
+					["bartexture"] = "Tukui",
+>>>>>>> parent of 76f5add1... addon updates
 					["spark"] = false,
 					["bartexture"] = "Tukui",
 					["mode"] = "DPS",

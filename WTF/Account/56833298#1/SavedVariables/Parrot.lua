@@ -154,10 +154,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -198,10 +198,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -373,7 +373,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -382,7 +382,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -670,10 +670,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -714,10 +714,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -886,10 +886,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1186,10 +1186,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1230,10 +1230,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1402,10 +1402,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1577,7 +1577,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1586,7 +1586,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -1746,10 +1746,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1921,7 +1921,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -1930,7 +1930,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -2090,10 +2090,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2265,7 +2265,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2274,7 +2274,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -2434,10 +2434,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2606,10 +2606,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2778,10 +2778,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -2950,10 +2950,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -3250,10 +3250,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -3294,10 +3294,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -3466,10 +3466,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -3756,10 +3756,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {
@@ -3824,7 +3824,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -3833,7 +3833,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -3982,10 +3982,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4326,10 +4326,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4626,10 +4626,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4681,10 +4681,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -4970,10 +4970,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -5014,10 +5014,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -5314,10 +5314,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -5465,10 +5465,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -5658,10 +5658,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -5830,10 +5830,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -5981,10 +5981,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {
@@ -6023,59 +6023,7 @@ ParrotDB = {
 					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
-				["Vadder - Argent Dawn"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
+				["Thromar - Dalaran"] = {
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -6183,6 +6131,18 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -6192,7 +6152,47 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["hideUnitNames"] = true,
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
 					["hideSkillNames"] = true,
 				},
 				["Tynster - Dalaran"] = {
@@ -6346,10 +6346,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -6390,10 +6390,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -6562,10 +6562,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -6711,7 +6711,59 @@ ParrotDB = {
 					},
 					["hideSkillNames"] = true,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -6819,18 +6871,6 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -6840,47 +6880,7 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 				["Default"] = {
@@ -6909,7 +6909,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -6918,7 +6918,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -7078,10 +7078,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -7378,10 +7378,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -7550,10 +7550,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -7572,6 +7572,7 @@ ParrotDB = {
 					["hideSkillNames"] = true,
 				},
 				["Vancard - Zul'jin"] = {
+<<<<<<< HEAD
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -7613,6 +7614,8 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+=======
+>>>>>>> parent of 76f5add1... addon updates
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -7720,7 +7723,62 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+<<<<<<< HEAD
 					["hideUnitNames"] = true,
+=======
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
+					["Incoming"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -7766,10 +7824,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -8199,7 +8257,7 @@ ParrotDB = {
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
 						["Undying Resolve"] = true,
@@ -8231,7 +8289,7 @@ ParrotDB = {
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
 						["Undying Resolve"] = true,
@@ -9131,7 +9189,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["areas"] = {
 						["Outgoing"] = {
 							["stickyDirection"] = "UP;LEFT",
@@ -9227,7 +9285,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["areas"] = {
 						["Outgoing"] = {
 							["stickyDirection"] = "UP;LEFT",
@@ -9681,13 +9739,13 @@ ParrotDB = {
 					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
 				},
-				["Vadder - Argent Dawn"] = {
-					["stickyFont"] = "Prototype",
-					["stickyFontOutline"] = "OUTLINE",
-					["fontOutline"] = "NONE",
-					["stickyFontSize"] = 28,
+				["Thromar - Dalaran"] = {
 					["fontSize"] = 16,
+					["stickyFontOutline"] = "OUTLINE",
+					["stickyFontSize"] = 28,
 					["font"] = "Prototype",
+					["stickyFont"] = "Prototype",
+					["fontOutline"] = "NONE",
 				},
 				["Tynster - Dalaran"] = {
 					["fontSize"] = 16,
@@ -9713,13 +9771,13 @@ ParrotDB = {
 					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
 				},
-				["Thromar - Dalaran"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
+				["Vadder - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
+					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+					["font"] = "Prototype",
 				},
 				["Default"] = {
 					["fontSize"] = 16,
@@ -9757,6 +9815,11 @@ ParrotDB = {
 					["stickyFont"] = "Prototype",
 					["stickyFontOutline"] = "OUTLINE",
 					["fontOutline"] = "NONE",
+<<<<<<< HEAD
+=======
+					["stickyFontSize"] = 28,
+					["fontSize"] = 16,
+>>>>>>> parent of 76f5add1... addon updates
 					["font"] = "Prototype",
 					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
@@ -12153,7 +12216,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -12425,7 +12488,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -13020,7 +13083,7 @@ ParrotDB = {
 		},
 		["Towel-Monk"] = {
 		},
-		["Vadder - Argent Dawn"] = {
+		["Thromar - Dalaran"] = {
 		},
 		["Tynster - Dalaran"] = {
 		},
@@ -13028,7 +13091,7 @@ ParrotDB = {
 		},
 		["Cowtastraphy - Argent Dawn"] = {
 		},
-		["Thromar - Dalaran"] = {
+		["Vadder - Argent Dawn"] = {
 		},
 		["Default"] = {
 		},

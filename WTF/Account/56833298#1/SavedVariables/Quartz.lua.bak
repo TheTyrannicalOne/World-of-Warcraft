@@ -190,12 +190,12 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -356,10 +356,10 @@ Quartz3DB = {
 				["Jingojaggot - Zul'jin"] = {
 					["x"] = 882.395558221442,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["x"] = 882.395558221442,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["x"] = 882.395558221442,
 				},
 				["Cowtastraphy - Argent Dawn"] = {
@@ -608,13 +608,21 @@ Quartz3DB = {
 				["Vancard - Zul'jin"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
+<<<<<<< HEAD
 					["h"] = 37,
 					["fontsize"] = 19,
 					["font"] = "weezerfont",
 					["x"] = 752.432429475146,
 					["nametextx"] = 14,
+=======
+					["x"] = 752.432429475146,
+>>>>>>> parent of 76f5add1... addon updates
 					["border"] = "RothSquare",
 					["texture"] = "Tukui",
+<<<<<<< HEAD
+=======
+					["font"] = "weezerfont",
+>>>>>>> parent of 76f5add1... addon updates
 				},
 				["Brotus - Argent Dawn"] = {
 					["w"] = 447,
@@ -665,7 +673,15 @@ Quartz3DB = {
 					["nametextx"] = 14,
 					["w"] = 447,
 					["y"] = 104.687440020117,
+<<<<<<< HEAD
 					["x"] = 752.432429475146,
+=======
+					["h"] = 37,
+					["fontsize"] = 19,
+					["font"] = "weezerfont",
+					["x"] = 752.432429475146,
+					["nametextx"] = 14,
+>>>>>>> parent of 76f5add1... addon updates
 					["border"] = "RothSquare",
 					["fontsize"] = 19,
 					["texture"] = "Tukui",
@@ -770,17 +786,6 @@ Quartz3DB = {
 					["border"] = "RothSquare",
 					["texture"] = "Tukui",
 				},
-				["Vadder - Argent Dawn"] = {
-					["w"] = 447,
-					["y"] = 104.687440020117,
-					["h"] = 37,
-					["fontsize"] = 19,
-					["font"] = "weezerfont",
-					["border"] = "RothSquare",
-					["nametextx"] = 14,
-					["x"] = 752.432429475146,
-					["texture"] = "Tukui",
-				},
 				["Thromar - Dalaran"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
@@ -790,6 +795,17 @@ Quartz3DB = {
 					["font"] = "weezerfont",
 					["nametextx"] = 14,
 					["border"] = "RothSquare",
+					["texture"] = "Tukui",
+				},
+				["Vadder - Argent Dawn"] = {
+					["w"] = 447,
+					["y"] = 104.687440020117,
+					["h"] = 37,
+					["fontsize"] = 19,
+					["font"] = "weezerfont",
+					["border"] = "RothSquare",
+					["nametextx"] = 14,
+					["x"] = 752.432429475146,
 					["texture"] = "Tukui",
 				},
 				["Cowtastraphy - Argent Dawn"] = {
@@ -1493,7 +1509,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Vadder - Argent Dawn"] = {
+		["Thromar - Dalaran"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1509,7 +1525,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Thromar - Dalaran"] = {
+		["Vadder - Argent Dawn"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,

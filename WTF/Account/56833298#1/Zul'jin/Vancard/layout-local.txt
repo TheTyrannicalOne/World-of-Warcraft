@@ -27,6 +27,37 @@ X: 0
 Y: 0
 W: 365
 H: 240
+<<<<<<< HEAD
+=======
+Frame: AllTheThings-Window-Prime
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-Unsorted
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-RaidAssistant
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-Tradeskills
+FrameLevel: 1
+Anchor: RIGHT
+X: 0
+Y: 0
+W: 300
+H: 496
+>>>>>>> parent of 76f5add1... addon updates
 Frame: SpellActivationOverlayFrame
 FrameLevel: 1
 Anchor: BOTTOM
@@ -34,3 +65,13 @@ X: -6
 Y: -94
 W: 205
 H: 205
+<<<<<<< HEAD
+=======
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+>>>>>>> parent of 76f5add1... addon updates

@@ -51,10 +51,10 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[30907611] = "First Aid:Anchorite Ensham:First Aid Trainer:140407",
 				},
 				["ValeofEternalBlossoms"] = {
-					[22866170] = "Banker:Vaultkeeper Goldpenny:Banker:407909",
 					[27846425] = "GuildVault:Shrine of Two Moons:Guild Vault:0",
-					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
+					[22866170] = "Banker:Vaultkeeper Goldpenny:Banker:407909",
 					[21584797] = "Banker:Vaultkeeper Shifen:Banker:407910",
+					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
 				},
 				["ArgusMacAree"] = {
 					[49396934] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
@@ -117,8 +117,8 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[67745315] = "Banker:Binzella:Banker:288281",
 					[48788382] = "Banker:Rilgiz:Banker:280658",
 					[37928690] = "Stable:Bezzil:Stable Master:284553",
-					[38108688] = "Tailoring:Nivi Weavewell:Tailoring Trainer:283993",
 					[48918360] = "Banker:Perixa:Banker:280662",
+					[38108688] = "Tailoring:Nivi Weavewell:Tailoring Trainer:283993",
 					[38338643] = "First Aid:Krenk Choplimb:First Aid Trainer:283968",
 					[67305312] = "Banker:Vink:Banker:288288",
 					[67885279] = "Banker:Fibi:Banker:288280",

@@ -9,15 +9,22 @@ SkadaPerCharDB = {
 			["time"] = 17,
 			["interrupts"] = 0,
 			["overhealing"] = 0,
+<<<<<<< HEAD
 			["auras"] = {
 			},
 			["power"] = {
 			},
+=======
+			["mobtaken"] = 307,
+			["auras"] = {
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 307,
 			["players"] = {
 				{
 					["last"] = 1534812416,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
 					["class"] = "MAGE",
@@ -84,18 +91,95 @@ SkadaPerCharDB = {
 							["absorbed"] = 0,
 						},
 					},
+=======
+					["ccbreaks"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+						["Theramore Deck Hand"] = 307,
+					},
+					["auras"] = {
+					},
+					["healingspells"] = {
+					},
+					["role"] = "NONE",
+					["overhealing"] = 0,
+					["interrupts"] = 0,
+					["maxhp"] = 2233,
+					["ffdamagedone"] = 0,
+					["shielding"] = 0,
+					["damage"] = 307,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 6,
+							["id"] = 6603,
+							["min"] = 6,
+							["damage"] = 6,
+							["hitmax"] = 6,
+							["hit"] = 1,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 6,
+							["hitamount"] = 6,
+						},
+						["Arcane Barrage"] = {
+							["criticalamount"] = 301,
+							["id"] = 44425,
+							["min"] = 301,
+							["criticalmax"] = 301,
+							["critical"] = 1,
+							["criticalmin"] = 301,
+							["school"] = 64,
+							["totalhits"] = 1,
+							["max"] = 301,
+							["damage"] = 301,
+						},
+					},
+					["name"] = "Vancard",
+					["healed"] = {
+					},
+					["power"] = {
+					},
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1534812405,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 333,
+							["max"] = 67,
+							["name"] = "Attack",
+							["min"] = 46,
+							["totalhits"] = 6,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["ffdamagedonespells"] = {
 					},
 					["dispells"] = 0,
 					["ffdamagedonetargets"] = {
 					},
 					["alertCount"] = 0,
+<<<<<<< HEAD
 					["healed"] = {
 					},
 					["alertDamage"] = 0,
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					["damagetaken"] = 333,
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["time"] = 11,
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -111,15 +195,28 @@ SkadaPerCharDB = {
 					},
 					["hdone"] = 0,
 					["hdonespell"] = {
+<<<<<<< HEAD
 					},
 					["taken"] = 307,
 					["done"] = 333,
 					["htaken"] = 0,
 					["htakenspell"] = {
+=======
+>>>>>>> parent of 76f5add1... addon updates
 					},
+					["taken"] = 307,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 333,
 				},
 			},
+<<<<<<< HEAD
 			["shielding"] = 0,
+=======
+			["power"] = {
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["alertCount"] = 0,
 			["healing"] = 0,
 			["alertDamage"] = 0,
@@ -128,7 +225,11 @@ SkadaPerCharDB = {
 			["damagetaken"] = 333,
 			["name"] = "Theramore Deck Hand",
 			["mobname"] = "Theramore Deck Hand",
+<<<<<<< HEAD
 			["mobtaken"] = 307,
+=======
+			["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 			["mobhdone"] = 0,
 			["last_action"] = 1534812405,
 			["endtime"] = 1534812422,
@@ -143,16 +244,24 @@ SkadaPerCharDB = {
 			["overhealing"] = 0,
 			["auras"] = {
 			},
+<<<<<<< HEAD
 			["power"] = {
 				[0] = 89,
 			},
+=======
+			["mobtaken"] = 943,
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 943,
 			["players"] = {
 				{
 					["last"] = 1533785355,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
+=======
+					["ccbreaks"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 					["class"] = "MAGE",
 					["damaged"] = {
 						["Plainsland Cheetah"] = 943,
@@ -160,11 +269,27 @@ SkadaPerCharDB = {
 					["auras"] = {
 					},
 					["overhealing"] = 0,
+<<<<<<< HEAD
 					["role"] = "DAMAGER",
 					["time"] = 10,
 					["interrupts"] = 0,
 					["ffdamagedone"] = 0,
 					["shielding"] = 0,
+=======
+					["healingspells"] = {
+					},
+					["time"] = 10,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 89,
+							},
+							["amount"] = 89,
+						},
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["maxhp"] = 2233,
 					["damage"] = 943,
 					["damagespells"] = {
@@ -186,6 +311,7 @@ SkadaPerCharDB = {
 							["id"] = 7268,
 							["damage"] = 800,
 							["max"] = 180,
+<<<<<<< HEAD
 							["totalhits"] = 8,
 							["min"] = 88,
 							["criticalmax"] = 180,
@@ -316,6 +442,138 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ffdamagedone"] = 0,
 					["shielding"] = 0,
+=======
+							["school"] = 64,
+							["min"] = 88,
+							["criticalmax"] = 180,
+							["hitmax"] = 92,
+							["hit"] = 7,
+							["totalhits"] = 8,
+							["critical"] = 1,
+							["criticalmin"] = 180,
+							["hitamount"] = 620,
+						},
+					},
+					["name"] = "Vancard",
+					["damagetaken"] = 280,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533785345,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 280,
+							["max"] = 47,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["totalhits"] = 7,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["min"] = 34,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Plainsland Cheetah"] = {
+					["players"] = {
+						["Vancard"] = {
+							["taken"] = 943,
+							["done"] = 280,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 943,
+					["done"] = 280,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+			},
+			["power"] = {
+				[0] = 89,
+			},
+			["alertCount"] = 0,
+			["healing"] = 0,
+			["alertDamage"] = 0,
+			["starttime"] = 1533785344,
+			["ffdamagedone"] = 0,
+			["damagetaken"] = 280,
+			["name"] = "Plainsland Cheetah",
+			["mobname"] = "Plainsland Cheetah",
+			["shielding"] = 0,
+			["mobhdone"] = 0,
+			["last_action"] = 1533785344,
+			["endtime"] = 1533785358,
+		}, -- [2]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["mobdone"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 8,
+			["interrupts"] = 0,
+			["overhealing"] = 0,
+			["auras"] = {
+			},
+			["mobtaken"] = 1884,
+			["damage"] = 1884,
+			["players"] = {
+				{
+					["last"] = 1533785037,
+					["healingabsorbed"] = 0,
+					["ccbreaks"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+						["Kolkar Stormseer"] = 1239,
+					},
+					["auras"] = {
+						["Clearcasting"] = {
+							["name"] = "Clearcasting",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 2,
+							["auratype"] = "BUFF",
+							["id"] = 263725,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 7,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 86,
+							},
+							["amount"] = 86,
+						},
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["maxhp"] = 2233,
 					["damage"] = 1239,
 					["damagespells"] = {
@@ -337,6 +595,7 @@ SkadaPerCharDB = {
 							["id"] = 7268,
 							["damage"] = 961,
 							["max"] = 176,
+<<<<<<< HEAD
 							["totalhits"] = 7,
 							["min"] = 87,
 							["criticalmax"] = 176,
@@ -344,11 +603,21 @@ SkadaPerCharDB = {
 							["hit"] = 3,
 							["school"] = 64,
 							["critical"] = 4,
+=======
+							["school"] = 64,
+							["min"] = 87,
+							["criticalmax"] = 176,
+							["critical"] = 4,
+							["hit"] = 3,
+							["totalhits"] = 7,
+							["hitmax"] = 87,
+>>>>>>> parent of 76f5add1... addon updates
 							["criticalmin"] = 174,
 							["hitamount"] = 261,
 						},
 					},
 					["name"] = "Vancard",
+<<<<<<< HEAD
 					["healed"] = {
 					},
 					["power"] = {
@@ -405,6 +674,58 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ffdamagedone"] = 0,
 					["shielding"] = 0,
+=======
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533785030,
+					["damagetakenspells"] = {
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+				}, -- [1]
+				{
+					["last"] = 1533785036,
+					["healingabsorbed"] = 0,
+					["ccbreaks"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Kolkar Stormseer"] = 645,
+					},
+					["auras"] = {
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 80,
+							["min"] = 40,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 2,
+							["overhealing"] = 0,
+							["max"] = 40,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["time"] = 6,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["maxhp"] = 1910,
 					["damage"] = 645,
 					["damagespells"] = {
@@ -414,6 +735,7 @@ SkadaPerCharDB = {
 							["id"] = 585,
 							["damage"] = 645,
 							["max"] = 322,
+<<<<<<< HEAD
 							["totalhits"] = 3,
 							["min"] = 161,
 							["criticalmax"] = 322,
@@ -421,11 +743,21 @@ SkadaPerCharDB = {
 							["hit"] = 2,
 							["school"] = 2,
 							["hitmax"] = 162,
+=======
+							["school"] = 2,
+							["min"] = 161,
+							["criticalmax"] = 322,
+							["hitmax"] = 162,
+							["hit"] = 2,
+							["totalhits"] = 3,
+							["critical"] = 1,
+>>>>>>> parent of 76f5add1... addon updates
 							["criticalmin"] = 322,
 							["hitamount"] = 323,
 						},
 					},
 					["name"] = "Lumael",
+<<<<<<< HEAD
 					["healed"] = {
 						["Player-61-0BAB1A8A"] = {
 							["role"] = "HEALER",
@@ -453,6 +785,34 @@ SkadaPerCharDB = {
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1A8A",
+					["healing"] = 80,
+					["first"] = 1533785030,
+					["damagetakenspells"] = {
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+						["Player-61-0BAB1A8A"] = {
+							["role"] = "HEALER",
+							["name"] = "Lumael",
+							["amount"] = 80,
+							["class"] = "PRIEST",
+							["shielding"] = 0,
+						},
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "HEALER",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [2]
 			},
 			["deaths"] = 0,
@@ -476,13 +836,24 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1884,
+<<<<<<< HEAD
+=======
+					["done"] = 0,
+					["htaken"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 					["htakenspell"] = {
 					},
 					["htaken"] = 0,
 					["done"] = 0,
 				},
 			},
+<<<<<<< HEAD
 			["shielding"] = 0,
+=======
+			["power"] = {
+				[0] = 86,
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["alertCount"] = 0,
 			["healing"] = 80,
 			["alertDamage"] = 0,
@@ -491,7 +862,11 @@ SkadaPerCharDB = {
 			["damagetaken"] = 0,
 			["name"] = "Kolkar Stormseer (3)",
 			["mobname"] = "Kolkar Stormseer",
+<<<<<<< HEAD
 			["mobtaken"] = 1884,
+=======
+			["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 			["mobhdone"] = 0,
 			["last_action"] = 1533785030,
 			["endtime"] = 1533785038,
@@ -506,16 +881,24 @@ SkadaPerCharDB = {
 			["overhealing"] = 0,
 			["auras"] = {
 			},
+<<<<<<< HEAD
 			["power"] = {
 				[0] = 169,
 			},
+=======
+			["mobtaken"] = 1004,
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 1004,
 			["players"] = {
 				{
 					["last"] = 1533785024,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
+=======
+					["ccbreaks"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 					["class"] = "MAGE",
 					["damaged"] = {
 						["Kolkar Stormseer"] = 890,
@@ -531,6 +914,7 @@ SkadaPerCharDB = {
 						},
 					},
 					["overhealing"] = 0,
+<<<<<<< HEAD
 					["role"] = "DAMAGER",
 					["time"] = 7,
 					["interrupts"] = 0,
@@ -575,6 +959,52 @@ SkadaPerCharDB = {
 							["amount"] = 169,
 						},
 					},
+=======
+					["healingspells"] = {
+					},
+					["time"] = 7,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 169,
+							},
+							["amount"] = 169,
+						},
+					},
+					["maxhp"] = 2233,
+					["damage"] = 890,
+					["damagespells"] = {
+						["Arcane Barrage"] = {
+							["hitmin"] = 140,
+							["id"] = 44425,
+							["min"] = 140,
+							["damage"] = 280,
+							["hitmax"] = 140,
+							["hit"] = 2,
+							["school"] = 64,
+							["totalhits"] = 2,
+							["max"] = 140,
+							["hitamount"] = 280,
+						},
+						["Arcane Missiles"] = {
+							["hitmin"] = 87,
+							["id"] = 7268,
+							["min"] = 87,
+							["damage"] = 610,
+							["hitmax"] = 88,
+							["hit"] = 7,
+							["school"] = 64,
+							["totalhits"] = 7,
+							["max"] = 88,
+							["hitamount"] = 610,
+						},
+					},
+					["name"] = "Vancard",
+					["damagetaken"] = 111,
+					["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 					["id"] = "Player-61-0BAB1BE0",
 					["healing"] = 0,
 					["first"] = 1533785017,
@@ -585,17 +1015,26 @@ SkadaPerCharDB = {
 							["damage"] = 111,
 							["max"] = 111,
 							["name"] = "Lightning Cloud",
+<<<<<<< HEAD
 							["min"] = 111,
+=======
+							["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["school"] = 8,
 							["resisted"] = 0,
+<<<<<<< HEAD
 							["glancing"] = 0,
+=======
+							["min"] = 111,
+>>>>>>> parent of 76f5add1... addon updates
 							["absorbed"] = 0,
 						},
 					},
 					["ffdamagedonespells"] = {
+<<<<<<< HEAD
 					},
 					["dispells"] = 0,
 					["ffdamagedonetargets"] = {
@@ -606,10 +1045,24 @@ SkadaPerCharDB = {
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [1]
 				{
 					["last"] = 1533785024,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
 					["class"] = "PRIEST",
@@ -632,6 +1085,31 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ffdamagedone"] = 0,
 					["shielding"] = 0,
+=======
+					["ccbreaks"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Kolkar Stormseer"] = 114,
+					},
+					["auras"] = {
+						["Holy Fire"] = {
+							["name"] = "Holy Fire",
+							["active"] = 0,
+							["school"] = 2,
+							["uptime"] = 0,
+							["auratype"] = "DEBUFF",
+							["id"] = 14914,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 1,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["maxhp"] = 1910,
 					["damage"] = 114,
 					["damagespells"] = {
@@ -649,10 +1127,15 @@ SkadaPerCharDB = {
 						},
 					},
 					["name"] = "Lumael",
+<<<<<<< HEAD
 					["healed"] = {
 					},
 					["power"] = {
 					},
+=======
+					["damagetaken"] = 101,
+					["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 					["id"] = "Player-61-0BAB1A8A",
 					["healing"] = 0,
 					["first"] = 1533785023,
@@ -663,13 +1146,21 @@ SkadaPerCharDB = {
 							["damage"] = 101,
 							["max"] = 101,
 							["name"] = "Lightning Cloud",
+<<<<<<< HEAD
 							["min"] = 101,
+=======
+							["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 							["totalhits"] = 1,
 							["critical"] = 0,
 							["blocked"] = 0,
 							["school"] = 8,
 							["resisted"] = 0,
+<<<<<<< HEAD
 							["glancing"] = 0,
+=======
+							["min"] = 101,
+>>>>>>> parent of 76f5add1... addon updates
 							["absorbed"] = 0,
 						},
 					},
@@ -679,11 +1170,20 @@ SkadaPerCharDB = {
 					["ffdamagedonetargets"] = {
 					},
 					["alertCount"] = 0,
+<<<<<<< HEAD
 					["damagetaken"] = 101,
 					["alertDamage"] = 0,
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "HEALER",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [2]
 			},
 			["deaths"] = 0,
@@ -707,6 +1207,7 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 1004,
+<<<<<<< HEAD
 					["htakenspell"] = {
 					},
 					["htaken"] = 0,
@@ -714,6 +1215,17 @@ SkadaPerCharDB = {
 				},
 			},
 			["shielding"] = 0,
+=======
+					["done"] = 212,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+			},
+			["power"] = {
+				[0] = 169,
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["alertCount"] = 0,
 			["healing"] = 0,
 			["alertDamage"] = 0,
@@ -722,7 +1234,11 @@ SkadaPerCharDB = {
 			["damagetaken"] = 212,
 			["name"] = "Kolkar Stormseer (2)",
 			["mobname"] = "Kolkar Stormseer",
+<<<<<<< HEAD
 			["mobtaken"] = 1004,
+=======
+			["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 			["mobhdone"] = 0,
 			["last_action"] = 1533785016,
 			["endtime"] = 1533785025,
@@ -737,14 +1253,19 @@ SkadaPerCharDB = {
 			["overhealing"] = 489,
 			["auras"] = {
 			},
+<<<<<<< HEAD
 			["power"] = {
 				[0] = 84,
 			},
+=======
+			["mobtaken"] = 889,
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 889,
 			["players"] = {
 				{
 					["last"] = 1533784914,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 						["Trail of Light"] = {
 							["shielding"] = 0,
@@ -873,10 +1394,141 @@ SkadaPerCharDB = {
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					["ccbreaks"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Savannah Prowler"] = 447,
+					},
+					["auras"] = {
+						["Holy Fire"] = {
+							["name"] = "Holy Fire",
+							["active"] = 0,
+							["school"] = 2,
+							["uptime"] = 3,
+							["auratype"] = "DEBUFF",
+							["id"] = 14914,
+						},
+					},
+					["overhealing"] = 489,
+					["healingspells"] = {
+						["Trail of Light"] = {
+							["shielding"] = 0,
+							["id"] = 234946,
+							["healing"] = 0,
+							["min"] = 0,
+							["name"] = "Trail of Light",
+							["hits"] = 1,
+							["overhealing"] = 295,
+							["max"] = 0,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+						["Flash Heal"] = {
+							["shielding"] = 0,
+							["id"] = 2061,
+							["healing"] = 543,
+							["min"] = 543,
+							["name"] = "Flash Heal",
+							["hits"] = 1,
+							["overhealing"] = 194,
+							["max"] = 543,
+							["critical"] = 1,
+							["absorbed"] = 0,
+						},
+					},
+					["time"] = 5,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+					["maxhp"] = 1910,
+					["damage"] = 447,
+					["damagespells"] = {
+						["Holy Fire"] = {
+							["hitmin"] = 17,
+							["criticalamount"] = 228,
+							["id"] = 14914,
+							["damage"] = 285,
+							["max"] = 228,
+							["school"] = 2,
+							["min"] = 17,
+							["criticalmax"] = 228,
+							["critical"] = 1,
+							["hit"] = 3,
+							["totalhits"] = 4,
+							["hitmax"] = 20,
+							["criticalmin"] = 228,
+							["hitamount"] = 57,
+						},
+						["Smite"] = {
+							["hitmin"] = 162,
+							["id"] = 585,
+							["min"] = 162,
+							["damage"] = 162,
+							["hitmax"] = 162,
+							["hit"] = 1,
+							["school"] = 2,
+							["totalhits"] = 1,
+							["max"] = 162,
+							["hitamount"] = 162,
+						},
+					},
+					["name"] = "Lumael",
+					["damagetaken"] = 118,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1A8A",
+					["healing"] = 543,
+					["first"] = 1533784909,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 118,
+							["max"] = 44,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["totalhits"] = 3,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["min"] = 37,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+						["Player-61-0BAB1BE0"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Vancard",
+							["amount"] = 543,
+							["class"] = "MAGE",
+							["shielding"] = 0,
+						},
+						["Player-61-0BAB1A8A"] = {
+							["role"] = "HEALER",
+							["name"] = "Lumael",
+							["amount"] = 0,
+							["class"] = "PRIEST",
+							["shielding"] = 0,
+						},
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "HEALER",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [1]
 				{
 					["last"] = 1533784914,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
 					["class"] = "MAGE",
@@ -937,13 +1589,109 @@ SkadaPerCharDB = {
 					},
 					["ffdamagedonespells"] = {
 					},
+=======
+					["ccbreaks"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+						["Savannah Prowler"] = 442,
+					},
+					["auras"] = {
+						["Clearcasting"] = {
+							["name"] = "Clearcasting",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 2,
+							["auratype"] = "BUFF",
+							["id"] = 263725,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 1,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 84,
+							},
+							["amount"] = 84,
+						},
+					},
+					["maxhp"] = 2233,
+					["damage"] = 442,
+					["damagespells"] = {
+						["Arcane Missiles"] = {
+							["hitmin"] = 90,
+							["criticalamount"] = 352,
+							["id"] = 7268,
+							["damage"] = 442,
+							["max"] = 176,
+							["school"] = 64,
+							["min"] = 90,
+							["criticalmax"] = 176,
+							["critical"] = 2,
+							["hit"] = 1,
+							["totalhits"] = 3,
+							["hitmax"] = 90,
+							["criticalmin"] = 176,
+							["hitamount"] = 90,
+						},
+					},
+					["name"] = "Vancard",
+					["damagetaken"] = 0,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533784913,
+					["damagetakenspells"] = {
+					},
+					["ffdamagedonespells"] = {
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["dispells"] = 0,
 					["ffdamagedonetargets"] = {
 					},
 					["alertCount"] = 0,
+<<<<<<< HEAD
 					["damagetaken"] = 0,
 					["alertDamage"] = 0,
 					["alert"] = {
+=======
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+				}, -- [2]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Savannah Prowler"] = {
+					["players"] = {
+						["Lumael"] = {
+							["taken"] = 447,
+							["done"] = 118,
+							["class"] = "PRIEST",
+							["role"] = "HEALER",
+						},
+						["Vancard"] = {
+							["taken"] = 442,
+							["done"] = 0,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 889,
+					["done"] = 118,
+					["htaken"] = 0,
+					["htakenspell"] = {
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["ccbreaks"] = 0,
 				}, -- [2]
@@ -975,7 +1723,13 @@ SkadaPerCharDB = {
 					["done"] = 118,
 				},
 			},
+<<<<<<< HEAD
 			["shielding"] = 0,
+=======
+			["power"] = {
+				[0] = 84,
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["alertCount"] = 0,
 			["healing"] = 543,
 			["alertDamage"] = 0,
@@ -984,7 +1738,11 @@ SkadaPerCharDB = {
 			["damagetaken"] = 118,
 			["name"] = "Savannah Prowler (2)",
 			["mobname"] = "Savannah Prowler",
+<<<<<<< HEAD
 			["mobtaken"] = 889,
+=======
+			["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 			["mobhdone"] = 0,
 			["last_action"] = 1533784907,
 			["endtime"] = 1533784915,
@@ -999,17 +1757,25 @@ SkadaPerCharDB = {
 			["overhealing"] = 0,
 			["auras"] = {
 			},
+<<<<<<< HEAD
 			["power"] = {
 				[0] = 253,
 				[16] = 1,
 			},
+=======
+			["mobtaken"] = 2529,
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 2529,
 			["players"] = {
 				{
 					["last"] = 1533784904,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
+=======
+					["ccbreaks"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 					["class"] = "MAGE",
 					["damaged"] = {
 						["Savannah Prowler"] = 1625,
@@ -1023,6 +1789,7 @@ SkadaPerCharDB = {
 							["uptime"] = 1,
 							["auratype"] = "BUFF",
 							["id"] = 263725,
+<<<<<<< HEAD
 						},
 					},
 					["overhealing"] = 0,
@@ -1031,6 +1798,30 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ffdamagedone"] = 0,
 					["shielding"] = 0,
+=======
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 13,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 253,
+							},
+							["amount"] = 253,
+						},
+						[16] = {
+							["spells"] = {
+								[1449] = 1,
+							},
+							["amount"] = 1,
+						},
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["maxhp"] = 2233,
 					["damage"] = 2529,
 					["damagespells"] = {
@@ -1064,6 +1855,7 @@ SkadaPerCharDB = {
 							["id"] = 7268,
 							["damage"] = 2180,
 							["max"] = 177,
+<<<<<<< HEAD
 							["totalhits"] = 21,
 							["min"] = 84,
 							["criticalmax"] = 177,
@@ -1071,11 +1863,21 @@ SkadaPerCharDB = {
 							["hit"] = 17,
 							["school"] = 64,
 							["hitmax"] = 90,
+=======
+							["school"] = 64,
+							["min"] = 84,
+							["criticalmax"] = 177,
+							["hitmax"] = 90,
+							["hit"] = 17,
+							["totalhits"] = 21,
+							["critical"] = 4,
+>>>>>>> parent of 76f5add1... addon updates
 							["criticalmin"] = 174,
 							["hitamount"] = 1480,
 						},
 					},
 					["name"] = "Vancard",
+<<<<<<< HEAD
 					["healed"] = {
 					},
 					["power"] = {
@@ -1219,6 +2021,146 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["ffdamagedone"] = 0,
 					["shielding"] = 0,
+=======
+					["damagetaken"] = 488,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533784891,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 488,
+							["max"] = 83,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["totalhits"] = 11,
+							["critical"] = 1,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["min"] = 34,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Savannah Prowler"] = {
+					["players"] = {
+						["Vancard"] = {
+							["taken"] = 1625,
+							["done"] = 242,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 1625,
+					["done"] = 242,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+				["Savannah Huntress"] = {
+					["players"] = {
+						["Vancard"] = {
+							["taken"] = 904,
+							["done"] = 246,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 904,
+					["done"] = 246,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+			},
+			["power"] = {
+				[0] = 253,
+				[16] = 1,
+			},
+			["alertCount"] = 0,
+			["healing"] = 0,
+			["alertDamage"] = 0,
+			["starttime"] = 1533784888,
+			["ffdamagedone"] = 0,
+			["damagetaken"] = 488,
+			["name"] = "Savannah Prowler",
+			["mobname"] = "Savannah Prowler",
+			["shielding"] = 0,
+			["mobhdone"] = 0,
+			["last_action"] = 1533784888,
+			["endtime"] = 1533784905,
+		}, -- [6]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["mobdone"] = 475,
+			["ccbreaks"] = 0,
+			["time"] = 15,
+			["interrupts"] = 0,
+			["overhealing"] = 788,
+			["auras"] = {
+			},
+			["mobtaken"] = 3154,
+			["damage"] = 3154,
+			["players"] = {
+				{
+					["last"] = 1533784814,
+					["healingabsorbed"] = 0,
+					["ccbreaks"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+						["Hezrul Bloodmark"] = 1900,
+						["Hezrul's Bloodguard"] = 705,
+					},
+					["auras"] = {
+						["Clearcasting"] = {
+							["name"] = "Clearcasting",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 3,
+							["auratype"] = "BUFF",
+							["id"] = 263725,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 12,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 169,
+							},
+							["amount"] = 169,
+						},
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["maxhp"] = 2233,
 					["damage"] = 2605,
 					["damagespells"] = {
@@ -1228,6 +2170,7 @@ SkadaPerCharDB = {
 							["id"] = 44425,
 							["damage"] = 418,
 							["max"] = 279,
+<<<<<<< HEAD
 							["totalhits"] = 2,
 							["min"] = 139,
 							["criticalmax"] = 279,
@@ -1235,6 +2178,15 @@ SkadaPerCharDB = {
 							["hit"] = 1,
 							["school"] = 64,
 							["hitmax"] = 139,
+=======
+							["school"] = 64,
+							["min"] = 139,
+							["criticalmax"] = 279,
+							["hitmax"] = 139,
+							["hit"] = 1,
+							["totalhits"] = 2,
+							["critical"] = 1,
+>>>>>>> parent of 76f5add1... addon updates
 							["criticalmin"] = 279,
 							["hitamount"] = 139,
 						},
@@ -1244,6 +2196,7 @@ SkadaPerCharDB = {
 							["id"] = 7268,
 							["damage"] = 2187,
 							["max"] = 175,
+<<<<<<< HEAD
 							["totalhits"] = 24,
 							["min"] = 86,
 							["criticalmax"] = 175,
@@ -1251,11 +2204,21 @@ SkadaPerCharDB = {
 							["hit"] = 23,
 							["school"] = 64,
 							["hitmax"] = 90,
+=======
+							["school"] = 64,
+							["min"] = 86,
+							["criticalmax"] = 175,
+							["hitmax"] = 90,
+							["hit"] = 23,
+							["totalhits"] = 24,
+							["critical"] = 1,
+>>>>>>> parent of 76f5add1... addon updates
 							["criticalmin"] = 175,
 							["hitamount"] = 2012,
 						},
 					},
 					["name"] = "Vancard",
+<<<<<<< HEAD
 					["healed"] = {
 					},
 					["power"] = {
@@ -1379,6 +2342,125 @@ SkadaPerCharDB = {
 							["criticalmin"] = 38,
 							["hitamount"] = 188,
 						},
+=======
+					["damagetaken"] = 382,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533784802,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 382,
+							["max"] = 65,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["totalhits"] = 9,
+							["critical"] = 1,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["min"] = 25,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+				}, -- [1]
+				{
+					["last"] = 1533784815,
+					["healingabsorbed"] = 0,
+					["ccbreaks"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Hezrul Bloodmark"] = 387,
+						["Hezrul's Bloodguard"] = 162,
+					},
+					["auras"] = {
+						["Holy Fire"] = {
+							["name"] = "Holy Fire",
+							["active"] = 0,
+							["school"] = 2,
+							["uptime"] = 5,
+							["auratype"] = "DEBUFF",
+							["id"] = 14914,
+						},
+					},
+					["overhealing"] = 788,
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 61,
+							["min"] = 21,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 2,
+							["overhealing"] = 19,
+							["max"] = 40,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+						["Trail of Light"] = {
+							["shielding"] = 0,
+							["id"] = 234946,
+							["healing"] = 382,
+							["min"] = 147,
+							["name"] = "Trail of Light",
+							["hits"] = 2,
+							["overhealing"] = 60,
+							["max"] = 235,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+						["Flash Heal"] = {
+							["shielding"] = 0,
+							["id"] = 2061,
+							["healing"] = 396,
+							["min"] = 32,
+							["name"] = "Flash Heal",
+							["hits"] = 2,
+							["overhealing"] = 709,
+							["max"] = 364,
+							["critical"] = 1,
+							["absorbed"] = 0,
+						},
+					},
+					["time"] = 10,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+					["maxhp"] = 1910,
+					["damage"] = 549,
+					["damagespells"] = {
+						["Holy Fire"] = {
+							["hitmin"] = 17,
+							["criticalamount"] = 38,
+							["id"] = 14914,
+							["damage"] = 226,
+							["max"] = 114,
+							["school"] = 2,
+							["min"] = 17,
+							["criticalmax"] = 38,
+							["hitmax"] = 114,
+							["hit"] = 5,
+							["totalhits"] = 6,
+							["critical"] = 1,
+							["criticalmin"] = 38,
+							["hitamount"] = 188,
+						},
+>>>>>>> parent of 76f5add1... addon updates
 						["Smite"] = {
 							["hitmin"] = 161,
 							["id"] = 585,
@@ -1393,6 +2475,7 @@ SkadaPerCharDB = {
 						},
 					},
 					["name"] = "Lumael",
+<<<<<<< HEAD
 					["healed"] = {
 						["Player-61-0BAB1A8A"] = {
 							["role"] = "HEALER",
@@ -1442,6 +2525,56 @@ SkadaPerCharDB = {
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					["damagetaken"] = 93,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1A8A",
+					["healing"] = 839,
+					["first"] = 1533784805,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 93,
+							["max"] = 32,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["totalhits"] = 3,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["min"] = 29,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+						["Player-61-0BAB1A8A"] = {
+							["role"] = "HEALER",
+							["name"] = "Lumael",
+							["amount"] = 457,
+							["class"] = "PRIEST",
+							["shielding"] = 0,
+						},
+						["Player-61-0BAB1BE0"] = {
+							["role"] = "DAMAGER",
+							["name"] = "Vancard",
+							["amount"] = 382,
+							["class"] = "MAGE",
+							["shielding"] = 0,
+						},
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "HEALER",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [2]
 			},
 			["deaths"] = 0,
@@ -1465,10 +2598,17 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 2287,
+<<<<<<< HEAD
 					["htakenspell"] = {
 					},
 					["htaken"] = 0,
 					["done"] = 164,
+=======
+					["done"] = 164,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+>>>>>>> parent of 76f5add1... addon updates
 				},
 				["Hezrul's Bloodguard"] = {
 					["players"] = {
@@ -1489,6 +2629,7 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 867,
+<<<<<<< HEAD
 					["htakenspell"] = {
 					},
 					["htaken"] = 0,
@@ -1496,6 +2637,17 @@ SkadaPerCharDB = {
 				},
 			},
 			["shielding"] = 0,
+=======
+					["done"] = 311,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+			},
+			["power"] = {
+				[0] = 169,
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["alertCount"] = 0,
 			["healing"] = 839,
 			["alertDamage"] = 0,
@@ -1504,7 +2656,11 @@ SkadaPerCharDB = {
 			["damagetaken"] = 475,
 			["name"] = "Hezrul Bloodmark",
 			["mobname"] = "Hezrul Bloodmark",
+<<<<<<< HEAD
 			["mobtaken"] = 3154,
+=======
+			["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 			["mobhdone"] = 0,
 			["last_action"] = 1533784801,
 			["endtime"] = 1533784816,
@@ -1519,14 +2675,19 @@ SkadaPerCharDB = {
 			["overhealing"] = 0,
 			["auras"] = {
 			},
+<<<<<<< HEAD
 			["power"] = {
 				[0] = 84,
 			},
+=======
+			["mobtaken"] = 835,
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 835,
 			["players"] = {
 				{
 					["last"] = 1533784721,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
 					["class"] = "MAGE",
@@ -1623,6 +2784,104 @@ SkadaPerCharDB = {
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					["ccbreaks"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+						["Kolkar Marauder"] = 835,
+					},
+					["auras"] = {
+						["Clearcasting"] = {
+							["name"] = "Clearcasting",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 1,
+							["auratype"] = "BUFF",
+							["id"] = 263725,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 4,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 84,
+							},
+							["amount"] = 84,
+						},
+					},
+					["maxhp"] = 2233,
+					["damage"] = 835,
+					["damagespells"] = {
+						["Arcane Barrage"] = {
+							["hitmin"] = 139,
+							["id"] = 44425,
+							["min"] = 139,
+							["damage"] = 139,
+							["hitmax"] = 139,
+							["hit"] = 1,
+							["school"] = 64,
+							["totalhits"] = 1,
+							["max"] = 139,
+							["hitamount"] = 139,
+						},
+						["Arcane Missiles"] = {
+							["hitmin"] = 87,
+							["criticalamount"] = 174,
+							["id"] = 7268,
+							["damage"] = 696,
+							["max"] = 174,
+							["school"] = 64,
+							["min"] = 87,
+							["criticalmax"] = 174,
+							["hitmax"] = 87,
+							["hit"] = 6,
+							["totalhits"] = 7,
+							["critical"] = 1,
+							["criticalmin"] = 174,
+							["hitamount"] = 522,
+						},
+					},
+					["name"] = "Vancard",
+					["damagetaken"] = 46,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533784717,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 46,
+							["max"] = 46,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["totalhits"] = 1,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["min"] = 46,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -1640,6 +2899,7 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 835,
+<<<<<<< HEAD
 					["htakenspell"] = {
 					},
 					["htaken"] = 0,
@@ -1647,6 +2907,17 @@ SkadaPerCharDB = {
 				},
 			},
 			["shielding"] = 0,
+=======
+					["done"] = 46,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+			},
+			["power"] = {
+				[0] = 84,
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["alertCount"] = 0,
 			["healing"] = 0,
 			["alertDamage"] = 0,
@@ -1655,7 +2926,11 @@ SkadaPerCharDB = {
 			["damagetaken"] = 46,
 			["name"] = "Kolkar Marauder (2)",
 			["mobname"] = "Kolkar Marauder",
+<<<<<<< HEAD
 			["mobtaken"] = 835,
+=======
+			["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 			["mobhdone"] = 0,
 			["last_action"] = 1533784716,
 			["endtime"] = 1533784722,
@@ -1670,14 +2945,19 @@ SkadaPerCharDB = {
 			["overhealing"] = 0,
 			["auras"] = {
 			},
+<<<<<<< HEAD
 			["power"] = {
 				[0] = 169,
 			},
+=======
+			["mobtaken"] = 1628,
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 1628,
 			["players"] = {
 				{
 					["last"] = 1533784510,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 					},
 					["class"] = "MAGE",
@@ -1802,6 +3082,132 @@ SkadaPerCharDB = {
 					["alert"] = {
 					},
 					["ccbreaks"] = 0,
+=======
+					["ccbreaks"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+						["Kolkar Stormseer"] = 836,
+						["Kolkar Marauder"] = 792,
+					},
+					["auras"] = {
+						["Clearcasting"] = {
+							["name"] = "Clearcasting",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 7,
+							["auratype"] = "BUFF",
+							["id"] = 263725,
+						},
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 11,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[59914] = 169,
+							},
+							["amount"] = 169,
+						},
+					},
+					["maxhp"] = 2233,
+					["damage"] = 1628,
+					["damagespells"] = {
+						["Arcane Missiles"] = {
+							["hitmin"] = 86,
+							["criticalamount"] = 176,
+							["id"] = 7268,
+							["damage"] = 1479,
+							["max"] = 176,
+							["school"] = 64,
+							["min"] = 86,
+							["criticalmax"] = 176,
+							["hitmax"] = 88,
+							["hit"] = 15,
+							["totalhits"] = 16,
+							["critical"] = 1,
+							["criticalmin"] = 176,
+							["hitamount"] = 1303,
+						},
+						["Arcane Barrage"] = {
+							["hitmin"] = 140,
+							["id"] = 44425,
+							["min"] = 140,
+							["damage"] = 140,
+							["hitmax"] = 140,
+							["hit"] = 1,
+							["school"] = 64,
+							["totalhits"] = 1,
+							["max"] = 140,
+							["hitamount"] = 140,
+						},
+						["Attack"] = {
+							["hitmin"] = 9,
+							["id"] = 6603,
+							["min"] = 9,
+							["damage"] = 9,
+							["hitmax"] = 9,
+							["hit"] = 1,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 9,
+							["hitamount"] = 9,
+						},
+					},
+					["name"] = "Vancard",
+					["damagetaken"] = 688,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533784499,
+					["damagetakenspells"] = {
+						["Lightning Bolt"] = {
+							["crushing"] = 0,
+							["id"] = 9532,
+							["damage"] = 574,
+							["max"] = 201,
+							["name"] = "Lightning Bolt",
+							["glancing"] = 0,
+							["totalhits"] = 3,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 8,
+							["resisted"] = 0,
+							["min"] = 185,
+							["absorbed"] = 0,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 114,
+							["max"] = 63,
+							["name"] = "Attack",
+							["glancing"] = 0,
+							["totalhits"] = 2,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["min"] = 51,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [1]
 			},
 			["deaths"] = 0,
@@ -1819,6 +3225,11 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 836,
+<<<<<<< HEAD
+=======
+					["done"] = 574,
+					["htaken"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 					["htakenspell"] = {
 					},
 					["htaken"] = 0,
@@ -1837,6 +3248,7 @@ SkadaPerCharDB = {
 					["hdonespell"] = {
 					},
 					["taken"] = 792,
+<<<<<<< HEAD
 					["htakenspell"] = {
 					},
 					["htaken"] = 0,
@@ -1844,6 +3256,17 @@ SkadaPerCharDB = {
 				},
 			},
 			["shielding"] = 0,
+=======
+					["done"] = 114,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+			},
+			["power"] = {
+				[0] = 169,
+			},
+>>>>>>> parent of 76f5add1... addon updates
 			["alertCount"] = 0,
 			["healing"] = 0,
 			["alertDamage"] = 0,
@@ -1852,7 +3275,11 @@ SkadaPerCharDB = {
 			["damagetaken"] = 688,
 			["name"] = "Kolkar Marauder",
 			["mobname"] = "Kolkar Marauder",
+<<<<<<< HEAD
 			["mobtaken"] = 1628,
+=======
+			["shielding"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 			["mobhdone"] = 0,
 			["last_action"] = 1533784488,
 			["endtime"] = 1533784512,
@@ -1867,13 +3294,18 @@ SkadaPerCharDB = {
 			["overhealing"] = 0,
 			["auras"] = {
 			},
+<<<<<<< HEAD
 			["power"] = {
 			},
+=======
+			["mobtaken"] = 444,
+>>>>>>> parent of 76f5add1... addon updates
 			["damage"] = 444,
 			["players"] = {
 				{
 					["last"] = 1533784292,
 					["healingabsorbed"] = 0,
+<<<<<<< HEAD
 					["healingspells"] = {
 						["Swift Hand of Justice"] = {
 							["shielding"] = 0,
@@ -3224,10 +4656,1000 @@ SkadaPerCharDB = {
 						["name"] = "Cone of Cold",
 						["min"] = 58,
 						["totalhits"] = 1,
+=======
+					["ccbreaks"] = 0,
+					["class"] = "PRIEST",
+					["damaged"] = {
+						["Kolkar Stormseer"] = 444,
+					},
+					["auras"] = {
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 80,
+							["min"] = 40,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 2,
+							["overhealing"] = 0,
+							["max"] = 40,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["time"] = 4,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+					["maxhp"] = 1910,
+					["damage"] = 444,
+					["damagespells"] = {
+						["Holy Fire"] = {
+							["hitmin"] = 17,
+							["criticalamount"] = 71,
+							["id"] = 14914,
+							["damage"] = 126,
+							["max"] = 39,
+							["school"] = 2,
+							["min"] = 17,
+							["criticalmax"] = 39,
+							["hitmax"] = 19,
+							["hit"] = 3,
+							["totalhits"] = 5,
+							["critical"] = 2,
+							["criticalmin"] = 32,
+							["hitamount"] = 55,
+						},
+						["Smite"] = {
+							["hitmin"] = 159,
+							["id"] = 585,
+							["min"] = 159,
+							["damage"] = 318,
+							["hitmax"] = 159,
+							["hit"] = 2,
+							["school"] = 2,
+							["totalhits"] = 2,
+							["max"] = 159,
+							["hitamount"] = 318,
+						},
+					},
+					["name"] = "Lumael",
+					["damagetaken"] = 89,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1A8A",
+					["healing"] = 80,
+					["first"] = 1533784288,
+					["damagetakenspells"] = {
+						["Lightning Cloud"] = {
+							["crushing"] = 0,
+							["id"] = 6535,
+							["damage"] = 89,
+							["max"] = 89,
+							["name"] = "Lightning Cloud",
+							["glancing"] = 0,
+							["totalhits"] = 1,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 8,
+							["resisted"] = 0,
+							["min"] = 89,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+						["Player-61-0BAB1A8A"] = {
+							["role"] = "HEALER",
+							["name"] = "Lumael",
+							["amount"] = 80,
+							["class"] = "PRIEST",
+							["shielding"] = 0,
+						},
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "HEALER",
+				}, -- [1]
+				{
+					["last"] = 1533784292,
+					["healingabsorbed"] = 0,
+					["ccbreaks"] = 0,
+					["class"] = "MAGE",
+					["damaged"] = {
+					},
+					["auras"] = {
+					},
+					["overhealing"] = 0,
+					["healingspells"] = {
+					},
+					["time"] = 0,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+					["maxhp"] = 2233,
+					["damage"] = 0,
+					["damagespells"] = {
+					},
+					["name"] = "Vancard",
+					["damagetaken"] = 91,
+					["shielding"] = 0,
+					["id"] = "Player-61-0BAB1BE0",
+					["healing"] = 0,
+					["first"] = 1533784292,
+					["damagetakenspells"] = {
+						["Lightning Cloud"] = {
+							["crushing"] = 0,
+							["id"] = 6535,
+							["damage"] = 91,
+							["max"] = 91,
+							["name"] = "Lightning Cloud",
+							["glancing"] = 0,
+							["totalhits"] = 1,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 8,
+							["resisted"] = 0,
+							["min"] = 91,
+							["absorbed"] = 0,
+						},
+					},
+					["ffdamagedonespells"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["alertCount"] = 0,
+					["healed"] = {
+					},
+					["alertDamage"] = 0,
+					["alert"] = {
+					},
+					["role"] = "DAMAGER",
+				}, -- [2]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Kolkar Stormseer"] = {
+					["players"] = {
+						["Lumael"] = {
+							["taken"] = 444,
+							["done"] = 89,
+							["class"] = "PRIEST",
+							["role"] = "HEALER",
+						},
+						["Vancard"] = {
+							["taken"] = 0,
+							["done"] = 91,
+							["class"] = "MAGE",
+							["role"] = "DAMAGER",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 444,
+					["done"] = 180,
+					["htaken"] = 0,
+					["htakenspell"] = {
+					},
+				},
+			},
+			["power"] = {
+			},
+			["alertCount"] = 0,
+			["healing"] = 80,
+			["alertDamage"] = 0,
+			["starttime"] = 1533784287,
+			["ffdamagedone"] = 0,
+			["damagetaken"] = 180,
+			["name"] = "Kolkar Stormseer",
+			["mobname"] = "Kolkar Stormseer",
+			["shielding"] = 0,
+			["mobhdone"] = 0,
+			["last_action"] = 1533784287,
+			["endtime"] = 1533784297,
+		}, -- [10]
+	},
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 1,
+		["ccbreaks"] = 0,
+		["time"] = 1624,
+		["interrupts"] = 9,
+		["overhealing"] = 125500,
+		["mobtaken"] = 455526,
+		["damage"] = 455526,
+		["players"] = {
+			{
+				["alertDamage"] = 0,
+				["healingabsorbed"] = 0,
+				["role"] = "HEALER",
+				["class"] = "PRIEST",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["ffdamagedone"] = 0,
+				["healingspells"] = {
+					["Renew"] = {
+						["shielding"] = 0,
+						["id"] = 139,
+						["healing"] = 2274,
+						["min"] = 0,
+						["name"] = "Renew",
+						["hits"] = 51,
+						["overhealing"] = 415,
+						["max"] = 108,
+						["critical"] = 5,
+						["absorbed"] = 0,
+					},
+					["Swift Hand of Justice"] = {
+						["shielding"] = 0,
+						["id"] = 59913,
+						["healing"] = 642,
+						["min"] = 0,
+						["name"] = "Swift Hand of Justice",
+						["hits"] = 32,
+						["overhealing"] = 703,
+						["max"] = 45,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Prayer of Healing"] = {
+						["shielding"] = 0,
+						["id"] = 596,
+						["healing"] = 39244,
+						["min"] = 0,
+						["name"] = "Prayer of Healing",
+						["hits"] = 314,
+						["overhealing"] = 22987,
+						["max"] = 341,
+						["critical"] = 57,
+						["absorbed"] = 0,
+					},
+					["Flash Heal"] = {
+						["shielding"] = 0,
+						["id"] = 2061,
+						["healing"] = 94811,
+						["min"] = 0,
+						["name"] = "Flash Heal",
+						["hits"] = 320,
+						["overhealing"] = 41790,
+						["max"] = 737,
+						["critical"] = 66,
+						["absorbed"] = 0,
+					},
+					["Holy Word: Serenity"] = {
+						["shielding"] = 0,
+						["id"] = 2050,
+						["healing"] = 4854,
+						["min"] = 0,
+						["name"] = "Holy Word: Serenity",
+						["hits"] = 9,
+						["overhealing"] = 10096,
+						["max"] = 1363,
+						["critical"] = 2,
+						["absorbed"] = 0,
+					},
+					["Trail of Light"] = {
+						["shielding"] = 0,
+						["id"] = 234946,
+						["healing"] = 20830,
+						["min"] = 0,
+						["name"] = "Trail of Light",
+						["hits"] = 311,
+						["overhealing"] = 32039,
+						["max"] = 295,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["time"] = 1415,
+				["interrupts"] = 0,
+				["healed"] = {
+					["Player-61-0BAB1A8A"] = {
+						["role"] = "HEALER",
+						["name"] = "Lumael",
+						["amount"] = 28543,
+						["class"] = "PRIEST",
+						["shielding"] = 0,
+					},
+					["Player-61-0BAB1BE0"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Vancard",
+						["amount"] = 15200,
+						["class"] = "MAGE",
+						["shielding"] = 0,
+					},
+					["Player-3209-09D96C78"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Holkir-Azralon",
+						["amount"] = 14919,
+						["class"] = "SHAMAN",
+						["shielding"] = 0,
+					},
+					["Player-3209-09DA9B09"] = {
+						["role"] = "TANK",
+						["name"] = "Athorius-Azralon",
+						["amount"] = 88932,
+						["class"] = "PALADIN",
+						["shielding"] = 0,
+					},
+					["Player-3209-09D61E75"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Wurkon-Azralon",
+						["amount"] = 15061,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["maxhp"] = 2040,
+				["name"] = "Lumael",
+				["damage"] = 25540,
+				["damagespells"] = {
+					["Holy Fire"] = {
+						["hitmin"] = 13,
+						["criticalamount"] = 4029,
+						["id"] = 14914,
+						["damage"] = 10515,
+						["max"] = 229,
+						["school"] = 2,
+						["min"] = 13,
+						["criticalmax"] = 229,
+						["hitmax"] = 115,
+						["hit"] = 210,
+						["totalhits"] = 268,
+						["critical"] = 58,
+						["criticalmin"] = 30,
+						["hitamount"] = 6486,
+					},
+					["Smite"] = {
+						["hitmin"] = 157,
+						["criticalamount"] = 4485,
+						["id"] = 585,
+						["damage"] = 15017,
+						["max"] = 322,
+						["school"] = 2,
+						["min"] = 157,
+						["criticalmax"] = 322,
+						["hitmax"] = 162,
+						["hit"] = 66,
+						["totalhits"] = 80,
+						["critical"] = 14,
+						["criticalmin"] = 317,
+						["hitamount"] = 10532,
+					},
+					["Attack"] = {
+						["hitmin"] = 8,
+						["id"] = 6603,
+						["min"] = 8,
+						["damage"] = 8,
+						["hitmax"] = 8,
+						["hit"] = 1,
+						["school"] = 1,
+						["totalhits"] = 1,
+						["max"] = 8,
+						["hitamount"] = 8,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1533783871.51601,
+						["log"] = {
+							{
+								["spellname"] = "Lumael dies",
+								["ts"] = 1533783871.51601,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [1]
+							{
+								["ts"] = 1533783861.30002,
+								["amount"] = -31,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1634,
+								["spellid"] = 7485,
+							}, -- [2]
+							{
+								["ts"] = 1533783861.91303,
+								["amount"] = -184,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1634,
+								["spellid"] = 88163,
+							}, -- [3]
+							{
+								["absorb"] = 0,
+								["amount"] = 74,
+								["spellid"] = 234946,
+								["srcname"] = "Lumael",
+								["hp"] = 1524,
+								["ts"] = 1533783864.02904,
+							}, -- [4]
+							{
+								["absorb"] = 0,
+								["amount"] = 74,
+								["spellid"] = 234946,
+								["srcname"] = "Lumael",
+								["hp"] = 1598,
+								["ts"] = 1533783865.39005,
+							}, -- [5]
+							{
+								["ts"] = 1533783865.47706,
+								["amount"] = -633,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1598,
+								["spellid"] = 88163,
+							}, -- [6]
+							{
+								["absorb"] = 0,
+								["amount"] = 74,
+								["spellid"] = 234946,
+								["srcname"] = "Lumael",
+								["hp"] = 1039,
+								["ts"] = 1533783866.85307,
+							}, -- [7]
+							{
+								["ts"] = 1533783867.49208,
+								["amount"] = -278,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1039,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["absorb"] = 0,
+								["amount"] = 170,
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+								["hp"] = 931,
+								["ts"] = 1533783868.77709,
+							}, -- [9]
+							{
+								["ts"] = 1533783869.2161,
+								["amount"] = -155,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 931,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["ts"] = 1533783869.49711,
+								["amount"] = -327,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 776,
+								["spellid"] = 88163,
+							}, -- [11]
+							{
+								["absorb"] = 0,
+								["amount"] = 171,
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+								["hp"] = 620,
+								["ts"] = 1533783870.86112,
+							}, -- [12]
+							{
+								["ts"] = 1533783871.21613,
+								["amount"] = -192,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 620,
+								["spellid"] = 88163,
+							}, -- [13]
+							{
+								["ts"] = 1533783871.50014,
+								["amount"] = -345,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 428,
+								["spellid"] = 88163,
+							}, -- [14]
+							{
+								["ts"] = 1533783871.51515,
+								["amount"] = -169,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1,
+								["spellid"] = 12739,
+							}, -- [15]
+							["pos"] = 2,
+						},
+						["maxhp"] = 1910,
+					}, -- [1]
+					{
+						["ts"] = 1533783822.62415,
+						["log"] = {
+							{
+								["ts"] = 1533783807.68901,
+								["amount"] = -165,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1745,
+								["spellid"] = 12739,
+							}, -- [1]
+							{
+								["ts"] = 1533783808.42602,
+								["amount"] = -167,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1745,
+								["spellid"] = 88163,
+							}, -- [2]
+							{
+								["absorb"] = 0,
+								["amount"] = 171,
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+								["hp"] = 1749,
+								["ts"] = 1533783808.88303,
+							}, -- [3]
+							{
+								["ts"] = 1533783811.12204,
+								["amount"] = -174,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1575,
+								["spellid"] = 12739,
+							}, -- [4]
+							{
+								["absorb"] = 0,
+								["amount"] = 171,
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+								["hp"] = 1746,
+								["ts"] = 1533783812.28005,
+							}, -- [5]
+							{
+								["ts"] = 1533783814.58506,
+								["amount"] = -330,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1746,
+								["spellid"] = 88163,
+							}, -- [6]
+							{
+								["ts"] = 1533783814.77807,
+								["amount"] = -158,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1258,
+								["spellid"] = 12739,
+							}, -- [7]
+							{
+								["ts"] = 1533783816.58208,
+								["amount"] = -369,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1258,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1533783818.43009,
+								["amount"] = -156,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 733,
+								["spellid"] = 12739,
+							}, -- [9]
+							{
+								["ts"] = 1533783818.5901,
+								["amount"] = -301,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 733,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["ts"] = 1533783820.59111,
+								["amount"] = -355,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 432,
+								["spellid"] = 88163,
+							}, -- [11]
+							{
+								["absorb"] = 0,
+								["amount"] = 369,
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+								["hp"] = 446,
+								["ts"] = 1533783821.43212,
+							}, -- [12]
+							{
+								["ts"] = 1533783822.06813,
+								["amount"] = -156,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 290,
+								["spellid"] = 12739,
+							}, -- [13]
+							{
+								["ts"] = 1533783822.60714,
+								["amount"] = -292,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 290,
+								["spellid"] = 88163,
+							}, -- [14]
+							{
+								["spellname"] = "Lumael dies",
+								["ts"] = 1533783822.62415,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [15]
+							["pos"] = 1,
+						},
+						["maxhp"] = 1910,
+					}, -- [2]
+					{
+						["ts"] = 1533783743.86404,
+						["log"] = {
+							{
+								["ts"] = 1533783743.57901,
+								["amount"] = -286,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 454,
+								["spellid"] = 88163,
+							}, -- [1]
+							{
+								["ts"] = 1533783743.62002,
+								["amount"] = -160,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 8,
+								["spellid"] = 12739,
+							}, -- [2]
+							{
+								["ts"] = 1533783743.84103,
+								["amount"] = -208,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 8,
+								["spellid"] = 88163,
+							}, -- [3]
+							{
+								["spellname"] = "Lumael dies",
+								["ts"] = 1533783743.86404,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [4]
+							{
+								["ts"] = 1533783737.66405,
+								["amount"] = 74,
+								["spellid"] = 234946,
+								["srcname"] = "Lumael",
+								["hp"] = 1666,
+								["absorb"] = 0,
+							}, -- [5]
+							{
+								["ts"] = 1533783739.00106,
+								["amount"] = 73,
+								["spellid"] = 234946,
+								["srcname"] = "Lumael",
+								["hp"] = 1739,
+								["absorb"] = 0,
+							}, -- [6]
+							{
+								["ts"] = 1533783739.20907,
+								["amount"] = -171,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1568,
+								["spellid"] = 12739,
+							}, -- [7]
+							{
+								["ts"] = 1533783739.97808,
+								["amount"] = -172,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1396,
+								["spellid"] = 12739,
+							}, -- [8]
+							{
+								["ts"] = 1533783740.35309,
+								["amount"] = 73,
+								["spellid"] = 234946,
+								["srcname"] = "Lumael",
+								["hp"] = 1469,
+								["absorb"] = 0,
+							}, -- [9]
+							{
+								["ts"] = 1533783741.7951,
+								["amount"] = -141,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1469,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["ts"] = 1533783742.81111,
+								["amount"] = -179,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1328,
+								["spellid"] = 88163,
+							}, -- [11]
+							{
+								["ts"] = 1533783742.87312,
+								["amount"] = -161,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1167,
+								["spellid"] = 12739,
+							}, -- [12]
+							{
+								["ts"] = 1533783742.88713,
+								["amount"] = -194,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 988,
+								["spellid"] = 88163,
+							}, -- [13]
+							{
+								["ts"] = 1533783743.17914,
+								["amount"] = -183,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 794,
+								["spellid"] = 88163,
+							}, -- [14]
+							{
+								["ts"] = 1533783743.23415,
+								["amount"] = -157,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 794,
+								["spellid"] = 88163,
+							}, -- [15]
+							["pos"] = 5,
+						},
+						["maxhp"] = 1910,
+					}, -- [3]
+					{
+						["ts"] = 1533783373.42501,
+						["log"] = {
+							{
+								["spellname"] = "Lumael dies",
+								["ts"] = 1533783373.42501,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [1]
+							{
+								["ts"] = 1533783367.34002,
+								["amount"] = -232,
+								["spellid"] = 88163,
+								["hp"] = 1400,
+								["srcname"] = "Pustulant Monstrosity",
+							}, -- [2]
+							{
+								["absorb"] = 0,
+								["amount"] = 162,
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+								["hp"] = 1330,
+								["ts"] = 1533783368.93903,
+							}, -- [3]
+							{
+								["ts"] = 1533783369.40004,
+								["amount"] = -233,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1330,
+								["spellid"] = 88163,
+							}, -- [4]
+							{
+								["ts"] = 1533783369.63105,
+								["amount"] = -22,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 1075,
+								["spellid"] = 93675,
+							}, -- [5]
+							{
+								["ts"] = 1533783370.62406,
+								["amount"] = -262,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1075,
+								["spellid"] = 88163,
+							}, -- [6]
+							{
+								["ts"] = 1533783370.62407,
+								["amount"] = -22,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 791,
+								["spellid"] = 93675,
+							}, -- [7]
+							{
+								["absorb"] = 0,
+								["amount"] = 162,
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+								["hp"] = 953,
+								["ts"] = 1533783371.02808,
+							}, -- [8]
+							{
+								["ts"] = 1533783371.40709,
+								["amount"] = -312,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 953,
+								["spellid"] = 88163,
+							}, -- [9]
+							{
+								["ts"] = 1533783371.6331,
+								["amount"] = -22,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 619,
+								["spellid"] = 93675,
+							}, -- [10]
+							{
+								["ts"] = 1533783372.63311,
+								["amount"] = -266,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 619,
+								["spellid"] = 88163,
+							}, -- [11]
+							{
+								["ts"] = 1533783372.63312,
+								["amount"] = -22,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 597,
+								["spellid"] = 93675,
+							}, -- [12]
+							{
+								["absorb"] = 0,
+								["amount"] = 162,
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+								["hp"] = 493,
+								["ts"] = 1533783373.12013,
+							}, -- [13]
+							{
+								["ts"] = 1533783373.33714,
+								["amount"] = -326,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 493,
+								["spellid"] = 88163,
+							}, -- [14]
+							{
+								["ts"] = 1533783373.42415,
+								["amount"] = -270,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 167,
+								["spellid"] = 88163,
+							}, -- [15]
+							["pos"] = 2,
+						},
+						["maxhp"] = 1910,
+					}, -- [4]
+				},
+				["damagetaken"] = 42597,
+				["shielding"] = 0,
+				["id"] = "Player-61-0BAB1A8A",
+				["healing"] = 162655,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 40,
+						["spellid"] = 59913,
+						["srcname"] = "Lumael",
+						["hp"] = 1889,
+						["ts"] = 1533784812.917,
+					}, -- [1]
+					{
+						["ts"] = 1533784812.917,
+						["amount"] = 21,
+						["spellid"] = 59913,
+						["srcname"] = "Lumael",
+						["hp"] = 1910,
+						["absorb"] = 0,
+					}, -- [2]
+					{
+						["ts"] = 1533784813.545,
+						["amount"] = -32,
+						["srcname"] = "Hezrul's Bloodguard",
+						["hp"] = 1910,
+						["spellid"] = 88163,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 32,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 1910,
+						["ts"] = 1533784814.495,
+					}, -- [4]
+					{
+						["ts"] = 1533784908.502,
+						["amount"] = 0,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 1910,
+						["absorb"] = 0,
+					}, -- [5]
+					{
+						["ts"] = 1533784909.637,
+						["amount"] = -37,
+						["srcname"] = "Savannah Prowler",
+						["hp"] = 1910,
+						["spellid"] = 88163,
+					}, -- [6]
+					{
+						["ts"] = 1533784911.01,
+						["amount"] = -44,
+						["srcname"] = "Savannah Prowler",
+						["hp"] = 1873,
+						["spellid"] = 88163,
+					}, -- [7]
+					{
+						["ts"] = 1533784912.414,
+						["amount"] = -37,
+						["srcname"] = "Savannah Prowler",
+						["hp"] = 1829,
+						["spellid"] = 88163,
+					}, -- [8]
+					{
+						["ts"] = 1533785022.756,
+						["amount"] = -101,
+						["srcname"] = "Kolkar Stormseer",
+						["hp"] = 1809,
+						["spellid"] = 6535,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 40,
+						["spellid"] = 59913,
+						["srcname"] = "Lumael",
+						["hp"] = 1810,
+						["ts"] = 1533785032.083,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 40,
+						["spellid"] = 59913,
+						["srcname"] = "Lumael",
+						["hp"] = 1850,
+						["ts"] = 1533785032.083,
+					}, -- [11]
+					{
+						["ts"] = 1533784532.628,
+						["amount"] = -108,
+						["srcname"] = "Kolkar Stormseer",
+						["hp"] = 1548,
+						["spellid"] = 6535,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 364,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 1910,
+						["ts"] = 1533784809.775,
+					}, -- [13]
+					{
+						["ts"] = 1533784811.537,
+						["amount"] = -32,
+						["srcname"] = "Hezrul's Bloodguard",
+						["hp"] = 1910,
+						["spellid"] = 88163,
+					}, -- [14]
+					{
+						["ts"] = 1533784811.537,
+						["amount"] = -29,
+						["srcname"] = "Hezrul's Bloodguard",
+						["hp"] = 1910,
+						["spellid"] = 88163,
+					}, -- [15]
+					["pos"] = 12,
+				},
+				["damagetakenspells"] = {
+					["Slashing Claws"] = {
+						["crushing"] = 0,
+						["id"] = 91064,
+						["damage"] = 97,
+						["max"] = 23,
+						["name"] = "Slashing Claws",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 17,
+						["absorbed"] = 0,
+					},
+					["Frostbolt"] = {
+						["crushing"] = 0,
+						["id"] = 15497,
+						["damage"] = 742,
+						["max"] = 130,
+						["name"] = "Frostbolt",
+						["glancing"] = 0,
+						["totalhits"] = 6,
+>>>>>>> parent of 76f5add1... addon updates
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
@@ -3431,6 +5853,542 @@ SkadaPerCharDB = {
 						["hitamount"] = 38,
 					},
 				},
+=======
+						["min"] = 116,
+						["absorbed"] = 0,
+					},
+					["Malefic Strike"] = {
+						["crushing"] = 0,
+						["id"] = 93685,
+						["damage"] = 322,
+						["max"] = 322,
+						["name"] = "Malefic Strike",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 322,
+						["absorbed"] = 0,
+					},
+					["Disease Cloud"] = {
+						["crushing"] = 0,
+						["id"] = 91562,
+						["damage"] = 220,
+						["max"] = 38,
+						["name"] = "Disease Cloud",
+						["glancing"] = 0,
+						["totalhits"] = 6,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 34,
+						["absorbed"] = 0,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 19650,
+						["max"] = 633,
+						["name"] = "Attack",
+						["glancing"] = 0,
+						["totalhits"] = 125,
+						["critical"] = 4,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 23,
+						["absorbed"] = 0,
+					},
+					["Mortal Wound"] = {
+						["crushing"] = 0,
+						["id"] = 93675,
+						["damage"] = 88,
+						["max"] = 22,
+						["name"] = "Mortal Wound",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 22,
+						["absorbed"] = 0,
+					},
+					["Pistol Barrage"] = {
+						["crushing"] = 0,
+						["id"] = 93564,
+						["damage"] = 3623,
+						["max"] = 242,
+						["name"] = "Pistol Barrage",
+						["glancing"] = 0,
+						["totalhits"] = 15,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 241,
+						["absorbed"] = 0,
+					},
+					["Lightning Cloud"] = {
+						["crushing"] = 0,
+						["id"] = 6535,
+						["damage"] = 378,
+						["max"] = 108,
+						["name"] = "Lightning Cloud",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 80,
+						["absorbed"] = 0,
+					},
+					["Bone Flurry"] = {
+						["crushing"] = 0,
+						["id"] = 91420,
+						["damage"] = 241,
+						["max"] = 81,
+						["name"] = "Bone Flurry",
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 80,
+						["absorbed"] = 0,
+					},
+					["Ravage"] = {
+						["crushing"] = 0,
+						["id"] = 3242,
+						["damage"] = 383,
+						["max"] = 214,
+						["name"] = "Ravage",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 169,
+						["absorbed"] = 0,
+					},
+					["Conjure Poisonous Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93697,
+						["damage"] = 483,
+						["max"] = 242,
+						["name"] = "Conjure Poisonous Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 241,
+						["absorbed"] = 0,
+					},
+					["Conjure Frost Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93505,
+						["damage"] = 1603,
+						["max"] = 337,
+						["name"] = "Conjure Frost Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 308,
+						["absorbed"] = 0,
+					},
+					["Deadly Poison"] = {
+						["crushing"] = 0,
+						["id"] = 3583,
+						["damage"] = 23,
+						["max"] = 23,
+						["name"] = "Deadly Poison",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 23,
+						["absorbed"] = 0,
+					},
+					["Pustulant Spit"] = {
+						["crushing"] = 0,
+						["id"] = 91677,
+						["damage"] = 692,
+						["max"] = 147,
+						["name"] = "Pustulant Spit",
+						["glancing"] = 0,
+						["totalhits"] = 17,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 19,
+						["absorbed"] = 0,
+					},
+					["Smash"] = {
+						["crushing"] = 0,
+						["id"] = 91213,
+						["damage"] = 509,
+						["max"] = 135,
+						["name"] = "Smash",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 120,
+						["absorbed"] = 0,
+					},
+					["Lightning Bolt"] = {
+						["crushing"] = 0,
+						["id"] = 9532,
+						["damage"] = 189,
+						["max"] = 189,
+						["name"] = "Lightning Bolt",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 189,
+						["absorbed"] = 0,
+					},
+					["Shadow Bolt"] = {
+						["crushing"] = 0,
+						["id"] = 12739,
+						["damage"] = 7184,
+						["max"] = 174,
+						["name"] = "Shadow Bolt",
+						["glancing"] = 0,
+						["totalhits"] = 44,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 150,
+						["absorbed"] = 0,
+					},
+					["Pain and Suffering"] = {
+						["crushing"] = 0,
+						["id"] = 93581,
+						["damage"] = 619,
+						["max"] = 111,
+						["name"] = "Pain and Suffering",
+						["glancing"] = 0,
+						["totalhits"] = 7,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 32,
+						["absorbed"] = 0,
+					},
+					["Butcher Drain"] = {
+						["crushing"] = 0,
+						["id"] = 7485,
+						["damage"] = 31,
+						["max"] = 31,
+						["name"] = "Butcher Drain",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 31,
+						["absorbed"] = 0,
+					},
+					["Fire Blast"] = {
+						["crushing"] = 0,
+						["id"] = 13341,
+						["damage"] = 177,
+						["max"] = 62,
+						["name"] = "Fire Blast",
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 4,
+						["resisted"] = 0,
+						["min"] = 56,
+						["absorbed"] = 0,
+					},
+					["Consume Flesh"] = {
+						["crushing"] = 0,
+						["id"] = 91088,
+						["damage"] = 204,
+						["max"] = 204,
+						["name"] = "Consume Flesh",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 204,
+						["absorbed"] = 0,
+					},
+					["Asphyxiate"] = {
+						["crushing"] = 0,
+						["id"] = 93424,
+						["damage"] = 4305,
+						["max"] = 380,
+						["name"] = "Asphyxiate",
+						["glancing"] = 0,
+						["totalhits"] = 12,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 348,
+						["absorbed"] = 0,
+					},
+					["Dark Touch"] = {
+						["crushing"] = 0,
+						["id"] = 91522,
+						["damage"] = 24,
+						["max"] = 24,
+						["name"] = "Dark Touch",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 24,
+						["absorbed"] = 0,
+					},
+					["Cone of Cold"] = {
+						["crushing"] = 0,
+						["id"] = 12611,
+						["damage"] = 58,
+						["max"] = 58,
+						["name"] = "Cone of Cold",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 58,
+						["absorbed"] = 0,
+					},
+					["Fel Stomp"] = {
+						["crushing"] = 0,
+						["id"] = 7139,
+						["damage"] = 752,
+						["max"] = 255,
+						["name"] = "Fel Stomp",
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 244,
+						["absorbed"] = 0,
+					},
+				},
+				["ffdamagedonespells"] = {
+				},
+				["ccbreaks"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 0,
+				["power"] = {
+				},
+				["overhealing"] = 108030,
+				["alert"] = {
+				},
+				["auras"] = {
+					["Renew"] = {
+						["uptime"] = 15,
+						["active"] = 0,
+						["school"] = 2,
+						["name"] = "Renew",
+						["auratype"] = "BUFF",
+						["id"] = 139,
+					},
+					["Holy Fire"] = {
+						["uptime"] = 182,
+						["active"] = 0,
+						["school"] = 2,
+						["auratype"] = "DEBUFF",
+						["id"] = 14914,
+						["name"] = "Holy Fire",
+					},
+					["Find Herbs"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Find Herbs",
+						["auratype"] = "BUFF",
+						["id"] = 2383,
+					},
+					["Find Minerals"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Find Minerals",
+						["auratype"] = "BUFF",
+						["id"] = 2580,
+					},
+				},
+			}, -- [1]
+			{
+				["alertDamage"] = 2364,
+				["healingabsorbed"] = 0,
+				["role"] = "DAMAGER",
+				["class"] = "MAGE",
+				["damaged"] = {
+				},
+				["dispells"] = 1,
+				["ffdamagedone"] = 0,
+				["healingspells"] = {
+					["Prismatic Barrier"] = {
+						["shielding"] = 2962,
+						["id"] = 235450,
+						["healing"] = 2962,
+						["min"] = 0,
+						["name"] = "Prismatic Barrier",
+						["hits"] = 34,
+						["overhealing"] = 719,
+						["max"] = 388,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["time"] = 1549,
+				["interrupts"] = 0,
+				["healed"] = {
+					["Player-61-0BAB1BE0"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Vancard",
+						["amount"] = 2962,
+						["class"] = "MAGE",
+						["shielding"] = 2962,
+					},
+				},
+				["maxhp"] = 2233,
+				["name"] = "Vancard",
+				["damage"] = 192330,
+				["damagespells"] = {
+					["Arcane Blast"] = {
+						["hitmin"] = 94,
+						["criticalamount"] = 1078,
+						["id"] = 30451,
+						["damage"] = 2818,
+						["max"] = 306,
+						["school"] = 64,
+						["min"] = 94,
+						["criticalmax"] = 306,
+						["hitmax"] = 154,
+						["hit"] = 17,
+						["totalhits"] = 22,
+						["critical"] = 5,
+						["criticalmin"] = 192,
+						["hitamount"] = 1740,
+					},
+					["Frost Nova"] = {
+						["hitmin"] = 7,
+						["criticalamount"] = 15,
+						["id"] = 122,
+						["damage"] = 60,
+						["max"] = 15,
+						["school"] = 16,
+						["min"] = 7,
+						["criticalmax"] = 15,
+						["hitmax"] = 8,
+						["hit"] = 6,
+						["totalhits"] = 7,
+						["critical"] = 1,
+						["criticalmin"] = 15,
+						["hitamount"] = 45,
+					},
+					["Arcane Missiles"] = {
+						["hitmin"] = 84,
+						["criticalamount"] = 47197,
+						["id"] = 7268,
+						["damage"] = 147345,
+						["max"] = 180,
+						["school"] = 64,
+						["min"] = 84,
+						["criticalmax"] = 180,
+						["hitmax"] = 92,
+						["hit"] = 1153,
+						["totalhits"] = 1424,
+						["critical"] = 271,
+						["criticalmin"] = 172,
+						["hitamount"] = 100148,
+					},
+					["Counterspell"] = {
+						["totalhits"] = 3,
+						["id"] = 2139,
+						["school"] = 2,
+						["IMMUNE"] = 3,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+					["Arcane Barrage"] = {
+						["hitmin"] = 137,
+						["criticalamount"] = 12616,
+						["id"] = 44425,
+						["damage"] = 36218,
+						["max"] = 447,
+						["school"] = 64,
+						["min"] = 137,
+						["criticalmax"] = 447,
+						["critical"] = 43,
+						["hit"] = 160,
+						["totalhits"] = 203,
+						["hitmax"] = 225,
+						["criticalmin"] = 276,
+						["hitamount"] = 23602,
+					},
+					["Arcane Explosion"] = {
+						["hitmin"] = 102,
+						["criticalamount"] = 2092,
+						["id"] = 1449,
+						["damage"] = 5851,
+						["max"] = 211,
+						["school"] = 64,
+						["min"] = 102,
+						["criticalmax"] = 211,
+						["hitmax"] = 106,
+						["hit"] = 36,
+						["totalhits"] = 46,
+						["critical"] = 10,
+						["criticalmin"] = 208,
+						["hitamount"] = 3759,
+					},
+					["Attack"] = {
+						["hitmin"] = 6,
+						["id"] = 6603,
+						["min"] = 6,
+						["damage"] = 38,
+						["hitmax"] = 9,
+						["hit"] = 5,
+						["school"] = 1,
+						["totalhits"] = 5,
+						["max"] = 9,
+						["hitamount"] = 38,
+					},
+				},
+>>>>>>> parent of 76f5add1... addon updates
 				["deaths"] = {
 					{
 						["ts"] = 1533783877.56412,
@@ -3438,81 +6396,145 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783870.86201,
 								["amount"] = 85,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1308,
 								["absorb"] = 0,
 							}, -- [1]
 							{
 								["ts"] = 1533783870.89702,
 								["amount"] = -183,
+<<<<<<< HEAD
 								["hp"] = 1308,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1308,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [2]
 							{
 								["ts"] = 1533783870.91603,
 								["amount"] = -29,
+<<<<<<< HEAD
 								["hp"] = 1279,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1279,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [3]
 							{
 								["ts"] = 1533783873.50704,
 								["amount"] = -1,
+<<<<<<< HEAD
 								["srcname"] = "Baron Silverlaine",
 								["spellid"] = 88163,
+=======
+								["spellid"] = 88163,
+								["srcname"] = "Baron Silverlaine",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1096,
 								["absorb"] = -388,
 							}, -- [4]
 							{
 								["ts"] = 1533783874.10005,
 								["amount"] = -210,
+<<<<<<< HEAD
 								["hp"] = 1095,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1095,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [5]
 							{
 								["ts"] = 1533783874.13106,
 								["amount"] = -32,
+<<<<<<< HEAD
 								["hp"] = 853,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 853,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [6]
 							{
 								["ts"] = 1533783875.51407,
 								["amount"] = -395,
+<<<<<<< HEAD
 								["hp"] = 853,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 853,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [7]
 							{
 								["ts"] = 1533783877.23308,
 								["amount"] = -137,
+<<<<<<< HEAD
 								["hp"] = 458,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 458,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [8]
 							{
 								["ts"] = 1533783877.29609,
 								["amount"] = -197,
+<<<<<<< HEAD
 								["hp"] = 458,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 458,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [9]
 							{
 								["ts"] = 1533783877.3231,
 								["amount"] = -31,
+<<<<<<< HEAD
 								["hp"] = 93,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 93,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [10]
 							{
 								["ts"] = 1533783877.52011,
 								["amount"] = -321,
+<<<<<<< HEAD
 								["hp"] = 93,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 93,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [11]
 							{
 								["spellname"] = "Vancard dies",
@@ -3523,22 +6545,39 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783867.67413,
 								["amount"] = -200,
+<<<<<<< HEAD
 								["hp"] = 1285,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1285,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [13]
 							{
 								["ts"] = 1533783867.70114,
 								["amount"] = -32,
+<<<<<<< HEAD
 								["hp"] = 1053,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1053,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [14]
 							{
 								["absorb"] = 0,
 								["amount"] = 170,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1223,
 								["ts"] = 1533783868.77715,
 							}, -- [15]
@@ -3552,23 +6591,41 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783830.91101,
 								["amount"] = -159,
+<<<<<<< HEAD
 								["hp"] = 473,
 								["spellid"] = 12739,
 								["srcname"] = "Shadowy Attendant",
+=======
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 473,
+								["spellid"] = 12739,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [1]
 							{
 								["ts"] = 1533783831.56302,
 								["amount"] = -397,
+<<<<<<< HEAD
 								["hp"] = 473,
 								["srcname"] = "Baron Silverlaine",
 								["spellid"] = 88163,
+=======
+								["spellid"] = 88163,
+								["hp"] = 473,
+								["srcname"] = "Baron Silverlaine",
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [2]
 							{
 								["ts"] = 1533783832.12503,
 								["amount"] = -160,
+<<<<<<< HEAD
 								["hp"] = 76,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 76,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [3]
 							{
 								["spellname"] = "Vancard dies",
@@ -3579,83 +6636,145 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783817.11005,
 								["amount"] = 369,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 2061,
+=======
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1684,
 								["absorb"] = 0,
 							}, -- [5]
 							{
 								["absorb"] = 0,
 								["amount"] = 256,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 2061,
+=======
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["ts"] = 1533783818.44806,
 							}, -- [6]
 							{
 								["ts"] = 1533783819.93207,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 2061,
+=======
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["absorb"] = 0,
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 234946,
+=======
+								["spellid"] = 234946,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["ts"] = 1533783821.45108,
 							}, -- [8]
 							{
 								["ts"] = 1533783826.11709,
 								["amount"] = -288,
+<<<<<<< HEAD
 								["hp"] = 1940,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1940,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [9]
 							{
 								["ts"] = 1533783826.1351,
 								["amount"] = -184,
+<<<<<<< HEAD
 								["hp"] = 1940,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1940,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [10]
 							{
 								["ts"] = 1533783826.57911,
 								["amount"] = -154,
+<<<<<<< HEAD
 								["hp"] = 1314,
 								["spellid"] = 12739,
 								["srcname"] = "Shadowy Attendant",
+=======
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1314,
+								["spellid"] = 12739,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [11]
 							{
 								["ts"] = 1533783827.28412,
 								["amount"] = -175,
+<<<<<<< HEAD
 								["hp"] = 1139,
 								["spellid"] = 12739,
 								["srcname"] = "Shadowy Attendant",
+=======
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1139,
+								["spellid"] = 12739,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [12]
 							{
 								["ts"] = 1533783828.12213,
 								["amount"] = -186,
+<<<<<<< HEAD
 								["hp"] = 1139,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1139,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [13]
 							{
 								["ts"] = 1533783830.12814,
 								["amount"] = -160,
+<<<<<<< HEAD
 								["hp"] = 953,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 953,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [14]
 							{
 								["ts"] = 1533783830.19415,
 								["amount"] = -161,
+<<<<<<< HEAD
 								["hp"] = 792,
 								["spellid"] = 12739,
 								["srcname"] = "Shadowy Attendant",
+=======
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 792,
+								["spellid"] = 12739,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -3667,79 +6786,145 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783745.58301,
 								["amount"] = -321,
+<<<<<<< HEAD
 								["hp"] = 1940,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1940,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [1]
 							{
 								["ts"] = 1533783745.89402,
 								["amount"] = -196,
+<<<<<<< HEAD
 								["hp"] = 1619,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1619,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [2]
 							{
 								["ts"] = 1533783745.92903,
 								["amount"] = -142,
+<<<<<<< HEAD
 								["hp"] = 1423,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1423,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [3]
 							{
 								["ts"] = 1533783747.05304,
 								["amount"] = -200,
+<<<<<<< HEAD
 								["hp"] = 1281,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1281,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [4]
 							{
 								["ts"] = 1533783747.06905,
 								["amount"] = -31,
+<<<<<<< HEAD
 								["hp"] = 1050,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1050,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [5]
 							{
 								["ts"] = 1533783747.43206,
 								["amount"] = -173,
+<<<<<<< HEAD
 								["hp"] = 1050,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1050,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [6]
 							{
 								["ts"] = 1533783747.58407,
 								["amount"] = -350,
+<<<<<<< HEAD
 								["hp"] = 877,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 877,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [7]
 							{
 								["ts"] = 1533783747.84008,
 								["amount"] = -167,
+<<<<<<< HEAD
 								["hp"] = 527,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 527,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [8]
 							{
 								["ts"] = 1533783747.89209,
 								["amount"] = -135,
+<<<<<<< HEAD
 								["hp"] = 360,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 360,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [9]
 							{
 								["ts"] = 1533783747.9261,
 								["amount"] = -155,
+<<<<<<< HEAD
 								["hp"] = 360,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 360,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [10]
 							{
 								["ts"] = 1533783749.90311,
 								["amount"] = -370,
+<<<<<<< HEAD
 								["hp"] = 70,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 70,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [11]
 							{
 								["spellname"] = "Vancard dies",
@@ -3750,24 +6935,39 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["ts"] = 1533783614.07213,
 							}, -- [13]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["ts"] = 1533783616.23614,
 							}, -- [14]
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["ts"] = 1533783618.02615,
 							}, -- [15]
@@ -3781,58 +6981,102 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783380.69101,
 								["amount"] = -254,
+<<<<<<< HEAD
 								["hp"] = 1249,
 								["spellid"] = 88163,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1249,
+								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1533783382.76002,
 								["amount"] = -245,
+<<<<<<< HEAD
 								["hp"] = 750,
 								["spellid"] = 93564,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 								["srcname"] = "Lord Godfrey",
+								["hp"] = 750,
+								["spellid"] = 93564,
 							}, -- [2]
 							{
 								["ts"] = 1533783383.93003,
 								["amount"] = -244,
+<<<<<<< HEAD
 								["hp"] = 506,
 								["spellid"] = 93564,
 								["srcname"] = "Lord Godfrey",
+=======
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 506,
+								["spellid"] = 93564,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [3]
 							{
 								["ts"] = 1533783384.94304,
 								["amount"] = -245,
+<<<<<<< HEAD
 								["hp"] = 261,
 								["spellid"] = 93564,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 								["srcname"] = "Lord Godfrey",
+								["hp"] = 261,
+								["spellid"] = 93564,
 							}, -- [4]
 							{
 								["ts"] = 1533783385.92305,
 								["amount"] = -147,
+<<<<<<< HEAD
 								["hp"] = 114,
 								["spellid"] = 91677,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 114,
+								["spellid"] = 91677,
 							}, -- [5]
 							{
 								["ts"] = 1533783387.94006,
 								["amount"] = -19,
+<<<<<<< HEAD
 								["hp"] = 95,
 								["spellid"] = 91677,
 								["srcname"] = "Pustulant Monstrosity",
+=======
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 95,
+								["spellid"] = 91677,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [6]
 							{
 								["ts"] = 1533783389.93307,
 								["amount"] = -20,
+<<<<<<< HEAD
 								["hp"] = 75,
 								["spellid"] = 91677,
 								["srcname"] = "Pustulant Monstrosity",
+=======
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 75,
+								["spellid"] = 91677,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [7]
 							{
 								["ts"] = 1533783391.80708,
 								["amount"] = -146,
+<<<<<<< HEAD
 								["hp"] = 1,
 								["spellid"] = 91677,
 								["srcname"] = "Pustulant Monstrosity",
+=======
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1,
+								["spellid"] = 91677,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [8]
 							{
 								["spellname"] = "Vancard dies",
@@ -3843,53 +7087,86 @@ SkadaPerCharDB = {
 							{
 								["absorb"] = 0,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["ts"] = 1533783368.9391,
 							}, -- [10]
 							{
 								["ts"] = 1533783371.02811,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["absorb"] = 0,
 							}, -- [11]
 							{
 								["ts"] = 1533783373.12012,
 								["amount"] = 0,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 596,
+=======
+								["spellid"] = 596,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["absorb"] = 0,
 							}, -- [12]
 							{
+<<<<<<< HEAD
 								["hp"] = 1940,
 								["ts"] = 1533783374.63613,
 								["spellid"] = 88163,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 								["srcname"] = "Pustulant Monstrosity",
+								["ts"] = 1533783374.63613,
+								["hp"] = 1940,
+								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1533783376.69414,
 								["amount"] = -456,
+<<<<<<< HEAD
 								["srcname"] = "Pustulant Monstrosity",
 								["spellid"] = 88163,
+=======
+								["spellid"] = 88163,
+								["srcname"] = "Pustulant Monstrosity",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1940,
 								["absorb"] = -3,
 							}, -- [14]
 							{
 								["ts"] = 1533783378.69515,
 								["amount"] = -235,
+<<<<<<< HEAD
 								["hp"] = 1484,
 								["spellid"] = 88163,
 								["srcname"] = "Pustulant Monstrosity",
+=======
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1484,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [15]
 							["pos"] = 10,
 						},
 						["maxhp"] = 1940,
 					}, -- [4]
 				},
+<<<<<<< HEAD
 				["healed"] = {
 					["Player-61-0BAB1BE0"] = {
 						["role"] = "DAMAGER",
@@ -3914,114 +7191,207 @@ SkadaPerCharDB = {
 						["amount"] = 42,
 					},
 				},
+=======
+				["damagetaken"] = 28526,
+				["shielding"] = 2962,
+>>>>>>> parent of 76f5add1... addon updates
 				["id"] = "Player-61-0BAB1BE0",
 				["healing"] = 2962,
 				["deathlog"] = {
 					{
 						["ts"] = 1533785353.596,
 						["amount"] = -36,
+<<<<<<< HEAD
 						["hp"] = 1956,
 						["spellid"] = 88163,
 						["srcname"] = "Plainsland Cheetah",
+=======
+						["srcname"] = "Plainsland Cheetah",
+						["hp"] = 1956,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [1]
 					{
 						["ts"] = 1534812405.169,
 						["amount"] = -65,
+<<<<<<< HEAD
 						["hp"] = 2233,
 						["spellid"] = 88163,
 						["srcname"] = "Theramore Deck Hand",
+=======
+						["srcname"] = "Theramore Deck Hand",
+						["hp"] = 2233,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [2]
 					{
 						["ts"] = 1534812407.172,
 						["amount"] = -53,
+<<<<<<< HEAD
 						["hp"] = 2168,
 						["spellid"] = 88163,
 						["srcname"] = "Theramore Deck Hand",
+=======
+						["srcname"] = "Theramore Deck Hand",
+						["hp"] = 2168,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [3]
 					{
 						["ts"] = 1534812410.28,
 						["amount"] = -46,
+<<<<<<< HEAD
 						["hp"] = 2115,
 						["spellid"] = 88163,
 						["srcname"] = "Theramore Deck Hand",
+=======
+						["srcname"] = "Theramore Deck Hand",
+						["hp"] = 2115,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [4]
 					{
 						["ts"] = 1534812412.282,
 						["amount"] = -55,
+<<<<<<< HEAD
 						["hp"] = 2069,
 						["spellid"] = 88163,
 						["srcname"] = "Theramore Deck Hand",
+=======
+						["srcname"] = "Theramore Deck Hand",
+						["hp"] = 2069,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [5]
 					{
 						["ts"] = 1534812414.285,
 						["amount"] = -47,
+<<<<<<< HEAD
 						["hp"] = 2014,
 						["spellid"] = 88163,
 						["srcname"] = "Theramore Deck Hand",
+=======
+						["srcname"] = "Theramore Deck Hand",
+						["hp"] = 2014,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [6]
 					{
 						["ts"] = 1534812416.246,
 						["amount"] = -67,
+<<<<<<< HEAD
 						["hp"] = 1967,
 						["spellid"] = 88163,
 						["srcname"] = "Theramore Deck Hand",
+=======
+						["srcname"] = "Theramore Deck Hand",
+						["hp"] = 1967,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [7]
 					{
 						["ts"] = 1533784908.502,
 						["amount"] = 543,
+<<<<<<< HEAD
 						["srcname"] = "Lumael",
 						["spellid"] = 2061,
+=======
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 						["hp"] = 1940,
 						["absorb"] = 0,
 					}, -- [8]
 					{
 						["ts"] = 1533785022.756,
 						["amount"] = -111,
+<<<<<<< HEAD
 						["hp"] = 1829,
 						["spellid"] = 6535,
 						["srcname"] = "Kolkar Stormseer",
+=======
+						["srcname"] = "Kolkar Stormseer",
+						["hp"] = 1829,
+						["spellid"] = 6535,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [9]
 					{
 						["ts"] = 1533785344.574,
 						["amount"] = -44,
+<<<<<<< HEAD
 						["hp"] = 2200,
 						["spellid"] = 88163,
 						["srcname"] = "Plainsland Cheetah",
+=======
+						["srcname"] = "Plainsland Cheetah",
+						["hp"] = 2200,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [10]
 					{
 						["ts"] = 1533785346.082,
 						["amount"] = -34,
+<<<<<<< HEAD
 						["hp"] = 2156,
 						["spellid"] = 88163,
 						["srcname"] = "Plainsland Cheetah",
+=======
+						["srcname"] = "Plainsland Cheetah",
+						["hp"] = 2156,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [11]
 					{
 						["ts"] = 1533785347.576,
 						["amount"] = -40,
+<<<<<<< HEAD
 						["hp"] = 2122,
 						["spellid"] = 88163,
 						["srcname"] = "Plainsland Cheetah",
+=======
+						["srcname"] = "Plainsland Cheetah",
+						["hp"] = 2122,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [12]
 					{
 						["ts"] = 1533785349.014,
 						["amount"] = -45,
+<<<<<<< HEAD
 						["hp"] = 2082,
 						["spellid"] = 88163,
 						["srcname"] = "Plainsland Cheetah",
+=======
+						["srcname"] = "Plainsland Cheetah",
+						["hp"] = 2082,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [13]
 					{
 						["ts"] = 1533785350.525,
 						["amount"] = -34,
+<<<<<<< HEAD
 						["hp"] = 2037,
 						["spellid"] = 88163,
 						["srcname"] = "Plainsland Cheetah",
+=======
+						["srcname"] = "Plainsland Cheetah",
+						["hp"] = 2037,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [14]
 					{
 						["ts"] = 1533785352.091,
 						["amount"] = -47,
+<<<<<<< HEAD
 						["hp"] = 2003,
 						["spellid"] = 88163,
 						["srcname"] = "Plainsland Cheetah",
+=======
+						["srcname"] = "Plainsland Cheetah",
+						["hp"] = 2003,
+						["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 					}, -- [15]
 					["pos"] = 8,
 				},
@@ -4032,13 +7402,21 @@ SkadaPerCharDB = {
 						["damage"] = 2023,
 						["max"] = 245,
 						["name"] = "Pistol Barrage",
+<<<<<<< HEAD
 						["min"] = 65,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 9,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 65,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 143,
 					},
 					["Frostbolt"] = {
@@ -4047,13 +7425,21 @@ SkadaPerCharDB = {
 						["damage"] = 121,
 						["max"] = 121,
 						["name"] = "Frostbolt",
+<<<<<<< HEAD
 						["min"] = 121,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 121,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Disease Cloud"] = {
@@ -4062,13 +7448,21 @@ SkadaPerCharDB = {
 						["damage"] = 74,
 						["max"] = 37,
 						["name"] = "Disease Cloud",
+<<<<<<< HEAD
 						["min"] = 37,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 37,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Consume Flesh"] = {
@@ -4077,13 +7471,21 @@ SkadaPerCharDB = {
 						["damage"] = 192,
 						["max"] = 192,
 						["name"] = "Consume Flesh",
+<<<<<<< HEAD
 						["min"] = 192,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 192,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Bone Flurry"] = {
@@ -4092,13 +7494,21 @@ SkadaPerCharDB = {
 						["damage"] = 492,
 						["max"] = 82,
 						["name"] = "Bone Flurry",
+<<<<<<< HEAD
 						["min"] = 82,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 82,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Strike"] = {
@@ -4107,13 +7517,21 @@ SkadaPerCharDB = {
 						["damage"] = 59,
 						["max"] = 59,
 						["name"] = "Strike",
+<<<<<<< HEAD
 						["min"] = 59,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 59,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Conjure Poisonous Mixture"] = {
@@ -4122,13 +7540,21 @@ SkadaPerCharDB = {
 						["damage"] = 245,
 						["max"] = 245,
 						["name"] = "Conjure Poisonous Mixture",
+<<<<<<< HEAD
 						["min"] = 245,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 245,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Conjure Frost Mixture"] = {
@@ -4137,13 +7563,21 @@ SkadaPerCharDB = {
 						["damage"] = 1437,
 						["max"] = 351,
 						["name"] = "Conjure Frost Mixture",
+<<<<<<< HEAD
 						["min"] = 105,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 105,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 180,
 					},
 					["Pustulant Spit"] = {
@@ -4152,13 +7586,21 @@ SkadaPerCharDB = {
 						["damage"] = 768,
 						["max"] = 162,
 						["name"] = "Pustulant Spit",
+<<<<<<< HEAD
 						["min"] = 19,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 19,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
@@ -4167,13 +7609,21 @@ SkadaPerCharDB = {
 						["damage"] = 14024,
 						["max"] = 578,
 						["name"] = "Attack",
+<<<<<<< HEAD
 						["min"] = 1,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 108,
 						["critical"] = 5,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 1,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 492,
 					},
 					["Lightning Bolt"] = {
@@ -4182,13 +7632,21 @@ SkadaPerCharDB = {
 						["damage"] = 574,
 						["max"] = 201,
 						["name"] = "Lightning Bolt",
+<<<<<<< HEAD
 						["min"] = 185,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 185,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Shadow Bolt"] = {
@@ -4197,13 +7655,21 @@ SkadaPerCharDB = {
 						["damage"] = 1465,
 						["max"] = 175,
 						["name"] = "Shadow Bolt",
+<<<<<<< HEAD
 						["min"] = 154,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 9,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 154,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Cursed Bullets"] = {
@@ -4212,13 +7678,21 @@ SkadaPerCharDB = {
 						["damage"] = 451,
 						["max"] = 340,
 						["name"] = "Cursed Bullets",
+<<<<<<< HEAD
 						["min"] = 7,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 7,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Ice Shards"] = {
@@ -4227,13 +7701,21 @@ SkadaPerCharDB = {
 						["damage"] = 259,
 						["max"] = 259,
 						["name"] = "Ice Shards",
+<<<<<<< HEAD
 						["min"] = 259,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 259,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Lightning Cloud"] = {
@@ -4242,13 +7724,21 @@ SkadaPerCharDB = {
 						["damage"] = 202,
 						["max"] = 111,
 						["name"] = "Lightning Cloud",
+<<<<<<< HEAD
 						["min"] = 91,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 91,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Smash"] = {
@@ -4257,13 +7747,21 @@ SkadaPerCharDB = {
 						["damage"] = 651,
 						["max"] = 137,
 						["name"] = "Smash",
+<<<<<<< HEAD
 						["min"] = 124,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 124,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Asphyxiate"] = {
@@ -4272,13 +7770,21 @@ SkadaPerCharDB = {
 						["damage"] = 3858,
 						["max"] = 402,
 						["name"] = "Asphyxiate",
+<<<<<<< HEAD
 						["min"] = 321,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 11,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 321,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 64,
 					},
 					["Butcher Drain"] = {
@@ -4287,13 +7793,21 @@ SkadaPerCharDB = {
 						["damage"] = 186,
 						["max"] = 32,
 						["name"] = "Butcher Drain",
+<<<<<<< HEAD
 						["min"] = 29,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 29,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Spectral Ravaging"] = {
@@ -4302,13 +7816,21 @@ SkadaPerCharDB = {
 						["damage"] = 1201,
 						["max"] = 104,
 						["name"] = "Spectral Ravaging",
+<<<<<<< HEAD
 						["min"] = 95,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 95,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 					["Fel Stomp"] = {
@@ -4317,13 +7839,21 @@ SkadaPerCharDB = {
 						["damage"] = 244,
 						["max"] = 244,
 						["name"] = "Fel Stomp",
+<<<<<<< HEAD
 						["min"] = 244,
+=======
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
+=======
+						["min"] = 244,
+>>>>>>> parent of 76f5add1... addon updates
 						["absorbed"] = 0,
 					},
 				},
@@ -4331,10 +7861,31 @@ SkadaPerCharDB = {
 				},
 				["ccbreaks"] = 0,
 				["ffdamagedonetargets"] = {
+<<<<<<< HEAD
 				},
 				["alertCount"] = 12,
 				["shielding"] = 2962,
 				["time"] = 1549,
+=======
+				},
+				["alertCount"] = 12,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[59914] = 4591,
+						},
+						["amount"] = 4591,
+					},
+					[16] = {
+						["spells"] = {
+							[30451] = 22,
+							[1449] = 20,
+						},
+						["amount"] = 42,
+					},
+				},
+				["overhealing"] = 719,
+>>>>>>> parent of 76f5add1... addon updates
 				["alert"] = {
 					["High"] = {
 						["alertCount"] = 12,
@@ -4374,6 +7925,7 @@ SkadaPerCharDB = {
 						},
 						["name"] = "High",
 						["alertDamage"] = 2364,
+<<<<<<< HEAD
 					},
 				},
 				["alertDamage"] = 2364,
@@ -4585,12 +8137,162 @@ SkadaPerCharDB = {
 						["totalhits"] = 1,
 						["damage"] = 0,
 					},
+=======
+					},
+				},
+				["auras"] = {
+					["Clearcasting"] = {
+						["uptime"] = 15,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Clearcasting",
+						["auratype"] = "BUFF",
+						["id"] = 263725,
+					},
+					["Frost Nova"] = {
+						["name"] = "Frost Nova",
+						["active"] = 0,
+						["school"] = 16,
+						["uptime"] = 8,
+						["auratype"] = "DEBUFF",
+						["id"] = 122,
+					},
+					["Evocation"] = {
+						["uptime"] = 28,
+						["active"] = 0,
+						["auratype"] = "BUFF",
+						["id"] = 12051,
+						["name"] = "Evocation",
+						["school"] = 64,
+					},
+					["Shimmer"] = {
+						["uptime"] = 6,
+						["active"] = 0,
+						["auratype"] = "BUFF",
+						["id"] = 212653,
+						["name"] = "Shimmer",
+						["school"] = 64,
+					},
+					["Prismatic Barrier"] = {
+						["uptime"] = 30,
+						["active"] = 0,
+						["school"] = 64,
+						["name"] = "Prismatic Barrier",
+						["auratype"] = "BUFF",
+						["id"] = 235450,
+					},
+				},
+			}, -- [2]
+			{
+				["alertDamage"] = 0,
+				["healingabsorbed"] = 0,
+				["role"] = "TANK",
+				["class"] = "PALADIN",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["ffdamagedone"] = 0,
+				["healingspells"] = {
+					["Holy Shield"] = {
+						["shielding"] = 3333,
+						["id"] = 152261,
+						["healing"] = 3333,
+						["min"] = 9,
+						["name"] = "Holy Shield",
+						["hits"] = 52,
+						["overhealing"] = 0,
+						["max"] = 209,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Light of the Protector"] = {
+						["shielding"] = 0,
+						["id"] = 184092,
+						["healing"] = 27597,
+						["min"] = 0,
+						["name"] = "Light of the Protector",
+						["hits"] = 52,
+						["overhealing"] = 6472,
+						["max"] = 2204,
+						["critical"] = 7,
+						["absorbed"] = 0,
+					},
+					["Flash of Light"] = {
+						["shielding"] = 0,
+						["id"] = 19750,
+						["healing"] = 165,
+						["min"] = 165,
+						["name"] = "Flash of Light",
+						["hits"] = 1,
+						["overhealing"] = 0,
+						["max"] = 165,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["time"] = 1388,
+				["interrupts"] = 8,
+				["healed"] = {
+					["Player-3209-09DA9B09"] = {
+						["role"] = "TANK",
+						["name"] = "Athorius-Azralon",
+						["amount"] = 31095,
+						["class"] = "PALADIN",
+						["shielding"] = 3333,
+					},
+				},
+				["maxhp"] = 4704,
+				["name"] = "Athorius",
+				["damage"] = 80929,
+				["damagespells"] = {
+					["Judgment"] = {
+						["hitmin"] = 98,
+						["criticalamount"] = 828,
+						["id"] = 275779,
+						["damage"] = 4657,
+						["max"] = 207,
+						["school"] = 2,
+						["min"] = 98,
+						["criticalmax"] = 207,
+						["hitmax"] = 102,
+						["hit"] = 38,
+						["totalhits"] = 42,
+						["critical"] = 4,
+						["criticalmin"] = 207,
+						["hitamount"] = 3829,
+					},
+					["Shield of the Righteous"] = {
+						["hitmin"] = 29,
+						["criticalamount"] = 3058,
+						["id"] = 53600,
+						["damage"] = 11041,
+						["max"] = 103,
+						["school"] = 2,
+						["min"] = 29,
+						["criticalmax"] = 103,
+						["hitmax"] = 51,
+						["hit"] = 168,
+						["totalhits"] = 199,
+						["critical"] = 31,
+						["criticalmin"] = 85,
+						["hitamount"] = 7983,
+					},
+					["Rebuke"] = {
+						["totalhits"] = 1,
+						["id"] = 96231,
+						["school"] = 2,
+						["IMMUNE"] = 1,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["Hammer of the Righteous"] = {
 						["hitmin"] = 9,
 						["criticalamount"] = 2069,
 						["id"] = 53595,
 						["damage"] = 6134,
 						["max"] = 52,
+<<<<<<< HEAD
 						["totalhits"] = 301,
 						["min"] = 9,
 						["criticalmax"] = 52,
@@ -4617,6 +8319,18 @@ SkadaPerCharDB = {
 						["criticalmin"] = 24,
 						["hitamount"] = 1965,
 					},
+=======
+						["school"] = 1,
+						["min"] = 9,
+						["criticalmax"] = 52,
+						["hitmax"] = 26,
+						["hit"] = 245,
+						["totalhits"] = 301,
+						["critical"] = 56,
+						["criticalmin"] = 20,
+						["hitamount"] = 4065,
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["Consecration"] = {
 						["damage"] = 16564,
 						["hitmin"] = 3,
@@ -4624,6 +8338,7 @@ SkadaPerCharDB = {
 						["id"] = 81297,
 						["IMMUNE"] = 46,
 						["max"] = 20,
+<<<<<<< HEAD
 						["totalhits"] = 2871,
 						["min"] = 3,
 						["criticalmax"] = 20,
@@ -4634,12 +8349,41 @@ SkadaPerCharDB = {
 						["criticalamount"] = 5413,
 						["hitamount"] = 11151,
 					},
+=======
+						["school"] = 2,
+						["min"] = 3,
+						["criticalmax"] = 20,
+						["hitmax"] = 6,
+						["hit"] = 2311,
+						["totalhits"] = 2871,
+						["critical"] = 514,
+						["criticalamount"] = 5413,
+						["hitamount"] = 11151,
+					},
+					["Holy Shield"] = {
+						["hitmin"] = 10,
+						["criticalamount"] = 1178,
+						["id"] = 157122,
+						["damage"] = 3143,
+						["max"] = 26,
+						["school"] = 2,
+						["min"] = 10,
+						["criticalmax"] = 26,
+						["hitmax"] = 14,
+						["hit"] = 164,
+						["totalhits"] = 211,
+						["critical"] = 47,
+						["criticalmin"] = 24,
+						["hitamount"] = 1965,
+					},
+>>>>>>> parent of 76f5add1... addon updates
 					["Avenger's Shield"] = {
 						["hitmin"] = 64,
 						["criticalamount"] = 6574,
 						["id"] = 31935,
 						["damage"] = 22532,
 						["max"] = 205,
+<<<<<<< HEAD
 						["totalhits"] = 233,
 						["min"] = 64,
 						["criticalmax"] = 205,
@@ -4647,15 +8391,32 @@ SkadaPerCharDB = {
 						["hit"] = 195,
 						["school"] = 2,
 						["hitmax"] = 101,
+=======
+						["school"] = 2,
+						["min"] = 64,
+						["criticalmax"] = 205,
+						["hitmax"] = 101,
+						["hit"] = 195,
+						["totalhits"] = 233,
+						["critical"] = 38,
+>>>>>>> parent of 76f5add1... addon updates
 						["criticalmin"] = 134,
 						["hitamount"] = 15958,
 					},
 					["Hammer of Justice"] = {
+<<<<<<< HEAD
 						["max"] = 0,
 						["school"] = 2,
 						["id"] = 853,
 						["IMMUNE"] = 4,
 						["totalhits"] = 4,
+=======
+						["totalhits"] = 4,
+						["id"] = 853,
+						["school"] = 2,
+						["IMMUNE"] = 4,
+						["max"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["damage"] = 0,
 					},
 					["Attack"] = {
@@ -4664,6 +8425,7 @@ SkadaPerCharDB = {
 						["id"] = 6603,
 						["damage"] = 16858,
 						["max"] = 83,
+<<<<<<< HEAD
 						["totalhits"] = 391,
 						["min"] = 23,
 						["criticalmax"] = 83,
@@ -4671,6 +8433,15 @@ SkadaPerCharDB = {
 						["hit"] = 320,
 						["school"] = 1,
 						["hitmax"] = 40,
+=======
+						["school"] = 1,
+						["min"] = 23,
+						["criticalmax"] = 83,
+						["hitmax"] = 40,
+						["hit"] = 320,
+						["totalhits"] = 391,
+						["critical"] = 71,
+>>>>>>> parent of 76f5add1... addon updates
 						["criticalmin"] = 50,
 						["hitamount"] = 11581,
 					},
@@ -4682,16 +8453,28 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783855.92901,
 								["amount"] = -172,
+<<<<<<< HEAD
 								["hp"] = 111,
 								["spellid"] = 12739,
 								["srcname"] = "Shadowy Attendant",
+=======
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 111,
+								["spellid"] = 12739,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [1]
 							{
 								["ts"] = 1533783856.55502,
 								["amount"] = -115,
+<<<<<<< HEAD
 								["hp"] = 111,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 111,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [2]
 							{
 								["spellname"] = "Athorius dies",
@@ -4702,87 +8485,158 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783848.33104,
 								["amount"] = 938,
+<<<<<<< HEAD
 								["srcname"] = "Athorius-Azralon",
 								["spellid"] = 184092,
+=======
+								["spellid"] = 184092,
+								["srcname"] = "Athorius-Azralon",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 2605,
 								["absorb"] = 0,
 							}, -- [4]
 							{
 								["ts"] = 1533783849.36505,
 								["amount"] = -69,
+<<<<<<< HEAD
 								["hp"] = 2605,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 2605,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [5]
 							{
 								["ts"] = 1533783849.81806,
 								["amount"] = -76,
+<<<<<<< HEAD
 								["hp"] = 2473,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 2473,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [6]
 							{
 								["ts"] = 1533783850.55007,
 								["amount"] = -174,
+<<<<<<< HEAD
 								["hp"] = 2326,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 2326,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [7]
 							{
 								["ts"] = 1533783851.36908,
 								["amount"] = -82,
+<<<<<<< HEAD
 								["hp"] = 1992,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1992,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [8]
 							{
 								["ts"] = 1533783851.47809,
 								["amount"] = -150,
+<<<<<<< HEAD
 								["hp"] = 1835,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1835,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [9]
 							{
 								["ts"] = 1533783851.4971,
 								["amount"] = -31,
+<<<<<<< HEAD
 								["hp"] = 1775,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1775,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [10]
 							{
 								["ts"] = 1533783852.29911,
 								["amount"] = -169,
+<<<<<<< HEAD
 								["hp"] = 1162,
 								["spellid"] = 12739,
 								["srcname"] = "Shadowy Attendant",
+=======
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1162,
+								["spellid"] = 12739,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [11]
 							{
 								["ts"] = 1533783852.55412,
 								["amount"] = -203,
+<<<<<<< HEAD
 								["hp"] = 1162,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1162,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [12]
 							{
 								["ts"] = 1533783853.38113,
 								["amount"] = -75,
+<<<<<<< HEAD
 								["hp"] = 773,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 773,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [13]
 							{
 								["ts"] = 1533783854.69314,
 								["amount"] = -69,
+<<<<<<< HEAD
 								["hp"] = 629,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 629,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [14]
 							{
 								["ts"] = 1533783854.70815,
 								["amount"] = -29,
+<<<<<<< HEAD
 								["hp"] = 573,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 573,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [15]
 							["pos"] = 4,
 						},
@@ -4794,31 +8648,54 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783741.15701,
 								["amount"] = -95,
+<<<<<<< HEAD
 								["hp"] = 522,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 522,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [1]
 							{
 								["ts"] = 1533783741.23202,
 								["amount"] = -133,
+<<<<<<< HEAD
 								["hp"] = 522,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 522,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [2]
 							{
 								["absorb"] = 0,
 								["amount"] = 165,
+<<<<<<< HEAD
 								["srcname"] = "Athorius-Azralon",
 								["spellid"] = 19750,
+=======
+								["spellid"] = 19750,
+								["srcname"] = "Athorius-Azralon",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 388,
 								["ts"] = 1533783741.49203,
 							}, -- [3]
 							{
 								["ts"] = 1533783741.57504,
 								["amount"] = -203,
+<<<<<<< HEAD
 								["hp"] = 388,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 388,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [4]
 							{
 								["spellname"] = "Athorius dies",
@@ -4829,74 +8706,132 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783738.36706,
 								["amount"] = -116,
+<<<<<<< HEAD
 								["hp"] = 1775,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1775,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [6]
 							{
 								["ts"] = 1533783738.88107,
 								["amount"] = -160,
+<<<<<<< HEAD
 								["hp"] = 1245,
 								["spellid"] = 12739,
 								["srcname"] = "Shadowy Attendant",
+=======
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1245,
+								["spellid"] = 12739,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [7]
 							{
 								["absorb"] = 0,
 								["amount"] = 183,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 2061,
+=======
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1583,
 								["ts"] = 1533783738.98808,
 							}, -- [8]
 							{
 								["ts"] = 1533783739.22109,
 								["amount"] = -62,
+<<<<<<< HEAD
 								["hp"] = 1583,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1583,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [9]
 							{
 								["ts"] = 1533783739.5661,
 								["amount"] = -281,
+<<<<<<< HEAD
 								["hp"] = 1463,
 								["spellid"] = 88163,
 								["srcname"] = "Baron Silverlaine",
+=======
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1463,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [10]
 							{
 								["absorb"] = 0,
 								["amount"] = 183,
+<<<<<<< HEAD
 								["srcname"] = "Lumael",
 								["spellid"] = 2061,
+=======
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1262,
 								["ts"] = 1533783740.34111,
 							}, -- [11]
 							{
 								["ts"] = 1533783740.39012,
 								["amount"] = -98,
+<<<<<<< HEAD
 								["hp"] = 1262,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1262,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [12]
 							{
 								["ts"] = 1533783740.63213,
 								["amount"] = -163,
+<<<<<<< HEAD
 								["hp"] = 1073,
 								["spellid"] = 88163,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1073,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [13]
 							{
 								["ts"] = 1533783740.65414,
 								["amount"] = -31,
+<<<<<<< HEAD
 								["hp"] = 1013,
 								["spellid"] = 7485,
 								["srcname"] = "Razorclaw the Butcher",
+=======
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1013,
+								["spellid"] = 7485,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [14]
 							{
 								["ts"] = 1533783740.81515,
 								["amount"] = -93,
+<<<<<<< HEAD
 								["hp"] = 1013,
 								["spellid"] = 88163,
 								["srcname"] = "Haunted Servitor",
+=======
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1013,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -4908,80 +8843,145 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783365.54901,
 								["amount"] = -22,
+<<<<<<< HEAD
 								["srcname"] = "Lord Godfrey",
 								["spellid"] = 93675,
 								["hp"] = 1697,
+=======
+								["hp"] = 1697,
+								["srcname"] = "Lord Godfrey",
+								["spellid"] = 93675,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [1]
 							{
 								["ts"] = 1533783365.82402,
 								["amount"] = -13,
+<<<<<<< HEAD
 								["srcname"] = "Pustulant Monstrosity",
 								["spellid"] = 91677,
+=======
+								["spellid"] = 91677,
+								["srcname"] = "Pustulant Monstrosity",
+>>>>>>> parent of 76f5add1... addon updates
 								["hp"] = 1673,
 								["absorb"] = -6,
 							}, -- [2]
 							{
 								["ts"] = 1533783366.35003,
 								["amount"] = -271,
+<<<<<<< HEAD
 								["hp"] = 1673,
 								["spellid"] = 88163,
 								["srcname"] = "Lord Godfrey",
+=======
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 1673,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [3]
 							{
 								["ts"] = 1533783366.56104,
 								["amount"] = -22,
+<<<<<<< HEAD
 								["srcname"] = "Lord Godfrey",
 								["spellid"] = 93675,
 								["hp"] = 1132,
+=======
+								["hp"] = 1132,
+								["srcname"] = "Lord Godfrey",
+								["spellid"] = 93675,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [4]
 							{
 								["ts"] = 1533783366.57605,
 								["amount"] = -174,
+<<<<<<< HEAD
 								["hp"] = 1132,
 								["spellid"] = 88163,
 								["srcname"] = "Pustulant Monstrosity",
+=======
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1132,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [5]
 							{
 								["ts"] = 1533783367.41206,
 								["amount"] = -150,
+<<<<<<< HEAD
 								["hp"] = 533,
 								["spellid"] = 91677,
 								["srcname"] = "Pustulant Monstrosity",
+=======
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 533,
+								["spellid"] = 91677,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [6]
 							{
 								["ts"] = 1533783367.56807,
 								["amount"] = -22,
+<<<<<<< HEAD
 								["hp"] = 491,
 								["spellid"] = 93675,
 								["srcname"] = "Lord Godfrey",
+=======
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 491,
+								["spellid"] = 93675,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [7]
 							{
 								["ts"] = 1533783367.83108,
 								["amount"] = -19,
+<<<<<<< HEAD
 								["hp"] = 455,
 								["srcname"] = "Pustulant Monstrosity",
 								["spellid"] = 91677,
+=======
+								["spellid"] = 91677,
+								["hp"] = 455,
+								["srcname"] = "Pustulant Monstrosity",
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [8]
 							{
 								["ts"] = 1533783368.35409,
 								["amount"] = -153,
+<<<<<<< HEAD
 								["srcname"] = "Lord Godfrey",
 								["spellid"] = 88163,
 								["hp"] = 455,
+=======
+								["hp"] = 455,
+								["srcname"] = "Lord Godfrey",
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [9]
 							{
 								["ts"] = 1533783368.5471,
 								["amount"] = -22,
+<<<<<<< HEAD
 								["hp"] = 414,
 								["srcname"] = "Lord Godfrey",
 								["spellid"] = 93675,
+=======
+								["spellid"] = 93675,
+								["hp"] = 414,
+								["srcname"] = "Lord Godfrey",
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [10]
 							{
 								["ts"] = 1533783368.56411,
 								["amount"] = -73,
+<<<<<<< HEAD
 								["hp"] = 414,
 								["srcname"] = "Pustulant Monstrosity",
 								["spellid"] = 88163,
+=======
+								["spellid"] = 88163,
+								["hp"] = 414,
+								["srcname"] = "Pustulant Monstrosity",
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [11]
 							{
 								["spellname"] = "Athorius dies",
@@ -4992,29 +8992,48 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1533783364.33513,
 								["amount"] = -234,
+<<<<<<< HEAD
 								["hp"] = 2562,
 								["spellid"] = 88163,
 								["srcname"] = "Lord Godfrey",
+=======
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 2562,
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [13]
 							{
 								["ts"] = 1533783364.55714,
 								["amount"] = -189,
+<<<<<<< HEAD
 								["srcname"] = "Pustulant Monstrosity",
 								["spellid"] = 88163,
 								["hp"] = 2562,
+=======
+								["hp"] = 2562,
+								["srcname"] = "Pustulant Monstrosity",
+								["spellid"] = 88163,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [14]
 							{
 								["ts"] = 1533783364.55715,
 								["amount"] = -22,
+<<<<<<< HEAD
 								["srcname"] = "Lord Godfrey",
 								["hp"] = 2520,
 								["spellid"] = 93675,
+=======
+								["spellid"] = 93675,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 2520,
+>>>>>>> parent of 76f5add1... addon updates
 							}, -- [15]
 							["pos"] = 13,
 						},
 						["maxhp"] = 4704,
 					}, -- [3]
 				},
+<<<<<<< HEAD
 				["healed"] = {
 					["Player-3209-09DA9B09"] = {
 						["role"] = "TANK",
@@ -5414,10 +9433,1536 @@ SkadaPerCharDB = {
 						["name"] = "Pustulant Spit",
 						["min"] = 13,
 						["totalhits"] = 5,
+=======
+				["damagetaken"] = 124651,
+				["shielding"] = 3333,
+				["id"] = "Player-3209-09DA9B09",
+				["healing"] = 31095,
+				["deathlog"] = {
+					{
+						["ts"] = 1533783925.496,
+						["amount"] = 367,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 4369,
+						["absorb"] = 0,
+					}, -- [1]
+					{
+						["ts"] = 1533783925.595,
+						["amount"] = 234,
+						["spellid"] = 188070,
+						["srcname"] = "Holkir-Azralon",
+						["hp"] = 4800,
+						["absorb"] = 0,
+					}, -- [2]
+					{
+						["ts"] = 1533783926.332,
+						["amount"] = -217,
+						["srcname"] = "Wolf Master Nandos",
+						["hp"] = 4384,
+						["spellid"] = 93861,
+					}, -- [3]
+					{
+						["ts"] = 1533783926.503,
+						["amount"] = -174,
+						["srcname"] = "Baron Silverlaine",
+						["hp"] = 4384,
+						["spellid"] = 88163,
+					}, -- [4]
+					{
+						["ts"] = 1533783926.628,
+						["amount"] = -169,
+						["srcname"] = "Wolf Master Nandos",
+						["hp"] = 4050,
+						["spellid"] = 88163,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 368,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 4404,
+						["ts"] = 1533783926.844,
+					}, -- [6]
+					{
+						["ts"] = 1533783928.513,
+						["amount"] = -237,
+						["srcname"] = "Baron Silverlaine",
+						["hp"] = 4404,
+						["spellid"] = 88163,
+					}, -- [7]
+					{
+						["ts"] = 1533783930.413,
+						["amount"] = 146,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 4219,
+						["absorb"] = 0,
+					}, -- [8]
+					{
+						["ts"] = 1533783931.762,
+						["amount"] = 146,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 4489,
+						["absorb"] = 0,
+					}, -- [9]
+					{
+						["ts"] = 1533783922.635,
+						["amount"] = -219,
+						["srcname"] = "Wolf Master Nandos",
+						["hp"] = 2613,
+						["spellid"] = 88163,
+					}, -- [10]
+					{
+						["ts"] = 1533783922.811,
+						["amount"] = 367,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 2870,
+						["absorb"] = 0,
+					}, -- [11]
+					{
+						["ts"] = 1533783923.104,
+						["amount"] = 481,
+						["spellid"] = 188070,
+						["srcname"] = "Holkir-Azralon",
+						["hp"] = 3756,
+						["absorb"] = 0,
+					}, -- [12]
+					{
+						["ts"] = 1533783924.158,
+						["amount"] = 368,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 4434,
+						["absorb"] = 0,
+					}, -- [13]
+					{
+						["ts"] = 1533783924.502,
+						["amount"] = -218,
+						["srcname"] = "Baron Silverlaine",
+						["hp"] = 4434,
+						["spellid"] = 88163,
+					}, -- [14]
+					{
+						["ts"] = 1533783924.635,
+						["amount"] = -169,
+						["srcname"] = "Wolf Master Nandos",
+						["hp"] = 4017,
+						["spellid"] = 88163,
+					}, -- [15]
+					["pos"] = 10,
+				},
+				["damagetakenspells"] = {
+					["Slashing Claws"] = {
+						["crushing"] = 0,
+						["id"] = 91064,
+						["damage"] = 154,
+						["max"] = 13,
+						["name"] = "Slashing Claws",
+						["glancing"] = 0,
+						["totalhits"] = 18,
+						["critical"] = 0,
+						["blocked"] = 19,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 5,
+						["absorbed"] = 0,
+					},
+					["Desecration"] = {
+						["crushing"] = 0,
+						["id"] = 93691,
+						["damage"] = 2357,
+						["max"] = 81,
+						["name"] = "Desecration",
+						["glancing"] = 0,
+						["totalhits"] = 33,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 53,
+						["absorbed"] = 293,
+					},
+					["Frostbolt"] = {
+						["crushing"] = 0,
+						["id"] = 15497,
+						["damage"] = 131,
+						["max"] = 131,
+						["name"] = "Frostbolt",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 131,
+						["absorbed"] = 0,
+					},
+					["Malefic Strike"] = {
+						["crushing"] = 0,
+						["id"] = 93685,
+						["damage"] = 3598,
+						["max"] = 308,
+						["name"] = "Malefic Strike",
+						["glancing"] = 0,
+						["totalhits"] = 16,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 141,
+						["absorbed"] = 0,
+					},
+					["Disease Cloud"] = {
+						["crushing"] = 0,
+						["id"] = 91562,
+						["damage"] = 645,
+						["max"] = 38,
+						["name"] = "Disease Cloud",
+						["glancing"] = 0,
+						["totalhits"] = 19,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
+						["min"] = 23,
+						["absorbed"] = 37,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 87686,
+						["max"] = 310,
+						["name"] = "Attack",
+						["glancing"] = 0,
+						["totalhits"] = 814,
+						["critical"] = 0,
+						["blocked"] = 5915,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 7,
+						["absorbed"] = 0,
+					},
+					["Spectral Ravaging"] = {
+						["crushing"] = 0,
+						["id"] = 93928,
+						["damage"] = 414,
+						["max"] = 71,
+						["name"] = "Spectral Ravaging",
+						["glancing"] = 0,
+						["totalhits"] = 6,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 66,
+						["absorbed"] = 0,
+					},
+					["Pistol Barrage"] = {
+						["crushing"] = 0,
+						["id"] = 93564,
+						["damage"] = 3576,
+						["max"] = 244,
+						["name"] = "Pistol Barrage",
+						["glancing"] = 0,
+						["totalhits"] = 16,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 162,
+						["absorbed"] = 324,
+					},
+					["Fire Blast"] = {
+						["crushing"] = 0,
+						["id"] = 13341,
+						["damage"] = 64,
+						["max"] = 64,
+						["name"] = "Fire Blast",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 4,
+						["resisted"] = 0,
+						["min"] = 64,
+						["absorbed"] = 0,
+					},
+					["Mortal Wound"] = {
+						["crushing"] = 0,
+						["id"] = 93675,
+						["damage"] = 3649,
+						["max"] = 89,
+						["name"] = "Mortal Wound",
+						["glancing"] = 0,
+						["totalhits"] = 86,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 22,
+						["absorbed"] = 0,
+					},
+					["Smash"] = {
+						["crushing"] = 0,
+						["id"] = 91213,
+						["damage"] = 772,
+						["max"] = 138,
+						["name"] = "Smash",
+						["glancing"] = 0,
+						["totalhits"] = 6,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 120,
+						["absorbed"] = 0,
+					},
+					["Consume Flesh"] = {
+						["crushing"] = 0,
+						["id"] = 91088,
+						["damage"] = 2512,
+						["max"] = 252,
+						["name"] = "Consume Flesh",
+						["glancing"] = 0,
+						["totalhits"] = 10,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 251,
+						["absorbed"] = 0,
+					},
+					["Bone Flurry"] = {
+						["crushing"] = 0,
+						["id"] = 91420,
+						["damage"] = 205,
+						["max"] = 57,
+						["name"] = "Bone Flurry",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 40,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 37,
+						["absorbed"] = 0,
+					},
+					["Ravage"] = {
+						["crushing"] = 0,
+						["id"] = 3242,
+						["damage"] = 203,
+						["max"] = 105,
+						["name"] = "Ravage",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 98,
+						["absorbed"] = 0,
+					},
+					["Conjure Poisonous Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93697,
+						["damage"] = 1426,
+						["max"] = 49,
+						["name"] = "Conjure Poisonous Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 33,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 30,
+						["absorbed"] = 106,
+					},
+					["Conjure Frost Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93505,
+						["damage"] = 1555,
+						["max"] = 346,
+						["name"] = "Conjure Frost Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 210,
+						["absorbed"] = 106,
+					},
+					["Shield Bash"] = {
+						["crushing"] = 0,
+						["id"] = 11972,
+						["damage"] = 32,
+						["max"] = 21,
+						["name"] = "Shield Bash",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 5,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 11,
+						["absorbed"] = 0,
+					},
+					["Pustulant Spit"] = {
+						["crushing"] = 0,
+						["id"] = 91677,
+						["damage"] = 357,
+						["max"] = 156,
+						["name"] = "Pustulant Spit",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 13,
+						["absorbed"] = 6,
+					},
+					["Arcane Missiles"] = {
+						["crushing"] = 0,
+						["id"] = 33833,
+						["damage"] = 883,
+						["max"] = 45,
+						["name"] = "Arcane Missiles",
+						["glancing"] = 0,
+						["totalhits"] = 24,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 64,
+						["resisted"] = 0,
+						["min"] = 25,
+						["absorbed"] = 80,
+					},
+					["Dark Touch"] = {
+						["crushing"] = 0,
+						["id"] = 91522,
+						["damage"] = 143,
+						["max"] = 26,
+						["name"] = "Dark Touch",
+						["glancing"] = 0,
+						["totalhits"] = 7,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 15,
+						["absorbed"] = 24,
+					},
+					["Shadow Bolt"] = {
+						["crushing"] = 0,
+						["id"] = 12739,
+						["damage"] = 3867,
+						["max"] = 174,
+						["name"] = "Shadow Bolt",
+						["glancing"] = 0,
+						["totalhits"] = 26,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 100,
+						["absorbed"] = 322,
+					},
+					["Cursed Bullets"] = {
+						["crushing"] = 0,
+						["id"] = 93629,
+						["damage"] = 733,
+						["max"] = 315,
+						["name"] = "Cursed Bullets",
+						["glancing"] = 0,
+						["totalhits"] = 12,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 7,
+						["absorbed"] = 117,
+					},
+					["Ice Shards"] = {
+						["crushing"] = 0,
+						["id"] = 93535,
+						["damage"] = 2673,
+						["max"] = 261,
+						["name"] = "Ice Shards",
+						["glancing"] = 0,
+						["totalhits"] = 12,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 151,
+						["absorbed"] = 244,
+					},
+					["Strike"] = {
+						["crushing"] = 0,
+						["id"] = 87081,
+						["damage"] = 615,
+						["max"] = 217,
+						["name"] = "Strike",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 99,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 81,
+						["absorbed"] = 0,
+					},
+					["Butcher Drain"] = {
+						["crushing"] = 0,
+						["id"] = 7485,
+						["damage"] = 600,
+						["max"] = 31,
+						["name"] = "Butcher Drain",
+						["glancing"] = 0,
+						["totalhits"] = 22,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 19,
+						["absorbed"] = 36,
+					},
+					["Asphyxiate"] = {
+						["crushing"] = 0,
+						["id"] = 93424,
+						["damage"] = 4453,
+						["max"] = 373,
+						["name"] = "Asphyxiate",
+						["glancing"] = 0,
+						["totalhits"] = 12,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 370,
+						["absorbed"] = 0,
+					},
+					["Claw"] = {
+						["crushing"] = 0,
+						["id"] = 93861,
+						["damage"] = 384,
+						["max"] = 217,
+						["name"] = "Claw",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 167,
+						["absorbed"] = 0,
+					},
+					["Cone of Cold"] = {
+						["crushing"] = 0,
+						["id"] = 12611,
+						["damage"] = 62,
+						["max"] = 62,
+						["name"] = "Cone of Cold",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 62,
+						["absorbed"] = 0,
+					},
+					["Fel Stomp"] = {
+						["crushing"] = 0,
+						["id"] = 7139,
+						["damage"] = 902,
+						["max"] = 262,
+						["name"] = "Fel Stomp",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 161,
+						["absorbed"] = 85,
+					},
+				},
+				["ffdamagedonespells"] = {
+				},
+				["ccbreaks"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 0,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[59914] = 27,
+						},
+						["amount"] = 27,
+					},
+				},
+				["overhealing"] = 6472,
+				["alert"] = {
+				},
+				["auras"] = {
+					["Divine Shield"] = {
+						["name"] = "Divine Shield",
+						["active"] = 0,
+						["school"] = 2,
+						["uptime"] = 16,
+						["auratype"] = "BUFF",
+						["id"] = 642,
+					},
+					["Divine Protection"] = {
+						["uptime"] = 8,
+						["active"] = 0,
+						["school"] = 2,
+						["name"] = "Divine Protection",
+						["auratype"] = "BUFF",
+						["id"] = 498,
+					},
+					["Forbearance"] = {
+						["name"] = "Forbearance",
+						["active"] = 0,
+						["school"] = 2,
+						["uptime"] = 60,
+						["auratype"] = "DEBUFF",
+						["id"] = 25771,
+					},
+					["Avenger's Valor"] = {
+						["uptime"] = 876,
+						["active"] = 0,
+						["school"] = 2,
+						["name"] = "Avenger's Valor",
+						["auratype"] = "BUFF",
+						["id"] = 197561,
+					},
+					["Desecration"] = {
+						["uptime"] = 43,
+						["active"] = 0,
+						["school"] = 32,
+						["name"] = "Desecration",
+						["auratype"] = "DEBUFF",
+						["id"] = 93691,
+					},
+					["Forsaken Ability: Health"] = {
+						["name"] = "Forsaken Ability: Health",
+						["active"] = 0,
+						["school"] = 32,
+						["uptime"] = 10,
+						["auratype"] = "DEBUFF",
+						["id"] = 7040,
+					},
+					["Shield of the Righteous"] = {
+						["uptime"] = 25,
+						["active"] = 0,
+						["school"] = 2,
+						["name"] = "Shield of the Righteous",
+						["auratype"] = "BUFF",
+						["id"] = 132403,
+					},
+					["Hand of Reckoning"] = {
+						["uptime"] = 303,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["id"] = 62124,
+						["name"] = "Hand of Reckoning",
+						["school"] = 2,
+					},
+					["Forsaken Ability: Armor"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 32,
+						["name"] = "Forsaken Ability: Armor",
+						["auratype"] = "DEBUFF",
+						["id"] = 7039,
+					},
+					["Avenger's Shield"] = {
+						["uptime"] = 202,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["id"] = 31935,
+						["name"] = "Avenger's Shield",
+						["school"] = 2,
+					},
+					["Consecration"] = {
+						["uptime"] = 1374,
+						["active"] = 0,
+						["id"] = 204242,
+						["auratype"] = "DEBUFF",
+						["name"] = "Consecration",
+						["school"] = 2,
+					},
+					["Blessing of Freedom"] = {
+						["name"] = "Blessing of Freedom",
+						["active"] = 0,
+						["school"] = 2,
+						["uptime"] = 8,
+						["auratype"] = "BUFF",
+						["id"] = 1044,
+					},
+					["War Stomp"] = {
+						["name"] = "War Stomp",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 2,
+						["auratype"] = "DEBUFF",
+						["id"] = 20549,
+					},
+					["Divine Steed"] = {
+						["name"] = "Divine Steed",
+						["active"] = 0,
+						["school"] = 2,
+						["uptime"] = 18,
+						["auratype"] = "BUFF",
+						["id"] = 221885,
+					},
+				},
+			}, -- [3]
+			{
+				["alertDamage"] = 0,
+				["healingabsorbed"] = 0,
+				["role"] = "DAMAGER",
+				["class"] = "WARRIOR",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["ffdamagedone"] = 0,
+				["healingspells"] = {
+					["Bloodthirst Heal"] = {
+						["shielding"] = 0,
+						["id"] = 117313,
+						["healing"] = 4963,
+						["min"] = 14,
+						["name"] = "Bloodthirst Heal",
+						["hits"] = 47,
+						["overhealing"] = 1966,
+						["max"] = 547,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+					["Impending Victory"] = {
+						["shielding"] = 0,
+						["id"] = 202166,
+						["healing"] = 2930,
+						["min"] = 0,
+						["name"] = "Impending Victory",
+						["hits"] = 23,
+						["overhealing"] = 5652,
+						["max"] = 374,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["time"] = 1298,
+				["interrupts"] = 0,
+				["healed"] = {
+					["Player-3209-09D61E75"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Wurkon-Azralon",
+						["amount"] = 7893,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["maxhp"] = 2904,
+				["name"] = "Wurkon",
+				["damage"] = 76060,
+				["damagespells"] = {
+					["Execute"] = {
+						["hitmin"] = 105,
+						["criticalamount"] = 217,
+						["id"] = 280849,
+						["damage"] = 2306,
+						["max"] = 217,
+						["school"] = 1,
+						["min"] = 105,
+						["criticalmax"] = 217,
+						["hitmax"] = 121,
+						["hit"] = 19,
+						["totalhits"] = 20,
+						["critical"] = 1,
+						["criticalmin"] = 217,
+						["hitamount"] = 2089,
+					},
+					["Whirlwind"] = {
+						["hitmin"] = 3,
+						["criticalamount"] = 4880,
+						["id"] = 199667,
+						["damage"] = 17650,
+						["max"] = 16,
+						["school"] = 1,
+						["min"] = 3,
+						["criticalmax"] = 16,
+						["hitmax"] = 14,
+						["hit"] = 2109,
+						["totalhits"] = 2500,
+						["critical"] = 391,
+						["criticalmin"] = 7,
+						["hitamount"] = 12770,
+					},
+					["Rampage"] = {
+						["hitmin"] = 21,
+						["criticalamount"] = 1870,
+						["id"] = 184707,
+						["damage"] = 9147,
+						["max"] = 100,
+						["school"] = 1,
+						["min"] = 21,
+						["criticalmax"] = 100,
+						["hitmax"] = 56,
+						["hit"] = 182,
+						["totalhits"] = 206,
+						["critical"] = 24,
+						["criticalmin"] = 62,
+						["hitamount"] = 7277,
+					},
+					["Bloodthirst"] = {
+						["hitmin"] = 41,
+						["criticalamount"] = 997,
+						["id"] = 23881,
+						["damage"] = 7413,
+						["max"] = 131,
+						["school"] = 1,
+						["min"] = 41,
+						["criticalmax"] = 131,
+						["critical"] = 8,
+						["hit"] = 105,
+						["totalhits"] = 113,
+						["hitmax"] = 70,
+						["criticalmin"] = 120,
+						["hitamount"] = 6416,
+					},
+					["Impending Victory"] = {
+						["hitmin"] = 27,
+						["criticalamount"] = 221,
+						["id"] = 202168,
+						["damage"] = 923,
+						["max"] = 77,
+						["school"] = 1,
+						["min"] = 27,
+						["criticalmax"] = 77,
+						["hitmax"] = 38,
+						["hit"] = 20,
+						["totalhits"] = 23,
+						["critical"] = 3,
+						["criticalmin"] = 71,
+						["hitamount"] = 702,
+					},
+					["Execute Off-Hand"] = {
+						["hitmin"] = 58,
+						["criticalamount"] = 349,
+						["id"] = 163558,
+						["damage"] = 1241,
+						["max"] = 117,
+						["school"] = 1,
+						["min"] = 58,
+						["criticalmax"] = 117,
+						["critical"] = 3,
+						["hit"] = 15,
+						["totalhits"] = 18,
+						["hitmax"] = 64,
+						["criticalmin"] = 115,
+						["hitamount"] = 892,
+					},
+					["Heroic Leap"] = {
+						["hitmin"] = 8,
+						["criticalamount"] = 19,
+						["id"] = 52174,
+						["damage"] = 56,
+						["max"] = 19,
+						["school"] = 1,
+						["min"] = 8,
+						["criticalmax"] = 19,
+						["hitmax"] = 10,
+						["hit"] = 4,
+						["totalhits"] = 5,
+						["critical"] = 1,
+						["criticalmin"] = 19,
+						["hitamount"] = 37,
+					},
+					["Raging Blow"] = {
+						["hitmin"] = 20,
+						["criticalamount"] = 2901,
+						["id"] = 96103,
+						["damage"] = 9918,
+						["max"] = 100,
+						["school"] = 1,
+						["min"] = 20,
+						["criticalmax"] = 100,
+						["hitmax"] = 52,
+						["hit"] = 213,
+						["totalhits"] = 253,
+						["critical"] = 40,
+						["criticalmin"] = 41,
+						["hitamount"] = 7017,
+					},
+					["Whirlwind Off-Hand"] = {
+						["hitmin"] = 1,
+						["criticalamount"] = 2256,
+						["id"] = 44949,
+						["damage"] = 8355,
+						["max"] = 8,
+						["school"] = 1,
+						["min"] = 1,
+						["criticalmax"] = 8,
+						["hitmax"] = 4,
+						["hit"] = 2112,
+						["totalhits"] = 2475,
+						["critical"] = 363,
+						["criticalmin"] = 3,
+						["hitamount"] = 6099,
+					},
+					["Attack"] = {
+						["damage"] = 19051,
+						["hitmin"] = 13,
+						["criticalamount"] = 5277,
+						["id"] = 6603,
+						["criticalmin"] = 30,
+						["max"] = 98,
+						["school"] = 1,
+						["min"] = 13,
+						["criticalmax"] = 98,
+						["hitmax"] = 51,
+						["hit"] = 402,
+						["totalhits"] = 564,
+						["critical"] = 82,
+						["MISS"] = 80,
+						["hitamount"] = 13774,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1533783860.57911,
+						["log"] = {
+							{
+								["ts"] = 1533783850.29601,
+								["amount"] = -46,
+								["srcname"] = "Haunting Spirit",
+								["hp"] = 1764,
+								["spellid"] = 88163,
+							}, -- [1]
+							{
+								["ts"] = 1533783850.70302,
+								["amount"] = -36,
+								["srcname"] = "Haunting Spirit",
+								["hp"] = 1687,
+								["spellid"] = 88163,
+							}, -- [2]
+							{
+								["ts"] = 1533783852.95603,
+								["amount"] = 54,
+								["spellid"] = 117313,
+								["srcname"] = "Wurkon-Azralon",
+								["hp"] = 1715,
+								["absorb"] = 0,
+							}, -- [3]
+							{
+								["ts"] = 1533783853.03504,
+								["amount"] = -161,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1449,
+								["spellid"] = 12739,
+							}, -- [4]
+							{
+								["ts"] = 1533783856.87405,
+								["amount"] = -165,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1177,
+								["spellid"] = 12739,
+							}, -- [5]
+							{
+								["ts"] = 1533783857.38506,
+								["amount"] = -132,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1177,
+								["spellid"] = 88163,
+							}, -- [6]
+							{
+								["ts"] = 1533783858.56107,
+								["amount"] = -250,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 959,
+								["spellid"] = 88163,
+							}, -- [7]
+							{
+								["ts"] = 1533783859.39108,
+								["amount"] = -120,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 547,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1533783860.49709,
+								["amount"] = -165,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 76,
+								["spellid"] = 12739,
+							}, -- [9]
+							{
+								["ts"] = 1533783860.5681,
+								["amount"] = -259,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 76,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["spellname"] = "Wurkon dies",
+								["ts"] = 1533783860.57911,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [11]
+							{
+								["absorb"] = 0,
+								["amount"] = 481,
+								["spellid"] = 188070,
+								["srcname"] = "Holkir-Azralon",
+								["hp"] = 2659,
+								["ts"] = 1533783836.65112,
+							}, -- [12]
+							{
+								["ts"] = 1533783845.14913,
+								["amount"] = -52,
+								["srcname"] = "Haunting Spirit",
+								["hp"] = 2659,
+								["spellid"] = 88163,
+							}, -- [13]
+							{
+								["ts"] = 1533783848.53814,
+								["amount"] = -332,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 2573,
+								["spellid"] = 88163,
+							}, -- [14]
+							{
+								["ts"] = 1533783849.40415,
+								["amount"] = -159,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1764,
+								["spellid"] = 12739,
+							}, -- [15]
+							["pos"] = 12,
+						},
+						["maxhp"] = 2928,
+					}, -- [1]
+					{
+						["ts"] = 1533783789.78314,
+						["log"] = {
+							{
+								["ts"] = 1533783775.16001,
+								["amount"] = -77,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 2800,
+								["spellid"] = 93928,
+							}, -- [1]
+							{
+								["ts"] = 1533783775.66402,
+								["amount"] = -80,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 2668,
+								["spellid"] = 93928,
+							}, -- [2]
+							{
+								["ts"] = 1533783776.16903,
+								["amount"] = -84,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 2528,
+								["spellid"] = 93928,
+							}, -- [3]
+							{
+								["ts"] = 1533783776.67404,
+								["amount"] = -84,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 2388,
+								["spellid"] = 93928,
+							}, -- [4]
+							{
+								["ts"] = 1533783777.17505,
+								["amount"] = -83,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 2251,
+								["spellid"] = 93928,
+							}, -- [5]
+							{
+								["ts"] = 1533783777.67106,
+								["amount"] = -78,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 2121,
+								["spellid"] = 93928,
+							}, -- [6]
+							{
+								["ts"] = 1533783778.08907,
+								["amount"] = -245,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 2121,
+								["spellid"] = 88163,
+							}, -- [7]
+							{
+								["ts"] = 1533783778.81608,
+								["amount"] = -173,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1716,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1533783778.82809,
+								["amount"] = -30,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1665,
+								["spellid"] = 7485,
+							}, -- [9]
+							{
+								["ts"] = 1533783780.1041,
+								["amount"] = -312,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1379,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["ts"] = 1533783785.14411,
+								["amount"] = -253,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 864,
+								["spellid"] = 88163,
+							}, -- [11]
+							{
+								["ts"] = 1533783788.80512,
+								["amount"] = -155,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 446,
+								["spellid"] = 88163,
+							}, -- [12]
+							{
+								["ts"] = 1533783789.75813,
+								["amount"] = -193,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 190,
+								["spellid"] = 88163,
+							}, -- [13]
+							{
+								["spellname"] = "Wurkon dies",
+								["ts"] = 1533783789.78314,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [14]
+							["pos"] = 15,
+						},
+						["maxhp"] = 2928,
+					}, -- [2]
+					{
+						["ts"] = 1533783699.15513,
+						["log"] = {
+							{
+								["ts"] = 1533783694.52701,
+								["amount"] = -143,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 561,
+								["spellid"] = 88163,
+							}, -- [1]
+							{
+								["ts"] = 1533783695.06602,
+								["amount"] = -151,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 75,
+								["spellid"] = 12739,
+							}, -- [2]
+							{
+								["absorb"] = 0,
+								["amount"] = 367,
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+								["hp"] = 666,
+								["ts"] = 1533783695.11803,
+							}, -- [3]
+							{
+								["ts"] = 1533783695.59104,
+								["amount"] = -173,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 380,
+								["spellid"] = 12739,
+							}, -- [4]
+							{
+								["ts"] = 1533783696.31805,
+								["amount"] = 54,
+								["spellid"] = 139,
+								["srcname"] = "Lumael",
+								["hp"] = 468,
+								["absorb"] = 0,
+							}, -- [5]
+							{
+								["absorb"] = 0,
+								["amount"] = 367,
+								["spellid"] = 2061,
+								["srcname"] = "Lumael",
+								["hp"] = 1059,
+								["ts"] = 1533783696.46706,
+							}, -- [6]
+							{
+								["ts"] = 1533783697.73807,
+								["amount"] = -275,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1059,
+								["spellid"] = 88163,
+							}, -- [7]
+							{
+								["ts"] = 1533783698.28008,
+								["amount"] = -44,
+								["srcname"] = "Haunting Spirit",
+								["hp"] = 605,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1533783698.51709,
+								["amount"] = -157,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 271,
+								["spellid"] = 12739,
+							}, -- [9]
+							{
+								["ts"] = 1533783698.7521,
+								["amount"] = -134,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 271,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["absorb"] = 0,
+								["amount"] = 54,
+								["spellid"] = 139,
+								["srcname"] = "Lumael",
+								["hp"] = 138,
+								["ts"] = 1533783699.00211,
+							}, -- [11]
+							{
+								["ts"] = 1533783699.13012,
+								["amount"] = -157,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1,
+								["spellid"] = 12739,
+							}, -- [12]
+							{
+								["spellname"] = "Wurkon dies",
+								["ts"] = 1533783699.15513,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [13]
+							{
+								["ts"] = 1533783694.16014,
+								["amount"] = -152,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 804,
+								["spellid"] = 12739,
+							}, -- [14]
+							{
+								["ts"] = 1533783694.38615,
+								["amount"] = -147,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 804,
+								["spellid"] = 88163,
+							}, -- [15]
+							["pos"] = 14,
+						},
+						["maxhp"] = 2928,
+					}, -- [3]
+					{
+						["ts"] = 1533783393.55303,
+						["log"] = {
+							{
+								["ts"] = 1533783393.43101,
+								["amount"] = -22,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 202,
+								["spellid"] = 93675,
+							}, -- [1]
+							{
+								["ts"] = 1533783393.52402,
+								["amount"] = -265,
+								["spellid"] = 88163,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 202,
+							}, -- [2]
+							{
+								["spellname"] = "Wurkon dies",
+								["ts"] = 1533783393.55303,
+								["spellid"] = 41220,
+								["hp"] = 0,
+							}, -- [3]
+							{
+								["ts"] = 1533783389.61204,
+								["amount"] = -24,
+								["spellid"] = 88163,
+								["hp"] = 1849,
+								["srcname"] = "Bloodthirsty Ghoul",
+							}, -- [4]
+							{
+								["ts"] = 1533783389.66605,
+								["amount"] = -332,
+								["spellid"] = 93629,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 1218,
+							}, -- [5]
+							{
+								["ts"] = 1533783389.89606,
+								["amount"] = -19,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1186,
+								["spellid"] = 91677,
+							}, -- [6]
+							{
+								["ts"] = 1533783391.03007,
+								["amount"] = -19,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 1154,
+								["spellid"] = 91677,
+							}, -- [7]
+							{
+								["ts"] = 1533783391.43408,
+								["amount"] = -22,
+								["spellid"] = 93675,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 1117,
+							}, -- [8]
+							{
+								["ts"] = 1533783391.52009,
+								["amount"] = -229,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 1117,
+								["spellid"] = 88163,
+							}, -- [9]
+							{
+								["ts"] = 1533783391.6011,
+								["amount"] = -211,
+								["spellid"] = 88163,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 739,
+							}, -- [10]
+							{
+								["ts"] = 1533783391.61311,
+								["amount"] = -23,
+								["spellid"] = 88163,
+								["srcname"] = "Bloodthirsty Ghoul",
+								["hp"] = 391,
+							}, -- [11]
+							{
+								["ts"] = 1533783392.12612,
+								["amount"] = -19,
+								["spellid"] = 88163,
+								["srcname"] = "Bloodthirsty Ghoul",
+								["hp"] = 352,
+							}, -- [12]
+							{
+								["ts"] = 1533783392.43413,
+								["amount"] = -22,
+								["spellid"] = 93675,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 315,
+							}, -- [13]
+							{
+								["ts"] = 1533783392.66214,
+								["amount"] = -7,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 271,
+								["spellid"] = 93629,
+							}, -- [14]
+							{
+								["ts"] = 1533783393.01915,
+								["amount"] = -19,
+								["hp"] = 239,
+								["srcname"] = "Pustulant Monstrosity",
+								["spellid"] = 91677,
+							}, -- [15]
+							["pos"] = 4,
+						},
+						["maxhp"] = 2928,
+					}, -- [4]
+				},
+				["damagetaken"] = 31126,
+				["shielding"] = 0,
+				["id"] = "Player-3209-09D61E75",
+				["healing"] = 7893,
+				["deathlog"] = {
+					{
+						["ts"] = 1533783921.501,
+						["amount"] = 0,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["absorb"] = 0,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783922.827,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783924.173,
+					}, -- [3]
+					{
+						["ts"] = 1533783925.512,
+						["amount"] = 0,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["absorb"] = 0,
+					}, -- [4]
+					{
+						["ts"] = 1533783926.869,
+						["amount"] = 0,
+						["spellid"] = 234946,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["absorb"] = 0,
+					}, -- [5]
+					{
+						["ts"] = 1533783904.917,
+						["amount"] = -26,
+						["srcname"] = "Lupine Spectre",
+						["hp"] = 2288,
+						["spellid"] = 88163,
+					}, -- [6]
+					{
+						["ts"] = 1533783906.452,
+						["amount"] = -165,
+						["srcname"] = "Shadowy Attendant",
+						["hp"] = 1973,
+						["spellid"] = 12739,
+					}, -- [7]
+					{
+						["ts"] = 1533783908.917,
+						["amount"] = -21,
+						["srcname"] = "Lupine Spectre",
+						["hp"] = 1973,
+						["spellid"] = 88163,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 616,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783909.452,
+					}, -- [9]
+					{
+						["ts"] = 1533783910.07,
+						["amount"] = -159,
+						["srcname"] = "Shadowy Attendant",
+						["hp"] = 2666,
+						["spellid"] = 12739,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 163,
+						["spellid"] = 2061,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783910.791,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783914.142,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783915.941,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783917.717,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 2928,
+						["ts"] = 1533783920.125,
+					}, -- [15]
+					["pos"] = 6,
+				},
+				["damagetakenspells"] = {
+					["Slashing Claws"] = {
+						["crushing"] = 0,
+						["id"] = 91064,
+						["damage"] = 18,
+						["max"] = 18,
+						["name"] = "Slashing Claws",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 18,
+						["absorbed"] = 0,
+					},
+					["Desecration"] = {
+						["crushing"] = 0,
+						["id"] = 93691,
+						["damage"] = 2960,
+						["max"] = 83,
+						["name"] = "Desecration",
+						["glancing"] = 0,
+						["totalhits"] = 37,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 78,
+						["absorbed"] = 0,
+					},
+					["Frostbolt"] = {
+						["crushing"] = 0,
+						["id"] = 15497,
+						["damage"] = 117,
+						["max"] = 117,
+						["name"] = "Frostbolt",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 117,
+						["absorbed"] = 0,
+					},
+					["Disease Cloud"] = {
+						["crushing"] = 0,
+						["id"] = 91562,
+						["damage"] = 524,
+						["max"] = 38,
+						["name"] = "Disease Cloud",
+						["glancing"] = 0,
+						["totalhits"] = 15,
+>>>>>>> parent of 76f5add1... addon updates
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
 						["absorbed"] = 6,
 					},
@@ -5458,11 +11003,54 @@ SkadaPerCharDB = {
 						["max"] = 138,
 						["name"] = "Smash",
 						["min"] = 120,
+=======
+						["min"] = 32,
+						["absorbed"] = 0,
+					},
+					["Mortal Wound"] = {
+						["crushing"] = 0,
+						["id"] = 93675,
+						["damage"] = 66,
+						["max"] = 22,
+						["name"] = "Mortal Wound",
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 22,
+						["absorbed"] = 0,
+					},
+					["Consume Flesh"] = {
+						["crushing"] = 0,
+						["id"] = 91088,
+						["damage"] = 172,
+						["max"] = 172,
+						["name"] = "Consume Flesh",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 172,
+						["absorbed"] = 0,
+					},
+					["Bone Flurry"] = {
+						["crushing"] = 0,
+						["id"] = 91420,
+						["damage"] = 399,
+						["max"] = 67,
+						["name"] = "Bone Flurry",
+						["glancing"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
@@ -5534,10 +11122,84 @@ SkadaPerCharDB = {
 						["name"] = "Asphyxiate",
 						["min"] = 370,
 						["totalhits"] = 12,
+=======
+						["min"] = 66,
+						["absorbed"] = 0,
+					},
+					["Conjure Poisonous Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93697,
+						["damage"] = 485,
+						["max"] = 243,
+						["name"] = "Conjure Poisonous Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 242,
+						["absorbed"] = 0,
+					},
+					["Conjure Frost Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93505,
+						["damage"] = 1596,
+						["max"] = 345,
+						["name"] = "Conjure Frost Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 307,
+						["absorbed"] = 0,
+					},
+					["Pustulant Spit"] = {
+						["crushing"] = 0,
+						["id"] = 91677,
+						["damage"] = 1062,
+						["max"] = 152,
+						["name"] = "Pustulant Spit",
+						["glancing"] = 0,
+						["totalhits"] = 26,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 13,
+						["absorbed"] = 0,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 9153,
+						["max"] = 332,
+						["name"] = "Attack",
+						["glancing"] = 0,
+						["totalhits"] = 70,
+						["critical"] = 4,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 16,
+						["absorbed"] = 0,
+					},
+					["Smash"] = {
+						["crushing"] = 0,
+						["id"] = 91213,
+						["damage"] = 587,
+						["max"] = 134,
+						["name"] = "Smash",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+>>>>>>> parent of 76f5add1... addon updates
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
@@ -6673,10 +12335,919 @@ SkadaPerCharDB = {
 						["name"] = "Pistol Barrage",
 						["min"] = 169,
 						["totalhits"] = 17,
+=======
+						["min"] = 85,
+						["absorbed"] = 0,
+					},
+					["Cursed Bullets"] = {
+						["crushing"] = 0,
+						["id"] = 93629,
+						["damage"] = 2061,
+						["max"] = 332,
+						["name"] = "Cursed Bullets",
+						["glancing"] = 0,
+						["totalhits"] = 26,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
+						["min"] = 7,
+						["absorbed"] = 0,
+					},
+					["Butcher Drain"] = {
+						["crushing"] = 0,
+						["id"] = 7485,
+						["damage"] = 30,
+						["max"] = 30,
+						["name"] = "Butcher Drain",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 30,
+						["absorbed"] = 0,
+					},
+					["Ice Shards"] = {
+						["crushing"] = 0,
+						["id"] = 93535,
+						["damage"] = 957,
+						["max"] = 259,
+						["name"] = "Ice Shards",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 228,
+						["absorbed"] = 0,
+					},
+					["Pistol Barrage"] = {
+						["crushing"] = 0,
+						["id"] = 93564,
+						["damage"] = 3759,
+						["max"] = 243,
+						["name"] = "Pistol Barrage",
+						["glancing"] = 0,
+						["totalhits"] = 17,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 169,
+						["absorbed"] = 0,
+					},
+					["Asphyxiate"] = {
+						["crushing"] = 0,
+						["id"] = 93424,
+						["damage"] = 3480,
+						["max"] = 290,
+						["name"] = "Asphyxiate",
+						["glancing"] = 0,
+						["totalhits"] = 12,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 290,
+						["absorbed"] = 0,
+					},
+					["Shadow Bolt"] = {
+						["crushing"] = 0,
+						["id"] = 12739,
+						["damage"] = 2682,
+						["max"] = 175,
+						["name"] = "Shadow Bolt",
+						["glancing"] = 0,
+						["totalhits"] = 17,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 109,
+						["absorbed"] = 0,
+					},
+					["Spectral Ravaging"] = {
+						["crushing"] = 0,
+						["id"] = 93928,
+						["damage"] = 486,
+						["max"] = 84,
+						["name"] = "Spectral Ravaging",
+						["glancing"] = 0,
+						["totalhits"] = 6,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 77,
+						["absorbed"] = 0,
+					},
+					["Fel Stomp"] = {
+						["crushing"] = 0,
+						["id"] = 7139,
+						["damage"] = 532,
+						["max"] = 270,
+						["name"] = "Fel Stomp",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 262,
+						["absorbed"] = 0,
+					},
+				},
+				["ffdamagedonespells"] = {
+				},
+				["ccbreaks"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 0,
+				["power"] = {
+					{
+						["spells"] = {
+							[5308] = 298.000000476837,
+							[85288] = 1222.50000143051,
+							[23881] = 705.000000238419,
+							[195707] = 105.800000071526,
+							[280715] = 1267.40000021458,
+						},
+						["amount"] = 3598.70000243187,
+					}, -- [1]
+				},
+				["overhealing"] = 7618,
+				["alert"] = {
+				},
+				["auras"] = {
+					["Enrage"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Enrage",
+						["auratype"] = "BUFF",
+						["id"] = 184362,
+					},
+					["Blood Fury"] = {
+						["name"] = "Blood Fury",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 719,
+						["auratype"] = "BUFF",
+						["id"] = 20572,
+					},
+					["Victorious"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Victorious",
+						["auratype"] = "BUFF",
+						["id"] = 32216,
+					},
+					["Desecration"] = {
+						["uptime"] = 49,
+						["active"] = 0,
+						["school"] = 32,
+						["name"] = "Desecration",
+						["auratype"] = "DEBUFF",
+						["id"] = 93691,
+					},
+					["Enraged Regeneration"] = {
+						["uptime"] = 16,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Enraged Regeneration",
+						["auratype"] = "BUFF",
+						["id"] = 184364,
+					},
+					["Taunt"] = {
+						["name"] = "Taunt",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 6,
+						["auratype"] = "DEBUFF",
+						["id"] = 355,
+					},
+				},
+			}, -- [4]
+			{
+				["alertDamage"] = 0,
+				["healingabsorbed"] = 0,
+				["role"] = "DAMAGER",
+				["class"] = "SHAMAN",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["ffdamagedone"] = 0,
+				["healingspells"] = {
+					["Healing Surge"] = {
+						["shielding"] = 0,
+						["id"] = 188070,
+						["healing"] = 13780,
+						["min"] = 0,
+						["name"] = "Healing Surge",
+						["hits"] = 31,
+						["overhealing"] = 2661,
+						["max"] = 1001,
+						["critical"] = 3,
+						["absorbed"] = 0,
+					},
+				},
+				["time"] = 1298,
+				["interrupts"] = 1,
+				["healed"] = {
+					["Player-3209-09D96C78"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Holkir-Azralon",
+						["amount"] = 5526,
+						["class"] = "SHAMAN",
+						["shielding"] = 0,
+					},
+					["Player-61-0BAB1A8A"] = {
+						["role"] = "HEALER",
+						["name"] = "Lumael",
+						["amount"] = 2858,
+						["class"] = "PRIEST",
+						["shielding"] = 0,
+					},
+					["Player-3209-09DA9B09"] = {
+						["role"] = "TANK",
+						["name"] = "Athorius-Azralon",
+						["amount"] = 3435,
+						["class"] = "PALADIN",
+						["shielding"] = 0,
+					},
+					["Player-3209-09D61E75"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Wurkon-Azralon",
+						["amount"] = 1961,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["maxhp"] = 1510,
+				["name"] = "Holkir",
+				["damage"] = 80667,
+				["damagespells"] = {
+					["Flametongue Attack"] = {
+						["hitmin"] = 3,
+						["criticalamount"] = 1270,
+						["id"] = 10444,
+						["damage"] = 3571,
+						["max"] = 10,
+						["school"] = 4,
+						["min"] = 3,
+						["criticalmax"] = 10,
+						["hitmax"] = 6,
+						["hit"] = 572,
+						["totalhits"] = 717,
+						["critical"] = 145,
+						["criticalmin"] = 7,
+						["hitamount"] = 2301,
+					},
+					["Windfury Attack"] = {
+						["hitmin"] = 7,
+						["criticalamount"] = 717,
+						["id"] = 25504,
+						["damage"] = 2481,
+						["max"] = 28,
+						["school"] = 1,
+						["min"] = 7,
+						["criticalmax"] = 28,
+						["hitmax"] = 15,
+						["hit"] = 139,
+						["totalhits"] = 167,
+						["critical"] = 28,
+						["criticalmin"] = 17,
+						["hitamount"] = 1764,
+					},
+					["Stormstrike Off-Hand"] = {
+						["hitmin"] = 45,
+						["criticalamount"] = 1724,
+						["id"] = 32176,
+						["damage"] = 5363,
+						["max"] = 141,
+						["school"] = 1,
+						["min"] = 45,
+						["criticalmax"] = 141,
+						["hitmax"] = 71,
+						["hit"] = 56,
+						["totalhits"] = 69,
+						["critical"] = 13,
+						["criticalmin"] = 130,
+						["hitamount"] = 3639,
+					},
+					["Rockbiter"] = {
+						["hitmin"] = 66,
+						["criticalamount"] = 6871,
+						["id"] = 193786,
+						["damage"] = 19266,
+						["max"] = 142,
+						["school"] = 8,
+						["min"] = 66,
+						["criticalmax"] = 142,
+						["hitmax"] = 72,
+						["hit"] = 178,
+						["totalhits"] = 227,
+						["critical"] = 49,
+						["criticalmin"] = 134,
+						["hitamount"] = 12395,
+					},
+					["Lava Lash"] = {
+						["hitmin"] = 62,
+						["criticalamount"] = 1698,
+						["id"] = 60103,
+						["damage"] = 8072,
+						["max"] = 190,
+						["school"] = 4,
+						["min"] = 62,
+						["criticalmax"] = 190,
+						["hitmax"] = 96,
+						["hit"] = 69,
+						["totalhits"] = 78,
+						["critical"] = 9,
+						["criticalmin"] = 188,
+						["hitamount"] = 6374,
+					},
+					["Flametongue"] = {
+						["hitmin"] = 24,
+						["criticalamount"] = 856,
+						["id"] = 193796,
+						["damage"] = 2131,
+						["max"] = 52,
+						["school"] = 4,
+						["min"] = 24,
+						["criticalmax"] = 52,
+						["hitmax"] = 27,
+						["hit"] = 51,
+						["totalhits"] = 68,
+						["critical"] = 17,
+						["criticalmin"] = 49,
+						["hitamount"] = 1275,
+					},
+					["Stormstrike"] = {
+						["hitmin"] = 90,
+						["criticalamount"] = 3434,
+						["id"] = 32175,
+						["damage"] = 11032,
+						["max"] = 280,
+						["school"] = 1,
+						["min"] = 90,
+						["criticalmax"] = 280,
+						["hitmax"] = 140,
+						["hit"] = 59,
+						["totalhits"] = 72,
+						["critical"] = 13,
+						["criticalmin"] = 258,
+						["hitamount"] = 7598,
+					},
+					["Wind Shear"] = {
+						["totalhits"] = 1,
+						["id"] = 57994,
+						["school"] = 1,
+						["IMMUNE"] = 1,
+						["max"] = 0,
+						["damage"] = 0,
+					},
+					["Attack"] = {
+						["damage"] = 28751,
+						["hitmin"] = 21,
+						["criticalmin"] = 38,
+						["id"] = 6603,
+						["criticalamount"] = 9013,
+						["max"] = 121,
+						["school"] = 1,
+						["min"] = 21,
+						["criticalmax"] = 121,
+						["hitmax"] = 64,
+						["hit"] = 450,
+						["totalhits"] = 632,
+						["critical"] = 102,
+						["MISS"] = 80,
+						["hitamount"] = 19738,
+					},
+				},
+				["deaths"] = {
+					{
+						["ts"] = 1533783883.74001,
+						["log"] = {
+							{
+								["spellname"] = "Holkir dies",
+								["ts"] = 1533783883.74001,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [1]
+							{
+								["ts"] = 1533783873.22902,
+								["amount"] = -323,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1530,
+								["spellid"] = 88163,
+							}, -- [2]
+							{
+								["ts"] = 1533783875.23803,
+								["amount"] = -143,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1278,
+								["spellid"] = 88163,
+							}, -- [3]
+							{
+								["ts"] = 1533783876.22504,
+								["amount"] = -163,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1040,
+								["spellid"] = 12739,
+							}, -- [4]
+							{
+								["ts"] = 1533783879.24305,
+								["amount"] = -145,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 1042,
+								["spellid"] = 88163,
+							}, -- [5]
+							{
+								["ts"] = 1533783879.86906,
+								["amount"] = -172,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 797,
+								["spellid"] = 12739,
+							}, -- [6]
+							{
+								["ts"] = 1533783880.76307,
+								["amount"] = -89,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 727,
+								["spellid"] = 93928,
+							}, -- [7]
+							{
+								["ts"] = 1533783881.25008,
+								["amount"] = -136,
+								["srcname"] = "Haunted Servitor",
+								["hp"] = 727,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1533783881.26209,
+								["amount"] = -87,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 659,
+								["spellid"] = 93928,
+							}, -- [9]
+							{
+								["ts"] = 1533783881.7491,
+								["amount"] = -91,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 483,
+								["spellid"] = 93928,
+							}, -- [10]
+							{
+								["ts"] = 1533783882.26611,
+								["amount"] = -89,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 413,
+								["spellid"] = 93928,
+							}, -- [11]
+							{
+								["ts"] = 1533783882.49412,
+								["amount"] = -336,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 413,
+								["spellid"] = 88163,
+							}, -- [12]
+							{
+								["ts"] = 1533783882.76313,
+								["amount"] = -84,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 85,
+								["spellid"] = 93928,
+							}, -- [13]
+							{
+								["ts"] = 1533783883.26914,
+								["amount"] = -86,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 20,
+								["spellid"] = 93928,
+							}, -- [14]
+							{
+								["ts"] = 1533783883.71215,
+								["amount"] = -216,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 20,
+								["spellid"] = 88163,
+							}, -- [15]
+							["pos"] = 2,
+						},
+						["maxhp"] = 1530,
+					}, -- [1]
+					{
+						["ts"] = 1533783844.17401,
+						["log"] = {
+							{
+								["spellname"] = "Holkir dies",
+								["ts"] = 1533783844.17401,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [1]
+							{
+								["ts"] = 1533783798.13702,
+								["amount"] = -57,
+								["srcname"] = "Haunting Spirit",
+								["hp"] = 280,
+								["spellid"] = 88163,
+							}, -- [2]
+							{
+								["ts"] = 1533783800.14403,
+								["amount"] = -43,
+								["srcname"] = "Haunting Spirit",
+								["hp"] = 237,
+								["spellid"] = 88163,
+							}, -- [3]
+							{
+								["absorb"] = 0,
+								["amount"] = 482,
+								["spellid"] = 188070,
+								["srcname"] = "Holkir-Azralon",
+								["hp"] = 590,
+								["ts"] = 1533783801.84104,
+							}, -- [4]
+							{
+								["ts"] = 1533783802.15305,
+								["amount"] = -55,
+								["srcname"] = "Haunting Spirit",
+								["hp"] = 590,
+								["spellid"] = 88163,
+							}, -- [5]
+							{
+								["absorb"] = 0,
+								["amount"] = 482,
+								["spellid"] = 188070,
+								["srcname"] = "Holkir-Azralon",
+								["hp"] = 939,
+								["ts"] = 1533783808.97506,
+							}, -- [6]
+							{
+								["absorb"] = 0,
+								["amount"] = 482,
+								["spellid"] = 188070,
+								["srcname"] = "Holkir-Azralon",
+								["hp"] = 1325,
+								["ts"] = 1533783811.40807,
+							}, -- [7]
+							{
+								["ts"] = 1533783831.75608,
+								["amount"] = -186,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1342,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1533783831.77209,
+								["amount"] = -30,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1318,
+								["spellid"] = 7485,
+							}, -- [9]
+							{
+								["ts"] = 1533783836.1201,
+								["amount"] = -331,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 1177,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["ts"] = 1533783838.12411,
+								["amount"] = -263,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 920,
+								["spellid"] = 88163,
+							}, -- [11]
+							{
+								["ts"] = 1533783840.12812,
+								["amount"] = -359,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 717,
+								["spellid"] = 88163,
+							}, -- [12]
+							{
+								["ts"] = 1533783842.12913,
+								["amount"] = -317,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 439,
+								["spellid"] = 88163,
+							}, -- [13]
+							{
+								["ts"] = 1533783842.37614,
+								["amount"] = -157,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 69,
+								["spellid"] = 12739,
+							}, -- [14]
+							{
+								["ts"] = 1533783844.13815,
+								["amount"] = -314,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 70,
+								["spellid"] = 88163,
+							}, -- [15]
+							["pos"] = 2,
+						},
+						["maxhp"] = 1530,
+					}, -- [2]
+					{
+						["ts"] = 1533783774.17113,
+						["log"] = {
+							{
+								["ts"] = 1533783748.65901,
+								["amount"] = -165,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1158,
+								["spellid"] = 12739,
+							}, -- [1]
+							{
+								["ts"] = 1533783752.71602,
+								["amount"] = -160,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1162,
+								["spellid"] = 88163,
+							}, -- [2]
+							{
+								["ts"] = 1533783752.73603,
+								["amount"] = -30,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1138,
+								["spellid"] = 7485,
+							}, -- [3]
+							{
+								["ts"] = 1533783755.92004,
+								["amount"] = -211,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 1014,
+								["spellid"] = 88163,
+							}, -- [4]
+							{
+								["ts"] = 1533783755.95305,
+								["amount"] = -30,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 827,
+								["spellid"] = 7485,
+							}, -- [5]
+							{
+								["ts"] = 1533783769.20306,
+								["amount"] = -223,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 837,
+								["spellid"] = 88163,
+							}, -- [6]
+							{
+								["ts"] = 1533783769.22607,
+								["amount"] = -28,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 641,
+								["spellid"] = 7485,
+							}, -- [7]
+							{
+								["ts"] = 1533783770.15608,
+								["amount"] = -270,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 643,
+								["spellid"] = 88163,
+							}, -- [8]
+							{
+								["ts"] = 1533783772.15409,
+								["amount"] = -250,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 434,
+								["spellid"] = 88163,
+							}, -- [9]
+							{
+								["ts"] = 1533783772.4051,
+								["amount"] = -174,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 239,
+								["spellid"] = 88163,
+							}, -- [10]
+							{
+								["ts"] = 1533783772.42711,
+								["amount"] = -30,
+								["srcname"] = "Razorclaw the Butcher",
+								["hp"] = 215,
+								["spellid"] = 7485,
+							}, -- [11]
+							{
+								["ts"] = 1533783774.17112,
+								["amount"] = -281,
+								["srcname"] = "Baron Silverlaine",
+								["hp"] = 79,
+								["spellid"] = 88163,
+							}, -- [12]
+							{
+								["spellname"] = "Holkir dies",
+								["ts"] = 1533783774.17113,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [13]
+							{
+								["ts"] = 1533783747.35714,
+								["amount"] = -152,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1411,
+								["spellid"] = 12739,
+							}, -- [14]
+							{
+								["ts"] = 1533783748.19415,
+								["amount"] = -160,
+								["srcname"] = "Shadowy Attendant",
+								["hp"] = 1287,
+								["spellid"] = 12739,
+							}, -- [15]
+							["pos"] = 14,
+						},
+						["maxhp"] = 1530,
+					}, -- [3]
+					{
+						["ts"] = 1533783385.55914,
+						["log"] = {
+							{
+								["ts"] = 1533783382.98801,
+								["amount"] = -19,
+								["spellid"] = 91677,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 417,
+							}, -- [1]
+							{
+								["ts"] = 1533783383.22202,
+								["amount"] = -28,
+								["hp"] = 396,
+								["srcname"] = "Lord Godfrey",
+								["spellid"] = 93629,
+							}, -- [2]
+							{
+								["absorb"] = 0,
+								["amount"] = 474,
+								["spellid"] = 188070,
+								["srcname"] = "Holkir-Azralon",
+								["hp"] = 754,
+								["ts"] = 1533783383.36403,
+							}, -- [3]
+							{
+								["ts"] = 1533783383.53304,
+								["amount"] = -21,
+								["spellid"] = 93675,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 738,
+							}, -- [4]
+							{
+								["ts"] = 1533783383.53305,
+								["amount"] = -227,
+								["hp"] = 738,
+								["srcname"] = "Pustulant Monstrosity",
+								["spellid"] = 88163,
+							}, -- [5]
+							{
+								["ts"] = 1533783383.61006,
+								["amount"] = -240,
+								["hp"] = 397,
+								["srcname"] = "Lord Godfrey",
+								["spellid"] = 93564,
+							}, -- [6]
+							{
+								["ts"] = 1533783384.49507,
+								["amount"] = -27,
+								["hp"] = 397,
+								["srcname"] = "Bloodthirsty Ghoul",
+								["spellid"] = 88163,
+							}, -- [7]
+							{
+								["ts"] = 1533783384.49508,
+								["amount"] = -23,
+								["spellid"] = 88163,
+								["srcname"] = "Bloodthirsty Ghoul",
+								["hp"] = 397,
+							}, -- [8]
+							{
+								["ts"] = 1533783384.53809,
+								["amount"] = -21,
+								["hp"] = 381,
+								["srcname"] = "Lord Godfrey",
+								["spellid"] = 93675,
+							}, -- [9]
+							{
+								["ts"] = 1533783384.6141,
+								["amount"] = -240,
+								["spellid"] = 93564,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 169,
+							}, -- [10]
+							{
+								["ts"] = 1533783384.98911,
+								["amount"] = -19,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 155,
+								["spellid"] = 91677,
+							}, -- [11]
+							{
+								["ts"] = 1533783385.54312,
+								["amount"] = -21,
+								["spellid"] = 93675,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 141,
+							}, -- [12]
+							{
+								["ts"] = 1533783385.54313,
+								["amount"] = -281,
+								["spellid"] = 88163,
+								["srcname"] = "Pustulant Monstrosity",
+								["hp"] = 141,
+							}, -- [13]
+							{
+								["spellname"] = "Holkir dies",
+								["ts"] = 1533783385.55914,
+								["hp"] = 0,
+								["spellid"] = 41220,
+							}, -- [14]
+							{
+								["ts"] = 1533783382.60515,
+								["amount"] = -241,
+								["spellid"] = 93564,
+								["srcname"] = "Lord Godfrey",
+								["hp"] = 430,
+							}, -- [15]
+							["pos"] = 15,
+						},
+						["maxhp"] = 1510,
+					}, -- [4]
+				},
+				["damagetaken"] = 30160,
+				["shielding"] = 0,
+				["id"] = "Player-3209-09D96C78",
+				["healing"] = 13780,
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 160,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 1530,
+						["ts"] = 1533783914.142,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 1530,
+						["ts"] = 1533783915.941,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 1530,
+						["ts"] = 1533783917.717,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 596,
+						["srcname"] = "Lumael",
+						["hp"] = 1530,
+						["ts"] = 1533783920.125,
+					}, -- [4]
+					["pos"] = 5,
+				},
+				["damagetakenspells"] = {
+					["Pistol Barrage"] = {
+						["crushing"] = 0,
+						["id"] = 93564,
+						["damage"] = 4089,
+						["max"] = 241,
+						["name"] = "Pistol Barrage",
+						["glancing"] = 0,
+						["totalhits"] = 17,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 240,
+						["absorbed"] = 0,
+					},
+					["Desecration"] = {
+						["crushing"] = 0,
+						["id"] = 93691,
+						["damage"] = 2930,
+						["max"] = 83,
+						["name"] = "Desecration",
+						["glancing"] = 0,
+						["totalhits"] = 37,
+>>>>>>> parent of 76f5add1... addon updates
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
@@ -6718,10 +13289,54 @@ SkadaPerCharDB = {
 						["name"] = "Spectral Ravaging",
 						["min"] = 77,
 						["totalhits"] = 6,
+=======
+						["min"] = 76,
+						["absorbed"] = 0,
+					},
+					["Disease Cloud"] = {
+						["crushing"] = 0,
+						["id"] = 91562,
+						["damage"] = 600,
+						["max"] = 38,
+						["name"] = "Disease Cloud",
+						["glancing"] = 0,
+						["totalhits"] = 17,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 32,
+						["absorbed"] = 0,
+					},
+					["Mortal Wound"] = {
+						["crushing"] = 0,
+						["id"] = 93675,
+						["damage"] = 252,
+						["max"] = 21,
+						["name"] = "Mortal Wound",
+						["glancing"] = 0,
+						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+						["min"] = 21,
+						["absorbed"] = 0,
+					},
+					["Bone Flurry"] = {
+						["crushing"] = 0,
+						["id"] = 91420,
+						["damage"] = 571,
+						["max"] = 72,
+						["name"] = "Bone Flurry",
+						["glancing"] = 0,
+						["totalhits"] = 8,
+>>>>>>> parent of 76f5add1... addon updates
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+<<<<<<< HEAD
 						["glancing"] = 0,
 						["absorbed"] = 0,
 					},
@@ -8014,7 +14629,516 @@ SkadaPerCharDB = {
 					["Holkir-Azralon"] = {
 						["taken"] = 1964,
 						["done"] = 28,
+=======
+						["min"] = 71,
+						["absorbed"] = 0,
+					},
+					["Conjure Poisonous Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93697,
+						["damage"] = 481,
+						["max"] = 241,
+						["name"] = "Conjure Poisonous Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 240,
+						["absorbed"] = 0,
+					},
+					["Conjure Frost Mixture"] = {
+						["crushing"] = 0,
+						["id"] = 93505,
+						["damage"] = 1607,
+						["max"] = 340,
+						["name"] = "Conjure Frost Mixture",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 311,
+						["absorbed"] = 0,
+					},
+					["Pustulant Spit"] = {
+						["crushing"] = 0,
+						["id"] = 91677,
+						["damage"] = 880,
+						["max"] = 156,
+						["name"] = "Pustulant Spit",
+						["glancing"] = 0,
+						["totalhits"] = 19,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 19,
+						["absorbed"] = 0,
+					},
+					["Arcane Missiles"] = {
+						["crushing"] = 0,
+						["id"] = 33833,
+						["damage"] = 168,
+						["max"] = 43,
+						["name"] = "Arcane Missiles",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 64,
+						["resisted"] = 0,
+						["min"] = 41,
+						["absorbed"] = 0,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 8579,
+						["max"] = 359,
+						["name"] = "Attack",
+						["glancing"] = 0,
+						["totalhits"] = 55,
+						["critical"] = 1,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 20,
+						["absorbed"] = 0,
+					},
+					["Smash"] = {
+						["crushing"] = 0,
+						["id"] = 91213,
+						["damage"] = 746,
+						["max"] = 133,
+						["name"] = "Smash",
+						["glancing"] = 0,
+						["totalhits"] = 6,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 119,
+						["absorbed"] = 0,
+					},
+					["Cursed Bullets"] = {
+						["crushing"] = 0,
+						["id"] = 93629,
+						["damage"] = 801,
+						["max"] = 330,
+						["name"] = "Cursed Bullets",
+						["glancing"] = 0,
+						["totalhits"] = 10,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 6,
+						["absorbed"] = 0,
+					},
+					["Butcher Drain"] = {
+						["crushing"] = 0,
+						["id"] = 7485,
+						["damage"] = 148,
+						["max"] = 30,
+						["name"] = "Butcher Drain",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 28,
+						["absorbed"] = 0,
+					},
+					["Ice Shards"] = {
+						["crushing"] = 0,
+						["id"] = 93535,
+						["damage"] = 698,
+						["max"] = 242,
+						["name"] = "Ice Shards",
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 16,
+						["resisted"] = 0,
+						["min"] = 223,
+						["absorbed"] = 0,
+					},
+					["Shadow Bolt"] = {
+						["crushing"] = 0,
+						["id"] = 12739,
+						["damage"] = 1629,
+						["max"] = 172,
+						["name"] = "Shadow Bolt",
+						["glancing"] = 0,
+						["totalhits"] = 10,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 152,
+						["absorbed"] = 0,
+					},
+					["Asphyxiate"] = {
+						["crushing"] = 0,
+						["id"] = 93424,
+						["damage"] = 3710,
+						["max"] = 312,
+						["name"] = "Asphyxiate",
+						["glancing"] = 0,
+						["totalhits"] = 12,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 307,
+						["absorbed"] = 0,
+					},
+					["Pain and Suffering"] = {
+						["crushing"] = 0,
+						["id"] = 93581,
+						["damage"] = 314,
+						["max"] = 109,
+						["name"] = "Pain and Suffering",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 30,
+						["absorbed"] = 0,
+					},
+					["Spectral Ravaging"] = {
+						["crushing"] = 0,
+						["id"] = 93928,
+						["damage"] = 1059,
+						["max"] = 92,
+						["name"] = "Spectral Ravaging",
+						["glancing"] = 0,
+						["totalhits"] = 12,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 84,
+						["absorbed"] = 0,
+					},
+					["Fel Stomp"] = {
+						["crushing"] = 0,
+						["id"] = 7139,
+						["damage"] = 898,
+						["max"] = 252,
+						["name"] = "Fel Stomp",
+						["glancing"] = 0,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 207,
+						["absorbed"] = 0,
+					},
+				},
+				["ffdamagedonespells"] = {
+				},
+				["ccbreaks"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["alertCount"] = 0,
+				["power"] = {
+					[11] = {
+						["spells"] = {
+							[193786] = 5472,
+						},
+						["amount"] = 5472,
+					},
+				},
+				["overhealing"] = 2661,
+				["alert"] = {
+				},
+				["auras"] = {
+					["Windfury"] = {
+						["uptime"] = 88,
+						["active"] = 0,
+						["auratype"] = "BUFF",
+						["id"] = 205648,
+						["name"] = "Windfury",
+						["school"] = 8,
+					},
+					["Dungeon Preparation"] = {
+						["name"] = "Dungeon Preparation",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 60,
+						["auratype"] = "BUFF",
+						["id"] = 228128,
+					},
+					["Flametongue"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 4,
+						["name"] = "Flametongue",
+						["auratype"] = "BUFF",
+						["id"] = 194084,
+					},
+					["Desecration"] = {
+						["uptime"] = 48,
+						["active"] = 0,
+						["school"] = 32,
+						["name"] = "Desecration",
+						["auratype"] = "DEBUFF",
+						["id"] = 93691,
+					},
+					["Unknown: Earthbind"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 8,
+						["name"] = "Unknown: Earthbind",
+						["auratype"] = "DEBUFF",
+						["id"] = 3600,
+					},
+					["Ghost Wolf"] = {
+						["name"] = "Ghost Wolf",
+						["active"] = 0,
+						["school"] = 8,
+						["uptime"] = 194,
+						["auratype"] = "BUFF",
+						["id"] = 2645,
+					},
+					["Reincarnation"] = {
+						["uptime"] = 6,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Reincarnation",
+						["auratype"] = "DEBUFF",
+						["id"] = 225080,
+					},
+				},
+			}, -- [5]
+		},
+		["deaths"] = 19,
+		["mobs"] = {
+			["Corpse Eater"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 12952,
+						["done"] = 805,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 3023,
+						["done"] = 172,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 3941,
+						["done"] = 5468,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 2341,
+						["done"] = 677,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Holkir-Azralon"] = {
+						["taken"] = 4242,
+						["done"] = 0,
 						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 26499,
+				["done"] = 7122,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Deviate Creeper"] = {
+				["players"] = {
+					["Lumael"] = {
+						["taken"] = 1647,
+						["done"] = 259,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 1219,
+						["done"] = 180,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 2866,
+				["done"] = 439,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Electrolux"] = {
+				["players"] = {
+				},
+				["hdone"] = 412,
+				["hdonespell"] = {
+					["Victory Rush"] = {
+						["min"] = 342,
+						["crits"] = 0,
+						["max"] = 342,
+						["healing"] = 342,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Swift Hand of Justice"] = {
+						["min"] = 35,
+						["crits"] = 0,
+						["max"] = 35,
+						["healing"] = 70,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 412,
+				["htakenspell"] = {
+					["Victory Rush"] = {
+						["min"] = 342,
+						["crits"] = 0,
+						["max"] = 342,
+						["healing"] = 342,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Swift Hand of Justice"] = {
+						["min"] = 35,
+						["crits"] = 0,
+						["max"] = 35,
+						["healing"] = 70,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+				},
+			},
+			["Shadow Charger"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 2002,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 586,
+						["done"] = 704,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Vancard"] = {
+						["taken"] = 882,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 24,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 3494,
+				["done"] = 704,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Razorclaw the Butcher"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 1142,
+						["done"] = 2377,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Vancard"] = {
+						["taken"] = 2077,
+						["done"] = 2594,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 1764,
+						["done"] = 3629,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 0,
+						["done"] = 467,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1872,
+						["done"] = 882,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 934,
+				["hdonespell"] = {
+					["Butcher Drain"] = {
+						["min"] = 6,
+						["crits"] = 0,
+						["max"] = 31,
+						["healing"] = 934,
+						["overhealing"] = 13,
+						["hits"] = 35,
+					},
+				},
+				["taken"] = 6855,
+				["done"] = 9949,
+				["htaken"] = 934,
+				["htakenspell"] = {
+					["Butcher Drain"] = {
+						["min"] = 6,
+						["crits"] = 0,
+						["max"] = 31,
+						["healing"] = 934,
+						["overhealing"] = 13,
+						["hits"] = 35,
+					},
+				},
+			},
+			["Frantic Geist"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 1964,
+						["done"] = 28,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1959,
+						["done"] = 136,
+						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
 					},
 					["Athorius-Azralon"] = {
@@ -8022,12 +15146,6 @@ SkadaPerCharDB = {
 						["done"] = 1526,
 						["class"] = "PALADIN",
 						["role"] = "TANK",
-					},
-					["Wurkon-Azralon"] = {
-						["taken"] = 1959,
-						["done"] = 136,
-						["class"] = "WARRIOR",
-						["role"] = "DAMAGER",
 					},
 					["Lumael"] = {
 						["taken"] = 387,
@@ -8045,6 +15163,196 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 12272,
+				["done"] = 2198,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Lupine Spectre"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 14,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 466,
+						["done"] = 104,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 0,
+						["done"] = 192,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 600,
+						["done"] = 47,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1080,
+				["done"] = 343,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Savannah Prowler"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 2067,
+						["done"] = 242,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 447,
+						["done"] = 118,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 2514,
+				["done"] = 360,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Dark Creeper"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 1013,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 1710,
+						["done"] = 821,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1124,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 0,
+						["done"] = 79,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Holkir-Azralon"] = {
+						["taken"] = 1764,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 5611,
+				["done"] = 900,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Kolkar Stormseer"] = {
+				["players"] = {
+					["Lumael"] = {
+						["taken"] = 3954,
+						["done"] = 614,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 6267,
+						["done"] = 776,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 10221,
+				["done"] = 1390,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Baron Ashbury"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 6417,
+						["done"] = 314,
+>>>>>>> parent of 76f5add1... addon updates
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+<<<<<<< HEAD
+						["taken"] = 4553,
+						["done"] = 1526,
+=======
+						["taken"] = 4007,
+						["done"] = 4545,
+>>>>>>> parent of 76f5add1... addon updates
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+<<<<<<< HEAD
+						["taken"] = 1959,
+						["done"] = 136,
+=======
+						["taken"] = 4966,
+						["done"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+<<<<<<< HEAD
+						["taken"] = 387,
+						["done"] = 441,
+=======
+						["taken"] = 1361,
+						["done"] = 619,
+>>>>>>> parent of 76f5add1... addon updates
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+<<<<<<< HEAD
+						["taken"] = 3409,
+						["done"] = 67,
+=======
+						["taken"] = 9254,
+						["done"] = 0,
+>>>>>>> parent of 76f5add1... addon updates
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+<<<<<<< HEAD
 				["taken"] = 12272,
 				["htakenspell"] = {
 				},
@@ -8291,12 +15599,201 @@ SkadaPerCharDB = {
 						["taken"] = 586,
 						["done"] = 259,
 						["class"] = "SHAMAN",
+=======
+				["taken"] = 26005,
+				["done"] = 5478,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Lord Godfrey"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 6519,
+						["done"] = 5142,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Vancard"] = {
+						["taken"] = 14155,
+						["done"] = 2474,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 4537,
+						["done"] = 14024,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 294,
+						["done"] = 4037,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 4846,
+						["done"] = 6380,
+						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 30351,
+				["done"] = 32057,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Bloodthirsty Ghoul"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 956,
+						["done"] = 179,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 1663,
+						["done"] = 581,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1743,
+						["done"] = 140,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 0,
+						["done"] = 104,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Holkir-Azralon"] = {
+						["taken"] = 586,
+						["done"] = 259,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 4948,
+				["done"] = 1263,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Pustulant Monstrosity"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 6535,
+						["done"] = 1713,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1730,
+						["done"] = 1591,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 2896,
+						["done"] = 6750,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 0,
+						["done"] = 3840,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Holkir-Azralon"] = {
+						["taken"] = 1067,
+						["done"] = 2331,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 12228,
+				["done"] = 16225,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Unstable Ravager"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 3727,
+						["done"] = 150,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 1969,
+						["done"] = 1765,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 2473,
+						["done"] = 557,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 641,
+						["done"] = 718,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Holkir-Azralon"] = {
+						["taken"] = 2647,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 11457,
+				["done"] = 3190,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Gesharahan"] = {
+				["players"] = {
+					["Lumael"] = {
+						["taken"] = 372,
+						["done"] = 116,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 421,
+						["done"] = 0,
+						["class"] = "MAGE",
+>>>>>>> parent of 76f5add1... addon updates
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+<<<<<<< HEAD
 				["taken"] = 4948,
 				["htakenspell"] = {
 				},
@@ -8377,10 +15874,171 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["role"] = "DAMAGER",
 					},
+=======
+				["taken"] = 793,
+				["done"] = 116,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Black Rat"] = {
+				["players"] = {
+					["Athorius-Azralon"] = {
+						["taken"] = 40,
+						["done"] = 0,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 28,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 68,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Spitebone Flayer"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 6462,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1230,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 2283,
+						["done"] = 3834,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 891,
+						["done"] = 0,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Holkir-Azralon"] = {
+						["taken"] = 1360,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 12226,
+				["done"] = 3834,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Tormented Officer"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 1458,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 863,
+						["done"] = 659,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 392,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Vancard"] = {
+						["taken"] = 3590,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 6303,
+				["done"] = 659,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Plainsland Cheetah"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 943,
+						["done"] = 280,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 943,
+				["done"] = 280,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Stone Sleeper"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 2111,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 1452,
+						["done"] = 2130,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1635,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 1494,
+						["done"] = 0,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 6021,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+>>>>>>> parent of 76f5add1... addon updates
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+<<<<<<< HEAD
 				["taken"] = 11457,
 				["htakenspell"] = {
 				},
@@ -8465,12 +16123,75 @@ SkadaPerCharDB = {
 						["taken"] = 1360,
 						["done"] = 0,
 						["class"] = "SHAMAN",
+=======
+				["taken"] = 12713,
+				["done"] = 2130,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Hezrul's Bloodguard"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 705,
+						["done"] = 218,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 162,
+						["done"] = 93,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 867,
+				["done"] = 311,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Shadowy Attendant"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 2169,
+						["done"] = 1629,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 3722,
+						["done"] = 2682,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 2780,
+						["done"] = 4188,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 160,
+						["done"] = 7325,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 9595,
+						["done"] = 1465,
+						["class"] = "MAGE",
+>>>>>>> parent of 76f5add1... addon updates
 						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+<<<<<<< HEAD
 				["taken"] = 12226,
 				["htakenspell"] = {
 				},
@@ -8731,10 +16452,177 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
+=======
+				["taken"] = 18426,
+				["done"] = 17289,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Deviate Stalker"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 831,
+						["done"] = 45,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 831,
+				["done"] = 45,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Sorcerous Skeleton"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 1297,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1015,
+						["done"] = 117,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 2065,
+						["done"] = 483,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 135,
+						["done"] = 919,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 4323,
+						["done"] = 121,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 8835,
+				["done"] = 1640,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Deviate Coiler Hatchling"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 594,
+						["done"] = 178,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 478,
+						["done"] = 48,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1072,
+				["done"] = 226,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Spitebone Guardian"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 2686,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 1632,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 1033,
+						["done"] = 2031,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 1080,
+						["done"] = 0,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 4926,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 11357,
+				["done"] = 2031,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Wailing Guardsman"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 7448,
+						["done"] = 0,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 6402,
+						["done"] = 5740,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 9059,
+						["done"] = 1505,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 1168,
+						["done"] = 2045,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 8417,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+>>>>>>> parent of 76f5add1... addon updates
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+<<<<<<< HEAD
 				["taken"] = 11357,
 				["htakenspell"] = {
 				},
@@ -8815,17 +16703,42 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
-					["Athorius-Azralon"] = {
-						["taken"] = 843,
-						["done"] = 1219,
-						["class"] = "PALADIN",
-						["role"] = "TANK",
+=======
+				["taken"] = 32494,
+				["done"] = 9290,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Dread Scryer"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 970,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
 					},
 					["Wurkon-Azralon"] = {
 						["taken"] = 827,
 						["done"] = 0,
 						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
+					},
+>>>>>>> parent of 76f5add1... addon updates
+					["Athorius-Azralon"] = {
+						["taken"] = 843,
+						["done"] = 1219,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+<<<<<<< HEAD
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 827,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+=======
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Lumael"] = {
 						["taken"] = 0,
@@ -8844,6 +16757,7 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 4966,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
@@ -8922,11 +16836,98 @@ SkadaPerCharDB = {
 						["done"] = 74,
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
+=======
+				["done"] = 1445,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Deviate Coiler"] = {
+				["players"] = {
+					["Lumael"] = {
+						["taken"] = 537,
+						["done"] = 171,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 227,
+						["done"] = 0,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 764,
+				["done"] = 171,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Fetid Ghoul"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 2054,
+						["done"] = 600,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 1755,
+						["done"] = 2553,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 3546,
+						["done"] = 524,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 0,
+						["done"] = 1387,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+						["taken"] = 3597,
+						["done"] = 74,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 10952,
+				["done"] = 5138,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Kolkar Marauder"] = {
+				["players"] = {
+					["Vancard"] = {
+						["taken"] = 4877,
+						["done"] = 336,
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+					["Lumael"] = {
+						["taken"] = 1091,
+						["done"] = 56,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+>>>>>>> parent of 76f5add1... addon updates
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+<<<<<<< HEAD
 				["taken"] = 10952,
 				["htakenspell"] = {
 				},
@@ -9004,12 +17005,42 @@ SkadaPerCharDB = {
 					["Lumael"] = {
 						["taken"] = 537,
 						["done"] = 171,
+=======
+				["taken"] = 5968,
+				["done"] = 392,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Haunted Servitor"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 6370,
+						["done"] = 2743,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 7904,
+						["done"] = 3339,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 13720,
+						["done"] = 12838,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 1787,
+						["done"] = 4095,
 						["class"] = "PRIEST",
 						["role"] = "HEALER",
 					},
 					["Vancard"] = {
-						["taken"] = 227,
-						["done"] = 0,
+						["taken"] = 11562,
+						["done"] = 3518,
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
@@ -9017,11 +17048,67 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
+				["taken"] = 41343,
+				["done"] = 26533,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Mindless Horror"] = {
+				["players"] = {
+					["Holkir-Azralon"] = {
+						["taken"] = 4262,
+						["done"] = 746,
+						["class"] = "SHAMAN",
+						["role"] = "DAMAGER",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 2551,
+						["done"] = 587,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 2230,
+						["done"] = 4765,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Lumael"] = {
+						["taken"] = 1772,
+						["done"] = 509,
+>>>>>>> parent of 76f5add1... addon updates
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Vancard"] = {
+<<<<<<< HEAD
+						["taken"] = 227,
+						["done"] = 0,
+=======
+						["taken"] = 6219,
+						["done"] = 1416,
+>>>>>>> parent of 76f5add1... addon updates
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+<<<<<<< HEAD
 				["taken"] = 764,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 171,
+=======
+				["taken"] = 17034,
+				["done"] = 8023,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Haunting Spirit"] = {
 				["players"] = {
@@ -9031,6 +17118,7 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
+<<<<<<< HEAD
 					["Athorius-Azralon"] = {
 						["taken"] = 363,
 						["done"] = 358,
@@ -9042,6 +17130,19 @@ SkadaPerCharDB = {
 						["done"] = 178,
 						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
+=======
+					["Wurkon-Azralon"] = {
+						["taken"] = 116,
+						["done"] = 178,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 363,
+						["done"] = 358,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Lumael"] = {
 						["taken"] = 0,
@@ -9060,10 +17161,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 998,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 1046,
+=======
+				["done"] = 1046,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Commander Springvale"] = {
 				["players"] = {
@@ -9073,6 +17181,7 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["role"] = "DAMAGER",
 					},
+<<<<<<< HEAD
 					["Athorius-Azralon"] = {
 						["taken"] = 2857,
 						["done"] = 11317,
@@ -9084,6 +17193,19 @@ SkadaPerCharDB = {
 						["done"] = 0,
 						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
+=======
+					["Wurkon-Azralon"] = {
+						["taken"] = 4919,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 2857,
+						["done"] = 11317,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Lumael"] = {
 						["taken"] = 115,
@@ -9102,10 +17224,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 21634,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 12464,
+=======
+				["done"] = 12464,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Fel Steed"] = {
 				["players"] = {
@@ -9121,11 +17250,19 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["role"] = "DAMAGER",
 					},
+<<<<<<< HEAD
 					["Wurkon-Azralon"] = {
 						["taken"] = 1067,
 						["done"] = 532,
 						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
+=======
+					["Athorius-Azralon"] = {
+						["taken"] = 1039,
+						["done"] = 2696,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Lumael"] = {
 						["taken"] = 463,
@@ -9133,21 +17270,36 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["role"] = "HEALER",
 					},
+<<<<<<< HEAD
 					["Athorius-Azralon"] = {
 						["taken"] = 1039,
 						["done"] = 2696,
 						["class"] = "PALADIN",
 						["role"] = "TANK",
+=======
+					["Wurkon-Azralon"] = {
+						["taken"] = 1067,
+						["done"] = 532,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
 				["taken"] = 7434,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 6861,
+=======
+				["done"] = 6861,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Lord Walden"] = {
 				["players"] = {
@@ -9157,6 +17309,7 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
+<<<<<<< HEAD
 					["Wurkon-Azralon"] = {
 						["taken"] = 3838,
 						["done"] = 3038,
@@ -9168,6 +17321,19 @@ SkadaPerCharDB = {
 						["done"] = 7224,
 						["class"] = "PALADIN",
 						["role"] = "TANK",
+=======
+					["Athorius-Azralon"] = {
+						["taken"] = 3969,
+						["done"] = 7224,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 3838,
+						["done"] = 3038,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Lumael"] = {
 						["taken"] = 1052,
@@ -9186,10 +17352,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 26702,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 17075,
+=======
+				["done"] = 17075,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Spitebone Skeleton"] = {
 				["players"] = {
@@ -9199,6 +17372,7 @@ SkadaPerCharDB = {
 						["class"] = "MAGE",
 						["role"] = "DAMAGER",
 					},
+<<<<<<< HEAD
 					["Athorius-Azralon"] = {
 						["taken"] = 4050,
 						["done"] = 5584,
@@ -9210,6 +17384,19 @@ SkadaPerCharDB = {
 						["done"] = 399,
 						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
+=======
+					["Wurkon-Azralon"] = {
+						["taken"] = 3731,
+						["done"] = 399,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+					},
+					["Athorius-Azralon"] = {
+						["taken"] = 4050,
+						["done"] = 5584,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Lumael"] = {
 						["taken"] = 1324,
@@ -9228,10 +17415,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 22419,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 7287,
+=======
+				["done"] = 7287,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Baron Silverlaine"] = {
 				["players"] = {
@@ -9241,6 +17435,7 @@ SkadaPerCharDB = {
 						["class"] = "SHAMAN",
 						["role"] = "DAMAGER",
 					},
+<<<<<<< HEAD
 					["Wurkon-Azralon"] = {
 						["taken"] = 3820,
 						["done"] = 1880,
@@ -9252,6 +17447,19 @@ SkadaPerCharDB = {
 						["done"] = 8010,
 						["class"] = "PALADIN",
 						["role"] = "TANK",
+=======
+					["Athorius-Azralon"] = {
+						["taken"] = 4568,
+						["done"] = 8010,
+						["class"] = "PALADIN",
+						["role"] = "TANK",
+					},
+					["Wurkon-Azralon"] = {
+						["taken"] = 3820,
+						["done"] = 1880,
+						["class"] = "WARRIOR",
+						["role"] = "DAMAGER",
+>>>>>>> parent of 76f5add1... addon updates
 					},
 					["Lumael"] = {
 						["taken"] = 0,
@@ -9270,10 +17478,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 27277,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 19971,
+=======
+				["done"] = 19971,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Wolf Master Nandos"] = {
 				["players"] = {
@@ -9300,10 +17515,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 1208,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 2295,
+=======
+				["done"] = 2295,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Hezrul Bloodmark"] = {
 				["players"] = {
@@ -9324,10 +17546,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 2287,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 164,
+=======
+				["done"] = 164,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Savannah Huntress"] = {
 				["players"] = {
@@ -9342,10 +17571,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 904,
+<<<<<<< HEAD
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
 				["done"] = 340,
+=======
+				["done"] = 340,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+>>>>>>> parent of 76f5add1... addon updates
 			},
 			["Theramore Deck Hand"] = {
 				["players"] = {
@@ -9360,10 +17596,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 307,
+<<<<<<< HEAD
 				["done"] = 333,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
+=======
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 333,
+>>>>>>> parent of 76f5add1... addon updates
 			},
 		},
 		["power"] = {

@@ -142,7 +142,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Gangus-Runetotem"] = {
+	["Jingojaggot-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -156,7 +156,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Jingojaggot-ArgentDawn"] = {
+	["Gangus-Runetotem"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -177,14 +177,14 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Sinh-Dalaran"] = {
+	["Shanyt-Zul'jin"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
 		["FilterType"] = {
 		},
 	},
-	["Shanyt-Zul'jin"] = {
+	["Sinh-Dalaran"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -214,7 +214,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Dialdaas-Darkspear"] = {
+	["Bathal-ArgentDawn"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -222,7 +222,7 @@ VWQL = {
 		},
 	},
 	["DisableRewardIcons"] = true,
-	["Bathal-ArgentDawn"] = {
+	["Dialdaas-Darkspear"] = {
 		["Filter"] = 63,
 		["Quests"] = {
 		},

@@ -28,6 +28,61 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 		},
 	},
+<<<<<<< HEAD
+=======
+	["Dalaran"] = {
+		["Malivant"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Beeronimo"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["Tynster"] = {
+			["faction"] = "Alliance",
+			["class"] = "PRIEST",
+		},
+		["Thromar"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+		["Tyriinid"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Shaewong"] = {
+			["faction"] = "Neutral",
+			["class"] = "MONK",
+		},
+		["Sinh"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Narisaric"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["Brewnheimer"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Dialdaas"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+	},
+>>>>>>> parent of 76f5add1... addon updates
 	["Zul'jin"] = {
 		["Tyrannithal"] = {
 			["faction"] = "Horde",
@@ -82,6 +137,7 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 	},
+<<<<<<< HEAD
 	["Dalaran"] = {
 		["Malivant"] = {
 			["faction"] = "Alliance",
@@ -134,6 +190,8 @@ MasterPlanAG = {
 			["class"] = "PALADIN",
 		},
 	},
+=======
+>>>>>>> parent of 76f5add1... addon updates
 	["Argent Dawn"] = {
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",
@@ -172,13 +230,21 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Shanyt"] = {
+<<<<<<< HEAD
 			["lastCacheTime"] = 1535161758,
+=======
+			["class"] = "WARRIOR",
+>>>>>>> parent of 76f5add1... addon updates
 			["summary"] = {
 				["lastOilTime"] = 1535150185,
 				["tt2"] = 1534037743,
 				["tt3"] = 1534468063,
+<<<<<<< HEAD
 				["tt1"] = 1535153073,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 				["ti1"] = 118531,
+				["tt1"] = 1533940261,
 				["ti3"] = 127854,
 				["inProgress"] = {
 					[276] = 1535186174,
@@ -193,11 +259,17 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["faction"] = "Horde",
+			["curOil"] = 60775,
 			["cacheSize"] = 1000,
+<<<<<<< HEAD
 			["class"] = "WARRIOR",
 			["curRes"] = 6946,
 			["curOil"] = 61420,
+=======
+			["lastCacheTime"] = 1535082618,
+			["curRes"] = 7045,
+			["faction"] = "Horde",
+>>>>>>> parent of 76f5add1... addon updates
 		},
 		["Shaekhan"] = {
 			["class"] = "MONK",

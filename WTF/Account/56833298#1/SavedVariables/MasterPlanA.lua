@@ -42,38 +42,47 @@ MasterPlanAG = {
 			["class"] = "MONK",
 		},
 		["Shanyt"] = {
-			["curOil"] = 61420,
+			["faction"] = "Horde",
 			["summary"] = {
+<<<<<<< HEAD
 				["lastOilTime"] = 1535150185,
+=======
+				["lastOilTime"] = 1535082634,
+>>>>>>> parent of 76f5add1... addon updates
 				["ti2"] = 122486,
 				["inProgress"] = {
-					[276] = 1535186174,
-					[126] = 1535164567,
-					[444] = 1535164563,
-					[328] = 1535178959,
-					[733] = 1535151983,
-					[189] = 1535152865,
-					[745] = 1535214985,
-					[394] = 1535178961,
-					[130] = 1535157369,
+					[302] = 1535097521,
+					[745] = 1535147434,
+					[538] = 1535104727,
+					[677] = 1535093908,
 				},
 				["ti3"] = 127854,
+<<<<<<< HEAD
 				["tt1"] = 1535153073,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 				["ti1"] = 118531,
+				["tt1"] = 1533940261,
 				["tt3"] = 1534468063,
 				["tt2"] = 1534037743,
 			},
-			["faction"] = "Horde",
+			["curOil"] = 60775,
 			["cacheSize"] = 1000,
+<<<<<<< HEAD
 			["lastCacheTime"] = 1535161758,
 			["curRes"] = 6946,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 			["class"] = "WARRIOR",
+			["curRes"] = 7045,
+			["lastCacheTime"] = 1535082618,
 		},
 		["Fantastiburo"] = {
 			["class"] = "DRUID",
 			["faction"] = "Horde",
 		},
 	},
+<<<<<<< HEAD
 	["Darkspear"] = {
 		["Shathiel"] = {
 			["class"] = "MAGE",
@@ -92,6 +101,8 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 	},
+=======
+>>>>>>> parent of 76f5add1... addon updates
 	["Zul'jin"] = {
 		["Tyrannithal"] = {
 			["class"] = "WARRIOR",
@@ -180,6 +191,27 @@ MasterPlanAG = {
 			["faction"] = "Neutral",
 		},
 	},
+<<<<<<< HEAD
+=======
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
+		["Dialdaas"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Serbitechna"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Brewnheimer"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Alliance",
+		},
+	},
+>>>>>>> parent of 76f5add1... addon updates
 	["Runetotem"] = {
 		["Migimong"] = {
 			["class"] = "ROGUE",

@@ -11,7 +11,7 @@ PetTracker_Sets = {
 			"261ee06e24009f0000064BC4B1e19c5820a30000064BC5B1e28815317f0000064BC5EC", -- [1]
 		},
 	},
-	["RivalSearch"] = "",
 	["RivalHistory"] = {
 	},
+	["RivalSearch"] = "",
 }

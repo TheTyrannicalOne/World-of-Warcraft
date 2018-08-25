@@ -90,8 +90,8 @@ VUHDO_GLOBAL_ICONS = {
 	["Glossy"] = "Interface\\AddOns\\VuhDo\\Images\\icon_white_square",
 	["Alliance Flag"] = 255130,
 	["Spirit Mend"] = "",
+	["244729"] = 133009,
 	["262313"] = 538518,
-	["248396"] = 1778231,
 	["Frenzied Regeneration"] = "",
 	["244172"] = 135740,
 	["250669"] = 1778229,
@@ -136,15 +136,23 @@ VUHDO_GLOBAL_ICONS = {
 	["Power Word: Barrier"] = "",
 	["265662"] = 1386549,
 	["267821"] = 892832,
+<<<<<<< HEAD
 	["Tranquility"] = "",
 	["Might of Ursoc"] = "",
 	["Hand of Sacrifice"] = 135966,
 	["Ardent Defender"] = "",
 	["246706"] = 136194,
+=======
+	["Wrack"] = "",
+	["Might of Ursoc"] = "",
+	["Hand of Sacrifice"] = 135966,
+	["Ardent Defender"] = "",
+	["Tranquility"] = "",
+>>>>>>> parent of 76f5add1... addon updates
 	["Astral Shift"] = "",
 	["245050"] = 136175,
 	["Hand of Protection"] = "",
-	["Wrack"] = "",
+	["246706"] = 136194,
 	["Dark Regeneration"] = "",
 	["247641"] = 132887,
 	["248815"] = 429590,
@@ -164,7 +172,11 @@ VUHDO_GLOBAL_ICONS = {
 	["244094"] = 1029009,
 	["Bone Shield"] = 458717,
 	["244748"] = 606542,
+<<<<<<< HEAD
 	["244729"] = 133009,
+=======
+	["248396"] = 1778231,
+>>>>>>> parent of 76f5add1... addon updates
 	["Intervene"] = "",
 	["Thirds: Five"] = "Interface\\AddOns\\VuhDo\\Images\\third_five",
 	["Cauterize"] = 252268,

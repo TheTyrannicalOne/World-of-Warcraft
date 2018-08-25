@@ -174,10 +174,20 @@ SkadaDB = {
 				{
 					["barheight"] = 22,
 					["barmax"] = 7,
+<<<<<<< HEAD
 					["barslocked"] = true,
 					["y"] = 39.4273262023926,
 					["barfont"] = "ABF",
 					["barfontsize"] = 15,
+=======
+					["barwidth"] = 188,
+					["barfontsize"] = 15,
+					["y"] = 39.4273262023926,
+					["barfont"] = "ABF",
+					["barslocked"] = true,
+					["x"] = -25.509765625,
+					["point"] = "BOTTOMRIGHT",
+>>>>>>> parent of 76f5add1... addon updates
 					["mode"] = "DPS",
 					["spark"] = false,
 					["bartexture"] = "Tukui",
@@ -432,12 +442,22 @@ SkadaDB = {
 					["barfontsize"] = 15,
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
+<<<<<<< HEAD
 					["barslocked"] = true,
 					["barfont"] = "ABF",
 					["point"] = "BOTTOMRIGHT",
+=======
+					["barfontsize"] = 15,
+>>>>>>> parent of 76f5add1... addon updates
 					["mode"] = "DPS",
 					["bartexture"] = "Tukui",
+<<<<<<< HEAD
 					["spark"] = false,
+=======
+					["barwidth"] = 188,
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
+>>>>>>> parent of 76f5add1... addon updates
 				}, -- [1]
 			},
 			["versions"] = {

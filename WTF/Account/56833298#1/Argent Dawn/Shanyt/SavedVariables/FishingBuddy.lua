@@ -19,12 +19,16 @@ FishingBuddy_Player = {
 		["UseTuskarrSpear"] = true,
 		["FishingPetBuddies"] = -3,
 		["OverWalking"] = true,
-		["AlwaysLure"] = true,
+		["EnhanceFishingSounds"] = true,
 		["UseBladeboneHook"] = true,
 		["EnhancePools"] = true,
 		["AutoLoot"] = true,
+<<<<<<< HEAD
 		["EnhanceFishingSounds"] = true,
+=======
+>>>>>>> parent of 76f5add1... addon updates
 		["STVTimer"] = true,
+		["AlwaysLure"] = true,
 		["EasyLures"] = true,
 		["SpecialBobbers"] = -2,
 		["EasyCastKeys"] = 1,

@@ -26,11 +26,11 @@ Prat3CharDB = {
 	},
 }
 Prat3HighCPUPerCharDB = {
-	["time"] = 1535150039,
+	["time"] = 1535087940,
 	["scrollback"] = {
 		["ChatFrame1"] = {
 			{
-				"|cff979797[01:16:09]|r|c00000000|r You receive item: |cff1eff00|Hitem:9747::::::::32:62::27:1:1695:::|h[Simple Britches of the Fireflash]|h|r.", -- [1]
+				"|cff979797[01:16:09]|r|c00000000|r You receive item: |cff1eff00|Hitem:2034::::::::32:62:512:1:1:4002:25:::|h[Scholarly Robes]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -40,7 +40,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [1]
 			{
-				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:14364::::::::32:62:512:28:1:3831:20:::|h[Mystic's Slippers]|h|r.", -- [1]
+				"|cff979797[01:16:09]|r|c00000000|r You receive item: |cff1eff00|Hitem:7354::::::::32:62:::1:1707:::|h[Elder's Boots of the Aurora]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -50,7 +50,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [2]
 			{
-				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:14122::::::::32:62::27:1:1693:::|h[Ritual Bands of the Fireflash]|h|r.", -- [1]
+				"|cff979797[01:16:09]|r|c00000000|r You receive item: |cff1eff00|Hitem:9747::::::::32:62::27:1:1695:::|h[Simple Britches of the Fireflash]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -60,7 +60,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [3]
 			{
-				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:9772::::::::32:62::1:1:1708:::|h[Greenweave Leggings of the Aurora]|h|r.", -- [1]
+				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:14364::::::::32:62:512:28:1:3831:20:::|h[Mystic's Slippers]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -70,7 +70,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [4]
 			{
-				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:6512::::::::32:62::27:1:1679:::|h[Disciple's Robe of the Quickblade]|h|r.", -- [1]
+				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:14122::::::::32:62::27:1:1693:::|h[Ritual Bands of the Fireflash]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -80,7 +80,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [5]
 			{
-				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:2970::::::::32:62:512:26:1:3829:16:::|h[Spellbinder Pants]|h|r.", -- [1]
+				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:9772::::::::32:62::1:1:1708:::|h[Greenweave Leggings of the Aurora]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -90,7 +90,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [6]
 			{
-				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:2583::::::::32:62::::::|h[Woolen Boots]|h|r.", -- [1]
+				"|cff979797[01:16:10]|r|c00000000|r You receive item: |cff1eff00|Hitem:6512::::::::32:62::27:1:1679:::|h[Disciple's Robe of the Quickblade]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -100,7 +100,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [7]
 			{
-				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:9747::::::::32:62::54:1:1708:::|h[Simple Britches of the Aurora]|h|r.", -- [1]
+				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:2970::::::::32:62:512:26:1:3829:16:::|h[Spellbinder Pants]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -110,7 +110,7 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [8]
 			{
-				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:2958::::::::32:62:512:25:1:3828:8:::|h[Journeyman's Pants]|h|r.", -- [1]
+				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:2583::::::::32:62::::::|h[Woolen Boots]|h|r.", -- [1]
 				0, -- [2]
 				0.666666686534882, -- [3]
 				0, -- [4]
@@ -120,6 +120,26 @@ Prat3HighCPUPerCharDB = {
 				2, -- [8]
 			}, -- [9]
 			{
+				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:9747::::::::32:62::54:1:1708:::|h[Simple Britches of the Aurora]|h|r.", -- [1]
+				0, -- [2]
+				0.666666686534882, -- [3]
+				0, -- [4]
+				28, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [10]
+			{
+				"|cff979797[01:16:11]|r|c00000000|r You receive item: |cff1eff00|Hitem:2958::::::::32:62:512:25:1:3828:8:::|h[Journeyman's Pants]|h|r.", -- [1]
+				0, -- [2]
+				0.666666686534882, -- [3]
+				0, -- [4]
+				28, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [11]
+			{
 				"|cff979797[01:16:13]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Saltysleen:5872:CHANNEL:2|h|cffff7c0aSaltysleen|r|h|cffd8d8d8]|r: why can't I transmog my legion artifact feral druid forms? I only have the red mage tower one not the blue", -- [1]
 				1, -- [2]
 				0.752941250801086, -- [3]
@@ -128,7 +148,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				156, -- [8]
-			}, -- [10]
+			}, -- [12]
 			{
 				"|cff979797[01:16:18]|r|c00000000|r |cffff80ff|Htransmogappearance:2000|h[Blazing Wand]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -138,7 +158,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [11]
+			}, -- [13]
 			{
 				"|cff979797[01:16:21]|r|c00000000|r |cffff80ff|Htransmogappearance:3086|h[Dire Wand]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -148,7 +168,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [12]
+			}, -- [14]
 			{
 				"|cff979797[01:16:22]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Loroh:5875:CHANNEL:2|h|cffff7c0aLoroh|r|h|cffd8d8d8]|r: wtb |cffa335ee|Hitem:163944::::::::120:102::54:3:43:1472:4786:::|h[Waatah's Double-Knotted Cord]|h|r", -- [1]
 				1, -- [2]
@@ -158,7 +178,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				158, -- [8]
-			}, -- [13]
+			}, -- [15]
 			{
 				"|cff979797[01:16:24]|r|c00000000|r |cffff80ff|Htransmogappearance:5146|h[Ritual Belt]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -168,7 +188,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [14]
+			}, -- [16]
 			{
 				"|cff979797[01:16:25]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Volkanik-Zul'jin:5877:CHANNEL:2|h|cff0070ddVolkanik|r|h|cffd8d8d8]|r: WTB |cff1eff00|Hitem:152510::::::::120:263::::::|h[Anchor Weed]|h|r 325g ea", -- [1]
 				1, -- [2]
@@ -178,7 +198,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				38, -- [8]
-			}, -- [15]
+			}, -- [17]
 			{
 				"|cff979797[01:16:27]|r|c00000000|r |cffff80ff|Htransmogappearance:1188|h[Barbaric Cloth Boots]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -188,7 +208,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [16]
+			}, -- [18]
 			{
 				"|cff979797[01:16:30]|r|c00000000|r |cffff80ff|Htransmogappearance:552|h[Scholarly Robes]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -198,7 +218,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [17]
+			}, -- [19]
 			{
 				"|cff979797[01:16:34]|r|c00000000|r |cffff80ff|Htransmogappearance:2759|h[Elder's Boots]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -208,7 +228,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [18]
+			}, -- [20]
 			{
 				"|cff979797[01:16:38]|r|c00000000|r |cffff80ff|Htransmogappearance:3415|h[Simple Britches]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -218,7 +238,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [19]
+			}, -- [21]
 			{
 				"|cff979797[01:16:41]|r|c00000000|r |cffff80ff|Htransmogappearance:5349|h[Mystic's Slippers]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -228,7 +248,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [20]
+			}, -- [22]
 			{
 				"|cff979797[01:16:45]|r|c00000000|r |cffff80ff|Htransmogappearance:5137|h[Ritual Bands]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -238,7 +258,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [21]
+			}, -- [23]
 			{
 				"|cff979797[01:16:45]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Cpthamp:5884:CHANNEL:2|h|cffa330c9Cpthamp|r|h|cffd8d8d8]|r: WTS BfA greens 200g", -- [1]
 				1, -- [2]
@@ -248,7 +268,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				160, -- [8]
-			}, -- [22]
+			}, -- [24]
 			{
 				"|cff979797[01:16:47]|r|c00000000|r |cffff80ff|Htransmogappearance:3440|h[Greenweave Leggings]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -258,7 +278,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [23]
+			}, -- [25]
 			{
 				"|cff979797[01:16:49]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Husheo-Zul'jin:5886:CHANNEL:2|h|cffff7c0aHusheo|r|h|cffd8d8d8]|r: WTB Tidespray Linen =8g/ea (need 20k ) , COD all u have", -- [1]
 				1, -- [2]
@@ -268,7 +288,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				24, -- [8]
-			}, -- [24]
+			}, -- [26]
 			{
 				"|cff979797[01:16:49]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Husheo-Zul'jin:5887:CHANNEL:2|h|cffff7c0aHusheo|r|h|cffd8d8d8]|r: WTS BFA Green/Blue = 275 /ea ( have 3000+ ) ,Mail for me how many items u want . |cffffffff<|r|cff00ff00/AFK|r|cffffffff>|r", -- [1]
 				1, -- [2]
@@ -278,7 +298,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				24, -- [8]
-			}, -- [25]
+			}, -- [27]
 			{
 				"|cff979797[01:16:50]|r|c00000000|r |cffff80ff|Htransmogappearance:2445|h[Disciple's Robe]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -288,7 +308,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [26]
+			}, -- [28]
 			{
 				"|cff979797[01:16:52]|r|c00000000|r |Hchannel:channel:2|h[2] |h<Busy>|cffd8d8d8[|r|Hplayer:Birkbrez-Zul'jin:5889:CHANNEL:2|h|cff0070ddBirkbrez|r|h|cffd8d8d8]|r:  >>30% OFF|cffffffff<|r|cff00ff00<WTS Cheap&Nice 355 Boe Gears, All ilvl350/355 Weapon& Trinket& Finger&back&herb&potion& 8/10 mythic carry&everything, ilvl 350 Class BOE Package>|r|cffffffff>|r 30% OFF<< PST!", -- [1]
 				1, -- [2]
@@ -298,7 +318,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				26, -- [8]
-			}, -- [27]
+			}, -- [29]
 			{
 				"|cff979797[01:16:53]|r|c00000000|r |cffff80ff|Htransmogappearance:1031|h[Spellbinder Pants]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -308,7 +328,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [28]
+			}, -- [30]
 			{
 				"|cff979797[01:16:56]|r|c00000000|r |cffff80ff|Htransmogappearance:884|h[Woolen Boots]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -318,7 +338,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [29]
+			}, -- [31]
 			{
 				"|cff979797[01:16:58]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Stabcentral-Zul'jin:5893:CHANNEL:2|h|cfffff468Stabcentral|r|h|cffd8d8d8]|r: WTB |cffffffff|Hitem:152541::::::::120:260::::::|h[Coarse Leather]|h|r IN BULK", -- [1]
 				1, -- [2]
@@ -328,7 +348,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				80, -- [8]
-			}, -- [30]
+			}, -- [32]
 			{
 				"|cff979797[01:16:59]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Icé:5895:CHANNEL:2|h|cffff7c0aIcé|r|h|cffd8d8d8]|r: You can't? I can with my blue mog", -- [1]
 				1, -- [2]
@@ -338,7 +358,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				162, -- [8]
-			}, -- [31]
+			}, -- [33]
 			{
 				"|cff979797[01:17:02]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Przo-Zul'jin:5896:CHANNEL:2|h|cfffff468Przo|r|h|cffd8d8d8]|r: WTS |cffa335ee|Hitem:159128::::::::120:259::13::::|h[Darkmoon Deck: Blockades]|h|r & |cffa335ee|Hitem:159126::::::::120:259::13::::|h[Darkmoon Deck: Squalls]|h|r", -- [1]
 				1, -- [2]
@@ -348,7 +368,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				12, -- [8]
-			}, -- [32]
+			}, -- [34]
 			{
 				"|cff979797[01:17:02]|r|c00000000|r |cffff80ff|Htransmogappearance:1019|h[Journeyman's Pants]|h|r has been added to your appearance collection.", -- [1]
 				1, -- [2]
@@ -358,7 +378,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				138, -- [7]
 				139, -- [8]
-			}, -- [33]
+			}, -- [35]
 			{
 				"|cff979797[01:17:11]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Tegami-Zul'jin:5899:CHANNEL:2|h|cff3fc6eaTegami|r|h|cffd8d8d8]|r: LFW |cffffd000|Htrade:Player-61-0A023A80:195096:333|h[Enchanting]|h|r your mats.  Paying 1k gold for skill up", -- [1]
 				1, -- [2]
@@ -368,7 +388,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				144, -- [8]
-			}, -- [34]
+			}, -- [36]
 			{
 				"|cff979797[01:17:13]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Kadrix-Zul'jin:5901:CHANNEL:2|h|cffc41e3aKadrix|r|h|cffd8d8d8]|r: WTB Anchor weed 300g/ea tidespray linen 10g/ea all bfa herbs 40g/ea in bulk COD or PST", -- [1]
 				1, -- [2]
@@ -378,7 +398,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				20, -- [8]
-			}, -- [35]
+			}, -- [37]
 			{
 				"|cff979797[01:17:18]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Neffilite-Zul'jin:5907:CHANNEL:2|h|cff00ff96Neffilite|r|h|cffd8d8d8]|r: |cffffffff<|r|cff00ff00<BUYING ORE>|r|cffffffff>|r |cffffffff|Hitem:152512::::::::110:269::::::|h[Monelite Ore]|h|r 30g/each + |cffffffff|Hitem:152579::::::::110:269::::::|h[Storm Silver Ore]|h|r 40g/each! Mail me with 'Cash on Delivery' (CoD) or |cffffff00|Hinvplr:Neffilite-Zul'jin|h[invite]|h|r me to a group!", -- [1]
 				1, -- [2]
@@ -388,7 +408,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				18, -- [8]
-			}, -- [36]
+			}, -- [38]
 			{
 				"|cff979797[01:17:41]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Volkanik-Zul'jin:5922:CHANNEL:2|h|cff0070ddVolkanik|r|h|cffd8d8d8]|r: WTB |cff1eff00|Hitem:152510::::::::120:263::::::|h[Anchor Weed]|h|r 325g ea", -- [1]
 				1, -- [2]
@@ -398,7 +418,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				38, -- [8]
-			}, -- [37]
+			}, -- [39]
 			{
 				"|cff979797[01:17:43]|r|c00000000|r |Hchannel:channel:2|h[2] |h<Busy>|cffd8d8d8[|r|Hplayer:Birkbrez-Zul'jin:5924:CHANNEL:2|h|cff0070ddBirkbrez|r|h|cffd8d8d8]|r:  >>30% OFF|cffffffff<|r|cff00ff00<WTS Cheap&Nice 355 Boe Gears, All ilvl350/355 Weapon& Trinket& Finger&back&herb&potion& 8/10 mythic carry&everything, ilvl 350 Class BOE Package>|r|cffffffff>|r 30% OFF<< PST!", -- [1]
 				1, -- [2]
@@ -408,7 +428,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				26, -- [8]
-			}, -- [38]
+			}, -- [40]
 			{
 				"|cff979797[01:17:49]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Husheo-Zul'jin:5930:CHANNEL:2|h|cffff7c0aHusheo|r|h|cffd8d8d8]|r: WTB Tidespray Linen =8g/ea (need 20k ) , COD all u have", -- [1]
 				1, -- [2]
@@ -418,7 +438,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				24, -- [8]
-			}, -- [39]
+			}, -- [41]
 			{
 				"|cff979797[01:17:49]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Husheo-Zul'jin:5931:CHANNEL:2|h|cffff7c0aHusheo|r|h|cffd8d8d8]|r: WTS BFA Green/Blue = 275 /ea ( have 3000+ ) ,Mail for me how many items u want . |cffffffff<|r|cff00ff00/AFK|r|cffffffff>|r", -- [1]
 				1, -- [2]
@@ -428,7 +448,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				24, -- [8]
-			}, -- [40]
+			}, -- [42]
 			{
 				"|cff979797[01:17:50]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Cpthamp-Zul'jin:5932:CHANNEL:2|h|cffa330c9Cpthamp|r|h|cffd8d8d8]|r: WTS BfA greens 200g", -- [1]
 				1, -- [2]
@@ -438,7 +458,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				160, -- [8]
-			}, -- [41]
+			}, -- [43]
 			{
 				"|cff979797[01:17:50]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Przo-Zul'jin:5934:CHANNEL:2|h|cfffff468Przo|r|h|cffd8d8d8]|r: WTS |cffa335ee|Hitem:159128::::::::120:259::13::::|h[Darkmoon Deck: Blockades]|h|r & |cffa335ee|Hitem:159126::::::::120:259::13::::|h[Darkmoon Deck: Squalls]|h|r", -- [1]
 				1, -- [2]
@@ -448,7 +468,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				12, -- [8]
-			}, -- [42]
+			}, -- [44]
 			{
 				"|cff979797[01:18:23]|r|c00000000|r |Hchannel:channel:2|h[2] |h|cffd8d8d8[|r|Hplayer:Avatargodly-Zul'jin:5954:CHANNEL:2|h|cffff7c0aAvatargodly|r|h|cffd8d8d8]|r: WTB bfa ore 40g each |cffffff00|Hinvplr:Avatargodly-Zul'jin|h[invite]|h|r or cod it", -- [1]
 				1, -- [2]
@@ -458,7 +478,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				40, -- [8]
-			}, -- [43]
+			}, -- [45]
 			{
 				"|cff979797[01:18:30]|r|c00000000|r |Hchannel:channel:1|h[1] |h Changed Channel: |Hchannel:1|h[1. General - Northern Barrens]|h", -- [1]
 				1, -- [2]
@@ -468,7 +488,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				3, -- [7]
 				4, -- [8]
-			}, -- [44]
+			}, -- [46]
 			{
 				"|cff979797[01:18:30]|r|c00000000|r |Hchannel:channel:2|h[2] |h Left Channel: |Hchannel:2|h[2. Trade - City]|h", -- [1]
 				1, -- [2]
@@ -478,7 +498,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				11, -- [7]
 				164, -- [8]
-			}, -- [45]
+			}, -- [47]
 			{
 				"|cff979797[01:18:30]|r|c00000000|r |Hchannel:channel:3|h[3] |h Changed Channel: |Hchannel:3|h[3. LocalDefense - Northern Barrens]|h", -- [1]
 				1, -- [2]
@@ -488,7 +508,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				6, -- [7]
 				7, -- [8]
-			}, -- [46]
+			}, -- [48]
 			{
 				"|cff979797[01:19:00]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Northern Barrens]|h", -- [1]
 				1, -- [2]
@@ -498,7 +518,7 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				3, -- [7]
 				4, -- [8]
-			}, -- [47]
+			}, -- [49]
 			{
 				"|cff979797[01:19:00]|r|c00000000|r |Hchannel:channel:3|h[3] |h Left Channel: |Hchannel:3|h[3. LocalDefense - Northern Barrens]|h", -- [1]
 				1, -- [2]
@@ -508,26 +528,6 @@ Prat3HighCPUPerCharDB = {
 				false, -- [6]
 				6, -- [7]
 				7, -- [8]
-			}, -- [48]
-			{
-				"|cff979797[18:33:59]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Northern Barrens]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [49]
-			{
-				"|cff979797[18:33:59]|r|c00000000|r |Hchannel:channel:3|h[3] |h Left Channel: |Hchannel:3|h[3. LocalDefense - Northern Barrens]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				69, -- [5]
-				false, -- [6]
-				4, -- [7]
-				5, -- [8]
 			}, -- [50]
 		},
 	},

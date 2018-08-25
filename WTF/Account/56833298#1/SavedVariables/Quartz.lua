@@ -193,7 +193,7 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -213,7 +213,7 @@ Quartz3DB = {
 					["x"] = 869,
 					["w"] = 218,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
@@ -359,7 +359,7 @@ Quartz3DB = {
 				["Towel-Monk"] = {
 					["x"] = 882.395558221442,
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["x"] = 882.395558221442,
 				},
 				["Tynster - Dalaran"] = {
@@ -371,7 +371,7 @@ Quartz3DB = {
 				["Cowtastraphy - Argent Dawn"] = {
 					["x"] = 882.395558221442,
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["x"] = 882.395558221442,
 				},
 				["Default"] = {
@@ -781,15 +781,15 @@ Quartz3DB = {
 					["font"] = "weezerfont",
 					["texture"] = "Tukui",
 				},
-				["Vadder - Argent Dawn"] = {
+				["Thromar - Dalaran"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
 					["fontsize"] = 19,
-					["font"] = "weezerfont",
 					["x"] = 752.432429475146,
-					["nametextx"] = 14,
 					["border"] = "RothSquare",
+					["nametextx"] = 14,
+					["font"] = "weezerfont",
 					["texture"] = "Tukui",
 				},
 				["Tynster - Dalaran"] = {
@@ -825,15 +825,15 @@ Quartz3DB = {
 					["x"] = 752.432429475146,
 					["texture"] = "Tukui",
 				},
-				["Thromar - Dalaran"] = {
+				["Vadder - Argent Dawn"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
 					["fontsize"] = 19,
-					["x"] = 752.432429475146,
-					["border"] = "RothSquare",
-					["nametextx"] = 14,
 					["font"] = "weezerfont",
+					["x"] = 752.432429475146,
+					["nametextx"] = 14,
+					["border"] = "RothSquare",
 					["texture"] = "Tukui",
 				},
 				["Default"] = {
@@ -878,6 +878,11 @@ Quartz3DB = {
 					["h"] = 37,
 					["fontsize"] = 19,
 					["font"] = "weezerfont",
+<<<<<<< HEAD
+=======
+					["x"] = 752.432429475146,
+					["nametextx"] = 14,
+>>>>>>> parent of 76f5add1... addon updates
 					["border"] = "RothSquare",
 					["nametextx"] = 14,
 					["x"] = 752.432429475146,
@@ -1509,7 +1514,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Vadder - Argent Dawn"] = {
+		["Thromar - Dalaran"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -1573,7 +1578,7 @@ Quartz3DB = {
 				["Latency"] = false,
 			},
 		},
-		["Thromar - Dalaran"] = {
+		["Vadder - Argent Dawn"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
