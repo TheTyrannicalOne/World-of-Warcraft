@@ -17,14 +17,14 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[35283423] = "Tailoring:Tanithria:Tailoring Trainer:603458",
 					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
 					[39773487] = "Jewelcrafting:Timothy Jones:Jewelcrafting Trainer:603431",
-					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
 					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
+					[52991513] = "Banker:Teller Hanners:Banker:616472",
 					[35412971] = "Leatherworking:Diane Cannings:Leather Armor Expert:603426",
 					[34772858] = "Leatherworking:Thanid Glowergold:Mail Armor Expert:624945",
 					[44582853] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:598403",
 					[65483242] = "Innkeeper:Uda the Beast:Innkeeper:616342",
 					[52471473] = "Banker:Teller Rames:Banker:616471",
-					[52991513] = "Banker:Teller Hanners:Banker:616472",
+					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
 					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
 					[35782854] = "Skinning:Kondal Huntsworn:Skinning Trainer:603457",
 					[52726542] = "Fishing:Marcia Chase:Fishing Trainer & Supplies:612420",
@@ -48,9 +48,9 @@ HandyNotes_SpecialNPCsEtcDB = {
 				},
 				["Dalaran"] = {
 					[45282792] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:165524",
-					[65162389] = "Auctioneer:Reginald Arcfire:Steam-Powered Auctioneer:218631",
 					[44832808] = "Blacksmithing:Orland Schaeffer:Blacksmithing Trainer:169222",
 					[45582846] = "Blacksmithing:Imindril Spearsong:Blacksmithing Trainer:169221",
+					[65162389] = "Auctioneer:Reginald Arcfire:Steam-Powered Auctioneer:218631",
 				},
 				["Silverpine"] = {
 					[42884092] = "Blacksmithing:Guillaume Sorouy:Blacksmithing Trainer:13655",
@@ -96,19 +96,19 @@ HandyNotes_SpecialNPCsEtcDB = {
 				["Zangarmarsh"] = {
 					[31814969] = "Stable:Khalan:Stable Master:98884",
 				},
-				["Durotar"] = {
-					[52014179] = "Stable:Shoja'my:Stable Master:39303",
-					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
+				["Suramar"] = {
+					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
+					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
 				},
 				["Orgrimmar"] = {
 					[67745315] = "Banker:Binzella:Banker:288281",
 					[48788382] = "Banker:Rilgiz:Banker:280658",
 					[37928690] = "Stable:Bezzil:Stable Master:284553",
 					[67885279] = "Banker:Fibi:Banker:288280",
-					[48918360] = "Banker:Perixa:Banker:280662",
+					[38108688] = "Tailoring:Nivi Weavewell:Tailoring Trainer:283993",
 					[67305312] = "Banker:Vink:Banker:288288",
 					[38338643] = "First Aid:Krenk Choplimb:First Aid Trainer:283968",
-					[38108688] = "Tailoring:Nivi Weavewell:Tailoring Trainer:283993",
+					[48918360] = "Banker:Perixa:Banker:280662",
 				},
 				["ArgusSurface"] = {
 					[48787464] = "Innkeeper:High Priestess Ishanah:Innkeeper:1192853",
@@ -119,23 +119,23 @@ HandyNotes_SpecialNPCsEtcDB = {
 				["TimelessIsle"] = {
 					[36424690] = "Innkeeper:Graceful Swan:Innkeeper:472610",
 				},
-				["ShattrathCity"] = {
-					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
-					[48372913] = "Banker:Gromden:Banker:103192",
+				["Durotar"] = {
+					[52014179] = "Stable:Shoja'my:Stable Master:39303",
+					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
 				},
 				["ShadowmoonValley"] = {
 					[29212942] = "Stable:Gedrah:Stable Master:135990",
 					[29653150] = "Blacksmithing:Grutah:Blacksmithing Trainer:103233",
 				},
-				["Suramar"] = {
-					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
-					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
+				["ShattrathCity"] = {
+					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
+					[48372913] = "Banker:Gromden:Banker:103192",
 				},
 				["ValeofEternalBlossoms"] = {
-					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
-					[27846425] = "GuildVault:Shrine of Two Moons:Guild Vault:0",
 					[21584797] = "Banker:Vaultkeeper Shifen:Banker:407910",
 					[22866170] = "Banker:Vaultkeeper Goldpenny:Banker:407909",
+					[59967571] = "Innkeeper:Brewmaster Skye:Innkeeper:405512",
+					[27846425] = "GuildVault:Shrine of Two Moons:Guild Vault:0",
 				},
 			},
 			["dbversion"] = 2,

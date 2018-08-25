@@ -2,12 +2,12 @@
 AllTheThingsPCD = {
 	["FlightPaths"] = {
 		[2126] = 1,
-		[1959] = 1,
 		[1966] = 1,
+		[1959] = 1,
 		[2009] = 1,
-		[2075] = 1,
-		[1957] = 1,
 		[2061] = 1,
+		[1957] = 1,
+		[2075] = 1,
 	},
 	["ItemFilters"] = {
 		true, -- [1]
@@ -64,12 +64,12 @@ AllTheThingsPCD = {
 		[100] = true,
 		[50] = true,
 		[51] = false,
-		[102] = true,
+		[52] = false,
 		[53] = false,
 		[54] = false,
 		[55] = false,
 		[56] = true,
 		[57] = true,
-		[52] = false,
+		[102] = true,
 	},
 }

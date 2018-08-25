@@ -65,6 +65,7 @@ VExRT = {
 		["default_userDuration"] = {
 		},
 		["gnGUIDs"] = {
+			["Shanyt"] = 71,
 		},
 		["NoRaid"] = true,
 		["CDECol"] = {

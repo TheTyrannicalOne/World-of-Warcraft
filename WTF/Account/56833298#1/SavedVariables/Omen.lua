@@ -61,15 +61,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -90,7 +90,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -147,15 +147,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 428.618218069226,
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
+			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -176,7 +176,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -233,11 +233,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionH"] = 196.984932998413,
 			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -258,11 +262,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 428.618218069226,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -319,15 +319,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -348,7 +348,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -405,15 +405,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -434,7 +434,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -491,15 +491,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -520,7 +520,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -577,15 +577,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -606,7 +606,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -663,15 +663,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -692,7 +692,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -749,15 +749,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 428.618218069226,
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
+			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -778,7 +778,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -835,11 +835,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionH"] = 196.984932998413,
 			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -860,11 +864,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 428.618218069226,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -921,15 +921,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -950,7 +950,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1007,11 +1007,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["VGrip1"] = 155.316689874038,
 			["PositionH"] = 196.984932998413,
+			["VGrip1"] = 155.316689874038,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1032,11 +1036,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 428.618218069226,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1093,15 +1093,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1122,7 +1122,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1179,15 +1179,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1208,7 +1208,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1265,15 +1265,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1294,7 +1294,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1351,15 +1351,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1380,7 +1380,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1437,15 +1437,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1466,7 +1466,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1523,15 +1523,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1552,7 +1552,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1609,15 +1609,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1638,7 +1638,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1695,15 +1695,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 428.618218069226,
-			["VGrip1"] = 155.316689874038,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["PositionH"] = 196.984932998413,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
+			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1724,7 +1724,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionH"] = 196.984932998413,
+			["VGrip1"] = 155.316689874038,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1781,15 +1781,11 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionH"] = 196.984924238223,
 			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984924238223,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014660035749,
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 451.131409021275,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1810,7 +1806,11 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionX"] = 451.131409021275,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1867,11 +1867,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
-			["VGrip1"] = 155.316689874038,
 			["PositionH"] = 196.984932998413,
+			["VGrip1"] = 155.316689874038,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1892,11 +1896,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 428.618218069226,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -1953,15 +1953,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -1982,7 +1982,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2125,15 +2125,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2154,7 +2154,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2211,15 +2211,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2240,7 +2240,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2297,15 +2297,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 451.131409021275,
+			["PositionH"] = 196.984924238223,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014660035749,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["VGrip1"] = 155.316689874038,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014660035749,
-			["PositionX"] = 451.131409021275,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2326,7 +2326,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionH"] = 196.984924238223,
+			["VGrip1"] = 155.316689874038,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2383,15 +2383,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2412,7 +2412,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2469,15 +2469,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2498,7 +2498,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2555,15 +2555,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2584,7 +2584,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2641,15 +2641,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 428.618218069226,
-			["VGrip1"] = 155.316689874038,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["PositionH"] = 196.984932998413,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
+			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2670,7 +2670,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionH"] = 196.984932998413,
+			["VGrip1"] = 155.316689874038,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2727,11 +2727,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionH"] = 196.984932998413,
 			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2752,11 +2756,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 428.618218069226,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2813,15 +2813,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2842,93 +2842,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
-			["Bar"] = {
-				["FontSize"] = 13,
-				["FontColor"] = {
-					["b"] = 0.776470588235294,
-					["g"] = 0.776470588235294,
-					["r"] = 0.776470588235294,
-				},
-				["ShowHeadings"] = false,
-				["ShowValue"] = false,
-				["UseClassColors"] = false,
-				["FadeBarColor"] = {
-					["b"] = 0.466666666666667,
-					["g"] = 0.466666666666667,
-					["r"] = 0.466666666666667,
-				},
-				["MyBarColor"] = {
-					["b"] = 0.592156862745098,
-					["g"] = 0.592156862745098,
-					["r"] = 0.592156862745098,
-				},
-				["Texture"] = "Minimalist",
-				["ShowTPS"] = false,
-				["UseTankBarColor"] = true,
-				["AggroBarColor"] = {
-					["b"] = 0.592156862745098,
-					["g"] = 0.592156862745098,
-					["r"] = 0.592156862745098,
-				},
-				["BarColor"] = {
-					["a"] = 0.890000000596047,
-					["b"] = 0.368627450980392,
-					["g"] = 0.368627450980392,
-					["r"] = 0.368627450980392,
-				},
-				["Font"] = "vibrocen",
-				["Height"] = 25,
-				["Spacing"] = 1,
-				["ShowPercent"] = false,
-				["UseMyBarColor"] = true,
-			},
-		},
-		["Thromar - Dalaran"] = {
-			["MinimapIcon"] = {
-				["hide"] = true,
-			},
-			["PositionW"] = 198.88604152751,
-			["NumBars"] = 7,
-			["Shown"] = true,
-			["ShowWith"] = {
-				["Alone"] = true,
-				["Resting"] = true,
-				["UseShowWith"] = false,
-				["HideWhileResting"] = false,
-				["PVP"] = true,
-				["HideInPVP"] = false,
-			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
 			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
-			["Warnings"] = {
-				["Sound"] = false,
-			},
-			["Locked"] = true,
-			["Background"] = {
-				["EdgeSize"] = 9,
-				["BorderTexture"] = "None",
-				["Color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["BorderColor"] = {
-					["a"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["Texture"] = "Solid",
-			},
-			["VGrip1"] = 155.316689874038,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -2985,11 +2899,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["VGrip1"] = 155.316689874038,
 			["PositionH"] = 196.984932998413,
+			["VGrip1"] = 155.316689874038,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3010,11 +2928,93 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
+			["PositionX"] = 428.618218069226,
+			["Bar"] = {
+				["FontSize"] = 13,
+				["FontColor"] = {
+					["b"] = 0.776470588235294,
+					["g"] = 0.776470588235294,
+					["r"] = 0.776470588235294,
+				},
+				["ShowHeadings"] = false,
+				["ShowValue"] = false,
+				["UseClassColors"] = false,
+				["FadeBarColor"] = {
+					["b"] = 0.466666666666667,
+					["g"] = 0.466666666666667,
+					["r"] = 0.466666666666667,
+				},
+				["MyBarColor"] = {
+					["b"] = 0.592156862745098,
+					["g"] = 0.592156862745098,
+					["r"] = 0.592156862745098,
+				},
+				["Texture"] = "Minimalist",
+				["ShowTPS"] = false,
+				["UseTankBarColor"] = true,
+				["AggroBarColor"] = {
+					["b"] = 0.592156862745098,
+					["g"] = 0.592156862745098,
+					["r"] = 0.592156862745098,
+				},
+				["BarColor"] = {
+					["a"] = 0.890000000596047,
+					["b"] = 0.368627450980392,
+					["g"] = 0.368627450980392,
+					["r"] = 0.368627450980392,
+				},
+				["Font"] = "vibrocen",
+				["Height"] = 25,
+				["Spacing"] = 1,
+				["ShowPercent"] = false,
+				["UseMyBarColor"] = true,
+			},
+		},
+		["Thromar - Dalaran"] = {
+			["MinimapIcon"] = {
+				["hide"] = true,
+			},
+			["PositionW"] = 198.88604152751,
+			["NumBars"] = 7,
+			["Shown"] = true,
+			["ShowWith"] = {
+				["Alone"] = true,
+				["Resting"] = true,
+				["UseShowWith"] = false,
+				["HideWhileResting"] = false,
+				["PVP"] = true,
+				["HideInPVP"] = false,
+			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["Warnings"] = {
+				["Sound"] = false,
+			},
+			["Locked"] = true,
+			["Background"] = {
+				["EdgeSize"] = 9,
+				["BorderTexture"] = "None",
+				["Color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["BorderColor"] = {
+					["a"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["Texture"] = "Solid",
+			},
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3071,15 +3071,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3100,7 +3100,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3157,15 +3157,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 428.618218069226,
-			["VGrip1"] = 155.316689874038,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["PositionH"] = 196.984932998413,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
+			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3186,7 +3186,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionH"] = 196.984932998413,
+			["VGrip1"] = 155.316689874038,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3243,15 +3243,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3272,7 +3272,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3329,15 +3329,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 451.131409021275,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014660035749,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984924238223,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014660035749,
-			["PositionX"] = 451.131409021275,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3358,7 +3358,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984924238223,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3415,15 +3415,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 428.618218069226,
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
+			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3444,7 +3444,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3501,15 +3501,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3530,7 +3530,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3587,15 +3587,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3616,7 +3616,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3673,15 +3673,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+			["PositionX"] = 428.618218069226,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3702,7 +3702,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3759,15 +3759,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 451.131409021275,
-			["VGrip1"] = 155.316689874038,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014660035749,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["PositionH"] = 196.984924238223,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014660035749,
+			["PositionX"] = 451.131409021275,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3788,7 +3788,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionH"] = 196.984924238223,
+			["VGrip1"] = 155.316689874038,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -3845,15 +3845,15 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["PositionX"] = 428.618218069226,
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014743744153,
+			["PositionX"] = 428.618218069226,
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -3874,7 +3874,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984932998413,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {

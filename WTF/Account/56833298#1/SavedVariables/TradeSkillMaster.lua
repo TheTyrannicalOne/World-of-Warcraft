@@ -84,22 +84,22 @@ TradeSkillMasterDB = {
 		["i:35948"] = 16000,
 		["i:2325"] = 1000,
 		["i:30183"] = 700000,
-		["i:46784"] = 25,
-		["i:58265"] = 20000,
 		["i:7005"] = 82,
-		["i:4470"] = 38,
+		["i:58265"] = 20000,
+		["i:46784"] = 25,
+		["i:44499"] = 30000000,
 		["i:159"] = 25,
 		["i:2596"] = 120,
+		["i:65892"] = 50000000,
 		["i:38426"] = 30000,
-		["i:3466"] = 2000,
 		["i:85584"] = 17000,
 		["i:35949"] = 8500,
-		["i:44500"] = 15000000,
 		["i:5956"] = 18,
+		["i:44500"] = 15000000,
 		["i:2595"] = 2000,
 		["i:2678"] = 10,
 		["i:85585"] = 27000,
-		["i:44853"] = 25,
+		["i:3371"] = 100,
 		["i:4341"] = 500,
 		["i:67319"] = 328990,
 		["i:6530"] = 100,
@@ -111,7 +111,7 @@ TradeSkillMasterDB = {
 		["i:1179"] = 125,
 		["i:10290"] = 2500,
 		["i:62323"] = 60000,
-		["i:74845"] = 35000,
+		["i:74659"] = 30000,
 		["i:23572"] = 500000,
 		["i:74851"] = 14000,
 		["i:2593"] = 150,
@@ -119,19 +119,19 @@ TradeSkillMasterDB = {
 		["i:4289"] = 50,
 		["i:17196"] = 50,
 		["i:6261"] = 1000,
-		["i:74659"] = 30000,
+		["i:74845"] = 35000,
 		["i:2320"] = 10,
 		["i:2324"] = 25,
 		["i:18567"] = 30000,
 		["i:2901"] = 81,
-		["i:3371"] = 100,
+		["i:44853"] = 25,
 		["i:74660"] = 15000,
 		["i:44855"] = 25,
 		["i:136630"] = 118500,
-		["i:65892"] = 50000000,
+		["i:3466"] = 2000,
 		["i:2605"] = 100,
 		["i:3857"] = 500,
-		["i:44499"] = 30000000,
+		["i:4470"] = 38,
 		["i:46796"] = 25,
 		["i:6217"] = 124,
 		["i:2880"] = 100,
@@ -162,7 +162,7 @@ TradeSkillMasterDB = {
 				["maxQty"] = 10,
 				["relationships"] = {
 				},
-				["maxQtyEnabled"] = false,
+				["keepQty"] = 0,
 				["target"] = "",
 				["restockSources"] = {
 					["guild"] = false,
@@ -170,7 +170,7 @@ TradeSkillMasterDB = {
 				},
 				["ignorePlayer"] = {
 				},
-				["keepQty"] = 0,
+				["maxQtyEnabled"] = false,
 			},
 		},
 		["Auctioning"] = {
@@ -212,11 +212,11 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = 1,
-				["minProfit"] = "100g",
 				["craftPriceMethod"] = "",
-				["maxRestock"] = 3,
 				["ignorePlayer"] = {
 				},
+				["maxRestock"] = 3,
+				["minProfit"] = "100g",
 			},
 		},
 		["Warehousing"] = {
@@ -271,12 +271,24 @@ TradeSkillMasterDB = {
 				["enableSell"] = true,
 			},
 		},
-		["Shopping"] = {
+		["Sniper"] = {
 			["#Default"] = {
-				["evenStacks"] = false,
+				["ignorePlayer"] = {
+				},
 				["ignoreFactionrealm"] = {
 				},
+				["relationships"] = {
+				},
+				["belowPrice"] = "max(vendorsell, ifgt(DBRegionMarketAvg, 250000g, 0.8, ifgt(DBRegionMarketAvg, 100000g, 0.7, ifgt(DBRegionMarketAvg, 50000g, 0.6, ifgt(DBRegionMarketAvg, 25000g, 0.5, ifgt(DBRegionMarketAvg, 10000g, 0.4, ifgt(DBRegionMarketAvg, 5000g, 0.3, ifgt(DBRegionMarketAvg, 2000g, 0.2, ifgt(DBRegionMarketAvg, 1000g, 0.1, 0.05)))))))) * DBRegionMarketAvg)",
+			},
+		},
+		["Shopping"] = {
+			["#Default"] = {
 				["showAboveMaxPrice"] = false,
+				["ignoreFactionrealm"] = {
+				},
+				["relationships"] = {
+				},
 				["maxPrice"] = "1c",
 				["restockQuantity"] = 0,
 				["restockSources"] = {
@@ -287,19 +299,7 @@ TradeSkillMasterDB = {
 				},
 				["ignorePlayer"] = {
 				},
-				["relationships"] = {
-				},
-			},
-		},
-		["Sniper"] = {
-			["#Default"] = {
-				["belowPrice"] = "max(vendorsell, ifgt(DBRegionMarketAvg, 250000g, 0.8, ifgt(DBRegionMarketAvg, 100000g, 0.7, ifgt(DBRegionMarketAvg, 50000g, 0.6, ifgt(DBRegionMarketAvg, 25000g, 0.5, ifgt(DBRegionMarketAvg, 10000g, 0.4, ifgt(DBRegionMarketAvg, 5000g, 0.3, ifgt(DBRegionMarketAvg, 2000g, 0.2, ifgt(DBRegionMarketAvg, 1000g, 0.1, 0.05)))))))) * DBRegionMarketAvg)",
-				["ignorePlayer"] = {
-				},
-				["relationships"] = {
-				},
-				["ignoreFactionrealm"] = {
-				},
+				["evenStacks"] = false,
 			},
 		},
 	},
@@ -385,11 +385,11 @@ TradeSkillMasterDB = {
 				"#Default", -- [1]
 				["override"] = true,
 			},
-			["Shopping"] = {
+			["Sniper"] = {
 				"#Default", -- [1]
 				["override"] = true,
 			},
-			["Sniper"] = {
+			["Shopping"] = {
 				"#Default", -- [1]
 				["override"] = true,
 			},
@@ -513,13 +513,17 @@ TradeSkillMasterDB = {
 		["width"] = 560,
 	},
 	["r@Argent Dawn@internalData@saveTimeExpires"] = "",
-	["g@ @auctioningOptions@matchWhitelist"] = true,
+	["g@ @internalData@taskListUIFrameContext"] = {
+		["topRightY"] = -10,
+		["isOpen"] = true,
+		["topRightX"] = -220,
+		["minimized"] = false,
+	},
 	["g@ @tooltipOptions@prospectTooltip"] = true,
 	["g@ @tooltipOptions@transformTooltip"] = true,
 	["c@Shanyt - Argent Dawn@internalData@auctionSaleHints"] = {
 	},
-	["g@ @userData@destroyingIgnore"] = {
-	},
+	["_version"] = 45,
 	["s@Shanyt - Horde - Argent Dawn@internalData@playerProfessions"] = {
 		["Cooking"] = {
 			["isSecondary"] = true,
@@ -537,12 +541,7 @@ TradeSkillMasterDB = {
 			["maxLevel"] = 150,
 		},
 	},
-	["g@ @internalData@taskListUIFrameContext"] = {
-		["topRightY"] = -10,
-		["isOpen"] = true,
-		["topRightX"] = -220,
-		["minimized"] = false,
-	},
+	["g@ @auctioningOptions@matchWhitelist"] = true,
 	["g@ @destroyingOptions@autoShow"] = true,
 	["g@ @coreOptions@minimapIcon"] = {
 		["minimapPos"] = 220,
@@ -585,7 +584,8 @@ TradeSkillMasterDB = {
 	["g@ @auctioningOptions@confirmCompleteSound"] = "TSM_NO_SOUND",
 	["g@ @mailingOptions@recentlyMailedList"] = {
 	},
-	["_version"] = 45,
+	["g@ @userData@destroyingIgnore"] = {
+	},
 	["g@ @coreOptions@destroyValueSource"] = "dbmarket",
 	["g@ @shoppingOptions@pctSource"] = "dbmarket",
 	["p@Default@userData@items"] = {

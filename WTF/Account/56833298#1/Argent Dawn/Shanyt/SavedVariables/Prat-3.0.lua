@@ -26,7 +26,7 @@ Prat3CharDB = {
 	},
 }
 Prat3HighCPUPerCharDB = {
-	["time"] = 1535171425,
+	["time"] = 1535171738,
 	["scrollback"] = {
 		["ChatFrame1"] = {
 			{
@@ -39,6 +39,26 @@ Prat3HighCPUPerCharDB = {
 				1, -- [7]
 				2, -- [8]
 			}, -- [1]
+			{
+				"|cff979797[00:35:38]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				67, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [2]
+			{
+				"|cff979797[00:35:38]|r|c00000000|r |Hchannel:channel:3|h[3] |h Left Channel: |Hchannel:3|h[3. LocalDefense - Ashenvale]|h", -- [1]
+				1, -- [2]
+				0.752941250801086, -- [3]
+				0.752941250801086, -- [4]
+				69, -- [5]
+				false, -- [6]
+				4, -- [7]
+				5, -- [8]
+			}, -- [3]
 		},
 	},
 }

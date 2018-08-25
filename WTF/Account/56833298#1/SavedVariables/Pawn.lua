@@ -9,8 +9,6 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["ShowSpecIcons"] = true,
-	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"MrRobot\":HUNTER3"] = {
 			["IconTexturePath"] = 461113,
@@ -171,13 +169,13 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
-				["Vadder-Argent Dawn"] = {
-					["Visible"] = true,
-				},
 				["Panboozled-Runetotem"] = {
 					["Visible"] = true,
 				},
 				["Malivant-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Vadder-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 			},
@@ -375,21 +373,6 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "6566b2",
 		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "0070de",
-			["ClassID"] = 7,
-			["LocalizedName"] = "Shaman: Restoration",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a6",
-		},
 		["\"MrRobot\":DEMONHUNTER2"] = {
 			["IconTexturePath"] = 1247265,
 			["PerCharacterOptions"] = {
@@ -405,23 +388,44 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "7a2496",
 		},
-		["\"MrRobot\":PALADIN2"] = {
-			["IconTexturePath"] = 236264,
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
-				["Dialdaas-Darkspear"] = {
+			},
+			["Color"] = "0070de",
+			["ClassID"] = 7,
+			["LocalizedName"] = "Shaman: Restoration",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a6",
+		},
+		["\"MrRobot\":DRUID2"] = {
+			["IconTexturePath"] = 132115,
+			["PerCharacterOptions"] = {
+				["Narisaric-Dalaran"] = {
+					["Visible"] = true,
+				},
+				["Gillbourn-Runetotem"] = {
+					["Visible"] = true,
+				},
+				["Fantastiburo-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "f58cba",
-			["ClassID"] = 2,
-			["LocalizedName"] = "Paladin: Protection",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Color"] = "ff7d0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "Druid: Feral",
+			["DoNotShow1HUpgrades"] = true,
+			["Role"] = "DAMAGER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
 			["SpecID"] = 2,
-			["UnenchantedColor"] = "b7698b",
+			["UnenchantedColor"] = "bf5d07",
 		},
 		["\"MrRobot\":DEATHKNIGHT1"] = {
 			["IconTexturePath"] = 135770,
@@ -588,29 +592,23 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "2f95b0",
 		},
-		["\"MrRobot\":DRUID2"] = {
-			["IconTexturePath"] = 132115,
+		["\"MrRobot\":PALADIN2"] = {
+			["IconTexturePath"] = 236264,
 			["PerCharacterOptions"] = {
-				["Narisaric-Dalaran"] = {
-					["Visible"] = true,
-				},
-				["Gillbourn-Runetotem"] = {
-					["Visible"] = true,
-				},
-				["Fantastiburo-Argent Dawn"] = {
+				["Dialdaas-Darkspear"] = {
 					["Visible"] = true,
 				},
 			},
-			["Color"] = "ff7d0a",
-			["ClassID"] = 11,
-			["LocalizedName"] = "Druid: Feral",
-			["DoNotShow1HUpgrades"] = true,
-			["Role"] = "DAMAGER",
-			["DoNotShow2HUpgrades"] = false,
+			["Color"] = "f58cba",
+			["ClassID"] = 2,
+			["LocalizedName"] = "Paladin: Protection",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
 			["SpecID"] = 2,
-			["UnenchantedColor"] = "bf5d07",
+			["UnenchantedColor"] = "b7698b",
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,
@@ -682,6 +680,8 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
+	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
