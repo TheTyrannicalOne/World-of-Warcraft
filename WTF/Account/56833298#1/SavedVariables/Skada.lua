@@ -176,14 +176,14 @@ SkadaDB = {
 					["barmax"] = 7,
 					["barslocked"] = true,
 					["y"] = 39.4273262023926,
-					["barfont"] = "ABF",
+					["x"] = -25.509765625,
 					["barfontsize"] = 15,
 					["mode"] = "DPS",
 					["spark"] = false,
 					["bartexture"] = "Tukui",
 					["barwidth"] = 188,
 					["point"] = "BOTTOMRIGHT",
-					["x"] = -25.509765625,
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["icon"] = {
@@ -456,13 +456,13 @@ SkadaDB = {
 					["barwidth"] = 188,
 					["barfontsize"] = 15,
 					["y"] = 39.4273262023926,
-					["barfont"] = "ABF",
-					["barslocked"] = true,
 					["x"] = -25.509765625,
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
+					["barslocked"] = true,
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
@@ -474,8 +474,8 @@ SkadaDB = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Fantastiburo - Argent Dawn"] = {

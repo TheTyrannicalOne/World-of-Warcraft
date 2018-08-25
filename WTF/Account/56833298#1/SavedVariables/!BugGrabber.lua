@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 561,
+	["session"] = 565,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Kui_Nameplates\\messages.lua:373: Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.",
@@ -1631,141 +1631,163 @@ BugGrabberDB = {
 			["counter"] = 28,
 		}, -- [214]
 		{
-			["message"] = "Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:270: attempt to call global 'SetMapToCurrentZone' (a nil value)",
-			["time"] = "2018/07/17 23:12:00",
-			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'SetMapToCurrentZone' (a nil value)\"\nzone = \"FalanaarTunnelsScenario\"\nfindClosestChest = <function> defined @Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:248\nnodes = <table> {\n FalanaarTunnelsScenario = <table> {\n }\n}\nHNWC = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n SetDefaultModuleState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:418\n baseName = \"HandyNotes_WitheredChests\"\n Enable = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:325\n NewModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:266\n OnInitialize = <function> defined @Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:227\n EnableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n GetModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n IterateEmbeds = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n IsModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:499\n db = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n SendMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:85\n SetEnabledState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n UnregisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n enabledState = true\n RegisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterEvent = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterAllMessages = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n GetName = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n defaultModuleState = true\n Disable = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:345\n IterateModules = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n name = \"HandyNotes_WitheredChests\"\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n IsEnabled = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n orderedModules = <table> {\n }\n UnregisterEvent = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n DisableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n}\n",
-			["stack"] = "Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:270: in function <Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:269>\n[C]: ?\n[C]: in function `SelectGossipOption'\nInterface\\FrameXML\\GossipFrame.lua:16: in function <Interface\\FrameXML\\GossipFrame.lua:10>",
-			["session"] = 557,
-			["counter"] = 307,
-		}, -- [215]
-		{
 			["message"] = "Interface\\AddOns\\Parrot\\Data\\Cooldowns.lua:64: attempt to compare number with nil",
 			["time"] = "2018/03/11 21:14:47",
 			["stack"] = "Interface\\AddOns\\Parrot\\Data\\Cooldowns.lua:64: in function <Interface\\AddOns\\Parrot\\Data\\Cooldowns.lua:58>\nInterface\\AddOns\\Parrot\\Data\\Cooldowns.lua:169: in function `OnUpdate'\nInterface\\AddOns\\Parrot\\Data\\Cooldowns.lua:93: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <...AddOns\\Bartender4\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 558,
 			["counter"] = 95,
-		}, -- [216]
+		}, -- [215]
 		{
 			["message"] = "Error loading Interface\\AddOns\\HandyNotes_SpecialNPCsEtc\\Libs\\LibStub\\LibStub.lua",
 			["session"] = 560,
 			["time"] = "2018/08/05 19:51:52",
 			["counter"] = 5,
+		}, -- [216]
+		{
+			["message"] = "Error loading Interface\\AddOns\\CanIMogIt\\cache.lua",
+			["time"] = "2018/08/24 22:30:35",
+			["session"] = 563,
+			["counter"] = 1,
 		}, -- [217]
 		{
-			["message"] = "...dyNotes_SpecialNPCsEtc\\HandyNotes_SpecialNPCsEtc-1.1.1-Beta.lua:15: Cannot find a library instance of \"HereBeDragons-1.0\".",
-			["time"] = "2018/07/17 21:53:52",
-			["locals"] = "(*temporary) = \"Cannot find a library instance of \"HereBeDragons-1.0\".\"\n",
-			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\AskMrRobot\\Libs\\LibStub\\LibStub.lua:23: in function `LibStub'\n...dyNotes_SpecialNPCsEtc\\HandyNotes_SpecialNPCsEtc-1.1.1-Beta.lua:15: in main chunk",
-			["session"] = 561,
-			["counter"] = 153,
-		}, -- [218]
-		{
-			["message"] = "...dyNotes_WorldMapButton\\HandyNotes_WorldMapButton-2.6.lua:83: Attempt to register unknown event \"WORLD_MAP_UPDATE\"",
-			["time"] = "2018/07/17 21:53:53",
-			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"WORLD_MAP_UPDATE\"\n",
-			["stack"] = "[C]: in function `RegisterEvent'\n...dyNotes_WorldMapButton\\HandyNotes_WorldMapButton-2.6.lua:83: in main chunk",
-			["session"] = 561,
-			["counter"] = 153,
-		}, -- [219]
-		{
-			["message"] = "Interface\\AddOns\\KeyQueue\\UIMAIN.lua:459: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)",
-			["time"] = "2018/07/17 21:53:53",
-			["locals"] = "isUIMAINHidden = true\nisFirstRun = true\napplicantFrame = <table> {\n 1 = <unnamed> {\n }\n 2 = <unnamed> {\n }\n 3 = <unnamed> {\n }\n 4 = <unnamed> {\n }\n 5 = <unnamed> {\n }\n 6 = <unnamed> {\n }\n 7 = <unnamed> {\n }\n 8 = <unnamed> {\n }\n 9 = <unnamed> {\n }\n}\napplicantFrameTexture = <table> {\n 1 = ARTWORK {\n }\n 2 = ARTWORK {\n }\n 3 = ARTWORK {\n }\n 4 = ARTWORK {\n }\n 5 = ARTWORK {\n }\n 6 = ARTWORK {\n }\n 7 = ARTWORK {\n }\n 8 = ARTWORK {\n }\n 9 = ARTWORK {\n }\n}\nKQUpdateTimer = 0\nUIMAIN = <unnamed> {\n 0 = <userdata>\n TitleText = <unnamed> {\n }\n RightBorder = <unnamed> {\n }\n LeftBorder = <unnamed> {\n }\n InsetBorderTopLeft = <unnamed> {\n }\n TopRightCorner = <unnamed> {\n }\n TopLeftCorner = <unnamed> {\n }\n Bg = <unnamed> {\n }\n TopBorder = <unnamed> {\n }\n InsetBg = <unnamed> {\n }\n TopTileStreaks = <unnamed> {\n }\n TitleBg = <unnamed> {\n }\n BottomBorder = <unnamed> {\n }\n InsetBorderRight = <unnamed> {\n }\n InsetBorderLeft = <unnamed> {\n }\n InsetBorderBottomLeft = <unnamed> {\n }\n CloseButton = <unnamed> {\n }\n InsetBorderBottom = <unnamed> {\n }\n InsetBorderTop = <unnamed> {\n }\n BotLeftCorner = <unnamed> {\n }\n InsetBorderTopRight = <unnamed> {\n }\n InsetBorderBottomRight = <unnamed> {\n }\n BotRightCorner = <unnamed> {\n }\n}\ntopBarString = <unnamed> {\n 0 = <userdata>\n}\nUIFrameOne = <unnamed> {\n 0 = <userdata>\n}\ninfoText = <unnamed> {\n 0 = <userdata>\n}\nclearListButton = <unnamed> {\n 0 = <userdata>\n Text = UIParentText {\n }\n Right = <unnamed> {\n }\n Middle = <unnamed> {\n }\n Left = <unnamed> {\n }\n}\nclearListButtonText = <unnamed> {\n 0 = <userdata>\n}\napplicantHeader = <unnamed> {\n 0 = <userdata>\n}\ntextureFrameHeader = ARTWORK {\n 0 = <userdata>\n}\ncheckString = $parrentqueuecheck {\n 0 = <userdata>\n}\nKQ_setClassTexture = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:116\naddApplicant = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:261\nconverClassToNumber = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:283\nhandleWhisper = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:328\nhandleWhisperBN = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:340\neventHandler = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:352\n(*temporary) = nil\n(*temporary) = \"KeystoneHelper\"\n(*temporary) = \"attempt to call global 'RegisterAddonMessagePrefix' (a nil value)\"\n",
-			["stack"] = "Interface\\AddOns\\KeyQueue\\UIMAIN.lua:459: in main chunk",
-			["session"] = 561,
-			["counter"] = 153,
-		}, -- [220]
-		{
-			["message"] = "Interface\\AddOns\\Kui_Nameplates\\messages.lua:514: Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.",
-			["time"] = "2018/08/13 17:53:31",
-			["locals"] = "(*temporary) = \"Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.\"\n",
-			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Kui_Nameplates\\messages.lua:514: in function `NewPlugin'\nInterface\\AddOns\\Kui_Nameplates_BarAuras\\mod.lua:3: in main chunk",
-			["session"] = 561,
-			["counter"] = 39,
-		}, -- [221]
-		{
-			["message"] = "...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: Attempt to register unknown event \"UNIT_COMBO_POINTS\"",
-			["time"] = "2018/07/21 05:37:56",
-			["locals"] = "(*temporary) = AceEvent30Frame {\n 0 = <userdata>\n}\n(*temporary) = \"UNIT_COMBO_POINTS\"\n",
-			["stack"] = "[C]: in function `RegisterEvent'\n...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: in function `OnUsed'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:168: in function `RegisterEvent'\nInterface\\AddOns\\Parrot\\Code\\Parrot-v1.13.0.lua:369: in function `RegisterBlizzardEvent'\nInterface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1718: in function `RegisterCombatEvent'\nInterface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2001: in main chunk",
-			["session"] = 561,
-			["counter"] = 139,
-		}, -- [222]
-		{
-			["message"] = "Interface\\AddOns\\Parrot\\Data\\TriggerConditions.lua:172: table index is nil",
-			["time"] = "2018/07/21 05:37:56",
-			["locals"] = "Parrot = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n EnableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n IterateEmbeds = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n RegisterAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:77\n SecureHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n RawHookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n debug = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:40\n Printf = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n newDict = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:97\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n psize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:74\n DisableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n RegisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n unpackDictAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:206\n ShowConfig = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:319\n hooks = <table> {\n }\n RegisterThrottleType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1737\n RegisterFilterType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1769\n RegisterSecondaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:239\n SetConfigMode = <function> defined @Interface\\AddOns\\Parrot\\Code\\ScrollAreas.lua:103\n SetEnabledState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = true\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:347\n RegisterEvent = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterCombatLog = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:332\n IterateModules = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n RawHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n ChangeProfile = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:283\n OnBlizzardEvent = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:393\n OnInitialize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:251\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n del = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:143\n GetModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n HasAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:126\n defaultModuleLibraries = <table> {\n }\n unpackSetAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:188\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n options = <table> {\n }\n GetName = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n name = \"Parrot\"\n RegisterPrimaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:158\n HookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:366\n orderedModules",
-			["stack"] = "Interface\\AddOns\\Parrot\\Data\\TriggerConditions.lua:172: in main chunk",
-			["session"] = 561,
-			["counter"] = 139,
-		}, -- [223]
-		{
-			["message"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:58: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)",
-			["time"] = "2018/07/24 22:56:44",
-			["locals"] = "self = WorldQuestGroupFinderAddon {\n 0 = <userdata>\n}\nevent = \"ADDON_LOADED\"\naddon = \"WorldQuestGroupFinder\"\n(*temporary) = nil\n(*temporary) = \"WQGF\"\n(*temporary) = \"attempt to call global 'RegisterAddonMessagePrefix' (a nil value)\"\nBROADCAST_PREFIX = \"WQGF\"\n",
-			["stack"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:58: in function <...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder.lua:56>\n(tail call): ?",
-			["session"] = 561,
-			["counter"] = 128,
-		}, -- [224]
-		{
-			["message"] = "Interface\\AddOns\\_NPCScan.Overlay\\Overlay.lua:701: attempt to call field 'SetMapByID' (a nil value)",
-			["time"] = "2018/07/28 17:37:44",
-			["stack"] = "Interface\\AddOns\\_NPCScan.Overlay\\Overlay.lua:701: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:145: in function <...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[2]\"]:4: in function <[string \"safecall Dispatcher[2]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:13: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:90: in function `Fire'\n...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
-			["session"] = 561,
-			["counter"] = 123,
-		}, -- [225]
-		{
 			["message"] = "Error loading Interface\\AddOns\\BagBrother\\Tests.lua",
-			["session"] = 561,
+			["session"] = 564,
 			["time"] = "2018/07/28 17:37:48",
-			["counter"] = 139,
-		}, -- [226]
-		{
-			["message"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:433: hooksecurefunc(): TaskPOI_OnClick is not a function",
-			["time"] = "2018/07/17 21:54:18",
-			["locals"] = "",
-			["stack"] = "[C]: in function `hooksecurefunc'\n...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:433: in function `SetHooks'\n...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:73: in function <...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder.lua:69>\n(tail call): ?",
-			["session"] = 561,
-			["counter"] = 142,
-		}, -- [227]
+			["counter"] = 145,
+		}, -- [218]
 		{
 			["message"] = "...ievements\\Libs/MapExcursion-1.0-1/MapExcursion-1.0.lua:12: Attempt to unregister unknown event \"WORLD_MAP_UPDATE\"",
 			["time"] = "2018/07/19 23:07:46",
 			["locals"] = "(*temporary) = Prat30EventUIDFrame {\n 0 = <userdata>\n}\n(*temporary) = \"WORLD_MAP_UPDATE\"\n",
 			["stack"] = "[C]: in function `UnregisterEvent'\n...ievements\\Libs/MapExcursion-1.0-1/MapExcursion-1.0.lua:12: in function `MapExcursion'\n...ndyNotes_Achievements\\Libs/MapMap-1.0-1/MapMap-1.0.lua:33: in function `Survey'\n...ndyNotes_Achievements\\Libs/MapMap-1.0-1/MapMap-1.0.lua:22: in function `?'\n...ndyNotes_Achievements\\Libs/MapMap-1.0-1/MapMap-1.0.lua:15: in function <...ndyNotes_Achievements\\Libs/MapMap-1.0/MapMap-1.0.lua:14>",
-			["session"] = 561,
-			["counter"] = 78,
+			["session"] = 564,
+			["counter"] = 81,
+		}, -- [219]
+		{
+			["message"] = "...dyNotes_SpecialNPCsEtc\\HandyNotes_SpecialNPCsEtc-1.1.1-Beta.lua:15: Cannot find a library instance of \"HereBeDragons-1.0\".",
+			["time"] = "2018/07/17 21:53:52",
+			["locals"] = "(*temporary) = \"Cannot find a library instance of \"HereBeDragons-1.0\".\"\n",
+			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\AskMrRobot\\Libs\\LibStub\\LibStub.lua:23: in function `LibStub'\n...dyNotes_SpecialNPCsEtc\\HandyNotes_SpecialNPCsEtc-1.1.1-Beta.lua:15: in main chunk",
+			["session"] = 565,
+			["counter"] = 157,
+		}, -- [220]
+		{
+			["message"] = "...dyNotes_WorldMapButton\\HandyNotes_WorldMapButton-2.6.lua:83: Attempt to register unknown event \"WORLD_MAP_UPDATE\"",
+			["time"] = "2018/07/17 21:53:53",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"WORLD_MAP_UPDATE\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\n...dyNotes_WorldMapButton\\HandyNotes_WorldMapButton-2.6.lua:83: in main chunk",
+			["session"] = 565,
+			["counter"] = 157,
+		}, -- [221]
+		{
+			["message"] = "Interface\\AddOns\\KeyQueue\\UIMAIN.lua:459: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)",
+			["time"] = "2018/07/17 21:53:53",
+			["locals"] = "isUIMAINHidden = true\nisFirstRun = true\napplicantFrame = <table> {\n 1 = <unnamed> {\n }\n 2 = <unnamed> {\n }\n 3 = <unnamed> {\n }\n 4 = <unnamed> {\n }\n 5 = <unnamed> {\n }\n 6 = <unnamed> {\n }\n 7 = <unnamed> {\n }\n 8 = <unnamed> {\n }\n 9 = <unnamed> {\n }\n}\napplicantFrameTexture = <table> {\n 1 = ARTWORK {\n }\n 2 = ARTWORK {\n }\n 3 = ARTWORK {\n }\n 4 = ARTWORK {\n }\n 5 = ARTWORK {\n }\n 6 = ARTWORK {\n }\n 7 = ARTWORK {\n }\n 8 = ARTWORK {\n }\n 9 = ARTWORK {\n }\n}\nKQUpdateTimer = 0\nUIMAIN = <unnamed> {\n 0 = <userdata>\n TitleText = <unnamed> {\n }\n RightBorder = <unnamed> {\n }\n LeftBorder = <unnamed> {\n }\n InsetBorderTopLeft = <unnamed> {\n }\n TopRightCorner = <unnamed> {\n }\n TopLeftCorner = <unnamed> {\n }\n Bg = <unnamed> {\n }\n TopBorder = <unnamed> {\n }\n InsetBg = <unnamed> {\n }\n TopTileStreaks = <unnamed> {\n }\n TitleBg = <unnamed> {\n }\n BottomBorder = <unnamed> {\n }\n InsetBorderRight = <unnamed> {\n }\n InsetBorderLeft = <unnamed> {\n }\n InsetBorderBottomLeft = <unnamed> {\n }\n CloseButton = <unnamed> {\n }\n InsetBorderBottom = <unnamed> {\n }\n InsetBorderTop = <unnamed> {\n }\n BotLeftCorner = <unnamed> {\n }\n InsetBorderTopRight = <unnamed> {\n }\n InsetBorderBottomRight = <unnamed> {\n }\n BotRightCorner = <unnamed> {\n }\n}\ntopBarString = <unnamed> {\n 0 = <userdata>\n}\nUIFrameOne = <unnamed> {\n 0 = <userdata>\n}\ninfoText = <unnamed> {\n 0 = <userdata>\n}\nclearListButton = <unnamed> {\n 0 = <userdata>\n Text = UIParentText {\n }\n Right = <unnamed> {\n }\n Middle = <unnamed> {\n }\n Left = <unnamed> {\n }\n}\nclearListButtonText = <unnamed> {\n 0 = <userdata>\n}\napplicantHeader = <unnamed> {\n 0 = <userdata>\n}\ntextureFrameHeader = ARTWORK {\n 0 = <userdata>\n}\ncheckString = $parrentqueuecheck {\n 0 = <userdata>\n}\nKQ_setClassTexture = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:116\naddApplicant = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:261\nconverClassToNumber = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:283\nhandleWhisper = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:328\nhandleWhisperBN = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:340\neventHandler = <function> defined @Interface\\AddOns\\KeyQueue\\UIMAIN.lua:352\n(*temporary) = nil\n(*temporary) = \"KeystoneHelper\"\n(*temporary) = \"attempt to call global 'RegisterAddonMessagePrefix' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\KeyQueue\\UIMAIN.lua:459: in main chunk",
+			["session"] = 565,
+			["counter"] = 157,
+		}, -- [222]
+		{
+			["message"] = "Interface\\AddOns\\Kui_Nameplates\\messages.lua:514: Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.",
+			["time"] = "2018/08/13 17:53:31",
+			["locals"] = "(*temporary) = \"Out of date plugin `BarAuras` ignored. Update it from the GitHub repository linked in the Curse description.\"\n",
+			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Kui_Nameplates\\messages.lua:514: in function `NewPlugin'\nInterface\\AddOns\\Kui_Nameplates_BarAuras\\mod.lua:3: in main chunk",
+			["session"] = 565,
+			["counter"] = 42,
+		}, -- [223]
+		{
+			["message"] = "...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: Attempt to register unknown event \"UNIT_COMBO_POINTS\"",
+			["time"] = "2018/07/21 05:37:56",
+			["locals"] = "(*temporary) = AceEvent30Frame {\n 0 = <userdata>\n}\n(*temporary) = \"UNIT_COMBO_POINTS\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\n...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: in function `OnUsed'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:168: in function `RegisterEvent'\nInterface\\AddOns\\Parrot\\Code\\Parrot-v1.13.0.lua:369: in function `RegisterBlizzardEvent'\nInterface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1718: in function `RegisterCombatEvent'\nInterface\\AddOns\\Parrot\\Data\\CombatEvents.lua:2001: in main chunk",
+			["session"] = 565,
+			["counter"] = 143,
+		}, -- [224]
+		{
+			["message"] = "Interface\\AddOns\\Parrot\\Data\\TriggerConditions.lua:172: table index is nil",
+			["time"] = "2018/07/21 05:37:56",
+			["locals"] = "Parrot = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n EnableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n IterateEmbeds = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n RegisterAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:77\n SecureHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n RawHookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n debug = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:40\n Printf = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n newDict = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:97\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n psize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:74\n DisableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n RegisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n unpackDictAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:206\n ShowConfig = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:319\n hooks = <table> {\n }\n RegisterThrottleType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1737\n RegisterFilterType = <function> defined @Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:1769\n RegisterSecondaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:239\n SetConfigMode = <function> defined @Interface\\AddOns\\Parrot\\Code\\ScrollAreas.lua:103\n SetEnabledState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n Hook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = true\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:347\n RegisterEvent = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterCombatLog = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:332\n IterateModules = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n RawHook = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n ChangeProfile = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:283\n OnBlizzardEvent = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:393\n OnInitialize = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:251\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n del = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:143\n GetModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n HasAnimationStyle = <function> defined @Interface\\AddOns\\Parrot\\Code\\AnimationStyles.lua:126\n defaultModuleLibraries = <table> {\n }\n unpackSetAndDel = <function> defined @Interface\\AddOns\\Parrot\\Code\\Parrot.lua:188\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n options = <table> {\n }\n GetName = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n name = \"Parrot\"\n RegisterPrimaryTriggerCondition = <function> defined @Interface\\AddOns\\Parrot\\Code\\TriggerConditions.lua:158\n HookScript = <function> defined @Interface\\AddOns\\Bartender4\\libs\\AceHook-3.0\\AceHook-3.0.lua:366\n orderedModules",
+			["stack"] = "Interface\\AddOns\\Parrot\\Data\\TriggerConditions.lua:172: in main chunk",
+			["session"] = 565,
+			["counter"] = 143,
+		}, -- [225]
+		{
+			["message"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:58: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)",
+			["time"] = "2018/07/24 22:56:44",
+			["locals"] = "self = WorldQuestGroupFinderAddon {\n 0 = <userdata>\n}\nevent = \"ADDON_LOADED\"\naddon = \"WorldQuestGroupFinder\"\n(*temporary) = nil\n(*temporary) = \"WQGF\"\n(*temporary) = \"attempt to call global 'RegisterAddonMessagePrefix' (a nil value)\"\nBROADCAST_PREFIX = \"WQGF\"\n",
+			["stack"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:58: in function <...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder.lua:56>\n(tail call): ?",
+			["session"] = 565,
+			["counter"] = 132,
+		}, -- [226]
+		{
+			["message"] = "Interface\\AddOns\\_NPCScan.Overlay\\Overlay.lua:701: attempt to call field 'SetMapByID' (a nil value)",
+			["time"] = "2018/07/28 17:37:44",
+			["stack"] = "Interface\\AddOns\\_NPCScan.Overlay\\Overlay.lua:701: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:145: in function <...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[2]\"]:4: in function <[string \"safecall Dispatcher[2]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[2]\"]:13: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:90: in function `Fire'\n...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 565,
+			["counter"] = 127,
+		}, -- [227]
+		{
+			["message"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:433: hooksecurefunc(): TaskPOI_OnClick is not a function",
+			["time"] = "2018/07/17 21:54:18",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\n...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:433: in function `SetHooks'\n...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:73: in function <...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder.lua:69>\n(tail call): ?",
+			["session"] = 565,
+			["counter"] = 146,
 		}, -- [228]
+		{
+			["message"] = "Interface\\AddOns\\CanIMogIt\\code.lua:974: attempt to index field 'cache' (a nil value)",
+			["time"] = "2018/08/24 21:48:08",
+			["locals"] = "self = <table> {\n DBAddAppearance = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:217\n TextIsUnknown = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1157\n GetItemLinkFromSourceID = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:799\n modules = <table> {\n }\n GetSets = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:515\n KNOWN_FROM_ANOTHER_ITEM_BOE = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_BOE_circle:0|t |cfff0e442Learned from another item.\"\n UNKNOWABLE_SOULBOUND = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_SOULBOUND:0|t |cff009e73Cannot learn: Soulbound \"\n KNOWN_FROM_ANOTHER_ITEM_BUT_TOO_LOW_LEVEL = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_circle:0|t |cff15abffLearned from another item but cannot transmog yet.\"\n TextIsKnown = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1151\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n IsValidAppearanceForCharacter = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:905\n IsEnabled = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n CharacterCanLearnTransmog = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1098\n KNOWN_BY_ANOTHER_CHARACTER = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN:0|t |cff15abffLearned for a different class.\"\n RegisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n UNKNOWABLE_SOULBOUND_ICON_OVERLAY = \"Interface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_SOULBOUND_OVERLAY\"\n DBReset = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:338\n CalculateSetsText = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:593\n db = <table> {\n }\n ORANGE = \"|cffe69f00\"\n UNKNOWABLE_BY_CHARACTER_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_BY_CHARACTER:0|t \"\n SetEnabledState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n GetAppearanceID = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1009\n CalculateTooltipText = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1198\n WHITE = \"|cffffffff\"\n KNOWN_BOE_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_BOE:0|t \"\n OnInitialize = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:148\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n GetItemMinLevel = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:809\n _GetRatioText = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:558\n QUESTIONABLE_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\QUESTIONABLE:0|t \"\n KNOWN_BUT_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_circle:0|t \"\n UNKNOWABLE_BY_CHARACTER = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_BY_CHARACTER:0|t |cfff0e442Cannot learn: \"\n GetItemClassName = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:814\n IsItemSoulbound = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:925\n GetName = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n UNKNOWN = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWN:0|t |cffff9333Not learned.\"\n KNOWN_FROM_ANOTHER_ITEM_AND_CHARACTER_BOE = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_BOE_circle:0|t |cfff0e442Learned for a different class and item.\"\n name = \"CanIMogIt\"\n IsArmorCosmetic = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:869\n RED_ORANGE = \"|cffff9333\"\n KNOWN_FROM_ANOTHER_ITEM_AND_CHARACTER = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_circle:0|t |cff15abffLearned for a different class and item.\"\n IsItemSubClassIdentical = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:861\n NUM_MAIL_INBOX_ITEMS = 7\n Requirements = <table> {\n }\n BLUE = \"|cff15abff\"\n DBHasSource = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:233\n GetItemID = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:794\n GetSetClass = <function> de",
+			["stack"] = "Interface\\AddOns\\CanIMogIt\\code.lua:974: in function `GetSourceID'\nInterface\\AddOns\\CanIMogIt\\code.lua:1011: in function `GetAppearanceID'\nInterface\\AddOns\\CanIMogIt\\code.lua:1044: in function `PlayerKnowsTransmog'\n...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus-0.20.0.lua:837: in function <...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus.lua:816>\n...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus-0.20.0.lua:916: in function <...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus.lua:905>\n...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus-0.20.0.lua:2119: in function <...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus.lua:2112>\n...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus-0.20.0.lua:2131: in function <...terface\\AddOns\\HandyNotes_Argus\\HandyNotes_Argus.lua:2130>",
+			["session"] = 565,
+			["counter"] = 3,
+		}, -- [229]
+		{
+			["message"] = "Interface\\AddOns\\CanIMogIt\\code.lua:1376: attempt to index field 'cache' (a nil value)",
+			["time"] = "2018/08/24 21:48:58",
+			["locals"] = "self = <table> {\n DBAddAppearance = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:217\n TextIsUnknown = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1157\n GetItemLinkFromSourceID = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:799\n modules = <table> {\n }\n GetSets = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:515\n KNOWN_FROM_ANOTHER_ITEM_BOE = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_BOE_circle:0|t |cfff0e442Learned from another item.\"\n UNKNOWABLE_SOULBOUND = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_SOULBOUND:0|t |cff009e73Cannot learn: Soulbound \"\n KNOWN_FROM_ANOTHER_ITEM_BUT_TOO_LOW_LEVEL = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_circle:0|t |cff15abffLearned from another item but cannot transmog yet.\"\n TextIsKnown = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1151\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n IsValidAppearanceForCharacter = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:905\n IsEnabled = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n CharacterCanLearnTransmog = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1098\n KNOWN_BY_ANOTHER_CHARACTER = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN:0|t |cff15abffLearned for a different class.\"\n RegisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n UNKNOWABLE_SOULBOUND_ICON_OVERLAY = \"Interface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_SOULBOUND_OVERLAY\"\n DBReset = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:338\n CalculateSetsText = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:593\n db = <table> {\n }\n ORANGE = \"|cffe69f00\"\n UNKNOWABLE_BY_CHARACTER_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_BY_CHARACTER:0|t \"\n SetEnabledState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n GetAppearanceID = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1009\n CalculateTooltipText = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:1198\n WHITE = \"|cffffffff\"\n KNOWN_BOE_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_BOE:0|t \"\n OnInitialize = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:148\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n GetItemMinLevel = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:809\n _GetRatioText = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:558\n QUESTIONABLE_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\QUESTIONABLE:0|t \"\n KNOWN_BUT_ICON = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_circle:0|t \"\n UNKNOWABLE_BY_CHARACTER = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWABLE_BY_CHARACTER:0|t |cfff0e442Cannot learn: \"\n GetItemClassName = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:814\n IsItemSoulbound = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:925\n GetName = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n UNKNOWN = \"|TInterface\\Addons\\CanIMogIt\\Icons\\UNKNOWN:0|t |cffff9333Not learned.\"\n KNOWN_FROM_ANOTHER_ITEM_AND_CHARACTER_BOE = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_BOE_circle:0|t |cfff0e442Learned for a different class and item.\"\n name = \"CanIMogIt\"\n IsArmorCosmetic = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:869\n RED_ORANGE = \"|cffff9333\"\n KNOWN_FROM_ANOTHER_ITEM_AND_CHARACTER = \"|TInterface\\Addons\\CanIMogIt\\Icons\\KNOWN_circle:0|t |cff15abffLearned for a different class and item.\"\n IsItemSubClassIdentical = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:861\n NUM_MAIL_INBOX_ITEMS = 7\n Requirements = <table> {\n }\n BLUE = \"|cff15abff\"\n DBHasSource = <function> defined @Interface\\AddOns\\CanIMogIt\\database.lua:233\n GetItemID = <function> defined @Interface\\AddOns\\CanIMogIt\\code.lua:794\n GetSetClass = <function> de",
+			["stack"] = "Interface\\AddOns\\CanIMogIt\\code.lua:1376: in function `GetTooltipText'\nInterface\\AddOns\\CanIMogIt\\tooltips.lua:174: in function <Interface\\AddOns\\CanIMogIt\\tooltips.lua:159>\nInterface\\AddOns\\CanIMogIt\\tooltips.lua:233: in function <Interface\\AddOns\\CanIMogIt\\tooltips.lua:229>\n[C]: ?\n[C]: ?\n[C]: ?\n...face\\AddOns\\TradeSkillMaster\\Core\\Lib\\TooltipLib.lua:85: in function <...face\\AddOns\\TradeSkillMaster\\Core\\Lib\\TooltipLib.lua:82>\n[C]: ?\n[C]: ?\n[C]: ?\n...face\\AddOns\\TradeSkillMaster\\Core\\Lib\\TooltipLib.lua:95: in function <...face\\AddOns\\TradeSkillMaster\\Core\\Lib\\TooltipLib.lua:93>\n[C]: ?\n[C]: in function `SetHyperlink'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Util.lua:489: in function `SafeTooltipLink'\nInterface\\AddOns\\TradeSkillMaster\\Core\\UI\\UI.lua:386: in function `ShowTooltip'\n...ce\\AddOns\\TradeSkillMaster\\Core\\UI\\Util\\TableRow.lua:511: in function <...ce\\AddOns\\TradeSkillMaster\\Core\\UI\\Util\\TableRow.lua:498>",
+			["session"] = 565,
+			["counter"] = 32,
+		}, -- [230]
 		{
 			["message"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:423: attempt to call global 'QuestUtils_CanUseAutoGroupFinder' (a nil value)",
 			["time"] = "2018/07/17 21:54:21",
 			["locals"] = "block = <unnamed> {\n 0 = <userdata>\n lines = <table> {\n }\n id = 47904\n HeaderButton = ObjectiveTrackerBlocksFrameHeader {\n }\n HeaderText = <unnamed> {\n }\n height = 0\n used = true\n lineWidth = 228.32503461838\n module = <table> {\n }\n}\nquestID = 47904\ncanFindGroup = false\n(*temporary) = nil\n(*temporary) = 47904\n(*temporary) = true\n(*temporary) = \"attempt to call global 'QuestUtils_CanUseAutoGroupFinder' (a nil value)\"\nblacklistedQuests = <table> {\n}\n",
 			["stack"] = "...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder-0.27.lua:423: in function <...dOns\\WorldQuestGroupFinder\\WorldQuestGroupFinder.lua:410>\n[C]: in function `QuestObjectiveSetupBlockButton_FindGroup'\n..._ObjectiveTracker\\Blizzard_QuestObjectiveTracker.lua:52: in function `SetBlockHeader'\n..._ObjectiveTracker\\Blizzard_QuestObjectiveTracker.lua:369: in function `Update'\n...zzard_ObjectiveTracker\\Blizzard_ObjectiveTracker.lua:1073: in function `ObjectiveTracker_Update'\n...zzard_ObjectiveTracker\\Blizzard_ObjectiveTracker.lua:704: in function <...zzard_ObjectiveTracker\\Blizzard_ObjectiveTracker.lua:669>",
-			["session"] = 561,
-			["counter"] = 34632,
-		}, -- [229]
+			["session"] = 565,
+			["counter"] = 34716,
+		}, -- [231]
 		{
-			["message"] = "[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
-			["time"] = "2018/01/27 18:16:46",
-			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
-			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: in function <[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:5>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
-			["session"] = 561,
-			["counter"] = 925591,
-		}, -- [230]
+			["message"] = "Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:270: attempt to call global 'SetMapToCurrentZone' (a nil value)",
+			["time"] = "2018/07/17 23:12:00",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'SetMapToCurrentZone' (a nil value)\"\nzone = \"FalanaarTunnelsScenario\"\nfindClosestChest = <function> defined @Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:248\nnodes = <table> {\n FalanaarTunnelsScenario = <table> {\n }\n}\nHNWC = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:398\n SetDefaultModuleState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:418\n baseName = \"HandyNotes_WitheredChests\"\n Enable = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:325\n NewModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:266\n OnInitialize = <function> defined @Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:227\n EnableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:363\n modules = <table> {\n }\n GetModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:241\n IterateEmbeds = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:473\n IsModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:499\n db = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n SendMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:85\n SetEnabledState = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:455\n UnregisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n enabledState = true\n RegisterMessage = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n RegisterEvent = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:116\n UnregisterAllMessages = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:200\n GetName = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:310\n defaultModuleState = true\n Disable = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:345\n IterateModules = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:468\n name = \"HandyNotes_WitheredChests\"\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:440\n IsEnabled = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:482\n orderedModules = <table> {\n }\n UnregisterEvent = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:179\n DisableModule = <function> defined @Interface\\AddOns\\AskMrRobot\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:381\n}\n",
+			["stack"] = "Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:270: in function <Interface\\AddOns\\HandyNotes_WitheredChests\\main.lua:269>\n[C]: ?\n[C]: in function `SelectGossipOption'\nInterface\\FrameXML\\GossipFrame.lua:16: in function <Interface\\FrameXML\\GossipFrame.lua:10>",
+			["session"] = 565,
+			["counter"] = 308,
+		}, -- [232]
 		{
 			["message"] = "Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:2484: bad argument #1 to 'bit_band' (number expected, got nil)",
 			["time"] = "2018/07/17 21:54:21",
 			["stack"] = "[C]: ?\nInterface\\AddOns\\Parrot\\Code\\CombatEvents.lua:2484: in function <Interface\\AddOns\\Parrot\\Code\\CombatEvents.lua:2483>\nInterface\\AddOns\\Parrot\\Code\\CombatEvents.lua:2494: in function `HandleCombatlogEvent'\nInterface\\AddOns\\Parrot\\Code\\Parrot-v1.13.0.lua:350: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:145: in function <...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...bot\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-6.lua:90: in function `Fire'\n...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <...AddOns\\AskMrRobot\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
-			["session"] = 561,
-			["counter"] = 281203,
-		}, -- [231]
+			["session"] = 565,
+			["counter"] = 281254,
+		}, -- [233]
 		{
 			["message"] = "[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:5: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
 			["time"] = "2018/01/25 00:10:11",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
 			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:5: in function <[string \"--[[ Error in ' AP Amount 2 2' ]]return fun...\"]:1>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
-			["session"] = 561,
-			["counter"] = 1712112,
-		}, -- [232]
+			["session"] = 565,
+			["counter"] = 1714199,
+		}, -- [234]
+		{
+			["message"] = "[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: Usage: local cost = C_ArtifactUI.GetCostForPointAtRank(rank, tier)",
+			["time"] = "2018/01/27 18:16:46",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetCostForPointAtRank'\n[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:9: in function <[string \"--[[ Error in ' AP Percent 2 2' ]]return ...\"]:5>\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:170: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.5.4.lua:3447: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3443>",
+			["session"] = 565,
+			["counter"] = 934708,
+		}, -- [235]
 	},
 }

@@ -760,16 +760,16 @@ LUIDB = {
 					},
 				},
 				["Vancard - Zul'jin"] = {
+					["Bags"] = {
+						["CoordX"] = 1576.43774414063,
+						["ItemQuality"] = true,
+						["CoordY"] = 828.128723144531,
+					},
 					["Bank"] = {
 						["FontSize"] = 12,
 						["CoordY"] = 895.668151855469,
 						["CoordX"] = 1120.54467773438,
 						["Font"] = "AvantGarde_LT_Medium",
-						["ItemQuality"] = true,
-					},
-					["Bags"] = {
-						["CoordX"] = 1576.43774414063,
-						["CoordY"] = 828.128723144531,
 						["ItemQuality"] = true,
 					},
 				},
@@ -1543,9 +1543,9 @@ LUIDB = {
 					["Raid"] = {
 						["IsShown"] = true,
 						["Width"] = 612,
-						["Height"] = 237,
-						["OffsetY"] = 1,
 						["Anchor"] = "Vd1",
+						["OffsetY"] = 1,
+						["Height"] = 237,
 					},
 					["MicroMenu"] = {
 						["IsShown"] = true,
@@ -1563,9 +1563,9 @@ LUIDB = {
 						["Direction"] = "TOPLEFT",
 						["IsShown"] = true,
 						["Width"] = 189,
-						["Anchor"] = "SkadaBarWindowSkada",
-						["OffsetY"] = 17,
 						["Height"] = 218,
+						["OffsetY"] = 17,
+						["Anchor"] = "SkadaBarWindowSkada",
 					},
 					["Minimap"] = {
 						["IsShown"] = true,
@@ -2166,25 +2166,25 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Height"] = 237,
-						["Anchor"] = "Vd1",
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
-						["Height"] = 218,
 						["Anchor"] = "SkadaBarWindowSkada",
+						["Height"] = 218,
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
 					},
-					["Tps"] = {
-						["OffsetX"] = 1,
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
 						["OffsetY"] = 1,
 						["IsShown"] = true,
+						["Width"] = 612,
+					},
+					["Tps"] = {
+						["IsShown"] = true,
+						["OffsetY"] = 1,
+						["OffsetX"] = 1,
 						["Width"] = 198,
 					},
 					["MicroMenu"] = {
@@ -2704,9 +2704,9 @@ LUIDB = {
 					["Gold"] = {
 						["Alliance"] = {
 							["Shathiel"] = 44039224,
+							["Dialdaas"] = 11338409,
 							["Serbitechna"] = 7681888,
 							["Brewnheimer"] = 836,
-							["Dialdaas"] = 11338409,
 						},
 					},
 				},
@@ -2748,7 +2748,7 @@ LUIDB = {
 							["Jingojaggot"] = 356823,
 							["Shaekhan"] = 12334,
 							["Bathal"] = 2000,
-							["Shanyt"] = 13635338490,
+							["Shanyt"] = 13640435862,
 						},
 					},
 				},
@@ -10282,61 +10282,61 @@ LUIDB = {
 						["Horde - Argent Dawn"] = {
 							"/kick", -- [1]
 							"/omen show", -- [2]
-							"/kick", -- [3]
-							"/omen show", -- [4]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [5]
+							"/help", -- [3]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [4]
+							"/kick", -- [5]
 							"/help", -- [6]
-							"/omen show", -- [7]
-							"/kick", -- [8]
-							"/omen show", -- [9]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [10]
-							"/omen show", -- [11]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [12]
-							"/help", -- [13]
+							"/kick", -- [7]
+							"/omen show", -- [8]
+							"/kick", -- [9]
+							"/omen show", -- [10]
+							"/help", -- [11]
+							"/kick", -- [12]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [13]
 							"/omen show", -- [14]
 							"/kick", -- [15]
 							"/omen show", -- [16]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [17]
-							"/help", -- [18]
-							"/omen show", -- [19]
-							"/kick", -- [20]
-							"/omen show", -- [21]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [22]
-							"/omen show", -- [23]
+							"/help", -- [17]
+							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [18]
+							"/kick", -- [19]
+							"/help", -- [20]
+							"/kick", -- [21]
+							"/omen show", -- [22]
+							"/help", -- [23]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [24]
-							"/help", -- [25]
-							"/kick", -- [26]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [27]
+							"/kick", -- [25]
+							"/help", -- [26]
+							"/kick", -- [27]
 							"/omen show", -- [28]
 							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [29]
 							"/help", -- [30]
-							"/cw Puscifer-ArgentDawn I dont have the rank sorry", -- [31]
+							"/omen show", -- [31]
 							"/help", -- [32]
 						},
 						["Horde - Zul'jin"] = {
-							"/i THAKS", -- [1]
-							"/i i dont know if i would go that far but the deed is done", -- [2]
-							"/i THAKS", -- [3]
-							"/i i dont know if i would go that far but the deed is done", -- [4]
-							"/vuhdo", -- [5]
-							"/i THAKS", -- [6]
-							"/vuhdo", -- [7]
-							"/i THAKS", -- [8]
-							"/i i dont know if i would go that far but the deed is done", -- [9]
-							"/i THAKS", -- [10]
-							"/i i dont know if i would go that far but the deed is done", -- [11]
-							"/vuhdo", -- [12]
-							"/i i dont know if i would go that far but the deed is done", -- [13]
+							"/vuhdo", -- [1]
+							"/i THAKS", -- [2]
+							"/i i dont know if i would go that far but the deed is done", -- [3]
+							"/i THAKS", -- [4]
+							"/i i dont know if i would go that far but the deed is done", -- [5]
+							"/vuhdo", -- [6]
+							"/i THAKS", -- [7]
+							"/i i dont know if i would go that far but the deed is done", -- [8]
+							"/i THAKS", -- [9]
+							"/i i dont know if i would go that far but the deed is done", -- [10]
+							"/vuhdo", -- [11]
+							"/i i dont know if i would go that far but the deed is done", -- [12]
+							"/vuhdo", -- [13]
 							"/i THAKS", -- [14]
 							"/i i dont know if i would go that far but the deed is done", -- [15]
 							"/i THAKS", -- [16]
 							"/i i dont know if i would go that far but the deed is done", -- [17]
 							"/vuhdo", -- [18]
 							"/i THAKS", -- [19]
-							"/vuhdo", -- [20]
+							"/i i dont know if i would go that far but the deed is done", -- [20]
 							"/i THAKS", -- [21]
 							"/i i dont know if i would go that far but the deed is done", -- [22]
-							"/i THAKS", -- [23]
+							"/vuhdo", -- [23]
 							"/i i dont know if i would go that far but the deed is done", -- [24]
 							"/vuhdo", -- [25]
 							"/i THAKS", -- [26]
@@ -10468,10 +10468,10 @@ LUIDB = {
 					},
 				},
 				["Vancard - Zul'jin"] = {
+					["y"] = 46.0004382602019,
+					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004382602019,
 				},
 				["Brotus - Argent Dawn"] = {
 					["y"] = 46.0004300258579,
@@ -10498,10 +10498,10 @@ LUIDB = {
 					["y"] = 46.0004300258579,
 				},
 				["Shanyt - Argent Dawn"] = {
+					["y"] = 46.0004382602019,
+					["x"] = 28.0002389903592,
 					["modules"] = {
 					},
-					["x"] = 28.0002389903592,
-					["y"] = 46.0004382602019,
 				},
 				["Brotuss - Zul'jin"] = {
 					["modules"] = {
@@ -11116,10 +11116,10 @@ LUIDB = {
 					},
 				},
 				["Vancard - Zul'jin"] = {
-					["TopTexture"] = {
+					["General"] = {
 						["Enable"] = false,
 					},
-					["General"] = {
+					["TopTexture"] = {
 						["Enable"] = false,
 					},
 					["BottomTexture"] = {

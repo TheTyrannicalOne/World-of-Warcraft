@@ -116,9 +116,9 @@ Quartz3DB = {
 					["w"] = 218,
 				},
 				["Vancard - Zul'jin"] = {
-					["w"] = 218,
 					["y"] = 173,
 					["x"] = 869,
+					["w"] = 218,
 				},
 				["Brotus - Argent Dawn"] = {
 					["y"] = 173,
@@ -141,9 +141,9 @@ Quartz3DB = {
 					["w"] = 218,
 				},
 				["Shanyt - Argent Dawn"] = {
+					["w"] = 218,
 					["y"] = 173,
 					["x"] = 869,
-					["w"] = 218,
 				},
 				["Brotuss - Zul'jin"] = {
 					["y"] = 173,
@@ -606,15 +606,15 @@ Quartz3DB = {
 					["texture"] = "Tukui",
 				},
 				["Vancard - Zul'jin"] = {
-					["h"] = 37,
-					["nametextx"] = 14,
 					["w"] = 447,
 					["y"] = 104.687440020117,
-					["font"] = "weezerfont",
-					["border"] = "RothSquare",
+					["h"] = 37,
 					["fontsize"] = 19,
-					["texture"] = "Tukui",
+					["font"] = "weezerfont",
 					["x"] = 752.432429475146,
+					["nametextx"] = 14,
+					["border"] = "RothSquare",
+					["texture"] = "Tukui",
 				},
 				["Brotus - Argent Dawn"] = {
 					["w"] = 447,
@@ -661,15 +661,15 @@ Quartz3DB = {
 					["texture"] = "Tukui",
 				},
 				["Shanyt - Argent Dawn"] = {
+					["h"] = 37,
+					["nametextx"] = 14,
 					["w"] = 447,
 					["y"] = 104.687440020117,
-					["h"] = 37,
-					["fontsize"] = 19,
 					["x"] = 752.432429475146,
-					["font"] = "weezerfont",
-					["nametextx"] = 14,
 					["border"] = "RothSquare",
+					["fontsize"] = 19,
 					["texture"] = "Tukui",
+					["font"] = "weezerfont",
 				},
 				["Brotuss - Zul'jin"] = {
 					["w"] = 447,

@@ -177,13 +177,13 @@ PawnCommon = {
 		["\"MrRobot\":ROGUE2"] = {
 			["IconTexturePath"] = 236286,
 			["PerCharacterOptions"] = {
+				["Malivant-Dalaran"] = {
+					["Visible"] = true,
+				},
 				["Vadder-Argent Dawn"] = {
 					["Visible"] = true,
 				},
 				["Panboozled-Runetotem"] = {
-					["Visible"] = true,
-				},
-				["Malivant-Dalaran"] = {
 					["Visible"] = true,
 				},
 			},
@@ -435,10 +435,10 @@ PawnCommon = {
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
-				["Vancard-Zul'jin"] = {
+				["Tyriinid-Dalaran"] = {
 					["Visible"] = true,
 				},
-				["Tyriinid-Dalaran"] = {
+				["Vancard-Zul'jin"] = {
 					["Visible"] = true,
 				},
 			},

@@ -14,5 +14,6 @@ Details_RaidInfo-Nighthold: disabled
 Details_RaidInfo-TombOfSargeras: disabled
 Details_RaidInfo-TrialOfValor: disabled
 ConsLegion: disabled
-DeathNote: disabled
+DeathNote: enabled
 Kui_Nameplates_BarAuras: disabled
+AllTheThings: disabled

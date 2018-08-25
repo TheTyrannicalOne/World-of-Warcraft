@@ -4182,18 +4182,6 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -4298,6 +4286,18 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
 							["disabled"] = true,
 						},
 					},
@@ -7594,7 +7594,7 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Skill deflects"] = {
@@ -7606,21 +7606,10 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
 							["disabled"] = true,
 						},
 					},
@@ -7731,6 +7720,7 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
+					["hideUnitNames"] = true,
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -7740,7 +7730,17 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["hideUnitNames"] = true,
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["hideSkillNames"] = true,
 				},
 				["Fantastiburo - Argent Dawn"] = {
@@ -9594,12 +9594,12 @@ ParrotDB = {
 					["fontOutline"] = "NONE",
 				},
 				["Shanyt - Argent Dawn"] = {
-					["stickyFont"] = "Prototype",
+					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["font"] = "Prototype",
-					["fontOutline"] = "NONE",
-					["fontSize"] = 16,
 					["stickyFontSize"] = 28,
+					["stickyFont"] = "Prototype",
+					["fontOutline"] = "NONE",
 				},
 				["Brotuss - Zul'jin"] = {
 					["fontSize"] = 16,
@@ -9754,12 +9754,12 @@ ParrotDB = {
 					["fontOutline"] = "NONE",
 				},
 				["Vancard - Zul'jin"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["stickyFontSize"] = 28,
-					["fontOutline"] = "NONE",
 					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
+					["fontOutline"] = "NONE",
 					["font"] = "Prototype",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
 				},
 				["Fantastiburo - Argent Dawn"] = {
 					["stickyFont"] = "Prototype",

@@ -1,0 +1,2 @@
+DeathNote: enabled
+AllTheThings: disabled

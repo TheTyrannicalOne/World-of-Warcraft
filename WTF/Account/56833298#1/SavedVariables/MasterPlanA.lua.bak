@@ -1,5 +1,7 @@
 
 MasterPlanAG = {
+	["IgnoreRewards"] = {
+	},
 	["Runetotem"] = {
 		["Migimong"] = {
 			["faction"] = "Alliance",
@@ -26,24 +28,6 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 		},
 	},
-	["Darkspear"] = {
-		["Shathiel"] = {
-			["faction"] = "Alliance",
-			["class"] = "MAGE",
-		},
-		["Brewnheimer"] = {
-			["faction"] = "Alliance",
-			["class"] = "SHAMAN",
-		},
-		["Dialdaas"] = {
-			["faction"] = "Alliance",
-			["class"] = "PALADIN",
-		},
-		["Serbitechna"] = {
-			["faction"] = "Alliance",
-			["class"] = "HUNTER",
-		},
-	},
 	["Zul'jin"] = {
 		["Tyrannithal"] = {
 			["faction"] = "Horde",
@@ -66,8 +50,8 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 		},
 		["Vancard"] = {
-			["class"] = "MAGE",
 			["faction"] = "Horde",
+			["class"] = "MAGE",
 		},
 		["Vaddor"] = {
 			["faction"] = "Horde",
@@ -132,6 +116,24 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 		},
 	},
+	["Darkspear"] = {
+		["Shathiel"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Serbitechna"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["Brewnheimer"] = {
+			["faction"] = "Alliance",
+			["class"] = "SHAMAN",
+		},
+		["Dialdaas"] = {
+			["faction"] = "Alliance",
+			["class"] = "PALADIN",
+		},
+	},
 	["Argent Dawn"] = {
 		["Tyrannithal"] = {
 			["class"] = "DEMONHUNTER",
@@ -170,27 +172,32 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Shanyt"] = {
-			["lastCacheTime"] = 1535082618,
+			["lastCacheTime"] = 1535161758,
 			["summary"] = {
-				["lastOilTime"] = 1535082634,
+				["lastOilTime"] = 1535150185,
 				["tt2"] = 1534037743,
 				["tt3"] = 1534468063,
-				["tt1"] = 1533940261,
+				["tt1"] = 1535153073,
 				["ti1"] = 118531,
 				["ti3"] = 127854,
 				["inProgress"] = {
-					[302] = 1535097521,
-					[745] = 1535147434,
-					[677] = 1535093908,
-					[538] = 1535104727,
+					[276] = 1535186174,
+					[126] = 1535164567,
+					[444] = 1535164563,
+					[328] = 1535178959,
+					[733] = 1535151983,
+					[189] = 1535152865,
+					[394] = 1535178961,
+					[130] = 1535157369,
+					[745] = 1535214985,
 				},
 				["ti2"] = 122486,
 			},
 			["faction"] = "Horde",
 			["cacheSize"] = 1000,
 			["class"] = "WARRIOR",
-			["curRes"] = 7045,
-			["curOil"] = 60775,
+			["curRes"] = 6946,
+			["curOil"] = 61420,
 		},
 		["Shaekhan"] = {
 			["class"] = "MONK",
