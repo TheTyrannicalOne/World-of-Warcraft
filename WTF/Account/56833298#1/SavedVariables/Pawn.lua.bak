@@ -4,7 +4,7 @@ PawnCommon = {
 	["AlignNumbersRight"] = false,
 	["ShowBagUpgradeAdvisor"] = true,
 	["ShowItemID"] = false,
-	["ShowRelicUpgrades"] = false,
+	["ShowRelicUpgrades"] = true,
 	["ShowValuesForUpgradesOnly"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
@@ -585,6 +585,15 @@ PawnCommon = {
 		["\"MrRobot\":DEATHKNIGHT1"] = {
 			["IconTexturePath"] = 135770,
 			["PerCharacterOptions"] = {
+<<<<<<< HEAD
+=======
+				["Vancard-Zul'jin"] = {
+					["Visible"] = true,
+				},
+				["Tyriinid-Dalaran"] = {
+					["Visible"] = true,
+				},
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["Color"] = "ff4d6b",
 			["LocalizedName"] = "Death Knight: Blood",
@@ -688,4 +697,15 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 	},
+<<<<<<< HEAD
+=======
+	["ShowSocketingAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ButtonPosition"] = 2,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
+	["LastVersion"] = 2.0226,
+	["Digits"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 }

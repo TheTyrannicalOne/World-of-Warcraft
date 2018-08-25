@@ -29,7 +29,7 @@ VWQL = {
 		["Filter"] = 63,
 	},
 	["Sort"] = 3,
-	["VERSION"] = 78,
+	["VERSION"] = 76,
 	["Jingojaggot-Zul'jin"] = {
 		["FilterType"] = {
 		},
@@ -77,6 +77,14 @@ VWQL = {
 	["Goramor-Runetotem"] = {
 		["FilterType"] = {
 		},
+<<<<<<< HEAD
+=======
+	},
+	["Vancard-Zul'jin"] = {
+		["Filter"] = 63,
+		["VERSION"] = 76,
+		["RegularQuestMode"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["Quests"] = {
 		},
 		["Filter"] = 63,
@@ -178,6 +186,14 @@ VWQL = {
 	["Sinh-Dalaran"] = {
 		["FilterType"] = {
 		},
+<<<<<<< HEAD
+=======
+	},
+	["Shanyt-ArgentDawn"] = {
+		["Filter"] = 63,
+		["VERSION"] = 76,
+		["RegularQuestMode"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["Quests"] = {
 		},
 		["Filter"] = 63,

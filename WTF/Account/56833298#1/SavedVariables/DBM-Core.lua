@@ -13,7 +13,11 @@ DBM_AllSavedOptions = {
 		["StatusEnabled"] = true,
 		["InfoFrameX"] = -406.401214599609,
 		["DontShowNameplateIcons"] = false,
+<<<<<<< HEAD
 		["CoreSavedRevision"] = 17731,
+=======
+		["CoreSavedRevision"] = 17702,
+>>>>>>> parent of 16a49338... addon updates
 		["RangeFrameX"] = 3.95071530342102,
 		["AlwaysShowSpeedKillTimer"] = true,
 		["RangeFrameY"] = -66.6227416992188,
@@ -92,6 +96,7 @@ DBM_AllSavedOptions = {
 			0.7, -- [2]
 			0, -- [3]
 		},
+<<<<<<< HEAD
 		["ShowFlashFrame"] = true,
 		["FilterInterrupt2"] = "TandFandBossCooldown",
 		["WarningFontStyle"] = "None",
@@ -120,6 +125,39 @@ DBM_AllSavedOptions = {
 		["LatencyThreshold"] = 250,
 		["AutoReplySound"] = true,
 		["DontShowHealthFrame"] = false,
+=======
+		["HelpMessageVersion"] = 3,
+		["WarningFontStyle"] = "None",
+		["FilterInterrupt2"] = "TandFandBossCooldown",
+		["InfoFrameY"] = 260.396026611328,
+		["ChatFrame"] = "DEFAULT_CHAT_FRAME",
+		["WarningIconRight"] = true,
+		["UseSoundChannel"] = "Master",
+		["AFKHealthWarning"] = false,
+		["HUDColor2"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["RangeFrameRadarX"] = 228.939483642578,
+		["SpecialWarningDuration"] = 4,
+		["ShowAllVersions"] = true,
+		["SpecialWarningSound"] = "Sound\\Spells\\PVPFlagTaken.ogg",
+		["HideQuestTooltips"] = true,
+		["ShowWarningsInChat"] = true,
+		["StripServerName"] = true,
+		["EventEngageSound"] = "",
+		["NewsMessageShown"] = 12,
+		["DontShowPTCountdownText"] = false,
+		["SpecialWarningSound3"] = "Interface\\AddOns\\DBM-Core\\sounds\\AirHorn.ogg",
+		["ShowGuildMessages"] = true,
+		["FilterDispel"] = true,
+		["HUDSize2"] = 5,
+		["AlwaysShowSpeedKillTimer2"] = false,
+		["LatencyThreshold"] = 250,
+		["BCTWMessageShown"] = false,
+		["DebugLevel"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 		["LFDEnhance"] = true,
 		["SpecialWarningFlashDura1"] = 0.4,
 		["DontShowPTNoID"] = false,
@@ -128,8 +166,13 @@ DBM_AllSavedOptions = {
 		["PGMessageShown2"] = false,
 		["SpecialWarningFontShadow"] = false,
 		["EventMusicMythicFilter"] = true,
+<<<<<<< HEAD
 		["RLReadyCheckSound"] = true,
 		["EventEngageMusic"] = "None",
+=======
+		["AutoReplySound"] = true,
+		["DontRestoreIcons"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		["WOTLKTWMessageShown"] = false,
 		["HideObjectivesFrame"] = true,
 		["SpecialWarningFlashCol1"] = {
@@ -137,6 +180,7 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
+<<<<<<< HEAD
 		["HideBossEmoteFrame2"] = true,
 		["DontShowPTText"] = false,
 		["DisableGuildStatus"] = false,
@@ -145,35 +189,46 @@ DBM_AllSavedOptions = {
 		["DontShowSpecialWarningText"] = false,
 		["RangeFrameSound2"] = "none",
 		["ShowPizzaMessage"] = true,
+=======
+		["Enabled"] = true,
+		["DontShowPTText"] = false,
+		["ForumsMessageShown"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
 			1, -- [3]
 		},
+		["SpecialWarningFontSize2"] = 35,
+		["DontShowSpecialWarningText"] = false,
+		["SpecialWarningFlashRepeat1"] = false,
+		["AdvancedAutologBosses"] = false,
+		["HUDAlpha4"] = 0.5,
 		["SpecialWarningFlashAlph2"] = 0.3,
 		["WarningPoint"] = "CENTER",
 		["PTCountThreshold"] = 5,
 		["AlwaysShowHealthFrame"] = false,
-		["HUDColor1"] = {
-			1, -- [1]
-			1, -- [2]
-			0, -- [3]
-		},
+		["SpecialWarningX"] = 0,
 		["EventVictorySound"] = "Interface\\AddOns\\DBM-Core\\sounds\\BlakbyrdAlerts\\bbvictory.ogg",
 		["HUDAlpha2"] = 0.5,
 		["SpecialWarningSound2"] = "Sound\\Creature\\AlgalonTheObserver\\UR_Algalon_BHole01.ogg",
 		["HUDSizeOverride"] = false,
 		["EventSoundDungeonBGM"] = "None",
+<<<<<<< HEAD
 		["DontShowBossAnnounces"] = false,
+=======
+		["SpecialWarningPoint"] = "CENTER",
+>>>>>>> parent of 16a49338... addon updates
 		["CountdownVoice2"] = "Kolt",
 		["AutoAcceptGuildInvite"] = false,
-		["FilterInterruptNoteName"] = false,
+		["HPFrameMaxEntries"] = 5,
 		["ArrowPosX"] = 0,
 		["ArrowPosY"] = -150,
 		["AITimer"] = true,
 		["SpecialWarningFlashDura3"] = 1,
 		["MovieFilter"] = "AfterFirst",
 		["HPFramePoint"] = "CENTER",
+<<<<<<< HEAD
 		["SpecialWarningSound4"] = "Sound\\Creature\\HoodWolf\\HoodWolfTransformPlayer01.ogg",
 		["EventSoundVictory"] = "Interface\\AddOns\\DBM-Core\\sounds\\Victory\\SmoothMcGroove_Fanfare.ogg",
 		["SpecialWarningFlashAlph4"] = 0.4,
@@ -186,6 +241,16 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
+=======
+		["InfoFrameLines"] = 0,
+		["SpecialWarningSound4"] = "Sound\\Creature\\HoodWolf\\HoodWolfTransformPlayer01.ogg",
+		["HUDSize1"] = 5,
+		["WarningX"] = 0,
+		["DisableSFX"] = false,
+		["AutologBosses"] = false,
+		["SpecialWarningFlashDura4"] = 0.7,
+		["HUDTexture4"] = "highlight",
+>>>>>>> parent of 16a49338... addon updates
 		["HealthFrameLocked"] = false,
 		["HUDSize4"] = 5,
 		["WarningColors"] = {
@@ -210,11 +275,18 @@ DBM_AllSavedOptions = {
 				["r"] = 1,
 			}, -- [4]
 		},
+<<<<<<< HEAD
 		["SpecialWarningFlashCol3"] = {
+=======
+		["SWarnClassColor"] = true,
+		["SWarningAlphabetical"] = true,
+		["HUDColor3"] = {
+>>>>>>> parent of 16a49338... addon updates
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+<<<<<<< HEAD
 		["SWarningAlphabetical"] = true,
 		["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
 		["BlockNoteShare"] = false,
@@ -232,6 +304,23 @@ DBM_AllSavedOptions = {
 		["RangeFrameUpdates"] = "Average",
 		["CountdownVoice3v2"] = "Pewsey",
 		["RoleSpecAlert"] = true,
+=======
+		["BlockNoteShare"] = false,
+		["WarningFontShadow"] = true,
+		["EventWipeSound"] = "None",
+		["WarningDuration"] = 4,
+		["ModelSoundValue"] = "Short",
+		["FilterSelfHud"] = true,
+		["SpecialWarningY"] = 75,
+		["FilterInterrupt"] = true,
+		["RangeFrameRadarPoint"] = "TOP",
+		["DontShowInfoFrame"] = false,
+		["DontShowRangeFrame"] = false,
+		["FilterTankSpec"] = true,
+		["RangeFrameUpdates"] = "Average",
+		["CountdownVoice3v2"] = "Pewsey",
+		["ShortTimerText"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["RaidWarningSound"] = "Sound\\Doodad\\BellTollNightElf.ogg",
 		["CustomSounds"] = 0,
 		["HUDAlpha3"] = 0.5,
@@ -240,10 +329,19 @@ DBM_AllSavedOptions = {
 		["WhisperStats"] = false,
 		["VoiceOverSpecW2"] = "DefaultOnly",
 		["WarningIconLeft"] = true,
+<<<<<<< HEAD
 		["MISTSTWMessageShown"] = false,
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 200,
+=======
+		["DontPlayPTCountdown"] = false,
+		["SpecialWarningFlashAlph5"] = 0.5,
+		["SpecialWarningDuration2"] = 1.5,
+		["HealthFrameWidth"] = 200,
+		["RangeFrameSound1"] = "none",
+		["ShowEngageMessage"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["RangeFrameLocked"] = false,
 		["ShowEngageMessage"] = true,
 		["RangeFrameSound1"] = "none",
@@ -252,15 +350,24 @@ DBM_AllSavedOptions = {
 		["EventSoundVictory2"] = "None",
 		["SpecialWarningFlashDura2"] = 0.4,
 		["LastRevision"] = 0,
+<<<<<<< HEAD
 		["HUDTexture1"] = "highlight",
 		["SettingsMessageShown"] = true,
 		["HideBossEmoteFrame"] = true,
 		["HUDColorOverride"] = false,
 		["HealthFrameGrowUp"] = false,
 		["DisableStatusWhisper"] = false,
+=======
+		["HUDColorOverride"] = false,
+		["SettingsMessageShown"] = true,
+		["DontPlayCountdowns"] = false,
+		["RangeFrameFrames"] = "radar",
+		["WarningY"] = 260,
+		["EventDungMusicMythicFilter"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["DontSetIcons"] = false,
 		["BigBrotherAnnounceToRaid"] = false,
-		["WarningY"] = 260,
+		["AutoRespond"] = true,
 		["SpecialWarningFlashRepeat4"] = false,
 		["DontRestoreRange"] = false,
 		["SpecialWarningFlashRepeat2"] = false,
@@ -277,16 +384,27 @@ DBM_AllSavedOptions = {
 		["DontPlayPTCountdown"] = false,
 		["SpecialWarningFlashAlph1"] = 0.3,
 		["ShowDefeatMessage"] = true,
+<<<<<<< HEAD
 		["FilterTankSpec"] = true,
 		["DontShowRangeFrame"] = false,
 		["SpecialWarningY"] = 75,
 		["WarningDuration"] = 4,
 		["WarningFontShadow"] = true,
 		["HUDColor3"] = {
+=======
+		["HUDAlphaOverride"] = false,
+		["WarningDuration2"] = 1.5,
+		["AutoCorrectTimer"] = false,
+		["InfoFrameShowSelf"] = false,
+		["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
+		["HUDTexture2"] = "highlight",
+		["SpecialWarningFlashCol3"] = {
+>>>>>>> parent of 16a49338... addon updates
 			1, -- [1]
 			0.5, -- [2]
 			0, -- [3]
 		},
+<<<<<<< HEAD
 		["SWarnClassColor"] = true,
 		["DontShowBossTimers"] = false,
 		["HUDTexture4"] = "highlight",
@@ -300,6 +418,28 @@ DBM_AllSavedOptions = {
 		["AutoAcceptFriendInvite"] = false,
 		["WarningIconChat"] = true,
 		["SpecialWarningX"] = 0,
+=======
+		["DontShowBossTimers"] = false,
+		["SpecialWarningFontStyle"] = "THICKOUTLINE",
+		["HUDColor4"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
+		["SpecialWarningFlashAlph4"] = 0.4,
+		["EventSoundVictory"] = "Interface\\AddOns\\DBM-Core\\sounds\\Victory\\SmoothMcGroove_Fanfare.ogg",
+		["WorldBossNearAlert"] = false,
+		["DontShowBossAnnounces"] = false,
+		["FilterInterruptNoteName"] = false,
+		["SpecialWarningFlashRepeatAmount"] = 2,
+		["AutoAcceptFriendInvite"] = false,
+		["WarningIconChat"] = true,
+		["HUDColor1"] = {
+			1, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
+>>>>>>> parent of 16a49338... addon updates
 		["HideGuildChallengeUpdates"] = true,
 		["SpecialWarningSound5"] = "Sound\\Creature\\Loathstare\\Loa_Naxx_Aggro02.ogg",
 		["DontSendYells"] = false,
@@ -307,6 +447,7 @@ DBM_AllSavedOptions = {
 		["AdvancedAutologBosses"] = false,
 		["SpecialWarningFlashRepeat1"] = false,
 		["EventRandomDefeat"] = true,
+<<<<<<< HEAD
 		["ForumsMessageShown"] = false,
 		["Enabled"] = true,
 		["DontRestoreIcons"] = false,
@@ -326,6 +467,23 @@ DBM_AllSavedOptions = {
 			0, -- [3]
 		},
 		["AFKHealthWarning"] = false,
+=======
+		["DisableGuildStatus"] = false,
+		["EventEngageMusic"] = "None",
+		["HideBossEmoteFrame2"] = true,
+		["EventSoundEngage"] = "",
+		["RLReadyCheckSound"] = true,
+		["ShowGuildMessagesPlus"] = false,
+		["DontShowHealthFrame"] = false,
+		["HUDTexture3"] = "highlight",
+		["LogOnlyRaidBosses"] = false,
+		["EventSoundMusic"] = "None",
+		["EventRandomMusic"] = false,
+		["EventSoundWipe"] = "None",
+		["HPFrameX"] = -304.808654785156,
+		["ShowRespawn"] = true,
+		["SpamBlockBossWhispers"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["CATATWMessageShown"] = false,
 		["HelpMessageVersion"] = 3,
 	},

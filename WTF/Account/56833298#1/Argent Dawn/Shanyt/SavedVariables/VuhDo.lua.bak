@@ -233,7 +233,11 @@ VUHDO_CONFIG = {
 			["USE_SHADOW"] = true,
 			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
 		},
+<<<<<<< HEAD
 		["isStacks"] = false,
+=======
+		["max_num"] = 3,
+>>>>>>> parent of 16a49338... addon updates
 		["COUNTER_TEXT"] = {
 			["X_ADJUST"] = -10,
 			["USE_MONO"] = false,
@@ -259,7 +263,17 @@ VUHDO_CONFIG = {
 		},
 		["isColor"] = false,
 		["isNoRangeFade"] = false,
+<<<<<<< HEAD
 		["max_num"] = 3,
+=======
+		["isStacks"] = 1,
+		["yAdjust"] = -2,
+		["version"] = 38,
+		["animate"] = true,
+		["timer"] = true,
+		["isName"] = false,
+		["xAdjust"] = -2,
+>>>>>>> parent of 16a49338... addon updates
 		["STORED_SETTINGS"] = {
 			["244086"] = {
 				["isStacks"] = false,
@@ -485,8 +499,13 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["253037"] = {
 				["isStacks"] = false,
+=======
+			["Feed Pool"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -527,8 +546,13 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["246848"] = {
 				["isStacks"] = false,
+=======
+			["Snobolled!"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -541,22 +565,37 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["251570"] = {
 				["isStacks"] = false,
+=======
+			["Destabilizing Energies"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["245050"] = {
 				["isStacks"] = false,
+=======
+			["Fixate"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["246706"] = {
 				["isStacks"] = false,
+=======
+			["Ice Patch"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -569,15 +608,25 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["249016"] = {
 				["isStacks"] = false,
+=======
+			["Grievous Throw"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["248815"] = {
 				["isStacks"] = false,
+=======
+			["Anima Font"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -590,7 +639,18 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["274271"] = {
+=======
+			["250006"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["244729"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = false,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -625,22 +685,36 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["249535"] = {
+=======
+			["245040"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
+<<<<<<< HEAD
 			["250224"] = {
 				["isStacks"] = false,
+=======
+			["Entrapped"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["272536"] = {
 				["isStacks"] = false,
+=======
+			["Froststorm Strike"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -653,8 +727,13 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["244729"] = {
 				["isStacks"] = false,
+=======
+			["Shield Bash"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -674,8 +753,13 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["248396"] = {
 				["isStacks"] = false,
+=======
+			["Slashing Talons"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -688,22 +772,37 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["245024"] = {
 				["isStacks"] = false,
+=======
+			["Lingering Gaze"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["262313"] = {
 				["isStacks"] = false,
+=======
+			["Pheromones"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["244517"] = {
 				["isStacks"] = false,
+=======
+			["Scary Fog"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -730,8 +829,13 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["245586"] = {
 				["isStacks"] = false,
+=======
+			["Infest"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -744,20 +848,46 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["247552"] = {
 				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
-			},
-			["244849"] = {
+=======
+			["254747"] = {
 				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Ground Slam"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+			["Flame Torrent"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+>>>>>>> parent of 16a49338... addon updates
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
+			["244849"] = {
+				["isStacks"] = false,
+=======
+			["Gravity Bomb"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
 		},
 		["version"] = 38,
 		["animate"] = true,
@@ -780,6 +910,2900 @@ VUHDO_CONFIG = {
 	["SHOW_INCOMING"] = true,
 	["HIDE_EMPTY_BUTTONS"] = false,
 	["OMIT_FOCUS"] = false,
+=======
+			["Encapsulated Pheromones"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Web Wrap"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Convert"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Purified"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Burning Wound"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Legion Flame"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fully Mutated"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Summon Ball Lightning"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["249535"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Hunger"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frost Blast"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Searing Flame"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["246706"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Marked Soul"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["245050"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Soul Fragment"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frozen"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Ionization"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Discharged Energy"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Bonecracker"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Maddening Shout"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Carnivorous Bite"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Plucked"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Poison Bomb"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Smoke Bomb"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arterial Cut"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244849"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Naked and Afraid"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244086"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Noise Cancelling"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Amber Prison"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Jasper Chains"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Reaching Attack"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Assassin's Mark"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Scorched"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Robbed Blind"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["273365"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["244091"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Set to Blow"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mangle"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["247641"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Quake Stomp"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["263372"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Clouded Mind"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Crimson Wake"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Incinerate Flesh"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244613"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Ancient Miasma"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Aggressive Behavior"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sunder Armor"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Magnetic Crush"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gall's Blast"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shadow Prison"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Heart of Fear"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Reshape Life"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Toxic Torment"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Overloaded Circuits"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Ominous Cackle"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frozen Bolt"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Roaring Flame"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Touch of Darkness"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Penetrating Cold"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Twisted Fate"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Visions of Demise"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Unseen Strike"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["265178"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["243961"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Sha Globe"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Flames of Passion"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Burning Sting"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Scorching Breath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Impale"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Bitter Thoughts"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arcing Energy"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arcane Resonance"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Rushing Winds"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fieroblast"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Explosive Slam"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Pillage"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Ignite Flesh"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Wind Step"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244094"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["271222"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["254452"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Overwhelming Assault"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Focused Lightning"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Matter Swap"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Slag Pot"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Brutal Strike"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Touch of Light"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sha Splash"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["247949"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Flaming Spear"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Rot Armor"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frost Beacon"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Tenderizing Strikes"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Screech"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Pact of the Darkfallen"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Icy Ground"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mortal Strike"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["265212"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Rend Flesh"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fiery Edge"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["248732"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Ignite Armor"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Charge"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["246220"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Breath of Fear"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["249015"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Gale Force Winds"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Life Drain"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Impaired Eyesight"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Blackout"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Triple Puncture"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Dead Zone"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fright"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["265662"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Searing Seeds"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Consuming Terror"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Freezing Breath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Pungency"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Corrupted Prison"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Disrupting Shadows"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Bathed in Light"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frozen Blood"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frostburn Formula"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Wrack"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fiery Combustion"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Heroic Will"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["248815"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Body Slam"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Defile"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Storm Cloud"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Hex of Confusion"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Suppression"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Dread Spray"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Troll Rush"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Waterspout"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Static Wound"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Dread Shadows"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["248332"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Kick Shell"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Incineration Security Measure"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["unbound plague"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244768"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["245024"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["262313"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["250669"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Overcharged"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Chilled to the Bone"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Corrupted Healing"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sonic Breath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gas Spore"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mark of the Fallen Champion"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Siphon Soul"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Burning Bile"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Blood Corruption: Earth"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["249014"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["The Widow's Kiss"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Exhale"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Crashing Thunder"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["253520"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Inferno Strike"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Stone Gaze"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Unleashed Wrath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Searing Light"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Amethyst Petrification"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Degradation"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Dulled Synapses"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244005"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Ravage"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Keen Eyesight"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Essence of the Blood Queen"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Toxic Link"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Pursuit"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Decapitate"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shadow Weakness"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fading Light"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fatal Strike"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Devastating Arc"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gut Spray"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Ice Tomb"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244949"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["245994"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Whirling"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Ice Storm"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Instability"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Corrosive Resin"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Flame Shock"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gouge Throat"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["248795"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Harvest Soul"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Wounded Pride"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Grasping Tendrils"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Energizing Smash"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arcing Lightning"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Crossed Over"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Spinning Pain Spike"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arcane Shock"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["249017"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Quicksand"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sha Corruption"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Jagged Knife"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Boiling Blood"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Slumber Spores"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Low Health"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sonic Screech"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Weak Points"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Maim"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Wildfire Spark"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Anima Ring"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Serpent's Vitality"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shockwave"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Soul Consumption"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shattered Ice"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Lash of Anguish"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Cleansing Waters"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Delirious Slash"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Keg Toss"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Dissonance Field"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sha Sear"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["253037"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Panic"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Slam"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["267821"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Blazing Sunlight"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Slimed"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["274358"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Pyroblast"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Acid-Drenched Mandibles"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Break"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shroud of Sorrow"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mesmerize"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Cinders"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Grievous Bite"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Consuming Darkness"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Stomp"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Rune of Blood"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Corrosive Blast"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mistress' Kiss"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Soul Sever"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Parasitic Growth"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shadowed Soul"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["248819"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Necrotic Plague"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Lightning Charge"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sunbeam"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Weakened Soul"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Faded Into Twilight"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shadowburn"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["246687"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Caustic Amber"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Cry of Terror"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Closed Circuit"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Eternal Darkness"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Rending Charge"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fan of Flames"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Soothing Breeze"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Cutter Laser Target"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["263334"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Trapped!"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Petrified"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Impaled"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Lightning Storm"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Deep Corruption"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["250224"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["272536"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["244517"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Jasper Petrification"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Improved Synapses"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Focused Defense"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Toxic Spores"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Foul Geyser"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Lightning Bolt"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Ancient Barrier"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Unbound Plague"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fiery Grip"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["262314"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["245586"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Hydro Lance"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["247552"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["249016"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Frost Breath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gastric Bloat"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Dark Parasite"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Terrorize"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Watery Entrenchment"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Force of Will"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Cho's Blast"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Riposte"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gouge"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fragile Bones"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Blistering Heat"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Iron Tomb"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Thick Bones"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Corruption Kick"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["264219"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Locked On"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mark of Anguish"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["274271"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Mutated Infection"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arcane Velocity"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["257974"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["246763"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Icy Shadows"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Blue Rays"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Lightning Conductor"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Injection"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sundering Bite"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Serious Wound"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Pinned Down"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Corrosion"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Penetrating Bolt"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Flame Arrows"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Pheromones of Zeal"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Touch of Sha"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["265129"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Spray"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Thundering Throw"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244071"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Focused Energy"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Constricting Chains"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["245121"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Blood Corruption: Death"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Overload"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Cobalt Mine Blast"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Exposed Veins"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frail Soul"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arterial Bleeding"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Icy Blood"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Explosive Tar"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244172"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Grievous Whirl"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Beast of Nightmares"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sand Trap"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Twilight Burst"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["272336"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["265360"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Aim"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Vengeful Strikes"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Dire Fixation"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gusting Bomb"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Laser Burn"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Arctic Freeze"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Huddle in Terror"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Acid Breath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["247687"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Eyes of the Empress"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Tetanus"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Paralytic Toxin"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Biting Chill"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Tormented"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sundering Blow"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Residue"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Malevolent Strikes"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Debilitation"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Garrote"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Voodoo Doll"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Iron Prison"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Genetic Alteration"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Electrified Waters"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Lightning Lash"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Black Blood of Go'rath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Iron Roots"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Waterlogged"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Clear Mind"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["246848"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Wind Storm"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Electrostatic Charge"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Lesson of Icarus"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Resonating Amber"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Frozen Solid"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Freeze"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Toxic Mist"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Engulfing Magic"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Fracture"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Overwhelming Corruption"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Poison Soaked Shell"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Malformed Blood"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Overcharge"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Defiled Ground"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Twilight Barrage"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Poison Cloud"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Crystal Prison Trap Effect"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Rend"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Volatile Ooze Adhesive"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Bloodletting"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mortal Rend"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Cobalt Petrification"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Flames of Galakrond"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["246208"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Hunter's Mark"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Shadow Breath"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Sara's Blessing"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Tail Lash"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Deadly Plague"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Necrotic Strike"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Bright Light"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Slicing Gale"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gushing Wound"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Gravity Crush"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244748"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Caustic Blood"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["248396"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Electrical Shock"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Instant Heal"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Venom Bolt Volley"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Superheated"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Consuming Magic"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["Mystic Buffet"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["246920"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+		},
+	},
+	["IS_USE_BUTTON_FACADE"] = false,
+	["BLIZZ_UI_HIDE_PARTY"] = 1,
+	["BLIZZ_UI_HIDE_TARGET"] = 1,
+	["SHOW_PLAYER_TAGS"] = true,
+	["LOCK_CLICKS_THROUGH"] = false,
+	["UPDATE_HOTS_MS"] = 250,
+	["MAX_EMERGENCIES"] = 6,
+	["OMIT_PLAYER_TARGETS"] = false,
+	["HIDE_PANELS_SOLO"] = false,
+	["CURRENT_PROFILE"] = "Shanyt: LUI-Towelliee",
+	["AUTO_PROFILES"] = {
+	},
+	["SHOW_INCOMING"] = true,
+>>>>>>> parent of 16a49338... addon updates
 	["SPELL_TRACE"] = {
 		["STORED"] = {
 			"1064", -- [1]
@@ -816,11 +3840,20 @@ VUHDO_CONFIG = {
 		["isMine"] = true,
 		["isOthers"] = false,
 	},
+<<<<<<< HEAD
 	["IS_CLIQUE_PASSTHROUGH"] = false,
 	["OMIT_SELF"] = false,
 	["IS_SHARE"] = true,
 	["AUTO_PROFILES"] = {
 	},
+=======
+	["IS_SHARE"] = true,
+	["HIDE_EMPTY_BUTTONS"] = false,
+	["IS_CLIQUE_PASSTHROUGH"] = false,
+	["OMIT_SELF"] = false,
+	["OMIT_FOCUS"] = 1,
+	["EMERGENCY_TRIGGER"] = 100,
+>>>>>>> parent of 16a49338... addon updates
 	["IS_ALWAYS_OVERWRITE_PROFILE"] = false,
 	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
 	["THREAT"] = {
@@ -846,12 +3879,21 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 650,
 			["x"] = 130,
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
 			["height"] = 66.9999847412109,
+=======
+			["y"] = 285.762573242188,
+			["x"] = 1557.64013671875,
+			["orientation"] = "TOPLEFT",
+			["relativePoint"] = "BOTTOMLEFT",
+			["scale"] = 1,
+			["height"] = 52.0000152587891,
+>>>>>>> parent of 16a49338... addon updates
 			["growth"] = "TOPLEFT",
 			["width"] = 89.9999847412109,
 		},
@@ -911,6 +3953,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -929,6 +3972,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -947,17 +4010,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\DESIB___.ttf",
+				["maxChars"] = 7,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 2,
+				["textSize"] = 20,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -977,11 +4049,35 @@ VUHDO_PANEL_SETUP = {
 			["maxRowsWhenLoose"] = 5,
 			["sideRightWidth"] = 6,
 			["headerWidth"] = 100,
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.8,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 44,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = false,
+			["showHeaders"] = false,
+>>>>>>> parent of 16a49338... addon updates
 			["totWidth"] = 30,
 			["showHeaders"] = true,
 			["isDamFlash"] = true,
 			["showTot"] = false,
 			["isPlayerOnTop"] = true,
+<<<<<<< HEAD
 			["manaBarHeight"] = 6,
 			["isTarClassColBack"] = false,
 			["targetOrientation"] = 1,
@@ -1008,6 +4104,34 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 120,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = 1,
+			["position"] = "TOPLEFT+TOPLEFT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["_spacing"] = 19.9999694824219,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = false,
+			["hideIrrelevant"] = false,
+			["position"] = 1,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [1]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -1018,12 +4142,21 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 885,
 			["x"] = 130,
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
 			["height"] = 235,
+=======
+			["y"] = 724,
+			["x"] = 369.3,
+			["orientation"] = "TOPLEFT",
+			["relativePoint"] = "BOTTOMLEFT",
+			["scale"] = 1,
+			["height"] = 35,
+>>>>>>> parent of 16a49338... addon updates
 			["growth"] = "TOPLEFT",
 			["width"] = 174.999984741211,
 		},
@@ -1037,10 +4170,13 @@ VUHDO_PANEL_SETUP = {
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
 			["ordering"] = 0,
+<<<<<<< HEAD
 			["groups"] = {
 				42, -- [1]
 				44, -- [2]
 			},
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["sort"] = 0,
 			["isReverse"] = false,
 		},
@@ -1076,6 +4212,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -1094,6 +4231,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -1112,17 +4269,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -1173,6 +4339,58 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = true,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["_spacing"] = 19,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [2]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -1183,12 +4401,21 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 425,
 			["x"] = 355,
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
 			["height"] = 200,
+=======
+			["y"] = 746,
+			["x"] = 567.3,
+			["orientation"] = "TOPLEFT",
+			["relativePoint"] = "BOTTOMLEFT",
+			["scale"] = 1,
+			["height"] = 30,
+>>>>>>> parent of 16a49338... addon updates
 			["growth"] = "TOPLEFT",
 			["width"] = 200,
 		},
@@ -1237,6 +4464,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -1255,6 +4483,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -1273,17 +4521,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -1333,6 +4590,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [3]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -1343,12 +4651,21 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 350,
 			["x"] = 430,
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
 			["height"] = 200,
+=======
+			["y"] = 621.3,
+			["x"] = 372,
+			["orientation"] = "TOPLEFT",
+			["relativePoint"] = "BOTTOMLEFT",
+			["scale"] = 1,
+			["height"] = 35,
+>>>>>>> parent of 16a49338... addon updates
 			["growth"] = "TOPLEFT",
 			["width"] = 200,
 		},
@@ -1397,6 +4714,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -1415,6 +4733,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -1433,17 +4771,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -1493,6 +4840,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = true,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [4]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -1503,8 +4901,13 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 275,
 			["x"] = 505,
+=======
+			["y"] = 518,
+			["x"] = 250,
+>>>>>>> parent of 16a49338... addon updates
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
@@ -1557,6 +4960,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -1575,6 +4979,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -1593,17 +5017,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -1653,6 +5086,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [5]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -1663,8 +5147,13 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 200,
 			["x"] = 580,
+=======
+			["y"] = 488,
+			["x"] = 280,
+>>>>>>> parent of 16a49338... addon updates
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
@@ -1717,6 +5206,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -1735,6 +5225,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -1753,17 +5263,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -1813,6 +5332,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [6]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -1823,8 +5393,13 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 125,
 			["x"] = 655,
+=======
+			["y"] = 458,
+			["x"] = 310,
+>>>>>>> parent of 16a49338... addon updates
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
@@ -1877,6 +5452,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -1895,6 +5471,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -1913,17 +5509,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -1973,6 +5578,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [7]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -1983,8 +5639,13 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = 50,
 			["x"] = 730,
+=======
+			["y"] = 428,
+			["x"] = 340,
+>>>>>>> parent of 16a49338... addon updates
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
@@ -2037,6 +5698,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -2055,6 +5717,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -2073,17 +5755,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -2133,6 +5824,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [8]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -2143,8 +5885,13 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = -25,
 			["x"] = 805,
+=======
+			["y"] = 398,
+			["x"] = 370,
+>>>>>>> parent of 16a49338... addon updates
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
@@ -2197,6 +5944,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -2215,6 +5963,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -2233,17 +6001,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -2293,6 +6070,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [9]
 	{
 		["OVERHEAL_TEXT"] = {
@@ -2303,8 +6131,13 @@ VUHDO_PANEL_SETUP = {
 			["xAdjust"] = 0,
 		},
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = -100,
 			["x"] = 880,
+=======
+			["y"] = 368,
+			["x"] = 400,
+>>>>>>> parent of 16a49338... addon updates
 			["orientation"] = "TOPLEFT",
 			["relativePoint"] = "BOTTOMLEFT",
 			["scale"] = 1,
@@ -2357,6 +6190,7 @@ VUHDO_PANEL_SETUP = {
 				["useOpacity"] = true,
 				["R"] = 0,
 				["useBackground"] = true,
+<<<<<<< HEAD
 				["O"] = 0.35,
 				["G"] = 0,
 				["B"] = 0,
@@ -2375,6 +6209,26 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["O"] = 0.4,
 				["B"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+				["B"] = 0,
+			},
+			["HEADER"] = {
+				["TG"] = 0.254,
+				["R"] = 0,
+				["TB"] = 1,
+				["barTexture"] = "Flat",
+				["G"] = 0,
+				["TR"] = 0.0429,
+				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
+				["TO"] = 0.89,
+				["useBackground"] = true,
+				["textSize"] = 15,
+				["useText"] = true,
+				["O"] = 0.95,
+				["B"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["BORDER"] = {
 				["edgeSize"] = 8,
@@ -2393,17 +6247,26 @@ VUHDO_PANEL_SETUP = {
 				["USE_MONO"] = false,
 				["useText"] = true,
 				["useOpacity"] = true,
+<<<<<<< HEAD
 				["font"] = "Interface\\AddOns\\VuhDo\\Fonts\\Emblem.ttf",
 				["maxChars"] = 0,
 				["USE_SHADOW"] = true,
 				["textSize"] = 10,
 				["textSizeLife"] = 8,
+=======
+				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+				["maxChars"] = 5,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["textSize"] = 19,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
 			["size"] = 40,
 		},
 		["SCALING"] = {
+<<<<<<< HEAD
 			["headerHeight"] = 12,
 			["alignBottom"] = false,
 			["arrangeHorizontal"] = false,
@@ -2453,6 +6316,57 @@ VUHDO_PANEL_SETUP = {
 			["mode"] = 1,
 			["verbose"] = false,
 		},
+=======
+			["headerHeight"] = 14,
+			["alignBottom"] = false,
+			["arrangeHorizontal"] = false,
+			["scale"] = 0.75,
+			["maxColumnsWhenStructured"] = 8,
+			["barHeight"] = 38,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["targetSpacing"] = 3,
+			["targetWidth"] = 30,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
+			["borderGapX"] = 2,
+			["sideLeftWidth"] = 6,
+			["headerWidth"] = 100,
+			["headerSpacing"] = 7,
+			["maxRowsWhenLoose"] = 6,
+			["manaBarHeight"] = 3,
+			["totSpacing"] = 3,
+			["isDamFlash"] = true,
+			["showHeaders"] = 1,
+			["totWidth"] = 30,
+			["showTot"] = false,
+			["isPlayerOnTop"] = true,
+			["sideRightWidth"] = 6,
+			["isTarClassColBack"] = false,
+			["showTarget"] = false,
+			["columnSpacing"] = 2,
+			["borderGapY"] = 4,
+			["barWidth"] = 119,
+			["rowSpacing"] = 2,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	}, -- [10]
 	["RAID_ICON_FILTER"] = {
 		true, -- [1]
@@ -2465,7 +6379,11 @@ VUHDO_PANEL_SETUP = {
 		true, -- [8]
 	},
 	["PANEL_COLOR"] = {
+<<<<<<< HEAD
 		["classColorsName"] = false,
+=======
+		["classColorsName"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 		["HEALTH_TEXT"] = {
 			["TR"] = 1,
 			["TO"] = 1,
@@ -2475,6 +6393,7 @@ VUHDO_PANEL_SETUP = {
 		},
 		["BARS"] = {
 			["useOpacity"] = true,
+<<<<<<< HEAD
 			["R"] = 0.7,
 			["useBackground"] = true,
 			["O"] = 1,
@@ -2490,6 +6409,30 @@ VUHDO_PANEL_SETUP = {
 		},
 	},
 	["HOTS"] = {
+=======
+			["R"] = 0,
+			["useBackground"] = true,
+			["O"] = 1,
+			["G"] = 0,
+			["B"] = 0,
+		},
+		["TEXT"] = {
+			["TR"] = 0.737,
+			["TO"] = 1,
+			["TB"] = 0.8189,
+			["useText"] = true,
+			["TG"] = 0.705,
+		},
+	},
+	["HOTS"] = {
+		["BARS"] = {
+			["radioValue"] = 1,
+			["width"] = 25,
+		},
+		["SLOTS"] = {
+			[10] = "BOUQUET_AOE Advice",
+		},
+>>>>>>> parent of 16a49338... addon updates
 		["COUNTER_TEXT"] = {
 			["X_ADJUST"] = -25,
 			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
@@ -2508,16 +6451,28 @@ VUHDO_PANEL_SETUP = {
 			["width"] = 25,
 		},
 		["TIMER_TEXT"] = {
+<<<<<<< HEAD
 			["X_ADJUST"] = 25,
 			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
 			["USE_MONO"] = false,
 			["Y_ADJUST"] = 0,
 			["SCALE"] = 60,
+=======
+			["X_ADJUST"] = 10,
+			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+			["USE_MONO"] = false,
+			["Y_ADJUST"] = 0,
+			["SCALE"] = 84,
+>>>>>>> parent of 16a49338... addon updates
 			["USE_SHADOW"] = false,
 			["ANCHOR"] = "BOTTOMRIGHT",
 			["USE_OUTLINE"] = true,
 		},
+<<<<<<< HEAD
 		["iconRadioValue"] = 1,
+=======
+		["radioValue"] = 20,
+>>>>>>> parent of 16a49338... addon updates
 		["SLOTCFG"] = {
 			["1"] = {
 				["scale"] = 1,
@@ -2570,8 +6525,13 @@ VUHDO_PANEL_SETUP = {
 				["others"] = false,
 			},
 		},
+<<<<<<< HEAD
 		["stacksRadioValue"] = 2,
 		["radioValue"] = 13,
+=======
+		["stacksRadioValue"] = 3,
+		["iconRadioValue"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 	},
 	["BAR_COLORS"] = {
 		["OVERHEAL_TEXT"] = {
@@ -2585,8 +6545,13 @@ VUHDO_PANEL_SETUP = {
 		["HOT7"] = {
 			["useBackground"] = true,
 			["R"] = 1,
+<<<<<<< HEAD
 			["G"] = 1,
 			["O"] = 0.75,
+=======
+			["O"] = 0.75,
+			["G"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 1,
 		},
 		["TARGET"] = {
@@ -2610,8 +6575,13 @@ VUHDO_PANEL_SETUP = {
 			["R"] = 1,
 			["TB"] = 0.6,
 			["G"] = 0.3,
+<<<<<<< HEAD
 			["TR"] = 1,
 			["useOpacity"] = false,
+=======
+			["useOpacity"] = false,
+			["TR"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["isFullDuration"] = false,
 			["TO"] = 1,
 			["isClock"] = false,
@@ -2624,8 +6594,13 @@ VUHDO_PANEL_SETUP = {
 		["DIRECTION"] = {
 			["useBackground"] = true,
 			["R"] = 1,
+<<<<<<< HEAD
 			["G"] = 0.4,
 			["O"] = 1,
+=======
+			["O"] = 1,
+			["G"] = 0.4,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0.4,
 		},
 		["EMERGENCY"] = {
@@ -2767,7 +6742,11 @@ VUHDO_PANEL_SETUP = {
 			["useOpacity"] = true,
 			["useBackground"] = false,
 			["useText"] = false,
+<<<<<<< HEAD
 			["O"] = 0.2,
+=======
+			["O"] = 0.5,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0.4,
 		},
 		["HOT9"] = {
@@ -2776,8 +6755,13 @@ VUHDO_PANEL_SETUP = {
 			["R"] = 0.3,
 			["TB"] = 1,
 			["G"] = 1,
+<<<<<<< HEAD
 			["TR"] = 0.6,
 			["useOpacity"] = false,
+=======
+			["useOpacity"] = false,
+			["TR"] = 0.6,
+>>>>>>> parent of 16a49338... addon updates
 			["isFullDuration"] = false,
 			["TO"] = 1,
 			["isClock"] = false,
@@ -2846,16 +6830,28 @@ VUHDO_PANEL_SETUP = {
 			["TR"] = 1,
 			["TO"] = 1,
 			["useOpacity"] = true,
+<<<<<<< HEAD
 			["useBackground"] = false,
 			["useText"] = false,
 			["O"] = 0.33,
 			["B"] = 0,
+=======
+			["useBackground"] = 1,
+			["useText"] = false,
+			["O"] = 0,
+			["B"] = 0.058,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["HOT6"] = {
 			["useBackground"] = true,
 			["R"] = 1,
+<<<<<<< HEAD
 			["G"] = 1,
 			["O"] = 0.75,
+=======
+			["O"] = 0.75,
+			["G"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 1,
 		},
 		["TARGET_ENEMY"] = {
@@ -2953,7 +6949,11 @@ VUHDO_PANEL_SETUP = {
 				["B"] = 0.2,
 			},
 			["isPumpDivineAegis"] = false,
+<<<<<<< HEAD
 			["isFadeOut"] = false,
+=======
+			["isFadeOut"] = true,
+>>>>>>> parent of 16a49338... addon updates
 			["isFlashWhenLow"] = false,
 			["showShieldAbsorb"] = true,
 			["useColorBack"] = true,
@@ -2977,8 +6977,13 @@ VUHDO_PANEL_SETUP = {
 			["R"] = 1,
 			["TB"] = 1,
 			["G"] = 0.3,
+<<<<<<< HEAD
 			["TR"] = 1,
 			["useOpacity"] = false,
+=======
+			["useOpacity"] = false,
+			["TR"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["isFullDuration"] = false,
 			["TO"] = 1,
 			["isClock"] = false,
@@ -2990,8 +6995,13 @@ VUHDO_PANEL_SETUP = {
 		["GCD_BAR"] = {
 			["useBackground"] = true,
 			["R"] = 0.4,
+<<<<<<< HEAD
 			["G"] = 0.4,
 			["O"] = 0.5,
+=======
+			["O"] = 0.5,
+			["G"] = 0.4,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0.4,
 		},
 		["HOT2"] = {
@@ -3000,8 +7010,13 @@ VUHDO_PANEL_SETUP = {
 			["R"] = 1,
 			["TB"] = 0.6,
 			["G"] = 1,
+<<<<<<< HEAD
 			["TR"] = 1,
 			["useOpacity"] = false,
+=======
+			["useOpacity"] = false,
+			["TR"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["isFullDuration"] = false,
 			["TO"] = 1,
 			["isClock"] = false,
@@ -3031,8 +7046,13 @@ VUHDO_PANEL_SETUP = {
 			["TR"] = 0,
 			["TO"] = 1,
 			["useOpacity"] = true,
+<<<<<<< HEAD
 			["useText"] = true,
 			["useBackground"] = true,
+=======
+			["useText"] = 1,
+			["useBackground"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["O"] = 1,
 			["B"] = 0.8,
 		},
@@ -3056,10 +7076,17 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0,
 			["TR"] = 0,
 			["TO"] = 0.5,
+<<<<<<< HEAD
 			["useOpacity"] = true,
 			["useBackground"] = false,
 			["useText"] = false,
 			["O"] = 0.25,
+=======
+			["useOpacity"] = 1,
+			["useBackground"] = false,
+			["useText"] = false,
+			["O"] = 0.51,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0,
 		},
 		["CLUSTER_FAIR"] = {
@@ -3075,7 +7102,11 @@ VUHDO_PANEL_SETUP = {
 			["O"] = 1,
 			["B"] = 0,
 		},
+<<<<<<< HEAD
 		["useDebuffIcon"] = false,
+=======
+		["useDebuffIcon"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 		["HOT_CHARGE_4"] = {
 			["TG"] = 1,
 			["R"] = 0.8,
@@ -3110,8 +7141,13 @@ VUHDO_PANEL_SETUP = {
 		["HOT8"] = {
 			["useBackground"] = true,
 			["R"] = 1,
+<<<<<<< HEAD
 			["G"] = 1,
 			["O"] = 0.75,
+=======
+			["O"] = 0.75,
+			["G"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 1,
 		},
 		["HOT10"] = {
@@ -3120,29 +7156,48 @@ VUHDO_PANEL_SETUP = {
 			["R"] = 0.3,
 			["TB"] = 0.3,
 			["G"] = 1,
+<<<<<<< HEAD
 			["TR"] = 0.6,
 			["useOpacity"] = false,
+=======
+			["useOpacity"] = false,
+			["TR"] = 0.6,
+>>>>>>> parent of 16a49338... addon updates
 			["isFullDuration"] = false,
 			["TO"] = 1,
 			["isClock"] = false,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
+<<<<<<< HEAD
 			["B"] = 0.3,
+=======
+			["B"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["THREAT"] = {
 			["LOW"] = {
 				["useBackground"] = true,
 				["R"] = 0,
+<<<<<<< HEAD
 				["G"] = 1,
 				["O"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 1,
 			},
 			["HIGH"] = {
 				["useBackground"] = true,
 				["R"] = 1,
+<<<<<<< HEAD
 				["G"] = 0,
 				["O"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 1,
 			},
 		},
@@ -3152,8 +7207,13 @@ VUHDO_PANEL_SETUP = {
 			["R"] = 0.3,
 			["TB"] = 1,
 			["G"] = 0.3,
+<<<<<<< HEAD
 			["TR"] = 0.6,
 			["useOpacity"] = false,
+=======
+			["useOpacity"] = false,
+			["TR"] = 0.6,
+>>>>>>> parent of 16a49338... addon updates
 			["isFullDuration"] = false,
 			["TO"] = 1,
 			["isClock"] = false,
@@ -3168,8 +7228,13 @@ VUHDO_PANEL_SETUP = {
 			["R"] = 1,
 			["TB"] = 1,
 			["G"] = 1,
+<<<<<<< HEAD
 			["TR"] = 1,
 			["useOpacity"] = false,
+=======
+			["useOpacity"] = false,
+			["TR"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["isFullDuration"] = false,
 			["TO"] = 1,
 			["isClock"] = false,
@@ -3195,22 +7260,37 @@ VUHDO_PANEL_SETUP = {
 			["GOOD"] = {
 				["useBackground"] = true,
 				["R"] = 0,
+<<<<<<< HEAD
 				["G"] = 1,
 				["O"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 0,
 			},
 			["LOW"] = {
 				["useBackground"] = true,
 				["R"] = 1,
+<<<<<<< HEAD
 				["G"] = 0,
 				["O"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 0,
 			},
 			["FAIR"] = {
 				["useBackground"] = true,
 				["R"] = 1,
+<<<<<<< HEAD
 				["G"] = 1,
 				["O"] = 1,
+=======
+				["O"] = 1,
+				["G"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 0,
 			},
 		},
@@ -3351,8 +7431,13 @@ VUHDO_BUFF_SETTINGS = {
 		["PANEL_BG_COLOR"] = {
 			["useBackground"] = true,
 			["R"] = 0,
+<<<<<<< HEAD
 			["G"] = 0,
 			["O"] = 0.5,
+=======
+			["O"] = 0.5,
+			["G"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0,
 		},
 		["SWATCH_COLOR_BUFF_LOW"] = {
@@ -3378,16 +7463,26 @@ VUHDO_BUFF_SETTINGS = {
 		["PANEL_BORDER_COLOR"] = {
 			["useBackground"] = true,
 			["R"] = 0,
+<<<<<<< HEAD
 			["G"] = 0,
 			["O"] = 0.5,
+=======
+			["O"] = 0.5,
+			["G"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0,
 		},
 		["BAR_COLORS_BACKGROUND"] = true,
 		["SWATCH_BG_COLOR"] = {
 			["useBackground"] = true,
 			["R"] = 0,
+<<<<<<< HEAD
 			["G"] = 0,
 			["O"] = 1,
+=======
+			["O"] = 1,
+			["G"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0,
 		},
 		["WHEEL_SMART_BUFF"] = false,
@@ -3395,17 +7490,29 @@ VUHDO_BUFF_SETTINGS = {
 		["SWATCH_BORDER_COLOR"] = {
 			["useBackground"] = true,
 			["R"] = 0.8,
+<<<<<<< HEAD
 			["G"] = 0.8,
 			["O"] = 0,
+=======
+			["O"] = 0,
+			["G"] = 0.8,
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0.8,
 		},
 		["REBUFF_AT_PERCENT"] = 25,
 		["PANEL_MAX_BUFFS"] = 5,
 		["POSITION"] = {
+<<<<<<< HEAD
 			["y"] = -130,
 			["x"] = 130,
 			["point"] = "TOPLEFT",
 			["relativePoint"] = "TOPLEFT",
+=======
+			["y"] = -230.396,
+			["x"] = -127.945,
+			["point"] = "RIGHT",
+			["relativePoint"] = "RIGHT",
+>>>>>>> parent of 16a49338... addon updates
 		},
 	},
 }
@@ -3597,6 +7704,7 @@ VUHDO_SPELLS_KEYBOARD = {
 		["alt1"] = {
 			"ALT-", -- [1]
 			"-w3", -- [2]
+<<<<<<< HEAD
 			"", -- [3]
 		},
 		["ctrl1"] = {
@@ -3604,6 +7712,15 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w5", -- [2]
 			"", -- [3]
 		},
+=======
+			"", -- [3]
+		},
+		["altctrl1"] = {
+			"ALT-CTRL-", -- [1]
+			"-w9", -- [2]
+			"", -- [3]
+		},
+>>>>>>> parent of 16a49338... addon updates
 		["alt2"] = {
 			"ALT-", -- [1]
 			"-w4", -- [2]
@@ -3629,9 +7746,15 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w13", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 		["altctrl1"] = {
 			"ALT-CTRL-", -- [1]
 			"-w9", -- [2]
+=======
+		["ctrl1"] = {
+			"CTRL-", -- [1]
+			"-w5", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["ctrl2"] = {
@@ -3691,6 +7814,7 @@ VUHDO_SPELLS_KEYBOARD = {
 		["alt1"] = {
 			"ALT-", -- [1]
 			"-w3", -- [2]
+<<<<<<< HEAD
 			"", -- [3]
 		},
 		["ctrl1"] = {
@@ -3698,6 +7822,15 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w5", -- [2]
 			"", -- [3]
 		},
+=======
+			"", -- [3]
+		},
+		["altctrl1"] = {
+			"ALT-CTRL-", -- [1]
+			"-w9", -- [2]
+			"", -- [3]
+		},
+>>>>>>> parent of 16a49338... addon updates
 		["alt2"] = {
 			"ALT-", -- [1]
 			"-w4", -- [2]
@@ -3723,9 +7856,15 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w13", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 		["altctrl1"] = {
 			"ALT-CTRL-", -- [1]
 			"-w9", -- [2]
+=======
+		["ctrl1"] = {
+			"CTRL-", -- [1]
+			"-w5", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["ctrl2"] = {
@@ -3739,15 +7878,24 @@ VUHDO_SPELLS_KEYBOARD = {
 	["SPELL11"] = "",
 }
 VUHDO_SPELL_CONFIG = {
+<<<<<<< HEAD
 	["IS_TOOLTIP_INFO"] = false,
 	["IS_LOAD_HOTS"] = false,
 	["smartCastModi"] = "all",
 	["IS_FIRE_OUT_FIGHT"] = false,
 	["IS_CANCEL_CURRENT"] = false,
+=======
+	["smartCastModi"] = "all",
+	["IS_LOAD_HOTS"] = false,
+	["IS_TOOLTIP_INFO"] = false,
+	["IS_FIRE_HOT"] = false,
+	["IS_AUTO_TARGET"] = false,
+>>>>>>> parent of 16a49338... addon updates
 	["IS_AUTO_FIRE"] = true,
 	["IS_FIRE_CUSTOM_2"] = false,
-	["IS_FIRE_GLOVES"] = false,
+	["IS_FIRE_TRINKET_2"] = false,
 	["IS_FIRE_TRINKET_1"] = false,
+<<<<<<< HEAD
 	["IS_AUTO_TARGET"] = false,
 	["autoBattleRez"] = true,
 	["FIRE_CUSTOM_1_SPELL"] = "",
@@ -3755,6 +7903,15 @@ VUHDO_SPELL_CONFIG = {
 	["IS_FIRE_TRINKET_2"] = false,
 	["IS_FIRE_CUSTOM_1"] = false,
 	["IS_FIRE_HOT"] = false,
+=======
+	["IS_CANCEL_CURRENT"] = false,
+	["autoBattleRez"] = true,
+	["FIRE_CUSTOM_1_SPELL"] = "",
+	["FIRE_CUSTOM_2_SPELL"] = "",
+	["IS_FIRE_GLOVES"] = false,
+	["IS_FIRE_CUSTOM_1"] = false,
+	["IS_FIRE_OUT_FIGHT"] = false,
+>>>>>>> parent of 16a49338... addon updates
 }
 VUHDO_BUFF_ORDER = {
 	["Battle Shout"] = 1,
@@ -3770,12 +7927,21 @@ VUHDO_SPEC_LAYOUTS = {
 VUHDO_GROUP_SIZE = 1
 VUHDO_RAID = {
 	["player"] = {
+<<<<<<< HEAD
 		["zone"] = "Kalimdor",
 		["baseRange"] = true,
 		["class"] = "WARRIOR",
 		["role"] = 61,
 		["sortMaxHp"] = 45420,
 		["map"] = "Kalimdor",
+=======
+		["zone"] = "Orgrimmar",
+		["baseRange"] = true,
+		["class"] = "WARRIOR",
+		["role"] = 61,
+		["sortMaxHp"] = 42660,
+		["map"] = "Orgrimmar",
+>>>>>>> parent of 16a49338... addon updates
 		["threat"] = 0,
 		["powermax"] = 100,
 		["threatPerc"] = 0,
@@ -3788,7 +7954,7 @@ VUHDO_RAID = {
 		["range"] = true,
 		["unit"] = "player",
 		["powertype"] = 1,
-		["healthmax"] = 45420,
+		["healthmax"] = 42660,
 		["dead"] = false,
 		["charmed"] = false,
 		["fullName"] = "Shanyt",
@@ -3796,7 +7962,7 @@ VUHDO_RAID = {
 		["aggro"] = false,
 		["visible"] = true,
 		["targetUnit"] = "target",
-		["health"] = 45420,
+		["health"] = 42660,
 		["className"] = "Warrior",
 		["afk"] = false,
 		["debuff"] = 0,
@@ -3810,6 +7976,7 @@ VUHDO_INDICATOR_CONFIG = {
 		["MOUSEOVER_HIGHLIGHT"] = "",
 		["AGGRO_BAR"] = "",
 		["BACKGROUND_BAR"] = "Background: Solid",
+<<<<<<< HEAD
 		["DAMAGE_FLASH_BAR"] = "",
 		["SIDE_LEFT"] = "",
 		["INCOMING_BAR"] = "",
@@ -3820,6 +7987,10 @@ VUHDO_INDICATOR_CONFIG = {
 		["BAR_BORDER"] = "Border: Multi + Aggro",
 		["HEALTH_BAR"] = "Health (generic, class col)",
 		["SWIFTMEND_INDICATOR"] = "Role Icon",
+=======
+		["SIDE_LEFT"] = "",
+		["CLUSTER_BORDER"] = "",
+>>>>>>> parent of 16a49338... addon updates
 		["HEALTH_BAR_PANEL"] = {
 			"", -- [1]
 			"", -- [2]
@@ -3832,6 +8003,17 @@ VUHDO_INDICATOR_CONFIG = {
 			"", -- [9]
 			"", -- [10]
 		},
+<<<<<<< HEAD
+=======
+		["SWIFTMEND_INDICATOR"] = "",
+		["THREAT_MARK"] = "Threat: Marks",
+		["MANA_BAR"] = "Manabars: Mana only",
+		["BAR_BORDER"] = "",
+		["SIDE_RIGHT"] = "",
+		["HEALTH_BAR"] = "Health (generic, class col)",
+		["DAMAGE_FLASH_BAR"] = "",
+		["INCOMING_BAR"] = "",
+>>>>>>> parent of 16a49338... addon updates
 	},
 	["CUSTOM"] = {
 		["THREAT_BAR"] = {
@@ -3853,12 +8035,26 @@ VUHDO_INDICATOR_CONFIG = {
 		["CLUSTER_BORDER"] = {
 			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
 			["WIDTH"] = 2,
+<<<<<<< HEAD
 		},
 		["SIDE_LEFT"] = {
 			["turnAxis"] = false,
 			["vertical"] = true,
 			["invertGrowth"] = false,
 			["TEXTURE"] = "VuhDo - Plain White",
+=======
+		},
+		["SIDE_LEFT"] = {
+			["turnAxis"] = false,
+			["vertical"] = true,
+			["invertGrowth"] = false,
+			["TEXTURE"] = "VuhDo - Polished Wood",
+		},
+		["HOT_BARS"] = {
+			["turnAxis"] = false,
+			["vertical"] = false,
+			["invertGrowth"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["SIDE_RIGHT"] = {
 			["turnAxis"] = false,
@@ -3866,7 +8062,16 @@ VUHDO_INDICATOR_CONFIG = {
 			["invertGrowth"] = false,
 			["TEXTURE"] = "VuhDo - Plain White",
 		},
+<<<<<<< HEAD
 		["HOT_BARS"] = {
+=======
+		["BAR_BORDER"] = {
+			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
+			["ADJUST"] = 0,
+			["WIDTH"] = 1,
+		},
+		["HEALTH_BAR"] = {
+>>>>>>> parent of 16a49338... addon updates
 			["turnAxis"] = false,
 			["vertical"] = false,
 			["invertGrowth"] = false,
@@ -3876,6 +8081,7 @@ VUHDO_INDICATOR_CONFIG = {
 			["invertGrowth"] = false,
 			["TEXTURE"] = "VuhDo - Pipe, light",
 		},
+<<<<<<< HEAD
 		["HEALTH_BAR"] = {
 			["turnAxis"] = false,
 			["vertical"] = false,
@@ -3886,6 +8092,8 @@ VUHDO_INDICATOR_CONFIG = {
 			["ADJUST"] = 1.0e-006,
 			["WIDTH"] = 1,
 		},
+=======
+>>>>>>> parent of 16a49338... addon updates
 		["SWIFTMEND_INDICATOR"] = {
 			["SCALE"] = 1,
 		},

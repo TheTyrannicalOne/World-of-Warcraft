@@ -21,7 +21,7 @@ VUHDO_CONFIG = {
 				["enable"] = true,
 				["thresh"] = 20000,
 			},
-			["ch"] = {
+			["coh"] = {
 				["enable"] = true,
 				["thresh"] = 15000,
 			},
@@ -45,17 +45,17 @@ VUHDO_CONFIG = {
 				["enable"] = true,
 				["thresh"] = 15000,
 			},
-			["coh"] = {
+			["ch"] = {
 				["enable"] = true,
 				["thresh"] = 15000,
 			},
 		},
 		["knownOnly"] = true,
 		["subIncOnlyCastTime"] = true,
-		["isGroupWise"] = false,
+		["isCooldown"] = true,
 		["refresh"] = 800,
 		["animate"] = true,
-		["isCooldown"] = true,
+		["isGroupWise"] = false,
 	},
 	["LOCK_PANELS"] = true,
 	["DEBUFF_TOOLTIP"] = true,
@@ -77,13 +77,13 @@ VUHDO_CONFIG = {
 	["IS_READY_CHECK_DISABLED"] = false,
 	["CLUSTER"] = {
 		["CONE_DEGREES"] = 360,
-		["RANGE_JUMP"] = 11,
 		["CHAIN_MAX_JUMP"] = 3,
-		["REFRESH"] = 180,
+		["RANGE_JUMP"] = 11,
+		["BELOW_HEALTH_PERC"] = 85,
 		["DISPLAY_DESTINATION"] = 2,
-		["ARE_TARGETS_RANDOM"] = true,
-		["RANGE"] = 30,
+		["COOLDOWN_SPELL"] = "",
 		["IS_NUMBER"] = true,
+		["RANGE"] = 30,
 		["MODE"] = 1,
 		["DISPLAY_SOURCE"] = 2,
 		["TEXT"] = {
@@ -100,18 +100,18 @@ VUHDO_CONFIG = {
 				["G"] = 0,
 				["TR"] = 1,
 				["TO"] = 1,
-				["useOpacity"] = true,
+				["B"] = 0,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0,
+				["useOpacity"] = true,
 			},
-			["USE_SHADOW"] = false,
 			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+			["USE_SHADOW"] = false,
 		},
 		["THRESH_GOOD"] = 5,
-		["COOLDOWN_SPELL"] = "",
-		["BELOW_HEALTH_PERC"] = 85,
+		["ARE_TARGETS_RANDOM"] = true,
+		["REFRESH"] = 180,
 		["THRESH_FAIR"] = 3,
 	},
 	["OMIT_MAIN_ASSIST"] = false,
@@ -130,8 +130,8 @@ VUHDO_CONFIG = {
 	["BLIZZ_UI_HIDE_FOCUS"] = 1,
 	["DETECT_DEBUFFS_IGNORE_NO_HARM"] = true,
 	["DETECT_DEBUFFS_IGNORE_BY_CLASS"] = true,
-	["RES_IS_SHOW_TEXT"] = false,
-	["IS_DC_SHIELD_DISABLED"] = false,
+	["SMARTCAST_BUFF"] = false,
+	["OMIT_MAIN_TANKS"] = false,
 	["CUSTOM_DEBUFF"] = {
 		["point"] = "TOPRIGHT",
 		["scale"] = 0.8,
@@ -645,11 +645,8 @@ VUHDO_CONFIG = {
 				["G"] = 0,
 				["TR"] = 1,
 				["TO"] = 1,
-				["useOpacity"] = true,
-				["useText"] = true,
-				["useBackground"] = true,
-				["O"] = 1,
 				["B"] = 0,
+<<<<<<< HEAD
 			},
 			["USE_SHADOW"] = true,
 			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
@@ -674,14 +671,17 @@ VUHDO_CONFIG = {
 				["TR"] = 0,
 				["TO"] = 1,
 				["useOpacity"] = true,
+=======
+>>>>>>> parent of 16a49338... addon updates
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0,
+				["useOpacity"] = true,
 			},
-			["USE_SHADOW"] = true,
 			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+			["USE_SHADOW"] = true,
 		},
+<<<<<<< HEAD
 		["isColor"] = false,
 		["isNoRangeFade"] = false,
 <<<<<<< HEAD
@@ -695,6 +695,8 @@ VUHDO_CONFIG = {
 =======
 		["max_num"] = 3,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 		["STORED_SETTINGS"] = {
 			["Dismantled Armor"] = {
 				["isStacks"] = 1,
@@ -955,7 +957,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Feed Pool"] = {
+			["Mystic Buffet"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -997,7 +999,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Snobolled!"] = {
+			["Destabilizing Energies"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1011,14 +1013,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Destabilizing Energies"] = {
+			["Snobolled!"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Fixate"] = {
+			["Venom Bolt Volley"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1026,10 +1028,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Ice Patch"] = {
 =======
 			["Mutated Plague"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Instant Heal"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1043,19 +1049,19 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Grievous Throw"] = {
+			["Electrical Shock"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Anima Font"] = {
-				["isStacks"] = 1,
+			["248396"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Whispers of Hethiss"] = {
 				["isStacks"] = 1,
@@ -1071,12 +1077,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["244729"] = {
-				["isStacks"] = false,
+			["Caustic Blood"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Static Shock"] = {
 				["isStacks"] = 1,
@@ -1113,14 +1119,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["245040"] = {
-				["isStacks"] = false,
+			["Bright Light"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
-			["Entrapped"] = {
+			["Shield Bash"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1128,10 +1134,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Froststorm Strike"] = {
 =======
 			["Body Heat"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Deadly Plague"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1145,7 +1155,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Shield Bash"] = {
+			["Entrapped"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1180,13 +1190,6 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Lingering Gaze"] = {
-				["isStacks"] = 1,
-				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
-			},
 			["Pheromones"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
@@ -1194,11 +1197,22 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+			["Lingering Gaze"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Scary Fog"] = {
 =======
 			["Burning Cinders"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Sara's Blessing"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1233,7 +1247,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Infest"] = {
+			["Shadow Breath"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1254,25 +1268,29 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Ground Slam"] = {
-				["isStacks"] = 1,
+			["246208"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Flame Torrent"] = {
 =======
 			["Convert"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Flames of Galakrond"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Gravity Bomb"] = {
+			["Cobalt Petrification"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1307,7 +1325,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Burning Wound"] = {
+			["Soul Fragment"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1322,10 +1340,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Fully Mutated"] = {
 =======
 			["Hunger"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Volatile Ooze Adhesive"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1354,56 +1376,64 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Frost Blast"] = {
 =======
 			["Overcharge"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Plucked"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Searing Flame"] = {
+			["Bonecracker"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["246706"] = {
-				["isStacks"] = false,
-				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
-				["isIcon"] = true,
-			},
-			["Marked Soul"] = {
+			["Poison Cloud"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["245050"] = {
-				["isStacks"] = false,
+			["Maddening Shout"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
+			["Defiled Ground"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Bloodletting"] = {
 =======
 			["Plucked"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Overcharge"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Frozen"] = {
+			["Malformed Blood"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1418,10 +1448,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Reaching Attack"] = {
 =======
 			["Arterial Cut"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Carnivorous Bite"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1429,23 +1463,28 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Bonecracker"] = {
 =======
 			["Volatile Ooze Adhesive"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Searing Flame"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Maddening Shout"] = {
+			["Marked Soul"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Poison Soaked Shell"] = {
 				["isStacks"] = 1,
@@ -1453,16 +1492,24 @@ VUHDO_CONFIG = {
 			["244849"] = {
 				["isStacks"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Overwhelming Corruption"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Soul Fragment"] = {
 =======
 			["Bloodletting"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Frost Blast"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1470,10 +1517,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Poison Bomb"] = {
 =======
 			["Amber Prison"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Fracture"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1488,10 +1539,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Discharged Energy"] = {
 =======
 			["Reaching Attack"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Engulfing Magic"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1499,17 +1554,22 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Carnivorous Bite"] = {
 =======
 			["Poison Soaked Shell"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["244849"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
-			["Naked and Afraid"] = {
+			["Toxic Mist"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1544,7 +1604,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Discharged Energy"] = {
+			["Arterial Cut"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1579,12 +1639,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["244091"] = {
-				["isStacks"] = false,
+			["Freeze"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Set to Blow"] = {
 				["isStacks"] = 1,
@@ -1628,7 +1688,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Crimson Wake"] = {
+			["Heart of Fear"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1643,10 +1703,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["244613"] = {
 				["isStacks"] = false,
 =======
 			["Twisted Fate"] = {
+=======
+			["Resonating Amber"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -1661,7 +1725,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Aggressive Behavior"] = {
+			["Lesson of Icarus"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1669,10 +1733,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Sunder Armor"] = {
 =======
 			["Scorching Breath"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Electrostatic Charge"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1686,7 +1754,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Gall's Blast"] = {
+			["Ignite Flesh"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1700,26 +1768,26 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Heart of Fear"] = {
+			["Crimson Wake"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Reshape Life"] = {
-				["isStacks"] = 1,
+			["244094"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
-			["Toxic Torment"] = {
-				["isStacks"] = 1,
+			["254452"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Overloaded Circuits"] = {
 				["isStacks"] = 1,
@@ -1742,7 +1810,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Roaring Flame"] = {
+			["Waterlogged"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1764,25 +1832,30 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Twisted Fate"] = {
 				["isStacks"] = 1,
 =======
 			["244613"] = {
 				["isStacks"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Overwhelming Assault"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
-			["Visions of Demise"] = {
+			["Matter Swap"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Unseen Strike"] = {
+			["Lightning Lash"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1797,15 +1870,20 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Slag Pot"] = {
 =======
 			["Pact of the Darkfallen"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["243961"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Sha Globe"] = {
 				["isStacks"] = 1,
@@ -1829,10 +1907,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Scorching Breath"] = {
 =======
 			["Sunder Armor"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Brutal Strike"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1846,7 +1928,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Bitter Thoughts"] = {
+			["Iron Prison"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1874,7 +1956,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Fieroblast"] = {
+			["Voodoo Doll"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1895,7 +1977,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Ignite Flesh"] = {
+			["Gall's Blast"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -1903,22 +1985,26 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Wind Step"] = {
 =======
 			["Screech"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Garrote"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["244094"] = {
-				["isStacks"] = false,
+			["Reshape Life"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["271222"] = {
 				["isStacks"] = false,
@@ -1927,34 +2013,42 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["254452"] = {
+			["Toxic Torment"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["244613"] = {
 				["isStacks"] = false,
 				["animate"] = true,
 				["timer"] = true,
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Overwhelming Assault"] = {
+			["Debilitation"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Focused Lightning"] = {
+			["Visions of Demise"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Matter Swap"] = {
+			["Slag Pot"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Pact of the Darkfallen"] = {
 				["isStacks"] = 1,
@@ -1972,13 +2066,16 @@ VUHDO_CONFIG = {
 =======
 			["Resonating Amber"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Sunder Armor"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Touch of Light"] = {
+			["Residue"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2006,7 +2103,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Rot Armor"] = {
+			["Sundering Blow"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2035,10 +2132,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["243961"] = {
 				["isStacks"] = false,
 =======
 			["Slag Pot"] = {
+=======
+			["Pact of the Darkfallen"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -2074,7 +2175,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Fiery Edge"] = {
+			["Ignite Armor"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2088,7 +2189,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Ignite Armor"] = {
+			["Fiery Edge"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2102,14 +2203,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["246220"] = {
-				["isStacks"] = false,
+			["Paralytic Toxin"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
-			["Breath of Fear"] = {
+			["Tetanus"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2151,7 +2252,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Triple Puncture"] = {
+			["Huddle in Terror"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2187,10 +2288,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Consuming Terror"] = {
 =======
 			["Pungency"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Laser Burn"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2225,14 +2330,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Bathed in Light"] = {
+			["Gusting Bomb"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Frozen Blood"] = {
+			["Dire Fixation"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2275,10 +2380,14 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Vengeful Strikes"] = {
 =======
 			["Defile"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Body Slam"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2286,10 +2395,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Body Slam"] = {
 =======
 			["Vengeful Strikes"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Defile"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2352,12 +2465,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["248332"] = {
-				["isStacks"] = false,
+			["Twilight Burst"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Kick Shell"] = {
 				["isStacks"] = 1,
@@ -2373,26 +2486,26 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["unbound plague"] = {
-				["isStacks"] = 1,
-				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
-			},
-			["244768"] = {
-				["isStacks"] = false,
-				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
-				["isIcon"] = true,
-			},
 			["245024"] = {
 				["isStacks"] = false,
 				["animate"] = true,
 				["timer"] = true,
 				["isColor"] = false,
 				["isIcon"] = true,
+			},
+			["Blood Corruption: Earth"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+			["unbound plague"] = {
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["262313"] = {
 				["isStacks"] = false,
@@ -2401,18 +2514,22 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["250669"] = {
-				["isStacks"] = false,
+			["Grievous Whirl"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["249014"] = {
 				["isStacks"] = false,
 =======
 			["Crashing Thunder"] = {
+=======
+			["Overcharged"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -2420,7 +2537,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Chilled to the Bone"] = {
+			["Explosive Tar"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2435,16 +2552,21 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["The Widow's Kiss"] = {
 				["isStacks"] = 1,
 =======
 			["253520"] = {
 				["isStacks"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Sonic Breath"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Gas Spore"] = {
 				["isStacks"] = 1,
@@ -2474,9 +2596,10 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Blood Corruption: Earth"] = {
-				["isStacks"] = 1,
+			["244768"] = {
+				["isStacks"] = false,
 				["animate"] = true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 				["isIcon"] = true,
 				["isColor"] = false,
@@ -2496,44 +2619,12 @@ VUHDO_CONFIG = {
 =======
 				["isIcon"] = true,
 >>>>>>> parent of 76f5add1... addon updates
-				["isColor"] = false,
-				["timer"] = true,
-			},
-<<<<<<< HEAD
-			["Exhale"] = {
 =======
-			["Overcharged"] = {
->>>>>>> parent of 76f5add1... addon updates
-				["isStacks"] = 1,
-				["animate"] = true,
+				["timer"] = true,
+>>>>>>> parent of 16a49338... addon updates
+				["isColor"] = false,
 				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
 			},
-<<<<<<< HEAD
-			["Overcharged"] = {
-=======
-			["Sonic Breath"] = {
->>>>>>> parent of 76f5add1... addon updates
-				["isStacks"] = 1,
-				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
-			},
-<<<<<<< HEAD
-			["Sonic Breath"] = {
-=======
-			["Exhale"] = {
->>>>>>> parent of 76f5add1... addon updates
-				["isStacks"] = 1,
-				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
-				["timer"] = true,
-			},
-<<<<<<< HEAD
-=======
 			["249014"] = {
 				["isStacks"] = false,
 				["animate"] = true,
@@ -2541,6 +2632,65 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
+<<<<<<< HEAD
+<<<<<<< HEAD
+			["Exhale"] = {
+=======
+			["Overcharged"] = {
+>>>>>>> parent of 76f5add1... addon updates
+=======
+			["The Widow's Kiss"] = {
+>>>>>>> parent of 16a49338... addon updates
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
+<<<<<<< HEAD
+			["Overcharged"] = {
+=======
+			["Sonic Breath"] = {
+>>>>>>> parent of 76f5add1... addon updates
+=======
+			["Exposed Veins"] = {
+>>>>>>> parent of 16a49338... addon updates
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
+<<<<<<< HEAD
+			["Sonic Breath"] = {
+=======
+			["Exhale"] = {
+>>>>>>> parent of 76f5add1... addon updates
+=======
+			["Crashing Thunder"] = {
+>>>>>>> parent of 16a49338... addon updates
+				["isStacks"] = 1,
+				["animate"] = true,
+				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
+			},
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			["249014"] = {
+=======
+			["253520"] = {
+>>>>>>> parent of 16a49338... addon updates
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+<<<<<<< HEAD
 			["The Widow's Kiss"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
@@ -2550,6 +2700,9 @@ VUHDO_CONFIG = {
 			},
 >>>>>>> parent of 76f5add1... addon updates
 			["Inferno Strike"] = {
+=======
+			["Cobalt Mine Blast"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2606,15 +2759,20 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Ravage"] = {
 =======
 			["Keen Eyesight"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["245121"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Ravage"] = {
 				["isStacks"] = 1,
@@ -2623,7 +2781,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Essence of the Blood Queen"] = {
+			["Constricting Chains"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2638,22 +2796,26 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Pursuit"] = {
 =======
 			["Shadow Weakness"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Focused Energy"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Decapitate"] = {
-				["isStacks"] = 1,
+			["244071"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Pursuit"] = {
 				["isStacks"] = 1,
@@ -2676,7 +2838,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Devastating Arc"] = {
+			["Thundering Throw"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2705,17 +2867,22 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["245994"] = {
 				["isStacks"] = false,
 =======
 			["Thundering Throw"] = {
 				["isStacks"] = 1,
+=======
+			["245994"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
-			["Corrosive Resin"] = {
+			["Spray"] = {
 				["isStacks"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -2730,16 +2897,21 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Ice Storm"] = {
 =======
 			["Instability"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["265129"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 <<<<<<< HEAD
 			["Instability"] = {
@@ -2753,10 +2925,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Corrosive Resin"] = {
 =======
 			["Flame Shock"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Touch of Sha"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2770,6 +2946,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Gouge Throat"] = {
 				["isStacks"] = 1,
@@ -2784,10 +2961,14 @@ VUHDO_CONFIG = {
 			},
 			["248795"] = {
 				["isStacks"] = false,
+=======
+			["Pheromones of Zeal"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Harvest Soul"] = {
 				["isStacks"] = 1,
@@ -2824,14 +3005,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Crossed Over"] = {
+			["Penetrating Bolt"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Spinning Pain Spike"] = {
+			["Corrosion"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2845,14 +3026,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["249017"] = {
-				["isStacks"] = false,
+			["Pinned Down"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
-			["Quicksand"] = {
+			["Sonic Screech"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2860,10 +3041,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Sha Corruption"] = {
 =======
 			["Maim"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Sundering Bite"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2892,24 +3077,28 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Shockwave"] = {
 =======
 			["Dissonance Field"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Low Health"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Sonic Screech"] = {
+			["Quicksand"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Weak Points"] = {
+			["Cleansing Waters"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2930,7 +3119,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Anima Ring"] = {
+			["Delirious Slash"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2945,10 +3134,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Dissonance Field"] = {
 =======
 			["Low Health"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Shockwave"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -2963,15 +3156,20 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Shattered Ice"] = {
 =======
 			["Pyroblast"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["246763"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Lash of Anguish"] = {
 				["isStacks"] = 1,
@@ -2980,21 +3178,21 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Cleansing Waters"] = {
+			["Weak Points"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Delirious Slash"] = {
+			["Anima Ring"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Keg Toss"] = {
+			["Acid-Drenched Mandibles"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3002,10 +3200,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Low Health"] = {
 =======
 			["Shockwave"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Dissonance Field"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3040,12 +3242,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["267821"] = {
-				["isStacks"] = false,
+			["Arcane Velocity"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Blazing Sunlight"] = {
 				["isStacks"] = 1,
@@ -3055,10 +3257,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Slimed"] = {
 =======
 			["Soul Sever"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Mutated Infection"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3079,7 +3285,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Acid-Drenched Mandibles"] = {
+			["Keg Toss"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3087,15 +3293,20 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Break"] = {
 =======
 			["Shadowed Soul"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["274271"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Shroud of Sorrow"] = {
 				["isStacks"] = 1,
@@ -3111,7 +3322,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Cinders"] = {
+			["Mark of Anguish"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3167,7 +3378,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Parasitic Growth"] = {
+			["Locked On"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3181,7 +3392,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["248819"] = {
+			["264219"] = {
 				["isStacks"] = false,
 				["animate"] = true,
 				["timer"] = true,
@@ -3195,7 +3406,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Lightning Charge"] = {
+			["Corruption Kick"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3223,7 +3434,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Shadowburn"] = {
+			["Thick Bones"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3231,10 +3442,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["246687"] = {
 				["isStacks"] = false,
 =======
 			["Soothing Breeze"] = {
+=======
+			["Iron Tomb"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -3299,15 +3514,20 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["263334"] = {
 =======
 			["244517"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = false,
+=======
+			["Blistering Heat"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Trapped!"] = {
 				["isStacks"] = 1,
@@ -3323,7 +3543,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Impaled"] = {
+			["Fragile Bones"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3331,10 +3551,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Lightning Storm"] = {
 =======
 			["Improved Synapses"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Gouge"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3369,7 +3593,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Jasper Petrification"] = {
+			["Riposte"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3377,10 +3601,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Improved Synapses"] = {
 =======
 			["Lightning Storm"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Lightning Bolt"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3409,10 +3637,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Lightning Bolt"] = {
 =======
 			["Blistering Heat"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Lightning Storm"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3427,16 +3659,21 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Unbound Plague"] = {
 				["isStacks"] = 1,
 =======
 			["245586"] = {
 				["isStacks"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Force of Will"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Fiery Grip"] = {
 				["isStacks"] = 1,
@@ -3453,6 +3690,7 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["245586"] = {
 				["isStacks"] = false,
 				["animate"] = true,
@@ -3463,20 +3701,28 @@ VUHDO_CONFIG = {
 			["Hydro Lance"] = {
 =======
 			["Unbound Plague"] = {
+=======
+			["Hydro Lance"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Force of Will"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Unbound Plague"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["247552"] = {
 				["isStacks"] = false,
 				["animate"] = true,
@@ -3486,10 +3732,14 @@ VUHDO_CONFIG = {
 			},
 			["249016"] = {
 				["isStacks"] = false,
+=======
+			["Terrorize"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["247552"] = {
 				["isStacks"] = false,
@@ -3520,15 +3770,20 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Terrorize"] = {
 =======
 			["Gastric Bloat"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["249016"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Watery Entrenchment"] = {
 				["isStacks"] = 1,
@@ -3538,15 +3793,20 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Force of Will"] = {
 =======
 			["Hydro Lance"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["245586"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Cho's Blast"] = {
 				["isStacks"] = 1,
@@ -3555,7 +3815,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Riposte"] = {
+			["Jasper Petrification"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3563,50 +3823,67 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Gouge"] = {
 =======
 			["Toxic Spores"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Improved Synapses"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Fragile Bones"] = {
+			["Impaled"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Blistering Heat"] = {
 =======
 			["Lightning Bolt"] = {
 >>>>>>> parent of 76f5add1... addon updates
 				["isStacks"] = 1,
+=======
+			["244517"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Iron Tomb"] = {
 =======
 			["Petrified"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Soothing Breeze"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Thick Bones"] = {
 =======
 			["Cutter Laser Target"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Shadowburn"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3614,24 +3891,28 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Corruption Kick"] = {
 =======
 			["Eternal Darkness"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Lightning Charge"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["264219"] = {
+			["248819"] = {
 				["isStacks"] = false,
 				["animate"] = true,
 				["timer"] = true,
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Locked On"] = {
+			["Parasitic Growth"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3639,16 +3920,21 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Mark of Anguish"] = {
 =======
 			["Mutated Infection"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Cinders"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["274271"] = {
 				["isStacks"] = false,
@@ -3661,17 +3947,24 @@ VUHDO_CONFIG = {
 =======
 			["Cry of Terror"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Shadowed Soul"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Arcane Velocity"] = {
 =======
 			["Mark of Anguish"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Soul Sever"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3679,10 +3972,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["257974"] = {
 =======
 			["246763"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["267821"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = false,
 				["animate"] = true,
 				["timer"] = true,
@@ -3697,8 +3994,12 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			["Arcane Velocity"] = {
+=======
+			["Pyroblast"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3735,10 +4036,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Sundering Bite"] = {
 =======
 			["Wildfire Spark"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Maim"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3752,28 +4057,41 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 			["Pinned Down"] = {
 <<<<<<< HEAD
 				["isStacks"] = 1,
+=======
+			["249017"] = {
+				["isStacks"] = false,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
+<<<<<<< HEAD
 			["Corrosion"] = {
 =======
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Spinning Pain Spike"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Penetrating Bolt"] = {
 =======
 			["Corrosion"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Crossed Over"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3788,10 +4106,21 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Pheromones of Zeal"] = {
 =======
 			["Flame Arrows"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["248795"] = {
+				["isStacks"] = false,
+				["animate"] = true,
+				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
+			},
+			["Flame Shock"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3799,16 +4128,21 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Touch of Sha"] = {
 =======
 			["Pheromones of Zeal"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Instability"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["265129"] = {
 				["isStacks"] = false,
@@ -3822,12 +4156,16 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 			["Spray"] = {
+=======
+			["Corrosive Resin"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Thundering Throw"] = {
 				["isStacks"] = 1,
@@ -3835,30 +4173,31 @@ VUHDO_CONFIG = {
 			["265129"] = {
 				["isStacks"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Devastating Arc"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
-			["245994"] = {
-				["isStacks"] = false,
+			["Decapitate"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
-			},
-			["244071"] = {
-				["isStacks"] = false,
-				["animate"] = true,
-				["timer"] = true,
 				["isColor"] = false,
-				["isIcon"] = true,
+				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["244071"] = {
 				["isStacks"] = false,
 =======
 			["Focused Energy"] = {
+=======
+			["Shadow Weakness"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -3866,6 +4205,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Focused Energy"] = {
 				["isStacks"] = 1,
@@ -3873,12 +4213,16 @@ VUHDO_CONFIG = {
 			["245121"] = {
 				["isStacks"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Essence of the Blood Queen"] = {
+				["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
-			["Constricting Chains"] = {
+			["Keen Eyesight"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3906,14 +4250,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Cobalt Mine Blast"] = {
+			["Inferno Strike"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Exposed Veins"] = {
+			["Exhale"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3941,7 +4285,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Explosive Tar"] = {
+			["Chilled to the Bone"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -3955,12 +4299,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Grievous Whirl"] = {
-				["isStacks"] = 1,
+			["250669"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Beast of Nightmares"] = {
 				["isStacks"] = 1,
@@ -3976,12 +4320,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Twilight Burst"] = {
-				["isStacks"] = 1,
+			["248332"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["272336"] = {
 				["isStacks"] = false,
@@ -4005,10 +4349,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Defile"] = {
 =======
 			["Body Slam"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Vengeful Strikes"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4016,10 +4364,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Dire Fixation"] = {
 =======
 			["Gusting Bomb"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Frozen Blood"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4027,17 +4379,21 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Gusting Bomb"] = {
 =======
 			["Dire Fixation"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Bathed in Light"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Laser Burn"] = {
+			["Pungency"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4051,7 +4407,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Huddle in Terror"] = {
+			["Triple Puncture"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4079,19 +4435,19 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Tetanus"] = {
+			["Breath of Fear"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Paralytic Toxin"] = {
-				["isStacks"] = 1,
+			["246220"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Biting Chill"] = {
 				["isStacks"] = 1,
@@ -4107,14 +4463,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Sundering Blow"] = {
+			["Rot Armor"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Residue"] = {
+			["Touch of Light"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4128,7 +4484,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Debilitation"] = {
+			["Focused Lightning"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4136,24 +4492,28 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Garrote"] = {
 =======
 			["Frost Beacon"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Screech"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Voodoo Doll"] = {
+			["Fieroblast"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Iron Prison"] = {
+			["Bitter Thoughts"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4174,7 +4534,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Lightning Lash"] = {
+			["Unseen Strike"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4195,7 +4555,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Waterlogged"] = {
+			["Roaring Flame"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4224,17 +4584,21 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Electrostatic Charge"] = {
 =======
 			["Arcing Energy"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Scorching Breath"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Lesson of Icarus"] = {
+			["Aggressive Behavior"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4242,10 +4606,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Resonating Amber"] = {
 =======
 			["Brutal Strike"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Twisted Fate"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4260,10 +4628,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Freeze"] = {
 				["isStacks"] = 1,
 =======
 			["263372"] = {
+=======
+			["244091"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = false,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -4271,51 +4643,67 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Toxic Mist"] = {
+			["Naked and Afraid"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Engulfing Magic"] = {
 =======
 			["Mangle"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Discharged Energy"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Fracture"] = {
 =======
 			["Robbed Blind"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Amber Prison"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["Overwhelming Corruption"] = {
 =======
 			["Scorched"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Poison Soaked Shell"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["244849"] = {
 				["isStacks"] = false,
 =======
 			["Carnivorous Bite"] = {
+=======
+			["Reaching Attack"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
 				["animate"] = true,
@@ -4323,7 +4711,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
-			["Malformed Blood"] = {
+			["Frozen"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4331,22 +4719,26 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Overcharge"] = {
 =======
 			["Frost Blast"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Bloodletting"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Defiled Ground"] = {
-				["isStacks"] = 1,
+			["245050"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Twilight Barrage"] = {
 				["isStacks"] = 1,
@@ -4355,12 +4747,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Poison Cloud"] = {
-				["isStacks"] = 1,
+			["246706"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Crystal Prison Trap Effect"] = {
 				["isStacks"] = 1,
@@ -4377,10 +4769,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Volatile Ooze Adhesive"] = {
 =======
 			["Bonecracker"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Hunger"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4388,10 +4784,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Plucked"] = {
 =======
 			["Soul Fragment"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Burning Wound"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4405,26 +4805,26 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Cobalt Petrification"] = {
+			["Gravity Bomb"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Flames of Galakrond"] = {
+			["Convert"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["246208"] = {
-				["isStacks"] = false,
+			["Ground Slam"] = {
+				["isStacks"] = 1,
 				["animate"] = true,
-				["timer"] = true,
-				["isColor"] = false,
 				["isIcon"] = true,
+				["isColor"] = false,
+				["timer"] = true,
 			},
 			["Hunter's Mark"] = {
 				["isStacks"] = 1,
@@ -4433,14 +4833,14 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Shadow Breath"] = {
+			["Infest"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Sara's Blessing"] = {
+			["Burning Cinders"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4455,10 +4855,14 @@ VUHDO_CONFIG = {
 				["timer"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["Deadly Plague"] = {
 =======
 			["Slashing Talons"] = {
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["Body Heat"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4472,12 +4876,12 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Bright Light"] = {
-				["isStacks"] = 1,
+			["245040"] = {
+				["isStacks"] = false,
 				["animate"] = true,
-				["isIcon"] = true,
-				["isColor"] = false,
 				["timer"] = true,
+				["isColor"] = false,
+				["isIcon"] = true,
 			},
 			["Slicing Gale"] = {
 				["isStacks"] = 1,
@@ -4508,22 +4912,31 @@ VUHDO_CONFIG = {
 				["isIcon"] = true,
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			["248396"] = {
+=======
+			["244729"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = false,
 				["animate"] = true,
 				["timer"] = true,
 				["isColor"] = false,
 				["isIcon"] = true,
 			},
+<<<<<<< HEAD
 >>>>>>> parent of 76f5add1... addon updates
 			["Caustic Blood"] = {
+=======
+			["Anima Font"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["248396"] = {
 				["isStacks"] = false,
@@ -4535,20 +4948,23 @@ VUHDO_CONFIG = {
 =======
 >>>>>>> parent of 76f5add1... addon updates
 			["Electrical Shock"] = {
+=======
+			["Grievous Throw"] = {
+>>>>>>> parent of 16a49338... addon updates
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Instant Heal"] = {
+			["Mutated Plague"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Venom Bolt Volley"] = {
+			["Fixate"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4569,7 +4985,7 @@ VUHDO_CONFIG = {
 				["isColor"] = false,
 				["timer"] = true,
 			},
-			["Mystic Buffet"] = {
+			["Feed Pool"] = {
 				["isStacks"] = 1,
 				["animate"] = true,
 				["isIcon"] = true,
@@ -4587,31 +5003,67 @@ VUHDO_CONFIG = {
 <<<<<<< HEAD
 =======
 		["version"] = 38,
+		["isColor"] = false,
+		["isNoRangeFade"] = false,
+		["max_num"] = 3,
+		["yAdjust"] = -2,
+		["COUNTER_TEXT"] = {
+			["X_ADJUST"] = -10,
+			["USE_MONO"] = false,
+			["Y_ADJUST"] = -15,
+			["ANCHOR"] = "TOPLEFT",
+			["USE_OUTLINE"] = false,
+			["SCALE"] = 70,
+			["COLOR"] = {
+				["TG"] = 1,
+				["R"] = 0,
+				["TB"] = 0,
+				["G"] = 0,
+				["TR"] = 0,
+				["TO"] = 1,
+				["B"] = 0,
+				["useText"] = true,
+				["useBackground"] = true,
+				["O"] = 1,
+				["useOpacity"] = true,
+			},
+			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+			["USE_SHADOW"] = true,
+		},
 		["animate"] = true,
 		["timer"] = true,
 		["isName"] = false,
 		["xAdjust"] = -2,
+<<<<<<< HEAD
 		["yAdjust"] = -2,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["isStacks"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 	},
-	["IS_USE_BUTTON_FACADE"] = false,
+	["SHOW_SHIELD_BAR"] = true,
 	["BLIZZ_UI_HIDE_PARTY"] = 1,
 	["BLIZZ_UI_HIDE_TARGET"] = 1,
 	["SHOW_PLAYER_TAGS"] = true,
-	["LOCK_CLICKS_THROUGH"] = false,
+	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
 	["UPDATE_HOTS_MS"] = 250,
-	["MAX_EMERGENCIES"] = 6,
-	["OMIT_PLAYER_TARGETS"] = false,
+	["IS_ALWAYS_OVERWRITE_PROFILE"] = false,
+	["EMERGENCY_TRIGGER"] = 100,
 	["HIDE_PANELS_SOLO"] = false,
 	["CURRENT_PROFILE"] = "LUI-Towelliee",
 	["AUTO_PROFILES"] = {
 	},
 	["SHOW_INCOMING"] = true,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	["HIDE_EMPTY_BUTTONS"] = false,
 	["OMIT_FOCUS"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+	["OMIT_FOCUS"] = 1,
+	["IS_SHARE"] = true,
+>>>>>>> parent of 16a49338... addon updates
 	["SPELL_TRACE"] = {
 		["isOthers"] = false,
 		["STORED_SETTINGS"] = {
@@ -4658,12 +5110,19 @@ VUHDO_CONFIG = {
 =======
 	["IS_CLIQUE_PASSTHROUGH"] = false,
 	["OMIT_SELF"] = false,
+<<<<<<< HEAD
 	["IS_SHARE"] = true,
 	["AUTO_PROFILES"] = {
 	},
 >>>>>>> parent of 76f5add1... addon updates
 	["IS_ALWAYS_OVERWRITE_PROFILE"] = false,
 	["BLIZZ_UI_HIDE_RAID_MGR"] = 2,
+=======
+	["HIDE_EMPTY_BUTTONS"] = false,
+	["OMIT_PLAYER_TARGETS"] = false,
+	["MAX_EMERGENCIES"] = 6,
+	["LOCK_CLICKS_THROUGH"] = false,
+>>>>>>> parent of 16a49338... addon updates
 	["THREAT"] = {
 		["AGGRO_USE_TEXT"] = true,
 		["AGGRO_TEXT_LEFT"] = ">>",
@@ -4672,10 +5131,10 @@ VUHDO_CONFIG = {
 		["AGGRO_REFRESH_MS"] = 300,
 	},
 	["SHOW_TEXT_OVERHEAL"] = true,
-	["SHOW_SHIELD_BAR"] = true,
+	["IS_USE_BUTTON_FACADE"] = false,
 	["SHOW_OWN_INCOMING"] = true,
-	["OMIT_MAIN_TANKS"] = false,
-	["SMARTCAST_BUFF"] = false,
+	["IS_DC_SHIELD_DISABLED"] = false,
+	["RES_IS_SHOW_TEXT"] = false,
 }
 VUHDO_PANEL_SETUP = {
 	{
@@ -4706,10 +5165,13 @@ VUHDO_PANEL_SETUP = {
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["sort"] = 0,
 =======
 >>>>>>> parent of 76f5add1... addon updates
 			["ordering"] = 0,
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["groups"] = {
 				1, -- [1]
 				2, -- [2]
@@ -4720,44 +5182,48 @@ VUHDO_PANEL_SETUP = {
 <<<<<<< HEAD
 =======
 			["sort"] = 0,
+<<<<<<< HEAD
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["ordering"] = 0,
+>>>>>>> parent of 16a49338... addon updates
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -4768,11 +5234,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -4792,6 +5258,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\DESIB___.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 7,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 2,
@@ -4800,6 +5267,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 20,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 2,
+				["maxChars"] = 7,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -4807,10 +5280,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.8,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 44,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -4839,40 +5313,42 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 120,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = false,
 			["isDamFlash"] = false,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 120,
 			["rowSpacing"] = 2,
-		},
-		["ID_TEXT"] = {
-			["showClass"] = false,
-			["showName"] = true,
-			["showTags"] = 1,
-			["position"] = "TOPLEFT+TOPLEFT",
-			["yAdjust"] = 0,
-			["xAdjust"] = 0,
-			["_spacing"] = 19.9999694824219,
-			["showPetOwners"] = true,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 44,
+			["alignBottom"] = false,
 		},
 		["LIFE_TEXT"] = {
 			["show"] = false,
@@ -4881,6 +5357,17 @@ VUHDO_PANEL_SETUP = {
 			["showTotalHp"] = false,
 			["mode"] = 1,
 			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = 1,
+			["position"] = "TOPLEFT+TOPLEFT",
+			["yAdjust"] = 0,
+			["_spacing"] = 19.9999694824219,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
 		},
 	}, -- [1]
 	{
@@ -4910,45 +5397,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -4959,11 +5446,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -4983,6 +5470,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -4991,6 +5479,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -4998,10 +5492,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -5030,40 +5525,42 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = true,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
-		},
-		["ID_TEXT"] = {
-			["showClass"] = false,
-			["showName"] = true,
-			["showTags"] = true,
-			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
-			["yAdjust"] = 0,
-			["xAdjust"] = 0,
-			["_spacing"] = 19,
-			["showPetOwners"] = true,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
 		},
 		["LIFE_TEXT"] = {
 			["show"] = true,
@@ -5072,6 +5569,17 @@ VUHDO_PANEL_SETUP = {
 			["showTotalHp"] = false,
 			["mode"] = 1,
 			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["_spacing"] = 19,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
 		},
 	}, -- [2]
 	{
@@ -5101,45 +5609,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -5150,11 +5658,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -5174,6 +5682,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -5182,6 +5691,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -5189,10 +5704,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -5221,30 +5737,51 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["ID_TEXT"] = {
 			["showClass"] = false,
@@ -5254,14 +5791,6 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
-		},
-		["LIFE_TEXT"] = {
-			["show"] = true,
-			["hideIrrelevant"] = false,
-			["position"] = 3,
-			["showTotalHp"] = false,
-			["mode"] = 1,
-			["verbose"] = false,
 		},
 	}, -- [3]
 	{
@@ -5291,45 +5820,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -5340,11 +5869,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -5364,6 +5893,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -5372,6 +5902,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -5379,10 +5915,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -5411,30 +5948,51 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = true,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["ID_TEXT"] = {
 			["showClass"] = false,
@@ -5444,14 +6002,6 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
-		},
-		["LIFE_TEXT"] = {
-			["show"] = true,
-			["hideIrrelevant"] = false,
-			["position"] = 3,
-			["showTotalHp"] = false,
-			["mode"] = 1,
-			["verbose"] = false,
 		},
 	}, -- [4]
 	{
@@ -5481,45 +6031,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -5530,11 +6080,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -5554,6 +6104,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -5562,6 +6113,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -5569,10 +6126,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -5601,30 +6159,51 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["ID_TEXT"] = {
 			["showClass"] = false,
@@ -5634,14 +6213,6 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
-		},
-		["LIFE_TEXT"] = {
-			["show"] = true,
-			["hideIrrelevant"] = false,
-			["position"] = 3,
-			["showTotalHp"] = false,
-			["mode"] = 1,
-			["verbose"] = false,
 		},
 	}, -- [5]
 	{
@@ -5671,45 +6242,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -5720,11 +6291,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -5744,6 +6315,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -5752,6 +6324,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -5759,10 +6337,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -5791,30 +6370,51 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["ID_TEXT"] = {
 			["showClass"] = false,
@@ -5824,14 +6424,6 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
-		},
-		["LIFE_TEXT"] = {
-			["show"] = true,
-			["hideIrrelevant"] = false,
-			["position"] = 3,
-			["showTotalHp"] = false,
-			["mode"] = 1,
-			["verbose"] = false,
 		},
 	}, -- [6]
 	{
@@ -5861,45 +6453,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -5910,11 +6502,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -5934,6 +6526,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -5942,6 +6535,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -5949,10 +6548,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -5981,24 +6581,30 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
@@ -6014,6 +6620,13 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["LIFE_TEXT"] = {
 			["show"] = true,
@@ -6022,6 +6635,15 @@ VUHDO_PANEL_SETUP = {
 			["showTotalHp"] = false,
 			["mode"] = 1,
 			["verbose"] = false,
+		},
+		["ID_TEXT"] = {
+			["showClass"] = false,
+			["showName"] = true,
+			["showTags"] = true,
+			["position"] = "BOTTOMRIGHT+BOTTOMRIGHT",
+			["yAdjust"] = 0,
+			["xAdjust"] = 0,
+			["showPetOwners"] = true,
 		},
 	}, -- [7]
 	{
@@ -6051,45 +6673,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -6100,11 +6722,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -6124,6 +6746,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -6132,6 +6755,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -6139,10 +6768,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -6171,30 +6801,51 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["ID_TEXT"] = {
 			["showClass"] = false,
@@ -6204,14 +6855,6 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
-		},
-		["LIFE_TEXT"] = {
-			["show"] = true,
-			["hideIrrelevant"] = false,
-			["position"] = 3,
-			["showTotalHp"] = false,
-			["mode"] = 1,
-			["verbose"] = false,
 		},
 	}, -- [8]
 	{
@@ -6241,45 +6884,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -6290,11 +6933,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -6314,6 +6957,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -6322,6 +6966,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -6329,10 +6979,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -6361,30 +7012,51 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["ID_TEXT"] = {
 			["showClass"] = false,
@@ -6394,14 +7066,6 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
-		},
-		["LIFE_TEXT"] = {
-			["show"] = true,
-			["hideIrrelevant"] = false,
-			["position"] = 3,
-			["showTotalHp"] = false,
-			["mode"] = 1,
-			["verbose"] = false,
 		},
 	}, -- [9]
 	{
@@ -6431,45 +7095,45 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
 			["sort"] = 0,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
 			["BACKGROUND"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["inFight"] = false,
 			["BORDER"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["showBuffs"] = false,
 			["show"] = true,
 			["x"] = 100,
 			["position"] = 2,
 			["SCALE"] = 1,
-			["relativePoint"] = "TOPLEFT",
-			["point"] = "TOPLEFT",
 			["y"] = -100,
+			["point"] = "TOPLEFT",
+			["relativePoint"] = "TOPLEFT",
 		},
 		["PANEL_COLOR"] = {
 			["BACK"] = {
 				["useOpacity"] = true,
 				["R"] = 0,
-				["useBackground"] = true,
-				["O"] = 1,
-				["G"] = 0,
 				["B"] = 0,
+				["G"] = 0,
+				["O"] = 1,
+				["useBackground"] = true,
 			},
 			["HEADER"] = {
 				["TG"] = 0.254,
@@ -6480,11 +7144,11 @@ VUHDO_PANEL_SETUP = {
 				["TR"] = 0.0429,
 				["font"] = "Interface\\Addons\\MikScrollingBattleText\\Fonts\\transformers.ttf",
 				["TO"] = 0.89,
-				["useBackground"] = true,
-				["textSize"] = 15,
-				["useText"] = true,
-				["O"] = 0.95,
 				["B"] = 0,
+				["O"] = 0.95,
+				["useText"] = true,
+				["textSize"] = 15,
+				["useBackground"] = true,
 			},
 			["BORDER"] = {
 				["edgeSize"] = 9,
@@ -6504,6 +7168,7 @@ VUHDO_PANEL_SETUP = {
 				["useText"] = true,
 				["useOpacity"] = true,
 				["font"] = "Interface\\AddOns\\ArkInventory\\Fonts\\Emblem.ttf",
+<<<<<<< HEAD
 				["maxChars"] = 5,
 				["USE_SHADOW"] = false,
 				["textSizeLife"] = 1,
@@ -6512,6 +7177,12 @@ VUHDO_PANEL_SETUP = {
 =======
 				["textSizeLife"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+				["textSize"] = 19,
+				["USE_SHADOW"] = false,
+				["textSizeLife"] = 1,
+				["maxChars"] = 5,
+>>>>>>> parent of 16a49338... addon updates
 			},
 		},
 		["HOTS"] = {
@@ -6519,10 +7190,11 @@ VUHDO_PANEL_SETUP = {
 		},
 		["SCALING"] = {
 			["headerHeight"] = 14,
-			["alignBottom"] = false,
+			["rowSpacing"] = 2,
 			["arrangeHorizontal"] = false,
 			["scale"] = 0.75,
 			["maxColumnsWhenStructured"] = 8,
+<<<<<<< HEAD
 			["barHeight"] = 38,
 <<<<<<< HEAD
 			["damFlashFactor"] = 0.75,
@@ -6551,30 +7223,51 @@ VUHDO_PANEL_SETUP = {
 =======
 			["isTarClassColText"] = true,
 			["damFlashFactor"] = 0.75,
+=======
+			["barWidth"] = 119,
+			["borderGapY"] = 4,
+			["columnSpacing"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 			["targetSpacing"] = 3,
-			["targetWidth"] = 30,
-			["ommitEmptyWhenStructured"] = true,
 			["showTarget"] = false,
-			["borderGapX"] = 2,
-			["sideLeftWidth"] = 6,
-			["totSpacing"] = 3,
-			["headerSpacing"] = 7,
+			["ommitEmptyWhenStructured"] = true,
+			["targetOrientation"] = 1,
 			["maxRowsWhenLoose"] = 6,
+			["sideLeftWidth"] = 6,
 			["sideRightWidth"] = 6,
+			["headerSpacing"] = 7,
+			["borderGapX"] = 2,
+			["manaBarHeight"] = 3,
 			["headerWidth"] = 100,
-			["totWidth"] = 30,
+			["isPlayerOnTop"] = true,
 			["showHeaders"] = 1,
 			["isDamFlash"] = true,
 			["showTot"] = false,
-			["isPlayerOnTop"] = true,
-			["manaBarHeight"] = 3,
+			["totWidth"] = 30,
+			["totSpacing"] = 3,
 			["isTarClassColBack"] = false,
+<<<<<<< HEAD
 			["targetOrientation"] = 1,
 			["borderGapY"] = 4,
 			["columnSpacing"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
 			["barWidth"] = 119,
 			["rowSpacing"] = 2,
+=======
+			["targetWidth"] = 30,
+			["damFlashFactor"] = 0.75,
+			["isTarClassColText"] = true,
+			["barHeight"] = 38,
+			["alignBottom"] = false,
+		},
+		["LIFE_TEXT"] = {
+			["show"] = true,
+			["hideIrrelevant"] = false,
+			["position"] = 3,
+			["showTotalHp"] = false,
+			["mode"] = 1,
+			["verbose"] = false,
+>>>>>>> parent of 16a49338... addon updates
 		},
 		["ID_TEXT"] = {
 			["showClass"] = false,
@@ -6584,14 +7277,6 @@ VUHDO_PANEL_SETUP = {
 			["yAdjust"] = 0,
 			["xAdjust"] = 0,
 			["showPetOwners"] = true,
-		},
-		["LIFE_TEXT"] = {
-			["show"] = true,
-			["hideIrrelevant"] = false,
-			["position"] = 3,
-			["showTotalHp"] = false,
-			["mode"] = 1,
-			["verbose"] = false,
 		},
 	}, -- [10]
 	["RAID_ICON_FILTER"] = {
@@ -6605,7 +7290,13 @@ VUHDO_PANEL_SETUP = {
 		true, -- [8]
 	},
 	["PANEL_COLOR"] = {
-		["classColorsName"] = 1,
+		["TEXT"] = {
+			["TR"] = 0.737,
+			["TO"] = 1,
+			["TB"] = 0.8189,
+			["useText"] = true,
+			["TG"] = 0.705,
+		},
 		["HEALTH_TEXT"] = {
 			["TR"] = 1,
 			["TO"] = 1,
@@ -6616,20 +7307,15 @@ VUHDO_PANEL_SETUP = {
 		["BARS"] = {
 			["useOpacity"] = true,
 			["R"] = 0,
-			["useBackground"] = true,
-			["O"] = 1,
-			["G"] = 0,
 			["B"] = 0,
+			["G"] = 0,
+			["O"] = 1,
+			["useBackground"] = true,
 		},
-		["TEXT"] = {
-			["TR"] = 0.737,
-			["TO"] = 1,
-			["TB"] = 0.8189,
-			["useText"] = true,
-			["TG"] = 0.705,
-		},
+		["classColorsName"] = 1,
 	},
 	["HOTS"] = {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		["BARS"] = {
 			["radioValue"] = 1,
@@ -6650,6 +7336,9 @@ VUHDO_PANEL_SETUP = {
 			["ANCHOR"] = "TOPLEFT",
 			["USE_OUTLINE"] = true,
 		},
+=======
+		["iconRadioValue"] = 2,
+>>>>>>> parent of 16a49338... addon updates
 		["SLOTS"] = {
 			[10] = "BOUQUET_AOE Advice",
 		},
@@ -6659,10 +7348,10 @@ VUHDO_PANEL_SETUP = {
 		},
 		["TIMER_TEXT"] = {
 			["X_ADJUST"] = 10,
-			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+			["SCALE"] = 84,
 			["USE_MONO"] = false,
 			["Y_ADJUST"] = 0,
-			["SCALE"] = 84,
+			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
 			["USE_SHADOW"] = false,
 			["ANCHOR"] = "CENTER",
 			["USE_OUTLINE"] = true,
@@ -6722,23 +7411,37 @@ VUHDO_PANEL_SETUP = {
 		},
 		["stacksRadioValue"] = 3,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		["iconRadioValue"] = 2,
 =======
 		["radioValue"] = 20,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["COUNTER_TEXT"] = {
+			["X_ADJUST"] = -25,
+			["SCALE"] = 66,
+			["USE_MONO"] = false,
+			["Y_ADJUST"] = 0,
+			["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+			["USE_SHADOW"] = false,
+			["ANCHOR"] = "TOPLEFT",
+			["USE_OUTLINE"] = true,
+		},
+>>>>>>> parent of 16a49338... addon updates
 	},
 	["BAR_COLORS"] = {
 		["OVERHEAL_TEXT"] = {
 			["useOpacity"] = true,
 			["TO"] = 1,
 			["TB"] = 0.8,
-			["TR"] = 0.8,
-			["useText"] = true,
 			["TG"] = 1,
+			["useText"] = true,
+			["TR"] = 0.8,
 		},
 		["HOT7"] = {
 			["useBackground"] = true,
 			["R"] = 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["O"] = 0.75,
 			["G"] = 1,
@@ -6746,7 +7449,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 1,
 			["O"] = 0.75,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 1,
+			["O"] = 0.75,
+			["G"] = 1,
 		},
 		["TARGET"] = {
 			["TG"] = 1,
@@ -6758,8 +7465,8 @@ VUHDO_PANEL_SETUP = {
 			["B"] = 0,
 			["TO"] = 1,
 			["useOpacity"] = true,
-			["useBackground"] = true,
 			["useText"] = true,
+			["useBackground"] = true,
 			["O"] = 1,
 			["modeBack"] = 1,
 		},
@@ -6770,6 +7477,7 @@ VUHDO_PANEL_SETUP = {
 			["TB"] = 0.6,
 			["G"] = 0.3,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["useOpacity"] = false,
 			["TR"] = 1,
 =======
@@ -6777,17 +7485,23 @@ VUHDO_PANEL_SETUP = {
 			["useOpacity"] = false,
 >>>>>>> parent of 76f5add1... addon updates
 			["isFullDuration"] = false,
+=======
+			["B"] = 0.3,
+			["useOpacity"] = false,
+			["O"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["TO"] = 1,
 			["isClock"] = false,
-			["useText"] = true,
 			["useBackground"] = true,
-			["O"] = 1,
-			["B"] = 0.3,
+			["useText"] = true,
+			["isFullDuration"] = false,
+			["TR"] = 1,
 		},
 		["useDebuffIconBossOnly"] = true,
 		["DIRECTION"] = {
 			["useBackground"] = true,
 			["R"] = 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["O"] = 1,
 			["G"] = 0.4,
@@ -6795,7 +7509,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.4,
 			["O"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0.4,
+			["O"] = 1,
+			["G"] = 0.4,
 		},
 		["EMERGENCY"] = {
 			["TG"] = 0.82,
@@ -6804,19 +7522,19 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["BAR_FRAMES"] = {
 			["useOpacity"] = true,
 			["R"] = 0,
-			["useBackground"] = true,
-			["O"] = 0.7,
-			["G"] = 0,
 			["B"] = 0,
+			["G"] = 0,
+			["O"] = 0.7,
+			["useBackground"] = true,
 		},
 		["RAID_ICONS"] = {
 			["1"] = {
@@ -6826,11 +7544,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.976,
 				["TR"] = 0.98,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.305,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.305,
+				["useOpacity"] = false,
 			},
 			["filterOnly"] = false,
 			["3"] = {
@@ -6840,11 +7558,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.29,
 				["TR"] = 1,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.8,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.8,
+				["useOpacity"] = false,
 			},
 			["2"] = {
 				["TG"] = 0.827,
@@ -6853,11 +7571,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.513,
 				["TR"] = 1,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.039,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.039,
+				["useOpacity"] = false,
 			},
 			["enable"] = false,
 			["4"] = {
@@ -6867,11 +7585,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.8,
 				["TR"] = 0.6979,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.015,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.015,
+				["useOpacity"] = false,
 			},
 			["7"] = {
 				["TG"] = 0.627,
@@ -6880,11 +7598,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.184,
 				["TR"] = 1,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.129,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.129,
+				["useOpacity"] = false,
 			},
 			["6"] = {
 				["TG"] = 0.831,
@@ -6893,11 +7611,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.6899,
 				["TR"] = 0.662,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.972,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.972,
+				["useOpacity"] = false,
 			},
 			["8"] = {
 				["TG"] = 0.231,
@@ -6906,11 +7624,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.866,
 				["TR"] = 0.231,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.89,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.89,
+				["useOpacity"] = false,
 			},
 			["5"] = {
 				["TG"] = 0.87,
@@ -6919,11 +7637,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.717,
 				["TR"] = 0.725,
 				["TO"] = 1,
-				["useOpacity"] = false,
+				["B"] = 0.8,
 				["useText"] = true,
 				["useBackground"] = true,
 				["O"] = 1,
-				["B"] = 0.8,
+				["useOpacity"] = false,
 			},
 		},
 		["IRRELEVANT"] = {
@@ -6933,11 +7651,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.4,
 			["useBackground"] = false,
 			["useText"] = false,
 			["O"] = 0.5,
-			["B"] = 0.4,
+			["useOpacity"] = true,
 		},
 		["HOT9"] = {
 			["TG"] = 1,
@@ -6946,6 +7664,7 @@ VUHDO_PANEL_SETUP = {
 			["TB"] = 1,
 			["G"] = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["useOpacity"] = false,
 			["TR"] = 0.6,
 =======
@@ -6953,12 +7672,17 @@ VUHDO_PANEL_SETUP = {
 			["useOpacity"] = false,
 >>>>>>> parent of 76f5add1... addon updates
 			["isFullDuration"] = false,
+=======
+			["B"] = 1,
+			["useOpacity"] = false,
+			["O"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["TO"] = 1,
 			["isClock"] = false,
-			["useText"] = true,
 			["useBackground"] = true,
-			["O"] = 1,
-			["B"] = 1,
+			["useText"] = true,
+			["isFullDuration"] = false,
+			["TR"] = 0.6,
 		},
 		["TAPPED"] = {
 			["TG"] = 0.4,
@@ -6967,11 +7691,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.4,
 			["TR"] = 0.4,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.4,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.4,
+			["useOpacity"] = true,
 		},
 		["HOT_CHARGE_3"] = {
 			["TG"] = 1,
@@ -6980,11 +7704,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 1,
 			["TR"] = 0.6,
 			["TO"] = 1,
-			["useOpacity"] = false,
+			["B"] = 0.3,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.3,
+			["useOpacity"] = false,
 		},
 		["CLUSTER_GOOD"] = {
 			["TG"] = 1,
@@ -6993,11 +7717,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.8,
 			["TR"] = 0,
 			["TO"] = 1,
-			["useOpacity"] = false,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = false,
 		},
 		["DEBUFF3"] = {
 			["TG"] = 0.957,
@@ -7006,11 +7730,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.4,
 			["TR"] = 0.329,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.8,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.8,
+			["useOpacity"] = true,
 		},
 		["INCOMING"] = {
 			["TG"] = 0.82,
@@ -7019,15 +7743,16 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.933,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.058,
 			["useBackground"] = 1,
 			["useText"] = false,
 			["O"] = 0,
-			["B"] = 0.058,
+			["useOpacity"] = true,
 		},
 		["HOT6"] = {
 			["useBackground"] = true,
 			["R"] = 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["O"] = 0.75,
 			["G"] = 1,
@@ -7035,7 +7760,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 1,
 			["O"] = 0.75,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 1,
+			["O"] = 0.75,
+			["G"] = 1,
 		},
 		["TARGET_ENEMY"] = {
 			["TG"] = 0,
@@ -7044,11 +7773,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["DEBUFF4"] = {
 			["TG"] = 0,
@@ -7057,11 +7786,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.7,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.7,
+			["useOpacity"] = true,
 		},
 		["DEBUFF6"] = {
 			["TG"] = 0.5,
@@ -7070,11 +7799,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.3,
 			["TR"] = 0.8,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["TARGET_NEUTRAL"] = {
 			["TG"] = 1,
@@ -7083,11 +7812,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 1,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["TARGET_FRIEND"] = {
 			["TG"] = 1,
@@ -7096,11 +7825,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 1,
 			["TR"] = 0,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["NO_EMERGENCY"] = {
 			["TG"] = 0.82,
@@ -7109,14 +7838,19 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.4,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.4,
+			["useOpacity"] = true,
 		},
 		["HOTS"] = {
 			["useColorText"] = true,
+			["useColorBack"] = true,
+			["isPumpDivineAegis"] = false,
+			["isFadeOut"] = true,
+			["isFlashWhenLow"] = false,
+			["showShieldAbsorb"] = true,
 			["WARNING"] = {
 				["enabled"] = false,
 				["lowSecs"] = 3,
@@ -7125,17 +7859,12 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0.2,
 				["TR"] = 1,
 				["TO"] = 1,
-				["TG"] = 0.6,
+				["B"] = 0.2,
 				["useBackground"] = true,
 				["useText"] = true,
 				["O"] = 1,
-				["B"] = 0.2,
+				["TG"] = 0.6,
 			},
-			["isPumpDivineAegis"] = false,
-			["isFadeOut"] = true,
-			["isFlashWhenLow"] = false,
-			["showShieldAbsorb"] = true,
-			["useColorBack"] = true,
 		},
 		["SHIELD"] = {
 			["TG"] = 0.52,
@@ -7144,11 +7873,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.52,
 			["TR"] = 0.35,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 			["useBackground"] = true,
 			["useText"] = false,
 			["O"] = 1,
-			["B"] = 1,
+			["useOpacity"] = true,
 		},
 		["HOT5"] = {
 			["TG"] = 0.6,
@@ -7157,6 +7886,7 @@ VUHDO_PANEL_SETUP = {
 			["TB"] = 1,
 			["G"] = 0.3,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["useOpacity"] = false,
 			["TR"] = 1,
 =======
@@ -7164,16 +7894,22 @@ VUHDO_PANEL_SETUP = {
 			["useOpacity"] = false,
 >>>>>>> parent of 76f5add1... addon updates
 			["isFullDuration"] = false,
+=======
+			["B"] = 1,
+			["useOpacity"] = false,
+			["O"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["TO"] = 1,
 			["isClock"] = false,
-			["useText"] = true,
 			["useBackground"] = true,
-			["O"] = 1,
-			["B"] = 1,
+			["useText"] = true,
+			["isFullDuration"] = false,
+			["TR"] = 1,
 		},
 		["GCD_BAR"] = {
 			["useBackground"] = true,
 			["R"] = 0.4,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["O"] = 0.5,
 			["G"] = 0.4,
@@ -7181,7 +7917,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.4,
 			["O"] = 0.5,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0.4,
+			["O"] = 0.5,
+			["G"] = 0.4,
 		},
 		["HOT2"] = {
 			["TG"] = 1,
@@ -7190,6 +7930,7 @@ VUHDO_PANEL_SETUP = {
 			["TB"] = 0.6,
 			["G"] = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["useOpacity"] = false,
 			["TR"] = 1,
 =======
@@ -7197,12 +7938,17 @@ VUHDO_PANEL_SETUP = {
 			["useOpacity"] = false,
 >>>>>>> parent of 76f5add1... addon updates
 			["isFullDuration"] = false,
+=======
+			["B"] = 0.3,
+			["useOpacity"] = false,
+			["O"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["TO"] = 1,
 			["isClock"] = false,
-			["useText"] = true,
 			["useBackground"] = true,
-			["O"] = 1,
-			["B"] = 0.3,
+			["useText"] = true,
+			["isFullDuration"] = false,
+			["TR"] = 1,
 		},
 		["DEAD"] = {
 			["TG"] = 0.5,
@@ -7211,24 +7957,24 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.3,
 			["TR"] = 0.5,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.3,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 0.5,
-			["B"] = 0.3,
-		},
-		["DEBUFF1"] = {
-			["TG"] = 1,
-			["R"] = 0,
-			["TB"] = 0.686,
-			["G"] = 0.592,
-			["TR"] = 0,
-			["TO"] = 1,
 			["useOpacity"] = true,
-			["useText"] = 1,
-			["useBackground"] = 1,
+		},
+		["CHARMED"] = {
+			["TG"] = 0.31,
+			["R"] = 0.51,
+			["TB"] = 0.31,
+			["G"] = 0.082,
+			["TR"] = 1,
+			["TO"] = 1,
+			["B"] = 0.263,
+			["useText"] = true,
+			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.8,
+			["useOpacity"] = true,
 		},
 		["OFFLINE"] = {
 			["TG"] = 0.576,
@@ -7237,11 +7983,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.298,
 			["TR"] = 0.576,
 			["TO"] = 0.58,
-			["useOpacity"] = true,
+			["B"] = 0.298,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 0.21,
-			["B"] = 0.298,
+			["useOpacity"] = true,
 		},
 		["OUTRANGED"] = {
 			["TG"] = 0,
@@ -7250,26 +7996,44 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0,
 			["TR"] = 0,
 			["TO"] = 0.5,
-			["useOpacity"] = 1,
+			["B"] = 0,
 			["useBackground"] = false,
 			["useText"] = false,
 			["O"] = 0.51,
-			["B"] = 0,
+			["useOpacity"] = 1,
 		},
-		["CLUSTER_FAIR"] = {
+		["HOT3"] = {
 			["TG"] = 1,
-			["R"] = 0.8,
-			["TB"] = 0,
-			["G"] = 0.8,
-			["TR"] = 1,
-			["TO"] = 1,
+			["countdownMode"] = 1,
+			["R"] = 1,
+			["TB"] = 1,
+			["G"] = 1,
+			["B"] = 1,
 			["useOpacity"] = false,
-			["useText"] = true,
-			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["TO"] = 1,
+			["isClock"] = false,
+			["useBackground"] = true,
+			["useText"] = true,
+			["isFullDuration"] = false,
+			["TR"] = 1,
 		},
-		["useDebuffIcon"] = 1,
+		["HOT4"] = {
+			["TG"] = 0.6,
+			["countdownMode"] = 1,
+			["R"] = 0.3,
+			["TB"] = 1,
+			["G"] = 0.3,
+			["B"] = 1,
+			["useOpacity"] = false,
+			["O"] = 1,
+			["TO"] = 1,
+			["isClock"] = false,
+			["useBackground"] = true,
+			["useText"] = true,
+			["isFullDuration"] = false,
+			["TR"] = 0.6,
+		},
 		["HOT_CHARGE_4"] = {
 			["TG"] = 1,
 			["R"] = 0.8,
@@ -7277,11 +8041,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.8,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = false,
+			["B"] = 0.8,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.8,
+			["useOpacity"] = false,
 		},
 		["DEBUFF2"] = {
 			["TG"] = 0,
@@ -7290,11 +8054,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 0.4,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.4,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.4,
+			["useOpacity"] = true,
 		},
 		["DEBUFF0"] = {
 			["useBackground"] = false,
@@ -7305,13 +8069,18 @@ VUHDO_PANEL_SETUP = {
 			["useBackground"] = true,
 			["R"] = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["O"] = 0.75,
 			["G"] = 1,
 =======
 			["G"] = 1,
 			["O"] = 0.75,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 1,
+			["O"] = 0.75,
+			["G"] = 1,
 		},
 		["HOT10"] = {
 			["TG"] = 1,
@@ -7320,6 +8089,7 @@ VUHDO_PANEL_SETUP = {
 			["TB"] = 1,
 			["G"] = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["useOpacity"] = false,
 			["TR"] = 0.6,
 =======
@@ -7327,29 +8097,40 @@ VUHDO_PANEL_SETUP = {
 			["useOpacity"] = false,
 >>>>>>> parent of 76f5add1... addon updates
 			["isFullDuration"] = false,
+=======
+			["B"] = 1,
+			["useOpacity"] = false,
+			["O"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["TO"] = 1,
 			["isClock"] = false,
-			["useText"] = true,
 			["useBackground"] = true,
-			["O"] = 1,
-			["B"] = 1,
+			["useText"] = true,
+			["isFullDuration"] = false,
+			["TR"] = 0.6,
 		},
 		["THREAT"] = {
 			["LOW"] = {
 				["useBackground"] = true,
 				["R"] = 0,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				["O"] = 1,
 				["G"] = 1,
 =======
 				["G"] = 1,
 				["O"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 1,
+				["O"] = 1,
+				["G"] = 1,
 			},
 			["HIGH"] = {
 				["useBackground"] = true,
 				["R"] = 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 				["O"] = 1,
 				["G"] = 0,
@@ -7357,9 +8138,14 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 0,
 				["O"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 1,
+				["O"] = 1,
+				["G"] = 0,
 			},
 		},
+<<<<<<< HEAD
 		["HOT4"] = {
 			["TG"] = 0.6,
 			["countdownMode"] = 1,
@@ -7395,54 +8181,74 @@ VUHDO_PANEL_SETUP = {
 			["useOpacity"] = false,
 >>>>>>> parent of 76f5add1... addon updates
 			["isFullDuration"] = false,
-			["TO"] = 1,
-			["isClock"] = false,
-			["useText"] = true,
-			["useBackground"] = true,
-			["O"] = 1,
-			["B"] = 1,
-		},
-		["CHARMED"] = {
-			["TG"] = 0.31,
-			["R"] = 0.51,
-			["TB"] = 0.31,
-			["G"] = 0.082,
+=======
+		["useDebuffIcon"] = 1,
+		["CLUSTER_FAIR"] = {
+			["TG"] = 1,
+			["R"] = 0.8,
+			["TB"] = 0,
+			["G"] = 0.8,
 			["TR"] = 1,
+>>>>>>> parent of 16a49338... addon updates
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.263,
+			["useOpacity"] = false,
+		},
+		["DEBUFF1"] = {
+			["TG"] = 1,
+			["R"] = 0,
+			["TB"] = 0.686,
+			["G"] = 0.592,
+			["TR"] = 0,
+			["TO"] = 1,
+			["B"] = 0.8,
+			["useText"] = 1,
+			["useBackground"] = 1,
+			["O"] = 1,
+			["useOpacity"] = true,
 		},
 		["LIFE_LEFT"] = {
 			["GOOD"] = {
 				["useBackground"] = true,
 				["R"] = 0,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				["O"] = 1,
 				["G"] = 1,
 =======
 				["G"] = 1,
 				["O"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 0,
+				["O"] = 1,
+				["G"] = 1,
 			},
 			["LOW"] = {
 				["useBackground"] = true,
 				["R"] = 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				["O"] = 1,
 				["G"] = 0,
 =======
 				["G"] = 0,
 				["O"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 0,
+				["O"] = 1,
+				["G"] = 0,
 			},
 			["FAIR"] = {
 				["useBackground"] = true,
 				["R"] = 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 				["O"] = 1,
 				["G"] = 1,
@@ -7450,7 +8256,11 @@ VUHDO_PANEL_SETUP = {
 				["G"] = 1,
 				["O"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 				["B"] = 0,
+				["O"] = 1,
+				["G"] = 1,
 			},
 		},
 		["HOT_CHARGE_2"] = {
@@ -7460,11 +8270,11 @@ VUHDO_PANEL_SETUP = {
 			["G"] = 1,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = false,
+			["B"] = 0.3,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.3,
+			["useOpacity"] = false,
 		},
 	},
 }
@@ -7511,13 +8321,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7531,13 +8341,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7552,11 +8362,11 @@ VUHDO_BUFF_SETTINGS = {
 			["G"] = 0,
 			["TR"] = 0.8,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["SHOW_LABEL"] = false,
 		["REFRESH_SECS"] = 1,
@@ -7567,11 +8377,11 @@ VUHDO_BUFF_SETTINGS = {
 			["G"] = 0.3,
 			["TR"] = 0.6,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0.3,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0.3,
+			["useOpacity"] = true,
 		},
 		["SWATCH_COLOR_BUFF_OKAY"] = {
 			["TG"] = 0.8,
@@ -7580,16 +8390,17 @@ VUHDO_BUFF_SETTINGS = {
 			["G"] = 0,
 			["TR"] = 0,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["SHOW"] = false,
 		["PANEL_BG_COLOR"] = {
 			["useBackground"] = true,
 			["R"] = 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["O"] = 0.5,
 			["G"] = 0,
@@ -7597,7 +8408,11 @@ VUHDO_BUFF_SETTINGS = {
 			["G"] = 0,
 			["O"] = 0.5,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0,
+			["O"] = 0.5,
+			["G"] = 0,
 		},
 		["SWATCH_COLOR_BUFF_LOW"] = {
 			["TG"] = 0.7,
@@ -7606,11 +8421,11 @@ VUHDO_BUFF_SETTINGS = {
 			["G"] = 0,
 			["TR"] = 1,
 			["TO"] = 1,
-			["useOpacity"] = true,
+			["B"] = 0,
 			["useText"] = true,
 			["useBackground"] = true,
 			["O"] = 1,
-			["B"] = 0,
+			["useOpacity"] = true,
 		},
 		["VERSION"] = 2,
 		["SCALE"] = 1,
@@ -7623,18 +8438,24 @@ VUHDO_BUFF_SETTINGS = {
 			["useBackground"] = true,
 			["R"] = 0,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			["O"] = 0.5,
 			["G"] = 0,
 =======
 			["G"] = 0,
 			["O"] = 0.5,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0,
+			["O"] = 0.5,
+			["G"] = 0,
 		},
 		["BAR_COLORS_BACKGROUND"] = true,
 		["SWATCH_BG_COLOR"] = {
 			["useBackground"] = true,
 			["R"] = 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			["O"] = 1,
 			["G"] = 0,
@@ -7642,8 +8463,13 @@ VUHDO_BUFF_SETTINGS = {
 			["G"] = 0,
 			["O"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 			["B"] = 0,
+			["O"] = 1,
+			["G"] = 0,
 		},
+<<<<<<< HEAD
 		["WHEEL_SMART_BUFF"] = false,
 		["REBUFF_MIN_MINUTES"] = 3,
 		["SWATCH_BORDER_COLOR"] = {
@@ -7660,12 +8486,25 @@ VUHDO_BUFF_SETTINGS = {
 		},
 		["REBUFF_AT_PERCENT"] = 25,
 		["PANEL_MAX_BUFFS"] = 5,
+=======
+>>>>>>> parent of 16a49338... addon updates
 		["POSITION"] = {
 			["y"] = -230.396,
 			["x"] = -127.945,
 			["point"] = "RIGHT",
 			["relativePoint"] = "RIGHT",
 		},
+		["PANEL_MAX_BUFFS"] = 5,
+		["SWATCH_BORDER_COLOR"] = {
+			["useBackground"] = true,
+			["R"] = 0.8,
+			["B"] = 0.8,
+			["O"] = 0,
+			["G"] = 0.8,
+		},
+		["REBUFF_AT_PERCENT"] = 25,
+		["REBUFF_MIN_MINUTES"] = 3,
+		["WHEEL_SMART_BUFF"] = false,
 	},
 	["Rune of Power"] = {
 		["missingColor"] = {
@@ -7674,13 +8513,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7694,13 +8533,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7714,13 +8553,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7734,13 +8573,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7754,13 +8593,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7774,13 +8613,13 @@ VUHDO_BUFF_SETTINGS = {
 			["TB"] = 1,
 			["G"] = 1,
 			["show"] = false,
-			["B"] = 1,
+			["useOpacity"] = true,
 			["TO"] = 1,
 			["useBackground"] = true,
-			["TR"] = 1,
 			["useText"] = true,
+			["TR"] = 1,
 			["O"] = 1,
-			["useOpacity"] = true,
+			["B"] = 1,
 		},
 		["enabled"] = false,
 		["filter"] = {
@@ -7796,11 +8635,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 0,
 		["TR"] = 1,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 0,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 0,
+		["useOpacity"] = true,
 	}, -- [1]
 	{
 		["TG"] = 0.5,
@@ -7809,11 +8648,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 0.5,
 		["TR"] = 1,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 0.25,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 0.25,
+		["useOpacity"] = true,
 	}, -- [2]
 	{
 		["TG"] = 1,
@@ -7822,11 +8661,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 1,
 		["TR"] = 1,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 0,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 0,
+		["useOpacity"] = true,
 	}, -- [3]
 	{
 		["TG"] = 1,
@@ -7835,11 +8674,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 1,
 		["TR"] = 0,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 1,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 1,
+		["useOpacity"] = true,
 	}, -- [4]
 	[0] = {
 		["TG"] = 0,
@@ -7848,11 +8687,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 0,
 		["TR"] = 0,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 1,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 1,
+		["useOpacity"] = true,
 	},
 	[17] = {
 		["TG"] = 0.09,
@@ -7861,11 +8700,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 0.09,
 		["TR"] = 0.54,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 0.69,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 0.69,
+		["useOpacity"] = true,
 	},
 	[8] = {
 		["TG"] = 0.95,
@@ -7874,11 +8713,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 0.95,
 		["TR"] = 0.87,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 1,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 1,
+		["useOpacity"] = true,
 	},
 	[18] = {
 		["TG"] = 0.09,
@@ -7887,37 +8726,11 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 0.09,
 		["TR"] = 0.54,
 		["TO"] = 1,
-		["useOpacity"] = true,
-		["useText"] = true,
-		["useBackground"] = true,
-		["O"] = 1,
 		["B"] = 0.69,
-	},
-	[13] = {
-		["TG"] = 0.97,
-		["R"] = 0.15,
-		["TB"] = 1,
-		["G"] = 0.97,
-		["TR"] = 0.15,
-		["TO"] = 1,
-		["useOpacity"] = true,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
-		["B"] = 1,
-	},
-	[6] = {
-		["TG"] = 0.5,
-		["R"] = 0.5,
-		["TB"] = 0.5,
-		["G"] = 0.5,
-		["TR"] = 0.5,
-		["TO"] = 1,
 		["useOpacity"] = true,
-		["useText"] = true,
-		["useBackground"] = true,
-		["O"] = 1,
-		["B"] = 0.5,
 	},
 	[11] = {
 		["TG"] = 0.56,
@@ -7926,11 +8739,37 @@ VUHDO_POWER_TYPE_COLORS = {
 		["G"] = 0.56,
 		["TR"] = 0.09,
 		["TO"] = 1,
-		["useOpacity"] = true,
+		["B"] = 1,
 		["useText"] = true,
 		["useBackground"] = true,
 		["O"] = 1,
+		["useOpacity"] = true,
+	},
+	[6] = {
+		["TG"] = 0.5,
+		["R"] = 0.5,
+		["TB"] = 0.5,
+		["G"] = 0.5,
+		["TR"] = 0.5,
+		["TO"] = 1,
+		["B"] = 0.5,
+		["useText"] = true,
+		["useBackground"] = true,
+		["O"] = 1,
+		["useOpacity"] = true,
+	},
+	[13] = {
+		["TG"] = 0.97,
+		["R"] = 0.15,
+		["TB"] = 1,
+		["G"] = 0.97,
+		["TR"] = 0.15,
+		["TO"] = 1,
 		["B"] = 1,
+		["useText"] = true,
+		["useBackground"] = true,
+		["O"] = 1,
+		["useOpacity"] = true,
 	},
 }
 VUHDO_SPELLS_KEYBOARD = {
@@ -7949,6 +8788,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"", -- [3]
 		},
 <<<<<<< HEAD
+<<<<<<< HEAD
 		["shift1"] = {
 			"SHIFT-", -- [1]
 			"-w7", -- [2]
@@ -7957,6 +8797,11 @@ VUHDO_SPELLS_KEYBOARD = {
 			"CTRL-SHIFT-", -- [1]
 			"-w14", -- [2]
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["2"] = {
@@ -7964,6 +8809,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 <<<<<<< HEAD
 		["ctrl2"] = {
 			"CTRL-", -- [1]
@@ -7973,6 +8819,11 @@ VUHDO_SPELLS_KEYBOARD = {
 			"SHIFT-", -- [1]
 			"-w7", -- [2]
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -7985,6 +8836,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w11", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 		["alt1"] = {
 			"ALT-", -- [1]
 			"-w3", -- [2]
@@ -7999,15 +8851,28 @@ VUHDO_SPELLS_KEYBOARD = {
 =======
 			"", -- [3]
 		},
+=======
+>>>>>>> parent of 16a49338... addon updates
 		["ctrl1"] = {
 			"CTRL-", -- [1]
 			"-w5", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 >>>>>>> parent of 76f5add1... addon updates
 		["alt2"] = {
 			"ALT-", -- [1]
 			"-w4", -- [2]
+=======
+		["altctrl1"] = {
+			"ALT-CTRL-", -- [1]
+			"-w9", -- [2]
+			"", -- [3]
+		},
+		["altctrlshift2"] = {
+			"ALT-CTRL-SHIFT-", -- [1]
+			"-w16", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["altshift2"] = {
@@ -8015,9 +8880,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w12", -- [2]
 			"", -- [3]
 		},
-		["altctrlshift2"] = {
-			"ALT-CTRL-SHIFT-", -- [1]
-			"-w16", -- [2]
+		["alt2"] = {
+			"ALT-", -- [1]
+			"-w4", -- [2]
 			"", -- [3]
 		},
 		["altctrlshift1"] = {
@@ -8030,6 +8895,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w13", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 <<<<<<< HEAD
 		["ctrl1"] = {
 			"CTRL-", -- [1]
@@ -8049,6 +8915,16 @@ VUHDO_SPELLS_KEYBOARD = {
 			"CTRL-", -- [1]
 			"-w6", -- [2]
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["alt1"] = {
+			"ALT-", -- [1]
+			"-w3", -- [2]
+			"", -- [3]
+		},
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 	},
@@ -8064,6 +8940,9 @@ VUHDO_SPELLS_KEYBOARD = {
 	["SPELL9"] = "",
 	["SPELL10"] = "",
 	["SPELL14"] = "",
+	["SPELL11"] = "",
+	["SPELL8"] = "",
+	["SPELL1"] = "",
 	["WHEEL"] = {
 		["1"] = {
 			"", -- [1]
@@ -8076,6 +8955,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"", -- [3]
 		},
 <<<<<<< HEAD
+<<<<<<< HEAD
 		["shift1"] = {
 			"SHIFT-", -- [1]
 			"-w7", -- [2]
@@ -8084,6 +8964,11 @@ VUHDO_SPELLS_KEYBOARD = {
 			"CTRL-SHIFT-", -- [1]
 			"-w14", -- [2]
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["2"] = {
@@ -8091,6 +8976,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 <<<<<<< HEAD
 		["ctrl2"] = {
 			"CTRL-", -- [1]
@@ -8100,6 +8986,11 @@ VUHDO_SPELLS_KEYBOARD = {
 			"SHIFT-", -- [1]
 			"-w7", -- [2]
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -8112,6 +9003,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w11", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 		["alt1"] = {
 			"ALT-", -- [1]
 			"-w3", -- [2]
@@ -8126,15 +9018,28 @@ VUHDO_SPELLS_KEYBOARD = {
 =======
 			"", -- [3]
 		},
+=======
+>>>>>>> parent of 16a49338... addon updates
 		["ctrl1"] = {
 			"CTRL-", -- [1]
 			"-w5", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 >>>>>>> parent of 76f5add1... addon updates
 		["alt2"] = {
 			"ALT-", -- [1]
 			"-w4", -- [2]
+=======
+		["altctrl1"] = {
+			"ALT-CTRL-", -- [1]
+			"-w9", -- [2]
+			"", -- [3]
+		},
+		["altctrlshift2"] = {
+			"ALT-CTRL-SHIFT-", -- [1]
+			"-w16", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 		["altshift2"] = {
@@ -8142,9 +9047,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w12", -- [2]
 			"", -- [3]
 		},
-		["altctrlshift2"] = {
-			"ALT-CTRL-SHIFT-", -- [1]
-			"-w16", -- [2]
+		["alt2"] = {
+			"ALT-", -- [1]
+			"-w4", -- [2]
 			"", -- [3]
 		},
 		["altctrlshift1"] = {
@@ -8157,6 +9062,7 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w13", -- [2]
 			"", -- [3]
 		},
+<<<<<<< HEAD
 <<<<<<< HEAD
 		["ctrl1"] = {
 			"CTRL-", -- [1]
@@ -8176,14 +9082,22 @@ VUHDO_SPELLS_KEYBOARD = {
 			"CTRL-", -- [1]
 			"-w6", -- [2]
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["alt1"] = {
+			"ALT-", -- [1]
+			"-w3", -- [2]
+			"", -- [3]
+		},
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
+>>>>>>> parent of 16a49338... addon updates
 			"", -- [3]
 		},
 	},
-	["SPELL8"] = "",
-	["SPELL1"] = "",
-	["SPELL11"] = "",
 }
 VUHDO_SPELL_CONFIG = {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	["smartCastModi"] = "all",
 	["IS_LOAD_HOTS"] = false,
@@ -8192,11 +9106,19 @@ VUHDO_SPELL_CONFIG = {
 	["IS_AUTO_TARGET"] = false,
 =======
 	["IS_TOOLTIP_INFO"] = false,
+=======
+	["IS_FIRE_OUT_FIGHT"] = false,
+>>>>>>> parent of 16a49338... addon updates
 	["IS_LOAD_HOTS"] = false,
+	["IS_FIRE_HOT"] = false,
 	["smartCastModi"] = "all",
+<<<<<<< HEAD
 	["IS_FIRE_OUT_FIGHT"] = false,
 	["IS_CANCEL_CURRENT"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+	["IS_FIRE_GLOVES"] = false,
+>>>>>>> parent of 16a49338... addon updates
 	["IS_AUTO_FIRE"] = true,
 	["IS_FIRE_CUSTOM_2"] = false,
 	["IS_FIRE_TRINKET_2"] = false,
@@ -8211,19 +9133,24 @@ VUHDO_SPELL_CONFIG = {
 	["IS_FIRE_OUT_FIGHT"] = false,
 =======
 	["IS_AUTO_TARGET"] = false,
-	["autoBattleRez"] = true,
-	["FIRE_CUSTOM_1_SPELL"] = "",
 	["FIRE_CUSTOM_2_SPELL"] = "",
-	["IS_FIRE_TRINKET_2"] = false,
+	["FIRE_CUSTOM_1_SPELL"] = "",
+	["autoBattleRez"] = true,
+	["IS_CANCEL_CURRENT"] = false,
 	["IS_FIRE_CUSTOM_1"] = false,
+<<<<<<< HEAD
 	["IS_FIRE_HOT"] = false,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+	["IS_TOOLTIP_INFO"] = false,
+>>>>>>> parent of 16a49338... addon updates
 }
 VUHDO_BUFF_ORDER = {
 	["Ice Barrier"] = 1,
-	["Arcane Intellect"] = 3,
 	["Ice Block"] = 5,
+	["Arcane Intellect"] = 3,
 	["Temporal Shield"] = 4,
+<<<<<<< HEAD
 <<<<<<< HEAD
 	["Rune of Power"] = 2,
 	["Combustion"] = 6,
@@ -8231,7 +9158,11 @@ VUHDO_BUFF_ORDER = {
 	["Combustion"] = 6,
 	["Rune of Power"] = 2,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+>>>>>>> parent of 16a49338... addon updates
 	["Slow Fall"] = 7,
+	["Rune of Power"] = 2,
+	["Combustion"] = 6,
 	["Invisibility"] = 8,
 }
 VUHDO_SPEC_LAYOUTS = {
@@ -8285,6 +9216,7 @@ VUHDO_INDICATOR_CONFIG = {
 		["AGGRO_BAR"] = "Aggro Indicator",
 		["BACKGROUND_BAR"] = "Background: Solid",
 <<<<<<< HEAD
+<<<<<<< HEAD
 		["SIDE_LEFT"] = "",
 		["CLUSTER_BORDER"] = "",
 =======
@@ -8299,6 +9231,10 @@ VUHDO_INDICATOR_CONFIG = {
 		["HEALTH_BAR"] = "Health (generic, class col)",
 		["SWIFTMEND_INDICATOR"] = "",
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["INCOMING_BAR"] = "",
+		["DAMAGE_FLASH_BAR"] = "",
+>>>>>>> parent of 16a49338... addon updates
 		["HEALTH_BAR_PANEL"] = {
 			"", -- [1]
 			"", -- [2]
@@ -8312,6 +9248,7 @@ VUHDO_INDICATOR_CONFIG = {
 			"", -- [10]
 		},
 <<<<<<< HEAD
+<<<<<<< HEAD
 		["SWIFTMEND_INDICATOR"] = "",
 		["THREAT_MARK"] = "Threat: Marks",
 		["BAR_BORDER"] = "",
@@ -8322,6 +9259,16 @@ VUHDO_INDICATOR_CONFIG = {
 		["INCOMING_BAR"] = "",
 =======
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["SIDE_LEFT"] = "",
+		["THREAT_MARK"] = "Threat: Marks",
+		["MANA_BAR"] = "Manabars: Mana only",
+		["BAR_BORDER"] = "",
+		["SIDE_RIGHT"] = "",
+		["HEALTH_BAR"] = "Health (generic, class col)",
+		["SWIFTMEND_INDICATOR"] = "",
+		["CLUSTER_BORDER"] = "",
+>>>>>>> parent of 16a49338... addon updates
 	},
 	["CUSTOM"] = {
 		["THREAT_BAR"] = {
@@ -8341,8 +9288,8 @@ VUHDO_INDICATOR_CONFIG = {
 			["TEXTURE"] = "VuhDo - Minimalist",
 		},
 		["CLUSTER_BORDER"] = {
-			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
 			["WIDTH"] = 2,
+<<<<<<< HEAD
 <<<<<<< HEAD
 		},
 		["SIDE_LEFT"] = {
@@ -8363,6 +9310,51 @@ VUHDO_INDICATOR_CONFIG = {
 			["invertGrowth"] = false,
 			["TEXTURE"] = "VuhDo - Polished Wood",
 >>>>>>> parent of 76f5add1... addon updates
+=======
+			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
+		},
+		["SWIFTMEND_INDICATOR"] = {
+			["SCALE"] = 1,
+>>>>>>> parent of 16a49338... addon updates
+		},
+		["MANA_BAR"] = {
+			["turnAxis"] = false,
+			["invertGrowth"] = false,
+			["TEXTURE"] = "VuhDo - Pipe, light",
+		},
+		["BAR_BORDER"] = {
+			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
+			["ADJUST"] = 0,
+			["WIDTH"] = 1,
+		},
+<<<<<<< HEAD
+		["BAR_BORDER"] = {
+			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
+			["ADJUST"] = 0,
+			["WIDTH"] = 1,
+		},
+		["HEALTH_BAR"] = {
+=======
+		["HOT_BARS"] = {
+>>>>>>> parent of 76f5add1... addon updates
+			["turnAxis"] = false,
+			["vertical"] = false,
+			["invertGrowth"] = false,
+		},
+<<<<<<< HEAD
+		["MANA_BAR"] = {
+			["turnAxis"] = false,
+			["invertGrowth"] = false,
+			["TEXTURE"] = "VuhDo - Pipe, light",
+		},
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> parent of 16a49338... addon updates
+		["HEALTH_BAR"] = {
+			["turnAxis"] = false,
+			["vertical"] = false,
+			["invertGrowth"] = false,
 		},
 		["SIDE_RIGHT"] = {
 			["turnAxis"] = false,
@@ -8371,39 +9363,16 @@ VUHDO_INDICATOR_CONFIG = {
 			["TEXTURE"] = "VuhDo - Polished Wood",
 		},
 <<<<<<< HEAD
-		["BAR_BORDER"] = {
-			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
-			["ADJUST"] = 0,
-			["WIDTH"] = 1,
-		},
-		["HEALTH_BAR"] = {
-=======
-		["HOT_BARS"] = {
->>>>>>> parent of 76f5add1... addon updates
-			["turnAxis"] = false,
-			["vertical"] = false,
-			["invertGrowth"] = false,
-		},
-		["MANA_BAR"] = {
-			["turnAxis"] = false,
-			["invertGrowth"] = false,
-			["TEXTURE"] = "VuhDo - Pipe, light",
-		},
-<<<<<<< HEAD
-=======
-		["HEALTH_BAR"] = {
-			["turnAxis"] = false,
-			["vertical"] = false,
-			["invertGrowth"] = false,
-		},
-		["BAR_BORDER"] = {
-			["FILE"] = "Interface\\AddOns\\VuhDo\\Images\\white_square_16_16",
-			["ADJUST"] = 0,
-			["WIDTH"] = 1,
-		},
 >>>>>>> parent of 76f5add1... addon updates
 		["SWIFTMEND_INDICATOR"] = {
 			["SCALE"] = 1,
+=======
+		["SIDE_LEFT"] = {
+			["turnAxis"] = false,
+			["vertical"] = true,
+			["invertGrowth"] = false,
+			["TEXTURE"] = "VuhDo - Polished Wood",
+>>>>>>> parent of 16a49338... addon updates
 		},
 	},
 	["TEXT_INDICATORS"] = {
@@ -8439,70 +9408,14 @@ VUHDO_INDICATOR_CONFIG = {
 					["G"] = 0,
 					["TR"] = 1,
 					["TO"] = 1,
-					["useOpacity"] = true,
+					["B"] = 0,
 					["useText"] = true,
 					["useBackground"] = true,
 					["O"] = 1,
-					["B"] = 0,
+					["useOpacity"] = true,
 				},
+				["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
 				["USE_SHADOW"] = false,
-				["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
-			},
-		},
-		["THREAT_BAR"] = {
-			["TEXT_PROVIDER"] = {
-				[0] = "",
-			},
-			["TEXT"] = {
-				["X_ADJUST"] = 7,
-				["USE_MONO"] = false,
-				["Y_ADJUST"] = 2,
-				["ANCHOR"] = "RIGHT",
-				["USE_OUTLINE"] = false,
-				["SCALE"] = 20,
-				["COLOR"] = {
-					["TG"] = 0,
-					["R"] = 0,
-					["TB"] = 0,
-					["G"] = 0,
-					["TR"] = 1,
-					["TO"] = 1,
-					["useOpacity"] = true,
-					["useText"] = true,
-					["useBackground"] = true,
-					["O"] = 1,
-					["B"] = 0,
-				},
-				["USE_SHADOW"] = true,
-				["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
-			},
-		},
-		["MANA_BAR"] = {
-			["TEXT_PROVIDER"] = {
-				[0] = "",
-			},
-			["TEXT"] = {
-				["X_ADJUST"] = 7,
-				["USE_MONO"] = false,
-				["Y_ADJUST"] = 2,
-				["ANCHOR"] = "RIGHT",
-				["USE_OUTLINE"] = false,
-				["SCALE"] = 20,
-				["COLOR"] = {
-					["TG"] = 0.55,
-					["R"] = 0,
-					["TB"] = 1,
-					["G"] = 0,
-					["TR"] = 0.36,
-					["TO"] = 1,
-					["useOpacity"] = true,
-					["useText"] = true,
-					["useBackground"] = true,
-					["O"] = 1,
-					["B"] = 0,
-				},
-				["USE_SHADOW"] = true,
-				["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
 			},
 		},
 		["SIDE_LEFT"] = {
@@ -8523,14 +9436,70 @@ VUHDO_INDICATOR_CONFIG = {
 					["G"] = 0,
 					["TR"] = 1,
 					["TO"] = 1,
-					["useOpacity"] = true,
+					["B"] = 0,
 					["useText"] = true,
 					["useBackground"] = true,
 					["O"] = 1,
-					["B"] = 0,
+					["useOpacity"] = true,
 				},
-				["USE_SHADOW"] = false,
 				["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+				["USE_SHADOW"] = false,
+			},
+		},
+		["MANA_BAR"] = {
+			["TEXT_PROVIDER"] = {
+				[0] = "",
+			},
+			["TEXT"] = {
+				["X_ADJUST"] = 7,
+				["USE_MONO"] = false,
+				["Y_ADJUST"] = 2,
+				["ANCHOR"] = "RIGHT",
+				["USE_OUTLINE"] = false,
+				["SCALE"] = 20,
+				["COLOR"] = {
+					["TG"] = 0.55,
+					["R"] = 0,
+					["TB"] = 1,
+					["G"] = 0,
+					["TR"] = 0.36,
+					["TO"] = 1,
+					["B"] = 0,
+					["useText"] = true,
+					["useBackground"] = true,
+					["O"] = 1,
+					["useOpacity"] = true,
+				},
+				["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+				["USE_SHADOW"] = true,
+			},
+		},
+		["THREAT_BAR"] = {
+			["TEXT_PROVIDER"] = {
+				[0] = "",
+			},
+			["TEXT"] = {
+				["X_ADJUST"] = 7,
+				["USE_MONO"] = false,
+				["Y_ADJUST"] = 2,
+				["ANCHOR"] = "RIGHT",
+				["USE_OUTLINE"] = false,
+				["SCALE"] = 20,
+				["COLOR"] = {
+					["TG"] = 0,
+					["R"] = 0,
+					["TB"] = 0,
+					["G"] = 0,
+					["TR"] = 1,
+					["TO"] = 1,
+					["B"] = 0,
+					["useText"] = true,
+					["useBackground"] = true,
+					["O"] = 1,
+					["useOpacity"] = true,
+				},
+				["FONT"] = "Interface\\AddOns\\VuhDo\\Fonts\\ariblk.ttf",
+				["USE_SHADOW"] = true,
 			},
 		},
 	},

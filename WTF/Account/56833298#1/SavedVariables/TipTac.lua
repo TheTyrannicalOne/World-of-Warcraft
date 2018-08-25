@@ -40,6 +40,13 @@ TipTac_Config = {
 	["hideAllTipsInCombat"] = true,
 	["optionsBottom"] = 658.106306185674,
 	["classification_worldboss"] = "%s|r (Boss) ",
+<<<<<<< HEAD
+=======
+	["hideWorldTips"] = true,
+	["gradientTip"] = true,
+	["colSameGuild"] = "|cffff32ff",
+	["showTalents"] = true,
+>>>>>>> parent of 16a49338... addon updates
 	["colorNameByClass"] = false,
 	["barFontFace"] = "Fonts\\ARIALN.TTF",
 	["colSameGuild"] = "|cffff32ff",
@@ -52,7 +59,10 @@ TipTac_Config = {
 		0.2, -- [4]
 	},
 	["classColoredBorder"] = false,
+<<<<<<< HEAD
 	["fadeTime"] = 0.100000001490116,
+=======
+>>>>>>> parent of 16a49338... addon updates
 	["healthBarColor"] = {
 		0.3, -- [1]
 		0.9, -- [2]
@@ -63,9 +73,15 @@ TipTac_Config = {
 	["hideUFTipsInCombat"] = false,
 	["top"] = 460.156231195646,
 	["classification_rareelite"] = "+%s|r (Rare) ",
+<<<<<<< HEAD
 	["gradientTip"] = true,
 	["hideWorldTips"] = true,
 	["backdropInsets"] = 2.5,
+=======
+	["barFontFace"] = "Fonts\\ARIALN.TTF",
+	["manaBar"] = false,
+	["optionsBottom"] = 658.106306185674,
+>>>>>>> parent of 16a49338... addon updates
 	["barFontSize"] = 10,
 	["preFadeTime"] = 0.1,
 	["showHiddenTipsOnShift"] = false,

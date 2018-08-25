@@ -222,17 +222,12 @@ function private.SellTrashBtnOnClick(button)
 end
 
 function private.SellBOEBtnOnClick(button)
-	-- checking if an item is disenchantable might cause our query to change since it depends on the ItemInfo DB, so cache the list of items first
-	local items = TSMAPI_FOUR.Util.AcquireTempTable()
 	for _, row in private.query:Iterator() do
-		tinsert(items, row:GetField("itemString"))
-	end
-	for _, itemString in ipairs(items) do
+		local itemString = row:GetField("itemString")
 		if TSMAPI_FOUR.Item.IsDisenchantable(itemString) then
 			TSM.Vendoring.Sell.SellItem(itemString)
 		end
 	end
-	TSMAPI_FOUR.Util.ReleaseTempTable(items)
 end
 
 function private.SellAllBtnOnClick(button)

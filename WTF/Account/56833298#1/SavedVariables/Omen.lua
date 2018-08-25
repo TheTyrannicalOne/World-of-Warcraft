@@ -2469,6 +2469,7 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
+<<<<<<< HEAD
 			["PositionX"] = 428.618218069226,
 			["VGrip1"] = 155.316689874038,
 			["VGrip2"] = 155.316689874038,
@@ -2478,6 +2479,13 @@ Omen3DB = {
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+=======
+			["PositionH"] = 196.984924238223,
+			["VGrip1"] = 155.316689874038,
+			["VGrip2"] = 155.316689874038,
+			["PositionY"] = 224.014660035749,
+			["PositionX"] = 451.131409021275,
+>>>>>>> parent of 16a49338... addon updates
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -2498,7 +2506,15 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
+<<<<<<< HEAD
 			["PositionH"] = 196.984932998413,
+=======
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
+>>>>>>> parent of 16a49338... addon updates
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {

@@ -29,7 +29,7 @@ VWQL = {
 		},
 	},
 	["Sort"] = 3,
-	["VERSION"] = 78,
+	["VERSION"] = 76,
 	["Jingojaggot-Zul'jin"] = {
 		["Filter"] = 63,
 		["Quests"] = {
@@ -216,6 +216,11 @@ VWQL = {
 	},
 	["Dialdaas-Darkspear"] = {
 		["Filter"] = 63,
+<<<<<<< HEAD
+=======
+		["VERSION"] = 76,
+		["RegularQuestMode"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["Quests"] = {
 		},
 		["FilterType"] = {
@@ -289,6 +294,11 @@ VWQL = {
 	},
 	["Migimong-Runetotem"] = {
 		["Filter"] = 63,
+<<<<<<< HEAD
+=======
+		["VERSION"] = 76,
+		["RegularQuestMode"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["Quests"] = {
 		},
 		["FilterType"] = {

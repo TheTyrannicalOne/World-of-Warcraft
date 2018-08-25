@@ -1,11 +1,8 @@
 local GlobalAddonName, LTS = ...
 
-local ADDON_VERSION = "3.0 (22.08.2018)"
+local ADDON_VERSION = "2.9 (30.08.2017)"
 
 --[[
-3.0
-8.0.1 Update
-
 2.9
 7.3.0 Update
 
@@ -204,23 +201,6 @@ local RaidDiffToDiffName = {
 	[16] = PLAYER_DIFFICULTY6,
 }
 
-local function ZoneIDToNewID(zoneID)
-	for i=1,#LTS.ZoneOldList do
-		for j=2,#LTS.ZoneOldList[i] do
-			if LTS.ZoneOldList[i][j] == zoneID then
-				return LTS.ZoneOldList[i][1]
-			end
-		end
-	end
-end
-local function ZoneIDToOldID(zoneID)
-	for i=1,#LTS.ZoneOldList do
-		if LTS.ZoneOldList[i][1] == zoneID then
-			return LTS.ZoneOldList[i][2]
-		end
-	end
-end
-
 
 local CharQuestsData
 local UpdateModel
@@ -410,21 +390,19 @@ local function UpdateLocalizatedZones()
 		return
 	end
 	LocMapNames = {}
-	--[[
-	for i=1,1500 do
-		local mapName = (C_Map.GetMapInfo(mapID or 0) or {}).name
-		if mapName then
-			LocMapNames[ i ] = mapName
-		end
+	local allZones = {}
+	GetAreaMaps(allZones)
+	for i=1,#allZones do
+		local mapName = GetMapNameByID(allZones[i])
+		LocMapNames[ allZones[i] ] = mapName
 	end
-	]]
 end
 
 local function ZoneToMapID(zoneID)
 	for mapID,zones in pairs(QuestZoneToDataID) do
 		for i=1,#zones do
 			if zoneID == zones[i] then
-				return ZoneIDToNewID(mapID)
+				return mapID
 			end
 		end
 	end
@@ -436,7 +414,7 @@ local function GetZoneName(zoneID,formatString)
 		if isNotENClient then
 			local mapID = ZoneToMapID(zoneID)
 			if mapID then
-				zoneName = zoneName .. " |cffaaffaa("..((C_Map.GetMapInfo(mapID or 0) or {}).name or "")..")|r"
+				zoneName = zoneName .. " |cffaaffaa("..(LocMapNames[mapID] or "")..")|r"
 			end
 		end
 		if formatString then
@@ -1685,7 +1663,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 				for mapID,zones in pairs(QuestZoneToDataID) do
 					for i=1,#zones do
 						if zoneID == zones[i] then
-							return ZoneIDToNewID(mapID)
+							return mapID
 						end
 					end
 				end
@@ -1697,7 +1675,7 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 					if isNotENClient then
 						local mapID = ZoneToMapID(zoneID)
 						if mapID then
-							zoneName = zoneName .. " |cffaaffaa("..((C_Map.GetMapInfo(mapID or 0) or {}).name or "")..")|r"
+							zoneName = zoneName .. " |cffaaffaa("..(LocMapNames[mapID] or "")..")|r"
 						end
 					end
 					if formatString then
@@ -2072,7 +2050,8 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 							WardrobeCollectionFrame.ItemsCollectionFrame:SetActiveSlot("HEADSLOT", LE_TRANSMOG_TYPE_APPEARANCE)
 						end
 						AddAllSlotsToCurrentFilter = true
-						local mapID = ZoneIDToOldID( C_Map.GetBestMapForUnit("player") or 0 )
+						SetMapToCurrentZone()
+						local mapID = GetCurrentMapAreaID()
 						if ZoneToDataID[mapID] then
 							FilterInstance = ZoneToDataID[mapID]
 							local _, _, difficulty = GetInstanceInfo()
@@ -2142,8 +2121,8 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 								else
 									info.hasArrow = false
 									info.text = w[j][2]
-									if isNotENClient and C_Map.GetMapInfo(w[j][1] or 0) then
-										info.text = info.text .. " |cffaaffaa("..((C_Map.GetMapInfo(w[j][1] or 0) or {}).name or "")..")"
+									if isNotENClient and LocMapNames[ w[j][1] ] then
+										info.text = info.text .. " |cffaaffaa("..LocMapNames[ w[j][1] ]..")"
 									end		
 									info.func = FilerZoneFunc
 									info.arg1 =  w[j][1]
@@ -2169,8 +2148,8 @@ eventsFrame:SetScript("OnEvent",function(self,event,arg1)
 							local info = UIDropDownMenu_CreateInfo()
 							info.hasArrow = #w[i] > 2
 							info.text = w[i][2]
-							if isNotENClient and C_Map.GetMapInfo(w[i][1] or 0) then
-								info.text = info.text .. " |cffaaffaa("..((C_Map.GetMapInfo(w[i][1] or 0) or {}).name or "")..")"
+							if isNotENClient and LocMapNames[ w[i][1] ] then
+								info.text = info.text .. " |cffaaffaa("..LocMapNames[ w[i][1] ]..")"
 							end	      
 							info.func = FilerZoneFunc
 							info.arg1 =  w[i][1]

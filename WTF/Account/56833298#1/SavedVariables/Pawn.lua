@@ -4,7 +4,7 @@ PawnCommon = {
 	["AlignNumbersRight"] = false,
 	["ShowBagUpgradeAdvisor"] = true,
 	["ShowItemID"] = false,
-	["ShowRelicUpgrades"] = false,
+	["ShowRelicUpgrades"] = true,
 	["ShowValuesForUpgradesOnly"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
@@ -430,6 +430,15 @@ PawnCommon = {
 		["\"MrRobot\":DEATHKNIGHT1"] = {
 			["IconTexturePath"] = 135770,
 			["PerCharacterOptions"] = {
+<<<<<<< HEAD
+=======
+				["Vancard-Zul'jin"] = {
+					["Visible"] = true,
+				},
+				["Tyriinid-Dalaran"] = {
+					["Visible"] = true,
+				},
+>>>>>>> parent of 16a49338... addon updates
 			},
 			["Color"] = "ff4d6b",
 			["ClassID"] = 6,
@@ -680,9 +689,13 @@ PawnCommon = {
 			["UnenchantedColor"] = "00bf70",
 		},
 	},
+<<<<<<< HEAD
 	["ShowSocketingAdvisor"] = true,
 	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
+=======
+	["LastVersion"] = 2.0226,
+>>>>>>> parent of 16a49338... addon updates
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,

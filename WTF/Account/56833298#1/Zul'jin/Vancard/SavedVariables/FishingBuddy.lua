@@ -6,6 +6,7 @@ FishingBuddy_Player = {
 	},
 	["Settings"] = {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		["ContestSupport"] = true,
 		["AutoOpen"] = true,
 		["OutfitManager"] = "Equipment Manager",
@@ -16,6 +17,12 @@ FishingBuddy_Player = {
 		["OutfitManager"] = "Equipment Manager",
 		["UseAction"] = true,
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["TotalTimeFishing"] = 550.367000000056,
+		["AutoOpen"] = true,
+		["OutfitManager"] = "Equipment Manager",
+		["EnhanceFishingSounds"] = true,
+>>>>>>> parent of 16a49338... addon updates
 		["STVPoolsOnly"] = true,
 		["ContestSupport"] = true,
 		["DrownedMana"] = true,
@@ -40,20 +47,21 @@ FishingBuddy_Player = {
 		["TotalTimeFishing"] = 550.367000000056,
 =======
 		["MountedCast"] = true,
-		["FishingPetBuddies"] = -3,
-		["TotalTimeFishing"] = 550.367000000056,
-		["OverWalking"] = true,
-		["STVTimer"] = true,
-		["UseTuskarrSpear"] = true,
 		["WatchCurrentZone"] = true,
-		["WatchElapsedTime"] = true,
-		["TurnOnSound"] = true,
-		["UseBladeboneHook"] = true,
+		["EasyCastKeys"] = 1,
 		["EnhancePools"] = true,
+		["AlwaysLure"] = true,
+		["UseTuskarrSpear"] = true,
+		["FishingPetBuddies"] = -3,
+		["WatchElapsedTime"] = true,
 		["AutoLoot"] = true,
-		["EnhanceFishingSounds"] = true,
+		["UseBladeboneHook"] = true,
 		["SpecialBobbers"] = -2,
+		["TurnOnSound"] = true,
+		["STVTimer"] = true,
+		["OverWalking"] = true,
 		["EasyLures"] = true,
+<<<<<<< HEAD
 		["AlwaysLure"] = true,
 		["EasyCastKeys"] = 1,
 >>>>>>> parent of 76f5add1... addon updates
@@ -66,6 +74,13 @@ FishingBuddy_Player = {
 	},
 =======
 >>>>>>> parent of 76f5add1... addon updates
+=======
+		["UseAction"] = true,
+		["BackgroundSounds"] = true,
+	},
+	["WasWearing"] = {
+	},
+>>>>>>> parent of 16a49338... addon updates
 	["WatcherLocation"] = {
 		["y"] = -9.8770751953125,
 		["x"] = -283.973724365234,
@@ -76,5 +91,9 @@ FishingBuddy_Player = {
 =======
 	["Outfit"] = {
 	},
+<<<<<<< HEAD
 >>>>>>> parent of 76f5add1... addon updates
+=======
+	["Version"] = 19500,
+>>>>>>> parent of 16a49338... addon updates
 }

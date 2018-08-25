@@ -15,19 +15,32 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[36353727] = "First Aid:Olisarra the Kind:First Aid Trainer:603433",
 					[42983410] = "Herbalism:Kuhuine Tenderstride:Herbalism Trainer:599140",
 					[35283423] = "Tailoring:Tanithria:Tailoring Trainer:603458",
+<<<<<<< HEAD
 					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
 					[39773487] = "Jewelcrafting:Timothy Jones:Jewelcrafting Trainer:603431",
+=======
+					[35782854] = "Skinning:Kondal Huntsworn:Skinning Trainer:603457",
+					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
+>>>>>>> parent of 16a49338... addon updates
 					[38732505] = "Engineering:Didi the Wrench:Goblin Engineering Trainer:603424",
 					[52991513] = "Banker:Teller Hanners:Banker:616472",
 					[35412971] = "Leatherworking:Diane Cannings:Leather Armor Expert:603426",
 					[34772858] = "Leatherworking:Thanid Glowergold:Mail Armor Expert:624945",
 					[44582853] = "Blacksmithing:Alard Schmied:Blacksmithing Trainer:598403",
 					[65483242] = "Innkeeper:Uda the Beast:Innkeeper:616342",
+<<<<<<< HEAD
 					[52471473] = "Banker:Teller Rames:Banker:616471",
 					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
 					[42313468] = "Herbalism:Dorothy Egan:Herbalism Trainer:599129",
 					[35782854] = "Skinning:Kondal Huntsworn:Skinning Trainer:603457",
 					[52726542] = "Fishing:Marcia Chase:Fishing Trainer & Supplies:612420",
+=======
+					[34772858] = "Leatherworking:Thanid Glowergold:Mail Armor Expert:624945",
+					[40952648] = "Archaeology:Dariness the Learned:Archaeology Trainer:603448",
+					[39773487] = "Jewelcrafting:Timothy Jones:Jewelcrafting Trainer:603431",
+					[41383281] = "Alchemy:Deucus Valdera:Alchemy Trainer:599128",
+					[42983410] = "Herbalism:Kuhuine Tenderstride:Herbalism Trainer:599140",
+>>>>>>> parent of 16a49338... addon updates
 				},
 				["AzuremystScenario"] = {
 					[31403860] = "First Aid:Anchorite Lysara:First Aid Trainer:1204258",
@@ -71,10 +84,16 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[55128420] = "Blacksmithing:Barm Stonebreaker:Blacksmithing Trainer:598594",
 					[54658413] = "Blacksmithing:Muirn Ironhorn:Blacksmithing Trainer:598595",
 				},
+<<<<<<< HEAD
 				["Netherstorm"] = {
 					[32126483] = "Stable:Liza Cutlerflix:Stable Master:149876",
 					[32296717] = "Banker:Meeda:Banker:164675",
 					[32036441] = "Innkeeper:Innkeeper Remi Dodoso:Innkeeper:103793",
+=======
+				["Durotar"] = {
+					[52014179] = "Stable:Shoja'my:Stable Master:39303",
+					[53034183] = "MAGE:Un'Thuwa:Mage Trainer:22656",
+>>>>>>> parent of 16a49338... addon updates
 				},
 				["Azsuna"] = {
 					[47514419] = "Leatherworking:Celea:Leatherworking Trainer:624996",
@@ -93,6 +112,7 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[76836545] = "Leatherworking:Grikka:Leatherworking Trainer:135303",
 					[53905506] = "First Aid:Fera Palerunner:First Aid Trainer:103544",
 				},
+<<<<<<< HEAD
 				["Zangarmarsh"] = {
 					[31814969] = "Stable:Khalan:Stable Master:98884",
 				},
@@ -100,6 +120,16 @@ HandyNotes_SpecialNPCsEtcDB = {
 					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
 					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
 				},
+=======
+				["Suramar"] = {
+					[37404587] = "Innkeeper:Maribeth:Innkeeper:1127701",
+					[30065340] = "Blacksmithing:Felsmith Nal'ryssa:Blacksmithing Trainer:598628",
+				},
+				["ShattrathCity"] = {
+					[51142717] = "Auctioneer:Auctioneer Braku:Horde Auctioneer:328005",
+					[48372913] = "Banker:Gromden:Banker:103192",
+				},
+>>>>>>> parent of 16a49338... addon updates
 				["Orgrimmar"] = {
 					[67745315] = "Banker:Binzella:Banker:288281",
 					[48788382] = "Banker:Rilgiz:Banker:280658",
