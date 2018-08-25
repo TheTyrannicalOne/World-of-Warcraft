@@ -97,22 +97,13 @@ SET mouseSpeed "1"
 SET expandUpgradePanel "0"
 SET Sound_MusicVolume "0.30000001192093"
 SET Sound_AmbienceVolume "0.80000001192093"
-<<<<<<< HEAD
-SET gameTip "67"
-=======
-SET gameTip "57"
->>>>>>> parent of 76f5add1... addon updates
+SET gameTip "58"
 SET twitterGetConfigTime "1518590869352"
 SET twitterShortUrlLength "23"
 SET twitterCharactersPerMedia "24"
 SET CACHE-WQST-QuestV2RecordCount "36156"
-<<<<<<< HEAD
 SET CACHE-WQST-QuestV2HotfixCount "119"
 SET CACHE-WQST-QuestObjectiveRecordCount "36482"
-=======
-SET CACHE-WQST-QuestV2HotfixCount "96"
-SET CACHE-WQST-QuestObjectiveRecordCount "36493"
->>>>>>> parent of 76f5add1... addon updates
 SET CACHE-WQST-QuestObjectiveHotfixCount "18"
 SET CACHE-WQST-QuestObjectiveXEffectRecordCount "11501"
 SET CACHE-WQST-QuestObjectiveXEffectHotfixCount "21"

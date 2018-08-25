@@ -1,15 +1,22 @@
 Version: 1
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
 Frame: ExtraActionBarFrame
 FrameLevel: 2
 Anchor: CENTER
-X: -239
-Y: -150
+X: -249
+Y: -140
 W: 64
 H: 64
 Frame: BNToastFrame
 FrameLevel: 1
 Anchor: LEFT
-X: 24
+X: -5
 Y: -227
 W: 250
 H: 50
@@ -27,7 +34,13 @@ X: 0
 Y: 0
 W: 365
 H: 240
-<<<<<<< HEAD
+Frame: AllTheThings-Window-Prime
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
 Frame: AllTheThings-Window-Unsorted
 FrameLevel: 1
 Anchor: CENTER
@@ -42,8 +55,6 @@ X: 0
 Y: 0
 W: 300
 H: 300
-=======
->>>>>>> parent of 76f5add1... addon updates
 Frame: SpellActivationOverlayFrame
 FrameLevel: 1
 Anchor: BOTTOM
@@ -58,17 +69,3 @@ X: 0
 Y: 0
 W: 300
 H: 496
-Frame: AllTheThings-Window-CurrentInstance
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 300
-H: 300
-Frame: AllTheThings-Window-Prime
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 300
-H: 300
