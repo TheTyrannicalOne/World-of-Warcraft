@@ -97,30 +97,17 @@ SET mouseSpeed "1"
 SET expandUpgradePanel "0"
 SET Sound_MusicVolume "0.30000001192093"
 SET Sound_AmbienceVolume "0.80000001192093"
-<<<<<<< HEAD
-SET gameTip "59"
-=======
-SET gameTip "34"
->>>>>>> parent of 16a49338... addon updates
+SET gameTip "36"
 SET twitterGetConfigTime "1518590869352"
 SET twitterShortUrlLength "23"
 SET twitterCharactersPerMedia "24"
 SET CACHE-WQST-QuestV2RecordCount "36156"
-<<<<<<< HEAD
 SET CACHE-WQST-QuestV2HotfixCount "119"
 SET CACHE-WQST-QuestObjectiveRecordCount "36482"
 SET CACHE-WQST-QuestObjectiveHotfixCount "18"
 SET CACHE-WQST-QuestObjectiveXEffectRecordCount "11501"
 SET CACHE-WQST-QuestObjectiveXEffectHotfixCount "21"
 SET CACHE-WGOB-GameObjectsRecordCount "73502"
-=======
-SET CACHE-WQST-QuestV2HotfixCount "44"
-SET CACHE-WQST-QuestObjectiveRecordCount "36469"
-SET CACHE-WQST-QuestObjectiveHotfixCount "56"
-SET CACHE-WQST-QuestObjectiveXEffectRecordCount "11504"
-SET CACHE-WQST-QuestObjectiveXEffectHotfixCount "2"
-SET CACHE-WGOB-GameObjectsRecordCount "73500"
->>>>>>> parent of 16a49338... addon updates
 SET CACHE-WGOB-GameObjectsHotfixCount "8"
 SET mountJournalFilters ""
 SET useIPv6 "1"
@@ -154,6 +141,4 @@ SET maxFPSBk "0"
 SET spellClutterRangeConstantRaid "20.000000"
 SET seenCharacterUpgradePopup "7"
 SET graphicsSSAO "5"
-
 SET MSAAQuality "2,0"
-SET gxWindowedResolution "2560x1440"

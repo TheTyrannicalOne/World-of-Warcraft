@@ -6,8 +6,13 @@ FishingBuddy_Player = {
 	},
 	["Settings"] = {
 <<<<<<< HEAD
-		["SpecialBobbers"] = -1,
 		["TotalTimeFishing"] = 1,
+		["SpecialBobbers"] = -1,
+	},
+	["WasWearing"] = {
+	},
+	["Outfit"] = {
+	},
 =======
 		["AutoOpen"] = true,
 		["OutfitManager"] = "Equipment Manager",
@@ -16,37 +21,32 @@ FishingBuddy_Player = {
 		["DrownedMana"] = true,
 		["LastResort"] = true,
 		["MountedCast"] = true,
-		["BackgroundSounds"] = true,
+		["EasyCastKeys"] = 1,
 		["TotalTimeFishing"] = 849.766000000018,
-		["UseAction"] = true,
-		["TurnOnSound"] = true,
+		["SpecialBobbers"] = -2,
+		["AutoLoot"] = true,
 		["UseTuskarrSpear"] = true,
 		["FishingPetBuddies"] = -3,
 		["OverWalking"] = true,
-		["STVTimer"] = true,
+		["EnhanceFishingSounds"] = true,
 		["UseBladeboneHook"] = true,
 		["EnhancePools"] = true,
-		["AutoLoot"] = true,
+		["TurnOnSound"] = true,
+		["STVTimer"] = true,
 		["AlwaysLure"] = true,
-		["EnhanceFishingSounds"] = true,
 		["EasyLures"] = true,
-		["SpecialBobbers"] = -2,
-		["EasyCastKeys"] = 1,
->>>>>>> parent of 16a49338... addon updates
+		["UseAction"] = true,
+		["BackgroundSounds"] = true,
 	},
 	["WasWearing"] = {
-	},
-	["Version"] = 19500,
-<<<<<<< HEAD
-=======
-	["Outfit"] = {
 	},
 >>>>>>> parent of 16a49338... addon updates
 	["WatcherLocation"] = {
 	},
 <<<<<<< HEAD
+=======
 	["Outfit"] = {
 	},
-=======
 >>>>>>> parent of 16a49338... addon updates
+	["Version"] = 19500,
 }

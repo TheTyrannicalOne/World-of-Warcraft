@@ -1,4 +1,11 @@
 Version: 1
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
 Frame: ExtraActionBarFrame
 FrameLevel: 2
 Anchor: CENTER
@@ -62,10 +69,3 @@ X: 0
 Y: 0
 W: 300
 H: 496
-Frame: AllTheThings-Window-CurrentInstance
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 300
-H: 300

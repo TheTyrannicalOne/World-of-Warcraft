@@ -16,9 +16,9 @@ HandyNotes_EliteBattlePetsDB = {
 		},
 		["Fantastiburo - Zul'jin"] = {
 		},
-		["LUI-Towelliee"] = {
-		},
 		["Shanyt - Zul'jin"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

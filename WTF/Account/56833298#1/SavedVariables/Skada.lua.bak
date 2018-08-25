@@ -20,24 +20,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Jingojaggot - Argent Dawn"] = {
@@ -50,24 +50,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Brotus - Argent Dawn"] = {
@@ -80,24 +80,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Towel-Monk"] = {
@@ -111,19 +111,19 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["barfont"] = "ABF",
 					["barslocked"] = true,
-					["spark"] = false,
-					["bartexture"] = "Tukui",
-					["mode"] = "DPS",
-					["point"] = "BOTTOMRIGHT",
 					["x"] = -25.509765625,
+					["point"] = "BOTTOMRIGHT",
+					["mode"] = "DPS",
+					["bartexture"] = "Tukui",
+					["spark"] = false,
 				}, -- [1]
 			},
 			["icon"] = {
 				["minimapPos"] = 144.276017543911,
 			},
 			["report"] = {
-				["channel"] = "Party",
 				["mode"] = "Healing",
+				["channel"] = "Party",
 			},
 		},
 		["Tyrannithal - Argent Dawn"] = {
@@ -136,24 +136,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["barfont"] = "ABF",
 					["barslocked"] = true,
-					["spark"] = false,
-					["bartexture"] = "Tukui",
-					["mode"] = "DPS",
-					["point"] = "BOTTOMRIGHT",
 					["x"] = -25.509765625,
+					["point"] = "BOTTOMRIGHT",
+					["mode"] = "DPS",
+					["bartexture"] = "Tukui",
+					["spark"] = false,
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["channel"] = "Party",
 				["mode"] = "Healing",
+				["channel"] = "Party",
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
@@ -163,14 +163,14 @@ SkadaDB = {
 					["barmax"] = 7,
 					["barslocked"] = true,
 					["y"] = 39.4273262023926,
-					["x"] = -25.509765625,
+					["barfont"] = "ABF",
 					["barfontsize"] = 15,
 					["mode"] = "DPS",
 					["spark"] = false,
 					["bartexture"] = "Tukui",
 					["barwidth"] = 188,
 					["point"] = "BOTTOMRIGHT",
-					["barfont"] = "ABF",
+					["x"] = -25.509765625,
 				}, -- [1]
 			},
 			["icon"] = {
@@ -181,9 +181,9 @@ SkadaDB = {
 				["mode"] = "Healing",
 			},
 			["versions"] = {
-				["1.6.3"] = true,
-				["1.6.4"] = true,
 				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
 			},
 		},
 		["Cowtastraphy - Argent Dawn"] = {
@@ -196,24 +196,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Bathal - Argent Dawn"] = {
@@ -226,24 +226,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Shaekhan - Argent Dawn"] = {
@@ -256,24 +256,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Vadder - Argent Dawn"] = {
@@ -286,24 +286,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Tyran - Argent Dawn"] = {
@@ -316,24 +316,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 		["Mulmok - Argent Dawn"] = {
@@ -346,39 +346,39 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 >>>>>>> parent of 16a49338... addon updates
 		["Default"] = {
 			["windows"] = {
 				{
-					["y"] = 0.001220703125,
+					["y"] = 0.0013580322265625,
 					["point"] = "CENTER",
 					["x"] = 9.15527343750e-005,
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 		},
 <<<<<<< HEAD
@@ -393,17 +393,42 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
+					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
 					["barfont"] = "ABF",
+				}, -- [1]
+			},
+			["versions"] = {
+				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
+			},
+			["icon"] = {
+				["minimapPos"] = 136.914267178511,
+			},
+			["report"] = {
+				["channel"] = "Party",
+				["mode"] = "Healing",
+			},
+		},
+		["LUI-Towelliee"] = {
+			["windows"] = {
+				{
+					["barheight"] = 22,
+					["barmax"] = 7,
+					["barwidth"] = 188,
+					["barfontsize"] = 15,
+					["y"] = 39.4273262023926,
+					["barfont"] = "ABF",
+					["barslocked"] = true,
+					["x"] = -25.509765625,
 					["point"] = "BOTTOMRIGHT",
 					["mode"] = "DPS",
 					["bartexture"] = "Tukui",
 					["spark"] = false,
 				}, -- [1]
-			},
-			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
-				["1.6.3"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
@@ -423,42 +448,17 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["barfont"] = "ABF",
 					["barslocked"] = true,
-					["x"] = -25.509765625,
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["x"] = -25.509765625,
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
-			},
-			["icon"] = {
-				["minimapPos"] = 136.914267178511,
-			},
-			["report"] = {
-				["mode"] = "Healing",
-				["channel"] = "Party",
-			},
-		},
-		["LUI-Towelliee"] = {
-			["windows"] = {
-				{
-					["barheight"] = 22,
-					["barmax"] = 7,
-					["barwidth"] = 188,
-					["barfontsize"] = 15,
-					["y"] = 39.4273262023926,
-					["barfont"] = "ABF",
-					["barslocked"] = true,
-					["spark"] = false,
-					["bartexture"] = "Tukui",
-					["mode"] = "DPS",
-					["point"] = "BOTTOMRIGHT",
-					["x"] = -25.509765625,
-				}, -- [1]
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
@@ -478,24 +478,24 @@ SkadaDB = {
 					["y"] = 39.4273262023926,
 					["x"] = -25.509765625,
 					["barslocked"] = true,
-					["barfont"] = "ABF",
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "DPS",
-					["bartexture"] = "Tukui",
 					["spark"] = false,
+					["bartexture"] = "Tukui",
+					["mode"] = "DPS",
+					["point"] = "BOTTOMRIGHT",
+					["barfont"] = "ABF",
 				}, -- [1]
 			},
 			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
 				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
 			},
 			["icon"] = {
 				["minimapPos"] = 136.914267178511,
 			},
 			["report"] = {
-				["mode"] = "Healing",
 				["channel"] = "Party",
+				["mode"] = "Healing",
 			},
 		},
 >>>>>>> parent of 16a49338... addon updates
