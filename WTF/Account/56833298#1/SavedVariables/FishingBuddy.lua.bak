@@ -1,209 +1,21 @@
 
 FishingBuddy_Info = {
 	["FishTotals"] = {
-		[85001] = 37,
-		[625000] = 15,
-		[680000] = 9,
-		[680001] = 9,
-		[85000] = 37,
-		[625001] = 15,
 	},
 	["HiddenFishies"] = {
 	},
 	["FishingSkill"] = {
-		[680001] = 0,
-		[625001] = 0,
-		[85001] = 0,
 	},
 	["DataFish"] = 0,
-	["Locales"] = {
-	},
-	["KnownZones"] = {
-		[85] = "Valley of Honor",
-		[130] = "The Culling of Stratholme",
-		[625] = "Dalaran (Broken Isles)",
-		[676] = "Broken Shore",
-		[641] = "Val'sharah",
-		[680] = "Suramar",
-		[696] = "Stormheim",
-		[550] = "Nagrand (Draenor)",
-	},
 	["FishingHoles"] = {
-		[680001] = {
-			[134574] = 8,
-			[124111] = 1,
-		},
-		[625001] = {
-			[124110] = 1,
-			[138777] = 10,
-			[133607] = 4,
-		},
-		[85001] = {
-			[45198] = 2,
-			[45200] = 13,
-			[45195] = 1,
-			[45190] = 6,
-			[6289] = 2,
-			[45194] = 6,
-			[45196] = 6,
-			[6291] = 1,
-		},
-	},
-	["SubZones"] = {
-		[680000] = 1,
-		[641000] = 1,
-		[85001] = "Valley of Honor",
-		[680001] = "Moonwhisper Gulch",
-		[85000] = 1,
-		[625001] = "Margoss's Retreat",
-		[696000] = 1,
-		[676000] = 1,
-		[696001] = "Stonescar Gorge",
-		[676001] = "Felrage Strand",
-		[625000] = 1,
-		[550000] = 1,
-		[550001] = "Snarlpaw Ledge",
-		[130000] = 1,
-		[130001] = "The Culling of Stratholme",
-		[641001] = "Emerald Bay",
 	},
 	["Version"] = 19500,
-	["FishSchools"] = {
-		[680] = {
-			{
-				["y"] = 0.258821285050758,
-				["x"] = 0.342897241360431,
-				["sidx"] = 8001,
-				["kind"] = 0,
-				["count"] = 7,
-				["fish"] = {
-					[134574] = 7,
-				},
-			}, -- [1]
-			{
-				["y"] = 0.519867647661105,
-				["x"] = 0.376433458558074,
-				["sidx"] = 8002,
-				["kind"] = 0,
-				["count"] = 1,
-				["fish"] = {
-					[124111] = 1,
-				},
-			}, -- [2]
-		},
-	},
 	["FishInfo2"] = 0,
+	["SubZones"] = {
+	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
-		[124107] = {
-			["enUS"] = "Cursed Queenfish",
-			["mods"] = 0,
-			["quality"] = 1,
-			["level"] = 800,
-			["skill"] = 800,
-			["texture"] = 1387364,
-		},
-		[134574] = {
-			["texture"] = 237316,
-			["enUS"] = "Huge Runescale Koi",
-			["mods"] = 0,
-			["quest"] = true,
-			["canopen"] = false,
-			["level"] = 800,
-			["skill"] = 800,
-			["quality"] = 1,
-		},
-		[45195] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Empty Rum Bottle",
-			["texture"] = 132796,
-		},
-		[124110] = {
-			["enUS"] = "Stormray",
-			["mods"] = 0,
-			["quality"] = 1,
-			["level"] = 800,
-			["skill"] = 800,
-			["texture"] = 1387376,
-		},
-		[124111] = {
-			["enUS"] = "Runescale Koi",
-			["mods"] = 0,
-			["texture"] = 1387371,
-			["level"] = 800,
-			["skill"] = 800,
-			["quality"] = 1,
-		},
-		[133607] = {
-			["enUS"] = "Silver Mackerel",
-			["mods"] = 0,
-			["quality"] = 1,
-			["level"] = 800,
-			["skill"] = 800,
-			["texture"] = 133934,
-		},
-		[6289] = {
-			["enUS"] = "Raw Longjaw Mud Snapper",
-			["texture"] = 133918,
-		},
-		[45190] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Driftwood",
-			["texture"] = 133942,
-		},
-		[133703] = {
-			["enUS"] = "Pearlescent Conch",
-			["mods"] = 0,
-			["texture"] = 134434,
-			["level"] = 800,
-			["skill"] = 800,
-			["quality"] = 1,
-		},
-		[45198] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Weeds",
-			["texture"] = 134185,
-		},
-		[138777] = {
-			["enUS"] = "Drowned Mana",
-			["mods"] = 0,
-			["texture"] = 132852,
-			["level"] = 800,
-			["skill"] = 800,
-			["quality"] = 1,
-		},
-		[134564] = {
-			["texture"] = 237324,
-			["enUS"] = "Lively Cursed Queenfish",
-			["mods"] = 0,
-			["quest"] = true,
-			["canopen"] = false,
-			["level"] = 800,
-			["skill"] = 800,
-			["quality"] = 1,
-		},
-		[45200] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Sickly Fish",
-			["texture"] = 237325,
-		},
-		[6291] = {
-			["enUS"] = "Raw Brilliant Smallfish",
-			["texture"] = 133894,
-		},
-		[45194] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Tangled Fishing Line",
-			["texture"] = 132891,
-		},
-		[45196] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Tattered Cloth",
-			["texture"] = 237276,
-		},
 	},
-	["missing"] = {
-		["Azsuna"] = true,
-		["Serpentshrine Cavern"] = true,
+	["KnownZones"] = {
 	},
 }

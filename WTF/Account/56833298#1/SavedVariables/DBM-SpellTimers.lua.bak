@@ -6,130 +6,76 @@ DBM_SpellTimers_Settings = {
 	["spells"] = {
 		{
 			["enabled"] = true,
-			["spell"] = 48792,
+			["spell"] = 86659,
 			["cooldown"] = 8,
 			["bartext"] = "%spell on %player",
 		}, -- [1]
 		{
 			["enabled"] = true,
-			["spell"] = 61336,
-			["cooldown"] = 6,
-			["bartext"] = "%spell on %player",
-		}, -- [2]
-		{
-			["enabled"] = true,
-			["spell"] = 6940,
-			["cooldown"] = 12,
-			["bartext"] = "%spell on %target",
-		}, -- [3]
-		{
-			["enabled"] = true,
-			["spell"] = 498,
-			["cooldown"] = 8,
-			["bartext"] = "%spell on %player",
-		}, -- [4]
-		{
-			["enabled"] = true,
-			["spell"] = 31850,
-			["cooldown"] = 10,
-			["bartext"] = "%spell on %player",
-		}, -- [5]
-		{
-			["enabled"] = true,
-			["spell"] = 86659,
-			["cooldown"] = 8,
-			["bartext"] = "%spell on %player",
-		}, -- [6]
-		{
-			["enabled"] = true,
 			["spell"] = 31821,
 			["cooldown"] = 180,
 			["bartext"] = "%spell: %player",
-		}, -- [7]
+		}, -- [2]
 		{
 			["enabled"] = true,
 			["spell"] = 6346,
 			["cooldown"] = 180,
 			["bartext"] = "%spell: %player",
-		}, -- [8]
+		}, -- [3]
 		{
 			["enabled"] = true,
 			["spell"] = 73325,
 			["cooldown"] = 90,
 			["bartext"] = "%spell: %player",
-		}, -- [9]
-		{
-			["enabled"] = true,
-			["spell"] = 33206,
-			["cooldown"] = 8,
-			["bartext"] = "%spell on %target",
-		}, -- [10]
-		{
-			["enabled"] = true,
-			["spell"] = 47788,
-			["cooldown"] = 10,
-			["bartext"] = "%spell on %target",
-		}, -- [11]
+		}, -- [4]
 		{
 			["enabled"] = true,
 			["spell"] = 62618,
 			["cooldown"] = 180,
 			["bartext"] = "%spell: %player",
-		}, -- [12]
+		}, -- [5]
 		{
 			["enabled"] = true,
 			["spell"] = 98008,
 			["cooldown"] = 180,
 			["bartext"] = "%spell: %player",
-		}, -- [13]
+		}, -- [6]
 		{
 			["enabled"] = true,
 			["spell"] = 20608,
 			["cooldown"] = 1800,
 			["bartext"] = "%spell: %player",
-		}, -- [14]
-		{
-			["enabled"] = true,
-			["spell"] = 871,
-			["cooldown"] = 8,
-			["bartext"] = "%spell on %player",
-		}, -- [15]
-		{
-			["enabled"] = true,
-			["spell"] = 12975,
-			["cooldown"] = 15,
-			["bartext"] = "%spell on %player",
-		}, -- [16]
+		}, -- [7]
 		{
 			["enabled"] = true,
 			["spell"] = 97462,
 			["cooldown"] = 180,
 			["bartext"] = "%spell: %player",
-		}, -- [17]
+		}, -- [8]
 		{
 			["enabled"] = true,
 			["spell"] = 22700,
 			["cooldown"] = 600,
 			["bartext"] = "%spell: %player",
-		}, -- [18]
+		}, -- [9]
 		{
 			["enabled"] = true,
 			["spell"] = 44389,
 			["cooldown"] = 600,
 			["bartext"] = "%spell: %player",
-		}, -- [19]
+		}, -- [10]
 		{
 			["enabled"] = true,
 			["spell"] = 54711,
 			["cooldown"] = 300,
 			["bartext"] = "%spell: %player",
-		}, -- [20]
+		}, -- [11]
 		{
 			["enabled"] = true,
 			["spell"] = 67826,
 			["cooldown"] = 600,
 			["bartext"] = "%spell: %player",
-		}, -- [21]
+		}, -- [12]
 	},
 	["only_from_raid"] = true,
 	["own_bargroup"] = false,

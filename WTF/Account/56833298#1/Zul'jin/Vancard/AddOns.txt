@@ -1,3 +1,0 @@
-Azeroth Auto Pilot: disabled
-DeathNote: enabled
-AllTheThings: disabled

@@ -1,33 +1,17 @@
 
 _NPCScanOverlayOptions = {
-	["KeyFontSize"] = 14,
+	["KeyFontSize"] = 13.9999990463257,
 	["ShowKey"] = true,
 	["Modules"] = {
-		["WorldMap"] = true,
-		["OmegaMap"] = true,
-		["BattlefieldMinimap"] = true,
-		["Minimap"] = true,
 	},
 	["ModulesAlpha"] = {
-		["WorldMap"] = 0.5,
-		["OmegaMap"] = 0.5,
-		["BattlefieldMinimap"] = 0.800000011920929,
-		["Minimap"] = 0.5,
 	},
-	["Version"] = "7.1.0.1",
+	["Version"] = "7.3.0.1",
 	["KeyAutoHideAlpha"] = 0.25,
 	["MiniMapIcon"] = {
-		["hide"] = false,
+		["hide"] = true,
 	},
 	["ModulesExtra"] = {
-		["WorldMap"] = {
-			["RangeRing"] = true,
-			["DetectionRing"] = true,
-		},
-		["Minimap"] = {
-			["RangeRing"] = true,
-			["DetectionRing"] = true,
-		},
 	},
 	["KeyMaxSize"] = 0.75,
 	["KeyFont"] = "ChatFontNormal",
@@ -40,10 +24,10 @@ _NPCScanOverlayKeyColors = {
 		["b"] = 0.87,
 	}, -- [1]
 	{
-		["b"] = 0.87,
-		["colorStr"] = "ff0070de",
-		["g"] = 0.44,
 		["r"] = 0,
+		["colorStr"] = "ff0070dd",
+		["g"] = 0.44,
+		["b"] = 0.87,
 	}, -- [2]
 	{
 		["b"] = 0.9,
@@ -62,10 +46,10 @@ _NPCScanOverlayKeyColors = {
 		["b"] = 0.807843137254902,
 	}, -- [5]
 	{
-		["b"] = 0.23,
-		["colorStr"] = "ffc41f3b",
-		["g"] = 0.12,
 		["r"] = 0.77,
+		["colorStr"] = "ffc41e3a",
+		["g"] = 0.12,
+		["b"] = 0.23,
 	}, -- [6]
 	{
 		["r"] = 1,
@@ -80,10 +64,10 @@ _NPCScanOverlayKeyColors = {
 		["b"] = 0,
 	}, -- [8]
 	{
-		["b"] = 0.04,
-		["colorStr"] = "ffff7d0a",
-		["g"] = 0.49,
 		["r"] = 1,
+		["colorStr"] = "ffff7c0a",
+		["g"] = 0.49,
+		["b"] = 0.04,
 	}, -- [9]
 	{
 		["r"] = 1,
@@ -226,10 +210,10 @@ _NPCScanOverlayKeyColors = {
 		["b"] = 0.87,
 	}, -- [34]
 	{
-		["b"] = 0.87,
-		["colorStr"] = "ff0070de",
-		["g"] = 0.44,
 		["r"] = 0,
+		["colorStr"] = "ff0070dd",
+		["g"] = 0.44,
+		["b"] = 0.87,
 	}, -- [35]
 	{
 		["b"] = 0.9,
@@ -248,10 +232,10 @@ _NPCScanOverlayKeyColors = {
 		["b"] = 0.807843137254902,
 	}, -- [38]
 	{
-		["b"] = 0.23,
-		["colorStr"] = "ffc41f3b",
-		["g"] = 0.12,
 		["r"] = 0.77,
+		["colorStr"] = "ffc41e3a",
+		["g"] = 0.12,
+		["b"] = 0.23,
 	}, -- [39]
 	{
 		["r"] = 1,
@@ -266,10 +250,10 @@ _NPCScanOverlayKeyColors = {
 		["b"] = 0,
 	}, -- [41]
 	{
-		["b"] = 0.04,
-		["colorStr"] = "ffff7d0a",
-		["g"] = 0.49,
 		["r"] = 1,
+		["colorStr"] = "ffff7c0a",
+		["g"] = 0.49,
+		["b"] = 0.04,
 	}, -- [42]
 	{
 		["r"] = 1,
@@ -412,10 +396,10 @@ _NPCScanOverlayKeyColors = {
 		["b"] = 0.87,
 	}, -- [67]
 	{
-		["b"] = 0.87,
-		["colorStr"] = "ff0070de",
-		["g"] = 0.44,
 		["r"] = 0,
+		["colorStr"] = "ff0070dd",
+		["g"] = 0.44,
+		["b"] = 0.87,
 	}, -- [68]
 	{
 		["b"] = 0.9,

@@ -39,8 +39,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 AUCTIONATOR_LAST_SCAN_TIME = nil
 AUCTIONATOR_TOONS = {
 	["Shanyt"] = {
-		["firstSeen"] = 1516579384,
-		["firstVersion"] = "4.0.17",
+		["firstSeen"] = 1535317738,
+		["guid"] = "Player-75-058380E2",
+		["firstVersion"] = "5.0.4",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {

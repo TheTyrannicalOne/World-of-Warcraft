@@ -1,7 +1,5 @@
 
 OmniCC4Config = {
-	["version"] = "8.0.1",
-	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "action",
@@ -40,8 +38,6 @@ OmniCC4Config = {
 		["action"] = {
 			["enabled"] = true,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-<<<<<<< HEAD
-=======
 			["fontSize"] = 18,
 			["effect"] = "pulse",
 			["yOff"] = 0,
@@ -55,7 +51,6 @@ OmniCC4Config = {
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
 			["minDuration"] = 2,
->>>>>>> parent of 16a49338... addon updates
 			["styles"] = {
 				["minutes"] = {
 					["a"] = 1,
@@ -95,34 +90,23 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-			["effect"] = "pulse",
-			["yOff"] = 0,
-<<<<<<< HEAD
-			["mmSSDuration"] = 0,
-			["anchor"] = "CENTER",
-=======
-			["minEffectDuration"] = 30,
-			["minSize"] = 0.5,
->>>>>>> parent of 16a49338... addon updates
-			["spiralOpacity"] = 1,
-			["scaleText"] = true,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-<<<<<<< HEAD
-			["minSize"] = 0.5,
-			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
-			["fontSize"] = 18,
 		},
 		["aura"] = {
 			["enabled"] = true,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-=======
+			["fontSize"] = 18,
+			["effect"] = "pulse",
+			["yOff"] = 0,
+			["minEffectDuration"] = 30,
+			["minSize"] = 0.5,
+			["spiralOpacity"] = 1,
+			["scaleText"] = true,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
 			["minDuration"] = 2,
->>>>>>> parent of 16a49338... addon updates
 			["styles"] = {
 				["minutes"] = {
 					["a"] = 1,
@@ -162,102 +146,79 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
+		},
+		["base"] = {
+			["enabled"] = true,
+			["fontFace"] = "Fonts\\FRIZQT__.TTF",
+			["fontSize"] = 18,
 			["effect"] = "pulse",
 			["yOff"] = 0,
-<<<<<<< HEAD
-			["mmSSDuration"] = 0,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1,
-=======
 			["minEffectDuration"] = 30.0000004470348,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1.00999997742474,
->>>>>>> parent of 16a49338... addon updates
 			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-<<<<<<< HEAD
-			["minSize"] = 0.5,
-			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
-			["fontSize"] = 18,
+			["anchor"] = "CENTER",
+			["mmSSDuration"] = 0,
+			["minDuration"] = 2.00000002980232,
+			["styles"] = {
+				["minutes"] = {
+					["a"] = 1,
+					["r"] = 1,
+					["scale"] = 1,
+					["g"] = 1,
+					["b"] = 1,
+				},
+				["seconds"] = {
+					["a"] = 1,
+					["r"] = 1,
+					["scale"] = 1,
+					["g"] = 1,
+					["b"] = 0.1,
+				},
+				["soon"] = {
+					["a"] = 1,
+					["r"] = 1,
+					["scale"] = 1.5,
+					["g"] = 0.1,
+					["b"] = 0.1,
+				},
+				["hours"] = {
+					["a"] = 1,
+					["r"] = 0.7,
+					["scale"] = 0.75,
+					["g"] = 0.7,
+					["b"] = 0.7,
+				},
+				["charging"] = {
+					["a"] = 0.8,
+					["r"] = 1,
+					["scale"] = 0.65,
+					["g"] = 0.98,
+					["b"] = 0.4,
+				},
+				["controlled"] = {
+				},
+			},
 		},
 		["pet"] = {
 			["enabled"] = true,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-=======
-			["anchor"] = "CENTER",
-			["mmSSDuration"] = 0,
-			["minDuration"] = 2.00000002980232,
->>>>>>> parent of 16a49338... addon updates
-			["styles"] = {
-				["minutes"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1,
-					["g"] = 1,
-					["b"] = 1,
-				},
-				["seconds"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1,
-					["g"] = 1,
-					["b"] = 0.1,
-				},
-				["soon"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1.5,
-					["g"] = 0.1,
-					["b"] = 0.1,
-				},
-				["hours"] = {
-					["a"] = 1,
-					["r"] = 0.7,
-					["scale"] = 0.75,
-					["g"] = 0.7,
-					["b"] = 0.7,
-				},
-				["charging"] = {
-					["a"] = 0.8,
-					["r"] = 1,
-					["scale"] = 0.65,
-					["g"] = 0.98,
-					["b"] = 0.4,
-				},
-				["controlled"] = {
-				},
-			},
+			["fontSize"] = 18,
 			["effect"] = "pulse",
 			["yOff"] = 0,
-<<<<<<< HEAD
-			["mmSSDuration"] = 0,
-			["anchor"] = "CENTER",
-=======
 			["minEffectDuration"] = 30,
 			["minSize"] = 0.5,
->>>>>>> parent of 16a49338... addon updates
 			["spiralOpacity"] = 1,
 			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-<<<<<<< HEAD
-			["minSize"] = 0.5,
-			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
-			["fontSize"] = 18,
-		},
-		["base"] = {
-			["enabled"] = false,
-			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-=======
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
 			["minDuration"] = 2,
->>>>>>> parent of 16a49338... addon updates
 			["styles"] = {
 				["minutes"] = {
 					["a"] = 1,
@@ -297,36 +258,10 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-			["effect"] = "pulse",
-			["yOff"] = 0,
-			["mmSSDuration"] = 0,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1.00999997742474,
-			["scaleText"] = true,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["minEffectDuration"] = 30.0000004470348,
-			["minDuration"] = 2.00000002980232,
-			["fontSize"] = 18,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["fontSize"] = 18,
-			["effect"] = "pulse",
-			["minDuration"] = 2,
-			["minEffectDuration"] = 30,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1,
-			["yOff"] = 0,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["mmSSDuration"] = 0,
-			["scaleText"] = true,
 			["styles"] = {
 				["soon"] = {
 					["a"] = 1,
@@ -366,8 +301,6 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-<<<<<<< HEAD
-=======
 			["effect"] = "pulse",
 			["minDuration"] = 2,
 			["mmSSDuration"] = 0,
@@ -381,7 +314,8 @@ OmniCC4Config = {
 			["minEffectDuration"] = 30,
 			["scaleText"] = true,
 			["fontSize"] = 18,
->>>>>>> parent of 16a49338... addon updates
 		},
 	},
+	["engine"] = "AniUpdater",
+	["version"] = "8.0.1",
 }

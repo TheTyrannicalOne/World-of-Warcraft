@@ -1,3 +1,0 @@
-
-qcCompletedQuests = {
-}

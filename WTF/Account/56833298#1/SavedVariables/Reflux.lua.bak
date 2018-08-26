@@ -2,15 +2,15 @@
 RefluxDB = {
 	["emulated"] = {
 	},
-	["activeProfile"] = "Fantastiburo - Zul'jin",
+	["activeProfile"] = "Shanyt - Argent Dawn",
 	["addons"] = {
 	},
 	["ignored"] = {
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
-		},
 		["Towel-Monk"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

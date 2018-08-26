@@ -1,5 +1,13 @@
 Changes since tag 8.0.4
 
+commit a899660c524cd8a928edc094784914c806ec691a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Aug 26 06:26:32 2018 +0200
+
+    Omega via svn r17733:
+    *added 15 trash warnings to Siege of Boralus
+    *Updated all bosses in Siege of Boralus to improve/fix warnings and timers across the board
+
 commit 7786de0c1ece5211d8faa2d56ec953cfafd065fe
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sat Aug 25 07:24:13 2018 +0200

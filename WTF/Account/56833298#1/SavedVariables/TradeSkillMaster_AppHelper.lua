@@ -1,11 +1,6 @@
 
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
-		["Argent Dawn"] = {
-			["key"] = 629293,
-			["data"] = "[[12,50818,1,4,21000,1000,20000,1,1534144966],[13,44980,1,4,1000,0,0,0,1534144966],[15,22501,1,4,10000,0,0,0,1534144966],[16,22480,1,4,10000,0,0,0,1534144966]]",
-			["updateTime"] = 1534144966,
-		},
 	},
 	["region"] = "US",
 	["errorReports"] = {
@@ -15,16 +10,9 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["shoppingMaxPrices"] = {
 	},
-	["wowToken"] = {
-		["US"] = {
-			["key"] = 3007271,
-			["data"] = 193487,
-			["updateTime"] = 1532825257,
-		},
-	},
 	["analytics"] = {
 		["data"] = {
 		},
-		["updateTime"] = 1532825261,
+		["updateTime"] = 0,
 	},
 }

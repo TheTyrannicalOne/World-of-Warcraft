@@ -1,7 +1,19 @@
 
 Prat3DB = {
 	["namespaces"] = {
-		["Prat_TellTarget"] = {
+		["Prat_ChannelColorMemory"] = {
+		},
+		["Prat_Substitutions"] = {
+		},
+		["Prat_Sounds"] = {
+		},
+		["Prat_CopyChat"] = {
+		},
+		["Prat_PopupMessage"] = {
+		},
+		["Prat_ServerNames"] = {
+		},
+		["Prat_UrlCopy"] = {
 		},
 		["Prat_AltNames"] = {
 		},
@@ -9,37 +21,53 @@ Prat3DB = {
 		},
 		["Prat_Frames"] = {
 			["profiles"] = {
-				["Default"] = {
+				["LUI-Towelliee"] = {
 					["minchatwidthdefault"] = 296,
-					["initialized"] = true,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
+				},
+				["Shanyt - Argent Dawn"] = {
+					["minchatwidthdefault"] = 296,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
+					["initialized"] = true,
+				},
+				["Default"] = {
+					["minchatwidthdefault"] = 296,
+					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
+					["initialized"] = true,
+				},
+				["Towel-Monk"] = {
+					["initialized"] = true,
+					["minchatwidthdefault"] = 296,
+					["maxchatheightdefault"] = 400,
+					["maxchatwidthdefault"] = 608.000061035156,
 				},
 			},
 		},
-		["Prat_ChannelColorMemory"] = {
-		},
 		["Prat_Editbox"] = {
 		},
-		["Prat_Fading"] = {
-		},
-		["Prat_Bubbles"] = {
-		},
-		["Prat_Font"] = {
-		},
-		["Prat_ChannelNames"] = {
-		},
-		["Prat_KeyBindings"] = {
-		},
-		["Prat_UrlCopy"] = {
-		},
-		["Prat_Scroll"] = {
+		["Prat_ChannelSticky"] = {
 		},
 		["Prat_Timestamps"] = {
 		},
+		["Prat_ChatTabs"] = {
+		},
+		["Prat_ChannelNames"] = {
+		},
+		["Prat_Bubbles"] = {
+		},
+		["Prat_TellTarget"] = {
+		},
+		["Prat_Fading"] = {
+		},
+		["Prat_Paragraph"] = {
+		},
 		["Prat_Achievements"] = {
 		},
-		["Prat_Sounds"] = {
+		["Prat_Clear"] = {
 		},
 		["Prat_Alias"] = {
 		},
@@ -47,42 +75,136 @@ Prat3DB = {
 		},
 		["Prat_Highlight"] = {
 		},
-		["Prat_PopupMessage"] = {
+		["Prat_History"] = {
 		},
-		["Prat_Paragraph"] = {
+		["Prat_KeyBindings"] = {
 		},
 		["Prat_Invites"] = {
 		},
-		["Prat_History"] = {
+		["Prat_CustomFilters"] = {
 		},
-		["Prat_CopyChat"] = {
+		["Prat_Scroll"] = {
 		},
 		["Prat_ChatLog"] = {
 		},
-		["Prat_ChannelSticky"] = {
+		["Prat_Search"] = {
 		},
 		["Prat_Buttons"] = {
+			["profiles"] = {
+				["Towel-Monk"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+				["Shanyt - Argent Dawn"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showMenu"] = false,
+					["showminimize"] = false,
+				},
+				["LUI-Towelliee"] = {
+					["showBnet"] = false,
+					["showButtons"] = false,
+					["showminimize"] = false,
+					["showMenu"] = false,
+				},
+			},
 		},
-		["Prat_ServerNames"] = {
+		["Prat_Font"] = {
+			["profiles"] = {
+				["LUI-Towelliee"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+				},
+				["Shanyt - Argent Dawn"] = {
+					["fontface"] = "weezerfont",
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+				},
+				["Default"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+				},
+				["Towel-Monk"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+			},
 		},
 		["Prat_HoverTips"] = {
 		},
 	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+	},
 	["profiles"] = {
-		["Default"] = {
+		["LUI-Towelliee"] = {
 			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["AltNames"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["Alias"] = 2,
 				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Shanyt - Argent Dawn"] = {
+			["modules"] = {
+				["Alias"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
 				["OriginalButtons"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
+		["Default"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Towel-Monk"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["OriginalButtons"] = 2,
+				["Alias"] = 2,
+				["Paragraph"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["ChatLog"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
 	},
 }

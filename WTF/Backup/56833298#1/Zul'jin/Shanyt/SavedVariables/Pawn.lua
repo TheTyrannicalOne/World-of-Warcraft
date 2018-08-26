@@ -1,3 +1,0 @@
-
-PawnOptions = nil
-PawnMrRobotScaleProviderOptions = nil

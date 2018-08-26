@@ -1,19 +1,10 @@
 
 DeathNoteDB = {
 	["profileKeys"] = {
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 	},
 	["profiles"] = {
-		["Shanyt - Zul'jin"] = {
-		},
-		["LUI-Towelliee"] = {
-		},
 		["Shanyt - Argent Dawn"] = {
-			["searchbox_text"] = "",
-		},
-		["Vancard - Zul'jin"] = {
 		},
 	},
 }
