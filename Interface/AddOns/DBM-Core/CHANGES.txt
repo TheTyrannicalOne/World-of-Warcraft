@@ -1,5 +1,12 @@
 Changes since tag 8.0.4
 
+commit 4eade83f99e1ba613b0d56837c0b9ac41190ca0e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Aug 27 07:46:06 2018 +0200
+
+    Omega via svn r17734:
+    Rename voice
+
 commit a899660c524cd8a928edc094784914c806ec691a
 Author: subversion <svn@deadlybossmods.com>
 Date:   Sun Aug 26 06:26:32 2018 +0200
