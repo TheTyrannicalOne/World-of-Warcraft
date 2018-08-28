@@ -26,7 +26,7 @@ Prat3CharDB = {
 	},
 }
 Prat3HighCPUPerCharDB = {
-	["time"] = 1535497098,
+	["time"] = 1535497560,
 	["scrollback"] = {
 		["ChatFrame4"] = {
 			{
@@ -39,6 +39,56 @@ Prat3HighCPUPerCharDB = {
 				1, -- [7]
 				2, -- [8]
 			}, -- [1]
+			{
+				"|cff979797[19:05:54]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Borekil-ArgentDawn:1:GUILD|h|cffd84e4e120|r:|cffaad372Borekil|r|h|cffd8d8d8]|r has earned the achievement |cffffff00|Hachievement:12596:Player-75-0BB412F5:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[No Tourist]|h|r |cff2080a0|Hgratsl:Borekil:GUILD::12596|h[say grats]|h|r!", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				65, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [2]
+			{
+				"|cff979797[19:05:54]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Borekil-ArgentDawn:2:GUILD|h|cffd84e4e120|r:|cffaad372Borekil|r|h|cffd8d8d8]|r has earned the achievement |cffffff00|Hachievement:13099:Player-75-0BB412F5:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[Molten Cay]|h|r |cff2080a0|Hgratsl:Borekil:GUILD::13099|h[say grats]|h|r!", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				65, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [3]
+			{
+				"|cff979797[19:05:54]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Borekil-ArgentDawn:3:GUILD|h|cffd84e4e120|r:|cffaad372Borekil|r|h|cffd8d8d8]|r has earned the achievement |cffffff00|Hachievement:13100:Player-75-0BB412F5:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[Heroic: Molten Cay]|h|r |cff2080a0|Hgratsl:Borekil:GUILD::13100|h[say grats]|h|r!", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				65, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [4]
+			{
+				"|cff979797[19:05:59]|r|c00000000|r |Hchannel:GUILD|h[G] |h|cffd8d8d8[|r|Hplayer:Hypnos-ArgentDawn:4:GUILD|h|cffd84e4e120|r:|cffc41e3aHypnos|r|h|cffd8d8d8]|r: grats name", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				5, -- [5]
+				false, -- [6]
+				1, -- [7]
+				3, -- [8]
+			}, -- [5]
+			{
+				"|cff979797[19:06:00]|r|c00000000|r |Hchannel:GUILD|h[G] |h|cffd8d8d8[|r|Hplayer:Ozzypontiff-ArgentDawn:5:GUILD|h|cffd84e4e120|r:|cffffffffOzzypontiff|r|h|cffd8d8d8]|r: Gratz", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				5, -- [5]
+				false, -- [6]
+				1, -- [7]
+				4, -- [8]
+			}, -- [6]
 		},
 		["ChatFrame1"] = {
 			{
@@ -51,6 +101,56 @@ Prat3HighCPUPerCharDB = {
 				1, -- [7]
 				2, -- [8]
 			}, -- [1]
+			{
+				"|cff979797[19:05:54]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Borekil-ArgentDawn:1:GUILD|h|cffd84e4e120|r:|cffaad372Borekil|r|h|cffd8d8d8]|r has earned the achievement |cffffff00|Hachievement:12596:Player-75-0BB412F5:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[No Tourist]|h|r |cff2080a0|Hgratsl:Borekil:GUILD::12596|h[say grats]|h|r!", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				65, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [2]
+			{
+				"|cff979797[19:05:54]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Borekil-ArgentDawn:2:GUILD|h|cffd84e4e120|r:|cffaad372Borekil|r|h|cffd8d8d8]|r has earned the achievement |cffffff00|Hachievement:13099:Player-75-0BB412F5:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[Molten Cay]|h|r |cff2080a0|Hgratsl:Borekil:GUILD::13099|h[say grats]|h|r!", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				65, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [3]
+			{
+				"|cff979797[19:05:54]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Borekil-ArgentDawn:3:GUILD|h|cffd84e4e120|r:|cffaad372Borekil|r|h|cffd8d8d8]|r has earned the achievement |cffffff00|Hachievement:13100:Player-75-0BB412F5:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[Heroic: Molten Cay]|h|r |cff2080a0|Hgratsl:Borekil:GUILD::13100|h[say grats]|h|r!", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				65, -- [5]
+				false, -- [6]
+				1, -- [7]
+				2, -- [8]
+			}, -- [4]
+			{
+				"|cff979797[19:05:59]|r|c00000000|r |Hchannel:GUILD|h[G] |h|cffd8d8d8[|r|Hplayer:Hypnos-ArgentDawn:4:GUILD|h|cffd84e4e120|r:|cffc41e3aHypnos|r|h|cffd8d8d8]|r: grats name", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				5, -- [5]
+				false, -- [6]
+				1, -- [7]
+				3, -- [8]
+			}, -- [5]
+			{
+				"|cff979797[19:06:00]|r|c00000000|r |Hchannel:GUILD|h[G] |h|cffd8d8d8[|r|Hplayer:Ozzypontiff-ArgentDawn:5:GUILD|h|cffd84e4e120|r:|cffffffffOzzypontiff|r|h|cffd8d8d8]|r: Gratz", -- [1]
+				0.250980406999588, -- [2]
+				1, -- [3]
+				0.250980406999588, -- [4]
+				5, -- [5]
+				false, -- [6]
+				1, -- [7]
+				4, -- [8]
+			}, -- [6]
 		},
 	},
 }

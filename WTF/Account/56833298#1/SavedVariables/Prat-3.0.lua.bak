@@ -21,17 +21,11 @@ Prat3DB = {
 		},
 		["Prat_Frames"] = {
 			["profiles"] = {
-				["Towel-Monk"] = {
-					["initialized"] = true,
+				["LUI-Towelliee"] = {
+					["minchatwidthdefault"] = 296,
 					["maxchatwidthdefault"] = 608.000061035156,
 					["maxchatheightdefault"] = 400,
-					["minchatwidthdefault"] = 296,
-				},
-				["Default"] = {
-					["minchatwidthdefault"] = 296,
 					["initialized"] = true,
-					["maxchatheightdefault"] = 400,
-					["maxchatwidthdefault"] = 608.000061035156,
 				},
 				["Shanyt - Argent Dawn"] = {
 					["minchatwidthdefault"] = 296,
@@ -39,9 +33,15 @@ Prat3DB = {
 					["maxchatwidthdefault"] = 608.000061035156,
 					["initialized"] = true,
 				},
-				["LUI-Towelliee"] = {
+				["Default"] = {
 					["minchatwidthdefault"] = 296,
+					["maxchatwidthdefault"] = 608.000061035156,
+					["maxchatheightdefault"] = 400,
 					["initialized"] = true,
+				},
+				["Towel-Monk"] = {
+					["initialized"] = true,
+					["minchatwidthdefault"] = 296,
 					["maxchatheightdefault"] = 400,
 					["maxchatwidthdefault"] = 608.000061035156,
 				},
@@ -53,13 +53,22 @@ Prat3DB = {
 		},
 		["Prat_Timestamps"] = {
 		},
-		["Prat_ChannelNames"] = {
+		["Prat_ChatTabs"] = {
 		},
 		["Prat_Font"] = {
 			["profiles"] = {
-				["Towel-Monk"] = {
+				["LUI-Towelliee"] = {
 					["rememberfont"] = true,
 					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+				},
+				["Shanyt - Argent Dawn"] = {
+					["fontface"] = "weezerfont",
+					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame1"] = 15,
@@ -68,28 +77,19 @@ Prat3DB = {
 				},
 				["Default"] = {
 					["rememberfont"] = true,
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame1"] = 15,
-						["ChatFrame3"] = 15,
-					},
 					["fontface"] = "weezerfont",
-				},
-				["Shanyt - Argent Dawn"] = {
-					["fontface"] = "weezerfont",
-					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
 						["ChatFrame3"] = 15,
 						["ChatFrame1"] = 15,
 					},
 				},
-				["LUI-Towelliee"] = {
+				["Towel-Monk"] = {
 					["rememberfont"] = true,
 					["size"] = {
 						["ChatFrame4"] = 15,
-						["ChatFrame1"] = 15,
 						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
 					},
 					["fontface"] = "weezerfont",
 				},
@@ -101,13 +101,13 @@ Prat3DB = {
 		},
 		["Prat_Fading"] = {
 		},
-		["Prat_Achievements"] = {
-		},
 		["Prat_Paragraph"] = {
 		},
-		["Prat_Scroll"] = {
+		["Prat_Achievements"] = {
 		},
 		["Prat_Alias"] = {
+		},
+		["Prat_Clear"] = {
 		},
 		["Prat_OriginalButtons"] = {
 		},
@@ -121,7 +121,7 @@ Prat3DB = {
 		},
 		["Prat_CustomFilters"] = {
 		},
-		["Prat_Clear"] = {
+		["Prat_Scroll"] = {
 		},
 		["Prat_ChatLog"] = {
 		},
@@ -129,7 +129,7 @@ Prat3DB = {
 		},
 		["Prat_Buttons"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
+				["Towel-Monk"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showminimize"] = false,
@@ -138,10 +138,10 @@ Prat3DB = {
 				["Shanyt - Argent Dawn"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
-					["showminimize"] = false,
 					["showMenu"] = false,
+					["showminimize"] = false,
 				},
-				["Towel-Monk"] = {
+				["LUI-Towelliee"] = {
 					["showBnet"] = false,
 					["showButtons"] = false,
 					["showminimize"] = false,
@@ -149,7 +149,7 @@ Prat3DB = {
 				},
 			},
 		},
-		["Prat_ChatTabs"] = {
+		["Prat_ChannelNames"] = {
 		},
 		["Prat_HoverTips"] = {
 		},
@@ -158,51 +158,51 @@ Prat3DB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
-		["Towel-Monk"] = {
+		["LUI-Towelliee"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
-				["ChatLog"] = 2,
+				["AltNames"] = 2,
 				["OriginalButtons"] = 2,
 				["PopupMessage"] = 2,
-				["AltNames"] = 2,
 				["Alias"] = 2,
-				["KeyBindings"] = 2,
-			},
-		},
-		["Default"] = {
-			["modules"] = {
-				["Sounds"] = 2,
-				["OriginalButtons"] = 2,
-				["Alias"] = 2,
-				["Paragraph"] = 2,
-				["PopupMessage"] = 2,
-				["AltNames"] = 2,
 				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
 			["modules"] = {
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["PopupMessage"] = 2,
 				["AltNames"] = 2,
 				["Sounds"] = 2,
 				["Paragraph"] = 2,
 				["KeyBindings"] = 2,
 				["OriginalButtons"] = 2,
-				["Alias"] = 2,
+				["ChatLog"] = 2,
 			},
 		},
-		["LUI-Towelliee"] = {
+		["Default"] = {
+			["modules"] = {
+				["Sounds"] = 2,
+				["Paragraph"] = 2,
+				["ChatLog"] = 2,
+				["OriginalButtons"] = 2,
+				["PopupMessage"] = 2,
+				["AltNames"] = 2,
+				["Alias"] = 2,
+				["KeyBindings"] = 2,
+			},
+		},
+		["Towel-Monk"] = {
 			["modules"] = {
 				["Sounds"] = 2,
 				["OriginalButtons"] = 2,
-				["ChatLog"] = 2,
+				["Alias"] = 2,
 				["Paragraph"] = 2,
 				["PopupMessage"] = 2,
-				["Alias"] = 2,
 				["AltNames"] = 2,
+				["ChatLog"] = 2,
 				["KeyBindings"] = 2,
 			},
 		},

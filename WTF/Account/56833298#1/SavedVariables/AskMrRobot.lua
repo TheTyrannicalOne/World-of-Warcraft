@@ -35,13 +35,13 @@ AskMrRobotDb4 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1712] = {
+					[1530] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
 						[15] = false,
 					},
-					[1530] = {
+					[1712] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,

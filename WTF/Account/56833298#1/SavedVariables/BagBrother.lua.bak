@@ -77,8 +77,8 @@ BrotherBags = {
 				[23] = "114821::::::::113:71::::::;30",
 			},
 			["class"] = "WARRIOR",
-			["faction"] = false,
 			["money"] = 13640435862,
+			["faction"] = false,
 		},
 	},
 }
