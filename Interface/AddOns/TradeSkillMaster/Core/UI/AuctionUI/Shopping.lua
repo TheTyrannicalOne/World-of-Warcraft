@@ -1476,7 +1476,11 @@ function private.PostButtonOnClick(button)
 		ClearCursor()
 		PickupContainerItem(postBag, postSlot)
 		ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
-		StartAuction(bid, buyout, postTime, stackSize, num)
+		if tonumber((select(2, GetBuildInfo()))) >= 27481 then
+			PostAuction(bid, buyout, postTime, stackSize, num)
+		else
+			StartAuction(bid, buyout, postTime, stackSize, num)
+		end
 		ClearCursor()
 	end
 	frame:GetBaseElement():HideDialog()

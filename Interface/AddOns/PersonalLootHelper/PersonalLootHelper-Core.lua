@@ -34,6 +34,12 @@ Known Bugs:
 		
 CHANGELOG:
 
+20180828 - 2.12
+    Added azerite armor back into evaluations since Blizzard is allowing Azerite armor to be traded
+	
+20180826 - 2.11
+	Fixed announce trades to work when traded item is not something the group leader could have used
+	
 20180826 - 2.10
 	Added option to announce trades in guild groups
 
@@ -1624,28 +1630,37 @@ local function GetLootedItem(looterName, lootedItemID)
 end
 
 -- Adds the item to the lootedItems array; returns the index of the newly added item
-local function AddLootedItem(fullItemInfo, characterName)
+local function AddLootedItem(fullItemInfo, characterName, status)
 	local lootedItemIndex = #lootedItems + 1
 
 	lootedItems[lootedItemIndex] = {}
 	lootedItems[lootedItemIndex][LOOTER_NAME] = characterName
 	lootedItems[lootedItemIndex][FULL_ITEM_INFO] = fullItemInfo
-	if IsPlayer(characterName) or IsPLHUser(characterName) then
-		lootedItems[lootedItemIndex][STATUS] = STATUS_DEFAULT
-	else
-		lootedItems[lootedItemIndex][STATUS] = STATUS_AVAILABLE
-	end
 	lootedItems[lootedItemIndex][SELECTED_REQUESTOR_INDEX] = ''
 	lootedItems[lootedItemIndex][DEFAULT_REQUESTOR_INDEX] = ''
 	lootedItems[lootedItemIndex][REQUESTORS] = {}
+	
+	if status == nil then
+		if IsPlayer(characterName) or IsPLHUser(characterName) then
+			lootedItems[lootedItemIndex][STATUS] = STATUS_DEFAULT
+		else
+			lootedItems[lootedItemIndex][STATUS] = STATUS_AVAILABLE
+		end
 
-	if IsPlayer(characterName) then
-		PlaySound(600)  -- 'GLUECREATECHARACTERBUTTON'
+		if IsPlayer(characterName) then
+			PlaySound(600)  -- 'GLUECREATECHARACTERBUTTON'
+		else
+			PlaySound(888)  -- 'LEVELUP'
+		end
 	else
-		PlaySound(888)  -- 'LEVELUP'
+		lootedItems[lootedItemIndex][STATUS] = status
 	end
 	
 	return lootedItemIndex
+end
+
+local function ShouldAnnounceTrades()
+	return PLH_PREFS[PLH_PREFS_ANNOUNCE_TRADES] and InGuildParty() and UnitIsGroupLeader('player')
 end
 
 local function shouldAddLootedItem(fullItemInfo)
@@ -1738,6 +1753,8 @@ function PLH_ProcessTradeItemMessage(looterName, item)
 				local lootedItemIndex = AddLootedItem(fullItemInfo, looterName)
 				lootedItems[lootedItemIndex][STATUS] = STATUS_AVAILABLE
 				UpdateLootedItemsDisplay()
+			elseif ShouldAnnounceTrades() then
+				AddLootedItem(fullItemInfo, looterName, STATUS_HIDDEN)
 			end
 		end
 	end
@@ -1764,7 +1781,7 @@ function PLH_ProcessOfferItemMessage(looterName, lootedItemID, requestorName)
 		end
 	end
 	
-	if lootedItem ~= nil and PLH_PREFS[PLH_PREFS_ANNOUNCE_TRADES] and InGuildParty() and UnitIsGroupLeader('player') then
+	if lootedItem ~= nil and ShouldAnnounceTrades() then
 		PLH_SendBroadcast(looterName .. ' offered ' .. lootedItem[FULL_ITEM_INFO][FII_ITEM] .. ' to ' .. requestorName, false)
 	end
 	
@@ -1953,7 +1970,7 @@ local function ShouldBeEvaluated(fullItemInfo)
 	return fullItemInfo[FII_IS_EQUIPPABLE]
 		and (fullItemInfo[FII_QUALITY] == LE_ITEM_QUALITY_RARE or fullItemInfo[FII_QUALITY] == LE_ITEM_QUALITY_EPIC)
 		and (fullItemInfo[FII_BIND_TYPE] == LE_ITEM_BIND_ON_ACQUIRE or (fullItemInfo[FII_BIND_TYPE] == LE_ITEM_BIND_ON_EQUIP and not PLH_PREFS[PLH_PREFS_NEVER_OFFER_BOE]))
-		and (not fullItemInfo[FII_IS_AZERITE_ITEM])
+--		and (not fullItemInfo[FII_IS_AZERITE_ITEM])
 end		
 
 -- creates a copy of the table
@@ -2052,6 +2069,8 @@ local function PerformNotify(fullItemInfo, looterName)
 			if shouldAddLootedItem(fullItemInfo) then
 				AddLootedItem(fullItemInfo, looterName)
 				UpdateLootedItemsDisplay()
+			elseif ShouldAnnounceTrades() then
+				AddLootedItem(fullItemInfo, looterName, STATUS_HIDDEN)
 			end
 		end
 	end
