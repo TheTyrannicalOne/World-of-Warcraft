@@ -55,45 +55,7 @@ Prat3DB = {
 		},
 		["Prat_ChatTabs"] = {
 		},
-		["Prat_Font"] = {
-			["profiles"] = {
-				["LUI-Towelliee"] = {
-					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
-						["ChatFrame1"] = 15,
-					},
-				},
-				["Shanyt - Argent Dawn"] = {
-					["fontface"] = "weezerfont",
-					["rememberfont"] = true,
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame1"] = 15,
-						["ChatFrame3"] = 15,
-					},
-				},
-				["Default"] = {
-					["rememberfont"] = true,
-					["fontface"] = "weezerfont",
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
-						["ChatFrame1"] = 15,
-					},
-				},
-				["Towel-Monk"] = {
-					["rememberfont"] = true,
-					["size"] = {
-						["ChatFrame4"] = 15,
-						["ChatFrame3"] = 15,
-						["ChatFrame1"] = 15,
-					},
-					["fontface"] = "weezerfont",
-				},
-			},
+		["Prat_ChannelNames"] = {
 		},
 		["Prat_Bubbles"] = {
 		},
@@ -105,9 +67,9 @@ Prat3DB = {
 		},
 		["Prat_Achievements"] = {
 		},
-		["Prat_Alias"] = {
-		},
 		["Prat_Clear"] = {
+		},
+		["Prat_Alias"] = {
 		},
 		["Prat_OriginalButtons"] = {
 		},
@@ -149,7 +111,45 @@ Prat3DB = {
 				},
 			},
 		},
-		["Prat_ChannelNames"] = {
+		["Prat_Font"] = {
+			["profiles"] = {
+				["LUI-Towelliee"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+				},
+				["Shanyt - Argent Dawn"] = {
+					["fontface"] = "weezerfont",
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame1"] = 15,
+						["ChatFrame3"] = 15,
+					},
+				},
+				["Default"] = {
+					["rememberfont"] = true,
+					["fontface"] = "weezerfont",
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+				},
+				["Towel-Monk"] = {
+					["rememberfont"] = true,
+					["size"] = {
+						["ChatFrame4"] = 15,
+						["ChatFrame3"] = 15,
+						["ChatFrame1"] = 15,
+					},
+					["fontface"] = "weezerfont",
+				},
+			},
 		},
 		["Prat_HoverTips"] = {
 		},

@@ -53,8 +53,6 @@ Prat3DB = {
 		},
 		["Prat_Timestamps"] = {
 		},
-		["Prat_ChannelNames"] = {
-		},
 		["Prat_Font"] = {
 			["profiles"] = {
 				["Towel-Monk"] = {
@@ -95,6 +93,8 @@ Prat3DB = {
 				},
 			},
 		},
+		["Prat_ChannelNames"] = {
+		},
 		["Prat_Bubbles"] = {
 		},
 		["Prat_TellTarget"] = {
@@ -107,7 +107,7 @@ Prat3DB = {
 		},
 		["Prat_Scroll"] = {
 		},
-		["Prat_Alias"] = {
+		["Prat_Clear"] = {
 		},
 		["Prat_OriginalButtons"] = {
 		},
@@ -121,7 +121,7 @@ Prat3DB = {
 		},
 		["Prat_CustomFilters"] = {
 		},
-		["Prat_Clear"] = {
+		["Prat_Alias"] = {
 		},
 		["Prat_ChatLog"] = {
 		},

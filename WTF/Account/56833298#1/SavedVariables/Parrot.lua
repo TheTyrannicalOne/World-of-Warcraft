@@ -133,10 +133,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {
@@ -201,7 +201,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -210,7 +210,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -348,6 +348,26 @@ ParrotDB = {
 					["hideSkillNames"] = true,
 				},
 				["Shanyt - Argent Dawn"] = {
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
 					["Incoming"] = {
 						["Heals over time"] = {
 							["disabled"] = true,
@@ -389,15 +409,7 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
+					["hideUnitNames"] = true,
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -505,18 +517,6 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
-					["Outgoing"] = {
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-					},
 					["hideSkillNames"] = true,
 				},
 				["LUI-Towelliee"] = {
@@ -553,10 +553,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {

@@ -42,16 +42,20 @@ LUIDB = {
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
+					["Reagents"] = {
+						["CoordX"] = 626.660949707031,
+						["CoordY"] = 858.828674316406,
+					},
 					["Bags"] = {
-						["CoordX"] = 1511.96771301651,
+						["CoordX"] = 1577.20483398438,
 						["ItemQuality"] = true,
-						["CoordY"] = 692.281490904737,
+						["CoordY"] = 777.473571777344,
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
-						["CoordX"] = 1511.96771301651,
+						["CoordX"] = 1119.77746582031,
 						["ItemQuality"] = true,
-						["CoordY"] = 692.281490904737,
+						["CoordY"] = 690.746520996094,
 						["Font"] = "AvantGarde_LT_Medium",
 					},
 				},
@@ -77,6 +81,13 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -84,13 +95,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -141,6 +145,13 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
+					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -148,13 +159,6 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
-					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -218,7 +222,7 @@ LUIDB = {
 				["Argent Dawn"] = {
 					["Gold"] = {
 						["Horde"] = {
-							["Shanyt"] = 13640435862,
+							["Shanyt"] = 13641267061,
 						},
 					},
 				},
@@ -328,17 +332,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0, -- [1]
 						0, -- [2]
 						0, -- [3]
-						0.86, -- [4]
+						0.83, -- [4]
 					},
 					["micromenu_btn_hover"] = {
 						1, -- [1]
@@ -346,17 +344,23 @@ LUIDB = {
 						0, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
+					["orb_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
 						0, -- [3]
-						0.83, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -492,13 +496,7 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["micromenu_btn_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.8, -- [4]
-					},
-					["orb_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -510,17 +508,23 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
+					["orb_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.4, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
-						0.4, -- [4]
+						0.8, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -653,17 +657,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
-						0, -- [3]
-						0.4, -- [4]
-					},
-					["raidborder"] = {
+					["chat2"] = {
 						0, -- [1]
 						0, -- [2]
 						0, -- [3]
-						0.86, -- [4]
+						0.83, -- [4]
 					},
 					["micromenu_btn_hover"] = {
 						1, -- [1]
@@ -671,17 +669,23 @@ LUIDB = {
 						0, -- [3]
 						0.8, -- [4]
 					},
+					["raidborder"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0.86, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
+					["orb_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
 						0, -- [3]
-						0.83, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
