@@ -5,6 +5,7 @@ GatherMate2DB = {
 	},
 	["profileKeys"] = {
 		["Urbul - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

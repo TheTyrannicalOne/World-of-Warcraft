@@ -3,8 +3,8 @@ OneRing_Config = {
 	["CharProfiles"] = {
 		["Darkspear-Serbitechna"] = "default",
 	},
-	["_GameVersion"] = "7.3.5",
-	["_OPieVersion"] = "Vanilla 2 (3.91)",
+	["_GameVersion"] = "8.0.1",
+	["_OPieVersion"] = "Vanilla 7 (3.93)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
@@ -15,9 +15,9 @@ OneRing_Config = {
 				["RaidSymbols"] = false,
 				["OPieTracking"] = false,
 				["HunterShots"] = false,
-				["OPieAutoQuest"] = false,
-				["OPieTrinkets"] = false,
 				["WorldMarkers"] = false,
+				["OPieTrinkets"] = false,
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},
@@ -25,77 +25,77 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Mounts"] = {
 				{
-					["sliceToken"] = "ABuescjG5ztt",
 					["id"] = 150544,
+					["sliceToken"] = "ABuescjG5ztt",
 				}, -- [1]
 				{
-					["sliceToken"] = "ABuescjG5zt1",
 					["id"] = 139595,
+					["sliceToken"] = "ABuescjG5zt1",
 				}, -- [2]
 				{
-					["sliceToken"] = "ABuescjG5ztr",
 					["id"] = 183117,
+					["sliceToken"] = "ABuescjG5ztr",
 				}, -- [3]
 				{
-					["sliceToken"] = "ABuescjG5zte",
 					["id"] = 190977,
+					["sliceToken"] = "ABuescjG5zte",
 				}, -- [4]
 				{
-					["sliceToken"] = "ABuescjG5ztw",
 					["id"] = 23161,
+					["sliceToken"] = "ABuescjG5ztw",
 				}, -- [5]
 				{
-					["sliceToken"] = "ABuescjG5ztq",
 					["id"] = 5784,
+					["sliceToken"] = "ABuescjG5ztq",
 				}, -- [6]
 				{
-					["sliceToken"] = "ABuescjG5z1M",
 					["id"] = 36702,
+					["sliceToken"] = "ABuescjG5z1M",
 				}, -- [7]
 				{
-					["sliceToken"] = "ABuescjG5z1N",
 					["id"] = 163025,
+					["sliceToken"] = "ABuescjG5z1N",
 				}, -- [8]
 				{
-					["sliceToken"] = "ABuescjG5z1B",
 					["id"] = 189998,
+					["sliceToken"] = "ABuescjG5z1B",
 				}, -- [9]
 				{
-					["sliceToken"] = "ABuescjG5z1/",
 					["id"] = 72286,
+					["sliceToken"] = "ABuescjG5z1/",
 				}, -- [10]
 				{
-					["sliceToken"] = "ABuescjG5z1V",
 					["id"] = 171839,
+					["sliceToken"] = "ABuescjG5z1V",
 				}, -- [11]
 				{
-					["sliceToken"] = "ABuescjG5z1C",
 					["id"] = 163024,
+					["sliceToken"] = "ABuescjG5z1C",
 				}, -- [12]
 				{
-					["sliceToken"] = "ABuescjG5z1X",
 					["id"] = 171845,
+					["sliceToken"] = "ABuescjG5z1X",
 				}, -- [13]
 				{
-					["sliceToken"] = "ABuescjG5z1Z",
 					["id"] = 122708,
+					["sliceToken"] = "ABuescjG5z1Z",
 				}, -- [14]
 				{
-					["sliceToken"] = "ABuescjG5z1=",
 					["id"] = 245725,
+					["sliceToken"] = "ABuescjG5z1=",
 				}, -- [15]
 				{
-					["sliceToken"] = "ABuescjG5z1L",
 					["id"] = 118089,
+					["sliceToken"] = "ABuescjG5z1L",
 				}, -- [16]
 				{
-					["sliceToken"] = "ABuescjG5z1K",
 					["id"] = 228919,
+					["sliceToken"] = "ABuescjG5z1K",
 				}, -- [17]
-				["name"] = "Mounts",
+				["limit"] = "Urbul-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Urbul-Zul'jin",
+				["name"] = "Mounts",
 			},
 			["Mounts1"] = {
 				{
@@ -110,10 +110,10 @@ OneRing_Config = {
 					["id"] = 64731,
 					["sliceToken"] = "ABueoFiE/rt",
 				}, -- [3]
-				["name"] = "Mounts",
+				["limit"] = "Serbitechna-Darkspear",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Serbitechna-Darkspear",
+				["name"] = "Mounts",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

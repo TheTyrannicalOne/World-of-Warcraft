@@ -1,0 +1,8 @@
+Version: 1
+Frame: ObjectiveTrackerFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -312
+Y: 3
+W: 235
+H: 1035
