@@ -1,5 +1,45 @@
 Changes since tag 8.0.4
 
+commit 5b590fb042133364c862eab6723274abe6b07eb5
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 28 10:42:04 2018 +0200
+
+    Omega via svn r17739:
+    identified bug causing trash filter not to work
+
+commit dea5adbbfe3e6503eb7ffa7b3f1a7b132dde9a6a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 28 08:38:44 2018 +0200
+
+    Omega via svn r17738:
+    Add trash warning I missed to motherload
+    Fix redundancy on Azerokk
+
+commit 85e52ee6d2f5a02dc66c86b7ed2c47b0455fef8e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 28 08:31:25 2018 +0200
+
+    Omega via svn r17737:
+    *Improved drill smash speed by 5 seconds
+    *removed IsValidWarning check on activate mech, since it caused half those warnings not to show (IsValidWarning make sure at least one member of group is in combat with unit, which isn?\226?\128?\153t always true for mechs since they don?\226?\128?\153t engage members of group, they run off)
+
+commit 37d828befdd2d0586ea449abc460d6ff83fa45d0
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 28 05:18:28 2018 +0200
+
+    Omega via svn r17736:
+    Another freehold trash warning pass, adding about 10 more warnings.
+
+commit a7cede5428feec942f872184a44abd71f02eaca9
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 28 04:24:49 2018 +0200
+
+    Omega via svn r17735:
+    Make the global normal/heroic trash filter on by default.
+    Added 13 new trash warnings to Atal Dazar
+    Wildfire trash warning in Atal Dazar is now OFF by default
+    Some voice pack fixes in Boralus and Kings rest trash mods
+
 commit 4eade83f99e1ba613b0d56837c0b9ac41190ca0e
 Author: subversion <svn@deadlybossmods.com>
 Date:   Mon Aug 27 07:46:06 2018 +0200
