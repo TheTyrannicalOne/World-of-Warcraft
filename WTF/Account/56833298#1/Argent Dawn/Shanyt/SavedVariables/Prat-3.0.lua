@@ -14,153 +14,43 @@ Prat3CharDB = {
 			},
 			["ChatFrame6EditBox"] = {
 			},
-			["ChatFrame9EditBox"] = {
-			},
-			["ChatFrame2EditBox"] = {
+			["ChatFrame1EditBox"] = {
 			},
 			["ChatFrame3EditBox"] = {
 			},
-			["ChatFrame1EditBox"] = {
+			["ChatFrame2EditBox"] = {
+			},
+			["ChatFrame9EditBox"] = {
 			},
 		},
 	},
 }
 Prat3HighCPUPerCharDB = {
-	["time"] = 1535322725,
+	["time"] = 1535497098,
 	["scrollback"] = {
 		["ChatFrame4"] = {
 			{
-				"|cff979797[17:10:07]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [1]
-			{
-				"|cff979797[17:18:49]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [2]
-			{
-				"|cff979797[17:20:59]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [3]
-			{
-				"|cff979797[18:15:25]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [4]
-			{
-				"|cff979797[18:16:35]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [5]
-			{
-				"|cff979797[18:23:40]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				3, -- [7]
-				4, -- [8]
-			}, -- [6]
-			{
-				"|cff979797[18:28:41]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [7]
-			{
-				"|cff979797[18:32:05]|r|c00000000|r |Hchannel:channel:1|h[1] |h Left Channel: |Hchannel:1|h[1. General - Ashenvale]|h", -- [1]
-				1, -- [2]
-				0.752941250801086, -- [3]
-				0.752941250801086, -- [4]
-				67, -- [5]
-				false, -- [6]
-				3, -- [7]
-				4, -- [8]
-			}, -- [8]
-		},
-		["ChatFrame1"] = {
-			{
-				"|cff979797[17:16:39]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Dinozette:1|h|cffd84e4e120|r:|cffaad372Dinozette|r|h|cffd8d8d8]|r has come online.", -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-				1, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [1]
-			{
-				"|cff979797[17:19:55]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Dragondg-ArgentDawn:2:GUILD|h|cffd84e4e120|r:|cff3fc6eaDragondg|r|h|cffd8d8d8]|r has earned the achievement |cffffff00|Hachievement:12546:Player-75-0B913DEE:1:8:26:18:4294967295:4294967295:4294967295:4294967295|h[Superior]|h|r |cff2080a0|Hgratsl:Dragondg:GUILD::12546|h[say grats]|h|r!", -- [1]
+				"|cff979797[18:58:18]|r|c00000000|r |Hchannel:GUILD|h[G] |h|cffd8d8d8[|r|Hplayer:Nicedinosaur-TheScryers:1:GUILD|h|cffd84e4e120|r:|cff0070ddNicedinosaur|r|h|cffd8d8d8]|r: Ty ty", -- [1]
 				0.250980406999588, -- [2]
 				1, -- [3]
 				0.250980406999588, -- [4]
-				65, -- [5]
+				5, -- [5]
 				false, -- [6]
 				1, -- [7]
 				2, -- [8]
-			}, -- [2]
+			}, -- [1]
+		},
+		["ChatFrame1"] = {
 			{
-				"|cff979797[17:20:13]|r|c00000000|r |cffd8d8d8[|r|Hplayer:Ninfia:3|h|cffd84e4e120|r:|cffaad372Ninfia|r|h|cffd8d8d8]|r has come online.", -- [1]
-				1, -- [2]
+				"|cff979797[18:58:18]|r|c00000000|r |Hchannel:GUILD|h[G] |h|cffd8d8d8[|r|Hplayer:Nicedinosaur-TheScryers:1:GUILD|h|cffd84e4e120|r:|cff0070ddNicedinosaur|r|h|cffd8d8d8]|r: Ty ty", -- [1]
+				0.250980406999588, -- [2]
 				1, -- [3]
-				0, -- [4]
-				1, -- [5]
-				false, -- [6]
-				3, -- [7]
-				4, -- [8]
-			}, -- [3]
-			{
-				"|cff979797[18:23:32]|r|c00000000|r Player not found.", -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-				1, -- [5]
+				0.250980406999588, -- [4]
+				5, -- [5]
 				false, -- [6]
 				1, -- [7]
 				2, -- [8]
-			}, -- [4]
-			{
-				"|cff979797[18:31:57]|r|c00000000|r |cff3fc6eaTaeil|r has gone offline.", -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-				1, -- [5]
-				false, -- [6]
-				1, -- [7]
-				2, -- [8]
-			}, -- [5]
+			}, -- [1]
 		},
 	},
 }

@@ -1,15 +1,15 @@
 
 GatherMate2DB = {
-	["global"] = {
-		["data_version"] = 5,
-	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
+	["global"] = {
+		["data_version"] = 5,
+	},
 	["profiles"] = {
-		["Shanyt - Argent Dawn"] = {
-		},
 		["Default"] = {
+		},
+		["Shanyt - Argent Dawn"] = {
 		},
 		["LUI-Towelliee"] = {
 		},

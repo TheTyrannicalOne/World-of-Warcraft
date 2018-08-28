@@ -4,10 +4,10 @@ GottaGoFastDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
-		["Shanyt - Argent Dawn"] = {
+		["Default"] = {
 			["Version"] = 30000,
 		},
-		["Default"] = {
+		["Shanyt - Argent Dawn"] = {
 			["Version"] = 30000,
 		},
 		["LUI-Towelliee"] = {

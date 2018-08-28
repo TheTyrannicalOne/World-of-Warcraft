@@ -3,13 +3,13 @@ MapsterDB = {
 	["namespaces"] = {
 		["FogClear"] = {
 			["profiles"] = {
-				["Towel-Monk"] = {
+				["LUI-Towelliee"] = {
 					["version"] = 1,
 				},
 				["Shanyt - Argent Dawn"] = {
 					["version"] = 1,
 				},
-				["LUI-Towelliee"] = {
+				["Towel-Monk"] = {
 					["version"] = 1,
 				},
 			},
@@ -25,11 +25,13 @@ MapsterDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
+		["Towel-Monk"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
 			["y"] = -71.1882280573341,
+		},
+		["Default"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["scale"] = 0.915698230266571,
@@ -37,9 +39,7 @@ MapsterDB = {
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",
 		},
-		["Default"] = {
-		},
-		["Towel-Monk"] = {
+		["LUI-Towelliee"] = {
 			["scale"] = 0.915698230266571,
 			["x"] = 193.15725667162,
 			["point"] = "TOPLEFT",

@@ -3,69 +3,7 @@ ParrotDB = {
 	["namespaces"] = {
 		["CombatEvents"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
-					["Incoming"] = {
-						["Self heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet skill evades"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
-							["disabled"] = true,
-						},
-						["Skill misses"] = {
-							["disabled"] = true,
-						},
-						["Heals over time"] = {
-							["disabled"] = true,
-						},
-						["Skill parries"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
-						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
-					},
+				["Towel-Monk"] = {
 					["Notification"] = {
 						["Currency gains"] = {
 							["disabled"] = true,
@@ -145,42 +83,51 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
 						["Player killing blows"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideSkillNames"] = true,
-				},
-				["Shanyt - Argent Dawn"] = {
 					["Incoming"] = {
-						["Heals over time"] = {
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
 							["disabled"] = true,
 						},
 						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
 							["disabled"] = true,
 						},
 						["Skill parries"] = {
@@ -189,31 +136,30 @@ ParrotDB = {
 						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Pet skill deflects"] = {
-							["disabled"] = true,
-						},
-						["Pet skill dodges"] = {
-							["disabled"] = true,
-						},
 						["Skill blocks"] = {
-							["disabled"] = true,
-						},
-						["Melee immunes"] = {
-							["disabled"] = true,
-						},
-						["Skill dodges"] = {
-							["disabled"] = true,
-						},
-						["Melee deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Self heals over time"] = {
+						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill evades"] = {
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+					},
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
 							["disabled"] = true,
 						},
 					},
@@ -226,139 +172,10 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["Notification"] = {
-						["Currency gains"] = {
-							["disabled"] = true,
-						},
-						["Player killing blows"] = {
-							["disabled"] = true,
-						},
-						["Power gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Experience gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo points full"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation gains"] = {
-							["disabled"] = true,
-						},
-						["Buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff fades"] = {
-							["disabled"] = true,
-						},
-						["Enter combat"] = {
-							["disabled"] = true,
-						},
-						["Item buff fades"] = {
-							["disabled"] = true,
-						},
-						["Item buff gains"] = {
-							["disabled"] = true,
-						},
-						["Combo point gain"] = {
-							["disabled"] = true,
-						},
-						["Pet debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Power loss"] = {
-							["disabled"] = true,
-						},
-						["Pet buff fades"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Loot money"] = {
-							["disabled"] = true,
-						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["disabled"] = true,
-						},
-						["Skill gains"] = {
-							["disabled"] = true,
-						},
-						["Reputation losses"] = {
-							["disabled"] = true,
-						},
-						["Leave combat"] = {
-							["disabled"] = true,
-						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
-						["Extra attacks"] = {
-							["disabled"] = true,
-						},
-						["Enemy debuff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
-						["NPC killing blows"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Debuff stack gains"] = {
-							["disabled"] = true,
-						},
-					},
 					["hideUnitNames"] = true,
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-					},
 					["hideSkillNames"] = true,
 				},
 				["Default"] = {
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
@@ -381,10 +198,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -393,22 +210,23 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Pet skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
-					["modifier"] = {
-						["overkill"] = {
-							["enabled"] = false,
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
 						},
-					},
-					["dbver"] = 5,
-					["damageTypes"] = {
-						["Frostfire"] = "d04979",
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
 					},
 					["Notification"] = {
 						["Currency gains"] = {
@@ -489,42 +307,235 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Enemy debuff gains"] = {
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
-							["disabled"] = true,
-						},
 						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["hideUnitNames"] = true,
+					["hideSkillNames"] = true,
+				},
+				["Shanyt - Argent Dawn"] = {
+					["Notification"] = {
+						["Currency gains"] = {
+							["disabled"] = true,
+						},
+						["Player killing blows"] = {
+							["disabled"] = true,
+						},
+						["Power gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Experience gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo points full"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Reputation gains"] = {
+							["disabled"] = true,
+						},
+						["Buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
+						["Enter combat"] = {
+							["disabled"] = true,
+						},
+						["Item buff fades"] = {
+							["disabled"] = true,
+						},
+						["Item buff gains"] = {
+							["disabled"] = true,
+						},
+						["Combo point gain"] = {
+							["disabled"] = true,
+						},
+						["Pet debuff fades"] = {
+							["disabled"] = true,
+						},
+						["Power loss"] = {
+							["disabled"] = true,
+						},
+						["Pet buff fades"] = {
+							["disabled"] = true,
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Loot money"] = {
+							["disabled"] = true,
+						},
+						["Target buff stack gains"] = {
+							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["disabled"] = true,
+						},
+						["Skill gains"] = {
 							["disabled"] = true,
 						},
 						["Target buff gains"] = {
 							["disabled"] = true,
 						},
+						["Leave combat"] = {
+							["disabled"] = true,
+						},
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Extra attacks"] = {
+							["disabled"] = true,
+						},
+						["Buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff gains"] = {
+							["disabled"] = true,
+						},
+						["Loot items"] = {
+							["disabled"] = true,
+						},
+						["Reputation losses"] = {
+							["disabled"] = true,
+						},
 						["Debuff stack gains"] = {
+							["disabled"] = true,
+						},
+					},
+					["modifier"] = {
+						["overkill"] = {
+							["enabled"] = false,
+						},
+					},
+					["dbver"] = 5,
+					["damageTypes"] = {
+						["Frostfire"] = "d04979",
+					},
+					["Outgoing"] = {
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+					},
+					["hideUnitNames"] = true,
+					["Incoming"] = {
+						["Heals over time"] = {
+							["disabled"] = true,
+						},
+						["Skill misses"] = {
+							["disabled"] = true,
+						},
+						["Skill parries"] = {
+							["disabled"] = true,
+						},
+						["Skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Melee immunes"] = {
+							["disabled"] = true,
+						},
+						["Skill dodges"] = {
+							["disabled"] = true,
+						},
+						["Melee deflects"] = {
+							["disabled"] = true,
+						},
+						["Pet skill blocks"] = {
+							["disabled"] = true,
+						},
+						["Self heals over time"] = {
+							["disabled"] = true,
+						},
+						["Pet skill evades"] = {
 							["disabled"] = true,
 						},
 					},
 					["hideSkillNames"] = true,
 				},
-				["Towel-Monk"] = {
+				["LUI-Towelliee"] = {
+					["Outgoing"] = {
+						["Skill absorbs"] = {
+							["disabled"] = true,
+						},
+						["Pet heals"] = {
+							["disabled"] = true,
+						},
+						["Pet heals over time"] = {
+							["disabled"] = true,
+						},
+					},
 					["Incoming"] = {
 						["Self heals over time"] = {
 							["disabled"] = true,
 						},
-						["Skill dodges"] = {
+						["Pet skill evades"] = {
 							["disabled"] = true,
 						},
 						["Pet skill dodges"] = {
@@ -536,16 +547,16 @@ ParrotDB = {
 						["Skill misses"] = {
 							["disabled"] = true,
 						},
-						["Pet skill evades"] = {
+						["Heals over time"] = {
 							["disabled"] = true,
 						},
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Heals over time"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {
@@ -554,7 +565,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill dodges"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -640,35 +651,34 @@ ParrotDB = {
 						["Skill gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff gains"] = {
+						["Reputation losses"] = {
 							["disabled"] = true,
 						},
 						["Leave combat"] = {
 							["disabled"] = true,
 						},
-						["NPC killing blows"] = {
+						["Loot items"] = {
 							["disabled"] = true,
 						},
 						["Extra attacks"] = {
 							["disabled"] = true,
 						},
-						["Buff gains"] = {
-							["disabled"] = true,
-						},
 						["Player killing blows"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
+						["Buff gains"] = {
 							["disabled"] = true,
 						},
-						["Reputation losses"] = {
+						["NPC killing blows"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
 						},
 					},
-					["hideUnitNames"] = true,
 					["modifier"] = {
 						["overkill"] = {
 							["enabled"] = false,
@@ -678,32 +688,14 @@ ParrotDB = {
 					["damageTypes"] = {
 						["Frostfire"] = "d04979",
 					},
-					["Outgoing"] = {
-						["Skill absorbs"] = {
-							["disabled"] = true,
-						},
-						["Pet heals"] = {
-							["disabled"] = true,
-						},
-						["Pet heals over time"] = {
-							["disabled"] = true,
-						},
-					},
+					["hideUnitNames"] = true,
 					["hideSkillNames"] = true,
 				},
 			},
 		},
 		["Suppressions"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
-					["suppressions"] = {
-						["Desecration"] = true,
-						["Undying Resolve"] = true,
-						["Ferocious Inspiration"] = true,
-						["Arcane Empowerment"] = true,
-					},
-				},
-				["Shanyt - Argent Dawn"] = {
+				["Towel-Monk"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
 						["Ferocious Inspiration"] = true,
@@ -714,16 +706,24 @@ ParrotDB = {
 				["Default"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
-						["Ferocious Inspiration"] = true,
 						["Undying Resolve"] = true,
+						["Ferocious Inspiration"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
-				["Towel-Monk"] = {
+				["Shanyt - Argent Dawn"] = {
 					["suppressions"] = {
 						["Desecration"] = true,
 						["Undying Resolve"] = true,
 						["Ferocious Inspiration"] = true,
+						["Arcane Empowerment"] = true,
+					},
+				},
+				["LUI-Towelliee"] = {
+					["suppressions"] = {
+						["Desecration"] = true,
+						["Ferocious Inspiration"] = true,
+						["Undying Resolve"] = true,
 						["Arcane Empowerment"] = true,
 					},
 				},
@@ -731,31 +731,7 @@ ParrotDB = {
 		},
 		["ScrollAreas"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
-					["areas"] = {
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["yOffset"] = -57.4493713378906,
-							["xOffset"] = 239.082946777344,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
-						["Incoming"] = {
-							["direction"] = "UP;RIGHT",
-							["xOffset"] = -244.198974609375,
-							["yOffset"] = -58.4725341796875,
-							["stickyDirection"] = "UP;RIGHT",
-							["iconSide"] = "RIGHT",
-							["speed"] = 2,
-							["size"] = 200,
-							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
-					},
-				},
-				["Shanyt - Argent Dawn"] = {
+				["Towel-Monk"] = {
 					["areas"] = {
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
@@ -781,6 +757,15 @@ ParrotDB = {
 				},
 				["Default"] = {
 					["areas"] = {
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["yOffset"] = -57.4493713378906,
+							["xOffset"] = 239.082946777344,
+							["size"] = 200,
+							["animationStyle"] = "Straight",
+							["stickyAnimationStyle"] = "Pow",
+						},
 						["Incoming"] = {
 							["direction"] = "UP;RIGHT",
 							["xOffset"] = -244.198974609375,
@@ -788,22 +773,13 @@ ParrotDB = {
 							["stickyDirection"] = "UP;RIGHT",
 							["iconSide"] = "RIGHT",
 							["speed"] = 2,
-							["stickyAnimationStyle"] = "Pow",
-							["animationStyle"] = "Straight",
-							["size"] = 200,
-						},
-						["Outgoing"] = {
-							["stickyDirection"] = "UP;LEFT",
-							["direction"] = "UP;LEFT",
-							["stickyAnimationStyle"] = "Pow",
-							["xOffset"] = 239.082946777344,
 							["size"] = 200,
 							["animationStyle"] = "Straight",
-							["yOffset"] = -57.4493713378906,
+							["stickyAnimationStyle"] = "Pow",
 						},
 					},
 				},
-				["Towel-Monk"] = {
+				["Shanyt - Argent Dawn"] = {
 					["areas"] = {
 						["Outgoing"] = {
 							["stickyDirection"] = "UP;LEFT",
@@ -824,6 +800,30 @@ ParrotDB = {
 							["size"] = 200,
 							["animationStyle"] = "Straight",
 							["stickyAnimationStyle"] = "Pow",
+						},
+					},
+				},
+				["LUI-Towelliee"] = {
+					["areas"] = {
+						["Incoming"] = {
+							["direction"] = "UP;RIGHT",
+							["xOffset"] = -244.198974609375,
+							["yOffset"] = -58.4725341796875,
+							["stickyDirection"] = "UP;RIGHT",
+							["iconSide"] = "RIGHT",
+							["speed"] = 2,
+							["stickyAnimationStyle"] = "Pow",
+							["animationStyle"] = "Straight",
+							["size"] = 200,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "UP;LEFT",
+							["direction"] = "UP;LEFT",
+							["stickyAnimationStyle"] = "Pow",
+							["xOffset"] = 239.082946777344,
+							["size"] = 200,
+							["animationStyle"] = "Straight",
+							["yOffset"] = -57.4493713378906,
 						},
 					},
 				},
@@ -833,19 +833,11 @@ ParrotDB = {
 		},
 		["Display"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
+				["Towel-Monk"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
 					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
-					["fontOutline"] = "NONE",
-				},
-				["Shanyt - Argent Dawn"] = {
-					["fontSize"] = 16,
-					["stickyFontOutline"] = "OUTLINE",
-					["font"] = "Prototype",
-					["stickyFontSize"] = 28,
 					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
 				},
@@ -853,11 +845,19 @@ ParrotDB = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
-					["font"] = "Prototype",
-					["stickyFont"] = "Prototype",
 					["fontOutline"] = "NONE",
+					["stickyFont"] = "Prototype",
+					["font"] = "Prototype",
 				},
-				["Towel-Monk"] = {
+				["Shanyt - Argent Dawn"] = {
+					["stickyFont"] = "Prototype",
+					["stickyFontOutline"] = "OUTLINE",
+					["font"] = "Prototype",
+					["fontOutline"] = "NONE",
+					["fontSize"] = 16,
+					["stickyFontSize"] = 28,
+				},
+				["LUI-Towelliee"] = {
 					["fontSize"] = 16,
 					["stickyFontOutline"] = "OUTLINE",
 					["stickyFontSize"] = 28,
@@ -869,7 +869,75 @@ ParrotDB = {
 		},
 		["Triggers"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
+				["Towel-Monk"] = {
+					["dbver"] = 9,
+					["triggers2"] = {
+						[1004] = {
+							["disabled"] = true,
+						},
+						[1020] = {
+							["disabled"] = true,
+						},
+						[1021] = {
+							["disabled"] = true,
+						},
+						[1006] = {
+							["disabled"] = true,
+						},
+						[1022] = {
+							["disabled"] = true,
+						},
+						[1023] = {
+							["disabled"] = true,
+						},
+						[1008] = {
+							["disabled"] = true,
+						},
+						[1024] = {
+							["disabled"] = true,
+						},
+						[1025] = {
+							["disabled"] = true,
+						},
+						[1026] = {
+							["disabled"] = true,
+						},
+						[1010] = {
+							["disabled"] = true,
+						},
+						[1031] = {
+							["disabled"] = true,
+						},
+						[1013] = {
+							["disabled"] = true,
+						},
+						[1034] = {
+							["disabled"] = true,
+						},
+						[1035] = {
+							["disabled"] = true,
+						},
+						[1037] = {
+							["disabled"] = true,
+						},
+						[1016] = {
+							["disabled"] = true,
+						},
+						[1017] = {
+							["disabled"] = true,
+						},
+						[1002] = {
+							["disabled"] = true,
+						},
+						[1018] = {
+							["disabled"] = true,
+						},
+						[1009] = {
+							["disabled"] = true,
+						},
+					},
+				},
+				["Default"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -1005,75 +1073,7 @@ ParrotDB = {
 						},
 					},
 				},
-				["Default"] = {
-					["dbver"] = 9,
-					["triggers2"] = {
-						[1004] = {
-							["disabled"] = true,
-						},
-						[1020] = {
-							["disabled"] = true,
-						},
-						[1021] = {
-							["disabled"] = true,
-						},
-						[1006] = {
-							["disabled"] = true,
-						},
-						[1022] = {
-							["disabled"] = true,
-						},
-						[1023] = {
-							["disabled"] = true,
-						},
-						[1008] = {
-							["disabled"] = true,
-						},
-						[1024] = {
-							["disabled"] = true,
-						},
-						[1025] = {
-							["disabled"] = true,
-						},
-						[1026] = {
-							["disabled"] = true,
-						},
-						[1010] = {
-							["disabled"] = true,
-						},
-						[1031] = {
-							["disabled"] = true,
-						},
-						[1013] = {
-							["disabled"] = true,
-						},
-						[1034] = {
-							["disabled"] = true,
-						},
-						[1035] = {
-							["disabled"] = true,
-						},
-						[1037] = {
-							["disabled"] = true,
-						},
-						[1016] = {
-							["disabled"] = true,
-						},
-						[1017] = {
-							["disabled"] = true,
-						},
-						[1002] = {
-							["disabled"] = true,
-						},
-						[1018] = {
-							["disabled"] = true,
-						},
-						[1009] = {
-							["disabled"] = true,
-						},
-					},
-				},
-				["Towel-Monk"] = {
+				["LUI-Towelliee"] = {
 					["dbver"] = 9,
 					["triggers2"] = {
 						[1004] = {
@@ -1148,13 +1148,13 @@ ParrotDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
-		},
-		["Shanyt - Argent Dawn"] = {
+		["Towel-Monk"] = {
 		},
 		["Default"] = {
 		},
-		["Towel-Monk"] = {
+		["Shanyt - Argent Dawn"] = {
+		},
+		["LUI-Towelliee"] = {
 		},
 	},
 }

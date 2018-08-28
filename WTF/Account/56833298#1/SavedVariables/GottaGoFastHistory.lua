@@ -4,9 +4,9 @@ GottaGoFastHistoryDB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
-		["Shanyt - Argent Dawn"] = {
-		},
 		["Default"] = {
+		},
+		["Shanyt - Argent Dawn"] = {
 		},
 		["LUI-Towelliee"] = {
 		},

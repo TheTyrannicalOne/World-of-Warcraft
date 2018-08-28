@@ -16,91 +16,91 @@ Quartz3DB = {
 				},
 			},
 		},
-		["EnemyCasts"] = {
-		},
 		["Player"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
+				["Towel-Monk"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
+				},
+				["Default"] = {
+					["x"] = 857.395568847656,
 				},
 				["Shanyt - Argent Dawn"] = {
 					["w"] = 218,
 					["y"] = 173,
 					["x"] = 869,
 				},
-				["Default"] = {
-					["x"] = 857.395568847656,
-				},
-				["Towel-Monk"] = {
+				["LUI-Towelliee"] = {
 					["y"] = 173,
 					["x"] = 869,
 					["w"] = 218,
 				},
 			},
 		},
+		["EnemyCasts"] = {
+		},
 		["GCD"] = {
 		},
 		["Focus"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
-					["x"] = 882.395558221442,
-				},
-				["Shanyt - Argent Dawn"] = {
+				["Towel-Monk"] = {
 					["x"] = 882.395558221442,
 				},
 				["Default"] = {
 					["x"] = 882.395568847656,
 				},
-				["Towel-Monk"] = {
+				["Shanyt - Argent Dawn"] = {
+					["x"] = 882.395558221442,
+				},
+				["LUI-Towelliee"] = {
 					["x"] = 882.395558221442,
 				},
 			},
 		},
 		["Target"] = {
 			["profiles"] = {
-				["LUI-Towelliee"] = {
-					["w"] = 447,
-					["y"] = 104.687440020117,
-					["h"] = 37,
-					["fontsize"] = 19,
-					["font"] = "weezerfont",
-					["border"] = "RothSquare",
-					["nametextx"] = 14,
-					["x"] = 752.432429475146,
-					["texture"] = "Tukui",
-				},
-				["Shanyt - Argent Dawn"] = {
-					["h"] = 37,
-					["nametextx"] = 14,
-					["w"] = 447,
-					["y"] = 104.687440020117,
-					["font"] = "weezerfont",
-					["border"] = "RothSquare",
-					["fontsize"] = 19,
-					["texture"] = "Tukui",
-					["x"] = 752.432429475146,
-				},
-				["Default"] = {
-					["x"] = 882.395568847656,
-				},
 				["Towel-Monk"] = {
 					["w"] = 447,
 					["y"] = 104.687440020117,
 					["h"] = 37,
 					["fontsize"] = 19,
 					["x"] = 752.432429475146,
+					["border"] = "RothSquare",
+					["nametextx"] = 14,
 					["font"] = "weezerfont",
+					["texture"] = "Tukui",
+				},
+				["Default"] = {
+					["x"] = 882.395568847656,
+				},
+				["Shanyt - Argent Dawn"] = {
+					["h"] = 37,
+					["nametextx"] = 14,
+					["w"] = 447,
+					["y"] = 104.687440020117,
+					["x"] = 752.432429475146,
+					["border"] = "RothSquare",
+					["fontsize"] = 19,
+					["texture"] = "Tukui",
+					["font"] = "weezerfont",
+				},
+				["LUI-Towelliee"] = {
+					["w"] = 447,
+					["y"] = 104.687440020117,
+					["h"] = 37,
+					["fontsize"] = 19,
+					["font"] = "weezerfont",
+					["x"] = 752.432429475146,
 					["nametextx"] = 14,
 					["border"] = "RothSquare",
 					["texture"] = "Tukui",
 				},
 			},
 		},
-		["Range"] = {
-		},
 		["Mirror"] = {
+		},
+		["Range"] = {
 		},
 		["Latency"] = {
 		},
@@ -109,7 +109,7 @@ Quartz3DB = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
-		["LUI-Towelliee"] = {
+		["Towel-Monk"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,
@@ -124,6 +124,8 @@ Quartz3DB = {
 				["Mirror"] = false,
 				["Latency"] = false,
 			},
+		},
+		["Default"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 			["modules"] = {
@@ -136,14 +138,12 @@ Quartz3DB = {
 				["GCD"] = false,
 				["Focus"] = false,
 				["Timer"] = false,
-				["Mirror"] = false,
 				["Swing"] = false,
+				["Mirror"] = false,
 				["Latency"] = false,
 			},
 		},
-		["Default"] = {
-		},
-		["Towel-Monk"] = {
+		["LUI-Towelliee"] = {
 			["modules"] = {
 				["Tradeskill"] = false,
 				["Buff"] = false,

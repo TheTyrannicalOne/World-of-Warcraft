@@ -11,11 +11,11 @@ AskMrRobotDb4 = {
 			},
 		},
 	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-	},
 	["global"] = {
 		["Region"] = "US",
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
@@ -35,7 +35,7 @@ AskMrRobotDb4 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1648] = {
+					[1712] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
@@ -47,7 +47,7 @@ AskMrRobotDb4 = {
 						[17] = false,
 						[15] = false,
 					},
-					[1712] = {
+					[1648] = {
 						[14] = false,
 						[16] = false,
 						[17] = false,
