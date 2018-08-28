@@ -21,67 +21,22 @@ TradeSkillMaster_DestroyingDB = {
 			"Shathiel - Darkspear", -- [13]
 			"Urbul - Zul'jin", -- [14]
 		},
-		["realm"] = {
-			"Argent Dawn", -- [1]
-			"Darkspear", -- [2]
-			"Zul'jin", -- [3]
-		},
-		["profile"] = {
-			"Default", -- [1]
-		},
 		["factionrealm"] = {
 			"Horde - Argent Dawn", -- [1]
 			"Alliance - Darkspear", -- [2]
 			"Horde - Zul'jin", -- [3]
 		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Argent Dawn", -- [1]
+			"Darkspear", -- [2]
+			"Zul'jin", -- [3]
+		},
 	},
 	["g@ @autoShow"] = true,
 	["g@ @autoStack"] = true,
-	["g@ @logDays"] = 14,
-	["g@ @deAbovePrice"] = "0c",
-	["g@ @history"] = {
-		["Disenchant"] = {
-			{
-				["time"] = 1517109420,
-				["result"] = {
-				},
-				["item"] = "i:8180",
-			}, -- [1]
-			{
-				["time"] = 1517109602,
-				["result"] = {
-				},
-				["item"] = "i:8178:-18",
-			}, -- [2]
-			{
-				["time"] = 1517112179,
-				["result"] = {
-				},
-				["item"] = "i:15014:-81",
-			}, -- [3]
-			{
-				["time"] = 1517112620,
-				["result"] = {
-					["i:3685"] = 1,
-					["i:5124"] = 1,
-				},
-				["item"] = "i:2075:-84",
-			}, -- [4]
-			{
-				["result"] = {
-				},
-				["item"] = "i:4570:-10:1:3859",
-				["time"] = 1518395985,
-			}, -- [5]
-		},
-	},
-	["g@ @helpPlatesShown"] = {
-		["destroyingFrame"] = true,
-	},
-	["_hash"] = 14107345,
-	["g@ @includeSoulbound"] = false,
-	["g@ @deMaxQuality"] = 3,
-	["_version"] = 1,
 	["_currentProfile"] = {
 		["Bathal - Argent Dawn"] = "Default",
 		["Shathiel - Darkspear"] = "Default",
@@ -93,9 +48,54 @@ TradeSkillMaster_DestroyingDB = {
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Urbul - Zul'jin"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
 		["Fantastiburo - Argent Dawn"] = "Default",
 	},
+	["_version"] = 1,
+	["g@ @history"] = {
+		["Disenchant"] = {
+			{
+				["item"] = "i:8180",
+				["time"] = 1517109420,
+				["result"] = {
+				},
+			}, -- [1]
+			{
+				["item"] = "i:8178:-18",
+				["time"] = 1517109602,
+				["result"] = {
+				},
+			}, -- [2]
+			{
+				["item"] = "i:15014:-81",
+				["time"] = 1517112179,
+				["result"] = {
+				},
+			}, -- [3]
+			{
+				["item"] = "i:2075:-84",
+				["time"] = 1517112620,
+				["result"] = {
+					["i:3685"] = 1,
+					["i:5124"] = 1,
+				},
+			}, -- [4]
+			{
+				["time"] = 1518395985,
+				["result"] = {
+				},
+				["item"] = "i:4570:-10:1:3859",
+			}, -- [5]
+		},
+	},
+	["g@ @helpPlatesShown"] = {
+		["destroyingFrame"] = true,
+	},
+	["g@ @includeSoulbound"] = false,
+	["_hash"] = 14107345,
+	["g@ @deMaxQuality"] = 3,
+	["g@ @deAbovePrice"] = "0c",
+	["g@ @logDays"] = 14,
 }
