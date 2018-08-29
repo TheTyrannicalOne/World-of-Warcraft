@@ -1,0 +1,52 @@
+tag 83aff71e1530c1efdcfc5da270c8b6bfe2f1e752 8.0.1.9
+Author:	James D. Callahan III <jcallahan@curse.com>
+Date:	Mon Aug 27 23:57:51 2018 -0500
+
+commit 51c04b4d59f26adf8b92f52cbf74173f5ee2bc55
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Mon Aug 27 19:02:08 2018 -0500
+
+    Ignore vignettes which are obviously treasure.
+
+commit 63b98d03b4be1a244c6e416cacd33cb69a6d7771
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Mon Aug 27 18:48:53 2018 -0500
+
+    Propagate the vignette's name to the targeting button if the vignette doesn't yield an NPC ID to make the source more obvious; for example, Zhu-Gon the Sour must be summoned via an object with a vignetteName of Really Skunky Beer.
+
+commit 52555da006273d3c2b8d9e12569bd293b3230354
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 25 16:26:25 2018 -0500
+
+    Add questIDs for Squadron Commander Vishax and Rezira the Seer.
+
+commit 33003e80e3c860d875d7a9b8a861bfe52271fd7b
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 25 16:21:03 2018 -0500
+
+    Change variable name for clarity.
+
+commit d2b7de8b4f93001d42cc593e5dbaae46f2c08be1
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 25 16:19:37 2018 -0500
+
+    Protect against HBD not having a zone name.
+
+commit cb126899ed34a5bf6a3c1b5685aef092c5335ae8
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 25 16:07:58 2018 -0500
+
+    Add Akakakoo to Uncharted Island.
+
+commit bf599d3fd4115e9f78eac7d5b64501af5b4a6351
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Aug 25 16:00:45 2018 -0500
+
+    Use the correct vignetteID for Captain Mu'kala.
+
+commit 34e46f4461056d3957263cfd7a75ae56862ce6ff
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sun Aug 19 13:16:15 2018 -0500
+
+    Set a default size of 1000x1000 for the preferences window since the original defaults were too small.
+

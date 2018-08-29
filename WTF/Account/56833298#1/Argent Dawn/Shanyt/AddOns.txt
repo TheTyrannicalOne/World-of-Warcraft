@@ -1,1 +1,11 @@
 ElvUI_EverySecondCounts: disabled
+_NPCScan.Overlay: enabled
+Collectinator: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+BigWigs_Voice: enabled
+MBB: disabled
+Parrot: disabled
+Paste: disabled
+XLoot_Options: enabled

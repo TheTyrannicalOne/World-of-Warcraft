@@ -1,0 +1,10 @@
+## Interface: 80000
+## Title: XLoot Monitor
+## Notes: A graphical presentation of items looted by yourself and your group
+## Version: 8.0-5
+## Author: Xuerian
+## X-Category: Inventory
+
+## Dependencies: XLoot
+
+load.xml

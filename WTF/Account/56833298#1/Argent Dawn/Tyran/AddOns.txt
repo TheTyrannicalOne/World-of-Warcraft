@@ -1,0 +1,5 @@
+_NPCScan.Overlay: enabled
+Collectinator: disabled
+MBB: disabled
+Parrot: disabled
+Paste: disabled
