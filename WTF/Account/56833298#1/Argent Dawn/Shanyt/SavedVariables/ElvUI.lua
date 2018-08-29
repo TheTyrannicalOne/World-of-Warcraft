@@ -113,5 +113,27 @@ ElvCharacterDB = {
 			[51] = 1535517192,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [5]
+		{
+			"%s has earned the achievement |cffffff00|Hachievement:12840:Player-75-055A8488:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[Tol Dagor]|h|r!", -- [1]
+			"Payupsucka-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Payupsucka", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9, -- [11]
+			"Player-75-055A8488", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aPayupsucka|r",
+			[51] = 1535518904,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+		}, -- [6]
 	},
 }

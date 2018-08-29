@@ -5,8 +5,11 @@ Omen3DB = {
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
-			["PositionY"] = 675.000061035156,
 			["Shown"] = false,
+			["PositionY"] = 675.000061035156,
+			["MinimapIcon"] = {
+				["minimapPos"] = 345.518259069873,
+			},
 			["PositionX"] = 954.166687011719,
 		},
 	},

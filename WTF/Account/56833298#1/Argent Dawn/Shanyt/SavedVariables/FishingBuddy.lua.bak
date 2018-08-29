@@ -1,18 +1,18 @@
 
 FishingBuddy_Player = {
 	["MinimapData"] = {
-		["minimapPos"] = 225,
+		["minimapPos"] = 326.03417300815,
 		["hide"] = false,
 	},
 	["Settings"] = {
-		["TotalTimeFishing"] = 1,
 		["SpecialBobbers"] = -1,
+		["TotalTimeFishing"] = 1,
 	},
 	["WasWearing"] = {
 	},
-	["WatcherLocation"] = {
-	},
+	["Version"] = 19500,
 	["Outfit"] = {
 	},
-	["Version"] = 19500,
+	["WatcherLocation"] = {
+	},
 }

@@ -1,0 +1,57 @@
+
+RCLootCouncilDB = {
+	["global"] = {
+		["log"] = {
+			"08/29/18", -- [1]
+			"00:55:26 - Logged In", -- [2]
+			"00:55:26 - ML initialized!", -- [3]
+			"00:55:26 - TradeUI enabled", -- [4]
+			"00:55:34 - Shanyt-ArgentDawn (2.8.3) (nil)", -- [5]
+			"00:55:34 - ActivateSkin (new_blue)", -- [6]
+			"00:55:39 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [7]
+			"00:55:39 - GetML()", -- [8]
+			"00:55:39 - UpdatePlayersData()", -- [9]
+			"00:55:41 - GetPlayersGuildRank()", -- [10]
+			"00:55:41 - Found Guild Rank: Ahroun", -- [11]
+			"00:55:41 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [12]
+			"08/29/18", -- [13]
+			"00:59:58 - Logged In", -- [14]
+			"00:59:58 - ML initialized!", -- [15]
+			"00:59:58 - TradeUI enabled", -- [16]
+			"01:00:07 - Shanyt-ArgentDawn (2.8.3) (nil)", -- [17]
+			"01:00:07 - ActivateSkin (new_blue)", -- [18]
+			"01:00:15 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [19]
+			"01:00:15 - GetML()", -- [20]
+			"01:00:15 - UpdatePlayersData()", -- [21]
+			"01:00:18 - GetPlayersGuildRank()", -- [22]
+			"01:00:18 - Found Guild Rank: Ahroun", -- [23]
+			"01:00:18 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [24]
+			"08/29/18", -- [25]
+			"01:14:16 - Logged In", -- [26]
+			"01:14:16 - ML initialized!", -- [27]
+			"01:14:16 - TradeUI enabled", -- [28]
+			"01:14:20 - Shanyt-ArgentDawn (2.8.3) (nil)", -- [29]
+			"01:14:20 - ActivateSkin (new_blue)", -- [30]
+			"01:14:29 - Event: (PLAYER_ENTERING_WORLD) (false) (true)", -- [31]
+			"01:14:29 - GetML()", -- [32]
+			"01:14:29 - UpdatePlayersData()", -- [33]
+			"01:14:29 - GetPlayersGuildRank()", -- [34]
+			"01:14:29 - Found Guild Rank: Ahroun", -- [35]
+			"01:14:30 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [36]
+		},
+		["version"] = "2.8.3",
+		["locale"] = "enUS",
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+RCLootCouncilLootDB = {
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+	},
+}
