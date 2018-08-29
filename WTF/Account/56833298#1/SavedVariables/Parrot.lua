@@ -133,10 +133,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {
@@ -201,7 +201,7 @@ ParrotDB = {
 						["Pet skill blocks"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
 						["Melee deflects"] = {
@@ -210,7 +210,7 @@ ParrotDB = {
 						["Melee immunes"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill deflects"] = {
@@ -553,10 +553,10 @@ ParrotDB = {
 						["Skill parries"] = {
 							["disabled"] = true,
 						},
-						["Skill blocks"] = {
+						["Skill deflects"] = {
 							["disabled"] = true,
 						},
-						["Skill deflects"] = {
+						["Skill blocks"] = {
 							["disabled"] = true,
 						},
 						["Pet skill blocks"] = {

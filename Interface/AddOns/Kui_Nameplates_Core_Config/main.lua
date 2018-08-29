@@ -80,11 +80,107 @@ function SlashCmdList.KUINAMEPLATESCORE(msg)
         knp.DEBUG_IGNORE = knp.DEBUG_IGNORE or {}
         knp.DEBUG_IGNORE[to_ignore] = not knp.DEBUG_IGNORE[to_ignore]
         return
-    elseif msg == 'dump-config' then
+    elseif strfind(msg,'^dump') then
         local d = kui:DebugPopup()
+        local debug = knp.debug and '+debug' or ''
+        local custom = IsAddOnLoaded('Kui_Nameplates_Custom') and '+c' or ''
+        local barauras = IsAddOnLoaded('Kui_Nameplates_BarAuras') and '+ba' or ''
+        local extras = IsAddOnLoaded('Kui_Nameplates_Extras') and '+x' or ''
+
+        local plugins_str
+        for i,plugin_tbl in ipairs(knp.plugins) do
+            if plugin_tbl.name then
+                local this_str
+                if plugin_tbl.enabled then
+                    this_str = plugin_tbl.name
+                else
+                    this_str = format('[%s]',plugin_tbl.name)
+                end
+                plugins_str = plugins_str and plugins_str..', '..this_str or this_str
+            end
+        end
+
+        d:AddText(format('%s %d.%d%s%s%s%s',
+            '2.17',knp.MAJOR,knp.MINOR,
+            debug,custom,barauras,extras))
+
         d:AddText(KuiNameplatesCore.config.csv)
         d:AddText(KuiNameplatesCore.config:GetActiveProfile())
+        d:AddText(plugins_str)
+
         d:Show()
+        return
+    elseif strfind(msg,'^profile') then
+        local profile = strmatch(msg,'^profile (.-)%s*$')
+        if not profile then
+            knp:ui_print('Switch to named profile. Usage: /knp profile profile name')
+            return
+        end
+        if KuiNameplatesCore.config.gsv.profiles[profile] then
+            KuiNameplatesCore.config:SetProfile(profile)
+        else
+            knp:ui_print(format('No profile with name `%s`.',profile))
+        end
+        return
+    elseif strfind(msg,'^set') then
+        local k,v = strmatch(msg,'^set (.-)%s+(.-)%s*$')
+        if not k or not v then
+            knp:ui_print('Set config key to value. Usage: /knp set config_key value')
+            print('    Boolean: true, false. Colours: r,g,b{,a} (0.0 - 1.0).')
+            print('    Enter nil for value to reset a key to default.')
+            return
+        end
+
+        local extant_v = KuiNameplatesCore.profile[k]
+        if type(extant_v) == 'nil' then
+            knp:ui_print(format('Invalid config key `%s`.',k))
+            return
+        end
+
+        if v == 'nil' then
+            -- reset the key
+            v = nil
+        else
+            if strlower(v) == 'true' then
+                v = true
+            elseif strlower(v) == 'false' then
+                v = false
+            elseif tonumber(v) then
+                v = tonumber(v)
+            else
+                -- string; find colour tables
+                local r,g,b,a = strmatch(v,'^([^,]-),([^,]-),([^,]-)$')
+                if not r then
+                    r,g,b,a = strmatch(v,'^([^,]-),([^,]-),([^,]-),([^,]-)$')
+                end
+
+                r,g,b,a = tonumber(r),tonumber(g),tonumber(b),tonumber(a)
+                if r and g and b then
+                    v = { r, g, b }
+                    if a then
+                        tinsert(v,a)
+                    end
+                end
+            end
+
+            if type(extant_v) ~= type(v) then
+                knp:ui_print(format('Invalid value for key (expected %s, got %s).',
+                    type(extant_v),type(v)))
+                return
+            end
+            if type(v) == 'table' and #v ~= #extant_v then
+                knp:ui_print(format('Invalid table length (expected %d, got %d).',
+                    #extant_v,#v))
+                return
+            end
+        end
+
+        KuiNameplatesCore.config:SetKey(k,v)
+        return
+    elseif msg == 'which' then
+        local t = C_NamePlate.GetNamePlateForUnit('target')
+        if not t then return end
+        knp:ui_print(t:GetName())
         return
     elseif msg and msg ~= '' then
         -- interpret msg as config page shortcut
@@ -93,15 +189,21 @@ function SlashCmdList.KUINAMEPLATESCORE(msg)
 
         local found
         for i,f in ipairs(opt.pages) do
-            local n = strlower(L.page_names[f.name] or f.name)
-            if n == msg then
-                -- exact match
-                found = f
-                break
-            elseif not found and n:match('^'..msg) then
-                -- starts-with match
-                -- (continue searching for exact, don't look for more fuzzies)
-                found = f
+            if f.name then
+                local name = f.name
+                local locale = L.page_names[name] and
+                               strlower(L.page_names[name])
+
+                if msg == name or msg == locale then
+                    -- exact match
+                    found = f
+                    break
+                elseif not found and
+                    (name:match('^'..msg) or locale:match('^'..msg))
+                then
+                    -- starts-with match, continue searching for exact matches
+                    found = f
+                end
             end
         end
 

@@ -42,14 +42,14 @@ LUIDB = {
 					},
 				},
 				["Shanyt - Argent Dawn"] = {
-					["Reagents"] = {
-						["CoordX"] = 626.660949707031,
-						["CoordY"] = 858.828674316406,
-					},
 					["Bags"] = {
 						["CoordX"] = 1577.20483398438,
 						["ItemQuality"] = true,
 						["CoordY"] = 777.473571777344,
+					},
+					["Reagents"] = {
+						["CoordY"] = 858.828674316406,
+						["CoordX"] = 626.660949707031,
 					},
 					["Bank"] = {
 						["FontSize"] = 12,
@@ -81,13 +81,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -95,6 +88,13 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["OffsetX"] = 1,
@@ -118,6 +118,7 @@ LUIDB = {
 						["Anchor"] = "Vd1",
 					},
 					["Chat"] = {
+						["OffsetX"] = -15,
 						["IsShown"] = true,
 					},
 					["Dps"] = {
@@ -129,9 +130,10 @@ LUIDB = {
 						["Anchor"] = "SkadaBarWindowSkada",
 					},
 					["Tps"] = {
+						["Direction"] = "TOPLEFT",
 						["IsShown"] = true,
 						["Width"] = 198,
-						["OffsetX"] = 1,
+						["OffsetX"] = 28.5,
 						["OffsetY"] = 1,
 					},
 					["MicroMenu"] = {
@@ -145,13 +147,6 @@ LUIDB = {
 					["Chat"] = {
 						["IsShown"] = true,
 					},
-					["Raid"] = {
-						["Anchor"] = "Vd1",
-						["Height"] = 237,
-						["OffsetY"] = 1,
-						["IsShown"] = true,
-						["Width"] = 612,
-					},
 					["Dps"] = {
 						["Direction"] = "TOPLEFT",
 						["Anchor"] = "SkadaBarWindowSkada",
@@ -159,6 +154,13 @@ LUIDB = {
 						["OffsetY"] = 17,
 						["IsShown"] = true,
 						["Width"] = 189,
+					},
+					["Raid"] = {
+						["Anchor"] = "Vd1",
+						["Height"] = 237,
+						["OffsetY"] = 1,
+						["IsShown"] = true,
+						["Width"] = 612,
 					},
 					["Tps"] = {
 						["IsShown"] = true,
@@ -222,7 +224,7 @@ LUIDB = {
 				["Argent Dawn"] = {
 					["Gold"] = {
 						["Horde"] = {
-							["Shanyt"] = 13641267061,
+							["Shanyt"] = 13641550433,
 						},
 					},
 				},
@@ -332,17 +334,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["micromenu_btn_hover"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.43, -- [2]
 						0, -- [3]
-						0.8, -- [4]
+						0.4, -- [4]
 					},
 					["raidborder"] = {
 						0, -- [1]
@@ -350,17 +346,23 @@ LUIDB = {
 						0, -- [3]
 						0.86, -- [4]
 					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
+					["chat2"] = {
+						0, -- [1]
+						0, -- [2]
 						0, -- [3]
-						0.4, -- [4]
+						0.83, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -496,7 +498,13 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["raidborder"] = {
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.78, -- [2]
+						0.55, -- [3]
+						0.8, -- [4]
+					},
+					["orb_hover"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
@@ -508,23 +516,17 @@ LUIDB = {
 						0.55, -- [3]
 						0.4, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.78, -- [2]
-						0.55, -- [3]
-						0.4, -- [4]
-					},
 					["sidebar"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
 						0.5, -- [4]
 					},
-					["micromenu_btn_hover"] = {
+					["raidborder"] = {
 						1, -- [1]
 						0.78, -- [2]
 						0.55, -- [3]
-						0.8, -- [4]
+						0.4, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -657,17 +659,11 @@ LUIDB = {
 						0, -- [3]
 						0.83, -- [4]
 					},
-					["chat2"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.83, -- [4]
-					},
-					["micromenu_btn_hover"] = {
+					["orb_hover"] = {
 						1, -- [1]
 						0.43, -- [2]
 						0, -- [3]
-						0.8, -- [4]
+						0.4, -- [4]
 					},
 					["raidborder"] = {
 						0, -- [1]
@@ -675,17 +671,23 @@ LUIDB = {
 						0, -- [3]
 						0.86, -- [4]
 					},
+					["micromenu_btn_hover"] = {
+						1, -- [1]
+						0.43, -- [2]
+						0, -- [3]
+						0.8, -- [4]
+					},
 					["sidebar"] = {
 						1, -- [1]
 						0.48, -- [2]
 						0, -- [3]
 						0.5, -- [4]
 					},
-					["orb_hover"] = {
-						1, -- [1]
-						0.43, -- [2]
+					["chat2"] = {
+						0, -- [1]
+						0, -- [2]
 						0, -- [3]
-						0.4, -- [4]
+						0.83, -- [4]
 					},
 					["micromenu"] = {
 						1, -- [1]
@@ -736,6 +738,42 @@ LUIDB = {
 				["StickyChannels"] = {
 				},
 				["EditBox"] = {
+					["factionrealm"] = {
+						["Horde - Argent Dawn"] = {
+							"/omen center", -- [1]
+							"/omen", -- [2]
+							"/ltp", -- [3]
+							"/wa", -- [4]
+							"/omen", -- [5]
+							"/wa", -- [6]
+							"/omen config", -- [7]
+							"/wa", -- [8]
+							"/omen", -- [9]
+							"/omen toggle", -- [10]
+							"/omen", -- [11]
+							"/ltp", -- [12]
+							"/omen center", -- [13]
+							"/wa", -- [14]
+							"/omen center", -- [15]
+							"/omen", -- [16]
+							"/ltp", -- [17]
+							"/wa", -- [18]
+							"/omen", -- [19]
+							"/wa", -- [20]
+							"/omen config", -- [21]
+							"/omen", -- [22]
+							"/ltp", -- [23]
+							"/wa", -- [24]
+							"/omen", -- [25]
+							"/wa", -- [26]
+							"/omen config", -- [27]
+							"/ltp", -- [28]
+							"/omen", -- [29]
+							"/omen config", -- [30]
+							"/omen", -- [31]
+							"/omen config", -- [32]
+						},
+					},
 				},
 				["Buttons"] = {
 				},
@@ -751,7 +789,9 @@ LUIDB = {
 					["modules"] = {
 					},
 					["x"] = 28.0002389903592,
-					["y"] = 46.0004300258579,
+					["height"] = 165.627593994141,
+					["y"] = 51.3728536743329,
+					["width"] = 384.812469482422,
 				},
 				["Towel-Monk"] = {
 					["modules"] = {

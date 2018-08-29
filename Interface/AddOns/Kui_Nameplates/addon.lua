@@ -7,7 +7,7 @@
 --------------------------------------------------------------------------------
 KuiNameplates = CreateFrame('Frame')
 local addon = KuiNameplates
-addon.MAJOR,addon.MINOR = 2,2
+addon.MAJOR,addon.MINOR = 2,3
 
 --[===[@debug@
 addon.debug = true
@@ -49,6 +49,9 @@ addon.plugins = {}
 function addon:print(...)
     if not addon.debug then return end
     print('KNP2','|cff666666'..GetTime()..'|r',...)
+end
+function addon:ui_print(...)
+    print('|cffbb99ffKui Nameplates|r',...)
 end
 function addon:Frames()
     return ipairs(framelist)
@@ -120,13 +123,10 @@ local function OnEvent(self,event,...)
         return
     end
 
-    --[===[@alpha@
-    print('|cff9966ffKui Nameplates|r: You are using an alpha release and may see debug messages in chat.')
-    --@end-alpha@]===]
-
     if not self.layout then
         -- throw missing layout
-        print('|cff9966ffKui Nameplates|r: A compatible layout was not loaded. You probably forgot to enable Kui Nameplates: Core in your addon list.')
+        self:ui_print('A compatible layout was not loaded.')
+        print(' Make sure Kui Nameplates: Core is enabled, or reinstall the addon from Curse if it isn\'t present.')
         return
     end
 
@@ -140,7 +140,10 @@ local function OnEvent(self,event,...)
                 plugin:Initialise()
             end
 
-            plugin:Enable()
+            if plugin.enable_on_load then
+                -- enable on load if requested
+                plugin:Enable()
+            end
         end
     end
 

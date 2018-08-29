@@ -1,36 +1,16 @@
 
 Omen3DB = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Argent Dawn"] = "LUI-Towelliee",
 	},
 	["profiles"] = {
 		["LUI-Towelliee"] = {
-			["MinimapIcon"] = {
-				["hide"] = true,
-			},
 			["PositionW"] = 198.886058857751,
 			["NumBars"] = 7,
 			["Shown"] = true,
-			["ShowWith"] = {
-				["Alone"] = true,
-				["Resting"] = true,
-				["UseShowWith"] = false,
-				["HideWhileResting"] = false,
-				["PVP"] = true,
-				["HideInPVP"] = false,
-			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
-			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984924238223,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014660035749,
-			["PositionX"] = 451.131409021275,
-			["Warnings"] = {
-				["Sound"] = false,
-			},
 			["Locked"] = true,
 			["Background"] = {
 				["EdgeSize"] = 9,
@@ -48,7 +28,27 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["PositionH"] = 196.984924238223,
+			["MinimapIcon"] = {
+				["hide"] = true,
+			},
+			["ShowWith"] = {
+				["UseShowWith"] = false,
+				["PVP"] = true,
+				["Alone"] = true,
+				["Resting"] = true,
+				["HideWhileResting"] = false,
+				["HideInPVP"] = false,
+			},
+			["VGrip1"] = 155.316689874038,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
+			["Warnings"] = {
+				["Sound"] = false,
+			},
+			["PositionX"] = 451.131409021275,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -91,15 +91,15 @@ Omen3DB = {
 			},
 		},
 		["Shanyt - Argent Dawn"] = {
-			["PositionW"] = 198.88604152751,
+			["PositionW"] = 215.003768920898,
 			["NumBars"] = 7,
 			["Shown"] = true,
-			["PositionH"] = 196.984932998413,
-			["VGrip2"] = 155.316689874038,
-			["PositionY"] = 224.014743744153,
-			["Locked"] = true,
+			["PositionH"] = 209,
+			["VGrip2"] = 167.903474225209,
+			["PositionY"] = 224.014801025391,
 			["Background"] = {
 				["EdgeSize"] = 9,
+				["TileSize"] = 84,
 				["BorderTexture"] = "None",
 				["Color"] = {
 					["a"] = 0,
@@ -107,6 +107,7 @@ Omen3DB = {
 					["g"] = 0,
 					["r"] = 0,
 				},
+				["BarInset"] = 5,
 				["BorderColor"] = {
 					["a"] = 0,
 					["g"] = 0,
@@ -125,16 +126,17 @@ Omen3DB = {
 				["HideWhileResting"] = false,
 				["HideInPVP"] = false,
 			},
-			["VGrip1"] = 155.316689874038,
-			["PositionX"] = 428.618218069226,
-			["Warnings"] = {
-				["Sound"] = false,
-			},
+			["Autocollapse"] = true,
+			["VGrip1"] = 167.903474225209,
 			["TitleBar"] = {
 				["ShowTitleBar"] = false,
 				["FontSize"] = 12,
 				["Height"] = 18,
 			},
+			["Warnings"] = {
+				["Sound"] = false,
+			},
+			["PositionX"] = 428.618255615234,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {
@@ -191,11 +193,15 @@ Omen3DB = {
 				["PVP"] = true,
 				["HideInPVP"] = false,
 			},
-			["PositionH"] = 196.984924238223,
 			["VGrip1"] = 155.316689874038,
+			["PositionH"] = 196.984924238223,
 			["VGrip2"] = 155.316689874038,
 			["PositionY"] = 224.014660035749,
-			["PositionX"] = 451.131409021275,
+			["TitleBar"] = {
+				["ShowTitleBar"] = false,
+				["FontSize"] = 12,
+				["Height"] = 18,
+			},
 			["Warnings"] = {
 				["Sound"] = false,
 			},
@@ -216,11 +222,7 @@ Omen3DB = {
 				},
 				["Texture"] = "Solid",
 			},
-			["TitleBar"] = {
-				["ShowTitleBar"] = false,
-				["FontSize"] = 12,
-				["Height"] = 18,
-			},
+			["PositionX"] = 451.131409021275,
 			["Bar"] = {
 				["FontSize"] = 13,
 				["FontColor"] = {

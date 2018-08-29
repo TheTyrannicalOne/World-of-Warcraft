@@ -1,41 +1,7 @@
 
 OmniCC4Config = {
-	["version"] = "8.0.1",
 	["engine"] = "AniUpdater",
-	["groups"] = {
-		{
-			["id"] = "action",
-			["rules"] = {
-				"Action", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [1]
-		{
-			["id"] = "aura",
-			["rules"] = {
-				"Aura", -- [1]
-				"Buff", -- [2]
-				"Debuff", -- [3]
-				"PitBull", -- [4]
-			},
-			["enabled"] = true,
-		}, -- [2]
-		{
-			["id"] = "pet",
-			["rules"] = {
-				"PetActionButton", -- [1]
-			},
-			["enabled"] = true,
-		}, -- [3]
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [4]
-	},
+	["version"] = "8.0.1",
 	["groupSettings"] = {
 		["action"] = {
 			["enabled"] = true,
@@ -317,5 +283,39 @@ OmniCC4Config = {
 				},
 			},
 		},
+	},
+	["groups"] = {
+		{
+			["id"] = "action",
+			["rules"] = {
+				"Action", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [1]
+		{
+			["id"] = "aura",
+			["rules"] = {
+				"Aura", -- [1]
+				"Buff", -- [2]
+				"Debuff", -- [3]
+				"PitBull", -- [4]
+			},
+			["enabled"] = true,
+		}, -- [2]
+		{
+			["id"] = "pet",
+			["rules"] = {
+				"PetActionButton", -- [1]
+			},
+			["enabled"] = true,
+		}, -- [3]
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [4]
 	},
 }

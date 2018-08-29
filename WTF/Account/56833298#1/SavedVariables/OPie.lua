@@ -23,8 +23,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABuedqh1dvev",
 				}, -- [1]
 				["name"] = "Utilities",
-				["hotkey"] = "ALT-E",
 				["save"] = true,
+				["hotkey"] = "ALT-E",
 			},
 			["SpecMenu"] = {
 				{
@@ -125,8 +125,8 @@ OneRing_Config = {
 					["id"] = 2656,
 				}, -- [12]
 				["name"] = "Trade Skills",
-				["hotkey"] = "ALT-T",
 				["save"] = true,
+				["hotkey"] = "ALT-T",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,

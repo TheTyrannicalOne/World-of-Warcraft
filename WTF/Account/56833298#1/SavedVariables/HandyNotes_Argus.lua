@@ -1,10 +1,10 @@
 
-HandyNotesArgusDB = {
+HandyNotes_ArgusDB = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
-		["Default"] = {
+		["Shanyt - Argent Dawn"] = {
 		},
 	},
 }
