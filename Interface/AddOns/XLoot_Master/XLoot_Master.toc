@@ -1,0 +1,10 @@
+## Interface: 80000
+## Title: XLoot Master
+## Notes: Configurable Master Looter interface
+## Version: 8.0-5
+## Author: Xuerian, Dridzt
+## X-Category: Inventory
+
+## Dependencies: XLoot
+
+load.xml

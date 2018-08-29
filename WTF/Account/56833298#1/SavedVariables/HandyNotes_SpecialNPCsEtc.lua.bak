@@ -1,2 +1,0 @@
-
-HandyNotes_SpecialNPCsEtcDB = nil

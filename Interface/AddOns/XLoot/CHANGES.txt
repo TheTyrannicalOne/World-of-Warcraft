@@ -1,0 +1,10 @@
+lightweight tag c0a56103d1ff46259e491fc8748d9cb03b6a8651 8.0-5
+Author:	Xuerian <xuerian@gmail.com>
+Date:	Fri Aug 24 00:46:03 2018 -0400
+
+commit c0a56103d1ff46259e491fc8748d9cb03b6a8651
+Author: Xuerian <xuerian@gmail.com>
+Date:   Fri Aug 24 00:46:03 2018 -0400
+
+    Frame: Respect padding options when collapsing looted slots
+
