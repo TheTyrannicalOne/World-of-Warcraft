@@ -1,0 +1,12 @@
+## Interface: 80000
+## Author: Alhana
+## Version: 2.01
+## Title: |cff1784d1ElvUI|r |cff4beb2cThe AlhanaUI Edit|r
+## Notes: AlhanaUI
+## RequiredDeps: ElvUI, ElvUI_SLE
+## DefaultState: enabled
+
+media\sharedmedia.lua
+
+Code.lua
+

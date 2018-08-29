@@ -4,30 +4,8 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12833:Player-75-09AAA35F:1:8:28:18:4294967295:4294967295:4294967295:4294967295|h[Mythic: Freehold]|h|r!", -- [1]
-			"Nicedinosaur-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Nicedinosaur-TheScryers", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3, -- [11]
-			"Player-75-09AAA35F", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNicedinosaur-TheScryers|r",
-			[51] = 1535512053,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [1]
-		{
-			"Gratz", -- [1]
-			"Ozzypontiff-ArgentDawn", -- [2]
+			"anyone feel like doing some normal dungeons to help me gear for heroics?", -- [1]
+			"Payupsucka-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -36,20 +14,42 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			4, -- [11]
-			"Player-75-086AB147", -- [12]
+			2, -- [11]
+			"Player-75-055A8488", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffOzzypontiff|r",
-			[51] = 1535512060,
+			[52] = "|cffff7c0aPayupsucka|r",
+			[51] = 1535517078,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [1]
+		{
+			"guess not lol", -- [1]
+			"Payupsucka-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8, -- [11]
+			"Player-75-055A8488", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aPayupsucka|r",
+			[51] = 1535517166,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [2]
 		{
-			"grats name", -- [1]
-			"Hypnos-ArgentDawn", -- [2]
+			"we're in a mythic thats quick", -- [1]
+			"Linadra-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -58,16 +58,60 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			5, -- [11]
-			"Player-75-036AB6D6", -- [12]
+			9, -- [11]
+			"Player-75-058377F7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc41e3aHypnos|r",
-			[51] = 1535512061,
+			[52] = "|cffaad372Linadra|r",
+			[51] = 1535517175,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [3]
+		{
+			"sorry logging for bed soon :(.  have work tomorrow", -- [1]
+			"Kitsunee-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10, -- [11]
+			"Player-75-08C68846", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aKitsunee|r",
+			[51] = 1535517187,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [4]
+		{
+			"no worries", -- [1]
+			"Payupsucka-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			11, -- [11]
+			"Player-75-055A8488", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aPayupsucka|r",
+			[51] = 1535517192,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [5]
 	},
 }

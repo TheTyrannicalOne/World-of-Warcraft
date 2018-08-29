@@ -1,0 +1,40 @@
+﻿local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
+local L = AceLocale:NewLocale("ElvUI", "frFR");
+if not L then return; end
+-- Credits: Onii & Ckeurk, Updated by Alex
+L["Adds 2 digits in the coords"] = "Ajoute 2 chiffres dans les coordonnées"
+L["Adds 6 pixels at the Main Location Panel height."] = "Ajoute 6 pixels à la hauteur du panneau de localisation principal."
+L["Adjust All Panels Height."] = "Ajuste la hauteur des panneaux."
+L["Adjust the Location Panel Width."] = "Ajuste la largeur du cadre."
+L["All Panels Height"] = "Hauteur de tous les panneaux"
+L["AsphyxiaUI Style"] = true
+L["Auto Colorize"] = "Auto Colorize" -- Requires localization
+L["Auto resized Location Panel."] = "Auto resized Location Panel." -- Requires localization
+L["Auto width"] = "Largeur automatique"
+L[" by Benik (EU-Emerald Dream)"] = " par Benik (EU-Emerald Dream)"
+L["Choose font for the Location and Coords panels."] = "Choisissez la police pour l'emplacement et le panneau des Coordonnés."
+L["Coordinates"] = "Coordonnées"
+L["CtrlClick : "] = "Ctrl Clic :"
+L["Detailed Coords"] = "Coordonnées détaillées"
+L["Displays the main zone and the subzone in the location panel"] = "Afficher la zone principale et la sous-zone dans la panneau de localisation"
+L["Enable/Disable layout with shadows."] = "Activer / désactiver l'agencement avec les ombres."
+L["Enable/Disable transparent layout."] = "Activer / désactiver l'agencement avec la transparence."
+L[" is loaded. Thank you for using it."] = " est chargé. Merci de l'utiliser."
+L["Hides all panels background so you can place them on ElvUI's top or bottom panel."] = "Masque tous les panneaux de fond de sorte que vous pouvez les placer sur le panneau supérieur ou inférieur de ElvUI."
+L["Hide Blizzard Zone Text"] = true
+L["Larger Location Panel"] = "Panneau de localisation plus grand"
+L["Location Panel"] = "Location Panel"
+L["Location Lite"] = true
+L["Location Plus"] = true
+L["LocationLite adds a movable player location panel"] = "LocationPlus ajoute une barre amovible avec la position du joueur."
+L[".:: LocationPlus - LocationLite ::.\nIt's not wise to use both Plus and Lite versions."] = true
+L["\nPlease choose which one to disable."] = true
+L["Set the font size."] = "Définir la taille de la police."
+L["Shadows"] = "Ombres"
+L["Show/Hide all panels when in combat"] = "Afficher / cacher tous les panneaux en combat"
+L["Use Custom Location Color"] = "Utilise la couleur des emplacement personnalisé"
+L["Zone and Subzone"] = "Zone et sous-zone"
+L["Truncate text"] = true
+L["Truncates the text rather than auto enlarge the location panel when the text is bigger than the panel."] = true
+L["Update Timer"] = true
+L["Adjust coords updates (in seconds) to avoid cpu load. Bigger number = less cpu load. Requires reloadUI."] = true
