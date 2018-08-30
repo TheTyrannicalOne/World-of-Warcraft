@@ -15,3 +15,4 @@ LibDBIcon-1.0: enabled
 LibSharedMedia-3.0: enabled
 LibDeformat-3.0: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
+ElvUI_LocLite: disabled

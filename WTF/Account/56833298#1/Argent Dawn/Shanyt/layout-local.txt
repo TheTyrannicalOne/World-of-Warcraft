@@ -1,11 +1,4 @@
 Version: 1
-Frame: SkadaBarWindowSkada
-FrameLevel: 1
-Anchor: BOTTOM
-X: 418
-Y: 228
-W: 203
-H: 134
 Frame: ColorPickerFrame
 FrameLevel: 1
 Anchor: CENTER

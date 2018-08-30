@@ -34,6 +34,13 @@ Known Bugs:
 		
 CHANGELOG:
 
+20180828 - 2.14
+	Fixed notifications for rings and trinkets where the loot is an upgrade for one slot but not the other
+	Fixed trinket recommendations to pay attention to primary attributes
+	
+20180828 - 2.13
+	Fixed version notification
+	
 20180828 - 2.12
     Added azerite armor back into evaluations since Blizzard is allowing Azerite armor to be traded
 	
@@ -663,7 +670,6 @@ local function IsEquippableItemForCharacter(fullItemInfo, characterName)
 	local characterClass
 	local characterSpec
 	local characterLevel
-
 	if fullItemInfo ~= nil and characterName ~= nil and fullItemInfo[FII_IS_EQUIPPABLE] then
 		if IsPlayer(characterName) then
 			_, characterClass = UnitClass('player')
@@ -700,7 +706,8 @@ local function IsEquippableItemForCharacter(fullItemInfo, characterName)
 			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_HOLDABLE' or
 			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_RANGED' or
 			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_THROWN' or
-			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_RANGEDRIGHT' then
+			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_RANGEDRIGHT' or
+			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_TRINKET' then
 			
 			local itemPrimaryAttribute = GetItemPrimaryAttribute(fullItemInfo[FII_ITEM])
 			if itemPrimaryAttribute ~= nil then
@@ -815,7 +822,8 @@ end
 
 -- returns two variables:  true if the item is an upgrade over equippedItem (based on ilvl), equipped ilvl
 -- note: doesn't check if item is equippable, so make sure you do that check beforehand
-local function IsAnUpgradeForCharacter(fullItemInfo, characterName, threshold)
+-- both parameter:  if true, return true for rings/trinkets only if it's an upgrade for both slots
+local function IsAnUpgradeForCharacter(fullItemInfo, characterName, threshold, both)
 	local itemEquipLoc = fullItemInfo[FII_ITEM_EQUIP_LOC]
 	local itemRealILVL = fullItemInfo[FII_REAL_ILVL]
 
@@ -848,7 +856,11 @@ local function IsAnUpgradeForCharacter(fullItemInfo, characterName, threshold)
 			if equippedItem2 ~= nil then
 				isAnUpgrade1, equippedILVL1 = IsAnUpgrade(itemRealILVL, equippedItem1[FII_REAL_ILVL], threshold)
 				isAnUpgrade2, equippedILVL2 = IsAnUpgrade(itemRealILVL, equippedItem2[FII_REAL_ILVL], threshold)
-				isAnUpgrade1 = isAnUpgrade1 or isAnUpgrade2
+				if both then
+					isAnUpgrade1 = isAnUpgrade1 and isAnUpgrade2
+				else
+					isAnUpgrade1 = isAnUpgrade1 or isAnUpgrade2
+				end
 				equippedILVL1 = min(equippedILVL1, equippedILVL2)
 			else
 				isAnUpgrade1, equippedILVL1 = IsAnUpgrade(itemRealILVL, equippedItem1[FII_REAL_ILVL], threshold)
@@ -2046,7 +2058,7 @@ local function PerformNotify(fullItemInfo, looterName)
 	if ShouldBeEvaluated(fullItemInfo) then
 		if IsPlayer(looterName) then
 --			local isTradeable = fullItemInfo[FII_TRADE_TIME_WARNING_SHOWN] or not IsAnUpgradeForCharacter(fullItemInfo, looterName)
-			local isTradeable = not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0)
+			local isTradeable = not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0, true)
 			if isTradeable then
 
 				local isAnUpgradeForAnyCharacter, isAnUpgradeForAnyCharacterNames = IsAnUpgradeForAnyCharacter(fullItemInfo)
@@ -2065,7 +2077,7 @@ local function PerformNotify(fullItemInfo, looterName)
 					end
 				end			
 			end
-		elseif not IsPLHUser(looterName) and fullItemInfo[FII_BIND_TYPE] ~= LE_ITEM_BIND_ON_EQUIP and not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0) then
+		elseif not IsPLHUser(looterName) and fullItemInfo[FII_BIND_TYPE] ~= LE_ITEM_BIND_ON_EQUIP and not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0, true) then
 			if shouldAddLootedItem(fullItemInfo) then
 				AddLootedItem(fullItemInfo, looterName)
 				UpdateLootedItemsDisplay()
