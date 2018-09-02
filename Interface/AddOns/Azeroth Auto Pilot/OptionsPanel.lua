@@ -432,7 +432,10 @@ function AAP.LoadOptionsFrame()
 		AAP_ArrowActive = 0
 		AAP_ArrowActive_X = 0
 		AAP_ArrowActive_Y = 0
-		AAP.UpdateQuestList()
+		QNumberLocal = 0
+		AAP.BookingList["AAP.SetQPTT"] = 1
+		AAP.BookingList["AAP_UpdateQuestList"] = 1
+		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
 	end)
 
 

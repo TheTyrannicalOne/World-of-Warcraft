@@ -22,6 +22,7 @@ AAP = {}
 AAP.Version = tonumber(GetAddOnMetadata("Azeroth Auto Pilot", "Version"))
 AAP_BlockShared = {}
 AAP_GossipOpen = 0
+QNumberLocal = 0
 AAP_NPCList = {}
 AAP_UPDQListV = -1
 AAP_UPDQListV2 = 5

@@ -476,6 +476,7 @@ function AAP.UpdateQuestList()
 			end
 			AAP.QuestList.QuestFrames[ars]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[ars]:Show()
+
 			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 		if (AAP.ActiveStuff and AAP.ActiveStuff["Totemdmg"]) then

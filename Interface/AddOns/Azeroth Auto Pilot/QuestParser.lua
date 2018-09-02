@@ -219,11 +219,13 @@ function AAP.UseFP()
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (IsQuestFlaggedCompleted(AAP.ActiveStuff["UseFlightPath"]) == true) then
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 	if (AAP_Reset == 0) then
 		AAP_Reset = 1
@@ -248,6 +250,7 @@ function AAP.AskQline()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 end
 function AAP.QAskPopQline(AAP_answer)
@@ -258,6 +261,7 @@ function AAP.QAskPopQline(AAP_answer)
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	else
 		AAP.QuestList.SugQuestFrame2:Hide()
 		AAP.RemoveQWatch(AAP.ActiveStuff["AskQuestLine"])
@@ -266,6 +270,7 @@ function AAP.QAskPopQline(AAP_answer)
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 end
 function AAP.QAskPopWanted()
@@ -275,12 +280,14 @@ function AAP.QAskPopWanted()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 		AAP.QuestList.SugQuestFrame:Hide()
 	elseif (AAP.ActiveStuff["QuestLineSkip"] and AAP1[AAP.Realm][AAP.Name]["QlineSkip"][AAP.ActiveStuff["QuestLineSkip"]] and AAP1[AAP.Realm][AAP.Name]["QlineSkip"][AAP.ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	else
 		local SugGroupNr = AAP.ActiveStuff["Group"]
 		AAP.QuestList.SugQuestFrameFS1:SetText(AAP_Locals["Optional"])
@@ -297,6 +304,7 @@ function AAP.QAskPopWantedAsk(AAP_answer)
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	else
 		AAP.QuestList.SugQuestFrame:Hide()
 		AAP.RemoveQWatch(AAP.ActiveStuff["QaskPopup"])
@@ -305,6 +313,7 @@ function AAP.QAskPopWantedAsk(AAP_answer)
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 end
 function AAP.SkipBonusObjective(AAP_NrClicked)
@@ -320,11 +329,13 @@ function AAP.DropQuest()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (AAP_ActiveQuests[zdrop]) then
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 	if (AAP_Reset == 0) then
 		AAP_Reset = 1
@@ -337,6 +348,7 @@ function AAP.SetHS()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 	if (AAP_Reset == 0) then
 		AAP_Reset = 1
@@ -349,6 +361,7 @@ function AAP.UseHS()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 	if (AAP_Reset == 0) then
 		AAP_Reset = 1
@@ -361,6 +374,7 @@ function AAP.UseDalaHS()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 
 	local sta1, sta2 = GetItemCooldown(140192)
@@ -370,6 +384,7 @@ function AAP.UseDalaHS()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 	if (AAP_Reset == 0) then
 		AAP_Reset = 1
@@ -390,6 +405,7 @@ function AAP.Pickup()
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		QNumberLocal = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
@@ -406,6 +422,7 @@ function AAP.Pickup()
 			QNumberLocal = 0
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 			Zdedaap = 1
 		else
 			if (AAP.ActiveStuff["ETA"]) then
@@ -426,6 +443,7 @@ function AAP.Pickup()
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (AAP.ActiveZone and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] and AAP.ActiveStuff and AAP.ActiveStuff["LoaPick"]) then
 		if (AAP_ActiveQuests[47440]) then
 			AAP1[AAP.Realm][AAP.Name]["LoaPick"] = 1
@@ -434,6 +452,7 @@ function AAP.Pickup()
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		elseif (AAP_ActiveQuests[47439]) then
 			AAP1[AAP.Realm][AAP.Name]["LoaPick"] = 2
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
@@ -441,18 +460,21 @@ function AAP.Pickup()
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 	elseif (AAP.ActiveZone and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] and AAP.ActiveStuff["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP.Realm][AAP.Name]["QlineSkip"][AAP.ActiveStuff["QuestLineSkip"]] and AAP1[AAP.Realm][AAP.Name]["QlineSkip"][AAP.ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (AAP.ActiveZone and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] and AAP.ActiveStuff["GroupTask"] and Zdedaap == 0) then
 		if (AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] and AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 	end
 	if (AAP_Reset == 0) then
@@ -474,6 +496,7 @@ function AAP.Pickup2()
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		QNumberLocal = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
@@ -490,6 +513,7 @@ function AAP.Pickup2()
 			QNumberLocal = 0
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 			Zdedaap = 1
 		else
 			if (AAP.ActiveStuff["ETA"]) then
@@ -510,6 +534,7 @@ function AAP.Pickup2()
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (AAP.ActiveZone and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] and AAP.ActiveStuff and AAP.ActiveStuff["LoaPick"]) then
 		if (AAP_ActiveQuests[47440]) then
 			AAP1[AAP.Realm][AAP.Name]["LoaPick"] = 1
@@ -518,6 +543,7 @@ function AAP.Pickup2()
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		elseif (AAP_ActiveQuests[47439]) then
 			AAP1[AAP.Realm][AAP.Name]["LoaPick"] = 2
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
@@ -525,18 +551,21 @@ function AAP.Pickup2()
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 	elseif (AAP.ActiveStuff["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP.Realm][AAP.Name]["QlineSkip"][AAP.ActiveStuff["QuestLineSkip"]] and AAP1[AAP.Realm][AAP.Name]["QlineSkip"][AAP.ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (AAP.ActiveStuff["GroupTask"] and Zdedaap == 0) then
 		if (AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] and AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 	end
 	if (AAP_Reset == 0) then
@@ -564,6 +593,7 @@ function AAP.QuestPartPartStep()
 			AAP_Reset = 0
 			Zdedaap = 1
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		elseif (AAP.ActiveStuff and AAP.ActiveStuff["QpartPart"]) then
 			for AAP_index,AAP_value in pairs(AAP.ActiveStuff["QpartPart"]) do
 				for AAP_index2,AAP_value2 in pairs(AAP_value) do
@@ -575,6 +605,7 @@ function AAP.QuestPartPartStep()
 								AAP_Reset = 0
 								Zdedaap = 1
 								AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+								AAP.BookingList["AAP.SetQPTT"] = 1
 							end
 						end
 					end
@@ -586,12 +617,14 @@ function AAP.QuestPartPartStep()
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		elseif (AAP.ActiveStuff["GroupTask"] and Zdedaap == 0) then
 			if (AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] and AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] == 0) then
 				QNumberLocal = 0
 				AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 				AAP_Reset = 0
 				AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+				AAP.BookingList["AAP.SetQPTT"] = 1
 			end
 		end
 		AAP.BookingList["AAP.SetQPTT"] = 1
@@ -624,6 +657,7 @@ function AAP.QuestPartStep()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
@@ -648,6 +682,7 @@ function AAP.QuestPartStep()
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		else
 			if (AAP.ActiveStuff["ETA"]) then
 				if (AAP_AfkTable and AAP_AfkTable[AAP.ActiveZone] and AAP_AfkTable[AAP.ActiveZone][AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone]]) then
@@ -664,12 +699,14 @@ function AAP.QuestPartStep()
 					AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 					AAP_Reset = 0
 					AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+					AAP.BookingList["AAP.SetQPTT"] = 1
 			elseif (AAP.ActiveStuff["GroupTask"]) then
 				if (AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] and AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] == 0) then
 					QNumberLocal = 0
 					AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 					AAP_Reset = 0
 					AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+					AAP.BookingList["AAP.SetQPTT"] = 1
 				end
 			end
 		end
@@ -756,6 +793,7 @@ function AAP.QuestPartStep2()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
@@ -780,6 +818,7 @@ function AAP.QuestPartStep2()
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		else
 			if (AAP.ActiveStuff["ETA"]) then
 				if (AAP_AfkTable and AAP_AfkTable[AAP.ActiveZone] and AAP_AfkTable[AAP.ActiveZone][AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone]]) then
@@ -796,12 +835,14 @@ function AAP.QuestPartStep2()
 					AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 					AAP_Reset = 0
 					AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+					AAP.BookingList["AAP.SetQPTT"] = 1
 			elseif (AAP.ActiveStuff["GroupTask"]) then
 				if (AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] and AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] == 0) then
 					QNumberLocal = 0
 					AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 					AAP_Reset = 0
 					AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+					AAP.BookingList["AAP.SetQPTT"] = 1
 				end
 			end
 		end
@@ -955,6 +996,7 @@ function AAP.Done()
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 	end
 	if (AAP1 and AAP1[AAP.Realm] and AAP1[AAP.Realm][AAP.Name] and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone]) then
@@ -1002,12 +1044,14 @@ function AAP.Done2()
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (AAP1 and AAP1[AAP.Realm] and AAP1[AAP.Realm][AAP.Name] and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] and AAP.ActiveStuff["GroupTask"]) then
 		if (AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] and AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 	end
 	if (AAP1 and AAP1[AAP.Realm] and AAP1[AAP.Realm][AAP.Name] and AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone]) then
@@ -1053,12 +1097,14 @@ function AAP.CRange(AAP_TrigCR)
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	elseif (AAP.ActiveStuff["GroupTask"]) then
 		if (AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] and AAP1[AAP.Realm][AAP.Name]["WantedQuestList"][AAP.ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 			dderpzzaap = 1
 		end
 	end
@@ -1106,6 +1152,7 @@ function AAP.TestCranges()
 						QNumberLocal = 0
 						AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 						AAP_Reset = 0
+						AAP.BookingList["AAP.SetQPTT"] = 1
 					end
 				elseif (AAP.QuestList[AAP.ActiveZone][plusnr]["PickUp"]) then
 					local aap_t1 = 0
@@ -1125,6 +1172,7 @@ function AAP.TestCranges()
 						QNumberLocal = 0
 						AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 						AAP_Reset = 0
+						AAP.BookingList["AAP.SetQPTT"] = 1
 					end
 
 				end
@@ -1694,6 +1742,7 @@ function AAP.MissionProgress()
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+		AAP.BookingList["AAP.SetQPTT"] = 1
 	end
 end
 function AAP.TrimPlayerServer(CLPName)
@@ -1750,16 +1799,19 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 						QNumberLocal = 0
 						AAP_Reset = 0
 						AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+						AAP.BookingList["AAP.SetQPTT"] = 1
 					elseif (spellzid and (AAP.ActiveStuff["ExtraLine"] == 9) and (spellzid == 272119)) then
 						AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 						QNumberLocal = 0
 						AAP_Reset = 0
 						AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+						AAP.BookingList["AAP.SetQPTT"] = 1
 					elseif (spellzid and (AAP.ActiveStuff["ExtraLine"] == 24) and (spellzid == 273779)) then
 						AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 						QNumberLocal = 0
 						AAP_Reset = 0
 						AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+						AAP.BookingList["AAP.SetQPTT"] = 1
 					end
 				end
 			end
@@ -1938,12 +1990,14 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 						AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 						AAP_Reset = 0
 						AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+						AAP.BookingList["AAP.SetQPTT"] = 1
 					elseif (AAP.ActiveStuff["Gossip"] == 102) then
 						SelectGossipOption(1)
 						QNumberLocal = 0
 						AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 						AAP_Reset = 0
 						AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+						AAP.BookingList["AAP.SetQPTT"] = 1
 					else
 						AAP_GossipOpen = 0
 						SelectGossipOption(AAP.ActiveStuff["Gossip"])
@@ -2040,6 +2094,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 			AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveZone] + 1
 			AAP_Reset = 0
 			AAP.BookingList["AAP_Plus"] = "AAP_Plus"
+			AAP.BookingList["AAP.SetQPTT"] = 1
 		end
 		if (UnitGUID("target")) then
 			local guid = UnitGUID("target")
