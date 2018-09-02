@@ -14,7 +14,7 @@ Omen3DB = {
 				["BorderTexture"] = "Blizzard Tooltip",
 				["Texture"] = "Blizzard Dialog Background",
 			},
-			["Shown"] = true,
+			["Shown"] = false,
 			["MinimapIcon"] = {
 				["minimapPos"] = 345.518259069873,
 			},

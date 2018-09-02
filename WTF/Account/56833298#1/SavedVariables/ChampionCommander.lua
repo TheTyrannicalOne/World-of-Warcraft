@@ -5,11 +5,11 @@ dbBFA = {
 			["firstun"] = false,
 		},
 	},
-	["global"] = {
-		["firstrun"] = false,
-	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Default",
+	},
+	["global"] = {
+		["firstrun"] = false,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -33,8 +33,8 @@ dbBFA = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["MAXCHAMP"] = 3,
 				["TROOPALERT"] = true,
+				["MAXCHAMP"] = 3,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},

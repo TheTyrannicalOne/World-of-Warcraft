@@ -13,9 +13,8 @@ MADB = {
 					["orgPos"] = {
 						"TOP", -- [1]
 						"UIParent", -- [2]
-						"TOP", -- [3]
+						0, -- [3]
 						0, -- [4]
-						0, -- [5]
 					},
 					["name"] = "BagItemTooltipMover",
 					["pos"] = {
@@ -30,9 +29,8 @@ MADB = {
 					["orgPos"] = {
 						"TOP", -- [1]
 						"UIParent", -- [2]
-						"TOP", -- [3]
+						0, -- [3]
 						0, -- [4]
-						0, -- [5]
 					},
 					["name"] = "GuildBankItemTooltipMover",
 					["pos"] = {
@@ -49,7 +47,7 @@ MADB = {
 						"RightChatToggleButton", -- [2]
 						"BOTTOMRIGHT", -- [3]
 						0, -- [4]
-						0, -- [5]
+						535.000061035156, -- [5]
 					},
 					["name"] = "TooltipMover",
 					["pos"] = {

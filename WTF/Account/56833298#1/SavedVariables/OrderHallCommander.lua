@@ -5,12 +5,16 @@ dbOHC = {
 			["firstun"] = false,
 		},
 	},
-	["global"] = {
-		["warn03_seen"] = 2,
-		["firstrun"] = false,
-	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Default",
+	},
+	["global"] = {
+		["warn01_seen"] = 0,
+		["warn03_seen"] = 3,
+		["news"] = {
+		},
+		["warn02_seen"] = 0,
+		["firstrun"] = false,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -34,11 +38,12 @@ dbOHC = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["MAXCHAMP"] = 3,
 				["TROOPALERT"] = true,
+				["MAXCHAMP"] = 3,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
+			["showmenu"] = true,
 		},
 	},
 }

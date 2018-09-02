@@ -1180,7 +1180,8 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			SLASH_AAP_Cmd1 = "/aap"
 
 			AAP_ArrowFrame:SetScale(AAP1[AAP.Realm][AAP.Name]["Settings"]["ArrowScale"])
-
+			local aapawidth = AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"]
+			local aapatop = AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"]
 			AAP_ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
 			AAP.MakeQuestList()
 	
@@ -1453,6 +1454,12 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			AAP_ArrowEventLoadinT.anim:SetDuration(3)
 			AAP_ArrowEventLoadinT:SetLooping("REPEAT")
 			AAP_ArrowEventLoadinT:SetScript("OnLoop", function(self, event, ...)
+				if ((aapawidth > GetScreenWidth()) or (aapawidth < 0) or (aapatop > 0) or (aapatop < -GetScreenHeight())) then
+					print("AAP - Error: Arrow Out of Screen. Moving it")
+					AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"] = 150
+					AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"] = -150
+					AAP_ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
+				end
 				AAP.CreateMacro()
 				AAP.UpdateILVLGear()
 				AAP_ArrowEventLoadinT:Stop()

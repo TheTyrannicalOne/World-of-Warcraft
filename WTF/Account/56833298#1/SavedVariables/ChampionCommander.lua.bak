@@ -5,16 +5,17 @@ dbBFA = {
 			["firstun"] = false,
 		},
 	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
-	},
 	["global"] = {
 		["firstrun"] = false,
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["toggles"] = {
 				["ELITEOVERCAP"] = true,
+				["SPARE"] = false,
 				["SORTMISSION"] = "Garrison_SortMissions_Original",
 				["NEVERKILLTROOPS"] = false,
 				["MAKEITVERYQUICK"] = false,
@@ -24,7 +25,6 @@ dbBFA = {
 				["USEALLY"] = false,
 				["SAVETROOPS"] = false,
 				["IGNOREINACTIVE"] = true,
-				["SPARE"] = false,
 				["BONUS"] = true,
 				["SORTMISSION2"] = "Garrison_SortMissions_Original",
 				["BONUSCHANCE"] = 100,
@@ -33,8 +33,8 @@ dbBFA = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["TROOPALERT"] = true,
 				["MAXCHAMP"] = 3,
+				["TROOPALERT"] = true,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},

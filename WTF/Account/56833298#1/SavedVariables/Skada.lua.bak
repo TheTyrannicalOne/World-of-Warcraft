@@ -43,18 +43,6 @@ SkadaDB = {
 				{
 					["barslocked"] = true,
 					["y"] = 0,
-					["barfont"] = "PT Sans Narrow",
-					["name"] = "Damage",
-					["background"] = {
-						["height"] = 178.999938964844,
-					},
-					["point"] = "BOTTOMRIGHT",
-					["roleicons"] = true,
-					["mode"] = "Damage",
-					["spark"] = false,
-					["bartexture"] = "BuiOnePixel",
-					["barwidth"] = 218.333526611328,
-					["modeincombat"] = "Damage",
 					["x"] = -224.99853515625,
 					["title"] = {
 						["color"] = {
@@ -66,6 +54,18 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
+					["background"] = {
+						["height"] = 178.999938964844,
+					},
+					["point"] = "BOTTOMRIGHT",
+					["roleicons"] = true,
+					["mode"] = "Damage",
+					["spark"] = false,
+					["bartexture"] = "BuiOnePixel",
+					["barwidth"] = 218.333526611328,
+					["modeincombat"] = "Damage",
+					["barfont"] = "PT Sans Narrow",
+					["name"] = "Damage",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -90,8 +90,6 @@ SkadaDB = {
 					["snapto"] = true,
 					["x"] = 0,
 					["point"] = "BOTTOMRIGHT",
-					["bartexture"] = "BuiOnePixel",
-					["spark"] = false,
 					["buttons"] = {
 						["segment"] = true,
 						["menu"] = true,
@@ -99,6 +97,8 @@ SkadaDB = {
 						["report"] = true,
 						["reset"] = true,
 					},
+					["spark"] = false,
+					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 223.83366394043,
 					["barspacing"] = 0,
 					["title"] = {

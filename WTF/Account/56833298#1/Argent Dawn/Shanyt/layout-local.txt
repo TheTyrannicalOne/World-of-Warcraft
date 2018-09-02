@@ -27,10 +27,3 @@ X: 0
 Y: -100
 W: 130
 H: 20
-Frame: MAMover1
-FrameLevel: 403
-Anchor: RIGHT
-X: 0
-Y: -100
-W: 130
-H: 20
