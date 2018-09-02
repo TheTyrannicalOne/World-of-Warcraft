@@ -1,9 +1,9 @@
 [Welcome to TradeSkillMaster 4!](https://blog.tradeskillmaster.com/tradeskillmaster-4-released/)
 
 
-## v4.2.1 Changes
+## v4.2.2 Changes
 
-* Fixed bug with posting not working since Blizzard's recent hotfix
-* Fixed issue with the bank tab of the inventory viewer not including the reagent bank
+* Fixed sorting of the crafting queue and made it significantly less laggy to scroll through and load
+* Fixed bug with posting of caged pets
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

@@ -5,7 +5,6 @@ TODOs:
 	Add legacy coordinate rolls mode back?
 	Remove whisper/ms/os/xmog prompts right away when players leave group?  (ex: end of lfr)
 	When offering loot, show how many people are eligible and keep track of who still may roll?
-	Bug with people being shown pass/whisper instead of keep/offer when looting...may be related to cyrillic names?  or same name from different realms in IsPlayer()?
 	Bug - whisper message doesn't allow special characters
 	Don't show PLH UI if group is using RCLootCouncil
 	Do something special when multiple of same item drop?  i.e. tell looter that [name] offered a duplicate of this item to [name]?
@@ -34,6 +33,9 @@ Known Bugs:
 		
 CHANGELOG:
 
+20180830 - 2.15
+	Fixed issue some player were having where they were shown pass/whisper buttons instead of keep/offer buttons for their own loot
+	
 20180828 - 2.14
 	Fixed notifications for rings and trinkets where the loot is an upgrade for one slot but not the other
 	Fixed trinket recommendations to pay attention to primary attributes

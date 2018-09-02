@@ -1,4 +1,8 @@
 # Changelog
+## Changed in v7 (beta)
+
+*added other languages (I thought there would be a fall back)
+
 ## Changed in v6 (beta)
 
 *fixed messed up notes from Achievement "Dune Rider"

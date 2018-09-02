@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 91006
+local MINOR_VERSION = 91007
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -171,7 +171,9 @@ local function SkillInitialize(self, elapsed)
                     TradeSkillFrame:SetPoint(unpack(point));
                 end
             end
-            UIPanelWindows["TradeSkillFrame"] = self.tsfpanel
+            if self.tsfpanel then
+                UIPanelWindows["TradeSkillFrame"] = self.tsfpanel
+            end
             self.tsfpanel = nil
             self.tsfpos = nil
             self:Hide()

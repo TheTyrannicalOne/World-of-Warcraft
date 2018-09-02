@@ -1,4 +1,9 @@
-﻿Version 1.9.14
+﻿Version 1.9.15
+- Draenor special baits are working again
+- Handle who does what when better for auto-looting setting interactions
+- Some code cleanup that might fix the "disappearing tradeskill window" bug
+
+Version 1.9.14
 - Add knowledge of fishing skills for Zandalar. For the Horde!
 
 Version 1.9.13

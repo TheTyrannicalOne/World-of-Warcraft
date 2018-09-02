@@ -74,6 +74,7 @@ AAP_Locals = {
 	["Show Arrow"] = "Show Arrow",
 	["Show QuestList"] = "Show QuestList",
 	["Missing quest"] = "If you get stuck with 1 quest to pick up, do: /aap skipcamp",
+	["Auto-selection of dialog"] = "Auto-selection of dialog",
 }
 AAP_Locals["zhTW"] = {
 	["Accept Quest"] = "接受任務",

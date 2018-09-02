@@ -1,4 +1,4 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_BfA-Achievments", "enUS")
+local L = LibStub("AceLocale-3.0"):NewLocale("HandyNotes_BfA-Achievments", "enUS", true)
 if not L then return end
 
 -- Settings
