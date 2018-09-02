@@ -1,5 +1,8 @@
 
 RCLootCouncilDB = {
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+	},
 	["global"] = {
 		["log"] = {
 			"08/29/18", -- [1]
@@ -302,12 +305,21 @@ RCLootCouncilDB = {
 			"11:22:31 - GetPlayersGuildRank()", -- [298]
 			"11:22:31 - Found Guild Rank: Ahroun", -- [299]
 			"11:22:32 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [300]
+			"09/02/18", -- [301]
+			"11:27:38 - Logged In", -- [302]
+			"11:27:38 - ML initialized!", -- [303]
+			"11:27:38 - TradeUI enabled", -- [304]
+			"11:27:47 - Shanyt-ArgentDawn (2.8.3) (nil)", -- [305]
+			"11:27:47 - ActivateSkin (new_blue)", -- [306]
+			"11:27:54 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [307]
+			"11:27:54 - GetML()", -- [308]
+			"11:27:54 - UpdatePlayersData()", -- [309]
+			"11:27:56 - GetPlayersGuildRank()", -- [310]
+			"11:27:56 - Found Guild Rank: Ahroun", -- [311]
+			"11:27:56 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [312]
 		},
 		["version"] = "2.8.3",
 		["locale"] = "enUS",
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

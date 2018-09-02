@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local CH, LO = SLE:GetElvModules("Chat", "Layout")
 local C = SLE:NewModule("Chat",  'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0')
 --GLOBALS:  UIParent, LeftChatPanel, LeftChatDataPanel, LeftChatToggleButton, LeftChatTab, RightChatPanel,
@@ -213,6 +213,8 @@ local function ChatPanels()
 		SLE:SetMoverPosition("RightChatMover", "BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", 0, 19 + E.Spacing*2)
 		E:SetMoversPositions()
 	end
+	LeftChatToggleButton:ClearAllPoints()
+	RightChatToggleButton:ClearAllPoints()
 	LeftChatToggleButton:Point('BOTTOMLEFT', LeftChatPanel, 'BOTTOMLEFT', 0, -(19 + E.Spacing*2))
 	RightChatToggleButton:Point('BOTTOMRIGHT', RightChatPanel, 'BOTTOMRIGHT', 0, -(19 + E.Spacing*2))
 
@@ -327,6 +329,7 @@ function C:Initialize()
 	end
 
 	hooksecurefunc(LO, "ToggleChatPanels", ChatPanels)
+	hooksecurefunc(LO, "RepositionChatDataPanels", ChatPanels)
 	hooksecurefunc(CH, "PositionChat", PositionChat)
 	hooksecurefunc(CH, "StyleChat", Style)
 	hooksecurefunc(E, "UpdateMedia", ChatTextures)

@@ -1,6 +1,9 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
+		"/omen", -- [1]
+		"/omen config", -- [2]
+		"/omen show", -- [3]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -1653,5 +1656,27 @@ ElvCharacterDB = {
 			[51] = 1535899585,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [75]
+		{
+			" : )", -- [1]
+			"Lurious", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			18, -- [11]
+			"Player-75-05CBF797", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Lurious|r",
+			[51] = 1535902959,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [76]
 	},
 }

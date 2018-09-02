@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local EDB = E:GetModule('DataBars')
 local DB = SLE:GetModule("DataBars")
 local FACTION, REPUTATION, SCENARIO_BONUS_LABEL = FACTION, REPUTATION, SCENARIO_BONUS_LABEL
@@ -93,8 +93,17 @@ local function configTable()
 						get = function(info) return E.db.sle.databars.rep.autotrack end,
 						set = function(info, value) E.db.sle.databars.rep.autotrack = value; end,
 					},
-					chatfilters = {
+					ignoreGuild = {
 						order = 4,
+						type = "toggle",
+						name = L["Ignore Guild Reputation"],
+						desc = L["Ignore guild reputation gains when autotracking."],
+						disabled = function() return not E.db.sle.databars.rep.autotrack end,
+						get = function(info) return E.db.sle.databars.rep.ignoreGuild end,
+						set = function(info, value) E.db.sle.databars.rep.ignoreGuild = value; end,
+					},
+					chatfilters = {
+						order = 5,
 						type = "group",
 						guiInline = true,
 						name = L["Chat Filters"],
