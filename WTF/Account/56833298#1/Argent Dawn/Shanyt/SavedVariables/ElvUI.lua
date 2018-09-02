@@ -135,5 +135,115 @@ ElvCharacterDB = {
 			[51] = 1535518904,
 			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [6]
+		{
+			"Heya! Looking for a guild ? ''The Armored Cobras'' will make you feel like you're with family. We do quests, dungeons & raids together. Want to join ?", -- [1]
+			"Malliwar-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Malliwar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1954, -- [11]
+			"Player-75-0BB5A778", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dMalliwar|r",
+			[51] = 1535894991,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [7]
+		{
+			"Heya! Looking for a guild ? ''The Armored Cobras'' will make you feel like you're with family. We do quests, dungeons & raids together. Want to join ?", -- [1]
+			"Malliwar-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Malliwar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1958, -- [11]
+			"Player-75-0BB5A778", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dMalliwar|r",
+			[51] = 1535895202,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [8]
+		{
+			"Heya! Looking for a guild ? ''The Armored Cobras'' will make you feel like you're with family. We do quests, dungeons & raids together. Want to join ?", -- [1]
+			"Malliwar-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Malliwar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1972, -- [11]
+			"Player-75-0BB5A778", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dMalliwar|r",
+			[51] = 1535895709,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [9]
+		{
+			"Heya! Looking for a guild ? ''The Armored Cobras'' will make you feel like you're with family. We do quests, dungeons & raids together. Want to join ?", -- [1]
+			"Malliwar-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Malliwar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			1994, -- [11]
+			"Player-75-0BB5A778", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dMalliwar|r",
+			[51] = 1535896048,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [10]
+		{
+			"Heya! Looking for a guild ? ''The Armored Cobras'' will make you feel like you're with family. We do quests, dungeons & raids together. Want to join ?", -- [1]
+			"Malliwar-ArgentDawn", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Malliwar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			2010, -- [11]
+			"Player-75-0BB5A778", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dMalliwar|r",
+			[51] = 1535896353,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [11]
 	},
 }
