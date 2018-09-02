@@ -1,5 +1,8 @@
 
 RCLootCouncilDB = {
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+	},
 	["global"] = {
 		["log"] = {
 			"08/29/18", -- [1]
@@ -302,12 +305,45 @@ RCLootCouncilDB = {
 			"11:22:31 - GetPlayersGuildRank()", -- [298]
 			"11:22:31 - Found Guild Rank: Ahroun", -- [299]
 			"11:22:32 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [300]
+			"09/02/18", -- [301]
+			"11:27:38 - Logged In", -- [302]
+			"11:27:38 - ML initialized!", -- [303]
+			"11:27:38 - TradeUI enabled", -- [304]
+			"11:27:47 - Shanyt-ArgentDawn (2.8.3) (nil)", -- [305]
+			"11:27:47 - ActivateSkin (new_blue)", -- [306]
+			"11:27:54 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [307]
+			"11:27:54 - GetML()", -- [308]
+			"11:27:54 - UpdatePlayersData()", -- [309]
+			"11:27:56 - GetPlayersGuildRank()", -- [310]
+			"11:27:56 - Found Guild Rank: Ahroun", -- [311]
+			"11:27:56 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [312]
+			"09/02/18", -- [313]
+			"12:14:45 - Logged In", -- [314]
+			"12:14:45 - ML initialized!", -- [315]
+			"12:14:45 - TradeUI enabled", -- [316]
+			"12:14:54 - Shanyt-ArgentDawn (2.8.3) (nil)", -- [317]
+			"12:14:54 - ActivateSkin (new_blue)", -- [318]
+			"12:15:01 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [319]
+			"12:15:01 - GetML()", -- [320]
+			"12:15:01 - UpdatePlayersData()", -- [321]
+			"12:15:03 - GetPlayersGuildRank()", -- [322]
+			"12:15:03 - Found Guild Rank: Ahroun", -- [323]
+			"12:15:03 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [324]
+			"09/02/18", -- [325]
+			"12:16:17 - Logged In", -- [326]
+			"12:16:17 - ML initialized!", -- [327]
+			"12:16:17 - TradeUI enabled", -- [328]
+			"12:16:25 - Shanyt-ArgentDawn (2.8.3) (nil)", -- [329]
+			"12:16:25 - ActivateSkin (new_blue)", -- [330]
+			"12:16:32 - Event: (PLAYER_ENTERING_WORLD) (true) (false)", -- [331]
+			"12:16:32 - GetML()", -- [332]
+			"12:16:32 - UpdatePlayersData()", -- [333]
+			"12:16:34 - GetPlayersGuildRank()", -- [334]
+			"12:16:34 - Found Guild Rank: Ahroun", -- [335]
+			"12:16:34 - Comm received:^1^SverTest^T^N1^S2.8.3^t^^ (from:) (Shanyt) (distri:) (GUILD)", -- [336]
 		},
 		["version"] = "2.8.3",
 		["locale"] = "enUS",
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

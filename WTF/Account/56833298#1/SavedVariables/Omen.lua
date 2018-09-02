@@ -5,21 +5,25 @@ Omen3DB = {
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
-			["PositionW"] = 240.832794189453,
-			["Shown"] = true,
-			["PositionH"] = 181.999954223633,
-			["VGrip2"] = 138.478734433823,
-			["PositionY"] = 200.834762573242,
+			["PositionW"] = 241.666137695313,
+			["PositionH"] = 181.166580200195,
+			["VGrip2"] = 138.957906526762,
+			["PositionY"] = 200.001419067383,
 			["Locked"] = true,
 			["Background"] = {
 				["BorderTexture"] = "Blizzard Tooltip",
 				["Texture"] = "Blizzard Dialog Background",
 			},
+			["Shown"] = true,
 			["MinimapIcon"] = {
 				["minimapPos"] = 345.518259069873,
 			},
-			["PositionX"] = 1388.33203125,
-			["VGrip1"] = 102.353847190217,
+			["ShowWith"] = {
+				["Alone"] = true,
+				["HideWhenOOC"] = true,
+			},
+			["VGrip1"] = 102.708017867607,
+			["PositionX"] = 1387.49890136719,
 		},
 	},
 }
