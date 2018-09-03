@@ -9,7 +9,11 @@ dbBFA = {
 		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["global"] = {
+		["warn01_seen"] = 0,
 		["firstrun"] = false,
+		["news"] = {
+		},
+		["warn02_seen"] = 0,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -38,6 +42,7 @@ dbBFA = {
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
+			["showmenu"] = true,
 		},
 	},
 }

@@ -2,6 +2,7 @@
 Omen3DB = {
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Vancard - Zul'jin"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
@@ -24,6 +25,16 @@ Omen3DB = {
 			},
 			["VGrip1"] = 102.708017867607,
 			["PositionX"] = 1387.49890136719,
+		},
+		["Vancard - Zul'jin"] = {
+			["PositionY"] = 200.834762573242,
+			["PositionW"] = 200.000061035156,
+			["Shown"] = true,
+			["Background"] = {
+				["Texture"] = "Blizzard Dialog Background",
+			},
+			["PositionX"] = 1429.16589355469,
+			["PositionH"] = 181.166656494141,
 		},
 	},
 }

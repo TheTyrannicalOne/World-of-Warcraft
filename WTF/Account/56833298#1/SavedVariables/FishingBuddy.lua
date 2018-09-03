@@ -1,21 +1,61 @@
 
 FishingBuddy_Info = {
 	["FishTotals"] = {
+		[862002] = 3,
+		[862001] = 1,
+		[862000] = 4,
 	},
 	["HiddenFishies"] = {
 	},
 	["FishingSkill"] = {
+		[862001] = 0,
+		[862002] = 0,
 	},
 	["DataFish"] = 0,
+	["FishSchools"] = {
+		[862] = {
+			{
+				["y"] = 0.51498076113977,
+				["x"] = 0.766917032053709,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["fish"] = {
+					[152543] = 1,
+				},
+				["count"] = 1,
+			}, -- [1]
+		},
+	},
 	["FishingHoles"] = {
+		[862001] = {
+			[152543] = 1,
+		},
+		[862002] = {
+			[152543] = 2,
+			[152544] = 1,
+		},
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
 	["SubZones"] = {
+		[862002] = "Talanji's Rebuke",
+		[862001] = "Atal'Gral",
+		[862000] = 2,
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
+		[152543] = {
+			["enUS"] = "Sand Shifter",
+			["quality"] = 1,
+			["texture"] = 2057315,
+		},
+		[152544] = {
+			["enUS"] = "Slimy Mackerel",
+			["quality"] = 1,
+			["texture"] = 2057316,
+		},
 	},
 	["KnownZones"] = {
+		[862] = "Talanji's Rebuke",
 	},
 }

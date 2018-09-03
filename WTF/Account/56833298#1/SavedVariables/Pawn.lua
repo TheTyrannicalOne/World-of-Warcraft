@@ -348,6 +348,9 @@ PawnCommon = {
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
+				["Vancard-Zul'jin"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "3fc6ea",
 			["LocalizedName"] = "Mage: Arcane",
