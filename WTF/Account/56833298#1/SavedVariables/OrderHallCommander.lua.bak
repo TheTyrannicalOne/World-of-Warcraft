@@ -6,7 +6,11 @@ dbOHC = {
 		},
 	},
 	["global"] = {
-		["warn03_seen"] = 2,
+		["warn01_seen"] = 0,
+		["warn03_seen"] = 3,
+		["news"] = {
+		},
+		["warn02_seen"] = 0,
 		["firstrun"] = false,
 	},
 	["profileKeys"] = {
@@ -39,6 +43,7 @@ dbOHC = {
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
+			["showmenu"] = true,
 		},
 	},
 }

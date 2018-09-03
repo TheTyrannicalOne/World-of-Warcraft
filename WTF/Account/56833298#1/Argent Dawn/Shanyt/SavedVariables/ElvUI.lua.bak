@@ -4,6 +4,7 @@ ElvCharacterDB = {
 		"/omen", -- [1]
 		"/omen config", -- [2]
 		"/omen show", -- [3]
+		"/opie", -- [4]
 	},
 	["ChatHistoryLog"] = {
 		{
@@ -1678,5 +1679,159 @@ ElvCharacterDB = {
 			[51] = 1535902959,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [76]
+		{
+			"congrats", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			19, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1535930826,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [77]
+		{
+			"congrats", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			81, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1535931890,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [78]
+		{
+			"i cant wiat till i hit hit 120 then i wont get ganked as much. ", -- [1]
+			"Kabukie-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			158, -- [11]
+			"Player-75-0BA87327", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Kabukie|r",
+			[51] = 1535932400,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [79]
+		{
+			"Goodmorning guildies!", -- [1]
+			"Dyvina", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			16, -- [11]
+			"Player-75-0BB199BA", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffDyvina|r",
+			[51] = 1535985212,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [80]
+		{
+			"morning!", -- [1]
+			"Juuwon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			20, -- [11]
+			"Player-75-051C3C5B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffff468Juuwon|r",
+			[51] = 1535985229,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [81]
+		{
+			"Morning :)", -- [1]
+			"Koppi-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			23, -- [11]
+			"Player-75-0299D0AC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddKoppi|r",
+			[51] = 1535985241,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [82]
+		{
+			"LFM Mythic Temple of Sethreliss.", -- [1]
+			"Rhainiee-TheScryers", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Rhainiee-TheScryers", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			679, -- [11]
+			"Player-75-08C56C3D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffff7c0aRhainiee-TheScryers|r",
+			[51] = 1535990460,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [83]
 	},
 }

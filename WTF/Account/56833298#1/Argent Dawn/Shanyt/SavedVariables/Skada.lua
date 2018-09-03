@@ -484,72 +484,72 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1535907193.538,
 						["amount"] = -69,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["spellid"] = 88163,
 						["hp"] = 45050,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [1]
 					{
 						["ts"] = 1535907195.491,
 						["amount"] = -70,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["spellid"] = 167381,
 						["hp"] = 44911,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [2]
 					{
 						["ts"] = 1535907201.054,
 						["amount"] = -118,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 44911,
 						["spellid"] = 88163,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [3]
 					{
 						["ts"] = 1535907204.173,
 						["amount"] = -100,
+						["hp"] = 44693,
 						["spellid"] = 167385,
 						["srcname"] = "Dungeoneer's Training Dummy",
-						["hp"] = 44693,
 					}, -- [4]
 					{
 						["ts"] = 1535907204.378,
 						["amount"] = -77,
+						["hp"] = 44616,
 						["spellid"] = 167381,
 						["srcname"] = "Dungeoneer's Training Dummy",
-						["hp"] = 44616,
 					}, -- [5]
 					{
 						["ts"] = 1535907208.687,
 						["amount"] = -63,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 44616,
 						["spellid"] = 88163,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [6]
 					{
 						["ts"] = 1535907211.648,
 						["amount"] = -77,
+						["hp"] = 44476,
 						["spellid"] = 167381,
 						["srcname"] = "Dungeoneer's Training Dummy",
-						["hp"] = 44476,
 					}, -- [7]
 					{
 						["ts"] = 1535907213.202,
 						["amount"] = -147,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 44476,
 						["spellid"] = 88163,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [8]
 					{
 						["ts"] = 1535907214.709,
 						["amount"] = -76,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 44329,
 						["spellid"] = 88163,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [9]
 					{
 						["ts"] = 1535907216.294,
 						["amount"] = -128,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 44125,
 						["spellid"] = 167385,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [10]
 					{
 						["absorb"] = 0,
@@ -562,30 +562,30 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1535907182.547,
 						["amount"] = -44,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 45322,
 						["spellid"] = 167381,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [12]
 					{
 						["ts"] = 1535907186.937,
 						["amount"] = -102,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 45322,
 						["spellid"] = 88163,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [13]
 					{
 						["ts"] = 1535907188.63,
 						["amount"] = -63,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 45157,
 						["spellid"] = 167381,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [14]
 					{
 						["ts"] = 1535907192.039,
 						["amount"] = -107,
+						["srcname"] = "Dungeoneer's Training Dummy",
 						["hp"] = 45050,
 						["spellid"] = 167385,
-						["srcname"] = "Dungeoneer's Training Dummy",
 					}, -- [15]
 					["pos"] = 12,
 				},
@@ -3041,9 +3041,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["alertDamage"] = 0,
 			["overhealing"] = 17972,
-			["power"] = {
-				21, -- [1]
-			},
+			["mobtaken"] = 7191769,
 			["damage"] = 7191769,
 			["players"] = {
 				{
@@ -3071,21 +3069,21 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
-						["Deep Wounds"] = {
-							["name"] = "Deep Wounds",
+						["Tactician"] = {
+							["name"] = "Tactician",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 262115,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 40,
+							["id"] = 199854,
+							["auratype"] = "BUFF",
+							["uptime"] = 12,
 						},
-						["Rezan's Fury"] = {
-							["name"] = "Rezan's Fury",
+						["Sweeping Strikes"] = {
+							["name"] = "Sweeping Strikes",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 273794,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 24,
+							["id"] = 260708,
+							["auratype"] = "BUFF",
+							["uptime"] = 12,
 						},
 						["Colossus Smash"] = {
 							["name"] = "Colossus Smash",
@@ -3095,21 +3093,21 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
-						["Tactician"] = {
-							["name"] = "Tactician",
+						["Sudden Death"] = {
+							["name"] = "Sudden Death",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 199854,
+							["id"] = 52437,
 							["auratype"] = "BUFF",
-							["uptime"] = 12,
+							["uptime"] = 2,
 						},
-						["Self Reliance"] = {
-							["name"] = "Self Reliance",
+						["Rezan's Fury"] = {
+							["name"] = "Rezan's Fury",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 270661,
-							["auratype"] = "BUFF",
-							["uptime"] = 8,
+							["id"] = 273794,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 24,
 						},
 						["Mortal Wounds"] = {
 							["name"] = "Mortal Wounds",
@@ -3127,13 +3125,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
 						},
-						["Sudden Death"] = {
-							["name"] = "Sudden Death",
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 52437,
-							["auratype"] = "BUFF",
-							["uptime"] = 2,
+							["id"] = 262115,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 40,
 						},
 						["Training Gear"] = {
 							["name"] = "Training Gear",
@@ -3151,13 +3149,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 9,
 						},
-						["Sweeping Strikes"] = {
-							["name"] = "Sweeping Strikes",
+						["Self Reliance"] = {
+							["name"] = "Self Reliance",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 260708,
+							["id"] = 270661,
 							["auratype"] = "BUFF",
-							["uptime"] = 12,
+							["uptime"] = 8,
 						},
 						["In For The Kill"] = {
 							["name"] = "In For The Kill",
@@ -3457,7 +3455,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["shielding"] = 0,
+			["power"] = {
+				21, -- [1]
+			},
 			["mobname"] = "Dungeoneer's Training Dummy",
 			["healing"] = 871,
 			["ffdamagedone"] = 0,
@@ -3466,7 +3466,7 @@ SkadaPerCharDB = {
 			["damagetaken"] = 871,
 			["name"] = "Dungeoneer's Training Dummy (4)",
 			["alertCount"] = 0,
-			["mobtaken"] = 7191769,
+			["shielding"] = 0,
 			["mobhdone"] = 0,
 			["last_action"] = 1535903808,
 			["mobdone"] = 871,
@@ -3481,9 +3481,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["alertDamage"] = 0,
 			["overhealing"] = 17571,
-			["power"] = {
-				43.7000000476837, -- [1]
-			},
+			["mobtaken"] = 4669520,
 			["damage"] = 4669520,
 			["players"] = {
 				{
@@ -3898,7 +3896,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["shielding"] = 0,
+			["power"] = {
+				43.7000000476837, -- [1]
+			},
 			["mobname"] = "Dungeoneer's Training Dummy",
 			["healing"] = 815,
 			["ffdamagedone"] = 0,
@@ -3907,7 +3907,7 @@ SkadaPerCharDB = {
 			["damagetaken"] = 815,
 			["name"] = "Dungeoneer's Training Dummy (3)",
 			["alertCount"] = 0,
-			["mobtaken"] = 4669520,
+			["shielding"] = 0,
 			["mobhdone"] = 0,
 			["last_action"] = 1535903696,
 			["mobdone"] = 815,
@@ -3922,8 +3922,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["alertDamage"] = 0,
 			["overhealing"] = 17474,
-			["power"] = {
-			},
+			["mobtaken"] = 253363,
 			["damage"] = 253363,
 			["players"] = {
 				{
@@ -4082,7 +4081,8 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["shielding"] = 0,
+			["power"] = {
+			},
 			["mobname"] = "Dungeoneer's Training Dummy",
 			["healing"] = 0,
 			["ffdamagedone"] = 0,
@@ -4091,7 +4091,7 @@ SkadaPerCharDB = {
 			["damagetaken"] = 0,
 			["name"] = "Dungeoneer's Training Dummy (2)",
 			["alertCount"] = 0,
-			["mobtaken"] = 253363,
+			["shielding"] = 0,
 			["mobhdone"] = 0,
 			["last_action"] = 1535903363,
 			["mobdone"] = 0,
@@ -4106,9 +4106,7 @@ SkadaPerCharDB = {
 			["interrupts"] = 0,
 			["alertDamage"] = 0,
 			["overhealing"] = 35307,
-			["power"] = {
-				6, -- [1]
-			},
+			["mobtaken"] = 7246938,
 			["damage"] = 7246938,
 			["players"] = {
 				{
@@ -4144,13 +4142,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 1,
 						},
-						["Sweeping Strikes"] = {
-							["name"] = "Sweeping Strikes",
+						["Self Reliance"] = {
+							["name"] = "Self Reliance",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 260708,
+							["id"] = 270661,
 							["auratype"] = "BUFF",
-							["uptime"] = 12,
+							["uptime"] = 35,
 						},
 						["Colossus Smash"] = {
 							["name"] = "Colossus Smash",
@@ -4168,13 +4166,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 6,
 						},
-						["Rezan's Fury"] = {
-							["name"] = "Rezan's Fury",
+						["Sweeping Strikes"] = {
+							["name"] = "Sweeping Strikes",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 273794,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 48,
+							["id"] = 260708,
+							["auratype"] = "BUFF",
+							["uptime"] = 12,
 						},
 						["Mortal Wounds"] = {
 							["name"] = "Mortal Wounds",
@@ -4216,13 +4214,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 20,
 						},
-						["Self Reliance"] = {
-							["name"] = "Self Reliance",
+						["Rezan's Fury"] = {
+							["name"] = "Rezan's Fury",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 270661,
-							["auratype"] = "BUFF",
-							["uptime"] = 35,
+							["id"] = 273794,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 48,
 						},
 						["In For The Kill"] = {
 							["name"] = "In For The Kill",
@@ -4519,7 +4517,9 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["shielding"] = 0,
+			["power"] = {
+				6, -- [1]
+			},
 			["mobname"] = "Dungeoneer's Training Dummy",
 			["healing"] = 1921,
 			["ffdamagedone"] = 0,
@@ -4528,7 +4528,7 @@ SkadaPerCharDB = {
 			["damagetaken"] = 2646,
 			["name"] = "Dungeoneer's Training Dummy",
 			["alertCount"] = 0,
-			["mobtaken"] = 7246938,
+			["shielding"] = 0,
 			["mobhdone"] = 0,
 			["last_action"] = 1535903001,
 			["mobdone"] = 2646,

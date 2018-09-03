@@ -1,11 +1,11 @@
 
 PetTracker_Sets = {
 	["HideRivals"] = true,
-	["MainTutorial"] = 6,
-	["JournalTutorial"] = 1,
-	["MapFilter"] = "",
 	["RivalHistory"] = {
 	},
+	["JournalTutorial"] = 1,
+	["MapFilter"] = "",
 	["HideSpecies"] = true,
+	["MainTutorial"] = 6,
 	["HideStables"] = true,
 }

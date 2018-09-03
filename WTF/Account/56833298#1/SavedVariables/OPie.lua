@@ -130,8 +130,8 @@ OneRing_Config = {
 					["sliceToken"] = "OPCTAi",
 				}, -- [9]
 				["name"] = "Specializations and Travel",
-				["hotkey"] = "ALT-H",
 				["save"] = true,
+				["hotkey"] = "ALT-H",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
@@ -168,8 +168,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
 				["limit"] = "Shanyt-ArgentDawn",
-				["hotkey"] = "ALT-E",
 				["save"] = true,
+				["hotkey"] = "ALT-E",
 				["name"] = "Utility",
 			},
 		},
