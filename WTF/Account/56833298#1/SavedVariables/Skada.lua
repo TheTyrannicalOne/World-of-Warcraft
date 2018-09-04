@@ -158,16 +158,6 @@ SkadaDB = {
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 225.833404541016,
 					["modeincombat"] = "Damage",
-					["name"] = "Damage",
-					["mode"] = "Healing",
-					["y"] = 0,
-					["x"] = 0,
-					["barslocked"] = true,
-					["roleicons"] = true,
-					["spark"] = false,
-					["background"] = {
-						["height"] = 178.999862670898,
-					},
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -178,6 +168,16 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
+					["mode"] = "Healing",
+					["y"] = 0,
+					["x"] = 0,
+					["name"] = "Damage",
+					["roleicons"] = true,
+					["spark"] = false,
+					["background"] = {
+						["height"] = 178.999862670898,
+					},
+					["barslocked"] = true,
 					["barfont"] = "PT Sans Narrow",
 				}, -- [1]
 				{

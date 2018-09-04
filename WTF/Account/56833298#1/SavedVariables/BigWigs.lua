@@ -6,24 +6,35 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Alt Power"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+					["fontSize"] = 12,
+					["fontOutline"] = "",
+				},
+			},
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
 					["tempSpacingReset"] = true,
-					["font"] = "Friz Quadrata TT",
+					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
 					["tempMonoUIReset"] = true,
+					["BigWigsAnchor_width"] = 220.000015258789,
+					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
+					["font"] = "Friz Quadrata TT",
+					["BigWigsAnchor_height"] = 15.9999876022339,
 				},
 			},
 		},
-		["BigWigs_Plugins_InfoBox"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -34,17 +45,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-					["fontSize"] = 20,
-				},
-			},
-		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -54,18 +55,21 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_AutoReply"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Plugins_Pull"] = {
-		},
-		["BigWigs_Plugins_Alt Power"] = {
+		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Friz Quadrata TT",
-					["fontSize"] = 12,
-					["fontOutline"] = "",
+					["fontSize"] = 20,
 				},
 			},
+		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Plugins_Pull"] = {
+		},
+		["LibDualSpec-1.0"] = {
 		},
 	},
 	["wipe80"] = true,

@@ -41,6 +41,13 @@ X: 0
 Y: 0
 W: 365
 H: 240
+Frame: AAP_AFkFrames
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 318
+Y: -23
+W: 120
+H: 40
 Frame: TooltipMover
 FrameLevel: 402
 Anchor: RIGHT

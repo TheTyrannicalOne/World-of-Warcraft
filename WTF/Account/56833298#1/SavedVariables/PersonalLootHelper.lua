@@ -1,6 +1,7 @@
 
 PLH_META = {
 	["PLH_LAST_SEEN_MESSAGE_VERSION"] = "2.13",
+	["PLH_SHOW_WHISPER_WARNING"] = false,
 }
 PLH_PREFS = {
 	["PLH_AUTO_HIDE"] = true,

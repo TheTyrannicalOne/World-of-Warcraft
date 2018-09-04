@@ -3,15 +3,29 @@ FishingBuddy_Info = {
 	["FishTotals"] = {
 		[862002] = 3,
 		[862001] = 1,
-		[862000] = 4,
+		[862000] = 5,
+		[862003] = 1,
 	},
 	["HiddenFishies"] = {
 	},
 	["FishingSkill"] = {
-		[862001] = 0,
 		[862002] = 0,
+		[862001] = 0,
+		[862003] = 0,
 	},
 	["DataFish"] = 0,
+	["FishingHoles"] = {
+		[862002] = {
+			[152543] = 2,
+			[152544] = 1,
+		},
+		[862001] = {
+			[152543] = 1,
+		},
+		[862003] = {
+			[152544] = 1,
+		},
+	},
 	["FishSchools"] = {
 		[862] = {
 			{
@@ -26,21 +40,13 @@ FishingBuddy_Info = {
 			}, -- [1]
 		},
 	},
-	["FishingHoles"] = {
-		[862001] = {
-			[152543] = 1,
-		},
-		[862002] = {
-			[152543] = 2,
-			[152544] = 1,
-		},
-	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 		[862002] = "Talanji's Rebuke",
 		[862001] = "Atal'Gral",
-		[862000] = 2,
+		[862000] = 3,
+		[862003] = "Xibala",
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
@@ -56,6 +62,6 @@ FishingBuddy_Info = {
 		},
 	},
 	["KnownZones"] = {
-		[862] = "Talanji's Rebuke",
+		[862] = "Xibala",
 	},
 }

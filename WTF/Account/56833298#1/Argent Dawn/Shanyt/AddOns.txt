@@ -17,3 +17,4 @@ LibDeformat-3.0: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
 ElvUI_LocLite: disabled
 AllTheThings: disabled
+LittleWigs: enabled
