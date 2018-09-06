@@ -1,10 +1,11 @@
 # LittleWigs
 
-## [v8.0.17](https://github.com/BigWigsMods/LittleWigs/tree/v8.0.17) (2018-09-05)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.0.16...v8.0.17)
+## [v8.0.18](https://github.com/BigWigsMods/LittleWigs/tree/v8.0.18) (2018-09-06)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.0.17...v8.0.18)
 
-- Fix option flags  
-- TempleOfSethraliss/Galvazzt: Add infobox for Galvanize.  
-- TempleOfSethraliss/Galvazzt: Fix Galvanize warning.  
-- Freehold/Booty: added missing options key  
-- Freehold/Booty: added a warmup timer for Trothak  
+- WaycrestManor/Heartsbane: Fix icon setting.  
+- WaycrestManor/Heartsbane: Remove Soul Manipulation bars.  
+- WaycrestManor/Raal: Fix Tenderize cooldown.  
+- WaycrestManor/Heartsbane: Fix Soul Manipulation warning and add a marker for it and Focusing Iris.  
+- WaycrestManor/Goliath: Mark the Soul Thorns NPC instead of the player.  
+- SiegeOfBoralus/Redhook: Fix On the Hook  

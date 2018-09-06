@@ -47,6 +47,7 @@ BigWigs:AddSounds("Zek'voz, Herald of N'zoth", {
 })
 
 BigWigs:AddSounds("Vectis", {
+	[265143] = "alarm",
 	[265178] = "alert",
 	[265212] = "alert",
 	[265217] = {"info","long"},
