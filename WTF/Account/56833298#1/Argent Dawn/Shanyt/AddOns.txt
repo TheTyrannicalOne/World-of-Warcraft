@@ -18,3 +18,5 @@ AceGUI-3.0-SharedMediaWidgets: enabled
 ElvUI_LocLite: disabled
 AllTheThings: disabled
 LittleWigs: enabled
+BigWigs_WarlordsOfDraenor: enabled
+BigWigs_MistsOfPandaria: enabled

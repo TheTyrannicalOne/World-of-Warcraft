@@ -71,7 +71,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 29895,
 					["damagespells"] = {
 						["Charge"] = {
@@ -390,7 +390,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 61785,
 					["damagespells"] = {
 						["Touch of the Grave"] = {
@@ -900,13 +900,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 6,
 						},
-						["Deep Wounds"] = {
-							["name"] = "Deep Wounds",
+						["Tactician"] = {
+							["name"] = "Tactician",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 262115,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 9,
+							["id"] = 199854,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
 						},
 						["Overpower"] = {
 							["name"] = "Overpower",
@@ -924,12 +924,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
-						["Gemhide"] = {
-							["name"] = "Gemhide",
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 270576,
-							["auratype"] = "BUFF",
+							["id"] = 262115,
+							["auratype"] = "DEBUFF",
 							["uptime"] = 9,
 						},
 						["Bladestorm"] = {
@@ -948,13 +948,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
-						["Tactician"] = {
-							["name"] = "Tactician",
+						["Gemhide"] = {
+							["name"] = "Gemhide",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 199854,
+							["id"] = 270576,
 							["auratype"] = "BUFF",
-							["uptime"] = 5,
+							["uptime"] = 9,
 						},
 						["In For The Kill"] = {
 							["name"] = "In For The Kill",
@@ -971,7 +971,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 119721,
 					["damagespells"] = {
 						["Charge"] = {
@@ -1582,7 +1582,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 86036,
 					["damagespells"] = {
 						["Touch of the Grave"] = {
@@ -1939,13 +1939,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
-						["Deep Wounds"] = {
-							["name"] = "Deep Wounds",
+						["Sudden Death"] = {
+							["name"] = "Sudden Death",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 262115,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 16,
+							["id"] = 52437,
+							["auratype"] = "BUFF",
+							["uptime"] = 2,
 						},
 						["Colossus Smash"] = {
 							["name"] = "Colossus Smash",
@@ -1955,13 +1955,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 5,
 						},
-						["Sudden Death"] = {
-							["name"] = "Sudden Death",
+						["Tactician"] = {
+							["name"] = "Tactician",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 52437,
+							["id"] = 199854,
 							["auratype"] = "BUFF",
-							["uptime"] = 2,
+							["uptime"] = 6,
 						},
 						["Sweeping Strikes"] = {
 							["name"] = "Sweeping Strikes",
@@ -1987,13 +1987,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 12,
 						},
-						["Tactician"] = {
-							["name"] = "Tactician",
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 199854,
-							["auratype"] = "BUFF",
-							["uptime"] = 6,
+							["id"] = 262115,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 16,
 						},
 						["Bladestorm"] = {
 							["name"] = "Bladestorm",
@@ -2034,7 +2034,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 267714,
 					["damagespells"] = {
 						["Charge"] = {
@@ -2683,12 +2683,12 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
 						},
-						["Tactician"] = {
-							["name"] = "Tactician",
+						["Mortal Wounds"] = {
+							["name"] = "Mortal Wounds",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 199854,
-							["auratype"] = "BUFF",
+							["id"] = 115804,
+							["auratype"] = "DEBUFF",
 							["uptime"] = 2,
 						},
 						["Colossus Smash"] = {
@@ -2699,13 +2699,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
-						["Mortal Wounds"] = {
-							["name"] = "Mortal Wounds",
+						["Sudden Death"] = {
+							["name"] = "Sudden Death",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 115804,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 2,
+							["id"] = 52437,
+							["auratype"] = "BUFF",
+							["uptime"] = 6,
 						},
 						["Sweeping Strikes"] = {
 							["name"] = "Sweeping Strikes",
@@ -2731,13 +2731,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 6,
 						},
-						["Deep Wounds"] = {
-							["name"] = "Deep Wounds",
+						["Tactician"] = {
+							["name"] = "Tactician",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 262115,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 8,
+							["id"] = 199854,
+							["auratype"] = "BUFF",
+							["uptime"] = 2,
 						},
 						["Overpower"] = {
 							["name"] = "Overpower",
@@ -2755,13 +2755,13 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 8,
 						},
-						["Sudden Death"] = {
-							["name"] = "Sudden Death",
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 52437,
-							["auratype"] = "BUFF",
-							["uptime"] = 6,
+							["id"] = 262115,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 8,
 						},
 						["In For The Kill"] = {
 							["name"] = "In For The Kill",
@@ -2778,7 +2778,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 49893,
 					["damagespells"] = {
 						["Charge"] = {
@@ -3340,7 +3340,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 21790,
 					["damagespells"] = {
 						["Seismic Wave"] = {
@@ -3742,7 +3742,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 18679,
 					["damagespells"] = {
 						["Mortal Strike"] = {
@@ -4190,7 +4190,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 102631,
 					["damagespells"] = {
 						["Mortal Strike"] = {
@@ -4204,22 +4204,6 @@ SkadaPerCharDB = {
 							["max"] = 2843,
 							["totalhits"] = 1,
 							["damage"] = 2843,
-						},
-						["Warbreaker"] = {
-							["hitmin"] = 3877,
-							["criticalamount"] = 7754,
-							["id"] = 262161,
-							["hitamount"] = 7754,
-							["criticalmin"] = 7754,
-							["hitmax"] = 3877,
-							["min"] = 3877,
-							["criticalmax"] = 7754,
-							["critical"] = 1,
-							["hit"] = 2,
-							["totalhits"] = 3,
-							["school"] = 1,
-							["max"] = 7754,
-							["damage"] = 15508,
 						},
 						["Deep Wounds"] = {
 							["hitmin"] = 1118,
@@ -4248,6 +4232,22 @@ SkadaPerCharDB = {
 							["max"] = 1605,
 							["totalhits"] = 1,
 							["damage"] = 1605,
+						},
+						["Warbreaker"] = {
+							["hitmin"] = 3877,
+							["criticalamount"] = 7754,
+							["id"] = 262161,
+							["hitamount"] = 7754,
+							["criticalmin"] = 7754,
+							["hitmax"] = 3877,
+							["min"] = 3877,
+							["criticalmax"] = 7754,
+							["critical"] = 1,
+							["hit"] = 2,
+							["totalhits"] = 3,
+							["school"] = 1,
+							["max"] = 7754,
+							["damage"] = 15508,
 						},
 						["Bladestorm"] = {
 							["hitmin"] = 1012,
@@ -4829,7 +4829,7 @@ SkadaPerCharDB = {
 					["interrupts"] = 0,
 					["alertDamage"] = 0,
 					["role"] = "DAMAGER",
-					["maxhp"] = 57580,
+					["maxhp"] = 57620,
 					["damage"] = 35696,
 					["damagespells"] = {
 						["Deep Wounds"] = {
@@ -5268,6 +5268,11 @@ SkadaPerCharDB = {
 				["ffdamagedonespells"] = {
 				},
 				["healingabsorbed"] = 0,
+				["dispells"] = 0,
+				["class"] = "WARRIOR",
+				["damaged"] = {
+				},
+				["alertDamage"] = 0,
 				["healingspells"] = {
 					["Self Reliance"] = {
 						["shielding"] = 0,
@@ -5330,11 +5335,6 @@ SkadaPerCharDB = {
 						["hits"] = 317,
 					},
 				},
-				["class"] = "WARRIOR",
-				["damaged"] = {
-				},
-				["dispells"] = 0,
-				["alertDamage"] = 0,
 				["role"] = "DAMAGER",
 				["time"] = 2507,
 				["interrupts"] = 1,
@@ -5716,10 +5716,10 @@ SkadaPerCharDB = {
 								["hp"] = 56920,
 							}, -- [1]
 							{
-								["srcname"] = "Overlord Shugvoth",
-								["ts"] = 1536031112.33002,
-								["spellid"] = 88163,
 								["hp"] = 56920,
+								["ts"] = 1536031112.33002,
+								["srcname"] = "Overlord Shugvoth",
+								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["absorb"] = -654,
@@ -5731,58 +5731,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536031114.47804,
 								["amount"] = -2864,
+								["hp"] = 28608,
 								["srcname"] = "Overlord Shugvoth",
 								["spellid"] = 88163,
-								["hp"] = 28608,
 							}, -- [4]
 							{
 								["ts"] = 1536031116.00205,
 								["amount"] = -414,
+								["hp"] = 25330,
 								["srcname"] = "Faceless Corruptor",
 								["spellid"] = 277578,
-								["hp"] = 25330,
 							}, -- [5]
 							{
 								["ts"] = 1536031118.02306,
 								["amount"] = -414,
+								["hp"] = 24916,
 								["spellid"] = 277578,
 								["srcname"] = "Faceless Corruptor",
-								["hp"] = 24916,
 							}, -- [6]
 							{
 								["ts"] = 1536031118.48207,
 								["amount"] = -5978,
+								["hp"] = 18938,
 								["srcname"] = "Faceless Corruptor",
 								["spellid"] = 277576,
-								["hp"] = 18938,
 							}, -- [7]
 							{
 								["ts"] = 1536031119.32808,
 								["amount"] = -7797,
+								["hp"] = 11141,
 								["spellid"] = 277584,
 								["srcname"] = "Overlord Shugvoth",
-								["hp"] = 11141,
 							}, -- [8]
 							{
 								["ts"] = 1536031120.02409,
 								["amount"] = -414,
+								["hp"] = 10727,
 								["spellid"] = 277578,
 								["srcname"] = "Faceless Corruptor",
-								["hp"] = 10727,
 							}, -- [9]
 							{
 								["ts"] = 1536031122.1551,
 								["amount"] = -414,
+								["hp"] = 10313,
 								["spellid"] = 277578,
 								["srcname"] = "Faceless Corruptor",
-								["hp"] = 10313,
 							}, -- [10]
 							{
 								["ts"] = 1536031123.01811,
 								["amount"] = -5827,
+								["hp"] = 4486,
 								["srcname"] = "Faceless Corruptor",
 								["spellid"] = 277576,
-								["hp"] = 4486,
 							}, -- [11]
 							{
 								["ts"] = 1536031127.56012,
@@ -5822,44 +5822,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536023707.40601,
 								["amount"] = -1490,
+								["hp"] = 10136,
 								["spellid"] = 268800,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 10136,
 							}, -- [1]
 							{
 								["ts"] = 1536023708.43402,
 								["amount"] = -1340,
+								["hp"] = 10136,
 								["spellid"] = 88163,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 10136,
 							}, -- [2]
 							{
 								["ts"] = 1536023709.41903,
 								["amount"] = -994,
+								["hp"] = 8796,
 								["srcname"] = "Sandfury Axe Thrower",
 								["spellid"] = 88163,
-								["hp"] = 8796,
 							}, -- [3]
 							{
 								["ts"] = 1536023711.41504,
 								["amount"] = -1200,
+								["hp"] = 6602,
 								["srcname"] = "Sandfury Axe Thrower",
 								["spellid"] = 268800,
-								["hp"] = 6602,
 							}, -- [4]
 							{
 								["ts"] = 1536023711.60705,
 								["amount"] = -5439,
+								["hp"] = 1163,
 								["spellid"] = 268792,
 								["srcname"] = "Sandfury Speaker",
-								["hp"] = 1163,
 							}, -- [5]
 							{
 								["ts"] = 1536023713.28806,
 								["amount"] = -1312,
+								["hp"] = 1163,
 								["srcname"] = "Sandfury Axe Thrower",
 								["spellid"] = 88163,
-								["hp"] = 1163,
 							}, -- [6]
 							{
 								["spellname"] = "Shanyt dies",
@@ -5870,58 +5870,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536023701.10808,
 								["amount"] = -1259,
+								["hp"] = 27396,
 								["spellid"] = 88163,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 27396,
 							}, -- [8]
 							{
 								["ts"] = 1536023701.88409,
 								["amount"] = -6723,
+								["hp"] = 19414,
 								["spellid"] = 268792,
 								["srcname"] = "Sandfury Speaker",
-								["hp"] = 19414,
 							}, -- [9]
 							{
 								["ts"] = 1536023702.3251,
 								["amount"] = -1312,
+								["hp"] = 19414,
 								["spellid"] = 88163,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 19414,
 							}, -- [10]
 							{
 								["ts"] = 1536023703.63011,
 								["amount"] = -1047,
+								["hp"] = 18102,
 								["spellid"] = 88163,
 								["srcname"] = "Sandfury Speaker",
-								["hp"] = 18102,
 							}, -- [11]
 							{
 								["ts"] = 1536023704.11212,
 								["amount"] = -1540,
+								["hp"] = 15515,
 								["spellid"] = 268800,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 15515,
 							}, -- [12]
 							{
 								["ts"] = 1536023704.74513,
 								["amount"] = -1415,
+								["hp"] = 15515,
 								["spellid"] = 88163,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 15515,
 							}, -- [13]
 							{
 								["ts"] = 1536023705.95914,
 								["amount"] = -1239,
+								["hp"] = 14100,
 								["spellid"] = 88163,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 14100,
 							}, -- [14]
 							{
 								["ts"] = 1536023706.55315,
 								["amount"] = -1235,
+								["hp"] = 11626,
 								["spellid"] = 268800,
 								["srcname"] = "Sandfury Axe Thrower",
-								["hp"] = 11626,
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -5933,30 +5933,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022476.37701,
 								["amount"] = -606,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 4147,
 								["spellid"] = 255895,
-								["srcname"] = "Toxic Saurid",
 							}, -- [1]
 							{
 								["ts"] = 1536022476.63402,
 								["amount"] = -534,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 2616,
 								["spellid"] = 88163,
-								["srcname"] = "Toxic Saurid",
 							}, -- [2]
 							{
 								["ts"] = 1536022476.65203,
 								["amount"] = -606,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 2010,
-								["srcname"] = "Toxic Saurid",
 							}, -- [3]
 							{
 								["ts"] = 1536022476.74404,
 								["amount"] = -2195,
+								["srcname"] = "Feasting Skyscreamer",
 								["hp"] = 2010,
 								["spellid"] = 88163,
-								["srcname"] = "Feasting Skyscreamer",
 							}, -- [4]
 							{
 								["spellname"] = "Shanyt dies",
@@ -5967,72 +5967,72 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022474.74506,
 								["amount"] = -606,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 13178,
 								["spellid"] = 255895,
-								["srcname"] = "Toxic Saurid",
 							}, -- [6]
 							{
 								["ts"] = 1536022474.74507,
 								["amount"] = -606,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 12572,
 								["spellid"] = 255895,
-								["srcname"] = "Toxic Saurid",
 							}, -- [7]
 							{
 								["ts"] = 1536022474.94808,
 								["amount"] = -1744,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 251187,
 								["hp"] = 9825,
-								["srcname"] = "Toxic Saurid",
 							}, -- [8]
 							{
 								["ts"] = 1536022474.96809,
 								["amount"] = -606,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 9219,
 								["spellid"] = 255895,
-								["srcname"] = "Toxic Saurid",
 							}, -- [9]
 							{
 								["ts"] = 1536022475.1191,
 								["amount"] = -390,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 9219,
 								["spellid"] = 88163,
-								["srcname"] = "Toxic Saurid",
 							}, -- [10]
 							{
 								["ts"] = 1536022475.15211,
 								["amount"] = -606,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 8613,
-								["srcname"] = "Toxic Saurid",
 							}, -- [11]
 							{
 								["ts"] = 1536022475.23512,
 								["amount"] = -2864,
+								["srcname"] = "Feasting Skyscreamer",
 								["hp"] = 8613,
 								["spellid"] = 88163,
-								["srcname"] = "Feasting Skyscreamer",
 							}, -- [12]
 							{
 								["ts"] = 1536022476.35613,
 								["amount"] = -525,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 5359,
 								["spellid"] = 88163,
-								["srcname"] = "Toxic Saurid",
 							}, -- [13]
 							{
 								["ts"] = 1536022476.35614,
 								["amount"] = -1006,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 5359,
 								["spellid"] = 88163,
-								["srcname"] = "Toxic Saurid",
 							}, -- [14]
 							{
 								["ts"] = 1536022476.37615,
 								["amount"] = -606,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 4753,
 								["spellid"] = 255895,
-								["srcname"] = "Toxic Saurid",
 							}, -- [15]
 							["pos"] = 6,
 						},
@@ -6043,16 +6043,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536005482.33701,
 								["amount"] = -1180,
+								["srcname"] = "Derelict Hexapod",
 								["hp"] = 32229,
 								["spellid"] = 88163,
-								["srcname"] = "Derelict Hexapod",
 							}, -- [1]
 							{
 								["ts"] = 1536005484.51302,
 								["amount"] = -1028,
+								["srcname"] = "Derelict Hexapod",
 								["hp"] = 31049,
 								["spellid"] = 88163,
-								["srcname"] = "Derelict Hexapod",
 							}, -- [2]
 							{
 								["ts"] = 1536005487.34003,
@@ -6065,79 +6065,79 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536005487.58004,
 								["amount"] = -1586,
+								["srcname"] = "Derelict Hexapod",
 								["hp"] = 37599,
 								["spellid"] = 259462,
-								["srcname"] = "Derelict Hexapod",
 							}, -- [4]
 							{
 								["ts"] = 1536005489.15605,
 								["amount"] = -1263,
+								["srcname"] = "7th Legion Guardsman",
 								["hp"] = 37599,
 								["spellid"] = 88163,
-								["srcname"] = "7th Legion Guardsman",
 							}, -- [5]
 							{
 								["ts"] = 1536005489.15606,
 								["amount"] = -950,
+								["srcname"] = "7th Legion Guardsman",
 								["hp"] = 35386,
 								["spellid"] = 206636,
-								["srcname"] = "7th Legion Guardsman",
 							}, -- [6]
 							{
 								["ts"] = 1536005490.38407,
 								["amount"] = -1200,
+								["srcname"] = "7th Legion Guardsman",
 								["hp"] = 34186,
 								["spellid"] = 222501,
-								["srcname"] = "7th Legion Guardsman",
 							}, -- [7]
 							{
 								["ts"] = 1536005490.54008,
 								["amount"] = -6910,
+								["srcname"] = "7th Legion Guardsmen",
 								["hp"] = 34186,
 								["spellid"] = 88163,
-								["srcname"] = "7th Legion Guardsmen",
 							}, -- [8]
 							{
 								["ts"] = 1536005491.60409,
 								["amount"] = -15884,
+								["srcname"] = "7th Legion Guardsmen",
 								["hp"] = 11392,
 								["spellid"] = 269882,
-								["srcname"] = "7th Legion Guardsmen",
 							}, -- [9]
 							{
 								["ts"] = 1536005492.3861,
 								["amount"] = -1256,
+								["srcname"] = "7th Legion Guardsman",
 								["hp"] = 11392,
 								["spellid"] = 88163,
-								["srcname"] = "7th Legion Guardsman",
 							}, -- [10]
 							{
 								["ts"] = 1536005493.61111,
 								["amount"] = -8245,
+								["srcname"] = "7th Legion Guardsmen",
 								["hp"] = 10136,
 								["spellid"] = 88163,
-								["srcname"] = "7th Legion Guardsmen",
 							}, -- [11]
 							{
 								["ts"] = 1536005493.61112,
 								["amount"] = -385,
+								["srcname"] = "7th Legion Guardsmen",
 								["hp"] = 9751,
 								["spellid"] = 269882,
-								["srcname"] = "7th Legion Guardsmen",
 							}, -- [12]
 							{
 								["ts"] = 1536005494.34513,
 								["amount"] = -1175,
+								["srcname"] = "7th Legion Guardsman",
 								["hp"] = 1506,
 								["spellid"] = 88163,
-								["srcname"] = "7th Legion Guardsman",
 							}, -- [13]
 							{
 								["ts"] = 1536005495.53814,
 								["amount"] = -378,
+								["srcname"] = "7th Legion Guardsmen",
 								["hp"] = 1,
 								["spellid"] = 269882,
-								["srcname"] = "7th Legion Guardsmen",
 							}, -- [14]
 							{
 								["spellname"] = "Shanyt dies",
@@ -6169,7 +6169,7 @@ SkadaPerCharDB = {
 					}, -- [1]
 				},
 				["id"] = "Player-75-058380E2",
-				["maxhp"] = 57580,
+				["maxhp"] = 57620,
 				["ffdamagedone"] = 0,
 				["damagetakenspells"] = {
 					["Soulburn"] = {
@@ -7196,22 +7196,22 @@ SkadaPerCharDB = {
 				["damagetaken"] = 1583103,
 				["deathlog"] = {
 					{
-						["spellid"] = 88163,
-						["ts"] = 1536032169.661,
-						["srcname"] = "Infected Saurolisk",
 						["hp"] = 57580,
+						["ts"] = 1536032169.661,
+						["spellid"] = 88163,
+						["srcname"] = "Infected Saurolisk",
 					}, -- [1]
 					{
-						["spellid"] = 88163,
-						["ts"] = 1536032171.115,
-						["srcname"] = "Infected Saurolisk",
 						["hp"] = 57580,
+						["ts"] = 1536032171.115,
+						["spellid"] = 88163,
+						["srcname"] = "Infected Saurolisk",
 					}, -- [2]
 					{
-						["spellid"] = 88163,
-						["ts"] = 1536032171.115,
-						["srcname"] = "Infected Saurolisk",
 						["hp"] = 57580,
+						["ts"] = 1536032171.115,
+						["spellid"] = 88163,
+						["srcname"] = "Infected Saurolisk",
 					}, -- [3]
 					{
 						["ts"] = 1536032173.05,
@@ -7224,9 +7224,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1536032173.525,
 						["amount"] = -798,
+						["hp"] = 55357,
 						["spellid"] = 88163,
 						["srcname"] = "Infected Saurolisk",
-						["hp"] = 55357,
 					}, -- [5]
 					{
 						["ts"] = 1536032177.161,
@@ -7237,10 +7237,10 @@ SkadaPerCharDB = {
 						["srcname"] = "Shanyt",
 					}, -- [6]
 					{
-						["spellid"] = 88163,
-						["ts"] = 1536032189.799,
-						["srcname"] = "Infected Saurolisk",
 						["hp"] = 57580,
+						["ts"] = 1536032189.799,
+						["spellid"] = 88163,
+						["srcname"] = "Infected Saurolisk",
 					}, -- [7]
 					{
 						["absorb"] = -100,
@@ -7253,9 +7253,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1536032192.76,
 						["amount"] = -871,
+						["hp"] = 56801,
 						["spellid"] = 88163,
 						["srcname"] = "Infected Saurolisk",
-						["hp"] = 56801,
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -7298,10 +7298,10 @@ SkadaPerCharDB = {
 						["spellid"] = 262519,
 					}, -- [14]
 					{
-						["srcname"] = "Infected Saurolisk",
-						["ts"] = 1536032169.562,
-						["spellid"] = 88163,
 						["hp"] = 57580,
+						["ts"] = 1536032169.562,
+						["srcname"] = "Infected Saurolisk",
+						["spellid"] = 88163,
 					}, -- [15]
 					["pos"] = 11,
 				},
@@ -7383,13 +7383,13 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["id"] = 105771,
 					},
-					["Self Reliance"] = {
-						["uptime"] = 0,
+					["Tactician"] = {
+						["uptime"] = 5,
 						["active"] = 0,
-						["school"] = 1,
-						["name"] = "Self Reliance",
+						["id"] = 199854,
+						["name"] = "Tactician",
 						["auratype"] = "BUFF",
-						["id"] = 270661,
+						["school"] = 1,
 					},
 					["Victory Rush"] = {
 						["uptime"] = 6,
@@ -7399,29 +7399,29 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["school"] = 1,
 					},
-					["Sweeping Strikes"] = {
-						["uptime"] = 73,
+					["Self Reliance"] = {
+						["uptime"] = 0,
 						["active"] = 0,
-						["id"] = 260708,
-						["auratype"] = "BUFF",
-						["name"] = "Sweeping Strikes",
 						["school"] = 1,
+						["name"] = "Self Reliance",
+						["auratype"] = "BUFF",
+						["id"] = 270661,
 					},
-					["Tactician"] = {
+					["Gemhide"] = {
+						["name"] = "Gemhide",
+						["active"] = 0,
+						["id"] = 270576,
 						["uptime"] = 5,
-						["active"] = 0,
-						["id"] = 199854,
-						["name"] = "Tactician",
 						["auratype"] = "BUFF",
 						["school"] = 1,
 					},
-					["Deep Wounds"] = {
-						["name"] = "Deep Wounds",
+					["Communing with Jani"] = {
+						["uptime"] = 0,
 						["active"] = 0,
-						["id"] = 262115,
-						["uptime"] = 889,
-						["auratype"] = "DEBUFF",
 						["school"] = 1,
+						["id"] = 262933,
+						["auratype"] = "DEBUFF",
+						["name"] = "Communing with Jani",
 					},
 					["Rezan's Fury"] = {
 						["name"] = "Rezan's Fury",
@@ -7567,20 +7567,20 @@ SkadaPerCharDB = {
 						["id"] = 115804,
 						["auratype"] = "DEBUFF",
 					},
-					["Communing with Jani"] = {
-						["uptime"] = 0,
+					["Sweeping Strikes"] = {
+						["uptime"] = 73,
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 262933,
-						["auratype"] = "DEBUFF",
-						["name"] = "Communing with Jani",
-					},
-					["Gemhide"] = {
-						["name"] = "Gemhide",
-						["active"] = 0,
-						["id"] = 270576,
-						["uptime"] = 5,
+						["id"] = 260708,
 						["auratype"] = "BUFF",
+						["name"] = "Sweeping Strikes",
+						["school"] = 1,
+					},
+					["Deep Wounds"] = {
+						["name"] = "Deep Wounds",
+						["active"] = 0,
+						["id"] = 262115,
+						["uptime"] = 889,
+						["auratype"] = "DEBUFF",
 						["school"] = 1,
 					},
 					["Bladestorm"] = {
@@ -7730,12 +7730,205 @@ SkadaPerCharDB = {
 				["ffdamagedonespells"] = {
 				},
 				["healingabsorbed"] = 0,
-				["time"] = 1841,
+				["auras"] = {
+					["Tainted Blood"] = {
+						["uptime"] = 5,
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 255558,
+						["auratype"] = "DEBUFF",
+						["name"] = "Tainted Blood",
+					},
+					["Find Fish"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 43308,
+						["name"] = "Find Fish",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Bestial Wrath"] = {
+						["uptime"] = 15,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 19574,
+						["auratype"] = "BUFF",
+						["name"] = "Bestial Wrath",
+					},
+					["Frenzy"] = {
+						["uptime"] = 27,
+						["active"] = 0,
+						["id"] = 272790,
+						["name"] = "Frenzy",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Find Timber"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 167898,
+						["name"] = "Find Timber",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Rezan's Fury"] = {
+						["uptime"] = 165,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["school"] = 1,
+						["name"] = "Rezan's Fury",
+						["id"] = 273794,
+					},
+					["Sated"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 57724,
+						["auratype"] = "DEBUFF",
+						["name"] = "Sated",
+					},
+					["Find Herbs"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 2383,
+						["name"] = "Find Herbs",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Master's Sight"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 268602,
+						["auratype"] = "BUFF",
+						["name"] = "Master's Sight",
+					},
+					["Lola: Growl"] = {
+						["uptime"] = 35,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["id"] = 2649,
+						["name"] = "Lola: Growl",
+						["school"] = 1,
+					},
+					["Aspect of the Turtle"] = {
+						["uptime"] = 8,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 186265,
+						["auratype"] = "BUFF",
+						["name"] = "Aspect of the Turtle",
+					},
+					["Trailblazer"] = {
+						["uptime"] = 7853,
+						["active"] = 0,
+						["id"] = 231390,
+						["auratype"] = "BUFF",
+						["name"] = "Trailblazer",
+						["school"] = 1,
+					},
+					["Barbed Shot"] = {
+						["uptime"] = 7660,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Barbed Shot",
+						["auratype"] = "BUFF",
+						["id"] = 246851,
+					},
+					["Jitterplant"] = {
+						["name"] = "Jitterplant",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 280635,
+						["auratype"] = "BUFF",
+						["uptime"] = 305,
+					},
+					["Beast Cleave"] = {
+						["name"] = "Beast Cleave",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 28,
+						["auratype"] = "BUFF",
+						["id"] = 268877,
+					},
+					["Mana Divining Stone"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 227723,
+						["name"] = "Mana Divining Stone",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Beast Lore"] = {
+						["uptime"] = 24,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["school"] = 8,
+						["name"] = "Beast Lore",
+						["id"] = 1462,
+					},
+					["Stabbed"] = {
+						["name"] = "Stabbed",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 252321,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 5,
+					},
+					["Vampiric Speed"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 269239,
+						["auratype"] = "BUFF",
+						["name"] = "Vampiric Speed",
+					},
+					["Dance of Death"] = {
+						["name"] = "Dance of Death",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 2515,
+						["auratype"] = "BUFF",
+						["id"] = 274443,
+					},
+					["Lola: Dash"] = {
+						["uptime"] = 7673,
+						["active"] = 0,
+						["auratype"] = "BUFF",
+						["name"] = "Lola: Dash",
+						["id"] = 61684,
+						["school"] = 1,
+					},
+					["Lola: Mortal Wounds"] = {
+						["uptime"] = 1699,
+						["active"] = 0,
+						["id"] = 115804,
+						["name"] = "Lola: Mortal Wounds",
+						["school"] = 1,
+						["auratype"] = "DEBUFF",
+					},
+					["Self Reliance"] = {
+						["uptime"] = 36,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 270661,
+						["auratype"] = "BUFF",
+						["name"] = "Self Reliance",
+					},
+					["Shark's Bite"] = {
+						["name"] = "Shark's Bite",
+						["active"] = 0,
+						["id"] = 268623,
+						["uptime"] = 227,
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+				},
 				["class"] = "HUNTER",
 				["damaged"] = {
 				},
 				["alertDamage"] = 0,
-				["dispells"] = 0,
+				["time"] = 1841,
 				["role"] = "DAMAGER",
 				["overhealing"] = 974755,
 				["interrupts"] = 0,
@@ -8070,9 +8263,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536025084.84512,
 								["amount"] = -22208,
+								["hp"] = 0,
 								["spellid"] = 194284,
 								["srcname"] = "Dark Iron Grenadier",
-								["hp"] = 0,
 							}, -- [12]
 							{
 								["spellname"] = "Lillys dies",
@@ -8106,9 +8299,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022502.06901,
 								["amount"] = -1698,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 251187,
 								["hp"] = 1,
-								["srcname"] = "Toxic Saurid",
 							}, -- [1]
 							{
 								["spellname"] = "Lillys dies",
@@ -8119,37 +8312,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022499.62703,
 								["amount"] = -601,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 14271,
-								["srcname"] = "Toxic Saurid",
 							}, -- [3]
 							{
 								["ts"] = 1536022499.62704,
 								["amount"] = -601,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 13670,
-								["srcname"] = "Toxic Saurid",
 							}, -- [4]
 							{
 								["ts"] = 1536022499.62705,
 								["amount"] = -601,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 13069,
-								["srcname"] = "Toxic Saurid",
 							}, -- [5]
 							{
 								["ts"] = 1536022500.66006,
 								["amount"] = -1698,
+								["srcname"] = "Toxic Saurid",
 								["hp"] = 11371,
 								["spellid"] = 251187,
-								["srcname"] = "Toxic Saurid",
 							}, -- [6]
 							{
 								["ts"] = 1536022500.67707,
 								["amount"] = -601,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 10770,
-								["srcname"] = "Toxic Saurid",
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -8162,51 +8355,51 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022501.08609,
 								["amount"] = -1697,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 251187,
 								["hp"] = 9112,
-								["srcname"] = "Toxic Saurid",
 							}, -- [9]
 							{
 								["ts"] = 1536022501.0861,
 								["amount"] = -1698,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 251187,
 								["hp"] = 7414,
-								["srcname"] = "Toxic Saurid",
 							}, -- [10]
 							{
 								["ts"] = 1536022501.10311,
 								["amount"] = -601,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 6813,
-								["srcname"] = "Toxic Saurid",
 							}, -- [11]
 							{
 								["ts"] = 1536022501.10312,
 								["amount"] = -601,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
 								["hp"] = 6212,
-								["srcname"] = "Toxic Saurid",
 							}, -- [12]
 							{
 								["ts"] = 1536022502.05413,
 								["amount"] = -1698,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 251187,
 								["hp"] = 4514,
-								["srcname"] = "Toxic Saurid",
 							}, -- [13]
 							{
 								["ts"] = 1536022502.05414,
 								["amount"] = -1697,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 251187,
 								["hp"] = 2817,
-								["srcname"] = "Toxic Saurid",
 							}, -- [14]
 							{
 								["ts"] = 1536022502.05415,
 								["amount"] = -1698,
+								["srcname"] = "Toxic Saurid",
 								["spellid"] = 251187,
 								["hp"] = 1119,
-								["srcname"] = "Toxic Saurid",
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -8970,16 +9163,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1536032026.427,
 						["amount"] = -2151,
+						["hp"] = 44943,
 						["spellid"] = 88163,
 						["srcname"] = "Makatau",
-						["hp"] = 44943,
 					}, -- [6]
 					{
 						["ts"] = 1536032027.918,
 						["amount"] = -2291,
+						["hp"] = 42792,
 						["spellid"] = 88163,
 						["srcname"] = "Makatau",
-						["hp"] = 42792,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -9016,9 +9209,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1536032111.577,
 						["amount"] = -8276,
+						["hp"] = 45484,
 						["spellid"] = 262503,
 						["srcname"] = "Urok",
-						["hp"] = 45484,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -9045,202 +9238,6 @@ SkadaPerCharDB = {
 						["spellid"] = 262519,
 					}, -- [15]
 					["pos"] = 4,
-				},
-				["auras"] = {
-					["Tainted Blood"] = {
-						["uptime"] = 5,
-						["active"] = 0,
-						["school"] = 32,
-						["id"] = 255558,
-						["auratype"] = "DEBUFF",
-						["name"] = "Tainted Blood",
-					},
-					["Find Fish"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["id"] = 43308,
-						["name"] = "Find Fish",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Bestial Wrath"] = {
-						["uptime"] = 15,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 19574,
-						["auratype"] = "BUFF",
-						["name"] = "Bestial Wrath",
-					},
-					["Frenzy"] = {
-						["uptime"] = 27,
-						["active"] = 0,
-						["id"] = 272790,
-						["name"] = "Frenzy",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Find Timber"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["id"] = 167898,
-						["name"] = "Find Timber",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Rezan's Fury"] = {
-						["uptime"] = 165,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["school"] = 1,
-						["name"] = "Rezan's Fury",
-						["id"] = 273794,
-					},
-					["Sated"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 57724,
-						["auratype"] = "DEBUFF",
-						["name"] = "Sated",
-					},
-					["Find Herbs"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["id"] = 2383,
-						["name"] = "Find Herbs",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Master's Sight"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 268602,
-						["auratype"] = "BUFF",
-						["name"] = "Master's Sight",
-					},
-					["Lola: Growl"] = {
-						["uptime"] = 35,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["id"] = 2649,
-						["name"] = "Lola: Growl",
-						["school"] = 1,
-					},
-					["Aspect of the Turtle"] = {
-						["uptime"] = 8,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 186265,
-						["auratype"] = "BUFF",
-						["name"] = "Aspect of the Turtle",
-					},
-					["Trailblazer"] = {
-						["uptime"] = 7853,
-						["active"] = 0,
-						["id"] = 231390,
-						["auratype"] = "BUFF",
-						["name"] = "Trailblazer",
-						["school"] = 1,
-					},
-					["Barbed Shot"] = {
-						["uptime"] = 7660,
-						["active"] = 0,
-						["school"] = 1,
-						["name"] = "Barbed Shot",
-						["auratype"] = "BUFF",
-						["id"] = 246851,
-					},
-					["Jitterplant"] = {
-						["name"] = "Jitterplant",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 280635,
-						["auratype"] = "BUFF",
-						["uptime"] = 305,
-					},
-					["Beast Cleave"] = {
-						["name"] = "Beast Cleave",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 28,
-						["auratype"] = "BUFF",
-						["id"] = 268877,
-					},
-					["Mana Divining Stone"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["id"] = 227723,
-						["name"] = "Mana Divining Stone",
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-					["Beast Lore"] = {
-						["uptime"] = 24,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["school"] = 8,
-						["name"] = "Beast Lore",
-						["id"] = 1462,
-					},
-					["Stabbed"] = {
-						["name"] = "Stabbed",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 252321,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 5,
-					},
-					["Vampiric Speed"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 269239,
-						["auratype"] = "BUFF",
-						["name"] = "Vampiric Speed",
-					},
-					["Dance of Death"] = {
-						["name"] = "Dance of Death",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 2515,
-						["auratype"] = "BUFF",
-						["id"] = 274443,
-					},
-					["Lola: Dash"] = {
-						["uptime"] = 7673,
-						["active"] = 0,
-						["auratype"] = "BUFF",
-						["name"] = "Lola: Dash",
-						["id"] = 61684,
-						["school"] = 1,
-					},
-					["Lola: Mortal Wounds"] = {
-						["uptime"] = 1699,
-						["active"] = 0,
-						["id"] = 115804,
-						["name"] = "Lola: Mortal Wounds",
-						["school"] = 1,
-						["auratype"] = "DEBUFF",
-					},
-					["Self Reliance"] = {
-						["uptime"] = 36,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 270661,
-						["auratype"] = "BUFF",
-						["name"] = "Self Reliance",
-					},
-					["Shark's Bite"] = {
-						["name"] = "Shark's Bite",
-						["active"] = 0,
-						["id"] = 268623,
-						["uptime"] = 227,
-						["auratype"] = "BUFF",
-						["school"] = 1,
-					},
-				},
-				["alert"] = {
 				},
 				["healingspells"] = {
 					["Self Reliance"] = {
@@ -9316,6 +9313,9 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["alert"] = {
+				},
+				["dispells"] = 0,
 			}, -- [3]
 			{
 				["healingabsorbed"] = 0,
@@ -9372,13 +9372,13 @@ SkadaPerCharDB = {
 						["hitamount"] = 23861,
 					},
 				},
-				["ccbreaks"] = 0,
+				["healing"] = 0,
 				["healed"] = {
 				},
 				["power"] = {
 				},
 				["id"] = "Spirit of Gral",
-				["healing"] = 0,
+				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["damagetakenspells"] = {
@@ -9388,8 +9388,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Spirit of Gral",
 				["alertCount"] = 0,
-				["maxhp"] = 0,
 				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["alert"] = {
 				},
 				["alertDamage"] = 0,
@@ -9421,13 +9421,13 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["healing"] = 0,
 				["healed"] = {
 				},
 				["power"] = {
 				},
 				["id"] = "Creature-0-4218-1642-10311-131461-00000D92DB",
-				["healing"] = 0,
+				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["damagetakenspells"] = {
@@ -9437,8 +9437,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Spirit of Gral",
 				["alertCount"] = 0,
-				["maxhp"] = 0,
 				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["alert"] = {
 				},
 				["alertDamage"] = 0,
@@ -9470,13 +9470,13 @@ SkadaPerCharDB = {
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["ccbreaks"] = 0,
+				["healing"] = 0,
 				["healed"] = {
 				},
 				["power"] = {
 				},
 				["id"] = "Creature-0-4218-1642-10311-131461-00000D92DD",
-				["healing"] = 0,
+				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["damagetakenspells"] = {
@@ -9486,8 +9486,8 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Spirit of Gral",
 				["alertCount"] = 0,
-				["maxhp"] = 0,
 				["shielding"] = 0,
+				["ccbreaks"] = 0,
 				["alert"] = {
 				},
 				["alertDamage"] = 0,
@@ -9496,221 +9496,12 @@ SkadaPerCharDB = {
 				["ffdamagedonespells"] = {
 				},
 				["healingabsorbed"] = 0,
-				["overhealing"] = 542309.400390625,
+				["alertDamage"] = 0,
 				["class"] = "DRUID",
 				["damaged"] = {
 				},
 				["dispells"] = 13,
-				["auras"] = {
-					["Tainted Blood"] = {
-						["name"] = "Tainted Blood",
-						["active"] = 0,
-						["school"] = 32,
-						["id"] = 255558,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 7,
-					},
-					["Efflorescence: Efflorescence"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 81262,
-						["auratype"] = "BUFF",
-						["name"] = "Efflorescence: Efflorescence",
-					},
-					["Regrowth"] = {
-						["uptime"] = 12,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 8936,
-						["auratype"] = "BUFF",
-						["name"] = "Regrowth",
-					},
-					["Wild Growth"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 48438,
-						["auratype"] = "BUFF",
-						["name"] = "Wild Growth",
-					},
-					["Solar Empowerment"] = {
-						["uptime"] = 95,
-						["active"] = 0,
-						["auratype"] = "BUFF",
-						["school"] = 8,
-						["name"] = "Solar Empowerment",
-						["id"] = 164545,
-					},
-					["Lifebloom"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 33763,
-						["auratype"] = "BUFF",
-						["name"] = "Lifebloom",
-					},
-					["Sated"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 57724,
-						["auratype"] = "DEBUFF",
-						["name"] = "Sated",
-					},
-					["Fangs of Intertwined Essence"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 271054,
-						["auratype"] = "BUFF",
-						["name"] = "Fangs of Intertwined Essence",
-					},
-					["Nether Anti-Toxin"] = {
-						["uptime"] = 54,
-						["active"] = 0,
-						["school"] = 72,
-						["id"] = 214142,
-						["auratype"] = "BUFF",
-						["name"] = "Nether Anti-Toxin",
-					},
-					["Ursol's Vortex"] = {
-						["name"] = "Ursol's Vortex",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 127797,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 9,
-					},
-					["Resounding Protection"] = {
-						["name"] = "Resounding Protection",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 269279,
-						["auratype"] = "BUFF",
-						["uptime"] = 667,
-					},
-					["Moonkin Form"] = {
-						["uptime"] = 44,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 197625,
-						["auratype"] = "BUFF",
-						["name"] = "Moonkin Form",
-					},
-					["Tranquility"] = {
-						["name"] = "Tranquility",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 740,
-						["auratype"] = "BUFF",
-						["uptime"] = 15,
-					},
-					["Clearcasting"] = {
-						["name"] = "Clearcasting",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 16870,
-						["auratype"] = "BUFF",
-						["uptime"] = 161,
-					},
-					["Unknown: Efflorescence"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 81262,
-						["auratype"] = "BUFF",
-						["name"] = "Unknown: Efflorescence",
-					},
-					["Sunfire"] = {
-						["uptime"] = 271,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["school"] = 8,
-						["name"] = "Sunfire",
-						["id"] = 164815,
-					},
-					["Moonfire"] = {
-						["uptime"] = 171,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["school"] = 64,
-						["name"] = "Moonfire",
-						["id"] = 164812,
-					},
-					["Swirling Sands"] = {
-						["uptime"] = 18,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 280433,
-						["auratype"] = "BUFF",
-						["name"] = "Swirling Sands",
-					},
-					["Rejuvenation"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 774,
-						["auratype"] = "BUFF",
-						["name"] = "Rejuvenation",
-					},
-					["Rejuvenation (Germination)"] = {
-						["uptime"] = 566,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 155777,
-						["auratype"] = "BUFF",
-						["name"] = "Rejuvenation (Germination)",
-					},
-					["Grove Tending"] = {
-						["name"] = "Grove Tending",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 279793,
-						["auratype"] = "BUFF",
-						["uptime"] = 36,
-					},
-					["Molten Gold"] = {
-						["name"] = "Molten Gold",
-						["active"] = 0,
-						["school"] = 4,
-						["id"] = 255582,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 2,
-					},
-					["Ironbark"] = {
-						["name"] = "Ironbark",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 102342,
-						["auratype"] = "BUFF",
-						["uptime"] = 12,
-					},
-					["Lunar Empowerment"] = {
-						["uptime"] = 107,
-						["active"] = 0,
-						["id"] = 164547,
-						["school"] = 64,
-						["name"] = "Lunar Empowerment",
-						["auratype"] = "BUFF",
-					},
-					["Incarnation: Tree of Life"] = {
-						["name"] = "Incarnation: Tree of Life",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 33891,
-						["auratype"] = "BUFF",
-						["uptime"] = 30,
-					},
-					["Incarnation"] = {
-						["name"] = "Incarnation",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 117679,
-						["auratype"] = "BUFF",
-						["uptime"] = 30,
-					},
-				},
+				["overhealing"] = 542309.400390625,
 				["ffdamagedone"] = 0,
 				["time"] = 650,
 				["interrupts"] = 0,
@@ -9809,23 +9600,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022497.10501,
 								["amount"] = -589,
+								["hp"] = 9820,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 9820,
 							}, -- [1]
 							{
 								["ts"] = 1536022497.10502,
 								["amount"] = -589,
+								["hp"] = 9299,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 9299,
 							}, -- [2]
 							{
 								["ts"] = 1536022497.24103,
 								["amount"] = -7442,
+								["hp"] = 9299,
 								["spellid"] = 88163,
 								["srcname"] = "T'lonja",
-								["hp"] = 9299,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -9846,23 +9637,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022497.93506,
 								["amount"] = -580,
+								["hp"] = 5295,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5295,
 							}, -- [6]
 							{
 								["ts"] = 1536022497.93507,
 								["amount"] = -506,
+								["hp"] = 5295,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5295,
 							}, -- [7]
 							{
 								["ts"] = 1536022497.95108,
 								["amount"] = -15862,
+								["hp"] = 5295,
 								["spellid"] = 88163,
 								["srcname"] = "Monzumi",
-								["hp"] = 5295,
 							}, -- [8]
 							{
 								["spellname"] = "Cptskinner dies",
@@ -9881,9 +9672,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022496.09311,
 								["amount"] = -1137,
+								["hp"] = 12888,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 12888,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -9896,23 +9687,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022496.12513,
 								["amount"] = -589,
+								["hp"] = 14377,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 14377,
 							}, -- [13]
 							{
 								["ts"] = 1536022497.08714,
 								["amount"] = -1713,
+								["hp"] = 11856,
 								["spellid"] = 251187,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 11856,
 							}, -- [14]
 							{
 								["ts"] = 1536022497.08715,
 								["amount"] = -1713,
+								["hp"] = 10341,
 								["spellid"] = 251187,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 10341,
 							}, -- [15]
 							["pos"] = 10,
 						},
@@ -10352,9 +10143,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 2,
 				},
-				["alertDamage"] = 0,
-				["alert"] = {
-				},
 				["healingspells"] = {
 					["Grove Tending"] = {
 						["shielding"] = 0,
@@ -10513,16 +10301,8 @@ SkadaPerCharDB = {
 						["hits"] = 78,
 					},
 				},
-			}, -- [7]
-			{
-				["ffdamagedonespells"] = {
+				["alert"] = {
 				},
-				["healingabsorbed"] = 0,
-				["overhealing"] = 380489.551269531,
-				["class"] = "SHAMAN",
-				["damaged"] = {
-				},
-				["dispells"] = 0,
 				["auras"] = {
 					["Tainted Blood"] = {
 						["name"] = "Tainted Blood",
@@ -10530,71 +10310,47 @@ SkadaPerCharDB = {
 						["school"] = 32,
 						["id"] = 255558,
 						["auratype"] = "DEBUFF",
-						["uptime"] = 3,
+						["uptime"] = 7,
 					},
-					["Crash Lightning"] = {
+					["Efflorescence: Efflorescence"] = {
 						["uptime"] = 0,
 						["active"] = 0,
 						["school"] = 8,
-						["id"] = 187878,
+						["id"] = 81262,
 						["auratype"] = "BUFF",
-						["name"] = "Crash Lightning",
+						["name"] = "Efflorescence: Efflorescence",
 					},
-					["Spirit Wolf: Molten Weapon"] = {
-						["name"] = "Spirit Wolf: Molten Weapon",
+					["Regrowth"] = {
+						["uptime"] = 12,
 						["active"] = 0,
-						["school"] = 4,
-						["id"] = 224125,
+						["school"] = 8,
+						["id"] = 8936,
 						["auratype"] = "BUFF",
-						["uptime"] = 15,
+						["name"] = "Regrowth",
 					},
-					["Reincarnation"] = {
+					["Wild Growth"] = {
 						["uptime"] = 0,
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 225080,
-						["auratype"] = "DEBUFF",
-						["name"] = "Reincarnation",
-					},
-					["Searing Assault"] = {
-						["name"] = "Searing Assault",
-						["active"] = 0,
-						["school"] = 4,
-						["id"] = 268429,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 145,
-					},
-					["Roiling Storm"] = {
-						["uptime"] = 1061,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 279515,
+						["school"] = 8,
+						["id"] = 48438,
 						["auratype"] = "BUFF",
-						["name"] = "Roiling Storm",
+						["name"] = "Wild Growth",
 					},
-					["Gathering Storms"] = {
-						["name"] = "Gathering Storms",
+					["Solar Empowerment"] = {
+						["uptime"] = 95,
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 198300,
 						["auratype"] = "BUFF",
-						["uptime"] = 323,
+						["school"] = 8,
+						["name"] = "Solar Empowerment",
+						["id"] = 164545,
 					},
-					["Icy Edge"] = {
-						["name"] = "Icy Edge",
+					["Lifebloom"] = {
+						["uptime"] = 0,
 						["active"] = 0,
-						["school"] = 16,
-						["id"] = 271920,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 9,
-					},
-					["Forceful Winds"] = {
-						["uptime"] = 15,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 262652,
+						["school"] = 8,
+						["id"] = 33763,
 						["auratype"] = "BUFF",
-						["name"] = "Forceful Winds",
+						["name"] = "Lifebloom",
 					},
 					["Sated"] = {
 						["uptime"] = 0,
@@ -10604,103 +10360,170 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["name"] = "Sated",
 					},
-					["Ghost Wolf"] = {
-						["name"] = "Ghost Wolf",
+					["Fangs of Intertwined Essence"] = {
+						["uptime"] = 0,
 						["active"] = 0,
 						["school"] = 8,
-						["id"] = 2645,
+						["id"] = 271054,
 						["auratype"] = "BUFF",
-						["uptime"] = 2,
+						["name"] = "Fangs of Intertwined Essence",
 					},
-					["Stormbringer"] = {
-						["uptime"] = 30,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 201846,
-						["auratype"] = "BUFF",
-						["name"] = "Stormbringer",
-					},
-					["Strength of Earth"] = {
-						["name"] = "Strength of Earth",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 273465,
-						["auratype"] = "BUFF",
-						["uptime"] = 704,
-					},
-					["Bloodlust"] = {
-						["name"] = "Bloodlust",
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 2825,
-						["auratype"] = "BUFF",
-						["uptime"] = 40,
-					},
-					["Windfury"] = {
+					["Nether Anti-Toxin"] = {
 						["uptime"] = 54,
 						["active"] = 0,
-						["id"] = 205648,
-						["school"] = 8,
-						["name"] = "Windfury",
+						["school"] = 72,
+						["id"] = 214142,
 						["auratype"] = "BUFF",
+						["name"] = "Nether Anti-Toxin",
 					},
-					["Spirit Wolf: Crackling Surge"] = {
-						["name"] = "Spirit Wolf: Crackling Surge",
+					["Ursol's Vortex"] = {
+						["name"] = "Ursol's Vortex",
 						["active"] = 0,
 						["school"] = 8,
-						["id"] = 224127,
-						["auratype"] = "BUFF",
-						["uptime"] = 15,
-					},
-					["Vampiric Speed"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 269239,
-						["auratype"] = "BUFF",
-						["name"] = "Vampiric Speed",
-					},
-					["Capacitor Totem: Static Charge"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 8,
-						["id"] = 118905,
+						["id"] = 127797,
 						["auratype"] = "DEBUFF",
-						["name"] = "Capacitor Totem: Static Charge",
-					},
-					["Sundering"] = {
-						["uptime"] = 6,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["school"] = 5,
-						["name"] = "Sundering",
-						["id"] = 197214,
-					},
-					["Flametongue"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 4,
-						["id"] = 194084,
-						["auratype"] = "BUFF",
-						["name"] = "Flametongue",
+						["uptime"] = 9,
 					},
 					["Resounding Protection"] = {
-						["uptime"] = 191,
+						["name"] = "Resounding Protection",
 						["active"] = 0,
 						["school"] = 1,
 						["id"] = 269279,
 						["auratype"] = "BUFF",
-						["name"] = "Resounding Protection",
+						["uptime"] = 667,
 					},
-					["Molten Weapon"] = {
-						["uptime"] = 55,
+					["Moonkin Form"] = {
+						["uptime"] = 44,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 197625,
+						["auratype"] = "BUFF",
+						["name"] = "Moonkin Form",
+					},
+					["Tranquility"] = {
+						["name"] = "Tranquility",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 740,
+						["auratype"] = "BUFF",
+						["uptime"] = 15,
+					},
+					["Clearcasting"] = {
+						["name"] = "Clearcasting",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 16870,
+						["auratype"] = "BUFF",
+						["uptime"] = 161,
+					},
+					["Unknown: Efflorescence"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 81262,
+						["auratype"] = "BUFF",
+						["name"] = "Unknown: Efflorescence",
+					},
+					["Rejuvenation"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 774,
+						["auratype"] = "BUFF",
+						["name"] = "Rejuvenation",
+					},
+					["Moonfire"] = {
+						["uptime"] = 171,
 						["active"] = 0,
 						["auratype"] = "DEBUFF",
+						["school"] = 64,
+						["name"] = "Moonfire",
+						["id"] = 164812,
+					},
+					["Swirling Sands"] = {
+						["uptime"] = 18,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 280433,
+						["auratype"] = "BUFF",
+						["name"] = "Swirling Sands",
+					},
+					["Lunar Empowerment"] = {
+						["uptime"] = 107,
+						["active"] = 0,
+						["id"] = 164547,
+						["school"] = 64,
+						["name"] = "Lunar Empowerment",
+						["auratype"] = "BUFF",
+					},
+					["Rejuvenation (Germination)"] = {
+						["uptime"] = 566,
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 155777,
+						["auratype"] = "BUFF",
+						["name"] = "Rejuvenation (Germination)",
+					},
+					["Grove Tending"] = {
+						["name"] = "Grove Tending",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 279793,
+						["auratype"] = "BUFF",
+						["uptime"] = 36,
+					},
+					["Molten Gold"] = {
+						["name"] = "Molten Gold",
+						["active"] = 0,
 						["school"] = 4,
-						["name"] = "Molten Weapon",
-						["id"] = 271924,
+						["id"] = 255582,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 2,
+					},
+					["Ironbark"] = {
+						["name"] = "Ironbark",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 102342,
+						["auratype"] = "BUFF",
+						["uptime"] = 12,
+					},
+					["Sunfire"] = {
+						["uptime"] = 271,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["school"] = 8,
+						["name"] = "Sunfire",
+						["id"] = 164815,
+					},
+					["Incarnation: Tree of Life"] = {
+						["name"] = "Incarnation: Tree of Life",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 33891,
+						["auratype"] = "BUFF",
+						["uptime"] = 30,
+					},
+					["Incarnation"] = {
+						["name"] = "Incarnation",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 117679,
+						["auratype"] = "BUFF",
+						["uptime"] = 30,
 					},
 				},
+			}, -- [7]
+			{
+				["ffdamagedonespells"] = {
+				},
+				["healingabsorbed"] = 0,
+				["alertDamage"] = 0,
+				["class"] = "SHAMAN",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["overhealing"] = 380489.551269531,
 				["ffdamagedone"] = 0,
 				["time"] = 652,
 				["interrupts"] = 5,
@@ -11032,23 +10855,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022506.46503,
 								["amount"] = -7849,
+								["hp"] = 25206,
 								["spellid"] = 88163,
 								["srcname"] = "T'lonja",
-								["hp"] = 25206,
 							}, -- [3]
 							{
 								["ts"] = 1536022508.46904,
 								["amount"] = -6987,
+								["hp"] = 13555,
 								["spellid"] = 88163,
 								["srcname"] = "T'lonja",
-								["hp"] = 13555,
 							}, -- [4]
 							{
 								["ts"] = 1536022508.88705,
 								["amount"] = -8294,
+								["hp"] = 3184,
 								["spellid"] = 88163,
 								["srcname"] = "Monzumi",
-								["hp"] = 3184,
 							}, -- [5]
 							{
 								["spellname"] = "Èffy dies",
@@ -11066,79 +10889,79 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022483.95301,
 								["amount"] = -700,
+								["hp"] = 16448,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 16448,
 							}, -- [1]
 							{
 								["ts"] = 1536022483.96902,
 								["amount"] = -604,
+								["hp"] = 15550,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 15550,
 							}, -- [2]
 							{
 								["ts"] = 1536022484.60003,
 								["amount"] = -1740,
+								["hp"] = 11927,
 								["spellid"] = 251187,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 11927,
 							}, -- [3]
 							{
 								["ts"] = 1536022484.61804,
 								["amount"] = -604,
+								["hp"] = 11029,
 								["srcname"] = "Toxic Saurid",
 								["spellid"] = 255895,
-								["hp"] = 11029,
 							}, -- [4]
 							{
 								["ts"] = 1536022486.08805,
 								["amount"] = -1469,
+								["hp"] = 11029,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 11029,
 							}, -- [5]
 							{
 								["ts"] = 1536022486.12306,
 								["amount"] = -604,
+								["hp"] = 10132,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 10132,
 							}, -- [6]
 							{
 								["ts"] = 1536022487.59507,
 								["amount"] = -679,
+								["hp"] = 7951,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 7951,
 							}, -- [7]
 							{
 								["ts"] = 1536022487.61108,
 								["amount"] = -604,
+								["hp"] = 7054,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 7054,
 							}, -- [8]
 							{
 								["ts"] = 1536022487.91609,
 								["amount"] = -1740,
+								["hp"] = 3463,
 								["spellid"] = 251187,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 3463,
 							}, -- [9]
 							{
 								["ts"] = 1536022487.9331,
 								["amount"] = -604,
+								["hp"] = 2566,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 2566,
 							}, -- [10]
 							{
 								["ts"] = 1536022488.46211,
 								["amount"] = -1740,
+								["hp"] = 1,
 								["spellid"] = 251187,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 1,
 							}, -- [11]
 							{
 								["spellname"] = "Èffy dies",
@@ -11149,23 +10972,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022481.09413,
 								["amount"] = -604,
+								["hp"] = 18322,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 18322,
 							}, -- [13]
 							{
 								["ts"] = 1536022482.44814,
 								["amount"] = -657,
+								["hp"] = 18322,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 18322,
 							}, -- [14]
 							{
 								["ts"] = 1536022482.46615,
 								["amount"] = -604,
+								["hp"] = 17424,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 17424,
 							}, -- [15]
 							["pos"] = 13,
 						},
@@ -11451,9 +11274,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1536023083.039,
 						["amount"] = -4578,
+						["hp"] = 60239,
 						["spellid"] = 250096,
 						["srcname"] = "Yazma",
-						["hp"] = 60239,
 					}, -- [2]
 					{
 						["ts"] = 1536023087.79,
@@ -11561,9 +11384,6 @@ SkadaPerCharDB = {
 					}, -- [15]
 					["pos"] = 8,
 				},
-				["alertDamage"] = 0,
-				["alert"] = {
-				},
 				["healingspells"] = {
 					["Healing Surge"] = {
 						["shielding"] = 0,
@@ -11614,16 +11434,8 @@ SkadaPerCharDB = {
 						["hits"] = 78,
 					},
 				},
-			}, -- [8]
-			{
-				["ffdamagedonespells"] = {
+				["alert"] = {
 				},
-				["healingabsorbed"] = 0,
-				["overhealing"] = 361841.792572022,
-				["class"] = "DEATHKNIGHT",
-				["damaged"] = {
-				},
-				["dispells"] = 0,
 				["auras"] = {
 					["Tainted Blood"] = {
 						["name"] = "Tainted Blood",
@@ -11631,95 +11443,71 @@ SkadaPerCharDB = {
 						["school"] = 32,
 						["id"] = 255558,
 						["auratype"] = "DEBUFF",
-						["uptime"] = 4,
+						["uptime"] = 3,
 					},
-					["Rune Weapon: Blood Plague"] = {
+					["Crash Lightning"] = {
 						["uptime"] = 0,
 						["active"] = 0,
-						["school"] = 32,
-						["id"] = 55078,
-						["auratype"] = "DEBUFF",
-						["name"] = "Rune Weapon: Blood Plague",
-					},
-					["Blood Shield"] = {
-						["uptime"] = 25,
-						["active"] = 0,
-						["school"] = 32,
-						["id"] = 77535,
+						["school"] = 8,
+						["id"] = 187878,
 						["auratype"] = "BUFF",
-						["name"] = "Blood Shield",
+						["name"] = "Crash Lightning",
 					},
-					["Dancing Rune Weapon"] = {
-						["uptime"] = 19,
+					["Spirit Wolf: Molten Weapon"] = {
+						["name"] = "Spirit Wolf: Molten Weapon",
 						["active"] = 0,
-						["id"] = 81256,
-						["school"] = 1,
-						["name"] = "Dancing Rune Weapon",
+						["school"] = 4,
+						["id"] = 224125,
 						["auratype"] = "BUFF",
+						["uptime"] = 15,
 					},
-					["Blood Plague"] = {
-						["name"] = "Blood Plague",
-						["active"] = 0,
-						["school"] = 32,
-						["id"] = 55078,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 530,
-					},
-					["Will of the Loa"] = {
+					["Reincarnation"] = {
 						["uptime"] = 0,
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 273974,
-						["auratype"] = "BUFF",
-						["name"] = "Will of the Loa",
-					},
-					["Icebound Fortitude"] = {
-						["name"] = "Icebound Fortitude",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 48792,
-						["auratype"] = "BUFF",
-						["uptime"] = 8,
-					},
-					["Heart Strike"] = {
-						["name"] = "Heart Strike",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 206930,
+						["id"] = 225080,
 						["auratype"] = "DEBUFF",
-						["uptime"] = 275,
+						["name"] = "Reincarnation",
 					},
-					["Bulwark of the Masses"] = {
-						["name"] = "Bulwark of the Masses",
+					["Searing Assault"] = {
+						["name"] = "Searing Assault",
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 270657,
-						["auratype"] = "BUFF",
-						["uptime"] = 29,
-					},
-					["Crimson Scourge"] = {
-						["uptime"] = 3,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 81141,
-						["auratype"] = "BUFF",
-						["name"] = "Crimson Scourge",
-					},
-					["Dark Command"] = {
-						["name"] = "Dark Command",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 56222,
+						["school"] = 4,
+						["id"] = 268429,
 						["auratype"] = "DEBUFF",
-						["uptime"] = 6,
+						["uptime"] = 145,
 					},
-					["Rune Weapon: Recently Used Death Strike"] = {
-						["uptime"] = 3,
+					["Roiling Storm"] = {
+						["uptime"] = 1061,
 						["active"] = 0,
-						["school"] = 32,
-						["id"] = 180612,
+						["school"] = 1,
+						["id"] = 279515,
 						["auratype"] = "BUFF",
-						["name"] = "Rune Weapon: Recently Used Death Strike",
+						["name"] = "Roiling Storm",
+					},
+					["Gathering Storms"] = {
+						["name"] = "Gathering Storms",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 198300,
+						["auratype"] = "BUFF",
+						["uptime"] = 323,
+					},
+					["Icy Edge"] = {
+						["name"] = "Icy Edge",
+						["active"] = 0,
+						["school"] = 16,
+						["id"] = 271920,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 9,
+					},
+					["Forceful Winds"] = {
+						["uptime"] = 15,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 262652,
+						["auratype"] = "BUFF",
+						["name"] = "Forceful Winds",
 					},
 					["Sated"] = {
 						["uptime"] = 0,
@@ -11729,71 +11517,114 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["name"] = "Sated",
 					},
-					["Bone Shield"] = {
-						["uptime"] = 183,
+					["Ghost Wolf"] = {
+						["name"] = "Ghost Wolf",
 						["active"] = 0,
-						["school"] = 32,
-						["id"] = 195181,
+						["school"] = 8,
+						["id"] = 2645,
 						["auratype"] = "BUFF",
-						["name"] = "Bone Shield",
+						["uptime"] = 2,
 					},
-					["Anti-Magic Shell"] = {
-						["name"] = "Anti-Magic Shell",
+					["Stormbringer"] = {
+						["uptime"] = 30,
 						["active"] = 0,
-						["school"] = 32,
-						["id"] = 48707,
+						["school"] = 1,
+						["id"] = 201846,
+						["auratype"] = "BUFF",
+						["name"] = "Stormbringer",
+					},
+					["Strength of Earth"] = {
+						["name"] = "Strength of Earth",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 273465,
+						["auratype"] = "BUFF",
+						["uptime"] = 704,
+					},
+					["Bloodlust"] = {
+						["name"] = "Bloodlust",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 2825,
+						["auratype"] = "BUFF",
+						["uptime"] = 40,
+					},
+					["Windfury"] = {
+						["uptime"] = 54,
+						["active"] = 0,
+						["id"] = 205648,
+						["school"] = 8,
+						["name"] = "Windfury",
+						["auratype"] = "BUFF",
+					},
+					["Spirit Wolf: Crackling Surge"] = {
+						["name"] = "Spirit Wolf: Crackling Surge",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 224127,
 						["auratype"] = "BUFF",
 						["uptime"] = 15,
 					},
-					["Eternal Rune Weapon"] = {
-						["uptime"] = 20,
-						["active"] = 0,
-						["id"] = 278543,
-						["school"] = 1,
-						["name"] = "Eternal Rune Weapon",
-						["auratype"] = "BUFF",
-					},
-					["Death and Decay"] = {
-						["uptime"] = 51,
-						["active"] = 0,
-						["school"] = 32,
-						["id"] = 188290,
-						["auratype"] = "BUFF",
-						["name"] = "Death and Decay",
-					},
-					["Asphyxiate"] = {
-						["name"] = "Asphyxiate",
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 221562,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 15,
-					},
-					["Recently Used Death Strike"] = {
-						["uptime"] = 188,
-						["active"] = 0,
-						["school"] = 32,
-						["id"] = 180612,
-						["auratype"] = "BUFF",
-						["name"] = "Recently Used Death Strike",
-					},
-					["Rune Weapon: Heart Strike"] = {
+					["Vampiric Speed"] = {
 						["uptime"] = 0,
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 228645,
-						["auratype"] = "DEBUFF",
-						["name"] = "Rune Weapon: Heart Strike",
+						["id"] = 269239,
+						["auratype"] = "BUFF",
+						["name"] = "Vampiric Speed",
 					},
-					["Death Grip"] = {
-						["uptime"] = 27,
+					["Capacitor Totem: Static Charge"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 118905,
+						["auratype"] = "DEBUFF",
+						["name"] = "Capacitor Totem: Static Charge",
+					},
+					["Sundering"] = {
+						["uptime"] = 6,
 						["active"] = 0,
 						["auratype"] = "DEBUFF",
+						["school"] = 5,
+						["name"] = "Sundering",
+						["id"] = 197214,
+					},
+					["Flametongue"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 4,
+						["id"] = 194084,
+						["auratype"] = "BUFF",
+						["name"] = "Flametongue",
+					},
+					["Resounding Protection"] = {
+						["uptime"] = 191,
+						["active"] = 0,
 						["school"] = 1,
-						["name"] = "Death Grip",
-						["id"] = 51399,
+						["id"] = 269279,
+						["auratype"] = "BUFF",
+						["name"] = "Resounding Protection",
+					},
+					["Molten Weapon"] = {
+						["uptime"] = 55,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["school"] = 4,
+						["name"] = "Molten Weapon",
+						["id"] = 271924,
 					},
 				},
+			}, -- [8]
+			{
+				["ffdamagedonespells"] = {
+				},
+				["healingabsorbed"] = 0,
+				["alertDamage"] = 0,
+				["class"] = "DEATHKNIGHT",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["overhealing"] = 361841.792572022,
 				["ffdamagedone"] = 0,
 				["time"] = 662,
 				["interrupts"] = 2,
@@ -12068,23 +11899,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022505.82201,
 								["amount"] = -418,
+								["hp"] = 5068,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5068,
 							}, -- [1]
 							{
 								["ts"] = 1536022505.82202,
 								["amount"] = -488,
+								["hp"] = 5068,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5068,
 							}, -- [2]
 							{
 								["ts"] = 1536022505.84803,
 								["amount"] = -1704,
+								["hp"] = 2074,
 								["spellid"] = 251187,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 2074,
 							}, -- [3]
 							{
 								["spellname"] = "Risenlefty dies",
@@ -12095,51 +11926,51 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022505.34305,
 								["amount"] = -2013,
+								["hp"] = 16539,
 								["spellid"] = 88163,
 								["srcname"] = "Feasting Skyscreamer",
-								["hp"] = 16539,
 							}, -- [5]
 							{
 								["ts"] = 1536022505.54306,
 								["amount"] = -537,
+								["hp"] = 16539,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 16539,
 							}, -- [6]
 							{
 								["ts"] = 1536022505.54307,
 								["amount"] = -515,
+								["hp"] = 16539,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 16539,
 							}, -- [7]
 							{
 								["ts"] = 1536022505.55908,
 								["amount"] = -593,
+								["hp"] = 15497,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 15497,
 							}, -- [8]
 							{
 								["ts"] = 1536022505.55909,
 								["amount"] = -592,
+								["hp"] = 14456,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 14456,
 							}, -- [9]
 							{
 								["ts"] = 1536022505.6281,
 								["amount"] = -1704,
+								["hp"] = 11462,
 								["spellid"] = 251187,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 11462,
 							}, -- [10]
 							{
 								["ts"] = 1536022505.65311,
 								["amount"] = -593,
+								["hp"] = 5032,
 								["spellid"] = 255895,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5032,
 							}, -- [11]
 							{
 								["ts"] = 1536022505.66712,
@@ -12152,23 +11983,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1536022505.82113,
 								["amount"] = -401,
+								["hp"] = 5068,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5068,
 							}, -- [13]
 							{
 								["ts"] = 1536022505.82114,
 								["amount"] = -469,
+								["hp"] = 5068,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5068,
 							}, -- [14]
 							{
 								["ts"] = 1536022505.82115,
 								["amount"] = -584,
+								["hp"] = 5068,
 								["spellid"] = 88163,
 								["srcname"] = "Toxic Saurid",
-								["hp"] = 5068,
 							}, -- [15]
 							["pos"] = 5,
 						},
@@ -12556,9 +12387,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1536023118.89,
 						["amount"] = -4865,
+						["hp"] = 200579,
 						["spellid"] = 88163,
 						["srcname"] = "Yazma",
-						["hp"] = 200579,
 					}, -- [2]
 					{
 						["ts"] = 1536023119.867,
@@ -12603,9 +12434,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1536023107.424,
 						["amount"] = -3619,
+						["hp"] = 196882,
 						["spellid"] = 88163,
 						["srcname"] = "Yazma",
-						["hp"] = 196882,
 					}, -- [8]
 					{
 						["absorb"] = 0,
@@ -12664,9 +12495,6 @@ SkadaPerCharDB = {
 						["spellid"] = 88163,
 					}, -- [15]
 					["pos"] = 8,
-				},
-				["alertDamage"] = 0,
-				["alert"] = {
 				},
 				["healingspells"] = {
 					["Rune Weapon: Death Strike"] = {
@@ -12752,6 +12580,178 @@ SkadaPerCharDB = {
 						["max"] = 11569,
 						["overhealing"] = 214309,
 						["hits"] = 64,
+					},
+				},
+				["alert"] = {
+				},
+				["auras"] = {
+					["Tainted Blood"] = {
+						["name"] = "Tainted Blood",
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 255558,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 4,
+					},
+					["Rune Weapon: Blood Plague"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 55078,
+						["auratype"] = "DEBUFF",
+						["name"] = "Rune Weapon: Blood Plague",
+					},
+					["Blood Shield"] = {
+						["uptime"] = 25,
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 77535,
+						["auratype"] = "BUFF",
+						["name"] = "Blood Shield",
+					},
+					["Dancing Rune Weapon"] = {
+						["uptime"] = 19,
+						["active"] = 0,
+						["id"] = 81256,
+						["school"] = 1,
+						["name"] = "Dancing Rune Weapon",
+						["auratype"] = "BUFF",
+					},
+					["Blood Plague"] = {
+						["name"] = "Blood Plague",
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 55078,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 530,
+					},
+					["Will of the Loa"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 273974,
+						["auratype"] = "BUFF",
+						["name"] = "Will of the Loa",
+					},
+					["Icebound Fortitude"] = {
+						["name"] = "Icebound Fortitude",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 48792,
+						["auratype"] = "BUFF",
+						["uptime"] = 8,
+					},
+					["Heart Strike"] = {
+						["name"] = "Heart Strike",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 206930,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 275,
+					},
+					["Bulwark of the Masses"] = {
+						["name"] = "Bulwark of the Masses",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 270657,
+						["auratype"] = "BUFF",
+						["uptime"] = 29,
+					},
+					["Crimson Scourge"] = {
+						["uptime"] = 3,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 81141,
+						["auratype"] = "BUFF",
+						["name"] = "Crimson Scourge",
+					},
+					["Dark Command"] = {
+						["name"] = "Dark Command",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 56222,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 6,
+					},
+					["Rune Weapon: Recently Used Death Strike"] = {
+						["uptime"] = 3,
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 180612,
+						["auratype"] = "BUFF",
+						["name"] = "Rune Weapon: Recently Used Death Strike",
+					},
+					["Sated"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 57724,
+						["auratype"] = "DEBUFF",
+						["name"] = "Sated",
+					},
+					["Bone Shield"] = {
+						["uptime"] = 183,
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 195181,
+						["auratype"] = "BUFF",
+						["name"] = "Bone Shield",
+					},
+					["Anti-Magic Shell"] = {
+						["name"] = "Anti-Magic Shell",
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 48707,
+						["auratype"] = "BUFF",
+						["uptime"] = 15,
+					},
+					["Eternal Rune Weapon"] = {
+						["uptime"] = 20,
+						["active"] = 0,
+						["id"] = 278543,
+						["school"] = 1,
+						["name"] = "Eternal Rune Weapon",
+						["auratype"] = "BUFF",
+					},
+					["Death and Decay"] = {
+						["uptime"] = 51,
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 188290,
+						["auratype"] = "BUFF",
+						["name"] = "Death and Decay",
+					},
+					["Asphyxiate"] = {
+						["name"] = "Asphyxiate",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 221562,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 15,
+					},
+					["Recently Used Death Strike"] = {
+						["uptime"] = 188,
+						["active"] = 0,
+						["school"] = 32,
+						["id"] = 180612,
+						["auratype"] = "BUFF",
+						["name"] = "Recently Used Death Strike",
+					},
+					["Rune Weapon: Heart Strike"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 228645,
+						["auratype"] = "DEBUFF",
+						["name"] = "Rune Weapon: Heart Strike",
+					},
+					["Death Grip"] = {
+						["uptime"] = 27,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["school"] = 1,
+						["name"] = "Death Grip",
+						["id"] = 51399,
 					},
 				},
 			}, -- [9]
@@ -12922,12 +12922,12 @@ SkadaPerCharDB = {
 						["damage"] = 3039,
 					},
 				},
-				["role"] = "NONE",
+				["healing"] = 0,
 				["damagetaken"] = 0,
 				["power"] = {
 				},
 				["id"] = "Player-75-09B60839",
-				["healing"] = 0,
+				["maxhp"] = 0,
 				["name"] = "Alaindii",
 				["damagetakenspells"] = {
 				},
@@ -12937,9 +12937,9 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["maxhp"] = 0,
 				["deathlog"] = {
 				},
+				["role"] = "NONE",
 				["alert"] = {
 				},
 				["auras"] = {
@@ -15044,48 +15044,6 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Poisonous Gekkota"] = {
-				["players"] = {
-					["Risenlefty-Gorefiend"] = {
-						["taken"] = 3318,
-						["done"] = 0,
-						["role"] = "TANK",
-						["class"] = "DEATHKNIGHT",
-					},
-				},
-				["hdone"] = 0,
-				["done"] = 0,
-				["taken"] = 3318,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Infected Saurolisk"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 274269,
-						["done"] = 19831,
-						["role"] = "DAMAGER",
-						["class"] = "WARRIOR",
-					},
-					["Lillys-Blackhand"] = {
-						["taken"] = 168273,
-						["done"] = 9256,
-						["role"] = "DAMAGER",
-						["class"] = "HUNTER",
-					},
-				},
-				["hdone"] = 0,
-				["done"] = 29087,
-				["taken"] = 442542,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
 			["Priestess Alun'za"] = {
 				["players"] = {
 					["Shanyt"] = {
@@ -15142,6 +15100,48 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 9,
 					},
+				},
+			},
+			["Infected Saurolisk"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 274269,
+						["done"] = 19831,
+						["role"] = "DAMAGER",
+						["class"] = "WARRIOR",
+					},
+					["Lillys-Blackhand"] = {
+						["taken"] = 168273,
+						["done"] = 9256,
+						["role"] = "DAMAGER",
+						["class"] = "HUNTER",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 29087,
+				["taken"] = 442542,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Poisonous Gekkota"] = {
+				["players"] = {
+					["Risenlefty-Gorefiend"] = {
+						["taken"] = 3318,
+						["done"] = 0,
+						["role"] = "TANK",
+						["class"] = "DEATHKNIGHT",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 3318,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
 				},
 			},
 			["Skyterror Broodmother"] = {
@@ -15605,53 +15605,27 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Monzumi"] = {
+			["Stormbound Conqueror"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 54786,
-						["done"] = 9641,
+						["taken"] = 44902,
+						["done"] = 10096,
 						["role"] = "DAMAGER",
 						["class"] = "WARRIOR",
 					},
-					["Risenlefty-Gorefiend"] = {
-						["taken"] = 57036,
-						["done"] = 90095,
-						["role"] = "TANK",
-						["class"] = "DEATHKNIGHT",
-					},
-					["Cptskinner-Zul'jin"] = {
-						["taken"] = 13553,
-						["done"] = 15862,
-						["role"] = "HEALER",
-						["class"] = "DRUID",
-					},
 					["Lillys-Blackhand"] = {
-						["taken"] = 4386,
+						["taken"] = 40030,
 						["done"] = 0,
 						["role"] = "DAMAGER",
 						["class"] = "HUNTER",
 					},
-					["Èffy-WyrmrestAccord"] = {
-						["taken"] = 137631,
-						["done"] = 19820,
-						["role"] = "DAMAGER",
-						["class"] = "SHAMAN",
-					},
 				},
 				["hdone"] = 0,
-				["done"] = 135418,
-				["taken"] = 267392,
+				["done"] = 10096,
+				["taken"] = 84932,
 				["htakenspell"] = {
-					["Dino Might"] = {
-						["min"] = 1676,
-						["crits"] = 0,
-						["max"] = 2235,
-						["healing"] = 40230,
-						["overhealing"] = 0,
-						["hits"] = 20,
-					},
 				},
-				["htaken"] = 40230,
+				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
@@ -15703,27 +15677,53 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 			},
-			["Stormbound Conqueror"] = {
+			["Monzumi"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 44902,
-						["done"] = 10096,
+						["taken"] = 54786,
+						["done"] = 9641,
 						["role"] = "DAMAGER",
 						["class"] = "WARRIOR",
 					},
+					["Risenlefty-Gorefiend"] = {
+						["taken"] = 57036,
+						["done"] = 90095,
+						["role"] = "TANK",
+						["class"] = "DEATHKNIGHT",
+					},
+					["Cptskinner-Zul'jin"] = {
+						["taken"] = 13553,
+						["done"] = 15862,
+						["role"] = "HEALER",
+						["class"] = "DRUID",
+					},
 					["Lillys-Blackhand"] = {
-						["taken"] = 40030,
+						["taken"] = 4386,
 						["done"] = 0,
 						["role"] = "DAMAGER",
 						["class"] = "HUNTER",
 					},
+					["Èffy-WyrmrestAccord"] = {
+						["taken"] = 137631,
+						["done"] = 19820,
+						["role"] = "DAMAGER",
+						["class"] = "SHAMAN",
+					},
 				},
 				["hdone"] = 0,
-				["done"] = 10096,
-				["taken"] = 84932,
+				["done"] = 135418,
+				["taken"] = 267392,
 				["htakenspell"] = {
+					["Dino Might"] = {
+						["min"] = 1676,
+						["crits"] = 0,
+						["max"] = 2235,
+						["healing"] = 40230,
+						["overhealing"] = 0,
+						["hits"] = 20,
+					},
 				},
-				["htaken"] = 0,
+				["htaken"] = 40230,
 				["hdonespell"] = {
 				},
 			},

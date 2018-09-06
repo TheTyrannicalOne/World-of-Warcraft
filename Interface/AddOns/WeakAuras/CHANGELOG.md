@@ -1,20 +1,35 @@
-# [2.7.5](https://github.com/WeakAuras/WeakAuras2/tree/2.7.5) (2018-08-29)
+# [2.7.6](https://github.com/WeakAuras/WeakAuras2/tree/2.7.6) (2018-09-05)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.7.4...2.7.5)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.7.5...2.7.6)
 
-Allen Faure (1):
+Benjamin Staneck (4):
 
-- block xpcall as well as pcall
+- fix a typo
+- fix extra space in error string
+- replace GetHeight with GetStringHeight
+- localize forbidden() print
 
-Causese (1):
+Buds (4):
 
-- adds worlddrop trinkets to templates
+- update hunter spells
+- merge with #666
+- Templates: rename "Cooldowns" to "Abilities" & fixed warrior spellids
+- Templates fixes > fix totem glow > typo in a description > new "overlayGlow" subType for spells with procs > added and fixed a few spells
 
-Infus (5):
+Infus (10):
 
-- Add default values to Condition properties and fix a few nil errors
-- Overlays: Only use up to 7 drawlayers for overlays
-- Fix Cooldown Ready trigger
-- Unit Characteristics: Fix UnitIsUnit condition
-- Tweak Spell widget a bit more
+- Don't schedule a CooldownScan if the remaingtime can't decrease anymore
+- Fix another regression in condition test functions
+- Fix conditions ui
+- Fix regression in condition checks
+- Fix BuffTrigger conditions for Buffed/Debuffed
+- Make conditionTests test functions
+- Fix hybrid sort mode with cloning auras
+- Tweak SetTextOnText to not set the text if the text is already set
+- Add UnitOnTaxi to vehicel load option
+- Conditions: Change what we do for hidden auras
+
+emptyrivers (1):
+
+- cleanup trigger data (#666)
 

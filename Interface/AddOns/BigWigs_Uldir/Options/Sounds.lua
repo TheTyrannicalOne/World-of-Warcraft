@@ -6,6 +6,8 @@ BigWigs:AddSounds("Taloc", {
 	[271728] = "alarm",
 	[271895] = "alert",
 	[271965] = "long",
+	[275189] = "alert",
+	[275205] = "warning",
 	[275270] = "warning",
 	[275432] = {"alarm","long"},
 })
