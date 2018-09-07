@@ -11,8 +11,8 @@ OneRing_Config = {
 		["Shanyt"] = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
-				["OPieAutoQuest"] = false,
 				["Utility"] = "ALT-E",
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},
@@ -79,10 +79,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABuede=1Sr1m",
 					["id"] = 75973,
 				}, -- [15]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["SpecMenu"] = {
 				{
@@ -167,10 +167,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 		},
 	},

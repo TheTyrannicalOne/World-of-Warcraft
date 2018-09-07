@@ -759,7 +759,7 @@ local function ProcessFishLoot()
 		local info = table.remove(lootcache)
 		local texture, fishie, quantity, quality, link = info.texture, info.fishie, info.quantity, info.quality, info.link;
 		local nm,_,_,_,it,st,_,el,_,il = FL:GetItemInfo(link);
-		local color, id, name = FL:SplitFishLink(link);
+		local color, id, name = FL:SplitLink(link, true);
 
 		-- handle things we can't actually count that might be in our fish (e.g. Garrison Resources)
 		if (id) then

@@ -88,7 +88,10 @@ FishingTranslations["enUS"] = {
     KEYS_SHIFT_TEXT = "Shift",
     KEYS_CTRL_TEXT = "Control",
     KEYS_ALT_TEXT = "Alt",
-    CONFIG_EASYCASTKEYS_INFO = "If a modifier key is specified, then when it is down, regardless of fishing gear.",
+    CONFIG_EASYCASTKEYS_INFO = "If a modifier key is specified, then when it is down, cast regardless of fishing gear.",
+
+    CONFIG_KEEPONTRUCKIN_ONOFF = "Keep Casting",
+    CONFIG_KEEPONTRUCKIN_INFO = "If fishing without a pole, continue casting without the modifier key",
 
     CONFIG_MOUSEEVENT_ONOFF = "Casting Button",
     CONFIG_MOUSEEVENT_INFO = "Use this mouse button to cast.",

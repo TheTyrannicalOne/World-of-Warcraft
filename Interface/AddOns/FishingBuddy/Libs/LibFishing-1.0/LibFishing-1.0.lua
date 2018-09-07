@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 91007
+local MINOR_VERSION = 91008
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -229,12 +229,12 @@ end
 local DRAENOR_HATS = {
     ["118393"] =  {
         ["enUS"] = "Tentacled Hat",
-        ["b"] = 100,
+        ["b"] = 5,
         ["spell"] = 174479,
     },
     ["118380"] = {
         ["n"] = "HightFish Cap",
-        ["b"] = 100,
+        ["b"] = 5,
         ["spell"] = 118380,
     },
 }
@@ -243,7 +243,7 @@ local NATS_HATS = {
     {	["id"] = 88710,
         ["enUS"] = "Nat's Hat",						-- 150 for 10 mins
         spell = 7823,
-        ["b"] = 150,
+        ["b"] = 10,
         ["s"] = 100,
         ["d"] = 10,
         ["w"] = true,
@@ -251,7 +251,7 @@ local NATS_HATS = {
     {	["id"] = 117405,
         ["enUS"] = "Nat's Drinking Hat",			-- 150 for 10 mins
         spell = 124034,
-        ["b"] = 150,
+        ["b"] = 10,
         ["s"] = 100,
         ["d"] = 10,
         ["w"] = true,
@@ -259,18 +259,18 @@ local NATS_HATS = {
     {	["id"] = 33820,
         ["enUS"] = "Weather-Beaten Fishing Hat",	-- 75 for 10 minutes
         spell = 7823,
-        ["b"] = 75,
+        ["b"] = 7,
         ["s"] = 1,
         ["d"] = 10,
         ["w"] = true,
-    }
+    },
 }
 
 local FISHINGLURES = {
     {	["id"] = 116826,
         ["enUS"] = "Draenic Fishing Pole",			-- 200 for 10 minutes
         spell = 175369,
-        ["b"] = 200,
+        ["b"] = 10,
         ["s"] = 1,
         ["d"] = 20,									 -- 20 minute cooldown
         ["w"] = true,
@@ -278,7 +278,7 @@ local FISHINGLURES = {
     {	["id"] = 116825,
         ["enUS"] = "Savage Fishing Pole",			-- 200 for 10 minutes
         spell = 59731,
-        ["b"] = 200,
+        ["b"] = 10,
         ["s"] = 1,
         ["d"] = 20,									 -- 20 minute cooldown
         ["w"] = true,
@@ -287,7 +287,7 @@ local FISHINGLURES = {
     {	["id"] = 34832,
         ["enUS"] = "Captain Rumsey's Lager",		 -- 10 for 3 mins
         spell = 45694,
-        ["b"] = 10,
+        ["b"] = 5,
         ["s"] = 1,
         ["d"] = 3,
         ["u"] = 1,
@@ -295,70 +295,70 @@ local FISHINGLURES = {
     {	["id"] = 67404,
         ["enUS"] = "Glass Fishing Bobber",
         spell = 98849,
-        ["b"] = 15,
+        ["b"] = 2,
         ["s"] = 1,
         ["d"] = 10,
     },
     {	["id"] = 6529,
         ["enUS"] = "Shiny Bauble",					-- 25 for 10 mins
         spell = 8087,
-        ["b"] = 25,
+        ["b"] = 3,
         ["s"] = 1,
         ["d"] = 10,
     },
     {	["id"] = 6811,
         ["enUS"] = "Aquadynamic Fish Lens",			-- 50 for 10 mins
         spell = 8532,
-        ["b"] = 50,
+        ["b"] = 5,
         ["s"] = 50,
         ["d"] = 10,
     },
     {	["id"] = 6530,
         ["enUS"] = "Nightcrawlers",					-- 50 for 10 mins
         spell = 8088,
-        ["b"] = 50,
+        ["b"] = 5,
         ["s"] = 50,
         ["d"] = 10,
     },
     {	["id"] = 7307,
         ["enUS"] = "Flesh Eating Worm",				-- 75 for 10 mins
         spell = 9092,
-        ["b"] = 75,
+        ["b"] = 7,
         ["s"] = 100,
         ["d"] = 10,
     },
     {	["id"] = 6532,
         ["enUS"] = "Bright Baubles",				-- 75 for 10 mins
         spell = 8090,
-        ["b"] = 75,
+        ["b"] = 7,
         ["s"] = 100,
         ["d"] = 10,
     },
     {	["id"] = 34861,
         ["enUS"] = "Sharpened Fish Hook",			-- 100 for 10 minutes
         spell = 45731,
-        ["b"] = 100,
+        ["b"] = 9,
         ["s"] = 100,
         ["d"] = 10,
     },
     {	["id"] = 6533,
         ["enUS"] = "Aquadynamic Fish Attractor",	-- 100 for 10 minutes
         spell = 8089,
-        ["b"] = 100,
+        ["b"] = 9,
         ["s"] = 100,
         ["d"] = 10,
     },
     {	["id"] = 62673,
         ["enUS"] = "Feathered Lure",				-- 100 for 10 minutes
         spell = 87646,
-        ["b"] = 100,
+        ["b"] = 9,
         ["s"] = 100,
         ["d"] = 10,
     },
     {	["id"] = 46006,
         ["enUS"] = "Glow Worm",						-- 100 for 60 minutes
         spell = 64401,
-        ["b"] = 100,
+        ["b"] = 9,
         ["s"] = 100,
         ["d"] = 60,
         ["l"] = 1,
@@ -366,17 +366,24 @@ local FISHINGLURES = {
     {	["id"] = 68049,
         ["enUS"] = "Heat-Treated Spinning Lure",	-- 150 for 5 minutes
         spell = 95244,
-        ["b"] = 150,
+        ["b"] = 10,
         ["s"] = 250,
         ["d"] = 5,
     },
     {	["id"] = 118391,
         ["enUS"] = "Worm Supreme",					-- 200 for 10 mins
         spell = 174471,
-        ["b"] = 200,
+        ["b"] = 10,
         ["s"] = 100,
         ["d"] = 10,
-    }
+    },
+    {	["id"] = 124674,
+        ["enUS"] = "Day-Old Darkmoon Doughnut",		-- 200 for 10 mins
+        spell = 174471,
+        ["b"] = 10,
+        ["s"] = 1,
+        ["d"] = 10,
+    },
 }
 
 local FISHINGHATS = {}
@@ -426,13 +433,11 @@ function FishLib:GetDraenorHatTable()
 end
 
 function FishLib:IsWorn(itemid)
+    itemid = tonumber(itemid)
     for slot=1,19 do
-        local link = GetInventoryItemLink("player", slot);
-        if ( link ) then
-            local _, id, _ = self:SplitFishLink(link);
-            if ( itemid == id ) then
-                return true;
-            end
+        local id = GetInventoryItemID("player", slot);
+        if ( itemid == id ) then
+            return true;
         end
     end
     -- return nil
@@ -463,10 +468,8 @@ function FishLib:UpdateLureInventory()
         if ( count > 0 ) then
             local startTime, _, _ = GetItemCooldown(id);
             if (startTime == 0) then
-                if (lure.w) then
-                    if (self:IsWorn(id)) then
-                        tinsert(lureinventory, lure);
-                    end
+                if (lure.w and self:IsWorn(id)) then
+                    tinsert(lureinventory, lure);
                 else
                     if ( lure.b > b) then
                         b = lure.b;
@@ -641,8 +644,9 @@ end
 
 function FishLib:FindBestHat()
     for _,hat in ipairs(FISHINGHATS) do
-        if GetItemCount(hat["id"]) > 0 then
-            local startTime, _, _ = GetItemCooldown(hat["id"]);
+        local id = hat["id"]
+        if GetItemCount(id) > 0 and self:IsWorn(id) then
+            local startTime, _, _ = GetItemCooldown(id);
             if ( startTime == 0 ) then
                 return 1, hat;
             end
@@ -1035,25 +1039,29 @@ function FishLib:GetItemPattern()
     return _itempattern;
 end
 
-function FishLib:SplitLink(link)
-    if ( link ) then
-        local _,_, color, id, enchant, name = string.find(link, self:GetItemPattern());
-        if (not enchant or enchant == '') then
-            enchant = 0;
-        end
-        if ( name ) then
-            return color, id..":"..enchant, name, enchant;
-        end
+function FishLib:ValidLink(link)
+    if type(link) ~= "string" or string.match(link, "^%d+") then
+        link = "item:"..link
     end
+    return link
 end
 
-function FishLib:SplitFishLink(link)
+function FishLib:SplitLink(link, get_id)
     if ( link ) then
+        -- Make the link canonical
+        local _,link,_,_,_,_,_,_,_,_ = self:GetItemInfo(link);
         local _,_, color, id, enchant, name = string.find(link, self:GetItemPattern());
-        if (not enchant or enchant == '') then
-            enchant = 0;
+        if ( name ) then
+            if (not enchant or enchant == '') then
+                enchant = 0;
+            end
+            if (not get_id) then
+                id = id..":"..enchant
+            else
+                id = tonumber(id)
+            end
+            return color, id, name, enchant;
         end
-        return color, tonumber(id), name, enchant;
     end
 end
 
@@ -1147,12 +1155,11 @@ function FishLib:AddSchoolName(name)
 end
 
 function FishLib:GetWornItem(get_id, slot)
-    local itemLink = GetInventoryItemLink("player", slot);
-    if ( not get_id ) then
-        return itemLink;
+    if ( get_id ) then
+        return GetInventoryItemID("player", slot);
+    else
+        return GetInventoryItemLink("player", slot);
     end
-    _, id, _ = self:SplitFishLink(itemLink);
-    return id;
 end
 
 function FishLib:GetMainHandItem(get_id)
@@ -1169,8 +1176,8 @@ function FishLib:IsFishingPole(itemLink)
         itemLink = self:GetMainHandItem();
     end
     if ( itemLink ) then
-        local _,_,_,_,itemtype,subtype,_,_,itemTexture,_ = self:GetItemInfo(itemLink);
-        local _, id, _ = self:SplitFishLink(itemLink);
+        local _,itemLink,_,_,itemtype,subtype,_,_,itemTexture,_ = self:GetItemInfo(itemLink);
+        local _, id, _ = self:SplitLink(itemLink, true);
 
         self:GetPoleType();
         if ( not fp_itemtype and itemTexture ) then
@@ -1903,9 +1910,7 @@ function FishLib:InvokeLuring(id, itemtype, targetslot)
         return;
     end
     if ( id ) then
-        if (string.match(id, "^%d+$")) then
-            id = "item:"..id;
-        end
+        id = self:ValidLink(id)
         if (not itemtype) then
             itemtype = "item";
             targetslot = INVSLOT_MAINHAND;
@@ -2003,10 +2008,7 @@ function FishLib:FishingBonusPoints(item, inv)
         if (inv) then
             tooltip:SetInventoryItem("player", item);
         else
-            local _, id, _ = self:SplitFishLink(item);
-            if (not id) then
-                item = "item:"..item;
-            end
+            item = self:ValidLink(item)
             tooltip:SetHyperlink(item);
         end
         local lines = EnumerateTooltipLines_helper(tooltip:GetRegions())
@@ -2034,8 +2036,7 @@ function FishLib:GetPoleBonus()
         local hmhe,_,_,_,_,_ = GetWeaponEnchantInfo();
         if ( hmhe ) then
             -- IsFishingPole has set mainhand for us
-            local itemLink = self:GetMainHandItem();
-            local _, id, _, enchant = self:SplitLink(itemLink);
+            local id = self:GetMainHandItem(true);
             -- get the raw value of the pole without any temp enchants
             local pole = self:FishingBonusPoints(id);
             return total, total - pole;
@@ -2130,7 +2131,7 @@ function FishLib:GetBagItemStats(bag, slot)
         link = GetInventoryItemLink("player", slot);
     end
     if (link) then
-        c, i, n = self:SplitFishLink(link);
+        c, i, n = self:SplitLink(link, true);
     end
     return c, i, n;
 end
@@ -2141,8 +2142,9 @@ function FishLib:CheckThisBag(bag, id, skipcount)
     local numSlots = GetContainerNumSlots(bag);
     if (numSlots > 0) then
         -- check each slot in the bag
+        id = tonumber(id)
         for slot=1, numSlots do
-            local c, i, n = self:GetBagItemStats(bag, slot);
+            local i = GetContainerItemID(bag, slot);
             if ( i and id == i ) then
                 if ( skipcount == 0 ) then
                     return slot, skipcount;
@@ -2162,11 +2164,7 @@ function FishLib:FindThisItem(id, skipcount)
     end
     local skipcount = skipcount or 0;
     -- force id to be a number
-    local n,l,_,_,_,_,_,_ = GetItemInfo(id);
-    if (not n) then
-        n,l,_,_,_,_,_,_ = GetItemInfo("item:"..id);
-    end
-    _, id, _ = self:SplitFishLink(l);
+    local _, id, name, _ = self:SplitLink(id, true)
     -- check each of the bags on the player
     for bag = BACKPACK_CONTAINER, NUM_BAG_SLOTS do
         local slot;
@@ -2179,7 +2177,7 @@ function FishLib:FindThisItem(id, skipcount)
     local _,_,slotnames = self:GetSlotInfo();
     for _,si in ipairs(slotnames) do
         local slot = si.id;
-        local c, i, n = self:GetBagItemStats(nil, slot);
+        local i = GetInventoryItemID("player", slot);
         if ( i and id == i ) then
             if ( skipcount == 0 ) then
                 return nil, slot;
@@ -2193,11 +2191,7 @@ end
 
 -- Is this item openable?
 function FishLib:IsOpenable(item)
-    local _, id, _ = self:SplitFishLink(item);
-    if (not id) then
-        item = "item:"..item;
-    end
-
+    local _, id, _ = self:SplitLink(item, true);
     local canopen = false;
     local locked = false;
     local tooltip = self:GetFishTooltip();

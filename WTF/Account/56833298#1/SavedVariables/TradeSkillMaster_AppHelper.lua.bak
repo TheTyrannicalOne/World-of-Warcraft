@@ -2,8 +2,8 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Argent Dawn"] = {
-			["key"] = 1413946,
 			["data"] = "[[13,8490,1,0,1575,75,1500,1,1536207895]]",
+			["key"] = 1413946,
 			["updateTime"] = 1536207895,
 		},
 	},
@@ -21,8 +21,8 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["wowToken"] = {
 		["US"] = {
-			["data"] = 181426,
 			["key"] = 7577604,
+			["data"] = 181426,
 			["updateTime"] = 1519458491,
 		},
 	},
@@ -34,7 +34,8 @@ TradeSkillMaster_AppHelperDB = {
 			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1535896427]", -- [4]
 			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1535991271]", -- [5]
 			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1536207319]", -- [6]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3.1\",\"...\\AddOns\\TradeSkillMaster\\Core\\UI\\MailingUI\\Inbox.lua:648: assertion failed!\",1536292693]", -- [7]
 		},
-		["updateTime"] = 1536207319,
+		["updateTime"] = 1536292693,
 	},
 }

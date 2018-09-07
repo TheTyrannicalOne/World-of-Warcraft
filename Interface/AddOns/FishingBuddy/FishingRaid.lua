@@ -381,7 +381,7 @@ function FBR:SetItem(itemLink, texture)
 			return
 		end
 
-        _, self.itemID, self.itemName = FL:SplitFishLink(itemLink);
+        _, self.itemID, self.itemName = FL:SplitLink(itemLink, true);
 		self.itemLink = itemLink
 
 		local count = GetItemCount(self.itemLink)

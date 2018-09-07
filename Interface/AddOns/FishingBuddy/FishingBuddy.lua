@@ -26,11 +26,18 @@ local POLES = {
     ["Mastercraft Kalu'ak Fishing Pole"] = "44050:0:0:0",
     ["Bone Fishing Pole"] = "45991:0:0:0",
     ["Jeweled Fishing Pole"] = "45992:0:0:0",
+    ["Staats' Fishing Pole"] = "46337:0:0:0",
+    ["Pandaren Fishing Pole"] = "84660:0:0:0",
+    ["Dragon Fishing Pole"] = "84661:0:0:0",
+    ["Ephemeral Fishing Pole"] = "118381:0:0:0",
+    ["Savage Fishing Pole"] = "116825:0:0:0",
+    ["Draenic Fishing Pole"] = "116826:0:0:0",
     ["Underlight Angler"] = "133755:0:0:0",
 -- yeah, so you can't really use these (for now :-)
     ["Dwarven Fishing Pole"] = "3567:0:0:0",
     ["Goblin Fishing Pole"] = "4598:0:0:0",
     ["Nat Pagle's Fish Terminator"] = "19944:0:0:0",
+    ["Thruk's Heavy Duty Fishing Pole"] = "120164:0:0:0",
 -- one can only hope
     ["Crafty's Pole"] = "43651:0:0:0"
 }
@@ -235,6 +242,13 @@ local CastingOptions = {
                 FBEasyKeys.menu:SetMappedValue("EasyCastKeys", gs("EasyCastKeys"));
             end,
     },
+    ["KeepOnTruckin"] = {
+        ["text"] = FBConstants.CONFIG_KEEPONTRUCKIN_ONOFF,
+        ["tooltip"] = FBConstants.CONFIG_KEEPONTRUCKIN_INFO,
+        ["v"] = 1,
+        ["default"] = true,
+        ["parents"] = { ["EasyCast"] = "d" }
+    },
     ["MouseEvent"] = {
         ["default"] = "RightButtonUp",
         ["button"] = "FBMouseEvent",
@@ -352,6 +366,9 @@ local InvisibleOptions = {
     },
     ["MinimapButtonRadius"] = {
         ["default"] = FBConstants.DEFAULT_MINIMAP_RADIUS,
+    },
+    ["CaughtSoFar"] = {
+        ["default"] = 0,
     },
     ["TotalTimeFishing"] = {
         ["default"] = 1,
@@ -742,7 +759,7 @@ local function GetFishieRaw(fishid)
     local fi = FishingBuddy_Info["Fishies"][fishid];
     if ( not fi or not fi[CurLoc] ) then
         local _,_,_,_,it,_,_,_,_,_ = FL:GetItemInfo(fishid);
-        local color, id, name = FL:SplitFishLink(fishid);
+        local color, id, name = FL:SplitLink(fishid, true);
 
         if (not fi) then
             return fishid, it, color, 1, nil, name, nil;
@@ -865,7 +882,7 @@ local function GetUpdateLure()
                 else
                     NextLure = nil;
                 end
-                if ( GSB("AlwaysHat")) then
+                if ( not NextLure and GSB("AlwaysHat")) then
                     local _, hat = FL:FindBestHat()
                     if (hat) then
                         return true, hat['id'], hat['n']
@@ -962,7 +979,7 @@ CaptureEvents["UNIT_AURA"] = function(arg1)
 end
 
 local function GetCurrentSpell()
-    return current_spell_id
+    return current_spell_id;
 end
 FishingBuddy.GetCurrentSpell = GetCurrentSpell
 
@@ -974,12 +991,17 @@ local function ReadyForFishing()
 end
 FishingBuddy.ReadyForFishing = ReadyForFishing;
 
+local function AreWeFishing()
+    return (FishingBuddy.StartedFishing ~= nil or autopoleframe:IsShown());
+end
+FishingBuddy.AreWeFishing = AreWeFishing
+
 local function NormalHijackCheck()
     local GSB = FishingBuddy.GetSettingBool;
     if ( not AddingLure and
          not CheckCombat() and (not IsMounted() or GSB("MountedCast")) and
          not IsFishingAceEnabled() and
-         GSB("EasyCast") and (CastingKeys() or ReadyForFishing()) ) then
+         GSB("EasyCast") and (CastingKeys() or (GSB("KeepOnTruckin") and AreWeFishing()) or ReadyForFishing()) ) then
         return true;
     end
 end
@@ -1226,11 +1248,6 @@ autopoleframe:SetScript("OnUpdate", AutoPoleCheck);
 autopoleframe:RegisterEvent("PLAYER_STARTED_MOVING");
 autopoleframe:RegisterEvent("PLAYER_STOPPED_MOVING");
 
-
-local function AreWeFishing()
-    return (FishingBuddy.StartedFishing ~= nil or autopoleframe:IsShown());
-end
-FishingBuddy.AreWeFishing = AreWeFishing
 
 FishingBuddy.IsSwitchClick = function(setting)
     if ( not setting ) then
@@ -1582,7 +1599,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
                     -- should we track "locked" items we couldn't loot?'
                     FishingBuddy.AddLootCache(texture, fishie, quantity, quality, link, poolhit)
 
-                    local _, id, _ = FL:SplitFishLink(link);
+                    local _, id, _ = FL:SplitLink(link, true);
                     -- handle things we can't actually count that might be in our fish (e.g. Garrison Resources)
                     if (id and quality == 0 and FL:IsMissedFish(id)) then
                         DoEscaped = 1;
