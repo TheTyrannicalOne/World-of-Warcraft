@@ -4638,6 +4638,8 @@ qcPinDB = {
 		{0,9,915,"Jorik Kerridan",41.1,45.3,{28787}},
 		--{0,9,915,"Jorik Kerridan",41.1,45.3,{26915}},
 	},
+	[427] = { --[[ Coldridge Valley ]] --
+	},
 	[429] = { --[[ Temple of the Jade Serpent ]] --
 		{1,1,64399,"Master Windstrong",36.0,44.2,{31356}},
 		{1,1,60578,"Priestess Summerpetal",35.9,44.6,{31355}},

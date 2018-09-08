@@ -1,9 +1,6 @@
 # BigWigs
 
-## [v108](https://github.com/BigWigsMods/BigWigs/tree/v108) (2018-09-07)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v107...v108)
+## [v108.2](https://github.com/BigWigsMods/BigWigs/tree/v108.2) (2018-09-08)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v108.1...v108.2)
 
-- bump version  
-- Uldir/Vectis: Fix heroic timers & clean up Gestate.  
-- Uldir/Zekvoz: Fix stage warnings & most timers.  
-- Uldir/Vectis: Mark all 3 debuffs in Normal  
+- Uldir/Zul: Add marking functionality for "Dark Revelation" and "Deathwish" (#535)  

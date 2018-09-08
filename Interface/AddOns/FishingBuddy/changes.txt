@@ -1,4 +1,9 @@
-﻿Version 1.9.16
+﻿Version 1.9.17
+- Fix error on catching quest fish (Curse #361)
+- Fix can't equip fishing outfit (Curse #360)
+- Fix fishing hat no longer working (Curse #350)
+
+Version 1.9.16
 - Work on drinking heavily while fishing
 - Don't use a hat if we have a better lure
 - After fishing without a pole, cast without requiring the key (option: Keep Fishing)

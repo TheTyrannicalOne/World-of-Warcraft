@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 91008
+local MINOR_VERSION = 91009
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -1039,17 +1039,35 @@ function FishLib:GetItemPattern()
     return _itempattern;
 end
 
-function FishLib:ValidLink(link)
+function FishLib:ValidLink(link, full)
     if type(link) ~= "string" or string.match(link, "^%d+") then
         link = "item:"..link
     end
+    if full then
+        _, link, _, _, _, _, _, _, _, _, _ = GetItemInfo(link);
+    end
     return link
+end
+
+function FishLib:SetHyperlink(tooltip, link, uncleared)
+    link = self:ValidLink(link, true);
+    if (not uncleared) then
+        tooltip:ClearLines();
+    end
+    tooltip:SetHyperlink(link);
+end
+
+function FishLib:SetInventoryItem(tooltip, target, item, uncleared)
+    if (not uncleared) then
+        tooltip:ClearLines();
+    end
+    tooltip:SetInventoryItem(target, item);
 end
 
 function FishLib:SplitLink(link, get_id)
     if ( link ) then
         -- Make the link canonical
-        local _,link,_,_,_,_,_,_,_,_ = self:GetItemInfo(link);
+        link = self:ValidLink(link, true);
         local _,_, color, id, enchant, name = string.find(link, self:GetItemPattern());
         if ( name ) then
             if (not enchant or enchant == '') then
@@ -1069,6 +1087,7 @@ function FishLib:GetItemInfo(link)
 -- name, link, rarity, itemlevel, minlevel, itemtype
 -- subtype, stackcount, equiploc, texture
     if (link) then
+        link = self:ValidLink(link)
         local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(link);
         return itemName, itemLink, itemRarity, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemLevel, itemSellPrice;
     end
@@ -2004,12 +2023,10 @@ function FishLib:FishingBonusPoints(item, inv)
             end
         end
         local tooltip = self:GetFishTooltip();
-        tooltip:ClearLines();
         if (inv) then
-            tooltip:SetInventoryItem("player", item);
+            self:SetInventoryItem(tooltip, "player", item);
         else
-            item = self:ValidLink(item)
-            tooltip:SetHyperlink(item);
+            self:SetHyperlink(tooltip, item);
         end
         local lines = EnumerateTooltipLines_helper(tooltip:GetRegions())
         for i=1,#lines do
@@ -2159,12 +2176,12 @@ end
 -- look for the item anywhere we can find it, skipping if we're looking
 -- for more than one
 function FishLib:FindThisItem(id, skipcount)
-    if ( not id ) then
-        return nil,nil;
-    end
     local skipcount = skipcount or 0;
     -- force id to be a number
     local _, id, name, _ = self:SplitLink(id, true)
+    if ( not id ) then
+        return nil,nil;
+    end
     -- check each of the bags on the player
     for bag = BACKPACK_CONTAINER, NUM_BAG_SLOTS do
         local slot;
@@ -2191,12 +2208,10 @@ end
 
 -- Is this item openable?
 function FishLib:IsOpenable(item)
-    local _, id, _ = self:SplitLink(item, true);
     local canopen = false;
     local locked = false;
     local tooltip = self:GetFishTooltip();
-    tooltip:ClearLines();
-    tooltip:SetHyperlink(item);
+    self:SetHyperlink(tooltip, item);
     local lines = EnumerateTooltipLines_helper(tooltip:GetRegions())
     for i=1,#lines do
         local line = lines[i];
