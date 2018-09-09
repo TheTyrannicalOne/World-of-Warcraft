@@ -1,4 +1,4 @@
-_NPCScan.Overlay: enabled
+_NPCScan.Overlay: disabled
 Collectinator: disabled
 MBB: disabled
 Parrot: disabled
