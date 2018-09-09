@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------
-r81 | Caliaha | 2018-08-04 00:27:28 +0000 (Sat, 04 Aug 2018) | 2 lines
+r83 | Caliaha | 2018-09-09 15:10:10 +0000 (Sun, 09 Sep 2018) | 2 lines
 Changed paths:
    M /trunk/HandyNotes_DungeonLocations.lua
 
-Fixed issue with Tomb of Sargeras Node
+Temporarily disabled PLAYER_ENTERING_WORLD
 
 ------------------------------------------------------------------------
 

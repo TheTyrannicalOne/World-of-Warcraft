@@ -57,13 +57,15 @@ BigWigs:AddSounds("Vectis", {
 })
 
 BigWigs:AddSounds("Zul", {
+	[-18541] = "long",
+	[-18540] = "long",
+	[-18539] = "long",
 	[269936] = "warning",
 	[273288] = "alert",
 	[273350] = "alert",
 	[273361] = "info",
 	[273365] = "warning",
 	[273451] = "alarm",
-	[273889] = "long",
 	[274271] = "alarm",
 	[274358] = "warning",
 	[276299] = "alarm",
