@@ -15,7 +15,7 @@ along with the addon. If not, see <http://www.gnu.org/licenses/gpl-3.0.txt>.
 This file is part of PetTracker.
 --]]
 
-local Addon, ADDON = PetTracker, 'PetTracker'
+local ADDON, Addon = 'PetTracker', PetTracker
 local Tutorial = Addon:NewModule('Tutorial')
 local Lib = LibStub('CustomTutorials-2.1')
 local L = Addon.Locals
@@ -23,7 +23,7 @@ local L = Addon.Locals
 
 --[[ Events ]]--
 
-function Tutorial:Start()
+function Tutorial:Startup()
 	if (Addon.Sets.MainTutorial or 0) < 4 then
 		self:Trigger('Main', 4)
 	else
@@ -78,7 +78,7 @@ end
 function Tutorial:Restart()
 	self:Reset('Main')
 	self:Reset('Journal')
-	self:Start()
+	self:Startup()
 end
 
 
@@ -157,7 +157,7 @@ Tutorial:Register('Main', {
 			self[i].shine = header
 		elseif i == 4 then
 			Tutorial:Split()
-		elseif i == 5 then
+		elseif i >= 5 then
 			self[i].anchor = Addon.MapFilter.frames[WorldMapFrame]
 			self[i].shine = Addon.MapFilter.frames[WorldMapFrame]
 		end
@@ -236,4 +236,4 @@ Tutorial:Register('Journal', {
 	end
 })
 
-Tutorial:Start()
+Tutorial:Startup()

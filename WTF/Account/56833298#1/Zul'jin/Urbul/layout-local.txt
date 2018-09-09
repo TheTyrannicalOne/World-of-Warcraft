@@ -1,6 +1,13 @@
 Version: 1
+Frame: ScriptErrorsFrame
+FrameLevel: 0
+Anchor: RIGHT
+X: -135
+Y: 26
+W: 384
+H: 260
 Frame: MBB_MinimapButtonFrame
-FrameLevel: 9984
+FrameLevel: 9983
 Anchor: BOTTOMRIGHT
 X: 11
 Y: -11
@@ -13,10 +20,3 @@ X: -312
 Y: 3
 W: 235
 H: 1035
-Frame: ScriptErrorsFrame
-FrameLevel: 0
-Anchor: RIGHT
-X: -135
-Y: 26
-W: 384
-H: 260

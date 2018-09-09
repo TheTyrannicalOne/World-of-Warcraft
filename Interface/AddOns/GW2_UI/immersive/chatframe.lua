@@ -73,7 +73,15 @@ local function handleChatFrameFadeIn(chatFrame)
     end
 
     for k, v in pairs(gw_fade_frames) do
-        chatFader(v, v:GetAlpha(), 1)
+        if v == ChatFrameToggleVoiceDeafenButton or v == ChatFrameToggleVoiceMuteButton then
+            if v == ChatFrameToggleVoiceDeafenButton and ChatFrameToggleVoiceDeafenButton:IsShown() then
+                chatFader(v, v:GetAlpha(), 1)
+            elseif v == ChatFrameToggleVoiceMuteButton and ChatFrameToggleVoiceMuteButton:IsShown() then
+                chatFader(v, v:GetAlpha(), 1)
+            end
+        else
+            chatFader(v, v:GetAlpha(), 1)
+        end   
     end
     local chatTab = _G[frameName .. "Tab"]
     chatFader(chatTab, chatTab:GetAlpha(), 1)
@@ -101,7 +109,15 @@ local function handleChatFrameFadeOut(chatFrame)
         end
     end
     for k, v in pairs(gw_fade_frames) do
-        UIFrameFadeOut(v, 2, v:GetAlpha(), 0)
+        if v == ChatFrameToggleVoiceDeafenButton or v == ChatFrameToggleVoiceMuteButton then
+            if v == ChatFrameToggleVoiceDeafenButton and ChatFrameToggleVoiceDeafenButton:IsShown() then
+                UIFrameFadeOut(v, 2, v:GetAlpha(), 0)
+            elseif v == ChatFrameToggleVoiceMuteButton and ChatFrameToggleVoiceMuteButton:IsShown() then
+                UIFrameFadeOut(v, 2, v:GetAlpha(), 0)
+            end
+        else
+            UIFrameFadeOut(v, 2, v:GetAlpha(), 0)
+        end
     end
     local chatTab = _G[frameName .. "Tab"]
     UIFrameFadeOut(chatTab, 2, chatTab:GetAlpha(), 0)
@@ -187,6 +203,8 @@ local function styleChatWindow(useId)
     ChatFrameMenuButton:SetHeight(20)
     ChatFrameMenuButton:SetWidth(20)
 
+    _G["ChatFrame" .. useId]:SetFont(STANDARD_TEXT_FONT, 14)
+    
     _G["ChatFrame" .. useId .. "TabSelectedRight"]:SetTexture("Interface\\AddOns\\GW2_UI\\textures\\chattabactiveright")
     _G["ChatFrame" .. useId .. "TabSelectedLeft"]:SetTexture("Interface\\AddOns\\GW2_UI\\textures\\chattabactiveleft")
     _G["ChatFrame" .. useId .. "TabSelectedMiddle"]:SetTexture("Interface\\AddOns\\GW2_UI\\textures\\chattabactive")
@@ -251,7 +269,7 @@ end
 GW.AddForProfiling("chatframe", "chatBackgroundOnResize", chatBackgroundOnResize)
 
 local function LoadChat()
-    if QuickJoinToastButton ~= nil then
+    if QuickJoinToastButton then
         QuickJoinToastButton:SetDisabledTexture("Interface\\AddOns\\GW2_UI\\textures\\LFDMicroButton-Down")
         QuickJoinToastButton:SetNormalTexture("Interface\\AddOns\\GW2_UI\\textures\\LFDMicroButton-Down")
         QuickJoinToastButton:SetPushedTexture("Interface\\AddOns\\GW2_UI\\textures\\LFDMicroButton-Down")
@@ -259,7 +277,7 @@ local function LoadChat()
         QuickJoinToastButton:SetWidth(25)
         QuickJoinToastButton:SetHeight(25)
         QuickJoinToastButton:ClearAllPoints()
-        QuickJoinToastButton:SetPoint("RIGHT", GeneralDockManager, "LEFT", -3, -3)
+        QuickJoinToastButton:SetPoint("RIGHT", GeneralDockManager, "LEFT", -6, -3)
     end
 
     local fmGCC = CreateFrame("FRAME", "GwChatContainer", UIParent, "GwChatContainer")
@@ -267,7 +285,7 @@ local function LoadChat()
     fmGCC:SetPoint("TOPLEFT", ChatFrame1, "TOPLEFT", -35, 5)
     fmGCC:SetPoint("BOTTOMRIGHT", ChatFrame1EditBoxFocusRight, "BOTTOMRIGHT", 0, 0)
 
-    for i = 1, 10 do
+    for i = 1, NUM_CHAT_WINDOWS do
         styleChatWindow(i)
     end
 
@@ -294,7 +312,9 @@ local function LoadChat()
         QuickJoinToastButton,
         GwChatContainer,
         GeneralDockManager,
-        ChatFrameChannelButton
+        ChatFrameChannelButton,
+        ChatFrameToggleVoiceDeafenButton,
+        ChatFrameToggleVoiceMuteButton
     }
 
     FCF_FadeOutChatFrame(_G["ChatFrame1"])

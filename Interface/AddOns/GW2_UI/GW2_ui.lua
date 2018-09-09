@@ -8,7 +8,7 @@ local CLASS_ICONS = GW.CLASS_ICONS
 local IsFrameModified = GW.IsFrameModified
 local Debug = GW.Debug
 
-GW.VERSION_STRING = "GW2_UI v5.0.7"
+GW.VERSION_STRING = "GW2_UI v5.0.8"
 
 local loaded = false
 local forcedMABags = false
@@ -479,9 +479,9 @@ local function gw_OnEvent(self, event, name)
         GW.LoadBank()
     end
 
-    --if GetSetting("USE_BATTLEGROUND_HUD") then
-    -- GW.LoadBattlegrounds()
-    --end
+    if GetSetting("USE_BATTLEGROUND_HUD") then
+        GW.LoadBattlegrounds()
+    end
 
     GW.LoadCharacter()
 
@@ -529,6 +529,12 @@ local function gw_OnEvent(self, event, name)
     -- create buff frame
     if GetSetting("PLAYER_BUFFS_ENABLED") then
         GW.LoadBuffs()
+    end
+
+    if GetSetting("DYNAMIC_CAM") then
+        ConsoleExec("ActionCam basic")
+    else
+        ConsoleExec("ActionCam default")
     end
 
     -- create new microbuttons

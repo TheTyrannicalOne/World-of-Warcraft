@@ -149,6 +149,12 @@ local function setUnitName(self)
     local role = UnitGroupRolesAssigned(self.unit)
     local nameString = UnitName(self.unit)
     local realmflag = ""
+    
+    if not nameString or nameString == UNKNOWNOBJECT then
+        self.nameNotLoaded = false
+    else
+        self.nameNotLoaded = true
+    end
 
     if GetSetting("RAID_UNIT_FLAGS") == "NONE" then
         realmflag = ""
@@ -167,6 +173,7 @@ local function setUnitName(self)
         realmflag = ""
     end
     self.name:SetText(nameString .. " " .. realmflag)
+    
 end
 GW.AddForProfiling("raidframes", "setUnitName", setUnitName)
 
@@ -344,7 +351,7 @@ local function updateDebuffs(self)
 
             indexBuffFrame:Show()
 
-            buffIndex = buffIndex + 1
+          
             x = x + 1
             if (margin * x) < (-(self:GetWidth() / 2)) then
                 y = y + 1
@@ -362,6 +369,7 @@ local function updateDebuffs(self)
                 indexBuffFrame:SetScript("OnLeave", nil)
             end
         end
+          buffIndex = buffIndex + 1
     end
 end
 GW.AddForProfiling("raidframes", "updateDebuffs", updateDebuffs)
@@ -411,7 +419,7 @@ local function updateAuras(self)
 
             if created then
                 indexBuffFrame:ClearAllPoints()
-                indexBuffFrame:SetPoint("BOTTOMRIGHT", -3 + (margin * x), 3 + (marginy * y))
+                indexBuffFrame:SetPoint("BOTTOMRIGHT", self.healthbar, "BOTTOMRIGHT", -3 + (margin * x), 3 + (marginy * y))
             end
             _G["Gw" .. self:GetName() .. "BuffItemFrame" .. buffIndex .. "BuffIcon"]:SetTexture(icon)
             --   _G['Gw'..self:GetName()..'BuffItemFrame'..i..'BuffIcon']:SetParent(_G['Gw'..self:GetName()..'BuffItemFrame'..i])
@@ -438,7 +446,7 @@ local function updateAuras(self)
             end
 
             x = x + 1
-            buffIndex = buffIndex + 1
+            
             if (margin * x) < (-(self:GetWidth() / 2)) then
                 y = y + 1
                 x = 0
@@ -451,6 +459,7 @@ local function updateAuras(self)
                 indexBuffFrame:SetScript("OnLeave", nil)
             end
         end
+        buffIndex = buffIndex + 1
     end
 
     if spellTotrack then
@@ -475,6 +484,9 @@ local function raidframe_OnEvent(self, event, unit, arg1)
         return
     end
 
+    if not self.nameNotLoaded then
+        setUnitName(self)
+    end
     if event == "load" then
         setAbsorbAmount(self)
         setHealth(self)
@@ -517,7 +529,7 @@ local function raidframe_OnEvent(self, event, unit, arg1)
         highlightTargetFrame(self)
     end
     if event == "UNIT_NAME_UPDATE" and unit == self.unit then
-        setUnitName()
+        setUnitName(self)
     end
     if event == "UNIT_AURA" and unit == self.unit then
         updateAuras(self)
@@ -778,6 +790,7 @@ local function createRaidFrame(registerUnit)
         frame.name = _G[frame:GetName() .. "Data"].name
         frame.classicon = _G[frame:GetName() .. "Data"].classicon
         frame.aggroborder = frame.healthbar.absorbbar.aggroborder
+        frame.nameNotLoaded = false
 
         frame.name:SetFont(UNIT_NAME_FONT, 12)
         frame.name:SetShadowOffset(-1, -1)

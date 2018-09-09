@@ -1,11 +1,11 @@
 
 GatherMate2DB = {
-	["global"] = {
-		["data_version"] = 5,
-	},
 	["profileKeys"] = {
 		["Urbul - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
+	},
+	["global"] = {
+		["data_version"] = 5,
 	},
 	["profiles"] = {
 		["Default"] = {

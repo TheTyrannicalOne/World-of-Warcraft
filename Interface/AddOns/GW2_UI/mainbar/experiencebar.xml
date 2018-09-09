@@ -101,7 +101,7 @@
                             <Anchor point="TOP" relativePoint="TOP" x="0" y="0"/>
                             <Anchor point="BOTTOM" relativePoint="BOTTOM" x="0" y="0"/>
                         </Anchors>
-                        <BarTexture file="Interface\AddOns\GW2_UI\textures\xpbar" />
+                        <BarTexture file="Interface\AddOns\GW2_UI\textures\xpbarCandy" />
                         <BarColor r="0.5" b="0.5" g="0" a="0.5"></BarColor>
                     </StatusBar>
                 </Frames>
@@ -120,7 +120,7 @@
                     <Anchor point="BOTTOMLEFT" relativePoint="BOTTOMLEFT" x="90" y="4" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" x="-90" y="4"/>
                 </Anchors>
-                <BarTexture file="Interface\AddOns\GW2_UI\textures\artifactbar" />
+                <BarTexture file="Interface\AddOns\GW2_UI\textures\xpbarCandy" />
                 <Frames>
                     <Frame name="ExperienceBarSpark" frameLevel="4">
                         <Size x="8" y="8" />
@@ -137,6 +137,36 @@
                                 </Texture>
                             </Layer>
                         </Layers>
+                    </Frame>
+                    <Frame name="$parentAnimation" hidden="true" parentKey="animation" frameLevel="4">
+                        <Size x="1" y="8" />
+                        <Anchors>
+                            <Anchor point="LEFT" relativePoint="LEFT" x="0" y="0"></Anchor>
+                            <Anchor point="RIGHT" relativePoint="RIGHT"  x="0" y="0"></Anchor>
+                        </Anchors>
+                        <Layers>
+                            <Layer>
+                               <Texture parentKey="texture1" file="Interface\AddOns\GW2_UI\textures\expbar-azerite">
+                                   <Size x="8" y="8"></Size>
+                                    <Anchors>
+                                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT"  x="0" y="0"></Anchor>
+                                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT"  x="0" y="0"></Anchor>
+                                    </Anchors>
+                                </Texture> 
+                                <Texture  parentKey="texture2" file="Interface\AddOns\GW2_UI\textures\expbar-azerite2">
+                                   <Size x="8" y="8"></Size>
+                                    <Anchors>
+                                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT"  x="0" y="0"></Anchor>
+                                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT"  x="0" y="0"></Anchor>
+                                    </Anchors>
+                                </Texture>
+                            </Layer>
+                        </Layers>
+                        <Scripts>
+                            <OnLoad>
+                                self.prog = 0
+                            </OnLoad>
+                        </Scripts>
                     </Frame>
                 </Frames>
             </StatusBar>

@@ -15,16 +15,17 @@ along with the addon. If not, see <http://www.gnu.org/licenses/gpl-3.0.txt>.
 This file is part of PetTracker.
 --]]
 
+local ADDON, Addon = 'PetTracker', PetTracker
 local OriginalSwap = PetBattleFrame.BottomFrame.PetSelectionFrame
-local Swap = PetTracker:NewModule('Switcher', CreateFrame('Frame', 'PetTrackerSwap', PetBattleFrame, 'ButtonFrameTemplate'))
+local Swap = Addon:NewModule('Switcher', CreateFrame('Frame', ADDON .. 'Switcher', PetBattleFrame, 'ButtonFrameTemplate'))
 
 local NumPets = NUM_BATTLE_PETS_IN_BATTLE
 local NumAbilities = NUM_BATTLE_PET_ABILITIES
 local Enemy = LE_BATTLE_PET_ENEMY
 local Player = LE_BATTLE_PET_ALLY
 
-local Slot = PetTracker.BattleSlot
-local Battle = PetTracker.Battle
+local Slot = Addon.BattleSlot
+local Battle = Addon.Battle
 
 
 --[[ Startup ]]--
@@ -38,7 +39,7 @@ function Swap:Startup()
 	end)
 
 	SetPortraitToTexture(self.portrait:GetName(), 'Interface/Icons/INV_Pet_SwapPet')
-	PetTracker.EnemyActions.Hide = function() end
+	Addon.EnemyActions.Hide = function() end
 end
 
 function Swap:SetHooks()
@@ -47,11 +48,11 @@ function Swap:SetHooks()
 		self:Update()
 		self:Show()
 	end
-	
+
 	function PetBattlePetSelectionFrame_Hide()
 		self:Hide()
 	end
-	
+
 	function OriginalSwap.IsShown()
 		return self:IsShown()
 	end
@@ -63,7 +64,7 @@ function Swap:Initialize()
 	self.TitleText:SetText(SWITCH_PET)
 	self:SetPoint('CENTER')
 	self:SetSize(840, 424)
-	
+
 	self.CreateSlotLine, self.CreateSlot = nil
 	self.Initialize = function() end
 end
@@ -75,8 +76,8 @@ function Swap:CreateSlotLine(owner, ...)
 	for i = 1, NumPets do
 		self[owner..i] = self:CreateSlot(i, ...)
 	end
-	
-	local border = CreateFrame('Frame', nil, self, 'PetTrackerSlotBorder')
+
+	local border = CreateFrame('Frame', nil, self, ADDON..'SlotBorder')
 	border:SetPoint('TOP', self[owner..1], 0, 2)
 end
 
@@ -86,7 +87,7 @@ function Swap:CreateSlot(i, point, off)
 	slot:SetScript('OnClick', function()
 		self:OnClick(slot)
 	end)
-	
+
 	return slot
 end
 
@@ -98,7 +99,7 @@ function Swap:Update()
 	self:UpdateFor(Enemy, Player)
 
 	local close = _G[Swap:GetName() .. 'CloseButton']
-	local playerPet = Battle:GetCurrent(Player)	
+	local playerPet = Battle:GetCurrent(Player)
 
 	if Battle:IsPvE() and playerPet:IsAlive() then
 		close:Enable()
@@ -109,14 +110,14 @@ end
 
 function Swap:UpdateFor(owner, target)
 	target = Battle:GetCurrent(target):GetType()
-	
+
 	for i = 1, NumPets do
 		local pet = Battle:Get(owner, i)
 		local slot = self[owner .. i]
 
 		slot:Display(pet:Exists() and pet, target)
 		slot.pet = pet
-	end	
+	end
 end
 
 

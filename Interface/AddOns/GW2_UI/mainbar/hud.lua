@@ -366,6 +366,12 @@ local function xpbar_OnEvent(self, event)
         else
             artifactVal = 0
         end
+        _G["GwExperienceFrameArtifactBar"]:SetStatusBarColor(
+            FACTION_BAR_COLORS[10].r,
+            FACTION_BAR_COLORS[10].g,
+            FACTION_BAR_COLORS[10].b
+        )
+        _G["GwExperienceFrameArtifactBar"].animation:Show()
     end
 
     if showBar2 then
@@ -538,40 +544,64 @@ local function xpbar_OnEvent(self, event)
 
     _G["GwExperienceFrameNextLevel"]:SetText(Nextlevel)
     _G["GwExperienceFrameCurrentLevel"]:SetText(restingIconString .. level)
-    if showBar1 and not showBar2 then
-        _G["GwExperienceFrameBar"]:SetHeight(8)
-        _G["GwExperienceFrameBarCandy"]:SetHeight(8)
-        _G["ExperienceBarSpark"]:SetHeight(8)
-    end
-
     if showBar1 and showBar2 then
+        _G["GwExperienceFrameBar"]:Show()
+        _G["GwExperienceFrameBarCandy"]:Show()
         _G["GwExperienceFrameBar"]:SetHeight(4)
         _G["GwExperienceFrameBarCandy"]:SetHeight(4)
         _G["ExperienceBarSpark"]:SetHeight(4)
-
+        ExperienceBarSpark:Show()
+        
+        _G["GwExperienceFrameArtifactBar"]:Show()
+        _G["GwExperienceFrameArtifactBarCandy"]:Show()
+        _G["GwExperienceFrameArtifactBarAnimation"]:Show()
         _G["GwExperienceFrameArtifactBar"]:SetHeight(4)
+        _G["GwExperienceFrameArtifactBarAnimation"]:SetHeight(4)
         _G["GwExperienceFrameArtifactBarCandy"]:SetHeight(4)
         _G["ArtifactBarSpark"]:SetHeight(4)
         ArtifactBarSpark:Show()
-    end
-
-    if not showBar2 then
-        _G["GwExperienceFrameArtifactBar"]:SetValue(0)
-        _G["GwExperienceFrameArtifactBarCandy"]:SetValue(0)
-        _G["GwExperienceFrameArtifactBarCandy"]:SetValue(0)
-        ArtifactBarSpark:Hide()
-    end
-    if showBar1 then
-        ExperienceBarSpark:Show()
-        _G["GwExperienceFrameBar"]:Show()
-        _G["GwExperienceFrameBarCandy"]:Show()
-    end
-    if not showBar1 then
+    elseif not showBar1 and showBar2 then
         _G["GwExperienceFrameBar"]:Hide()
         _G["GwExperienceFrameBarCandy"]:Hide()
         _G["GwExperienceFrameBar"]:SetValue(0)
         _G["GwExperienceFrameBarCandy"]:SetValue(0)
         ExperienceBarSpark:Hide()
+
+        _G["GwExperienceFrameArtifactBar"]:Show()
+        _G["GwExperienceFrameArtifactBarCandy"]:Show()
+        _G["GwExperienceFrameArtifactBarAnimation"]:Show()
+        _G["GwExperienceFrameArtifactBar"]:SetHeight(8)
+        _G["GwExperienceFrameArtifactBarAnimation"]:SetHeight(8)
+        _G["GwExperienceFrameArtifactBarCandy"]:SetHeight(8)
+        _G["ArtifactBarSpark"]:SetHeight(4)
+        ArtifactBarSpark:Show()
+    elseif showBar1 and not showBar2 then
+        _G["GwExperienceFrameBar"]:Show()
+        _G["GwExperienceFrameBarCandy"]:Show()
+        _G["GwExperienceFrameBar"]:SetHeight(8)
+        _G["GwExperienceFrameBarCandy"]:SetHeight(8)
+        _G["ExperienceBarSpark"]:SetHeight(8)
+        ExperienceBarSpark:Show()
+
+        _G["GwExperienceFrameArtifactBar"]:Hide()
+        _G["GwExperienceFrameArtifactBarCandy"]:Hide()
+        _G["GwExperienceFrameArtifactBarAnimation"]:Hide()
+        _G["GwExperienceFrameArtifactBar"]:SetValue(0)
+        _G["GwExperienceFrameArtifactBarCandy"]:SetValue(0)
+        ArtifactBarSpark:Hide()
+    elseif not showBar1 and not showBar2 then 
+        _G["GwExperienceFrameBar"]:Hide()
+        _G["GwExperienceFrameBarCandy"]:Hide()
+        _G["GwExperienceFrameBar"]:SetValue(0)
+        _G["GwExperienceFrameBarCandy"]:SetValue(0)
+        ExperienceBarSpark:Hide()
+
+        _G["GwExperienceFrameArtifactBar"]:Hide()
+        _G["GwExperienceFrameArtifactBarCandy"]:Hide()
+        _G["GwExperienceFrameArtifactBarAnimation"]:Hide()
+        _G["GwExperienceFrameArtifactBar"]:SetValue(0)
+        _G["GwExperienceFrameArtifactBarCandy"]:SetValue(0)
+        ArtifactBarSpark:Hide()
     end
 
     if experiencebarAnimation > valPrec then
@@ -579,6 +609,37 @@ local function xpbar_OnEvent(self, event)
     end
 end
 GW.AddForProfiling("hud", "xpbar_OnEvent", xpbar_OnEvent)
+
+local function animateAzeriteBar(self, elapsed)
+    self:SetPoint(
+        "RIGHT",  
+        ArtifactBarSpark,
+        'RIGHT',
+        0,
+        0
+    )
+    speed = 0.01
+    self.prog = self.prog + (speed * elapsed)
+    if self.prog > 1 then
+        self.prog = 0
+    end
+    
+    self.texture1:SetTexCoord(0 , _G["GwExperienceFrameArtifactBar"]:GetValue(), 0, 1)
+    self.texture2:SetTexCoord(_G["GwExperienceFrameArtifactBar"]:GetValue(), 0, 1, 0)
+
+    if self.prog < 0.2 then
+        self.texture2:SetVertexColor(1, 1, 1, lerp(0, 1, self.prog / 0.2))
+    elseif self.prog > 0.8 then
+        self.texture2:SetVertexColor(1, 1, 1, lerp(1, 0, (self.prog - 0.8) / 0.2))
+    end
+    if self.prog > 0.5 then
+        self.texture1:SetVertexColor(1, 1, 1, lerp(0.3, 0, (self.prog - 0.5) / 0.5))
+    elseif self.prog < 0.5 then
+        self.texture1:SetVertexColor(1, 1, 1, lerp(0,0.3, self.prog / 0.5 ))
+    end
+    self.texture2:SetTexCoord(1 - self.prog, self.prog, 1, 0)  
+end
+GW.AddForProfiling("hud", "animateAzeriteBar", animateAzeriteBar)
 
 local function updateBarSize()
     local m = (UIParent:GetWidth() - 180) / 10
@@ -1502,6 +1563,11 @@ displayRewards = function()
     local i = 1
     for k, v in pairs(GW_LEVELING_REWARDS) do
         if v["level"] > UnitLevel("player") then
+            
+            if _G["GwLevelingRewardsItem" .. i].mask~=nil then
+                _G["GwLevelingRewardsItem" .. i].icon:AddMaskTexture(nil)
+            end
+            
             _G["GwLevelingRewardsItem" .. i]:Show()
             _G["GwLevelingRewardsItem" .. i].level:SetText(
                 v["level"] .. " |TInterface\\AddOns\\GW2_UI\\textures\\levelreward-icon:24:24:0:0|t "
@@ -1520,6 +1586,27 @@ displayRewards = function()
                         GameTooltip:Show()
                     end
                 )
+                if IsPassiveSpell(v["id"]) then
+                    if not _G["GwLevelingRewardsItem" .. i].mask then
+                    local mask = UIParent:CreateMaskTexture()
+                    mask:SetPoint("CENTER", _G["GwLevelingRewardsItem" .. i].icon, "CENTER", 0, 0)
+                    mask:SetTexture(
+                        "Interface\\AddOns\\GW2_UI\\textures\\talents\\passive_border",
+                        "CLAMPTOBLACKADDITIVE",
+                        "CLAMPTOBLACKADDITIVE"
+                        )
+                    mask:SetSize(40, 40)
+                    _G["GwLevelingRewardsItem" .. i].mask = mask
+                    _G["GwLevelingRewardsItem" .. i].icon:AddMaskTexture(mask)
+                    else
+                        _G["GwLevelingRewardsItem" .. i].icon:AddMaskTexture(mask)
+                    end
+                else
+                    if _G["GwLevelingRewardsItem" .. i].mask~=nil then
+                        _G["GwLevelingRewardsItem" .. i].icon:AddMaskTexture(nil)
+                    end
+                end
+                
                 _G["GwLevelingRewardsItem" .. i]:SetScript("OnLeave", GameTooltip_Hide)
             end
             if v["type"] == "TALENT" then
@@ -1729,6 +1816,15 @@ local function LoadXPBar()
 
     local experiencebar = CreateFrame("Frame", "GwExperienceFrame", UIParent, "GwExperienceBar")
     GwlevelLableRightButton:SetScript("OnClick", xpbar_OnClick)
+    
+    _G["GwExperienceFrameArtifactBar"].animation:SetScript('OnShow', function()
+            _G["GwExperienceFrameArtifactBar"].animation:SetScript('OnUpdate', function(self, elapsed)
+                animateAzeriteBar(_G["GwExperienceFrameArtifactBar"].animation, elapsed)
+            end)
+    end)
+    _G["GwExperienceFrameArtifactBar"].animation:SetScript('OnHide', function()
+           _G["GwExperienceFrameArtifactBar"].animation:SetScript('OnUpdate', nil)
+    end)
 
     experiencebarAnimation = UnitXP("Player") / UnitXPMax("Player")
 

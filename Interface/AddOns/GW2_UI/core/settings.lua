@@ -996,6 +996,12 @@ local function LoadSettings()
         "BORDER_ENABLED",
         "GwSettingsHudOptions"
     )
+    addOption(
+        CAMERA_FOLLOWING_STYLE .. ": " .. DYNAMIC,
+        nil,
+        "DYNAMIC_CAM",
+        "GwSettingsHudOptions"
+    )
 
     addOptionDropdown(
         GwLocalization["MINIMAP_HOVER"],
@@ -1005,12 +1011,16 @@ local function LoadSettings()
         function()
             GW.SetMinimapHover()
         end,
-        {"NONE", "BOTH", "CLOCK", "ZONE"},
+        {"NONE", "ALL", "CLOCK", "ZONE", "COORDS", "CLOCKZONE", "CLOCKCOORDS", "ZONECOORDS"},
         {
             NONE_KEY,
-            STATUS_TEXT_BOTH,
+            ALL,
             TIMEMANAGER_TITLE,
-            ZONE
+            ZONE,
+            GwLocalization['MINIMAP_COORDS'],
+            TIMEMANAGER_TITLE .. " + " .. ZONE,
+            TIMEMANAGER_TITLE .. " + " .. GwLocalization['MINIMAP_COORDS'],
+            ZONE .. " + " .. GwLocalization['MINIMAP_COORDS']
         }
     )
     addOptionDropdown(
@@ -1091,6 +1101,12 @@ local function LoadSettings()
         DISPLAY_ONLY_DISPELLABLE_DEBUFFS,
         GwLocalization["DEBUFF_DISPELL_DESC"],
         "RAID_ONLY_DISPELL_DEBUFFS",
+        "GwSettingsGroupframe"
+    )
+    addOption(
+        WORLD_MARKER:format(0):gsub("%d", ""),
+        nil,
+        "WORLD_MARKER_FRAME",
         "GwSettingsGroupframe"
     )
     addOption(

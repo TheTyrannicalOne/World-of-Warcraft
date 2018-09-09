@@ -1,17 +1,31 @@
 local _, GW = ...
 local FACTION_COLOR = GW.FACTION_COLOR
 local AddToAnimation = GW.AddToAnimation
+local GetTopCenterWidgetSetID = C_UIWidgetManager.GetTopCenterWidgetSetID
+local GetAllWidgetsBySetID = C_UIWidgetManager.GetAllWidgetsBySetID
+local GetIconAndTextWidgetVisualizationInfo = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo
+local GetAreaPOIForMap = C_AreaPoiInfo.GetAreaPOIForMap
+local GetAreaPOIInfo = C_AreaPoiInfo.GetAreaPOIInfo
+local GetBestMapForUnit = C_Map.GetBestMapForUnit
 
 local bgs = {}
+local POIList = {}
+local POIInfo = {}
 
 local activeBg = 0
+local activeMap = 0
 
-local function getPointsNum(t)
-    local _, score, max = string.match(t, "[^%d]+(%d+)[^%d]+(%d+)/(%d+)")
 
-    return score, max
+local function parsePoints(id)
+    local points = nil
+    local text = GetIconAndTextWidgetVisualizationInfo(GetAllWidgetsBySetID(GetTopCenterWidgetSetID())[id].widgetID).text
+
+    if text ~= nil then
+        points = string.match(text, "(%d+)/")
+    end
+    return points
 end
-GW.AddForProfiling("battlegrounds", "getPointsNum", getPointsNum)
+GW.AddForProfiling("battlegrounds", "parsePoints", parsePoints)
 
 local function capStateChanged(self)
     local fnScale = function(prog)
@@ -97,28 +111,28 @@ end
 GW.AddForProfiling("battlegrounds", "getLandMarkFrame", getLandMarkFrame)
 
 local function AB_onEvent(self, event, ...)
-    local _, _, _, text, _, _, _, _, _, _, _, _ = GetWorldStateUIInfo(1)
-    local _, _, _, text2, _, _, _, _, _, _, _, _ = GetWorldStateUIInfo(2)
+    local pointsAlliance = parsePoints(2)
+    local pointsHorde = parsePoints(3)
 
-    if text2 == nil or text == nil then
+    if pointsAlliance == nil or pointsHorde == nil or activeMap == 0 then
         return
     end
-
-    local current, _ = getPointsNum(text)
-    local current2, _ = getPointsNum(text2)
-
-    self.scoreRight:SetText(current)
-
-    self.scoreLeft:SetText(current2)
-
+    
+    self.scoreRight:SetText(pointsAlliance)
+    self.scoreLeft:SetText(pointsHorde)
     self.timer:SetText("")
 
-    for i = 1, GetNumMapLandmarks() do
-        local _, _, _, icon = GetMapLandmarkInfo(i)
+    wipe(POIList)
+    wipe(POIInfo)
+
+    POIList = GetAreaPOIForMap(activeMap)
+
+    for i = 1, #POIList do
+        POIInfo = GetAreaPOIInfo(activeMap, POIList[i])
         local f = getLandMarkFrame(i)
         LandMarkFrameSetPoint_noTimer(i)
 
-        setIcon(f, icon)
+        setIcon(f, POIInfo.textureIndex)
 
         GwBattleGroundScores.MID:SetWidth(36 * i)
     end
@@ -135,6 +149,9 @@ local function pvpHud_onEvent(self, event)
 
     if bgs[mapID] ~= nil then
         activeBg = mapID
+        activeMap = GetBestMapForUnit("player")
+        UIWidgetTopCenterContainerFrame:Hide()
+
         GwBattleGroundScores:SetScript("OnEvent", bgs[mapID]["OnEvent"])
 
         GwBattleGroundScores:RegisterEvent("UPDATE_BATTLEFIELD_STATUS")
@@ -147,8 +164,6 @@ local function pvpHud_onEvent(self, event)
         GwBattleGroundScores:RegisterEvent("ZONE_CHANGED_NEW_AREA")
         GwBattleGroundScores:RegisterEvent("PLAYER_ENTERING_BATTLEGROUND")
 
-        GwBattleGroundScores:RegisterEvent("WORLD_STATE_UI_TIMER_UPDATE")
-
         GwBattleGroundScores:RegisterEvent("BATTLEGROUND_POINTS_UPDATE")
         GwBattleGroundScores:RegisterEvent("LFG_ROLE_CHECK_DECLINED")
         GwBattleGroundScores:RegisterEvent("LFG_ROLE_CHECK_SHOW")
@@ -159,6 +174,7 @@ local function pvpHud_onEvent(self, event)
     else
         GwBattleGroundScores:UnregisterAllEvents()
         GwBattleGroundScores:Hide()
+        UIWidgetTopCenterContainerFrame:Show()
     end
 end
 GW.AddForProfiling("battlegrounds", "pvpHud_onEvent", pvpHud_onEvent)

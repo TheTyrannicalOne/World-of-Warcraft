@@ -656,7 +656,7 @@ end
 
 function private.BuyoutConfirmationShow(context, isBuy)
 	local record = context.scanFrame:GetElement("auctions"):GetSelectedRecord()
-	local buyout = isBuy and record:GetField("buyout") or record:GetField("minBid")
+	local buyout = isBuy and record:GetField("buyout") or record:GetField("requiredBid")
 	local stackSize = record:GetField("stackSize")
 	local itemString = record:GetField("itemString")
 
@@ -792,6 +792,7 @@ end
 
 function private.PostDialogShow(baseFrame, record)
 	local itemString = record.itemString
+	local cagedPet = strfind(itemString, "^p")
 	local undercut = TSMAPI_FOUR.PlayerInfo.IsPlayer(record.seller, true, true, true) and 0 or 1
 	private.perItem = true
 	local frame = TSMAPI_FOUR.UI.NewElement("Frame", "frame")
@@ -862,6 +863,7 @@ function private.PostDialogShow(baseFrame, record)
 				:SetStyle("justifyH", "RIGHT")
 				:SetMinNumber(1)
 				:SetMaxNumber(9999)
+				:SetDisabled(cagedPet)
 				:SetMaxLetters(4)
 				:SetText("1")
 				:SetScript("OnTextChanged", private.QuantityNumInputOnTextChanged)
@@ -880,6 +882,7 @@ function private.PostDialogShow(baseFrame, record)
 				:SetStyle("fontHeight", 12)
 				:SetStyle("height", 18)
 				:SetStyle("justifyH", "RIGHT")
+				:SetDisabled(cagedPet)
 				:SetMinNumber(1)
 				:SetMaxNumber(9999)
 				:SetMaxLetters(4)
@@ -901,6 +904,7 @@ function private.PostDialogShow(baseFrame, record)
 				:SetStyle("margin.right", 4)
 				:SetStyle("font", TSM.UI.Fonts.MontserratMedium)
 				:SetStyle("fontHeight", 12)
+				:SetDisabled(cagedPet)
 				:SetText(L["MAX"])
 				:SetScript("OnClick", private.MaxNumBtnOnClick)
 			)
@@ -914,6 +918,7 @@ function private.PostDialogShow(baseFrame, record)
 				:SetStyle("margin.right", 4)
 				:SetStyle("font", TSM.UI.Fonts.MontserratMedium)
 				:SetStyle("fontHeight", 12)
+				:SetDisabled(cagedPet)
 				:SetText(L["MAX"])
 				:SetScript("OnClick", private.MaxStackSizeBtnOnClick)
 			)
@@ -1471,6 +1476,10 @@ function private.PostButtonOnClick(button)
 		end
 	end
 	if postBag and postSlot then
+		if strfind(button:GetContext(), "^p") then
+			stackSize = 1
+			num = 1
+		end
 		-- need to set the duration in the default UI to avoid Blizzard errors
 		AuctionFrameAuctions.duration = postTime
 		ClearCursor()
@@ -1974,7 +1983,7 @@ function private.FSMCreate()
 			:SetOnEnter(function(context)
 				local selection = context.scanFrame:GetElement("auctions"):GetSelectedRecord()
 				local price = TSMAPI_FOUR.CustomPrice.GetValue(TSM.db.global.shoppingOptions.buyoutAlertSource, selection:GetField("itemString"))
-				if not TSM.db.global.shoppingOptions.buyoutConfirm or (price and ceil(selection:GetField("buyout") / selection:GetField("stackSize")) < price) then
+				if not TSM.db.global.shoppingOptions.buyoutConfirm or (price and ceil(selection:GetField("requiredBid") / selection:GetField("stackSize")) < price) then
 					return "ST_PLACING_BID"
 				else
 					private.BuyoutConfirmationShow(context, false)
@@ -2017,7 +2026,7 @@ function private.FSMCreate()
 				assert(index)
 				if context.auctionScan:ValidateIndex(index, context.findAuction) then
 					-- bid on the auction
-					PlaceAuctionBid("list", index, context.findAuction:GetField("minBid"))
+					PlaceAuctionBid("list", index, context.findAuction:GetField("requiredBid"))
 					context.numBid = context.numBid + 1
 				else
 					TSM:Printf(L["Failed to bid on auction of %s."], context.findAuction:GetField("rawLink"))

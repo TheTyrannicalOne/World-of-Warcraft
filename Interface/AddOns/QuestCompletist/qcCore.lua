@@ -23,9 +23,8 @@ local qcToastTooltip = nil
 local qcNewDataAlertTooltip = nil
 local qcMutuallyExclusiveAlertTooltip = nil
 
-
 --[[ Constants ]]--
-local QCADDON_VERSION = 109.16
+local QCADDON_VERSION = 109.17
 local QCADDON_PURGE = true
 local QCDEBUG_MODE = false
 local QCADDON_CHAT_TITLE = "|CFF9482C9Quest Completist:|r "
@@ -675,7 +674,7 @@ function qcQuestClick(qcButtonIndex)
           for qcInitiatorQuestIndex, qcInitiatorQuestEntry in pairs(qcPinDB[qcMapIndex][qcInitiatorIndex][7]) do
             if (qcInitiatorQuestEntry == qcQuestID) then
               --print(string.format("%sFound quest. Initiator: %s",QCADDON_CHAT_TITLE, qcInitiatorEntry[4]))
-              TomTom:AddMFWaypoint(qcMapIndex, 0, qcInitiatorEntry[5]/100, qcInitiatorEntry[6]/100, {title=qcInitiatorEntry[4]})
+              TomTom:AddWaypoint(qcMapIndex, 0, qcInitiatorEntry[5]/100, qcInitiatorEntry[6]/100, {title=qcInitiatorEntry[4]})
               break
             end
           end
