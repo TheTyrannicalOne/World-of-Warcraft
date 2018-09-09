@@ -1,52 +1,82 @@
-tag 83aff71e1530c1efdcfc5da270c8b6bfe2f1e752 8.0.1.9
+tag 52eea60e77de65ba68467f7dec99de8c16706cf5 8.0.1.12
 Author:	James D. Callahan III <jcallahan@curse.com>
-Date:	Mon Aug 27 23:57:51 2018 -0500
+Date:	Thu Sep 6 02:06:15 2018 -0500
 
-commit 51c04b4d59f26adf8b92f52cbf74173f5ee2bc55
+commit 41492f4afc6479f5d8060730031db4471ba1cc7b
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Mon Aug 27 19:02:08 2018 -0500
+Date:   Thu Sep 6 02:02:03 2018 -0500
 
-    Ignore vignettes which are obviously treasure.
+    Add Vuguth and Maw of Shul-Nagruth to Nazmir.
 
-commit 63b98d03b4be1a244c6e416cacd33cb69a6d7771
+commit b7fe7b5c8050696b3986d9593dc7c470f99c5f87
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Mon Aug 27 18:48:53 2018 -0500
+Date:   Thu Sep 6 02:01:24 2018 -0500
 
-    Propagate the vignette's name to the targeting button if the vignette doesn't yield an NPC ID to make the source more obvious; for example, Zhu-Gon the Sour must be summoned via an object with a vignetteName of Really Skunky Beer.
+    Add support/NPCs for the Life Finds a Way... To Die! achievement.
 
-commit 52555da006273d3c2b8d9e12569bd293b3230354
+commit 3daba64fc27e4aa5718002b06c66d8218503f9c9
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 25 16:26:25 2018 -0500
+Date:   Thu Sep 6 01:59:19 2018 -0500
 
-    Add questIDs for Squadron Commander Vishax and Rezira the Seer.
+    Add Sky Queen to Dazar'alor.
 
-commit 33003e80e3c860d875d7a9b8a861bfe52271fd7b
+commit 4f1b4db3297fbfb4b24d902290fe6e624a5a7174
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 25 16:21:03 2018 -0500
+Date:   Thu Sep 6 01:58:02 2018 -0500
 
-    Change variable name for clarity.
+    Move Old R'gal from Zuldazar to Dazar'alor.
 
-commit d2b7de8b4f93001d42cc593e5dbaae46f2c08be1
+commit 862575f120d45189730f3d280f4e33e6937a5adc
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 25 16:19:37 2018 -0500
+Date:   Thu Sep 6 01:55:40 2018 -0500
 
-    Protect against HBD not having a zone name.
+    ProcessVignetteGUID: Use the NPC's classification, if present, as unitClassification in the table passed to ProcessDetection so that there is a better chance of spawning a correctly-styled target button.
 
-commit cb126899ed34a5bf6a3c1b5685aef092c5335ae8
+commit 64d1ff7f9fa9193191c3bebb0aee151a142435d3
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 25 16:07:58 2018 -0500
+Date:   Thu Sep 6 01:52:48 2018 -0500
 
-    Add Akakakoo to Uncharted Island.
+    ProcessVignetteGUID: Move npcID assignment to before the first place it can be referenced.
 
-commit bf599d3fd4115e9f78eac7d5b64501af5b4a6351
+commit 47baf835d15526a89ff4acf7c9258cfdf2973762
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sat Aug 25 16:00:45 2018 -0500
+Date:   Thu Sep 6 01:51:24 2018 -0500
 
-    Use the correct vignetteID for Captain Mu'kala.
+    Change QuestNPCs table to hold an NPC object instead of true.
 
-commit 34e46f4461056d3957263cfd7a75ae56862ce6ff
+commit 269387affee8ccfb682148d29d0786a95f4e75c1
 Author: James D. Callahan III <jcallahan@curse.com>
-Date:   Sun Aug 19 13:16:15 2018 -0500
+Date:   Thu Sep 6 01:49:20 2018 -0500
 
-    Set a default size of 1000x1000 for the preferences window since the original defaults were too small.
+    Remove Kul'krazahn from Zuldazar - he's only in Dazar'alor.
+
+commit 1b32e7c0eb59ad25a86ea4eb611b901921b76aa8
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Sep 6 01:47:10 2018 -0500
+
+    Add Grand Marshal Tremblade and Marshal Gabriel to Boralus.
+
+commit 0f3eac11764d5c41991c2c7f46f5df04b511500e
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Sep 6 01:46:30 2018 -0500
+
+    Add questID for Bloodmaw.
+
+commit 5dc51d3811181a67cbc69f43a195764f87ad8e6d
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Sep 6 01:46:01 2018 -0500
+
+    Move Rear Admiral Hainsworth, Dark Ranger Clea, and Sawtooth from Tiragarde Sound to Boralus.
+
+commit 357f0ad5c03fb4b865f54459f3f46465d517982a
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Sep 6 01:43:55 2018 -0500
+
+    Change achievementQuestID for Crushtacean to match the new value.
+
+commit 3bfec86563584697c3f1726ba21c82d058ab7550
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Thu Sep 6 01:43:09 2018 -0500
+
+    Add questID and vignetteID for Tempestria.
 

@@ -1,12 +1,8 @@
-## Interface: 60200
+## Interface: 80000
 ## Title: Lib AchievementLocations-1.0
-## Version: 0.4.19
-## Author: rbrian
+## Version: 0.4.20
+## Author: idiomatiq
 ## X-License: Apache
-## X-Curse-Packaged-Version: v0.4.19-1
-## X-Curse-Project-Name: HandyNotes_Achievements
-## X-Curse-Project-ID: handynotes_achievements
-## X-Curse-Repository-ID: wow/handynotes_achievements/mainline
 
 AchievementLocations-1.0.lua
 AchievementLocations_data.lua

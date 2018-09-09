@@ -5,7 +5,6 @@ TODOs:
 	Add legacy coordinate rolls mode back?
 	Remove whisper/ms/os/xmog prompts right away when players leave group?  (ex: end of lfr)
 	When offering loot, show how many people are eligible and keep track of who still may roll?
-	Bug with people being shown pass/whisper instead of keep/offer when looting...may be related to cyrillic names?  or same name from different realms in IsPlayer()?
 	Bug - whisper message doesn't allow special characters
 	Don't show PLH UI if group is using RCLootCouncil
 	Do something special when multiple of same item drop?  i.e. tell looter that [name] offered a duplicate of this item to [name]?
@@ -34,6 +33,22 @@ Known Bugs:
 		
 CHANGELOG:
 
+20180903 - 2.17
+	Fixed issue that caused PLH to not work for players whose realms have spaces in their names
+	
+20180902 - 2.16
+	Fixed several more bugs that affected loot trading
+	
+20180830 - 2.15
+	Fixed issue some player were having where they were shown pass/whisper buttons instead of keep/offer buttons for their own loot
+	
+20180828 - 2.14
+	Fixed notifications for rings and trinkets where the loot is an upgrade for one slot but not the other
+	Fixed trinket recommendations to pay attention to primary attributes
+	
+20180828 - 2.13
+	Fixed version notification
+	
 20180828 - 2.12
     Added azerite armor back into evaluations since Blizzard is allowing Azerite armor to be traded
 	
@@ -457,6 +472,7 @@ local tooltipLong 							-- tooltip with the first 30 lines of the tooltip (for 
 local plhUsers = {}							-- array of PLH users; keyed by name-realm of user, valued with version
 
 local itemCache = {}						-- keeps track of items that we're waiting to be loaded into the cache so they can be processed
+local playerItemCache = {}					-- contains FullItemInfos of the players' items
 
 local groupInfoCache = {}  					-- array of items equipped by group members; keyed by name-realm of group member
 	--[[									   structure is as follows, for each group member:
@@ -663,7 +679,6 @@ local function IsEquippableItemForCharacter(fullItemInfo, characterName)
 	local characterClass
 	local characterSpec
 	local characterLevel
-
 	if fullItemInfo ~= nil and characterName ~= nil and fullItemInfo[FII_IS_EQUIPPABLE] then
 		if IsPlayer(characterName) then
 			_, characterClass = UnitClass('player')
@@ -700,7 +715,8 @@ local function IsEquippableItemForCharacter(fullItemInfo, characterName)
 			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_HOLDABLE' or
 			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_RANGED' or
 			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_THROWN' or
-			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_RANGEDRIGHT' then
+			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_RANGEDRIGHT' or
+			fullItemInfo[FII_ITEM_EQUIP_LOC] == 'INVTYPE_TRINKET' then
 			
 			local itemPrimaryAttribute = GetItemPrimaryAttribute(fullItemInfo[FII_ITEM])
 			if itemPrimaryAttribute ~= nil then
@@ -800,10 +816,11 @@ end
 local function GetEquippedItem(characterName, slotID)
 	local item = nil
 	if IsPlayer(characterName) then
-		item = GetInventoryItemLink('player', slotID)
-		if item ~= nil then
-			item = GetFullItemInfo(item)
-		end
+		item = playerItemCache[slotID]
+-- 		item = GetInventoryItemLink('player', slotID)
+--		if item ~= nil then
+--			item = GetFullItemInfo(item)
+--		end
 	else
 		local characterDetails = groupInfoCache[characterName]
 		if characterDetails ~= nil then
@@ -813,9 +830,24 @@ local function GetEquippedItem(characterName, slotID)
 	return item
 end
 
+local function LoadPlayerItems()
+	PLH_SendDebugMessage("Loading Player Items")
+
+	local item
+	for slotID = 1, 17 do
+		item = GetInventoryItemLink('player', slotID)
+		if item ~= nil then
+			playerItemCache[slotID] = GetFullItemInfo(item)
+		else
+			playerItemCache[slotID] = nil
+		end
+	end
+end
+
 -- returns two variables:  true if the item is an upgrade over equippedItem (based on ilvl), equipped ilvl
 -- note: doesn't check if item is equippable, so make sure you do that check beforehand
-local function IsAnUpgradeForCharacter(fullItemInfo, characterName, threshold)
+-- both parameter:  if true, return true for rings/trinkets only if it's an upgrade for both slots
+local function IsAnUpgradeForCharacter(fullItemInfo, characterName, threshold, both)
 	local itemEquipLoc = fullItemInfo[FII_ITEM_EQUIP_LOC]
 	local itemRealILVL = fullItemInfo[FII_REAL_ILVL]
 
@@ -826,7 +858,7 @@ local function IsAnUpgradeForCharacter(fullItemInfo, characterName, threshold)
 	local isAnUpgrade2 = false
 	local equippedILVL2 = 0
 	local slotID
-	
+
 	if itemEquipLoc ~= nil and itemEquipLoc ~= '' then
 		if itemEquipLoc == 'INVTYPE_FINGER' then
 			equippedItem1 = GetEquippedItem(characterName, INVSLOT_FINGER1)
@@ -848,7 +880,11 @@ local function IsAnUpgradeForCharacter(fullItemInfo, characterName, threshold)
 			if equippedItem2 ~= nil then
 				isAnUpgrade1, equippedILVL1 = IsAnUpgrade(itemRealILVL, equippedItem1[FII_REAL_ILVL], threshold)
 				isAnUpgrade2, equippedILVL2 = IsAnUpgrade(itemRealILVL, equippedItem2[FII_REAL_ILVL], threshold)
-				isAnUpgrade1 = isAnUpgrade1 or isAnUpgrade2
+				if both then
+					isAnUpgrade1 = isAnUpgrade1 and isAnUpgrade2
+				else
+					isAnUpgrade1 = isAnUpgrade1 or isAnUpgrade2
+				end
 				equippedILVL1 = min(equippedILVL1, equippedILVL2)
 			else
 				isAnUpgrade1, equippedILVL1 = IsAnUpgrade(itemRealILVL, equippedItem1[FII_REAL_ILVL], threshold)
@@ -1742,7 +1778,6 @@ end
 
 function PLH_ProcessTradeItemMessage(looterName, item)
 --	PLH_SendDebugMessage('Entering PLH_ProcessTradeItemMessage (' .. looterName .. ', ' .. item .. ')')
-
 	if not IsPlayer(looterName) then
 		if GetItemInfo(item) == nil then
 			-- we need to wait for the item to be loaded into the cache
@@ -1838,7 +1873,7 @@ local function PLH_ProcessVersionMessage(plhUser, version)
 		if ShouldShowLootedItemsDisplay() then
 			UpdateLootedItemsDisplay()
 		end
-		if version < GetAddOnMetadata('PersonalLootHelper', 'Version') and not showedVersionAlert then
+		if version > GetAddOnMetadata('PersonalLootHelper', 'Version') and not showedVersionAlert then
 			PLH_SendUserMessage("Your version of Personal Loot Helper is out-of-date. You can download version " .. version .. " from the Twitch app or by searching for PLH on curseforge.com")
 			showedVersionAlert = true
 		end
@@ -1854,15 +1889,19 @@ end
 -- Event handler for CHAT_MSG_ADDON event
 local function AddonMessageReceivedEvent(self, event, ...)
 	local prefix, message, _, sender = ...
-	
+
 	if prefix == 'PLH' then
+	
+		sender = PLH_GetFullName(sender)
+		
 		PLH_SendDebugMessage('Received AddonMessage: ' .. message .. ' from ' .. sender)
 		
 		local process, lootedItemID, looterName, optional = message:match('(.+)~(.+)~(.+)~(.+)')
 		if optional == nil then
 			process, lootedItemID, looterName = message:match('(.+)~(.+)~(.+)')
 		end
-		
+		looterName = PLH_GetFullName(looterName)
+
 		if process == "KEEP" then
 			PLH_ProcessKeepItemMessage(sender, lootedItemID)
 		elseif process == "TRADE" then
@@ -2046,7 +2085,7 @@ local function PerformNotify(fullItemInfo, looterName)
 	if ShouldBeEvaluated(fullItemInfo) then
 		if IsPlayer(looterName) then
 --			local isTradeable = fullItemInfo[FII_TRADE_TIME_WARNING_SHOWN] or not IsAnUpgradeForCharacter(fullItemInfo, looterName)
-			local isTradeable = not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0)
+			local isTradeable = not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0, true)
 			if isTradeable then
 
 				local isAnUpgradeForAnyCharacter, isAnUpgradeForAnyCharacterNames = IsAnUpgradeForAnyCharacter(fullItemInfo)
@@ -2065,7 +2104,7 @@ local function PerformNotify(fullItemInfo, looterName)
 					end
 				end			
 			end
-		elseif not IsPLHUser(looterName) and fullItemInfo[FII_BIND_TYPE] ~= LE_ITEM_BIND_ON_EQUIP and not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0) then
+		elseif not IsPLHUser(looterName) and fullItemInfo[FII_BIND_TYPE] ~= LE_ITEM_BIND_ON_EQUIP and not IsAnUpgradeForCharacter(fullItemInfo, looterName, 0, true) then
 			if shouldAddLootedItem(fullItemInfo) then
 				AddLootedItem(fullItemInfo, looterName)
 				UpdateLootedItemsDisplay()
@@ -2180,12 +2219,14 @@ local function UpdateGroupInfoCache(unit)
 		local item
 		for invslot = _G.INVSLOT_FIRST_EQUIPPED, _G.INVSLOT_LAST_EQUIPPED do
 			if invslot ~= _G.INVSLOT_BODY and invslot ~= INVSLOT_TABARD then -- ignore shirt and tabard slots
-				item = GetInventoryItemLink(UnitName(unit), invslot)
-				if item ~= nil and GetItemInfo(item) ~= nil then
-					if characterDetails[invslot] == nil or characterDetails[invslot] ~= item then
-						updatedItemCount = updatedItemCount + 1
---						characterDetails[invslot] = GetFullItemInfo(item)
-						characterDetails[invslot] = item
+				if unit ~= nil then
+					item = GetInventoryItemLink(UnitName(unit), invslot)
+					if item ~= nil and GetItemInfo(item) ~= nil then
+						if characterDetails[invslot] == nil or characterDetails[invslot] ~= item then
+							updatedItemCount = updatedItemCount + 1
+	--						characterDetails[invslot] = GetFullItemInfo(item)
+							characterDetails[invslot] = item
+						end
 					end
 				end
 			end
@@ -2342,6 +2383,8 @@ local function GroupMemberInfoChangedEvent(self, event, ...)
 		if groupInfoCache[name] ~= nil then
 			groupInfoCache[name][FORCE_REFRESH] = true
 			PopulateGroupInfoCache()
+		elseif IsPlayer(name) then
+			LoadPlayerItems()
 		end
 	end
 end
@@ -2366,6 +2409,8 @@ local function Enable()
 	eventHandlerFrame:RegisterEvent('UNIT_INVENTORY_CHANGED')
 	eventHandlerFrame:RegisterEvent('GET_ITEM_INFO_RECEIVED')
 
+	LoadPlayerItems()
+	
 	PLH_SendAddonMessage('IDENTIFY_USERS~ ~' .. PLH_GetFullName('player'))
 end
 
@@ -2386,6 +2431,8 @@ local function EnableOrDisable()
 
 	if not isEnabled and shouldBeEnabled then	
 		Enable()
+	elseif isEnabled and shouldBeEnabled then	
+		PLH_ProcessIdentifyUsersMessage()
 	elseif isEnabled and not shouldBeEnabled then
 		Disable()
 	end

@@ -112,6 +112,27 @@ MADB = {
 						-2, -- [5]
 					},
 				},
+				["LootFrame"] = {
+					["UIPanelWindows"] = {
+						["pushable"] = 7,
+						["area"] = "left",
+					},
+					["orgPos"] = {
+						"BOTTOMLEFT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMLEFT", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["name"] = "LootFrame",
+					["pos"] = {
+						"BOTTOMLEFT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMLEFT", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+				},
 				["GroupLootFrame4"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
@@ -127,30 +148,6 @@ MADB = {
 						"TOP", -- [3]
 						0, -- [4]
 						0, -- [5]
-					},
-				},
-				["ChatConfigFrame"] = {
-					["UIPanelWindows"] = {
-						["whileDead"] = 1,
-						["xoffset"] = -16,
-						["yoffset"] = 12,
-						["pushable"] = 0,
-						["area"] = "center",
-					},
-					["orgPos"] = {
-						"CENTER", -- [1]
-						"UIParent", -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["name"] = "ChatConfigFrame",
-					["pos"] = {
-						"BOTTOMLEFT", -- [1]
-						"UIParent", -- [2]
-						"BOTTOMLEFT", -- [3]
-						609.8955078125, -- [4]
-						250.097503662109, -- [5]
 					},
 				},
 				["FriendsFrame"] = {
@@ -192,32 +189,35 @@ MADB = {
 						-171.999755859375, -- [5]
 					},
 				},
-				["LootFrame"] = {
-					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						0, -- [4]
-						-135, -- [5]
-					},
-					["name"] = "LootFrame",
+				["ChatConfigFrame"] = {
 					["UIPanelWindows"] = {
-						["pushable"] = 7,
-						["area"] = "left",
+						["whileDead"] = 1,
+						["xoffset"] = -16,
+						["yoffset"] = 12,
+						["pushable"] = 0,
+						["area"] = "center",
 					},
+					["orgPos"] = {
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["name"] = "ChatConfigFrame",
 					["pos"] = {
 						"BOTTOMLEFT", -- [1]
 						"UIParent", -- [2]
 						"BOTTOMLEFT", -- [3]
-						0, -- [4]
-						0, -- [5]
+						609.8955078125, -- [4]
+						250.097503662109, -- [5]
 					},
 				},
 			},
 		},
 	},
-	["frameListRows"] = 18,
-	["noBags"] = false,
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["noBags"] = false,
+	["frameListRows"] = 18,
 }

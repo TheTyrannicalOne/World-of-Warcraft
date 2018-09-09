@@ -1,12 +1,12 @@
-# [2.7.4](https://github.com/WeakAuras/WeakAuras2/tree/2.7.4) (2018-08-28)
+# [2.7.7](https://github.com/WeakAuras/WeakAuras2/tree/2.7.7) (2018-09-06)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.7.3...2.7.4)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.7.6...2.7.7)
 
-Benjamin Staneck (1):
+Infus (5):
 
-- decrease "new" category label size
-
-Infus (1):
-
-- Fix PvP Load condition for Characters without a PvP talent selected
+- Use both columns for multiselect's multiselect widget
+- Fix SetMaxProgress of 0
+- Fix incorrect conditions deactivation for fallback states
+- Remove outdated TODO
+- Fix regression in Range Check condition
 

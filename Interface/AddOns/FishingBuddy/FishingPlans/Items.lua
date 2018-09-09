@@ -92,7 +92,7 @@ local function TuskarrPlan(queue)
                 local item = FL:GetBestFishingItem(INVSLOT_MAINHAND)
                 if item then
                     local name;
-                    _, main, name, _ = FL:SplitFishLink(item.link);
+                    _, main, name, _ = FL:SplitLink(item.link, true);
                     tinsert(queue, {
                         ["itemid"] = main,
                         ["name"] = name
@@ -138,14 +138,12 @@ local LagerItem =  {
 -- and leave that for FishingAce!
 local function LagerPlan(queue)
     if GSB("FishingFluff") and GSB("DrinkHeavily") then
-        if not FishingBuddy.GetCurrentSpell() then
-            if (GetItemCount(LagerItem.id) > 0 and not FL:HasBuff(LagerItem.spell)) then
-                tinsert(queue, {
-                    ["itemid"] = LagerItem.id,
-                    ["name"] = LagerItem[CurLoc],
-                })
-                FL:WaitForBuff(LagerItem.spell)
-            end
+        if (GetItemCount(LagerItem.id) > 0 and not FL:HasBuff(LagerItem.spell)) then
+            tinsert(queue, {
+                ["itemid"] = LagerItem.id,
+                ["name"] = LagerItem[CurLoc],
+            })
+            FL:WaitForBuff(LagerItem.spell)
         end
     end
 end

@@ -21,12 +21,15 @@ function GottaGoFastHistory:StoreRun(cCM)
     local k, d = GottaGoFastHistory:FindDungeonByZoneID(cCM["ZoneID"]);
     if (cCM["Completed"] == true and d ~= nil) then
       local corrupt = false;
+
+      -- Get Date Info
       local hours, mins = GetGameTime();
-      local weekday, month, day, year = CalendarGetDate();
+      local dateInfo = C_Calendar.GetDate();
+
       local deaths = cCM["Deaths"];
       local startTime = cCM["StartTime"];
       local endTime = GetTime();
-      local timeStamp = GottaGoFastHistory.Models.TimeStamp.New(month, day, year, hours, mins);
+      local timeStamp = GottaGoFastHistory.Models.TimeStamp.New(dateInfo.month, dateInfo.day, dateInfo.year, hours, mins);
       local level = cCM["Level"];
       local objectiveTimes = cCM["ObjectiveTimes"];
       local affixes = cCM["Affixes"];

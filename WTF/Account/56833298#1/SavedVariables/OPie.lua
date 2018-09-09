@@ -9,8 +9,8 @@ OneRing_Config = {
 		["default"] = {
 			["Bindings"] = {
 				["RaidSymbols"] = "ALT-E",
-				["OPieAutoQuest"] = false,
 				["SpecMenu"] = "ALT-Q",
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},

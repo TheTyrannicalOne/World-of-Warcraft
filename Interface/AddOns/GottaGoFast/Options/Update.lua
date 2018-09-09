@@ -30,6 +30,10 @@ function ggf.Changelog()
 end
 
 local changes = {};
+table.insert(changes, "# v3.0.1");
+table.insert(changes, "- Mythic+: Update LibObjectiveProgress (Mob Count)");
+table.insert(changes, "- History: Fix GetCalendarDate()");
+table.insert(changes, "");
 table.insert(changes, "# v3.0.0");
 table.insert(changes, "- BFA Support");
 table.insert(changes, "");

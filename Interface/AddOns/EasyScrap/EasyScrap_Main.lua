@@ -13,7 +13,7 @@ EasyScrap.parentFrame:SetScript('OnShow', function()
     EasyScrap.queueItems = {}
     EasyScrap:getScrappableItems()
     EasyScrap:filterScrappableItems()
-    --EasyScrap:resetQueue()
+    ----EasyScrap:resetQueue()
 
     EasyScrapItemFrame.switchContentState(2)
     checkNeedToQueue = false
@@ -27,6 +27,8 @@ EasyScrap.parentFrame:SetScript('OnShow', function()
         EasyScrap.updateOverlay:Show()
     else
         EasyScrap.updateOverlay:Hide()
+        EasyScrap.filterFrame:Hide()
+        EasyScrap.editFilterFrame:Hide()
         EasyScrap.mainFrame:Show()
     end
 end)
@@ -52,9 +54,9 @@ EasyScrap.parentFrame:SetScript('OnEvent', function(self, event, ...)
     elseif event == 'SCRAPPING_MACHINE_SCRAPPING_FINISHED_BROKEN' then 
         if #EasyScrap.queueItems > 0 then
             if #EasyScrap.queueItems > 9 then
-                EasyScrap.queueItemsToAdd = 9
+                --EasyScrap.queueItemsToAdd = 9
             else
-                EasyScrap.queueItemsToAdd = #EasyScrap.queueItems
+                --EasyScrap.queueItemsToAdd = #EasyScrap.queueItems
             end
             C_Timer.After(0, function() EasyScrap:addQueueItems() end)
         end
@@ -109,7 +111,13 @@ EasyScrap.parentFrame:SetScript('OnEvent', function(self, event, ...)
                     --Reset ignore list
                     EasyScrap.itemIgnoreList = {}
                     EasyScrap.saveData.showWhatsNew = 6
-                end                    
+                end
+
+                if EasyScrap.saveData.addonVersion < 10 then
+                    EasyScrap.saveData.customFilters = {}
+                    EasyScrap.saveData.showWhatsNew = 10
+                end
+                
             else
                 EasyScrap:initializeSaveData()        
             end

@@ -1,7 +1,7 @@
 
 PetTracker_Sets = {
+	["MainTutorial"] = 4,
 	["RivalHistory"] = {
 	},
-	["MainTutorial"] = 4,
 	["JournalTutorial"] = 1,
 }

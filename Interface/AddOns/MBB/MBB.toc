@@ -1,6 +1,7 @@
-## Interface: 70300
-## Title: MinimapButtonBag
+## Interface: 80000
 ## Author: karlsnyder
+## Version: 4.0
+## Title: MinimapButtonBag
 ## X-Category: Map
 ## Notes: Cleans up minimap buttons and makes them accessible through a pop out menu!
 ## Notes-frFR: Liberez votre minimap de ses boutons et rendez les accessibles avec un menu deroulant!

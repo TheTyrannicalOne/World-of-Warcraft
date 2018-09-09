@@ -1,19 +1,15 @@
-## Interface: 60200
+## Interface: 80000
 ## Title: HandyNotes: Achievements
 ## Description: Shows location of incomplete achievements
-## Version: 0.4.19
-## Author: rbrian
+## Version: 0.4.20
+## Author: idiomatiq
 ## Dependencies: HandyNotes
 ## SavedVariables: HandyNotesAchievementsDB
 ## X-Category: Map & Minimap
 ## X-Curse-Project-Name: HandyNotes: Achievements
-## X-Email: brian@rbrian.com
+## X-Email: idiomatiq@rbrian.com
 ## X-Website: https://github.com/idiomatic/HandyNotes_Achievements
 ## X-License: Apache
-## X-Curse-Packaged-Version: v0.4.19-1
-## X-Curse-Project-Name: HandyNotes_Achievements
-## X-Curse-Project-ID: handynotes_achievements
-## X-Curse-Repository-ID: wow/handynotes_achievements/mainline
 
 Libs/LibStub/LibStub.lua
 Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua
@@ -27,7 +23,7 @@ Libs/LibQTip-1.0/LibQTip-1.0.lua
 Libs/MapExcursion-1.0/MapExcursion-1.0.lua
 Libs/MapMap-1.0/MapMap-1.0.lua
 Libs/InstanceLocations-1.0/InstanceLocations-1.0.lua
-Libs/InSeason-1.0/InSeason-1.0.lua
+Libs/InSeason-1.1/InSeason-1.1.lua
 
 Libs/AchievementLocations-1.0/AchievementLocations-1.0.lua
 Libs/AchievementLocations-1.0/AchievementLocations_data.lua

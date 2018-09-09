@@ -1,9 +1,338 @@
-Changes since tag 8.0.5
+Changes since tag 8.0.6
 
-commit 1fbbd481af50cb7751199fd6719df27c1569a6b3
+commit c1412a4e1f789a5dc41b36fb9e43ff87aa1b7312
 Author: subversion <svn@deadlybossmods.com>
-Date:   Tue Aug 28 20:22:31 2018 +0200
+Date:   Mon Sep 10 00:51:30 2018 +0200
 
-    tandanu via svn r17741:
+    Omega via svn r17807:
+    Added stomp counter to Fetid Devourer
+    Added Plasma Discarge and Cudgel and Clogged Arteries counters to Taloc
+    Added Immunosuppression announce and timer with counter to Vectis. In addition, supports multiple adds at once in case group is doing really terrible.
+
+commit 3adf1c95fed81ce236581aa5c5841d0c0c2e2d71
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 07:33:43 2018 +0200
+
+    Omega via svn r17806:
+    More mother fixes
+    Improve ghuun frame even further with left/right on Matrix count
+
+commit af937d75e6d08e5f30e4866c4a9a171e3c0b5b1e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 06:52:19 2018 +0200
+
+    Omega via svn r17805:
+    Add another ICD
+
+commit d39087a9344e01742c63758f587488920576ee3c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 06:37:58 2018 +0200
+
+    Omega via svn r17804:
+    Fix couple mother and taloc bugs
+
+commit caab4716088b0a06209ef6738f53b0f664467830
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 06:04:35 2018 +0200
+
+    Omega via svn r17803:
+    Support showing 0/3 as well
+
+commit 03132a1e11eb76197ef143e76050acbd39c3297f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 05:51:45 2018 +0200
+
+    Omega via svn r17802:
+    Increase dark bargain warning emphasis
+
+commit 496366b063f63ff8fc3ebf9e900cb303fd7fc86b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 05:14:24 2018 +0200
+
+    Omega via svn r17801:
+    Slight timer tweaks, based on fact emote is about 1.5 seconds slower than orb actually spawning
+
+commit b4358c69d3cddf05a11f22d8a68ffda520af035e
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 04:57:11 2018 +0200
+
+    Omega via svn r17800:
+    Give frame a title while at it
+
+commit 5a1a6ee79b4645b17fe87fb45caba2088dc72cf6
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 04:52:09 2018 +0200
+
+    Omega via svn r17799:
+    Forgot this for the infoframe
+
+commit edbe58e913d0282c3cb9473945267b41d5e1c9d1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 04:51:28 2018 +0200
+
+    Omega via svn r17798:
+    Experimental power matrix drop detection
+
+commit 4aa717ac89288992aabb7817047cda7bdea5e8f0
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 04:41:39 2018 +0200
+
+    Omega via svn r17797:
+    Improve matrix code even more on ghuun
+
+commit 14a29023b8e435a8a6169b6e47d64b8ef44bd6b8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sun Sep 9 04:14:53 2018 +0200
+
+    Omega via svn r17796:
+    Tweaks
+
+commit 26b62982b65d99b0d4ee3d470fe35410c77b21ab
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 21:39:58 2018 +0200
+
+    Omega via svn r17795:
+    Fix hailstone trying to register to non invalid mod
+
+commit 70366aba5f48ca55b47ec11ac2615992d3831dad
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 07:19:06 2018 +0200
+
+    Omega via svn r17794:
+    fixed playerdebuffstacks infoframes not showing player name red
+    Improve matrix stuff on G?\226?\128?\153huun for further clarity and matrix info
+
+commit e9d5cc7d39e417fbbcab9b9432b61533112dab86
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 06:12:47 2018 +0200
+
+    Omega via svn r17793:
+    And another fix, this time warning icons
+
+commit d2b3c3c7e6fe5aa6cdb6a0b81cc0e4278f10a958
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 06:03:31 2018 +0200
+
+    Omega via svn r17792:
+    Fix dark rev timer and warning counts
+
+commit 7314b1bdf3990cb07f619a73fed5bbd535e1a19b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 05:41:32 2018 +0200
+
+    Omega via svn r17791:
+    Fix corruptors pack countdown and pre warning
+
+commit 6bf44365135ce2d634c0d784ca54b3ea670dbec6
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 05:37:16 2018 +0200
+
+    Omega via svn r17790:
+    Mods work better when you register the event. :D
+
+commit 8a10702f9caef0f7076ee9e41298d9d8be4f67a8
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 05:33:06 2018 +0200
+
+    Omega via svn r17789:
+    Add phase announces
+
+commit 43e304648ff39090ef0e41a4f96e67d2505869b3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 05:21:16 2018 +0200
+
+    Omega via svn r17788:
+    Add crushing Murdoc, err darkness warning ;)
+
+commit 81dcf35c6c85280b10aae4a1aa5f553746d85253
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 05:15:44 2018 +0200
+
+    Omega via svn r17787:
+    Tweak vectis add warning so it shows when add actually comes out.
+    disable the gestate near warning by default, since for most part add dying is more important than a minor amount of splash damage.
+
+commit d53bed7d6e617d53d8ae3c928ccec4f42314de00
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 02:42:07 2018 +0200
+
+    Omega via svn r17786:
+    Added ?\226?\128?\156summons Spirit drain totem?\226?\128?\157 interrupt and kill warning (if interrupt doesn?\226?\128?\153t happen) to underrot trash.
+
+commit 97aea14f3f2c3158fc54c42ea08830bd2b8b0e1c
+Author: subversion <svn@deadlybossmods.com>
+Date:   Sat Sep 8 02:07:18 2018 +0200
+
+    Omega via svn r17785:
+    Changed blood feast to 10 seconds per hotfix
+    Fix zekvhozj phase changes since blizzard removed the yells
+    In addition, fixed Eye beam timer which was using wrong event.
+    Also fixed darkness timer which also changed with bosses phase changes (it used to be constant 63 seconds with no resets, now cd is longer AND ability resets on phase change)
+
+commit 123a4274ce638bf268a23de076c3dd69e5c375ce
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 21:10:40 2018 +0200
+
+    Omega via svn r17784:
+    add additional taunt warning for when tank who currently has ghuun, gets explosive corruption
+
+commit 9cb7fa4729c0b53177ac8baf8ff5a4b8f98b3cee
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 19:02:50 2018 +0200
+
+    Omega via svn r17783:
+    Do same for roiling, continue to leave backup in case blizzard removes boss unit IDs at some point for discs
+
+commit 0feeca6482f65c397712f9139c075e392f656fa2
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 18:08:15 2018 +0200
+
+    Omega via svn r17782:
+    test faster eye beam announce
+
+commit 99cafec33e543b05c3431e6292eac47ba6f6ec77
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 14:12:55 2018 +0200
+
+    Omega via svn r17781:
+    Another fix
+
+commit 9ad94b32fd9337780f1df7d0ad45e0b116387337
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 13:52:11 2018 +0200
+
+    Omega via svn r17780:
+    Fix bug
+
+commit 72f77138ff1bdf3b7c74cda2df3d5dff505bd820
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 07:05:27 2018 +0200
+
+    Omega via svn r17779:
+    Kr and CN update
+
+commit ebb57cba3bd6f154d1e5cf767cd5c80da9a60a94
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 05:18:48 2018 +0200
+
+    Omega via svn r17778:
+    Forgot one
+
+commit 884f215e6d66c210e0fe75e0d4587e220c050421
+Author: subversion <svn@deadlybossmods.com>
+Date:   Fri Sep 7 05:17:03 2018 +0200
+
+    Omega via svn r17777:
+    Updated all timers on mother to account for ICD that flames (6) and strike (5) trigger
+    Fixed spell name for interrupt on SkycapnKragg
+    Disabled Tenderize on Raal until I can get new timer, unfortunately internet is still out so I can?\226?\128?\153t run dungeons yet.
+
+commit cc6065da82fe7505afda02f616e263d4dcdc772d
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Sep 6 20:27:36 2018 +0200
+
+    Omega via svn r17776:
+    Fixed caster add timer on zekvhoz
+    Fixed Gaze of Ghuun timer for ghuun
+    Fixed explosive corruptin timer not showing on ghuun
+    Added a matrix spawn warning with count.
+    Fixed wave of corruption timer in Stage 3 ghuun
+    Made explosive corruption personal warning faster for tanks on ghuun
+
+commit c6a68830589134db76f011dde9b4bd8476195625
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Sep 6 08:54:00 2018 +0200
+
+    Omega via svn r17775:
+    More localizing! sorry.
+    Give tanks more options on zul
+
+commit 0850b7a738b049d813e849d85340372588218dd3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Sep 6 08:38:15 2018 +0200
+
+    Omega via svn r17774:
+    Add further clarity. sorry localizers
+
+commit a691b4b64c40542ec2a0aa64d8c6382e9dbdd6dd
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Sep 6 08:32:37 2018 +0200
+
+    Omega via svn r17773:
+    Zul Update:
+    *Add cast triggers changed to regular ?\226?\128?\156soon?\226?\128?\157 warnings instead of switch special warnings
+    *New switch special warnings will now show when adds are attackable (12 seconds later)
+    *Fixed P2 timers
+    *Optimized CPU usage of nameplate and target marking code to not use cpu when not needed (minor, most of cpu issues of zone are blizzards fault, but mod should still be more efficient)
+    *Dark revolation timer should now have count in it
+    *New dark revolation warning with count as well to assist with healing/throughput cds.
+    *Add timers now only start if cast finishes, instead of starting on cast start, in the event that boss doesn?\226?\128?\153t finish cast/stutter casts, don?\226?\128?\153t want to falsely increment add count.
+
+commit f5dc1491f1503af34f773eccbde6bb59f70b335f
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Sep 6 06:39:33 2018 +0200
+
+    Omega via svn r17772:
+    use red yell text for ghuun?\226?\128?\153s blood feast, for better distinction
+
+commit 549cea52b8e389b169d3495bda8329d5191157df
+Author: subversion <svn@deadlybossmods.com>
+Date:   Thu Sep 6 00:49:29 2018 +0200
+
+    Omega via svn r17771:
+    Fix option default bug on tidesage council
+    Added guessed respawn time for fetid devourer based on observed reset time
+    Added auto icon option for mother (untested)
+    Added auto icon option for Zekvoz (untested)
+    Fixed normal mode timer for caster adds
+
+commit ed7a78626247c569208bcd45333782b7cd5b80c3
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Sep 5 08:02:08 2018 +0200
+
+    Omega via svn r17770:
+    A few fixes
+
+commit 6b36c0d00ee82b1d6b934ace73156ca22819ab0b
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Sep 4 21:32:51 2018 +0200
+
+    Omega via svn r17769:
+    tweak that default, like no tanks are swapping for that. but it?\226?\128?\153s an option
+
+commit 275e0df3a56db5e5db6357b689aab6e9f86b04f1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Sep 4 20:28:05 2018 +0200
+
+    Omega via svn r17768:
+    Fix bad sound default
+
+commit 9731be3289d8686f4eb0f2365b89488361e83fff
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Sep 4 20:20:50 2018 +0200
+
+    Omega via svn r17767:
+    Fix it so it actually allows warnings in eastern kingdoms (dooms howl)
+
+commit 0041484efa19b8d991cc24b7f7a2cacb013cbbf1
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Sep 4 04:25:52 2018 +0200
+
+    Omega via svn r17766:
+    Add Position icon option to dark rev on Zul
+
+commit 3703e95440d7c3497bbb87bf526f7a0a75f09f18
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Sep 4 03:54:51 2018 +0200
+
+    Omega via svn r17765:
+    Add missing ghuun taunt warning for P1
+    Add auto icon stuff to Mythrax
+
+commit 1dd6d80ae1cc554b98354ec35864d9523f39e99a
+Author: subversion <svn@deadlybossmods.com>
+Date:   Mon Sep 3 11:38:09 2018 +0200
+
+    tandanu via svn r17764:
     increment alpha version
 
