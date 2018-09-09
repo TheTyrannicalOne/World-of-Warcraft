@@ -7,6 +7,11 @@ OneRing_Config = {
 	["_OPieVersion"] = "Vanilla 7 (3.93)",
 	["ProfileStorage"] = {
 		["default"] = {
+			["Bindings"] = {
+				["Mounts2"] = "ALT-Q",
+				["OPieAutoQuest"] = false,
+				["Utility1"] = "ALT-E",
+			},
 		},
 		["Shanyt"] = {
 			["Bindings"] = {
@@ -84,6 +89,9 @@ OneRing_Config = {
 				["hotkey"] = "ALT-Q",
 				["name"] = "Mounts",
 			},
+			["OPieFlagStore"] = {
+				["FlushedDefaultColors"] = true,
+			},
 			["SpecMenu"] = {
 				{
 					"specset", -- [1]
@@ -133,8 +141,98 @@ OneRing_Config = {
 				["save"] = true,
 				["hotkey"] = "ALT-H",
 			},
-			["OPieFlagStore"] = {
-				["FlushedDefaultColors"] = true,
+			["Mounts2"] = {
+				{
+					["id"] = 150544,
+					["sliceToken"] = "ABuedyqmNB1k",
+				}, -- [1]
+				{
+					["id"] = 64731,
+					["sliceToken"] = "ABuedyqmNB1r",
+				}, -- [2]
+				{
+					["id"] = 118089,
+					["sliceToken"] = "ABuedyqmNB1h",
+				}, -- [3]
+				{
+					["id"] = 223018,
+					["sliceToken"] = "ABuedyqmNB1s",
+				}, -- [4]
+				{
+					["id"] = 98718,
+					["sliceToken"] = "ABuedyqmNB1e",
+				}, -- [5]
+				{
+					["id"] = 122708,
+					["sliceToken"] = "ABuedyqmNB1a",
+				}, -- [6]
+				{
+					["id"] = 88990,
+					["sliceToken"] = "ABuedyqmNB1f",
+				}, -- [7]
+				{
+					["id"] = 142878,
+					["sliceToken"] = "ABuedyqmNB13",
+				}, -- [8]
+				{
+					["id"] = 215159,
+					["sliceToken"] = "ABuedyqmNB1p",
+				}, -- [9]
+				{
+					["id"] = 180545,
+					["sliceToken"] = "ABuedyqmNB12",
+				}, -- [10]
+				{
+					["id"] = 258845,
+					["sliceToken"] = "ABuedyqmNB1i",
+				}, -- [11]
+				{
+					["id"] = 230987,
+					["sliceToken"] = "ABuedyqmNB1j",
+				}, -- [12]
+				{
+					["id"] = 247402,
+					["sliceToken"] = "ABuedyqmNB1o",
+				}, -- [13]
+				{
+					["id"] = 35018,
+					["sliceToken"] = "ABuedyqmNB1y",
+				}, -- [14]
+				{
+					["id"] = 41516,
+					["sliceToken"] = "ABuedyqmNB1v",
+				}, -- [15]
+				{
+					["id"] = 39801,
+					["sliceToken"] = "ABuedyqmNB1c",
+				}, -- [16]
+				{
+					["id"] = 130092,
+					["sliceToken"] = "ABuedyqmNB1t",
+				}, -- [17]
+				{
+					["id"] = 245725,
+					["sliceToken"] = "ABuedyqmNB1u",
+				}, -- [18]
+				{
+					["id"] = 75973,
+					["sliceToken"] = "ABuedyqmNBrM",
+				}, -- [19]
+				["name"] = "Mounts",
+				["save"] = true,
+				["hotkey"] = "ALT-Q",
+				["limit"] = "Vancard-Zul'jin",
+			},
+			["Utility1"] = {
+				{
+					"toy", -- [1]
+					64488, -- [2]
+					["sliceToken"] = "ABuedyqmNB16",
+				}, -- [1]
+				["limit"] = "Vancard-Zul'jin",
+				["save"] = true,
+				["hotkey"] = "ALT-E",
+				["name"] = "Utility",
 			},
 			["Utility"] = {
 				{
