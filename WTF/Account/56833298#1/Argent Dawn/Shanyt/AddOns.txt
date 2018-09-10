@@ -20,3 +20,6 @@ AllTheThings: disabled
 LittleWigs: enabled
 BigWigs_WarlordsOfDraenor: enabled
 BigWigs_MistsOfPandaria: enabled
+HandyNotes_Argus: enabled
+HandyNotes_Achievements: enabled
+ImpliedTarget_ElvUI: enabled

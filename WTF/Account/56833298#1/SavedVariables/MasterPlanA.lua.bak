@@ -1,10 +1,14 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
+	["Zul'jin"] = {
+		["Vancard"] = {
+			["class"] = "MAGE",
+			["faction"] = "Horde",
+		},
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["faction"] = "Horde",
+			["class"] = "WARRIOR",
 			["summary"] = {
 				["lastOilTime"] = 1536463061,
 				["inProgress"] = {
@@ -24,15 +28,11 @@ MasterPlanAG = {
 			},
 			["curOil"] = 60270,
 			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 3379,
 			["lastCacheTime"] = 1536516029,
+			["curRes"] = 3409,
+			["faction"] = "Horde",
 		},
 	},
-	["Zul'jin"] = {
-		["Vancard"] = {
-			["faction"] = "Horde",
-			["class"] = "MAGE",
-		},
+	["IgnoreRewards"] = {
 	},
 }

@@ -1,8 +1,5 @@
 
 BigWigs3DB = {
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
-	},
 	["global"] = {
 		["watchedMovies"] = {
 			[-573] = true,
@@ -11,12 +8,15 @@ BigWigs3DB = {
 			[-437] = true,
 		},
 	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+	},
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Bosses_Sha of Anger"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
-		["BigWigs_Bosses_Commander Ri'mok"] = {
+		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
@@ -27,52 +27,17 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Bosses_Ranjit"] = {
-		},
-		["BigWigs_Bosses_Rukhran"] = {
-		},
-		["BigWigs_Bosses_Gu Cloudstrike"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Bosses_Teron'gor"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Plugins_AutoReply"] = {
-		},
-		["BigWigs_Bosses_Araknath"] = {
-		},
-		["BigWigs_Bosses_Saboteur Kip'tilak"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Bosses_Vigilant Kaathar"] = {
-		},
-		["BigWigs_Bosses_Auchindoun Trash"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_InfoBox"] = {
-		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
-					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
 					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
+					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
 					["BigWigsAnchor_height"] = 15.9999876022339,
 				},
 			},
 		},
-		["BigWigs_Bosses_Azzakel"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -81,13 +46,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Striker Ga'dok"] = {
+		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Bosses_Soulbinder Nyami"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Bosses_High Sage Viryx"] = {
+		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -96,11 +57,20 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Raigonn"] = {
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 	},
 	["wipe80"] = true,
