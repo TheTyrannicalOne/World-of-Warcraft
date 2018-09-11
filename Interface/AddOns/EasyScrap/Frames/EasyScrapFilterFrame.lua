@@ -41,7 +41,6 @@ filterListScrollFrame.contentFrame:SetWidth(filterListScrollFrame:GetWidth())
 filterListScrollFrame.contentFrame:SetHeight(filterListScrollFrame:GetHeight())
 filterListScrollFrame:SetScrollChild(filterListScrollFrame.contentFrame)
 
-
 local function createFilterFrame(i)
     local frame = CreateFrame('Frame', nil, filterListScrollFrame.contentFrame)
     frame:SetSize(filterListScrollFrame:GetWidth()-8, 24)
@@ -55,7 +54,41 @@ local function createFilterFrame(i)
     frame.name:SetFontObject('GameFontNormal')
     frame.name:SetText('Filter#123')
     --frame.name:SetTextColor(1, 1, 1, 1)
-    frame.name:SetPoint('LEFT', 8, 0)
+    frame.name.r, frame.name.g, frame.name.b = frame.name:GetTextColor() 
+    frame.name:SetPoint('LEFT', 18, 0)
+    
+    frame.selectButton = CreateFrame('Button', nil, frame)
+    frame.selectButton:SetPoint('LEFT', 2, 0)
+    frame.selectButton:SetSize(134, frame:GetHeight())
+    frame.selectButton:SetScript('OnEnter', function()
+        frame.name:SetTextColor(1, 1, 1, 1)
+        if frame.filterID ~= EasyScrap.saveData.addonSettings.defaultFilter then
+            --frame.defaultFilterSelected:SetTexCoord(0.00390625, 0.08593750, 0.71093750, 0.87500000)
+            --filterEntryFrames[EasyScrap.saveData.addonSettings.defaultFilter].defaultFilterSelected:SetAlpha(0.33)
+        end
+    end)
+    
+    frame.selectButton:SetScript('OnLeave', function()
+        frame.name:SetTextColor(frame.name.r, frame.name.g, frame.name.b)
+        if frame.filterID ~= EasyScrap.saveData.addonSettings.defaultFilter then
+            --frame.defaultFilterSelected:SetTexCoord(0.09375000, 0.17578125, 0.71093750, 0.87500000)
+            --filterEntryFrames[EasyScrap.saveData.addonSettings.defaultFilter].defaultFilterSelected:SetAlpha(1)
+        end
+    end)
+    
+    frame.selectButton:SetScript('OnClick', function()
+        --filterEntryFrames[EasyScrap.saveData.addonSettings.defaultFilter].defaultFilterSelected:SetAlpha(1)
+        filterEntryFrames[EasyScrap.saveData.addonSettings.defaultFilter].defaultFilterSelected:SetTexCoord(0.09375000, 0.17578125, 0.71093750, 0.87500000)
+        EasyScrap.saveData.addonSettings.defaultFilter = frame.filterID
+        frame.defaultFilterSelected:SetTexCoord(0.00390625, 0.08593750, 0.71093750, 0.87500000)
+        filterFrame:drawFilters()
+    end)
+    
+    frame.defaultFilterSelected = frame:CreateTexture(nil, 'ARTWORK')
+    frame.defaultFilterSelected:SetSize(14, 14)
+    frame.defaultFilterSelected:SetTexture('Interface/PlayerFrame/MonkUI')
+    frame.defaultFilterSelected:SetTexCoord(0.09375000, 0.17578125, 0.71093750, 0.87500000)
+    frame.defaultFilterSelected:SetPoint('LEFT', 2, 0)
     
     frame.deleteButton = CreateFrame('Button', nil, frame, 'GameMenuButtonTemplate')
     frame.deleteButton:SetSize(32, 18)
@@ -75,9 +108,26 @@ filterEntryFrames[0] = createFilterFrame(0)
 filterEntryFrames[0].name:SetText(EasyScrap.defaultFilter.name)
 filterEntryFrames[0].deleteButton:Disable()
 filterEntryFrames[0].editButton:Disable()
-filterEntryFrames[0].filterID = nil
+filterEntryFrames[0].filterID = 0
+
+local infoFrame = CreateFrame('Frame', nil, filterListScrollFrame.contentFrame)
+infoFrame:SetSize(filterListScrollFrame.contentFrame:GetWidth(), 24)
+infoFrame:SetPoint('TOP', 0, -4)
+
+infoFrame.line = infoFrame:CreateTexture(nil, 'BACKGROUND')
+infoFrame.line:SetColorTexture(filterEntryFrames[0].name.r, filterEntryFrames[0].name.g, filterEntryFrames[0].name.b, 0.75)
+infoFrame.line:SetSize(filterListScrollFrame.contentFrame:GetWidth()-24, 1)
+infoFrame.line:SetPoint('TOP', 0, 0)
+
+infoFrame.subText = infoFrame:CreateFontString()
+infoFrame.subText:SetFontObject("GameFontNormalSmall")
+infoFrame.subText:SetText("Click on the name of a filter to set it as the default filter.")
+infoFrame.subText:SetTextColor(1, 1, 1, 1)
+infoFrame.subText:SetWidth(filterListScrollFrame.contentFrame:GetWidth()-24)
+infoFrame.subText:SetPoint('TOP', infoFrame.line, 'BOTTOM', 0, -4)
 
 function filterFrame:drawFilters()
+    local lastFilterFrame
     for i = 1, #EasyScrap.saveData.customFilters do
         if not filterEntryFrames[i] then filterEntryFrames[i] = createFilterFrame(i) end
         
@@ -88,7 +138,10 @@ function filterFrame:drawFilters()
         filterEntryFrame.filterID = i
         filterEntryFrame.name:SetText(filterData.name)
         filterEntryFrame.deleteButton:Enable()
-        filterEntryFrame.editButton:Enable()    
+        filterEntryFrame.editButton:Enable()     
+        filterEntryFrame.defaultFilterSelected:SetTexCoord(0.09375000, 0.17578125, 0.71093750, 0.87500000)    
+
+        lastFilterFrame = filterEntryFrame
     end
     
     if #filterEntryFrames > #EasyScrap.saveData.customFilters then
@@ -97,7 +150,13 @@ function filterFrame:drawFilters()
         end
     end
     
-    local maxScroll = (#EasyScrap.saveData.customFilters+1)*filterEntryFrames[0]:GetHeight()+12
+    infoFrame:ClearAllPoints()
+    infoFrame:SetPoint('TOP', lastFilterFrame, 'BOTTOM', 0, -4)
+    
+    --Set default filter graphic
+    filterEntryFrames[EasyScrap.saveData.addonSettings.defaultFilter].defaultFilterSelected:SetTexCoord(0.00390625, 0.08593750, 0.71093750, 0.87500000)
+    
+    local maxScroll = (#EasyScrap.saveData.customFilters+1)*filterEntryFrames[0]:GetHeight()+12+28
     maxScroll = maxScroll - filterListScrollFrame:GetHeight()
     
     if maxScroll < 0 then maxScroll = 0 end

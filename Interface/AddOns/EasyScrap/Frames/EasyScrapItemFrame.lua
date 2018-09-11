@@ -164,14 +164,14 @@ ignoreItemFrame:SetScript('OnShow', function(self)
         self.itemButton:SetScript('OnEnter', function(self) GameTooltip:SetOwner(self, "ANCHOR_RIGHT") GameTooltip:SetHyperlink(itemToIgnore.itemLink) GameTooltip:Show() end)
         self.itemButton:SetScript('OnLeave', function(self) GameTooltip_Hide() end)
         
-        if not EasyScrap:itemInIgnoreList(itemToIgnore.itemID, itemToIgnore.itemName) then
+        if not EasyScrap:itemInIgnoreList(self.itemRef) then
             ignoreItemFrame.headerText:SetText('Add item to ignore list?')
-            ignoreItemFrame.ignoreItemText:SetText('Ignoring this item will prevent all items with this name from showing up in the eligible tab.')
-            ignoreItemFrame.okayButton:SetScript('OnClick', function() EasyScrap:addItemToIgnoreList(itemToIgnore.itemID, itemToIgnore.itemName) EasyScrap:filterScrappableItems() itemFrame:updateContent() end)
+            ignoreItemFrame.ignoreItemText:SetText('Ignoring this item will prevent all items with the exact same stats from showing up as eligible.')
+            ignoreItemFrame.okayButton:SetScript('OnClick', function() EasyScrap:addItemToIgnoreList(self.itemRef) EasyScrap:filterScrappableItems() itemFrame:updateContent() end)
         else
             ignoreItemFrame.headerText:SetText('Remove item from ignore list?')
             ignoreItemFrame.ignoreItemText:SetText('This will remove the item from the ignore list.')
-            ignoreItemFrame.okayButton:SetScript('OnClick', function() EasyScrap:removeItemFromIgnoreList(itemToIgnore.itemID, itemToIgnore.itemName) EasyScrap:filterScrappableItems() itemFrame:updateContent() end)
+            ignoreItemFrame.okayButton:SetScript('OnClick', function() EasyScrap:removeItemFromIgnoreList(self.itemRef) EasyScrap:filterScrappableItems() itemFrame:updateContent() end)
         end
     end
 end)

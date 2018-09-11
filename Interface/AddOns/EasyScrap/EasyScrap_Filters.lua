@@ -383,6 +383,143 @@ filters['armorType'].filterFunction = function(itemIndex, filterIndex)
 end
 
 --[[---------------------------------------------------------------------------------------------------------------------------------------
+WEAPON TYPE
+[LE_ITEM_CLASS_WEAPON]
+[LE_ITEM_WEAPON_AXE1H]
+[LE_ITEM_WEAPON_AXE2H]
+[LE_ITEM_WEAPON_BOWS]
+[LE_ITEM_WEAPON_GUNS]
+[LE_ITEM_WEAPON_MACE1H]
+[LE_ITEM_WEAPON_MACE2H]
+[LE_ITEM_WEAPON_POLEARM]
+[LE_ITEM_WEAPON_SWORD1H]
+[LE_ITEM_WEAPON_SWORD2H]
+[LE_ITEM_WEAPON_WARGLAIVE]
+[LE_ITEM_WEAPON_STAFF]
+[LE_ITEM_WEAPON_BEARCLAW]
+[LE_ITEM_WEAPON_CATCLAW]
+[LE_ITEM_WEAPON_UNARMED]
+[LE_ITEM_WEAPON_GENERIC]
+[LE_ITEM_WEAPON_DAGGER]
+[LE_ITEM_WEAPON_THROWN]
+[LE_ITEM_WEAPON_CROSSBOW]
+[LE_ITEM_WEAPON_WAND]
+[LE_ITEM_WEAPON_FISHINGPOLE]
+NUM_LE_ITEM_WEAPONS
+--]]---------------------------------------------------------------------------------------------------------------------------------------
+filters['weaponType'] = {}
+filters['weaponType'].menuText = 'Weapon Type'
+filters['weaponType'].data = {
+[LE_ITEM_WEAPON_AXE1H] = true, --
+[LE_ITEM_WEAPON_AXE2H] = true,--
+[LE_ITEM_WEAPON_BOWS] = true, --
+[LE_ITEM_WEAPON_GUNS] = true, --
+[LE_ITEM_WEAPON_MACE1H] = true, --
+[LE_ITEM_WEAPON_MACE2H] = true, --
+[LE_ITEM_WEAPON_POLEARM] = true, --
+[LE_ITEM_WEAPON_SWORD1H] = true, --
+[LE_ITEM_WEAPON_SWORD2H] = true, --
+[LE_ITEM_WEAPON_WARGLAIVE] = true,
+[LE_ITEM_WEAPON_STAFF] = true, --
+--[LE_ITEM_WEAPON_BEARCLAW] = true,
+--[LE_ITEM_WEAPON_CATCLAW] = true,
+[LE_ITEM_WEAPON_UNARMED] = true, --
+--[LE_ITEM_WEAPON_GENERIC] = true,
+[LE_ITEM_WEAPON_DAGGER] = true, --
+--[LE_ITEM_WEAPON_THROWN] = true,
+[LE_ITEM_WEAPON_CROSSBOW] = true, --
+[LE_ITEM_WEAPON_WAND] = true, --
+--[LE_ITEM_WEAPON_FISHINGPOLE] = true,
+}
+filters['weaponType'].filterMessage = 'Item is not one of selected weapon types.'
+
+f = createFilterFrame('Weapon Type', 308)
+f.checkButtons = {}
+f.checkButtons[LE_ITEM_WEAPON_AXE1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_AXE1H]:SetPoint('TOPLEFT', 8, -8)
+f.checkButtons[LE_ITEM_WEAPON_AXE1H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_AXE1H))
+f.checkButtons[LE_ITEM_WEAPON_AXE2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_AXE2H]:SetPoint('TOPLEFT', 8, -28)
+f.checkButtons[LE_ITEM_WEAPON_AXE2H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_AXE2H))
+
+f.checkButtons[LE_ITEM_WEAPON_SWORD1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_SWORD1H]:SetPoint('TOPLEFT', 8, -48)
+f.checkButtons[LE_ITEM_WEAPON_SWORD1H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_SWORD1H))
+f.checkButtons[LE_ITEM_WEAPON_SWORD2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_SWORD2H]:SetPoint('TOPLEFT', 8, -68)
+f.checkButtons[LE_ITEM_WEAPON_SWORD2H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_SWORD2H))
+
+f.checkButtons[LE_ITEM_WEAPON_MACE1H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_MACE1H]:SetPoint('TOPLEFT', 8, -88)
+f.checkButtons[LE_ITEM_WEAPON_MACE1H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_MACE1H))
+f.checkButtons[LE_ITEM_WEAPON_MACE2H] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_MACE2H]:SetPoint('TOPLEFT', 8, -108)
+f.checkButtons[LE_ITEM_WEAPON_MACE2H].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_MACE2H))
+
+f.checkButtons[LE_ITEM_WEAPON_DAGGER] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_DAGGER]:SetPoint('TOPLEFT', 8, -128)
+f.checkButtons[LE_ITEM_WEAPON_DAGGER].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_DAGGER))
+f.checkButtons[LE_ITEM_WEAPON_UNARMED] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_UNARMED]:SetPoint('TOPLEFT', 8, -148)
+f.checkButtons[LE_ITEM_WEAPON_UNARMED].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_UNARMED))
+
+f.checkButtons[LE_ITEM_WEAPON_POLEARM] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_POLEARM]:SetPoint('TOPLEFT', 8, -168)
+f.checkButtons[LE_ITEM_WEAPON_POLEARM].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_POLEARM))
+f.checkButtons[LE_ITEM_WEAPON_STAFF] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_STAFF]:SetPoint('TOPLEFT', 8, -188)
+f.checkButtons[LE_ITEM_WEAPON_STAFF].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_STAFF))
+
+f.checkButtons[LE_ITEM_WEAPON_BOWS] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_BOWS]:SetPoint('TOPLEFT', 8, -208)
+f.checkButtons[LE_ITEM_WEAPON_BOWS].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_BOWS))
+f.checkButtons[LE_ITEM_WEAPON_CROSSBOW] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_CROSSBOW]:SetPoint('TOPLEFT', 8, -228)
+f.checkButtons[LE_ITEM_WEAPON_CROSSBOW].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_CROSSBOW))
+
+f.checkButtons[LE_ITEM_WEAPON_GUNS] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_GUNS]:SetPoint('TOPLEFT', 8, -248)
+f.checkButtons[LE_ITEM_WEAPON_GUNS].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_GUNS))
+f.checkButtons[LE_ITEM_WEAPON_WAND] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_WAND]:SetPoint('TOPLEFT', 8, -268)
+f.checkButtons[LE_ITEM_WEAPON_WAND].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_WAND))
+
+f.checkButtons[LE_ITEM_WEAPON_WARGLAIVE] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons[LE_ITEM_WEAPON_WARGLAIVE]:SetPoint('TOPLEFT', 8, -288)
+f.checkButtons[LE_ITEM_WEAPON_WARGLAIVE].text:SetText(GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, LE_ITEM_WEAPON_WARGLAIVE))
+
+
+function f:populateData(fData)
+    for k,v in pairs(filters['weaponType'].data) do
+        self.checkButtons[k]:SetChecked(fData[k])
+    end
+end
+
+function f:saveData(customFilterIndex)
+    for k,v in pairs(filters['weaponType'].data) do
+        EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[k] = self.checkButtons[k]:GetChecked()
+    end
+end
+
+filters['weaponType'].frame = f
+
+filters['weaponType'].filterFunction = function(itemIndex, filterIndex)
+    local item = EasyScrap.scrappableItems[itemIndex]
+    local filterData = EasyScrap.saveData.customFilters[EasyScrap.activeFilterID].rules[filterIndex].data
+    
+    if item.itemClassID == LE_ITEM_CLASS_WEAPON then
+        local isMatch = filterData[item.itemSubClassID]
+        if isMatch then
+            return true
+        else
+            filters['weaponType'].filterMessage = 'weapon type is '..GetItemSubClassInfo(LE_ITEM_CLASS_WEAPON, item.itemSubClassID)       
+        end
+    else
+        return true
+    end
+end
+
+--[[---------------------------------------------------------------------------------------------------------------------------------------
 ITEM TYPE
 --]]---------------------------------------------------------------------------------------------------------------------------------------
 filters['itemType'] = {}
@@ -432,6 +569,41 @@ filters['equipmentSet'].frame = f
 
 filters['equipmentSet'].filterFunction = function(itemIndex)
     return not EasyScrap:itemInWardrobeSet(EasyScrap.scrappableItems[itemIndex].itemID, EasyScrap.scrappableItems[itemIndex].bag, EasyScrap.scrappableItems[itemIndex].slot)
+end
+
+--[[---------------------------------------------------------------------------------------------------------------------------------------
+TRANSMOG NOT KNOWN
+--]]---------------------------------------------------------------------------------------------------------------------------------------
+filters['transmogKnown'] = {}
+filters['transmogKnown'].menuText = 'Transmog'
+filters['transmogKnown'].filterMessage = 'you don\'t have this appearance in your collection.'
+
+f = createFilterFrame('Transmog', 32)
+f.bodyText:SetText('Item appearance is in your collection.')
+filters['transmogKnown'].frame = f
+
+filters['transmogKnown'].filterFunction = function(itemIndex, filterIndex)
+    local item = EasyScrap.scrappableItems[itemIndex]
+    local filterData = EasyScrap.saveData.customFilters[EasyScrap.activeFilterID].rules[filterIndex].data
+ 
+    local z = C_TransmogCollection.GetItemInfo(item.itemLink)
+    if not z then
+        if item.itemClassID == LE_ITEM_CLASS_WEAPON or (item.itemClassID == LE_ITEM_CLASS_ARMOR and (item.itemSubClassID == LE_ITEM_ARMOR_CLOTH or item.itemSubClassID == LE_ITEM_ARMOR_LEATHER or item.itemSubClassID == LE_ITEM_ARMOR_MAIL or item.itemSubClassID == LE_ITEM_ARMOR_PLATE or item.itemSubClassID == LE_ITEM_ARMOR_SHIELD)) then 
+            --DEFAULT_CHAT_FRAME:AddMessage('Easy Scrap: Failed to obtain transmog information for item '..item.itemLink..'. Item will be ignored, please check it manually.')
+            filters['transmogKnown'].filterMessage = 'unable to determine if appearance is known.\nThis happens for some items, please check it manually.'
+            return false
+        else
+            return true 
+        end
+    end
+    local sources = C_TransmogCollection.GetAppearanceSources(z)
+    if sources then
+        for k,v in pairs(sources) do
+           if v.isCollected then return true end
+        end
+    end
+    filters['transmogKnown'].filterMessage = 'you don\'t have this appearance in your collection.'
+    return false
 end
 
 --[[---------------------------------------------------------------------------------------------------------------------------------------
@@ -497,6 +669,8 @@ filters['itemLevel'].order = 6
 filters['itemName'].order = 7
 filters['itemQuality'].order = 8
 filters['itemType'].order = 9
+filters['transmogKnown'].order = 10
+filters['weaponType'].order = 11
 
 
 EasyScrap.filterTypes = filters

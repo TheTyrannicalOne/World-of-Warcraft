@@ -13,1128 +13,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"Evening o/", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			499, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536024855,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [1]
-		{
-			"lol soo i worked 11 hours of time and half today cause someone went home \"sick\"", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			503, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536024896,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [2]
-		{
-			"anyone on in the guild that can send my alt wendypooh a guild invite", -- [1]
-			"Payupsucka-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			504, -- [11]
-			"Player-75-055A8488", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aPayupsucka|r",
-			[51] = 1536024899,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [3]
-		{
-			"must be nice to be hourly..... salary for the lose", -- [1]
-			"Payupsucka-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			511, -- [11]
-			"Player-75-055A8488", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aPayupsucka|r",
-			[51] = 1536024918,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [4]
-		{
-			"gratzz! andd idk if i have the power to invite. Also i work at a convience store it sucks man xD nothing to write home about", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			515, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536024950,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [5]
-		{
-			"However i just got moved up to managment so thats nice :P", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			517, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536024967,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [6]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			593, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536025517,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [7]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			607, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536025629,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [8]
-		{
-			"|cffffff00The Sliver is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			608, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536025633,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
-		{
-			"|cffffff00The Sliver is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			621, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536025718,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			645, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536025822,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [11]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			651, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536025856,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [12]
-		{
-			"|cffffff00The Sliver is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			653, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536025872,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
-		{
-			"Sooo do world quest that require items like linen actually grab from your bank? ", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			660, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536025930,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [14]
-		{
-			"Cause I don't have any on me, yet it still took 40, which means i must have some in the bank? lol", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			668, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536025954,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [15]
-		{
-			"|cffffff00The Sliver is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			671, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536025969,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
-		{
-			"I guess...", -- [1]
-			"Elzith-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			676, -- [11]
-			"Player-75-0AC0190A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaElzith|r",
-			[51] = 1536026002,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [17]
-		{
-			"Maybe?", -- [1]
-			"Elzith-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			677, -- [11]
-			"Player-75-0AC0190A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaElzith|r",
-			[51] = 1536026013,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [18]
-		{
-			"|cffffff00The Sliver is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			699, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536026144,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [19]
-		{
-			"|cffffff00The Sliver is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			779, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536026416,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"|cffffff00Zuldazar is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Zuldazar", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Zuldazar", -- [9]
-			0, -- [10]
-			801, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536026624,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			812, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536026722,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [22]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			815, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536026800,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [23]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			894, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536027633,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [24]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			925, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536028165,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [25]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1008, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536028620,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [26]
-		{
-			"thanks", -- [1]
-			"Prenuptial-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1011, -- [11]
-			"Player-75-0BB63BC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Prenuptial|r",
-			[51] = 1536028640,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [27]
-		{
-			"are u doing that solo?", -- [1]
-			"Kubgo-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1012, -- [11]
-			"Player-75-0938BEB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Kubgo|r",
-			[51] = 1536028646,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [28]
-		{
-			"yeah", -- [1]
-			"Prenuptial-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1013, -- [11]
-			"Player-75-0BB63BC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Prenuptial|r",
-			[51] = 1536028655,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [29]
-		{
-			"is it easy?", -- [1]
-			"Kubgo-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1014, -- [11]
-			"Player-75-0938BEB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Kubgo|r",
-			[51] = 1536028659,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [30]
-		{
-			"yeah all the bosses are dying in about a minute or so and im staying at 100% health", -- [1]
-			"Prenuptial-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1016, -- [11]
-			"Player-75-0BB63BC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Prenuptial|r",
-			[51] = 1536028697,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [31]
-		{
-			"ah ok thanks", -- [1]
-			"Kubgo-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1017, -- [11]
-			"Player-75-0938BEB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Kubgo|r",
-			[51] = 1536028707,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [32]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1196, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536029648,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [33]
-		{
-			"that one took forever though lol", -- [1]
-			"Prenuptial-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1197, -- [11]
-			"Player-75-0BB63BC5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Prenuptial|r",
-			[51] = 1536029657,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [34]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1283, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536030021,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [35]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1328, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536030139,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [36]
-		{
-			"gratzz", -- [1]
-			"Ninfia-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1338, -- [11]
-			"Player-75-06BAC2F8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Ninfia|r",
-			[51] = 1536030178,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [37]
-		{
-			"I forgot that I hate dungeons again", -- [1]
-			"Epinephryne-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1356, -- [11]
-			"Player-75-0A9CCBE2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Epinephryne|r",
-			[51] = 1536030264,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [38]
-		{
-			"|cffffff00Nazmir is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - Nazmir", -- [4]
-			"", -- [5]
-			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - Nazmir", -- [9]
-			0, -- [10]
-			1399, -- [11]
-			false, -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1536030378,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
-		{
-			"Do you have to go to Draenor to do Blackrock Foundry and such, or is there a way to queue from where you are?", -- [1]
-			"Epinephryne-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1506, -- [11]
-			"Player-75-0A9CCBE2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Epinephryne|r",
-			[51] = 1536031032,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [40]
-		{
-			"i walked and it took forever lol", -- [1]
-			"Kubgo-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1507, -- [11]
-			"Player-75-0938BEB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Kubgo|r",
-			[51] = 1536031047,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [41]
-		{
-			"I really hope this expansion gets more alt-friendly", -- [1]
-			"Epinephryne-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1514, -- [11]
-			"Player-75-0A9CCBE2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Epinephryne|r",
-			[51] = 1536031073,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [42]
-		{
-			"I think it will, the automatic catch up mechanic with azerite power is pretty nice", -- [1]
-			"Kubgo-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1519, -- [11]
-			"Player-75-0938BEB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Kubgo|r",
-			[51] = 1536031121,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [43]
-		{
-			"gonna do waycrest on mythic if anyone wants to join in", -- [1]
-			"Kubgo-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1991, -- [11]
-			"Player-75-0938BEB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Kubgo|r",
-			[51] = 1536033800,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [44]
-		{
-			"Are the mythic WoD raids difficult at all at 120?", -- [1]
-			"Epinephryne-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1997, -- [11]
-			"Player-75-0A9CCBE2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Epinephryne|r",
-			[51] = 1536033929,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [45]
-		{
-			"i just did blackrock and it was super easy on mythic", -- [1]
-			"Kubgo-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2000, -- [11]
-			"Player-75-0938BEB2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Kubgo|r",
-			[51] = 1536033946,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [46]
-		{
-			"I'm iLevel 329", -- [1]
-			"Epinephryne-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2002, -- [11]
-			"Player-75-0A9CCBE2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Epinephryne|r",
-			[51] = 1536033981,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [47]
-		{
-			"Grats!", -- [1]
-			"Palataur-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			547, -- [11]
-			"Player-75-0BA42A35", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaPalataur|r",
-			[51] = 1536109534,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [48]
-		{
-			"I had a dream I kept getting yelled at in dungeons because my core hound was too loud", -- [1]
-			"Fahrii-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			554, -- [11]
-			"Player-75-03E7EE5A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Fahrii|r",
-			[51] = 1536109700,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [49]
-		{
-			"lol", -- [1]
-			"Linthiria-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			555, -- [11]
-			"Player-75-0AB862B7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Linthiria|r",
-			[51] = 1536109728,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [50]
-		{
-			"grats name", -- [1]
-			"Hypnos-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2324, -- [11]
-			"Player-75-036AB6D6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aHypnos|r",
-			[51] = 1536112008,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [51]
-		{
 			"Gratz", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
 			"", -- [3]
@@ -1155,7 +33,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1536112011,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [52]
+		}, -- [1]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1177,7 +55,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536112200,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [53]
+		}, -- [2]
 		{
 			"Gratz", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
@@ -1199,7 +77,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1536112200,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [54]
+		}, -- [3]
 		{
 			"Mark of Kazzak on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1221,7 +99,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1536113952,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
+		}, -- [4]
 		{
 			"Anyone available to assist with |cffffff00|Hquest:51091:-1:110:120:5|h[WANTED: Ten'gor and Nol'ixwan]|h|r ?", -- [1]
 			"Thoradrim-ArgentDawn", -- [2]
@@ -1243,7 +121,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dThoradrim|r",
 			[51] = 1536114779,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [56]
+		}, -- [5]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1265,7 +143,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536115220,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [57]
+		}, -- [6]
 		{
 			"Congratulation", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
@@ -1287,7 +165,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1536115221,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [58]
+		}, -- [7]
 		{
 			"didnt even know anyone was running, gl in there everyone", -- [1]
 			"Nadroj-ArgentDawn", -- [2]
@@ -1309,7 +187,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dNadroj|r",
 			[51] = 1536116339,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [59]
+		}, -- [8]
 		{
 			"Gratz", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
@@ -1331,7 +209,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1536116794,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [60]
+		}, -- [9]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1353,7 +231,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536116795,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [61]
+		}, -- [10]
 		{
 			"Gratz!", -- [1]
 			"Noobhunter-TheScryers", -- [2]
@@ -1375,7 +253,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Noobhunter|r",
 			[51] = 1536119048,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [62]
+		}, -- [11]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1397,7 +275,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536119062,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [63]
+		}, -- [12]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1419,7 +297,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536119071,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [64]
+		}, -- [13]
 		{
 			"*Flex*  :)", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -1441,7 +319,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1536119073,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [65]
+		}, -- [14]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1463,7 +341,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536119458,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [66]
+		}, -- [15]
 		{
 			"ty", -- [1]
 			"Zurui-ArgentDawn", -- [2]
@@ -1485,7 +363,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Zurui|r",
 			[51] = 1536119469,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [67]
+		}, -- [16]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1507,7 +385,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536199558,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [68]
+		}, -- [17]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1529,7 +407,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536203634,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [69]
+		}, -- [18]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1551,7 +429,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536203636,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [70]
+		}, -- [19]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1573,7 +451,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536203637,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [71]
+		}, -- [20]
 		{
 			"yay!  Now I can play the game!  lol", -- [1]
 			"Thoradrim-ArgentDawn", -- [2]
@@ -1595,7 +473,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dThoradrim|r",
 			[51] = 1536203647,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [72]
+		}, -- [21]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1617,7 +495,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536203777,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [73]
+		}, -- [22]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1639,7 +517,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536203932,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [74]
+		}, -- [23]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1661,7 +539,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536203947,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [75]
+		}, -- [24]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1683,7 +561,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536203998,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [76]
+		}, -- [25]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1705,7 +583,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536204045,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [77]
+		}, -- [26]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1727,7 +605,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536204658,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [78]
+		}, -- [27]
 		{
 			"ty", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1749,7 +627,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536204663,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [79]
+		}, -- [28]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1771,7 +649,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536205033,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [80]
+		}, -- [29]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1793,7 +671,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536205206,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [81]
+		}, -- [30]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1815,7 +693,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536205321,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [82]
+		}, -- [31]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1837,7 +715,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536205586,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [83]
+		}, -- [32]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1859,7 +737,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536208190,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [84]
+		}, -- [33]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1881,7 +759,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536288600,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [85]
+		}, -- [34]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1903,7 +781,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536290227,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [86]
+		}, -- [35]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1925,7 +803,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536290299,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [87]
+		}, -- [36]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1947,7 +825,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536461131,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [88]
+		}, -- [37]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1969,7 +847,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536461133,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [89]
+		}, -- [38]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1991,7 +869,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536466654,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [90]
+		}, -- [39]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2013,7 +891,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536466823,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [91]
+		}, -- [40]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2035,7 +913,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536466950,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [92]
+		}, -- [41]
 		{
 			"ty", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2057,7 +935,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536466961,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [93]
+		}, -- [42]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2079,7 +957,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1536470089,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [94]
+		}, -- [43]
 		{
 			"Congrats?", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2101,7 +979,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1536471267,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [95]
+		}, -- [44]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2123,7 +1001,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536506217,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [96]
+		}, -- [45]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2145,7 +1023,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536506944,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [97]
+		}, -- [46]
 		{
 			"Thanks :'D", -- [1]
 			"Taeil-ArgentDawn", -- [2]
@@ -2167,7 +1045,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaTaeil|r",
 			[51] = 1536506946,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [98]
+		}, -- [47]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2189,7 +1067,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536508246,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [99]
+		}, -- [48]
 		{
 			"ty", -- [1]
 			"Anysia-TheScryers", -- [2]
@@ -2211,7 +1089,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Anysia|r",
 			[51] = 1536508253,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [100]
+		}, -- [49]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2233,7 +1111,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1536508925,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [50]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2255,7 +1133,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1536508926,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [51]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2277,7 +1155,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1536510732,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [52]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2299,7 +1177,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1536512746,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [53]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2321,7 +1199,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1536512747,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [54]
 		{
 			"Hi", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2343,7 +1221,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536515769,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [106]
+		}, -- [55]
 		{
 			"Hey :)", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2365,7 +1243,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536515788,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [107]
+		}, -- [56]
 		{
 			"How's life?", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2387,7 +1265,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536515800,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [108]
+		}, -- [57]
 		{
 			"oh not too bad, i'm trying to do homework and play which is not a great combo", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2409,7 +1287,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536515815,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [109]
+		}, -- [58]
 		{
 			"Ah! lol", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2431,7 +1309,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536515823,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [110]
+		}, -- [59]
 		{
 			"how're yo doing", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2453,7 +1331,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536515857,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [111]
+		}, -- [60]
 		{
 			"Not too bad, starting to figure this out", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2475,7 +1353,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536515869,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [112]
+		}, -- [61]
 		{
 			"Kind of wish I chose a DPS class instead of tank but it works for now", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2497,7 +1375,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536515883,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [113]
+		}, -- [62]
 		{
 			"How are outlaw rogues?", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2519,7 +1397,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536516015,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [114]
+		}, -- [63]
 		{
 			"i'm not a fan of melee in general :(.  so i haven't played roge mch", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2541,7 +1419,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536516031,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [115]
+		}, -- [64]
 		{
 			"Ah", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2563,7 +1441,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536516041,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [116]
+		}, -- [65]
 		{
 			"What about warlock/mages?", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2585,7 +1463,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536516046,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [117]
+		}, -- [66]
 		{
 			"i love both those :D", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2607,7 +1485,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536516053,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [118]
+		}, -- [67]
 		{
 			"^_^", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2629,7 +1507,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536516066,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [119]
+		}, -- [68]
 		{
 			"Affliction warlock is pretty fun", -- [1]
 			"Epinephryne-ArgentDawn", -- [2]
@@ -2651,7 +1529,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Epinephryne|r",
 			[51] = 1536516068,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [120]
+		}, -- [69]
 		{
 			"i haven't leveled my two yet this xpac.  bt most other xpacs have had a lot of fn with them", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2673,7 +1551,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536516071,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [121]
+		}, -- [70]
 		{
 			"oh?", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2695,7 +1573,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536516071,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [122]
+		}, -- [71]
 		{
 			"yeah mine was afflic last xpac", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2717,7 +1595,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536516082,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [123]
+		}, -- [72]
 		{
 			"she is a lot more srvivable than my mage", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2739,7 +1617,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536516089,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [124]
+		}, -- [73]
 		{
 			"mages are so dang sqishy sometimes, bt they're fn", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2761,7 +1639,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536516109,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [125]
+		}, -- [74]
 		{
 			"sorry keyboard on this laptop acts p sometimes and the one key doens't work...  i need to take it apart and fix it.  i googled and fond the fix.  they have a part that cts into the keyboard connector", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2783,7 +1661,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1536516154,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [126]
+		}, -- [75]
 		{
 			"Maybe I should buy some heirlooms and give a warlock a go", -- [1]
 			"Linthiria-ArgentDawn", -- [2]
@@ -2804,6 +1682,1128 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cffa330c9Linthiria|r",
 			[51] = 1536516154,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [76]
+		{
+			"Congrats", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			82, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1536537108,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [77]
+		{
+			"Congrats!", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			128, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1536537328,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [78]
+		{
+			"Daggerfall on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			129, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536537336,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [79]
+		{
+			"Daggerfall on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			130, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536537352,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [80]
+		{
+			"Congrats", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			181, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1536537564,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [81]
+		{
+			"Daggerfall on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			258, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536538433,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [82]
+		{
+			"Daggerfall on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			259, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536538447,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [83]
+		{
+			"Daggerfall on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			261, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536538459,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [84]
+		{
+			"Daggerfall on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			264, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536538491,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [85]
+		{
+			"Daggerfall on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			265, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536538499,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [86]
+		{
+			"Congrats", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			383, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1536539185,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [87]
+		{
+			"Congrats!", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			453, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1536539539,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [88]
+		{
+			"thank you", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			461, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1536539561,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [89]
+		{
+			"370 waist", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			465, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1536539596,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [90]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			116, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536548686,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [91]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			341, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536549042,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [92]
+		{
+			"|cffa335ee|Hitem:160490::::::::120:262::13::::|h[AZ3-R1-T3 Bionic Bifocals]|h|r", -- [1]
+			"Lolth-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			483, -- [11]
+			"Player-75-007EE318", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddLolth|r",
+			[51] = 1536550083,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [93]
+		{
+			"that sucked", -- [1]
+			"Lolth-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			486, -- [11]
+			"Player-75-007EE318", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddLolth|r",
+			[51] = 1536550100,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [94]
+		{
+			"No fun?", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			488, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1536550110,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [95]
+		{
+			"mats were redculous", -- [1]
+			"Lolth-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			491, -- [11]
+			"Player-75-007EE318", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddLolth|r",
+			[51] = 1536550133,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [96]
+		{
+			"brb", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			553, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1536550789,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [97]
+		{
+			"back", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			566, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1536550927,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [98]
+		{
+			"howdy", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			702, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536552087,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [99]
+		{
+			"Freezing Snare on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			756, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1536552368,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [100]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			779, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536552515,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [101]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			782, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536552525,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [102]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			871, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536553260,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [103]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			948, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536553571,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [104]
+		{
+			"Gratz !", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			949, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1536553579,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [105]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			951, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536553611,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [106]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			960, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536554064,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [107]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			962, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536554118,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [108]
+		{
+			"Congrats", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			963, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1536554137,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [109]
+		{
+			"damn, |cffa335ee|Hitem:163459::::::::120:70::6:3:5126:1562:4786:::|h[Honorbound Centurion's Breastplate]|h|r and |cffa335ee|Hitem:163460::::::::120:70::3:3:5124:1532:4786:::|h[Honorbound Centurion's Greaves]|h|r. ", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			967, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536554211,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [110]
+		{
+			"not a bad 15 minute run lol", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			968, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536554218,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [111]
+		{
+			"What did you get that from?", -- [1]
+			"Santia-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			970, -- [11]
+			"Player-75-08C450DD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaSantia|r",
+			[51] = 1536554328,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [112]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			972, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536554337,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [113]
+		{
+			"Completing the Battle for Stromgarde", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			973, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536554352,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [114]
+		{
+			"Is that a 1 time reward?", -- [1]
+			"Santia-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			974, -- [11]
+			"Player-75-08C450DD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaSantia|r",
+			[51] = 1536554372,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [115]
+		{
+			"Yeah, it was a quest", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			975, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536554383,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [116]
+		{
+			"The loot you get at the end though, can you get that multiple times", -- [1]
+			"Santia-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			976, -- [11]
+			"Player-75-08C450DD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaSantia|r",
+			[51] = 1536554403,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [117]
+		{
+			"got 750 AP with it too", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			977, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536554403,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [118]
+		{
+			"hrm, not sure, only done it once :)  ", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			978, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536554418,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [119]
+		{
+			"its every time", -- [1]
+			"Linadra-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			979, -- [11]
+			"Player-75-058377F7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Linadra|r",
+			[51] = 1536554430,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [120]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			982, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536554445,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [121]
+		{
+			"THANK YOU", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			983, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1536554466,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [122]
+		{
+			"oh nice :)", -- [1]
+			"Hotwaffles-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			984, -- [11]
+			"Player-75-0BACA8CD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaHotwaffles|r",
+			[51] = 1536554470,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [123]
+		{
+			"cap lock", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			985, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1536554476,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [124]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			991, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536554699,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [125]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1114, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536555027,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"grats name", -- [1]
+			"Hypnos-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1160, -- [11]
+			"Player-75-036AB6D6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc41e3aHypnos|r",
+			[51] = 1536555140,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},

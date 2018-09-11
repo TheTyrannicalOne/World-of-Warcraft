@@ -99,7 +99,7 @@ local function createItemButton(i)
         if self.itemRef > 0 then 
             GameTooltip:SetOwner(self, "ANCHOR_NONE")
             GameTooltip:SetBagItem(EasyScrap.scrappableItems[self.itemRef].bag, EasyScrap.scrappableItems[self.itemRef].slot)
-            if EasyScrap.scrappableItems[self.itemRef].filterMessage and not EasyScrap:itemInIgnoreList(EasyScrap.scrappableItems[self.itemRef].itemID, EasyScrap.scrappableItems[self.itemRef].itemName) then
+            if EasyScrap.scrappableItems[self.itemRef].filterMessage and not EasyScrap:itemInIgnoreList(self.itemRef) then
                 GameTooltip:AddLine('|cFFFF0000'..EasyScrap.scrappableItems[self.itemRef].filterMessage..'|r') 
             end
             GameTooltip:SetPoint("BOTTOMLEFT", frame, "TOPRIGHT");

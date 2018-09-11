@@ -1,8 +1,7 @@
 # BigWigs
 
-## [v109.1](https://github.com/BigWigsMods/BigWigs/tree/v109.1) (2018-09-09)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v109...v109.1)
+## [v110.1](https://github.com/BigWigsMods/BigWigs/tree/v110.1) (2018-09-10)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v110...v110.1)
 
-- Uldir/Zul: Remove leftover variable  
-- Uldir/Zul: Add timers and warnings for adds  
-- Azeroth/DoomsHowl: Import module  
+- Uldir/Zul: Fix Crawg option description.  
+- Uldir/Zul: Fix crawg icon  

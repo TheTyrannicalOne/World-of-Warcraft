@@ -118,6 +118,23 @@ EasyScrap.parentFrame:SetScript('OnEvent', function(self, event, ...)
                     EasyScrap.saveData.showWhatsNew = 10
                 end
                 
+                --Ignore functionality restored?
+                if EasyScrap.saveData.addonVersion < 11 then
+                    --Reset ignore list
+                    EasyScrap.itemIgnoreList = {}
+                    if EasyScrap.saveData.addonVersion == 10 then
+                        EasyScrap.saveData.showWhatsNew = 11
+                    end
+                end
+                
+                if EasyScrap.saveData.addonSettings.defaultFilter > 0 then
+                    if EasyScrap.saveData.customFilters[EasyScrap.saveData.addonSettings.defaultFilter] then
+                        EasyScrap.activeFilterID = EasyScrap.saveData.addonSettings.defaultFilter
+                    else
+                        EasyScrap.saveData.addonSettings.defaultFilter = 0
+                        C_Timer.After(5, function() DEFAULT_CHAT_FRAME:AddMessage('Easy Scrap: Couldn\'t find your selected default filter, did you delete your addon setings?') end)
+                    end
+                end
             else
                 EasyScrap:initializeSaveData()        
             end
