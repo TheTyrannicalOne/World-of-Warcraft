@@ -3,3 +3,4 @@ BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 ElvUI_EverySecondCounts: disabled
 ElvUI_LocLite: disabled
+HandyNotes_Achievements: enabled
