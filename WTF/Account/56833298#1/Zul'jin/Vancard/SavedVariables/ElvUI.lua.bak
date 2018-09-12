@@ -1941,5 +1941,27 @@ ElvCharacterDB = {
 			[51] = 1536460338,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [88]
+		{
+			"WTS |cffa335ee|Hitem:161075::::::::120:259::3:4:4798:1808:1492:4784:::|h[Antiseptic Specimen Handlers]|h|r 370 with a socket ", -- [1]
+			"Trojan-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Trojan", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			153, -- [11]
+			"Player-61-0BA7423A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Trojan|r",
+			[51] = 1536640421,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
 	},
 }
