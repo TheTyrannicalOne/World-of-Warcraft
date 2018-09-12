@@ -20,6 +20,7 @@ BigWigs:AddColors("MOTHER", {
 	[268253] = {"blue","yellow"},
 	[269051] = {"cyan","red"},
 	[274205] = {"blue","green"},
+	[279662] = {"blue","yellow"},
 })
 
 BigWigs:AddColors("Fetid Devourer", {
@@ -43,6 +44,7 @@ BigWigs:AddColors("Zek'voz, Herald of N'zoth", {
 	[265662] = "blue",
 	[267180] = "yellow",
 	[267239] = "yellow",
+	["mythic_adds"] = "cyan",
 	["stages"] = "green",
 })
 
@@ -54,6 +56,7 @@ BigWigs:AddColors("Vectis", {
 	[265217] = "cyan",
 	[266459] = "red",
 	[267242] = "orange",
+	[274990] = "blue",
 })
 
 BigWigs:AddColors("Zul", {

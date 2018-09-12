@@ -3,7 +3,7 @@ LoadAddOn("Blizzard_ScrappingMachineUI")
 ScrappingMachineFrame.ScrapButton.SetEnabledBackup = ScrappingMachineFrame.ScrapButton.SetEnabled --To prevent button mashers from scrapping while adding items
 
 EasyScrap = {}
-EasyScrap.addonVersion = 11
+EasyScrap.addonVersion = 12
 EasyScrap.saveData = {}
 
 EasyScrap.itemCache = {}

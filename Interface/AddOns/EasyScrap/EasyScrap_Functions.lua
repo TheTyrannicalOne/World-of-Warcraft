@@ -288,18 +288,20 @@ function EasyScrap:getTrueAzeriteItemLevel(itemIndex)
 end
 
 local function getBonusIDTable(itemLink)
-    --local _, itemID, enchantID, gemID1, gemID2, gemID3, gemID4, suffixID, uniqueID, linkLevel, specializationID, upgradeTypeID, instanceDifficultyID, numBonusIDs = strsplit(":", item.itemLink)
+    --local _, itemID, enchantID, gemID1, gemID2, gemID3, gemID4, suffixID, uniqueID, linkLevel, specializationID, upgradeTypeID, instanceDifficultyID, numBonusIDs = strsplit(":", itemLink)
     local tempString, unknown1, unknown2, unknown3 = strmatch(itemLink, "item:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:([-:%d]+):([-%d]-):([-%d]-):([-%d]-)|")
     local bonusIDs = {}
     local upgradeValue
-    if upgradeTypeID and upgradeTypeID ~= "" then
-       upgradeValue = tempString:match("[-:%d]+:([-%d]+)")
-       bonusIDs = {strsplit(":", tempString:match("([-:%d]+):"))}
-    else
-       bonusIDs = {strsplit(":", tempString)}
+    if tempString then
+        if upgradeTypeID and upgradeTypeID ~= "" then
+           upgradeValue = tempString:match("[-:%d]+:([-%d]+)")
+           bonusIDs = {strsplit(":", tempString:match("([-:%d]+):"))}
+        else
+           bonusIDs = {strsplit(":", tempString)}
+        end
+        --4775 bonus ID = azerite power ID 13 active
+        for k,v in pairs(bonusIDs) do if v == '4775' or v == '' then table.remove(bonusIDs, k) break end end
     end
-    --4775 bonus ID = azerite power ID 13 active
-    for k,v in pairs(bonusIDs) do if v == '4775' or v == '' then table.remove(bonusIDs, k) break end end
     
     
     return bonusIDs
@@ -312,7 +314,7 @@ function EasyScrap:addItemToIgnoreList(itemIndex)
         self.itemIgnoreList[item.itemID] = {}
         self.itemIgnoreList[item.itemID].isAzeriteArmor = false
     end
-    
+
     local itemLevel = item.itemLevel
     if C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(item.itemLink) then      
         itemLevel = self:getTrueAzeriteItemLevel(itemIndex)
@@ -368,12 +370,19 @@ function EasyScrap:itemInIgnoreList(itemIndex)
     local item = self.scrappableItems[itemIndex]
     local itemLevel = item.itemLevel
     
-    if C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(item.itemLink) then      
-        itemLevel = self:getTrueAzeriteItemLevel(itemIndex)
-    end    
+    --if C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(item.itemLink) then      
+    --    itemLevel = self:getTrueAzeriteItemLevel(itemIndex)
+    --end    
     
     if self.itemIgnoreList[item.itemID] then
-        if self.itemIgnoreList[item.itemID][itemLevel] then
+        if self.itemIgnoreList[item.itemID].isAzeriteArmor == nil then
+            self.itemIgnoreList[item.itemID].isAzeriteArmor = C_AzeriteEmpoweredItem.IsAzeriteEmpoweredItemByID(item.itemLink)
+        end
+        
+        if self.itemIgnoreList[item.itemID].isAzeriteArmor then
+            itemLevel = self:getTrueAzeriteItemLevel(itemIndex)
+        end
+        if self.itemIgnoreList[item.itemID][itemLevel] then            
             if self.itemIgnoreList[item.itemID][itemLevel][item.itemName] then
                 local bonusIDs = getBonusIDTable(item.itemLink)
                 

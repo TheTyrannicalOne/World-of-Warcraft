@@ -1,16 +1,15 @@
 # BigWigs
 
-## [v111](https://github.com/BigWigsMods/BigWigs/tree/v111) (2018-09-11)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v110.1...v111)
+## [v112](https://github.com/BigWigsMods/BigWigs/tree/v112) (2018-09-11)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v111...v112)
 
-- Update option files  
-- Uldir/Vectis: Add an extra safety check  
-- Uldir/Vectis: Make the Omega Vector say countdown adaptive, in line with latest hotfix.  
 - bump version  
-- Uldir: Tweak interrupt warnings.  
-- Uldir/Zul: Add marker to Dark Revelation say.  
-- Uldir/Mythrax: Add Imminent Ruin marker and add marker to the say.  
-- Uldir/Zul: Fix bar option  
-- Uldir/Zul: Add warnings when the minions spawn, cleanups.  
-- Uldir/Mythrax: Add proximity display. Sort GUI abilities into stages. Fix intermission bar icon. Fix imminent Ruin playing multiple sounds. Change Obliteration Beam sound.  
-- Uldir/Zul: Fix Dark Revelation target bar.  
+- Tweaks  
+- Uldir/Vectis: Add a personal warning when afflicted by Bursting Lesions  
+- Uldir/Zekvoz: Update more timers for Mythic  
+- Uldir/Mother: Update bar text for Mythic to indicate both beams are are the same time and add Endemic Virus warnings  
+- Uldir/Taloc: Add Flash to Hardened Arteries, Update Mythic timers slightly, Fix Intermission bar icon  
+- Uldir/Vectis: 4 Omega Vector on mythic.  
+- Uldir/Zekvoz: Fix statement  
+- Uldir/Zekvoz: (Mythic) Adjust Eye Beam cast time and Surging Darkness Eruptions  
+- Uldir: Some PlaySound fixes.  

@@ -127,6 +127,20 @@ EasyScrap.parentFrame:SetScript('OnEvent', function(self, event, ...)
                     end
                 end
                 
+                --Oops we didn't reset the item ignore lists for alts since it's saved per character...
+                for itemID, t in pairs(EasyScrap.itemIgnoreList) do
+                    local c = 0
+                    for k, v in pairs(t) do
+                        if type(v) == 'string' then
+                            table.remove(EasyScrap.itemIgnoreList[itemID], k)                      
+                        else
+                            c = c + 1
+                        end
+                    end
+                    if c == 0 then EasyScrap.itemIgnoreList[itemID] = nil end
+                    if c == 1 and EasyScrap.itemIgnoreList[itemID].isAzeriteArmor ~= nil then EasyScrap.itemIgnoreList[itemID] = nil end
+                end
+                
                 if EasyScrap.saveData.addonSettings.defaultFilter > 0 then
                     if EasyScrap.saveData.customFilters[EasyScrap.saveData.addonSettings.defaultFilter] then
                         EasyScrap.activeFilterID = EasyScrap.saveData.addonSettings.defaultFilter
