@@ -1,11 +1,9 @@
 # LittleWigs
 
-## [v8.0.18](https://github.com/BigWigsMods/LittleWigs/tree/v8.0.18) (2018-09-06)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.0.17...v8.0.18)
+## [v8.0.19](https://github.com/BigWigsMods/LittleWigs/tree/v8.0.19) (2018-09-12)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.0.18...v8.0.19)
 
-- WaycrestManor/Heartsbane: Fix icon setting.  
-- WaycrestManor/Heartsbane: Remove Soul Manipulation bars.  
-- WaycrestManor/Raal: Fix Tenderize cooldown.  
-- WaycrestManor/Heartsbane: Fix Soul Manipulation warning and add a marker for it and Focusing Iris.  
-- WaycrestManor/Goliath: Mark the Soul Thorns NPC instead of the player.  
-- SiegeOfBoralus/Redhook: Fix On the Hook  
+- BfA/KingsRest/Mchimba: Fix Entomb over message, timer fixes.  
+- BfA/AtalDazar/Yazma: Fix everything  
+- BfA/AtalDazar/Trash: add Bwonsamdi's Mantle, Mending Word and Fiery Enchant (#326)  
+- WaycrestManor/Heartsbane: Cleanup  
