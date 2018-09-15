@@ -25,14 +25,11 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["analytics"] = {
 		["data"] = {
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...\\AddOns\\TradeSkillMaster\\Core\\UI\\MailingUI\\Inbox.lua:648: assertion failed!\",1535808990]", -- [1]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...\\AddOns\\TradeSkillMaster\\Core\\UI\\MailingUI\\Inbox.lua:854: attempt to index a nil value\",1535809099]", -- [2]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...TradeSkillMaster\\Core\\Lib\\Database\\DatabaseQuery.lua:1029: assertion failed!\",1535809106]", -- [3]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1535896427]", -- [4]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1535991271]", -- [5]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1536207319]", -- [6]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3.1\",\"...\\AddOns\\TradeSkillMaster\\Core\\UI\\MailingUI\\Inbox.lua:648: assertion failed!\",1536292693]", -- [7]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3.3\",\"...ns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Auctioning.lua:557: assertion failed!\",1536554814]", -- [8]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1535896427]", -- [1]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.2.2\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1535991271]", -- [2]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3\",\"...radeSkillMaster\\Core\\Service\\Auctioning\\PostScan.lua:680: assertion failed!\",1536207319]", -- [3]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3.1\",\"...\\AddOns\\TradeSkillMaster\\Core\\UI\\MailingUI\\Inbox.lua:648: assertion failed!\",1536292693]", -- [4]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3.3\",\"...ns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Auctioning.lua:557: assertion failed!\",1536554814]", -- [5]
 		},
 		["updateTime"] = 1536554814,
 	},

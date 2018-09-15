@@ -1,4 +1,11 @@
 Version: 1
+Frame: FishingWatchFrame
+FrameLevel: 1
+Anchor: TOP
+X: -287
+Y: -30
+W: 205
+H: 97
 Frame: GuildBankItemTooltipMover
 FrameLevel: 2
 Anchor: TOP

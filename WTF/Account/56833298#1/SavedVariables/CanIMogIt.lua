@@ -3277,8 +3277,8 @@ CanIMogItDatabase = {
 			[88525] = 1365,
 			[7027] = 852,
 			[88315] = 1365,
-			[81172] = 1005,
 			[20297] = 811,
+			[81172] = 1005,
 			[86651] = 1342,
 			[31856] = 701,
 			[15770] = 352,
@@ -3380,7 +3380,7 @@ CanIMogItDatabase = {
 			[24778] = 348,
 			[49808] = 491,
 			[12518] = 906,
-			[25162] = 721,
+			[100632] = 1668,
 			[81807] = 989,
 			[50832] = 577,
 			[51088] = 443,
@@ -3422,7 +3422,7 @@ CanIMogItDatabase = {
 			[52113] = 276,
 			[96539] = 1638,
 			[15921] = 931,
-			[72990] = 584,
+			[89372] = 1468,
 			[81938] = 986,
 			[32616] = 345,
 			[81134] = 316,
@@ -3634,8 +3634,8 @@ CanIMogItDatabase = {
 			[24526] = 704,
 			[61743] = 331,
 			[30254] = 753,
-			[50072] = 441,
 			[12520] = 864,
+			[50072] = 441,
 			[30253] = 753,
 			[71037] = 21,
 			[19278] = 726,
@@ -3658,9 +3658,9 @@ CanIMogItDatabase = {
 			[47001] = 444,
 			[81262] = 1004,
 			[19663] = 806,
-			[96554] = 1638,
-			[39834] = 665,
 			[40090] = 650,
+			[39834] = 665,
+			[96554] = 1638,
 			[21834] = 724,
 			[89387] = 1471,
 			[23046] = 723,
@@ -3678,7 +3678,7 @@ CanIMogItDatabase = {
 			[52121] = 282,
 			[96555] = 1639,
 			[15208] = 864,
-			[89388] = 1471,
+			[44698] = 337,
 			[38882] = 696,
 			[22707] = 723,
 			[22980] = 723,
@@ -3718,8 +3718,8 @@ CanIMogItDatabase = {
 			[81941] = 989,
 			[25102] = 298,
 			[62873] = 452,
-			[47003] = 336,
 			[19408] = 727,
+			[47003] = 336,
 			[32771] = 718,
 			[24486] = 347,
 			[24946] = 656,
@@ -3765,9 +3765,9 @@ CanIMogItDatabase = {
 			[12521] = 898,
 			[50076] = 441,
 			[12585] = 1450,
-			[85810] = 1283,
-			[50844] = 491,
 			[25552] = 704,
+			[85298] = 1250,
+			[85810] = 1283,
 			[86377] = 1294,
 			[43421] = 276,
 			[32332] = 1201,
@@ -3797,8 +3797,8 @@ CanIMogItDatabase = {
 			[69994] = 481,
 			[50077] = 441,
 			[48781] = 189,
-			[50845] = 491,
 			[21329] = 1529,
+			[50845] = 491,
 			[85812] = 1283,
 			[57099] = 572,
 			[43422] = 282,
@@ -3881,14 +3881,14 @@ CanIMogItDatabase = {
 			[32331] = 1193,
 			[38817] = 649,
 			[48786] = 193,
-			[39841] = 698,
-			[87353] = 1409,
 			[87865] = 1409,
-			[24658] = 719,
+			[87353] = 1409,
+			[39841] = 698,
+			[49312] = 257,
 			[32465] = 1198,
 			[44982] = 429,
 			[89913] = 1519,
-			[49312] = 257,
+			[24658] = 719,
 			[73062] = 581,
 			[89786] = 1512,
 			[50080] = 441,
@@ -3946,8 +3946,8 @@ CanIMogItDatabase = {
 			[47010] = 578,
 			[32908] = 837,
 			[31373] = 653,
-			[87869] = 1409,
 			[39843] = 340,
+			[87869] = 1409,
 			[32828] = 654,
 			[32466] = 1198,
 			[19344] = 711,
@@ -3975,7 +3975,7 @@ CanIMogItDatabase = {
 			[72998] = 581,
 			[67596] = 77,
 			[39605] = 855,
-			[47011] = 444,
+			[38820] = 649,
 			[55458] = 253,
 			[73288] = 581,
 			[69987] = 482,
@@ -4038,11 +4038,11 @@ CanIMogItDatabase = {
 			[50186] = 528,
 			[62627] = 435,
 			[24466] = 704,
-			[7030] = 852,
+			[39846] = 697,
 			[38822] = 649,
 			[69957] = 433,
 			[19669] = 788,
-			[39846] = 697,
+			[7030] = 852,
 			[87875] = 1409,
 			[14123] = 904,
 			[44888] = 463,
@@ -4074,8 +4074,8 @@ CanIMogItDatabase = {
 			[38823] = 649,
 			[69959] = 566,
 			[73010] = 581,
-			[87877] = 1409,
 			[39847] = 832,
+			[87877] = 1409,
 			[40103] = 713,
 			[32657] = 702,
 			[49842] = 527,
@@ -4172,7 +4172,7 @@ CanIMogItDatabase = {
 			[61006] = 523,
 			[24726] = 347,
 			[52857] = 523,
-			[72013] = 54,
+			[14124] = 904,
 			[67669] = 77,
 			[63494] = 569,
 			[89931] = 1473,
@@ -4185,9 +4185,9 @@ CanIMogItDatabase = {
 			[55523] = 253,
 			[51113] = 491,
 			[14892] = 847,
-			[71003] = 30,
-			[43690] = 444,
 			[39601] = 1425,
+			[43690] = 444,
+			[71003] = 30,
 			[72014] = 54,
 			[15212] = 380,
 			[73038] = 581,
@@ -4206,8 +4206,8 @@ CanIMogItDatabase = {
 			[61005] = 456,
 			[72015] = 54,
 			[62756] = 521,
-			[89933] = 1475,
 			[16364] = 951,
+			[89933] = 1475,
 			[30102] = 626,
 			[44328] = 493,
 			[8365] = 851,
@@ -4232,7 +4232,7 @@ CanIMogItDatabase = {
 			[62889] = 436,
 			[36820] = 343,
 			[50472] = 442,
-			[69969] = 432,
+			[55466] = 251,
 			[19672] = 779,
 			[39596] = 1425,
 			[37689] = 588,
@@ -4270,8 +4270,8 @@ CanIMogItDatabase = {
 			[15678] = 958,
 			[96592] = 1650,
 			[7026] = 852,
-			[89937] = 1499,
 			[24536] = 656,
+			[89937] = 1499,
 			[69622] = 517,
 			[24792] = 705,
 			[44716] = 531,
@@ -4299,8 +4299,8 @@ CanIMogItDatabase = {
 			[12879] = 381,
 			[86867] = 1337,
 			[39598] = 1425,
-			[96594] = 1652,
 			[14125] = 904,
+			[96594] = 1652,
 			[44739] = 462,
 			[30105] = 626,
 			[89939] = 1497,
@@ -4372,7 +4372,7 @@ CanIMogItDatabase = {
 			[32829] = 654,
 			[49839] = 443,
 			[89928] = 1518,
-			[55466] = 251,
+			[69969] = 432,
 			[15603] = 954,
 			[89376] = 1468,
 			[51119] = 577,
@@ -4404,7 +4404,7 @@ CanIMogItDatabase = {
 			[49584] = 441,
 			[15101] = 966,
 			[46885] = 841,
-			[14124] = 904,
+			[72013] = 54,
 			[70047] = 432,
 			[21406] = 1447,
 			[51120] = 443,
@@ -4523,7 +4523,7 @@ CanIMogItDatabase = {
 			[86369] = 1294,
 			[23564] = 657,
 			[47796] = 276,
-			[38820] = 649,
+			[47011] = 444,
 			[96608] = 1651,
 			[88423] = 1379,
 			[36156] = 834,
@@ -4649,7 +4649,7 @@ CanIMogItDatabase = {
 			[30059] = 653,
 			[23518] = 657,
 			[69995] = 482,
-			[85298] = 1250,
+			[50844] = 491,
 			[39609] = 855,
 			[63497] = 327,
 			[88425] = 1379,
@@ -4708,7 +4708,7 @@ CanIMogItDatabase = {
 			[22751] = 350,
 			[53248] = 264,
 			[62392] = 452,
-			[44698] = 337,
+			[89388] = 1471,
 			[84845] = 1226,
 			[36813] = 652,
 			[23519] = 657,
@@ -4841,7 +4841,7 @@ CanIMogItDatabase = {
 			[21613] = 376,
 			[23521] = 657,
 			[86389] = 1294,
-			[89372] = 1468,
+			[72990] = 584,
 			[71031] = 21,
 			[64444] = 520,
 			[72055] = 49,
@@ -4861,7 +4861,7 @@ CanIMogItDatabase = {
 			[79798] = 988,
 			[67741] = 708,
 			[72056] = 49,
-			[100632] = 1668,
+			[25162] = 721,
 			[81271] = 1004,
 			[44991] = 429,
 			[61629] = 438,
@@ -7155,16 +7155,16 @@ CanIMogItDatabase = {
 					[42939] = {
 						["subClass"] = "Plate",
 					},
-					[41125] = {
+					[42940] = {
 						["subClass"] = "Plate",
 					},
-					[42940] = {
+					[41125] = {
 						["subClass"] = "Plate",
 					},
 					[41373] = {
 						["subClass"] = "Plate",
 					},
-					[42926] = {
+					[41126] = {
 						["subClass"] = "Plate",
 					},
 					[41374] = {
@@ -7182,7 +7182,7 @@ CanIMogItDatabase = {
 					[42921] = {
 						["subClass"] = "Plate",
 					},
-					[41126] = {
+					[42926] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -7830,16 +7830,16 @@ CanIMogItDatabase = {
 			},
 			["13188:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[32148] = {
-						["subClass"] = "Plate",
-					},
 					[32004] = {
 						["subClass"] = "Plate",
 					},
-					[32068] = {
+					[32148] = {
 						["subClass"] = "Plate",
 					},
 					[32089] = {
+						["subClass"] = "Plate",
+					},
+					[32068] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -8362,10 +8362,10 @@ CanIMogItDatabase = {
 					[41907] = {
 						["subClass"] = "Plate",
 					},
-					[43094] = {
+					[41911] = {
 						["subClass"] = "Plate",
 					},
-					[41911] = {
+					[43094] = {
 						["subClass"] = "Plate",
 					},
 					[41912] = {
@@ -9837,10 +9837,10 @@ CanIMogItDatabase = {
 					[18620] = {
 						["subClass"] = "Cloth",
 					},
-					[29269] = {
+					[7707] = {
 						["subClass"] = "Cloth",
 					},
-					[7707] = {
+					[29269] = {
 						["subClass"] = "Cloth",
 					},
 					[16697] = {
@@ -13452,6 +13452,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["22207:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[66851] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
 			["24332:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[72528] = {
@@ -14930,7 +14937,7 @@ CanIMogItDatabase = {
 					[29774] = {
 						["subClass"] = "Guns",
 					},
-					[31525] = {
+					[31259] = {
 						["subClass"] = "Guns",
 					},
 					[17540] = {
@@ -14939,7 +14946,7 @@ CanIMogItDatabase = {
 					[18311] = {
 						["subClass"] = "Guns",
 					},
-					[31259] = {
+					[31525] = {
 						["subClass"] = "Guns",
 					},
 				},
@@ -14958,6 +14965,13 @@ CanIMogItDatabase = {
 					},
 					[84315] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22274:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[61145] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -16663,10 +16677,13 @@ CanIMogItDatabase = {
 					[59630] = {
 						["subClass"] = "Plate",
 					},
+					[61472] = {
+						["subClass"] = "Plate",
+					},
 					[61455] = {
 						["subClass"] = "Plate",
 					},
-					[61472] = {
+					[59628] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -17669,7 +17686,7 @@ CanIMogItDatabase = {
 					[18305] = {
 						["subClass"] = "Fist Weapons",
 					},
-					[18658] = {
+					[18273] = {
 						["subClass"] = "Fist Weapons",
 					},
 					[18659] = {
@@ -17681,7 +17698,7 @@ CanIMogItDatabase = {
 					[21202] = {
 						["subClass"] = "Fist Weapons",
 					},
-					[18273] = {
+					[18658] = {
 						["subClass"] = "Fist Weapons",
 					},
 				},
@@ -17912,16 +17929,16 @@ CanIMogItDatabase = {
 			},
 			["13158:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[32170] = {
-						["subClass"] = "Plate",
-					},
 					[32038] = {
 						["subClass"] = "Plate",
 					},
-					[32047] = {
+					[32170] = {
 						["subClass"] = "Plate",
 					},
 					[32041] = {
+						["subClass"] = "Plate",
+					},
+					[32047] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -18018,6 +18035,13 @@ CanIMogItDatabase = {
 					},
 					[34149] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22254:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[66856] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -19471,16 +19495,16 @@ CanIMogItDatabase = {
 			},
 			["3101:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[18333] = {
-						["subClass"] = "Cloth",
-					},
 					[10418] = {
 						["subClass"] = "Cloth",
 					},
-					[21301] = {
+					[18333] = {
 						["subClass"] = "Cloth",
 					},
 					[18334] = {
+						["subClass"] = "Cloth",
+					},
+					[21301] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -21385,10 +21409,10 @@ CanIMogItDatabase = {
 					[31922] = {
 						["subClass"] = "Plate",
 					},
-					[31625] = {
+					[31926] = {
 						["subClass"] = "Plate",
 					},
-					[31926] = {
+					[31625] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -22552,10 +22576,10 @@ CanIMogItDatabase = {
 					[29866] = {
 						["subClass"] = "Plate",
 					},
-					[29826] = {
+					[29959] = {
 						["subClass"] = "Plate",
 					},
-					[29959] = {
+					[29826] = {
 						["subClass"] = "Plate",
 					},
 					[29829] = {
@@ -22844,7 +22868,10 @@ CanIMogItDatabase = {
 			},
 			["22973:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[59561] = {
+					[61470] = {
+						["subClass"] = "Plate",
+					},
+					[60436] = {
 						["subClass"] = "Plate",
 					},
 					[59563] = {
@@ -22853,7 +22880,7 @@ CanIMogItDatabase = {
 					[61462] = {
 						["subClass"] = "Plate",
 					},
-					[60436] = {
+					[59561] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -23349,6 +23376,13 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[61154] = {
 						["subClass"] = "Staves",
+					},
+				},
+			},
+			["36171:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[94928] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -23849,16 +23883,16 @@ CanIMogItDatabase = {
 			},
 			["17478:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[45497] = {
+					[41871] = {
 						["subClass"] = "Plate",
 					},
 					[41875] = {
 						["subClass"] = "Plate",
 					},
-					[41871] = {
+					[45497] = {
 						["subClass"] = "Plate",
 					},
-					[45085] = {
+					[45498] = {
 						["subClass"] = "Plate",
 					},
 					[41876] = {
@@ -23870,7 +23904,7 @@ CanIMogItDatabase = {
 					[45084] = {
 						["subClass"] = "Plate",
 					},
-					[45498] = {
+					[45085] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -26441,6 +26475,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["36174:INVTYPE_HAND"] = {
+				["sources"] = {
+					[94927] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["33040:INVTYPE_FEET"] = {
 				["sources"] = {
 					[85492] = {
@@ -27024,19 +27065,19 @@ CanIMogItDatabase = {
 					[15312] = {
 						["subClass"] = "Plate",
 					},
-					[29537] = {
-						["subClass"] = "Plate",
-					},
 					[28396] = {
 						["subClass"] = "Plate",
 					},
-					[30847] = {
+					[29537] = {
+						["subClass"] = "Plate",
+					},
+					[29503] = {
 						["subClass"] = "Plate",
 					},
 					[27449] = {
 						["subClass"] = "Plate",
 					},
-					[29503] = {
+					[30847] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -27137,10 +27178,48 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["36417:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[95819] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
 			["12464:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[24763] = {
 						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["1206:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[62341] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["22963:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[61483] = {
+						["subClass"] = "Plate",
+					},
+					[61475] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["272:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[133] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["22206:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[61118] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -27181,6 +27260,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["31807:INVTYPE_WEAPONMAINHAND"] = {
+				["sources"] = {
+					[73917] = {
+						["subClass"] = "One-Handed Swords",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
 			["8374:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
 					[14906] = {
@@ -27195,51 +27284,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["31807:INVTYPE_WEAPONMAINHAND"] = {
-				["sources"] = {
-					[73917] = {
-						["subClass"] = "One-Handed Swords",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["16807:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[38941] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["1206:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[62341] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["22206:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[61118] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["22984:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[67062] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["18873:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[44369] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["2684:INVTYPE_HAND"] = {
 				["sources"] = {
 					[3152] = {
@@ -27247,17 +27291,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18045:INVTYPE_LEGS"] = {
+			["17655:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[44882] = {
+					[84331] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["1391:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[5217] = {
-						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27268,17 +27305,69 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10449:INVTYPE_WRIST"] = {
+			["22219:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[19619] = {
+					[61104] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["16807:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[38941] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["22088:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[61155] = {
+						["subClass"] = "Staves",
+					},
+					[61150] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["22161:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[59644] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["22984:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[67062] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["22210:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[61170] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["22260:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[61176] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["18045:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[44882] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["22191:INVTYPE_RANGED"] = {
+			["11490:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[59641] = {
-						["subClass"] = "Bows",
+					[21959] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -27298,10 +27387,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22219:INVTYPE_2HWEAPON"] = {
+			["10449:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[61104] = {
-						["subClass"] = "Staves",
+					[19619] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["6753:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10568] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["22191:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[59641] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["1745:INVTYPE_FEET"] = {
+				["sources"] = {
+					[5349] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27339,10 +27449,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2825:INVTYPE_WEAPON"] = {
+			["11564:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[3326] = {
-						["subClass"] = "One-Handed Swords",
+					[22084] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -27353,10 +27463,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22161:INVTYPE_2HWEAPON"] = {
+			["36161:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[59644] = {
-						["subClass"] = "Polearms",
+					[91810] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -27373,48 +27483,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22210:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[61170] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["32048:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[82854] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["6753:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10568] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["36990:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[93940] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["11490:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[21959] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["1745:INVTYPE_FEET"] = {
-				["sources"] = {
-					[5349] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["22261:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[61105] = {
@@ -27425,9 +27493,51 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36161:INVTYPE_SHOULDER"] = {
+			["32048:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[91810] = {
+					[82854] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["36990:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[93940] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["9413:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[25677] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["36205:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[95297] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["36374:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95397] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["6701:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[10439] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["36158:INVTYPE_HAND"] = {
+				["sources"] = {
+					[91994] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -27439,10 +27549,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11564:INVTYPE_LEGS"] = {
+			["9412:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[22084] = {
-						["subClass"] = "Plate",
+					[25679] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27456,10 +27566,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36048:INVTYPE_LEGS"] = {
+			["6337:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[96164] = {
-						["subClass"] = "Plate",
+					[9506] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27477,34 +27587,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36205:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[95297] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["9413:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[25677] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9412:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[25679] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["6701:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[10439] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["36189:INVTYPE_HAND"] = {
 				["sources"] = {
 					[96112] = {
@@ -27512,9 +27594,37 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["229:INVTYPE_2HWEAPON"] = {
+			["3957:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[90] = {
+					[5124] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["36192:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95316] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["976:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[974] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["17660:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[45076] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["8669:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[49185] = {
 						["subClass"] = "Staves",
 					},
 				},
@@ -27533,10 +27643,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6337:INVTYPE_ROBE"] = {
+			["3401:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[9506] = {
-						["subClass"] = "Cloth",
+					[4156] = {
+						["subClass"] = "Wands",
 					},
 				},
 			},
@@ -27568,24 +27678,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3401:INVTYPE_RANGEDRIGHT"] = {
+			["22486:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[4156] = {
-						["subClass"] = "Wands",
+					[65512] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["3957:INVTYPE_ROBE"] = {
+			["36672:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[5124] = {
+					[94964] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["36192:INVTYPE_WEAPON"] = {
+			["3803:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[95316] = {
-						["subClass"] = "Fist Weapons",
+					[69205] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27606,10 +27716,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8669:INVTYPE_2HWEAPON"] = {
+			["24081:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[49185] = {
-						["subClass"] = "Staves",
+					[67183] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -27620,17 +27730,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17660:INVTYPE_CLOAK"] = {
+			["30419:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[45076] = {
+					[80928] = {
+						["subClass"] = "Cloth",
+					},
+					[74014] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["976:INVTYPE_WEAPON"] = {
+			["2764:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[974] = {
-						["subClass"] = "One-Handed Axes",
+					[5262] = {
+						["subClass"] = "Cloth",
+					},
+					[8474] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27648,10 +27764,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23067:INVTYPE_CHEST"] = {
+			["1805:INVTYPE_HAND"] = {
 				["sources"] = {
-					[62887] = {
-						["subClass"] = "Plate",
+					[1987] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27672,61 +27788,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22486:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[65512] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["30861:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[80807] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["3803:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[69205] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["24081:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[67183] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["30419:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[80928] = {
-						["subClass"] = "Cloth",
-					},
-					[74014] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["31897:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[80771] = {
-						["subClass"] = "Two-Handed Swords",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["1805:INVTYPE_HAND"] = {
-				["sources"] = {
-					[1987] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["6808:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[10704] = {
@@ -27734,30 +27795,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14906:INVTYPE_2HWEAPON"] = {
+			["8850:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[33311] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["23537:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[59655] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["22205:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[66850] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["2033:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[2329] = {
+					[15781] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -27772,17 +27812,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8850:INVTYPE_CLOAK"] = {
+			["2033:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[15781] = {
+					[2329] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["1162:INVTYPE_FEET"] = {
+			["31897:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[1188] = {
-						["subClass"] = "Cloth",
+					[80771] = {
+						["subClass"] = "Two-Handed Swords",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -27807,31 +27850,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["37052:INVTYPE_WEAPON"] = {
+			["14906:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[93194] = {
-						["subClass"] = "One-Handed Maces",
+					[33311] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["13351:INVTYPE_2HWEAPON"] = {
+			["23537:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[27025] = {
-						["subClass"] = "Polearms",
+					[59655] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["584:INVTYPE_LEGS"] = {
+			["22205:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[496] = {
+					[66850] = {
+						["subClass"] = "Crossbows",
+					},
+					[66849] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["2822:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[3322] = {
 						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["1184:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[4670] = {
-						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -27842,6 +27888,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["1184:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[4670] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["584:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[496] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
 			["585:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[497] = {
@@ -27849,31 +27909,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3203:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[3868] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13368:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[27069] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
 			["36413:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[95345] = {
 						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["2683:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[10580] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -27890,24 +27929,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7357:INVTYPE_2HWEAPON"] = {
+			["1187:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[12720] = {
+					[5137] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["13351:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[27025] = {
 						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["14485:INVTYPE_FEET"] = {
-				["sources"] = {
-					[33377] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["7147:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[35564] = {
-						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -27924,6 +27956,93 @@ CanIMogItDatabase = {
 						["subClass"] = "Miscellaneous",
 					},
 					[190] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["22361:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[65509] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["1886:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[10178] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["3203:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[3868] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["37049:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[93236] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["36400:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95390] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["2683:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[10580] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["8935:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[15896] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["7357:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[12720] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["437:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[6057] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["7147:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[35564] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["28028:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[73752] = {
+						["subClass"] = "Two-Handed Swords",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
+			["11531:INVTYPE_BODY"] = {
+				["sources"] = {
+					[22033] = {
 						["subClass"] = "Miscellaneous",
 					},
 				},
@@ -27949,10 +28068,25 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22361:INVTYPE_WEAPON"] = {
+			["26950:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[65509] = {
-						["subClass"] = "One-Handed Maces",
+					[76486] = {
+						["subClass"] = "Plate",
+					},
+					[82889] = {
+						["subClass"] = "Plate",
+					},
+					[80316] = {
+						["subClass"] = "Plate",
+					},
+					[68581] = {
+						["subClass"] = "Plate",
+					},
+					[81619] = {
+						["subClass"] = "Plate",
+					},
+					[73821] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -27976,10 +28110,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["37063:INVTYPE_2HWEAPON"] = {
+			["9497:INVTYPE_HAND"] = {
 				["sources"] = {
-					[93223] = {
-						["subClass"] = "Polearms",
+					[18626] = {
+						["subClass"] = "Plate",
+					},
+					[18641] = {
+						["subClass"] = "Plate",
+					},
+					[21484] = {
+						["subClass"] = "Plate",
+					},
+					[19166] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -28004,9 +28147,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36400:INVTYPE_WEAPON"] = {
+			["401:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[95390] = {
+					[10745] = {
 						["subClass"] = "One-Handed Swords",
 					},
 				},
@@ -28018,103 +28161,6 @@ CanIMogItDatabase = {
 					},
 					[30795] = {
 						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["36673:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[95036] = {
-						["subClass"] = "Cloth",
-					},
-					[91984] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["437:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[6057] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["9497:INVTYPE_HAND"] = {
-				["sources"] = {
-					[18626] = {
-						["subClass"] = "Plate",
-					},
-					[18641] = {
-						["subClass"] = "Plate",
-					},
-					[21484] = {
-						["subClass"] = "Plate",
-					},
-					[19166] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["11531:INVTYPE_BODY"] = {
-				["sources"] = {
-					[22033] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["1766:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[29270] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["8355:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[14882] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["26950:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[76486] = {
-						["subClass"] = "Plate",
-					},
-					[68581] = {
-						["subClass"] = "Plate",
-					},
-					[80316] = {
-						["subClass"] = "Plate",
-					},
-					[82889] = {
-						["subClass"] = "Plate",
-					},
-					[73821] = {
-						["subClass"] = "Plate",
-					},
-					[81619] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2498:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[6006] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["230:INVTYPE_FEET"] = {
-				["sources"] = {
-					[9443] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["36391:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[95806] = {
-						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -28146,20 +28192,38 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36376:INVTYPE_2HWEAPON"] = {
+			["1766:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[95373] = {
-						["subClass"] = "Staves",
-					},
-					[94868] = {
-						["subClass"] = "Staves",
+					[29270] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["36209:INVTYPE_2HWEAPON"] = {
+			["8355:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[95367] = {
-						["subClass"] = "Staves",
+					[14882] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["7046:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[12229] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["2498:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[6006] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["36261:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95323] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -28170,10 +28234,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["429:INVTYPE_WEAPON"] = {
+			["36376:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[299] = {
-						["subClass"] = "Daggers",
+					[95373] = {
+						["subClass"] = "Staves",
+					},
+					[94868] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -28191,17 +28258,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14748:INVTYPE_RANGEDRIGHT"] = {
+			["429:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[32678] = {
-						["subClass"] = "Crossbows",
+					[299] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["3322:INVTYPE_2HWEAPON"] = {
+			["19059:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[26737] = {
-						["subClass"] = "Two-Handed Axes",
+					[44843] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["37060:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[93197] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -28219,10 +28293,55 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["37060:INVTYPE_2HWEAPON"] = {
+			["1114:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[93197] = {
-						["subClass"] = "Polearms",
+					[1130] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["1118:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[1134] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["14748:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[32678] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["3322:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[26737] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["36164:INVTYPE_FEET"] = {
+				["sources"] = {
+					[94899] = {
+						["subClass"] = "Plate",
+					},
+					[94232] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["9592:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[18673] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["36175:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[94929] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -28240,17 +28359,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36199:INVTYPE_2HWEAPON"] = {
+			["35562:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[95287] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["9652:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[17356] = {
-						["subClass"] = "Bows",
+					[90594] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -28261,6 +28373,13 @@ CanIMogItDatabase = {
 					},
 					[10579] = {
 						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["21980:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[66483] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -28278,20 +28397,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1118:INVTYPE_2HWEAPON"] = {
+			["6683:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[1134] = {
-						["subClass"] = "Two-Handed Axes",
+					[13750] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["36164:INVTYPE_FEET"] = {
+			["1321:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[94899] = {
-						["subClass"] = "Plate",
-					},
-					[94232] = {
-						["subClass"] = "Plate",
+					[1388] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -28309,38 +28425,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["35562:INVTYPE_LEGS"] = {
+			["37999:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[90594] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["36175:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[94929] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["9592:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[18673] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["3503:INVTYPE_FEET"] = {
-				["sources"] = {
-					[13316] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["6639:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[10262] = {
-						["subClass"] = "Crossbows",
+					[91015] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -28351,6 +28439,43 @@ CanIMogItDatabase = {
 					},
 					[21741] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["14712:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[32621] = {
+						["subClass"] = "Plate",
+					},
+					[32713] = {
+						["subClass"] = "Plate",
+					},
+					[32829] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
+			["3503:INVTYPE_FEET"] = {
+				["sources"] = {
+					[13316] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["8721:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[72636] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["12328:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[26175] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -28382,10 +28507,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["37999:INVTYPE_2HWEAPON"] = {
+			["4222:INVTYPE_FEET"] = {
 				["sources"] = {
-					[91015] = {
-						["subClass"] = "Staves",
+					[5680] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -28396,10 +28521,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6683:INVTYPE_WRIST"] = {
+			["895:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[13750] = {
-						["subClass"] = "Plate",
+					[17545] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -28416,10 +28541,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36670:INVTYPE_CLOAK"] = {
+			["21264:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[94963] = {
-						["subClass"] = "Cloth",
+					[61975] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -28427,78 +28552,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[37292] = {
 						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["2542:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[3761] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["8721:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[72636] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["14712:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[32621] = {
-						["subClass"] = "Plate",
-					},
-					[32713] = {
-						["subClass"] = "Plate",
-					},
-					[32829] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["4222:INVTYPE_FEET"] = {
-				["sources"] = {
-					[5680] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["12328:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[26175] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["2565:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[3000] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["12508:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[24826] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["895:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[17545] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["21264:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[61975] = {
-						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -28523,6 +28576,78 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["36666:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[95032] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["9560:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[18287] = {
+						["subClass"] = "Daggers",
+					},
+					[46915] = {
+						["subClass"] = "Daggers",
+					},
+					[17549] = {
+						["subClass"] = "Daggers",
+					},
+					[19136] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["2565:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[3000] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["12508:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[24826] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2429:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[9943] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["36055:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[92131] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2915:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[3480] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["34657:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[90485] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22391:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[62219] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
 			["3744:INVTYPE_SHOULDER"] = {
 				["sources"] = {
 					[4706] = {
@@ -28530,10 +28655,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36666:INVTYPE_CLOAK"] = {
+			["9877:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[95032] = {
-						["subClass"] = "Cloth",
+					[18474] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -28558,36 +28683,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9560:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[18287] = {
-						["subClass"] = "Daggers",
-					},
-					[46915] = {
-						["subClass"] = "Daggers",
-					},
-					[17549] = {
-						["subClass"] = "Daggers",
-					},
-					[19136] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["2429:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[9943] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["36055:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[92131] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["10535:INVTYPE_SHOULDER"] = {
 				["sources"] = {
 					[19717] = {
@@ -28598,10 +28693,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34657:INVTYPE_WAIST"] = {
+			["36241:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[90485] = {
+					[95388] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["9631:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[17322] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["10244:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[19323] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["36198:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[95359] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -28612,17 +28728,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22391:INVTYPE_HOLDABLE"] = {
+			["33762:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[62219] = {
-						["subClass"] = "Miscellaneous",
+					[86511] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["9877:INVTYPE_WAIST"] = {
+			["10142:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[18474] = {
-						["subClass"] = "Plate",
+					[32956] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -28633,10 +28749,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36198:INVTYPE_2HWEAPON"] = {
+			["36180:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[95359] = {
-						["subClass"] = "Two-Handed Maces",
+					[95365] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -28654,10 +28770,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36241:INVTYPE_WEAPON"] = {
+			["23529:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[95388] = {
-						["subClass"] = "One-Handed Swords",
+					[62674] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -28685,33 +28801,30 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["33762:INVTYPE_WRIST"] = {
+			["8068:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[86511] = {
-						["subClass"] = "Plate",
+					[14071] = {
+						["subClass"] = "Guns",
 					},
 				},
 			},
-			["8966:INVTYPE_WEAPON"] = {
+			["20540:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[29360] = {
-						["subClass"] = "Daggers",
+					[51174] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["9057:INVTYPE_2HWEAPON"] = {
+			["36251:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[37457] = {
-						["subClass"] = "Two-Handed Maces",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[96897] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["35541:INVTYPE_SHOULDER"] = {
+			["34654:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[88863] = {
+					[87553] = {
 						["subClass"] = "Plate",
 						["classRestrictions"] = {
 							"Warrior", -- [1]
@@ -28726,27 +28839,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23529:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[62674] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["10142:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[32956] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["36180:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[95365] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
 			["31311:INVTYPE_LEGS"] = {
 				["sources"] = {
 					[79512] = {
@@ -28754,13 +28846,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34654:INVTYPE_LEGS"] = {
+			["36178:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[87553] = {
+					[94933] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					},
+				},
+			},
+			["36165:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[94893] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["33747:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[86508] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["36196:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[95357] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+					[94867] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -28771,10 +28884,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20540:INVTYPE_2HWEAPON"] = {
+			["32144:INVTYPE_FEET"] = {
 				["sources"] = {
-					[51174] = {
-						["subClass"] = "Staves",
+					[81985] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -28785,17 +28898,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8068:INVTYPE_RANGEDRIGHT"] = {
+			["22294:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[14071] = {
-						["subClass"] = "Guns",
+					[65313] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["36034:INVTYPE_FEET"] = {
+			["1380:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[96972] = {
-						["subClass"] = "Plate",
+					[10207] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -28813,10 +28926,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36178:INVTYPE_WRIST"] = {
+			["30436:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[94933] = {
-						["subClass"] = "Plate",
+					[80927] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -28827,17 +28940,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["35918:INVTYPE_CLOAK"] = {
+			["35531:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[89724] = {
-						["subClass"] = "Cloth",
+					[89391] = {
+						["subClass"] = "Plate",
+					},
+					[89392] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["2422:INVTYPE_LEGS"] = {
+			["36006:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[9948] = {
-						["subClass"] = "Plate",
+					[94862] = {
+						["subClass"] = "Daggers",
+					},
+					[96902] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -28855,20 +28974,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36196:INVTYPE_2HWEAPON"] = {
+			["32426:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[95357] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-					[94867] = {
-						["subClass"] = "Two-Handed Maces",
+					[81708] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["32144:INVTYPE_FEET"] = {
+			["2804:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[81985] = {
-						["subClass"] = "Plate",
+					[29304] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -28879,10 +28995,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22294:INVTYPE_2HWEAPON"] = {
+			["5773:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[65313] = {
-						["subClass"] = "Two-Handed Axes",
+					[8515] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -28893,23 +29009,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["31423:INVTYPE_2HWEAPON"] = {
+			["10655:INVTYPE_BODY"] = {
 				["sources"] = {
-					[81791] = {
-						["subClass"] = "Polearms",
+					[19961] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["5671:INVTYPE_CHEST"] = {
+			["12818:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[8622] = {
-						["subClass"] = "Plate",
-					},
-					[8365] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[25735] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
@@ -28920,27 +29030,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6521:INVTYPE_WAIST"] = {
+			["36327:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[9967] = {
-						["subClass"] = "Plate",
+					[95298] = {
+						["subClass"] = "Guns",
 					},
 				},
 			},
-			["36006:INVTYPE_WEAPON"] = {
+			["11242:INVTYPE_BODY"] = {
 				["sources"] = {
-					[94862] = {
-						["subClass"] = "Daggers",
-					},
-					[96902] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["32426:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[81708] = {
+					[21567] = {
 						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["36185:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95321] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -28951,9 +29058,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34040:INVTYPE_HAND"] = {
+			["8688:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[85972] = {
+					[15472] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -28965,48 +29072,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5773:INVTYPE_ROBE"] = {
+			["34722:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[8515] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
-			["36185:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95321] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["12818:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[25735] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
-			["36327:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[95298] = {
-						["subClass"] = "Guns",
-					},
-				},
-			},
-			["36399:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95391] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["13969:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[29512] = {
-						["subClass"] = "Daggers",
-					},
-					[29538] = {
-						["subClass"] = "Daggers",
+					[90469] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29017,10 +29086,45 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["10747:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[20175] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["34460:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[86901] = {
+						["subClass"] = "Cosmetic",
+					},
+				},
+			},
+			["35566:INVTYPE_FEET"] = {
+				["sources"] = {
+					[89217] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["10441:INVTYPE_SHIELD"] = {
 				["sources"] = {
 					[19607] = {
 						["subClass"] = "Shields",
+					},
+				},
+			},
+			["32427:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[81604] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["36399:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95391] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -29031,9 +29135,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34722:INVTYPE_HEAD"] = {
+			["34048:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[90469] = {
+					[84629] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29048,9 +29152,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8688:INVTYPE_LEGS"] = {
+			["32411:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[15472] = {
+					[81634] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29062,24 +29166,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10747:INVTYPE_2HWEAPON"] = {
+			["30056:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[20175] = {
-						["subClass"] = "Two-Handed Axes",
+					[80920] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["34048:INVTYPE_CHEST"] = {
+			["34724:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[84629] = {
+					[89950] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["34277:INVTYPE_TABARD"] = {
+			["12270:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[86060] = {
-						["subClass"] = "Miscellaneous",
+					[24971] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29097,38 +29201,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["30056:INVTYPE_CLOAK"] = {
+			["7681:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[80920] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["32427:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[81604] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["21058:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[61067] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["3652:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[21058] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["32411:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[81634] = {
-						["subClass"] = "Plate",
+					[33363] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -29139,16 +29215,50 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34724:INVTYPE_SHOULDER"] = {
+			["21058:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[89950] = {
+					[61067] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["12270:INVTYPE_WAIST"] = {
+			["4408:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[24971] = {
+					[6000] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["13157:INVTYPE_FEET"] = {
+				["sources"] = {
+					[32156] = {
+						["subClass"] = "Plate",
+					},
+					[32054] = {
+						["subClass"] = "Plate",
+					},
+					[32051] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["11475:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[21930] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["11461:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[21911] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["10080:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[18734] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29167,20 +29277,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["29908:INVTYPE_RANGEDRIGHT"] = {
+			["8205:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[78576] = {
-						["subClass"] = "Guns",
+					[14426] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["9328:INVTYPE_WEAPON"] = {
+			["36294:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[16648] = {
-						["subClass"] = "Fist Weapons",
-					},
-					[16635] = {
-						["subClass"] = "Fist Weapons",
+					[95333] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -29194,17 +29301,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8205:INVTYPE_SHIELD"] = {
+			["35527:INVTYPE_FEET"] = {
 				["sources"] = {
-					[14426] = {
-						["subClass"] = "Shields",
+					[89375] = {
+						["subClass"] = "Plate",
+					},
+					[89376] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["5743:INVTYPE_RANGEDRIGHT"] = {
+			["3751:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[8463] = {
-						["subClass"] = "Crossbows",
+					[4715] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29215,44 +29325,38 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27076:INVTYPE_FEET"] = {
+			["2751:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[79971] = {
-						["subClass"] = "Plate",
-					},
-					[79966] = {
-						["subClass"] = "Plate",
-					},
-					[79946] = {
-						["subClass"] = "Plate",
+					[9503] = {
+						["subClass"] = "Wands",
 					},
 				},
 			},
-			["4408:INVTYPE_WEAPON"] = {
+			["30413:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[6000] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["11475:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[21930] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["1700:INVTYPE_ROBE"] = {
-				["sources"] = {
-					[33284] = {
+					[74518] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["11461:INVTYPE_SHIELD"] = {
+			["12799:INVTYPE_BODY"] = {
 				["sources"] = {
-					[21911] = {
-						["subClass"] = "Shields",
+					[25708] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["11906:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[22909] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["32158:INVTYPE_HAND"] = {
+				["sources"] = {
+					[81166] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29294,10 +29398,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12799:INVTYPE_BODY"] = {
+			["1700:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[25708] = {
-						["subClass"] = "Miscellaneous",
+					[33284] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -29308,10 +29412,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10080:INVTYPE_WRIST"] = {
+			["461:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[18734] = {
-						["subClass"] = "Plate",
+					[10201] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -29322,68 +29426,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2162:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[2494] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["23623:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[63605] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["3751:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[4715] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["35527:INVTYPE_FEET"] = {
-				["sources"] = {
-					[89375] = {
-						["subClass"] = "Plate",
-					},
-					[89376] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2751:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[9503] = {
-						["subClass"] = "Wands",
-					},
-				},
-			},
-			["30421:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[73810] = {
-						["subClass"] = "Cloth",
-					},
-					[74003] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["34043:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[85976] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["20569:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[50923] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
 			["31310:INVTYPE_HEAD"] = {
 				["sources"] = {
 					[79511] = {
@@ -29391,44 +29433,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2670:INVTYPE_CLOAK"] = {
+			["23623:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[3135] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["1095:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[1110] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["7367:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[12736] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["33043:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[85496] = {
+					[63605] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["3321:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[29773] = {
-						["subClass"] = "Cloth",
-					},
-					[33141] = {
-						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -29449,9 +29457,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12263:INVTYPE_CHEST"] = {
+			["30421:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[24500] = {
+					[73810] = {
+						["subClass"] = "Cloth",
+					},
+					[74003] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["13046:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[28541] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29463,6 +29481,95 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["33043:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[85496] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
+			["7367:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[12736] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["2670:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[3135] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["1095:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[1110] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["31670:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[77628] = {
+						["subClass"] = "Cloth",
+					},
+					[86047] = {
+						["subClass"] = "Cloth",
+					},
+					[85979] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["34035:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[86018] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["3321:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[29773] = {
+						["subClass"] = "Cloth",
+					},
+					[33141] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["5490:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[64963] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["30408:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[76021] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["12263:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[24500] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["29432:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[80925] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
 			["36162:INVTYPE_WRIST"] = {
 				["sources"] = {
 					[91812] = {
@@ -29470,9 +29577,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13046:INVTYPE_CHEST"] = {
+			["25930:INVTYPE_FEET"] = {
 				["sources"] = {
-					[28541] = {
+					[72890] = {
+						["subClass"] = "Plate",
+					},
+					[73284] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29541,34 +29651,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22257:INVTYPE_2HWEAPON"] = {
+			["34029:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[61175] = {
-						["subClass"] = "Staves",
-					},
-					[59643] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["4455:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[6073] = {
-						["subClass"] = "Bows",
-					},
-				},
-			},
-			["7973:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[14165] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["19037:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[44806] = {
+					[86015] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["11803:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[46919] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["27178:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[73485] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -29576,6 +29676,19 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[10709] = {
 						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["27097:INVTYPE_FEET"] = {
+				["sources"] = {
+					[78960] = {
+						["subClass"] = "Plate",
+					},
+					[80537] = {
+						["subClass"] = "Plate",
+					},
+					[78627] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29589,10 +29702,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5490:INVTYPE_WEAPON"] = {
+			["27327:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[64963] = {
-						["subClass"] = "Fist Weapons",
+					[80888] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29651,19 +29764,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["29432:INVTYPE_CLOAK"] = {
+			["12492:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[80925] = {
-						["subClass"] = "Cloth",
+					[24817] = {
+						["subClass"] = "Fist Weapons",
+					},
+					[24802] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
-			["25930:INVTYPE_FEET"] = {
+			["32757:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[72890] = {
-						["subClass"] = "Plate",
-					},
-					[73284] = {
+					[83965] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29682,17 +29795,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34029:INVTYPE_WAIST"] = {
+			["32203:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[86015] = {
-						["subClass"] = "Plate",
+					[86904] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["11803:INVTYPE_SHIELD"] = {
+			["3722:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[46919] = {
-						["subClass"] = "Shields",
+					[4676] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -29703,17 +29816,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9375:INVTYPE_WRIST"] = {
+			["10478:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[16696] = {
+					[19660] = {
 						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["27178:INVTYPE_TABARD"] = {
+			["1722:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[73485] = {
-						["subClass"] = "Miscellaneous",
+					[31608] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -29724,9 +29840,18 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["32757:INVTYPE_CHEST"] = {
+			["26966:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[83965] = {
+					[73812] = {
+						["subClass"] = "Plate",
+					},
+					[74405] = {
+						["subClass"] = "Plate",
+					},
+					[76421] = {
+						["subClass"] = "Plate",
+					},
+					[81611] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29759,10 +29884,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["29473:INVTYPE_CLOAK"] = {
+			["27082:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[72295] = {
-						["subClass"] = "Cloth",
+					[80584] = {
+						["subClass"] = "Plate",
+					},
+					[79964] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29780,20 +29908,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["26955:INVTYPE_CHEST"] = {
+			["5633:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[74401] = {
-						["subClass"] = "Plate",
-					},
-					[68700] = {
-						["subClass"] = "Plate",
+					[93248] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["36654:INVTYPE_CLOAK"] = {
+			["3677:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[96168] = {
-						["subClass"] = "Cloth",
+					[31712] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -29811,20 +29936,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10478:INVTYPE_CHEST"] = {
+			["13517:INVTYPE_FEET"] = {
 				["sources"] = {
-					[19660] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[89253] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["3722:INVTYPE_WEAPON"] = {
+			["13370:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[4676] = {
-						["subClass"] = "One-Handed Swords",
+					[27071] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -29842,10 +29964,10 @@ CanIMogItDatabase = {
 					[16689] = {
 						["subClass"] = "Plate",
 					},
-					[18241] = {
+					[18640] = {
 						["subClass"] = "Plate",
 					},
-					[18640] = {
+					[18241] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -29857,19 +29979,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["26966:INVTYPE_LEGS"] = {
+			["13620:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[73812] = {
-						["subClass"] = "Plate",
-					},
-					[74405] = {
-						["subClass"] = "Plate",
-					},
-					[76421] = {
-						["subClass"] = "Plate",
-					},
-					[81611] = {
-						["subClass"] = "Plate",
+					[44336] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -29880,16 +29993,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1722:INVTYPE_WEAPON"] = {
+			["30414:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[31608] = {
-						["subClass"] = "One-Handed Axes",
+					[74375] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["26773:INVTYPE_CLOAK"] = {
+			["30511:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[73156] = {
+					[81049] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -29901,17 +30014,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5633:INVTYPE_2HWEAPON"] = {
+			["19518:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[93248] = {
-						["subClass"] = "Staves",
+					[98699] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["13370:INVTYPE_2HWEAPON"] = {
+			["36654:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[27071] = {
-						["subClass"] = "Two-Handed Swords",
+					[96168] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -29932,10 +30048,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["30511:INVTYPE_CLOAK"] = {
+			["6518:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[81049] = {
-						["subClass"] = "Cloth",
+					[9949] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -29946,24 +30062,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3677:INVTYPE_SHIELD"] = {
+			["24811:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[31712] = {
-						["subClass"] = "Shields",
+					[60635] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
-			["13517:INVTYPE_FEET"] = {
+			["6590:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[89253] = {
-						["subClass"] = "Cloth",
+					[10145] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
-			["30414:INVTYPE_CLOAK"] = {
+			["13480:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[74375] = {
-						["subClass"] = "Cloth",
+					[27473] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -29974,17 +30090,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13620:INVTYPE_WEAPON"] = {
+			["27106:INVTYPE_FEET"] = {
 				["sources"] = {
-					[44336] = {
-						["subClass"] = "One-Handed Swords",
+					[81407] = {
+						["subClass"] = "Plate",
+					},
+					[81404] = {
+						["subClass"] = "Plate",
+					},
+					[68837] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["13480:INVTYPE_2HWEAPON"] = {
+			["9590:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[27473] = {
-						["subClass"] = "Two-Handed Axes",
+					[17554] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -30009,9 +30131,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6518:INVTYPE_SHOULDER"] = {
+			["1607:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[9949] = {
+					[89432] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -30023,10 +30145,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9595:INVTYPE_WEAPON"] = {
+			["13483:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[17264] = {
-						["subClass"] = "One-Handed Swords",
+					[27506] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -30079,16 +30201,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27106:INVTYPE_FEET"] = {
+			["13342:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[81407] = {
-						["subClass"] = "Plate",
-					},
-					[81404] = {
-						["subClass"] = "Plate",
-					},
-					[68837] = {
-						["subClass"] = "Plate",
+					[27016] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -30102,36 +30218,30 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13361:INVTYPE_WEAPON"] = {
+			["25493:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[30750] = {
-						["subClass"] = "One-Handed Swords",
-					},
-					[29836] = {
-						["subClass"] = "One-Handed Swords",
-					},
-					[29833] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["6590:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10145] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["1607:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[89432] = {
+					[70049] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["5734:INVTYPE_HAND"] = {
+			["6662:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[8562] = {
+					[10299] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["2208:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[2555] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["6532:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[10039] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -30152,10 +30262,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9590:INVTYPE_WEAPON"] = {
+			["32758:INVTYPE_HAND"] = {
 				["sources"] = {
-					[17554] = {
-						["subClass"] = "One-Handed Swords",
+					[83973] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -30166,10 +30276,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13483:INVTYPE_SHOULDER"] = {
+			["657:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[27506] = {
-						["subClass"] = "Plate",
+					[581] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -30180,10 +30290,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4431:INVTYPE_2HWEAPON"] = {
+			["6571:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[6042] = {
-						["subClass"] = "Two-Handed Maces",
+					[10099] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -30201,16 +30311,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["32758:INVTYPE_HAND"] = {
+			["4431:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[83973] = {
-						["subClass"] = "Plate",
+					[6042] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
-			["25493:INVTYPE_SHOULDER"] = {
+			["31306:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[70049] = {
+					[79510] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -30250,24 +30360,39 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13342:INVTYPE_2HWEAPON"] = {
+			["26953:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[27016] = {
+					[68724] = {
+						["subClass"] = "Plate",
+					},
+					[78772] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+					[74407] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13476:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[31239] = {
+						["subClass"] = "Plate",
+					},
+					[27457] = {
+						["subClass"] = "Plate",
+					},
+					[30832] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["490:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[362] = {
 						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["6662:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10299] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["657:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[581] = {
-						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -30291,16 +30416,22 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2208:INVTYPE_WEAPON"] = {
+			["25934:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[2555] = {
-						["subClass"] = "Daggers",
+					[73224] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["6532:INVTYPE_WAIST"] = {
+			["26968:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[10039] = {
+					[81408] = {
+						["subClass"] = "Plate",
+					},
+					[74002] = {
+						["subClass"] = "Plate",
+					},
+					[73931] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -30340,10 +30471,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["31306:INVTYPE_WAIST"] = {
+			["30460:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[79510] = {
-						["subClass"] = "Plate",
+					[80931] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -30361,19 +30492,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["26953:INVTYPE_WAIST"] = {
+			["3693:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[68724] = {
-						["subClass"] = "Plate",
-					},
-					[78772] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-					[74407] = {
-						["subClass"] = "Plate",
+					[4642] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -30384,17 +30506,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13276:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[28580] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["7474:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
 					[12981] = {
 						["subClass"] = "Guns",
+					},
+				},
+			},
+			["2310:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[9441] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -30405,16 +30527,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["30460:INVTYPE_CLOAK"] = {
+			["36390:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[80931] = {
-						["subClass"] = "Cloth",
+					[95372] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["25934:INVTYPE_LEGS"] = {
+			["27112:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[73224] = {
+					[81409] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -30426,30 +30548,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["26968:INVTYPE_WRIST"] = {
+			["4434:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[81408] = {
-						["subClass"] = "Plate",
-					},
-					[74002] = {
-						["subClass"] = "Plate",
-					},
-					[73931] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["32297:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[84555] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["3693:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[4642] = {
-						["subClass"] = "Staves",
+					[6047] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -30460,10 +30562,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36390:INVTYPE_2HWEAPON"] = {
+			["27128:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[95372] = {
-						["subClass"] = "Staves",
+					[83061] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2051:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[2364] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["27130:INVTYPE_FEET"] = {
+				["sources"] = {
+					[80854] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -30480,10 +30596,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27112:INVTYPE_WRIST"] = {
+			["14954:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[81409] = {
-						["subClass"] = "Plate",
+					[34274] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -30494,17 +30610,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["31730:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[80214] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
 			["266:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[127] = {
 						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["2901:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[3440] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -30515,37 +30631,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27130:INVTYPE_FEET"] = {
+			["13957:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[80854] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["27128:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[83061] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["6128:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[21790] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["2051:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[2364] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["8210:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[14412] = {
+					[29458] = {
 						["subClass"] = "Daggers",
 					},
 				},
@@ -30557,17 +30645,51 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13957:INVTYPE_WEAPON"] = {
+			["6128:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[29458] = {
+					[21790] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["5281:INVTYPE_FEET"] = {
+				["sources"] = {
+					[13903] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["8210:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[14412] = {
 						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["25672:INVTYPE_2HWEAPON"] = {
+			["24052:INVTYPE_HAND"] = {
 				["sources"] = {
-					[71972] = {
-						["subClass"] = "Two-Handed Swords",
+					[66533] = {
+						["subClass"] = "Cosmetic",
+					},
+				},
+			},
+			["25535:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[69076] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["24898:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[66690] = {
+						["subClass"] = "Cloth",
+					},
+					[66685] = {
+						["subClass"] = "Cloth",
+					},
+					[59583] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -30578,16 +30700,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14954:INVTYPE_2HWEAPON"] = {
+			["9074:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[34274] = {
-						["subClass"] = "Two-Handed Maces",
+					[16177] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["24489:INVTYPE_CLOAK"] = {
+			["24335:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[63936] = {
+					[86094] = {
+						["subClass"] = "Cloth",
+					},
+					[62014] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -30609,40 +30734,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24642:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[66819] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["24052:INVTYPE_HAND"] = {
-				["sources"] = {
-					[66533] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
-			["5281:INVTYPE_FEET"] = {
-				["sources"] = {
-					[13903] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["24898:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[66690] = {
-						["subClass"] = "Cloth",
-					},
-					[66685] = {
-						["subClass"] = "Cloth",
-					},
-					[59583] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["20128:INVTYPE_SHOULDER"] = {
 				["sources"] = {
 					[50832] = {
@@ -30653,44 +30744,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24335:INVTYPE_CLOAK"] = {
+			["2101:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[86094] = {
+					[2422] = {
 						["subClass"] = "Cloth",
-					},
-					[62014] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9074:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[16177] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["12039:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[24207] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["23886:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[62828] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["10410:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[19503] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
 					},
 				},
 			},
@@ -30704,27 +30761,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2101:INVTYPE_SHOULDER"] = {
+			["23886:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[2422] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["25931:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[73192] = {
-						["subClass"] = "Plate",
-					},
-					[72990] = {
+					[62828] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["5110:INVTYPE_WEAPON"] = {
+			["26942:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[26065] = {
-						["subClass"] = "One-Handed Swords",
+					[76147] = {
+						["subClass"] = "Plate",
+					},
+					[74645] = {
+						["subClass"] = "Plate",
+					},
+					[68782] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -30742,6 +30795,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["12039:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[24207] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
 			["24643:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[66820] = {
@@ -30749,16 +30809,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["29465:INVTYPE_CLOAK"] = {
+			["10410:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[83072] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["5088:INVTYPE_FEET"] = {
-				["sources"] = {
-					[7029] = {
+					[19503] = {
 						["subClass"] = "Plate",
 						["classRestrictions"] = {
 							"Warrior", -- [1]
@@ -30773,10 +30826,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["436:INVTYPE_WEAPON"] = {
+			["5088:INVTYPE_FEET"] = {
 				["sources"] = {
-					[306] = {
-						["subClass"] = "One-Handed Maces",
+					[7029] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
+			["24834:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[65550] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["5110:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[26065] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -30787,24 +30857,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4705:INVTYPE_HOLDABLE"] = {
+			["24503:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[6519] = {
+					[66829] = {
 						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["25415:INVTYPE_WEAPON"] = {
+			["13358:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[71966] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["24369:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[70375] = {
-						["subClass"] = "Cloth",
+					[27051] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -30832,10 +30895,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13333:INVTYPE_WEAPON"] = {
+			["436:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[29895] = {
+					[306] = {
 						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["24369:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[70375] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["4705:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[6519] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -30843,6 +30920,48 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[66863] = {
 						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["1795:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[30883] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["20964:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[61030] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13333:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[29895] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["6584:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[10135] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["8354:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[14881] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["13235:INVTYPE_HAND"] = {
+				["sources"] = {
+					[28757] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -30872,20 +30991,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1795:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[30883] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["20964:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[61030] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["13779:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[35576] = {
@@ -30896,117 +31001,6 @@ CanIMogItDatabase = {
 					},
 					[32693] = {
 						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["7074:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[16072] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["17010:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[38924] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["6584:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[10135] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["8354:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[14881] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["13235:INVTYPE_HAND"] = {
-				["sources"] = {
-					[28757] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["21341:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[61555] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["3596:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[12012] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["654:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[577] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["6628:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[10230] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["24344:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[63937] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["633:INVTYPE_ROBE"] = {
-				["sources"] = {
-					[552] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["2247:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[3446] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["7034:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[13536] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["5220:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[88872] = {
-						["subClass"] = "Cloth",
-					},
-					[21018] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["19942:INVTYPE_HAND"] = {
-				["sources"] = {
-					[50845] = {
-						["subClass"] = "Plate",
-					},
-					[50884] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31024,10 +31018,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18161:INVTYPE_WRIST"] = {
+			["7074:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[44327] = {
-						["subClass"] = "Plate",
+					[16072] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["17010:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[38924] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -31052,6 +31053,139 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["21341:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[61555] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["3596:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[12012] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["654:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[577] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["7034:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[13536] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["2247:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[3446] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["12226:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[25094] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+					[24461] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["11347:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[21743] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["6628:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[10230] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["5220:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[88872] = {
+						["subClass"] = "Cloth",
+					},
+					[21018] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["19942:INVTYPE_HAND"] = {
+				["sources"] = {
+					[50845] = {
+						["subClass"] = "Plate",
+					},
+					[50884] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["8789:INVTYPE_ROBE"] = {
+				["sources"] = {
+					[15663] = {
+						["subClass"] = "Cosmetic",
+					},
+				},
+			},
+			["25709:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[70057] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18161:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[44327] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13958:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[29459] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["24697:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[66827] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["13715:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[30833] = {
+						["subClass"] = "Plate",
+					},
+					[29561] = {
+						["subClass"] = "Plate",
+					},
+					[29527] = {
+						["subClass"] = "Plate",
+					},
+					[30890] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["946:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[14588] = {
@@ -31059,17 +31193,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11522:INVTYPE_2HWEAPON"] = {
+			["13681:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[22016] = {
-						["subClass"] = "Staves",
+					[93171] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["8829:INVTYPE_ROBE"] = {
+			["25102:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[89648] = {
-						["subClass"] = "Cosmetic",
+					[66822] = {
+						["subClass"] = "Cloth",
+					},
+					[62337] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -31094,10 +31231,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8789:INVTYPE_ROBE"] = {
+			["2520:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[15663] = {
-						["subClass"] = "Cosmetic",
+					[6557] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -31108,10 +31245,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13958:INVTYPE_RANGED"] = {
+			["8829:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[29459] = {
-						["subClass"] = "Bows",
+					[89648] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -31119,81 +31256,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[44907] = {
 						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["24697:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[66827] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["4926:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[72267] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13681:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[93171] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["18780:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[45301] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["13715:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[30833] = {
-						["subClass"] = "Plate",
-					},
-					[29561] = {
-						["subClass"] = "Plate",
-					},
-					[29527] = {
-						["subClass"] = "Plate",
-					},
-					[30890] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["15968:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[36860] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["25102:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[66822] = {
-						["subClass"] = "Cloth",
-					},
-					[62337] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["24698:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[66831] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["8851:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[15782] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31213,20 +31275,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14073:INVTYPE_WRIST"] = {
+			["4926:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[29889] = {
+					[72267] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["9312:INVTYPE_WEAPON"] = {
+			["23624:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[17478] = {
-						["subClass"] = "One-Handed Maces",
-					},
-					[16619] = {
-						["subClass"] = "One-Handed Maces",
+					[63615] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31240,27 +31299,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6134:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[19283] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["11819:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[46892] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["3262:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[3943] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["3731:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[4688] = {
@@ -31268,10 +31306,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7049:INVTYPE_RANGEDRIGHT"] = {
+			["15968:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[12243] = {
-						["subClass"] = "Crossbows",
+					[36860] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -31296,9 +31334,102 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["9312:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[17478] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[16619] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
 			["27126:INVTYPE_LEGS"] = {
 				["sources"] = {
 					[83053] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["216:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[31541] = {
+						["subClass"] = "One-Handed Swords",
+					},
+					[4135] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["3534:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[33347] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["6134:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[19283] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["11819:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[46892] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["3262:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[3943] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22760:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[65302] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["7049:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[12243] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["14468:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[32071] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["6757:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10574] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["4120:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[31246] = {
+						["subClass"] = "Cloth",
+					},
+					[31927] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["23150:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[62450] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -31310,13 +31441,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4120:INVTYPE_CLOAK"] = {
+			["22983:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[31246] = {
-						["subClass"] = "Cloth",
-					},
-					[31927] = {
-						["subClass"] = "Cloth",
+					[67061] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -31334,65 +31462,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22760:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[65302] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["24339:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[61992] = {
-						["subClass"] = "Cloth",
-					},
-					[66816] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["6757:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10574] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["7955:INVTYPE_HAND"] = {
-				["sources"] = {
-					[13884] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["6576:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10308] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["8009:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[13969] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["23150:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[62450] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["22983:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[67061] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
 			["25635:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[72520] = {
@@ -31407,10 +31476,66 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["13355:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[33242] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["7955:INVTYPE_HAND"] = {
+				["sources"] = {
+					[13884] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["9185:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[16407] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["8009:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[13969] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["23277:INVTYPE_LEGS"] = {
 				["sources"] = {
 					[62587] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["23003:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[62913] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["23222:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[67290] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13682:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[31724] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["10660:INVTYPE_BODY"] = {
+				["sources"] = {
+					[19966] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -31450,10 +31575,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13682:INVTYPE_SHIELD"] = {
+			["23262:INVTYPE_FEET"] = {
 				["sources"] = {
-					[31724] = {
-						["subClass"] = "Shields",
+					[62583] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31471,17 +31596,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13355:INVTYPE_2HWEAPON"] = {
+			["7741:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[33242] = {
-						["subClass"] = "Staves",
+					[13449] = {
+						["subClass"] = "Cloth",
+					},
+					[15734] = {
+						["subClass"] = "Cloth",
+					},
+					[15013] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["23003:INVTYPE_SHOULDER"] = {
+			["3220:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[62913] = {
-						["subClass"] = "Plate",
+					[3894] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -31518,10 +31649,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5141:INVTYPE_CLOAK"] = {
+			["23220:INVTYPE_HAND"] = {
 				["sources"] = {
-					[10064] = {
-						["subClass"] = "Cloth",
+					[67289] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31546,12 +31677,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23612:INVTYPE_FEET"] = {
+			["23070:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[63074] = {
-						["subClass"] = "Plate",
-					},
-					[63565] = {
+					[62771] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -31563,10 +31691,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10660:INVTYPE_BODY"] = {
+			["23116:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[19966] = {
-						["subClass"] = "Miscellaneous",
+					[62629] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31590,37 +31718,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23262:INVTYPE_FEET"] = {
+			["14747:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[62583] = {
+					[32909] = {
+						["subClass"] = "Plate",
+					},
+					[32672] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["7741:INVTYPE_CLOAK"] = {
+			["26467:INVTYPE_HAND"] = {
 				["sources"] = {
-					[13449] = {
-						["subClass"] = "Cloth",
-					},
-					[15734] = {
-						["subClass"] = "Cloth",
-					},
-					[15013] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["6527:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[9974] = {
+					[69996] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["24087:INVTYPE_HEAD"] = {
+			["24331:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[67176] = {
-						["subClass"] = "Plate",
+					[66821] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["4160:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[5594] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -31638,10 +31763,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14076:INVTYPE_CLOAK"] = {
+			["14261:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[29913] = {
-						["subClass"] = "Cloth",
+					[30521] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -31669,19 +31794,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23116:INVTYPE_WRIST"] = {
+			["8626:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[62629] = {
-						["subClass"] = "Plate",
+					[49239] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["14747:INVTYPE_WAIST"] = {
+			["22640:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[32909] = {
-						["subClass"] = "Plate",
-					},
-					[32672] = {
+					[86081] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -31716,38 +31838,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["26467:INVTYPE_HAND"] = {
+			["24487:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[69996] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["24331:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[66821] = {
+					[65518] = {
 						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["5512:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[13111] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["4160:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[5594] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["12828:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[32297] = {
-						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -31758,6 +31852,37 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["5512:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[13111] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["6626:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[32976] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["12828:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[32297] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["14551:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[31954] = {
+						["subClass"] = "One-Handed Axes",
+					},
+					[31951] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
 			["5839:INVTYPE_SHOULDER"] = {
 				["sources"] = {
 					[13675] = {
@@ -31765,9 +31890,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24487:INVTYPE_CLOAK"] = {
+			["24194:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[65518] = {
+					[67018] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -31789,10 +31914,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6626:INVTYPE_2HWEAPON"] = {
+			["14777:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[32976] = {
-						["subClass"] = "Staves",
+					[32835] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -31813,23 +31938,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22270:INVTYPE_2HWEAPON"] = {
+			["22966:INVTYPE_HAND"] = {
 				["sources"] = {
-					[65365] = {
-						["subClass"] = "Staves",
+					[61479] = {
+						["subClass"] = "Plate",
+					},
+					[61487] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["23617:INVTYPE_LEGS"] = {
+			["13309:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[67053] = {
-						["subClass"] = "Plate",
-					},
-					[63577] = {
-						["subClass"] = "Plate",
-					},
-					[63110] = {
-						["subClass"] = "Plate",
+					[30800] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -31840,10 +31962,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14777:INVTYPE_CLOAK"] = {
+			["22756:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[32835] = {
-						["subClass"] = "Cloth",
+					[65298] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31870,33 +31992,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5669:INVTYPE_HEAD"] = {
+			["13190:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[8363] = {
+					[32118] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					},
+					[32095] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["24194:INVTYPE_CLOAK"] = {
+			["6603:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[67018] = {
-						["subClass"] = "Cloth",
+					[10171] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["5264:INVTYPE_LEGS"] = {
+			["13329:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[29484] = {
-						["subClass"] = "Plate",
-					},
-					[30484] = {
-						["subClass"] = "Plate",
-					},
-					[30513] = {
-						["subClass"] = "Plate",
+					[28207] = {
+						["subClass"] = "Guns",
 					},
 				},
 			},
@@ -31914,10 +32030,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6612:INVTYPE_WEAPON"] = {
+			["5264:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[10203] = {
-						["subClass"] = "One-Handed Axes",
+					[29484] = {
+						["subClass"] = "Plate",
+					},
+					[30484] = {
+						["subClass"] = "Plate",
+					},
+					[30513] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -31945,133 +32067,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12007:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[65961] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["22750:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[85958] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-							"Paladin", -- [2]
-							"Death Knight", -- [3]
-						},
-					},
-				},
-			},
-			["6603:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[10171] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["13329:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[28207] = {
-						["subClass"] = "Guns",
-					},
-				},
-			},
-			["27323:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[80891] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["5812:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[28379] = {
-						["subClass"] = "Plate",
-					},
-					[30507] = {
-						["subClass"] = "Plate",
-					},
-					[30478] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["22966:INVTYPE_HAND"] = {
-				["sources"] = {
-					[61479] = {
-						["subClass"] = "Plate",
-					},
-					[61487] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["4410:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[6003] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["13309:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[30800] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["24797:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[62677] = {
-						["subClass"] = "Cloth",
-					},
-					[66796] = {
-						["subClass"] = "Cloth",
-					},
-					[66806] = {
-						["subClass"] = "Cloth",
-					},
-					[62877] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["13190:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[32118] = {
-						["subClass"] = "Plate",
-					},
-					[32095] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["7812:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[13556] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["24333:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[61991] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["23259:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[62582] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["8062:INVTYPE_SHOULDER"] = {
 				["sources"] = {
 					[14051] = {
@@ -32088,9 +32083,130 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2054:INVTYPE_BODY"] = {
+			["22750:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[2370] = {
+					[85958] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+							"Paladin", -- [2]
+							"Death Knight", -- [3]
+						},
+					},
+				},
+			},
+			["23329:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[60898] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["12007:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[65961] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["6612:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10203] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["5812:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[28379] = {
+						["subClass"] = "Plate",
+					},
+					[30507] = {
+						["subClass"] = "Plate",
+					},
+					[30478] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22333:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[62916] = {
+						["subClass"] = "Guns",
+					},
+				},
+			},
+			["4410:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[6003] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["9634:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[17335] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["24333:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[61991] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["14464:INVTYPE_FEET"] = {
+				["sources"] = {
+					[31339] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["24797:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[66796] = {
+						["subClass"] = "Cloth",
+					},
+					[62677] = {
+						["subClass"] = "Cloth",
+					},
+					[62877] = {
+						["subClass"] = "Cloth",
+					},
+					[66806] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["23383:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[62893] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+					[62895] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["23259:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[62582] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2715:INVTYPE_FEET"] = {
+				["sources"] = {
+					[10048] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["11256:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[21637] = {
 						["subClass"] = "Miscellaneous",
 					},
 				},
@@ -32127,34 +32243,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13314:INVTYPE_WEAPON"] = {
+			["2054:INVTYPE_BODY"] = {
 				["sources"] = {
-					[26954] = {
-						["subClass"] = "Daggers",
+					[2370] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["22977:INVTYPE_SHOULDER"] = {
+			["22517:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[59606] = {
-						["subClass"] = "Plate",
-					},
-					[61466] = {
-						["subClass"] = "Plate",
+					[99223] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["2715:INVTYPE_FEET"] = {
+			["22396:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[10048] = {
-						["subClass"] = "Plate",
+					[62163] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["14464:INVTYPE_FEET"] = {
+			["22666:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[31339] = {
-						["subClass"] = "Plate",
+					[67050] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -32165,13 +32278,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["246:INVTYPE_WEAPON"] = {
+			["22660:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[6005] = {
-						["subClass"] = "One-Handed Maces",
-					},
-					[93224] = {
-						["subClass"] = "One-Handed Maces",
+					[66609] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -32198,17 +32308,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10330:INVTYPE_FEET"] = {
+			["10502:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[21947] = {
+					[19684] = {
 						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["6664:INVTYPE_WEAPON"] = {
+			["11393:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[10301] = {
-						["subClass"] = "Daggers",
+					[21796] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
@@ -32219,17 +32332,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22660:INVTYPE_HEAD"] = {
+			["282:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[66609] = {
-						["subClass"] = "Cosmetic",
+					[10332] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["11393:INVTYPE_RANGED"] = {
+			["23894:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[21796] = {
-						["subClass"] = "Bows",
+					[62830] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -32247,34 +32360,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11256:INVTYPE_HOLDABLE"] = {
+			["21994:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[21637] = {
-						["subClass"] = "Miscellaneous",
+					[63765] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
-			["22517:INVTYPE_WEAPON"] = {
+			["22847:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[99223] = {
+					[67066] = {
 						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["9992:INVTYPE_HOLDABLE"] = {
+			["2756:INVTYPE_FEET"] = {
 				["sources"] = {
-					[18362] = {
-						["subClass"] = "Miscellaneous",
+					[4407] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["5712:INVTYPE_WEAPON"] = {
+			["13240:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[8409] = {
-						["subClass"] = "One-Handed Axes",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[28756] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -32285,10 +32395,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22396:INVTYPE_2HWEAPON"] = {
+			["4479:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[62163] = {
-						["subClass"] = "Staves",
+					[31519] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -32319,10 +32429,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["578:INVTYPE_WEAPON"] = {
+			["23626:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[32841] = {
-						["subClass"] = "One-Handed Maces",
+					[63623] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -32350,10 +32460,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23894:INVTYPE_WAIST"] = {
+			["4021:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[62830] = {
-						["subClass"] = "Plate",
+					[6191] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -32371,10 +32481,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21994:INVTYPE_2HWEAPON"] = {
+			["7435:INVTYPE_HAND"] = {
 				["sources"] = {
-					[63765] = {
-						["subClass"] = "Polearms",
+					[12903] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -32388,16 +32501,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22847:INVTYPE_WEAPON"] = {
+			["3737:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[67066] = {
-						["subClass"] = "One-Handed Maces",
+					[4696] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
-			["2756:INVTYPE_FEET"] = {
+			["23009:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[4407] = {
+					[62749] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -32411,24 +32524,24 @@ CanIMogItDatabase = {
 			},
 			["14069:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[29901] = {
-						["subClass"] = "Plate",
-					},
 					[29904] = {
 						["subClass"] = "Plate",
 					},
-					[29872] = {
+					[29901] = {
 						["subClass"] = "Plate",
 					},
 					[29869] = {
 						["subClass"] = "Plate",
 					},
+					[29872] = {
+						["subClass"] = "Plate",
+					},
 				},
 			},
-			["4479:INVTYPE_CLOAK"] = {
+			["224:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[31519] = {
-						["subClass"] = "Cloth",
+					[8204] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -32442,6 +32555,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["22175:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[66506] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
 			["22850:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[67074] = {
@@ -32449,24 +32569,35 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4021:INVTYPE_CLOAK"] = {
+			["1655:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[6191] = {
+					[42164] = {
+						["subClass"] = "Cloth",
+					},
+					[30285] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["23009:INVTYPE_HEAD"] = {
+			["22957:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[62749] = {
+					[59562] = {
 						["subClass"] = "Plate",
 					},
-				},
-			},
-			["224:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[8204] = {
-						["subClass"] = "One-Handed Axes",
+					[61414] = {
+						["subClass"] = "Plate",
+					},
+					[61437] = {
+						["subClass"] = "Plate",
+					},
+					[63161] = {
+						["subClass"] = "Plate",
+					},
+					[59560] = {
+						["subClass"] = "Plate",
+					},
+					[61445] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -32477,20 +32608,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7435:INVTYPE_HAND"] = {
+			["27077:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[12903] = {
+					[79984] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					},
+					[79991] = {
+						["subClass"] = "Plate",
+					},
+					[79942] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["3737:INVTYPE_2HWEAPON"] = {
+			["23011:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[4696] = {
-						["subClass"] = "Polearms",
+					[62911] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -32515,15 +32649,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27077:INVTYPE_CHEST"] = {
+			["22999:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[79984] = {
-						["subClass"] = "Plate",
-					},
-					[79991] = {
-						["subClass"] = "Plate",
-					},
-					[79942] = {
+					[62610] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -32535,10 +32663,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23011:INVTYPE_SHOULDER"] = {
+			["14922:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[62911] = {
-						["subClass"] = "Plate",
+					[34066] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -32549,27 +32677,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13345:INVTYPE_2HWEAPON"] = {
+			["6116:INVTYPE_FEET"] = {
 				["sources"] = {
-					[27017] = {
-						["subClass"] = "Two-Handed Maces",
+					[9057] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["5412:INVTYPE_WEAPON"] = {
+			["4402:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[7663] = {
+					[5993] = {
 						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
-			["1655:INVTYPE_CLOAK"] = {
+			["13997:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[42164] = {
-						["subClass"] = "Cloth",
-					},
-					[30285] = {
-						["subClass"] = "Cloth",
+					[30060] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -32580,10 +32708,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4402:INVTYPE_WEAPON"] = {
+			["22968:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[5993] = {
-						["subClass"] = "One-Handed Swords",
+					[61489] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -32598,41 +32726,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[29786] = {
 						["subClass"] = "Wands",
-					},
-				},
-			},
-			["22999:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[62610] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["14922:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[34066] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["5754:INVTYPE_FEET"] = {
-				["sources"] = {
-					[8483] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["15515:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[36615] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["13265:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[26881] = {
-						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -32662,10 +32755,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6614:INVTYPE_WEAPON"] = {
+			["5754:INVTYPE_FEET"] = {
 				["sources"] = {
-					[10206] = {
-						["subClass"] = "One-Handed Axes",
+					[8483] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["15515:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[36615] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["13265:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[26881] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["27121:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[83055] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -32675,6 +32789,20 @@ CanIMogItDatabase = {
 						["subClass"] = "Plate",
 					},
 					[14618] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["6614:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10206] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["22235:INVTYPE_FEET"] = {
+				["sources"] = {
+					[64245] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -32693,9 +32821,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6116:INVTYPE_FEET"] = {
+			["4102:INVTYPE_FEET"] = {
 				["sources"] = {
-					[9057] = {
+					[8605] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -32720,13 +32848,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22226:INVTYPE_WAIST"] = {
+			["15788:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[62094] = {
+					[36543] = {
 						["subClass"] = "Plate",
 					},
-					[66393] = {
+					[78792] = {
 						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -32759,16 +32890,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22968:INVTYPE_LEGS"] = {
+			["9637:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[61489] = {
-						["subClass"] = "Plate",
+					[18296] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["22754:INVTYPE_HEAD"] = {
+			["3204:INVTYPE_HAND"] = {
 				["sources"] = {
-					[65299] = {
+					[3869] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -32783,10 +32914,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23632:INVTYPE_SHOULDER"] = {
+			["12237:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[66614] = {
-						["subClass"] = "Plate",
+					[24463] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -32797,10 +32928,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22235:INVTYPE_FEET"] = {
+			["21932:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[64245] = {
-						["subClass"] = "Plate",
+					[66460] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -32838,17 +32969,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["6549:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[10023] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["22286:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[72522] = {
 						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["21932:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[66460] = {
-						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -32866,16 +32997,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15788:INVTYPE_WRIST"] = {
+			["22643:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[36543] = {
+					[70256] = {
 						["subClass"] = "Plate",
 					},
-					[78792] = {
+					[86065] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
 					},
 				},
 			},
@@ -32886,16 +33014,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9637:INVTYPE_2HWEAPON"] = {
+			["4305:INVTYPE_FEET"] = {
 				["sources"] = {
-					[18296] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["3204:INVTYPE_HAND"] = {
-				["sources"] = {
-					[3869] = {
+					[5790] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -32914,10 +33035,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20171:INVTYPE_WRIST"] = {
+			["22001:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[49913] = {
-						["subClass"] = "Plate",
+					[66457] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[60900] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["22874:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[66359] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -32931,27 +33062,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22643:INVTYPE_WRIST"] = {
+			["4532:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[70256] = {
-						["subClass"] = "Plate",
-					},
-					[86065] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["4080:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[5399] = {
+					[6250] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["3714:INVTYPE_WEAPON"] = {
+			["22162:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[4667] = {
-						["subClass"] = "One-Handed Maces",
+					[67328] = {
+						["subClass"] = "Polearms",
+					},
+					[59640] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["2919:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[3490] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -32969,24 +33100,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4305:INVTYPE_FEET"] = {
+			["25705:INVTYPE_FEET"] = {
 				["sources"] = {
-					[5790] = {
+					[69986] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["2919:INVTYPE_CLOAK"] = {
+			["3714:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[3490] = {
-						["subClass"] = "Cloth",
+					[4667] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["17176:INVTYPE_HOLDABLE"] = {
+			["21889:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[46319] = {
-						["subClass"] = "Miscellaneous",
+					[67855] = {
+						["subClass"] = "One-Handed Axes",
+					},
+					[67060] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -32997,26 +33131,29 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9627:INVTYPE_WEAPON"] = {
+			["21956:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[17318] = {
-						["subClass"] = "One-Handed Axes",
+					[65382] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["22162:INVTYPE_2HWEAPON"] = {
+			["5803:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[67328] = {
-						["subClass"] = "Polearms",
+					[18107] = {
+						["subClass"] = "Cloth",
 					},
-					[59640] = {
-						["subClass"] = "Polearms",
+					[17748] = {
+						["subClass"] = "Cloth",
+					},
+					[8560] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["22874:INVTYPE_SHIELD"] = {
+			["3588:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[66359] = {
+					[69218] = {
 						["subClass"] = "Shields",
 					},
 				},
@@ -33035,16 +33172,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5803:INVTYPE_CLOAK"] = {
+			["14604:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[18107] = {
-						["subClass"] = "Cloth",
-					},
-					[17748] = {
-						["subClass"] = "Cloth",
-					},
-					[8560] = {
-						["subClass"] = "Cloth",
+					[32316] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -33055,41 +33186,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4532:INVTYPE_CLOAK"] = {
+			["15457:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[6250] = {
-						["subClass"] = "Cloth",
+					[35447] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["3588:INVTYPE_SHIELD"] = {
+			["4616:INVTYPE_FEET"] = {
 				["sources"] = {
-					[69218] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["21889:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[67855] = {
-						["subClass"] = "One-Handed Axes",
-					},
-					[67060] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["7027:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[14283] = {
+					[7389] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["11516:INVTYPE_SHIELD"] = {
+			["13766:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[22007] = {
-						["subClass"] = "Shields",
+					[34079] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -33100,17 +33214,40 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15457:INVTYPE_TABARD"] = {
+			["21878:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[35447] = {
-						["subClass"] = "Miscellaneous",
+					[66459] = {
+						["subClass"] = "Daggers",
+					},
+					[66491] = {
+						["subClass"] = "Daggers",
+					},
+					[62028] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["32328:INVTYPE_CLOAK"] = {
+			["11516:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[73828] = {
+					[22007] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["14259:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[30491] = {
 						["subClass"] = "Cloth",
+					},
+					[30530] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["5415:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[7666] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -33145,17 +33282,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1841:INVTYPE_SHIELD"] = {
+			["32328:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[2855] = {
-						["subClass"] = "Shields",
+					[73828] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["13766:INVTYPE_SHOULDER"] = {
+			["4148:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[34079] = {
-						["subClass"] = "Plate",
+					[5577] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -33186,57 +33323,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4616:INVTYPE_FEET"] = {
-				["sources"] = {
-					[7389] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["21878:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[66459] = {
-						["subClass"] = "Daggers",
-					},
-					[66491] = {
-						["subClass"] = "Daggers",
-					},
-					[62028] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["22246:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[60394] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["1670:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[9243] = {
-						["subClass"] = "Cloth",
-					},
-					[32231] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["5415:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[7666] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["4148:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[5577] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["373:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[29267] = {
@@ -33248,6 +33334,51 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[29747] = {
 						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["22243:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[65592] = {
+						["subClass"] = "Guns",
+					},
+					[62029] = {
+						["subClass"] = "Guns",
+					},
+				},
+			},
+			["1105:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[1121] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["2722:INVTYPE_HAND"] = {
+				["sources"] = {
+					[3190] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["5262:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[10562] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["4571:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[6301] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["21952:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[63761] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -33265,10 +33396,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21930:INVTYPE_SHIELD"] = {
+			["5392:INVTYPE_HAND"] = {
 				["sources"] = {
-					[66489] = {
-						["subClass"] = "Shields",
+					[13902] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -33278,61 +33409,6 @@ CanIMogItDatabase = {
 						["subClass"] = "Plate",
 					},
 					[34240] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2711:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[10049] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["4571:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[6301] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["1105:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[1121] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["8268:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[14600] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2722:INVTYPE_HAND"] = {
-				["sources"] = {
-					[3190] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["5563:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[12228] = {
-						["subClass"] = "Cloth",
-					},
-					[12227] = {
-						["subClass"] = "Cloth",
-					},
-					[88898] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["5392:INVTYPE_HAND"] = {
-				["sources"] = {
-					[13902] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -33364,41 +33440,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17273:INVTYPE_SHOULDER"] = {
+			["8268:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[41107] = {
-						["subClass"] = "Plate",
-					},
-					[45450] = {
-						["subClass"] = "Plate",
-					},
-					[41108] = {
-						["subClass"] = "Plate",
-					},
-					[41356] = {
-						["subClass"] = "Plate",
-					},
-					[45445] = {
-						["subClass"] = "Plate",
-					},
-					[41103] = {
-						["subClass"] = "Plate",
-					},
-					[41351] = {
-						["subClass"] = "Plate",
-					},
-					[45446] = {
-						["subClass"] = "Plate",
-					},
-					[41355] = {
+					[14600] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["2409:INVTYPE_CLOAK"] = {
+			["33749:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[26260] = {
-						["subClass"] = "Cloth",
+					[86879] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["15789:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[36330] = {
+						["subClass"] = "Plate",
+					},
+					[36819] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -33415,16 +33477,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21931:INVTYPE_WEAPON"] = {
+			["22002:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[65328] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["17783:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[41282] = {
+					[65480] = {
 						["subClass"] = "One-Handed Maces",
 					},
 				},
@@ -33433,6 +33488,48 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[61696] = {
 						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["2409:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[26260] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["8869:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[15801] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["3475:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10183] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["21931:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[65328] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["21894:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[62100] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["17783:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[41282] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -33446,9 +33543,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8869:INVTYPE_CHEST"] = {
+			["3180:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[15801] = {
+					[3839] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["22237:INVTYPE_HAND"] = {
+				["sources"] = {
+					[62924] = {
+						["subClass"] = "Plate",
+					},
+					[64272] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -33467,41 +33574,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4226:INVTYPE_HEAD"] = {
+			["12985:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[5684] = {
+					[31249] = {
+						["subClass"] = "Plate",
+					},
+					[26708] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["21894:INVTYPE_WEAPON"] = {
+			["13383:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[62100] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
-			["7776:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[13496] = {
+					[27097] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13054:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[32230] = {
-						["subClass"] = "Plate",
-					},
-					[34237] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["3475:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10183] = {
-						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
@@ -33515,10 +33601,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3180:INVTYPE_CLOAK"] = {
+			["13054:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[3839] = {
-						["subClass"] = "Cloth",
+					[32230] = {
+						["subClass"] = "Plate",
+					},
+					[34237] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["21826:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[65535] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["1375:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[1457] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["6289:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[66864] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -33558,13 +33668,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22237:INVTYPE_HAND"] = {
+			["10942:INVTYPE_BODY"] = {
 				["sources"] = {
-					[62924] = {
-						["subClass"] = "Plate",
-					},
-					[64272] = {
-						["subClass"] = "Plate",
+					[20504] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -33664,6 +33771,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["10224:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[19062] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
 			["22101:INVTYPE_RANGED"] = {
 				["sources"] = {
 					[63762] = {
@@ -33674,13 +33788,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20172:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[50789] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["4709:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
 					[6523] = {
@@ -33688,17 +33795,26 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21826:INVTYPE_HOLDABLE"] = {
+			["21874:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[65535] = {
-						["subClass"] = "Miscellaneous",
+					[60392] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+					[66493] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+					[66505] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
-			["10942:INVTYPE_BODY"] = {
+			["14732:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[20504] = {
-						["subClass"] = "Miscellaneous",
+					[32916] = {
+						["subClass"] = "Plate",
+					},
+					[32651] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -33723,13 +33839,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22229:INVTYPE_HAND"] = {
+			["15521:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[66390] = {
-						["subClass"] = "Plate",
-					},
-					[62072] = {
-						["subClass"] = "Plate",
+					[36864] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -33754,17 +33867,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1375:INVTYPE_WEAPON"] = {
+			["14549:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[1457] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["10224:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[19062] = {
-						["subClass"] = "One-Handed Swords",
+					[31866] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
@@ -33775,37 +33881,41 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21874:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[60392] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-					[66493] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-					[66505] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["11812:INVTYPE_FEET"] = {
-				["sources"] = {
-					[46903] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["15521:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[36864] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
 			["15914:INVTYPE_SHIELD"] = {
 				["sources"] = {
 					[36640] = {
 						["subClass"] = "Shields",
+					},
+				},
+			},
+			["21875:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[65397] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["9029:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[16617] = {
+						["subClass"] = "One-Handed Swords",
+					},
+					[21234] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["7781:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[13501] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["9648:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[17346] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -33816,17 +33926,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15676:INVTYPE_SHOULDER"] = {
+			["21936:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[36645] = {
-						["subClass"] = "Plate",
+					[65362] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["14549:INVTYPE_WEAPON"] = {
+			["4242:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[31866] = {
-						["subClass"] = "Fist Weapons",
+					[5705] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -33837,13 +33947,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3400:INVTYPE_2HWEAPON"] = {
+			["15768:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[12039] = {
-						["subClass"] = "Two-Handed Maces",
+					[36438] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
-					[33135] = {
-						["subClass"] = "Two-Handed Maces",
+					[36327] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -33854,10 +33967,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4242:INVTYPE_WAIST"] = {
+			["2814:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[5705] = {
-						["subClass"] = "Plate",
+					[10614] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -33877,10 +33990,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14527:INVTYPE_WEAPON"] = {
+			["8132:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[31734] = {
-						["subClass"] = "Fist Weapons",
+					[14204] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -33904,10 +34017,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7781:INVTYPE_WEAPON"] = {
+			["15791:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[13501] = {
-						["subClass"] = "One-Handed Maces",
+					[36332] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -33931,10 +34044,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2814:INVTYPE_2HWEAPON"] = {
+			["14533:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[10614] = {
-						["subClass"] = "Staves",
+					[31778] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -33945,80 +34058,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9648:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[17346] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["21936:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[65362] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
 			["15973:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[36868] = {
 						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["6630:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[10232] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["8132:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[14204] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["15791:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[36332] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
-			["14533:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[31778] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["19127:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[45156] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["14944:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[34202] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["18654:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[60753] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["12946:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[26157] = {
-						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -34029,17 +34072,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15972:INVTYPE_WEAPON"] = {
+			["5084:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[36867] = {
-						["subClass"] = "One-Handed Maces",
+					[7025] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["30440:INVTYPE_CLOAK"] = {
+			["6630:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[80929] = {
-						["subClass"] = "Cloth",
+					[10232] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -34057,17 +34103,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12968:INVTYPE_2HWEAPON"] = {
+			["3404:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[26250] = {
-						["subClass"] = "Two-Handed Axes",
+					[4162] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
-			["3055:INVTYPE_BODY"] = {
+			["19127:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[3687] = {
-						["subClass"] = "Miscellaneous",
+					[45156] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["14944:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[34202] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -34078,10 +34131,69 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["12946:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[26157] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
 			["21880:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[63755] = {
 						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["21841:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[60904] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+					[60439] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["30440:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[80929] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["21822:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[60441] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["3055:INVTYPE_BODY"] = {
+				["sources"] = {
+					[3687] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["12968:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[26250] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["7114:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[12360] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["21837:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[58166] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -34092,6 +34204,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["3248:INVTYPE_HAND"] = {
+				["sources"] = {
+					[3928] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["14901:INVTYPE_TABARD"] = {
 				["sources"] = {
 					[33281] = {
@@ -34099,17 +34218,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3091:INVTYPE_CLOAK"] = {
+			["6538:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[3729] = {
-						["subClass"] = "Cloth",
+					[9991] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["8434:INVTYPE_CLOAK"] = {
+			["903:INVTYPE_BODY"] = {
 				["sources"] = {
-					[15021] = {
-						["subClass"] = "Cloth",
+					[878] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -34141,13 +34260,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21841:INVTYPE_2HWEAPON"] = {
+			["15571:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[60904] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-					[60439] = {
-						["subClass"] = "Two-Handed Axes",
+					[35714] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -34165,65 +34281,15 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6593:INVTYPE_WEAPON"] = {
+			["5012:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[10150] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["8846:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[15777] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["9664:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[17376] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["7114:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[12360] = {
+					[6952] = {
 						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
-				},
-			},
-			["21837:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[58166] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["3248:INVTYPE_HAND"] = {
-				["sources"] = {
-					[3928] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["6538:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[9991] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["36057:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[96132] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["15571:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[35714] = {
+					[69102] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -34235,10 +34301,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1592:INVTYPE_BODY"] = {
+			["9664:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[1705] = {
-						["subClass"] = "Miscellaneous",
+					[17376] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -34246,13 +34312,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[9504] = {
 						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["21793:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[90841] = {
-						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -34267,6 +34326,69 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[36822] = {
 						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["3447:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[30526] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["36057:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[96132] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["7876:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[13689] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["15817:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[36383] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["36194:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95318] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["3725:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[4681] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["21793:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[90841] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["2994:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[3611] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["15804:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[36698] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -34290,20 +34412,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24346:INVTYPE_CLOAK"] = {
+			["8604:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[66825] = {
-						["subClass"] = "Cloth",
+					[15314] = {
+						["subClass"] = "Plate",
 					},
-					[63744] = {
-						["subClass"] = "Cloth",
+					[26716] = {
+						["subClass"] = "Plate",
+					},
+					[26712] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["15890:INVTYPE_CLOAK"] = {
+			["6577:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[36551] = {
-						["subClass"] = "Cloth",
+					[34235] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -34314,10 +34439,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7876:INVTYPE_CHEST"] = {
+			["32618:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[13689] = {
-						["subClass"] = "Plate",
+					[82871] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -34335,10 +34460,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15817:INVTYPE_CLOAK"] = {
+			["956:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[36383] = {
-						["subClass"] = "Cloth",
+					[27485] = {
+						["subClass"] = "Daggers",
+					},
+					[2568] = {
+						["subClass"] = "Daggers",
+					},
+					[27482] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -34410,37 +34541,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2945:INVTYPE_CLOAK"] = {
+			["1200:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[3535] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["3725:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[4681] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["956:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[27485] = {
-						["subClass"] = "Daggers",
-					},
-					[2568] = {
-						["subClass"] = "Daggers",
-					},
-					[27482] = {
+					[10447] = {
 						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["15804:INVTYPE_WRIST"] = {
+			["394:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[36698] = {
+					[26059] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["2710:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[10054] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["3108:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[14403] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -34451,13 +34576,25 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5089:INVTYPE_CHEST"] = {
+			["22955:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[7030] = {
+					[61419] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					},
+					[61442] = {
+						["subClass"] = "Plate",
+					},
+					[59505] = {
+						["subClass"] = "Plate",
+					},
+					[59507] = {
+						["subClass"] = "Plate",
+					},
+					[61427] = {
+						["subClass"] = "Plate",
+					},
+					[64391] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -34477,10 +34614,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2994:INVTYPE_HOLDABLE"] = {
+			["21876:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[3611] = {
-						["subClass"] = "Miscellaneous",
+					[62104] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -34498,10 +34635,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6577:INVTYPE_WEAPON"] = {
+			["4386:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[34235] = {
-						["subClass"] = "One-Handed Maces",
+					[5960] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -34512,37 +34649,49 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["32618:INVTYPE_2HWEAPON"] = {
+			["12423:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[82871] = {
-						["subClass"] = "Two-Handed Maces",
+					[24816] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+					[24709] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["1200:INVTYPE_WEAPON"] = {
+			["21671:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[10447] = {
-						["subClass"] = "Daggers",
+					[90869] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["394:INVTYPE_2HWEAPON"] = {
+			["21582:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[26059] = {
-						["subClass"] = "Staves",
+					[90782] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["21888:INVTYPE_WEAPON"] = {
+			["9512:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[72511] = {
-						["subClass"] = "Daggers",
+					[37413] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
-					[62349] = {
-						["subClass"] = "Daggers",
+					[37405] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
-					[60399] = {
-						["subClass"] = "Daggers",
+					[19162] = {
+						["subClass"] = "Plate",
+					},
+					[18885] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -34553,23 +34702,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21876:INVTYPE_2HWEAPON"] = {
+			["11148:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[62104] = {
-						["subClass"] = "Two-Handed Maces",
+					[21298] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["4386:INVTYPE_CLOAK"] = {
+			["2341:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[5960] = {
-						["subClass"] = "Cloth",
+					[93227] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["16033:INVTYPE_2HWEAPON"] = {
+			["17919:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[38929] = {
+					[43098] = {
 						["subClass"] = "Polearms",
 					},
 				},
@@ -34581,42 +34730,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21671:INVTYPE_WEAPON"] = {
+			["21818:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[90869] = {
-						["subClass"] = "One-Handed Maces",
+					[62022] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["2267:INVTYPE_SHIELD"] = {
+			["15678:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[2957] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["5657:INVTYPE_ROBE"] = {
-				["sources"] = {
-					[8336] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
-			["9512:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[19162] = {
+					[36669] = {
 						["subClass"] = "Plate",
 					},
-					[18885] = {
-						["subClass"] = "Plate",
-					},
-					[37413] = {
+				},
+			},
+			["25511:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[71848] = {
 						["subClass"] = "Plate",
 						["classRestrictions"] = {
 							"Warrior", -- [1]
 						},
 					},
-					[37405] = {
+				},
+			},
+			["11856:INVTYPE_HAND"] = {
+				["sources"] = {
+					[23562] = {
 						["subClass"] = "Plate",
 						["classRestrictions"] = {
 							"Warrior", -- [1]
@@ -34678,17 +34818,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11469:INVTYPE_WEAPON"] = {
+			["3163:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[21921] = {
-						["subClass"] = "One-Handed Maces",
+					[17769] = {
+						["subClass"] = "Cloth",
+					},
+					[18124] = {
+						["subClass"] = "Cloth",
+					},
+					[21295] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["11148:INVTYPE_HOLDABLE"] = {
+			["13994:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[21298] = {
-						["subClass"] = "Miscellaneous",
+					[32634] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -34706,10 +34852,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2341:INVTYPE_WEAPON"] = {
+			["16679:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[93227] = {
-						["subClass"] = "Daggers",
+					[38938] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -34720,10 +34866,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17919:INVTYPE_2HWEAPON"] = {
+			["3135:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[43098] = {
-						["subClass"] = "Polearms",
+					[16687] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -34734,33 +34880,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23151:INVTYPE_HEAD"] = {
+			["8479:INVTYPE_FEET"] = {
 				["sources"] = {
-					[67161] = {
+					[15101] = {
 						["subClass"] = "Plate",
-					},
-					[67175] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
 					},
 				},
 			},
-			["21818:INVTYPE_2HWEAPON"] = {
+			["21779:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[62022] = {
-						["subClass"] = "Staves",
+					[90865] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["11856:INVTYPE_HAND"] = {
+			["4439:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[23562] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[6052] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -34777,10 +34914,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3479:INVTYPE_FEET"] = {
+			["25257:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[5752] = {
-						["subClass"] = "Plate",
+					[70921] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -34791,10 +34928,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["16679:INVTYPE_2HWEAPON"] = {
+			["716:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[38938] = {
-						["subClass"] = "Staves",
+					[10222] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -34805,16 +34942,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3163:INVTYPE_CLOAK"] = {
+			["20580:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[17769] = {
-						["subClass"] = "Cloth",
-					},
-					[18124] = {
-						["subClass"] = "Cloth",
-					},
-					[21295] = {
-						["subClass"] = "Cloth",
+					[51433] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -34825,10 +34956,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13994:INVTYPE_WEAPON"] = {
+			["16870:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[32634] = {
-						["subClass"] = "Daggers",
+					[38893] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -34877,10 +35008,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3135:INVTYPE_CLOAK"] = {
+			["21810:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[16687] = {
-						["subClass"] = "Cloth",
+					[62024] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -34898,85 +35029,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5011:INVTYPE_HEAD"] = {
+			["6568:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[33098] = {
-						["subClass"] = "Plate",
-					},
-					[33081] = {
-						["subClass"] = "Plate",
-					},
-					[6951] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-					[69101] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["25257:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[70921] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["716:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[10222] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["20580:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[51433] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
-			["16870:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[38893] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["21669:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[90805] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["36007:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95330] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["22238:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[62059] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["17916:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[42883] = {
-						["subClass"] = "Bows",
-					},
-				},
-			},
-			["15970:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[36865] = {
-						["subClass"] = "Two-Handed Swords",
+					[10093] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -34996,17 +35052,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6568:INVTYPE_HOLDABLE"] = {
+			["15970:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[10093] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["5410:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[7661] = {
-						["subClass"] = "Bows",
+					[36865] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -35014,13 +35063,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[9302] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["23694:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[67324] = {
-						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -35038,17 +35080,38 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3353:INVTYPE_SHIELD"] = {
+			["36007:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[10079] = {
+					[95330] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["11030:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[34176] = {
 						["subClass"] = "Shields",
 					},
 				},
 			},
-			["23223:INVTYPE_SHOULDER"] = {
+			["17916:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[67296] = {
+					[42883] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["7553:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[13085] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["9653:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[21238] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
@@ -35062,58 +35125,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4241:INVTYPE_HAND"] = {
+			["5410:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[5704] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2357:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[2736] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["14601:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[32309] = {
-						["subClass"] = "Plate",
-					},
-					[34229] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["14721:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[32908] = {
-						["subClass"] = "Plate",
-					},
-					[32633] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["9653:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[21238] = {
+					[7661] = {
 						["subClass"] = "Bows",
 					},
 				},
 			},
-			["4119:INVTYPE_CLOAK"] = {
+			["16778:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[5541] = {
-						["subClass"] = "Cloth",
+					[38934] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["13192:INVTYPE_HAND"] = {
+			["23694:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[31764] = {
-						["subClass"] = "Plate",
+					[67324] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["1731:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[1887] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -35121,71 +35157,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[21038] = {
 						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["398:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[31719] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["3727:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[4683] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["11904:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[22906] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["18733:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[54349] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13734:INVTYPE_HAND"] = {
-				["sources"] = {
-					[28562] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2893:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[6796] = {
-						["subClass"] = "Cloth",
-					},
-					[33348] = {
-						["subClass"] = "Cloth",
-					},
-					[33393] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["20526:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[50108] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
-			["14605:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[32319] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-					[84471] = {
-						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -35206,17 +35177,152 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1924:INVTYPE_ROBE"] = {
+			["4119:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[29763] = {
+					[5541] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["6607:INVTYPE_WEAPON"] = {
+			["4241:INVTYPE_HAND"] = {
 				["sources"] = {
-					[13676] = {
-						["subClass"] = "Fist Weapons",
+					[5704] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2357:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[2736] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["23223:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[67296] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["14721:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[32908] = {
+						["subClass"] = "Plate",
+					},
+					[32633] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13734:INVTYPE_HAND"] = {
+				["sources"] = {
+					[28562] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["9907:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[18038] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["13192:INVTYPE_HAND"] = {
+				["sources"] = {
+					[31764] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["4450:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[6066] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["13388:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[27143] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["3727:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[4683] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["11904:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[22906] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["27118:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[77487] = {
+						["subClass"] = "Plate",
+					},
+					[77623] = {
+						["subClass"] = "Plate",
+					},
+					[77521] = {
+						["subClass"] = "Plate",
+					},
+					[68433] = {
+						["subClass"] = "Plate",
+					},
+					[77555] = {
+						["subClass"] = "Plate",
+					},
+					[80407] = {
+						["subClass"] = "Plate",
+					},
+					[80439] = {
+						["subClass"] = "Plate",
+					},
+					[78596] = {
+						["subClass"] = "Plate",
+					},
+					[77589] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["9552:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[17193] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["4416:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[6014] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["20526:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[50108] = {
+						["subClass"] = "Cosmetic",
+					},
+				},
+			},
+			["14605:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[32319] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+					[84471] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -35230,10 +35336,44 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4450:INVTYPE_RANGED"] = {
+			["19497:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[6066] = {
-						["subClass"] = "Bows",
+					[46875] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2893:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[6796] = {
+						["subClass"] = "Cloth",
+					},
+					[33348] = {
+						["subClass"] = "Cloth",
+					},
+					[33393] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["6665:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[13153] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["16888:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[38944] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["9866:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[59034] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -35244,58 +35384,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8103:INVTYPE_2HWEAPON"] = {
+			["6607:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[14130] = {
-						["subClass"] = "Two-Handed Axes",
+					[13676] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
-			["4416:INVTYPE_WEAPON"] = {
+			["6932:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[6014] = {
-						["subClass"] = "One-Handed Axes",
+					[12046] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["13388:INVTYPE_LEGS"] = {
+			["7274:INVTYPE_FEET"] = {
 				["sources"] = {
-					[27143] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["9552:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[17193] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["6334:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[16102] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["1103:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[1119] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["4057:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[5361] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9381:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[17086] = {
+					[12552] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -35310,24 +35415,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5953:INVTYPE_ROBE"] = {
+			["21740:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[89629] = {
-						["subClass"] = "Cosmetic",
+					[60443] = {
+						["subClass"] = "Polearms",
+					},
+					[65560] = {
+						["subClass"] = "Polearms",
+					},
+					[60633] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
-			["9866:INVTYPE_WEAPON"] = {
+			["1103:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[59034] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["1645:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[29312] = {
-						["subClass"] = "Cloth",
+					[1119] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -35338,10 +35442,52 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13685:INVTYPE_2HWEAPON"] = {
+			["6637:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[28561] = {
-						["subClass"] = "Polearms",
+					[10247] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["4057:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[5361] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["10941:INVTYPE_BODY"] = {
+				["sources"] = {
+					[20503] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["21811:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[65321] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["1645:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[29312] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["9381:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[17086] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["21646:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[66511] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -35352,10 +35498,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21811:INVTYPE_RANGED"] = {
+			["21985:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[65321] = {
-						["subClass"] = "Bows",
+					[72526] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -35372,24 +35518,42 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14553:INVTYPE_WEAPON"] = {
+			["9517:INVTYPE_FEET"] = {
 				["sources"] = {
-					[31971] = {
-						["subClass"] = "One-Handed Maces",
+					[19635] = {
+						["subClass"] = "Plate",
 					},
-				},
-			},
-			["7274:INVTYPE_FEET"] = {
-				["sources"] = {
-					[12552] = {
+					[21240] = {
+						["subClass"] = "Plate",
+					},
+					[19113] = {
+						["subClass"] = "Plate",
+					},
+					[17867] = {
+						["subClass"] = "Plate",
+					},
+					[20797] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["13233:INVTYPE_CHEST"] = {
+			["17284:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[28759] = {
+					[40607] = {
 						["subClass"] = "Plate",
+					},
+					[40603] = {
+						["subClass"] = "Plate",
+					},
+					[40608] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["24370:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[67012] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -35403,10 +35567,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24370:INVTYPE_CLOAK"] = {
+			["13233:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[67012] = {
-						["subClass"] = "Cloth",
+					[28759] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -35477,10 +35641,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21646:INVTYPE_WEAPON"] = {
+			["13722:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[66511] = {
-						["subClass"] = "One-Handed Swords",
+					[28381] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -35501,54 +35665,51 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17284:INVTYPE_SHOULDER"] = {
+			["21454:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[40607] = {
-						["subClass"] = "Plate",
-					},
-					[40603] = {
-						["subClass"] = "Plate",
-					},
-					[40608] = {
+					[61668] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["10941:INVTYPE_BODY"] = {
+			["20178:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[20503] = {
-						["subClass"] = "Miscellaneous",
+					[51092] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["9495:INVTYPE_WAIST"] = {
+			["3523:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[17064] = {
+					[4373] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["16834:INVTYPE_FEET"] = {
+				["sources"] = {
+					[39772] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["13324:INVTYPE_WEAPON"] = {
+			["1493:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[26971] = {
-						["subClass"] = "Fist Weapons",
+					[26198] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["9334:INVTYPE_SHOULDER"] = {
+			["10508:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[16642] = {
+					[19690] = {
 						["subClass"] = "Plate",
-					},
-					[17484] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["5310:INVTYPE_FEET"] = {
-				["sources"] = {
-					[7489] = {
-						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -35562,41 +35723,38 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13722:INVTYPE_SHIELD"] = {
+			["20473:INVTYPE_FEET"] = {
 				["sources"] = {
-					[28381] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["21454:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[61668] = {
+					[51890] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["16834:INVTYPE_FEET"] = {
+			["10207:INVTYPE_HAND"] = {
 				["sources"] = {
-					[39772] = {
+					[21753] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["3523:INVTYPE_2HWEAPON"] = {
+			["16704:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[4373] = {
-						["subClass"] = "Two-Handed Axes",
+					[38928] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
-			["20178:INVTYPE_SHOULDER"] = {
+			["21738:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[51092] = {
+					[58975] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["17282:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[41589] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
 					},
 				},
 			},
@@ -35623,13 +35781,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10508:INVTYPE_HEAD"] = {
+			["292:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[19690] = {
+					[28160] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					},
+					[28407] = {
+						["subClass"] = "Plate",
+					},
+					[28112] = {
+						["subClass"] = "Plate",
+					},
+					[29741] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -35668,10 +35832,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["16704:INVTYPE_WEAPON"] = {
+			["13323:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[38928] = {
-						["subClass"] = "One-Handed Swords",
+					[26972] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
@@ -35679,6 +35843,20 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[10637] = {
 						["subClass"] = "Staves",
+					},
+				},
+			},
+			["17277:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[41591] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["9542:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[17183] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -35692,31 +35870,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["998:INVTYPE_CLOAK"] = {
+			["1641:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[26058] = {
-						["subClass"] = "Cloth",
+					[9254] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["16054:INVTYPE_WEAPON"] = {
+			["4509:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[38942] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["641:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[1298] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["11249:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[21582] = {
-						["subClass"] = "One-Handed Maces",
+					[93245] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -35732,10 +35896,13 @@ CanIMogItDatabase = {
 			},
 			["22978:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[61452] = {
+					[59547] = {
 						["subClass"] = "Plate",
 					},
 					[61461] = {
+						["subClass"] = "Plate",
+					},
+					[61452] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -35747,17 +35914,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21506:INVTYPE_CLOAK"] = {
+			["17451:INVTYPE_FEET"] = {
 				["sources"] = {
-					[61649] = {
-						["subClass"] = "Cloth",
+					[41805] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["4407:INVTYPE_WEAPON"] = {
+			["16872:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[5999] = {
-						["subClass"] = "One-Handed Swords",
+					[39814] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -35784,26 +35951,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["292:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[28160] = {
-						["subClass"] = "Plate",
-					},
-					[28407] = {
-						["subClass"] = "Plate",
-					},
-					[28112] = {
-						["subClass"] = "Plate",
-					},
-					[29741] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["6965:INVTYPE_FEET"] = {
 				["sources"] = {
 					[12081] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["4407:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[5999] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -35814,24 +35972,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13323:INVTYPE_WEAPON"] = {
+			["21336:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[26972] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
-			["17277:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[41591] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["613:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[529] = {
-						["subClass"] = "One-Handed Axes",
+					[61726] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -35848,45 +35992,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["16872:INVTYPE_WAIST"] = {
+			["4328:INVTYPE_FEET"] = {
 				["sources"] = {
-					[39814] = {
+					[14425] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["6330:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10202] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["21336:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[61726] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["2611:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[3056] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["13418:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[34073] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["19130:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[45189] = {
-						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -35902,34 +36011,6 @@ CanIMogItDatabase = {
 						},
 					},
 					[61571] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["6627:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[10225] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["7153:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[12406] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["37046:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[93193] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["9083:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[16220] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -35989,6 +36070,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["13418:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[34073] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
 			["16930:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
 					[38927] = {
@@ -35996,17 +36084,45 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8272:INVTYPE_TABARD"] = {
+			["37046:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[14607] = {
-						["subClass"] = "Miscellaneous",
+					[93193] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
-			["2775:INVTYPE_HAND"] = {
+			["6627:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[10583] = {
+					[10225] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["7153:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[12406] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["17170:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[44351] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["9083:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[16220] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["14020:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[32620] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -36027,27 +36143,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21741:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[61861] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["10694:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[20174] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["22227:INVTYPE_FEET"] = {
-				["sources"] = {
-					[62067] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["20495:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
 					[51252] = {
@@ -36058,10 +36153,73 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7351:INVTYPE_SHIELD"] = {
+			["8272:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[12704] = {
-						["subClass"] = "Shields",
+					[14607] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["21741:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[61861] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["156:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[31536] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["2775:INVTYPE_HAND"] = {
+				["sources"] = {
+					[10583] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18204:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[42873] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["326:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[44484] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["20961:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[61671] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22227:INVTYPE_FEET"] = {
+				["sources"] = {
+					[62067] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["8428:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[15011] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["21643:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[72521] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -36094,10 +36252,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4441:INVTYPE_2HWEAPON"] = {
+			["7780:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[13374] = {
-						["subClass"] = "Two-Handed Axes",
+					[13500] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -36118,38 +36276,53 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20961:INVTYPE_SHOULDER"] = {
+			["9345:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[61671] = {
+					[17849] = {
+						["subClass"] = "Plate",
+					},
+					[16656] = {
+						["subClass"] = "Plate",
+					},
+					[19201] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["326:INVTYPE_WEAPON"] = {
+			["8379:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[44484] = {
-						["subClass"] = "One-Handed Maces",
+					[14915] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
-			["18204:INVTYPE_CLOAK"] = {
+			["6215:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[42873] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["15888:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[36549] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["16046:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[38937] = {
+					[31777] = {
 						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["20124:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[50790] = {
+						["subClass"] = "Plate",
+					},
+					[49840] = {
+						["subClass"] = "Plate",
+					},
+					[51162] = {
+						["subClass"] = "Plate",
+					},
+					[50850] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13231:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[28760] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -36160,9 +36333,39 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8428:INVTYPE_HEAD"] = {
+			["17270:INVTYPE_HAND"] = {
 				["sources"] = {
-					[15011] = {
+					[45479] = {
+						["subClass"] = "Plate",
+					},
+					[41152] = {
+						["subClass"] = "Plate",
+					},
+					[41400] = {
+						["subClass"] = "Plate",
+					},
+					[41153] = {
+						["subClass"] = "Plate",
+					},
+					[41401] = {
+						["subClass"] = "Plate",
+					},
+					[45070] = {
+						["subClass"] = "Plate",
+					},
+					[41148] = {
+						["subClass"] = "Plate",
+					},
+					[45071] = {
+						["subClass"] = "Plate",
+					},
+					[45484] = {
+						["subClass"] = "Plate",
+					},
+					[45480] = {
+						["subClass"] = "Plate",
+					},
+					[41396] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -36194,10 +36397,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13231:INVTYPE_LEGS"] = {
+			["16046:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[28760] = {
-						["subClass"] = "Plate",
+					[38937] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -36218,17 +36421,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["989:INVTYPE_WEAPON"] = {
+			["7656:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[31250] = {
-						["subClass"] = "One-Handed Axes",
+					[13384] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["7780:INVTYPE_WRIST"] = {
+			["8215:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[13500] = {
-						["subClass"] = "Plate",
+					[14429] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -36240,18 +36443,18 @@ CanIMogItDatabase = {
 					[29834] = {
 						["subClass"] = "Plate",
 					},
-					[29923] = {
+					[29911] = {
 						["subClass"] = "Plate",
 					},
-					[29911] = {
+					[29923] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["16705:INVTYPE_WEAPON"] = {
+			["36305:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[39856] = {
-						["subClass"] = "One-Handed Swords",
+					[95331] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -36262,23 +36465,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9345:INVTYPE_CHEST"] = {
+			["17495:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[17849] = {
-						["subClass"] = "Plate",
-					},
-					[16656] = {
-						["subClass"] = "Plate",
-					},
-					[19201] = {
-						["subClass"] = "Plate",
+					[40668] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["6215:INVTYPE_2HWEAPON"] = {
+			["13369:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[31777] = {
-						["subClass"] = "Two-Handed Axes",
+					[27070] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -36333,19 +36530,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20124:INVTYPE_CHEST"] = {
+			["6585:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[50790] = {
-						["subClass"] = "Plate",
-					},
-					[49840] = {
-						["subClass"] = "Plate",
-					},
-					[51162] = {
-						["subClass"] = "Plate",
-					},
-					[50850] = {
-						["subClass"] = "Plate",
+					[10136] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -36385,47 +36573,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17270:INVTYPE_HAND"] = {
+			["20536:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[45479] = {
-						["subClass"] = "Plate",
-					},
-					[41152] = {
-						["subClass"] = "Plate",
-					},
-					[41400] = {
-						["subClass"] = "Plate",
-					},
-					[41153] = {
-						["subClass"] = "Plate",
-					},
-					[41401] = {
-						["subClass"] = "Plate",
-					},
-					[45070] = {
-						["subClass"] = "Plate",
-					},
-					[41148] = {
-						["subClass"] = "Plate",
-					},
-					[45071] = {
-						["subClass"] = "Plate",
-					},
-					[45484] = {
-						["subClass"] = "Plate",
-					},
-					[45480] = {
-						["subClass"] = "Plate",
-					},
-					[41396] = {
-						["subClass"] = "Plate",
+					[50147] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["6585:INVTYPE_2HWEAPON"] = {
+			["21047:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[10136] = {
-						["subClass"] = "Two-Handed Maces",
+					[61537] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -36443,30 +36601,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8215:INVTYPE_HOLDABLE"] = {
+			["12491:INVTYPE_HAND"] = {
 				["sources"] = {
-					[14429] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["24488:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[66824] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["13369:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[27070] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["17278:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[42182] = {
+					[24800] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -36478,6 +36615,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["1208:INVTYPE_BODY"] = {
+				["sources"] = {
+					[1254] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["17278:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[42182] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["6161:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[9206] = {
+						["subClass"] = "Cosmetic",
+					},
+				},
+			},
 			["17503:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[40676] = {
@@ -36485,9 +36643,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12491:INVTYPE_HAND"] = {
+			["16691:INVTYPE_FEET"] = {
 				["sources"] = {
-					[24800] = {
+					[38960] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -36527,16 +36685,40 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21047:INVTYPE_HEAD"] = {
+			["11053:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[61537] = {
-						["subClass"] = "Plate",
+					[20874] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["16691:INVTYPE_FEET"] = {
+			["17464:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[38960] = {
+					[42719] = {
+						["subClass"] = "Plate",
+					},
+					[42817] = {
+						["subClass"] = "Plate",
+					},
+					[45518] = {
+						["subClass"] = "Plate",
+					},
+					[42723] = {
+						["subClass"] = "Plate",
+					},
+					[45514] = {
+						["subClass"] = "Plate",
+					},
+					[42724] = {
+						["subClass"] = "Plate",
+					},
+					[42813] = {
+						["subClass"] = "Plate",
+					},
+					[42818] = {
+						["subClass"] = "Plate",
+					},
+					[45513] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -36576,10 +36758,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11053:INVTYPE_TABARD"] = {
+			["8123:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[20874] = {
-						["subClass"] = "Miscellaneous",
+					[14460] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -36587,116 +36769,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[6010] = {
 						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["19944:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[50909] = {
-						["subClass"] = "Plate",
-					},
-					[50885] = {
-						["subClass"] = "Plate",
-					},
-					[51197] = {
-						["subClass"] = "Plate",
-					},
-					[51221] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["3307:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10148] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["1093:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[1108] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["6161:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[9206] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
-			["23066:INVTYPE_FEET"] = {
-				["sources"] = {
-					[62852] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["6638:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[13381] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["17275:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[41260] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2319:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[26753] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["15684:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[36401] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["24985:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[72516] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["22000:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[63767] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["20237:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[50854] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["8058:INVTYPE_HAND"] = {
-				["sources"] = {
-					[14042] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["339:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[203] = {
-						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -36710,31 +36782,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8123:INVTYPE_CHEST"] = {
+			["3307:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[14460] = {
-						["subClass"] = "Plate",
+					[10148] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
-			["13290:INVTYPE_WEAPON"] = {
+			["339:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[29970] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["8053:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[14032] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["1109:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[1125] = {
-						["subClass"] = "Two-Handed Axes",
+					[203] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -36760,10 +36818,52 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["23066:INVTYPE_FEET"] = {
+				["sources"] = {
+					[62852] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["6638:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[13381] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
 			["17457:INVTYPE_WRIST"] = {
 				["sources"] = {
 					[41701] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2319:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[26753] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["15684:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[36401] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["14430:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[30864] = {
+						["subClass"] = "Guns",
+					},
+				},
+			},
+			["22000:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[63767] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -36774,10 +36874,86 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["8058:INVTYPE_HAND"] = {
+				["sources"] = {
+					[14042] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
 			["5745:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[8470] = {
 						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["6982:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[12098] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["10938:INVTYPE_BODY"] = {
+				["sources"] = {
+					[20500] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["13290:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[29970] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["8053:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[14032] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["1109:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[1125] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["3709:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[4662] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["17506:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[40679] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["8841:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[15772] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["20032:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[51138] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+					[50826] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -36815,10 +36991,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6982:INVTYPE_LEGS"] = {
+			["19444:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[12098] = {
-						["subClass"] = "Plate",
+					[46590] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -36836,24 +37012,42 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2629:INVTYPE_2HWEAPON"] = {
+			["19949:INVTYPE_FEET"] = {
 				["sources"] = {
-					[3078] = {
-						["subClass"] = "Two-Handed Swords",
+					[51887] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["17748:INVTYPE_CLOAK"] = {
+			["17481:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[41166] = {
-						["subClass"] = "Cloth",
+					[41938] = {
+						["subClass"] = "Plate",
+					},
+					[45489] = {
+						["subClass"] = "Plate",
+					},
+					[45493] = {
+						["subClass"] = "Plate",
+					},
+					[41939] = {
+						["subClass"] = "Plate",
+					},
+					[41934] = {
+						["subClass"] = "Plate",
+					},
+					[45488] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["3709:INVTYPE_RANGED"] = {
+			["13432:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[4662] = {
-						["subClass"] = "Bows",
+					[32080] = {
+						["subClass"] = "Plate",
+					},
+					[27671] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -36864,17 +37058,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20280:INVTYPE_2HWEAPON"] = {
+			["985:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[51124] = {
-						["subClass"] = "Staves",
+					[10030] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["14428:INVTYPE_2HWEAPON"] = {
+			["7710:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[30834] = {
-						["subClass"] = "Staves",
+					[13407] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -36885,9 +37079,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7710:INVTYPE_CHEST"] = {
+			["3252:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[13407] = {
+					[13022] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -36947,83 +37141,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19444:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[46590] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["19949:INVTYPE_FEET"] = {
-				["sources"] = {
-					[51887] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2841:INVTYPE_ROBE"] = {
-				["sources"] = {
-					[3343] = {
-						["subClass"] = "Cloth",
-					},
-					[25873] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["11826:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[46916] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["17481:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[41938] = {
-						["subClass"] = "Plate",
-					},
-					[45489] = {
-						["subClass"] = "Plate",
-					},
-					[45493] = {
-						["subClass"] = "Plate",
-					},
-					[41939] = {
-						["subClass"] = "Plate",
-					},
-					[41934] = {
-						["subClass"] = "Plate",
-					},
-					[45488] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13432:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[32080] = {
-						["subClass"] = "Plate",
-					},
-					[27671] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["985:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[10030] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["3252:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[13022] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["9310:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[16616] = {
@@ -37050,9 +37167,26 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6659:INVTYPE_WEAPON"] = {
+			["2841:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[31563] = {
+					[3343] = {
+						["subClass"] = "Cloth",
+					},
+					[25873] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["11826:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[46916] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["5653:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[8330] = {
 						["subClass"] = "Daggers",
 					},
 				},
@@ -37071,33 +37205,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9753:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[19320] = {
-						["subClass"] = "Plate",
-					},
-					[21493] = {
-						["subClass"] = "Plate",
-					},
-					[21492] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2115:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[32962] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["777:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[25948] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
 			["24899:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[66692] = {
@@ -37108,6 +37215,69 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["2115:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[32962] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["16757:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[38932] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["17649:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[84436] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["7364:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[12731] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["6636:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[66419] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["13960:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[29473] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["4330:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[5819] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["777:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[25948] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["4232:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[13307] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["19364:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
 					[47075] = {
@@ -37115,10 +37285,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3257:INVTYPE_CHEST"] = {
+			["7113:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[13319] = {
-						["subClass"] = "Plate",
+					[21056] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -37129,16 +37299,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1088:INVTYPE_CLOAK"] = {
+			["20484:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[26768] = {
-						["subClass"] = "Cloth",
-					},
-					[24258] = {
-						["subClass"] = "Cloth",
-					},
-					[25939] = {
-						["subClass"] = "Cloth",
+					[50935] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -37155,10 +37319,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6636:INVTYPE_RANGED"] = {
+			["9911:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[66419] = {
-						["subClass"] = "Bows",
+					[18046] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -37166,75 +37330,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[30308] = {
 						["subClass"] = "Shields",
-					},
-				},
-			},
-			["7364:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[12731] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["27328:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[80889] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["4330:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[5819] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13960:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[29473] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["34032:INVTYPE_HAND"] = {
-				["sources"] = {
-					[86014] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["7113:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[21056] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["12242:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[24468] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["20484:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[50935] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["14863:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[33208] = {
-						["subClass"] = "Plate",
-					},
-					[33273] = {
-						["subClass"] = "Plate",
-					},
-					[33186] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -37251,23 +37346,84 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14346:INVTYPE_CHEST"] = {
+			["27328:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[34258] = {
+					[80889] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["9911:INVTYPE_HOLDABLE"] = {
+			["19516:INVTYPE_HAND"] = {
 				["sources"] = {
-					[18046] = {
-						["subClass"] = "Miscellaneous",
+					[98697] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
 			["19940:INVTYPE_FEET"] = {
 				["sources"] = {
 					[51170] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["34032:INVTYPE_HAND"] = {
+				["sources"] = {
+					[86014] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["19503:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[47039] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["17893:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[42910] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["14863:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[33208] = {
+						["subClass"] = "Plate",
+					},
+					[33273] = {
+						["subClass"] = "Plate",
+					},
+					[33186] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["5673:INVTYPE_FEET"] = {
+				["sources"] = {
+					[8367] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
+			["1246:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[1297] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["14346:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[34258] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -37291,10 +37447,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6267:INVTYPE_WEAPON"] = {
+			["17567:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[10103] = {
-						["subClass"] = "Daggers",
+					[45088] = {
+						["subClass"] = "Plate",
+					},
+					[84403] = {
+						["subClass"] = "Plate",
+					},
+					[84440] = {
+						["subClass"] = "Plate",
+					},
+					[45129] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["7373:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[12758] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["4423:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[6032] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -37315,24 +37494,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13296:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[26916] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["17893:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[42910] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
 			["17570:INVTYPE_FEET"] = {
 				["sources"] = {
 					[84332] = {
 						["subClass"] = "Plate",
+					},
+					[84320] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["19099:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[44988] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["1951:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[17879] = {
+						["subClass"] = "Cloth",
+					},
+					[17526] = {
+						["subClass"] = "Cloth",
+					},
+					[26061] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -37357,19 +37545,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17567:INVTYPE_WAIST"] = {
+			["387:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[84403] = {
-						["subClass"] = "Plate",
-					},
-					[45088] = {
-						["subClass"] = "Plate",
-					},
-					[45129] = {
-						["subClass"] = "Plate",
-					},
-					[84440] = {
-						["subClass"] = "Plate",
+					[93180] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -37387,24 +37566,30 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["387:INVTYPE_WEAPON"] = {
+			["24273:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[93180] = {
-						["subClass"] = "One-Handed Maces",
+					[62836] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
-			["7373:INVTYPE_SHIELD"] = {
+			["17747:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[12758] = {
-						["subClass"] = "Shields",
+					[41165] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["4423:INVTYPE_2HWEAPON"] = {
+			["20127:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[6032] = {
-						["subClass"] = "Two-Handed Swords",
+					[51119] = {
+						["subClass"] = "Plate",
+					},
+					[50934] = {
+						["subClass"] = "Plate",
+					},
+					[50807] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -37418,10 +37603,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17747:INVTYPE_CLOAK"] = {
+			["5113:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[41165] = {
-						["subClass"] = "Cloth",
+					[24197] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -37432,43 +37617,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19099:INVTYPE_2HWEAPON"] = {
+			["16690:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[44988] = {
-						["subClass"] = "Staves",
+					[38953] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["1951:INVTYPE_CLOAK"] = {
+			["7739:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[17879] = {
-						["subClass"] = "Cloth",
-					},
-					[17526] = {
-						["subClass"] = "Cloth",
-					},
-					[26061] = {
+					[21667] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["19435:INVTYPE_TABARD"] = {
+			["7036:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[46577] = {
-						["subClass"] = "Miscellaneous",
+					[12191] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["13707:INVTYPE_CLOAK"] = {
+			["9341:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[28262] = {
-						["subClass"] = "Cloth",
+					[17871] = {
+						["subClass"] = "Shields",
 					},
-					[32151] = {
-						["subClass"] = "Cloth",
-					},
-					[30738] = {
-						["subClass"] = "Cloth",
+					[16651] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -37486,30 +37662,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["16690:INVTYPE_WAIST"] = {
+			["3237:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[38953] = {
+					[80209] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["20127:INVTYPE_LEGS"] = {
+			["1319:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[51119] = {
-						["subClass"] = "Plate",
+					[7459] = {
+						["subClass"] = "Bows",
 					},
-					[50934] = {
-						["subClass"] = "Plate",
-					},
-					[50807] = {
-						["subClass"] = "Plate",
+					[15324] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
-			["5113:INVTYPE_HOLDABLE"] = {
+			["4276:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[24197] = {
-						["subClass"] = "Miscellaneous",
+					[13715] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -37530,27 +37703,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1319:INVTYPE_RANGED"] = {
+			["17602:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[7459] = {
-						["subClass"] = "Bows",
+					[45114] = {
+						["subClass"] = "Cloth",
 					},
-					[15324] = {
-						["subClass"] = "Bows",
-					},
-				},
-			},
-			["7739:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[21667] = {
+					[84416] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["5305:INVTYPE_RANGEDRIGHT"] = {
+			["19939:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[7678] = {
-						["subClass"] = "Guns",
+					[49808] = {
+						["subClass"] = "Plate",
+					},
+					[51156] = {
+						["subClass"] = "Plate",
+					},
+					[50844] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["6566:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[10071] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -37561,9 +37740,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3237:INVTYPE_WAIST"] = {
+			["16822:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[80209] = {
+					[38950] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -37591,6 +37770,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["11520:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[22012] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
 			["12457:INVTYPE_FEET"] = {
 				["sources"] = {
 					[24761] = {
@@ -37598,17 +37784,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7036:INVTYPE_LEGS"] = {
+			["15183:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[12191] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["4276:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[13715] = {
-						["subClass"] = "Plate",
+					[36675] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -37636,13 +37815,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19945:INVTYPE_SHOULDER"] = {
+			["2531:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[51213] = {
-						["subClass"] = "Plate",
-					},
-					[50901] = {
-						["subClass"] = "Plate",
+					[6020] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -37656,15 +37832,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19939:INVTYPE_WAIST"] = {
+			["7546:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[49808] = {
-						["subClass"] = "Plate",
-					},
-					[51156] = {
-						["subClass"] = "Plate",
-					},
-					[50844] = {
+					[13074] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -37678,10 +37848,13 @@ CanIMogItDatabase = {
 			},
 			["17521:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[45292] = {
+					[84297] = {
 						["subClass"] = "Plate",
 					},
 					[84295] = {
+						["subClass"] = "Plate",
+					},
+					[45292] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -37693,17 +37866,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19343:INVTYPE_BODY"] = {
+			["912:INVTYPE_BODY"] = {
 				["sources"] = {
-					[46206] = {
+					[1255] = {
 						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["7546:INVTYPE_SHOULDER"] = {
+			["2999:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[13074] = {
-						["subClass"] = "Plate",
+					[15316] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -37724,24 +37897,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6566:INVTYPE_SHIELD"] = {
+			["9090:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[10071] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["16822:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[38950] = {
+					[16218] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["2531:INVTYPE_WEAPON"] = {
+			["14498:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[6020] = {
-						["subClass"] = "One-Handed Axes",
+					[31571] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["575:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[29978] = {
+						["subClass"] = "Staves",
+					},
+					[25870] = {
+						["subClass"] = "Staves",
+					},
+					[43887] = {
+						["subClass"] = "Staves",
+					},
+					[28111] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -37752,10 +37934,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15183:INVTYPE_2HWEAPON"] = {
+			["4234:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[36675] = {
-						["subClass"] = "Two-Handed Axes",
+					[14565] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -37780,9 +37962,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9090:INVTYPE_WAIST"] = {
+			["1045:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[16218] = {
+					[31812] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -37808,24 +37990,30 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22338:INVTYPE_WEAPON"] = {
+			["25115:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[67939] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["912:INVTYPE_BODY"] = {
-				["sources"] = {
-					[1255] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["14498:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[31571] = {
+					[67836] = {
 						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["17502:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[43103] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[40675] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[42913] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["13978:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[34188] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -37852,19 +38040,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["575:INVTYPE_2HWEAPON"] = {
+			["14595:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[29978] = {
-						["subClass"] = "Staves",
-					},
-					[25870] = {
-						["subClass"] = "Staves",
-					},
-					[43887] = {
-						["subClass"] = "Staves",
-					},
-					[28111] = {
-						["subClass"] = "Staves",
+					[32245] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -37928,10 +38107,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14595:INVTYPE_WEAPON"] = {
+			["12273:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[32245] = {
-						["subClass"] = "Daggers",
+					[24832] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -37949,13 +38128,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4234:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[14565] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["1308:INVTYPE_SHIELD"] = {
 				["sources"] = {
 					[1366] = {
@@ -37963,43 +38135,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17502:INVTYPE_WEAPON"] = {
+			["9292:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[43103] = {
-						["subClass"] = "One-Handed Maces",
+					[20032] = {
+						["subClass"] = "Plate",
 					},
-					[40675] = {
-						["subClass"] = "One-Handed Maces",
-					},
-					[42913] = {
-						["subClass"] = "One-Handed Maces",
+				},
+			},
+			["11701:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[32953] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
 			["4310:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[5797] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13978:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[34188] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["1045:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[31812] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["4298:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[5782] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -38018,41 +38170,68 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19938:INVTYPE_WRIST"] = {
+			["4298:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[49915] = {
+					[5782] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["9246:INVTYPE_WAIST"] = {
+			["14343:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[72696] = {
+					[31646] = {
 						["subClass"] = "Plate",
 					},
-					[21314] = {
+					[31953] = {
 						["subClass"] = "Plate",
 					},
-				},
-			},
-			["17755:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[41173] = {
-						["subClass"] = "Bows",
-					},
-				},
-			},
-			["9292:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[20032] = {
+					[31956] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["11701:INVTYPE_2HWEAPON"] = {
+			["2221:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[32953] = {
+					[5746] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["10055:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[18645] = {
+						["subClass"] = "Plate",
+					},
+					[20753] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["4292:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[10426] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["24512:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[65402] = {
 						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["7669:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[16104] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["7499:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[13017] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -38063,9 +38242,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2221:INVTYPE_HEAD"] = {
+			["5451:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[5746] = {
+					[33165] = {
+						["subClass"] = "Plate",
+					},
+					[27925] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -38097,34 +38279,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10055:INVTYPE_CHEST"] = {
+			["13207:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[18645] = {
-						["subClass"] = "Plate",
-					},
-					[20753] = {
-						["subClass"] = "Plate",
+					[41806] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["5788:INVTYPE_WAIST"] = {
+			["4419:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[8540] = {
-						["subClass"] = "Plate",
+					[6022] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["22239:INVTYPE_LEGS"] = {
+			["19003:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[64241] = {
-						["subClass"] = "Plate",
+					[50905] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["7499:INVTYPE_WEAPON"] = {
+			["14418:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[13017] = {
-						["subClass"] = "One-Handed Maces",
+					[33174] = {
+						["subClass"] = "Cloth",
+					},
+					[30745] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -38135,9 +38317,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13059:INVTYPE_SHOULDER"] = {
+			["22239:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[32879] = {
+					[64241] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -38163,13 +38345,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5451:INVTYPE_WRIST"] = {
+			["21877:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[33165] = {
-						["subClass"] = "Plate",
-					},
-					[27925] = {
-						["subClass"] = "Plate",
+					[65482] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -38180,13 +38359,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14418:INVTYPE_CLOAK"] = {
+			["5779:INVTYPE_HAND"] = {
 				["sources"] = {
-					[33174] = {
-						["subClass"] = "Cloth",
-					},
-					[30745] = {
-						["subClass"] = "Cloth",
+					[8530] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38207,10 +38383,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13207:INVTYPE_SHIELD"] = {
+			["9983:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[41806] = {
-						["subClass"] = "Shields",
+					[19176] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
@@ -38248,10 +38424,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5779:INVTYPE_HAND"] = {
+			["1238:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[8530] = {
-						["subClass"] = "Plate",
+					[6418] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -38265,16 +38441,22 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4419:INVTYPE_WEAPON"] = {
+			["1803:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[6022] = {
-						["subClass"] = "One-Handed Axes",
+					[10649] = {
+						["subClass"] = "One-Handed Swords",
+					},
+					[12043] = {
+						["subClass"] = "One-Handed Swords",
+					},
+					[32736] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
-			["19003:INVTYPE_CLOAK"] = {
+			["19124:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[50905] = {
+					[45116] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -38286,17 +38468,43 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21877:INVTYPE_2HWEAPON"] = {
+			["21836:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[65482] = {
-						["subClass"] = "Two-Handed Maces",
+					[64406] = {
+						["subClass"] = "Shields",
+					},
+					[65551] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["9983:INVTYPE_WEAPON"] = {
+			["19046:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[19176] = {
-						["subClass"] = "Fist Weapons",
+					[44807] = {
+						["subClass"] = "Cloth",
+					},
+					[44878] = {
+						["subClass"] = "Cloth",
+					},
+					[50859] = {
+						["subClass"] = "Cloth",
+					},
+					[44893] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["13527:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[33222] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22916:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[67058] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -38307,20 +38515,6 @@ CanIMogItDatabase = {
 					},
 					[62021] = {
 						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["1238:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[6418] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["22916:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[67058] = {
-						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -38361,10 +38555,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19124:INVTYPE_CLOAK"] = {
+			["1608:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[45116] = {
-						["subClass"] = "Cloth",
+					[30872] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -38392,13 +38586,29 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21836:INVTYPE_SHIELD"] = {
+			["19249:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[64406] = {
-						["subClass"] = "Shields",
+					[45947] = {
+						["subClass"] = "Cloth",
 					},
-					[65551] = {
-						["subClass"] = "Shields",
+					[45949] = {
+						["subClass"] = "Cloth",
+					},
+					[45951] = {
+						["subClass"] = "Cloth",
+					},
+					[45948] = {
+						["subClass"] = "Cloth",
+					},
+					[45950] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["9713:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[17561] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -38409,13 +38619,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4475:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[6120] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
 			["11185:INVTYPE_WRIST"] = {
 				["sources"] = {
 					[21384] = {
@@ -38423,19 +38626,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19046:INVTYPE_CLOAK"] = {
+			["13534:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[44807] = {
-						["subClass"] = "Cloth",
-					},
-					[44878] = {
-						["subClass"] = "Cloth",
-					},
-					[50859] = {
-						["subClass"] = "Cloth",
-					},
-					[44893] = {
-						["subClass"] = "Cloth",
+					[31835] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38453,20 +38647,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4274:INVTYPE_WRIST"] = {
+			["991:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[5749] = {
-						["subClass"] = "Plate",
+					[3370] = {
+						["subClass"] = "Miscellaneous",
+					},
+					[29264] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["19520:INVTYPE_FEET"] = {
+			["19081:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[98696] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[44908] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -38477,23 +38671,26 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1608:INVTYPE_SHIELD"] = {
+			["14433:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[30872] = {
-						["subClass"] = "Shields",
+					[30881] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
-			["18946:INVTYPE_CLOAK"] = {
+			["4327:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[49822] = {
-						["subClass"] = "Cloth",
+					[14569] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["13534:INVTYPE_WRIST"] = {
+			["3016:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[31835] = {
+					[89443] = {
+						["subClass"] = "Plate",
+					},
+					[3637] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -38505,10 +38702,29 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19081:INVTYPE_WEAPON"] = {
+			["21941:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[44908] = {
-						["subClass"] = "One-Handed Axes",
+					[66451] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["17967:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[41943] = {
+						["subClass"] = "Cloth",
+					},
+					[41940] = {
+						["subClass"] = "Cloth",
+					},
+					[41942] = {
+						["subClass"] = "Cloth",
+					},
+					[41944] = {
+						["subClass"] = "Cloth",
+					},
+					[41941] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -38519,13 +38735,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21941:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[66451] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
 			["24813:INVTYPE_TABARD"] = {
 				["sources"] = {
 					[66830] = {
@@ -38533,20 +38742,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["991:INVTYPE_HOLDABLE"] = {
+			["18760:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[3370] = {
-						["subClass"] = "Miscellaneous",
+					[54430] = {
+						["subClass"] = "Plate",
 					},
-					[29264] = {
-						["subClass"] = "Miscellaneous",
+					[54405] = {
+						["subClass"] = "Plate",
+					},
+					[46470] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["14433:INVTYPE_2HWEAPON"] = {
+			["3753:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[30881] = {
-						["subClass"] = "Two-Handed Maces",
+					[10640] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38566,10 +38778,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4327:INVTYPE_WAIST"] = {
+			["5666:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[14569] = {
-						["subClass"] = "Plate",
+					[8349] = {
+						["subClass"] = "Guns",
 					},
 				},
 			},
@@ -38580,13 +38792,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3016:INVTYPE_LEGS"] = {
+			["19361:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[89443] = {
-						["subClass"] = "Plate",
-					},
-					[3637] = {
-						["subClass"] = "Plate",
+					[47038] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -38604,24 +38813,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18956:INVTYPE_2HWEAPON"] = {
+			["18380:INVTYPE_HAND"] = {
 				["sources"] = {
-					[44894] = {
-						["subClass"] = "Polearms",
+					[43305] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["9712:INVTYPE_WEAPON"] = {
+			["1464:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[17558] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["5666:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[8349] = {
+					[26054] = {
 						["subClass"] = "Guns",
+					},
+				},
+			},
+			["13998:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[32629] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -38632,10 +38844,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17504:INVTYPE_WEAPON"] = {
+			["6523:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[40677] = {
-						["subClass"] = "One-Handed Maces",
+					[12238] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38646,20 +38858,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17894:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[42912] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-					[41948] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
 			["21957:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[63766] = {
 						["subClass"] = "Staves",
+					},
+				},
+			},
+			["5655:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[8334] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -38677,27 +38886,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18380:INVTYPE_HAND"] = {
+			["8136:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[43305] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["13998:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[32629] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["1464:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[26054] = {
+					[14217] = {
 						["subClass"] = "Guns",
+					},
+				},
+			},
+			["307:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[1383] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["4931:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[69092] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38731,24 +38937,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6523:INVTYPE_CHEST"] = {
+			["1636:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[12238] = {
-						["subClass"] = "Plate",
+					[1761] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
-			["5655:INVTYPE_2HWEAPON"] = {
+			["1099:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[8334] = {
+					[31807] = {
 						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["8136:INVTYPE_RANGEDRIGHT"] = {
+			["15911:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[14217] = {
-						["subClass"] = "Guns",
+					[36673] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38759,17 +38965,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["307:INVTYPE_WEAPON"] = {
+			["7502:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[1383] = {
-						["subClass"] = "One-Handed Swords",
+					[13020] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["4931:INVTYPE_LEGS"] = {
+			["18678:INVTYPE_BODY"] = {
 				["sources"] = {
-					[69092] = {
-						["subClass"] = "Plate",
+					[43853] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -38835,10 +39041,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1636:INVTYPE_2HWEAPON"] = {
+			["1676:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[1761] = {
-						["subClass"] = "Two-Handed Swords",
+					[10444] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -38858,24 +39064,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["25921:INVTYPE_WAIST"] = {
+			["2342:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[71940] = {
-						["subClass"] = "Plate",
+					[93226] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["15911:INVTYPE_WAIST"] = {
+			["356:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[36673] = {
-						["subClass"] = "Plate",
+					[27926] = {
+						["subClass"] = "Shields",
+					},
+					[26173] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["1422:INVTYPE_CLOAK"] = {
+			["3573:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[2138] = {
-						["subClass"] = "Cloth",
+					[12291] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38886,10 +39095,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18819:INVTYPE_WAIST"] = {
+			["18693:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[46144] = {
-						["subClass"] = "Plate",
+					[44085] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -38907,17 +39116,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9038:INVTYPE_RANGEDRIGHT"] = {
+			["18885:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[16105] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["2342:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[93226] = {
-						["subClass"] = "One-Handed Maces",
+					[47010] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -38928,10 +39130,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3573:INVTYPE_WRIST"] = {
+			["17920:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[12291] = {
-						["subClass"] = "Plate",
+					[42880] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["1400:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[33168] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -38942,16 +39151,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17280:INVTYPE_CHEST"] = {
+			["4711:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[42184] = {
-						["subClass"] = "Plate",
+					[7390] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["18693:INVTYPE_CLOAK"] = {
+			["2256:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[44085] = {
+					[89451] = {
+						["subClass"] = "Cloth",
+					},
+					[5409] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -38963,10 +39175,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18885:INVTYPE_WAIST"] = {
+			["2352:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[47010] = {
-						["subClass"] = "Plate",
+					[77345] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -39014,9 +39226,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18207:INVTYPE_CLOAK"] = {
+			["2418:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[42876] = {
+					[27510] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -39045,10 +39257,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17920:INVTYPE_2HWEAPON"] = {
+			["18207:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[42880] = {
-						["subClass"] = "Staves",
+					[42876] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -39079,17 +39291,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1400:INVTYPE_CLOAK"] = {
+			["4246:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[33168] = {
-						["subClass"] = "Cloth",
+					[5709] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["3118:INVTYPE_WAIST"] = {
+			["10044:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[10493] = {
-						["subClass"] = "Plate",
+					[21563] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -39113,6 +39325,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["3118:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[10493] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["9262:INVTYPE_LEGS"] = {
 				["sources"] = {
 					[18699] = {
@@ -39123,16 +39342,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2256:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[89451] = {
-						["subClass"] = "Cloth",
-					},
-					[5409] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["4113:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[5468] = {
@@ -39140,26 +39349,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17914:INVTYPE_WEAPON"] = {
+			["22166:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[46775] = {
-						["subClass"] = "Daggers",
-					},
-					[42916] = {
-						["subClass"] = "Daggers",
+					[67330] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["2418:INVTYPE_CLOAK"] = {
+			["36229:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[27510] = {
-						["subClass"] = "Cloth",
+					[95310] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
-			["4246:INVTYPE_SHOULDER"] = {
+			["18732:INVTYPE_HAND"] = {
 				["sources"] = {
-					[5709] = {
+					[54347] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -39178,29 +39384,29 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18055:INVTYPE_WEAPON"] = {
+			["360:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[42242] = {
-						["subClass"] = "One-Handed Maces",
+					[26056] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["14858:INVTYPE_CLOAK"] = {
+			["18018:INVTYPE_FEET"] = {
 				["sources"] = {
-					[37543] = {
-						["subClass"] = "Cloth",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-					[33166] = {
-						["subClass"] = "Cloth",
+					[47000] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["18732:INVTYPE_HAND"] = {
+			["886:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[54347] = {
+					[29759] = {
+						["subClass"] = "Plate",
+					},
+					[33401] = {
+						["subClass"] = "Plate",
+					},
+					[42173] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -39212,31 +39418,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["360:INVTYPE_WEAPON"] = {
+			["18019:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[26056] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["22166:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[67330] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["36229:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95310] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
-			["18018:INVTYPE_FEET"] = {
-				["sources"] = {
-					[47000] = {
+					[46991] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["17508:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[40681] = {
+						["subClass"] = "Shields",
+					},
+					[41957] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -39254,6 +39449,26 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["14871:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[33197] = {
+						["subClass"] = "Plate",
+					},
+					[33255] = {
+						["subClass"] = "Plate",
+					},
+					[33225] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["11458:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[21905] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
 			["665:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[29770] = {
@@ -39268,17 +39483,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18019:INVTYPE_CHEST"] = {
+			["9909:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[46991] = {
-						["subClass"] = "Plate",
+					[18042] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["7683:INVTYPE_2HWEAPON"] = {
+			["13980:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[29359] = {
-						["subClass"] = "Staves",
+					[32649] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
@@ -39296,9 +39511,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36668:INVTYPE_CLOAK"] = {
+			["5231:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[94962] = {
+					[31554] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -39324,20 +39539,38 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5231:INVTYPE_CLOAK"] = {
+			["27113:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[31554] = {
-						["subClass"] = "Cloth",
+					[80405] = {
+						["subClass"] = "Plate",
+					},
+					[80437] = {
+						["subClass"] = "Plate",
+					},
+					[77621] = {
+						["subClass"] = "Plate",
+					},
+					[77519] = {
+						["subClass"] = "Plate",
+					},
+					[78594] = {
+						["subClass"] = "Plate",
+					},
+					[77587] = {
+						["subClass"] = "Plate",
+					},
+					[68431] = {
+						["subClass"] = "Plate",
+					},
+					[77553] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["7343:INVTYPE_SHOULDER"] = {
+			["31564:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[16480] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[80284] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -39348,17 +39581,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9909:INVTYPE_2HWEAPON"] = {
+			["36668:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[18042] = {
-						["subClass"] = "Two-Handed Axes",
+					[94962] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["12007:INVTYPE_HOLDABLE"] = {
+			["2613:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[89201] = {
-						["subClass"] = "Miscellaneous",
+					[3059] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -39396,17 +39629,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["31564:INVTYPE_WEAPON"] = {
+			["7343:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[80284] = {
-						["subClass"] = "One-Handed Maces",
+					[16480] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["13980:INVTYPE_RANGED"] = {
+			["12007:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[32649] = {
-						["subClass"] = "Bows",
+					[89201] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -39420,10 +39656,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11458:INVTYPE_WEAPON"] = {
+			["8382:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[21905] = {
-						["subClass"] = "One-Handed Maces",
+					[14920] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -39434,70 +39670,35 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3613:INVTYPE_CHEST"] = {
+			["7936:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[27861] = {
-						["subClass"] = "Plate",
-					},
-					[33365] = {
-						["subClass"] = "Plate",
+					[14106] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["18339:INVTYPE_WEAPON"] = {
+			["2497:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[47019] = {
-						["subClass"] = "One-Handed Maces",
+					[58172] = {
+						["subClass"] = "Miscellaneous",
 					},
-				},
-			},
-			["8269:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[14604] = {
+					[17587] = {
+						["subClass"] = "Miscellaneous",
+					},
+					[18664] = {
+						["subClass"] = "Miscellaneous",
+					},
+					[32110] = {
 						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["27113:INVTYPE_WAIST"] = {
+			["18741:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[80405] = {
+					[54371] = {
 						["subClass"] = "Plate",
 					},
-					[80437] = {
-						["subClass"] = "Plate",
-					},
-					[78594] = {
-						["subClass"] = "Plate",
-					},
-					[77519] = {
-						["subClass"] = "Plate",
-					},
-					[77621] = {
-						["subClass"] = "Plate",
-					},
-					[77587] = {
-						["subClass"] = "Plate",
-					},
-					[68431] = {
-						["subClass"] = "Plate",
-					},
-					[77553] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["27081:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[79959] = {
-						["subClass"] = "Plate",
-					},
-					[79960] = {
-						["subClass"] = "Plate",
-					},
-					[79988] = {
-						["subClass"] = "Plate",
-					},
-					[79952] = {
+					[46491] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -39519,17 +39720,43 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7936:INVTYPE_2HWEAPON"] = {
+			["8269:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[14106] = {
-						["subClass"] = "Staves",
+					[14604] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["3532:INVTYPE_WEAPON"] = {
+			["27081:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[7316] = {
-						["subClass"] = "One-Handed Swords",
+					[79959] = {
+						["subClass"] = "Plate",
+					},
+					[79960] = {
+						["subClass"] = "Plate",
+					},
+					[79988] = {
+						["subClass"] = "Plate",
+					},
+					[79952] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18021:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[46984] = {
+						["subClass"] = "Plate",
+					},
+					[44371] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18339:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[47019] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -39557,10 +39784,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23068:INVTYPE_HAND"] = {
+			["14578:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[62777] = {
-						["subClass"] = "Plate",
+					[32073] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -39571,19 +39798,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2497:INVTYPE_HOLDABLE"] = {
+			["18051:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[58172] = {
-						["subClass"] = "Miscellaneous",
-					},
-					[17587] = {
-						["subClass"] = "Miscellaneous",
-					},
-					[18664] = {
-						["subClass"] = "Miscellaneous",
-					},
-					[32110] = {
-						["subClass"] = "Miscellaneous",
+					[42238] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -39594,13 +39812,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18021:INVTYPE_HEAD"] = {
+			["5422:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[46984] = {
-						["subClass"] = "Plate",
-					},
-					[44371] = {
-						["subClass"] = "Plate",
+					[7673] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -39617,19 +39832,25 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8726:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[49186] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
 			["13874:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[31622] = {
 						["subClass"] = "Plate",
 					},
 					[31907] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["23614:INVTYPE_HAND"] = {
+				["sources"] = {
+					[63086] = {
+						["subClass"] = "Plate",
+					},
+					[66467] = {
+						["subClass"] = "Plate",
+					},
+					[63570] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -39641,10 +39862,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5422:INVTYPE_WEAPON"] = {
+			["8726:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[7673] = {
-						["subClass"] = "One-Handed Axes",
+					[49186] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
@@ -39671,10 +39892,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14578:INVTYPE_2HWEAPON"] = {
+			["1357:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[32073] = {
-						["subClass"] = "Staves",
+					[31623] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -39685,10 +39906,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6110:INVTYPE_CLOAK"] = {
+			["17498:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[13113] = {
-						["subClass"] = "Cloth",
+					[43106] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+					[43099] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+					[40671] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -39699,24 +39926,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11877:INVTYPE_RANGEDRIGHT"] = {
+			["6110:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[46905] = {
-						["subClass"] = "Guns",
-					},
-				},
-			},
-			["18118:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[42327] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["1357:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[31623] = {
-						["subClass"] = "Shields",
+					[13113] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -39730,10 +39943,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3816:INVTYPE_2HWEAPON"] = {
+			["22174:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[29358] = {
-						["subClass"] = "Two-Handed Swords",
+					[65494] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["11877:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[46905] = {
+						["subClass"] = "Guns",
+					},
+				},
+			},
+			["18065:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[54397] = {
+						["subClass"] = "Plate",
+					},
+					[46492] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -39751,10 +39981,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22174:INVTYPE_WEAPON"] = {
+			["3816:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[65494] = {
-						["subClass"] = "Daggers",
+					[29358] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -39765,30 +39995,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14950:INVTYPE_CLOAK"] = {
+			["9327:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[34257] = {
-						["subClass"] = "Cloth",
+					[16634] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
-			["22051:INVTYPE_WEAPON"] = {
+			["645:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[67059] = {
+					[1755] = {
 						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["17498:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[43106] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-					[43099] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-					[40671] = {
-						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -39796,6 +40013,13 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[12510] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["21886:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[60634] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -39816,9 +40040,21 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22234:INVTYPE_WAIST"] = {
+			["9241:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[64270] = {
+					[21469] = {
+						["subClass"] = "Plate",
+					},
+					[18693] = {
+						["subClass"] = "Plate",
+					},
+					[20892] = {
+						["subClass"] = "Plate",
+					},
+					[72662] = {
+						["subClass"] = "Plate",
+					},
+					[17605] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -39844,34 +40080,40 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15900:INVTYPE_CLOAK"] = {
+			["14879:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[36647] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["13702:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[28237] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9599:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[19119] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["18065:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[54397] = {
+					[33236] = {
 						["subClass"] = "Plate",
 					},
-					[46492] = {
+					[33213] = {
 						["subClass"] = "Plate",
+					},
+					[33260] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22234:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[64270] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["26957:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[68711] = {
+						["subClass"] = "Plate",
+					},
+					[76254] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18194:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[42780] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -39889,13 +40131,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9327:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[16634] = {
-						["subClass"] = "Bows",
-					},
-				},
-			},
 			["21609:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[65994] = {
@@ -39904,11 +40139,18 @@ CanIMogItDatabase = {
 					[60956] = {
 						["subClass"] = "Plate",
 					},
+					[57246] = {
+						["subClass"] = "Plate",
+					},
 					[62142] = {
 						["subClass"] = "Plate",
 					},
-					[57246] = {
-						["subClass"] = "Plate",
+				},
+			},
+			["13311:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[26945] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -39926,22 +40168,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9241:INVTYPE_SHOULDER"] = {
+			["18290:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[21469] = {
-						["subClass"] = "Plate",
-					},
-					[18693] = {
-						["subClass"] = "Plate",
-					},
-					[20892] = {
-						["subClass"] = "Plate",
-					},
-					[72662] = {
-						["subClass"] = "Plate",
-					},
-					[17605] = {
-						["subClass"] = "Plate",
+					[43102] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -39952,17 +40182,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21886:INVTYPE_WEAPON"] = {
+			["3376:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[60634] = {
-						["subClass"] = "Daggers",
+					[12038] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["18194:INVTYPE_CLOAK"] = {
+			["9564:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[42780] = {
-						["subClass"] = "Cloth",
+					[17560] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -39983,13 +40213,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["26957:INVTYPE_HEAD"] = {
+			["3144:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[68711] = {
-						["subClass"] = "Plate",
-					},
-					[76254] = {
-						["subClass"] = "Plate",
+					[3785] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -40003,17 +40230,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13311:INVTYPE_RANGEDRIGHT"] = {
+			["14260:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[26945] = {
-						["subClass"] = "Crossbows",
+					[30520] = {
+						["subClass"] = "Guns",
 					},
 				},
 			},
-			["3144:INVTYPE_SHIELD"] = {
+			["20173:INVTYPE_FEET"] = {
 				["sources"] = {
-					[3785] = {
-						["subClass"] = "Shields",
+					[51186] = {
+						["subClass"] = "Plate",
+					},
+					[49819] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -40034,17 +40264,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3376:INVTYPE_2HWEAPON"] = {
+			["4225:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[12038] = {
-						["subClass"] = "Staves",
+					[5683] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["4227:INVTYPE_CHEST"] = {
+			["5608:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[5685] = {
-						["subClass"] = "Plate",
+					[34203] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -40069,13 +40299,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18201:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[42796] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
 			["3899:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[29291] = {
@@ -40086,10 +40309,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4935:INVTYPE_WAIST"] = {
+			["10204:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[39724] = {
-						["subClass"] = "Plate",
+					[19028] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["18206:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[42875] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -40100,9 +40330,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6608:INVTYPE_WEAPON"] = {
+			["8622:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[10636] = {
+					[93250] = {
 						["subClass"] = "One-Handed Axes",
 					},
 				},
@@ -40114,10 +40344,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5608:INVTYPE_WEAPON"] = {
+			["4935:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[34203] = {
-						["subClass"] = "Daggers",
+					[39724] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -40128,17 +40358,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8622:INVTYPE_WEAPON"] = {
+			["9274:INVTYPE_HAND"] = {
 				["sources"] = {
-					[93250] = {
-						["subClass"] = "One-Handed Axes",
+					[20916] = {
+						["subClass"] = "Plate",
+					},
+					[20709] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["2727:INVTYPE_SHOULDER"] = {
+			["6608:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[3195] = {
-						["subClass"] = "Plate",
+					[10636] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -40156,13 +40389,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23620:INVTYPE_FEET"] = {
+			["20563:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[63597] = {
-						["subClass"] = "Plate",
-					},
-					[66413] = {
-						["subClass"] = "Plate",
+					[50798] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -40187,58 +40417,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9274:INVTYPE_HAND"] = {
-				["sources"] = {
-					[20916] = {
-						["subClass"] = "Plate",
-					},
-					[20709] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2226:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[2576] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["2015:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[31290] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["18195:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[42781] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["16867:INVTYPE_FEET"] = {
-				["sources"] = {
-					[38977] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["885:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[93191] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["6531:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[9982] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["35533:INVTYPE_WRIST"] = {
 				["sources"] = {
 					[89371] = {
@@ -40249,23 +40427,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18206:INVTYPE_CLOAK"] = {
+			["2226:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[42875] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["13478:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[30884] = {
-						["subClass"] = "Plate",
-					},
-					[31234] = {
-						["subClass"] = "Plate",
-					},
-					[27464] = {
-						["subClass"] = "Plate",
+					[2576] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -40292,6 +40457,71 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["16867:INVTYPE_FEET"] = {
+				["sources"] = {
+					[38977] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["885:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[93191] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["6531:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[9982] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18195:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[42781] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["2015:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[31290] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["13478:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[30884] = {
+						["subClass"] = "Plate",
+					},
+					[31234] = {
+						["subClass"] = "Plate",
+					},
+					[27464] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["23620:INVTYPE_FEET"] = {
+				["sources"] = {
+					[63597] = {
+						["subClass"] = "Plate",
+					},
+					[66413] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2727:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[3195] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["22074:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
 					[65553] = {
@@ -40313,17 +40543,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4225:INVTYPE_SHIELD"] = {
+			["9578:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[5683] = {
-						["subClass"] = "Shields",
+					[17564] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
-			["20563:INVTYPE_WEAPON"] = {
+			["18201:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[50798] = {
-						["subClass"] = "One-Handed Swords",
+					[42796] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -40367,10 +40597,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9564:INVTYPE_WEAPON"] = {
+			["4227:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[17560] = {
-						["subClass"] = "One-Handed Maces",
+					[5685] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -40381,27 +40611,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10204:INVTYPE_CLOAK"] = {
+			["13702:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[19028] = {
+					[28237] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["20173:INVTYPE_FEET"] = {
+			["10203:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[51186] = {
-						["subClass"] = "Plate",
-					},
-					[49819] = {
-						["subClass"] = "Plate",
+					[19025] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["9578:INVTYPE_2HWEAPON"] = {
+			["9599:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[17564] = {
-						["subClass"] = "Two-Handed Maces",
+					[19119] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -40412,10 +40639,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14260:INVTYPE_RANGEDRIGHT"] = {
+			["15900:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[30520] = {
-						["subClass"] = "Guns",
+					[36647] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -40450,17 +40677,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10203:INVTYPE_CLOAK"] = {
+			["4308:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[19025] = {
-						["subClass"] = "Cloth",
+					[5795] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["18290:INVTYPE_WEAPON"] = {
+			["22051:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[43102] = {
-						["subClass"] = "One-Handed Swords",
+					[67059] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -40481,23 +40708,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4308:INVTYPE_WRIST"] = {
+			["14950:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[5795] = {
-						["subClass"] = "Plate",
+					[34257] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["14879:INVTYPE_WAIST"] = {
+			["18118:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[33236] = {
-						["subClass"] = "Plate",
-					},
-					[33213] = {
-						["subClass"] = "Plate",
-					},
-					[33260] = {
-						["subClass"] = "Plate",
+					[42327] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -40537,10 +40758,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["645:INVTYPE_WEAPON"] = {
+			["14375:INVTYPE_HAND"] = {
 				["sources"] = {
-					[1755] = {
-						["subClass"] = "One-Handed Axes",
+					[34247] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -40572,17 +40793,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14375:INVTYPE_HAND"] = {
+			["18175:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[34247] = {
+					[44877] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["18051:INVTYPE_SHIELD"] = {
+			["23068:INVTYPE_HAND"] = {
 				["sources"] = {
-					[42238] = {
-						["subClass"] = "Shields",
+					[62777] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -40593,15 +40814,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23614:INVTYPE_HAND"] = {
+			["4130:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[63086] = {
-						["subClass"] = "Plate",
-					},
-					[66467] = {
-						["subClass"] = "Plate",
-					},
-					[63570] = {
+					[13313] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -40613,10 +40828,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18175:INVTYPE_WRIST"] = {
+			["3532:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[44877] = {
-						["subClass"] = "Plate",
+					[7316] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -40634,9 +40849,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4130:INVTYPE_LEGS"] = {
+			["3613:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[13313] = {
+					[27861] = {
+						["subClass"] = "Plate",
+					},
+					[33365] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -40679,44 +40897,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8382:INVTYPE_LEGS"] = {
+			["7683:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[14920] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["18741:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[54371] = {
-						["subClass"] = "Plate",
-					},
-					[46491] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["34651:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[87113] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["2613:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[3059] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["8697:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[15481] = {
-						["subClass"] = "Plate",
+					[29359] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -40730,39 +40914,26 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14871:INVTYPE_WRIST"] = {
+			["34651:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[33197] = {
+					[87113] = {
 						["subClass"] = "Plate",
-					},
-					[33255] = {
-						["subClass"] = "Plate",
-					},
-					[33225] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["17508:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[40681] = {
-						["subClass"] = "Shields",
-					},
-					[41957] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["36394:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[95809] = {
-						["subClass"] = "Shields",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
 			["23889:INVTYPE_HAND"] = {
 				["sources"] = {
 					[62743] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["8697:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[15481] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -40784,6 +40955,50 @@ CanIMogItDatabase = {
 						["classRestrictions"] = {
 							"Warrior", -- [1]
 						},
+					},
+				},
+			},
+			["5458:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[12298] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["36394:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[95809] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["14858:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[37543] = {
+						["subClass"] = "Cloth",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+					[33166] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["18055:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[42242] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["17914:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[46775] = {
+						["subClass"] = "Daggers",
+					},
+					[42916] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -40827,23 +41042,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5458:INVTYPE_LEGS"] = {
+			["18027:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[12298] = {
+					[42110] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["886:INVTYPE_LEGS"] = {
+			["318:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[29759] = {
-						["subClass"] = "Plate",
-					},
-					[33401] = {
-						["subClass"] = "Plate",
-					},
-					[42173] = {
-						["subClass"] = "Plate",
+					[182] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -40875,38 +41084,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["318:INVTYPE_WEAPON"] = {
+			["17280:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[182] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["10044:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[21563] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["6599:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[10161] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["18027:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[42110] = {
+					[42184] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2352:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[77345] = {
-						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -40917,6 +41098,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["6599:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[10161] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["9038:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[16105] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["18819:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[46144] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["1422:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[2138] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
 			["20960:INVTYPE_LEGS"] = {
 				["sources"] = {
 					[61565] = {
@@ -40924,10 +41133,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4711:INVTYPE_HOLDABLE"] = {
+			["25921:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[7390] = {
-						["subClass"] = "Miscellaneous",
+					[71940] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -40955,44 +41164,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["356:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[27926] = {
-						["subClass"] = "Shields",
-					},
-					[26173] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["3614:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[4680] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["1676:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[10444] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["18678:INVTYPE_BODY"] = {
-				["sources"] = {
-					[43853] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["7502:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[13020] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
 			["9577:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[20774] = {
@@ -41000,10 +41171,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1099:INVTYPE_2HWEAPON"] = {
+			["3614:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[31807] = {
-						["subClass"] = "Two-Handed Axes",
+					[4680] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -41021,10 +41192,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18721:INVTYPE_CLOAK"] = {
+			["17894:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[45074] = {
-						["subClass"] = "Cloth",
+					[42912] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+					[41948] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -41049,6 +41223,41 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["17504:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[40677] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["18721:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[45074] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["17753:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[41171] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["9712:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[17558] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["18956:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[44894] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
 			["13671:INVTYPE_SHOULDER"] = {
 				["sources"] = {
 					[31743] = {
@@ -41063,10 +41272,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17753:INVTYPE_2HWEAPON"] = {
+			["9554:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[41171] = {
-						["subClass"] = "Two-Handed Swords",
+					[17195] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -41091,69 +41300,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19361:INVTYPE_HOLDABLE"] = {
+			["19520:INVTYPE_FEET"] = {
 				["sources"] = {
-					[47038] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["9554:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[17195] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["3753:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[10640] = {
+					[98696] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["18760:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[54430] = {
-						["subClass"] = "Plate",
-					},
-					[54405] = {
-						["subClass"] = "Plate",
-					},
-					[46470] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["17967:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[41943] = {
-						["subClass"] = "Cloth",
-					},
-					[41940] = {
-						["subClass"] = "Cloth",
-					},
-					[41942] = {
-						["subClass"] = "Cloth",
-					},
-					[41944] = {
-						["subClass"] = "Cloth",
-					},
-					[41941] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["17286:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[40598] = {
-						["subClass"] = "Plate",
-					},
-					[40594] = {
-						["subClass"] = "Plate",
-					},
-					[40599] = {
-						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -41171,6 +41324,47 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[63757] = {
 						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["4274:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[5749] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["1632:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[1756] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["17286:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[40598] = {
+						["subClass"] = "Plate",
+					},
+					[40594] = {
+						["subClass"] = "Plate",
+					},
+					[40599] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["4475:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[6120] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["18946:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[49822] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -41209,53 +41403,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9713:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[17561] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["1632:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[1756] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["19249:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[45947] = {
-						["subClass"] = "Cloth",
-					},
-					[45949] = {
-						["subClass"] = "Cloth",
-					},
-					[45951] = {
-						["subClass"] = "Cloth",
-					},
-					[45948] = {
-						["subClass"] = "Cloth",
-					},
-					[45950] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["2564:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[4635] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["13527:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[33222] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["2484:INVTYPE_HEAD"] = {
 				["sources"] = {
 					[2968] = {
@@ -41277,16 +41424,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1803:INVTYPE_WEAPON"] = {
+			["2564:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[10649] = {
-						["subClass"] = "One-Handed Swords",
-					},
-					[12043] = {
-						["subClass"] = "One-Handed Swords",
-					},
-					[32736] = {
-						["subClass"] = "One-Handed Swords",
+					[4635] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -41320,10 +41461,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21817:INVTYPE_2HWEAPON"] = {
+			["13059:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[66455] = {
-						["subClass"] = "Staves",
+					[32879] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -41334,10 +41475,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14924:INVTYPE_CLOAK"] = {
+			["5788:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[34072] = {
-						["subClass"] = "Cloth",
+					[8540] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -41358,10 +41499,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18193:INVTYPE_CLOAK"] = {
+			["21817:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[42779] = {
-						["subClass"] = "Cloth",
+					[66455] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -41372,17 +41513,55 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7669:INVTYPE_2HWEAPON"] = {
+			["14924:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[16104] = {
-						["subClass"] = "Two-Handed Axes",
+					[34072] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["22273:INVTYPE_2HWEAPON"] = {
+			["9246:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[63758] = {
-						["subClass"] = "Staves",
+					[72696] = {
+						["subClass"] = "Plate",
+					},
+					[21314] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["19938:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[49915] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18193:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[42779] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["19498:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[46876] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["11702:INVTYPE_ROBE"] = {
+				["sources"] = {
+					[22464] = {
+						["subClass"] = "Cosmetic",
+					},
+				},
+			},
+			["17755:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[41173] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
@@ -41400,17 +41579,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4292:INVTYPE_LEGS"] = {
+			["22273:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[10426] = {
-						["subClass"] = "Plate",
+					[63758] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["19498:INVTYPE_HEAD"] = {
+			["22338:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[46876] = {
-						["subClass"] = "Plate",
+					[67939] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -41428,26 +41607,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14343:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[31646] = {
-						["subClass"] = "Plate",
-					},
-					[31953] = {
-						["subClass"] = "Plate",
-					},
-					[31956] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["11702:INVTYPE_ROBE"] = {
-				["sources"] = {
-					[22464] = {
-						["subClass"] = "Cosmetic",
-					},
-				},
-			},
 			["6890:INVTYPE_HAND"] = {
 				["sources"] = {
 					[12513] = {
@@ -41458,10 +41617,30 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12273:INVTYPE_2HWEAPON"] = {
+			["19343:INVTYPE_BODY"] = {
 				["sources"] = {
-					[24832] = {
-						["subClass"] = "Two-Handed Swords",
+					[46206] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["17477:INVTYPE_HAND"] = {
+				["sources"] = {
+					[41930] = {
+						["subClass"] = "Plate",
+					},
+					[41929] = {
+						["subClass"] = "Plate",
+					},
+					[41925] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["8277:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[14612] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -41479,22 +41658,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["25115:INVTYPE_CLOAK"] = {
+			["5305:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[67836] = {
-						["subClass"] = "Cloth",
+					[7678] = {
+						["subClass"] = "Guns",
 					},
 				},
 			},
-			["17477:INVTYPE_HAND"] = {
+			["19945:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[41930] = {
+					[51213] = {
 						["subClass"] = "Plate",
 					},
-					[41929] = {
-						["subClass"] = "Plate",
-					},
-					[41925] = {
+					[50901] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -41542,10 +41718,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8277:INVTYPE_TABARD"] = {
+			["5752:INVTYPE_HAND"] = {
 				["sources"] = {
-					[14612] = {
-						["subClass"] = "Miscellaneous",
+					[8481] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -41559,10 +41735,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2999:INVTYPE_CLOAK"] = {
+			["22187:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[15316] = {
-						["subClass"] = "Cloth",
+					[59657] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -41576,10 +41752,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5752:INVTYPE_HAND"] = {
+			["13707:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[8481] = {
-						["subClass"] = "Plate",
+					[28262] = {
+						["subClass"] = "Cloth",
+					},
+					[32151] = {
+						["subClass"] = "Cloth",
+					},
+					[30738] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -41590,10 +41772,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11520:INVTYPE_WEAPON"] = {
+			["2538:INVTYPE_HAND"] = {
 				["sources"] = {
-					[22012] = {
-						["subClass"] = "Daggers",
+					[2965] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -41604,20 +41786,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17602:INVTYPE_CLOAK"] = {
+			["19435:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[45114] = {
-						["subClass"] = "Cloth",
-					},
-					[84416] = {
-						["subClass"] = "Cloth",
+					[46577] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["2538:INVTYPE_HAND"] = {
+			["18868:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[2965] = {
-						["subClass"] = "Plate",
+					[45072] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -41641,30 +41820,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18868:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[45072] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9341:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[17871] = {
-						["subClass"] = "Shields",
-					},
-					[16651] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["931:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[6541] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
 			["7736:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[14916] = {
@@ -41675,16 +41830,37 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24273:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[62836] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
 			["5636:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[9050] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["931:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[6541] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["6267:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10103] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["13296:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[26916] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["3258:INVTYPE_HAND"] = {
+				["sources"] = {
+					[3939] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -41701,22 +41877,22 @@ CanIMogItDatabase = {
 					[68729] = {
 						["subClass"] = "Plate",
 					},
-					[68595] = {
+					[76253] = {
 						["subClass"] = "Plate",
 					},
-					[81628] = {
+					[76462] = {
 						["subClass"] = "Plate",
 					},
 					[74408] = {
 						["subClass"] = "Plate",
 					},
-					[76253] = {
+					[68595] = {
 						["subClass"] = "Plate",
 					},
 					[76501] = {
 						["subClass"] = "Plate",
 					},
-					[76462] = {
+					[81628] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -41742,10 +41918,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1246:INVTYPE_2HWEAPON"] = {
+			["1088:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[1297] = {
-						["subClass"] = "Two-Handed Axes",
+					[26768] = {
+						["subClass"] = "Cloth",
+					},
+					[24258] = {
+						["subClass"] = "Cloth",
+					},
+					[25939] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -41756,10 +41938,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19503:INVTYPE_HOLDABLE"] = {
+			["12242:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[47039] = {
-						["subClass"] = "Miscellaneous",
+					[24468] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -41770,23 +41952,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19516:INVTYPE_HAND"] = {
+			["3257:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[98697] = {
+					[13319] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
 					},
 				},
 			},
-			["5673:INVTYPE_FEET"] = {
+			["19505:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[8367] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[50809] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -41797,9 +41973,15 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3258:INVTYPE_HAND"] = {
+			["9753:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[3939] = {
+					[19320] = {
+						["subClass"] = "Plate",
+					},
+					[21493] = {
+						["subClass"] = "Plate",
+					},
+					[21492] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -41817,10 +41999,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19505:INVTYPE_CLOAK"] = {
+			["6659:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[50809] = {
-						["subClass"] = "Cloth",
+					[31563] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -41845,10 +42027,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4232:INVTYPE_LEGS"] = {
+			["10257:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[13307] = {
-						["subClass"] = "Plate",
+					[19123] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -41868,34 +42050,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17649:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[84436] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["16757:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[38932] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["25935:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[73178] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["10257:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[19123] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
 			["3115:INVTYPE_WRIST"] = {
 				["sources"] = {
 					[3754] = {
@@ -41910,10 +42064,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5653:INVTYPE_WEAPON"] = {
+			["25935:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[8330] = {
-						["subClass"] = "Daggers",
+					[73178] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -41965,6 +42119,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["20280:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[51124] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["2629:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[3078] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["17748:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[41166] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["14428:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[30834] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
 			["13763:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[28764] = {
@@ -42003,37 +42185,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8841:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[15772] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["20032:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[51138] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-					[50826] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["17506:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[40679] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["10938:INVTYPE_BODY"] = {
-				["sources"] = {
-					[20500] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
 			["20411:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[51295] = {
@@ -42055,10 +42206,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8398:INVTYPE_SHIELD"] = {
+			["24985:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[14943] = {
-						["subClass"] = "Shields",
+					[72516] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["17275:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[41260] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["1093:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[1108] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -42066,6 +42231,20 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[46918] = {
 						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["8398:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[14943] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["20237:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[50854] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -42083,40 +42262,28 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14430:INVTYPE_RANGEDRIGHT"] = {
+			["21049:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[30864] = {
-						["subClass"] = "Guns",
+					[52692] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["17464:INVTYPE_SHOULDER"] = {
+			["19944:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[42719] = {
+					[50909] = {
 						["subClass"] = "Plate",
 					},
-					[42817] = {
+					[50885] = {
 						["subClass"] = "Plate",
 					},
-					[45518] = {
+					[51197] = {
 						["subClass"] = "Plate",
 					},
-					[42723] = {
-						["subClass"] = "Plate",
-					},
-					[45514] = {
-						["subClass"] = "Plate",
-					},
-					[42724] = {
-						["subClass"] = "Plate",
-					},
-					[42813] = {
-						["subClass"] = "Plate",
-					},
-					[42818] = {
-						["subClass"] = "Plate",
-					},
-					[45513] = {
+					[51221] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -42135,20 +42302,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21049:INVTYPE_CHEST"] = {
+			["21003:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[52692] = {
+					[60995] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					},
+					[60924] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["1208:INVTYPE_BODY"] = {
+			["24488:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[1254] = {
-						["subClass"] = "Miscellaneous",
+					[66824] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -42169,13 +42336,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21003:INVTYPE_SHOULDER"] = {
+			["21953:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[60995] = {
-						["subClass"] = "Plate",
-					},
-					[60924] = {
-						["subClass"] = "Plate",
+					[65453] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -42186,10 +42350,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20536:INVTYPE_TABARD"] = {
+			["16705:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[50147] = {
-						["subClass"] = "Miscellaneous",
+					[39856] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -42200,31 +42364,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21953:INVTYPE_2HWEAPON"] = {
+			["989:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[65453] = {
-						["subClass"] = "Two-Handed Swords",
+					[31250] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["17495:INVTYPE_2HWEAPON"] = {
+			["15888:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[40668] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["7656:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[13384] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["22762:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[65301] = {
-						["subClass"] = "Plate",
+					[36549] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -42235,6 +42385,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["22762:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[65301] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["14554:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[31972] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
 			["11705:INVTYPE_ROBE"] = {
 				["sources"] = {
 					[22467] = {
@@ -42242,9 +42406,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36305:INVTYPE_WEAPON"] = {
+			["2280:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[95331] = {
+					[2644] = {
 						["subClass"] = "Daggers",
 					},
 				},
@@ -42256,24 +42420,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8379:INVTYPE_RANGED"] = {
+			["4441:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[14915] = {
-						["subClass"] = "Bows",
+					[13374] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["14554:INVTYPE_SHIELD"] = {
+			["7351:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[31972] = {
+					[12704] = {
 						["subClass"] = "Shields",
 					},
 				},
 			},
-			["2280:INVTYPE_WEAPON"] = {
+			["10694:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[2644] = {
-						["subClass"] = "Daggers",
+					[20174] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -42298,10 +42462,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21643:INVTYPE_WEAPON"] = {
+			["2164:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[72521] = {
-						["subClass"] = "One-Handed Swords",
+					[2496] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -42319,16 +42483,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["156:INVTYPE_WEAPON"] = {
+			["21027:INVTYPE_HAND"] = {
 				["sources"] = {
-					[31536] = {
-						["subClass"] = "One-Handed Maces",
+					[62198] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["2164:INVTYPE_SHIELD"] = {
+			["17151:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[2496] = {
+					[39827] = {
 						["subClass"] = "Shields",
 					},
 				},
@@ -42344,34 +42508,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[21967] = {
 						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["21027:INVTYPE_HAND"] = {
-				["sources"] = {
-					[62198] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["17151:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[39827] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["14020:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[32620] = {
-						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["17170:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[44351] = {
-						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -42405,20 +42541,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9658:INVTYPE_RANGED"] = {
+			["19130:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[18680] = {
-						["subClass"] = "Bows",
-					},
-					[18277] = {
-						["subClass"] = "Bows",
+					[45189] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["25648:INVTYPE_HAND"] = {
+			["2611:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[69991] = {
-						["subClass"] = "Plate",
+					[3056] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -42453,6 +42586,37 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["6330:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10202] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["9658:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[18680] = {
+						["subClass"] = "Bows",
+					},
+					[18277] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["25648:INVTYPE_HAND"] = {
+				["sources"] = {
+					[69991] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["613:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[529] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
 			["4235:INVTYPE_WAIST"] = {
 				["sources"] = {
 					[5697] = {
@@ -42460,10 +42624,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4328:INVTYPE_FEET"] = {
+			["21672:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[14425] = {
-						["subClass"] = "Plate",
+					[90872] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -42481,31 +42645,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21672:INVTYPE_WEAPON"] = {
+			["11249:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[90872] = {
+					[21582] = {
 						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["1641:INVTYPE_2HWEAPON"] = {
+			["641:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[9254] = {
-						["subClass"] = "Staves",
+					[1298] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["9542:INVTYPE_SHIELD"] = {
+			["16054:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[17183] = {
-						["subClass"] = "Shields",
+					[38942] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["17451:INVTYPE_FEET"] = {
+			["21506:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[41805] = {
-						["subClass"] = "Plate",
+					[61649] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -42539,34 +42703,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21738:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[58975] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["4509:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[93245] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["22201:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[67857] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["17282:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[41589] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["17510:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[41423] = {
@@ -42580,24 +42716,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["20473:INVTYPE_FEET"] = {
+			["998:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[51890] = {
-						["subClass"] = "Plate",
+					[26058] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["10207:INVTYPE_HAND"] = {
+			["22201:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[21753] = {
-						["subClass"] = "Plate",
+					[67857] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
-			["21958:INVTYPE_2HWEAPON"] = {
+			["5310:INVTYPE_FEET"] = {
 				["sources"] = {
-					[65484] = {
-						["subClass"] = "Staves",
+					[7489] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -42608,10 +42744,41 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["9334:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[16642] = {
+						["subClass"] = "Plate",
+					},
+					[17484] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
 			["467:INVTYPE_SHIELD"] = {
 				["sources"] = {
 					[337] = {
 						["subClass"] = "Shields",
+					},
+				},
+			},
+			["21958:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[65484] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["13324:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[26971] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["9495:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[17064] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -42636,10 +42803,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1493:INVTYPE_SHIELD"] = {
+			["13685:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[26198] = {
-						["subClass"] = "Shields",
+					[28561] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -42657,29 +42824,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9517:INVTYPE_FEET"] = {
+			["2087:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[19635] = {
-						["subClass"] = "Plate",
-					},
-					[21240] = {
-						["subClass"] = "Plate",
-					},
-					[19113] = {
-						["subClass"] = "Plate",
-					},
-					[17867] = {
-						["subClass"] = "Plate",
-					},
-					[20797] = {
-						["subClass"] = "Plate",
+					[2406] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["6637:INVTYPE_RANGED"] = {
+			["14553:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[10247] = {
-						["subClass"] = "Bows",
+					[31971] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -42690,44 +42845,41 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2087:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[2406] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["6932:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[12046] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["21740:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[60443] = {
-						["subClass"] = "Polearms",
-					},
-					[65560] = {
-						["subClass"] = "Polearms",
-					},
-					[60633] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["21985:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[72526] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
 			["3506:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[10160] = {
 						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["6334:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[16102] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["5953:INVTYPE_ROBE"] = {
+				["sources"] = {
+					[89629] = {
+						["subClass"] = "Cosmetic",
+					},
+				},
+			},
+			["8103:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[14130] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+				},
+			},
+			["5607:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[32949] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[32948] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -42738,17 +42890,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19497:INVTYPE_HEAD"] = {
+			["1924:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[46875] = {
-						["subClass"] = "Plate",
+					[29763] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["6665:INVTYPE_WEAPON"] = {
+			["18733:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[13153] = {
-						["subClass"] = "Daggers",
+					[54349] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -42766,13 +42918,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5607:INVTYPE_WEAPON"] = {
+			["398:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[32949] = {
-						["subClass"] = "One-Handed Maces",
-					},
-					[32948] = {
-						["subClass"] = "One-Handed Maces",
+					[31719] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
@@ -42786,10 +42935,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["16888:INVTYPE_2HWEAPON"] = {
+			["14601:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[38944] = {
-						["subClass"] = "Staves",
+					[32309] = {
+						["subClass"] = "Plate",
+					},
+					[34229] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -42824,41 +42976,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["16778:INVTYPE_WEAPON"] = {
+			["3353:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[38934] = {
-						["subClass"] = "One-Handed Maces",
+					[10079] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["27118:INVTYPE_LEGS"] = {
+			["17067:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[77487] = {
-						["subClass"] = "Plate",
-					},
-					[77623] = {
-						["subClass"] = "Plate",
-					},
-					[77521] = {
-						["subClass"] = "Plate",
-					},
-					[68433] = {
-						["subClass"] = "Plate",
-					},
-					[77555] = {
-						["subClass"] = "Plate",
-					},
-					[80407] = {
-						["subClass"] = "Plate",
-					},
-					[80439] = {
-						["subClass"] = "Plate",
-					},
-					[78596] = {
-						["subClass"] = "Plate",
-					},
-					[77589] = {
-						["subClass"] = "Plate",
+					[38946] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -42876,30 +43004,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9907:INVTYPE_WEAPON"] = {
+			["22238:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[18038] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["1731:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[1887] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["17067:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[38946] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["7553:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[13085] = {
+					[62059] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -42908,6 +43015,27 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[12387] = {
 						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["9586:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[17252] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["21669:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[90805] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["3441:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[17306] = {
+						["subClass"] = "Fist Weapons",
 					},
 				},
 			},
@@ -42925,27 +43053,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9586:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[17252] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["11030:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[34176] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["3441:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[17306] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
 			["16824:INVTYPE_HAND"] = {
 				["sources"] = {
 					[38903] = {
@@ -42953,9 +43060,21 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6526:INVTYPE_SHOULDER"] = {
+			["5011:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[10037] = {
+					[33098] = {
+						["subClass"] = "Plate",
+					},
+					[33081] = {
+						["subClass"] = "Plate",
+					},
+					[6951] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+					[69101] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -42967,17 +43086,44 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21810:INVTYPE_2HWEAPON"] = {
+			["3479:INVTYPE_FEET"] = {
 				["sources"] = {
-					[62024] = {
-						["subClass"] = "Two-Handed Swords",
+					[5752] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["21779:INVTYPE_WEAPON"] = {
+			["6526:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[90865] = {
-						["subClass"] = "One-Handed Axes",
+					[10037] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["5604:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[9060] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["23151:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[67161] = {
+						["subClass"] = "Plate",
+					},
+					[67175] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
+			["15912:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[36638] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -42991,24 +43137,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5604:INVTYPE_SHIELD"] = {
+			["11469:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[9060] = {
-						["subClass"] = "Shields",
+					[21921] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["15912:INVTYPE_WEAPON"] = {
+			["5330:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[36638] = {
-						["subClass"] = "One-Handed Swords",
+					[7515] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["4439:INVTYPE_2HWEAPON"] = {
+			["9505:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[6052] = {
-						["subClass"] = "Two-Handed Axes",
+					[17851] = {
+						["subClass"] = "Plate",
+					},
+					[18623] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43026,13 +43175,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9505:INVTYPE_HEAD"] = {
+			["5657:INVTYPE_ROBE"] = {
 				["sources"] = {
-					[17851] = {
-						["subClass"] = "Plate",
-					},
-					[18623] = {
-						["subClass"] = "Plate",
+					[8336] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -43062,24 +43208,30 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8479:INVTYPE_FEET"] = {
+			["16033:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[15101] = {
-						["subClass"] = "Plate",
+					[38929] = {
+						["subClass"] = "Polearms",
 					},
 				},
 			},
-			["5330:INVTYPE_2HWEAPON"] = {
+			["2267:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[7515] = {
-						["subClass"] = "Staves",
+					[2957] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["21582:INVTYPE_WEAPON"] = {
+			["21888:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[90782] = {
-						["subClass"] = "One-Handed Maces",
+					[72511] = {
+						["subClass"] = "Daggers",
+					},
+					[62349] = {
+						["subClass"] = "Daggers",
+					},
+					[60399] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -43090,37 +43242,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15678:INVTYPE_ROBE"] = {
+			["27330:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[36669] = {
+					[80892] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["25511:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[71848] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["4231:INVTYPE_FEET"] = {
-				["sources"] = {
-					[5689] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["12423:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[24816] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-					[24709] = {
-						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -43134,10 +43259,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3108:INVTYPE_CLOAK"] = {
+			["4231:INVTYPE_FEET"] = {
 				["sources"] = {
-					[14403] = {
-						["subClass"] = "Cloth",
+					[5689] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["5089:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[7030] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -43145,6 +43280,13 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[22803] = {
 						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["2945:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[3535] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -43158,24 +43300,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27330:INVTYPE_WRIST"] = {
+			["15799:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[80892] = {
+					[36697] = {
 						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2710:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[10054] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["17588:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[84414] = {
-						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -43186,39 +43314,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22955:INVTYPE_WAIST"] = {
+			["24346:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[61419] = {
-						["subClass"] = "Plate",
+					[66825] = {
+						["subClass"] = "Cloth",
 					},
-					[61442] = {
-						["subClass"] = "Plate",
-					},
-					[59505] = {
-						["subClass"] = "Plate",
-					},
-					[59507] = {
-						["subClass"] = "Plate",
-					},
-					[61427] = {
-						["subClass"] = "Plate",
-					},
-					[64391] = {
-						["subClass"] = "Plate",
+					[63744] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["15799:INVTYPE_CHEST"] = {
+			["17588:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[36697] = {
-						["subClass"] = "Plate",
+					[84414] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
-			["11454:INVTYPE_FEET"] = {
+			["15890:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[21899] = {
-						["subClass"] = "Plate",
+					[36551] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["1592:INVTYPE_BODY"] = {
+				["sources"] = {
+					[1705] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -43229,22 +43352,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3447:INVTYPE_WRIST"] = {
+			["11454:INVTYPE_FEET"] = {
 				["sources"] = {
-					[30526] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["8604:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[15314] = {
-						["subClass"] = "Plate",
-					},
-					[26716] = {
-						["subClass"] = "Plate",
-					},
-					[26712] = {
+					[21899] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -43276,13 +43386,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36194:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95318] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
 			["2745:INVTYPE_LEGS"] = {
 				["sources"] = {
 					[3224] = {
@@ -43290,16 +43393,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5012:INVTYPE_LEGS"] = {
+			["6593:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[6952] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-					[69102] = {
-						["subClass"] = "Plate",
+					[10150] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -43310,10 +43407,38 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["22195:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[66026] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["8434:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[15021] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
 			["21858:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[65965] = {
 						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["3091:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[3729] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["8846:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[15777] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -43327,10 +43452,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21822:INVTYPE_WEAPON"] = {
+			["2543:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[60441] = {
-						["subClass"] = "Daggers",
+					[8357] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43341,17 +43466,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22195:INVTYPE_RANGEDRIGHT"] = {
+			["1063:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[66026] = {
-						["subClass"] = "Crossbows",
+					[1072] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
-			["903:INVTYPE_BODY"] = {
+			["15972:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[878] = {
-						["subClass"] = "Miscellaneous",
+					[36867] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -43365,17 +43490,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2543:INVTYPE_LEGS"] = {
+			["18654:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[8357] = {
-						["subClass"] = "Plate",
+					[60753] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["1063:INVTYPE_RANGED"] = {
+			["9028:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[1072] = {
-						["subClass"] = "Bows",
+					[18043] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -43392,10 +43517,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3404:INVTYPE_RANGED"] = {
+			["498:INVTYPE_HAND"] = {
 				["sources"] = {
-					[4162] = {
-						["subClass"] = "Bows",
+					[12287] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43406,37 +43531,6 @@ CanIMogItDatabase = {
 					},
 					[12135] = {
 						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9028:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[18043] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["5084:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[7025] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["498:INVTYPE_HAND"] = {
-				["sources"] = {
-					[12287] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["14787:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[32945] = {
-						["subClass"] = "Bows",
 					},
 				},
 			},
@@ -43461,15 +43555,40 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["15768:INVTYPE_HEAD"] = {
+			["14787:INVTYPE_RANGED"] = {
 				["sources"] = {
-					[36438] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[32945] = {
+						["subClass"] = "Bows",
 					},
-					[36327] = {
+				},
+			},
+			["14527:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[31734] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["3400:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[12039] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+					[33135] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+				},
+			},
+			["7799:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[13533] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["15676:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[36645] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -43494,10 +43613,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7799:INVTYPE_WEAPON"] = {
+			["11812:INVTYPE_FEET"] = {
 				["sources"] = {
-					[13533] = {
-						["subClass"] = "One-Handed Swords",
+					[46903] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43518,10 +43637,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21875:INVTYPE_2HWEAPON"] = {
+			["21947:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[65397] = {
-						["subClass"] = "Two-Handed Maces",
+					[65405] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -43544,13 +43663,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9029:INVTYPE_WEAPON"] = {
+			["22229:INVTYPE_HAND"] = {
 				["sources"] = {
-					[16617] = {
-						["subClass"] = "One-Handed Swords",
+					[66390] = {
+						["subClass"] = "Plate",
 					},
-					[21234] = {
-						["subClass"] = "One-Handed Swords",
+					[62072] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43561,19 +43680,19 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21947:INVTYPE_2HWEAPON"] = {
+			["21949:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[65405] = {
+					[62031] = {
+						["subClass"] = "Two-Handed Axes",
+					},
+					[62346] = {
 						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
-			["14732:INVTYPE_LEGS"] = {
+			["20172:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[32916] = {
-						["subClass"] = "Plate",
-					},
-					[32651] = {
+					[50789] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -43592,13 +43711,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21949:INVTYPE_2HWEAPON"] = {
+			["15800:INVTYPE_HAND"] = {
 				["sources"] = {
-					[62031] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-					[62346] = {
-						["subClass"] = "Two-Handed Axes",
+					[36651] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43619,16 +43735,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6289:INVTYPE_2HWEAPON"] = {
+			["4226:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[66864] = {
-						["subClass"] = "Polearms",
+					[5684] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["15800:INVTYPE_HAND"] = {
+			["7776:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[36651] = {
+					[13496] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -43640,10 +43756,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13383:INVTYPE_WRIST"] = {
+			["17745:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[27097] = {
-						["subClass"] = "Plate",
+					[41163] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -43661,10 +43777,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["17745:INVTYPE_CLOAK"] = {
+			["22661:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[41163] = {
-						["subClass"] = "Cloth",
+					[66610] = {
+						["subClass"] = "Cosmetic",
 					},
 				},
 			},
@@ -43675,12 +43791,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12985:INVTYPE_WRIST"] = {
+			["17273:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[31249] = {
+					[41107] = {
 						["subClass"] = "Plate",
 					},
-					[26708] = {
+					[45450] = {
+						["subClass"] = "Plate",
+					},
+					[41108] = {
+						["subClass"] = "Plate",
+					},
+					[41356] = {
+						["subClass"] = "Plate",
+					},
+					[45445] = {
+						["subClass"] = "Plate",
+					},
+					[41103] = {
+						["subClass"] = "Plate",
+					},
+					[41351] = {
+						["subClass"] = "Plate",
+					},
+					[45446] = {
+						["subClass"] = "Plate",
+					},
+					[41355] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -43695,10 +43832,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22661:INVTYPE_HEAD"] = {
+			["5648:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[66610] = {
-						["subClass"] = "Cosmetic",
+					[8350] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -43716,34 +43853,37 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22002:INVTYPE_WEAPON"] = {
+			["5563:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[65480] = {
-						["subClass"] = "One-Handed Maces",
+					[12228] = {
+						["subClass"] = "Cloth",
+					},
+					[12227] = {
+						["subClass"] = "Cloth",
+					},
+					[88898] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["5648:INVTYPE_2HWEAPON"] = {
+			["2014:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[8350] = {
-						["subClass"] = "Staves",
+					[2300] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
-			["15789:INVTYPE_SHOULDER"] = {
+			["2711:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[36330] = {
-						["subClass"] = "Plate",
-					},
-					[36819] = {
+					[10049] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["33749:INVTYPE_CHEST"] = {
+			["9556:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[86879] = {
-						["subClass"] = "Plate",
+					[17211] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -43754,10 +43894,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2014:INVTYPE_2HWEAPON"] = {
+			["21930:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[2300] = {
-						["subClass"] = "Two-Handed Maces",
+					[66489] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -43792,34 +43932,34 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9556:INVTYPE_WEAPON"] = {
+			["1670:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[17211] = {
-						["subClass"] = "Daggers",
+					[9243] = {
+						["subClass"] = "Cloth",
 					},
-				},
-			},
-			["21952:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[63761] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["5262:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[10562] = {
+					[32231] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["22243:INVTYPE_RANGEDRIGHT"] = {
+			["22246:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[65592] = {
-						["subClass"] = "Guns",
+					[60394] = {
+						["subClass"] = "One-Handed Swords",
 					},
-					[62029] = {
-						["subClass"] = "Guns",
+				},
+			},
+			["18749:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[46316] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["1841:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[2855] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -43840,9 +43980,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18749:INVTYPE_CHEST"] = {
+			["3239:INVTYPE_FEET"] = {
 				["sources"] = {
-					[46316] = {
+					[80212] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -43854,13 +43994,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14259:INVTYPE_CLOAK"] = {
+			["7027:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[30491] = {
-						["subClass"] = "Cloth",
-					},
-					[30530] = {
-						["subClass"] = "Cloth",
+					[14283] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43871,10 +44008,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3239:INVTYPE_FEET"] = {
+			["14908:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[80212] = {
-						["subClass"] = "Plate",
+					[33322] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -43899,10 +44036,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14908:INVTYPE_WEAPON"] = {
+			["2546:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[33322] = {
-						["subClass"] = "One-Handed Maces",
+					[14443] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -43913,17 +44050,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21956:INVTYPE_2HWEAPON"] = {
+			["17176:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[65382] = {
-						["subClass"] = "Staves",
+					[46319] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["2546:INVTYPE_HEAD"] = {
+			["4080:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[14443] = {
-						["subClass"] = "Plate",
+					[5399] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -43934,10 +44071,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14604:INVTYPE_WEAPON"] = {
+			["9627:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[32316] = {
-						["subClass"] = "One-Handed Maces",
+					[17318] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -43948,9 +44085,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["25705:INVTYPE_FEET"] = {
+			["20171:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[69986] = {
+					[49913] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -43969,13 +44106,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22001:INVTYPE_WEAPON"] = {
+			["3900:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[66457] = {
-						["subClass"] = "One-Handed Maces",
+					[29757] = {
+						["subClass"] = "Staves",
 					},
-					[60900] = {
-						["subClass"] = "One-Handed Maces",
+					[31648] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -44003,13 +44140,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3900:INVTYPE_2HWEAPON"] = {
+			["23632:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[29757] = {
-						["subClass"] = "Staves",
-					},
-					[31648] = {
-						["subClass"] = "Staves",
+					[66614] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44054,9 +44188,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6549:INVTYPE_WAIST"] = {
+			["22226:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[10023] = {
+					[62094] = {
+						["subClass"] = "Plate",
+					},
+					[66393] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44068,16 +44205,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12237:INVTYPE_SHIELD"] = {
+			["2185:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[24463] = {
+					[2521] = {
 						["subClass"] = "Shields",
 					},
 				},
 			},
-			["4102:INVTYPE_FEET"] = {
+			["22754:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[8605] = {
+					[65299] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44096,10 +44233,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2185:INVTYPE_SHIELD"] = {
+			["13345:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[2521] = {
-						["subClass"] = "Shields",
+					[27017] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
@@ -44134,20 +44271,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13997:INVTYPE_HEAD"] = {
+			["5412:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[30060] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[7663] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
-			["27121:INVTYPE_WAIST"] = {
+			["22399:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[83055] = {
-						["subClass"] = "Plate",
+					[62160] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -44202,32 +44336,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22399:INVTYPE_2HWEAPON"] = {
+			["6597:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[62160] = {
-						["subClass"] = "Staves",
+					[10157] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
-			["22957:INVTYPE_CHEST"] = {
+			["6692:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[59562] = {
-						["subClass"] = "Plate",
-					},
-					[61414] = {
-						["subClass"] = "Plate",
-					},
-					[61437] = {
-						["subClass"] = "Plate",
-					},
-					[63161] = {
-						["subClass"] = "Plate",
-					},
-					[59560] = {
-						["subClass"] = "Plate",
-					},
-					[61445] = {
-						["subClass"] = "Plate",
+					[31516] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -44245,10 +44364,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6597:INVTYPE_2HWEAPON"] = {
+			["22302:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[10157] = {
-						["subClass"] = "Two-Handed Swords",
+					[99226] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -44262,31 +44381,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22175:INVTYPE_WEAPON"] = {
+			["9992:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[66506] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["6692:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[31516] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["22302:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[99226] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["23626:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[63623] = {
-						["subClass"] = "Plate",
+					[18362] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -44300,6 +44398,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["5712:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[8409] = {
+						["subClass"] = "One-Handed Axes",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
 			["13317:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[28206] = {
@@ -44307,6 +44415,20 @@ CanIMogItDatabase = {
 					},
 					[33196] = {
 						["subClass"] = "Staves",
+					},
+				},
+			},
+			["23328:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[65373] = {
+						["subClass"] = "Crossbows",
+					},
+				},
+			},
+			["578:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[32841] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -44320,41 +44442,41 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23328:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[65373] = {
-						["subClass"] = "Crossbows",
-					},
-				},
-			},
-			["22666:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[67050] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["13240:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[28756] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["10502:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[19684] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
 			["7701:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[13388] = {
 						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["10330:INVTYPE_FEET"] = {
+				["sources"] = {
+					[21947] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["246:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[6005] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[93224] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["6664:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[10301] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["13314:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[26954] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -44372,10 +44494,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["282:INVTYPE_2HWEAPON"] = {
+			["7812:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[10332] = {
-						["subClass"] = "Staves",
+					[13556] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -44386,13 +44511,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23383:INVTYPE_2HWEAPON"] = {
+			["22977:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[62893] = {
-						["subClass"] = "Two-Handed Maces",
+					[59606] = {
+						["subClass"] = "Plate",
 					},
-					[62895] = {
-						["subClass"] = "Two-Handed Maces",
+					[61466] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44403,10 +44528,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9634:INVTYPE_2HWEAPON"] = {
+			["27323:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[17335] = {
-						["subClass"] = "Two-Handed Axes",
+					[80891] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44427,10 +44552,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22333:INVTYPE_RANGEDRIGHT"] = {
+			["22757:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[62916] = {
-						["subClass"] = "Guns",
+					[65293] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44441,16 +44566,15 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22756:INVTYPE_SHOULDER"] = {
+			["23617:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[65298] = {
+					[67053] = {
 						["subClass"] = "Plate",
 					},
-				},
-			},
-			["22757:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[65293] = {
+					[63577] = {
+						["subClass"] = "Plate",
+					},
+					[63110] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44462,6 +44586,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["7974:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[13927] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
 			["4437:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
 					[6050] = {
@@ -44469,17 +44600,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23329:INVTYPE_RANGEDRIGHT"] = {
+			["22270:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[60898] = {
-						["subClass"] = "Crossbows",
+					[65365] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["7974:INVTYPE_WEAPON"] = {
+			["5669:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[13927] = {
-						["subClass"] = "One-Handed Maces",
+					[8363] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -44504,13 +44638,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14551:INVTYPE_WEAPON"] = {
+			["23613:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[31954] = {
-						["subClass"] = "One-Handed Axes",
-					},
-					[31951] = {
-						["subClass"] = "One-Handed Axes",
+					[63562] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44528,37 +44659,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23613:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[63562] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["22640:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[86081] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["14261:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[30521] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["8626:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[49239] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
 			["23888:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[62694] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["6527:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[9974] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44567,6 +44677,27 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[26224] = {
 						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["14076:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[29913] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["24087:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[67176] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["23069:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[62716] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44594,37 +44725,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23070:INVTYPE_LEGS"] = {
+			["23612:INVTYPE_FEET"] = {
 				["sources"] = {
-					[62771] = {
+					[63074] = {
 						["subClass"] = "Plate",
 					},
-				},
-			},
-			["23220:INVTYPE_HAND"] = {
-				["sources"] = {
-					[67289] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["3220:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[3894] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["5309:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[7488] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["23069:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[62716] = {
+					[63565] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44639,9 +44745,37 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23222:INVTYPE_LEGS"] = {
+			["5141:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[67290] = {
+					[10064] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["5309:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[7488] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["22345:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[99227] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["7568:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[13109] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["5749:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[8478] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44660,41 +44794,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7568:INVTYPE_2HWEAPON"] = {
+			["6576:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[13109] = {
-						["subClass"] = "Polearms",
-					},
-				},
-			},
-			["5749:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[8478] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["22345:INVTYPE_RANGED"] = {
-				["sources"] = {
-					[99227] = {
-						["subClass"] = "Bows",
-					},
-				},
-			},
-			["9185:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[16407] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["1455:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[65956] = {
-						["subClass"] = "Cloth",
-					},
-					[65957] = {
-						["subClass"] = "Cloth",
+					[10308] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -44705,10 +44808,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1732:INVTYPE_HOLDABLE"] = {
+			["24339:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[1888] = {
-						["subClass"] = "Miscellaneous",
+					[61992] = {
+						["subClass"] = "Cloth",
+					},
+					[66816] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -44722,18 +44828,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1832:INVTYPE_CLOAK"] = {
+			["1455:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[19169] = {
+					[65956] = {
 						["subClass"] = "Cloth",
 					},
-					[24481] = {
-						["subClass"] = "Cloth",
-					},
-					[24772] = {
-						["subClass"] = "Cloth",
-					},
-					[18908] = {
+					[65957] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -44745,10 +44845,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["14468:INVTYPE_2HWEAPON"] = {
+			["1732:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[32071] = {
-						["subClass"] = "Two-Handed Swords",
+					[1888] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -44759,10 +44859,26 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3534:INVTYPE_2HWEAPON"] = {
+			["1832:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[33347] = {
-						["subClass"] = "Two-Handed Swords",
+					[19169] = {
+						["subClass"] = "Cloth",
+					},
+					[24772] = {
+						["subClass"] = "Cloth",
+					},
+					[24481] = {
+						["subClass"] = "Cloth",
+					},
+					[18908] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["34042:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[85975] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44811,6 +44927,27 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["14073:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[29889] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18780:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[45301] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["24698:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[66831] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
 			["17662:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[84448] = {
@@ -44818,47 +44955,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["216:INVTYPE_WEAPON"] = {
+			["8851:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[31541] = {
-						["subClass"] = "One-Handed Swords",
-					},
-					[4135] = {
-						["subClass"] = "One-Handed Swords",
+					[15782] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
 			["13454:INVTYPE_FEET"] = {
 				["sources"] = {
 					[34081] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["34042:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[85975] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["23624:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[63615] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["2520:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[6557] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["23619:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[63618] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44877,13 +44983,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11806:INVTYPE_FEET"] = {
-				["sources"] = {
-					[46901] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["24073:INVTYPE_CLOAK"] = {
 				["sources"] = {
 					[59581] = {
@@ -44891,10 +44990,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2875:INVTYPE_WEAPON"] = {
+			["23619:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[93211] = {
-						["subClass"] = "Daggers",
+					[63618] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["11522:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[22016] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -44905,9 +45011,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["25709:INVTYPE_SHOULDER"] = {
+			["11806:INVTYPE_FEET"] = {
 				["sources"] = {
-					[70057] = {
+					[46901] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -44922,6 +45028,20 @@ CanIMogItDatabase = {
 					},
 					[61460] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["2875:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[93211] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["633:INVTYPE_ROBE"] = {
+				["sources"] = {
+					[552] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -44946,30 +45066,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19100:INVTYPE_CLOAK"] = {
+			["24344:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[44990] = {
+					[63937] = {
 						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["11347:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[21743] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["12226:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[25094] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-					[24461] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -44980,10 +45080,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22198:INVTYPE_RANGEDRIGHT"] = {
+			["19100:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[65492] = {
-						["subClass"] = "Crossbows",
+					[44990] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -45011,10 +45111,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36249:INVTYPE_WEAPON"] = {
+			["22198:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[95275] = {
-						["subClass"] = "One-Handed Axes",
+					[65492] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -45033,22 +45133,25 @@ CanIMogItDatabase = {
 					[59548] = {
 						["subClass"] = "Plate",
 					},
+					[59544] = {
+						["subClass"] = "Plate",
+					},
 					[61421] = {
 						["subClass"] = "Plate",
 					},
-					[61444] = {
-						["subClass"] = "Plate",
-					},
-					[61413] = {
-						["subClass"] = "Plate",
-					},
-					[59544] = {
+					[63152] = {
 						["subClass"] = "Plate",
 					},
 					[59546] = {
 						["subClass"] = "Plate",
 					},
-					[63152] = {
+					[61413] = {
+						["subClass"] = "Plate",
+					},
+					[61429] = {
+						["subClass"] = "Plate",
+					},
+					[61444] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45062,6 +45165,34 @@ CanIMogItDatabase = {
 						["subClass"] = "Cloth",
 					},
 					[66803] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["36249:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[95275] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["25415:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[71966] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["25683:INVTYPE_HAND"] = {
+				["sources"] = {
+					[71810] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["29465:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[83072] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -45083,40 +45214,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["25683:INVTYPE_HAND"] = {
-				["sources"] = {
-					[71810] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["13340:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[29798] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-					[28244] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["13358:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[27051] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["14436:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[30888] = {
-						["subClass"] = "Miscellaneous",
-					},
-					[67049] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
 			["13549:INVTYPE_WRIST"] = {
 				["sources"] = {
 					[31946] = {
@@ -45133,24 +45230,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24834:INVTYPE_WEAPON"] = {
+			["13340:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[65550] = {
-						["subClass"] = "One-Handed Swords",
+					[29798] = {
+						["subClass"] = "Two-Handed Maces",
+					},
+					[28244] = {
+						["subClass"] = "Two-Handed Maces",
 					},
 				},
 			},
-			["24503:INVTYPE_TABARD"] = {
+			["25931:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[66829] = {
+					[73192] = {
+						["subClass"] = "Plate",
+					},
+					[72990] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["14436:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[30888] = {
 						["subClass"] = "Miscellaneous",
 					},
-				},
-			},
-			["3178:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[3836] = {
-						["subClass"] = "Plate",
+					[67049] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -45171,22 +45277,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["18049:INVTYPE_CLOAK"] = {
+			["13546:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[84476] = {
-						["subClass"] = "Cloth",
+					[72500] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["26942:INVTYPE_LEGS"] = {
+			["3178:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[76147] = {
-						["subClass"] = "Plate",
-					},
-					[74645] = {
-						["subClass"] = "Plate",
-					},
-					[68782] = {
+					[3836] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45198,6 +45298,34 @@ CanIMogItDatabase = {
 					},
 					[31884] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["3975:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[42161] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["18049:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[84476] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["24642:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[66819] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["25672:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[71972] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -45214,10 +45342,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3975:INVTYPE_WRIST"] = {
+			["24489:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[42161] = {
-						["subClass"] = "Plate",
+					[63936] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -45228,9 +45356,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13546:INVTYPE_CHEST"] = {
+			["4307:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[72500] = {
+					[5794] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45255,9 +45383,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["25535:INVTYPE_CLOAK"] = {
+			["24329:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[69076] = {
+					[58976] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -45283,17 +45411,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24329:INVTYPE_CLOAK"] = {
+			["31730:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[58976] = {
-						["subClass"] = "Cloth",
+					[80214] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["4307:INVTYPE_SHOULDER"] = {
+			["2284:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[5794] = {
-						["subClass"] = "Plate",
+					[2649] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -45311,38 +45439,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2284:INVTYPE_2HWEAPON"] = {
+			["32297:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[2649] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["2901:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[3440] = {
+					[84555] = {
 						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9765:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[18041] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["4434:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[6047] = {
-						["subClass"] = "Two-Handed Maces",
-					},
-				},
-			},
-			["4224:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[5682] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -45353,10 +45453,41 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["9765:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[18041] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
 			["13444:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[27683] = {
 						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["4224:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[5682] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13276:INVTYPE_WRIST"] = {
+				["sources"] = {
+					[28580] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["27107:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[68834] = {
+						["subClass"] = "Plate",
+					},
+					[81384] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -45374,39 +45505,30 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27107:INVTYPE_CHEST"] = {
+			["7385:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[68834] = {
-						["subClass"] = "Plate",
-					},
-					[81384] = {
+					[13400] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["2310:INVTYPE_WAIST"] = {
+			["3200:INVTYPE_FEET"] = {
 				["sources"] = {
-					[9441] = {
-						["subClass"] = "Cloth",
+					[3865] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["490:INVTYPE_2HWEAPON"] = {
+			["27177:INVTYPE_TABARD"] = {
 				["sources"] = {
-					[362] = {
-						["subClass"] = "Two-Handed Maces",
+					[73486] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
-			["13476:INVTYPE_HEAD"] = {
+			["5734:INVTYPE_HAND"] = {
 				["sources"] = {
-					[31239] = {
-						["subClass"] = "Plate",
-					},
-					[27457] = {
-						["subClass"] = "Plate",
-					},
-					[30832] = {
+					[8562] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45424,34 +45546,6 @@ CanIMogItDatabase = {
 			["4929:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[69208] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["27177:INVTYPE_TABARD"] = {
-				["sources"] = {
-					[73486] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["3200:INVTYPE_FEET"] = {
-				["sources"] = {
-					[3865] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["4706:INVTYPE_HOLDABLE"] = {
-				["sources"] = {
-					[41795] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["7385:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[13400] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45475,6 +45569,40 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["9595:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[17264] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
+			["4706:INVTYPE_HOLDABLE"] = {
+				["sources"] = {
+					[41795] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["13061:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[31761] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13361:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[30750] = {
+						["subClass"] = "One-Handed Swords",
+					},
+					[29836] = {
+						["subClass"] = "One-Handed Swords",
+					},
+					[29833] = {
+						["subClass"] = "One-Handed Swords",
+					},
+				},
+			},
 			["954:INVTYPE_RANGED"] = {
 				["sources"] = {
 					[6067] = {
@@ -45492,9 +45620,18 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13061:INVTYPE_HEAD"] = {
+			["26937:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[31761] = {
+					[76025] = {
+						["subClass"] = "Plate",
+					},
+					[74641] = {
+						["subClass"] = "Plate",
+					},
+					[76133] = {
+						["subClass"] = "Plate",
+					},
+					[68791] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45520,18 +45657,21 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["26937:INVTYPE_WAIST"] = {
+			["15785:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[76133] = {
+					[36812] = {
 						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
-					[68791] = {
+					[36817] = {
 						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
-					[76025] = {
-						["subClass"] = "Plate",
-					},
-					[74641] = {
+					[36663] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45559,28 +45699,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["24811:INVTYPE_WEAPON"] = {
+			["26773:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[60635] = {
-						["subClass"] = "Fist Weapons",
+					[73156] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["15785:INVTYPE_SHOULDER"] = {
+			["7977:INVTYPE_HEAD"] = {
 				["sources"] = {
-					[36812] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-					[36817] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-					[36663] = {
+					[13936] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45592,13 +45720,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19518:INVTYPE_LEGS"] = {
+			["23887:INVTYPE_FEET"] = {
 				["sources"] = {
-					[98699] = {
+					[62405] = {
 						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					},
+					[62802] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -45616,9 +45744,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["7977:INVTYPE_HEAD"] = {
+			["26955:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[13936] = {
+					[74401] = {
+						["subClass"] = "Plate",
+					},
+					[68700] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45646,13 +45777,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["23887:INVTYPE_FEET"] = {
+			["30836:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[62405] = {
-						["subClass"] = "Plate",
-					},
-					[62802] = {
-						["subClass"] = "Plate",
+					[80818] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -45663,12 +45791,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27082:INVTYPE_WRIST"] = {
+			["9375:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[80584] = {
-						["subClass"] = "Plate",
-					},
-					[79964] = {
+					[16696] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -45690,9 +45815,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["30836:INVTYPE_CLOAK"] = {
+			["29473:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[80818] = {
+					[72295] = {
 						["subClass"] = "Cloth",
 					},
 				},
@@ -45708,43 +45833,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[14141] = {
 						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["32203:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[86904] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["12492:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[24817] = {
-						["subClass"] = "Fist Weapons",
-					},
-					[24802] = {
-						["subClass"] = "Fist Weapons",
-					},
-				},
-			},
-			["27097:INVTYPE_FEET"] = {
-				["sources"] = {
-					[78960] = {
-						["subClass"] = "Plate",
-					},
-					[80537] = {
-						["subClass"] = "Plate",
-					},
-					[78627] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["27327:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[80888] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -45769,6 +45857,37 @@ CanIMogItDatabase = {
 						["classRestrictions"] = {
 							"Warrior", -- [1]
 						},
+					},
+				},
+			},
+			["19037:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[44806] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["22257:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[61175] = {
+						["subClass"] = "Staves",
+					},
+					[59643] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["7973:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[14165] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["4455:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[6073] = {
+						["subClass"] = "Bows",
 					},
 				},
 			},
@@ -45813,17 +45932,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["30408:INVTYPE_CLOAK"] = {
+			["37998:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[76021] = {
-						["subClass"] = "Cloth",
+					[91014] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
-			["34035:INVTYPE_SHOULDER"] = {
+			["20569:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[86018] = {
-						["subClass"] = "Plate",
+					[50923] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -45852,7 +45971,7 @@ CanIMogItDatabase = {
 					[42835] = {
 						["subClass"] = "Plate",
 					},
-					[45102] = {
+					[45522] = {
 						["subClass"] = "Plate",
 					},
 					[42836] = {
@@ -45861,7 +45980,7 @@ CanIMogItDatabase = {
 					[42831] = {
 						["subClass"] = "Plate",
 					},
-					[45522] = {
+					[45102] = {
 						["subClass"] = "Plate",
 					},
 					[45523] = {
@@ -45885,10 +46004,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["37998:INVTYPE_2HWEAPON"] = {
+			["2162:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[91014] = {
-						["subClass"] = "Staves",
+					[2494] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -45899,16 +46018,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["31670:INVTYPE_CLOAK"] = {
+			["34043:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[77628] = {
-						["subClass"] = "Cloth",
-					},
-					[86047] = {
-						["subClass"] = "Cloth",
-					},
-					[85979] = {
-						["subClass"] = "Cloth",
+					[85976] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -45919,17 +46032,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["32158:INVTYPE_HAND"] = {
+			["10353:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[81166] = {
-						["subClass"] = "Plate",
+					[19396] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["461:INVTYPE_WEAPON"] = {
+			["31694:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[10201] = {
-						["subClass"] = "One-Handed Axes",
+					[80926] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -45940,31 +46053,40 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["11906:INVTYPE_HEAD"] = {
+			["29908:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[22909] = {
+					[78576] = {
+						["subClass"] = "Guns",
+					},
+				},
+			},
+			["12044:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[24200] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["9328:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[16648] = {
+						["subClass"] = "Fist Weapons",
+					},
+					[16635] = {
+						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["27076:INVTYPE_FEET"] = {
+				["sources"] = {
+					[79971] = {
 						["subClass"] = "Plate",
 					},
-				},
-			},
-			["10353:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[19396] = {
-						["subClass"] = "One-Handed Axes",
+					[79966] = {
+						["subClass"] = "Plate",
 					},
-				},
-			},
-			["30413:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[74518] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["31694:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[80926] = {
-						["subClass"] = "Cloth",
+					[79946] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -45978,10 +46100,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["12044:INVTYPE_WEAPON"] = {
+			["5743:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[24200] = {
-						["subClass"] = "Daggers",
+					[8463] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -46019,47 +46141,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["13157:INVTYPE_FEET"] = {
+			["3652:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[32156] = {
-						["subClass"] = "Plate",
-					},
-					[32054] = {
-						["subClass"] = "Plate",
-					},
-					[32051] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["36294:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95333] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["2688:INVTYPE_LEGS"] = {
-				["sources"] = {
-					[3156] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["7681:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[33363] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["12918:INVTYPE_HAND"] = {
-				["sources"] = {
-					[27451] = {
-						["subClass"] = "Plate",
-					},
-					[26039] = {
-						["subClass"] = "Plate",
+					[21058] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -46070,10 +46155,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["8922:INVTYPE_WEAPON"] = {
+			["2688:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[15882] = {
-						["subClass"] = "Daggers",
+					[3156] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46087,6 +46172,40 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["12918:INVTYPE_HAND"] = {
+				["sources"] = {
+					[27451] = {
+						["subClass"] = "Plate",
+					},
+					[26039] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["13969:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[29512] = {
+						["subClass"] = "Daggers",
+					},
+					[29538] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["8922:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[15882] = {
+						["subClass"] = "Daggers",
+					},
+				},
+			},
+			["34277:INVTYPE_TABARD"] = {
+				["sources"] = {
+					[86060] = {
+						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
 			["34031:INVTYPE_CHEST"] = {
 				["sources"] = {
 					[86013] = {
@@ -46094,9 +46213,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["35566:INVTYPE_FEET"] = {
+			["27122:INVTYPE_FEET"] = {
 				["sources"] = {
-					[89217] = {
+					[83050] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -46108,10 +46227,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34460:INVTYPE_HEAD"] = {
+			["33042:INVTYPE_HAND"] = {
 				["sources"] = {
-					[86901] = {
-						["subClass"] = "Cosmetic",
+					[85494] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -46145,40 +46267,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["27122:INVTYPE_FEET"] = {
+			["34040:INVTYPE_HAND"] = {
 				["sources"] = {
-					[83050] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["33042:INVTYPE_HAND"] = {
-				["sources"] = {
-					[85494] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
-					},
-				},
-			},
-			["9544:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[19156] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["11242:INVTYPE_BODY"] = {
-				["sources"] = {
-					[21567] = {
-						["subClass"] = "Miscellaneous",
-					},
-				},
-			},
-			["15801:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[36661] = {
+					[85972] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -46193,10 +46284,38 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["10655:INVTYPE_BODY"] = {
+			["9544:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[19961] = {
-						["subClass"] = "Miscellaneous",
+					[19156] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["6521:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[9967] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["15801:INVTYPE_HEAD"] = {
+				["sources"] = {
+					[36661] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["31423:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[81791] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
+			["37059:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[93176] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -46207,10 +46326,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2804:INVTYPE_WEAPON"] = {
+			["5671:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[29304] = {
-						["subClass"] = "One-Handed Maces",
+					[8622] = {
+						["subClass"] = "Plate",
+					},
+					[8365] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -46221,27 +46346,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["30436:INVTYPE_CLOAK"] = {
+			["2422:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[80927] = {
+					[9948] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["35918:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[89724] = {
 						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["35531:INVTYPE_LEGS"] = {
+			["36034:INVTYPE_FEET"] = {
 				["sources"] = {
-					[89391] = {
+					[96972] = {
 						["subClass"] = "Plate",
-					},
-					[89392] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["1380:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10207] = {
-						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
@@ -46259,10 +46381,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["37059:INVTYPE_WEAPON"] = {
+			["1378:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[93176] = {
-						["subClass"] = "One-Handed Maces",
+					[69194] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -46273,17 +46395,23 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["33747:INVTYPE_WAIST"] = {
+			["9568:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[86508] = {
-						["subClass"] = "Plate",
+					[20745] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[18288] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
-			["36165:INVTYPE_CHEST"] = {
+			["9057:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[94893] = {
-						["subClass"] = "Plate",
+					[37457] = {
+						["subClass"] = "Two-Handed Maces",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
@@ -46301,20 +46429,20 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["9568:INVTYPE_WEAPON"] = {
+			["35541:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[20745] = {
-						["subClass"] = "One-Handed Maces",
-					},
-					[18288] = {
-						["subClass"] = "One-Handed Maces",
+					[88863] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
 					},
 				},
 			},
-			["1378:INVTYPE_2HWEAPON"] = {
+			["8966:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[69194] = {
-						["subClass"] = "Two-Handed Swords",
+					[29360] = {
+						["subClass"] = "Daggers",
 					},
 				},
 			},
@@ -46349,10 +46477,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36251:INVTYPE_WEAPON"] = {
+			["35559:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[96897] = {
-						["subClass"] = "One-Handed Axes",
+					[90596] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46369,34 +46497,6 @@ CanIMogItDatabase = {
 					},
 					[18561] = {
 						["subClass"] = "Shields",
-					},
-				},
-			},
-			["10244:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[19323] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["9631:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[17322] = {
-						["subClass"] = "Two-Handed Axes",
-					},
-				},
-			},
-			["35559:INVTYPE_CHEST"] = {
-				["sources"] = {
-					[90596] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["5313:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[31576] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46421,10 +46521,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2915:INVTYPE_CLOAK"] = {
+			["5313:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[3480] = {
-						["subClass"] = "Cloth",
+					[31576] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46484,9 +46584,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3748:INVTYPE_HAND"] = {
+			["2542:INVTYPE_SHOULDER"] = {
 				["sources"] = {
-					[4711] = {
+					[3761] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -46498,10 +46598,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["4282:INVTYPE_SHOULDER"] = {
+			["36670:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[89434] = {
-						["subClass"] = "Plate",
+					[94963] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -46509,6 +46609,43 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[94849] = {
 						["subClass"] = "Fist Weapons",
+					},
+				},
+			},
+			["3748:INVTYPE_HAND"] = {
+				["sources"] = {
+					[4711] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["35535:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[88865] = {
+						["subClass"] = "Plate",
+						["classRestrictions"] = {
+							"Warrior", -- [1]
+						},
+					},
+				},
+			},
+			["4282:INVTYPE_SHOULDER"] = {
+				["sources"] = {
+					[89434] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["3175:INVTYPE_WAIST"] = {
+				["sources"] = {
+					[4768] = {
+						["subClass"] = "Plate",
+					},
+					[89449] = {
+						["subClass"] = "Plate",
+					},
+					[89442] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46529,13 +46666,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["35535:INVTYPE_WAIST"] = {
+			["6639:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[88865] = {
-						["subClass"] = "Plate",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[10262] = {
+						["subClass"] = "Crossbows",
 					},
 				},
 			},
@@ -46553,10 +46687,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21980:INVTYPE_SHIELD"] = {
+			["17589:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[66483] = {
-						["subClass"] = "Shields",
+					[84415] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -46564,33 +46698,6 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[6018] = {
 						["subClass"] = "One-Handed Axes",
-					},
-				},
-			},
-			["3175:INVTYPE_WAIST"] = {
-				["sources"] = {
-					[4768] = {
-						["subClass"] = "Plate",
-					},
-					[89449] = {
-						["subClass"] = "Plate",
-					},
-					[89442] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["1321:INVTYPE_SHOULDER"] = {
-				["sources"] = {
-					[1388] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["22073:INVTYPE_RANGEDRIGHT"] = {
-				["sources"] = {
-					[65479] = {
-						["subClass"] = "Guns",
 					},
 				},
 			},
@@ -46605,6 +46712,27 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[2249] = {
 						["subClass"] = "Miscellaneous",
+					},
+				},
+			},
+			["22073:INVTYPE_RANGEDRIGHT"] = {
+				["sources"] = {
+					[65479] = {
+						["subClass"] = "Guns",
+					},
+				},
+			},
+			["9652:INVTYPE_RANGED"] = {
+				["sources"] = {
+					[17356] = {
+						["subClass"] = "Bows",
+					},
+				},
+			},
+			["36199:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[95287] = {
+						["subClass"] = "Two-Handed Axes",
 					},
 				},
 			},
@@ -46629,10 +46757,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1114:INVTYPE_2HWEAPON"] = {
+			["36380:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[1130] = {
-						["subClass"] = "Two-Handed Swords",
+					[95378] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -46650,17 +46778,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36380:INVTYPE_2HWEAPON"] = {
+			["36411:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[95378] = {
-						["subClass"] = "Staves",
+					[95281] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["19059:INVTYPE_WEAPON"] = {
+			["36209:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[44843] = {
-						["subClass"] = "One-Handed Maces",
+					[95367] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -46674,10 +46802,13 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36411:INVTYPE_WEAPON"] = {
+			["36302:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[95281] = {
-						["subClass"] = "One-Handed Axes",
+					[94854] = {
+						["subClass"] = "One-Handed Maces",
+					},
+					[94866] = {
+						["subClass"] = "One-Handed Maces",
 					},
 				},
 			},
@@ -46695,34 +46826,31 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36302:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[94854] = {
-						["subClass"] = "One-Handed Maces",
-					},
-					[94866] = {
-						["subClass"] = "One-Handed Maces",
-					},
-				},
-			},
-			["36261:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95323] = {
-						["subClass"] = "Daggers",
-					},
-				},
-			},
-			["7046:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[12229] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["8213:INVTYPE_SHOULDER"] = {
 				["sources"] = {
 					[14420] = {
 						["subClass"] = "Plate",
+					},
+				},
+			},
+			["36391:INVTYPE_SHIELD"] = {
+				["sources"] = {
+					[95806] = {
+						["subClass"] = "Shields",
+					},
+				},
+			},
+			["230:INVTYPE_FEET"] = {
+				["sources"] = {
+					[9443] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["36377:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[95375] = {
+						["subClass"] = "Staves",
 					},
 				},
 			},
@@ -46740,27 +46868,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36377:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[95375] = {
-						["subClass"] = "Staves",
-					},
-				},
-			},
-			["401:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[10745] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["4548:INVTYPE_CLOAK"] = {
-				["sources"] = {
-					[6268] = {
-						["subClass"] = "Cloth",
-					},
-				},
-			},
 			["7340:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
 					[14578] = {
@@ -46771,24 +46878,33 @@ CanIMogItDatabase = {
 					},
 				},
 			},
+			["36673:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[95036] = {
+						["subClass"] = "Cloth",
+					},
+					[91984] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["4548:INVTYPE_CLOAK"] = {
+				["sources"] = {
+					[6268] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["37063:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[93223] = {
+						["subClass"] = "Polearms",
+					},
+				},
+			},
 			["22960:INVTYPE_LEGS"] = {
 				["sources"] = {
 					[61417] = {
-						["subClass"] = "Plate",
-					},
-					[61440] = {
-						["subClass"] = "Plate",
-					},
-					[64403] = {
-						["subClass"] = "Plate",
-					},
-					[59486] = {
-						["subClass"] = "Plate",
-					},
-					[61425] = {
-						["subClass"] = "Plate",
-					},
-					[59488] = {
 						["subClass"] = "Plate",
 					},
 					[59490] = {
@@ -46797,28 +46913,22 @@ CanIMogItDatabase = {
 					[61433] = {
 						["subClass"] = "Plate",
 					},
-				},
-			},
-			["28028:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[73752] = {
-						["subClass"] = "Two-Handed Swords",
-						["classRestrictions"] = {
-							"Warrior", -- [1]
-						},
+					[59486] = {
+						["subClass"] = "Plate",
 					},
-				},
-			},
-			["9620:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[21190] = {
-						["subClass"] = "One-Handed Axes",
+					[61425] = {
+						["subClass"] = "Plate",
 					},
-				},
-			},
-			["8935:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[15896] = {
+					[64403] = {
+						["subClass"] = "Plate",
+					},
+					[59488] = {
+						["subClass"] = "Plate",
+					},
+					[61440] = {
+						["subClass"] = "Plate",
+					},
+					[61448] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -46830,17 +46940,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1886:INVTYPE_2HWEAPON"] = {
+			["9620:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[10178] = {
-						["subClass"] = "Staves",
+					[21190] = {
+						["subClass"] = "One-Handed Axes",
 					},
 				},
 			},
-			["5335:INVTYPE_LEGS"] = {
+			["13368:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[7522] = {
-						["subClass"] = "Plate",
+					[27069] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["14485:INVTYPE_FEET"] = {
+				["sources"] = {
+					[33377] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -46851,10 +46968,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1187:INVTYPE_WRIST"] = {
+			["5335:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[5137] = {
-						["subClass"] = "Cloth",
+					[7522] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46884,10 +47001,24 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["37049:INVTYPE_WEAPON"] = {
+			["36679:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[93236] = {
-						["subClass"] = "Daggers",
+					[95401] = {
+						["subClass"] = "Two-Handed Swords",
+					},
+				},
+			},
+			["37052:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[93194] = {
+						["subClass"] = "One-Handed Maces",
+					},
+				},
+			},
+			["25491:INVTYPE_HAND"] = {
+				["sources"] = {
+					[69990] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46920,34 +47051,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["25491:INVTYPE_HAND"] = {
+			["1162:INVTYPE_FEET"] = {
 				["sources"] = {
-					[69990] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
-			["36679:INVTYPE_2HWEAPON"] = {
-				["sources"] = {
-					[95401] = {
-						["subClass"] = "Two-Handed Swords",
-					},
-				},
-			},
-			["2822:INVTYPE_HEAD"] = {
-				["sources"] = {
-					[3322] = {
+					[1188] = {
 						["subClass"] = "Cloth",
-					},
-				},
-			},
-			["9383:INVTYPE_WRIST"] = {
-				["sources"] = {
-					[16708] = {
-						["subClass"] = "Plate",
-					},
-					[17854] = {
-						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -46965,9 +47072,12 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36155:INVTYPE_WAIST"] = {
+			["9383:INVTYPE_WRIST"] = {
 				["sources"] = {
-					[91807] = {
+					[16708] = {
+						["subClass"] = "Plate",
+					},
+					[17854] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -46992,9 +47102,9 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["21610:INVTYPE_HAND"] = {
+			["36155:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[57247] = {
+					[91807] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -47013,20 +47123,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["2764:INVTYPE_CLOAK"] = {
+			["21610:INVTYPE_HAND"] = {
 				["sources"] = {
-					[5262] = {
-						["subClass"] = "Cloth",
-					},
-					[8474] = {
-						["subClass"] = "Cloth",
+					[57247] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["3720:INVTYPE_WEAPON"] = {
+			["30861:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[4674] = {
-						["subClass"] = "One-Handed Swords",
+					[80807] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -47037,17 +47144,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["19097:INVTYPE_CLOAK"] = {
+			["23067:INVTYPE_CHEST"] = {
 				["sources"] = {
-					[47053] = {
-						["subClass"] = "Cloth",
+					[62887] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["36672:INVTYPE_CLOAK"] = {
+			["3720:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[94964] = {
-						["subClass"] = "Cloth",
+					[4674] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -47058,10 +47165,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["1525:INVTYPE_HOLDABLE"] = {
+			["19097:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[33161] = {
-						["subClass"] = "Miscellaneous",
+					[47053] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -47082,10 +47189,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["3963:INVTYPE_LEGS"] = {
+			["1525:INVTYPE_HOLDABLE"] = {
 				["sources"] = {
-					[5134] = {
-						["subClass"] = "Cloth",
+					[33161] = {
+						["subClass"] = "Miscellaneous",
 					},
 				},
 			},
@@ -47093,6 +47200,27 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[33290] = {
 						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["229:INVTYPE_2HWEAPON"] = {
+				["sources"] = {
+					[90] = {
+						["subClass"] = "Staves",
+					},
+				},
+			},
+			["3963:INVTYPE_LEGS"] = {
+				["sources"] = {
+					[5134] = {
+						["subClass"] = "Cloth",
+					},
+				},
+			},
+			["34039:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[85971] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -47110,10 +47238,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["34039:INVTYPE_CHEST"] = {
+			["36680:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[85971] = {
-						["subClass"] = "Plate",
+					[95402] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -47124,17 +47252,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36158:INVTYPE_HAND"] = {
+			["36048:INVTYPE_LEGS"] = {
 				["sources"] = {
-					[91994] = {
+					[96164] = {
 						["subClass"] = "Plate",
 					},
 				},
 			},
-			["36680:INVTYPE_2HWEAPON"] = {
+			["36405:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[95402] = {
-						["subClass"] = "Two-Handed Swords",
+					[95812] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
@@ -47152,27 +47280,6 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["36405:INVTYPE_SHIELD"] = {
-				["sources"] = {
-					[95812] = {
-						["subClass"] = "Shields",
-					},
-				},
-			},
-			["36374:INVTYPE_WEAPON"] = {
-				["sources"] = {
-					[95397] = {
-						["subClass"] = "One-Handed Swords",
-					},
-				},
-			},
-			["13428:INVTYPE_HAND"] = {
-				["sources"] = {
-					[34139] = {
-						["subClass"] = "Plate",
-					},
-				},
-			},
 			["36263:INVTYPE_WEAPON"] = {
 				["sources"] = {
 					[95325] = {
@@ -47187,17 +47294,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["5409:INVTYPE_SHIELD"] = {
+			["13428:INVTYPE_HAND"] = {
 				["sources"] = {
-					[7660] = {
-						["subClass"] = "Shields",
+					[34139] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["10454:INVTYPE_FEET"] = {
+			["2825:INVTYPE_WEAPON"] = {
 				["sources"] = {
-					[19626] = {
-						["subClass"] = "Plate",
+					[3326] = {
+						["subClass"] = "One-Handed Swords",
 					},
 				},
 			},
@@ -47208,16 +47315,16 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22260:INVTYPE_2HWEAPON"] = {
+			["5409:INVTYPE_SHIELD"] = {
 				["sources"] = {
-					[61176] = {
-						["subClass"] = "Staves",
+					[7660] = {
+						["subClass"] = "Shields",
 					},
 				},
 			},
-			["11518:INVTYPE_FEET"] = {
+			["10454:INVTYPE_FEET"] = {
 				["sources"] = {
-					[22010] = {
+					[19626] = {
 						["subClass"] = "Plate",
 					},
 				},
@@ -47236,17 +47343,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22088:INVTYPE_2HWEAPON"] = {
+			["11518:INVTYPE_FEET"] = {
 				["sources"] = {
-					[61155] = {
-						["subClass"] = "Staves",
+					[22010] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
-			["9605:INVTYPE_2HWEAPON"] = {
+			["1391:INVTYPE_WAIST"] = {
 				["sources"] = {
-					[17277] = {
-						["subClass"] = "Two-Handed Swords",
+					[5217] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
@@ -47257,17 +47364,17 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["6516:INVTYPE_FEET"] = {
+			["18873:INVTYPE_CLOAK"] = {
 				["sources"] = {
-					[9944] = {
-						["subClass"] = "Plate",
+					[44369] = {
+						["subClass"] = "Cloth",
 					},
 				},
 			},
-			["17655:INVTYPE_LEGS"] = {
+			["9605:INVTYPE_2HWEAPON"] = {
 				["sources"] = {
-					[84331] = {
-						["subClass"] = "Plate",
+					[17277] = {
+						["subClass"] = "Two-Handed Swords",
 					},
 				},
 			},
@@ -47275,6 +47382,27 @@ CanIMogItDatabase = {
 				["sources"] = {
 					[61133] = {
 						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["6516:INVTYPE_FEET"] = {
+				["sources"] = {
+					[9944] = {
+						["subClass"] = "Plate",
+					},
+				},
+			},
+			["21890:INVTYPE_WEAPON"] = {
+				["sources"] = {
+					[61141] = {
+						["subClass"] = "One-Handed Axes",
+					},
+				},
+			},
+			["22965:INVTYPE_CHEST"] = {
+				["sources"] = {
+					[61478] = {
+						["subClass"] = "Plate",
 					},
 				},
 			},
@@ -47292,10 +47420,10 @@ CanIMogItDatabase = {
 					},
 				},
 			},
-			["22965:INVTYPE_CHEST"] = {
+			["22106:INVTYPE_RANGEDRIGHT"] = {
 				["sources"] = {
-					[61478] = {
-						["subClass"] = "Plate",
+					[59660] = {
+						["subClass"] = "Guns",
 					},
 				},
 			},
