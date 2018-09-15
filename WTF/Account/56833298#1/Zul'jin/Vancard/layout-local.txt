@@ -66,6 +66,6 @@ Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER
 X: 0
-Y: 0
+Y: -1
 W: 300
 H: 300
