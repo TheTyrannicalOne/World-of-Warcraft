@@ -26,8 +26,19 @@ FishingBuddy_Info = {
 			[152544] = 1,
 		},
 	},
-	["KnownZones"] = {
-		[862] = "Xibala",
+	["FishSchools"] = {
+		[862] = {
+			{
+				["y"] = 0.51498076113977,
+				["x"] = 0.766917032053709,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["fish"] = {
+					[152543] = 1,
+				},
+				["count"] = 1,
+			}, -- [1]
+		},
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -41,27 +52,16 @@ FishingBuddy_Info = {
 	["Fishies"] = {
 		[152543] = {
 			["enUS"] = "Sand Shifter",
-			["texture"] = 2057315,
 			["quality"] = 1,
+			["texture"] = 2057315,
 		},
 		[152544] = {
 			["enUS"] = "Slimy Mackerel",
-			["texture"] = 2057316,
 			["quality"] = 1,
+			["texture"] = 2057316,
 		},
 	},
-	["FishSchools"] = {
-		[862] = {
-			{
-				["y"] = 0.51498076113977,
-				["x"] = 0.766917032053709,
-				["sidx"] = 862000,
-				["kind"] = 0,
-				["count"] = 1,
-				["fish"] = {
-					[152543] = 1,
-				},
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[862] = "Xibala",
 	},
 }
