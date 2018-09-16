@@ -2,9 +2,11 @@
 FishingBuddy_Info = {
 	["FishTotals"] = {
 		[862002] = 3,
-		[862001] = 1,
-		[862000] = 5,
+		[863000] = 1,
 		[862003] = 1,
+		[862000] = 5,
+		[862001] = 1,
+		[863001] = 1,
 	},
 	["HiddenFishies"] = {
 	},
@@ -12,6 +14,7 @@ FishingBuddy_Info = {
 		[862002] = 0,
 		[862001] = 0,
 		[862003] = 0,
+		[863001] = 0,
 	},
 	["DataFish"] = 0,
 	["FishingHoles"] = {
@@ -24,6 +27,9 @@ FishingBuddy_Info = {
 		},
 		[862003] = {
 			[152544] = 1,
+		},
+		[863001] = {
+			[152549] = 1,
 		},
 	},
 	["FishSchools"] = {
@@ -44,24 +50,32 @@ FishingBuddy_Info = {
 	["FishInfo2"] = 0,
 	["SubZones"] = {
 		[862002] = "Talanji's Rebuke",
-		[862001] = "Atal'Gral",
-		[862000] = 3,
+		[863000] = 1,
 		[862003] = "Xibala",
+		[862000] = 3,
+		[862001] = "Atal'Gral",
+		[863001] = "The Shattered River",
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
-		[152543] = {
-			["enUS"] = "Sand Shifter",
-			["quality"] = 1,
-			["texture"] = 2057315,
-		},
 		[152544] = {
 			["enUS"] = "Slimy Mackerel",
 			["quality"] = 1,
 			["texture"] = 2057316,
 		},
+		[152543] = {
+			["enUS"] = "Sand Shifter",
+			["quality"] = 1,
+			["texture"] = 2057315,
+		},
+		[152549] = {
+			["enUS"] = "Redtail Loach",
+			["quality"] = 1,
+			["texture"] = 2057314,
+		},
 	},
 	["KnownZones"] = {
 		[862] = "Xibala",
+		[863] = "The Shattered River",
 	},
 }
