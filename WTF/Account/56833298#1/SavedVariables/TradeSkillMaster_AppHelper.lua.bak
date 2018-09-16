@@ -2,8 +2,8 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Argent Dawn"] = {
-			["key"] = 12611866,
 			["data"] = "[[13,44721,1,3,1789,85,1704,12,1536535877],[16,22495,1,3,10000,0,0,0,1536535877]]",
+			["key"] = 12611866,
 			["updateTime"] = 1536535877,
 		},
 	},
@@ -18,8 +18,8 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["wowToken"] = {
 		["US"] = {
-			["data"] = 181426,
 			["key"] = 7577604,
+			["data"] = 181426,
 			["updateTime"] = 1519458491,
 		},
 	},

@@ -1,16 +1,15 @@
 
 WQPartyVars = {
 	["sendPartyMessage"] = true,
-	["leavePartyPrompt"] = true,
-	["channel"] = 1,
-	["FrameLoc"] = {
-		["y"] = 150,
-		["relativeTo"] = "WQPFrame",
-		["point"] = "BOTTOMLEFT",
-		["relativePoint"] = "BOTTOMLEFT",
-		["x"] = 150,
-	},
-	["automaticLFM"] = false,
-	["customPartyMessage"] = "",
 	["LFMchannel"] = 1,
+	["channel"] = 1,
+	["customPartyMessage"] = "",
+	["automaticLFM"] = false,
+	["FrameLoc"] = {
+		["y"] = -155.833038330078,
+		["point"] = "LEFT",
+		["relativePoint"] = "LEFT",
+		["x"] = 11.6666927337647,
+	},
+	["leavePartyPrompt"] = true,
 }

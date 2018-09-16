@@ -442,8 +442,7 @@ UNIT_POWER, UNIT_AURA PLAYER_TARGET_CHANGED]=]
 	L["Size"] = "크기"
 	L["Slant Amount"] = "기울기 양"
 	L["Slant Mode"] = "기울기 모드"
-	--[[Translation missing --]]
-	L["Slanted"] = "Slanted"
+	L["Slanted"] = "기울임"
 	L["Slide"] = "슬라이드"
 	L["Slide In"] = "안으로 슬라이드"
 	L["Slide Out"] = "바깥으로 슬라이드"

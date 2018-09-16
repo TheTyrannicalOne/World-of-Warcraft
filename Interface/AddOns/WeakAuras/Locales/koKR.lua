@@ -547,8 +547,7 @@ L["Remaining Duration"] = "남은 지속시간"
 L["Remaining Time"] = "남은 시간"
 --[[Translation missing --]]
 L["Remove Obsolete Auras"] = "Remove Obsolete Auras"
---[[Translation missing --]]
-L["Repeat"] = "Repeat"
+L["Repeat"] = "반복"
 L["Replace Aura"] = "효과 교체"
 L["Requested display does not exist"] = "요청한 디스플레이가 존재하지 않습니다"
 L["Requested display not authorized"] = "요청한 디스플레이가 올바르지 않습니다"

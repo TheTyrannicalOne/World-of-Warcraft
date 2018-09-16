@@ -9,15 +9,15 @@ OneRing_Config = {
 		["default"] = {
 			["Bindings"] = {
 				["Mounts2"] = "ALT-Q",
-				["OPieAutoQuest"] = false,
 				["Utility1"] = "ALT-E",
+				["OPieAutoQuest"] = false,
 			},
 		},
 		["Shanyt"] = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
-				["OPieAutoQuest"] = false,
 				["Utility"] = "ALT-E",
+				["OPieAutoQuest"] = false,
 			},
 		},
 	},
@@ -25,8 +25,8 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Mounts"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABuede=1Sr19",
+					["id"] = 150544,
 				}, -- [1]
 				{
 					["sliceToken"] = "ABuede=1Sr1A",
@@ -84,10 +84,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABuede=1Sr1m",
 					["id"] = 75973,
 				}, -- [15]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["OPieFlagStore"] = {
 				["FlushedDefaultColors"] = true,
@@ -218,10 +218,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedyqmNBrM",
 				}, -- [19]
-				["name"] = "Mounts",
+				["limit"] = "Vancard-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Mounts",
 			},
 			["Utility1"] = {
 				{
@@ -229,10 +229,10 @@ OneRing_Config = {
 					64488, -- [2]
 					["sliceToken"] = "ABuedyqmNB16",
 				}, -- [1]
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Vancard-Zul'jin",
 			},
 			["Utility"] = {
 				{
@@ -265,10 +265,10 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 			},
 		},
 	},
