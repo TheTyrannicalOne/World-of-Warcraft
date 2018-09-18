@@ -25,6 +25,9 @@ DejaCharacterStatsDB = {
 		["dejacharacterstatsShowDuraTextureChecked"] = {
 			["ShowDuraTextureSetChecked"] = true,
 		},
+		["dejacharacterstatsHideMasteryChecked"] = {
+			["SetChecked"] = true,
+		},
 		["dejacharacterstatsDCSZeroChecked"] = {
 			["SetChecked"] = false,
 		},

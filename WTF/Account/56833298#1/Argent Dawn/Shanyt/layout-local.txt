@@ -41,10 +41,3 @@ X: 0
 Y: -100
 W: 130
 H: 20
-Frame: FishingWatchFrame
-FrameLevel: 1
-Anchor: TOP
-X: -287
-Y: -30
-W: 171
-H: 97

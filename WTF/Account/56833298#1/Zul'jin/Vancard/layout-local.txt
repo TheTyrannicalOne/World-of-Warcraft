@@ -62,6 +62,12 @@ X: 0
 Y: 0
 W: 300
 H: 508
+Frame: AllTheThings-Window-[The Pyromancer's Grimoire]|cff0070dd|Hitem:65626::::::::32:62::1:1:3524:::|h[Hood of the Arcane PatFrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER
