@@ -41,13 +41,6 @@ X: 0
 Y: 0
 W: 300
 H: 300
-Frame: AAP_GreetingsFrame
-FrameLevel: 1
-Anchor: CENTER
-X: -1
-Y: -2
-W: 330
-H: 150
 Frame: TooltipMover
 FrameLevel: 402
 Anchor: RIGHT
@@ -62,7 +55,14 @@ X: 0
 Y: 0
 W: 300
 H: 508
-Frame: AllTheThings-Window-[The Pyromancer's Grimoire]|cff0070dd|Hitem:65626::::::::32:62::1:1:3524:::|h[Hood of the Arcane PatFrameLevel: 1
+Frame: AAP_GreetingsFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -1
+Y: -2
+W: 330
+H: 150
+Frame: AllTheThings-Window-Pet Battles|cffffff00|Hachievement:6602:Player-61-0BAB1BE0:0:0:0:-1:1439:0:0:0|h[Taming Kalimdor]|h|FrameLevel: 1
 Anchor: CENTER
 X: 0
 Y: 0

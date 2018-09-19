@@ -2535,5 +2535,49 @@ ElvCharacterDB = {
 			[51] = 1537238346,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [115]
+		{
+			"|cffffff00Nozzlepot's Outpost is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Northern Barrens", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Northern Barrens", -- [9]
+			0, -- [10]
+			947, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1537335395,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [116]
+		{
+			"WTS|cff0070dd|Hitem:128807::::::::100:259::::::|h[Coin of Many Faces]|h|r6k or best offer and willing to do bulk deals. Going for 12k on AH pst        ", -- [1]
+			"Getfarmed-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Getfarmed", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			999, -- [11]
+			"Player-61-0A2D4A79", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Getfarmed|r",
+			[51] = 1537335653,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [117]
 	},
 }

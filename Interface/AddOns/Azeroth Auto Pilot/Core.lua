@@ -5,6 +5,7 @@ if (AAP_Test_Var == 1) then
 		[47514] = 47514,
 	}
 end
+local AAP_testaren
 local AAP_OldSLot
 AAP_5sec_thingy = 0
 AAP_DubbleMacro = {}

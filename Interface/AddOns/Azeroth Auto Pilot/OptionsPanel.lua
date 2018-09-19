@@ -219,7 +219,7 @@ function AAP.LoadOptionsFrame()
 	getglobal(AAP.OptionsFrame.CheckButton6:GetName() .. 'Text'):SetText(": "..AAP_Locals["Auto-selection of dialog"])
 	getglobal(AAP.OptionsFrame.CheckButton6:GetName() .. 'Text'):SetTextColor(1, 1, 1)
 	AAP.OptionsFrame.CheckButton6:SetScript("OnClick", function()
-		if (AAP.OptionsFrame.CheckButton5:GetChecked() == true) then
+		if (AAP.OptionsFrame.CheckButton6:GetChecked() == true) then
 			AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoGossip"] = 1
 		else
 			AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoGossip"] = 0
