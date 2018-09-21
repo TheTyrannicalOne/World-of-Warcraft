@@ -32,19 +32,9 @@ FishingBuddy_Info = {
 			[152549] = 1,
 		},
 	},
-	["FishSchools"] = {
-		[862] = {
-			{
-				["y"] = 0.51498076113977,
-				["x"] = 0.766917032053709,
-				["sidx"] = 862000,
-				["kind"] = 0,
-				["fish"] = {
-					[152543] = 1,
-				},
-				["count"] = 1,
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[862] = "Xibala",
+		[863] = "The Shattered River",
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -60,22 +50,32 @@ FishingBuddy_Info = {
 	["Fishies"] = {
 		[152544] = {
 			["enUS"] = "Slimy Mackerel",
-			["quality"] = 1,
 			["texture"] = 2057316,
+			["quality"] = 1,
 		},
 		[152543] = {
 			["enUS"] = "Sand Shifter",
-			["quality"] = 1,
 			["texture"] = 2057315,
+			["quality"] = 1,
 		},
 		[152549] = {
 			["enUS"] = "Redtail Loach",
-			["quality"] = 1,
 			["texture"] = 2057314,
+			["quality"] = 1,
 		},
 	},
-	["KnownZones"] = {
-		[862] = "Xibala",
-		[863] = "The Shattered River",
+	["FishSchools"] = {
+		[862] = {
+			{
+				["y"] = 0.51498076113977,
+				["x"] = 0.766917032053709,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["count"] = 1,
+				["fish"] = {
+					[152543] = 1,
+				},
+			}, -- [1]
+		},
 	},
 }
