@@ -22,9 +22,6 @@ SkadaDB = {
 			["windows"] = {
 				{
 					["barslocked"] = true,
-					["background"] = {
-						["height"] = 178.999862670898,
-					},
 					["y"] = 0,
 					["x"] = 0,
 					["name"] = "Damage",
@@ -35,6 +32,9 @@ SkadaDB = {
 					["spark"] = false,
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 225.833404541016,
+					["background"] = {
+						["height"] = 178.999862670898,
+					},
 					["barfont"] = "PT Sans Narrow",
 					["title"] = {
 						["color"] = {
@@ -157,6 +157,9 @@ SkadaDB = {
 					["point"] = "BOTTOMRIGHT",
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 225.833404541016,
+					["background"] = {
+						["height"] = 178.999862670898,
+					},
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -166,9 +169,6 @@ SkadaDB = {
 						},
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
-					},
-					["background"] = {
-						["height"] = 178.999862670898,
 					},
 					["modeincombat"] = "Damage",
 					["y"] = 0,
