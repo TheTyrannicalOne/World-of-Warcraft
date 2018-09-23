@@ -130,7 +130,7 @@ function FSF:InitMenuItems(holder)
                                 text:SetText(group.menutext)
                                 set = true
                             else
-                                self:SetChecked(choices, group, group.menutext, false)
+                                self:SetChecked(choices, group, false)
                             end
                         end
                     end

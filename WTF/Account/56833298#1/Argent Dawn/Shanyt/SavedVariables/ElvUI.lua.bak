@@ -13,6 +13,8 @@ ElvCharacterDB = {
 		"/TRAIN", -- [10]
 		"/DANCE", -- [11]
 		"/sleep", -- [12]
+		"/skada", -- [13]
+		"/skada toggle", -- [14]
 	},
 	["ChatHistoryLog"] = {
 		{

@@ -1,4 +1,8 @@
-﻿Version 1.9.17
+﻿Version 1.9.18
+- Fix bug when custom pets selected
+- Don't summon pets in combat (Curse #336)
+
+Version 1.9.17
 - Fix error on catching quest fish (Curse #361)
 - Fix can't equip fishing outfit (Curse #360)
 - Fix fishing hat no longer working (Curse #350)

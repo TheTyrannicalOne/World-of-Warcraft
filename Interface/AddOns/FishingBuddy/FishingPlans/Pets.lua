@@ -155,7 +155,11 @@ local PetOptions = {
 local PetEvents = {}
 PetEvents[FBConstants.FISHING_ENABLED_EVT] = function()
     -- only do the fluff stuff if we're actually wearing any fishing gear
-	-- we don't do this stuff if we're "no pole equipped" fishing
+    -- we don't do this stuff if we're "no pole equipped" fishing
+    if FishingBuddy.CheckCombat() then
+        return
+    end
+
 	local petsetting = FishingBuddy.GetSetting(PETSETTING)
 	if (petsetting == nil) then
 		-- timing issue if we start off fishing. Hrm.
@@ -175,8 +179,8 @@ PetEvents[FBConstants.FISHING_ENABLED_EVT] = function()
 				if ( petsetting == PET_FISHING ) then
 					choosefrom = unwind(FISHINGCREATURES)
 				else
-					choosefrom = unwind(petsetting)
-				end
+					choosefrom = petsetting
+                end
 				idx = random(1, #choosefrom);
 				if (idx > 0) then
 					petid = choosefrom[idx]
