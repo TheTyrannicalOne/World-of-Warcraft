@@ -1,9 +1,9 @@
 ------------------------------------------------------------------------
-r87 | Caliaha | 2018-09-18 00:43:53 +0000 (Tue, 18 Sep 2018) | 2 lines
+r89 | Caliaha | 2018-09-23 19:19:09 +0000 (Sun, 23 Sep 2018) | 2 lines
 Changed paths:
    M /trunk/HandyNotes_DungeonLocations.lua
 
-Removed a line responsible for possible recursion or something idk
+Hopefully fixed the freezing issue
 
 ------------------------------------------------------------------------
 

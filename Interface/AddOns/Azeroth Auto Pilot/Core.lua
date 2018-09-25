@@ -1477,7 +1477,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			AAP.LoadOptionsFrame()
 		end
 	elseif (event=="QUEST_GREETING" and AAP_DisableAddon == 0) then
-		if (string.find(UnitGUID("target"), "-")) then
+		if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
 			if (npc_id and ((tonumber(npc_id) == 141584) or (tonumber(npc_id) == 142063))) then
 				return
@@ -1520,7 +1520,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			end
 		end
 	elseif (event=="GOSSIP_SHOW" and AAP_DisableAddon == 0) then
-		if (string.find(UnitGUID("target"), "-")) then
+		if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
 			if (npc_id and ((tonumber(npc_id) == 141584) or (tonumber(npc_id) == 142063))) then
 				return
@@ -1548,7 +1548,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			end
 		end
 	elseif (event=="QUEST_DETAIL" and AAP_DisableAddon == 0) then
-		if (string.find(UnitGUID("target"), "-")) then
+		if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
 			if (npc_id and ((tonumber(npc_id) == 141584) or (tonumber(npc_id) == 142063))) then
 				return
@@ -1559,7 +1559,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 		end
 	end
 	if (event=="QUEST_PROGRESS" and AAP_DisableAddon == 0) then
-		if (string.find(UnitGUID("target"), "-")) then
+		if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
 			if (npc_id and ((tonumber(npc_id) == 141584) or (tonumber(npc_id) == 142063))) then
 				return
@@ -1615,7 +1615,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 		end
 	end
 	if (event=="QUEST_COMPLETE") then
-		if (string.find(UnitGUID("target"), "-")) then
+		if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
 			if (npc_id and ((tonumber(npc_id) == 141584) or (tonumber(npc_id) == 142063))) then
 				return
@@ -1662,7 +1662,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 				print("AAP: Save Quest for Release!")
 				CloseQuest()
 			elseif (AAP1[AAP.Realm][AAP.Name]["Settings"]["AutoHandIn"] == 1 and not IsControlKeyDown() and AAP_DisableAddon == 0) then
-				if (string.find(UnitGUID("target"), "-")) then
+				if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
 					if (npc_id and ((tonumber(npc_id) == 141584) or (tonumber(npc_id) == 142063))) then
 						return

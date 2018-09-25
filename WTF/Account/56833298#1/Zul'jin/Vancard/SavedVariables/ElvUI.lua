@@ -2579,5 +2579,27 @@ ElvCharacterDB = {
 			[51] = 1537335653,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [117]
+		{
+			"LF healer for 3s pushing 2k", -- [1]
+			"Dave-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dave", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			17, -- [11]
+			"Player-61-0B5AC9F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Dave|r",
+			[51] = 1537707280,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [118]
 	},
 }

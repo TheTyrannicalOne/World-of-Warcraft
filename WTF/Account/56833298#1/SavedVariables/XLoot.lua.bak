@@ -16,6 +16,12 @@ XLootADB = {
 			},
 		},
 		["Frame"] = {
+			["profiles"] = {
+				["Default"] = {
+					["frame_position_x"] = 1056.66674804688,
+					["frame_position_y"] = 501.666564941406,
+				},
+			},
 		},
 		["Monitor"] = {
 			["profiles"] = {
