@@ -1,4 +1,9 @@
-﻿Version 1.9.18
+﻿Version 1.9.19
+- Don't let side effects hide the action button if we're in combat (Curse #363)
+- Add an option to only show the Legion bosses in Broken Isles
+- Actually show the Fisherfriend loot correctly when in Broken Isles
+
+Version 1.9.18
 - Fix bug when custom pets selected
 - Don't summon pets in combat (Curse #336)
 

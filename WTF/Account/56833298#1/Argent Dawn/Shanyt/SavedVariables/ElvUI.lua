@@ -15,52 +15,9 @@ ElvCharacterDB = {
 		"/sleep", -- [12]
 		"/skada", -- [13]
 		"/skada toggle", -- [14]
+		"/script MainMenuExpBar:Show()", -- [15]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"grats name", -- [1]
-			"Hypnos-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			635, -- [11]
-			"Player-75-036AB6D6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aHypnos|r",
-			[51] = 1536984613,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [1]
-		{
-			"...Thanks  All...", -- [1]
-			"Daniela-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			636, -- [11]
-			"Player-75-0B46B98A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Daniela|r",
-			[51] = 1536984623,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [2]
 		{
 			"Epid Mofo!", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -82,7 +39,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1536984655,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [3]
+		}, -- [1]
 		{
 			"thanks", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -104,7 +61,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536984691,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [4]
+		}, -- [2]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -126,7 +83,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1536987391,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
+		}, -- [3]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -148,7 +105,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536989616,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [6]
+		}, -- [4]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -170,7 +127,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536989865,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [7]
+		}, -- [5]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -192,7 +149,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536990148,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [8]
+		}, -- [6]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -214,7 +171,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536990391,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [9]
+		}, -- [7]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -236,7 +193,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1536990423,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [10]
+		}, -- [8]
 		{
 			"grats name", -- [1]
 			"Hypnos", -- [2]
@@ -258,7 +215,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536991027,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [11]
+		}, -- [9]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -280,7 +237,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536991316,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [12]
+		}, -- [10]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -302,7 +259,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536991549,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [13]
+		}, -- [11]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -324,7 +281,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536992436,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [14]
+		}, -- [12]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -346,7 +303,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536992774,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [15]
+		}, -- [13]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -368,7 +325,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536992864,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [16]
+		}, -- [14]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -390,7 +347,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1536992870,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [17]
+		}, -- [15]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -412,7 +369,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536992888,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [18]
+		}, -- [16]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -434,7 +391,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536992889,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [19]
+		}, -- [17]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -456,7 +413,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1536993006,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [20]
+		}, -- [18]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -478,7 +435,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536993008,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [21]
+		}, -- [19]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -500,7 +457,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1536993009,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [22]
+		}, -- [20]
 		{
 			"Morning", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -522,7 +479,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537018646,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [23]
+		}, -- [21]
 		{
 			"hello", -- [1]
 			"Zyborg-ArgentDawn", -- [2]
@@ -544,7 +501,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aZyborg|r",
 			[51] = 1537018666,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [24]
+		}, -- [22]
 		{
 			"can i get a rez?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -566,7 +523,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1537018756,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [25]
+		}, -- [23]
 		{
 			"sure !  :)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -588,7 +545,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537018764,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [26]
+		}, -- [24]
 		{
 			"8)", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -610,7 +567,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1537018767,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [27]
+		}, -- [25]
 		{
 			"^-^", -- [1]
 			"Parbek-ArgentDawn", -- [2]
@@ -632,7 +589,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Parbek|r",
 			[51] = 1537018788,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [28]
+		}, -- [26]
 		{
 			":)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -654,7 +611,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537018797,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [29]
+		}, -- [27]
 		{
 			"koppi did you get a nice shield yet?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -676,7 +633,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1537018806,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [30]
+		}, -- [28]
 		{
 			"not yet but I am gonna work on my gear this weekend :)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -698,7 +655,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537018825,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [31]
+		}, -- [29]
 		{
 			"it took me for ever. i got one from the warfront", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -720,7 +677,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1537018835,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [32]
+		}, -- [30]
 		{
 			"good to know :)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -742,7 +699,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537018854,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [33]
+		}, -- [31]
 		{
 			"i think i want to see what I can get for my rep to get iLvl up", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -764,7 +721,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537018885,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [34]
+		}, -- [32]
 		{
 			"im trying to finish path finder for flying. still need champions of azeroth....its gona be looooong.", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -786,7 +743,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1537018956,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [35]
+		}, -- [33]
 		{
 			"yup lol", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -808,7 +765,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537018978,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [36]
+		}, -- [34]
 		{
 			"good day everyone", -- [1]
 			"Apoxe", -- [2]
@@ -830,7 +787,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edApoxe|r",
 			[51] = 1537024092,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [37]
+		}, -- [35]
 		{
 			"Morning :)", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -852,7 +809,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537024116,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [38]
+		}, -- [36]
 		{
 			"Morning :)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -874,7 +831,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537024121,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [39]
+		}, -- [37]
 		{
 			"and Hi Jinx!", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -896,7 +853,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537024144,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [40]
+		}, -- [38]
 		{
 			"KOPPI!!!!!!", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -918,7 +875,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537024154,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [41]
+		}, -- [39]
 		{
 			":)!!!!", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -940,7 +897,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537024159,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [42]
+		}, -- [40]
 		{
 			"how's it going?", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -962,7 +919,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537024165,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [43]
+		}, -- [41]
 		{
 			"Not too bad,  you?", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -984,7 +941,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537024182,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [44]
+		}, -- [42]
 		{
 			"good :)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1006,7 +963,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537024187,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [45]
+		}, -- [43]
 		{
 			"Koppi............", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1028,7 +985,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537026117,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [46]
+		}, -- [44]
 		{
 			"MEL!!!!!!!", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1050,7 +1007,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537026145,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [47]
+		}, -- [45]
 		{
 			"how are ya this morniing?", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1072,7 +1029,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537026231,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [48]
+		}, -- [46]
 		{
 			"good how are you", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1094,7 +1051,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537026252,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [49]
+		}, -- [47]
 		{
 			"good!  doing world quests with zymor ", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1116,7 +1073,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537026266,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [50]
+		}, -- [48]
 		{
 			"about to finish them :)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1138,7 +1095,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537026284,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [51]
+		}, -- [49]
 		{
 			"nice", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1160,7 +1117,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537026287,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [52]
+		}, -- [50]
 		{
 			"we got Jinx gear up last night", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1182,7 +1139,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537026339,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [53]
+		}, -- [51]
 		{
 			"i am soo happy about that :)", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1204,7 +1161,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537026443,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [54]
+		}, -- [52]
 		{
 			"Just got |cffa335ee|Hitem:163445::::::::120:254::3:3:5124:1532:4786:::|h[Honorbound Vanguard's Leggings]|h|r  :)", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -1226,7 +1183,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537026520,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [55]
+		}, -- [53]
 		{
 			"yay!", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1248,7 +1205,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537026538,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [56]
+		}, -- [54]
 		{
 			"brb :)", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -1270,7 +1227,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537026558,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [57]
+		}, -- [55]
 		{
 			"Hi Jinx I didnt see you", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1292,7 +1249,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537026593,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [58]
+		}, -- [56]
 		{
 			"off for a bit cya in a little while!", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1314,7 +1271,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537026715,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [59]
+		}, -- [57]
 		{
 			"back", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -1336,7 +1293,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537027090,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [60]
+		}, -- [58]
 		{
 			"Ok, taking off for a bit.  Have a good day guys :D", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -1358,7 +1315,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537029072,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [61]
+		}, -- [59]
 		{
 			"just letting you guys know that if you get licked or poked by an Aliance member from a guild called Shameless that would be me ", -- [1]
 			"Thibale-ArgentDawn", -- [2]
@@ -1380,7 +1337,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dThibale|r",
 			[51] = 1537029093,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [62]
+		}, -- [60]
 		{
 			"hello again", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1402,7 +1359,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537030370,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [63]
+		}, -- [61]
 		{
 			"hi", -- [1]
 			"Kronar-ArgentDawn", -- [2]
@@ -1424,7 +1381,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Kronar|r",
 			[51] = 1537030420,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [64]
+		}, -- [62]
 		{
 			"Mark of Kazzak on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1446,7 +1403,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1537030810,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [63]
 		{
 			"grats!!!", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1468,7 +1425,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537031446,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [66]
+		}, -- [64]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1490,7 +1447,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537031474,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [67]
+		}, -- [65]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1512,7 +1469,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537033658,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [68]
+		}, -- [66]
 		{
 			"hey Kit!!", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -1534,7 +1491,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1537036009,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [69]
+		}, -- [67]
 		{
 			"Koppiiiii!", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -1556,7 +1513,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1537036042,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [70]
+		}, -- [68]
 		{
 			"grats", -- [1]
 			"Takdoma-TheScryers", -- [2]
@@ -1578,7 +1535,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaTakdoma|r",
 			[51] = 1537038265,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [71]
+		}, -- [69]
 		{
 			"Thx :)", -- [1]
 			"Lhegacy-TheScryers", -- [2]
@@ -1600,7 +1557,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Lhegacy|r",
 			[51] = 1537038279,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [72]
+		}, -- [70]
 		{
 			"|cffffff00Zuldazar is under attack!|r", -- [1]
 			"", -- [2]
@@ -1622,7 +1579,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1537063813,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [71]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1644,7 +1601,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1537063852,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [74]
+		}, -- [72]
 		{
 			"YAY CONGRATS!", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1666,7 +1623,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1537072901,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [75]
+		}, -- [73]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1688,7 +1645,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537072912,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [76]
+		}, -- [74]
 		{
 			"|cff0070dd|Hitem:163743::::::::120:577::::::|h[Drust Soulcatcher]|h|r", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1710,7 +1667,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537072997,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [77]
+		}, -- [75]
 		{
 			"finally |cffa335ee|Hitem:163875::::::::120:66::3:3:5124:1532:4786:::|h[Honorbound Protectorate]|h|r", -- [1]
 			"Rhettbull-ArgentDawn", -- [2]
@@ -1732,7 +1689,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaRhettbull|r",
 			[51] = 1537081075,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [78]
+		}, -- [76]
 		{
 			"a shield", -- [1]
 			"Rhettbull-ArgentDawn", -- [2]
@@ -1754,7 +1711,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaRhettbull|r",
 			[51] = 1537081079,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [79]
+		}, -- [77]
 		{
 			"got a rare mount and its a brown horse yay", -- [1]
 			"Twistedbolt-TheScryers", -- [2]
@@ -1776,7 +1733,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTwistedbolt|r",
 			[51] = 1537239838,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [80]
+		}, -- [78]
 		{
 			"rofl", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -1798,7 +1755,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1537239855,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [81]
+		}, -- [79]
 		{
 			"since fart isnt on , its a fucking brown horse yay", -- [1]
 			"Twistedbolt-TheScryers", -- [2]
@@ -1820,7 +1777,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTwistedbolt|r",
 			[51] = 1537239867,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [82]
+		}, -- [80]
 		{
 			"no bad!", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -1842,7 +1799,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1537239885,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [83]
+		}, -- [81]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1864,7 +1821,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537241486,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [84]
+		}, -- [82]
 		{
 			"Hey all.", -- [1]
 			"Swiftflame-TheScryers", -- [2]
@@ -1886,7 +1843,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaSwiftflame|r",
 			[51] = 1537242009,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [85]
+		}, -- [83]
 		{
 			"Anyone on who can invite my main?", -- [1]
 			"Swiftflame-TheScryers", -- [2]
@@ -1908,7 +1865,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaSwiftflame|r",
 			[51] = 1537242015,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [86]
+		}, -- [84]
 		{
 			"Hey all!", -- [1]
 			"Swiftfoot-TheScryers", -- [2]
@@ -1930,7 +1887,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aSwiftfoot|r",
 			[51] = 1537242515,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [87]
+		}, -- [85]
 		{
 			"HI again", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1952,7 +1909,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537242533,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [88]
+		}, -- [86]
 		{
 			":)", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1974,7 +1931,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537242542,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [89]
+		}, -- [87]
 		{
 			"How's everyone doing?", -- [1]
 			"Swiftfoot-TheScryers", -- [2]
@@ -1996,7 +1953,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aSwiftfoot|r",
 			[51] = 1537242564,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [90]
+		}, -- [88]
 		{
 			"good", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2018,7 +1975,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537242621,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [91]
+		}, -- [89]
 		{
 			"G'nite all", -- [1]
 			"Swiftfoot-TheScryers", -- [2]
@@ -2040,7 +1997,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aSwiftfoot|r",
 			[51] = 1537244428,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [92]
+		}, -- [90]
 		{
 			"nite", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2062,7 +2019,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1537244441,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [93]
+		}, -- [91]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2084,7 +2041,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1537494320,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [94]
+		}, -- [92]
 		{
 			"...Thanks  All...", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2106,7 +2063,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537494332,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [95]
+		}, -- [93]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2128,7 +2085,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1537494349,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [96]
+		}, -- [94]
 		{
 			"Hey all~", -- [1]
 			"Swiftfoot-TheScryers", -- [2]
@@ -2150,7 +2107,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aSwiftfoot|r",
 			[51] = 1537495045,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [97]
+		}, -- [95]
 		{
 			"hi", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2172,7 +2129,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537495052,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [98]
+		}, -- [96]
 		{
 			"|cffffff00Nazmir is under attack!|r", -- [1]
 			"", -- [2]
@@ -2194,7 +2151,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1537497131,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
+		}, -- [97]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2216,7 +2173,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537497514,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [100]
+		}, -- [98]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2238,7 +2195,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537498478,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [101]
+		}, -- [99]
 		{
 			"|cffffff00Backwater Beach is under attack!|r", -- [1]
 			"", -- [2]
@@ -2260,7 +2217,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1537499174,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [100]
 		{
 			"|cffffff00The Sliver is under attack!|r", -- [1]
 			"", -- [2]
@@ -2282,7 +2239,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1537499545,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [101]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2304,7 +2261,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537500051,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [104]
+		}, -- [102]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2326,7 +2283,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1537500121,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [105]
+		}, -- [103]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2348,7 +2305,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537501280,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [106]
+		}, -- [104]
 		{
 			"Gratz !", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2370,7 +2327,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1537501644,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [107]
+		}, -- [105]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2392,7 +2349,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1537633958,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [108]
+		}, -- [106]
 		{
 			"Gratz", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
@@ -2414,7 +2371,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1537633959,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [109]
+		}, -- [107]
 		{
 			"did you get credit for that?", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2436,7 +2393,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1537633981,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [110]
+		}, -- [108]
 		{
 			"yep", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2458,7 +2415,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1537633984,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [111]
+		}, -- [109]
 		{
 			"grats name", -- [1]
 			"Fartherin", -- [2]
@@ -2480,7 +2437,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1537682864,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [112]
+		}, -- [110]
 		{
 			"|cffffff00The Mugambala is under attack!|r", -- [1]
 			"", -- [2]
@@ -2502,7 +2459,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1537710198,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [111]
 		{
 			"|cffffff00Nazmir is under attack!|r", -- [1]
 			"", -- [2]
@@ -2524,7 +2481,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1537714419,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [112]
 		{
 			"Grats!", -- [1]
 			"Elzith-TheScryers", -- [2]
@@ -2546,7 +2503,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaElzith|r",
 			[51] = 1537715802,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [115]
+		}, -- [113]
 		{
 			"ty!", -- [1]
 			"Nadroj-ArgentDawn", -- [2]
@@ -2568,7 +2525,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dNadroj|r",
 			[51] = 1537715812,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [116]
+		}, -- [114]
 		{
 			"damn, grats", -- [1]
 			"Nadroj-ArgentDawn", -- [2]
@@ -2590,7 +2547,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dNadroj|r",
 			[51] = 1537717895,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [117]
+		}, -- [115]
 		{
 			"thanks", -- [1]
 			"Dinozette-ArgentDawn", -- [2]
@@ -2612,7 +2569,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Dinozette|r",
 			[51] = 1537717980,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [118]
+		}, -- [116]
 		{
 			"hey all", -- [1]
 			"Apoxe-ArgentDawn", -- [2]
@@ -2634,7 +2591,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edApoxe|r",
 			[51] = 1537720374,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [119]
+		}, -- [117]
 		{
 			"yo.", -- [1]
 			"Santia-TheScryers", -- [2]
@@ -2656,7 +2613,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSantia|r",
 			[51] = 1537720432,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [120]
+		}, -- [118]
 		{
 			"hola", -- [1]
 			"Inbauls-TheScryers", -- [2]
@@ -2678,7 +2635,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Inbauls|r",
 			[51] = 1537720590,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [121]
+		}, -- [119]
 		{
 			"welcome!", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2700,7 +2657,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1537720594,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [122]
+		}, -- [120]
 		{
 			" /dance", -- [1]
 			"Inbauls-TheScryers", -- [2]
@@ -2722,7 +2679,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Inbauls|r",
 			[51] = 1537720602,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [123]
+		}, -- [121]
 		{
 			"is there no auction house in Dalaran?", -- [1]
 			"Apoxe-ArgentDawn", -- [2]
@@ -2744,7 +2701,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edApoxe|r",
 			[51] = 1537720656,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [124]
+		}, -- [122]
 		{
 			"only for engineers :(", -- [1]
 			"Kitsunee-TheScryers", -- [2]
@@ -2766,7 +2723,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aKitsunee|r",
 			[51] = 1537720663,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [125]
+		}, -- [123]
 		{
 			"boo! ;)", -- [1]
 			"Apoxe-ArgentDawn", -- [2]
@@ -2788,7 +2745,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edApoxe|r",
 			[51] = 1537720761,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [126]
+		}, -- [124]
 		{
 			"Mark of Kazzak on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2810,6 +2767,50 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1537768000,
 			[50] = "CHAT_MSG_SAY",
+		}, -- [125]
+		{
+			"Congrats", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			6, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1538100057,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"Gratz !", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			7, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1538100058,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},
 }

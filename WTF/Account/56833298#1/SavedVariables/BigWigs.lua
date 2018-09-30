@@ -1,21 +1,23 @@
 
 BigWigs3DB = {
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
-	},
 	["global"] = {
 		["watchedMovies"] = {
 			[-575] = true,
 			[-593] = {
 			},
 			[-609] = true,
-			[-437] = true,
-			[-573] = true,
 			[-607] = true,
+			[-573] = true,
+			[-437] = true,
 		},
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
+		},
+		["BigWigs_Bosses_Sha of Doubt"] = {
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
@@ -24,15 +26,17 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Bosses_Wise Mari"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 		},
@@ -46,8 +50,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Supreme Lord Kazzak"] = {
-		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -55,13 +57,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Rukhmar"] = {
+		["BigWigs_Bosses_Liu Flameheart"] = {
 		},
-		["BigWigs_Plugins_AutoReply"] = {
+		["BigWigs_Bosses_Lorewalker Stonestep"] = {
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
-		["BigWigs_Bosses_Salyis's Warband"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -79,7 +81,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 	},
 	["wipe80"] = true,

@@ -1,8 +1,10 @@
 --[[ A cooldown text display ]] --
 
+local ICON_SIZE = 36 -- the expected size of an icon
+
 local Addon = _G[...]
-local ICON_SIZE = 36-- the expected size of an icon
 local UIParent = _G.UIParent
+
 local round = _G.Round
 local min = math.min
 local displays = {}
@@ -92,8 +94,8 @@ function Display:OnSizeChanged(width, height)
     if scale ~= self.scale then
         self.scale = scale
 
-        self:UpdateCooldownTextShown()
         self:UpdateCooldownTextStyle()
+        self:UpdateCooldownTextShown()
     end
 end
 
@@ -114,7 +116,7 @@ function Display:OnTimerFinished(timer)
     if self.timer == timer then
         local settings = self:GetCooldownSettings()
 
-        if settings and timer.duration >= (settings.minEffectDuration or 0) then
+        if settings and ((settings.minEffectDuration or 0) * 1000) <= timer.duration  then
             Addon.FX:Run(self.cooldown, settings.effect or "none")
         end
     end
@@ -145,14 +147,15 @@ function Display:HideCooldownText(cooldown)
 end
 
 function Display:UpdatePrimaryCooldown()
-    local old = self.cooldown
-    local new = self:GetCooldownWithHighestPriority()
+    local oldCooldown = self.cooldown
+    local newCooldown = self:GetCooldownWithHighestPriority()
 
-    if old ~= new then
-        self.cooldown = new
+    if oldCooldown ~= newCooldown then
+        self.cooldown = newCooldown
 
-        if new then
-            self:SetAllPoints(new)
+        if newCooldown then
+            self:SetAllPoints(newCooldown)
+            self:SetFrameLevel(newCooldown:GetFrameLevel() + 7)
         end
     end
 end
@@ -201,11 +204,9 @@ function Display:GetCooldownWithHighestPriority()
 end
 
 function Display:UpdateCooldownText()
-    self:UpdateCooldownTextShown()
-    self:UpdateCooldownTextStyle()
     self:UpdateCooldownTextPosition()
-
-    self.text:SetText(self.timer and self.timer.text or "")
+    self:UpdateCooldownTextStyle()
+    self:UpdateCooldownTextShown()
 end
 
 function Display:UpdateCooldownTextShown()
@@ -226,8 +227,12 @@ function Display:UpdateCooldownTextShown()
     -- compare as ints to avoid floating point math errors
     if round(100 * minSize) <= round(100 * scale * uiRatio) then
         self.text:Show()
+        self.text:SetText(self.timer and self.timer.text or "")
     else
+        -- clear text on hide to work around text sometimes staying shown
+        -- even if we've hidden the font string
         self.text:Hide()
+        self.text:SetText("")
     end
 end
 

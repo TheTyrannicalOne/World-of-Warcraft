@@ -41,6 +41,13 @@ X: 5
 Y: -48
 W: 120
 H: 40
+Frame: MAOptions
+FrameLevel: 1
+Anchor: CENTER
+X: -116
+Y: 15
+W: 497
+H: 513
 Frame: PawnUIFrame
 FrameLevel: 1
 Anchor: CENTER

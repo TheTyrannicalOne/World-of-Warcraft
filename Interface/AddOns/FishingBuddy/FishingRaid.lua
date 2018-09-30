@@ -39,48 +39,54 @@ local RaidOptions = {
         ["v"] = 1,
         ["parents"] = { ["FishingRaid"] = "d", },
         ["default"] = true },
+    ["WatchQuestsOnLocation"] = {
+        ["text"] = FBConstants.CONFIG_FISHWATCHLOCATION_ONOFF,
+        ["tooltip"] = FBConstants.CONFIG_FISHWATCHLOCATION_INFO,
+        ["v"] = 1,
+        ["parents"] = { ["WatchRaidCurrency"] = "d", ["FishingRaid"] = "d", },
+        ["default"] = true },
     }
 
 local RaidCurrency = {}
 RaidCurrency[146848] = {
 	["enUS"] = "Fragmented Enchantment",
-	zone = "Azsuna",
+	-- zone = "Azsuna",
 	limit = 100
 };
 
 RaidCurrency[146959] = {
 	["enUS"] = "Corrupted Globule",
-    zone = "Val'sharah",
+    -- zone = "Val'sharah",
 	limit = 100
 };
 
 RaidCurrency[146960] = {
 	["enUS"] = "Ancient Totem Fragment",
-	zone = "Thunder Totem",
+	-- zone = "Thunder Totem",
 	limit = 100
 };
 
 RaidCurrency[146961] = {
 	["enUS"] = "Shiny Bauble",
-    zone = "Stormheim",
+    -- zone = "Stormheim",
 	limit = 100
 };
 
 RaidCurrency[146962] = {
 	["enUS"] = "Golden Minnow",
-	zone = "Suramar",
+	-- zone = "Suramar",
 	limit = 100
 };
 
 RaidCurrency[146963] = {
 	["enUS"] = "Desecrated Seaweed",
-	zone = "Broken Shore",
+	-- zone = "Broken Shore",
 	limit = 100
 };
 
 RaidCurrency[138777] = {
 	["enUS"] = "Drowned Mana",
-	zone = "Dalaran (Broken Isles)",
+	-- zone = "Dalaran (Broken Isles)",
 	subzone = MARGOSS_RETREAT,
 	limit = 100
 };
@@ -285,6 +291,13 @@ local function DisplayRaidFish()
 		return nil
 	end
 
+    if GSB("WatchQuestsOnLocation") then
+        local continent = FL:GetCurrentMapContinent()
+        if (continent ~= FBConstants.BROKEN_ISLES) then
+            return nil
+        end
+    end
+
 	local info = CurrentBoss()
 	if info then
 		local label = LFG_LIST_FRIEND;
@@ -298,9 +311,8 @@ local function DisplayRaidFish()
 		if info then
 			label = label.." "..BOSS.." "..info[CurLoc]
 		end
-		label = label..": "
-		RaidCurrency[info['currency']]['area'] = info['area']
-		return FWF:DisplayFishLine(RaidCurrency, label, info.area)
+        label = label..": "
+		return FWF:DisplayFishLine(RaidCurrency, label, info['area'])
 	end
 end
 
@@ -341,7 +353,7 @@ function FBR:BAG_UPDATE_COOLDOWN()
 			self.Cooldown:Show()
 		else
 			self.Cooldown:Hide()
-		end
+        end
 	end
 end
 tinsert(copyfuncs, "BAG_UPDATE_COOLDOWN");
@@ -357,7 +369,10 @@ end
 function FBR:PLAYER_REGEN_ENABLED(event)
 	self:SetAttribute('item', self.attribute)
 	self:UnregisterEvent(event)
-	self:BAG_UPDATE_COOLDOWN()
+    self:BAG_UPDATE_COOLDOWN()
+    if not self.attribute then
+        self:Hide();
+    end
 end
 tinsert(copyfuncs, "PLAYER_REGEN_ENABLED");
 
@@ -436,6 +451,16 @@ function FBR:FadeOut()
 	end
 end
 tinsert(copyfuncs, "FadeOut");
+
+function FBR:SafeHide()
+	if not FishingBuddy.CheckCombat() then
+        self:Hide()
+    else
+		self.attribute = nil
+		self:RegisterEvent('PLAYER_REGEN_ENABLED')
+	end
+end
+tinsert(copyfuncs, "SafeHide");
 
 function FBR:Clear()
 	self.itemLink = nil;
@@ -549,6 +574,10 @@ RaidEvents["VARIABLES_LOADED"] = function(started)
     button.spell = 239673;
 
 	button:SetItem()
+
+    for _, info in ipairs(RaidBosses) do
+        RaidCurrency[info['currency']]['area'] = info.area
+    end
 
 	-- Chat filter
 	ChatFrame_AddMessageEventFilter("CHAT_MSG_LOOT", SilenceOfTheFishies)

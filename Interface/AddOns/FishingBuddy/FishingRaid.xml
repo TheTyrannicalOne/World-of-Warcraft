@@ -16,7 +16,7 @@
 				<Scripts>
 					<OnFinished>
 						self:GetParent():SetAlpha(0.0);
-						self:GetParent():Hide();
+						self:GetParent():SafeHide();
 					</OnFinished>
 				</Scripts>
 			</AnimationGroup>

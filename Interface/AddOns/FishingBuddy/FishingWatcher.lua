@@ -172,7 +172,8 @@ end
 
 function FWF:DisplayFishLine(fish, label, area)
 	local line = nil;
-	local area, subzone = FishingBuddy.GetCurrentMapIdInfo();
+    local current_area, subzone = FishingBuddy.GetCurrentMapIdInfo();
+    area = area or current_area
 	for id,info in pairs(fish) do
 		local havesome = GetItemCount(id);
 		local here = false

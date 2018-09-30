@@ -127,7 +127,7 @@ FishingTranslations["enUS"] = {
     CONFIG_FISHWATCHPAGLE_ONOFF  = "Watch Pagle's Fish",
     CONFIG_FISHWATCHPAGLE_INFO   = "Display which Pagle quest fish you have caught today.",
     CONFIG_FISHWATCHWORLD_ONOFF  = "Watch World Quests",
-    CONFIG_FISHWATCHWORLD_INFO   = "Display available Legion world quests.",
+    CONFIG_FISHWATCHWORLD_INFO   = "Display available world quests.",
     CONFIG_FISHWATCHCURRENT_ONOFF = "Current fish only",
     CONFIG_FISHWATCHCURRENT_INFO = "Display only the fish caught in the current session.",
 
@@ -218,7 +218,9 @@ FishingTranslations["enUS"] = {
     CONFIG_RAIDACTION_ONOFF	   = "Action Button",
     CONFIG_RAIDACTION_INFO     = "If enabled, show an action button when the special item is in inventory.",
     CONFIG_RAIDWATCH_ONOFF     = "Watch currency",
-    CONFIG_RAIDWATCH_INFO      = "If enabled, the Fish Watcher will show the currency fish for this raid boss.",
+    CONFIG_RAIDWATCH_INFO      = "If enabled, the Fish Watcher will show the currency fish for the current raid boss.",
+    CONFIG_FISHWATCHLOCATION_ONOFF  = "Location Only",
+    CONFIG_FISHWATCHLOCATION_INFO   = "Only show raid bosses when on the right continent.",
 
     CONFIG_AUTOOPEN_ONOFF	  = "Open quest items",
     CONFIG_AUTOOPEN_INFO	  = "If enabled, use a double-click to open up fishing quest items.",

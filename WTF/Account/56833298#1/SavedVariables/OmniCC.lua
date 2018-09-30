@@ -1,5 +1,8 @@
 
 OmniCC4Config = {
+	["groups"] = {
+	},
+	["version"] = "8.0.6",
 	["groupSettings"] = {
 		["base"] = {
 			["minDuration"] = 2.00000002980232,
@@ -25,7 +28,4 @@ OmniCC4Config = {
 			["spiralOpacity"] = 1.00999997742474,
 		},
 	},
-	["groups"] = {
-	},
-	["version"] = "8.0.6",
 }
