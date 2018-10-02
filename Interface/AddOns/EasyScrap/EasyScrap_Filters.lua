@@ -4,6 +4,39 @@ local NOT = '|cFFFF0000not|r'
 local IS = '|cFF00FF00is|r'
 local f
 
+
+local invTypes = {}
+invTypes['INVTYPE_RANGED'] = INVTYPE_RANGED
+invTypes['INVTYPE_THROWN'] = INVTYPE_THROWN
+invTypes['INVTYPE_ROBE'] = INVTYPE_ROBE
+invTypes['INVTYPE_CHEST'] = INVTYPE_CHEST
+invTypes['INVTYPE_WEAPONMAINHAND'] = INVTYPE_WEAPONMAINHAND
+invTypes['INVTYPE_NECK'] = INVTYPE_NECK
+invTypes['INVTYPE_QUIVER'] = INVTYPE_QUIVER
+invTypes['INVTYPE_WEAPONMAINHAND_PET'] = INVTYPE_WEAPONMAINHAND_PET
+invTypes['INVTYPE_RANGEDRIGHT'] = INVTYPE_RANGEDRIGHT
+invTypes['INVTYPE_2HWEAPON'] = INVTYPE_2HWEAPON
+invTypes['INVTYPE_HOLDABLE'] = INVTYPE_HOLDABLE
+invTypes['INVTYPE_WEAPONOFFHAND'] = INVTYPE_WEAPONOFFHAND
+invTypes['INVTYPE_SHIELD'] = INVTYPE_SHIELD
+invTypes['INVTYPE_BAG'] = INVTYPE_BAG
+invTypes['INVTYPE_TRINKET'] = INVTYPE_TRINKET
+invTypes['INVTYPE_WAIST'] = INVTYPE_WAIST
+invTypes['INVTYPE_HEAD'] = INVTYPE_HEAD
+invTypes['INVTYPE_WEAPON'] = INVTYPE_WEAPON
+invTypes['INVTYPE_NON_EQUIP'] = INVTYPE_NON_EQUIP
+invTypes['INVTYPE_LEGS'] = INVTYPE_LEGS
+invTypes['INVTYPE_RELIC'] = INVTYPE_RELIC
+invTypes['INVTYPE_TABARD'] = INVTYPE_TABARD
+invTypes['INVTYPE_FEET'] = INVTYPE_FEET
+invTypes['INVTYPE_SHOULDER'] = INVTYPE_SHOULDER
+invTypes['INVTYPE_CLOAK'] = INVTYPE_CLOAK
+invTypes['INVTYPE_WRIST'] = INVTYPE_WRIST
+invTypes['INVTYPE_HAND'] = INVTYPE_HAND
+invTypes['INVTYPE_FINGER'] = INVTYPE_FINGER
+invTypes['INVTYPE_BODY'] = INVTYPE_BODY
+
+
 local function createFilterFrame(filterName, height)
     local f = CreateFrame('Frame', nil, EasyScrapEditFilterContentFrame)
     f:SetSize(f:GetParent():GetWidth()-14, height)
@@ -556,6 +589,165 @@ filters['itemType'].filterFunction = function(itemIndex, filterIndex)
 end
 
 --[[---------------------------------------------------------------------------------------------------------------------------------------
+BONUS STATS
+--]]---------------------------------------------------------------------------------------------------------------------------------------
+filters['bonusStats'] = {}
+filters['bonusStats'].menuText = 'Bonus Stats'
+filters['bonusStats'].data = {
+['40'] = true, --Avoidance 
+['43'] = true, --Indestructible
+--['1808'] = true, --Socket 
+['42'] = true, --Speed
+['41'] = true --Leech
+}
+filters['bonusStats'].filterMessage = 'item does not have one of selected bonus stats.'
+
+f = createFilterFrame('Bonus Stats', 92)
+f.checkButtons = {}
+f.checkButtons['40'] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons['40']:SetPoint('TOPLEFT', 8, -8)
+f.checkButtons['40'].text:SetText('Avoidance')
+f.checkButtons['43'] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons['43']:SetPoint('TOPLEFT', 8, -28)
+f.checkButtons['43'].text:SetText('Indestructible')
+f.checkButtons['41'] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons['41']:SetPoint('TOPLEFT', 8, -48)
+f.checkButtons['41'].text:SetText('Leech')
+--f.checkButtons['1808'] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+--f.checkButtons['1808']:SetPoint('TOPLEFT', 8, -68)
+--f.checkButtons['1808'].text:SetText('Socket')
+f.checkButtons['42'] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+f.checkButtons['42']:SetPoint('TOPLEFT', 8, -68)
+f.checkButtons['42'].text:SetText('Speed')
+
+
+function f:populateData(data)
+    for k,v in pairs(filters['bonusStats'].data) do
+        self.checkButtons[k]:SetChecked(data[k])
+    end
+end
+
+function f:saveData(customFilterIndex)
+    for k,v in pairs(filters['bonusStats'].data) do
+        EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[k] = self.checkButtons[k]:GetChecked()
+    end
+end
+
+filters['bonusStats'].frame = f
+
+filters['bonusStats'].filterFunction = function(itemIndex, filterIndex)
+    local item = EasyScrap.scrappableItems[itemIndex]
+    local filterData = EasyScrap.saveData.customFilters[EasyScrap.activeFilterID].rules[filterIndex].data
+    
+    local tempString, unknown1, unknown2, unknown3 = strmatch(item.itemLink, "item:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:[-%d]-:([-:%d]+):([-%d]-):([-%d]-):([-%d]-)|")
+    local bonusIDs = {}
+    local upgradeValue
+    if tempString then
+        if upgradeTypeID and upgradeTypeID ~= "" then
+           upgradeValue = tempString:match("[-:%d]+:([-%d]+)")
+           bonusIDs = {strsplit(":", tempString:match("([-:%d]+):"))}
+        else
+           bonusIDs = {strsplit(":", tempString)}
+        end
+        --4775 bonus ID = azerite power ID 13 active
+        for k,v in pairs(bonusIDs) do if v == '4775' or v == '' then table.remove(bonusIDs, k) break end end
+    end
+    
+    local enabledCount = 0
+    for k,v in pairs(filterData) do
+        if v then enabledCount = enabledCount + 1 end
+    end
+    
+    if enabledCount >= 1 then
+        for k,v in pairs(bonusIDs) do
+            if filterData[v] then return true end
+        end   
+        filters['bonusStats'].filterMessage = 'item does not have one of selected bonus stats.'
+        return false
+    else
+        for k,v in pairs(bonusIDs) do
+            if filterData[v] ~= nil then return false end
+        end
+        filters['bonusStats'].filterMessage = 'item has a bonus stat.'
+        return true
+    end
+end
+
+--[[---------------------------------------------------------------------------------------------------------------------------------------
+ITEM SLOT
+--]]---------------------------------------------------------------------------------------------------------------------------------------
+filters['itemSlot'] = {}
+filters['itemSlot'].menuText = 'Item Slot'
+filters['itemSlot'].data = {
+    ['INVTYPE_HEAD'] = true, 
+    ['INVTYPE_NECK'] = true, 
+    ['INVTYPE_SHOULDER'] = true, 
+    ['INVTYPE_CLOAK'] = true, 
+    ['INVTYPE_CHEST'] = true, 
+    ['INVTYPE_WRIST'] = true, 
+    ['INVTYPE_HAND'] = true, 
+    ['INVTYPE_WAIST'] = true, 
+    ['INVTYPE_LEGS'] = true, 
+    ['INVTYPE_FEET'] = true, 
+    ['INVTYPE_FINGER'] = true, 
+    ['INVTYPE_TRINKET'] = true,
+}
+filters['itemSlot'].filterMessage = 'item slot is not one of selected item slots.'
+
+local itt = {
+    'INVTYPE_HEAD', 
+    'INVTYPE_NECK', 
+    'INVTYPE_SHOULDER', 
+    'INVTYPE_CLOAK', 
+    'INVTYPE_CHEST', 
+    'INVTYPE_WRIST',
+    'INVTYPE_HAND', 
+    'INVTYPE_WAIST',
+    'INVTYPE_LEGS',
+    'INVTYPE_FEET',
+    'INVTYPE_FINGER',
+    'INVTYPE_TRINKET'
+}
+
+f = createFilterFrame('Item Slot', 132)
+f.checkButtons = {}
+for i = 1, #itt do
+    f.checkButtons[itt[i]] = CreateFrame('CheckButton', nil, f, 'EasyScrapCheckButtonTemplate')
+    f.checkButtons[itt[i]].text:SetText(invTypes[itt[i]]) 
+    if i < 7 then
+        f.checkButtons[itt[i]]:SetPoint('TOPLEFT', 8, -8-((i-1)*20))
+    else
+        f.checkButtons[itt[i]]:SetPoint('TOPLEFT', 118, -8-((i-7)*20))
+    end
+end
+
+function f:populateData(data)
+    for k,v in pairs(filters['itemSlot'].data) do
+        self.checkButtons[k]:SetChecked(data[k])
+    end
+end
+
+function f:saveData(customFilterIndex)
+    for k,v in pairs(filters['itemSlot'].data) do
+        EasyScrap.saveData.customFilters[customFilterIndex].rules[self.ruleIndex].data[k] = self.checkButtons[k]:GetChecked()
+    end
+end
+
+filters['itemSlot'].frame = f
+
+filters['itemSlot'].filterFunction = function(itemIndex, filterIndex)
+    local item = EasyScrap.scrappableItems[itemIndex]
+    local filterData = EasyScrap.saveData.customFilters[EasyScrap.activeFilterID].rules[filterIndex].data
+    
+    if filterData[item.itemEquipLoc] or (item.itemEquipLoc == 'INVTYPE_ROBE' and filterData['INVTYPE_CHEST']) then 
+        return true
+    else
+        filters['itemSlot'].filterMessage = 'item slot is '..invTypes[item.itemEquipLoc]
+        return false
+    end
+end
+
+--[[---------------------------------------------------------------------------------------------------------------------------------------
 ITEM IN WARDROBE
 --]]---------------------------------------------------------------------------------------------------------------------------------------
 filters['equipmentSet'] = {}
@@ -569,6 +761,30 @@ filters['equipmentSet'].frame = f
 
 filters['equipmentSet'].filterFunction = function(itemIndex)
     return not EasyScrap:itemInWardrobeSet(EasyScrap.scrappableItems[itemIndex].itemID, EasyScrap.scrappableItems[itemIndex].bag, EasyScrap.scrappableItems[itemIndex].slot)
+end
+
+
+--[[---------------------------------------------------------------------------------------------------------------------------------------
+DUPLICATES
+--]]---------------------------------------------------------------------------------------------------------------------------------------
+filters['duplicates'] = {}
+filters['duplicates'].menuText = 'Duplicates'
+filters['duplicates'].filterMessage = 'item is not a duplicate.'
+
+
+f = createFilterFrame('Duplicates', 32)
+f.bodyText:SetText('Only show duplicate items.')
+filters['duplicates'].frame = f
+
+filters['duplicates'].filterFunction = function(itemIndex)
+    local item = EasyScrap.scrappableItems[itemIndex]
+    
+    local i = 0
+    for k,v in pairs(EasyScrap.scrappableItems) do
+        if v.itemID == item.itemID then i = i + 1 end
+        if i > 1 then return true end
+    end
+    return false
 end
 
 --[[---------------------------------------------------------------------------------------------------------------------------------------
@@ -664,13 +880,19 @@ filters['azeriteArmor'].order = 1
 filters['armorType'].order = 2
 filters['bags'].order = 3
 filters['bindType'].order = 4
-filters['equipmentSet'].order = 5
-filters['itemLevel'].order = 6
-filters['itemName'].order = 7
-filters['itemQuality'].order = 8
-filters['itemType'].order = 9
-filters['transmogKnown'].order = 10
-filters['weaponType'].order = 11
+filters['bonusStats'].order = 5
+filters['duplicates'].order = 6
+filters['equipmentSet'].order = 7
+filters['itemLevel'].order = 8
+filters['itemName'].order = 9
+filters['itemQuality'].order = 10
+filters['itemSlot'].order = 11
+filters['itemType'].order = 12
+filters['transmogKnown'].order = 13
+filters['weaponType'].order = 14
+
+
+
 
 
 EasyScrap.filterTypes = filters

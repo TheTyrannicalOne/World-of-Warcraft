@@ -47,7 +47,7 @@ MADB = {
 						"RightChatToggleButton", -- [2]
 						"BOTTOMRIGHT", -- [3]
 						0, -- [4]
-						535.000061035156, -- [5]
+						0, -- [5]
 					},
 					["name"] = "TooltipMover",
 					["pos"] = {

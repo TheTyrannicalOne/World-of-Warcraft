@@ -9,7 +9,7 @@ WQPartyVars = {
 		["point"] = "LEFT",
 		["relativePoint"] = "LEFT",
 	},
-	["automaticLFM"] = false,
+	["automaticLFM"] = true,
 	["customPartyMessage"] = "",
 	["LFMchannel"] = 1,
 }

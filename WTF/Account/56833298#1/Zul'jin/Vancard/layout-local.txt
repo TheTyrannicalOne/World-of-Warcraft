@@ -44,7 +44,7 @@ H: 300
 Frame: AAP_GreetingsFrame
 FrameLevel: 1
 Anchor: CENTER
-X: -1
+X: 0
 Y: -2
 W: 330
 H: 150

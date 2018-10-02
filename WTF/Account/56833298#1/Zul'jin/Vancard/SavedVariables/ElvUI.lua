@@ -2601,5 +2601,137 @@ ElvCharacterDB = {
 			[51] = 1537707280,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [118]
+		{
+			"Is your io score as low as your IQ? Are you tired of being asked to link AOTC to get into a +2? Do you like keep warm on a cold, winter night by standing in the fire? Then <Garbage> is the place for you! Casual raiding, PVP, whatever. PST Today!", -- [1]
+			"Amplepenance-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Amplepenance", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			181, -- [11]
+			"Player-61-0BAFB79F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffffffffAmplepenance|r",
+			[51] = 1538317172,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [119]
+		{
+			"LFM N Mythraxx Pst for invite", -- [1]
+			"Såke-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Såke", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			27, -- [11]
+			"Player-61-0B8D7655", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa330c9Såke|r",
+			[51] = 1538354943,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [120]
+		{
+			"Selling Full Clear Uldir Normal/Heroic with loot!Weekly M+10!Best Price!Pst", -- [1]
+			"Hedam-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hedam", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			29, -- [11]
+			"Player-61-0BC1BDC9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dHedam|r",
+			[51] = 1538354965,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [121]
+		{
+			"WTS--WTS-M+10 Loot run now !!! 8/8 H Uldir Tonight-360/390wepaon&350*355*365boe package &mount&11o-12O&Update gear 360", -- [1]
+			"Fainzarzzak-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Fainzarzzak", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			594, -- [11]
+			"Player-61-0BCA3499", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffaad372Fainzarzzak|r",
+			[51] = 1538367410,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [122]
+		{
+			"- Herioc Uldir Full Clear now!! 1  SELFPLAY spot OPEN- <kill G'HUN NOW>'-WTS mythic +10 carry ---come now", -- [1]
+			"Fainzarzzak-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Fainzarzzak", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			596, -- [11]
+			"Player-61-0BCA3499", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffaad372Fainzarzzak|r",
+			[51] = 1538367435,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [123]
+		{
+			"Selling Weekly +10 - get your 380+ piece in your cache tuesday aswell as 370 pieces in the run! Pst for price.", -- [1]
+			"Dhbuddy-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Dhbuddy", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			599, -- [11]
+			"Player-61-0BA37FEF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa330c9Dhbuddy|r",
+			[51] = 1538367437,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [124]
 	},
 }

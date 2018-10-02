@@ -37,8 +37,8 @@ H: 240
 Frame: AAP_AFkFrames
 FrameLevel: 1
 Anchor: TOP
-X: 5
-Y: -48
+X: 72
+Y: -40
 W: 120
 H: 40
 Frame: MAOptions
