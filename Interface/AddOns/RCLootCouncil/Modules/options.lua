@@ -351,6 +351,7 @@ function addon:OptionsTable()
 												return
 											end
 											self:GetActiveModule("history"):DeleteAllEntriesByName(selections.deleteName)
+											selections.deleteName = "" -- Barrow: Needs to be reset.
 										end,
 									},
 									deleteDate = {
@@ -387,6 +388,7 @@ function addon:OptionsTable()
 												return
 											end
 											self:GetActiveModule("history"):DeleteEntriesOlderThanEpoch(selections.deleteDate)
+											selections.deleteDate = "" -- Barrow: Needs to be reset.
 										end,
 									},
 									deletePatch = {
@@ -419,8 +421,41 @@ function addon:OptionsTable()
 												return
 											end
 											self:GetActiveModule("history"):DeleteEntriesOlderThanEpoch(selections.deletePatch)
+											selections.deletePatch = "" -- Barrow: Needs to be reset.
 										end,
-									}
+									},
+									deleteCustomDays = {
+										order = 18,
+										name = addon:CompleteFormatSimpleStringWithPluralRule(_G.DAYS, 2),
+										desc = L["opt_deleteDate_desc"],
+										type = "input",
+										width = "double",
+										validate = function(info, txt)
+											return type(tonumber(txt)) == "number" and true or "Input must be a number"
+										end,
+										get = function(info)
+											return selections[info[#info]] or ""
+										end,
+										set = function(info, txt)
+											selections[info[#info]] = txt
+										end,
+									},
+									deleteCustomDaysBtn = {
+										order = 19,
+										name = _G.DELETE,
+										type = "execute",
+										confirm = function() return L["opt_deleteDate_confirm"] end,
+										func = function(info)
+											if not selections.deleteCustomDays then
+												addon:Print(L["Invalid selection"])
+												return
+											end
+											-- Convert days into seconds
+											local days = selections.deleteCustomDays * 60 * 60 * 24
+											self:GetActiveModule("history"):DeleteEntriesOlderThanEpoch(days)
+											selections.deleteCustomDays = ""
+										end,
+									},
 								},
 							},
 						},
@@ -1041,6 +1076,7 @@ function addon:OptionsTable()
 											RAID = _G.CHAT_MSG_RAID	,
 											RAID_WARNING = _G.CHAT_MSG_RAID_WARNING,
 											group = _G.GROUP, -- must be converted
+											chat = L["Chat print"],
 										},
 										set = function(i,v) self.db.profile.announceChannel = v end,
 										hidden = function() return not self.db.profile.announceItems end,
@@ -1539,10 +1575,11 @@ function addon:OptionsTable()
 				YELL = _G.CHAT_MSG_YELL,
 				PARTY = _G.CHAT_MSG_PARTY,
 				GUILD = _G.CHAT_MSG_GUILD,
-				OFFICER = _G.CHAT_MSG_RAID_WARNING,
+				OFFICER = _G.CHAT_MSG_OFFICER,
 				RAID = _G.CHAT_MSG_RAID,
 				RAID_WARNING = _G.CHAT_MSG_RAID_WARNING,
 				group = _G.GROUP,
+				chat = L["Chat print"],
 			},
 			set = function(j,v) self.db.profile.awardText[i].channel = v	end,
 			get = function() return self.db.profile.awardText[i].channel end,

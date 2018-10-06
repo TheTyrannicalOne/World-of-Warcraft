@@ -1,0 +1,44 @@
+## Interface: 80000
+## Author: Vrul
+## Version: 1.3.12
+## Title: ImpliedTarget
+## Notes: Modifies action buttons so that they may change the target of an action based on whether that action is harmful or helpful.
+## OptionalDeps: Ace3, CallbackHandler-1.0, LibDataBroker-1.1, LibOptionsAssist-1.1, LibSecureCmdOption-Beta, LibStub
+## SavedVariables: ImpliedTargetSettings
+## X-WoWI-ID: 17648
+
+Libs\LibStub.lua
+Libs\CallbackHandler-1.0.lua
+Libs\AceDB-3.0.lua
+Libs\LibDataBroker-1.1.lua
+Libs\LibOptionsAssist-1.1.lua
+Libs\LibSecureCmdOption-Beta.lua
+
+Locales.lua
+Core.lua
+KeyBinds.lua
+Paging.lua
+Buttons.lua
+Parameters.lua
+Settings.lua
+Convert.lua
+
+Actions.lua
+ActionName.lua
+
+Actions\Item.lua
+Actions\Racial.lua
+Actions\Vehicle.lua
+
+Actions\DeathKnight.lua
+Actions\DemonHunter.lua
+Actions\Druid.lua
+Actions\Hunter.lua
+Actions\Mage.lua
+Actions\Monk.lua
+Actions\Paladin.lua
+Actions\Priest.lua
+Actions\Rogue.lua
+Actions\Shaman.lua
+Actions\Warlock.lua
+Actions\Warrior.lua

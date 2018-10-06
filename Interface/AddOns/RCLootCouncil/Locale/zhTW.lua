@@ -138,6 +138,8 @@ L["Change Response"] = "更改回應"
 L["Changing loot threshold to enable Auto Awarding"] = "更改拾取品質以啟用自動分配"
 L["Changing LootMethod to Master Looting"] = "分配方式更改爲隊長分配"
 L["channel_desc"] = "發送信息的頻道"
+--[[Translation missing --]]
+--[[ L["Chat print"] = ""--]] 
 L["chat tVersion string"] = "|cFF87CEFARCLootCouncil |cFFFFFFFF版本 |cFFFFA500 %s - %s"
 L["chat version String"] = "|cFF87CEFARCLootCouncil |cFFFFFFFF版本 |cFFFFA500 %s"
 L["chat_commands_add"] = "將一個物品加入分配"
@@ -493,6 +495,8 @@ L["Total items received:"] = "總共獲得件數:"
 L["Total items won:"] = "總共贏得件數:"
 --[[Translation missing --]]
 --[[ L["trade_complete_message"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["trade_item_to_trade_not_found"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["trade_wrongwinner_message"] = ""--]] 
 L["tVersion_outdated_msg"] = "最新的RCLootCouncil版本是：%s"

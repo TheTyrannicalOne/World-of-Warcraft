@@ -1,3 +1,19 @@
+### v2.9.1
+---
+
+* Added local chat print option to all announcements.
+* Added a custom number of days input to loot history mass deletion.
+
+
+###### Bugfixes
+* *BoE items are now no longer added to sessions when the option is turned off.*
+* *Disabled all ML registrations in pvp (#354).*
+* *Added a patch and fix for Blizzards and others taint of dropdown menus (#358, #361, #366).*
+* *Wands and other weapons are now correctly identified as MainHand weapons (#368).*
+* *The TradeUI will now be shown if using a different locale than the ML (#370).*
+
+
+
 ### v2.9.0
 ---
 * **Appearance**

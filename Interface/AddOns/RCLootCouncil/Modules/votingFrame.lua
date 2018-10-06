@@ -56,7 +56,6 @@ function RCVotingFrame:OnInitialize()
 	-- The actual table being worked on, new entries should be added to this table "tinsert(RCVotingFrame.scrollCols, data)"
 	-- If you want to add or remove columns, you should do so on your OnInitialize. See RCVotingFrame:RemoveColumn() for removal.
 	self.scrollCols = {unpack(defaultScrollTableData)}
-
 	self.nonTradeablesButtons = {}
 
 	menuFrame = CreateFrame("Frame", "RCLootCouncil_VotingFrame_RightclickMenu", UIParent, "Lib_UIDropDownMenuTemplate")
@@ -88,6 +87,7 @@ function RCVotingFrame:OnDisable() -- We never really call this
 	self:Hide()
 	self.frame:SetParent(nil)
 	self.frame = nil
+	wipe(addon.lootStatus)
 	wipe(lootTable)
 	active = false
 	session = 1
@@ -317,11 +317,6 @@ function RCVotingFrame:OnCommReceived(prefix, serializedMsg, distri, sender)
 
 			elseif command == "not_tradeable" or command == "rejected_trade" then
 				self:AddNonTradeable(unpack(data), addon:UnitName(sender), command)
-
-			elseif command == "looted" then
-				-- TODO
-			elseif command == "fakeLoot" then
-				-- TODO
 
 			end
 		end
@@ -827,6 +822,15 @@ function RCVotingFrame:GetFrame()
 	rf:SetWidth(rft:GetStringWidth())
 	f.rollResult = rf
 
+	-- Loot Status
+	-- f.lootStatus = addon.UI:New("Text", f.content, " ")
+	-- f.lootStatus:SetTextColor(1,1,1,1) -- White for now
+	-- f.lootStatus:SetHeight(20)
+	-- f.lootStatus:SetWidth(150)
+	-- f.lootStatus:SetPoint("RIGHT", rf, "LEFT", -10, 0)
+	-- f.lootStatus:SetScript("OnLeave", addon.Utils.HideTooltip)
+	-- f.lootStatus.text:SetJustifyH("RIGHT")
+
 	-- Award string
 	local awdstr = f.content:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	awdstr:SetPoint("CENTER", f.content, "TOP", 0, -53)
@@ -862,6 +866,53 @@ function RCVotingFrame:GetFrame()
 	return f;
 end
 
+function RCVotingFrame:UpdateLootStatus()
+	if not next(addon.lootStatus) then return end -- Might not have any data
+	-- Find out which guid we're working with
+	local id, max = 0, 0
+	for k,v in pairs(addon.lootStatus) do
+		if v.num > max then
+			id = k
+			max = v.num
+		end
+	end
+	local looted, unlooted, fake = 0,0,0
+	local list = {} -- [name] = "status"
+	for name in pairs(addon.candidates) do
+		if addon.lootStatus[id].candidates[name] then -- They have looted
+			tinsert(list, {name = name, text = "|cff00ff00Looted"})
+			looted = looted + 1
+		elseif addon.lootStatus[id].fake[name] then -- fake loot
+			tinsert(list, {name = name, text = addon.lootStatus[id].fake[name] .. "|cffff0000 Fake loot|r"})
+			fake = fake + 1
+		else -- Unlooted
+			tinsert(list, {name = name, text = "|cffffff00Unlooted"})
+			unlooted = unlooted + 1
+		end
+	end
+	local num = 0
+	for k in pairs(addon.candidates) do num = num + 1 end
+	self.frame.lootStatus:SetText(format("Loot Status: |cffff0000%d|cffffffff/|cffffff00%d|cffffffff/|cff00ff00%d|cffffffff/%d|r", fake, unlooted, looted, num))
+	table.sort(list, function(a,b)
+		return a.name < b.name
+	end)
+	self.frame.lootStatus:SetScript("OnEnter", function()
+		GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")
+		GameTooltip:AddLine("Loot Status")
+		if addon.debug then
+			GameTooltip:AddLine("Debug")
+			for id, v in pairs(addon.lootStatus) do
+				GameTooltip:AddDoubleLine(id, v.num,1,1,1,1,1,1)
+			end
+			GameTooltip:AddLine(" ")
+		end
+		for _, v in ipairs(list) do
+			GameTooltip:AddDoubleLine(addon:GetUnitClassColoredName(v.name), v.text)
+		end
+		GameTooltip:Show()
+	end)
+end
+
 function RCVotingFrame:UpdatePeopleToVote()
 	local voters = {}
 	-- Find out who have voted
@@ -893,7 +944,7 @@ end
 function RCVotingFrame:UpdateSessionButton(i, texture, link, awarded)
 	local btn = sessionButtons[i]
 	if not btn then -- create the button
-		btn = addon.UI:NewNamed("IconBordered", self.frame.sessionToggleFrame, "RCButton"..i, texture)
+		btn = addon.UI:NewNamed("IconBordered", self.frame.sessionToggleFrame, "RCSessionButton"..i, texture)
 		if i == 1 then
 			btn:SetPoint("TOPRIGHT", self.frame.sessionToggleFrame)
 		elseif mod(i,10) == 1 then

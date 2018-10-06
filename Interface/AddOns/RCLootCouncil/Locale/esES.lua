@@ -157,6 +157,8 @@ L["Change Response"] = "Cambiar respuesta"
 L["Changing loot threshold to enable Auto Awarding"] = "Cambiando el modo de saqueo, para habilitar Recompensa Automatica"
 L["Changing LootMethod to Master Looting"] = "Cambiando Metodo de Saqueo a Maestro Despojador"
 L["channel_desc"] = "El canal para enviar el mensaje."
+--[[Translation missing --]]
+--[[ L["Chat print"] = ""--]] 
 L["chat tVersion string"] = "|cFF87CEFARCLootCouncil |cFFFFFFFFversion |cFFFFA500 %s - %s"
 L["chat version String"] = "|cFF87CEFARCLootCouncil |cFFFFFFFFversion |cFFFFA500 %s"
 L["chat_commands_add"] = "Añade un objeto al cuadro de sesion"
@@ -570,6 +572,8 @@ L["Total items received:"] = "objetos recibidos en total:"
 L["Total items won:"] = "Total de objetos ganados:"
 --[[Translation missing --]]
 --[[ L["trade_complete_message"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["trade_item_to_trade_not_found"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["trade_wrongwinner_message"] = ""--]] 
 L["tVersion_outdated_msg"] = "La version de prueba mas reciente de RCLootCouncil es: %s"

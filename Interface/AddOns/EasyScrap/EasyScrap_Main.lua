@@ -29,6 +29,7 @@ EasyScrap.parentFrame:SetScript('OnShow', function()
         EasyScrap.updateOverlay:Hide()
         EasyScrap.filterFrame:Hide()
         EasyScrap.editFilterFrame:Hide()
+        EasyScrap.optionsFrame:Hide()
         EasyScrap.mainFrame:Show()
     end
 end)
@@ -130,6 +131,13 @@ EasyScrap.parentFrame:SetScript('OnEvent', function(self, event, ...)
                 if EasyScrap.saveData.addonVersion < 13 then
                     if EasyScrap.saveData.addonVersion == 12 then
                         EasyScrap.saveData.showWhatsNew = 13
+                    end
+                end
+                
+                if EasyScrap.saveData.addonVersion < 14 then
+                    EasyScrap.saveData.showWhatsNew = 13
+                    if EasyScrap.saveData.addonVersion == 13 then
+                        EasyScrap.saveData.showWhatsNew = 14
                     end
                 end
                 

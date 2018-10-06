@@ -56,28 +56,34 @@ mainFrame.searchBox:SetScript('OnTextChanged', function(searchBox, value)
     end
 end)
 
---[[
-local optionsButton = CreateFrame('Button', 'Bert', mainFrame)
-optionsButton:SetSize(32, 32)
-optionsButton:SetPoint('BOTTOMRIGHT', -2, 14)
-
-local t = optionsButton:CreateTexture(nil, 'BACKGROUND')
-t:SetAllPoints()
-t:SetTexture('Interface/HelpFrame/HelpIcon-CharacterStuck')
-t:SetDesaturated(true)
-
-local th = optionsButton:CreateTexture(nil, 'BACKGROUND')
-th:SetAllPoints()
-th:SetTexture('Interface/HelpFrame/HelpIcon-CharacterStuck')
-th:SetDesaturated(false)
 
 
-optionsButton:SetNormalTexture(t)
-optionsButton:SetHighlightTexture(th)
+local optionsButton = CreateFrame('Button', nil, mainFrame, 'GameMenuButtonTemplate')
+optionsButton:SetSize(32, 24)
+optionsButton:SetPoint('BOTTOM', 0, 8)
+--optionsButton:SetText('Config')
+optionsButton:SetScript('OnClick', function()
+    if not EasyScrap.scrapInProgress then
+        EasyScrap:clearQueue()
+        mainFrame:Hide()
+        EasyScrap.optionsFrame:Show()
+    else
+        DEFAULT_CHAT_FRAME:AddMessage('Easy Scrap: Cannot switch menu while scrapping items.')
+    end
+end)
 
-optionsButton:SetPushedTexture('Interface/Buttons/UI-SpellbookIcon-PrevPage-Down')
-optionsButton:SetDisabledTexture('Interface/Buttons/UI-SpellbookIcon-PrevPage-Disabled')
---]]
+optionsButton:SetScript('OnEnter', function(self) self.t:SetDesaturated(false) end)
+optionsButton:SetScript('OnLeave', function(self) self.t:SetDesaturated(true) end)
+
+
+optionsButton.t = optionsButton:CreateTexture(nil, 'ARTWORK')
+optionsButton.t:SetSize(22, 22)
+optionsButton.t:SetPoint('CENTER', 0, -1)
+optionsButton.t:SetTexture('Interface/HelpFrame/HelpIcon-CharacterStuck')
+optionsButton.t:SetDesaturated(true)
+
+
+
 
 
 local filterSelection = CreateFrame("Frame", "EasyScrapFilterSelectionMenu", mainFrame, "UIDropDownMenuTemplate")
