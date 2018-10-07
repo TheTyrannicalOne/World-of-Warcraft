@@ -18,6 +18,7 @@ ElvCharacterDB = {
 		"/script MainMenuExpBar:Show()", -- [15]
 		"/wqpf", -- [16]
 		"/wqpf config", -- [17]
+		"/reloadui", -- [18]
 	},
 	["ChatHistoryLog"] = {
 		{

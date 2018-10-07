@@ -8,9 +8,9 @@ XLootADB = {
 						["visible"] = false,
 					},
 					["roll_anchor"] = {
-						["visible"] = false,
-						["x"] = 1210.83361816406,
 						["y"] = 407.500305175781,
+						["x"] = 1210.83361816406,
+						["visible"] = false,
 					},
 				},
 			},
@@ -23,18 +23,18 @@ XLootADB = {
 				},
 			},
 		},
-		["Master"] = {
-		},
 		["Monitor"] = {
 			["profiles"] = {
 				["Default"] = {
 					["anchor"] = {
-						["visible"] = false,
 						["y"] = 404.166290283203,
+						["visible"] = false,
 						["x"] = 1497.50085449219,
 					},
 				},
 			},
+		},
+		["Master"] = {
 		},
 	},
 	["profileKeys"] = {
