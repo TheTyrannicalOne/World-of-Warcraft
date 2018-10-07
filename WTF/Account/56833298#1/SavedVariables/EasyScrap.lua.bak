@@ -1,10 +1,11 @@
 
 EasyScrap_SaveData = {
-	["showWhatsNew"] = 13,
-	["addonSettings"] = {
-		["defaultFilter"] = 0,
-	},
-	["addonVersion"] = 13,
 	["customFilters"] = {
 	},
+	["addonSettings"] = {
+		["defaultFilter"] = 0,
+		["canScrapTooltip"] = false,
+	},
+	["addonVersion"] = 14,
+	["showWhatsNew"] = 14,
 }

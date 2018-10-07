@@ -2733,5 +2733,49 @@ ElvCharacterDB = {
 			[51] = 1538367437,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [124]
+		{
+			"WTS |cffa335ee|Hkeystone:158923:245:10:10:7:2:16|h[Keystone: Freehold (10)]|h|r CARRY ", -- [1]
+			"Clickars-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Clickars", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			180, -- [11]
+			"Player-61-0B60B070", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Clickars|r",
+			[51] = 1538802130,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [125]
+		{
+			"Selling Weekly +10 - get your 380+ piece in your cache tuesday aswell as 370 pieces in the run! Pst for price.", -- [1]
+			"Buddysales-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Buddysales", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			183, -- [11]
+			"Player-61-0BB69C0E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddBuddysales|r",
+			[51] = 1538802160,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [126]
 	},
 }

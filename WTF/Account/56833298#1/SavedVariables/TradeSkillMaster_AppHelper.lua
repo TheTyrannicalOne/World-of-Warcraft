@@ -2,8 +2,8 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Argent Dawn"] = {
-			["key"] = 12900746,
 			["data"] = "[[13,8492,1,1,1000,0,0,0,1538101746],[16,22495,1,2,10000,0,0,0,1538101746],[40,39769,1,2,77100,3600,73500,2,1538101746],[73,94574,1,1,22000,1000,21000,2,1538101746],[67,141995,1,2,95800,4500,91300,6,1538101746]]",
+			["key"] = 12900746,
 			["updateTime"] = 1538101746,
 		},
 	},
@@ -18,46 +18,79 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["wowToken"] = {
 		["US"] = {
-			["key"] = 7577604,
 			["data"] = 181426,
+			["key"] = 7577604,
 			["updateTime"] = 1519458491,
 		},
 	},
 	["analytics"] = {
 		["data"] = {
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3.3\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537499331]", -- [1]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537715500]", -- [2]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537719772]", -- [3]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.3\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1538360497]", -- [4]
-			"[\"PV\",\"v4.4.4\",1538541552,\"destroying\"]", -- [5]
-			"[\"PV\",\"v4.4.4\",1538541568,\"crafting\"]", -- [6]
-			"[\"PV\",\"v4.4.4\",1538541568,\"crafting/crafting\"]", -- [7]
-			"[\"PV\",\"v4.4.4\",1538541574,\"auction\"]", -- [8]
-			"[\"PV\",\"v4.4.4\",1538541574,\"auction/auctioning\"]", -- [9]
-			"[\"PV\",\"v4.4.4\",1538541584,\"auction/my_auctions\"]", -- [10]
-			"[\"PV\",\"v4.4.4\",1538541599,\"mailing\"]", -- [11]
-			"[\"PV\",\"v4.4.4\",1538541599,\"mailing/inbox\"]", -- [12]
-			"[\"PV\",\"v4.4.4\",1538541628,\"auction\"]", -- [13]
-			"[\"PV\",\"v4.4.4\",1538541628,\"auction/my_auctions\"]", -- [14]
-			"[\"PV\",\"v4.4.4\",1538541632,\"auction/auctioning\"]", -- [15]
-			"[\"PV\",\"v4.4.4\",1538541717,\"auction/my_auctions\"]", -- [16]
-			"[\"PV\",\"v4.4.4\",1538541727,\"auction\"]", -- [17]
-			"[\"PV\",\"v4.4.4\",1538541727,\"auction/my_auctions\"]", -- [18]
-			"[\"PV\",\"v4.4.4\",1538541730,\"auction/auctioning\"]", -- [19]
-			"[\"PV\",\"v4.4.4\",1538541856,\"banking\"]", -- [20]
-			"[\"PV\",\"v4.4.4\",1538542827,\"mailing\"]", -- [21]
-			"[\"PV\",\"v4.4.4\",1538542827,\"mailing/inbox\"]", -- [22]
-			"[\"PV\",\"v4.4.4\",1538542956,\"mailing\"]", -- [23]
-			"[\"PV\",\"v4.4.4\",1538542956,\"mailing/inbox\"]", -- [24]
-			"[\"PV\",\"v4.4.4\",1538543759,\"mailing\"]", -- [25]
-			"[\"PV\",\"v4.4.4\",1538543759,\"mailing/inbox\"]", -- [26]
-			"[\"PV\",\"v4.4.4\",1538544216,\"mailing\"]", -- [27]
-			"[\"PV\",\"v4.4.4\",1538544216,\"mailing/inbox\"]", -- [28]
-			"[\"PV\",\"v4.4.4\",1538544221,\"banking\"]", -- [29]
-			"[\"PV\",\"v4.4.4\",1538544231,\"banking\"]", -- [30]
-			"[\"PV\",\"v4.4.4\",1538544244,\"auction\"]", -- [31]
-			"[\"PV\",\"v4.4.4\",1538544244,\"auction/auctioning\"]", -- [32]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537715500]", -- [1]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537719772]", -- [2]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.3\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1538360497]", -- [3]
+			"[\"PV\",\"v4.4.4\",1538802294,\"destroying\"]", -- [4]
+			"[\"PV\",\"v4.4.4\",1538802307,\"crafting\"]", -- [5]
+			"[\"PV\",\"v4.4.4\",1538802307,\"crafting/crafting\"]", -- [6]
+			"[\"PV\",\"v4.4.4\",1538802414,\"mailing\"]", -- [7]
+			"[\"PV\",\"v4.4.4\",1538802414,\"mailing/inbox\"]", -- [8]
+			"[\"PV\",\"v4.4.4\",1538802440,\"banking\"]", -- [9]
+			"[\"PV\",\"v4.4.4\",1538802474,\"mailing\"]", -- [10]
+			"[\"PV\",\"v4.4.4\",1538802474,\"mailing/inbox\"]", -- [11]
+			"[\"PV\",\"v4.4.4\",1538802732,\"auction\"]", -- [12]
+			"[\"PV\",\"v4.4.4\",1538802732,\"auction/auctioning\"]", -- [13]
+			"[\"PV\",\"v4.4.4\",1538802761,\"auction/my_auctions\"]", -- [14]
+			"[\"PV\",\"v4.4.4\",1538802765,\"auction/auctioning\"]", -- [15]
+			"[\"PV\",\"v4.4.4\",1538802986,\"mailing\"]", -- [16]
+			"[\"PV\",\"v4.4.4\",1538802986,\"mailing/inbox\"]", -- [17]
+			"[\"PV\",\"v4.4.4\",1538802989,\"mailing/send\"]", -- [18]
+			"[\"PV\",\"v4.4.4\",1538802998,\"mailing/inbox\"]", -- [19]
+			"[\"PV\",\"v4.4.4\",1538803235,\"auction\"]", -- [20]
+			"[\"PV\",\"v4.4.4\",1538803235,\"auction/auctioning\"]", -- [21]
+			"[\"PV\",\"v4.4.4\",1538803410,\"mailing\"]", -- [22]
+			"[\"PV\",\"v4.4.4\",1538803410,\"mailing/inbox\"]", -- [23]
+			"[\"PV\",\"v4.4.4\",1538803687,\"auction\"]", -- [24]
+			"[\"PV\",\"v4.4.4\",1538803687,\"auction/auctioning\"]", -- [25]
+			"[\"PV\",\"v4.4.4\",1538803843,\"mailing\"]", -- [26]
+			"[\"PV\",\"v4.4.4\",1538803843,\"mailing/inbox\"]", -- [27]
+			"[\"PV\",\"v4.4.4\",1538804094,\"auction\"]", -- [28]
+			"[\"PV\",\"v4.4.4\",1538804094,\"auction/auctioning\"]", -- [29]
+			"[\"PV\",\"v4.4.4\",1538804309,\"auction/my_auctions\"]", -- [30]
+			"[\"PV\",\"v4.4.4\",1538804314,\"mailing\"]", -- [31]
+			"[\"PV\",\"v4.4.4\",1538804314,\"mailing/inbox\"]", -- [32]
+			"[\"PV\",\"v4.4.4\",1538804645,\"auction\"]", -- [33]
+			"[\"PV\",\"v4.4.4\",1538804645,\"auction/my_auctions\"]", -- [34]
+			"[\"PV\",\"v4.4.4\",1538804650,\"auction/auctioning\"]", -- [35]
+			"[\"PV\",\"v4.4.4\",1538804811,\"mailing\"]", -- [36]
+			"[\"PV\",\"v4.4.4\",1538804811,\"mailing/inbox\"]", -- [37]
+			"[\"PV\",\"v4.4.4\",1538805027,\"auction\"]", -- [38]
+			"[\"PV\",\"v4.4.4\",1538805027,\"auction/auctioning\"]", -- [39]
+			"[\"PV\",\"v4.4.4\",1538805216,\"mailing\"]", -- [40]
+			"[\"PV\",\"v4.4.4\",1538805216,\"mailing/inbox\"]", -- [41]
+			"[\"PV\",\"v4.4.4\",1538805619,\"auction\"]", -- [42]
+			"[\"PV\",\"v4.4.4\",1538805619,\"auction/auctioning\"]", -- [43]
+			"[\"PV\",\"v4.4.4\",1538805761,\"mailing\"]", -- [44]
+			"[\"PV\",\"v4.4.4\",1538805761,\"mailing/inbox\"]", -- [45]
+			"[\"PV\",\"v4.4.4\",1538805958,\"auction\"]", -- [46]
+			"[\"PV\",\"v4.4.4\",1538805958,\"auction/auctioning\"]", -- [47]
+			"[\"PV\",\"v4.4.4\",1538806108,\"mailing\"]", -- [48]
+			"[\"PV\",\"v4.4.4\",1538806108,\"mailing/inbox\"]", -- [49]
+			"[\"PV\",\"v4.4.4\",1538806310,\"auction\"]", -- [50]
+			"[\"PV\",\"v4.4.4\",1538806310,\"auction/auctioning\"]", -- [51]
+			"[\"PV\",\"v4.4.4\",1538806438,\"mailing\"]", -- [52]
+			"[\"PV\",\"v4.4.4\",1538806438,\"mailing/inbox\"]", -- [53]
+			"[\"PV\",\"v4.4.4\",1538806440,\"mailing/send\"]", -- [54]
+			"[\"PV\",\"v4.4.4\",1538806496,\"mailing/inbox\"]", -- [55]
+			"[\"PV\",\"v4.4.4\",1538806763,\"auction\"]", -- [56]
+			"[\"PV\",\"v4.4.4\",1538806763,\"auction/auctioning\"]", -- [57]
+			"[\"PV\",\"v4.4.4\",1538807276,\"mailing\"]", -- [58]
+			"[\"PV\",\"v4.4.4\",1538807276,\"mailing/inbox\"]", -- [59]
+			"[\"PV\",\"v4.4.4\",1538807377,\"auction\"]", -- [60]
+			"[\"PV\",\"v4.4.4\",1538807377,\"auction/auctioning\"]", -- [61]
+			"[\"PV\",\"v4.4.4\",1538808181,\"auction\"]", -- [62]
+			"[\"PV\",\"v4.4.4\",1538808181,\"auction/auctioning\"]", -- [63]
+			"[\"PV\",\"v4.4.4\",1538808204,\"auction\"]", -- [64]
+			"[\"PV\",\"v4.4.4\",1538808204,\"auction/auctioning\"]", -- [65]
 		},
-		["updateTime"] = 1538544244,
+		["updateTime"] = 1538808204,
 	},
 }

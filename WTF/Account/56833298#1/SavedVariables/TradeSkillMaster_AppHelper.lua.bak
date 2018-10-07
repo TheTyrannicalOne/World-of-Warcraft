@@ -2,8 +2,8 @@
 TradeSkillMaster_AppHelperDB = {
 	["blackMarket"] = {
 		["Argent Dawn"] = {
-			["data"] = "[[13,8492,1,1,1000,0,0,0,1538101746],[16,22495,1,2,10000,0,0,0,1538101746],[40,39769,1,2,77100,3600,73500,2,1538101746],[73,94574,1,1,22000,1000,21000,2,1538101746],[67,141995,1,2,95800,4500,91300,6,1538101746]]",
 			["key"] = 12900746,
+			["data"] = "[[13,8492,1,1,1000,0,0,0,1538101746],[16,22495,1,2,10000,0,0,0,1538101746],[40,39769,1,2,77100,3600,73500,2,1538101746],[73,94574,1,1,22000,1000,21000,2,1538101746],[67,141995,1,2,95800,4500,91300,6,1538101746]]",
 			["updateTime"] = 1538101746,
 		},
 	},
@@ -18,18 +18,22 @@ TradeSkillMaster_AppHelperDB = {
 	},
 	["wowToken"] = {
 		["US"] = {
-			["data"] = 181426,
 			["key"] = 7577604,
+			["data"] = 181426,
 			["updateTime"] = 1519458491,
 		},
 	},
 	["analytics"] = {
 		["data"] = {
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.3.3\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537499331]", -- [1]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537715500]", -- [2]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537719772]", -- [3]
-			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.3\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1538360497]", -- [4]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537715500]", -- [1]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.1\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1537719772]", -- [2]
+			"[\"TradeSkillMaster\",\"ERROR\",\"v4.4.3\",\"...SkillMaster\\Core\\Service\\Crafting\\ProfessionUtil.lua:101: 'for' limit must be a number\",1538360497]", -- [3]
+			"[\"PV\",\"v4.4.4\",1538802205,\"destroying\"]", -- [4]
+			"[\"PV\",\"v4.4.4\",1538802218,\"crafting\"]", -- [5]
+			"[\"PV\",\"v4.4.4\",1538802218,\"crafting/crafting\"]", -- [6]
+			"[\"PV\",\"v4.4.4\",1538802227,\"auction\"]", -- [7]
+			"[\"PV\",\"v4.4.4\",1538802227,\"auction/auctioning\"]", -- [8]
 		},
-		["updateTime"] = 1538360497,
+		["updateTime"] = 1538802227,
 	},
 }

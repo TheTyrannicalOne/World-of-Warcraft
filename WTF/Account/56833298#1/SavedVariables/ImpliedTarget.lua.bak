@@ -1,0 +1,11 @@
+
+ImpliedTargetSettings = {
+	["version"] = "1.3.12",
+	["profileKeys"] = {
+		["Vancard - Zul'jin"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
