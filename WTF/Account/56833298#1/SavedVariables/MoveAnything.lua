@@ -25,23 +25,6 @@ MADB = {
 						0.0001220703125, -- [5]
 					},
 				},
-				["TooltipMover"] = {
-					["orgPos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						0, -- [4]
-						535.000061035156, -- [5]
-					},
-					["name"] = "TooltipMover",
-					["pos"] = {
-						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						0, -- [4]
-						490.164988070726, -- [5]
-					},
-				},
 				["GuildBankItemTooltipMover"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
@@ -58,11 +41,28 @@ MADB = {
 						0.0001220703125, -- [5]
 					},
 				},
+				["TooltipMover"] = {
+					["orgPos"] = {
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["name"] = "TooltipMover",
+					["pos"] = {
+						"BOTTOMRIGHT", -- [1]
+						"RightChatToggleButton", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						0, -- [4]
+						490.164988070726, -- [5]
+					},
+				},
 			},
 		},
 	},
-	["frameListRows"] = 18,
-	["noBags"] = false,
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["noBags"] = false,
+	["frameListRows"] = 18,
 }

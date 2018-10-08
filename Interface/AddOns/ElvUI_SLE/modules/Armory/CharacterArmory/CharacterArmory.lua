@@ -1,4 +1,4 @@
-if select(2, GetAddOnInfo('ElvUI_KnightFrame')) and IsAddOnLoaded('ElvUI_KnightFrame') then return end
+﻿if select(2, GetAddOnInfo('ElvUI_KnightFrame')) and IsAddOnLoaded('ElvUI_KnightFrame') then return end
 
 local _G = _G
 local SLE, T, E, L, V, P, G = unpack(select(2, ...))

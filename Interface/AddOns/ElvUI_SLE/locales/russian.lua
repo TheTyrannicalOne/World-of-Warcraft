@@ -1,4 +1,4 @@
--- English localization file for ruRU.
+﻿-- English localization file for ruRU.
 local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("ElvUI", "ruRU");
 

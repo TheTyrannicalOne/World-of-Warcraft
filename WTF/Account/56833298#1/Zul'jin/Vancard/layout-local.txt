@@ -48,13 +48,6 @@ X: 0
 Y: -2
 W: 330
 H: 150
-Frame: TooltipMover
-FrameLevel: 402
-Anchor: RIGHT
-X: 0
-Y: -100
-W: 130
-H: 20
 Frame: AllTheThings-Window-Tradeskills
 FrameLevel: 1
 Anchor: RIGHT
@@ -69,3 +62,10 @@ X: 0
 Y: -1
 W: 300
 H: 300
+Frame: TooltipMover
+FrameLevel: 402
+Anchor: RIGHT
+X: 0
+Y: -100
+W: 130
+H: 20
