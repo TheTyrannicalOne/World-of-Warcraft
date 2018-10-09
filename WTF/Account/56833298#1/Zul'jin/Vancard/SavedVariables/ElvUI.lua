@@ -2777,5 +2777,27 @@ ElvCharacterDB = {
 			[51] = 1538802160,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [126]
+		{
+			"WTS |cffa335ee|Hitem:163575::::::::120:64::::::|h[Reins of a Tamed Bloodfeaster]|h|r cheaper than AH", -- [1]
+			"Amaîmon-Zul'jin", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Amaîmon", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			186, -- [11]
+			"Player-61-0BAB7AC3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaAmaîmon|r",
+			[51] = 1539102723,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [127]
 	},
 }

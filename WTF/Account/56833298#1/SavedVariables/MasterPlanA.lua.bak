@@ -8,13 +8,13 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["faction"] = "Horde",
+			["curOil"] = 60385,
 			["summary"] = {
 				["lastOilTime"] = 1538917188,
 				["tt2"] = 1538919296,
 				["tt3"] = 1538493695,
-				["ti1"] = 118531,
 				["tt1"] = 1538805293,
+				["ti1"] = 118531,
 				["ti3"] = 127854,
 				["inProgress"] = {
 					[276] = 1538969946,
@@ -26,11 +26,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["curOil"] = 60385,
+			["faction"] = "Horde",
 			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 6360,
 			["lastCacheTime"] = 1538965051,
+			["curRes"] = 6360,
+			["class"] = "WARRIOR",
 		},
 	},
 }
