@@ -1,18 +1,14 @@
-tag f55c620366a42728d6d93321d13e47912a8ad892 1.0.3
+tag 307a2cbb04c4439d62e3a9e294d24a47e60d1956 1.1.0
 Author:	Alar of Runetotem <alar@aspide.it>
-Date:	Mon Aug 20 12:28:12 2018 +0200
+Date:	Tue Oct 9 22:56:41 2018 +0200
 
-Fix: removed debug messages
+Fixed lua error about artifact power
 
-commit b9aa7a4d8b0f837b3b7c267f4d4388ea0d2294e9
+commit 1ce74378325e9ef2ab7fa7ed119ce154d9324667
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Mon Aug 20 12:27:25 2018 +0200
+Date:   Sun Oct 7 01:06:25 2018 +0200
 
-    Fix: Removed debug messages
-
-commit cdabda54c7af436f8a777d62531fb20fdef9589f
-Author: Alar of Runetotem <alar@aspide.it>
-Date:   Mon Aug 20 12:17:57 2018 +0200
-
-    Removed debug messages
+    17: LUA Error with 1.1.0-Beta3
+    
+    Task-Url: http://github.com/alarofrunetotem/ChampionCommander/issues/17
 
