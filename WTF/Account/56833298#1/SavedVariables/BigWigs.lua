@@ -17,6 +17,8 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
+		["BigWigs_Bosses_Rocketspark and Borka"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -24,15 +26,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Bosses_Ranjit"] = {
+		},
+		["BigWigs_Bosses_Fleshrender Nok'gar"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_Nalak"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -40,6 +40,22 @@ BigWigs3DB = {
 					["font"] = "Friz Quadrata TT",
 				},
 			},
+		},
+		["BigWigs_Bosses_Slave Watcher Crushto"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Bosses_Oshir"] = {
+		},
+		["BigWigs_Bosses_Grimrail Enforcers"] = {
+		},
+		["BigWigs_Bosses_Skylord Tovra"] = {
+		},
+		["BigWigs_Bosses_Skulloc"] = {
+		},
+		["BigWigs_Bosses_Archmage Sol"] = {
+		},
+		["BigWigs_Bosses_Ancient Protectors"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -57,7 +73,24 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_Magmolatus"] = {
+		},
 		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
+		["BigWigs_Bosses_Gug'rokk"] = {
+		},
+		["BigWigs_Bosses_Roltall"] = {
+		},
+		["BigWigs_Bosses_Nitrogg Thundertower"] = {
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Friz Quadrata TT",
@@ -66,18 +99,9 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_AutoReply"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Pull"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Bosses_Salyis's Warband"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
 		},
 	},
 	["wipe80"] = true,

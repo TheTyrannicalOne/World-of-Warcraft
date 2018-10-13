@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.0.12 (19th September 2018, www.leatrix.com)
+-- 	Leatrix Plus 8.0.13 (10th October 2018, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.0.12"
+	LeaPlusLC["AddonVer"] = "8.0.13"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -476,56 +476,6 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Live()
-
-		----------------------------------------------------------------------
-		-- Universal group chat color
-		----------------------------------------------------------------------
-
-		-- Universal group chat color (ColorPickerFrame:GetColorRGB())
-		if LeaPlusLC["UnivGroupColor"] == "On" then
-			-- Set raid and instance to party colors (reset is in checkbox click handler, wipe is in logout)
-			ChangeChatColor("RAID", 0.67, 0.67, 1)
-			ChangeChatColor("RAID_LEADER", 0.46, 0.78, 1)
-			ChangeChatColor("INSTANCE_CHAT", 0.67, 0.67, 1)
-			ChangeChatColor("INSTANCE_CHAT_LEADER", 0.46, 0.78, 1)
-		end
-
-		----------------------------------------------------------------------
-		--	Max camera zoom
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["MaxCameraZoom"] == "On" then
-			-- Set camera zoom setting (reset is in checkbox click handler, wipe is in logout)
-			SetCVar("cameraDistanceMaxZoomFactor", 2.6)
-		end
-
-		----------------------------------------------------------------------
-		--	Remove raid restrictions
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["NoRaidRestrictions"] == "On" then
-			-- Remove raid restrictions on startup (enable is in checkbox click handler, wipe is in logout)
-			SetAllowLowLevelRaid(true)
-		end
-
-		----------------------------------------------------------------------
-		-- Disable screen glow
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["NoScreenGlow"] == "On" then
-			-- Disable screen glow on startup (enable is in checkbox click handler, wipe is in logout)
-			SetCVar("ffxGlow", "0")
-		end
-
-		----------------------------------------------------------------------
-		-- Disable screen effects
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["NoScreenEffects"] == "On" then
-			-- Disable screen effects on startup (enable is in checkbox click handler, wipe is in logout)
-			SetCVar("ffxDeath", "0")
-			SetCVar("ffxNether", "0")
-		end
 
 		----------------------------------------------------------------------
 		--	Automatically accept Dungeon Finder queue requests
@@ -2839,6 +2789,119 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		--	Remove raid restrictions (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Function to set raid restrictions
+			local function SetRaidFunc()
+				if LeaPlusLC["NoRaidRestrictions"] == "On" then
+					SetAllowLowLevelRaid(true)
+				else
+					SetAllowLowLevelRaid(false)
+				end
+			end
+
+			-- Run function when option is clicked and on startup (if enabled)
+			LeaPlusCB["NoRaidRestrictions"]:HookScript("OnClick", SetRaidFunc)
+			if LeaPlusLC["NoRaidRestrictions"] == "On" then SetRaidFunc() end
+
+		end
+
+		----------------------------------------------------------------------
+		-- Disable screen glow (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Function to set screen glow
+			local function SetGlow()
+				if LeaPlusLC["NoScreenGlow"] == "On" then
+					SetCVar("ffxGlow", "0")
+				else
+					SetCVar("ffxGlow", "1")
+				end
+			end
+
+			-- Set screen glow on startup and when option is clicked (if enabled)
+			LeaPlusCB["NoScreenGlow"]:HookScript("OnClick", SetGlow)
+			if LeaPlusLC["NoScreenGlow"] == "On" then SetGlow() end
+
+		end
+
+		----------------------------------------------------------------------
+		-- Disable screen effects (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Function to set screen effects
+			local function SetEffects()
+				if LeaPlusLC["NoScreenEffects"] == "On" then
+					SetCVar("ffxDeath", "0")
+					SetCVar("ffxNether", "0")
+				else
+					SetCVar("ffxDeath", "1")
+					SetCVar("ffxNether", "1")
+				end
+			end
+
+			-- Set screen effects when option is clicked and on startup (if enabled)
+			LeaPlusCB["NoScreenEffects"]:HookScript("OnClick", SetEffects)
+			if LeaPlusLC["NoScreenEffects"] == "On" then SetEffects() end
+
+		end
+
+		----------------------------------------------------------------------
+		--	Max camera zoom (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Function to set camera zoom
+			local function SetZoom()
+				if LeaPlusLC["MaxCameraZoom"] == "On" then
+					SetCVar("cameraDistanceMaxZoomFactor", 2.6)
+				else
+					SetCVar("cameraDistanceMaxZoomFactor", 1.9)
+				end
+			end
+
+			-- Set camera zoom when option is clicked and on startup (if enabled)
+			LeaPlusCB["MaxCameraZoom"]:HookScript("OnClick", SetZoom)
+			if LeaPlusLC["MaxCameraZoom"] == "On" then SetZoom() end
+
+		end
+
+		----------------------------------------------------------------------
+		-- Universal group chat color (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Function to set chat colors
+			local function SetCol()
+				if LeaPlusLC["UnivGroupColor"] == "On" then
+					ChangeChatColor("RAID", 0.67, 0.67, 1)
+					ChangeChatColor("RAID_LEADER", 0.46, 0.78, 1)
+					ChangeChatColor("INSTANCE_CHAT", 0.67, 0.67, 1)
+					ChangeChatColor("INSTANCE_CHAT_LEADER", 0.46, 0.78, 1)
+				else
+					ChangeChatColor("RAID", 1, 0.50, 0)
+					ChangeChatColor("RAID_LEADER", 1, 0.28, 0.04)
+					ChangeChatColor("INSTANCE_CHAT", 1, 0.50, 0)
+					ChangeChatColor("INSTANCE_CHAT_LEADER", 1, 0.28, 0.04)
+				end
+			end
+
+			-- Set chat colors when option is clicked and on startup (if enabled)
+			LeaPlusCB["UnivGroupColor"]:HookScript("OnClick", SetCol)
+			if LeaPlusLC["UnivGroupColor"] == "On" then	SetCol() end
+
+		end
 
 		----------------------------------------------------------------------
 		--	Minimap button
@@ -5190,44 +5253,46 @@
 			local BordLeft = WorldFrame:CreateTexture(nil, "ARTWORK"); BordLeft:SetColorTexture(0, 0, 0, 1); BordLeft:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 0, 0); BordLeft:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 0, 0)
 			local BordRight = WorldFrame:CreateTexture(nil, "ARTWORK"); BordRight:SetColorTexture(0, 0, 0, 1); BordRight:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 0); BordRight:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", 0, 0)
 
+			-- Create viewport configuration panel
+			local SideViewport = LeaPlusLC:CreatePanel("Viewport", "SideViewport")
+
+			-- Create resize screen button
+			local resizeScreenBtn = LeaPlusLC:CreateButton("resizeScreenBtn", SideViewport, "Resize Screen", "BOTTOMRIGHT", -16, 10, 0, 25, true, "Click to resize the screen to fit between the top and bottom borders.")
+			resizeScreenBtn:ClearAllPoints()
+			resizeScreenBtn:SetPoint("LEFT", SideViewport.h, "RIGHT", 10, 0)
+			resizeScreenBtn:SetScript("OnClick", function()
+				LeaPlusLC["ViewPortResizeTop"] = LeaPlusLC["ViewPortTop"]
+				LeaPlusLC["ViewPortResizeBottom"] = LeaPlusLC["ViewPortBottom"]
+				WorldFrame:SetPoint("TOPLEFT", 0, -LeaPlusLC["ViewPortResizeTop"])
+				WorldFrame:SetPoint("BOTTOMRIGHT", 0, LeaPlusLC["ViewPortResizeBottom"])
+				-- Disable lock button if borders match viewport size
+				if LeaPlusLC["ViewPortTop"] == LeaPlusLC["ViewPortResizeTop"] and LeaPlusLC["ViewPortBottom"] == LeaPlusLC["ViewPortResizeBottom"] then
+					LeaPlusLC:LockItem(resizeScreenBtn, true)
+				else
+					LeaPlusLC:LockItem(resizeScreenBtn, false)
+				end
+			end)
+
 			-- Function to set viewport parameters
 			local function RefreshViewport()
 
-				if LeaPlusLC["ViewPortResize"] == "On" then
-					-- Resize is on, remove top and bottom borders and resize game world
-					BordTop:SetHeight(0)
-					BordBot:SetHeight(0)
-					WorldFrame:SetPoint("TOPLEFT", 0, -LeaPlusLC["ViewPortTop"])
-					WorldFrame:SetPoint("BOTTOMRIGHT", 0, LeaPlusLC["ViewPortBottom"])
-				else
-					-- Resize is off, set top and bottom border height and maximise game world
-					BordTop:SetHeight(LeaPlusLC["ViewPortTop"])
-					BordBot:SetHeight(LeaPlusLC["ViewPortBottom"])
-					WorldFrame:SetPoint("TOPLEFT", 0, 0)
-					WorldFrame:SetPoint("BOTTOMRIGHT", 0, 0)
-				end
-
-				-- Set top and bottom border transparency
-				BordTop:SetAlpha(1 - LeaPlusLC["ViewPortAlpha"])
-				BordBot:SetAlpha(1 - LeaPlusLC["ViewPortAlpha"])
-
-				-- Set left and right border width and transparency
+				-- Set border size and transparency
+				BordTop:SetHeight(LeaPlusLC["ViewPortTop"]); BordTop:SetAlpha(1 - LeaPlusLC["ViewPortAlpha"])
+				BordBot:SetHeight(LeaPlusLC["ViewPortBottom"]); BordBot:SetAlpha(1 - LeaPlusLC["ViewPortAlpha"])
 				BordLeft:SetWidth(LeaPlusLC["ViewPortLeft"]); BordLeft:SetAlpha(1 - LeaPlusLC["ViewPortAlpha"])
 				BordRight:SetWidth(LeaPlusLC["ViewPortRight"]); BordRight:SetAlpha(1 - LeaPlusLC["ViewPortAlpha"])
-
-				-- Hide borders if they aren't being used
-				if LeaPlusLC["ViewPortTop"] == 0 or LeaPlusLC["ViewPortResize"] == "On" then BordTop:Hide() else BordTop:Show() end
-				if LeaPlusLC["ViewPortBottom"] == 0 or LeaPlusLC["ViewPortResize"] == "On" then BordBot:Hide() else BordBot:Show() end
-				if LeaPlusLC["ViewPortLeft"] == 0 then BordLeft:Hide() else BordLeft:Show() end
-				if LeaPlusLC["ViewPortRight"] == 0 then BordRight:Hide() else BordRight:Show() end
 
 				-- Show formatted slider value
 				LeaPlusCB["ViewPortAlpha"].f:SetFormattedText("%.0f%%", LeaPlusLC["ViewPortAlpha"] * 100)
 
-			end
+				-- Disable lock button if borders match viewport size
+				if LeaPlusLC["ViewPortTop"] == LeaPlusLC["ViewPortResizeTop"] and LeaPlusLC["ViewPortBottom"] == LeaPlusLC["ViewPortResizeBottom"] then
+					LeaPlusLC:LockItem(resizeScreenBtn, true)
+				else
+					LeaPlusLC:LockItem(resizeScreenBtn, false)
+				end
 
-			-- Create viewport configuration panel
-			local SideViewport = LeaPlusLC:CreatePanel("Viewport", "SideViewport")
+			end
 
 			-- Create slider controls
 			LeaPlusLC:MakeTx(SideViewport, "Top", 16, -72)
@@ -5247,12 +5312,8 @@
 			LeaPlusCB["ViewPortRight"]:HookScript("OnValueChanged", RefreshViewport)
 
 			LeaPlusLC:MakeTx(SideViewport, "Transparency", 356, -132)
-			LeaPlusLC:MakeSL(SideViewport, "ViewPortAlpha", "", 0, 1, 0.1, 356, -152, "%.1f")
+			LeaPlusLC:MakeSL(SideViewport, "ViewPortAlpha", "", 0, 0.9, 0.1, 356, -152, "%.1f")
 			LeaPlusCB["ViewPortAlpha"]:HookScript("OnValueChanged", RefreshViewport)
-
-			-- Add resize game world checkbox
-			LeaPlusLC:MakeTx(SideViewport, "Settings", 16, -192)
-			LeaPlusLC:MakeCB(SideViewport, "ViewPortResize", "Resize the game world", 16, -212, false, "If checked, the game world will be resized to fit between the top and bottom borders.|n|nNote that if you enable this setting, the transparency slider will no longer affect the top and bottom borders.")
 
 			-- Help button tooltip
 			SideViewport.h.tiptext = L["This panel will close automatically if you enter combat."]
@@ -5271,10 +5332,13 @@
 				LeaPlusLC["ViewPortBottom"] = 0
 				LeaPlusLC["ViewPortLeft"] = 0
 				LeaPlusLC["ViewPortRight"] = 0
+				LeaPlusLC["ViewPortResizeTop"] = 0
+				LeaPlusLC["ViewPortResizeBottom"] = 0
 				LeaPlusLC["ViewPortAlpha"] = 0
-				LeaPlusLC["ViewPortResize"] = "Off"
 				SideViewport:Hide(); SideViewport:Show()
 				RefreshViewport()
+				WorldFrame:SetPoint("TOPLEFT", 0, -LeaPlusLC["ViewPortResizeTop"])
+				WorldFrame:SetPoint("BOTTOMRIGHT", 0, LeaPlusLC["ViewPortResizeBottom"])
 			end)
 
 			-- Configuration button handler
@@ -5288,9 +5352,12 @@
 						LeaPlusLC["ViewPortBottom"] = 0
 						LeaPlusLC["ViewPortLeft"] = 0
 						LeaPlusLC["ViewPortRight"] = 0
+						LeaPlusLC["ViewPortResizeTop"] = 0
+						LeaPlusLC["ViewPortResizeBottom"] = 0
 						LeaPlusLC["ViewPortAlpha"] = 0.7
-						LeaPlusLC["ViewPortResize"] = "On"
 						RefreshViewport()
+						WorldFrame:SetPoint("TOPLEFT", 0, -LeaPlusLC["ViewPortResizeTop"])
+						WorldFrame:SetPoint("BOTTOMRIGHT", 0, LeaPlusLC["ViewPortResizeBottom"])
 					else
 						SideViewport:Show()
 						LeaPlusLC:HideFrames()
@@ -5298,13 +5365,22 @@
 				end
 			end)
 
-			-- Refresh viewport when resize checkbox is clicked and on startup
-			LeaPlusCB["ViewPortResize"]:HookScript("OnClick", RefreshViewport)
+			-- Set viewport on startup
 			RefreshViewport()
+			WorldFrame:SetPoint("TOPLEFT", 0, -LeaPlusLC["ViewPortResizeTop"])
+			WorldFrame:SetPoint("BOTTOMRIGHT", 0, LeaPlusLC["ViewPortResizeBottom"])
 
 			-- Hide the configuration panel if combat starts
 			SideViewport:RegisterEvent("PLAYER_REGEN_DISABLED")
 			SideViewport:SetScript("OnEvent", SideViewport.Hide)
+
+			-- Hide borders when cinematic is shown
+			hooksecurefunc(CinematicFrame, "Hide", function()
+				BordTop:Show(); BordBot:Show(); BordLeft:Show(); BordRight:Show()
+			end)
+			hooksecurefunc(CinematicFrame, "Show", function()
+				BordTop:Hide(); BordBot:Hide(); BordLeft:Hide(); BordRight:Hide()
+			end)
 
 		end
 
@@ -5534,7 +5610,7 @@
 			-- Zones: Draenor
 			Zn(L["Zones"], L["Draenor"], "|cffffd800", {""})
 			Zn(L["Zones"], L["Draenor"], "|cffffd800" .. L["Draenor"], {""})
-			Zn(L["Zones"], L["Draenor"], L["Ashran"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Ashran"], prefol, "MUS_60_PVP_Ashran_GeneralWalk#48481", "MUS_60_PVP_Ashran_AmphitheaterofAnnihilation_Walk#48500", "MUS_60_PVP_Ashran_AshmaulBurialGrounds#48482", "MUS_60_PVP_Ashran_MoltenQuarry_Walk#48485", "MUS_60_PVP_Ashran_OgreMine_Walk#48486", "MUS_60_PVP_Ashran_RingOfConquest_Walk#48641", "MUS_60_PVP_Ashran_RoadofGlory_Walk#48480", "MUS_60_PVP_Ashran_Stormshield_Battle#48537", "MUS_60_PVP_Ashran_Stormshield_Messhall_Harp#47068", "MUS_60_PVP_Ashran_Stormshield_Walk#48487", "MUS_60_PVP_Ashran_Warspear_Battle#48538", "MUS_60_PVP_Ashran_Warspear_Walk#48488",})
+			Zn(L["Zones"], L["Draenor"], L["Ashran"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Ashran"], prefol, "MUS_60_PVP_Ashran_GeneralWalk#48481", "MUS_60_PVP_Ashran_AmphitheaterofAnnihilation_Walk#48500", "MUS_60_PVP_Ashran_AshmaulBurialGrounds#48482", "MUS_60_PVP_Ashran_MoltenQuarry_Walk#48485", "MUS_60_PVP_Ashran_OgreMine_Walk#48486", "MUS_60_PVP_Ashran_RingOfConquest_Walk#48641", "MUS_60_PVP_Ashran_RoadofGlory_Walk#48480", "MUS_60_PVP_Ashran_Stormshield_Battle#48537", "MUS_60_PVP_Ashran_Stormshield_Messhall_Harp#47068", "MUS_60_PVP_Ashran_Stormshield_Walk#48487", "MUS_60_PVP_Ashran_Warspear_Battle#48538", "MUS_60_PVP_Ashran_Warspear_Walk#48488", "PVP-AshranEventActive#47160",})
 			Zn(L["Zones"], L["Draenor"], L["Frostfire Ridge"]							, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Frostfire Ridge"], prefol, "MUS_60_FFR_General_Walk#49001", "MUS_60_FFR_General_Night_Walk#49355", "MUS_60_FFR_DarkRock#49005", "MUS_60_FFR_Fel_Walk#49194", "MUS_60_FFR_Frostwolf_Walk#49189", "MUS_60_FFR_IronHorde_Walk#49191", "MUS_60_FFR_Mushroom_Sea_Walk#49193", "MUS_60_FFR_Ogre_Battle#49195", "MUS_60_FFR_Ogre_Walk#49192", "MUS_60_FFR_Thunderlord_Walk#49190",})
 			Zn(L["Zones"], L["Draenor"], L["Gorgrond"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Gorgrond"], prefol, "MUS_60_Gorgrond_Blackrock_Walk#48914", "MUS_60_Gorgrond_CrimsonFen_Walk#48915", "MUS_60_Gorgrond_Jungle_Walk#48912", "MUS_60_Gorgrond_LaughingSkull_Walk#48909", "MUS_60_Gorgrond_Mushroom_Sea_Walk#48911", "MUS_60_Gorgrond_Wasteland_Walk#48913",})
 			Zn(L["Zones"], L["Draenor"], L["Nagrand (Draenor)"]							, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Nagrand"], prefol, "MUS_60_NGD_General_Walk#49065", "MUS_60_NGD_General_Night_Walk#49066", "MUS_60_NGD_BurningBlade_Walk#49076", "MUS_60_NGD_IronHorde_Walk#49072", "MUS_60_NGD_Mushroom_Walk#49070", "MUS_60_NGD_Ogre_Walk#49068", "MUS_60_NGD_OrcAncestors_Walk#49078", "MUS_60_NGD_Oshu'gun_Walk#49069", "MUS_60_NGD_RingofTrials_ArenaFloor_Battle#49077", "MUS_60_NGD_Underpale_Walk#49075", "MUS_60_NGD_Warsong_Walk#49067",})
@@ -5599,7 +5675,7 @@
 			Zn(L["Dungeons"], L["The Burning Crusade"], "|cffffd800", {""})
 			Zn(L["Dungeons"], L["The Burning Crusade"], "|cffffd800" .. L["The Burning Crusade"], {""})
 			Zn(L["Dungeons"], L["The Burning Crusade"], L["Black Morass"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Black Morass"], prefol, "Zone-CavernsofTimeBlackMorassWa#10731",})
-			Zn(L["Dungeons"], L["The Burning Crusade"], L["Black Temple"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Black Temple"], prefol, "Zone-BlackTempleWalk#11696", "Zone-BlackTempleKaraborWalk#11697", "Zone-BlackTempleSanctuaryWalk#11699", "Zone-BlackTempleAnguishWalk#11700", "Zone-BlackTempleVigilWalk#11701", "Zone-BlackTempleReliquaryWalk#11702", "Zone-BlackTempleDenWalk#11703",})
+			Zn(L["Dungeons"], L["The Burning Crusade"], L["Black Temple"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Black Temple"], prefol, "Zone-BlackTempleWalk#11696", "Zone-BlackTempleKaraborWalk#11697", "Zone-BlackTempleSanctuaryWalk#11699", "Zone-BlackTempleAnguishWalk#11700", "Zone-BlackTempleVigilWalk#11701", "Zone-BlackTempleReliquaryWalk#11702", "Zone-BlackTempleDenWalk#11703", "Event_BlackTemplePreludeEvent01#11716",})
 			Zn(L["Dungeons"], L["The Burning Crusade"], L["Coilfang Reservoir"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Coilfang Reservoir"], prefol, "Zone-ZangarmarshCoilfangWalk#10726",})
 			Zn(L["Dungeons"], L["The Burning Crusade"], L["Hellfire Ramparts"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Hellfire Ramparts"], prefol, "Zone-HellfireCitadelRampartsWal#10727",})
 			Zn(L["Dungeons"], L["The Burning Crusade"], L["Hyjal Summit"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Hyjal Summit"], prefol, "Zone-HyjalPastNordrassilWalk#11652", "Zone-HyjalPastSummitWalk#11653",})
@@ -5615,8 +5691,8 @@
 			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Azjol-Nerub"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Azjol-Nerub"], prefol, "Zone-AzjolNerubA#15096", "Zone-AzjolNerubE#15100", "Zone-AzjolNerubB#15097", "Zone-AzjolNerubD#15099",})
 			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Culling of Stratholme"]	, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Culling of Stratholme"], prefol, "Zone-StratholmePastOutdoorsDay#14920", "Zone-StratholmePastOutdoorsNigh#14921",})
 			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Drak'Tharon Keep"]		, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Drak'Tharon Keep"], prefol, "Zone-DraktharonRaptorPens#15087",})
-			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Forge of Souls"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Forge of Souls"], prefol, "Zone-ForgeOfSoulsWalk#17277", "MUS_70_Artif_DK_IcecrownWalk#77050",})
-			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Halls of Reflection"]		, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Halls of Reflection"], prefol, "Zone-IcecrownDungeonWalk#17278",})
+			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Forge of Souls"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Forge of Souls"], prefol, "Zone-ForgeOfSoulsWalk#17277", "MUS_70_Artif_DK_IcecrownWalk#77050", "Event-Bronjahm#17280",})
+			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Halls of Reflection"]		, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Halls of Reflection"], prefol, "Zone-IcecrownDungeonWalk#17278", "Event-HallsofReflection1#17282", "Event-HallsofReflection2#17283",})
 			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Icecrown Citadel"]		, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Icecrown Citadel"], prefol, "Zone-IcecrownRaidFloor2Intro#17291", "Zone-IcecrownRaidFloor2Plague#17294", "Zone-IcecrownRaidFloor2Spire#17296", "Zone-IcecrownRaidFloor2Valithria#17300", "Zone-IcecrownRaidFloor2Frost#17298", "Zone-IcecrownDungeonWalk#17278", "Zone-CrimsonHallWalk#17287", "Zone-ForgeOfSoulsWalk#17277", "Zone-FrostmourneWalk#17286", "Zone-PitofSaron#17310", "Zone-SindragosaWalk#17288",})
 			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Naxxramas"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Naxxramas"], prefol, "NaxxramasAbominationWing#8675", "NaxxramasPlagueWing#8678", "NaxxramasSpiderWing#8679", "Zone-NaxxramasAbominationBoss#8888", "Zone-NaxxramasPlagueBoss#8886", "Zone-NaxxramasSpiderBoss#8887", "Zone-NaxxramasKelthuzad#8889", "Zone-NaxxramasFrostWyrm#8890", "Zone - NaxxramsDeathKnight#8687",})
 			Zn(L["Dungeons"], L["Wrath of the Lich King"], L["Nexus"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Nexus"], prefol, "ColdarraNightDay#12763",})
@@ -5721,9 +5797,13 @@
 				"|cffffd800", "|cffffd800" .. L["Embassies"], "MUS_735_AlliedRace_EmbassyAlliance_01#97594", "MUS_735_AlliedRace_EmbassyHorde_01#97593",
 			})
 			Zn(L["Various"], L["Various"], L["Arenas"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Arenas"], prefol, "Intro-NagrandDimond#10623", "MUS_50_Scenario_ArenaofAnnihilation#34019", "MUS_51_PVP_BrawlersGuild_Horde#34967", --[["MUS_80_PVP_ZandalarArena#117041", "MUS_80_PVP_KulTirasArena#114680",--]] "PVP-Battle Grounds#8233", "Zone-BladesEdge#9002",})
-			Zn(L["Various"], L["Various"], L["Battlegrounds"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Battlegrounds"], prefol, "Altervac Valley_PVP#8014", "MUS_50_Scenario_TempleofKotmogu#33978", "MUS_BattleForGilneas_BG#23612", "MUS_TwinPeaks_BG#23613", "PVP-Battle Grounds#8233", "PVP-Battle Grounds--DeepwindGorge#37659", "PVP-Battle Grounds-Pandaria#33714", "PVP-Battle Grounds-SilvershardMines#33713", "Zone-WintergraspContested#14912",})
+			Zn(L["Various"], L["Various"], L["Battlegrounds"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Battlegrounds"], prefol, "Altervac Valley_PVP#8014", "MUS_50_Scenario_TempleofKotmogu#33978", "MUS_BattleForGilneas_BG#23612", "MUS_TwinPeaks_BG#23613", "PVP-Battle Grounds#8233", "PVP-Battle Grounds--DeepwindGorge#37659", "PVP-Battle Grounds-Pandaria#33714", "PVP-Battle Grounds-SilvershardMines#33713", "PVPVictoryAlliance#8455", "PVPVictoryHorde#8454", "Zone-WintergraspContested#14912",})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
+			Zn(L["Various"], L["Various"], L["Events"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Events"], prefol, 
+				"|cffffd800", "|cffffd800" .. L["Darkmoon Faire"], "MUS_43_DarkmoonFaire_IslandWalk#26536", "MUS_43_DarkmoonFaire_PavillionWalk#26539", "MUS_51_DarkmoonFaire_MerryGoRound_01#34440",
+				"|cffffd800", "|cffffd800" .. L["Plants vs Zombies"], "EVENT_PvZ_Babbling#23487", "EVENT_PvZ_Dadadoo#23488", "EVENT_PvZ_Doobeedoo#23489", "EVENT_PvZ_Lalala#23490", "EVENT_PvZ_Sunflower#23491", "EVENT_PvZ_Zombieonyourlawn#23492",
+			})
 			Zn(L["Various"], L["Various"], L["Island Expeditions"]						, {	"|cffffd800" .. L["Various"] .. ": " .. L["Island Expeditions"], prefol,
 				"|cffffd800", "|cffffd800" .. L["Adventure"], "MUS_80_Islands_Adventure_Walk#115050", "MUS_80_Islands_Adventure_Invasion_Walk#115414", "MUS_80_Islands_Adventure_Victory#115053",
 				"|cffffd800", "|cffffd800" .. L["Mystical"], "MUS_80_Islands_Mystical_Walk#115689", "MUS_80_Islands_Mystical_Invasion_Walk#117352",
@@ -5731,7 +5811,17 @@
 			})
 			Zn(L["Various"], L["Various"], L["Main Titles"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Main Titles"], prefol, "GS_Retail#10924", "GS_BurningCrusade#10925", "GS_LichKing#12765", "GS_Cataclysm#23640", "MUS_50_HeartofPandaria_MainTitle#28509", "MUS_60_MainTitle#40169", "MUS_70_MainTitle#56353", "MUS_80_MainTitle#113559"}) -- "MUS_1.0_MainTitle_Original#47598"
 			Zn(L["Various"], L["Various"], L["Music Rolls"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Music Rolls"], prefol, "MUS_61_GarrisonMusicBox_01#49511", "MUS_61_GarrisonMusicBox_02#49512", "MUS_61_GarrisonMusicBox_03#49513", "MUS_61_GarrisonMusicBox_04#49514", "MUS_61_GarrisonMusicBox_05#49515", "MUS_61_GarrisonMusicBox_06#49516", "MUS_61_GarrisonMusicBox_07#49529", "MUS_61_GarrisonMusicBox_08#49530", "MUS_61_GarrisonMusicBox_09#49531", "MUS_61_GarrisonMusicBox_10#49533", "MUS_61_GarrisonMusicBox_11#49535", "MUS_61_GarrisonMusicBox_12#49536", "MUS_61_GarrisonMusicBox_13#49538", "MUS_61_GarrisonMusicBox_14#49539", "MUS_61_GarrisonMusicBox_15#49540", "MUS_61_GarrisonMusicBox_16#49541", "MUS_61_GarrisonMusicBox_17#49543", "MUS_61_GarrisonMusicBox_18#49544", "MUS_61_GarrisonMusicBox_19#49545", "MUS_61_GarrisonMusicBox_20#49546", "MUS_61_GarrisonMusicBox_21#49526", "MUS_61_GarrisonMusicBox_22#49528", "MUS_61_GarrisonMusicBox_23_Alliance#49517", "MUS_61_GarrisonMusicBox_24_Alliance#49518", "MUS_61_GarrisonMusicBox_25_Alliance#49519", "MUS_61_GarrisonMusicBox_26_Alliance#49520", "MUS_61_GarrisonMusicBox_27_Alliance#49521", "MUS_61_GarrisonMusicBox_28_Alliance#49522", "MUS_61_GarrisonMusicBox_29_Alliance#49523", "MUS_61_GarrisonMusicBox_30_Alliance#49524", "MUS_61_GarrisonMusicBox_31_Alliance#49525", "MUS_61_GarrisonMusicBox_23_Horde#49555", "MUS_61_GarrisonMusicBox_24_Horde#49554", "MUS_61_GarrisonMusicBox_25_Horde#49553", "MUS_61_GarrisonMusicBox_26_Horde#49552", "MUS_61_GarrisonMusicBox_27_Horde#49551", "MUS_61_GarrisonMusicBox_28_Horde#49550", "MUS_61_GarrisonMusicBox_29_Horde#49549", "MUS_61_GarrisonMusicBox_30_Horde#49548", "MUS_61_GarrisonMusicBox_31_Horde#49547",})
-			Zn(L["Various"], L["Various"], L["Themes"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Themes"], prefol, "MUS_70_Zone_Stormwind_PostBrokenShore_Funeral_01#75552", "MUS_70_Zone_Stormwind_LionsRest_Day#73345", "MUS_70_BrokenShore_ShipIntro#73387", "MUS_72_BrokenShore_Wyrnnfall_Intro#85166", "MUS_60_Proudmoore_01#49356", "MUS_60_Proudmoore_02#49357", "MUS_60_Proudmoore_03#49358", "MUS_71_Event_DiabloAnniversary_TristramGuitar (Everything)#78803",})
+			Zn(L["Various"], L["Various"], L["Pet Battles"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Pet Battles"], prefol, "MUS_50_PetBattles_01#28753", "MUS_50_PetBattles_02#28754",})
+			Zn(L["Various"], L["Various"], L["Themes"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Themes"], prefol,
+				"|cffffd800", "|cffffd800" .. L["Anduin's Theme"], "MUS_70_Zone_Stormwind_PostBrokenShore_Funeral_01#75552", "MUS_70_Zone_Stormwind_LionsRest_Day#73345", "MUS_70_BrokenShore_ShipIntro#73387", "MUS_72_BrokenShore_Wyrnnfall_Intro#85166", 
+				"|cffffd800", "|cffffd800" .. L["Jaina's Theme"], "MUS_60_Proudmoore_01#49356", "MUS_60_Proudmoore_02#49357", "MUS_60_Proudmoore_03#49358", 
+				"|cffffd800", "|cffffd800" .. L["Tea with Jaina"], "ClientScene_51_TeaWithJaina_Music_01#34891", 
+				"|cffffd800", "|cffffd800" .. L["Power of the Horde"], "_MUS_61_GarrisonMusicBox_24_NotUsed#49534",
+				"|cffffd800", "|cffffd800" .. L["Diablo Anniversary"], "MUS_71_Event_DiabloAnniversary_TristramGuitar (Everything)#78803",
+			})
+			Zn(L["Various"], L["Various"], L["Warfronts"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Warfronts"], prefol,
+				"|cffffd800", "|cffffd800" .. L["Battle for Stromgarde"], "MUS_80_Warfronts_Arathi_Alliance_General_Walk#116361", "MUS_80_Warfront_Arathi_Horde_General_Walk#85251", "MUS_80_ArathiHighlands_PostWarfronts#120246",
+			})
 
 			-- Movies
 			Zn(L["Movies"], L["Movies"], "|cffffd800" .. L["Movies"], {""})
@@ -5741,7 +5831,7 @@
 			Zn(L["Movies"], L["Movies"], L["Cataclysm"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Cataclysm"], prefol, L["Cataclysm"] .. " |r(23)", L["Last Stand"] .. " |r(21)", L["Leaving Kezan"] .. " |r(22)", L["The Dragon Soul"] .. " |r(73)", L["Spine of Deathwing"] .. " |r(74)", L["Madness of Deathwing"] .. " |r(75)", L["Fall of Deathwing"] .. " |r(76)"})
 			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
-			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["An Unclear Path"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
+			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
 			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["Battle for Lordaeron (Horde)"] .. " |r(855)", L["Battle for Lordaeron (Alliance)"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Zandalar Intro"] .. " |r(857)", L["Zandalar Battle"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)"})
 
 			-- Give zone table a file level scope so slash command function can access it
@@ -6552,11 +6642,6 @@
 			if not UnitAffectingCombat(arg1) then
 				AcceptResurrect()
 				StaticPopup_Hide("RESURRECT_NO_TIMER")
-				C_Timer.After(1, function()
-					if not UnitIsDeadOrGhost("player") then
-						DoEmote("thank", arg1)
-					end
-				end)
 			end
 			return
 
@@ -6802,8 +6887,9 @@
 				LeaPlusLC:LoadVarNum("ViewPortBottom", 0, 0, 300)			-- Bottom border
 				LeaPlusLC:LoadVarNum("ViewPortLeft", 0, 0, 300)				-- Left border
 				LeaPlusLC:LoadVarNum("ViewPortRight", 0, 0, 300)			-- Right border
-				LeaPlusLC:LoadVarNum("ViewPortAlpha", 0, 0, 1)				-- Border alpha
-				LeaPlusLC:LoadVarChk("ViewPortResize", "Off")				-- Resize game world
+				LeaPlusLC:LoadVarNum("ViewPortResizeTop", 0, 0, 300)		-- Resize top border
+				LeaPlusLC:LoadVarNum("ViewPortResizeBottom", 0, 0, 300)		-- Resize bottom border
+				LeaPlusLC:LoadVarNum("ViewPortAlpha", 0, 0, 0.9)			-- Border alpha
 
 				LeaPlusLC:LoadVarChk("NoRestedEmotes", "Off")				-- Silence rested emotes
 
@@ -6962,8 +7048,9 @@
 			LeaPlusDB["ViewPortBottom"]			= LeaPlusLC["ViewPortBottom"]
 			LeaPlusDB["ViewPortLeft"]			= LeaPlusLC["ViewPortLeft"]
 			LeaPlusDB["ViewPortRight"]			= LeaPlusLC["ViewPortRight"]
+			LeaPlusDB["ViewPortResizeTop"]		= LeaPlusLC["ViewPortResizeTop"]
+			LeaPlusDB["ViewPortResizeBottom"]	= LeaPlusLC["ViewPortResizeBottom"]
 			LeaPlusDB["ViewPortAlpha"]			= LeaPlusLC["ViewPortAlpha"]
-			LeaPlusDB["ViewPortResize"]			= LeaPlusLC["ViewPortResize"]
 
 			LeaPlusDB["NoRestedEmotes"]			= LeaPlusLC["NoRestedEmotes"]
 
@@ -7341,34 +7428,6 @@
 			LeaPlusLC:SetDim(); -- Lock invalid options
 			LeaPlusLC:ReloadCheck(); -- Show reload button if needed
 			LeaPlusLC:Live(); -- Run live code
-
-			-- Reset specific live options if they were unchecked
-			if field == "NoScreenGlow" and LeaPlusLC[field] == "Off" then
-				-- Disable screen glow
-				SetCVar("ffxGlow", "1")
-
-			elseif field == "NoScreenEffects" and LeaPlusLC[field] == "Off" then
-				-- Disable screen effects
-				SetCVar("ffxDeath", "1")
-				SetCVar("ffxNether", "1")
-
-			elseif field == "NoRaidRestrictions" and LeaPlusLC[field] == "Off" then
-				-- Remove raid restrictions
-				SetAllowLowLevelRaid(false)
-
-			elseif field == "MaxCameraZoom" and LeaPlusLC[field] == "Off" then
-				-- Max camera zoom
-				SetCVar("cameraDistanceMaxZoomFactor", 1.9)
-
-			elseif field == "UnivGroupColor" and LeaPlusLC[field] == "Off" then
-				-- Universal group color
-				ChangeChatColor("RAID", 1, 0.50, 0)
-				ChangeChatColor("RAID_LEADER", 1, 0.28, 0.04)
-				ChangeChatColor("INSTANCE_CHAT", 1, 0.50, 0)
-				ChangeChatColor("INSTANCE_CHAT_LEADER", 1, 0.28, 0.04)
-
-			end
-
 		end)
 	end
 
@@ -8636,7 +8695,6 @@
 				LeaPlusDB["NoScreenEffects"] = "On"				-- Disable screen effects
 				LeaPlusDB["MaxCameraZoom"] = "On"				-- Max camera zoom
 				LeaPlusDB["ViewPortEnable"] = "On"				-- Enable viewport
-				LeaPlusDB["ViewPortResize"] = "On"				-- Resize game world
 				LeaPlusDB["NoRestedEmotes"] = "On"				-- Silence rested emotes
 
 				LeaPlusDB["NoBagAutomation"] = "On"				-- Disable bag automation
@@ -8875,7 +8933,7 @@
 	pg = "Page1";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Character"					, 	146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateQuests"			,	"Automate quests"				,	146, -92, 	false,	"If checked, quests will be selected, accepted and turned-in automatically.|n|nYou can hold the shift key down when you talk to a quest giver to override this setting.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateQuests"			,	"Automate quests"				,	146, -92, 	false,	"If checked, quests will be selected, accepted and turned-in automatically.|n|nQuests which have a gold, currency or crafting reagent requirement will not be turned-in automatically.|n|nYou can hold the shift key down when you talk to a quest giver to override this setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateGossip"			,	"Automate gossip"				,	146, -112, 	false,	"If checked, you can hold down the alt key while opening a gossip window to automatically select a single gossip option.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptSummon"			,	"Accept summon"					, 	146, -132, 	false,	"If checked, summon requests will be accepted automatically unless you are in combat.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptRes"				,	"Accept resurrection"			, 	146, -152, 	false,	"If checked, resurrection requests will be accepted automatically as long as the player resurrecting you is not in combat.|n|nResurrection requests from a Brazier of Awakening or a Failure Detection Pylon will not be accepted automatically.")

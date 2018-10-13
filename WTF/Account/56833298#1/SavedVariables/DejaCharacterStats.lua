@@ -22,11 +22,11 @@ DejaCharacterStatsDB = {
 		["dejacharacterstatsScrollbarChecked"] = {
 			["ScrollbarSetChecked"] = false,
 		},
-		["dejacharacterstatsShowDuraTextureChecked"] = {
-			["ShowDuraTextureSetChecked"] = true,
-		},
 		["dejacharacterstatsHideMasteryChecked"] = {
 			["SetChecked"] = true,
+		},
+		["dejacharacterstatsShowDuraTextureChecked"] = {
+			["ShowDuraTextureSetChecked"] = true,
 		},
 		["dejacharacterstatsDCSZeroChecked"] = {
 			["SetChecked"] = false,
@@ -177,8 +177,8 @@ DCS_ClassSpecDB = {
 		}, -- [37]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = false,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -428,8 +428,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -622,8 +622,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -816,8 +816,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},

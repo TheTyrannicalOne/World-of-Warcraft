@@ -32,17 +32,18 @@ SkadaDB = {
 					["point"] = "BOTTOMRIGHT",
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 225.833404541016,
-					["background"] = {
-						["height"] = 178.999862670898,
-					},
 					["name"] = "Damage",
-					["mode"] = "Damage",
+					["x"] = 0,
+					["modeincombat"] = "Damage",
 					["y"] = 0,
 					["barfont"] = "PT Sans Narrow",
 					["barslocked"] = true,
 					["roleicons"] = true,
 					["spark"] = false,
-					["modeincombat"] = "Damage",
+					["background"] = {
+						["height"] = 178.999862670898,
+					},
+					["mode"] = "Damage",
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -53,7 +54,6 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
-					["x"] = 0,
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -172,15 +172,9 @@ SkadaDB = {
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 200.000061035156,
 					["spark"] = false,
-					["barslocked"] = true,
-					["y"] = 0.0001220703125,
-					["barfont"] = "PT Sans Narrow",
 					["name"] = "Damage",
-					["roleicons"] = true,
-					["modeincombat"] = "Damage",
-					["background"] = {
-						["height"] = 164,
-					},
+					["y"] = 0.0001220703125,
+					["x"] = -3.05175781250e-005,
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -191,7 +185,13 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
-					["x"] = -3.05175781250e-005,
+					["roleicons"] = true,
+					["modeincombat"] = "Damage",
+					["background"] = {
+						["height"] = 164,
+					},
+					["barslocked"] = true,
+					["barfont"] = "PT Sans Narrow",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -294,6 +294,18 @@ SkadaDB = {
 					["barslocked"] = true,
 					["y"] = 0,
 					["barfont"] = "PT Sans Narrow",
+					["name"] = "Damage",
+					["modeincombat"] = "Damage",
+					["point"] = "BOTTOMRIGHT",
+					["roleicons"] = true,
+					["mode"] = "Damage",
+					["spark"] = false,
+					["bartexture"] = "BuiOnePixel",
+					["barwidth"] = 225.833404541016,
+					["x"] = 0,
+					["background"] = {
+						["height"] = 178.999862670898,
+					},
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -304,18 +316,6 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
-					["background"] = {
-						["height"] = 178.999862670898,
-					},
-					["point"] = "BOTTOMRIGHT",
-					["roleicons"] = true,
-					["mode"] = "Damage",
-					["spark"] = false,
-					["bartexture"] = "BuiOnePixel",
-					["barwidth"] = 225.833404541016,
-					["modeincombat"] = "Damage",
-					["x"] = 0,
-					["name"] = "Damage",
 				}, -- [1]
 				{
 					["titleset"] = true,
