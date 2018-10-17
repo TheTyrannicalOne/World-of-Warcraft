@@ -23,3 +23,4 @@ BigWigs_MistsOfPandaria: enabled
 HandyNotes_Argus: enabled
 HandyNotes_Achievements: disabled
 ImpliedTarget_ElvUI: enabled
+BigWigs_Cataclysm: enabled
