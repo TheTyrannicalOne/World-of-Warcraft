@@ -3,6 +3,7 @@ BigWigs3DB = {
 	["global"] = {
 		["watchedMovies"] = {
 			[-575] = true,
+			[-612] = true,
 			[-593] = {
 			},
 			[-609] = true,
@@ -16,7 +17,11 @@ BigWigs3DB = {
 		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["namespaces"] = {
-		["BigWigs_Bosses_Rocketspark and Borka"] = {
+		["BigWigs_Plugins_Victory"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
@@ -25,78 +30,19 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Bosses_Bonemaw"] = {
-		},
-		["BigWigs_Plugins_AutoReply"] = {
-		},
-		["BigWigs_Bosses_Beth'tilac"] = {
-		},
-		["BigWigs_Bosses_Gug'rokk"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Bosses_Ancient Protectors"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Bosses_Archmage Sol"] = {
-		},
-		["BigWigs_Bosses_Soulbinder Nyami"] = {
-		},
-		["BigWigs_Bosses_Alysrazor"] = {
-		},
-		["BigWigs_Bosses_Auchindoun Trash"] = {
-		},
-		["BigWigs_Bosses_Majordomo Staghelm"] = {
-		},
-		["BigWigs_Bosses_Fleshrender Nok'gar"] = {
-		},
-		["BigWigs_Bosses_Ner'zhul"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Bosses_Teron'gor"] = {
-		},
-		["BigWigs_Bosses_Slave Watcher Crushto"] = {
-		},
-		["BigWigs_Bosses_Nhallish"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Victory"] = {
-		},
-		["BigWigs_Bosses_Sadana Bloodfury"] = {
-		},
-		["BigWigs_Bosses_Ragnaros"] = {
-		},
-		["BigWigs_Bosses_Vigilant Kaathar"] = {
-		},
-		["BigWigs_Bosses_Azzakel"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Bosses_Grimrail Enforcers"] = {
-		},
 		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
-					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
 					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
+					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
 					["BigWigsAnchor_height"] = 15.9999876022339,
 				},
 			},
 		},
-		["BigWigs_Bosses_Magmolatus"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -105,13 +51,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Bosses_Roltall"] = {
-		},
-		["BigWigs_Bosses_Lord Rhyolith"] = {
-		},
-		["BigWigs_Bosses_Shannox"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -120,11 +62,20 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Baleroc"] = {
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 	},
 	["wipe80"] = true,
@@ -138,4 +89,48 @@ BigWigsIconDB = {
 	["minimapPos"] = 18.1037395905519,
 }
 BigWigsStatsDB = {
+	[1228] = {
+		[971] = {
+			["mythic"] = {
+				["best"] = 18.5169999999998,
+				["kills"] = 1,
+			},
+		},
+		[1195] = {
+			["mythic"] = {
+				["best"] = 96.5619999999981,
+				["kills"] = 1,
+			},
+		},
+		[1196] = {
+			["mythic"] = {
+				["best"] = 31.1419999999998,
+				["kills"] = 1,
+			},
+		},
+		[1128] = {
+			["mythic"] = {
+				["best"] = 22.8890000000029,
+				["kills"] = 1,
+			},
+		},
+		[1148] = {
+			["mythic"] = {
+				["best"] = 14.4829999999929,
+				["kills"] = 1,
+			},
+		},
+		[1153] = {
+			["mythic"] = {
+				["best"] = 16.1829999999973,
+				["kills"] = 1,
+			},
+		},
+		[1197] = {
+			["mythic"] = {
+				["best"] = 263.800000000003,
+				["kills"] = 1,
+			},
+		},
+	},
 }

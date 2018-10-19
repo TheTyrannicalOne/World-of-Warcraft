@@ -1,11 +1,9 @@
 # BigWigs
 
-## [v121.1](https://github.com/BigWigsMods/BigWigs/tree/v121.1) (2018-10-18)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v121...v121.1)
+## [v121.2](https://github.com/BigWigsMods/BigWigs/tree/v121.2) (2018-10-19)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v121.1...v121.2)
 
-- bump version  
-- BattleOfDazaralor/Blockade: Drycode  
-- Update addon blacklist  
-- Update globals list  
-- BattleOfDazaralor/Flamefist: Drycode  
-- BattleOfDazaralor: Rename the instance to its new name  
+- BattleOfDazaralor/Council: Drycode  
+- BattleOfDazaralor/Guardian: Variable fixes  
+- BattleOfDazaralor/Guardian: Drycode  
+- BattleOfDazaralor: Fix some events and use GetTime  
