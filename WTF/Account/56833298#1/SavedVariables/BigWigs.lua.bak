@@ -1,5 +1,8 @@
 
 BigWigs3DB = {
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+	},
 	["global"] = {
 		["watchedMovies"] = {
 			[-575] = true,
@@ -7,21 +10,16 @@ BigWigs3DB = {
 			[-593] = {
 			},
 			[-609] = true,
-			[-367] = true,
+			[-437] = true,
 			[-607] = true,
 			[-573] = true,
-			[-437] = true,
+			[-367] = true,
 		},
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
+		["BigWigs_Bosses_Ner'zhul"] = {
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
@@ -30,19 +28,31 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Bosses_Bonemaw"] = {
+		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Bosses_Sadana Bloodfury"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_Wipe"] = {
+		},
 		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
-					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
+					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
 					["BigWigsAnchor_height"] = 15.9999876022339,
 				},
 			},
-		},
-		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -51,7 +61,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Sounds"] = {
+		["BigWigs_Bosses_Nhallish"] = {
+		},
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
@@ -62,8 +74,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_AutoReply"] = {
-		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -71,11 +81,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
-		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 	},
 	["wipe80"] = true,
@@ -108,9 +116,9 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1128] = {
+		[1197] = {
 			["mythic"] = {
-				["best"] = 22.8890000000029,
+				["best"] = 263.800000000003,
 				["kills"] = 1,
 			},
 		},
@@ -126,9 +134,9 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1197] = {
+		[1128] = {
 			["mythic"] = {
-				["best"] = 263.800000000003,
+				["best"] = 22.8890000000029,
 				["kills"] = 1,
 			},
 		},
