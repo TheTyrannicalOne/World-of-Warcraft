@@ -20,7 +20,6 @@ points[15] = { -- "Badlands"
 }
 
 points[17] = { -- "BlastedLands"
-	[48160728] = "Zidormi",
 	[40471128] = 28959, -- Dreadmaul Hold
 }
 
@@ -126,7 +125,6 @@ points[1] = { -- "Durotar"
 }
 
 points[70] = { -- "Dustwallow"
-	[55804960] = "Zidormi",
 	[36803240] = 12383, -- Brackenwall Village
 	[41907410] = 12398, -- Mudsprocket
 }
@@ -206,13 +204,9 @@ points[109] = { -- "Netherstorm"
 
 points[104] = { -- "ShadowmoonValley"
 	[30302780] = 12395, -- Shadowmoon Village
-	[61002820] = 12409, -- Altar of Sha'tar
-	[56305980] = 12409, -- Sanctum of the Stars
 }
 
-points[111] = { -- "ShattrathCity"
-	[28104900] = 12404, -- Aldor Rise
-	[56208180] = 12404, -- Scryer's Tier
+points[111] = { -- ShattrathCity"
 }
 
 points[108] = { -- "TerokkarForest"
@@ -243,8 +237,12 @@ points[127] = { -- "CrystalsongForest"
 
 points[125] = { -- "Dalaran"
 	[48144132] = 13463, -- The Ledgerdemain Lounge
-	[38235958] = 13472, -- The Underbelly
+	[42305680] = 13472, -- The Underbelly
 	[66842962] = 13474, -- Sunreaver's Sanctuary
+}
+
+points[126] = { -- "DalaranUnderbelly"
+	[38225959] = 13472, -- The Underbelly
 }
 
 points[115] = { -- "Dragonblight"
@@ -329,7 +327,7 @@ points[422] = { -- "DreadWastes"
 	[55933227] = 32024, -- Klaxxi'vess
 }
 
-points[418] = {
+points[418] = { -- "Krasarang"
 	[51407729] = 32034, -- Marista
 	[75920687] = 32036, -- Zhu's Watch
 	[61032514] = 32047, -- Thunder Cleft
@@ -345,7 +343,11 @@ points[379] = { -- "KunLaiSummit"
 }
 
 points[391] = { -- "ShrineofTwoMoons"
-	[58917821] = 32022, -- Shrine of Two Moons, Vale of Eternal Blossoms
+	[60306630] = 32022, -- Shrine of Two Moons, Vale of Eternal Blossoms
+}
+
+points[392] = { -- "ShrineofTwoMoons"
+	[58847832] = 32022, -- Shrine of Two Moons, Vale of Eternal Blossoms
 }
 
 points[433] = { -- "TheHiddenPass"
@@ -366,12 +368,12 @@ points[388] = { -- "TownlongWastes"
 	[71115778] = 32043, -- Longying Outpost
 }
 
-points[390] = {
+points[390] = { -- "ValeofEternalBlossoms"
 	[35157775] = 32044, -- Mistfall Village
 	[61981626] = 32022, -- Shrine of Two Moons
 }
 
-points[376] = {
+points[376] = { -- "ValleyoftheFourWinds"
 	[83642015] = 32048, -- Pang's Stead
 	[19875579] = 32046, -- Stoneplow
 }
@@ -384,7 +386,7 @@ points[590] = { -- "garrisonffhorde_tier3"
 	[47083791] = 39657, -- Frostwall Garrison
 }
 
-points[525] = {
+points[525] = { -- "FrostfireRidge"
 	[48276471] = 39657, -- Frostwall Garrison
 }
 

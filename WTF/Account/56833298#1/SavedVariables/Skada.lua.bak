@@ -32,9 +32,11 @@ SkadaDB = {
 					["point"] = "BOTTOMRIGHT",
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 225.833404541016,
-					["x"] = 0,
+					["mode"] = "Damage",
 					["barslocked"] = true,
-					["modeincombat"] = "Damage",
+					["background"] = {
+						["height"] = 178.999862670898,
+					},
 					["y"] = 0,
 					["barfont"] = "PT Sans Narrow",
 					["title"] = {
@@ -49,11 +51,9 @@ SkadaDB = {
 					},
 					["roleicons"] = true,
 					["spark"] = false,
-					["mode"] = "Damage",
+					["modeincombat"] = "Damage",
 					["name"] = "Damage",
-					["background"] = {
-						["height"] = 178.999862670898,
-					},
+					["x"] = 0,
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -146,15 +146,9 @@ SkadaDB = {
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 200.000061035156,
 					["barfont"] = "PT Sans Narrow",
-					["barslocked"] = true,
+					["name"] = "Damage",
 					["y"] = 0.0001220703125,
 					["x"] = -3.05175781250e-005,
-					["name"] = "Damage",
-					["roleicons"] = true,
-					["background"] = {
-						["height"] = 164,
-					},
-					["modeincombat"] = "Damage",
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -165,6 +159,12 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
+					["roleicons"] = true,
+					["background"] = {
+						["height"] = 164,
+					},
+					["modeincombat"] = "Damage",
+					["barslocked"] = true,
 					["spark"] = false,
 				}, -- [1]
 				{
@@ -295,16 +295,17 @@ SkadaDB = {
 					["y"] = 0,
 					["x"] = 0,
 					["name"] = "Damage",
-					["background"] = {
-						["height"] = 178.999862670898,
-					},
+					["modeincombat"] = "Damage",
 					["point"] = "BOTTOMRIGHT",
 					["roleicons"] = true,
 					["mode"] = "Damage",
 					["spark"] = false,
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 225.833404541016,
-					["modeincombat"] = "Damage",
+					["background"] = {
+						["height"] = 178.999862670898,
+					},
+					["barfont"] = "PT Sans Narrow",
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -315,7 +316,6 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
-					["barfont"] = "PT Sans Narrow",
 				}, -- [1]
 				{
 					["titleset"] = true,

@@ -17,59 +17,15 @@ BigWigs3DB = {
 		["Shanyt - Argent Dawn"] = "Default",
 	},
 	["namespaces"] = {
-		["BigWigs_Plugins_Alt Power"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Bosses_Kargath Bladefist"] = {
-		},
-		["BigWigs_Bosses_Ko'ragh"] = {
-		},
-		["BigWigs_Bosses_Tectus"] = {
-		},
-		["BigWigs_Plugins_AutoReply"] = {
-		},
-		["BigWigs_Bosses_Gug'rokk"] = {
-		},
-		["BigWigs_Plugins_Wipe"] = {
-		},
-		["BigWigs_Bosses_Imperator Mar'gok"] = {
-		},
-		["BigWigs_Bosses_Highmaul Trash"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Bosses_Soulbinder Nyami"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Bosses_Teron'gor"] = {
-		},
-		["BigWigs_Bosses_Slave Watcher Crushto"] = {
-		},
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Bosses_Azzakel"] = {
-		},
-		["BigWigs_Bosses_Auchindoun Trash"] = {
-		},
-		["BigWigs_Bosses_Vigilant Kaathar"] = {
-		},
-		["BigWigs_Bosses_Twin Ogron"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Plugins_InfoBox"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -81,7 +37,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Magmolatus"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -90,13 +46,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_The Butcher"] = {
+		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Bosses_Roltall"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -105,11 +57,25 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Brackenspore"] = {
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_Alt Power"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
 		},
 	},
 	["wipe80"] = true,

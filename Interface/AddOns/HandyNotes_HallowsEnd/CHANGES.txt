@@ -1,12 +1,32 @@
-tag 79e73e8191d9272509180238d5817c19ae17a3af v1.4
+tag 8297e6444f15c3bed02109fa141fd7a4b25a6bc2 v1.4.2
 Author:	Ethan Centaurai <ethancentaurai@outlook.com>
-Date:	Fri Oct 19 19:31:49 2018 +0100
+Date:	Tue Oct 23 20:30:23 2018 +0100
 
-Tagging as v1.4.
+Tagging as v1.4.2.
 
-commit 101a19fbaec3e74844b66fb1b1197b9f6f1632c2
+commit 25ed8f97677226fddad1519c3c76adba64dc48e9
 Author: Ethan Centaurai <ethancentaurai@outlook.com>
-Date:   Fri Oct 19 08:29:28 2018 +0100
+Date:   Tue Oct 23 20:06:47 2018 +0100
 
-    Update README.
+    Updated Shrine of Two Moons bucket.
+    
+    Also grammar fixes. Because reasons.
+
+commit 1292a6a9c2cbf749009866ac3cd6d251ca3db2f9
+Author: Ethan Centaurai <ethancentaurai@outlook.com>
+Date:   Tue Oct 23 18:25:47 2018 +0100
+
+    Further tweaks.
+
+commit 6b830b32677dca73c29cbf58bbdccd766a95ff8e
+Author: Ethan Centaurai <ethancentaurai@outlook.com>
+Date:   Tue Oct 23 18:19:48 2018 +0100
+
+    Tweaked the coordinates of the Underbelly buckets.
+
+commit 530342d0bfd70e9f2e4df31d020011661c6699cd
+Author: Ethan Centaurai <ethancentaurai@outlook.com>
+Date:   Tue Oct 23 18:18:08 2018 +0100
+
+    Added a note to the bucket in the Underbelly Tavern. Closes #4.
 
