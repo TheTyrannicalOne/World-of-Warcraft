@@ -105,19 +105,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zoneId"] = false,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -126,7 +123,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -200,14 +200,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 9,
-			["yOffset"] = 115.00012207031,
-			["selfPoint"] = "BOTTOMLEFT",
-			["id"] = "The Postmaster",
-			["borderOffset"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 11.000122070312,
-			["borderInset"] = 11,
+			["regionType"] = "group",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -222,6 +215,13 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["id"] = "The Postmaster",
+			["xOffset"] = 11.000122070312,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "BOTTOMLEFT",
+			["borderInset"] = 11,
+			["yOffset"] = 115.00012207031,
 			["expanded"] = false,
 			["conditions"] = {
 			},
@@ -272,7 +272,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["regionType"] = "group",
+			["borderOffset"] = 5,
 		},
 		["Outland"] = {
 			["outline"] = "OUTLINE",
@@ -373,19 +373,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zoneId"] = false,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -394,7 +391,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -509,19 +509,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zoneId"] = false,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -530,7 +527,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -645,19 +645,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zoneId"] = false,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -666,7 +663,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -781,19 +781,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zoneId"] = false,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -802,7 +799,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["talent2"] = {
 					["multi"] = {
 					},
@@ -917,19 +917,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zoneId"] = false,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
 				["role"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -938,7 +935,10 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["talent2"] = {
 					["multi"] = {
 					},

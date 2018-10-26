@@ -19,13 +19,13 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
@@ -37,7 +37,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -48,7 +48,7 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_InfoBox"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
