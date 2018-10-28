@@ -32,12 +32,12 @@ TimelessIsleChestsDB = {
 			["33192"] = true,
 			["33189"] = true,
 			["33197"] = true,
-			["33175"] = true,
-			["33206"] = true,
 			["33184"] = true,
-			["33173"] = true,
-			["33209"] = true,
+			["33206"] = true,
+			["33175"] = true,
 			["33210"] = true,
+			["33209"] = true,
+			["33173"] = true,
 			["33200"] = true,
 			["33201"] = true,
 			["33196"] = true,
@@ -47,8 +47,9 @@ TimelessIsleChestsDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

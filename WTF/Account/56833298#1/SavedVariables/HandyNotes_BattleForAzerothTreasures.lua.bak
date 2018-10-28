@@ -1,10 +1,13 @@
 
 HandyNotes_BattleForAzerothTreasuresDB = {
 	["profileKeys"] = {
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 	},
 	["profiles"] = {
+		["Durlok - Black Dragonflight"] = {
+		},
 		["Shanyt - Argent Dawn"] = {
 		},
 		["Vancard - Zul'jin"] = {

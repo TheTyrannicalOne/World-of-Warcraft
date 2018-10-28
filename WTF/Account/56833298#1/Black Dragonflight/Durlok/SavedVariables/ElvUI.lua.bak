@@ -1,0 +1,78 @@
+
+ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/omen show", -- [1]
+		"/DANCE", -- [2]
+		"/opIE", -- [3]
+		"/opie", -- [4]
+		"/dance", -- [5]
+	},
+	["ChatHistoryLog"] = {
+		{
+			"WTS  Heroic Uldir Run. Smooth and Easy Guild run! Also doing Mythic+ Carries /w for info", -- [1]
+			"Giadenar-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Giadenar-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			501, -- [11]
+			"Player-74-0BCE7787", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8787edGiadenar-Skullcrusher|r",
+			[51] = 1540704356,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [1]
+		{
+			"WTS  Heroic Uldir Run. Smooth and Easy Guild run! Also doing Mythic+ Carries /w for info", -- [1]
+			"Giadenar-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Giadenar-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			519, -- [11]
+			"Player-74-0BCE7787", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8787edGiadenar-Skullcrusher|r",
+			[51] = 1540704719,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [2]
+		{
+			"WTS  Heroic Uldir Run. Smooth and Easy Guild run! Also doing Mythic+ Carries /w for info", -- [1]
+			"Giadenar-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Giadenar-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			85, -- [11]
+			"Player-74-0BCE7787", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8787edGiadenar-Skullcrusher|r",
+			[51] = 1540707617,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [3]
+	},
+}

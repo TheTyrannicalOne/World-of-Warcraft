@@ -4,9 +4,9 @@ dbBFA = {
 		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = {
+			["firstun"] = false,
+		},
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
@@ -14,6 +14,10 @@ dbBFA = {
 		["news"] = {
 		},
 		["warn02_seen"] = 0,
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -37,8 +41,8 @@ dbBFA = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["TROOPALERT"] = true,
 				["MAXCHAMP"] = 3,
+				["TROOPALERT"] = true,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},

@@ -1,25 +1,31 @@
 
 HandyNotesDB = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 	},
 	["profiles"] = {
+		["Vancard - Zul'jin"] = {
+		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 	},
 }
 HandyNotes_HandyNotesDB = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 	},
 	["profiles"] = {
+		["Vancard - Zul'jin"] = {
+		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 	},
 }
