@@ -19,6 +19,10 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -26,18 +30,14 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Colors"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
-					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
+					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
 					["BigWigsAnchor_height"] = 15.9999876022339,
 				},
 			},
@@ -62,7 +62,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -71,11 +71,11 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_AutoReply"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 	},
 	["wipe80"] = true,
@@ -132,20 +132,6 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1148] = {
-			["heroic"] = {
-				["best"] = 9.24499999999898,
-				["kills"] = 1,
-			},
-			["mythic"] = {
-				["best"] = 14.4829999999929,
-				["kills"] = 2,
-			},
-			["normal"] = {
-				["best"] = 10.6820000000007,
-				["kills"] = 1,
-			},
-		},
 		[1197] = {
 			["heroic"] = {
 				["best"] = 104.853999999999,
@@ -157,6 +143,20 @@ BigWigsStatsDB = {
 			},
 			["normal"] = {
 				["best"] = 107.734,
+				["kills"] = 1,
+			},
+		},
+		[1148] = {
+			["heroic"] = {
+				["best"] = 9.24499999999898,
+				["kills"] = 1,
+			},
+			["mythic"] = {
+				["best"] = 14.4829999999929,
+				["kills"] = 2,
+			},
+			["normal"] = {
+				["best"] = 10.6820000000007,
 				["kills"] = 1,
 			},
 		},

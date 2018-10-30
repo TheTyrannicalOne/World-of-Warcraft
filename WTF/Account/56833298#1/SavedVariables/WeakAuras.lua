@@ -101,17 +101,20 @@ WeakAurasSaved = {
 				["use_never"] = false,
 				["zone"] = "The Postmaster's Office",
 				["zoneId"] = "1014",
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["use_zoneId"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -123,15 +126,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -200,7 +200,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 9,
-			["regionType"] = "group",
+			["selfPoint"] = "BOTTOMLEFT",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -216,12 +216,12 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "The Postmaster",
-			["xOffset"] = 11.000122070312,
+			["regionType"] = "group",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "BOTTOMLEFT",
+			["borderOffset"] = 5,
 			["borderInset"] = 11,
-			["yOffset"] = 115.00012207031,
+			["xOffset"] = 11.000122070312,
 			["expanded"] = false,
 			["conditions"] = {
 			},
@@ -251,7 +251,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -263,7 +263,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -272,13 +272,13 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["borderOffset"] = 5,
+			["yOffset"] = 115.00012207031,
 		},
-		["Kalimdor"] = {
+		["Outland"] = {
 			["outline"] = "OUTLINE",
 			["fontSize"] = 16,
 			["parent"] = "The Postmaster",
-			["displayText"] = "Astranaar\nEverlook \nFeathermoon Stronghold\nGadgetzan\nLor'danel\nNighthaven\nNordrassil\nRamkahen\nThe Crossroads\nWhisperwind Grove",
+			["displayText"] = "Allerian Stronghold\nArea 52\nAltar of Sha'tar\nCenarion Refuge\nCosmowrench\nGaradar\nHonor Hold\nSylvanaar\nThrallmar\nZabra'jin",
 			["yOffset"] = -15,
 			["anchorPoint"] = "CENTER",
 			["color"] = {
@@ -347,14 +347,14 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["id"] = "Kalimdor",
+			["id"] = "Outland",
 			["wordWrap"] = "WordWrap",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["automaticWidth"] = "Auto",
 			["font"] = "PT Sans Narrow",
-			["xOffset"] = -538.00018310547,
-			["width"] = 161.00001525879,
+			["xOffset"] = -105.99969482422,
+			["width"] = 126.00002288818,
 			["height"] = 160,
 			["fixedWidth"] = 200,
 			["load"] = {
@@ -369,17 +369,20 @@ WeakAurasSaved = {
 				["use_never"] = false,
 				["zone"] = "The Postmaster's Office",
 				["zoneId"] = "1014",
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["use_zoneId"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -391,15 +394,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -505,17 +505,20 @@ WeakAurasSaved = {
 				["use_never"] = false,
 				["zone"] = "The Postmaster's Office",
 				["zoneId"] = "1014",
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["use_zoneId"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -527,15 +530,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -546,11 +546,11 @@ WeakAurasSaved = {
 			},
 			["regionType"] = "text",
 		},
-		["Outland"] = {
+		["Kalimdor"] = {
 			["outline"] = "OUTLINE",
 			["fontSize"] = 16,
 			["parent"] = "The Postmaster",
-			["displayText"] = "Allerian Stronghold\nArea 52\nAltar of Sha'tar\nCenarion Refuge\nCosmowrench\nGaradar\nHonor Hold\nSylvanaar\nThrallmar\nZabra'jin",
+			["displayText"] = "Astranaar\nEverlook \nFeathermoon Stronghold\nGadgetzan\nLor'danel\nNighthaven\nNordrassil\nRamkahen\nThe Crossroads\nWhisperwind Grove",
 			["yOffset"] = -15,
 			["anchorPoint"] = "CENTER",
 			["color"] = {
@@ -619,14 +619,14 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
-			["id"] = "Outland",
+			["id"] = "Kalimdor",
 			["wordWrap"] = "WordWrap",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["automaticWidth"] = "Auto",
 			["font"] = "PT Sans Narrow",
-			["xOffset"] = -105.99969482422,
-			["width"] = 126.00002288818,
+			["xOffset"] = -538.00018310547,
+			["width"] = 161.00001525879,
 			["height"] = 160,
 			["fixedWidth"] = 200,
 			["load"] = {
@@ -641,17 +641,20 @@ WeakAurasSaved = {
 				["use_never"] = false,
 				["zone"] = "The Postmaster's Office",
 				["zoneId"] = "1014",
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["use_zoneId"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -663,15 +666,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -777,17 +777,20 @@ WeakAurasSaved = {
 				["use_never"] = false,
 				["zone"] = "The Postmaster's Office",
 				["zoneId"] = "1014",
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["use_zoneId"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -799,15 +802,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -913,17 +913,20 @@ WeakAurasSaved = {
 				["use_never"] = false,
 				["zone"] = "The Postmaster's Office",
 				["zoneId"] = "1014",
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["use_zoneId"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -935,15 +938,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_zone"] = false,
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},

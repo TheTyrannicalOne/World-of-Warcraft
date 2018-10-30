@@ -4,9 +4,13 @@ dbOHC = {
 		["Shanyt - Argent Dawn"] = {
 			["firstun"] = false,
 		},
+		["Durlok - Black Dragonflight"] = {
+			["firstun"] = false,
+		},
 	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
