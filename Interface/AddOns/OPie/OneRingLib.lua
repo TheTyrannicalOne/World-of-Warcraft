@@ -1,4 +1,4 @@
-local versionMajor, versionRev, L, ADDON, T, ORI = 3, 95, newproxy(true), ...
+local versionMajor, versionRev, L, ADDON, T, ORI = 3, 96, newproxy(true), ...
 local api, OR_Rings, OR_ModifierLockState, TL, EV, OR_LoadedState = {ext={ActionBook=T.ActionBook},lang=L}, {}, nil, T.L, T.Evie, 1
 local defaultConfig = {
 	ClickActivation=false, ClickPriority=true, CloseOnRelease=false, NoClose=false, NoCloseOnSlice=false,
@@ -106,6 +106,7 @@ do -- Click dispatcher
 		BUTTON_NAMEKEY_MAP = newtable()
 		BUTTON_NAMEKEY_MAP.LeftButton, BUTTON_NAMEKEY_MAP.RightButton, BUTTON_NAMEKEY_MAP.MiddleButton = "BUTTON1", "BUTTON2", "BUTTON3"
 		BUTTON_NAMEKEY_MAP.Button4, BUTTON_NAMEKEY_MAP.Button5 = "BUTTON4", "BUTTON5"
+		ORL_GlobalBindingMap = newtable("OpenNestedRingBinding","mwin", "ScrollNestedRingUpBinding","mwup", "ScrollNestedRingDownBinding","mwdown")
 		AB, KR = self:GetFrameRef("AB"), self:GetFrameRef("KR")
 
 		ORL_PrepareCollection = [==[-- ORL_PrepareCollection
@@ -148,7 +149,7 @@ do -- Click dispatcher
 			end end end
 		]]
 		ORL_OpenRing = [==[-- ORL_OpenRing
-			local ring, ringID, interactBinding, forceLC, fastSwitch = ORL_RingData[...], ...
+			local ring, ringID, interactBinding, forceLC, fastSwitch, fastSwitch2 = ORL_RingData[...], ...
 			leftActivation = not not (forceLC or ring.ClickActivation)
 			modState = (leftActivation and "") or (fastSwitch and modState) or ((IsAltKeyDown() and "A" or "") .. (IsControlKeyDown() and "C" or "") .. (IsShiftKeyDown() and "S" or ""))
 			
@@ -159,6 +160,10 @@ do -- Click dispatcher
 			if ORL_StoredCA[ring.name] and not ring.fcToken then ring.fcToken, ORL_StoredCA[ring.name] = ORL_StoredCA[ring.name] end
 			fastClick = ring.CenterAction and ((not fcIgnore[ring.fcToken] and ctokens[cid][ring.fcToken]) or (ring.OpprotunisticCA and ctokens[cid][firstFC])) or nil
 			
+			if leftActivation and fastSwitch then
+				-- Release the old close binding, allowing the parent ring to be re-opened
+				bindProxy:ClearBindings()
+			end
 			if interactBinding ~= "BUTTON2" then bindProxy:SetBindingClick(true, "BUTTON2", owner, "close") end
 			bindProxy:SetBindingClick(true, "ESCAPE", owner, "close")
 			owner:RunFor(bindProxy, ORL_RegisterVariations, "MOUSEWHEELUP", "mwup", "ALT-CTRL-SHIFT")
@@ -170,8 +175,8 @@ do -- Click dispatcher
 			owner:RunFor(bindProxy, ORL_RegisterVariations, up, up:match("MOUSEWHEEL") and "mwupW" or "mwupK", "ALT-CTRL-SHIFT", interactKey)
 			owner:RunFor(bindProxy, ORL_RegisterVariations, open, "mwin", "ALT-CTRL-SHIFT", interactBinding)
 			
-			if leftActivation and interactBinding then
-				bindProxy:SetBindingClick(true, interactBinding, self, "close")
+			if leftActivation and (interactBinding or ring.ClickActivation and ring.bind) then
+				bindProxy:SetBindingClick(true, interactBinding or ring.bind, self, "close")
 			end
 			owner:Run(ORL_OpenRing2)
 			if activeBind and (leftActivation or not fastSwitch) then
@@ -182,7 +187,7 @@ do -- Click dispatcher
 			owner:SetPoint('CENTER', ring.ofs, ring.ofsx/owner:GetEffectiveScale(), ring.ofsy/owner:GetEffectiveScale())
 			if ring.ClickPriority then owner:Show() end
 
-			owner:CallMethod("NotifyState", "open", ring.name, ring.action, fastClick, fastSwitch, modState)
+			owner:CallMethod("NotifyState", "open", ring.name, ring.action, fastClick, fastSwitch or fastSwitch2, modState)
 			return owner:RunFor(self, ORL_PerformAB, openAction)
 		]==]
 		ORL_OpenRing2 = [[-- ORL_OpenRing2
@@ -260,18 +265,12 @@ do -- Click dispatcher
 			local isActiveRingTriggerClick = activeRing and BUTTON and activeRing.bindButton == BUTTON and (activeRing.bindModifiedClick == nil or IsModifiedClick(activeRing.bindModifiedClick))
 			local openHotkeyOverride, openHotkeyId = button:match("^r(o?)(%d+)$")
 			openHotkeyId = tonumber(openHotkeyId)
-			local OpenNestedRingBinding = ORL_GlobalOptions.OpenNestedRingBinding
 			if openHotkeyOverride == "o" and activeRing == ORL_RingData[openHotkeyId] and activeBind ~= "BUTTON1" and not down then
 				button = "use"
 			elseif BUTTON == "BUTTON1" and activeRing and leftActivation then
 				button = "use"
 			elseif BUTTON == "BUTTON2" or (activeRing and activeRing.ClickPriority and leftActivation and isActiveRingTriggerClick) then
 				button = "close" -- TODO: does ClickPriority make sense here?
-			elseif BUTTON == "BUTTON3" and OpenNestedRingBinding then
-				local mod, undash = OpenNestedRingBinding:match("(.?)([^-]?)BUTTON3$")
-				if undash == "" and (mod == "" or IsModifiedClick(OpenNestedRingBinding)) then
-					button = "mwin"
-				end
 			end
 
 			if activeRing and button:match("^mw[ud]") then
@@ -288,7 +287,7 @@ do -- Click dispatcher
 				return control:RunFor(self, ORL_OnClick, "use", down)
 			elseif isActiveRingTriggerClick then
 				return control:RunFor(self, ORL_OnClick, leftActivation and "close" or "use", down)
-			elseif activeRing and button:match("slice(%d+)") then
+			elseif activeRing and button:match("^slice%d+") then
 				local b = tonumber(button:match("slice(%d+)"))
 				if openCollection and openCollection[b] then
 					if down then
@@ -296,17 +295,6 @@ do -- Click dispatcher
 					elseif sliceBindState[b] then
 						return control:RunFor(self, ORL_PerformSliceAction, b, activeRing.NoCloseOnSlice)
 					end
-				end
-			elseif BUTTON:match("^BUTTON%d+$") then
-				-- The click-capturing overlay captures all mouse clicks, including those used in proper bindings
-				local lvalue, lkey = 0, nil
-				for k, v in pairs(ORL_RingData) do
-					if v.bindButton == BUTTON and (v.bindModifiedClick == nil or IsModifiedClick(v.bindModifiedClick)) and #v.bind > lvalue then
-						lkey, lvalue = k, #v.bind
-					end
-				end
-				if lkey then
-					return owner:RunFor(self, ORL_OnClick, "r" .. lkey, down)
 				end
 			elseif button == "mwin" and activeRing and down then
 				local aid = openCollection[control:Run(ORL_GetPureSlice)]
@@ -318,7 +306,32 @@ do -- Click dispatcher
 					owner:Run(ORL_OpenRing2)
 					control:CallMethod("NotifyState", "switch", nil, openCollectionID, fastClick, true, modState)
 				end
-			elseif openHotkeyId and activeRing ~= ORL_RingData[openHotkeyId] and down then
+			elseif BUTTON:match("^BUTTON%d+$") then
+				-- The click-capturing overlay captures all mouse clicks, including those used in proper bindings
+				local lvalue, lkey = 0, nil
+				if not lkey then
+					for i=1, #ORL_GlobalBindingMap, 2 do
+						local bind = ORL_GlobalOptions[ORL_GlobalBindingMap[i]]
+						if bind then
+							local mod, undash, bindButton = bind:match("^(.-)([^-]?)(BUTTON%d+)$")
+							if undash == "" and (mod == "" or IsModifiedClick(bind)) and bindButton == BUTTON and #bind > lvalue then
+								lkey, lvalue = ORL_GlobalBindingMap[i+1], #bind
+							end
+						end
+					end
+				end
+				if not lkey then
+					for k, v in pairs(ORL_RingData) do
+						if v.bindButton == BUTTON and (v.bindModifiedClick == nil or IsModifiedClick(v.bindModifiedClick)) and #v.bind > lvalue then
+							lkey, lvalue = "r" .. k, #v.bind
+						end
+					end
+				end
+				if lkey then
+					return owner:RunFor(self, ORL_OnClick, lkey, down)
+				end
+			elseif openHotkeyId and down then
+				local switchToSelf = activeRing == ORL_RingData[openHotkeyId]
 				if activeRing then
 					-- If the click-capturing overlay gets the binding DOWN event, only *it* will be notified of the corresponding UP.
 					owner:Run(ORL_CloseActiveRing, self == owner)
@@ -327,7 +340,7 @@ do -- Click dispatcher
 				if openHotkeyOverride == "o" and bindOverrides[openHotkeyId] then
 					binding = bindOverrides[openHotkeyId]
 				end
-				return owner:RunFor(self, ORL_OpenRing, openHotkeyId, binding)
+				return owner:RunFor(self, ORL_OpenRing, openHotkeyId, binding, false, false, switchToSelf)
 			end
 			return false
 		]==]
@@ -360,9 +373,9 @@ do -- Click dispatcher
 		local data = ORL_RingData[tonumber(type(name) == "string" and name:match("^binding%-r(%d+)$"))]
 		if data then
 			if (value or "") ~= "" then
-				local modifiedClick, modifiers, button = value:match("^((.-)(BUTTON%d+))$")
-				if modifiers and not modifiers:sub(-1) == "-" then
-					modifiedClick, modifiers, button = nil
+				local modifiedClick, modifiers, undash, button = value:match("^((.-)([^-]?)(BUTTON%d+))$")
+				if undash ~= "" then
+					modifiedClick, modifiers = nil
 				end
 				data.bind, data.bindButton, data.bindModifiedClick = value, button, modifiedClick
 			else

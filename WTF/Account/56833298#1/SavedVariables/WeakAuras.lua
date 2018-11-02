@@ -200,7 +200,7 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 9,
-			["selfPoint"] = "BOTTOMLEFT",
+			["regionType"] = "group",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -216,12 +216,12 @@ WeakAurasSaved = {
 				},
 			},
 			["id"] = "The Postmaster",
-			["regionType"] = "group",
+			["xOffset"] = 11.000122070312,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["borderOffset"] = 5,
+			["selfPoint"] = "BOTTOMLEFT",
 			["borderInset"] = 11,
-			["xOffset"] = 11.000122070312,
+			["yOffset"] = 115.00012207031,
 			["expanded"] = false,
 			["conditions"] = {
 			},
@@ -272,7 +272,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["yOffset"] = 115.00012207031,
+			["borderOffset"] = 5,
 		},
 		["Outland"] = {
 			["outline"] = "OUTLINE",

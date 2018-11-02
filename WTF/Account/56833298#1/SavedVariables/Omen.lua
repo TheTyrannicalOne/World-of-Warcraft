@@ -1,11 +1,17 @@
 
 Omen3DB = {
 	["profileKeys"] = {
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Vancard - Zul'jin"] = "Shanyt - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
 	},
 	["profiles"] = {
+		["Shanyt - Zul'jin"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.000061035156,
+			["PositionX"] = 954.166687011719,
+		},
 		["Vancard - Zul'jin"] = {
 			["PositionY"] = 200.834762573242,
 			["PositionW"] = 200.000061035156,

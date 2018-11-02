@@ -2,8 +2,9 @@
 Omen3DB = {
 	["profileKeys"] = {
 		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vancard - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
 		["Durlok - Black Dragonflight"] = {
@@ -14,6 +15,16 @@ Omen3DB = {
 			["PositionH"] = 162.000015258789,
 			["PositionX"] = 1488.33312988281,
 			["VGrip1"] = 85.3541643969225,
+		},
+		["Vancard - Zul'jin"] = {
+			["PositionY"] = 200.834762573242,
+			["PositionW"] = 200.000061035156,
+			["Shown"] = true,
+			["Background"] = {
+				["Texture"] = "Blizzard Dialog Background",
+			},
+			["PositionX"] = 1429.16589355469,
+			["PositionH"] = 181.166656494141,
 		},
 		["Shanyt - Argent Dawn"] = {
 			["PositionW"] = 241.666137695313,
@@ -36,15 +47,10 @@ Omen3DB = {
 			["VGrip1"] = 102.708017867607,
 			["PositionX"] = 1387.49890136719,
 		},
-		["Vancard - Zul'jin"] = {
-			["PositionY"] = 200.834762573242,
-			["PositionW"] = 200.000061035156,
-			["Shown"] = true,
-			["Background"] = {
-				["Texture"] = "Blizzard Dialog Background",
-			},
-			["PositionX"] = 1429.16589355469,
-			["PositionH"] = 181.166656494141,
+		["Shanyt - Zul'jin"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.000061035156,
+			["PositionX"] = 954.166687011719,
 		},
 	},
 }

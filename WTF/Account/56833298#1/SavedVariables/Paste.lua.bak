@@ -2,17 +2,21 @@
 PasteDB = {
 	["profileKeys"] = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
 		["Durlok - Black Dragonflight"] = {
 			["loaded"] = true,
 		},
+		["Vancard - Zul'jin"] = {
+			["loaded"] = true,
+		},
 		["Shanyt - Argent Dawn"] = {
 			["loaded"] = true,
 		},
-		["Vancard - Zul'jin"] = {
+		["Shanyt - Zul'jin"] = {
 			["loaded"] = true,
 		},
 	},

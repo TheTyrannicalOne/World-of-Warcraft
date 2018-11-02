@@ -2,15 +2,18 @@
 HandyNotes_LegionTreasuresDB = {
 	["profileKeys"] = {
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
 		["Durlok - Black Dragonflight"] = {
 		},
+		["Vancard - Zul'jin"] = {
+		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Vancard - Zul'jin"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 	},
 }

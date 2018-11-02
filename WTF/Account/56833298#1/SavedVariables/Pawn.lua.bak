@@ -10,7 +10,7 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["LastVersion"] = 2.023,
+	["LastVersion"] = 2.0231,
 	["ShowSocketingAdvisor"] = true,
 	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
@@ -276,6 +276,9 @@ PawnCommon = {
 		["\"MrRobot\":WARRIOR1"] = {
 			["IconTexturePath"] = 132355,
 			["PerCharacterOptions"] = {
+				["Shanyt-Zul'jin"] = {
+					["Visible"] = true,
+				},
 				["Shanyt-Argent Dawn"] = {
 					["Visible"] = true,
 				},
