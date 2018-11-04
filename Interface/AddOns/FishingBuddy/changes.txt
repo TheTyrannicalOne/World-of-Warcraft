@@ -1,11 +1,15 @@
-﻿Version 1.9.19
+﻿Version 1.9.20
+- Attempt to fix the "crash while resizing" issue
+- Make the watcher window stay around when using the macro
+
+Version 1.9.19
 - Don't let side effects hide the action button if we're in combat (Curse #363)
 - Add an option to only show the Legion bosses in Broken Isles
 - Actually show the Fisherfriend loot correctly when in Broken Isles
 
 Version 1.9.18
 - Fix bug when custom pets selected
-- Don't summon pets in combat (Curse #336)
+- Don't summon pets in combat (Curse #336, #279)
 
 Version 1.9.17
 - Fix error on catching quest fish (Curse #361)

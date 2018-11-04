@@ -1350,7 +1350,7 @@ FishingBuddy.Commands[FBConstants.FISHINGMODE].func =
         if(what and what == "stop") then
             StopFishingMode();
         else
-            StartFishingMode();
+            autopoleframe:Show();
         end
 
         if (FishingBuddy.GetSettingBool("CreateMacro")) then

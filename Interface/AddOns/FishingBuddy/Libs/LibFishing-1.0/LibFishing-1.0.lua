@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 91009
+local MINOR_VERSION = 91010
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -1829,8 +1829,9 @@ function FishLib:CreateSAButton()
         btn:RegisterForClicks(nil);
         btn:Show();
 
-        holder:SetPoint("LEFT", UIParent, "RIGHT", 10000, 0);
+        holder:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 0);
         holder:SetFrameStrata("LOW");
+        holder:SetFrameLevel(0)
         holder:Hide();
     end
 

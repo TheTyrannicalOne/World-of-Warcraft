@@ -1,4 +1,8 @@
 -- HereBeDragons-Migrate is not supported on WoW 7.x or earlier
+if select(4, GetBuildInfo()) < 80000 then
+    return
+end
+
 local MAJOR, MINOR = "HereBeDragons-Migrate", 2
 assert(LibStub, MAJOR .. " requires LibStub")
 
@@ -505,25 +509,6 @@ MapMigrationData = {
     [885] = { mapFile = "MogushanPalace", [1] = 453, [2] = 454, [3] = 455},
     [467] = { mapFile = "Zangarmarsh", [0] = 102},
 }
-
-function HBDMigrate:GetMigrationData()
-    if not mapFileToIdMap then SetupMigrationData() end
-    local simplemap = {}
-    for id, t in pairs(MapMigrationData) do
-        for floor, uiMapId in pairs(t) do
-            if id and uiMapId and floor == 0 then
-                simplemap[id] = uiMapId
-            end
-        end
-    end
-
-    return {
-        ["mapIdTouiMapId"] = simplemap,
-        ["uiMapIdToIdMap"] = uiMapIdToIdMap,
-        ["mapFileToIdMap"] = mapFileToIdMap,
-        ["MapMigrationData"] = MapMigrationData
-    }
-end
 
 function SetupMigrationData()
     mapFileToIdMap = {}

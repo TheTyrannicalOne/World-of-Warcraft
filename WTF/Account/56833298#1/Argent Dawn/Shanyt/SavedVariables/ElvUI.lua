@@ -23,116 +23,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"Barrage on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2525, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1540009759,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [1]
-		{
-			"Barrage on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2533, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1540009793,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"Barrage on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2545, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1540009820,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"Barrage on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2548, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1540009825,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [4]
-		{
-			"grats name", -- [1]
-			"Hypnos-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2564, -- [11]
-			"Player-75-036AB6D6", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc41e3aHypnos|r",
-			[51] = 1540009863,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [5]
-		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
 			"", -- [3]
@@ -153,7 +43,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1540009881,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [6]
+		}, -- [1]
 		{
 			"Rune of Destruction on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -175,7 +65,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540009951,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
+		}, -- [2]
 		{
 			"Rune of Destruction on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -197,7 +87,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010029,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
+		}, -- [3]
 		{
 			"Arcane Volatility on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -219,7 +109,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010536,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
+		}, -- [4]
 		{
 			"Arcane Volatility on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -241,7 +131,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010537,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [10]
+		}, -- [5]
 		{
 			"Arcane Volatility on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -263,7 +153,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010537,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [11]
+		}, -- [6]
 		{
 			"Expel Magic: Fel on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -285,7 +175,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010663,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [12]
+		}, -- [7]
 		{
 			"Suppression Field on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -307,7 +197,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010671,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [13]
+		}, -- [8]
 		{
 			"Branded on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -329,7 +219,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010852,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [14]
+		}, -- [9]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -351,7 +241,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010873,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [15]
+		}, -- [10]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -373,7 +263,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010890,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [16]
+		}, -- [11]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -395,7 +285,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540010957,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [17]
+		}, -- [12]
 		{
 			"Branded on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -417,7 +307,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540011028,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [18]
+		}, -- [13]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -439,7 +329,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1540011270,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [19]
+		}, -- [14]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -461,7 +351,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1540011364,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [20]
+		}, -- [15]
 		{
 			"GRATZ, A turtle made it to the water", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -483,7 +373,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1540011403,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [21]
+		}, -- [16]
 		{
 			"Barrage on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -505,7 +395,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540011785,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [22]
+		}, -- [17]
 		{
 			"Barrage on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -527,7 +417,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540011815,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
+		}, -- [18]
 		{
 			"Barrage on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -549,7 +439,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540011854,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [24]
+		}, -- [19]
 		{
 			"Arcane Volatility on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -571,7 +461,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540011957,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [25]
+		}, -- [20]
 		{
 			"Branded on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -593,7 +483,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540012212,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [26]
+		}, -- [21]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -615,7 +505,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540012226,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [27]
+		}, -- [22]
 		{
 			"Barrage on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -637,7 +527,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540012812,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [28]
+		}, -- [23]
 		{
 			"Barrage on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -659,7 +549,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540012841,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [29]
+		}, -- [24]
 		{
 			"Barrage on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -681,7 +571,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540012880,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [30]
+		}, -- [25]
 		{
 			"Branded on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -703,7 +593,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540013226,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [31]
+		}, -- [26]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -725,7 +615,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540013240,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [32]
+		}, -- [27]
 		{
 			"Fixate on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -747,7 +637,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540014779,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
+		}, -- [28]
 		{
 			"Stormcloud on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -769,7 +659,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540048362,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
+		}, -- [29]
 		{
 			"howdy", -- [1]
 			"Inbauls-TheScryers", -- [2]
@@ -791,7 +681,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Inbauls|r",
 			[51] = 1540053251,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [35]
+		}, -- [30]
 		{
 			"hi", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -813,7 +703,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1540053263,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [36]
+		}, -- [31]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -835,7 +725,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540054256,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [37]
+		}, -- [32]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -857,7 +747,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540054279,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [38]
+		}, -- [33]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -879,7 +769,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540054300,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
+		}, -- [34]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -901,7 +791,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540054325,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
+		}, -- [35]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -923,7 +813,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540054345,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
+		}, -- [36]
 		{
 			"Gratz", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
@@ -945,7 +835,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1540348640,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [42]
+		}, -- [37]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -967,7 +857,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1540348642,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [43]
+		}, -- [38]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -989,7 +879,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1540348893,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [44]
+		}, -- [39]
 		{
 			"Gratz", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
@@ -1011,7 +901,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1540348895,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [45]
+		}, -- [40]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1033,7 +923,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1540348900,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [46]
+		}, -- [41]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1055,7 +945,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1540348918,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [47]
+		}, -- [42]
 		{
 			"Gratz", -- [1]
 			"Ozzypontiff-ArgentDawn", -- [2]
@@ -1077,7 +967,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffOzzypontiff|r",
 			[51] = 1540348918,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [48]
+		}, -- [43]
 		{
 			"Heya", -- [1]
 			"Scratchpost-ArgentDawn", -- [2]
@@ -1099,7 +989,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edScratchpost|r",
 			[51] = 1540349069,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
+		}, -- [44]
 		{
 			"Hello.", -- [1]
 			"Vilaria-Icecrown", -- [2]
@@ -1121,7 +1011,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaVilaria-Icecrown|r",
 			[51] = 1540349080,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
+		}, -- [45]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -1143,7 +1033,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1540350076,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [51]
+		}, -- [46]
 		{
 			"lol thanks", -- [1]
 			"Thunderwhere-TheScryers", -- [2]
@@ -1165,7 +1055,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddThunderwhere|r",
 			[51] = 1540350081,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [52]
+		}, -- [47]
 		{
 			"for the 200th time", -- [1]
 			"Thunderwhere-TheScryers", -- [2]
@@ -1187,7 +1077,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddThunderwhere|r",
 			[51] = 1540350091,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [53]
+		}, -- [48]
 		{
 			"wait, actually, probably more than that", -- [1]
 			"Thunderwhere-TheScryers", -- [2]
@@ -1209,7 +1099,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddThunderwhere|r",
 			[51] = 1540350099,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [54]
+		}, -- [49]
 		{
 			"grats", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -1231,7 +1121,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1540351114,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [55]
+		}, -- [50]
 		{
 			"GRATZ, A turtle made it to the water", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1253,7 +1143,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1540531926,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [56]
+		}, -- [51]
 		{
 			"lol ty", -- [1]
 			"Thunderwhere-TheScryers", -- [2]
@@ -1275,7 +1165,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddThunderwhere|r",
 			[51] = 1540531936,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [57]
+		}, -- [52]
 		{
 			"trying to figure out...why aren't all my appearances from other servers showing up here?", -- [1]
 			"Thunderwhere-TheScryers", -- [2]
@@ -1297,7 +1187,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddThunderwhere|r",
 			[51] = 1540532468,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [58]
+		}, -- [53]
 		{
 			"GRATZ, A turtle made it to the water", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -1319,7 +1209,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1540533351,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [59]
+		}, -- [54]
 		{
 			"ty", -- [1]
 			"Thunderwhere-TheScryers", -- [2]
@@ -1341,7 +1231,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddThunderwhere|r",
 			[51] = 1540533385,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [60]
+		}, -- [55]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1363,7 +1253,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794138,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [56]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1385,7 +1275,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794242,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [57]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1407,7 +1297,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794279,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [58]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1429,7 +1319,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794324,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [59]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1451,7 +1341,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794389,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [60]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1473,7 +1363,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794401,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [61]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1495,7 +1385,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794658,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [62]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1517,7 +1407,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794744,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [68]
+		}, -- [63]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1539,7 +1429,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794781,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [64]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1561,7 +1451,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794827,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [65]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1583,7 +1473,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794891,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [66]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1605,7 +1495,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794903,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [67]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1627,7 +1517,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540794995,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [68]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1649,7 +1539,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795033,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [69]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1671,7 +1561,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795078,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [70]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1693,7 +1583,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795142,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [71]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1715,7 +1605,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795155,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [72]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1737,7 +1627,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795246,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [73]
 		{
 			"WTs Mythic +10 weekly rewards. lvl380+ rewards. Run now//Herico Uldir 8/8 person loot full clear //Full gears.   ///Fast PL //Gear Up .<<<<Vist www.bank4dh.com>>> Code :Card", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1759,7 +1649,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795284,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [74]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1781,7 +1671,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795330,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [75]
 		{
 			"Wts Lvl350-Lvl361 Full Boe Classpackage// Lvl350-395 Ring//Trinket//Hands//Wrist//{Mecha-Mogul Mk2}$99  {Reins of the Mighty Caravan Brutosaur}$459 {Ashes of Al'ar}$199  More mounts for sale.<<<<Vist www.bank4dh.com>>> Code :Card/2 WTs Mythic +10 weekly r", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1803,7 +1693,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540795393,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [76]
 		{
 			"Horseman rise...", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1825,7 +1715,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540874164,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [82]
+		}, -- [77]
 		{
 			"Your time is nigh...", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1847,7 +1737,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540874166,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [83]
+		}, -- [78]
 		{
 			"You felt death once...", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1869,7 +1759,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540874168,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [84]
+		}, -- [79]
 		{
 			"Now, know demise!", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1891,7 +1781,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1540874171,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [85]
+		}, -- [80]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1913,7 +1803,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540968349,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [81]
 		{
 			"Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear up>><<Cheap Trade goods>> <<www.bank4dh.com>><<Use code:Card  then will get 30days game time card as bounes>>", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1935,7 +1825,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540968600,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [82]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1957,7 +1847,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540968779,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [83]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -1979,7 +1869,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540968851,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [84]
 		{
 			"Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear up>><<Cheap Trade goods>> <<www.bank4dh.com>><<Use code:Card  then will get 30days game time card as bounes>>", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2001,7 +1891,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969030,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [85]
 		{
 			"Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear up>><<Cheap Trade goods>> <<www.bank4dh.com>><<Use code:Card  then will get 30days game time card as bounes>>", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2023,7 +1913,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969102,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [86]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2045,7 +1935,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969281,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [87]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2067,7 +1957,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969353,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [88]
 		{
 			"Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear up>><<Cheap Trade goods>> <<www.bank4dh.com>><<Use code:Card  then will get 30days game time card as bounes>>", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2089,7 +1979,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969532,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [89]
 		{
 			"Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear up>><<Cheap Trade goods>> <<www.bank4dh.com>><<Use code:Card  then will get 30days game time card as bounes>>", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2111,7 +2001,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969605,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [90]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2133,7 +2023,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969784,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [91]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2155,7 +2045,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540969856,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [92]
 		{
 			"Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear up>><<Cheap Trade goods>> <<www.bank4dh.com>><<Use code:Card  then will get 30days game time card as bounes>>", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2177,7 +2067,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540970034,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [93]
 		{
 			"Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear up>><<Cheap Trade goods>> <<www.bank4dh.com>><<Use code:Card  then will get 30days game time card as bounes>>", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2199,7 +2089,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540970107,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
+		}, -- [94]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2221,7 +2111,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540970860,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [100]
+		}, -- [95]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2243,7 +2133,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540972236,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [101]
+		}, -- [96]
 		{
 			"Wts Mythic +10 Weekly rewards.Vip party+lvl380 rewards.<<Hot Uldir Runs now>><<Use code:Card  then will get 30days game time card as bounes>><<www.bank4dh.com>>/2 Wts <<Boe Lvl370+Ring//Trinket>><<Lvl395 Hands//Wrist>><<Full BOE Class Set>><<Fast PL& Gear", -- [1]
 			"Sulltar-TheScryers", -- [2]
@@ -2265,7 +2155,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSulltar-TheScryers|r",
 			[51] = 1540972367,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [97]
 		{
 			"Stormcloud on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2287,7 +2177,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1541038408,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [98]
 		{
 			"since they've made the scaled level zones and dungeons, it's kinda hard to farm low lvl greens now :(", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2309,7 +2199,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133505,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [104]
+		}, -- [99]
 		{
 			"unless anyone has any ideas about it?", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2331,7 +2221,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133515,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [105]
+		}, -- [100]
 		{
 			"i guess lvl another char lol", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2353,7 +2243,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133534,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [106]
+		}, -- [101]
 		{
 			"dungeons I thing?", -- [1]
 			"Saleness-ArgentDawn", -- [2]
@@ -2375,7 +2265,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Saleness|r",
 			[51] = 1541133559,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [107]
+		}, -- [102]
 		{
 			"think", -- [1]
 			"Saleness-ArgentDawn", -- [2]
@@ -2397,7 +2287,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Saleness|r",
 			[51] = 1541133561,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [108]
+		}, -- [103]
 		{
 			"i tried running low level ones without queuing, everything scaled up to my level", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2419,7 +2309,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133579,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [109]
+		}, -- [104]
 		{
 			"I know there are guides on ythe youtubes", -- [1]
 			"Saleness-ArgentDawn", -- [2]
@@ -2441,7 +2331,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Saleness|r",
 			[51] = 1541133579,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [110]
+		}, -- [105]
 		{
 			"yeah, i'll use the google", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2463,7 +2353,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133588,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [111]
+		}, -- [106]
 		{
 			"oh i didn't even tihnk about the queuing affecting that lol", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2485,7 +2375,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133604,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [112]
+		}, -- [107]
 		{
 			"took me a second to register what you were saying", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2507,7 +2397,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133609,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [113]
+		}, -- [108]
 		{
 			"yeah", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2529,7 +2419,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133612,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [114]
+		}, -- [109]
 		{
 			"scaling i mean", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2551,7 +2441,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133616,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [115]
+		}, -- [110]
 		{
 			"scaling eh?", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -2573,7 +2463,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1541133631,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [116]
+		}, -- [111]
 		{
 			"Sounds fishy", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -2595,7 +2485,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1541133634,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [117]
+		}, -- [112]
 		{
 			"=O", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2617,7 +2507,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133644,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [118]
+		}, -- [113]
 		{
 			"what do you need low level greens for?", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2639,7 +2529,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133648,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [119]
+		}, -- [114]
 		{
 			"><", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2661,7 +2551,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133650,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [120]
+		}, -- [115]
 		{
 			"the only other thing i can think is havign profs make them", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2683,7 +2573,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133654,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [121]
+		}, -- [116]
 		{
 			"enchanting", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2705,7 +2595,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133656,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [122]
+		}, -- [117]
 		{
 			"would need to find a tailor then", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2727,7 +2617,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133666,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [123]
+		}, -- [118]
 		{
 			"and have them make lowbie stuff", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2749,7 +2639,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133669,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [124]
+		}, -- [119]
 		{
 			"probably work the same for a lw or bs or whatever too", -- [1]
 			"Schrodingerr-TheScryers", -- [2]
@@ -2771,7 +2661,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Schrodingerr|r",
 			[51] = 1541133682,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [125]
+		}, -- [120]
 		{
 			"yeah...i've got a max wod tailor on other server too", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2793,7 +2683,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133692,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [126]
+		}, -- [121]
 		{
 			"yeah, my hunter is almost max level, guess i could look at leather prices", -- [1]
 			"Layonhooves-TheScryers", -- [2]
@@ -2814,6 +2704,118 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cfff48cbaLayonhooves|r",
 			[51] = 1541133705,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [122]
+		{
+			"grats name", -- [1]
+			"Fartherin-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			17, -- [11]
+			"Player-75-03E44F95", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffFartherin|r",
+			[51] = 1541214547,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [123]
+		{
+			"GRATZ, A turtle made it to the water", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			49, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1541214582,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [124]
+		{
+			"crackaaaaa", -- [1]
+			"|Kf1|k000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2752, -- [11]
+			false, -- [12]
+			4, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Yak|r",
+			[51] = 1541228561,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "Yak",
+		}, -- [125]
+		{
+			"you get them dogs under control captain?", -- [1]
+			"|Kf1|k000|k", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2930, -- [11]
+			false, -- [12]
+			4, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Yak|r",
+			[51] = 1541228835,
+			[50] = "CHAT_MSG_BN_WHISPER",
+			[53] = "Yak",
+		}, -- [126]
+		{
+			"GRATZ, A turtle made it to the water", -- [1]
+			"Daniela-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			893, -- [11]
+			"Player-75-0B46B98A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1541305712,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},
