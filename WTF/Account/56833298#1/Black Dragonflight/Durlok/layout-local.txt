@@ -1,4 +1,11 @@
 Version: 1
+Frame: AAP_AFkFrames
+FrameLevel: 1
+Anchor: TOP
+X: 250
+Y: 1
+W: 120
+H: 40
 Frame: GuildBankItemTooltipMover
 FrameLevel: 2
 Anchor: TOP
@@ -48,10 +55,3 @@ X: 0
 Y: -100
 W: 130
 H: 20
-Frame: AAP_AFkFrames
-FrameLevel: 1
-Anchor: TOP
-X: 250
-Y: 1
-W: 120
-H: 40

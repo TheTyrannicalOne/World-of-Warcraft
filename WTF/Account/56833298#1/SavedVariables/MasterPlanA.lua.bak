@@ -1,53 +1,47 @@
 
 MasterPlanAG = {
-	["IgnoreRewards"] = {
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["class"] = "DRUID",
-			["faction"] = "Horde",
-		},
-	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
 			["summary"] = {
-				["lastOilTime"] = 1541305487,
-				["inProgress"] = {
-					[456] = 1541334230,
-					[262] = 1541319864,
-					[736] = 1541307290,
-					[186] = 1541309046,
-					[214] = 1541312644,
-					[128] = 1541319860,
-					[726] = 1541307291,
-					[311] = 1541327037,
-					[739] = 1541307288,
-					[379] = 1541334262,
-					[276] = 1541323472,
-				},
-				["ti3"] = 127854,
-				["ti2"] = 122486,
-				["tt1"] = 1541205891,
-				["ti1"] = 118531,
-				["tt3"] = 1541136136,
+				["lastOilTime"] = 1541349402,
 				["tt2"] = 1541308390,
+				["tt3"] = 1541136136,
+				["ti1"] = 118531,
+				["tt1"] = 1541205891,
+				["ti3"] = 127854,
+				["inProgress"] = {
+					[539] = 1541414212,
+					[334] = 1541417210,
+					[391] = 1541402345,
+					[745] = 1541414202,
+					[665] = 1541384804,
+				},
+				["ti2"] = 122486,
 			},
-			["curOil"] = 62960,
+			["curOil"] = 62655,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1541305505,
-			["curRes"] = 7741,
+			["lastCacheTime"] = 1541381237,
+			["curRes"] = 2440,
 			["faction"] = "Horde",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Zul'jin"] = {
 		["Vancard"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
 		["Shanyt"] = {
 			["class"] = "WARRIOR",
 			["faction"] = "Horde",
 		},
+	},
+	["IgnoreRewards"] = {
 	},
 }
