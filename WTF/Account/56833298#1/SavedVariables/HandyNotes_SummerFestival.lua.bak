@@ -1,10 +1,10 @@
 
 HandyNotes_SummerFestivalDB = {
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

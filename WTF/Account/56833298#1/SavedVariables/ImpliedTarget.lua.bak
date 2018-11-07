@@ -1,12 +1,12 @@
 
 ImpliedTargetSettings = {
+	["version"] = "1.3.12",
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
-	["version"] = "1.3.12",
 	["profiles"] = {
 		["Default"] = {
 		},

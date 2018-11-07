@@ -1,19 +1,19 @@
 
 HandyNotes_WarfrontTreasuresDB = {
 	["profileKeys"] = {
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
-		["Shanyt - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 		["Vancard - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Durlok - Black Dragonflight"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 	},
 }

@@ -1,10 +1,10 @@
 
 HandyNotes_LunarFestivalDB = {
 	["profileKeys"] = {
-		["Shanyt - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
+		["Shanyt - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

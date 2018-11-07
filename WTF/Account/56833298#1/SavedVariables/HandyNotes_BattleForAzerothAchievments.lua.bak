@@ -1,19 +1,19 @@
 
 HandyNotes_BattleForAzerothAchievmentsDB = {
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 	},
 	["profiles"] = {
-		["Durlok - Black Dragonflight"] = {
+		["Shanyt - Zul'jin"] = {
 		},
 		["Vancard - Zul'jin"] = {
 		},
 		["Shanyt - Argent Dawn"] = {
 		},
-		["Shanyt - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 		},
 	},
 }
