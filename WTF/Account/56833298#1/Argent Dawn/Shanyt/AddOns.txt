@@ -25,3 +25,4 @@ HandyNotes_Achievements: disabled
 ImpliedTarget_ElvUI: enabled
 BigWigs_Cataclysm: enabled
 BigWigs_WrathOfTheLichKing: enabled
+ImpliedTarget_Config: disabled

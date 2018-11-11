@@ -7,3 +7,7 @@ HandyNotes_Argus: enabled
 HandyNotes_Achievements: disabled
 ImpliedTarget_ElvUI: enabled
 ElvUI_LocLite: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+ElvUI_EverySecondCounts: disabled
