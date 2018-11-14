@@ -355,68 +355,7 @@ local function CastAndThrow()
 end
 FishingBuddy.CastAndThrow = CastAndThrow
 
--- Dalaran coin lures
-local CoinLures = {};
-local function CanUseCoinLure()
-    return CanUseFishingItems("DalaranLures", CoinLures);
-end
 
-CoinLures[138956] = {
-    ["enUS"] = "Hypermagnetic Lure",
-    setting = "DalaranLures",
-    spell = 217835,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
-CoinLures[138959] = {
-    ["enUS"] = "Micro-Vortex Generator",
-    setting = "DalaranLures",
-    spell = 217838,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
-CoinLures[138961] = {
-    ["enUS"] = "Alchemical Bonding Agent",
-    setting = "DalaranLures",
-    spell = 217840,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
-CoinLures[138962] = {
-    ["enUS"] = "Starfish on a String",
-    setting = "DalaranLures",
-    spell = 217842,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
-CoinLures[138957] = {
-    ["enUS"] = "Auriphagic Sardine",
-    setting = "DalaranLures",
-    spell = 217836,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
-CoinLures[138960] = {
-    ["enUS"] = "Wish Crystal",
-    setting = "DalaranLures",
-    spell = 217839,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
-CoinLures[138963] = {
-    ["enUS"] = "Tiny Little Grabbing Apparatus",
-    setting = "DalaranLures",
-    spell = 217844,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
-CoinLures[138958] = {
-    ["enUS"] = "Glob of Really Sticky Glue",
-    setting = "DalaranLures",
-    spell = 217837,
-    usable = CanUseCoinLure,
-    ignore = true,
-};
 
 FishingBuddy.FishingItems = FishingItems;
 
@@ -536,8 +475,6 @@ FluffEvents["VARIABLES_LOADED"] = function(started)
     for id,info in pairs(FishingItems) do
         SetupSpecialItem(id, info);
     end
-
-    SetupSpecialItems(CoinLures);
     SetupSpecialItems(LevelingItems, false, true, true);
 end
 

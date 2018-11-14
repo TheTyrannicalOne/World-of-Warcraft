@@ -200,14 +200,9 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 9,
-			["yOffset"] = 115.00012207031,
+			["borderOffset"] = 5,
 			["selfPoint"] = "BOTTOMLEFT",
 			["id"] = "The Postmaster",
-			["borderOffset"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 11.000122070312,
-			["borderInset"] = 11,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -222,6 +217,11 @@ WeakAurasSaved = {
 					["type"] = "none",
 				},
 			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["yOffset"] = 115.00012207031,
+			["borderInset"] = 11,
+			["regionType"] = "group",
 			["expanded"] = false,
 			["conditions"] = {
 			},
@@ -272,7 +272,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["regionType"] = "group",
+			["xOffset"] = 11.000122070312,
 		},
 		["Outland"] = {
 			["outline"] = "OUTLINE",
@@ -955,9 +955,9 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 		},
 	},
-	["login_squelch_time"] = 10,
 	["registered"] = {
 	},
+	["login_squelch_time"] = 10,
 	["editor_theme"] = "Monokai",
 	["minimap"] = {
 		["hide"] = false,

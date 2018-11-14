@@ -4,5 +4,6 @@
 	<Include file="Pets.xml" />
 	<Include file="Rafts.lua" />
 	<Include file="Items.lua" />
+	<Include file="Coins.lua" />
 	<Include file="Baits.lua" />
 </Ui>

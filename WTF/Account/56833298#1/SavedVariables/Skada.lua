@@ -24,13 +24,16 @@ SkadaDB = {
 				["Healing taken"] = 1,
 				["DPS"] = 3,
 			},
+			["versions"] = {
+				["1.6.3"] = true,
+				["1.6.4"] = true,
+				["1.6.7"] = true,
+			},
+			["icon"] = {
+				["hide"] = true,
+			},
 			["windows"] = {
 				{
-					["barslocked"] = true,
-					["modeincombat"] = "Damage",
-					["set"] = "total",
-					["y"] = 20.8333263397217,
-					["barfont"] = "PT Sans Narrow",
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -41,17 +44,22 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
+					["point"] = "BOTTOMRIGHT",
+					["set"] = "total",
+					["barwidth"] = 224.999923706055,
 					["background"] = {
 						["height"] = 158.166625976563,
 					},
-					["point"] = "BOTTOMRIGHT",
+					["modeincombat"] = "Damage",
+					["barfont"] = "PT Sans Narrow",
+					["y"] = 20.8333263397217,
+					["x"] = -0.833251953125,
+					["name"] = "Damage",
 					["roleicons"] = true,
+					["barslocked"] = true,
 					["mode"] = "DPS",
 					["spark"] = false,
 					["bartexture"] = "BuiOnePixel",
-					["barwidth"] = 224.999923706055,
-					["x"] = -0.833251953125,
-					["name"] = "Damage",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -135,14 +143,6 @@ SkadaDB = {
 					["x"] = -226.003051757813,
 					["mode"] = "Healing",
 				}, -- [2]
-			},
-			["icon"] = {
-				["hide"] = true,
-			},
-			["versions"] = {
-				["1.6.3"] = true,
-				["1.6.4"] = true,
-				["1.6.7"] = true,
 			},
 		},
 		["Default"] = {
@@ -178,31 +178,11 @@ SkadaDB = {
 				["Healing taken"] = 1,
 				["DPS"] = 3,
 			},
-			["versions"] = {
-				["1.6.7"] = true,
-				["1.6.4"] = true,
-				["1.6.3"] = true,
-			},
-			["icon"] = {
-				["hide"] = true,
-			},
 			["windows"] = {
 				{
-					["point"] = "BOTTOMRIGHT",
-					["bartexture"] = "BuiOnePixel",
-					["barwidth"] = 224.999923706055,
-					["name"] = "Damage",
-					["modeincombat"] = "Damage",
-					["x"] = -0.833251953125,
+					["barslocked"] = true,
 					["y"] = 20.8333263397217,
 					["barfont"] = "PT Sans Narrow",
-					["barslocked"] = true,
-					["roleicons"] = true,
-					["spark"] = false,
-					["background"] = {
-						["height"] = 158.166625976563,
-					},
-					["mode"] = "Damage",
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -213,6 +193,18 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
+					["background"] = {
+						["height"] = 158.166625976563,
+					},
+					["point"] = "BOTTOMRIGHT",
+					["roleicons"] = true,
+					["mode"] = "Damage",
+					["spark"] = false,
+					["bartexture"] = "BuiOnePixel",
+					["barwidth"] = 224.999923706055,
+					["modeincombat"] = "Damage",
+					["x"] = -0.833251953125,
+					["name"] = "Damage",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -297,6 +289,14 @@ SkadaDB = {
 					["name"] = "Healing",
 				}, -- [2]
 			},
+			["icon"] = {
+				["hide"] = true,
+			},
+			["versions"] = {
+				["1.6.7"] = true,
+				["1.6.4"] = true,
+				["1.6.3"] = true,
+			},
 		},
 		["Darth Eng"] = {
 			["modeclicks"] = {
@@ -323,11 +323,9 @@ SkadaDB = {
 					["background"] = {
 						["height"] = 158.166625976563,
 					},
-					["barslocked"] = true,
+					["name"] = "Damage",
 					["y"] = 20.8333263397217,
 					["barfont"] = "PT Sans Narrow",
-					["name"] = "Damage",
-					["roleicons"] = true,
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -338,6 +336,8 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
+					["roleicons"] = true,
+					["barslocked"] = true,
 					["modeincombat"] = "Damage",
 					["spark"] = false,
 					["bartexture"] = "BuiOnePixel",
@@ -447,10 +447,6 @@ SkadaDB = {
 					["background"] = {
 						["height"] = 178.999862670898,
 					},
-					["name"] = "Damage",
-					["mode"] = "Damage",
-					["y"] = 0,
-					["x"] = 0,
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -461,10 +457,14 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
+					["mode"] = "Damage",
+					["y"] = 0,
+					["x"] = 0,
+					["barslocked"] = true,
 					["roleicons"] = true,
 					["spark"] = false,
 					["modeincombat"] = "Damage",
-					["barslocked"] = true,
+					["name"] = "Damage",
 					["barfont"] = "PT Sans Narrow",
 				}, -- [1]
 				{

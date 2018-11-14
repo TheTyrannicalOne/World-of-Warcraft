@@ -1,4 +1,9 @@
-﻿Version 1.9.20
+﻿Version 1.9.21
+- Add option to hide trash fish in watcher
+- More code improvements
+- Update HereBeDragons library
+
+Version 1.9.20
 - Attempt to fix the "crash while resizing" issue
 - Make the watcher window stay around when using the macro
 

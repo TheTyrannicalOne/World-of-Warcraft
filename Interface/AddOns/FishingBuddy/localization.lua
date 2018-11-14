@@ -130,6 +130,8 @@ FishingTranslations["enUS"] = {
     CONFIG_FISHWATCHWORLD_INFO   = "Display available world quests.",
     CONFIG_FISHWATCHCURRENT_ONOFF = "Current fish only",
     CONFIG_FISHWATCHCURRENT_INFO = "Display only the fish caught in the current session.",
+    CONFIG_FISHWATCHTRASH_ONOFF   = "Hide Trash",
+    CONFIG_FISHWATCHTRASH_INFO    = "Don't display trash items.",
 
     CONFIG_HANDLEQUESTS_ONOFF    = "Handle quests",
     CONFIG_HANDLEQUESTS_INFO     = "If enabled, handle fishing quests and reputation automatically,",

@@ -1761,5 +1761,27 @@ ElvCharacterDB = {
 			[51] = 1541304009,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [79]
+		{
+			"TOP Guild is selling Heroic Uldir and G'huun kills! Get your Ahead of the Curve today! Also doing Mythic+ carries. /w for info", -- [1]
+			"Qunorduri-Skullcrusher", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Qunorduri-Skullcrusher", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			230, -- [11]
+			"Player-74-0BD4846E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff8787edQunorduri-Skullcrusher|r",
+			[51] = 1541899693,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [80]
 	},
 }
