@@ -9,10 +9,10 @@ BigWigs3DB = {
 			[-557] = true,
 			[-593] = {
 			},
-			[-612] = true,
-			[-563] = true,
 			[-367] = true,
+			[-563] = true,
 			[-567] = true,
+			[-612] = true,
 			[75] = true,
 			[76] = true,
 			[-573] = true,
@@ -34,21 +34,11 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Bosses_Asaad"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Bosses_Lockmaw"] = {
-		},
 		["BigWigs_Plugins_AutoReply"] = {
-		},
-		["BigWigs_Bosses_Altairus"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Bosses_Siamat"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -66,8 +56,6 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_High Prophet Barim"] = {
-		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -75,13 +63,20 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_Nalak"] = {
+		},
 		["BigWigs_Plugins_Wipe"] = {
 		},
-		["BigWigs_Bosses_Temple Guardian Anhuur"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Bosses_Grand Vizier Ertan"] = {
+		["BigWigs_Bosses_Salyis's Warband"] = {
 		},
-		["BigWigs_Bosses_General Husam"] = {
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -92,16 +87,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
+		["BigWigs_Plugins_Statistics"] = {
 		},
 	},
 	["wipe80"] = true,

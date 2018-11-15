@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.0.13 (10th October 2018, www.leatrix.com)
+-- 	Leatrix Plus 8.0.14 (14th November 2018, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,14 +20,16 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.0.13"
-	LeaPlusLC["RestartReq"] = nil
+	LeaPlusLC["AddonVer"] = "8.0.14"
+	LeaPlusLC["RestartReq"] = true
 
 --	If client restart is required and has not been done, show warning and quit
 	if LeaPlusLC["RestartReq"] then
 		local metaVer = GetAddOnMetadata("Leatrix_Plus", "Version")
 		if metaVer and metaVer ~= LeaPlusLC["AddonVer"] then
-			print("NOTICE!|nYou must fully restart your game client before you can use this version of Leatrix Plus.")
+			C_Timer.After(1, function()
+				print("NOTICE!|nYou must fully restart your game client before you can use this version of Leatrix Plus.")
+			end)
 			return
 		end
 	end
@@ -456,7 +458,6 @@
 		or	(LeaPlusLC["LockoutSharing"]		~= LeaPlusDB["LockoutSharing"])			-- Lockout sharing
 
 		-- Settings
-		or	(LeaPlusLC["ShowMinimapIcon"]		~= LeaPlusDB["ShowMinimapIcon"])		-- Show minimap button
 		or	(LeaPlusLC["EnableHotkey"]			~= LeaPlusDB["EnableHotkey"])			-- Enable hotkey
 
 		then
@@ -2904,10 +2905,10 @@
 		end
 
 		----------------------------------------------------------------------
-		--	Minimap button
+		-- Minimap button (no reload required)
 		----------------------------------------------------------------------
 
-		if LeaPlusLC["ShowMinimapIcon"] == "On" then
+		do
 
 			-- Minimap button click function
 			local function MiniBtnClickFunc(arg1)
@@ -2996,7 +2997,7 @@
 						LeaPlusLC:HideFrames()
 						LeaPlusLC["PageF"]:Show()
 					end
-					LeaPlusLC["Page"..LeaPlusLC["LeaStartPage"]]:Show()
+					LeaPlusLC["Page" .. LeaPlusLC["LeaStartPage"]]:Show()
 
 				end
 
@@ -3026,79 +3027,18 @@
 				local icon = LibStub("LibDBIcon-1.0", true)
 				icon:Register("Leatrix_Plus", miniButton, LeaPlusDB)
 
-			else
-
-				-- LibDBIcon is not being used so create proprietary button
-				local minibtn = CreateFrame("Button", nil, Minimap)
-
-				minibtn:SetFrameStrata("MEDIUM")
-				minibtn:SetFrameLevel(8)
-				minibtn:SetSize(31, 31)
-				minibtn:RegisterForClicks("AnyUp")
-				minibtn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
-				minibtn:SetMovable(true)
-
-				minibtn.o = minibtn:CreateTexture(nil, "OVERLAY")
-				minibtn.o:SetSize(53, 53)
-				minibtn.o:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
-				minibtn.o:SetPoint("TOPLEFT")
-
-				minibtn.b = minibtn:CreateTexture(nil, "BACKGROUND")
-				minibtn.b:SetSize(20, 20)
-				minibtn.b:SetTexture("Interface\\Minimap\\UI-Minimap-Background")
-				minibtn.b:SetPoint("TOPLEFT", 7, -5)
-
-				minibtn.i = minibtn:CreateTexture(nil, "ARTWORK")
-				minibtn.i:SetSize(20, 20)
-				minibtn.i:SetTexture("Interface\\HELPFRAME\\ReportLagIcon-Movement.png")
-				minibtn.i:SetPoint("CENTER", 0, 0)
-
-				minibtn:HookScript("OnMouseDown", function() minibtn.i:SetSize(18, 18) end)
-				minibtn:HookScript("OnMouseUp", function() minibtn.i:SetSize(20, 20) end)
-
-				-- Minimap buton tooltip
-				minibtn:SetScript("OnEnter", function()
-					GameTooltip:SetOwner(minibtn, "ANCHOR_NONE")
-					local x, y = minibtn:GetCenter()
-					local hhalf = (x > UIParent:GetWidth() * 2 / 3) and "RIGHT" or (x < UIParent:GetWidth()/3) and "LEFT" or ""
-					local vhalf = (y > UIParent:GetHeight() / 2) and "TOP" or "BOTTOM"
-					GameTooltip:ClearAllPoints()
-					GameTooltip:SetPoint(vhalf .. hhalf, minibtn, (vhalf == "TOP" and "BOTTOM" or "TOP") .. hhalf)
-					GameTooltip:SetText("Leatrix Plus", nil, nil, nil, nil, true)
-					GameTooltip:Show()
-				end)
-				minibtn:SetScript("OnLeave", GameTooltip_Hide)
-
-				local function UpdateMapBtn()
-					local Xpoa, Ypoa = GetCursorPosition()
-					local Xmin, Ymin = Minimap:GetLeft(), Minimap:GetBottom()
-					Xpoa = Xmin - Xpoa / Minimap:GetEffectiveScale() + 70
-					Ypoa = Ypoa / Minimap:GetEffectiveScale() - Ymin - 70
-					LeaPlusLC["MinimapIconPos"] = math.deg(math.atan2(Ypoa, Xpoa))
-					minibtn:ClearAllPoints()
-					minibtn:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * cos(LeaPlusLC["MinimapIconPos"])), (80 * sin(LeaPlusLC["MinimapIconPos"])) - 52)
+				-- Function to toggle LibDBIcon
+				local function SetLibDBIconFunc()
+					if LeaPlusLC["ShowMinimapIcon"] == "On" then
+						icon:Show("Leatrix_Plus")
+					else
+						icon:Hide("Leatrix_Plus")
+					end
 				end
 
-				-- Control movement
-				minibtn:RegisterForDrag("LeftButton")
-				minibtn:SetScript("OnDragStart", function()
-					minibtn:StartMoving()
-					minibtn:SetScript("OnUpdate", UpdateMapBtn)
-				end)
-
-				minibtn:SetScript("OnDragStop", function()
-					minibtn:StopMovingOrSizing()
-					minibtn:SetUserPlaced(false)
-					minibtn:SetScript("OnUpdate", nil)
-					UpdateMapBtn()
-				end)
-
-				-- Set position
-				minibtn:ClearAllPoints()
-				minibtn:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * cos(LeaPlusLC["MinimapIconPos"])), (80 * sin(LeaPlusLC["MinimapIconPos"])) - 52)
-
-				-- Control clicks
-				minibtn:SetScript("OnClick", function(self, btn) MiniBtnClickFunc(btn) end)
+				-- Set LibDBIcon when option is clicked and on startup
+				LeaPlusCB["ShowMinimapIcon"]:HookScript("OnClick", SetLibDBIconFunc)
+				SetLibDBIconFunc()
 
 			end
 
@@ -3415,11 +3355,12 @@
 			_G.PlayerFrame_SetLocked = function() LeaPlusLC:Print("Use Leatrix Plus to move that frame.") end
 			_G.TargetFrame_SetLocked = function() LeaPlusLC:Print("Use Leatrix Plus to move that frame.") end
 
-			-- Replace BuffFrame movement function
+			-- Replace specific movement functions
 			local buffSetPos = BuffFrame.SetPoint
+			local powerBatAltSetPos = PlayerPowerBarAlt.SetPoint
 
 			-- Create frame table (used for local traversal)
-			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragGhostFrame = GhostFrame, DragMirrorTimer1 = MirrorTimer1, DragUIWidgetTopCenterContainerFrame = UIWidgetTopCenterContainerFrame, DragBuffFrame = BuffFrame}
+			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragGhostFrame = GhostFrame, DragMirrorTimer1 = MirrorTimer1, DragUIWidgetTopCenterContainerFrame = UIWidgetTopCenterContainerFrame, DragBuffFrame = BuffFrame, DragPlayerPowerBarAlt = PlayerPowerBarAlt}
 
 			-- Create main table structure in saved variables if it doesn't exist
 			if (LeaPlusDB["Frames"]) == nil then
@@ -3456,6 +3397,8 @@
 				frame:ClearAllPoints();
 				if frame:GetName() == "BuffFrame" then
 					buffSetPos(BuffFrame, point, parent, relative, xoff, yoff)
+				elseif frame:GetName() == "PlayerPowerBarAlt" then
+					powerBatAltSetPos(PlayerPowerBarAlt, point, parent, relative, xoff, yoff)
 				else
 					frame:SetPoint(point, parent, relative, xoff, yoff)
 				end
@@ -3469,6 +3412,7 @@
 				LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		, -5, -96)
 				LeaFramesSetPos(UIWidgetTopCenterContainerFrame	, "TOP"		, UIParent, "TOP"		, 0, -15)
 				LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	, -205, -13)
+				LeaFramesSetPos(PlayerPowerBarAlt				, "BOTTOM"	, UIParent, "BOTTOM"	, 0, 115)
 			end
 
 			-- Create configuration panel
@@ -3606,8 +3550,13 @@
 				local dragframe = CreateFrame("Frame", nil);
 				LeaPlusLC[dragframe] = dragframe
 				dragframe:SetSize(realframe:GetSize())
-				dragframe:SetPoint("TOPRIGHT", realframe, "TOPRIGHT", 0, 2.5)
-
+				if realframe:GetName() == "BuffFrame" then
+					dragframe:SetPoint("TOPRIGHT", realframe, "TOPRIGHT", 0, 2.5)
+				elseif realframe:GetName() == "PlayerPowerBarAlt" then
+					dragframe:SetPoint("CENTER", realframe, "CENTER", 0, 1)
+				else
+					dragframe:SetPoint("TOP", realframe, "TOP", 0, 2.5)
+				end
 				dragframe:SetBackdropColor(0.0, 0.5, 1.0);
 				dragframe:SetBackdrop({ 
 					edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -3615,8 +3564,8 @@
 					insets = { left = 0, right = 0, top = 0, bottom = 0 }});
 				dragframe:SetToplevel(true)
 
-				-- Unclamp frame
-				if realframe:GetName() == "BuffFrame" then
+				-- Set frame clamps
+				if realframe:GetName() == "BuffFrame" or realframe:GetName() == "PlayerPowerBarAlt" then
 					realframe:SetClampedToScreen(true)
 				else
 					realframe:SetClampedToScreen(false)
@@ -3666,6 +3615,7 @@
 				if realframe:GetName() == "GhostFrame" 						then dragframe.f:SetText(L["Ghost"]) end
 				if realframe:GetName() == "UIWidgetTopCenterContainerFrame" then dragframe.f:SetText(L["Widget"] .. "|n" .. L["Top Center"]) end
 				if realframe:GetName() == "BuffFrame" 						then dragframe.f:SetText(L["Buffs"]) end
+				if realframe:GetName() == "PlayerPowerBarAlt" 				then dragframe.f:SetText(L["Power"]) end
 				return LeaPlusLC[dragframe]
 
 			end
@@ -3706,6 +3656,14 @@
 				end
 			end)
 
+			-- Prevent changes to player power bar alt frame position
+			hooksecurefunc(PlayerPowerBarAlt, "SetPoint", function()
+				if LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Point"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Relative"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["XOffset"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["YOffset"] then
+					PlayerPowerBarAlt:ClearAllPoints()
+					powerBatAltSetPos(PlayerPowerBarAlt, LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Point"], UIParent, LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Relative"], LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["XOffset"], LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["YOffset"])
+				end
+			end)
+
 			-- Add move button
 			LeaPlusCB["MoveFramesButton"]:SetScript("OnClick", function()
 				if LeaPlusLC:PlayerInCombat() then
@@ -3719,6 +3677,7 @@
 						LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		,	"0"		, "-120")
 						LeaFramesSetPos(UIWidgetTopCenterContainerFrame	, "TOP"		, UIParent, "TOP"		,	"0"		, "-542")
 						LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	,	"-271"	, "0")
+						LeaFramesSetPos(PlayerPowerBarAlt				, "CENTER"	, UIParent, "CENTER"	,	"0"		, "-160")
 						LeaPlusDB["Frames"]["PlayerFrame"]["Scale"] = 1.20;
 						PlayerFrame:SetScale(LeaPlusDB["Frames"]["PlayerFrame"]["Scale"]);
 						LeaPlusLC["DragPlayerFrame"]:SetScale(LeaPlusDB["Frames"]["PlayerFrame"]["Scale"]);
@@ -3728,6 +3687,9 @@
 						LeaPlusDB["Frames"]["BuffFrame"]["Scale"] = 0.80
 						BuffFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
 						LeaPlusLC["DragBuffFrame"]:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"]);
+						LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"] = 1.25
+						PlayerPowerBarAlt:SetScale(LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"])
+						LeaPlusLC["DragPlayerPowerBarAlt"]:SetScale(LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"]);
 						-- Set the slider to the selected frame (if there is one)
 						if currentframe then LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"]); end
 						-- Save locations
@@ -3759,6 +3721,7 @@
 						LeaPlusLC["DragGhostFrame"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"]);
 						LeaPlusLC["DragUIWidgetTopCenterContainerFrame"]:SetSize(160 * LeaPlusLC["gscale"], 79 * LeaPlusLC["gscale"]);
 						LeaPlusLC["DragBuffFrame"]:SetSize(280 * LeaPlusLC["gscale"], 225 * LeaPlusLC["gscale"]);
+						LeaPlusLC["DragPlayerPowerBarAlt"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"]);
 					end
 				end
 			end)
@@ -8674,6 +8637,13 @@
 				LeaPlusDB["Frames"]["BuffFrame"]["YOffset"] = 0
 				LeaPlusDB["Frames"]["BuffFrame"]["Scale"] = 0.80
 
+				LeaPlusDB["Frames"]["PlayerPowerBarAlt"] = {}
+				LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Point"] = "CENTER"
+				LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Relative"] = "CENTER"
+				LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["XOffset"] = 0
+				LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["YOffset"] = -160
+				LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"] = 1.25
+
 				LeaPlusDB["ClassColFrames"] = "On"				-- Class colored frames
 				LeaPlusDB["ShowPlayerChain"] = "On"				-- Show player chain
 				LeaPlusDB["PlayerChainMenu"] = 3				-- Player chain style
@@ -9033,7 +9003,7 @@
 	pg = "Page6";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Features"					, 	146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FrmEnabled"				,	"Manage frames"					, 	146, -92, 	true,	"If checked, you will be able to change the position and scale of the player frame, target frame, buff frame, widget top center frame, ghost frame and timer bar.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FrmEnabled"				,	"Manage frames"					, 	146, -92, 	true,	"If checked, you will be able to change the position and scale of the following frames:|n|n- Player frame|n- Target frame|n- Buffs frame|n- Widget top center frame|n- Ghost frame|n- Timer bar|n- Player power bar")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColFrames"			, 	"Class colored frames"			,	146, -112, 	true,	"If checked, class coloring will be used in the player frame, target frame and focus frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPlayerChain"			, 	"Show player chain"				,	146, -132, 	true,	"If checked, you will be able to show a rare, elite or rare elite chain around the player frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowRaidToggle"			, 	"Raid frame toggle"				,	146, -152, 	true,	"If checked, the button to toggle the raid container frame will be shown just above the raid management frame (left side of the screen) instead of in the raid management frame itself.|n|nThis allows you to toggle the raid container frame without needing to open the raid management frame.")
@@ -9085,7 +9055,7 @@
 	pg = "Page8";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Addon"						, 146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowMinimapIcon"			, "Show minimap button"				, 146, -92,		true,	"If checked, a minimap button will be available.|n|nClick - Toggle options panel.|n|nSHIFT/Left-click - Toggle music.|n|nCTRL/Left-click - Toggle minimap target tracking.|n|nCTRL/Right-click - Toggle errors (if enabled).|n|nCTRL/SHIFT/Left-click - Toggle Zygor (if installed).|n|nCTRL/SHIFT/Right-click - Toggle windowed mode.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowMinimapIcon"			, "Show minimap button"				, 146, -92,		false,	"If checked, a minimap button will be available.|n|nClick - Toggle options panel.|n|nSHIFT/Left-click - Toggle music.|n|nCTRL/Left-click - Toggle minimap target tracking.|n|nCTRL/Right-click - Toggle errors (if enabled).|n|nCTRL/SHIFT/Left-click - Toggle Zygor (if installed).|n|nCTRL/SHIFT/Right-click - Toggle windowed mode.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnableHotkey"				, "Enable hotkey"					, 146, -112,	true,	"If checked, you can open Leatrix Plus by pressing CTRL/Z.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Scale", 340, -72);

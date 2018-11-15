@@ -47,18 +47,18 @@ SkadaDB = {
 					["point"] = "BOTTOMRIGHT",
 					["set"] = "total",
 					["barwidth"] = 224.999923706055,
-					["background"] = {
-						["height"] = 158.166625976563,
-					},
+					["mode"] = "DPS",
 					["modeincombat"] = "Damage",
-					["barfont"] = "PT Sans Narrow",
+					["spark"] = false,
 					["y"] = 20.8333263397217,
-					["x"] = -0.833251953125,
+					["barfont"] = "PT Sans Narrow",
 					["name"] = "Damage",
 					["roleicons"] = true,
 					["barslocked"] = true,
-					["mode"] = "DPS",
-					["spark"] = false,
+					["background"] = {
+						["height"] = 158.166625976563,
+					},
+					["x"] = -0.833251953125,
 					["bartexture"] = "BuiOnePixel",
 				}, -- [1]
 				{
@@ -182,7 +182,7 @@ SkadaDB = {
 				{
 					["barslocked"] = true,
 					["y"] = 20.8333263397217,
-					["barfont"] = "PT Sans Narrow",
+					["x"] = -0.833251953125,
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -203,7 +203,7 @@ SkadaDB = {
 					["bartexture"] = "BuiOnePixel",
 					["barwidth"] = 224.999923706055,
 					["modeincombat"] = "Damage",
-					["x"] = -0.833251953125,
+					["barfont"] = "PT Sans Narrow",
 					["name"] = "Damage",
 				}, -- [1]
 				{
@@ -323,9 +323,11 @@ SkadaDB = {
 					["background"] = {
 						["height"] = 158.166625976563,
 					},
-					["name"] = "Damage",
+					["barslocked"] = true,
 					["y"] = 20.8333263397217,
 					["barfont"] = "PT Sans Narrow",
+					["name"] = "Damage",
+					["roleicons"] = true,
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -336,8 +338,6 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
-					["roleicons"] = true,
-					["barslocked"] = true,
 					["modeincombat"] = "Damage",
 					["spark"] = false,
 					["bartexture"] = "BuiOnePixel",
@@ -447,6 +447,10 @@ SkadaDB = {
 					["background"] = {
 						["height"] = 178.999862670898,
 					},
+					["name"] = "Damage",
+					["mode"] = "Damage",
+					["y"] = 0,
+					["x"] = 0,
 					["title"] = {
 						["color"] = {
 							["a"] = 0.800000011920929,
@@ -457,14 +461,10 @@ SkadaDB = {
 						["font"] = "PT Sans Narrow",
 						["texture"] = "ElvUI Norm",
 					},
-					["mode"] = "Damage",
-					["y"] = 0,
-					["x"] = 0,
-					["barslocked"] = true,
 					["roleicons"] = true,
 					["spark"] = false,
 					["modeincombat"] = "Damage",
-					["name"] = "Damage",
+					["barslocked"] = true,
 					["barfont"] = "PT Sans Narrow",
 				}, -- [1]
 				{
