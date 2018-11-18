@@ -187,6 +187,7 @@ AllTheThings.Locales.enUS = {
 		["Mini World Events"] = GetSpellInfo(57055),
 		["Emissary Quests"] = "Emissary",
 		["World Quests"] = "WQ",
+		["WoW Anniversary"] = "Anniversary",
 		
 	};
 
@@ -331,7 +332,7 @@ AllTheThings.Locales.enUS = {
 		[-55] = "Interface\\Icons\\inv_helmet_66",								-- Pirate's Day",
 		[-56] = "Interface\\Icons\\achievement_worldevent_brewmaster",			-- Brewfest
 		[-57] = "Interface\\Icons\\INV_Holiday_Thanksgiving_Cornucopia", 		-- Harvest Festival
-		[-58] = "Interface\\Addons\\AllTheThings\\assets\\hallows_end",				-- Hallow's End
+		[-58] = "Interface\\Addons\\AllTheThings\\assets\\hallows_end",			-- Hallow's End
 		[-59] = "Interface\\Icons\\inv_misc_bone_humanskull_02",				-- Day of the Dead
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",					-- Pilgrim's Bounty
 		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",			-- The Feast of Winter Veil
@@ -1524,6 +1525,20 @@ AllTheThings.Locales.enUS = {
 		[-5351] = GAMEMENU_BOOST_BUTTON,											-- Character Boost
 		
 		[-5352] = GARRISON_TIER.." "..WARDROBE_SETS,								-- Tier Sets
+		
+		--Note!! We are localizing them here so when we filter the achievement we don't filter the entire section which is bad!
+		[-5353] = select(2,GetAchievementInfo(2398)),	-- 4th Anniversary
+		[-5354] = select(2,GetAchievementInfo(4400)),	-- 5th Anniversary
+		[-5355] = select(2,GetAchievementInfo(5512)),	-- 6th Anniversary
+		[-5356] = select(2,GetAchievementInfo(5863)),	-- 7th Anniversary
+		[-5357] = select(2,GetAchievementInfo(6131)),	-- 8th Anniversary
+		[-5358] = select(2,GetAchievementInfo(7853)),	-- 9th Anniversary
+		[-5359] = select(2,GetAchievementInfo(8820)),	-- 10th Anniversary
+		[-5360] = select(2,GetAchievementInfo(10058)),	-- 11th Anniversary
+		[-5361] = select(2,GetAchievementInfo(10741)),	-- 12th Anniversary
+		[-5362] = select(2,GetAchievementInfo(11848)),	-- 13th Anniversary
+		[-5363] = select(2,GetAchievementInfo(12827)),	-- 14th Anniversary
+		--[-5364] = select(2,GetAchievementInfo(
 --[[
 		-- Tier Set Numbers Localization
 		[-5992] = GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, -- Tier 9 Sets
@@ -3009,21 +3024,21 @@ AllTheThings.Locales.enUS = {
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
 		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
-		{6, "|CFF00FFDEIn order to obtain this item it may require Lunar Festival to be active.|r", "Lunar Festival (17)"};--17
-		{7, "|CFF00FFDEIn order to obtain this item it may require Love is In the Air to be active.|r", "Love is In the Air (18)"};--18
-		{8, "|CFF00FFDEIn order to obtain this item it may require Noblegarden to be active.|r", "Noblegarden (19)"};--19
-		{9, "|CFF00FFDEIn order to obtain this item it may require Children's Week to be active.|r", "Children's Week (20)"};--20
-		{10, "|CFF00FFDEIn order to obtain this item it may require Midsummer Fire Festival to be active.|r", "Midsummer Fire Festival (21)"};--21
-		{11, "|CFF00FFDEIn order to obtain this item it may require Trial of Style to be active.|r", "Trial of Style (22)"};--22
-		{12, "|CFF00FFDEIn order to obtain this item it may require Pirate's Day to be active.|r", "Pirate's Day (23)"};--23
-		{13, "|CFF00FFDEIn order to obtain this item it may require Brewfest to be active.|r", "Brewfest (24)"};--24
-		{14, "|CFF00FFDEIn order to obtain this item it may require Harvest Festival to be active.|r", "Harvest Festival (25)"};--25
-		{15, "|CFF00FFDEIn order to obtain this item it may require Hallow's End to be active.|r", "Hallow's End (26)"};--26
-		{16, "|CFF00FFDEIn order to obtain this item it may require Day of the Dead to be active.|r", "Day of the Dead (27)"};--27
-		{17, "|CFF00FFDEIn order to obtain this item it may require Pilgrim's Bounty to be active.|r", "Pilgrim's Bounty (28)"};--28
-		{18, "|CFF00FFDEIn order to obtain this item it may require Feast of Winter Veil to be active.|r", "Feast of Winter Veil (29)"};--29
-		{19, "|CFF00FFDEIn order to obtain this item it may require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza (30) "};--30
-		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active. It's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"};--31
+		{6, "|CFF00FFDEMay require Lunar Festival to be active.|r", "Lunar Festival (17)"};--17
+		{7, "|CFF00FFDEMay require Love is In the Air to be active.|r", "Love is In the Air (18)"};--18
+		{8, "|CFF00FFDEMay require Noblegarden to be active.|r", "Noblegarden (19)"};--19
+		{9, "|CFF00FFDEMay require Children's Week to be active.|r", "Children's Week (20)"};--20
+		{10, "|CFF00FFDEMay require Midsummer Fire Festival to be active.|r", "Midsummer Fire Festival (21)"};--21
+		{11, "|CFF00FFDEMay require Trial of Style to be active.|r", "Trial of Style (22)"};--22
+		{12, "|CFF00FFDEMay require Pirate's Day to be active.|r", "Pirate's Day (23)"};--23
+		{13, "|CFF00FFDEMay require Brewfest to be active.|r", "Brewfest (24)"};--24
+		{14, "|CFF00FFDEMay require Harvest Festival to be active.|r", "Harvest Festival (25)"};--25
+		{15, "|CFF00FFDEMay require Hallow's End to be active.|r", "Hallow's End (26)"};--26
+		{16, "|CFF00FFDEMay require Day of the Dead to be active.|r", "Day of the Dead (27)"};--27
+		{17, "|CFF00FFDEMay require Pilgrim's Bounty to be active.|r", "Pilgrim's Bounty (28)"};--28
+		{18, "|CFF00FFDEMay require Feast of Winter Veil to be active.|r", "Feast of Winter Veil (29)"};--29
+		{19, "|CFF00FFDEMay require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza (30) "};--30
+		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active.\nIt's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"};--31
 		{4, "|CFFFF0000This is an original vanilla reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Classic Rewards (32)"};--32
 		{4, "|CFFFF0000This vendor is no longer available in this spot or in game.|r", "Legacy Vendors (33)"}; -- 33
 		{4, "|CFFFF0000This item was a quest award from a Legacy Quest that is no longer obtainable.|r", "Legacy Quest Reward (34)"}; --34
@@ -3034,10 +3049,10 @@ AllTheThings.Locales.enUS = {
 		{4, "|CFFFF0000This title is no longer available.|r", "Legacy Titles (39)"}; --39
 		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}; -- 40
 		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}; -- 41
-		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event. Only dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
+		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 	};
-	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage Crates), please post in Discord where you got it to drop!|r";
+	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 };

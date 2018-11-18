@@ -966,7 +966,12 @@ local function SetPortraitIcon(self, data, x)
 	elseif data.icon then
 		self:SetWidth(self:GetHeight());
 		self:SetTexture(data.icon);
-		self:SetTexCoord(0, 1, 0, 1);
+		local texcoord = data.texcoord;
+		if texcoord then
+			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			self:SetTexCoord(0, 1, 0, 1);
+		end
 		return true;
 	end
 end
@@ -1334,6 +1339,69 @@ local function GetTitleCache()
 				tinsert(cache, app.CreateTitle(i));
 			end
 		end
+	end
+	return cache;
+end
+local function GetHolidayCache()
+	local cache = GetTempDataMember("HOLIDAY_CACHE");
+	if not cache then
+		cache = {};
+		SetTempDataMember("HOLIDAY_CACHE", cache);
+		SetDataMember("HOLIDAY_CACHE", cache);
+		local date = C_Calendar.GetDate();
+		C_Calendar.SetAbsMonth(date.month, date.year);
+		for month=1,12,1 do
+			C_Calendar.SetMonth(1);
+			for day=1,31,1 do
+				local numEvents = C_Calendar.GetNumDayEvents(0, day);
+				if numEvents > 0 then
+					for index=1,numEvents,1 do
+						local event = C_Calendar.GetDayEvent(0, day, index)
+						if event and event.calendarType == "HOLIDAY" and event.sequenceType == "START" then
+							if event.iconTexture then
+								local t = cache[event.iconTexture];
+								if not t then
+									t = {
+										["name"] = event.title,
+										["icon"] = event.iconTexture,
+										["times"] = {},
+									};
+									cache[event.iconTexture] = t;
+								elseif event.iconTexture == 235465 then
+									-- Harvest Festival and Pilgrims Bounty use the same icon...
+									t = {
+										["name"] = event.title,
+										["icon"] = event.iconTexture,
+										["times"] = {},
+									};
+									cache[235466] = t;
+								end
+								tinsert(t.times,
+								{
+									["start"] = time({
+										year=event.startTime.year,
+										month=event.startTime.month,
+										day=event.startTime.monthDay,
+										hour=event.startTime.hour,
+										minute=event.startTime.minute,
+									}),
+									["end"] = time({
+										year=event.endTime.year,
+										month=event.endTime.month,
+										day=event.endTime.monthDay,
+										hour=event.endTime.hour,
+										minute=event.endTime.minute,
+									}),
+									["startTime"] = event.startTime,
+									["endTime"] = event.endTime,
+								});
+							end
+						end
+					end
+				end
+			end
+		end
+		C_Calendar.SetAbsMonth(date.month, date.year);
 	end
 	return cache;
 end
@@ -3095,7 +3163,7 @@ local function AttachTooltip(self)
 						self:Show();
 					elseif owner.tooltipText == BLIZZARD_STORE then
 						-- Shop
-						local gf = app:GetWindow("Prime").data.g[13];
+						local gf = app:GetWindow("Prime").data.g[15];
 						AttachTooltipRawSearchResults(self, {}, { gf });
 						self:Show();
 					elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
@@ -4004,7 +4072,7 @@ app.BaseFollower = {
 			local info = t.info;
 			return info and info.name;
 		elseif key == "description" then
-			return "Followers must be collected on a per-character basis. \n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
+			return "Followers can be collected Account Wide. Unlocking them on one toon will count as collected across all your characters in ATT. \n\nYou must manually refresh the addon by Shift+Left clicking the header for this to be detected.";
 		elseif key == "info" then
 			-- https://wow.gamepedia.com/API_C_Garrison.GetFollowerInfo
 			return C_Garrison.GetFollowerInfo(t.followerID);
@@ -4189,6 +4257,36 @@ app.BaseHeirloom = {
 };
 app.CreateHeirloom = function(id, t)
 	return createInstance(constructor(id, t, "itemID"), app.BaseHeirloom);
+end
+
+-- Holiday Lib
+app.BaseHoliday = {
+	__index = function(t, key)
+		if key == "key" then
+			return "holidayID";
+		elseif key == "icon" then
+			if t.holidayID == 235466 then return 235465; end
+			return t.holidayID;
+		elseif key == "text" then
+			return t.info and t.info.name;
+		elseif key == "eventType" then
+			return 4294967295;
+		elseif key == "texcoord" then
+			return { 0.0, 0.7109375, 0.0, 0.7109375 };
+		elseif key == "info" then
+			local info = GetHolidayCache()[t.holidayID];
+			if info then
+				rawset(t, "info", info);
+				return info;
+			end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateHoliday = function(id, t)
+	return createInstance(constructor(id, t, "holidayID"), app.BaseHoliday);
 end
 
 -- Illusion Lib
@@ -7192,6 +7290,12 @@ local function RowOnEnter(self)
 				GameTooltipIcon:SetSize(64,64);
 			end
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
+			local texcoord = reference.texcoord;
+			if texcoord then
+				GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+			else
+				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+			end
 			GameTooltipIcon:Show();
 		elseif reference.displayID or reference.modelID or reference.model then
 			GameTooltip:AddDoubleLine("File ID", GameTooltipModel.Model:GetModelFileID());
@@ -7573,6 +7677,16 @@ function app:GetDataCache()
 			db.f = 0;
 			db.expanded = false;
 			db.text = EVENTS_LABEL; -- L("EVENTS");
+			db.collectible = false;
+			table.insert(g, db);
+		end
+		
+		-- Anniversary
+		if app.Categories.Anniversary then
+			db = app.CreateAchievement(12827, app.Categories.Anniversary);
+			db.f = 0;
+			db.expanded = false;
+			db.text = "WoW Anniversary"; -- L("EVENTS");
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -8575,13 +8689,64 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		end
 		local switchRaidDifficulty = function(row, button)
 			self.data = raidassistant;
-			SetRaidDifficultyID(row.ref.difficultyID);
+			local myself = self;
+			local difficultyID = row.ref.difficultyID;
+			if not self.running then
+				self.running = true;
+			else
+				self.running = false;
+			end
+			
+			SetRaidDifficultyID(difficultyID);
+			StartCoroutine("RaidDifficulty", function()
+				while InCombatLockdown() do coroutine.yield(); end
+				while myself.running do
+					for i=0,150,1 do
+						if myself.running then
+							coroutine.yield();
+						else
+							break;
+						end
+					end
+					if app.RaidDifficulty == difficultyID then
+						myself.running = false;
+						break;
+					else
+						SetRaidDifficultyID(difficultyID);
+					end
+				end
+			end);
 			self:Update(true);
 			return true;
 		end
 		local switchLegacyRaidDifficulty = function(row, button)
 			self.data = raidassistant;
-			SetLegacyRaidDifficultyID(row.ref.difficultyID);
+			local myself = self;
+			local difficultyID = row.ref.difficultyID;
+			if not self.legacyrunning then
+				self.legacyrunning = true;
+			else
+				self.legacyrunning = false;
+			end
+			SetLegacyRaidDifficultyID(difficultyID);
+			StartCoroutine("LegacyRaidDifficulty", function()
+				while InCombatLockdown() do coroutine.yield(); end
+				while myself.legacyrunning do
+					for i=0,150,1 do
+						if myself.legacyrunning then
+							coroutine.yield();
+						else
+							break;
+						end
+					end
+					if app.LegacyRaidDifficulty == difficultyID then
+						myself.legacyrunning = false;
+						break;
+					else
+						SetLegacyRaidDifficultyID(difficultyID);
+					end
+				end
+			end);
 			self:Update(true);
 			return true;
 		end
