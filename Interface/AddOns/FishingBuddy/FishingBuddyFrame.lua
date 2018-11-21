@@ -99,6 +99,7 @@ local function CreateManagedFrameGroup(tabname, tooltip, toggle, groups, optiont
         -- Add new groups to the target.
         for idx,group in ipairs(groups) do
             local tabframe = target:CreateTab(group.name, group.icon, Group_OnClick, group.tooltip or group.name);
+            group.frame, _ = target:GetFrameInfo(group.frame)
             group.frame:Hide()
             tinsert(target.groups, group)
         end

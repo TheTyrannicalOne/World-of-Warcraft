@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local CH, LO = SLE:GetElvModules("Chat", "Layout")
 local C = SLE:NewModule("Chat",  'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0')
 --GLOBALS:  UIParent, LeftChatPanel, LeftChatDataPanel, LeftChatToggleButton, LeftChatTab, RightChatPanel,
@@ -26,22 +26,10 @@ local function Style(self, frame)
 	local tab = _G[name..'Tab']
 	tab.isTemporary = frame.isTemporary
 
-	-- Mark current selected tab if renamed
-	hooksecurefunc(tab, "SetText", function(self)
-		if self.isDocked and _G["GeneralDockManager"].selected:GetID() == self:GetID() and not self.isTemporary and C.db.tab.select then
-			C:ApplySelectedTabIndicator(tab, self.text:GetText())
-		end
-	end)
-
 	-- Prevent text from jumping from left to right when tab is clicked.
 	hooksecurefunc(tab, "SetWidth", function(self)
 		self.text:ClearAllPoints()
 		self.text:SetPoint("CENTER", self, "CENTER", 0, -4)
-	end)
-
-	-- Mark current selected tab when clicked
-	tab:HookScript("OnClick", function()
-		C:SetSelectedTab()
 	end)
 end
 

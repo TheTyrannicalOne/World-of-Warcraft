@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local C = SLE:GetModule("Chat")
 local ItemRefTooltip = ItemRefTooltip
 local ShowUIPanel = ShowUIPanel
@@ -48,7 +48,7 @@ C.spamFirstLines = {
 	"^Skada:(.*)??(.*):$", -- Skada zhTW
 	"^(.*) Done for (.*)$", -- TinyDPS
 	"^Numeration: (.*)$", -- Numeration
-	"^Details!: (.*) for (.*)$" -- Details!
+	"^Details!:(.*)$" -- Details!
 }
 C.spamNextLines = {
 	"^(%d+)\. (.*)$", --Recount, Details! and Skada

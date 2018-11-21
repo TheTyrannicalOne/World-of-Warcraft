@@ -1350,6 +1350,7 @@ FishingBuddy.Commands[FBConstants.FISHINGMODE].func =
         if(what and what == "stop") then
             StopFishingMode();
         else
+            SetLastCastTime();
             autopoleframe:Show();
         end
 

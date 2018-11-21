@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...)) 
+local SLE, T, E, L, V, P, G = unpack(select(2, ...)) 
 local UF = E:GetModule('UnitFrames');
 local SUF = SLE:GetModule("UnitFrames")
 local texPath = [[Interface\AddOns\ElvUI_SLE\media\textures\role\]]
@@ -437,15 +437,6 @@ local function configTable()
 						disabled = function() return not E.private.unitframe.enable or not E.private.sle.unitframe.statusbarTextures.class end,
 						set = function(info, value) E.db.sle.unitframes.statusTextures[info[#info]] = value; UF:CreateAndUpdateUF('player') end,
 						values = AceGUIWidgetLSMlists.statusbar,
-					},
-					space4 = { order = 12, type = "description", name = "" },
-					resizePrediction = {
-						order = 13,
-						type = "toggle",
-						name = L["Resize Health Prediction"],
-						desc = L["Slightly changes size of health prediction bars."],
-						get = function(info) return E.private.sle.unitframe.resizeHealthPrediction end,
-						set = function(info, value) E.private.sle.unitframe.resizeHealthPrediction = value; E:StaticPopup_Show("PRIVATE_RL") end,
 					},
 				},
 			},

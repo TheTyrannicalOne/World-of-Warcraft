@@ -39,24 +39,24 @@ AzeritePowerWeightsDB = {
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
 				["showOnlyUpgrades"] = false,
-				["professionPowers"] = false,
 				["debug"] = false,
+				["professionPowers"] = false,
 			},
 		},
-		["Argent Dawn"] = {
-			["Shanyt"] = {
+		["Zul'jin"] = {
+			["Vancard"] = {
 				["specScales"] = {
-					[73] = {
-						["scaleName"] = "Defensive",
-						["scaleID"] = "D/1/3/Defensive",
-					},
-					[71] = {
+					[64] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/1/1/Default",
+						["scaleID"] = "D/8/3/Default",
 					},
-					[72] = {
+					[63] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/1/2/Default",
+						["scaleID"] = "D/8/2/Default",
+					},
+					[62] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/8/1/Default",
 					},
 				},
 				["addPrimaryStatToScore"] = false,
@@ -78,20 +78,20 @@ AzeritePowerWeightsDB = {
 				["debug"] = false,
 			},
 		},
-		["Zul'jin"] = {
-			["Vancard"] = {
+		["Argent Dawn"] = {
+			["Shanyt"] = {
 				["specScales"] = {
-					[64] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/8/3/Default",
+					[73] = {
+						["scaleName"] = "Defensive",
+						["scaleID"] = "D/1/3/Defensive",
 					},
-					[63] = {
+					[71] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/8/2/Default",
+						["scaleID"] = "D/1/1/Default",
 					},
-					[62] = {
+					[72] = {
 						["scaleName"] = "Default",
-						["scaleID"] = "D/8/1/Default",
+						["scaleID"] = "D/1/2/Default",
 					},
 				},
 				["addPrimaryStatToScore"] = false,

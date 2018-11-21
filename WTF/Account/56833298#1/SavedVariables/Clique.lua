@@ -2,12 +2,12 @@
 CliqueDB = nil
 CliqueDB3 = {
 	["profileKeys"] = {
-		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 	},
 	["profiles"] = {
-		["Durlok - Black Dragonflight"] = {
+		["Vancard - Zul'jin"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -29,10 +29,10 @@ CliqueDB3 = {
 		["Shanyt - Argent Dawn"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -45,7 +45,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Vancard - Zul'jin"] = {
+		["Durlok - Black Dragonflight"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",

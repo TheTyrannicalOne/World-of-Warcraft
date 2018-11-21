@@ -5,7 +5,6 @@ WeakAurasSaved = {
 			[261854] = 133465,
 		},
 	},
-	["login_squelch_time"] = 10,
 	["displays"] = {
 		["Eastern Kingdoms"] = {
 			["outline"] = "OUTLINE",
@@ -14,29 +13,21 @@ WeakAurasSaved = {
 			["displayText"] = "Arie Peak\nBooty Bay\nBrill\nGoldshire\nKharanos\nMenethil Harbor\nStonard\nSentinel Hills\nTranquillien\nTarren Mill",
 			["yOffset"] = -15,
 			["anchorPoint"] = "CENTER",
-			["regionType"] = "text",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["selfPoint"] = "BOTTOM",
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/HkU2aa1Sf/3",
 			["actions"] = {
 				["start"] = {
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["triggers"] = {
@@ -45,24 +36,24 @@ WeakAurasSaved = {
 						["type"] = "aura",
 						["use_alwaystrue"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HELPFUL",
 						["use_absorbMode"] = true,
 						["genericShowOn"] = "showOnActive",
 						["names"] = {
 							"Sorting Mail", -- [1]
 							"Sorting Mail", -- [2]
 						},
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
+						["use_unit"] = true,
+						["event"] = "Conditions",
 						["spellIds"] = {
 							237081, -- [1]
 							261854, -- [2]
 						},
-						["unit"] = "player",
 						["ownOnly"] = true,
-						["event"] = "Conditions",
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["buffShowOn"] = "showOnActive",
 					},
 					["untrigger"] = {
 					},
@@ -70,41 +61,51 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["fixedWidth"] = 200,
+			["conditions"] = {
+			},
 			["internalVersion"] = 9,
 			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["id"] = "Eastern Kingdoms",
 			["wordWrap"] = "WordWrap",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["width"] = 109.00002288818,
+			["automaticWidth"] = "Auto",
 			["font"] = "PT Sans Narrow",
 			["xOffset"] = -341.00006103516,
-			["automaticWidth"] = "Auto",
+			["width"] = 109.00002288818,
 			["height"] = 160,
-			["conditions"] = {
-			},
+			["fixedWidth"] = 200,
 			["load"] = {
-				["zone"] = "The Postmaster's Office",
+				["talent"] = {
+					["multi"] = {
+					},
+				},
 				["ingroup"] = {
 					["multi"] = {
 					},
 				},
 				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
+				["zone"] = "The Postmaster's Office",
+				["zoneId"] = "1014",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["talent2"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -114,15 +115,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zoneId"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -130,18 +127,20 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1014",
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["regionType"] = "text",
 		},
 		["The Postmaster"] = {
 			["backdropColor"] = {
@@ -174,9 +173,9 @@ WeakAurasSaved = {
 			["actions"] = {
 				["start"] = {
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["triggers"] = {
@@ -190,8 +189,8 @@ WeakAurasSaved = {
 						},
 						["names"] = {
 						},
-						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -201,28 +200,28 @@ WeakAurasSaved = {
 				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 9,
-			["yOffset"] = 115.00012207031,
+			["selfPoint"] = "BOTTOMLEFT",
 			["animation"] = {
 				["start"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["main"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 				["finish"] = {
-					["type"] = "none",
 					["duration_type"] = "seconds",
+					["type"] = "none",
 				},
 			},
 			["id"] = "The Postmaster",
-			["borderOffset"] = 5,
+			["regionType"] = "group",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 11.000122070312,
+			["borderOffset"] = 5,
 			["borderInset"] = 11,
-			["selfPoint"] = "BOTTOMLEFT",
+			["xOffset"] = 11.000122070312,
 			["expanded"] = false,
 			["conditions"] = {
 			},
@@ -248,7 +247,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -256,15 +255,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -273,415 +272,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["regionType"] = "group",
-		},
-		["Broken Shore"] = {
-			["outline"] = "OUTLINE",
-			["fontSize"] = 16,
-			["parent"] = "The Postmaster",
-			["displayText"] = "Azurewing Repose\nBrandensbrook\nDeliverance Point\nGreywatch\nLorlathil\nMeredil\nSkyhorn\nShackle's Den\nThunder Totem\nValdisdall",
-			["yOffset"] = -15,
-			["anchorPoint"] = "CENTER",
-			["regionType"] = "text",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/HkU2aa1Sf/3",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["use_alwaystrue"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
-						["use_absorbMode"] = true,
-						["genericShowOn"] = "showOnActive",
-						["names"] = {
-							"Sorting Mail", -- [1]
-							"Sorting Mail", -- [2]
-						},
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
-						["spellIds"] = {
-							237081, -- [1]
-							261854, -- [2]
-						},
-						["unit"] = "player",
-						["ownOnly"] = true,
-						["event"] = "Conditions",
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["fixedWidth"] = 200,
-			["internalVersion"] = 9,
-			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
-			["id"] = "Broken Shore",
-			["wordWrap"] = "WordWrap",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["width"] = 119.99997711182,
-			["font"] = "PT Sans Narrow",
-			["xOffset"] = 585.0009765625,
-			["automaticWidth"] = "Auto",
-			["height"] = 160,
-			["conditions"] = {
-			},
-			["load"] = {
-				["zone"] = "The Postmaster's Office",
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zoneId"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["zoneId"] = "1014",
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Northrend"] = {
-			["outline"] = "OUTLINE",
-			["fontSize"] = 16,
-			["parent"] = "The Postmaster",
-			["displayText"] = "Conquest Hold\nCamp Oneqwah\nFrosthold\nKamagua\nMoa'ki Harbor\nNesingwary BC\nThe Argent Stand\nValiance Keep\nWarsong Hold\nWyrmest Temple",
-			["yOffset"] = -15,
-			["anchorPoint"] = "CENTER",
-			["regionType"] = "text",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/HkU2aa1Sf/3",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["use_alwaystrue"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
-						["use_absorbMode"] = true,
-						["genericShowOn"] = "showOnActive",
-						["names"] = {
-							"Sorting Mail", -- [1]
-							"Sorting Mail", -- [2]
-						},
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
-						["spellIds"] = {
-							237081, -- [1]
-							261854, -- [2]
-						},
-						["unit"] = "player",
-						["ownOnly"] = true,
-						["event"] = "Conditions",
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["fixedWidth"] = 200,
-			["internalVersion"] = 9,
-			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
-			["id"] = "Northrend",
-			["wordWrap"] = "WordWrap",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["width"] = 118.99996948242,
-			["font"] = "PT Sans Narrow",
-			["xOffset"] = 105.99938964844,
-			["automaticWidth"] = "Auto",
-			["height"] = 160,
-			["conditions"] = {
-			},
-			["load"] = {
-				["zone"] = "The Postmaster's Office",
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zoneId"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["zoneId"] = "1014",
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Pandaria"] = {
-			["outline"] = "OUTLINE",
-			["fontSize"] = 16,
-			["parent"] = "The Postmaster",
-			["displayText"] = "Dawn's Blossom\nHalfhill\nKlaxxi'vess\nLongying Outpost\nLion's Landing\nOne Keg\nSoggy's Gemble\nTian Monastery\nThunder Cleft\nZouchin Village",
-			["yOffset"] = -15,
-			["anchorPoint"] = "CENTER",
-			["regionType"] = "text",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-			},
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/HkU2aa1Sf/3",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "aura",
-						["use_alwaystrue"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
-						["use_absorbMode"] = true,
-						["genericShowOn"] = "showOnActive",
-						["names"] = {
-							"Sorting Mail", -- [1]
-							"Sorting Mail", -- [2]
-						},
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
-						["spellIds"] = {
-							237081, -- [1]
-							261854, -- [2]
-						},
-						["unit"] = "player",
-						["ownOnly"] = true,
-						["event"] = "Conditions",
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["activeTriggerMode"] = -10,
-			},
-			["fixedWidth"] = 200,
-			["internalVersion"] = 9,
-			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
-			["id"] = "Pandaria",
-			["wordWrap"] = "WordWrap",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["width"] = 119.99997711182,
-			["font"] = "PT Sans Narrow",
-			["xOffset"] = 346.00012207031,
-			["automaticWidth"] = "Auto",
-			["height"] = 160,
-			["conditions"] = {
-			},
-			["load"] = {
-				["zone"] = "The Postmaster's Office",
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["use_zone"] = false,
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_zoneId"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["zoneId"] = "1014",
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["yOffset"] = 115.00012207031,
 		},
 		["Outland"] = {
 			["outline"] = "OUTLINE",
@@ -690,29 +281,21 @@ WeakAurasSaved = {
 			["displayText"] = "Allerian Stronghold\nArea 52\nAltar of Sha'tar\nCenarion Refuge\nCosmowrench\nGaradar\nHonor Hold\nSylvanaar\nThrallmar\nZabra'jin",
 			["yOffset"] = -15,
 			["anchorPoint"] = "CENTER",
-			["regionType"] = "text",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["selfPoint"] = "BOTTOM",
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/HkU2aa1Sf/3",
 			["actions"] = {
 				["start"] = {
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["triggers"] = {
@@ -721,24 +304,24 @@ WeakAurasSaved = {
 						["type"] = "aura",
 						["use_alwaystrue"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HELPFUL",
 						["use_absorbMode"] = true,
 						["genericShowOn"] = "showOnActive",
 						["names"] = {
 							"Sorting Mail", -- [1]
 							"Sorting Mail", -- [2]
 						},
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
+						["use_unit"] = true,
+						["event"] = "Conditions",
 						["spellIds"] = {
 							237081, -- [1]
 							261854, -- [2]
 						},
-						["unit"] = "player",
 						["ownOnly"] = true,
-						["event"] = "Conditions",
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["buffShowOn"] = "showOnActive",
 					},
 					["untrigger"] = {
 					},
@@ -746,41 +329,51 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["fixedWidth"] = 200,
+			["conditions"] = {
+			},
 			["internalVersion"] = 9,
 			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["id"] = "Outland",
 			["wordWrap"] = "WordWrap",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["width"] = 126.00002288818,
+			["automaticWidth"] = "Auto",
 			["font"] = "PT Sans Narrow",
 			["xOffset"] = -105.99969482422,
-			["automaticWidth"] = "Auto",
+			["width"] = 126.00002288818,
 			["height"] = 160,
-			["conditions"] = {
-			},
+			["fixedWidth"] = 200,
 			["load"] = {
-				["zone"] = "The Postmaster's Office",
+				["talent"] = {
+					["multi"] = {
+					},
+				},
 				["ingroup"] = {
 					["multi"] = {
 					},
 				},
 				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
+				["zone"] = "The Postmaster's Office",
+				["zoneId"] = "1014",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["talent2"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -790,15 +383,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zoneId"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -806,18 +395,156 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1014",
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
+			["regionType"] = "text",
+		},
+		["Northrend"] = {
+			["outline"] = "OUTLINE",
+			["fontSize"] = 16,
+			["parent"] = "The Postmaster",
+			["displayText"] = "Conquest Hold\nCamp Oneqwah\nFrosthold\nKamagua\nMoa'ki Harbor\nNesingwary BC\nThe Argent Stand\nValiance Keep\nWarsong Hold\nWyrmest Temple",
+			["yOffset"] = -15,
+			["anchorPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["selfPoint"] = "BOTTOM",
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/HkU2aa1Sf/3",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["use_alwaystrue"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HELPFUL",
+						["use_absorbMode"] = true,
+						["genericShowOn"] = "showOnActive",
+						["names"] = {
+							"Sorting Mail", -- [1]
+							"Sorting Mail", -- [2]
+						},
+						["use_unit"] = true,
+						["event"] = "Conditions",
+						["spellIds"] = {
+							237081, -- [1]
+							261854, -- [2]
+						},
+						["ownOnly"] = true,
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["buffShowOn"] = "showOnActive",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["conditions"] = {
+			},
+			["internalVersion"] = 9,
+			["justify"] = "LEFT",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["id"] = "Northrend",
+			["wordWrap"] = "WordWrap",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["automaticWidth"] = "Auto",
+			["font"] = "PT Sans Narrow",
+			["xOffset"] = 105.99938964844,
+			["width"] = 118.99996948242,
+			["height"] = 160,
+			["fixedWidth"] = 200,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["zone"] = "The Postmaster's Office",
+				["zoneId"] = "1014",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["regionType"] = "text",
 		},
 		["Kalimdor"] = {
 			["outline"] = "OUTLINE",
@@ -826,29 +553,21 @@ WeakAurasSaved = {
 			["displayText"] = "Astranaar\nEverlook \nFeathermoon Stronghold\nGadgetzan\nLor'danel\nNighthaven\nNordrassil\nRamkahen\nThe Crossroads\nWhisperwind Grove",
 			["yOffset"] = -15,
 			["anchorPoint"] = "CENTER",
-			["regionType"] = "text",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["selfPoint"] = "BOTTOM",
 			["customTextUpdate"] = "update",
 			["url"] = "https://wago.io/HkU2aa1Sf/3",
 			["actions"] = {
 				["start"] = {
 				},
-				["init"] = {
-				},
 				["finish"] = {
+				},
+				["init"] = {
 				},
 			},
 			["triggers"] = {
@@ -857,24 +576,24 @@ WeakAurasSaved = {
 						["type"] = "aura",
 						["use_alwaystrue"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HELPFUL",
 						["use_absorbMode"] = true,
 						["genericShowOn"] = "showOnActive",
 						["names"] = {
 							"Sorting Mail", -- [1]
 							"Sorting Mail", -- [2]
 						},
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
+						["use_unit"] = true,
+						["event"] = "Conditions",
 						["spellIds"] = {
 							237081, -- [1]
 							261854, -- [2]
 						},
-						["unit"] = "player",
 						["ownOnly"] = true,
-						["event"] = "Conditions",
-						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["buffShowOn"] = "showOnActive",
 					},
 					["untrigger"] = {
 					},
@@ -882,41 +601,51 @@ WeakAurasSaved = {
 				["disjunctive"] = "all",
 				["activeTriggerMode"] = -10,
 			},
-			["fixedWidth"] = 200,
+			["conditions"] = {
+			},
 			["internalVersion"] = 9,
 			["justify"] = "LEFT",
-			["selfPoint"] = "BOTTOM",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
 			["id"] = "Kalimdor",
 			["wordWrap"] = "WordWrap",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["width"] = 161.00001525879,
+			["automaticWidth"] = "Auto",
 			["font"] = "PT Sans Narrow",
 			["xOffset"] = -538.00018310547,
-			["automaticWidth"] = "Auto",
+			["width"] = 161.00001525879,
 			["height"] = 160,
-			["conditions"] = {
-			},
+			["fixedWidth"] = 200,
 			["load"] = {
-				["zone"] = "The Postmaster's Office",
+				["talent"] = {
+					["multi"] = {
+					},
+				},
 				["ingroup"] = {
 					["multi"] = {
 					},
 				},
 				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
+				["zone"] = "The Postmaster's Office",
+				["zoneId"] = "1014",
 				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["talent2"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -926,15 +655,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_zoneId"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -942,24 +667,299 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["zoneId"] = "1014",
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
+			["regionType"] = "text",
+		},
+		["Pandaria"] = {
+			["outline"] = "OUTLINE",
+			["fontSize"] = 16,
+			["parent"] = "The Postmaster",
+			["displayText"] = "Dawn's Blossom\nHalfhill\nKlaxxi'vess\nLongying Outpost\nLion's Landing\nOne Keg\nSoggy's Gemble\nTian Monastery\nThunder Cleft\nZouchin Village",
+			["yOffset"] = -15,
+			["anchorPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["selfPoint"] = "BOTTOM",
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/HkU2aa1Sf/3",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["use_alwaystrue"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HELPFUL",
+						["use_absorbMode"] = true,
+						["genericShowOn"] = "showOnActive",
+						["names"] = {
+							"Sorting Mail", -- [1]
+							"Sorting Mail", -- [2]
+						},
+						["use_unit"] = true,
+						["event"] = "Conditions",
+						["spellIds"] = {
+							237081, -- [1]
+							261854, -- [2]
+						},
+						["ownOnly"] = true,
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["buffShowOn"] = "showOnActive",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["conditions"] = {
+			},
+			["internalVersion"] = 9,
+			["justify"] = "LEFT",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["id"] = "Pandaria",
+			["wordWrap"] = "WordWrap",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["automaticWidth"] = "Auto",
+			["font"] = "PT Sans Narrow",
+			["xOffset"] = 346.00012207031,
+			["width"] = 119.99997711182,
+			["height"] = 160,
+			["fixedWidth"] = 200,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["zone"] = "The Postmaster's Office",
+				["zoneId"] = "1014",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["regionType"] = "text",
+		},
+		["Broken Shore"] = {
+			["outline"] = "OUTLINE",
+			["fontSize"] = 16,
+			["parent"] = "The Postmaster",
+			["displayText"] = "Azurewing Repose\nBrandensbrook\nDeliverance Point\nGreywatch\nLorlathil\nMeredil\nSkyhorn\nShackle's Den\nThunder Totem\nValdisdall",
+			["yOffset"] = -15,
+			["anchorPoint"] = "CENTER",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["selfPoint"] = "BOTTOM",
+			["customTextUpdate"] = "update",
+			["url"] = "https://wago.io/HkU2aa1Sf/3",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["use_alwaystrue"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["debuffType"] = "HELPFUL",
+						["use_absorbMode"] = true,
+						["genericShowOn"] = "showOnActive",
+						["names"] = {
+							"Sorting Mail", -- [1]
+							"Sorting Mail", -- [2]
+						},
+						["use_unit"] = true,
+						["event"] = "Conditions",
+						["spellIds"] = {
+							237081, -- [1]
+							261854, -- [2]
+						},
+						["ownOnly"] = true,
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["subeventPrefix"] = "SPELL",
+						["buffShowOn"] = "showOnActive",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["conditions"] = {
+			},
+			["internalVersion"] = 9,
+			["justify"] = "LEFT",
+			["animation"] = {
+				["start"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+				["finish"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+				},
+			},
+			["id"] = "Broken Shore",
+			["wordWrap"] = "WordWrap",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["automaticWidth"] = "Auto",
+			["font"] = "PT Sans Narrow",
+			["xOffset"] = 585.0009765625,
+			["width"] = 119.99997711182,
+			["height"] = 160,
+			["fixedWidth"] = 200,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = false,
+				["zone"] = "The Postmaster's Office",
+				["zoneId"] = "1014",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = false,
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zoneId"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["regionType"] = "text",
 		},
 	},
+	["login_squelch_time"] = 10,
 	["registered"] = {
 	},
+	["editor_theme"] = "Monokai",
 	["minimap"] = {
 		["hide"] = false,
 	},
-	["editor_theme"] = "Monokai",
 }

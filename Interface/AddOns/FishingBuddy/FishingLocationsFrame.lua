@@ -768,17 +768,19 @@ end
 FishingBuddy.Locations.OnEvent = function(self, event, ...)
     -- this crashes the client when enabled
     -- self:EnableMouseWheel(0);
-    groups = {}
-    tinsert(groups, {
-        ["name"] = FBConstants.LOCATIONS_TAB,
-        ["icon"] = "Interface\\Icons\\INV_Misc_Note_01",
-        ["frame"] = "FishingLocationsFrame"
-    })
-    local frame = FishingBuddy.CreateManagedFrameGroup(FBConstants.LOCATIONS_TAB,
-                                                        FBConstants.LOCATIONS_INFO,
-                                                        "_LOC",
-                                                        groups);
-    FishingBuddyFrame:MakePrimary(frame);
+    if event == "VARIABLES_LOADED" then
+        groups = {}
+        tinsert(groups, {
+            ["name"] = FBConstants.LOCATIONS_TAB,
+            ["icon"] = "Interface\\Icons\\INV_Misc_Note_01",
+            ["frame"] = "FishingLocationsFrame"
+        })
+        local frame = FishingBuddy.CreateManagedFrameGroup(FBConstants.LOCATIONS_TAB,
+                                                            FBConstants.LOCATIONS_INFO,
+                                                            "_LOC",
+                                                            groups);
+        FishingBuddyFrame:MakePrimary(frame);
+    end
 end
 
 FishingBuddy.Locations.DataChanged = function(zone, subzone, fishie)

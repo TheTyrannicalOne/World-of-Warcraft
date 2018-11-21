@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local Pr = SLE:GetModule("Professions")
 local TRADE_SKILLS, NONE = TRADE_SKILLS, NONE
 
@@ -39,6 +39,7 @@ local function configTable()
 						values = {
 							["BIG"] = L["Actionbar Proc"],
 							["SMALL"] = L["Actionbar Autocast"],
+							["PIXEL"] = L["Pixel"],
 							["NO"] = NONE,
 						},
 					},

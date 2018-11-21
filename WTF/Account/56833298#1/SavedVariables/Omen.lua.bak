@@ -34,9 +34,9 @@ Omen3DB = {
 			["PositionY"] = 201.667739868164,
 			["PositionW"] = 200.833389282227,
 			["Shown"] = true,
-			["VGrip1"] = 85.3541643969225,
-			["PositionX"] = 1488.33312988281,
 			["PositionH"] = 162.000015258789,
+			["PositionX"] = 1488.33312988281,
+			["VGrip1"] = 85.3541643969225,
 		},
 		["Jingojaggot - Argent Dawn"] = {
 			["Shown"] = false,
