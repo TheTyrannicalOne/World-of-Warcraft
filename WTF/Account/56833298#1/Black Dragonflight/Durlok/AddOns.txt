@@ -5,3 +5,7 @@ ElvUI_EverySecondCounts: disabled
 AllTheThings: disabled
 BigWigs_Voice: enabled
 LittleWigs: enabled
+ElvUI_SLE: enabled
+AddonSkins: enabled
+Hermes: enabled
+xCT+: enabled

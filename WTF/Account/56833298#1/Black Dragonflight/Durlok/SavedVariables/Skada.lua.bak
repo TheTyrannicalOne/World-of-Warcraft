@@ -92,13 +92,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["name"] = "Find Herbs",
 					},
-					["Baldrick: Fists of Fury"] = {
-						["name"] = "Baldrick: Fists of Fury",
+					["Inner Strength"] = {
+						["uptime"] = 0,
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 113656,
+						["id"] = 261769,
 						["auratype"] = "BUFF",
-						["uptime"] = 5,
+						["name"] = "Inner Strength",
 					},
 					["Crackling Jade Lightning"] = {
 						["name"] = "Crackling Jade Lightning",
@@ -124,13 +124,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["name"] = "Storm, Earth, and Fire",
 					},
-					["Inner Strength"] = {
-						["uptime"] = 0,
+					["Provoke"] = {
+						["name"] = "Provoke",
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 261769,
-						["auratype"] = "BUFF",
-						["name"] = "Inner Strength",
+						["id"] = 116189,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 6,
 					},
 					["Mark of the Crane"] = {
 						["name"] = "Mark of the Crane",
@@ -204,13 +204,13 @@ SkadaPerCharDB = {
 						["auratype"] = "DEBUFF",
 						["name"] = "Baldrick: Mystic Touch",
 					},
-					["Provoke"] = {
-						["name"] = "Provoke",
+					["Baldrick: Fists of Fury"] = {
+						["name"] = "Baldrick: Fists of Fury",
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 116189,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 6,
+						["id"] = 113656,
+						["auratype"] = "BUFF",
+						["uptime"] = 5,
 					},
 					["Paralysis"] = {
 						["name"] = "Paralysis",
@@ -265,17 +265,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 3,
 					},
-					["Touch of the Grave"] = {
+					["Leech"] = {
 						["shielding"] = 0,
-						["id"] = 127802,
-						["healing"] = 31163,
-						["min"] = 0,
-						["name"] = "Touch of the Grave",
+						["id"] = 143924,
+						["healing"] = 18035,
+						["min"] = 1,
+						["name"] = "Leech",
 						["absorbed"] = 0,
 						["critical"] = 0,
-						["max"] = 1056,
-						["overhealing"] = 16403,
-						["hits"] = 74,
+						["max"] = 619,
+						["overhealing"] = 103,
+						["hits"] = 519,
 					},
 					["Baldrick: Leech"] = {
 						["shielding"] = 0,
@@ -289,17 +289,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 0,
 						["hits"] = 12,
 					},
-					["Touch of Karma"] = {
-						["shielding"] = 107285,
-						["id"] = 122470,
-						["healing"] = 107285,
-						["min"] = 251,
-						["name"] = "Touch of Karma",
+					["Touch of the Grave"] = {
+						["shielding"] = 0,
+						["id"] = 127802,
+						["healing"] = 31163,
+						["min"] = 0,
+						["name"] = "Touch of the Grave",
 						["absorbed"] = 0,
 						["critical"] = 0,
-						["max"] = 10091,
-						["overhealing"] = 0,
-						["hits"] = 52,
+						["max"] = 1056,
+						["overhealing"] = 16403,
+						["hits"] = 74,
 					},
 					["Eye of the Tiger"] = {
 						["shielding"] = 0,
@@ -337,17 +337,17 @@ SkadaPerCharDB = {
 						["overhealing"] = 27275,
 						["hits"] = 19,
 					},
-					["Leech"] = {
-						["shielding"] = 0,
-						["id"] = 143924,
-						["healing"] = 18035,
-						["min"] = 1,
-						["name"] = "Leech",
+					["Touch of Karma"] = {
+						["shielding"] = 107285,
+						["id"] = 122470,
+						["healing"] = 107285,
+						["min"] = 251,
+						["name"] = "Touch of Karma",
 						["absorbed"] = 0,
 						["critical"] = 0,
-						["max"] = 619,
-						["overhealing"] = 103,
-						["hits"] = 519,
+						["max"] = 10091,
+						["overhealing"] = 0,
+						["hits"] = 52,
 					},
 				},
 				["overhealing"] = 80227,
@@ -718,9 +718,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303944.39508,
 								["amount"] = -2858,
+								["spellid"] = 269301,
 								["srcname"] = "Unbound Abomination",
 								["hp"] = 5979,
-								["spellid"] = 269301,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -782,16 +782,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303387.03801,
 								["amount"] = -2299,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 6589,
-								["spellid"] = 272180,
 							}, -- [1]
 							{
 								["ts"] = 1541303387.20902,
 								["amount"] = -3289,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 3300,
-								["spellid"] = 272180,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -812,9 +812,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303388.21005,
 								["amount"] = -3899,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1,
-								["spellid"] = 272180,
 							}, -- [5]
 							{
 								["spellname"] = "Baldrick dies",
@@ -825,9 +825,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303384.19807,
 								["amount"] = -2695,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 17524,
-								["spellid"] = 272180,
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -848,16 +848,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303384.6011,
 								["amount"] = -1924,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 15934,
-								["spellid"] = 272180,
 							}, -- [10]
 							{
 								["ts"] = 1541303385.20011,
 								["amount"] = -4217,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 11717,
-								["spellid"] = 272180,
 							}, -- [11]
 							{
 								["absorb"] = 0,
@@ -878,9 +878,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303386.20414,
 								["amount"] = -2991,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 8871,
-								["spellid"] = 272180,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -900,23 +900,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301846.76401,
 								["amount"] = -550,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1541301846.76402,
 								["amount"] = -327,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1541301846.76403,
 								["amount"] = -604,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -929,37 +929,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301847.05105,
 								["amount"] = -242,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7140,
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1541301847.05106,
 								["amount"] = -321,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7140,
-								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["ts"] = 1541301847.05107,
 								["amount"] = -275,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7140,
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1541301847.05108,
 								["amount"] = -268,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7140,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["ts"] = 1541301847.05109,
 								["amount"] = -4819,
+								["spellid"] = 88163,
 								["srcname"] = "Cragmaw the Infested",
 								["hp"] = 7140,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["spellname"] = "Baldrick dies",
@@ -970,37 +970,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301846.74611,
 								["amount"] = -291,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1541301846.76312,
 								["amount"] = -274,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1541301846.76313,
 								["amount"] = -329,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1541301846.76314,
 								["amount"] = -290,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["ts"] = 1541301846.76315,
 								["amount"] = -254,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7316,
-								["spellid"] = 88163,
 							}, -- [15]
 							["pos"] = 11,
 						},
@@ -1012,9 +1012,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301087.41201,
 								["amount"] = -3319,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 1,
-								["spellid"] = 265019,
 							}, -- [1]
 							{
 								["spellname"] = "Baldrick dies",
@@ -1041,23 +1041,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301084.36305,
 								["amount"] = -4212,
+								["spellid"] = 88163,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 26128,
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1541301084.42206,
 								["amount"] = -3180,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 18736,
-								["spellid"] = 265019,
 							}, -- [6]
 							{
 								["ts"] = 1541301084.61307,
 								["amount"] = -3631,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 15105,
-								["spellid"] = 265625,
 							}, -- [7]
 							{
 								["absorb"] = 0,
@@ -1070,9 +1070,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301085.40809,
 								["amount"] = -3457,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 11672,
-								["spellid"] = 265019,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -1085,16 +1085,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301085.97811,
 								["amount"] = -4676,
+								["spellid"] = 88163,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 12129,
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1541301086.10512,
 								["amount"] = -3945,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 3508,
-								["spellid"] = 265625,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -1115,9 +1115,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301086.41515,
 								["amount"] = -3457,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 279,
-								["spellid"] = 265019,
 							}, -- [15]
 							["pos"] = 3,
 						},
@@ -1789,14 +1789,6 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["id"] = 279541,
 					},
-					["Thrash"] = {
-						["name"] = "Thrash",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 329,
-						["auratype"] = "DEBUFF",
-						["id"] = 192090,
-					},
 					["Survival Instincts"] = {
 						["uptime"] = 0,
 						["active"] = 0,
@@ -1804,6 +1796,14 @@ SkadaPerCharDB = {
 						["id"] = 61336,
 						["auratype"] = "BUFF",
 						["name"] = "Survival Instincts",
+					},
+					["Gore"] = {
+						["uptime"] = 34,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 93622,
+						["auratype"] = "BUFF",
+						["name"] = "Gore",
 					},
 					["Moonfire"] = {
 						["name"] = "Moonfire",
@@ -1853,13 +1853,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["name"] = "Dash",
 					},
-					["Gore"] = {
-						["uptime"] = 34,
+					["Thrash"] = {
+						["name"] = "Thrash",
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 93622,
-						["auratype"] = "BUFF",
-						["name"] = "Gore",
+						["uptime"] = 329,
+						["auratype"] = "DEBUFF",
+						["id"] = 192090,
 					},
 					["Bear Form"] = {
 						["uptime"] = 0,
@@ -2115,44 +2115,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303390.91301,
 								["amount"] = -683,
+								["srcname"] = "Reanimated Guardian",
 								["spellid"] = 88163,
 								["hp"] = 12913,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [1]
 							{
 								["ts"] = 1541303391.03602,
 								["amount"] = -642,
+								["srcname"] = "Fallen Deathspeaker",
 								["spellid"] = 88163,
 								["hp"] = 12913,
-								["srcname"] = "Fallen Deathspeaker",
 							}, -- [2]
 							{
 								["ts"] = 1541303391.19803,
 								["amount"] = -4730,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 6858,
-								["spellid"] = 272180,
 							}, -- [3]
 							{
 								["ts"] = 1541303391.60104,
 								["amount"] = -1898,
+								["spellid"] = 266265,
 								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 4960,
-								["spellid"] = 266265,
 							}, -- [4]
 							{
 								["ts"] = 1541303391.90205,
 								["amount"] = -1960,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 3000,
-								["spellid"] = 272180,
 							}, -- [5]
 							{
 								["ts"] = 1541303392.20406,
 								["amount"] = -4857,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1,
-								["spellid"] = 272180,
 							}, -- [6]
 							{
 								["spellname"] = "Durlok dies",
@@ -2163,58 +2163,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303388.61408,
 								["amount"] = -1897,
+								["spellid"] = 266265,
 								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 28334,
-								["spellid"] = 266265,
 							}, -- [8]
 							{
 								["ts"] = 1541303388.90409,
 								["amount"] = -784,
+								["spellid"] = 88163,
 								["srcname"] = "Reanimated Guardian",
 								["hp"] = 27519,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["ts"] = 1541303389.1941,
 								["amount"] = -3780,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 22955,
-								["spellid"] = 272180,
 							}, -- [10]
 							{
 								["ts"] = 1541303389.46811,
 								["amount"] = -2072,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 20883,
-								["spellid"] = 272180,
 							}, -- [11]
 							{
 								["ts"] = 1541303389.61912,
 								["amount"] = -1898,
+								["spellid"] = 266265,
 								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 18985,
-								["spellid"] = 266265,
 							}, -- [12]
 							{
 								["ts"] = 1541303390.21613,
 								["amount"] = -3454,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 15531,
-								["spellid"] = 272180,
 							}, -- [13]
 							{
 								["ts"] = 1541303390.51814,
 								["amount"] = -822,
+								["spellid"] = 88163,
 								["srcname"] = "Reanimated Guardian",
 								["hp"] = 15633,
-								["spellid"] = 88163,
 							}, -- [14]
 							{
 								["ts"] = 1541303390.60815,
 								["amount"] = -1898,
+								["spellid"] = 266265,
 								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 13735,
-								["spellid"] = 266265,
 							}, -- [15]
 							["pos"] = 8,
 						},
@@ -2234,23 +2234,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301825.45302,
 								["amount"] = -15053,
+								["spellid"] = 260455,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7023,
-								["spellid"] = 260455,
 							}, -- [2]
 							{
 								["ts"] = 1541301826.08703,
 								["amount"] = -94,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7023,
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1541301826.15004,
 								["amount"] = -85,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 6929,
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -2263,23 +2263,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301826.64906,
 								["amount"] = -105,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12551,
-								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["ts"] = 1541301827.35807,
 								["amount"] = -1336,
+								["spellid"] = 88163,
 								["srcname"] = "Cragmaw the Infested",
 								["hp"] = 12538,
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1541301827.48008,
 								["amount"] = -16797,
+								["spellid"] = 260455,
 								["srcname"] = "Blood Tick",
 								["hp"] = 1,
-								["spellid"] = 260455,
 							}, -- [8]
 							{
 								["spellname"] = "Durlok dies",
@@ -2290,16 +2290,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301823.4541,
 								["amount"] = -15104,
+								["spellid"] = 260455,
 								["srcname"] = "Blood Tick",
 								["hp"] = 4263,
-								["spellid"] = 260455,
 							}, -- [10]
 							{
 								["ts"] = 1541301823.55111,
 								["amount"] = -78,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 4263,
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1541301824.23312,
@@ -2312,9 +2312,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301824.63213,
 								["amount"] = -76,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 9892,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1541301825.24814,
@@ -2342,93 +2342,93 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301133.55001,
 								["amount"] = -962,
+								["spellid"] = 88163,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 23177,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1541301134.47202,
 								["amount"] = -3510,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 18793,
-								["spellid"] = 265625,
 							}, -- [2]
 							{
 								["ts"] = 1541301134.49903,
 								["amount"] = -1975,
+								["spellid"] = 88163,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 18793,
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1541301135.12904,
 								["amount"] = -2676,
+								["spellid"] = 265084,
 								["srcname"] = "Devout Blood Priest",
 								["hp"] = 14142,
-								["spellid"] = 265084,
 							}, -- [4]
 							{
 								["ts"] = 1541301135.98305,
 								["amount"] = -3466,
+								["srcname"] = "Befouled Spirit",
 								["spellid"] = 265625,
 								["hp"] = 10676,
-								["srcname"] = "Befouled Spirit",
 							}, -- [5]
 							{
 								["ts"] = 1541301137.27406,
 								["amount"] = -474,
+								["spellid"] = 265377,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 10291,
-								["spellid"] = 265377,
 							}, -- [6]
 							{
 								["ts"] = 1541301138.42807,
 								["amount"] = -827,
+								["spellid"] = 88163,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 10291,
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1541301138.64808,
 								["amount"] = -3401,
+								["srcname"] = "Devout Blood Priest",
 								["spellid"] = 265084,
 								["hp"] = 6151,
-								["srcname"] = "Devout Blood Priest",
 							}, -- [8]
 							{
 								["ts"] = 1541301139.28309,
 								["amount"] = -474,
+								["spellid"] = 265377,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 5677,
-								["spellid"] = 265377,
 							}, -- [9]
 							{
 								["ts"] = 1541301139.9801,
 								["amount"] = -3453,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 2224,
-								["spellid"] = 265625,
 							}, -- [10]
 							{
 								["ts"] = 1541301140.63411,
 								["amount"] = -738,
+								["spellid"] = 265376,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 1574,
-								["spellid"] = 265376,
 							}, -- [11]
 							{
 								["ts"] = 1541301141.27712,
 								["amount"] = -474,
+								["spellid"] = 265377,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 1100,
-								["spellid"] = 265377,
 							}, -- [12]
 							{
 								["ts"] = 1541301141.48013,
 								["amount"] = -3430,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 1,
-								["spellid"] = 265625,
 							}, -- [13]
 							{
 								["spellname"] = "Durlok dies",
@@ -2439,9 +2439,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301132.97515,
 								["amount"] = -2737,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 23177,
-								["spellid"] = 265625,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -2491,44 +2491,44 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303977.495,
 						["amount"] = -3450,
+						["spellid"] = 88163,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 87026,
-						["spellid"] = 88163,
 					}, -- [4]
 					{
 						["ts"] = 1541303979.139,
 						["amount"] = -966,
+						["spellid"] = 88163,
 						["srcname"] = "Blood Visage",
 						["hp"] = 83673,
-						["spellid"] = 88163,
 					}, -- [5]
 					{
 						["ts"] = 1541303979.501,
 						["amount"] = -2176,
+						["spellid"] = 88163,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 82707,
-						["spellid"] = 88163,
 					}, -- [6]
 					{
 						["ts"] = 1541303980.396,
 						["amount"] = -1088,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 79539,
-						["spellid"] = 269301,
 					}, -- [7]
 					{
 						["ts"] = 1541303981.514,
 						["amount"] = -2776,
+						["spellid"] = 88163,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 79539,
-						["spellid"] = 88163,
 					}, -- [8]
 					{
 						["ts"] = 1541303976.399,
 						["amount"] = -545,
+						["srcname"] = "Unbound Abomination",
 						["spellid"] = 269301,
 						["hp"] = 84734,
-						["srcname"] = "Unbound Abomination",
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -3071,10 +3071,10 @@ SkadaPerCharDB = {
 						["amount"] = 7531.50000331551,
 						["spells"] = {
 							[203961] = 1937.29999998957,
-							[77758] = 804.900000095367,
-							[33917] = 2984.90000319481,
-							[195707] = 1664.40000003576,
 							[17057] = 140,
+							[77758] = 804.900000095367,
+							[195707] = 1664.40000003576,
+							[33917] = 2984.90000319481,
 						},
 					}, -- [1]
 				},
@@ -3239,14 +3239,6 @@ SkadaPerCharDB = {
 						["id"] = 114923,
 						["auratype"] = "DEBUFF",
 					},
-					["Find Herbs"] = {
-						["uptime"] = 0,
-						["active"] = 0,
-						["school"] = 1,
-						["id"] = 2383,
-						["auratype"] = "BUFF",
-						["name"] = "Find Herbs",
-					},
 					["Sign of the Warrior"] = {
 						["uptime"] = 0,
 						["active"] = 0,
@@ -3262,6 +3254,14 @@ SkadaPerCharDB = {
 						["id"] = 245605,
 						["auratype"] = "BUFF",
 						["name"] = "Dash",
+					},
+					["Find Herbs"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 2383,
+						["auratype"] = "BUFF",
+						["name"] = "Find Herbs",
 					},
 					["Evocation"] = {
 						["uptime"] = 33,
@@ -3394,9 +3394,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303660.42201,
 								["amount"] = -2233,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 28626,
-								["spellid"] = 272180,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -3409,30 +3409,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303661.41903,
 								["amount"] = -2996,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 26133,
-								["spellid"] = 272180,
 							}, -- [3]
 							{
 								["ts"] = 1541303661.86204,
 								["amount"] = -7623,
+								["spellid"] = 272469,
 								["srcname"] = "Abyssal Reach",
 								["hp"] = 18510,
-								["spellid"] = 272469,
 							}, -- [4]
 							{
 								["ts"] = 1541303661.96605,
 								["amount"] = -2546,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 15964,
-								["spellid"] = 272180,
 							}, -- [5]
 							{
 								["ts"] = 1541303662.42206,
 								["amount"] = -2936,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 13028,
-								["spellid"] = 272180,
 							}, -- [6]
 							{
 								["ts"] = 1541303663.22407,
@@ -3445,44 +3445,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303663.43508,
 								["amount"] = -2680,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 10851,
-								["spellid"] = 272180,
 							}, -- [8]
 							{
 								["ts"] = 1541303664.41109,
 								["amount"] = -2546,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 8305,
-								["spellid"] = 272180,
 							}, -- [9]
 							{
 								["ts"] = 1541303664.7111,
 								["amount"] = -2695,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 5610,
-								["spellid"] = 272180,
 							}, -- [10]
 							{
 								["ts"] = 1541303665.41811,
 								["amount"] = -2518,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 3092,
-								["spellid"] = 272180,
 							}, -- [11]
 							{
 								["ts"] = 1541303666.41712,
 								["amount"] = -2532,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 560,
-								["spellid"] = 272180,
 							}, -- [12]
 							{
 								["ts"] = 1541303667.14913,
 								["amount"] = -1895,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1,
-								["spellid"] = 272180,
 							}, -- [13]
 							{
 								["spellname"] = "Gisela dies",
@@ -3524,9 +3524,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303384.60203,
 								["amount"] = -2689,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 63,
-								["spellid"] = 272180,
 							}, -- [3]
 							{
 								["absorb"] = 0,
@@ -3539,9 +3539,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303385.20105,
 								["amount"] = -3496,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1,
-								["spellid"] = 272180,
 							}, -- [5]
 							{
 								["spellname"] = "Gisela dies",
@@ -3568,9 +3568,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303382.20709,
 								["amount"] = -3590,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 6821,
-								["spellid"] = 272180,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -3591,9 +3591,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303383.20612,
 								["amount"] = -4295,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 4463,
-								["spellid"] = 272180,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -3614,9 +3614,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303384.19815,
 								["amount"] = -4218,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1514,
-								["spellid"] = 272180,
 							}, -- [15]
 							["pos"] = 7,
 						},
@@ -3628,100 +3628,100 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301842.49301,
 								["amount"] = -318,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12771,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1541301842.49302,
 								["amount"] = -754,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12771,
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1541301842.49303,
 								["amount"] = -761,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12771,
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1541301842.49304,
 								["amount"] = -303,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12771,
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1541301842.49305,
 								["amount"] = -695,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12771,
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1541301843.08106,
 								["amount"] = -3548,
+								["spellid"] = 260455,
 								["srcname"] = "Blood Tick",
 								["hp"] = 5648,
-								["spellid"] = 260455,
 							}, -- [6]
 							{
 								["ts"] = 1541301843.89607,
 								["amount"] = -412,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 5648,
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1541301843.89608,
 								["amount"] = -313,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 5648,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["ts"] = 1541301843.99609,
 								["amount"] = -315,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 4923,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["ts"] = 1541301843.9961,
 								["amount"] = -383,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 4923,
-								["spellid"] = 88163,
 							}, -- [10]
 							{
 								["ts"] = 1541301843.99611,
 								["amount"] = -361,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 4923,
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1541301843.99612,
 								["amount"] = -568,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 4923,
-								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1541301843.99613,
 								["amount"] = -353,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 4923,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1541301845.07114,
 								["amount"] = -4804,
+								["spellid"] = 260455,
 								["srcname"] = "Blood Tick",
 								["hp"] = 1,
-								["spellid"] = 260455,
 							}, -- [14]
 							{
 								["spellname"] = "Gisela dies",
@@ -3739,37 +3739,37 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301121.11401,
 								["amount"] = -3348,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 11474,
-								["spellid"] = 265019,
 							}, -- [1]
 							{
 								["ts"] = 1541301122.11402,
 								["amount"] = -3452,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 8022,
-								["spellid"] = 265019,
 							}, -- [2]
 							{
 								["ts"] = 1541301123.10803,
 								["amount"] = -3452,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 4570,
-								["spellid"] = 265019,
 							}, -- [3]
 							{
 								["ts"] = 1541301124.11304,
 								["amount"] = -3452,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 1118,
-								["spellid"] = 265019,
 							}, -- [4]
 							{
 								["ts"] = 1541301125.10705,
 								["amount"] = -3452,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 1,
-								["spellid"] = 265019,
 							}, -- [5]
 							{
 								["spellname"] = "Gisela dies",
@@ -3780,30 +3780,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301103.62807,
 								["amount"] = -3349,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 28510,
-								["spellid"] = 265019,
 							}, -- [7]
 							{
 								["ts"] = 1541301104.58108,
 								["amount"] = -563,
+								["srcname"] = "Gisela",
 								["spellid"] = 186439,
 								["hp"] = 27947,
-								["srcname"] = "Gisela",
 							}, -- [8]
 							{
 								["ts"] = 1541301104.63309,
 								["amount"] = -3348,
+								["srcname"] = "Chosen Blood Matron",
 								["spellid"] = 265019,
 								["hp"] = 24599,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [9]
 							{
 								["ts"] = 1541301105.6321,
 								["amount"] = -3348,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 21251,
-								["spellid"] = 265019,
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -3816,23 +3816,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301106.64312,
 								["amount"] = -3349,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 23530,
-								["spellid"] = 265019,
 							}, -- [12]
 							{
 								["ts"] = 1541301107.62713,
 								["amount"] = -3348,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 20182,
-								["spellid"] = 265019,
 							}, -- [13]
 							{
 								["ts"] = 1541301113.38914,
 								["amount"] = -4448,
+								["spellid"] = 265016,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 15734,
-								["spellid"] = 265016,
 							}, -- [14]
 							{
 								["ts"] = 1541301120.10715,
@@ -3860,65 +3860,65 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541300920.23502,
 								["amount"] = -3452,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 20704,
-								["spellid"] = 265019,
 							}, -- [2]
 							{
 								["ts"] = 1541300920.48803,
 								["amount"] = -2507,
+								["spellid"] = 265542,
 								["srcname"] = "Fetid Maggot",
 								["hp"] = 18197,
-								["spellid"] = 265542,
 							}, -- [3]
 							{
 								["ts"] = 1541300921.00404,
 								["amount"] = -2548,
+								["spellid"] = 265542,
 								["srcname"] = "Fetid Maggot",
 								["hp"] = 15649,
-								["spellid"] = 265542,
 							}, -- [4]
 							{
 								["ts"] = 1541300921.24905,
 								["amount"] = -3451,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 12198,
-								["spellid"] = 265019,
 							}, -- [5]
 							{
 								["ts"] = 1541300921.50806,
 								["amount"] = -2513,
+								["spellid"] = 265542,
 								["srcname"] = "Fetid Maggot",
 								["hp"] = 9685,
-								["spellid"] = 265542,
 							}, -- [6]
 							{
 								["ts"] = 1541300922.01607,
 								["amount"] = -2487,
+								["spellid"] = 265542,
 								["srcname"] = "Fetid Maggot",
 								["hp"] = 7198,
-								["spellid"] = 265542,
 							}, -- [7]
 							{
 								["ts"] = 1541300922.22708,
 								["amount"] = -3452,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 3746,
-								["spellid"] = 265019,
 							}, -- [8]
 							{
 								["ts"] = 1541300923.23709,
 								["amount"] = -3452,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 294,
-								["spellid"] = 265019,
 							}, -- [9]
 							{
 								["ts"] = 1541300924.2451,
 								["amount"] = -3451,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 1,
-								["spellid"] = 265019,
 							}, -- [10]
 							{
 								["spellname"] = "Gisela dies",
@@ -4367,9 +4367,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303976.399,
 						["amount"] = -3198,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 36925,
-						["spellid"] = 269301,
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -4390,16 +4390,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303980.396,
 						["amount"] = -3838,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 45773,
-						["spellid"] = 269301,
 					}, -- [4]
 					{
 						["ts"] = 1541303956.405,
 						["amount"] = -1919,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 44086,
-						["spellid"] = 269301,
 					}, -- [5]
 					{
 						["ts"] = 1541303957.226,
@@ -4420,9 +4420,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303960.397,
 						["amount"] = -1919,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 43826,
-						["spellid"] = 269301,
 					}, -- [8]
 					{
 						["ts"] = 1541303962.107,
@@ -4435,9 +4435,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303964.393,
 						["amount"] = -2558,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 47668,
-						["spellid"] = 269301,
 					}, -- [10]
 					{
 						["ts"] = 1541303964.606,
@@ -4450,9 +4450,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303968.411,
 						["amount"] = -2558,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 47668,
-						["spellid"] = 269301,
 					}, -- [12]
 					{
 						["ts"] = 1541303972.235,
@@ -4465,16 +4465,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303972.383,
 						["amount"] = -3198,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 46102,
-						["spellid"] = 269301,
 					}, -- [14]
 					{
 						["ts"] = 1541303974.989,
 						["amount"] = -5979,
+						["spellid"] = 269843,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 40123,
-						["spellid"] = 269843,
 					}, -- [15]
 					["pos"] = 5,
 				},
@@ -4824,100 +4824,100 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301843.57401,
 								["amount"] = -271,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1541301843.57402,
 								["amount"] = -279,
+								["spellid"] = 88163,
 								["hp"] = 11444,
 								["srcname"] = "Blood Tick",
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1541301843.57403,
 								["amount"] = -249,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1541301843.57404,
 								["amount"] = -224,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1541301843.57405,
 								["amount"] = -232,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1541301843.57406,
 								["amount"] = -265,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["ts"] = 1541301843.57407,
 								["amount"] = -306,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1541301843.57408,
 								["amount"] = -220,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["ts"] = 1541301843.57409,
 								["amount"] = -479,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["ts"] = 1541301843.5891,
 								["amount"] = -280,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [10]
 							{
 								["ts"] = 1541301843.58911,
 								["amount"] = -532,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 11444,
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1541301843.99612,
 								["amount"] = -278,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 8107,
-								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1541301844.58513,
 								["amount"] = -215,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 7829,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["ts"] = 1541301845.07114,
 								["amount"] = -10114,
+								["spellid"] = 260455,
 								["srcname"] = "Blood Tick",
 								["hp"] = 1,
-								["spellid"] = 260455,
 							}, -- [14]
 							{
 								["spellname"] = "Mistic dies",
@@ -4935,16 +4935,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301113.76401,
 								["amount"] = -3141,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 18877,
-								["spellid"] = 265625,
 							}, -- [1]
 							{
 								["ts"] = 1541301113.85802,
 								["amount"] = -3095,
+								["spellid"] = 265084,
 								["srcname"] = "Devout Blood Priest",
 								["hp"] = 15782,
-								["spellid"] = 265084,
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -4957,72 +4957,72 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301114.64504,
 								["amount"] = -1556,
+								["spellid"] = 265377,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 19854,
-								["spellid"] = 265377,
 							}, -- [4]
 							{
 								["ts"] = 1541301115.19405,
 								["amount"] = -281,
+								["spellid"] = 186439,
 								["srcname"] = "Mistic",
 								["hp"] = 19573,
-								["spellid"] = 186439,
 							}, -- [5]
 							{
 								["ts"] = 1541301115.26806,
 								["amount"] = -3249,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 16324,
-								["spellid"] = 265625,
 							}, -- [6]
 							{
 								["ts"] = 1541301116.30407,
 								["amount"] = -2809,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 13515,
-								["spellid"] = 265019,
 							}, -- [7]
 							{
 								["ts"] = 1541301116.64808,
 								["amount"] = -1556,
+								["spellid"] = 265377,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 11959,
-								["spellid"] = 265377,
 							}, -- [8]
 							{
 								["ts"] = 1541301116.75909,
 								["amount"] = -3287,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 8672,
-								["spellid"] = 265625,
 							}, -- [9]
 							{
 								["ts"] = 1541301117.3101,
 								["amount"] = -2809,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 5863,
-								["spellid"] = 265019,
 							}, -- [10]
 							{
 								["ts"] = 1541301117.73011,
 								["amount"] = -2475,
+								["spellid"] = 265376,
 								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 3388,
-								["spellid"] = 265376,
 							}, -- [11]
 							{
 								["ts"] = 1541301118.27912,
 								["amount"] = -3284,
+								["spellid"] = 265625,
 								["srcname"] = "Befouled Spirit",
 								["hp"] = 104,
-								["spellid"] = 265625,
 							}, -- [12]
 							{
 								["ts"] = 1541301118.32413,
 								["amount"] = -2809,
+								["spellid"] = 265019,
 								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 1,
-								["spellid"] = 265019,
 							}, -- [13]
 							{
 								["spellname"] = "Mistic dies",
@@ -5033,9 +5033,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301113.25415,
 								["amount"] = -1126,
+								["spellid"] = 186439,
 								["srcname"] = "Mistic",
 								["hp"] = 22018,
-								["spellid"] = 186439,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -5143,9 +5143,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541302760.952,
 						["amount"] = -897,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 37869,
-						["spellid"] = 186439,
 					}, -- [6]
 					{
 						["absorb"] = 0,
@@ -5158,58 +5158,58 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541302761.958,
 						["amount"] = -897,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 37869,
-						["spellid"] = 186439,
 					}, -- [8]
 					{
 						["ts"] = 1541302762.95,
 						["amount"] = -896,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 36973,
-						["spellid"] = 186439,
 					}, -- [9]
 					{
 						["ts"] = 1541302763.942,
 						["amount"] = -897,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 36076,
-						["spellid"] = 186439,
 					}, -- [10]
 					{
 						["ts"] = 1541302764.952,
 						["amount"] = -897,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 35179,
-						["spellid"] = 186439,
 					}, -- [11]
 					{
 						["ts"] = 1541302765.956,
 						["amount"] = -897,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 34282,
-						["spellid"] = 186439,
 					}, -- [12]
 					{
 						["ts"] = 1541302766.948,
 						["amount"] = -897,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 33385,
-						["spellid"] = 186439,
 					}, -- [13]
 					{
 						["ts"] = 1541302767.961,
 						["amount"] = -897,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 32488,
-						["spellid"] = 186439,
 					}, -- [14]
 					{
 						["ts"] = 1541302768.954,
 						["amount"] = -688,
+						["spellid"] = 186439,
 						["srcname"] = "Mistic",
 						["hp"] = 31800,
-						["spellid"] = 186439,
 					}, -- [15]
 					["pos"] = 6,
 				},
@@ -5580,7 +5580,7 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 35,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 79,
 				["damagespells"] = {
@@ -5603,7 +5603,8 @@ SkadaPerCharDB = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Direhorn Hatchling",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -5616,8 +5617,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Direhorn Hatchling",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -5653,14 +5653,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69792-00005E5C13",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -5673,8 +5674,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -5710,14 +5710,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69791-00005E5C13",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -5730,8 +5731,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -5767,14 +5767,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69792-00005E5C5B",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -5787,8 +5788,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -5824,14 +5824,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69791-00005E5C5B",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -5844,8 +5845,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -5881,14 +5881,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69792-00005E5E77",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -5901,8 +5902,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -5938,14 +5938,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69791-00005E5E77",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -5958,8 +5959,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -5995,14 +5995,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69792-00005E5EB0",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -6015,8 +6016,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -6052,14 +6052,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69791-00005E5EB0",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -6072,8 +6073,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -6109,14 +6109,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69792-00005E5EDE",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -6129,8 +6130,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -6166,14 +6166,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69791-00005E5EDE",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -6186,8 +6187,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -6223,14 +6223,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69792-00005E5F24",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -6243,8 +6244,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Earth Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -6280,14 +6280,15 @@ SkadaPerCharDB = {
 				["interrupts"] = 0,
 				["time"] = 0,
 				["alertDamage"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["damage"] = 0,
 				["damagespells"] = {
 				},
 				["healing"] = 0,
 				["damagetaken"] = 0,
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["id"] = "Creature-0-3134-1642-6792-69791-00005E5F24",
 				["maxhp"] = 0,
 				["ffdamagedonetargets"] = {
@@ -6300,8 +6301,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Fire Spirit",
 				["alertCount"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["ffdamagedone"] = 0,
 				["alert"] = {
 				},
@@ -6589,16 +6589,115 @@ SkadaPerCharDB = {
 				["overhealing"] = 0,
 				["interrupts"] = 0,
 				["time"] = 148,
-				["power"] = {
-					[9] = {
-						["amount"] = 65,
-						["spells"] = {
-							[24275] = 4,
-							[35395] = 26,
-							[220637] = 13,
-							[184575] = 22,
-						},
-					},
+				["deathlog"] = {
+					{
+						["ts"] = 1541301083.101,
+						["amount"] = -3852,
+						["spellid"] = 265625,
+						["srcname"] = "Befouled Spirit",
+						["hp"] = 21967,
+					}, -- [1]
+					{
+						["ts"] = 1541301084.613,
+						["amount"] = -3763,
+						["spellid"] = 265625,
+						["srcname"] = "Befouled Spirit",
+						["hp"] = 19560,
+					}, -- [2]
+					{
+						["ts"] = 1541301091.407,
+						["amount"] = -2722,
+						["spellid"] = 265625,
+						["srcname"] = "Befouled Spirit",
+						["hp"] = 17819,
+					}, -- [3]
+					{
+						["ts"] = 1541301092.895,
+						["amount"] = -2681,
+						["spellid"] = 265625,
+						["srcname"] = "Befouled Spirit",
+						["hp"] = 16104,
+					}, -- [4]
+					{
+						["ts"] = 1541301094.403,
+						["amount"] = -2715,
+						["spellid"] = 265625,
+						["srcname"] = "Befouled Spirit",
+						["hp"] = 0,
+					}, -- [5]
+					{
+						["ts"] = 1541301076.233,
+						["amount"] = -3724,
+						["spellid"] = 265625,
+						["srcname"] = "Befouled Spirit",
+						["hp"] = 22493,
+					}, -- [6]
+					{
+						["ts"] = 1541301076.644,
+						["amount"] = -603,
+						["spellid"] = 186439,
+						["srcname"] = "Monsieurmomi-ArgentDawn",
+						["hp"] = 22204,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 6364,
+						["ts"] = 1541301076.917,
+						["hp"] = 25023,
+						["spellid"] = 186263,
+						["srcname"] = "Mistic",
+					}, -- [8]
+					{
+						["ts"] = 1541301077.64,
+						["amount"] = -904,
+						["spellid"] = 186439,
+						["srcname"] = "Monsieurmomi-ArgentDawn",
+						["hp"] = 24590,
+					}, -- [9]
+					{
+						["ts"] = 1541301077.734,
+						["amount"] = -3754,
+						["spellid"] = 265625,
+						["srcname"] = "Befouled Spirit",
+						["hp"] = 22189,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 6364,
+						["ts"] = 1541301078.188,
+						["hp"] = 25008,
+						["spellid"] = 186263,
+						["srcname"] = "Mistic",
+					}, -- [11]
+					{
+						["ts"] = 1541301079.204,
+						["amount"] = -300,
+						["spellid"] = 186439,
+						["srcname"] = "Monsieurmomi-ArgentDawn",
+						["hp"] = 24864,
+					}, -- [12]
+					{
+						["ts"] = 1541301080.192,
+						["amount"] = -302,
+						["spellid"] = 186439,
+						["srcname"] = "Monsieurmomi-ArgentDawn",
+						["hp"] = 24719,
+					}, -- [13]
+					{
+						["ts"] = 1541301081.194,
+						["amount"] = -300,
+						["spellid"] = 186439,
+						["srcname"] = "Monsieurmomi-ArgentDawn",
+						["hp"] = 24575,
+					}, -- [14]
+					{
+						["ts"] = 1541301082.201,
+						["amount"] = -300,
+						["spellid"] = 186439,
+						["srcname"] = "Monsieurmomi-ArgentDawn",
+						["hp"] = 24431,
+					}, -- [15]
+					["pos"] = 6,
 				},
 				["healing"] = 0,
 				["damage"] = 306001,
@@ -6715,7 +6814,17 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["damagetaken"] = 88649,
-				["shielding"] = 0,
+				["power"] = {
+					[9] = {
+						["amount"] = 65,
+						["spells"] = {
+							[24275] = 4,
+							[35395] = 26,
+							[220637] = 13,
+							[184575] = 22,
+						},
+					},
+				},
 				["id"] = "Player-75-04B7A587",
 				["maxhp"] = 28750,
 				["ffdamagedone"] = 0,
@@ -6750,6 +6859,21 @@ SkadaPerCharDB = {
 						["max"] = 2159,
 						["damage"] = 4307,
 					},
+					["Blood Maw"] = {
+						["crushing"] = 0,
+						["id"] = 265533,
+						["absorbed"] = 0,
+						["min"] = 231,
+						["critical"] = 0,
+						["glancing"] = 0,
+						["school"] = 1,
+						["name"] = "Blood Maw",
+						["blocked"] = 0,
+						["totalhits"] = 2,
+						["resisted"] = 0,
+						["max"] = 692,
+						["damage"] = 923,
+					},
 					["Rotten Bile"] = {
 						["crushing"] = 0,
 						["id"] = 265542,
@@ -6780,21 +6904,6 @@ SkadaPerCharDB = {
 						["max"] = 904,
 						["damage"] = 9296,
 					},
-					["Blood Maw"] = {
-						["crushing"] = 0,
-						["id"] = 265533,
-						["absorbed"] = 0,
-						["min"] = 231,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["school"] = 1,
-						["name"] = "Blood Maw",
-						["blocked"] = 0,
-						["totalhits"] = 2,
-						["resisted"] = 0,
-						["max"] = 692,
-						["damage"] = 923,
-					},
 					["Hooked Snare"] = {
 						["crushing"] = 0,
 						["id"] = 265377,
@@ -6817,116 +6926,7 @@ SkadaPerCharDB = {
 				},
 				["name"] = "Monsieurmomi",
 				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["ts"] = 1541301083.101,
-						["amount"] = -3852,
-						["srcname"] = "Befouled Spirit",
-						["hp"] = 21967,
-						["spellid"] = 265625,
-					}, -- [1]
-					{
-						["ts"] = 1541301084.613,
-						["amount"] = -3763,
-						["srcname"] = "Befouled Spirit",
-						["hp"] = 19560,
-						["spellid"] = 265625,
-					}, -- [2]
-					{
-						["ts"] = 1541301091.407,
-						["amount"] = -2722,
-						["srcname"] = "Befouled Spirit",
-						["hp"] = 17819,
-						["spellid"] = 265625,
-					}, -- [3]
-					{
-						["ts"] = 1541301092.895,
-						["amount"] = -2681,
-						["srcname"] = "Befouled Spirit",
-						["hp"] = 16104,
-						["spellid"] = 265625,
-					}, -- [4]
-					{
-						["ts"] = 1541301094.403,
-						["amount"] = -2715,
-						["srcname"] = "Befouled Spirit",
-						["hp"] = 0,
-						["spellid"] = 265625,
-					}, -- [5]
-					{
-						["ts"] = 1541301076.233,
-						["amount"] = -3724,
-						["srcname"] = "Befouled Spirit",
-						["hp"] = 22493,
-						["spellid"] = 265625,
-					}, -- [6]
-					{
-						["ts"] = 1541301076.644,
-						["amount"] = -603,
-						["srcname"] = "Monsieurmomi-ArgentDawn",
-						["hp"] = 22204,
-						["spellid"] = 186439,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 6364,
-						["ts"] = 1541301076.917,
-						["hp"] = 25023,
-						["spellid"] = 186263,
-						["srcname"] = "Mistic",
-					}, -- [8]
-					{
-						["ts"] = 1541301077.64,
-						["amount"] = -904,
-						["srcname"] = "Monsieurmomi-ArgentDawn",
-						["hp"] = 24590,
-						["spellid"] = 186439,
-					}, -- [9]
-					{
-						["ts"] = 1541301077.734,
-						["amount"] = -3754,
-						["srcname"] = "Befouled Spirit",
-						["hp"] = 22189,
-						["spellid"] = 265625,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 6364,
-						["ts"] = 1541301078.188,
-						["hp"] = 25008,
-						["spellid"] = 186263,
-						["srcname"] = "Mistic",
-					}, -- [11]
-					{
-						["ts"] = 1541301079.204,
-						["amount"] = -300,
-						["srcname"] = "Monsieurmomi-ArgentDawn",
-						["hp"] = 24864,
-						["spellid"] = 186439,
-					}, -- [12]
-					{
-						["ts"] = 1541301080.192,
-						["amount"] = -302,
-						["srcname"] = "Monsieurmomi-ArgentDawn",
-						["hp"] = 24719,
-						["spellid"] = 186439,
-					}, -- [13]
-					{
-						["ts"] = 1541301081.194,
-						["amount"] = -300,
-						["srcname"] = "Monsieurmomi-ArgentDawn",
-						["hp"] = 24575,
-						["spellid"] = 186439,
-					}, -- [14]
-					{
-						["ts"] = 1541301082.201,
-						["amount"] = -300,
-						["srcname"] = "Monsieurmomi-ArgentDawn",
-						["hp"] = 24431,
-						["spellid"] = 186439,
-					}, -- [15]
-					["pos"] = 6,
-				},
+				["shielding"] = 0,
 				["alertDamage"] = 0,
 				["alert"] = {
 				},
@@ -7525,13 +7525,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["uptime"] = 2336,
 					},
-					["Consume Whole"] = {
-						["name"] = "Consume Whole",
+					["Moonfire"] = {
+						["uptime"] = 253,
 						["active"] = 0,
-						["school"] = 1,
-						["id"] = 274105,
-						["auratype"] = "BUFF",
-						["uptime"] = 10,
+						["school"] = 64,
+						["id"] = 164812,
+						["auratype"] = "DEBUFF",
+						["name"] = "Moonfire",
 					},
 					["Clearcasting"] = {
 						["name"] = "Clearcasting",
@@ -7557,13 +7557,13 @@ SkadaPerCharDB = {
 						["name"] = "Owlkin Frenzy",
 						["id"] = 157228,
 					},
-					["Cat Form"] = {
-						["uptime"] = 81,
+					["Consume Whole"] = {
+						["name"] = "Consume Whole",
 						["active"] = 0,
 						["school"] = 1,
-						["id"] = 768,
+						["id"] = 274105,
 						["auratype"] = "BUFF",
-						["name"] = "Cat Form",
+						["uptime"] = 10,
 					},
 					["Barkskin"] = {
 						["name"] = "Barkskin",
@@ -7573,13 +7573,13 @@ SkadaPerCharDB = {
 						["auratype"] = "BUFF",
 						["school"] = 8,
 					},
-					["Moonfire"] = {
-						["uptime"] = 253,
+					["Cat Form"] = {
+						["uptime"] = 81,
 						["active"] = 0,
-						["school"] = 64,
-						["id"] = 164812,
-						["auratype"] = "DEBUFF",
-						["name"] = "Moonfire",
+						["school"] = 1,
+						["id"] = 768,
+						["auratype"] = "BUFF",
+						["name"] = "Cat Form",
 					},
 					["Dungeon Preparation"] = {
 						["name"] = "Dungeon Preparation",
@@ -7818,9 +7818,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303676.86901,
 								["amount"] = -2546,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 12590,
-								["spellid"] = 272180,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -7833,23 +7833,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303677.42903,
 								["amount"] = -5840,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 8195,
-								["spellid"] = 272180,
 							}, -- [3]
 							{
 								["ts"] = 1541303678.41504,
 								["amount"] = -5135,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 3060,
-								["spellid"] = 272180,
 							}, -- [4]
 							{
 								["ts"] = 1541303678.77605,
 								["amount"] = -1850,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1210,
-								["spellid"] = 272180,
 							}, -- [5]
 							{
 								["ts"] = 1541303679.22806,
@@ -7862,9 +7862,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303679.30207,
 								["amount"] = -2632,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1,
-								["spellid"] = 272180,
 							}, -- [7]
 							{
 								["spellname"] = "Gliceas dies",
@@ -7875,23 +7875,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303674.41309,
 								["amount"] = -3792,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 27308,
-								["spellid"] = 272180,
 							}, -- [9]
 							{
 								["ts"] = 1541303674.4261,
 								["amount"] = -1500,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 25808,
-								["spellid"] = 272180,
 							}, -- [10]
 							{
 								["ts"] = 1541303674.42611,
 								["amount"] = -1612,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 24196,
-								["spellid"] = 272180,
 							}, -- [11]
 							{
 								["ts"] = 1541303675.22412,
@@ -7904,23 +7904,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303675.41513,
 								["amount"] = -3046,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 22360,
-								["spellid"] = 272180,
 							}, -- [13]
 							{
 								["ts"] = 1541303676.40614,
 								["amount"] = -4860,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 17500,
-								["spellid"] = 272180,
 							}, -- [14]
 							{
 								["ts"] = 1541303676.45615,
 								["amount"] = -2364,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 15136,
-								["spellid"] = 272180,
 							}, -- [15]
 							["pos"] = 9,
 						},
@@ -7932,9 +7932,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303379.21101,
 								["amount"] = -3445,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 21382,
-								["spellid"] = 272180,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -7955,16 +7955,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303379.72904,
 								["amount"] = -2511,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 15381,
-								["spellid"] = 272180,
 							}, -- [4]
 							{
 								["ts"] = 1541303380.21105,
 								["amount"] = -3070,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 12311,
-								["spellid"] = 272180,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -7977,16 +7977,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303380.58007,
 								["amount"] = -2607,
+								["spellid"] = 88163,
 								["srcname"] = "Reanimated Guardian",
 								["hp"] = 13900,
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1541303381.20908,
 								["amount"] = -3033,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 8260,
-								["spellid"] = 272180,
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -8007,30 +8007,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541303381.61911,
 								["amount"] = -2134,
+								["spellid"] = 266265,
 								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 7417,
-								["spellid"] = 266265,
 							}, -- [11]
 							{
 								["ts"] = 1541303382.16712,
 								["amount"] = -2475,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 4942,
-								["spellid"] = 272180,
 							}, -- [12]
 							{
 								["ts"] = 1541303382.20713,
 								["amount"] = -3374,
+								["spellid"] = 272180,
 								["srcname"] = "Grotesque Horror",
 								["hp"] = 1568,
-								["spellid"] = 272180,
 							}, -- [13]
 							{
 								["ts"] = 1541303382.64614,
 								["amount"] = -2135,
+								["spellid"] = 266265,
 								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 1,
-								["spellid"] = 266265,
 							}, -- [14]
 							{
 								["spellname"] = "Gliceas dies",
@@ -8048,93 +8048,93 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301834.51701,
 								["amount"] = -227,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12987,
-								["spellid"] = 88163,
 							}, -- [1]
 							{
 								["ts"] = 1541301834.51702,
 								["amount"] = -246,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12987,
-								["spellid"] = 88163,
 							}, -- [2]
 							{
 								["ts"] = 1541301834.51703,
 								["amount"] = -191,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12987,
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1541301834.59004,
 								["amount"] = -223,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12987,
-								["spellid"] = 88163,
 							}, -- [4]
 							{
 								["ts"] = 1541301834.65105,
 								["amount"] = -276,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 10679,
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1541301834.65106,
 								["amount"] = -279,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 10679,
-								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["ts"] = 1541301835.31607,
 								["amount"] = -171,
+								["spellid"] = 88163,
 								["hp"] = 10124,
 								["srcname"] = "Blood Tick",
-								["spellid"] = 88163,
 							}, -- [7]
 							{
 								["ts"] = 1541301835.50808,
 								["amount"] = -227,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 9953,
-								["spellid"] = 88163,
 							}, -- [8]
 							{
 								["ts"] = 1541301835.50809,
 								["amount"] = -175,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 9953,
-								["spellid"] = 88163,
 							}, -- [9]
 							{
 								["ts"] = 1541301835.5081,
 								["amount"] = -215,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 9953,
-								["spellid"] = 88163,
 							}, -- [10]
 							{
 								["ts"] = 1541301835.50811,
 								["amount"] = -203,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 9953,
-								["spellid"] = 88163,
 							}, -- [11]
 							{
 								["ts"] = 1541301835.50812,
 								["amount"] = -190,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 9953,
-								["spellid"] = 88163,
 							}, -- [12]
 							{
 								["ts"] = 1541301835.58713,
 								["amount"] = -12733,
+								["spellid"] = 260455,
 								["srcname"] = "Blood Tick",
 								["hp"] = 1,
-								["spellid"] = 260455,
 							}, -- [13]
 							{
 								["spellname"] = "Gliceas dies",
@@ -8145,9 +8145,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541301834.51615,
 								["amount"] = -197,
+								["spellid"] = 88163,
 								["srcname"] = "Blood Tick",
 								["hp"] = 12987,
-								["spellid"] = 88163,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -8189,7 +8189,21 @@ SkadaPerCharDB = {
 						["class"] = "MONK",
 						["shielding"] = 0,
 					},
+					["Creature-0-3134-1841-3495-69791-00005E6C3B"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Baldrick",
+						["amount"] = 0,
+						["class"] = "MONK",
+						["shielding"] = 0,
+					},
 					["Creature-0-3134-1841-3495-69792-00005E6C3B"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Baldrick",
+						["amount"] = 0,
+						["class"] = "MONK",
+						["shielding"] = 0,
+					},
+					["Creature-0-3134-1841-3495-69792-00005E6C4D"] = {
 						["role"] = "DAMAGER",
 						["name"] = "Baldrick",
 						["amount"] = 0,
@@ -8201,20 +8215,6 @@ SkadaPerCharDB = {
 						["name"] = "Alisonjo-Farstriders",
 						["amount"] = 1632,
 						["class"] = "PALADIN",
-						["shielding"] = 0,
-					},
-					["Creature-0-3134-1841-3495-69792-00005E6C4D"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Baldrick",
-						["amount"] = 0,
-						["class"] = "MONK",
-						["shielding"] = 0,
-					},
-					["Creature-0-3134-1841-3495-69791-00005E6C3B"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Baldrick",
-						["amount"] = 0,
-						["class"] = "MONK",
 						["shielding"] = 0,
 					},
 					["Player-74-0BD37321"] = {
@@ -8715,9 +8715,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303980.396,
 						["amount"] = -1883,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 46256,
-						["spellid"] = 269301,
 					}, -- [3]
 					{
 						["hp"] = 42145,
@@ -8742,9 +8742,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303960.397,
 						["amount"] = -5650,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 33848,
-						["spellid"] = 269301,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -8781,9 +8781,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303968.394,
 						["amount"] = -628,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 47511,
-						["spellid"] = 269301,
 					}, -- [12]
 					{
 						["ts"] = 1541303968.411,
@@ -8796,16 +8796,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303972.383,
 						["amount"] = -628,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 47511,
-						["spellid"] = 269301,
 					}, -- [14]
 					{
 						["ts"] = 1541303976.399,
 						["amount"] = -1255,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 46256,
-						["spellid"] = 269301,
 					}, -- [15]
 					["pos"] = 7,
 				},
@@ -11724,9 +11724,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303976.399,
 						["amount"] = -6922,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 29609,
-						["spellid"] = 269301,
 					}, -- [2]
 					{
 						["absorb"] = 0,
@@ -11763,9 +11763,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303980.396,
 						["amount"] = -7550,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 30116,
-						["spellid"] = 269301,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -11794,9 +11794,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1541303972.383,
 						["amount"] = -6293,
+						["spellid"] = 269301,
 						["srcname"] = "Unbound Abomination",
 						["hp"] = 33057,
-						["spellid"] = 269301,
 					}, -- [11]
 					{
 						["absorb"] = 0,
@@ -14369,6 +14369,23 @@ SkadaPerCharDB = {
 							["max"] = 3338,
 							["damage"] = 23130,
 						},
+						["Thrash"] = {
+							["hitamount"] = 52628,
+							["hitmin"] = 81,
+							["criticalmin"] = 351,
+							["id"] = 77758,
+							["criticalamount"] = 2410,
+							["critical"] = 2,
+							["school"] = 1,
+							["min"] = 81,
+							["criticalmax"] = 2059,
+							["hitmax"] = 5181,
+							["ABSORB"] = 44,
+							["totalhits"] = 107,
+							["hit"] = 61,
+							["max"] = 5181,
+							["damage"] = 55038,
+						},
 						["Mangle"] = {
 							["hitmin"] = 2683,
 							["id"] = 33917,
@@ -14394,23 +14411,6 @@ SkadaPerCharDB = {
 							["max"] = 5745,
 							["totalhits"] = 2,
 							["damage"] = 5745,
-						},
-						["Thrash"] = {
-							["hitamount"] = 52628,
-							["hitmin"] = 81,
-							["criticalmin"] = 351,
-							["id"] = 77758,
-							["criticalamount"] = 2410,
-							["critical"] = 2,
-							["school"] = 1,
-							["min"] = 81,
-							["criticalmax"] = 2059,
-							["hitmax"] = 5181,
-							["ABSORB"] = 44,
-							["totalhits"] = 107,
-							["hit"] = 61,
-							["max"] = 5181,
-							["damage"] = 55038,
 						},
 						["Moonfire"] = {
 							["hitamount"] = 95892,
@@ -15507,14 +15507,6 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 12,
 						},
-						["Dawning Sun"] = {
-							["name"] = "Dawning Sun",
-							["active"] = 0,
-							["school"] = 1,
-							["id"] = 276154,
-							["auratype"] = "BUFF",
-							["uptime"] = 55,
-						},
 						["Sunfire"] = {
 							["name"] = "Sunfire",
 							["active"] = 0,
@@ -15530,6 +15522,14 @@ SkadaPerCharDB = {
 							["id"] = 164547,
 							["auratype"] = "BUFF",
 							["uptime"] = 21,
+						},
+						["Dawning Sun"] = {
+							["name"] = "Dawning Sun",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 276154,
+							["auratype"] = "BUFF",
+							["uptime"] = 55,
 						},
 						["Incarnation: Chosen of Elune"] = {
 							["name"] = "Incarnation: Chosen of Elune",
@@ -15922,9 +15922,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303944.39508,
 									["amount"] = -2858,
+									["spellid"] = 269301,
 									["srcname"] = "Unbound Abomination",
 									["hp"] = 5979,
-									["spellid"] = 269301,
 								}, -- [8]
 								{
 									["absorb"] = 0,
@@ -19430,9 +19430,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303660.42201,
 									["amount"] = -2233,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 28626,
-									["spellid"] = 272180,
 								}, -- [1]
 								{
 									["absorb"] = 0,
@@ -19445,30 +19445,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303661.41903,
 									["amount"] = -2996,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 26133,
-									["spellid"] = 272180,
 								}, -- [3]
 								{
 									["ts"] = 1541303661.86204,
 									["amount"] = -7623,
+									["spellid"] = 272469,
 									["srcname"] = "Abyssal Reach",
 									["hp"] = 18510,
-									["spellid"] = 272469,
 								}, -- [4]
 								{
 									["ts"] = 1541303661.96605,
 									["amount"] = -2546,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 15964,
-									["spellid"] = 272180,
 								}, -- [5]
 								{
 									["ts"] = 1541303662.42206,
 									["amount"] = -2936,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 13028,
-									["spellid"] = 272180,
 								}, -- [6]
 								{
 									["ts"] = 1541303663.22407,
@@ -19481,44 +19481,44 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303663.43508,
 									["amount"] = -2680,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 10851,
-									["spellid"] = 272180,
 								}, -- [8]
 								{
 									["ts"] = 1541303664.41109,
 									["amount"] = -2546,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 8305,
-									["spellid"] = 272180,
 								}, -- [9]
 								{
 									["ts"] = 1541303664.7111,
 									["amount"] = -2695,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 5610,
-									["spellid"] = 272180,
 								}, -- [10]
 								{
 									["ts"] = 1541303665.41811,
 									["amount"] = -2518,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 3092,
-									["spellid"] = 272180,
 								}, -- [11]
 								{
 									["ts"] = 1541303666.41712,
 									["amount"] = -2532,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 560,
-									["spellid"] = 272180,
 								}, -- [12]
 								{
 									["ts"] = 1541303667.14913,
 									["amount"] = -1895,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1,
-									["spellid"] = 272180,
 								}, -- [13]
 								{
 									["spellname"] = "Gisela dies",
@@ -19794,9 +19794,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303676.86901,
 									["amount"] = -2546,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 12590,
-									["spellid"] = 272180,
 								}, -- [1]
 								{
 									["absorb"] = 0,
@@ -19809,23 +19809,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303677.42903,
 									["amount"] = -5840,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 8195,
-									["spellid"] = 272180,
 								}, -- [3]
 								{
 									["ts"] = 1541303678.41504,
 									["amount"] = -5135,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 3060,
-									["spellid"] = 272180,
 								}, -- [4]
 								{
 									["ts"] = 1541303678.77605,
 									["amount"] = -1850,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1210,
-									["spellid"] = 272180,
 								}, -- [5]
 								{
 									["ts"] = 1541303679.22806,
@@ -19838,9 +19838,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303679.30207,
 									["amount"] = -2632,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1,
-									["spellid"] = 272180,
 								}, -- [7]
 								{
 									["spellname"] = "Gliceas dies",
@@ -19851,23 +19851,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303674.41309,
 									["amount"] = -3792,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 27308,
-									["spellid"] = 272180,
 								}, -- [9]
 								{
 									["ts"] = 1541303674.4261,
 									["amount"] = -1500,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 25808,
-									["spellid"] = 272180,
 								}, -- [10]
 								{
 									["ts"] = 1541303674.42611,
 									["amount"] = -1612,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 24196,
-									["spellid"] = 272180,
 								}, -- [11]
 								{
 									["ts"] = 1541303675.22412,
@@ -19880,23 +19880,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303675.41513,
 									["amount"] = -3046,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 22360,
-									["spellid"] = 272180,
 								}, -- [13]
 								{
 									["ts"] = 1541303676.40614,
 									["amount"] = -4860,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 17500,
-									["spellid"] = 272180,
 								}, -- [14]
 								{
 									["ts"] = 1541303676.45615,
 									["amount"] = -2364,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 15136,
-									["spellid"] = 272180,
 								}, -- [15]
 								["pos"] = 9,
 							},
@@ -20330,6 +20330,18 @@ SkadaPerCharDB = {
 					["alertDamage"] = 0,
 					["overhealing"] = 6863,
 					["healingspells"] = {
+						["Leech"] = {
+							["shielding"] = 0,
+							["id"] = 143924,
+							["healing"] = 570,
+							["min"] = 1,
+							["name"] = "Leech",
+							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 102,
+							["overhealing"] = 0,
+							["hits"] = 16,
+						},
 						["Touch of the Grave"] = {
 							["shielding"] = 0,
 							["id"] = 127802,
@@ -20341,18 +20353,6 @@ SkadaPerCharDB = {
 							["max"] = 1056,
 							["overhealing"] = 0,
 							["hits"] = 2,
-						},
-						["Touch of Karma"] = {
-							["shielding"] = 20200,
-							["id"] = 122470,
-							["healing"] = 20200,
-							["min"] = 1835,
-							["name"] = "Touch of Karma",
-							["absorbed"] = 0,
-							["critical"] = 0,
-							["max"] = 3518,
-							["overhealing"] = 0,
-							["hits"] = 7,
 						},
 						["Eye of the Tiger"] = {
 							["shielding"] = 0,
@@ -20390,17 +20390,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 6863,
 							["hits"] = 2,
 						},
-						["Leech"] = {
-							["shielding"] = 0,
-							["id"] = 143924,
-							["healing"] = 570,
-							["min"] = 1,
-							["name"] = "Leech",
+						["Touch of Karma"] = {
+							["shielding"] = 20200,
+							["id"] = 122470,
+							["healing"] = 20200,
+							["min"] = 1835,
+							["name"] = "Touch of Karma",
 							["absorbed"] = 0,
 							["critical"] = 0,
-							["max"] = 102,
+							["max"] = 3518,
 							["overhealing"] = 0,
-							["hits"] = 16,
+							["hits"] = 7,
 						},
 					},
 					["time"] = 69,
@@ -22940,6 +22940,23 @@ SkadaPerCharDB = {
 							["max"] = 3295,
 							["damage"] = 172613,
 						},
+						["Thrash"] = {
+							["hitamount"] = 205021,
+							["hitmin"] = 24,
+							["criticalamount"] = 54487,
+							["id"] = 77758,
+							["criticalmin"] = 48,
+							["critical"] = 80,
+							["school"] = 1,
+							["min"] = 24,
+							["criticalmax"] = 2188,
+							["hitmax"] = 5071,
+							["ABSORB"] = 120,
+							["totalhits"] = 584,
+							["hit"] = 384,
+							["max"] = 5071,
+							["damage"] = 259508,
+						},
 						["Mangle"] = {
 							["hitamount"] = 109192,
 							["hitmin"] = 157,
@@ -22972,23 +22989,6 @@ SkadaPerCharDB = {
 							["totalhits"] = 9,
 							["max"] = 4783,
 							["damage"] = 25705,
-						},
-						["Thrash"] = {
-							["hitamount"] = 205021,
-							["hitmin"] = 24,
-							["criticalamount"] = 54487,
-							["id"] = 77758,
-							["criticalmin"] = 48,
-							["critical"] = 80,
-							["school"] = 1,
-							["min"] = 24,
-							["criticalmax"] = 2188,
-							["hitmax"] = 5071,
-							["ABSORB"] = 120,
-							["totalhits"] = 584,
-							["hit"] = 384,
-							["max"] = 5071,
-							["damage"] = 259508,
 						},
 						["Moonfire"] = {
 							["hitamount"] = 177815,
@@ -23033,44 +23033,44 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303390.91301,
 									["amount"] = -683,
+									["srcname"] = "Reanimated Guardian",
 									["spellid"] = 88163,
 									["hp"] = 12913,
-									["srcname"] = "Reanimated Guardian",
 								}, -- [1]
 								{
 									["ts"] = 1541303391.03602,
 									["amount"] = -642,
+									["srcname"] = "Fallen Deathspeaker",
 									["spellid"] = 88163,
 									["hp"] = 12913,
-									["srcname"] = "Fallen Deathspeaker",
 								}, -- [2]
 								{
 									["ts"] = 1541303391.19803,
 									["amount"] = -4730,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 6858,
-									["spellid"] = 272180,
 								}, -- [3]
 								{
 									["ts"] = 1541303391.60104,
 									["amount"] = -1898,
+									["spellid"] = 266265,
 									["srcname"] = "Fallen Deathspeaker",
 									["hp"] = 4960,
-									["spellid"] = 266265,
 								}, -- [4]
 								{
 									["ts"] = 1541303391.90205,
 									["amount"] = -1960,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 3000,
-									["spellid"] = 272180,
 								}, -- [5]
 								{
 									["ts"] = 1541303392.20406,
 									["amount"] = -4857,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1,
-									["spellid"] = 272180,
 								}, -- [6]
 								{
 									["spellname"] = "Durlok dies",
@@ -23081,58 +23081,58 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303388.61408,
 									["amount"] = -1897,
+									["spellid"] = 266265,
 									["srcname"] = "Fallen Deathspeaker",
 									["hp"] = 28334,
-									["spellid"] = 266265,
 								}, -- [8]
 								{
 									["ts"] = 1541303388.90409,
 									["amount"] = -784,
+									["spellid"] = 88163,
 									["srcname"] = "Reanimated Guardian",
 									["hp"] = 27519,
-									["spellid"] = 88163,
 								}, -- [9]
 								{
 									["ts"] = 1541303389.1941,
 									["amount"] = -3780,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 22955,
-									["spellid"] = 272180,
 								}, -- [10]
 								{
 									["ts"] = 1541303389.46811,
 									["amount"] = -2072,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 20883,
-									["spellid"] = 272180,
 								}, -- [11]
 								{
 									["ts"] = 1541303389.61912,
 									["amount"] = -1898,
+									["spellid"] = 266265,
 									["srcname"] = "Fallen Deathspeaker",
 									["hp"] = 18985,
-									["spellid"] = 266265,
 								}, -- [12]
 								{
 									["ts"] = 1541303390.21613,
 									["amount"] = -3454,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 15531,
-									["spellid"] = 272180,
 								}, -- [13]
 								{
 									["ts"] = 1541303390.51814,
 									["amount"] = -822,
+									["spellid"] = 88163,
 									["srcname"] = "Reanimated Guardian",
 									["hp"] = 15633,
-									["spellid"] = 88163,
 								}, -- [14]
 								{
 									["ts"] = 1541303390.60815,
 									["amount"] = -1898,
+									["spellid"] = 266265,
 									["srcname"] = "Fallen Deathspeaker",
 									["hp"] = 13735,
-									["spellid"] = 266265,
 								}, -- [15]
 								["pos"] = 8,
 							},
@@ -23249,6 +23249,14 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 339,
 						},
+						["Gore"] = {
+							["name"] = "Gore",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 93622,
+							["auratype"] = "BUFF",
+							["uptime"] = 164,
+						},
 						["Thrash"] = {
 							["name"] = "Thrash",
 							["active"] = 0,
@@ -23256,14 +23264,6 @@ SkadaPerCharDB = {
 							["id"] = 192090,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 497,
-						},
-						["Survival Instincts"] = {
-							["name"] = "Survival Instincts",
-							["active"] = 0,
-							["school"] = 1,
-							["id"] = 61336,
-							["auratype"] = "BUFF",
-							["uptime"] = 24,
 						},
 						["Incapacitating Roar"] = {
 							["name"] = "Incapacitating Roar",
@@ -23273,13 +23273,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["uptime"] = 6,
 						},
-						["Gore"] = {
-							["name"] = "Gore",
+						["Survival Instincts"] = {
+							["name"] = "Survival Instincts",
 							["active"] = 0,
 							["school"] = 1,
-							["id"] = 93622,
+							["id"] = 61336,
 							["auratype"] = "BUFF",
-							["uptime"] = 164,
+							["uptime"] = 24,
 						},
 						["Growl"] = {
 							["name"] = "Growl",
@@ -24400,9 +24400,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303379.21101,
 									["amount"] = -3445,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 21382,
-									["spellid"] = 272180,
 								}, -- [1]
 								{
 									["absorb"] = 0,
@@ -24423,16 +24423,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303379.72904,
 									["amount"] = -2511,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 15381,
-									["spellid"] = 272180,
 								}, -- [4]
 								{
 									["ts"] = 1541303380.21105,
 									["amount"] = -3070,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 12311,
-									["spellid"] = 272180,
 								}, -- [5]
 								{
 									["absorb"] = 0,
@@ -24445,16 +24445,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303380.58007,
 									["amount"] = -2607,
+									["spellid"] = 88163,
 									["srcname"] = "Reanimated Guardian",
 									["hp"] = 13900,
-									["spellid"] = 88163,
 								}, -- [7]
 								{
 									["ts"] = 1541303381.20908,
 									["amount"] = -3033,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 8260,
-									["spellid"] = 272180,
 								}, -- [8]
 								{
 									["absorb"] = 0,
@@ -24475,30 +24475,30 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303381.61911,
 									["amount"] = -2134,
+									["spellid"] = 266265,
 									["srcname"] = "Fallen Deathspeaker",
 									["hp"] = 7417,
-									["spellid"] = 266265,
 								}, -- [11]
 								{
 									["ts"] = 1541303382.16712,
 									["amount"] = -2475,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 4942,
-									["spellid"] = 272180,
 								}, -- [12]
 								{
 									["ts"] = 1541303382.20713,
 									["amount"] = -3374,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1568,
-									["spellid"] = 272180,
 								}, -- [13]
 								{
 									["ts"] = 1541303382.64614,
 									["amount"] = -2135,
+									["spellid"] = 266265,
 									["srcname"] = "Fallen Deathspeaker",
 									["hp"] = 1,
-									["spellid"] = 266265,
 								}, -- [14]
 								{
 									["spellname"] = "Gliceas dies",
@@ -25160,9 +25160,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303384.60203,
 									["amount"] = -2689,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 63,
-									["spellid"] = 272180,
 								}, -- [3]
 								{
 									["absorb"] = 0,
@@ -25175,9 +25175,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303385.20105,
 									["amount"] = -3496,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1,
-									["spellid"] = 272180,
 								}, -- [5]
 								{
 									["spellname"] = "Gisela dies",
@@ -25204,9 +25204,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303382.20709,
 									["amount"] = -3590,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 6821,
-									["spellid"] = 272180,
 								}, -- [9]
 								{
 									["absorb"] = 0,
@@ -25227,9 +25227,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303383.20612,
 									["amount"] = -4295,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 4463,
-									["spellid"] = 272180,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -25250,9 +25250,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303384.19815,
 									["amount"] = -4218,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1514,
-									["spellid"] = 272180,
 								}, -- [15]
 								["pos"] = 7,
 							},
@@ -25538,17 +25538,17 @@ SkadaPerCharDB = {
 					["dispells"] = 0,
 					["time"] = 1390,
 					["healingspells"] = {
-						["Touch of the Grave"] = {
-							["shielding"] = 0,
-							["id"] = 127802,
-							["healing"] = 10501,
-							["min"] = 0,
-							["name"] = "Touch of the Grave",
+						["Touch of Karma"] = {
+							["shielding"] = 34687,
+							["id"] = 122470,
+							["healing"] = 34687,
+							["min"] = 352,
+							["name"] = "Touch of Karma",
 							["absorbed"] = 0,
 							["critical"] = 0,
-							["max"] = 1033,
-							["overhealing"] = 6846,
-							["hits"] = 25,
+							["max"] = 10091,
+							["overhealing"] = 0,
+							["hits"] = 14,
 						},
 						["Baldrick: Leech"] = {
 							["shielding"] = 0,
@@ -25562,17 +25562,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 0,
 							["hits"] = 2,
 						},
-						["Leech"] = {
+						["Touch of the Grave"] = {
 							["shielding"] = 0,
-							["id"] = 143924,
-							["healing"] = 6276,
-							["min"] = 1,
-							["name"] = "Leech",
+							["id"] = 127802,
+							["healing"] = 10501,
+							["min"] = 0,
+							["name"] = "Touch of the Grave",
 							["absorbed"] = 0,
 							["critical"] = 0,
-							["max"] = 619,
-							["overhealing"] = 24,
-							["hits"] = 180,
+							["max"] = 1033,
+							["overhealing"] = 6846,
+							["hits"] = 25,
 						},
 						["Eye of the Tiger"] = {
 							["shielding"] = 0,
@@ -25610,17 +25610,17 @@ SkadaPerCharDB = {
 							["overhealing"] = 3870,
 							["hits"] = 3,
 						},
-						["Touch of Karma"] = {
-							["shielding"] = 34687,
-							["id"] = 122470,
-							["healing"] = 34687,
-							["min"] = 352,
-							["name"] = "Touch of Karma",
+						["Leech"] = {
+							["shielding"] = 0,
+							["id"] = 143924,
+							["healing"] = 6276,
+							["min"] = 1,
+							["name"] = "Leech",
 							["absorbed"] = 0,
 							["critical"] = 0,
-							["max"] = 10091,
-							["overhealing"] = 0,
-							["hits"] = 14,
+							["max"] = 619,
+							["overhealing"] = 24,
+							["hits"] = 180,
 						},
 					},
 					["overhealing"] = 25025,
@@ -25902,16 +25902,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303387.03801,
 									["amount"] = -2299,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 6589,
-									["spellid"] = 272180,
 								}, -- [1]
 								{
 									["ts"] = 1541303387.20902,
 									["amount"] = -3289,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 3300,
-									["spellid"] = 272180,
 								}, -- [2]
 								{
 									["absorb"] = 0,
@@ -25932,9 +25932,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303388.21005,
 									["amount"] = -3899,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 1,
-									["spellid"] = 272180,
 								}, -- [5]
 								{
 									["spellname"] = "Baldrick dies",
@@ -25945,9 +25945,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303384.19807,
 									["amount"] = -2695,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 17524,
-									["spellid"] = 272180,
 								}, -- [7]
 								{
 									["absorb"] = 0,
@@ -25968,16 +25968,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303384.6011,
 									["amount"] = -1924,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 15934,
-									["spellid"] = 272180,
 								}, -- [10]
 								{
 									["ts"] = 1541303385.20011,
 									["amount"] = -4217,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 11717,
-									["spellid"] = 272180,
 								}, -- [11]
 								{
 									["absorb"] = 0,
@@ -25998,9 +25998,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541303386.20414,
 									["amount"] = -2991,
+									["spellid"] = 272180,
 									["srcname"] = "Grotesque Horror",
 									["hp"] = 8871,
-									["spellid"] = 272180,
 								}, -- [14]
 								{
 									["absorb"] = 0,
@@ -28947,23 +28947,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301825.45302,
 									["amount"] = -15053,
+									["spellid"] = 260455,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7023,
-									["spellid"] = 260455,
 								}, -- [2]
 								{
 									["ts"] = 1541301826.08703,
 									["amount"] = -94,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7023,
-									["spellid"] = 88163,
 								}, -- [3]
 								{
 									["ts"] = 1541301826.15004,
 									["amount"] = -85,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 6929,
-									["spellid"] = 88163,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -28976,23 +28976,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301826.64906,
 									["amount"] = -105,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12551,
-									["spellid"] = 88163,
 								}, -- [6]
 								{
 									["ts"] = 1541301827.35807,
 									["amount"] = -1336,
+									["spellid"] = 88163,
 									["srcname"] = "Cragmaw the Infested",
 									["hp"] = 12538,
-									["spellid"] = 88163,
 								}, -- [7]
 								{
 									["ts"] = 1541301827.48008,
 									["amount"] = -16797,
+									["spellid"] = 260455,
 									["srcname"] = "Blood Tick",
 									["hp"] = 1,
-									["spellid"] = 260455,
 								}, -- [8]
 								{
 									["spellname"] = "Durlok dies",
@@ -29003,16 +29003,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301823.4541,
 									["amount"] = -15104,
+									["spellid"] = 260455,
 									["srcname"] = "Blood Tick",
 									["hp"] = 4263,
-									["spellid"] = 260455,
 								}, -- [10]
 								{
 									["ts"] = 1541301823.55111,
 									["amount"] = -78,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 4263,
-									["spellid"] = 88163,
 								}, -- [11]
 								{
 									["ts"] = 1541301824.23312,
@@ -29025,9 +29025,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301824.63213,
 									["amount"] = -76,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 9892,
-									["spellid"] = 88163,
 								}, -- [13]
 								{
 									["ts"] = 1541301825.24814,
@@ -29364,100 +29364,100 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301842.49301,
 									["amount"] = -318,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12771,
-									["spellid"] = 88163,
 								}, -- [1]
 								{
 									["ts"] = 1541301842.49302,
 									["amount"] = -754,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12771,
-									["spellid"] = 88163,
 								}, -- [2]
 								{
 									["ts"] = 1541301842.49303,
 									["amount"] = -761,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12771,
-									["spellid"] = 88163,
 								}, -- [3]
 								{
 									["ts"] = 1541301842.49304,
 									["amount"] = -303,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12771,
-									["spellid"] = 88163,
 								}, -- [4]
 								{
 									["ts"] = 1541301842.49305,
 									["amount"] = -695,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12771,
-									["spellid"] = 88163,
 								}, -- [5]
 								{
 									["ts"] = 1541301843.08106,
 									["amount"] = -3548,
+									["spellid"] = 260455,
 									["srcname"] = "Blood Tick",
 									["hp"] = 5648,
-									["spellid"] = 260455,
 								}, -- [6]
 								{
 									["ts"] = 1541301843.89607,
 									["amount"] = -412,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 5648,
-									["spellid"] = 88163,
 								}, -- [7]
 								{
 									["ts"] = 1541301843.89608,
 									["amount"] = -313,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 5648,
-									["spellid"] = 88163,
 								}, -- [8]
 								{
 									["ts"] = 1541301843.99609,
 									["amount"] = -315,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 4923,
-									["spellid"] = 88163,
 								}, -- [9]
 								{
 									["ts"] = 1541301843.9961,
 									["amount"] = -383,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 4923,
-									["spellid"] = 88163,
 								}, -- [10]
 								{
 									["ts"] = 1541301843.99611,
 									["amount"] = -361,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 4923,
-									["spellid"] = 88163,
 								}, -- [11]
 								{
 									["ts"] = 1541301843.99612,
 									["amount"] = -568,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 4923,
-									["spellid"] = 88163,
 								}, -- [12]
 								{
 									["ts"] = 1541301843.99613,
 									["amount"] = -353,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 4923,
-									["spellid"] = 88163,
 								}, -- [13]
 								{
 									["ts"] = 1541301845.07114,
 									["amount"] = -4804,
+									["spellid"] = 260455,
 									["srcname"] = "Blood Tick",
 									["hp"] = 1,
-									["spellid"] = 260455,
 								}, -- [14]
 								{
 									["spellname"] = "Gisela dies",
@@ -29681,100 +29681,100 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301843.57401,
 									["amount"] = -271,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [1]
 								{
 									["ts"] = 1541301843.57402,
 									["amount"] = -279,
+									["spellid"] = 88163,
 									["hp"] = 11444,
 									["srcname"] = "Blood Tick",
-									["spellid"] = 88163,
 								}, -- [2]
 								{
 									["ts"] = 1541301843.57403,
 									["amount"] = -249,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [3]
 								{
 									["ts"] = 1541301843.57404,
 									["amount"] = -224,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [4]
 								{
 									["ts"] = 1541301843.57405,
 									["amount"] = -232,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [5]
 								{
 									["ts"] = 1541301843.57406,
 									["amount"] = -265,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [6]
 								{
 									["ts"] = 1541301843.57407,
 									["amount"] = -306,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [7]
 								{
 									["ts"] = 1541301843.57408,
 									["amount"] = -220,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [8]
 								{
 									["ts"] = 1541301843.57409,
 									["amount"] = -479,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [9]
 								{
 									["ts"] = 1541301843.5891,
 									["amount"] = -280,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [10]
 								{
 									["ts"] = 1541301843.58911,
 									["amount"] = -532,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 11444,
-									["spellid"] = 88163,
 								}, -- [11]
 								{
 									["ts"] = 1541301843.99612,
 									["amount"] = -278,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 8107,
-									["spellid"] = 88163,
 								}, -- [12]
 								{
 									["ts"] = 1541301844.58513,
 									["amount"] = -215,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7829,
-									["spellid"] = 88163,
 								}, -- [13]
 								{
 									["ts"] = 1541301845.07114,
 									["amount"] = -10114,
+									["spellid"] = 260455,
 									["srcname"] = "Blood Tick",
 									["hp"] = 1,
-									["spellid"] = 260455,
 								}, -- [14]
 								{
 									["spellname"] = "Mistic dies",
@@ -30147,93 +30147,93 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301834.51701,
 									["amount"] = -227,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12987,
-									["spellid"] = 88163,
 								}, -- [1]
 								{
 									["ts"] = 1541301834.51702,
 									["amount"] = -246,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12987,
-									["spellid"] = 88163,
 								}, -- [2]
 								{
 									["ts"] = 1541301834.51703,
 									["amount"] = -191,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12987,
-									["spellid"] = 88163,
 								}, -- [3]
 								{
 									["ts"] = 1541301834.59004,
 									["amount"] = -223,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12987,
-									["spellid"] = 88163,
 								}, -- [4]
 								{
 									["ts"] = 1541301834.65105,
 									["amount"] = -276,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 10679,
-									["spellid"] = 88163,
 								}, -- [5]
 								{
 									["ts"] = 1541301834.65106,
 									["amount"] = -279,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 10679,
-									["spellid"] = 88163,
 								}, -- [6]
 								{
 									["ts"] = 1541301835.31607,
 									["amount"] = -171,
+									["spellid"] = 88163,
 									["hp"] = 10124,
 									["srcname"] = "Blood Tick",
-									["spellid"] = 88163,
 								}, -- [7]
 								{
 									["ts"] = 1541301835.50808,
 									["amount"] = -227,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 9953,
-									["spellid"] = 88163,
 								}, -- [8]
 								{
 									["ts"] = 1541301835.50809,
 									["amount"] = -175,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 9953,
-									["spellid"] = 88163,
 								}, -- [9]
 								{
 									["ts"] = 1541301835.5081,
 									["amount"] = -215,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 9953,
-									["spellid"] = 88163,
 								}, -- [10]
 								{
 									["ts"] = 1541301835.50811,
 									["amount"] = -203,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 9953,
-									["spellid"] = 88163,
 								}, -- [11]
 								{
 									["ts"] = 1541301835.50812,
 									["amount"] = -190,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 9953,
-									["spellid"] = 88163,
 								}, -- [12]
 								{
 									["ts"] = 1541301835.58713,
 									["amount"] = -12733,
+									["spellid"] = 260455,
 									["srcname"] = "Blood Tick",
 									["hp"] = 1,
-									["spellid"] = 260455,
 								}, -- [13]
 								{
 									["spellname"] = "Gliceas dies",
@@ -30244,9 +30244,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301834.51615,
 									["amount"] = -197,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 12987,
-									["spellid"] = 88163,
 								}, -- [15]
 								["pos"] = 15,
 							},
@@ -30739,23 +30739,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301846.76401,
 									["amount"] = -550,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [1]
 								{
 									["ts"] = 1541301846.76402,
 									["amount"] = -327,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [2]
 								{
 									["ts"] = 1541301846.76403,
 									["amount"] = -604,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [3]
 								{
 									["absorb"] = 0,
@@ -30768,37 +30768,37 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301847.05105,
 									["amount"] = -242,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7140,
-									["spellid"] = 88163,
 								}, -- [5]
 								{
 									["ts"] = 1541301847.05106,
 									["amount"] = -321,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7140,
-									["spellid"] = 88163,
 								}, -- [6]
 								{
 									["ts"] = 1541301847.05107,
 									["amount"] = -275,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7140,
-									["spellid"] = 88163,
 								}, -- [7]
 								{
 									["ts"] = 1541301847.05108,
 									["amount"] = -268,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7140,
-									["spellid"] = 88163,
 								}, -- [8]
 								{
 									["ts"] = 1541301847.05109,
 									["amount"] = -4819,
+									["spellid"] = 88163,
 									["srcname"] = "Cragmaw the Infested",
 									["hp"] = 7140,
-									["spellid"] = 88163,
 								}, -- [9]
 								{
 									["spellname"] = "Baldrick dies",
@@ -30809,37 +30809,37 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541301846.74611,
 									["amount"] = -291,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [11]
 								{
 									["ts"] = 1541301846.76312,
 									["amount"] = -274,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [12]
 								{
 									["ts"] = 1541301846.76313,
 									["amount"] = -329,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [13]
 								{
 									["ts"] = 1541301846.76314,
 									["amount"] = -290,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [14]
 								{
 									["ts"] = 1541301846.76315,
 									["amount"] = -254,
+									["spellid"] = 88163,
 									["srcname"] = "Blood Tick",
 									["hp"] = 7316,
-									["spellid"] = 88163,
 								}, -- [15]
 								["pos"] = 11,
 							},
@@ -32891,6 +32891,21 @@ SkadaPerCharDB = {
 							["max"] = 3200,
 							["damage"] = 4807,
 						},
+						["Shadow Mend"] = {
+							["crushing"] = 0,
+							["id"] = 186439,
+							["absorbed"] = 0,
+							["min"] = 215,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["school"] = 32,
+							["name"] = "Shadow Mend",
+							["blocked"] = 0,
+							["totalhits"] = 15,
+							["resisted"] = 0,
+							["max"] = 513,
+							["damage"] = 5922,
+						},
 						["Rotten Bile"] = {
 							["crushing"] = 0,
 							["id"] = 265542,
@@ -32920,21 +32935,6 @@ SkadaPerCharDB = {
 							["resisted"] = 0,
 							["max"] = 5943,
 							["damage"] = 5943,
-						},
-						["Shadow Mend"] = {
-							["crushing"] = 0,
-							["id"] = 186439,
-							["absorbed"] = 0,
-							["min"] = 215,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["school"] = 32,
-							["name"] = "Shadow Mend",
-							["blocked"] = 0,
-							["totalhits"] = 15,
-							["resisted"] = 0,
-							["max"] = 513,
-							["damage"] = 5922,
 						},
 						["Attack"] = {
 							["crushing"] = 0,
@@ -34138,14 +34138,6 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
 						},
-						["Lunar Empowerment"] = {
-							["name"] = "Lunar Empowerment",
-							["active"] = 0,
-							["school"] = 64,
-							["id"] = 164547,
-							["auratype"] = "BUFF",
-							["uptime"] = 5,
-						},
 						["Sunfire"] = {
 							["name"] = "Sunfire",
 							["active"] = 0,
@@ -34161,6 +34153,14 @@ SkadaPerCharDB = {
 							["id"] = 276154,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
+						},
+						["Lunar Empowerment"] = {
+							["name"] = "Lunar Empowerment",
+							["active"] = 0,
+							["school"] = 64,
+							["id"] = 164547,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
 						},
 						["War Stomp"] = {
 							["name"] = "War Stomp",

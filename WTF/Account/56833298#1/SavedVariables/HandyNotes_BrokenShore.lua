@@ -3,6 +3,7 @@ HandyNotes_BrokenShoreDB = {
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
@@ -11,6 +12,8 @@ HandyNotes_BrokenShoreDB = {
 		["Shanyt - Argent Dawn"] = {
 		},
 		["Durlok - Black Dragonflight"] = {
+		},
+		["Tyrann - Zul'jin"] = {
 		},
 		["Jingojaggot - Argent Dawn"] = {
 		},
