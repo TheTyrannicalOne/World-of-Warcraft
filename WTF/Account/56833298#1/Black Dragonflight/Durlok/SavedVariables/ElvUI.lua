@@ -1,50 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/i el stupido is das tank", -- [1]
-		"/moo", -- [2]
-		"/train", -- [3]
-		"/flirt", -- [4]
-		"/i hold up", -- [5]
-		"/i ok", -- [6]
-		"/i eating", -- [7]
-		"/i then boxx", -- [8]
-		"/i boss", -- [9]
-		"/i never mind", -- [10]
-		"/i monk was doing somethign", -- [11]
-		"/i monk had to switch something", -- [12]
-		"/i he will be right back", -- [13]
-		"/i yeah it does", -- [14]
-		"/i thanks", -- [15]
-		"/i healers internet crapped out", -- [16]
-		"/i she trying to fix but no eta", -- [17]
-		"/i they like to cut lines like its cool", -- [18]
-		"/i cool", -- [19]
-		"/dance", -- [20]
+		"/i then boxx", -- [1]
+		"/i boss", -- [2]
+		"/i never mind", -- [3]
+		"/i monk was doing somethign", -- [4]
+		"/i monk had to switch something", -- [5]
+		"/i he will be right back", -- [6]
+		"/i yeah it does", -- [7]
+		"/i thanks", -- [8]
+		"/i healers internet crapped out", -- [9]
+		"/i she trying to fix but no eta", -- [10]
+		"/i they like to cut lines like its cool", -- [11]
+		"/i cool", -- [12]
+		"/dance", -- [13]
+		"/skada toggle", -- [14]
+		"/omen show", -- [15]
+		"/i healer is setting up her keys", -- [16]
+		"/i g2g", -- [17]
+		"/i ready", -- [18]
+		"/i TY", -- [19]
+		"/sleep", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"WTS  Heroic Uldir Run. Smooth and Easy Guild run! Also doing Mythic+ Carries /w for info", -- [1]
-			"Giadenar-Skullcrusher", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Giadenar-Skullcrusher", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			501, -- [11]
-			"Player-74-0BCE7787", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8787edGiadenar-Skullcrusher|r",
-			[51] = 1540704356,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
 		{
 			"WTS  Heroic Uldir Run. Smooth and Easy Guild run! Also doing Mythic+ Carries /w for info", -- [1]
 			"Giadenar-Skullcrusher", -- [2]
@@ -66,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGiadenar-Skullcrusher|r",
 			[51] = 1540704719,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
+		}, -- [1]
 		{
 			"WTS  Heroic Uldir Run. Smooth and Easy Guild run! Also doing Mythic+ Carries /w for info", -- [1]
 			"Giadenar-Skullcrusher", -- [2]
@@ -88,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGiadenar-Skullcrusher|r",
 			[51] = 1540707617,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [2]
 		{
 			"WTS |cffa335ee|Hitem:95416::::::::120:64::::::|h[Sky Golem]|h|r, 150K obo, pst.", -- [1]
 			"Kleema-BlackDragonflight", -- [2]
@@ -110,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaKleema|r",
 			[51] = 1541039027,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [3]
 		{
 			"WTS |cffa335ee|Hitem:95416::::::::120:64::::::|h[Sky Golem]|h|r, 150K obo, pst.", -- [1]
 			"Kleema-BlackDragonflight", -- [2]
@@ -132,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaKleema|r",
 			[51] = 1541039214,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [4]
 		{
 			"Ministry of Anarchy is recruiting for Mythic raiding Sun/Mon @7 1/8M that needs healers and DPS, Heroic Tues/Wed @9 7/8H needs DPS and healers, Thurs/Fri @8 4/8H needs RDPS. Casuals and PVPers looking for a guild are welcome", -- [1]
 			"Wolfwood", -- [2]
@@ -154,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aWolfwood|r",
 			[51] = 1541202426,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [6]
+		}, -- [5]
 		{
 			"|cffa335ee|Hitem:141655::::::::110:269::::::|h[Shimmering Ancient Mana Cluster]|h|r", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -176,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541217946,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [7]
+		}, -- [6]
 		{
 			"waiting on mana for the squishes", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -198,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541221942,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [8]
+		}, -- [7]
 		{
 			"Pursuit on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -220,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541222747,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
+		}, -- [8]
 		{
 			"BAFROOM", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -242,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541224095,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [10]
+		}, -- [9]
 		{
 			"sec", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -264,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541225363,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [11]
+		}, -- [10]
 		{
 			"cakes are needed by folks somewhere", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -286,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541225375,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [12]
+		}, -- [11]
 		{
 			"gogogogo", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -308,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541225379,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [13]
+		}, -- [12]
 		{
 			"wish i had some bandages", -- [1]
 			"Scopare-Warsong", -- [2]
@@ -330,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Scopare-Warsong|r",
 			[51] = 1541225654,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
+		}, -- [13]
 		{
 			"sorry the mage is an idiot", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -352,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226129,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [15]
+		}, -- [14]
 		{
 			"forgive her", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -374,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226132,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [16]
+		}, -- [15]
 		{
 			"she needs help", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -396,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226136,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [17]
+		}, -- [16]
 		{
 			"kept shouting PULL MORE", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -418,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226150,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [18]
+		}, -- [17]
 		{
 			"yeah well", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -440,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226152,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [19]
+		}, -- [18]
 		{
 			"I said a few more, not everything.", -- [1]
 			"Gisela-BlackDragonflight", -- [2]
@@ -462,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaGisela|r",
 			[51] = 1541226275,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [20]
+		}, -- [19]
 		{
 			"MOAR", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -484,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226336,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [21]
+		}, -- [20]
 		{
 			"no mas", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -506,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541226347,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [22]
+		}, -- [21]
 		{
 			"giphy moar", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -528,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226352,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [23]
+		}, -- [22]
 		{
 			"el stupido is das tank", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -550,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541226359,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [24]
+		}, -- [23]
 		{
 			"si si", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -572,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226365,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [25]
+		}, -- [24]
 		{
 			"tank de stupido", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -594,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226369,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [26]
+		}, -- [25]
 		{
 			"el loco", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -616,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226375,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [27]
+		}, -- [26]
 		{
 			"we died casue the mage killed us", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -638,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226389,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [28]
+		}, -- [27]
 		{
 			"she said pull it all she did", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -660,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541226393,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [29]
+		}, -- [28]
 		{
 			"lol ages are evil", -- [1]
 			"Pokomie-Thrall", -- [2]
@@ -682,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPokomie-Thrall|r",
 			[51] = 1541226412,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
+		}, -- [29]
 		{
 			"I did not", -- [1]
 			"Gisela-BlackDragonflight", -- [2]
@@ -704,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaGisela|r",
 			[51] = 1541226412,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
+		}, -- [30]
 		{
 			"mage*", -- [1]
 			"Pokomie-Thrall", -- [2]
@@ -726,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddPokomie-Thrall|r",
 			[51] = 1541226416,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
+		}, -- [31]
 		{
 			"get in cow man dude girl", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -748,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541227131,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [33]
+		}, -- [32]
 		{
 			"turns his |Hitem:118427|h|cFFFFFFFF[Autographed Hearthstone Card]|r|h card over, revealing a |cFF0070dd[Rare Hearthstone Card]|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -770,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541300445,
 			[50] = "CHAT_MSG_EMOTE",
-		}, -- [34]
+		}, -- [33]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -792,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301063,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
+		}, -- [34]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -814,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301121,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
+		}, -- [35]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -836,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301129,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [37]
+		}, -- [36]
 		{
 			"stack on eachother next time", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -858,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541301133,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [38]
+		}, -- [37]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -880,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301138,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
+		}, -- [38]
 		{
 			"Dark Omen on Baldrick", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -902,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541301203,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
+		}, -- [39]
 		{
 			"Thanks", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -924,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541301347,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [41]
+		}, -- [40]
 		{
 			"hold up", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -946,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301359,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
+		}, -- [41]
 		{
 			"ok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -968,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301366,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [43]
+		}, -- [42]
 		{
 			"eating", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -990,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301707,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [44]
+		}, -- [43]
 		{
 			"then boxx", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1012,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301711,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [45]
+		}, -- [44]
 		{
 			"boss", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1034,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541301714,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
+		}, -- [45]
 		{
 			"being a healer in a dungeoin is so fun, hahah", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1056,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541302076,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [47]
+		}, -- [46]
 		{
 			"the mobs can smell your heals ", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1078,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541302095,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [48]
+		}, -- [47]
 		{
 			"doesnt help running the wrong way lol", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -1100,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMistic|r",
 			[51] = 1541302161,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
+		}, -- [48]
 		{
 			"O ha-ha", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1122,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541302177,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
+		}, -- [49]
 		{
 			"hold up", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1144,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541302290,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [51]
+		}, -- [50]
 		{
 			"never mind", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1166,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541302302,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [52]
+		}, -- [51]
 		{
 			"monk was doing somethign", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1188,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541302310,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
+		}, -- [52]
 		{
 			"monk had to switch something", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1210,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541302815,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
+		}, -- [53]
 		{
 			"he will be right back", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1232,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541302820,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [54]
 		{
 			"this bug sucks", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1254,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541302880,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [56]
+		}, -- [55]
 		{
 			"yeah it does", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1276,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541302952,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [57]
+		}, -- [56]
 		{
 			"was working on my hot bars and key bingings, can't do anything.", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1298,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541302990,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [58]
+		}, -- [57]
 		{
 			"going to heareth out", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1320,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303127,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [59]
+		}, -- [58]
 		{
 			"and change specs to heals, brb", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1342,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303132,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [60]
+		}, -- [59]
 		{
 			"thanks", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1364,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541303147,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
+		}, -- [60]
 		{
 			"thx duder", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1386,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541303151,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [62]
+		}, -- [61]
 		{
 			"healers internet crapped out", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1408,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541303159,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
+		}, -- [62]
 		{
 			"its comcastic", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1430,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541303168,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [64]
+		}, -- [63]
 		{
 			"she trying to fix but no eta", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1452,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541303173,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [64]
 		{
 			"Ha yah they are bad", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1474,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303184,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [66]
+		}, -- [65]
 		{
 			"I mean it's under ground wtf  is ALWAYS the problem?!", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1496,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303247,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [67]
+		}, -- [66]
 		{
 			"to the door is often still suspended", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1518,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541303279,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [68]
+		}, -- [67]
 		{
 			"they like to cut lines like its cool", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1540,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541303289,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [69]
+		}, -- [68]
 		{
 			"that too", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1562,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541303299,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [70]
+		}, -- [69]
 		{
 			"if you put a don't dig call first they'll surely dig there first", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1584,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541303316,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [71]
+		}, -- [70]
 		{
 			"well, what was that?", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1606,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303390,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [72]
+		}, -- [71]
 		{
 			"that was failure", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1628,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541303396,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [73]
+		}, -- [72]
 		{
 			"I switch back to Mon", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1650,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303483,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [74]
+		}, -- [73]
 		{
 			"moon", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1672,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303500,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [75]
+		}, -- [74]
 		{
 			"cool", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1694,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1541303500,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [76]
+		}, -- [75]
 		{
 			"never go ass to mouth", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1716,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541303512,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [77]
+		}, -- [76]
 		{
 			"come on DPS gotta focus ADDS", -- [1]
 			"Gliceas-BlackDragonflight", -- [2]
@@ -1738,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGliceas|r",
 			[51] = 1541303692,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [78]
+		}, -- [77]
 		{
 			"thx for heal", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1760,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1541304009,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [79]
+		}, -- [78]
 		{
 			"TOP Guild is selling Heroic Uldir and G'huun kills! Get your Ahead of the Curve today! Also doing Mythic+ carries. /w for info", -- [1]
 			"Qunorduri-Skullcrusher", -- [2]
@@ -1782,6 +1760,1062 @@ ElvCharacterDB = {
 			[52] = "|cff8787edQunorduri-Skullcrusher|r",
 			[51] = 1541899693,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [79]
+		{
+			"’s Spirit Beast LilHealer casually zaps a nearby critter with a white beam of light.", -- [1]
+			"Firegate-Gul'dan", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Firegate-Gul'dan", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			283, -- [11]
+			"Player-74-074A33D3", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Firegate-Gul'dan|r",
+			[51] = 1542854564,
+			[50] = "CHAT_MSG_EMOTE",
 		}, -- [80]
+		{
+			"Skada: Damage for Wildtusk: 22:35 (26 Sec):", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			186, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030586,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [81]
+		{
+			" 1. Baldrick   59.4K (2374, 42.4%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			187, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030586,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [82]
+		{
+			" 2. Gisela   44.7K (2630, 31.9%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			188, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030586,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [83]
+		{
+			" 3. Durlok   19.0K (759, 13.6%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			189, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030586,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [84]
+		{
+			" 4. Mistic   17.0K (895, 12.1%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			190, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030586,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [85]
+		{
+			"Skada: Damage for Total: 22:21 (19 Min 59 Sec):", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			280, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030913,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [86]
+		{
+			" 1. Baldrick   557.8K (1799, 39.6%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			281, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030913,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [87]
+		{
+			" 2. Gisela   401.0K (2035, 28.5%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			282, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030913,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [88]
+		{
+			" 3. Durlok   356.1K (1343, 25.3%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			283, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030913,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [89]
+		{
+			" 4. Mistic   93.8K (501, 6.7%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			284, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543030913,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [90]
+		{
+			"an i still beat grandma", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			455, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543031425,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [91]
+		{
+			"Dark Omen on Durlok", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			584, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543032074,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [92]
+		{
+			"Dark Omen on Durlok", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			593, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543032165,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [93]
+		{
+			"uh oh", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			604, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032248,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [94]
+		{
+			"hai donkeyman", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			605, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543032249,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [95]
+		{
+			"someone didnt make the cut", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			606, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032252,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [96]
+		{
+			"looks like", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			607, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032255,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [97]
+		{
+			"naw, we're just garbage", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			608, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543032263,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [98]
+		{
+			"bummer", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			609, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032268,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [99]
+		{
+			"healer is setting up her keys", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			610, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543032287,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [100]
+		{
+			":-p", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			611, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543032288,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [101]
+		{
+			"g2g", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			612, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543032292,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [102]
+		{
+			"see! pure garbage!", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			627, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543032354,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [103]
+		{
+			"lust", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			673, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032621,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [104]
+		{
+			"lust", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			718, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032927,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [105]
+		{
+			"one of t hese days", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			719, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032930,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [106]
+		{
+			"what spell are you asking for?", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			723, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543032989,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [107]
+		{
+			"time", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			724, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032993,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [108]
+		{
+			"warp", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			725, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032994,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [109]
+		{
+			"mage", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			726, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543032997,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [110]
+		{
+			"ready", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			727, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543033006,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [111]
+		{
+			"5min cd, save till boss fights ", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			729, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543033011,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [112]
+		{
+			"follow me", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			758, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543033097,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [113]
+		{
+			"follow me", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			762, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543033128,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [114]
+		{
+			"coulda avoided all that", -- [1]
+			"Donkeybrains-Vek'nilash", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Donkeybrains-Vek'nilash", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			774, -- [11]
+			"Player-1184-0B295F2D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
+			[51] = 1543033208,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [115]
+		{
+			"mistakes happen.", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			775, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543033214,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [116]
+		{
+			"TY", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			814, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543033438,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [117]
+		{
+			"Eternál Welcomes  Durlok to join a laid back crew for raids, lvling, pvp and more! ", -- [1]
+			"Ceceliá", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Ceceliá", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			871, -- [11]
+			"Player-74-0B6FB957", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaCeceliá|r",
+			[51] = 1543033694,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [118]
+		{
+			"casting Power Word: Radiance on you, but you're out of range!", -- [1]
+			"Mistic-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mistic", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1028, -- [11]
+			"Player-74-0BD37321", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffMistic|r",
+			[51] = 1543034938,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [119]
+		{
+			"Pursuit on Durlok", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			23, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543035704,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [120]
+		{
+			"californians. shesh", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			35, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543035756,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [121]
+		{
+			"avoid purple jizz plz thx kk ", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			37, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543035823,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [122]
+		{
+			"druids purple muff is different", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			39, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543035835,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [123]
+		{
+			"tank him back here", -- [1]
+			"Cerees-Garona", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Cerees-Garona", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			43, -- [11]
+			"Player-51-0591D82A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddCerees-Garona|r",
+			[51] = 1543035847,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [124]
+		{
+			"Interrupted Yazma's |cff71d5ff|Hspell:250096:0|h[Wracking Pain]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			77, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543036077,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [125]
+		{
+			"was going afer teh tittehs with ice", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			298, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00ff96Baldrick|r",
+			[51] = 1543038862,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [126]
+		{
+			"Interrupted Avatar of Xolotal's |cff71d5ff|Hspell:263607:0|h[Arc Lightning]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			664, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aDurlok|r",
+			[51] = 1543040576,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [127]
 	},
 }

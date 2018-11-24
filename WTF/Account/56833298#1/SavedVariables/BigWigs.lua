@@ -9,10 +9,10 @@ BigWigs3DB = {
 			[-557] = true,
 			[-593] = {
 			},
-			[-567] = true,
-			[-563] = true,
 			[-612] = true,
+			[-563] = true,
 			[-367] = true,
+			[-567] = true,
 			[75] = true,
 			[76] = true,
 			[-573] = true,
@@ -27,6 +27,10 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
+		["BigWigs_Bosses_Glubtok"] = {
+		},
+		["BigWigs_Bosses_Magisters' Terrace Trash"] = {
+		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -34,23 +38,51 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Bosses_Flameweaver Koegler"] = {
+		},
+		["BigWigs_Bosses_Selin Fireheart"] = {
+		},
+		["BigWigs_Bosses_High Inquisitor Whitemane"] = {
+		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Bosses_Armsmaster Harlan"] = {
+		},
+		["BigWigs_Bosses_Houndmaster Braun"] = {
+		},
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Bosses_Brother Korloff"] = {
+		},
+		["BigWigs_Bosses_Thalnos the Soulrender"] = {
+		},
+		["BigWigs_Bosses_Vanessa VanCleef"] = {
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Bosses_Vexallus"] = {
+		},
+		["BigWigs_Bosses_Kael'thas Sunstrider "] = {
+		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
-					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999752044678,
+					["BigWigsEmphasizeAnchor_width"] = 320.000061035156,
 					["BigWigsAnchor_height"] = 15.9999876022339,
 				},
 			},
 		},
-		["BigWigs_Plugins_InfoBox"] = {
+		["BigWigs_Bosses_\"Captain\" Cookie"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -59,20 +91,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Sounds"] = {
+		["BigWigs_Bosses_Foe Reaper 5000"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Bosses_Helix Gearbreaker"] = {
 		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["height"] = 119.999977111816,
-					["font"] = "Friz Quadrata TT",
-					["width"] = 140.00016784668,
-				},
-			},
+		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Plugins_AutoReply"] = {
+		["BigWigs_Bosses_Priestess Delrissa"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -81,11 +106,18 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["width"] = 140.00016784668,
+					["font"] = "Friz Quadrata TT",
+					["height"] = 119.999977111816,
+				},
+			},
 		},
 	},
 	["wipe80"] = true,

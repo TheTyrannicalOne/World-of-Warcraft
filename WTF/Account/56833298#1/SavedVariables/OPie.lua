@@ -85,64 +85,64 @@ OneRing_Config = {
 			},
 			["Mounts"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABuede=1Sr19",
+					["id"] = 150544,
 				}, -- [1]
 				{
-					["id"] = 64731,
 					["sliceToken"] = "ABuede=1Sr1A",
+					["id"] = 64731,
 				}, -- [2]
 				{
-					["id"] = 118089,
 					["sliceToken"] = "ABuede=1Sr1P",
+					["id"] = 118089,
 				}, -- [3]
 				{
-					["id"] = 223018,
 					["sliceToken"] = "ABuede=1Sr1O",
+					["id"] = 223018,
 				}, -- [4]
 				{
-					["id"] = 98718,
 					["sliceToken"] = "ABuede=1Sr1I",
+					["id"] = 98718,
 				}, -- [5]
 				{
-					["id"] = 228919,
 					["sliceToken"] = "ABuede=1Sr18",
+					["id"] = 228919,
 				}, -- [6]
 				{
-					["id"] = 122708,
 					["sliceToken"] = "ABuede=1Sr1U",
+					["id"] = 122708,
 				}, -- [7]
 				{
-					["id"] = 17481,
 					["sliceToken"] = "ABuede=1Sr1Y",
+					["id"] = 17481,
 				}, -- [8]
 				{
-					["id"] = 272472,
 					["sliceToken"] = "ABuede=1Sr1T",
+					["id"] = 272472,
 				}, -- [9]
 				{
-					["id"] = 139595,
 					["sliceToken"] = "ABuede=1Sr1R",
+					["id"] = 139595,
 				}, -- [10]
 				{
-					["id"] = 213115,
 					["sliceToken"] = "ABuede=1Sr17",
+					["id"] = 213115,
 				}, -- [11]
 				{
-					["id"] = 72286,
 					["sliceToken"] = "ABuede=1Sr1E",
+					["id"] = 72286,
 				}, -- [12]
 				{
-					["id"] = 229388,
 					["sliceToken"] = "ABuede=1Sr1W",
+					["id"] = 229388,
 				}, -- [13]
 				{
-					["id"] = 245725,
 					["sliceToken"] = "ABuede=1Sr1Q",
+					["id"] = 245725,
 				}, -- [14]
 				{
-					["id"] = 75973,
 					["sliceToken"] = "ABuede=1Sr1m",
+					["id"] = 75973,
 				}, -- [15]
 				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,

@@ -1,0 +1,37 @@
+
+RecountDB = {
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Zerkin - Illidan",
+	},
+	["profiles"] = {
+		["Zerkin - Illidan"] = {
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = -213.500122070313,
+					["x"] = 742.000366210938,
+					["w"] = 399.999969482422,
+					["h"] = 171.000061035156,
+				},
+				["BarText"] = {
+					["NumFormat"] = 2,
+				},
+				["RowHeight"] = 16,
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+					["Total Bar"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["MainWindowWidth"] = 399.999969482422,
+			["MainWindowHeight"] = 171.000061035156,
+			["CurDataSet"] = "LastFightData",
+			["BarTexture"] = "TukTex",
+			["Font"] = "ElvUI Alt-Font",
+		},
+	},
+}

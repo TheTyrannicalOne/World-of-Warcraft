@@ -1,12 +1,13 @@
 
 LegionRaresTreasuresDB = {
 	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
-		["Tyrann - Zul'jin"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
-		["Shanyt - Zul'jin"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+		["Zerkun - Illidan"] = "Default",
+		["Youngpoobs - Tanaris"] = "Default",
+		["Tyrann - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

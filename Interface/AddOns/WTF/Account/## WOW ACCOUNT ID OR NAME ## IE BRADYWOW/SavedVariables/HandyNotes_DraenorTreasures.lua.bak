@@ -1,0 +1,10 @@
+
+DraenorTreasuresDB = {
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

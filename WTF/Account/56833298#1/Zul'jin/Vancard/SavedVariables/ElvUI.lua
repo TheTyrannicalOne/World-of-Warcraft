@@ -3,52 +3,9 @@ ElvCharacterDB = {
 	["ChatEditHistory"] = {
 		"/omen show", -- [1]
 		"/opie", -- [2]
+		"/skada toggle", -- [3]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"^MakeKalimdorGreatAgain^ Looking for laid back players to push M+ and Raid content. We have discord and dont take ourselves too seriously. Any and all welcome. If you are looking for a raid spot our times are Saturday at Noon. Whisper me! ", -- [1]
-			"Soundmouse-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Soundmouse", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			179, -- [11]
-			"Player-61-0B949B08", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cfffff468Soundmouse|r",
-			[51] = 1535995565,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [1]
-		{
-			"WTS |cffa335ee|Hitem:163939::::::::120:577::54:2:1472:4786:::|h[Mallusof's Pantaloons of Stability]|h|r(150k),|cffa335ee|Hitem:163940::::::::120:577::54:3:40:1472:4786:::|h[Extra-Light Light Emitting Cord]|h|r(170k - has avoidance) Whisper me", -- [1]
-			"Têtchimon-Zul'jin", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Têtchimon", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			180, -- [11]
-			"Player-61-0B86D481", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa330c9Têtchimon|r",
-			[51] = 1535995573,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [2]
 		{
 			"WTB ANYTHING if you have something for sale or are having a hard time selling something or just need some quick gold? Send me anything at a discount! Cash on Delivery mail and if its a good enough offer i will accept it! dont message me. CoD me!", -- [1]
 			"Luckykuchera-Zul'jin", -- [2]
@@ -70,7 +27,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaLuckykuchera|r",
 			[51] = 1535995580,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [3]
+		}, -- [1]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:70::13::::|h[Darkmoon Deck: Fathoms]|h|r 115k, |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -92,7 +49,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995593,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [4]
+		}, -- [2]
 		{
 			"WTS |cffa335ee|Hitem:49286::::::::1:64::15::::|h[X-51 Nether-Rocket X-TREME]|h|r 2.5mil PST!", -- [1]
 			"Dragonplus-Zul'jin", -- [2]
@@ -114,7 +71,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaDragonplus|r",
 			[51] = 1535995599,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [5]
+		}, -- [3]
 		{
 			"WTS |cffa335ee|Hitem:163939::::::::120:577::54:2:1472:4786:::|h[Mallusof's Pantaloons of Stability]|h|r(150k),|cffa335ee|Hitem:163940::::::::120:577::54:3:40:1472:4786:::|h[Extra-Light Light Emitting Cord]|h|r(170k - has avoidance) Whisper me", -- [1]
 			"Têtchimon-Zul'jin", -- [2]
@@ -136,7 +93,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Têtchimon|r",
 			[51] = 1535995630,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [6]
+		}, -- [4]
 		{
 			"WTS |cffa335ee|Hitem:49286::::::::1:64::15::::|h[X-51 Nether-Rocket X-TREME]|h|r 2.5mil PST!", -- [1]
 			"Dragonplus-Zul'jin", -- [2]
@@ -158,7 +115,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaDragonplus|r",
 			[51] = 1535995649,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
+		}, -- [5]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:70::13::::|h[Darkmoon Deck: Fathoms]|h|r 115k, |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -180,7 +137,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995653,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
+		}, -- [6]
 		{
 			"WTB ANYTHING if you have something for sale or are having a hard time selling something or just need some quick gold? Send me anything at a discount! Cash on Delivery mail and if its a good enough offer i will accept it! dont message me. CoD me!", -- [1]
 			"Luckykuchera-Zul'jin", -- [2]
@@ -202,7 +159,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaLuckykuchera|r",
 			[51] = 1535995700,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [9]
+		}, -- [7]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:70::13::::|h[Darkmoon Deck: Fathoms]|h|r 115k, |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -224,7 +181,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995714,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [10]
+		}, -- [8]
 		{
 			"WTS |cffa335ee|Hitem:163939::::::::120:577::54:2:1472:4786:::|h[Mallusof's Pantaloons of Stability]|h|r(150k),|cffa335ee|Hitem:163940::::::::120:577::54:3:40:1472:4786:::|h[Extra-Light Light Emitting Cord]|h|r(170k - has avoidance) Whisper me", -- [1]
 			"Têtchimon-Zul'jin", -- [2]
@@ -246,7 +203,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Têtchimon|r",
 			[51] = 1535995721,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [11]
+		}, -- [9]
 		{
 			"WTS |cffa335ee|Hitem:163939::::::::120:577::54:2:1472:4786:::|h[Mallusof's Pantaloons of Stability]|h|r(150k),|cffa335ee|Hitem:163940::::::::120:577::54:3:40:1472:4786:::|h[Extra-Light Light Emitting Cord]|h|r(170k - has avoidance) Whisper me", -- [1]
 			"Têtchimon-Zul'jin", -- [2]
@@ -268,7 +225,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Têtchimon|r",
 			[51] = 1535995775,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [12]
+		}, -- [10]
 		{
 			"WTB ANYTHING if you have something for sale or are having a hard time selling something or just need some quick gold? Send me anything at a discount! Cash on Delivery mail and if its a good enough offer i will accept it! dont message me. CoD me!", -- [1]
 			"Luckykuchera-Zul'jin", -- [2]
@@ -290,7 +247,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaLuckykuchera|r",
 			[51] = 1535995820,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [13]
+		}, -- [11]
 		{
 			"OneEightSeven looking for a few more good players to join our Mythic +/raid team...in need of a lock or monk and a few  other dps....Pst if intrested", -- [1]
 			"Stålker-Zul'jin", -- [2]
@@ -312,7 +269,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Stålker|r",
 			[51] = 1535995821,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [14]
+		}, -- [12]
 		{
 			"WTB |cffa335ee|Hitem:159128::::::::120:66::13::::|h[Darkmoon Deck: Blockades]|h|r 20k |cffa335ee|Hitem:159127::::::::120:66::13::::|h[Darkmoon Deck: Tides]|h|r 15k", -- [1]
 			"Ziosis-Zul'jin", -- [2]
@@ -334,7 +291,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaZiosis|r",
 			[51] = 1535995827,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [15]
+		}, -- [13]
 		{
 			"WTS |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -356,7 +313,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995830,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [16]
+		}, -- [14]
 		{
 			"WTS |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -378,7 +335,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995855,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [17]
+		}, -- [15]
 		{
 			"OneEightSeven looking for a few more good players to join our Mythic +/raid team...in need of a lock or monk and a few  other dps....Pst if intrested", -- [1]
 			"Stålker-Zul'jin", -- [2]
@@ -400,7 +357,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Stålker|r",
 			[51] = 1535995877,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [18]
+		}, -- [16]
 		{
 			"<Coeur de Pierre> guilde PvP. Aucun ne stresse, Juste down du monde dans une bonne ambiance! Nous recherchons des joueurs avec un niveau correct qui savent s'optimiser et progresser. Chaque semaine un événement est au rendez-vous. es tu intéressé ?", -- [1]
 			"Crazyofblood", -- [2]
@@ -422,7 +379,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dCrazyofblood|r",
 			[51] = 1535995879,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [19]
+		}, -- [17]
 		{
 			"WTS |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -444,7 +401,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995880,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
+		}, -- [18]
 		{
 			"WTS |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -466,7 +423,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995905,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [21]
+		}, -- [19]
 		{
 			"Do you have other commitments? Do you want to just have fun and get loot from raids then go about your life? <Final Pull> is full of people with other responsibilties who feel the same way Casual fun in a busy world PST for info! Raiding when ready", -- [1]
 			"Spyykes-Zul'jin", -- [2]
@@ -488,7 +445,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Spyykes|r",
 			[51] = 1535995906,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [22]
+		}, -- [20]
 		{
 			"WTS |cffa335ee|Hitem:159128::::::::120:70::13::::|h[Darkmoon Deck: Blockades]|h|r 25k, |cffa335ee|Hitem:159126::::::::120:70::13::::|h[Darkmoon Deck: Squalls]|h|r 20k, |cffa335ee|Hitem:159127::::::::120:70::13::::|h[Darkmoon Deck: Tides]|h|r 20k", -- [1]
 			"Heirteir-Zul'jin", -- [2]
@@ -510,7 +467,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHeirteir|r",
 			[51] = 1535995930,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [23]
+		}, -- [21]
 		{
 			"WTS |cffa335ee|Hitem:163939::::::::120:577::54:2:1472:4786:::|h[Mallusof's Pantaloons of Stability]|h|r(150k),|cffa335ee|Hitem:163940::::::::120:577::54:3:40:1472:4786:::|h[Extra-Light Light Emitting Cord]|h|r(170k - has avoidance) Whisper me", -- [1]
 			"Têtchimon-Zul'jin", -- [2]
@@ -532,7 +489,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Têtchimon|r",
 			[51] = 1535995937,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [24]
+		}, -- [22]
 		{
 			"OneEightSeven looking for a few more good players to join our Mythic +/raid team...in need of a lock or monk and a few  other dps....Pst if intrested", -- [1]
 			"Stålker-Zul'jin", -- [2]
@@ -554,7 +511,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Stålker|r",
 			[51] = 1535995938,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [25]
+		}, -- [23]
 		{
 			"WTB ANYTHING if you have something for sale or are having a hard time selling something or just need some quick gold? Send me anything at a discount! Cash on Delivery mail and if its a good enough offer i will accept it! dont message me. CoD me!", -- [1]
 			"Luckykuchera-Zul'jin", -- [2]
@@ -576,7 +533,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaLuckykuchera|r",
 			[51] = 1535995940,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [26]
+		}, -- [24]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -598,7 +555,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536458986,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [27]
+		}, -- [25]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -620,7 +577,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459057,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [28]
+		}, -- [26]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -642,7 +599,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459105,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [29]
+		}, -- [27]
 		{
 			"wts |cffa335ee|Hitem:94591::::::::110:263::::::|h[Blazefury, Reborn]|h|r Great looking transmog |cff0070dd|Hitem:16735:::::::-1930083456:110:263::::::|h[Bracers of Valor]|h|r Unobtainable since cata!! PST ", -- [1]
 			"Adonkeypunch-Zul'jin", -- [2]
@@ -664,7 +621,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAdonkeypunch|r",
 			[51] = 1536459120,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [30]
+		}, -- [28]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -686,7 +643,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459126,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [31]
+		}, -- [29]
 		{
 			"wts |cffa335ee|Hitem:94591::::::::110:263::::::|h[Blazefury, Reborn]|h|r Great looking transmog |cff0070dd|Hitem:16735:::::::-1930083456:110:263::::::|h[Bracers of Valor]|h|r Unobtainable since cata!! PST ", -- [1]
 			"Adonkeypunch-Zul'jin", -- [2]
@@ -708,7 +665,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAdonkeypunch|r",
 			[51] = 1536459141,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [30]
 		{
 			"wts |cffa335ee|Hitem:94591::::::::110:263::::::|h[Blazefury, Reborn]|h|r Great looking transmog |cff0070dd|Hitem:16735:::::::-1930083456:110:263::::::|h[Bracers of Valor]|h|r Unobtainable since cata!! PST ", -- [1]
 			"Adonkeypunch-Zul'jin", -- [2]
@@ -730,7 +687,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAdonkeypunch|r",
 			[51] = 1536459179,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [33]
+		}, -- [31]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -752,7 +709,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459182,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [34]
+		}, -- [32]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -774,7 +731,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459211,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [35]
+		}, -- [33]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -796,7 +753,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459280,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [36]
+		}, -- [34]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -818,7 +775,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459376,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [37]
+		}, -- [35]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -840,7 +797,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459422,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [38]
+		}, -- [36]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -862,7 +819,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459478,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [39]
+		}, -- [37]
 		{
 			"WTS |cffa335ee|Hitem:94591::::::::110:263::::::|h[Blazefury, Reborn]|h|r Great transmog PST 90k! ", -- [1]
 			"Adonkeypunch-Zul'jin", -- [2]
@@ -884,7 +841,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAdonkeypunch|r",
 			[51] = 1536459513,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [38]
 		{
 			"WTB |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152512::::::::120:64::::::|h[Monelite Ore]|h|r stacks pst", -- [1]
 			"Bookie-Zul'jin", -- [2]
@@ -906,7 +863,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaBookie|r",
 			[51] = 1536459528,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [41]
+		}, -- [39]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -928,7 +885,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459535,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [42]
+		}, -- [40]
 		{
 			"WTS |cffa335ee|Hitem:94591::::::::110:263::::::|h[Blazefury, Reborn]|h|r Great transmog PST 90k! ", -- [1]
 			"Adonkeypunch-Zul'jin", -- [2]
@@ -950,7 +907,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAdonkeypunch|r",
 			[51] = 1536459547,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [43]
+		}, -- [41]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -972,7 +929,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459573,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [44]
+		}, -- [42]
 		{
 			"WTB |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152512::::::::120:64::::::|h[Monelite Ore]|h|r stacks pst", -- [1]
 			"Bookie-Zul'jin", -- [2]
@@ -994,7 +951,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaBookie|r",
 			[51] = 1536459614,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [45]
+		}, -- [43]
 		{
 			"wtb all mats Monelite Ore 45g Storm Silver Ore 30g Platinum Ore 30g herbs 15g Anchor Weed 400g Gloom Dust 15g Umbra Shard100g Deep Sea Satin20g Riverbud and Pollen 30g trade in org or cod please <3", -- [1]
 			"Gwenevere-Zul'jin", -- [2]
@@ -1016,7 +973,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaGwenevere|r",
 			[51] = 1536459637,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [46]
+		}, -- [44]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1038,7 +995,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459644,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [45]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1060,7 +1017,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [48]
+		}, -- [46]
 		{
 			"WTB BFA Greens  non crafted 140 ea crafted 100ea  BFA Herbs 25ea thru c.o.d pls", -- [1]
 			"Muddoggy-Zul'jin", -- [2]
@@ -1082,7 +1039,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Muddoggy|r",
 			[51] = 1536459761,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [49]
+		}, -- [47]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1104,7 +1061,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459815,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [50]
+		}, -- [48]
 		{
 			"wtb all mats Monelite Ore 45g Storm Silver Ore 30g Platinum Ore 30g herbs 15g Anchor Weed 400g Gloom Dust 15g Umbra Shard100g Deep Sea Satin20g Riverbud and Pollen 30g trade in org or cod please <3", -- [1]
 			"Gwenevere-Zul'jin", -- [2]
@@ -1126,7 +1083,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaGwenevere|r",
 			[51] = 1536459821,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [51]
+		}, -- [49]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1148,7 +1105,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459858,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [52]
+		}, -- [50]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1170,7 +1127,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459888,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [53]
+		}, -- [51]
 		{
 			"WTS |cffa335ee|Hitem:94591::::::::110:263::::::|h[Blazefury, Reborn]|h|r Great transmog PST 90k! ", -- [1]
 			"Adonkeypunch-Zul'jin", -- [2]
@@ -1192,7 +1149,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAdonkeypunch|r",
 			[51] = 1536459898,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [54]
+		}, -- [52]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1214,7 +1171,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459902,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [55]
+		}, -- [53]
 		{
 			"WTB |cffffffff|Hitem:152541::::::::120:105::::::|h[Coarse Leather]|h|r 15g |cffffffff|Hitem:154164::::::::120:105::::::|h[Blood-Stained Bone]|h|r20g", -- [1]
 			"Barebutt-Zul'jin", -- [2]
@@ -1236,7 +1193,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aBarebutt|r",
 			[51] = 1536459971,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [56]
+		}, -- [54]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1258,7 +1215,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536459982,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [57]
+		}, -- [55]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1280,7 +1237,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460042,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [58]
+		}, -- [56]
 		{
 			"WTS|cff1eff00|Hitem:159786::::::::120:71::::::|h[Enchant Weapon - Quick Navigation]|h|r|cff1eff00|Hitem:159788::::::::120:71::::::|h[Enchant Weapon - Versatile Navigation]|h|r3k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1302,7 +1259,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460045,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [59]
+		}, -- [57]
 		{
 			"<RTLN> has high demand for raid healers, or exceptional dps. We do mythic+ and are creating a mythic raid team. Personally been mythic raiding since WoD others with 10/11 exp within the guild. DO NOT inquire if you cannot take criticism or offended easy.", -- [1]
 			"Fatherdayton-Zul'jin", -- [2]
@@ -1324,7 +1281,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaFatherdayton|r",
 			[51] = 1536460047,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [60]
+		}, -- [58]
 		{
 			"WTS |cffa335ee|Hitem:54068::::::::110:269::::::|h[Wooly White Rhino]|h|r 2.2m", -- [1]
 			"Pingpongqt-Zul'jin", -- [2]
@@ -1346,7 +1303,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Pingpongqt|r",
 			[51] = 1536460052,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [61]
+		}, -- [59]
 		{
 			"WTB Anchor weed 450 ea PST", -- [1]
 			"Pingpongqt-Zul'jin", -- [2]
@@ -1368,7 +1325,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Pingpongqt|r",
 			[51] = 1536460053,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [62]
+		}, -- [60]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1390,7 +1347,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460081,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [63]
+		}, -- [61]
 		{
 			"<Riders of Azeroth> is a casual guild looking for more riders! Will have raids (need tank, heals, & dps), run dungeons, fun events and help leveling! Looking for officers to help build our guild! PST to join!", -- [1]
 			"Niez-Zul'jin", -- [2]
@@ -1412,7 +1369,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Niez|r",
 			[51] = 1536460093,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [64]
+		}, -- [62]
 		{
 			"WTB |cffffffff|Hitem:152512::::::::120:64::::::|h[Monelite Ore]|h|r stacks pst", -- [1]
 			"Bookie-Zul'jin", -- [2]
@@ -1434,7 +1391,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaBookie|r",
 			[51] = 1536460099,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [65]
+		}, -- [63]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1456,7 +1413,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460106,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [66]
+		}, -- [64]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1478,7 +1435,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460115,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [67]
+		}, -- [65]
 		{
 			"<Coeur de Pierre> guilde PvP. Aucun stresse, Juste down du monde dans une bonne ambiance! Nous recherchons des joueurs avec un niveau correct qui savent s'optimiser et progresser. Chaque semaine un événement est au rendez-vous. es tu interessé ?", -- [1]
 			"Crazyofblood-Zul'jin", -- [2]
@@ -1500,7 +1457,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dCrazyofblood|r",
 			[51] = 1536460156,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [68]
+		}, -- [66]
 		{
 			"wtb all mats Monelite Ore 45g Storm Silver Ore 30g Platinum Ore 30g herbs 15g Anchor Weed 400g Gloom Dust 15g Umbra Shard100g Deep Sea Satin20g Riverbud and Pollen 30g trade in org or cod please <3", -- [1]
 			"Gwenevere-Zul'jin", -- [2]
@@ -1522,7 +1479,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaGwenevere|r",
 			[51] = 1536460160,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [69]
+		}, -- [67]
 		{
 			"WTS |cffa335ee|Hitem:54068::::::::110:269::::::|h[Wooly White Rhino]|h|r 2.2m", -- [1]
 			"Pingpongqt-Zul'jin", -- [2]
@@ -1544,7 +1501,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Pingpongqt|r",
 			[51] = 1536460190,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [70]
+		}, -- [68]
 		{
 			"WTB Anchor weed 450 ea PST", -- [1]
 			"Pingpongqt-Zul'jin", -- [2]
@@ -1566,7 +1523,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Pingpongqt|r",
 			[51] = 1536460190,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [69]
 		{
 			"WTS The Alani Mount!! |cffa335ee|Hitem:90655::::::::113:270::::::|h[Reins of the Thundering Ruby Cloud Serpent]|h|r PM!! 100% Guaranteed!", -- [1]
 			"Alonsoguzh-Zul'jin", -- [2]
@@ -1588,7 +1545,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Alonsoguzh|r",
 			[51] = 1536460196,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [70]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1610,7 +1567,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460203,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [71]
 		{
 			"WTS |cffa335ee|Hitem:161074::::::::110:64::3:3:4798:1492:4784:::|h[Crushproof Vambraces]|h|r ilvl 370 - 300k", -- [1]
 			"Kryogenix-Zul'jin", -- [2]
@@ -1632,7 +1589,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaKryogenix|r",
 			[51] = 1536460267,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [74]
+		}, -- [72]
 		{
 			"<Riders of Azeroth> is a casual guild looking for more riders! Will have raids (need tank, heals, & dps), run dungeons, fun events and help leveling! Looking for officers to help build our guild! PST to join!", -- [1]
 			"Niez-Zul'jin", -- [2]
@@ -1654,7 +1611,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Niez|r",
 			[51] = 1536460273,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [75]
+		}, -- [73]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1676,7 +1633,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460286,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [74]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1698,7 +1655,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460305,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [77]
+		}, -- [75]
 		{
 			"WTB |cffffffff|Hitem:152512::::::::120:64::::::|h[Monelite Ore]|h|r|cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r stacks pst", -- [1]
 			"Bookie-Zul'jin", -- [2]
@@ -1720,7 +1677,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaBookie|r",
 			[51] = 1536460328,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [78]
+		}, -- [76]
 		{
 			"WTB Sky golem", -- [1]
 			"Tautem-Zul'jin", -- [2]
@@ -1742,7 +1699,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddTautem|r",
 			[51] = 1536460338,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [77]
 		{
 			"WTS|cffa335ee|Hitem:152877::::::::120:71::::::|h[Veiled Crystal]|h|r2k ea", -- [1]
 			"Alliancelad-Zul'jin", -- [2]
@@ -1764,7 +1721,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dAlliancelad|r",
 			[51] = 1536460338,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [78]
 		{
 			"WTS |cffa335ee|Hitem:161075::::::::120:259::3:4:4798:1808:1492:4784:::|h[Antiseptic Specimen Handlers]|h|r 370 with a socket ", -- [1]
 			"Trojan-Zul'jin", -- [2]
@@ -1786,7 +1743,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Trojan|r",
 			[51] = 1536640421,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [79]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -1808,7 +1765,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977800,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [82]
+		}, -- [80]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -1830,7 +1787,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977800,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [83]
+		}, -- [81]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -1852,7 +1809,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977831,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [82]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -1874,7 +1831,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977831,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [83]
 		{
 			"WTS/WTT |cffa335ee|Hitem:163935::::::::120:268::54:2:1472:4786:::|h[Landoi's Scrutiny]|h|rcheap", -- [1]
 			"Dave-Zul'jin", -- [2]
@@ -1896,7 +1853,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Dave|r",
 			[51] = 1536977835,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [86]
+		}, -- [84]
 		{
 			"WTB ALL BFA Greens 150ea, |cffffffff|Hitem:154164::::::::120:270::::::|h[Blood-Stained Bone]|h|r 25g ea, |cffffffff|Hitem:153050::::::::120:270::::::|h[Shimmerscale]|h|r 5g ea, CoD Only ty", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -1918,7 +1875,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1536977850,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [85]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -1940,7 +1897,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977884,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [86]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -1962,7 +1919,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977885,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [87]
 		{
 			"WTB ALL BFA Greens 150ea, |cffffffff|Hitem:154164::::::::120:270::::::|h[Blood-Stained Bone]|h|r 25g ea, |cffffffff|Hitem:153050::::::::120:270::::::|h[Shimmerscale]|h|r 5g ea, CoD Only ty", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -1984,7 +1941,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1536977910,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [88]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -2006,7 +1963,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977930,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [89]
 		{
 			"364 Arms Warrior Looking to run Mythic Taloc!!!", -- [1]
 			"Handzz-Zul'jin", -- [2]
@@ -2028,7 +1985,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHandzz|r",
 			[51] = 1536977930,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [90]
 		{
 			"Keep Yourself Safe is selling Normal Uldir PL 9pm EST Saturday, rolling off all unneeded gear pst for more info!", -- [1]
 			"Estheremo-Zul'jin", -- [2]
@@ -2050,7 +2007,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddEstheremo|r",
 			[51] = 1536977942,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [91]
 		{
 			"[WTS] ULDIR HEROIC 8/8 PERSONAL LOOT FULL RUN. TODAY at 11:00 PM EDT. [PST]", -- [1]
 			"Anuggol-Zul'jin", -- [2]
@@ -2072,7 +2029,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddAnuggol|r",
 			[51] = 1536977963,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [92]
 		{
 			"WTB ALL BFA Greens 150ea, |cffffffff|Hitem:154164::::::::120:270::::::|h[Blood-Stained Bone]|h|r 25g ea, |cffffffff|Hitem:153050::::::::120:270::::::|h[Shimmerscale]|h|r 5g ea, CoD Only ty", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -2094,7 +2051,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1536977970,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [95]
+		}, -- [93]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:269::13::::|h[Darkmoon Deck: Fathoms]|h|r 80k, |cffa335ee|Hitem:159128::::::::120:269::13::::|h[Darkmoon Deck: Blockades]|h|r 20k, |cffa335ee|Hitem:159126::::::::120:269::13::::|h[Darkmoon Deck: Squalls]|h|r 16k, tides - 15k PST", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -2116,7 +2073,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1537238166,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [96]
+		}, -- [94]
 		{
 			"<Carnival of Chaos> is recruiting for our casual raid team (tues/wed - 9 to 12 server) - We are chill bunch of peeps, looking to have fun together, and play gamez - If you need a home or place to hang, Pst me!!!", -- [1]
 			"Monrow-Zul'jin", -- [2]
@@ -2138,7 +2095,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aMonrow|r",
 			[51] = 1537238170,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [95]
 		{
 			"wts green 125g each pst", -- [1]
 			"Holypali-Zul'jin", -- [2]
@@ -2160,7 +2117,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaHolypali|r",
 			[51] = 1537238172,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [96]
 		{
 			"Full Clear Uldir Normal/Heroic with loot!Weekly M+10!Best Price!Pst", -- [1]
 			"Hedam-Zul'jin", -- [2]
@@ -2182,7 +2139,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHedam|r",
 			[51] = 1537238206,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
+		}, -- [97]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:269::13::::|h[Darkmoon Deck: Fathoms]|h|r 80k, |cffa335ee|Hitem:159128::::::::120:269::13::::|h[Darkmoon Deck: Blockades]|h|r 20k, |cffa335ee|Hitem:159126::::::::120:269::13::::|h[Darkmoon Deck: Squalls]|h|r 16k, tides - 15k PST", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -2204,7 +2161,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1537238211,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [100]
+		}, -- [98]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:269::13::::|h[Darkmoon Deck: Fathoms]|h|r 80k, |cffa335ee|Hitem:159128::::::::120:269::13::::|h[Darkmoon Deck: Blockades]|h|r 20k, |cffa335ee|Hitem:159126::::::::120:269::13::::|h[Darkmoon Deck: Squalls]|h|r 16k, tides - 15k PST", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -2226,7 +2183,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1537238256,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [101]
+		}, -- [99]
 		{
 			"<Carnival of Chaos> Newly formed guild with experienced raiders- 8/8n 3/8h - looking for a fun casual atmosphere to push heroics, normals, m+'s, and other fun crap - Recruiting for raid team now(heals and DPS spots)!", -- [1]
 			"Monrow-Zul'jin", -- [2]
@@ -2248,7 +2205,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aMonrow|r",
 			[51] = 1537238269,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [100]
 		{
 			"<Carnival of Chaos> is recruiting for our casual raid team (tues/wed - 9 to 12 server) - We are chill bunch of peeps, looking to have fun together, and play gamez - If you need a home or place to hang, Pst me!!!", -- [1]
 			"Monrow-Zul'jin", -- [2]
@@ -2270,7 +2227,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aMonrow|r",
 			[51] = 1537238290,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [101]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:269::13::::|h[Darkmoon Deck: Fathoms]|h|r 80k, |cffa335ee|Hitem:159128::::::::120:269::13::::|h[Darkmoon Deck: Blockades]|h|r 20k, |cffa335ee|Hitem:159126::::::::120:269::13::::|h[Darkmoon Deck: Squalls]|h|r 16k, tides - 15k PST", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -2292,7 +2249,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1537238300,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [104]
+		}, -- [102]
 		{
 			"WTS |cffffffff|Hitem:152640::::::::120:270::::::|h[Flask of the Vast Horizon]|h|r 1900 EACH PST", -- [1]
 			"Envelop-Zul'jin", -- [2]
@@ -2314,7 +2271,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Envelop|r",
 			[51] = 1537238309,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [105]
+		}, -- [103]
 		{
 			"Full Clear Uldir Normal/Heroic with loot!Weekly M+10!Best Price!Pst", -- [1]
 			"Hedam-Zul'jin", -- [2]
@@ -2336,7 +2293,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHedam|r",
 			[51] = 1537238318,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
+		}, -- [104]
 		{
 			"WTS |cffa335ee|Hitem:159125::::::::120:269::13::::|h[Darkmoon Deck: Fathoms]|h|r 80k, |cffa335ee|Hitem:159128::::::::120:269::13::::|h[Darkmoon Deck: Blockades]|h|r 20k, |cffa335ee|Hitem:159126::::::::120:269::13::::|h[Darkmoon Deck: Squalls]|h|r 16k, tides - 15k PST", -- [1]
 			"Veliha-Zul'jin", -- [2]
@@ -2358,7 +2315,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Veliha|r",
 			[51] = 1537238346,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [107]
+		}, -- [105]
 		{
 			"|cffffff00Nozzlepot's Outpost is under attack!|r", -- [1]
 			"", -- [2]
@@ -2380,7 +2337,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1537335395,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
+		}, -- [106]
 		{
 			"WTS|cff0070dd|Hitem:128807::::::::100:259::::::|h[Coin of Many Faces]|h|r6k or best offer and willing to do bulk deals. Going for 12k on AH pst        ", -- [1]
 			"Getfarmed-Zul'jin", -- [2]
@@ -2402,7 +2359,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Getfarmed|r",
 			[51] = 1537335653,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
+		}, -- [107]
 		{
 			"LF healer for 3s pushing 2k", -- [1]
 			"Dave-Zul'jin", -- [2]
@@ -2424,7 +2381,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Dave|r",
 			[51] = 1537707280,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [110]
+		}, -- [108]
 		{
 			"Is your io score as low as your IQ? Are you tired of being asked to link AOTC to get into a +2? Do you like keep warm on a cold, winter night by standing in the fire? Then <Garbage> is the place for you! Casual raiding, PVP, whatever. PST Today!", -- [1]
 			"Amplepenance-Zul'jin", -- [2]
@@ -2446,7 +2403,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffAmplepenance|r",
 			[51] = 1538317172,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [111]
+		}, -- [109]
 		{
 			"LFM N Mythraxx Pst for invite", -- [1]
 			"Såke-Zul'jin", -- [2]
@@ -2468,7 +2425,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Såke|r",
 			[51] = 1538354943,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [110]
 		{
 			"Selling Full Clear Uldir Normal/Heroic with loot!Weekly M+10!Best Price!Pst", -- [1]
 			"Hedam-Zul'jin", -- [2]
@@ -2490,7 +2447,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dHedam|r",
 			[51] = 1538354965,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [113]
+		}, -- [111]
 		{
 			"WTS--WTS-M+10 Loot run now !!! 8/8 H Uldir Tonight-360/390wepaon&350*355*365boe package &mount&11o-12O&Update gear 360", -- [1]
 			"Fainzarzzak-Zul'jin", -- [2]
@@ -2512,7 +2469,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Fainzarzzak|r",
 			[51] = 1538367410,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [114]
+		}, -- [112]
 		{
 			"- Herioc Uldir Full Clear now!! 1  SELFPLAY spot OPEN- <kill G'HUN NOW>'-WTS mythic +10 carry ---come now", -- [1]
 			"Fainzarzzak-Zul'jin", -- [2]
@@ -2534,7 +2491,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Fainzarzzak|r",
 			[51] = 1538367435,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
+		}, -- [113]
 		{
 			"Selling Weekly +10 - get your 380+ piece in your cache tuesday aswell as 370 pieces in the run! Pst for price.", -- [1]
 			"Dhbuddy-Zul'jin", -- [2]
@@ -2556,7 +2513,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Dhbuddy|r",
 			[51] = 1538367437,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [116]
+		}, -- [114]
 		{
 			"WTS |cffa335ee|Hkeystone:158923:245:10:10:7:2:16|h[Keystone: Freehold (10)]|h|r CARRY ", -- [1]
 			"Clickars-Zul'jin", -- [2]
@@ -2578,7 +2535,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Clickars|r",
 			[51] = 1538802130,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
+		}, -- [115]
 		{
 			"Selling Weekly +10 - get your 380+ piece in your cache tuesday aswell as 370 pieces in the run! Pst for price.", -- [1]
 			"Buddysales-Zul'jin", -- [2]
@@ -2600,7 +2557,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddBuddysales|r",
 			[51] = 1538802160,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [118]
+		}, -- [116]
 		{
 			"WTS |cffa335ee|Hitem:163575::::::::120:64::::::|h[Reins of a Tamed Bloodfeaster]|h|r cheaper than AH", -- [1]
 			"Amaîmon-Zul'jin", -- [2]
@@ -2622,7 +2579,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaAmaîmon|r",
 			[51] = 1539102723,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [119]
+		}, -- [117]
 		{
 			"Coucou! Tu cherches une guilde active et fiable pour progresser dans BFA? Le Vent du Nord est une guilde de plus de 500 accounts créée il y a plus de 3 ans. Entraide, donjons, groupes de raid mythic, PvP... Ça t'intéresse? Groupes de raids (7/8 H)", -- [1]
 			"Donsel", -- [2]
@@ -2644,7 +2601,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Donsel|r",
 			[51] = 1539546181,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [120]
+		}, -- [118]
 		{
 			"WTS 1.35m TCG pet pile for ONLY 599K LAST CALL", -- [1]
 			"Bradrindra-Zul'jin", -- [2]
@@ -2666,7 +2623,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaBradrindra|r",
 			[51] = 1539910271,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
+		}, -- [119]
 		{
 			" Cheap gold in stock //Discount on Boe Gears //Herbs/Material/Gems/Flasks//---Mecha-Mogul Mk2--$59--HoT SALE lVL370+ Ring//Trinket and Lvl395 gears.-Full Boe Class Set-BMAH mounts and T3 package....( Visit  www.bank4dh.com  Code : Card)", -- [1]
 			"Tenarth-Zul'jin", -- [2]
@@ -2688,7 +2645,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tenarth|r",
 			[51] = 1541131805,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [120]
 		{
 			" Cheap gold in stock //Discount on Boe Gears //Herbs/Material/Gems/Flasks//---Mecha-Mogul Mk2--$59--HoT SALE lVL370+ Ring//Trinket and Lvl395 gears.-Full Boe Class Set-BMAH mounts and T3 package....( Visit  www.bank4dh.com  Code : Card)", -- [1]
 			"Bellemdabita-Zul'jin", -- [2]
@@ -2710,7 +2667,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Bellemdabita|r",
 			[51] = 1541305145,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [123]
+		}, -- [121]
 		{
 			" Cheap gold in stock //Discount on Boe Gears //Herbs/Material/Gems/Flasks//---Mecha-Mogul Mk2--$59--HoT SALE lVL370+ Ring//Trinket and Lvl395 gears.-Full Boe Class Set-BMAH mounts and T3 package....( Visit  www.bank4dh.com  Code : Card)", -- [1]
 			"Bellemdabita-Zul'jin", -- [2]
@@ -2732,7 +2689,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Bellemdabita|r",
 			[51] = 1541305234,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [124]
+		}, -- [122]
 		{
 			"**Diligence**8/8 H 2/8 M, is currently looking for  players to add to our BFA Mythic roster. RAid times are WED/SUN 8-11 pm EST and currently  need any 2 DPS or 1 healer !!.. Pst for more info :).", -- [1]
 			"Arahova-Zul'jin", -- [2]
@@ -2754,7 +2711,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Arahova|r",
 			[51] = 1541305309,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [125]
+		}, -- [123]
 		{
 			"●●●WTS Mythic+10 +11 +12 Carry for the week reward. Uldir 8/8 Heroic(PL).no accshare,carry right now.Also Unlock All Glory ACH for Mount |cffa335ee|Hitem:163216::::::::1:253::::::|h[Bloodgorged Crawg]|h|rand|cffa335ee|Hitem:161215::::::::1:253::::::|h[Reins of the Obsidian Krolusk]|h|rand|cffa335ee|Hitem:152815::::::::1:253::::::|h[Antoran Gloomhound]|h|rPST●●", -- [1]
 			"Raialga-Zul'jin", -- [2]
@@ -2776,7 +2733,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Raialga|r",
 			[51] = 1542165359,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [124]
 		{
 			"Care to try a laid back lvling guild", -- [1]
 			"Smartsikko", -- [2]
@@ -2798,6 +2755,50 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSmartsikko|r",
 			[51] = 1542769645,
 			[50] = "CHAT_MSG_WHISPER",
+		}, -- [125]
+		{
+			"|cffffff00The Crossroads is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"LocalDefense - Northern Barrens", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			907, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "",
+			[51] = 1543041482,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [126]
+		{
+			"|cffffff00The Crossroads is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Northern Barrens", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Northern Barrens", -- [9]
+			0, -- [10]
+			923, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1543041615,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},
 }

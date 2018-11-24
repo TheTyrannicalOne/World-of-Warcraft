@@ -1,54 +1,71 @@
 
 MasterPlanAG = {
-	["Black Dragonflight"] = {
-		["Durlok"] = {
+	["Illidan"] = {
+		["Zerkinz"] = {
+			["class"] = "DRUID",
+			["lastCacheTime"] = 1456134282,
+			["summary"] = {
+				["inProgress"] = {
+					[3] = 1453758371,
+				},
+			},
+			["faction"] = "Horde",
+		},
+		["Xerret"] = {
+			["class"] = "MONK",
+			["lastCacheTime"] = 1452934806,
+			["faction"] = "Horde",
+		},
+		["Aerionz"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Horde",
+		},
+		["Recloos"] = {
 			["class"] = "DRUID",
 			["faction"] = "Horde",
 		},
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["lastCacheTime"] = 1542846722,
-			["summary"] = {
-				["lastOilTime"] = 1542846601,
-				["ti2"] = 122486,
-				["inProgress"] = {
-					[380] = 1542860988,
-					[745] = 1542911401,
-					[397] = 1542882579,
-					[177] = 1542847923,
-					[186] = 1542850177,
-					[312] = 1542868161,
-					[268] = 1542860971,
-					[620] = 1542911397,
-					[742] = 1542860999,
-					[189] = 1542847925,
-					[258] = 1542875386,
-					[394] = 1542875353,
-					[214] = 1542850168,
-				},
-				["ti3"] = 127854,
-				["tt1"] = 1542412973,
-				["ti1"] = 118531,
-				["tt3"] = 1542409973,
-				["tt2"] = 1542588408,
-			},
+		["Milkd"] = {
+			["class"] = "PALADIN",
 			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 1970,
-			["curOil"] = 65285,
 		},
-		["Jingojaggot"] = {
+		["Xerkin"] = {
+			["lastCacheTime"] = 1458101277,
+			["class"] = "WARLOCK",
+			["faction"] = "Horde",
+		},
+		["Aerion"] = {
+			["faction"] = "Horde",
+			["class"] = "ROGUE",
+		},
+		["Klitpounder"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Horde",
+		},
+		["Bennyhin"] = {
 			["class"] = "PRIEST",
+			["faction"] = "Horde",
+		},
+		["Xerkinz"] = {
+			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1453618172,
+			["faction"] = "Horde",
+		},
+		["Zerkin"] = {
+			["lastCacheTime"] = 1462930208,
+			["class"] = "SHAMAN",
+			["summary"] = {
+				["tt3"] = true,
+				["ti1"] = 118530,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[265] = 1459257399,
+				},
+				["tt1"] = true,
+			},
 			["faction"] = "Horde",
 		},
 	},
 	["Zul'jin"] = {
-		["Shanyt"] = {
-			["class"] = "WARRIOR",
-			["faction"] = "Horde",
-		},
 		["Tyrann"] = {
 			["class"] = "PRIEST",
 			["faction"] = "Horde",
@@ -56,6 +73,54 @@ MasterPlanAG = {
 		["Vancard"] = {
 			["faction"] = "Horde",
 			["class"] = "MAGE",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+	},
+	["Tanaris"] = {
+		["Youngpoobs"] = {
+			["class"] = "MONK",
+			["faction"] = "Alliance",
+		},
+	},
+	["Sargeras"] = {
+		["Zerkinz"] = {
+			["faction"] = "Neutral",
+			["class"] = "SHAMAN",
+		},
+		["Xerkinz"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["curOil"] = 66750,
+			["summary"] = {
+				["lastOilTime"] = 1543072480,
+				["ti2"] = 122486,
+				["inProgress"] = {
+					[670] = 1543086861,
+					[204] = 1543075168,
+					[174] = 1543076051,
+					[380] = 1543079671,
+					[745] = 1543137280,
+				},
+				["ti3"] = 127854,
+				["ti1"] = 118531,
+				["tt1"] = 1542412973,
+				["tt3"] = 1542409973,
+				["tt2"] = 1542588408,
+			},
+			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1543072414,
+			["curRes"] = 6693,
+			["class"] = "WARRIOR",
 		},
 	},
 }

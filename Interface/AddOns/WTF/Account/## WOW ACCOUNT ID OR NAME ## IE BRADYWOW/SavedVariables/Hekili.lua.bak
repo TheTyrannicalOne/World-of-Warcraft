@@ -1,0 +1,2536 @@
+
+HekiliDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Zerkin - Illidan",
+	},
+	["profiles"] = {
+		["Zerkin - Illidan"] = {
+			["Class Option: forecast_swings"] = true,
+			["Class Option: safety_window"] = 0,
+			["Toggle State: doom_winds"] = true,
+			["Class Option: lava_lash_maelstrom"] = 120,
+			["Class Option: forecast_fury"] = true,
+			["actionLists"] = {
+				{
+					["Enabled"] = true,
+					["Script"] = "",
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = false,
+							["Script"] = "toggle.cooldowns&(target.health.pct<25||time>0.500)",
+							["Name"] = "Heroism",
+							["Release"] = 201617.03,
+							["Ability"] = "bloodlust",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.potions&(buff.elemental_mastery.up||target.time_to_die<=30||buff.bloodlust.up)",
+							["Ability"] = "potion",
+							["Indicator"] = "none",
+							["Name"] = "Potion",
+							["Args"] = "name=\"deadly_grace\"",
+							["Release"] = 201617.03,
+							["CheckMovement"] = false,
+							["ModName"] = "\"deadly_grace\"",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.resonance_totem.remains<2",
+							["Name"] = "Totem Mastery",
+							["Release"] = 201617.03,
+							["Ability"] = "totem_mastery",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Name"] = "Fire Elemental",
+							["Release"] = 201617.03,
+							["Ability"] = "fire_elemental",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Name"] = "Storm Elemental",
+							["Release"] = 201617.03,
+							["Ability"] = "storm_elemental",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Name"] = "Elemental Mastery",
+							["Release"] = 201617.03,
+							["Ability"] = "elemental_mastery",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns&(!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50)",
+							["Name"] = "Blood Fury",
+							["Release"] = 201617.03,
+							["Ability"] = "blood_fury",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns&(!talent.ascendance.enabled||buff.ascendance.up)",
+							["Name"] = "Berserking",
+							["Release"] = 201617.03,
+							["Ability"] = "berserking",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>2\n",
+							["Ability"] = "run_action_list",
+							["Indicator"] = "none",
+							["Name"] = "Run Action List",
+							["Args"] = "",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = true,
+							["CheckMovement"] = false,
+							["ModName"] = "\"SimC Elemental: AOE\"",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "talent.ascendance.enabled",
+							["Ability"] = "run_action_list",
+							["Indicator"] = "none",
+							["Name"] = "Run Action List (1)",
+							["Args"] = "",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = true,
+							["CheckMovement"] = false,
+							["ModName"] = "\"SimC Elemental: single asc\"",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "talent.icefury.enabled",
+							["Ability"] = "run_action_list",
+							["Indicator"] = "none",
+							["Name"] = "Run Action List (2)",
+							["Args"] = "",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = true,
+							["CheckMovement"] = false,
+							["ModName"] = "\"SimC Elemental: single if\"",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Script"] = "talent.lightning_rod.enabled",
+							["Ability"] = "run_action_list",
+							["Indicator"] = "none",
+							["Name"] = "Run Action List (3)",
+							["Args"] = "",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = true,
+							["CheckMovement"] = false,
+							["ModName"] = "\"SimC Elemental: single lr\"",
+						}, -- [12]
+					},
+					["Name"] = "SimC Elemental: default",
+				}, -- [1]
+				{
+					["Enabled"] = true,
+					["Script"] = "",
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.potions",
+							["Ability"] = "potion",
+							["Indicator"] = "none",
+							["Name"] = "Potion",
+							["Args"] = "name=\"deadly_grace\"",
+							["Release"] = 201617.03,
+							["CheckMovement"] = false,
+							["ModName"] = "\"deadly_grace\"",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Name"] = "Totem Mastery",
+							["Release"] = 201617.03,
+							["Ability"] = "totem_mastery",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Release"] = 201617.03,
+							["Ability"] = "stormkeeper",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+					},
+					["Name"] = "SimC Elemental: precombat",
+				}, -- [2]
+				{
+					["Enabled"] = true,
+					["Script"] = "",
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "!ticking",
+							["Name"] = "Flame Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up&maelstrom.current>=86",
+							["Name"] = "Earthquake",
+							["Release"] = 201617.03,
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=92",
+							["Name"] = "Earth Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>3",
+							["Name"] = "Stormkeeper",
+							["Release"] = 201617.03,
+							["Ability"] = "stormkeeper",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Name"] = "Elemental Blast",
+							["Release"] = 201617.03,
+							["Ability"] = "elemental_blast",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>3",
+							["Name"] = "Liquid Magma Totem",
+							["Release"] = 201617.03,
+							["Ability"] = "liquid_magma_totem",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time&cooldown_react",
+							["Name"] = "Lava Burst",
+							["Release"] = 201617.03,
+							["Ability"] = "lava_burst",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&refreshable",
+							["Name"] = "Flame Shock (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=86",
+							["Name"] = "Earth Shock (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.resonance_totem.remains<10||(buff.resonance_totem.remains<(buff.ascendance.duration+cooldown.ascendance.remains)&cooldown.ascendance.remains<15)",
+							["Name"] = "Totem Mastery",
+							["Release"] = 201617.03,
+							["Ability"] = "totem_mastery",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up",
+							["Name"] = "Earthquake (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3&debuff.lightning_rod.down",
+							["Name"] = "Lightning Bolt",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
+							["Name"] = "Lightning Bolt (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [13]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_enemies>1&debuff.lightning_rod.down",
+							["Name"] = "Chain Lightning",
+							["Release"] = 201617.03,
+							["Ability"] = "chain_lightning",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [14]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_enemies>1",
+							["Name"] = "Chain Lightning (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "chain_lightning",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [15]
+						{
+							["Enabled"] = true,
+							["Script"] = "debuff.lightning_rod.down",
+							["Name"] = "Lightning Bolt (2)",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [16]
+						{
+							["Enabled"] = true,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["Name"] = "Lightning Bolt (3)",
+							["Args"] = "cycle_targets=debuff.lightning_rod.up",
+							["Release"] = 201617.03,
+							["CycleTargets"] = false,
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [17]
+						{
+							["Enabled"] = true,
+							["Script"] = "refreshable",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (2)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Earth Shock (2)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (3)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [20]
+					},
+					["Name"] = "SimC Elemental: single lr",
+				}, -- [3]
+				{
+					["Enabled"] = true,
+					["Script"] = "",
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "!ticking",
+							["Name"] = "Flame Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up&maelstrom.current>=86",
+							["Name"] = "Earthquake",
+							["Release"] = 201617.03,
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=92",
+							["Name"] = "Earth Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Release"] = 201617.03,
+							["Ability"] = "stormkeeper",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Name"] = "Elemental Blast",
+							["Release"] = 201617.03,
+							["Ability"] = "elemental_blast",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current<=76",
+							["Name"] = "Icefury",
+							["Release"] = 201617.03,
+							["Ability"] = "icefury",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>3",
+							["Name"] = "Liquid Magma Totem",
+							["Release"] = 201617.03,
+							["Ability"] = "liquid_magma_totem",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&buff.stormkeeper.up&active_enemies<3",
+							["Name"] = "Lightning Bolt",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time&cooldown_react",
+							["Name"] = "Lava Burst",
+							["Release"] = 201617.03,
+							["Ability"] = "lava_burst",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.icefury.up&((maelstrom.current>=20)||buff.icefury.remains<(1.5*spell_haste*buff.icefury.stack+1))",
+							["Name"] = "Frost Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "frost_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&refreshable",
+							["Name"] = "Flame Shock (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.icefury.up",
+							["Ability"] = "frost_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Frost Shock (1)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=86",
+							["Name"] = "Earth Shock (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [13]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.resonance_totem.remains<10",
+							["Name"] = "Totem Mastery",
+							["Release"] = 201617.03,
+							["Ability"] = "totem_mastery",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [14]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up",
+							["Name"] = "Earthquake (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [15]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
+							["Name"] = "Lightning Bolt (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [16]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_enemies>1",
+							["Name"] = "Chain Lightning",
+							["Release"] = 201617.03,
+							["Ability"] = "chain_lightning",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [17]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lightning Bolt (2)",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Script"] = "refreshable",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (2)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Earth Shock (2)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (3)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [21]
+					},
+					["Name"] = "SimC Elemental: single if",
+				}, -- [4]
+				{
+					["Enabled"] = true,
+					["Script"] = "",
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Release"] = 201617.03,
+							["Ability"] = "stormkeeper",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Name"] = "Ascendance",
+							["Release"] = 201617.03,
+							["Ability"] = "ascendance",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Name"] = "Liquid Magma Totem",
+							["Release"] = 201617.03,
+							["Ability"] = "liquid_magma_totem",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies<4&maelstrom.current>=20&!talent.lightning_rod.enabled",
+							["Name"] = "Flame Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Name"] = "Earthquake",
+							["Release"] = 201617.03,
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time&buff.lava_surge.up&!talent.lightning_rod.enabled&active_enemies<4",
+							["Name"] = "Lava Burst",
+							["Release"] = 201617.03,
+							["Ability"] = "lava_burst",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "!talent.lightning_rod.enabled&active_enemies<5",
+							["Name"] = "Elemental Blast",
+							["Release"] = 201617.03,
+							["Ability"] = "elemental_blast",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lava Beam",
+							["Release"] = 201617.03,
+							["Ability"] = "lava_beam",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Name"] = "Chain Lightning",
+							["Release"] = 201617.03,
+							["Ability"] = "chain_lightning",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Ability"] = "lava_burst",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Lava Burst (1)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "refreshable",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (1)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [11]
+					},
+					["Name"] = "SimC Elemental: AOE",
+				}, -- [5]
+				{
+					["Enabled"] = true,
+					["Script"] = "",
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns&(dot.flame_shock.remains>buff.ascendance.duration&(time>=60||buff.bloodlust.up)&cooldown.lava_burst.remains>0&!buff.stormkeeper.up)",
+							["Name"] = "Ascendance",
+							["Release"] = 201617.03,
+							["Ability"] = "ascendance",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "!ticking",
+							["Name"] = "Flame Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&remains<=buff.ascendance.duration&cooldown.ascendance.remains+buff.ascendance.duration<=duration",
+							["Name"] = "Flame Shock (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up&!buff.ascendance.up&maelstrom.current>=86",
+							["Name"] = "Earthquake",
+							["Release"] = 201617.03,
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=92&!buff.ascendance.up",
+							["Name"] = "Earth Shock",
+							["Release"] = 201617.03,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Release"] = 201617.03,
+							["Ability"] = "stormkeeper",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Name"] = "Elemental Blast",
+							["Release"] = 201617.03,
+							["Ability"] = "elemental_blast",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>3",
+							["Name"] = "Liquid Magma Totem",
+							["Release"] = 201617.03,
+							["Ability"] = "liquid_magma_totem",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&buff.stormkeeper.up&active_enemies<3",
+							["Name"] = "Lightning Bolt",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time&(cooldown_react||buff.ascendance.up)",
+							["Name"] = "Lava Burst",
+							["Release"] = 201617.03,
+							["Ability"] = "lava_burst",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up",
+							["Name"] = "Flame Shock (2)",
+							["Release"] = 201617.03,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=86",
+							["Name"] = "Earth Shock (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.resonance_totem.remains<10||(buff.resonance_totem.remains<(buff.ascendance.duration+cooldown.ascendance.remains)&cooldown.ascendance.remains<15)",
+							["Name"] = "Totem Mastery",
+							["Release"] = 201617.03,
+							["Ability"] = "totem_mastery",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [13]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up",
+							["Name"] = "Earthquake (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [14]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_enemies>1",
+							["Name"] = "Lava Beam",
+							["Release"] = 201617.03,
+							["Ability"] = "lava_beam",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [15]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
+							["Name"] = "Lightning Bolt (1)",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [16]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_enemies>1",
+							["Name"] = "Chain Lightning",
+							["Release"] = 201617.03,
+							["Ability"] = "chain_lightning",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [17]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lightning Bolt (2)",
+							["Release"] = 201617.03,
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Script"] = "refreshable",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (3)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Earth Shock (2)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (4)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [21]
+					},
+					["Name"] = "SimC Elemental: single asc",
+				}, -- [6]
+				{
+					["Enabled"] = true,
+					["Specialization"] = 263,
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Script"] = "",
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Name"] = "Wind Shear",
+							["Script"] = "toggle.interrupts",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "wind_shear",
+							["ModName"] = "",
+						}, -- [1]
+						{
+							["Enabled"] = false,
+							["Name"] = "Heroism",
+							["Script"] = "toggle.cooldowns&(target.health.pct<25||time>0.500)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "bloodlust",
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Name"] = "Feral Spirit",
+							["Script"] = "toggle.cooldowns&(!artifact.alpha_wolf.rank>0||(maelstrom.current>=20&cooldown.crash_lightning.remains<=gcd))",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "feral_spirit",
+							["ModName"] = "",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Name"] = "Crash Lightning",
+							["Script"] = "artifact.alpha_wolf.rank>0&prev_gcd.1.feral_spirit",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "crash_lightning",
+							["ModName"] = "",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Name"] = "Berserking",
+							["Script"] = "toggle.cooldowns&(buff.ascendance.up||!talent.ascendance.enabled||level<100)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "berserking",
+							["ModName"] = "",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Name"] = "Blood Fury",
+							["Script"] = "toggle.cooldowns",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "blood_fury",
+							["ModName"] = "",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.potions&(feral_spirit.remains>5||target.time_to_die<=60)",
+							["Ability"] = "potion",
+							["Indicator"] = "none",
+							["Name"] = "Potion",
+							["Args"] = "name=\"prolonged_power\"",
+							["Release"] = 201617.03,
+							["CheckMovement"] = false,
+							["ModName"] = "\"prolonged_power\"",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Name"] = "Boulderfist",
+							["Script"] = "buff.boulderfist.remains<gcd||(maelstrom.current<=50&active_enemies>=3)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "boulderfist",
+							["ModName"] = "",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Name"] = "Boulderfist (1)",
+							["Script"] = "buff.boulderfist.remains<gcd||(charges_fractional>1.75&maelstrom.current<=settings.boulderfist_maelstrom&active_enemies<=2)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "boulderfist",
+							["ModName"] = "",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Name"] = "Rockbiter",
+							["Script"] = "talent.landslide.enabled&buff.landslide.remains<gcd",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "rockbiter",
+							["ModName"] = "",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Name"] = "Fury of Air",
+							["Script"] = "!ticking&maelstrom.current>22",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "fury_of_air",
+							["ModName"] = "",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Name"] = "Frostbrand",
+							["Script"] = "talent.hailstorm.enabled&buff.frostbrand.remains<rebuff_window",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "frostbrand",
+							["ModName"] = "",
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Name"] = "Flametongue",
+							["Script"] = "buff.flametongue.remains<rebuff_window||(cooldown.doom_winds.remains<6&buff.flametongue.remains<4)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flametongue",
+							["ModName"] = "",
+						}, -- [13]
+						{
+							["Enabled"] = true,
+							["Name"] = "Doom Winds",
+							["Ability"] = "doom_winds",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [14]
+						{
+							["Enabled"] = true,
+							["Name"] = "Crash Lightning (1)",
+							["Script"] = "talent.crashing_storm.enabled&active_enemies>=3&(!talent.hailstorm.enabled||buff.frostbrand.remains>gcd)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "crash_lightning",
+							["ModName"] = "",
+						}, -- [15]
+						{
+							["Enabled"] = true,
+							["Name"] = "Earthen Spike",
+							["Ability"] = "earthen_spike",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [16]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lightning Bolt",
+							["Script"] = "(talent.overcharge.enabled&maelstrom.current>=40&!talent.fury_of_air.enabled)||(talent.overcharge.enabled&talent.fury_of_air.enabled&maelstrom.current>40+foa_padding)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
+							["ModName"] = "",
+						}, -- [17]
+						{
+							["Enabled"] = true,
+							["Name"] = "Crash Lightning (2)",
+							["Script"] = "buff.crash_lightning.remains<gcd&active_enemies>=2",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "crash_lightning",
+							["ModName"] = "",
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Name"] = "Windsong",
+							["Ability"] = "windsong",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Name"] = "Ascendance",
+							["Script"] = "toggle.cooldowns&(buff.stormbringer.up)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "ascendance",
+							["ModName"] = "",
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Name"] = "Windstrike",
+							["Script"] = "buff.stormbringer.up&((talent.fury_of_air.enabled&maelstrom.current>=20+foa_padding)||(!talent.fury_of_air.enabled))",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "windstrike",
+							["ModName"] = "",
+						}, -- [21]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormstrike",
+							["Script"] = "buff.stormbringer.up&((talent.fury_of_air.enabled&maelstrom.current>=20+foa_padding)||(!talent.fury_of_air.enabled))",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "stormstrike",
+							["ModName"] = "",
+						}, -- [22]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lava Lash",
+							["Script"] = "talent.hot_hand.enabled&buff.hot_hand.up",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_lash",
+							["ModName"] = "",
+						}, -- [23]
+						{
+							["Enabled"] = true,
+							["Name"] = "Crash Lightning (3)",
+							["Script"] = "active_enemies>=4",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "crash_lightning",
+							["ModName"] = "",
+						}, -- [24]
+						{
+							["Enabled"] = true,
+							["Name"] = "Windstrike (1)",
+							["Ability"] = "windstrike",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [25]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormstrike (1)",
+							["Script"] = "talent.overcharge.enabled&cooldown.lightning_bolt.remains<gcd&maelstrom.current>80",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "stormstrike",
+							["ModName"] = "",
+						}, -- [26]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormstrike (2)",
+							["Script"] = "talent.fury_of_air.enabled&maelstrom.current>40+foa_padding&(cooldown.lightning_bolt.remains>gcd||!talent.overcharge.enabled)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "stormstrike",
+							["ModName"] = "",
+						}, -- [27]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormstrike (3)",
+							["Script"] = "!talent.overcharge.enabled&!talent.fury_of_air.enabled",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "stormstrike",
+							["ModName"] = "",
+						}, -- [28]
+						{
+							["Enabled"] = true,
+							["Script"] = "((active_enemies>1||talent.crashing_storm.enabled||talent.boulderfist.enabled)&!set_bonus.tier19_4pc>0)||feral_spirit.remains>5",
+							["Ability"] = "crash_lightning",
+							["Indicator"] = "none",
+							["Name"] = "Crash Lightning (4)",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = true,
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [29]
+						{
+							["Enabled"] = true,
+							["Name"] = "Frostbrand (1)",
+							["Script"] = "talent.hailstorm.enabled&buff.frostbrand.remains<4.8",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "frostbrand",
+							["ModName"] = "",
+						}, -- [30]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lava Lash (1)",
+							["Script"] = "talent.fury_of_air.enabled&talent.overcharge.enabled&(set_bonus.tier19_4pc>0&maelstrom.current>=80)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_lash",
+							["ModName"] = "",
+						}, -- [31]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lava Lash (2)",
+							["Script"] = "talent.fury_of_air.enabled&!talent.overcharge.enabled&(set_bonus.tier19_4pc>0&maelstrom.current>=53)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_lash",
+							["ModName"] = "",
+						}, -- [32]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lava Lash (3)",
+							["Script"] = "(!set_bonus.tier19_4pc>0&maelstrom.current>=settings.lava_lash_maelstrom)||(!talent.fury_of_air.enabled&set_bonus.tier19_4pc>0&maelstrom.current>=40)",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_lash",
+							["ModName"] = "",
+						}, -- [33]
+						{
+							["Enabled"] = true,
+							["Name"] = "Flametongue (1)",
+							["Script"] = "buff.flametongue.remains<4.8",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flametongue",
+							["ModName"] = "",
+						}, -- [34]
+						{
+							["Enabled"] = true,
+							["Name"] = "Sundering",
+							["Ability"] = "sundering",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [35]
+						{
+							["Enabled"] = true,
+							["Name"] = "Rockbiter (1)",
+							["Ability"] = "rockbiter",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [36]
+						{
+							["Enabled"] = true,
+							["Name"] = "Flametongue (2)",
+							["Ability"] = "flametongue",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [37]
+						{
+							["Enabled"] = true,
+							["Name"] = "Boulderfist (2)",
+							["Ability"] = "boulderfist",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [38]
+					},
+					["Name"] = "SimC Enhancement: default",
+				}, -- [7]
+				{
+					["Enabled"] = true,
+					["Specialization"] = 263,
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Script"] = "",
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.potions",
+							["Ability"] = "potion",
+							["Indicator"] = "none",
+							["Name"] = "Potion",
+							["Args"] = "name=\"prolonged_power\"",
+							["Release"] = 201617.03,
+							["CheckMovement"] = false,
+							["ModName"] = "\"prolonged_power\"",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lightning Shield",
+							["Ability"] = "lightning_shield",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [2]
+					},
+					["Name"] = "SimC Enhancement: precombat",
+				}, -- [8]
+				{
+					["Enabled"] = true,
+					["Default"] = true,
+					["Specialization"] = 262,
+					["Release"] = 20170112.1,
+					["Script"] = "",
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns&dot.flame_shock.remains>buff.ascendance.duration&cooldown.lava_burst.remains>0&!buff.stormkeeper.up",
+							["Ability"] = "ascendance",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Ascendance",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["MaximumTargets"] = "3",
+							["Script"] = "!ticking",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock",
+							["CycleTargets"] = false,
+							["Release"] = 201617.03,
+							["ShowModifiers"] = false,
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&remains<=buff.ascendance.duration&cooldown.ascendance.remains+buff.ascendance.duration<=duration",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock (1)",
+							["Release"] = 201617.03,
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up&!buff.ascendance.up&maelstrom>=86\n",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
+							["Name"] = "Earthquake",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=92&!buff.ascendance.up",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
+							["Name"] = "Earth Shock",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.artifact_ability&active_enemies>=3",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "stormkeeper",
+							["Name"] = "Stormkeeper",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "elemental_blast",
+							["Name"] = "Elemental Blast",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>=3",
+							["Ability"] = "liquid_magma_totem",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Liquid Magma Totem",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&buff.stormkeeper.up&active_enemies<3",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
+							["Name"] = "Lightning Bolt",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time&(cooldown_react||buff.ascendance.up)",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_burst",
+							["Name"] = "Lava Burst",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom>=20&buff.elemental_focus.up&refreshable",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Flame Shock (2)",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&active_dot.flame_shock<(active_enemies<=3&active_enemies||3)",
+							["Release"] = 201617.03,
+							["Indicator"] = "cycle",
+							["Name"] = "Flame Shock Cycle",
+							["Ability"] = "flame_shock",
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=86",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
+							["Name"] = "Earth Shock (1)",
+						}, -- [13]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.totem_mastery.remains<10||(buff.totem_mastery.remains<buff.ascendance.duration+cooldown.ascendance.remains&cooldown.ascendance.remains<15)",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Totem Mastery",
+							["Ability"] = "totem_mastery",
+						}, -- [14]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up",
+							["Ability"] = "earthquake",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Earthquake (1)",
+						}, -- [15]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_enemies>1",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_beam",
+							["Name"] = "Lava Beam",
+						}, -- [16]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
+							["Name"] = "Lightning Bolt (1)",
+						}, -- [17]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
+							["Name"] = "Chain Lightning",
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Script"] = "",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Lightning Bolt (2)",
+							["Ability"] = "lightning_bolt",
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving&refreshable",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock (3)",
+							["Ability"] = "flame_shock",
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_dot.flame_shock<active_enemies",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock (Cycle 2)",
+							["Ability"] = "flame_shock",
+						}, -- [21]
+						{
+							["Enabled"] = true,
+							["Name"] = "Earth Shock (2)",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
+							["Script"] = "moving",
+						}, -- [22]
+					},
+					["Name"] = "SEL Elemental Ascendance",
+				}, -- [9]
+				{
+					["Enabled"] = true,
+					["Name"] = "SEL Elemental Icefury",
+					["Default"] = true,
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "!ticking",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Flame Shock (0)",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up&maelstrom.current>=86",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Earthquake",
+							["Ability"] = "earthquake",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.icefury.up&maelstrom.current>=86",
+							["Ability"] = "frost_shock",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Frost Shock",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=92\n",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Earth Shock",
+							["Ability"] = "earth_shock",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Ability"] = "stormkeeper",
+							["Indicator"] = "none",
+							["Script"] = "toggle.artifact_ability&(active_enemies>1||settings.aggressive_stormkeeper)",
+							["Release"] = 201617.03,
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Elemental Blast",
+							["Ability"] = "elemental_blast",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current<=76",
+							["Ability"] = "icefury",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Icefury",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>=3",
+							["Ability"] = "liquid_magma_totem",
+							["Indicator"] = "none",
+							["Name"] = "Liquid Magma Totem",
+							["Release"] = 201617.03,
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&buff.stormkeeper.up&active_enemies<3",
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Lightning Bolt (SK)",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time\n",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Lava Burst",
+							["Ability"] = "lava_burst",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.icefury.up&(maelstrom.current>=20||buff.icefury.remains<(gcd*buff.icefury.stack+1))",
+							["Ability"] = "frost_shock",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Frost Shock (1)",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["MaximumTargets"] = "3",
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&refreshable\n",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock",
+							["CycleTargets"] = false,
+							["Release"] = 201617.03,
+							["ShowModifiers"] = false,
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&((active_enemies=2&active_dot.flame_shock<2)||(active_enemies>=3&active_dot.flame_shock<3))",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "cycle",
+							["Name"] = "Flame Shock (1)",
+							["Release"] = 201617.03,
+						}, -- [13]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving,buff.icefury.up",
+							["Ability"] = "frost_shock",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Frost Shock (2)",
+						}, -- [14]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=86",
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["Name"] = "Earth Shock (1)",
+							["Release"] = 201617.03,
+						}, -- [15]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.resonance_totem.remains<10",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "totem_mastery",
+							["Name"] = "Totem Mastery",
+						}, -- [16]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
+							["Name"] = "Earthquake (1)",
+						}, -- [17]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lightning Bolt",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3",
+							["Ability"] = "lightning_bolt",
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
+							["Name"] = "Chain Lightning",
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Script"] = "",
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["Name"] = "Lightning Bolt (1)",
+							["Args"] = "",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = false,
+							["CheckMovement"] = false,
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving&refreshable",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock (2)",
+							["Ability"] = "flame_shock",
+						}, -- [21]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving&active_dot.flame_shock<active_enemies",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "flame_shock",
+							["Name"] = "Flame Shock (2) Cycle",
+						}, -- [22]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
+							["Name"] = "Earth Shock (2)",
+						}, -- [23]
+					},
+					["Script"] = "",
+				}, -- [10]
+				{
+					["Enabled"] = true,
+					["Script"] = "",
+					["Name"] = "SEL Elemental LR",
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "!ticking",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Flame Shock (0)",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up&maelstrom.current>=86",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Earthquake",
+							["Ability"] = "earthquake",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=92\n",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Earth Shock",
+							["Ability"] = "earth_shock",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Ability"] = "stormkeeper",
+							["Indicator"] = "none",
+							["Script"] = "toggle.artifact_ability&(active_enemies>1||settings.aggressive_stormkeeper)",
+							["Release"] = 201617.03,
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Script"] = "",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Elemental Blast",
+							["Ability"] = "elemental_blast",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>=3",
+							["Ability"] = "liquid_magma_totem",
+							["Indicator"] = "none",
+							["Name"] = "Liquid Magma Totem",
+							["Release"] = 201617.03,
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time\n",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Lava Burst",
+							["Ability"] = "lava_burst",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["MaximumTargets"] = "3",
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&refreshable\n",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock",
+							["CycleTargets"] = false,
+							["Release"] = 201617.03,
+							["ShowModifiers"] = false,
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&buff.elemental_focus.up&((active_enemies=2&active_dot.flame_shock<2)||(active_enemies>=3&active_dot.flame_shock<3))",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "cycle",
+							["Name"] = "Flame Shock (1)",
+							["Release"] = 201617.03,
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=86",
+							["Ability"] = "earth_shock",
+							["Indicator"] = "none",
+							["Name"] = "Earth Shock (1)",
+							["Release"] = 201617.03,
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.resonance_totem.remains<10",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "totem_mastery",
+							["Name"] = "Totem Mastery",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.echoes_of_the_great_sundering.up",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earthquake",
+							["Name"] = "Earthquake (1)",
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lightning Bolt",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3&debuff.lightning_rod.down",
+							["Ability"] = "lightning_bolt",
+						}, -- [13]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.power_of_the_maelstrom.up&active_enemies<3&active_dot.flame_shock<2",
+							["Release"] = 201617.03,
+							["Indicator"] = "cycle",
+							["Name"] = "Lightning Bolt (Cycle)",
+							["Ability"] = "lightning_bolt",
+						}, -- [14]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&debuff.lightning_rod.down\n",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
+							["Name"] = "Chain Lightning",
+						}, -- [15]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&buff.lightning_rod.up&active_dot.lightning_rod<active_enemies",
+							["Ability"] = "chain_lightning",
+							["Indicator"] = "cycle",
+							["Release"] = 201617.03,
+							["Name"] = "Chain Lightning (Cycle)",
+						}, -- [16]
+						{
+							["Enabled"] = true,
+							["Script"] = "debuff.lightning_rod.down",
+							["Ability"] = "lightning_bolt",
+							["Indicator"] = "none",
+							["Name"] = "Lightning Bolt (1)",
+							["Args"] = "",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = false,
+							["CheckMovement"] = false,
+						}, -- [17]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies>1&active_dot.lightning_rod<active_enemies",
+							["Release"] = 201617.03,
+							["Indicator"] = "cycle",
+							["Ability"] = "frost_shock",
+							["Name"] = "Lightning Bolt (1) Cycle",
+						}, -- [18]
+						{
+							["Enabled"] = true,
+							["Script"] = "",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lightning_bolt",
+							["Name"] = "Lightning Bolt (2)",
+						}, -- [19]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving&refreshable",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Flame Shock (2)",
+							["Ability"] = "flame_shock",
+						}, -- [20]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving&active_dot.flame_shock<active_enemies",
+							["Release"] = 201617.03,
+							["Indicator"] = "cycle",
+							["Ability"] = "flame_shock",
+							["Name"] = "Flame Shock (2) Cycle",
+						}, -- [21]
+						{
+							["Enabled"] = true,
+							["Script"] = "moving",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "earth_shock",
+							["Name"] = "Earth Shock (2)",
+						}, -- [22]
+					},
+					["Default"] = true,
+				}, -- [11]
+				{
+					["Enabled"] = true,
+					["Name"] = "SEL Elemental AOE",
+					["Script"] = "",
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Ability"] = "stormkeeper",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Name"] = "Ascendance",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "ascendance",
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Name"] = "Liquid Magma Totem",
+							["Ability"] = "liquid_magma_totem",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "maelstrom.current>=20&!talent.lightning_rod.enabled&refreshable",
+							["Ability"] = "flame_shock",
+							["CheckMovement"] = false,
+							["Name"] = "Flame Shock",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = false,
+							["Indicator"] = "none",
+							["ModName"] = "",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_enemies<4&active_dot.flame_shock<active_enemies",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "cycle",
+							["Name"] = "Flame Shock Cycle",
+							["Release"] = 201617.03,
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Name"] = "Earthquake",
+							["Ability"] = "earthquake",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "dot.flame_shock.remains>cast_time&buff.lava_surge.up&!talent.lightning_rod.enabled&active_enemies<4",
+							["Name"] = "Lava Burst",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "lava_burst",
+							["ModName"] = "",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Script"] = "!talent.lightning_rod.enabled&active_enemies<5",
+							["Name"] = "Elemental Blast",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "elemental_blast",
+							["ModName"] = "",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Name"] = "Lava Beam",
+							["Ability"] = "lava_beam",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Name"] = "Chain Lightning",
+							["Script"] = "debuff.lightning_rod.down",
+							["CheckMovement"] = false,
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "chain_lightning",
+							["ModName"] = "",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "active_dot.lightning_rod<active_enemies",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Chain Lightning Cycle",
+							["Ability"] = "chain_lightning",
+						}, -- [11]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.lava_surge.up",
+							["Ability"] = "lava_burst",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Lava Burst (1)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["ShowModifiers"] = true,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [12]
+						{
+							["Enabled"] = true,
+							["Script"] = "refreshable",
+							["Ability"] = "flame_shock",
+							["Indicator"] = "none",
+							["Moving"] = "1",
+							["Name"] = "Flame Shock (1)",
+							["Args"] = "moving=1",
+							["Release"] = 201617.03,
+							["CheckMovement"] = true,
+							["ModName"] = "",
+						}, -- [13]
+					},
+					["Default"] = true,
+				}, -- [12]
+				{
+					["Enabled"] = true,
+					["Default"] = true,
+					["Name"] = "SEL Elemental Precombat",
+					["Release"] = 20170112.1,
+					["Specialization"] = 262,
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.potions",
+							["Ability"] = "potion",
+							["Indicator"] = "none",
+							["Name"] = "Potion",
+							["Args"] = "name=\"deadly_grace\"",
+							["Release"] = 201617.03,
+							["CheckMovement"] = false,
+							["ModName"] = "\"deadly_grace\"",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Name"] = "Totem Mastery",
+							["Ability"] = "totem_mastery",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Name"] = "Stormkeeper",
+							["Ability"] = "stormkeeper",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["CheckMovement"] = false,
+							["ModName"] = "",
+						}, -- [3]
+					},
+					["Script"] = "",
+				}, -- [13]
+				{
+					["Enabled"] = true,
+					["Default"] = true,
+					["Specialization"] = 262,
+					["Release"] = 20170112.1,
+					["Script"] = "",
+					["Actions"] = {
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.potions&(!toggle.cooldowns||cooldown.fire_elemental.remains>280)",
+							["Name"] = "Potion",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "potion",
+							["ModName"] = "\"prolonged_power\"",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Script"] = "buff.totem_mastery.remains<2",
+							["Ability"] = "totem_mastery",
+							["Indicator"] = "none",
+							["Name"] = "Totem Mastery",
+							["Release"] = 201617.03,
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Fire Elemental",
+							["Ability"] = "fire_elemental",
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Storm Elemental",
+							["Ability"] = "storm_elemental",
+						}, -- [4]
+						{
+							["Enabled"] = true,
+							["Script"] = "toggle.cooldowns",
+							["Ability"] = "elemental_mastery",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["Name"] = "Elemental Mastery",
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Script"] = "!talent.ascendance.enabled||buff.ascendance.up||cooldown.ascendance.remains>50",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Blood Fury",
+							["Ability"] = "blood_fury",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Script"] = "!talent.ascendance.enabled||buff.ascendance.up",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Name"] = "Berserking",
+							["Ability"] = "berserking",
+						}, -- [7]
+						{
+							["Enabled"] = true,
+							["Name"] = "Run: AOE",
+							["Script"] = "active_enemies>2",
+							["Ability"] = "run_action_list",
+							["Indicator"] = "none",
+							["Release"] = 201617.03,
+							["ModName"] = "\"SEL Elemental AOE\"",
+						}, -- [8]
+						{
+							["Enabled"] = true,
+							["Script"] = "talent.ascendance.enabled",
+							["Name"] = "Run: Ascendance",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "run_action_list",
+							["ModName"] = "\"SEL Elemental Ascendance\"",
+						}, -- [9]
+						{
+							["Enabled"] = true,
+							["Script"] = "talent.icefury.enabled\n",
+							["Name"] = "Run: Icefury",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "run_action_list",
+							["ModName"] = "\"SEL Elemental Icefury\"",
+						}, -- [10]
+						{
+							["Enabled"] = true,
+							["Script"] = "talent.lightning_rod.enabled",
+							["Name"] = "Run: Lightning Rod",
+							["Release"] = 201617.03,
+							["Indicator"] = "none",
+							["Ability"] = "run_action_list",
+							["ModName"] = "\"SEL Elemental LR\"",
+						}, -- [11]
+					},
+					["Name"] = "SEL Elemental Default",
+				}, -- [14]
+			},
+			["Class Option: optimistic_overload"] = false,
+			["Class Option: foa_padding"] = 6,
+			["Locked"] = true,
+			["Class Option: boulderfist_maelstrom"] = 100,
+			["displays"] = {
+				{
+					["Overlay"] = false,
+					["Queued Font Size"] = 12,
+					["PvP - Target"] = false,
+					["Primary Caption Aura"] = "Stormbringer",
+					["rel"] = "CENTER",
+					["Use SpellFlash"] = false,
+					["PvE - Target"] = false,
+					["PvE - Default"] = true,
+					["PvE - Combat"] = false,
+					["Maximum Time"] = 30,
+					["Queues"] = {
+						{
+							["Enabled"] = true,
+							["Action List"] = 8,
+							["Name"] = "SimC Enhancement: precombat",
+							["Release"] = 20161003,
+							["Script"] = "time=0",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Action List"] = 7,
+							["Name"] = "SimC Enhancement: default",
+							["Release"] = 20161003,
+						}, -- [2]
+					},
+					["PvP - Default Alpha"] = 1,
+					["PvP - Combat"] = false,
+					["PvP - Default"] = true,
+					["y"] = -152.999893188477,
+					["AOE - Maximum"] = 0,
+					["Release"] = 20170112.1,
+					["Queue Alignment"] = "c",
+					["PvE - Combat Alpha"] = 1,
+					["PvP - Target Alpha"] = 1,
+					["PvP - Combat Alpha"] = 1,
+					["x"] = -219.000259399414,
+					["Action Captions"] = true,
+					["Spacing"] = 5,
+					["Specialization"] = 263,
+					["SpellFlash Color"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["Copy To"] = "Enhancement Single-Target",
+					["Primary Font Size"] = 12,
+					["Queue Direction"] = "RIGHT",
+					["Name"] = "Enhancement Primary",
+					["Queued Icon Size"] = 40,
+					["Font"] = "Arial Narrow",
+					["Enabled"] = true,
+					["Primary Icon Size"] = 40,
+					["Range Checking"] = "ability",
+					["AOE - Minimum"] = 3,
+					["Icons Shown"] = 4,
+					["Talent Group"] = 0,
+					["Single - Maximum"] = 1,
+					["Primary Caption"] = "sratio",
+					["Auto - Minimum"] = 0,
+					["PvE - Target Alpha"] = 1,
+					["Default"] = true,
+					["Auto - Maximum"] = 0,
+					["Single - Minimum"] = 0,
+					["Zoom"] = 15,
+					["PvE - Default Alpha"] = 1,
+					["Script"] = "",
+				}, -- [1]
+				{
+					["Queued Font Size"] = 12,
+					["PvP - Target"] = false,
+					["Primary Caption Aura"] = "Stormbringer",
+					["rel"] = "CENTER",
+					["Use SpellFlash"] = false,
+					["PvE - Target"] = false,
+					["PvE - Default"] = true,
+					["PvE - Combat"] = false,
+					["Maximum Time"] = 30,
+					["Zoom"] = 15,
+					["PvP - Default Alpha"] = 1,
+					["PvP - Combat"] = false,
+					["PvP - Default"] = true,
+					["y"] = -185.000015258789,
+					["AOE - Maximum"] = 0,
+					["Release"] = 20170112.1,
+					["Queue Alignment"] = "c",
+					["PvE - Combat Alpha"] = 1,
+					["PvP - Target Alpha"] = 1,
+					["PvP - Combat Alpha"] = 1,
+					["Default"] = true,
+					["PvE - Default Alpha"] = 1,
+					["Script"] = "single",
+					["Queues"] = {
+						{
+							["Enabled"] = true,
+							["Action List"] = 8,
+							["Name"] = "SimC Enhancement: precombat",
+							["Release"] = 201506.221,
+							["Script"] = "time=0",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Action List"] = 7,
+							["Name"] = "SimC Enhancement: default",
+							["Release"] = 201506.221,
+						}, -- [2]
+					},
+					["SpellFlash Color"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["Copy To"] = "Enhancement AOE",
+					["Single - Minimum"] = 3,
+					["Queue Direction"] = "RIGHT",
+					["Auto - Minimum"] = 3,
+					["Queued Icon Size"] = 40,
+					["PvE - Target Alpha"] = 1,
+					["Enabled"] = true,
+					["Auto - Maximum"] = 0,
+					["Primary Caption"] = "sratio",
+					["AOE - Minimum"] = 3,
+					["Single - Maximum"] = 0,
+					["Talent Group"] = 0,
+					["Icons Shown"] = 4,
+					["Range Checking"] = "ability",
+					["Specialization"] = 263,
+					["Font"] = "Arial Narrow",
+					["Name"] = "Enhancement AOE",
+					["Primary Icon Size"] = 40,
+					["Primary Font Size"] = 12,
+					["Spacing"] = 5,
+					["Action Captions"] = true,
+					["x"] = 0,
+				}, -- [2]
+				{
+					["Overlay"] = false,
+					["Queued Font Size"] = 12,
+					["Primary Font Size"] = 12,
+					["Primary Caption Aura"] = "",
+					["rel"] = "CENTER",
+					["Use SpellFlash"] = false,
+					["Spacing"] = 5,
+					["PvE - Default"] = true,
+					["PvE - Combat"] = false,
+					["Maximum Time"] = 30,
+					["Queues"] = {
+						{
+							["Enabled"] = true,
+							["Action List"] = 13,
+							["Name"] = "SEL Elemental Precombat",
+							["Release"] = 20161003,
+							["Script"] = "time=0",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Action List"] = 14,
+							["Name"] = "SEL Elemental Default",
+							["Release"] = 20161003,
+							["Script"] = "",
+						}, -- [2]
+					},
+					["Script"] = "",
+					["PvP - Combat"] = false,
+					["PvP - Default"] = true,
+					["y"] = -230.000015258789,
+					["x"] = 0,
+					["Release"] = 20170112.1,
+					["Queue Alignment"] = "c",
+					["Auto - Maximum"] = 0,
+					["PvP - Target Alpha"] = 1,
+					["Single - Minimum"] = 0,
+					["AOE - Maximum"] = 0,
+					["PvE - Default Alpha"] = 1,
+					["PvP - Default Alpha"] = 1,
+					["PvP - Combat Alpha"] = 1,
+					["SpellFlash Color"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["Specialization"] = 262,
+					["PvE - Combat Alpha"] = 1,
+					["Queue Direction"] = "RIGHT",
+					["Auto - Minimum"] = 0,
+					["Queued Icon Size"] = 40,
+					["PvE - Target Alpha"] = 1,
+					["Enabled"] = true,
+					["Primary Caption"] = "targets",
+					["Single - Maximum"] = 1,
+					["AOE - Minimum"] = 3,
+					["Talent Group"] = 0,
+					["Icons Shown"] = 4,
+					["Range Checking"] = "ability",
+					["Primary Icon Size"] = 40,
+					["Name"] = "Elemental Primary",
+					["Font"] = "Arial Narrow",
+					["Default"] = true,
+					["PvP - Target"] = false,
+					["Copy To"] = "Elemental AOE",
+					["PvE - Target"] = false,
+					["Action Captions"] = true,
+					["Zoom"] = 30,
+				}, -- [3]
+				{
+					["Overlay"] = false,
+					["Queued Font Size"] = 12,
+					["PvP - Target"] = false,
+					["Primary Caption Aura"] = "Flame Shock",
+					["rel"] = "CENTER",
+					["Use SpellFlash"] = false,
+					["PvE - Target"] = false,
+					["PvE - Default"] = true,
+					["PvE - Combat"] = false,
+					["Maximum Time"] = 30,
+					["Zoom"] = 30,
+					["Script"] = "single",
+					["PvP - Combat"] = false,
+					["PvP - Default"] = true,
+					["y"] = -185.000015258789,
+					["x"] = 0,
+					["Release"] = 20170112.1,
+					["Queue Alignment"] = "c",
+					["Auto - Maximum"] = 0,
+					["Primary Icon Size"] = 40,
+					["Single - Minimum"] = 3,
+					["Queues"] = {
+						{
+							["Enabled"] = true,
+							["Action List"] = 13,
+							["Name"] = "SEL Elemental Precombat",
+							["Release"] = 20161003,
+							["Script"] = "time=0",
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Action List"] = 14,
+							["Name"] = "SEL Elemental Default",
+							["Release"] = 20161003.1,
+							["Script"] = "",
+						}, -- [2]
+					},
+					["Action Captions"] = true,
+					["Spacing"] = 5,
+					["Specialization"] = 262,
+					["SpellFlash Color"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["Copy To"] = "Elemental AOE",
+					["Primary Font Size"] = 12,
+					["Queue Direction"] = "RIGHT",
+					["Name"] = "Elemental AOE",
+					["Queued Icon Size"] = 40,
+					["Font"] = "Arial Narrow",
+					["Enabled"] = true,
+					["PvP - Target Alpha"] = 1,
+					["Range Checking"] = "ability",
+					["AOE - Minimum"] = 3,
+					["Icons Shown"] = 4,
+					["Talent Group"] = 0,
+					["Single - Maximum"] = 0,
+					["Primary Caption"] = "ratio",
+					["Auto - Minimum"] = 3,
+					["PvE - Target Alpha"] = 1,
+					["Default"] = true,
+					["PvE - Combat Alpha"] = 1,
+					["PvP - Combat Alpha"] = 1,
+					["PvP - Default Alpha"] = 1,
+					["PvE - Default Alpha"] = 1,
+					["AOE - Maximum"] = 0,
+				}, -- [4]
+			},
+			["Class Option: doom_winds_cooldown"] = true,
+			["Notification X"] = -40.0000610351563,
+			["Class Option: aggressive_stormkeeper"] = true,
+		},
+	},
+}

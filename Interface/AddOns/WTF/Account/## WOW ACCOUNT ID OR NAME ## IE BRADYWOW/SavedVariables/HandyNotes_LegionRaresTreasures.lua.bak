@@ -1,0 +1,10 @@
+
+LegionRaresTreasuresDB = {
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

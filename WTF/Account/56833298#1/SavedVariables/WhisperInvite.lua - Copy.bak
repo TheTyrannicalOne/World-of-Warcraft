@@ -1,0 +1,103 @@
+
+WhisperInviteCoreDB = {
+	["char"] = {
+		["Zerkin - Illidan"] = {
+			["info"] = {
+				["setup"] = 2,
+			},
+		},
+	},
+	["namespaces"] = {
+		["WhisperInviteAdvancedDB"] = {
+			["profiles"] = {
+				["ZerkinUI"] = {
+					["keywords"] = {
+						["auto invite0"] = {
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["keyword"] = "auto invite",
+							["name"] = "auto invite",
+							["channels"] = {
+								["CHAT_MSG_WHISPER"] = true,
+							},
+						},
+						["autoinvite0"] = {
+							["keyword"] = "autoinvite",
+							["name"] = "autoinvite",
+						},
+						["inv0"] = {
+							["fullMatch"] = false,
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["keyword"] = "inv",
+							["maxGroupSize"] = 25,
+							["showInviteBlockMessage"] = true,
+							["listType"] = 2,
+							["name"] = "inv",
+							["customBlockMessage"] = "Erorr filtering \"inv\" - Zerkin",
+							["channels"] = {
+								["CHAT_MSG_WHISPER"] = true,
+							},
+						},
+						["invite0"] = {
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_CONVERSATION"] = false,
+								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["keyword"] = "invite",
+							["maxGroupSize"] = 20,
+							["showInviteBlockMessage"] = true,
+							["name"] = "invite",
+							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
+							["channels"] = {
+								["CHAT_MSG_OFFICER"] = false,
+								["CHAT_MSG_WHISPER"] = true,
+								["CHAT_MSG_GUILD"] = false,
+							},
+						},
+					},
+				},
+			},
+		},
+		["WhisperInviteBasicDB"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "ZerkinUI",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["queueProtection"] = {
+				nil, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				nil, -- [5]
+				{
+				}, -- [6]
+			},
+		},
+		["ZerkinUI"] = {
+			["queueProtection"] = {
+				nil, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				nil, -- [5]
+				{
+				}, -- [6]
+			},
+			["selectedModuleName"] = "Advanced",
+		},
+	},
+}

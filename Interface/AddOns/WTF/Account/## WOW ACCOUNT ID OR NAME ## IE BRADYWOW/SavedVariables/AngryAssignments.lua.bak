@@ -1,0 +1,28 @@
+
+AngryAssign_Pages = {
+	[1920930260] = {
+		["Updated"] = 1450836316,
+		["Name"] = "HFC-01-ASSAULT",
+		["Id"] = 1920930260,
+		["UpdateId"] = 3933654925,
+		["Contents"] = "GROUP 1&3 LEFT {star}\nGROUP 2&4 RIGHT {diamond}\n\nLUST ON TRANSPORTER (~3 MIN INTO FIGHT)\n\n1    0:54    Felfire Artillery            0:56    Felfire Artillery\n2    1:13    Felfire Demolisher       1:20    Felfire Flamebelcher\n3    2:10    Felfire Flamebelcher    2:15    Felfire Demolisher\n4    2:53    Felfire Artillery            3:02    Felfire Flamebelcher\n5    3:05    Felfire Transporter + Grand Corrupter U'rogg\n6    3:17    Felfire Crusher\n7    3:56    Felfire Demolisher + Grute\n8    5:03    Felfire Flamebelcher    5:05    Felfire Artillery\n9    5:54    Felfire Demolisher        6:01    Felfire Transporter\n10    6:29    Felfire Flamebelcher   6:35    Felfire Demolisher\n11    7:09    Felfire Demolisher      7:15    Felfire Flamebelcher\n12    7:39    Felfire Transporter      7:40    Felfire Demolisher\n\nHealing CD's for middle phase\n-HTT\n-Tranq\n-Devo",
+	},
+}
+AngryAssign_State = {
+	["displayed"] = 1920930260,
+	["directionUp"] = false,
+	["locked"] = false,
+	["display"] = {
+		["y"] = -233.499816894531,
+		["x"] = 22.0000591278076,
+		["point"] = "TOPLEFT",
+		["scale"] = 1,
+		["hidden"] = false,
+	},
+	["tree"] = {
+	},
+	["window"] = {
+	},
+}
+AngryAssign_Config = {
+}

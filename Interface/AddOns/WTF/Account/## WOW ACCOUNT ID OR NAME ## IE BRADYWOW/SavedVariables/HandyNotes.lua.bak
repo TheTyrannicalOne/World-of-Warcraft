@@ -1,0 +1,19 @@
+
+HandyNotesDB = {
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Zerkin - Illidan",
+	},
+	["profiles"] = {
+		["Zerkin - Illidan"] = {
+		},
+	},
+}
+HandyNotes_HandyNotesDB = {
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Zerkin - Illidan",
+	},
+	["profiles"] = {
+		["Zerkin - Illidan"] = {
+		},
+	},
+}

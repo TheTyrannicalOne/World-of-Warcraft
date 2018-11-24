@@ -1,0 +1,17 @@
+
+IskarAssistDB = {
+	["profileKeys"] = {
+		["Zerkin - Illidan"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["MainPanel"] = {
+				["position"] = {
+					["y"] = -27.9999694824219,
+					["x"] = -698.999816894531,
+				},
+				["IsLocked"] = false,
+			},
+		},
+	},
+}
