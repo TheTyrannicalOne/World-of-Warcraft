@@ -24,226 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"summon", -- [1]
-			"Bloodblâde-Lothar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bloodblâde-Lothar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			490, -- [11]
-			"Player-68-098321A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dBloodblâde-Lothar|r",
-			[51] = 1542955081,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [1]
-		{
-			"already in combat", -- [1]
-			"Arkolm-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Arkolm-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			493, -- [11]
-			"Player-3676-093D3D55", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffArkolm-Area52|r",
-			[51] = 1542955102,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [2]
-		{
-			"And no warlock just checked.", -- [1]
-			"Bloodblâde-Lothar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bloodblâde-Lothar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			495, -- [11]
-			"Player-68-098321A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dBloodblâde-Lothar|r",
-			[51] = 1542955115,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [3]
-		{
-			"ty for the res", -- [1]
-			"Arkolm-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Arkolm-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			537, -- [11]
-			"Player-3676-093D3D55", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffArkolm-Area52|r",
-			[51] = 1542955260,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [4]
-		{
-			"Was it killed?", -- [1]
-			"Bloodblâde-Lothar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Bloodblâde-Lothar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			540, -- [11]
-			"Player-68-098321A0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dBloodblâde-Lothar|r",
-			[51] = 1542955270,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [5]
-		{
-			"大脚任务进度提示: 消灭卡扎克：1/1(完成)", -- [1]
-			"Demonsmz-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Demonsmz-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			573, -- [11]
-			"Player-57-05B43689", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaDemonsmz-Illidan|r",
-			[51] = 1542955669,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [6]
-		{
-			"原汁原味 (任务完成)", -- [1]
-			"Demonsmz-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Demonsmz-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			575, -- [11]
-			"Player-57-05B43689", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3fc6eaDemonsmz-Illidan|r",
-			[51] = 1542955670,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [7]
-		{
-			"if you turn into a mushroom. run away", -- [1]
-			"Syzun-Nazgrel", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Syzun-Nazgrel", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			635, -- [11]
-			"Player-1184-0861D7F3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffff468Syzun-Nazgrel|r",
-			[51] = 1542956144,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [8]
-		{
-			"ty for the rez", -- [1]
-			"Navixx-Madoran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Navixx-Madoran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			641, -- [11]
-			"Player-1173-09A46D53", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Navixx-Madoran|r",
-			[51] = 1542956160,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [9]
-		{
-			"don't get breathed", -- [1]
-			"Sennthal-MoonGuard", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			642, -- [11]
-			"Player-3675-07D5BA79", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956167,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [10]
-		{
 			"run away when you mushroom", -- [1]
 			"Sennthal-MoonGuard", -- [2]
 			"", -- [3]
@@ -264,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956179,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [11]
+		}, -- [1]
 		{
 			"and graveyard zerg it i guess lol", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -286,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956185,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [12]
+		}, -- [2]
 		{
 			"ready?", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -308,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956220,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [13]
+		}, -- [3]
 		{
 			"let's go", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -330,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956260,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [14]
+		}, -- [4]
 		{
 			"gotta taunt and take turns with breath stacks", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -352,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956349,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [15]
+		}, -- [5]
 		{
 			"this boss is the worst of them", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -374,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542956380,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [16]
+		}, -- [6]
 		{
 			"yuupp", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -396,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956387,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [17]
+		}, -- [7]
 		{
 			"darn it won't sap", -- [1]
 			"Lladra-MoonGuard", -- [2]
@@ -418,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Lladra-MoonGuard|r",
 			[51] = 1542956422,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [18]
+		}, -- [8]
 		{
 			"i'll pull first and turn her away", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -440,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956463,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [19]
+		}, -- [9]
 		{
 			"after the first breath someone taunt off of me and keep her turned away", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -462,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956470,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [20]
+		}, -- [10]
 		{
 			"going now", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -484,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956497,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [21]
+		}, -- [11]
 		{
 			"Honestly, we might need a full 40 people for this xD", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -506,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542956572,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [22]
+		}, -- [12]
 		{
 			"her health scales", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -528,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956583,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [23]
+		}, -- [13]
 		{
 			"PFFF yeah never mind on that", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -550,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542956592,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [24]
+		}, -- [14]
 		{
 			"what the priest said", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -572,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542956597,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [25]
+		}, -- [15]
 		{
 			"what is the starting point at which it scales?", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -594,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542956623,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [26]
+		}, -- [16]
 		{
 			"like 25 i think", -- [1]
 			"Zynthetic-Saurfang", -- [2]
@@ -616,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Zynthetic-Saurfang|r",
 			[51] = 1542956634,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [27]
+		}, -- [17]
 		{
 			"Hate these bosses...", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -638,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542956641,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [28]
+		}, -- [18]
 		{
 			"This one is by far the worstr", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -660,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542956651,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [29]
+		}, -- [19]
 		{
 			"Worst*", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -682,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542956654,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [30]
+		}, -- [20]
 		{
 			"yeah this one is the worst", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -704,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542956659,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [31]
+		}, -- [21]
 		{
 			"lol", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -726,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542956666,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [32]
+		}, -- [22]
 		{
 			"I honestly thought they would nerf it after the first night", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -748,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542956678,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [33]
+		}, -- [23]
 		{
 			"nostalgia?", -- [1]
 			"Kiesa-MoonGuard", -- [2]
@@ -770,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffKiesa-MoonGuard|r",
 			[51] = 1542956693,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [34]
+		}, -- [24]
 		{
 			"would've been ideal", -- [1]
 			"Raneffi-WyrmrestAccord", -- [2]
@@ -792,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
 			[51] = 1542956696,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [35]
+		}, -- [25]
 		{
 			"yeah anti-nostalgia", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -814,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542956701,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [36]
+		}, -- [26]
 		{
 			"\"Hwat?! You don't like a floor fillin with dream circles? Well let's add mushrooms to make things more interesting!\"", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -836,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542956703,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [37]
+		}, -- [27]
 		{
 			"I mean go get your nature resist gear on", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -858,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542956712,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [38]
+		}, -- [28]
 		{
 			"tank the boss closest to the run back point and try keep someone alive all the time", -- [1]
 			"Enchantess-Dath'Remar", -- [2]
@@ -880,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEnchantess-Dath'Remar|r",
 			[51] = 1542956715,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [39]
+		}, -- [29]
 		{
 			"Y'all ready to die?", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -902,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542956775,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [40]
+		}, -- [30]
 		{
 			"let's see if we can get it to 75%", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -924,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542956788,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [41]
+		}, -- [31]
 		{
 			"Just run back if you die", -- [1]
 			"Melanize-Area52", -- [2]
@@ -946,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aMelanize-Area52|r",
 			[51] = 1542956799,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [42]
+		}, -- [32]
 		{
 			"taunt off of me after breath stacks please n thanks", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -968,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956800,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [43]
+		}, -- [33]
 		{
 			"Can do", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -990,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542956807,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [44]
+		}, -- [34]
 		{
 			"here goes", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -1012,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542956816,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [45]
+		}, -- [35]
 		{
 			"Bagh! Shroomed!", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -1034,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542956886,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [46]
+		}, -- [36]
 		{
 			"zerg zerg zerg", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -1056,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542957018,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [47]
+		}, -- [37]
 		{
 			"when you die run bacl and rez. keep the fight going or we will lose boss", -- [1]
 			"Mothra-Alleria", -- [2]
@@ -1078,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Mothra-Alleria|r",
 			[51] = 1542957058,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [48]
+		}, -- [38]
 		{
 			"walk back", -- [1]
 			"Michael-Detheroc", -- [2]
@@ -1100,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Michael-Detheroc|r",
 			[51] = 1542957060,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [49]
+		}, -- [39]
 		{
 			"go go", -- [1]
 			"Michael-Detheroc", -- [2]
@@ -1122,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Michael-Detheroc|r",
 			[51] = 1542957063,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [50]
+		}, -- [40]
 		{
 			"keep going", -- [1]
 			"Selesong-Frostwolf", -- [2]
@@ -1144,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSelesong-Frostwolf|r",
 			[51] = 1542957074,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [51]
+		}, -- [41]
 		{
 			"I'm runnin", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -1166,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957078,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [52]
+		}, -- [42]
 		{
 			"I know the mushrooms are fucking cancer but just go", -- [1]
 			"Selesong-Frostwolf", -- [2]
@@ -1188,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSelesong-Frostwolf|r",
 			[51] = 1542957087,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [53]
+		}, -- [43]
 		{
 			" lol", -- [1]
 			"Raneffi-WyrmrestAccord", -- [2]
@@ -1210,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
 			[51] = 1542957098,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [54]
+		}, -- [44]
 		{
 			"I'm runnin like Donald Trump", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -1232,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957100,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [55]
+		}, -- [45]
 		{
 			"for america", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -1254,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957107,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [56]
+		}, -- [46]
 		{
 			"IF YOUR A SHROOM RUN AT THE BOSS", -- [1]
 			"Velgatis-Tichondrius", -- [2]
@@ -1276,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffVelgatis-Tichondrius|r",
 			[51] = 1542957111,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [57]
+		}, -- [47]
 		{
 			"I'm the killer I'm runnin", -- [1]
 			"Raneffi-WyrmrestAccord", -- [2]
@@ -1298,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
 			[51] = 1542957111,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [58]
+		}, -- [48]
 		{
 			"lol", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -1320,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957113,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [59]
+		}, -- [49]
 		{
 			"fk this", -- [1]
 			"Ninibu-Frostwolf", -- [2]
@@ -1342,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaNinibu-Frostwolf|r",
 			[51] = 1542957114,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [60]
+		}, -- [50]
 		{
 			"that fat fuck?", -- [1]
 			"Selesong-Frostwolf", -- [2]
@@ -1364,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSelesong-Frostwolf|r",
 			[51] = 1542957138,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [61]
+		}, -- [51]
 		{
 			"jesus.....", -- [1]
 			"Avonacò-Staghelm", -- [2]
@@ -1386,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aAvonacò-Staghelm|r",
 			[51] = 1542957148,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [62]
+		}, -- [52]
 		{
 			"5 seconds", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -1408,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542957175,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [63]
+		}, -- [53]
 		{
 			"not being lazy, got ress cd o/", -- [1]
 			"Russalka-Onyxia", -- [2]
@@ -1430,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffRussalka-Onyxia|r",
 			[51] = 1542957180,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [64]
+		}, -- [54]
 		{
 			"Jesus: There there...", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -1452,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957189,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [65]
+		}, -- [55]
 		{
 			"22%", -- [1]
 			"Michael-Detheroc", -- [2]
@@ -1474,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Michael-Detheroc|r",
 			[51] = 1542957199,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [66]
+		}, -- [56]
 		{
 			"There, they're, their.", -- [1]
 			"Zui-WyrmrestAccord", -- [2]
@@ -1496,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dZui-WyrmrestAccord|r",
 			[51] = 1542957206,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [67]
+		}, -- [57]
 		{
 			"kit it", -- [1]
 			"Ninibu-Frostwolf", -- [2]
@@ -1518,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaNinibu-Frostwolf|r",
 			[51] = 1542957216,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [68]
+		}, -- [58]
 		{
 			"Jesus can't save us now.", -- [1]
 			"Selesong-Frostwolf", -- [2]
@@ -1540,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSelesong-Frostwolf|r",
 			[51] = 1542957220,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [69]
+		}, -- [59]
 		{
 			"just keep it in combat", -- [1]
 			"Sundaé-Barthilas", -- [2]
@@ -1562,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Sundaé-Barthilas|r",
 			[51] = 1542957228,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [70]
+		}, -- [60]
 		{
 			"25s", -- [1]
 			"Ninibu-Frostwolf", -- [2]
@@ -1584,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaNinibu-Frostwolf|r",
 			[51] = 1542957258,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [71]
+		}, -- [61]
 		{
 			"this dragon is the worst", -- [1]
 			"Tastydumplin-Illidan", -- [2]
@@ -1606,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Tastydumplin-Illidan|r",
 			[51] = 1542957274,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [72]
+		}, -- [62]
 		{
 			"SIX ", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -1628,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542957282,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [73]
+		}, -- [63]
 		{
 			"f*ck me gently with a chainsaw...", -- [1]
 			"Avonacò-Staghelm", -- [2]
@@ -1650,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aAvonacò-Staghelm|r",
 			[51] = 1542957284,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [74]
+		}, -- [64]
 		{
 			"Nothing like a big'ol green pool of dicks to make you really hate life...", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -1672,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542957285,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [75]
+		}, -- [65]
 		{
 			"C'MOOOON", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -1694,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542957287,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [76]
+		}, -- [66]
 		{
 			"50...", -- [1]
 			"Avonacò-Staghelm", -- [2]
@@ -1716,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aAvonacò-Staghelm|r",
 			[51] = 1542957298,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [77]
+		}, -- [67]
 		{
 			"20s", -- [1]
 			"Russalka-Onyxia", -- [2]
@@ -1738,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffRussalka-Onyxia|r",
 			[51] = 1542957312,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [78]
+		}, -- [68]
 		{
 			"THREE", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -1760,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542957314,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [79]
+		}, -- [69]
 		{
 			"ONE", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -1782,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542957320,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [80]
+		}, -- [70]
 		{
 			"HALLELUJAH", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -1804,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542957328,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [81]
+		}, -- [71]
 		{
 			"OMG!!!", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -1826,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542957329,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [82]
+		}, -- [72]
 		{
 			"we done it", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -1848,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542957330,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [83]
+		}, -- [73]
 		{
 			"gg", -- [1]
 			"Raneffi-WyrmrestAccord", -- [2]
@@ -1870,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
 			[51] = 1542957331,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [84]
+		}, -- [74]
 		{
 			"FUCKING CHRIST", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -1892,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542957331,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [85]
+		}, -- [75]
 		{
 			"omg lol", -- [1]
 			"Mothra-Alleria", -- [2]
@@ -1914,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Mothra-Alleria|r",
 			[51] = 1542957332,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [86]
+		}, -- [76]
 		{
 			"that was nuts", -- [1]
 			"Cwaercwalu-Thrall", -- [2]
@@ -1936,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edCwaercwalu-Thrall|r",
 			[51] = 1542957332,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [87]
+		}, -- [77]
 		{
 			"holy shit finally", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -1958,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957333,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [88]
+		}, -- [78]
 		{
 			"THANK FUCK", -- [1]
 			"Sundaé-Barthilas", -- [2]
@@ -1980,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Sundaé-Barthilas|r",
 			[51] = 1542957333,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [89]
+		}, -- [79]
 		{
 			"good job kids", -- [1]
 			"Sennthal-MoonGuard", -- [2]
@@ -2002,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dSennthal-MoonGuard|r",
 			[51] = 1542957335,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [90]
+		}, -- [80]
 		{
 			"we dun did it", -- [1]
 			"Selesong-Frostwolf", -- [2]
@@ -2024,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSelesong-Frostwolf|r",
 			[51] = 1542957336,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [91]
+		}, -- [81]
 		{
 			"HELL YEAH!!!", -- [1]
 			"Avonacò-Staghelm", -- [2]
@@ -2046,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aAvonacò-Staghelm|r",
 			[51] = 1542957338,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [92]
+		}, -- [82]
 		{
 			"what'd yall get?", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -2068,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957338,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [93]
+		}, -- [83]
 		{
 			"yay11", -- [1]
 			"Jikizzi-Proudmoore", -- [2]
@@ -2090,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Jikizzi-Proudmoore|r",
 			[51] = 1542957340,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [94]
+		}, -- [84]
 		{
 			"portal going up", -- [1]
 			"Enchantess-Dath'Remar", -- [2]
@@ -2112,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaEnchantess-Dath'Remar|r",
 			[51] = 1542957341,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [95]
+		}, -- [85]
 		{
 			"|cffa335ee|Hitem:150404::::::::120:70:512:3:1:5384:120:::|h[Ring of the Unliving]|h|r", -- [1]
 			"Selesong-Frostwolf", -- [2]
@@ -2134,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaSelesong-Frostwolf|r",
 			[51] = 1542957345,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [96]
+		}, -- [86]
 		{
 			"thanks for being troopers xD", -- [1]
 			"Mothra-Alleria", -- [2]
@@ -2156,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Mothra-Alleria|r",
 			[51] = 1542957345,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [97]
+		}, -- [87]
 		{
 			"Warforged boots baby", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -2178,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542957347,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [98]
+		}, -- [88]
 		{
 			"anyone got a repair mount :s", -- [1]
 			"Russalka-Onyxia", -- [2]
@@ -2200,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffRussalka-Onyxia|r",
 			[51] = 1542957351,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [99]
+		}, -- [89]
 		{
 			"HAHA |cffa335ee|Hitem:150408::::::::120:256:512:3:1:5384:120:::|h[Staff of Rampant Growth]|h|r", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -2222,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542957351,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [100]
+		}, -- [90]
 		{
 			"|cffa335ee|Hitem:150410::::::::120:66:512:3:4:5384:5385:1808:43:120:::|h[Acid Inscribed Greaves]|h|r", -- [1]
 			"Cruciö-Staghelm", -- [2]
@@ -2244,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCruciö-Staghelm|r",
 			[51] = 1542957353,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [101]
+		}, -- [91]
 		{
 			"some of us might spend a lil fortune xD", -- [1]
 			"Russalka-Onyxia", -- [2]
@@ -2266,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffRussalka-Onyxia|r",
 			[51] = 1542957357,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [102]
+		}, -- [92]
 		{
 			"ty for rez", -- [1]
 			"Sundaé-Barthilas", -- [2]
@@ -2288,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Sundaé-Barthilas|r",
 			[51] = 1542957358,
 			[50] = "CHAT_MSG_RAID_LEADER",
-		}, -- [103]
+		}, -- [93]
 		{
 			"not the sword. : \\", -- [1]
 			"Zui-WyrmrestAccord", -- [2]
@@ -2310,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dZui-WyrmrestAccord|r",
 			[51] = 1542957359,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [104]
+		}, -- [94]
 		{
 			"thanks everyone", -- [1]
 			"Navixx-Madoran", -- [2]
@@ -2332,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Navixx-Madoran|r",
 			[51] = 1542957364,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [105]
+		}, -- [95]
 		{
 			"yw", -- [1]
 			"Velgatis-Tichondrius", -- [2]
@@ -2354,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffVelgatis-Tichondrius|r",
 			[51] = 1542957365,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [106]
+		}, -- [96]
 		{
 			"That would've been useful a minute ago", -- [1]
 			"Galvix-SilverHand", -- [2]
@@ -2376,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffGalvix-SilverHand|r",
 			[51] = 1542957370,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [107]
+		}, -- [97]
 		{
 			"thx for repair=)", -- [1]
 			"Russalka-Onyxia", -- [2]
@@ -2398,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffRussalka-Onyxia|r",
 			[51] = 1542957379,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [108]
+		}, -- [98]
 		{
 			"600gold repair lol", -- [1]
 			"Mothra-Alleria", -- [2]
@@ -2420,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Mothra-Alleria|r",
 			[51] = 1542957379,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [109]
+		}, -- [99]
 		{
 			"bwahhhh!", -- [1]
 			"Mothra-Alleria", -- [2]
@@ -2442,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Mothra-Alleria|r",
 			[51] = 1542957391,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [110]
+		}, -- [100]
 		{
 			"ty for the port btw", -- [1]
 			"Michiko-Thrall", -- [2]
@@ -2464,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Michiko-Thrall|r",
 			[51] = 1542957391,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [111]
+		}, -- [101]
 		{
 			"kinad hard to res in combat ass", -- [1]
 			"Velgatis-Tichondrius", -- [2]
@@ -2486,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffVelgatis-Tichondrius|r",
 			[51] = 1542957397,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [112]
+		}, -- [102]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2508,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1542994777,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [113]
+		}, -- [103]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2530,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1542994801,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [114]
+		}, -- [104]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2552,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1542994822,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [115]
+		}, -- [105]
 		{
 			"ress?", -- [1]
 			"Smòugh-Quel'Thalas", -- [2]
@@ -2574,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Smòugh-Quel'Thalas|r",
 			[51] = 1543042531,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [116]
+		}, -- [106]
 		{
 			"ty", -- [1]
 			"Smòugh-Quel'Thalas", -- [2]
@@ -2596,7 +2376,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Smòugh-Quel'Thalas|r",
 			[51] = 1543042540,
 			[50] = "CHAT_MSG_RAID",
-		}, -- [117]
+		}, -- [107]
 		{
 			"Gratz", -- [1]
 			"Ozzymandias-ArgentDawn", -- [2]
@@ -2618,7 +2398,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaOzzymandias|r",
 			[51] = 1543072566,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [118]
+		}, -- [108]
 		{
 			"thnx", -- [1]
 			"Hycindril-ArgentDawn", -- [2]
@@ -2640,7 +2420,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edHycindril|r",
 			[51] = 1543072578,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [119]
+		}, -- [109]
 		{
 			"Gratz", -- [1]
 			"Ozzymandias-ArgentDawn", -- [2]
@@ -2662,7 +2442,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaOzzymandias|r",
 			[51] = 1543072918,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [120]
+		}, -- [110]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2684,7 +2464,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1543077460,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [121]
+		}, -- [111]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2706,7 +2486,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1543077480,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [122]
+		}, -- [112]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2728,7 +2508,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1543077502,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [123]
+		}, -- [113]
 		{
 			"howdy folks =)", -- [1]
 			"Jharl-ArgentDawn", -- [2]
@@ -2750,7 +2530,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aJharl|r",
 			[51] = 1543099076,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [124]
+		}, -- [114]
 		{
 			"hey aba", -- [1]
 			"Pylea-TheScryers", -- [2]
@@ -2772,7 +2552,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edPylea|r",
 			[51] = 1543099157,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [125]
+		}, -- [115]
 		{
 			"=o", -- [1]
 			"Jharl-ArgentDawn", -- [2]
@@ -2794,7 +2574,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aJharl|r",
 			[51] = 1543099169,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [126]
+		}, -- [116]
 		{
 			"get the mount?", -- [1]
 			"Saleness-ArgentDawn", -- [2]
@@ -2816,6 +2596,226 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Saleness|r",
 			[51] = 1543100318,
 			[50] = "CHAT_MSG_GUILD",
+		}, -- [117]
+		{
+			"gg all", -- [1]
+			"Tex-EmeraldDream", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tex-EmeraldDream", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2982, -- [11]
+			"Player-162-05D1E030", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTex-EmeraldDream|r",
+			[51] = 1543209449,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [118]
+		{
+			"|cffffff00Revantusk Village is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - The Hinterlands", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - The Hinterlands", -- [9]
+			0, -- [10]
+			3027, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1543210073,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [119]
+		{
+			"ion did this", -- [1]
+			"Tex-EmeraldDream", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tex-EmeraldDream", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3033, -- [11]
+			"Player-162-05D1E030", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTex-EmeraldDream|r",
+			[51] = 1543210089,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [120]
+		{
+			"gg all", -- [1]
+			"Tex-EmeraldDream", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Tex-EmeraldDream", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3051, -- [11]
+			"Player-162-05D1E030", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dTex-EmeraldDream|r",
+			[51] = 1543210151,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [121]
+		{
+			"once get an healer i go", -- [1]
+			"Pallymcbeav-Dath'Remar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Pallymcbeav-Dath'Remar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3073, -- [11]
+			"Player-3726-08EE8C57", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
+			[51] = 1543210286,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [122]
+		{
+			"wait", -- [1]
+			"Pallymcbeav-Dath'Remar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Pallymcbeav-Dath'Remar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3083, -- [11]
+			"Player-3726-08EE8C57", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
+			[51] = 1543210317,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [123]
+		{
+			"was ally i think", -- [1]
+			"Failgunner-Duskwood", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Failgunner-Duskwood", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3086, -- [11]
+			"Player-64-0898E935", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dFailgunner-Duskwood|r",
+			[51] = 1543210325,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [124]
+		{
+			"yeah ally guy did that", -- [1]
+			"Narmazulnn-Kil'jaeden", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Narmazulnn-Kil'jaeden", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3088, -- [11]
+			"Player-9-0B4A3333", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffaad372Narmazulnn-Kil'jaeden|r",
+			[51] = 1543210334,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [125]
+		{
+			"let doosh die", -- [1]
+			"Pallymcbeav-Dath'Remar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Pallymcbeav-Dath'Remar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3089, -- [11]
+			"Player-3726-08EE8C57", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
+			[51] = 1543210335,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [126]
+		{
+			"not wasting arsehole run back without healers", -- [1]
+			"Pallymcbeav-Dath'Remar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Pallymcbeav-Dath'Remar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3097, -- [11]
+			"Player-3726-08EE8C57", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
+			[51] = 1543210364,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [127]
 	},
 }

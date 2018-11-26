@@ -9,10 +9,10 @@ BigWigs3DB = {
 			[-557] = true,
 			[-593] = {
 			},
-			[-612] = true,
-			[-563] = true,
 			[-367] = true,
+			[-563] = true,
 			[-567] = true,
+			[-612] = true,
 			[75] = true,
 			[76] = true,
 			[-573] = true,
@@ -27,10 +27,6 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Bosses_Glubtok"] = {
-		},
-		["BigWigs_Bosses_Magisters' Terrace Trash"] = {
-		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -40,31 +36,13 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Bosses_Flameweaver Koegler"] = {
-		},
-		["BigWigs_Bosses_Selin Fireheart"] = {
-		},
-		["BigWigs_Bosses_High Inquisitor Whitemane"] = {
-		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Bosses_Armsmaster Harlan"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Bosses_Houndmaster Braun"] = {
+		["BigWigs_Bosses_Murozond"] = {
 		},
-		["BigWigs_Plugins_AutoReply"] = {
-		},
-		["BigWigs_Bosses_Brother Korloff"] = {
-		},
-		["BigWigs_Bosses_Thalnos the Soulrender"] = {
-		},
-		["BigWigs_Bosses_Vanessa VanCleef"] = {
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Bosses_Vexallus"] = {
-		},
-		["BigWigs_Bosses_Kael'thas Sunstrider "] = {
+		["BigWigs_Bosses_Echo of Sylvanas"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
@@ -82,7 +60,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_\"Captain\" Cookie"] = {
+		["BigWigs_Bosses_Echo of Jaina"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -91,24 +69,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Foe Reaper 5000"] = {
+		["BigWigs_Bosses_Altairus"] = {
 		},
-		["BigWigs_Bosses_Helix Gearbreaker"] = {
+		["LibDualSpec-1.0"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_Priestess Delrissa"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
+		["BigWigs_Bosses_Grand Vizier Ertan"] = {
 		},
 		["BigWigs_Plugins_Wipe"] = {
-		},
-		["BigWigs_Plugins_Pull"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
@@ -116,6 +83,17 @@ BigWigs3DB = {
 					["width"] = 140.00016784668,
 					["font"] = "Friz Quadrata TT",
 					["height"] = 119.999977111816,
+				},
+			},
+		},
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_Pull"] = {
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
 				},
 			},
 		},
