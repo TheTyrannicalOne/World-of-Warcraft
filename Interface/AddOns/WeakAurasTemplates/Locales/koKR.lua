@@ -45,8 +45,7 @@ local L = WeakAuras.L
 	--[[Translation missing --]]
 	L["Always shows the aura, turns red when out of range."] = "Always shows the aura, turns red when out of range."
 	L["Back"] = "뒤로"
-	--[[Translation missing --]]
-	L["Basic Show On Cooldown"] = "Basic Show On Cooldown"
+	L["Basic Show On Cooldown"] = "재사용 대기 시간 표시"
 	L["Bloodlust/Heroism"] = "피의 욕망/영웅심"
 	L["buff"] = "강화 효과"
 	L["Buff"] = "강화 효과"
@@ -60,10 +59,8 @@ local L = WeakAuras.L
 	--[[Translation missing --]]
 	L["Charge Tracking"] = "Charge Tracking"
 	L["cooldown"] = "재사용 대기시간"
-	--[[Translation missing --]]
-	L["Cooldown Tracking"] = "Cooldown Tracking"
-	--[[Translation missing --]]
-	L["Create Auras"] = "Create Auras"
+	L["Cooldown Tracking"] = "재사용 추적"
+	L["Create Auras"] = "효과 생성"
 	L["Debuffs"] = "약화 효과"
 	L["Enchants"] = "마법부여"
 	L["General"] = "일반"
@@ -79,8 +76,7 @@ local L = WeakAuras.L
 	L["Highlight while debuffed."] = "Highlight while debuffed."
 	L["Hold CTRL to create multiple auras at once"] = "한 번에 여러 오라를 만드려면 CTRL 키를 누르세요"
 	L["Keeps existing triggers intact"] = "활성 조건 그대로 유지"
-	--[[Translation missing --]]
-	L["Next"] = "Next"
+	L["Next"] = "다음"
 	--[[Translation missing --]]
 	L["On Procc Trinkets (Buff)"] = "On Procc Trinkets (Buff)"
 	--[[Translation missing --]]
@@ -113,10 +109,8 @@ local L = WeakAuras.L
 	L["Show Charges with Range Tracking"] = "Show Charges with Range Tracking"
 	--[[Translation missing --]]
 	L["Show Charges with Usable Check"] = "Show Charges with Usable Check"
-	--[[Translation missing --]]
-	L["Show Cooldown and Buff"] = "Show Cooldown and Buff"
-	--[[Translation missing --]]
-	L["Show Cooldown and Buff and Check for Target"] = "Show Cooldown and Buff and Check for Target"
+	L["Show Cooldown and Buff"] = "쿨 다운 및 버프 표시"
+	L["Show Cooldown and Buff and Check for Target"] = "쿨 다운 및 버프 표시 및 대상 확인"
 	--[[Translation missing --]]
 	L["Show Cooldown and Buff and Check Usable"] = "Show Cooldown and Buff and Check Usable"
 	--[[Translation missing --]]

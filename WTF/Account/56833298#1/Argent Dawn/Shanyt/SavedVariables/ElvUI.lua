@@ -24,2446 +24,2446 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"run away when you mushroom", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"gear il doesnt change with wm on", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			647, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2322, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956179,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543248677,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [1]
 		{
-			"and graveyard zerg it i guess lol", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"^", -- [1]
+			"Raenala-Rexxar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Raenala-Rexxar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			648, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2324, -- [11]
+			"Player-1151-04BCA877", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956185,
+			[52] = "|cff3fc6eaRaenala-Rexxar|r",
+			[51] = 1543248689,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [2]
 		{
-			"ready?", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"as I said so far", -- [1]
+			"Timerdeux-EarthenRing", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Timerdeux-EarthenRing", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			653, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2325, -- [11]
+			"Player-100-0986A786", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956220,
+			[52] = "|cff00ff96Timerdeux-EarthenRing|r",
+			[51] = 1543248689,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [3]
 		{
-			"let's go", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"that's what he said, but in two parts ;)", -- [1]
+			"Ballista-Drenden", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Ballista-Drenden", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			661, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2328, -- [11]
+			"Player-1165-06BDD88F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956260,
+			[52] = "|cffaad372Ballista-Drenden|r",
+			[51] = 1543248701,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [4]
 		{
-			"gotta taunt and take turns with breath stacks", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"shall we go", -- [1]
+			"Knytebourne-Hyjal", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Knytebourne-Hyjal", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			671, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2329, -- [11]
+			"Player-3661-07D5AC96", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956349,
+			[52] = "|cff3fc6eaKnytebourne-Hyjal|r",
+			[51] = 1543248703,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [5]
 		{
-			"this boss is the worst of them", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"only difference is more xp while leveling", -- [1]
+			"Raenala-Rexxar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Raenala-Rexxar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			676, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2331, -- [11]
+			"Player-1151-04BCA877", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542956380,
+			[52] = "|cff3fc6eaRaenala-Rexxar|r",
+			[51] = 1543248709,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [6]
 		{
-			"yuupp", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"lez boogie", -- [1]
+			"Hysterectome-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Hysterectome-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			677, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2332, -- [11]
+			"Player-3684-0723336E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956387,
+			[52] = "|cff8787edHysterectome-Mal'Ganis|r",
+			[51] = 1543248715,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [7]
 		{
-			"darn it won't sap", -- [1]
-			"Lladra-MoonGuard", -- [2]
+			"boss can do double teleport", -- [1]
+			"Timerdeux-EarthenRing", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Lladra-MoonGuard", -- [5]
+			"Timerdeux-EarthenRing", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			681, -- [11]
-			"Player-3675-06C34B25", -- [12]
+			2340, -- [11]
+			"Player-100-0986A786", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Lladra-MoonGuard|r",
-			[51] = 1542956422,
+			[52] = "|cff00ff96Timerdeux-EarthenRing|r",
+			[51] = 1543248756,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [8]
 		{
-			"i'll pull first and turn her away", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"as a dps trying to rez; choices are in the ice or in the ice", -- [1]
+			"Timerdeux-EarthenRing", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Timerdeux-EarthenRing", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			683, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2360, -- [11]
+			"Player-100-0986A786", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956463,
+			[52] = "|cff00ff96Timerdeux-EarthenRing|r",
+			[51] = 1543248831,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [9]
 		{
-			"after the first breath someone taunt off of me and keep her turned away", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"how is its life?", -- [1]
+			"Lothrethar-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Lothrethar-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			685, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2367, -- [11]
+			"Player-3209-05EDB5E8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956470,
+			[52] = "|cffc41e3aLothrethar-Azralon|r",
+			[51] = 1543248866,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [10]
 		{
-			"going now", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"portal", -- [1]
+			"Raenala-Rexxar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Raenala-Rexxar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			686, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2386, -- [11]
+			"Player-1151-04BCA877", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956497,
+			[52] = "|cff3fc6eaRaenala-Rexxar|r",
+			[51] = 1543248898,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [11]
 		{
-			"Honestly, we might need a full 40 people for this xD", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"rez pls", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			694, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2398, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542956572,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543248912,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [12]
 		{
-			"her health scales", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"thanks broster", -- [1]
+			"Yumil-CenarionCircle", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Yumil-CenarionCircle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			695, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2453, -- [11]
+			"Player-1169-06647E76", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956583,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cff0070ddYumil-CenarionCircle|r",
+			[51] = 1543249417,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [13]
 		{
-			"PFFF yeah never mind on that", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"Thanks", -- [1]
+			"Buck-Tortheldrin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Buck-Tortheldrin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			696, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2467, -- [11]
+			"Player-128-083E7861", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542956592,
+			[52] = "|cfff48cbaBuck-Tortheldrin|r",
+			[51] = 1543249573,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [14]
 		{
-			"what the priest said", -- [1]
-			"Michiko-Thrall", -- [2]
+			"LustDetector: Yumil-CenarionCircle cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!", -- [1]
+			"Chroníc-Jubei'Thos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Chroníc-Jubei'Thos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			701, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2497, -- [11]
+			"Player-3728-0A01A3B4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542956597,
+			[52] = "|cffff7c0aChroníc-Jubei'Thos|r",
+			[51] = 1543249819,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [15]
 		{
-			"what is the starting point at which it scales?", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"Summons?", -- [1]
+			"Vex-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Vex", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			703, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2500, -- [11]
+			"Player-75-007DDEE0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542956623,
+			[52] = "|cffaad372Vex|r",
+			[51] = 1543249853,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [16]
 		{
-			"like 25 i think", -- [1]
-			"Zynthetic-Saurfang", -- [2]
+			"nah, i'ts pulled, you should probably try to be here when you queue", -- [1]
+			"Myniz-Hyjal", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zynthetic-Saurfang", -- [5]
+			"Myniz-Hyjal", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			704, -- [11]
-			"Player-3729-0A71C93E", -- [12]
+			2501, -- [11]
+			"Player-3661-06DADAE2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Zynthetic-Saurfang|r",
-			[51] = 1542956634,
+			[52] = "|cffaad372Myniz-Hyjal|r",
+			[51] = 1543249879,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [17]
 		{
-			"Hate these bosses...", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"^^", -- [1]
+			"Tupacshocker-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Tupacshocker-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			706, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2502, -- [11]
+			"Player-11-0AA06B34", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542956641,
+			[52] = "|cff0070ddTupacshocker-Tichondrius|r",
+			[51] = 1543249894,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [18]
 		{
-			"This one is by far the worstr", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"thx", -- [1]
+			"Chroníc-Jubei'Thos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Chroníc-Jubei'Thos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			709, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2514, -- [11]
+			"Player-3728-0A01A3B4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542956651,
+			[52] = "|cffff7c0aChroníc-Jubei'Thos|r",
+			[51] = 1543249952,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [19]
 		{
-			"Worst*", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"ty all :)", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			710, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2515, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542956654,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543249952,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [20]
 		{
-			"yeah this one is the worst", -- [1]
-			"Michiko-Thrall", -- [2]
+			"ty all", -- [1]
+			"Aldorai-Aman'Thul", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Aldorai-Aman'Thul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			712, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2527, -- [11]
+			"Player-3722-0A47223D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542956659,
+			[52] = "|cffa330c9Aldorai-Aman'Thul|r",
+			[51] = 1543249957,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [21]
 		{
-			"lol", -- [1]
-			"Michiko-Thrall", -- [2]
+			"anyone need repair mount?", -- [1]
+			"Hermíone-Aggramar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Hermíone-Aggramar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			716, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2566, -- [11]
+			"Player-106-05263013", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542956666,
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543250401,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [22]
 		{
-			"I honestly thought they would nerf it after the first night", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"Ask me when this is over lol", -- [1]
+			"Frockme-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Frockme-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			718, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2567, -- [11]
+			"Player-3684-09D1CB7D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542956678,
+			[52] = "|cffffffffFrockme-Mal'Ganis|r",
+			[51] = 1543250430,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [23]
 		{
-			"nostalgia?", -- [1]
-			"Kiesa-MoonGuard", -- [2]
+			"just wipe", -- [1]
+			"Horizon-Eredar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kiesa-MoonGuard", -- [5]
+			"Horizon-Eredar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			719, -- [11]
-			"Player-3675-06C4B448", -- [12]
+			2578, -- [11]
+			"Player-159-06E587C8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffKiesa-MoonGuard|r",
-			[51] = 1542956693,
+			[52] = "|cff0070ddHorizon-Eredar|r",
+			[51] = 1543250576,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [24]
 		{
-			"would've been ideal", -- [1]
-			"Raneffi-WyrmrestAccord", -- [2]
+			"and start over", -- [1]
+			"Horizon-Eredar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Raneffi-WyrmrestAccord", -- [5]
+			"Horizon-Eredar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			720, -- [11]
-			"Player-1171-082EF983", -- [12]
+			2579, -- [11]
+			"Player-159-06E587C8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
-			[51] = 1542956696,
+			[52] = "|cff0070ddHorizon-Eredar|r",
+			[51] = 1543250578,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [25]
 		{
-			"yeah anti-nostalgia", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"shouldnt have pulled so early", -- [1]
+			"Yumil-CenarionCircle", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Yumil-CenarionCircle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			721, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2582, -- [11]
+			"Player-1169-06647E76", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542956701,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cff0070ddYumil-CenarionCircle|r",
+			[51] = 1543250588,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [26]
 		{
-			"\"Hwat?! You don't like a floor fillin with dream circles? Well let's add mushrooms to make things more interesting!\"", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"resetting?", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			722, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2589, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542956703,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543250627,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [27]
 		{
-			"I mean go get your nature resist gear on", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"yes :(", -- [1]
+			"Frockme-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Frockme-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			724, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2592, -- [11]
+			"Player-3684-09D1CB7D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542956712,
+			[52] = "|cffffffffFrockme-Mal'Ganis|r",
+			[51] = 1543250631,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [28]
 		{
-			"tank the boss closest to the run back point and try keep someone alive all the time", -- [1]
-			"Enchantess-Dath'Remar", -- [2]
+			"the only way i've seen this killed is to keep running back after you die and never let it reset", -- [1]
+			"Orcbearpig-Stormrage", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Enchantess-Dath'Remar", -- [5]
+			"Orcbearpig-Stormrage", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			725, -- [11]
-			"Player-3726-08E0A57E", -- [12]
+			2593, -- [11]
+			"Player-60-0AF41F8C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEnchantess-Dath'Remar|r",
-			[51] = 1542956715,
+			[52] = "|cffc69b6dOrcbearpig-Stormrage|r",
+			[51] = 1543250639,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [29]
 		{
-			"Y'all ready to die?", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"well we didnt have a full group so its ok", -- [1]
+			"Yumil-CenarionCircle", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Yumil-CenarionCircle", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			726, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2594, -- [11]
+			"Player-1169-06647E76", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542956775,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cff0070ddYumil-CenarionCircle|r",
+			[51] = 1543250642,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [30]
 		{
-			"let's see if we can get it to 75%", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"alas, I've never seen this one die as a result of anything but a corpse carnival, full group or not. :\\", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			728, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2598, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542956788,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543250677,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [31]
 		{
-			"Just run back if you die", -- [1]
-			"Melanize-Area52", -- [2]
+			"i was in a group last time that kept him on ramp, just have to watch out for tail.", -- [1]
+			"Hermíone-Aggramar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Melanize-Area52", -- [5]
+			"Hermíone-Aggramar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			729, -- [11]
-			"Player-3676-06E8E35D", -- [12]
+			2600, -- [11]
+			"Player-106-05263013", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aMelanize-Area52|r",
-			[51] = 1542956799,
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543250681,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [32]
 		{
-			"taunt off of me after breath stacks please n thanks", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"I mean, there were people just flying and not helping at all", -- [1]
+			"Frockme-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Frockme-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			730, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2603, -- [11]
+			"Player-3684-09D1CB7D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956800,
+			[52] = "|cffffffffFrockme-Mal'Ganis|r",
+			[51] = 1543250691,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [33]
 		{
-			"Can do", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"only time i've seen that work though.  :-)", -- [1]
+			"Hermíone-Aggramar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Hermíone-Aggramar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			731, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2605, -- [11]
+			"Player-106-05263013", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542956807,
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543250701,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [34]
 		{
-			"here goes", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"people with shrooms were just jumping off the ramp, you mean? ", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			732, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2611, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542956816,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543250729,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [35]
 		{
-			"Bagh! Shroomed!", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"repair mount up", -- [1]
+			"Hermíone-Aggramar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Hermíone-Aggramar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			741, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2613, -- [11]
+			"Player-106-05263013", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542956886,
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543250735,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [36]
 		{
-			"zerg zerg zerg", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"remove that offline player", -- [1]
+			"Chroníc-Jubei'Thos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Chroníc-Jubei'Thos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			756, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2615, -- [11]
+			"Player-3728-0A01A3B4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542957018,
+			[52] = "|cffff7c0aChroníc-Jubei'Thos|r",
+			[51] = 1543250736,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [37]
 		{
-			"when you die run bacl and rez. keep the fight going or we will lose boss", -- [1]
-			"Mothra-Alleria", -- [2]
+			"and yes Malanore-Gilneas . but like i said i've only seen that work the once", -- [1]
+			"Hermíone-Aggramar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mothra-Alleria", -- [5]
+			"Hermíone-Aggramar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			760, -- [11]
-			"Player-52-0032EC03", -- [12]
+			2623, -- [11]
+			"Player-106-05263013", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mothra-Alleria|r",
-			[51] = 1542957058,
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543250777,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [38]
 		{
-			"walk back", -- [1]
-			"Michael-Detheroc", -- [2]
+			"right >.< ", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michael-Detheroc", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			763, -- [11]
-			"Player-154-08DED40A", -- [12]
+			2625, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Michael-Detheroc|r",
-			[51] = 1542957060,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543250785,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [39]
 		{
-			"go go", -- [1]
-			"Michael-Detheroc", -- [2]
+			"Huntahtze, Groincherry, Chronic are all up in the canopy but there for the ready check", -- [1]
+			"Frockme-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michael-Detheroc", -- [5]
+			"Frockme-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			764, -- [11]
-			"Player-154-08DED40A", -- [12]
+			2635, -- [11]
+			"Player-3684-09D1CB7D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Michael-Detheroc|r",
-			[51] = 1542957063,
+			[52] = "|cffffffffFrockme-Mal'Ganis|r",
+			[51] = 1543250871,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [40]
 		{
-			"keep going", -- [1]
-			"Selesong-Frostwolf", -- [2]
+			"pls kick offline and wm peeps", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Selesong-Frostwolf", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			765, -- [11]
-			"Player-7-052857ED", -- [12]
+			2636, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSelesong-Frostwolf|r",
-			[51] = 1542957074,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543250874,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [41]
 		{
-			"I'm runnin", -- [1]
-			"Michiko-Thrall", -- [2]
+			"kick the flyers", -- [1]
+			"Hysterectome-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Hysterectome-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			766, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2639, -- [11]
+			"Player-3684-0723336E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957078,
+			[52] = "|cff8787edHysterectome-Mal'Ganis|r",
+			[51] = 1543250886,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [42]
 		{
-			"I know the mushrooms are fucking cancer but just go", -- [1]
-			"Selesong-Frostwolf", -- [2]
+			"...", -- [1]
+			"Chroníc-Jubei'Thos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Selesong-Frostwolf", -- [5]
+			"Chroníc-Jubei'Thos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			767, -- [11]
-			"Player-7-052857ED", -- [12]
+			2640, -- [11]
+			"Player-3728-0A01A3B4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSelesong-Frostwolf|r",
-			[51] = 1542957087,
+			[52] = "|cffff7c0aChroníc-Jubei'Thos|r",
+			[51] = 1543250892,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [43]
 		{
-			" lol", -- [1]
-			"Raneffi-WyrmrestAccord", -- [2]
+			"odd. I don't see any WM people", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Raneffi-WyrmrestAccord", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			768, -- [11]
-			"Player-1171-082EF983", -- [12]
+			2641, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
-			[51] = 1542957098,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543250893,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [44]
 		{
-			"I'm runnin like Donald Trump", -- [1]
-			"Michiko-Thrall", -- [2]
+			"really", -- [1]
+			"Rm-Ner'zhul", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Rm-Ner'zhul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			769, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2643, -- [11]
+			"Player-128-08479135", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957100,
+			[52] = "|cffc41e3aRm-Ner'zhul|r",
+			[51] = 1543250899,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [45]
 		{
-			"for america", -- [1]
-			"Michiko-Thrall", -- [2]
+			"ok let's go", -- [1]
+			"Horizon-Eredar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Horizon-Eredar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			770, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2644, -- [11]
+			"Player-159-06E587C8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957107,
+			[52] = "|cff0070ddHorizon-Eredar|r",
+			[51] = 1543250909,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [46]
 		{
-			"IF YOUR A SHROOM RUN AT THE BOSS", -- [1]
-			"Velgatis-Tichondrius", -- [2]
+			"moose", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Velgatis-Tichondrius", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			771, -- [11]
-			"Player-11-0B465F5C", -- [12]
+			2645, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffVelgatis-Tichondrius|r",
-			[51] = 1542957111,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543250915,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [47]
 		{
-			"I'm the killer I'm runnin", -- [1]
-			"Raneffi-WyrmrestAccord", -- [2]
+			"LustDetector: Yumil-CenarionCircle cast |cff71d5ff|Hspell:2825:0|h[Bloodlust]|h|r!", -- [1]
+			"Chroníc-Jubei'Thos", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Raneffi-WyrmrestAccord", -- [5]
+			"Chroníc-Jubei'Thos", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			772, -- [11]
-			"Player-1171-082EF983", -- [12]
+			2647, -- [11]
+			"Player-3728-0A01A3B4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
-			[51] = 1542957111,
+			[52] = "|cffff7c0aChroníc-Jubei'Thos|r",
+			[51] = 1543250923,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [48]
 		{
-			"lol", -- [1]
-			"Michiko-Thrall", -- [2]
+			"well that was a quick wipe", -- [1]
+			"Horizon-Eredar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Horizon-Eredar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			773, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2653, -- [11]
+			"Player-159-06E587C8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957113,
+			[52] = "|cff0070ddHorizon-Eredar|r",
+			[51] = 1543250998,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [49]
 		{
-			"fk this", -- [1]
-			"Ninibu-Frostwolf", -- [2]
+			"Mushroomed, then tail swiped right into a dream cloud.Twice.  I'm honestly impressed.", -- [1]
+			"Adagony-Madoran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ninibu-Frostwolf", -- [5]
+			"Adagony-Madoran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			774, -- [11]
-			"Player-7-06A2B150", -- [12]
+			2663, -- [11]
+			"Player-1173-014AA0D1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaNinibu-Frostwolf|r",
-			[51] = 1542957114,
+			[52] = "|cffc69b6dAdagony-Madoran|r",
+			[51] = 1543251141,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [50]
 		{
-			"that fat fuck?", -- [1]
-			"Selesong-Frostwolf", -- [2]
+			"imagine if this fight was on a phone", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Selesong-Frostwolf", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			776, -- [11]
-			"Player-7-052857ED", -- [12]
+			2666, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSelesong-Frostwolf|r",
-			[51] = 1542957138,
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543251192,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [51]
 		{
-			"jesus.....", -- [1]
-			"Avonacò-Staghelm", -- [2]
+			"lol", -- [1]
+			"Hermíone-Aggramar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Avonacò-Staghelm", -- [5]
+			"Hermíone-Aggramar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			779, -- [11]
-			"Player-160-05EA29F8", -- [12]
+			2667, -- [11]
+			"Player-106-05263013", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aAvonacò-Staghelm|r",
-			[51] = 1542957148,
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543251198,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [52]
 		{
-			"5 seconds", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"lol", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			780, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2668, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542957175,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543251200,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [53]
 		{
-			"not being lazy, got ress cd o/", -- [1]
-			"Russalka-Onyxia", -- [2]
+			"don't you guys have phones?", -- [1]
+			"Horizon-Eredar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Russalka-Onyxia", -- [5]
+			"Horizon-Eredar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			781, -- [11]
-			"Player-91-0996BCCA", -- [12]
+			2670, -- [11]
+			"Player-159-06E587C8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffRussalka-Onyxia|r",
-			[51] = 1542957180,
+			[52] = "|cff0070ddHorizon-Eredar|r",
+			[51] = 1543251204,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [54]
 		{
-			"Jesus: There there...", -- [1]
-			"Michiko-Thrall", -- [2]
+			"at this point I'm lucky if I get a glaive throw in before I get shroomed and die :P ", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			783, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2671, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957189,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251205,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [55]
 		{
-			"22%", -- [1]
-			"Michael-Detheroc", -- [2]
+			"I'd love to see someone try to play Immortal on my slider phone. lol", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michael-Detheroc", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			784, -- [11]
-			"Player-154-08DED40A", -- [12]
+			2673, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Michael-Detheroc|r",
-			[51] = 1542957199,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251217,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [56]
 		{
-			"There, they're, their.", -- [1]
-			"Zui-WyrmrestAccord", -- [2]
+			"i'm just throwing my glaive to at least keep the fight going", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zui-WyrmrestAccord", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			785, -- [11]
-			"Player-1171-084C9FCE", -- [12]
+			2674, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dZui-WyrmrestAccord|r",
-			[51] = 1542957206,
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543251223,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [57]
 		{
-			"kit it", -- [1]
-			"Ninibu-Frostwolf", -- [2]
+			"indeed", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ninibu-Frostwolf", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			786, -- [11]
-			"Player-7-06A2B150", -- [12]
+			2675, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaNinibu-Frostwolf|r",
-			[51] = 1542957216,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251236,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [58]
 		{
-			"Jesus can't save us now.", -- [1]
-			"Selesong-Frostwolf", -- [2]
+			"gonna be lots of sacking to beat this", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Selesong-Frostwolf", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			787, -- [11]
-			"Player-7-052857ED", -- [12]
+			2678, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSelesong-Frostwolf|r",
-			[51] = 1542957220,
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543251259,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [59]
 		{
-			"just keep it in combat", -- [1]
-			"Sundaé-Barthilas", -- [2]
+			"RIP", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sundaé-Barthilas", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			788, -- [11]
-			"Player-3723-0A5F1289", -- [12]
+			2691, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Sundaé-Barthilas|r",
-			[51] = 1542957228,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543251307,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [60]
 		{
-			"25s", -- [1]
-			"Ninibu-Frostwolf", -- [2]
+			"he reset", -- [1]
+			"Horizon-Eredar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ninibu-Frostwolf", -- [5]
+			"Horizon-Eredar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			793, -- [11]
-			"Player-7-06A2B150", -- [12]
+			2693, -- [11]
+			"Player-159-06E587C8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaNinibu-Frostwolf|r",
-			[51] = 1542957258,
+			[52] = "|cff0070ddHorizon-Eredar|r",
+			[51] = 1543251308,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [61]
 		{
-			"this dragon is the worst", -- [1]
-			"Tastydumplin-Illidan", -- [2]
+			"aw, what? I was alive and in combat still. why did it reset? ", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tastydumplin-Illidan", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			794, -- [11]
-			"Player-57-0B21C6AC", -- [12]
+			2695, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Tastydumplin-Illidan|r",
-			[51] = 1542957274,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251310,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [62]
 		{
-			"SIX ", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"FFS", -- [1]
+			"Hysterectome-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Hysterectome-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			795, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2697, -- [11]
+			"Player-3684-0723336E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542957282,
+			[52] = "|cff8787edHysterectome-Mal'Ganis|r",
+			[51] = 1543251313,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [63]
 		{
-			"f*ck me gently with a chainsaw...", -- [1]
-			"Avonacò-Staghelm", -- [2]
+			"if you could die that'd be great", -- [1]
+			"Myniz-Hyjal", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Avonacò-Staghelm", -- [5]
+			"Myniz-Hyjal", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			796, -- [11]
-			"Player-160-05EA29F8", -- [12]
+			2702, -- [11]
+			"Player-3661-06DADAE2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aAvonacò-Staghelm|r",
-			[51] = 1542957284,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffaad372Myniz-Hyjal|r",
+			[51] = 1543251335,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [64]
 		{
-			"Nothing like a big'ol green pool of dicks to make you really hate life...", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"thanks", -- [1]
+			"Myniz-Hyjal", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Myniz-Hyjal", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			797, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2703, -- [11]
+			"Player-3661-06DADAE2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542957285,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffaad372Myniz-Hyjal|r",
+			[51] = 1543251336,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [65]
 		{
-			"C'MOOOON", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"Did it agro someone who was unreachable?", -- [1]
+			"Sensualia-Nagrand", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Sensualia-Nagrand", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			798, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2707, -- [11]
+			"Player-3721-092AD2CE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542957287,
+			[52] = "|cff3fc6eaSensualia-Nagrand|r",
+			[51] = 1543251365,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [66]
 		{
-			"50...", -- [1]
-			"Avonacò-Staghelm", -- [2]
+			"I don't think so.... ", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Avonacò-Staghelm", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			799, -- [11]
-			"Player-160-05EA29F8", -- [12]
+			2709, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aAvonacò-Staghelm|r",
-			[51] = 1542957298,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251371,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [67]
 		{
-			"20s", -- [1]
-			"Russalka-Onyxia", -- [2]
+			"i cant rez as my body is just below", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Russalka-Onyxia", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			800, -- [11]
-			"Player-91-0996BCCA", -- [12]
+			2712, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffRussalka-Onyxia|r",
-			[51] = 1542957312,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543251377,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [68]
 		{
-			"THREE", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"that 2m rez timer :\\", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			801, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2714, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542957314,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251384,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [69]
 		{
-			"ONE", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"tank can take one breath before it needs to be taunted off, second breath one shots...i think we can tank him on the ramp but need to taunt after 1 breath", -- [1]
+			"Rm-Ner'zhul", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Rm-Ner'zhul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			802, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2719, -- [11]
+			"Player-128-08479135", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542957320,
+			[52] = "|cffc41e3aRm-Ner'zhul|r",
+			[51] = 1543251394,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [70]
 		{
-			"HALLELUJAH", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"ty", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			812, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2722, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542957328,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543251397,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [71]
 		{
-			"OMG!!!", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"np", -- [1]
+			"Sigismunda-Icecrown", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Sigismunda-Icecrown", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			813, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2723, -- [11]
+			"Player-104-09E8F2D0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542957329,
+			[52] = "|cffff7c0aSigismunda-Icecrown|r",
+			[51] = 1543251406,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [72]
 		{
-			"we done it", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"*nod* tank swap after breath is necessary >.<", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			814, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2724, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542957330,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251408,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [73]
 		{
-			"gg", -- [1]
-			"Raneffi-WyrmrestAccord", -- [2]
+			"aww ty for rez <3", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Raneffi-WyrmrestAccord", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			815, -- [11]
-			"Player-1171-082EF983", -- [12]
+			2728, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Raneffi-WyrmrestAccord|r",
-			[51] = 1542957331,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251415,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [74]
 		{
-			"FUCKING CHRIST", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"<3", -- [1]
+			"Sigismunda-Icecrown", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Sigismunda-Icecrown", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			816, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2729, -- [11]
+			"Player-104-09E8F2D0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542957331,
+			[52] = "|cffff7c0aSigismunda-Icecrown|r",
+			[51] = 1543251421,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [75]
 		{
-			"omg lol", -- [1]
-			"Mothra-Alleria", -- [2]
+			"[♠Tone Loke ♠: PoD] ty", -- [1]
+			"Prnzsdarkngl-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mothra-Alleria", -- [5]
+			"Prnzsdarkngl-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			817, -- [11]
-			"Player-52-0032EC03", -- [12]
+			2730, -- [11]
+			"Player-3683-0B1E2A9A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mothra-Alleria|r",
-			[51] = 1542957332,
+			[52] = "|cff3fc6eaPrnzsdarkngl-Dalaran|r",
+			[51] = 1543251422,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [76]
 		{
-			"that was nuts", -- [1]
-			"Cwaercwalu-Thrall", -- [2]
+			"kick wm peeps pls", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cwaercwalu-Thrall", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			818, -- [11]
-			"Player-3678-07B70123", -- [12]
+			2746, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edCwaercwalu-Thrall|r",
-			[51] = 1542957332,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543251481,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [77]
 		{
-			"holy shit finally", -- [1]
-			"Michiko-Thrall", -- [2]
+			"and then a level 85 priest pulls and fucks everyone else over, gg.", -- [1]
+			"Rm-Ner'zhul", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Rm-Ner'zhul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			819, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2756, -- [11]
+			"Player-128-08479135", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957333,
+			[52] = "|cffc41e3aRm-Ner'zhul|r",
+			[51] = 1543251562,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [78]
 		{
-			"THANK FUCK", -- [1]
-			"Sundaé-Barthilas", -- [2]
+			"well we had a pull timer", -- [1]
+			"Bnkroll-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sundaé-Barthilas", -- [5]
+			"Bnkroll-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			820, -- [11]
-			"Player-3723-0A5F1289", -- [12]
+			2758, -- [11]
+			"Player-61-0BD37A38", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Sundaé-Barthilas|r",
-			[51] = 1542957333,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffffffffBnkroll-Zul'jin|r",
+			[51] = 1543251570,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [79]
 		{
-			"good job kids", -- [1]
-			"Sennthal-MoonGuard", -- [2]
+			"Not my fault yall just want to blame eachother", -- [1]
+			"Bnkroll-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sennthal-MoonGuard", -- [5]
+			"Bnkroll-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			821, -- [11]
-			"Player-3675-07D5BA79", -- [12]
+			2761, -- [11]
+			"Player-61-0BD37A38", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dSennthal-MoonGuard|r",
-			[51] = 1542957335,
+			[52] = "|cffffffffBnkroll-Zul'jin|r",
+			[51] = 1543251594,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [80]
 		{
-			"we dun did it", -- [1]
-			"Selesong-Frostwolf", -- [2]
+			"it is your fault a tank didn't pull though", -- [1]
+			"Swordperson-Agamaggan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Selesong-Frostwolf", -- [5]
+			"Swordperson-Agamaggan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			822, -- [11]
-			"Player-7-052857ED", -- [12]
+			2767, -- [11]
+			"Player-1129-030FB488", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSelesong-Frostwolf|r",
-			[51] = 1542957336,
+			[52] = "|cffc69b6dSwordperson-Agamaggan|r",
+			[51] = 1543251648,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [81]
 		{
-			"HELL YEAH!!!", -- [1]
-			"Avonacò-Staghelm", -- [2]
+			"WHY is a level 70 priest determining the pulls?", -- [1]
+			"Xandreliena-WyrmrestAccord", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Avonacò-Staghelm", -- [5]
+			"Xandreliena-WyrmrestAccord", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			823, -- [11]
-			"Player-160-05EA29F8", -- [12]
+			2778, -- [11]
+			"Player-1171-07C0F499", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aAvonacò-Staghelm|r",
-			[51] = 1542957338,
+			[52] = "|cffa330c9Xandreliena-WyrmrestAccord|r",
+			[51] = 1543251713,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [82]
 		{
-			"what'd yall get?", -- [1]
-			"Michiko-Thrall", -- [2]
+			"because arrogance", -- [1]
+			"Swordperson-Agamaggan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Swordperson-Agamaggan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			824, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2780, -- [11]
+			"Player-1129-030FB488", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957338,
+			[52] = "|cffc69b6dSwordperson-Agamaggan|r",
+			[51] = 1543251723,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [83]
 		{
-			"yay11", -- [1]
-			"Jikizzi-Proudmoore", -- [2]
+			"can we pls req for more peeps pls", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jikizzi-Proudmoore", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			825, -- [11]
-			"Player-5-09EFF034", -- [12]
+			2789, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Jikizzi-Proudmoore|r",
-			[51] = 1542957340,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543251811,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [84]
 		{
-			"portal going up", -- [1]
-			"Enchantess-Dath'Remar", -- [2]
+			"ally is here too, so should be better", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Enchantess-Dath'Remar", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			826, -- [11]
-			"Player-3726-08E0A57E", -- [12]
+			2791, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaEnchantess-Dath'Remar|r",
-			[51] = 1542957341,
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543251846,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [85]
 		{
-			"|cffa335ee|Hitem:150404::::::::120:70:512:3:1:5384:120:::|h[Ring of the Unliving]|h|r", -- [1]
-			"Selesong-Frostwolf", -- [2]
+			"40 seconds until rez :(", -- [1]
+			"Frockme-Mal'Ganis", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Selesong-Frostwolf", -- [5]
+			"Frockme-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			830, -- [11]
-			"Player-7-052857ED", -- [12]
+			2792, -- [11]
+			"Player-3684-09D1CB7D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaSelesong-Frostwolf|r",
-			[51] = 1542957345,
+			[52] = "|cffffffffFrockme-Mal'Ganis|r",
+			[51] = 1543251862,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [86]
 		{
-			"thanks for being troopers xD", -- [1]
-			"Mothra-Alleria", -- [2]
+			"why aren't people running back?", -- [1]
+			"Swordperson-Agamaggan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mothra-Alleria", -- [5]
+			"Swordperson-Agamaggan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			831, -- [11]
-			"Player-52-0032EC03", -- [12]
+			2793, -- [11]
+			"Player-1129-030FB488", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mothra-Alleria|r",
-			[51] = 1542957345,
+			[52] = "|cffc69b6dSwordperson-Agamaggan|r",
+			[51] = 1543251881,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [87]
 		{
-			"Warforged boots baby", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"its ok guys i glaive twice and die", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			832, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2795, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542957347,
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543251894,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [88]
 		{
-			"anyone got a repair mount :s", -- [1]
-			"Russalka-Onyxia", -- [2]
+			"we got it", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Russalka-Onyxia", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			833, -- [11]
-			"Player-91-0996BCCA", -- [12]
+			2798, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffRussalka-Onyxia|r",
-			[51] = 1542957351,
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543251899,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [89]
 		{
-			"HAHA |cffa335ee|Hitem:150408::::::::120:256:512:3:1:5384:120:::|h[Staff of Rampant Growth]|h|r", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"it's not hte run back, it's the rez timer >.<", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			834, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2799, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542957351,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251919,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [90]
 		{
-			"|cffa335ee|Hitem:150410::::::::120:66:512:3:4:5384:5385:1808:43:120:::|h[Acid Inscribed Greaves]|h|r", -- [1]
-			"Cruciö-Staghelm", -- [2]
+			"^", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Cruciö-Staghelm", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			835, -- [11]
-			"Player-160-0892EE4D", -- [12]
+			2802, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaCruciö-Staghelm|r",
-			[51] = 1542957353,
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543251925,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [91]
 		{
-			"some of us might spend a lil fortune xD", -- [1]
-			"Russalka-Onyxia", -- [2]
+			"no some people aren't running like elkz", -- [1]
+			"Swordperson-Agamaggan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Russalka-Onyxia", -- [5]
+			"Swordperson-Agamaggan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			837, -- [11]
-			"Player-91-0996BCCA", -- [12]
+			2803, -- [11]
+			"Player-1129-030FB488", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffRussalka-Onyxia|r",
-			[51] = 1542957357,
+			[52] = "|cffc69b6dSwordperson-Agamaggan|r",
+			[51] = 1543251935,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [92]
 		{
-			"ty for rez", -- [1]
-			"Sundaé-Barthilas", -- [2]
+			"just keep running back.  whoever came up with rez timers needs to get smacked", -- [1]
+			"Hermíone-Aggramar", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sundaé-Barthilas", -- [5]
+			"Hermíone-Aggramar", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			838, -- [11]
-			"Player-3723-0A5F1289", -- [12]
+			2804, -- [11]
+			"Player-106-05263013", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa330c9Sundaé-Barthilas|r",
-			[51] = 1542957358,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543251939,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [93]
 		{
-			"not the sword. : \\", -- [1]
-			"Zui-WyrmrestAccord", -- [2]
+			"yeah, the ones who aren't ghosting, I dunno", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Zui-WyrmrestAccord", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			840, -- [11]
-			"Player-1171-084C9FCE", -- [12]
+			2806, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dZui-WyrmrestAccord|r",
-			[51] = 1542957359,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543251970,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [94]
 		{
-			"thanks everyone", -- [1]
-			"Navixx-Madoran", -- [2]
+			"elks, requeue us", -- [1]
+			"Huntahtze-Arthas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Navixx-Madoran", -- [5]
+			"Huntahtze-Arthas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			842, -- [11]
-			"Player-1173-09A46D53", -- [12]
+			2807, -- [11]
+			"Player-69-0B5570D4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Navixx-Madoran|r",
-			[51] = 1542957364,
+			[52] = "|cffaad372Huntahtze-Arthas|r",
+			[51] = 1543251972,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [95]
 		{
-			"yw", -- [1]
-			"Velgatis-Tichondrius", -- [2]
+			"he is afk ", -- [1]
+			"Swordperson-Agamaggan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Velgatis-Tichondrius", -- [5]
+			"Swordperson-Agamaggan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			843, -- [11]
-			"Player-11-0B465F5C", -- [12]
+			2808, -- [11]
+			"Player-1129-030FB488", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffVelgatis-Tichondrius|r",
-			[51] = 1542957365,
+			[52] = "|cffc69b6dSwordperson-Agamaggan|r",
+			[51] = 1543251978,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [96]
 		{
-			"That would've been useful a minute ago", -- [1]
-			"Galvix-SilverHand", -- [2]
+			"It's not always possible to res.... so many mushrooms near my body", -- [1]
+			"Sensualia-Nagrand", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Galvix-SilverHand", -- [5]
+			"Sensualia-Nagrand", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			846, -- [11]
-			"Player-12-0614EF60", -- [12]
+			2809, -- [11]
+			"Player-3721-092AD2CE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffGalvix-SilverHand|r",
-			[51] = 1542957370,
+			[52] = "|cff3fc6eaSensualia-Nagrand|r",
+			[51] = 1543251993,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [97]
 		{
-			"thx for repair=)", -- [1]
-			"Russalka-Onyxia", -- [2]
+			"tyvm! ", -- [1]
+			"Malanore-Gilneas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Russalka-Onyxia", -- [5]
+			"Malanore-Gilneas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			850, -- [11]
-			"Player-91-0996BCCA", -- [12]
+			2811, -- [11]
+			"Player-67-0AAF500D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffRussalka-Onyxia|r",
-			[51] = 1542957379,
+			[52] = "|cffa330c9Malanore-Gilneas|r",
+			[51] = 1543252015,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [98]
 		{
-			"600gold repair lol", -- [1]
-			"Mothra-Alleria", -- [2]
+			"ty all", -- [1]
+			"Ryziel-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mothra-Alleria", -- [5]
+			"Ryziel-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			851, -- [11]
-			"Player-52-0032EC03", -- [12]
+			2813, -- [11]
+			"Player-3678-09665510", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mothra-Alleria|r",
-			[51] = 1542957379,
+			[52] = "|cffa330c9Ryziel-Thrall|r",
+			[51] = 1543252018,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [99]
 		{
-			"bwahhhh!", -- [1]
-			"Mothra-Alleria", -- [2]
+			"thx", -- [1]
+			"Uutt-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mothra-Alleria", -- [5]
+			"Uutt-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			858, -- [11]
-			"Player-52-0032EC03", -- [12]
+			2816, -- [11]
+			"Player-3676-06DB448B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffff468Mothra-Alleria|r",
-			[51] = 1542957391,
+			[52] = "|cff8787edUutt-Area52|r",
+			[51] = 1543252020,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [100]
 		{
-			"ty for the port btw", -- [1]
-			"Michiko-Thrall", -- [2]
+			"lol 2 pcs of loot", -- [1]
+			"Huntahtze-Arthas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Michiko-Thrall", -- [5]
+			"Huntahtze-Arthas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			859, -- [11]
-			"Player-3678-07B2399F", -- [12]
+			2817, -- [11]
+			"Player-69-0B5570D4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Michiko-Thrall|r",
-			[51] = 1542957391,
+			[52] = "|cffaad372Huntahtze-Arthas|r",
+			[51] = 1543252021,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [101]
 		{
-			"kinad hard to res in combat ass", -- [1]
-			"Velgatis-Tichondrius", -- [2]
+			"ty", -- [1]
+			"Jadzel-Proudmoore", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Velgatis-Tichondrius", -- [5]
+			"Jadzel-Proudmoore", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			866, -- [11]
-			"Player-11-0B465F5C", -- [12]
+			2818, -- [11]
+			"Player-5-07BCEBF1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffVelgatis-Tichondrius|r",
-			[51] = 1542957397,
+			[52] = "|cffffffffJadzel-Proudmoore|r",
+			[51] = 1543252021,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [102]
 		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3537, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1542994777,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3538, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1542994801,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			3539, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1542994822,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
-		{
-			"ress?", -- [1]
-			"Smòugh-Quel'Thalas", -- [2]
+			"ty", -- [1]
+			"Aldorai-Aman'Thul", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Smòugh-Quel'Thalas", -- [5]
+			"Aldorai-Aman'Thul", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1103, -- [11]
-			"Player-1428-09FFBD63", -- [12]
+			2819, -- [11]
+			"Player-3722-0A47223D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Smòugh-Quel'Thalas|r",
-			[51] = 1543042531,
+			[52] = "|cffa330c9Aldorai-Aman'Thul|r",
+			[51] = 1543252022,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [103]
+		{
+			"whooots .. whoever was still up you are loved", -- [1]
+			"Hermíone-Aggramar", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Hermíone-Aggramar", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2820, -- [11]
+			"Player-106-05263013", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffHermíone-Aggramar|r",
+			[51] = 1543252023,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [104]
+		{
+			"thank god", -- [1]
+			"Sensualia-Nagrand", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Sensualia-Nagrand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2821, -- [11]
+			"Player-3721-092AD2CE", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaSensualia-Nagrand|r",
+			[51] = 1543252024,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [105]
+		{
+			"ty", -- [1]
+			"Firedancer-Proudmoore", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Firedancer-Proudmoore", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			2822, -- [11]
+			"Player-5-06FCF0C8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3fc6eaFiredancer-Proudmoore|r",
+			[51] = 1543252029,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [106]
 		{
-			"ty", -- [1]
-			"Smòugh-Quel'Thalas", -- [2]
+			"[♠Tone Loke ♠: PoD] ty", -- [1]
+			"Prnzsdarkngl-Dalaran", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Smòugh-Quel'Thalas", -- [5]
+			"Prnzsdarkngl-Dalaran", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1115, -- [11]
-			"Player-1428-09FFBD63", -- [12]
+			2823, -- [11]
+			"Player-3683-0B1E2A9A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Smòugh-Quel'Thalas|r",
-			[51] = 1543042540,
+			[52] = "|cff3fc6eaPrnzsdarkngl-Dalaran|r",
+			[51] = 1543252032,
 			[50] = "CHAT_MSG_RAID",
 		}, -- [107]
 		{
-			"Gratz", -- [1]
-			"Ozzymandias-ArgentDawn", -- [2]
+			"org port here", -- [1]
+			"Sensualia-Nagrand", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Sensualia-Nagrand", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2006, -- [11]
-			"Player-75-03772F0D", -- [12]
+			2825, -- [11]
+			"Player-3721-092AD2CE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaOzzymandias|r",
-			[51] = 1543072566,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3fc6eaSensualia-Nagrand|r",
+			[51] = 1543252033,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [108]
 		{
-			"thnx", -- [1]
-			"Hycindril-ArgentDawn", -- [2]
+			"ty all", -- [1]
+			"Deathella-Saurfang", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Deathella-Saurfang", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2011, -- [11]
-			"Player-75-00DF5288", -- [12]
+			2826, -- [11]
+			"Player-3729-097A959C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edHycindril|r",
-			[51] = 1543072578,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc41e3aDeathella-Saurfang|r",
+			[51] = 1543252034,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [109]
 		{
-			"Gratz", -- [1]
-			"Ozzymandias-ArgentDawn", -- [2]
+			"thank you for rez", -- [1]
+			"Lillindsong-Kil'jaeden", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Lillindsong-Kil'jaeden", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2054, -- [11]
-			"Player-75-03772F0D", -- [12]
+			2831, -- [11]
+			"Player-9-0B43495D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3fc6eaOzzymandias|r",
-			[51] = 1543072918,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffaad372Lillindsong-Kil'jaeden|r",
+			[51] = 1543252036,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [110]
 		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
+			"i don't know about the rez timer, but whoever thought it was a good idea to just drop gold needs to get smacked", -- [1]
+			"Sither-Mal'Ganis", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt", -- [5]
+			"Sither-Mal'Ganis", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2642, -- [11]
-			"Player-75-058380E2", -- [12]
+			2841, -- [11]
+			"Player-3684-09FE3FEC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1543077460,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffff468Sither-Mal'Ganis|r",
+			[51] = 1543252052,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [111]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
@@ -2476,7 +2476,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2643, -- [11]
+			769, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2484,7 +2484,7 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1543077480,
+			[51] = 1543271829,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [112]
 		{
@@ -2498,7 +2498,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2646, -- [11]
+			770, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2506,56 +2506,56 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1543077502,
+			[51] = 1543271854,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [113]
 		{
-			"howdy folks =)", -- [1]
-			"Jharl-ArgentDawn", -- [2]
-			"", -- [3]
+			"Spirit Warrior's Gaze on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1473, -- [11]
-			"Player-75-009A7F30", -- [12]
+			771, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aJharl|r",
-			[51] = 1543099076,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543271882,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [114]
 		{
-			"hey aba", -- [1]
-			"Pylea-TheScryers", -- [2]
-			"", -- [3]
+			"Spirit Warrior's Gaze on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1482, -- [11]
-			"Player-75-08C527D2", -- [12]
+			772, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8787edPylea|r",
-			[51] = 1543099157,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543271907,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [115]
 		{
-			"=o", -- [1]
-			"Jharl-ArgentDawn", -- [2]
+			"GRATZ, A turtle made it to the water", -- [1]
+			"Daniela-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2564,20 +2564,20 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1483, -- [11]
-			"Player-75-009A7F30", -- [12]
+			966, -- [11]
+			"Player-75-0B46B98A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffff7c0aJharl|r",
-			[51] = 1543099169,
+			[52] = "|cffa330c9Daniela|r",
+			[51] = 1543272815,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [116]
 		{
-			"get the mount?", -- [1]
-			"Saleness-ArgentDawn", -- [2]
+			"Gratz", -- [1]
+			"Ozzymandias-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2586,236 +2586,236 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1833, -- [11]
-			"Player-75-046479F3", -- [12]
+			198, -- [11]
+			"Player-75-03772F0D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Saleness|r",
-			[51] = 1543100318,
+			[52] = "|cff3fc6eaOzzymandias|r",
+			[51] = 1543285451,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [117]
 		{
-			"gg all", -- [1]
-			"Tex-EmeraldDream", -- [2]
+			"ty", -- [1]
+			"Veryquiet-TheScryers", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Tex-EmeraldDream", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2982, -- [11]
-			"Player-162-05D1E030", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dTex-EmeraldDream|r",
-			[51] = 1543209449,
-			[50] = "CHAT_MSG_RAID",
-		}, -- [118]
-		{
-			"|cffffff00Revantusk Village is under attack!|r", -- [1]
-			"", -- [2]
-			"", -- [3]
-			"3. LocalDefense - The Hinterlands", -- [4]
 			"", -- [5]
 			"", -- [6]
-			22, -- [7]
-			3, -- [8]
-			"LocalDefense - The Hinterlands", -- [9]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
 			0, -- [10]
-			3027, -- [11]
-			false, -- [12]
+			202, -- [11]
+			"Player-75-0BCCB613", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			true, -- [17]
-			[52] = "",
-			[51] = 1543210073,
-			[50] = "CHAT_MSG_CHANNEL",
+			false, -- [17]
+			[52] = "|cffaad372Veryquiet|r",
+			[51] = 1543285468,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [118]
+		{
+			"Toxic Storm on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			721, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543288377,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [119]
 		{
-			"ion did this", -- [1]
-			"Tex-EmeraldDream", -- [2]
-			"", -- [3]
+			"Drillstorm on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Tex-EmeraldDream", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3033, -- [11]
-			"Player-162-05D1E030", -- [12]
+			937, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTex-EmeraldDream|r",
-			[51] = 1543210089,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543289234,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [120]
 		{
-			"gg all", -- [1]
-			"Tex-EmeraldDream", -- [2]
-			"", -- [3]
+			"Laser on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Tex-EmeraldDream", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3051, -- [11]
-			"Player-162-05D1E030", -- [12]
+			941, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dTex-EmeraldDream|r",
-			[51] = 1543210151,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543289251,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [121]
 		{
-			"once get an healer i go", -- [1]
-			"Pallymcbeav-Dath'Remar", -- [2]
-			"", -- [3]
+			"Laser on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Pallymcbeav-Dath'Remar", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3073, -- [11]
-			"Player-3726-08EE8C57", -- [12]
+			943, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
-			[51] = 1543210286,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543289261,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [122]
 		{
-			"wait", -- [1]
-			"Pallymcbeav-Dath'Remar", -- [2]
-			"", -- [3]
+			"Launch Sawblade on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Pallymcbeav-Dath'Remar", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3083, -- [11]
-			"Player-3726-08EE8C57", -- [12]
+			949, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
-			[51] = 1543210317,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543289307,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [123]
 		{
-			"was ally i think", -- [1]
-			"Failgunner-Duskwood", -- [2]
+			"Garrosh Hellscream", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Failgunner-Duskwood", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3086, -- [11]
-			"Player-64-0898E935", -- [12]
+			959, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc69b6dFailgunner-Duskwood|r",
-			[51] = 1543210325,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543289400,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [124]
 		{
-			"yeah ally guy did that", -- [1]
-			"Narmazulnn-Kil'jaeden", -- [2]
+			"Lok'tar Ogar!", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Narmazulnn-Kil'jaeden", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3088, -- [11]
-			"Player-9-0B4A3333", -- [12]
+			960, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffaad372Narmazulnn-Kil'jaeden|r",
-			[51] = 1543210334,
-			[50] = "CHAT_MSG_RAID",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543289406,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [125]
 		{
-			"let doosh die", -- [1]
-			"Pallymcbeav-Dath'Remar", -- [2]
-			"", -- [3]
+			"Desecrate on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Pallymcbeav-Dath'Remar", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3089, -- [11]
-			"Player-3726-08EE8C57", -- [12]
+			1072, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
-			[51] = 1543210335,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543290643,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [126]
 		{
-			"not wasting arsehole run back without healers", -- [1]
-			"Pallymcbeav-Dath'Remar", -- [2]
-			"", -- [3]
+			"Desecrate on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Pallymcbeav-Dath'Remar", -- [5]
+			"Shanyt", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			3097, -- [11]
-			"Player-3726-08EE8C57", -- [12]
+			1078, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff48cbaPallymcbeav-Dath'Remar|r",
-			[51] = 1543210364,
-			[50] = "CHAT_MSG_RAID_LEADER",
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1543290735,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [127]
 	},
 }
