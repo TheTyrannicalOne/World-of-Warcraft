@@ -39,43 +39,8 @@ AzeritePowerWeightsDB = {
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
 				["showOnlyUpgrades"] = false,
-				["professionPowers"] = false,
 				["debug"] = false,
-			},
-		},
-		["Argent Dawn"] = {
-			["Shanyt"] = {
-				["specScales"] = {
-					[73] = {
-						["scaleName"] = "Defensive",
-						["scaleID"] = "D/1/3/Defensive",
-					},
-					[71] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/1/1/Default",
-					},
-					[72] = {
-						["scaleName"] = "Default",
-						["scaleID"] = "D/1/2/Default",
-					},
-				},
-				["addPrimaryStatToScore"] = false,
-				["showTooltipLegend"] = true,
-				["zonePowers"] = true,
-				["pvpPowers"] = false,
-				["addILvlToScore"] = false,
-				["relativeScore"] = false,
-				["rolePowersNoOffRolePowers"] = false,
-				["importingCanUpdate"] = true,
-				["tooltipScales"] = {
-				},
-				["rolePowers"] = true,
-				["defensivePowers"] = true,
-				["scaleByAzeriteEmpowered"] = false,
-				["onlyOwnClassDefaults"] = true,
-				["showOnlyUpgrades"] = false,
 				["professionPowers"] = false,
-				["debug"] = false,
 			},
 		},
 		["Zul'jin"] = {
@@ -109,8 +74,8 @@ AzeritePowerWeightsDB = {
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
 				["showOnlyUpgrades"] = false,
-				["debug"] = false,
 				["professionPowers"] = false,
+				["debug"] = false,
 			},
 			["Tyrann"] = {
 				["specScales"] = {
@@ -125,6 +90,41 @@ AzeritePowerWeightsDB = {
 					[256] = {
 						["scaleName"] = "Default",
 						["scaleID"] = "D/5/1/Default",
+					},
+				},
+				["addPrimaryStatToScore"] = false,
+				["showTooltipLegend"] = true,
+				["zonePowers"] = true,
+				["pvpPowers"] = false,
+				["addILvlToScore"] = false,
+				["relativeScore"] = false,
+				["rolePowersNoOffRolePowers"] = false,
+				["importingCanUpdate"] = true,
+				["tooltipScales"] = {
+				},
+				["rolePowers"] = true,
+				["defensivePowers"] = true,
+				["scaleByAzeriteEmpowered"] = false,
+				["onlyOwnClassDefaults"] = true,
+				["showOnlyUpgrades"] = false,
+				["professionPowers"] = false,
+				["debug"] = false,
+			},
+		},
+		["Argent Dawn"] = {
+			["Shanyt"] = {
+				["specScales"] = {
+					[73] = {
+						["scaleName"] = "Defensive",
+						["scaleID"] = "D/1/3/Defensive",
+					},
+					[71] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/1/1/Default",
+					},
+					[72] = {
+						["scaleName"] = "Default",
+						["scaleID"] = "D/1/2/Default",
 					},
 				},
 				["addPrimaryStatToScore"] = false,

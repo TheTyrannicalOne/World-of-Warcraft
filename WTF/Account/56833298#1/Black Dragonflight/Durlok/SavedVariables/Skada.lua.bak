@@ -1,5 +1,7 @@
 
 SkadaPerCharDB = {
+	["sets"] = {
+	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["auras"] = {
@@ -9,116 +11,252 @@ SkadaPerCharDB = {
 		["interrupts"] = 0,
 		["ffdamagedone"] = 0,
 		["alertDamage"] = 0,
-		["damagetaken"] = 0,
+		["mobs"] = {
+			["Corrupted Houndmaster"] = {
+				["players"] = {
+					["Durlok"] = {
+						["taken"] = 154550,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 154550,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Corrupted Flamecaller"] = {
+				["players"] = {
+					["Durlok"] = {
+						["taken"] = 968646,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 968646,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Dark Shaman Acolyte"] = {
+				["players"] = {
+					["Durlok"] = {
+						["taken"] = 784642,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 784642,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Adolescent Flame Hound"] = {
+				["players"] = {
+					["Durlok"] = {
+						["taken"] = 1032454,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1032454,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Mature Flame Hound"] = {
+				["players"] = {
+					["Durlok"] = {
+						["taken"] = 1097055,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1097055,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Corrupted Reaver"] = {
+				["players"] = {
+					["Durlok"] = {
+						["taken"] = 1593639,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1593639,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Dark Shaman Koranthal"] = {
+				["players"] = {
+					["Durlok"] = {
+						["taken"] = 156348,
+						["done"] = 0,
+						["class"] = "DRUID",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 156348,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+		},
 		["damage"] = 5787334,
 		["players"] = {
 			{
+				["ccbreaks"] = 0,
+				["dispells"] = 0,
+				["maxhp"] = 84249,
 				["leech"] = 0,
+				["deathlog"] = {
+				},
 				["class"] = "DRUID",
 				["damaged"] = {
 				},
 				["auras"] = {
 					["Champion of Azeroth"] = {
-						["school"] = 1,
+						["uptime"] = 0,
 						["name"] = "Champion of Azeroth",
-						["active"] = 1,
-						["id"] = 280713,
-						["started"] = 1543242182,
-						["auratype"] = "BUFF",
-						["uptime"] = 0,
-					},
-					["Gore"] = {
+						["active"] = 0,
 						["school"] = 1,
-						["name"] = "Gore",
-						["active"] = 2,
-						["id"] = 93622,
-						["started"] = 1543242100,
 						["auratype"] = "BUFF",
-						["uptime"] = 0,
+						["id"] = 280713,
 					},
 					["Survival Instincts"] = {
-						["school"] = 1,
 						["name"] = "Survival Instincts",
 						["active"] = 0,
-						["id"] = 61336,
-						["auratype"] = "BUFF",
-						["uptime"] = 6,
-					},
-					["Thrash"] = {
 						["school"] = 1,
-						["name"] = "Thrash",
-						["active"] = 0,
-						["id"] = 192090,
-						["auratype"] = "DEBUFF",
+						["uptime"] = 6,
+						["auratype"] = "BUFF",
+						["id"] = 61336,
+					},
+					["Gore"] = {
 						["uptime"] = 0,
+						["name"] = "Gore",
+						["active"] = 0,
+						["school"] = 1,
+						["auratype"] = "BUFF",
+						["id"] = 93622,
 					},
 					["Adapt"] = {
-						["started"] = 1543242267,
-						["school"] = 1,
-						["name"] = "Adapt",
-						["active"] = 1,
-						["id"] = 274073,
-						["auratype"] = "BUFF",
 						["uptime"] = 10,
+						["name"] = "Adapt",
+						["school"] = 1,
+						["auratype"] = "BUFF",
+						["id"] = 274073,
+						["active"] = 0,
+					},
+					["Thrash"] = {
+						["name"] = "Thrash",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 0,
+						["auratype"] = "DEBUFF",
+						["id"] = 192090,
 					},
 					["Resounding Protection"] = {
-						["school"] = 1,
-						["name"] = "Resounding Protection",
-						["active"] = 1,
-						["id"] = 269279,
-						["started"] = 1543242111,
-						["auratype"] = "BUFF",
 						["uptime"] = 0,
+						["name"] = "Resounding Protection",
+						["active"] = 0,
+						["school"] = 1,
+						["auratype"] = "BUFF",
+						["id"] = 269279,
 					},
 				},
+				["ffdamagedone"] = 0,
 				["role"] = "NONE",
+				["time"] = 5,
 				["interrupts"] = 0,
+				["ffdamagedonetargets"] = {
+				},
+				["alertDamage"] = 0,
+				["overhealing"] = 21051.6015625,
+				["damage"] = 5787334,
 				["damagespells"] = {
 					["Thrash"] = {
 						["hitmin"] = 154539,
 						["criticalamount"] = 1239973,
 						["id"] = 77758,
-						["hitmax"] = 158229,
-						["hitamount"] = 3130325,
-						["criticalmin"] = 309089,
+						["damage"] = 4370298,
+						["totalhits"] = 24,
+						["max"] = 312706,
 						["min"] = 154539,
 						["criticalmax"] = 312706,
-						["critical"] = 4,
+						["hitmax"] = 158229,
 						["hit"] = 20,
 						["school"] = 1,
-						["max"] = 312706,
-						["totalhits"] = 24,
-						["damage"] = 4370298,
-					},
-					["Swipe"] = {
-						["hitmin"] = 129863,
-						["id"] = 213771,
-						["min"] = 129863,
-						["hitamount"] = 391898,
-						["hitmax"] = 132172,
-						["hit"] = 3,
-						["school"] = 1,
-						["max"] = 132172,
-						["totalhits"] = 3,
-						["damage"] = 391898,
+						["critical"] = 4,
+						["criticalmin"] = 309089,
+						["hitamount"] = 3130325,
 					},
 					["Attack"] = {
 						["hitmin"] = 169799,
 						["criticalamount"] = 678057,
 						["id"] = 6603,
-						["criticalmin"] = 337612,
-						["hitamount"] = 347081,
-						["critical"] = 2,
+						["damage"] = 1025138,
+						["totalhits"] = 4,
+						["max"] = 340445,
 						["min"] = 169799,
 						["criticalmax"] = 340445,
-						["hitmax"] = 177282,
+						["critical"] = 2,
 						["hit"] = 2,
 						["school"] = 1,
-						["max"] = 340445,
-						["totalhits"] = 4,
-						["damage"] = 1025138,
+						["hitmax"] = 177282,
+						["criticalmin"] = 337612,
+						["hitamount"] = 347081,
+					},
+					["Swipe"] = {
+						["hitmin"] = 129863,
+						["id"] = 213771,
+						["min"] = 129863,
+						["damage"] = 391898,
+						["hitmax"] = 132172,
+						["hit"] = 3,
+						["school"] = 1,
+						["totalhits"] = 3,
+						["max"] = 132172,
+						["hitamount"] = 391898,
 					},
 				},
+				["shielding"] = 0,
 				["healed"] = {
 					["Player-74-0BD37336"] = {
 						["role"] = "NONE",
@@ -128,11 +266,24 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["name"] = "Durlok",
-				["leechTaken"] = 0,
-				["ffdamagedonespells"] = {
+				["power"] = {
+					{
+						["spells"] = {
+							[77758] = 45,
+						},
+						["amount"] = 45,
+					}, -- [1]
 				},
-				["dispells"] = 0,
+				["id"] = "Player-74-0BD37336",
+				["healing"] = 0,
+				["damagetaken"] = 0,
+				["damagetakenspells"] = {
+				},
+				["healingabsorbed"] = 0,
+				["leeched"] = {
+				},
+				["name"] = "Durlok",
+				["alertCount"] = 0,
 				["healingspells"] = {
 					["Resounding Protection"] = {
 						["shielding"] = 0,
@@ -140,191 +291,36 @@ SkadaPerCharDB = {
 						["healing"] = 0,
 						["min"] = 0,
 						["name"] = "Resounding Protection",
+						["hits"] = 2,
+						["overhealing"] = 21051.6015625,
 						["max"] = 0,
 						["critical"] = 0,
 						["absorbed"] = 0,
-						["overhealing"] = 21051.6015625,
-						["hits"] = 2,
 					},
 				},
-				["time"] = 5,
-				["power"] = {
-					{
-						["amount"] = 45,
-						["spells"] = {
-							[77758] = 45,
-						},
-					}, -- [1]
-				},
-				["damage"] = 5787334,
-				["ffdamagedone"] = 0,
-				["alertDamage"] = 0,
-				["healingabsorbed"] = 0,
-				["shielding"] = 0,
-				["id"] = "Player-74-0BD37336",
-				["damagetaken"] = 0,
-				["deathlog"] = {
-				},
-				["damagetakenspells"] = {
-				},
-				["overhealing"] = 21051.6015625,
-				["leeched"] = {
-				},
-				["ffdamagedonetargets"] = {
-				},
-				["alertCount"] = 0,
-				["healing"] = 0,
-				["maxhp"] = 84249,
+				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ccbreaks"] = 0,
+				["ffdamagedonespells"] = {
+				},
 			}, -- [1]
 		},
 		["deaths"] = 0,
-		["mobs"] = {
-			["Corrupted Houndmaster"] = {
-				["players"] = {
-					["Durlok"] = {
-						["taken"] = 154550,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "DRUID",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 154550,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Corrupted Flamecaller"] = {
-				["players"] = {
-					["Durlok"] = {
-						["taken"] = 968646,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "DRUID",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 968646,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Dark Shaman Acolyte"] = {
-				["players"] = {
-					["Durlok"] = {
-						["taken"] = 784642,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "DRUID",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 784642,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Adolescent Flame Hound"] = {
-				["players"] = {
-					["Durlok"] = {
-						["taken"] = 1032454,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "DRUID",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 1032454,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Dark Shaman Koranthal"] = {
-				["players"] = {
-					["Durlok"] = {
-						["taken"] = 156348,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "DRUID",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 156348,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Corrupted Reaver"] = {
-				["players"] = {
-					["Durlok"] = {
-						["taken"] = 1593639,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "DRUID",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 1593639,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Mature Flame Hound"] = {
-				["players"] = {
-					["Durlok"] = {
-						["taken"] = 1097055,
-						["done"] = 0,
-						["role"] = "NONE",
-						["class"] = "DRUID",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 1097055,
-				["done"] = 0,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-		},
+		["damagetaken"] = 0,
 		["mobtaken"] = 5787334,
-		["power"] = {
-			45, -- [1]
-		},
+		["shielding"] = 0,
 		["healing"] = 0,
 		["leech"] = 0,
 		["dispells"] = 0,
-		["overhealing"] = 21051.6015625,
 		["starttime"] = 1543242058,
+		["overhealing"] = 21051.6015625,
 		["name"] = "Total",
 		["alertCount"] = 0,
-		["shielding"] = 0,
+		["power"] = {
+			45, -- [1]
+		},
 		["mobhdone"] = 0,
 		["last_action"] = 1543242058,
 		["mobdone"] = 0,
-	},
-	["sets"] = {
 	},
 }
