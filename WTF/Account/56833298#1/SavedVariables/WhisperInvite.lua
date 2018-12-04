@@ -52,36 +52,6 @@ WhisperInviteCoreDB = {
 			["profiles"] = {
 				["ZerkinUI"] = {
 					["keywords"] = {
-						["autoinvite0"] = {
-							["keyword"] = "autoinvite",
-							["name"] = "autoinvite",
-						},
-						["inv0"] = {
-							["channels"] = {
-								["CHAT_MSG_WHISPER"] = true,
-							},
-							["fullMatch"] = false,
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_WHISPER"] = true,
-								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
-							},
-							["keyword"] = "inv",
-							["maxGroupSize"] = 25,
-							["showInviteBlockMessage"] = true,
-							["listType"] = 2,
-							["name"] = "inv",
-							["customBlockMessage"] = "Erorr filtering \"inv\" - Zerkin",
-						},
-						["auto invite0"] = {
-							["keyword"] = "auto invite",
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_WHISPER"] = true,
-							},
-							["name"] = "auto invite",
-							["channels"] = {
-								["CHAT_MSG_WHISPER"] = true,
-							},
-						},
 						["invite0"] = {
 							["showInviteBlockMessage"] = true,
 							["name"] = "invite",
@@ -98,6 +68,36 @@ WhisperInviteCoreDB = {
 							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
 							["keyword"] = "invite",
 							["maxGroupSize"] = 20,
+						},
+						["autoinvite0"] = {
+							["keyword"] = "autoinvite",
+							["name"] = "autoinvite",
+						},
+						["auto invite0"] = {
+							["keyword"] = "auto invite",
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["name"] = "auto invite",
+							["channels"] = {
+								["CHAT_MSG_WHISPER"] = true,
+							},
+						},
+						["inv0"] = {
+							["channels"] = {
+								["CHAT_MSG_WHISPER"] = true,
+							},
+							["fullMatch"] = false,
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_WHISPER"] = true,
+								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
+							},
+							["keyword"] = "inv",
+							["maxGroupSize"] = 25,
+							["showInviteBlockMessage"] = true,
+							["listType"] = 2,
+							["name"] = "inv",
+							["customBlockMessage"] = "Erorr filtering \"inv\" - Zerkin",
 						},
 					},
 				},
