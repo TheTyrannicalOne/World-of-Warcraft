@@ -1,0 +1,212 @@
+
+WoWDBProfilerData = {
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+	},
+	["region"] = "US",
+	["version"] = 19,
+	["build_num"] = 28724,
+	["global"] = {
+		["items"] = {
+			[159865] = {
+				["durability"] = 50,
+			},
+			[161179] = {
+				["durability"] = 40,
+			},
+			[87216] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[153290] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["durability"] = 90,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[163865] = {
+				["durability"] = 85,
+			},
+			[5956] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["durability"] = 16,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[134270] = {
+				["instance_difficulty_id"] = 27,
+				["upgrade_value"] = 0,
+				["durability"] = 100,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[140192] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[84661] = {
+				["durability"] = 50,
+			},
+			[153138] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[160212] = {
+				["durability"] = 50,
+			},
+			[17905] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[2901] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["durability"] = 20,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[129276] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[141605] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[110560] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[159988] = {
+				["durability"] = 80,
+			},
+			[141652] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[136350] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 0,
+				["durability"] = 16,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[150390] = {
+				["durability"] = 120,
+			},
+			[155385] = {
+				["durability"] = 140,
+			},
+			[160918] = {
+				["durability"] = 85,
+			},
+			[114325] = {
+				["instance_difficulty_id"] = 31,
+				["upgrade_value"] = 0,
+				["durability"] = 50,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[44935] = {
+				["instance_difficulty_id"] = 14,
+				["upgrade_value"] = 0,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[150421] = {
+				["instance_difficulty_id"] = 3,
+				["upgrade_value"] = 120,
+				["durability"] = 120,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+		},
+		["npcs"] = {
+			["88779"] = {
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["spells"] = {
+							[97097] = 1,
+						},
+						["stats"] = {
+						},
+					},
+				},
+			},
+		},
+		["objects"] = {
+			["242448"] = {
+				["NONE:0:false"] = {
+					["locations"] = {
+						["Frostwall:590"] = {
+							["6:534:334"] = true,
+						},
+					},
+				},
+			},
+		},
+		["quests"] = {
+			[50641] = {
+				["can_share"] = true,
+			},
+			[49032] = {
+			},
+			[51421] = {
+				["can_share"] = true,
+			},
+			[43179] = {
+			},
+			[47118] = {
+			},
+			[51772] = {
+				["can_share"] = true,
+			},
+			[24756] = {
+				["can_share"] = true,
+			},
+			[49327] = {
+				["can_share"] = true,
+			},
+			[39501] = {
+			},
+			[43530] = {
+			},
+			[49133] = {
+			},
+			[48840] = {
+				["can_share"] = true,
+			},
+			[49334] = {
+				["can_share"] = true,
+			},
+			[49015] = {
+				["can_share"] = true,
+			},
+			[51165] = {
+				["can_share"] = true,
+			},
+			[44284] = {
+			},
+			[48288] = {
+			},
+		},
+	},
+}

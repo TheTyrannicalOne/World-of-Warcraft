@@ -1,4 +1,0 @@
-﻿<Ui xmlns="http://www.blizzard.com/wow/ui/">
-	<script file="DatatextColors.lua"/>
-	<script file="options_DatatextColors.lua"/>
-</Ui>

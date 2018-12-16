@@ -1,9 +1,0 @@
-_NPCScan.Overlay: disabled
-Collectinator: disabled
-MBB: disabled
-Parrot: disabled
-Paste: disabled
-HandyNotes_Argus: enabled
-HandyNotes_Achievements: disabled
-ImpliedTarget_ElvUI: enabled
-ElvUI_LocLite: disabled

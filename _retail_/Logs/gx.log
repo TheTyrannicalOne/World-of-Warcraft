@@ -1,0 +1,39 @@
+12/13 23:55:19.930  LogOpen
+12/13 23:55:19.930  ConsoleDetectDetectHardware():
+12/13 23:55:19.930  	cpuIdx: 1
+12/13 23:55:19.982  ConsoleDeviceInitialize(): hwDetect = 0, hwChanged = 0
+12/13 23:55:20.033  D3d12 Device Create
+12/13 23:55:20.033  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
+12/13 23:55:20.218  Found First Candidate Adapter 0: Vendor Id 0x10de, Device Id 0x17c8 FL_12_0: true
+12/13 23:55:20.218  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c
+12/13 23:55:20.341  Detected NvAPI and checking if it's valid...
+12/13 23:55:20.341  Caps:
+12/13 23:55:20.341  	Vendor ID: 10de
+12/13 23:55:20.341  	Device ID: 17c8
+12/13 23:55:20.347  	AFR Groups: 1/1
+12/13 23:55:20.347  Feature Level: DX=6, GL=0, MTL=0
+12/13 23:55:20.369  NotifyOnDeviceCreate
+12/13 23:55:20.369  D3d12 Device Create Successful
+12/13 23:55:20.387  CPU Processor Detection: 12 H/W threads
+12/13 23:55:20.387  Memory Detection: 34296545280 bytes of physical memory available
+12/13 23:55:20.387  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+12/13 23:55:20.507  RenderSettings::NotifyChanged
+12/13 23:55:20.993  Nvidia driver version: r417_18 (41735)
+12/13 23:55:20.993  <IsGPUDriverOutOfDate> No
+12/13 23:55:28.602  Nvidia driver version: r417_18 (41735)
+12/13 23:55:28.602  <IsGPUDriverOutOfDate> No
+12/13 23:55:28.602  Nvidia driver version: r417_18 (41735)
+12/13 23:55:28.602  <IsGPUDriverOutOfDate> No
+12/14 00:06:08.875  Nvidia driver version: r417_18 (41735)
+12/14 00:06:08.875  <IsGPUDriverOutOfDate> No
+12/14 00:06:20.882  Nvidia driver version: r417_18 (41735)
+12/14 00:06:20.882  <IsGPUDriverOutOfDate> No
+12/14 00:10:47.334  Nvidia driver version: r417_18 (41735)
+12/14 00:10:47.334  <IsGPUDriverOutOfDate> No
+12/14 00:11:12.712  Nvidia driver version: r417_18 (41735)
+12/14 00:11:12.712  <IsGPUDriverOutOfDate> No
+12/14 00:52:01.622  Error DeviceRemoved: 0x887A0005.
+12/14 00:52:01.622  Device Removed Reason: 0x887A0006.
+12/14 00:52:01.635  GxRestart
+12/14 00:52:01.734  D3d12 Device Destroy
+12/14 00:52:01.734  NotifyOnDeviceDestroy
