@@ -305,6 +305,7 @@ AAP.CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 		if (not AAP1[AAP.Realm][AAP.Name]["BonusSkips"]) then
 			AAP1[AAP.Realm][AAP.Name]["BonusSkips"] = {}
 		end
+		AAP.ZoneQuestOrderList()
 		AAP_LoadInTimer = AAP.CoreEventFrame:CreateAnimationGroup()
 		AAP_LoadInTimer.anim = AAP_LoadInTimer:CreateAnimation()
 		AAP_LoadInTimer.anim:SetDuration(1)

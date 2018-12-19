@@ -256,7 +256,7 @@ local function AAP_CheckZoneSteps()
 			end
 			AAP1[AAP.Realm][AAP.Name]["CountedZoneSteps"][AAP.ActiveMap] = count
 		end
-		if (AAP1[AAP.Realm][AAP.Name]["CountedZoneSteps"][AAP.ActiveMap] > 1) then
+		if (AAP1[AAP.Realm][AAP.Name]["CountedZoneSteps"][AAP.ActiveMap] > 1 and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQList"] == 1) then
 			AAP.QuestList.QuestFrames["MyProgressFS"]:SetText(AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap].."/"..AAP1[AAP.Realm][AAP.Name]["CountedZoneSteps"][AAP.ActiveMap])
 			local aapwidth = AAP.QuestList.QuestFrames["MyProgressFS"]:GetStringWidth()
 			AAP.QuestList.QuestFrames["MyProgress"]:SetWidth(aapwidth+10)
@@ -762,127 +762,96 @@ local function AAP_PrintQStep()
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText(AAP_Locals["Dontglide"])
 			end
 			if (AAPExtralk == 37) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use Orb on a Canyon Ettin, then save Oslow")
 			end
 			if (AAPExtralk == 38) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Get Key in cave")
 			end
 			if (AAPExtralk == 39) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Talk to FlightMaster")
 			end
 			if (AAPExtralk == 40) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Talk to War-Mage Erallier to teleport")
 			end
 			if (AAPExtralk == 41) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Leveling Starts in Redridge Mountains")
 			end
 			if (AAPExtralk == 42) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("NPC is ontop of the tower")
 			end
 			if (AAPExtralk == 43) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("*** Open the Cannary's Cache Bag to continue!")
 			end
 			if (AAPExtralk == 44) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("*** disguise yourself as a plant close by the merlocs")
 			end
 			if (AAPExtralk == 45) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("*** Use Pheromones Close by Mosshide Representative")
 			end
 			if (AAPExtralk == 46) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Command Board")
 			end
 			if (AAPExtralk == 47) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal To Undercity on top of the tower")
 			end
 			if (AAPExtralk == 48) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Don't skip video")
 			end
 			if (AAPExtralk == 49) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Dalaran Crater Portal")
 			end
 			if (AAPExtralk == 50) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal Back")
 			end
 			if (AAPExtralk == 51) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal")
 			end
 			if (AAPExtralk == 52) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Zepelin to Stranglethorn Vale")
 			end
 			if (AAPExtralk == 53) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Learn Journeyman Riding and then type /aap skip or click skip waypoint")
 			end
 			if (AAPExtralk == 54) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Loot: Pamela's Doll's Head, Left and Right Side and combine them.")
 			end
 			if (AAPExtralk == 55) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use Disguise.")
 			end
 			if (AAPExtralk == 56) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Place Lightwells around the corpsebeasts")
 			end
 			if (AAPExtralk == 57) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Take Portal to Stranglethorn Vale")
 			end
 			if (AAPExtralk == 58) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Get Cozzle's Key")
 			end
 			if (AAPExtralk == 59) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal to Orgrimmar")
 			end
 			if (AAPExtralk == 60) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Train Flying")
 			end
 			if (AAPExtralk == 61) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Go to Borean Tundra on Zepelin")
 			end
 			if (AAPExtralk == 62) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Handin is on roof")
 			end
 			if (AAPExtralk == 63) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Beryl Hounds drops Cores to release Kaskala")
 			end
 			if (AAPExtralk == 64) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Beryl Reclaimers drop bombs")
 			end
 			if (AAPExtralk == 65) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Beryl Mage Hunters drops the key for the Arcane Prison")
 			end
 			if (AAPExtralk == 66) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Hand in far up, on a flying rock")
 			end
 			if (AAPExtralk == 67) then
-				LineNr = LineNr + 1
 				local CL_Items, itemLink, clt3, clt4, clt5, clt6, clt7, clt8, clt9, CL_ItemTex = GetItemInfo(35586)
 				if (itemLink and GetItemCount(itemLink)) then
 					AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Kill Coldarra Wyrmkin and loot 5 Frozen Axes (".. GetItemCount(itemLink) .."/5)")
@@ -896,95 +865,72 @@ local function AAP_PrintQStep()
 				end
 			end
 			if (AAPExtralk == 68) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use item on a dead Mechagnome to capture")
 			end
 			if (AAPExtralk == 69) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("*** Click Valve")
 			end
 			if (AAPExtralk == 70) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Loot Dead Mage Hunters for the plans")
 			end
 			if (AAPExtralk == 71) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use Unholy gem on Duke Vallenhal below 35%hp")
 			end
 			if (AAPExtralk == 72) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Talk to Rokhan to make Sarathstra land")
 			end
 			if (AAPExtralk == 73) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Woodlands Walkers drop bark for Lothalor Ancients")
 			end
 			if (AAPExtralk == 74) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Lieutenant Ta'zinni drops Ley Line Focus")
 			end
 			if (AAPExtralk == 75) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Talk to Budd")
 			end
 			if (AAPExtralk == 76) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use Budds stun on a troll and then cage it")
 			end
 			if (AAPExtralk == 77) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use Dull Carving Knife (by the tree stump), then talk to him")
 			end
 			if (AAPExtralk == 78) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Buy a Crystal Vial from Ameenah")
 			end
 			if (AAPExtralk == 79) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Loot a mummy")
 			end
 			if (AAPExtralk == 80) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Kill Trolls for 5 Frozen Mojo")
 			end
 			if (AAPExtralk == 81) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Kill Warlord Zim 'bo for his Mojo")
 			end
 			if (AAPExtralk == 82) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Kill Trolls for 5 Desperate Mojo")
 			end
 			if (AAPExtralk == 83) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Drakuru mobs drop Lock Openers")
 			end
 			if (AAPExtralk == 84) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal to Hellfire Peninsula")
 			end
 			if (AAPExtralk == 85) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal to Hyjal")
 			end
 			if (AAPExtralk == 86) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Loot Juniper Berries and use them on Faerie Dragons")
 			end
 			if (AAPExtralk == 87) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Kill Explosive Hatreds to disable shield")
 			end
 			if (AAPExtralk == 88) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use boat to go to Northrend")
 			end
 			if (AAPExtralk == 89) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Loot bombs")
 			end
 			if (AAPExtralk == 90) then
-				LineNr = LineNr + 1
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Dismiss pets and pick up a miner (don't mount), and run and deliver miner")
 			end
 			AAP.QuestList.QuestFrames["FS"..LineNr]["Button"]:Hide()
@@ -1519,6 +1465,9 @@ local function AAP_PrintQStep()
 		end
 		AAP.QuestListShown = LineNr
 		AAP.BookingList["SetQPTT"] = 1
+		if (AAP.ZoneQuestOrder:IsShown() == true) then
+			AAP.UpdateZoneQuestOrderList("LoadIn")
+		end
 	end
 end
 function AAP.SetButton()
@@ -1855,10 +1804,16 @@ end
 local function AAP_UpdateQuest()
 	local i = 1
 	local UpdateQpart = 0
+	if (not AAPQuestNames) then
+		AAPQuestNames = {}
+	end
 	while GetQuestLogTitle(i) do
 		local questTitle, level, suggestedGroup, isHeader, isCollapsed, isComplete, frequency, questID = GetQuestLogTitle(i)
 		if (questID > 0) then
 			if (not isHeader) then
+				if (AAPQuestNames[questID] and AAPQuestNames[questID] == 1) then
+					AAPQuestNames[questID] = questTitle
+				end
 				local numObjectives = GetNumQuestLeaderBoards(SelectQuestLogEntry(i))
 				if (not AAP.ActiveQuests[questID]) then
 					if (AAP1["Debug"]) then
@@ -2073,6 +2028,9 @@ local function AAP_AddQuest(questID)
 	if (StepP == "PickUp") then
 		local NrLeft = 0
 		for AAP_index,AAP_value in pairs(IdList) do
+			if (not AAPQuestNames[AAP_value]) then
+				AAPQuestNames[AAP_value] = 1
+			end
 			if (not AAP.ActiveQuests[AAP_value]) then
 				NrLeft = NrLeft + 1
 			end
@@ -3090,11 +3048,14 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 	if (event=="TAXIMAP_OPENED") then
 	
 	--local CLi
+	--AAP3 = nil
+	--AAP3 = {}
 	--for CLi = 1, NumTaxiNodes() do
 	--	local aapx,aapy = TaxiNodePosition(CLi)
 	--	aapx = (floor(aapx * 1000)/10)
 	--	aapy = (floor(aapy * 1000)/10)
 	--	if (TaxiNodeGetType(CLi) == "REACHABLE") then
+	--	AAP3["A"..CLi] = TaxiNodeName(CLi).."-X:"..aapx.."-Y:"..aapy
 	--		print(CLi .. "-" .. TaxiNodeName(CLi).."-X:"..aapx.."-Y:"..aapy.." Status: "..TaxiNodeGetType(CLi))
 	--	end
 	--end

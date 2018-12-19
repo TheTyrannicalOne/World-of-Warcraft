@@ -126,7 +126,7 @@ do -- enUS / enGB
 	L.Slash_Error_Unkown = "ERROR: Something went wrong!"
 end
 
-if LOCALE == "deDE" then -- Sinusquell (39), Tiggi2702 (6), Vivan (2), pas06 (2), Cytoph (2), imna1975 (7)
+if LOCALE == "deDE" then -- Sinusquell (39), Tiggi2702 (6), Vivan (2), pas06 (2), Cytoph (2), imna1975 (17)
 L["Config_Importing_ImportingCanUpdate"] = "Beim Importieren können vorhandene Skalierungen aktualisiert werden."
 L["Config_Importing_ImportingCanUpdate_Desc"] = "Wenn Sie eine Skalierung mit demselben Namen, derselben Klasse und Spezialisierung wie eine bereits vorhandene Skalierung importieren, wird die vorhandene Skalierung mit den neuen Gewichtungen aktualisiert, anstatt eine neue Skalierung zu erstellen. "
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Es kann mehrere Skalierungen mit demselben Namen geben, solange sie für verschiedene Spezialisierungen oder Klassen gelten. "
@@ -135,14 +135,12 @@ L["Config_Scales_Desc"] = "Die folgenden Einstellungen betreffen nur die Liste d
 L["Config_Scales_OwnClassDefaultsOnly"] = "Zeige nur Standardskalierung für die eigene Klasse. "
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Zeige nur Standardskalierung für die eigene Klasse anstelle von allen anderen. "
 L["Config_Scales_Title"] = "Skalierungsliste "
---[[Translation missing --]]
---[[ L["Config_Score_AddItemLevelToScore"] = ""--]] 
+L["Config_Score_AddItemLevelToScore"] = "Fügen Sie allen Ergebnissen eine Elementebene hinzu"
 L["Config_Score_AddItemLevelToScore_Desc"] = "Fügen Sie dem aktuellen Punktestand, dem aktuellen Potenzial und der maximalen Punktzahlberechnung den Elementstand Azerite hinzu."
 L["Config_Score_AddPrimaryStatToScore"] = "Fügen Sie den Primär werten alle Ergebnisse hinzu"
 --[[Translation missing --]]
 --[[ L["Config_Score_AddPrimaryStatToScore_Desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_RelativeScore"] = ""--]] 
+L["Config_Score_RelativeScore"] = "Zeigt relative Werte in Tooltips anstelle von absoluten Werten an"
 --[[Translation missing --]]
 --[[ L["Config_Score_RelativeScore_Desc"] = ""--]] 
 --[[Translation missing --]]
@@ -159,8 +157,9 @@ L["Config_Score_Title"] = "Punkte"
 L["Config_SettingsAddonExplanation"] = "Dieses Addon berechnet \"Aktuelle Punktzahl\", \"Aktuelles Potenzial\" und \"Maximale Punktzahl\" für Azerite-Ausrüstung basierend auf den von Ihnen ausgewählten Waagen."
 L["Config_SettingsSavedPerChar"] = [=[Alle Einstellungen sind für den Charakter gespeichert. 
 Benutzerdefinierte Einstellungen werden geteilt zwischen allen Charaktern.]=]
---[[Translation missing --]]
---[[ L["Config_SettingsScoreExplanation"] = ""--]] 
+L["Config_SettingsScoreExplanation"] = [=["Aktuelle Bewertung" ist die Summe der aktuell ausgewählten Azerite-Kräfte in dem Element.
+"Aktuelles Potential" ist die Summe der am höchsten gewichteten Azerite-Kräfte aus jeder Ebene, auf die Sie im Element zugreifen können.
+"Maximale Punktzahl" ist die Summe der höchsten gewichteten Azerite-Kräfte aus jeder Schicht, einschließlich der gesperrten, in dem Element.]=]
 L["Config_WeightEditor_Desc"] = "Die folgenden Einstellungen wirken sich nur auf die im Editor angezeigten Fähigkeiten aus. Selbst wenn du sie deaktivierst, werden alle Azeritermächtigungen immer noch gewertet, wenn sie auf der aktiven Skala Werte haben."
 L["Config_WeightEditor_ShowDefensive"] = "Zeige defensive Fähigkeiten"
 L["Config_WeightEditor_ShowDefensive_Desc"] = "Zeige gemeinsame und klassenspezifische Defensivfähigkeiten im Editor."
@@ -168,24 +167,19 @@ L["Config_WeightEditor_ShowProfession"] = "Zeige berufsspezifische Fähigkeiten 
 --[[Translation missing --]]
 --[[ L["Config_WeightEditor_ShowProfession_Desc"] = ""--]] 
 L["Config_WeightEditor_ShowPvP"] = "Zeige PVP spezifische Fähigkeiten "
---[[Translation missing --]]
---[[ L["Config_WeightEditor_ShowPvP_Desc"] = ""--]] 
+L["Config_WeightEditor_ShowPvP_Desc"] = "Zeigen Sie PvP-spezifische Kräfte im Skalengewicht-Editor an. Sie sehen nur die Kräfte Ihrer eigenen Fraktionen, aber die an ihnen vorgenommenen Änderungen werden auf beide Fraktionen gespiegelt."
 --[[Translation missing --]]
 --[[ L["Config_WeightEditor_ShowPvP_Desc_Import"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_WeightEditor_ShowRole"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_WeightEditor_ShowRole_Desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_WeightEditor_ShowRolesOnlyForOwnSpec"] = ""--]] 
+L["Config_WeightEditor_ShowRole"] = "Rollenspezifische Fähigkeiten anzeigen"
+L["Config_WeightEditor_ShowRole_Desc"] = "Zeigen Sie rollenspezifische Kräfte im Skalengewicht-Editor an."
+L["Config_WeightEditor_ShowRolesOnlyForOwnSpec"] = "Rollenspezifische Kompetenzen nur für meine eigene Spezialisierungsrolle anzeigen"
 --[[Translation missing --]]
 --[[ L["Config_WeightEditor_ShowRolesOnlyForOwnSpec_Desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_WeightEditor_ShowZone"] = ""--]] 
+L["Config_WeightEditor_ShowZone"] = "Zonenspezifische Fähigkeiten anzeigen"
 --[[Translation missing --]]
 --[[ L["Config_WeightEditor_ShowZone_Desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_WeightEditor_ShowZone_Desc_Proc"] = ""--]] 
+L["Config_WeightEditor_ShowZone_Desc_Proc"] = [=[Zonenspezifische Kräfte können / proc überall aktivieren, aber Schlachtzugsmächte haben einen sekundären Effekt, der nur aktiviert wird, wenn sie sich innerhalb ihrer zugehörigen Schlachtzugsinstanz befinden (z. B. wird der sekundäre Effekt von Uldir-Kräften nur in der Uldir-Schlachtzugsinstanz ausgeführt.)
+Die Schlachtzugskraft ist im Waagen-Editor mit einem Stern (*) neben ihrem Namen gekennzeichnet.]=]
 --[[Translation missing --]]
 --[[ L["Config_WeightEditor_Title"] = ""--]] 
 --[[Translation missing --]]
@@ -196,8 +190,7 @@ L["Config_WeightEditor_ShowPvP"] = "Zeige PVP spezifische Fähigkeiten "
 --[[ L["CreatePopup_Error_UnknownError"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["CreatePopup_Title"] = ""--]] 
---[[Translation missing --]]
---[[ L["DefaultScaleName_Default"] = ""--]] 
+L["DefaultScaleName_Default"] = "Standard"
 --[[Translation missing --]]
 --[[ L["DefaultScaleName_Defensive"] = ""--]] 
 --[[Translation missing --]]

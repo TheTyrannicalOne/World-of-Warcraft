@@ -1,9 +1,9 @@
-12/14 00:11:22.102  Loading add-on RCLootCouncil
-12/14 00:11:22.102  ** Loading table of contents Interface\AddOns\RCLootCouncil\RCLootCouncil.toc
-12/14 00:11:22.102  ++ Loading file Interface\AddOns\RCLootCouncil\embeds.xml
-12/14 00:11:22.102  ++ Loading file Interface\AddOns\RCLootCouncil\Libs\DropDownMenu\LibUIDropDownMenu.xml
-12/14 00:11:22.102  ++ Loading file Interface\AddOns\RCLootCouncil\Libs\DropDownMenu\LibUIDropDownMenuTemplates.xml
-12/14 00:11:22.102  Deferred XML Node object named L_UIDropDownCustomMenuEntryTemplate already exists
-12/14 00:11:22.102  Deferred XML Node object named L_UIDropDownMenuButtonTemplate already exists
-12/14 00:11:22.102  Deferred XML Node object named L_UIDropDownListTemplate already exists
-12/14 00:11:22.102  Deferred XML Node object named L_UIDropDownMenuTemplate already exists
+12/18 04:29:37.332  Loading add-on RCLootCouncil
+12/18 04:29:37.332  ** Loading table of contents Interface\AddOns\RCLootCouncil\RCLootCouncil.toc
+12/18 04:29:37.332  ++ Loading file Interface\AddOns\RCLootCouncil\embeds.xml
+12/18 04:29:37.332  ++ Loading file Interface\AddOns\RCLootCouncil\Libs\DropDownMenu\LibUIDropDownMenu.xml
+12/18 04:29:37.332  ++ Loading file Interface\AddOns\RCLootCouncil\Libs\DropDownMenu\LibUIDropDownMenuTemplates.xml
+12/18 04:29:37.332  Deferred XML Node object named L_UIDropDownCustomMenuEntryTemplate already exists
+12/18 04:29:37.332  Deferred XML Node object named L_UIDropDownMenuButtonTemplate already exists
+12/18 04:29:37.332  Deferred XML Node object named L_UIDropDownListTemplate already exists
+12/18 04:29:37.332  Deferred XML Node object named L_UIDropDownMenuTemplate already exists

@@ -427,4 +427,6 @@ qcLocalize = {
 	TOLDAGOR = "Tol Dagor",
 	ULDIR = "Uldir",
 	WAYCRESTMANOR = "Waycrest Manor",
+	THEDEATHOFCHROMIE = "The Deaths Of Chromie",
+	THEMOTHERLOAD = "The Motherload!!",
 }

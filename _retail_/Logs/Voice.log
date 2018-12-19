@@ -1,6 +1,21 @@
-12/14 00:11:29.852  Voice Log Initialize.
-12/14 00:11:29.852  VoiceProxy attempting to listen on 127.0.0.1:6724
-12/14 00:11:38.932  WoW client has connected to proxy
-12/14 00:52:14.008  VoiceProxy timeout.
-12/14 00:52:14.008  VoiceProxy shutdown requested.
-12/14 00:52:19.113  Voice Log Destroy.
+12/18 04:30:03.179  Voice Log Initialize.
+12/18 04:30:03.179  VoiceProxy attempting to listen on 127.0.0.1:6724
+12/18 04:30:03.192  WoW client has connected to proxy
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice speaker settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice speaker settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice speaker settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice speaker settings initialization in progress
+12/18 04:30:03.264  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.275  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice speaker settings initialization in progress
+12/18 04:30:03.275  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.275  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 04:30:03.275  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice speaker settings initialization in progress
+12/18 04:30:03.275  |subsystem=BNL_Voice|msg=[20181218T04:30:03] {44e8} WRN: Voice mic settings initialization in progress
+12/18 05:25:37.979  VoiceProxy CloseProxy request from client.
+12/18 05:25:37.979  VoiceProxy shutdown requested.
+12/18 05:25:42.989  Voice Log Destroy.

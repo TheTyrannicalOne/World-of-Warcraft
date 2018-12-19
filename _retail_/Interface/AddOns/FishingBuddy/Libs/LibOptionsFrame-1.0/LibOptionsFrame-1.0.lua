@@ -29,7 +29,7 @@ local function Slider_OnLoad(self, info, height, width)
 end
 
 local function Slider_OnShow(self)
-    local where = FishingBuddy.GetSetting(self.info.setting);
+    local where = self.info.getter(self.info.setting);
     if (where) then
         self:SetValue(where);
         self.textfield:SetText(string.format(self.info.format, where));
@@ -39,20 +39,21 @@ end
 local function Slider_OnValueChanged(self)
     local where = self:GetValue();
     self.textfield:SetText(string.format(self.info.format, where));
-    FishingBuddy.SetSetting(self.info.setting, where);
+    self.info.setter(self.info.setting, where);
     if (self.info.action) then
         self.info.action(self);
     end
 end
 
 -- info contains
--- name
+-- name -- required
 -- format -- how to print the value
 -- min
 -- max
 -- step -- default to 1
 -- rightextra -- extra room needed, if any
 -- setting -- what this slider changes
+-- action -- function to call when the value change
 function OptionsLib:CreateSlider(info)
     local s = _G[info.name];
     if (not s) then
@@ -63,6 +64,45 @@ function OptionsLib:CreateSlider(info)
     s:SetScript("OnValueChanged", Slider_OnValueChanged);
     s.info = info
     return s;
+end
+
+-- edit box
+local function EditBox_OnLoad(self, info)
+    self.info = info;
+    self:SetHeight(info.height or 20);
+    self:SetWidth(info.width or 130);
+end
+
+local function EditBox_OnShow(self)
+    local what = self.info.getter(self.info.setting);
+    if (what) then
+        self:SetText(what);
+        self.textfield:SetText(what);
+    end
+end
+
+local function EditBox_OnTextChanged(self)
+    local what = self:GetText();
+    self.info.setter(self.info.setting, what);
+    if (self.info.action) then
+        self.info.action(self);
+    end
+end
+
+-- info contains
+-- name
+-- setting -- what this edit box changes
+-- action -- function to call when the value changes
+-- height, width -- override defaults
+function OptionsLib:CreateEditBox(info)
+    local s = _G[info.name];
+    if (not s) then
+        s = CreateFrame("EditBox", info.name, nil);
+    end
+    EditBox_OnLoad(s, info)
+    s:SetScript("OnShow", EditBox_OnShow);
+    s:SetScript("OnTextChanged", EditBox_OnTextChanged)
+    s:Hide()
 end
 
 local function ParentValue(button)

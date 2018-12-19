@@ -37,8 +37,8 @@ end
 FishingBuddy.HasRaftBuff = HasRaftBuff
 
 local function HaveRafts()
-    local haveRaft = PlayerHasToy(RAFT_ID);
-    local haveBerg = GetItemCount(BERG_ID);
+    local haveRaft = PlayerHasToy(RAFT_ID) and C_ToyBox.IsToyUsable(RAFT_ID);
+    local haveBerg = GetItemCount(BERG_ID) > 0;
     return (haveRaft or haveBerg), haveRaft, haveBerg
 end
 

@@ -106,27 +106,44 @@ local GeneralOptions = {
         ["tooltip"] = FBConstants.CONFIG_SPARKLIES_INFO,
         ["v"] = 1,
         ["default"] = false,
-        ["parents"] = { ["EnhanceFishingSounds"] = "d" }, },
---	["CreateMacro"] = {
---		["text"] = FBConstants.CONFIG_CREATEMACRO_ONOFF,
---		["tooltip"] = FBConstants.CONFIG_CREATEMACRO_INFO,
---		["v"] = 1,
---		["global"] = 1,
---		["default"] = false, },
---	["PreventRecast"] = {
---		["text"] = FBConstants.CONFIG_PREVENTRECAST_ONOFF,
---		["tooltip"] = FBConstants.CONFIG_PREVENTRECAST_INFO,
---		["v"] = 1,
---		["global"] = 1,
---		["default"] = false,
---		["parents"] = { ["CreateMacro"] = "d" }, },
---	["ToonMacro"] = {
---		["text"] = FBConstants.CONFIG_TOONMACRO_ONOFF,
---		["tooltip"] = FBConstants.CONFIG_TOONMACRO_INFO,
---		["v"] = 1,
---		["global"] = 1,
---		["default"] = false,
---		["parents"] = { ["CreateMacro"] = "d" }, },
+        ["parents"] = { ["EnhanceFishingSounds"] = "d" },
+    },
+};
+
+MacroOptions = {
+    ["MacroName"] = {
+        ["tooltip"] = FBConstants.CONFIG_CREATEMACRO_INFO,
+        ["button"] = "FishingBuddyOption_MaxMacroEditBox",
+        ["setup"] = function(self)
+            self:SetPoint("TOPLEFT", self:GetParent(), "TOPLEFT", 40, 40);
+        end,
+        ["v"] = 1,
+		["global"] = 1,
+        ["default"] = FBConstants.MACRONAME,
+    },
+	["CreateMacro"] = {
+		["text"] = FBConstants.CONFIG_CREATEMACRO_ONOFF,
+		["tooltip"] = FBConstants.CONFIG_CREATEMACRO_INFO,
+		["v"] = 1,
+		["global"] = 1,
+        ["default"] = false,
+    },
+	["PreventRecast"] = {
+		["text"] = FBConstants.CONFIG_PREVENTRECAST_ONOFF,
+		["tooltip"] = FBConstants.CONFIG_PREVENTRECAST_INFO,
+		["v"] = 1,
+		["global"] = 1,
+		["default"] = false,
+        ["parents"] = { ["CreateMacro"] = "d" },
+    },
+	["ToonMacro"] = {
+		["text"] = FBConstants.CONFIG_TOONMACRO_ONOFF,
+		["tooltip"] = FBConstants.CONFIG_TOONMACRO_INFO,
+		["v"] = 1,
+		["global"] = 1,
+		["default"] = false,
+        ["parents"] = { ["CreateMacro"] = "d" },
+    },
 };
 
 -- x87bliss has implemented IsFishWardenEnabled as a public function, so
@@ -387,8 +404,27 @@ local VolumeSlider =
     ["step"] = 5,
     ["scale"] = 1,
     ["rightextra"] = 32,
-    ["setting"] = "EnhanceSound_MasterVolume",
+    ["setting"] = "EnhanceSound_MasterVolume"
 };
+
+local function PrepareVolumeSlider()
+    VolumeSlider['getter'] = FishingBuddy.GetSetting;
+    VolumeSlider['setter'] = FishingBuddy.SetSetting;
+    LO:CreateSlider(VolumeSlider);
+end
+
+local MacroEditBox =
+{
+    ["name"] = "FishingBuddyOption_MaxMacroEditBox",
+    ["rightextra"] = 32,
+    ["setting"] = "MacroName"
+};
+
+local function PrepareEditBox()
+    MacroEditBox['getter'] = FishingBuddy.GetSetting;
+    MacroEditBox['setter'] = FishingBuddy.SetSetting;
+    LO:CreateEditBox(MacroEditBox);
+end
 
 EasyCastInit = function(option, button)
     -- prettify drop down?
@@ -1606,7 +1642,7 @@ FishingBuddy.OnEvent = function(self, event, ...)
                         DoEscaped = 1;
                     end
                 end
-                if (not locked and doautoloot) then
+                if (doautoloot) then
                     LootSlot(index);
                 end
             end
@@ -1637,8 +1673,10 @@ FishingBuddy.OnEvent = function(self, event, ...)
     elseif ( event == "VARIABLES_LOADED" ) then
         local _, name = FL:GetFishingSkillInfo();
         FishingBuddy.Initialize();
-        LO:CreateSlider(VolumeSlider);
+        PrepareVolumeSlider()
         FishingBuddy.OptionsFrame.HandleOptions(GENERAL, nil, GeneralOptions);
+        -- PrepareEditBox()
+        -- FishingBuddy.OptionsFrame.HandleOptions(MACROS, "Interface\\Icons\\INV_Misc_PaperBundle04a", MacroOptions);
         FishingBuddy.AddSchoolFish();
 
         FishingBuddy.CreateFBMappedDropDown("FBEasyKeys", "EasyCastKeys", FBConstants.CONFIG_EASYCAST_ONOFF, FBConstants.Keys)

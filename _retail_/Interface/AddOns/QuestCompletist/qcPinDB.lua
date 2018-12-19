@@ -3141,7 +3141,7 @@ qcPinDB = {
 		{0,1,39933,"Tyrus Blackhorn",22.3,44.9,{25408,25411,25428}},
 	---	{0,1,39933,"Tyrus Blackhorn",22.3,44.9,{25443}},
 		{0,1,40093,"Subjugated Inferno Lord",12.3,38.6,{25412},"Available from any Twilight Inferno Lord after you have killed them and used the Bottled Bileberry Brew on the corpse."},
-		{0,1,0,nil,22.3,44.9,{29066}},
+	---	{0,1,0,nil,22.3,44.9,{29066}},
 		{0,1,39932,"Keeper Taldros",13.7,32.8,{25462,25490}},
 		{0,1,39858,"Arch Druid Hamuul Runetotem",27.1,62.6,{25491,25493,25507,25510,29198,29199,29200}},
 		{0,1,40331,"Rayne Feathersong",27.1,63.0,{25492,25502}},
@@ -3902,6 +3902,8 @@ qcPinDB = {
 		{2,1,45206,"Crusade Commander Korfax",67.8,72.4,{27228}},
 		{2,1,45329,"Crusade Commander Eligor",67.8,72.6,{27227}},
 		{2,1,45331,"Master Craftsman Wilhelm",69.2,73.0,{27230}},		
+	},
+	[319] = { --[[ Temple of Ahn'Qiraj 1 ]]--
 	},
 	[320] = { --[[ Temple of Ahn'Qiraj 2 ]]--
 		{2,1,15502,"Andorgos <Brood of Malygos>",58.8,68.4,{8544,8561,8592,8594,8602,8623,8628,8630,8625,8632,8639,8641,8657,8659,8662,8664,8667,8669}},			
@@ -5284,7 +5286,7 @@ qcPinDB = {
 		{0,1,0,"Glirin",53,59.8,{35708,36828}},
 		{0,1,0,"Altauur",49.4,49.6,{36436,36437}},
 		{0,1,0,"Altauur",52,49.4,{36440}},
-		{0,1,0,"Altauur",51.2,48,{36438,36439}},
+		{0,1,0,"Altauur",51.2,48,{36438,36439}},36
 		{0,1,0,"Altauur",52.8,51.6,{36442}},
 		{0,1,0,"Rangari Kolaan",42,94,{36632}},
 		{0,1,0,"Choluna",54.2,55.8,{34339}},
@@ -6541,6 +6543,18 @@ qcPinDB = {
 	},
 	[862] = {--[[ zuldazar ]]--
 	},
+	[897] = {--[[ The Deaths Of Chromie ]]--
+	},
+	[898] = {--[[ The Deaths Of Chromie ]]--
+	},
+	[899] = {--[[ The Deaths Of Chromie ]]--
+	},
+	[900] = {--[[ The Deaths Of Chromie ]]--
+	},
+	[901] = {--[[ The Deaths Of Chromie ]]--
+	},
+	[902] = {--[[ The Deaths Of Chromie ]]--
+	},
 	[934] = {--[[ Atal'Dazar ]]--
 	},
 	[935] = {--[[ Atal'Dazar ]]--
@@ -6561,11 +6575,15 @@ qcPinDB = {
 	},
 	[980] = {--[[ Tol Dagor ]]--
 	},
+	[1010] = {--The Motherload ]]--
+	},
 	[1017] = {--[[ Waycrest Manor ]]--
 	},
 	[1018] = {--[[ Waycrest Manor ]]--
 	},
 	[1029] = {--[[ Waycrest Manor ]]--
+	},
+	[1037] = {--[[ Whispering Reef ]]--
 	},
 	[1038] = {--[[ Temple of Sethraliss ]]--
 	},

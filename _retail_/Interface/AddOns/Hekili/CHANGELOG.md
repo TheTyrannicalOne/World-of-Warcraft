@@ -1,11 +1,8 @@
 # Hekili
 
-## [v8.1.0-03](https://github.com/Hekili/hekili/tree/v8.1.0-03) (2018-12-14)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.0-02...v8.1.0-03)
+## [v8.1.0-04](https://github.com/Hekili/hekili/tree/v8.1.0-04) (2018-12-16)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.0-04-beta2...v8.1.0-04)
 
-- Feral:  Watch Primal Wrath's dmg multiplier (Bloodtalons, Tiger's Fury).  
-- TOC update.  
-- Havoc:  Disable extended\_by\_metamorphosis, it doesn't really do anything any more.  
+- Balance:  Don't treat Fury of Elune as CD by default.  
      - Update APL.  
-- Targets:  Store some target debugging information.  
-- Classes:  State expressions are not loaded into the state table.  
+     - Add Use Items to APL.  

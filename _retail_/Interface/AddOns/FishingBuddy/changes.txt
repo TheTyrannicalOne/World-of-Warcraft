@@ -1,4 +1,8 @@
-﻿Version 1.9.22
+﻿Version 1.9.23
+- Really, really get rafts working even if you can't use the toy you have
+- Internal code improvements
+
+Version 1.9.22
 - Rewrite raft handling to be smarter when you don't have the berg
 - Actually get the watcher to stick when using the start macro (CurseForge #364)
 - Fix location frame error (CurseForge #365)
