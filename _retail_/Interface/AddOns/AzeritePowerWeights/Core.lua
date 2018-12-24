@@ -270,7 +270,8 @@ local function _buildTree(t)
 		local specID, name, description, iconID, role, isRecommended, isAllowed = GetSpecializationInfoForClassID(classID, dataSet[3])
 		local c = _G.RAID_CLASS_COLORS[classTag]
 
-		local scaleName = n.defaultNameTable[ dataSet[1] ] and classDisplayName .. " - " .. name .. " (" .. dataSet[1] .. ")" or classDisplayName .. " - " .. name
+		--local scaleName = n.defaultNameTable[ dataSet[1] ] and classDisplayName .. " - " .. name .. " (" .. dataSet[1] .. ")" or classDisplayName .. " - " .. name
+		local scaleName = n.defaultNameTable[ dataSet[1] ] and classDisplayName .. " - " .. name .. " (" .. n.defaultNameTable[ dataSet[1] ] .. ")" or classDisplayName .. " - " .. name
 		if (dataSet) and ((cfg.onlyOwnClassDefaults and classID == playerClassID) or (not cfg.onlyOwnClassDefaults)) then
 			t[2].children[#t[2].children + 1] = {
 				value = "D/"..dataSet[2].."/"..dataSet[3].."/"..dataSet[1],
@@ -340,11 +341,13 @@ local function _enableScale(powerWeights, scaleKey)
 		scoreData[k] = v
 	end
 
-	local _, _, _, scaleName = strsplit("/", scaleKey)
-	n.guiContainer:SetStatusText(format(L.WeightEditor_CurrentScale, scaleName))
+	local groupSet, _, _, scaleName = strsplit("/", scaleKey)
+	--n.guiContainer:SetStatusText(format(L.WeightEditor_CurrentScale, scaleName))
+	n.guiContainer:SetStatusText(format(L.WeightEditor_CurrentScale, groupSet == "D" and (n.defaultNameTable[scaleName] or scaleName) or scaleName))
 
 	cfg.specScales[playerSpecID].scaleID = scaleKey
-	cfg.specScales[playerSpecID].scaleName = scaleName
+	--cfg.specScales[playerSpecID].scaleName = scaleName
+	cfg.specScales[playerSpecID].scaleName = groupSet == "D" and (n.defaultNameTable[scaleName] or scaleName) or scaleName
 	n.treeGroup:SelectByValue(cfg.specScales[playerSpecID].scaleID)
 end
 
@@ -725,10 +728,11 @@ function n:CreateWeightEditorGroup(isCustomScale, container, titleText, powerWei
 	tooltipCheckbox:SetValue(false)
 	tooltipCheckbox:SetCallback("OnValueChanged", function(widget, callback, checked)
 		if checked == true then
-			local _, _, _, thisScaleName = strsplit("/", scaleKey)
+			local groupSet, _, _, thisScaleName = strsplit("/", scaleKey)
 			cfg.tooltipScales[#cfg.tooltipScales + 1] = {
 				scaleID = scaleKey,
-				scaleName = thisScaleName
+				--scaleName = thisScaleName
+				scaleName = groupSet == "D" and (n.defaultNameTable[thisScaleName] or thisScaleName) or thisScaleName
 			}
 		else
 			if #cfg.tooltipScales > 0 then
@@ -1149,7 +1153,8 @@ local function _populateWeights() -- Populate scoreData with active spec's scale
 					scoreData[k] = v
 				end
 				if n.guiContainer then
-					n.guiContainer:SetStatusText(format(L.WeightEditor_CurrentScale, scaleName))
+					--n.guiContainer:SetStatusText(format(L.WeightEditor_CurrentScale, scaleName))
+					n.guiContainer:SetStatusText(format(L.WeightEditor_CurrentScale, groupSet == "D" and (n.defaultNameTable[scaleName] or scaleName) or scaleName))
 				end
 
 				Debug("Populated scoreData", groupSet, classID, specNum, scaleName)
@@ -1790,7 +1795,20 @@ function f:ADDON_LOADED(event, addon)
 		playerClassID = select(3, UnitClass("player"))
 		for i = 1, GetNumSpecializationsForClassID(playerClassID) do
 			local specID = GetSpecializationInfoForClassID(playerClassID, i)
-			if not cfg.specScales[specID] then
+			if
+				not cfg.specScales[specID]
+			or
+				-- Localized Default-scalenames were causing issues, trying to revert those to normal state
+				(cfg.specScales[specID].scaleName == L.DefaultScaleName_Default or
+				cfg.specScales[specID].scaleName == L.DefaultScaleName_Defensive or
+				cfg.specScales[specID].scaleName == L.DefaultScaleName_Offensive)
+			or
+				-- More checks for the above
+				(select(3, strmatch(cfg.specScales[specID].scaleID, "D/(%d+)/(%d+)/(.+)")) == L.DefaultScaleName_Default or
+				select(3, strmatch(cfg.specScales[specID].scaleID, "D/(%d+)/(%d+)/(.+)")) == L.DefaultScaleName_Defensive or
+				select(3, strmatch(cfg.specScales[specID].scaleID, "D/(%d+)/(%d+)/(.+)")) == L.DefaultScaleName_Offensive)
+			then
+
 				local scaleKey = n.GetDefaultScaleSet(playerClassID, i)
 				local _, _, _, defaultScaleName = strsplit("/", scaleKey)
 

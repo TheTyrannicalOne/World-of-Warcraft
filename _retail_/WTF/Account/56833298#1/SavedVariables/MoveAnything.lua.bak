@@ -25,6 +25,22 @@ MADB = {
 						0.0001220703125, -- [5]
 					},
 				},
+				["GuildBankItemTooltipMover"] = {
+					["orgPos"] = {
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						0, -- [3]
+						0, -- [4]
+					},
+					["name"] = "GuildBankItemTooltipMover",
+					["pos"] = {
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-3.05175781250e-05, -- [4]
+						0.0001220703125, -- [5]
+					},
+				},
 				["TooltipMover"] = {
 					["orgPos"] = {
 						"BOTTOMRIGHT", -- [1]
@@ -42,27 +58,11 @@ MADB = {
 						490.164988070726, -- [5]
 					},
 				},
-				["GuildBankItemTooltipMover"] = {
-					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						0, -- [3]
-						0, -- [4]
-					},
-					["name"] = "GuildBankItemTooltipMover",
-					["pos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-3.05175781250e-05, -- [4]
-						0.0001220703125, -- [5]
-					},
-				},
 			},
 		},
 	},
-	["frameListRows"] = 18,
-	["noBags"] = false,
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["noBags"] = false,
+	["frameListRows"] = 18,
 }

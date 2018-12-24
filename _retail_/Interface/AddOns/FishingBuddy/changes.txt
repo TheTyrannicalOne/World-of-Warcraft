@@ -1,5 +1,10 @@
-﻿Version 1.9.23
-- Really, really get rafts working even if you can't use the toy you have
+﻿Version 1.9.24
+- Hot fix for TOC change in the hotfix
+- Improve looting code
+- More internal code cleanup
+
+Version 1.9.23
+- Really, really get rafts working even if you can't use the toy you have (Curse #337)
 - Internal code improvements
 
 Version 1.9.22

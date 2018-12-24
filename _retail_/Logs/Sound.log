@@ -1,71 +1,117 @@
-12/18 04:18:09.163   - SE3 Init...
-12/18 04:18:09.163  => SI3 Init
-12/18 04:18:09.163  => WoW Version 8.1.0 (28768) Dec 13 2018
-12/18 04:18:09.173   
-12/18 04:18:09.173  => User Settings Report:
-12/18 04:18:09.173   - ========= PLAYBACK =========
-12/18 04:18:09.173   - Enable All Sound         [1]
-12/18 04:18:09.173   - Enable SFX               [1]
-12/18 04:18:09.173   --- Enable Emote Sounds    [1]
-12/18 04:18:09.173   - Enable Music             [1]
-12/18 04:18:09.173   --- Loop Music             [0]
-12/18 04:18:09.173   --- Pet Battle Music       [1]
-12/18 04:18:09.173   - Enable Ambient Sounds    [1]
-12/18 04:18:09.173   - Enable Dialog            [1]
-12/18 04:18:09.173   --- Enable Error Speech    [1]
-12/18 04:18:09.173   - Sound at Character       [1]
-12/18 04:18:09.173   - Sound in Background      [0]
-12/18 04:18:09.173   - Enable Reverb            [1]
-12/18 04:18:09.173   -
-12/18 04:18:09.173   - ========== VOLUME ==========
-12/18 04:18:09.173   - Master Volume         [1.00]
-12/18 04:18:09.173   - SFX Volume            [1.00]
-12/18 04:18:09.189   - Music Volume          [0.40]
-12/18 04:18:09.189   - Ambience Volume       [0.60]
-12/18 04:18:09.189   - Dialog Volume         [1.00]
-12/18 04:18:09.189   -
-12/18 04:18:09.189   - =========== MISC ===========
-12/18 04:18:09.189   - Sound Channels          [64]
-12/18 04:18:09.189   - Sound Cache           [64MB]
-12/18 04:18:09.189   - Mix Mode 2               [0]
-12/18 04:18:09.189   - DSP Buffer Size       [AUTO]
-12/18 04:18:09.189   - Armor Foley SFX (Self)   [1]
-12/18 04:18:09.189   - Armor Foley SFX (Others) [1]
-12/18 04:18:09.189  => End of User Settings Report
-12/18 04:18:09.189   
-12/18 04:18:09.189   - FMOD Memory Init
-12/18 04:18:09.189   - FMOD System Create
-12/18 04:18:09.189   - Setting Output Type
-12/18 04:18:09.261   - 7 Output drivers detected
-12/18 04:18:09.261   --- [0] System Default
-12/18 04:18:09.261   --- [1] Headset Earphone (2- Razer ManO'War)
-12/18 04:18:09.261   --- [2] Speakers (Steam Streaming Speakers)
-12/18 04:18:09.261   --- [3] Realtek Digital Output(Optical) (Realtek High Definition Audio)
-12/18 04:18:09.261   --- [4] Speakers (Realtek High Definition Audio)
-12/18 04:18:09.261   --- [5] Speakers (Steam Streaming Microphone)
-12/18 04:18:09.267   --- [6] Realtek Digital Output (Realtek High Definition Audio)
-12/18 04:18:09.267  ** Using Driver [0] System Default (Headset Earphone (2- Razer ManO'War))
-12/18 04:18:09.267   - DSPBufferSize = AUTO DETECT
-12/18 04:18:09.267   - Setting DSP Buffer Size
-12/18 04:18:09.267   - Using Control Panel Speaker Mode STEREO
-12/18 04:18:09.267   - Setting Software Format (44100, 2, 1).
-12/18 04:18:09.267   - Requested 64 channels.
-12/18 04:18:09.267   - Initializing Software Channels
-12/18 04:18:09.360   - Init FMOD Game System
-12/18 04:18:09.360   - Ok
-12/18 04:18:09.361   - Setting Rolloff Scale
-12/18 04:18:09.361   - Setting Rolloff Callback
-12/18 04:18:09.361   - SE3 EmitterManagerInit Success
-12/18 04:18:09.361   - Setting device callback
-12/18 04:18:09.361   - Sound Bus Init
-12/18 04:18:09.361   - Init Suppressors
-12/18 04:18:09.361   - SE3 Init Success.
-12/18 04:18:09.361  => SI3 Init Complete.
-12/18 04:18:09.361   
-12/18 05:25:39.016   
-12/18 05:25:39.017  => Shutting Down SI3
-12/18 05:25:39.055  => Shutting Down SI3 COMPLETE.
-12/18 05:25:39.055   
-12/18 05:25:39.055   - Shutting Down SE3
-12/18 05:25:39.254   - SE3 EmitterManagerShutdown Success
-12/18 05:25:39.254   - Shutting Down SE3 COMPLETE.
+12/24 09:53:10.795   - SE3 Init...
+12/24 09:53:10.795  => SI3 Init
+12/24 09:53:10.795  => WoW Version 8.1.0 (28833) Dec 19 2018
+12/24 09:53:10.795   
+12/24 09:53:10.795  => User Settings Report:
+12/24 09:53:10.795   - ========= PLAYBACK =========
+12/24 09:53:10.795   - Enable All Sound         [1]
+12/24 09:53:10.795   - Enable SFX               [1]
+12/24 09:53:10.795   --- Enable Emote Sounds    [1]
+12/24 09:53:10.795   - Enable Music             [1]
+12/24 09:53:10.803   --- Loop Music             [0]
+12/24 09:53:10.803   --- Pet Battle Music       [1]
+12/24 09:53:10.803   - Enable Ambient Sounds    [1]
+12/24 09:53:10.803   - Enable Dialog            [1]
+12/24 09:53:10.803   --- Enable Error Speech    [1]
+12/24 09:53:10.803   - Sound at Character       [1]
+12/24 09:53:10.803   - Sound in Background      [0]
+12/24 09:53:10.803   - Enable Reverb            [1]
+12/24 09:53:10.803   -
+12/24 09:53:10.803   - ========== VOLUME ==========
+12/24 09:53:10.803   - Master Volume         [1.00]
+12/24 09:53:10.803   - SFX Volume            [1.00]
+12/24 09:53:10.803   - Music Volume          [0.40]
+12/24 09:53:10.803   - Ambience Volume       [0.60]
+12/24 09:53:10.803   - Dialog Volume         [1.00]
+12/24 09:53:10.803   -
+12/24 09:53:10.803   - =========== MISC ===========
+12/24 09:53:10.803   - Sound Channels          [64]
+12/24 09:53:10.803   - Sound Cache           [64MB]
+12/24 09:53:10.819   - Mix Mode 2               [0]
+12/24 09:53:10.819   - DSP Buffer Size       [AUTO]
+12/24 09:53:10.819   - Armor Foley SFX (Self)   [1]
+12/24 09:53:10.819   - Armor Foley SFX (Others) [1]
+12/24 09:53:10.819  => End of User Settings Report
+12/24 09:53:10.819   
+12/24 09:53:10.819   - FMOD Memory Init
+12/24 09:53:10.819   - FMOD System Create
+12/24 09:53:10.819   - Setting Output Type
+12/24 09:53:10.890   - 7 Output drivers detected
+12/24 09:53:10.890   --- [0] System Default
+12/24 09:53:10.890   --- [1] Headset Earphone (2- Razer ManO'War)
+12/24 09:53:10.890   --- [2] Speakers (Steam Streaming Speakers)
+12/24 09:53:10.890   --- [3] Realtek Digital Output(Optical) (Realtek High Definition Audio)
+12/24 09:53:10.890   --- [4] Speakers (Realtek High Definition Audio)
+12/24 09:53:10.890   --- [5] Speakers (Steam Streaming Microphone)
+12/24 09:53:10.897   --- [6] Realtek Digital Output (Realtek High Definition Audio)
+12/24 09:53:10.897  ** Using Driver [0] System Default (Headset Earphone (2- Razer ManO'War))
+12/24 09:53:10.897   - DSPBufferSize = AUTO DETECT
+12/24 09:53:10.897   - Setting DSP Buffer Size
+12/24 09:53:10.897   - Using Control Panel Speaker Mode STEREO
+12/24 09:53:10.897   - Setting Software Format (44100, 2, 1).
+12/24 09:53:10.897   - Requested 64 channels.
+12/24 09:53:10.897   - Initializing Software Channels
+12/24 09:53:11.002   - Init FMOD Game System
+12/24 09:53:11.002   - Ok
+12/24 09:53:11.002   - Setting Rolloff Scale
+12/24 09:53:11.002   - Setting Rolloff Callback
+12/24 09:53:11.002   - SE3 EmitterManagerInit Success
+12/24 09:53:11.007   - Setting device callback
+12/24 09:53:11.007   - Sound Bus Init
+12/24 09:53:11.007   - Init Suppressors
+12/24 09:53:11.007   - SE3 Init Success.
+12/24 09:53:11.007  => SI3 Init Complete.
+12/24 09:53:11.007   
+12/24 10:10:18.549  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:45.119  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:45.119  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:46.549  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:46.978  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:46.978  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:53.154  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:53.154  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:53.708  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:36:53.961  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:14.557  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:14.557  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:14.632  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:14.632  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:14.647  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:14.647  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:15.126  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:15.126  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:15.126  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:17.109  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:17.109  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:17.705  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:17.776  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:22.869  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:41.209  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:41.211  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:43.276  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:43.276  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:43.718  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:45.034  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:45.034  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:45.132  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:45.132  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:45.294  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:37:45.294  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:38:14.731  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:38:14.731  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:38:15.222  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:38:15.222  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:38:21.094  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:38:21.094  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:39:04.707  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:39:04.765  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:39:04.765  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:39:05.337  => Requested 16384 bytes and read 0 -- success: 1
+12/24 11:39:23.054  => Requested 16384 bytes and read 0 -- success: 1
+12/24 13:48:44.056   
+12/24 13:48:44.056  => Shutting Down SI3
+12/24 13:48:44.098  => Shutting Down SI3 COMPLETE.
+12/24 13:48:44.099   
+12/24 13:48:44.099   - Shutting Down SE3
+12/24 13:48:44.292   - SE3 EmitterManagerShutdown Success
+12/24 13:48:44.292   - Shutting Down SE3 COMPLETE.

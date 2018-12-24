@@ -69,15 +69,24 @@ end
 -- edit box
 local function EditBox_OnLoad(self, info)
     self.info = info;
+    local maxLetters = info.maxLetters or 32;
+    if not info.width and info.maxLetters then
+        self:SetText('M');
+        local emSpace = self:GetWidth();
+        self:SetWidth(maxLetters*emSpace);
+    else
+        self:SetWidth(184);
+    end
+    self:SetMaxLetters(maxLetters);
     self:SetHeight(info.height or 20);
-    self:SetWidth(info.width or 130);
+	self:SetAutoFocus(false)
+	self:SetTextInsets(0, 0, 3, 3)
 end
 
 local function EditBox_OnShow(self)
     local what = self.info.getter(self.info.setting);
     if (what) then
         self:SetText(what);
-        self.textfield:SetText(what);
     end
 end
 
@@ -97,12 +106,19 @@ end
 function OptionsLib:CreateEditBox(info)
     local s = _G[info.name];
     if (not s) then
-        s = CreateFrame("EditBox", info.name, nil);
+        s = CreateFrame("EditBox", info.name, nil, "InputBoxTemplate");
+    end
+    if (info.label and not s.label) then
+        s.label = s:CreateFontString(nil, "BACKGROUND", "GameFontNormalSmall")
+        s.label:SetPoint("RIGHT", s, "LEFT", -10, 0);
+        s.label:SetPoint("CENTER", s, "CENTER", 0, 0);
+        s.label:SetText(info.label)
     end
     EditBox_OnLoad(s, info)
     s:SetScript("OnShow", EditBox_OnShow);
     s:SetScript("OnTextChanged", EditBox_OnTextChanged)
     s:Hide()
+    return s
 end
 
 local function ParentValue(button)

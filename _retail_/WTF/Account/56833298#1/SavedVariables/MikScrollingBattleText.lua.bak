@@ -294,16 +294,16 @@ MSBTProfiles_SavedVars = {
 				["OUTGOING_SPELL_REFLECT"] = {
 					["disabled"] = true,
 				},
-				["NOTIFICATION_COOLDOWN"] = {
+				["OUTGOING_PARRY"] = {
 					["disabled"] = true,
 				},
-				["NOTIFICATION_BUFF_STACK"] = {
+				["NOTIFICATION_COOLDOWN"] = {
 					["disabled"] = true,
 				},
 				["OUTGOING_DEFLECT"] = {
 					["disabled"] = true,
 				},
-				["OUTGOING_PARRY"] = {
+				["NOTIFICATION_BUFF_STACK"] = {
 					["disabled"] = true,
 				},
 				["OUTGOING_SPELL_MISS"] = {

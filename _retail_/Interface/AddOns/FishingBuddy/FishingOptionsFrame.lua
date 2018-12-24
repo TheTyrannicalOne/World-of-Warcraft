@@ -11,7 +11,7 @@ local FBOptionsTable = {};
 
 local function FindOptionInfo (setting)
     for _,info in pairs(FBOptionsTable) do
-        if ( info.options[setting] ) then
+        if ( info.options and info.options[setting] ) then
             return info;
         end
     end
@@ -20,7 +20,7 @@ end
 
 local function GetDefault(setting)
     local info = FindOptionInfo(setting);
-    if ( info ) then
+    if ( info and info.options ) then
         local opt = info.options[setting];
         if ( opt ) then
             if ( opt.check and opt.checkfail ) then
@@ -461,6 +461,33 @@ FishingBuddy.MakeDropDown = function(switchText, switchSetting)
             end
         end
     end
+end
+
+local function CreateLabeledThing(holdername, label, thing, thingname)
+    local holder = CreateFrame("Frame", holdername);
+    thingname = thingname or 'thing';
+    holder[thingname] = thing;
+
+    holder[thingname]:ClearAllPoints();
+    holder[thingname]:SetPoint("TOPRIGHT", holder, "TOPRIGHT", 0, 0);
+
+    function holder:FixSizes()
+        self:SetWidth(self[thingname]:GetWidth() + self[thingname].label:GetWidth() + 4);
+        self:SetHeight(self[thingname]:GetHeight());
+    end
+
+    function holder:SetLabel(text)
+        if (text) then
+            self.menu.label:Show();
+            self.menu.label:SetText(text);
+        else
+            self.menu.label:SetText("");
+            self.menu.label:Hide();
+        end
+        self:FixSizes();
+    end
+
+    return holder;
 end
 
 -- menuname has to be set regardless, or UI drop down doesn't work

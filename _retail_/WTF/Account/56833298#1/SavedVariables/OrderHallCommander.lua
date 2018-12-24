@@ -8,6 +8,10 @@ dbOHC = {
 			["firstun"] = false,
 		},
 	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
+	},
 	["global"] = {
 		["warn01_seen"] = 0,
 		["warn03_seen"] = 3,
@@ -15,10 +19,6 @@ dbOHC = {
 		},
 		["warn02_seen"] = 0,
 		["firstrun"] = false,
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
-		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -42,10 +42,13 @@ dbOHC = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["MAXCHAMP"] = 3,
 				["TROOPALERT"] = true,
+				["MAXCHAMP"] = 3,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
+			},
+			["blacklist"] = {
+				[1767] = true,
 			},
 			["showmenu"] = true,
 		},

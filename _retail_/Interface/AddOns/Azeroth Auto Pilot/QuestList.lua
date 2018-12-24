@@ -412,14 +412,18 @@ local function AAP_CreateQuestList()
 	AAP.QuestList.QuestFrames["MyProgressFS"]:SetFontObject("GameFontNormalSmall")
 	AAP.QuestList.QuestFrames["MyProgressFS"]:SetText("")
 	AAP.QuestList.QuestFrames["MyProgressFS"]:SetTextColor(1, 1, 0)
+	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQList"] == 0) then
+		AAP.QuestList.QuestFrames["MyProgress"]:Hide()
+	end
+	
 	local CLi
 	for CLi = 1, 20 do
 	
 		AAP["Icons"][CLi] = CreateFrame("Frame",nil,UIParent)
-		AAP["Icons"][CLi]:SetFrameStrata("BACKGROUND")
+		AAP["Icons"][CLi]:SetFrameStrata("HIGH")
 		AAP["Icons"][CLi]:SetWidth(5) -- Set these to whatever height/width is needed 
 		AAP["Icons"][CLi]:SetHeight(5) -- for your Texture
-		local t = 	AAP["Icons"][CLi]:CreateTexture(nil,"BACKGROUND")
+		local t = 	AAP["Icons"][CLi]:CreateTexture(nil,"HIGH")
 		t:SetTexture("Interface\\Addons\\Azeroth Auto Pilot\\Img\\Icon.blp")
 		t:SetAllPoints(AAP["Icons"][CLi])
 		AAP["Icons"][CLi].texture = t
@@ -507,7 +511,7 @@ local function AAP_CreateQuestList()
 		AAP.QuestList.QuestFrames["FS"..CLi]["Button"]:Hide()
 
 
-		AAP.QuestList2["BF"..CLi] = CreateFrame("frame", "CLQListF2"..CLi, AAP.QuestList21)
+		AAP.QuestList2["BF"..CLi] = CreateFrame("frame", "CLQListF2z"..CLi, AAP.QuestList21)
 		AAP.QuestList2["BF"..CLi]:SetWidth(410)
 		AAP.QuestList2["BF"..CLi]:SetHeight(38)
 		AAP.QuestList2["BF"..CLi]:SetPoint("BOTTOMLEFT", AAP.QuestList21, "BOTTOMLEFT",0,0)

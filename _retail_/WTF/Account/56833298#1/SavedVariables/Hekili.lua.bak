@@ -2562,13 +2562,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["package"] = "Protection Warrior",
+					["potionsReset"] = 20180919.1,
 					["aoe"] = 2,
-					["nameplates"] = true,
 					["debuffPadding"] = 0,
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["nameplateRange"] = 8,
-					["potionsReset"] = 20180919.1,
+					["nameplates"] = true,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -2579,13 +2579,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["debuffPadding"] = 0,
+					["nameplates"] = true,
 					["aoe"] = 2,
-					["potionsReset"] = 20180919.1,
 					["package"] = "Arms",
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["nameplateRange"] = 8,
-					["nameplates"] = true,
+					["potionsReset"] = 20180919.1,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -2596,13 +2596,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["package"] = "Fury",
+					["potionsReset"] = 20180919.1,
 					["aoe"] = 2,
-					["nameplates"] = true,
 					["debuffPadding"] = 0,
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["nameplateRange"] = 8,
-					["potionsReset"] = 20180919.1,
+					["nameplates"] = true,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -4151,9 +4151,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "mana.pct <= 95 & buff.clearcasting.react",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -4331,9 +4331,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
-								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & active_enemies < 3 & ( talent.amplification.enabled || ( ! talent.overpowered.enabled & azerite.arcane_pummeling.rank >= 2 ) || buff.arcane_power.down )",
 								["action"] = "arcane_missiles",
+								["chain"] = "1",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -4397,14 +4397,14 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["enabled"] = true,
 					["debuffPadding"] = 0,
-					["nameplates"] = false,
+					["damage"] = true,
 					["nameplateRange"] = 8,
 					["potion"] = "potion_of_rising_death",
 					["package"] = "Frost Mage",
-					["potionsReset"] = 20180919.1,
+					["nameplates"] = false,
 					["damageExpiration"] = 6,
-					["damage"] = true,
 					["cycle"] = false,
+					["potionsReset"] = 20180919.1,
 				},
 				[63] = {
 					["maxRefresh"] = 10,
@@ -4415,14 +4415,14 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["enabled"] = true,
 					["debuffPadding"] = 0,
-					["nameplates"] = false,
+					["damage"] = true,
 					["nameplateRange"] = 8,
 					["potion"] = "battle_potion_of_intellect",
 					["package"] = "Fire",
-					["potionsReset"] = 20180919.1,
+					["nameplates"] = false,
 					["damageExpiration"] = 6,
-					["damage"] = true,
 					["cycle"] = false,
+					["potionsReset"] = 20180919.1,
 				},
 				[62] = {
 					["maxRefresh"] = 10,
@@ -4433,14 +4433,14 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["enabled"] = false,
 					["debuffPadding"] = 0,
-					["nameplates"] = false,
+					["damage"] = true,
 					["nameplateRange"] = 8,
 					["potion"] = "battle_potion_of_intellect",
 					["package"] = "Arcane",
-					["potionsReset"] = 20180919.1,
+					["nameplates"] = false,
 					["damageExpiration"] = 6,
-					["damage"] = true,
 					["cycle"] = false,
+					["potionsReset"] = 20180919.1,
 				},
 			},
 		},
@@ -4453,54 +4453,54 @@ HekiliDB = {
 				[103] = {
 					["enabled"] = true,
 					["maxRefresh"] = 10,
-					["buffPadding"] = 0.25,
 					["potionsReset"] = 20180919.1,
-					["throttleRefresh"] = false,
-					["gcdSync"] = true,
-					["aoe"] = 3,
-					["debuffPadding"] = 0,
 					["cycle"] = false,
+					["package"] = "Feral",
+					["damageExpiration"] = 3,
+					["nameplates"] = true,
+					["throttleRefresh"] = false,
+					["buffPadding"] = 0.25,
 					["nameplateRange"] = 8,
 					["potion"] = "battle_potion_of_agility",
-					["package"] = "Feral",
-					["nameplates"] = true,
-					["damageExpiration"] = 3,
+					["debuffPadding"] = 0,
+					["aoe"] = 3,
+					["gcdSync"] = true,
 					["damageDots"] = false,
 					["damage"] = true,
 				},
 				[104] = {
 					["enabled"] = true,
 					["maxRefresh"] = 10,
-					["buffPadding"] = 0.25,
 					["nameplates"] = true,
-					["package"] = "Guardian",
-					["gcdSync"] = true,
-					["aoe"] = 3,
-					["debuffPadding"] = 0,
 					["cycle"] = false,
+					["throttleRefresh"] = false,
+					["damageExpiration"] = 6,
+					["potionsReset"] = 20180919.1,
+					["package"] = "Guardian",
+					["buffPadding"] = 0.25,
 					["nameplateRange"] = 8,
 					["potion"] = "steelskin_potion",
-					["throttleRefresh"] = false,
-					["potionsReset"] = 20180919.1,
-					["damageExpiration"] = 6,
+					["debuffPadding"] = 0,
+					["aoe"] = 3,
+					["gcdSync"] = true,
 					["damageDots"] = false,
 					["damage"] = true,
 				},
 				[102] = {
 					["enabled"] = true,
 					["maxRefresh"] = 10,
-					["buffPadding"] = 0.25,
 					["potionsReset"] = 20180919.1,
-					["throttleRefresh"] = false,
-					["gcdSync"] = true,
-					["aoe"] = 3,
-					["debuffPadding"] = 0,
 					["cycle"] = false,
+					["package"] = "Balance",
+					["damageExpiration"] = 6,
+					["nameplates"] = false,
+					["throttleRefresh"] = false,
+					["buffPadding"] = 0.25,
 					["nameplateRange"] = 8,
 					["potion"] = "potion_of_rising_death",
-					["package"] = "Balance",
-					["nameplates"] = false,
-					["damageExpiration"] = 6,
+					["debuffPadding"] = 0,
+					["aoe"] = 3,
+					["gcdSync"] = true,
 					["damageDots"] = false,
 					["damage"] = true,
 				},
@@ -4699,9 +4699,9 @@ HekiliDB = {
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["action"] = "potion",
 								["criteria"] = "target.time_to_die < 65 || ( time_to_die < 180 & ( buff.berserk.up || buff.incarnation.up ) )",
 								["potion"] = "battle_potion_of_agility",
+								["action"] = "potion",
 							}, -- [8]
 							{
 								["enabled"] = true,
@@ -4930,9 +4930,9 @@ HekiliDB = {
 				["Balance"] = {
 					["source"] = "https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/PreRaids/PR_Druid_Balance.simc",
 					["builtIn"] = true,
-					["date"] = 20181211.1732,
+					["date"] = 20181215.2112,
 					["author"] = "SimC",
-					["desc"] = "# Balance Druid\n# https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/PreRaids/PR_Druid_Balance.simc\n# December 11, 2018 - 15:08\n\n# Changes:\n# - Added Solar Beam.\n# - Changed target_if cases to cycle_targets.\n# - Adjusted sf_targets variable for addon syntax.",
+					["desc"] = "# Balance Druid\n# https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/PreRaids/PR_Druid_Balance.simc\n# December 15, 2018 - 21:01\n\n# Changes:\n# - Added Solar Beam.\n# - Changed target_if cases to cycle_targets.\n# - Adjusted sf_targets variable for addon syntax.\n# - Added Use Items.",
 					["lists"] = {
 						["default"] = {
 							{
@@ -4976,108 +4976,101 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "use_item",
 								["criteria"] = "cooldown.ca_inc.remains > 30",
-								["slot"] = "trinket1",
+								["action"] = "use_items",
 							}, -- [9]
-							{
-								["enabled"] = true,
-								["action"] = "use_item",
-								["criteria"] = "cooldown.ca_inc.remains > 30",
-								["slot"] = "trinket2",
-							}, -- [10]
 							{
 								["action"] = "warrior_of_elune",
 								["enabled"] = true,
-							}, -- [11]
+							}, -- [10]
 							{
 								["enabled"] = true,
 								["criteria"] = "azerite.lively_spirit.enabled & ( cooldown.incarnation.remains < 2 || cooldown.celestial_alignment.remains < 12 )",
 								["action"] = "innervate",
-							}, -- [12]
+							}, -- [11]
 							{
 								["enabled"] = true,
 								["criteria"] = "astral_power >= 40",
 								["action"] = "incarnation",
-							}, -- [13]
+							}, -- [12]
 							{
 								["enabled"] = true,
 								["criteria"] = "astral_power >= 40 & ( ! azerite.lively_spirit.enabled || buff.lively_spirit.up ) & ( buff.starlord.stack >= 2 || ! talent.starlord.enabled || ! variable.az_ss )",
 								["action"] = "celestial_alignment",
-							}, -- [14]
+							}, -- [13]
 							{
 								["enabled"] = true,
 								["criteria"] = "( buff.ca_inc.up || cooldown.ca_inc.remains > 30 ) & astral_power.deficit >= 13",
 								["action"] = "fury_of_elune",
-							}, -- [15]
+							}, -- [14]
 							{
 								["enabled"] = true,
 								["criteria"] = "( buff.ca_inc.up || cooldown.ca_inc.remains > 30 ) & astral_power.deficit >= 25",
 								["action"] = "force_of_nature",
-							}, -- [16]
+							}, -- [15]
 							{
 								["enabled"] = true,
-								["name"] = "starlord",
-								["action"] = "cancel_buff",
+								["buff_name"] = "starlord",
 								["criteria"] = "buff.starlord.remains < 8 & astral_power > 87",
-							}, -- [17]
+								["action"] = "cancel_buff",
+							}, -- [16]
 							{
 								["enabled"] = true,
 								["criteria"] = "( buff.starlord.stack < 3 || buff.starlord.remains >= 8 ) & spell_targets >= variable.sf_targets & ( target.time_to_die + 1 ) * spell_targets > cost % 2.5",
 								["action"] = "starfall",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.starlord.enabled & ( buff.starlord.stack < 3 || buff.starlord.remains >= 8 & buff.arcanic_pulsar.stack < 8 ) || ! talent.starlord.enabled & ( buff.arcanic_pulsar.stack < 8 || buff.ca_inc.up ) ) & spell_targets.starfall < variable.sf_targets & buff.lunar_empowerment.stack + buff.solar_empowerment.stack < 4 & buff.solar_empowerment.stack < 3 & buff.lunar_empowerment.stack < 3 & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.starsurge ) || target.time_to_die <= execute_time * astral_power % 40 || astral_power.deficit < 13",
+								["action"] = "starsurge",
 							}, -- [18]
 							{
 								["enabled"] = true,
-								["criteria"] = "( buff.starlord.stack < 3 || buff.starlord.remains >= 8 ) & spell_targets.starfall < variable.sf_targets & buff.lunar_empowerment.stack + buff.solar_empowerment.stack < 4 & buff.solar_empowerment.stack < 3 & buff.lunar_empowerment.stack < 3 & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.starsurge ) || target.time_to_die <= execute_time * astral_power % 40",
-								["action"] = "starsurge",
+								["criteria"] = "refreshable & ( astral_power.deficit >= 8 & floor ( target.time_to_die % tick_time ) * spell_targets >= 4 + spell_targets & ( spell_targets > 1 + talent.twin_moons.enabled || dot.moonfire.ticking ) & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.sunfire ) )",
+								["action"] = "sunfire",
+								["cycle_targets"] = 1,
 							}, -- [19]
 							{
 								["enabled"] = true,
-								["action"] = "sunfire",
-								["criteria"] = "refreshable & ( astral_power.deficit >= 8 & floor ( target.time_to_die % tick_time ) * spell_targets >= 5 & ( spell_targets > 1 + talent.twin_moons.enabled || dot.moonfire.ticking ) & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.sunfire ) )",
+								["criteria"] = "refreshable & ( astral_power.deficit >= 8 & floor ( target.time_to_die % tick_time ) * spell_targets >= 5 & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.moonfire ) )",
+								["action"] = "moonfire",
 								["cycle_targets"] = 1,
 							}, -- [20]
 							{
 								["enabled"] = true,
-								["action"] = "moonfire",
-								["criteria"] = "refreshable & ( astral_power.deficit >= 8 & floor ( target.time_to_die % tick_time ) * spell_targets >= 5 & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.moonfire ) )",
+								["criteria"] = "refreshable & ( astral_power.deficit >= 13 & floor ( target.time_to_die % tick_time ) >= 6 & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.stellar_flare ) )",
+								["action"] = "stellar_flare",
 								["cycle_targets"] = 1,
 							}, -- [21]
 							{
 								["enabled"] = true,
-								["action"] = "stellar_flare",
-								["criteria"] = "refreshable & ( astral_power.deficit >= 13 & floor ( target.time_to_die % tick_time ) >= 5 & ( ! variable.az_ss || ! buff.ca_inc.up || ! prev.stellar_flare ) )",
-								["cycle_targets"] = 1,
-							}, -- [22]
-							{
-								["enabled"] = true,
 								["criteria"] = "astral_power.deficit >= 15",
 								["action"] = "new_moon",
-							}, -- [23]
+							}, -- [22]
 							{
 								["enabled"] = true,
 								["criteria"] = "astral_power.deficit >= 25",
 								["action"] = "half_moon",
-							}, -- [24]
+							}, -- [23]
 							{
 								["enabled"] = true,
 								["criteria"] = "astral_power.deficit >= 45",
 								["action"] = "full_moon",
-							}, -- [25]
+							}, -- [24]
 							{
 								["enabled"] = true,
 								["criteria"] = "buff.solar_empowerment.stack < 3 & ( astral_power.deficit >= 17 || buff.lunar_empowerment.stack = 3 ) & ( ( buff.warrior_of_elune.up || buff.lunar_empowerment.up || spell_targets >= 2 & ! buff.solar_empowerment.up || variable.az_ds & ! buff.dawning_sun.up ) & ( ! variable.az_ss || ! buff.ca_inc.up || ( ! prev.lunar_strike & ! talent.incarnation.enabled || prev.solar_wrath ) ) || variable.az_ss & buff.ca_inc.up & prev.solar_wrath )",
 								["action"] = "lunar_strike",
-							}, -- [26]
+							}, -- [25]
 							{
 								["enabled"] = true,
 								["criteria"] = "variable.az_ss < 3 || ! buff.ca_inc.up || ! prev.solar_wrath",
 								["action"] = "solar_wrath",
-							}, -- [27]
+							}, -- [26]
 							{
 								["action"] = "sunfire",
 								["enabled"] = true,
-							}, -- [28]
+							}, -- [27]
 						},
 						["precombat"] = {
 							{
@@ -5091,21 +5084,21 @@ HekiliDB = {
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["var_name"] = "az_ss",
-								["action"] = "variable",
 								["value"] = "azerite.streaking_stars.rank",
+								["action"] = "variable",
+								["var_name"] = "az_ss",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["var_name"] = "az_ds",
-								["action"] = "variable",
 								["value"] = "azerite.dawning_sun.rank",
+								["action"] = "variable",
+								["var_name"] = "az_ds",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["var_name"] = "az_ap",
-								["action"] = "variable",
 								["value"] = "azerite.arcanic_pulsar.rank",
+								["action"] = "variable",
+								["var_name"] = "az_ap",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -5131,9 +5124,9 @@ HekiliDB = {
 							}, -- [11]
 						},
 					},
-					["version"] = 20181211.1732,
-					["warnings"] = "WARNING:  The import for 'default' required some automated changes.\nLine 17: Unsupported action 'cancel_buff'.\n\nImported 2 action lists.\n",
-					["profile"] = "# Balance Druid\n# https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/PreRaids/PR_Druid_Balance.simc\n# December 11, 2018 - 15:08\n\n# Changes:\n# - Added Solar Beam.\n# - Changed target_if cases to cycle_targets.\n# - Adjusted sf_targets variable for addon syntax.\n\n# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat=flask\nactions.precombat+=/food\nactions.precombat+=/augmentation\n# Azerite Variables\nactions.precombat+=/variable,name=az_ss,value=azerite.streaking_stars.rank\nactions.precombat+=/variable,name=az_ds,value=azerite.dawning_sun.rank\nactions.precombat+=/variable,name=az_ap,value=azerite.arcanic_pulsar.rank\n# Starfall v Starsurge target cutoff\nactions.precombat+=/variable,name=sf_targets,op=set,value=5-(talent.stellar_drift.enabled||(talent.incarnation.enabled&talent.twin_moons.enabled&!azerite.arcanic_pulsar.enabled))-(!azerite.arcanic_pulsar.enabled&!talent.starlord.enabled)\nactions.precombat+=/moonkin_form\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\nactions.precombat+=/snapshot_stats\nactions.precombat+=/potion\nactions.precombat+=/solar_wrath\n\n# Executed every time the actor is available.\nactions=solar_beam\nactions+=/potion,if=buff.ca_inc.up\nactions+=/blood_fury,if=buff.ca_inc.up\nactions+=/berserking,if=buff.ca_inc.up\nactions+=/arcane_torrent,if=buff.ca_inc.up\nactions+=/lights_judgment,if=buff.ca_inc.up\nactions+=/fireblood,if=buff.ca_inc.up\nactions+=/ancestral_call,if=buff.ca_inc.up\n# CDs\nactions+=/use_item,slot=trinket1,if=cooldown.ca_inc.remains>30\nactions+=/use_item,slot=trinket2,if=cooldown.ca_inc.remains>30\nactions+=/warrior_of_elune\nactions+=/innervate,if=azerite.lively_spirit.enabled&(cooldown.incarnation.remains<2||cooldown.celestial_alignment.remains<12)\nactions+=/incarnation,if=astral_power>=40\nactions+=/celestial_alignment,if=astral_power>=40&(!azerite.lively_spirit.enabled||buff.lively_spirit.up)&(buff.starlord.stack>=2||!talent.starlord.enabled||!variable.az_ss)\nactions+=/fury_of_elune,if=(buff.ca_inc.up||cooldown.ca_inc.remains>30)&astral_power.deficit>=13\nactions+=/force_of_nature,if=(buff.ca_inc.up||cooldown.ca_inc.remains>30)&astral_power.deficit>=25\n# Spenders\nactions+=/cancel_buff,name=starlord,if=buff.starlord.remains<8&astral_power>87\nactions+=/starfall,if=(buff.starlord.stack<3||buff.starlord.remains>=8)&spell_targets>=variable.sf_targets&(target.time_to_die+1)*spell_targets>cost%2.5\nactions+=/starsurge,if=(buff.starlord.stack<3||buff.starlord.remains>=8)&spell_targets.starfall<variable.sf_targets&buff.lunar_empowerment.stack+buff.solar_empowerment.stack<4&buff.solar_empowerment.stack<3&buff.lunar_empowerment.stack<3&(!variable.az_ss||!buff.ca_inc.up||!prev.starsurge)||target.time_to_die<=execute_time*astral_power%40\n# DoTs\nactions+=/sunfire,cycle_targets=1,if=refreshable&(astral_power.deficit>=8&floor(target.time_to_die%tick_time)*spell_targets>=5&(spell_targets>1+talent.twin_moons.enabled||dot.moonfire.ticking)&(!variable.az_ss||!buff.ca_inc.up||!prev.sunfire))\nactions+=/moonfire,cycle_targets=1,if=refreshable&(astral_power.deficit>=8&floor(target.time_to_die%tick_time)*spell_targets>=5&(!variable.az_ss||!buff.ca_inc.up||!prev.moonfire))\nactions+=/stellar_flare,cycle_targets=1,if=refreshable&(astral_power.deficit>=13&floor(target.time_to_die%tick_time)>=5&(!variable.az_ss||!buff.ca_inc.up||!prev.stellar_flare))\n# Generators\nactions+=/new_moon,if=astral_power.deficit>=15\nactions+=/half_moon,if=astral_power.deficit>=25\nactions+=/full_moon,if=astral_power.deficit>=45\nactions+=/lunar_strike,if=buff.solar_empowerment.stack<3&(astral_power.deficit>=17||buff.lunar_empowerment.stack=3)&((buff.warrior_of_elune.up||buff.lunar_empowerment.up||spell_targets>=2&!buff.solar_empowerment.up||variable.az_ds&!buff.dawning_sun.up)&(!variable.az_ss||!buff.ca_inc.up||(!prev.lunar_strike&!talent.incarnation.enabled||prev.solar_wrath))||variable.az_ss&buff.ca_inc.up&prev.solar_wrath)\nactions+=/solar_wrath,if=variable.az_ss<3||!buff.ca_inc.up||!prev.solar_wrath\n# Fallthru for movement\nactions+=/sunfire",
+					["version"] = 20181215.2112,
+					["warnings"] = "Imported 2 action lists.\n",
+					["profile"] = "# Balance Druid\n# https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/PreRaids/PR_Druid_Balance.simc\n# December 15, 2018 - 21:01\n\n# Changes:\n# - Added Solar Beam.\n# - Changed target_if cases to cycle_targets.\n# - Adjusted sf_targets variable for addon syntax.\n# - Added Use Items.\n\n# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat=flask\nactions.precombat+=/food\nactions.precombat+=/augmentation\n# Azerite Variables\nactions.precombat+=/variable,name=az_ss,value=azerite.streaking_stars.rank\nactions.precombat+=/variable,name=az_ds,value=azerite.dawning_sun.rank\nactions.precombat+=/variable,name=az_ap,value=azerite.arcanic_pulsar.rank\n# Starfall v Starsurge target cutoff\nactions.precombat+=/variable,name=sf_targets,op=set,value=5-(talent.stellar_drift.enabled||(talent.incarnation.enabled&talent.twin_moons.enabled&!azerite.arcanic_pulsar.enabled))-(!azerite.arcanic_pulsar.enabled&!talent.starlord.enabled)\nactions.precombat+=/moonkin_form\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\nactions.precombat+=/snapshot_stats\nactions.precombat+=/potion\nactions.precombat+=/solar_wrath\n\n# Executed every time the actor is available.\nactions=solar_beam\nactions+=/potion,if=buff.ca_inc.up\nactions+=/blood_fury,if=buff.ca_inc.up\nactions+=/berserking,if=buff.ca_inc.up\nactions+=/arcane_torrent,if=buff.ca_inc.up\nactions+=/lights_judgment,if=buff.ca_inc.up\nactions+=/fireblood,if=buff.ca_inc.up\nactions+=/ancestral_call,if=buff.ca_inc.up\n\n# CDs\nactions+=/use_items,if=cooldown.ca_inc.remains>30\nactions+=/warrior_of_elune\nactions+=/innervate,if=azerite.lively_spirit.enabled&(cooldown.incarnation.remains<2||cooldown.celestial_alignment.remains<12)\nactions+=/incarnation,if=astral_power>=40\nactions+=/celestial_alignment,if=astral_power>=40&(!azerite.lively_spirit.enabled||buff.lively_spirit.up)&(buff.starlord.stack>=2||!talent.starlord.enabled||!variable.az_ss)\nactions+=/fury_of_elune,if=(buff.ca_inc.up||cooldown.ca_inc.remains>30)&astral_power.deficit>=13\nactions+=/force_of_nature,if=(buff.ca_inc.up||cooldown.ca_inc.remains>30)&astral_power.deficit>=25\n\n# Spenders\nactions+=/cancel_buff,name=starlord,if=buff.starlord.remains<8&astral_power>87\nactions+=/starfall,if=(buff.starlord.stack<3||buff.starlord.remains>=8)&spell_targets>=variable.sf_targets&(target.time_to_die+1)*spell_targets>cost%2.5\nactions+=/starsurge,if=(talent.starlord.enabled&(buff.starlord.stack<3||buff.starlord.remains>=8&buff.arcanic_pulsar.stack<8)||!talent.starlord.enabled&(buff.arcanic_pulsar.stack<8||buff.ca_inc.up))&spell_targets.starfall<variable.sf_targets&buff.lunar_empowerment.stack+buff.solar_empowerment.stack<4&buff.solar_empowerment.stack<3&buff.lunar_empowerment.stack<3&(!variable.az_ss||!buff.ca_inc.up||!prev.starsurge)||target.time_to_die<=execute_time*astral_power%40||astral_power.deficit<13\n\n# DoTs\nactions+=/sunfire,cycle_targets=1,if=refreshable&(astral_power.deficit>=8&floor(target.time_to_die%tick_time)*spell_targets>=4+spell_targets&(spell_targets>1+talent.twin_moons.enabled||dot.moonfire.ticking)&(!variable.az_ss||!buff.ca_inc.up||!prev.sunfire))\nactions+=/moonfire,cycle_targets=1,if=refreshable&(astral_power.deficit>=8&floor(target.time_to_die%tick_time)*spell_targets>=5&(!variable.az_ss||!buff.ca_inc.up||!prev.moonfire))\nactions+=/stellar_flare,cycle_targets=1,if=refreshable&(astral_power.deficit>=13&floor(target.time_to_die%tick_time)>=6&(!variable.az_ss||!buff.ca_inc.up||!prev.stellar_flare))\n\n# Generators\nactions+=/new_moon,if=astral_power.deficit>=15\nactions+=/half_moon,if=astral_power.deficit>=25\nactions+=/full_moon,if=astral_power.deficit>=45\nactions+=/lunar_strike,if=buff.solar_empowerment.stack<3&(astral_power.deficit>=17||buff.lunar_empowerment.stack=3)&((buff.warrior_of_elune.up||buff.lunar_empowerment.up||spell_targets>=2&!buff.solar_empowerment.up||variable.az_ds&!buff.dawning_sun.up)&(!variable.az_ss||!buff.ca_inc.up||(!prev.lunar_strike&!talent.incarnation.enabled||prev.solar_wrath))||variable.az_ss&buff.ca_inc.up&prev.solar_wrath)\nactions+=/solar_wrath,if=variable.az_ss<3||!buff.ca_inc.up||!prev.solar_wrath\n\n# Fallthru for movement\nactions+=/sunfire",
 					["spec"] = 102,
 				},
 				["Guardian"] = {
@@ -5328,13 +5321,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["package"] = "Shadow",
 					["debuffPadding"] = 0,
+					["potionsReset"] = 20180919.1,
 					["nameplates"] = false,
-					["aoe"] = 3,
 					["cycle"] = false,
 					["nameplateRange"] = 8,
 					["potion"] = "potion_of_rising_death",
 					["throttleRefresh"] = false,
-					["potionsReset"] = 20180919.1,
+					["aoe"] = 3,
 					["damageExpiration"] = 6,
 					["damageDots"] = false,
 					["damage"] = true,

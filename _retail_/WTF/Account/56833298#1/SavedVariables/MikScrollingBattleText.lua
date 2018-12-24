@@ -144,7 +144,7 @@ MSBTProfiles_SavedVars = {
 				["OUTGOING_SPELL_MISS"] = {
 					["disabled"] = true,
 				},
-				["OUTGOING_PARRY"] = {
+				["NOTIFICATION_BUFF_STACK"] = {
 					["disabled"] = true,
 				},
 				["OUTGOING_DEFLECT"] = {
@@ -153,13 +153,13 @@ MSBTProfiles_SavedVars = {
 				["INCOMING_SPELL_BLOCK"] = {
 					["disabled"] = true,
 				},
-				["NOTIFICATION_BUFF_STACK"] = {
+				["NOTIFICATION_COOLDOWN"] = {
 					["disabled"] = true,
 				},
 				["NOTIFICATION_SHADOW_ORBS_CHANGE"] = {
 					["disabled"] = true,
 				},
-				["NOTIFICATION_COOLDOWN"] = {
+				["OUTGOING_PARRY"] = {
 					["disabled"] = true,
 				},
 				["PET_OUTGOING_HEAL"] = {
