@@ -1,5 +1,6 @@
 
 OmniCC4Config = {
+	["version"] = "8.1.0",
 	["groupSettings"] = {
 		["base"] = {
 			["minDuration"] = 2,
@@ -27,5 +28,4 @@ OmniCC4Config = {
 	},
 	["groups"] = {
 	},
-	["version"] = "8.1.0",
 }

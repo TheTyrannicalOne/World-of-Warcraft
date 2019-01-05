@@ -15,7 +15,7 @@ FishingTranslations["Inject"] = {
     DASH = " -- ",
 
     AUTHOR = "Sutorix (sutorix@hotmail.com)",
-    COPYRIGHT = "(c) 2005-2015 by The Software Cobbler",
+    COPYRIGHT = "(c) 2005-2019 by The Software Cobbler",
 
     WEEKLY = "weekly",
     HOURLY = "hourly",
@@ -259,6 +259,7 @@ FishingTranslations["enUS"] = {
     CONFIG_PREVENTRECAST_INFO  = "Invoking the macro while fishing will not cast again. Lures will be reapplied if needed.",
     CONFIG_TOONMACRO_ONOFF  = "Per player",
     CONFIG_TOONMACRO_INFO   = "Create the fishing macro per player.",
+    FBMACRO_HELP = "Execute the fishing macro",
 
     CLICKTOSWITCH_ONOFF		  = "Click to switch",
     CLICKTOSWITCH_INFO		  = "If enabled, a left click switches outfits, otherwise it brings up the Fishing Buddy window.",

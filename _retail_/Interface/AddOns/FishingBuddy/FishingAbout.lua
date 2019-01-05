@@ -156,7 +156,8 @@ credits[FBConstants.ROLE_HELP_SUGGESTIONS] = {
 	["brykrys"] = { "Corpse Worm" },
 	["Ross"] = { "Improved action button" },
 	["p3lim"] = { "For the ExtraQuestButton addon!" },
-	["Zeglar"] = { "Raid Boss and server reset time" }
+    ["Zeglar"] = { "Raid Boss and server reset time" },
+    ["bsmorgan"] = { "Group size specific locations for watcher." }
 };
 
 credits[FBConstants.ROLE_ADDON_AUTHORS] = {

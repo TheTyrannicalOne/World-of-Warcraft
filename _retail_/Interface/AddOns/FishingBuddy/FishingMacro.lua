@@ -8,6 +8,9 @@ local _
 local FL = LibStub("LibFishing-1.0");
 local LO = LibStub("LibOptionsFrame-1.0");
 
+local MACRO_EDITOR_NAME = "FishingBuddyOption_MacroEditor"
+local GSB = FishingBuddy.GetSettingBool;
+
 MacroOptions = {
 	["CreateMacro"] = {
 		["text"] = FBConstants.CONFIG_CREATEMACRO_ONOFF,
@@ -17,12 +20,13 @@ MacroOptions = {
         ["default"] = false,
     },
     ["MacroName"] = {
-        ["tooltip"] = FBConstants.CONFIG_CREATEMACRO_INFO,
-        ["button"] = "FishingBuddyOption_MaxMacroEditBox",
-        ["margin"] = { 12, 8 },
+        ["button"] = MACRO_EDITOR_NAME,
         ["alone"] = 1,
         ["v"] = 1,
-		["global"] = 1,
+        ["global"] = 1,
+        ["setup"] = function(self)
+            self:FixSizes()
+        end,
         ["default"] = FBConstants.MACRONAME,
         ["parents"] = { ["CreateMacro"] = "h" },
     },
@@ -47,7 +51,7 @@ MacroOptions = {
 
 local MacroEditBox =
 {
-    ["name"] = "FishingBuddyOption_MacroEditBox",
+    ["name"] = "FB_MacroEditBox",
     ["rightextra"] = 32,
     ["label"] = NAME,
     ["setting"] = "MacroName"
@@ -64,27 +68,30 @@ local function GetMacroIndex(macroname)
 end
 
 local function CreateOrUpdateMacro(name, icon, body, perchar)
-    local exists = GetMacroIndex(name);
-    if (exists) then
-        local isglobal = (exists <= _G.MAX_ACCOUNT_MACROS);
-        if ((perchar and isglobal) or (not perchar and not isglobal)) then
-            -- switch per char and global
-            DeleteMacro(name);
-            exists = nil;
-        end
-    end
+    if not FishingBuddy.CheckCombat() then
+        if name and icon and body then
+            local exists = GetMacroIndex(name);
+            if (exists) then
+                local isglobal = (exists <= _G.MAX_ACCOUNT_MACROS);
+                if ((perchar and isglobal) or (not perchar and not isglobal)) then
+                    -- switch per char and global
+                    DeleteMacro(name);
+                    exists = nil;
+                end
+            end
 
-    if (exists) then
-        EditMacro(name, nil, icon, body, 1, perchar);
-    else
-        CreateMacro(name, icon, body, perchar);
+            if (exists) then
+                EditMacro(name, nil, icon, body, 1, perchar);
+            else
+                CreateMacro(name, icon, body, perchar);
+            end
+        end
     end
 end
 
-local function CreateFishingMacro()
-    local GSB = FishingBuddy.GetSettingBool;
+local function BuildFishingMacro()
     local _, fishing = FL:GetFishingSkillInfo();
-    local update, id, name = GetUpdateLure();
+    local update, id, name = FishingBuddy.GetUpdateLure();
     local bag, slot;
     if (update) then
         bag, slot = FL:FindThisItem(id);
@@ -106,7 +113,40 @@ local function CreateFishingMacro()
         end
         action = action..fishing
     end
+    return "#showtooltip Fishing\n/fb macro\n"..action
+end
 
+local function FishingMacro()
+    local macrotext = BuildFishingMacro();
+    local macro_name = FishingBuddy.GetSetting("MacroName");
+    CreateOrUpdateMacro(macro_name, "INV_Fishingpole_02", macrotext, GSB("ToonMacro"));
+end
+FishingBuddy.FishingMacro = FishingMacro;
+
+local function SetupMacroKeyBinding()
+    local key1, key2 = GetBindingKey("FISHINGBUDDY_GOFISHING");
+    if key1 or key2 then
+        local GSB = FishingBuddy.GetSettingBool;
+        if GSB("ToonMacro") then
+            macro_set = CHARACTER_BINDINGS;
+        else
+            macro_set = ACCOUNT_BINDINGS;
+        end
+        local macro_name = FishingBuddy.GetSetting("MacroName");
+        local command = "MACRO "..macro_name;
+        if key1 then
+            SetOverrideBinding(FishingBuddyFrame, true, key1, command, macro_set);
+        end
+        if key2 then
+            SetOverrideBinding(FishingBuddyFrame, true, key2, command, macro_set);
+        end
+        return true
+    end
+    return false
+end
+FishingBuddy.SetupMacroKeyBinding = SetupMacroKeyBinding
+
+local function CreateFishingMacro()
     local numglobal,numperchar = GetNumMacros();
     local perchar = nil;
     local fullup;
@@ -114,7 +154,6 @@ local function CreateFishingMacro()
         if (numperchar >= _G.MAX_CHARACTER_MACROS) then
             fullup = FBConstants.NOCREATEMACROPER;
         end
-        perchar = 1;
     else
         if (numglobal >= _G.MAX_ACCOUNT_MACROS) then
             fullup = FBConstants.NOCREATEMACROGLOB;
@@ -122,45 +161,53 @@ local function CreateFishingMacro()
     end
 
     if (fullup) then
-        FishingBuddy.Message(fullup.."\""..FBConstants.MACRONAME.."\"", 1, 0, 0);
-        return;
+        local macro_name = FishingBuddy.GetSetting("MacroName");
+        FishingBuddy.Message(fullup.."\""..macro_name.."\"", 1, 0, 0);
+        return false;
     end
-
-    CreateOrUpdateMacro(FBConstants.MACRONAME, "INV_Fishingpole_02", "#showtooltip Fishing\n/fb fishing start\n"..action, perchar);
+    FishingMacro();
+    return true;
 end
+FishingBuddy.CreateFishingMacro = CreateFishingMacro
 
 local function PrepareEditBox()
     MacroEditBox['getter'] = FishingBuddy.GetSetting;
     MacroEditBox['setter'] = FishingBuddy.SetSetting;
-    LO:CreateEditBox(MacroEditBox)
+    local editbox = LO:CreateEditBox(MacroEditBox)
+    local holder = FishingBuddy.CreateLabeledThing(MACRO_EDITOR_NAME, NAME, editbox)
+    holder.button = CreateFrame("Button", nil, holder, "UIPanelButtonTemplate");
+    holder.button:SetScript("OnClick", CreateFishingMacro)
+    holder.button:ClearAllPoints()
+    holder.button:SetPoint("CENTER", holder, "CENTER");
+    holder.button:SetPoint("TOP", holder.thing, "BOTTOM", 0, -8);
+    holder.button:SetHeight(21);
+    holder.button.Text:SetText(CREATE_PROFESSION)
+    holder.button:SetWidth(holder.button.Text:GetWidth() + 32)
+    holder.height_adjust = holder.button:GetHeight() + 16;
+    holder:FixSizes();
 end
 
 MacroEvents = {}
 MacroEvents["VARIABLES_LOADED"] = function(started)
     PrepareEditBox()
     FishingBuddy.OptionsFrame.HandleOptions(MACROS, "Interface\\Icons\\INV_Misc_PaperBundle04a", MacroOptions);
+end
+
+MacroEvents[FBConstants.OPT_UPDATE_EVT] = function()
+    local macro_name = FishingBuddy.GetSetting("MacroName");
+    if GetMacroIndex(macro_name) then
+        SetupMacroKeyBinding();
+    end
+
     if (false) then
     -- make sure we have the Macro globals
-    -- if (not IsAddOnLoaded("Blizzard_MacroUI")) then
-    --	LoadAddOn("Blizzard_MacroUI");
-    -- end
-
-        if (FishingBuddy.GetSettingBool("CreateMacro")) then
-            CreateFishingMacro();
-        else
-            DeleteMacro(FBConstants.MACRONAME);
-        end
-        if (FishingBuddy.GetSettingBool("CreateMacro")) then
-            -- CreateFishingMacro();
+        if (not IsAddOnLoaded("Blizzard_MacroUI")) then
+            LoadAddOn("Blizzard_MacroUI");
         end
     end
 end
 
 FishingBuddy.RegisterHandlers(MacroEvents);
-
--- local frame = CreateFrame("FRAME", "FishingAboutFrame", FishingBuddyFrame)
--- frame:SetScript("OnEvent", OnEvent)
--- frame:RegisterEvent("VARIABLES_LOADED")
 
 if ( FishingBuddy.Debugging ) then
     FishingBuddy.Commands["macrotest"] = {};

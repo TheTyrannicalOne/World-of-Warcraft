@@ -1,4 +1,11 @@
-﻿Version 1.9.24
+﻿Version 1.9.25p1
+- Fix for the watcher failing to be draggable
+
+Version 1.9.25
+- Updated fishing macro support, with key binding.
+- Add "watcher location by group size" feature, Curse #289
+
+Version 1.9.24
 - Hot fix for TOC change in the hotfix
 - Improve looting code
 - More internal code cleanup

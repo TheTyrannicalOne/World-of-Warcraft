@@ -2,8 +2,8 @@
 MasterPlanAG = {
 	["Illidan"] = {
 		["Zerkinz"] = {
-			["class"] = "DRUID",
 			["lastCacheTime"] = 1456134282,
+			["class"] = "DRUID",
 			["summary"] = {
 				["inProgress"] = {
 					[3] = 1453758371,
@@ -17,16 +17,16 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Aerionz"] = {
-			["class"] = "PALADIN",
 			["faction"] = "Horde",
+			["class"] = "PALADIN",
 		},
 		["Recloos"] = {
-			["class"] = "DRUID",
 			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 		["Milkd"] = {
-			["class"] = "PALADIN",
 			["faction"] = "Horde",
+			["class"] = "PALADIN",
 		},
 		["Xerkin"] = {
 			["lastCacheTime"] = 1458101277,
@@ -34,15 +34,25 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Aerion"] = {
-			["faction"] = "Horde",
 			["class"] = "ROGUE",
+			["faction"] = "Horde",
 		},
 		["Klitpounder"] = {
-			["class"] = "HUNTER",
 			["faction"] = "Horde",
+			["class"] = "HUNTER",
 		},
-		["Bennyhin"] = {
-			["class"] = "PRIEST",
+		["Zerkin"] = {
+			["class"] = "SHAMAN",
+			["lastCacheTime"] = 1462930208,
+			["summary"] = {
+				["ti1"] = 118530,
+				["tt1"] = true,
+				["inProgress"] = {
+					[265] = 1459257399,
+				},
+				["ti3"] = 127855,
+				["tt3"] = true,
+			},
 			["faction"] = "Horde",
 		},
 		["Xerkinz"] = {
@@ -50,29 +60,46 @@ MasterPlanAG = {
 			["lastCacheTime"] = 1453618172,
 			["faction"] = "Horde",
 		},
-		["Zerkin"] = {
-			["lastCacheTime"] = 1462930208,
-			["class"] = "SHAMAN",
-			["summary"] = {
-				["tt3"] = true,
-				["ti1"] = 118530,
-				["ti3"] = 127855,
-				["inProgress"] = {
-					[265] = 1459257399,
-				},
-				["tt1"] = true,
-			},
+		["Bennyhin"] = {
 			["faction"] = "Horde",
+			["class"] = "PRIEST",
 		},
 	},
-	["Zul'jin"] = {
-		["Tyrann"] = {
-			["class"] = "PRIEST",
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["lastCacheTime"] = 1545753390,
+			["summary"] = {
+				["lastOilTime"] = 1545753328,
+				["tt2"] = 1545017923,
+				["tt3"] = 1545014924,
+				["ti1"] = 118531,
+				["tt1"] = 1545017923,
+				["ti3"] = 127854,
+				["inProgress"] = {
+					[563] = 1545782126,
+					[276] = 1545789314,
+					[192] = 1545756871,
+					[194] = 1545758668,
+					[671] = 1545760492,
+					[673] = 1545767680,
+					[503] = 1545774865,
+					[664] = 1545767701,
+					[697] = 1545767734,
+					[745] = 1545818128,
+				},
+				["ti2"] = 122486,
+			},
 			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 7450,
+			["curOil"] = 66310,
 		},
-		["Vancard"] = {
-			["faction"] = "Horde",
-			["class"] = "MAGE",
+	},
+	["Tanaris"] = {
+		["Youngpoobs"] = {
+			["faction"] = "Alliance",
+			["class"] = "MONK",
 		},
 	},
 	["Black Dragonflight"] = {
@@ -81,55 +108,24 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 	},
-	["Tanaris"] = {
-		["Youngpoobs"] = {
-			["class"] = "MONK",
-			["faction"] = "Alliance",
-		},
-	},
 	["Sargeras"] = {
 		["Zerkinz"] = {
-			["faction"] = "Neutral",
 			["class"] = "SHAMAN",
+			["faction"] = "Neutral",
 		},
 		["Xerkinz"] = {
-			["faction"] = "Alliance",
 			["class"] = "DRUID",
+			["faction"] = "Alliance",
 		},
 	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["curOil"] = 66225,
-			["summary"] = {
-				["lastOilTime"] = 1545634605,
-				["tt2"] = 1545017923,
-				["tt3"] = 1545014924,
-				["tt1"] = 1545017923,
-				["ti1"] = 118531,
-				["ti3"] = 127854,
-				["inProgress"] = {
-					[485] = 1545648983,
-					[670] = 1545663372,
-					[263] = 1545663380,
-					[200] = 1545637250,
-					[186] = 1545638152,
-					[399] = 1545670555,
-					[187] = 1545637240,
-					[674] = 1545663364,
-					[544] = 1545663402,
-					[680] = 1545645338,
-					[482] = 1545656191,
-					[619] = 1545699403,
-					[564] = 1545699407,
-					[745] = 1545699405,
-				},
-				["ti2"] = 122486,
-			},
+	["Zul'jin"] = {
+		["Tyrann"] = {
 			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1545634761,
-			["curRes"] = 7318,
-			["class"] = "WARRIOR",
+			["class"] = "PRIEST",
+		},
+		["Vancard"] = {
+			["faction"] = "Horde",
+			["class"] = "MAGE",
 		},
 	},
 }

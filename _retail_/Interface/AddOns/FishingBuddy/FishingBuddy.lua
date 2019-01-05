@@ -374,7 +374,7 @@ end
 
 EasyCastInit = function(option, button)
     -- prettify drop down?
-    local check = FBEasyKeys.menu.label:GetWidth() + FBEasyKeys:GetWidth();
+    local check = FBEasyKeys:GetWidth();
     if (FishingBuddy.FitInOptionFrame(check)) then
         CastingOptions["EasyCast"].layoutright = "EasyCastKeys";
     else
@@ -895,6 +895,7 @@ local function GetUpdateLure()
 
     return false;
 end
+FishingBuddy.GetUpdateLure = GetUpdateLure
 
 local CaptureEvents = {};
 local trackedtime = 0;
@@ -958,6 +959,10 @@ CaptureEvents["UNIT_AURA"] = function(arg1)
             LastLure = nil;
         end
     end
+end
+
+CaptureEvents[FBConstants.OPT_UPDATE_EVT] = function()
+    FishingBuddyRoot:RegisterEvent("UPDATE_BINDINGS")
 end
 
 local function GetCurrentSpell()
@@ -1254,6 +1259,16 @@ FishingBuddy.Commands[FBConstants.FISHINGMODE].func =
 
         return true;
     end;
+    
+FishingBuddy.Commands['macro'] = {};
+FishingBuddy.Commands['macro'].help = FBConstants.FBMACRO_HELP;
+FishingBuddy.Commands['macro'].func =
+    function()
+        SetLastCastTime();
+        autopoleframe:Show();
+        FishingBuddy.FishingMacro();
+        return true;
+    end;
 
 local function OptionsUpdate(changed, closing)
     PushOptionChanges(changed, closing)
@@ -1528,6 +1543,15 @@ FishingBuddy.OnEvent = function(self, event, ...)
         StopFishingMode(true);
         FishingBuddy.SavePlayerInfo();
         RunHandlers(FBConstants.LOGOUT_EVT);
+    elseif ( event == "UPDATE_BINDINGS" ) then
+        local key1, key2 = GetBindingKey("FISHINGBUDDY_GOFISHING");
+        if key1 or key2 then
+            if FishingBuddy.CreateFishingMacro() then
+                self:UnregisterEvent(event);
+                FishingBuddy.SetupMacroKeyBinding();
+                self:RegisterEvent(event);
+            end
+        end
     elseif ( event == "VARIABLES_LOADED" ) then
         local _, name = FL:GetFishingSkillInfo();
         FishingBuddy.Initialize();

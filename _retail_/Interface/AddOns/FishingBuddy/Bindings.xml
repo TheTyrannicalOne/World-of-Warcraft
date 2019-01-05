@@ -21,9 +21,5 @@
 			FishingBuddy.Command(FBConstants.SWITCH);
 		end
 	</Binding>
-	<Binding name="FISHINGBUDDY_GOFISHING" category="ADDONS">
-		if ( keystate == "down" ) then
-			FishingBuddy.Command(FBConstants.FISHINGMODE);
-		end
-	</Binding>
+	<Binding name="FISHINGBUDDY_GOFISHING" category="ADDONS" />
 </Bindings>

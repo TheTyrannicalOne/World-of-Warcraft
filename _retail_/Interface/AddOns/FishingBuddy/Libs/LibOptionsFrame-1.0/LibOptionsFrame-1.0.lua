@@ -79,8 +79,11 @@ local function EditBox_OnLoad(self, info)
     end
     self:SetMaxLetters(maxLetters);
     self:SetHeight(info.height or 20);
-	self:SetAutoFocus(false)
-	self:SetTextInsets(0, 0, 3, 3)
+    self:SetTextInsets(0, 0, 3, 3)
+    self:SetMultiLine(false)
+    self:SetAutoFocus(false)
+    self:SetFontObject(ChatFontNormal)
+    self:EnableMouse(true)
 end
 
 local function EditBox_OnShow(self)
@@ -117,7 +120,6 @@ function OptionsLib:CreateEditBox(info)
     EditBox_OnLoad(s, info)
     s:SetScript("OnShow", EditBox_OnShow);
     s:SetScript("OnTextChanged", EditBox_OnTextChanged)
-    s:Hide()
     return s
 end
 
@@ -430,6 +432,11 @@ function OptionsLib:_dolayout(layout, lastbutton, firstoff)
             yoff = -(lb.margin[2] or SQUISH_OFF);
             firstoff = firstoff + lb.margin[1] or 0;
         end
+        if (rb) then
+            local h1 = lb:GetHeight();
+            local h2 = rb:GetHeight();
+            firstoff = firstoff + math.abs(h1 - h2);
+        end
         if ( not lastbutton ) then
             self:_firstposition(lb, firstoff, yoff);
         else
@@ -444,12 +451,12 @@ function OptionsLib:_dolayout(layout, lastbutton, firstoff)
             if ( rb.margin ) then
                 yoff = yoff + (rb.margin[2] or 0);
             end
-            rb:SetPoint("TOP", lb, "TOP");
+            rb:SetPoint("CENTER", lb, "CENTER");
             if ( rb.checkbox ) then
                 rb:SetPoint("RIGHT", self.reference, "RIGHT", -rb.width, 0);
                 rb:SetHitRectInsets(0, -rb.width, 0, 0);
             else
-                rb:SetPoint("RIGHT", self.reference, "RIGHT", -rb.slider, 0);
+                rb:SetPoint("RIGHT", self.reference, "RIGHT", -(rb.slider or 0), 0);
             end
         end
     end
@@ -490,15 +497,18 @@ local function CleanupButton(button)
         button:SetScript("OnClick", nil);
         button.checkbox = nil;
     end
+
+    if not button.custom then
+        local text = _G[button:GetName().."Text"];
+        if (text) then
+            text:SetText(button:GetName());
+        end
+    end
+
     button.custom = nil;
     button.option = nil;
     button:Hide();
     button:SetParent(nil);
-
-    local text = _G[button:GetName().."Text"];
-    if (text) then
-        text:SetText(button:GetName());
-    end
 end
 
 function OptionsLib:NextButton()
