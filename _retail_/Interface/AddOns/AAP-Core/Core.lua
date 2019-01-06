@@ -23,6 +23,8 @@ local CoreLoadin = 0
 AAP.AfkTimerVar = 0
 AAP.QuestListLoadin = 0
 AAP.BookingList = {}
+AAP.MapZoneIcons = {}
+AAP.MapZoneIconsRed = {}
 AAP.SettingsOpen = 0
 AAP.InCombat = 0
 AAP.BookUpdAfterCombat = 0
@@ -408,6 +410,12 @@ AAP.CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			end
 			if (not AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowBlobs"]) then
 				AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowBlobs"] = 1
+			end
+			if (not AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMap10s"]) then
+				AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMap10s"] = 0
+			end
+			if (not AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"]) then
+				AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"] = 1
 			end
 			if (not AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMapBlobs"]) then
 				AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMapBlobs"] = 1

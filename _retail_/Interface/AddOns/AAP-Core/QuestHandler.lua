@@ -1290,6 +1290,9 @@ local function AAP_PrintQStep()
 			if (AAPExtralk == 116) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Do Class Hall and pick zone and go there")
 			end
+			if (AAPExtralk == 117) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Cart")
+			end
 			AAP.QuestList.QuestFrames["FS"..LineNr]["Button"]:Hide()
 			AAP.QuestList.QuestFrames[LineNr]:Show()
 			local aapwidth = AAP.QuestList.QuestFrames["FS"..LineNr]:GetStringWidth()
@@ -2578,7 +2581,9 @@ local function AAP_UpdateMapId()
 	AAP.Level = UnitLevel("player")
 	AAP.ActiveMap = C_Map.GetBestMapForUnit("player")
 	local currentMapId, TOP_MOST = C_Map.GetBestMapForUnit('player'), true
-	AAP.ActiveMap = MapUtil.GetMapParentInfo(currentMapId, Enum.UIMapType.Continent+1, TOP_MOST)
+	if (Enum and Enum.UIMapType and Enum.UIMapType.Continent and currentMapId) then
+		AAP.ActiveMap = MapUtil.GetMapParentInfo(currentMapId, Enum.UIMapType.Continent+1, TOP_MOST)
+	end
 	if (AAP.ActiveMap and AAP.ActiveMap["mapID"]) then
 		AAP.ActiveMap = AAP.ActiveMap["mapID"]
 	else
@@ -2586,6 +2591,9 @@ local function AAP_UpdateMapId()
 	end
 	if (OldMap and OldMap ~= AAP.ActiveMap) then
 		AAP.BookingList["PrintQStep"] = 1
+	end
+	if (AAP.ActiveMap == nil) then
+		AAP.ActiveMap = "NoZone"
 	end
 	if (AAP.Faction == "Alliance") then
 		AAP.ActiveMap = "A"..AAP.ActiveMap
@@ -3849,7 +3857,7 @@ local function AAP_UpdateMapId()
 		end
 	end
 --------------------------------
-	if (AAP.Faction == "Horde" and AAP.Level == 120) then
+	if (AAP.Faction == "Horde" and AAP.Level == 120 and AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"] == 1) then
 		AAP.WQFunc()
 	end
 	
@@ -4799,7 +4807,7 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 			end
 		end
 		C_Timer.After(3, AAP_BookQStep)
-		if (AAP.HordeWQList and AAP.HordeWQList[arg2] and AAP.Faction == "Horde" and AAP.Level == 120 and AAP.WQActive == 0) then
+		if (AAP.HordeWQList and AAP.HordeWQList[arg2] and AAP.Faction == "Horde" and AAP.Level == 120 and AAP.WQActive == 0 and AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"] == 1) then
 			AAP.WQFunc()
 			AAP.BookingList["UpdateMapId"] = 1
 			AAP.BookingList["PrintQStep"] = 1
@@ -4811,7 +4819,7 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 		end
 		local arg1, arg2, arg3, arg4, arg5 = ...;
 		AAP.BookingList["RemoveQuest"] = arg1
-		if (AAP.ActiveMap == arg1) then
+		if (AAP.ActiveMap == arg1 and AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"] == 1) then
 			AAP.WQFunc()
 			AAP.BookingList["UpdateMapId"] = 1
 			AAP.BookingList["PrintQStep"] = 1

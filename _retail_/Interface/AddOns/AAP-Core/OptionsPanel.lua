@@ -320,7 +320,22 @@ function AAP.LoadOptionsFrame()
 	AAP.OptionsFrame.QuestOrderListScaleSlider:SetValue(AAP1[AAP.Realm][AAP.Name]["Settings"]["OrderListScale"] * 100)
 	
 	
-	
+	AAP.OptionsFrame.WorldQuestsCheckButton = CreateFrame("CheckButton", "AAP_WorldQuestsCheckButton", AAP.OptionsFrame.MainFrame.OptionsQuests, "ChatConfigCheckButtonTemplate");
+	AAP.OptionsFrame.WorldQuestsCheckButton:SetPoint("TOPLEFT", AAP.OptionsFrame.MainFrame.OptionsQuests, "TOPLEFT", 10, -185)
+	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"] == 0) then
+		AAP.OptionsFrame.WorldQuestsCheckButton:SetChecked(false)
+	else
+		AAP.OptionsFrame.WorldQuestsCheckButton:SetChecked(true)
+	end
+	getglobal(AAP.OptionsFrame.WorldQuestsCheckButton:GetName() .. 'Text'):SetText(": World Quests")
+	getglobal(AAP.OptionsFrame.WorldQuestsCheckButton:GetName() .. 'Text'):SetTextColor(1, 1, 1)
+	AAP.OptionsFrame.WorldQuestsCheckButton:SetScript("OnClick", function()
+		if (AAP.OptionsFrame.WorldQuestsCheckButton:GetChecked() == true) then
+			AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"] = 1
+		else
+			AAP1[AAP.Realm][AAP.Name]["Settings"]["WQs"] = 0
+		end
+	end)
 	
 	
 	
@@ -747,7 +762,7 @@ function AAP.LoadOptionsFrame()
 	
 	
 	AAP.OptionsFrame.MapBlobsShowCheckButton = CreateFrame("CheckButton", "AAP_MapBlobsShowCheckButton", AAP.OptionsFrame.MainFrame.OptionsGeneral, "ChatConfigCheckButtonTemplate");
-	AAP.OptionsFrame.MapBlobsShowCheckButton:SetPoint("TOPLEFT", AAP.OptionsFrame.MainFrame.OptionsGeneral, "TOPLEFT", 10, -230)
+	AAP.OptionsFrame.MapBlobsShowCheckButton:SetPoint("TOPLEFT", AAP.OptionsFrame.MainFrame.OptionsGeneral, "TOPLEFT", 10, -225)
 	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMapBlobs"] == 0) then
 		AAP.OptionsFrame.MapBlobsShowCheckButton:SetChecked(false)
 	else
@@ -765,8 +780,30 @@ function AAP.LoadOptionsFrame()
 	end)
 	
 	
+	
+
+	
+	AAP.OptionsFrame.ShowMap10sCheckButton = CreateFrame("CheckButton", "AAP_ShowMap10sCheckButton", AAP.OptionsFrame.MainFrame.OptionsGeneral, "ChatConfigCheckButtonTemplate");
+	AAP.OptionsFrame.ShowMap10sCheckButton:SetPoint("TOPLEFT", AAP.OptionsFrame.MainFrame.OptionsGeneral, "TOPLEFT", 10, -245)
+	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMap10s"] == 0) then
+		AAP.OptionsFrame.ShowMap10sCheckButton:SetChecked(false)
+	else
+		AAP.OptionsFrame.ShowMap10sCheckButton:SetChecked(true)
+	end
+	getglobal(AAP.OptionsFrame.ShowMap10sCheckButton:GetName() .. 'Text'):SetText(": Show 10 steps on map")
+	getglobal(AAP.OptionsFrame.ShowMap10sCheckButton:GetName() .. 'Text'):SetTextColor(1, 1, 1)
+	AAP.OptionsFrame.ShowMap10sCheckButton:SetScript("OnClick", function()
+		if (AAP.OptionsFrame.ShowMap10sCheckButton:GetChecked() == true) then
+			AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMap10s"] = 1
+		else
+			AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowMap10s"] = 0
+			AAP.HBDP:RemoveAllWorldMapIcons("AAPMapOrder")
+		end
+	end)
+	
+	
 	AAP.OptionsFrame.DisableHeirloomWarningCheckButton = CreateFrame("CheckButton", "AAP_DisableHeirloomWarningCheckButton", AAP.OptionsFrame.MainFrame.OptionsGeneral, "ChatConfigCheckButtonTemplate");
-	AAP.OptionsFrame.DisableHeirloomWarningCheckButton:SetPoint("TOPLEFT", AAP.OptionsFrame.MainFrame.OptionsGeneral, "TOPLEFT", 10, -250)
+	AAP.OptionsFrame.DisableHeirloomWarningCheckButton:SetPoint("TOPLEFT", AAP.OptionsFrame.MainFrame.OptionsGeneral, "TOPLEFT", 10, -265)
 	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["DisableHeirloomWarning"] == 0) then
 		AAP.OptionsFrame.DisableHeirloomWarningCheckButton:SetChecked(false)
 	else
