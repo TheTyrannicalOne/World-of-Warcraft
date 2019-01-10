@@ -781,6 +781,14 @@ function AAP.UpdateZoneQuestOrderList(AAPmod)
 				end
 				if (AAP.QuestStepList[AAP.ActiveMap][CCLi]["DropQuest"]) then
 					AAP.ZoneQuestOrder["FS2"][CLi]:SetText("Quest Drop")
+					if (IsQuestFlaggedCompleted(AAP.QuestStepList[AAP.ActiveMap][CCLi]["DropQuest"]) or AAP.ActiveQuests[AAP.QuestStepList[AAP.ActiveMap][CCLi]["DropQuest"]]) then
+						AAP.ZoneQuestOrder["FS"][CLi]:SetTextColor(0, 1, 0)
+						AAP.ZoneQuestOrder["FS2"][CLi]:SetTextColor(0, 1, 0)
+					else
+						AAP.ZoneQuestOrder["FS"][CLi]:SetTextColor(1, 0, 0)
+						AAP.ZoneQuestOrder["FS2"][CLi]:SetTextColor(1, 0, 0)
+					end
+
 				end
 				if (AAP.QuestStepList[AAP.ActiveMap][CCLi]["SetHS"]) then
 					AAP.ZoneQuestOrder["FS2"][CLi]:SetText("Set Hearthstone")

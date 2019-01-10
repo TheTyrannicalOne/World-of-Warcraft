@@ -11,6 +11,8 @@ local Delaytime = 0
 AAP.HBDP = HBDP
 AAP.HBD = HBD
 local AAP_BonusObj = {
+---- WoD Nonus Obj ----
+	[36473] = 1,
 ---- Legion Bonus Obj ----
 	[36811] = 1,
 	[37466] = 1,
@@ -40,6 +42,9 @@ local AAP_BonusObj = {
 	[26623] = 1,
 ---- Hillsbrad Foothills ----
 	[28489] = 1,
+--- DH Start Area ----
+	[39279] = 1,
+	[39742] = 1,
 ---- BFA Bonus Obj ----
 	[50005] = 1,
 	[50009] = 1,
@@ -1293,6 +1298,24 @@ local function AAP_PrintQStep()
 			if (AAPExtralk == 117) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Cart")
 			end
+			if (AAPExtralk == 118) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Treasure is ontop of the tower")
+			end
+			if (AAPExtralk == 119) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Treasure is up on the tree")
+			end
+			if (AAPExtralk == 120) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Killing a Bloodfang Stalker spawns a quest")
+			end
+			if (AAPExtralk == 121) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("If your mounted Npcs might not spawn.")
+			end
+			if (AAPExtralk == 122) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Only one can do the quest at a time so you might have to wait for npc to respawn")
+			end
+			if (AAPExtralk == 123) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Talk to Orkus after RP and then loot Plans")
+			end
 			AAP.QuestList.QuestFrames["FS"..LineNr]["Button"]:Hide()
 			AAP.QuestList.QuestFrames[LineNr]:Show()
 			local aapwidth = AAP.QuestList.QuestFrames["FS"..LineNr]:GetStringWidth()
@@ -1310,7 +1333,7 @@ local function AAP_PrintQStep()
 				for AAP_index2,AAP_value2 in pairs(AAP_value) do
 					Total = Total + 1
 					local qid = AAP_index.."-"..AAP_index2
-					if (IsQuestFlaggedCompleted(AAP_index) or ((UnitLevel("player") == 120) and AAP_BonusObj[AAP_index]) or AAP1[AAP.Realm][AAP.Name]["BonusSkips"][AAP_index]) then
+					if (IsQuestFlaggedCompleted(AAP_index) or ((UnitLevel("player") == 120) and AAP_BonusObj[AAP_index]) or AAP1[AAP.Realm][AAP.Name]["BonusSkips"][AAP_index] or AAP.BreadCrumSkips[AAP_index]) then
 						Flagged = Flagged + 1
 					elseif (AAP.ActiveQuests[qid] and AAP.ActiveQuests[qid] == "C") then
 						Flagged = Flagged + 1
@@ -1450,7 +1473,7 @@ local function AAP_PrintQStep()
 			end
 		elseif (StepP == "CRange") then
 			IdList = steps["CRange"]
-			if (IsQuestFlaggedCompleted(IdList) or AAP.BreadCrumSkips[theqid]) then
+			if (IsQuestFlaggedCompleted(IdList) or AAP.BreadCrumSkips[IdList]) then
 				AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] + 1
 				if (AAP1["Debug"]) then
 					print("AAP.PrintQStep:CRange:Plus:"..AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap])
@@ -2595,6 +2618,7 @@ local function AAP_UpdateMapId()
 	if (AAP.ActiveMap == nil) then
 		AAP.ActiveMap = "NoZone"
 	end
+
 	if (AAP.Faction == "Alliance") then
 		AAP.ActiveMap = "A"..AAP.ActiveMap
 	end
@@ -2613,11 +2637,17 @@ local function AAP_UpdateMapId()
 		end
 		AAP1[AAP.Realm][AAP.Name]["SavedVer"] = AAP.Version
 	end
-	
-
 
 	local AAPZoneActiveCheck = 0
 --------------------------------
+---- DH Start Area - Alliance ----
+	if (("A630" == AAP.ActiveMap or "A673" == AAP.ActiveMap or "A672" == AAP.ActiveMap) and AAP.Class and AAP.Class[3] and AAP.Class[3] == 12 and IsQuestFlaggedCompleted(39689) == false) then
+		AAP.ActiveMap = "A672-DH-Start"
+	end
+---- DH Start Area - Horde ----
+	if ((630 == AAP.ActiveMap or 673 == AAP.ActiveMap or 672 == AAP.ActiveMap) and AAP.Class and AAP.Class[3] and AAP.Class[3] == 12 and IsQuestFlaggedCompleted(39689) == false) then
+		AAP.ActiveMap = "A672-DH-Start"
+	end
 ---- Vanilla - Horde -----------
 	if (AAP.Faction == "Horde" and AAP.Level == 20) then
 		if (AAP.ActiveMap == 1 and AAP.Race == "MagharOrc") then
@@ -4256,6 +4286,9 @@ function AAP_UpdQuestThing()
 		print("Extra UpdQuestThing")
 	end
 end
+function AAP_UpdatezeMapId()
+	AAP.BookingList["UpdateMapId"] = 1
+end
 local function AAP_ZoneResetQnumb()
 	QNumberLocal = 0
 	AAP_SetQPTT()
@@ -4839,13 +4872,21 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 	end
 	if (event=="ZONE_CHANGED") then
 		QNumberLocal = 0
+		C_Timer.After(2, AAP_UpdatezeMapId)
 		C_Timer.After(3, AAP_ZoneResetQnumb)
-		AAP.BookingList["UpdateMapId"] = 1
 	end
 	if (event=="ZONE_CHANGED_NEW_AREA") then
-		AAP.BookingList["UpdateMapId"] = 1
+		C_Timer.After(2, AAP_UpdatezeMapId)
 	end
 	if (event=="GOSSIP_SHOW") then
+		if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
+			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
+			if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
+				if (npc_id and ((tonumber(npc_id) == 141584) or (tonumber(npc_id) == 142063))) then
+					return
+				end
+			end
+		end
 		local CurStep = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap]
 		if (CurStep and AAP.QuestStepList[AAP.ActiveMap] and AAP.QuestStepList[AAP.ActiveMap][CurStep]) then
 			if (UnitGUID("target") and string.find(UnitGUID("target"), "(.*)-(.*)")) then
@@ -4859,7 +4900,7 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 					end
 					return
 				end
-				if (npc_id and (tonumber(npc_id) == 43733)) then
+				if (npc_id and (tonumber(npc_id) == 43733) and (tonumber(npc_id) == 45312)) then
 					Dismount()
 				end
 			end
@@ -4887,6 +4928,16 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 					SelectGossipOption(1)
 					AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] + 1
 					AAP.BookingList["PrintQStep"] = 1
+				elseif (steps["Gossip"] == 39516) then
+					if (UnitGUID("target") and UnitName("target")) then
+						local guid, name = UnitGUID("target"), UnitName("target")
+						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+						if (npc_id and name and tonumber(npc_id) == 93127) then
+							SelectGossipOption(2)
+						else
+							SelectGossipOption(1)
+						end
+					end
 				elseif (steps["Gossip"] == 12255) then
 					SelectGossipOption(1)
 					AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] + 1

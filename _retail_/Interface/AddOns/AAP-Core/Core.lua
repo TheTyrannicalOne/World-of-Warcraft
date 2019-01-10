@@ -338,6 +338,7 @@ AAP.CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 				AAP.CreateMacro()
 				print("AAP Loaded")
 				AAP_LoadInTimer:Stop()
+				C_Timer.After(4, AAP_UpdatezeMapId)
 				C_Timer.After(5, AAP_BookQStep)
 				AAP.RegisterChat = C_ChatInfo.RegisterAddonMessagePrefix("AAPChat")
 			end

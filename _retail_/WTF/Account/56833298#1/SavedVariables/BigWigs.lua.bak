@@ -27,16 +27,16 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Plugins_Colors"] = {
-		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Friz Quadrata TT",
 				},
 			},
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
@@ -81,7 +81,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},

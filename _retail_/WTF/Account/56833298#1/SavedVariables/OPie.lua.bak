@@ -28,44 +28,44 @@ OneRing_Config = {
 		["RingKeeper"] = {
 			["Mounts3"] = {
 				{
-					["sliceToken"] = "ABuedW477Ker",
 					["id"] = 150544,
+					["sliceToken"] = "ABuedW477Ker",
 				}, -- [1]
 				{
-					["sliceToken"] = "ABuedW477Kee",
 					["id"] = 64731,
+					["sliceToken"] = "ABuedW477Kee",
 				}, -- [2]
 				{
-					["sliceToken"] = "ABuedW477Kew",
 					["id"] = 118089,
+					["sliceToken"] = "ABuedW477Kew",
 				}, -- [3]
 				{
-					["sliceToken"] = "ABuedW477Keq",
 					["id"] = 98718,
+					["sliceToken"] = "ABuedW477Keq",
 				}, -- [4]
 				{
-					["sliceToken"] = "ABuedW477KwM",
 					["id"] = 228919,
+					["sliceToken"] = "ABuedW477KwM",
 				}, -- [5]
 				{
-					["sliceToken"] = "ABuedW477KwN",
 					["id"] = 223018,
+					["sliceToken"] = "ABuedW477KwN",
 				}, -- [6]
 				{
-					["sliceToken"] = "ABuedW477KwB",
 					["id"] = 272770,
+					["sliceToken"] = "ABuedW477KwB",
 				}, -- [7]
 				{
-					["sliceToken"] = "ABuedW477Kw/",
 					["id"] = 122708,
+					["sliceToken"] = "ABuedW477Kw/",
 				}, -- [8]
 				{
-					["sliceToken"] = "ABuedW477KwV",
 					["id"] = 245725,
+					["sliceToken"] = "ABuedW477KwV",
 				}, -- [9]
 				{
-					["sliceToken"] = "ABuedW477KwC",
 					["id"] = 75973,
+					["sliceToken"] = "ABuedW477KwC",
 				}, -- [10]
 				["name"] = "Mounts",
 				["save"] = true,
@@ -154,80 +154,80 @@ OneRing_Config = {
 			},
 			["Mounts2"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABuedyqmNB1k",
+					["id"] = 150544,
 				}, -- [1]
 				{
-					["id"] = 64731,
 					["sliceToken"] = "ABuedyqmNB1r",
+					["id"] = 64731,
 				}, -- [2]
 				{
-					["id"] = 118089,
 					["sliceToken"] = "ABuedyqmNB1h",
+					["id"] = 118089,
 				}, -- [3]
 				{
-					["id"] = 223018,
 					["sliceToken"] = "ABuedyqmNB1s",
+					["id"] = 223018,
 				}, -- [4]
 				{
-					["id"] = 98718,
 					["sliceToken"] = "ABuedyqmNB1e",
+					["id"] = 98718,
 				}, -- [5]
 				{
-					["id"] = 122708,
 					["sliceToken"] = "ABuedyqmNB1a",
+					["id"] = 122708,
 				}, -- [6]
 				{
-					["id"] = 88990,
 					["sliceToken"] = "ABuedyqmNB1f",
+					["id"] = 88990,
 				}, -- [7]
 				{
-					["id"] = 142878,
 					["sliceToken"] = "ABuedyqmNB13",
+					["id"] = 142878,
 				}, -- [8]
 				{
-					["id"] = 215159,
 					["sliceToken"] = "ABuedyqmNB1p",
+					["id"] = 215159,
 				}, -- [9]
 				{
-					["id"] = 180545,
 					["sliceToken"] = "ABuedyqmNB12",
+					["id"] = 180545,
 				}, -- [10]
 				{
-					["id"] = 258845,
 					["sliceToken"] = "ABuedyqmNB1i",
+					["id"] = 258845,
 				}, -- [11]
 				{
-					["id"] = 230987,
 					["sliceToken"] = "ABuedyqmNB1j",
+					["id"] = 230987,
 				}, -- [12]
 				{
-					["id"] = 247402,
 					["sliceToken"] = "ABuedyqmNB1o",
+					["id"] = 247402,
 				}, -- [13]
 				{
-					["id"] = 35018,
 					["sliceToken"] = "ABuedyqmNB1y",
+					["id"] = 35018,
 				}, -- [14]
 				{
-					["id"] = 41516,
 					["sliceToken"] = "ABuedyqmNB1v",
+					["id"] = 41516,
 				}, -- [15]
 				{
-					["id"] = 39801,
 					["sliceToken"] = "ABuedyqmNB1c",
+					["id"] = 39801,
 				}, -- [16]
 				{
-					["id"] = 130092,
 					["sliceToken"] = "ABuedyqmNB1t",
+					["id"] = 130092,
 				}, -- [17]
 				{
-					["id"] = 245725,
 					["sliceToken"] = "ABuedyqmNB1u",
+					["id"] = 245725,
 				}, -- [18]
 				{
-					["id"] = 75973,
 					["sliceToken"] = "ABuedyqmNBrM",
+					["id"] = 75973,
 				}, -- [19]
 				["name"] = "Mounts",
 				["save"] = true,
@@ -292,8 +292,8 @@ OneRing_Config = {
 					["sliceToken"] = "OPCTA4",
 				}, -- [4]
 				{
-					["sliceToken"] = "OPCTAc",
 					["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
+					["sliceToken"] = "OPCTAc",
 				}, -- [5]
 				{
 					"item", -- [1]
