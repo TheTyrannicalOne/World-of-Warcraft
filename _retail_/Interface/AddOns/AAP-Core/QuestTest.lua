@@ -991,7 +991,6 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 			local CurStep = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap]
 			if (CurStep and MapIconUpdateStep ~= CurStep and CurStep > 1) then
 				AAP.MapOrderNumbers()
-				print("derp")
 			end
 		end
 	end

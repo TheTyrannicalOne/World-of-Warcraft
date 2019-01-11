@@ -1316,6 +1316,12 @@ local function AAP_PrintQStep()
 			if (AAPExtralk == 123) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Talk to Orkus after RP and then loot Plans")
 			end
+			if (AAPExtralk == 124) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use Pet ability (Call to Arms) to Enlist Troops")
+			end
+			if (AAPExtralk == 125) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Click on the the npc (Zen'Kiki) so he pulls Hawks")
+			end
 			AAP.QuestList.QuestFrames["FS"..LineNr]["Button"]:Hide()
 			AAP.QuestList.QuestFrames[LineNr]:Show()
 			local aapwidth = AAP.QuestList.QuestFrames["FS"..LineNr]:GetStringWidth()
@@ -2707,9 +2713,13 @@ local function AAP_UpdateMapId()
 				AAPZoneActiveCheck = 1
 				AAP.ActiveMap = "18-20Silverpine"
 			end
-			if (IsQuestFlaggedCompleted(28616) and IsQuestFlaggedCompleted(14258)) then
+			if (IsQuestFlaggedCompleted(28616) and IsQuestFlaggedCompleted(14258) and IsQuestFlaggedCompleted(26979) == false) then
 				AAPZoneActiveCheck = 1
 				AAP.ActiveMap = "18-20-1"
+			end
+			if (IsQuestFlaggedCompleted(27530) and IsQuestFlaggedCompleted(26278) == false) then
+				AAPZoneActiveCheck = 1
+				AAP.ActiveMap = "18-20-1-STV"
 			end
 		end
 	end
@@ -2718,7 +2728,7 @@ local function AAP_UpdateMapId()
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
 				LoadAddOn("AAP-Vanilla")
 			end
-			if (IsQuestFlaggedCompleted(28605)) then
+			if (IsQuestFlaggedCompleted(28605) and not (IsQuestFlaggedCompleted(26955) and IsQuestFlaggedCompleted(27367))) then
 				AAPZoneActiveCheck = 1
 				AAP.ActiveMap = "22-20-63"
 			end
@@ -4409,7 +4419,6 @@ AAP_QH_EventFrame:RegisterEvent ("UNIT_ENTERED_VEHICLE")
 AAP_QH_EventFrame:RegisterEvent ("QUEST_CHOICE_UPDATE")
 AAP_QH_EventFrame:RegisterEvent ("PLAYER_REGEN_ENABLED")
 AAP_QH_EventFrame:RegisterEvent ("PLAYER_REGEN_DISABLED")
-AAP_QH_EventFrame:RegisterEvent ("QUEST_CHOICE_UPDATE")
 AAP_QH_EventFrame:RegisterEvent ("CHAT_MSG_ADDON")
 AAP_QH_EventFrame:RegisterEvent ("CHAT_MSG_COMBAT_XP_GAIN")
 AAP_QH_EventFrame:RegisterEvent ("UNIT_ENTERED_VEHICLE")
@@ -5120,6 +5129,7 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 							AAPColorof = ItemRarityz
 						end
 						AAPTempGearList[h] = ilvl - AAP_GearIlvlList[SpotName]
+						--print("Qilvl: "..ItemRarityz.." - "..SpotName.." - MySpot: "..AAP_GearIlvlList[SpotName])
 						if (SpotName == "INVTYPE_WEAPON" or SpotName == "INVTYPE_SHIELD" or SpotName == "INVTYPE_2HWEAPON" or SpotName == "INVTYPE_WEAPONMAINHAND" or SpotName == "INVTYPE_WEAPONOFFHAND" or SpotName == "INVTYPE_HOLDABLE" or SpotName == "INVTYPE_RANGED" or SpotName == "INVTYPE_THROWN" or SpotName == "INVTYPE_RANGEDRIGHT" or SpotName == "INVTYPE_RELIC") then
 							isweaponz = 1
 						end
@@ -5139,6 +5149,7 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 					end
 					if (PickOne > 0) then
 						GetQuestReward(PickOne)
+						--print("picked: "..PickOne)
 					end
 				end
 			end

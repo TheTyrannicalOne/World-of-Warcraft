@@ -8611,6 +8611,7 @@ AAP.QuestStepList2060 = {
 			},
 		}, -- [12]
 		{
+			["ExtraLine"] = 125,
 			["Trigger"] = {
 				["y"] = 1825.3,
 				["x"] = -1902.3,
@@ -9613,6 +9614,7 @@ AAP.QuestStepList2060 = {
 				},
 			},
 			["Gossip"] = 1,
+			["ExtraLine"] = 42,
 			["Trigger"] = {
 				["y"] = 2839.3,
 				["x"] = -1553.5,
