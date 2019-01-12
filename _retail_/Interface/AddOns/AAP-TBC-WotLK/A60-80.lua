@@ -46,6 +46,8 @@ AAP.QuestStepList2060 = {
 				11672, -- [1]
 			},
 		}, -- [2]
+	},
+	["A84-Hellfire"] = {
 		{
 			["ExtraLine"] = 93,
 			["Trigger"] = {
@@ -147,12 +149,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 856.2,
 			},
 		}, -- [8]
-		
-		
-		
-		
-		
-		
 	},
 ---- Borean Tundra ----
 	["A114-60-83"] = {
@@ -4017,8 +4013,17 @@ AAP.QuestStepList2060 = {
 		{
 			["PickUp"] = {
 				11944, -- [1]
+			},
+			["TT"] = {
+				["y"] = 3114.9,
+				["x"] = 3839.4,
+			},
+		}, -- [2]
+		{
+			["PickUp"] = {
 				12157, -- [2]
 			},
+			["BreadCrum"] = 12157,
 			["TT"] = {
 				["y"] = 3114.9,
 				["x"] = 3839.4,
@@ -4265,6 +4270,7 @@ AAP.QuestStepList2060 = {
 			["Done"] = {
 				12157, -- [1]
 			},
+			["BreadCrum"] = 12157,
 			["TT"] = {
 				["y"] = 3476.4,
 				["x"] = 2009,
@@ -4283,6 +4289,7 @@ AAP.QuestStepList2060 = {
 			["Done"] = {
 				12157, -- [1]
 			},
+			["BreadCrum"] = 12157,
 			["TT"] = {
 				["y"] = 3476.4,
 				["x"] = 2009,
@@ -11191,4 +11198,10 @@ for AAP_index,AAP_value in pairs(AAP.QuestStepList2060) do
 	AAP.QuestStepList[AAP_index] = AAP_value
 end
 AAP.QuestStepList2060 = nil
+	AAP.Breadcrums = {
+		[12157] = {
+			12000,
+			12166,
+		},
+	}
 end

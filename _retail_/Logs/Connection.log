@@ -1,67 +1,30 @@
-1/8 21:55:07.726  Connection Initialize
-1/8 21:55:19.416  Glue Start Login
-1/8 21:55:19.416  BattleNet Attempt Logon
-1/8 21:55:19.819  BattleNet Front Connected
-1/8 21:55:20.006  BattleNet Logon Queue Update
-1/8 21:55:20.302  BattleNet Logon Complete
-1/8 21:55:20.587  BattleNet Game Account Name
-1/8 21:55:20.587  BattleNet Game Account Name
-1/8 21:55:20.587  BattleNet Attempt Complete Login
-1/8 21:55:21.172  BattleNet Realm List Ticket
-1/8 21:55:21.379  BattleNet Sub Region List
-1/8 21:55:21.832  BattleNet Last Played Char
-1/8 21:55:21.925  BattleNet Last Played Char
-1/8 21:55:22.016  BattleNet Last Played Char
-1/8 21:55:22.104  BattleNet Last Played Char
-1/8 21:55:22.104  BattleNet Join Realm
-1/8 21:55:22.496  BattleNet Realm Join
-1/8 21:55:22.496  Change Connection
-1/8 21:55:22.496  Connect
-1/8 21:55:22.543  Handle Connect
-1/8 21:55:24.519  Handle Auth Response: 0
-1/8 21:55:24.519  Glue Authed To WoW: 0
-1/8 21:55:24.801  BattleNet Connected To Realm
-1/8 21:55:24.801  BattleNet Front Disconnecting
-1/8 21:55:24.934  BattleNet Front Disconnected
-1/8 21:55:25.555  Handle Char Enum
-1/8 21:56:15.520  BattleNet Request Change Realm List
-1/8 21:56:15.760  BattleNet Realm List Ticket
-1/8 21:56:16.265  BattleNet Sub Region List
-1/8 21:56:16.970  BattleNet Realm List
-1/8 21:56:16.970  BattleNet Realm List
-1/8 21:56:17.064  BattleNet Realm List
-1/8 21:56:17.364  BattleNet Realm List
-1/8 21:56:20.090  BattleNet Join Realm
-1/8 21:56:20.866  BattleNet Realm Join
-1/8 21:56:20.866  Change Connection
-1/8 21:56:20.866  Handle Disconnect
-1/8 21:56:20.866  Connect
-1/8 21:56:21.145  Handle Connect
-1/8 21:56:23.107  Handle Auth Response: 0
-1/8 21:56:23.107  Glue Authed To WoW: 0
-1/8 21:56:23.114  BattleNet Connected To Realm
-1/8 21:56:23.263  Handle Char Enum
-1/8 22:00:52.260  Handle Logout Response: 0
-1/8 22:00:52.906  Handle Logout Complete
-1/8 22:00:56.827  Handle Char Enum
-1/8 22:00:58.397  BattleNet Request Change Realm List
-1/8 22:00:58.670  BattleNet Realm List Ticket
-1/8 22:00:59.514  BattleNet Sub Region List
-1/8 22:01:00.425  BattleNet Realm List
-1/8 22:01:00.425  BattleNet Realm List
-1/8 22:01:00.425  BattleNet Realm List
-1/8 22:01:00.686  BattleNet Realm List
-1/8 22:01:02.820  BattleNet Join Realm
-1/8 22:01:03.599  BattleNet Realm Join
-1/8 22:01:03.599  Change Connection
-1/8 22:01:03.599  Handle Disconnect
-1/8 22:01:03.599  Connect
-1/8 22:01:04.301  Handle Connect
-1/8 22:01:05.856  Handle Auth Response: 0
-1/8 22:01:05.856  Glue Authed To WoW: 0
-1/8 22:01:05.865  BattleNet Connected To Realm
-1/8 22:01:06.329  Handle Char Enum
-1/8 23:34:13.648  Handle Logout Response: 0
-1/8 23:34:14.293  Handle Logout Complete
-1/8 23:34:19.630  Disconnect: 13
-1/8 23:34:19.630  Connection Destroy
+1/11 00:22:16.499  Connection Initialize
+1/11 00:22:29.872  Glue Start Login
+1/11 00:22:29.872  BattleNet Attempt Logon
+1/11 00:22:30.290  BattleNet Front Connected
+1/11 00:22:30.468  BattleNet Logon Queue Update
+1/11 00:22:30.675  BattleNet Logon Complete
+1/11 00:22:30.806  BattleNet Game Account Name
+1/11 00:22:30.891  BattleNet Game Account Name
+1/11 00:22:31.002  BattleNet Attempt Complete Login
+1/11 00:22:31.405  BattleNet Realm List Ticket
+1/11 00:22:31.533  BattleNet Sub Region List
+1/11 00:22:31.986  BattleNet Last Played Char
+1/11 00:22:32.075  BattleNet Last Played Char
+1/11 00:22:32.075  BattleNet Last Played Char
+1/11 00:22:32.345  BattleNet Last Played Char
+1/11 00:22:32.345  BattleNet Join Realm
+1/11 00:22:32.652  BattleNet Realm Join
+1/11 00:22:32.652  Change Connection
+1/11 00:22:32.652  Connect
+1/11 00:22:32.697  Handle Connect
+1/11 00:22:34.042  Handle Auth Response: 0
+1/11 00:22:34.042  Glue Authed To WoW: 0
+1/11 00:22:34.313  BattleNet Connected To Realm
+1/11 00:22:34.313  BattleNet Front Disconnecting
+1/11 00:22:34.421  BattleNet Front Disconnected
+1/11 00:22:34.859  Handle Char Enum
+1/11 01:32:25.127  Handle Logout Response: 0
+1/11 01:32:25.796  Handle Logout Complete
+1/11 01:32:31.451  Disconnect: 13
+1/11 01:32:31.455  Connection Destroy

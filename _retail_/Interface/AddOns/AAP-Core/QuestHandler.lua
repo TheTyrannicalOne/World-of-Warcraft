@@ -2630,8 +2630,11 @@ local function AAP_UpdateMapId()
 	end
 
 
-	if ((AAP.ActiveMap == "A23" or AAP.ActiveMap == 23) and AAP.Class[3] == 6 and IsQuestFlaggedCompleted(13189) == false) then
-		AAP.ActiveMap = "DK23"
+	if (AAP.ActiveMap == 23 and AAP.Class[3] == 6 and IsQuestFlaggedCompleted(13189) == false) then
+		AAP.ActiveMap = "DK23-H"
+	end
+	if (AAP.ActiveMap == "A23" and AAP.Class[3] == 6 and IsQuestFlaggedCompleted(13188) == false) then
+		AAP.ActiveMap = "DK23-A"
 	end
 
 	if (not AAP1[AAP.Realm][AAP.Name]["SavedVer"]) then
@@ -2964,12 +2967,19 @@ local function AAP_UpdateMapId()
 --------------------------------
 ---- TBC - WotLK - Horde -------
 	if (AAP.Faction == "Horde" and AAP.Level > 59 and AAP.Level < 80) then
-		if (AAP.ActiveMap == 1) then
+		if (AAP.ActiveMap == 1 and IsQuestFlaggedCompleted(11585) == false) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
 				LoadAddOn("AAP-TBC-WotLK")
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-60to80"
+		end
+		if (AAP.ActiveMap == 1 and IsQuestFlaggedCompleted(12792)) then
+			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
+				LoadAddOn("AAP-TBC-WotLK")
+			end
+			AAPZoneActiveCheck = 1
+			AAP.ActiveMap = "1-60to80-2"
 		end
 		if (AAP.ActiveMap == 18) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
@@ -3108,7 +3118,14 @@ local function AAP_UpdateMapId()
 --------------------------------
 ---- TBC - WotLK - Alliance ----
 	if (AAP.Faction == "Alliance" and AAP.Level > 59 and AAP.Level < 80) then
-		if (AAP.ActiveMap == "A84") then
+		if (AAP.ActiveMap == "A84" and IsQuestFlaggedCompleted(12792)) then
+			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
+				LoadAddOn("AAP-TBC-WotLK")
+			end
+			AAPZoneActiveCheck = 1
+			AAP.ActiveMap = "A84-Hellfire"
+		end
+		if (AAP.ActiveMap == "A84" and IsQuestFlaggedCompleted(11672) == false) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
 				LoadAddOn("AAP-TBC-WotLK")
 			end
