@@ -1,73 +1,73 @@
-1/11 00:22:27.045   - SE3 Init...
-1/11 00:22:27.045  => SI3 Init
-1/11 00:22:27.045  => WoW Version 8.1.0 (28833) Dec 19 2018
-1/11 00:22:27.045   
-1/11 00:22:27.045  => User Settings Report:
-1/11 00:22:27.045   - ========= PLAYBACK =========
-1/11 00:22:27.045   - Enable All Sound         [1]
-1/11 00:22:27.045   - Enable SFX               [1]
-1/11 00:22:27.045   --- Enable Emote Sounds    [1]
-1/11 00:22:27.045   - Enable Music             [1]
-1/11 00:22:27.045   --- Loop Music             [0]
-1/11 00:22:27.045   --- Pet Battle Music       [1]
-1/11 00:22:27.045   - Enable Ambient Sounds    [1]
-1/11 00:22:27.045   - Enable Dialog            [1]
-1/11 00:22:27.045   --- Enable Error Speech    [1]
-1/11 00:22:27.045   - Sound at Character       [1]
-1/11 00:22:27.045   - Sound in Background      [0]
-1/11 00:22:27.045   - Enable Reverb            [1]
-1/11 00:22:27.045   -
-1/11 00:22:27.061   - ========== VOLUME ==========
-1/11 00:22:27.061   - Master Volume         [1.00]
-1/11 00:22:27.061   - SFX Volume            [1.00]
-1/11 00:22:27.061   - Music Volume          [0.40]
-1/11 00:22:27.061   - Ambience Volume       [0.60]
-1/11 00:22:27.061   - Dialog Volume         [1.00]
-1/11 00:22:27.061   -
-1/11 00:22:27.061   - =========== MISC ===========
-1/11 00:22:27.061   - Sound Channels          [64]
-1/11 00:22:27.061   - Sound Cache           [64MB]
-1/11 00:22:27.061   - Mix Mode 2               [0]
-1/11 00:22:27.061   - DSP Buffer Size       [AUTO]
-1/11 00:22:27.061   - Armor Foley SFX (Self)   [1]
-1/11 00:22:27.061   - Armor Foley SFX (Others) [1]
-1/11 00:22:27.061  => End of User Settings Report
-1/11 00:22:27.061   
-1/11 00:22:27.061   - FMOD Memory Init
-1/11 00:22:27.061   - FMOD System Create
-1/11 00:22:27.061   - Setting Output Type
-1/11 00:22:27.143   - 9 Output drivers detected
-1/11 00:22:27.143   --- [0] System Default
-1/11 00:22:27.143   --- [1] Headset Earphone (4- Razer ManO'War)
-1/11 00:22:27.143   --- [2] Realtek Digital Output (Realtek High Definition Audio)
-1/11 00:22:27.143   --- [3] ROG PG279Q (NVIDIA High Definition Audio)
-1/11 00:22:27.143   --- [4] Speakers (Steam Streaming Speakers)
-1/11 00:22:27.143   --- [5] Speakers (Steam Streaming Microphone)
-1/11 00:22:27.143   --- [6] DELL ST2420L (NVIDIA High Definition Audio)
-1/11 00:22:27.143   --- [7] Realtek Digital Output(Optical) (Realtek High Definition Audio)
-1/11 00:22:27.143   --- [8] Speakers (Realtek High Definition Audio)
-1/11 00:22:27.143  ** Using Driver [0] System Default (Headset Earphone (4- Razer ManO'War))
-1/11 00:22:27.143   - DSPBufferSize = AUTO DETECT
-1/11 00:22:27.143   - Setting DSP Buffer Size
-1/11 00:22:27.155   - Using Control Panel Speaker Mode STEREO
-1/11 00:22:27.155   - Setting Software Format (44100, 2, 1).
-1/11 00:22:27.155   - Requested 64 channels.
-1/11 00:22:27.155   - Initializing Software Channels
-1/11 00:22:27.247   - Init FMOD Game System
-1/11 00:22:27.247   - Ok
-1/11 00:22:27.247   - Setting Rolloff Scale
-1/11 00:22:27.249   - Setting Rolloff Callback
-1/11 00:22:27.249   - SE3 EmitterManagerInit Success
-1/11 00:22:27.249   - Setting device callback
-1/11 00:22:27.249   - Sound Bus Init
-1/11 00:22:27.249   - Init Suppressors
-1/11 00:22:27.249   - SE3 Init Success.
-1/11 00:22:27.249  => SI3 Init Complete.
-1/11 00:22:27.249   
-1/11 01:32:30.327   
-1/11 01:32:30.327  => Shutting Down SI3
-1/11 01:32:30.351  => Shutting Down SI3 COMPLETE.
-1/11 01:32:30.351   
-1/11 01:32:30.351   - Shutting Down SE3
-1/11 01:32:30.504   - SE3 EmitterManagerShutdown Success
-1/11 01:32:30.504   - Shutting Down SE3 COMPLETE.
+1/21 02:23:45.305   - SE3 Init...
+1/21 02:23:45.305  => SI3 Init
+1/21 02:23:45.305  => WoW Version 8.1.0 (29088) Jan 16 2019
+1/21 02:23:45.305   
+1/21 02:23:45.305  => User Settings Report:
+1/21 02:23:45.305   - ========= PLAYBACK =========
+1/21 02:23:45.305   - Enable All Sound         [1]
+1/21 02:23:45.305   - Enable SFX               [1]
+1/21 02:23:45.305   --- Enable Emote Sounds    [1]
+1/21 02:23:45.305   - Enable Music             [1]
+1/21 02:23:45.305   --- Loop Music             [0]
+1/21 02:23:45.305   --- Pet Battle Music       [1]
+1/21 02:23:45.305   - Enable Ambient Sounds    [1]
+1/21 02:23:45.305   - Enable Dialog            [1]
+1/21 02:23:45.305   --- Enable Error Speech    [1]
+1/21 02:23:45.317   - Sound at Character       [1]
+1/21 02:23:45.317   - Sound in Background      [0]
+1/21 02:23:45.317   - Enable Reverb            [1]
+1/21 02:23:45.317   -
+1/21 02:23:45.317   - ========== VOLUME ==========
+1/21 02:23:45.317   - Master Volume         [1.00]
+1/21 02:23:45.317   - SFX Volume            [1.00]
+1/21 02:23:45.317   - Music Volume          [0.40]
+1/21 02:23:45.317   - Ambience Volume       [0.60]
+1/21 02:23:45.317   - Dialog Volume         [1.00]
+1/21 02:23:45.317   -
+1/21 02:23:45.317   - =========== MISC ===========
+1/21 02:23:45.317   - Sound Channels          [64]
+1/21 02:23:45.317   - Sound Cache           [64MB]
+1/21 02:23:45.317   - Mix Mode 2               [0]
+1/21 02:23:45.317   - DSP Buffer Size       [AUTO]
+1/21 02:23:45.317   - Armor Foley SFX (Self)   [1]
+1/21 02:23:45.333   - Armor Foley SFX (Others) [1]
+1/21 02:23:45.333  => End of User Settings Report
+1/21 02:23:45.333   
+1/21 02:23:45.333   - FMOD Memory Init
+1/21 02:23:45.333   - FMOD System Create
+1/21 02:23:45.333   - Setting Output Type
+1/21 02:23:45.406   - 9 Output drivers detected
+1/21 02:23:45.406   --- [0] System Default
+1/21 02:23:45.406   --- [1] Headset Earphone (4- Razer ManO'War)
+1/21 02:23:45.406   --- [2] Realtek Digital Output (Realtek High Definition Audio)
+1/21 02:23:45.406   --- [3] Speakers (Steam Streaming Speakers)
+1/21 02:23:45.406   --- [4] ROG PG279Q (NVIDIA High Definition Audio)
+1/21 02:23:45.406   --- [5] Speakers (Steam Streaming Microphone)
+1/21 02:23:45.411   --- [6] Realtek Digital Output(Optical) (Realtek High Definition Audio)
+1/21 02:23:45.411   --- [7] DELL ST2420L (NVIDIA High Definition Audio)
+1/21 02:23:45.411   --- [8] Speakers (Realtek High Definition Audio)
+1/21 02:23:45.411  ** Using Driver [0] System Default (Headset Earphone (4- Razer ManO'War))
+1/21 02:23:45.411   - DSPBufferSize = AUTO DETECT
+1/21 02:23:45.411   - Setting DSP Buffer Size
+1/21 02:23:45.411   - Using Control Panel Speaker Mode STEREO
+1/21 02:23:45.411   - Setting Software Format (44100, 2, 1).
+1/21 02:23:45.411   - Requested 64 channels.
+1/21 02:23:45.411   - Initializing Software Channels
+1/21 02:23:45.507   - Init FMOD Game System
+1/21 02:23:45.507   - Ok
+1/21 02:23:45.507   - Setting Rolloff Scale
+1/21 02:23:45.507   - Setting Rolloff Callback
+1/21 02:23:45.507   - SE3 EmitterManagerInit Success
+1/21 02:23:45.507   - Setting device callback
+1/21 02:23:45.507   - Sound Bus Init
+1/21 02:23:45.507   - Init Suppressors
+1/21 02:23:45.507   - SE3 Init Success.
+1/21 02:23:45.507  => SI3 Init Complete.
+1/21 02:23:45.522   
+1/21 03:18:48.448   
+1/21 03:18:48.448  => Shutting Down SI3
+1/21 03:18:48.483  => Shutting Down SI3 COMPLETE.
+1/21 03:18:48.483   
+1/21 03:18:48.483   - Shutting Down SE3
+1/21 03:18:48.655   - SE3 EmitterManagerShutdown Success
+1/21 03:18:48.655   - Shutting Down SE3 COMPLETE.

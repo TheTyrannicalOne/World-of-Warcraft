@@ -617,7 +617,7 @@ local function AAP_PrintQStep()
 			end
 		end
 	end
-	if (IsInInstance()) then
+	if (IsInInstance() and not AAP.ActiveQuests[26320]) then
 		AAP.ZoneQuestOrder:Hide()
 		return
 	elseif (AAP1[AAP.Realm][AAP.Name]["Settings"] and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQuestListOrder"] and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQuestListOrder"] == 1) then
@@ -1321,6 +1321,18 @@ local function AAP_PrintQStep()
 			end
 			if (AAPExtralk == 125) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Click on the the npc (Zen'Kiki) so he pulls Hawks")
+			end
+			if (AAPExtralk == 126) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Upstairs")
+			end
+			if (AAPExtralk == 127) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Use Insense Burner quest item.")
+			end
+			if (AAPExtralk == 128) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Exit Dungeon.")
+			end
+			if (AAPExtralk == 129) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Enter Dungeon.")
 			end
 			AAP.QuestList.QuestFrames["FS"..LineNr]["Button"]:Hide()
 			AAP.QuestList.QuestFrames[LineNr]:Show()
@@ -2628,7 +2640,6 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance") then
 		AAP.ActiveMap = "A"..AAP.ActiveMap
 	end
-
 
 	if (AAP.ActiveMap == 23 and AAP.Class[3] == 6 and IsQuestFlaggedCompleted(13189) == false) then
 		AAP.ActiveMap = "DK23-H"
@@ -3944,7 +3955,9 @@ local function AAP_UpdateMapId()
 	else
 		AAP.Dinged110 = 0
 	end
-	
+	if (AAP.ActiveQuests and AAP.ActiveQuests[26320] and (C_Map.GetBestMapForUnit("player") == 291 or C_Map.GetBestMapForUnit("player") == 292)) then
+		AAP.ActiveMap = "ADeadmines"
+	end
 	if (not AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap]) then
 		AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = 1
 	end
@@ -3974,6 +3987,9 @@ local function AAP_CheckZonePick()
 			AAP.BookingList["PrintQStep"] = 1
 		end
 	end
+end
+local function AAP_AcceptQuester()
+	AcceptQuest()
 end
 local function AAP_CheckDistance()
 	local CurStep = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap]
@@ -4163,7 +4179,7 @@ local function AAP_LoopBookingFunc()
 		TestaAAP = "UpdateMapId"
 	elseif (AAP.BookingList["AcceptQuest"]) then
 		AAP.BookingList["AcceptQuest"] = nil
-		AcceptQuest()
+		C_Timer.After(0.2, AAP_AcceptQuester)
 		TestaAAP = "AcceptQuest"
 	elseif (AAP.BookingList["CompleteQuest"]) then
 		AAP.BookingList["CompleteQuest"] = nil

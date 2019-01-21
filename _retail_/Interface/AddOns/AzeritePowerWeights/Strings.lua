@@ -610,8 +610,8 @@ elseif LOCALE == "esMX" then
 --[[ L["WeightEditor_VersionText"] = ""--]] 
 
 
-elseif LOCALE == "frFR" then -- tthegarde (20), Marechoux (9)
-L["Config_Importing_ImportingCanUpdate"] = "Importer peut modifier les échelles existantes."
+elseif LOCALE == "frFR" then -- tthegarde (19), Marechoux (9), follower4jas (1)
+L["Config_Importing_ImportingCanUpdate"] = "Importer peut metre au jour les échelles existantes."
 L["Config_Importing_ImportingCanUpdate_Desc"] = "Quand vous importez une échelle avec les mêmes nom, classe et spécialisation qu'une échelle pré-définie, l'échelle pré-définie sera mise à jour avec les nouveaux poids au lieu qu'une nouvelle échelle soit créée."
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Il peut y avoir plusieurs échelles avec le même nom tant qu'elles sont pour des classes ou spécialisations différentes."
 L["Config_Importing_Title"] = "Import"

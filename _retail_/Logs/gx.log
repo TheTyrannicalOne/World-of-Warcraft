@@ -1,30 +1,31 @@
-1/11 00:22:25.791  LogOpen
-1/11 00:22:25.791  ConsoleDetectDetectHardware():
-1/11 00:22:25.796  	cpuIdx: 1
-1/11 00:22:25.844  ConsoleDeviceInitialize(): hwDetect = 0, hwChanged = 0
-1/11 00:22:25.901  D3d12 Device Create
-1/11 00:22:25.901  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-1/11 00:22:26.091  Found First Candidate Adapter 0: Vendor Id 0x10de, Device Id 0x1e07 FL_12_0: true
-1/11 00:22:26.091  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c
-1/11 00:22:26.239  Detected NvAPI and checking if it's valid...
-1/11 00:22:26.239  Caps:
-1/11 00:22:26.239  	Vendor ID: 10de
-1/11 00:22:26.239  	Device ID: 1e07
-1/11 00:22:26.239  	AFR Groups: 1/1
-1/11 00:22:26.239  Feature Level: DX=6, GL=0, MTL=0
-1/11 00:22:26.266  NotifyOnDeviceCreate
-1/11 00:22:26.266  D3d12 Device Create Successful
-1/11 00:22:26.285  CPU Processor Detection: 12 H/W threads
-1/11 00:22:26.285  Memory Detection: 34296311808 bytes of physical memory available
-1/11 00:22:26.285  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-1/11 00:22:26.432  RenderSettings::NotifyChanged
-1/11 00:22:27.620  Nvidia driver version: r417_18 (41735)
-1/11 00:22:27.620  <IsGPUDriverOutOfDate> No
-1/11 00:22:34.313  Nvidia driver version: r417_18 (41735)
-1/11 00:22:34.313  <IsGPUDriverOutOfDate> No
-1/11 00:22:34.313  Nvidia driver version: r417_18 (41735)
-1/11 00:22:34.313  <IsGPUDriverOutOfDate> No
-1/11 01:32:30.229  Nvidia driver version: r417_18 (41735)
-1/11 01:32:30.233  <IsGPUDriverOutOfDate> No
-1/11 01:32:30.582  D3d12 Device Destroy
-1/11 01:32:30.582  NotifyOnDeviceDestroy
+1/21 02:23:44.454  LogOpen
+1/21 02:23:44.454  ConsoleDetectDetectHardware():
+1/21 02:23:44.454  	cpuIdx: 1
+1/21 02:23:44.516  ConsoleDeviceInitialize(): hwDetect = 0, hwChanged = 0
+1/21 02:23:44.568  D3d12 Device Create
+1/21 02:23:44.568  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
+1/21 02:23:44.711  Found First Candidate Adapter 0: Vendor Id 0x10de, Device Id 0x1e07 FL_12_0: true
+1/21 02:23:44.711  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c
+1/21 02:23:44.831  Detected NvAPI and checking if it's valid...
+1/21 02:23:44.831  Caps:
+1/21 02:23:44.834  	Vendor ID: 10de
+1/21 02:23:44.834  	Device ID: 1e07
+1/21 02:23:44.834  	AFR Groups: 1/1
+1/21 02:23:44.834  Feature Level: DX=6, GL=0, MTL=0
+1/21 02:23:44.862  NotifyOnDeviceCreate
+1/21 02:23:44.862  D3d12 Device Create Successful
+1/21 02:23:44.883  CPU Processor Detection: 12 H/W threads
+1/21 02:23:44.883  Memory Detection: 34296328192 bytes of physical memory available
+1/21 02:23:44.883  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+1/21 02:23:45.023  RenderSettings::NotifyChanged
+1/21 02:23:45.906  Nvidia driver version: r417_68 (41771)
+1/21 02:23:45.906  <IsGPUDriverOutOfDate> No
+1/21 02:23:53.287  Nvidia driver version: r417_68 (41771)
+1/21 02:23:53.287  <IsGPUDriverOutOfDate> No
+1/21 02:23:53.287  Nvidia driver version: r417_68 (41771)
+1/21 02:23:53.287  <IsGPUDriverOutOfDate> No
+1/21 02:27:38.974  RenderSettings::NotifyChanged
+1/21 03:18:48.326  Nvidia driver version: r417_68 (41771)
+1/21 03:18:48.326  <IsGPUDriverOutOfDate> No
+1/21 03:18:48.783  D3d12 Device Destroy
+1/21 03:18:48.783  NotifyOnDeviceDestroy

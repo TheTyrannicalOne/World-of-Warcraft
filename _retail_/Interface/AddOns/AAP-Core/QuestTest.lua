@@ -61,7 +61,7 @@ function AAP.Testa()
 end
 function AAP.ZoneQuestOrderList()
 	AAP.ZoneQuestOrder = CreateFrame("frame", "AAPQOrderList", UIParent)
-	AAP.ZoneQuestOrder:SetWidth(220)
+	AAP.ZoneQuestOrder:SetWidth(231)
 	AAP.ZoneQuestOrder:SetHeight(440)
 	AAP.ZoneQuestOrder:SetPoint("CENTER", UIParent, "CENTER",0,0)
 	AAP.ZoneQuestOrder:SetMovable(true)

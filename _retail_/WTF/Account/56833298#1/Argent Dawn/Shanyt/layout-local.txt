@@ -27,6 +27,13 @@ X: 480
 Y: -157
 W: 1
 H: 1
+Frame: AAP_Arrow
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -170
+Y: -203
+W: 1
+H: 1
 Frame: ColorPickerFrame
 FrameLevel: 1
 Anchor: CENTER
