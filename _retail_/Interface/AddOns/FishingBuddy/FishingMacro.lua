@@ -141,6 +141,8 @@ local function SetupMacroKeyBinding()
             SetOverrideBinding(FishingBuddyFrame, true, key2, command, macro_set);
         end
         return true
+    else
+        ClearOverrideBindings(FishingBuddyFrame);
     end
     return false
 end

@@ -20,6 +20,11 @@ local table_sort = table.sort
 local table_wipe = table.wipe
 local table_copy = ns.tableCopy
 
+-- Clean up table_x later.
+local insert, remove, sort, unpack, wipe = table.insert, table.remove, table.sort, table.unpack, table.wipe
+local RC = LibStub( "LibRangeCheck-2.0" )
+
+
 local class = Hekili.Class
 local scripts = Hekili.Scripts
 -- This will be our environment table for local functions.
@@ -33,7 +38,11 @@ state.ptr = PTR and 1 or 0
 
 state.now = 0
 state.offset = 0
+
 state.delay = 0
+state.delayMin = 0
+state.delayMax = 60
+
 state.false_start = 0
 state.latency = 0
 state.filter = "none"
@@ -87,13 +96,16 @@ state.player = {
     channel_spell = nil
 }
 state.prev = {
-    meta = 'castsAll'
+    meta = 'castsAll',
+    history = { 'no_action', 'no_action', 'no_action', 'no_action', 'no_action' }
 }
 state.prev_gcd = {
-    meta = 'castsOn'
+    meta = 'castsOn',
+    history = { 'no_action', 'no_action', 'no_action', 'no_action', 'no_action' }
 }
 state.prev_off_gcd = {
-    meta = 'castsOff'
+    meta = 'castsOff',
+    history = { 'no_action', 'no_action', 'no_action', 'no_action', 'no_action' }
 }
 state.predictions = {}
 state.predictionsOff = {}
@@ -745,7 +757,6 @@ state.setStance = setStance
 
 
 local function interrupt()
-    state.target.casting = false
     state.removeDebuff( 'target', 'casting' )
 end
 state.interrupt = interrupt
@@ -1096,7 +1107,7 @@ do
 
         for i = 1, n do
             local x = select( i, ... )
-            if type( x ) == "number" and x > 0 and x < 3600 then
+            if type( x ) == "number" and x > state.delayMin and x < state.delayMax then
                 table.insert( t, 0.01 + x ) 
             end
         end
@@ -1275,7 +1286,7 @@ local mt_state = {
             return 1
 
         elseif k == 'boss' then
-            return ( t.inEncounter or UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) == true
+            return ( t.inEncounter or ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) ) ) == true
 
         elseif k == 'cycle' then
             return false
@@ -1370,7 +1381,14 @@ local mt_state = {
             
         elseif k == 'cast_delay' then return 0
 
-        elseif k == 'in_flight' then return t.action[ t.this_action ].in_flight
+        elseif k == 'in_flight' then
+            return state:IsInFlight( t.this_action, true )
+
+        elseif k == 'in_flight_remains' then
+            return state:InFlightRemains( t.this_action, true )
+
+        elseif k == 'executing' then
+            return state:IsCasting( t.this_action, true ) or state.prev[1][ t.this_action ]
         
         elseif type(k) == 'string' and k:sub(1, 16) == 'incoming_damage_' then
             local remains = k:sub(17)
@@ -1774,6 +1792,9 @@ local mt_pets = {
             
         elseif k == 'dead' then
             return UnitExists( 'pet' ) and UnitIsDead( 'pet' )
+
+        elseif k == 'health_pct' or k == 'health_percent' then
+            return t.alive and 100 * UnitHealth( 'pet ' ) / UnitHealthMax( 'pet' )
             
         end
         
@@ -1892,22 +1913,7 @@ local mt_target = {
             return UnitExists( 'target' )
             
         elseif k == 'casting' then
-            if UnitCanAttack("player", "target") and UnitHealth("target") > 0 then
-                local _, _, _, _, endCast, _, _, notInterruptible = UnitCastingInfo("target")
-                
-                if endCast ~= nil and not notInterruptible then
-                    t.cast_end = endCast / 1000
-                    return ( endCast / 1000 ) > state.query_time
-                end
-                
-                _, _, _, _, endCast, _, notInterruptible = UnitChannelInfo("target")
-                
-                if endCast ~= nil and not notInterruptible then
-                    t.cast_end = endCast / 1000
-                    return ( endCast / 1000 ) > state.query_time
-                end
-            end
-            return false
+            return state.debuff.casting.up
             
         elseif k == 'in_range' then
             return t.distance <= 8
@@ -2269,31 +2275,32 @@ local mt_prev_lookup = {
                 if idx == #state.predictions + 1 then
                     return state.player.queued_ability
                 end
-                return ns.castsAll[ idx - #state.predictions + 1 ]
+                return state.prev.history[ idx - #state.predictions + 1 ]
             end
 
             if idx == 1 and state.prev.override then
                 return state.prev.override == k
             end
 
-            return ns.castsAll[ idx - #state.predictions ] == k
+            return state.prev.history[ idx - #state.predictions ] == k
             
         elseif t.meta == 'castsOn' then
             -- Check predictions first.
             if state.predictionsOn[ idx ] then return state.predictionsOn[ idx ] == k end
+
             -- There isn't a prediction for that entry yet, go back to actual collected data.
             if state.player.queued_ability and state.player.queued_gcd then
-                if idx == np + 1 then
+                if idx == #state.predictionsOn + 1 then
                     return state.player.queued_ability
                 end
-                return ns.castsOn[ idx - #state.predictionsOn + 1 ]
+                return state.prev_gcd.history[ idx - #state.predictionsOn + 1 ]
             end
 
             if idx == 1 and state.prev_gcd.override then
                 return state.prev_gcd.override == k
             end
 
-            return ns.castsOn[ idx - #state.predictionsOn ] == k
+            return state.prev_gcd.history[ idx - #state.predictionsOn ] == k
             
         end
         
@@ -2301,17 +2308,17 @@ local mt_prev_lookup = {
         if state.predictionsOff[ idx ] then return state.predictionsOff[ idx ] == k end
 
         if state.player.queued_ability and state.player.queued_off then
-            if idx == np + 1 then
+            if idx == #state.predictionsOff + 1 then
                 return state.player.queued_ability
             end
-            return ns.castsOff[ idx - #state.predictionsOff + 1 ]
+            return state.prev_off_gcd.history[ idx - #state.predictionsOff + 1 ]
         end
 
         if idx == 1 and state.prev_off_gcd.override then
             return state.prev_off_gcd.override == k
         end
 
-        return ns.castsOff[ idx - #state.predictionsOff ] == k
+        return state.prev_off_gcd.history[ idx - #state.predictionsOff ] == k
         
     end
 }
@@ -2611,13 +2618,13 @@ local mt_default_buff = {
             return t[k]
             
         elseif k == 'up' or k == 'ticking' or k == 'react' then
-            return t.applied <= state.query_time and t.expires >= state.query_time
+            return t.applied <= state.query_time and t.expires > state.query_time
 
         elseif k == 'down' then
-            return t.applied > state.query_time or t.expires < state.query_time
+            return t.applied > state.query_time or t.expires <= state.query_time
             
         elseif k == 'remains' then
-            return t.up and max( 0, t.expires - state.query_time - state.settings.buffPadding ) or 0
+            return t.up and max( 0, t.expires - state.query_time - ( ( aura and aura.strictTiming and 0 ) or state.settings.buffPadding or 0 ) ) or 0
             
         elseif k == 'refreshable' then
             return t.remains < 0.3 * ( aura.duration or 30 )
@@ -3333,7 +3340,7 @@ local mt_default_action = {
             return 0
             
         elseif k == 'cast_regen' then
-            return floor( max( state.gcd.execute, t.cast_time ) * state[ class.primaryResource ].regen ) - ( ability and ability.spend or 0 )
+            return floor( max( state.gcd.execute, t.cast_time ) * state[ class.primaryResource ].regen ) - ( ability and t.cost or 0 )
 
         elseif k == 'cost' then
             local a = class.abilities[ t.action ].spend
@@ -3347,12 +3354,13 @@ local mt_default_action = {
                 return class.abilities[ t.action ].in_flight
             end
 
-            for i, spell in ipairs( ns.spells_in_flight ) do
-                if spell.key == t.action then
-                    return true
-                end
-            end
-            return false
+            return state:IsInFlight( t.action, true )
+
+        elseif k == "in_flight_remains" then
+            return state:InFlightRemains( t.action, true )
+        
+        elseif k == "executing" then
+            return state:IsCasting( t.action, true ) or state.prev[1][ t.action ]
             
         else
             local val = class.abilities[ t.action ][ k ]
@@ -3626,10 +3634,33 @@ local function ScrapeUnitAuras( unit )
     end
     
 end
+Hekili.ScrapeUnitAuras = ScrapeUnitAuras
 ns.cpuProfile.ScrapeUnitAuras = ScrapeUnitAuras
 
-
 Hekili.AuraDB = ns.auras
+
+
+-- Helper functions to query the real aura data that has been scraped.
+-- Used for snapshotting projectile data to be handled when a spell impacts.
+function state.PlayerBuffUp( buff )
+    local aura = state.auras.player.buff[ buff ]
+    return aura and aura.expires > GetTime()
+end
+
+function state.PlayerDebuffUp( debuff )
+    local aura = state.auras.player.debuff[ debuff ]
+    return aura and aura.expires > GetTime()
+end
+
+function state.TargetBuffUp( buff )
+    local aura = state.auras.target.buff[ buff ]
+    return aura and aura.expires > GetTime()
+end
+
+function state.TargetDebuffUp( debuff )
+    local aura = state.auras.target.debuff[ debuff ]
+    return aura and aura.expires > GetTime()
+end
 
 
 function state.putTrinketsOnCD( val )
@@ -3639,6 +3670,456 @@ function state.putTrinketsOnCD( val )
     for i, item in ipairs( state.items ) do
         setCooldown( item, max( val, state.cooldown.use_items.remains ) )
     end
+end
+
+
+do
+    -- Event Queue System (real + virtual)
+    local queue = {
+        [true]  = {},
+        [false] = {}
+    }
+
+    local hardcasts = {
+        [true]  = {},
+        [false] = {}
+    }
+
+    local impacts = {
+        [true]  = {},
+        [false] = {}
+    }
+
+
+    local realQueue = {}
+    local virtualQueue = {}
+
+    local projectiles = {}
+    local virtualProjectiles = {}
+    
+    local realHardcasts = {}
+    local virtualHardcasts = {}
+
+
+    local function byTime( a, b )
+        return a.time < b.time
+    end
+
+    local function insertSort( data, virtual )
+        local t = virtual and virtualQueue or realQueue
+
+        insert( t, data )
+        sort( t, byTime )
+    end
+
+
+    function state:ResetQueueData()
+        wipe( virtualQueue )
+
+        for i = #realQueue, 1, -1 do
+            if realQueue[i].time > self.now then
+                insert( virtualQueue, 1, realQueue[i] )
+            else
+                remove( realQueue, i )
+            end
+        end
+    end
+
+
+    function state:QueueEvent( action, event, virtual, data, time )
+        local ability = class.abilities[ action ]
+        if not ability then return end
+
+        if type( action ) == "number" then action = ability.key end
+
+        local data = data or {}
+
+        data.action = action
+        data.type   = event
+
+        local t = virtual and self.query_time or GetTime()
+        local eta = time or self.latency or 0.05
+        
+        if event == "projectile" then
+            -- Need to calculate the ETA and record any on cast data.
+            if not time then
+                if virtual then eta = ( self.target.maxR / ability.velocity )
+                else
+                    local _, range = RC:GetRange( "target" )
+                    if range and range > 0 then
+                        eta = ( range / ability.velocity )
+                    end
+                end
+            else
+                eta = time
+            end
+
+            data.time = t + eta
+
+            if virtual then
+                if ability.onCastFinish then
+                    ability.onCastFinish( data )
+                end
+                if self.time == 0 and ability.startsCombat then
+                    self:StartCombat()
+                end
+                ns.callHook( "runHandler", action ) -- legacy support for runHandler
+            else
+                if ability.onRealCastFinish then ability.onRealCastFinish( data ) end
+            end
+
+            data.func = ability.onImpact
+
+        elseif event == "hardcast" then
+            -- Need to use the cast time.  These are always virtual.
+            -- Make sure to set it up in reset().            
+            if not time then
+                eta = ability.cast
+            end
+
+            data.time = t + eta
+
+            if virtual then
+                if ability.onCastStart then ability.onCastStart( data ) end
+            else
+                if ability.onRealCastStart then ability.onRealCastStart( data ) end
+            end
+            
+            state.applyBuff( "player_casting", eta )
+            data.func = ability.onCastFinish or ability.handler
+        end
+
+        insertSort( data, virtual )
+    end
+
+
+    function state:ProcessEvent( entry, virtual )
+        local ability = class.abilities[ entry.action ]
+        if not ability then return end
+
+        if entry.type == "hardcast" then
+            -- We could've hardcast something that will fire a projectile.
+            -- The func will get called in QueueEvent.
+            local action = entry.action
+            local cooldown = ability.cooldown
+
+            -- Put the action on cooldown. (It's slightly premature, but addresses CD resets like Echo of the Elements.)
+            -- if ability.charges and ability.charges > 1 and ability.recharge > 0 then
+            if ability.charges and ability.recharge > 0 then
+                self.spendCharges( action, 1 )
+                
+            elseif action ~= 'global_cooldown' then
+                self.setCooldown( action, cooldown )
+            end
+
+            -- Spend resources.
+            ns.spendResources( action )
+
+            -- Perform the action.
+            if entry.func then self:HandleCast( action, entry )
+            else self:RunHandler( action ) end
+
+            -- Projectile spells have two handlers, effectively.  An onCast handler, and then an onImpact handler.
+            if ability.isProjectile then
+                state:QueueEvent( action, "projectile", true, entry )
+            end
+
+            if ability.item then
+                state.putTrinketsOnCD( cooldown / 6 )
+            end
+        
+        elseif entry.type == "projectile" then
+            if entry.func then self:HandleImpact( action, entry ) end
+        
+        end
+
+        -- Do we need to advance the clock?
+        -- Do we need to remove 'player_casting'?  Advancing the clock should wipe it out.
+    end
+
+
+    function state:HandleCast( key, event, noStart )
+        local ability = class.abilities[ key ]
+    
+        if not ability then
+            -- ns.Error( "runHandler() attempting to run handler for non-existant ability '" .. key .. "'." )
+            return
+        end
+    
+        if state.channeling then state.stopChanneling() end
+    
+        if ability.onCastFinish then ability.onCastFinish( event )
+        elseif ability.handler then ability.handler( event ) end
+    
+        state.prev.last = key
+        state[ ability.gcd == 'off' and 'prev_off_gcd' or 'prev_gcd' ].last = key
+    
+        table.insert( state.predictions, 1, key )
+        table.insert( state[ ability.gcd == 'off' and 'predictionsOff' or 'predictionsOn' ], 1, key )
+        
+        state.predictions[6] = nil
+        state.predictionsOn[6] = nil
+        state.predictionsOff[6] = nil
+    
+        state.prev.override = nil
+        state.prev_gcd.override = nil
+        state.prev_off_gcd.override = nil
+        
+        if state.time == 0 and ability.startsCombat and not noStart then
+            state.false_start = state.query_time - 0.01
+    
+            -- Assume MH swing at combat start and OH swing half a swing later?
+            if state.target.distance < 8 then
+                if state.swings.mainhand_speed > 0 and state.nextMH == 0 then state.swings.mh_pseudo = state.false_start end
+                if state.swings.offhand_speed > 0 and state.nextOH == 0 then state.swings.oh_pseudo = state.false_start + ( state.offhand_speed / 2 ) end
+            end
+        end
+    
+        state.cast_start = 0
+        ns.callHook( 'runHandler', key )    
+    end
+    
+    
+    function state:HandleImpact( key, event, noStart )
+        local ability = class.abilities[ key ]
+    
+        if not ability then
+            -- ns.Error( "runHandler() attempting to run handler for non-existant ability '" .. key .. "'." )
+            return
+        end
+    
+        if state.channeling then state.stopChanneling() end
+    
+        if ability.onImpact then ability.onImpact( event )
+        elseif ability.handler then ability.handler( event ) end
+    
+        state.prev.last = key
+        state[ ability.gcd == 'off' and 'prev_off_gcd' or 'prev_gcd' ].last = key
+    
+        table.insert( state.predictions, 1, key )
+        table.insert( state[ ability.gcd == 'off' and 'predictionsOff' or 'predictionsOn' ], 1, key )
+        
+        state.predictions[6] = nil
+        state.predictionsOn[6] = nil
+        state.predictionsOff[6] = nil
+    
+        state.prev.override = nil
+        state.prev_gcd.override = nil
+        state.prev_off_gcd.override = nil
+        
+        if state.time == 0 and ability.startsCombat and not noStart then
+            state.false_start = state.query_time - 0.01
+    
+            -- Assume MH swing at combat start and OH swing half a swing later?
+            if state.target.distance < 8 then
+                if state.swings.mainhand_speed > 0 and state.nextMH == 0 then state.swings.mh_pseudo = state.false_start end
+                if state.swings.offhand_speed > 0 and state.nextOH == 0 then state.swings.oh_pseudo = state.false_start + ( state.offhand_speed / 2 ) end
+            end
+        end
+    
+        state.cast_start = 0
+        ns.callHook( 'runHandler', key )    
+    end
+
+
+    -- This will unqueue all event types for a particular action.
+    function state:Unqueue( action, virtual )
+        local ability = class.abilities[ action ]
+        if not ability then return end
+
+        if type( action ) == "number" then action = ability.key end
+
+        local i = 1
+        local t = virtual and virtualQueue or realQueue
+        local event = t[i]
+
+        while( event ) do
+            if event.action == action then
+                remove( t, i )
+            else
+                i = i + 1
+            end
+
+            event = t[i]
+        end
+    end
+
+
+    function state:CancelCastEvent( action, virtual )
+        local ability = class.abilities[ action ]
+        if not ability then return end
+
+        if type( action ) == "number" then action = ability.key end
+
+        local i = 1
+        local t = virtual and virtualQueue or realQueue
+        local event = t[i]
+
+        while( event ) do
+            if event.action == action and event.type == "hardcast" then
+                remove( t, i )
+            else
+                i = i + 1
+            end
+
+            event = t[i]
+        end
+    end
+
+
+    -- This removes a hardcast spell from the queue, returning the queue entry so you can mangle it if you want.
+    function state:RemoveQueuedSpell( action, virtual )
+        local ability = class.abilities[ action ]
+        if not ability then return end
+
+        if type( action ) == "number" then action = ability.key end
+
+        local i = 1
+        local t = virtual and virtualQueue or realQueue
+        local event = t[i]
+
+        while( event ) do
+            if event.action == action and event.type == "hardcast" then
+                return remove( t, i )
+            end
+            i = i + 1
+            event = t[ i ]
+        end
+    end
+
+
+    function state:NumQueueEntries( virtual )
+        return virtual and #virtualQueue or #realQueue
+    end
+
+
+    function state:IsQueued( action, virtual )
+        for i, entry in ipairs( virtual and virtualQueue or realQueue ) do
+            if entry.action == action then return true end
+        end
+
+        return false
+    end
+
+
+    function state:IsInFlight( action, virtual )
+        for i, entry in ipairs( virtual and virtualQueue or realQueue ) do
+            if entry.type == "projectile" and entry.action == action then return true end
+        end
+
+        return false
+    end
+
+
+    function state:InFlightRemains( action, virtual )
+        for i, entry in ipairs( virtual and virtualQueue or realQueue ) do
+            if entry.type == "projectile" and entry.action == action then return max( 0, entry.time - self.query_time ) end
+        end
+
+        return 0
+    end
+
+
+    function state:IsCasting( action, virtual )
+        for i, entry in ipairs( virtual and virtualQueue or realQueue ) do
+            if entry.type == "hardcast" and entry.action == action then return true end
+        end
+
+        return false
+    end
+
+
+    function state:QueuedCastRemains( action, virtual )
+        for i, entry in ipairs( virtual and virtualQueue or realQueue ) do
+            if entry.type == "hardcast" and entry.action == action then return max( 0, entry.time - self.query_time ) end
+        end
+
+        return 0
+    end
+
+
+    local times = {}
+    function state:GetQueueTimes( virtual )
+        wipe( times )
+
+        for i, impact in ipairs( virtual and virtualQueue or realQueue ) do
+            times[ i ] = impact.time
+        end
+
+        return unpack( times )
+    end
+
+
+    function state:GetImpactDelays( virtual )
+        wipe( times )
+
+        for i, impact in ipairs( virtual and virtualQueue or realQueue ) do
+            local t = impact.time - state.now - state.offset
+            if t > 0 then insert( times, t ) end
+        end
+
+        return unpack( times )
+    end
+
+
+    function state:IterateQueue( virtual )
+        local t = virtual and virtualQueue or realQueue
+
+        local i, n = 0, getn( t )
+        return function ()
+            i = i + 1
+            if i <= n then return i, t[i] end
+        end
+    end
+
+
+    function state:GetQueue( virtual )
+        return virtual and virtualQueue or realQueue
+    end
+end
+
+
+function state:RunHandler( key, noStart )
+    local ability = class.abilities[ key ]
+
+    if not ability then
+        -- ns.Error( "runHandler() attempting to run handler for non-existant ability '" .. key .. "'." )
+        return
+    end
+
+    if state.channeling then state.stopChanneling() end
+    if ability.handler then ability.handler() end
+
+    state.prev.last = key
+    state[ ability.gcd == 'off' and 'prev_off_gcd' or 'prev_gcd' ].last = key
+
+    table.insert( state.predictions, 1, key )
+    table.insert( state[ ability.gcd == 'off' and 'predictionsOff' or 'predictionsOn' ], 1, key )
+    
+    state.predictions[6] = nil
+    state.predictionsOn[6] = nil
+    state.predictionsOff[6] = nil
+
+    state.prev.override = nil
+    state.prev_gcd.override = nil
+    state.prev_off_gcd.override = nil
+    
+    if state.time == 0 and ability.startsCombat and not noStart then
+        state.false_start = state.query_time - 0.01
+
+        -- Assume MH swing at combat start and OH swing half a swing later?
+        if state.target.distance < 8 then
+            if state.swings.mainhand_speed > 0 and state.nextMH == 0 then state.swings.mh_pseudo = state.false_start end
+            if state.swings.offhand_speed > 0 and state.nextOH == 0 then state.swings.oh_pseudo = state.false_start + ( state.offhand_speed / 2 ) end
+        end
+    end
+
+    state.cast_start = 0
+    ns.callHook( 'runHandler', key )    
+end
+
+function state.runHandler( key, noStart )
+    state:RunHandler( key, noStart )
 end
 
 
@@ -3668,16 +4149,9 @@ function state.reset( dispName )
     state.cycle = nil
     
     state.latency = select( 4, GetNetStats() ) / 1000
-    
-    local spells_in_flight = ns.spells_in_flight
-    
-    for i = #spells_in_flight, 1, -1 do
-        if spells_in_flight[i].time < state.now then
-            table.remove( spells_in_flight, i )
-        else
-            break
-        end
-    end
+
+    -- Projectiles
+    state:ResetQueueData()
 
     if ns.recountRequired() then ns.recountTargets() end
 
@@ -3840,12 +4314,11 @@ function state.reset( dispName )
 
     local last_act = state.player.lastcast and class.abilities[ state.player.lastcast ]
     if last_act and last_act.startsCombat and state.combat == 0 and state.now - last_act.lastCast < 1 then
-        state.false_start = last_act.lastCast - 0.1
+        state.false_start = last_act.lastCast - 0.01
     end
-    
+   
     -- interrupts
     state.target.casting = nil
-    state.target.cast_end = nil
     
     for k, power in pairs( class.resources ) do
         local res = rawget( state, k )
@@ -3909,59 +4382,95 @@ function state.reset( dispName )
     
     local cast_time, casting = 0, nil
 
-    local spellcast, _, _, startCast, endCast = UnitCastingInfo('player')
+    local spellcast, _, _, startCast, endCast, _, _, _, spellID = UnitCastingInfo( 'player' )
     if endCast ~= nil then
-        state.cast_start = startCast / 1000
-        cast_time = ( endCast / 1000 ) - GetTime()
-        casting = formatKey( spellcast )
-        applyBuff( "player_casting", cast_time )
+        endCast = endCast / 1000
+        startCast = startCast / 1000
+
+        cast_time = endCast - state.now
+
+        state.applyBuff( "player_casting", cast_time )
+        state.buff.player_casting.applied = startCast
+        state.buff.player_casting.duration = endCast - startCast
+        state.buff.player_casting.expires = endCast
+
+        casting = class.abilities[ spellID ] and class.abilities[ spellID ].key or formatKey( spellcast )
     end
 
     state.stopChanneling( true )
 
-    local spellcast, _, _, startCast, endCast = UnitChannelInfo('player')
+    local spellcast, _, _, startCast, endCast, _, _, spellID = UnitChannelInfo( 'player' )
     if endCast ~= nil then
-        state.cast_start = startCast / 1000
-        cast_time = ( endCast / 1000 ) - GetTime()
-        casting = formatKey( spellcast )
+        endCast = endCast / 1000
+        startCast = startCast / 1000
 
-        state.channelSpell( casting, startCast / 1000, ( endCast - startCast ) / 1000 )
-        applyBuff( "player_casting", cast_time )
+        cast_time = endCast - state.now
+
+        state.applyBuff( "player_casting", cast_time )
+        state.buff.player_casting.applied = startCast
+        state.buff.player_casting.duration = endCast - startCast
+        state.buff.player_casting.expires = endCast
+
+        casting = spellID and class.abilities[ spellID ] and class.abilities[ spellID ].key or formatKey( spellcast )
+        state.channelSpell( casting, startCast, endCast - startCast )
     end
+
 
     ns.callHook( "reset_precast" )
-    
+
+    -- Okay, two paths here.
+    -- 1.  We can cast while casting (i.e., Fire Blast for Fire Mage), so we want to hand off the current cast to the event system, and then let the recommendation engine sort it out.
+    -- 2.  We cannot cast anything while casting (typical), so we want to advance the clock, complete the cast, and then generate recommendations.
+
     local ability = casting and class.abilities[ casting ]
 
-    if cast_time and casting and ( not ability or not ability.breakable ) then
-        
-        -- print( format( "Advancing %.2f to cast %s.", cast_time, casting ) )
-        if state.auto_advance then
-            state.advance( cast_time )
-        else
-            state.setCooldown( "global_cooldown", max( cast_time, state.cooldown.global_cooldown.remains ) )
-        end
-        
-        if ability then            
-            if not ability.channeled then
-                -- Put the action on cooldown. (It's slightly premature, but addresses CD resets like Echo of the Elements.)
-                if ability.charges and ability.recharge > 0 then
-                    state.spendCharges( casting, 1 )
+    if casting and cast_time > 0 then
+        -- A hardcast on reset should have been caught for real.
+        if not state:IsCasting( casting, true ) then 
+            state:QueueEvent( casting, "hardcast", true, nil, cast_time ) end
+
+        if not state.spec.canCastWhileCasting then
+            -- Cannot cast while casting.
+            if ( not ability or not ability.breakable ) then
+                -- Revisit auto-advance, we may be overcompensating for it now that we use the queue.
+                --[[ if state.auto_advance then
+                    state.advance( cast_time )
                 else
-                    state.setCooldown( casting, ability.cooldown )
+                    state.setCooldown( "global_cooldown", max( cast_time, state.cooldown.global_cooldown.remains ) )
+                end ]]
+
+                state.setCooldown( "global_cooldown", max( cast_time, state.cooldown.global_cooldown.remains ) )
+
+                if ability then
+                    if not ability.channeled then
+                        state.advance( max( cast_time, state:QueuedCastRemains( casting, true ) ) )
+                        --[[
+                        state.advance( state.buff.player_casting.remains )
+
+                        if ability.charges and ability.recharge > 0 then
+                            state.spendCharges( casting, 1 )
+                        else
+                            state.setCooldown( casting, ability.cooldown )
+                        end
+
+                        ns.spendResources( casting )
+                        
+                        -- If we're here, the spell should be in our queue.
+                        state:ProcessEvent( casting, true )
+
+                        -- Projectile (w/ meaningful impact event)
+                        if ability.isProjectile then
+                            state:QueueEvent( casting, "projectile", true )
+                        end ]]
+
+                    elseif ability.postchannel then
+                        ability.postchannel()
+                        
+                    end
                 end
-                
-                -- Perform the action.
-                ns.runHandler( casting )                
-                ns.spendResources( casting )
-                
-            elseif ability.postchannel then
-                ability.postchannel()
-                
             end
         end
-        
-    end
+    end    
 
     -- Delay to end of GCD.
     local delay = 0    
@@ -3971,9 +4480,22 @@ function state.reset( dispName )
     delay = ns.callHook( "reset_postcast", delay )
     
     if delay > 0 then
+        if Hekili.ActiveDebug then Hekili:Debug( "Advancing by %.2f per GCD or cast or channel or reset_postcast value.", delay ) end
         state.advance( delay )
     end
-    
+end
+
+
+function state:SetConstraint( min, max )
+    state.delayMin = min or 0
+    state.delayMax = max or 3600
+end
+
+
+function state:StartCombat()
+    self.false_start = self.query_time - 0.01
+    if self.swings.mainhand_speed > 0 and self.nextMH == 0 then self.swings.mh_pseudo = self.false_start end
+    if self.swings.offhand_speed > 0 and self.nextOH == 0 then self.swings.oh_pseudo = self.false_start + ( self.offhand_speed / 2 ) end
 end
 
 
@@ -3982,41 +4504,46 @@ function state.advance( time )
     if time <= 0 then
         return
     end
+
+    if Hekili.ActiveDebug then Hekili:Debug( "Advancing clock by %.2f...", time ) end
     
     time = ns.callHook( 'advance', time ) or time
-    -- time = roundUp( time, 3 )
+    time = roundUp( time, 2 )
     
     state.delay = 0
     
+    local realOffset = state.offset
+
     if state.player.queued_ability then
-        local saved_offset = state.offset
         local lands = max( state.now + 0.01, state.player.queued_lands )
         
         if lands > state.query_time and lands <= state.query_time + time then
             state.offset = lands - state.query_time
-            ns.runHandler( state.player.queued_ability, true )
+            if Hekili.ActiveDebug then Hekili:Debug( "Using queued ability '" .. state.player.queued_ability .. "' at " .. state.query_time .. "." ) end
+            state:RunHandler( state.player.queued_ability, true )
+
+            state.offset = realOffset
         end
-        
-        state.offset = saved_offset
     end
-    
-    local projected = ns.spells_in_flight
-    
-    if projected and #projected > 0 then
-        local saved_offset = state.offset
-        
-        for i = #projected, 1, -1 do
-            local proj = projected[i]
-            
-            if proj.time > state.query_time and proj.time <= state.query_time + time then
-                state.offset = proj.time - state.query_time
-                ns.runHandler( proj.spell, true )
-            else
-                break
-            end
+
+    local events = state:GetQueue( true )
+    local event = events[ 1 ]
+
+    while( event ) do
+        if event.time > state.query_time and event.time <= state.query_time + time then
+            state.offset = event.time - state.now
+
+            if Hekili.ActiveDebug then Hekili:Debug( "While advancing by %.2f to %.2f, %s %s occurred at %.2f.", time, realOffset + time, event.action, event.type, state.offset ) end
+
+            if event.func then state:ProcessEvent( event, true )
+            else state:RunHandler( event.action, true ) end
+
+            remove( events, 1 )
+            event = events[ 1 ]
+            state.offset = realOffset
+        else
+            break
         end
-        
-        state.offset = saved_offset
     end
 
     for k in pairs( class.resources ) do
@@ -4028,6 +4555,11 @@ function state.advance( time )
             if not override and resource.regen and resource.regen ~= 0 then
                 resource.actual = min( resource.max, max( 0, resource.actual + ( resource.regen * time ) ) )
             end
+        else
+            -- revisit this, may want to forecastResources( k ) instead.
+            state.delay = time
+            resource.actual = resource.current
+            state.delay = 0
         end
     end
 
@@ -4106,7 +4638,7 @@ ns.spendResources = function( ability )
         end
         
         if cost > 0 and cost < 1 then
-            cost = ( cost * state[ resource ].max )
+            cost = ( cost * state[ resource ].modmax )
         end
 
         if cost ~= 0 then
@@ -4364,6 +4896,13 @@ local cacheTTR = {}
 local TTRtime = 0
 
 
+local flowControl = {
+    call_action_list = true,
+    run_action_list = true,
+    variable = true,
+}
+
+
 -- Needs to be expanded to handle energy regen before Rogue, Monk, Druid will work.
 function state:TimeToReady( action, pool )
     local now = self.now + self.offset
@@ -4415,14 +4954,12 @@ function state:TimeToReady( action, pool )
     
     -- If ready is a function, it returns time.
     -- Ignore this if we are just checking pool_resources.
-    if not pool then
-        if ability.readyTime then
-            wait = max( wait, ability.readyTime )
-        end
+    if not pool and ability.readyTime then
+        wait = max( wait, ability.readyTime )
     end
 
     -- cacheTTR[ action ] = wait
-    return wait
+    return max( wait, self.delayMin )
 end
 
 
@@ -4446,7 +4983,12 @@ function state:IsReady( action )
         end
         
         if resource == 'focus' or resource == 'energy' or state.script.entry then
-            return self:TimeToReady( action ) <= state.delay
+            local ttr = self:TimeToReady( action )
+
+            if ttr <= self.delayMin or ttr >= self.delayMax then return false, "not ready within our time contraint"
+            elseif ttr >= state.delay then return false, "not ready before selected action" end
+
+            return true
         end
         
     end

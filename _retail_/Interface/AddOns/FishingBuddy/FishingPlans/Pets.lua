@@ -181,7 +181,7 @@ PetEvents[FBConstants.FISHING_ENABLED_EVT] = function()
 				else
 					choosefrom = petsetting
                 end
-                if #choosefrom then
+                if #choosefrom > 0 then
                     idx = random(1, #choosefrom);
                     if (idx > 0) then
                         petid = choosefrom[idx]

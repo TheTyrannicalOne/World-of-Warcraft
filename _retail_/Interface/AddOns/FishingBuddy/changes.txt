@@ -1,4 +1,8 @@
-﻿Version 1.9.25p1
+﻿Version 1.9.26
+- Fix for error when no pets selected, CurseForge #376 (thanks, robgha01!)
+- Update libraries
+
+Version 1.9.25p1
 - Fix for the watcher failing to be draggable
 
 Version 1.9.25

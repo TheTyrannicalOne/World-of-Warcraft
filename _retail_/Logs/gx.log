@@ -1,31 +1,31 @@
-1/21 02:23:44.454  LogOpen
-1/21 02:23:44.454  ConsoleDetectDetectHardware():
-1/21 02:23:44.454  	cpuIdx: 1
-1/21 02:23:44.516  ConsoleDeviceInitialize(): hwDetect = 0, hwChanged = 0
-1/21 02:23:44.568  D3d12 Device Create
-1/21 02:23:44.568  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-1/21 02:23:44.711  Found First Candidate Adapter 0: Vendor Id 0x10de, Device Id 0x1e07 FL_12_0: true
-1/21 02:23:44.711  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c
-1/21 02:23:44.831  Detected NvAPI and checking if it's valid...
-1/21 02:23:44.831  Caps:
-1/21 02:23:44.834  	Vendor ID: 10de
-1/21 02:23:44.834  	Device ID: 1e07
-1/21 02:23:44.834  	AFR Groups: 1/1
-1/21 02:23:44.834  Feature Level: DX=6, GL=0, MTL=0
-1/21 02:23:44.862  NotifyOnDeviceCreate
-1/21 02:23:44.862  D3d12 Device Create Successful
-1/21 02:23:44.883  CPU Processor Detection: 12 H/W threads
-1/21 02:23:44.883  Memory Detection: 34296328192 bytes of physical memory available
-1/21 02:23:44.883  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-1/21 02:23:45.023  RenderSettings::NotifyChanged
-1/21 02:23:45.906  Nvidia driver version: r417_68 (41771)
-1/21 02:23:45.906  <IsGPUDriverOutOfDate> No
-1/21 02:23:53.287  Nvidia driver version: r417_68 (41771)
-1/21 02:23:53.287  <IsGPUDriverOutOfDate> No
-1/21 02:23:53.287  Nvidia driver version: r417_68 (41771)
-1/21 02:23:53.287  <IsGPUDriverOutOfDate> No
-1/21 02:27:38.974  RenderSettings::NotifyChanged
-1/21 03:18:48.326  Nvidia driver version: r417_68 (41771)
-1/21 03:18:48.326  <IsGPUDriverOutOfDate> No
-1/21 03:18:48.783  D3d12 Device Destroy
-1/21 03:18:48.783  NotifyOnDeviceDestroy
+1/25 00:12:06.449  LogOpen
+1/25 00:12:06.449  ConsoleDetectDetectHardware():
+1/25 00:12:06.449  	cpuIdx: 1
+1/25 00:12:06.506  ConsoleDeviceInitialize(): hwDetect = 0, hwChanged = 0
+1/25 00:12:06.562  D3d11 Device Create
+1/25 00:12:06.562  	Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
+1/25 00:12:06.562  Found Adapter 0: Vendor Id 0x10de, Device Id 0x1e07 - Sysmem = 0
+1/25 00:12:06.562  Skipping Software Renderer 1: Vendor Id 0x1414, Device Id 0x008c - Sysmem = 0
+1/25 00:12:06.562  Choosing adapter 0
+1/25 00:12:06.562  Detected NvAPI and checking if it's valid...
+1/25 00:12:06.626  AFR detection
+1/25 00:12:06.626  AFR found with 1 devices(s)
+1/25 00:12:06.626  Caps:
+1/25 00:12:06.626  	Vendor ID: 10de
+1/25 00:12:06.630  	Device ID: 1e07
+1/25 00:12:06.630  	AFR Groups: 1/1
+1/25 00:12:06.630  Feature Level: DX=3, GL=0, MTL=0
+1/25 00:12:06.648  NotifyOnDeviceCreate
+1/25 00:12:06.648  D3d11 Device Create Successful
+1/25 00:12:06.671  CPU Processor Detection: 12 H/W threads
+1/25 00:12:06.671  Memory Detection: 34296328192 bytes of physical memory available
+1/25 00:12:06.671  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+1/25 00:12:06.822  RenderSettings::NotifyChanged
+1/25 00:12:07.568  <IsGPUDriverOutOfDate> No
+1/25 00:12:15.596  <IsGPUDriverOutOfDate> No
+1/25 00:12:15.596  <IsGPUDriverOutOfDate> No
+1/25 00:12:52.292  RenderSettings::NotifyChanged
+1/25 00:21:38.470  <IsGPUDriverOutOfDate> No
+1/25 00:21:38.732  D3d11 Device Destroy
+1/25 00:21:38.732  NotifyOnDeviceDestroy
+1/25 00:21:39.157  D3d11 Device Destroyed

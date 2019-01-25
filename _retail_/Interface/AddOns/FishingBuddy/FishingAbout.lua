@@ -119,8 +119,9 @@ credits[FBConstants.ROLE_HELP_BUGS] = {
 	["Gulduka"] = { "German language testing for LibBabble-SubZone" },
 	["Mastigophoran"] = { "Help with Truthseeker/Oathbreaker issue" },
 	["Resike"] = { "Help fix leaking globals, potentional taint hazards" },
-	["HarlequinBonse"] = { "Found the Tuskarr spear bug!"},
-	["chadcloman"] = { "Most detailed bug ever!", },
+	["HarlequinBonse"] = { "Found the Tuskarr spear bug!" },
+    ["chadcloman"] = { "Most detailed bug ever!", },
+    ["robgha01"] = { "No pets bug" },
 };
 
 -- Ideas and suggestions

@@ -7,13 +7,14 @@ FishingBuddy_Info = {
 		[863001] = 8,
 		[862004] = 2,
 		[863002] = 2,
+		[862005] = 36,
 		[863003] = 1,
 		[863004] = 3,
-		[862000] = 8,
-		[863005] = 1,
+		[862000] = 44,
+		[1165001] = 1,
 		[862001] = 2,
 		[1165000] = 1,
-		[1165001] = 1,
+		[863005] = 1,
 	},
 	["HiddenFishies"] = {
 	},
@@ -23,6 +24,7 @@ FishingBuddy_Info = {
 		[863001] = 0,
 		[862004] = 0,
 		[863002] = 0,
+		[862005] = 0,
 		[863003] = 0,
 		[863004] = 0,
 		[863005] = 0,
@@ -48,6 +50,13 @@ FishingBuddy_Info = {
 		[863002] = {
 			[152543] = 2,
 		},
+		[862005] = {
+			[154779] = 2,
+			[162515] = 2,
+			[152543] = 14,
+			[152544] = 17,
+			[154801] = 1,
+		},
 		[863003] = {
 			[152544] = 1,
 		},
@@ -65,33 +74,10 @@ FishingBuddy_Info = {
 			[162517] = 1,
 		},
 	},
-	["FishSchools"] = {
-		[862] = {
-			{
-				["y"] = 0.51498076113977,
-				["x"] = 0.766917032053709,
-				["sidx"] = 862000,
-				["kind"] = 0,
-				["fish"] = {
-					[152543] = 2,
-					[152547] = 1,
-				},
-				["count"] = 3,
-			}, -- [1]
-		},
-		[863] = {
-			{
-				["y"] = 0.745583651220492,
-				["x"] = 0.587682601119972,
-				["sidx"] = 863000,
-				["kind"] = 0,
-				["fish"] = {
-					[152547] = 6,
-					[152549] = 1,
-				},
-				["count"] = 7,
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[863] = "Razorjaw River",
+		[862] = "Port of Zandalar",
+		[1165] = "Dazar'alor",
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -102,46 +88,88 @@ FishingBuddy_Info = {
 		[863001] = "The Shattered River",
 		[862004] = "Sandscar Breach",
 		[863002] = "Wayward Shoals",
+		[862005] = "Port of Zandalar",
 		[863003] = "Naz'agal",
 		[863004] = "Krag'wa's Burrow",
-		[862000] = 4,
-		[863005] = "Razorjaw River",
+		[862000] = 5,
+		[1165001] = "Dazar'alor",
 		[862001] = "Atal'Gral",
 		[1165000] = 1,
-		[1165001] = "Dazar'alor",
+		[863005] = "Razorjaw River",
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
+		[154779] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Ruptured Plate Stompers",
+			["texture"] = 132589,
+			["quality"] = 0,
+		},
 		[152547] = {
 			["enUS"] = "Great Sea Catfish",
-			["quality"] = 1,
 			["texture"] = 2057312,
-		},
-		[152549] = {
-			["enUS"] = "Redtail Loach",
 			["quality"] = 1,
-			["texture"] = 2057314,
-		},
-		[152543] = {
-			["enUS"] = "Sand Shifter",
-			["quality"] = 1,
-			["texture"] = 2057315,
-		},
-		[152544] = {
-			["enUS"] = "Slimy Mackerel",
-			["quality"] = 1,
-			["texture"] = 2057316,
 		},
 		[162517] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "U'taka",
+			["quality"] = 2,
 			["texture"] = 237327,
+		},
+		[152549] = {
+			["enUS"] = "Redtail Loach",
+			["texture"] = 2057314,
+			["quality"] = 1,
+		},
+		[152543] = {
+			["enUS"] = "Sand Shifter",
+			["texture"] = 2057315,
+			["quality"] = 1,
+		},
+		[152544] = {
+			["enUS"] = "Slimy Mackerel",
+			["texture"] = 2057316,
+			["quality"] = 1,
+		},
+		[162515] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Midnight Salmon",
+			["texture"] = 237302,
 			["quality"] = 2,
 		},
+		[154801] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Crumbling Chain Belt",
+			["texture"] = 132498,
+			["quality"] = 0,
+		},
 	},
-	["KnownZones"] = {
-		[863] = "Razorjaw River",
-		[862] = "Sandscar Breach",
-		[1165] = "Dazar'alor",
+	["FishSchools"] = {
+		[862] = {
+			{
+				["y"] = 0.51498076113977,
+				["x"] = 0.766917032053709,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["count"] = 3,
+				["fish"] = {
+					[152543] = 2,
+					[152547] = 1,
+				},
+			}, -- [1]
+		},
+		[863] = {
+			{
+				["y"] = 0.745583651220492,
+				["x"] = 0.587682601119972,
+				["sidx"] = 863000,
+				["kind"] = 0,
+				["count"] = 7,
+				["fish"] = {
+					[152547] = 6,
+					[152549] = 1,
+				},
+			}, -- [1]
+		},
 	},
 }

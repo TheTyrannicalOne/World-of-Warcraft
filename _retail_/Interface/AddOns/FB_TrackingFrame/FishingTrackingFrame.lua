@@ -207,7 +207,7 @@ local weeklyfish = {
     function(how, fishlink)
         if ( how and (how == FBConstants.HOURLY or
         how == FBConstants.WEEKLY)) then
-            local c, i, n = FL:SplitFishLink(fishlink);
+            local c, i, n = FL:SplitLink(fishlink, true);
             if ( i ) then
                 TrackThis(trackingWordMap[how], i, c, n);
                 FishingBuddy.Print(FB_TFConstants.TRACKINGMSG, n, how);
@@ -221,7 +221,7 @@ local weeklyfish = {
     FishingBuddy.Commands[FB_TFConstants.NOTRACK].help = FB_TFConstants.NOTRACK_HELP;
     FishingBuddy.Commands[FB_TFConstants.NOTRACK].func =
     function(fishlink)
-        local c, i, n = FL:SplitFishLink(fishlink);
+        local c, i, n = FL:SplitLink(fishlink, true);
         if ( i ) then
             UntrackThis(i, n);
             return true;
