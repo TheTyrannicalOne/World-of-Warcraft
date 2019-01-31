@@ -21,7 +21,9 @@ local FindUnitBuffByID, FindUnitDebuffByID = ns.FindUnitBuffByID, ns.FindUnitDeb
 local GetResourceInfo, GetResourceID, GetResourceKey = ns.GetResourceInfo, ns.GetResourceID, ns.GetResourceKey
 local RegisterEvent = ns.RegisterEvent
 
+local formatKey = ns.formatKey
 local getSpecializationKey = ns.getSpecializationKey
+
 local tableCopy = ns.tableCopy
 
 local mt_resource = ns.metatables.mt_resource
@@ -945,46 +947,69 @@ all:RegisterAuras( {
 
     casting = {
         name = "Casting",
-        generate = function ()
-            local aura = debuff.casting
+        strictTiming = true, -- Ignore buffPadding.
+        generate = function( t, auraType )
+            local unit = auraType == "debuff" and "target" or "player"
 
-            if UnitCanAttack( "player", "target" ) then
-                local spell, _, _, startCast, endCast, _, _, notInterruptible = UnitCastingInfo( "target" )
-        
-                if notInterruptible == false then
-                    aura.name = "Casting " .. spell
-                    aura.count = 1
-                    aura.expires = endCast / 1000
-                    aura.applied = startCast / 1000
-                    aura.v1 = spell
-                    aura.caster = 'target'
+            if unit == "player" then stopChanneling( true ) end
+
+            if unit == "player" or UnitCanAttack( "player", "target" ) then
+                local spell, _, _, startCast, endCast, _, _, notInterruptible, spellID = UnitCastingInfo( unit )
+
+                if spell then
+                    startCast = startCast / 1000
+                    endCast = endCast / 1000
+
+                    t.name = spell
+                    t.count = 1
+                    t.expires = endCast
+                    t.applied = startCast
+                    t.duration = endCast - startCast
+                    t.v1 = spellID
+                    t.v2 = notInterruptible
+                    t.v3 = false
+                    t.caster = unit
+
                     return
                 end
 
-                spell, _, _, startCast, endCast, _, _, notInterruptible = UnitChannelInfo( "target" )
-                
-                if notInterruptible == false then
-                    aura.name = "Casting " .. spell
-                    aura.count = 1
-                    aura.expires = endCast / 1000
-                    aura.applied = startCast / 1000
-                    aura.v1 = spell
-                    aura.caster = 'target'
+                spell, _, _, startCast, endCast, _, notInterruptible, spellID = UnitChannelInfo( unit )
+
+                if spell then
+                    startCast = startCast / 1000
+                    endCast = endCast / 1000
+
+                    t.name = spell
+                    t.count = 1
+                    t.expires = endCast
+                    t.applied = startCast
+                    t.duration = endCast - startCast
+                    t.v1 = spellID
+                    t.v2 = notInterruptible
+                    t.v3 = true -- channeled.
+                    t.caster = unit
+
+                    if unit == "player" then
+                        local castInfo = class.abilities[ spellID ]
+                        local key = castInfo and castInfo.key or formatKey( spell )
+                        channelSpell( key, startCast, endCast - startCast )
+                    end
+
                     return
                 end
             end
 
-            aura.name = "Casting"
-            aura.count = 0
-            aura.expires = 0
-            aura.applied = 0
-            aura.v1 = 0
-            aura.caster = 'target'
+            t.name = "Casting"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.v1 = 0
+            t.v2 = false
+            t.caster = unit
         end,
-        strictTiming = true,
     },
 
-    player_casting = {
+    --[[ player_casting = {
         name = "Casting",
         generate = function ()
             local aura = buff.player_casting
@@ -1021,7 +1046,7 @@ all:RegisterAuras( {
             aura.caster = 'target'
         end,
         strictTiming = true,
-    },
+    }, ]]
 
     movement = {
         duration = 5,
@@ -1820,6 +1845,190 @@ all:RegisterAuras( {
 
 -- BFA TRINKETS
 -- ON USE
+
+
+-- Battle of Dazar'alor
+all:RegisterAbility( "invocation_of_yulon", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 165568,
+    toggle = "cooldowns",
+} )
+
+
+all:RegisterAbility( "ward_of_envelopment", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 165569,
+    toggle = "defensives",
+
+    handler = function() applyBuff( "enveloping_protection" ) end
+} )
+
+all:RegisterAura( "enveloping_protection", {
+    id = 287568,
+    duration = 10,
+    max_stack = 1
+} )
+
+
+-- Everchill Anchor debuff.
+all:RegisterAura( "everchill", {
+    id = 289525,
+    duration = 12,
+    max_stack = 10
+} )
+
+
+-- Incandescent Sliver
+all:RegisterAura( "incandescent_luster", {
+    id = 289523,
+    duration = 20,
+    max_stack = 10
+} )
+
+all:RegisterAura( "incandescent_mastery", {
+    id = 289524,
+    duration = 20,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "variable_intensity_gigavolt_oscillating_reactor", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 165572,
+    toggle = "cooldowns",
+
+    handler = function() applyBuff( "oscillating_overload" ) end
+} )
+
+all:RegisterAura( "vigor_engaged", {
+    id = 287915,
+    duration = 3600,
+    max_stack = 6
+    -- May need to emulate the stacking portion.    
+} )
+
+all:RegisterAura( "oscillating_overload", {
+    id = 287917,
+    duration = 6,
+    max_stack = 1
+} )
+
+
+-- Diamond-Laced Refracting Prism
+all:RegisterAura( "diamond_barrier", {
+    id = 288034,
+    duration = 10,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "grongs_primal_rage", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 165574,
+    toggle = "cooldowns",
+
+    handler = function() 
+        applyBuff( "primal_rage" )
+        setCooldown( "global_cooldown", 4 )
+    end
+} )
+
+all:RegisterAura( "primal_rage", {
+    id = 288267,
+    duration = 4,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "tidestorm_codex", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 165576,
+    toggle = "cooldowns",
+} )
+
+
+-- Bwonsamdi's Bargain
+all:RegisterAura( "bwonsamdis_due", {
+    id = 288193,
+    duration = 300,
+    max_stack = 1    
+} )
+
+all:RegisterAura( "bwonsamdis_bargain_fulfilled", {
+    id = 288194,
+    duration = 360,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "mirror_of_entwined_fate", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 165578,
+    toggle = "defensives",
+
+    handler = function() applyDebuff( "player", "mirror_of_entwined_fate" ) end
+} )
+
+all:RegisterAura( "mirror_of_entwined_fate", {
+    id = 287999,
+    duration = 30,
+    max_stack = 1
+} )
+
+
+-- Kimbul's Razor Claw
+all:RegisterAura( "kimbuls_razor_claw", {
+    id = 288330,
+    duration = 6,
+    tick_time = 2,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "ramping_amplitude_gigavolt_engine", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 165580,
+    toggle = "cooldowns",
+
+    handler = function() applyBuff( "rage" ) end
+} )
+
+all:RegisterAura( "rage", {
+    id = 288156,
+    duration = 18,
+    max_stack = 15
+} )
+
+
+-- Crest of Pa'ku
+all:RegisterAura( "gift_of_wind", {
+    id = 288304,
+    duration = 15,
+    max_stack = 1
+} )
+
+
 all:RegisterAbility( "endless_tincture_of_fractional_power", {
     cast = 0,
     cooldown = 60,
@@ -2734,13 +2943,83 @@ all:RegisterAbility( "knot_of_ancient_fury", {
     toggle = "cooldowns",
 
     handler = function ()
-
+        applyBuff( "fury_of_the_forest_lord" )
     end,
 } )
 
 all:RegisterAura( "fury_of_the_forest_lord", {
     id = 278231,
     duration = 12,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "sinister_gladiators_medallion", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 165055,
+    toggle = "cooldowns",
+
+    handler = function() applyBuff( "gladiators_medallion" ) end
+} )
+
+all:RegisterAura( "gladiators_medallion", {
+    id = 277179,
+    duration = 20,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "sinister_gladiators_emblem", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 165056,
+    toggle = "cooldowns",
+
+    handler = function() applyBuff( "gladiators_emblem" ) end
+} )
+
+all:RegisterAura( "gladiators_emblem", {
+    id = 277187,
+    duration = 15,
+    max_stack = 1
+} )
+
+
+-- Proc from Sinister Gladiator's Insignia
+all:RegisterAura( "gladiators_insignia", {
+    id = 277182,
+    duration = 20,
+    max_stack = 1
+} )
+
+
+all:RegisterAbility( "sinister_gladiators_badge", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 165058,
+    toggle = "cooldowns",
+
+    handler = function() applyBuff( "gladiators_badge" ) end
+} )
+
+all:RegisterAura( "gladiators_badge", {
+    id = 277185,
+    duration = 20,
+    max_stack = 1
+} )
+
+
+-- Proc from Sinister Gladiator's Safeguard
+all:RegisterAura( "gladiators_safeguard", {
+    id = 286342,
+    duration = 10,
     max_stack = 1
 } )
 

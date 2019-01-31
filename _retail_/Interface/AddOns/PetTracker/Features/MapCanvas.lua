@@ -1,5 +1,5 @@
 --[[
-Copyright 2012-2018 João Cardoso
+Copyright 2012-2019 João Cardoso
 PetTracker is distributed under the terms of the GNU General Public License (Version 3).
 As a special exception, the copyright holders of this addon do not give permission to
 redistribute and/or modify it.
@@ -82,7 +82,6 @@ end
 function MapCanvas:Draw(frame)
 	if Addon.Sets and self:Validate(frame) then
 		local mapID = frame:GetMapID()
-		local canvas = frame:GetCanvas()
 		local index = 1
 
 		if not Addon.Sets.HideSpecies then

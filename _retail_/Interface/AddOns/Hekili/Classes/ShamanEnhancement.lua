@@ -921,7 +921,8 @@ if select( 2, UnitClass( 'player' ) ) == 'SHAMAN' then
             talent = "totem_mastery",
             essential = true,
 
-            usable = function () return buff.totem_mastery.remains < 15 end,
+            readyTime = function () return buff.totem_mastery.remains - 15 end,
+
             handler = function ()
                 applyBuff( 'resonance_totem', 120 )
                 applyBuff( 'storm_totem', 120 )
@@ -943,6 +944,10 @@ if select( 2, UnitClass( 'player' ) ) == 'SHAMAN' then
             toggle = "interrupts",
 
             usable = function () return debuff.casting.up end,
+
+            debuff = "casting",
+            readyTime = state.timeToInterrupt,
+
             handler = function () interrupt() end,
         },
 

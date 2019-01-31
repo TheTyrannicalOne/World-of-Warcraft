@@ -3,11 +3,11 @@ if UnitFactionGroup("player") ~= "Alliance" then return end
 -- Module Declaration
 --
 
-local mod, CL = BigWigs:NewBoss("Grong the Revenant", 2070, 2340)
+local mod, CL = BigWigs:NewBoss("Grong Alliance", 2070, 2340)
 if not mod then return end
 mod:RegisterEnableMob(144638)
 mod.engageId = 2284
---mod.respawnTime = 31
+mod.respawnTime = 30
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -39,15 +39,21 @@ function mod:GetOptions()
 		282543, -- Deathly Slam
 		285994, -- Ferocious Roar
 		--[[ Death Specter ]]--
-		--282471, -- Voodoo Blast
+		282471, -- Voodoo Blast
+		286373, -- Chill of Death
 		282526, -- Death Specter
 		282533, -- Death Empowerment
 		286434, -- Shadow Core
 		286435, -- Discharge Shadow Core
+	}, {
+		[282399] = mod.displayName,
+		[282471] = -18965, -- Death Specter
 	}
 end
 
 function mod:OnBossEnable()
+	self:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", nil, "boss1")
+
 	--[[ Grong ]]--
 	self:Log("SPELL_CAST_START", "DeathKnel", 282399)
 	self:Log("SPELL_CAST_SUCCESS", "NecroticCombo", 286450)
@@ -61,7 +67,12 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "FerociousRoar", 285994)
 
 	--[[ Death Specter ]]--
-	--self:Log("SPELL_CAST_SUCCESS", "VoodooBlast", 282471) XXX Check what we can do with this
+	self:Log("SPELL_AURA_APPLIED", "GroundDamage", 286373) -- Chill of Death
+	self:Log("SPELL_PERIODIC_DAMAGE", "GroundDamage", 286373) -- Chill of Death
+	self:Log("SPELL_PERIODIC_MISSED", "GroundDamage", 286373)
+	self:Log("SPELL_DAMAGE", "GroundDamage", 282471) -- Voodoo Blast
+	self:Log("SPELL_MISSED", "GroundDamage", 282471)
+
 	self:Log("SPELL_CAST_SUCCESS", "DeathSpecter", 282526)
 	self:Log("SPELL_CAST_START", "DeathEmpowerment", 282533)
 	self:Log("SPELL_AURA_APPLIED", "ShadowCore", 286434)
@@ -70,6 +81,7 @@ end
 
 function mod:OnEngage()
 	addCount = 1
+	self:Bar(282471, 10.5) -- Voodoo Blast
 	self:Bar(282543, 13.1) -- Deathly Slam
 	self:Bar(282526, 16.8, CL.count:format(CL.add, addCount)) -- DeathSpecter, Add
 	self:Bar(286450, 22)	-- Necrotic Combo
@@ -79,6 +91,14 @@ end
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
+
+function mod:UNIT_SPELLCAST_SUCCEEDED(_, unit, _, spellId)
+	if spellId == 282467 then -- Voodoo Blast
+		self:Message2(282471, "red")
+		self:PlaySound(282471, "warning")
+		self:CDBar(282471, 23)
+	end
+end
 
 function mod:DeathKnel(args)
 	self:Message2(args.spellId, "orange")
@@ -106,7 +126,7 @@ end
 
 function mod:BestialThrowTarget(args)
 	self:TargetMessage2(289401, "purple", args.destName)
-	self:PlaySound(289401, "alarm")
+	self:PlaySound(289401, "alarm", nil, args.destName)
 end
 
 function mod:DeathlySlam(args)
@@ -130,6 +150,20 @@ end
 --	self:Bar(args.spellId, 23.1)
 --end
 
+do
+	local prev = 0
+	function mod:GroundDamage(args)
+		if self:Me(args.destGUID) then
+			local t = args.time
+			if t-prev > 1.5 then
+				prev = t
+				self:PlaySound(args.spellId, "alarm")
+				self:PersonalMessage(args.spellId, "underyou")
+			end
+		end
+	end
+end
+
 function mod:DeathSpecter(args)
 	self:Message2(args.spellId, "yellow", CL.incoming:format(CL.count:format(CL.add, addCount)))
 	self:PlaySound(args.spellId, "long")
@@ -137,9 +171,16 @@ function mod:DeathSpecter(args)
 	self:Bar(args.spellId, 60.5, CL.count:format(CL.add, addCount))
 end
 
-function mod:DeathEmpowerment(args)
-	self:Message2(args.spellId, "yellow")
-	self:PlaySound(args.spellId, "alert")
+do
+	local prev = 0
+	function mod:DeathEmpowerment(args)
+		local t = args.time
+		if t-prev > 1.5 then
+			prev = t
+			self:Message2(args.spellId, "yellow")
+			self:PlaySound(args.spellId, "alert")
+		end
+	end
 end
 
 function mod:ShadowCore(args)

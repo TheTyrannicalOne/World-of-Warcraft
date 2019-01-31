@@ -2562,13 +2562,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["package"] = "Protection Warrior",
-					["aoe"] = 2,
 					["nameplates"] = true,
+					["potionsReset"] = 20180919.1,
 					["debuffPadding"] = 0,
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["nameplateRange"] = 8,
-					["potionsReset"] = 20180919.1,
+					["aoe"] = 2,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -2579,13 +2579,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["debuffPadding"] = 0,
-					["aoe"] = 2,
 					["potionsReset"] = 20180919.1,
+					["nameplates"] = true,
 					["package"] = "Arms",
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["nameplateRange"] = 8,
-					["nameplates"] = true,
+					["aoe"] = 2,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -2596,13 +2596,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["throttleRefresh"] = false,
 					["package"] = "Fury",
-					["aoe"] = 2,
 					["nameplates"] = true,
+					["potionsReset"] = 20180919.1,
 					["debuffPadding"] = 0,
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["nameplateRange"] = 8,
-					["potionsReset"] = 20180919.1,
+					["aoe"] = 2,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["damage"] = true,
@@ -4151,9 +4151,9 @@ HekiliDB = {
 							}, -- [6]
 							{
 								["enabled"] = true,
+								["action"] = "arcane_missiles",
 								["chain"] = "1",
 								["criteria"] = "mana.pct <= 95 & buff.clearcasting.react",
-								["action"] = "arcane_missiles",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -4331,9 +4331,9 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["enabled"] = true,
+								["action"] = "arcane_missiles",
 								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & active_enemies < 3 & ( talent.amplification.enabled || ( ! talent.overpowered.enabled & azerite.arcane_pummeling.rank >= 2 ) || buff.arcane_power.down )",
-								["action"] = "arcane_missiles",
 							}, -- [18]
 							{
 								["enabled"] = true,
@@ -4875,9 +4875,9 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
+								["action"] = "potion",
 								["criteria"] = "target.time_to_die < 65 || ( time_to_die < 180 & ( buff.berserk.up || buff.incarnation.up ) )",
 								["potion"] = "battle_potion_of_agility",
-								["action"] = "potion",
 							}, -- [6]
 							{
 								["enabled"] = true,
@@ -5267,13 +5267,13 @@ HekiliDB = {
 					["buffPadding"] = 0.25,
 					["package"] = "Shadow",
 					["debuffPadding"] = 0,
-					["nameplates"] = false,
 					["aoe"] = 3,
+					["potionsReset"] = 20180919.1,
 					["cycle"] = false,
 					["nameplateRange"] = 8,
 					["potion"] = "potion_of_rising_death",
 					["throttleRefresh"] = false,
-					["potionsReset"] = 20180919.1,
+					["nameplates"] = false,
 					["damageExpiration"] = 6,
 					["damageDots"] = false,
 					["damage"] = true,

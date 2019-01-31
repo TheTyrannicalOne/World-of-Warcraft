@@ -614,27 +614,35 @@ local function applyBuff( aura, duration, stacks, value )
         return
     end
     
-    if not state.buff[ aura ] then return end
+    local b = state.buff[ aura ]
+    if not b then return end
     if not duration then duration = class.auras[ aura ].duration or 15 end
     
     if duration == 0 then
-        state.buff[ aura ].expires = 0
-        state.buff[ aura ].count = 0
-        state.buff[ aura ].v1 = 0
-        state.buff[ aura ].applied = 0
-        state.buff[ aura ].caster = 'unknown'
+        b.expires = 0
+
+        b.lastCount = b.count
+        b.lastApplied = b.applied
+
+        b.count = 0
+        b.v1 = 0
+        b.applied = 0
+        b.caster = 'unknown'
         
         state.active_dot[ aura ] = max( 0, state.active_dot[ aura ] - 1 )
         
     else
-        if not state.buff[ aura ].up then state.active_dot[ aura ] = state.active_dot[ aura ] + 1 end
+        if not b.up then state.active_dot[ aura ] = state.active_dot[ aura ] + 1 end
         
-        state.buff[ aura ] = state.buff[ aura ] or {}
-        state.buff[ aura ].expires = state.query_time + ( duration or class.auras[ aura ].duration )
-        state.buff[ aura ].applied = state.query_time
-        state.buff[ aura ].count = min( class.auras[ aura ].max_stack or 1, stacks or 1 )
-        state.buff[ aura ].v1 = value or 0
-        state.buff[ aura ].caster = 'player'
+        b.lastCount = b.count
+        b.lastApplied = b.applied
+
+        -- state.buff[ aura ] = state.buff[ aura ] or {}
+        b.expires = state.query_time + duration
+        b.applied = state.query_time
+        b.count = min( class.auras[ aura ].max_stack or 1, stacks or 1 )
+        b.v1 = value or 0
+        b.caster = 'player'
     end
     
     if aura == 'heroism' or aura == 'time_warp' or aura == 'ancient_hysteria' then
@@ -669,9 +677,11 @@ local function addStack( aura, duration, stacks, value )
     stacks = stacks or 1
 
     local max_stack = a and a.max_stack or 1
+
+    local b = state.buff[ aura ]
     
-    if state.buff[ aura ].remains > 0 then
-        applyBuff( aura, duration, min( max_stack, state.buff[ aura ].count + stacks ), value )
+    if b.remains > 0 then
+        applyBuff( aura, duration, min( max_stack, b.count + stacks ), value )
     else
         applyBuff( aura, duration, min( max_stack, stacks ), value )
     end
@@ -681,11 +691,13 @@ state.addStack = addStack
 
 
 local function removeStack( aura, stacks )
-    
     stacks = stacks or 1
+
+    local b = state.buff[ aura ]
     
-    if state.buff[ aura ].count > stacks then
-        state.buff[ aura ].count = max( 1, state.buff[ aura ].count - stacks )
+    if b.count > stacks then
+        b.lastCount = b.count
+        b.count = max( 1, b.count - stacks )
     else
         removeBuff( aura )
     end
@@ -716,25 +728,34 @@ local function applyDebuff( unit, aura, duration, stacks, value )
         return
     end
     
+    local d = state.debuff[ aura ]
     duration = duration or class.auras[ aura ].duration or 15
     
     if duration == 0 then
-        state.debuff[ aura ].expires = 0
-        state.debuff[ aura ].count = 0
-        state.debuff[ aura ].value = 0
-        state.debuff[ aura ].applied = 0
-        state.debuff[ aura ].unit = unit
+        d.expires = 0
+
+        d.lastCount = d.count
+        d.lastApplied = d.lastApplied
+
+        d.count = 0
+        d.value = 0
+        d.applied = 0
+        d.unit = unit
         
         state.active_dot[ aura ] = max( 0, state.active_dot[ aura ] - 1 )
     else
-        if state.debuff[ aura ].down then state.active_dot[ aura ] = state.active_dot[ aura ] + 1 end
+        if d.down then state.active_dot[ aura ] = state.active_dot[ aura ] + 1 end
         
-        state.debuff[ aura ] = state.debuff[ aura ] or {}
-        state.debuff[ aura ].expires = state.query_time + duration
-        state.debuff[ aura ].count = min( class.auras[ aura ].max_stack or 1, stacks or 1 )
-        state.debuff[ aura ].value = value or 0
-        state.debuff[ aura ].applied = state.now
-        state.debuff[ aura ].unit = unit or 'target'
+        -- state.debuff[ aura ] = state.debuff[ aura ] or {}
+        d.expires = state.query_time + duration
+
+        d.lastCount = d.count or 0
+        d.lastApplied = d.applied or 0
+
+        d.count = min( class.auras[ aura ].max_stack or 1, stacks or 1 )
+        d.value = value or 0
+        d.applied = state.now
+        d.unit = unit or 'target'
     end
     
 end
@@ -757,14 +778,21 @@ state.setStance = setStance
 
 
 local function interrupt()
-    state.removeDebuff( 'target', 'casting' )
+    removeDebuff( 'target', 'casting' )
 end
 state.interrupt = interrupt
 
 
+-- Use this for readyTime in an interrupt action; will interrupt casts at end of cast and channels ASAP.
+local function timeToInterrupt()
+    if debuff.casting.down or debuff.casting.v2 then return 3600 end
+    if debuff.casting.v3 then return 0 end
+    return debuff.casting.remains - 0.25
+end
+state.timeToInterrupt = timeToInterrupt
+
+
 -- Pet stuff.
-
-
 local function summonPet( name, duration, spec )
     
     state.pet[ name ] = rawget( state.pet, name ) or {}
@@ -1388,7 +1416,10 @@ local mt_state = {
             return state:InFlightRemains( t.this_action, true )
 
         elseif k == 'executing' then
-            return state:IsCasting( t.this_action, true ) or state.prev[1][ t.this_action ]
+            return state:IsCasting( t.this_action, true ) or ( state.prev[1][ t.this_action ] and state.gcd.remains > 0 )
+
+        elseif k == 'execute_remains' then
+            return ( state:IsCasting( t.this_action, true ) and max( state:QueuedCastRemains( t.this_action, true ), state.gcd.remains ) ) or ( state.prev[1][ t.this_action ] and state.gcd.remains ) or 0
         
         elseif type(k) == 'string' and k:sub(1, 16) == 'incoming_damage_' then
             local remains = k:sub(17)
@@ -1498,7 +1529,7 @@ local mt_state = {
         local aura_name = ability and ability.aura or t.this_action
         local aura = class.auras[ aura_name ]
         
-        local app = aura and ( t.buff[ aura_name ].up and t.buff[ aura_name ] or t.debuff[ aura_name ].up and t.debuff[ aura_name ] ) or nil
+        local app = aura and ( t.buff[ aura_name ].up and t.buff[ aura_name ] ) or ( t.debuff[ aura_name ].up and t.debuff[ aura_name ] ) or nil
 
         -- This uses the default aura duration (if available) to keep pandemic windows accurate.
         local duration = aura and aura.duration or 15
@@ -1512,8 +1543,10 @@ local mt_state = {
             if app then return app.remains < 0.3 * duration end
             return true
 
-        elseif k == 'time_to_refresh' then
-            if app then return max( 0, app.remains - ( 0.3 * duration ) ) end
+        elseif k == 'time_to_refresh' then            
+            if app then
+                return max( 0, app.remains - ( 0.3 * app.duration ) ) 
+            end
             return 0
             
         elseif k == 'ticking' then
@@ -1794,7 +1827,7 @@ local mt_pets = {
             return UnitExists( 'pet' ) and UnitIsDead( 'pet' )
 
         elseif k == 'health_pct' or k == 'health_percent' then
-            return t.alive and 100 * UnitHealth( 'pet ' ) / UnitHealthMax( 'pet' )
+            return t.alive and 100 * UnitHealth( 'pet' ) / UnitHealthMax( 'pet' )
             
         end
         
@@ -1913,7 +1946,7 @@ local mt_target = {
             return UnitExists( 'target' )
             
         elseif k == 'casting' then
-            return state.debuff.casting.up
+            return state.debuff.casting.up and not state.debuff.casting.v2
             
         elseif k == 'in_range' then
             return t.distance <= 8
@@ -2517,7 +2550,10 @@ ns.metatables.mt_resource = mt_resource
 
 
 local default_buff_values = {
+    name = "no_name",
     count = 0,
+    lastCount = 0,
+    lastApplied = 0,
     expires = 0,
     applied = 0,
     duration = 15,
@@ -2576,15 +2612,34 @@ local mt_alias_buff = {
 }
 
 
+local requiresLookup = {
+    name = true,
+    count = true,
+    lastCount = true,
+    lastApplied = true,
+    expires = true,
+    applied = true,
+    caster = true,
+    id = true,
+    timeMod = true,
+    v1 = true,
+    v2 = true,
+    v3 = true,
+    unit = true
+}
+
+
 -- Table of default handlers for auras (buffs, debuffs).
 local mt_default_buff = {
+    mtID = "default_buff",
+
     __index = function( t, k )
         local aura = class.auras[ t.key ]
 
         if aura and rawget( aura, "meta" ) and aura.meta[ k ] then
             return aura.meta[ k ]( t, "buff" )
 
-        elseif k == 'name' or k == 'count' or k == 'duration' or k == 'expires' or k == 'applied' or k == 'caster' or k == 'id' or k == 'timeMod' or k == 'v1' or k == 'v2' or k == 'v3' or k == 'unit' then            
+        elseif requiresLookup[ k ] then
             if aura and aura.generate then
                 for attr, a_val in pairs( default_buff_values ) do
                     t[ attr ] = rawget( t, attr ) or a_val
@@ -2598,6 +2653,8 @@ local mt_default_buff = {
             if real then
                 t.name = real.name
                 t.count = real.count
+                t.lastCount = real.lastCount or 0
+                t.lastApplied = real.lastApplied or 0                
                 t.duration = real.duration
                 t.expires = real.expires
                 t.applied = max( 0, real.expires - real.duration )
@@ -2617,14 +2674,31 @@ local mt_default_buff = {
             
             return t[k]
             
-        elseif k == 'up' or k == 'ticking' or k == 'react' then
+        elseif k == 'up' or k == 'ticking' then
             return t.applied <= state.query_time and t.expires > state.query_time
+
+        elseif k == 'react' then
+            -- React returns stacks assuming you've had time to react to them.
+            if state.query_time > t.applied + state.latency then
+                if t.expires > state.query_time then
+                    return t.count
+                end
+                return 0
+            end
+
+            return state.query_time > t.lastApplied and t.lastCount or 0
 
         elseif k == 'down' then
             return t.applied > state.query_time or t.expires <= state.query_time
             
         elseif k == 'remains' then
-            return t.up and max( 0, t.expires - state.query_time - ( ( aura and aura.strictTiming and 0 ) or state.settings.buffPadding or 0 ) ) or 0
+            if t.up then
+                if aura and aura.strictTiming then
+                    return max( 0, t.expires - state.query_time )
+                end
+                return max( 0, t.expires - state.query_time - ( state.settings.buffPadding or 0 ) )
+            end
+            return 0
             
         elseif k == 'refreshable' then
             return t.remains < 0.3 * ( aura.duration or 30 )
@@ -2735,6 +2809,8 @@ local mt_buffs = {
         if real then
             buff.name = real.name
             buff.count = real.count
+            buff.lastCount = real.lastCount or 0
+            buff.lastApplied = real.lastApplied or 0
             buff.duration = real.duration
             buff.expires = real.expires
             buff.applied = max( 0, real.expires - real.duration )
@@ -2750,6 +2826,8 @@ local mt_buffs = {
         else
             buff.name = aura.name or "No Name"
             buff.count = 0
+            buff.lastCount = 0
+            buff.lastApplied = 0
             buff.duration = aura.duration or 30
             buff.expires = 0
             buff.applied = 0
@@ -3063,9 +3141,12 @@ local mt_alias_debuff = {
 
 
 local default_debuff_values = {
+    name = "no_name",
     count = 0,
+    lastCount = 0,
+    lastApplied = 0,
     expires = 0,
-    applied = 0,
+    applied = 0,    
     duration = 15,
     caster = 'nobody',
     timeMod = 1,
@@ -3078,13 +3159,15 @@ local default_debuff_values = {
 -- Table of default handlers for debuffs.
 -- Needs review.
 local mt_default_debuff = {
+    mtID = "default_debuff",
+
     __index = function( t, k )
         local class_aura = class.auras[ t.key ]
 
         if class_aura and rawget( class_aura, "meta" ) and class_aura.meta[ k ] then
             return class_aura.meta[ k ]( t, "debuff" )
 
-        elseif k == 'name' or k == 'count' or k == 'expires' or k == 'applied' or k == 'duration' or k == 'caster' or k == 'timeMod' or k == 'v1' or k == 'v2' or k == 'v3' or k == 'unit' then
+        elseif requiresLookup[ k ] then
             if class_aura and class_aura.generate then
                 for attr, a_val in pairs( default_debuff_values ) do
                     t[ attr ] = rawget( t, attr ) or a_val
@@ -3096,8 +3179,10 @@ local mt_default_debuff = {
             local real = auras.target.debuff[ t.key ] or auras.player.debuff[ t.key ]
 
             if real then
-                t.name = real.name
+                t.name = real.name or t.key
                 t.count = real.count
+                t.lastCount = real.lastCount or 0
+                t.lastApplied = real.lastApplied or 0
                 t.duration = real.duration
                 t.expires = real.expires
                 t.applied = max( 0, real.expires - real.duration )
@@ -3117,7 +3202,7 @@ local mt_default_debuff = {
             
             return t[ k ]
             
-        elseif k == 'up' then
+        elseif k == 'up' or k == 'ticking' then
             return t.applied <= state.query_time and t.expires >= state.query_time
 
         elseif k == 'i_up' or k == 'rank' then
@@ -3127,8 +3212,12 @@ local mt_default_debuff = {
             return not t.up
             
         elseif k == 'remains' then
-            if t.up then                
-                return max( 0, t.expires - state.query_time - state.settings.debuffPadding ) end
+            if t.up then
+                if class_aura and class_aura.strictTiming then
+                    return max( 0, t.expires - state.query_time )
+                end
+                return max( 0, t.expires - state.query_time - ( state.settings.buffPadding or 0 ) )
+            end
             return 0
             
         elseif k == 'refreshable' then
@@ -3137,8 +3226,19 @@ local mt_default_debuff = {
         elseif k == 'time_to_refresh' then
             return t.up and ( max( 0, state.query_time - ( 0.3 * ( class_aura and class_aura.duration or t.duration or 30 ) ) ) ) or 0
         
-        elseif k == 'stack' or k == 'react' then
+        elseif k == 'stack' then
             if t.up then return ( t.count ) else return 0 end
+
+        elseif k == 'react' then
+            -- React returns stacks assuming you've had time to react to them.
+            if state.query_time > t.applied + state.latency then
+                if t.expires > state.query_time then
+                    return t.count
+                end
+                return 0
+            end
+
+            return state.query_time > t.lastApplied and t.lastCount or 0
 
         elseif k == 'max_stack' or k == 'max_stacks' then
             return class_aura and class_aura.max_stack or 1
@@ -3155,9 +3255,6 @@ local mt_default_debuff = {
             -- Persistent modifier, used by Druids.
             return ns.getModifier( class_aura.id, state.target.unit )
             
-        elseif k == 'ticking' then
-            return t.up
-
         elseif k == 'ticks' then
             if t.up then return floor( 1 + ( ( class_aura.duration or ( 30 * state.haste ) ) / ( class_aura.tick_time or ( 3 * t.haste ) ) ) - t.ticks_remain ) end
             return 0
@@ -3229,13 +3326,45 @@ local mt_debuffs = {
         
         end
         
-        local real = auras.target.debuff[ k ] or auras.player.debuff[ k ]
-        local debuff = t[ k ]
+        local real = auras.player.debuff[ k ] or auras.target.debuff[ k ]        
+        local debuff = t[k]
         
-        for key, value in pairs( real or default_debuff_values ) do
-            debuff[ key ] = value
+        if real then
+            debuff.name = real.name
+            debuff.count = real.count
+            debuff.lastCount = real.lastCount or 0
+            debuff.lastApplied = real.lastApplied or 0
+            debuff.duration = real.duration
+            debuff.expires = real.expires
+            debuff.applied = max( 0, real.expires - real.duration )
+            debuff.caster = real.caster
+            debuff.id = real.id
+            debuff.timeMod = real.timeMod
+            debuff.v1 = real.v1
+            debuff.v2 = real.v2
+            debuff.v3 = real.v3
+            
+            debuff.unit = real.unit
+            
+        else
+            debuff.name = aura and aura.name or "No Name"
+            debuff.count = 0
+            debuff.lastCount = 0
+            debuff.lastApplied = 0
+            debuff.duration = aura and aura.duration or 30
+            debuff.expires = 0
+            debuff.applied = 0
+            debuff.caster = 'nobody'
+            debuff.id = nil
+            debuff.timeMod = 1
+            debuff.v1 = 0
+            debuff.v2 = 0
+            debuff.v3 = 0
+            
+            debuff.unit = aura and aura.unit or 'player'
         end
         
+        t[k] = debuff
         return t[ k ]
     end, 
     
@@ -3280,7 +3409,7 @@ local mt_default_action = {
             state.this_action = queued_action
 
             return max( value, t.cast_time )
-            
+
         elseif k == 'charges' then
             return class.abilities[ t.action ].charges and state.cooldown[ t.action ].charges or 0
             
@@ -3360,7 +3489,10 @@ local mt_default_action = {
             return state:InFlightRemains( t.action, true )
         
         elseif k == "executing" then
-            return state:IsCasting( t.action, true ) or state.prev[1][ t.action ]
+            return state:IsCasting( t.action, true ) or ( state.prev[1][ t.action ] and state.gcd.remains > 0 )
+            
+        elseif k == 'execute_remains' then
+            return ( state:IsCasting( t.action, true ) and max( state:QueuedCastRemains( t.action, true ), state.gcd.remains ) ) or ( state.prev[1][ t.action ] and state.gcd.remains ) or 0
             
         else
             local val = class.abilities[ t.action ][ k ]
@@ -3525,12 +3657,34 @@ local autoAuraKey = setmetatable( {}, {
 } )
 
 
+local lastTarget
+
 local function ScrapeUnitAuras( unit )
-    
     local db = ns.auras[ unit ]
+    
+    local newTarget = false
+
+    if unit == "target" then        
+        local guid = UnitGUID( "target" )
+        
+        if guid ~= lastTarget then
+            newTarget = true
+            lastTarget = guid
+        end
+    end
     
     for k,v in pairs( db.buff ) do
         v.name = nil
+        
+        -- Gonna help out "react."
+        if newTarget then
+            v.lastCount = 0
+            v.lastApplied = 0
+        elseif v.count ~= v.lastCount then
+            v.lastCount = v.count
+            v.lastApplied = v.applied
+        end
+
         v.count = 0
         v.expires = 0
         v.applied = 0
@@ -3545,6 +3699,16 @@ local function ScrapeUnitAuras( unit )
     
     for k,v in pairs( db.debuff ) do
         v.name = nil
+
+        -- Gonna help out "react."
+        if newTarget then
+            v.lastCount = 0
+            v.lastApplied = 0
+        elseif v.count ~= v.lastCount then
+            v.lastCount = v.count
+            v.lastApplied = v.applied
+        end
+
         v.count = 0
         v.expires = 0
         v.applied = 0
@@ -3636,6 +3800,7 @@ local function ScrapeUnitAuras( unit )
 end
 Hekili.ScrapeUnitAuras = ScrapeUnitAuras
 ns.cpuProfile.ScrapeUnitAuras = ScrapeUnitAuras
+
 
 Hekili.AuraDB = ns.auras
 
@@ -3785,7 +3950,7 @@ do
                 if ability.onRealCastStart then ability.onRealCastStart( data ) end
             end
             
-            state.applyBuff( "player_casting", eta )
+            state.applyBuff( "casting", eta )
             data.func = ability.onCastFinish or ability.handler
         end
 
@@ -4132,6 +4297,7 @@ function state.reset( dispName )
     state.false_start = 0
 
     state.selectionTime = 60
+    state.selectedAction = nil
     
     local _, zone = GetInstanceInfo()
     
@@ -4212,6 +4378,8 @@ function state.reset( dispName )
         for attr in pairs( default_buff_values ) do
             v[ attr ] = nil
         end
+        v.lastCount = nil
+        v.lastApplied = nil
     end
     
     for k, v in pairs( state.cooldown ) do
@@ -4234,6 +4402,8 @@ function state.reset( dispName )
         for attr in pairs( default_debuff_values ) do
             v[ attr ] = nil            
         end
+        v.lastCount = nil
+        v.lastApplied = nil
     end
     
     state.pet.exists = nil
@@ -4382,22 +4552,16 @@ function state.reset( dispName )
     
     local cast_time, casting = 0, nil
 
-    local spellcast, _, _, startCast, endCast, _, _, _, spellID = UnitCastingInfo( 'player' )
-    if endCast ~= nil then
-        endCast = endCast / 1000
-        startCast = startCast / 1000
-
-        cast_time = endCast - state.now
-
-        state.applyBuff( "player_casting", cast_time )
-        state.buff.player_casting.applied = startCast
-        state.buff.player_casting.duration = endCast - startCast
-        state.buff.player_casting.expires = endCast
-
-        casting = class.abilities[ spellID ] and class.abilities[ spellID ].key or formatKey( spellcast )
+    if state.buff.casting.up then
+        cast_time = state.buff.casting.remains
+        
+        local castID = state.buff.casting.v1
+        local cast_info = class.abilities[ castID ]
+        
+        casting = cast_info and cast_info.key or formatKey( state.buff.casting.name )
     end
 
-    state.stopChanneling( true )
+    --[[ state.stopChanneling( true )
 
     local spellcast, _, _, startCast, endCast, _, _, spellID = UnitChannelInfo( 'player' )
     if endCast ~= nil then
@@ -4413,8 +4577,7 @@ function state.reset( dispName )
 
         casting = spellID and class.abilities[ spellID ] and class.abilities[ spellID ].key or formatKey( spellcast )
         state.channelSpell( casting, startCast, endCast - startCast )
-    end
-
+    end ]]
 
     ns.callHook( "reset_precast" )
 
@@ -4441,7 +4604,7 @@ function state.reset( dispName )
 
                 state.setCooldown( "global_cooldown", max( cast_time, state.cooldown.global_cooldown.remains ) )
 
-                if ability then
+                if ability and dispName ~= "Interrupts" and dispName ~= "Defensives" then
                     if not ability.channeled then
                         state.advance( max( cast_time, state:QueuedCastRemains( casting, true ) ) )
                         --[[
@@ -4473,15 +4636,17 @@ function state.reset( dispName )
     end    
 
     -- Delay to end of GCD.
-    local delay = 0    
-    if state.settings.spec and state.settings.spec.gcdSync and ( state.display == "Primary" or state.display == "AOE" ) then
-        delay = state.cooldown.global_cooldown and state.cooldown.global_cooldown.remains or 0
-    end
-    delay = ns.callHook( "reset_postcast", delay )
-    
-    if delay > 0 then
-        if Hekili.ActiveDebug then Hekili:Debug( "Advancing by %.2f per GCD or cast or channel or reset_postcast value.", delay ) end
-        state.advance( delay )
+    if dispName == "Primary" or dispName == "AOE" then
+        local delay = 0    
+        if state.settings.spec and state.settings.spec.gcdSync then
+            delay = state.cooldown.global_cooldown and state.cooldown.global_cooldown.remains or 0
+        end
+        delay = ns.callHook( "reset_postcast", delay )
+        
+        if delay > 0 then
+            if Hekili.ActiveDebug then Hekili:Debug( "Advancing by %.2f per GCD or cast or channel or reset_postcast value.", delay ) end
+            state.advance( delay )
+        end
     end
 end
 
@@ -4813,6 +4978,10 @@ do
 
         if ability.buff and not state.buff[ ability.buff ].up then
             return false, "required buff (" .. ability.buff .. ") not active"
+        end
+
+        if ability.debuff and not state.debuff[ ability.debuff ].up then
+            return false, "required debuff (" ..ability.debuff .. ") not active"
         end
 
         if self.args.moving == 1 and state.buff.movement.down then

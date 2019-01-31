@@ -670,7 +670,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                     end
                                 end
     
-                            elseif state.buff.player_casting.up and not state.channeling and state.spec.canCastWhileCasting and not state.spec.castableWhileCasting[ entry.action ] then
+                            elseif state.buff.casting.up and not state.channeling and state.spec.canCastWhileCasting and not state.spec.castableWhileCasting[ entry.action ] then
                                 if debug then self:Debug( "Player is casting and cannot use " .. entry.action .. " while casting." ) end
 
                             else                                
@@ -821,6 +821,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                         rWait = state.delay
 
                                                         state.selectionTime = state.delay
+                                                        state.selectedAction = rAction
                                                     end
 
                                                 elseif entry.action == 'wait' then
@@ -926,6 +927,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                     rWait = state.delay
 
                                                     state.selectionTime = state.delay
+                                                    state.selectedAction = rAction
 
                                                     if debug then
                                                         self:Debug( "Action chosen:  %s at %.2f!", rAction, state.delay )
@@ -1002,6 +1004,7 @@ function Hekili:GetNextPrediction( dispName, packName, slot )
     state.this_action = nil
 
     state.selectionTime = 60
+    state.selectedAction = nil
 
     if pack.lists.precombat then
         local list = pack.lists.precombat
@@ -1177,8 +1180,7 @@ function Hekili:ProcessHooks( dispName, packName )
         end
 
         if not action then
-            state.delayMin = 0
-            state.delayMax = 10
+            state:SetConstraint( 0, 15 )
             
             if hadProj and debug then self:Debug( "\n[ ** ] No recommendation before queued event(s), checking recommendations after %.2f.", state.delayMin ) end
 
