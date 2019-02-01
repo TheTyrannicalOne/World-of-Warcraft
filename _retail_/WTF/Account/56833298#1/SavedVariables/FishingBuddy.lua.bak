@@ -110,16 +110,16 @@ FishingBuddy_Info = {
 			["texture"] = 2057312,
 			["quality"] = 1,
 		},
+		[152549] = {
+			["enUS"] = "Redtail Loach",
+			["texture"] = 2057314,
+			["quality"] = 1,
+		},
 		[162517] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "U'taka",
 			["quality"] = 2,
 			["texture"] = 237327,
-		},
-		[152549] = {
-			["enUS"] = "Redtail Loach",
-			["texture"] = 2057314,
-			["quality"] = 1,
 		},
 		[152543] = {
 			["enUS"] = "Sand Shifter",

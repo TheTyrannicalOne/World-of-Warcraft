@@ -1,6 +1,6 @@
-1/30 00:06:04.472  Voice Log Initialize.
-1/30 00:06:04.472  VoiceProxy attempting to listen on 127.0.0.1:6724
-1/30 00:06:11.416  WoW client has connected to proxy
-1/30 00:51:14.576  VoiceProxy CloseProxy request from client.
-1/30 00:51:14.576  VoiceProxy shutdown requested.
-1/30 00:51:19.583  Voice Log Destroy.
+1/31 23:09:06.720  Voice Log Initialize.
+1/31 23:09:06.720  VoiceProxy attempting to listen on 127.0.0.1:6724
+1/31 23:09:13.659  WoW client has connected to proxy
+1/31 23:32:15.053  VoiceProxy CloseProxy request from client.
+1/31 23:32:15.053  VoiceProxy shutdown requested.
+1/31 23:32:20.056  Voice Log Destroy.
