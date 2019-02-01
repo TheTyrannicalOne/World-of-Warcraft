@@ -1,23 +1,11 @@
 # BigWigs
 
-## [v130](https://github.com/BigWigsMods/BigWigs/tree/v130) (2019-01-30)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v129.1...v130)
+## [v131](https://github.com/BigWigsMods/BigWigs/tree/v131) (2019-01-31)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v130...v131)
 
 - bump version  
-- BattleOfDazaralor/Blockade: Add the secondary Storm's Wail debuff id.  
-- Miscellaneous API fixes  
-- Fix some PlaySound usage.  
-- BattleOfDazaralor/Grong: Add Megatomic Seeker Missile messages and bars  
-- BattleOfDazaralor/Jaina: Add berserk  
-- BattleOfDazaralor/Conclave: Honor "Only on me" option for the leaps, remove flash when leap is near you  
-- BattleOfDazaralor/Jaina: Fix InfoBox breaking during phase tranitions  
-- BattleOfDazaralor/Jaina: Fix Chilling Touch Infobox, add message when it got removed  
-- BattleOfDazaralor/Jaina: Fix Chilling Touch spell id  
-- update zhCN. (#582)  
-- BattleOfDazaralor/Jadefire: Add count to Magma Trap  
-- BattleOfDazaralor/Jadefire: Add Magma Trap  
-- BattleOfDazaralor/Jadefire: Fix Multi Sided Strike for mythic, minor changes  
-- BattleOfDazaralor/Grong: Fix a duplicate message on mythic  
-- BattleOfDazaralor/Conclave: Fix dispel messages and options  
-- BattleOfDazaralor/Conclave: Fix double Crawling Hex messages  
-- BattleOfDazaralor/Jaina: Improve Avalanche handling, add marker option for it  
+- BattleOfDazaralor/Blockade: Increase Storm's Wail timer to 13s on LFR & Normal as per Blizz hotfix.  
+- Core/BossPrototype: If you enable "emphasize (me only)" on a TargetsMessage that contains your name it will now show an additional emphasized message showing only your name in addition to the standard message showing all the names.  
+- Plugins/Pull: Fix "pull" translation in menu.  
+- BattleOfDazaralor/Rastakhan: Add a counter to Zombie Dust Totem and fix Seal of Purification on Mythic  
+- BattleOfDazaralor/Grong: Fix mythic add timers  

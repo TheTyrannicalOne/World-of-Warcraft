@@ -215,8 +215,8 @@ L["ImportPopup_Title"] = "Importiere Skalierung"
 L["ImportPopup_UpdatedScale"] = "Skalierung \"%s\" wurde aktualisiert"
 L["ItemToolTip_AzeriteLevel"] = "Azeritlevel: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "Aktuelle Wertung / Aktuell beste Wertung / Maximale Wertung"
-L["PowersScoreString"] = [=[Aktuelle Wertung: %1$d/%2$d
-Maximale Wertung: %3$d
+L["PowersScoreString"] = [=[Aktuelle Wertung: %1$s/%2$s
+Maximale Wertung: %3$s
 Azeritlevel: %4$d/%5$d]=]
 L["PowersTitles_Class"] = "Klassentalente"
 L["PowersTitles_Defensive"] = "Defensivtalente"
@@ -1049,8 +1049,8 @@ L["ImportPopup_UpdatedScale"] = "\"%s\" 현재 값이 갱신 되었습니다."
 L["ItemToolTip_AzeriteLevel"] = "아제라이트 레벨: %1$d / %2$d "
 --[[Translation missing --]]
 --[[ L["ItemToolTip_Legend"] = ""--]] 
-L["PowersScoreString"] = [=[현재 점수: %1$d/%2$d
-최고 점수: %3$d
+L["PowersScoreString"] = [=[현재 점수: %1$s/%2$s
+최고 점수: %3$s
 아제라이트 레벨: %4$d/%5$d]=]
 L["PowersTitles_Class"] = "직업 능력들"
 L["PowersTitles_Defensive"] = "방어적 능력들"
@@ -1275,8 +1275,8 @@ L["ImportPopup_Title"] = "Импортировать набор"
 L["ImportPopup_UpdatedScale"] = "Обновлён существующий набор \"%s\""
 L["ItemToolTip_AzeriteLevel"] = "Уровень Сердца Азерот: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "Текущий рейтинг / потенциальный рейтинг / максимальный рейтинг"
-L["PowersScoreString"] = [=[Текущий рейтинг: %1$d/%2$d
-Максимальный рейтинг: %3$d
+L["PowersScoreString"] = [=[Текущий рейтинг: %1$s/%2$s
+Максимальный рейтинг: %3$s
 Уровень Сердца Азерот: %4$d/%5$d]=]
 L["PowersTitles_Class"] = "Классовые таланты"
 L["PowersTitles_Defensive"] = "Защитные таланты"
@@ -1487,8 +1487,8 @@ L["ImportPopup_Title"] = "導入比例"
 L["ImportPopup_UpdatedScale"] = "更新現有的比例 \"%s\""
 L["ItemToolTip_AzeriteLevel"] = "艾澤萊等級: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "當前分數 / 當前潛力 / 最大分數"
-L["PowersScoreString"] = [=[當前分數: %1$d/%2$d
-最大分數: %3$d
+L["PowersScoreString"] = [=[當前分數: %1$s/%2$s
+最大分數: %3$s
 艾澤萊等級: %4$d/%5$d]=]
 L["PowersTitles_Class"] = "職業特質"
 L["PowersTitles_Defensive"] = "防禦性特質"
