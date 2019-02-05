@@ -92,6 +92,7 @@ BigWigs:AddSounds("Jadefire Masters Horde", {
 })
 
 BigWigs:AddSounds("Opulence", {
+	[-19494] = "long",
 	[282939] = "alarm",
 	[283507] = "warning",
 	[283606] = "alert",
@@ -109,6 +110,7 @@ BigWigs:AddSounds("Opulence", {
 	[287070] = "info",
 	[287072] = "warning",
 	[287074] = "alarm",
+	[289383] = "info",
 })
 
 BigWigs:AddSounds("Conclave of the Chosen", {
@@ -160,7 +162,7 @@ BigWigs:AddSounds("Stormwall Blockade", {
 	[284106] = "alert",
 	[284262] = "alarm",
 	[284362] = "alert",
-	[284383] = "alarm",
+	[284383] = {"alarm","info"},
 	[284405] = "warning",
 	[285000] = {"alarm","warning"},
 	[285017] = "warning",

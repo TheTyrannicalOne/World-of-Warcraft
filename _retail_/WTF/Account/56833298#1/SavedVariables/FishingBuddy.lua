@@ -139,10 +139,11 @@ FishingBuddy_Info = {
 			["quality"] = 0,
 			["texture"] = 132498,
 		},
-		[152549] = {
-			["enUS"] = "Redtail Loach",
-			["quality"] = 1,
-			["texture"] = 2057314,
+		[162517] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "U'taka",
+			["texture"] = 237327,
+			["quality"] = 2,
 		},
 		[152543] = {
 			["enUS"] = "Sand Shifter",
@@ -160,11 +161,10 @@ FishingBuddy_Info = {
 			["quality"] = 2,
 			["texture"] = 237302,
 		},
-		[162517] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "U'taka",
-			["texture"] = 237327,
-			["quality"] = 2,
+		[152549] = {
+			["enUS"] = "Redtail Loach",
+			["quality"] = 1,
+			["texture"] = 2057314,
 		},
 	},
 	["KnownZones"] = {

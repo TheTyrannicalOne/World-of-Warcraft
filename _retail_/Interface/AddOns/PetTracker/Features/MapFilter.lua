@@ -136,7 +136,8 @@ function MapFilter:ShowTrackingTypes()
 
       {PETS, true, title = true},
       {L.Species, true, set = 'HideSpecies'},
-			{L.Battles, true, set = 'HideRivals', var = 'showTamers'},
+			--{L.Battles, true, set = 'HideRivals', var = 'showTamers'},
+			{L.Battles, true, var = 'showTamers'},
 			{STABLES, true, set = 'HideStables'},
 
       {WORLD_QUEST_REWARD_FILTERS_TITLE, bounties, title = true},

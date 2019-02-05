@@ -15,7 +15,7 @@ local mod, CL = BigWigs:NewBoss("Lady Jaina Proudmoore", 2070, 2343)
 if not mod then return end
 mod:RegisterEnableMob(146409) -- Lady Jaina Proudmoore
 mod.engageId = 2281
---mod.respawnTime = 31
+mod.respawnTime = 30
 
 --------------------------------------------------------------------------------
 -- Locals
@@ -49,6 +49,7 @@ function mod:GetOptions()
 	return {
 		-- General
 		"stages",
+		"berserk",
 		{287993, "INFOBOX"}, -- Chilling Touch
 		287490, -- Frozen Solid
 		-- Stage 1

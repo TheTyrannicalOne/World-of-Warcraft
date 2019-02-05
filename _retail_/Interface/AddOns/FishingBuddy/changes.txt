@@ -1,4 +1,7 @@
-﻿Version 1.9.26
+﻿Version 1.9.26a1
+- Add "/fb raft" command for help in debugging raft issues
+
+Version 1.9.26
 - Fix for error when no pets selected, CurseForge #376 (thanks, robgha01!)
 - Update libraries
 

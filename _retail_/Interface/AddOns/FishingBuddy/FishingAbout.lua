@@ -122,6 +122,7 @@ credits[FBConstants.ROLE_HELP_BUGS] = {
 	["HarlequinBonse"] = { "Found the Tuskarr spear bug!" },
     ["chadcloman"] = { "Most detailed bug ever!", },
     ["robgha01"] = { "No pets bug" },
+    ["bolerro619"] = { "Titan and Broker issues" },
 };
 
 -- Ideas and suggestions

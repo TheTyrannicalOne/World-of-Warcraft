@@ -1,7 +1,7 @@
-1/31 23:06:08.036  Loading add-on MoveAnything
-1/31 23:06:08.036  ** Loading table of contents Interface\AddOns\MoveAnything\MoveAnything.toc
-1/31 23:06:08.036  ++ Loading file Interface\AddOns\MoveAnything\Libs\UIDropDownMenu\UIDropDownMenu.xml
-1/31 23:06:08.036  ++ Loading file Interface\AddOns\MoveAnything\Libs\UIDropDownMenu\UIDropDownMenuTemplates.xml
-1/31 23:06:08.036  Deferred XML Node object named Lib_UIDropDownMenuButtonTemplate already exists
-1/31 23:06:08.036  Deferred XML Node object named Lib_UIDropDownListTemplate already exists
-1/31 23:06:08.036  Deferred XML Node object named Lib_UIDropDownMenuTemplate already exists
+2/4 19:41:41.799  Loading add-on MoveAnything
+2/4 19:41:41.799  ** Loading table of contents Interface\AddOns\MoveAnything\MoveAnything.toc
+2/4 19:41:41.799  ++ Loading file Interface\AddOns\MoveAnything\Libs\UIDropDownMenu\UIDropDownMenu.xml
+2/4 19:41:41.799  ++ Loading file Interface\AddOns\MoveAnything\Libs\UIDropDownMenu\UIDropDownMenuTemplates.xml
+2/4 19:41:41.799  Deferred XML Node object named Lib_UIDropDownMenuButtonTemplate already exists
+2/4 19:41:41.799  Deferred XML Node object named Lib_UIDropDownListTemplate already exists
+2/4 19:41:41.799  Deferred XML Node object named Lib_UIDropDownMenuTemplate already exists

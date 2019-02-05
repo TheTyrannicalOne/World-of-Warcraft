@@ -1,12 +1,21 @@
-local L = BigWigs:NewBossLocale("Champion of the Light Horde", "zhTW")
+local L = BigWigs:NewBossLocale("Battle of Dazar'alor Trash", "zhTW")
 if not L then return end
 if L then
-	L.disorient_desc = "為|cff71d5ff[盲信]|r顯示施法條，如果你需要一個倒數計時的話。" -- Blinding Faith = 283650
+	L.punisher = "拉斯塔瑞懲戒者"
+	L.vessel = "伯昂薩姆第的容器"
+
+	L.victim = "%s的%s刺中了你！"
+	L.witness = "%1$s的%3$s刺中了%2$s！"
+end
+
+L = BigWigs:NewBossLocale("Champion of the Light Horde", "zhTW")
+if L then
+	L.disorient_desc = "為|cff71d5ff[盲信]|r顯示施法條，如果你需要顯示精確的施法進度。" -- Blinding Faith = 283650
 end
 
 L = BigWigs:NewBossLocale("Champion of the Light Alliance", "zhTW")
 if L then
-	L.disorient_desc = "為|cff71d5ff[盲信]|r顯示施法條，如果你需要一個倒數計時的話。" -- Blinding Faith = 283650
+	L.disorient_desc = "為|cff71d5ff[盲信]|r顯示施法條，如果你需要顯示精確的施法進度。" -- Blinding Faith = 283650
 end
 
 L = BigWigs:NewBossLocale("Jadefire Masters Horde", "zhTW")
@@ -37,6 +46,13 @@ end
 
 L = BigWigs:NewBossLocale("Opulence", "zhTW")
 if L then
+	L.room = "房間（%d／8）"
+	L.no_jewel = "無寶石："
+	L.seconds = "%.1f秒"
+
+	L.custom_on_fade_out_bars = "淡出第一階段計時條"
+	L.custom_on_fade_out_bars_desc = "第一階段時，淡出另一個房間的首領技能計時條。"
+
 	L.custom_on_hand_timers = "因扎希之手"
 	L.custom_on_hand_timers_desc = "顯示因扎希之手的技能警報和計時條。"
 	L.hand_cast = "手：%s"
@@ -60,11 +76,10 @@ if L then
 	L.custom_off_sparkbot_marker_desc = "使用 {rt4}{rt5}{rt6}{rt7}{rt8} 標記火花機器人，需要權限。"
 end
 
-L = BigWigs:NewBossLocale("Battle of Dazar'alor Trash", "zhTW")
+L = BigWigs:NewBossLocale("Stormwall Blockade", "zhTW")
 if L then
-	--L.punisher = "Rastari Punisher"
-	--L.vessel = "Vessel of Bwonsamdi"
+	L.killed = "%s%已擊殺！"
 
-	--L.victim = "%s stabbed YOU with %s!"
-	--L.witness = "%s stabbed %s with %s!"
+	L.custom_on_fade_out_bars = "淡出第一階段計時條"
+	L.custom_on_fade_out_bars_desc = "第一階段時，淡出另一條船上的首領技能計時條。"
 end

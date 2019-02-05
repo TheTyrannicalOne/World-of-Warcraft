@@ -63,6 +63,7 @@ function ns.StartEventHandler()
     end )
 
     events:SetScript( "OnUpdate", function( self, elapsed )
+        Hekili.UpdatedThisFrame = false
         timerRecount = timerRecount - elapsed
 
         if timerRecount < 0 then
@@ -711,17 +712,12 @@ RegisterUnitEvent( "UNIT_AURA", function( event, unit )
 end )
 
 
-RegisterEvent( "PLAYER_TARGET_CHANGED", function ( event )
-    Hekili.ScrapeUnitAuras( "target" )
+RegisterEvent( "PLAYER_TARGET_CHANGED", function( event )
+    Hekili.ScrapeUnitAuras( "target", true )
     state.target.updated = false
 
     Hekili.UpdateTTD( "target" )
     Hekili:ForceUpdate( event, true )
-end )
-
-
-RegisterEvent( "PLAYER_TOTEM_UPDATE", function( event )
-    Hekili:ForceUpdate( event )
 end )
 
 
@@ -843,7 +839,7 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
             sw.oh_projected = sw.oh_actual + sw.oh_speed
 
         elseif not offhand and time > sw.mh_actual then
-                sw.mh_actual = time
+            sw.mh_actual = time
             sw.mh_speed = UnitAttackSpeed( 'player' ) or sw.mh_speed
             sw.mh_projected = sw.mh_actual + sw.mh_speed
 
@@ -865,7 +861,7 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
         end
 
         local aura = class.auras and class.auras[ spellID ]
-        
+
         if aura then
             if hostile and sourceGUID ~= destGUID and not aura.friendly then
                 -- Aura Tracking

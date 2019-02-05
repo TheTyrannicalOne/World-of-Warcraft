@@ -280,41 +280,23 @@ do
 end
 
 do
-	local playerList, isOnMe = {}, nil
-
-	local function announce()
-		local meOnly = mod:CheckOption(286988, "ME_ONLY")
-
-		if isOnMe and (meOnly or #playerList == 1) then
-			mod:Message2(286988, "blue", CL.you:format(("|T13700%d:0|t%s"):format(isOnMe, mod:SpellName(286988))))
-		elseif not meOnly then
-			local msg = ""
-			for i=1, #playerList do
-				local icon = ("|T13700%d:0|t"):format(i)
-				msg = msg .. icon .. mod:ColorName(playerList[i]) .. (i == #playerList and "" or ",")
-			end
-
-			mod:Message2(286988, "orange", CL.other:format(mod:SpellName(286988), msg))
-		end
-
-		playerList = {}
-		isOnMe = nil
-	end
+	local playerList, playerIcons = mod:NewTargetList(), {}
 
 	function mod:SearingEmbersApplied(args)
+		local playerIconsCount = #playerIcons+1
 		playerList[#playerList+1] = args.destName
-		if #playerList == 1 then
-			self:SimpleTimer(announce, 0.1)
+		playerIcons[playerIconsCount] = playerIconsCount
+		if playerIconsCount == 1 then
 			self:CDBar(args.spellId, 40)
 		end
 		if self:Me(args.destGUID) then
-			isOnMe = #playerList
 			self:Say(args.spellId)
 			self:PlaySound(args.spellId, "alarm")
 		end
 		if self:GetOption(searingEmbersMarker) then
-			SetRaidTarget(args.destName, #playerList)
+			SetRaidTarget(args.destName, playerIconsCount)
 		end
+		self:TargetsMessage(args.spellId, "orange", playerList, 3, nil, nil, nil, playerIcons)
 	end
 
 	function mod:SearingEmbersRemoved(args)

@@ -34,6 +34,10 @@ function MapCanvas:Startup()
 	self.tip:SetScript('OnUpdate', function() self:AnchorTip() end)
 end
 
+function MapCanvas:AddOptions(panel)
+	panel:Create('CheckButton', 'HideRivals')
+end
+
 function MapCanvas:TrackingChanged()
 	for frame in pairs(self.pins) do
 		if frame:IsVisible() then
@@ -104,7 +108,7 @@ function MapCanvas:Draw(frame)
 			end
 		end
 
-		if not Addon.Sets.HideRivals then
+		if not Addon.Sets.HideRivals and GetCVarBool('showTamers') then
 			local rivals = Journal.GetRivalsIn(mapID)
 			for rival, spot in pairs(rivals) do
 					local rival = Addon.Rival:Get(rival)

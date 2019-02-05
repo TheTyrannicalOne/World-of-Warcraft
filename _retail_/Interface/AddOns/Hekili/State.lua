@@ -451,6 +451,8 @@ state.rawget = rawget
 state.rawset = rawset
 state.select = select
 state.table_insert = table.insert
+state.insert = table.insert
+state.remove = table.remove
 state.tonumber = tonumber
 state.tostring = tostring
 state.type = type
@@ -860,6 +862,9 @@ function state.channelSpell( name, start, duration )
             state.player.channelStart = start or state.query_time
             state.player.channelEnd   = state.player.channelStart + ( duration or ability.cast )
         end
+
+        applyBuff( "casting", duration, nil, ability and ability.id or 0 )
+        -- state.buff.casting.v3 = true
     end
 end
 
@@ -875,6 +880,7 @@ function state.stopChanneling( reset )
     state.player.channelSpell = nil
     state.player.channelStart = 0
     state.player.channelEnd   = 0
+    removeBuff( "casting" )
 end
 
 -- See mt_state for 'isChanneling'.
@@ -1346,7 +1352,7 @@ local mt_state = {
             return Hekili:GetGreatestTTD() - ( t.offset + t.delay )
         
         elseif k == "expected_combat_length" then
-            return Hekili:GetGreatestTTD() + t.time + t.offset + t.delay
+            return Hekili:GetGreatestTTD() + t.time -- + t.offset + t.delay
 
         elseif k == 'moving' then
             return ( GetUnitSpeed('player') > 0 )
@@ -3657,34 +3663,13 @@ local autoAuraKey = setmetatable( {}, {
 } )
 
 
-local lastTarget
-
-local function ScrapeUnitAuras( unit )
+local function ScrapeUnitAuras( unit, newTarget )
     local db = ns.auras[ unit ]
-    
-    local newTarget = false
-
-    if unit == "target" then        
-        local guid = UnitGUID( "target" )
-        
-        if guid ~= lastTarget then
-            newTarget = true
-            lastTarget = guid
-        end
-    end
     
     for k,v in pairs( db.buff ) do
         v.name = nil
-        
-        -- Gonna help out "react."
-        if newTarget then
-            v.lastCount = 0
-            v.lastApplied = 0
-        elseif v.count ~= v.lastCount then
-            v.lastCount = v.count
-            v.lastApplied = v.applied
-        end
-
+        v.lastCount = newTarget and 0 or v.count
+        v.lastApplied = newTarget and 0 or v.applied
         v.count = 0
         v.expires = 0
         v.applied = 0
@@ -3699,16 +3684,8 @@ local function ScrapeUnitAuras( unit )
     
     for k,v in pairs( db.debuff ) do
         v.name = nil
-
-        -- Gonna help out "react."
-        if newTarget then
-            v.lastCount = 0
-            v.lastApplied = 0
-        elseif v.count ~= v.lastCount then
-            v.lastCount = v.count
-            v.lastApplied = v.applied
-        end
-
+        v.lastCount = newTarget and 0 or v.count
+        v.lastApplied = newTarget and 0 or v.applied
         v.count = 0
         v.expires = 0
         v.applied = 0
@@ -3799,6 +3776,7 @@ local function ScrapeUnitAuras( unit )
     
 end
 Hekili.ScrapeUnitAuras = ScrapeUnitAuras
+state.ScrapeUnitAuras = ScrapeUnitAuras
 ns.cpuProfile.ScrapeUnitAuras = ScrapeUnitAuras
 
 
@@ -3883,7 +3861,11 @@ do
 
         for i = #realQueue, 1, -1 do
             if realQueue[i].time > self.now then
-                insert( virtualQueue, 1, realQueue[i] )
+                local e = {}
+                for k,v in pairs( realQueue[i] ) do
+                    e[k] = v
+                end
+                insert( virtualQueue, 1, e )
             else
                 remove( realQueue, i )
             end
@@ -4550,15 +4532,15 @@ function state.reset( dispName )
         setCooldown( 'ascendance', state.buff.ascendance.remains + 165 )
     end
     
-    local cast_time, casting = 0, nil
+    local cast_time, casting, ability = 0, nil, nil
 
     if state.buff.casting.up then
         cast_time = state.buff.casting.remains
         
         local castID = state.buff.casting.v1
-        local cast_info = class.abilities[ castID ]
+        ability = class.abilities[ castID ]
         
-        casting = cast_info and cast_info.key or formatKey( state.buff.casting.name )
+        casting = ability and ability.key or formatKey( state.buff.casting.name )
     end
 
     --[[ state.stopChanneling( true )
@@ -4585,11 +4567,9 @@ function state.reset( dispName )
     -- 1.  We can cast while casting (i.e., Fire Blast for Fire Mage), so we want to hand off the current cast to the event system, and then let the recommendation engine sort it out.
     -- 2.  We cannot cast anything while casting (typical), so we want to advance the clock, complete the cast, and then generate recommendations.
 
-    local ability = casting and class.abilities[ casting ]
-
     if casting and cast_time > 0 then
         -- A hardcast on reset should have been caught for real.
-        if not state:IsCasting( casting, true ) then 
+        if ability and not ability.channeled and not state:IsCasting( casting, true ) then 
             state:QueueEvent( casting, "hardcast", true, nil, cast_time ) end
 
         if not state.spec.canCastWhileCasting then

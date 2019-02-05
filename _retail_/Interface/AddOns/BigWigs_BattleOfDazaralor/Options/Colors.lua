@@ -94,13 +94,15 @@ BigWigs:AddColors("Jadefire Masters Horde", {
 })
 
 BigWigs:AddColors("Opulence", {
+	[-19494] = "blue",
 	[282939] = "red",
 	[283507] = {"blue","yellow"},
 	[283606] = "yellow",
 	[284424] = "blue",
 	[284470] = {"blue","orange"},
-	[284493] = "yellow",
+	[284493] = "orange",
 	[284519] = {"blue","green"},
+	[284645] = {"blue","green"},
 	[284941] = "red",
 	[285014] = {"blue","yellow"},
 	[285479] = "blue",
@@ -111,6 +113,7 @@ BigWigs:AddColors("Opulence", {
 	[287070] = "cyan",
 	[287072] = {"blue","yellow"},
 	[287074] = "blue",
+	[289383] = "blue",
 })
 
 BigWigs:AddColors("Conclave of the Chosen", {

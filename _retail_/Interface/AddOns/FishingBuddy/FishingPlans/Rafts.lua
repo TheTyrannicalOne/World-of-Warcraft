@@ -161,3 +161,23 @@ RaftEvents[FBConstants.FIRST_UPDATE_EVT] = function()
 end
 
 FishingBuddy.RegisterHandlers(RaftEvents);
+
+FishingBuddy.Commands["raft"] = {};
+FishingBuddy.Commands["raft"].func =
+    function()
+        FishingBuddy_Info["RaftDebug"] = {
+            ["RaftOption"] = GSB(RaftOption),
+            ["RaftQuests"] = {
+                ["116032"] = FL:HasBuff(116032),
+                ["119700"] = FL:HasBuff(119700),
+            },
+            ["SurfaceTension"] = GSB("OverWalking"),
+            ["HaveRaft"] = PlayerHasToy(RAFT_ID),
+            ["UseRaft"] = C_ToyBox.IsToyUsable(RAFT_ID),
+            ["RaftInfo"] = C_ToyBox.GetToyInfo(RAFT_ID),
+            ["BergCount"] = GetItemCount(BERG_ID),
+            ["Maintain"] = GSB("BergMaintainOnly"),
+            ["UseBerg"] = GSB("UseBobbingBerg"),
+        };
+        return true;
+    end
