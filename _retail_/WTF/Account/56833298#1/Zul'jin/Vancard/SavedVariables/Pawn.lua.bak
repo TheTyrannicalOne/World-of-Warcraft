@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0234,
+	["LastVersion"] = 2.0236,
 	["LastPlayerFullName"] = "Vancard-Zul'jin",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
