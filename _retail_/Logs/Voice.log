@@ -1,12 +1,6 @@
-2/6 23:27:37.178  Voice Log Initialize.
-2/6 23:27:37.178  VoiceProxy attempting to listen on 127.0.0.1:6724
-2/6 23:27:44.212  WoW client has connected to proxy
-2/6 23:27:46.854  |subsystem=BNL_Voice|msg=[20190206T23:27:46] {5484} WRN: high number of outstanding requests: '6'
-2/6 23:27:46.854  |subsystem=BNL_Voice|msg=[20190206T23:27:46] {5484} WRN: high number of outstanding requests: '7'
-2/6 23:27:48.243  |subsystem=BNL_Voice|msg=[20190206T23:27:48] {5484} WRN: high number of outstanding requests: '6'
-2/6 23:27:48.243  |subsystem=BNL_Voice|msg=[20190206T23:27:48] {5484} WRN: high number of outstanding requests: '7'
-2/6 23:27:48.243  |subsystem=BNL_Voice|msg=[20190206T23:27:48] {5484} WRN: high number of outstanding requests: '8'
-2/6 23:27:48.243  |subsystem=BNL_Voice|msg=[20190206T23:27:48] {5484} WRN: high number of outstanding requests: '9'
-2/7 00:16:54.725  VoiceProxy CloseProxy request from client.
-2/7 00:16:54.725  VoiceProxy shutdown requested.
-2/7 00:16:59.732  Voice Log Destroy.
+2/9 09:54:58.368  Voice Log Initialize.
+2/9 09:54:58.368  VoiceProxy attempting to listen on 127.0.0.1:6724
+2/9 09:55:05.876  WoW client has connected to proxy
+2/9 10:00:11.818  VoiceProxy CloseProxy request from client.
+2/9 10:00:11.818  VoiceProxy shutdown requested.
+2/9 10:00:16.825  Voice Log Destroy.

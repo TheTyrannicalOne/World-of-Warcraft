@@ -104,6 +104,20 @@ X: 0
 Y: 0
 W: 300
 H: 508
+Frame: AllTheThings-Window-Mag'har Orc[For the Horde]
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-|cffff8000Legendary|r[Alignment]
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
 Frame: AllTheThings-Window-CurrentInstance
 FrameLevel: 1
 Anchor: CENTER

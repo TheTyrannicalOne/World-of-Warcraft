@@ -1,29 +1,22 @@
 # BigWigs
 
-## [v133](https://github.com/BigWigsMods/BigWigs/tree/v133) (2019-02-04)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v132...v133)
+## [v134](https://github.com/BigWigsMods/BigWigs/tree/v134) (2019-02-08)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v133...v134)
 
-- Bump version  
-- BattleOfDazaralor: Fix loading locale for alliance players, closes #584  
-- Update zhTW/zhCN (#589)  
-- Update zhTW (#585)  
-- Update zhCN (#588)  
-- BattleOfDazaralor/Opulence: Fix gem room InfoBox, Update bars fade after swap  
-- BattleOfDazaralor/Blockade: Change Siren spawn to a different event  
-- BattleOfDazaralor/Grong: Add say and flash to Bestial Throw target  
-- BattleOfDazaralor/Rastakhan: Reset Detonation count on pull  
-- BattleOfDazaralor/Rastakhan: Add count to Scorching Detonation  
-- BattleOfDazaralor/Grong: Add count to Death Knell / Tantrum  
-- BattleOfDazaralor/Blockade: Move some variables around  
-- BattleOfDazaralor/Blockade: Fix spell id  
-- BattleOfDazaralor/Blockade: Fix Siren bars for mythic p2  
-- BattleOfDazaralor/Blockade: Add Mythic Timers  
-- BattleOfDazaralor/Opulence: Fix Crush spell ids, timer updates  
-- BattleOfDazaralor/Opulence: Remove unused Log registration  
-- BattleOfDazaralor/Opulence:  
-    - Add InfoBoxes for Crown Jewels and Topaz of Brilliant Sunlight  
-    - Add messages for Jewels  
-    - Add Chaotic Displacement  
-    - Add option to fade out bars in P1 (default enabled)  
-    - Only warn for abilities of your construct during P1  
-    - Fix Pulse-quickening Toxin  
+- update zhCN. (#590)  
+- bump version  
+- Plugins/BossBlock: Add "entering Dazar'alor" to the list of movies to skip.  
+- BattleOfDazaralor/Trash: Add Impale.  
+- BattleOfDazaralor/Jadefire: Fix some issues with the infobox.  
+- BattleOfDazaralor/Grong: Do not show Ferocious Roar bar timer on LFR/Normal (#592)  
+- BattleOfDazaralor/Opulence: Add Surging Gold  
+- BattleOfDazaralor/Opulence: Fix Volatile Charge bar  
+- BattleOfDazaralor/Blockade: Don't fade out bars in p2, Fix color for Sister Death  
+- BattleOfDazaralor/Jaina: Fix intermission message and textual mistake in the options  
+- BattleOfDazaralor/Jaina: Add Kultiran Corsair (Ship left/right) warnings and bars, Add stopbars for stage 1, add Mythic abilities, Add Intermission 1 time to complete warning  
+- BattleOfDazaralor/Blockade: Fix Siren Spawn events for mythic p2  
+- BattleOfDazaralor/Mekkatorque: Add options for repeating says when you're shrunk or controlling a robot (default off)  
+- BattleOfDazaralor/Mekkatorque: Actually use heroic timers on heroic  
+- BattleOfDazaralor/Mekkatorque: Fixed all timers for mythic and heroic  
+- BattleOfDazaralor/Champion: Fix Seal of Retribution warning showing after a wipe.  
+- BattleOfDazaralor/Opulence: Make sure hex marking doesn't re-use markers on other hex players.  

@@ -1,123 +1,73 @@
-2/6 23:27:17.788   - SE3 Init...
-2/6 23:27:17.788  => SI3 Init
-2/6 23:27:17.788  => WoW Version 8.1.0 (29297) Feb  5 2019
-2/6 23:27:17.788   
-2/6 23:27:17.788  => User Settings Report:
-2/6 23:27:17.788   - ========= PLAYBACK =========
-2/6 23:27:17.788   - Enable All Sound         [1]
-2/6 23:27:17.788   - Enable SFX               [1]
-2/6 23:27:17.788   --- Enable Emote Sounds    [1]
-2/6 23:27:17.802   - Enable Music             [1]
-2/6 23:27:17.802   --- Loop Music             [0]
-2/6 23:27:17.802   --- Pet Battle Music       [1]
-2/6 23:27:17.802   - Enable Ambient Sounds    [1]
-2/6 23:27:17.802   - Enable Dialog            [1]
-2/6 23:27:17.802   --- Enable Error Speech    [1]
-2/6 23:27:17.802   - Sound at Character       [1]
-2/6 23:27:17.802   - Sound in Background      [0]
-2/6 23:27:17.802   - Enable Reverb            [1]
-2/6 23:27:17.802   -
-2/6 23:27:17.802   - ========== VOLUME ==========
-2/6 23:27:17.802   - Master Volume         [1.00]
-2/6 23:27:17.802   - SFX Volume            [1.00]
-2/6 23:27:17.802   - Music Volume          [0.40]
-2/6 23:27:17.802   - Ambience Volume       [0.60]
-2/6 23:27:17.817   - Dialog Volume         [1.00]
-2/6 23:27:17.817   -
-2/6 23:27:17.817   - =========== MISC ===========
-2/6 23:27:17.817   - Sound Channels          [64]
-2/6 23:27:17.817   - Sound Cache           [64MB]
-2/6 23:27:17.817   - Mix Mode 2               [0]
-2/6 23:27:17.817   - DSP Buffer Size       [AUTO]
-2/6 23:27:17.817   - Armor Foley SFX (Self)   [1]
-2/6 23:27:17.817   - Armor Foley SFX (Others) [1]
-2/6 23:27:17.817  => End of User Settings Report
-2/6 23:27:17.817   
-2/6 23:27:17.817   - FMOD Memory Init
-2/6 23:27:17.817   - FMOD System Create
-2/6 23:27:17.817   - Setting Output Type
-2/6 23:27:17.897   - 8 Output drivers detected
-2/6 23:27:17.897   --- [0] System Default
-2/6 23:27:17.897   --- [1] Headset Earphone (4- Razer ManO'War)
-2/6 23:27:17.897   --- [2] Realtek Digital Output (Realtek High Definition Audio)
-2/6 23:27:17.897   --- [3] Speakers (Steam Streaming Speakers)
-2/6 23:27:17.897   --- [4] Speakers (Steam Streaming Microphone)
-2/6 23:27:17.897   --- [5] Realtek Digital Output(Optical) (Realtek High Definition Audio)
-2/6 23:27:17.897   --- [6] ROG PG279Q (NVIDIA High Definition Audio)
-2/6 23:27:17.897   --- [7] Speakers (Realtek High Definition Audio)
-2/6 23:27:17.897  ** Using Driver [0] System Default (Headset Earphone (4- Razer ManO'War))
-2/6 23:27:17.897   - DSPBufferSize = AUTO DETECT
-2/6 23:27:17.914   - Setting DSP Buffer Size
-2/6 23:27:17.914   - Using Control Panel Speaker Mode STEREO
-2/6 23:27:17.914   - Setting Software Format (44100, 2, 1).
-2/6 23:27:17.914   - Requested 64 channels.
-2/6 23:27:17.914   - Initializing Software Channels
-2/6 23:27:17.997   - Init FMOD Game System
-2/6 23:27:17.997   - Ok
-2/6 23:27:17.997   - Setting Rolloff Scale
-2/6 23:27:17.997   - Setting Rolloff Callback
-2/6 23:27:17.997   - SE3 EmitterManagerInit Success
-2/6 23:27:17.997   - Setting device callback
-2/6 23:27:17.997   - Sound Bus Init
-2/6 23:27:17.997   - Init Suppressors
-2/6 23:27:17.997   - SE3 Init Success.
-2/6 23:27:18.009  => SI3 Init Complete.
-2/6 23:27:18.009   
-2/6 23:48:43.754  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:48:43.755  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:48:45.898  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:48:45.898  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:48:46.426  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:48:47.400  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.257  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.257  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.257  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.391  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.487  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.489  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.489  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.749  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.749  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.761  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:07.761  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:09.833  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:09.833  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:10.956  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:24.835  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.237  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.449  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.449  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.604  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.604  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.813  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.917  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:25.917  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:44.307  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:44.307  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:44.933  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:45.261  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:45.261  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:45.692  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:49:45.692  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:01.733  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:01.733  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:03.246  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:03.246  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:03.380  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:03.473  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:03.473  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:03.939  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:03.939  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:29.245  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:29.875  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:29.875  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:35.922  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:35.922  => Requested 16384 bytes and read 0 -- success: 1
-2/6 23:50:35.922  => Requested 16384 bytes and read 0 -- success: 1
-2/7 00:16:55.379   
-2/7 00:16:55.381  => Shutting Down SI3
-2/7 00:16:55.408  => Shutting Down SI3 COMPLETE.
-2/7 00:16:55.408   
-2/7 00:16:55.408   - Shutting Down SE3
-2/7 00:16:55.568   - SE3 EmitterManagerShutdown Success
-2/7 00:16:55.568   - Shutting Down SE3 COMPLETE.
+2/9 09:39:53.373   - SE3 Init...
+2/9 09:39:53.373  => SI3 Init
+2/9 09:39:53.373  => WoW Version 8.1.0 (29297) Feb  5 2019
+2/9 09:39:53.382   
+2/9 09:39:53.382  => User Settings Report:
+2/9 09:39:53.382   - ========= PLAYBACK =========
+2/9 09:39:53.382   - Enable All Sound         [1]
+2/9 09:39:53.382   - Enable SFX               [1]
+2/9 09:39:53.382   --- Enable Emote Sounds    [1]
+2/9 09:39:53.382   - Enable Music             [1]
+2/9 09:39:53.382   --- Loop Music             [0]
+2/9 09:39:53.382   --- Pet Battle Music       [1]
+2/9 09:39:53.382   - Enable Ambient Sounds    [1]
+2/9 09:39:53.382   - Enable Dialog            [1]
+2/9 09:39:53.382   --- Enable Error Speech    [1]
+2/9 09:39:53.398   - Sound at Character       [1]
+2/9 09:39:53.398   - Sound in Background      [0]
+2/9 09:39:53.398   - Enable Reverb            [1]
+2/9 09:39:53.398   -
+2/9 09:39:53.398   - ========== VOLUME ==========
+2/9 09:39:53.398   - Master Volume         [1.00]
+2/9 09:39:53.398   - SFX Volume            [1.00]
+2/9 09:39:53.398   - Music Volume          [0.40]
+2/9 09:39:53.398   - Ambience Volume       [0.60]
+2/9 09:39:53.398   - Dialog Volume         [1.00]
+2/9 09:39:53.398   -
+2/9 09:39:53.398   - =========== MISC ===========
+2/9 09:39:53.398   - Sound Channels          [64]
+2/9 09:39:53.415   - Sound Cache           [64MB]
+2/9 09:39:53.415   - Mix Mode 2               [0]
+2/9 09:39:53.415   - DSP Buffer Size       [AUTO]
+2/9 09:39:53.415   - Armor Foley SFX (Self)   [1]
+2/9 09:39:53.415   - Armor Foley SFX (Others) [1]
+2/9 09:39:53.415  => End of User Settings Report
+2/9 09:39:53.415   
+2/9 09:39:53.415   - FMOD Memory Init
+2/9 09:39:53.415   - FMOD System Create
+2/9 09:39:53.415   - Setting Output Type
+2/9 09:39:53.507   - 9 Output drivers detected
+2/9 09:39:53.507   --- [0] System Default
+2/9 09:39:53.507   --- [1] Headset Earphone (4- Razer ManO'War)
+2/9 09:39:53.507   --- [2] Realtek Digital Output (Realtek High Definition Audio)
+2/9 09:39:53.507   --- [3] Speakers (Steam Streaming Speakers)
+2/9 09:39:53.507   --- [4] Speakers (Steam Streaming Microphone)
+2/9 09:39:53.507   --- [5] Realtek Digital Output(Optical) (Realtek High Definition Audio)
+2/9 09:39:53.507   --- [6] ROG PG279Q (NVIDIA High Definition Audio)
+2/9 09:39:53.507   --- [7] Speakers (Realtek High Definition Audio)
+2/9 09:39:53.507   --- [8] DELL ST2420L (NVIDIA High Definition Audio)
+2/9 09:39:53.507  ** Using Driver [0] System Default (Headset Earphone (4- Razer ManO'War))
+2/9 09:39:53.507   - DSPBufferSize = AUTO DETECT
+2/9 09:39:53.507   - Setting DSP Buffer Size
+2/9 09:39:53.507   - Using Control Panel Speaker Mode STEREO
+2/9 09:39:53.526   - Setting Software Format (44100, 2, 1).
+2/9 09:39:53.526   - Requested 64 channels.
+2/9 09:39:53.526   - Initializing Software Channels
+2/9 09:39:53.637   - Init FMOD Game System
+2/9 09:39:53.637   - Ok
+2/9 09:39:53.637   - Setting Rolloff Scale
+2/9 09:39:53.637   - Setting Rolloff Callback
+2/9 09:39:53.637   - SE3 EmitterManagerInit Success
+2/9 09:39:53.637   - Setting device callback
+2/9 09:39:53.637   - Sound Bus Init
+2/9 09:39:53.637   - Init Suppressors
+2/9 09:39:53.637   - SE3 Init Success.
+2/9 09:39:53.651  => SI3 Init Complete.
+2/9 09:39:53.651   
+2/9 10:00:12.366   
+2/9 10:00:12.366  => Shutting Down SI3
+2/9 10:00:12.396  => Shutting Down SI3 COMPLETE.
+2/9 10:00:12.397   
+2/9 10:00:12.397   - Shutting Down SE3
+2/9 10:00:12.494   - SE3 EmitterManagerShutdown Success
+2/9 10:00:12.494   - Shutting Down SE3 COMPLETE.
