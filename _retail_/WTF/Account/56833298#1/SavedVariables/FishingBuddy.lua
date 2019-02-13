@@ -9,12 +9,14 @@ FishingBuddy_Info = {
 		[863002] = 2,
 		[862005] = 36,
 		[863003] = 1,
-		[863004] = 3,
-		[862000] = 44,
 		[1165001] = 1,
-		[862001] = 2,
+		[863004] = 3,
 		[1165000] = 1,
 		[863005] = 1,
+		[862001] = 2,
+		[619001] = 1,
+		[862000] = 44,
+		[619000] = 1,
 	},
 	["HiddenFishies"] = {
 	},
@@ -30,6 +32,7 @@ FishingBuddy_Info = {
 		[863005] = 0,
 		[862001] = 0,
 		[1165001] = 0,
+		[619001] = 0,
 	},
 	["DataFish"] = 0,
 	["FishingHoles"] = {
@@ -73,11 +76,15 @@ FishingBuddy_Info = {
 		[1165001] = {
 			[162517] = 1,
 		},
+		[619001] = {
+			[138777] = 1,
+		},
 	},
 	["KnownZones"] = {
 		[863] = "Razorjaw River",
 		[862] = "Port of Zandalar",
 		[1165] = "Dazar'alor",
+		[619] = "Margoss's Retreat",
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -90,35 +97,26 @@ FishingBuddy_Info = {
 		[863002] = "Wayward Shoals",
 		[862005] = "Port of Zandalar",
 		[863003] = "Naz'agal",
-		[863004] = "Krag'wa's Burrow",
-		[862000] = 5,
 		[1165001] = "Dazar'alor",
-		[862001] = "Atal'Gral",
+		[863004] = "Krag'wa's Burrow",
 		[1165000] = 1,
 		[863005] = "Razorjaw River",
+		[862001] = "Atal'Gral",
+		[619001] = "Margoss's Retreat",
+		[862000] = 5,
+		[619000] = 1,
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
-		[154779] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Ruptured Plate Stompers",
-			["texture"] = 132589,
-			["quality"] = 0,
-		},
-		[152547] = {
-			["enUS"] = "Great Sea Catfish",
-			["texture"] = 2057312,
-			["quality"] = 1,
-		},
 		[162517] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "U'taka",
 			["quality"] = 2,
 			["texture"] = 237327,
 		},
-		[152549] = {
-			["enUS"] = "Redtail Loach",
-			["texture"] = 2057314,
+		[152544] = {
+			["enUS"] = "Slimy Mackerel",
+			["texture"] = 2057316,
 			["quality"] = 1,
 		},
 		[152543] = {
@@ -126,10 +124,27 @@ FishingBuddy_Info = {
 			["texture"] = 2057315,
 			["quality"] = 1,
 		},
-		[152544] = {
-			["enUS"] = "Slimy Mackerel",
-			["texture"] = 2057316,
+		[152547] = {
+			["enUS"] = "Great Sea Catfish",
+			["texture"] = 2057312,
 			["quality"] = 1,
+		},
+		[152549] = {
+			["enUS"] = "Redtail Loach",
+			["texture"] = 2057314,
+			["quality"] = 1,
+		},
+		[154801] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Crumbling Chain Belt",
+			["texture"] = 132498,
+			["quality"] = 0,
+		},
+		[154779] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Ruptured Plate Stompers",
+			["texture"] = 132589,
+			["quality"] = 0,
 		},
 		[162515] = {
 			["color"] = "ff1eff00",
@@ -137,11 +152,10 @@ FishingBuddy_Info = {
 			["texture"] = 237302,
 			["quality"] = 2,
 		},
-		[154801] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Crumbling Chain Belt",
-			["texture"] = 132498,
-			["quality"] = 0,
+		[138777] = {
+			["enUS"] = "Drowned Mana",
+			["texture"] = 132852,
+			["quality"] = 1,
 		},
 	},
 	["FishSchools"] = {

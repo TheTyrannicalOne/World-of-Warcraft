@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 91011
+local MINOR_VERSION = 91012
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -210,11 +210,10 @@ function FishLib:UpdateFishingSkill()
     end
 end
 
--- get our current fishing skill level
-function FishLib:GetCurrentSkill()
+-- get the fishing skill for the specified continent
+function FishLib:GetContinentSkill(continent)
     local _, _, _, fishing, _, _ = GetProfessions();
     if (fishing and self.havedata) then
-        local continent, _ = self:GetCurrentMapContinent();
         local info = FishLib.continent_fishing[continent];
         if (info) then
             local name, _, _, skillmax, _, _, _, mods = GetProfessionInfo(fishing);
@@ -222,7 +221,13 @@ function FishLib:GetCurrentSkill()
             return info.rank or 0, mods or 0, info.max or 0, lure or 0;
         end
     end
-    return 0, 0, 0;
+    return 0, 0, 0, 0;
+end
+
+-- get our current fishing skill level
+function FishLib:GetCurrentSkill()
+    local continent, _ = self:GetCurrentMapContinent();
+    return self:GetContinentSkill(continent)
 end
 
 -- Lure library

@@ -157,17 +157,16 @@ FishingTranslations["enUS"] = {
     CONFIG_TUSKAARSPEAR_INFO  = "If enabled, do the complicated dance to use the Tuskaar Spear.",
     CONFIG_TRAWLERTOTEM_INFO  = "If enabled, use the toy.",
 
-    CONFIG_FISHINGRAFT_INFO   = "If enabled, use the fishing raft.",
-    CONFIG_MAINTAINRAFT_INFO  = "If enabled, do not use the raft item, only maintain it if it is already being used.",
+    CONFIG_BOBBINGBERG_ONOFF  = "Use Bipsi's Berg",
     CONFIG_BOBBINGBERG_INFO   = "If enabled, use the bobbing berg.",
-    CONFIG_MAINTAINBERG_INFO  = "If enabled, do not use the bobbing berg item, only maintain it if it is already being used.",
+    CONFIG_MAINTAINRAFT_INFO  = "If enabled, do not use the raft item, only maintain it if it is already being used.",
     CONFIG_MAINTAINRAFTBERG_ONOFF = "Maintain only",
     CONFIG_OVERWALKING_ONOFF  = "Always Raft",
     CONFIG_OVERWALKING_INFO   = "If enabled, use the raft even if we're using the artifact pole.",
 
     CONFIG_USERAFTS_ONOFF     = "Use rafts",
     CONFIG_USERAFTS_INFO      = "If enabled, use a fishing raft item.",
-    CONFIG_BOBBINGBERG_ONOFF  = "Use Bipsi's Berg",
+    CONFIG_USERAFTS_INFOD     = "If you have Pandaren fishing skill, open the Trade Skill window.",
 
     CONFIG_EASYLURES_ONOFF	 = "Easy Lures",
     CONFIG_EASYLURES_INFO	 = "If enabled, a lure will applied to your fishing pole before you start fishing, whenever you need one.",

@@ -1,4 +1,7 @@
-﻿Version 1.9.26a1
+﻿Version 1.9.27
+- Improve the detection of whether or not you can use the raft toy.
+
+Version 1.9.26a1
 - Add "/fb raft" command for help in debugging raft issues
 
 Version 1.9.26

@@ -474,7 +474,6 @@ local function CleanupButton(button)
     button.enabled = nil;
     button.text = "";
     button.tooltipText = nil;
-    button.disabledTooltipText = nil;
     button.primary = nil;
     button.right = nil;
     button.layoutright = nil;

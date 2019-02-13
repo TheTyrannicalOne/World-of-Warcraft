@@ -552,7 +552,12 @@ FishingInit.UpdateFishingDB = function()
 
 	if (type(FishingBuddy_Player["Settings"]["TotalTimeFishing"]) ~= "number") then
 		FishingBuddy_Player["Settings"]["TotalTimeFishing"] = 1;
-	end
+    end
+
+    if FishingBuddy_Player["Settings"]["UseAnglersRaft"] ~= nil then
+        FishingBuddy_Player["Settings"]["UseRaft"] = FishingBuddy_Player["Settings"]["UseAnglersRaft"] or  FishingBuddy_Player["Settings"]["UseBobbingBerg"];
+        FishingBuddy_Player["Settings"]["UseAnglersRaft"] = nil;
+    end
 
 	-- save this for other pieces that might need to update
 	lastVersion = version;
