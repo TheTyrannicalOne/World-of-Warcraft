@@ -24,6 +24,7 @@ local PLAYER_NAME_REALM = string.gsub(PLAYER_NAME.."-"..GetRealmName(), "%s+", "
 
 function Send.OnInitialize()
 	private.thread = TSMAPI_FOUR.Thread.New("MAIL_SENDING", private.SendMailThread)
+	TSM.Inventory.BagTracking.RegisterCallback(private.BagUpdate)
 end
 
 function Send.KillThread()
@@ -52,7 +53,7 @@ function private.SendMailThread(recipient, subject, body, money, items, isGroup)
 		if TSM.db.global.mailingOptions.sendMessages then
 			private.PrintMailMessage(money, items, recipient)
 		end
-		private.SendMail(recipient, subject, body, money)
+		private.SendMail(recipient, subject, body, money, true)
 
 		return
 	end
@@ -158,6 +159,10 @@ function private.PrintMailMessage(money, items, target, individually)
 		return
 	end
 
+	if not items then
+		return
+	end
+
 	local itemList = ""
 	for k, v in pairs(items) do
 		local coloredItem = TSMAPI_FOUR.Item.GetLink(k)
@@ -174,9 +179,10 @@ function private.PrintMailMessage(money, items, target, individually)
 	end
 end
 
-function private.SendMail(recipient, subject, body, money)
+function private.SendMail(recipient, subject, body, money, noItem)
 	if subject == "" then
-		subject = SendMailSubjectEditBox:GetText() or "TSM Mailing"
+		local text = SendMailSubjectEditBox:GetText()
+		subject = text ~= "" and text or "TSM Mailing"
 	end
 
 	if money > 0 then
@@ -191,11 +197,20 @@ function private.SendMail(recipient, subject, body, money)
 	end
 
 	SendMail(recipient, subject, body)
+
 	if TSMAPI_FOUR.Thread.WaitForEvent("MAIL_SUCCESS", "MAIL_FAILED") == "MAIL_SUCCESS" then
-		TSMAPI_FOUR.Thread.WaitForEvent("BAG_UPDATE_DELAYED")
+		if noItem then
+			TSMAPI_FOUR.Thread.Sleep(0.5)
+		else
+			TSMAPI_FOUR.Thread.WaitForFunction(private.BagUpdate)
+		end
 	else
 		TSMAPI_FOUR.Thread.Sleep(0.5)
 	end
+end
+
+function private.BagUpdate()
+	return true
 end
 
 function private.HasPendingAttachments()

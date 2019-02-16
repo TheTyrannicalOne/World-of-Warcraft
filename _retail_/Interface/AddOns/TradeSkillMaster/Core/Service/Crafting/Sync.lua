@@ -7,7 +7,7 @@
 -- ------------------------------------------------------------------------------ --
 
 local _, TSM = ...
-local Sync = TSM.Crafting:NewPackage("Sync")
+local Sync = TSM.Crafting:NewPackage("CraftingSync")
 local L = TSM.L
 local private = {
 	hashesTemp = {},

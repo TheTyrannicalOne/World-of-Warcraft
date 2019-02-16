@@ -119,7 +119,11 @@ function private.GetItemQuantity(itemString, reserved, operationSettings)
 				numToSend = min(numAvailable, operationSettings.maxQty)
 			end
 		else
-			numToSend = numAvailable
+			if TSMAPI_FOUR.PlayerInfo.IsPlayer(operationSettings.target) then
+				numToSend = 0
+			else
+				numToSend = numAvailable
+			end
 		end
 	end
 

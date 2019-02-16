@@ -7,7 +7,7 @@
 -- ------------------------------------------------------------------------------ --
 
 local _, TSM = ...
-local Sync = TSM.Groups:NewPackage("Sync")
+local Sync = TSM.Groups:NewPackage("GroupSync")
 local L = TSM.L
 local private = {}
 

@@ -200,7 +200,7 @@ function FastScrollingList._OnScrollValueChanged(self, value, noDraw)
 	if not noDraw then
 		self:Draw()
 		for _, row in ipairs(self._rows) do
-			if row._frame:IsVisible() and row._frame:IsMouseOver() then
+			if row._frame:IsVisible() and row._frame:IsMouseOver() and not self._scrollbar:IsMouseOver(4, -4, -6, 10) then
 				row._frame:GetScript("OnLeave")(row._frame)
 				row._frame:GetScript("OnEnter")(row._frame)
 			end
