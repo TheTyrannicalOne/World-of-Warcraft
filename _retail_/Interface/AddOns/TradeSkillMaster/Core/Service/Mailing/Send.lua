@@ -10,7 +10,8 @@ local _, TSM = ...
 local Send = TSM.Mailing:NewPackage("Send")
 local L = TSM.L
 local private = {
-	thread = nil
+	thread = nil,
+	bagUpdate = nil,
 }
 
 local PLAYER_NAME = UnitName("player")
@@ -196,13 +197,14 @@ function private.SendMail(recipient, subject, body, money, noItem)
 		SetSendMailCOD(0)
 	end
 
+	private.bagUpdate = false
 	SendMail(recipient, subject, body)
 
 	if TSMAPI_FOUR.Thread.WaitForEvent("MAIL_SUCCESS", "MAIL_FAILED") == "MAIL_SUCCESS" then
 		if noItem then
 			TSMAPI_FOUR.Thread.Sleep(0.5)
 		else
-			TSMAPI_FOUR.Thread.WaitForFunction(private.BagUpdate)
+			TSMAPI_FOUR.Thread.WaitForFunction(private.HasNewBagUpdate)
 		end
 	else
 		TSMAPI_FOUR.Thread.Sleep(0.5)
@@ -210,7 +212,11 @@ function private.SendMail(recipient, subject, body, money, noItem)
 end
 
 function private.BagUpdate()
-	return true
+	private.bagUpdate = true
+end
+
+function private.HasNewBagUpdate()
+	return private.bagUpdate
 end
 
 function private.HasPendingAttachments()

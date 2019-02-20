@@ -15740,8 +15740,7 @@ TSM.L["%d |4Group:Groups; Selected (%d |4Item:Items;)"] = "%d |4Group:Groups; Se
 TSM.L["%d auctions"] = "%d auctions"
 --[[Translation missing --]]
 TSM.L["%d Groups"] = "%d Groups"
---[[Translation missing --]]
-TSM.L["%d Items"] = "%d Items"
+TSM.L["%d Items"] = "%d 物品"
 --[[Translation missing --]]
 TSM.L["%d of %d"] = "%d of %d"
 --[[Translation missing --]]
@@ -15753,8 +15752,7 @@ TSM.L["%d Sold Auctions"] = "%d Sold Auctions"
 TSM.L["%s (%s bags, %s bank, %s AH, %s mail)"] = "%s (%s 包包, %s 銀行, %s 拍賣場, %s 信箱)"
 --[[Translation missing --]]
 TSM.L["%s (%s player, %s alts, %s guild, %s AH)"] = "%s (%s player, %s alts, %s guild, %s AH)"
---[[Translation missing --]]
-TSM.L["%s (%s profit)"] = "%s (%s profit)"
+TSM.L["%s (%s profit)"] = "%s (%s 利潤)"
 --[[Translation missing --]]
 TSM.L["%s |4operation:operations;"] = "%s |4operation:operations;"
 TSM.L["%s ago"] = "%s前"
@@ -15817,8 +15815,7 @@ TSM.L["|cffffd839Left-Click|r to ignore an item this session."] = "|cffffd839Lef
 TSM.L["|cffffd839Shift-Left-Click|r to ignore it permanently."] = "|cffffd839Shift-Left-Click|r to ignore it permanently."
 --[[Translation missing --]]
 TSM.L["1 Group"] = "1 Group"
---[[Translation missing --]]
-TSM.L["1 Item"] = "1 Item"
+TSM.L["1 Item"] = "1 物品"
 TSM.L["12 hr"] = "12小時"
 TSM.L["24 hr"] = "24小時"
 TSM.L["48 hr"] = "48小時"

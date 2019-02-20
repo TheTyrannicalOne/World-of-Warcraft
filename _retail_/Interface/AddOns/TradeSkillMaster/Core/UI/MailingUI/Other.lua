@@ -286,8 +286,9 @@ function private.MoneyOnTextChanged(input)
 		return
 	end
 
-	if tonumber(text) then
-		TSM.db.factionrealm.internalData.mailExcessGoldLimit = tonumber(text)
+	local limit = tonumber(text)
+	if limit then
+		TSM.db.factionrealm.internalData.mailExcessGoldLimit = limit >= 0 and limit or 0
 	else
 		TSM.db.factionrealm.internalData.mailExcessGoldLimit = TSM.Money.FromString(text) or 0
 	end

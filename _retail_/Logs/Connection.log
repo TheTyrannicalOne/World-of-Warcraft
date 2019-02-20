@@ -1,30 +1,70 @@
-2/16 02:21:34.191  Connection Initialize
-2/16 02:21:40.186  Glue Start Login
-2/16 02:21:40.186  BattleNet Attempt Logon
-2/16 02:21:40.473  BattleNet Front Connected
-2/16 02:21:40.597  BattleNet Logon Queue Update
-2/16 02:21:40.952  BattleNet Logon Complete
-2/16 02:21:41.092  BattleNet Game Account Name
-2/16 02:21:41.092  BattleNet Game Account Name
-2/16 02:21:41.092  BattleNet Attempt Complete Login
-2/16 02:21:41.464  BattleNet Realm List Ticket
-2/16 02:21:41.568  BattleNet Sub Region List
-2/16 02:21:41.956  BattleNet Last Played Char
-2/16 02:21:42.015  BattleNet Last Played Char
-2/16 02:21:42.015  BattleNet Last Played Char
-2/16 02:21:42.165  BattleNet Last Played Char
-2/16 02:21:42.165  BattleNet Join Realm
-2/16 02:21:42.345  BattleNet Realm Join
-2/16 02:21:42.345  Change Connection
-2/16 02:21:42.345  Connect
-2/16 02:21:42.386  Handle Connect
-2/16 02:21:44.330  Handle Auth Response: 0
-2/16 02:21:44.330  Glue Authed To WoW: 0
-2/16 02:21:44.613  BattleNet Connected To Realm
-2/16 02:21:44.613  BattleNet Front Disconnecting
-2/16 02:21:44.707  BattleNet Front Disconnected
-2/16 02:21:45.281  Handle Char Enum
-2/16 02:23:19.470  Handle Logout Response: 0
-2/16 02:23:19.706  Handle Logout Complete
-2/16 02:23:24.135  Disconnect: 13
-2/16 02:23:24.135  Connection Destroy
+2/18 23:12:54.276  Connection Initialize
+2/18 23:13:00.380  Glue Start Login
+2/18 23:13:00.380  BattleNet Attempt Logon
+2/18 23:13:00.676  BattleNet Front Connected
+2/18 23:13:00.797  BattleNet Logon Queue Update
+2/18 23:13:01.143  BattleNet Logon Complete
+2/18 23:13:01.302  BattleNet Game Account Name
+2/18 23:13:01.302  BattleNet Game Account Name
+2/18 23:13:01.302  BattleNet Attempt Complete Login
+2/18 23:13:01.800  BattleNet Realm List Ticket
+2/18 23:13:01.896  BattleNet Sub Region List
+2/18 23:13:02.263  BattleNet Last Played Char
+2/18 23:13:02.323  BattleNet Last Played Char
+2/18 23:13:02.388  BattleNet Last Played Char
+2/18 23:13:02.663  BattleNet Last Played Char
+2/18 23:13:02.663  BattleNet Join Realm
+2/18 23:13:02.946  BattleNet Realm Join
+2/18 23:13:02.946  Change Connection
+2/18 23:13:02.946  Connect
+2/18 23:13:02.984  Handle Connect
+2/18 23:13:04.906  Handle Auth Response: 0
+2/18 23:13:04.906  Glue Authed To WoW: 0
+2/18 23:13:05.182  BattleNet Connected To Realm
+2/18 23:13:05.182  BattleNet Front Disconnecting
+2/18 23:13:05.291  Handle Char Enum
+2/18 23:13:05.489  BattleNet Front Disconnected
+2/18 23:13:11.379  BattleNet Request Change Realm List
+2/18 23:13:11.645  BattleNet Realm List Ticket
+2/18 23:13:12.194  BattleNet Sub Region List
+2/18 23:13:12.878  BattleNet Realm List
+2/18 23:13:12.878  BattleNet Realm List
+2/18 23:13:12.878  BattleNet Realm List
+2/18 23:13:13.183  BattleNet Realm List
+2/18 23:13:18.820  BattleNet Join Realm
+2/18 23:13:19.436  BattleNet Realm Join
+2/18 23:13:19.436  Change Connection
+2/18 23:13:19.436  Handle Disconnect
+2/18 23:13:19.436  Connect
+2/18 23:13:19.720  Handle Connect
+2/18 23:13:21.256  Handle Auth Response: 0
+2/18 23:13:21.256  Glue Authed To WoW: 0
+2/18 23:13:21.263  BattleNet Connected To Realm
+2/18 23:13:21.461  Handle Char Enum
+2/18 23:15:27.068  Handle Logout Response: 0
+2/18 23:15:27.412  Handle Logout Complete
+2/18 23:15:31.003  Handle Char Enum
+2/18 23:15:32.699  BattleNet Request Change Realm List
+2/18 23:15:32.971  BattleNet Realm List Ticket
+2/18 23:15:33.561  BattleNet Sub Region List
+2/18 23:15:34.236  BattleNet Realm List
+2/18 23:15:34.236  BattleNet Realm List
+2/18 23:15:34.236  BattleNet Realm List
+2/18 23:15:34.731  BattleNet Realm List
+2/18 23:15:35.731  BattleNet Join Realm
+2/18 23:15:36.447  BattleNet Realm Join
+2/18 23:15:36.447  Change Connection
+2/18 23:15:36.449  Handle Disconnect
+2/18 23:15:36.449  Connect
+2/18 23:15:37.168  Handle Connect
+2/18 23:15:39.158  Handle Auth Response: 0
+2/18 23:15:39.158  Glue Authed To WoW: 0
+2/18 23:15:39.167  BattleNet Connected To Realm
+2/18 23:15:39.322  Handle Char Enum
+2/18 23:53:44.637  Handle Logout Abort Ack
+2/18 23:54:23.966  Handle Logout Abort Ack
+2/18 23:58:36.980  Handle Logout Abort Ack
+2/19 00:41:30.267  Handle Logout Response: 0
+2/19 00:41:30.524  Handle Logout Complete
+2/19 00:41:37.914  Disconnect: 13
+2/19 00:41:37.918  Connection Destroy

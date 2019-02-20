@@ -9,14 +9,14 @@ FishingBuddy_Info = {
 		[863002] = 2,
 		[862005] = 36,
 		[863003] = 1,
-		[1165001] = 1,
-		[863004] = 3,
-		[1165000] = 1,
-		[862000] = 44,
-		[862001] = 2,
-		[619001] = 1,
-		[619000] = 1,
 		[863005] = 1,
+		[863004] = 3,
+		[619000] = 1,
+		[862000] = 44,
+		[619001] = 1,
+		[862001] = 2,
+		[1165000] = 1,
+		[1165001] = 1,
 	},
 	["HiddenFishies"] = {
 	},
@@ -31,8 +31,8 @@ FishingBuddy_Info = {
 		[863004] = 0,
 		[863005] = 0,
 		[862001] = 0,
-		[1165001] = 0,
 		[619001] = 0,
+		[1165001] = 0,
 	},
 	["DataFish"] = 0,
 	["FishingHoles"] = {
@@ -73,18 +73,40 @@ FishingBuddy_Info = {
 		[862001] = {
 			[152543] = 2,
 		},
-		[1165001] = {
-			[162517] = 1,
-		},
 		[619001] = {
 			[138777] = 1,
 		},
+		[1165001] = {
+			[162517] = 1,
+		},
 	},
-	["KnownZones"] = {
-		[863] = "Razorjaw River",
-		[862] = "Port of Zandalar",
-		[1165] = "Dazar'alor",
-		[619] = "Margoss's Retreat",
+	["FishSchools"] = {
+		[862] = {
+			{
+				["y"] = 0.51498076113977,
+				["x"] = 0.766917032053709,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["fish"] = {
+					[152543] = 2,
+					[152547] = 1,
+				},
+				["count"] = 3,
+			}, -- [1]
+		},
+		[863] = {
+			{
+				["y"] = 0.745583651220492,
+				["x"] = 0.587682601119972,
+				["sidx"] = 863000,
+				["kind"] = 0,
+				["fish"] = {
+					[152547] = 6,
+					[152549] = 1,
+				},
+				["count"] = 7,
+			}, -- [1]
+		},
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -97,93 +119,71 @@ FishingBuddy_Info = {
 		[863002] = "Wayward Shoals",
 		[862005] = "Port of Zandalar",
 		[863003] = "Naz'agal",
-		[1165001] = "Dazar'alor",
-		[863004] = "Krag'wa's Burrow",
-		[1165000] = 1,
-		[862000] = 5,
-		[862001] = "Atal'Gral",
-		[619001] = "Margoss's Retreat",
-		[619000] = 1,
 		[863005] = "Razorjaw River",
+		[863004] = "Krag'wa's Burrow",
+		[619000] = 1,
+		[862000] = 5,
+		[619001] = "Margoss's Retreat",
+		[862001] = "Atal'Gral",
+		[1165000] = 1,
+		[1165001] = "Dazar'alor",
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
 		[162517] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "U'taka",
-			["quality"] = 2,
 			["texture"] = 237327,
+			["quality"] = 2,
 		},
 		[152544] = {
 			["enUS"] = "Slimy Mackerel",
-			["texture"] = 2057316,
 			["quality"] = 1,
+			["texture"] = 2057316,
 		},
 		[152543] = {
 			["enUS"] = "Sand Shifter",
-			["texture"] = 2057315,
 			["quality"] = 1,
+			["texture"] = 2057315,
 		},
 		[152547] = {
 			["enUS"] = "Great Sea Catfish",
-			["texture"] = 2057312,
 			["quality"] = 1,
+			["texture"] = 2057312,
 		},
 		[152549] = {
 			["enUS"] = "Redtail Loach",
-			["texture"] = 2057314,
 			["quality"] = 1,
+			["texture"] = 2057314,
 		},
 		[154801] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Crumbling Chain Belt",
+			["quality"] = 0,
 			["texture"] = 132498,
-			["quality"] = 0,
 		},
-		[154779] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Ruptured Plate Stompers",
-			["texture"] = 132589,
-			["quality"] = 0,
+		[138777] = {
+			["enUS"] = "Drowned Mana",
+			["quality"] = 1,
+			["texture"] = 132852,
 		},
 		[162515] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "Midnight Salmon",
-			["texture"] = 237302,
 			["quality"] = 2,
+			["texture"] = 237302,
 		},
-		[138777] = {
-			["enUS"] = "Drowned Mana",
-			["texture"] = 132852,
-			["quality"] = 1,
+		[154779] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Ruptured Plate Stompers",
+			["quality"] = 0,
+			["texture"] = 132589,
 		},
 	},
-	["FishSchools"] = {
-		[862] = {
-			{
-				["y"] = 0.51498076113977,
-				["x"] = 0.766917032053709,
-				["sidx"] = 862000,
-				["kind"] = 0,
-				["count"] = 3,
-				["fish"] = {
-					[152543] = 2,
-					[152547] = 1,
-				},
-			}, -- [1]
-		},
-		[863] = {
-			{
-				["y"] = 0.745583651220492,
-				["x"] = 0.587682601119972,
-				["sidx"] = 863000,
-				["kind"] = 0,
-				["count"] = 7,
-				["fish"] = {
-					[152547] = 6,
-					[152549] = 1,
-				},
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[863] = "Razorjaw River",
+		[862] = "Port of Zandalar",
+		[619] = "Margoss's Retreat",
+		[1165] = "Dazar'alor",
 	},
 }
