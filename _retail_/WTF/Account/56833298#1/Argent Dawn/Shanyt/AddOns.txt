@@ -16,7 +16,7 @@ LibSharedMedia-3.0: enabled
 LibDeformat-3.0: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
 ElvUI_LocLite: disabled
-AllTheThings: disabled
+AllTheThings: enabled
 LittleWigs: enabled
 BigWigs_WarlordsOfDraenor: enabled
 BigWigs_MistsOfPandaria: enabled

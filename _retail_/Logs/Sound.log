@@ -1,66 +1,66 @@
-2/22 00:06:11.270   - SE3 Init...
-2/22 00:06:11.270  => SI3 Init
-2/22 00:06:11.270  => WoW Version 8.1.0 (29482) Feb 21 2019
-2/22 00:06:11.270   
-2/22 00:06:11.270  => User Settings Report:
-2/22 00:06:11.270   - ========= PLAYBACK =========
-2/22 00:06:11.270   - Enable All Sound         [1]
-2/22 00:06:11.270   - Enable SFX               [1]
-2/22 00:06:11.270   --- Enable Emote Sounds    [1]
-2/22 00:06:11.270   - Enable Music             [1]
-2/22 00:06:11.270   --- Loop Music             [0]
-2/22 00:06:11.270   --- Pet Battle Music       [1]
-2/22 00:06:11.270   - Enable Ambient Sounds    [1]
-2/22 00:06:11.286   - Enable Dialog            [1]
-2/22 00:06:11.286   --- Enable Error Speech    [1]
-2/22 00:06:11.286   - Sound at Character       [1]
-2/22 00:06:11.286   - Sound in Background      [0]
-2/22 00:06:11.286   - Enable Reverb            [1]
-2/22 00:06:11.286   -
-2/22 00:06:11.286   - ========== VOLUME ==========
-2/22 00:06:11.286   - Master Volume         [1.00]
-2/22 00:06:11.286   - SFX Volume            [1.00]
-2/22 00:06:11.286   - Music Volume          [0.40]
-2/22 00:06:11.286   - Ambience Volume       [0.60]
-2/22 00:06:11.286   - Dialog Volume         [1.00]
-2/22 00:06:11.286   -
-2/22 00:06:11.286   - =========== MISC ===========
-2/22 00:06:11.286   - Sound Channels          [64]
-2/22 00:06:11.286   - Sound Cache           [64MB]
-2/22 00:06:11.286   - Mix Mode 2               [0]
-2/22 00:06:11.286   - DSP Buffer Size       [AUTO]
-2/22 00:06:11.301   - Armor Foley SFX (Self)   [1]
-2/22 00:06:11.301   - Armor Foley SFX (Others) [1]
-2/22 00:06:11.301  => End of User Settings Report
-2/22 00:06:11.301   
-2/22 00:06:11.301   - FMOD Memory Init
-2/22 00:06:11.301   - FMOD System Create
-2/22 00:06:11.301   - Setting Output Type
-2/22 00:06:11.361   - 2 Output drivers detected
-2/22 00:06:11.361   --- [0] System Default
-2/22 00:06:11.361   --- [1] Headset Earphone (4- Razer ManO'War)
-2/22 00:06:11.361  ** Using Driver [0] System Default (Headset Earphone (4- Razer ManO'War))
-2/22 00:06:11.364   - DSPBufferSize = AUTO DETECT
-2/22 00:06:11.364   - Setting DSP Buffer Size
-2/22 00:06:11.364   - Using Control Panel Speaker Mode STEREO
-2/22 00:06:11.364   - Setting Software Format (44100, 2, 1).
-2/22 00:06:11.364   - Requested 64 channels.
-2/22 00:06:11.364   - Initializing Software Channels
-2/22 00:06:11.452   - Init FMOD Game System
-2/22 00:06:11.452   - Ok
-2/22 00:06:11.452   - Setting Rolloff Scale
-2/22 00:06:11.452   - Setting Rolloff Callback
-2/22 00:06:11.452   - SE3 EmitterManagerInit Success
-2/22 00:06:11.452   - Setting device callback
-2/22 00:06:11.457   - Sound Bus Init
-2/22 00:06:11.457   - Init Suppressors
-2/22 00:06:11.457   - SE3 Init Success.
-2/22 00:06:11.457  => SI3 Init Complete.
-2/22 00:06:11.457   
-2/22 01:02:01.749   
-2/22 01:02:01.749  => Shutting Down SI3
-2/22 01:02:01.777  => Shutting Down SI3 COMPLETE.
-2/22 01:02:01.777   
-2/22 01:02:01.777   - Shutting Down SE3
-2/22 01:02:01.959   - SE3 EmitterManagerShutdown Success
-2/22 01:02:01.959   - Shutting Down SE3 COMPLETE.
+3/1 16:56:31.494   - SE3 Init...
+3/1 16:56:31.494  => SI3 Init
+3/1 16:56:31.494  => WoW Version 8.1.0 (29482) Feb 21 2019
+3/1 16:56:31.494   
+3/1 16:56:31.504  => User Settings Report:
+3/1 16:56:31.504   - ========= PLAYBACK =========
+3/1 16:56:31.504   - Enable All Sound         [1]
+3/1 16:56:31.504   - Enable SFX               [1]
+3/1 16:56:31.504   --- Enable Emote Sounds    [1]
+3/1 16:56:31.504   - Enable Music             [1]
+3/1 16:56:31.504   --- Loop Music             [0]
+3/1 16:56:31.504   --- Pet Battle Music       [1]
+3/1 16:56:31.504   - Enable Ambient Sounds    [1]
+3/1 16:56:31.504   - Enable Dialog            [1]
+3/1 16:56:31.504   --- Enable Error Speech    [1]
+3/1 16:56:31.504   - Sound at Character       [1]
+3/1 16:56:31.504   - Sound in Background      [0]
+3/1 16:56:31.504   - Enable Reverb            [1]
+3/1 16:56:31.504   -
+3/1 16:56:31.504   - ========== VOLUME ==========
+3/1 16:56:31.504   - Master Volume         [1.00]
+3/1 16:56:31.504   - SFX Volume            [1.00]
+3/1 16:56:31.504   - Music Volume          [0.40]
+3/1 16:56:31.504   - Ambience Volume       [0.60]
+3/1 16:56:31.520   - Dialog Volume         [1.00]
+3/1 16:56:31.520   -
+3/1 16:56:31.520   - =========== MISC ===========
+3/1 16:56:31.520   - Sound Channels          [64]
+3/1 16:56:31.520   - Sound Cache           [64MB]
+3/1 16:56:31.520   - Mix Mode 2               [0]
+3/1 16:56:31.520   - DSP Buffer Size       [AUTO]
+3/1 16:56:31.520   - Armor Foley SFX (Self)   [1]
+3/1 16:56:31.520   - Armor Foley SFX (Others) [1]
+3/1 16:56:31.520  => End of User Settings Report
+3/1 16:56:31.520   
+3/1 16:56:31.520   - FMOD Memory Init
+3/1 16:56:31.520   - FMOD System Create
+3/1 16:56:31.520   - Setting Output Type
+3/1 16:56:31.584   - 2 Output drivers detected
+3/1 16:56:31.584   --- [0] System Default
+3/1 16:56:31.584   --- [1] Headset Earphone (4- Razer ManO'War)
+3/1 16:56:31.584  ** Using Driver [0] System Default (Headset Earphone (4- Razer ManO'War))
+3/1 16:56:31.584   - DSPBufferSize = AUTO DETECT
+3/1 16:56:31.584   - Setting DSP Buffer Size
+3/1 16:56:31.584   - Using Control Panel Speaker Mode STEREO
+3/1 16:56:31.584   - Setting Software Format (44100, 2, 1).
+3/1 16:56:31.584   - Requested 64 channels.
+3/1 16:56:31.584   - Initializing Software Channels
+3/1 16:56:31.646   - Init FMOD Game System
+3/1 16:56:31.646   - Ok
+3/1 16:56:31.646   - Setting Rolloff Scale
+3/1 16:56:31.646   - Setting Rolloff Callback
+3/1 16:56:31.646   - SE3 EmitterManagerInit Success
+3/1 16:56:31.646   - Setting device callback
+3/1 16:56:31.646   - Sound Bus Init
+3/1 16:56:31.646   - Init Suppressors
+3/1 16:56:31.646   - SE3 Init Success.
+3/1 16:56:31.646  => SI3 Init Complete.
+3/1 16:56:31.646   
+3/1 20:37:50.428   
+3/1 20:37:50.428  => Shutting Down SI3
+3/1 20:37:50.465  => Shutting Down SI3 COMPLETE.
+3/1 20:37:50.465   
+3/1 20:37:50.465   - Shutting Down SE3
+3/1 20:37:50.676   - SE3 EmitterManagerShutdown Success
+3/1 20:37:50.678   - Shutting Down SE3 COMPLETE.

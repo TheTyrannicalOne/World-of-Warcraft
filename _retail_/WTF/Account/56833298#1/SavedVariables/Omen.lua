@@ -3,17 +3,17 @@ Omen3DB = {
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Shanyt - Argent Dawn",
-		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
-		["Vancard - Zul'jin"] = "Shanyt - Argent Dawn",
-		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 		["Tyrann - Zul'jin"] = "Tyrann - Zul'jin",
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Vancard - Zul'jin"] = "Shanyt - Argent Dawn",
+		["Shanyt - Zul'jin"] = "Shanyt - Zul'jin",
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
-			["PositionW"] = 241.666137695313,
-			["PositionH"] = 171.166595458984,
+			["PositionW"] = 241.666275024414,
+			["PositionH"] = 182.235717773438,
 			["VGrip2"] = 138.957906526762,
-			["PositionY"] = 200.001419067383,
+			["PositionY"] = 201.008056640625,
 			["Locked"] = true,
 			["Background"] = {
 				["BorderTexture"] = "Blizzard Tooltip",
@@ -28,18 +28,23 @@ Omen3DB = {
 				["HideWhenOOC"] = true,
 			},
 			["VGrip1"] = 102.708017867607,
-			["PositionX"] = 1387.49890136719,
+			["PositionX"] = 1829.26037597656,
 		},
 		["Durlok - Black Dragonflight"] = {
 			["VGrip2"] = 115.479163595836,
 			["PositionY"] = 201.667739868164,
 			["PositionW"] = 200.833389282227,
 			["Shown"] = true,
-			["PositionH"] = 162.000015258789,
-			["PositionX"] = 1488.33312988281,
 			["VGrip1"] = 85.3541643969225,
+			["PositionX"] = 1488.33312988281,
+			["PositionH"] = 162.000015258789,
 		},
-		["Shanyt - Zul'jin"] = {
+		["Tyrann - Zul'jin"] = {
+			["Shown"] = false,
+			["PositionY"] = 675.000061035156,
+			["PositionX"] = 954.166687011719,
+		},
+		["Jingojaggot - Argent Dawn"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.000061035156,
 			["PositionX"] = 954.166687011719,
@@ -54,12 +59,7 @@ Omen3DB = {
 			["PositionX"] = 1429.16589355469,
 			["PositionH"] = 181.166656494141,
 		},
-		["Jingojaggot - Argent Dawn"] = {
-			["Shown"] = false,
-			["PositionY"] = 675.000061035156,
-			["PositionX"] = 954.166687011719,
-		},
-		["Tyrann - Zul'jin"] = {
+		["Shanyt - Zul'jin"] = {
 			["Shown"] = false,
 			["PositionY"] = 675.000061035156,
 			["PositionX"] = 954.166687011719,
