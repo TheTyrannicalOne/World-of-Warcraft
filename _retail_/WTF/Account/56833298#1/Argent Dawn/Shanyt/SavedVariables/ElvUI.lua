@@ -34,446 +34,6 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			6151, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1549249811,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [1]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			6152, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1549249833,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			6153, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1549249856,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"Congrats!", -- [1]
-			"Bothra-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2864, -- [11]
-			"Player-75-0AEBC855", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Bothra|r",
-			[51] = 1549430106,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [4]
-		{
-			"nice", -- [1]
-			"Bobo-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2867, -- [11]
-			"Player-75-08C2C3AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddBobo|r",
-			[51] = 1549430116,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [5]
-		{
-			"Mark of Kazzak on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2995, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1549431825,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [6]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			82, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1549511453,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			83, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1549511476,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			84, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dShanyt|r",
-			[51] = 1549511497,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
-		{
-			"i can't wait to be overpowered for 5 lvls", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			76, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549587705,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [10]
-		{
-			"Whatchoo talkin 'bout?", -- [1]
-			"Geenon-TheScryers", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			77, -- [11]
-			"Player-75-0AD86CF0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edGeenon|r",
-			[51] = 1549587719,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [11]
-		{
-			"i'm still weating leggos", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			78, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549587727,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [12]
-		{
-			"and i'll have azerite traits", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			79, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549587732,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [13]
-		{
-			"OH COOL", -- [1]
-			"Daniela-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			80, -- [11]
-			"Player-75-0B46B98A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Daniela|r",
-			[51] = 1549587750,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [14]
-		{
-			"sorry cap lock", -- [1]
-			"Daniela-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			82, -- [11]
-			"Player-75-0B46B98A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Daniela|r",
-			[51] = 1549587772,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [15]
-		{
-			"it was appropriate", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			97, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549587782,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [16]
-		{
-			"i figure with  |cffff8000|Hitem:137107::::::::110:73::14:2:1811:3630:::|h[Mannoroth's Bloodletting Manacles]|h|r oughta let me get into decent trouble", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			323, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549588028,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [17]
-		{
-			"ooooh and dragon charge  ^.^  Huehuehuehuehuehuehuehue", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			479, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549588861,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [18]
-		{
-			"i kinda wanna make a highmountian tauren prot warrior just to see how much mobility i can get", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			481, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549588894,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [19]
-		{
-			"Hello all", -- [1]
-			"Toggletorque-ArgentDawn", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2188, -- [11]
-			"Player-75-0AAB416B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dToggletorque|r",
-			[51] = 1549671450,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [20]
-		{
-			"Spirit Warrior's Gaze on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
 			2204, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
@@ -484,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549671564,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [21]
+		}, -- [1]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -506,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549671589,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [22]
+		}, -- [2]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -528,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549671612,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
+		}, -- [3]
 		{
 			"I’ve completed the |cffffff00|Hquest:51496:-1:120:120:0|h[Loa Your Standards]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -550,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549765403,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [24]
+		}, -- [4]
 		{
 			"I’ve completed the |cffffff00|Hquest:51081:-1:120:120:0|h[Syrawon the Dominus]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -572,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549765690,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [25]
+		}, -- [5]
 		{
 			"I’ve completed the |cffffff00|Hquest:50619:-1:120:120:0|h[What Goes Up]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -594,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549766189,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [26]
+		}, -- [6]
 		{
 			"I’ve completed the |cffffff00|Hquest:51444:-1:120:120:0|h[Azerite Empowerment]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -616,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549766581,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [27]
+		}, -- [7]
 		{
 			"there is an amazing ammount of marks of honor i will eventually have tofarm", -- [1]
 			"Toggletorque-ArgentDawn", -- [2]
@@ -638,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dToggletorque|r",
 			[51] = 1549818383,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [28]
+		}, -- [8]
 		{
 			"i'm sad i wasted the legions days of stockpiling them", -- [1]
 			"Toggletorque-ArgentDawn", -- [2]
@@ -660,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dToggletorque|r",
 			[51] = 1549818391,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [29]
+		}, -- [9]
 		{
 			"Well congrats there fella", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -682,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1549852596,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [30]
+		}, -- [10]
 		{
 			"grats name", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -704,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1549853563,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [31]
+		}, -- [11]
 		{
 			"LFM |cffffff00|Hquest:54796:-1:120:120:0|h[Shattershard]|h|r WQ - whisper me \"wq\" for an invite! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -726,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549854268,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [32]
+		}, -- [12]
 		{
 			"I’ve completed the |cffffff00|Hquest:54796:-1:120:120:0|h[Shattershard]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -748,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549854404,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [33]
+		}, -- [13]
 		{
 			"I’ve completed the |cffffff00|Hquest:54896:-1:120:120:0|h[Ivus the Forest Lord]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -770,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549854544,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [34]
+		}, -- [14]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -792,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549855252,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
+		}, -- [15]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -814,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549855276,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
+		}, -- [16]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -836,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1549855301,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [37]
+		}, -- [17]
 		{
 			"grats name", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -858,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1549856055,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [38]
+		}, -- [18]
 		{
 			"Congrats", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -880,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1549857485,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [39]
+		}, -- [19]
 		{
 			"|cffffff00Shadowmoon Valley is under attack!|r", -- [1]
 			"", -- [2]
@@ -902,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1549858861,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [40]
+		}, -- [20]
 		{
 			".    #          .                    \\____", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -924,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550019888,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [41]
+		}, -- [21]
 		{
 			".    #         .                    \\", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -946,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550019888,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [42]
+		}, -- [22]
 		{
 			".    [           _________        ___]", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -968,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550019888,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [43]
+		}, -- [23]
 		{
 			".       ( o )                   ( o )", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -990,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550019888,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [44]
+		}, -- [24]
 		{
 			".   [        SHORT BUSS          O", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1012,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550019888,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [45]
+		}, -- [25]
 		{
 			".    #############", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1034,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550019888,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [46]
+		}, -- [26]
 		{
 			"LFM |cffffff00|Hquest:54645:-1:110:120:0|h[Fury of the Earth]|h|r WQ - whisper me \"wq\" for an invite! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1056,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550040194,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [47]
+		}, -- [27]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1078,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550133909,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
+		}, -- [28]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1100,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550133930,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
+		}, -- [29]
 		{
 			"Spirit Warrior's Gaze on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1122,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550133956,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [50]
+		}, -- [30]
 		{
 			"I’ve completed the |cffffff00|Hquest:54793:-1:120:120:0|h[Athrikus Narassin]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1144,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550135774,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [51]
+		}, -- [31]
 		{
 			"I’ve completed the |cffffff00|Hquest:50847:-1:120:120:0|h[Twisted Child of Rezan]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1166,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550136885,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [52]
+		}, -- [32]
 		{
 			"I’ve completed the |cffffff00|Hquest:51156:-1:120:120:0|h[Fangcaller Xorreth]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1188,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550138178,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [53]
+		}, -- [33]
 		{
 			"Mark of Kazzak on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1210,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550276459,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
+		}, -- [34]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1232,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550339135,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [55]
+		}, -- [35]
 		{
 			"Leap on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1254,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550341329,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [36]
 		{
 			"morning all", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1276,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550426680,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [57]
+		}, -- [37]
 		{
 			"hello", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1298,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddZymor|r",
 			[51] = 1550426765,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [58]
+		}, -- [38]
 		{
 			"Hey Zymore", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -1320,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1550426774,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [59]
+		}, -- [39]
 		{
 			"what's the good word?", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -1342,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1550426777,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [60]
+		}, -- [40]
 		{
 			"cold", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1364,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddZymor|r",
 			[51] = 1550426792,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [61]
+		}, -- [41]
 		{
 			"you guys on for a while?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1386,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550426794,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [62]
+		}, -- [42]
 		{
 			"yup", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1408,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddZymor|r",
 			[51] = 1550426802,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [63]
+		}, -- [43]
 		{
 			"I have a waycrest 2 key", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1430,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550426861,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [64]
+		}, -- [44]
 		{
 			"oh nice!", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -1452,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1550426873,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [65]
+		}, -- [45]
 		{
 			"any one wana run some?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1474,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550426875,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [66]
+		}, -- [46]
 		{
 			"sure  let me get my headset set up  ", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1496,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddZymor|r",
 			[51] = 1550426905,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [67]
+		}, -- [47]
 		{
 			"Do you need a tank or a deeps?", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -1518,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1550426945,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [68]
+		}, -- [48]
 		{
 			"get in voice", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1540,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550426999,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [69]
+		}, -- [49]
 		{
 			"can kit come?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1562,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550427048,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [70]
+		}, -- [50]
 		{
 			"Finding out now", -- [1]
 			"Bothra-TheScryers", -- [2]
@@ -1584,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Bothra|r",
 			[51] = 1550427064,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [71]
+		}, -- [51]
 		{
 			"I’ve completed the |cffffff00|Hquest:54514:-1:120:120:0|h[Prisoners of the Darkscale]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1606,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550427116,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [72]
+		}, -- [52]
 		{
 			"shanty and Ix  want to do mythic?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1628,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550427176,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [73]
+		}, -- [53]
 		{
 			"sure", -- [1]
 			"Ixthion-TheScryers", -- [2]
@@ -1650,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaIxthion|r",
 			[51] = 1550427215,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [74]
+		}, -- [54]
 		{
 			"Ican go", -- [1]
 			"Zymor-ArgentDawn", -- [2]
@@ -1672,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddZymor|r",
 			[51] = 1550427225,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [75]
+		}, -- [55]
 		{
 			"I’ve completed the |cffffff00|Hquest:54719:-1:120:120:0|h[Worgen in the Ore Mine]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1694,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550427283,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [76]
+		}, -- [56]
 		{
 			"I’ve completed the |cffffff00|Hquest:54812:-1:120:120:0|h[Shadowclaw]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1716,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550427469,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [77]
+		}, -- [57]
 		{
 			"I’ve completed the |cffffff00|Hquest:54811:-1:120:120:0|h[Blackpaw]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1738,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550427538,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [78]
+		}, -- [58]
 		{
 			"I’ve completed the |cffffff00|Hquest:54788:-1:120:120:0|h[Hydrath]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1760,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550427725,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [79]
+		}, -- [59]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1782,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550433512,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [80]
+		}, -- [60]
 		{
 			"hey guys, im back. anyone want to do more mythics?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -1804,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550436915,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [81]
+		}, -- [61]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1826,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550452875,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [82]
+		}, -- [62]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1848,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550455369,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [83]
+		}, -- [63]
 		{
 			"aren't you though!", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1870,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550457962,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [84]
+		}, -- [64]
 		{
 			"Aw.. thanks KP!", -- [1]
 			"Elzith-TheScryers", -- [2]
@@ -1892,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaElzith|r",
 			[51] = 1550458054,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [85]
+		}, -- [65]
 		{
 			":P", -- [1]
 			"Elzith-TheScryers", -- [2]
@@ -1914,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaElzith|r",
 			[51] = 1550458068,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [86]
+		}, -- [66]
 		{
 			":-O", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1936,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550458072,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [87]
+		}, -- [67]
 		{
 			"How do you make those anyway?", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -1958,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550458096,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [88]
+		}, -- [68]
 		{
 			"Get this box thing |cffffffff|Hitem:49661::::::::120:66::::::|h[Lovely Charm Collector's Kit]|h|r", -- [1]
 			"Elzith-TheScryers", -- [2]
@@ -1980,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaElzith|r",
 			[51] = 1550458113,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [89]
+		}, -- [69]
 		{
 			"Kill stuff your level for these |cffffffff|Hitem:49655::::::::120:66::::::|h[Lovely Charm]|h|r", -- [1]
 			"Elzith-TheScryers", -- [2]
@@ -2002,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaElzith|r",
 			[51] = 1550458121,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [90]
+		}, -- [70]
 		{
 			"Take ten of them, mush them together, and eventually you end up with a charm", -- [1]
 			"Elzith-TheScryers", -- [2]
@@ -2024,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaElzith|r",
 			[51] = 1550458168,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [91]
+		}, -- [71]
 		{
 			"grats name", -- [1]
 			"Hypnos-ArgentDawn", -- [2]
@@ -2046,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aHypnos|r",
 			[51] = 1550460511,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [92]
+		}, -- [72]
 		{
 			"GRATZ, A turtle made it to the water :-)", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2068,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1550646686,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [93]
+		}, -- [73]
 		{
 			"Mark of Kazzak on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2090,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550713936,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [94]
+		}, -- [74]
 		{
 			"GRATZ, A turtle made it to the water :-)", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2112,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1550719224,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [95]
+		}, -- [75]
 		{
 			"Leap on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2134,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550720545,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [96]
+		}, -- [76]
 		{
 			"Anyone want to run mythics?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -2156,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550803186,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [97]
+		}, -- [77]
 		{
 			"|cffa335ee|Hkeystone:158923:248:5:10:8:0:0|h[Keystone: Waycrest Manor (5)]|h|r", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -2178,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1550803228,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [98]
+		}, -- [78]
 		{
 			"I’ve completed the |cffffff00|Hquest:54796:-1:120:120:0|h[Shattershard]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2200,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550804472,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [99]
+		}, -- [79]
 		{
 			"I’ve completed the |cffffff00|Hquest:54796:-1:120:120:0|h[Trozafragmentos]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Lalalady-Ragnaros", -- [2]
@@ -2222,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aLalalady-Ragnaros|r",
 			[51] = 1550804472,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [100]
+		}, -- [80]
 		{
 			"grats name", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -2244,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1550804616,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [101]
+		}, -- [81]
 		{
 			"grats name", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -2266,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1550804690,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [102]
+		}, -- [82]
 		{
 			"My net SUCKS!!!", -- [1]
 			"Yetharhael-ArgentDawn", -- [2]
@@ -2288,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaYetharhael|r",
 			[51] = 1550804834,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [103]
+		}, -- [83]
 		{
 			":-O", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2310,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edGeenon|r",
 			[51] = 1550804840,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [104]
+		}, -- [84]
 		{
 			"LOL", -- [1]
 			"Yetharhael-ArgentDawn", -- [2]
@@ -2332,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaYetharhael|r",
 			[51] = 1550804861,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [105]
+		}, -- [85]
 		{
 			"woot", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2354,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1550926925,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [106]
+		}, -- [86]
 		{
 			"Morning", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -2376,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1550930841,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [107]
+		}, -- [87]
 		{
 			"Crash on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2398,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dShanyt|r",
 			[51] = 1550935078,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [88]
 		{
 			"GRATZ, A turtle made it to the water :-)", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2420,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Daniela|r",
 			[51] = 1551014361,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [109]
+		}, -- [89]
 		{
 			"Morning", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -2442,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1551015968,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [110]
+		}, -- [90]
 		{
 			"howdy fart", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -2464,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1551023384,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [111]
+		}, -- [91]
 		{
 			"hi ", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -2486,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1551023424,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [112]
+		}, -- [92]
 		{
 			"Morning", -- [1]
 			"Koppi-ArgentDawn", -- [2]
@@ -2508,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddKoppi|r",
 			[51] = 1551023445,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [113]
+		}, -- [93]
 		{
 			"are you guys interested in mythic run?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -2530,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1551023478,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [114]
+		}, -- [94]
 		{
 			"im just doiing my tables ", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -2552,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1551023500,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [115]
+		}, -- [95]
 		{
 			"no prob", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -2574,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1551023559,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [116]
+		}, -- [96]
 		{
 			"ill be on later tonight and can run some", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -2596,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffFartherin|r",
 			[51] = 1551023610,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [117]
+		}, -- [97]
 		{
 			"KP!", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -2618,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1551041483,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [118]
+		}, -- [98]
 		{
 			"wana do a mythic?", -- [1]
 			"Lolth-ArgentDawn", -- [2]
@@ -2640,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddLolth|r",
 			[51] = 1551041497,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [119]
+		}, -- [99]
 		{
 			"------------------------------", -- [1]
 			"Okendo-Ragnaros", -- [2]
@@ -2662,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aOkendo-Ragnaros|r",
 			[51] = 1551161941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [120]
+		}, -- [100]
 		{
 			"<iLvl> 192.1 Desombres (Outlaw)", -- [1]
 			"Okendo-Ragnaros", -- [2]
@@ -2684,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aOkendo-Ragnaros|r",
 			[51] = 1551161941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [121]
+		}, -- [101]
 		{
 			"<iLvl> 383.4 Hots (Restoration)", -- [1]
 			"Okendo-Ragnaros", -- [2]
@@ -2706,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aOkendo-Ragnaros|r",
 			[51] = 1551161941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [122]
+		}, -- [102]
 		{
 			"<iLvl> 375.6 Okendo (Frost)", -- [1]
 			"Okendo-Ragnaros", -- [2]
@@ -2728,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aOkendo-Ragnaros|r",
 			[51] = 1551161941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [123]
+		}, -- [103]
 		{
 			"<iLvl> 341.3 Shanyt (Arms)", -- [1]
 			"Okendo-Ragnaros", -- [2]
@@ -2750,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aOkendo-Ragnaros|r",
 			[51] = 1551161941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [124]
+		}, -- [104]
 		{
 			"<iLvl> 217.0 Ärkanuzz (Fire)", -- [1]
 			"Okendo-Ragnaros", -- [2]
@@ -2772,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aOkendo-Ragnaros|r",
 			[51] = 1551161941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [125]
+		}, -- [105]
 		{
 			"------------------------------", -- [1]
 			"Okendo-Ragnaros", -- [2]
@@ -2794,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aOkendo-Ragnaros|r",
 			[51] = 1551161941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [126]
+		}, -- [106]
 		{
 			"evening all =)", -- [1]
 			"Jharl-ArgentDawn", -- [2]
@@ -2816,6 +2376,446 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aJharl|r",
 			[51] = 1551490230,
 			[50] = "CHAT_MSG_GUILD",
+		}, -- [107]
+		{
+			"howdy fart", -- [1]
+			"Lolth-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			537, -- [11]
+			"Player-75-007EE318", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddLolth|r",
+			[51] = 1551545662,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [108]
+		{
+			"hey", -- [1]
+			"Fartherin-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			554, -- [11]
+			"Player-75-03E44F95", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffFartherin|r",
+			[51] = 1551545776,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [109]
+		{
+			"grats!", -- [1]
+			"Koppi-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			141, -- [11]
+			"Player-75-0299D0AC", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddKoppi|r",
+			[51] = 1551549735,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [110]
+		{
+			"LFM |cffffff00|Hquest:50847:-1:120:120:0|h[Twisted Child of Rezan]|h|r WQ - whisper me \"wq\" for an invite! (World Quest Party)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"1. ElvUIGVC", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			1, -- [8]
+			"ElvUIGVC", -- [9]
+			0, -- [10]
+			362, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1551573170,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [111]
+		{
+			"I’ve completed the |cffffff00|Hquest:50847:-1:120:120:0|h[Twisted Child of Rezan]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			366, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1551573222,
+			[50] = "CHAT_MSG_PARTY",
+		}, -- [112]
+		{
+			"hey all", -- [1]
+			"Gorebriel-Trollbane", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gorebriel-Trollbane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			397, -- [11]
+			"Player-1175-0A737032", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dGorebriel-Trollbane|r",
+			[51] = 1551573686,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [113]
+		{
+			"Dirt do you have a tank pet?", -- [1]
+			"Gorebriel-Trollbane", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Gorebriel-Trollbane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			422, -- [11]
+			"Player-1175-0A737032", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dGorebriel-Trollbane|r",
+			[51] = 1551573818,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [114]
+		{
+			"Lets beat the crap out of them", -- [1]
+			"Lolwowss-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lolwowss-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			595, -- [11]
+			"Player-3678-09D9B331", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffLolwowss-Thrall|r",
+			[51] = 1551574697,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [115]
+		{
+			"'go go go", -- [1]
+			"Lolwowss-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Lolwowss-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			650, -- [11]
+			"Player-3678-09D9B331", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffffffffLolwowss-Thrall|r",
+			[51] = 1551574868,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [116]
+		{
+			"evening folks =)", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1398, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aJharl|r",
+			[51] = 1551578224,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [117]
+		{
+			"HEYA", -- [1]
+			"Kitsunee-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1420, -- [11]
+			"Player-75-08C68846", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aKitsunee|r",
+			[51] = 1551578281,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [118]
+		{
+			"oops caps lol", -- [1]
+			"Kitsunee-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1422, -- [11]
+			"Player-75-08C68846", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aKitsunee|r",
+			[51] = 1551578283,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [119]
+		{
+			"=)", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1436, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffff7c0aJharl|r",
+			[51] = 1551578315,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [120]
+		{
+			"Congrats", -- [1]
+			"Bothra-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1478, -- [11]
+			"Player-75-0AEBC855", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Bothra|r",
+			[51] = 1551578510,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [121]
+		{
+			"good job", -- [1]
+			"Bothra-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1482, -- [11]
+			"Player-75-0AEBC855", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Bothra|r",
+			[51] = 1551578512,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [122]
+		{
+			"gold start to you", -- [1]
+			"Bothra-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1486, -- [11]
+			"Player-75-0AEBC855", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Bothra|r",
+			[51] = 1551578516,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [123]
+		{
+			"TY", -- [1]
+			"Lolth-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1516, -- [11]
+			"Player-75-007EE318", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddLolth|r",
+			[51] = 1551578570,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [124]
+		{
+			" you guys up for a mythic?", -- [1]
+			"Lolth-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1522, -- [11]
+			"Player-75-007EE318", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff0070ddLolth|r",
+			[51] = 1551578592,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [125]
+		{
+			"Congrats Keva", -- [1]
+			"Geenon-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1580, -- [11]
+			"Player-75-0AD86CF0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edGeenon|r",
+			[51] = 1551580260,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"I’ve completed the |cffffff00|Hquest:51155:-1:120:120:0|h[Brgl-Lrgl the Basher]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			13, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc69b6dShanyt|r",
+			[51] = 1551597376,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [127]
 	},
 }
