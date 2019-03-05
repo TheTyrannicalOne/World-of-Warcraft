@@ -1,0 +1,13 @@
+
+WarfrontRareTrackerDB = {
+	["global"] = {
+		["printCompatibilityMessage1"] = false,
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

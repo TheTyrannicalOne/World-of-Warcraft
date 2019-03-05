@@ -1,0 +1,1877 @@
+----- AUTO GENERATED - DO NOT EDIT
+
+if GetLocale() ~= "deDE" then
+    return
+end
+
+BtWQuestsDatabase:UpdateNPCsTable({
+    [5164] = {
+        name = "Grumnus Scharfstahl",
+    },
+    [16802] = {
+        name = "Lor'themar Theron",
+    },
+    [120168] = {
+        name = "Chronist To'kini",
+    },
+    [120170] = {
+        name = "Nathanos Pestrufer",
+    },
+    [120171] = {
+        name = "Rokhan",
+    },
+    [120173] = {
+        name = "Zen'tabra",
+    },
+    [120551] = {
+        name = "Krag'wa der Riesige",
+    },
+    [120740] = {
+        name = "König Rastakhan",
+    },
+    [120756] = {
+        name = "Anduin Wrynn",
+    },
+    [120788] = {
+        name = "Genn Graumähne",
+    },
+    [120904] = {
+        name = "Prinzessin Talanji",
+    },
+    [120922] = {
+        name = "Lady Jaina Prachtmeer",
+    },
+    [121144] = {
+        name = "Katherine Prachtmeer",
+    },
+    [121235] = {
+        name = "Taelia",
+    },
+    [121239] = {
+        name = "Finn Schönwind",
+    },
+    [121241] = {
+        name = "Prinzessin Talanji",
+    },
+    [121288] = {
+        name = "Prinzessin Talanji",
+    },
+    [121599] = {
+        name = "König Rastakhan",
+    },
+    [121601] = {
+        name = "Rokhan",
+    },
+    [121603] = {
+        name = "Anneke Lehmann",
+    },
+    [121706] = {
+        name = "Abrichterin L'kala",
+    },
+    [122009] = {
+        name = "Kralmeister B'khor",
+    },
+    [122102] = {
+        name = "Hanzabu",
+    },
+    [122129] = {
+        name = "Händler Alexxi Kruxtopf",
+    },
+    [122289] = {
+        name = "Klingenwache Kaja",
+    },
+    [122320] = {
+        name = "Klingenwache Kaja",
+    },
+    [122370] = {
+        name = "Carsten Jammerthal",
+    },
+    [122493] = {
+        name = "Annie Haag",
+    },
+    [122583] = {
+        name = "Meerah",
+    },
+    [122641] = {
+        name = "Yazma",
+    },
+    [122661] = {
+        name = "General Jakra'zet",
+    },
+    [122671] = {
+        name = "Cassens",
+    },
+    [122672] = {
+        name = "Olivia",
+    },
+    [122688] = {
+        name = "Bwonsamdi",
+    },
+    [122706] = {
+        name = "Magierin Salazae",
+    },
+    [122723] = {
+        name = "Rhan'ka",
+    },
+    [122725] = {
+        name = "Zulsan",
+    },
+    [122760] = {
+        name = "Kriegsdruidin Loti",
+    },
+    [122766] = {
+        name = "Bwonsamdi",
+    },
+    [122795] = {
+        name = "Hexendoktor Kejabu",
+    },
+    [122817] = {
+        name = "Klingenwache Kaja",
+    },
+    [122915] = {
+        name = "Zolani",
+    },
+    [122939] = {
+        name = "Terrorhornjungtier",
+    },
+    [122991] = {
+        name = "Schattenjägerin Mutumba",
+    },
+    [123000] = {
+        name = "Käpt'n Rez'okun",
+    },
+    [123005] = {
+        name = "Hemet Nesingwary",
+    },
+    [123019] = {
+        name = "Jagdmeisterin Vol'ka",
+    },
+    [123022] = {
+        name = "Fährtenleser Burke",
+    },
+    [123026] = {
+        name = "Erak der Unnahbare",
+    },
+    [123052] = {
+        name = "Kimbul",
+    },
+    [123063] = {
+        name = "Ältester Kuppaka",
+    },
+    [123118] = {
+        name = "Fallensteller Custer",
+    },
+    [123178] = {
+        name = "Flick",
+    },
+    [123335] = {
+        name = "Kriegsdruidin Loti",
+    },
+    [123415] = {
+        name = "Henri Hartke",
+    },
+    [123526] = {
+        name = "Ticker",
+    },
+    [123544] = {
+        name = "Flick",
+    },
+    [123545] = {
+        name = "Molch",
+    },
+    [123548] = {
+        name = "Ticker",
+    },
+    [123586] = {
+        name = "Kiro",
+    },
+    [123729] = {
+        name = "Volni",
+    },
+    [123730] = {
+        name = "Man'zul",
+    },
+    [123878] = {
+        name = "Flick",
+    },
+    [124062] = {
+        name = "König Rastakhan",
+    },
+    [124063] = {
+        name = "Jol der Uralte",
+    },
+    [124083] = {
+        name = "Zolani",
+    },
+    [124289] = {
+        name = "\"Die gefährliche\" Liz Seminario",
+    },
+    [124376] = {
+        name = "Hexendoktor Zentimo",
+    },
+    [124417] = {
+        name = "Cyril Weiß",
+    },
+    [124428] = {
+        name = "Hanzabu",
+    },
+    [124468] = {
+        name = "Randall Rotmond",
+    },
+    [124513] = {
+        name = "Hanzabu",
+    },
+    [124629] = {
+        name = "Kaza'jin der Wellenbinder",
+    },
+    [124641] = {
+        name = "Schattenjägerin Mutumba",
+    },
+    [124655] = {
+        name = "König Rastakhan",
+    },
+    [124656] = {
+        name = "Zolani",
+    },
+    [124666] = {
+        name = "Kajosh",
+    },
+    [124786] = {
+        name = "Thomas Zwirbler",
+    },
+    [124802] = {
+        name = "Lord Adrian Norwinsen",
+    },
+    [124915] = {
+        name = "König Rastakhan",
+    },
+    [124922] = {
+        name = "Helena Sanftmut",
+    },
+    [124933] = {
+        name = "Kajosh",
+    },
+    [125039] = {
+        name = "Händlerin Kro",
+    },
+    [125041] = {
+        name = "Schriftrollengelehrter Goji",
+    },
+    [125042] = {
+        name = "Georg Lauchner",
+    },
+    [125047] = {
+        name = "Rokor",
+    },
+    [125093] = {
+        name = "Bewohner von Fallhafen",
+    },
+    [125309] = {
+        name = "Anne Watteck",
+    },
+    [125312] = {
+        name = "Schriftrollengelehrte Rooka",
+    },
+    [125317] = {
+        name = "Schattenjägerin Narez",
+    },
+    [125342] = {
+        name = "Käpt'n Kielson",
+    },
+    [125380] = {
+        name = "Luzilla Kronsteig",
+    },
+    [125385] = {
+        name = "Marschall Elkmar Lesner",
+    },
+    [125394] = {
+        name = "Wachtmeister Henri Leumder",
+    },
+    [125398] = {
+        name = "Harald Beckner",
+    },
+    [125457] = {
+        name = "Rebecca Kernig",
+    },
+    [125486] = {
+        name = "Schwingenreiter Nivek",
+    },
+    [125862] = {
+        name = "Zauljin",
+    },
+    [125904] = {
+        name = "Norah",
+    },
+    [125922] = {
+        name = "Bruder Therold",
+    },
+    [125962] = {
+        name = "Verwalter Jarold",
+    },
+    [126039] = {
+        name = "Mag'ash der Giftige",
+    },
+    [126066] = {
+        name = "Etrigg",
+    },
+    [126079] = {
+        name = "Kol'jun Todeswandler",
+    },
+    [126080] = {
+        name = "Shinga Todeswandler",
+    },
+    [126085] = {
+        name = "Mugjabu",
+    },
+    [126108] = {
+        name = "Sezahjin",
+    },
+    [126148] = {
+        name = "Hexendoktorin Jala",
+    },
+    [126158] = {
+        name = "Finn Schönwind",
+    },
+    [126210] = {
+        name = "Verwalter Arndt",
+    },
+    [126213] = {
+        name = "Prinzessin Talanji",
+    },
+    [126225] = {
+        name = "Aaron Wappenstein",
+    },
+    [126240] = {
+        name = "Brigitte Quellwasser",
+    },
+    [126289] = {
+        name = "Chadwick Paxton",
+    },
+    [126298] = {
+        name = "Brannon Sturmsang",
+    },
+    [126308] = {
+        name = "Karsten Albers",
+    },
+    [126310] = {
+        name = "Evelyn Minder",
+    },
+    [126334] = {
+        name = "Jani",
+    },
+    [126346] = {
+        name = "Chadwick Paxton",
+    },
+    [126377] = {
+        name = "Ingrid Bellix",
+    },
+    [126511] = {
+        name = "Sven Matjes",
+    },
+    [126549] = {
+        name = "Rokhan",
+    },
+    [126560] = {
+        name = "Kriegsdruidin Loti",
+    },
+    [126564] = {
+        name = "Hexfürst Raal",
+    },
+    [126576] = {
+        name = "Razgaji",
+    },
+    [126588] = {
+        name = "Keula",
+    },
+    [126620] = {
+        name = "Finn Schönwind",
+    },
+    [126684] = {
+        name = "Yazma",
+    },
+    [126696] = {
+        name = "Jorak",
+    },
+    [126713] = {
+        name = "Sur'jan",
+    },
+    [126804] = {
+        name = "Eingefangener Saurolisk",
+    },
+    [126814] = {
+        name = "Ranah",
+    },
+    [127006] = {
+        name = "Marina Kenner",
+    },
+    [127015] = {
+        name = "Thaddäus \"Opi\" Risswalt",
+    },
+    [127080] = {
+        name = "Lord Herbsttal",
+    },
+    [127144] = {
+        name = "Marina Kenner",
+    },
+    [127157] = {
+        name = "Markus Sturmtal",
+    },
+    [127161] = {
+        name = "Alina Holsten",
+    },
+    [127212] = {
+        name = "Kal'dran",
+    },
+    [127215] = {
+        name = "Schattenjäger Da'jul",
+    },
+    [127216] = {
+        name = "Zardrax der Ermächtiger",
+    },
+    [127296] = {
+        name = "David Maldus",
+    },
+    [127377] = {
+        name = "Pa'ku",
+    },
+    [127391] = {
+        name = "Blutsucher Jo'chunga",
+    },
+    [127396] = {
+        name = "Initiandin Lilly",
+    },
+    [127418] = {
+        name = "Edwin Maldus",
+    },
+    [127481] = {
+        name = "Lord Kenninger",
+    },
+    [127489] = {
+        name = "Hexfürst Raal",
+    },
+    [127492] = {
+        name = "Majo",
+    },
+    [127537] = {
+        name = "Gertrude",
+    },
+    [127558] = {
+        name = "Art Hugen",
+    },
+    [127559] = {
+        name = "Lord Adrian Norwinsen",
+    },
+    [127570] = {
+        name = "Klingenwache Kaja",
+    },
+    [127576] = {
+        name = "Kriegsdruidin Loti",
+    },
+    [127586] = {
+        name = "Joma",
+    },
+    [127646] = {
+        name = "Lord Kenninger",
+    },
+    [127665] = {
+        name = "Nokano",
+    },
+    [127691] = {
+        name = "Jorak",
+    },
+    [127715] = {
+        name = "Luzilla Kronsteig",
+    },
+    [127743] = {
+        name = "Tantchen Amanda Kernig",
+    },
+    [127803] = {
+        name = "Karsten Bergmann",
+    },
+    [127814] = {
+        name = "Habutu",
+    },
+    [127815] = {
+        name = "Zolani",
+    },
+    [127837] = {
+        name = "Kaza'jin der Wellenbinder",
+    },
+    [127958] = {
+        name = "Kisha",
+    },
+    [127960] = {
+        name = "Lashk",
+    },
+    [127961] = {
+        name = "Prinzessin Talanji",
+    },
+    [127980] = {
+        name = "Akunda der Verständige",
+    },
+    [127989] = {
+        name = "Meijani",
+    },
+    [127992] = {
+        name = "Akunda der Erhabene",
+    },
+    [128096] = {
+        name = "Bwonsamdi",
+    },
+    [128152] = {
+        name = "Akunda",
+    },
+    [128228] = {
+        name = "Kohldampfsören",
+    },
+    [128229] = {
+        name = "Jette die Klinge",
+    },
+    [128261] = {
+        name = "Erster Maat Jamboya",
+    },
+    [128276] = {
+        name = "Jo'chunga",
+    },
+    [128339] = {
+        name = "Jorak",
+    },
+    [128349] = {
+        name = "Hilde Feuerbruch",
+    },
+    [128353] = {
+        name = "Pendi Krummelunte",
+    },
+    [128354] = {
+        name = "Birch Tomlin",
+    },
+    [128377] = {
+        name = "Strandgutsammler Björn",
+    },
+    [128381] = {
+        name = "Drogrin Backenbräu",
+    },
+    [128422] = {
+        name = "Keerin",
+    },
+    [128457] = {
+        name = "Maude Risswalt",
+    },
+    [128467] = {
+        name = "Elias Eimann",
+    },
+    [128494] = {
+        name = "Adela Hagendorn",
+    },
+    [128618] = {
+        name = "Dockmeister Heringsson",
+    },
+    [128679] = {
+        name = "Rosalinde Mertens",
+    },
+    [128680] = {
+        name = "Okri Werkelkant",
+    },
+    [128687] = {
+        name = "Serrik",
+    },
+    [128691] = {
+        name = "Izarn",
+    },
+    [128694] = {
+        name = "Vorrik",
+    },
+    [128696] = {
+        name = "Zissiah",
+    },
+    [128702] = {
+        name = "Roko",
+    },
+    [128888] = {
+        name = "Koba",
+    },
+    [128889] = {
+        name = "Deyon",
+    },
+    [128903] = {
+        name = "Karl-Jan",
+    },
+    [128909] = {
+        name = "Shalo",
+    },
+    [128925] = {
+        name = "Deyon",
+    },
+    [128927] = {
+        name = "Venrik",
+    },
+    [129003] = {
+        name = "Tagart",
+    },
+    [129098] = {
+        name = "Rodrigo",
+    },
+    [129164] = {
+        name = "Chronist Jabari",
+    },
+    [129165] = {
+        name = "Wache Satao",
+    },
+    [129170] = {
+        name = "Rulf",
+    },
+    [129291] = {
+        name = "Boss Tak",
+    },
+    [129354] = {
+        name = "Rhan'ka",
+    },
+    [129378] = {
+        name = "Jo'chunga",
+    },
+    [129392] = {
+        name = "Der \"hilflose\" Henri",
+    },
+    [129450] = {
+        name = "Tacha",
+    },
+    [129451] = {
+        name = "Umi",
+    },
+    [129453] = {
+        name = "Kenzou",
+    },
+    [129491] = {
+        name = "König Rastakhan",
+    },
+    [129519] = {
+        name = "Vorrik",
+    },
+    [129561] = {
+        name = "Kriegsdruidin Loti",
+    },
+    [129578] = {
+        name = "Sören Meiners",
+    },
+    [129586] = {
+        name = "Batu",
+    },
+    [129588] = {
+        name = "Vorrik",
+    },
+    [129613] = {
+        name = "Mainhardt Algerson",
+    },
+    [129642] = {
+        name = "Luzilla Kronsteig",
+    },
+    [129643] = {
+        name = "Marschall Elkmar Lesner",
+    },
+    [129669] = {
+        name = "Benjamin Algerson",
+    },
+    [129670] = {
+        name = "Lotte Baumhüter",
+    },
+    [129703] = {
+        name = "Hexfürst Raal",
+    },
+    [129717] = {
+        name = "Akru",
+    },
+    [129740] = {
+        name = "Gonk",
+    },
+    [129757] = {
+        name = "König Rastakhan",
+    },
+    [129808] = {
+        name = "Bauer Goldfeld",
+    },
+    [129858] = {
+        name = "Wulferd Zischkolben",
+    },
+    [129907] = {
+        name = "Zul der Prophet",
+    },
+    [129940] = {
+        name = "Roko",
+    },
+    [129956] = {
+        name = "Dockmeister Tinsen",
+    },
+    [129983] = {
+        name = "Inquisitorin Morgenlicht",
+    },
+    [129999] = {
+        name = "Taelia",
+    },
+    [130101] = {
+        name = "Rekrut Brutis",
+    },
+    [130159] = {
+        name = "Taelia",
+    },
+    [130190] = {
+        name = "Unteroffizier Calvin",
+    },
+    [130216] = {
+        name = "Magni Bronzebart",
+    },
+    [130341] = {
+        name = "Klingenwache Kaja",
+    },
+    [130375] = {
+        name = "Tallis Himmelsherz",
+    },
+    [130377] = {
+        name = "Kurier Gerald",
+    },
+    [130424] = {
+        name = "Der \"hilflose\" Henri",
+    },
+    [130450] = {
+        name = "Klingenwache Sonji",
+    },
+    [130455] = {
+        name = "Nisha",
+    },
+    [130468] = {
+        name = "Klein Tika",
+    },
+    [130478] = {
+        name = "Griddon",
+    },
+    [130481] = {
+        name = "Shinga Todeswandler",
+    },
+    [130576] = {
+        name = "Bruder Pike",
+    },
+    [130660] = {
+        name = "Kriegswache Rakera",
+    },
+    [130667] = {
+        name = "Kriegswache Rakera",
+    },
+    [130694] = {
+        name = "Bürgermeisterin Rosen",
+    },
+    [130697] = {
+        name = "Brandmeisterin Jule",
+    },
+    [130706] = {
+        name = "Izitas Geist",
+    },
+    [130714] = {
+        name = "Bruder Pike",
+    },
+    [130715] = {
+        name = "Taelia",
+    },
+    [130750] = {
+        name = "Käpt'n Grez'ko",
+    },
+    [130785] = {
+        name = "Jagdmeisterin Kil'ja",
+    },
+    [130786] = {
+        name = "Hobbs",
+    },
+    [130821] = {
+        name = "Wellenbezwingerin Lanfa",
+    },
+    [130833] = {
+        name = "Käpt'n Grez'ko",
+    },
+    [130844] = {
+        name = "Prinzessin Talanji",
+    },
+    [130904] = {
+        name = "Samuel Willem",
+    },
+    [130905] = {
+        name = "Kala Kruxtopf",
+    },
+    [130929] = {
+        name = "Hexendoktorin Jangalar",
+    },
+    [130930] = {
+        name = "Zaluto",
+    },
+    [130932] = {
+        name = "Nok'tal",
+    },
+    [130947] = {
+        name = "Tsunga",
+    },
+    [131000] = {
+        name = "Kommandant Kellmann",
+    },
+    [131001] = {
+        name = "Leutnant Harms",
+    },
+    [131002] = {
+        name = "Leutnant Bauer",
+    },
+    [131003] = {
+        name = "Spezialist Weneke",
+    },
+    [131004] = {
+        name = "Knappe Augustus III.",
+    },
+    [131014] = {
+        name = "Rikal",
+    },
+    [131048] = {
+        name = "Leutnant Tarenfeld",
+    },
+    [131049] = {
+        name = "Rezan",
+    },
+    [131213] = {
+        name = "Rokhan",
+    },
+    [131231] = {
+        name = "Jin'Tiki",
+    },
+    [131248] = {
+        name = "Samuel Willem",
+    },
+    [131249] = {
+        name = "Taelia",
+    },
+    [131253] = {
+        name = "Titanenhüter Hezrel",
+    },
+    [131287] = {
+        name = "Natal'hakata",
+    },
+    [131290] = {
+        name = "Finn Schönwind",
+    },
+    [131354] = {
+        name = "Bestienmutter Jabati",
+    },
+    [131442] = {
+        name = "Leonhard Reinwald",
+    },
+    [131448] = {
+        name = "Werner Eschtal",
+    },
+    [131469] = {
+        name = "Martin Nezz",
+    },
+    [131579] = {
+        name = "Gefangener Dorfbewohner",
+    },
+    [131580] = {
+        name = "Telemantenlehrling Astrandis",
+    },
+    [131582] = {
+        name = "Prüferin Tae'shara Blutwächter",
+    },
+    [131627] = {
+        name = "Thomas Pinker",
+    },
+    [131636] = {
+        name = "Marschall Elkmar Lesner",
+    },
+    [131638] = {
+        name = "Luzilla Kronsteig",
+    },
+    [131639] = {
+        name = "Inquisitorin Knüpp",
+    },
+    [131640] = {
+        name = "Inquisitor Nottlich",
+    },
+    [131641] = {
+        name = "Inquisitor Yorrick",
+    },
+    [131642] = {
+        name = "Inquisitor Hartwasser",
+    },
+    [131654] = {
+        name = "Marie",
+    },
+    [131656] = {
+        name = "Hundemeister Archibald",
+    },
+    [131684] = {
+        name = "Petra \"Püppchen\" Hartke",
+    },
+    [131763] = {
+        name = "Ausgräber Morgrum Glutstein",
+    },
+    [131775] = {
+        name = "Der ohrlose Jens",
+    },
+    [131777] = {
+        name = "Acadia Tistelstein",
+    },
+    [131793] = {
+        name = "Anselm Mildenhall",
+    },
+    [131872] = {
+        name = "Sur'jan",
+    },
+    [131879] = {
+        name = "Inquisitorin Morgenlicht",
+    },
+    [131978] = {
+        name = "Lashk",
+    },
+    [131993] = {
+        name = "Yasch",
+    },
+    [132118] = {
+        name = "Bauer Büttner",
+    },
+    [132193] = {
+        name = "Arnold Ballaster",
+    },
+    [132292] = {
+        name = "Raimund Mildenhall",
+    },
+    [132332] = {
+        name = "Prinzessin Talanji",
+    },
+    [132333] = {
+        name = "Prinzessin Talanji",
+    },
+    [132374] = {
+        name = "Else Werker",
+    },
+    [132617] = {
+        name = "Bently Schmierfleck",
+    },
+    [132637] = {
+        name = "Jamil Abul'housin",
+    },
+    [132647] = {
+        name = "Anselm Mildenhall",
+    },
+    [132720] = {
+        name = "Falkenmeister Lloyd",
+    },
+    [132966] = {
+        name = "Linda Süß",
+    },
+    [132988] = {
+        name = "Flick",
+    },
+    [132994] = {
+        name = "Lord Arthur Kronsteig",
+    },
+    [133035] = {
+        name = "Offizier Jovan",
+    },
+    [133050] = {
+        name = "Prinzessin Talanji",
+    },
+    [133098] = {
+        name = "Inquisitorin Morgenlicht",
+    },
+    [133101] = {
+        name = "Samantha Süß",
+    },
+    [133105] = {
+        name = "Werner Eschtal",
+    },
+    [133125] = {
+        name = "Prinzessin Talanji",
+    },
+    [133126] = {
+        name = "Martin Nezz",
+    },
+    [133324] = {
+        name = "Hexfürst Raal",
+    },
+    [133338] = {
+        name = "Rokhan",
+    },
+    [133471] = {
+        name = "Rokhan",
+    },
+    [133476] = {
+        name = "Prinzessin Talanji",
+    },
+    [133490] = {
+        name = "Jani",
+    },
+    [133550] = {
+        name = "Bergbaufrischling Hannes",
+    },
+    [133551] = {
+        name = "Leitender Minenarbeiter Theock",
+    },
+    [133552] = {
+        name = "Oberster Chemiker Walters",
+    },
+    [133576] = {
+        name = "Steuerfrau Haken",
+    },
+    [133577] = {
+        name = "Meisterkanonier Schnur",
+    },
+    [133578] = {
+        name = "\"Senkblei\"",
+    },
+    [133612] = {
+        name = "Jani",
+    },
+    [133640] = {
+        name = "June der Vorfahre",
+    },
+    [133653] = {
+        name = "Hexfürst Raal",
+    },
+    [133678] = {
+        name = "Kua'fon",
+    },
+    [133679] = {
+        name = "Kua'fon",
+    },
+    [133682] = {
+        name = "Kua'fon",
+    },
+    [133833] = {
+        name = "Rikati",
+    },
+    [133839] = {
+        name = "Harri Hocke",
+    },
+    [133859] = {
+        name = "Jani",
+    },
+    [133953] = {
+        name = "Unteroffizier Calvin",
+    },
+    [134009] = {
+        name = "Einwohnerin von Korlach",
+    },
+    [134028] = {
+        name = "Sven Robertson",
+    },
+    [134098] = {
+        name = "Torka",
+    },
+    [134128] = {
+        name = "Churka",
+    },
+    [134133] = {
+        name = "Teekcha",
+    },
+    [134134] = {
+        name = "Tulu",
+    },
+    [134148] = {
+        name = "Maaz",
+    },
+    [134162] = {
+        name = "Julwaba",
+    },
+    [134164] = {
+        name = "Amre",
+    },
+    [134166] = {
+        name = "Finn Schönwind",
+    },
+    [134325] = {
+        name = "Tillmann Pfleger",
+    },
+    [134346] = {
+        name = "Toki",
+    },
+    [134408] = {
+        name = "Großknecht Jethek",
+    },
+    [134509] = {
+        name = "Hauptführer Zugzange",
+    },
+    [134533] = {
+        name = "Serrik",
+    },
+    [134611] = {
+        name = "Seriah",
+    },
+    [134623] = {
+        name = "Taelia",
+    },
+    [134628] = {
+        name = "Bautechnikerin Alena",
+    },
+    [134639] = {
+        name = "Bruder Pike",
+    },
+    [134702] = {
+        name = "Nante Grinser",
+    },
+    [134720] = {
+        name = "Leo Schilders",
+    },
+    [134752] = {
+        name = "Bürgermeisterin Rosen",
+    },
+    [134776] = {
+        name = "David Brindel",
+    },
+    [134953] = {
+        name = "Alexander Trittwart",
+    },
+    [135012] = {
+        name = "Vivi",
+    },
+    [135021] = {
+        name = "Inquisitorin Morgenlicht",
+    },
+    [135033] = {
+        name = "Maokka",
+    },
+    [135067] = {
+        name = "Moxie Schlossdreher",
+    },
+    [135085] = {
+        name = "Hauptmann Linda Notlich",
+    },
+    [135090] = {
+        name = "Nisha",
+    },
+    [135099] = {
+        name = "Kiro",
+    },
+    [135110] = {
+        name = "Vorrik",
+    },
+    [135111] = {
+        name = "Vorrik",
+    },
+    [135133] = {
+        name = "Kriegswache Rakera",
+    },
+    [135154] = {
+        name = "Kiro",
+    },
+    [135172] = {
+        name = "Vorrik",
+    },
+    [135179] = {
+        name = "Merd Erzfeld",
+    },
+    [135180] = {
+        name = "Nerin Solvis",
+    },
+    [135200] = {
+        name = "Alexander Trittwart",
+    },
+    [135205] = {
+        name = "Nathanos Pestrufer",
+    },
+    [135259] = {
+        name = "Taelia",
+    },
+    [135272] = {
+        name = "Kua'fon",
+    },
+    [135308] = {
+        name = "Schwingenhalter Goja",
+    },
+    [135330] = {
+        name = "Nante Grinser",
+    },
+    [135355] = {
+        name = "Meerah",
+    },
+    [135367] = {
+        name = "Gretel Haribock",
+    },
+    [135390] = {
+        name = "Vorrik",
+    },
+    [135400] = {
+        name = "Jenoh",
+    },
+    [135441] = {
+        name = "Zolani",
+    },
+    [135455] = {
+        name = "Kua'fon",
+    },
+    [135502] = {
+        name = "Kua'fon",
+    },
+    [135517] = {
+        name = "Gezeitenwächterin Wiebke",
+    },
+    [135534] = {
+        name = "Bruder Pike",
+    },
+    [135541] = {
+        name = "Bilgewasserverbrenner",
+    },
+    [135576] = {
+        name = "Bo'tzfrau Maset",
+    },
+    [135595] = {
+        name = "Pa'ku",
+    },
+    [135612] = {
+        name = "Halford Wyrmbann",
+    },
+    [135614] = {
+        name = "Meister Mathias Shaw",
+    },
+    [135618] = {
+        name = "Falstad Wildhammer",
+    },
+    [135620] = {
+        name = "Kelsey Stahlfunken",
+    },
+    [135625] = {
+        name = "Vorrik",
+    },
+    [135673] = {
+        name = "Späher Melzer",
+    },
+    [135682] = {
+        name = "Patrick Eckhart",
+    },
+    [135691] = {
+        name = "Nathanos Pestrufer",
+    },
+    [135744] = {
+        name = "Kua'fon",
+    },
+    [135784] = {
+        name = "Kaiserliche Wache",
+    },
+    [135794] = {
+        name = "Schriftrollengelehrte Nola",
+    },
+    [135795] = {
+        name = "Toki",
+    },
+    [135801] = {
+        name = "Hexfürst Raal",
+    },
+    [135803] = {
+        name = "J'eebi",
+    },
+    [135855] = {
+        name = "Teekay Tretspule",
+    },
+    [135861] = {
+        name = "Adelinde Waldschau",
+    },
+    [135874] = {
+        name = "Leefke Martinek",
+    },
+    [135890] = {
+        name = "König Rastakhan",
+    },
+    [135976] = {
+        name = "Morwin Hainherz",
+    },
+    [136053] = {
+        name = "Samuel Willem",
+    },
+    [136140] = {
+        name = "Klonk Schmierbit",
+    },
+    [136184] = {
+        name = "Kai Karlson",
+    },
+    [136192] = {
+        name = "Degdod",
+    },
+    [136195] = {
+        name = "Sanitäterin Feorea",
+    },
+    [136197] = {
+        name = "Brigadier Thom",
+    },
+    [136227] = {
+        name = "Fixi Scharflist",
+    },
+    [136233] = {
+        name = "Klaus Schönwind",
+    },
+    [136234] = {
+        name = "Cesi Zündschnur",
+    },
+    [136309] = {
+        name = "Erster Maat Jamboya",
+    },
+    [136310] = {
+        name = "Erster Maat Jamboya",
+    },
+    [136414] = {
+        name = "Hirtin Mühlbach",
+    },
+    [136432] = {
+        name = "Brann Bronzebart",
+    },
+    [136458] = {
+        name = "Cesi Zündschnur",
+    },
+    [136497] = {
+        name = "Gezeitenwächterin Wiebke",
+    },
+    [136498] = {
+        name = "Taelia",
+    },
+    [136562] = {
+        name = "Rüstmeister Alfin",
+    },
+    [136568] = {
+        name = "Hauptmann Conrad",
+    },
+    [136574] = {
+        name = "Karl Fürbittshafen",
+    },
+    [136576] = {
+        name = "Dockmeisterin Lettmann",
+    },
+    [136641] = {
+        name = "Brann Bronzebart",
+    },
+    [136658] = {
+        name = "Marie Fürbittshafen",
+    },
+    [136675] = {
+        name = "Brann Bronzebart",
+    },
+    [136683] = {
+        name = "Handelsprinz Gallywix",
+    },
+    [136725] = {
+        name = "Etrigg",
+    },
+    [136779] = {
+        name = "Erster Maat Jamboya",
+    },
+    [136907] = {
+        name = "Magni Bronzebart",
+    },
+    [136933] = {
+        name = "Bruder Pike",
+    },
+    [137008] = {
+        name = "Unteroffizier Elkmar",
+    },
+    [137075] = {
+        name = "Leutnant Dennis Düstermär",
+    },
+    [137094] = {
+        name = "Bauer Max",
+    },
+    [137112] = {
+        name = "Titanenhüter Hezrel",
+    },
+    [137113] = {
+        name = "Rokhan",
+    },
+    [137213] = {
+        name = "Halford Wyrmbann",
+    },
+    [137323] = {
+        name = "Magni Bronzebart",
+    },
+    [137337] = {
+        name = "Unteroffizier Elkmar",
+    },
+    [137400] = {
+        name = "Thaelin Schwarzamboss",
+    },
+    [137401] = {
+        name = "Ambossthan Thurgaden",
+    },
+    [137434] = {
+        name = "Vorrik",
+    },
+    [137453] = {
+        name = "Loroja",
+    },
+    [137506] = {
+        name = "Bruder Pike",
+    },
+    [137537] = {
+        name = "Vorrik",
+    },
+    [137543] = {
+        name = "Unteroffizier Elkmar",
+    },
+    [137554] = {
+        name = "Toki",
+    },
+    [137613] = {
+        name = "Hobart Wurfhammer",
+    },
+    [137629] = {
+        name = "Mekaru",
+    },
+    [137631] = {
+        name = "Neri",
+    },
+    [137675] = {
+        name = "Schattenjäger Ty'jin",
+    },
+    [137677] = {
+        name = "Toki",
+    },
+    [137691] = {
+        name = "Bruder Pike",
+    },
+    [137692] = {
+        name = "Taelia",
+    },
+    [137694] = {
+        name = "Parin Tüfteldings",
+    },
+    [137727] = {
+        name = "Erster Maat Ottkens",
+    },
+    [137732] = {
+        name = "Zallestrasza",
+    },
+    [137742] = {
+        name = "Schattenjäger Ty'jin",
+    },
+    [137818] = {
+        name = "Myxle \"die Seeratte\" Schraubenruck",
+    },
+    [137866] = {
+        name = "Taelia",
+    },
+    [137867] = {
+        name = "Halford Wyrmbann",
+    },
+    [137878] = {
+        name = "Meister Gadrin",
+    },
+    [137970] = {
+        name = "Vorrik",
+    },
+    [137981] = {
+        name = "Kiro",
+    },
+    [138131] = {
+        name = "Rexxar",
+    },
+    [138138] = {
+        name = "Prinzessin Talanji",
+    },
+    [138148] = {
+        name = "Bwonsamdi",
+    },
+    [138285] = {
+        name = "Nathanos Pestrufer",
+    },
+    [138287] = {
+        name = "Lilian Voss",
+    },
+    [138352] = {
+        name = "Oberster Kriegsfürst Cromush",
+    },
+    [138365] = {
+        name = "Oberster Kriegsfürst Cromush",
+    },
+    [138382] = {
+        name = "Akunda",
+    },
+    [138411] = {
+        name = "Vorrik",
+    },
+    [138520] = {
+        name = "Einwohnerin von Zeb'ahari",
+    },
+    [138669] = {
+        name = "Hemet Nesingwary",
+    },
+    [138677] = {
+        name = "Rexxar",
+    },
+    [138688] = {
+        name = "Zenturio Kaga Warmstein",
+    },
+    [138708] = {
+        name = "Garona die Halborcin",
+    },
+    [138735] = {
+        name = "Frederike Götzstein",
+    },
+    [138749] = {
+        name = "Rhan'ka",
+    },
+    [138867] = {
+        name = "Rexxar",
+    },
+    [138876] = {
+        name = "Rexxar",
+    },
+    [138924] = {
+        name = "Holger Nielsen",
+    },
+    [139069] = {
+        name = "Erster Maat Rotmond",
+    },
+    [139070] = {
+        name = "Käpt'n Rotmond",
+    },
+    [139089] = {
+        name = "Wache von Haderfurt",
+    },
+    [139568] = {
+        name = "Magister Umbric",
+    },
+    [139609] = {
+        name = "John J. Keeshan",
+    },
+    [139705] = {
+        name = "Halford Wyrmbann",
+    },
+    [139719] = {
+        name = "Shandris Mondfeder",
+    },
+    [139722] = {
+        name = "Explosionist Robolöt",
+    },
+    [139912] = {
+        name = "Waldläuferin Wons",
+    },
+    [139926] = {
+        name = "Dornsprecher Birkhain",
+    },
+    [139928] = {
+        name = "Meister Gadrin",
+    },
+    [140046] = {
+        name = "Rozzy",
+    },
+    [140048] = {
+        name = "Arthur Handelswind",
+    },
+    [140176] = {
+        name = "Nathanos Pestrufer",
+    },
+    [140258] = {
+        name = "Shandris Mondfeder",
+    },
+    [140590] = {
+        name = "Käpt'n Grez'ko",
+    },
+    [140656] = {
+        name = "Rokhan",
+    },
+    [140724] = {
+        name = "Prinzessin Talanji",
+    },
+    [140725] = {
+        name = "Geist von Vol'jin",
+    },
+    [140752] = {
+        name = "Jenny Flottbeek",
+    },
+    [140907] = {
+        name = "Bwonsamdi",
+    },
+    [141026] = {
+        name = "Kua'fon",
+    },
+    [141078] = {
+        name = "Flüchtling der Wachkuppe",
+    },
+    [141555] = {
+        name = "Baine Bluthuf",
+    },
+    [141603] = {
+        name = "Mallorie Veddel",
+    },
+    [141769] = {
+        name = "Marleen Veddel",
+    },
+    [141952] = {
+        name = "Junges Terrorhorn",
+    },
+    [142393] = {
+        name = "Taelia",
+    },
+    [142651] = {
+        name = "Luzilla Kronsteig",
+    },
+    [142930] = {
+        name = "Halford Wyrmbann",
+    },
+    [143536] = {
+        name = "Oberster Kriegsfürst Volrath",
+    },
+    [143559] = {
+        name = "Großmarschall Tremblade",
+    },
+    [143565] = {
+        name = "June der Vorfahre",
+    },
+    [143746] = {
+        name = "Gardist Kieler",
+    },
+    [143777] = {
+        name = "Der große Hasani",
+    },
+    [143787] = {
+        name = "Flapp-Flapp",
+    },
+    [143845] = {
+        name = "Oberanführerin Geya'rah",
+    },
+    [143846] = {
+        name = "Alleria Windläufer",
+    },
+    [143871] = {
+        name = "Vorarbeiterin Ritzelknopf",
+    },
+    [143908] = {
+        name = "Geschundener Leichnam",
+    },
+    [143913] = {
+        name = "Etrigg",
+    },
+    [144095] = {
+        name = "Meister Mathias Shaw",
+    },
+    [144152] = {
+        name = "Moira Thaurissan",
+    },
+    [244983] = {
+        name = "Schmutzige Taschenuhr",
+    },
+    [270917] = {
+        name = "Verzeichnis von Schluchtbach",
+    },
+    [271706] = {
+        name = "Jägertafel",
+    },
+    [272179] = {
+        name = "Bekanntmachung des Bürgermeisters",
+    },
+    [272422] = {
+        name = "Sanftmuts Zauberbuch",
+    },
+    [273814] = {
+        name = "Klingenbewehrter Talisman",
+    },
+    [273854] = {
+        name = "Rucksack",
+    },
+    [276187] = {
+        name = "Junji",
+    },
+    [276251] = {
+        name = "Ausgrabungsinventar",
+    },
+    [276488] = {
+        name = "Azeritkanonenkugel",
+    },
+    [276513] = {
+        name = "Intakter Matschflosser",
+    },
+    [276515] = {
+        name = "Angelrute",
+    },
+    [276837] = {
+        name = "Rezeptstein",
+    },
+    [277199] = {
+        name = "Verwitterte Auftragsliste",
+    },
+    [277373] = {
+        name = "Schimmernder Seetang",
+    },
+    [277459] = {
+        name = "Schweinsbildnis",
+    },
+    [278197] = {
+        name = "Phiole mit Gegengift",
+    },
+    [278252] = {
+        name = "Auftragszettel",
+    },
+    [278313] = {
+        name = "Scharf formulierter Brief",
+    },
+    [278368] = {
+        name = "Zerfledderte Notiz",
+    },
+    [278447] = {
+        name = "Speer des treulosen Fallenstellers",
+    },
+    [278577] = {
+        name = "Zerrissenes Sendschreiben der Horde",
+    },
+    [278669] = {
+        name = "Geschäftsbuch von Fallhafen",
+    },
+    [278675] = {
+        name = "Verfluchtes Bildnis",
+    },
+    [279337] = {
+        name = "Herzbannzauberfoliant",
+    },
+    [280576] = {
+        name = "Eingeschlossene Schriftrolle",
+    },
+    [280727] = {
+        name = "Verkohlte Nachricht",
+    },
+    [281230] = {
+        name = "Förmliche Einladung",
+    },
+    [281348] = {
+        name = "Auseinanderfallender Brief",
+    },
+    [281551] = {
+        name = "Plakat: Hilfe gesucht",
+    },
+    [281583] = {
+        name = "Uraltes Reliquiar",
+    },
+    [281639] = {
+        name = "Zerbröckelnde Statue",
+    },
+    [281647] = {
+        name = "Aushang",
+    },
+    [281673] = {
+        name = "Tagebuch eines Bewohners von Korlach",
+    },
+    [281718] = {
+        name = "AUSHILFE GESUCHT",
+    },
+    [282457] = {
+        name = "Dornenwachentotem",
+    },
+    [282478] = {
+        name = "Leere Kiste",
+    },
+    [282498] = {
+        name = "Wüstenflöte",
+    },
+    [284426] = {
+        name = "Vergrabene Abbaumaschine",
+    },
+    [286016] = {
+        name = "Schiffslogbuch",
+    },
+    [287081] = {
+        name = "Uralte Schrifttafel",
+    },
+    [287185] = {
+        name = "Gesucht: Dunkelsprecher Jo'la",
+    },
+    [287189] = {
+        name = "Gesucht: Gefährliche Bestien",
+    },
+    [287228] = {
+        name = "Gesucht: Dunkler Chronist",
+    },
+    [287229] = {
+        name = "Gesucht: Dunkler Chronist",
+    },
+    [287232] = {
+        name = "Späherbericht",
+    },
+    [287327] = {
+        name = "Späherbericht",
+    },
+    [287398] = {
+        name = "Gesucht: Za'roco",
+    },
+    [287440] = {
+        name = "Gesucht: Taz'raka",
+    },
+    [287441] = {
+        name = "Gesucht: Sandspäher Vesarik",
+    },
+    [287442] = {
+        name = "Gesucht: Teilnehmer für Kobraausflug",
+    },
+    [287958] = {
+        name = "Anschlagbrett",
+    },
+    [288157] = {
+        name = "Gesucht: Yarsel'ghun",
+    },
+    [288167] = {
+        name = "Maries Paket",
+    },
+    [288214] = {
+        name = "Steckbrief",
+    },
+    [288622] = {
+        name = "Steckbrief",
+    },
+    [288641] = {
+        name = "GESUCHT: Greifenentführer",
+    },
+    [289310] = {
+        name = "GESUCHT: Tobender Erdwächter",
+    },
+    [289313] = {
+        name = "GESUCHT: Die Hornisse",
+    },
+    [289361] = {
+        name = "GESUCHT: Rüstmeister Ssylis",
+    },
+    [289365] = {
+        name = "Steckbrief",
+    },
+    [289728] = {
+        name = "Käpt'n Gulnakus Schatzkarte",
+    },
+    [290138] = {
+        name = "Botbrecherbombe",
+    },
+    [290419] = {
+        name = "Steckbrief",
+    },
+    [290537] = {
+        name = "Hilfe gesucht",
+    },
+    [290750] = {
+        name = "Vorräte der Jambani",
+    },
+    [290765] = {
+        name = "Großer Haufen Gold",
+    },
+    [290993] = {
+        name = "Beute der Eisenfluträuber",
+    },
+    [291143] = {
+        name = "Ranahs Schraubenschlüssel",
+    },
+    [291291] = {
+        name = "Gesucht: Wilderer",
+    },
+    [292523] = {
+        name = "Steckbrief",
+    },
+    [293567] = {
+        name = "Steckbrief",
+    },
+    [293568] = {
+        name = "Steckbrief",
+    },
+    [293985] = {
+        name = "Gesucht: Schlachtmetzler",
+    },
+    [297492] = {
+        name = "Anschlagbrett",
+    },
+    [298849] = {
+        name = "Steckbrief",
+    },
+    [298858] = {
+        name = "Steckbrief",
+    },
+})

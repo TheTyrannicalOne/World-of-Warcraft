@@ -1,0 +1,18 @@
+## Interface: 80100
+## Title: BtWQuests
+## Version: 1.34
+## Notes: 
+## Author: Breen
+## SavedVariables: BtWQuests_Characters
+## SavedVariablesPerCharacter: BtWQuests_Settings
+
+Defines.lua
+BtWQuestsCharacters.lua
+BtWQuestsDatabase.lua
+
+Localization.lua
+
+BtWQuestsTemplates.xml
+BtWQuests.xml
+BtWQuestsQuestDataProvider.xml
+BtWQuestsMinimapButton.xml

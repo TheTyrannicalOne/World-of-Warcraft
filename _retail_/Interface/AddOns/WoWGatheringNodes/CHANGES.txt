@@ -1,0 +1,13 @@
+tag d318d3a3ffb59ee724daa964e0a2c40e0e2d3dcb 02.18.19
+Author:	SLOKnightfall <SLOKnightfall@gmail.com>
+Date:	Mon Feb 18 14:18:23 2019 -0800
+
+Toc Update and Data Refresh
+
+commit cd82d8ca192dcb2e7a2e73161903222dbf15101a
+Author: SLOKnightfall <SLOKnightfall@gmail.com>
+Date:   Mon Feb 18 14:17:04 2019 -0800
+
+    Toc Update
+    Data Refresh
+

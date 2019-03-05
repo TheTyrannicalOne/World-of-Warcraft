@@ -1,4 +1,8 @@
 
+AllTheThingsSettingsPerCharacter = {
+	["Filters"] = {
+	},
+}
 AllTheThingsPCD = {
 	["FlightPaths"] = {
 		[599] = 1,

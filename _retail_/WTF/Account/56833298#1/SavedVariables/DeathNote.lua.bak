@@ -10,6 +10,7 @@ DeathNoteDB = {
 	},
 	["profiles"] = {
 		["Shanyt - Argent Dawn"] = {
+			["searchbox_text"] = "",
 		},
 		["Durlok - Black Dragonflight"] = {
 		},

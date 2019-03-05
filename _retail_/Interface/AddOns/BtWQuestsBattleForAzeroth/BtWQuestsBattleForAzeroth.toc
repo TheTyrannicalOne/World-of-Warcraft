@@ -1,0 +1,55 @@
+## Interface: 80100
+## Title: BtWQuests: Battle for Azeroth
+## Version: 22
+## Notes: Battle for Azeroth quest data for BtWQuests
+## Author: Breen
+## Dependencies: BtWQuests
+## OptionalDeps: BtWQuestsBattleForAzerothPrologue
+
+Defines.lua
+
+Localization.lua
+
+Quests.lua
+Quests.deDE.lua
+Quests.esES.lua
+Quests.esMX.lua
+Quests.frFR.lua
+Quests.itIT.lua
+Quests.koKR.lua
+Quests.ptBR.lua
+Quests.ruRU.lua
+Quests.zhTW.lua
+
+NPCs.lua
+NPCs.deDE.lua
+NPCs.esES.lua
+NPCs.esMX.lua
+NPCs.frFR.lua
+NPCs.itIT.lua
+NPCs.koKR.lua
+NPCs.ptBR.lua
+NPCs.ruRU.lua
+NPCs.zhTW.lua
+
+Index.lua
+Index.deDE.lua
+Index.esES.lua
+Index.esMX.lua
+Index.frFR.lua
+Index.itIT.lua
+Index.koKR.lua
+Index.ptBR.lua
+Index.ruRU.lua
+Index.zhTW.lua
+
+Introduction.lua
+Zuldazar.lua
+Nazmir.lua
+Voldun.lua
+TiragardeSound.lua
+Drustvar.lua
+StormsongValley.lua
+Extras.lua
+AlliedRaces.lua
+Secrets.lua

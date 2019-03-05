@@ -1,21 +1,21 @@
-3/3 02:14:07.190  Voice Log Initialize.
-3/3 02:14:07.190  VoiceProxy attempting to listen on 127.0.0.1:6724
-3/3 02:14:07.235  WoW client has connected to proxy
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice speaker settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice speaker settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice speaker settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice speaker settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice speaker settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice speaker settings initialization in progress
-3/3 02:14:07.320  |subsystem=BNL_Voice|msg=[20190303T02:14:07] {418c} WRN: Voice mic settings initialization in progress
-3/3 02:48:11.376  VoiceProxy CloseProxy request from client.
-3/3 02:48:11.376  VoiceProxy shutdown requested.
-3/3 02:48:16.379  Voice Log Destroy.
+3/5 02:37:03.116  Voice Log Initialize.
+3/5 02:37:03.116  VoiceProxy attempting to listen on 127.0.0.1:6724
+3/5 02:37:03.513  WoW client has connected to proxy
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
+3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
+3/5 03:16:43.888  VoiceProxy CloseProxy request from client.
+3/5 03:16:43.888  VoiceProxy shutdown requested.
+3/5 03:16:48.897  Voice Log Destroy.
