@@ -821,7 +821,6 @@ local function GetProgressColorText(progress, total)
 		local percent = progress / total;
 		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
 	end
-	return "---";
 end
 local function GetCollectionIcon(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
@@ -842,10 +841,7 @@ local function GetProgressTextForRow(data)
 		return GetCollectionIcon(data.collected);
 	elseif data.trackable then
 		return GetCompletionIcon(data.saved);
-	elseif data.g and not data.expanded and #data.g > 0 then
-		return "+++";
 	end
-	return "---";
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
@@ -854,8 +850,6 @@ local function GetProgressTextForTooltip(data)
 		return GetCollectionText(data.collected);
 	elseif data.trackable then
 		return GetCompletionText(data.saved);
-	else
-		return "---";
 	end
 end
 CS:Hide();
@@ -1377,12 +1371,14 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.trackable then
-					if group.saved then
-						if app.Settings:Get("Show:CollectedThings") then
-							right = L["COMPLETE_ICON"];
+					if app.Settings:Get("Show:IncompleteThings") then
+						if group.saved then
+							if app.Settings:Get("Show:CollectedThings") then
+								right = L["COMPLETE_ICON"];
+							end
+						else
+							right = L["NOT_COLLECTED_ICON"];
 						end
-					else
-						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.visible then
 					right = "---";
@@ -1896,8 +1892,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
-			group.info = info;
+			local uniques, dupes = {}, {};
 			for i,item in ipairs(info) do
+				if not item.left then
+					tinsert(uniques, item);
+				elseif not dupes[item.left] then
+					dupes[item.left] = true;
+					tinsert(uniques, item);
+				end
+			end
+			
+			group.info = uniques;
+			for i,item in ipairs(uniques) do
 				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 			end
 		end
@@ -2268,112 +2274,6 @@ end
 local function OpenMainList()
 	app:OpenWindow("Prime");
 end
-local function OpenMiniListForCurrentProfession(manual, refresh)
-	if app.Categories.Professions then
-		local popout = app:GetWindow("Tradeskills");
-		local tradeSkillLine = AllTheThings.GetTradeSkillLine();
-		if tradeSkillLine and app.Settings:GetTooltipSetting("Auto:ProfessionList") and fieldCache["requireSkill"][tradeSkillLine]
-			and not (C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild()) then
-			if manual or not refresh then
-				popout:ClearAllPoints();
-				popout:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
-				popout:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
-				popout:SetVisible(true);
-			end
-		else
-			if manual then
-				app.print("You must have a profession open to open the profession mini list.");
-			end
-			popout:SetVisible(false);
-		end
-		
-		if popout:IsShown() and refresh then
-			-- Cache Learned Spells
-			local skillCache = fieldCache["spellID"];
-			if skillCache then
-				local currentCategoryID, categories = -1, {};
-				local categoryIDs = { C_TradeSkillUI.GetCategories() };
-				for i = 1,#categoryIDs do
-					currentCategoryID = categoryIDs[i];
-					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-					if categoryData then
-						if not categories[currentCategoryID] then
-							app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
-							categories[currentCategoryID] = true;
-						end
-					end
-				end
-				
-				-- Cache learned recipes
-				local learned = 0;
-				local reagentCache = app.GetDataMember("Reagents", {});
-				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-				for i = 1,#recipeIDs do
-					local spellRecipeInfo = {};
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
-						currentCategoryID = spellRecipeInfo.categoryID;
-						if not categories[currentCategoryID] then
-							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-							if categoryData then
-								app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
-								categories[currentCategoryID] = true;
-							end
-						end
-						if spellRecipeInfo.learned then
-							SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-							if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
-								SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
-								learned = learned + 1;
-							end
-						end
-						if not skillCache[spellRecipeInfo.recipeID] then
-							--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
-							skillCache[spellRecipeInfo.recipeID] = { {} };
-						end
-						local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
-						for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
-							local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
-							local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
-							--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
-							
-							-- Make sure a cache table exists for this item.
-							-- Index 1: The Recipe Skill IDs
-							-- Index 2: The Crafted Item IDs
-							if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-							reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
-							if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
-						end
-					end
-				end
-				
-				-- Open the Tradeskill list for this Profession
-				local tradeSkillID = AllTheThings.GetTradeSkillLine();
-				if popout.tradeSkillID ~= tradeSkillID then
-					popout.tradeSkillID = tradeSkillID;
-					for i,group in ipairs(app.Categories.Professions) do
-						if group.requireSkill == tradeSkillID then
-							popout.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
-							BuildGroups(popout.data, popout.data.g);
-							app.UpdateGroups(popout.data, popout.data.g);
-							if not popout.data.expanded then
-								popout.data.expanded = true;
-								ExpandGroupsRecursively(popout.data, true);
-							end
-							popout:SetVisible(true);
-						end
-					end
-				end
-			
-				-- If something new was "learned", then refresh the data.
-				if learned > 0 then
-					app:RefreshData(false, true, true);
-					app.print("Cached " .. learned .. " known recipes!");
-					wipe(searchCache);
-				end
-			end
-		end
-	end
-end
 local function RefreshSavesCoroutine()
 	local waitTimer = 30;
 	while waitTimer > 0 do
@@ -2587,8 +2487,14 @@ local function RefreshCollections()
 			-- Unique Mode requires a lot more calculation.
 			for id,group in pairs(fieldCache["s"]) do
 				if not collectedSources[id] then
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
-					if sourceInfo and app.ItemSourceFilter(sourceInfo) then collectedSources[id] = sourceInfo.isCollected and 1 or 2; end
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+						collectedSources[id] = 1;
+					else
+						local sourceInfo = C_TransmogCollection_GetSourceInfo(id);
+						if sourceInfo and app.ItemSourceFilter(sourceInfo, C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) then
+							collectedSources[id] = 2;
+						end
+					end
 				end
 			end
 		end
@@ -2667,8 +2573,6 @@ end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
-app.OpenMiniListForCurrentProfession = OpenMiniListForCurrentProfession;
-
 
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
@@ -3719,7 +3623,6 @@ end
 			end
 		end
 	end
-	app:RegisterEvent("TAXIMAP_OPENED");
 	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
 	app.BaseFlightPath = {
 		__index = function(t, key)
@@ -4703,47 +4606,13 @@ app.BaseNPC = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "collectible" then
-			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests) or (t.f == 60 and app.CollectibleSelfieFilters);
+			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "saved" then
-			if t.questID then
-				if t.f == 60 then
-					if app.AccountWideSelfieFilters then
-						if GetDataSubMember("CollectedSelfieFilters", t.questID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
-							return 1;
-						end
-					end
-					if IsQuestFlaggedCompleted(t.questID) then
-						SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
-						SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
-						return 1;
-					end
-				elseif IsQuestFlaggedCompleted(t.questID) then
-					return 1;
-				end
+			if t.questID and IsQuestFlaggedCompleted(t.questID) then
+				return 1;
 			end
-			if t.altQuestID then
-				if t.f == 60 then
-					if app.AccountWideSelfieFilters then
-						if GetDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					end
-					if IsQuestFlaggedCompleted(t.altQuestID) then
-						SetTempDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						SetDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						return 1;
-					end
-				else
-					return IsQuestFlaggedCompleted(t.altQuestID);
-				end
+			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
+				return 1;
 			end
 		elseif key == "collected" then
 			return t.saved;
@@ -4914,49 +4783,17 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return (not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests) or (t.f == 60 and app.CollectibleSelfieFilters);
+			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
-			if t.f == 60 then
-				if app.AccountWideSelfieFilters then
-					if GetDataSubMember("CollectedSelfieFilters", t.questID) then
-						return 1;
-					end
-				else
-					if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
-						return 1;
-					end
-				end
-				if IsQuestFlaggedCompleted(t.questID) then
-					SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
-					SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
-					return 1;
-				end
-			elseif IsQuestFlaggedCompleted(t.questID) then
+			if IsQuestFlaggedCompleted(t.questID) then
 				return 1;
 			end
-			if t.altQuestID then
-				if t.f == 60 then
-					if app.AccountWideSelfieFilters then
-						if GetDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					else
-						if GetTempDataSubMember("CollectedSelfieFilters", t.altQuestID) then
-							return 1;
-						end
-					end
-					if IsQuestFlaggedCompleted(t.altQuestID) then
-						SetTempDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						SetDataSubMember("CollectedSelfieFilters", t.altQuestID, 1);
-						return 1;
-					end
-				else
-					return IsQuestFlaggedCompleted(t.altQuestID);
-				end
+			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
+				return 1;
 			end
 		else
 			-- Something that isn't dynamic.
@@ -5026,6 +4863,68 @@ app.BaseRecipe = {
 };
 app.CreateRecipe = function(id, t)
 	return createInstance(constructor(id, t, "spellID"), app.BaseRecipe);
+end
+
+-- Selfie Filters Lib
+app.BaseSelfieFilter = {
+	__index = function(t, key)
+		if key == "key" then
+			return "questID";
+		elseif key == "text" then
+			if t.npcID then
+				if t.npcID > 0 then
+					return t.npcID > 0 and NPCNameFromID[t.npcID];
+				else
+					return L["NPC_ID_NAMES"][t.npcID];
+				end
+			end
+			return t.questName;
+		elseif key == "questName" then
+			local questID = t.questID;
+			local questName = QuestTitleFromID[questID];
+			if questName then
+				t.retries = nil;
+				t.title = nil;
+				return "[" .. questName .. "]";
+			end
+			if t.retries and t.retries > 120 then
+				return "[Quest #" .. questID .. "*]";
+			else
+				t.retries = (t.retries or 0) + 1;
+			end
+		elseif key == "link" then
+			return "quest:" .. t.questID;
+		elseif key == "icon" then
+			return "Interface\\Icons\\INV_Misc_ SelfieCamera_02";
+		elseif key == "trackable" then
+			return true;
+		elseif key == "collectible" then
+			return app.CollectibleSelfieFilters;
+		elseif key == "collected" then
+			return t.saved;
+		elseif key == "saved" then
+			if app.AccountWideSelfieFilters then
+				if GetDataSubMember("CollectedSelfieFilters", t.questID) then
+					return 1;
+				end
+			else
+				if GetTempDataSubMember("CollectedSelfieFilters", t.questID) then
+					return 1;
+				end
+			end
+			if IsQuestFlaggedCompleted(t.questID) then
+				SetTempDataSubMember("CollectedSelfieFilters", t.questID, 1);
+				SetDataSubMember("CollectedSelfieFilters", t.questID, 1);
+				return 1;
+			end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateSelfieFilter = function(id, t)
+	return createInstance(constructor(id, t, "questID"), app.BaseSelfieFilter);
 end
 
 -- Spell Lib
@@ -5519,30 +5418,45 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 				if item.races then
 					-- If the first item is ALSO race locked...
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
-									if otherItem.c then
-										-- If this item is class locked...
-										if containsAny(otherItem.c, item.c) then
-											if otherItem.races then
-												-- If this item is ALSO race locked.
-												if containsAny(otherItem.races, item.races) then
-													-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
-													return true;
+						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+							local otherItem = SearchForSourceIDQuickly(sourceID);
+							if otherItem then
+								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
+									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+									if otherSource.categoryID == sourceInfo.categoryID then
+										if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+											if otherItem.c then
+												-- If this item is class locked...
+												if containsAny(otherItem.c, item.c) then
+													if otherItem.races then
+														-- If this item is ALSO race locked.
+														if containsAny(otherItem.races, item.races) then
+															-- Since the source item is locked to the same race and class, you unlock the source ID. Congrats, mate!
+															return true;
+														end
+													else
+														-- This item is not race locked.
+														-- Since the source item is race locked, but this item matches the class requirements and is not race locked, you unlock the source ID. Congrats, mate!
+														return true;
+													end
 												end
 											else
-												-- This item is not race locked.
-												-- Since the source item is race locked, but this item matches the class requirements and is not race locked, you unlock the source ID. Congrats, mate!
+												-- This item is not class locked.
+												-- Since this item is also not class or race locked, you unlock the source ID. Congrats, mate!
 												return true;
 											end
 										end
-									else
-										-- This item is not class locked.
-										-- Since this item is also not class or race locked, you unlock the source ID. Congrats, mate!
+									end
+								end
+							else
+								-- OH NOES! It doesn't exist!
+								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								if otherSource.categoryID == sourceInfo.categoryID then
+									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
 										return true;
+									else
+										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
 									end
 								end
 							end
@@ -5551,31 +5465,45 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 				else
 					-- Not additionally race locked.
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
-									if otherItem.c then
-										-- If this item is class locked...
-										if containsAny(otherItem.c, item.c) then
-											if otherItem.races then
-												-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+							local otherItem = SearchForSourceIDQuickly(sourceID);
+							if otherItem then
+								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
+									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+									if otherSource.categoryID == sourceInfo.categoryID then
+										if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+											if otherItem.c then
+												-- If this item is class locked...
+												if containsAny(otherItem.c, item.c) then
+													if otherItem.races then
+														-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+													else
+														-- This item is not race locked.
+														-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
+														return true;
+													end
+												end
 											else
-												-- This item is not race locked.
-												-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
-												return true;
+												-- This item is not class locked.
+												if otherItem.races then
+													-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
+												else
+													-- This item is not race locked.
+													-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
+													return true;
+												end
 											end
 										end
+									end
+								end
+							else
+								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								if otherSource.categoryID == sourceInfo.categoryID then
+									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+										return true;
 									else
-										-- This item is not class locked.
-										if otherItem.races then
-											-- Since the item is race locked, you don't unlock this source ID despite matching the class. Sorry mate.
-										else
-											-- This item is not race locked.
-											-- Since this item is also not race locked, you unlock the source ID. Congrats, mate!
-											return true;
-										end
+										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
 									end
 								end
 							end
@@ -5586,11 +5514,10 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 				if item.races then
 					-- If the first item is race locked...
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
+						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+							local otherItem = SearchForSourceIDQuickly(sourceID);
+							if otherItem then
+								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
 									if otherItem.c then
 										-- If this item is class locked...
 										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
@@ -5609,33 +5536,59 @@ function app.FilterItemSourceUnique(sourceInfo, allSources)
 										end
 									end
 								end
+							else
+								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								if otherSource.categoryID == sourceInfo.categoryID then
+									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+										return true;
+									else
+										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
+									end
+								end
 							end
+							
 						end
 					end
 				else
 					-- Not race nor class locked.
 					for i, sourceID in ipairs(allSources or C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-						if sourceID ~= sourceInfo.sourceID then
-							local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSource.isCollected and otherSource.categoryID == sourceInfo.categoryID and otherSource.invType == sourceInfo.invType then
-								local otherItem = SearchForSourceIDQuickly(sourceID);
-								if otherItem and (item.f == otherItem.f or item.f == 2 or otherItem.f == 2) then
-									if otherItem.c then
-										-- If this item is class locked...
-										-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
-									else
-										-- This item is not class locked.
-										if otherItem.races then
-											-- If this item is race locked.
-											-- Since the item is race locked, you don't unlock this source ID despite matching the race. Sorry mate.
-										else
-											-- This item is not race locked.
-											-- The source item is not class nor race locked, you unlock this source ID! Congrats, mate!
-											return true;
+						if sourceID ~= sourceInfo.sourceID and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+							local otherItem = SearchForSourceIDQuickly(sourceID);
+							if otherItem then
+								if item.f == otherItem.f or item.f == 2 or otherItem.f == 2 then
+									local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+									if otherSource.categoryID == sourceInfo.categoryID then
+										if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+											if otherItem.c then
+												-- If this item is class locked...
+												-- Since the item is class locked, you don't unlock this source ID despite matching the class. Sorry mate.
+											else
+												-- This item is not class locked.
+												if otherItem.races then
+													-- If this item is race locked.
+													-- Since the item is race locked, you don't unlock this source ID despite matching the race. Sorry mate.
+												else
+													-- This item is not race locked.
+													-- The source item is not class nor race locked, you unlock this source ID! Congrats, mate!
+													return true;
+												end
+											end
 										end
 									end
 								end
+							else
+								local otherSource = C_TransmogCollection_GetSourceInfo(sourceID);
+								if otherSource.categoryID == sourceInfo.categoryID then
+									if otherSource.invType == sourceInfo.invType or sourceInfo.categoryID == 4 --[[CHEST: Robe vs Armor]] or C_Transmog.GetSlotForInventoryType(otherSource.invType) == C_Transmog.GetSlotForInventoryType(sourceInfo.invType) then
+										-- print("OH NOES! MISSING SOURCE ID ", sourceID, " FOUND THAT YOU HAVE COLLECTED, BUT ATT DOESNT HAVE!!!!");
+										return true;
+									else
+										-- print(otherSource.sourceID, sourceInfo.sourceID, "share appearances, but one is ", sourceInfo.invType, "and the other is", otherSource.invType, sourceInfo.categoryID);
+									end
+								end
 							end
+							
 						end
 					end
 				end
@@ -6708,6 +6661,13 @@ local function SetRowData(self, row, data)
 			x = 4;
 		end
 		local summary = GetProgressTextForRow(data);
+		if not summary then
+			if data.g and not data.expanded and #data.g > 0 then
+				summary = "+++";
+			else
+				summary = "---";
+			end
+		end
 		local specs = data.specs;
 		if specs and #specs > 0 then
 			table.sort(specs);
@@ -7115,13 +7075,13 @@ local function RowOnEnter(self)
 		-- Miscellaneous fields
 		if app.Settings:GetTooltipSetting("Progress") then
 			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
-			if GameTooltip:NumLines() < 1 then
-				GameTooltip:AddDoubleLine(self.Label:GetText(), right);
-			else
-				if right ~= "---" or string.len(GameTooltipTextRight1:GetText() or "") < 1 then
+			if right and right ~= "" and right ~= "---" then
+				if GameTooltip:NumLines() < 1 then
+					GameTooltip:AddDoubleLine(self.Label:GetText(), right);
+				elseif string.len(GameTooltipTextRight1:GetText() or "") < 1 then
 					GameTooltipTextRight1:SetText(right);
+					GameTooltipTextRight1:Show();
 				end
-				GameTooltipTextRight1:Show();
 			end
 			if reference.trackable and reference.total and reference.total >= 2 then
 				GameTooltip:AddDoubleLine("Tracking Progress", GetCompletionText(reference.saved));
@@ -8974,9 +8934,11 @@ end):Show();
 							local clone = {};
 							for key,value in pairs(group) do
 								if key == "maps" then
-									if group.mapID then
-										clone[key] = value;
+									local maps = {};
+									for i,mapID in ipairs(value) do
+										tinsert(maps, mapID);
 									end
+									clone[key] = maps;
 								else
 									clone[key] = value;
 								end
@@ -10162,6 +10124,190 @@ end);
 	end);
 end)();
 (function()
+	app:GetWindow("Tradeskills", UIParent, function(self, ...)
+		if not self.initialized then
+			self.initialized = true;
+			self:SetClampedToScreen(false);
+			self:RegisterEvent("TRADE_SKILL_SHOW");
+			self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+			self:RegisterEvent("TRADE_SKILL_CLOSE");
+			self:RegisterEvent("NEW_RECIPE_LEARNED");
+			self.wait = 5;
+			self.data = {
+				['text'] = "Profession List",
+				['icon'] = "Interface\\Icons\\INV_Scroll_04.blp", 
+				["description"] = "Open your professions to cache them.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = { },
+			};
+			self.CacheRecipes = function(self)
+				-- Cache Learned Spells
+				local skillCache = fieldCache["spellID"];
+				if skillCache then
+					local tradeSkillID = AllTheThings.GetTradeSkillLine();
+					if tradeSkillID == self.lastTradeSkillID then
+						return false;
+					end
+					self.lastTradeSkillID = tradeSkillID;
+					
+					local currentCategoryID, categories = -1, {};
+					local categoryIDs = { C_TradeSkillUI.GetCategories() };
+					for i = 1,#categoryIDs do
+						currentCategoryID = categoryIDs[i];
+						local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+						if categoryData then
+							if not categories[currentCategoryID] then
+								app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+								categories[currentCategoryID] = true;
+							end
+						end
+					end
+					
+					-- Cache learned recipes
+					local learned = 0;
+					local reagentCache = app.GetDataMember("Reagents", {});
+					local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+					for i = 1,#recipeIDs do
+						local spellRecipeInfo = {};
+						if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+							currentCategoryID = spellRecipeInfo.categoryID;
+							if not categories[currentCategoryID] then
+								local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+								if categoryData then
+									app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+									categories[currentCategoryID] = true;
+								end
+							end
+							if spellRecipeInfo.learned then
+								SetTempDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+								if not GetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID) then
+									SetDataSubMember("CollectedSpells", spellRecipeInfo.recipeID, 1);
+									learned = learned + 1;
+								end
+							end
+							if not skillCache[spellRecipeInfo.recipeID] then
+								--app.print("Missing [" .. (spellRecipeInfo.name or "??") .. "] (Spell ID #" .. spellRecipeInfo.recipeID .. ") in ATT Database. Please report it!");
+								skillCache[spellRecipeInfo.recipeID] = { {} };
+							end
+							local craftedItemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeItemLink(spellRecipeInfo.recipeID));
+							for i=1,C_TradeSkillUI.GetRecipeNumReagents(spellRecipeInfo.recipeID) do
+								local reagentName, reagentTexture, reagentCount, playerCount = C_TradeSkillUI.GetRecipeReagentInfo(spellRecipeInfo.recipeID, i);
+								local itemID = GetItemInfoInstant(C_TradeSkillUI.GetRecipeReagentItemLink(spellRecipeInfo.recipeID, i));
+								--print(spellRecipeInfo.recipeID, itemID, "=>", craftedItemID);
+								
+								-- Make sure a cache table exists for this item.
+								-- Index 1: The Recipe Skill IDs
+								-- Index 2: The Crafted Item IDs
+								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+								reagentCache[itemID][1][spellRecipeInfo.recipeID] = reagentCount;
+								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+							end
+						end
+					end
+					
+					-- Open the Tradeskill list for this Profession
+					if self.tradeSkillID ~= tradeSkillID then
+						self.tradeSkillID = tradeSkillID;
+						for i,group in ipairs(app.Categories.Professions) do
+							if group.requireSkill == tradeSkillID then
+								self.data = setmetatable({ ['visible'] = true, total = 0, progress = 0 }, { __index = group });
+								BuildGroups(self.data, self.data.g);
+								app.UpdateGroups(self.data, self.data.g);
+								if not self.data.expanded then
+									self.data.expanded = true;
+									ExpandGroupsRecursively(self.data, true);
+								end
+								if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+									self:SetVisible(true);
+								end
+							end
+						end
+					end
+				
+					-- If something new was "learned", then refresh the data.
+					if learned > 0 then
+						app:RefreshData(false, true, true);
+						app.print("Cached " .. learned .. " known recipes!");
+						wipe(searchCache);
+					end
+				end
+			end
+			self.RefreshRecipes = function(self)
+				if app.CollectibleRecipes then
+					self.wait = 5;
+					StartCoroutine("RefreshingRecipes", function()
+						while self.wait > 0 do
+							self.wait = self.wait - 1;
+							coroutine.yield();
+						end
+						self:CacheRecipes();
+					end);
+				end
+			end
+			
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...)
+				if e == "TRADE_SKILL_LIST_UPDATE" then
+					if self:IsVisible() then
+						-- If it's not yours, don't take credit for it.
+						if C_TradeSkillUI.IsTradeSkillLinked() or C_TradeSkillUI.IsTradeSkillGuild() then
+							self:SetVisible(false);
+							return false;
+						end
+						
+						-- Check to see if ATT has information about this profession.
+						local tradeSkillID = AllTheThings.GetTradeSkillLine();
+						if not tradeSkillID or not fieldCache["requireSkill"][tradeSkillID] then
+							if self:IsVisible() then
+								app.print("You must have a profession open to open the profession mini list.");
+							end
+							self:SetVisible(false);
+							return false;
+						end
+						
+						-- Set the Window to align with the Profession Window
+						self:ClearAllPoints();
+						self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 0, 0);
+						self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", 0, 0);
+						self:Update();
+					end
+					self:RefreshRecipes();
+				elseif e == "TRADE_SKILL_SHOW" then
+					if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+						self:SetVisible(true);
+					end
+					self:RefreshRecipes();
+				elseif e == "NEW_RECIPE_LEARNED" then
+					local spellID = ...;
+					if spellID then
+						local previousState = GetDataSubMember("CollectedSpells", spellID);
+						SetDataSubMember("CollectedSpells", spellID, 1);
+						if not GetTempDataSubMember("CollectedSpells", spellID) then
+							SetTempDataSubMember("CollectedSpells", spellID, 1);
+							app:RefreshData(true, true, true);
+							if not previousState or not app.Settings:Get("AccountWide:Recipes") then
+								app:PlayFanfare();
+							end
+							wipe(searchCache);
+							collectgarbage();
+						end
+					end
+				elseif e == "TRADE_SKILL_CLOSE" then
+					self:SetVisible(false);
+				end
+			end);
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, ...);
+	end);
+end)();
+(function()
 	local worldMapIDs = {
 		14,		-- Arathi Highlands
 		62,		-- Darkshore
@@ -10441,6 +10587,7 @@ ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 ItemRefShoppingTooltip2:HookScript("OnTooltipCleared", ClearTooltip);
+--[[
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
@@ -10450,6 +10597,7 @@ WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
+--]]
 
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
@@ -10515,9 +10663,6 @@ app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("TOYS_UPDATED");
-app:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
-app:RegisterEvent("TRADE_SKILL_SHOW");
-app:RegisterEvent("TRADE_SKILL_CLOSE");
 app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -10700,8 +10845,6 @@ app.events.PLAYER_LOGIN = function()
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
 	});
-	
-	
 end
 app.events.ACTIVE_TALENT_GROUP_CHANGED = function()
 	app.Spec = GetLootSpecialization();
@@ -10791,15 +10934,6 @@ app.events.TOYS_UPDATED = function(itemID, new)
 			if link then print(format(L["ITEM_ID_ADDED"], link, itemID)); end
 		end
 	end
-end
-app.events.TRADE_SKILL_LIST_UPDATE = function(...)
-	OpenMiniListForCurrentProfession(false, true);
-end
-app.events.TRADE_SKILL_SHOW = function(...)
-	OpenMiniListForCurrentProfession(false, false);
-end
-app.events.TRADE_SKILL_CLOSE = function(...)
-	app:GetWindow("Tradeskills"):SetVisible(false);
 end
 app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 	if sourceID then

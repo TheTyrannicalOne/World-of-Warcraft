@@ -311,6 +311,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [126039] = {
         name = "Mag'ash el Venenoso",
     },
+    [126065] = {
+        name = "Lady Sylvanas Brisaveloz",
+    },
     [126066] = {
         name = "Eitrigg",
     },
@@ -1109,6 +1112,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [134702] = {
         name = "Nedly Sonrisas",
     },
+    [134711] = {
+        name = "Lady Sylvanas Brisaveloz",
+    },
     [134720] = {
         name = "Leo Shealds",
     },
@@ -1514,6 +1520,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "Holger Nash",
     },
+    [139061] = {
+        name = "Nathanos Clamañublo",
+    },
+    [139062] = {
+        name = "Lilian Voss",
+    },
     [139069] = {
         name = "Contramaestre Redmond",
     },
@@ -1522,6 +1534,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [139089] = {
         name = "Guardia de Vaderia",
+    },
+    [139098] = {
+        name = "Thomas Zelling",
+    },
+    [139101] = {
+        name = "Lilian Voss",
+    },
+    [139102] = {
+        name = "Rexxar",
     },
     [139568] = {
         name = "Magister Umbric",
@@ -1553,11 +1574,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [140048] = {
         name = "Arthur Vientos Alisios",
     },
+    [140105] = {
+        name = "Forestal oscuro",
+    },
     [140176] = {
         name = "Nathanos Clamañublo",
     },
     [140258] = {
         name = "Shandris Plumaluna",
+    },
+    [140484] = {
+        name = "Capitana Amalia Stone",
+    },
+    [140485] = {
+        name = "Nathanos Clamañublo",
+    },
+    [140487] = {
+        name = "Thomas Zelling",
     },
     [140590] = {
         name = "Capitán Grez'ko",
@@ -1586,11 +1619,26 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141555] = {
         name = "Baine Pezuña de Sangre",
     },
+    [141602] = {
+        name = "Thomas Zelling",
+    },
     [141603] = {
         name = "Mallory Hood",
     },
+    [141643] = {
+        name = "Pinzacoja del fondo marino",
+    },
+    [141644] = {
+        name = "Nathanos Clamañublo",
+    },
+    [141672] = {
+        name = "Capitán de barco ahogado",
+    },
     [141769] = {
         name = "Marilyn Hood",
+    },
+    [141815] = {
+        name = "Marinero ahogado",
     },
     [141952] = {
         name = "Cuernoatroz joven",
@@ -1600,6 +1648,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [142651] = {
         name = "Lucille Tarjasenda",
+    },
+    [142721] = {
+        name = "Ralston Karn",
     },
     [142930] = {
         name = "Halford Aterravermis",
@@ -1631,6 +1682,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [143871] = {
         name = "Supervisora Ejebotón",
     },
+    [143878] = {
+        name = "Reez Cierrelúgubre",
+    },
     [143908] = {
         name = "Cuerpo destrozado",
     },
@@ -1642,6 +1696,192 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [144152] = {
         name = "Moira Thaurissan",
+    },
+    [145005] = {
+        name = "Errante de élite",
+    },
+    [145015] = {
+        name = "Lor'themar Theron",
+    },
+    [145357] = {
+        name = "Dori'thur",
+    },
+    [145411] = {
+        name = "Lady Sylvanas Brisaveloz",
+    },
+    [145422] = {
+        name = "Rexxar",
+    },
+    [145423] = {
+        name = "Thomas Zelling",
+    },
+    [145462] = {
+        name = "Brann Barbabronce",
+    },
+    [145464] = {
+        name = "Consejero Belgrum",
+    },
+    [145580] = {
+        name = "Lady Jaina Valiente",
+    },
+    [145593] = {
+        name = "Rosaline Madison",
+    },
+    [145632] = {
+        name = "Okri Tirallave",
+    },
+    [145751] = {
+        name = "Príncipe mercante Gallywix",
+    },
+    [145793] = {
+        name = "Lady Liadrin",
+    },
+    [145816] = {
+        name = "MGOD",
+    },
+    [146010] = {
+        name = "Forestal oscura Lyana",
+    },
+    [146011] = {
+        name = "Varok Colmillosauro",
+    },
+    [146012] = {
+        name = "Zekhan",
+    },
+    [146013] = {
+        name = "Forestal oscura Alina",
+    },
+    [146050] = {
+        name = "Maiev Cantosombrío",
+    },
+    [146073] = {
+        name = "Príncipe mercante Gallywix",
+    },
+    [146323] = {
+        name = "Nathanos Clamañublo",
+    },
+    [146324] = {
+        name = "Maestro triturador Blix",
+    },
+    [146373] = {
+        name = "Maiev Cantosombrío",
+    },
+    [146374] = {
+        name = "Shandris Plumaluna",
+    },
+    [146375] = {
+        name = "Sira Guardaluna",
+    },
+    [146462] = {
+        name = "Rabioso de la Horda",
+    },
+    [146536] = {
+        name = "Fuego fatuo perdido",
+    },
+    [146601] = {
+        name = "Sira Guardaluna",
+    },
+    [146623] = {
+        name = "MGOD",
+    },
+    [146654] = {
+        name = "Lady Sylvanas Brisaveloz",
+    },
+    [146791] = {
+        name = "Forestal oscura",
+    },
+    [146806] = {
+        name = "Forestal oscura Lyana",
+    },
+    [146921] = {
+        name = "Princesa Talanji",
+    },
+    [146931] = {
+        name = "Rexxar",
+    },
+    [146937] = {
+        name = "Forestal oscura",
+    },
+    [146939] = {
+        name = "Embajadora Juraalba",
+    },
+    [146982] = {
+        name = "Lady Jaina Valiente",
+    },
+    [146988] = {
+        name = "Cavador Golad",
+    },
+    [147075] = {
+        name = "General Rakera",
+    },
+    [147088] = {
+        name = "Arcanista Valtrois",
+    },
+    [147135] = {
+        name = "Nathanos Clamañublo",
+    },
+    [147148] = {
+        name = "Megs",
+    },
+    [147149] = {
+        name = "Morton Piñondez",
+    },
+    [147151] = {
+        name = "Kelsey Chispacero",
+    },
+    [147155] = {
+        name = "Parche",
+    },
+    [147210] = {
+        name = "Forestal oscura Lyana",
+    },
+    [147228] = {
+        name = "Grong",
+    },
+    [147233] = {
+        name = "Rokhan",
+    },
+    [147293] = {
+        name = "Defensor Da'kani",
+    },
+    [147297] = {
+        name = "Zekhan",
+    },
+    [147311] = {
+        name = "Morton Piñondez",
+    },
+    [147519] = {
+        name = "Kelsey Chispacero",
+    },
+    [147819] = {
+        name = "Maestro del acero Telaamon",
+    },
+    [147842] = {
+        name = "Lady Jaina Valiente",
+    },
+    [147843] = {
+        name = "Maestro Mathias Shaw",
+    },
+    [147844] = {
+        name = "Maestro del acero Telaamon",
+    },
+    [147885] = {
+        name = "Anduin Wrynn",
+    },
+    [148015] = {
+        name = "Taelia Fordragón",
+    },
+    [148339] = {
+        name = "Parche",
+    },
+    [149143] = {
+        name = "Nathanos Clamañublo",
+    },
+    [149471] = {
+        name = "Forestal oscura Velonara",
+    },
+    [149612] = {
+        name = "Shandris Plumaluna",
     },
     [244983] = {
         name = "Reloj de bolsillo sucio",

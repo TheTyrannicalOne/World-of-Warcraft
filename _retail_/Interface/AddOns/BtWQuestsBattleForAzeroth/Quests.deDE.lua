@@ -5,6 +5,9 @@ if GetLocale() ~= "deDE" then
 end
 
 BtWQuestsDatabase:UpdateQuestsTable({
+    [40537] = {
+        name = "Blutspende",
+    },
     [44785] = {
         name = "Teekränzchen",
     },
@@ -1700,6 +1703,60 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [49569] = {
         name = "Unten am Fluss",
     },
+    [49570] = {
+        name = "Ein steiniger Start",
+    },
+    [49571] = {
+        name = "Die Vergangenheit durchgraben",
+    },
+    [49572] = {
+        name = "Der Schrein der See",
+    },
+    [49573] = {
+        name = "Der Schrein der Abendflut",
+    },
+    [49574] = {
+        name = "Der Schrein der Stürme",
+    },
+    [49575] = {
+        name = "Tol Dagor: Juwel der Gezeiten",
+    },
+    [49576] = {
+        name = "Höhensondierung",
+    },
+    [49577] = {
+        name = "Unter der Oberfläche",
+    },
+    [49581] = {
+        name = "Sonnengesprenkelte Dünen",
+    },
+    [49582] = {
+        name = "Atal'Dazar: Nicht alles, was glänzt...",
+    },
+    [49583] = {
+        name = "Aus Alt mach Neu",
+    },
+    [49584] = {
+        name = "Das fehlende Kapitel",
+    },
+    [49585] = {
+        name = "Ein steiniger Start",
+    },
+    [49586] = {
+        name = "Die Vergangenheit durchgraben",
+    },
+    [49587] = {
+        name = "Der Schrein der Natur",
+    },
+    [49588] = {
+        name = "Der Schrein der Sande",
+    },
+    [49589] = {
+        name = "Der Schrein der Dämmerung",
+    },
+    [49599] = {
+        name = "Das fehlende Kapitel",
+    },
     [49615] = {
         name = "Des Königs Vertrauen",
     },
@@ -1747,6 +1804,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [49681] = {
         name = "Klein Tika",
+    },
+    [49694] = {
+        name = "Wissensdrust",
     },
     [49703] = {
         name = "Haus Sturmsang",
@@ -1931,6 +1991,30 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [49871] = {
         name = "Gegen die Flut",
     },
+    [49873] = {
+        name = "Die Opferschriften",
+    },
+    [49874] = {
+        name = "Nach Lehrbuch",
+    },
+    [49876] = {
+        name = "Linien im Sand",
+    },
+    [49877] = {
+        name = "Tempel von Sethraliss: Ein gebuchter Gefallen",
+    },
+    [49878] = {
+        name = "Schützende Schrift",
+    },
+    [49879] = {
+        name = "Tödliche Texte",
+    },
+    [49881] = {
+        name = "Der letzte Vers",
+    },
+    [49882] = {
+        name = "Die Federkielprüfung",
+    },
     [49884] = {
         name = "Das blaue Licht der Hoffnung",
     },
@@ -2002,6 +2086,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [49941] = {
         name = "Knochenanalyse",
+    },
+    [49943] = {
+        name = "Blutspende",
+    },
+    [49944] = {
+        name = "Wissensdrust",
+    },
+    [49946] = {
+        name = "Linien im Sand",
     },
     [49949] = {
         name = "Unerwünschte Untote",
@@ -2147,6 +2240,60 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50111] = {
         name = "Totems, Totems, Totems!",
     },
+    [50112] = {
+        name = "Den ersten Stein werfen",
+    },
+    [50113] = {
+        name = "Okulare Extrakte",
+    },
+    [50114] = {
+        name = "Informationen raushämmern",
+    },
+    [50115] = {
+        name = "Standortwechsel",
+    },
+    [50116] = {
+        name = "Eine mögliche Lösung",
+    },
+    [50117] = {
+        name = "Ein tödlicher Trunk",
+    },
+    [50118] = {
+        name = "Nur einen Steinwurf",
+    },
+    [50119] = {
+        name = "Chemische Kreation",
+    },
+    [50120] = {
+        name = "Ein Erfolgsrezept",
+    },
+    [50121] = {
+        name = "Den ersten Stein werfen",
+    },
+    [50122] = {
+        name = "Okulare Extrakte",
+    },
+    [50123] = {
+        name = "Eine Anleitung für die Ewigkeit",
+    },
+    [50124] = {
+        name = "Standortwechsel",
+    },
+    [50125] = {
+        name = "Eine mögliche Lösung",
+    },
+    [50126] = {
+        name = "Ein tödlicher Trunk",
+    },
+    [50127] = {
+        name = "Nur einen Steinwurf",
+    },
+    [50128] = {
+        name = "Chemische Kreation",
+    },
+    [50129] = {
+        name = "Ein Erfolgsrezept",
+    },
     [50133] = {
         name = "Unkraut vergeht nicht",
     },
@@ -2254,6 +2401,36 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [50268] = {
         name = "Mit ein wenig Geschmack",
+    },
+    [50270] = {
+        name = "Tief im Kern",
+    },
+    [50271] = {
+        name = "Hammer und Tasche",
+    },
+    [50272] = {
+        name = "Mit einem Ohr am Boden",
+    },
+    [50274] = {
+        name = "Schmiedekunst der Titanen",
+    },
+    [50275] = {
+        name = "Ambossangeberei",
+    },
+    [50276] = {
+        name = "Eine Anleitung für die Ewigkeit",
+    },
+    [50277] = {
+        name = "Informationen raushämmern",
+    },
+    [50278] = {
+        name = "Tief im Kern",
+    },
+    [50279] = {
+        name = "Ambossangeberei",
+    },
+    [50288] = {
+        name = "Therazanes Wahl",
     },
     [50297] = {
         name = "Der Kopf ihres Feindes",
@@ -4571,6 +4748,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53602] = {
         name = "Unsere Taktik anpassen",
     },
+    [53719] = {
+        name = "Gefolgschaft der Zandalari",
+    },
+    [53720] = {
+        name = "Gefolgschaft von Kul Tiras",
+    },
     [53725] = {
         name = "Ein zerschmettertes Volk",
     },
@@ -4589,8 +4772,77 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53738] = {
         name = "Die Verteidigung von Quel'Danas",
     },
+    [53783] = {
+        name = "In den Dünen",
+    },
     [53791] = {
         name = "Der Stolz der Sin'dorei",
+    },
+    [53802] = {
+        name = "Überzeugungsarbeit bei den Sethrak",
+    },
+    [53805] = {
+        name = "Durchs Nadelöhr",
+    },
+    [53806] = {
+        name = "Schwer wiegt das Haupt",
+    },
+    [53807] = {
+        name = "Ein Stich zur rechten Zeit",
+    },
+    [53810] = {
+        name = "Der durchtrennte Faden",
+    },
+    [53813] = {
+        name = "Ärmel hochkrempeln",
+    },
+    [53815] = {
+        name = "Was ist eigentlich mit Saffy Chaise?",
+    },
+    [53816] = {
+        name = "Wiederzusammenbau benötigt",
+    },
+    [53817] = {
+        name = "Was geschah wirklich mit Grizzek Zischzang?",
+    },
+    [53818] = {
+        name = "Federpflege",
+    },
+    [53819] = {
+        name = "Kehrt zum Nest zurück",
+    },
+    [53820] = {
+        name = "Sie ist jetzt an einem besseren Ort",
+    },
+    [53821] = {
+        name = "Er ist tot, Jastor",
+    },
+    [53823] = {
+        name = "Gefolge der Königin",
+    },
+    [53824] = {
+        name = "Ritus der Königinnen und Könige",
+    },
+    [53825] = {
+        name = "Der neue Rat der Zanchuli",
+    },
+    [53826] = {
+        name = "Anstifter unter uns",
+    },
+    [53827] = {
+        name = "Der Rat hat gesprochen",
+    },
+    [53828] = {
+        name = "Blick der Loa",
+    },
+    [53830] = {
+        name = "Königin der Zandalari",
+    },
+    [53831] = {
+        name = "Ein königlicher Anlass",
+    },
+    [53833] = {
+        name = "Rachsüchtige Reise",
     },
     [53835] = {
         name = "Vielleicht etwas Wertvolles?",
@@ -4625,6 +4877,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53847] = {
         name = "Das Wispern im Wind",
     },
+    [53848] = {
+        name = "Werkzeug in Vol'dun",
+    },
     [53849] = {
         name = "Schwindende Hoffnung",
     },
@@ -4643,11 +4898,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53856] = {
         name = "Der Zorn der Horde",
     },
+    [53858] = {
+        name = "In ihren Fußstapfen",
+    },
+    [53866] = {
+        name = "Wem der Schuh passt...",
+    },
+    [53868] = {
+        name = "Rettet Neun",
+    },
+    [53869] = {
+        name = "Zeit totschlagen",
+    },
     [53879] = {
         name = "Räumung des Anwesens",
     },
     [53880] = {
         name = "Kriegsgerät und Azerit",
+    },
+    [53881] = {
+        name = "Aus demselben Stoff",
     },
     [53882] = {
         name = "Es begann an der Mauer",
@@ -4682,11 +4952,32 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53936] = {
         name = "Die Pioniere aufhalten",
     },
+    [53937] = {
+        name = "Der Üb3r-Schrauber",
+    },
+    [53938] = {
+        name = "Durchs Nadelöhr",
+    },
+    [53940] = {
+        name = "Ein Stich zur rechten Zeit",
+    },
     [53941] = {
         name = "Ein Mech für einen Goblin",
     },
     [53942] = {
         name = "Der richtige Mech für den Job",
+    },
+    [53947] = {
+        name = "In den Dünen",
+    },
+    [53948] = {
+        name = "Rachsüchtige Reise",
+    },
+    [53949] = {
+        name = "Der Üb3r-Schrauber",
+    },
+    [53962] = {
+        name = "Aus demselben Stoff",
     },
     [53973] = {
         name = "Rausfliegen und Draufhauen",
@@ -4709,8 +5000,38 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53990] = {
         name = "In dunkelster Nacht",
     },
+    [53993] = {
+        name = "Eine Stimme im Wind",
+    },
+    [53995] = {
+        name = "Der Taurengerber",
+    },
+    [53996] = {
+        name = "Stöckchen holen",
+    },
+    [53997] = {
+        name = "Der sechste Sinn",
+    },
+    [53998] = {
+        name = "Exhumiert",
+    },
+    [53999] = {
+        name = "Seidiges Haftmittel",
+    },
+    [54000] = {
+        name = "Herzschlagfinale",
+    },
+    [54001] = {
+        name = "Wir gehen rein",
+    },
+    [54002] = {
+        name = "Das große Ganze",
+    },
     [54004] = {
         name = "Testlauf Nr. 1: Mech gegen Mekkadrill",
+    },
+    [54005] = {
+        name = "Das Wissen der Drust",
     },
     [54007] = {
         name = "Versicherungspolice",
@@ -4726,6 +5047,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54028] = {
         name = "Mech gegen Luftschiff",
+    },
+    [54031] = {
+        name = "Blick der Loa: Krag'wa",
+    },
+    [54032] = {
+        name = "Blick der Loa: Pa'ku",
+    },
+    [54033] = {
+        name = "Blick der Loa: Gonk",
+    },
+    [54034] = {
+        name = "Blick der Loa: Bwonsamdi",
     },
     [54041] = {
         name = "Keine Überlebenden",
@@ -4822,6 +5155,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54157] = {
         name = "Niemand wird zurückgelassen",
+    },
+    [54161] = {
+        name = "Das Wissen der Drust",
     },
     [54163] = {
         name = "Der Staub legt sich",
@@ -4940,6 +5276,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54282] = {
         name = "Die Schlacht von Dazar'alor",
     },
+    [54300] = {
+        name = "Glaubensbruch",
+    },
+    [54301] = {
+        name = "Talanjis Gnade",
+    },
     [54302] = {
         name = "Der Fall von Zuldazar",
     },
@@ -4970,6 +5312,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54418] = {
         name = "Der Mechaoberdampfhammer",
     },
+    [54419] = {
+        name = "Deeskalation",
+    },
     [54421] = {
         name = "Ihre Bestien zähmen",
     },
@@ -4997,13 +5342,256 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54703] = {
         name = "Expresslieferung",
     },
+    [54706] = {
+        name = "Handarbeit aus Kul Tiras",
+    },
+    [54708] = {
+        name = "Ein Leben auf dem Lande",
+    },
+    [54721] = {
+        name = "Ich bin zu alt für diesen Schiffskram",
+    },
+    [54723] = {
+        name = "Masten im Nebel",
+    },
+    [54725] = {
+        name = "Aus der Tiefe",
+    },
+    [54726] = {
+        name = "Gut gesägt ist halb gewonnen",
+    },
+    [54727] = {
+        name = "Packesel",
+    },
+    [54728] = {
+        name = "Verfluchtes Holz",
+    },
+    [54729] = {
+        name = "Die Rauhügel",
+    },
+    [54730] = {
+        name = "Gorak Tuls Einfluss",
+    },
+    [54731] = {
+        name = "Das Gleichgewicht aller Dinge",
+    },
+    [54732] = {
+        name = "Fallen lassen!",
+    },
+    [54733] = {
+        name = "Das ist es Werth",
+    },
+    [54734] = {
+        name = "Nachricht von Dorian",
+    },
+    [54735] = {
+        name = "Eine würdige Mannschaft",
+    },
     [54754] = {
         name = "Für die Königin",
     },
     [54787] = {
         name = "Gasmaskerade",
     },
+    [54851] = {
+        name = "Segen der Gezeiten",
+    },
     [54871] = {
         name = "Wir kommen",
+    },
+    [54925] = {
+        name = "Ketzerei!",
+    },
+    [54930] = {
+        name = "Mechanische Befreiungsaktion",
+    },
+    [54938] = {
+        name = "Brüderliche Hilfe",
+    },
+    [54939] = {
+        name = "Störrisch wie ein Bronzebart",
+    },
+    [54940] = {
+        name = "MUTTER weiß mehr",
+    },
+    [54958] = {
+        name = "Schiffe in der Nacht",
+    },
+    [54959] = {
+        name = "Hinter Schloss und Riegel",
+    },
+    [54960] = {
+        name = "Ein bitteres Wiedersehen",
+    },
+    [54964] = {
+        name = "Mitten ins Herz",
+    },
+    [54997] = {
+        name = "Klar Schiff machen",
+    },
+    [54999] = {
+        name = "Unter falscher Flagge",
+    },
+    [55028] = {
+        name = "Schrott zu Schrott...",
+    },
+    [55031] = {
+        name = "Schrott zu Schrott...",
+    },
+    [55033] = {
+        name = "Asche zu Aschenwind",
+    },
+    [55039] = {
+        name = "Das Schiffsbaugenie",
+    },
+    [55043] = {
+        name = "Seemannstratsch und Küstenklatsch",
+    },
+    [55044] = {
+        name = "Den Boten trifft keine Schuld",
+    },
+    [55045] = {
+        name = "Nicht ohne meinen Bruder",
+    },
+    [55047] = {
+        name = "Die Reißzahnfeste sichern",
+    },
+    [55048] = {
+        name = "Lizenz zum Töten",
+    },
+    [55049] = {
+        name = "Kommunikationsstörung",
+    },
+    [55050] = {
+        name = "Ticketkontrolle",
+    },
+    [55051] = {
+        name = "Eine Machtdemonstration",
+    },
+    [55087] = {
+        name = "Der drohende Sturm",
+    },
+    [55088] = {
+        name = "Im Einsatz vermisst",
+    },
+    [55089] = {
+        name = "Mission auf Messers Schneide",
+    },
+    [55090] = {
+        name = "Eine feindliche Versammlung",
+    },
+    [55116] = {
+        name = "Entziffereien",
+    },
+    [55117] = {
+        name = "Korrespondenzscharade",
+    },
+    [55118] = {
+        name = "Ungeklärte Angelegenheiten",
+    },
+    [55119] = {
+        name = "Melde mich zum Dienst!",
+    },
+    [55124] = {
+        name = "Wiedergutmachung",
+    },
+    [55136] = {
+        name = "Ihre Hundstage sind vorbei",
+    },
+    [55171] = {
+        name = "Ausgespäht",
+    },
+    [55177] = {
+        name = "Die Zerreißprobe",
+    },
+    [55179] = {
+        name = "Vergeltungsmaßnahmen",
+    },
+    [55182] = {
+        name = "Die fehlenden Bauteile",
+    },
+    [55183] = {
+        name = "Auf in höhere Lagen",
+    },
+    [55185] = {
+        name = "Lauscher auf!",
+    },
+    [55188] = {
+        name = "Die Zerreißprobe",
+    },
+    [55214] = {
+        name = "Reißende Naht",
+    },
+    [55216] = {
+        name = "Die Probe",
+    },
+    [55217] = {
+        name = "Die Lebensschuld begleichen",
+    },
+    [55218] = {
+        name = "Shezas wertvolles Leder",
+    },
+    [55219] = {
+        name = "Dubben in Donnertotem",
+    },
+    [55220] = {
+        name = "Schlagen, bis die Schuppen fliegen",
+    },
+    [55221] = {
+        name = "Knochenarbeit",
+    },
+    [55222] = {
+        name = "Schlagende Instrumente",
+    },
+    [55223] = {
+        name = "Instrumente der Zerstörung",
+    },
+    [55227] = {
+        name = "Die Äonenhandwerkerin",
+    },
+    [55228] = {
+        name = "Die Probe",
+    },
+    [55229] = {
+        name = "Schulden begleichen",
+    },
+    [55230] = {
+        name = "Telonis' wertvolles Leder",
+    },
+    [55231] = {
+        name = "Noch ein Geisttänzer",
+    },
+    [55232] = {
+        name = "Mevris' Monster",
+    },
+    [55233] = {
+        name = "Knochenarbeit",
+    },
+    [55234] = {
+        name = "Schlagende Instrumente",
+    },
+    [55235] = {
+        name = "Instrumente der Zerstörung",
+    },
+    [55585] = {
+        name = "Ein vielversprechender Anfang",
+    },
+    [55586] = {
+        name = "Aufpoliert",
+    },
+    [55590] = {
+        name = "Fassung bewahren",
+    },
+    [55592] = {
+        name = "Ein vielversprechender Anfang",
+    },
+    [55594] = {
+        name = "Aufpoliert",
+    },
+    [55596] = {
+        name = "Fassung bewahren",
+    },
+    [55635] = {
+        name = "Eine Stimme im Wind",
     },
 })

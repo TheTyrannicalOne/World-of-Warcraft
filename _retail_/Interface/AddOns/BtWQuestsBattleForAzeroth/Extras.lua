@@ -1564,6 +1564,162 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_TROUBLE_IN_D
         },
     },
 })
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_NECK_LEVEL, {
+    name = { -- A One-Way Ticket to the Heart
+        type = "quest",
+        id = 54964,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120},
+    prerequisites = {
+        {
+            type = "quest",
+            id = 53406,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 54938,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 54964,
+    },
+    items = {
+        {
+            type = "quest",
+            id = 54938,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54939,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54940,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54964,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_SOMETHING_SOMETHING_PARROT, {
+    name = { -- Some Reassembly Required
+        type = "quest",
+        id = 53816,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCTION,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_4,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4,
+        },
+    },
+    active = {
+        type = "quest",
+        ids = {53815, 53817},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        ids = {53820, 53821},
+    },
+    items = {
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 53815,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 53817,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53816,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53818,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53819,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 53820,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 53821,
+                },
+            },
+            x = 3,
+        },
+    },
+})
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = nil,
@@ -1829,5 +1985,13 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {
         type = "chain",
         id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_NECK_LEVEL,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_SOMETHING_SOMETHING_PARROT,
     },
 })

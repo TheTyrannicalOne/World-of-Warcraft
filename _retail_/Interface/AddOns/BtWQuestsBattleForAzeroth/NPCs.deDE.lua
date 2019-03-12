@@ -311,6 +311,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [126039] = {
         name = "Mag'ash der Giftige",
     },
+    [126065] = {
+        name = "Fürstin Sylvanas Windläufer",
+    },
     [126066] = {
         name = "Etrigg",
     },
@@ -1109,6 +1112,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [134702] = {
         name = "Nante Grinser",
     },
+    [134711] = {
+        name = "Fürstin Sylvanas Windläufer",
+    },
     [134720] = {
         name = "Leo Schilders",
     },
@@ -1514,6 +1520,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "Holger Nielsen",
     },
+    [139061] = {
+        name = "Nathanos Pestrufer",
+    },
+    [139062] = {
+        name = "Lilian Voss",
+    },
     [139069] = {
         name = "Erster Maat Rotmond",
     },
@@ -1522,6 +1534,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [139089] = {
         name = "Wache von Haderfurt",
+    },
+    [139098] = {
+        name = "Thomas Zelling",
+    },
+    [139101] = {
+        name = "Lilian Voss",
+    },
+    [139102] = {
+        name = "Rexxar",
     },
     [139568] = {
         name = "Magister Umbric",
@@ -1553,11 +1574,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [140048] = {
         name = "Arthur Handelswind",
     },
+    [140105] = {
+        name = "Dunkler Waldläufer",
+    },
     [140176] = {
         name = "Nathanos Pestrufer",
     },
     [140258] = {
         name = "Shandris Mondfeder",
+    },
+    [140484] = {
+        name = "Kapitänin Amalia Stein",
+    },
+    [140485] = {
+        name = "Nathanos Pestrufer",
+    },
+    [140487] = {
+        name = "Thomas Zelling",
     },
     [140590] = {
         name = "Käpt'n Grez'ko",
@@ -1586,11 +1619,26 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141555] = {
         name = "Baine Bluthuf",
     },
+    [141602] = {
+        name = "Thomas Zelling",
+    },
     [141603] = {
         name = "Mallorie Veddel",
     },
+    [141643] = {
+        name = "Meeresbodenwatschelklaue",
+    },
+    [141644] = {
+        name = "Nathanos Pestrufer",
+    },
+    [141672] = {
+        name = "Ertrunkener Matrose",
+    },
     [141769] = {
         name = "Marleen Veddel",
+    },
+    [141815] = {
+        name = "Ertrunkener Matrose",
     },
     [141952] = {
         name = "Junges Terrorhorn",
@@ -1600,6 +1648,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [142651] = {
         name = "Luzilla Kronsteig",
+    },
+    [142721] = {
+        name = "Ralston Karn",
     },
     [142930] = {
         name = "Halford Wyrmbann",
@@ -1631,6 +1682,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [143871] = {
         name = "Vorarbeiterin Ritzelknopf",
     },
+    [143878] = {
+        name = "Ratz Riegelflöz",
+    },
     [143908] = {
         name = "Geschundener Leichnam",
     },
@@ -1642,6 +1696,192 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [144152] = {
         name = "Moira Thaurissan",
+    },
+    [145005] = {
+        name = "Elitereiter der Weltenwanderer",
+    },
+    [145015] = {
+        name = "Lor'themar Theron",
+    },
+    [145357] = {
+        name = "Dori'thur",
+    },
+    [145411] = {
+        name = "Fürstin Sylvanas Windläufer",
+    },
+    [145422] = {
+        name = "Rexxar",
+    },
+    [145423] = {
+        name = "Thomas Zelling",
+    },
+    [145462] = {
+        name = "Brann Bronzebart",
+    },
+    [145464] = {
+        name = "Berater Belgrum",
+    },
+    [145580] = {
+        name = "Lady Jaina Prachtmeer",
+    },
+    [145593] = {
+        name = "Rosalinde Mertens",
+    },
+    [145632] = {
+        name = "Okri Werkelkant",
+    },
+    [145751] = {
+        name = "Handelsprinz Gallywix",
+    },
+    [145793] = {
+        name = "Lady Liadrin",
+    },
+    [145816] = {
+        name = "G.M.O.D.",
+    },
+    [146010] = {
+        name = "Dunkle Waldläuferin Lyana",
+    },
+    [146011] = {
+        name = "Varok Saurfang",
+    },
+    [146012] = {
+        name = "Zekhan",
+    },
+    [146013] = {
+        name = "Dunkle Waldläuferin Alina",
+    },
+    [146050] = {
+        name = "Maiev Schattensang",
+    },
+    [146073] = {
+        name = "Handelsprinz Gallywix",
+    },
+    [146323] = {
+        name = "Nathanos Pestrufer",
+    },
+    [146324] = {
+        name = "Schreddermeister Blix",
+    },
+    [146373] = {
+        name = "Maiev Schattensang",
+    },
+    [146374] = {
+        name = "Shandris Mondfeder",
+    },
+    [146375] = {
+        name = "Sira Mondhüter",
+    },
+    [146462] = {
+        name = "Berserker der Horde",
+    },
+    [146536] = {
+        name = "Verlorener Irrwisch",
+    },
+    [146601] = {
+        name = "Sira Mondhüter",
+    },
+    [146623] = {
+        name = "G.M.O.D.",
+    },
+    [146654] = {
+        name = "Fürstin Sylvanas Windläufer",
+    },
+    [146791] = {
+        name = "Dunkle Waldläuferin",
+    },
+    [146806] = {
+        name = "Dunkle Waldläuferin Lyana",
+    },
+    [146921] = {
+        name = "Prinzessin Talanji",
+    },
+    [146931] = {
+        name = "Rexxar",
+    },
+    [146937] = {
+        name = "Dunkle Waldläuferin",
+    },
+    [146939] = {
+        name = "Botschafterin Morgenschwur",
+    },
+    [146982] = {
+        name = "Lady Jaina Prachtmeer",
+    },
+    [146988] = {
+        name = "Ausgräber Golad",
+    },
+    [147075] = {
+        name = "Generalin Rakera",
+    },
+    [147088] = {
+        name = "Arkanistin Valtrois",
+    },
+    [147135] = {
+        name = "Nathanos Pestrufer",
+    },
+    [147148] = {
+        name = "Megs",
+    },
+    [147149] = {
+        name = "Morten Ritzelwald",
+    },
+    [147151] = {
+        name = "Kelsey Stahlfunken",
+    },
+    [147155] = {
+        name = "Flick",
+    },
+    [147210] = {
+        name = "Dunkle Waldläuferin Lyana",
+    },
+    [147228] = {
+        name = "Grong",
+    },
+    [147233] = {
+        name = "Rokhan",
+    },
+    [147293] = {
+        name = "Verteidiger der Da'kani",
+    },
+    [147297] = {
+        name = "Zekhan",
+    },
+    [147311] = {
+        name = "Morten Ritzelwald",
+    },
+    [147519] = {
+        name = "Kelsey Stahlfunken",
+    },
+    [147819] = {
+        name = "Klingenmeister Telaamon",
+    },
+    [147842] = {
+        name = "Lady Jaina Prachtmeer",
+    },
+    [147843] = {
+        name = "Meister Mathias Shaw",
+    },
+    [147844] = {
+        name = "Klingenmeister Telaamon",
+    },
+    [147885] = {
+        name = "Anduin Wrynn",
+    },
+    [148015] = {
+        name = "Taelia Fordragon",
+    },
+    [148339] = {
+        name = "Flick",
+    },
+    [149143] = {
+        name = "Nathanos Pestrufer",
+    },
+    [149471] = {
+        name = "Dunkle Waldläuferin Velonara",
+    },
+    [149612] = {
+        name = "Shandris Mondfeder",
     },
     [244983] = {
         name = "Schmutzige Taschenuhr",

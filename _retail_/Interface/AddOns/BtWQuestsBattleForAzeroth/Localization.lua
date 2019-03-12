@@ -1,9 +1,12 @@
+----- AUTO GENERATED - DO NOT EDIT
+
 BTWQUESTS_BEGIN_THE_BATTLE_FOR_BRENNADAM = "Begin the Battle for Brennadam"
+BTWQUESTS_COSMETIC_WASTE_OF_TIME = "Cosmetic: Waste of Time"
 BTWQUESTS_MAGHAR_ORC = "Mag'har Orc"
 BTWQUESTS_MAJO_AND_JOMA = "Majo and Joma"
 BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "'Night Warrior' Night Elf Customization"
 BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN = "Progress the War Campaign"
 BTWQUESTS_THE_WAR_CAMPAIGN = "The War Campaign"
 BTWQUESTS_THE_WAR_CAMPAIGN_8_1 = "The War Campaign: Battle of Dazar'alor"
+BTWQUESTS_THE_WAR_CAMPAIGN_8_1_5 = "The War Campaign: Crucible of Storms"
 BTWQUESTS_WARFRONT_THE_BATTLE_FOR_DARKSHORE = "Warfront: The Battle for Darkshore"
-BTWQUESTS_COSMETIC_WASTE_OF_TIME = "Cosmetic: Waste of Time"

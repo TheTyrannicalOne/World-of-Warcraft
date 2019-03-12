@@ -311,6 +311,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [126039] = {
         name = "Mag'ash le Venimeux",
     },
+    [126065] = {
+        name = "Dame Sylvanas Coursevent",
+    },
     [126066] = {
         name = "Eitrigg",
     },
@@ -1109,6 +1112,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [134702] = {
         name = "Nedly le Grimacier",
     },
+    [134711] = {
+        name = "Dame Sylvanas Coursevent",
+    },
     [134720] = {
         name = "Léo Shealds",
     },
@@ -1514,6 +1520,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "Holger Nash",
     },
+    [139061] = {
+        name = "Nathanos le Flétrisseur",
+    },
+    [139062] = {
+        name = "Lilian Voss",
+    },
     [139069] = {
         name = "Second Redmond",
     },
@@ -1522,6 +1534,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [139089] = {
         name = "Garde de Passegué",
+    },
+    [139098] = {
+        name = "Thomas Zelling",
+    },
+    [139101] = {
+        name = "Lilian Voss",
+    },
+    [139102] = {
+        name = "Rexxar",
     },
     [139568] = {
         name = "Magistère Umbric",
@@ -1553,11 +1574,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [140048] = {
         name = "Arthur Alizé",
     },
+    [140105] = {
+        name = "Forestier-sombre",
+    },
     [140176] = {
         name = "Nathanos le Flétrisseur",
     },
     [140258] = {
         name = "Shandris Pennelune",
+    },
+    [140484] = {
+        name = "Capitaine Amalia Laroche",
+    },
+    [140485] = {
+        name = "Nathanos le Flétrisseur",
+    },
+    [140487] = {
+        name = "Thomas Zelling",
     },
     [140590] = {
         name = "Capitaine Grez'ko",
@@ -1586,11 +1619,26 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141555] = {
         name = "Baine Sabot-de-Sang",
     },
+    [141602] = {
+        name = "Thomas Zelling",
+    },
     [141603] = {
         name = "Mallory Boisseau",
     },
+    [141643] = {
+        name = "Traîne-griffe des grand fonds",
+    },
+    [141644] = {
+        name = "Nathanos le Flétrisseur",
+    },
+    [141672] = {
+        name = "Marin noyé",
+    },
     [141769] = {
         name = "Marilyn Boisseau",
+    },
+    [141815] = {
+        name = "Marin noyé",
     },
     [141952] = {
         name = "Navrecorne juvénile",
@@ -1600,6 +1648,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [142651] = {
         name = "Lucille Malvoie",
+    },
+    [142721] = {
+        name = "Ralston Karn",
     },
     [142930] = {
         name = "Halford Verroctone",
@@ -1631,6 +1682,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [143871] = {
         name = "Contremaître Mécapiston",
     },
+    [143878] = {
+        name = "Riiz Salpiège",
+    },
     [143908] = {
         name = "Corps mutilé",
     },
@@ -1642,6 +1696,192 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [144152] = {
         name = "Moira Thaurissan",
+    },
+    [145005] = {
+        name = "Pérégrin d'élite",
+    },
+    [145015] = {
+        name = "Lor'themar Theron",
+    },
+    [145357] = {
+        name = "Dori'thur",
+    },
+    [145411] = {
+        name = "Dame Sylvanas Coursevent",
+    },
+    [145422] = {
+        name = "Rexxar",
+    },
+    [145423] = {
+        name = "Thomas Zelling",
+    },
+    [145462] = {
+        name = "Brann Barbe-de-Bronze",
+    },
+    [145464] = {
+        name = "Conseiller Belgrum",
+    },
+    [145580] = {
+        name = "Dame Jaina Portvaillant",
+    },
+    [145593] = {
+        name = "Rosaline Madison",
+    },
+    [145632] = {
+        name = "Okri Heurteclef",
+    },
+    [145751] = {
+        name = "Prince marchand Gallywix",
+    },
+    [145793] = {
+        name = "Dame Liadrin",
+    },
+    [145816] = {
+        name = "M.E.G.A.",
+    },
+    [146010] = {
+        name = "Forestier-sombre Lyana",
+    },
+    [146011] = {
+        name = "Varok Saurcroc",
+    },
+    [146012] = {
+        name = "Zekhan",
+    },
+    [146013] = {
+        name = "Forestier-sombre Alina",
+    },
+    [146050] = {
+        name = "Maiev Chantelombre",
+    },
+    [146073] = {
+        name = "Prince marchand Gallywix",
+    },
+    [146323] = {
+        name = "Nathanos le Flétrisseur",
+    },
+    [146324] = {
+        name = "Déchiqueteur Blix",
+    },
+    [146373] = {
+        name = "Maiev Chantelombre",
+    },
+    [146374] = {
+        name = "Shandris Pennelune",
+    },
+    [146375] = {
+        name = "Sira Gardelune",
+    },
+    [146462] = {
+        name = "Berserker de la Horde",
+    },
+    [146536] = {
+        name = "Feu follet perdu",
+    },
+    [146601] = {
+        name = "Sira Gardelune",
+    },
+    [146623] = {
+        name = "M.E.G.A.",
+    },
+    [146654] = {
+        name = "Dame Sylvanas Coursevent",
+    },
+    [146791] = {
+        name = "Forestier-sombre",
+    },
+    [146806] = {
+        name = "Forestier-sombre Lyana",
+    },
+    [146921] = {
+        name = "Princesse Talanji",
+    },
+    [146931] = {
+        name = "Rexxar",
+    },
+    [146937] = {
+        name = "Forestier-sombre",
+    },
+    [146939] = {
+        name = "Ambassadrice Ligelaube",
+    },
+    [146982] = {
+        name = "Dame Jaina Portvaillant",
+    },
+    [146988] = {
+        name = "Terrassier Golad",
+    },
+    [147075] = {
+        name = "Général Rakera",
+    },
+    [147088] = {
+        name = "Arcaniste Valtrois",
+    },
+    [147135] = {
+        name = "Nathanos le Flétrisseur",
+    },
+    [147148] = {
+        name = "Megs",
+    },
+    [147149] = {
+        name = "Morton Bois-Pignon",
+    },
+    [147151] = {
+        name = "Kelsey Etinçacier",
+    },
+    [147155] = {
+        name = "Rustine",
+    },
+    [147210] = {
+        name = "Forestier-sombre Lyana",
+    },
+    [147228] = {
+        name = "Grong",
+    },
+    [147233] = {
+        name = "Rokhan",
+    },
+    [147293] = {
+        name = "Défenseur da'kani",
+    },
+    [147297] = {
+        name = "Zekhan",
+    },
+    [147311] = {
+        name = "Morton Bois-Pignon",
+    },
+    [147519] = {
+        name = "Kelsey Etinçacier",
+    },
+    [147819] = {
+        name = "Maître-lame Telaamon",
+    },
+    [147842] = {
+        name = "Dame Jaina Portvaillant",
+    },
+    [147843] = {
+        name = "Maître Mathias Shaw",
+    },
+    [147844] = {
+        name = "Maître-lame Telaamon",
+    },
+    [147885] = {
+        name = "Anduin Wrynn",
+    },
+    [148015] = {
+        name = "Taelia Fordragon",
+    },
+    [148339] = {
+        name = "Rustine",
+    },
+    [149143] = {
+        name = "Nathanos le Flétrisseur",
+    },
+    [149471] = {
+        name = "Forestier-sombre Velonara",
+    },
+    [149612] = {
+        name = "Shandris Pennelune",
     },
     [244983] = {
         name = "Montre de gousset sale",

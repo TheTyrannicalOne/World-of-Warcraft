@@ -1,6 +1,6 @@
 ## Interface: 80100
 ## Title: BtWQuests: Battle for Azeroth
-## Version: 22
+## Version: 23
 ## Notes: Battle for Azeroth quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
@@ -9,6 +9,15 @@
 Defines.lua
 
 Localization.lua
+Localization.deDE.lua
+Localization.esES.lua
+Localization.esMX.lua
+Localization.frFR.lua
+Localization.itIT.lua
+Localization.koKR.lua
+Localization.ptBR.lua
+Localization.ruRU.lua
+Localization.zhTW.lua
 
 Quests.lua
 Quests.deDE.lua
@@ -51,5 +60,6 @@ TiragardeSound.lua
 Drustvar.lua
 StormsongValley.lua
 Extras.lua
+Professions.lua
 AlliedRaces.lua
 Secrets.lua

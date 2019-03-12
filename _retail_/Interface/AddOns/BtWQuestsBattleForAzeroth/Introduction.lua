@@ -372,41 +372,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION
     },
 })
 
--- BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_CAMPAIGN, {
---     name = BTWQUESTS_THE_WAR_CAMPAIGN,
---     category = nil,
---     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
---     buttonImage = 1778893,
---     major = true,
---     range = {110,120},
---     prerequisites = {
---         {
---             type = "level",
---             level = 110,
---         },
---         {
---             type = "chain",
---             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_INTRODUCTION,
---         },
---     },
---     active = {
---         type = "chain",
---         id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_INTRODUCTION,
---     },
---     completed = BtWQuestsItem_GetItems,
---     items = {
---         {
---             type = "chain",
---             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN,
---             embed = true,
---         },
---         {
---             type = "chain",
---             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN,
---             embed = true,
---         },
---     },
--- })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN, {
     name = BTWQUESTS_THE_WAR_CAMPAIGN,
     category = nil,
@@ -1588,63 +1553,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN, {
     },
 })
 
--- BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_CAMPAIGN_8_1, {
---     name = BTWQUESTS_THE_WAR_CAMPAIGN_8_1,
---     category = nil,
---     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
---     buttonImage = 2482729,
---     major = true,
---     range = {120,120},
---     prerequisites = {
---         {
---             type = "level",
---             level = 120,
---         },
---         {
---             type = "chain",
---             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_INTRODUCTION,
---         },
---         {
---             type = "chain",
---             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_CAMPAIGN,
---         },
---         {
---             type = "reputation",
---             id = 2157,
---             standing = 7,
---             restrictions = {
---                 type = "faction",
---                 id = BTWQUESTS_FACTION_ID_HORDE,
---             },
---         },
---         {
---             type = "reputation",
---             id = 2159,
---             standing = 7,
---             restrictions = {
---                 type = "faction",
---                 id = BTWQUESTS_FACTION_ID_ALLIANCE,
---             },
---         },
---     },
---     active = {
---         type = "chain",
---         id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_CAMPAIGN,
---     },
---     completed = BtWQuestsItem_GetItems,
---     items = {
---         {
---             type = "chain",
---             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1,
---             embed = true,
---         },
---         {
---             type = "chain",
---             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
---             embed = true,
---         },
---     },
--- })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1, {
     name = BTWQUESTS_THE_WAR_CAMPAIGN_8_1,
     category = nil,
@@ -1731,7 +1639,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
         {
             type = "quest",
             id = 54163,
-            visible = false,
             x = 3,
             connections = {
                 1,
@@ -1740,7 +1647,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
         {
             type = "quest",
             id = 54183,
-            visible = false,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
             x = 3,
         },
     },
@@ -1830,7 +1744,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1
         {
             type = "quest",
             id = 54164,
-            visible = false,
             x = 3,
             connections = {
                 1,
@@ -1839,7 +1752,144 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1
         {
             type = "quest",
             id = 54165,
-            visible = false,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
+            x = 3,
+        },
+    },
+})
+
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5, {
+    name = BTWQUESTS_THE_WAR_CAMPAIGN_8_1_5,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    buttonImage = 2498193,
+    range = {120,120},
+    crest = "alliance",
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCTION,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1,
+        },
+    },
+    active = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1,
+    },
+    completed = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_2,
+    },
+    items = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1,
+            x = 3,
+            y = 0,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_2,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5, {
+    name = BTWQUESTS_THE_WAR_CAMPAIGN_8_1_5,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    buttonImage = 2498193,
+    range = {120,120},
+    crest = "horde",
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
+        },
+    },
+    active = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
+    },
+    completed = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2,
+    },
+    items = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2,
             x = 3,
         },
     },
@@ -4936,11 +4986,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_3,
         },
-        {
-            type = "reputation",
-            id = 2159,
-            standing = 8,
-        },
     },
     active = {
         {
@@ -5438,11 +5483,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4, 
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_3,
         },
-        {
-            type = "reputation",
-            id = 2157,
-            standing = 8,
-        },
     },
     active = {
         {
@@ -5584,6 +5624,334 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4, 
     },
 })
 
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1, {
+    name = { -- My Brother's Keeper
+        type = "quest",
+        id = 55045,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCTION,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_4,
+        },
+    },
+    active = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_4,
+    },
+    completed = {
+        type = "quest",
+        id = 55045,
+    },
+    items = {
+        {
+            type = "quest",
+            id = 55118,
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55033,
+            x = 2,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55117,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55116,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55119,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55044,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55045,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_2, {
+    name = { -- A Gathering of Foes
+        type = "quest",
+        id = 55090,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCTION,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1,
+        },
+    },
+    active = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1,
+    },
+    completed = {
+        type = "quest",
+        id = 55090,
+    },
+    items = {
+        {
+            type = "quest",
+            id = 55171,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55087,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55179,
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55088,
+            x = 2,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55182,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55183,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55185,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55089,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55090,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1, {
+    name = { -- Righting Wrongs
+        type = "quest",
+        id = 55124,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4,
+        },
+    },
+    active = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4,
+    },
+    completed = 
+    {
+        type = "quest",
+        ids = {
+            54999, 55034, 
+        },
+    },
+    items = {
+        {
+            type = "quest",
+            ids = {
+                55124, 54961, 
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54958,
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54959,
+            x = 2,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54997,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54960,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            ids = {
+                54999, 55034, 
+            },
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2, {
+    name = { -- A Display of Power
+        type = "quest",
+        id = 55051,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1,
+        },
+    },
+    active = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1,
+    },
+    completed = {
+        type = "quest",
+        id = 55051,
+    },
+    items = {
+        {
+            type = "quest",
+            ids = {55047, 55052},
+            x = 3,
+            connections = {
+                1, 2,3,
+            },
+        },
+        {
+            type = "quest",
+            id = 55048,
+            x = 1,
+            connections = {
+               3
+            },
+        },
+        {
+            type = "quest",
+            id = 55049,
+            connections = {
+               2
+            },
+        },
+        {
+            type = "quest",
+            id = 55050,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55051,
+            x = 3,
+        },
+    },
+})
+
+
 BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {
         type = "chain",
@@ -5610,6 +5978,15 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {
         type = "chain",
         id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
+    },
+    
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
     },
 })
 

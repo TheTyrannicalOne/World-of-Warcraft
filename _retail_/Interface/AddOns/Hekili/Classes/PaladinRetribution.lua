@@ -56,6 +56,12 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             max_stack = 1,
         },
 
+        avenging_wrath_crit = ns.PTR and {
+            id = 294027,
+            duration = 20,
+            max_stack = 1
+        } or nil,
+
         blade_of_wrath = {
             id = 281178,
             duration = 10,
@@ -278,6 +284,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             usable = function () return not buff.avenging_wrath.up end,
             handler = function ()
                 applyBuff( 'avenging_wrath' )
+                if PTR then applyBuff( "avenging_wrath_crit" ) end
                 if level < 115 then
                     if equipped.liadrins_fury_unleashed then gain( 1, 'holy_power' ) end
                 end
@@ -316,7 +323,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             recharge = 25,
             gcd = "spell",
 
-            spend = 0.15,
+            spend = 0.07,
             spendType = "mana",
 
             startsCombat = false,
@@ -342,6 +349,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             startsCombat = false,
             texture = 135964,
 
+            readyTime = function () return debuff.forbearance.remains end,
+
             handler = function ()
                 applyBuff( 'blessing_of_protection' )
                 applyDebuff( 'player', 'forbearance' )
@@ -355,7 +364,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             cooldown = 90,
             gcd = "spell",
 
-            spend = 0.08,
+            spend = 0.06,
             spendType = "mana",
 
             talent = 'blinding_light',
@@ -450,7 +459,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             startsCombat = false,
             texture = 524354,
 
-            usable = function () return not debuff.forbearance.up end,
+            readyTime = function () return debuff.forbearance.remains end,
+
             handler = function ()
                 applyBuff( 'divine_shield' )
                 applyDebuff( 'player', 'forbearance' )
@@ -498,6 +508,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
                     removeBuff( 'fires_of_justice' )
                     removeBuff( 'hidden_retribution_t21_4p' )
                 end
+
+                if PTR and buff.avenging_wrath_crit.up then removeBuff( "avenging_wrath_crit" ) end
 
                 if level < 116 then
                     if equipped.whisper_of_the_nathrezim then applyBuff( 'whisper_of_the_nathrezim', 4 ) end
@@ -770,6 +782,8 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             startsCombat = false,
             texture = 135928,
 
+            readyTime = function () return debuff.forbearance.remains end,
+
             handler = function ()
                 gain( health.max, "health" )
                 applyDebuff( 'player', 'forbearance', 30 )
@@ -821,7 +835,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
             cooldown = 15,
             gcd = "spell",
 
-            spend = 0.1,
+            spend = 0.06,
             spendType = "mana",
 
             startsCombat = false,
@@ -871,6 +885,7 @@ if UnitClassBase( 'player' ) == 'PALADIN' then
                     removeBuff( 'fires_of_justice' )
                     removeBuff( 'hidden_retribution_t21_4p' )
                 end
+                if PTR and buff.avenging_wrath_crit.up then removeBuff( "avenging_wrath_crit" ) end
                 if talent.righteous_verdict.enabled then applyBuff( 'righteous_verdict' ) end
                 if level < 115 and equipped.whisper_of_the_nathrezim then applyBuff( 'whisper_of_the_nathrezim', 4 ) end
                 if talent.divine_judgment.enabled then addStack( 'divine_judgment', 15, 1 ) end

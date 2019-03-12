@@ -5,6 +5,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_
     },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120},
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHAR_ORC,
     },
@@ -47,7 +48,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_
         id = 12515,
         anyone = true,
     },
-    range = {110},
     items = {
         {
             type = "quest",
@@ -106,6 +106,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHA
     name = BTWQUESTS_MAGHAR_ORC,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120},
     alternatives = {
         BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_IRON_DWARVES,
     },
@@ -148,7 +149,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHA
         id = 12518,
         anyone = true,
     },
-    range = {110},
     items = {
         {
             type = "quest",
@@ -239,6 +239,389 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHA
         },
     },
 })
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_KUL_TIRAN, {
+    name = { -- Allegiance of Kul Tiras
+        type = "quest",
+        id = 53720,
+    },
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
+    prerequisites = {
+        {
+            type = "achievement",
+            id = 12891,
+            anyone = true,
+        },
+        {
+            type = "achievement",
+            id = 13467,
+            anyone = true,
+        },
+        {
+            type = "reputation",
+            id = 2160,
+            standing = 8,
+            completed = {
+                type = "achievement",
+                id = 12951,
+                anyone = true,
+            },
+        },
+    },
+    active = {
+        type = "quest",
+        id = 54706,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 53720,
+    },
+    items = {
+        {
+            type = "quest",
+            id = 54706,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55039,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55043,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54708,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54721,
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54723,
+            x = 2,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54725,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54726,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54727,
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54728,
+            x = 2,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54729,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54730,
+            x = 2,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54732,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54731,
+            x = 2,
+            connections = {
+                3, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55136,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54733,
+            x = 4,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54734,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54735,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54851,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53720,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI, {
+    name = { -- Allegiance of the Zandalari
+        type = "quest",
+        id = 53719,
+    },
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_KUL_TIRAN,
+    },
+    restrictions = {
+        {
+            type = "faction",
+            id = BTWQUESTS_FACTION_ID_HORDE,
+        },
+    },
+    prerequisites = {
+        {
+            type = "achievement",
+            id = 12479,
+            anyone = true,
+        },
+        {
+            type = "achievement",
+            id = 13466,
+            anyone = true,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            standing = 8,
+            completed = {
+                type = "achievement",
+                id = 12950,
+                anyone = true,
+            },
+        },
+    },
+    active = {
+        type = "quest",
+        id = 53831,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 53719,
+    },
+    items = {
+        {
+            type = "quest",
+            id = 53831,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53823,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53824,
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53826,
+            x = 2,
+            connections = {
+                2, 3, 4, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54419,
+            connections = {
+                1, 2, 3, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54925,
+            x = 1,
+            connections = {
+                3, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54301,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54300,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53825,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53827,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53828,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54031,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54033,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54032,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54034,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53830,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53719,
+            x = 3,
+        },
+    },
+})
 
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES, {
     name = BTWQUESTS_ALLIED_RACES,
@@ -251,6 +634,14 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHAR_ORC,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_KUL_TIRAN,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI,
         },
     },
 })

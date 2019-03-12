@@ -1,0 +1,11 @@
+----- AUTO GENERATED - DO NOT EDIT
+
+if GetLocale() ~= "koKR" then
+    return
+end
+
+BTWQUESTS_MAGHAR_ORC = "마그하르 오크"
+BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "나이트 엘프 '밤 전사' 외형"
+BTWQUESTS_THE_WAR_CAMPAIGN = "전쟁 대장정"
+BTWQUESTS_THE_WAR_CAMPAIGN_8_1 = "전쟁 대장정: 다자알로 전투"
+BTWQUESTS_WARFRONT_THE_BATTLE_FOR_DARKSHORE = "격전지: 격전의 어둠해안"

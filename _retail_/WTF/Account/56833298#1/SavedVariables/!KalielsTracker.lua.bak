@@ -6,6 +6,7 @@ KalielsTrackerDB = {
 	},
 	["profileKeys"] = {
 		["Shanyt - Argent Dawn"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -13,7 +14,7 @@ KalielsTrackerDB = {
 			["yOffset"] = 0,
 			["anchorPoint"] = "TOPLEFT",
 			["filterAuto"] = {
-				nil, -- [1]
+				"zone", -- [1]
 				"zone", -- [2]
 			},
 			["addonPetTracker"] = true,

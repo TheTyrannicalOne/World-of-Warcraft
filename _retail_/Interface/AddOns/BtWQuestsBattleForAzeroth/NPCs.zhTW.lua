@@ -173,6 +173,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [125922] = {
         name = "塞罗德修士",
     },
+    [126065] = {
+        name = "希尔瓦娜斯·风行者",
+    },
     [126066] = {
         name = "伊崔格",
     },

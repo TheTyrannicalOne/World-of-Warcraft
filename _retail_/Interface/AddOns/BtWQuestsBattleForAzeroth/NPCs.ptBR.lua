@@ -5,6 +5,9 @@ if GetLocale() ~= "ptBR" then
 end
 
 BtWQuestsDatabase:UpdateNPCsTable({
+    [5164] = {
+        name = "Grumnus Mold'aço",
+    },
     [16802] = {
         name = "Lor'themar Theron",
     },
@@ -307,6 +310,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [126039] = {
         name = "Mag'ash, o Venenoso",
+    },
+    [126065] = {
+        name = "Grande Dama Sylvana Correventos",
     },
     [126066] = {
         name = "Eitrigg",
@@ -1106,6 +1112,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [134702] = {
         name = "Netinho Sorriso",
     },
+    [134711] = {
+        name = "Grande Dama Sylvana Correventos",
+    },
     [134720] = {
         name = "Leo Matoso",
     },
@@ -1511,6 +1520,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [138924] = {
         name = "Holger Nash",
     },
+    [139061] = {
+        name = "Nathanos Arauto da Praga",
+    },
+    [139062] = {
+        name = "Lilian Voss",
+    },
     [139069] = {
         name = "Imediato Rubrens",
     },
@@ -1519,6 +1534,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [139089] = {
         name = "Guarda de Tenervau",
+    },
+    [139098] = {
+        name = "Tomás Zelão",
+    },
+    [139101] = {
+        name = "Lilian Voss",
+    },
+    [139102] = {
+        name = "Rexxar",
     },
     [139568] = {
         name = "Magíster Umbric",
@@ -1550,11 +1574,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [140048] = {
         name = "Artur Alísio",
     },
+    [140105] = {
+        name = "Patrulheiro Sombrio",
+    },
     [140176] = {
         name = "Nathanos Arauto da Praga",
     },
     [140258] = {
         name = "Shandris Plumaluna",
+    },
+    [140484] = {
+        name = "Capitã Amália Rocha",
+    },
+    [140485] = {
+        name = "Nathanos Arauto da Praga",
+    },
+    [140487] = {
+        name = "Tomás Zelão",
     },
     [140590] = {
         name = "Capitão Grezz'ko",
@@ -1583,11 +1619,26 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141555] = {
         name = "Baine Casco Sangrento",
     },
+    [141602] = {
+        name = "Tomás Zelão",
+    },
     [141603] = {
         name = "Mallory Capucho",
     },
+    [141643] = {
+        name = "Patiscante do Leito Marinho",
+    },
+    [141644] = {
+        name = "Nathanos Arauto da Praga",
+    },
+    [141672] = {
+        name = "Marinheiro Afogado",
+    },
     [141769] = {
         name = "Marília Capucho",
+    },
+    [141815] = {
+        name = "Marinheiro Afogado",
     },
     [141952] = {
         name = "Escornante Jovem",
@@ -1597,6 +1648,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [142651] = {
         name = "Lucília Capelo",
+    },
+    [142721] = {
+        name = "Dalton Karn",
     },
     [142930] = {
         name = "Haraldo Serpecida",
@@ -1628,6 +1682,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [143871] = {
         name = "Encarregada Engrebotão",
     },
+    [143878] = {
+        name = "Riz Sujismundo",
+    },
     [143908] = {
         name = "Corpo Mutilado",
     },
@@ -1639,6 +1696,192 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [144152] = {
         name = "Moira Thaurissan",
+    },
+    [145005] = {
+        name = "Elite dos Andarilhos",
+    },
+    [145015] = {
+        name = "Lor'themar Theron",
+    },
+    [145357] = {
+        name = "Dori'thur",
+    },
+    [145411] = {
+        name = "Grande Dama Sylvana Correventos",
+    },
+    [145422] = {
+        name = "Rexxar",
+    },
+    [145423] = {
+        name = "Tomás Zelão",
+    },
+    [145462] = {
+        name = "Brann Barbabronze",
+    },
+    [145464] = {
+        name = "Conselheiro Belgrum",
+    },
+    [145580] = {
+        name = "Grã-senhora Jaina Proudmore",
+    },
+    [145593] = {
+        name = "Rosaline Madeira",
+    },
+    [145632] = {
+        name = "Okri Carrapeta",
+    },
+    [145751] = {
+        name = "Príncipe Mercador Gallywix",
+    },
+    [145793] = {
+        name = "Lady Liadrin",
+    },
+    [145816] = {
+        name = "G.M.O.D",
+    },
+    [146010] = {
+        name = "Patrulheira Sombria Lyana",
+    },
+    [146011] = {
+        name = "Varok Saurfang",
+    },
+    [146012] = {
+        name = "Zekhan",
+    },
+    [146013] = {
+        name = "Patrulheira Sombria Alina",
+    },
+    [146050] = {
+        name = "Maiev Cantonegro",
+    },
+    [146073] = {
+        name = "Príncipe Mercador Gallywix",
+    },
+    [146323] = {
+        name = "Nathanos Arauto da Praga",
+    },
+    [146324] = {
+        name = "Retalhador Blix",
+    },
+    [146373] = {
+        name = "Maiev Cantonegro",
+    },
+    [146374] = {
+        name = "Shandris Plumaluna",
+    },
+    [146375] = {
+        name = "Sira Velaluna",
+    },
+    [146462] = {
+        name = "Berserker da Horda",
+    },
+    [146536] = {
+        name = "Fogo-fátuo Perdido",
+    },
+    [146601] = {
+        name = "Sira Velaluna",
+    },
+    [146623] = {
+        name = "G.M.O.D",
+    },
+    [146654] = {
+        name = "Grande Dama Sylvana Correventos",
+    },
+    [146791] = {
+        name = "Patrulheira Sombria",
+    },
+    [146806] = {
+        name = "Patrulheira Sombria Lyana",
+    },
+    [146921] = {
+        name = "Princesa Talanji",
+    },
+    [146931] = {
+        name = "Rexxar",
+    },
+    [146937] = {
+        name = "Patrulheira Sombria",
+    },
+    [146939] = {
+        name = "Embaixatriz Fiaurora",
+    },
+    [146982] = {
+        name = "Grã-senhora Jaina Proudmore",
+    },
+    [146988] = {
+        name = "Cavador Golad",
+    },
+    [147075] = {
+        name = "General Rakera",
+    },
+    [147088] = {
+        name = "Arcanista Valtrois",
+    },
+    [147135] = {
+        name = "Nathanos Arauto da Praga",
+    },
+    [147148] = {
+        name = "Carlota",
+    },
+    [147149] = {
+        name = "Morton Engrenaldo",
+    },
+    [147151] = {
+        name = "Kelsey Fagulhaço",
+    },
+    [147155] = {
+        name = "Mathiaz",
+    },
+    [147210] = {
+        name = "Patrulheira Sombria Lyana",
+    },
+    [147228] = {
+        name = "Grong",
+    },
+    [147233] = {
+        name = "Rokhan",
+    },
+    [147293] = {
+        name = "Defensor Da'kani",
+    },
+    [147297] = {
+        name = "Zekhan",
+    },
+    [147311] = {
+        name = "Morton Engrenaldo",
+    },
+    [147519] = {
+        name = "Kelsey Fagulhaço",
+    },
+    [147819] = {
+        name = "Mestre de Espadas Telaamon",
+    },
+    [147842] = {
+        name = "Grã-senhora Jaina Proudmore",
+    },
+    [147843] = {
+        name = "Mestre Mathias Shaw",
+    },
+    [147844] = {
+        name = "Mestre de Espadas Telaamon",
+    },
+    [147885] = {
+        name = "Anduin Wrynn",
+    },
+    [148015] = {
+        name = "Taelia Fordragon",
+    },
+    [148339] = {
+        name = "Mathiaz",
+    },
+    [149143] = {
+        name = "Nathanos Arauto da Praga",
+    },
+    [149471] = {
+        name = "Patrulheira Sombria Velonara",
+    },
+    [149612] = {
+        name = "Shandris Plumaluna",
     },
     [244983] = {
         name = "Relógio de Bolso Sujo",

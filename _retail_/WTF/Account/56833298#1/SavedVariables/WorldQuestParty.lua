@@ -4,8 +4,8 @@ WQPartyVars = {
 	["leavePartyPrompt"] = true,
 	["channel"] = 1,
 	["FrameLoc"] = {
-		["y"] = -155.833038330078,
-		["x"] = 11.6666927337647,
+		["y"] = 311.085418701172,
+		["x"] = 4.62266540527344,
 		["point"] = "LEFT",
 		["relativePoint"] = "LEFT",
 	},

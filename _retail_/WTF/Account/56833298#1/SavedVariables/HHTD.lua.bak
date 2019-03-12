@@ -4,6 +4,9 @@ HHTD_SavedVariables = {
 		["Shanyt - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
+		["Vancard - Zul'jin"] = {
+			["settingsMigrated"] = false,
+		},
 	},
 	["namespaces"] = {
 		["Announcer"] = {
@@ -13,11 +16,12 @@ HHTD_SavedVariables = {
 		["NPH"] = {
 		},
 	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+	},
 	["global"] = {
 		["settingsMigrated"] = false,
 		["oldNameEnableState"] = 0,
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 	},
 }

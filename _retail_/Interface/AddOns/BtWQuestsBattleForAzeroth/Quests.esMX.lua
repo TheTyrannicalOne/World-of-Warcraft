@@ -5,6 +5,9 @@ if GetLocale() ~= "esMX" then
 end
 
 BtWQuestsDatabase:UpdateQuestsTable({
+    [40537] = {
+        name = "Firma sangrienta",
+    },
     [44785] = {
         name = "La hora del té",
     },
@@ -1700,6 +1703,60 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [49569] = {
         name = "Río abajo",
     },
+    [49570] = {
+        name = "Un comienzo pedregoso",
+    },
+    [49571] = {
+        name = "Excavaciones del pasado",
+    },
+    [49572] = {
+        name = "El Santuario del Mar",
+    },
+    [49573] = {
+        name = "El Santuario del Manto de la Noche",
+    },
+    [49574] = {
+        name = "El Santuario de Tormentas",
+    },
+    [49575] = {
+        name = "Tol Dagor: Joya de las mareas",
+    },
+    [49576] = {
+        name = "Prospección santificada",
+    },
+    [49577] = {
+        name = "Bajo la superficie",
+    },
+    [49581] = {
+        name = "Dunas soleadas",
+    },
+    [49582] = {
+        name = "Atal'Dazar: No todo lo que brilla...",
+    },
+    [49583] = {
+        name = "Lo pasado, pisado",
+    },
+    [49584] = {
+        name = "El capítulo faltante",
+    },
+    [49585] = {
+        name = "Un comienzo pedregoso",
+    },
+    [49586] = {
+        name = "Excavaciones del pasado",
+    },
+    [49587] = {
+        name = "El Santuario de Naturaleza",
+    },
+    [49588] = {
+        name = "El Santuario de las Arenas",
+    },
+    [49589] = {
+        name = "El Santuario del Alba",
+    },
+    [49599] = {
+        name = "El capítulo faltante",
+    },
     [49615] = {
         name = "La confianza de un rey",
     },
@@ -1747,6 +1804,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [49681] = {
         name = "Tikita",
+    },
+    [49694] = {
+        name = "Un drusto conocerte",
     },
     [49703] = {
         name = "Casa Canto Tormenta",
@@ -1931,6 +1991,30 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [49871] = {
         name = "Contra la marea",
     },
+    [49873] = {
+        name = "Escritos de sacrificio",
+    },
+    [49874] = {
+        name = "Al pie de la letra",
+    },
+    [49876] = {
+        name = "La travesía del desierto",
+    },
+    [49877] = {
+        name = "Templo de Sethraliss: Un favor literario",
+    },
+    [49878] = {
+        name = "Protección de la pluma",
+    },
+    [49879] = {
+        name = "Roce con la muerte",
+    },
+    [49881] = {
+        name = "El último verso",
+    },
+    [49882] = {
+        name = "Prueba de plumas",
+    },
     [49884] = {
         name = "La luz azul de la esperanza",
     },
@@ -2002,6 +2086,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [49941] = {
         name = "Procesamiento óseo.",
+    },
+    [49943] = {
+        name = "Firma sangrienta",
+    },
+    [49944] = {
+        name = "Un drusto conocerte",
+    },
+    [49946] = {
+        name = "La travesía del desierto",
     },
     [49949] = {
         name = "No-muertos no bienvenidos",
@@ -2147,6 +2240,60 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50111] = {
         name = "¡Tótems, tótems, tótems!",
     },
+    [50112] = {
+        name = "Que arroje la primera piedra",
+    },
+    [50113] = {
+        name = "Extracción ocular",
+    },
+    [50114] = {
+        name = "Interrogatorio hostil",
+    },
+    [50115] = {
+        name = "Cambio de escenario",
+    },
+    [50116] = {
+        name = "Una solución posible",
+    },
+    [50117] = {
+        name = "Un cóctel mortal",
+    },
+    [50118] = {
+        name = "Tiro de piedra",
+    },
+    [50119] = {
+        name = "Compuesto químico",
+    },
+    [50120] = {
+        name = "Receta para el éxito",
+    },
+    [50121] = {
+        name = "Que arroje la primera piedra",
+    },
+    [50122] = {
+        name = "Extracción ocular",
+    },
+    [50123] = {
+        name = "Una receta para la eternidad",
+    },
+    [50124] = {
+        name = "Cambio de escenario",
+    },
+    [50125] = {
+        name = "Una solución posible",
+    },
+    [50126] = {
+        name = "Un cóctel mortal",
+    },
+    [50127] = {
+        name = "Tiro de piedra",
+    },
+    [50128] = {
+        name = "Compuesto químico",
+    },
+    [50129] = {
+        name = "Receta para el éxito",
+    },
     [50133] = {
         name = "Aplasta hierbas",
     },
@@ -2254,6 +2401,36 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [50268] = {
         name = "Una gota de sabor",
+    },
+    [50270] = {
+        name = "En las profundidades del núcleo",
+    },
+    [50271] = {
+        name = "Arrebato",
+    },
+    [50272] = {
+        name = "Mensajes de la tierra",
+    },
+    [50274] = {
+        name = "Forja titánica",
+    },
+    [50275] = {
+        name = "Lluvia de yunques",
+    },
+    [50276] = {
+        name = "Una receta para la eternidad",
+    },
+    [50277] = {
+        name = "Interrogatorio hostil",
+    },
+    [50278] = {
+        name = "En las profundidades del núcleo",
+    },
+    [50279] = {
+        name = "Lluvia de yunques",
+    },
+    [50288] = {
+        name = "La elección de Therazane",
     },
     [50297] = {
         name = "La cabeza del enemigo",
@@ -4571,6 +4748,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53602] = {
         name = "Adaptaciones tácticas",
     },
+    [53719] = {
+        name = "La lealtad de los zandalari",
+    },
+    [53720] = {
+        name = "La lealtad de Kul Tiras",
+    },
     [53725] = {
         name = "Un pueblo devastado",
     },
@@ -4589,8 +4772,77 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53738] = {
         name = "La defensa de Quel'Danas",
     },
+    [53783] = {
+        name = "En las dunas",
+    },
     [53791] = {
         name = "El orgullo de los sin'dorei",
+    },
+    [53802] = {
+        name = "Persuasión sethrak",
+    },
+    [53805] = {
+        name = "Un de-sastre temporal",
+    },
+    [53806] = {
+        name = "Sin límites",
+    },
+    [53807] = {
+        name = "Una puntada a tiempo",
+    },
+    [53810] = {
+        name = "El hilo cortado",
+    },
+    [53813] = {
+        name = "Manos a la obra",
+    },
+    [53815] = {
+        name = "¿Qué le sucedió a Saffy Flivvers?",
+    },
+    [53816] = {
+        name = "Se requiere algo de reensamblaje",
+    },
+    [53817] = {
+        name = "¿Qué le sucedió a Grizzek Llavesilbo?",
+    },
+    [53818] = {
+        name = "Relorización",
+    },
+    [53819] = {
+        name = "Regreso al nido",
+    },
+    [53820] = {
+        name = "Está en un lugar mejor",
+    },
+    [53821] = {
+        name = "Está muerto, Jastor",
+    },
+    [53823] = {
+        name = "El séquito de una reina",
+    },
+    [53824] = {
+        name = "El rito de reyes y reinas",
+    },
+    [53825] = {
+        name = "El nuevo Concilio zanchuli",
+    },
+    [53826] = {
+        name = "La instigadora entre nosotros",
+    },
+    [53827] = {
+        name = "El Concilio ha hablado",
+    },
+    [53828] = {
+        name = "La mirada de los loa",
+    },
+    [53830] = {
+        name = "La reina de los zandalari",
+    },
+    [53831] = {
+        name = "Una celebración real",
+    },
+    [53833] = {
+        name = "Ventura vengativa",
     },
     [53835] = {
         name = "¿Habrá algo de valor?",
@@ -4625,6 +4877,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53847] = {
         name = "Vientos susurrados",
     },
+    [53848] = {
+        name = "Las llaves de Vol'dun",
+    },
     [53849] = {
         name = "Esperanza fugaz",
     },
@@ -4643,11 +4898,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53856] = {
         name = "La furia de la Horda",
     },
+    [53858] = {
+        name = "Ponte en sus zapatos",
+    },
+    [53866] = {
+        name = "Si el zapato calza...",
+    },
+    [53868] = {
+        name = "Sutura de las heridas del tiempo",
+    },
+    [53869] = {
+        name = "Matar el tiempo",
+    },
     [53879] = {
         name = "Limpieza de la finca",
     },
     [53880] = {
         name = "Máquinas de guerra y azerita",
+    },
+    [53881] = {
+        name = "Cortados con la misma tijera",
     },
     [53882] = {
         name = "Escrituras en la pared",
@@ -4682,11 +4952,32 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53936] = {
         name = "Zurra a los zapadores",
     },
+    [53937] = {
+        name = "La Ub3r-Llave",
+    },
+    [53938] = {
+        name = "Un de-sastre temporal",
+    },
+    [53940] = {
+        name = "Una puntada a tiempo",
+    },
     [53941] = {
         name = "Un meca para un goblin",
     },
     [53942] = {
         name = "El meca indicado para el trabajo",
+    },
+    [53947] = {
+        name = "En las dunas",
+    },
+    [53948] = {
+        name = "Ventura vengativa",
+    },
+    [53949] = {
+        name = "La Ub3r-Llave",
+    },
+    [53962] = {
+        name = "Cortados con la misma tijera",
     },
     [53973] = {
         name = "Carga a la batalla",
@@ -4709,8 +5000,38 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53990] = {
         name = "Aun en la noche más oscura",
     },
+    [53993] = {
+        name = "Una voz en el viento",
+    },
+    [53995] = {
+        name = "El curtidor tauren",
+    },
+    [53996] = {
+        name = "De buena madera",
+    },
+    [53997] = {
+        name = "Sexto sentido",
+    },
+    [53998] = {
+        name = "Exhumación",
+    },
+    [53999] = {
+        name = "Los hilos que atan",
+    },
+    [54000] = {
+        name = "Un cachito de tu corazón",
+    },
+    [54001] = {
+        name = "Allá vamos",
+    },
+    [54002] = {
+        name = "Todas las piezas juntas",
+    },
     [54004] = {
         name = "Caso de pruebas 1: Meca vs. Mekkatorque",
+    },
+    [54005] = {
+        name = "Gajes de los drust",
     },
     [54007] = {
         name = "Póliza de seguro",
@@ -4726,6 +5047,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54028] = {
         name = "Meca contra nave de guerra",
+    },
+    [54031] = {
+        name = "La mirada de los loa: Krag'wa",
+    },
+    [54032] = {
+        name = "La mirada de los loa: Pa'ku",
+    },
+    [54033] = {
+        name = "La mirada de los loa: Gonk",
+    },
+    [54034] = {
+        name = "La mirada de los loa: Bwonsamdi",
     },
     [54041] = {
         name = "Sin sobrevivientes",
@@ -4822,6 +5155,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54157] = {
         name = "Nadie queda atrás",
+    },
+    [54161] = {
+        name = "Gajes de los drust",
     },
     [54163] = {
         name = "A fin de cuentas",
@@ -4940,6 +5276,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54282] = {
         name = "Batalla de Dazar'alor",
     },
+    [54300] = {
+        name = "Crisis de fe",
+    },
+    [54301] = {
+        name = "La piedad de Talanji",
+    },
     [54302] = {
         name = "La caída de Zuldazar",
     },
@@ -4970,6 +5312,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54418] = {
         name = "El meca de la muerte",
     },
+    [54419] = {
+        name = "Pacificación de masas",
+    },
     [54421] = {
         name = "Bestias domadas",
     },
@@ -4997,13 +5342,256 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54703] = {
         name = "Correo urgente",
     },
+    [54706] = {
+        name = "Hecho en Kul Tiras",
+    },
+    [54708] = {
+        name = "A la vista",
+    },
+    [54721] = {
+        name = "No tengo edad para esto",
+    },
+    [54723] = {
+        name = "A cubrirse",
+    },
+    [54725] = {
+        name = "Criaturas de las profundidades",
+    },
+    [54726] = {
+        name = "Marco de trabajo",
+    },
+    [54727] = {
+        name = "Trabajo en equipo",
+    },
+    [54728] = {
+        name = "La madera embrujada",
+    },
+    [54729] = {
+        name = "Las Colinas Lóbregas",
+    },
+    [54730] = {
+        name = "La influencia de Gorak Tul",
+    },
+    [54731] = {
+        name = "El equilibrio de todas las cosas",
+    },
+    [54732] = {
+        name = "¡Suelta eso!",
+    },
+    [54733] = {
+        name = "Una Wright en apuros",
+    },
+    [54734] = {
+        name = "El llamado de Doriana",
+    },
+    [54735] = {
+        name = "Una tripulación digna",
+    },
     [54754] = {
         name = "Por la reina",
     },
     [54787] = {
         name = "Mascarada",
     },
+    [54851] = {
+        name = "Bendición de las mareas",
+    },
     [54871] = {
         name = "Estamos en camino",
+    },
+    [54925] = {
+        name = "¡Herejía!",
+    },
+    [54930] = {
+        name = "Liberación mecánica",
+    },
+    [54938] = {
+        name = "La ayuda de un hermano",
+    },
+    [54939] = {
+        name = "Terco como un Barbabronce",
+    },
+    [54940] = {
+        name = "La necesidad es la MADRE",
+    },
+    [54958] = {
+        name = "Un encuentro fugaz",
+    },
+    [54959] = {
+        name = "Bajo llave",
+    },
+    [54960] = {
+        name = "Un amargo reencuentro",
+    },
+    [54964] = {
+        name = "Un boleto de ida al corazón",
+    },
+    [54997] = {
+        name = "Atrapado en altamar",
+    },
+    [54999] = {
+        name = "Con banderas falsas",
+    },
+    [55028] = {
+        name = "Es trabajo para un chatarrero...",
+    },
+    [55031] = {
+        name = "Es trabajo para un chatarrero...",
+    },
+    [55033] = {
+        name = "Un freno a Aspafresno",
+    },
+    [55039] = {
+        name = "Carpintero de barcos maestro",
+    },
+    [55043] = {
+        name = "Historias de pescadores y velas lejanas",
+    },
+    [55044] = {
+        name = "No mates al mensajero",
+    },
+    [55045] = {
+        name = "El guardián de mi hermano",
+    },
+    [55047] = {
+        name = "Asegurar Fuerte Guerracolmillo",
+    },
+    [55048] = {
+        name = "Juegos de espías",
+    },
+    [55049] = {
+        name = "Problemas de comunicación",
+    },
+    [55050] = {
+        name = "¿Podría ver su boleto?",
+    },
+    [55051] = {
+        name = "Una demostración de poder",
+    },
+    [55087] = {
+        name = "La tormenta se cierne",
+    },
+    [55088] = {
+        name = "Perdido en el campo",
+    },
+    [55089] = {
+        name = "Un espía y medio",
+    },
+    [55090] = {
+        name = "Una congregación de enemigos",
+    },
+    [55116] = {
+        name = "Consigue una pista",
+    },
+    [55117] = {
+        name = "Correspondencia enigmática",
+    },
+    [55118] = {
+        name = "Cabos sueltos",
+    },
+    [55119] = {
+        name = "¡Reportándose!",
+    },
+    [55124] = {
+        name = "Subsanando errores",
+    },
+    [55136] = {
+        name = "Horrores perros",
+    },
+    [55171] = {
+        name = "Espía contra espía",
+    },
+    [55177] = {
+        name = "Costuras desgarradas",
+    },
+    [55179] = {
+        name = "Represalias coordinadas",
+    },
+    [55182] = {
+        name = "Reensamblaje forzoso",
+    },
+    [55183] = {
+        name = "En busca de terreno elevado",
+    },
+    [55185] = {
+        name = "¡Escucha con atención!",
+    },
+    [55188] = {
+        name = "Costuras desgarradas",
+    },
+    [55214] = {
+        name = "Puntos y puntadas",
+    },
+    [55216] = {
+        name = "La audición",
+    },
+    [55217] = {
+        name = "Deuda saldada",
+    },
+    [55218] = {
+        name = "Cuero preciado de Sheza",
+    },
+    [55219] = {
+        name = "Una visita a la base",
+    },
+    [55220] = {
+        name = "Pesca de profundidad",
+    },
+    [55221] = {
+        name = "Lo siento en los huesos",
+    },
+    [55222] = {
+        name = "Hora de hacer bullicio",
+    },
+    [55223] = {
+        name = "Instrumentos de destrucción",
+    },
+    [55227] = {
+        name = "La artesana de los eones",
+    },
+    [55228] = {
+        name = "La audición",
+    },
+    [55229] = {
+        name = "Deuda saldada",
+    },
+    [55230] = {
+        name = "Cuero preciado de Telonis",
+    },
+    [55231] = {
+        name = "El otro Danzaespíritus",
+    },
+    [55232] = {
+        name = "La amenaza de Mevris",
+    },
+    [55233] = {
+        name = "Lo siento en los huesos",
+    },
+    [55234] = {
+        name = "Hora de hacer bullicio",
+    },
+    [55235] = {
+        name = "Instrumentos de destrucción",
+    },
+    [55585] = {
+        name = "Un comienzo prometedor",
+    },
+    [55586] = {
+        name = "Pulido y encerado",
+    },
+    [55590] = {
+        name = "Reparaciones sagradas",
+    },
+    [55592] = {
+        name = "Un comienzo prometedor",
+    },
+    [55594] = {
+        name = "Pulido y encerado",
+    },
+    [55596] = {
+        name = "Reparaciones sagradas",
+    },
+    [55635] = {
+        name = "Una voz en el viento",
     },
 })

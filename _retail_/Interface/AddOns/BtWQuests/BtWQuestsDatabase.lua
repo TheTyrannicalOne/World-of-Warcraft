@@ -603,7 +603,8 @@ local function CheckStatusCount(amount, item)
     local lessthan = item.lessthan and true or false
     local morethan = item.morethan and true or false
     local notequals = item.notequals and true or false
-    local equals = (lessthan == false and morethan == false and notequals == false)
+    local equals = item.equals and true or false
+    local morethanorequals = not lessthen and not morethan and not notequals and not equals
 
     if lessthan and amount < count then
         return true
@@ -612,6 +613,8 @@ local function CheckStatusCount(amount, item)
     elseif notequals and amount ~= count then
         return true
     elseif equals and amount == count then
+        return true
+    elseif morethanorequals and amount >= count then
         return true
     end
 
@@ -723,7 +726,17 @@ BtWQuests_CheckItemRequirement = function (item, character)
     elseif item.type == "mount" then
         return select(11, C_MountJournal.GetMountInfoByID(item.id))
     elseif item.type == "profession" then
-        return character:HasProfession(item.id)
+        if item.level then
+            local level, maxLevel = character:GetSkillInfo(item.id)
+            return level >= item.level
+        else
+            local level, maxLevel = character:GetSkillInfo(item.id)
+            if level ~= 0 then
+                return true
+            else
+                return character:HasProfession(item.id) -- Fallback
+            end
+        end
     elseif item.type == "timezone" then
         return BtWQuests_GetTimeZone(character:GetRealm()) == item.timezone
     elseif item.type == "time" then
@@ -796,11 +809,12 @@ BtWQuests_GetItemName = function (item, character)
             return select(2, GetAchievementInfo(item.id or item.ids[1]))
         end
     elseif item.type == "profession" then
-        if BTWQUESTS_PROFESSION_MAP[item.id or item.ids[1]] ~= nil then
-            return BTWQUESTS_PROFESSION_MAP[item.id or item.ids[1]]
+        local name = C_TradeSkillUI.GetTradeSkillDisplayName(item.id or item.ids[1])
+        if item.level then
+            return string.format(BTWQUESTS_SKILL_LEVEL, item.level, name or item.id or item.ids[1])
+        else
+            return name or item.id or item.ids[1]
         end
-
-        return item.id or item.ids[1]
     elseif item.type == "pet" then
         return C_PetJournal.GetPetInfoBySpeciesID(item.id or item.ids[1])
     elseif item.type == "time" then

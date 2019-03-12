@@ -1,21 +1,6 @@
-3/5 02:37:03.116  Voice Log Initialize.
-3/5 02:37:03.116  VoiceProxy attempting to listen on 127.0.0.1:6724
-3/5 02:37:03.513  WoW client has connected to proxy
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice speaker settings initialization in progress
-3/5 02:37:03.842  |subsystem=BNL_Voice|msg=[20190305T02:37:03] {4848} WRN: Voice mic settings initialization in progress
-3/5 03:16:43.888  VoiceProxy CloseProxy request from client.
-3/5 03:16:43.888  VoiceProxy shutdown requested.
-3/5 03:16:48.897  Voice Log Destroy.
+3/11 20:41:55.841  Voice Log Initialize.
+3/11 20:41:55.841  VoiceProxy attempting to listen on 127.0.0.1:6724
+3/11 20:42:03.879  WoW client has connected to proxy
+3/12 01:07:51.344  VoiceProxy CloseProxy request from client.
+3/12 01:07:51.344  VoiceProxy shutdown requested.
+3/12 01:07:56.349  Voice Log Destroy.

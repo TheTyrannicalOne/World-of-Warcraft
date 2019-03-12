@@ -54,13 +54,13 @@ MasterPlanAG = {
 			["lastCacheTime"] = 1462930208,
 			["class"] = "SHAMAN",
 			["summary"] = {
-				["tt3"] = true,
-				["ti1"] = 118530,
 				["ti3"] = 127855,
+				["tt1"] = true,
+				["tt3"] = true,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["tt1"] = true,
+				["ti1"] = 118530,
 			},
 			["faction"] = "Horde",
 		},
@@ -73,35 +73,6 @@ MasterPlanAG = {
 		["Vancard"] = {
 			["class"] = "MAGE",
 			["faction"] = "Horde",
-		},
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["curOil"] = 72875,
-			["summary"] = {
-				["lastOilTime"] = 1551668092,
-				["inProgress"] = {
-					[262] = 1551675279,
-					[580] = 1551703566,
-					[189] = 1551675792,
-					[566] = 1551696895,
-					[559] = 1551696900,
-					[174] = 1551678361,
-					[745] = 1551732892,
-					[381] = 1551704072,
-				},
-				["ti3"] = 127854,
-				["ti2"] = 122486,
-				["tt1"] = 1550876848,
-				["ti1"] = 118531,
-				["tt3"] = 1551012955,
-				["tt2"] = 1551015955,
-			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1551671748,
-			["curRes"] = 6806,
-			["class"] = "WARRIOR",
 		},
 	},
 	["Black Dragonflight"] = {
@@ -126,6 +97,32 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 		},
 	},
-	["IgnoreRewards"] = {
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["faction"] = "Horde",
+			["summary"] = {
+				["lastOilTime"] = 1552269659,
+				["tt2"] = 1552181170,
+				["tt3"] = 1552194098,
+				["ti1"] = 118531,
+				["tt1"] = 1552111692,
+				["ti3"] = 127854,
+				["inProgress"] = {
+					[276] = 1552284796,
+					[402] = 1552291067,
+					[261] = 1552283869,
+					[399] = 1552302369,
+					[132] = 1552270381,
+					[745] = 1552334459,
+					[128] = 1552273577,
+				},
+				["ti2"] = 122486,
+			},
+			["curOil"] = 74190,
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 5780,
+			["lastCacheTime"] = 1552269676,
+		},
 	},
 }

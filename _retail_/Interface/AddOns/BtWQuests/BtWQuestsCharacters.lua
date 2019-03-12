@@ -95,6 +95,10 @@ function BtWQuestsCharactersCharacterMixin:HasProfession(profession)
     return self.t.professions[profession] and true or false
 end
 
+function BtWQuestsCharactersCharacterMixin:GetSkillInfo(skillID)
+    return unpack((self.t.skills or {})[skillID] or {0, 0})
+end
+
 function BtWQuestsCharactersCharacterMixin:IsQuestActive(id)
     return self.t.questsActive[id] and true or false
 end
@@ -267,6 +271,11 @@ function BtWQuestsCharactersPlayerMixin:GetSex()
     return UnitSex("player")
 end
 
+function BtWQuestsCharactersPlayerMixin:GetSkillInfo(skillID)
+    local _, level, maxLevel = C_TradeSkillUI.GetTradeSkillLineInfoByID(skillID)
+    return level, maxLevel
+end
+
 function BtWQuestsCharactersPlayerMixin:GetFactionInfoByID(faction)
     local factionName, _, standing, barMin, barMax, value = GetFactionInfoByID(faction)
 
@@ -425,10 +434,18 @@ function BtWQuestsCharacters:UpdatePlayer()
     end
 
     local professions = {}
-    
     local professionIndexes = {GetProfessions()}
     for _,index in ipairs(professionIndexes) do
         professions[select(7, GetProfessionInfo(index))] = true
+    end
+
+    local skills = {}
+    local skillIDs = C_TradeSkillUI.GetAllProfessionTradeSkillLines()
+    for _,skillID in ipairs(skillIDs) do
+        local _, level, maxLevel = C_TradeSkillUI.GetTradeSkillLineInfoByID(skillID)
+        if level ~= 0 then
+            skills[skillID] = {level, maxLevel}
+        end
     end
 
     character.name = name
@@ -442,6 +459,7 @@ function BtWQuestsCharacters:UpdatePlayer()
     character.race = select(2, UnitRace("player"))
     character.level = UnitLevel("player")
     character.professions = professions
+    character.skills = skills
     character.reputations = reputations
     if character.ignoredChains == nil then
         character.ignoredChains = BtWQuests_Settings and BtWQuests_Settings.ignoredChains or {}

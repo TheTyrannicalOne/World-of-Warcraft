@@ -1176,7 +1176,8 @@ AllTheThings.L = {
 		
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
-		[-489] = "War Chest",
+		[-488] = "War Chest",													-- Daily War Chest
+		[-489] = "Weekly PVP Chest",											-- Weekly Conquest Point Cap Chest
 		[-490] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth  Season 1
 		[-491] = "Tarot Cards",
 		[-492] = "Illusions",
@@ -1281,6 +1282,9 @@ AllTheThings.L = {
 		
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
+
+-- Weapon Sets
+		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
 
 -- Other Sets
 		[-3157] = string.format(PLAYER_V_PLAYER_SEASON, 2),						-- Player vs. Player (Battle for Azeroth Season 2)
@@ -2289,6 +2293,7 @@ AllTheThings.L = {
 		[179697] = "Arena Treasure Chest",
 		[180448] = "Wanted Poster: Deathclasp",
 		[180503] = "Sandy Cookbook",
+		[180691] = "Scarab Coffer",
 		[180794] = "Journal of Jandice Barov",
 		[180918] = "Wanted: Thaelis the Hungerer",
 		[181011] = "Magister Duskwither's Journal",
@@ -2330,6 +2335,7 @@ AllTheThings.L = {
 		[187559] = "Horde Bonfire",
 		[187564] = "Alliance Bonfire",
 		[187565] = "Elder Atkanok",
+		[187674] = "Ith'rix's Hardened Carapace",
 		[187851] = "Cultist Shrine",
 		[187905] = "Massive Glowing Egg",
 		[187916] = "Alliance Bonfire",
@@ -3259,5 +3265,6 @@ AllTheThings.L = {
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
 		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation for Ulduar broke a number of Hard Mode loot tables.|r", "Ulduar Hard Mode Loot (45)"}; -- 45
+		{2, "|CFFFF0000This item is likely available from Incursions while under max level.|r", "Incursion Loot (46)"}; -- 46
 	};
 };

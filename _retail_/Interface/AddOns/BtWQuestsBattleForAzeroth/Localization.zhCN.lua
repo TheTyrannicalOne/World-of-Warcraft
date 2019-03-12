@@ -1,0 +1,10 @@
+----- AUTO GENERATED - DO NOT EDIT
+
+if GetLocale() ~= "zhCN" then
+    return
+end
+
+BTWQUESTS_MAGHAR_ORC = "玛格汉兽人"
+BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "“月夜战神”暗夜精灵自定义选项"
+BTWQUESTS_THE_WAR_CAMPAIGN = "阵营战役"
+BTWQUESTS_THE_WAR_CAMPAIGN_8_1 = "阵营战役: 达萨罗之战"
