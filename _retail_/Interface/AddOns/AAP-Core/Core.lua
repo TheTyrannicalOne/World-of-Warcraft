@@ -582,7 +582,7 @@ AAP.CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			if (CurStep and AAP.QuestStepList and AAP.QuestStepList[AAP.ActiveMap]) then
 				steps = AAP.QuestStepList[AAP.ActiveMap][CurStep]
 			end
-			if (AAP1[AAP.Realm][AAP.Name]["Settings"]["CutScene"] == 1 and (steps and not steps["Dontskipvid"])) then
+			if (AAP1[AAP.Realm][AAP.Name]["Settings"]["CutScene"] == 1 and (steps and not steps["Dontskipvid"]) and (AAP.ActiveQuests and not AAP.ActiveQuests[52042])) then
 				AAP.BookingList["SkipCutscene"] = 1
 			end
 		end

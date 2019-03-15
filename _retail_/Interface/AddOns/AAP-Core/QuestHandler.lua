@@ -1334,6 +1334,9 @@ local function AAP_PrintQStep()
 			if (AAPExtralk == 129) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Enter Dungeon.")
 			end
+			if (AAPExtralk == 130) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Chop down trees to spawn snipers")
+			end
 			AAP.QuestList.QuestFrames["FS"..LineNr]["Button"]:Hide()
 			AAP.QuestList.QuestFrames[LineNr]:Show()
 			local aapwidth = AAP.QuestList.QuestFrames["FS"..LineNr]:GetStringWidth()
@@ -2670,19 +2673,19 @@ local function AAP_UpdateMapId()
 	end
 ---- Vanilla - Horde -----------
 	if (AAP.Faction == "Horde" and AAP.Level == 20) then
-		if (AAP.ActiveMap == 1 and AAP.Race == "MagharOrc") then
+		if (AAP.ActiveMap == 85 and AAP.Race == "MagharOrc") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
 				LoadAddOn("AAP-Vanilla")
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-MagharOrc"
-		elseif (AAP.ActiveMap == 1 and AAP.Race == "HighmountainTauren") then
+		elseif (AAP.ActiveMap == 85 and AAP.Race == "HighmountainTauren") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
 				LoadAddOn("AAP-Vanilla")
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-HighmountainTauren"
-		elseif (AAP.ActiveMap == 1 and AAP.Race == "Nightborne") then
+		elseif (AAP.ActiveMap == 85 and AAP.Race == "Nightborne") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
 				LoadAddOn("AAP-Vanilla")
 			end
@@ -2691,7 +2694,7 @@ local function AAP_UpdateMapId()
 		end
 	end
 	if (AAP.Faction == "Horde" and AAP.Level > 19 and AAP.Level < 60) then
-		if (AAP.ActiveMap == 1) then
+		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
 				LoadAddOn("AAP-Vanilla")
 			end
@@ -2978,14 +2981,14 @@ local function AAP_UpdateMapId()
 --------------------------------
 ---- TBC - WotLK - Horde -------
 	if (AAP.Faction == "Horde" and AAP.Level > 59 and AAP.Level < 80) then
-		if (AAP.ActiveMap == 1 and IsQuestFlaggedCompleted(11585) == false) then
+		if (AAP.ActiveMap == 85 and IsQuestFlaggedCompleted(11585) == false) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
 				LoadAddOn("AAP-TBC-WotLK")
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-60to80"
 		end
-		if (AAP.ActiveMap == 1 and IsQuestFlaggedCompleted(12792)) then
+		if (AAP.ActiveMap == 85 and IsQuestFlaggedCompleted(12792)) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
 				LoadAddOn("AAP-TBC-WotLK")
 			end
@@ -3247,7 +3250,7 @@ local function AAP_UpdateMapId()
 --------------------------------
 ---- Cata - MoP - Horde --------
 	if (AAP.Faction == "Horde" and AAP.Level > 79 and AAP.Level < 90) then
-		if (AAP.ActiveMap == 1) then
+		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
 				LoadAddOn("AAP-Cata-MoP")
 			end
@@ -3429,7 +3432,7 @@ local function AAP_UpdateMapId()
 			end
 			AAP.ActiveMap = "18-90-100"
 		end
-		if (AAP.ActiveMap == 1) then
+		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
 				LoadAddOn("AAP-WoD")
 			end
@@ -3582,7 +3585,7 @@ local function AAP_UpdateMapId()
 			end
 			AAP.ActiveMap = "18-100-110"
 		end
-		if (AAP.ActiveMap == 1) then
+		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
 				LoadAddOn("AAP-Legion")
 			end
@@ -3728,7 +3731,7 @@ local function AAP_UpdateMapId()
 			end
 			AAP.ActiveMap = "249-110"
 		end
-		if (AAP.ActiveMap == 1 and (AAP.ActiveQuests[53372] or IsQuestFlaggedCompleted(53372) == true)) then
+		if (AAP.ActiveMap == 85 and (AAP.ActiveQuests[53372] or IsQuestFlaggedCompleted(53372) == true)) then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
 				LoadAddOn("AAP-BfA")
 			end
@@ -4455,8 +4458,29 @@ AAP_QH_EventFrame:RegisterEvent ("PLAYER_REGEN_DISABLED")
 AAP_QH_EventFrame:RegisterEvent ("CHAT_MSG_ADDON")
 AAP_QH_EventFrame:RegisterEvent ("CHAT_MSG_COMBAT_XP_GAIN")
 AAP_QH_EventFrame:RegisterEvent ("UNIT_ENTERED_VEHICLE")
+AAP_QH_EventFrame:RegisterEvent ("UNIT_AURA")
 
 AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
+	if (event=="UNIT_AURA") then
+		local arg1, arg2, arg3, arg4 = ...;
+		local CurStep = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap]
+		local steps
+		if (CurStep and AAP.QuestStepList and AAP.QuestStepList[AAP.ActiveMap]) then
+			steps = AAP.QuestStepList[AAP.ActiveMap][CurStep]
+		end
+		if (arg1 == "player" and steps and steps["Debuffcount"]) then
+			for i=1,20 do
+				local name, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, nameplateShowPersonal, spellId = UnitBuff("player", i)
+				if (spellId and name and count) then
+					if (spellId == 69704 and count == 5) then
+						AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap] + 1
+						AAP.BookingList["UpdateQuest"] = 1
+						AAP.BookingList["PrintQStep"] = 1
+					end
+				end
+			end
+		end
+	end
 	if (event=="CHAT_MSG_COMBAT_XP_GAIN") then
 		local CurStep = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap]
 		local steps

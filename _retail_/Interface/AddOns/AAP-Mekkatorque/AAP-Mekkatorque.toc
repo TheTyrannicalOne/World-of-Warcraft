@@ -1,0 +1,9 @@
+## Interface: 80100
+## X-Min-Interface: 80100
+
+## Title: Azeroth Auto Mekkatorque
+## Notes: Addon for High Tinker Mekkatorque Heroic
+## Author: Zyrrael
+## Version: 1.001
+## SavedVariables: AAM_Mek
+AAP-Mekkatorque.lua

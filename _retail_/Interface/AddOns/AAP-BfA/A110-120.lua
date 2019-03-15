@@ -20005,6 +20005,7 @@ AAP.QuestStepList2060 = {
 			["PickUp"] = {
 				48948, -- [1]
 			},
+			["BreadCrum"] = 48948,
 			["TT"] = {
 				["y"] = -79.1,
 				["x"] = 2138.6,
@@ -22065,7 +22066,7 @@ AAP.QuestStepList2060 = {
 			},
 		}, -- [2]
 		{
-			["UseHS"] = 48948,
+			["UseHS"] = 48793,
 			["TT"] = {
 				["y"] = -1004.3,
 				["x"] = 1753,
@@ -22076,6 +22077,7 @@ AAP.QuestStepList2060 = {
 		}, -- [16]
 
 		{
+			["BreadCrum"] = 48948,
 			["Done"] = {
 				48948, -- [1]
 			},
@@ -26768,6 +26770,10 @@ for AAP_index,AAP_value in pairs(AAP.QuestStepList2060) do
 end
 AAP.QuestStepList2060 = nil
 	AAP.Breadcrums = {
+		[48948] = {
+			48793,
+			48792,
+        },
 		[50158] = {
 			50134,
 			50135,
