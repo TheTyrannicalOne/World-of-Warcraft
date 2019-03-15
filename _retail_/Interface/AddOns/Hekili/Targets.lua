@@ -23,7 +23,6 @@ local lastFullCount = 0
 local formatKey = ns.formatKey
 local orderedPairs = ns.orderedPairs
 local FeignEvent = ns.FeignEvent
-local RegisterEvent = ns.RegisterEvent
 
 local tinsert, tremove, twipe = table.insert, table.remove, table.wipe
 
@@ -525,11 +524,16 @@ do
 
 
     function Hekili:GetGreatestTTD()
-        local time = 0
+        local time, validUnit = 0, false
 
         for k, v in pairs( db ) do
-            if v.n > 0 then time = max( time, ceil( v.lastHealth / v.rate ) ) end
+            if v.n > 3 then
+                time = max( time, ceil( v.lastHealth / v.rate ) )
+                validUnit = true
+            end
         end
+
+        if not validUnit then return FOREVER end
 
         return time
     end
@@ -603,7 +607,6 @@ do
 
         C_Timer.After( 0.5, UpdateTTDs )
     end
-
 
     C_Timer.After( 0.5, UpdateTTDs )
 

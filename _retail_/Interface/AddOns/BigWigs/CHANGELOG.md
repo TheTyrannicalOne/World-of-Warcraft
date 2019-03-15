@@ -1,11 +1,15 @@
 # BigWigs
 
-## [v139](https://github.com/BigWigsMods/BigWigs/tree/v139) (2019-03-11)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v138.1...v139)
+## [v141](https://github.com/BigWigsMods/BigWigs/tree/v141) (2019-03-15)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v140...v141)
 
 - bump version  
-- BattleOfDazaralor/Mekkatorque: Add more mythic timings, closes #616  
-- BattleOfDazaralor/Mekkatorque: Add more heroic timings.  
-- BattleOfDazaralor/Conclave: Don't play the Mind Wipe sound twice if you're a dispeller and it's on you.  
-- BattleOfDazaralor/Opulence: Play a sound for dispellers when Hex of Lethargy is applied.  
-- BattleOfDazaralor/Jadefire: Play a sound for dispellers when Searing Embers is applied.  
+- Update option files  
+- BattleOfDazaralor/Rastakhan: Make seal of purification faster, closes #614  
+- Update esES (#621)  
+- BattleOfDazaralor/Opulence: Show a message when hex is removed from you.  
+- BattleOfDazaralor/Rastakhan: Show stack warnings for Deathly Withering when in the death realm.  
+- BattleOfDazaralor/Champion: Cancel the disorient bar if you kill the crusader mid cast.  
+- BattleOfDazaralor/Rastakhan: Cancel the leap countdown and show a message when Roka dies mid cast.  
+- BattleOfDazaralor/Jaina: Add a VerifyEnable to prevent re-enabling after winning.  
+- BattleOfDazaralor/Blockade: Add Crackling Lightning warning.  

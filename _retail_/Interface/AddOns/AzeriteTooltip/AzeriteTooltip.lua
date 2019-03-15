@@ -551,8 +551,11 @@ end
 function AzeriteTooltip:SetPaperDollAzerite(self)
     local button = self
     local id = self:GetID();
+    local textureName = GetInventoryItemTexture("player", id);
 
-    if (id == 1 or id == 3 or id == 5) and self.hasItem then
+    local hasItem = textureName ~= nil;
+
+    if (id == 1 or id == 3 or id == 5) and hasItem then
 
 	    local azeriteEmpoweredItemLocation = ItemLocation:CreateFromEquipmentSlot(id)
 

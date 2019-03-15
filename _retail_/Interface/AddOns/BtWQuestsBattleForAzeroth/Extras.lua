@@ -1636,13 +1636,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_SOMETHING_SO
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION,
         },
-        {
-            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+        { -- Not sure this is intended
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_PART_4,
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1,
         },
         {
-            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_PART_4,
         },

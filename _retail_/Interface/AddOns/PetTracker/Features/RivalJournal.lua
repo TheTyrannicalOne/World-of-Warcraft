@@ -62,7 +62,7 @@ function Journal:Startup()
 	self.Map.Destination = Addon.RivalPin()
 
 	for i = 1, 4 do
-		local loot = CreateFrame('Button', '$parentLoot' .. i, self.Card, ADDON..'Reward')
+		local loot = CreateFrame('ItemButton', '$parentLoot' .. i, self.Card, ADDON..'Reward')
 		loot:SetPoint('TOPRIGHT', -58 + 45 * (i % 2), - 45 * ceil(i/2))
 		loot.Count:Show()
 

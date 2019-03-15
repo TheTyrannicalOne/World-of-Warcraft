@@ -17,13 +17,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_
     },
     prerequisites = {
         {
-            name = {
-                type = "achievement",
-                id = 12510,
-            },
             type = "achievement",
-            id = 13089,
-            criteria = 2,
+            id = 12510,
             anyone = true,
         },
         {
@@ -33,8 +28,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_
                 standing = 8,
             },
             type = "achievement",
-            id = 13089,
-            criteria = 1,
+            id = 12954,
             anyone = true,
         },
     },
@@ -118,13 +112,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHA
     },
     prerequisites = {
         {
-            name = {
-                type = "achievement",
-                id = 12509,
-            },
             type = "achievement",
-            id = 13092,
-            criteria = 2,
+            id = 12509,
             anyone = true,
         },
         {
@@ -134,8 +123,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHA
                 standing = 8,
             },
             type = "achievement",
-            id = 13092,
-            criteria = 1,
+            id = 12957,
             anyone = true,
         },
     },
@@ -266,14 +254,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
             anyone = true,
         },
         {
-            type = "reputation",
-            id = 2160,
-            standing = 8,
-            completed = {
-                type = "achievement",
-                id = 12951,
-                anyone = true,
+            name = {
+                type = "reputation",
+                id = 2160,
+                standing = 8,
             },
+            type = "achievement",
+            id = 12951,
+            anyone = true,
         },
     },
     active = {
@@ -282,8 +270,9 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
         status = {'active', 'completed'},
     },
     completed = {
-        type = "quest",
-        id = 53720,
+        type = "achievement",
+        id = 13163,
+        anyone = true,
     },
     items = {
         {
@@ -470,14 +459,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
             anyone = true,
         },
         {
-            type = "reputation",
-            id = 2103,
-            standing = 8,
-            completed = {
-                type = "achievement",
-                id = 12950,
-                anyone = true,
+            name = {
+                type = "reputation",
+                id = 2103,
+                standing = 8,
             },
+            type = "achievement",
+            id = 12950,
+            anyone = true,
         },
     },
     active = {
@@ -486,8 +475,9 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
         status = {'active', 'completed'},
     },
     completed = {
-        type = "quest",
-        id = 53719,
+        type = "achievement",
+        id = 13161,
+        anyone = true,
     },
     items = {
         {

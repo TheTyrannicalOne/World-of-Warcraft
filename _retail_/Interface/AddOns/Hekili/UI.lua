@@ -569,6 +569,7 @@ do
 
         PLAYER_TARGET_CHANGED = 1,
 
+        PLAYER_ENTERING_WORLD = 1,
         PLAYER_REGEN_ENABLED = 1,
         PLAYER_REGEN_DISABLED = 1,
 
@@ -605,22 +606,18 @@ do
             return 0
 
         elseif zoneType == "pvp" or zoneType == "arena" then
-            if not conf.visibility.advanced then
-                return conf.visibility.pvp.alpha
-            
-            else                
-                if conf.visibility.pvp.combat > 0 and UnitAffectingCombat( "player" ) then return conf.visibility.pvp.combat
-                elseif conf.visibility.pvp.target > 0 and UnitExists( "target" ) and not UnitIsDead( "target" ) and UnitCanAttack( "player", "target" ) then return conf.visibility.pvp.target
-                elseif conf.visibility.pvp.always > 0 then return conf.visibility.pvp.always end
+            if not conf.visibility.advanced then return conf.visibility.pvp.alpha end
 
-                return 0
-            end
-            
+            if conf.visibility.pvp.combat > 0 and state.combat > 0 then return conf.visibility.pvp.combat
+            elseif conf.visibility.pvp.target > 0 and UnitExists( "target" ) and not UnitIsDead( "target" ) and UnitCanAttack( "player", "target" ) then return conf.visibility.pvp.target
+            elseif conf.visibility.pvp.always > 0 then return conf.visibility.pvp.always end
+
+            return 0            
         end
 
         if not conf.visibility.advanced then return conf.visibility.pve.alpha end
         
-        if conf.visibility.pve.combat > 0 and UnitAffectingCombat( "player" ) then return conf.visibility.pve.combat
+        if conf.visibility.pve.combat > 0 and state.combat > 0 then return conf.visibility.pve.combat
         elseif conf.visibility.pve.target > 0 and UnitExists( "target" ) and not UnitIsDead( "target" ) and UnitCanAttack( "player", "target" ) then return conf.visibility.pve.target
         elseif conf.visibility.pve.always > 0 then return conf.visibility.pve.always end
 
@@ -666,9 +663,7 @@ do
     local pulseFlash = 0.5
 
     local oocRefresh = 0.5
-    local icRefresh = 0.2
-
-    local refreshPulse = 10
+    local icRefresh = 0.25
 
     local LRC = LibStub("LibRangeCheck-2.0")
     local LSF = SpellFlashCore
@@ -699,21 +694,7 @@ do
         local now = GetTime()
 
 
-        self.refreshTimer = self.refreshTimer - elapsed
-
-        local spec = Hekili.DB.profile.specs[ state.spec.id ]
-        local throttle = spec.throttleUpdates and ( 1 / spec.maxRefresh ) or 0
-        local refreshRate = max( throttle, state.combat == 0 and oocRefresh or icRefresh )
-
-        if not Hekili.UpdatedThisFrame and ( self.criticalUpdate and now - self.lastUpdate > throttle ) or self.refreshTimer < 0 then
-            Hekili:ProcessHooks( self.id )
-            self.criticalUpdate = false
-            self.lastUpdate = now
-            self.refreshTimer = refreshRate
-        end
-
-
-        self.recTimer = ( self.recTimer or 0 ) - elapsed
+        self.recTimer = self.recTimer - elapsed
 
         if self.NewRecommendations or self.recTimer < 0 then
             local alpha = self.alpha
@@ -773,8 +754,6 @@ do
                         else ActionButton_HideOverlayGlow( b ) end
                         b.glowing = false
                     end
-
-                    self.NewRecommendations = false
                 else
                     b:Hide()
                 end
@@ -788,7 +767,22 @@ do
 
             self:RefreshCooldowns()
 
+            self.NewRecommendations = false
             self.recTimer = 1
+        end
+
+
+        self.refreshTimer = self.refreshTimer - elapsed
+
+        local spec = Hekili.DB.profile.specs[ state.spec.id ]
+        local throttle = spec.throttleUpdates and ( 1 / spec.maxRefresh ) or ( 1 / 60 )
+        local refreshRate = max( throttle, state.combat == 0 and oocRefresh or icRefresh )
+
+        if Hekili.freshFrame and ( ( self.criticalUpdate and now - self.lastUpdate > throttle ) or self.refreshTimer < 0 ) then
+            Hekili:ProcessHooks( self.id )
+            self.criticalUpdate = false
+            self.lastUpdate = now
+            self.refreshTimer = refreshRate
         end
 
 
@@ -829,7 +823,7 @@ do
         end
 
 
-        self.rangeTimer = ( self.rangeTimer or 0 ) - elapsed
+        self.rangeTimer = self.rangeTimer - elapsed
 
         if self.rangeTimer < 0 then
             for i, b in ipairs( self.Buttons ) do
@@ -910,7 +904,7 @@ do
         end
 
         
-        self.flashTimer = ( self.flashTimer or 0 ) - elapsed
+        self.flashTimer = self.flashTimer - elapsed
 
         if self.flashTimer < 0 then
             if conf.flash.enabled and LSF then
@@ -1064,6 +1058,7 @@ do
             self.delayTimer = pulseDelay
         end        
     end
+    ns.cpuProfile.Display_OnUpdate = Display_OnUpdate
 
     local function Display_UpdateAlpha( self )
         if not self.Active then
@@ -1080,7 +1075,7 @@ do
             -- self:Deactivate()
             self:SetAlpha( 0 )
         else
-            if preAlpha == 0 and newAlpha > 0 then
+            if preAlpha == 0 and newAlpha > 0 then                
                 Hekili:ForceUpdate( "DISPLAY_ALPHA_CHANGED" )
             end
             self:SetAlpha( newAlpha )
@@ -1185,6 +1180,8 @@ do
 
         end
     end
+    ns.cpuProfile.Display_OnEvent = Display_OnEvent
+
 
     local function Display_Activate( self )
         if not self.Active then
@@ -1195,7 +1192,9 @@ do
 
             self.auraTimer = 0
             self.delayTimer = 0
+            self.flashTimer = 0
             self.glowTimer = 0
+            self.rangeTimer = 0
             self.recTimer = 0
             self.refreshTimer = 0
             self.targetTimer = 0
@@ -1460,7 +1459,7 @@ do
     end
 
 
-    function Hekili:ForceUpdate( event )
+    function Hekili:ForceUpdate( event, ... )
         for i, d in pairs( ns.UI.Displays ) do        
             d.criticalUpdate = true
         end

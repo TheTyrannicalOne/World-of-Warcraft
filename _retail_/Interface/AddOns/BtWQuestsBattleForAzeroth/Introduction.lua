@@ -5632,6 +5632,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PAR
     category = nil,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
     prerequisites = {
         {
             type = "chain",
@@ -5714,6 +5721,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PAR
     category = nil,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
     prerequisites = {
         {
             type = "chain",
@@ -5812,6 +5826,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_1
     category = nil,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_1,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
     prerequisites = {
         {
             type = "chain",
@@ -5893,6 +5914,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2
     category = nil,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_2,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
     prerequisites = {
         {
             type = "chain",

@@ -136,7 +136,6 @@ function MapFilter:ShowTrackingTypes()
 
       {PETS, true, title = true},
       {L.Species, true, set = 'HideSpecies'},
-			--{L.Battles, true, set = 'HideRivals', var = 'showTamers'},
 			{L.Battles, true, var = 'showTamers'},
 			{STABLES, true, set = 'HideStables'},
 

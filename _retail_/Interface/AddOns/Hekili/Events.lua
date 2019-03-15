@@ -64,7 +64,7 @@ function ns.StartEventHandler()
     end )
 
     events:SetScript( "OnUpdate", function( self, elapsed )
-        Hekili.UpdatedThisFrame = false
+        Hekili.freshFrame = true
         timerRecount = timerRecount - elapsed
 
         if timerRecount < 0 then
@@ -79,11 +79,10 @@ end
 
 
 function ns.StopEventHandler()
-
     events:SetScript( "OnEvent", nil )
     unitEvents:SetScript( "OnEvent", nil )
-    events:SetScript( "OnUpdate", nil )
 
+    events:SetScript( "OnUpdate", nil )
 end
 
 
@@ -112,7 +111,7 @@ end
 
 
 -- For our purposes, all UnitEvents are player/target oriented.
-ns.RegisterUnitEvent = function( event, handler, u1, u2 )
+ns.RegisterUnitEvent = function( event, handler )
 
     unitHandlers[ event ] = unitHandlers[ event ] or {}
     insert( unitHandlers[ event ], handler )
@@ -184,36 +183,37 @@ end
 RegisterEvent( "DISPLAY_SIZE_CHANGED", function () Hekili:BuildUI() end )
 
 
-local itemAuditComplete = false
+do    
+    local itemAuditComplete = false
 
-function ns.auditItemNames()
+    local auditItemNames = function ()
+        local failure = false
 
-    local failure = false
+        for key, ability in pairs( class.abilities ) do
+            if ability.recheck_name then
+                local name, link = GetItemInfo( ability.item )
 
-    for key, ability in pairs( class.abilities ) do
-        if ability.recheck_name then
-            local name, link = GetItemInfo( ability.item )
+                if name then
+                    ability.name = name
+                    ability.texture = nil
+                    ability.link = link
+                    ability.elem.name = name
+                    ability.elem.texture = select( 10, GetItemInfo( ability.item ) )
 
-            if name then
-                ability.name = name
-                ability.texture = nil
-                ability.link = link
-                ability.elem.name = name
-                ability.elem.texture = select( 10, GetItemInfo( ability.item ) )
-
-                class.abilities[ name ] = ability
-                ability.recheck_name = nil
-            else
-                failure = true
+                    class.abilities[ name ] = ability
+                    ability.recheck_name = nil
+                else
+                    failure = true
+                end
             end
         end
-    end
 
-    if failure then
-        C_Timer.After( 1, ns.auditItemNames )
-    else
-        ns.ReadKeybindings()
-        itemAuditComplete = true
+        if failure then
+            C_Timer.After( 1, ns.auditItemNames )
+        else
+            ns.ReadKeybindings()
+            itemAuditComplete = true
+        end
     end
 end
 
@@ -227,14 +227,13 @@ RegisterEvent( "PLAYER_ENTERING_WORLD", function ()
     ns.updateGear()
     ns.restoreDefaults( nil, true )
 
+    if state.combat == 0 and InCombatLockdown() then
+        state.combat = GetTime() - 0.01
+        Hekili:UpdateDisplayVisibility()
+    end
+
     Hekili:BuildUI()
 end )
-
---[[ RegisterEvent( "ACTIVE_TALENT_GROUP_CHANGED", function ()
-    Hekili:SpecializationChanged()
-    ns.checkImports()
-    ns.updateGear()
-end ) ]]
 
 
 RegisterUnitEvent( "PLAYER_SPECIALIZATION_CHANGED", function ( event, unit )
@@ -378,105 +377,129 @@ do
 
         loc:Clear()
     end
+
+    ns.cpuProfile.updatePowers = ns.updatePowers
 end
 
 
-local gearInitialized = false
+do
+    local gearInitialized = false
 
-function Hekili:UpdateUseItems()
-    local itemList = class.itemPack.lists.items
-    wipe( itemList )
+    function Hekili:UpdateUseItems()
+        local itemList = class.itemPack.lists.items
+        wipe( itemList )
 
-    if #state.items > 0 then
+        if #state.items > 0 then
+            for i, item in ipairs( state.items ) do
+                if not self:IsItemScripted( item ) then
+                    insert( itemList, {
+                        action = item,
+                        enabled = true,
+                        criteria = "( ! settings.boss || boss ) & " ..
+                            "( settings.targetMin = 0 || active_enemies >= settings.targetMin ) & " ..
+                            "( settings.targetMax = 0 || active_enemies <= settings.targetMax )"
+                    } )
+                end
+            end
+
+            self:LoadItemScripts()
+        end
+    end
+
+
+    local wasWearing = {}
+
+    function ns.updateGear()
+        for thing in pairs( state.set_bonus ) do
+            state.set_bonus[ thing ] = 0
+        end
+
+        wipe( wasWearing )
+
         for i, item in ipairs( state.items ) do
-            if not self:IsItemScripted( item ) then
-                insert( itemList, {
-                    action = item,
-                    enabled = true,
-                    criteria = "( ! settings.boss || boss ) & " ..
-                        "( settings.targetMin = 0 || active_enemies >= settings.targetMin ) & " ..
-                        "( settings.targetMax = 0 || active_enemies <= settings.targetMax )"
-                } )
+            wasWearing[i] = item
+        end
+
+        wipe( state.items )
+
+        for set, items in pairs( class.gear ) do
+            state.set_bonus[ set ] = 0
+            for item, _ in pairs( items ) do
+                if IsEquippedItem( GetItemInfo( item ) ) then
+                    state.set_bonus[ set ] = state.set_bonus[ set ] + 1
+                end
             end
         end
 
-        self:LoadItemScripts()
-        -- self:ForceUpdate( "UPDATE_USE_ITEMS" )
-    end
-end
+        local ItemBuffs = LibStub( "LibItemBuffs-1.0", true )
+        local T1 = GetInventoryItemID( "player", 13 )
 
+        if ItemBuffs and T1 then
+            local t1buff = ItemBuffs:GetItemBuffs( T1 )
 
-function ns.updateGear()
-    for thing in pairs( state.set_bonus ) do
-        state.set_bonus[ thing ] = 0
-    end
+            if type(t1buff) == 'table' then t1buff = t1buff[1] end
 
-    wipe( state.items )
+            class.auras.trinket1 = class.auras[ t1buff ]
+            state.trinket.t1.id = T1
+        else
+            state.trinket.t1.id = 0
+        end
 
-    for set, items in pairs( class.gear ) do
-        state.set_bonus[ set ] = 0
-        for item, _ in pairs( items ) do
-            if IsEquippedItem( GetItemInfo( item ) ) then
-                state.set_bonus[ set ] = state.set_bonus[ set ] + 1
+        local T2 = GetInventoryItemID( "player", 14 )
+
+        if ItemBuffs and T2 then
+            local t2buff = ItemBuffs:GetItemBuffs( T2 )
+
+            if type(t2buff) == 'table' then t2buff = t2buff[1] end
+
+            class.auras.trinket2 = class.auras[ t2buff ]
+            state.trinket.t2.id = T2
+        else
+            state.trinket.t2.id = 0
+        end
+
+        for i = 1, 19 do
+            local item = GetInventoryItemID( 'player', i )
+
+            if item then
+                state.set_bonus[ item ] = 1
+                local key = GetItemInfo( item )
+                if key then
+                    key = formatKey( key )
+                    state.set_bonus[ key ] = 1
+                    gearInitialized = true
+                end
+
+                local usable = class.itemMap[ item ]
+                if usable then insert( state.items, usable ) end
             end
         end
-    end
 
-    local ItemBuffs = LibStub( "LibItemBuffs-1.0", true )
-    local T1 = GetInventoryItemID( "player", 13 )
+        ns.updatePowers()
+        ns.updateTalents()
 
-    if ItemBuffs and T1 then
-        local t1buff = ItemBuffs:GetItemBuffs( T1 )
+        local sameItems = #wasWearing == #state.items
 
-        if type(t1buff) == 'table' then t1buff = t1buff[1] end
-
-        class.auras.trinket1 = class.auras[ t1buff ]
-        state.trinket.t1.id = T1
-    else
-        state.trinket.t1.id = 0
-    end
-
-    local T2 = GetInventoryItemID( "player", 14 )
-
-    if ItemBuffs and T2 then
-        local t2buff = ItemBuffs:GetItemBuffs( T2 )
-
-        if type(t2buff) == 'table' then t2buff = t2buff[1] end
-
-        class.auras.trinket2 = class.auras[ t2buff ]
-        state.trinket.t2.id = T2
-    else
-        state.trinket.t2.id = 0
-    end
-
-    for i = 1, 19 do
-        local item = GetInventoryItemID( 'player', i )
-
-        if item then
-            state.set_bonus[ item ] = 1
-            local key = GetItemInfo( item )
-            if key then
-                key = formatKey( key )
-                state.set_bonus[ key ] = 1
-                gearInitialized = true
+        if sameItems then
+            for i = 1, #state.items do
+                if wasWearing[i] ~= state.items[i] then
+                    sameItems = false
+                    break
+                end
             end
-
-            local usable = class.itemMap[ item ]
-            if usable then insert( state.items, usable ) end
         end
+
+        if not sameItems then
+            Hekili:UpdateUseItems()
+        end
+
+        if not gearInitialized then
+            C_Timer.After( 3, ns.updateGear )
+        else
+            ns.ReadKeybindings()
+        end
+
     end
-
-    ns.updatePowers()
-    ns.updateTalents()
-
-    Hekili:UpdateUseItems()
-
-    if not gearInitialized then
-        C_Timer.After( 3, ns.updateGear )
-    else
-        ns.ReadKeybindings()
-    end
-
 end
 
 
@@ -486,20 +509,16 @@ end )
 
 
 RegisterEvent( "PLAYER_REGEN_DISABLED", function ()
-    Hekili:UpdateDisplayVisibility()
     state.combat = GetTime() - 0.01
 end )
 
 
 RegisterEvent( "PLAYER_REGEN_ENABLED", function ()
-    ns.updateGear()
+    -- ns.updateGear()
     state.combat = 0
 
     state.swings.mh_actual = 0
     state.swings.oh_actual = 0
-
-    Hekili:UpdateDisplayVisibility()
-    Hekili:ExpireTTDs( true )
 end )
 
 
@@ -676,7 +695,6 @@ RegisterEvent( "PLAYER_TARGET_CHANGED", function( event )
     Hekili.ScrapeUnitAuras( "target", true )
     state.target.updated = false
 
-    -- Hekili.UpdateTTD( "target" )
     Hekili:ForceUpdate( event, true )
 end )
 
@@ -685,18 +703,13 @@ RegisterEvent( "PLAYER_STARTED_MOVING", function( event ) Hekili:ForceUpdate( ev
 RegisterEvent( "PLAYER_STOPPED_MOVING", function( event ) Hekili:ForceUpdate( event ) end )
 
 
-local function handleEnemyCasts( event, unit )
-    if UnitIsUnit( "target", unit ) then
-        Hekili:ForceUpdate( event, unit )
-    elseif UnitIsUnit( "player", unit ) and event == "UNIT_SPELLCAST_START" then
-        -- May want to force update here in case SPELL_CAST_START doesn't fire in CLEU.
-        Hekili:ForceUpdate( event, unit )
-    end
+local function HandleCasts( event, unit )
+    Hekili:ForceUpdate( event, unit )
 end 
 
-RegisterUnitEvent( "UNIT_SPELLCAST_START", handleEnemyCasts )
-RegisterUnitEvent( "UNIT_SPELLCAST_INTERRUPTED", handleEnemyCasts )
-RegisterUnitEvent( "UNIT_SPELLCAST_SUCCEEDED", handleEnemyCasts )
+RegisterUnitEvent( "UNIT_SPELLCAST_START", HandleCasts )
+RegisterUnitEvent( "UNIT_SPELLCAST_INTERRUPTED", HandleCasts )
+RegisterUnitEvent( "UNIT_SPELLCAST_SUCCEEDED", HandleCasts )
 
 
 local cast_events = {
