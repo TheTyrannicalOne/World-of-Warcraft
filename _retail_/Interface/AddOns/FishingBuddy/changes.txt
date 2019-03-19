@@ -1,4 +1,8 @@
-﻿Version 1.9.27
+﻿Version 1.9.28
+- Fix CurseForge #379 (zone lookup error)
+- Update libraries
+
+Version 1.9.27
 - Improve the detection of whether or not you can use the raft toy.
 
 Version 1.9.26a1
