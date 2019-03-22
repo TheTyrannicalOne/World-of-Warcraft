@@ -73,7 +73,6 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
-				["onlyOwnClassCustoms"] = false,
 				["showOnlyUpgrades"] = false,
 				["professionPowers"] = false,
 				["debug"] = false,
