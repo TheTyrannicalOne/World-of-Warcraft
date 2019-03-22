@@ -56,9 +56,13 @@ BtWQuestSettingsData = {
             value = "filterIgnored",
             default = false,
         },
+        {
+            name = "Spoiler free",
+            value = "hideSpoilers",
+            default = false,
+        },
     },
-    optionsByID = {
-    },
+    optionsByID = {},
     GetValue = function (self, id)
         if BtWQuests_Settings == nil then
             BtWQuests_Settings = {}
@@ -601,6 +605,7 @@ function BtWQuestsMixin:DisplayCurrentChain(scrollTo, zoom)
     chain:Show();
     
     -- chain.Scroll:SetCharacter(self:GetCharacter())
+    chain.Scroll:SetHideSpoilers(BtWQuestSettingsData:GetValue("hideSpoilers"))
     chain.Scroll:SetChain(self:GetChain(), scrollTo, zoom)
 
     ShowUIPanel(self)

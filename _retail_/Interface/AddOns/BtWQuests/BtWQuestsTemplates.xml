@@ -1246,6 +1246,12 @@
 						<Anchor point="LEFT" x="15" y="0"/>
 					</Anchors>
 				</FontString>
+				<FontString parentKey="SpoilerName" text="?????" inherits="GameFontNormal" justifyH="CENTER">
+					<Size x="120" y="0"/>
+					<Anchors>
+						<Anchor point="CENTER" x="0" y="0"/>
+					</Anchors>
+				</FontString>
 				<Texture parentKey="ActiveTexture" file="Interface\PVPFrame\PvPMegaQueue" alpha="0.5" alphaMode="ADD" hidden="true">
                     <Size x="164" y="38"/>
 					<Anchors>

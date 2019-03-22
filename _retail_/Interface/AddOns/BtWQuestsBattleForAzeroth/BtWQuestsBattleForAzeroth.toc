@@ -1,6 +1,6 @@
 ## Interface: 80100
 ## Title: BtWQuests: Battle for Azeroth
-## Version: 24
+## Version: 25
 ## Notes: Battle for Azeroth quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests

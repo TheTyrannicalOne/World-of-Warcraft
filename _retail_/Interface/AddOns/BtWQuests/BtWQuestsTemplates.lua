@@ -21,13 +21,17 @@ function BtWQuestsChainItemMixin:OnLoad()
     
     self.tooltip = BtWQuestsTooltip
 end
+function BtWQuestsChainItemMixin:SetHideSpoilers(value)
+    self.hideSpoilers = value
+end
+function BtWQuestsChainItemMixin:GetHideSpoilers()
+    return self.hideSpoilers
+end
 function BtWQuestsChainItemMixin:Set(item)
     self.item = item
 
     self.ForgottenAnim:Stop()
     self.ForgottenAnimQuick:Stop()
-
-    self.Name:SetText(item:GetName())
 
     local status = item:GetStatus()
     if item:IsBreadcrumb() and item:HasConnections() then
@@ -48,6 +52,10 @@ function BtWQuestsChainItemMixin:Set(item)
             status = "complete"
         end
     end
+
+    self.Name:SetText(item:GetName())
+    self.Name:SetShown(not self.hideSpoilers or status ~= nil)
+    self.SpoilerName:SetShown(not self.Name:IsShown())
 
     local tagID = item:GetTagID()
     local difficulty = item:GetDifficulty()
@@ -115,6 +123,10 @@ function BtWQuestsChainItemMixin:Update(item)
     self.ForgottenAnimQuick:Stop()
 
     self.Name:SetText(item:GetName())
+    if not self.hideSpoilers or status ~= nil then
+        self.Name:SetShown(true)
+        self.SpoilerName:SetShown(false)
+    end
     
     if self.status ~= status then
         if status == "complete" then
@@ -152,8 +164,10 @@ function BtWQuestsChainItemMixin:OnClick()
     end
 end
 function BtWQuestsChainItemMixin:OnEnter()
-    if self.item then
-        return self.item:OnEnter(self.item, self, self:GetChainView(), self:GetTooltip())
+    if not self.hideSpoilers or self.status ~= nil then
+        if self.item then
+            return self.item:OnEnter(self.item, self, self:GetChainView(), self:GetTooltip())
+        end
     end
 end
 function BtWQuestsChainItemMixin:OnLeave()
@@ -323,6 +337,12 @@ end
 function BtWQuestsChainViewMixin:GetTooltip()
     return BtWQuestsTooltip
 end
+function BtWQuestsChainViewMixin:SetHideSpoilers(value)
+    self.hideSpoilers = value
+end
+function BtWQuestsChainViewMixin:GetHideSpoilers()
+    return self.hideSpoilers
+end
 function BtWQuestsChainViewMixin:SelectFromLink(...)
     -- return self:GetParent():GetParent():SelectFromLink(...)
 end
@@ -444,13 +464,15 @@ function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOver
                 local itemButton = buttons[index] or self.itemPool:Acquire();
                 buttons[index] = itemButton
 
+                itemButton:SetHideSpoilers(self:GetHideSpoilers())
                 itemButton:Set(item)
 
                 -- Check if the item should be next
                 itemButton.IsNextAnim:Stop()
-                if itemButton.status == nil and itemButton.previousButtons ~= nil then
+
+                if itemButton.status == nil then-- and itemButton.previousButtons ~= nil then
                     local available = true
-                    for i,previous in ipairs(itemButton.previousButtons) do
+                    for i,previous in ipairs(itemButton.previousButtons or {}) do
                         if previous.status ~= "complete" then
                             available = false
                             break
@@ -460,6 +482,9 @@ function BtWQuestsChainViewMixin:AddButtons(chainID, xOffset, yOffset, asideOver
                     if available then
                         itemButton.ActiveTexture:Show()
                         itemButton.IsNextAnim:Play()
+                        
+                        itemButton.Name:SetShown(true)
+                        itemButton.SpoilerName:SetShown(false)
                     end
 
                     itemButton.previousButtons = nil

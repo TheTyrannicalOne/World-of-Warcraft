@@ -1,8 +1,11 @@
+local ACHIEVEMENT_TOOL_ID = 13516
+
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALCHEMY, {
-    name = { -- A Recipe for Success
-        type = "quest",
-        id = 50129,
-    },
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 1),
+    -- name = { -- A Recipe for Success
+    --     type = "quest",
+    --     id = 50129,
+    -- },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120},
@@ -184,11 +187,277 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALCHEMY, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENGINEERING, {
-    name = { -- The Ub3r-Spanner
-        type = "quest",
-        id = 53949,
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_BLACKSMITHING, {
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 2),
+    -- name = { -- Anvil's Away
+    --     type = "quest",
+    --     id = 50279,
+    -- },
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "profession",
+            id = 2437,
+            level = 150,
+        },
     },
+    active = {
+        type = "quest",
+        ids = {50123, 50276},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        ids = {50275, 50279},
+    },
+    items = {
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 50123,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 50276,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 50114,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 50277,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 50270,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 50278,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 50271,
+            x = 2,
+            connections = {
+                2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 50272,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 50274,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 50288,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 50275,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 50279,
+                },
+            },
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENCHANTING, {
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 3),
+    -- name = { -- What the Drust Knew
+    --     type = "quest",
+    --     id = 54161,
+    -- },
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "profession",
+            id = 2486,
+            level = 150,
+        },
+    },
+    active = {
+        type = "quest",
+        ids = {54005, 54161},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 54002,
+    },
+    items = {
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 54005,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54161,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 53993,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 55635,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53996,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53997,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53998,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53999,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54000,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54001,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54002,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENGINEERING, {
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 4),
+    -- name = { -- The Ub3r-Spanner
+    --     type = "quest",
+    --     id = 53949,
+    -- },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120},
@@ -323,10 +592,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENGINEERING,
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_INSCRIPTION, {
-    name = { -- Sacrificial Writes
-        type = "quest",
-        id = 49873,
-    },
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 5),
+    -- name = { -- Sacrificial Writes
+    --     type = "quest",
+    --     id = 49873,
+    -- },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
@@ -341,13 +611,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_INSCRIPTION,
             level = 150,
         },
     },
-    active = false,
+    active = {
+        type = "quest",
+        ids = {40537, 49943},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 49882,
+    },
     items = {
         {
-            x = 3,
-            connections = {
-                1, 
-            },
             variations = {
                 {
                     type = "quest",
@@ -362,12 +636,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_INSCRIPTION,
                     id = 49943,
                 },
             },
-        },
-        {
             x = 3,
             connections = {
-                1, 2, 
+                1, 
             },
+        },
+        {
             variations = {
                 {
                     type = "quest",
@@ -381,6 +655,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_INSCRIPTION,
                     type = "quest",
                     id = 49944,
                 },
+            },
+            x = 3,
+            connections = {
+                1, 2, 
             },
         },
         {
@@ -456,135 +734,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_INSCRIPTION,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENCHANTING, {
-    name = { -- What the Drust Knew
-        type = "quest",
-        id = 54161,
-    },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
-    range = {110,120},
-    prerequisites = {
-        {
-            type = "level",
-            level = 120,
-        },
-        {
-            type = "profession",
-            id = 2486,
-            level = 150,
-        },
-    },
-    active = {
-        type = "quest",
-        ids = {54005, 54161},
-        status = {'active', 'completed'},
-    },
-    completed = {
-        type = "quest",
-        id = 54002,
-    },
-    items = {
-        {
-            variations = {
-                {
-                    type = "quest",
-                    id = 54005,
-                    restrictions = {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                    },
-                },
-                {
-                    type = "quest",
-                    id = 54161,
-                },
-            },
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            variations = {
-                {
-                    type = "quest",
-                    id = 53993,
-                    restrictions = {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                    },
-                },
-                {
-                    type = "quest",
-                    id = 55635,
-                },
-            },
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 53996,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 53997,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 53998,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 53999,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 54000,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 54001,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 54002,
-            x = 3,
-        },
-    },
-})
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_JEWELCRAFTING, {
-    name = { -- A Rocky Start
-        type = "quest",
-        id = 49585,
-    },
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 6),
+    -- name = { -- A Rocky Start
+    --     type = "quest",
+    --     id = 49585,
+    -- },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
@@ -599,7 +754,15 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_JEWELCRAFTIN
             level = 150,
         },
     },
-    active = false,
+    active = {
+        type = "quest",
+        ids = {49570, 49585},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        ids = {49584, 49599},
+    },
     items = {
         {
             variations = {
@@ -838,10 +1001,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_JEWELCRAFTIN
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_LEATHERWORKING, {
-    name = { -- Instruments of Destruction
-        type = "quest",
-        id = 55223,
-    },
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 7),
+    -- name = { -- Instruments of Destruction
+    --     type = "quest",
+    --     id = 55223,
+    -- },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120,120},
@@ -1043,10 +1207,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_LEATHERWORKI
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_TAILORING, {
-    name = { -- Cut from the Same Cloth
-        type = "quest",
-        id = 53962,
-    },
+    name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_TOOL_ID, 8),
+    -- name = { -- Cut from the Same Cloth
+    --     type = "quest",
+    --     id = 53962,
+    -- },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120,120},
@@ -1205,137 +1370,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_TAILORING, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_BLACKSMITHING, {
-    name = { -- Anvil's Away
-        type = "quest",
-        id = 50279,
-    },
-    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
-    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
-    range = {110,120},
-    prerequisites = {
-        {
-            type = "level",
-            level = 120,
-        },
-        {
-            type = "profession",
-            id = 2437,
-            level = 150,
-        },
-    },
-    active = false,
-    items = {
-        {
-            variations = {
-                {
-                    type = "quest",
-                    id = 50123,
-                    restrictions = {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                    },
-                },
-                {
-                    type = "quest",
-                    id = 50276,
-                },
-            },
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            variations = {
-                {
-                    type = "quest",
-                    id = 50114,
-                    restrictions = {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                    },
-                },
-                {
-                    type = "quest",
-                    id = 50277,
-                },
-            },
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            variations = {
-                {
-                    type = "quest",
-                    id = 50270,
-                    restrictions = {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                    },
-                },
-                {
-                    type = "quest",
-                    id = 50278,
-                },
-            },
-            x = 3,
-            connections = {
-                1, 2, 
-            },
-        },
-        {
-            type = "quest",
-            id = 50271,
-            x = 2,
-            connections = {
-                2, 
-            },
-        },
-        {
-            type = "quest",
-            id = 50272,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 50274,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            type = "quest",
-            id = 50288,
-            x = 3,
-            connections = {
-                1, 
-            },
-        },
-        {
-            variations = {
-                {
-                    type = "quest",
-                    id = 50275,
-                    restrictions = {
-                        type = "faction",
-                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                    },
-                },
-                {
-                    type = "quest",
-                    id = 50279,
-                },
-            },
-            x = 3,
-        },
-    },
-})
 
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS, {
     name = BTWQUESTS_PROFESSIONS,
@@ -1347,15 +1381,19 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
         },
         {
             type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_BLACKSMITHING,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENCHANTING,
+        },
+        {
+            type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENGINEERING,
         },
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_INSCRIPTION,
-        },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ENCHANTING,
         },
         {
             type = "chain",
@@ -1368,10 +1406,6 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_PROFESSIONS,
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_TAILORING,
-        },
-        {
-            type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_BLACKSMITHING,
         },
     },
 })

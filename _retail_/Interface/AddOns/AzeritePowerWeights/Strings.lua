@@ -40,6 +40,9 @@ do -- enUS / enGB
 	L.ImportPopup_UpdatedScale = "Updated existing scale \"%s\"" -- %s = scaleName
 	L.ImportPopup_CreatedNewScale = "Imported new scale \"%s\"" -- %s = scaleName
 
+	L.MassImportPopup_Title = "Mass Import Scales"
+	L.MassImportPopup_Desc = "Importing multiple scales at once from string\nPress %1$sCtrl+V%2$s to paste string to the editbox and press %3$s" -- %1$s and %2$s are color codes and %3$s = _G.ACCEPT
+
 	L.CreatePopup_Title = "Create Scale"
 	L.CreatePopup_Desc = "Creating new scale. Select class and specialization from dropdown and then enter name for the new scale and press %1$s" -- %s = _G.ACCEPT
 	L.CreatePopup_Error_UnknownError = "ERROR: Something went wrong creating new scale \"%s\"!" -- %s = scaleName
@@ -58,11 +61,15 @@ do -- enUS / enGB
 	L.WeightEditor_VersionText = "Version %s" -- %s = version
 	L.WeightEditor_CreateNewText = "Create New"
 	L.WeightEditor_ImportText = "Import"
+	L.WeightEditor_MassImportText = "Mass Import"
 	L.WeightEditor_EnableScaleText = "Use this Scale"
 	L.WeightEditor_ExportText = "Export"
 	L.WeightEditor_RenameText = "Rename"
 	L.WeightEditor_DeleteText = "Delete"
 	L.WeightEditor_TooltipText = "Show in Tooltips"
+	L.WeightEditor_TimestampText_Created = "Created %s" -- %s DD.MM.YYYY
+	L.WeightEditor_TimestampText_Imported = "Imported %s" -- %s DD.MM.YYYY
+	L.WeightEditor_TimestampText_Updated = "Updated %s" -- %s DD.MM.YYYY
 	L.WeightEditor_CurrentScale = "Current scale: %s" -- %s current scaleName
 
 	L.PowersTitles_Class = "Class Powers"
@@ -81,9 +88,11 @@ do -- enUS / enGB
 	L.Config_SettingsSavedPerChar = "All these settings here are saved per character.\nCustom scales are shared between all characters."
 
 	L.Config_Scales_Title = "Scales list"
-	L.Config_Scales_Desc = "Following settings only affects the list of Default scales. All Custom scales will be always listed to every class."
+	--L.Config_Scales_Desc = "Following settings only affects the list of Default scales. All Custom scales will be always listed to every class."
 	L.Config_Scales_OwnClassDefaultsOnly = "List own class Default-scales only"
 	L.Config_Scales_OwnClassDefaultsOnly_Desc = "List Default-scales for your own class only, instead of listing all of them."
+	L.Config_Scales_OwnClassCustomsOnly = "List own class Custom-scales only"
+	L.Config_Scales_OwnClassCustomsOnly_Desc = "List Custom-scales for your own class only, instead of listing all of them."
 
 	L.Config_Importing_Title = "Importing"
 	L.Config_Importing_ImportingCanUpdate = "Importing can update existing scales"
@@ -126,14 +135,15 @@ do -- enUS / enGB
 	L.Slash_Error_Unkown = "ERROR: Something went wrong!"
 end
 
-if LOCALE == "deDE" then -- Sinusquell (39), Tiggi2702 (6), Vivan (2), pas06 (2), Cytoph (2), imna1975 (17)
+if LOCALE == "deDE" then -- Sinusquell (39), Tiggi2702 (5), Vivan (2), pas06 (2), Cytoph (1), imna1975 (17), Aurielqt (6)
 L["Config_Importing_ImportingCanUpdate"] = "Beim Importieren können vorhandene Skalierungen aktualisiert werden."
 L["Config_Importing_ImportingCanUpdate_Desc"] = "Wenn Sie eine Skalierung mit demselben Namen, derselben Klasse und Spezialisierung wie eine bereits vorhandene Skalierung importieren, wird die vorhandene Skalierung mit den neuen Gewichtungen aktualisiert, anstatt eine neue Skalierung zu erstellen. "
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Es kann mehrere Skalierungen mit demselben Namen geben, solange sie für verschiedene Spezialisierungen oder Klassen gelten. "
 L["Config_Importing_Title"] = "Importieren "
-L["Config_Scales_Desc"] = "Die folgenden Einstellungen betreffen nur die Liste der Standardskalierungen. Alle benutzerdefinierten Skalierungen werden immer für jede Klasse aufgelistet. "
+L["Config_Scales_OwnClassCustomsOnly"] = "Zeige benutzerdefinierte Skalierungen nur für die eigene Klasse"
+L["Config_Scales_OwnClassCustomsOnly_Desc"] = "Zeige benutzerdefinierte Skalierungen nur für deine eigene Klasse, statt alle aufzulisten."
 L["Config_Scales_OwnClassDefaultsOnly"] = "Zeige nur Standardskalierung für die eigene Klasse. "
-L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Zeige nur Standardskalierung für die eigene Klasse anstelle von allen anderen. "
+L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Zeige nur Standardskalierungen für die eigene Klasse anstelle von allen anderen. "
 L["Config_Scales_Title"] = "Skalierungsliste "
 L["Config_Score_AddItemLevelToScore"] = "Fügen Sie allen Ergebnissen eine Elementebene hinzu"
 L["Config_Score_AddItemLevelToScore_Desc"] = "Fügen Sie dem aktuellen Punktestand, dem aktuellen Potenzial und der maximalen Punktzahlberechnung den Elementstand Azerite hinzu."
@@ -141,18 +151,15 @@ L["Config_Score_AddPrimaryStatToScore"] = "Fügen Sie den Primär werten alle Er
 --[[Translation missing --]]
 --[[ L["Config_Score_AddPrimaryStatToScore_Desc"] = ""--]] 
 L["Config_Score_RelativeScore"] = "Zeigt relative Werte in Tooltips anstelle von absoluten Werten an"
---[[Translation missing --]]
---[[ L["Config_Score_RelativeScore_Desc"] = ""--]] 
+L["Config_Score_RelativeScore_Desc"] = "Statt absolute Werte in Tooltips anzuzeigen, berechne die relativen Werte verglichen zum aktuell ausgerüsteten Gegenstand und zeige sie in Prozent an."
 --[[Translation missing --]]
 --[[ L["Config_Score_ScaleByAzeriteEmpowered"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Config_Score_ScaleByAzeriteEmpowered_Desc"] = ""--]] 
 L["Config_Score_ShowOnlyUpgrades"] = "Zeige Tooltip Information nur bei Upgrades an"
---[[Translation missing --]]
---[[ L["Config_Score_ShowOnlyUpgrades_Desc"] = ""--]] 
+L["Config_Score_ShowOnlyUpgrades_Desc"] = "Zeige Skalierungswerte nur in Tooltips wenn es eine Aufwertung zum aktuell ausgerüsteten Gegenstand ist. Dies funktioniert nur wenn relative Werte aktiviert sind. "
 L["Config_Score_ShowTooltipLegend"] = "Zeige eine Legende in Tooltips an"
---[[Translation missing --]]
---[[ L["Config_Score_ShowTooltipLegend_Desc"] = ""--]] 
+L["Config_Score_ShowTooltipLegend_Desc"] = "Zeige eine Erinnerung für \"Aktuellen Punktestand / Aktuelles Potenzial / Maximaler Punktestand\" in Tooltips."
 L["Config_Score_Title"] = "Punkte"
 L["Config_SettingsAddonExplanation"] = "Dieses Addon berechnet \"Aktuelle Punktzahl\", \"Aktuelles Potenzial\" und \"Maximale Punktzahl\" für Azerite-Ausrüstung basierend auf den von Ihnen ausgewählten Waagen."
 L["Config_SettingsSavedPerChar"] = [=[Alle Einstellungen sind für den Charakter gespeichert. 
@@ -215,6 +222,10 @@ L["ImportPopup_Title"] = "Importiere Skalierung"
 L["ImportPopup_UpdatedScale"] = "Skalierung \"%s\" wurde aktualisiert"
 L["ItemToolTip_AzeriteLevel"] = "Azeritlevel: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "Aktuelle Wertung / Aktuell beste Wertung / Maximale Wertung"
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
 L["PowersScoreString"] = [=[Aktuelle Wertung: %1$s/%2$s
 Maximale Wertung: %3$s
 Azeritlevel: %4$d/%5$d]=]
@@ -243,7 +254,15 @@ L["WeightEditor_DeleteText"] = "Löschen"
 L["WeightEditor_EnableScaleText"] = "Benutze diese Skalierung"
 L["WeightEditor_ExportText"] = "Exportieren"
 L["WeightEditor_ImportText"] = "Importieren"
+--[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
 L["WeightEditor_RenameText"] = "Umbenennen"
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 L["WeightEditor_TooltipText"] = "Angezeigt im Tooltip"
 L["WeightEditor_VersionText"] = "Version %s"
 
@@ -254,7 +273,9 @@ L["Config_Importing_ImportingCanUpdate_Desc"] = "Cunado importes una escala con 
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Puede haber múltiples escalas con el mismo nombre mientras sean para diferentes especializaciones o clases."
 L["Config_Importing_Title"] = "Importando"
 --[[Translation missing --]]
---[[ L["Config_Scales_Desc"] = ""--]] 
+--[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Config_Scales_OwnClassDefaultsOnly"] = ""--]] 
 --[[Translation missing --]]
@@ -370,6 +391,10 @@ L["Config_Importing_Title"] = "Importando"
 --[[Translation missing --]]
 --[[ L["ItemToolTip_Legend"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["PowersScoreString"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["PowersTitles_Class"] = ""--]] 
@@ -420,7 +445,15 @@ L["Config_Importing_Title"] = "Importando"
 --[[Translation missing --]]
 --[[ L["WeightEditor_ImportText"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["WeightEditor_RenameText"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WeightEditor_TooltipText"] = ""--]] 
 --[[Translation missing --]]
@@ -437,7 +470,9 @@ elseif LOCALE == "esMX" then
 --[[Translation missing --]]
 --[[ L["Config_Importing_Title"] = ""--]] 
 --[[Translation missing --]]
---[[ L["Config_Scales_Desc"] = ""--]] 
+--[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Config_Scales_OwnClassDefaultsOnly"] = ""--]] 
 --[[Translation missing --]]
@@ -553,6 +588,10 @@ elseif LOCALE == "esMX" then
 --[[Translation missing --]]
 --[[ L["ItemToolTip_Legend"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["PowersScoreString"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["PowersTitles_Class"] = ""--]] 
@@ -603,7 +642,15 @@ elseif LOCALE == "esMX" then
 --[[Translation missing --]]
 --[[ L["WeightEditor_ImportText"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["WeightEditor_RenameText"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WeightEditor_TooltipText"] = ""--]] 
 --[[Translation missing --]]
@@ -615,7 +662,10 @@ L["Config_Importing_ImportingCanUpdate"] = "Importer peut metre au jour les éch
 L["Config_Importing_ImportingCanUpdate_Desc"] = "Quand vous importez une échelle avec les mêmes nom, classe et spécialisation qu'une échelle pré-définie, l'échelle pré-définie sera mise à jour avec les nouveaux poids au lieu qu'une nouvelle échelle soit créée."
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Il peut y avoir plusieurs échelles avec le même nom tant qu'elles sont pour des classes ou spécialisations différentes."
 L["Config_Importing_Title"] = "Import"
-L["Config_Scales_Desc"] = "Les réglages suivants n'affectent que la liste des échelles par défaut. Toutes les échelles personnalisées seront toujours listées pour toutes les classes."
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
 L["Config_Scales_OwnClassDefaultsOnly"] = "N'afficher que les échelles par défaut de votre classe"
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Cache les échelles par défaut qui ne correspondent pas à votre classe au lieu de toutes les afficher."
 L["Config_Scales_Title"] = "Liste des échelles"
@@ -709,6 +759,10 @@ L["ImportPopup_Title"] = "Importer l'échelle"
 --[[Translation missing --]]
 --[[ L["ItemToolTip_Legend"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["PowersScoreString"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["PowersTitles_Class"] = ""--]] 
@@ -759,7 +813,15 @@ L["ImportPopup_Title"] = "Importer l'échelle"
 --[[Translation missing --]]
 --[[ L["WeightEditor_ImportText"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["WeightEditor_RenameText"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WeightEditor_TooltipText"] = ""--]] 
 --[[Translation missing --]]
@@ -776,7 +838,9 @@ elseif LOCALE == "itIT" then
 --[[Translation missing --]]
 --[[ L["Config_Importing_Title"] = ""--]] 
 --[[Translation missing --]]
---[[ L["Config_Scales_Desc"] = ""--]] 
+--[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["Config_Scales_OwnClassDefaultsOnly"] = ""--]] 
 --[[Translation missing --]]
@@ -892,6 +956,10 @@ elseif LOCALE == "itIT" then
 --[[Translation missing --]]
 --[[ L["ItemToolTip_Legend"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["PowersScoreString"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["PowersTitles_Class"] = ""--]] 
@@ -942,21 +1010,31 @@ elseif LOCALE == "itIT" then
 --[[Translation missing --]]
 --[[ L["WeightEditor_ImportText"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["WeightEditor_RenameText"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WeightEditor_TooltipText"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WeightEditor_VersionText"] = ""--]] 
 
 
-elseif LOCALE == "koKR" then -- Killberos (53)
+elseif LOCALE == "koKR" then -- Killberos (52)
 L["Config_Importing_ImportingCanUpdate"] = "불러오기로 현재 값을 갱신합니다"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "같은 이름으로 값을 불러올경우, 이미 존재하는 직업과 전문화 값들은 새로운 값으로 만들어 지는 대신에, 갱신 될것 입니다."
 --[[Translation missing --]]
 --[[ L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = ""--]] 
 L["Config_Importing_Title"] = "불러오기"
 --[[Translation missing --]]
---[[ L["Config_Scales_Desc"] = ""--]] 
+--[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
 L["Config_Scales_OwnClassDefaultsOnly"] = "자신 직업의 기본값만 표시"
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "모든 직업들의 기본값을 표시하는 대신에, 자신 직업에만 해당되는 기본값을 표시합니다."
 L["Config_Scales_Title"] = "값 목록"
@@ -1049,6 +1127,10 @@ L["ImportPopup_UpdatedScale"] = "\"%s\" 현재 값이 갱신 되었습니다."
 L["ItemToolTip_AzeriteLevel"] = "아제라이트 레벨: %1$d / %2$d "
 --[[Translation missing --]]
 --[[ L["ItemToolTip_Legend"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
 L["PowersScoreString"] = [=[현재 점수: %1$s/%2$s
 최고 점수: %3$s
 아제라이트 레벨: %4$d/%5$d]=]
@@ -1079,17 +1161,28 @@ L["WeightEditor_DeleteText"] = "삭제 "
 L["WeightEditor_EnableScaleText"] = "이 값을 사용 "
 L["WeightEditor_ExportText"] = "내보내기"
 L["WeightEditor_ImportText"] = "불러오기 "
+--[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
 L["WeightEditor_RenameText"] = "이름 바꾸기 "
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 L["WeightEditor_TooltipText"] = "툴팁에 표시하기 "
 L["WeightEditor_VersionText"] = "버전 %s "
 
 
-elseif LOCALE == "ptBR" then -- mariogusman (74)
+elseif LOCALE == "ptBR" then -- mariogusman (73)
 L["Config_Importing_ImportingCanUpdate"] = "Importar pode atualizar pesos já existentes"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "Ao importar pesos com o mesmo nome, a configuração existente será atualizada com os novos pesos em vez de criar uma nova."
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Você pode ter vários pesos com o mesmo nome, desde que sejam para diferentes especializações ou classes."
 L["Config_Importing_Title"] = "Importando "
-L["Config_Scales_Desc"] = "As configurações a seguir afetam apenas a lista de pesos padrão. Todas os pesos personalizados serão sempre listados para todas as classes."
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
 L["Config_Scales_OwnClassDefaultsOnly"] = "Listar apenas os Pesos Padrão da sua classe"
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Lista apenas os Pesos Padrão da sua classe, ao invés de listar todos."
 L["Config_Scales_Title"] = "Lista de Pesos"
@@ -1170,6 +1263,10 @@ L["ImportPopup_UpdatedScale"] = "Escala existente \"%s\" atualizada"
 L["ItemToolTip_AzeriteLevel"] = "Nível de Azerita: %1$d / %2$d"
 --[[Translation missing --]]
 --[[ L["ItemToolTip_Legend"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
 L["PowersScoreString"] = [=[Pontuação Atual: %1$s/%2$s
 Pontuação Máxima: %3$s
 Nível de Azerita: %4$d/%5$d]=]
@@ -1198,17 +1295,26 @@ L["WeightEditor_DeleteText"] = "Deletar"
 L["WeightEditor_EnableScaleText"] = "Usar esta configuração"
 L["WeightEditor_ExportText"] = "Exoprtar"
 L["WeightEditor_ImportText"] = "Importar"
+--[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
 L["WeightEditor_RenameText"] = "Renomear"
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 L["WeightEditor_TooltipText"] = "Mostrar na descrição dos itens"
 L["WeightEditor_VersionText"] = "Versão %s"
 
 
-elseif LOCALE == "ruRU" then -- dartraiden (71), Hubbotu (12), rtim0905 (0), Wolfeg (1), lorientalas (2)
+elseif LOCALE == "ruRU" then -- dartraiden (78), Hubbotu (17), rtim0905 (0), Wolfeg (1), lorientalas (1)
 L["Config_Importing_ImportingCanUpdate"] = "Обновлять уже существующие наборы при импорте"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "При импорте набора, совпадающего с существующим по имени, классу и специализации, вместо создания нового набора будет обновлён уже существующий набор."
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Допустимы наборы с одинаковыми названиями, если они предназначены для разных специализаций или классов."
 L["Config_Importing_Title"] = "Импорт"
-L["Config_Scales_Desc"] = "Следующие настройки влияют лишь на наборы по умолчанию. Все созданные вами наборы всегда видны любому классу."
+L["Config_Scales_OwnClassCustomsOnly"] = "Показывать собственные наборы, предназначанные лишь для моего класса"
+L["Config_Scales_OwnClassCustomsOnly_Desc"] = "Показывать не все собственные наборы, а только подходящие для вашего класса."
 L["Config_Scales_OwnClassDefaultsOnly"] = "Показывать наборы по умолчанию, предназначенные лишь для моего класса"
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Показывать не все наборы по умолчанию, а только подходящие для вашего класса."
 L["Config_Scales_Title"] = "Список наборов"
@@ -1275,6 +1381,9 @@ L["ImportPopup_Title"] = "Импортировать набор"
 L["ImportPopup_UpdatedScale"] = "Обновлён существующий набор \"%s\""
 L["ItemToolTip_AzeriteLevel"] = "Уровень Сердца Азерот: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "Текущий рейтинг / потенциальный рейтинг / максимальный рейтинг"
+L["MassImportPopup_Desc"] = [=[Импорт нескольких наборов из строки
+Нажмите %1$sCtrl+V%2$s, чтобы вставить строку в поле ввода, а затем нажмите %3$s]=]
+L["MassImportPopup_Title"] = "Импортировать несколько наборов"
 L["PowersScoreString"] = [=[Текущий рейтинг: %1$s/%2$s
 Максимальный рейтинг: %3$s
 Уровень Сердца Азерот: %4$d/%5$d]=]
@@ -1303,17 +1412,24 @@ L["WeightEditor_DeleteText"] = "Удалить"
 L["WeightEditor_EnableScaleText"] = "Использовать этот"
 L["WeightEditor_ExportText"] = "Экспортировать"
 L["WeightEditor_ImportText"] = "Импортировать"
+L["WeightEditor_MassImportText"] = "Импортировать несколько"
 L["WeightEditor_RenameText"] = "Переименовать"
+L["WeightEditor_TimestampText_Created"] = "Создан %s"
+L["WeightEditor_TimestampText_Imported"] = "Импортирован %s"
+L["WeightEditor_TimestampText_Updated"] = "Обновлён %s"
 L["WeightEditor_TooltipText"] = "Показывать в подсказке"
 L["WeightEditor_VersionText"] = "Версия %s"
 
 
-elseif LOCALE == "zhCN" then -- plok245 (27), riggzh (29), xlfd2008 (34)
+elseif LOCALE == "zhCN" then -- plok245 (27), riggzh (29), xlfd2008 (33)
 L["Config_Importing_ImportingCanUpdate"] = "允许导入覆盖现有配置"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "当导入配置名称相同并且职业专精一致时，将覆盖现有配置，而不是新建配置。"
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "可以有多个同名配置，只要它们用于不同的专精或职业。"
 L["Config_Importing_Title"] = "导入"
-L["Config_Scales_Desc"] = "以下设置仅影响默认配置。所有自定义配置在每个职业中都显示。"
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
 L["Config_Scales_OwnClassDefaultsOnly"] = "只显示自己职业的默认配置"
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "只显示您自己职业的默认配置，而不是显示所有的默认配置。"
 L["Config_Scales_Title"] = "配置列表"
@@ -1381,6 +1497,10 @@ L["ImportPopup_Title"] = "导入配置"
 L["ImportPopup_UpdatedScale"] = "更新现有的配置 \"%s\""
 L["ItemToolTip_AzeriteLevel"] = "艾泽里特等级: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "当前已选分数/当前可选最高分/全部解锁最高分"
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Desc"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["MassImportPopup_Title"] = ""--]] 
 L["PowersScoreString"] = [=[当前已选分数: %1$s/%2$s
 全部解锁最高分: %3$s
 艾泽里特等级: %4$d/%5$d]=]
@@ -1409,17 +1529,26 @@ L["WeightEditor_DeleteText"] = "删除"
 L["WeightEditor_EnableScaleText"] = "启用配置"
 L["WeightEditor_ExportText"] = "导出"
 L["WeightEditor_ImportText"] = "导入"
+--[[Translation missing --]]
+--[[ L["WeightEditor_MassImportText"] = ""--]] 
 L["WeightEditor_RenameText"] = "重命名"
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
 L["WeightEditor_TooltipText"] = "在鼠标提示中显示"
 L["WeightEditor_VersionText"] = "版本 %s"
 
 
-elseif LOCALE == "zhTW" then -- BNSSNB (89), Sinusquell (1)
+elseif LOCALE == "zhTW" then -- BNSSNB (95), Sinusquell (1)
 L["Config_Importing_ImportingCanUpdate"] = "導入可以更新現有比例"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "當導入具有相同名稱，職業和專精的比例作為預先存在的比例時，現有比例將使用新權值更新，而不是建立新比例。"
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "可以有多個具有相同名稱的比例，只要它們用於不同的專精或職業。"
 L["Config_Importing_Title"] = "導入"
-L["Config_Scales_Desc"] = "以下設置僅影響清單的預設比例。所有自訂比例將在每個職業列出。"
+L["Config_Scales_OwnClassCustomsOnly"] = "只列出自身職業的自定義比重"
+L["Config_Scales_OwnClassCustomsOnly_Desc"] = "只為你自身的職業列出自定義比重，而非列出所有比重。"
 L["Config_Scales_OwnClassDefaultsOnly"] = "只列出自己職業的預設比例"
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "只列出你自己職業的預設比例，而非列出所有。"
 L["Config_Scales_Title"] = "比例清單"
@@ -1487,6 +1616,9 @@ L["ImportPopup_Title"] = "導入比例"
 L["ImportPopup_UpdatedScale"] = "更新現有的比例 \"%s\""
 L["ItemToolTip_AzeriteLevel"] = "艾澤萊等級: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "當前分數 / 當前潛力 / 最大分數"
+L["MassImportPopup_Desc"] = [=[從字串一次匯入多重比重
+按下 %1$sCtrl+V%2$s 在輸入框貼上字串並按下 %3$s]=]
+L["MassImportPopup_Title"] = "批量匯入比重"
 L["PowersScoreString"] = [=[當前分數: %1$s/%2$s
 最大分數: %3$s
 艾澤萊等級: %4$d/%5$d]=]
@@ -1515,7 +1647,11 @@ L["WeightEditor_DeleteText"] = "刪除"
 L["WeightEditor_EnableScaleText"] = "使用此比例"
 L["WeightEditor_ExportText"] = "導出"
 L["WeightEditor_ImportText"] = "導入"
+L["WeightEditor_MassImportText"] = "批量匯入"
 L["WeightEditor_RenameText"] = "重命名"
+L["WeightEditor_TimestampText_Created"] = "建立於%s"
+L["WeightEditor_TimestampText_Imported"] = "匯入於%s"
+L["WeightEditor_TimestampText_Updated"] = "更新於%s"
 L["WeightEditor_TooltipText"] = "在提示中顯示"
 L["WeightEditor_VersionText"] = "版本 %s"
 
