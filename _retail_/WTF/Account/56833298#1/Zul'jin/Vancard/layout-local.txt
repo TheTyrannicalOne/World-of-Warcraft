@@ -40,7 +40,7 @@ Anchor: CENTER
 X: 0
 Y: 0
 W: 365
-H: 241
+H: 240
 Frame: AAPQOrderList
 FrameLevel: 1
 Anchor: CENTER
@@ -63,6 +63,13 @@ Y: 0
 W: 300
 H: 300
 Frame: AllTheThings-Window-Unsorted
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300
+Frame: AllTheThings-Window-CosmicInfuser
 FrameLevel: 1
 Anchor: CENTER
 X: 0
@@ -101,7 +108,7 @@ Frame: TooltipMover
 FrameLevel: 402
 Anchor: RIGHT
 X: -3
-Y: -202
+Y: -198
 W: 130
 H: 20
 Frame: AllTheThings-Window-Tradeskills

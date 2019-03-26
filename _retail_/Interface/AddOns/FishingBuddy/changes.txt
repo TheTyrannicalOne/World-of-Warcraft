@@ -1,4 +1,8 @@
-﻿Version 1.9.28
+﻿Version 1.9.29
+- Fix for CurseForge #380 (error with fountain coins)
+- Fixes for a bunch of issues caused by map changes in 8.1.5
+
+Version 1.9.28
 - Fix CurseForge #379 (zone lookup error)
 - Update libraries
 

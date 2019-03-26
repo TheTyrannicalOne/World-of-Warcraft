@@ -55,20 +55,22 @@ CoinLures[138958] = {
 local function CoinPlan(queue)
     if GSB("DalaranLures") then
         local lure_id = nil
+        local lure_info = nil
         for id, info in pairs(CoinLures) do
             if (FL:HasBuff(info.spell)) then
                 return
             end
             if (GetItemCount(id) > 0) then
                 lure_id = id
+                lure_info = info
             end
         end
         if lure_id then
             tinsert(queue, {
                     ["itemid"] = id,
-                    ["name"] = info[CurLoc],
+                    ["name"] = lure_info[CurLoc],
                 })
-            FL:WaitForBuff(info.spell)
+            FL:WaitForBuff(lure_info.spell)
             return
         end
     end
