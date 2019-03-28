@@ -2,8 +2,8 @@
 MasterPlanAG = {
 	["Illidan"] = {
 		["Zerkinz"] = {
-			["lastCacheTime"] = 1456134282,
 			["class"] = "DRUID",
+			["lastCacheTime"] = 1456134282,
 			["summary"] = {
 				["inProgress"] = {
 					[3] = 1453758371,
@@ -17,16 +17,16 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Aerionz"] = {
-			["faction"] = "Horde",
 			["class"] = "PALADIN",
+			["faction"] = "Horde",
 		},
 		["Recloos"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 		["Milkd"] = {
-			["faction"] = "Horde",
 			["class"] = "PALADIN",
+			["faction"] = "Horde",
 		},
 		["Xerkin"] = {
 			["lastCacheTime"] = 1458101277,
@@ -34,25 +34,15 @@ MasterPlanAG = {
 			["faction"] = "Horde",
 		},
 		["Aerion"] = {
-			["class"] = "ROGUE",
 			["faction"] = "Horde",
+			["class"] = "ROGUE",
 		},
 		["Klitpounder"] = {
-			["faction"] = "Horde",
 			["class"] = "HUNTER",
+			["faction"] = "Horde",
 		},
-		["Zerkin"] = {
-			["class"] = "SHAMAN",
-			["lastCacheTime"] = 1462930208,
-			["summary"] = {
-				["tt1"] = true,
-				["ti1"] = 118530,
-				["inProgress"] = {
-					[265] = 1459257399,
-				},
-				["tt3"] = true,
-				["ti3"] = 127855,
-			},
+		["Bennyhin"] = {
+			["class"] = "PRIEST",
 			["faction"] = "Horde",
 		},
 		["Xerkinz"] = {
@@ -60,78 +50,89 @@ MasterPlanAG = {
 			["lastCacheTime"] = 1453618172,
 			["faction"] = "Horde",
 		},
-		["Bennyhin"] = {
-			["faction"] = "Horde",
-			["class"] = "PRIEST",
-		},
-	},
-	["IgnoreRewards"] = {
-	},
-	["Argent Dawn"] = {
-		["Shanyt"] = {
-			["class"] = "WARRIOR",
-			["summary"] = {
-				["lastOilTime"] = 1553446222,
-				["ti2"] = 122486,
-				["inProgress"] = {
-					[455] = 1553474962,
-					[745] = 1553511022,
-					[397] = 1553482208,
-					[192] = 1553453976,
-					[571] = 1553475028,
-					[327] = 1553474970,
-					[305] = 1553474996,
-					[671] = 1553460588,
-					[702] = 1553460618,
-					[481] = 1553460598,
-					[572] = 1553475027,
-					[574] = 1553511024,
-					[675] = 1553460580,
-					[500] = 1553482206,
-				},
-				["ti3"] = 127854,
-				["ti1"] = 118531,
-				["tt1"] = 1553318948,
-				["tt3"] = 1553437529,
-				["tt2"] = 1553440528,
-			},
-			["curOil"] = 75945,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1553450352,
-			["curRes"] = 7835,
-			["faction"] = "Horde",
-		},
-	},
-	["Tanaris"] = {
-		["Youngpoobs"] = {
-			["faction"] = "Alliance",
-			["class"] = "MONK",
-		},
-	},
-	["Black Dragonflight"] = {
-		["Durlok"] = {
-			["class"] = "DRUID",
-			["faction"] = "Horde",
-		},
-	},
-	["Sargeras"] = {
-		["Zerkinz"] = {
+		["Zerkin"] = {
+			["lastCacheTime"] = 1462930208,
 			["class"] = "SHAMAN",
-			["faction"] = "Neutral",
-		},
-		["Xerkinz"] = {
-			["class"] = "DRUID",
-			["faction"] = "Alliance",
+			["summary"] = {
+				["tt3"] = true,
+				["ti1"] = 118530,
+				["ti3"] = 127855,
+				["inProgress"] = {
+					[265] = 1459257399,
+				},
+				["tt1"] = true,
+			},
+			["faction"] = "Horde",
 		},
 	},
 	["Zul'jin"] = {
 		["Tyrann"] = {
-			["faction"] = "Horde",
 			["class"] = "PRIEST",
+			["faction"] = "Horde",
 		},
 		["Vancard"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
+	},
+	["Argent Dawn"] = {
+		["Shanyt"] = {
+			["curOil"] = 75365,
+			["summary"] = {
+				["lastOilTime"] = 1553740260,
+				["inProgress"] = {
+					[176] = 1553747614,
+					[556] = 1553809758,
+					[177] = 1553747605,
+					[200] = 1553747575,
+					[265] = 1553773745,
+					[396] = 1553773656,
+					[667] = 1553759337,
+					[565] = 1553809753,
+					[671] = 1553759322,
+					[188] = 1553747583,
+					[570] = 1553759356,
+					[686] = 1553788067,
+					[589] = 1553773755,
+					[394] = 1553773678,
+					[194] = 1553750280,
+				},
+				["ti3"] = 127854,
+				["ti2"] = 122486,
+				["tt1"] = 1553318948,
+				["ti1"] = 118531,
+				["tt3"] = 1553437529,
+				["tt2"] = 1553440528,
+			},
+			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1553745003,
+			["curRes"] = 7735,
+			["class"] = "WARRIOR",
+		},
+	},
+	["Black Dragonflight"] = {
+		["Durlok"] = {
+			["faction"] = "Horde",
+			["class"] = "DRUID",
+		},
+	},
+	["Tanaris"] = {
+		["Youngpoobs"] = {
+			["class"] = "MONK",
+			["faction"] = "Alliance",
+		},
+	},
+	["Sargeras"] = {
+		["Zerkinz"] = {
+			["faction"] = "Neutral",
+			["class"] = "SHAMAN",
+		},
+		["Xerkinz"] = {
+			["faction"] = "Alliance",
+			["class"] = "DRUID",
+		},
+	},
+	["IgnoreRewards"] = {
 	},
 }

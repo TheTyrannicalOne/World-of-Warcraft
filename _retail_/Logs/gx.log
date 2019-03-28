@@ -1,27 +1,24 @@
-3/24 18:21:07.462  LogOpen
-3/24 18:21:07.699  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x190015, 0xe078f) dx11:true dx12:true
-3/24 18:21:07.699  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-3/24 18:21:07.699  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-3/24 18:21:07.809  D3d12 Device Create
-3/24 18:21:07.809  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-3/24 18:21:07.957  Choosing adapter 0
-3/24 18:21:08.084  Detected NvAPI and checking if it's valid...
-3/24 18:21:08.084  AFR Groups: 1/1
-3/24 18:21:08.084  Feature Level: DX=6, MTL=0
-3/24 18:21:08.113  NotifyOnDeviceCreate
-3/24 18:21:08.113  D3d12 Device Create Successful
-3/24 18:21:08.113  Nvidia driver version: r419_29 (41935)
-3/24 18:21:08.113  <IsGPUDriverOutOfDate> No
-3/24 18:21:08.137  CPU Processor Detection: 12 H/W threads
-3/24 18:21:08.137  Memory Detection: 34296328192 bytes of physical memory available
-3/24 18:21:08.137  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-3/24 18:21:08.404  RenderSettings::NotifyChanged
-3/24 18:21:09.332  Nvidia driver version: r419_29 (41935)
-3/24 18:21:15.986  Nvidia driver version: r419_29 (41935)
-3/24 18:21:15.986  Nvidia driver version: r419_29 (41935)
-3/24 18:55:03.272  Nvidia driver version: r419_29 (41935)
-3/24 22:17:31.630  Error WaitForSingleObjectEx: 0x8007008A.
-3/24 22:17:31.630  Device context was lost. Attempting recovery. Occurrence: 1
-3/24 22:17:31.630  GxRestart
-3/24 22:17:31.737  D3d12 Device Destroy
-3/24 22:17:31.737  NotifyOnDeviceDestroy
+3/27 23:37:37.736  LogOpen
+3/27 23:37:37.962  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x190015, 0xe07af) dx11:true dx12:true
+3/27 23:37:37.962  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+3/27 23:37:37.962  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+3/27 23:37:38.083  D3d12 Device Create
+3/27 23:37:38.083  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
+3/27 23:37:38.241  Choosing adapter 0
+3/27 23:37:38.362  Detected NvAPI and checking if it's valid...
+3/27 23:37:38.362  AFR Groups: 1/1
+3/27 23:37:38.362  Feature Level: DX=6, MTL=0
+3/27 23:37:38.386  NotifyOnDeviceCreate
+3/27 23:37:38.386  D3d12 Device Create Successful
+3/27 23:37:38.386  Nvidia driver version: r419_50 (41967)
+3/27 23:37:38.386  <IsGPUDriverOutOfDate> No
+3/27 23:37:38.414  CPU Processor Detection: 12 H/W threads
+3/27 23:37:38.414  Memory Detection: 34296328192 bytes of physical memory available
+3/27 23:37:38.414  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+3/27 23:37:38.540  RenderSettings::NotifyChanged
+3/27 23:37:39.387  Nvidia driver version: r419_50 (41967)
+3/27 23:37:46.327  Nvidia driver version: r419_50 (41967)
+3/27 23:37:46.327  Nvidia driver version: r419_50 (41967)
+3/28 01:29:31.064  Nvidia driver version: r419_50 (41967)
+3/28 01:29:31.698  D3d12 Device Destroy
+3/28 01:29:31.698  NotifyOnDeviceDestroy

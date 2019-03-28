@@ -15,11 +15,11 @@ FishingBuddy_Info = {
 		[862003] = 1,
 		[862004] = 2,
 		[862005] = 36,
-		[0] = 1,
-		[1165002] = 8,
-		[863001] = 8,
-		[863002] = 2,
 		[863004] = 3,
+		[863002] = 2,
+		[863001] = 8,
+		[1165002] = 8,
+		[0] = 1,
 	},
 	["HiddenFishies"] = {
 	},
@@ -34,10 +34,10 @@ FishingBuddy_Info = {
 		[863003] = 0,
 		[863004] = 0,
 		[863005] = 0,
-		[1165002] = 0,
 		[619001] = 0,
-		[1165001] = 0,
 		[862001] = 0,
+		[1165001] = 0,
+		[1165002] = 0,
 	},
 	["DataFish"] = 0,
 	["FishingHoles"] = {
@@ -78,27 +78,48 @@ FishingBuddy_Info = {
 		[863005] = {
 			[152547] = 1,
 		},
+		[619001] = {
+			[138777] = 1,
+		},
+		[862001] = {
+			[152543] = 2,
+		},
+		[1165001] = {
+			[162517] = 1,
+		},
 		[1165002] = {
 			[152544] = 2,
 			[162515] = 2,
 			[152543] = 4,
 		},
-		[619001] = {
-			[138777] = 1,
-		},
-		[1165001] = {
-			[162517] = 1,
-		},
-		[862001] = {
-			[152543] = 2,
-		},
 	},
-	["KnownZones"] = {
-		[0] = "Port of Zandalar",
-		[863] = "Razorjaw River",
-		[1165] = "Port of Zandalar",
-		[862] = "Port of Zandalar",
-		[619] = "Margoss's Retreat",
+	["FishSchools"] = {
+		[862] = {
+			{
+				["y"] = 0.51498076113977,
+				["x"] = 0.766917032053709,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["fish"] = {
+					[152543] = 2,
+					[152547] = 1,
+				},
+				["count"] = 3,
+			}, -- [1]
+		},
+		[863] = {
+			{
+				["y"] = 0.745583651220492,
+				["x"] = 0.587682601119972,
+				["sidx"] = 863000,
+				["kind"] = 0,
+				["fish"] = {
+					[152547] = 6,
+					[152549] = 1,
+				},
+				["count"] = 7,
+			}, -- [1]
+		},
 	},
 	["Version"] = 19500,
 	["FishInfo2"] = 0,
@@ -117,90 +138,69 @@ FishingBuddy_Info = {
 		[862003] = "Xibala",
 		[862004] = "Sandscar Breach",
 		[862005] = "Port of Zandalar",
-		[0] = 1,
-		[1165002] = "Port of Zandalar",
-		[863001] = "The Shattered River",
-		[863002] = "Wayward Shoals",
 		[863004] = "Krag'wa's Burrow",
+		[863002] = "Wayward Shoals",
+		[863001] = "The Shattered River",
+		[1165002] = "Port of Zandalar",
+		[0] = 1,
 	},
 	["ImppDBLoaded"] = 0,
 	["Fishies"] = {
 		[162517] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "U'taka",
-			["quality"] = 2,
 			["texture"] = 237327,
+			["quality"] = 2,
 		},
 		[152544] = {
 			["enUS"] = "Slimy Mackerel",
-			["texture"] = 2057316,
 			["quality"] = 1,
+			["texture"] = 2057316,
 		},
 		[152543] = {
 			["enUS"] = "Sand Shifter",
-			["texture"] = 2057315,
 			["quality"] = 1,
+			["texture"] = 2057315,
 		},
 		[152547] = {
 			["enUS"] = "Great Sea Catfish",
-			["texture"] = 2057312,
 			["quality"] = 1,
+			["texture"] = 2057312,
 		},
 		[152549] = {
 			["enUS"] = "Redtail Loach",
-			["texture"] = 2057314,
 			["quality"] = 1,
+			["texture"] = 2057314,
 		},
 		[154801] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Crumbling Chain Belt",
+			["quality"] = 0,
 			["texture"] = 132498,
-			["quality"] = 0,
 		},
-		[154779] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Ruptured Plate Stompers",
-			["texture"] = 132589,
-			["quality"] = 0,
+		[138777] = {
+			["enUS"] = "Drowned Mana",
+			["quality"] = 1,
+			["texture"] = 132852,
 		},
 		[162515] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "Midnight Salmon",
-			["texture"] = 237302,
 			["quality"] = 2,
+			["texture"] = 237302,
 		},
-		[138777] = {
-			["enUS"] = "Drowned Mana",
-			["texture"] = 132852,
-			["quality"] = 1,
+		[154779] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Ruptured Plate Stompers",
+			["quality"] = 0,
+			["texture"] = 132589,
 		},
 	},
-	["FishSchools"] = {
-		[862] = {
-			{
-				["y"] = 0.51498076113977,
-				["x"] = 0.766917032053709,
-				["sidx"] = 862000,
-				["kind"] = 0,
-				["count"] = 3,
-				["fish"] = {
-					[152543] = 2,
-					[152547] = 1,
-				},
-			}, -- [1]
-		},
-		[863] = {
-			{
-				["y"] = 0.745583651220492,
-				["x"] = 0.587682601119972,
-				["sidx"] = 863000,
-				["kind"] = 0,
-				["count"] = 7,
-				["fish"] = {
-					[152547] = 6,
-					[152549] = 1,
-				},
-			}, -- [1]
-		},
+	["KnownZones"] = {
+		[0] = "Port of Zandalar",
+		[863] = "Razorjaw River",
+		[1165] = "Port of Zandalar",
+		[862] = "Port of Zandalar",
+		[619] = "Margoss's Retreat",
 	},
 }
