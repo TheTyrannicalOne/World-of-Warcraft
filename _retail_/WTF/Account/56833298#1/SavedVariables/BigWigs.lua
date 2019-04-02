@@ -28,36 +28,25 @@ BigWigs3DB = {
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
 		},
-		["BigWigs_Plugins_Alt Power"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Plugins_AutoReply"] = {
+		["BigWigs_Plugins_InfoBox"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Plugins_InfoBox"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Bars"] = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
+					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999504089355,
 					["BigWigsAnchor_height"] = 16.0000438690186,
-					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
 				},
 			},
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -66,16 +55,9 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["width"] = 140.00016784668,
-					["font"] = "Friz Quadrata TT",
-					["height"] = 119.999977111816,
-				},
-			},
+		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -84,11 +66,27 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_T'zane"] = {
+		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["height"] = 119.999977111816,
+					["font"] = "Friz Quadrata TT",
+					["width"] = 140.00016784668,
+				},
+			},
+		},
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_Alt Power"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
 		},
 	},
 	["wipe80"] = true,

@@ -29,6 +29,9 @@ local LDB = LibStub( "LibDataBroker-1.1", true )
 local LDBIcon = LibStub( "LibDBIcon-1.0", true )
 
 
+local NewFeature = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0|t"
+
+
 -- Interrupts
 do
     local db = {}
@@ -157,6 +160,19 @@ local oneTimeFixes = {
         -- Clears the flag if Arcane wasn't actually enabled.
         p.runOnce.enabledArcaneMageOnce_20190309 = nil
     end,
+
+    autoconvertGlowsForCustomGlow_20190326 = function( p )
+        for k, v in pairs( p.displays ) do
+            if v.glow and v.glow.shine ~= nil then
+                if v.glow.shine then
+                    v.glow.mode = "autocast"
+                else
+                    v.glow.mode = "standard"
+                end
+                v.glow.shine = nil
+            end
+        end
+    end,        
 }
 
 
@@ -243,6 +259,7 @@ local displayTemplate = {
 
     border = {
         enabled = true,
+        coloring = 'custom',
         color = { 0, 0, 0, 1 },
     },
 
@@ -254,7 +271,9 @@ local displayTemplate = {
     glow = {
         enabled = false,
         queued = false,
-        shine = false,
+        mode = "autocast",
+        coloring = "default",
+        color = { 0.95, 0.95, 0.32, 1 },
     },
 
     flash = {
@@ -509,7 +528,7 @@ function Hekili:GetDefaults()
 
                     glow = {
                         enabled = true,
-                        shine = true
+                        mode = "autocast"
                     },
                 },
 
@@ -531,7 +550,7 @@ function Hekili:GetDefaults()
 
                     glow = {
                         enabled = true,
-                        shine = true,
+                        mode = "autocast",
                     },
                 },
 
@@ -551,6 +570,11 @@ function Hekili:GetDefaults()
                     flash = {
                         color = { 0, 0, 1, 1 },
                     },
+
+                    glow = {
+                        enabled = true,
+                        mode = "autocast",
+                    },
                 },
 
                 Interrupts = {
@@ -568,6 +592,11 @@ function Hekili:GetDefaults()
 
                     flash = {
                         color = { 1, 1, 1, 1 },
+                    },
+
+                    glow = {
+                        enabled = true,
+                        mode = "autocast",
                     },
                 },
 
@@ -805,11 +834,15 @@ do
         local resolution = resolutions[ GetCurrentResolution() ] or GetCVar( "gxWindowedResolution" )
         local width, height = resolution:match( "(%d+)x(%d+)" )       
 
-        tab.args.x.min = -1 * width * 0.5
-        tab.args.x.max = width * 0.5
+        tab.args.x.min = -1 * width
+        tab.args.x.max = width
+        tab.args.x.softMin = -1 * width * 0.5
+        tab.args.x.softMax = width * 0.5
 
-        tab.args.y.min = -1 * height * 0.5
-        tab.args.y.max = height * 0.5
+        tab.args.y.min = -1 * height
+        tab.args.y.max = height
+        tab.args.y.softMin = -1 * height * 0.5
+        tab.args.y.softMax = height * 0.5
     end
 
 
@@ -855,7 +888,7 @@ do
                     if data.builtIn then return '|cFF00B4FF' .. name .. '|r' end
                     return name
                 end,
-                childGroups = "tab",
+                childGroups = "select",
                 desc = data.desc,
                 order = 100 + pos,
                 args = {
@@ -1320,7 +1353,7 @@ do
 
                     border = {
                         type = "group",
-                        name = "Border",
+                        name = NewFeature .. "Border",
                         desc = "Enable/disable or set the color for icon borders.\n\n" ..
                             "You may want to disable this if you use Masque or other tools to skin your Hekili icons.",
                         order = 4,
@@ -1342,13 +1375,27 @@ do
                                 width = "full",
                             },
 
+                            coloring = {
+                                type = "select",
+                                name = "Coloring Mode",
+                                desc = "Specify whether to use class-colored borders or to specify a color.",
+                                width = "full",
+                                order = 3,
+                                values = {
+                                    class = "Use Class Color",
+                                    custom = "Specify a Custom Color"
+                                },
+                                disabled = function() return data.border.enabled == false end,
+                            },
+
                             color = {
                                 type = "color",
                                 name = "Border Color",
                                 desc = "When borders are enabled, the border will use this color.",
-                                order = 3,
+                                order = 4,
                                 width = "full",
                                 disabled = function () return data.border.enabled == false end,
+                                hidden = function () return data.border.coloring ~= 'custom' end,
                             }
                         }
                     },
@@ -1388,7 +1435,7 @@ do
 
                     glow = {
                         type = "group",
-                        name = "Glows",
+                        name = NewFeature .. "Glows",
                         desc = "Preferences for glows or overlays.",
                         order = 6,
                         args = {
@@ -1410,17 +1457,43 @@ do
                                 disabled = function() return data.glow.enabled == false end,
                             },
 
-                            shine = {
-                                type = "toggle",
-                                name = "Use Shine Effect",
-                                desc = "If enabled, the addon will use the 'shine' effect for a less visually intrusive glow.",
+                            mode = {
+                                type = "select",
+                                name = "Glow Style",
+                                desc = "Select the glow style for your display.",
                                 width = "full",
                                 order = 3,
-                                disabled = function () return data.glow.enabled == false end,
-                            }
+                                values = {
+                                    default = "Default Button Glow",
+                                    autocast = "AutoCast Shine",
+                                    pixel = "Pixel Glow",
+                                },
+                                disabled = function() return data.glow.enabled == false end,
+                            },
 
+                            coloring = {
+                                type = "select",
+                                name = "Coloring Mode",
+                                desc = "Select the coloring mode for this glow effect.",
+                                width = "full",
+                                order = 4,
+                                values = {
+                                    default = "Use Default Color",
+                                    class = "Use Class Color",
+                                    custom = "Specify a Custom Color"
+                                },
+                                disabled = function() return data.glow.enabled == false end,
+                            },
 
-                        }
+                            color = {
+                                type = "color",
+                                name = "Glow Color",
+                                desc = "Select the custom glow color for your display.",
+                                width = "full",
+                                order = 5,
+                                hidden = function() return data.glow.coloring ~= "custom" end,
+                            },
+                        },
                     },
 
                     flash = {
@@ -5028,7 +5101,7 @@ do
             if val == "AutoSingle" and not ( toggle.value == "automatic" or toggle.value == "single" ) then toggle.value = "automatic" end
             if val == "AutoDual" and not ( toggle.value == "automatic" or toggle.value == "dual" ) then toggle.value = "automatic" end
             if val == "SingleAOE" and not ( toggle.value == "single" or toggle.value == "aoe" ) then toggle.value = "single" end
-            if val == "ReactiveDual" and not toggle.value == "reactive" then toggle.value = "reactive" end
+            if val == "ReactiveDual" and toggle.value ~= "reactive" then toggle.value = "reactive" end
 
         elseif option == 'key' then
             for t, data in pairs( p.toggles ) do
@@ -5358,7 +5431,7 @@ do
                                     desc = desc,
                                     order = 5 + i,
                                     func = function ()
-                                        ACD:SelectGroup( "Hekili", "specs", sName )
+                                        ACD:SelectGroup( "Hekili", sName )
                                     end,
                                 }
                                 hide = false

@@ -378,7 +378,7 @@ do
         loc:Clear()
     end
 
-    ns.cpuProfile.updatePowers = ns.updatePowers
+    Hekili:ProfileCPU( "updatePowers", ns.updatePowers )
 end
 
 
@@ -640,7 +640,7 @@ local function UNIT_POWER_FREQUENT( event, unit, power )
         lastPowerUpdate = GetTime()
     end
 end
-ns.cpuProfile.UNIT_POWER_FREQUENT = UNIT_POWER_FREQUENT
+Hekili:ProfileCPU( "UNIT_POWER_FREQUENT", UNIT_POWER_FREQUENT )
 
 RegisterUnitEvent( "UNIT_POWER_FREQUENT", UNIT_POWER_FREQUENT )
 
@@ -903,30 +903,27 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
     ns.callHook( "COMBAT_LOG_EVENT_UNFILTERED", event, nil, subtype, nil, sourceGUID, sourceName, nil, nil, destGUID, destName, destFlags, nil, spellID, spellName, nil, amount, interrupt, a, b, c, d, offhand, multistrike, ... )
 
 end
-ns.cpuProfile.CLEU_HANDLER = CLEU_HANDLER
-
+Hekili:ProfileCPU( "CLEU_HANDLER", CLEU_HANDLER )
 RegisterEvent( "COMBAT_LOG_EVENT_UNFILTERED", function ( event ) CLEU_HANDLER( event, CombatLogGetCurrentEventInfo() ) end )
 
 
-local function UNIT_COMBAT( event, unit, action, descriptor, damage, damageType )
-
+local function UNIT_COMBAT( event, unit, _, _, damage, damageType )
     if unit ~= 'player' then return end
 
     if damage > 0 then
         if action == 'WOUND' then
-            ns.storeDamage( GetTime(), damage, damageType )
+            ns.storeDamage( GetTime(), damage, damageType == 1 )
         elseif action == 'HEAL' then
             ns.storeHealing( GetTime(), damage )
         end
     end
-
 end
-ns.cpuProfile.UNIT_COMBAT = UNIT_COMBAT
-
+Hekili:ProfileCPU( "UNIT_COMBAT", UNIT_COMBAT )
 RegisterUnitEvent( "UNIT_COMBAT", UNIT_COMBAT )
 
 
 local keys = ns.hotkeys
+Hekili.KeybindInfo = keys
 local updatedKeys = {}
 
 local bindingSubs = {
@@ -1146,9 +1143,13 @@ if select( 2, UnitClass( "player" ) ) == "DRUID" then
     function Hekili:GetBindingForAction( key, caps )
         if not key then return "" end
 
+        local ability = class.abilities[ key ]
+
         local override = state.spec.id
+        local overrideType = ability and ability.item and "items" or "abilities"
+
         override = override and self.DB.profile.specs[ override ]
-        override = override and override.abilities[ key ]
+        override = override and override[ overrideType ][ key ]
         override = override and override.keybind
 
         if override and override ~= "" then
@@ -1179,9 +1180,13 @@ elseif select( 2, UnitClass( "player" ) ) == "ROGUE" then
     function Hekili:GetBindingForAction( key, caps )
         if not key then return "" end
 
+        local ability = class.abilities[ key ]
+
         local override = state.spec.id
+        local overrideType = ability and ability.item and "items" or "abilities"
+
         override = override and self.DB.profile.specs[ override ]
-        override = override and override.abilities[ key ]
+        override = override and override[ overrideType ][ key ]
         override = override and override.keybind
 
         if override and override ~= "" then
@@ -1204,9 +1209,13 @@ else
     function Hekili:GetBindingForAction( key, caps )
         if not key then return "" end
 
+        local ability = class.abilities[ key ]
+
         local override = state.spec.id
+        local overrideType = ability and ability.item and "items" or "abilities"
+
         override = override and self.DB.profile.specs[ override ]
-        override = override and override.abilities[ key ]
+        override = override and override[ overrideType ][ key ]
         override = override and override.keybind
 
         if override and override ~= "" then

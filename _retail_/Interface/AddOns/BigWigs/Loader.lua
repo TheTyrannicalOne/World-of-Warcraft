@@ -21,7 +21,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "7e8a067" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "7d2b34a" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[===[@alpha@
 	-- The following code will only be present in alpha ZIPs.

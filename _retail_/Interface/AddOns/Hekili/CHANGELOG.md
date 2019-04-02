@@ -1,7 +1,7 @@
 # Hekili
 
-## [v8.1.5-03](https://github.com/Hekili/hekili/tree/v8.1.5-03) (2019-03-15)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.5-02...v8.1.5-03)
+## [v8.1.5-05](https://github.com/Hekili/hekili/tree/v8.1.5-05) (2019-04-02)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.5-05-alpha2...v8.1.5-05)
 
-- UI/Events:  Update display combat status based on our combat timer.  
-    - Watch some display functions for CPU profiling.  
+- Elemental:  Disable Earth Elemental entry.  
+- Properly initialize button glows.  

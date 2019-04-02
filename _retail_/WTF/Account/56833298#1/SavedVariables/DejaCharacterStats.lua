@@ -1,23 +1,23 @@
 
 DejaCharacterStatsDB = {
 	["gdbdefaults"] = {
-		["dejacharacterstatsShowAverageRepairChecked"] = {
-			["ShowAverageRepairSetChecked"] = false,
-		},
-		["dejacharacterstatsScrollbarChecked"] = {
-			["ScrollbarSetChecked"] = false,
-		},
-		["dejacharacterstatsShowDuraChecked"] = {
-			["ShowDuraSetChecked"] = false,
-		},
 		["dejacharacterstatsHideAtZeroChecked"] = {
 			["SetChecked"] = true,
 		},
 		["dejacharacterstatsShowItemRepairChecked"] = {
 			["ShowItemRepairSetChecked"] = false,
 		},
-		["DCS_TableRelevantStatsChecked"] = {
-			["RelevantStatsSetChecked"] = false,
+		["dejacharacterstatsShowDecimalsChecked"] = {
+			["SetChecked"] = true,
+		},
+		["dejacharacterstatsDCSZeroChecked"] = {
+			["SetChecked"] = false,
+		},
+		["dejacharacterstatsExpandButtonChecked"] = {
+			["ExpandButtonSetChecked"] = true,
+		},
+		["dejacharacterstatsShowAverageRepairChecked"] = {
+			["ShowAverageRepairSetChecked"] = false,
 		},
 		["dejacharacterstatsItemLevelChecked"] = {
 			["ItemLevelTwoDecimalsSetChecked"] = true,
@@ -25,29 +25,36 @@ DejaCharacterStatsDB = {
 			["ItemLevelDecimalsSetChecked"] = false,
 			["ItemLevelClassColorSetChecked"] = true,
 		},
-		["dejacharacterstatsShowItemLevelChecked"] = {
-			["ShowItemLevelSetChecked"] = true,
+		["DCS_TableRelevantStatsChecked"] = {
+			["RelevantStatsSetChecked"] = false,
+		},
+		["dejacharacterstatsShowDuraChecked"] = {
+			["ShowDuraSetChecked"] = false,
+		},
+		["dejacharacterstatsSimpleItemColorChecked"] = {
+			["SimpleItemColorChecked"] = false,
+			["DarkerItemColorChecked"] = false,
 		},
 		["dejacharacterstatsHideMasteryChecked"] = {
 			["SetChecked"] = true,
 		},
-		["dejacharacterstatsDCSZeroChecked"] = {
-			["SetChecked"] = false,
+		["dejacharacterstatsShowItemLevelChecked"] = {
+			["ShowItemLevelSetChecked"] = true,
 		},
 		["dejacharacterstatsClassBackgroundChecked"] = {
 			["ClassBackgroundChecked"] = true,
 		},
-		["dejacharacterstatsShowDecimalsChecked"] = {
-			["SetChecked"] = true,
+		["dejacharacterstatsShowDuraTextureChecked"] = {
+			["ShowDuraTextureSetChecked"] = true,
 		},
 		["dejacharacterstatsExpandChecked"] = {
 			["ExpandSetChecked"] = true,
 		},
-		["dejacharacterstatsShowDuraTextureChecked"] = {
-			["ShowDuraTextureSetChecked"] = true,
+		["dejacharacterstatsAlternateInfoPlacement"] = {
+			["AlternateInfoPlacementChecked"] = false,
 		},
-		["dejacharacterstatsExpandButtonChecked"] = {
-			["ExpandButtonSetChecked"] = true,
+		["dejacharacterstatsScrollbarChecked"] = {
+			["ScrollbarSetChecked"] = false,
 		},
 	},
 }

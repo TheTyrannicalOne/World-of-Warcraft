@@ -18,10 +18,6 @@ local format = string.format
 
 local Masque, MasqueGroup
 
-local UIDropDownMenuTemplate = L_UIDropDownMenuTemplate
-local UIDropDownMenu_AddButton = L_UIDropDownMenu_AddButton
-local UIDropDownMenu_AddSeparator = L_UIDropDownMenu_AddSeparator
-
 
 function Hekili:GetScale()
     return PixelUtil.GetNearestPixelSize( 1, PixelUtil.GetPixelToUIUnitFactor(), 1 )
@@ -668,6 +664,7 @@ do
     local LRC = LibStub("LibRangeCheck-2.0")
     local LSF = SpellFlashCore
     local LSR = LibStub("SpellRange-1.0")
+    local Glower = LibStub("LibCustomGlow-1.0")
 
     local function Display_OnUpdate( self, elapsed )
         if not self.Recommendations or not Hekili.PLAYER_ENTERING_WORLD then
@@ -713,7 +710,7 @@ do
                     if ( conf.flash.enabled and conf.flash.suppress ) then b:Hide()
                     else b:Show() end
 
-                    if action ~= b.lastAction then
+                    if action ~= b.lastAction or self.NewRecommendations then
                         b.Texture:SetTexture( rec.texture or ability.texture or GetSpellTexture( ability.id ) )
                         b.Texture:SetTexCoord( unpack( b.texCoords ) )
                         b.lastAction = action
@@ -746,12 +743,30 @@ do
                     end
 
                     if conf.glow.enabled and ( i == 1 or conf.glow.queued ) and IsSpellOverlayed( ability.id ) then
-                        if conf.glow.shine then AutoCastShine_AutoCastStart( b.Shine )
-                        else ActionButton_ShowOverlayGlow( b ) end
+                        b.glowColor = b.glowColor or {}
+
+                        if conf.glow.coloring == "class" then
+                            b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = RAID_CLASS_COLORS[ class.file ]:GetRGBA()
+                        elseif conf.glow.coloring == "custom" then
+                            b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = unpack(conf.glow.color)
+                        else
+                            b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = 0.95, 0.95, 0.32, 1
+                        end
+
+                        if conf.glow.mode == "default" then
+                            Glower.ButtonGlow_Start( b, b.glowColor )
+                            b.glowStop = Glower.ButtonGlow_Stop
+                        elseif conf.glow.mode == "autocast" then
+                            Glower.AutoCastGlow_Start( b, b.glowColor )
+                            b.glowStop = Glower.AutoCastGlow_Stop
+                        elseif conf.glow.mode == "pixel" then
+                            Glower.PixelGlow_Start( b, b.glowColor )
+                            b.glowStop = Glower.PixelGlow_Stop
+                        end
+                        
                         b.glowing = true
                     elseif b.glowing then
-                        if conf.glow.shine then AutoCastShine_AutoCastStop( b.Shine )
-                        else ActionButton_HideOverlayGlow( b ) end
+                        if b.glowStop then b:glowStop() end
                         b.glowing = false
                     end
                 else
@@ -765,10 +780,10 @@ do
             self.flashTimer = -1
             self.delayTimer = -1
 
-            self:RefreshCooldowns()
-
-            self.NewRecommendations = false
             self.recTimer = 1
+
+            self:RefreshCooldowns()
+            self.NewRecommendations = false
         end
 
 
@@ -803,18 +818,35 @@ do
                         local glowing = not a.item and IsSpellOverlayed( a.id )
 
                         if glowing and not b.glowing then
-                            if conf.glow.shine then AutoCastShine_AutoCastStart( b.Shine )
-                            else ActionButton_ShowOverlayGlow( b ) end
+                            b.glowColor = b.glowColor or {}
+
+                            if conf.glow.coloring == "class" then
+                                b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = RAID_CLASS_COLORS[ class.file ]:GetRGBA()
+                            elseif conf.glow.coloring == "custom" then
+                                b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = unpack(conf.glow.color)
+                            else
+                                b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = 0.95, 0.95, 0.32, 1
+                            end
+    
+                            if conf.glow.mode == "default" then
+                                Glower.ButtonGlow_Start( b, b.glowColor )
+                                b.glowStop = Glower.ButtonGlow_Stop
+                            elseif conf.glow.mode == "autocast" then
+                                Glower.AutoCastGlow_Start( b, b.glowColor )
+                                b.glowStop = Glower.AutoCastGlow_Stop
+                            elseif conf.glow.mode == "pixel" then
+                                Glower.PixelGlow_Start( b, b.glowColor )
+                                b.glowStop = Glower.PixelGlow_Stop
+                            end
+                            
                             b.glowing = true
                         elseif not glowing and b.glowing then
-                            if conf.glow.shine then AutoCastShine_AutoCastStop( b.Shine )
-                            else ActionButton_HideOverlayGlow( b ) end
+                            b:glowStop()
                             b.glowing = false
                         end
                     else
                         if b.glowing then
-                            AutoCastShine_AutoCastStop( b.Shine )
-                            ActionButton_HideOverlayGlow( b )
+                            b:glowStop()
                             b.glowing = false
                         end
                     end
@@ -904,10 +936,10 @@ do
         end
 
         
-        self.flashTimer = self.flashTimer - elapsed
+        if conf.flash.enabled and LSF then
+            self.flashTimer = self.flashTimer - elapsed
 
-        if self.flashTimer < 0 then
-            if conf.flash.enabled and LSF then
+            if self.flashTimer < 0 then
                 local a = self.Recommendations and self.Recommendations[ 1 ] and self.Recommendations[ 1 ].actionName
 
                 if a then
@@ -916,18 +948,26 @@ do
                     self.flashColor = self.flashColor or {}
                     self.flashColor.r, self.flashColor.g, self.flashColor.b = unpack( conf.flash.color )
 
-                    if ability.item then
-                        local iname = LSF.ItemName( ability.item )
-                        LSF.FlashItem( iname, self.flashColor )
-                    else
-                        local id = ability.known
-                        
-                        if id == nil or type( id ) ~= "number" then
-                            id = ability.id
+                    if self.lastFlash ~= a or now - self.lastFlashTime > 0.5 then
+                        if ability.item then
+                            local iname = LSF.ItemName( ability.item )
+                            LSF.FlashItem( iname, self.flashColor )
+                        else
+                            if ability.flash then
+                                LSF.FlashAction( ability.flash, self.flashColor )
+                            else
+                                local id = ability.known
+                                
+                                if id == nil or type( id ) ~= "number" then
+                                    id = ability.id
+                                end
+
+                                local sname = LSF.SpellName( id )
+                                LSF.FlashAction( sname, self.flashColor )
+                            end
                         end
-                        
-                        local sname = LSF.SpellName( id )
-                        LSF.FlashAction( sname, self.flashColor )
+                        self.lastFlash = a
+                        self.lastFlashTime = now
                     end
                 end
             end
@@ -1145,8 +1185,27 @@ do
                     local a = class.abilities[ r.actionName ]
 
                     if not b.glowing and a and not a.item and IsSpellOverlayed( a.id ) then
-                        if conf.glow.shine then AutoCastShine_AutoCastStart( b.Shine )
-                        else ActionButton_ShowOverlayGlow( b ) end
+                        b.glowColor = b.glowColor or {}
+
+                        if conf.glow.coloring == "class" then
+                            b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = RAID_CLASS_COLORS[ class.file ]:GetRGBA()
+                        elseif conf.glow.coloring == "custom" then
+                            b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = unpack(conf.glow.color)
+                        else
+                            b.glowColor[1], b.glowColor[2], b.glowColor[3], b.glowColor[4] = 0.95, 0.95, 0.32, 1
+                        end
+
+                        if conf.glow.mode == "default" then
+                            Glower.ButtonGlow_Start( b, b.glowColor )
+                            b.glowStop = Glower.ButtonGlow_Stop
+                        elseif conf.glow.mode == "autocast" then
+                            Glower.AutoCastGlow_Start( b, b.glowColor )
+                            b.glowStop = Glower.AutoCastGlow_Stop
+                        elseif conf.glow.mode == "pixel" then
+                            Glower.PixelGlow_Start( b, b.glowColor )
+                            b.glowStop = Glower.PixelGlow_Stop
+                        end
+                        
                         b.glowing = true
                     end
                 end
@@ -1166,8 +1225,7 @@ do
                     local a = class.abilities[ r.actionName ]
 
                     if b.glowing and ( not a or a.item or not IsSpellOverlayed( a.id ) ) then
-                        if conf.glow.shine then AutoCastShine_AutoCastStop( b.Shine )
-                        else ActionButton_HideOverlayGlow( b ) end
+                        b:glowStop()
                         b.glowing = false
                     end
                 end
@@ -1177,6 +1235,12 @@ do
 
         elseif alphaUpdateEvents[ event ] then
             self:UpdateAlpha()
+
+        elseif event == "SPELLS_CHANGED" then
+            for i, rec in ipairs( self.Recommendations ) do                
+                rec.texture = nil
+            end
+            self.NewRecommendations = true
 
         end
     end
@@ -1193,6 +1257,7 @@ do
             self.auraTimer = 0
             self.delayTimer = 0
             self.flashTimer = 0
+            self.lastFlashTime = 0
             self.glowTimer = 0
             self.rangeTimer = 0
             self.recTimer = 0
@@ -1219,6 +1284,9 @@ do
                 for e in pairs( alphaUpdateEvents ) do
                     self:RegisterEvent( e )
                 end
+
+                -- Recheck spell displays if spells have changed.
+                self:RegisterEvent( "SPELLS_CHANGED" )
 
                 -- Update keybindings.
                 for k in pairs( kbEvents ) do
@@ -1536,14 +1604,13 @@ do
         end
 
 
-        -- Shine
-        b.Shine = b.Shine or CreateFrame( "Frame", bName .. "_Shine", b, "AutoCastShineTemplate" )
-        b.Shine:Show()
-        b.Shine:SetAllPoints()
+        -- Initialize glow/noop if button has not yet been glowed.
+        b.glowing = b.glowing or false
+        b.glowStop = b.glowStop or function () end
 
 
         -- Indicator Icons.
-        b.Icon = b.Icon or b.Shine:CreateTexture( nil, "OVERLAY" )
+        b.Icon = b.Icon or b:CreateTexture( nil, "OVERLAY" )
         b.Icon: SetSize( max( 10, b:GetWidth() / 3 ), max( 10, b:GetHeight() / 3 ) )
         
         if conf.keepAspectRatio and b.Icon:GetHeight() ~= b.Icon:GetWidth() then
@@ -1559,19 +1626,19 @@ do
         local iconAnchor = conf.indicators.anchor or "RIGHT"
         
         b.Icon:ClearAllPoints()
-        b.Icon:SetPoint( iconAnchor, b.Shine, iconAnchor, conf.indicators.x or 0, conf.indicators.y or 0 )
+        b.Icon:SetPoint( iconAnchor, b, iconAnchor, conf.indicators.x or 0, conf.indicators.y or 0 )
         b.Icon:Hide()
 
 
         -- Caption Text.
-        b.Caption = b.Caption or b.Shine:CreateFontString( bName .. "_Caption", "OVERLAY" )
+        b.Caption = b.Caption or b:CreateFontString( bName .. "_Caption", "OVERLAY" )
 
         local captionFont = conf.captions.font or conf.font
         b.Caption:SetFont( LSM:Fetch("font", captionFont), conf.captions.fontSize or 12, conf.captions.fontStyle or "OUTLINE" )
 
         local capAnchor = conf.captions.anchor or "BOTTOM"
         b.Caption:ClearAllPoints()
-        b.Caption:SetPoint( capAnchor, b.Shine, capAnchor, conf.captions.x or 0, conf.captions.y or 0 )
+        b.Caption:SetPoint( capAnchor, b, capAnchor, conf.captions.x or 0, conf.captions.y or 0 )
         b.Caption:SetSize( b:GetWidth(), max( 12, b:GetHeight() / 2 ) )
         b.Caption:SetJustifyV( capAnchor )
         b.Caption:SetJustifyH( conf.captions.align or "CENTER" )
@@ -1583,13 +1650,13 @@ do
 
 
         -- Keybinding Text
-        b.Keybinding = b.Keybinding or b.Shine:CreateFontString(bName .. "_KB", "OVERLAY")
+        b.Keybinding = b.Keybinding or b:CreateFontString(bName .. "_KB", "OVERLAY")
         local kbFont = conf.keybindings.font or conf.font
         b.Keybinding:SetFont( LSM:Fetch("font", kbFont), conf.keybindings.fontSize or 12, conf.keybindings.fontStyle or "OUTLINE" )
 
         local kbAnchor = conf.keybindings.anchor or "TOPRIGHT"
         b.Keybinding:ClearAllPoints()
-        b.Keybinding:SetPoint( kbAnchor, b.Shine, kbAnchor, conf.keybindings.x or 0, conf.keybindings.y or 0 )
+        b.Keybinding:SetPoint( kbAnchor, b, kbAnchor, conf.keybindings.x or 0, conf.keybindings.y or 0 )
         b.Keybinding:SetSize( b:GetWidth(), b:GetHeight() / 2 )
         b.Keybinding:SetJustifyH( kbAnchor:match("RIGHT") and "RIGHT" or ( kbAnchor:match("LEFT") and "LEFT" or "CENTER" ) )
         b.Keybinding:SetJustifyV( kbAnchor:match("TOP") and "TOP" or ( kbAnchor:match("BOTTOM") and "BOTTOM" or "MIDDLE" ) )
@@ -1635,7 +1702,11 @@ do
                 edgeSize = 1,
                 insets = { left = -1, right = -1, top = -1, bottom = -1 }
             } )
-            b.Backdrop:SetBackdropBorderColor( unpack( conf.border.color ) )
+            if conf.border.coloring == 'custom' then
+                b.Backdrop:SetBackdropBorderColor( unpack( conf.border.color ) )
+            else
+                b.Backdrop:SetBackdropBorderColor( RAID_CLASS_COLORS[ class.file ]:GetRGBA() )
+            end
             b.Backdrop:Show()
         else
             b.Backdrop:SetBackdrop( nil )
@@ -1651,14 +1722,14 @@ do
             b:SetPoint( "CENTER", d, "CENTER" )
 
             -- Target Counter
-            b.Targets = b.Targets or b.Shine:CreateFontString( bName .. "_Targets", "OVERLAY" )
+            b.Targets = b.Targets or b:CreateFontString( bName .. "_Targets", "OVERLAY" )
 
             local tarFont = conf.targets.font or conf.font
             b.Targets:SetFont( LSM:Fetch( "font", tarFont ), conf.targets.fontSize or 12, conf.targets.fontStyle or "OUTLINE" )
 
             local tarAnchor = conf.targets.anchor or "BOTTOM"
             b.Targets:ClearAllPoints()
-            b.Targets:SetPoint( tarAnchor, b.Shine, tarAnchor, conf.targets.x or 0, conf.targets.y or 0 )
+            b.Targets:SetPoint( tarAnchor, b, tarAnchor, conf.targets.x or 0, conf.targets.y or 0 )
             b.Targets:SetSize( b:GetWidth(), b:GetHeight() / 2 )
             b.Targets:SetJustifyH( tarAnchor:match("RIGHT") and "RIGHT" or ( tarAnchor:match( "LEFT" ) and "LEFT" or "CENTER" ) )
             b.Targets:SetJustifyV( tarAnchor:match("TOP") and "TOP" or ( tarAnchor:match( "BOTTOM" ) and "BOTTOM" or "MIDDLE" ) )
@@ -1690,14 +1761,14 @@ do
 
 
             -- Delay Counter
-            b.DelayText = b.DelayText or b.Shine:CreateFontString( bName .. "_DelayText", "OVERLAY" )
+            b.DelayText = b.DelayText or b:CreateFontString( bName .. "_DelayText", "OVERLAY" )
 
             local delayFont = conf.delays.font or conf.font
             b.DelayText:SetFont( LSM:Fetch("font", delayFont), conf.delays.fontSize or 12, conf.delays.fontStyle or "OUTLINE" )
 
             local delayAnchor = conf.delays.anchor or "TOPLEFT"
             b.DelayText:ClearAllPoints()
-            b.DelayText:SetPoint( delayAnchor, b.Shine, delayAnchor, conf.delays.x, conf.delays.y or 0 )
+            b.DelayText:SetPoint( delayAnchor, b, delayAnchor, conf.delays.x, conf.delays.y or 0 )
             b.DelayText:SetSize( b:GetWidth(), b:GetHeight() / 2 )
 
             b.DelayText:SetJustifyH( delayAnchor:match( "RIGHT" ) and "RIGHT" or ( delayAnchor:match( "LEFT" ) and "LEFT" or "CENTER") )
@@ -1710,18 +1781,18 @@ do
             
 
             -- Delay Icon
-            b.DelayIcon = b.DelayIcon or b.Shine:CreateTexture( bName .. "_DelayIcon", "OVERLAY" )
+            b.DelayIcon = b.DelayIcon or b:CreateTexture( bName .. "_DelayIcon", "OVERLAY" )
             b.DelayIcon:SetSize( min( 20, max( 10, b:GetSize() / 3 ) ), min( 20, max( 10, b:GetSize() / 3 ) ) )
             b.DelayIcon:SetTexture( "Interface\\FriendsFrame\\StatusIcon-Online" )
             b.DelayIcon:SetDesaturated( true )
             b.DelayIcon:SetVertexColor( 1, 0, 0, 1 )
 
             b.DelayIcon:ClearAllPoints()
-            b.DelayIcon:SetPoint( delayAnchor, b.Shine, delayAnchor, conf.delays.x or 0, conf.delays.y or 0 )
+            b.DelayIcon:SetPoint( delayAnchor, b, delayAnchor, conf.delays.x or 0, conf.delays.y or 0 )
             b.DelayIcon:Hide()
 
             -- Overlay (for Pause)
-            b.Overlay = b.Overlay or b.Shine:CreateTexture( nil, "OVERLAY" )
+            b.Overlay = b.Overlay or b:CreateTexture( nil, "OVERLAY" )
             b.Overlay:SetAllPoints( b )
             b.Overlay:SetTexture( "Interface\\Addons\\Hekili\\Textures\\Pause.blp" )
             b.Overlay:SetTexCoord( unpack( b.texCoords ) )
@@ -1850,7 +1921,7 @@ function Hekili:BuildUI()
     -- End Notification Panel
 
     -- Dropdown Menu.
-    ns.UI.Menu = ns.UI.Menu or CreateFrame("Frame", "Hekili_Menu", UIParent, "L_UIDropDownMenuTemplate")
+    ns.UI.Menu = ns.UI.Menu or CreateFrame("Frame", "Hekili_Menu", UIParent, "UIDropDownMenuTemplate")
 
 
     -- Displays
@@ -2011,9 +2082,12 @@ function Hekili:ShowDiagnosticTooltip( q )
 
     -- Grab the default backdrop and copy it with a solid background.
     local backdrop = GameTooltip:GetBackdrop()
-    backdrop.bgFile = [[Interface\Buttons\WHITE8X8]]
-    tt:SetBackdrop(backdrop)
-    tt:SetBackdropColor(0, 0, 0, 1)
+
+    if backdrop then
+        backdrop.bgFile = [[Interface\Buttons\WHITE8X8]]
+        tt:SetBackdrop(backdrop)
+        tt:SetBackdropColor(0, 0, 0, 1)
+    end
 
     tt:SetOwner(UIParent, "ANCHOR_CURSOR")
     tt:SetText(class.abilities[q.actionName].name)
