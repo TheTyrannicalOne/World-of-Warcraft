@@ -1739,14 +1739,15 @@ AllTheThings.L = {
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 				-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
+		[-10069] = "Scenario's",
 		
 		--90000+ are reserved for town names.  If you use one make sure to attach an icon (either here or in the file).
 		
-		[-90000] = "Lunarwing Shallows",
-		[-90001] = "Lostlight Grotto",
+		[-90000] = C_Map.GetAreaInfo(7680),							-- Lunarwing Shallows
+		[-90000] = C_Map.GetAreaInfo(8268),							-- Lostlight Grotto
 		[-90002] = C_Map.GetAreaInfo(9655),							-- Krazzlefrazz Outpost
-		[-90003] = "Waning Glacier",								-- Waning Glacier
-		[-90004] = "Anyport",										-- Currently no localization calls
+		[-90002] = C_Map.GetAreaInfo(9338),							-- Waning Glacier
+		[-90002] = C_Map.GetAreaInfo(9617),							-- Anyport
 		[-90005] = C_Map.GetAreaInfo(9305),							-- Castaway Point
 		
 		-- Durotar
@@ -1796,6 +1797,7 @@ AllTheThings.L = {
 		[35251] = "Interface\\Icons\\Garrison_BronzeChest",
 		[62483] = "Interface\\Icons\\INV_WorseRobot",
 		[112948] = "Interface\\Icons\\INV_Misc_Food_Lunchbox_Silver",
+		[113768] = "Interface\\Icons\\inv_egg_06",
 		[131474] = "Interface\\Icons\\Creatureportrait_Nexus_Floating_Disc",
 		[138492] = "Interface\\Icons\\INV_Misc_Apexis_Shard",
 		[142195] = "Interface\\Icons\\INV_Misc_Map07",
@@ -1816,6 +1818,8 @@ AllTheThings.L = {
 		[179832] = "Interface\\Icons\\inv_misc_armorkit_06",
 		[180448] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[180503] = "Interface\\Icons\\INV_Misc_Book_09",
+		[180690] = "Interface\\Icons\\Garrison_BronzeChest",
+		[180691] = "Interface\\Icons\\Garrison_BronzeChest",
 		[180794] = "Interface\\Icons\\INV_Misc_Book_06",
 		[180918] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[181011] = "Interface\\Icons\\INV_Misc_Book_11",
@@ -1837,9 +1841,13 @@ AllTheThings.L = {
 		[183770] = "Interface\\Icons\\Spell_Mage_FocusingCrystal",
 		[183811] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[184465] = "Interface\\Icons\\INV_6_2Raid_Trinket_3b",
+		[184660] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[184825] = "Interface\\Icons\\INV_Misc_Book_05",
 		[184945] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[184946] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+		[185035] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[185126] = "Interface\\Icons\\ToolTip_CrystallizedFel",
+		[185165] = "Interface\\Icons\\ToolTip_CrystallizedFel",
 		[185927] = "Interface\\Icons\\ToolTip_CrystallizedFel",
 		[186426] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[186648] = "Interface\\Icons\\INV_Box_01",
@@ -2266,6 +2274,7 @@ AllTheThings.L = {
 		[62483] = "A.I.D.A. Communicator",
 		[106780] = "Tidestone of Golganneth",
 		[112948] = "Intrepid's Locked Strongbox",
+		[113768] = GetSpellInfo(61820),
 		[123329] = "Baelog's Chest",
 		[131474] = "The Discs of Norgannon",
 		[131979] = "Large Darkwood Chest",
@@ -2311,6 +2320,7 @@ AllTheThings.L = {
 		[179697] = "Arena Treasure Chest",
 		[180448] = "Wanted Poster: Deathclasp",
 		[180503] = "Sandy Cookbook",
+		[180690] = "Large Scarab Coffer",
 		[180691] = "Scarab Coffer",
 		[180794] = "Journal of Jandice Barov",
 		[180918] = "Wanted: Thaelis the Hungerer",
@@ -2337,12 +2347,16 @@ AllTheThings.L = {
 		[182952] = "Steam Pump Flotsam",
 		[183284] = "Wanted Poster",
 		[183770] = "B'naar Control Console",
-		[183811] = "Wanted Posted",
+		[183811] = "Wanted Poster",
 		[184300] = "Necromantic Focus",
 		[184465] = "Cache of the Legion",
+		[184660] = "Wanted Poster",
+		[184825] = "Lashh'an Tome",
 		[184945] = "Wanted Poster",
 		[184946] = "Wanted Poster",
+		[185035] = "Wanted Poster",
 		[185126] = "Crystal Prison",
+		[185165] = "Legion Communicator",
 		[185168] = "Reinforced Fel Iron Chest",
 		[185927] = "Fel Crystal Prism",
 		[186426] = "Wanted Poster",
@@ -3208,7 +3222,7 @@ AllTheThings.L = {
 		["Sunken Temple"] = "The Temple of Atal'hakkar";
 		["The Sunwell"] = "Sunwell Plateau";
 		["Tempest Keep"] = "The Eye";
-		["Violet Hold"] = "The Violet Hold";
+		["The Violet Hold"] = "Violet Hold";
 	};
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
@@ -3254,7 +3268,7 @@ AllTheThings.L = {
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10
 		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
-		{4, "|CFFFF0000This is legacy instance that is no longer available.|r", "Legacy Instance (12)"}; -- 12
+		{4, "|CFFFF0000This is legacy instance or boss that is no longer available.|r", "Legacy Instance (12)"}; -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}; -- 13
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
@@ -3287,7 +3301,8 @@ AllTheThings.L = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
-		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation for Ulduar broke a number of Hard Mode loot tables.|r", "Ulduar Hard Mode Loot (45)"}; -- 45
-		{2, "|CFFFF0000This item is likely available from Incursions while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Chromaggus' loot table.|r", "Chromaggus Non-Tier Loot (45)"}; -- 45
+		{2, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };

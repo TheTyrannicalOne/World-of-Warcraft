@@ -16,6 +16,9 @@ local round = ns.round
 
 local format = string.format
 
+local HasVehicleActionBar, HasOverrideActionBar, IsInPetBattle, UnitHasVehicleUI, UnitOnTaxi = HasVehicleActionBar, HasOverrideActionBar, C_PetBattles.IsInBattle, UnitHasVehicleUI, UnitOnTaxi
+
+
 local Masque, MasqueGroup
 
 
@@ -556,6 +559,7 @@ do
 
         PLAYER_GAINS_VEHICLE_DATA = 1,
         PLAYER_LOSES_VEHICLE_DATA = 1,        
+        UNIT_ENTERING_VEHICLE = 1,
         UNIT_ENTERED_VEHICLE = 1,
         UNIT_EXITED_VEHICLE = 1,
         UNIT_EXITING_VEHICLE = 1,
@@ -583,9 +587,9 @@ do
         UPDATE_ALL_UI_WIDGETS = 1,
     }
 
-
+    
     local function CalculateAlpha( id )
-        if C_PetBattles.IsInBattle() or UnitOnTaxi("player") or Hekili.Barber or HasVehicleActionBar() or not Hekili:IsDisplayActive( id ) then
+        if IsInPetBattle() or Hekili.Barber or UnitHasVehicleUI("player") or HasVehicleActionBar() or HasOverrideActionBar() or UnitOnTaxi("player") or not Hekili:IsDisplayActive( id ) then
             return 0
         end
 

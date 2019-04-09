@@ -10,24 +10,21 @@ mod.engageId = 2093
 mod.respawnTime = 25
 
 --------------------------------------------------------------------------------
--- Locals
---
-
-local vileBombardmentCount = 0
-
---------------------------------------------------------------------------------
 -- Initialization
 --
 
 function mod:GetOptions()
 	return {
 		"stages",
-		256005, -- Vile Bombardment
 		255952, -- Charrrrrge
-		272046, -- Dive Bomb
 		256106, -- Azerite Powder Shot
+		272046, -- Dive Bomb
 		256060, -- Revitalizing Brew
+		256005, -- Vile Bombardment
 		256016, -- Vile Coating
+	}, {
+		[255952] = -17143, -- Stage: Mounted Assault
+		[256106] = -17146, -- Stage: Death Rains from Above
 	}
 end
 
@@ -48,7 +45,6 @@ function mod:OnBossEnable()
 end
 
 function mod:OnEngage()
-	vileBombardmentCount = 0
 	self:CDBar(255952, 4.8) -- Charrrrrge
 end
 
@@ -56,13 +52,19 @@ end
 -- Event Handlers
 --
 
-function mod:VileBombardment(args)
-	if self:Normal() then
-		self:Bar(args.spellId, 6)
-	else
-		self:Bar(args.spellId, vileBombardmentCount % 2 == 0 and 6 or 10.8)
+do
+	local prev = 0
+	function mod:VileBombardment(args)
+		self:Message2(args.spellId, "yellow")
+		self:PlaySound(args.spellId, "info")
+		if self:Normal() then
+			self:Bar(args.spellId, 6)
+		else
+			local t = args.time
+			self:Bar(args.spellId, t-prev > 8 and 6 or 10.8)
+			prev = t
+		end
 	end
-	vileBombardmentCount = vileBombardmentCount + 1
 end
 
 function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
@@ -73,6 +75,9 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
 
 		self:CDBar(256106, 7) -- Azerite Powder Shot
 		self:Bar(256005, 6) -- Vile Bombardment
+		if not self:Normal() then
+			-- XXX initial Dive Bomb timer
+		end
 	end
 end
 
