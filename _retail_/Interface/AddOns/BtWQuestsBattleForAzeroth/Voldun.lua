@@ -1602,7 +1602,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_CHAIN4, {
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 287440,
             -- name = "Go to the Wanted Poster",
             -- onClick = function ()
@@ -1990,7 +1990,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_CHAIN6, {
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 282498,
             -- name = "Go to the Desert Flute",
             -- onClick = function ()
@@ -2307,7 +2307,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_CHAIN9, {
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 287442,
             -- name = "Go to the Wanted Poster",
             -- onClick = function ()

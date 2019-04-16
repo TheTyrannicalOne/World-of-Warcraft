@@ -56,6 +56,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [3924] = {
         name = "Schamane der Distelfelle",
     },
+    [3936] = {
+        name = "Shandris Mondfeder",
+    },
     [3995] = {
         name = "Hexendoktor Jin'Zil",
     },
@@ -64,6 +67,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [4079] = {
         name = "Schildwache Thenysil",
+    },
+    [4968] = {
+        name = "Lady Jaina Prachtmeer",
+    },
+    [5385] = {
+        name = "Behüter Mahar Ba",
     },
     [8582] = {
         name = "Kadrak",
@@ -124,6 +133,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [17355] = {
         name = "Valusha",
+    },
+    [23569] = {
+        name = "Renn McGill",
     },
     [24739] = {
         name = "Benjari Edune",
@@ -248,8 +260,29 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [34604] = {
         name = "Großer Baobob",
     },
+    [37135] = {
+        name = "Nura Pfadfinder",
+    },
+    [37717] = {
+        name = "Winnoa Kiefernwald",
+    },
+    [38535] = {
+        name = "Kelsey Stahlfunken",
+    },
+    [38704] = {
+        name = "Kelsey Stahlfunken",
+    },
+    [38878] = {
+        name = "Geschundener Leichnam",
+    },
+    [39059] = {
+        name = "Kelsey Stahlfunken",
+    },
     [39256] = {
         name = "Kalen Freipfeil",
+    },
+    [40109] = {
+        name = "Ausgrabungsleiter Gunstan",
     },
     [40879] = {
         name = "Boog der \"Zahnradflüsterer\"",
@@ -386,10 +419,40 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [42106] = {
         name = "Oberanführer Krom'gar",
     },
+    [42298] = {
+        name = "Kasim Sharim",
+    },
+    [45948] = {
+        name = "Der verrückte Larry",
+    },
+    [46172] = {
+        name = "Baba Torfbräu",
+    },
+    [47779] = {
+        name = "Mouton Flammenstern",
+    },
+    [47811] = {
+        name = "John J. Keeshan",
+    },
+    [48109] = {
+        name = "John J. Keeshan",
+    },
+    [48133] = {
+        name = "General Thorg'izog",
+    },
+    [48208] = {
+        name = "Die Rassel der Knochen",
+    },
+    [48306] = {
+        name = "John J. Keeshan",
+    },
+    [48568] = {
+        name = "Etrigg",
+    },
+    [48569] = {
+        name = "Etrigg",
+    },
     [49748] = {
         name = "Heldenherold",
-    },
-    [203186] = {
-        name = "BETRETEN VERBOTEN!",
     },
 })

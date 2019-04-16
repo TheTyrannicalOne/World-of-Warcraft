@@ -641,7 +641,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_THE_RAREST_SUBSTANCE_
 	},
 	completed = {
 		type = "quest",
-		id = 14388,
+		ids = {14383, 14388},
+		count = 2,
 	},
 	items = {
 		{
@@ -687,7 +688,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_THE_RAREST_SUBSTANCE_
 		{
 			type = "quest",
 			id = 14383,
-			aside = true,
 			x = 1,
 			y = 3,
 		},

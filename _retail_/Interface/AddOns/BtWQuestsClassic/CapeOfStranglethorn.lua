@@ -20,7 +20,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
     },
     range = {30,60},
     items = {
-        
         {
             {
                 type = "quest",
@@ -104,7 +103,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
             type = "quest",
             id = 26825,
             x = 3,
-            y = 1,
             connections = {
                 1,
             },
@@ -113,31 +111,23 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
             type = "quest",
             id = 26823,
             x = 3,
-            y = 2,
             connections = {
-                2,
-                3,
-                4,
-                5,
+                2, 3, 4, 5,
             },
         },
         {
             type = "quest",
             id = 26822,
             x = 5,
-            y = 2,
         },
         {
             type = "quest",
             id = 26818,
             x = 0,
-            y = 3,
         },
         {
             type = "quest",
             id = 26817,
-            x = 2,
-            y = 3,
             connections = {
                 3,
             },
@@ -145,8 +135,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
         {
             type = "quest",
             id = 26819,
-            x = 4,
-            y = 3,
             connections = {
                 3,
             },
@@ -154,42 +142,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
         {
             type = "quest",
             id = 26820,
-            x = 6,
-            y = 3,
         },
         {
             type = "quest",
             id = 26815,
             x = 1,
-            y = 4,
             connections = {
-                2,
+                2, 3
             },
         },
         {
             type = "quest",
             id = 26808,
             x = 5,
-            y = 4,
-            connections = {
-                2,
-            },
-        },
-        {
-            type = "quest",
-            id = 26809,
-            x = 1,
-            y = 5,
-            connections = {
-                2,
-                3,
-            },
-        },
-        {
-            type = "quest",
-            id = 26809,
-            x = 5,
-            y = 5,
             connections = {
                 3,
             },
@@ -198,22 +163,18 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
             type = "quest",
             id = 26816,
             x = 0,
-            y = 6,
         },
         {
             type = "quest",
             id = 26824,
-            x = 2,
-            y = 6,
             connections = {
                 2,
             },
         },
         {
             type = "quest",
-            id = 26810,
+            id = 26809,
             x = 5,
-            y = 6,
             connections = {
                 2,
             },
@@ -222,13 +183,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
             type = "quest",
             id = 26821,
             x = 2,
-            y = 7,
+        },
+        {
+            type = "quest",
+            id = 26810,
+            x = 5,
+            connections = {
+                1,
+            },
         },
         {
             type = "quest",
             id = 26811,
             x = 5,
-            y = 7,
             connections = {
                 1,
             },
@@ -237,7 +204,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
             type = "quest",
             id = 26812,
             x = 5,
-            y = 8,
             connections = {
                 1,
             },
@@ -246,7 +212,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
             type = "quest",
             id = 26813,
             x = 5,
-            y = 9,
             connections = {
                 1,
             },
@@ -255,7 +220,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_CAPE_OF_STRANGLETHORN_ZULGURU
             type = "quest",
             id = 26814,
             x = 5,
-            y = 10,
         },
     },
 })

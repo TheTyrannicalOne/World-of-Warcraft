@@ -56,6 +56,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [3924] = {
         name = "Chaman Crin-de-Chardon",
     },
+    [3936] = {
+        name = "Shandris Pennelune",
+    },
     [3995] = {
         name = "Féticheur Jin'Zil",
     },
@@ -64,6 +67,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [4079] = {
         name = "Sentinelle Thenysil",
+    },
+    [4968] = {
+        name = "Dame Jaina Portvaillant",
+    },
+    [5385] = {
+        name = "Le Gardien Mahar Ba",
     },
     [8582] = {
         name = "Kadrak",
@@ -124,6 +133,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [17355] = {
         name = "Valusha",
+    },
+    [23569] = {
+        name = "Renn McBranchie",
     },
     [24739] = {
         name = "Benjari Edune",
@@ -248,8 +260,29 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [34604] = {
         name = "Grand-Baobab",
     },
+    [37135] = {
+        name = "Nura la Guide",
+    },
+    [37717] = {
+        name = "Winnoa Forêt-de-Pins",
+    },
+    [38535] = {
+        name = "Kelsey Etinçacier",
+    },
+    [38704] = {
+        name = "Kelsey Etinçacier",
+    },
+    [38878] = {
+        name = "Corps mutilé",
+    },
+    [39059] = {
+        name = "Kelsey Etinçacier",
+    },
     [39256] = {
         name = "Kalen Tir-Précis",
+    },
+    [40109] = {
+        name = "Le prospecteur Gunstan",
     },
     [40879] = {
         name = "Boug le « Gnome qui murmurait à l'oreille des rouages »",
@@ -386,10 +419,40 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [42106] = {
         name = "Suzerain Krom'gar",
     },
+    [42298] = {
+        name = "Kasim Sharim",
+    },
+    [45948] = {
+        name = "Larry le fol",
+    },
+    [46172] = {
+        name = "Baba Tourbebière",
+    },
+    [47779] = {
+        name = "Mouton Flammétoile",
+    },
+    [47811] = {
+        name = "John J. Keeshan",
+    },
+    [48109] = {
+        name = "John J. Keeshan",
+    },
+    [48133] = {
+        name = "Le général Thorg’izog",
+    },
+    [48208] = {
+        name = "Le hochet en os",
+    },
+    [48306] = {
+        name = "John J. Keeshan",
+    },
+    [48568] = {
+        name = "Eitrigg",
+    },
+    [48569] = {
+        name = "Eitrigg",
+    },
     [49748] = {
         name = "Héraut du héros",
-    },
-    [203186] = {
-        name = "ENTRÉE INTERDITE !",
     },
 })

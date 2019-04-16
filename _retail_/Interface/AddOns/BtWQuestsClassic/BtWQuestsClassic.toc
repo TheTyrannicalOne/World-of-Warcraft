@@ -1,6 +1,6 @@
 ## Interface: 80100
 ## Title: BtWQuests: Classic
-## Version: 4
+## Version: 7
 ## Notes: Classic quest data for BtWQuests
 ## Author: Breen
 ## Dependencies: BtWQuests
@@ -29,21 +29,66 @@ NPCs.ptBR.lua
 NPCs.ruRU.lua
 NPCs.zhTW.lua
 
+Objects.lua
+Objects.deDE.lua
+Objects.esES.lua
+Objects.esMX.lua
+Objects.frFR.lua
+Objects.itIT.lua
+Objects.koKR.lua
+Objects.ptBR.lua
+Objects.ruRU.lua
+Objects.zhCN.lua
+Objects.zhTW.lua
+
+Index.lua
+Index.deDE.lua
+Index.esES.lua
+Index.esMX.lua
+Index.frFR.lua
+Index.itIT.lua
+Index.koKR.lua
+Index.ptBR.lua
+Index.ruRU.lua
+Index.zhCN.lua
+Index.zhTW.lua
+
 Azshara.lua
 Darkshore.lua
 LochModan.lua
 NorthernBarrens.lua
 SilverpineForest.lua
 Westfall.lua
+
 Ashenvale.lua
 HillsbradFoothills.lua
 RedridgeMountains.lua
+
 Duskwood.lua
 StonetalonMountains.lua
 Wetlands.lua
+
 ArathiHighlands.lua
 NorthenStranglethorn.lua
+SouthernBarrens.lua
+
 CapeOfStranglethorn.lua
+Desolace.lua
 Hinterlands.lua
+
+DustwallowMarsh.lua
+Feralas.lua
 WesternPlaguelands.lua
+
+Badlands.lua
+BlastedLands.lua
+BurningSteppes.lua
 EasternPlaguelands.lua
+Felwood.lua
+SearingGorge.lua
+Silithus.lua
+SwampOfSorrows.lua
+Tanaris.lua
+ThousandNeedles.lua
+UngoroCrater.lua
+Winterspring.lua

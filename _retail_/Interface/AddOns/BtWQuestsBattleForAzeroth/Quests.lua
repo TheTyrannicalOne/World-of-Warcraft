@@ -40,7 +40,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 270917,
         },
         rewards = {
@@ -140,6 +140,10 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 110,
         maxLevel = 120,
         levelFlag = 3,
+        source = {
+            type = "npc",
+            id = 124630,
+        },
         rewards = {
             {
                 type = "money",
@@ -3889,7 +3893,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 271706,
             locations = {
                 [862] = {
@@ -4811,7 +4815,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 277459,
         },
         rewards = {
@@ -5032,7 +5036,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 272179,
         },
         rewards = {
@@ -5068,7 +5072,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 278669,
         },
         rewards = {
@@ -5128,7 +5132,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 272422,
             locations = {
                 [896] = {
@@ -5156,7 +5160,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 278675,
         },
         rewards = {
@@ -5458,7 +5462,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 281230,
         },
         rewards = {
@@ -6166,7 +6170,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 281639,
             locations = {
                 [864] = {
@@ -6570,7 +6574,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 281718,
         },
         rewards = {
@@ -7865,7 +7869,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 273814,
         },
         rewards = {
@@ -8700,7 +8704,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 273854,
         },
         rewards = {
@@ -8832,7 +8836,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 276488,
         },
         rewards = {
@@ -8930,7 +8934,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 276187,
         },
         rewards = {
@@ -8959,7 +8963,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 276187,
         },
         rewards = {
@@ -9336,7 +9340,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 276837,
         },
         rewards = {
@@ -9512,7 +9516,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 276251,
             locations = {
                 [896] = {
@@ -10042,7 +10046,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 276515,
         },
         rewards = {
@@ -10062,7 +10066,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 276513,
         },
         rewards = {
@@ -10287,40 +10291,6 @@ BtWQuestsDatabase:AddQuestsTable({
                     type = "faction",
                     id = BTWQUESTS_FACTION_ID_HORDE,
                 },
-            },
-        },
-    },
-    [48897] = {
-        name = "The Bargain is Struck",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 5,
-        source = {
-            type = "npc",
-            id = 127576,
-            locations = {
-                [862] = {
-                    {
-                        x = 0.578,
-                        y = 0.402,
-                    },
-                },
-                [1165] = {
-                    {
-                        x = 0.498,
-                        y = 0.334,
-                    },
-                },
-            },
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    19400, 19800, 20200, 20600, 21000, 21400, 21800, 22200, 22600, 23000, 23400, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
             },
         },
     },
@@ -10977,7 +10947,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 278447,
         },
         rewards = {
@@ -11064,7 +11034,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 277199,
             locations = {
                 [895] = {
@@ -11311,7 +11281,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 277199,
             locations = {
                 [895] = {
@@ -11844,7 +11814,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 289728,
         },
         rewards = {
@@ -12154,7 +12124,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 277373,
         },
         rewards = {
@@ -13373,7 +13343,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 278197,
         },
         rewards = {
@@ -13581,7 +13551,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 278252,
         },
         rewards = {
@@ -13961,7 +13931,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 278313,
         },
         rewards = {
@@ -14434,7 +14404,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 278368,
             locations = {
                 [864] = {
@@ -14818,7 +14788,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 278577,
         },
         rewards = {
@@ -15213,7 +15183,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 278570,
         },
         rewards = {
@@ -15393,7 +15363,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 278570,
             locations = {
                 [1165] = {
@@ -16257,7 +16227,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 287958,
             locations = {
                 [942] = {
@@ -17347,7 +17317,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 279337,
             locations = {
                 [896] = {
@@ -17545,7 +17515,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 280576,
         },
         rewards = {
@@ -17651,7 +17621,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 110,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 279647,
         },
         rewards = {
@@ -17727,7 +17697,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 110,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 279646,
         },
         rewards = {
@@ -17746,7 +17716,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 110,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 279645,
         },
         rewards = {
@@ -19355,7 +19325,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 244983,
         },
         rewards = {
@@ -19852,7 +19822,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 282457,
             locations = {
                 [942] = {
@@ -20042,7 +20012,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 110,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 280957,
         },
         rewards = {
@@ -20205,7 +20175,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 110,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 280755,
         },
         rewards = {
@@ -20357,7 +20327,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 280727,
         },
         rewards = {
@@ -21605,7 +21575,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 282478,
         },
         rewards = {
@@ -22351,7 +22321,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 281348,
         },
         rewards = {
@@ -23150,7 +23120,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 281551,
         },
         rewards = {
@@ -23252,7 +23222,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 281583,
         },
         rewards = {
@@ -23281,7 +23251,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 281647,
         },
         rewards = {
@@ -23397,7 +23367,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 281673,
         },
         rewards = {
@@ -24386,35 +24356,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [50694] = {
-        name = "A Bloody Mess",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            id = 134639,
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-            {
-                type = "reputation",
-                id = 2162,
-                amount = 75,
-                restrictions = {
-                    type = "faction",
-                    id = BTWQUESTS_FACTION_ID_ALLIANCE,
-                },
-            },
-        },
-    },
     [50696] = {
         name = "Fun With Magnets",
         requiredLevel = 110,
@@ -24751,7 +24692,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 290993,
         },
         rewards = {
@@ -26108,7 +26049,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 282498,
         },
         rewards = {
@@ -26626,7 +26567,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 284426,
         },
         rewards = {
@@ -27006,7 +26947,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 286016,
             locations = {
                 [896] = {
@@ -27184,16 +27125,8 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287081,
-            locations = {
-                [863] = {
-                    {
-                        x = 0.529,
-                        y = 0.759,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -27705,7 +27638,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287185,
         },
         rewards = {
@@ -27743,16 +27676,8 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287189,
-            locations = {
-                [862] = {
-                    {
-                        x = 0.516,
-                        y = 0.455,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -27780,16 +27705,8 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287189,
-            locations = {
-                [862] = {
-                    {
-                        x = 0.516,
-                        y = 0.455,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -27817,7 +27734,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287228,
         },
         rewards = {
@@ -27846,7 +27763,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287229,
         },
         rewards = {
@@ -27894,7 +27811,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287232,
         },
         rewards = {
@@ -27923,7 +27840,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 271706,
             locations = {
                 [862] = {
@@ -28053,7 +27970,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287327,
         },
         rewards = {
@@ -28082,7 +27999,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 290765,
         },
         rewards = {
@@ -28290,7 +28207,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287398,
         },
         rewards = {
@@ -28319,7 +28236,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287440,
         },
         rewards = {
@@ -28348,7 +28265,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287442,
         },
         rewards = {
@@ -28377,7 +28294,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 287441,
         },
         rewards = {
@@ -28451,6 +28368,10 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Flight from the Fall",
         requiredLevel = 110,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 136645,
+        },
         rewards = {
             {
                 type = "money",
@@ -28684,7 +28605,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 287958,
         },
         rewards = {
@@ -28906,7 +28827,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 288157,
         },
         rewards = {
@@ -28935,7 +28856,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 288167,
             locations = {
                 [942] = {
@@ -29188,7 +29109,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 288214,
         },
         rewards = {
@@ -29639,14 +29560,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 135612,
-            locations = {
-                [895] = {
-                    {
-                        x = 0.74,
-                        y = 0.262,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -30128,7 +30041,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 288622,
         },
         rewards = {
@@ -30194,7 +30107,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 288641,
             locations = {
                 [895] = {
@@ -30294,7 +30207,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 289310,
         },
         rewards = {
@@ -30323,7 +30236,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 289313,
         },
         rewards = {
@@ -30410,7 +30323,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 289361,
         },
         rewards = {
@@ -30500,7 +30413,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 289365,
             locations = {
                 [896] = {
@@ -30695,14 +30608,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 135620,
-            locations = {
-                [862] = {
-                    {
-                        x = 0.775,
-                        y = 0.5522,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -31068,6 +30973,18 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "The Uncorrupted",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 143845,
+            locations = {
+                {
+                    {
+                        x = 0.41255,
+                        y = 0.167739,
+                    },
+                },
+            },
+        },
         rewards = {
             {
                 type = "money",
@@ -31790,7 +31707,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 290138,
             locations = {
                 [942] = {
@@ -31914,7 +31831,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 290419,
         },
         rewards = {
@@ -32105,7 +32022,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 290537,
         },
         rewards = {
@@ -32461,7 +32378,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 290750,
         },
         rewards = {
@@ -33470,7 +33387,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 291143,
         },
         rewards = {
@@ -33682,14 +33599,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 135612,
-            locations = {
-                [1161] = {
-                    {
-                        x = 0.6914,
-                        y = 0.2712,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -33793,7 +33702,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 291291,
         },
         rewards = {
@@ -34011,38 +33920,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [52023] = {
-        name = "Informing the Horde",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 5,
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    582000, 594000, 606000, 618000, 630000, 642000, 654000, 666000, 678000, 690000, 702000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
-    [52024] = {
-        name = "Informing the Horde",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 5,
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    582000, 594000, 606000, 618000, 630000, 642000, 654000, 666000, 678000, 690000, 702000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
     [52026] = {
         name = "Overseas Assassination",
         requiredLevel = 120,
@@ -34172,7 +34049,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 292523,
         },
         rewards = {
@@ -35866,14 +35743,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 135612,
-            locations = {
-                [1161] = {
-                    {
-                        x = 0.692,
-                        y = 0.268,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -36023,7 +35892,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 293567,
         },
         rewards = {
@@ -36057,7 +35926,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 5,
         source = {
-            type = "npc",
+            type = "object",
             id = 293568,
             locations = {
                 [863] = {
@@ -36996,7 +36865,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 293985,
         },
         rewards = {
@@ -37023,6 +36892,18 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Restoring Old Bonds",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 126066,
+            locations = {
+                [1163] = {
+                    {
+                        x = 0.703841,
+                        y = 0.695155,
+                    },
+                },
+            },
+        },
         rewards = {
             {
                 type = "money",
@@ -37034,6 +36915,10 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Calling Out the Clans",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 142422,
+        },
         rewards = {
             {
                 type = "money",
@@ -37065,6 +36950,10 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Bonds Forged Through Battle",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 142275,
+        },
         rewards = {
             {
                 type = "money",
@@ -37211,6 +37100,10 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Tyranny of the Light",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 137837,
+        },
         rewards = {
             {
                 type = "money",
@@ -37222,6 +37115,10 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Call to Arms: Tiragarde Sound",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 143536,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -38075,7 +37972,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 297492,
         },
         rewards = {
@@ -38124,16 +38021,28 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Echo of Warlord Zaela",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 143692,
+        },
     },
     [53354] = {
         name = "Echo of Gul'dan",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 15192,
+        },
     },
     [53355] = {
         name = "Echo of Garrosh Hellscream",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 143692,
+        },
     },
     [53369] = {
         name = "Make Loh Go",
@@ -38284,34 +38193,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [53434] = {
-        name = "The Vanishing Lord",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            id = 143746,
-            locations = {
-                [896] = {
-                    {
-                        x = 0.608,
-                        y = 0.154,
-                    },
-                },
-            },
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    19400, 19800, 20200, 20600, 21000, 21400, 21800, 22200, 22600, 23000, 23400, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
     [53438] = {
         name = "WANTED: Wyvern Poachers",
         requiredLevel = 110,
@@ -38346,34 +38227,6 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [53439] = {
-        name = "Blood in the Tides",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            id = 143777,
-            locations = {
-                [895] = {
-                    {
-                        x = 0.852,
-                        y = 0.804,
-                    },
-                },
-            },
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
     [53440] = {
         name = "WANTED: The Hornet",
         requiredLevel = 110,
@@ -38405,111 +38258,6 @@ BtWQuestsDatabase:AddQuestsTable({
                     type = "faction",
                     id = BTWQUESTS_FACTION_ID_ALLIANCE,
                 },
-            },
-        },
-    },
-    [53442] = {
-        name = "The Castaways",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            locations = {
-                [895] = {
-                    x = 0.85485816001892,
-                    y = 0.83543002605438,
-                },
-            },
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    19400, 19800, 20200, 20600, 21000, 21400, 21800, 22200, 22600, 23000, 23400, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
-    [53443] = {
-        name = "My Favorite Things",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            id = 128229,
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
-    [53444] = {
-        name = "Glimmering Locket",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            id = 277373,
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
-    [53445] = {
-        name = "Silencing the Sisters",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            id = 128229,
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
-            },
-        },
-    },
-    [53446] = {
-        name = "Local Flavor",
-        requiredLevel = 110,
-        maxLevel = 120,
-        levelFlag = 3,
-        source = {
-            type = "npc",
-            id = 128228,
-        },
-        rewards = {
-            {
-                type = "money",
-                amounts = {
-                    194000, 198000, 202000, 206000, 210000, 214000, 218000, 222000, 226000, 230000, 234000, 
-                },
-                minLevel = 110,
-                maxLevel = 120,
             },
         },
     },
@@ -38602,6 +38350,10 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 110,
         maxLevel = 120,
         levelFlag = 5,
+        source = {
+            type = "npc",
+            id = 143792,
+        },
         rewards = {
             {
                 type = "money",
@@ -38657,7 +38409,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 298849,
             locations = {
                 [895] = {
@@ -38703,7 +38455,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 288214,
         },
         rewards = {
@@ -38732,7 +38484,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 298858,
             locations = {
                 [896] = {
@@ -38769,7 +38521,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 298858,
             locations = {
                 [896] = {
@@ -38806,7 +38558,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         levelFlag = 3,
         source = {
-            type = "npc",
+            type = "object",
             id = 298858,
             locations = {
                 [896] = {
@@ -38967,6 +38719,10 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Caverns of Time",
         requiredLevel = 120,
         maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 131443,
+        },
     },
     [53566] = {
         name = "Dark Iron Dwarves",
@@ -39176,6 +38932,335 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 23400,
+            },
+        },
+    },
+    [53760] = {
+        name = "Unintended Consequences",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "object",
+            id = 311218,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [53761] = {
+        name = "The Pirate's Treasure",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 144773,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [53762] = {
+        name = "The Tempest Crown",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [53763] = {
+        name = "Twist the Knife",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146384,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+        },
+    },
+    [53765] = {
+        name = "His Eye Upon You",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146902,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53766] = {
+        name = "His Eye Upon You",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146335,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53774] = {
+        name = "Wisdom of the Warchief",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 141555,
+            locations = {
+                [1165] = {
+                    x = 0.4950709939003,
+                    y = 0.46055573225021,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 10,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 10,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
+            },
+        },
+    },
+    [53775] = {
+        name = "Shades of Disruption",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145190,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
+            },
+        },
+    },
+    [53776] = {
+        name = "To the Broken Shore",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145225,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53777] = {
+        name = "Where He Died",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146290,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
+            },
+        },
+    },
+    [53778] = {
+        name = "Where He Fell",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
+            },
+        },
+    },
+    [53779] = {
+        name = "The Lies of a Loa",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146630,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [53780] = {
+        name = "Jailor of the Damned",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 122688,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 350,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 350,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
+            },
+        },
+    },
+    [53781] = {
+        name = "Eyir",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 122688,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
+            },
+        },
+    },
+    [53782] = {
+        name = "Mysteries of Death",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 122688,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 702000,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 500,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 500,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
             },
         },
     },
@@ -39593,7 +39678,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 307748,
         },
         rewards = {
@@ -39608,7 +39693,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 311155,
         },
         rewards = {
@@ -39691,7 +39776,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 309498,
         },
         rewards = {
@@ -39837,21 +39922,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 134711,
-        },
-        rewards = {
-            {
-                type = "money",
-                amount = 23400,
-            },
-        },
-    },
-    [53851] = {
-        name = "Our War Continues",
-        requiredLevel = 120,
-        maxLevel = 120,
-        source = {
-            type = "npc",
-            id = 135691,
         },
         rewards = {
             {
@@ -40337,7 +40407,7 @@ BtWQuestsDatabase:AddQuestsTable({
         requiredLevel = 120,
         maxLevel = 120,
         source = {
-            type = "npc",
+            type = "object",
             id = 307748,
         },
         rewards = {
@@ -40872,6 +40942,12 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 149471,
+            locations = {
+                [862] = {
+                    x = 0.58956438302994,
+                    y = 0.60392916202545,
+                },
+            },
         },
         rewards = {
             {
@@ -40916,7 +40992,7 @@ BtWQuestsDatabase:AddQuestsTable({
         maxLevel = 120,
         source = {
             type = "npc",
-            id = 146324,
+            id = 146325,
         },
         rewards = {
             {
@@ -40982,6 +41058,21 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 23400,
+            },
+        },
+    },
+    [54058] = {
+        name = "Unintended Consequences",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "object",
+            id = 311885,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
             },
         },
     },
@@ -41238,6 +41329,81 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [54113] = {
+        name = "Every Little Death Helps",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "object",
+            id = 311218,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54114] = {
+        name = "Every Little Death Helps",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "object",
+            id = 311885,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54117] = {
+        name = "Every Little Death Helps",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "object",
+            id = 311218,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54118] = {
+        name = "Every Little Death Helps",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "object",
+            id = 311218,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54120] = {
+        name = "To Orgrimmar",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 145981,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
     [54121] = {
         name = "Breaking Out Ashvane",
         requiredLevel = 120,
@@ -41275,6 +41441,21 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 148339,
+        },
+    },
+    [54126] = {
+        name = "Twist the Knife",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146384,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 468000,
+            },
         },
     },
     [54128] = {
@@ -41319,6 +41500,90 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 117000,
+            },
+        },
+    },
+    [54141] = {
+        name = "The Azsharan Medallion",
+        requiredLevel = 120,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54144] = {
+        name = "Orders from Azshara",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 135793,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54145] = {
+        name = "The Loa of Death",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146824,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
+            },
+        },
+    },
+    [54147] = {
+        name = "Confront The Val'kyr",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146877,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 2103,
+                amount = 250,
+                restrictions = {
+                    type = "faction",
+                    id = BTWQUESTS_FACTION_ID_HORDE,
+                },
             },
         },
     },
@@ -41397,14 +41662,6 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 135691,
-            locations = {
-                [862] = {
-                    {
-                        x = 0.584383,
-                        y = 0.626693,
-                    },
-                },
-            },
         },
         rewards = {
             {
@@ -41459,6 +41716,21 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 135612,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54174] = {
+        name = "Orders from Azshara",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 134345,
         },
         rewards = {
             {
@@ -41903,11 +42175,34 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 146921,
+            locations = {
+                [863] = {
+                    {
+                        x = 0.308996,
+                        y = 0.518705,
+                    },
+                },
+            },
         },
         rewards = {
             {
                 type = "money",
                 amount = 234000,
+            },
+        },
+    },
+    [54265] = {
+        name = "Orders from Azshara",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 135793,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
             },
         },
     },
@@ -41978,6 +42273,14 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 147075,
+            locations = {
+                [863] = {
+                    {
+                        x = 0.31354,
+                        y = 0.319547,
+                    },
+                },
+            },
         },
         rewards = {
             {
@@ -42225,6 +42528,51 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 23400,
+            },
+        },
+    },
+    [54433] = {
+        name = "Orders from Azshara",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 134345,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54438] = {
+        name = "Crucible of Storms: Relics of Shadow",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146902,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 936000,
+            },
+        },
+    },
+    [54439] = {
+        name = "Crucible of Storms: Relics of Shadow",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 146335,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 936000,
             },
         },
     },
@@ -42715,6 +43063,111 @@ BtWQuestsDatabase:AddQuestsTable({
         source = {
             type = "npc",
             id = 149612,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54913] = {
+        name = "Spark of Genius",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 152002,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54915] = {
+        name = "Telemetry Online",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 149736,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54916] = {
+        name = "The Huntsman's Creed",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 149736,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54917] = {
+        name = "Paid in Blood",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 149870,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54918] = {
+        name = "Spark of Imagination",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 150391,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 23400,
+            },
+        },
+    },
+    [54919] = {
+        name = "Bonds of Thunder",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151061,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 234000,
+            },
+        },
+    },
+    [54920] = {
+        name = "Homeward Bound",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 151061,
         },
         rewards = {
             {
@@ -43382,6 +43835,21 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "money",
                 amount = 23400,
+            },
+        },
+    },
+    [55195] = {
+        name = "Reverberation",
+        requiredLevel = 120,
+        maxLevel = 120,
+        source = {
+            type = "npc",
+            id = 29445,
+        },
+        rewards = {
+            {
+                type = "money",
+                amount = 117000,
             },
         },
     },

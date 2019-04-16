@@ -1,6 +1,72 @@
 ----- AUTO GENERATED - DO NOT EDIT
 
 BtWQuestsDatabase:AddNPCsTable({
+    [1068] = {
+        name = "Gorn",
+        locations = {
+            [15] = {
+                {
+                    x = 0.176758,
+                    y = 0.439623,
+                },
+            },
+        },
+    },
+    [1141] = {
+        name = "Angus Stern",
+        locations = {
+            [84] = {
+                {
+                    x = 0.517924,
+                    y = 0.936128,
+                },
+            },
+        },
+    },
+    [1750] = {
+        name = "Grand Admiral Jes-Tereth",
+        locations = {
+            [84] = {
+                {
+                    x = 0.858571,
+                    y = 0.327931,
+                },
+            },
+        },
+    },
+    [2785] = {
+        name = "Theldurin the Lost",
+        locations = {
+            [15] = {
+                {
+                    x = 0.262065,
+                    y = 0.622896,
+                },
+            },
+        },
+    },
+    [2860] = {
+        name = "Sigrun Ironhew",
+        locations = {
+            [15] = {
+                {
+                    x = 0.494975,
+                    y = 0.369919,
+                },
+            },
+        },
+    },
+    [2920] = {
+        name = "Lucien Tosselwrench",
+        locations = {
+            [15] = {
+                {
+                    x = 0.262753,
+                    y = 0.625461,
+                },
+            },
+        },
+    },
     [3144] = {
         name = "Eitrigg",
         locations = {
@@ -12,8 +78,128 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [3337] = {
+        name = "Kargal Battlescar",
+        locations = {
+            {
+                x = 0.3259574174881,
+                y = 0.42761135101318,
+            },
+        },
+    },
+    [3338] = {
+        name = "Sergra Darkthorn",
+        locations = {
+            [10] = {
+                {
+                    x = 0.499883,
+                    y = 0.598472,
+                },
+            },
+        },
+    },
+    [3339] = {
+        name = "Captain Thalo'thas Brightsun",
+        locations = {
+            [10] = {
+                {
+                    x = 0.677166,
+                    y = 0.73998,
+                },
+            },
+        },
+    },
+    [3341] = {
+        name = "Gann Stonespire",
+        locations = {
+            [199] = {
+                {
+                    x = 0.492242,
+                    y = 0.823801,
+                },
+            },
+        },
+    },
+    [3387] = {
+        name = "Jorn Skyseer",
+        locations = {
+            [199] = {
+                {
+                    x = 0.415207,
+                    y = 0.471946,
+                },
+            },
+        },
+    },
+    [3389] = {
+        name = "Regthar Deathgate",
+        locations = {
+            [10] = {
+                {
+                    x = 0.378343,
+                    y = 0.552703,
+                },
+            },
+        },
+    },
+    [3390] = {
+        name = "Apothecary Helbrim",
+        locations = {
+            [10] = {
+                {
+                    x = 0.485923,
+                    y = 0.583396,
+                },
+            },
+        },
+    },
     [3411] = {
         name = "Denni'ka",
+    },
+    [3418] = {
+        name = "Kirge Sternhorn",
+        locations = {
+            [199] = {
+                {
+                    x = 0.416162,
+                    y = 0.465057,
+                },
+            },
+        },
+    },
+    [3429] = {
+        name = "Thork",
+    },
+    [3432] = {
+        name = "Mankrik",
+    },
+    [3433] = {
+        name = "Tatternack Steelforge",
+        locations = {
+            [199] = {
+                {
+                    x = 0.417313,
+                    y = 0.466376,
+                },
+            },
+        },
+    },
+    [3448] = {
+        name = "Tonga Runetotem",
+    },
+    [3454] = {
+        name = "Cannoneer Smythe",
+        locations = {
+            [199] = {
+                {
+                    x = 0.686256,
+                    y = 0.44471,
+                },
+            },
+        },
+    },
+    [3464] = {
+        name = "Gazrog",
     },
     [3691] = {
         name = "Raene Wolfrunner",
@@ -72,6 +258,14 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [3848] = {
         name = "Kayneth Stillwind",
+        locations = {
+            [63] = {
+                {
+                    x = 0.852375,
+                    y = 0.447123,
+                },
+            },
+        },
     },
     [3880] = {
         name = "Sentinel Melyria Frostshadow",
@@ -119,9 +313,25 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [3897] = {
         name = "Krolg",
+        locations = {
+            [63] = {
+                {
+                    x = 0.508467,
+                    y = 0.75081,
+                },
+            },
+        },
     },
     [3901] = {
         name = "Illiyana",
+        locations = {
+            [63] = {
+                {
+                    x = 0.86783,
+                    y = 0.433951,
+                },
+            },
+        },
     },
     [3916] = {
         name = "Shael'dryn",
@@ -148,6 +358,17 @@ BtWQuestsDatabase:AddNPCsTable({
     [3924] = {
         name = "Thistlefur Shaman",
     },
+    [3936] = {
+        name = "Shandris Feathermoon",
+        locations = {
+            [69] = {
+                {
+                    x = 0.460346,
+                    y = 0.49121,
+                },
+            },
+        },
+    },
     [3995] = {
         name = "Witch Doctor Jin'Zil",
         locations = {
@@ -173,6 +394,449 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [4498] = {
+        name = "Maurin Bonesplitter",
+        locations = {
+            [66] = {
+                {
+                    x = 0.522464,
+                    y = 0.534407,
+                },
+            },
+        },
+    },
+    [4500] = {
+        name = "Overlord Mok'Morokk",
+        locations = {
+            [70] = {
+                {
+                    x = 0.362896,
+                    y = 0.314152,
+                },
+            },
+        },
+    },
+    [4501] = {
+        name = "Draz'Zilb",
+        locations = {
+            [70] = {
+                {
+                    x = 0.371545,
+                    y = 0.330872,
+                },
+            },
+        },
+    },
+    [4502] = {
+        name = "Tharg",
+        locations = {
+            [70] = {
+                {
+                    x = 0.373666,
+                    y = 0.313891,
+                },
+            },
+        },
+    },
+    [4544] = {
+        name = "Krueg Skullsplitter",
+        locations = {
+            [69] = {
+                {
+                    x = 0.750021,
+                    y = 0.430817,
+                },
+            },
+        },
+    },
+    [4618] = {
+        name = "Martek the Exiled",
+        locations = {
+            [15] = {
+                {
+                    x = 0.261766,
+                    y = 0.6245,
+                },
+            },
+        },
+    },
+    [4791] = {
+        name = "Nazeer Bloodpike",
+        locations = {
+            [70] = {
+                {
+                    x = 0.352118,
+                    y = 0.306604,
+                },
+            },
+        },
+    },
+    [4792] = {
+        name = "\"Swamp Eye\" Jarl",
+        locations = {
+            [70] = {
+                {
+                    x = 0.554369,
+                    y = 0.262669,
+                },
+            },
+        },
+    },
+    [4794] = {
+        name = "Morgan Stern",
+        locations = {
+            [70] = {
+                {
+                    x = 0.682663,
+                    y = 0.487176,
+                },
+            },
+        },
+    },
+    [4880] = {
+        name = "\"Stinky\" Ignatz",
+        locations = {
+            [70] = {
+                {
+                    x = 0.468753,
+                    y = 0.175211,
+                },
+            },
+        },
+    },
+    [4921] = {
+        name = "Guard Byron",
+        locations = {
+            [70] = {
+                {
+                    x = 0.661547,
+                    y = 0.46066,
+                },
+            },
+        },
+    },
+    [4926] = {
+        name = "Krog",
+        locations = {
+            [70] = {
+                {
+                    x = 0.364175,
+                    y = 0.318834,
+                },
+            },
+        },
+    },
+    [4941] = {
+        name = "Caz Twosprocket",
+        locations = {
+            [70] = {
+                {
+                    x = 0.647545,
+                    y = 0.504263,
+                },
+            },
+        },
+    },
+    [4943] = {
+        name = "Mosarn",
+        locations = {
+            [88] = {
+                {
+                    x = 0.540283,
+                    y = 0.80763,
+                },
+            },
+        },
+    },
+    [4944] = {
+        name = "Captain Garran Vimes",
+        locations = {
+            [70] = {
+                {
+                    x = 0.682128,
+                    y = 0.486205,
+                },
+            },
+        },
+    },
+    [4948] = {
+        name = "Adjutant Tesoran",
+        locations = {
+            [70] = {
+                {
+                    x = 0.680454,
+                    y = 0.481137,
+                },
+            },
+        },
+    },
+    [4968] = {
+        name = "Lady Jaina Proudmoore",
+        locations = {
+            [70] = {
+                {
+                    x = 0.662696,
+                    y = 0.490355,
+                },
+            },
+        },
+    },
+    [4983] = {
+        name = "Ogron",
+        locations = {
+            [70] = {
+                {
+                    x = 0.409571,
+                    y = 0.366946,
+                },
+            },
+        },
+    },
+    [5086] = {
+        name = "Captain Wymor",
+        locations = {
+            [70] = {
+                {
+                    x = 0.596481,
+                    y = 0.411015,
+                },
+            },
+        },
+    },
+    [5087] = {
+        name = "Do'gol",
+        locations = {
+            [70] = {
+                {
+                    x = 0.365285,
+                    y = 0.307928,
+                },
+            },
+        },
+    },
+    [5089] = {
+        name = "Balos Jacken",
+        locations = {
+            [70] = {
+                {
+                    x = 0.360953,
+                    y = 0.543036,
+                },
+            },
+        },
+    },
+    [5385] = {
+        name = "Watcher Mahar Ba",
+        locations = {
+            [17] = {
+                {
+                    x = 0.631836,
+                    y = 0.168499,
+                },
+            },
+        },
+    },
+    [5390] = {
+        name = "Sage Palerunner",
+        locations = {
+            [69] = {
+                {
+                    x = 0.750857,
+                    y = 0.427162,
+                },
+            },
+        },
+    },
+    [5393] = {
+        name = "Quartermaster Lungertz",
+        locations = {
+            [17] = {
+                {
+                    x = 0.601027,
+                    y = 0.134912,
+                },
+            },
+        },
+    },
+    [5395] = {
+        name = "Felgur Twocuts",
+        locations = {
+            [66] = {
+                {
+                    x = 0.561925,
+                    y = 0.595661,
+                },
+            },
+        },
+    },
+    [5396] = {
+        name = "Captain Pentigast",
+        locations = {
+            [66] = {
+                {
+                    x = 0.666654,
+                    y = 0.109341,
+                },
+            },
+        },
+    },
+    [5638] = {
+        name = "Kreldig Ungor",
+        locations = {
+            [66] = {
+                {
+                    x = 0.662014,
+                    y = 0.096249,
+                },
+            },
+        },
+    },
+    [5642] = {
+        name = "Vahlarriel Demonslayer",
+        locations = {
+            [66] = {
+                {
+                    x = 0.664435,
+                    y = 0.118171,
+                },
+            },
+        },
+    },
+    [5752] = {
+        name = "Corporal Melkins",
+        locations = {
+            [66] = {
+                {
+                    x = 0.667426,
+                    y = 0.108718,
+                },
+            },
+        },
+    },
+    [5907] = {
+        name = "Kranal Fiss",
+    },
+    [6019] = {
+        name = "Hornizz Brimbuzzle",
+        locations = {
+            [66] = {
+                {
+                    x = 0.478298,
+                    y = 0.618288,
+                },
+            },
+        },
+    },
+    [6546] = {
+        name = "Tabetha",
+        locations = {
+            [70] = {
+                {
+                    x = 0.460227,
+                    y = 0.570956,
+                },
+            },
+        },
+    },
+    [7505] = {
+        name = "Bloodmage Drazial",
+        locations = {
+            [17] = {
+                {
+                    x = 0.392551,
+                    y = 0.362041,
+                },
+            },
+        },
+    },
+    [7506] = {
+        name = "Bloodmage Lynnore",
+        locations = {
+            [17] = {
+                {
+                    x = 0.392133,
+                    y = 0.362855,
+                },
+            },
+        },
+    },
+    [7623] = {
+        name = "Dispatch Commander Ruag",
+        locations = {
+            [51] = {
+                {
+                    x = 0.493421,
+                    y = 0.553229,
+                },
+            },
+        },
+    },
+    [7776] = {
+        name = "Talo Thornhoof",
+        locations = {
+            [69] = {
+                {
+                    x = 0.416438,
+                    y = 0.152235,
+                },
+            },
+        },
+    },
+    [7783] = {
+        name = "Loramus Thalipedes",
+        locations = {
+            [17] = {
+                {
+                    x = 0.623111,
+                    y = 0.260893,
+                },
+            },
+        },
+    },
+    [7854] = {
+        name = "Jangdor Swiftstrider",
+        locations = {
+            [69] = {
+                {
+                    x = 0.5284,
+                    y = 0.471092,
+                },
+            },
+        },
+    },
+    [7875] = {
+        name = "Hadoken Swiftstrider",
+        locations = {
+            [69] = {
+                {
+                    x = 0.749072,
+                    y = 0.42467,
+                },
+            },
+        },
+    },
+    [8115] = {
+        name = "Witch Doctor Uzer'i",
+        locations = {
+            [69] = {
+                {
+                    x = 0.744181,
+                    y = 0.433618,
+                },
+            },
+        },
+    },
+    [8436] = {
+        name = "Zamael Lunthistle",
+        locations = {
+            [32] = {
+                {
+                    x = 0.296377,
+                    y = 0.263155,
+                },
+            },
+        },
+    },
     [8582] = {
         name = "Kadrak",
         locations = {
@@ -184,8 +848,426 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [9116] = {
+        name = "Eridan Bluewind",
+        locations = {
+            [77] = {
+                {
+                    x = 0.420195,
+                    y = 0.717872,
+                },
+            },
+        },
+    },
+    [9117] = {
+        name = "J.D. Collie",
+        locations = {
+            [78] = {
+                {
+                    x = 0.541963,
+                    y = 0.625056,
+                },
+            },
+        },
+    },
+    [9177] = {
+        name = "Oralius",
+        locations = {
+            [36] = {
+                {
+                    x = 0.71859,
+                    y = 0.679663,
+                },
+            },
+        },
+    },
+    [9270] = {
+        name = "Williden Marshal",
+        locations = {
+            [78] = {
+                {
+                    x = 0.550785,
+                    y = 0.622334,
+                },
+            },
+        },
+    },
+    [9271] = {
+        name = "Hol'anyee Marshal",
+        locations = {
+            [78] = {
+                {
+                    x = 0.550184,
+                    y = 0.622334,
+                },
+            },
+        },
+    },
+    [9272] = {
+        name = "Spark Nilminer",
+        locations = {
+            [78] = {
+                {
+                    x = 0.318534,
+                    y = 0.502825,
+                },
+            },
+        },
+    },
+    [9298] = {
+        name = "Donova Snowden",
+        locations = {
+            [83] = {
+                {
+                    x = 0.251236,
+                    y = 0.584924,
+                },
+            },
+        },
+    },
+    [9540] = {
+        name = "Enohar Thunderbrew",
+        locations = {
+            [17] = {
+                {
+                    x = 0.614667,
+                    y = 0.186448,
+                },
+            },
+        },
+    },
+    [9618] = {
+        name = "Karna Remtravel",
+        locations = {
+            [78] = {
+                {
+                    x = 0.434381,
+                    y = 0.409238,
+                },
+            },
+        },
+    },
+    [9619] = {
+        name = "Torwa Pathfinder",
+        locations = {
+            [78] = {
+                {
+                    x = 0.712372,
+                    y = 0.765698,
+                },
+            },
+        },
+    },
+    [9623] = {
+        name = "A-Me 01",
+        locations = {
+            [78] = {
+                {
+                    x = 0.63818,
+                    y = 0.197422,
+                },
+            },
+        },
+    },
+    [9997] = {
+        name = "Spraggle Frock",
+        locations = {
+            [78] = {
+                {
+                    x = 0.549942,
+                    y = 0.626654,
+                },
+            },
+        },
+    },
+    [9998] = {
+        name = "Shizzle",
+        locations = {
+            [78] = {
+                {
+                    x = 0.434343,
+                    y = 0.413332,
+                },
+            },
+        },
+    },
+    [9999] = {
+        name = "Ringo",
+    },
+    [10260] = {
+        name = "Kibler",
+        locations = {
+            [36] = {
+                {
+                    x = 0.549494,
+                    y = 0.225595,
+                },
+            },
+        },
+    },
+    [10302] = {
+        name = "Krakle",
+        locations = {
+            [78] = {
+                {
+                    x = 0.553453,
+                    y = 0.624921,
+                },
+            },
+        },
+    },
+    [10305] = {
+        name = "Umi Rumplesnicker",
+        locations = {
+            [83] = {
+                {
+                    x = 0.593139,
+                    y = 0.497818,
+                },
+            },
+        },
+    },
+    [10307] = {
+        name = "Witch Doctor Mau'ari",
+        locations = {
+            [83] = {
+                {
+                    x = 0.252063,
+                    y = 0.584683,
+                },
+            },
+        },
+    },
+    [10618] = {
+        name = "Rivern Frostwind",
+        locations = {
+            [83] = {
+                {
+                    x = 0.466798,
+                    y = 0.177139,
+                },
+            },
+        },
+    },
+    [10920] = {
+        name = "Kelek Skykeeper",
+        locations = {
+            [77] = {
+                {
+                    x = 0.512759,
+                    y = 0.802985,
+                },
+            },
+        },
+    },
+    [10921] = {
+        name = "Taronn Redfeather",
+        locations = {
+            [77] = {
+                {
+                    x = 0.50912,
+                    y = 0.801338,
+                },
+            },
+        },
+    },
+    [10922] = {
+        name = "Greta Mosshoof",
+        locations = {
+            [77] = {
+                {
+                    x = 0.439707,
+                    y = 0.618279,
+                },
+            },
+        },
+    },
+    [10923] = {
+        name = "Tenell Leafrunner",
+        locations = {
+            [77] = {
+                {
+                    x = 0.511276,
+                    y = 0.804886,
+                },
+            },
+        },
+    },
+    [10929] = {
+        name = "Haleh",
+        locations = {
+            [83] = {
+                {
+                    x = 0.580077,
+                    y = 0.637813,
+                },
+            },
+        },
+    },
+    [10977] = {
+        name = "Quixxil",
+        locations = {
+            [78] = {
+                {
+                    x = 0.548239,
+                    y = 0.638273,
+                },
+            },
+        },
+    },
+    [11019] = {
+        name = "Jessir Moonbow",
+        locations = {
+            [77] = {
+                {
+                    x = 0.441041,
+                    y = 0.62017,
+                },
+            },
+        },
+    },
+    [11079] = {
+        name = "Wynd Nightchaser",
+        locations = {
+            [83] = {
+                {
+                    x = 0.486729,
+                    y = 0.410232,
+                },
+            },
+        },
+    },
+    [11191] = {
+        name = "Lilith the Lithe",
+        locations = {
+            [83] = {
+                {
+                    x = 0.598715,
+                    y = 0.491856,
+                },
+            },
+        },
+    },
+    [11192] = {
+        name = "Kilram",
+        locations = {
+            [83] = {
+                {
+                    x = 0.598104,
+                    y = 0.491364,
+                },
+            },
+        },
+    },
+    [11193] = {
+        name = "Seril Scourgebane",
+        locations = {
+            [83] = {
+                {
+                    x = 0.597747,
+                    y = 0.492491,
+                },
+            },
+        },
+    },
     [11219] = {
         name = "Liladris Moonriver",
+        locations = {
+            [63] = {
+                {
+                    x = 0.272442,
+                    y = 0.35555,
+                },
+            },
+        },
+    },
+    [11259] = {
+        name = "Nataka Longhorn",
+        locations = {
+            [66] = {
+                {
+                    x = 0.554119,
+                    y = 0.558088,
+                },
+            },
+        },
+    },
+    [11317] = {
+        name = "Jinar'Zillen",
+        locations = {
+            [66] = {
+                {
+                    x = 0.224538,
+                    y = 0.731127,
+                },
+            },
+        },
+    },
+    [11438] = {
+        name = "Bibbly F'utzbuckle",
+        locations = {
+            [66] = {
+                {
+                    x = 0.624086,
+                    y = 0.391106,
+                },
+            },
+        },
+    },
+    [11554] = {
+        name = "Grazle",
+        locations = {
+            [77] = {
+                {
+                    x = 0.514077,
+                    y = 0.804232,
+                },
+            },
+        },
+    },
+    [11557] = {
+        name = "Meilosh",
+        locations = {
+            [77] = {
+                {
+                    x = 0.648855,
+                    y = 0.052399,
+                },
+            },
+        },
+    },
+    [11596] = {
+        name = "Smeed Scrabblescrew",
+        locations = {
+            [66] = {
+                {
+                    x = 0.608625,
+                    y = 0.6186,
+                },
+            },
+        },
+    },
+    [11624] = {
+        name = "Taiga Wisemane",
+        locations = {
+            [66] = {
+                {
+                    x = 0.258126,
+                    y = 0.682174,
+                },
+            },
+        },
+    },
+    [11701] = {
+        name = "Mor'vek",
+        locations = {
+            [78] = {
+                {
+                    x = 0.715847,
+                    y = 0.739457,
+                },
+            },
+        },
     },
     [11806] = {
         name = "Sentinel Onaeya",
@@ -194,6 +1276,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.266809,
                     y = 0.368903,
+                },
+            },
+        },
+    },
+    [11811] = {
+        name = "Narain Soothfancy",
+        locations = {
+            [71] = {
+                {
+                    x = 0.552304,
+                    y = 0.602616,
                 },
             },
         },
@@ -220,6 +1313,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [11857] = {
+        name = "Makaba Flathoof",
+        locations = {
+            [199] = {
+                {
+                    x = 0.441759,
+                    y = 0.336862,
+                },
+            },
+        },
+    },
     [11858] = {
         name = "Grundig Darkcloud",
         locations = {
@@ -227,6 +1331,28 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.723258,
                     y = 0.838761,
+                },
+            },
+        },
+    },
+    [12031] = {
+        name = "Mai'Lahii",
+        locations = {
+            [66] = {
+                {
+                    x = 0.226439,
+                    y = 0.719673,
+                },
+            },
+        },
+    },
+    [12277] = {
+        name = "Melizza Brimbuzzle",
+        locations = {
+            [66] = {
+                {
+                    x = 0.339407,
+                    y = 0.535003,
                 },
             },
         },
@@ -308,8 +1434,280 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [12919] = {
+        name = "Nat Pagle",
+        locations = {
+            [70] = {
+                {
+                    x = 0.587621,
+                    y = 0.601671,
+                },
+            },
+        },
+    },
+    [14437] = {
+        name = "Gorzeeki Wildeyes",
+        locations = {
+            [36] = {
+                {
+                    x = 0.083884,
+                    y = 0.357726,
+                },
+            },
+        },
+    },
+    [14625] = {
+        name = "Overseer Oilfist",
+        locations = {
+            [32] = {
+                {
+                    x = 0.38112,
+                    y = 0.269713,
+                },
+            },
+        },
+    },
+    [14626] = {
+        name = "Taskmaster Scrange",
+        locations = {
+            [32] = {
+                {
+                    x = 0.365784,
+                    y = 0.281687,
+                },
+            },
+        },
+    },
+    [14627] = {
+        name = "Hansel Heavyhands",
+        locations = {
+            [32] = {
+                {
+                    x = 0.384723,
+                    y = 0.278627,
+                },
+            },
+        },
+    },
+    [14628] = {
+        name = "Evonice Sootsmoker",
+        locations = {
+            [32] = {
+                {
+                    x = 0.437723,
+                    y = 0.28709,
+                },
+            },
+        },
+    },
+    [14634] = {
+        name = "Lookout Captain Lolo Longstriker",
+        locations = {
+            [32] = {
+                {
+                    x = 0.377356,
+                    y = 0.265607,
+                },
+            },
+        },
+    },
+    [14637] = {
+        name = "Zorbin Fandazzle",
+        locations = {
+            [69] = {
+                {
+                    x = 0.486867,
+                    y = 0.448052,
+                },
+            },
+        },
+    },
+    [15170] = {
+        name = "Rutgar Glyphshaper",
+        locations = {
+            [81] = {
+                {
+                    x = 0.464097,
+                    y = 0.79089,
+                },
+            },
+        },
+    },
+    [15171] = {
+        name = "Frankal Stonebridge",
+        locations = {
+            [81] = {
+                {
+                    x = 0.460172,
+                    y = 0.794298,
+                },
+            },
+        },
+    },
+    [15181] = {
+        name = "Commander Mar'alith",
+        locations = {
+            [81] = {
+                {
+                    x = 0.532116,
+                    y = 0.324965,
+                },
+            },
+        },
+    },
+    [15183] = {
+        name = "Geologist Larksbane",
+        locations = {
+            [81] = {
+                {
+                    x = 0.536212,
+                    y = 0.353089,
+                },
+            },
+        },
+    },
+    [15189] = {
+        name = "Beetix Ficklespragg",
+        locations = {
+            [81] = {
+                {
+                    x = 0.553617,
+                    y = 0.362444,
+                },
+            },
+        },
+    },
+    [15190] = {
+        name = "Noggle Ficklespragg",
+        locations = {
+            [81] = {
+                {
+                    x = 0.552894,
+                    y = 0.361944,
+                },
+            },
+        },
+    },
+    [15191] = {
+        name = "Windcaller Proudhorn",
+        locations = {
+            [81] = {
+                {
+                    x = 0.548931,
+                    y = 0.36021,
+                },
+            },
+        },
+    },
+    [15194] = {
+        name = "Hermit Ortell",
+        locations = {
+            [81] = {
+                {
+                    x = 0.68662,
+                    y = 0.630356,
+                },
+            },
+        },
+    },
+    [15270] = {
+        name = "Huum Wildmane",
+        locations = {
+            [81] = {
+                {
+                    x = 0.531957,
+                    y = 0.35201,
+                },
+            },
+        },
+    },
+    [15306] = {
+        name = "Bor Wildmane",
+        locations = {
+            [81] = {
+                {
+                    x = 0.531531,
+                    y = 0.351046,
+                },
+            },
+        },
+    },
+    [15395] = {
+        name = "Nafien",
+        locations = {
+            [77] = {
+                {
+                    x = 0.64007,
+                    y = 0.102869,
+                },
+            },
+        },
+    },
+    [16841] = {
+        name = "Watch Commander Relthorn Netherwane",
+        locations = {
+            [17] = {
+                {
+                    x = 0.546552,
+                    y = 0.504506,
+                },
+            },
+        },
+    },
+    [17081] = {
+        name = "Scout Bloodfist",
+        locations = {
+            [81] = {
+                {
+                    x = 0.529992,
+                    y = 0.346512,
+                },
+            },
+        },
+    },
+    [17082] = {
+        name = "Rifleman Torrig",
+        locations = {
+            [81] = {
+                {
+                    x = 0.544838,
+                    y = 0.329428,
+                },
+            },
+        },
+    },
+    [17095] = {
+        name = "Balandar Brightstar",
+        locations = {
+            [70] = {
+                {
+                    x = 0.358584,
+                    y = 0.31743,
+                },
+            },
+        },
+    },
     [17106] = {
         name = "Vindicator Palanaar",
+        locations = {
+            [63] = {
+                {
+                    x = 0.349725,
+                    y = 0.499197,
+                },
+            },
+        },
+    },
+    [17127] = {
+        name = "Anchorite Avuun",
+        locations = {
+            [51] = {
+                {
+                    x = 0.268681,
+                    y = 0.335538,
+                },
+            },
+        },
     },
     [17287] = {
         name = "Sentinel Luciel Starwhisper",
@@ -324,6 +1722,14 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [17291] = {
         name = "Architect Nemos",
+        locations = {
+            [63] = {
+                {
+                    x = 0.868357,
+                    y = 0.448127,
+                },
+            },
+        },
     },
     [17303] = {
         name = "Vindicator Vedaar",
@@ -365,6 +1771,226 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.731616,
                     y = 0.601034,
+                },
+            },
+        },
+    },
+    [18221] = {
+        name = "Holaaru",
+        locations = {
+            [51] = {
+                {
+                    x = 0.699028,
+                    y = 0.365421,
+                },
+            },
+        },
+    },
+    [19254] = {
+        name = "Warlord Dar'toon",
+        locations = {
+            [17] = {
+                {
+                    x = 0.54455,
+                    y = 0.50535,
+                },
+            },
+        },
+    },
+    [20985] = {
+        name = "Loose Dirt",
+        locations = {
+            [70] = {
+                {
+                    x = 0.55445,
+                    y = 0.2592,
+                },
+            },
+        },
+    },
+    [20992] = {
+        name = "Black Shield",
+        locations = {
+            [70] = {
+                {
+                    x = 0.29631,
+                    y = 0.485941,
+                },
+            },
+        },
+    },
+    [21042] = {
+        name = "Theramore Guard Badge",
+        locations = {
+            [70] = {
+                {
+                    x = 0.298321,
+                    y = 0.482445,
+                },
+            },
+        },
+    },
+    [23566] = {
+        name = "Calia Hastings",
+        locations = {
+            [70] = {
+                {
+                    x = 0.683642,
+                    y = 0.510285,
+                },
+            },
+        },
+    },
+    [23568] = {
+        name = "Captain Darill",
+        locations = {
+            [70] = {
+                {
+                    x = 0.466159,
+                    y = 0.246069,
+                },
+            },
+        },
+    },
+    [23569] = {
+        name = "Renn McGill",
+        locations = {
+            [70] = {
+                {
+                    x = 0.637408,
+                    y = 0.170399,
+                },
+            },
+        },
+    },
+    [23570] = {
+        name = "Gizzix Grimegurgle",
+        locations = {
+            [70] = {
+                {
+                    x = 0.415339,
+                    y = 0.729841,
+                },
+            },
+        },
+    },
+    [23579] = {
+        name = "Brogg",
+        locations = {
+            [70] = {
+                {
+                    x = 0.418558,
+                    y = 0.739809,
+                },
+            },
+        },
+    },
+    [23600] = {
+        name = "Apprentice Morlann",
+        locations = {
+            [70] = {
+                {
+                    x = 0.461039,
+                    y = 0.574363,
+                },
+            },
+        },
+    },
+    [23601] = {
+        name = "Apprentice Garion",
+        locations = {
+            [70] = {
+                {
+                    x = 0.460546,
+                    y = 0.572401,
+                },
+            },
+        },
+    },
+    [23723] = {
+        name = "Sergeant Lukas",
+        locations = {
+            [70] = {
+                {
+                    x = 0.4666,
+                    y = 0.230492,
+                },
+            },
+        },
+    },
+    [23797] = {
+        name = "Moxie Steelgrille",
+        locations = {
+            [70] = {
+                {
+                    x = 0.535727,
+                    y = 0.569202,
+                },
+            },
+        },
+    },
+    [23835] = {
+        name = "Sergeant Amelyn",
+        locations = {
+            [70] = {
+                {
+                    x = 0.682596,
+                    y = 0.518416,
+                },
+            },
+        },
+    },
+    [23843] = {
+        name = "Mordant Grimsby",
+        locations = {
+            [70] = {
+                {
+                    x = 0.555852,
+                    y = 0.261443,
+                },
+            },
+        },
+    },
+    [23892] = {
+        name = "Babs Fizzletorque",
+        locations = {
+            [70] = {
+                {
+                    x = 0.721088,
+                    y = 0.470528,
+                },
+            },
+        },
+    },
+    [23896] = {
+        name = "\"Dirty\" Michael Crowe",
+        locations = {
+            [70] = {
+                {
+                    x = 0.692423,
+                    y = 0.518856,
+                },
+            },
+        },
+    },
+    [23905] = {
+        name = "Major Mills",
+        locations = {
+            [70] = {
+                {
+                    x = 0.69611,
+                    y = 0.517675,
+                },
+            },
+        },
+    },
+    [23951] = {
+        name = "Lieutenant Aden",
+        locations = {
+            [70] = {
+                {
+                    x = 0.650778,
+                    y = 0.471357,
                 },
             },
         },
@@ -426,6 +2052,14 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [33276] = {
         name = "Moon Priestess Maestra",
+        locations = {
+            [63] = {
+                {
+                    x = 0.269578,
+                    y = 0.360991,
+                },
+            },
+        },
     },
     [33284] = {
         name = "Truun",
@@ -462,6 +2096,14 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [33443] = {
         name = "Keeper Heartwise",
+        locations = {
+            [63] = {
+                {
+                    x = 0.201706,
+                    y = 0.387767,
+                },
+            },
+        },
     },
     [33445] = {
         name = "Sentinel Avana",
@@ -598,6 +2240,12 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [34258] = {
+        name = "Halga Bloodeye",
+    },
+    [34284] = {
+        name = "Dorak",
+    },
     [34289] = {
         name = "The Vortex",
         locations = {
@@ -611,6 +2259,14 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [34290] = {
         name = "Core",
+        locations = {
+            [63] = {
+                {
+                    x = 0.523264,
+                    y = 0.565045,
+                },
+            },
+        },
     },
     [34292] = {
         name = "Arctanus",
@@ -633,6 +2289,9 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [34320] = {
+        name = "Venomhide Hatchling",
     },
     [34335] = {
         name = "Avrus Illwhisper",
@@ -661,6 +2320,14 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [34358] = {
         name = "Avrus the Redeemed",
+        locations = {
+            [63] = {
+                {
+                    x = 0.590605,
+                    y = 0.599658,
+                },
+            },
+        },
     },
     [34359] = {
         name = "Captain Goggath",
@@ -706,6 +2373,15 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [34513] = {
+        name = "Togrik",
+        locations = {
+            [10] = {
+                x = 0.56581580638885,
+                y = 0.40285021066666,
+            },
+        },
+    },
     [34518] = {
         name = "Thagg",
         locations = {
@@ -716,6 +2392,9 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [34547] = {
+        name = "Grol'dom Kodo",
     },
     [34559] = {
         name = "Captain Tarkan",
@@ -728,6 +2407,9 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [34560] = {
+        name = "Una Wolfclaw",
+    },
     [34569] = {
         name = "Flooz",
         locations = {
@@ -738,6 +2420,9 @@ BtWQuestsDatabase:AddNPCsTable({
                 },
             },
         },
+    },
+    [34578] = {
+        name = "Rocco Whipshank",
     },
     [34596] = {
         name = "Foreman Jinx",
@@ -772,6 +2457,1017 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [34613] = {
+        name = "Ta'jari",
+    },
+    [34626] = {
+        name = "Jerrik Highmountain",
+    },
+    [34634] = {
+        name = "Gorgal Angerscar",
+    },
+    [34638] = {
+        name = "Shoe",
+    },
+    [34841] = {
+        name = "Telar Highstrider",
+    },
+    [35251] = {
+        name = "Karnitol's Chest",
+        locations = {
+            [66] = {
+                {
+                    x = 0.361137,
+                    y = 0.304498,
+                },
+            },
+        },
+    },
+    [35286] = {
+        name = "Furien",
+        locations = {
+            [66] = {
+                {
+                    x = 0.547698,
+                    y = 0.087544,
+                },
+            },
+        },
+    },
+    [35295] = {
+        name = "Cerelia",
+        locations = {
+            [66] = {
+                {
+                    x = 0.446247,
+                    y = 0.294365,
+                },
+            },
+        },
+    },
+    [35298] = {
+        name = "Sorrem",
+        locations = {
+            [66] = {
+                {
+                    x = 0.449084,
+                    y = 0.29503,
+                },
+            },
+        },
+    },
+    [35661] = {
+        name = "Cenarion Embassador Thunk",
+        locations = {
+            [66] = {
+                {
+                    x = 0.703772,
+                    y = 0.329778,
+                },
+            },
+        },
+    },
+    [35757] = {
+        name = "Bizby",
+        locations = {
+            [66] = {
+                {
+                    x = 0.609787,
+                    y = 0.290254,
+                },
+            },
+        },
+    },
+    [35773] = {
+        name = "Cenarion Researcher Korrah",
+        locations = {
+            [66] = {
+                {
+                    x = 0.387977,
+                    y = 0.269503,
+                },
+            },
+        },
+    },
+    [35827] = {
+        name = "Valishj",
+        locations = {
+            [66] = {
+                {
+                    x = 0.309376,
+                    y = 0.308892,
+                },
+            },
+        },
+    },
+    [35902] = {
+        name = "Lord Hydronis",
+        locations = {
+            [66] = {
+                {
+                    x = 0.291017,
+                    y = 0.080931,
+                },
+            },
+        },
+    },
+    [36034] = {
+        name = "Karnum Marshweaver",
+        locations = {
+            [66] = {
+                {
+                    x = 0.574646,
+                    y = 0.477186,
+                },
+            },
+        },
+    },
+    [36048] = {
+        name = "Thressa Amberglen",
+        locations = {
+            [66] = {
+                {
+                    x = 0.587842,
+                    y = 0.464099,
+                },
+            },
+        },
+    },
+    [36052] = {
+        name = "Garren Darkwind",
+        locations = {
+            [66] = {
+                {
+                    x = 0.58451,
+                    y = 0.498537,
+                },
+            },
+        },
+    },
+    [36056] = {
+        name = "Khan Leh'Prah",
+        locations = {
+            [66] = {
+                {
+                    x = 0.582891,
+                    y = 0.50113,
+                },
+            },
+        },
+    },
+    [36060] = {
+        name = "Botanist Ferrah",
+        locations = {
+            [66] = {
+                {
+                    x = 0.585895,
+                    y = 0.487442,
+                },
+            },
+        },
+    },
+    [36163] = {
+        name = "Khan Kammah",
+        locations = {
+            [66] = {
+                {
+                    x = 0.71725,
+                    y = 0.455701,
+                },
+            },
+        },
+    },
+    [36185] = {
+        name = "Khan Shodo",
+        locations = {
+            [66] = {
+                {
+                    x = 0.40511,
+                    y = 0.954859,
+                },
+            },
+        },
+    },
+    [36196] = {
+        name = "Kherrah",
+        locations = {
+            [67] = {
+                {
+                    x = 0.132435,
+                    y = 0.466509,
+                },
+            },
+        },
+    },
+    [36329] = {
+        name = "Thargad",
+        locations = {
+            [66] = {
+                {
+                    x = 0.366929,
+                    y = 0.712107,
+                },
+            },
+        },
+    },
+    [36378] = {
+        name = "Dumti",
+        locations = {
+            [66] = {
+                {
+                    x = 0.363923,
+                    y = 0.711392,
+                },
+            },
+        },
+    },
+    [36398] = {
+        name = "Khan Leh'Prah",
+        locations = {
+            [66] = {
+                {
+                    x = 0.722843,
+                    y = 0.673454,
+                },
+            },
+        },
+    },
+    [36410] = {
+        name = "Officer Jankie",
+        locations = {
+            [66] = {
+                {
+                    x = 0.542398,
+                    y = 0.09273,
+                },
+            },
+        },
+    },
+    [36487] = {
+        name = "Khan Shodo",
+    },
+    [37135] = {
+        name = "Nura Pathfinder",
+        locations = {
+            [199] = {
+                {
+                    x = 0.314136,
+                    y = 0.133376,
+                },
+            },
+        },
+    },
+    [37136] = {
+        name = "Oltarg",
+        locations = {
+            [199] = {
+                {
+                    x = 0.371226,
+                    y = 0.139004,
+                },
+            },
+        },
+    },
+    [37137] = {
+        name = "Tunawa Stillwind",
+        locations = {
+            [199] = {
+                {
+                    x = 0.374477,
+                    y = 0.166455,
+                },
+            },
+        },
+    },
+    [37138] = {
+        name = "Onatay",
+        locations = {
+            [199] = {
+                {
+                    x = 0.394779,
+                    y = 0.203469,
+                },
+            },
+        },
+    },
+    [37153] = {
+        name = "Holgom",
+        locations = {
+            [199] = {
+                {
+                    x = 0.37652,
+                    y = 0.16634,
+                },
+            },
+        },
+    },
+    [37154] = {
+        name = "Kilrok Gorehammer",
+        locations = {
+            [199] = {
+                {
+                    x = 0.396297,
+                    y = 0.198782,
+                },
+            },
+        },
+    },
+    [37216] = {
+        name = "Honor's Stand Officer",
+        locations = {
+            [199] = {
+                {
+                    x = 0.391888,
+                    y = 0.145234,
+                },
+            },
+        },
+    },
+    [37515] = {
+        name = "Lane Tallgrass",
+        locations = {
+            [199] = {
+                {
+                    x = 0.443269,
+                    y = 0.332859,
+                },
+            },
+        },
+    },
+    [37516] = {
+        name = "Tawane",
+        locations = {
+            [199] = {
+                {
+                    x = 0.445647,
+                    y = 0.335954,
+                },
+            },
+        },
+    },
+    [37570] = {
+        name = "Naralex",
+        locations = {
+            [199] = {
+                {
+                    x = 0.504154,
+                    y = 0.406721,
+                },
+            },
+        },
+    },
+    [37679] = {
+        name = "Warlord Bloodhilt",
+        locations = {
+            [199] = {
+                {
+                    x = 0.414846,
+                    y = 0.468074,
+                },
+            },
+        },
+    },
+    [37717] = {
+        name = "Winnoa Pineforest",
+        locations = {
+            [199] = {
+                {
+                    x = 0.414935,
+                    y = 0.465941,
+                },
+            },
+        },
+    },
+    [37811] = {
+        name = "Warlord Gar'dul",
+        locations = {
+            [199] = {
+                {
+                    x = 0.416375,
+                    y = 0.698176,
+                },
+            },
+        },
+    },
+    [37812] = {
+        name = "Mahka",
+        locations = {
+            [199] = {
+                {
+                    x = 0.451453,
+                    y = 0.854243,
+                },
+            },
+        },
+    },
+    [37834] = {
+        name = "Tauna Skychaser",
+        locations = {
+            [199] = {
+                {
+                    x = 0.450923,
+                    y = 0.85314,
+                },
+            },
+        },
+    },
+    [37835] = {
+        name = "Dorn Redearth",
+        locations = {
+            [199] = {
+                {
+                    x = 0.450311,
+                    y = 0.853608,
+                },
+            },
+        },
+    },
+    [37837] = {
+        name = "Warlord Bloodhilt",
+        locations = {
+            [199] = {
+                {
+                    x = 0.416398,
+                    y = 0.698185,
+                },
+            },
+        },
+    },
+    [37847] = {
+        name = "Mankrik",
+        locations = {
+            [199] = {
+                {
+                    x = 0.445006,
+                    y = 0.880915,
+                },
+            },
+        },
+    },
+    [37908] = {
+        name = "Calder Gray",
+        locations = {
+            [199] = {
+                {
+                    x = 0.426064,
+                    y = 0.702274,
+                },
+            },
+        },
+    },
+    [37909] = {
+        name = "Tomusa",
+        locations = {
+            [199] = {
+                {
+                    x = 0.410984,
+                    y = 0.710078,
+                },
+            },
+        },
+    },
+    [37910] = {
+        name = "Crawgol",
+        locations = {
+            [199] = {
+                {
+                    x = 0.416362,
+                    y = 0.694178,
+                },
+            },
+        },
+    },
+    [38140] = {
+        name = "Weezil Slipshadow",
+        locations = {
+            [199] = {
+                {
+                    x = 0.507423,
+                    y = 0.86821,
+                },
+            },
+        },
+    },
+    [38152] = {
+        name = "Weezil Slipshadow",
+        locations = {
+            [199] = {
+                {
+                    x = 0.502687,
+                    y = 0.870683,
+                },
+            },
+        },
+    },
+    [38237] = {
+        name = "Maximillian of Northshire",
+        locations = {
+            [78] = {
+                {
+                    x = 0.306201,
+                    y = 0.511406,
+                },
+            },
+        },
+    },
+    [38263] = {
+        name = "Ithis Moonwarden",
+        locations = {
+            [78] = {
+                {
+                    x = 0.764371,
+                    y = 0.483425,
+                },
+            },
+        },
+    },
+    [38269] = {
+        name = "Zen'Aliri",
+        locations = {
+            [78] = {
+                {
+                    x = 0.557208,
+                    y = 0.605968,
+                },
+            },
+        },
+    },
+    [38270] = {
+        name = "Nolen Tacker",
+        locations = {
+            [78] = {
+                {
+                    x = 0.550467,
+                    y = 0.605639,
+                },
+            },
+        },
+    },
+    [38274] = {
+        name = "Garl Stormclaw",
+        locations = {
+            [78] = {
+                {
+                    x = 0.705897,
+                    y = 0.769875,
+                },
+            },
+        },
+    },
+    [38275] = {
+        name = "Gremix",
+        locations = {
+            [78] = {
+                {
+                    x = 0.431822,
+                    y = 0.416005,
+                },
+            },
+        },
+    },
+    [38276] = {
+        name = "Tara",
+        locations = {
+            [78] = {
+                {
+                    x = 0.430711,
+                    y = 0.413367,
+                },
+            },
+        },
+    },
+    [38277] = {
+        name = "Doreen",
+        locations = {
+            [78] = {
+                {
+                    x = 0.430727,
+                    y = 0.41439,
+                },
+            },
+        },
+    },
+    [38314] = {
+        name = "Muyoh",
+        locations = {
+            [199] = {
+                {
+                    x = 0.50302,
+                    y = 0.403968,
+                },
+            },
+        },
+    },
+    [38323] = {
+        name = "General Hawthorne",
+        locations = {
+            [199] = {
+                {
+                    x = 0.499349,
+                    y = 0.496933,
+                },
+            },
+        },
+    },
+    [38378] = {
+        name = "Commander Walpole",
+        locations = {
+            [199] = {
+                {
+                    x = 0.298852,
+                    y = 0.089795,
+                },
+            },
+        },
+    },
+    [38380] = {
+        name = "Janice Mattingly",
+        locations = {
+            [199] = {
+                {
+                    x = 0.349916,
+                    y = 0.094888,
+                },
+            },
+        },
+    },
+    [38383] = {
+        name = "Nibb Spindlegear",
+        locations = {
+            [199] = {
+                {
+                    x = 0.390594,
+                    y = 0.114351,
+                },
+            },
+        },
+    },
+    [38502] = {
+        name = "Nablya",
+        locations = {
+            [78] = {
+                {
+                    x = 0.835096,
+                    y = 0.46008,
+                },
+            },
+        },
+    },
+    [38504] = {
+        name = "Un'Goro Examinant",
+        locations = {
+            [78] = {
+                {
+                    x = 0.538265,
+                    y = 0.6251,
+                },
+            },
+        },
+    },
+    [38534] = {
+        name = "Megs Dreadshredder",
+        locations = {
+            [71] = {
+                {
+                    x = 0.512338,
+                    y = 0.299644,
+                },
+            },
+        },
+    },
+    [38535] = {
+        name = "Kelsey Steelspark",
+        locations = {
+            [71] = {
+                {
+                    x = 0.512099,
+                    y = 0.299175,
+                },
+            },
+        },
+    },
+    [38578] = {
+        name = "Flinn",
+    },
+    [38619] = {
+        name = "Admiral Aubrey",
+        locations = {
+            [199] = {
+                {
+                    x = 0.69258,
+                    y = 0.490874,
+                },
+            },
+        },
+    },
+    [38620] = {
+        name = "Thomas Paxton",
+        locations = {
+            [199] = {
+                {
+                    x = 0.67015,
+                    y = 0.465243,
+                },
+            },
+        },
+    },
+    [38621] = {
+        name = "Jeffrey Long",
+        locations = {
+            [199] = {
+                {
+                    x = 0.648507,
+                    y = 0.460633,
+                },
+            },
+        },
+    },
+    [38623] = {
+        name = "Dockmaster Lewis",
+        locations = {
+            [199] = {
+                {
+                    x = 0.710578,
+                    y = 0.49918,
+                },
+            },
+        },
+    },
+    [38703] = {
+        name = "Megs Dreadshredder",
+        locations = {
+            [71] = {
+                {
+                    x = 0.718563,
+                    y = 0.454208,
+                },
+            },
+        },
+    },
+    [38704] = {
+        name = "Kelsey Steelspark",
+        locations = {
+            [71] = {
+                {
+                    x = 0.722042,
+                    y = 0.452179,
+                },
+            },
+        },
+    },
+    [38706] = {
+        name = "Zeke Bootscuff",
+        locations = {
+            [71] = {
+                {
+                    x = 0.556543,
+                    y = 0.608549,
+                },
+            },
+        },
+    },
+    [38804] = {
+        name = "Tolliver Houndstooth",
+        locations = {
+            [199] = {
+                {
+                    x = 0.669179,
+                    y = 0.467991,
+                },
+            },
+        },
+    },
+    [38849] = {
+        name = "Megs Dreadshredder",
+        locations = {
+            [71] = {
+                {
+                    x = 0.445881,
+                    y = 0.526624,
+                },
+            },
+        },
+    },
+    [38871] = {
+        name = "Corporal Teegan",
+        locations = {
+            [199] = {
+                {
+                    x = 0.561066,
+                    y = 0.427018,
+                },
+            },
+        },
+    },
+    [38873] = {
+        name = "Goucho",
+        locations = {
+            [199] = {
+                {
+                    x = 0.561532,
+                    y = 0.425681,
+                },
+            },
+        },
+    },
+    [38876] = {
+        name = "Hannah Bridgewater",
+        locations = {
+            [199] = {
+                {
+                    x = 0.561841,
+                    y = 0.426438,
+                },
+            },
+        },
+    },
+    [38878] = {
+        name = "Mangled Body",
+        locations = {
+            [199] = {
+                {
+                    x = 0.618374,
+                    y = 0.420608,
+                },
+            },
+        },
+    },
+    [38922] = {
+        name = "Examiner Andoren Dawnrise",
+        locations = {
+            [71] = {
+                {
+                    x = 0.332694,
+                    y = 0.770192,
+                },
+            },
+        },
+    },
+    [38927] = {
+        name = "Mazoga",
+        locations = {
+            [71] = {
+                {
+                    x = 0.42297,
+                    y = 0.238388,
+                },
+            },
+        },
+    },
+    [38986] = {
+        name = "Ambassador Gaines",
+        locations = {
+            [199] = {
+                {
+                    x = 0.5001,
+                    y = 0.495297,
+                },
+            },
+        },
+    },
+    [39003] = {
+        name = "Sam Trawley",
+        locations = {
+            [199] = {
+                {
+                    x = 0.497892,
+                    y = 0.505323,
+                },
+            },
+        },
+    },
+    [39034] = {
+        name = "Dr. Dealwell",
+        locations = {
+            [71] = {
+                {
+                    x = 0.517893,
+                    y = 0.280564,
+                },
+            },
+        },
+    },
+    [39059] = {
+        name = "Kelsey Steelspark",
+        locations = {
+            [71] = {
+                {
+                    x = 0.500154,
+                    y = 0.829054,
+                },
+            },
+        },
+    },
+    [39083] = {
+        name = "Commander Roberts",
+        locations = {
+            [199] = {
+                {
+                    x = 0.49089,
+                    y = 0.668836,
+                },
+            },
+        },
+    },
+    [39084] = {
+        name = "Mizzy Pistonhammer",
+        locations = {
+            [199] = {
+                {
+                    x = 0.494925,
+                    y = 0.675158,
+                },
+            },
+        },
+    },
+    [39085] = {
+        name = "Logan Talonstrike",
+        locations = {
+            [199] = {
+                {
+                    x = 0.492108,
+                    y = 0.678507,
+                },
+            },
+        },
+    },
+    [39118] = {
+        name = "General Twinbraid",
+        locations = {
+            [199] = {
+                {
+                    x = 0.435185,
+                    y = 0.78271,
+                },
+            },
+        },
+    },
+    [39154] = {
+        name = "Hurlston Stonesthrow",
+        locations = {
+            [199] = {
+                {
+                    x = 0.434583,
+                    y = 0.782267,
+                },
+            },
+        },
+    },
+    [39155] = {
+        name = "Marley Twinbraid",
+        locations = {
+            [199] = {
+                {
+                    x = 0.471601,
+                    y = 0.884862,
+                },
+            },
+        },
+    },
+    [39178] = {
+        name = "Driz Plunkbow",
+        locations = {
+            [71] = {
+                {
+                    x = 0.522587,
+                    y = 0.280771,
+                },
+            },
+        },
+    },
+    [39188] = {
+        name = "Marley Twinbraid",
+        locations = {
+            [199] = {
+                {
+                    x = 0.492481,
+                    y = 0.866453,
+                },
+            },
+        },
+    },
+    [39218] = {
+        name = "Bael'dun Survivor",
+        locations = {
+            [199] = {
+                {
+                    x = 0.494178,
+                    y = 0.868762,
+                },
+            },
+        },
+    },
+    [39220] = {
+        name = "Wounded Bael'dun Officer",
+        locations = {
+            [199] = {
+                {
+                    x = 0.496413,
+                    y = 0.871665,
+                },
+            },
+        },
+    },
     [39256] = {
         name = "Kalen Trueshot",
         locations = {
@@ -779,6 +3475,411 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.718148,
                     y = 0.456719,
+                },
+            },
+        },
+    },
+    [39322] = {
+        name = "Horton Gimbleheart",
+    },
+    [39377] = {
+        name = "Konu Runetotem",
+        locations = {
+            [69] = {
+                {
+                    x = 0.413451,
+                    y = 0.154222,
+                },
+            },
+        },
+    },
+    [39407] = {
+        name = "Ysondre",
+        locations = {
+            [69] = {
+                {
+                    x = 0.81544,
+                    y = 0.42439,
+                },
+            },
+        },
+    },
+    [39653] = {
+        name = "Silvia",
+        locations = {
+            [69] = {
+                {
+                    x = 0.56881,
+                    y = 0.549589,
+                },
+            },
+        },
+    },
+    [39656] = {
+        name = "Orhan Ogreblade",
+        locations = {
+            [69] = {
+                {
+                    x = 0.519157,
+                    y = 0.47995,
+                },
+            },
+        },
+    },
+    [39723] = {
+        name = "Tambre",
+        locations = {
+            [69] = {
+                {
+                    x = 0.326088,
+                    y = 0.456588,
+                },
+            },
+        },
+    },
+    [39725] = {
+        name = "Adella",
+        locations = {
+            [69] = {
+                {
+                    x = 0.772293,
+                    y = 0.564851,
+                },
+            },
+        },
+    },
+    [39840] = {
+        name = "Swar'jan",
+        locations = {
+            [69] = {
+                {
+                    x = 0.519046,
+                    y = 0.466884,
+                },
+            },
+        },
+    },
+    [39847] = {
+        name = "Chief Spirithorn",
+        locations = {
+            [69] = {
+                {
+                    x = 0.745761,
+                    y = 0.428514,
+                },
+            },
+        },
+    },
+    [39893] = {
+        name = "Jawn Highmesa",
+    },
+    [39894] = {
+        name = "Gombana",
+        locations = {
+            [69] = {
+                {
+                    x = 0.522512,
+                    y = 0.480186,
+                },
+            },
+        },
+    },
+    [39895] = {
+        name = "Kanati Greycloud",
+        locations = {
+            [64] = {
+                {
+                    x = 0.111313,
+                    y = 0.112141,
+                },
+            },
+        },
+    },
+    [39896] = {
+        name = "Feral Scar Yeti",
+        locations = {
+            [69] = {
+                {
+                    x = 0.551836,
+                    y = 0.563776,
+                },
+            },
+        },
+    },
+    [39946] = {
+        name = "Caryssia Moonhunter",
+        locations = {
+            [69] = {
+                {
+                    x = 0.860713,
+                    y = 0.452849,
+                },
+            },
+        },
+    },
+    [39963] = {
+        name = "Motega Firemane",
+        locations = {
+            [64] = {
+                {
+                    x = 0.105478,
+                    y = 0.085067,
+                },
+            },
+        },
+    },
+    [39992] = {
+        name = "Rendow",
+        locations = {
+            [69] = {
+                {
+                    x = 0.88463,
+                    y = 0.444376,
+                },
+            },
+        },
+    },
+    [40027] = {
+        name = "Fizzle Brassbolts",
+        locations = {
+            [64] = {
+                {
+                    x = 0.759019,
+                    y = 0.746168,
+                },
+            },
+        },
+    },
+    [40028] = {
+        name = "Pozzik",
+        locations = {
+            [64] = {
+                {
+                    x = 0.759255,
+                    y = 0.747007,
+                },
+            },
+        },
+    },
+    [40032] = {
+        name = "Telaron Windflight",
+        locations = {
+            [69] = {
+                {
+                    x = 0.506876,
+                    y = 0.171578,
+                },
+            },
+        },
+    },
+    [40035] = {
+        name = "Erina Willowborn",
+        locations = {
+            [69] = {
+                {
+                    x = 0.511516,
+                    y = 0.178441,
+                },
+            },
+        },
+    },
+    [40052] = {
+        name = "Estulan",
+        locations = {
+            [69] = {
+                {
+                    x = 0.569648,
+                    y = 0.55376,
+                },
+            },
+        },
+    },
+    [40078] = {
+        name = "Handler Tessina",
+        locations = {
+            [69] = {
+                {
+                    x = 0.570802,
+                    y = 0.537864,
+                },
+            },
+        },
+    },
+    [40082] = {
+        name = "Skycaller Vrakthris",
+        locations = {
+            [64] = {
+                {
+                    x = 0.900766,
+                    y = 0.530136,
+                },
+            },
+        },
+    },
+    [40109] = {
+        name = "Prospector Gunstan",
+        locations = {
+            [71] = {
+                {
+                    x = 0.401185,
+                    y = 0.76969,
+                },
+            },
+        },
+    },
+    [40131] = {
+        name = "Sensiria",
+        locations = {
+            [69] = {
+                {
+                    x = 0.65942,
+                    y = 0.628362,
+                },
+            },
+        },
+    },
+    [40132] = {
+        name = "Vestia Moonspear",
+        locations = {
+            [69] = {
+                {
+                    x = 0.57245,
+                    y = 0.549789,
+                },
+            },
+        },
+    },
+    [40226] = {
+        name = "Pratt McGrubben",
+        locations = {
+            [69] = {
+                {
+                    x = 0.453452,
+                    y = 0.412562,
+                },
+            },
+        },
+    },
+    [40344] = {
+        name = "Nyse",
+        locations = {
+            [70] = {
+                {
+                    x = 0.41876,
+                    y = 0.738875,
+                },
+            },
+        },
+    },
+    [40345] = {
+        name = "Thyssiana",
+        locations = {
+            [70] = {
+                {
+                    x = 0.418251,
+                    y = 0.739154,
+                },
+            },
+        },
+    },
+    [40369] = {
+        name = "Falfindel Waywarder",
+    },
+    [40475] = {
+        name = "Jinky Twizzlefixxit",
+        locations = {
+            [64] = {
+                {
+                    x = 0.764832,
+                    y = 0.736309,
+                },
+            },
+        },
+    },
+    [40487] = {
+        name = "Razzeric",
+        locations = {
+            [64] = {
+                {
+                    x = 0.771948,
+                    y = 0.744968,
+                },
+            },
+        },
+    },
+    [40554] = {
+        name = "Rizzle Brassbolts",
+        locations = {
+            [64] = {
+                {
+                    x = 0.779882,
+                    y = 0.733106,
+                },
+            },
+        },
+    },
+    [40556] = {
+        name = "Zamek",
+        locations = {
+            [64] = {
+                {
+                    x = 0.781033,
+                    y = 0.736974,
+                },
+            },
+        },
+    },
+    [40580] = {
+        name = "Gus Rustflutter",
+        locations = {
+            [71] = {
+                {
+                    x = 0.424921,
+                    y = 0.242731,
+                },
+            },
+        },
+    },
+    [40591] = {
+        name = "Drag Master Miglen",
+        locations = {
+            [64] = {
+                {
+                    x = 0.780741,
+                    y = 0.730968,
+                },
+            },
+        },
+    },
+    [40595] = {
+        name = "Rugfizzle",
+        locations = {
+            [64] = {
+                {
+                    x = 0.782341,
+                    y = 0.73645,
+                },
+            },
+        },
+    },
+    [40726] = {
+        name = "Mazzer Stripscrew",
+        locations = {
+            [64] = {
+                {
+                    x = 0.781206,
+                    y = 0.730825,
+                },
+            },
+        },
+    },
+    [40727] = {
+        name = "Griznak",
+        locations = {
+            [64] = {
+                {
+                    x = 0.782586,
+                    y = 0.73605,
                 },
             },
         },
@@ -801,6 +3902,28 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.707987,
                     y = 0.629559,
+                },
+            },
+        },
+    },
+    [40885] = {
+        name = "Wizzle Brassbolts",
+        locations = {
+            [64] = {
+                {
+                    x = 0.916218,
+                    y = 0.785305,
+                },
+            },
+        },
+    },
+    [40888] = {
+        name = "Synge",
+        locations = {
+            [64] = {
+                {
+                    x = 0.916789,
+                    y = 0.793562,
                 },
             },
         },
@@ -940,6 +4063,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [40913] = {
+        name = "Handler Jesana",
+        locations = {
+            [69] = {
+                {
+                    x = 0.769674,
+                    y = 0.566338,
+                },
+            },
+        },
+    },
     [40926] = {
         name = "Kilag Gorefang",
     },
@@ -957,8 +4091,129 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [41058] = {
+        name = "Spirit of Tony Two-Tusk",
+        locations = {
+            [64] = {
+                {
+                    x = 0.917833,
+                    y = 0.790735,
+                },
+            },
+        },
+    },
+    [41060] = {
+        name = "Ajamon Ghostcaller",
+        locations = {
+            [64] = {
+                {
+                    x = 0.968207,
+                    y = 0.724732,
+                },
+            },
+        },
+    },
     [41071] = {
         name = "Huntress Illiona",
+    },
+    [41124] = {
+        name = "Okrilla",
+        locations = {
+            [17] = {
+                {
+                    x = 0.404623,
+                    y = 0.116457,
+                },
+            },
+        },
+    },
+    [41125] = {
+        name = "Master Aitokk",
+        locations = {
+            [17] = {
+                {
+                    x = 0.426463,
+                    y = 0.139624,
+                },
+            },
+        },
+    },
+    [41133] = {
+        name = "Rofilian Dane",
+        locations = {
+            [17] = {
+                {
+                    x = 0.595666,
+                    y = 0.035424,
+                },
+            },
+        },
+    },
+    [41134] = {
+        name = "Tak'arili",
+        locations = {
+            [17] = {
+                {
+                    x = 0.622048,
+                    y = 0.014439,
+                },
+            },
+        },
+    },
+    [41159] = {
+        name = "Watcher Wazzik",
+        locations = {
+            [17] = {
+                {
+                    x = 0.543032,
+                    y = 0.500845,
+                },
+            },
+        },
+    },
+    [41184] = {
+        name = "Riznek",
+        locations = {
+            [64] = {
+                {
+                    x = 0.885796,
+                    y = 0.548463,
+                },
+            },
+        },
+    },
+    [41190] = {
+        name = "Crazzle Sprysprocket",
+        locations = {
+            [64] = {
+                {
+                    x = 0.913921,
+                    y = 0.577832,
+                },
+            },
+        },
+    },
+    [41204] = {
+        name = "Khan Ablinh",
+        locations = {
+            [64] = {
+                {
+                    x = 0.913181,
+                    y = 0.538453,
+                },
+            },
+        },
+    },
+    [41205] = {
+        name = "Khan Blizh",
+        locations = {
+            [64] = {
+                {
+                    x = 0.867494,
+                    y = 0.515948,
+                },
+            },
+        },
     },
     [41229] = {
         name = "Force Commander Valen",
@@ -978,6 +4233,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.483348,
                     y = 0.518577,
+                },
+            },
+        },
+    },
+    [41265] = {
+        name = "Salt-Flop",
+        locations = {
+            [17] = {
+                {
+                    x = 0.731749,
+                    y = 0.47437,
                 },
             },
         },
@@ -1029,6 +4295,50 @@ BtWQuestsDatabase:AddNPCsTable({
     [41350] = {
         name = "Ton Windbow",
     },
+    [41354] = {
+        name = "Neptool",
+        locations = {
+            [17] = {
+                {
+                    x = 0.710521,
+                    y = 0.601117,
+                },
+            },
+        },
+    },
+    [41392] = {
+        name = "Quentin",
+        locations = {
+            [64] = {
+                {
+                    x = 0.464001,
+                    y = 0.578841,
+                },
+            },
+        },
+    },
+    [41402] = {
+        name = "Abandoned Bloodwash Crate",
+        locations = {
+            [17] = {
+                {
+                    x = 0.615489,
+                    y = 0.631031,
+                },
+            },
+        },
+    },
+    [41421] = {
+        name = "Rau Cliffrunner",
+        locations = {
+            [64] = {
+                {
+                    x = 0.468068,
+                    y = 0.55951,
+                },
+            },
+        },
+    },
     [41434] = {
         name = "\"Goblin\" Pump Controller",
         locations = {
@@ -1047,6 +4357,28 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.484488,
                     y = 0.519889,
+                },
+            },
+        },
+    },
+    [41444] = {
+        name = "Brienna Starglow",
+        locations = {
+            [64] = {
+                {
+                    x = 0.468252,
+                    y = 0.560479,
+                },
+            },
+        },
+    },
+    [41446] = {
+        name = "Thalia Amberhide",
+        locations = {
+            [64] = {
+                {
+                    x = 0.463585,
+                    y = 0.577736,
                 },
             },
         },
@@ -1214,18 +4546,1100 @@ BtWQuestsDatabase:AddNPCsTable({
     [42106] = {
         name = "Overlord Krom'gar",
     },
-    [49748] = {
-        name = "Hero's Herald",
-    },
-    [203186] = {
-        name = "STAY OUT!",
+    [42262] = {
+        name = "Leyan Steelson",
         locations = {
-            [65] = {
+            [17] = {
                 {
-                    x = 0.6497,
-                    y = 0.4936,
+                    x = 0.602005,
+                    y = 0.133823,
                 },
             },
         },
+    },
+    [42264] = {
+        name = "Buttonwillow McKittrick",
+        locations = {
+            [17] = {
+                {
+                    x = 0.604653,
+                    y = 0.138215,
+                },
+            },
+        },
+    },
+    [42298] = {
+        name = "Kasim Sharim",
+        locations = {
+            [17] = {
+                {
+                    x = 0.625988,
+                    y = 0.260657,
+                },
+            },
+        },
+    },
+    [42299] = {
+        name = "Watcher Grimeo",
+        locations = {
+            [17] = {
+                {
+                    x = 0.551144,
+                    y = 0.495679,
+                },
+            },
+        },
+    },
+    [42344] = {
+        name = "Rohan Sunveil",
+        locations = {
+            [17] = {
+                {
+                    x = 0.497465,
+                    y = 0.714224,
+                },
+            },
+        },
+    },
+    [42348] = {
+        name = "Elijah Dawnflight",
+        locations = {
+            [17] = {
+                {
+                    x = 0.471273,
+                    y = 0.691241,
+                },
+            },
+        },
+    },
+    [42349] = {
+        name = "Mayor Charlton Connisport",
+        locations = {
+            [17] = {
+                {
+                    x = 0.463597,
+                    y = 0.871803,
+                },
+            },
+        },
+    },
+    [42352] = {
+        name = "Cenarion Observer Shayana",
+        locations = {
+            [17] = {
+                {
+                    x = 0.443262,
+                    y = 0.861005,
+                },
+            },
+        },
+    },
+    [44374] = {
+        name = "Sherm",
+        locations = {
+            [71] = {
+                {
+                    x = 0.332075,
+                    y = 0.768979,
+                },
+            },
+        },
+    },
+    [45271] = {
+        name = "Montarr",
+        locations = {
+            [64] = {
+                {
+                    x = 0.446391,
+                    y = 0.50008,
+                },
+            },
+        },
+    },
+    [45277] = {
+        name = "Feralas Sentinel",
+        locations = {
+            [64] = {
+                {
+                    x = 0.421983,
+                    y = 0.476476,
+                },
+            },
+        },
+    },
+    [45278] = {
+        name = "Freewind Brave",
+        locations = {
+            [64] = {
+                {
+                    x = 0.421901,
+                    y = 0.473866,
+                },
+            },
+        },
+    },
+    [45442] = {
+        name = "Lakota Windsong",
+        locations = {
+            [64] = {
+                {
+                    x = 0.391534,
+                    y = 0.257453,
+                },
+            },
+        },
+    },
+    [45786] = {
+        name = "Trade Baron Silversnap",
+        locations = {
+            [51] = {
+                {
+                    x = 0.731575,
+                    y = 0.148964,
+                },
+            },
+        },
+    },
+    [45948] = {
+        name = "Crazy Larry",
+        locations = {
+            [51] = {
+                {
+                    x = 0.840288,
+                    y = 0.401294,
+                },
+            },
+        },
+    },
+    [46010] = {
+        name = "Brono Goodgroove",
+        locations = {
+            [51] = {
+                {
+                    x = 0.736389,
+                    y = 0.091653,
+                },
+            },
+        },
+    },
+    [46071] = {
+        name = "Lord Itharius",
+        locations = {
+            [51] = {
+                {
+                    x = 0.694707,
+                    y = 0.545188,
+                },
+            },
+        },
+    },
+    [46172] = {
+        name = "Baba Bogbrew",
+        locations = {
+            [51] = {
+                {
+                    x = 0.690716,
+                    y = 0.765186,
+                },
+            },
+        },
+    },
+    [46182] = {
+        name = "Pierre Fishflay",
+        locations = {
+            [51] = {
+                {
+                    x = 0.742352,
+                    y = 0.121506,
+                },
+            },
+        },
+    },
+    [46650] = {
+        name = "Eddie Flofizzle",
+        locations = {
+            [15] = {
+                {
+                    x = 0.926388,
+                    y = 0.38968,
+                },
+            },
+        },
+    },
+    [46652] = {
+        name = "Dolph Blastus",
+        locations = {
+            [15] = {
+                {
+                    x = 0.65078,
+                    y = 0.383961,
+                },
+            },
+        },
+    },
+    [46653] = {
+        name = "Garyanne Fleezlebop",
+        locations = {
+            [15] = {
+                {
+                    x = 0.642592,
+                    y = 0.381394,
+                },
+            },
+        },
+    },
+    [46654] = {
+        name = "Rhea",
+        locations = {
+            [15] = {
+                {
+                    x = 0.663951,
+                    y = 0.554896,
+                },
+            },
+        },
+    },
+    [46655] = {
+        name = "Rheastrasza",
+        locations = {
+            [15] = {
+                {
+                    x = 0.665156,
+                    y = 0.555668,
+                },
+            },
+        },
+    },
+    [46660] = {
+        name = "Aidan Summerwind",
+        locations = {
+            [15] = {
+                {
+                    x = 0.185024,
+                    y = 0.41502,
+                },
+            },
+        },
+    },
+    [46664] = {
+        name = "Dr. Hieronymus Blam",
+        locations = {
+            [15] = {
+                {
+                    x = 0.468249,
+                    y = 0.562942,
+                },
+            },
+        },
+    },
+    [46676] = {
+        name = "Joanna Blueheart",
+        locations = {
+            [51] = {
+                {
+                    x = 0.682022,
+                    y = 0.361752,
+                },
+            },
+        },
+    },
+    [46757] = {
+        name = "High Examiner Tae'thelan Bloodwatcher",
+        locations = {
+            [15] = {
+                {
+                    x = 0.520746,
+                    y = 0.512018,
+                },
+            },
+        },
+    },
+    [46758] = {
+        name = "Aoren Sunglow",
+        locations = {
+            [15] = {
+                {
+                    x = 0.521214,
+                    y = 0.515853,
+                },
+            },
+        },
+    },
+    [46759] = {
+        name = "Lidia Sunglow",
+        locations = {
+            [15] = {
+                {
+                    x = 0.522493,
+                    y = 0.516958,
+                },
+            },
+        },
+    },
+    [46930] = {
+        name = "Victoria Dolen",
+        locations = {
+            [15] = {
+                {
+                    x = 0.208589,
+                    y = 0.557147,
+                },
+            },
+        },
+    },
+    [46972] = {
+        name = "Terrance Storm",
+        locations = {
+            [15] = {
+                {
+                    x = 0.207947,
+                    y = 0.573534,
+                },
+            },
+        },
+    },
+    [47011] = {
+        name = "Amakkar",
+        locations = {
+            [15] = {
+                {
+                    x = 0.188746,
+                    y = 0.42964,
+                },
+            },
+        },
+    },
+    [47013] = {
+        name = "Gargal",
+        locations = {
+            [15] = {
+                {
+                    x = 0.18961,
+                    y = 0.428569,
+                },
+            },
+        },
+    },
+    [47018] = {
+        name = "Jurrix Whitemane",
+        locations = {
+            [15] = {
+                {
+                    x = 0.188775,
+                    y = 0.427527,
+                },
+            },
+        },
+    },
+    [47021] = {
+        name = "Amakkar",
+    },
+    [47041] = {
+        name = "Neeka Bloodscar",
+        locations = {
+            [51] = {
+                {
+                    x = 0.212061,
+                    y = 0.51736,
+                },
+            },
+        },
+    },
+    [47266] = {
+        name = "Jack Rockleg",
+        locations = {
+            [32] = {
+                {
+                    x = 0.68578,
+                    y = 0.53362,
+                },
+            },
+        },
+    },
+    [47267] = {
+        name = "Burrian Coalpart",
+        locations = {
+            [32] = {
+                {
+                    x = 0.684855,
+                    y = 0.532703,
+                },
+            },
+        },
+    },
+    [47268] = {
+        name = "Prisanne Dustcropper",
+        locations = {
+            [32] = {
+                {
+                    x = 0.687358,
+                    y = 0.533436,
+                },
+            },
+        },
+    },
+    [47269] = {
+        name = "Lunk",
+        locations = {
+            [32] = {
+                {
+                    x = 0.689208,
+                    y = 0.532501,
+                },
+            },
+        },
+    },
+    [47341] = {
+        name = "Arcanist Delaris",
+        locations = {
+            [77] = {
+                {
+                    x = 0.419008,
+                    y = 0.72022,
+                },
+            },
+        },
+    },
+    [47366] = {
+        name = "Impsy",
+        locations = {
+            [77] = {
+                {
+                    x = 0.418761,
+                    y = 0.719628,
+                },
+            },
+        },
+    },
+    [47383] = {
+        name = "Brivelthwerp",
+        locations = {
+            [64] = {
+                {
+                    x = 0.698807,
+                    y = 0.851648,
+                },
+            },
+        },
+    },
+    [47393] = {
+        name = "Mountain-Lord Rendan",
+        locations = {
+            [32] = {
+                {
+                    x = 0.407983,
+                    y = 0.516492,
+                },
+            },
+        },
+    },
+    [47429] = {
+        name = "Lunk",
+        locations = {
+            [32] = {
+                {
+                    x = 0.398311,
+                    y = 0.679031,
+                },
+            },
+        },
+    },
+    [47440] = {
+        name = "Agnes Flimshale",
+        locations = {
+            [32] = {
+                {
+                    x = 0.388296,
+                    y = 0.689414,
+                },
+            },
+        },
+    },
+    [47471] = {
+        name = "Pao'ka Swiftmountain",
+        locations = {
+            [64] = {
+                {
+                    x = 0.128406,
+                    y = 0.339819,
+                },
+            },
+        },
+    },
+    [47556] = {
+        name = "Drizle",
+        locations = {
+            [77] = {
+                {
+                    x = 0.605703,
+                    y = 0.09511,
+                },
+            },
+        },
+    },
+    [47580] = {
+        name = "Lakota Windsong",
+        locations = {
+            [64] = {
+                {
+                    x = 0.304646,
+                    y = 0.492667,
+                },
+            },
+        },
+    },
+    [47617] = {
+        name = "Farlus Wildheart",
+        locations = {
+            [77] = {
+                {
+                    x = 0.441079,
+                    y = 0.617884,
+                },
+            },
+        },
+    },
+    [47692] = {
+        name = "Altsoba Ragetotem",
+        locations = {
+            [77] = {
+                {
+                    x = 0.412551,
+                    y = 0.499427,
+                },
+            },
+        },
+    },
+    [47696] = {
+        name = "Kelnir Leafsong",
+        locations = {
+            [77] = {
+                {
+                    x = 0.412764,
+                    y = 0.498979,
+                },
+            },
+        },
+    },
+    [47745] = {
+        name = "Magatha Grimtotem",
+        locations = {
+            [64] = {
+                {
+                    x = 0.501494,
+                    y = 0.62575,
+                },
+            },
+        },
+    },
+    [47779] = {
+        name = "Mouton Flamestar",
+        locations = {
+            [36] = {
+                {
+                    x = 0.169828,
+                    y = 0.512948,
+                },
+            },
+        },
+    },
+    [47811] = {
+        name = "John J. Keeshan",
+        locations = {
+            [36] = {
+                {
+                    x = 0.172642,
+                    y = 0.520868,
+                },
+            },
+        },
+    },
+    [47843] = {
+        name = "Huntress Selura",
+        locations = {
+            [77] = {
+                {
+                    x = 0.434454,
+                    y = 0.281916,
+                },
+            },
+        },
+    },
+    [47923] = {
+        name = "Feronas Sindweller",
+        locations = {
+            [77] = {
+                {
+                    x = 0.455676,
+                    y = 0.201335,
+                },
+            },
+        },
+    },
+    [47931] = {
+        name = "Denmother Ulrica",
+        locations = {
+            [77] = {
+                {
+                    x = 0.61835,
+                    y = 0.267699,
+                },
+            },
+        },
+    },
+    [48001] = {
+        name = "Thelaron Direneedle",
+        locations = {
+            [36] = {
+                {
+                    x = 0.454526,
+                    y = 0.463487,
+                },
+            },
+        },
+    },
+    [48032] = {
+        name = "Seedling Protector",
+        locations = {
+            [77] = {
+                {
+                    x = 0.486588,
+                    y = 0.251443,
+                },
+            },
+        },
+    },
+    [48033] = {
+        name = "Stebben Oreknuckle",
+        locations = {
+            [36] = {
+                {
+                    x = 0.468068,
+                    y = 0.44073,
+                },
+            },
+        },
+    },
+    [48042] = {
+        name = "Sapling Protector",
+    },
+    [48044] = {
+        name = "Flourishing Protector",
+    },
+    [48085] = {
+        name = "Quartermaster Kaoshin",
+        locations = {
+            [36] = {
+                {
+                    x = 0.453244,
+                    y = 0.517452,
+                },
+            },
+        },
+    },
+    [48109] = {
+        name = "John J. Keeshan",
+        locations = {
+            [36] = {
+                {
+                    x = 0.463851,
+                    y = 0.460166,
+                },
+            },
+        },
+    },
+    [48110] = {
+        name = "Colonel Troteman",
+        locations = {
+            [36] = {
+                {
+                    x = 0.463264,
+                    y = 0.459734,
+                },
+            },
+        },
+    },
+    [48126] = {
+        name = "Isural Forestsworn",
+        locations = {
+            [77] = {
+                {
+                    x = 0.439309,
+                    y = 0.281664,
+                },
+            },
+        },
+    },
+    [48127] = {
+        name = "Darla Drilldozer",
+        locations = {
+            [77] = {
+                {
+                    x = 0.563289,
+                    y = 0.081752,
+                },
+            },
+        },
+    },
+    [48133] = {
+        name = "General Thorg'izog",
+        locations = {
+            [36] = {
+                {
+                    x = 0.306701,
+                    y = 0.337131,
+                },
+            },
+        },
+    },
+    [48208] = {
+        name = "The Rattle of Bones",
+        locations = {
+            [64] = {
+                {
+                    x = 0.434018,
+                    y = 0.434425,
+                },
+            },
+        },
+    },
+    [48306] = {
+        name = "John J. Keeshan",
+        locations = {
+            [36] = {
+                {
+                    x = 0.735523,
+                    y = 0.672428,
+                },
+            },
+        },
+    },
+    [48307] = {
+        name = "Colonel Troteman",
+        locations = {
+            [36] = {
+                {
+                    x = 0.736389,
+                    y = 0.671675,
+                },
+            },
+        },
+    },
+    [48333] = {
+        name = "Foreman Pikwik",
+        locations = {
+            [77] = {
+                {
+                    x = 0.546829,
+                    y = 0.184053,
+                },
+            },
+        },
+    },
+    [48339] = {
+        name = "Elessa Starbreeze",
+        locations = {
+            [77] = {
+                {
+                    x = 0.439386,
+                    y = 0.27861,
+                },
+            },
+        },
+    },
+    [48349] = {
+        name = "Hurak Wildhorn",
+        locations = {
+            [77] = {
+                {
+                    x = 0.440072,
+                    y = 0.278499,
+                },
+            },
+        },
+    },
+    [48459] = {
+        name = "Tender Puregrove",
+        locations = {
+            [77] = {
+                {
+                    x = 0.433359,
+                    y = 0.304226,
+                },
+            },
+        },
+    },
+    [48461] = {
+        name = "Ferli",
+        locations = {
+            [77] = {
+                {
+                    x = 0.640908,
+                    y = 0.102869,
+                },
+            },
+        },
+    },
+    [48491] = {
+        name = "James Hallow",
+        locations = {
+            [77] = {
+                {
+                    x = 0.443349,
+                    y = 0.280645,
+                },
+            },
+        },
+    },
+    [48492] = {
+        name = "Lyros Swiftwind",
+        locations = {
+            [77] = {
+                {
+                    x = 0.619054,
+                    y = 0.26665,
+                },
+            },
+        },
+    },
+    [48493] = {
+        name = "Alton Redding",
+        locations = {
+            [77] = {
+                {
+                    x = 0.567608,
+                    y = 0.185014,
+                },
+            },
+        },
+    },
+    [48559] = {
+        name = "Ariok",
+        locations = {
+            [36] = {
+                {
+                    x = 0.174646,
+                    y = 0.516083,
+                },
+            },
+        },
+    },
+    [48565] = {
+        name = "Ariok",
+        locations = {
+            [36] = {
+                {
+                    x = 0.547777,
+                    y = 0.245796,
+                },
+            },
+        },
+    },
+    [48568] = {
+        name = "Eitrigg",
+        locations = {
+            [36] = {
+                {
+                    x = 0.44538,
+                    y = 0.444041,
+                },
+            },
+        },
+    },
+    [48569] = {
+        name = "Eitrigg",
+        locations = {
+            [36] = {
+                {
+                    x = 0.546977,
+                    y = 0.244937,
+                },
+            },
+        },
+    },
+    [48658] = {
+        name = "Kaldorei Spirit",
+        locations = {
+            [83] = {
+                {
+                    x = 0.507128,
+                    y = 0.548741,
+                },
+            },
+        },
+    },
+    [48659] = {
+        name = "Quel'dorei Spirit",
+        locations = {
+            [83] = {
+                {
+                    x = 0.508005,
+                    y = 0.55004,
+                },
+            },
+        },
+    },
+    [48660] = {
+        name = "Sin'dorei Spirit",
+        locations = {
+            [83] = {
+                {
+                    x = 0.506923,
+                    y = 0.550726,
+                },
+            },
+        },
+    },
+    [48722] = {
+        name = "Burndl",
+        locations = {
+            [83] = {
+                {
+                    x = 0.653177,
+                    y = 0.462061,
+                },
+            },
+        },
+    },
+    [48723] = {
+        name = "Tanrir",
+        locations = {
+            [83] = {
+                {
+                    x = 0.653659,
+                    y = 0.462089,
+                },
+            },
+        },
+    },
+    [48965] = {
+        name = "Deez Rocksnitch",
+        locations = {
+            [83] = {
+                {
+                    x = 0.597481,
+                    y = 0.496545,
+                },
+            },
+        },
+    },
+    [49396] = {
+        name = "Jez Goodgrub",
+        locations = {
+            [83] = {
+                {
+                    x = 0.559371,
+                    y = 0.281255,
+                },
+            },
+        },
+    },
+    [49399] = {
+        name = "Remma Curtainfire",
+        locations = {
+            [83] = {
+                {
+                    x = 0.456083,
+                    y = 0.415848,
+                },
+            },
+        },
+    },
+    [49400] = {
+        name = "Marcy Curtainfire",
+        locations = {
+            [83] = {
+                {
+                    x = 0.462899,
+                    y = 0.425806,
+                },
+            },
+        },
+    },
+    [49402] = {
+        name = "Sana Curtainfire",
+        locations = {
+            [83] = {
+                {
+                    x = 0.480803,
+                    y = 0.406092,
+                },
+            },
+        },
+    },
+    [49407] = {
+        name = "Rinno Curtainfire",
+        locations = {
+            [83] = {
+                {
+                    x = 0.457768,
+                    y = 0.410077,
+                },
+            },
+        },
+    },
+    [49436] = {
+        name = "Francis Morcott",
+        locations = {
+            [83] = {
+                {
+                    x = 0.558959,
+                    y = 0.282817,
+                },
+            },
+        },
+    },
+    [49537] = {
+        name = "Jeb Guthrie",
+        locations = {
+            [83] = {
+                {
+                    x = 0.559695,
+                    y = 0.282394,
+                },
+            },
+        },
+    },
+    [49748] = {
+        name = "Hero's Herald",
+    },
+    [50263] = {
+        name = "Jadrag the Slicer",
+        locations = {
+            [83] = {
+                {
+                    x = 0.61872,
+                    y = 0.746651,
+                },
+            },
+        },
+    },
+    [50366] = {
+        name = "Nymn",
+        locations = {
+            [83] = {
+                {
+                    x = 0.596821,
+                    y = 0.504808,
+                },
+            },
+        },
+    },
+    [50587] = {
+        name = "Okril'lon Mage",
+    },
+    [51664] = {
+        name = "Andalar Shadevale",
+        locations = {
+            [77] = {
+                {
+                    x = 0.363542,
+                    y = 0.582596,
+                },
+            },
+        },
+    },
+    [51677] = {
+        name = "Winterspring Cub",
     },
 })

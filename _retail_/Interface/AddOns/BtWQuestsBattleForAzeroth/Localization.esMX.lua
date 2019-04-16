@@ -4,6 +4,8 @@ if GetLocale() ~= "esMX" then
     return
 end
 
+BTWQUESTS_GIFT_OF_NZOTH = "Don de N'Zoth"
+BTWQUESTS_HATI_REBORN = "Hati renacido"
 BTWQUESTS_MAGHAR_ORC = "Orco mag'har"
 BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "Personalización para elfo de la noche de \"guerrero nocturno\""
 BTWQUESTS_THE_WAR_CAMPAIGN = "La campaña de guerra"

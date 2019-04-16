@@ -149,6 +149,39 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [905] = {
         name = "No covil dos raptores",
     },
+    [1168] = {
+        name = "O exército dos dragões negros",
+    },
+    [1201] = {
+        name = "Os espiões de Theramore",
+    },
+    [1202] = {
+        name = "As docas de Theramore",
+    },
+    [1204] = {
+        name = "Sopa de pedralama com peixe",
+    },
+    [1205] = {
+        name = "Mortocharco",
+    },
+    [1222] = {
+        name = "A fuga do Cascão",
+    },
+    [1258] = {
+        name = "Caranguejo não é peixe...",
+    },
+    [1270] = {
+        name = "A fuga do Cascão",
+    },
+    [1454] = {
+        name = "O naufrágio de Karnitol",
+    },
+    [1455] = {
+        name = "O naufrágio de Karnitol",
+    },
+    [1456] = {
+        name = "O naufrágio de Karnitol",
+    },
     [1918] = {
         name = "O elemento conspurcado",
     },
@@ -158,8 +191,41 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [5041] = {
         name = "Suprimentos para a Encruzilhada",
     },
+    [5421] = {
+        name = "Peixe no balde",
+    },
+    [5501] = {
+        name = "Ossos do ofício",
+    },
+    [5561] = {
+        name = "Arrebanhamento de kodos",
+    },
+    [5581] = {
+        name = "Portais para a Legião",
+    },
     [5713] = {
         name = "Tiro e queda",
+    },
+    [5821] = {
+        name = "Procura-se guarda-costas",
+    },
+    [5943] = {
+        name = "Caravana Gizelton",
+    },
+    [6031] = {
+        name = "Runatrama",
+    },
+    [6132] = {
+        name = "Me tira daqui!",
+    },
+    [6134] = {
+        name = "Vá catar fantasmoplasma!",
+    },
+    [6142] = {
+        name = "Boa isca",
+    },
+    [6143] = {
+        name = "Camarão que dorme a onda leva",
     },
     [6441] = {
         name = "Chifres de Sátiro",
@@ -188,6 +254,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [6641] = {
         name = "Vorsha, a Açoitadora",
     },
+    [7737] = {
+        name = "Conquistando ainda mais confiança",
+    },
     [7863] = {
         name = "Kit de sobrevivência básico de sentinela",
     },
@@ -197,11 +266,95 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [7865] = {
         name = "Kit de sobrevivência avançado de sentinela",
     },
+    [8277] = {
+        name = "Peçonha mortal do deserto",
+    },
+    [8278] = {
+        name = "A última esperança de Noggel",
+    },
+    [8279] = {
+        name = "O dicionário do crepúsculo",
+    },
+    [8280] = {
+        name = "Defendendo as linhas de suprimento",
+    },
+    [8281] = {
+        name = "Aumentando a segurança",
+    },
+    [8282] = {
+        name = "Algibeira perdida do Noggel",
+    },
+    [8283] = {
+        name = "Procura-se: Agarramata, o Terror das Areias",
+    },
+    [8284] = {
+        name = "O mistério do crepúsculo",
+    },
+    [8285] = {
+        name = "O desertor",
+    },
+    [8287] = {
+        name = "Intenção terrível",
+    },
+    [8304] = {
+        name = "Querida Natália",
+    },
+    [8306] = {
+        name = "No ventre da loucura",
+    },
+    [8308] = {
+        name = "A carta perdida de Brann Barbabronze",
+    },
+    [8309] = {
+        name = "À procura de glifos",
+    },
+    [8318] = {
+        name = "Comunicação secreta",
+    },
+    [8319] = {
+        name = "Textos codificados do Crepúsculo",
+    },
+    [8320] = {
+        name = "Geolordes do Crepúsculo",
+    },
+    [8321] = {
+        name = "Viral, o Vil",
+    },
+    [8323] = {
+        name = "Crentes Fiéis",
+    },
+    [8470] = {
+        name = "Totem ritual de Lenha Morta",
+    },
+    [9415] = {
+        name = "Apresente-se ao Marechal Murazul",
+    },
+    [9416] = {
+        name = "Apresente-se à General Kyríala",
+    },
     [9436] = {
         name = "Conhecimento dos Sanguescalpo",
     },
+    [9437] = {
+        name = "O crepúsculo do mensageiro da aurora",
+    },
     [9457] = {
         name = "Um patrono incomum",
+    },
+    [11208] = {
+        name = "Uma entrega para Drazzit",
+    },
+    [11211] = {
+        name = "Socorro à Coroa de Barro",
+    },
+    [11212] = {
+        name = "A fazenda de Tabetha",
+    },
+    [11213] = {
+        name = "A visita a Tabetha",
+    },
+    [11215] = {
+        name = "Ajude a Coroa de Barro",
     },
     [13504] = {
         name = "Os operários Lança Partida",
@@ -518,6 +671,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [13660] = {
         name = "Documento da Liga dos Exploradores (5 de 6)",
     },
+    [13662] = {
+        name = "Conquistando a confiança",
+    },
     [13683] = {
         name = "Interromper os rituais",
     },
@@ -583,6 +739,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [13849] = {
         name = "Astranaar em chamas!",
+    },
+    [13850] = {
+        name = "Tolerância tóxica",
     },
     [13853] = {
         name = "Só acaba quando termina",
@@ -653,8 +812,14 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [13886] = {
         name = "O vórtice",
     },
+    [13887] = {
+        name = "Ovos de Pelenoso",
+    },
     [13888] = {
         name = "O vórtice",
+    },
+    [13889] = {
+        name = "Hora do lanche",
     },
     [13890] = {
         name = "Mantenha o fogo aceso",
@@ -692,6 +857,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [13902] = {
         name = "Os preparativos para a ofensiva",
     },
+    [13903] = {
+        name = "Verme Gorishi",
+    },
+    [13904] = {
+        name = "Cozido, mexido ou cru mesmo?",
+    },
+    [13905] = {
+        name = "Penas de Rocas Flamejantes",
+    },
+    [13906] = {
+        name = "Ninguém segura esse bebê",
+    },
     [13907] = {
         name = "Limpando as ruínas",
     },
@@ -718,9 +895,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [13920] = {
         name = "Antes de partir...",
-    },
-    [13921] = {
-        name = "O penitente",
     },
     [13922] = {
         name = "Nas mãos dos perversos",
@@ -962,17 +1136,41 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14165] = {
         name = "Coração de pedra (e rins, e fígado, e...)",
     },
+    [14184] = {
+        name = "Meu tempo acabou",
+    },
+    [14188] = {
+        name = "Vingue Furien!",
+    },
+    [14189] = {
+        name = "Tradução",
+    },
     [14190] = {
         name = "O prisma perfeito",
+    },
+    [14191] = {
+        name = "Os passos de Furien",
     },
     [14192] = {
         name = "O tal do cristal",
     },
+    [14193] = {
+        name = "Nada que um par de melões não dê jeito",
+    },
     [14194] = {
         name = "Recarnificação",
     },
+    [14195] = {
+        name = "Tudo fica claro",
+    },
+    [14196] = {
+        name = "Incendiário",
+    },
     [14197] = {
         name = "Ferro fundido (e mal pago)",
+    },
+    [14198] = {
+        name = "Cavalgante da tempestade",
     },
     [14201] = {
         name = "Mil histórias na areia",
@@ -989,11 +1187,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14216] = {
         name = "O mistério da Pedra Sarcen",
     },
+    [14223] = {
+        name = "Paz de espírito",
+    },
+    [14225] = {
+        name = "Você vai saber quando vir",
+    },
     [14226] = {
         name = "Vingança barata",
     },
+    [14227] = {
+        name = "Juntando as cabeças",
+    },
     [14230] = {
         name = "Trabalho manual",
+    },
+    [14246] = {
+        name = "Adoção antecipada",
+    },
+    [14247] = {
+        name = "Terras teimosas",
     },
     [14249] = {
         name = "Tosa pra mim, tosa!",
@@ -1001,8 +1214,32 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14250] = {
         name = "Tirando uma casquinha",
     },
+    [14251] = {
+        name = "Novo começo",
+    },
+    [14252] = {
+        name = "Bom dinheiro por rabo ruim",
+    },
+    [14253] = {
+        name = "Emplume minhas flechas!",
+    },
+    [14254] = {
+        name = "Metal pesado",
+    },
+    [14255] = {
+        name = "Ethel Rethor",
+    },
+    [14256] = {
+        name = "A ameaça emergente",
+    },
+    [14257] = {
+        name = "Massacre das Sibilâmina",
+    },
     [14258] = {
         name = "Morteiro certeiro",
+    },
+    [14260] = {
+        name = "Indo fundo",
     },
     [14261] = {
         name = "Dando um gelo",
@@ -1013,14 +1250,29 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14263] = {
         name = "Vai catar no mato",
     },
+    [14264] = {
+        name = "Mais molhado do que água",
+    },
     [14267] = {
         name = "Investigação do altar",
+    },
+    [14268] = {
+        name = "Impacto profundo",
     },
     [14270] = {
         name = "O fragmento do monolito",
     },
     [14271] = {
         name = "Apresente-se a Smagadois",
+    },
+    [14282] = {
+        name = "Mistério solucionado",
+    },
+    [14284] = {
+        name = "A vingança do elemental vingativo",
+    },
+    [14292] = {
+        name = "O inimigo do nosso inimigo",
     },
     [14295] = {
         name = "Irmãs do mar",
@@ -1037,11 +1289,47 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14300] = {
         name = "A prova de fogo",
     },
+    [14301] = {
+        name = "Volte e explique",
+    },
+    [14302] = {
+        name = "Relatório oficial",
+    },
+    [14304] = {
+        name = "Teoria do sangue",
+    },
+    [14305] = {
+        name = "Tempo de colher",
+    },
+    [14306] = {
+        name = "Arrancando plantas",
+    },
+    [14307] = {
+        name = "Ventos teimosos",
+    },
     [14308] = {
         name = "Ciência, demência, qual a diferência?",
     },
+    [14309] = {
+        name = "Acalmando os kodos",
+    },
     [14310] = {
         name = "Falha de segmentação: núcleo expulso",
+    },
+    [14311] = {
+        name = "Fazendo a sua parte",
+    },
+    [14312] = {
+        name = "Hora de ser apresentado",
+    },
+    [14314] = {
+        name = "Fuga!",
+    },
+    [14316] = {
+        name = "Propriedade cenariana",
+    },
+    [14318] = {
+        name = "Negociações delicadas",
     },
     [14322] = {
         name = "Ai ai ai, Dona Ciência! Coisa feia!",
@@ -1052,11 +1340,89 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14324] = {
         name = "O tal do elemental",
     },
+    [14325] = {
+        name = "Trabalho por comida",
+    },
+    [14327] = {
+        name = "Minha palavra é meu compromisso",
+    },
+    [14328] = {
+        name = "Três príncipes",
+    },
+    [14329] = {
+        name = "Não tão rápido!",
+    },
+    [14330] = {
+        name = "Por trás de portas fechadas",
+    },
+    [14332] = {
+        name = "Hora de mudança",
+    },
+    [14333] = {
+        name = "Enquanto você está aqui",
+    },
+    [14334] = {
+        name = "Gordoleia",
+    },
+    [14335] = {
+        name = "Desobstruindo",
+    },
+    [14337] = {
+        name = "Aldeia Pescassombra",
+    },
+    [14338] = {
+        name = "Entreposto do Espírito que Anda",
+    },
+    [14339] = {
+        name = "Dispositivo de entrega",
+    },
     [14340] = {
         name = "Que bonita sua roupa",
     },
+    [14341] = {
+        name = "Arneses do Smid",
+    },
+    [14342] = {
+        name = "Invasão infernal",
+    },
+    [14343] = {
+        name = "Concocção do Maurin",
+    },
     [14345] = {
         name = "Quando a esmola é muita",
+    },
+    [14346] = {
+        name = "Purificando Nossa Fenda Geológica",
+    },
+    [14354] = {
+        name = "Dádivas de Eluna",
+    },
+    [14357] = {
+        name = "Às armas!",
+    },
+    [14358] = {
+        name = "Dez libras de carne",
+    },
+    [14359] = {
+        name = "Bênçãos do alto",
+    },
+    [14360] = {
+        name = "Nada que um par de melões não dê jeito",
+    },
+    [14361] = {
+        name = "Paz de espírito",
+    },
+    [14362] = {
+        name = "As orelhas estão queimando",
+    },
+    [14363] = {
+        name = "Você vai saber quando vir",
+    },
+    [14364] = {
+        name = "Juntando as cabeças",
+    },
+    [14365] = {
+        name = "Ethel Rethor",
     },
     [14370] = {
         name = "O mistério da Azsharita",
@@ -1064,14 +1430,44 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14371] = {
         name = "Fome de gigante",
     },
+    [14372] = {
+        name = "Acampamento de Thargad",
+    },
+    [14373] = {
+        name = "Invasão infernal",
+    },
+    [14374] = {
+        name = "Portais da Legião",
+    },
+    [14376] = {
+        name = "A derrocada de Jugkar",
+    },
     [14377] = {
         name = "Grandes amigos",
+    },
+    [14378] = {
+        name = "Caçando Brendol",
+    },
+    [14379] = {
+        name = "Um toque de lagostroc!",
+    },
+    [14380] = {
+        name = "Uma descoberta impactante",
+    },
+    [14381] = {
+        name = "Purificando nossa fenda geológica",
     },
     [14383] = {
         name = "Os terríveis engenhoqueiros das Profundezas Devastadas",
     },
+    [14384] = {
+        name = "Redirecionamento!",
+    },
     [14385] = {
         name = "Experimento com azsharita Nº1",
+    },
+    [14387] = {
+        name = "Reconhecimento do terreno",
     },
     [14388] = {
         name = "Experimento com azsharita Nº2",
@@ -1088,11 +1484,20 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [14392] = {
         name = "Adeus, pequena criatura",
     },
+    [14393] = {
+        name = "Ao combate!",
+    },
+    [14394] = {
+        name = "Morte a Agogridon",
+    },
     [14407] = {
         name = "Blues de Azshara",
     },
     [14408] = {
         name = "O Plano da 9",
+    },
+    [14410] = {
+        name = "As selvas de Feralas",
     },
     [14413] = {
         name = "O pináculo do aprendizado",
@@ -1235,23 +1640,998 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [24497] = {
         name = "Mais milhas de voo",
     },
+    [24504] = {
+        name = "Limpe a estrada alta",
+    },
+    [24505] = {
+        name = "Resistência no Morro dos Caçadores",
+    },
+    [24512] = {
+        name = "A redenção dos guerreiros",
+    },
+    [24513] = {
+        name = "Olho por olho",
+    },
+    [24514] = {
+        name = "Pelego de raptor",
+    },
+    [24515] = {
+        name = "Sinais no céu",
+    },
+    [24517] = {
+        name = "Terror no coração",
+    },
+    [24518] = {
+        name = "A estrada baixa",
+    },
+    [24519] = {
+        name = "Derrube o levantamento",
+    },
+    [24525] = {
+        name = "Mantendo os cães longe",
+    },
+    [24529] = {
+        name = "Mal a pior",
+    },
+    [24534] = {
+        name = "Falando a língua deles",
+    },
+    [24539] = {
+        name = "O ataque dos vegetais folhosos",
+    },
+    [24542] = {
+        name = "Um broto peculiar",
+    },
+    [24543] = {
+        name = "Uma família dividida",
+    },
+    [24546] = {
+        name = "Um traço na areia",
+    },
+    [24551] = {
+        name = "O novo chefe",
+    },
+    [24552] = {
+        name = "Leões como esses dos Sertões",
+    },
+    [24565] = {
+        name = "Intervenção biológica",
+    },
+    [24566] = {
+        name = "Semeando a solução",
+    },
+    [24569] = {
+        name = "Quebra-cerco",
+    },
+    [24570] = {
+        name = "Serpente resistente",
+    },
+    [24571] = {
+        name = "Sementes de heraçoite",
+    },
+    [24572] = {
+        name = "Retomando Taurajo",
+    },
+    [24573] = {
+        name = "Homenagem aos mortos",
+    },
+    [24574] = {
+        name = "Colhendo o caos",
+    },
+    [24577] = {
+        name = "Inspeção do Forte da Desolação",
+    },
+    [24591] = {
+        name = "A aposentadoria de Gar'dul",
+    },
+    [24601] = {
+        name = "A Garganta do Pesadelo",
+    },
+    [24603] = {
+        name = "De luto? Lute!",
+    },
+    [24604] = {
+        name = "E quanto ao pobre Mankrik?",
+    },
+    [24606] = {
+        name = "Sangue dos Sertões",
+    },
+    [24608] = {
+        name = "Denterroto",
+    },
+    [24618] = {
+        name = "Conquiste a Chaga de Guerra",
+    },
+    [24619] = {
+        name = "Pedaço é pedaço em qualquer canto",
+    },
+    [24620] = {
+        name = "Coração de mastodonte",
+    },
+    [24621] = {
+        name = "Com a mão na massa cinzenta",
+    },
+    [24631] = {
+        name = "Pesca no céu",
+    },
+    [24632] = {
+        name = "Vingança tauren",
+    },
+    [24633] = {
+        name = "A súplica de Mahka",
+    },
+    [24634] = {
+        name = "Informações de guerra",
+    },
+    [24637] = {
+        name = "O Carniceiro de Taurajo",
+    },
+    [24653] = {
+        name = "Ecos de Agamaggan",
+    },
+    [24654] = {
+        name = "Buraco quente",
+    },
+    [24684] = {
+        name = "Feito raposa no galinheiro",
+    },
+    [24685] = {
+        name = "A fortaleza dos anões",
+    },
+    [24686] = {
+        name = "Levado pelas ondas",
+    },
+    [24687] = {
+        name = "Buquê da morte",
+    },
+    [24689] = {
+        name = "Fluindo para o norte",
+    },
+    [24690] = {
+        name = "Agni",
+    },
+    [24691] = {
+        name = "Iguarias peculiares",
+    },
+    [24692] = {
+        name = "O colosso infante",
+    },
+    [24693] = {
+        name = "Viga Musgosa",
+    },
+    [24694] = {
+        name = "O Terraço do Moldador",
+    },
+    [24695] = {
+        name = "Eterna vigia superior",
+    },
+    [24697] = {
+        name = "O segredo da carne fresca",
+    },
+    [24698] = {
+        name = "Aventuras arqueológicas",
+    },
+    [24699] = {
+        name = "Gormashh, o pegajoso",
+    },
+    [24700] = {
+        name = "Duro de colher",
+    },
+    [24701] = {
+        name = "Quando um não quer, dois lucram",
+    },
+    [24702] = {
+        name = "Aqui jaz Dadanga",
+    },
+    [24703] = {
+        name = "Uma lição importante",
+    },
+    [24704] = {
+        name = "Os temíveis dragões da Cratera Un'Goro",
+    },
+    [24705] = {
+        name = "Donzelas foram feitas para serem salvas",
+    },
+    [24706] = {
+        name = "Os espíritos das Fontes Termais Golakka",
+    },
+    [24707] = {
+        name = "A canção de Maximiliano",
+    },
+    [24708] = {
+        name = "O Cata-fósseis 3000",
+    },
+    [24709] = {
+        name = "Um conto de duas pás",
+    },
+    [24714] = {
+        name = "À procura de A-Me 01",
+    },
+    [24715] = {
+        name = "Consertando A-Me 01",
+    },
+    [24717] = {
+        name = "Os macacos de Un'goro",
+    },
+    [24718] = {
+        name = "O poderoso U'cha",
+    },
+    [24719] = {
+        name = "Brancor das garras",
+    },
+    [24720] = {
+        name = "Cristais de poder",
+    },
+    [24721] = {
+        name = "A Torre Oriental",
+    },
+    [24722] = {
+        name = "A Torre Norte",
+    },
+    [24723] = {
+        name = "A Torre Oeste",
+    },
+    [24730] = {
+        name = "Osso duro de roer",
+    },
+    [24731] = {
+        name = "A dieta de Lar'korwi",
+    },
+    [24732] = {
+        name = "O olfato de Lar'korwi",
+    },
+    [24733] = {
+        name = "A isca para Lar'korwi",
+    },
+    [24734] = {
+        name = "Perdido!",
+    },
+    [24735] = {
+        name = "O calor tá de matar",
+    },
+    [24736] = {
+        name = "O Chislo quer voar!",
+    },
+    [24737] = {
+        name = "Supergrudento",
+    },
+    [24740] = {
+        name = "Atividade vulcânica",
+    },
+    [24742] = {
+        name = "Morno... morno... quente...",
+    },
+    [24747] = {
+        name = "Sabotagem!",
+    },
+    [24794] = {
+        name = "Fale com Espraga",
+    },
+    [24807] = {
+        name = "Winnoa Bosque dos Pinheiros",
+    },
+    [24824] = {
+        name = "A terra perturbada",
+    },
+    [24854] = {
+        name = "À procura de Garrevolta",
+    },
+    [24855] = {
+        name = "Flora extravagante",
+    },
+    [24862] = {
+        name = "Corredor da morte",
+    },
+    [24863] = {
+        name = "Rompendo o cerco",
+    },
+    [24865] = {
+        name = "Será que isso ainda está bom?",
+    },
+    [24866] = {
+        name = "Um acampamento de pesquisas abandonado",
+    },
+    [24905] = {
+        name = "Ela não para quieta",
+    },
+    [24906] = {
+        name = "Resgate dos suprimentos",
+    },
+    [24907] = {
+        name = "Pisando na poça",
+    },
+    [24910] = {
+        name = "Carona numa cauda de foguete",
+    },
+    [24911] = {
+        name = "Um paraíso tropical chama",
+    },
+    [24913] = {
+        name = "Lembra-te da Luz",
+    },
+    [24921] = {
+        name = "Apresente-se a Cochrane",
+    },
+    [24926] = {
+        name = "Servindo A-Me 01",
+    },
+    [24927] = {
+        name = "Tre... Quinze piratas sobre o caixão",
+    },
+    [24928] = {
+        name = "Rumolotov!",
+    },
+    [24931] = {
+        name = "Só tenho olhos para você",
+    },
+    [24932] = {
+        name = "Tempo perdido",
+    },
+    [24933] = {
+        name = "Isca do deserto",
+    },
+    [24934] = {
+        name = "Lobos-do-mar!",
+    },
+    [24938] = {
+        name = "Os canhões da Guardanorte",
+    },
+    [24939] = {
+        name = "Siga bem, canhoneiro",
+    },
+    [24941] = {
+        name = "Tiro de metralha",
+    },
+    [24943] = {
+        name = "Reconquiste o Pátio",
+    },
+    [24944] = {
+        name = "De volta à luta",
+    },
+    [24947] = {
+        name = "Próxima parada: Enseada do Armador Perdido",
+    },
+    [24948] = {
+        name = "Rompendo o cerco",
+    },
+    [24949] = {
+        name = "Trabalho sujo",
+    },
+    [24950] = {
+        name = "Capitão Barborrendo",
+    },
+    [24951] = {
+        name = "Uma grande ideia",
+    },
+    [24953] = {
+        name = "Nada que uma explosão não resolva",
+    },
+    [24955] = {
+        name = "Burrocracia",
+    },
+    [24956] = {
+        name = "Silenciando Rugifúria",
+    },
+    [24957] = {
+        name = "Boas-vindas aos babões",
+    },
+    [24963] = {
+        name = "Bate, depois assopra",
+    },
+    [25000] = {
+        name = "O pessoal de Timeu",
+    },
+    [25001] = {
+        name = "Ranhareias",
+    },
+    [25002] = {
+        name = "\"Raptor\" é outro jeito de dizer \"Ladrão\"",
+    },
+    [25008] = {
+        name = "Animais imundos",
+    },
+    [25014] = {
+        name = "Tesouro do Ranhareias",
+    },
+    [25015] = {
+        name = "Faça-os guinchar",
+    },
+    [25017] = {
+        name = "Antigos obstáculos",
+    },
+    [25018] = {
+        name = "Andoren nos ajudará",
+    },
+    [25019] = {
+        name = "Eu vi primeiro!",
+    },
+    [25020] = {
+        name = "Fragmentos da linguagem",
+    },
+    [25021] = {
+        name = "No sangue, poder",
+    },
+    [25022] = {
+        name = "Falha na comunicação",
+    },
+    [25025] = {
+        name = "Sang'thraze, a Defletora",
+    },
+    [25026] = {
+        name = "Mojo Meganegro",
+    },
+    [25027] = {
+        name = "Se essa selva fosse minha, eu mandava desmatar",
+    },
+    [25028] = {
+        name = "Problemas brotando do chão",
+    },
+    [25032] = {
+        name = "Segredos do oásis",
+    },
+    [25034] = {
+        name = "Para a frente de batalha!",
+    },
+    [25036] = {
+        name = "Os problemas de Timeu",
+    },
+    [25041] = {
+        name = "Leões como esses dos Sertões",
+    },
+    [25042] = {
+        name = "Saco vazio não para em pé",
+    },
+    [25043] = {
+        name = "Campos de Sangue",
+    },
+    [25044] = {
+        name = "Diplomacia por outros meios",
+    },
+    [25045] = {
+        name = "Um traço na areia",
+    },
+    [25048] = {
+        name = "Resgate dos suprimentos",
+    },
+    [25049] = {
+        name = "Pisando na poça",
+    },
+    [25050] = {
+        name = "Carona numa cauda de foguete",
+    },
+    [25051] = {
+        name = "A exterminação dos Névoa Negra",
+    },
+    [25052] = {
+        name = "Tre... Quinze piratas sobre o caixão",
+    },
+    [25053] = {
+        name = "Rumolotov!",
+    },
+    [25054] = {
+        name = "Pilhando o saque ou saqueando a pilhagem?",
+    },
+    [25057] = {
+        name = "Ponham-nos a ferros",
+    },
+    [25059] = {
+        name = "Os documentos de Taurajo",
+    },
+    [25060] = {
+        name = "Hmm... Defina \"louco\"",
+    },
+    [25061] = {
+        name = "Próxima parada: Estação Fagulhaço",
+    },
+    [25062] = {
+        name = "À procura de respostas",
+    },
+    [25063] = {
+        name = "Tartarugação",
+    },
+    [25065] = {
+        name = "Até tu, Bruto?",
+    },
+    [25067] = {
+        name = "Cúpula do Trovão: O Grandepacas!",
+    },
+    [25068] = {
+        name = "Passado despedaçado",
+    },
+    [25069] = {
+        name = "Os segredos de Uldum",
+    },
+    [25070] = {
+        name = "O que há lá dentro?",
+    },
+    [25072] = {
+        name = "Alguns bons goblins",
+    },
+    [25074] = {
+        name = "Encontre-me no Forte Triunfo",
+    },
+    [25075] = {
+        name = "Peça e receberá peças",
+    },
+    [25079] = {
+        name = "Qual é o pó?",
+    },
+    [25080] = {
+        name = "Pilhas não inclusas",
+    },
+    [25081] = {
+        name = "Conquiste a Chaga de Guerra",
+    },
+    [25082] = {
+        name = "Fogo no buraco",
+    },
+    [25084] = {
+        name = "Ameaça crescente",
+    },
+    [25085] = {
+        name = "Denterroto",
+    },
+    [25087] = {
+        name = "Apresente-se a Duas-tranças",
+    },
+    [25091] = {
+        name = "Posto Silitriste",
+    },
+    [25094] = {
+        name = "Cúpula do Trovão: Zumonga!",
+    },
+    [25095] = {
+        name = "Cúpula do Trovão: Sarinexx!",
+    },
+    [25102] = {
+        name = "Passando o rodo no kodo",
+    },
+    [25103] = {
+        name = "Vilarejo dos Falsários",
+    },
+    [25104] = {
+        name = "O estado do sítio",
+    },
+    [25106] = {
+        name = "Pondo ordem na bagunça",
+    },
+    [25107] = {
+        name = "A grande tabuleta",
+    },
+    [25108] = {
+        name = "Feegly, o Exilado",
+    },
+    [25111] = {
+        name = "Bancando o urubu",
+    },
+    [25112] = {
+        name = "Robô-açougueiro",
+    },
+    [25115] = {
+        name = "Carnificina Patapústula",
+    },
     [25118] = {
         name = "Aracnofobia",
+    },
+    [25120] = {
+        name = "O último voo de Marley",
+    },
+    [25121] = {
+        name = "Próxima parada: Enseada do Armador Perdido",
+    },
+    [25151] = {
+        name = "Com cerveja!",
+    },
+    [25153] = {
+        name = "Resgate em Bael'dun",
+    },
+    [25163] = {
+        name = "Quem é o responsável?",
+    },
+    [25166] = {
+        name = "Capitão Barborrendo",
+    },
+    [25174] = {
+        name = "Duas-tranças precisa saber",
+    },
+    [25175] = {
+        name = "As más notícias",
+    },
+    [25182] = {
+        name = "Mate todos eles!",
+    },
+    [25183] = {
+        name = "...E enterre o restante",
+    },
+    [25185] = {
+        name = "Está feito",
+    },
+    [25186] = {
+        name = "Resistência fútil",
+    },
+    [25191] = {
+        name = "Investigue a destruição",
+    },
+    [25197] = {
+        name = "O Almirante não recua",
+    },
+    [25208] = {
+        name = "Conte a Sílvia",
+    },
+    [25209] = {
+        name = "A ameaça Gordunni",
+    },
+    [25210] = {
+        name = "Sinais de mudança",
     },
     [25211] = {
         name = "Limpeza geral nas ruínas",
     },
+    [25230] = {
+        name = "Mais do que uma simples doença",
+    },
     [25235] = {
         name = "Vul'Gol vulgar",
+    },
+    [25237] = {
+        name = "Lágrimas de pedra",
+    },
+    [25241] = {
+        name = "A terra perdida",
+    },
+    [25250] = {
+        name = "Selando o sonho",
+    },
+    [25252] = {
+        name = "Os soberanos do Gládio Cruel",
     },
     [25275] = {
         name = "Apresente-se ao capataz",
     },
+    [25284] = {
+        name = "Instilando o medo",
+    },
+    [25292] = {
+        name = "Laços de família",
+    },
+    [25304] = {
+        name = "A batalha por Sardor",
+    },
+    [25305] = {
+        name = "Jamais olhe para trás",
+    },
+    [25329] = {
+        name = "O poder dos Pedramalho",
+    },
+    [25333] = {
+        name = "O poder das sentinelas",
+    },
+    [25336] = {
+        name = "O teste do recipiente",
+    },
+    [25337] = {
+        name = "Muisec de hipogrifo",
+    },
+    [25338] = {
+        name = "Muisec de arvoroso",
+    },
+    [25339] = {
+        name = "Vingança em Nascente Norte",
+    },
+    [25340] = {
+        name = "Coração sombrio",
+    },
+    [25341] = {
+        name = "O orbe Gordunni",
+    },
+    [25342] = {
+        name = "Fale com Swar'jan",
+    },
+    [25344] = {
+        name = "Abdução ôgrica",
+    },
+    [25345] = {
+        name = "Muisec de dragoleta",
+    },
+    [25346] = {
+        name = "Muisec de gigante da montanha",
+    },
+    [25349] = {
+        name = "Irmãs cara-de-pau",
+    },
+    [25350] = {
+        name = "O aprendiz perdido",
+    },
+    [25356] = {
+        name = "Para o alto!",
+    },
+    [25361] = {
+        name = "Dando um trato na capa",
+    },
+    [25362] = {
+        name = "Uma temível descoberta",
+    },
+    [25363] = {
+        name = "Patábua mole em guerra dura",
+    },
+    [25364] = {
+        name = "Golpe Alfa",
+    },
+    [25365] = {
+        name = "Investigação Patábua",
+    },
+    [25366] = {
+        name = "Os planos de batalha",
+    },
+    [25367] = {
+        name = "Infestação zukk'ash",
+    },
+    [25368] = {
+        name = "Verínias, o Retorcido",
+    },
+    [25369] = {
+        name = "Cravaçoite",
+    },
+    [25373] = {
+        name = "A ameaça no topo da colina",
+    },
+    [25374] = {
+        name = "Eu acho que eu vi um pé-grande!",
+    },
+    [25375] = {
+        name = "Domando os domadores",
+    },
+    [25378] = {
+        name = "O chamado de Ysondra",
+    },
+    [25379] = {
+        name = "A queda de Taerar",
+    },
+    [25386] = {
+        name = "Avante para o Acampamento dos Pedramalho",
+    },
+    [25387] = {
+        name = "Avante para a Aldeia Mojache",
+    },
+    [25391] = {
+        name = "Armas de espírito",
+    },
+    [25394] = {
+        name = "Mais do que uma simples doença",
+    },
     [25395] = {
         name = "O barril roubado",
     },
+    [25396] = {
+        name = "Lágrimas de pedra",
+    },
+    [25397] = {
+        name = "A terra perdida",
+    },
+    [25398] = {
+        name = "Selando o sonho",
+    },
+    [25399] = {
+        name = "Forças Cristafúria",
+    },
+    [25400] = {
+        name = "A ameaça Gordunni",
+    },
+    [25401] = {
+        name = "O orbe Gordunni",
+    },
+    [25402] = {
+        name = "O exame de Estulan",
+    },
+    [25403] = {
+        name = "Abdução ôgrica",
+    },
+    [25406] = {
+        name = "Guardas Gordok",
+    },
+    [25407] = {
+        name = "Forças da natureza: fogos-fátuos",
+    },
+    [25409] = {
+        name = "Forças da natureza: hipogrifos",
+    },
+    [25410] = {
+        name = "Forças da natureza: arvorosos",
+    },
+    [25420] = {
+        name = "Antigos obstáculos",
+    },
+    [25421] = {
+        name = "A grande tabuleta",
+    },
+    [25422] = {
+        name = "O legado de Névoa Negra",
+    },
+    [25423] = {
+        name = "Sofrimento antigo",
+    },
+    [25426] = {
+        name = "Patábua mole em guerra dura",
+    },
+    [25427] = {
+        name = "Golpe alfa",
+    },
+    [25429] = {
+        name = "Infestação zukk'ash",
+    },
+    [25431] = {
+        name = "Cravaçoite",
+    },
+    [25432] = {
+        name = "O malogro dos Gordunni",
+    },
+    [25433] = {
+        name = "Acho que vi um pé-grande!",
+    },
+    [25434] = {
+        name = "Domando os domadores",
+    },
+    [25436] = {
+        name = "Irmãs diabólicas",
+    },
+    [25437] = {
+        name = "O chamado de Ysondra",
+    },
+    [25438] = {
+        name = "O adeus de Ysondra",
+    },
+    [25447] = {
+        name = "Sinais de mudança",
+    },
+    [25448] = {
+        name = "A ameaça da Nascente Norte",
+    },
+    [25449] = {
+        name = "Marca de qualidade",
+    },
+    [25450] = {
+        name = "Melhoria de qualidade",
+    },
+    [25451] = {
+        name = "Pelego imaculado de yeti",
+    },
+    [25452] = {
+        name = "Marca de qualidade",
+    },
+    [25453] = {
+        name = "Melhoria de qualidade",
+    },
+    [25454] = {
+        name = "O pelego perfeito de yeti",
+    },
+    [25458] = {
+        name = "General Ssekissabe",
+    },
+    [25463] = {
+        name = "Fale com Sílvia",
+    },
+    [25465] = {
+        name = "Querida, encolhi uns gigantes!",
+    },
+    [25466] = {
+        name = "Enchendo o tanque",
+    },
+    [25468] = {
+        name = "Forças da natureza: dragoletas",
+    },
+    [25469] = {
+        name = "Forças da natureza: gigantes da montanha",
+    },
+    [25478] = {
+        name = "Para o alto!",
+    },
+    [25479] = {
+        name = "Caminho para Nova Thalanaar",
+    },
+    [25481] = {
+        name = "Caminho para Nova Thalanaar",
+    },
+    [25486] = {
+        name = "Os Temível Totem estão chegando!",
+    },
+    [25487] = {
+        name = "Os Temível Totem estão chegando!",
+    },
+    [25488] = {
+        name = "O Barcódromo",
+    },
+    [25489] = {
+        name = "O Barcódromo",
+    },
+    [25504] = {
+        name = "Me faz um favor?",
+    },
+    [25505] = {
+        name = "Me faz um favor?",
+    },
+    [25513] = {
+        name = "Cúpula do Trovão: Briguinha de Ego!",
+    },
+    [25515] = {
+        name = "Carro-foguete desce pelo buraco",
+    },
+    [25516] = {
+        name = "Carro-foguete desce pelo buraco",
+    },
+    [25517] = {
+        name = "Mais uma briga e outra confusão no bar!",
+    },
+    [25518] = {
+        name = "Mais uma briga e outra confusão no bar!",
+    },
+    [25521] = {
+        name = "Todo castigo pra goblin é pouco",
+    },
+    [25522] = {
+        name = "Giganpídeo",
+    },
+    [25524] = {
+        name = "O banheiro submerso",
+    },
+    [25526] = {
+        name = "O banheiro submerso",
+    },
+    [25532] = {
+        name = "Piratas bons de mira",
+    },
+    [25533] = {
+        name = "Piratas bons de mira",
+    },
+    [25534] = {
+        name = "Nada mais de capataz",
+    },
+    [25541] = {
+        name = "Enchendo os bolsos",
+    },
+    [25542] = {
+        name = "Pula, pirata!",
+    },
+    [25543] = {
+        name = "Pula, pirata!",
+    },
+    [25559] = {
+        name = "Eu vi primeiro!",
+    },
+    [25565] = {
+        name = "Fragmentos da linguagem",
+    },
+    [25566] = {
+        name = "Os segredos de Uldum",
+    },
+    [25585] = {
+        name = "Silencie os canhões",
+    },
+    [25586] = {
+        name = "Silencie os canhões",
+    },
+    [25588] = {
+        name = "Revidando de leve",
+    },
+    [25589] = {
+        name = "Revidando de leve",
+    },
+    [25590] = {
+        name = "Onde está o Capu?",
+    },
+    [25591] = {
+        name = "Cúpula do Trovão: Briguinha de Ego!",
+    },
+    [25596] = {
+        name = "Cadê o Synge?",
+    },
     [25607] = {
         name = "A Gnomofone",
+    },
+    [25609] = {
+        name = "Tesouro afundado",
+    },
+    [25610] = {
+        name = "Tesouro afundado",
     },
     [25613] = {
         name = "Faça um favor a si mesmo",
@@ -1271,11 +2651,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [25622] = {
         name = "Queima de estoque",
     },
+    [25627] = {
+        name = "A queda de Tony Duas-presas",
+    },
+    [25628] = {
+        name = "A queda de Tony Duas-presas",
+    },
     [25640] = {
         name = "Lançar bombas: Mina Cortavento!",
     },
+    [25641] = {
+        name = "Qual é o muisec?",
+    },
     [25642] = {
         name = "Não os encare",
+    },
+    [25643] = {
+        name = "As Ruínas Névoa Negra",
+    },
+    [25645] = {
+        name = "Fale novamente com o Sábio Corre Claro",
     },
     [25646] = {
         name = "Limpeza da Mina Cortavento",
@@ -1295,6 +2690,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [25652] = {
         name = "Confisque aquele balão!",
     },
+    [25654] = {
+        name = "Coração sombrio",
+    },
+    [25660] = {
+        name = "Encosto",
+    },
+    [25661] = {
+        name = "Oferendas",
+    },
     [25662] = {
         name = "Liberte nossas irmãs",
     },
@@ -1304,8 +2708,152 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [25671] = {
         name = "Dizimando a Horda",
     },
+    [25672] = {
+        name = "Mais preparativos",
+    },
     [25673] = {
         name = "Pergunte à Alice",
+    },
+    [25674] = {
+        name = "Orgulho vão",
+    },
+    [25675] = {
+        name = "Combate com ogro",
+    },
+    [25676] = {
+        name = "Furapeito",
+    },
+    [25677] = {
+        name = "A mina é minha",
+    },
+    [25678] = {
+        name = "Escolha o seu destino",
+    },
+    [25679] = {
+        name = "Montanha adentro",
+    },
+    [25680] = {
+        name = "Não fomos nós",
+    },
+    [25681] = {
+        name = "Tem gente que precisa morrer",
+    },
+    [25682] = {
+        name = "Missão Cumprida",
+    },
+    [25683] = {
+        name = "A fornalha Malhorrendo",
+    },
+    [25684] = {
+        name = "Em harmonia com a pedra-sangrenta",
+    },
+    [25685] = {
+        name = "A primeira etapa",
+    },
+    [25686] = {
+        name = "Ritual de sangue",
+    },
+    [25687] = {
+        name = "Não apenas um corpo",
+    },
+    [25688] = {
+        name = "O altar das tempestades",
+    },
+    [25689] = {
+        name = "O tempo é curto",
+    },
+    [25690] = {
+        name = "Um mago sangrento também precisa comer",
+    },
+    [25691] = {
+        name = "O granito carbonizado do Portal Negro",
+    },
+    [25692] = {
+        name = "O sangue vil dos demônios",
+    },
+    [25693] = {
+        name = "Potencializando a pedra",
+    },
+    [25694] = {
+        name = "Protegendo a retaguarda",
+    },
+    [25695] = {
+        name = "O seguro morreu de velho",
+    },
+    [25696] = {
+        name = "O acampamento Clarovéu",
+    },
+    [25697] = {
+        name = "O amuleto de Allistarj",
+    },
+    [25698] = {
+        name = "O amuleto de Sevine",
+    },
+    [25699] = {
+        name = "O amuleto de Grol",
+    },
+    [25700] = {
+        name = "Loramus Talípedes aguarda",
+    },
+    [25701] = {
+        name = "Você é Rakh'likh, demônio",
+    },
+    [25702] = {
+        name = "Lar... Destruído... Nagas...",
+    },
+    [25703] = {
+        name = "Atrocidades",
+    },
+    [25704] = {
+        name = "O mago louco",
+    },
+    [25705] = {
+        name = "Falsos ídolos",
+    },
+    [25706] = {
+        name = "A vingança de Neptul",
+    },
+    [25707] = {
+        name = "O futuro dos Poçapétrea",
+    },
+    [25708] = {
+        name = "Nossos aliados abatidos",
+    },
+    [25709] = {
+        name = "Chega de abutres",
+    },
+    [25710] = {
+        name = "Pequenas distrações",
+    },
+    [25711] = {
+        name = "Elimine os Okril'lon",
+    },
+    [25712] = {
+        name = "Etergarde reina",
+    },
+    [25713] = {
+        name = "Não se atira sem braços",
+    },
+    [25714] = {
+        name = "Vigia Mahar Ba",
+    },
+    [25715] = {
+        name = "Uma olhada mais de perto",
+    },
+    [25716] = {
+        name = "Os sectários batem à porta",
+    },
+    [25717] = {
+        name = "Os demônios e o druida",
+    },
+    [25718] = {
+        name = "A melhor forma de prosseguir",
+    },
+    [25719] = {
+        name = "Recipiente demoníaco",
+    },
+    [25720] = {
+        name = "A ruína de Marl Wormthorn",
     },
     [25721] = {
         name = "Combate à inundação",
@@ -1352,6 +2900,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [25741] = {
         name = "Preparação para o futuro",
     },
+    [25744] = {
+        name = "Negociações",
+    },
+    [25745] = {
+        name = "Negociações",
+    },
+    [25756] = {
+        name = "Peguem o Zheran!",
+    },
+    [25757] = {
+        name = "Peguem o Barbakarvão",
+    },
+    [25762] = {
+        name = "O antigo braseiro",
+    },
     [25765] = {
         name = "Diga a eles que Koko enviou você",
     },
@@ -1370,14 +2933,47 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [25770] = {
         name = "Entregador de cerva",
     },
+    [25772] = {
+        name = "Empreitadas do Kum'isha",
+    },
+    [25774] = {
+        name = "Ouro de tolo",
+    },
+    [25775] = {
+        name = "Ouro de tolo",
+    },
     [25777] = {
         name = "A caminho de Menethil",
+    },
+    [25778] = {
+        name = "Ouro falso por ouro negro",
+    },
+    [25779] = {
+        name = "Ouro falso por ouro negro",
     },
     [25780] = {
         name = "Ataque à Bastilha Menethil",
     },
+    [25790] = {
+        name = "De volta para o Crazzle",
+    },
+    [25791] = {
+        name = "De volta para o Riznek",
+    },
     [25793] = {
         name = "As Entranhas da Terra",
+    },
+    [25796] = {
+        name = "Desapropriação",
+    },
+    [25797] = {
+        name = "Desapropriação",
+    },
+    [25798] = {
+        name = "Proteja a perfuratriz",
+    },
+    [25799] = {
+        name = "Proteja a perfuratriz",
     },
     [25800] = {
         name = "Caranguejos da vida",
@@ -1409,6 +3005,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [25811] = {
         name = "Acabando com ela",
     },
+    [25813] = {
+        name = "Chamado dos ventos",
+    },
+    [25814] = {
+        name = "Chamado dos ventos",
+    },
     [25815] = {
         name = "A terceira frota",
     },
@@ -1436,8 +3038,20 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [25823] = {
         name = "A impiedosa Horda",
     },
+    [25825] = {
+        name = "Entregando a mercadoria",
+    },
+    [25826] = {
+        name = "Entregando a mercadoria",
+    },
     [25834] = {
         name = "A batata deles está assando...",
+    },
+    [25835] = {
+        name = "Liberdade para a Aldeia Vento Livre!",
+    },
+    [25836] = {
+        name = "Liberdade para a Aldeia Vento Livre!",
     },
     [25837] = {
         name = "Uma oferta de paz adequada",
@@ -1465,6 +3079,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25851] = {
         name = "Dança com os Temível Totem",
+    },
+    [25852] = {
+        name = "Tudo limpo",
     },
     [25853] = {
         name = "Minhas queridas ferramentas",
@@ -1495,6 +3112,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25868] = {
         name = "Yorla Laçadeira",
+    },
+    [25869] = {
+        name = "Temível Totem na Aldeia",
+    },
+    [25870] = {
+        name = "Temível Totem na Aldeia",
+    },
+    [25871] = {
+        name = "Por favor, salvem a sentinela",
+    },
+    [25872] = {
+        name = "Os Bravos e Destemidos",
+    },
+    [25873] = {
+        name = "Chifre do traidor",
+    },
+    [25874] = {
+        name = "Chifre do traidor",
     },
     [25875] = {
         name = "Gnomida infiltrada",
@@ -1549,6 +3184,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [25935] = {
         name = "Filhotes famintos",
+    },
+    [25938] = {
+        name = "Ajuda para Desolação",
     },
     [25939] = {
         name = "Pelo bem das turfas",
@@ -1709,6 +3347,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [26068] = {
         name = "A fúria dos kobolds!",
     },
+    [26069] = {
+        name = "Nura Caminheira",
+    },
     [26073] = {
         name = "Nada de novo no front sul",
     },
@@ -1796,6 +3437,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [26131] = {
         name = "Reforços para Loch Modan",
     },
+    [26134] = {
+        name = "Nada resta para você aqui",
+    },
     [26137] = {
         name = "Cuidando dos rapazes",
     },
@@ -1814,8 +3458,77 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [26148] = {
         name = "Um ataque decisivo",
     },
+    [26157] = {
+        name = "Kasim Sharim",
+    },
+    [26158] = {
+        name = "Em harmonia com a pedra-sangrenta",
+    },
+    [26159] = {
+        name = "A primeira etapa",
+    },
+    [26160] = {
+        name = "Ritual de sangue",
+    },
+    [26161] = {
+        name = "Não apenas um corpo",
+    },
+    [26162] = {
+        name = "O altar das tempestades",
+    },
+    [26163] = {
+        name = "O tempo é curto",
+    },
+    [26164] = {
+        name = "O granito carbonizado do Portal Negro",
+    },
+    [26165] = {
+        name = "O sangue vil dos demônios",
+    },
+    [26166] = {
+        name = "Potencializando a pedra",
+    },
+    [26167] = {
+        name = "O amuleto de Allistarj",
+    },
+    [26168] = {
+        name = "O amuleto de Sevine",
+    },
+    [26169] = {
+        name = "O amuleto de Grol",
+    },
+    [26170] = {
+        name = "O ritual final",
+    },
+    [26171] = {
+        name = "Você é Rakh'likh, demônio",
+    },
+    [26172] = {
+        name = "Um mago sangrento também precisa comer",
+    },
+    [26173] = {
+        name = "Protegendo a retaguarda",
+    },
+    [26174] = {
+        name = "O seguro morreu de velho",
+    },
+    [26175] = {
+        name = "Mecassur",
+    },
     [26176] = {
         name = "Para Thelsamar!",
+    },
+    [26184] = {
+        name = "O sonho de Wormthorn",
+    },
+    [26185] = {
+        name = "Conselho do Círculo Cenariano",
+    },
+    [26186] = {
+        name = "Recipiente demoníaco",
+    },
+    [26187] = {
+        name = "A ruína de Marl Wormthorn",
     },
     [26189] = {
         name = "A ameaça Presirada",
@@ -2144,6 +3857,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [26400] = {
         name = "A chave mestra",
     },
+    [26401] = {
+        name = "Fale com Véstia",
+    },
+    [26402] = {
+        name = "General Shandris Plumaluna",
+    },
     [26403] = {
         name = "Mineração da Empreendimentos S.A.",
     },
@@ -2310,7 +4029,7 @@ BtWQuestsDatabase:UpdateQuestsTable({
         name = "Ainda avaliando a ameaça",
     },
     [26504] = {
-        name = "Procuram-se: Gnolls de Cristarrubra",
+        name = "PROCURAM-SE: gnolls de Cristarrubra",
     },
     [26505] = {
         name = "O relatório de Florestan",
@@ -2438,11 +4157,17 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [26573] = {
         name = "Motivos para lutar",
     },
+    [26574] = {
+        name = "O acampamento secreto de Adella",
+    },
     [26586] = {
         name = "À procura da Companhia Bravo",
     },
     [26587] = {
         name = "Escapar não é fácil",
+    },
+    [26589] = {
+        name = "As selvas de Feralas",
     },
     [26593] = {
         name = "Fazendo o Sacode tremer",
@@ -2660,6 +4385,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [26681] = {
         name = "Carta ao alcaide",
     },
+    [26682] = {
+        name = "A ameaça rastejante",
+    },
     [26683] = {
         name = "Ora (direis) ouvir estrelas!",
     },
@@ -2671,6 +4399,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [26686] = {
         name = "Ossos ambulantes",
+    },
+    [26687] = {
+        name = "Reforços de Theramore",
     },
     [26688] = {
         name = "Worgen na floresta",
@@ -2707,6 +4438,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [26700] = {
         name = "A (má) Sorte da Donzela",
+    },
+    [26701] = {
+        name = "Voo para a Muralha Verde",
+    },
+    [26702] = {
+        name = "Voo para Theramore",
     },
     [26703] = {
         name = "A derrota da Vela Sangrenta",
@@ -2990,8 +4727,23 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [26878] = {
         name = "Discípulos de Naralex",
     },
+    [26886] = {
+        name = "Nada mais de capataz",
+    },
+    [26887] = {
+        name = "Enchendo os bolsos",
+    },
+    [26889] = {
+        name = "Chefe... tô cansada pra chuchu",
+    },
     [26890] = {
         name = "A essência de Aku'mai",
+    },
+    [26895] = {
+        name = "A Cúpula do Trovão!",
+    },
+    [26896] = {
+        name = "A Cúpula do Trovão!",
     },
     [26909] = {
         name = "Os estilhaços de pedra",
@@ -3353,6 +5105,30 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27181] = {
         name = "Limpando a mácula",
     },
+    [27182] = {
+        name = "O ermitão do Morro das Bruxas",
+    },
+    [27183] = {
+        name = "Pernas de sapo do pântano",
+    },
+    [27184] = {
+        name = "Zé \"olho em falta\"",
+    },
+    [27186] = {
+        name = "Zé precisa de uma lâmina",
+    },
+    [27188] = {
+        name = "Que é que assombra o Morro das Bruxas?",
+    },
+    [27189] = {
+        name = "A ruína da bruxa",
+    },
+    [27190] = {
+        name = "A expurgação do Morro das Bruxas",
+    },
+    [27191] = {
+        name = "Uma fome de ogro!",
+    },
     [27193] = {
         name = "Busque e destrua",
     },
@@ -3386,8 +5162,50 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27206] = {
         name = "Adeus, Andorhal",
     },
+    [27210] = {
+        name = "Há traidores entre nós",
+    },
+    [27211] = {
+        name = "Propaganda de guerra",
+    },
+    [27212] = {
+        name = "Difamando os desertores",
+    },
+    [27213] = {
+        name = "O fim dos desertores",
+    },
+    [27214] = {
+        name = "Um desenvolvimento perturbador dos fatos",
+    },
+    [27215] = {
+        name = "O ermitão do Casarão do Pantanal Iluminado",
+    },
+    [27216] = {
+        name = "O farol velho",
+    },
+    [27217] = {
+        name = "Óleo de mangual",
+    },
+    [27218] = {
+        name = "Pavorosos Pusilânimes das Profundezas",
+    },
+    [27219] = {
+        name = "É de verdade?",
+    },
+    [27220] = {
+        name = "A barganha de Nat",
+    },
+    [27221] = {
+        name = "Caramba, é de verdade!",
+    },
+    [27222] = {
+        name = "Acabe com Tethyr!",
+    },
     [27226] = {
         name = "Nós trupica mas não cai",
+    },
+    [27229] = {
+        name = "DESTRUA A RAINHA DA NINHADA",
     },
     [27231] = {
         name = "Reforços de Fenris",
@@ -3395,11 +5213,215 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27232] = {
         name = "Água rubra",
     },
+    [27234] = {
+        name = "Os Défias, aqui no pântano?",
+    },
+    [27235] = {
+        name = "Renato Deguelra",
+    },
+    [27236] = {
+        name = "Equipamento de mergulho de segunda mão",
+    },
+    [27237] = {
+        name = "Recolha a carga!",
+    },
+    [27238] = {
+        name = "Jaina precisa saber",
+    },
+    [27239] = {
+        name = "Inspeção na Ilha Alcaz",
+    },
+    [27240] = {
+        name = "Prova da traição",
+    },
+    [27241] = {
+        name = "Fale novamente com Jaina",
+    },
+    [27242] = {
+        name = "Quem rapta capta",
+    },
+    [27243] = {
+        name = "Solte os raptores",
+    },
+    [27244] = {
+        name = "O relatório perdido",
+    },
+    [27245] = {
+        name = "Os prisioneiros dos Temível Totem",
+    },
+    [27246] = {
+        name = "O relatório orc",
+    },
+    [27247] = {
+        name = "O Capitão Valente",
+    },
+    [27248] = {
+        name = "A missão Coroa de Barro",
+    },
+    [27249] = {
+        name = "A inspeção das ruínas",
+    },
+    [27251] = {
+        name = "Chamam-no Jim Sorridente",
+    },
+    [27252] = {
+        name = "Vento ventania",
+    },
+    [27253] = {
+        name = "A inspeção das ruínas",
+    },
+    [27254] = {
+        name = "O escudo negro",
+    },
+    [27255] = {
+        name = "O escudo negro",
+    },
+    [27256] = {
+        name = "O escudo negro",
+    },
+    [27257] = {
+        name = "O escudo negro",
+    },
+    [27258] = {
+        name = "O escudo negro",
+    },
+    [27259] = {
+        name = "Pegadas em forma de casco",
+    },
+    [27260] = {
+        name = "Tenente Paval Reethe",
+    },
+    [27261] = {
+        name = "O interrogatório de Reethe",
+    },
+    [27262] = {
+        name = "Pegadas em forma de casco",
+    },
+    [27263] = {
+        name = "Tenente Paval Reethe",
+    },
+    [27264] = {
+        name = "Tenente Paval Reethe",
+    },
+    [27275] = {
+        name = "Reencontro",
+    },
+    [27276] = {
+        name = "Reencontro",
+    },
+    [27284] = {
+        name = "O escudo negro",
+    },
+    [27285] = {
+        name = "O escudo negro",
+    },
+    [27286] = {
+        name = "Os homens de Daelin",
+    },
+    [27287] = {
+        name = "Os desertores",
+    },
+    [27288] = {
+        name = "Os desertores",
+    },
     [27290] = {
         name = "Para o Comando Avançado dos Renegados",
     },
+    [27291] = {
+        name = "Paz, enfim",
+    },
+    [27292] = {
+        name = "O retorno a Krog",
+    },
+    [27293] = {
+        name = "Os planos dos Temível Totem",
+    },
+    [27294] = {
+        name = "Além de mera coincidência",
+    },
+    [27295] = {
+        name = "Encontre Tabetha",
+    },
+    [27296] = {
+        name = "Ateie fogo ao Posto Chifrebravo!",
+    },
+    [27297] = {
+        name = "Justiça executada",
+    },
+    [27306] = {
+        name = "Fale com Ogron",
+    },
+    [27310] = {
+        name = "Nada de armas para vocês!",
+    },
+    [27311] = {
+        name = "Nada de armas para vocês!",
+    },
+    [27312] = {
+        name = "Temível Totem da Nuvem Negra",
+    },
+    [27313] = {
+        name = "Temível Totem da Nuvem Negra",
+    },
+    [27314] = {
+        name = "Chefes dos Temível Totem: Isha Gume Sombrio",
+    },
+    [27315] = {
+        name = "Chefes dos Temível Totem: Isha Gume Sombrio",
+    },
+    [27316] = {
+        name = "Chocalho de Ossos",
+    },
+    [27317] = {
+        name = "Chocalho de Ossos",
+    },
+    [27318] = {
+        name = "Chefes dos Temível Totem: Ancião Casco Feroz",
+    },
+    [27319] = {
+        name = "Chefes dos Temível Totem: Ancião Casco Feroz",
+    },
+    [27320] = {
+        name = "Pergaminho da História",
+    },
+    [27321] = {
+        name = "Pergaminho da História",
+    },
+    [27323] = {
+        name = "Chefes dos Temível Totem: Grundig Nuvem Negra",
+    },
+    [27324] = {
+        name = "Chefes dos Temível Totem: Grundig Nuvem Negra",
+    },
+    [27325] = {
+        name = "Tambores da Guerra",
+    },
+    [27326] = {
+        name = "Tambores da Guerra",
+    },
+    [27327] = {
+        name = "Chefes dos Temível Totem: O chefe dos chefes",
+    },
+    [27328] = {
+        name = "Chefes dos Temível Totem: O chefe dos chefes",
+    },
+    [27329] = {
+        name = "Evocando a serpente",
+    },
+    [27330] = {
+        name = "Evocando a serpente",
+    },
     [27333] = {
         name = "Perdendo terreno",
+    },
+    [27336] = {
+        name = "A arma dos Temível Totem",
+    },
+    [27339] = {
+        name = "O ladrão de reagentes",
+    },
+    [27340] = {
+        name = "Os saqueadores de Chifrebravo",
     },
     [27342] = {
         name = "Com o tempo, tudo será revelado.",
@@ -3407,11 +5429,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27345] = {
         name = "O D.C.R.",
     },
+    [27346] = {
+        name = "O zepelim caído",
+    },
+    [27347] = {
+        name = "Prevenção contra corrosão",
+    },
+    [27348] = {
+        name = "O asseguramento da carga!",
+    },
     [27349] = {
         name = "Interrupção de comunicações: Posto Mirante do Medo",
     },
     [27350] = {
         name = "Interrupção de comunicações: Guarda de Rutsak",
+    },
+    [27357] = {
+        name = "A noiva cativa",
+    },
+    [27358] = {
+        name = "A noiva cativa",
     },
     [27360] = {
         name = "Vingue nossos soldados",
@@ -3485,6 +5522,42 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27406] = {
         name = "Um homem chamado Godfrey",
     },
+    [27407] = {
+        name = "Penas de Dinossangue",
+    },
+    [27408] = {
+        name = "O estandarte de Pedramalho",
+    },
+    [27409] = {
+        name = "A essência da inimizade",
+    },
+    [27410] = {
+        name = "Os espíritos do Acampamento dos Pedramalho",
+    },
+    [27411] = {
+        name = "O desafio à Revoada Negra",
+    },
+    [27412] = {
+        name = "PROCURA-SE: Garra Sanguinária, o Voraz",
+    },
+    [27413] = {
+        name = "Erva da serpe",
+    },
+    [27414] = {
+        name = "Identificando a ninhada",
+    },
+    [27415] = {
+        name = "A linhagem de Onyxia",
+    },
+    [27416] = {
+        name = "A linhagem de Onyxia",
+    },
+    [27417] = {
+        name = "A linhagem de Onyxia",
+    },
+    [27418] = {
+        name = "Desafie o lorde supremo Mok'Morokk",
+    },
     [27420] = {
         name = "Adiando o inevitável",
     },
@@ -3497,11 +5570,38 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27423] = {
         name = "Resistir é inútil",
     },
+    [27424] = {
+        name = "As preocupações do lorde supremo",
+    },
+    [27425] = {
+        name = "Uma conexão temível",
+    },
+    [27426] = {
+        name = "A confirmação das suspeitas",
+    },
+    [27427] = {
+        name = "As armas dos Temível Totem",
+    },
+    [27428] = {
+        name = "A ajuda de Tabetha",
+    },
+    [27429] = {
+        name = "Ateie fogo ao Posto Chifrebravo!",
+    },
+    [27430] = {
+        name = "Seja feita justiça pelos Hyal",
+    },
     [27432] = {
         name = "Zaeldarr, o Proscrito",
     },
     [27438] = {
         name = "A grande fuga",
+    },
+    [27446] = {
+        name = "O chamado de Tanaris",
+    },
+    [27447] = {
+        name = "O chamado de Tanaris",
     },
     [27448] = {
         name = "A jornada continua",
@@ -3665,6 +5765,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27535] = {
         name = "Só uns parafusos a menos",
     },
+    [27536] = {
+        name = "Praticamente inofensiva",
+    },
     [27539] = {
         name = "Adicione-os à pilha",
     },
@@ -3698,8 +5801,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27580] = {
         name = "Semeando a discórdia",
     },
+    [27587] = {
+        name = "Maliciosamente deliciosa",
+    },
+    [27592] = {
+        name = "Drinques e pedras",
+    },
     [27594] = {
         name = "A serviço secreto de sua majestade",
+    },
+    [27597] = {
+        name = "Zé Pinel",
+    },
+    [27598] = {
+        name = "Guelblin bom é guelblin morto",
+    },
+    [27599] = {
+        name = "Eles não precisam de bolsas",
+    },
+    [27600] = {
+        name = "Entrada explosiva",
     },
     [27601] = {
         name = "Poeira e ruínas",
@@ -3737,20 +5858,476 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [27626] = {
         name = "Os documentos do Altovale",
     },
+    [27656] = {
+        name = "Crocolisco Dundee",
+    },
+    [27663] = {
+        name = "Tem gosto de moa",
+    },
     [27683] = {
         name = "Floresta adentro",
     },
     [27684] = {
         name = "Visitantes",
     },
+    [27691] = {
+        name = "Loucura do pântano",
+    },
+    [27693] = {
+        name = "O jogo do guardião",
+    },
+    [27694] = {
+        name = "Poço de Lágrimas",
+    },
+    [27704] = {
+        name = "Lendas do templo submerso",
+    },
+    [27705] = {
+        name = "Primeiro passo: a sacerdotisa",
+    },
+    [27709] = {
+        name = "O jogo da sentinela",
+    },
+    [27713] = {
+        name = "O dia em que o Asa da Morte veio",
+    },
+    [27714] = {
+        name = "O dia em que o Asa da Morte veio: a verdadeira história",
+    },
+    [27715] = {
+        name = "O dia em que o Asa da Morte veio: o que realmente aconteceu",
+    },
     [27725] = {
         name = "Pavilhão Quel'Danil",
+    },
+    [27740] = {
+        name = "Baba Globêbada",
     },
     [27746] = {
         name = "Império da sujeira",
     },
+    [27757] = {
+        name = "As profundezas mais sombrias",
+    },
+    [27762] = {
+        name = "Fazfagulha, cara!",
+    },
+    [27763] = {
+        name = "Rumo a Fazfagulha",
+    },
+    [27764] = {
+        name = "Um pedido estranho",
+    },
+    [27765] = {
+        name = "Primeira amostra: ovos selvagens",
+    },
+    [27766] = {
+        name = "Segunda amostra: dragonetes",
+    },
+    [27768] = {
+        name = "Segundo passo: O dessangrador",
+    },
+    [27769] = {
+        name = "Revelação de Rhea",
+    },
+    [27770] = {
+        name = "Levantando o véu",
+    },
+    [27771] = {
+        name = "Terceira amostra: ovos implantados",
+    },
+    [27772] = {
+        name = "O venerável Doutor Blam",
+    },
+    [27773] = {
+        name = "Terceiro passo: profeta",
+    },
+    [27774] = {
+        name = "Facilmente controlável",
+    },
+    [27775] = {
+        name = "Quando as coisas complicam, trapaceie",
+    },
+    [27776] = {
+        name = "É hora do bode, meu bem",
+    },
+    [27789] = {
+        name = "Problemas de Trogg",
+    },
+    [27791] = {
+        name = "Escavação de Sopravento",
+    },
+    [27792] = {
+        name = "Vale tudo no amor, na guerra e na arqueologia",
+    },
+    [27793] = {
+        name = "Protetores ancestrais",
+    },
+    [27794] = {
+        name = "Fale novamente com Blam",
+    },
+    [27795] = {
+        name = "Marés Sombrias",
+    },
+    [27796] = {
+        name = "O peão do guardião",
+    },
+    [27797] = {
+        name = "O peão da sentinela",
+    },
+    [27818] = {
+        name = "Sinais rastejantes",
+    },
+    [27821] = {
+        name = "Orcs e humanos",
+    },
+    [27822] = {
+        name = "Parvos desorientados",
+    },
+    [27823] = {
+        name = "Um anão tem lá suas necessidades",
+    },
+    [27824] = {
+        name = "O melhor da festa",
+    },
+    [27825] = {
+        name = "Política da boa vizinhança",
+    },
+    [27826] = {
+        name = "Boca do Dragão adentro",
+    },
+    [27827] = {
+        name = "O veloz, o feroz e o grandalhão",
+    },
+    [27828] = {
+        name = "Eric, o anão de utilidades",
+    },
+    [27829] = {
+        name = "A ira de uma Revoada",
+    },
+    [27830] = {
+        name = "A caçada continua",
+    },
+    [27831] = {
+        name = "A tristeza e a fúria",
+    },
+    [27832] = {
+        name = "O ninho escondido",
+    },
+    [27833] = {
+        name = "Problemas de meia tonelada",
+    },
+    [27834] = {
+        name = "Baelog, o canhão de vidro",
+    },
+    [27835] = {
+        name = "Olaf, o grandalhão",
+    },
+    [27840] = {
+        name = "Cristais de draenetista",
+    },
+    [27843] = {
+        name = "Reforços negados",
+    },
+    [27845] = {
+        name = "Em honra aos mortos",
+    },
+    [27849] = {
+        name = "Ataque ao Pedregal",
+    },
+    [27851] = {
+        name = "Cortando o abastecimento",
+    },
+    [27852] = {
+        name = "Orcs e humanos",
+    },
+    [27853] = {
+        name = "Parvos desorientados",
+    },
+    [27854] = {
+        name = "Marés Sombrias",
+    },
+    [27858] = {
+        name = "O presente de Rheastrasza",
+    },
+    [27859] = {
+        name = "O ovo sobrevive",
+    },
+    [27860] = {
+        name = "Os Perdidos",
+    },
+    [27869] = {
+        name = "O dragão e o templo",
+    },
+    [27871] = {
+        name = "Rumo ao Pedregal",
+    },
+    [27875] = {
+        name = "Florrogo",
+    },
+    [27876] = {
+        name = "Segredos do lodo",
+    },
+    [27877] = {
+        name = "A liga dos idiotas",
+    },
+    [27878] = {
+        name = "Aquisição forçada",
+    },
+    [27879] = {
+        name = "Política da boa vizinhança",
+    },
+    [27880] = {
+        name = "Problemas de meia tonelada",
+    },
+    [27881] = {
+        name = "Posto Vigília de Sangue",
+    },
+    [27882] = {
+        name = "A questão aqui não é a história, é o poder",
+    },
+    [27883] = {
+        name = "O peão do guardião",
+    },
+    [27884] = {
+        name = "O peão da sentinela",
+    },
+    [27885] = {
+        name = "O jogo do guardião",
+    },
+    [27886] = {
+        name = "O jogo da sentinela",
+    },
+    [27887] = {
+        name = "Protetores ancestrais",
+    },
+    [27888] = {
+        name = "Fale novamente com Blam",
+    },
+    [27889] = {
+        name = "Nova Karrath",
+    },
+    [27890] = {
+        name = "Os cachorros maus",
+    },
+    [27891] = {
+        name = "Amakkar, o coringa",
+    },
+    [27892] = {
+        name = "Jurrix, o Atacante",
+    },
+    [27893] = {
+        name = "Gargal, o beemote",
+    },
+    [27894] = {
+        name = "A ira de uma Revoada",
+    },
+    [27895] = {
+        name = "A caçada continua",
+    },
+    [27896] = {
+        name = "A tristeza e a fúria",
+    },
+    [27897] = {
+        name = "O Ninho Escondido",
+    },
+    [27898] = {
+        name = "O presente de Rheastrasza",
+    },
+    [27902] = {
+        name = "A Fonte Clara",
+    },
+    [27904] = {
+        name = "Sopro enevoado",
+    },
+    [27907] = {
+        name = "Florrogo",
+    },
+    [27908] = {
+        name = "Segredos do lodo",
+    },
+    [27912] = {
+        name = "O tesouro dos titãs",
+    },
+    [27913] = {
+        name = "O tesouro dos titãs",
+    },
+    [27914] = {
+        name = "Bênção da revoada verde",
+    },
+    [27918] = {
+        name = "O Refúgio",
+    },
+    [27919] = {
+        name = "Rumo à Barreira do Inferno",
+    },
+    [27927] = {
+        name = "Até a cicatriz",
+    },
+    [27930] = {
+        name = "Devastação",
+    },
+    [27956] = {
+        name = "A tarefa do Lanque",
+    },
+    [27957] = {
+        name = "Lanque não mata",
+    },
+    [27958] = {
+        name = "Um antídoto adequado",
+    },
+    [27960] = {
+        name = "Quanto menos, melhor",
+    },
+    [27961] = {
+        name = "No lugar errado",
+    },
+    [27962] = {
+        name = "Uma relíquia desajeitada",
+    },
+    [27963] = {
+        name = "Um novo mestre... mas quem?",
+    },
+    [27964] = {
+        name = "Chefe-escavador Barbatrova",
+    },
+    [27965] = {
+        name = "Posto de Tório: a sede da Irmandade",
+    },
+    [27976] = {
+        name = "Malditos dedos gordos",
+    },
+    [27977] = {
+        name = "Reconhecimento básico",
+    },
+    [27979] = {
+        name = "Ministério negro",
+    },
+    [27980] = {
+        name = "As aranhas têm que morrer",
+    },
+    [27981] = {
+        name = "Um calor que não passa",
+    },
+    [27982] = {
+        name = "Colares do Crepúsculo",
+    },
+    [27984] = {
+        name = "O conto do Luncardo",
+    },
+    [27985] = {
+        name = "Oração a Eluna",
+    },
+    [27986] = {
+        name = "No salão do Senhor da Montanha",
+    },
+    [27989] = {
+        name = "Ruumbo quer mel",
+    },
+    [27994] = {
+        name = "Ruumbo quer justiça",
+    },
+    [27995] = {
+        name = "Dance para Ruumbo!",
+    },
+    [27997] = {
+        name = "A corrupção dos Flamejade",
+    },
+    [28000] = {
+        name = "Diabretim foi pro saco",
+    },
+    [28028] = {
+        name = "Cerco!",
+    },
+    [28029] = {
+        name = "Taca fogo neles!",
+    },
+    [28030] = {
+        name = "A bala deles é melhor",
+    },
+    [28031] = {
+        name = "Entrega especial para Pena Tabwa",
+    },
+    [28032] = {
+        name = "Os mistérios da moela de fogo",
+    },
+    [28033] = {
+        name = "Trapaça",
+    },
+    [28034] = {
+        name = "A aventura do Lanque: o ponto fraco do Rendan",
+    },
+    [28035] = {
+        name = "O apoio do Senhor da Montanha",
+    },
+    [28042] = {
+        name = "Entrega especial para Pena Tabwa",
+    },
+    [28044] = {
+        name = "Toque o intocável",
+    },
+    [28045] = {
+        name = "O melhor sabor do mundo!",
+    },
+    [28047] = {
+        name = "Congelando os canos",
+    },
+    [28048] = {
+        name = "Não sabe brincar, não desce pra caverna",
+    },
+    [28049] = {
+        name = "Veja o invisível",
+    },
+    [28051] = {
+        name = "Todos estão loucos... e mortos... por sorvete!",
+    },
+    [28052] = {
+        name = "Operação: mexer o caldeirão",
+    },
+    [28053] = {
+        name = "O Lanque gosta do seu estilo",
+    },
+    [28054] = {
+        name = "Escravidão é uma coisa feia",
+    },
+    [28055] = {
+        name = "Doce e horrível liberdade",
+    },
+    [28056] = {
+        name = "Erga-se, Obsidião",
+    },
+    [28057] = {
+        name = "Mate-os de sono",
+    },
+    [28058] = {
+        name = "Olha o tamanho disso!",
+    },
+    [28060] = {
+        name = "Laços retorcidos do crepúsculo",
+    },
+    [28061] = {
+        name = "Lacaios de Calcinder",
+    },
+    [28062] = {
+        name = "De onde ele veio",
+    },
+    [28064] = {
+        name = "Boas-vindas à Irmandade",
+    },
     [28084] = {
         name = "O poder de Krom'gar",
+    },
+    [28085] = {
+        name = "Problemas em Alcândora",
+    },
+    [28086] = {
+        name = "Liberte os filhotes de mantícora",
+    },
+    [28087] = {
+        name = "Morte aos coureadores!",
+    },
+    [28088] = {
+        name = "Liberte Lamicárdio",
     },
     [28089] = {
         name = "Ordens do Chefe Guerreiro: Contraforte de Eira dos Montes!",
@@ -3758,8 +6335,23 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28096] = {
         name = "Ouro de tolo",
     },
+    [28098] = {
+        name = "Mestre Crepuscular dos Ares",
+    },
+    [28099] = {
+        name = "Rasha'krak",
+    },
+    [28100] = {
+        name = "Um totem falante",
+    },
+    [28102] = {
+        name = "Faça a coisa certa",
+    },
     [28111] = {
         name = "Confusão em Veioazul",
+    },
+    [28113] = {
+        name = "Quebre o inquebrável",
     },
     [28114] = {
         name = "Colheita bendita",
@@ -3767,8 +6359,53 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28115] = {
         name = "O destino dos ursos",
     },
+    [28116] = {
+        name = "Violeta chorosa",
+    },
+    [28119] = {
+        name = "Da corrupção, a pureza",
+    },
+    [28121] = {
+        name = "Forças de Jaedenar",
+    },
+    [28124] = {
+        name = "Caminho para o Baluarte",
+    },
+    [28125] = {
+        name = "Algo para vestir",
+    },
+    [28126] = {
+        name = "Extinguindo as chamas da proteção",
+    },
+    [28127] = {
+        name = "Liberte-os!",
+    },
+    [28128] = {
+        name = "O círculo interno",
+    },
+    [28129] = {
+        name = "O príncipe demônio",
+    },
+    [28131] = {
+        name = "Dupla tentação",
+    },
+    [28136] = {
+        name = "Atrás de você!",
+    },
     [28138] = {
         name = "Infestação humana",
+    },
+    [28139] = {
+        name = "O código do Mestre dos Códigos",
+    },
+    [28140] = {
+        name = "A Bruxa Anciã",
+    },
+    [28142] = {
+        name = "O Definhar do Crepúsculo",
+    },
+    [28143] = {
+        name = "O Definhar do Crepúsculo",
     },
     [28144] = {
         name = "Monstrinhos larápios!",
@@ -3776,17 +6413,80 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28146] = {
         name = "Iguarias costeiras!",
     },
+    [28148] = {
+        name = "Exterminando os corruptos",
+    },
+    [28150] = {
+        name = "Um aliado arcano",
+    },
+    [28152] = {
+        name = "Jaedenar aguarda",
+    },
+    [28153] = {
+        name = "Senhor das sombras Fel'dan",
+    },
     [28154] = {
         name = "A nadadeira ou \"o que quer que seja\" de Mucosinho...",
+    },
+    [28155] = {
+        name = "Lorde Nihilus",
     },
     [28156] = {
         name = "Resgate nas profundezas da mina",
     },
+    [28157] = {
+        name = "Os quatro elementos do crepúsculo",
+    },
+    [28158] = {
+        name = "Libertos",
+    },
+    [28159] = {
+        name = "A pedra da ruína",
+    },
+    [28160] = {
+        name = "Espalhe a notícia",
+    },
+    [28161] = {
+        name = "Espalhe a notícia",
+    },
     [28168] = {
         name = "Apuros nos Campos Lodosos",
     },
+    [28172] = {
+        name = "Inocentes",
+    },
+    [28174] = {
+        name = "Vingança ardente",
+    },
+    [28177] = {
+        name = "Fazendo estoque",
+    },
+    [28178] = {
+        name = "Um projeto futuro",
+    },
+    [28179] = {
+        name = "Caçador de lama",
+    },
+    [28180] = {
+        name = "A areia, a sidra e o orbe",
+    },
+    [28181] = {
+        name = "Os bruxos têm as coisas mais legais",
+    },
+    [28182] = {
+        name = "Encaixotando o Sombrio",
+    },
+    [28183] = {
+        name = "Voltando a Keeshan",
+    },
+    [28184] = {
+        name = "Laceragarra, o coração das estepes",
+    },
     [28189] = {
         name = "Faça a coisa certa",
+    },
+    [28190] = {
+        name = "A gosma maculada",
     },
     [28192] = {
         name = "Ninguém sai vivo",
@@ -3800,11 +6500,62 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28199] = {
         name = "Pela ciência!",
     },
+    [28202] = {
+        name = "Uma fantasia perfeita",
+    },
     [28206] = {
         name = "Garotinha perdida",
     },
+    [28207] = {
+        name = "Uma situação gosmenta",
+    },
+    [28208] = {
+        name = "Acho que eu vi um gatinho...",
+    },
     [28209] = {
         name = "Liberdade para Lindolfo",
+    },
+    [28213] = {
+        name = "Profissão Perícon",
+    },
+    [28214] = {
+        name = "Chamando o Raul",
+    },
+    [28217] = {
+        name = "PROCURA-SE: o Caçador de Demônios",
+    },
+    [28218] = {
+        name = "Um destino de chamas e pesar",
+    },
+    [28219] = {
+        name = "Zum-zum para a neném",
+    },
+    [28220] = {
+        name = "Movimento da sem-terra",
+    },
+    [28221] = {
+        name = "Estas raízes foram feitas para pisar",
+    },
+    [28222] = {
+        name = "Cantando sem chuva",
+    },
+    [28224] = {
+        name = "O último protetor",
+    },
+    [28225] = {
+        name = "Prova de lealdade",
+    },
+    [28226] = {
+        name = "Golens aos pedaços",
+    },
+    [28227] = {
+        name = "Treinamento de golens",
+    },
+    [28228] = {
+        name = "Reflorestamento",
+    },
+    [28229] = {
+        name = "Natureza e nutrição",
     },
     [28230] = {
         name = "Protocolo",
@@ -3818,14 +6569,113 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28237] = {
         name = "Uma praga sobre a terra",
     },
+    [28239] = {
+        name = "No Casebre Dente Preto",
+    },
+    [28245] = {
+        name = "Trabalho de bruto",
+    },
+    [28246] = {
+        name = "Atalhos estratégicos",
+    },
     [28251] = {
         name = "Confusão na Costa Sul",
+    },
+    [28252] = {
+        name = "A trompa para chamar kodos",
+    },
+    [28253] = {
+        name = "Tomando a trompa para nós",
+    },
+    [28254] = {
+        name = "Uma agulha num palheiro infernal",
+    },
+    [28256] = {
+        name = "O Crânio de Gul'dan",
+    },
+    [28257] = {
+        name = "A queda de Taecondrius",
+    },
+    [28261] = {
+        name = "Traidores entre nós",
+    },
+    [28264] = {
+        name = "Gambito de Navarax",
+    },
+    [28265] = {
+        name = "General Thorg'izog",
+    },
+    [28266] = {
+        name = "Prova de magma",
+    },
+    [28278] = {
+        name = "Eu sou a lei e o açoite",
+    },
+    [28279] = {
+        name = "Abuso de poder",
+    },
+    [28286] = {
+        name = "Dano suficiente por um dia",
+    },
+    [28288] = {
+        name = "Abra os olhos deles",
+    },
+    [28305] = {
+        name = "O destino do Posto Peçonha",
+    },
+    [28306] = {
+        name = "Bosque Murmuréolo",
+    },
+    [28310] = {
+        name = "A Vigia de Morgan",
+    },
+    [28311] = {
+        name = "Cinzas negras",
+    },
+    [28312] = {
+        name = "Demônios Latentes",
+    },
+    [28313] = {
+        name = "Um montão de worgs deliciosos",
+    },
+    [28314] = {
+        name = "Passeio sangrento",
+    },
+    [28315] = {
+        name = "Vanguarda dracônica",
+    },
+    [28316] = {
+        name = "Acordo com um dragão",
+    },
+    [28317] = {
+        name = "Uma entrega para Thorg'izog",
+    },
+    [28318] = {
+        name = "Uma entrega para Niralak",
+    },
+    [28319] = {
+        name = "Uma entrega para Xi'lun",
+    },
+    [28320] = {
+        name = "Ataque ao Rochedo Malhorrendo",
+    },
+    [28321] = {
+        name = "Glória em meio ao caos",
+    },
+    [28322] = {
+        name = "Os espólios da guerra",
     },
     [28324] = {
         name = "Pesquisas de letalidade",
     },
     [28325] = {
         name = "Uma verdade conveniente",
+    },
+    [28326] = {
+        name = "Arrumando os peões",
+    },
+    [28327] = {
+        name = "Carregado e engatilhado",
     },
     [28329] = {
         name = "Borbulhas de rancor",
@@ -3838,6 +6688,36 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [28332] = {
         name = "Comando de Helcolar",
+    },
+    [28333] = {
+        name = "Hora de passar um óleo",
+    },
+    [28334] = {
+        name = "Passeando pelo bosque...",
+    },
+    [28335] = {
+        name = "Desliga isso! Desliga isso!",
+    },
+    [28336] = {
+        name = "Quem não tapa, leva tapa",
+    },
+    [28337] = {
+        name = "Os retalhadores de Ferrárbol",
+    },
+    [28338] = {
+        name = "Lenha Morta do norte",
+    },
+    [28339] = {
+        name = "O petróleo é nosso!",
+    },
+    [28340] = {
+        name = "Um acordo bombástico",
+    },
+    [28341] = {
+        name = "Coletando corrupção",
+    },
+    [28342] = {
+        name = "Restos poluentes",
     },
     [28344] = {
         name = "O que diabos é \"sair na munheca\"?",
@@ -3854,14 +6734,230 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28355] = {
         name = "Criaturinhas terríveis",
     },
+    [28357] = {
+        name = "Leve isso à árvore",
+    },
+    [28358] = {
+        name = "Caçando os condenados",
+    },
+    [28359] = {
+        name = "O âmago de Kroshius",
+    },
+    [28360] = {
+        name = "Dessa para a melhor",
+    },
+    [28361] = {
+        name = "Banho no esquilo",
+    },
+    [28362] = {
+        name = "Xuvisko burro!",
+    },
+    [28364] = {
+        name = "A chave do chefe",
+    },
+    [28366] = {
+        name = "Desarmando ursos",
+    },
+    [28368] = {
+        name = "Essa vai ser fogo!",
+    },
+    [28370] = {
+        name = "Afano fátuo",
+    },
+    [28372] = {
+        name = "De volta ao batente",
+    },
+    [28373] = {
+        name = "Domínio dos Presamatos",
+    },
+    [28374] = {
+        name = "Arrancando as ervas daninhas",
+    },
     [28375] = {
         name = "Estrada para Purgação",
+    },
+    [28380] = {
+        name = "Levitraz em perigo",
+    },
+    [28381] = {
+        name = "A grande mãe",
+    },
+    [28382] = {
+        name = "Inimigos caras de pau",
+    },
+    [28383] = {
+        name = "Fogos-fátuos da floresta",
+    },
+    [28384] = {
+        name = "Clareira adentro",
+    },
+    [28385] = {
+        name = "Petróleo e ironia",
+    },
+    [28386] = {
+        name = "Bombas emprestadas",
+    },
+    [28387] = {
+        name = "Combustão",
+    },
+    [28388] = {
+        name = "Pagamento fatal",
+    },
+    [28389] = {
+        name = "Apresente-se à Grande Mãe",
+    },
+    [28392] = {
+        name = "A tribo dos Presamatos",
+    },
+    [28395] = {
+        name = "Penas para Nafien",
+    },
+    [28396] = {
+        name = "Penas para Grazle",
     },
     [28397] = {
         name = "Eles não perdem por esperar...",
     },
     [28400] = {
         name = "Heróis da Horda!",
+    },
+    [28415] = {
+        name = "SETE! OBA!",
+    },
+    [28417] = {
+        name = "Inocentes",
+    },
+    [28418] = {
+        name = "Vingança ardente",
+    },
+    [28419] = {
+        name = "Repondo o estoque",
+    },
+    [28420] = {
+        name = "Um projeto futuro",
+    },
+    [28421] = {
+        name = "Caçador de lama",
+    },
+    [28422] = {
+        name = "A areia, a sidra e o orbe",
+    },
+    [28423] = {
+        name = "Os bruxos têm as coisas mais legais",
+    },
+    [28424] = {
+        name = "Encaixotando o Sombrio",
+    },
+    [28425] = {
+        name = "De volta a Ariok",
+    },
+    [28426] = {
+        name = "Laceragarra, o coração das estepes",
+    },
+    [28427] = {
+        name = "Uma agulha num palheiro infernal",
+    },
+    [28428] = {
+        name = "Uma fantasia perfeita",
+    },
+    [28432] = {
+        name = "No Casebre Dente Preto",
+    },
+    [28433] = {
+        name = "Trabalho de bruto",
+    },
+    [28434] = {
+        name = "Atalhos estratégicos",
+    },
+    [28435] = {
+        name = "A trompa para chamar kodos",
+    },
+    [28436] = {
+        name = "Tomando a trompa para nós",
+    },
+    [28437] = {
+        name = "General Thorg'izog",
+    },
+    [28438] = {
+        name = "Prova de magma",
+    },
+    [28439] = {
+        name = "Eu sou a lei e o açoite",
+    },
+    [28440] = {
+        name = "Abuso de poder",
+    },
+    [28441] = {
+        name = "Dano suficiente por um dia",
+    },
+    [28442] = {
+        name = "Monte Candente",
+    },
+    [28443] = {
+        name = "Cinzas negras",
+    },
+    [28444] = {
+        name = "Demônios latentes",
+    },
+    [28445] = {
+        name = "Um montão de worgs deliciosos",
+    },
+    [28446] = {
+        name = "Passeio sangrento",
+    },
+    [28447] = {
+        name = "Vanguarda dracônica",
+    },
+    [28448] = {
+        name = "Acordo com um dragão",
+    },
+    [28449] = {
+        name = "Arrumando os peões",
+    },
+    [28450] = {
+        name = "Uma entrega para Thorg'izog",
+    },
+    [28451] = {
+        name = "Uma entrega para Niralak",
+    },
+    [28452] = {
+        name = "Uma entrega para Xi'lun",
+    },
+    [28453] = {
+        name = "Carregado e engatilhado",
+    },
+    [28454] = {
+        name = "Ataque ao Rochedo Malhorrendo",
+    },
+    [28455] = {
+        name = "Glória em meio ao caos",
+    },
+    [28456] = {
+        name = "Os espólios da guerra",
+    },
+    [28460] = {
+        name = "A ameaça dos Invernosos",
+    },
+    [28464] = {
+        name = "Cedendo à corrupção",
+    },
+    [28467] = {
+        name = "Meleca misteriosa",
+    },
+    [28469] = {
+        name = "Mensageiros Invernosos",
+    },
+    [28470] = {
+        name = "Chefe Supremo Invernoso",
+    },
+    [28471] = {
+        name = "A peça final",
+    },
+    [28472] = {
+        name = "Palavras do Chefe Supremo",
+    },
+    [28479] = {
+        name = "Ruínas de Kel'Theril",
     },
     [28484] = {
         name = "O cerne da questão",
@@ -3878,6 +6974,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28490] = {
         name = "O chamado ao heroísmo! Costa Negra!",
     },
+    [28491] = {
+        name = "Vaga-lumes não, moscas-lume!",
+    },
     [28492] = {
         name = "O chamado ao heroísmo: Vale Gris!",
     },
@@ -3893,26 +6992,143 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28496] = {
         name = "Ordens do Chefe Guerreiro: Azshara!",
     },
+    [28503] = {
+        name = "O chamado ao heroísmo: Mil Agulhas!",
+    },
+    [28504] = {
+        name = "Ordens do Chefe Guerreiro: Mil Agulhas!",
+    },
     [28505] = {
         name = "A batalha por Andorhal",
     },
     [28506] = {
         name = "A marcha dos Lançatroz",
     },
+    [28507] = {
+        name = "O chamado ao heroísmo: Tanaris!",
+    },
     [28508] = {
         name = "A batalha por Andorhal",
+    },
+    [28509] = {
+        name = "Ordens do Chefe Guerreiro: Tanaris!",
+    },
+    [28510] = {
+        name = "Ordens do Chefe Guerreiro: Feralas!",
+    },
+    [28511] = {
+        name = "O chamado ao heroísmo: Feralas!",
+    },
+    [28512] = {
+        name = "Em auxílio à Irmandade do Tório",
+    },
+    [28513] = {
+        name = "Orgulho dos Altaneiros",
+    },
+    [28514] = {
+        name = "Mouton Flamestrela",
+    },
+    [28515] = {
+        name = "Mouton Flamestrela",
+    },
+    [28516] = {
+        name = "Séculos de sofrimento",
+    },
+    [28518] = {
+        name = "Legado dos Elfos Superiores",
+    },
+    [28519] = {
+        name = "Dor dos Elfos Sangrentos",
+    },
+    [28521] = {
+        name = "Fale com Salfa",
+    },
+    [28522] = {
+        name = "Atividade Invernosa",
+    },
+    [28523] = {
+        name = "Mais contas para Salfa",
+    },
+    [28524] = {
+        name = "Uma entrega para Bruna",
+    },
+    [28525] = {
+        name = "O chamado ao heroísmo: Cratera Un'Goro!",
+    },
+    [28526] = {
+        name = "Ordens do Chefe Guerreiro: Cratera Un'Goro!",
+    },
+    [28527] = {
+        name = "Ordens do Chefe Guerreiro: Silithus!",
+    },
+    [28528] = {
+        name = "O chamado ao heroísmo: Silithus!",
     },
     [28529] = {
         name = "As escrituras do Caos",
     },
+    [28530] = {
+        name = "Sinais escaldantes",
+    },
+    [28531] = {
+        name = "O chamado ao heroísmo: Desolação!",
+    },
     [28532] = {
         name = "Ordens do Chefe Guerreiro: Cordilheira das Torres de Pedra!",
+    },
+    [28534] = {
+        name = "Descendentes dos Altaneiros",
+    },
+    [28535] = {
+        name = "Descendentes dos Elfos Superiores",
+    },
+    [28536] = {
+        name = "A maldição de Zin-Malor",
+    },
+    [28537] = {
+        name = "Em busca dos vultos",
     },
     [28538] = {
         name = "O lamento da Banshee",
     },
     [28539] = {
         name = "O chamado ao heroísmo: Cordilheira das Torres de Pedra!",
+    },
+    [28540] = {
+        name = "Pediu pra ser mágico no vale do E'ko",
+    },
+    [28542] = {
+        name = "Ordens do Chefe Guerreiro: Selva Maleva!",
+    },
+    [28543] = {
+        name = "O chamado ao heroísmo: Selva Maleva!",
+    },
+    [28544] = {
+        name = "O chamado ao heroísmo: Hibérnia!",
+    },
+    [28545] = {
+        name = "Ordens do Chefe Guerreiro: Hibérnia!",
+    },
+    [28548] = {
+        name = "Ordens do Chefe Guerreiro: Desolação!",
+    },
+    [28549] = {
+        name = "Ordens do Chefe Guerreiro: Sertões Meridionais!",
+    },
+    [28550] = {
+        name = "O chamado ao heroísmo: Sertões Meridionais!",
+    },
+    [28551] = {
+        name = "O chamado ao heroísmo: Sertões Meridionais!",
+    },
+    [28552] = {
+        name = "O chamado ao heroísmo: Pântano Vadeoso!",
+    },
+    [28553] = {
+        name = "Okrilla e a Barreira do Inferno",
+    },
+    [28554] = {
+        name = "Ordens do Chefe Guerreiro: Pântano Vadeoso!",
     },
     [28556] = {
         name = "Quebrando a mão",
@@ -3938,6 +7154,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28568] = {
         name = "Ordens do Chefe Guerreiro: Floresta de Pinhaprata!",
     },
+    [28569] = {
+        name = "O Balaço do Brejo",
+    },
+    [28570] = {
+        name = "O Balaço do Brejo",
+    },
     [28571] = {
         name = "Ordens do Chefe Guerreiro: Contraforte de Eira dos Montes!",
     },
@@ -3962,11 +7184,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28578] = {
         name = "O chamado ao heroísmo: Terras Pestilentas Orientais!",
     },
+    [28579] = {
+        name = "O chamado ao heroísmo: Ermos!",
+    },
+    [28580] = {
+        name = "Ordens do Chefe Guerreiro: Ermos!",
+    },
+    [28581] = {
+        name = "Ordens do Chefe Guerreiro: Garganta Abrasadora!",
+    },
+    [28582] = {
+        name = "O chamado ao heroísmo : Garganta Abrasadora!",
+    },
     [28587] = {
         name = "Ajuda do clã Lobo do Gelo",
     },
     [28600] = {
         name = "Questões de lealdade",
+    },
+    [28601] = {
+        name = "Velho Moroso",
     },
     [28603] = {
         name = "Infiltração",
@@ -3977,17 +7214,59 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28605] = {
         name = "Dominação",
     },
+    [28609] = {
+        name = "Hora do Martelo",
+    },
+    [28610] = {
+        name = "Faturando um cascalho",
+    },
+    [28614] = {
+        name = "Furiurso",
+    },
+    [28615] = {
+        name = "Quem com terra fere...",
+    },
     [28616] = {
         name = "O crepúsculo dos Lançatroz",
     },
     [28617] = {
         name = "O poder das flores",
     },
+    [28618] = {
+        name = "Penedo em domicílio",
+    },
     [28619] = {
         name = "Ordens do Chefe Guerreiro: Planalto Arathi!",
     },
     [28620] = {
         name = "Torre Leste",
+    },
+    [28624] = {
+        name = "O caô do Kilram",
+    },
+    [28625] = {
+        name = "Serrando na serra",
+    },
+    [28626] = {
+        name = "Árvores em domicílio",
+    },
+    [28627] = {
+        name = "O caô de Seril",
+    },
+    [28628] = {
+        name = "Gelo em domicílio",
+    },
+    [28629] = {
+        name = "Eu yeti falar uma coisa...",
+    },
+    [28630] = {
+        name = "Eco Tê",
+    },
+    [28631] = {
+        name = "Os chifres perfeitos",
+    },
+    [28632] = {
+        name = "Fresquinho direto da serra",
     },
     [28634] = {
         name = "Extinção",
@@ -3997,6 +7276,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [28636] = {
         name = "O silêncio dos anões",
+    },
+    [28637] = {
+        name = "Gostinho de urso",
+    },
+    [28638] = {
+        name = "Corujas em alta",
+    },
+    [28639] = {
+        name = "Úrsius",
+    },
+    [28640] = {
+        name = "Sabres-de-gelo geladinhos",
+    },
+    [28641] = {
+        name = "Orgulho da mesa de jantar",
     },
     [28643] = {
         name = "O desafio do Forte do Desterro: Zéfiro",
@@ -4013,20 +7307,77 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28647] = {
         name = "O desafio do Forte do Desterro: D-1000",
     },
+    [28656] = {
+        name = "Forças estranhas da vida",
+    },
+    [28666] = {
+        name = "O chamado do heroísmo: Estepes Ardentes!",
+    },
+    [28667] = {
+        name = "Comando do Chefe Guerreiro: Estepes Ardentes!",
+    },
+    [28671] = {
+        name = "Ordens do Chefe Guerreiro: Barreira do Inferno!",
+    },
+    [28673] = {
+        name = "O chamado ao heroísmo: Barreira do Inferno!",
+    },
+    [28674] = {
+        name = "Aldeia Chuva Estelar",
+    },
+    [28675] = {
+        name = "O chamado ao heroísmo: Pântano das Mágoas!",
+    },
+    [28676] = {
+        name = "Cuidado: dedetização em curso",
+    },
+    [28677] = {
+        name = "Ordens do Chefe Guerreiro: Pântano das Mágoas!",
+    },
     [28688] = {
         name = "Ordens do Chefe Guerreiro: Selva do Espinhaço Setentrional!",
     },
     [28699] = {
         name = "Chamado ao Heroísmo: Selva do Espinhaço Setentrional!",
     },
+    [28701] = {
+        name = "Evitando o perigo",
+    },
     [28702] = {
         name = "O chamado do heroísmo: Cabo do Espinhaço!",
+    },
+    [28703] = {
+        name = "Venha para a minha gruta",
+    },
+    [28706] = {
+        name = "Passa o spray",
+    },
+    [28707] = {
+        name = "Passa o spray... de novo",
+    },
+    [28710] = {
+        name = "Passa o spray... de novo novamente",
+    },
+    [28718] = {
+        name = "Onde há fumaça, há carne deliciosa",
+    },
+    [28719] = {
+        name = "Um pouco forte",
+    },
+    [28722] = {
+        name = "Yetifobia",
     },
     [28733] = {
         name = "Instinto botânico",
     },
+    [28742] = {
+        name = "Shy-Rotam",
+    },
     [28744] = {
         name = "Cadê a sementinha que estava aqui?",
+    },
+    [28745] = {
+        name = "A fim das guinchadoras",
     },
     [28747] = {
         name = "Alguém armou a bombóbora",
@@ -4046,8 +7397,71 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [28756] = {
         name = "Aberrações ósseas",
     },
+    [28768] = {
+        name = "Hibérnia!",
+    },
+    [28782] = {
+        name = "A lenda do pássaro lendário",
+    },
+    [28828] = {
+        name = "Sem ovos não dá",
+    },
+    [28829] = {
+        name = "Bico afiado e galhadas pontudas",
+    },
+    [28830] = {
+        name = "Tal pai, tal filho",
+    },
+    [28831] = {
+        name = "Maldito seja, Frostílico",
+    },
+    [28837] = {
+        name = "Feras alteradas",
+    },
+    [28838] = {
+        name = "A defesa das Ferujas",
+    },
+    [28839] = {
+        name = "Magia pré-histórica",
+    },
+    [28840] = {
+        name = "Água invernal",
+    },
+    [28841] = {
+        name = "A tempestade arcana interior",
+    },
+    [28842] = {
+        name = "O fim de Umbranse",
+    },
+    [28847] = {
+        name = "A busca por Umbranse",
+    },
+    [28848] = {
+        name = "No rastro do Médium",
+    },
+    [28856] = {
+        name = "As areias de Silithus",
+    },
+    [28857] = {
+        name = "Barreira do Inferno: O outro lado do mundo",
+    },
+    [28858] = {
+        name = "Barreira do Inferno: O outro lado do mundo",
+    },
+    [28859] = {
+        name = "As dunas de Silithus",
+    },
+    [28865] = {
+        name = "O chamado da Matriarca-de-guerra",
+    },
+    [28867] = {
+        name = "Etergarde precisa de você!",
+    },
     [28876] = {
         name = "Para a Paliçada Mor'shan!",
+    },
+    [28881] = {
+        name = "Prospector Gunstan",
     },
     [29015] = {
         name = "A fortuna do mineiro",
@@ -4069,6 +7483,24 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [29027] = {
         name = "Chumbalheiras",
+    },
+    [29032] = {
+        name = "Pegue-os no berço",
+    },
+    [29033] = {
+        name = "[PH] Bridão Buy-In",
+    },
+    [29034] = {
+        name = "Ninguém segura esse bebê",
+    },
+    [29035] = {
+        name = "Desejos de um filhote",
+    },
+    [29037] = {
+        name = "Invernosos generosos",
+    },
+    [29038] = {
+        name = "Treinamento em caçadas",
     },
     [29086] = {
         name = "Mudando as regras do mercado",
@@ -4102,5 +7534,26 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [29112] = {
         name = "A Semente Demoníaca",
+    },
+    [41394] = {
+        name = "Serviço com gentileza",
+    },
+    [41395] = {
+        name = "Recompensa merecida",
+    },
+    [42237] = {
+        name = "Invasão: Tanaris",
+    },
+    [43243] = {
+        name = "Demônio comandante",
+    },
+    [43244] = {
+        name = "Invasão: Tanaris",
+    },
+    [43293] = {
+        name = "Defenda",
+    },
+    [43294] = {
+        name = "Rechace",
     },
 })

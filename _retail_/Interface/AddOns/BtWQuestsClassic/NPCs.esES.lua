@@ -56,6 +56,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [3924] = {
         name = "Chamán Piel de Cardo",
     },
+    [3936] = {
+        name = "Shandris Plumaluna",
+    },
     [3995] = {
         name = "Médico brujo Jin'Zil",
     },
@@ -64,6 +67,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [4079] = {
         name = "Centinela Thenysil",
+    },
+    [4968] = {
+        name = "Lady Jaina Valiente",
+    },
+    [5385] = {
+        name = "Vigía Mahar Ba",
     },
     [8582] = {
         name = "Kadrak",
@@ -124,6 +133,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [17355] = {
         name = "Valusha",
+    },
+    [23569] = {
+        name = "Renn McBranquia",
     },
     [24739] = {
         name = "Benjari Edune",
@@ -248,8 +260,29 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [34604] = {
         name = "Gran baobab",
     },
+    [37135] = {
+        name = "Nura Abrecaminos",
+    },
+    [37717] = {
+        name = "Winnoa Bosque de Pinos",
+    },
+    [38535] = {
+        name = "Kelsey Chispacero",
+    },
+    [38704] = {
+        name = "Kelsey Chispacero",
+    },
+    [38878] = {
+        name = "Cuerpo destrozado",
+    },
+    [39059] = {
+        name = "Kelsey Chispacero",
+    },
     [39256] = {
         name = "Kalen Alblanco",
+    },
+    [40109] = {
+        name = "Prospector Gunstan",
     },
     [40879] = {
         name = "Boog \"El hombre que susurraba a los engranajes\"",
@@ -386,10 +419,40 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [42106] = {
         name = "Señor supremo Krom'gar",
     },
+    [42298] = {
+        name = "Kasim Sharim",
+    },
+    [45948] = {
+        name = "Larry el Demente",
+    },
+    [46172] = {
+        name = "Baba Cebafango",
+    },
+    [47779] = {
+        name = "Vellón Llamaestrella",
+    },
+    [47811] = {
+        name = "John J. Keeshan",
+    },
+    [48109] = {
+        name = "John J. Keeshan",
+    },
+    [48133] = {
+        name = "General Thorg'izog",
+    },
+    [48208] = {
+        name = "El sonajero de huesos",
+    },
+    [48306] = {
+        name = "John J. Keeshan",
+    },
+    [48568] = {
+        name = "Eitrigg",
+    },
+    [48569] = {
+        name = "Eitrigg",
+    },
     [49748] = {
         name = "Heraldo del héroe",
-    },
-    [203186] = {
-        name = "¡FUERA!",
     },
 })

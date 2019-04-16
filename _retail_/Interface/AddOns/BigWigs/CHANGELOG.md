@@ -1,6 +1,7 @@
 # BigWigs
 
-## [v142.2](https://github.com/BigWigsMods/BigWigs/tree/v142.2) (2019-03-31)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v142.1...v142.2)
+## [v142.3](https://github.com/BigWigsMods/BigWigs/tree/v142.3) (2019-04-15)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v142.2...v142.3)
 
-- BattleOfDazaralor/Blockade: Add Sea Storm say message and targets message (#636)  
+- CrucibleOfStorms/Uunat: Add timers for stage 1  
+- CrucibleOfStorms/Cabal: Add timers  

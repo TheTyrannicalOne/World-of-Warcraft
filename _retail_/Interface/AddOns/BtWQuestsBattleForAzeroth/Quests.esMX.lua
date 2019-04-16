@@ -1160,9 +1160,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [48896] = {
         name = "Conocimientos del pasado",
     },
-    [48897] = {
-        name = "Trato hecho",
-    },
     [48898] = {
         name = "Amuleto de la suerte",
     },
@@ -2786,9 +2783,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50691] = {
         name = "Esto no era parte del trabajo",
     },
-    [50694] = {
-        name = "Mala sangre",
-    },
     [50696] = {
         name = "Atracción magnética",
     },
@@ -3956,12 +3950,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [52013] = {
         name = "Campeón: John J. Keeshan",
     },
-    [52023] = {
-        name = "Informe para la Horda",
-    },
-    [52024] = {
-        name = "Informe para la Horda",
-    },
     [52026] = {
         name = "Asesinato transoceánico",
     },
@@ -4661,32 +4649,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53433] = {
         name = "Sombrero de la Orden de las Ascuas",
     },
-    [53434] = {
-        name = "El señor evanescente",
-    },
     [53438] = {
         name = "SE BUSCA: Cazadores furtivos de dracoleones",
     },
-    [53439] = {
-        name = "Marea de sangre",
-    },
     [53440] = {
         name = "SE BUSCA: El avispón",
-    },
-    [53442] = {
-        name = "Los náufragos",
-    },
-    [53443] = {
-        name = "Mis objetos favoritos",
-    },
-    [53444] = {
-        name = "Guardapelo brillante",
-    },
-    [53445] = {
-        name = "El silencio de las hermanas",
-    },
-    [53446] = {
-        name = "Sabor local",
     },
     [53449] = {
         name = "Simios a las armas",
@@ -4771,6 +4738,51 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [53738] = {
         name = "La defensa de Quel'Danas",
+    },
+    [53760] = {
+        name = "Consecuencias inesperadas",
+    },
+    [53761] = {
+        name = "El tesoro de la pirata",
+    },
+    [53762] = {
+        name = "La corona de la tempestad",
+    },
+    [53763] = {
+        name = "Torcer el puñal",
+    },
+    [53765] = {
+        name = "Su mirada se ha posado sobre ti",
+    },
+    [53766] = {
+        name = "Su mirada se ha posado sobre ti",
+    },
+    [53774] = {
+        name = "La sabiduría del jefe de guerra",
+    },
+    [53775] = {
+        name = "Sombras perturbadoras",
+    },
+    [53776] = {
+        name = "A la Costa Quebrada",
+    },
+    [53777] = {
+        name = "El lugar de su muerte",
+    },
+    [53778] = {
+        name = "Donde cayó",
+    },
+    [53779] = {
+        name = "Las mentiras de un loa",
+    },
+    [53780] = {
+        name = "Carcelero de los malditos",
+    },
+    [53781] = {
+        name = "Eyir",
+    },
+    [53782] = {
+        name = "Misterios de la muerte",
     },
     [53783] = {
         name = "En las dunas",
@@ -4884,9 +4896,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
         name = "Esperanza fugaz",
     },
     [53850] = {
-        name = "Nuestra guerra continúa",
-    },
-    [53851] = {
         name = "Nuestra guerra continúa",
     },
     [53852] = {
@@ -5087,6 +5096,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54050] = {
         name = "Secuelas",
     },
+    [54058] = {
+        name = "Consecuencias inesperadas",
+    },
     [54059] = {
         name = "La guerrera nocturna",
     },
@@ -5132,6 +5144,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54109] = {
         name = "El favor de la reina",
     },
+    [54113] = {
+        name = "Toda muerte sirve",
+    },
+    [54114] = {
+        name = "Toda muerte sirve",
+    },
+    [54117] = {
+        name = "Toda muerte sirve",
+    },
+    [54118] = {
+        name = "Toda muerte sirve",
+    },
+    [54120] = {
+        name = "A Orgrimmar",
+    },
     [54121] = {
         name = "Fuga de Aspafresno",
     },
@@ -5141,6 +5168,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54124] = {
         name = "Cómo evitar demandas - Vol. I",
     },
+    [54126] = {
+        name = "Torcer el puñal",
+    },
     [54128] = {
         name = "Medidas preventivas",
     },
@@ -5149,6 +5179,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54140] = {
         name = "El viaje de los zandalari",
+    },
+    [54141] = {
+        name = "El medallón de Azshara",
+    },
+    [54144] = {
+        name = "Órdenes de Azshara",
+    },
+    [54145] = {
+        name = "El loa de la muerte",
+    },
+    [54147] = {
+        name = "Confronta a la Val'kyr",
     },
     [54156] = {
         name = "Un rastro de sangre",
@@ -5173,6 +5215,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54171] = {
         name = "El cetro abisal",
+    },
+    [54174] = {
+        name = "Órdenes de Azshara",
     },
     [54175] = {
         name = "Enfrenta a tu enemigo",
@@ -5258,6 +5303,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54249] = {
         name = "Justicia zandalari",
     },
+    [54265] = {
+        name = "Órdenes de Azshara",
+    },
     [54269] = {
         name = "Nadie escapará",
     },
@@ -5317,6 +5365,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54421] = {
         name = "Bestias domadas",
+    },
+    [54433] = {
+        name = "Órdenes de Azshara",
+    },
+    [54438] = {
+        name = "Crisol de Tormentas: Reliquias de sombra",
+    },
+    [54439] = {
+        name = "Crisol de Tormentas: Reliquias de sombra",
     },
     [54441] = {
         name = "Conquista de la Puerta de Sangre",
@@ -5398,6 +5455,27 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54871] = {
         name = "Estamos en camino",
+    },
+    [54913] = {
+        name = "Chispa de genialidad",
+    },
+    [54915] = {
+        name = "Telemetría en línea",
+    },
+    [54916] = {
+        name = "El credo del montero",
+    },
+    [54917] = {
+        name = "Pago con sangre",
+    },
+    [54918] = {
+        name = "La Chispa de la Imaginación",
+    },
+    [54919] = {
+        name = "Vínculos atronadores",
+    },
+    [54920] = {
+        name = "Camino a casa",
     },
     [54925] = {
         name = "¡Herejía!",
@@ -5518,6 +5596,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55188] = {
         name = "Costuras desgarradas",
+    },
+    [55195] = {
+        name = "Reverberancia",
     },
     [55214] = {
         name = "Puntos y puntadas",

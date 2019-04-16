@@ -934,8 +934,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_THE_ZANCH
             aside = true,
             x = 3,
             y = 8,
-            connections = {
-            },
         },
     },
 })
@@ -1327,7 +1325,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN11, 
 
 
         {
-            type = "npc",
+            type = "object",
             id = 271706,
             -- name = "Go to the Hunters' Board",
             -- onClick = function ()
@@ -2104,7 +2102,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN6_AL
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 287228,
             -- name = "Go to Wanted Sign",
             -- onClick = function ()
@@ -2459,7 +2457,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN6_HO
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 287229,
             -- name = "Go to the Wanted Sign",
             -- onClick = function ()
@@ -2965,6 +2963,40 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
             id = 47310,
             x = 3,
             y = 8,
+            connections = {
+                2,
+            },
+        },
+        {
+            type = "level",
+            level = 120,
+            x = 5,
+            y = 8.5,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "quest",
+            id = 47260,
+            x = 3,
+            y = 9,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "quest",
+            id = 52855,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+        { -- Also completed 55257, which may be a daily quest preventing the next part from being available
+            type = "quest",
+            id = 52857,
+            x = 3,
         },
     },
 })
@@ -3150,15 +3182,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_OTHER_HOR
     items = {
         {
             type = "quest",
-            id = 52855,
-        },
-        {
-            type = "quest",
             id = 50796,
-        },
-        {
-            type = "quest",
-            id = 52857,
         },
         {
             type = "quest",
@@ -3167,10 +3191,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_OTHER_HOR
         {
             type = "quest",
             id = 50801,
-        },
-        {
-            type = "quest",
-            id = 47260,
         },
         {
             type = "quest",

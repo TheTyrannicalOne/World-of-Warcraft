@@ -23,6 +23,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [15192] = {
+        name = "Anachronos",
+        locations = {
+            [75] = {
+                {
+                    x = 0.417583,
+                    y = 0.498922,
+                },
+            },
+        },
+    },
     [16802] = {
         name = "Lor'themar Theron",
         locations = {
@@ -34,6 +45,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.54,
                     y = 0.206,
+                },
+            },
+        },
+    },
+    [29445] = {
+        name = "Thorim",
+        locations = {
+            [120] = {
+                {
+                    x = 0.33416,
+                    y = 0.579557,
                 },
             },
         },
@@ -882,6 +904,9 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [124630] = {
+        name = "Taelia",
+    },
     [124641] = {
         name = "Shadow Hunter Mutumba",
         locations = {
@@ -1197,17 +1222,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.69,
                     y = 0.504,
-                },
-            },
-        },
-    },
-    [126065] = {
-        name = "Lady Sylvanas Windrunner",
-        locations = {
-            [85] = {
-                {
-                    x = 0.378,
-                    y = 0.81,
                 },
             },
         },
@@ -1780,21 +1794,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.532,
                     y = 0.902,
-                },
-            },
-        },
-    },
-    [127576] = {
-        name = "Wardruid Loti",
-        locations = {
-            [1165] = {
-                {
-                    x = 0.498,
-                    y = 0.334,
-                },
-                {
-                    x = 0.498,
-                    y = 0.336,
                 },
             },
         },
@@ -3284,6 +3283,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [131443] = {
+        name = "Chief Telemancer Oculeth",
+        locations = {
+            [1163] = {
+                {
+                    x = 0.67028,
+                    y = 0.736312,
+                },
+            },
+        },
+    },
     [131448] = {
         name = "Warren Ashton",
         locations = {
@@ -4232,6 +4242,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [134345] = {
+        name = "Collector Kojo",
+        locations = {
+            [862] = {
+                {
+                    x = 0.714988,
+                    y = 0.303476,
+                },
+            },
+        },
+    },
     [134346] = {
         name = "Toki",
         locations = {
@@ -4904,6 +4925,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [135793] = {
+        name = "Collector Kojo",
+        locations = {
+            [942] = {
+                {
+                    x = 0.4054,
+                    y = 0.364078,
+                },
+            },
+        },
+    },
     [135794] = {
         name = "Scrollsage Nola",
         locations = {
@@ -5271,6 +5303,9 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [136645] = {
+        name = "Brann Bronzebeard",
+    },
     [136658] = {
         name = "Marie Davenport",
         locations = {
@@ -5414,17 +5449,6 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [137323] = {
-        name = "Magni Bronzebeard",
-        locations = {
-            [862] = {
-                {
-                    x = 0.576,
-                    y = 0.438,
-                },
-            },
-        },
-    },
     [137337] = {
         name = "Sergeant Ermey",
         locations = {
@@ -5432,17 +5456,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.3897,
                     y = 0.4292,
-                },
-            },
-        },
-    },
-    [137400] = {
-        name = "Thaelin Darkanvil",
-        locations = {
-            [862] = {
-                {
-                    x = 0.406,
-                    y = 0.708,
                 },
             },
         },
@@ -5652,6 +5665,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.45,
                     y = 0.396,
+                },
+            },
+        },
+    },
+    [137837] = {
+        name = "Overlord Geya'rah",
+        locations = {
+            [1170] = {
+                {
+                    x = 0.363651,
+                    y = 0.697067,
                 },
             },
         },
@@ -6273,10 +6297,10 @@ BtWQuestsDatabase:AddNPCsTable({
     [141555] = {
         name = "Baine Bloodhoof",
         locations = {
-            [1165] = {
+            [1164] = {
                 {
-                    x = 0.4245,
-                    y = 0.7252,
+                    x = 0.413835,
+                    y = 0.724098,
                 },
             },
         },
@@ -6345,6 +6369,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [142275] = {
+        name = "Grommash Hellscream",
+        locations = {
+            [1170] = {
+                {
+                    x = 0.452656,
+                    y = 0.520904,
+                },
+            },
+        },
+    },
     [142393] = {
         name = "Taelia",
         locations = {
@@ -6352,6 +6387,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.564,
                     y = 0.615,
+                },
+            },
+        },
+    },
+    [142422] = {
+        name = "Eitrigg",
+        locations = {
+            [1170] = {
+                {
+                    x = 0.449965,
+                    y = 0.532265,
                 },
             },
         },
@@ -6418,17 +6464,13 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [143746] = {
-        name = "Guardsman Kitcher",
+    [143692] = {
+        name = "Anachronos",
         locations = {
-            [896] = {
+            [379] = {
                 {
-                    x = 0.608,
-                    y = 0.154,
-                },
-                {
-                    x = 0.608,
-                    y = 0.156,
+                    x = 0.689028,
+                    y = 0.439682,
                 },
             },
         },
@@ -6502,6 +6544,14 @@ BtWQuestsDatabase:AddNPCsTable({
     },
     [143851] = {
         name = "Kelsey Steelspark",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.6801,
+                    y = 0.263,
+                },
+            },
+        },
     },
     [143871] = {
         name = "Foreman Cogbutton",
@@ -6573,8 +6623,16 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [144383] = {
-        name = "Chronicler Toopa",
+    [144773] = {
+        name = "Xal'atath",
+        locations = {
+            [896] = {
+                {
+                    x = 0.19916,
+                    y = 0.362433,
+                },
+            },
+        },
     },
     [145005] = {
         name = "Farstrider Elite",
@@ -6620,6 +6678,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [145190] = {
+        name = "Princess Talanji",
+        locations = {
+            [1167] = {
+                {
+                    x = 0.667774,
+                    y = 0.713598,
+                },
+            },
+        },
+    },
+    [145225] = {
+        name = "Spirit of Vol'jin",
+        locations = {
+            [1167] = {
+                {
+                    x = 0.679436,
+                    y = 0.730454,
+                },
+            },
+        },
+    },
     [145357] = {
         name = "Dori'thur",
     },
@@ -6641,6 +6721,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.402758,
                     y = 0.124533,
+                },
+            },
+        },
+    },
+    [145396] = {
+        name = "Xal'atath",
+        locations = {
+            [895] = {
+                {
+                    x = 0.750368,
+                    y = 0.776703,
                 },
             },
         },
@@ -6773,6 +6864,28 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.373178,
                     y = 0.260129,
+                },
+            },
+        },
+    },
+    [145965] = {
+        name = "Spirit of Vol'jin",
+        locations = {
+            [646] = {
+                {
+                    x = 0.632196,
+                    y = 0.333921,
+                },
+            },
+        },
+    },
+    [145981] = {
+        name = "Spirit of Vol'jin",
+        locations = {
+            [646] = {
+                {
+                    x = 0.623324,
+                    y = 0.306669,
                 },
             },
         },
@@ -6920,6 +7033,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [146290] = {
+        name = "Spirit of Vol'jin",
+        locations = {
+            {
+                {
+                    x = 0.459875,
+                    y = 0.159819,
+                },
+            },
+        },
+    },
     [146323] = {
         name = "Nathanos Blightcaller",
         locations = {
@@ -6931,13 +7055,13 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
-    [146324] = {
+    [146325] = {
         name = "Shredmaster Blix",
         locations = {
             [1333] = {
                 {
-                    x = 0.547004,
-                    y = 0.219633,
+                    x = 0.547069,
+                    y = 0.219751,
                 },
             },
         },
@@ -6986,6 +7110,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [146384] = {
+        name = "Xal'atath",
+        locations = {
+            [864] = {
+                {
+                    x = 0.530276,
+                    y = 0.136688,
+                },
+            },
+        },
+    },
     [146462] = {
         name = "Horde Berserker",
         locations = {
@@ -7022,6 +7157,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [146630] = {
+        name = "Spirit of Vol'jin",
+        locations = {
+            [85] = {
+                {
+                    x = 0.484854,
+                    y = 0.715024,
+                },
+            },
+        },
+    },
     [146654] = {
         name = "Lady Sylvanas Windrunner",
         locations = {
@@ -7051,6 +7197,39 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.113567,
                     y = 0.668283,
+                },
+            },
+        },
+    },
+    [146824] = {
+        name = "Princess Talanji",
+        locations = {
+            [863] = {
+                {
+                    x = 0.395748,
+                    y = 0.270399,
+                },
+            },
+        },
+    },
+    [146877] = {
+        name = "Princess Talanji",
+        locations = {
+            [634] = {
+                {
+                    x = 0.612259,
+                    y = 0.681019,
+                },
+            },
+        },
+    },
+    [146902] = {
+        name = "Brother Pike",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.673688,
+                    y = 0.209541,
                 },
             },
         },
@@ -7413,6 +7592,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [149736] = {
+        name = "Image of Mimiron",
+        locations = {
+            [120] = {
+                {
+                    x = 0.375277,
+                    y = 0.465178,
+                },
+            },
+        },
+    },
     [149823] = {
         name = "Magni Bronzebeard",
         locations = {
@@ -7446,6 +7636,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [149870] = {
+        name = "Grif Wildheart",
+        locations = {
+            [120] = {
+                {
+                    x = 0.336291,
+                    y = 0.585711,
+                },
+            },
+        },
+    },
     [150309] = {
         name = "Baine Bloodhoof",
         locations = {
@@ -7475,6 +7676,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.27632,
                     y = 0.523365,
+                },
+            },
+        },
+    },
+    [150391] = {
+        name = "Image of Mimiron",
+        locations = {
+            [81] = {
+                {
+                    x = 0.393067,
+                    y = 0.717137,
                 },
             },
         },
@@ -7666,6 +7878,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [151061] = {
+        name = "Mimiron",
+        locations = {
+            [745] = {
+                {
+                    x = 0.432955,
+                    y = 0.387904,
+                },
+            },
+        },
+    },
     [151129] = {
         name = "Sapphronetta Flivvers",
         locations = {
@@ -7757,6 +7980,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [152002] = {
+        name = "Image of Mimiron",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.728549,
+                    y = 0.138058,
+                },
+            },
+        },
+    },
     [152255] = {
         name = "Sef Iwen",
         locations = {
@@ -7830,1004 +8064,6 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.341132,
                     y = 0.354265,
-                },
-            },
-        },
-    },
-    [244983] = {
-        name = "Dirty Pocketwatch",
-        locations = {
-            [942] = {
-                {
-                    x = 0.499,
-                    y = 0.735,
-                },
-            },
-        },
-    },
-    [270917] = {
-        name = "Glenbrook Register",
-        locations = {
-            [896] = {
-                {
-                    x = 0.556,
-                    y = 0.411,
-                },
-            },
-        },
-    },
-    [271706] = {
-        name = "Hunters' Board",
-        locations = {
-            [862] = {
-                {
-                    x = 0.6745,
-                    y = 0.179,
-                },
-            },
-        },
-    },
-    [272179] = {
-        name = "Mayor's Bulletin",
-        locations = {
-            [896] = {
-                {
-                    x = 0.561,
-                    y = 0.353,
-                },
-            },
-        },
-    },
-    [272422] = {
-        name = "Gentle's Spellbook",
-        locations = {
-            [896] = {
-                {
-                    x = 0.606,
-                    y = 0.3145,
-                },
-            },
-        },
-    },
-    [273814] = {
-        name = "Bladed Charm",
-        locations = {
-            [896] = {
-                {
-                    x = 0.7,
-                    y = 0.629,
-                },
-            },
-        },
-    },
-    [273854] = {
-        name = "Backpack",
-        locations = {
-            [864] = {
-                {
-                    x = 0.4045,
-                    y = 0.7365,
-                },
-            },
-        },
-    },
-    [276187] = {
-        name = "Junji",
-        locations = {
-            [864] = {
-                {
-                    x = 0.4345,
-                    y = 0.787,
-                },
-            },
-        },
-    },
-    [276251] = {
-        name = "Excavation Inventory",
-        locations = {
-            [896] = {
-                {
-                    x = 0.518,
-                    y = 0.229,
-                },
-            },
-        },
-    },
-    [276488] = {
-        name = "Azerite Cannonball",
-        locations = {
-            [895] = {
-                {
-                    x = 0.776,
-                    y = 0.763,
-                },
-                {
-                    x = 0.786,
-                    y = 0.778,
-                },
-            },
-        },
-    },
-    [276513] = {
-        name = "Intact Mudfish",
-        locations = {
-            [896] = {
-                {
-                    x = 0.708,
-                    y = 0.508,
-                },
-            },
-        },
-    },
-    [276515] = {
-        name = "Fishing Rod",
-        locations = {
-            [896] = {
-                {
-                    x = 0.711,
-                    y = 0.524,
-                },
-            },
-        },
-    },
-    [276837] = {
-        name = "Recipe Rock",
-        locations = {
-            [895] = {
-                {
-                    x = 0.561,
-                    y = 0.179,
-                },
-            },
-        },
-    },
-    [277199] = {
-        name = "Weathered Job List",
-        locations = {
-            [895] = {
-                {
-                    x = 0.761,
-                    y = 0.6545,
-                },
-            },
-        },
-    },
-    [277373] = {
-        name = "Glimmering Seaweed",
-        locations = {
-            [895] = {
-                {
-                    x = 0.88,
-                    y = 0.75,
-                },
-            },
-        },
-    },
-    [277459] = {
-        name = "Pig Effigy",
-        locations = {
-            [896] = {
-                {
-                    x = 0.634,
-                    y = 0.302,
-                },
-            },
-        },
-    },
-    [278197] = {
-        name = "Vial of Antidote",
-        locations = {
-            [863] = {
-                {
-                    x = 0.64,
-                    y = 0.504,
-                },
-            },
-        },
-    },
-    [278252] = {
-        name = "Job Flyer",
-        locations = {
-            [895] = {
-                {
-                    x = 0.4245,
-                    y = 0.272,
-                },
-                {
-                    x = 0.516,
-                    y = 0.297,
-                },
-                {
-                    x = 0.531,
-                    y = 0.284,
-                },
-            },
-        },
-    },
-    [278313] = {
-        name = "Sternly Worded Letter",
-        locations = {
-            [895] = {
-                {
-                    x = 0.772,
-                    y = 0.848,
-                },
-            },
-        },
-    },
-    [278368] = {
-        name = "Tattered Note",
-        locations = {
-            [864] = {
-                {
-                    x = 0.5445,
-                    y = 0.342,
-                },
-            },
-        },
-    },
-    [278447] = {
-        name = "Faithless Trapper's Spear",
-        locations = {
-            [864] = {
-                {
-                    x = 0.471,
-                    y = 0.388,
-                },
-            },
-        },
-    },
-    [278570] = {
-        name = "Ancient Journal",
-        locations = {
-            [1161] = {
-                {
-                    x = 0.751496,
-                    y = 0.100479,
-                },
-            },
-        },
-    },
-    [278577] = {
-        name = "Torn Horde Missive",
-        locations = {
-            [863] = {
-                {
-                    x = 0.292,
-                    y = 0.466,
-                },
-                {
-                    x = 0.34,
-                    y = 0.397,
-                },
-            },
-        },
-    },
-    [278669] = {
-        name = "Fallhaven Ledger",
-        locations = {
-            [896] = {
-                {
-                    x = 0.556,
-                    y = 0.357,
-                },
-            },
-        },
-    },
-    [278675] = {
-        name = "Cursed Effigy",
-        locations = {
-            [896] = {
-                {
-                    x = 0.559,
-                    y = 0.351,
-                },
-            },
-        },
-    },
-    [279337] = {
-        name = "Heartsbane Grimoire",
-        locations = {
-            [896] = {
-                {
-                    x = 0.377,
-                    y = 0.5045,
-                },
-            },
-        },
-    },
-    [279645] = {
-        name = "Tome of Oblivion",
-        locations = {
-            [864] = {
-                {
-                    x = 0.276035,
-                    y = 0.523526,
-                },
-            },
-        },
-    },
-    [279646] = {
-        name = "Bloodguard Chronicles",
-        locations = {
-            [864] = {
-                {
-                    x = 0.276496,
-                    y = 0.522866,
-                },
-            },
-        },
-    },
-    [279647] = {
-        name = "Tome of Sacrifice",
-        locations = {
-            [896] = {
-                {
-                    x = 0.206271,
-                    y = 0.440969,
-                },
-            },
-        },
-    },
-    [280576] = {
-        name = "Encased Scroll",
-        locations = {
-            [942] = {
-                {
-                    x = 0.322,
-                    y = 0.401,
-                },
-            },
-        },
-    },
-    [280727] = {
-        name = "Charred Note",
-        locations = {
-            [942] = {
-                {
-                    x = 0.678,
-                    y = 0.529,
-                },
-                {
-                    x = 0.687,
-                    y = 0.544,
-                },
-                {
-                    x = 0.687,
-                    y = 0.545,
-                },
-            },
-        },
-    },
-    [280755] = {
-        name = "Quintin's Satchel",
-        locations = {
-            [896] = {
-                {
-                    x = 0.422504,
-                    y = 0.366924,
-                },
-            },
-        },
-    },
-    [280957] = {
-        name = "Zukashi's Satchel",
-        locations = {
-            [863] = {
-                {
-                    x = 0.628965,
-                    y = 0.288603,
-                },
-            },
-        },
-    },
-    [281230] = {
-        name = "Formal Invitation",
-        locations = {
-            [895] = {
-                {
-                    x = 0.661,
-                    y = 0.504,
-                },
-                {
-                    x = 0.671,
-                    y = 0.248,
-                },
-            },
-        },
-    },
-    [281348] = {
-        name = "Crumbling Letter",
-        locations = {
-            [942] = {
-                {
-                    x = 0.5,
-                    y = 0.318,
-                },
-                {
-                    x = 0.595,
-                    y = 0.684,
-                },
-            },
-        },
-    },
-    [281551] = {
-        name = "Help Wanted Poster",
-        locations = {
-            [895] = {
-                {
-                    x = 0.756,
-                    y = 0.499,
-                },
-            },
-        },
-    },
-    [281583] = {
-        name = "Ancient Reliquary",
-        locations = {
-            [864] = {
-                {
-                    x = 0.489,
-                    y = 0.743,
-                },
-            },
-        },
-    },
-    [281639] = {
-        name = "Crumbling Statue",
-        locations = {
-            [864] = {
-                {
-                    x = 0.489,
-                    y = 0.7445,
-                },
-            },
-        },
-    },
-    [281647] = {
-        name = "Posted Notice",
-        locations = {
-            [895] = {
-                {
-                    x = 0.79,
-                    y = 0.458,
-                },
-                {
-                    x = 0.795,
-                    y = 0.489,
-                },
-                {
-                    x = 0.801,
-                    y = 0.469,
-                },
-                {
-                    x = 0.805,
-                    y = 0.494,
-                },
-            },
-        },
-    },
-    [281673] = {
-        name = "Corlain Citizen's Journal",
-        locations = {
-            [896] = {
-                {
-                    x = 0.308,
-                    y = 0.195,
-                },
-            },
-        },
-    },
-    [281718] = {
-        name = "HELP WANTED",
-        locations = {
-            [895] = {
-                {
-                    x = 0.531,
-                    y = 0.284,
-                },
-            },
-        },
-    },
-    [282457] = {
-        name = "Brambleguard Totem",
-        locations = {
-            [942] = {
-                {
-                    x = 0.440473,
-                    y = 0.7247,
-                },
-            },
-        },
-    },
-    [282478] = {
-        name = "Empty Crate",
-        locations = {
-            [942] = {
-                {
-                    x = 0.463,
-                    y = 0.77,
-                },
-            },
-        },
-    },
-    [282498] = {
-        name = "Desert Flute",
-        locations = {
-            [864] = {
-                {
-                    x = 0.29,
-                    y = 0.546,
-                },
-            },
-        },
-    },
-    [284426] = {
-        name = "Buried Mining Machine",
-        locations = {
-            [896] = {
-                {
-                    x = 0.348,
-                    y = 0.4,
-                },
-            },
-        },
-    },
-    [286016] = {
-        name = "Ship's Log",
-        locations = {
-            [896] = {
-                {
-                    x = 0.2745,
-                    y = 0.1155,
-                },
-            },
-        },
-    },
-    [287081] = {
-        name = "Ancient Tablet",
-        locations = {
-            [863] = {
-                {
-                    x = 0.529,
-                    y = 0.76,
-                },
-            },
-        },
-    },
-    [287185] = {
-        name = "Wanted: Darkspeaker Jo'la",
-        locations = {
-            [862] = {
-                {
-                    x = 0.637,
-                    y = 0.102,
-                },
-            },
-        },
-    },
-    [287189] = {
-        name = "Wanted: Dangerous Beasts",
-        locations = {
-            [862] = {
-                {
-                    x = 0.516,
-                    y = 0.455,
-                },
-                {
-                    x = 0.517,
-                    y = 0.454,
-                },
-            },
-        },
-    },
-    [287228] = {
-        name = "Wanted: Dark Chronicler",
-        locations = {
-            [862] = {
-                {
-                    x = 0.408,
-                    y = 0.711,
-                },
-            },
-        },
-    },
-    [287229] = {
-        name = "Wanted: Dark Chronicler",
-        locations = {
-            [862] = {
-                {
-                    x = 0.443,
-                    y = 0.721,
-                },
-            },
-        },
-    },
-    [287232] = {
-        name = "Scouting Report",
-        locations = {
-            [863] = {
-                {
-                    x = 0.395,
-                    y = 0.799,
-                },
-            },
-        },
-    },
-    [287327] = {
-        name = "Scouting Report",
-        locations = {
-            [863] = {
-                {
-                    x = 0.621,
-                    y = 0.411,
-                },
-            },
-        },
-    },
-    [287398] = {
-        name = "Wanted: Za'roco",
-        locations = {
-            [864] = {
-                {
-                    x = 0.432,
-                    y = 0.765,
-                },
-            },
-        },
-    },
-    [287440] = {
-        name = "Wanted: Taz'raka",
-        locations = {
-            [864] = {
-                {
-                    x = 0.388,
-                    y = 0.77,
-                },
-            },
-        },
-    },
-    [287441] = {
-        name = "Wanted: Sandscout Vesarik",
-        locations = {
-            [864] = {
-                {
-                    x = 0.274,
-                    y = 0.533,
-                },
-            },
-        },
-    },
-    [287442] = {
-        name = "Wanted: Cobra Excursion Participants",
-        locations = {
-            [864] = {
-                {
-                    x = 0.436,
-                    y = 0.6,
-                },
-            },
-        },
-    },
-    [287958] = {
-        name = "Bulletin Board",
-        locations = {
-            [942] = {
-                {
-                    x = 0.307,
-                    y = 0.681,
-                },
-            },
-        },
-    },
-    [288157] = {
-        name = "Wanted: Yarsel'ghun",
-        locations = {
-            [942] = {
-                {
-                    x = 0.578,
-                    y = 0.558,
-                },
-            },
-        },
-    },
-    [288167] = {
-        name = "Marie's Package",
-        locations = {
-            [942] = {
-                {
-                    x = 0.338,
-                    y = 0.5945,
-                },
-                {
-                    x = 0.3845,
-                    y = 0.6295,
-                },
-            },
-        },
-    },
-    [288214] = {
-        name = "Wanted Poster",
-        locations = {
-            [896] = {
-                {
-                    x = 0.196,
-                    y = 0.436,
-                },
-            },
-        },
-    },
-    [288622] = {
-        name = "Wanted Poster",
-        locations = {
-            [896] = {
-                {
-                    x = 0.317,
-                    y = 0.307,
-                },
-            },
-        },
-    },
-    [288641] = {
-        name = "WANTED: Gryphon 'Nappers",
-        locations = {
-            [895] = {
-                {
-                    x = 0.6685,
-                    y = 0.2445,
-                },
-            },
-        },
-    },
-    [289310] = {
-        name = "WANTED: Raging Earthguard",
-        locations = {
-            [895] = {
-                {
-                    x = 0.531,
-                    y = 0.2845,
-                },
-            },
-        },
-    },
-    [289313] = {
-        name = "WANTED: The Hornet",
-        locations = {
-            [895] = {
-                {
-                    x = 0.422,
-                    y = 0.23,
-                },
-            },
-        },
-    },
-    [289361] = {
-        name = "WANTED: Quartermaster Ssylis",
-        locations = {
-            [895] = {
-                {
-                    x = 0.423,
-                    y = 0.272,
-                },
-            },
-        },
-    },
-    [289365] = {
-        name = "Wanted Poster",
-        locations = {
-            [896] = {
-                {
-                    x = 0.2645,
-                    y = 0.722,
-                },
-            },
-        },
-    },
-    [289728] = {
-        name = "Captain Gulnaku's Treasure Map",
-        locations = {
-            [864] = {
-                {
-                    x = 0.351,
-                    y = 0.8045,
-                },
-            },
-        },
-    },
-    [290138] = {
-        name = "Bot Buster Bomb",
-        locations = {
-            [942] = {
-                {
-                    x = 0.3785,
-                    y = 0.2845,
-                },
-            },
-        },
-    },
-    [290419] = {
-        name = "Wanted Poster",
-        locations = {
-            [896] = {
-                {
-                    x = 0.557,
-                    y = 0.349,
-                },
-            },
-        },
-    },
-    [290537] = {
-        name = "Help Wanted",
-        locations = {
-            [942] = {
-                {
-                    x = 0.664,
-                    y = 0.572,
-                },
-            },
-        },
-    },
-    [290750] = {
-        name = "Jambani Stockpile",
-        locations = {
-            [862] = {
-                {
-                    x = 0.653,
-                    y = 0.283,
-                },
-            },
-        },
-    },
-    [290765] = {
-        name = "Large Pile of Gold",
-        locations = {
-            [942] = {
-                {
-                    x = 0.508,
-                    y = 0.568,
-                },
-            },
-        },
-    },
-    [290993] = {
-        name = "Irontide Loot",
-        locations = {
-            [942] = {
-                {
-                    x = 0.359,
-                    y = 0.56,
-                },
-            },
-        },
-    },
-    [291143] = {
-        name = "Ranah's Wrench",
-        locations = {
-            [864] = {
-                {
-                    x = 0.507,
-                    y = 0.647,
-                },
-            },
-        },
-    },
-    [291291] = {
-        name = "Wanted: Poacher",
-        locations = {
-            [862] = {
-                {
-                    x = 0.69,
-                    y = 0.408,
-                },
-            },
-        },
-    },
-    [292523] = {
-        name = "Wanted Poster",
-        locations = {
-            [896] = {
-                {
-                    x = 0.413,
-                    y = 0.41,
-                },
-            },
-        },
-    },
-    [293567] = {
-        name = "Wanted Poster",
-        locations = {
-            [863] = {
-                {
-                    x = 0.672,
-                    y = 0.409,
-                },
-            },
-        },
-    },
-    [293568] = {
-        name = "Wanted Poster",
-        locations = {
-            [863] = {
-                {
-                    x = 0.624,
-                    y = 0.413,
-                },
-            },
-        },
-    },
-    [293985] = {
-        name = "Wanted: War Gore",
-        locations = {
-            [942] = {
-                {
-                    x = 0.468,
-                    y = 0.481,
-                },
-            },
-        },
-    },
-    [297492] = {
-        name = "Bulletin Board",
-        locations = {
-            [942] = {
-                {
-                    x = 0.51,
-                    y = 0.336,
-                },
-            },
-        },
-    },
-    [298849] = {
-        name = "Wanted Poster",
-        locations = {
-            [895] = {
-                {
-                    x = 0.397,
-                    y = 0.179,
-                },
-            },
-        },
-    },
-    [298858] = {
-        name = "Wanted Poster",
-        locations = {
-            [896] = {
-                {
-                    x = 0.374,
-                    y = 0.255,
-                },
-            },
-        },
-    },
-    [307748] = {
-        name = "Venture Co. Letter",
-        locations = {
-            [864] = {
-                {
-                    x = 0.262583,
-                    y = 0.473013,
-                },
-            },
-        },
-    },
-    [309498] = {
-        name = "Armor Stand",
-        locations = {
-            [87] = {
-                {
-                    x = 0.194973,
-                    y = 0.520509,
-                },
-            },
-        },
-    },
-    [311155] = {
-        name = "Ancient Tablet",
-        locations = {
-            [31] = {
-                {
-                    x = 0.327865,
-                    y = 0.836447,
                 },
             },
         },

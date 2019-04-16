@@ -418,6 +418,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN,
         {
             type = "quest",
             id = 52654,
+            breadcrumb = true,
             x = 3,
             y = 1,
             connections = {
@@ -1008,6 +1009,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN, {
         {
             type = "quest",
             id = 52749,
+            breadcrumb = true,
             x = 3,
             y = 1,
             connections = {

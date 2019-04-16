@@ -56,6 +56,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [3924] = {
         name = "Sciamano Mantocardo",
     },
+    [3936] = {
+        name = "Shandris Piumaluna",
+    },
     [3995] = {
         name = "Taumaturgo Jin'zil",
     },
@@ -64,6 +67,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [4079] = {
         name = "Sentinella Thenysil",
+    },
+    [4968] = {
+        name = "Dama Jaina Marefiero",
+    },
+    [5385] = {
+        name = "Custode Mahar Ba",
     },
     [8582] = {
         name = "Kadrak",
@@ -124,6 +133,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [17355] = {
         name = "Valusha",
+    },
+    [23569] = {
+        name = "Renn McGill",
     },
     [24739] = {
         name = "Benjari Edune",
@@ -248,8 +260,29 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [34604] = {
         name = "Grande Baobob",
     },
+    [37135] = {
+        name = "Ricognitrice Nura",
+    },
+    [37717] = {
+        name = "Winnoa Foresta Verde",
+    },
+    [38535] = {
+        name = "Kelsey Ferfavilla",
+    },
+    [38704] = {
+        name = "Kelsey Ferfavilla",
+    },
+    [38878] = {
+        name = "Corpo Mutilato",
+    },
+    [39059] = {
+        name = "Kelsey Ferfavilla",
+    },
     [39256] = {
         name = "Kalen Tirovero",
+    },
+    [40109] = {
+        name = "Prospettore Gunstan",
     },
     [40879] = {
         name = "Boog \"il Sensitivo Meccanico\"",
@@ -386,10 +419,40 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [42106] = {
         name = "Supremo Krom'gar",
     },
+    [42298] = {
+        name = "Kasim Sharim",
+    },
+    [45948] = {
+        name = "Larry il Pazzo",
+    },
+    [46172] = {
+        name = "Baba Lordintruglio",
+    },
+    [47779] = {
+        name = "Mouton Stellardente",
+    },
+    [47811] = {
+        name = "John J. Keeshan",
+    },
+    [48109] = {
+        name = "John J. Keeshan",
+    },
+    [48133] = {
+        name = "Il Generale Thorg'izog",
+    },
+    [48208] = {
+        name = "Bastone delle Ossa Risonanti",
+    },
+    [48306] = {
+        name = "John J. Keeshan",
+    },
+    [48568] = {
+        name = "Eitrigg",
+    },
+    [48569] = {
+        name = "Eitrigg",
+    },
     [49748] = {
         name = "Alfiere degli Eroi",
-    },
-    [203186] = {
-        name = "ALLA LARGA!",
     },
 })

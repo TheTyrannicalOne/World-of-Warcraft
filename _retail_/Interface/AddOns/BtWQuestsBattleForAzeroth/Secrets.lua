@@ -30,7 +30,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_BAAL, {
             -- onClick = function ()
             --     BtWQuests_ShowMapWithWaypoint(863, 0.51, 0.59, "Conspicuous Note")
             -- end,
-            -- type = "npc",
+            -- type = "object",
             -- id = 293849,
             -- completed = {
             --     type = "quest",
@@ -56,7 +56,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_SECRETS_BAAL, {
             -- onClick = function ()
             --     BtWQuests_ShowMapWithWaypoint(646, 0.37, 0.71, "Pebble #1")
             -- end,
-            -- type = "npc",
+            -- type = "object",
             -- id = 293837,
             -- completed = {
             --     type = "quest",

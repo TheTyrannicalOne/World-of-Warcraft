@@ -4,6 +4,8 @@ if GetLocale() ~= "frFR" then
     return
 end
 
+BTWQUESTS_GIFT_OF_NZOTH = "Don de N’Zoth"
+BTWQUESTS_HATI_REBORN = "Hati ressuscité"
 BTWQUESTS_MAGHAR_ORC = "Orcs mag’har"
 BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "personnalisation pour les Elfes de la nuit."
 BTWQUESTS_THE_WAR_CAMPAIGN = "La campagne militaire"

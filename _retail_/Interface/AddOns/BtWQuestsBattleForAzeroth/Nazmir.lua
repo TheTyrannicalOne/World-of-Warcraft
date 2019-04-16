@@ -2439,7 +2439,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN11, {
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 287081,
             -- name = "Go to Ancient Tablet",
             -- onClick = function ()
@@ -2485,7 +2485,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN12, {
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 293568,
 
             -- name = "Go to the Wanted Poster",
@@ -2533,7 +2533,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZMIR_CHAIN13, {
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 287327,
             -- name = "Go to the Scouting Report",
             -- onClick = function ()

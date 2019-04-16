@@ -5,11 +5,23 @@ if GetLocale() ~= "frFR" then
 end
 
 BtWQuestsDatabase:UpdateNPCsTable({
+    [3037] = {
+        name = "Sheza Crin-Sauvage",
+    },
     [5164] = {
         name = "Grumnus Sculptacier",
     },
+    [15192] = {
+        name = "Anachronos",
+    },
     [16802] = {
         name = "Lor’themar Theron",
+    },
+    [29445] = {
+        name = "Thorim",
+    },
+    [108017] = {
+        name = "Torv Doublepas",
     },
     [120168] = {
         name = "Chroniqueur To'kini",
@@ -106,6 +118,18 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [122688] = {
         name = "Bwonsamdi",
+    },
+    [122695] = {
+        name = "Seshuli",
+    },
+    [122698] = {
+        name = "Xanjo",
+    },
+    [122702] = {
+        name = "Enchanteresse Quinni",
+    },
+    [122703] = {
+        name = "Kumali l'Astucieuse",
     },
     [122706] = {
         name = "Théurgiste Salazae",
@@ -224,6 +248,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [124629] = {
         name = "Kaza'jin le Lieur de vagues",
     },
+    [124630] = {
+        name = "Garde de Kul Tiras",
+    },
     [124641] = {
         name = "Chasseuse des ombres Mutumba",
     },
@@ -310,9 +337,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [126039] = {
         name = "Mag'ash le Venimeux",
-    },
-    [126065] = {
-        name = "Dame Sylvanas Coursevent",
     },
     [126066] = {
         name = "Eitrigg",
@@ -413,6 +437,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [127080] = {
         name = "Seigneur Valautomne",
     },
+    [127112] = {
+        name = "Maître-forge Zak'aal",
+    },
     [127144] = {
         name = "Melissa Kenny",
     },
@@ -466,9 +493,6 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [127570] = {
         name = "Gardelame Kaja",
-    },
-    [127576] = {
-        name = "Druidesse de guerre Loti",
     },
     [127586] = {
         name = "Joma",
@@ -725,11 +749,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [130341] = {
         name = "Gardelame Kaja",
     },
+    [130368] = {
+        name = "Samuel D. Colton III",
+    },
     [130375] = {
         name = "Tallis Coeur-Céleste",
     },
     [130377] = {
         name = "Messager Gérald",
+    },
+    [130399] = {
+        name = "Zoé Encrenage",
     },
     [130424] = {
         name = "Henry « le désarmé »",
@@ -790,6 +820,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [130844] = {
         name = "Princesse Talanji",
+    },
+    [130901] = {
+        name = "Chroniqueur Grazzul",
     },
     [130904] = {
         name = "Samuel Williams",
@@ -857,8 +890,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [131354] = {
         name = "Mère des bêtes Jabati",
     },
+    [131386] = {
+        name = "Kronah",
+    },
+    [131397] = {
+        name = "Miju",
+    },
     [131442] = {
         name = "Leandro Royston",
+    },
+    [131443] = {
+        name = "Télémancien en chef Oculeth",
     },
     [131448] = {
         name = "Warren Ashton",
@@ -902,6 +944,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [131656] = {
         name = "Dresseur de molosses Archibald",
     },
+    [131657] = {
+        name = "Compendium de l'effusion de sang",
+    },
     [131684] = {
         name = "Penny « Mignonne » Hardwick",
     },
@@ -916,6 +961,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [131793] = {
         name = "Ancel Mildenhall",
+    },
+    [131840] = {
+        name = "Shuga Splosamorce",
     },
     [131872] = {
         name = "Sur'jan",
@@ -935,6 +983,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [132193] = {
         name = "Angus Ballast",
     },
+    [132228] = {
+        name = "Elric Whalgrene",
+    },
     [132292] = {
         name = "Raimond Mildenhall",
     },
@@ -943,6 +994,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [132333] = {
         name = "Princesse Talanji",
+    },
+    [132347] = {
+        name = "Quentin Whalgrene",
     },
     [132374] = {
         name = "Elsie Wright",
@@ -955,6 +1009,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [132647] = {
         name = "Ancel Mildenhall",
+    },
+    [132680] = {
+        name = "Zukashi",
     },
     [132720] = {
         name = "Maître des faucons Lloyd",
@@ -1001,8 +1058,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [133476] = {
         name = "Princesse Talanji",
     },
+    [133489] = {
+        name = "Ormhun Martel-de-Pierre",
+    },
     [133490] = {
         name = "Jani",
+    },
+    [133519] = {
+        name = "Rokhan",
+    },
+    [133536] = {
+        name = "Grix « Poings de fer » Barlow",
     },
     [133550] = {
         name = "Apprenti mineur Joe",
@@ -1039,6 +1105,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [133682] = {
         name = "Kua'fon",
+    },
+    [133796] = {
+        name = "Therazane",
     },
     [133833] = {
         name = "Rikati",
@@ -1084,6 +1153,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [134325] = {
         name = "Terrence Foster",
+    },
+    [134345] = {
+        name = "Collectionneur Kojo",
     },
     [134346] = {
         name = "Toki",
@@ -1253,6 +1325,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135784] = {
         name = "Garde impérial",
     },
+    [135793] = {
+        name = "Collectionneur Kojo",
+    },
     [135794] = {
         name = "Sage aux parchemins Nola",
     },
@@ -1280,8 +1355,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135976] = {
         name = "Morwin Plaine-Coeur",
     },
+    [136041] = {
+        name = "Emilie Beautemps",
+    },
     [136053] = {
         name = "Samuel Williams",
+    },
+    [136059] = {
+        name = "Layla Tirando",
+    },
+    [136063] = {
+        name = "Cassandra Brennor",
     },
     [136140] = {
         name = "Clonk Graissemèche",
@@ -1343,6 +1427,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [136641] = {
         name = "Brann Barbe-de-Bronze",
     },
+    [136645] = {
+        name = "Brann Barbe-de-Bronze",
+    },
     [136658] = {
         name = "Marie Havreport",
     },
@@ -1382,14 +1469,8 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [137213] = {
         name = "Halford Verroctone",
     },
-    [137323] = {
-        name = "Magni Barbe-de-Bronze",
-    },
     [137337] = {
         name = "Sergent Ermey",
-    },
-    [137400] = {
-        name = "Thaelin Sombrenclume",
     },
     [137401] = {
         name = "Thane-enclume Thurgaden",
@@ -1447,6 +1528,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [137818] = {
         name = "Myxle « le rat des mers » Canevrille",
+    },
+    [137837] = {
+        name = "Commandant Geya'rah",
     },
     [137866] = {
         name = "Taelia",
@@ -1643,8 +1727,14 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [141952] = {
         name = "Navrecorne juvénile",
     },
+    [142275] = {
+        name = "Grommash Hurlenfer",
+    },
     [142393] = {
         name = "Taelia",
+    },
+    [142422] = {
+        name = "Eitrigg",
     },
     [142651] = {
         name = "Lucille Malvoie",
@@ -1664,8 +1754,8 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [143565] = {
         name = "Wayne l'Ancestral",
     },
-    [143746] = {
-        name = "Garde Kitcher",
+    [143692] = {
+        name = "Anachronos",
     },
     [143777] = {
         name = "Hasani le Grand",
@@ -1673,11 +1763,17 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [143787] = {
         name = "Flap-Flap",
     },
+    [143792] = {
+        name = "Tsunga",
+    },
     [143845] = {
         name = "Commandant Geya'rah",
     },
     [143846] = {
         name = "Alleria Coursevent",
+    },
+    [143851] = {
+        name = "Kelsey Etinçacier",
     },
     [143871] = {
         name = "Contremaître Mécapiston",
@@ -1697,17 +1793,44 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [144152] = {
         name = "Moira Thaurissan",
     },
+    [144773] = {
+        name = "Xal'atath",
+    },
     [145005] = {
         name = "Pérégrin d'élite",
     },
     [145015] = {
         name = "Lor'themar Theron",
     },
+    [145022] = {
+        name = "Tisse-temps Delormi",
+    },
+    [145131] = {
+        name = "Crypto-gourou Gryzix",
+    },
+    [145190] = {
+        name = "Princesse Talanji",
+    },
+    [145225] = {
+        name = "Esprit de Vol'jin",
+    },
     [145357] = {
         name = "Dori'thur",
     },
+    [145359] = {
+        name = "Princesse Talanji",
+    },
+    [145360] = {
+        name = "Zolani",
+    },
+    [145396] = {
+        name = "Xal'atath",
+    },
     [145411] = {
         name = "Dame Sylvanas Coursevent",
+    },
+    [145414] = {
+        name = "Natal'hakata",
     },
     [145422] = {
         name = "Rexxar",
@@ -1739,6 +1862,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [145816] = {
         name = "M.E.G.A.",
     },
+    [145965] = {
+        name = "Esprit de Vol'jin",
+    },
+    [145981] = {
+        name = "Esprit de Vol'jin",
+    },
     [146010] = {
         name = "Forestier-sombre Lyana",
     },
@@ -1754,14 +1883,41 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [146050] = {
         name = "Maiev Chantelombre",
     },
+    [146053] = {
+        name = "Sef Iwen",
+    },
     [146073] = {
         name = "Prince marchand Gallywix",
+    },
+    [146091] = {
+        name = "Sef Iwen",
+    },
+    [146093] = {
+        name = "Sef Iwen",
+    },
+    [146094] = {
+        name = "Sef Iwen",
+    },
+    [146208] = {
+        name = "Krag'wa le Colossal",
+    },
+    [146209] = {
+        name = "Pa'ku",
+    },
+    [146214] = {
+        name = "Gonk",
+    },
+    [146290] = {
+        name = "Esprit de Vol'jin",
     },
     [146323] = {
         name = "Nathanos le Flétrisseur",
     },
-    [146324] = {
+    [146325] = {
         name = "Déchiqueteur Blix",
+    },
+    [146335] = {
+        name = "Reine Talanji",
     },
     [146373] = {
         name = "Maiev Chantelombre",
@@ -1771,6 +1927,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [146375] = {
         name = "Sira Gardelune",
+    },
+    [146384] = {
+        name = "Xal'atath",
     },
     [146462] = {
         name = "Berserker de la Horde",
@@ -1784,6 +1943,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [146623] = {
         name = "M.E.G.A.",
     },
+    [146630] = {
+        name = "Esprit de Vol'jin",
+    },
     [146654] = {
         name = "Dame Sylvanas Coursevent",
     },
@@ -1792,6 +1954,15 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [146806] = {
         name = "Forestier-sombre Lyana",
+    },
+    [146824] = {
+        name = "Princesse Talanji",
+    },
+    [146877] = {
+        name = "Princesse Talanji",
+    },
+    [146902] = {
+        name = "Frère Pike",
     },
     [146921] = {
         name = "Princesse Talanji",
@@ -1871,11 +2042,23 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [148015] = {
         name = "Taelia Fordragon",
     },
+    [148096] = {
+        name = "Grand prélat Rata",
+    },
     [148339] = {
         name = "Rustine",
     },
+    [148798] = {
+        name = "Dame Jaina Portvaillant",
+    },
+    [148870] = {
+        name = "Dorlan Merrien",
+    },
     [149143] = {
         name = "Nathanos le Flétrisseur",
+    },
+    [149252] = {
+        name = "Ciel lié",
     },
     [149471] = {
         name = "Forestier-sombre Velonara",
@@ -1883,235 +2066,136 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149612] = {
         name = "Shandris Pennelune",
     },
-    [244983] = {
-        name = "Montre de gousset sale",
+    [149736] = {
+        name = "Image de Mimiron",
     },
-    [270917] = {
-        name = "Registre de Ruisseval",
+    [149823] = {
+        name = "Magni Barbe-de-Bronze",
     },
-    [271706] = {
-        name = "Tableau des chasseurs",
+    [149842] = {
+        name = "Baine Sabot-de-Sang",
     },
-    [272179] = {
-        name = "Bulletin du maire",
+    [149867] = {
+        name = "Magni Barbe-de-Bronze",
     },
-    [272422] = {
-        name = "Grimoire d’Héléna",
+    [149870] = {
+        name = "Grif Coeur-Sauvage",
     },
-    [273814] = {
-        name = "Charme-lame",
+    [150309] = {
+        name = "Baine Sabot-de-Sang",
     },
-    [273854] = {
-        name = "Sac à dos",
+    [150311] = {
+        name = "Thomas Zelling",
     },
-    [276187] = {
-        name = "Junji",
+    [150318] = {
+        name = "Veriss",
     },
-    [276251] = {
-        name = "Inventaire de l’excavation",
+    [150391] = {
+        name = "Image de Mimiron",
     },
-    [276488] = {
-        name = "Boulet de canon en azérite",
+    [150433] = {
+        name = "Gardienne des Hauts Fière-Balafre",
     },
-    [276513] = {
-        name = "Éperlan intact",
+    [150515] = {
+        name = "Cirrus Lafalaise",
     },
-    [276515] = {
-        name = "Canne à pêche",
+    [150574] = {
+        name = "Dame Jaina Portvaillant",
     },
-    [276837] = {
-        name = "Caillou à recettes",
+    [150633] = {
+        name = "Dame Jaina Portvaillant",
     },
-    [277199] = {
-        name = "Liste de tâches abîmée",
+    [150637] = {
+        name = "Kelsey Etinçacier",
     },
-    [277373] = {
-        name = "Algue scintillante",
+    [150640] = {
+        name = "Maître Mathias Shaw",
     },
-    [277459] = {
-        name = "Effigie de cochon",
+    [150690] = {
+        name = "Boss Mida",
     },
-    [278197] = {
-        name = "Fiole d’antidote",
+    [150691] = {
+        name = "Kazit",
     },
-    [278252] = {
-        name = "Offre d’emploi",
+    [150796] = {
+        name = "Kelsey Etinçacier",
     },
-    [278313] = {
-        name = "Lettre gratinée",
+    [150884] = {
+        name = "Chelsea Wright",
     },
-    [278368] = {
-        name = "Note en lambeaux",
+    [150885] = {
+        name = "Bête maccarbre",
     },
-    [278447] = {
-        name = "Lance de trappeur infidèle",
+    [150893] = {
+        name = "Sanctuaire de la Mer",
     },
-    [278577] = {
-        name = "Missive de la Horde déchirée",
+    [150894] = {
+        name = "Sanctuaire de la Nature",
     },
-    [278669] = {
-        name = "Grand livre de Havrebrune",
+    [150895] = {
+        name = "Sanctuaire des Sables",
     },
-    [278675] = {
-        name = "Effigie maudite",
+    [150896] = {
+        name = "Sanctuaire du Brunant",
     },
-    [279337] = {
-        name = "Grimoire malecarde",
+    [150897] = {
+        name = "Sanctuaire de l'Aube",
     },
-    [280576] = {
-        name = "Parchemin dans son étui",
+    [150898] = {
+        name = "Sanctuaire des Tempêtes",
     },
-    [280727] = {
-        name = "Note calcinée",
+    [151061] = {
+        name = "Mimiron",
     },
-    [281230] = {
-        name = "Invitation officielle",
+    [151129] = {
+        name = "Sapphronetta Flivvers",
     },
-    [281348] = {
-        name = "Lettre désagrégée",
+    [151130] = {
+        name = "Grizzek Moussemolette",
     },
-    [281551] = {
-        name = "Avis d’offre d’emploi",
+    [151132] = {
+        name = "Plumes",
     },
-    [281583] = {
-        name = "Reliquaire ancien",
+    [151134] = {
+        name = "Tisse-temps Delormi",
     },
-    [281639] = {
-        name = "Statue croulante",
+    [151137] = {
+        name = "Couturière synchrone",
     },
-    [281647] = {
-        name = "Avis posté",
+    [151162] = {
+        name = "Atikka « l'As » Chasse-Lune",
     },
-    [281673] = {
-        name = "Journal de villageois de Corlain",
+    [151173] = {
+        name = "Daniss Danse-Fantôme",
     },
-    [281718] = {
-        name = "ON EMBAUCHE",
+    [151285] = {
+        name = "Mevris Danse-Fantôme",
     },
-    [282457] = {
-        name = "Totem roncegarde",
+    [151287] = {
+        name = "Telonis",
     },
-    [282478] = {
-        name = "Caisse vide",
+    [152002] = {
+        name = "Image de Mimiron",
     },
-    [282498] = {
-        name = "Flûte du désert",
+    [152255] = {
+        name = "Sef Iwen",
     },
-    [284426] = {
-        name = "Engin d’extraction enfoui",
+    [152489] = {
+        name = "Sanctuaire des Tempêtes",
     },
-    [286016] = {
-        name = "Journal de bord",
+    [152490] = {
+        name = "Sanctuaire de l'Aube",
     },
-    [287081] = {
-        name = "Tablette antique",
+    [152493] = {
+        name = "Sanctuaire des Sables",
     },
-    [287185] = {
-        name = "Avis de recherche : sombre orateur Jo’la",
+    [152495] = {
+        name = "Sanctuaire de la Mer",
     },
-    [287189] = {
-        name = "Avis de recherche : bêtes dangereuses",
+    [152496] = {
+        name = "Sanctuaire de la Nature",
     },
-    [287228] = {
-        name = "Avis de recherche : chroniqueur sombre",
-    },
-    [287229] = {
-        name = "Avis de recherche : chroniqueur sombre",
-    },
-    [287232] = {
-        name = "Rapport de reconnaissance",
-    },
-    [287327] = {
-        name = "Rapport de reconnaissance",
-    },
-    [287398] = {
-        name = "Avis de recherche : Za’roco",
-    },
-    [287440] = {
-        name = "Avis de recherche : Taz’raka",
-    },
-    [287441] = {
-        name = "Avis de recherche : éclaireur des sables Vesarik",
-    },
-    [287442] = {
-        name = "Avis de recherche : participants à l’excursion Cobra",
-    },
-    [287958] = {
-        name = "Panneau d’affichage",
-    },
-    [288157] = {
-        name = "Avis de recherche : Yarsel’ghun",
-    },
-    [288167] = {
-        name = "Paquet de Marie",
-    },
-    [288214] = {
-        name = "Avis de recherche",
-    },
-    [288622] = {
-        name = "Avis de recherche",
-    },
-    [288641] = {
-        name = "Avis de recherche : kidnappeurs de griffons",
-    },
-    [289310] = {
-        name = "Avis de recherche : garde-terre déchaîné",
-    },
-    [289313] = {
-        name = "Avis de recherche : le Frelon",
-    },
-    [289361] = {
-        name = "Avis de recherche : intendant Ssylis",
-    },
-    [289365] = {
-        name = "Avis de recherche",
-    },
-    [289728] = {
-        name = "Carte au trésor du capitaine Gulnaku",
-    },
-    [290138] = {
-        name = "Bombe anti-robot",
-    },
-    [290419] = {
-        name = "Avis de recherche",
-    },
-    [290537] = {
-        name = "Offre d’emploi",
-    },
-    [290750] = {
-        name = "Réserve jambani",
-    },
-    [290765] = {
-        name = "Grand tas de pièces d’or",
-    },
-    [290993] = {
-        name = "Butin des Lamineurs",
-    },
-    [291143] = {
-        name = "Clé de Ranah",
-    },
-    [291291] = {
-        name = "Avis de recherche : braconnier",
-    },
-    [292523] = {
-        name = "Avis de recherche",
-    },
-    [293567] = {
-        name = "Avis de recherche",
-    },
-    [293568] = {
-        name = "Avis de recherche",
-    },
-    [293985] = {
-        name = "On recherche : Étripeur de guerre",
-    },
-    [297492] = {
-        name = "Panneau d’affichage",
-    },
-    [298849] = {
-        name = "Avis de recherche",
-    },
-    [298858] = {
-        name = "Avis de recherche",
+    [152497] = {
+        name = "Sanctuaire du Brunant",
     },
 })

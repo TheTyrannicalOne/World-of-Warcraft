@@ -1160,9 +1160,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [48896] = {
         name = "Sabedoria do passado",
     },
-    [48897] = {
-        name = "Barganha firmada",
-    },
     [48898] = {
         name = "Patuá da sorte",
     },
@@ -2786,9 +2783,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50691] = {
         name = "Fora da folha de pagamento",
     },
-    [50694] = {
-        name = "Um banho de sangue",
-    },
     [50696] = {
         name = "Diversão magnética",
     },
@@ -3956,12 +3950,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [52013] = {
         name = "Campeão: John J. Keeshan",
     },
-    [52023] = {
-        name = "Informe a Horda",
-    },
-    [52024] = {
-        name = "Informe a Horda",
-    },
     [52026] = {
         name = "Assassinato no além-mar",
     },
@@ -4661,32 +4649,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53433] = {
         name = "Chapéu da Ordem das Brasas",
     },
-    [53434] = {
-        name = "O lorde desaparecido",
-    },
     [53438] = {
         name = "PROCURA-SE: Larápios de Mantícora",
     },
-    [53439] = {
-        name = "Marés de sangue",
-    },
     [53440] = {
         name = "PROCURA-SE: O Marimbondo",
-    },
-    [53442] = {
-        name = "Os náufragos",
-    },
-    [53443] = {
-        name = "Minhas lembranças favoritas",
-    },
-    [53444] = {
-        name = "Medalhão luzente",
-    },
-    [53445] = {
-        name = "Silenciando as irmãs",
-    },
-    [53446] = {
-        name = "Sabor local",
     },
     [53449] = {
         name = "Gorilas da ira",
@@ -4771,6 +4738,51 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [53738] = {
         name = "Defesa de Quel'Danas",
+    },
+    [53760] = {
+        name = "Consequências inesperadas",
+    },
+    [53761] = {
+        name = "O tesouro pirata",
+    },
+    [53762] = {
+        name = "A coroa da tempestade",
+    },
+    [53763] = {
+        name = "Torcer a faca",
+    },
+    [53765] = {
+        name = "Ele só tem olhos para você",
+    },
+    [53766] = {
+        name = "Ele só tem olhos para você",
+    },
+    [53774] = {
+        name = "Sabedoria do Chefe Guerreiro",
+    },
+    [53775] = {
+        name = "Sombras de disrupção",
+    },
+    [53776] = {
+        name = "Rumo à Costa Partida",
+    },
+    [53777] = {
+        name = "Onde ele morreu",
+    },
+    [53778] = {
+        name = "Onde ele tombou",
+    },
+    [53779] = {
+        name = "Mentiras de loa",
+    },
+    [53780] = {
+        name = "Carcereiro dos Malditos",
+    },
+    [53781] = {
+        name = "Eyir",
+    },
+    [53782] = {
+        name = "Mistérios da morte",
     },
     [53783] = {
         name = "Nas dunas",
@@ -4884,9 +4896,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
         name = "Esperança minguante",
     },
     [53850] = {
-        name = "Nossa guerra continua",
-    },
-    [53851] = {
         name = "Nossa guerra continua",
     },
     [53852] = {
@@ -5087,6 +5096,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54050] = {
         name = "Consequência",
     },
+    [54058] = {
+        name = "Consequências inesperadas",
+    },
     [54059] = {
         name = "A Guerreira da Noite",
     },
@@ -5132,6 +5144,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54109] = {
         name = "Favor da rainha",
     },
+    [54113] = {
+        name = "Qualquer mortezinha ajuda",
+    },
+    [54114] = {
+        name = "Qualquer mortezinha ajuda",
+    },
+    [54117] = {
+        name = "Qualquer mortezinha ajuda",
+    },
+    [54118] = {
+        name = "Qualquer mortezinha ajuda",
+    },
+    [54120] = {
+        name = "A Orgrimmar",
+    },
     [54121] = {
         name = "A fuga de Grimpagris",
     },
@@ -5141,6 +5168,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54124] = {
         name = "Como escapar dos processos trabalhistas",
     },
+    [54126] = {
+        name = "Torcer a faca",
+    },
     [54128] = {
         name = "Precauções necessárias",
     },
@@ -5149,6 +5179,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54140] = {
         name = "Ascensão dos Zandalari",
+    },
+    [54141] = {
+        name = "O medalhão de Azshara",
+    },
+    [54144] = {
+        name = "Ordens de Azshara",
+    },
+    [54145] = {
+        name = "O loa da morte",
+    },
+    [54147] = {
+        name = "Confrontar a Val'kyr",
     },
     [54156] = {
         name = "Trilha de sangue",
@@ -5173,6 +5215,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54171] = {
         name = "O Cetro Abissal",
+    },
+    [54174] = {
+        name = "Ordens de Azshara",
     },
     [54175] = {
         name = "Face a face com seu inimigo",
@@ -5258,6 +5303,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54249] = {
         name = "Justiça Zandalari",
     },
+    [54265] = {
+        name = "Ordens de Azshara",
+    },
     [54269] = {
         name = "Ninguém escapará",
     },
@@ -5317,6 +5365,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54421] = {
         name = "Domando as feras",
+    },
+    [54433] = {
+        name = "Ordens de Azshara",
+    },
+    [54438] = {
+        name = "Caldeirão das Tempestades: relíquias das sombras",
+    },
+    [54439] = {
+        name = "Caldeirão das Tempestades: relíquias das sombras",
     },
     [54441] = {
         name = "Tomando o Portal Sangrento",
@@ -5398,6 +5455,27 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54871] = {
         name = "Estamos chegando",
+    },
+    [54913] = {
+        name = "Centelha de genialidade",
+    },
+    [54915] = {
+        name = "Telemetria ativa",
+    },
+    [54916] = {
+        name = "Tradição de guarda-caça",
+    },
+    [54917] = {
+        name = "Pagamento em sangue",
+    },
+    [54918] = {
+        name = "Centelha da imaginação",
+    },
+    [54919] = {
+        name = "Laços do trovão",
+    },
+    [54920] = {
+        name = "Vínculo fraterno",
     },
     [54925] = {
         name = "Heresia!",
@@ -5518,6 +5596,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55188] = {
         name = "Rasgando a costura",
+    },
+    [55195] = {
+        name = "Reverberação",
     },
     [55214] = {
         name = "Estresse no tecido",

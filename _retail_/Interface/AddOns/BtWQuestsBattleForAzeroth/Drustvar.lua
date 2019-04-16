@@ -2504,7 +2504,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN12, 
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 276515,
             -- name = "Go to the Fishing Rod",
             -- onClick = function ()
@@ -2532,7 +2532,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN12, 
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 276513,
             -- name = "Go to the Intact Mudfish",
             -- onClick = function ()
@@ -2618,7 +2618,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN13, 
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 286016,
             -- name = "Go to the Ship's Log",
             -- onClick = function ()
@@ -2986,7 +2986,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DRUSTVAR_CHAIN18, 
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 284426,
             x = 4,
             y = 0,

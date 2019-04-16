@@ -1,7 +1,6 @@
 BtWQuestsDatabase:AddQuestsTable({
     [2] = {
         name = "Sharptalon's Claw",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -22,7 +21,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [23] = {
         name = "Ursangous' Paw",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -43,7 +41,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24] = {
         name = "Shadumbra's Head",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -64,13 +61,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25] = {
         name = "Simmer Down Now",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34559,
-            name = "Captain Tarkan",
         },
         rewards = {
             {
@@ -90,7 +85,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [184] = {
         name = "Furlbrow's Deed",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -103,25 +97,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [185] = {
         name = "Tiger Hunting",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [186] = {
         name = "Tiger Stalking",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [187] = {
         name = "Tiger Prowess",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [188] = {
         name = "Tiger Mastery",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -137,25 +127,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [190] = {
         name = "Panther Hunting",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [191] = {
         name = "Panther Stalking",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [192] = {
         name = "Panther Prowess",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [193] = {
         name = "Panther Mastery",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -171,25 +157,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [194] = {
         name = "Raptor Hunting",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [195] = {
         name = "Raptor Stalking",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [196] = {
         name = "Raptor Prowess",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [197] = {
         name = "Raptor Mastery",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -205,7 +187,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [208] = {
         name = "Big Game Hunter",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -221,13 +202,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [216] = {
         name = "Between a Rock and a Thistlefur",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12757,
-            name = "Karang Amakkar",
         },
         rewards = {
             {
@@ -247,7 +226,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [309] = {
         name = "Protecting the Shipment",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -268,7 +246,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [583] = {
         name = "Welcome to the Jungle",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -284,7 +261,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [840] = {
         name = "Conscript of the Horde",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -302,9 +278,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [844] = {
         name = "Plainstrider Menace",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34258,
+        },
         rewards = {
             {
                 type = "money",
@@ -323,9 +302,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [845] = {
         name = "The Zhevra",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3338,
+        },
         rewards = {
             {
                 type = "money",
@@ -344,9 +326,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [848] = {
         name = "Fungal Spores",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3390,
+        },
         rewards = {
             {
                 type = "money",
@@ -365,9 +350,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [850] = {
         name = "Kolkar Leaders",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34841,
+        },
         rewards = {
             {
                 type = "money",
@@ -386,9 +374,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [851] = {
         name = "Verog the Dervish",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34638,
+        },
         rewards = {
             {
                 type = "money",
@@ -407,9 +398,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [852] = {
         name = "Hezrul Bloodmark",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3389,
+        },
         rewards = {
             {
                 type = "money",
@@ -428,9 +422,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [855] = {
         name = "Centaur Bracers",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3389,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -441,7 +438,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [858] = {
         name = "Ignition",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -454,7 +450,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [863] = {
         name = "The Escape",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -475,7 +470,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [865] = {
         name = "It's Gotta be the Horn",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -488,7 +482,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [867] = {
         name = "Harpy Raiders",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -509,15 +502,17 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [869] = {
         name = "To Track a Thief",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [870] = {
         name = "The Forgotten Pools",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3448,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -528,9 +523,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [871] = {
         name = "In Defense of Far Watch",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3337,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -541,9 +539,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [872] = {
         name = "The Far Watch Offensive",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3337,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -554,7 +555,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [875] = {
         name = "Harpy Lieutenants",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -575,7 +575,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [876] = {
         name = "Serena Bloodfeather",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -588,9 +587,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [877] = {
         name = "The Stagnant Oasis",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34626,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -601,9 +603,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [880] = {
         name = "Altered Beings",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34626,
+        },
         rewards = {
             {
                 type = "money",
@@ -622,9 +627,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [881] = {
         name = "Echeyakee",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3338,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -635,7 +643,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [887] = {
         name = "Southsea Freebooters",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -656,9 +663,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [891] = {
         name = "A Captain's Vengeance",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3339,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -674,7 +684,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [895] = {
         name = "WANTED: Cap'n Garvey",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -695,9 +704,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [899] = {
         name = "Consumed by Hatred",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3432,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -708,9 +720,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [903] = {
         name = "Hunting the Huntress",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3338,
+        },
         rewards = {
             {
                 type = "money",
@@ -729,9 +744,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [905] = {
         name = "Into the Raptor's Den",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3338,
+        },
         rewards = {
             {
                 type = "money",
@@ -748,9 +766,194 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [1168] = {
+        name = "Army of the Black Dragon",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4502,
+        },
+    },
+    [1201] = {
+        name = "Theramore Spies",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4791,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [1202] = {
+        name = "The Theramore Docks",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4791,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [1204] = {
+        name = "Mudrock Soup and Bugs",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4794,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [1205] = {
+        name = "Deadmire",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [1222] = {
+        name = "Stinky's Escape",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4880,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [1258] = {
+        name = "... and Bugs",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4794,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [1270] = {
+        name = "Stinky's Escape",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 470,
+                amount = 250,
+            },
+        },
+    },
+    [1271] = {
+        name = "Feast at the Blue Recluse",
+        requiredLevel = 35,
+        maxLevel = 60,
+    },
+    [1454] = {
+        name = "The Karnitol Shipwreck",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5638,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [1455] = {
+        name = "The Karnitol Shipwreck",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35251,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 75,
+            },
+        },
+    },
+    [1456] = {
+        name = "The Karnitol Shipwreck",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5638,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [1467] = {
+        name = "Reagents for Reclaimers Inc.",
+        requiredLevel = 30,
+    },
     [1918] = {
         name = "The Befouled Element",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -763,7 +966,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [4021] = {
         name = "Counterattack!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -784,9 +986,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [5041] = {
         name = "Supplies for the Crossroads",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34258,
+        },
         rewards = {
             {
                 type = "money",
@@ -803,9 +1008,83 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [5421] = {
+        name = "Fish in a Bucket",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11317,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [5501] = {
+        name = "Bone Collector",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11438,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 470,
+                amount = 150,
+            },
+        },
+    },
+    [5561] = {
+        name = "Kodo Roundup",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11596,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 470,
+                amount = 150,
+            },
+        },
+    },
+    [5581] = {
+        name = "Portals of the Legion",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5395,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
     [5713] = {
         name = "One Shot.  One Kill.",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -824,15 +1103,131 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [5821] = {
+        name = "Bodyguard for Hire",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 470,
+                amount = 250,
+            },
+        },
+    },
+    [5943] = {
+        name = "Gizelton Caravan",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 470,
+                amount = 250,
+            },
+        },
+    },
+    [6031] = {
+        name = "Runecloth",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11557,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [6132] = {
+        name = "Get Me Out of Here!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 12277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [6134] = {
+        name = "Ghost-o-plasm Round Up",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 6019,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [6142] = {
+        name = "Clam Bait",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [6143] = {
+        name = "Other Fish to Fry",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
     [6441] = {
         name = "Satyr Horns",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12724,
-            name = "Pixel",
         },
         rewards = {
             {
@@ -852,13 +1247,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [6442] = {
         name = "Naga at the Zoram Strand",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12719,
-            name = "Marukai",
         },
         rewards = {
             {
@@ -870,13 +1263,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [6462] = {
         name = "Troll Charm",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12721,
-            name = "Mitsuwa",
         },
         rewards = {
             {
@@ -896,7 +1287,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [6482] = {
         name = "Freedom to Ruul",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -917,13 +1307,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [6503] = {
         name = "Ashenvale Outrunners",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12867,
-            name = "Kuray'bin",
         },
         rewards = {
             {
@@ -943,7 +1331,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [6544] = {
         name = "Torek's Assault",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -969,13 +1356,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [6621] = {
         name = "King of the Foulweald",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12696,
-            name = "Senani Thunderheart",
         },
         rewards = {
             {
@@ -990,13 +1375,23 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [6641] = {
         name = "Vorsha the Lasher",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12717,
-            name = "Muglash",
+        },
+    },
+    [7737] = {
+        name = "Gaining Even More Acceptance",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 59,
+                amount = 375,
+            },
         },
     },
     [7863] = {
@@ -1022,7 +1417,6 @@ BtWQuestsDatabase:AddQuestsTable({
         name = "Sentinel Advanced Care Package",
         level = 70,
         requiredLevel = 45,
-        maxLevel = 255,
         rewards = {
             {
                 type = "reputation",
@@ -1031,9 +1425,535 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [8277] = {
+        name = "Deadly Desert Venom",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15189,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 150,
+            },
+        },
+    },
+    [8278] = {
+        name = "Noggle's Last Hope",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15189,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8279] = {
+        name = "The Twilight Lexicon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15194,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8280] = {
+        name = "Securing the Supply Lines",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15191,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 150,
+            },
+        },
+    },
+    [8281] = {
+        name = "Stepping Up Security",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15191,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8282] = {
+        name = "Noggle's Lost Satchel",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15190,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8283] = {
+        name = "Wanted - Deathclasp, Terror of the Sands",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 180448,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8284] = {
+        name = "The Twilight Mystery",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15183,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8285] = {
+        name = "The Deserter",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15183,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 75,
+            },
+        },
+    },
+    [8287] = {
+        name = "A Terrible Purpose",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15194,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8304] = {
+        name = "Dearest Natalia",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15181,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8306] = {
+        name = "Into The Maw of Madness",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 350,
+            },
+        },
+    },
+    [8308] = {
+        name = "Brann Bronzebeard's Lost Letter",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8309] = {
+        name = "Glyph Chasing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15170,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8310] = {
+        name = "Breaking the Code",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15171,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8314] = {
+        name = "Unraveling the Mystery",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15170,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 150,
+            },
+        },
+    },
+    [8318] = {
+        name = "Secret Communication",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15306,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8319] = {
+        name = "Encrypted Twilight Texts",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8320] = {
+        name = "Twilight Geolords",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15270,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [8321] = {
+        name = "Vyral the Vile",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15270,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 350,
+            },
+        },
+    },
+    [8323] = {
+        name = "True Believers",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15194,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [8324] = {
+        name = "Still Believing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [8470] = {
+        name = "Deadwood Ritual Totem",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 350,
+            },
+        },
+    },
+    [8481] = {
+        name = "The Root of All Evil",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 576,
+                amount = 500,
+            },
+        },
+    },
+    [8764] = {
+        name = "The Changing of Paths - Protector No More",
+        level = 60,
+        requiredLevel = 60,
+    },
+    [8765] = {
+        name = "The Changing of Paths - Invoker No More",
+        level = 60,
+        requiredLevel = 60,
+    },
+    [8766] = {
+        name = "The Changing of Paths - Conqueror No More",
+        level = 60,
+        requiredLevel = 60,
+    },
+    [9268] = {
+        name = "War at Sea",
+        requiredLevel = 40,
+        maxLevel = 120,
+        rewards = {
+            {
+                type = "reputation",
+                id = 369,
+                amount = 500,
+            },
+        },
+    },
+    [9415] = {
+        name = "Report to Marshal Bluewall",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [9416] = {
+        name = "Report to General Kirika",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17081,
+        },
+    },
     [9436] = {
         name = "Bloodscalp Insight",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -1052,9 +1972,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [9437] = {
+        name = "Twilight of the Dawn Runner",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17095,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
     [9457] = {
         name = "An Unusual Patron",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -1073,9 +2016,67 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [11208] = {
+        name = "Delivery for Drazzit",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23797,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 369,
+                amount = 10,
+            },
+        },
+    },
+    [11211] = {
+        name = "Help for Mudsprocket",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 6546,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 369,
+                amount = 10,
+            },
+        },
+    },
+    [11212] = {
+        name = "Tabetha's Farm",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4921,
+        },
+    },
+    [11213] = {
+        name = "Check Up on Tabetha",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4791,
+        },
+    },
+    [11215] = {
+        name = "Help Mudsprocket",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4791,
+        },
+    },
     [13504] = {
         name = "Shatterspear Laborers",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1096,7 +2097,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13505] = {
         name = "Remnants of the Highborne",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1117,7 +2117,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13506] = {
         name = "Reason to Worry",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1138,7 +2137,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13507] = {
         name = "Denying Manpower",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1159,7 +2157,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13508] = {
         name = "Swift Response",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1180,7 +2177,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13509] = {
         name = "War Supplies",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1201,7 +2197,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13510] = {
         name = "Timely Arrival",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1222,7 +2217,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13511] = {
         name = "One Bitter Wish",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1243,7 +2237,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13512] = {
         name = "Strategic Strikes",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1264,7 +2257,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13513] = {
         name = "On the Brink",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1285,7 +2277,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13514] = {
         name = "The Ancients' Ire",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1306,7 +2297,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13515] = {
         name = "Ending the Threat",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1327,9 +2317,17 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13518] = {
         name = "The Last Wave of Survivors",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            locations = {
+                [62] = {
+                    x = 0.51738315820694,
+                    y = 0.18001025915146,
+                },
+            },
+        },
         rewards = {
             {
                 type = "money",
@@ -1348,7 +2346,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13519] = {
         name = "The Twilight's Hammer",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1369,7 +2366,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13520] = {
         name = "The Boon of the Seas",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1390,7 +2386,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13521] = {
         name = "Buzzbox 413",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1411,7 +2406,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13522] = {
         name = "Threat from the Water",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1432,7 +2426,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13523] = {
         name = "Power Over the Tides",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1448,13 +2441,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13525] = {
         name = "What's Happening to the Blackwood Furbolg?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13526] = {
         name = "The Bear's Paw",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1470,7 +2461,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13527] = {
         name = "No Accounting for Taste",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1491,7 +2481,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13528] = {
         name = "Buzzbox 723",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1512,7 +2501,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13529] = {
         name = "The Corruption's Source",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1533,7 +2521,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13537] = {
         name = "A Taste for Grouper",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1554,7 +2541,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13542] = {
         name = "Against the Wind",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1575,7 +2561,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13543] = {
         name = "Three Hammers to Break",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1588,7 +2573,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13544] = {
         name = "The Bear's Blessing",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1604,7 +2588,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13545] = {
         name = "Cleansing the Afflicted",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1620,7 +2603,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13546] = {
         name = "The Defiler",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1636,7 +2618,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13547] = {
         name = "Coaxing the Spirits",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1649,7 +2630,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13554] = {
         name = "A Cure In The Dark",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1670,7 +2650,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13557] = {
         name = "Bearer of Good Fortune",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1691,7 +2670,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13558] = {
         name = "Call Down the Thunder",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1712,7 +2690,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13560] = {
         name = "An Ocean Not So Deep",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1733,7 +2710,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13561] = {
         name = "Solace for the Highborne",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1754,7 +2730,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13562] = {
         name = "The Final Flame of Bashal'Aran",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1775,7 +2750,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13563] = {
         name = "A Love Eternal",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1796,7 +2770,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13564] = {
         name = "A Lost Companion",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1817,7 +2790,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13565] = {
         name = "Twice Removed",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1838,7 +2810,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13566] = {
         name = "Ritual Materials",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1859,19 +2830,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13567] = {
         name = "Spirit of the Stag",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13568] = {
         name = "Spirit of the Moonstalker",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13569] = {
         name = "The Ritual Bond",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1892,7 +2860,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13570] = {
         name = "Remembrance of Auberdine",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1913,7 +2880,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13572] = {
         name = "Jadefire Braziers",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1929,7 +2895,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13573] = {
         name = "Malfurion's Return",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1942,13 +2907,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13575] = {
         name = "The Land Is in Their Blood",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13576] = {
         name = "Mutual Aid",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1964,13 +2927,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13577] = {
         name = "The Last Wildkin",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13578] = {
         name = "Aroom's Farewell",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -1991,7 +2952,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13579] = {
         name = "Protector of Ameth'Aran",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2012,7 +2972,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13580] = {
         name = "Soothing the Elements",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2028,7 +2987,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13581] = {
         name = "The Blackwood Pledge",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2041,7 +2999,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13582] = {
         name = "Elune's Fire",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2057,7 +3014,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13583] = {
         name = "The Wildkin's Oath",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2070,7 +3026,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13584] = {
         name = "Calming the Earth",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2086,19 +3041,25 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13585] = {
         name = "Sworn to Protect",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13586] = {
         name = "The Emerald Dream",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            locations = {
+                [77] = {
+                    x = 0.26456397771835,
+                    y = 0.32622665166855,
+                },
+            },
+        },
     },
     [13587] = {
         name = "The Waking Nightmare",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2111,7 +3072,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13588] = {
         name = "The Eye of All Storms",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2132,7 +3092,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13589] = {
         name = "The Shatterspear Invaders",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2153,7 +3112,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13590] = {
         name = "The Front Line",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2174,7 +3132,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13591] = {
         name = "Disturbing Connections",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2195,7 +3152,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13594] = {
         name = "Don't Forget the Horde",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -2220,7 +3176,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13595] = {
         name = "Of Their Own Design",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -2237,7 +3192,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13596] = {
         name = "Twilight Plans",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2258,13 +3212,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13597] = {
         name = "Spirit of the Thistle Bear",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13598] = {
         name = "Unsavory Remedies",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2285,7 +3237,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13599] = {
         name = "Grimclaw's Return",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2306,7 +3257,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13601] = {
         name = "In Aid of the Refugees",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2319,7 +3269,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13602] = {
         name = "Naga of the Strand",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -2344,7 +3293,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13605] = {
         name = "The Last Refugee",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2370,13 +3318,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13612] = {
         name = "Mor'shan Defense",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 8582,
-            name = "Kadrak",
         },
         rewards = {
             {
@@ -2396,13 +3342,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13613] = {
         name = "Rescue the Fallen",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33263,
-            name = "Dinah Halfmoon",
         },
         rewards = {
             {
@@ -2422,13 +3366,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13615] = {
         name = "Empty Quivers",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33284,
-            name = "Truun",
         },
         rewards = {
             {
@@ -2448,13 +3390,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13617] = {
         name = "West to the Strand",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33187,
-            name = "Sentinel Shyela",
         },
         rewards = {
             {
@@ -2466,13 +3406,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13618] = {
         name = "Find Gorat!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 8582,
-            name = "Kadrak",
         },
         rewards = {
             {
@@ -2492,13 +3430,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13619] = {
         name = "Final Report",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33294,
-            name = "Gorat",
         },
         rewards = {
             {
@@ -2518,13 +3454,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13620] = {
         name = "To Dinah, at Once!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 8582,
-            name = "Kadrak",
         },
         rewards = {
             {
@@ -2544,13 +3478,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13621] = {
         name = "Gorat's Vengeance",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33263,
-            name = "Dinah Halfmoon",
         },
         rewards = {
             {
@@ -2570,13 +3502,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13623] = {
         name = "Delivery for Orendil",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33204,
-            name = "Evenar Stillwhisper",
         },
         rewards = {
             {
@@ -2588,7 +3518,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13624] = {
         name = "A Squad of Your Own",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -2613,13 +3542,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13626] = {
         name = "Respect for the Fallen",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 11806,
-            name = "Sentinel Onaeya",
         },
         rewards = {
             {
@@ -2639,13 +3566,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13628] = {
         name = "Got Wood?",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33284,
-            name = "Truun",
         },
         rewards = {
             {
@@ -2665,13 +3590,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13630] = {
         name = "The Reason Why",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33276,
-            name = "Moon Priestess Maestra",
         },
         rewards = {
             {
@@ -2691,13 +3614,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13632] = {
         name = "Rear Guard Duty",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 11219,
-            name = "Liladris Moonriver",
         },
         rewards = {
             {
@@ -2717,7 +3638,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13635] = {
         name = "South Gate Status Report",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2738,7 +3658,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13636] = {
         name = "Stormpike's Orders",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2759,7 +3678,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13639] = {
         name = "Resupplying the Excavation",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2780,13 +3698,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13640] = {
         name = "Management Material",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33421,
-            name = "Gorka",
         },
         rewards = {
             {
@@ -2806,13 +3722,19 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13642] = {
         name = "Bathed in Light",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3847,
-            name = "Orendil Broadleaf",
+            locations = {
+                [63] = {
+                    {
+                        x = 0.268384,
+                        y = 0.366406,
+                    },
+                },
+            },
         },
         rewards = {
             {
@@ -2832,13 +3754,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13644] = {
         name = "That Which Has Risen",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33443,
-            name = "Keeper Heartwise",
         },
         rewards = {
             {
@@ -2858,7 +3778,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13645] = {
         name = "To Raene Wolfrunner",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -2875,13 +3794,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13646] = {
         name = "Astranaar Bound",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33445,
-            name = "Sentinel Avana",
         },
         rewards = {
             {
@@ -2893,7 +3810,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13647] = {
         name = "Joining the Hunt",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2914,7 +3830,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13648] = {
         name = "WANTED: The Dark Iron Spy",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2930,7 +3845,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13650] = {
         name = "Keep Your Hands Off The Goods!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -2951,13 +3865,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13651] = {
         name = "Needs a Little Lubrication",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33421,
-            name = "Gorka",
         },
         rewards = {
             {
@@ -2977,13 +3889,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13653] = {
         name = "Crisis at Splintertree",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33421,
-            name = "Gorka",
         },
         rewards = {
             {
@@ -3003,7 +3913,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13655] = {
         name = "Explorers' League Document (2 of 6)",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3024,7 +3933,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13656] = {
         name = "Explorers' League Document (1 of 6)",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3045,7 +3953,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13657] = {
         name = "Explorers' League Document (3 of 6)",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3066,7 +3973,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13658] = {
         name = "Explorers' League Document (4 of 6)",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3087,7 +3993,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13659] = {
         name = "Explorers' League Document (6 of 6)",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3108,7 +4013,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13660] = {
         name = "Explorers' League Document (5 of 6)",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3127,9 +4031,20 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [13662] = {
+        name = "Gaining Acceptance",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 59,
+                amount = 15,
+            },
+        },
+    },
     [13683] = {
         name = "Stopping the Rituals",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -3154,13 +4069,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13698] = {
         name = "Explosives Shredding",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17287,
-            name = "Sentinel Luciel Starwhisper",
         },
         rewards = {
             {
@@ -3180,13 +4093,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13712] = {
         name = "To the Rescue!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 8582,
-            name = "Kadrak",
         },
         rewards = {
             {
@@ -3206,13 +4117,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13730] = {
         name = "Playing With Felfire",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33726,
-            name = "Splintertree Demolisher",
         },
         rewards = {
             {
@@ -3232,13 +4141,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13751] = {
         name = "Tell No One!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33726,
-            name = "Splintertree Demolisher",
         },
         rewards = {
             {
@@ -3258,13 +4165,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13766] = {
         name = "Closure is Only Natural",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17310,
-            name = "Gnarl",
         },
         rewards = {
             {
@@ -3284,13 +4189,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13792] = {
         name = "The Shadewalker",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17310,
-            name = "Gnarl",
         },
         rewards = {
             {
@@ -3310,13 +4213,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13796] = {
         name = "The Forest Heart",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33777,
-            name = "Gaivan Shadewalker",
         },
         rewards = {
             {
@@ -3336,13 +4237,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13797] = {
         name = "Dirty Deeds",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33760,
-            name = "Durak",
         },
         rewards = {
             {
@@ -3362,13 +4261,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13798] = {
         name = "Rain of Destruction",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33760,
-            name = "Durak",
         },
         rewards = {
             {
@@ -3383,13 +4280,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13801] = {
         name = "Dead Elves Walking",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12724,
-            name = "Pixel",
         },
         rewards = {
             {
@@ -3409,13 +4304,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13803] = {
         name = "Blood of the Weak",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33837,
-            name = "Kadrak",
         },
         rewards = {
             {
@@ -3435,13 +4328,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13805] = {
         name = "Pierce Their Heart!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33760,
-            name = "Durak",
         },
         rewards = {
             {
@@ -3461,13 +4352,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13806] = {
         name = "Demon Duty",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 11820,
-            name = "Locke Okarr",
         },
         rewards = {
             {
@@ -3487,13 +4376,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13808] = {
         name = "Mission Improbable",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33837,
-            name = "Kadrak",
         },
         rewards = {
             {
@@ -3513,13 +4400,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13815] = {
         name = "Making Stumps",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33889,
-            name = "Krokk",
         },
         rewards = {
             {
@@ -3539,7 +4424,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13831] = {
         name = "A Troubling Prescription",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3560,13 +4444,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13841] = {
         name = "All Apologies",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33726,
-            name = "Splintertree Demolisher",
         },
         rewards = {
             {
@@ -3586,18 +4468,15 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13842] = {
         name = "Dread Head Redemption",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3144,
-            name = "Eitrigg",
         },
     },
     [13844] = {
         name = "The Looting of Althalaxx",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -3618,13 +4497,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13848] = {
         name = "Bad News Bear-er",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33837,
-            name = "Kadrak",
         },
         rewards = {
             {
@@ -3644,7 +4521,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13849] = {
         name = "Astranaar's Burning!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -3667,15 +4543,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [13850] = {
+        name = "Toxic Tolerance",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11701,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [13853] = {
         name = "Return Fire",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 4079,
-            name = "Sentinel Thenysil",
         },
         rewards = {
             {
@@ -3695,13 +4588,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13865] = {
         name = "Wet Work",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33889,
-            name = "Krokk",
         },
         rewards = {
             {
@@ -3721,13 +4612,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13866] = {
         name = "To The Ramparts!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34195,
-            name = "Kulg Gorespatter",
         },
         rewards = {
             {
@@ -3742,7 +4631,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13867] = {
         name = "Culling the Furbolg Threat",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -3767,13 +4655,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13868] = {
         name = "Corrupting Influence?",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3924,
-            name = "Thistlefur Shaman",
         },
         rewards = {
             {
@@ -3793,7 +4679,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13869] = {
         name = "Recover the Remains",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -3818,13 +4703,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13870] = {
         name = "As Good as it Gets",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 33889,
-            name = "Krokk",
         },
         rewards = {
             {
@@ -3844,13 +4727,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13871] = {
         name = "Security!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17304,
-            name = "Overseer Gorthak",
         },
         rewards = {
             {
@@ -3870,13 +4751,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13872] = {
         name = "Worgen Wisdom",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3691,
-            name = "Raene Wolfrunner",
         },
         rewards = {
             {
@@ -3888,13 +4767,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13873] = {
         name = "Sheelah's Last Wish",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34233,
-            name = "Guardian Menerin",
         },
         rewards = {
             {
@@ -3914,7 +4791,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13874] = {
         name = "A Not-So-Charmed Life",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -3939,13 +4815,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13875] = {
         name = "Gurtar's Request",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34242,
-            name = "Guardian Gurtar",
         },
         rewards = {
             {
@@ -3965,7 +4839,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13876] = {
         name = "Too Far Gone",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -3985,30 +4858,29 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13877] = {
         name = "Go With The Flow",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34239,
-            name = "Hephaestus Pilgrim",
         },
     },
     [13878] = {
         name = "Through Fire and Flames",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34284,
+        },
     },
     [13879] = {
         name = "Thunder Peak",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34510,
-            name = "Broyk",
         },
         rewards = {
             {
@@ -4023,13 +4895,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13880] = {
         name = "Hot Lava",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34290,
-            name = "Core",
         },
         rewards = {
             {
@@ -4044,7 +4914,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13881] = {
         name = "Consumed",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4060,7 +4929,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13882] = {
         name = "The Seeds of Life",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4076,13 +4944,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13883] = {
         name = "Lousy Pieces of Ship",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34303,
-            name = "Dagrun Ragehammer",
         },
         rewards = {
             {
@@ -4102,13 +4968,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13884] = {
         name = "Put Out The Fire",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34292,
-            name = "Arctanus",
         },
         rewards = {
             {
@@ -4123,7 +4987,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13885] = {
         name = "In Defense of Darkshore",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4139,7 +5002,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13886] = {
         name = "Vortex",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -4165,15 +5027,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [13887] = {
+        name = "Venomhide Eggs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11701,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [13888] = {
         name = "Vortex",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34289,
-            name = "The Vortex",
         },
         rewards = {
             {
@@ -4186,15 +5065,18 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [13889] = {
+        name = "Hungry, Hungry Hatchling",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
     [13890] = {
         name = "Keep the Fires Burning",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34122,
-            name = "Commander Grimfang",
         },
         rewards = {
             {
@@ -4214,7 +5096,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13891] = {
         name = "The Devourer of Darkshore",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4230,7 +5111,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13892] = {
         name = "Leave No Tracks",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4251,7 +5131,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13893] = {
         name = "Soggoth and Kronn",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4264,13 +5143,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13895] = {
         name = "The Slumbering Ancients",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13896] = {
         name = "Unearthed Knowledge",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4291,7 +5168,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13897] = {
         name = "The Battle for Darkshore",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4312,7 +5188,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13898] = {
         name = "The Tides Turn Against Us",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4333,13 +5208,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13899] = {
         name = "The Darkscale Warlord",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13900] = {
         name = "The Offering to Azshara",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4360,13 +5233,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13901] = {
         name = "Deep Despair",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12719,
-            name = "Marukai",
         },
         rewards = {
             {
@@ -4386,7 +5257,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13902] = {
         name = "Mounting the Offensive",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4400,9 +5270,36 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [13903] = {
+        name = "Gorishi Grub",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [13904] = {
+        name = "Poached, Scrambled, Or Raw?",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [13905] = {
+        name = "Searing Roc Feathers",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34320,
+        },
+    },
+    [13906] = {
+        name = "They Grow Up So Fast",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11701,
+        },
+    },
     [13907] = {
         name = "Sweeping Clean the Ruins",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4418,7 +5315,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13909] = {
         name = "Got Some Flotsam?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4434,7 +5330,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13910] = {
         name = "A New Home",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4450,7 +5345,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13911] = {
         name = "The Absent-Minded Prospector",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4466,7 +5360,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13912] = {
         name = "Swamped Secrets",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4482,13 +5375,17 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13913] = {
         name = "They Took Our Gnomes",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34354,
-            name = "Huntress Jalin",
+            locations = {
+                [63] = {
+                    x = 0.35063564777374,
+                    y = 0.71568596363068,
+                },
+            },
         },
         rewards = {
             {
@@ -4513,7 +5410,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13918] = {
         name = "The Titans' Terminal",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4529,13 +5425,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13919] = {
         name = "A Trip to the Moonwell",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3894,
-            name = "Pelturas Whitemoon",
         },
         rewards = {
             {
@@ -4547,13 +5441,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13920] = {
         name = "Before You Go...",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34122,
-            name = "Commander Grimfang",
         },
         rewards = {
             {
@@ -4571,22 +5463,8 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
-    [13921] = {
-        name = "He Who Would Be Forgiven",
-        level = -1,
-        requiredLevel = 15,
-        maxLevel = 60,
-        rewards = {
-            {
-                type = "reputation",
-                id = 69,
-                amount = 25,
-            },
-        },
-    },
     [13922] = {
         name = "In the Hands of the Perverse",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -4611,13 +5489,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13923] = {
         name = "To Hellscream's Watch",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34122,
-            name = "Commander Grimfang",
         },
         rewards = {
             {
@@ -4637,13 +5513,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13924] = {
         name = "All's Well",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34358,
-            name = "Avrus the Redeemed",
         },
         rewards = {
             {
@@ -4663,7 +5537,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13925] = {
         name = "An Ounce of Prevention",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4679,13 +5552,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13928] = {
         name = "Recover the Fallen",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3880,
-            name = "Sentinel Melyria Frostshadow",
         },
         rewards = {
             {
@@ -4705,7 +5576,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13935] = {
         name = "Defend the Tree!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -4730,13 +5600,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13936] = {
         name = "Tweedle's Dumb",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34359,
-            name = "Captain Goggath",
         },
         rewards = {
             {
@@ -4748,19 +5616,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13940] = {
         name = "Leaving the Dream",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13942] = {
         name = "Set Us Up the Bomb",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34395,
-            name = "Tweedle",
         },
         rewards = {
             {
@@ -4780,13 +5645,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13943] = {
         name = "Breathing Room",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34359,
-            name = "Captain Goggath",
         },
         rewards = {
             {
@@ -4806,13 +5669,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13944] = {
         name = "Small Hands, Short Fuse",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34395,
-            name = "Tweedle",
         },
         rewards = {
             {
@@ -4824,13 +5685,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13947] = {
         name = "Blastranaar!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34359,
-            name = "Captain Goggath",
         },
         rewards = {
             {
@@ -4850,15 +5709,17 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13948] = {
         name = "Stepping Up Surveillance",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [13949] = {
         name = "Crossroads Caravan Pickup",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34258,
+        },
         rewards = {
             {
                 type = "money",
@@ -4877,7 +5738,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13953] = {
         name = "Naga In Our Midst",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -4898,13 +5758,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13958] = {
         name = "Condition Critical!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34359,
-            name = "Captain Goggath",
         },
         rewards = {
             {
@@ -4919,9 +5777,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13961] = {
         name = "Drag it Out of Them",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34513,
+        },
         rewards = {
             {
                 type = "money",
@@ -4935,13 +5796,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13962] = {
         name = "Stalemate",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34518,
-            name = "Thagg",
         },
         rewards = {
             {
@@ -4953,9 +5812,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13963] = {
         name = "By Hook Or By Crook",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34513,
+        },
         rewards = {
             {
                 type = "money",
@@ -4969,13 +5831,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13964] = {
         name = "To the Spire",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 4079,
-            name = "Sentinel Thenysil",
         },
         rewards = {
             {
@@ -4987,13 +5847,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13965] = {
         name = "Check in on the Edunes",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3996,
-            name = "Faldreas Goeth'Shael",
         },
         rewards = {
             {
@@ -5005,13 +5863,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13967] = {
         name = "Thinning the... Herd?",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 12696,
-            name = "Senani Thunderheart",
         },
         rewards = {
             {
@@ -5031,9 +5887,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13968] = {
         name = "The Tortusk Takedown",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34513,
+        },
         rewards = {
             {
                 type = "money",
@@ -5047,15 +5906,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13969] = {
         name = "Grol'dom's Missing Kodo",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5907,
+        },
     },
     [13970] = {
         name = "Animal Services",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34547,
+        },
         rewards = {
             {
                 type = "money",
@@ -5069,9 +5934,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13971] = {
         name = "The Kodo's Return",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34547,
+        },
         rewards = {
             {
                 type = "money",
@@ -5085,9 +5953,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13973] = {
         name = "The Grol'dom Militia",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34560,
+        },
         rewards = {
             {
                 type = "money",
@@ -5101,13 +5972,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13974] = {
         name = "Tweedle's Tiny Package",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34395,
-            name = "Tweedle",
         },
         rewards = {
             {
@@ -5127,9 +5996,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13975] = {
         name = "Crossroads Caravan Delivery",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34578,
+        },
         rewards = {
             {
                 type = "money",
@@ -5143,7 +6015,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13976] = {
         name = "Three Friends of the Forest",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -5160,13 +6031,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13977] = {
         name = "Mass Production",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34569,
-            name = "Flooz",
         },
         rewards = {
             {
@@ -5178,13 +6047,17 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13979] = {
         name = "The Goblin Braintrust",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34354,
-            name = "Huntress Jalin",
+            locations = {
+                [63] = {
+                    x = 0.35080903768539,
+                    y = 0.71568596363068,
+                },
+            },
         },
         rewards = {
             {
@@ -5204,13 +6077,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13980] = {
         name = "They're Out There!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34596,
-            name = "Foreman Jinx",
         },
         rewards = {
             {
@@ -5230,9 +6101,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13981] = {
         name = "They Set Them Up The Bomb!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195134,
+        },
         rewards = {
             {
                 type = "money",
@@ -5251,7 +6125,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13982] = {
         name = "In a Bind",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -5276,13 +6149,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13983] = {
         name = "Building Your Own Coffin",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34596,
-            name = "Foreman Jinx",
         },
         rewards = {
             {
@@ -5294,7 +6165,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13985] = {
         name = "Clear the Shrine",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -5319,7 +6189,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13987] = {
         name = "The Last Stand",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -5344,9 +6213,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13988] = {
         name = "A Growing Problem",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3448,
+        },
         rewards = {
             {
                 type = "money",
@@ -5360,13 +6232,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13989] = {
         name = "King of the Foulweald",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3897,
-            name = "Krolg",
         },
         rewards = {
             {
@@ -5386,15 +6256,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13991] = {
         name = "The Purloined Payroll",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3338,
+        },
     },
     [13992] = {
         name = "A Little Diversion",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34613,
+        },
         rewards = {
             {
                 type = "money",
@@ -5408,9 +6284,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13995] = {
         name = "King of Centaur Mountain",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34634,
+        },
         rewards = {
             {
                 type = "money",
@@ -5424,9 +6303,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13998] = {
         name = "In Fungus We Trust",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3390,
+        },
         rewards = {
             {
                 type = "money",
@@ -5440,9 +6322,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [13999] = {
         name = "Who's Shroomin' Who?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3390,
+        },
         rewards = {
             {
                 type = "money",
@@ -5456,19 +6341,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14003] = {
         name = "Samophlange Repair",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14004] = {
         name = "Return to Samophlanger",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14006] = {
         name = "Read the Manual",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5489,9 +6371,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14018] = {
         name = "He Who Would Be Forgiven",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3894,
+        },
         rewards = {
             {
                 type = "reputation",
@@ -5502,7 +6387,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14034] = {
         name = "Club Foote",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5518,7 +6402,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14038] = {
         name = "Love it or Limpet",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5534,7 +6417,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14042] = {
         name = "Ammo Kerblammo",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5550,25 +6432,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14045] = {
         name = "Find Baron Longshore",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14046] = {
         name = "The Baron's Demands",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14049] = {
         name = "A Most Unusual Map",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14050] = {
         name = "Gazlowe's Fortune",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5584,13 +6462,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14052] = {
         name = "Take it up with Tony",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14056] = {
         name = "Glomp is Sitting On It",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5606,13 +6482,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14057] = {
         name = "Guns. We Need Guns.",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14063] = {
         name = "Mutiny, Mon!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5628,13 +6502,15 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14066] = {
         name = "Investigate the Wreckage",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3464,
+        },
     },
     [14067] = {
         name = "The Stolen Silver",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5650,7 +6526,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14068] = {
         name = "Waptor Twapping",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5666,9 +6541,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14072] = {
         name = "Flushing Out Verog",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 34638,
+        },
         rewards = {
             {
                 type = "money",
@@ -5682,13 +6560,15 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14073] = {
         name = "Deathgate's Reinforcements",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3429,
+        },
     },
     [14117] = {
         name = "The Eyes of Ashenvale",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5709,7 +6589,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14118] = {
         name = "Venison for the Troops",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5730,7 +6609,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14127] = {
         name = "Return of the Highborne?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5743,7 +6621,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14128] = {
         name = "Return of the Highborne?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5764,7 +6641,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14129] = {
         name = "Runaway Shredder!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5777,7 +6653,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14130] = {
         name = "Friends Come In All Colors",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5793,7 +6668,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14131] = {
         name = "A Little Pick-me-up",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5809,7 +6683,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14132] = {
         name = "That's Just Rude!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5825,7 +6698,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14134] = {
         name = "The Captain's Logs",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5838,7 +6710,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14135] = {
         name = "Up a Tree",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5851,7 +6722,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14146] = {
         name = "Defend the Gates!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5864,7 +6734,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14155] = {
         name = "Arborcide",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5885,7 +6754,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14161] = {
         name = "Basilisk Bashin'",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5906,7 +6774,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14162] = {
         name = "Report to Horzak",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5919,7 +6786,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14165] = {
         name = "Stone Cold",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5938,9 +6804,70 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14184] = {
+        name = "My Time Has Passed",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35286,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    700, 700, 800, 800, 900, 900, 1000, 1000, 1100, 1100, 1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 25,
+            },
+        },
+    },
+    [14188] = {
+        name = "Avenge Furien!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35295,
+            locations = {
+                [66] = {
+                    x = 0.44626468420029,
+                    y = 0.29423236846924,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 911,
+                amount = 10,
+            },
+        },
+    },
+    [14189] = {
+        name = "Translation",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35298,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 911,
+                amount = 75,
+            },
+        },
+    },
     [14190] = {
         name = "The Perfect Prism",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5951,15 +6878,45 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14191] = {
+        name = "Furien's Footsteps",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195433,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
     [14192] = {
         name = "Prismbreak",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
+    [14193] = {
+        name = "Nothing a Couple of Melons Won't Fix",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195438,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
     [14194] = {
         name = "Refleshification",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5978,9 +6935,36 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14195] = {
+        name = "All Becoming Clearer",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 911,
+                amount = 150,
+            },
+        },
+    },
+    [14196] = {
+        name = "Firestarter",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195445,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
     [14197] = {
         name = "A Quota to Meet",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -5999,9 +6983,23 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14198] = {
+        name = "Rider on the Storm",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
     [14201] = {
         name = "A Thousand Stories in the Sand",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6022,7 +7020,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14202] = {
         name = "Survey the Lakeshore",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6043,7 +7040,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14209] = {
         name = "Gunk in the Trunk",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6064,7 +7060,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14215] = {
         name = "Memories of the Dead",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6077,7 +7072,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14216] = {
         name = "Mystery of the Sarcen Stone",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6096,9 +7090,38 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14223] = {
+        name = "Peace of Mind",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35298,
+            locations = {
+                [66] = {
+                    x = 0.44915622472763,
+                    y = 0.29523307085037,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14225] = {
+        name = "You'll Know It When You See It",
+        requiredLevel = 30,
+        maxLevel = 60,
+    },
     [14226] = {
         name = "Trouble Under Foot",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6108,13 +7131,27 @@ BtWQuestsDatabase:AddQuestsTable({
                     350, 400, 500, 600, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500, 1700, 1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
                 },
                 minLevel = 10,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14227] = {
+        name = "Putting Their Heads Together",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
                 maxLevel = 60,
             },
         },
     },
     [14230] = {
         name = "Manual Labor",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6128,9 +7165,36 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14246] = {
+        name = "Early Adoption",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35661,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14247] = {
+        name = "Stubborn Lands",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35661,
+        },
+    },
     [14249] = {
         name = "Shear Will",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6146,7 +7210,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14250] = {
         name = "Renewable Resource",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6160,9 +7223,132 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14251] = {
+        name = "New Beginnings",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35757,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14252] = {
+        name = "Good Gold For Bad Tail",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35757,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14253] = {
+        name = "Fletch Me Some Plumage!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35757,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14254] = {
+        name = "Heavy Metal",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195600,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14255] = {
+        name = "Ethel Rethor",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35295,
+        },
+    },
+    [14256] = {
+        name = "The Emerging Threat",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35773,
+            locations = {
+                [66] = {
+                    x = 0.387988448143,
+                    y = 0.26954853534698,
+                },
+            },
+        },
+    },
+    [14257] = {
+        name = "Slitherblade Slaughter",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35773,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
     [14258] = {
         name = "Mortar the Point",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6181,9 +7367,24 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14260] = {
+        name = "Going Deep",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35773,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 75,
+            },
+        },
+    },
     [14261] = {
         name = "Ice Cold",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6204,7 +7405,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14262] = {
         name = "To Gut a Fish",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6225,7 +7425,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14263] = {
         name = "Waste of Thyme",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6239,21 +7438,61 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14264] = {
+        name = "Wetter Than Wet",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35827,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
     [14267] = {
         name = "Investigating the Sea Shrine",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
+    [14268] = {
+        name = "Deep Impact",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35827,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
     [14270] = {
         name = "The Keystone Shard",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14271] = {
         name = "Report to Twocrush",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6272,9 +7511,53 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14282] = {
+        name = "Mystery Solved",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14284] = {
+        name = "A Revenant's Vengeance",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35902,
+        },
+    },
+    [14292] = {
+        name = "The Enemy of Our Enemy",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35773,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 75,
+            },
+        },
+    },
     [14295] = {
         name = "Sisters of the Sea",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6295,7 +7578,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14296] = {
         name = "Watch Your Step",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6311,7 +7593,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14297] = {
         name = "Pro-liberation",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6332,7 +7613,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14299] = {
         name = "Xylem's Asylum",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6348,7 +7628,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14300] = {
         name = "The Trial of Fire",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6362,9 +7641,144 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14301] = {
+        name = "Return and Report",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35902,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14302] = {
+        name = "Official Assessment",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 35773,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
+    [14304] = {
+        name = "Blood Theory",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36048,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14305] = {
+        name = "A Time to Reap",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36060,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14306] = {
+        name = "Pulling Weeds",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36060,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14307] = {
+        name = "Stubborn Winds",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
     [14308] = {
         name = "When Science Attacks",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6379,13 +7793,36 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [14309] = {
+        name = "Calming the Kodo",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36048,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
                 amount = 250,
             },
         },
     },
     [14310] = {
         name = "Segmentation Fault: Core Dumped",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6404,9 +7841,97 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14311] = {
+        name = "Taking Part",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36060,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14312] = {
+        name = "An Introduction Is In Order",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36052,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
+    [14314] = {
+        name = "Breakout!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36056,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14316] = {
+        name = "Cenarion Property",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36052,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14318] = {
+        name = "Delicate Negotiations",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36056,
+        },
+    },
     [14322] = {
         name = "Bad Science! Bad!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6427,13 +7952,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14323] = {
         name = "Absorbent",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14324] = {
         name = "Full of Hot Water",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6447,9 +7970,205 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14325] = {
+        name = "Will Work For Food",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36163,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14327] = {
+        name = "My Word is My Bond",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36163,
+            locations = {
+                [66] = {
+                    {
+                        x = 0.73336,
+                        y = 0.416313,
+                    },
+                },
+            },
+        },
+    },
+    [14328] = {
+        name = "Three Princes",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36056,
+        },
+    },
+    [14329] = {
+        name = "Not So Fast!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36185,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14330] = {
+        name = "Behind Closed Doors",
+        requiredLevel = 30,
+        maxLevel = 60,
+    },
+    [14332] = {
+        name = "Time For Change",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36196,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14333] = {
+        name = "While You're Here",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 196393,
+        },
+    },
+    [14334] = {
+        name = "Blubbergut",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 12031,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14335] = {
+        name = "Chipping In",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11624,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14337] = {
+        name = "Shadowprey Village",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14338] = {
+        name = "Ghost Walker Post",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14339] = {
+        name = "Delivery Device",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4498,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
     [14340] = {
         name = "Dressed to Impress",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6460,12 +8179,73 @@ BtWQuestsDatabase:AddQuestsTable({
                 },
                 minLevel = 10,
                 maxLevel = 60,
+            },
+        },
+    },
+    [14341] = {
+        name = "Smeed's Harnesses",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11259,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    700, 700, 800, 800, 900, 900, 1000, 1000, 1100, 1100, 1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14342] = {
+        name = "Infernal Encroachment",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5395,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14343] = {
+        name = "Maurin's Concoction",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4498,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 75,
             },
         },
     },
     [14345] = {
         name = "Wash Out",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6479,9 +8259,163 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14346] = {
+        name = "Cleansing Our Crevasse",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [14354] = {
+        name = "Elune's Gifts",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5642,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14357] = {
+        name = "To the Hilt!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195517,
+        },
+    },
+    [14358] = {
+        name = "Ten Pounds of Flesh",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195497,
+        },
+    },
+    [14359] = {
+        name = "Blessings From Above",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 195497,
+        },
+    },
+    [14360] = {
+        name = "Nothing a Couple of Melons Won't Fix",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [14361] = {
+        name = "Peace of Mind",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14362] = {
+        name = "Ears Are Burning",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14363] = {
+        name = "You'll Know It When You See It",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14364] = {
+        name = "Putting Their Heads Together",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14365] = {
+        name = "Ethel Rethor",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5752,
+        },
+    },
     [14370] = {
         name = "Mysterious Azsharite",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6502,7 +8436,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14371] = {
         name = "A Gigantic Snack",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6521,9 +8454,81 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14372] = {
+        name = "Thargad's Camp",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14373] = {
+        name = "Infernal Encroachment",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36329,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14374] = {
+        name = "Portals of the Legion",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36329,
+            locations = {
+                [66] = {
+                    x = 0.3668577671051,
+                    y = 0.71218979358673,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [14376] = {
+        name = "Jugkar's Undoing",
+        requiredLevel = 30,
+        maxLevel = 60,
+    },
     [14377] = {
         name = "Befriending Giants",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6542,9 +8547,89 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14378] = {
+        name = "Hunting Brendol",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36329,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14379] = {
+        name = "Rock Lobstrock!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36378,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14380] = {
+        name = "An Impactful Discovery",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36329,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14381] = {
+        name = "Cleansing Our Crevasse",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
     [14383] = {
         name = "The Terrible Tinkers of the Ruined Reaches",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6560,12 +8645,30 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 1133,
                 amount = 250,
+            },
+        },
+    },
+    [14384] = {
+        name = "Rerouted!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36410,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
             },
         },
     },
     [14385] = {
         name = "Azsharite Experiment Number One",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6584,9 +8687,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14387] = {
+        name = "Lay of the Land",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
     [14388] = {
         name = "Azsharite Experiment Number Two",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6607,7 +8728,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14389] = {
         name = "Wasn't It Obvious?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6623,13 +8743,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14390] = {
         name = "Easy is Boring",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14391] = {
         name = "Turning the Tables",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6645,7 +8763,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14392] = {
         name = "Farewell, Minnow",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6659,9 +8776,61 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [14393] = {
+        name = "Into the Fray!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36398,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+        },
+    },
+    [14394] = {
+        name = "Death to Agogridon",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36398,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 92,
+                amount = 10000000,
+            },
+            {
+                type = "reputation",
+                id = 93,
+                amount = 10000000,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 350,
+            },
+        },
+    },
     [14407] = {
         name = "Azshara Blues",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6682,13 +8851,26 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14408] = {
         name = "Nine's Plan",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
+    [14410] = {
+        name = "The Wilds of Feralas",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
     [14413] = {
         name = "The Pinnacle of Learning",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6704,7 +8886,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14422] = {
         name = "Raptor Raptor Rocket",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6720,7 +8901,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14423] = {
         name = "Dozercism",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6741,7 +8921,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14424] = {
         name = "Need More Science",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6762,19 +8941,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14428] = {
         name = "Amberwind's Journal",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14429] = {
         name = "Arcane De-Construction",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14430] = {
         name = "Hacking the Construct",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6795,7 +8971,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14431] = {
         name = "The Blackmaw Scar",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6816,7 +8991,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14432] = {
         name = "A Pale Brew",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6837,7 +9011,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14433] = {
         name = "Diplomacy by Another Means",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6858,7 +9031,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14435] = {
         name = "The Blackmaw Doublecross",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6879,13 +9051,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14442] = {
         name = "My Favorite Subject",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [14462] = {
         name = "Where's My Head?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6898,7 +9068,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14464] = {
         name = "Lightning Strike Assassination",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6919,7 +9088,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14468] = {
         name = "Another Warm Body",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6932,7 +9100,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14469] = {
         name = "Hand-me-downs",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6945,7 +9112,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14470] = {
         name = "Military Breakthrough",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6958,7 +9124,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14471] = {
         name = "First Degree Mortar",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6971,7 +9136,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14472] = {
         name = "In The Face!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6984,7 +9148,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14475] = {
         name = "Grounded!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -6997,7 +9160,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14476] = {
         name = "Rigged to Blow",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7010,7 +9172,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14477] = {
         name = "Push the Button!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7031,7 +9192,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14478] = {
         name = "Operation Fishgut",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7044,7 +9204,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14479] = {
         name = "There Are Many Like It",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7057,7 +9216,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14480] = {
         name = "Extermination",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7070,7 +9228,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14484] = {
         name = "Head of the Snake",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7083,7 +9240,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14485] = {
         name = "Ticker Required",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7096,7 +9252,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14486] = {
         name = "Handling the Goods",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7117,7 +9272,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [14487] = {
         name = "Still Beating Heart",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7130,7 +9284,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24430] = {
         name = "Blacken the Skies",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7151,7 +9304,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24433] = {
         name = "Let Them Feast on Fear",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7172,13 +9324,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24434] = {
         name = "Commando Drop",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [24435] = {
         name = "Mop Up",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7191,7 +9341,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24436] = {
         name = "Halo Drops",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7204,7 +9353,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24437] = {
         name = "First Come, First Served",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7225,7 +9373,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24439] = {
         name = "The Conquest of Azshara",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7246,7 +9393,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24448] = {
         name = "Field Promotion",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7267,7 +9413,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24449] = {
         name = "Shore Leave",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7288,7 +9433,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24452] = {
         name = "Profitability Scouting",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7309,7 +9453,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24453] = {
         name = "Private Chat",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7330,7 +9473,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24455] = {
         name = "Rapid Deployment",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7343,7 +9485,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24458] = {
         name = "A Hello to Arms",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7364,7 +9505,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24463] = {
         name = "Probing into Ashenvale",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -7380,7 +9520,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24467] = {
         name = "Fade to Black",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7396,7 +9535,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24478] = {
         name = "The Trial of Frost",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7412,7 +9550,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24479] = {
         name = "The Trial of Shadow",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7428,7 +9565,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [24497] = {
         name = "Airborne Again",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7447,9 +9583,4068 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [24504] = {
+        name = "Clear the High Road",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37135,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24505] = {
+        name = "Holdout at Hunter's Hill",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37137,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 10,
+            },
+        },
+    },
+    [24512] = {
+        name = "Warriors' Redemption",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37153,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24513] = {
+        name = "Eye for an Eye",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37136,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24514] = {
+        name = "Raptor Scraps",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37138,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24515] = {
+        name = "Signals in the Sky",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37138,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24517] = {
+        name = "Put the Fear in Them",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37154,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24518] = {
+        name = "The Low Road",
+        requiredLevel = 25,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1700, 1800, 1900, 2100, 2200, 2500, 2500, 2500, 2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 150,
+            },
+        },
+    },
+    [24519] = {
+        name = "Stalling the Survey",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37154,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24525] = {
+        name = "Keeping the Dogs at Bay",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11857,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24529] = {
+        name = "Bad to Worse",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11857,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24534] = {
+        name = "Speaking Their Language",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11857,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24539] = {
+        name = "When Plants Attack",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37515,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24542] = {
+        name = "A Curious Bloom",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37515,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [24543] = {
+        name = "A Family Divided",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37516,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1700, 1800, 1900, 2100, 2200, 2500, 2500, 2500, 2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24546] = {
+        name = "A Line in the Dirt",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3418,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24551] = {
+        name = "Meet the New Boss",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3433,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24552] = {
+        name = "Lion's Pride",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3387,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24565] = {
+        name = "Biological Intervention",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37570,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24566] = {
+        name = "Sowing a Solution",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38314,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24569] = {
+        name = "Siegebreaker",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37679,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24570] = {
+        name = "Adder Subtraction",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38314,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24571] = {
+        name = "Lashvine Seeds",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38314,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24572] = {
+        name = "Taking Back Taurajo",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37679,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24573] = {
+        name = "Honoring the Dead",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37717,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24574] = {
+        name = "To Harvest Chaos",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37570,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24577] = {
+        name = "Desolation Hold Inspection",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37679,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 75,
+            },
+        },
+    },
+    [24591] = {
+        name = "Changing of the Gar'dul",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24601] = {
+        name = "The Nightmare Scar",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37570,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24603] = {
+        name = "Don't Stop Bereavin'",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37847,
+            locations = {
+                [199] = {
+                    x = 0.44509270787239,
+                    y = 0.88091069459915,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24604] = {
+        name = "Concern for Mankrik",
+        requiredLevel = 25,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    175, 200, 225, 250, 250, 250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24606] = {
+        name = "Blood of the Barrens",
+        requiredLevel = 25,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24608] = {
+        name = "Mangletooth",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37847,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24618] = {
+        name = "Claim the Battle Scar",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37837,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24619] = {
+        name = "Parts-is-Parts",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37908,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 68,
+                amount = 250,
+            },
+        },
+    },
+    [24620] = {
+        name = "Hearts-is-Hearts",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37908,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 68,
+                amount = 250,
+            },
+        },
+    },
+    [24621] = {
+        name = "Smarts-is-Smarts",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37908,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 68,
+                amount = 350,
+            },
+        },
+    },
+    [24631] = {
+        name = "Flightmare",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37909,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24632] = {
+        name = "Tauren Vengeance",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37909,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 75,
+            },
+        },
+    },
+    [24633] = {
+        name = "Mahka's Plea",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37812,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 700, 700, 800, 800, 900, 900, 1000, 1000, 1100, 1100, 1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24634] = {
+        name = "Intelligence Warfare",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37837,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24637] = {
+        name = "The Butcher of Taurajo",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37837,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 5000, 5000, 5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+        },
+    },
+    [24653] = {
+        name = "Echoes of Agamaggan",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37812,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24654] = {
+        name = "Silithissues",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37910,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [24684] = {
+        name = "A Weezil in the Henhouse",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3341,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24685] = {
+        name = "Dwarf Fortress",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38140,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [24686] = {
+        name = "Carried on the Waves",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38274,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [24687] = {
+        name = "Bouquets of Death",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38263,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [24689] = {
+        name = "Flowing to the North",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38274,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
+    [24690] = {
+        name = "Blazerunner",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9270,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24691] = {
+        name = "Peculiar Delicacies",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10977,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24692] = {
+        name = "The Fledgling Colossus",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9271,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    20000, 21300, 22700, 24000, 25300, 26000, 26700, 27300, 28000, 28000, 29300, 30000, 30700, 32000, 32700, 33300, 34000, 34700, 35300, 35300, 36000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24693] = {
+        name = "Mossy Pile",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10977,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24694] = {
+        name = "The Shaper's Terrace",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38504,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24695] = {
+        name = "Ever Watching From Above",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38502,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24697] = {
+        name = "How to Make Meat Fresh Again",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38270,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24698] = {
+        name = "Adventures in Archaeology",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38270,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24699] = {
+        name = "Gormashh the Glutinous",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38276,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24700] = {
+        name = "Hard to Harvest",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38276,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24701] = {
+        name = "Marshal's Refuse",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24702] = {
+        name = "Here Lies Dadanga",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [24703] = {
+        name = "An Important Lesson",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38237,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24704] = {
+        name = "The Evil Dragons of Un'Goro Crater",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38237,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24705] = {
+        name = "Damsels Were Made to be Saved",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38237,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24706] = {
+        name = "The Spirits of Golakka Hot Springs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38237,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24707] = {
+        name = "The Ballad of Maximillian",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38237,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    20000, 21300, 22700, 24000, 25300, 26000, 26700, 27300, 28000, 28000, 29300, 30000, 30700, 32000, 32700, 33300, 34000, 34700, 35300, 35300, 36000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24708] = {
+        name = "The Fossil-Finder 3000",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9272,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24709] = {
+        name = "A Tale of Two Shovels",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9272,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24714] = {
+        name = "Chasing A-Me 01",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9618,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24715] = {
+        name = "Repairing A-Me 01",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24717] = {
+        name = "The Apes of Un'Goro",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38275,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24718] = {
+        name = "The Mighty U'cha",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24719] = {
+        name = "Claws of White",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38274,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [24720] = {
+        name = "Crystals of Power",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9117,
+            locations = {
+                [71] = {
+                    x = 0.19542481005192,
+                    y = 0.36128038167954,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24721] = {
+        name = "The Eastern Pylon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38263,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24722] = {
+        name = "The Northern Pylon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38275,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24723] = {
+        name = "The Western Pylon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9272,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24724] = {
+        name = "Crystal Restore",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [24725] = {
+        name = "Crystal Charge",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [24726] = {
+        name = "Crystal Force",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [24727] = {
+        name = "Crystal Spire",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [24728] = {
+        name = "Crystal Ward",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [24729] = {
+        name = "Crystal Yield",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [24730] = {
+        name = "Roll the Bones",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9272,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24731] = {
+        name = "The Fare of Lar'korwi",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9619,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24732] = {
+        name = "The Scent of Lar'korwi",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9619,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24733] = {
+        name = "The Bait for Lar'korwi",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9619,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24734] = {
+        name = "Lost!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9997,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24735] = {
+        name = "A Little Help From My Friends",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9999,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24736] = {
+        name = "Shizzle's Flyer",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9998,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24737] = {
+        name = "Super Sticky",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38276,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [24740] = {
+        name = "Volcanic Activity",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9270,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24742] = {
+        name = "Finding the Source",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10302,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24747] = {
+        name = "Sabotage!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38140,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 5000, 5000, 5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [24794] = {
+        name = "Speak With Spraggle",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10302,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24807] = {
+        name = "Winnoa Pineforest",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37570,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24824] = {
+        name = "The Disturbed Earth",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37834,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24854] = {
+        name = "Finding Stormclaw",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38269,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 942,
+                amount = 10,
+            },
+        },
+    },
+    [24855] = {
+        name = "Aberrant Flora",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38263,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [24862] = {
+        name = "Running the Gauntlet",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38378,
+            locations = {
+                [199] = {
+                    x = 0.29885330796242,
+                    y = 0.089882306754589,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [24863] = {
+        name = "Breaking the Siege",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38378,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [24865] = {
+        name = "Is This Stuff Still Good?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 161526,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24866] = {
+        name = "An Abandoned Research Camp",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 161521,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24905] = {
+        name = "Returning a Favor",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38706,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24906] = {
+        name = "Seaside Salvage",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38534,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [24907] = {
+        name = "Puddle Stomping",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38534,
+            locations = {
+                [71] = {
+                    x = 0.51237434148788,
+                    y = 0.29972106218338,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24910] = {
+        name = "Rocket Rescue",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38534,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [24911] = {
+        name = "Tropical Paradise Beckons",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38578,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24913] = {
+        name = "Remember the Light",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 350,
+            },
+        },
+    },
+    [24921] = {
+        name = "Report to Aubrey",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 700, 700, 800, 800, 900, 900, 1000, 1000, 1100, 1100, 1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 75,
+            },
+        },
+    },
+    [24926] = {
+        name = "Serving A-Me 01",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24927] = {
+        name = "Dead Man's Chest",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38703,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24928] = {
+        name = "To The Ground!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38703,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [24931] = {
+        name = "Gazer Tag",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24932] = {
+        name = "Cutting Losses",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38706,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 250,
+            },
+        },
+    },
+    [24933] = {
+        name = "Chicken of the Desert",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38706,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 250,
+            },
+        },
+    },
+    [24934] = {
+        name = "Repel Boarders!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38619,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [24938] = {
+        name = "The Guns of Northwatch",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38619,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1700, 1800, 1900, 2100, 2200, 2500, 2500, 2500, 2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 75,
+            },
+        },
+    },
+    [24939] = {
+        name = "Run Out the Guns",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3454,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [24941] = {
+        name = "Langridge Shot",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38620,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [24943] = {
+        name = "Re-Take the Courtyard",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38620,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [24944] = {
+        name = "Back in the Fight",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38804,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [24947] = {
+        name = "Momentum",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38534,
+        },
+    },
+    [24948] = {
+        name = "Lifting the Siege",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38620,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [24949] = {
+        name = "Booty Duty",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38703,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [24950] = {
+        name = "Captain Dreadbeard",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38703,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [24951] = {
+        name = "A Great Idea",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38706,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 250,
+            },
+        },
+    },
+    [24953] = {
+        name = "Just Trying to Kill Some Bugs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38706,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 350,
+            },
+        },
+    },
+    [24955] = {
+        name = "Un-Chartered",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38849,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [24956] = {
+        name = "Silencing Rageroar",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38804,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 5000, 5000, 5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 350,
+            },
+        },
+    },
+    [24957] = {
+        name = "Get The Centipaarty Started",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38849,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [24963] = {
+        name = "Maul 'Em With Kindness",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38849,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25000] = {
+        name = "Teegan's People",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38621,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25001] = {
+        name = "Sandscraper",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38849,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25002] = {
+        name = "Scavenged",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38878,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25008] = {
+        name = "Filthy Animals",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38873,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25014] = {
+        name = "Sandscraper's Treasure",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 202407,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25015] = {
+        name = "Make 'em Squeal",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38871,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25017] = {
+        name = "Ancient Obstacles",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38922,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25018] = {
+        name = "Andoren Will Know",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38849,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25019] = {
+        name = "Laying Claim",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38922,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25020] = {
+        name = "Fragments of Language",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38922,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25021] = {
+        name = "Blood to Thrive",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38927,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25022] = {
+        name = "A Failure to Communicate",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38871,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25025] = {
+        name = "Sang'thraze the Deflector",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38927,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25026] = {
+        name = "Darkest Mojo",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38927,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25027] = {
+        name = "You Flicked a Fine Vine to Leaf Me",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38871,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 350,
+            },
+        },
+    },
+    [25028] = {
+        name = "Trouble From the Ground Up",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38876,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 250,
+            },
+        },
+    },
+    [25032] = {
+        name = "Secrets in the Oasis",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38927,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25034] = {
+        name = "To the Front!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38871,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 75,
+            },
+        },
+    },
+    [25036] = {
+        name = "Teegan's Troubles",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38620,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 150,
+            },
+        },
+    },
+    [25041] = {
+        name = "Lion's Pride",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39003,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25042] = {
+        name = "Marching On Our Stomachs",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39003,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25043] = {
+        name = "Fields of Blood",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38323,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25044] = {
+        name = "Diplomacy By Another Means",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38986,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 5000, 5000, 5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25045] = {
+        name = "A Line in the Dirt",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38323,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25048] = {
+        name = "Seaside Salvage",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38535,
+            locations = {
+                [71] = {
+                    x = 0.51209706068039,
+                    y = 0.29909718036652,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25049] = {
+        name = "Puddle Stomping",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38535,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25050] = {
+        name = "Rocket Rescue",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38535,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25051] = {
+        name = "Darkmist Extermination",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25052] = {
+        name = "Dead Man's Chest",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38704,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25053] = {
+        name = "To The Ground!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38704,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25054] = {
+        name = "Lootin' Plunder",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38704,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25057] = {
+        name = "Clap 'Em In Irons",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38323,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25059] = {
+        name = "The Taurajo Briefs",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38986,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25060] = {
+        name = "Define \"Crazy\"",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39059,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25061] = {
+        name = "Land's End",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25062] = {
+        name = "What We Came For",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39059,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25063] = {
+        name = "Terrapination",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39059,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25065] = {
+        name = "You Too, Brute?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39059,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25067] = {
+        name = "Thunderdrome: The Ginormus!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25068] = {
+        name = "The Crumbling Past",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38922,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25069] = {
+        name = "The Secrets of Uldum",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38922,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25070] = {
+        name = "What Lies Within",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 202474,
+        },
+    },
+    [25072] = {
+        name = "A Few Good Goblins",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38706,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 250,
+            },
+        },
+    },
+    [25074] = {
+        name = "Meet Me at Triumph",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38323,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 75,
+            },
+        },
+    },
+    [25075] = {
+        name = "Pick-a-Part",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39084,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25079] = {
+        name = "Powder Play",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39084,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25080] = {
+        name = "Batteries Not Yet Included",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39084,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25081] = {
+        name = "Claim the Battlescar",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39083,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 5000, 5000, 5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 350,
+            },
+        },
+    },
+    [25082] = {
+        name = "Working the Bugs Out",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39085,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [25084] = {
+        name = "A Growing Threat",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37835,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25085] = {
+        name = "Mangletooth",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37835,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25087] = {
+        name = "Report to Twinbraid",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39083,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 75,
+            },
+        },
+    },
+    [25091] = {
+        name = "Sandsorrow Watch",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39178,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25094] = {
+        name = "Thunderdrome: Zumonga!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25095] = {
+        name = "Thunderdrome: Sarinexx!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25102] = {
+        name = "No Bull",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39154,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25103] = {
+        name = "Bootlegger Outpost",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38703,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25104] = {
+        name = "Digsite Status",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39118,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 75,
+            },
+        },
+    },
+    [25106] = {
+        name = "Hands Off Me Dig!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39155,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25107] = {
+        name = "The Grand Tablet",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 202474,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25108] = {
+        name = "Feegly the Exiled",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39155,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25111] = {
+        name = "Scavengers Scavenged",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39178,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [25112] = {
+        name = "Butcherbot",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39178,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [25115] = {
+        name = "Blisterpaw Butchery",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39178,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
     [25118] = {
         name = "Looking for Lurkers",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7468,9 +13663,349 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25120] = {
+        name = "Marley's Final Flight",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39155,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 10,
+            },
+        },
+    },
+    [25121] = {
+        name = "Momentum",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38535,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 75,
+            },
+        },
+    },
+    [25151] = {
+        name = "He Needs Ale!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39188,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25153] = {
+        name = "Bael'dun Rescue",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39218,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 350,
+            },
+        },
+    },
+    [25163] = {
+        name = "Who Did This?",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39220,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 25,
+            },
+        },
+    },
+    [25166] = {
+        name = "Captain Dreadbeard",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38704,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25174] = {
+        name = "Twinbraid Needs to Know",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38152,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 75,
+            },
+        },
+    },
+    [25175] = {
+        name = "The Bad News",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39188,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1700, 1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 75,
+            },
+        },
+    },
+    [25182] = {
+        name = "Kill 'em All!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39118,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25183] = {
+        name = "...And Bury the Rest",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39118,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 47,
+                amount = 350,
+            },
+        },
+    },
+    [25185] = {
+        name = "The Deed Is Done",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 202598,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 5000, 5000, 5500, 6000, 6500, 6500, 7000, 7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 75,
+            },
+        },
+    },
+    [25186] = {
+        name = "Futile Resistance",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38380,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 350,
+            },
+        },
+    },
+    [25191] = {
+        name = "Survey the Destruction",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38383,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1400, 1500, 1700, 1800, 1900, 2100, 2200, 2500, 2500, 2500, 2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 75,
+            },
+        },
+    },
+    [25197] = {
+        name = "The Admiral Won't Back Down",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39322,
+        },
+    },
+    [25208] = {
+        name = "Tell Silvia",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40052,
+        },
+    },
+    [25209] = {
+        name = "The Gordunni Threat",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39656,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25210] = {
+        name = "Signs of Change",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39377,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
     [25211] = {
         name = "Cleaning Hovel",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -7489,9 +14024,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25230] = {
+        name = "More Than Illness",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39377,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
     [25235] = {
         name = "Vulgar Vul'Gol",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -7510,9 +14068,104 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25237] = {
+        name = "Tears of Stone",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39377,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25241] = {
+        name = "The Land, Corrupted",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39377,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25250] = {
+        name = "Sealing the Dream",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39377,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25252] = {
+        name = "Rulers of Dire Maul",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39656,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
     [25275] = {
         name = "Report to the Labor Captain",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7528,9 +14181,791 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25284] = {
+        name = "Feeding the Fear",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 37153,
+            locations = {
+                [199] = {
+                    x = 0.37656009197235,
+                    y = 0.16637435555458,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2200, 2500, 2500, 2500, 3000, 3000, 3500, 3500, 3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25292] = {
+        name = "Next of Kin",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 75,
+            },
+        },
+    },
+    [25304] = {
+        name = "The Battle of Sardor",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3936,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25305] = {
+        name = "Never Look Back",
+        requiredLevel = 35,
+        maxLevel = 60,
+    },
+    [25329] = {
+        name = "Might of the Stonemaul",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39656,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+        },
+    },
+    [25333] = {
+        name = "Might of the Sentinels",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39653,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 350,
+            },
+        },
+    },
+    [25336] = {
+        name = "Testing the Vessel",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39894,
+            locations = {
+                [69] = {
+                    x = 0.52254247665405,
+                    y = 0.48028743267059,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [25337] = {
+        name = "Hippogryph Muisek",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39894,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [25338] = {
+        name = "Treant Muisek",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 8115,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [25339] = {
+        name = "Vengeance on the Northspring",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7776,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 150,
+            },
+        },
+    },
+    [25340] = {
+        name = "Dark Heart",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7776,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [25341] = {
+        name = "The Gordunni Orb",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39656,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25342] = {
+        name = "Talk to Swar'jan",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39656,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25344] = {
+        name = "Ogre Abduction",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39840,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25345] = {
+        name = "Faerie Dragon Muisek",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 8115,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [25346] = {
+        name = "Mountain Giant Muisek",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 8115,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [25349] = {
+        name = "Twisted Sisters",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39847,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25350] = {
+        name = "The Lost Apprentice",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40132,
+        },
+    },
+    [25356] = {
+        name = "To the Summit",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39893,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 25,
+            },
+        },
+    },
+    [25361] = {
+        name = "A New Cloak's Sheen",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4544,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25362] = {
+        name = "A Grim Discovery",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4544,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25363] = {
+        name = "War on the Woodpaw",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7875,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 150,
+            },
+        },
+    },
+    [25364] = {
+        name = "Alpha Strike",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7875,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 150,
+            },
+        },
+    },
+    [25365] = {
+        name = "Woodpaw Investigation",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7875,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 75,
+            },
+        },
+    },
+    [25366] = {
+        name = "The Battle Plans",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 142195,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25367] = {
+        name = "Zukk'ash Infestation",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7875,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 67,
+                amount = 250,
+            },
+        },
+    },
+    [25368] = {
+        name = "Verinias the Twisted",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40131,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25369] = {
+        name = "Stinglasher",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7875,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 67,
+                amount = 350,
+            },
+        },
+    },
+    [25373] = {
+        name = "The Hilltop Threat",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39847,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 150,
+            },
+        },
+    },
+    [25374] = {
+        name = "Sasquatch Sighting",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39847,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [25375] = {
+        name = "Taming The Tamers",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39847,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 150,
+            },
+        },
+    },
+    [25378] = {
+        name = "Ysondre's Call",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39847,
+        },
+    },
+    [25379] = {
+        name = "Taerar's Fall",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39407,
+        },
+    },
+    [25383] = {
+        name = "Ysondre's Farewell",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39407,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [25386] = {
+        name = "To Stonemaul Hold",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39377,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 75,
+            },
+        },
+    },
+    [25387] = {
+        name = "To Camp Mojache",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39656,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 150,
+            },
+        },
+    },
+    [25391] = {
+        name = "Weapons of Spirit",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 8115,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [25394] = {
+        name = "More Than Illness",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40032,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
     [25395] = {
         name = "The Stolen Keg",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -7549,15 +14984,1670 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25396] = {
+        name = "Tears of Stone",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40032,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25397] = {
+        name = "The Land, Corrupted",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40032,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25398] = {
+        name = "Sealing the Dream",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40032,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [25399] = {
+        name = "Hatecrest Forces",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39723,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25400] = {
+        name = "The Gordunni Threat",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39653,
+            locations = {
+                [69] = {
+                    x = 0.56901729106903,
+                    y = 0.54956805706024,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25401] = {
+        name = "The Gordunni Orb",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39653,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [25402] = {
+        name = "Estulan's Examination",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39653,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25403] = {
+        name = "Ogre Abduction",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40052,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25406] = {
+        name = "Gordok Guards",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39653,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25407] = {
+        name = "Forces of Nature: Wisps",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40078,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25409] = {
+        name = "Forces of Nature: Hippogryphs",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40078,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25410] = {
+        name = "Forces of Nature: Treants",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40078,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25420] = {
+        name = "Ancient Obstacles",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40109,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25421] = {
+        name = "The Grand Tablet",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 202474,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 350,
+            },
+        },
+    },
+    [25422] = {
+        name = "The Darkmist Legacy",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40131,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25423] = {
+        name = "Ancient Suffering",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40131,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25426] = {
+        name = "War on the Woodpaw",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25427] = {
+        name = "Alpha Strike",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 150,
+            },
+        },
+    },
+    [25429] = {
+        name = "Zukk'ash Infestation",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25431] = {
+        name = "Stinglasher",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [25432] = {
+        name = "It's Not \"Ogre\" Yet",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 150,
+            },
+        },
+    },
+    [25433] = {
+        name = "Sasquatch Sighting",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [25434] = {
+        name = "Taming The Tamers",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25436] = {
+        name = "Spiteful Sisters",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25437] = {
+        name = "Ysondre's Call",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39725,
+        },
+    },
+    [25438] = {
+        name = "Ysondre's Farewell",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39407,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [25447] = {
+        name = "Signs of Change",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40032,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25448] = {
+        name = "The Northspring Menace",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40035,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 150,
+            },
+        },
+    },
+    [25449] = {
+        name = "The Mark of Quality",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40226,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25450] = {
+        name = "Improved Quality",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40226,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25451] = {
+        name = "Pristine Yeti Hide",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25452] = {
+        name = "The Mark of Quality",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7854,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25453] = {
+        name = "Improved Quality",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7854,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25454] = {
+        name = "Perfect Yeti Hide",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25458] = {
+        name = "General Skessesh",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39723,
+            locations = {
+                [69] = {
+                    x = 0.32613956928253,
+                    y = 0.45654636621475,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [25463] = {
+        name = "Report to Silvia",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3936,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    900, 1000, 1000, 1100, 1100, 1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25465] = {
+        name = "Still With The Zapped Giants",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14637,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 350,
+            },
+        },
+    },
+    [25466] = {
+        name = "Even More Fuel for the Zapping",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14637,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 350,
+            },
+        },
+    },
+    [25468] = {
+        name = "Forces of Nature: Faerie Dragons",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40913,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25469] = {
+        name = "Forces of Nature: Mountain Giants",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40913,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    11000, 11500, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25478] = {
+        name = "To the Summit",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40344,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 25,
+            },
+        },
+    },
+    [25479] = {
+        name = "To New Thalanaar",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40345,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 69,
+                amount = 25,
+            },
+        },
+    },
+    [25481] = {
+        name = "To New Thalanaar",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40369,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 69,
+                amount = 25,
+            },
+        },
+    },
+    [25486] = {
+        name = "The Grimtotem are Coming",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39946,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25487] = {
+        name = "The Grimtotem are Coming",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39895,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25488] = {
+        name = "Two If By Boat",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39992,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 54,
+                amount = 25,
+            },
+        },
+    },
+    [25489] = {
+        name = "Two If By Boat",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39963,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 25,
+            },
+        },
+    },
+    [25504] = {
+        name = "Do Me a Favor?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40027,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 54,
+                amount = 25,
+            },
+        },
+    },
+    [25505] = {
+        name = "Do Me a Favor?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40028,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 25,
+            },
+        },
+    },
+    [25513] = {
+        name = "Thunderdrome: Grudge Match!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25515] = {
+        name = "Down in the Deeps",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40475,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25516] = {
+        name = "Down in the Deeps",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40487,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25517] = {
+        name = "Bar Fight!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40554,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25518] = {
+        name = "Bar Fight!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40556,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25521] = {
+        name = "I'm With Scorpid",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40580,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [25522] = {
+        name = "Gargantapid",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40580,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [25524] = {
+        name = "In the Outhouse",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 202975,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25526] = {
+        name = "In the Outhouse",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 202975,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25532] = {
+        name = "Pirate Accuracy Increasing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40475,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25533] = {
+        name = "Pirate Accuracy Increasing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40487,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25534] = {
+        name = "Going Off-Task",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38703,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25541] = {
+        name = "Filling Our Pockets",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38703,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25542] = {
+        name = "Circle the Wagons... er, Boats",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25543] = {
+        name = "Circle the Wagons... er, Boats",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25559] = {
+        name = "Laying Claim",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40109,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25565] = {
+        name = "Fragments of Language",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40109,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [25566] = {
+        name = "The Secrets of Uldum",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40109,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25585] = {
+        name = "Quiet the Cannons",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40475,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25586] = {
+        name = "Quiet the Cannons",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40487,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25588] = {
+        name = "A Little Payback",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40591,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25589] = {
+        name = "A Little Payback",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40595,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25590] = {
+        name = "Where's Wizzle?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40554,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25591] = {
+        name = "Thunderdrome: Grudge Match!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39034,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25596] = {
+        name = "Where's Synge?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40556,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
     [25607] = {
         name = "Ze Gnomecorder",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40895,
-            name = "Professor Xakxak Gyromate",
         },
         rewards = {
             {
@@ -7580,15 +16670,61 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25609] = {
+        name = "Sunken Treasure",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40885,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25610] = {
+        name = "Sunken Treasure",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40888,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
     [25613] = {
         name = "Do Yourself a Favor",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40894,
-            name = "Gnombus the X-Terminator",
         },
         rewards = {
             {
@@ -7605,13 +16741,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25614] = {
         name = "The Only Way Down is in a Body Bag",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 39256,
-            name = "Kalen Trueshot",
         },
         rewards = {
             {
@@ -7628,13 +16762,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25615] = {
         name = "Return to Stardust",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 39256,
-            name = "Kalen Trueshot",
         },
         rewards = {
             {
@@ -7651,13 +16783,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25616] = {
         name = "Hellscream's Legacy",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34354,
-            name = "Huntress Jalin",
         },
         rewards = {
             {
@@ -7674,13 +16804,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25621] = {
         name = "Field Test: Gnomecorder",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40895,
-            name = "Professor Xakxak Gyromate",
         },
         rewards = {
             {
@@ -7697,7 +16825,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25622] = {
         name = "Burn, Baby, Burn!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -7710,12 +16837,59 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 69,
                 amount = 250,
+            },
+        },
+    },
+    [25627] = {
+        name = "Two-Tusk Takedown",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40885,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 350,
+            },
+        },
+    },
+    [25628] = {
+        name = "Two-Tusk Takedown",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40888,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 350,
             },
         },
     },
     [25640] = {
         name = "Bombs Away: Windshear Mine!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -7731,15 +16905,37 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25641] = {
+        name = "The Flow of Muisek",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39894,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 75,
+            },
+        },
+    },
     [25642] = {
         name = "Don't Look Them in the Eyes",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40879,
-            name = "Boog the \"Gear Whisperer\"",
         },
         rewards = {
             {
@@ -7750,19 +16946,50 @@ BtWQuestsDatabase:AddQuestsTable({
             {
                 type = "reputation",
                 id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25643] = {
+        name = "The Darkmist Ruins",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5390,
+        },
+    },
+    [25645] = {
+        name = "Return to Sage Palerunner",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 203134,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
                 amount = 250,
             },
         },
     },
     [25646] = {
         name = "Windshear Mine Cleanup",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40973,
-            name = "Sentinel Heliana",
         },
         rewards = {
             {
@@ -7779,13 +17006,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25647] = {
         name = "Illegible Orc Letter",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40904,
-            name = "Krom'gar Peon",
         },
         rewards = {
             {
@@ -7802,7 +17027,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25648] = {
         name = "Beyond Durotar",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -7823,13 +17047,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25649] = {
         name = "Minx'll Fix It",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40879,
-            name = "Boog the \"Gear Whisperer\"",
         },
         rewards = {
             {
@@ -7846,13 +17068,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25650] = {
         name = "Orders from High Command",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40881,
-            name = "Minx",
         },
         rewards = {
             {
@@ -7869,13 +17089,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25652] = {
         name = "Commandeer That Balloon!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40879,
-            name = "Boog the \"Gear Whisperer\"",
         },
         rewards = {
             {
@@ -7898,15 +17116,65 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25654] = {
+        name = "Dark Heart",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40035,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [25660] = {
+        name = "Haunted",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41058,
+        },
+    },
+    [25661] = {
+        name = "With a Little Help...",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41060,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [25662] = {
         name = "Free Our Sisters",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40896,
-            name = "Lord Fallowmere",
         },
         rewards = {
             {
@@ -7926,13 +17194,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25669] = {
         name = "Rumble in the Lumber... Mill",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41071,
-            name = "Huntress Illiona",
         },
         rewards = {
             {
@@ -7944,7 +17210,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25671] = {
         name = "Thinning the Horde",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -7963,15 +17228,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25672] = {
+        name = "Carcass Collection",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41060,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [25673] = {
         name = "Just Ask Alice",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40908,
-            name = "Alice",
         },
         rewards = {
             {
@@ -7981,11 +17263,1163 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25674] = {
+        name = "Futile Pride",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41124,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25675] = {
+        name = "Ogre Combat",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41125,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25676] = {
+        name = "Heartstrike",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41124,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 75,
+            },
+        },
+    },
+    [25677] = {
+        name = "It's All Mine",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41133,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25678] = {
+        name = "Pick Your Fate",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41133,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25679] = {
+        name = "Into the Mountain",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41133,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 25,
+            },
+        },
+    },
+    [25680] = {
+        name = "That's Not Us",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41134,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 250,
+            },
+        },
+    },
+    [25681] = {
+        name = "Some People Just Need Killing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41134,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+            {
+                type = "reputation",
+                id = 530,
+                amount = 350,
+            },
+        },
+    },
+    [25682] = {
+        name = "Mission Complete",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41134,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+        },
+    },
+    [25683] = {
+        name = "The Dreadmaul Furnace",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41124,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [25684] = {
+        name = "Attune the Bloodstone",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7506,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 25,
+            },
+        },
+    },
+    [25685] = {
+        name = "The First Step",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7506,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [25686] = {
+        name = "Blood Ritual",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7506,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 25,
+            },
+        },
+    },
+    [25687] = {
+        name = "Not Just Any Body",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7506,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [25688] = {
+        name = "The Altar of Storms",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7506,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 500,
+            },
+        },
+    },
+    [25689] = {
+        name = "Time is Short",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7783,
+            locations = {
+                [17] = {
+                    {
+                        x = 0.39362,
+                        y = 0.35784,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 25,
+            },
+        },
+    },
+    [25690] = {
+        name = "A Bloodmage's Gotta Eat Too",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7505,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [25691] = {
+        name = "The Charred Granite of the Dark Portal",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41159,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25692] = {
+        name = "The Vile Blood of Demons",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41159,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25693] = {
+        name = "Enhancing the Stone",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41159,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 75,
+            },
+        },
+    },
+    [25694] = {
+        name = "Protecting Our Rear",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 19254,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+        },
+    },
+    [25695] = {
+        name = "Watching Our Back",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 19254,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [25696] = {
+        name = "The Sunveil Excursion",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 19254,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 75,
+            },
+        },
+    },
+    [25697] = {
+        name = "The Amulet of Allistarj",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7783,
+            locations = {
+                [17] = {
+                    {
+                        x = 0.393626,
+                        y = 0.357759,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [25698] = {
+        name = "The Amulet of Sevine",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7783,
+            locations = {
+                [17] = {
+                    {
+                        x = 0.393626,
+                        y = 0.357759,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [25699] = {
+        name = "The Amulet of Grol",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7783,
+            locations = {
+                [17] = {
+                    {
+                        x = 0.393626,
+                        y = 0.357759,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [25700] = {
+        name = "Loramus Thalipedes Awaits",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7506,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25701] = {
+        name = "You Are Rakh'likh, Demon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7783,
+            locations = {
+                [17] = {
+                    {
+                        x = 0.393595,
+                        y = 0.357785,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    20000, 21300, 22700, 24000, 25300, 26000, 26700, 27300, 28000, 28000, 29300, 30000, 30700, 32000, 32700, 33300, 34000, 34700, 35300, 35300, 36000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 67,
+                amount = 1000,
+            },
+        },
+    },
+    [25702] = {
+        name = "Home... Gone... Naga...",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41265,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25703] = {
+        name = "Atrocities",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41354,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25704] = {
+        name = "The Mad Magus",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41060,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25705] = {
+        name = "False Idols",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41354,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25706] = {
+        name = "Neptool's Revenge",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41354,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25707] = {
+        name = "The Future of the Rockpool",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25708] = {
+        name = "Our Fallen Friends",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9540,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 350,
+            },
+        },
+    },
+    [25709] = {
+        name = "Curtail the Darktail",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9540,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 250,
+            },
+        },
+    },
+    [25710] = {
+        name = "Minor Distractions",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 150,
+            },
+        },
+    },
+    [25711] = {
+        name = "Eliminate the Okril'lon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 350,
+            },
+        },
+    },
+    [25712] = {
+        name = "Nethergarde Reigns",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42262,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 250,
+            },
+        },
+    },
+    [25713] = {
+        name = "Remove Their Arms",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42264,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 250,
+            },
+        },
+    },
+    [25714] = {
+        name = "Watcher Mahar Ba",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9540,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 10,
+            },
+        },
+    },
+    [25715] = {
+        name = "A Closer Look",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9540,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 250,
+            },
+        },
+    },
+    [25716] = {
+        name = "Cultists at our Doorstep",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5385,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 250,
+            },
+        },
+    },
+    [25717] = {
+        name = "The Demons and the Druid",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42344,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 350,
+            },
+        },
+    },
+    [25718] = {
+        name = "How Best to Proceed",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42344,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 10,
+            },
+        },
+    },
+    [25719] = {
+        name = "Demoniac Vessel",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42348,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 350,
+            },
+        },
+    },
+    [25720] = {
+        name = "The Downfall of Marl Wormthorn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42344,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 500,
+            },
+        },
+    },
     [25721] = {
         name = "Fight the Flood",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            locations = {
+                [241] = {
+                    x = 0.062703639268875,
+                    y = 0.56045120954514,
+                },
+            },
+        },
         rewards = {
             {
                 type = "money",
@@ -8004,7 +18438,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25722] = {
         name = "Sedimentary, My Dear",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8025,7 +18458,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25723] = {
         name = "Thresh Out of Luck",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8046,7 +18478,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25725] = {
         name = "Fenbush Berries",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8067,7 +18498,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25726] = {
         name = "A Dumpy Job",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8088,7 +18518,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25727] = {
         name = "Drungeld Glowerglare",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8109,13 +18538,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25728] = {
         name = "Mr. P's Wild Ride",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40908,
-            name = "Alice",
         },
         rewards = {
             {
@@ -8135,7 +18562,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25729] = {
         name = "Gerenzo the Traitor",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8156,7 +18582,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25730] = {
         name = "BEWARE OF CRAGJAW!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8177,7 +18602,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25733] = {
         name = "Get Out Of Here, Stalkers",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8198,7 +18622,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25734] = {
         name = "Down In Thelgen Rock",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8219,7 +18642,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25735] = {
         name = "Incendicite Ore",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8240,7 +18662,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25736] = {
         name = "The Floodsurge Core",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8261,13 +18682,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25739] = {
         name = "If the Horde Don't Get You...",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40897,
-            name = "Northwatch Captain Kosak",
         },
         rewards = {
             {
@@ -8284,13 +18703,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25741] = {
         name = "Preparations for the Future",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40898,
-            name = "Alithia Fallowmere",
         },
         rewards = {
             {
@@ -8308,15 +18725,112 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25744] = {
+        name = "Negotiations",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40027,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 54,
+                amount = 25,
+            },
+        },
+    },
+    [25745] = {
+        name = "Negotiations",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40028,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 25,
+            },
+        },
+    },
+    [25756] = {
+        name = "Get Zherin!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41190,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25757] = {
+        name = "Get Koalbeard!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41184,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25762] = {
+        name = "The Ancient Brazier",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40082,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [25765] = {
         name = "Tell 'Em Koko Sent You",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40897,
-            name = "Northwatch Captain Kosak",
         },
         rewards = {
             {
@@ -8328,13 +18842,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25766] = {
         name = "Arcane Legacy",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40899,
-            name = "Arcanist Valdurian",
         },
         rewards = {
             {
@@ -8346,13 +18858,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25767] = {
         name = "Capturing Memories",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40900,
-            name = "Neophyte Starcrest",
         },
         rewards = {
             {
@@ -8372,13 +18882,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25768] = {
         name = "Bombs Away: Mirkfallon Post!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40896,
-            name = "Lord Fallowmere",
         },
         rewards = {
             {
@@ -8390,13 +18898,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25769] = {
         name = "Fallowmere Beckons",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40899,
-            name = "Arcanist Valdurian",
         },
         rewards = {
             {
@@ -8408,7 +18914,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25770] = {
         name = "Keg Run",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8424,12 +18929,64 @@ BtWQuestsDatabase:AddQuestsTable({
                 type = "reputation",
                 id = 47,
                 amount = 75,
+            },
+        },
+    },
+    [25772] = {
+        name = "Kum'isha's Endeavors",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [25774] = {
+        name = "Fool's Gold",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41190,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25775] = {
+        name = "Fool's Gold",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41184,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
             },
         },
     },
     [25777] = {
         name = "Onwards to Menethil",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8448,9 +19005,46 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25778] = {
+        name = "Fake Gold for Black Gold",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41190,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [25779] = {
+        name = "Fake Gold for Black Gold",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41184,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [25780] = {
         name = "Assault on Menethil Keep",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8469,15 +19063,61 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25790] = {
+        name = "Back to Crazzle",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41204,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25791] = {
+        name = "Back to Riznek",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41205,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
     [25793] = {
         name = "The Deep Reaches",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41229,
-            name = "Force Commander Valen",
         },
         rewards = {
             {
@@ -8487,9 +19127,104 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25796] = {
+        name = "Eminent Domain",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41190,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25797] = {
+        name = "Eminent Domain",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41184,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [25798] = {
+        name = "Defend the Drill",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41190,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [25799] = {
+        name = "Defend the Drill",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41184,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
     [25800] = {
         name = "When Life Gives You Crabs",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8510,7 +19245,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25801] = {
         name = "Claws from the Deep",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8531,7 +19265,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25802] = {
         name = "Reclaiming Goods",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8552,7 +19285,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25803] = {
         name = "The Search Continues",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8573,7 +19305,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25804] = {
         name = "Search More Hovels",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8594,7 +19325,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25805] = {
         name = "Return the Statuette",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8615,13 +19345,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25806] = {
         name = "They Put the Assass in... Never Mind",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41277,
-            name = "Lieutenant Paulson",
         },
         rewards = {
             {
@@ -8633,7 +19361,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25808] = {
         name = "Is This Thing On?",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8646,13 +19373,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25809] = {
         name = "Leave No Man Behind!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41282,
-            name = "Corporal Wocard",
         },
         rewards = {
             {
@@ -8672,13 +19397,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25811] = {
         name = "Shuttin Her Down",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41276,
-            name = "Steeltoe McGee",
         },
         rewards = {
             {
@@ -8688,9 +19411,56 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25813] = {
+        name = "Go Blow that Horn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41190,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 350,
+            },
+        },
+    },
+    [25814] = {
+        name = "Go Blow that Horn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41184,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 350,
+            },
+        },
+    },
     [25815] = {
         name = "The Third Fleet",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8706,13 +19476,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25816] = {
         name = "Cursed to Roam",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [25817] = {
         name = "The Cursed Crew",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8733,7 +19501,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25818] = {
         name = "Lifting the Curse",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8746,7 +19513,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25819] = {
         name = "The Eye of Paleth",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8767,7 +19533,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25820] = {
         name = "A Mother's Worries",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -8783,13 +19548,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25821] = {
         name = "A Special Kind of Job",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41277,
-            name = "Lieutenant Paulson",
         },
         rewards = {
             {
@@ -8801,13 +19564,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25822] = {
         name = "Armaments for War",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41229,
-            name = "Force Commander Valen",
         },
         rewards = {
             {
@@ -8827,13 +19588,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25823] = {
         name = "The Unrelenting Horde",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41229,
-            name = "Force Commander Valen",
         },
         rewards = {
             {
@@ -8851,15 +19610,45 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25825] = {
+        name = "Deliver the Goods",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41190,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 54,
+                amount = 25,
+            },
+        },
+    },
+    [25826] = {
+        name = "Deliver the Goods",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41184,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 25,
+            },
+        },
+    },
     [25834] = {
         name = "Death by Proxy",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41229,
-            name = "Force Commander Valen",
         },
         rewards = {
             {
@@ -8869,15 +19658,45 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25835] = {
+        name = "Free Freewind Post",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40027,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 69,
+                amount = 25,
+            },
+        },
+    },
+    [25836] = {
+        name = "Free Freewind Post",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40028,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 25,
+            },
+        },
+    },
     [25837] = {
         name = "A Proper Peace Offerin'",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41278,
-            name = "\"Cookie\" McWeaksauce",
         },
         rewards = {
             {
@@ -8889,13 +19708,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25844] = {
         name = "Sating the Savage Beast",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41278,
-            name = "\"Cookie\" McWeaksauce",
         },
         rewards = {
             {
@@ -8907,13 +19724,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25845] = {
         name = "Terms of Service",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41350,
-            name = "Ton Windbow",
         },
         rewards = {
             {
@@ -8925,13 +19740,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25846] = {
         name = "Grundig Darkcloud, Chieftain of the Grimtotem",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41229,
-            name = "Force Commander Valen",
         },
         rewards = {
             {
@@ -8943,13 +19756,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25847] = {
         name = "Grimtotem Supremacy",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 11858,
-            name = "Grundig Darkcloud",
         },
         rewards = {
             {
@@ -8964,13 +19775,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25848] = {
         name = "Downfall",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 11858,
-            name = "Grundig Darkcloud",
         },
         rewards = {
             {
@@ -8985,7 +19794,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25849] = {
         name = "When Archaeology Attacks",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9006,7 +19814,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25850] = {
         name = "Strike the Earth!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9027,13 +19834,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25851] = {
         name = "Dances with Grimtotem",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 11858,
-            name = "Grundig Darkcloud",
         },
         rewards = {
             {
@@ -9043,9 +19848,24 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25852] = {
+        name = "All's Clear",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41229,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 10,
+            },
+        },
+    },
     [25853] = {
         name = "Tooling Around",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9066,7 +19886,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25854] = {
         name = "I'll Call Him Bitey",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9087,7 +19906,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25855] = {
         name = "Gizmos and Gadgets",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9108,7 +19926,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25856] = {
         name = "Crocolisk Hides",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9129,7 +19946,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25857] = {
         name = "Hunting Horrorjaw",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9150,7 +19966,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25864] = {
         name = "Dinosaur Crisis",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9171,7 +19986,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25865] = {
         name = "The Mosshide Job",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9192,7 +20006,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25866] = {
         name = "Dark Iron Trappers",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9213,7 +20026,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25867] = {
         name = "Gnoll Escape",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9234,7 +20046,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25868] = {
         name = "Yorla Darksnare",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9253,15 +20064,157 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25869] = {
+        name = "Grimtotem in the Post",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41392,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25870] = {
+        name = "Grimtotem in the Post",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41446,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25871] = {
+        name = "Save the Sentinel",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41444,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [25872] = {
+        name = "The Brave and the Bold",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41421,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [25873] = {
+        name = "Horn of the Traitor",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45271,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [25874] = {
+        name = "Horn of the Traitor",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45271,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
     [25875] = {
         name = "Gnome on the Inside",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41233,
-            name = "Scout Commander Barus",
         },
         rewards = {
             {
@@ -9273,13 +20226,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25876] = {
         name = "It's Up There!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41434,
-            name = "\"Goblin\" Pump Controller",
         },
         rewards = {
             {
@@ -9291,13 +20242,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25877] = {
         name = "No Time for Goodbyes!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41434,
-            name = "\"Goblin\" Pump Controller",
         },
         rewards = {
             {
@@ -9309,13 +20258,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25878] = {
         name = "Schemin' That Sabotage",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41441,
-            name = "Scout Mistress Yvonia",
         },
         rewards = {
             {
@@ -9340,13 +20287,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25879] = {
         name = "The Lumbering Oaf Problem",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41441,
-            name = "Scout Mistress Yvonia",
         },
         rewards = {
             {
@@ -9363,13 +20308,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25880] = {
         name = "Warn Master Thal'darah",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41233,
-            name = "Scout Commander Barus",
         },
         rewards = {
             {
@@ -9381,13 +20324,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25889] = {
         name = "Save the Children!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41482,
-            name = "Master Thal'darah",
         },
         rewards = {
             {
@@ -9399,13 +20340,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25891] = {
         name = "Last Ditch Effort",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41482,
-            name = "Master Thal'darah",
         },
         rewards = {
             {
@@ -9417,13 +20356,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25912] = {
         name = "Seen Better Days",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41486,
-            name = "Elder Sareth'na",
         },
         rewards = {
             {
@@ -9435,13 +20372,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25913] = {
         name = "Putting Them to Rest",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41488,
-            name = "Sentinel Mistress Geleneth",
         },
         rewards = {
             {
@@ -9461,13 +20396,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25914] = {
         name = "Back to the Depths!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41488,
-            name = "Sentinel Mistress Geleneth",
         },
         rewards = {
             {
@@ -9487,13 +20420,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25925] = {
         name = "Thal'darah's Vengeance",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41482,
-            name = "Master Thal'darah",
         },
         rewards = {
             {
@@ -9513,7 +20444,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25926] = {
         name = "Mired in Hatred",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9534,7 +20464,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25927] = {
         name = "The Threat of Flame",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9555,13 +20484,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25930] = {
         name = "Ascending the Vale",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41487,
-            name = "Hierophant Malyk",
         },
         rewards = {
             {
@@ -9573,7 +20500,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25931] = {
         name = "Brood of Seldarria",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9586,13 +20512,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25934] = {
         name = "World First: Gnomegen",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41664,
-            name = "Salsbury the \"Help\"",
         },
         rewards = {
             {
@@ -9617,13 +20541,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25935] = {
         name = "Hungry Pups",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41638,
-            name = "Houndmaster Jonathan",
         },
         rewards = {
             {
@@ -9641,9 +20563,29 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [25938] = {
+        name = "Help for Desolace",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41487,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 25,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 25,
+            },
+        },
+    },
     [25939] = {
         name = "For Peat's Sake",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9664,13 +20606,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25945] = {
         name = "We're Here to Do One Thing, Maybe Two...",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41678,
-            name = "Blood Guard Aldo Rockrain",
         },
         rewards = {
             {
@@ -9682,13 +20622,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [25999] = {
         name = "Barrier to Entry",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34341,
-            name = "Saurboz",
         },
         rewards = {
             {
@@ -9700,13 +20638,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26001] = {
         name = "The Missing Blastgineer",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34341,
-            name = "Saurboz",
         },
         rewards = {
             {
@@ -9718,13 +20654,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26002] = {
         name = "Alliance Attack Plans",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40901,
-            name = "Blastgineer Fuzzwhistle",
         },
         rewards = {
             {
@@ -9736,13 +20670,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26003] = {
         name = "Lessons from the Lost Isles",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40926,
-            name = "Kilag Gorefang",
         },
         rewards = {
             {
@@ -9762,13 +20694,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26004] = {
         name = "Krom'gar Fortress",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34341,
-            name = "Saurboz",
         },
         rewards = {
             {
@@ -9788,7 +20718,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26009] = {
         name = "Seek and Destroy",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9809,13 +20738,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26010] = {
         name = "Ashes to Ashes",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41023,
-            name = "Overlord Krom'gar",
         },
         rewards = {
             {
@@ -9827,13 +20754,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26011] = {
         name = "Enemy of the Horde: Marshal Paltrow",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40903,
-            name = "Spy-Mistress Anara",
         },
         rewards = {
             {
@@ -9853,7 +20778,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26016] = {
         name = "Orders from Base Camp",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -9866,13 +20790,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26020] = {
         name = "Report to Bombgutz",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41023,
-            name = "Overlord Krom'gar",
         },
         rewards = {
             {
@@ -9884,7 +20806,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26022] = {
         name = "First Blood",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -9900,7 +20821,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26023] = {
         name = "The Forsaken Trollbane",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -9916,7 +20836,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26024] = {
         name = "Wanted!  Marez Cowl",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -9937,7 +20856,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26025] = {
         name = "The Traitor Orc",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -9953,13 +20871,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26026] = {
         name = "Dream of a Better Tomorrow",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40907,
-            name = "Clarissa",
         },
         rewards = {
             {
@@ -9971,7 +20887,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26027] = {
         name = "Call to Arms",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -9992,13 +20907,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26028] = {
         name = "Mr. D's Wild Ride",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40907,
-            name = "Clarissa",
         },
         rewards = {
             {
@@ -10018,7 +20931,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26029] = {
         name = "The Real Threat",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10039,7 +20951,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26030] = {
         name = "Sigil of Strom",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10060,7 +20971,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26031] = {
         name = "Sigil of Thoradin",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10081,7 +20991,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26032] = {
         name = "Sigil of Arathor",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10102,7 +21011,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26033] = {
         name = "Trol'kalar",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10115,7 +21023,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26035] = {
         name = "Worth Its Weight in Gold",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10136,7 +21043,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26036] = {
         name = "Wand over Fist",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10157,7 +21063,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26037] = {
         name = "Trelane's Defenses",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10178,7 +21083,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26038] = {
         name = "Attack on the Tower",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10199,7 +21103,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26039] = {
         name = "The Princess Trapped",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10215,7 +21118,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26041] = {
         name = "Stones of Binding",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10231,13 +21133,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26042] = {
         name = "Breaking the Keystone",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26043] = {
         name = "BEWARE OF CRAGJAW!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -10258,13 +21158,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26044] = {
         name = "Where Are the Parts?",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40902,
-            name = "Chief Blastgineer Bombgutz",
         },
         rewards = {
             {
@@ -10276,13 +21174,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26045] = {
         name = "I Got Your Parts Right Here...",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41991,
-            name = "Sergeant Dontrag",
         },
         rewards = {
             {
@@ -10302,13 +21198,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26046] = {
         name = "Between a Rock and a Hard Place",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41990,
-            name = "Scout Utvoch",
         },
         rewards = {
             {
@@ -10328,13 +21222,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26047] = {
         name = "And That's Why They Call Them Peons...",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41992,
-            name = "Blastgineer Igore",
         },
         rewards = {
             {
@@ -10354,13 +21246,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26048] = {
         name = "Spare Parts Up In Here!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41991,
-            name = "Sergeant Dontrag",
         },
         rewards = {
             {
@@ -10372,7 +21262,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26049] = {
         name = "The Princess Unleashed",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10388,7 +21277,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26050] = {
         name = "Goggle Boggle",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10409,7 +21297,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26051] = {
         name = "Sunken Treasure",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10430,7 +21317,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26052] = {
         name = "Speak to Shakes",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10443,7 +21329,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26053] = {
         name = "Clearing the Highlands",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10464,7 +21349,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26055] = {
         name = "Drowned Sorrows",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10485,13 +21369,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26058] = {
         name = "In Defense of Krom'gar Fortress",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 40902,
-            name = "Chief Blastgineer Bombgutz",
         },
         rewards = {
             {
@@ -10511,13 +21393,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26059] = {
         name = "Eyes and Ears: Malaka'jin",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41023,
-            name = "Overlord Krom'gar",
         },
         rewards = {
             {
@@ -10529,13 +21409,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26060] = {
         name = "Da Voodoo: Stormer Heart",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3995,
-            name = "Witch Doctor Jin'Zil",
         },
         rewards = {
             {
@@ -10555,13 +21433,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26061] = {
         name = "Da Voodoo: Ram Horns",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3995,
-            name = "Witch Doctor Jin'Zil",
         },
         rewards = {
             {
@@ -10581,13 +21457,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26062] = {
         name = "Da Voodoo: Resonite Crystal",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3995,
-            name = "Witch Doctor Jin'Zil",
         },
         rewards = {
             {
@@ -10607,13 +21481,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26063] = {
         name = "The Queen and Her Court",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 11821,
-            name = "Darn Talongrip",
         },
         rewards = {
             {
@@ -10633,13 +21505,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26064] = {
         name = "Fight On Their Stomachs",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3411,
-            name = "Denni'ka",
         },
         rewards = {
             {
@@ -10659,13 +21529,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26066] = {
         name = "Reinforcements...",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42023,
-            name = "Subjugator Devo",
         },
         rewards = {
             {
@@ -10685,13 +21553,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26067] = {
         name = "Jin'Zil's Blessing",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3995,
-            name = "Witch Doctor Jin'Zil",
         },
         rewards = {
             {
@@ -10711,13 +21577,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26068] = {
         name = "Kobold Fury!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42023,
-            name = "Subjugator Devo",
         },
         rewards = {
             {
@@ -10727,15 +21591,29 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26069] = {
+        name = "Nura Pathfinder",
+        requiredLevel = 25,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3995,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 10,
+            },
+        },
+    },
     [26073] = {
         name = "All's Quiet on the Southern Front",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3995,
-            name = "Witch Doctor Jin'Zil",
         },
         rewards = {
             {
@@ -10755,13 +21633,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26074] = {
         name = "Beginning of the End",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41023,
-            name = "Overlord Krom'gar",
         },
         rewards = {
             {
@@ -10773,13 +21649,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26075] = {
         name = "The Turd Problem",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42033,
-            name = "Jibbly Rakit",
         },
         rewards = {
             {
@@ -10799,13 +21673,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26076] = {
         name = "Spy Infestation",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42033,
-            name = "Jibbly Rakit",
         },
         rewards = {
             {
@@ -10825,13 +21697,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26077] = {
         name = "Final Delivery",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42033,
-            name = "Jibbly Rakit",
         },
         rewards = {
             {
@@ -10843,7 +21713,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26079] = {
         name = "Wanted!  Otto and Falconcrest",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10864,7 +21733,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26081] = {
         name = "Alina's Reward",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10885,13 +21753,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26082] = {
         name = "To Battlescar!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42050,
-            name = "General Grebo",
         },
         rewards = {
             {
@@ -10911,7 +21777,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26083] = {
         name = "Hello Lolo",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10927,7 +21792,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26084] = {
         name = "Hammerfall",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10948,7 +21812,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26093] = {
         name = "Northfold Manor",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10969,7 +21832,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26095] = {
         name = "Stromgarde Badges",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -10990,13 +21852,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26097] = {
         name = "Proof of Lies",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42039,
-            name = "High Chieftain Cliffwalker",
         },
         rewards = {
             {
@@ -11008,13 +21868,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26098] = {
         name = "Betrayal at the Grove",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42091,
-            name = "Orthus Cliffwalker",
         },
         rewards = {
             {
@@ -11026,13 +21884,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26099] = {
         name = "Is This Justice?",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42039,
-            name = "High Chieftain Cliffwalker",
         },
         rewards = {
             {
@@ -11044,13 +21900,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26100] = {
         name = "The General is Dead",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42047,
-            name = "Masha Cliffwalker",
         },
         rewards = {
             {
@@ -11062,13 +21916,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26101] = {
         name = "Might Makes Right",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 41023,
-            name = "Overlord Krom'gar",
         },
         rewards = {
             {
@@ -11080,7 +21932,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26107] = {
         name = "Raising Spirits",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11101,7 +21952,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26108] = {
         name = "Guile of the Raptor",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11122,7 +21972,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26110] = {
         name = "Just Like Old Times",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11143,7 +21992,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26113] = {
         name = "Quae and Kinelory",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11164,7 +22012,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26114] = {
         name = "Quae Trusts You",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11180,13 +22027,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26115] = {
         name = "To Be Horde...",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 42106,
-            name = "Overlord Krom'gar",
         },
         rewards = {
             {
@@ -11206,7 +22051,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26116] = {
         name = "Kinelory Strikes",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11227,7 +22071,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26117] = {
         name = "For Southshore",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11248,7 +22091,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26120] = {
         name = "The Crazed Dragonmaw",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -11269,7 +22111,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26127] = {
         name = "The Twilight's Hammer Revealed",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -11290,7 +22131,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26128] = {
         name = "The Battle of Thandol Span",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -11311,7 +22151,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26131] = {
         name = "Reinforcements for Loch Modan",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11335,9 +22174,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26134] = {
+        name = "Nothing Left for You Here",
+        requiredLevel = 30,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42039,
+            locations = {
+                [65] = {
+                    {
+                        x = 0.455273,
+                        y = 0.337155,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 75,
+            },
+        },
+    },
     [26137] = {
         name = "Checking on the Boys",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -11358,7 +22220,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26139] = {
         name = "Into Arathi",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11379,7 +22240,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26145] = {
         name = "The Trogg Threat",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11400,7 +22260,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26146] = {
         name = "In Defense of the King's Lands",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11421,7 +22280,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26147] = {
         name = "Bigger and Uglier",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11442,7 +22300,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26148] = {
         name = "A Decisive Strike",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11461,9 +22318,464 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26157] = {
+        name = "Kasim Sharim",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5385,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [26158] = {
+        name = "Attune the Bloodstone",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 25,
+            },
+        },
+    },
+    [26159] = {
+        name = "The First Step",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26160] = {
+        name = "Blood Ritual",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 25,
+            },
+        },
+    },
+    [26161] = {
+        name = "Not Just Any Body",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26162] = {
+        name = "The Altar of Storms",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 500,
+            },
+        },
+    },
+    [26163] = {
+        name = "Time is Short",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 25,
+            },
+        },
+    },
+    [26164] = {
+        name = "The Charred Granite of the Dark Portal",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42299,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [26165] = {
+        name = "The Vile Blood of Demons",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42299,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [26166] = {
+        name = "Enhancing the Stone",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42299,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 75,
+            },
+        },
+    },
+    [26167] = {
+        name = "The Amulet of Allistarj",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26168] = {
+        name = "The Amulet of Sevine",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26169] = {
+        name = "The Amulet of Grol",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26170] = {
+        name = "The Final Ritual",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [26171] = {
+        name = "You Are Rakh'likh, Demon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7783,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    20000, 21300, 22700, 24000, 25300, 26000, 26700, 27300, 28000, 28000, 29300, 30000, 30700, 32000, 32700, 33300, 34000, 34700, 35300, 35300, 36000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 1000,
+            },
+        },
+    },
+    [26172] = {
+        name = "A Bloodmage's Gotta Eat Too",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26173] = {
+        name = "Protecting Our Rear",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 16841,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 350,
+            },
+        },
+    },
+    [26174] = {
+        name = "Watching Our Back",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 16841,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [26175] = {
+        name = "Surwich",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 16841,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 75,
+            },
+        },
+    },
     [26176] = {
         name = "Onward to Thelsamar",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11482,9 +22794,109 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26184] = {
+        name = "Wormthorn's Dream",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42349,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 350,
+            },
+        },
+    },
+    [26185] = {
+        name = "Advice from the Cenarion Circle",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42349,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
+    [26186] = {
+        name = "Demoniac Vessel",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42352,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 942,
+                amount = 250,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [26187] = {
+        name = "The Downfall of Marl Wormthorn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 42349,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 500,
+            },
+        },
+    },
     [26189] = {
         name = "The Angerfang Menace",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -11505,7 +22917,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26195] = {
         name = "Who Wards The Greenwarden",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -11526,7 +22937,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26196] = {
         name = "Longbraid the Grim",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -11547,7 +22957,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26209] = {
         name = "Murder Was The Case That They Gave Me",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11568,7 +22977,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26210] = {
         name = "Gammerita, Mon!",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11584,7 +22992,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26211] = {
         name = "Snapjaws, Mon!",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11600,7 +23007,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26212] = {
         name = "Lard Lost His Lunch",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11616,7 +23022,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26213] = {
         name = "Hot On the Trail: The Riverpaw Clan",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11637,7 +23042,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26214] = {
         name = "Hot On the Trail: Murlocs",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11658,13 +23062,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26215] = {
         name = "Meet Two-Shoed Lou",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26223] = {
         name = "Stalking the Stalkers",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11680,7 +23082,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26224] = {
         name = "Hunt the Savages",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11696,7 +23097,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26225] = {
         name = "Pupellyverbos Port",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11717,25 +23117,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26228] = {
         name = "Livin' the Life",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26229] = {
         name = "\"I TAKE Candle!\"",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26230] = {
         name = "Feast or Famine",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26232] = {
         name = "Lou's Parting Thoughts",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11756,13 +23152,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26236] = {
         name = "Shakedown at the Saldean's",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26237] = {
         name = "Times are Tough",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11778,7 +23172,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26238] = {
         name = "The Savage Dwarves",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11794,7 +23187,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26240] = {
         name = "Stomp To My Beat",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11810,25 +23202,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26241] = {
         name = "Westfall Stew",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26252] = {
         name = "Heart of the Watcher",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26257] = {
         name = "It's Alive!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26263] = {
         name = "Thornar Thunderclash",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11844,13 +23232,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26266] = {
         name = "Hope for the People",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26267] = {
         name = "Skulk Rock Clean-Up",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11866,7 +23252,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26268] = {
         name = "Skulk Rock Supplies",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -11882,7 +23267,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26269] = {
         name = "The Green Hills of Stranglethorn",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11898,7 +23282,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26270] = {
         name = "You Have Our Thanks",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -11914,13 +23297,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26271] = {
         name = "Feeding the Hungry and the Hopeless",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26278] = {
         name = "The Defense of Grom'gol: Raptor Risk",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11941,7 +23322,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26279] = {
         name = "The Defense of Grom'gol: Ogre Oppression",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11962,7 +23342,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26280] = {
         name = "The Defense of Grom'gol: Murloc Menace",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -11983,7 +23362,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26281] = {
         name = "The Defense of Grom'gol: Trollish Thievery",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12004,7 +23382,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26283] = {
         name = "Prime Slime",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12025,7 +23402,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26286] = {
         name = "In Defense of Westfall",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12046,7 +23422,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26287] = {
         name = "The Westfall Brigade",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12067,7 +23442,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26288] = {
         name = "Jango Spothide",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12088,7 +23462,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26289] = {
         name = "Find Agent Kearnen",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12101,7 +23474,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26290] = {
         name = "Secrets of the Tower",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12114,7 +23486,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26291] = {
         name = "Big Trouble in Moonbrook",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12135,7 +23506,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26292] = {
         name = "To Moonbrook!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12148,7 +23518,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26295] = {
         name = "Propaganda",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12169,7 +23538,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26296] = {
         name = "Evidence Collection",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12182,7 +23550,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26297] = {
         name = "The Dawning of a New Day",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12203,7 +23570,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26298] = {
         name = "Hunt for Yenniku",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12224,7 +23590,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26299] = {
         name = "Headhunting",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12245,7 +23610,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26300] = {
         name = "Nezzliok Will Know",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12266,7 +23630,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26301] = {
         name = "Speaking with Nezzliok",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12287,7 +23650,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26302] = {
         name = "Chasing Yenniku's Fate",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12308,7 +23670,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26303] = {
         name = "The Mind's Eye",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12329,7 +23690,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26304] = {
         name = "Nighttime in the Jungle",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12350,7 +23710,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26305] = {
         name = "Saving Yenniku",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12371,7 +23730,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26306] = {
         name = "Start Taking Back",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12387,7 +23745,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26307] = {
         name = "Death to the Vilebranch",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12403,7 +23760,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26308] = {
         name = "It's Ours Now",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12419,7 +23775,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26309] = {
         name = "Dark Vessels",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12440,7 +23795,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26310] = {
         name = "All That Skitters",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12456,13 +23810,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26317] = {
         name = "A Lashtail Hatchling",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26319] = {
         name = "Secrets Revealed",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12475,7 +23827,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26320] = {
         name = "A Vision of the Past",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12496,13 +23847,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26321] = {
         name = "I Think She's Hungry",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26322] = {
         name = "Rise of the Brotherhood",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12523,13 +23872,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26323] = {
         name = "Favored Skull",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26327] = {
         name = "Anvilmar the Hero",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -12542,7 +23889,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26330] = {
         name = "Who's a Big Troll?",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12558,7 +23904,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26332] = {
         name = "Skullsplitter Mojo",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12574,7 +23919,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26334] = {
         name = "Bloodlord Mandokir",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12590,7 +23934,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26336] = {
         name = "Shakes O'Breen",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12606,7 +23949,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26338] = {
         name = "Population Con-Troll",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12627,7 +23969,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26340] = {
         name = "The Hunt",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12643,13 +23984,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26341] = {
         name = "The Stone Shards",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26343] = {
         name = "Supply and Demand",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12665,7 +24004,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26344] = {
         name = "Some Assembly Required",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12681,7 +24019,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26345] = {
         name = "Excelsior",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12697,7 +24034,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26346] = {
         name = "Myzrael's Tale",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12718,7 +24054,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26347] = {
         name = "Keeper of the Flame",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12734,7 +24069,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26348] = {
         name = "The Coast Isn't Clear",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12750,13 +24084,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26349] = {
         name = "The Coastal Menace",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26350] = {
         name = "Priestess Hu'rala",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12777,7 +24109,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26351] = {
         name = "Mind Vision",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12798,7 +24129,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26352] = {
         name = "Cozzle's Plan",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12819,25 +24149,21 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26353] = {
         name = "Captain Sanders' Hidden Treasure",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26354] = {
         name = "Captain Sanders' Hidden Treasure",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26355] = {
         name = "Captain Sanders' Hidden Treasure",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26356] = {
         name = "Captain Sanders' Hidden Treasure",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -12853,7 +24179,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26357] = {
         name = "Faces of Evil",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12869,7 +24194,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26359] = {
         name = "See Raptor",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12890,7 +24214,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26360] = {
         name = "Mind Control",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12911,7 +24234,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26362] = {
         name = "Be Raptor",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -12932,7 +24254,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26363] = {
         name = "Summit of Fate",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12948,7 +24269,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26365] = {
         name = "Hero's Call: Redridge Mountains!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -12969,7 +24289,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26366] = {
         name = "Heads Up",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -12985,7 +24304,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26367] = {
         name = "Ongo'longo's Revenge",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13001,7 +24319,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26368] = {
         name = "Venomous Secrets",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13022,7 +24339,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26369] = {
         name = "Hunt the Keeper",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13038,7 +24354,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26370] = {
         name = "Return to Sentinel Hill",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -13051,13 +24366,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26371] = {
         name = "The Legend of Captain Grayson",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [26378] = {
         name = "Hero's Call: Westfall!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -13078,7 +24391,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26381] = {
         name = "The Eye of Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13099,7 +24411,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26382] = {
         name = "Can't Make An Omelette Without...",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13120,7 +24431,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26383] = {
         name = "Breaking Waves of Change",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -13141,7 +24451,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26384] = {
         name = "Darkcleric Marnal",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13157,7 +24466,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26385] = {
         name = "Breaking Waves of Change",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -13178,7 +24486,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26386] = {
         name = "Surkhan",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13199,7 +24506,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26387] = {
         name = "Starvation Diet",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13220,7 +24526,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26399] = {
         name = "The Mosh'Ogg Bounty",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13241,7 +24546,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26400] = {
         name = "The Universal Key",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13260,9 +24564,56 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26401] = {
+        name = "Return to Vestia",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 203134,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [26402] = {
+        name = "General Shandris Feathermoon",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40032,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 75,
+            },
+        },
+    },
     [26403] = {
         name = "Venture Company Mining",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13283,7 +24634,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26404] = {
         name = "Above My Pay Grade",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13304,7 +24654,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26405] = {
         name = "Zul'Mamwe Mambo",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13325,7 +24674,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26406] = {
         name = "The Fang of Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13346,7 +24694,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26407] = {
         name = "Mosh'Ogg Handiwork",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13367,7 +24714,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26408] = {
         name = "Ashes in Ashenvale",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -13388,7 +24734,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26417] = {
         name = "Northern Stranglethorn: The Fallen Empire",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13409,7 +24754,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26418] = {
         name = "The Shell of Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13430,7 +24774,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26419] = {
         name = "Shadra the Venom Queen",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13451,7 +24794,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26428] = {
         name = "To Steal From Thieves",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13472,7 +24814,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26429] = {
         name = "Crush the Witherbark",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -13493,7 +24834,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26430] = {
         name = "Revantusk Village",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13509,7 +24849,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26432] = {
         name = "The Fall of Jintha'Alor",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13525,7 +24864,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26443] = {
         name = "Diabolical Plans",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -13538,7 +24876,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26444] = {
         name = "Destroy the Legion",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13563,13 +24900,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26445] = {
         name = "Never Again!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17303,
-            name = "Vindicator Vedaar",
         },
         rewards = {
             {
@@ -13589,13 +24924,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26446] = {
         name = "Reclaiming Felfire Hill",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17310,
-            name = "Gnarl",
         },
         rewards = {
             {
@@ -13615,7 +24948,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26447] = {
         name = "Diabolical Plans",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -13628,13 +24960,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26448] = {
         name = "Destroy the Legion",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17355,
-            name = "Valusha",
         },
         rewards = {
             {
@@ -13654,13 +24984,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26449] = {
         name = "Never Again!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17355,
-            name = "Valusha",
         },
         rewards = {
             {
@@ -13680,13 +25008,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26453] = {
         name = "A Helping Hand",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17106,
-            name = "Vindicator Palanaar",
         },
         rewards = {
             {
@@ -13698,13 +25024,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26454] = {
         name = "A Shameful Waste",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 17291,
-            name = "Architect Nemos",
         },
         rewards = {
             {
@@ -13724,13 +25048,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26455] = {
         name = "The Lost Chalice",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3848,
-            name = "Kayneth Stillwind",
         },
         rewards = {
             {
@@ -13750,7 +25072,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26456] = {
         name = "Report from the Northern Front",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13767,7 +25088,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26457] = {
         name = "Agents of Destruction",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13792,7 +25112,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26462] = {
         name = "The Wicked Revantusk",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -13808,7 +25127,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26463] = {
         name = "Finding Teronis",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13833,7 +25151,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26464] = {
         name = "The Lost Gem",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13858,7 +25175,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26465] = {
         name = "The Ancient Statuettes",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13883,13 +25199,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26466] = {
         name = "Ruuzel",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3846,
-            name = "Talen",
         },
         rewards = {
             {
@@ -13909,13 +25223,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26467] = {
         name = "Vile Satyr! Dryads in Danger!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3901,
-            name = "Illiyana",
         },
         rewards = {
             {
@@ -13927,7 +25239,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26468] = {
         name = "The Branch of Cenarius",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13944,13 +25255,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26469] = {
         name = "Satyr Slaying!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3901,
-            name = "Illiyana",
         },
         rewards = {
             {
@@ -13970,7 +25279,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26470] = {
         name = "Retaking Mystral Lake",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -13995,7 +25303,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26472] = {
         name = "Insane Druids",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -14020,7 +25327,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26473] = {
         name = "Bathran's Hair",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -14045,13 +25351,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26474] = {
         name = "Orendil's Cure",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3847,
-            name = "Orendil Broadleaf",
         },
         rewards = {
             {
@@ -14071,7 +25375,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26475] = {
         name = "Elune's Tear",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -14096,13 +25399,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26476] = {
         name = "Dryad Delivery",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3691,
-            name = "Raene Wolfrunner",
         },
         rewards = {
             {
@@ -14114,7 +25415,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26477] = {
         name = "Search the Bole",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
@@ -14139,13 +25439,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26478] = {
         name = "Playing Possum",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3916,
-            name = "Shael'dryn",
         },
         rewards = {
             {
@@ -14165,13 +25463,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26479] = {
         name = "Return to Raene",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3916,
-            name = "Shael'dryn",
         },
         rewards = {
             {
@@ -14183,13 +25479,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26480] = {
         name = "Dartol's Rod",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3691,
-            name = "Raene Wolfrunner",
         },
         rewards = {
             {
@@ -14201,13 +25495,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26481] = {
         name = "A New Adornment",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3897,
-            name = "Krolg",
         },
         rewards = {
             {
@@ -14227,13 +25519,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26482] = {
         name = "True Power of the Rod",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3897,
-            name = "Krolg",
         },
         rewards = {
             {
@@ -14253,7 +25543,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26483] = {
         name = "Gan'dranda",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14269,7 +25558,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26485] = {
         name = "Snapjaws, Lad!",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14285,7 +25573,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26486] = {
         name = "99 Bottles of Booze on the Beach",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14301,7 +25588,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26490] = {
         name = "Prime Slime",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14322,7 +25608,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26491] = {
         name = "Skulk Rock Clean-Up",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14338,7 +25623,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26492] = {
         name = "Skulk Rock Supplies",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14354,7 +25638,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26496] = {
         name = "Down with the Vilebranch",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14370,7 +25653,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26497] = {
         name = "Vilebranch Scum",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14386,7 +25668,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26498] = {
         name = "Death to the Vilebranch",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14402,7 +25683,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26503] = {
         name = "Still Assessing the Threat",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14423,7 +25703,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26504] = {
         name = "WANTED: Redridge Gnolls",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14444,7 +25723,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26505] = {
         name = "Parker's Report",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14457,7 +25735,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26506] = {
         name = "Franks and Beans",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14478,7 +25755,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26508] = {
         name = "Nida's Necklace",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14491,7 +25767,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26509] = {
         name = "An Unwelcome Guest",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14512,7 +25787,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26510] = {
         name = "We Must Prepare!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14533,7 +25807,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26511] = {
         name = "Lake Everstill Clean Up",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14546,7 +25819,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26512] = {
         name = "Tuning the Gnomecorder",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14559,7 +25831,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26513] = {
         name = "Like a Fart in the Wind",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14580,7 +25851,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26514] = {
         name = "Canyon Romp",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14601,7 +25871,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26515] = {
         name = "Ongo'longo's Revenge",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14617,7 +25886,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26516] = {
         name = "It's Ours Now",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14633,7 +25901,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26517] = {
         name = "Summit of Fate",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14649,7 +25916,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26518] = {
         name = "Heads Up",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14665,13 +25931,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26519] = {
         name = "He Who Controls the Ettins",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
     },
     [26520] = {
         name = "Saving Foreman Oslow",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14692,7 +25956,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26521] = {
         name = "Faces of Evil",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14708,7 +25971,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26523] = {
         name = "All That Skitters",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14724,7 +25986,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26524] = {
         name = "Dark Vessels",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14740,7 +26001,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26525] = {
         name = "Venomous Secrets",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14756,7 +26016,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26526] = {
         name = "Hunt the Keeper",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14772,7 +26031,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26528] = {
         name = "The Eye of Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14788,7 +26046,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26529] = {
         name = "The Fang of Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14804,7 +26061,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26530] = {
         name = "The Shell of Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14820,13 +26076,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26531] = {
         name = "Summoning Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
     },
     [26532] = {
         name = "Shadra the Venom Queen",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14842,7 +26096,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26542] = {
         name = "Hero's Call: The Hinterlands!",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14858,7 +26111,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26544] = {
         name = "They've Wised Up...",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14879,7 +26131,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26545] = {
         name = "Yowler Must Die!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14900,7 +26151,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26546] = {
         name = "Razorbeak Friends",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14916,7 +26166,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26547] = {
         name = "A Mangy Threat",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14932,7 +26181,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26548] = {
         name = "Out to the Front",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -14948,19 +26196,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26558] = {
         name = "Summoning Shadra",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
     },
     [26560] = {
         name = "Jorgensen",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
     },
     [26561] = {
         name = "Krakauer",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14973,7 +26218,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26562] = {
         name = "And Last But Not Least... Danforth",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -14986,7 +26230,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26563] = {
         name = "Return of the Bravo Company",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15007,7 +26250,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26567] = {
         name = "John J. Keeshan",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15020,7 +26262,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26568] = {
         name = "This Ain't My War",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15033,7 +26274,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26569] = {
         name = "Surveying Equipment",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15046,7 +26286,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26570] = {
         name = "Render's Army",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15067,7 +26306,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26571] = {
         name = "Weapons of War",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15080,7 +26318,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26573] = {
         name = "His Heart Must Be In It",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15091,9 +26328,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26574] = {
+        name = "Adella's Covert Camp",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39653,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
     [26586] = {
         name = "In Search of Bravo Company",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15106,7 +26361,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26587] = {
         name = "Breaking Out is Hard to Do",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15117,9 +26371,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26589] = {
+        name = "The Wilds of Feralas",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 36487,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 3000, 3000, 3000, 3500, 3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
     [26593] = {
         name = "Scaring Shaky",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15132,7 +26404,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26594] = {
         name = "Return to MacKinley",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15153,7 +26424,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26595] = {
         name = "Kill-Collect",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15174,7 +26444,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26597] = {
         name = "Stranglethorn Fever",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15195,7 +26464,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26599] = {
         name = "The Captain's Chest",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15216,7 +26484,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26600] = {
         name = "A Giant's Feast",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15237,7 +26504,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26601] = {
         name = "Mok'rash the Cleaver",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15258,7 +26524,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26602] = {
         name = "A Dish Best Served Huge",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15279,13 +26544,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26603] = {
         name = "Message in a Bottle",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
     },
     [26604] = {
         name = "Protecting Her Royal Highness Poobah",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15301,7 +26564,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26605] = {
         name = "Grubby Little Paws",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15317,7 +26579,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26606] = {
         name = "Mukla's Demise",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15333,7 +26594,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26607] = {
         name = "They Drew First Blood",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15346,7 +26606,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26609] = {
         name = "The Bloodsail Buccaneers",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15367,7 +26626,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26610] = {
         name = "Bloodsail Treachery",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15388,7 +26646,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26611] = {
         name = "The Baron Must Be Told",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15409,7 +26666,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26612] = {
         name = "Details of the Attack",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15430,7 +26686,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26613] = {
         name = "Up to Snuff",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15451,7 +26706,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26614] = {
         name = "Keep An Eye Out",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15472,7 +26726,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26616] = {
         name = "It's Never Over",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15485,7 +26738,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26617] = {
         name = "An Old Sea Dog",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15506,7 +26758,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26618] = {
         name = "Wolves at Our Heels",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -15527,7 +26778,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26620] = {
         name = "Seasoned Wolf Kabobs",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -15548,7 +26798,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26623] = {
         name = "Dusky Crab Cakes",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -15569,7 +26818,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26624] = {
         name = "Getting In With the Bloodsail",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15585,7 +26833,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26627] = {
         name = "The Hermit",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -15601,7 +26848,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26628] = {
         name = "Death From Below",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -15614,7 +26860,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26629] = {
         name = "Seeing Where Your Loyalties Lie",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15630,7 +26875,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26631] = {
         name = "Your First Day as a Pirate",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15646,7 +26890,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26633] = {
         name = "Swabbing Duty",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15662,7 +26905,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26634] = {
         name = "The Bane of Many A Pirate",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15678,7 +26920,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26635] = {
         name = "Cannonball Swim",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15694,7 +26935,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26636] = {
         name = "Bravo Company Field Kit: Camouflage",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15715,7 +26955,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26637] = {
         name = "Bravo Company Field Kit: Chloroform",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15728,7 +26967,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26638] = {
         name = "Hunting the Hunters",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15749,7 +26987,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26639] = {
         name = "Point of Contact: Brubaker",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15762,7 +26999,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26640] = {
         name = "Unspeakable Atrocities",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15783,7 +27019,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26641] = {
         name = "Can't Make An Omelette Without...",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15799,7 +27034,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26642] = {
         name = "Preserving the Barrens",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -15820,7 +27054,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26643] = {
         name = "Starvation Diet",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15836,7 +27069,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26644] = {
         name = "Attracting Attention",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15852,7 +27084,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26645] = {
         name = "The Night Watch",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -15873,7 +27104,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26646] = {
         name = "Prisoners of War",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15886,7 +27116,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26647] = {
         name = "Ol' Blasty",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15902,13 +27131,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26648] = {
         name = "Our Mortal Enemies",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
     },
     [26649] = {
         name = "Drive-By Piracy",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15924,7 +27151,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26650] = {
         name = "The Damsel's Luck",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -15940,7 +27166,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26651] = {
         name = "To Win a War, You Gotta Become War",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -15953,19 +27178,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26652] = {
         name = "Ghost Hair Thread",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26653] = {
         name = "Supplies from Darkshire",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26654] = {
         name = "Return the Comb",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -15981,7 +27203,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26655] = {
         name = "Deliver the Thread",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -15997,13 +27218,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26660] = {
         name = "Zombie Juice",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26661] = {
         name = "Gather Rot Blossoms",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16019,7 +27238,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26662] = {
         name = "The Brashtide Crew",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16040,7 +27258,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26663] = {
         name = "Sinking From Within",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16061,7 +27278,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26664] = {
         name = "Making Mutiny",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16082,7 +27298,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26665] = {
         name = "Call of Booty",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16103,7 +27318,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26666] = {
         name = "The Legend of Stalvan",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16124,7 +27338,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26667] = {
         name = "The Stolen Letters",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16145,7 +27358,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26668] = {
         name = "Detonation",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16166,7 +27378,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26669] = {
         name = "In A Dark Corner",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16187,7 +27398,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26670] = {
         name = "Roland's Doom",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16208,7 +27418,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26671] = {
         name = "The Fate of Stalvan Mistmantle",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16229,7 +27438,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26672] = {
         name = "Clawing at the Truth",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16245,7 +27453,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26674] = {
         name = "Mistmantle's Revenge",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16266,7 +27473,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26676] = {
         name = "Juice Delivery",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16282,7 +27488,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26677] = {
         name = "Ghoulish Effigy",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16298,7 +27503,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26678] = {
         name = "Doublerum",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16319,7 +27523,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26679] = {
         name = "Return to Revilgaz",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16340,7 +27543,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26680] = {
         name = "Ogre Thieves",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16356,19 +27558,46 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26681] = {
         name = "Note to the Mayor",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
+    [26682] = {
+        name = "A Shambling Threat",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+            locations = {
+                [70] = {
+                    x = 0.3641904592514,
+                    y = 0.31876283884049,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
     [26683] = {
         name = "Look To The Stars",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26684] = {
         name = "The Insane Ghoul",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16389,7 +27618,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26685] = {
         name = "Classy Glass",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16410,7 +27638,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26686] = {
         name = "Bones That Walk",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16429,9 +27656,28 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26687] = {
+        name = "Reinforcements From Theramore",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 75,
+            },
+        },
+    },
     [26688] = {
         name = "Worgen in the Woods",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16452,7 +27698,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26689] = {
         name = "The Rotting Orchard",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16473,7 +27718,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26690] = {
         name = "Vile and Tainted",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16494,7 +27738,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26691] = {
         name = "Worgen in the Woods",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16515,7 +27758,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26692] = {
         name = "Shadowhide Extinction",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16528,7 +27770,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26693] = {
         name = "The Dark Tower",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16541,7 +27782,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26694] = {
         name = "The Grand Magus Doane",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16554,7 +27794,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26695] = {
         name = "Prepare for Takeoff",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16575,7 +27814,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26697] = {
         name = "The Final Voyage of the Brashtide",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16596,7 +27834,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26698] = {
         name = "Seeking Seahorn",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16617,7 +27854,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26699] = {
         name = "Turning the Brashtide",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16638,7 +27874,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26700] = {
         name = "The Damsel's (Bad) Luck",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16657,9 +27892,48 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26701] = {
+        name = "Flight to Brackenwall",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 67,
+                amount = 10,
+            },
+        },
+    },
+    [26702] = {
+        name = "Flight to Theramore",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 469,
+                amount = 10,
+            },
+        },
+    },
     [26703] = {
         name = "Bloodsail's End",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -16680,7 +27954,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26707] = {
         name = "A Deadly Vine",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16701,7 +27974,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26708] = {
         name = "AHHHHHHHHHHHH! AHHHHHHHHH!!!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16722,7 +27994,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26713] = {
         name = "Showdown at Stonewatch",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16735,7 +28006,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26714] = {
         name = "Darkblaze, Brood of the Worldbreaker",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16756,7 +28026,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26717] = {
         name = "The Yorgen Worgen",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16777,7 +28046,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26719] = {
         name = "Delivery to Master Harris",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16798,7 +28066,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26720] = {
         name = "A Curse We Cannot Lift",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16819,7 +28086,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26721] = {
         name = "The Jitters-Bugs",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16840,13 +28106,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26722] = {
         name = "Buried Below",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26723] = {
         name = "The Fate of Morbent Fel",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16867,19 +28131,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26724] = {
         name = "The Lurking Lich",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26725] = {
         name = "Guided by the Light",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26726] = {
         name = "Triumphant Return",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -16892,7 +28153,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26727] = {
         name = "The Embalmer's Revenge",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16913,7 +28173,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26728] = {
         name = "Hero's Call: Duskwood!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -16934,7 +28193,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26729] = {
         name = "Water Elementals",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -16955,7 +28213,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26730] = {
         name = "You Can Take the Murloc Out of the Ocean...",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -16976,7 +28233,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26731] = {
         name = "The Altar of Naias",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -16997,7 +28253,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26732] = {
         name = "Bad Medicine",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17018,7 +28273,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26733] = {
         name = "Control Sample",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17031,7 +28285,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26734] = {
         name = "The Source of the Madness",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17052,7 +28305,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26735] = {
         name = "The Fate of Kurzen",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17073,7 +28325,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26736] = {
         name = "Spared from Madness",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17094,7 +28345,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26737] = {
         name = "Stopping Kurzen's Legacy",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17115,19 +28365,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26738] = {
         name = "Just Hatched",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26739] = {
         name = "I Think She's Hungry",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26740] = {
         name = "Krazek's Cookery",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17143,7 +28390,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26742] = {
         name = "Bloodscalp Insight",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17164,7 +28410,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26743] = {
         name = "Sacred to the Bloodscalp",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17185,7 +28430,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26744] = {
         name = "Deep Roots",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17206,7 +28450,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26745] = {
         name = "Favored Skull",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17219,7 +28462,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26746] = {
         name = "A Nose for This Sort of Thing",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17235,7 +28477,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26747] = {
         name = "A Physical Specimen",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17251,7 +28492,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26748] = {
         name = "Bloodlord Mandokir",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17267,7 +28507,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26749] = {
         name = "Priestess Thaalia",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17288,7 +28527,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26751] = {
         name = "Population Con-Troll",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17309,13 +28547,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26753] = {
         name = "The Halls of the Dead",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26754] = {
         name = "Morbent's Bane",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17336,7 +28572,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26760] = {
         name = "Cry For The Moon",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17357,7 +28592,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26761] = {
         name = "Threat to the Kingdom",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -17378,7 +28612,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26763] = {
         name = "Venture Company Mining",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17399,7 +28632,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26765] = {
         name = "Return to Corporal Kaleb",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17420,7 +28652,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26769] = {
         name = "Raging River Ride",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -17441,7 +28672,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26772] = {
         name = "Mind Vision",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17462,7 +28692,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26773] = {
         name = "See Raptor",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17483,7 +28712,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26774] = {
         name = "Mind Control",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17504,7 +28732,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26775] = {
         name = "Be Raptor",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17525,7 +28752,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26776] = {
         name = "Ghaliri",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17546,7 +28772,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26777] = {
         name = "Soothing Spirits",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17567,7 +28792,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26778] = {
         name = "The Cries of the Dead",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17588,7 +28812,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26779] = {
         name = "Zul'Mamwe Mambo",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17609,7 +28832,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26780] = {
         name = "Nighttime in the Jungle",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17630,7 +28852,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26781] = {
         name = "The Mind's Eye",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17646,7 +28867,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26782] = {
         name = "The Mosh'Ogg Bounty",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -17667,13 +28887,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26785] = {
         name = "Part of the Pack",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26787] = {
         name = "Bear In Mind",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17694,7 +28912,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26793] = {
         name = "The Weathered Grave",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17707,7 +28924,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26794] = {
         name = "Morgan Ladimore",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17720,7 +28936,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26795] = {
         name = "Mor'Ladim",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17741,7 +28956,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26796] = {
         name = "The Daughter Who Lived",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -17754,13 +28968,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26797] = {
         name = "A Daughter's Love",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
     },
     [26805] = {
         name = "To the Cape!",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17781,7 +28993,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26808] = {
         name = "Maywiki",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17802,7 +29013,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26809] = {
         name = "Backdoor Dealings",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17818,7 +29028,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26810] = {
         name = "Eliminate the Outcast",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17834,7 +29043,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26811] = {
         name = "Through the Troll Hole",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17850,7 +29058,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26812] = {
         name = "High Priestess Jeklik",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17866,7 +29073,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26813] = {
         name = "Plunging Into Zul'Gurub",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17882,7 +29088,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26814] = {
         name = "High Priest Venoxis",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17898,7 +29103,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26815] = {
         name = "Zanzil's Secret",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17919,7 +29123,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26816] = {
         name = "Recipe for Disaster",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17940,7 +29143,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26817] = {
         name = "Perfectly Pure",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17961,7 +29163,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26818] = {
         name = "Plush Pelts",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -17982,7 +29183,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26819] = {
         name = "Akiris by the Bundle",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -18003,7 +29203,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26820] = {
         name = "If They're Just Going to Leave Them Lying Around...",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -18024,7 +29223,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26821] = {
         name = "Airwyn Bantamflax",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -18045,7 +29243,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26822] = {
         name = "Good-Fer-Nothin' Slither-Dogs",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -18066,7 +29263,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26823] = {
         name = "Too Big For His Britches",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -18087,7 +29283,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26824] = {
         name = "Results: Inconclusive",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -18103,7 +29298,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26825] = {
         name = "Dask \"The Flask\" Gobfizzle",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -18119,13 +29313,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26838] = {
         name = "Rebels Without a Clue",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 3885,
-            name = "Sentinel Velene Starstrike",
         },
         rewards = {
             {
@@ -18140,7 +29332,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26842] = {
         name = "Out of Gnoll-where",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18161,9 +29352,17 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26843] = {
         name = "A Tiny, Clever Commander",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            locations = {
+                [241] = {
+                    x = 0.049043364822864,
+                    y = 0.75734525918961,
+                },
+            },
+        },
         rewards = {
             {
                 type = "money",
@@ -18182,7 +29381,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26844] = {
         name = "Kobold and Kobolder",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18203,7 +29401,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26845] = {
         name = "Who's In Charge Here?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18224,7 +29421,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26846] = {
         name = "A Nasty Exploit",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18245,7 +29441,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26854] = {
         name = "The Lost Pilot",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18263,7 +29458,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26855] = {
         name = "A Pilot's Revenge",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18289,7 +29483,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26860] = {
         name = "Thelsamar Blood Sausages",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18310,7 +29503,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26863] = {
         name = "Filthy Paws",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18331,7 +29523,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26864] = {
         name = "The Bearer of Gnoll-edge",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18352,7 +29543,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26868] = {
         name = "Axis of Awful",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18373,9 +29563,12 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26878] = {
         name = "Disciples of Naralex",
-        level = -1,
         requiredLevel = 17,
         maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 3448,
+        },
         rewards = {
             {
                 type = "money",
@@ -18387,15 +29580,80 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26886] = {
+        name = "Going Off-Task",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38704,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26887] = {
+        name = "Filling Our Pockets",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38704,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 250,
+            },
+        },
+    },
+    [26889] = {
+        name = "All Cheered Out",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38704,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [26890] = {
         name = "The Essence of Aku'Mai",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 34303,
-            name = "Dagrun Ragehammer",
         },
         rewards = {
             {
@@ -18413,15 +29671,51 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [26895] = {
+        name = "The Thunderdrome!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38578,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [26896] = {
+        name = "The Thunderdrome!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 44374,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [26909] = {
         name = "The Stone Shards",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
     },
     [26911] = {
         name = "Myzrael's Tale",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -18442,7 +29736,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26912] = {
         name = "The Princess Unleashed",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -18458,7 +29751,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26920] = {
         name = "The Battle for Andorhal",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18479,7 +29771,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26921] = {
         name = "Scourge First... Alliance Later",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18500,7 +29791,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26922] = {
         name = "The Endless Flow",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18521,7 +29811,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26923] = {
         name = "War Machines",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18542,7 +29831,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26924] = {
         name = "Scholomancer",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18563,7 +29851,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26925] = {
         name = "Araj the Summoner",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18584,7 +29871,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26926] = {
         name = "Victory, For Now",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18605,7 +29891,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26927] = {
         name = "Suddenly, Murlocs!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18621,7 +29906,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26928] = {
         name = "Smells Like A Plan",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18642,7 +29926,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26929] = {
         name = "A Load of Croc",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18663,7 +29946,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26930] = {
         name = "After the Crusade",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18684,7 +29966,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26931] = {
         name = "Foxes and Hounds",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18705,7 +29986,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26932] = {
         name = "Buzz Off",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18726,7 +30006,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26933] = {
         name = "Foes Before Hoes",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18747,7 +30026,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26934] = {
         name = "Latent Disease",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18768,7 +30046,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26935] = {
         name = "Northridge Lumber Mill",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18789,7 +30066,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26936] = {
         name = "Lower the Boom",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18810,7 +30086,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26937] = {
         name = "When Death is Not Enough",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18823,7 +30098,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26938] = {
         name = "Combat Training",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18844,7 +30118,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26943] = {
         name = "Home Sweet Gnome",
-        level = -1,
         requiredLevel = 24,
         maxLevel = 60,
         rewards = {
@@ -18860,7 +30133,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26953] = {
         name = "Zen'Kiki, the Druid",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18881,7 +30153,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26954] = {
         name = "A Different Approach",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18902,7 +30173,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26955] = {
         name = "Zen'Kiki and the Cultists",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18923,7 +30193,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26956] = {
         name = "I Ain't Sayin' You a Gourd-Digger...",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18944,7 +30213,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26957] = {
         name = "The Long Trip Home",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -18965,7 +30233,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26961] = {
         name = "Gathering Idols",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -18986,7 +30253,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26964] = {
         name = "Warchief's Command: Silverpine Forest!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19007,7 +30273,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26965] = {
         name = "The Warchief Cometh",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19020,7 +30285,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26978] = {
         name = "Who Needs Cauldrons?",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19041,7 +30305,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26979] = {
         name = "Strange New Faces",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19062,7 +30325,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26980] = {
         name = "Swiftgear Station",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -19083,7 +30345,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26981] = {
         name = "Whelgar's Retreat",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -19104,7 +30365,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26989] = {
         name = "The Gilneas Liberation Front",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19117,7 +30377,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26992] = {
         name = "Agony Abounds",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19138,7 +30397,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26995] = {
         name = "Guts and Gore",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19159,7 +30417,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26998] = {
         name = "Iterating Upon Success",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19172,7 +30429,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [26999] = {
         name = "A New Era for the Plaguelands",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19193,7 +30449,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27000] = {
         name = "Learning the Ropes",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19214,7 +30469,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27001] = {
         name = "This Means WAR (Wild Arachnid Roundup)",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19235,7 +30489,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27002] = {
         name = "An Audience with the Highlord",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19256,7 +30509,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27011] = {
         name = "Redpine Thievery",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19272,7 +30524,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27012] = {
         name = "A Gnoll's Resolve",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19288,7 +30539,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27013] = {
         name = "Too Close for Comfort",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19304,7 +30554,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27016] = {
         name = "The Joy of Boar Hunting",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19320,7 +30569,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27017] = {
         name = "Memories from a Lost Past",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19341,7 +30589,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27025] = {
         name = "Thistle While You Work",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19362,7 +30609,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27026] = {
         name = "Defcon: Bobcat",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19383,7 +30629,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27028] = {
         name = "Hornet Hunting",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19404,7 +30649,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27030] = {
         name = "Foxtails By The Handful",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19425,7 +30669,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27031] = {
         name = "Wing Nut",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19446,13 +30689,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27032] = {
         name = "Bird is the Word",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [27033] = {
         name = "Skystrider's Heart",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19473,7 +30714,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27034] = {
         name = "He's That Age",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19494,7 +30734,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27035] = {
         name = "Standing Up",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19515,7 +30754,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27036] = {
         name = "Vyrin's Revenge",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19531,7 +30769,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27037] = {
         name = "Vyrin's Revenge",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19547,7 +30784,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27039] = {
         name = "Dangerous Intentions",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19560,7 +30796,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27045] = {
         name = "Waiting to Exsanguinate",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19581,7 +30816,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27053] = {
         name = "Gahrron's Withering Cauldron",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19602,7 +30836,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27054] = {
         name = "Desperate Acts",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19615,7 +30848,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27055] = {
         name = "Students of Krastinov",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19636,7 +30868,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27056] = {
         name = "Belmont's Report",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19649,7 +30880,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27057] = {
         name = "Return to the Stead",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19670,7 +30900,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27065] = {
         name = "The Warchief's Fleet",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19688,7 +30917,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27069] = {
         name = "Steel Thunder",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19706,7 +30934,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27073] = {
         name = "Give 'em Hell!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19732,7 +30959,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27074] = {
         name = "Fight the Hammer",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19753,7 +30979,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27075] = {
         name = "Servants of Cho'gall",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19774,7 +30999,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27077] = {
         name = "Clutching at Chaos",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19795,7 +31019,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27078] = {
         name = "Gor'kresh",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19816,7 +31039,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27082] = {
         name = "Playing Dirty",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19837,7 +31059,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27083] = {
         name = "The Battle Resumes!",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19858,7 +31079,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27084] = {
         name = "The Farmers' Militia",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19879,7 +31099,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27085] = {
         name = "Supporting the Troops",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19900,7 +31119,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27086] = {
         name = "Ashes to Ashes",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19921,7 +31139,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27087] = {
         name = "Lindsay Ravensun, Revealed",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19942,7 +31159,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27088] = {
         name = "It's Only Poisonous if You Ingest It",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -19955,7 +31171,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27089] = {
         name = "Ace in the Hole",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19968,7 +31183,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27090] = {
         name = "Andorhal, Once and For All",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -19989,7 +31203,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27093] = {
         name = "Lost in the Darkness",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20015,7 +31228,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27094] = {
         name = "Deeper into Darkness",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20033,7 +31245,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27095] = {
         name = "Skitterweb Menace",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20051,7 +31262,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27096] = {
         name = "Orcs are in Order",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20069,7 +31279,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27097] = {
         name = "Rise, Forsaken",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20082,7 +31291,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27098] = {
         name = "Lordaeron",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20103,7 +31311,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27099] = {
         name = "No Escape",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20124,7 +31331,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27115] = {
         name = "Ando's Call",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20140,7 +31346,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27116] = {
         name = "The Winds of Loch Modan",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20161,7 +31366,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27117] = {
         name = "Brute Strength",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20182,7 +31386,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27144] = {
         name = "The Reckoning",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20203,7 +31406,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27151] = {
         name = "Taelan Fordring's Legacy",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20224,7 +31426,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27152] = {
         name = "Unusual Behavior... Even For Gnolls",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20245,7 +31446,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27153] = {
         name = "The Good People of Hearthglen",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20266,7 +31466,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27154] = {
         name = "Bagging Bisp",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20287,7 +31486,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27155] = {
         name = "Turning Yourself In",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20308,7 +31506,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27156] = {
         name = "It's About Time!",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20329,7 +31526,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27157] = {
         name = "Drudges... <Sigh>",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20350,7 +31546,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27158] = {
         name = "The Battle for Andorhal",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20371,7 +31566,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27159] = {
         name = "Scourge First... Horde Later",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20392,7 +31586,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27160] = {
         name = "War Machines",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20413,7 +31606,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27161] = {
         name = "The Endless Flow",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20434,7 +31626,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27162] = {
         name = "Scholomancer",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20455,7 +31646,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27163] = {
         name = "Brute Strength",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20476,7 +31666,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27164] = {
         name = "Araj the Summoner",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20497,7 +31686,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27165] = {
         name = "Victory, For Now",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20518,7 +31706,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27166] = {
         name = "Go Fletch!",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20539,7 +31726,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27167] = {
         name = "A Mighty Hunger",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20560,7 +31746,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27168] = {
         name = "Those That Couldn't Let Go",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20581,7 +31766,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27169] = {
         name = "Uther's Blessing",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20597,7 +31781,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27170] = {
         name = "The Abandoned Crypt",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20613,7 +31796,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27171] = {
         name = "Ambushed!",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20634,7 +31816,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27172] = {
         name = "The Writhing Haunt",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20655,7 +31836,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27173] = {
         name = "This Is Our Army",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20676,7 +31856,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27174] = {
         name = "Combat Training",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20697,7 +31876,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27175] = {
         name = "The Menders' Stead",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20718,7 +31896,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27180] = {
         name = "Honor the Dead",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20731,7 +31908,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27181] = {
         name = "Excising the Taint",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20742,9 +31918,162 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27182] = {
+        name = "The Hermit of Witch Hill",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4501,
+        },
+    },
+    [27183] = {
+        name = "Marsh Frog Legs",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4792,
+            locations = {
+                [70] = {
+                    x = 0.55428570508957,
+                    y = 0.26276284456253,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27184] = {
+        name = "Jarl Needs Eyes",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4792,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27186] = {
+        name = "Jarl Needs a Blade",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4792,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27188] = {
+        name = "What's Haunting Witch Hill?",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23843,
+            locations = {
+                [70] = {
+                    x = 0.55580949783325,
+                    y = 0.26133424043655,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27189] = {
+        name = "The Witch's Bane",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23843,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27190] = {
+        name = "Cleansing Witch Hill",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23843,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27191] = {
+        name = "Hungry as an Ogre!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4792,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
     [27193] = {
         name = "Seek and Destroy",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20757,7 +32086,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27194] = {
         name = "Cornered and Crushed!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20778,7 +32106,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27195] = {
         name = "Nowhere to Run",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20799,7 +32126,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27197] = {
         name = "The Battle Resumes!",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20820,7 +32146,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27198] = {
         name = "Supporting the Troops",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20841,7 +32166,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27199] = {
         name = "Ashes to Ashes",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20862,7 +32186,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27201] = {
         name = "Val'kyr Incursion",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20883,7 +32206,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27202] = {
         name = "Brother Against Brother",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20904,7 +32226,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27204] = {
         name = "Aradne",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20925,7 +32246,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27205] = {
         name = "The Depravity of the Forsaken",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20946,7 +32266,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27206] = {
         name = "Alas, Andorhal",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -20965,9 +32284,220 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27210] = {
+        name = "Traitors Among Us",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23566,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27211] = {
+        name = "Propaganda War",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23566,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27212] = {
+        name = "Discrediting the Deserters",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23566,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27213] = {
+        name = "The End of the Deserters",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23566,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 350,
+            },
+        },
+    },
+    [27214] = {
+        name = "A Disturbing Development",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23951,
+        },
+    },
+    [27215] = {
+        name = "The Hermit of Swamplight Manor",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23835,
+        },
+    },
+    [27216] = {
+        name = "This Old Lighthouse",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23835,
+        },
+    },
+    [27217] = {
+        name = "Thresher Oil",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23892,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27218] = {
+        name = "Dastardly Denizens of the Deep",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23892,
+        },
+    },
+    [27219] = {
+        name = "Is it Real?",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23896,
+        },
+    },
+    [27220] = {
+        name = "Nat's Bargain",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 12919,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27221] = {
+        name = "Oh, It's Real",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 12919,
+        },
+    },
+    [27222] = {
+        name = "Take Down Tethyr!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23905,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 350,
+            },
+        },
+    },
     [27226] = {
         name = "Hair of the Dog",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -20983,9 +32513,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27229] = {
+        name = "SMASH BROODQUEEN",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 205332,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+        },
+    },
     [27231] = {
         name = "Reinforcements from Fenris",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21003,7 +32556,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27232] = {
         name = "The Waters Run Red...",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21019,9 +32571,502 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27234] = {
+        name = "Defias in Dustwallow?",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5086,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27235] = {
+        name = "Renn McGill",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5086,
+        },
+    },
+    [27236] = {
+        name = "Secondhand Diving Gear",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27237] = {
+        name = "Recover the Cargo!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27238] = {
+        name = "Jaina Must Know",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23569,
+        },
+    },
+    [27239] = {
+        name = "Survey Alcaz Island",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4968,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27240] = {
+        name = "Proof of Treachery",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4968,
+        },
+    },
+    [27241] = {
+        name = "Return to Jaina",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 1750,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27242] = {
+        name = "Raptor Captor",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23723,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27243] = {
+        name = "Unleash the Raptors",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23723,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27244] = {
+        name = "The Lost Report",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 20985,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+        },
+    },
+    [27245] = {
+        name = "Prisoners of the Grimtotems",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23723,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27246] = {
+        name = "The Orc Report",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 20985,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 25,
+            },
+        },
+    },
+    [27247] = {
+        name = "Captain Vimes",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23951,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27248] = {
+        name = "Mission to Mudsprocket",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23951,
+        },
+    },
+    [27249] = {
+        name = "Inspecting the Ruins",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4944,
+        },
+    },
+    [27251] = {
+        name = "They Call Him Smiling Jim",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4921,
+        },
+    },
+    [27252] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 20992,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27253] = {
+        name = "Inspecting the Ruins",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+    },
+    [27254] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 20992,
+        },
+    },
+    [27255] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+    },
+    [27256] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5087,
+        },
+    },
+    [27257] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5087,
+        },
+    },
+    [27258] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+    },
+    [27259] = {
+        name = "Suspicious Hoofprints",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 187273,
+        },
+    },
+    [27260] = {
+        name = "Lieutenant Paval Reethe",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 21042,
+        },
+    },
+    [27261] = {
+        name = "Questioning Reethe",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4983,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27262] = {
+        name = "Suspicious Hoofprints",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 187273,
+        },
+    },
+    [27263] = {
+        name = "Lieutenant Paval Reethe",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 21042,
+        },
+    },
+    [27264] = {
+        name = "Lieutenant Paval Reethe",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4944,
+        },
+    },
+    [27275] = {
+        name = "Together Again",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41444,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 69,
+                amount = 10,
+            },
+        },
+    },
+    [27276] = {
+        name = "Together Again",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 41421,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 81,
+                amount = 10,
+            },
+        },
+    },
+    [27284] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4944,
+        },
+    },
+    [27285] = {
+        name = "The Black Shield",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4941,
+        },
+    },
+    [27286] = {
+        name = "Daelin's Men",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4948,
+        },
+    },
+    [27287] = {
+        name = "The Deserters",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4944,
+        },
+    },
+    [27288] = {
+        name = "The Deserters",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 5089,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
     [27290] = {
         name = "To Forsaken Forward Command",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21040,9 +33085,625 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27291] = {
+        name = "Peace at Last",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4944,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    11000, 11500, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27292] = {
+        name = "Return to Krog",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4943,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1800, 2000, 2000, 2000, 2500, 2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27293] = {
+        name = "The Grimtotem Plot",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27294] = {
+        name = "More than Coincidence",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27295] = {
+        name = "Seek Out Tabetha",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+    },
+    [27296] = {
+        name = "Raze Direhorn Post!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 6546,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27297] = {
+        name = "Justice Dispensed",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 6546,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    11000, 11500, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 500,
+            },
+        },
+    },
+    [27306] = {
+        name = "Talk to Ogron",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4926,
+        },
+    },
+    [27310] = {
+        name = "No Weapons For You!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [27311] = {
+        name = "No Weapons For You!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [27312] = {
+        name = "Darkcloud Grimtotem",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [27313] = {
+        name = "Darkcloud Grimtotem",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [27314] = {
+        name = "Grimtotem Chiefs: Isha Gloomaxe",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [27315] = {
+        name = "Grimtotem Chiefs: Isha Gloomaxe",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [27316] = {
+        name = "The Rattle of Bones",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48208,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [27317] = {
+        name = "The Rattle of Bones",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48208,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [27318] = {
+        name = "Grimtotem Chiefs: Elder Stormhoof",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [27319] = {
+        name = "Grimtotem Chiefs: Elder Stormhoof",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [27320] = {
+        name = "The Writ of History",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [27321] = {
+        name = "The Writ of History",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [27323] = {
+        name = "Grimtotem Chiefs: Grundig Darkcloud",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [27324] = {
+        name = "Grimtotem Chiefs: Grundig Darkcloud",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [27325] = {
+        name = "The Drums of War",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [27326] = {
+        name = "The Drums of War",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
+    [27327] = {
+        name = "Grimtotem Chiefs: The Chief of Chiefs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [27328] = {
+        name = "Grimtotem Chiefs: The Chief of Chiefs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
+    [27329] = {
+        name = "Invoking the Serpent",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45442,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 350,
+            },
+        },
+    },
+    [27330] = {
+        name = "Invoking the Serpent",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45442,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 350,
+            },
+        },
+    },
     [27333] = {
         name = "Losing Ground",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21061,9 +33722,65 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27336] = {
+        name = "The Grimtotem Weapon",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23601,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27339] = {
+        name = "The Reagent Thief",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23601,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27340] = {
+        name = "Direhorn Raiders",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23600,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
     [27342] = {
         name = "In Time, All Will Be Revealed",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21076,7 +33793,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27345] = {
         name = "The F.C.D.",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21090,9 +33806,72 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27346] = {
+        name = "The Zeppelin Crash",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23600,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 369,
+                amount = 10,
+            },
+        },
+    },
+    [27347] = {
+        name = "Corrosion Prevention",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23797,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [27348] = {
+        name = "Secure the Cargo!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23797,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    7500, 7500, 8000, 8500, 9000, 10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
     [27349] = {
         name = "Break in Communications: Dreadwatch Outpost",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21105,7 +33884,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27350] = {
         name = "Break in Communications: Rutsak's Guard",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21116,9 +33894,56 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27357] = {
+        name = "The Captive Bride",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45277,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [27358] = {
+        name = "The Captive Bride",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45278,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 250,
+            },
+        },
+    },
     [27360] = {
         name = "Vengeance for Our Soldiers",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21131,7 +33956,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27364] = {
         name = "On Whose Orders?",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21144,7 +33968,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27367] = {
         name = "Gidwin Goldbraids",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21160,7 +33983,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27368] = {
         name = "Just Encased",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21176,7 +33998,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27369] = {
         name = "Greasing the Wheel",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21192,7 +34013,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27370] = {
         name = "Tarenar Sunstrike",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21208,7 +34028,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27371] = {
         name = "What I Do Best",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21224,7 +34043,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27372] = {
         name = "A Gift For Fiona",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21240,7 +34058,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27373] = {
         name = "Onward, to Light's Hope Chapel",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21256,7 +34073,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27381] = {
         name = "Traveling Companions",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21272,7 +34088,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27382] = {
         name = "Rough Roads",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21293,7 +34108,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27383] = {
         name = "Little Pamela",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21309,7 +34123,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27384] = {
         name = "Pamela's Doll",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21325,19 +34138,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27385] = {
         name = "Uncle Carlin",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
     },
     [27386] = {
         name = "A Strange Historian",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
     },
     [27387] = {
         name = "Villains of Darrowshire",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21353,7 +34163,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27388] = {
         name = "Heroes of Darrowshire",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21369,13 +34178,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27389] = {
         name = "Marauders of Darrowshire",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
     },
     [27390] = {
         name = "The Battle of Darrowshire",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21391,19 +34198,16 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27391] = {
         name = "Hidden Treasures",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
     },
     [27392] = {
         name = "I'm Not Supposed to Tell You This",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
     },
     [27401] = {
         name = "What Tomorrow Brings",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21416,7 +34220,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27405] = {
         name = "Fall Back!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21437,7 +34240,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27406] = {
         name = "A Man Named Godfrey",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21448,9 +34250,206 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27407] = {
+        name = "Bloodfen Feathers",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23579,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27408] = {
+        name = "Banner of the Stonemaul",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23579,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27409] = {
+        name = "The Essence of Enmity",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23579,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27410] = {
+        name = "Spirits of Stonemaul Hold",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23579,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27411] = {
+        name = "Challenge to the Black Flight",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23579,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    11000, 11500, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27412] = {
+        name = "WANTED: Goreclaw the Ravenous",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 186426,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [27413] = {
+        name = "Catch a Dragon by the Tail",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23570,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 369,
+                amount = 250,
+            },
+        },
+    },
+    [27414] = {
+        name = "Identifying the Brood",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4501,
+        },
+    },
+    [27415] = {
+        name = "The Brood of Onyxia",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4501,
+        },
+    },
+    [27416] = {
+        name = "The Brood of Onyxia",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4501,
+        },
+    },
+    [27417] = {
+        name = "The Brood of Onyxia",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4500,
+        },
+    },
+    [27418] = {
+        name = "Challenge Overlord Mok'Morokk",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4500,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    11000, 11500, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
     [27420] = {
         name = "Postponing the Inevitable",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21471,7 +34470,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27421] = {
         name = "Amidst Death, Life",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21492,7 +34490,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27422] = {
         name = "A City Under Siege",
-        level = -1,
         requiredLevel = 42,
         maxLevel = 60,
         rewards = {
@@ -21508,7 +34505,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27423] = {
         name = "Resistance is Futile",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21527,9 +34523,101 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27424] = {
+        name = "Overlord Mok'Morokk's Concern",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4500,
+        },
+    },
+    [27425] = {
+        name = "A Grim Connection",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4944,
+        },
+    },
+    [27426] = {
+        name = "Confirming the Suspicion",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23568,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27427] = {
+        name = "Arms of the Grimtotems",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23568,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4000, 4500, 4500, 5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27428] = {
+        name = "Tabetha's Assistance",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 23568,
+        },
+    },
+    [27429] = {
+        name = "Raze Direhorn Post!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 6546,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    11000, 11500, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27430] = {
+        name = "Justice for the Hyals",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 6546,
+        },
+    },
     [27432] = {
         name = "Zaeldarr the Outcast",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21550,7 +34638,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27438] = {
         name = "The Great Escape",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21569,9 +34656,40 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27446] = {
+        name = "Tanaris is Calling",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40027,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 54,
+                amount = 10,
+            },
+        },
+    },
+    [27447] = {
+        name = "Tanaris is Calling",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40028,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 10,
+            },
+        },
+    },
     [27448] = {
         name = "The Trek Continues",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21587,7 +34705,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27449] = {
         name = "Honor and Strength",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21603,7 +34720,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27450] = {
         name = "Frederick's Fish Fancy",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21624,7 +34740,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27451] = {
         name = "To Kill With Purpose",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21637,7 +34752,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27452] = {
         name = "Dark Garb",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21650,7 +34764,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27453] = {
         name = "Catalysm",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21663,7 +34776,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27454] = {
         name = "Just a Drop in the Bucket",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21684,7 +34796,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27455] = {
         name = "Boys Will Be Boys",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21700,7 +34811,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27456] = {
         name = "Gathering Some Grub(s)",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21721,7 +34831,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27457] = {
         name = "An Opportune Alliance",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21737,7 +34846,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27458] = {
         name = "Smokey and the Bandage",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21753,7 +34861,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27459] = {
         name = "The Brotherhood of Light",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21774,7 +34881,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27460] = {
         name = "Soft Landing",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21787,7 +34893,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27461] = {
         name = "To Take the Abbey",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21808,7 +34913,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27462] = {
         name = "To Take the Barracks",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21829,7 +34933,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27463] = {
         name = "A Boyhood Dream",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21850,7 +34953,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27464] = {
         name = "Argent Call: The Trial of the Crypt",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21871,7 +34973,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27465] = {
         name = "Argent Call: The Noxious Glade",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21892,7 +34993,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27466] = {
         name = "Argent Call: Northdale",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21908,7 +35008,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27467] = {
         name = "Buried Blades",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -21929,7 +35028,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27472] = {
         name = "Rise, Godfrey",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21950,7 +35048,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27474] = {
         name = "Breaking the Barrier",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21971,7 +35068,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27475] = {
         name = "Unyielding Servitors",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -21992,7 +35088,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27476] = {
         name = "Dalar Dawnweaver",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22005,7 +35100,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27477] = {
         name = "The Corpulent One",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22026,7 +35120,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27478] = {
         name = "Relios the Relic Keeper",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22039,7 +35132,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27479] = {
         name = "Righteous Indignation",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22060,7 +35152,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27480] = {
         name = "Ley Energies",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22081,7 +35172,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27481] = {
         name = "Out of the Ziggurat",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22097,7 +35187,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27482] = {
         name = "Into the Flames",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22113,7 +35202,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27483] = {
         name = "Practical Vengeance",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22126,7 +35214,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27484] = {
         name = "Only One May Enter",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22139,7 +35226,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27487] = {
         name = "Ix'lar the Underlord",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22155,7 +35241,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27488] = {
         name = "Impatience",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22171,7 +35256,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27489] = {
         name = "Nobody to Blame but Myself",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22187,7 +35271,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27510] = {
         name = "A Wolf in Bear's Clothing",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22205,7 +35288,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27512] = {
         name = "Transdimensional Warfare: Chapter I",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22218,7 +35300,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27513] = {
         name = "Transdimensional Warfare: Chapter II",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22231,7 +35312,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27518] = {
         name = "Transdimensional Warfare: Chapter III",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22244,7 +35324,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27521] = {
         name = "Wretched Hive of Scum and Villainy",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22260,7 +35339,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27522] = {
         name = "Beat it Out of Them",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22276,7 +35354,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27523] = {
         name = "Duskwing, Oh How I Hate Thee...",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22292,7 +35369,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27524] = {
         name = "Blind Fury",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22308,7 +35384,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27525] = {
         name = "Guardians of Stratholme",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22329,7 +35404,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27526] = {
         name = "Gidwin's Fate Revealed",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22350,7 +35424,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27527] = {
         name = "Journey's End",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22371,7 +35444,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27528] = {
         name = "Scourged Mass",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22392,7 +35464,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27529] = {
         name = "Defenders of Darrowshire",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22413,7 +35484,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27530] = {
         name = "The Corpsebeasts",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22434,7 +35504,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27531] = {
         name = "Counter-Plague Research",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22455,7 +35524,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27532] = {
         name = "The Plaguewood Tower",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22476,7 +35544,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27533] = {
         name = "A Fate Worse Than Butchery",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22492,7 +35559,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27534] = {
         name = "Augustus' Receipt Book",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22508,7 +35574,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27535] = {
         name = "Just a Little Touched",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22527,9 +35592,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27536] = {
+        name = "Mostly Harmless",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45786,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [27539] = {
         name = "Add 'em to the Pile",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22550,7 +35633,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27542] = {
         name = "Taking the Battlefront",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22563,7 +35645,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27544] = {
         name = "Cenarion Tenacity",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22584,7 +35665,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27547] = {
         name = "Of No Consequence",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22597,7 +35677,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27548] = {
         name = "Lessons in Fear",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22610,7 +35689,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27550] = {
         name = "Pyrewood's Fall",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22623,7 +35701,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27551] = {
         name = "The Baroness' Missive",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22644,7 +35721,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27574] = {
         name = "I Never Forget a Face",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22657,7 +35733,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27575] = {
         name = "From the Belly of the Beast",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22678,7 +35753,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27577] = {
         name = "7th Legion Battle Plans",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22691,7 +35765,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27580] = {
         name = "Sowing Discord",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22702,9 +35775,46 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27587] = {
+        name = "Maliciously Delicious",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45786,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27592] = {
+        name = "Drinks on the Rocks",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46010,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [27594] = {
         name = "On Her Majesty's Secret Service",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22723,9 +35833,84 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27597] = {
+        name = "Crazy Larry",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45786,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27598] = {
+        name = "Kill Gil",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45948,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27599] = {
+        name = "Can't Take It With Them",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45948,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27600] = {
+        name = "In With a Bang",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45948,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [27601] = {
         name = "Cities in Dust",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -22746,7 +35931,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27612] = {
         name = "Victory From Within",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22767,7 +35951,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27613] = {
         name = "The Assassin",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22788,7 +35971,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27614] = {
         name = "Scarlet Salvage",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22809,7 +35991,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27615] = {
         name = "The Wrathcaster",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22830,7 +36011,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27616] = {
         name = "The Huntsman",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22851,7 +36031,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27617] = {
         name = "Befouled No More",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22872,7 +36051,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27618] = {
         name = "Argent Upheaval",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22893,7 +36071,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27619] = {
         name = "The Commander",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22914,7 +36091,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27620] = {
         name = "Like Rats",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22935,7 +36111,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27625] = {
         name = "In Defense of Quel'Danil",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -22956,7 +36131,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27626] = {
         name = "The Highvale Documents",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -22975,9 +36149,46 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27656] = {
+        name = "Croc-Out",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45786,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27663] = {
+        name = "Tastes Like Strider",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46182,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [27683] = {
         name = "Into the Woods",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -22993,7 +36204,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [27684] = {
         name = "Visitors",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -23007,9 +36217,121 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27691] = {
+        name = "Marshfin Madness",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46172,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27693] = {
+        name = "The Warden's Game",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27694] = {
+        name = "Pool of Tears",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46071,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27704] = {
+        name = "Legends of the Sunken Temple",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46071,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27705] = {
+        name = "Step One: The Priestess",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46071,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27709] = {
+        name = "The Sentinel's Game",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27713] = {
+        name = "The Day that Deathwing Came",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 2785,
+        },
+    },
+    [27714] = {
+        name = "The Day that Deathwing Came: The Real Story",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 2920,
+        },
+    },
+    [27715] = {
+        name = "The Day that Deathwing Came: What Really Happened",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 4618,
+        },
+    },
     [27725] = {
         name = "Quel'Danil Lodge",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -23023,9 +36345,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27740] = {
+        name = "Baba Bogbrew",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45948,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [27746] = {
         name = "Empire of Dirt",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23036,9 +36376,2630 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [27757] = {
+        name = "The Darkest Depths",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46172,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27762] = {
+        name = "Fuselight, Ho!",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27763] = {
+        name = "To Fuselight Proper",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46650,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 10,
+            },
+        },
+    },
+    [27764] = {
+        name = "A Strange Request",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46652,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 75,
+            },
+        },
+    },
+    [27765] = {
+        name = "First Sample: Wild Eggs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46654,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27766] = {
+        name = "Second Sample: Whelps",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46654,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27768] = {
+        name = "Step Two: The Bloodletter",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46071,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27769] = {
+        name = "Rhea Revealed",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46654,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27770] = {
+        name = "Lifting the Veil",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46654,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27771] = {
+        name = "Third Sample: Implanted Eggs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46654,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27772] = {
+        name = "The Venerable Doctor Blam",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46655,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27773] = {
+        name = "Step Three: Prophet",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46071,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27774] = {
+        name = "Easily Swayed",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46652,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 250,
+            },
+        },
+    },
+    [27775] = {
+        name = "When the Going Gets Tough, Cheat",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46653,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27776] = {
+        name = "It's Goat Time, Baby",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46653,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 169,
+                amount = 250,
+            },
+        },
+    },
+    [27789] = {
+        name = "Troggish Troubles",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46664,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27791] = {
+        name = "Dustwind Dig",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 10,
+            },
+        },
+    },
+    [27792] = {
+        name = "All's Fair in Love, War, and Archaeology",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [27793] = {
+        name = "Ancient Protectors",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27794] = {
+        name = "Return to Blam",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27795] = {
+        name = "Tides of Darkness",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46676,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27796] = {
+        name = "The Warden's Pawn",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27797] = {
+        name = "The Sentinel's Pawn",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27818] = {
+        name = "Slithering Signs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46172,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27821] = {
+        name = "Orcs and Humans",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46676,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27822] = {
+        name = "Lumbering Oafs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46676,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27823] = {
+        name = "A Dwarf's Got Needs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 2860,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [27824] = {
+        name = "The Good Stuff",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 47,
+                amount = 250,
+            },
+        },
+    },
+    [27825] = {
+        name = "Survival of the Fattest",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27826] = {
+        name = "Into the Dragon's Mouth",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27827] = {
+        name = "The Swift, the Fierce, and the Stout",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27828] = {
+        name = "Eric, the Utility Dwarf",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27829] = {
+        name = "The Wrath of a Dragonflight",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27830] = {
+        name = "Their Hunt Continues",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27831] = {
+        name = "The Sorrow and the Fury",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27832] = {
+        name = "The Hidden Clutch",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27833] = {
+        name = "Half-Ton Holdouts",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27834] = {
+        name = "Baelog, the Glass Cannon",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27835] = {
+        name = "Olaf, the Big Fella'",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27840] = {
+        name = "Draenethyst Crystals",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 18221,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [27843] = {
+        name = "Reinforcements Denied",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46676,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27845] = {
+        name = "Marking the Fallen",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46676,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27849] = {
+        name = "Assault on Stonard",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46676,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 250,
+            },
+        },
+    },
+    [27851] = {
+        name = "Cutting Supply",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46676,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 350,
+            },
+        },
+    },
+    [27852] = {
+        name = "Orcs and Humans",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27853] = {
+        name = "Lumbering Oafs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27854] = {
+        name = "Tides of Darkness",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27855] = {
+        name = "Reinforcements Denied",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27856] = {
+        name = "Marking the Fallen",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27857] = {
+        name = "We're Under Attack!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 350,
+            },
+        },
+    },
+    [27858] = {
+        name = "Rheastrasza's Gift",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27859] = {
+        name = "The Egg Lives On",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46664,
+            locations = {
+                [15] = {
+                    {
+                        x = 0.179762,
+                        y = 0.305515,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27860] = {
+        name = "The Lost Ones",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 18221,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [27869] = {
+        name = "The Dragon and the Temple",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46172,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27870] = {
+        name = "To Marshtide Watch",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27871] = {
+        name = "To Stonard",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46071,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27875] = {
+        name = "Prayerblossom",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [27876] = {
+        name = "Secrets of the Mire",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [27877] = {
+        name = "The Morons' League",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46759,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [27878] = {
+        name = "Forcible Acquisition",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46758,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [27879] = {
+        name = "Survival of the Fattest",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46660,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27880] = {
+        name = "Half-Ton Holdouts",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 1068,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27881] = {
+        name = "Bloodwatcher Point",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46664,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 10,
+            },
+        },
+    },
+    [27882] = {
+        name = "It's Not About History, It's About Power",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46757,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 250,
+            },
+        },
+    },
+    [27883] = {
+        name = "The Warden's Pawn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46757,
+        },
+    },
+    [27884] = {
+        name = "The Sentinel's Pawn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46757,
+        },
+    },
+    [27885] = {
+        name = "The Warden's Game",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 206335,
+        },
+    },
+    [27886] = {
+        name = "The Sentinel's Game",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 206336,
+        },
+    },
+    [27887] = {
+        name = "Ancient Protectors",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27888] = {
+        name = "Return to Blam",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 206374,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27889] = {
+        name = "New Kargath",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46664,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27890] = {
+        name = "The Bad Dogs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46654,
+            locations = {
+                [15] = {
+                    {
+                        x = 0.18139,
+                        y = 0.425186,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27891] = {
+        name = "Amakkar, Jack of All Trades",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47011,
+        },
+    },
+    [27892] = {
+        name = "Jurrix the Striker",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47018,
+        },
+    },
+    [27893] = {
+        name = "Gargal, the Behemoth",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47013,
+        },
+    },
+    [27894] = {
+        name = "The Wrath of a Dragonflight",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47021,
+        },
+    },
+    [27895] = {
+        name = "Their Hunt Continues",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27896] = {
+        name = "The Sorrow and the Fury",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27897] = {
+        name = "The Hidden Clutch",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27898] = {
+        name = "Rheastrasza's Gift",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46654,
+            locations = {
+                [15] = {
+                    {
+                        x = 0.159552,
+                        y = 0.333785,
+                    },
+                },
+            },
+        },
+    },
+    [27902] = {
+        name = "The Purespring",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [27904] = {
+        name = "Breath of Mist",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 930,
+                amount = 250,
+            },
+        },
+    },
+    [27906] = {
+        name = "Neeka Bloodscar",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 7623,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27907] = {
+        name = "Prayerblossom",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47041,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27908] = {
+        name = "Secrets of the Mire",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47041,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27909] = {
+        name = "The Purespring",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47041,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27910] = {
+        name = "Last Regrets",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47041,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 250,
+            },
+        },
+    },
+    [27911] = {
+        name = "With Dying Breath",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47041,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27912] = {
+        name = "The Titans' Trove",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27913] = {
+        name = "The Titans' Trove",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [27914] = {
+        name = "Blessing of the Green Dragonflight",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46071,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27916] = {
+        name = "Ruag's Report",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47041,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27918] = {
+        name = "The Harborage",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 18221,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27919] = {
+        name = "Onward to the Blasted Lands",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 17127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27927] = {
+        name = "Down to the Scar",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46660,
+        },
+    },
+    [27930] = {
+        name = "Devastation",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27956] = {
+        name = "Lunk's Task",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47269,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27957] = {
+        name = "Lunk No Kill",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27958] = {
+        name = "A Proper Antivenom",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47268,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27960] = {
+        name = "The Fewer, the Better",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47267,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27961] = {
+        name = "Out of Place",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47267,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27962] = {
+        name = "A Lumbering Relic",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47267,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27963] = {
+        name = "A New Master... But Who?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47266,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27964] = {
+        name = "Dig-Boss Dinwhisker",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47266,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27965] = {
+        name = "Thorium Point: The Seat of the Brotherhood",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47266,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [27976] = {
+        name = "Curse These Fat Fingers",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14627,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27977] = {
+        name = "Recon Essentials",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14626,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27979] = {
+        name = "Dark Ministry",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14627,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [27980] = {
+        name = "The Spiders Have to Go",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14634,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27981] = {
+        name = "Heat That Just Don't Quit",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14627,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [27982] = {
+        name = "Twilight Collars",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14626,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27984] = {
+        name = "Lunthistle's Tale",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 8436,
+        },
+    },
+    [27985] = {
+        name = "Prayer to Elune",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 8436,
+        },
+    },
+    [27986] = {
+        name = "In the Hall of the Mountain-Lord",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14627,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [27989] = {
+        name = "Ruumbo Demands Honey",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 206585,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [27994] = {
+        name = "Ruumbo Demands Justice",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 206585,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [27995] = {
+        name = "Dance for Ruumbo!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 206585,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [27997] = {
+        name = "The Corruption of the Jadefire",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10923,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28000] = {
+        name = "Do the Imp-Possible",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47341,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28028] = {
+        name = "Siege!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28029] = {
+        name = "Set Them Ablaze!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28030] = {
+        name = "They Build a Better Bullet",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28031] = {
+        name = "Special Delivery for Brivelthwerp",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40726,
+        },
+    },
+    [28032] = {
+        name = "The Mysteries of the Fire-Gizzard",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47440,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28033] = {
+        name = "Deceit",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28034] = {
+        name = "Lunk's Adventure: Rendan's Weakness",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47429,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28035] = {
+        name = "The Mountain-Lord's Support",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [28042] = {
+        name = "Special Delivery for Brivelthwerp",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 40727,
+        },
+    },
+    [28044] = {
+        name = "Touch the Untouchable",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47366,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28045] = {
+        name = "The Greatest Flavor in the World!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47383,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28047] = {
+        name = "Freezing the Pipes",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47383,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28048] = {
+        name = "That Smart One's Gotta Go",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47383,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28049] = {
+        name = "See the Invisible",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47366,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28051] = {
+        name = "We All Scream for Ice Cream... and then Die!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47383,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28052] = {
+        name = "Operation: Stir the Cauldron",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14625,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [28053] = {
+        name = "Lunk Like Your Style",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28054] = {
+        name = "Slavery is Bad",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28055] = {
+        name = "Sweet, Horrible Freedom",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28056] = {
+        name = "Rise, Obsidion",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47393,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28057] = {
+        name = "Kill 'em With Sleep Deprivation",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14628,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28058] = {
+        name = "Look at the Size of It!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28060] = {
+        name = "Twisted Twilight Ties",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14626,
+            locations = {
+                [32] = {
+                    {
+                        x = 0.42237,
+                        y = 0.344891,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [28061] = {
+        name = "Minions of Calcinder",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14625,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28062] = {
+        name = "From Whence He Came",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14625,
+            locations = {
+                [32] = {
+                    {
+                        x = 0.500118,
+                        y = 0.390486,
+                    },
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [28064] = {
+        name = "Welcome to the Brotherhood",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 500,
+            },
+        },
+    },
     [28084] = {
         name = "Might of the Krom'gar",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -23049,9 +39010,74 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28085] = {
+        name = "Trouble at Highperch",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 45442,
+        },
+    },
+    [28086] = {
+        name = "Free the Pridelings",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47471,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28087] = {
+        name = "Death to all Trappers!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47471,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28088] = {
+        name = "Release Heartrazor",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47471,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28089] = {
         name = "Warchief's Command: Hillsbrad Foothills!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23064,7 +39090,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28096] = {
         name = "Welcome to the Machine",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23075,9 +39100,94 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28098] = {
+        name = "The Twilight Skymaster",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47471,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28099] = {
+        name = "Rasha'krak",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14625,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [28100] = {
+        name = "A Talking Totem",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11554,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 75,
+            },
+        },
+    },
+    [28102] = {
+        name = "Fight the Power",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9116,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28111] = {
         name = "Trouble at Azurelode",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23088,9 +39198,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28113] = {
+        name = "Break the Unbreakable",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47341,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28114] = {
         name = "Glorious Harvest",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23103,7 +39231,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28115] = {
         name = "Past Their Prime",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23114,9 +39241,209 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28116] = {
+        name = "Crying Violet",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10922,
+            locations = {
+                [77] = {
+                    x = 0.43973934650421,
+                    y = 0.61818504333496,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28119] = {
+        name = "Purity From Corruption",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 51664,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28121] = {
+        name = "Forces of Jaedenar",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11019,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28124] = {
+        name = "On to the Bulwark",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47471,
+        },
+    },
+    [28125] = {
+        name = "Something to Wear",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47580,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28126] = {
+        name = "Dousing the Flames of Protection",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 51664,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28127] = {
+        name = "Break Them Out",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47580,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28128] = {
+        name = "The Inner Circle",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 51664,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28129] = {
+        name = "The Demon Prince",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 51664,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28131] = {
+        name = "Twin Temptresses",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28136] = {
+        name = "Behind You!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47580,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28138] = {
         name = "Human Infestation",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23127,9 +39454,55 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28139] = {
+        name = "Codemaster's Code",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47580,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28140] = {
+        name = "The Elder Crone",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47580,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28142] = {
+        name = "To the Withering",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28143] = {
+        name = "To the Withering",
+        requiredLevel = 40,
+    },
     [28144] = {
         name = "Thieving Little Monsters!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23150,7 +39523,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28146] = {
         name = "Coastal Delicacies!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23169,9 +39541,85 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28148] = {
+        name = "Culling the Corrupted",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            locations = {
+                [62] = {
+                    x = 0.66603940725327,
+                    y = 0.97993260622025,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28150] = {
+        name = "An Arcane Ally",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10923,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28152] = {
+        name = "Jaedenar Awaits",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9116,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28153] = {
+        name = "Shadow Lord Fel'dan",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28154] = {
         name = "Muckgill's Flipper or Something...",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23182,9 +39630,23 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28155] = {
+        name = "Lord Banehollow",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28156] = {
         name = "Deep Mine Rescue",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23203,9 +39665,113 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28157] = {
+        name = "Four Twilight Elements",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47745,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28158] = {
+        name = "Unbound",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47745,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28159] = {
+        name = "The Doomstone",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47745,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28160] = {
+        name = "Spread the Word",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47745,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 500,
+            },
+        },
+    },
+    [28161] = {
+        name = "Spread the Word",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47745,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 500,
+            },
+        },
+    },
     [28168] = {
         name = "Trouble at the Sludge Fields",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23216,9 +39782,188 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28172] = {
+        name = "Done Nothing Wrong",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47779,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28174] = {
+        name = "Burning Vengeance",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28177] = {
+        name = "Stocking Up",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28178] = {
+        name = "A Future Project",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28179] = {
+        name = "Mud Hunter",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28180] = {
+        name = "The Sand, the Cider, and the Orb",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47811,
+        },
+    },
+    [28181] = {
+        name = "Warlocks Have the Neatest Stuff",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14437,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28182] = {
+        name = "Shadow Boxing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14437,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28183] = {
+        name = "Return to Keeshan",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14437,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28184] = {
+        name = "Chiselgrip, the Heart of the Steppes",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47811,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28189] = {
         name = "Do the Right Thing",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23229,9 +39974,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28190] = {
+        name = "The Tainted Ooze",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47692,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28192] = {
         name = "No One Here Gets Out Alive",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23244,7 +40007,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28196] = {
         name = "The Battle for Hillsbrad",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23257,7 +40019,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28197] = {
         name = "Discretion is Key",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23270,7 +40031,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28199] = {
         name = "For Science!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23289,9 +40049,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28202] = {
+        name = "A Perfect Costume",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48001,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
     [28206] = {
         name = "Little Girl Lost",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23302,9 +40085,46 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28207] = {
+        name = "A Slimy Situation",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47696,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28208] = {
+        name = "Winna's Kitten",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47696,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28209] = {
         name = "Freedom for Lydon",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23315,9 +40135,281 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28213] = {
+        name = "Hazzard Disposal",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47696,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28214] = {
+        name = "Cleanup at Bloodvenom Post",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47692,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28217] = {
+        name = "WANTED: The Demon Hunter",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47843,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28218] = {
+        name = "A Destiny of Flame and Sorrow",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47923,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28219] = {
+        name = "Buzzers for Baby",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48032,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28220] = {
+        name = "Seeking Soil",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28221] = {
+        name = "These Roots Were Made For Stompin'",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48042,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28222] = {
+        name = "Singin' in the Sun",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28224] = {
+        name = "The Last Protector",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48042,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28225] = {
+        name = "Prove Yer Allegiance",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48033,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28226] = {
+        name = "Scrapped Golems",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48033,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 250,
+            },
+        },
+    },
+    [28227] = {
+        name = "Golem Training",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48033,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [28228] = {
+        name = "Rejoining the Forest",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48044,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28229] = {
+        name = "Nature and Nurture",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48126,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28230] = {
         name = "Protocol",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23338,7 +40430,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28231] = {
         name = "Do it for Twinkles",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23356,7 +40447,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28235] = {
         name = "Burnside Must Fall",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23377,7 +40467,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28237] = {
         name = "A Blight Upon the Land",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23388,9 +40477,51 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28239] = {
+        name = "Into the Black Tooth Hovel",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48109,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28245] = {
+        name = "Grunt Work",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48085,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28246] = {
+        name = "Strategic Cuts",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
     [28251] = {
         name = "Trouble at Southshore",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23401,9 +40532,483 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28252] = {
+        name = "The Kodocaller's Horn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48085,
+        },
+    },
+    [28253] = {
+        name = "Taking the Horn For Ourselves",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28254] = {
+        name = "A Needle in a Hellhole",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48109,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [28256] = {
+        name = "The Skull of Gul'dan",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47923,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28257] = {
+        name = "The Fall of Tichondrius",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47923,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28261] = {
+        name = "Deceivers In Our Midst",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47923,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28264] = {
+        name = "Navarax's Gambit",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47923,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28265] = {
+        name = "General Thorg'izog",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48109,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28266] = {
+        name = "Trial by Magma",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48133,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28278] = {
+        name = "I Am the Law and I Am the Lash",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48133,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28279] = {
+        name = "Abuse of Power",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28286] = {
+        name = "Enough Damage For One Day",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28288] = {
+        name = "Open Their Eyes",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47341,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28305] = {
+        name = "The Fate of Bloodvenom Post",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47617,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28306] = {
+        name = "Whisperwind Grove",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47696,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28310] = {
+        name = "Morgan's Vigil",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48110,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28311] = {
+        name = "Blackened Ashes",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28312] = {
+        name = "Latent Demons of the Land",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28313] = {
+        name = "A Heap of Delicious Worg",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28314] = {
+        name = "Blood Tour",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48306,
+        },
+    },
+    [28315] = {
+        name = "Draconic Vanguard",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48306,
+        },
+    },
+    [28316] = {
+        name = "A Deal With a Dragon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48306,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28317] = {
+        name = "A Delivery for Thorg'izog",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28318] = {
+        name = "A Delivery for Neeralak",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28319] = {
+        name = "A Delivery for Xi'lun",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28320] = {
+        name = "Assault on Dreadmaul Rock",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48306,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28321] = {
+        name = "Glory Amidst Chaos",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28322] = {
+        name = "The Spoils of War",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+    },
     [28324] = {
         name = "Studies in Lethality",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23424,7 +41029,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28325] = {
         name = "Green Living",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23443,9 +41047,46 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28326] = {
+        name = "Placing the Pawns",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28327] = {
+        name = "Locked and Loaded",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28329] = {
         name = "Angry Scrubbing Bubbles",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23458,7 +41099,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28330] = {
         name = "Trail of Filth",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23471,7 +41111,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28331] = {
         name = "Helcular's Rod Giveth...",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23484,7 +41123,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28332] = {
         name = "Helcular's Command",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23503,9 +41141,238 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28333] = {
+        name = "It's Time to Oil Up",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28334] = {
+        name = "A Flare Fight",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28335] = {
+        name = "Turn It Off! Turn It Off!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48333,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28336] = {
+        name = "Slap and Cap",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28337] = {
+        name = "The Shredders of Irontree",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48493,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [28338] = {
+        name = "Deadwood of the North",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15395,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 350,
+            },
+        },
+    },
+    [28339] = {
+        name = "Is Your Oil Running?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28340] = {
+        name = "A Bomb Deal",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48333,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28341] = {
+        name = "Collecting Corruption",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48339,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28342] = {
+        name = "Fel To Pieces",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48339,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28344] = {
         name = "Can You Smell What the Lok'tar is Cooking?",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23518,7 +41385,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28345] = {
         name = "*Gurgle* HELP! *Gurgle*",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23544,7 +41410,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28348] = {
         name = "Stormpike Rendezvous",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23570,7 +41435,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28354] = {
         name = "Kasha Will Fly Again",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23588,7 +41452,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28355] = {
         name = "Terrible Little Creatures",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23599,9 +41462,292 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28357] = {
+        name = "Take it to the Tree",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28358] = {
+        name = "Hunting the Damned",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48349,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28359] = {
+        name = "The Core of Kroshius",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48349,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28360] = {
+        name = "Running Their Course",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48459,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28361] = {
+        name = "Squirrely Clean",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48459,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28362] = {
+        name = "Stupid Drizle!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48461,
+            locations = {
+                [77] = {
+                    x = 0.64097648859024,
+                    y = 0.10280406475067,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [28364] = {
+        name = "The Chieftain's Key",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47556,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 350,
+            },
+        },
+    },
+    [28366] = {
+        name = "Disarming Bears",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15395,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [28368] = {
+        name = "Fire in the Hole!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 207104,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 350,
+            },
+        },
+    },
+    [28370] = {
+        name = "Wisp-napping",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 250,
+            },
+        },
+    },
+    [28372] = {
+        name = "Back to Business",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28373] = {
+        name = "Timbermaw Hold",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 25,
+            },
+        },
+    },
+    [28374] = {
+        name = "Weeding the Lawn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48459,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28375] = {
         name = "The Road to Purgation",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23617,9 +41763,286 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28380] = {
+        name = "Pikwik in Peril",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48127,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28381] = {
+        name = "The Denmother",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48491,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28382] = {
+        name = "Enemy at our Roots",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47931,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [28383] = {
+        name = "Wisps of the Woods",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48492,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 250,
+            },
+        },
+    },
+    [28384] = {
+        name = "Into the Clearing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47931,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 75,
+            },
+        },
+    },
+    [28385] = {
+        name = "Oil and Irony",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48493,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [28386] = {
+        name = "Borrowed Bombs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48493,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [28387] = {
+        name = "Burnout",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48493,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [28388] = {
+        name = "Bloody Wages",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48493,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 250,
+            },
+        },
+    },
+    [28389] = {
+        name = "Report to the Denmother",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48493,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1134,
+                amount = 350,
+            },
+        },
+    },
+    [28392] = {
+        name = "The Timbermaw Tribe",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47931,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 25,
+            },
+        },
+    },
+    [28395] = {
+        name = "Feathers for Nafien",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 576,
+                amount = 500,
+            },
+        },
+    },
+    [28396] = {
+        name = "Feathers for Grazle",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 576,
+                amount = 500,
+            },
+        },
+    },
     [28397] = {
         name = "They Will Never Expect This...",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23645,7 +42068,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28400] = {
         name = "Heroes of the Horde!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23669,9 +42091,825 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28415] = {
+        name = "SEVEN! YUP!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9177,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28417] = {
+        name = "Done Nothing Wrong",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 47779,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28418] = {
+        name = "Burning Vengeance",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48559,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28419] = {
+        name = "Stocking Up",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48559,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28420] = {
+        name = "A Future Project",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48559,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28421] = {
+        name = "Mud Hunter",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48559,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28422] = {
+        name = "The Sand, the Cider, and the Orb",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48559,
+        },
+    },
+    [28423] = {
+        name = "Warlocks Have the Neatest Stuff",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14437,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28424] = {
+        name = "Shadow Boxing",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14437,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28425] = {
+        name = "Return to Ariok",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14437,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28426] = {
+        name = "Chiselgrip, the Heart of the Steppes",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48559,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28427] = {
+        name = "A Needle in a Hellhole",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48568,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [28428] = {
+        name = "A Perfect Costume",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 350,
+            },
+        },
+    },
+    [28432] = {
+        name = "Into the Black Tooth Hovel",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48568,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28433] = {
+        name = "Grunt Work",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48085,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28434] = {
+        name = "Strategic Cuts",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28435] = {
+        name = "The Kodocaller's Horn",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48085,
+        },
+    },
+    [28436] = {
+        name = "Taking the Horn For Ourselves",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28437] = {
+        name = "General Thorg'izog",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48568,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28438] = {
+        name = "Trial by Magma",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48133,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28439] = {
+        name = "I Am the Law and I Am the Lash",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48133,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28440] = {
+        name = "Abuse of Power",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28441] = {
+        name = "Enough Damage For One Day",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28442] = {
+        name = "Flame Crest",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48568,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28443] = {
+        name = "Blackened Ashes",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28444] = {
+        name = "Latent Demons of the Land",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28445] = {
+        name = "A Heap of Delicious Worg",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28446] = {
+        name = "Blood Tour",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48565,
+        },
+    },
+    [28447] = {
+        name = "Draconic Vanguard",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48565,
+        },
+    },
+    [28448] = {
+        name = "A Deal With a Dragon",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48565,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28449] = {
+        name = "Placing the Pawns",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28450] = {
+        name = "A Delivery for Thorg'izog",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28451] = {
+        name = "A Delivery for Neeralak",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28452] = {
+        name = "A Delivery for Xi'lun",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28453] = {
+        name = "Locked and Loaded",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28454] = {
+        name = "Assault on Dreadmaul Rock",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48565,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28455] = {
+        name = "Glory Amidst Chaos",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28456] = {
+        name = "The Spoils of War",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48569,
+        },
+    },
+    [28460] = {
+        name = "Threat of the Winterfall",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 350,
+            },
+        },
+    },
+    [28464] = {
+        name = "Falling to Corruption",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9298,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [28467] = {
+        name = "Mystery Goo",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "object",
+            id = 207179,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    3500, 4000, 4500, 4500, 4500, 5000, 5000, 5000, 5000, 5500, 5500, 5500, 6000, 6000, 6000, 6000, 6500, 6500, 6500, 6500, 7000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [28469] = {
+        name = "Winterfall Runners",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [28470] = {
+        name = "High Chief Winterfall",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 500,
+            },
+        },
+    },
+    [28471] = {
+        name = "The Final Piece",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
+    [28472] = {
+        name = "Words of the High Chief",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 577,
+                amount = 250,
+            },
+        },
+    },
+    [28479] = {
+        name = "The Ruins of Kel'Theril",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10920,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28484] = {
         name = "The Heart of the Matter",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23684,7 +42922,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28485] = {
         name = "Yetimus the Yeti Lord",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23697,7 +42934,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28487] = {
         name = "Humbert's Personal Problems",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23718,7 +42954,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28489] = {
         name = "Stagwiches",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23739,13 +42974,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28490] = {
         name = "Hero's Call: Darkshore!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 49748,
-            name = "Hero's Herald",
         },
         rewards = {
             {
@@ -23763,15 +42996,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28491] = {
+        name = "Not Fireflies, Flameflies",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10260,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28492] = {
         name = "Hero's Call: Ashenvale!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 49748,
-            name = "Hero's Herald",
         },
         rewards = {
             {
@@ -23791,7 +43041,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28493] = {
         name = "Warchief's Command: Ashenvale!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23812,7 +43061,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28494] = {
         name = "Warchief's Command: Northern Barrens!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -23833,7 +43081,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28495] = {
         name = "A Fighting Chance",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23859,7 +43106,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28496] = {
         name = "Warchief's Command: Azshara!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -23878,9 +43124,52 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28503] = {
+        name = "Hero's Call: Thousand Needles!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49748,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 10,
+            },
+        },
+    },
+    [28504] = {
+        name = "Warchief's Command: Thousand Needles!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 10,
+            },
+        },
+    },
     [28505] = {
         name = "The Battle for Andorhal",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -23901,7 +43190,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28506] = {
         name = "March of the Stormpike",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23917,9 +43205,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28507] = {
+        name = "Hero's Call: Tanaris!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49748,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 54,
+                amount = 10,
+            },
+        },
+    },
     [28508] = {
         name = "The Battle for Andorhal",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -23938,9 +43249,370 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28509] = {
+        name = "Warchief's Command: Tanaris!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 1133,
+                amount = 10,
+            },
+        },
+    },
+    [28510] = {
+        name = "Warchief's Command: Feralas!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 10,
+            },
+        },
+    },
+    [28511] = {
+        name = "Hero's Call: Feralas!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49748,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 69,
+                amount = 10,
+            },
+        },
+    },
+    [28512] = {
+        name = "To the Aid of the Thorium Brotherhood",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 46660,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [28513] = {
+        name = "Pride of the Highborne",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48658,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28514] = {
+        name = "Mouton Flamestar",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [28515] = {
+        name = "Mouton Flamestar",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 14625,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [28516] = {
+        name = "Centuries of Suffering",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28518] = {
+        name = "Legacy of the High Elves",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48659,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28519] = {
+        name = "Pain of the Blood Elves",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48660,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28521] = {
+        name = "Speak to Salfa",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 15395,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 25,
+            },
+        },
+    },
+    [28522] = {
+        name = "Winterfall Activity",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 350,
+            },
+        },
+    },
+    [28523] = {
+        name = "More Beads for Salfa",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 500,
+            },
+        },
+    },
+    [28524] = {
+        name = "Delivery for Donova",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 75,
+            },
+        },
+    },
+    [28525] = {
+        name = "Hero's Call: Un'Goro Crater!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49748,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28526] = {
+        name = "Warchief's Command: Un'Goro Crater!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28527] = {
+        name = "Warchief's Command: Silithus!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
+    [28528] = {
+        name = "Hero's Call: Silithus!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
     [28529] = {
         name = "Writings of the Void",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -23959,9 +43631,52 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28530] = {
+        name = "Scalding Signs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 9298,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 350,
+            },
+        },
+    },
+    [28531] = {
+        name = "Hero's Call: Desolace!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 10,
+            },
+        },
+    },
     [28532] = {
         name = "Warchief's Command: Stonetalon Mountains!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -23980,9 +43695,84 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28534] = {
+        name = "Descendants of the Highborne",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48658,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28535] = {
+        name = "Descendants of the High Elves",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48659,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    1200, 1300, 1400, 1500, 1600, 1600, 1700, 1700, 1700, 1800, 1800, 1900, 1900, 2000, 2000, 2100, 2100, 2200, 2200, 2200, 2300, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28536] = {
+        name = "The Curse of Zin-Malor",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48660,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28537] = {
+        name = "In Pursuit of Shades",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10920,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28538] = {
         name = "Cry of the Banshee",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -23995,13 +43785,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28539] = {
         name = "Hero's Call: Stonetalon Mountains!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         source = {
             type = "npc",
             id = 49748,
-            name = "Hero's Herald",
         },
         rewards = {
             {
@@ -24019,9 +43807,232 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28540] = {
+        name = "Doin' De E'ko Magic",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10307,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28542] = {
+        name = "Warchief's Command: Felwood!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
+    [28543] = {
+        name = "Hero's Call: Felwood!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49748,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 10,
+            },
+        },
+    },
+    [28544] = {
+        name = "Hero's Call: Winterspring!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49748,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28545] = {
+        name = "Warchief's Command: Winterspring!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28548] = {
+        name = "Warchief's Command: Desolace!",
+        requiredLevel = 30,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 30,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 911,
+                amount = 10,
+            },
+        },
+    },
+    [28549] = {
+        name = "Warchief's Command: Southern Barrens!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    175, 200, 225, 250, 250, 250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 81,
+                amount = 10,
+            },
+        },
+    },
+    [28550] = {
+        name = "Hero's Call: Southern Barrens!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 10,
+            },
+        },
+    },
+    [28551] = {
+        name = "Hero's Call: Southern Barrens!",
+        requiredLevel = 25,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    175, 200, 225, 250, 250, 250, 300, 300, 350, 350, 350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 25,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 10,
+            },
+        },
+    },
+    [28552] = {
+        name = "Hero's Call: Dustwallow Marsh!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 10,
+            },
+        },
+    },
+    [28553] = {
+        name = "Okrilla and the Blasted Lands",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28554] = {
+        name = "Warchief's Command: Dustwallow Marsh!",
+        requiredLevel = 35,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    350, 400, 400, 400, 500, 500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 35,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 10,
+            },
+        },
+    },
     [28556] = {
         name = "Breaking the Hand",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24039,7 +44050,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28562] = {
         name = "Hero's Call: Westfall!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24060,7 +44070,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28563] = {
         name = "Hero's Call: Redridge Mountains!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24081,7 +44090,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28564] = {
         name = "Hero's Call: Duskwood!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -24102,7 +44110,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28565] = {
         name = "Hero's Call: Wetlands!",
-        level = -1,
         requiredLevel = 20,
         maxLevel = 60,
         rewards = {
@@ -24123,7 +44130,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28566] = {
         name = "Decimation",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24136,7 +44142,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28567] = {
         name = "Hero's Call: Loch Modan!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24157,7 +44162,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28568] = {
         name = "Warchief's Command: Silverpine Forest!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24168,9 +44172,38 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28569] = {
+        name = "The Bogpaddle Bullet",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28570] = {
+        name = "The Bogpaddle Bullet",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28571] = {
         name = "Warchief's Command: Hillsbrad Foothills!",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24191,7 +44224,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28572] = {
         name = "Warchief's Command: Arathi Highlands!",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -24204,7 +44236,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28573] = {
         name = "Hero's Call: Arathi Highlands!",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -24225,7 +44256,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28574] = {
         name = "Warchief's Command: The Hinterlands!",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -24241,7 +44271,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28575] = {
         name = "Warchief's Command: Western Plaguelands!",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -24262,7 +44291,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28576] = {
         name = "Hero's Call: Western Plaguelands!",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -24283,7 +44311,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28577] = {
         name = "Warchief's Command: Eastern Plaguelands!",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -24299,7 +44326,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28578] = {
         name = "Hero's Call: Eastern Plaguelands!",
-        level = -1,
         requiredLevel = 40,
         maxLevel = 60,
         rewards = {
@@ -24313,9 +44339,78 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28579] = {
+        name = "Hero's Call: Badlands!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28580] = {
+        name = "Warchief's Command: Badlands!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28581] = {
+        name = "Warchief's Command: Searing Gorge!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
+    [28582] = {
+        name = "Hero's Call: Searing Gorge!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 59,
+                amount = 10,
+            },
+        },
+    },
     [28587] = {
         name = "Aid of the Frostwolf",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24333,7 +44428,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28600] = {
         name = "Matters of Loyalty",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24357,9 +44451,13 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28601] = {
+        name = "Old Puttery",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
     [28603] = {
         name = "Infiltration",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24372,7 +44470,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28604] = {
         name = "Deception and Trickery",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24385,7 +44482,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28605] = {
         name = "Domination",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24404,9 +44500,99 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28609] = {
+        name = "Hammer Time",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11191,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28610] = {
+        name = "Rubble Trouble",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 577,
+                amount = 250,
+            },
+        },
+    },
+    [28614] = {
+        name = "Bearzerker",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48722,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 350,
+            },
+        },
+    },
+    [28615] = {
+        name = "Turning the Earth",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48723,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 576,
+                amount = 250,
+            },
+        },
+    },
     [28616] = {
         name = "Stormpike Apocalypse",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24432,7 +44618,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28617] = {
         name = "Flower Power",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 120,
         rewards = {
@@ -24446,9 +44631,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28618] = {
+        name = "Boulder Delivery",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28619] = {
         name = "Warchief's Command: Arathi Highlands!",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -24469,7 +44672,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28620] = {
         name = "Eastpoint Tower",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24480,9 +44682,189 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28624] = {
+        name = "Kilram's Boast",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11192,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28625] = {
+        name = "Chop Chop",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28626] = {
+        name = "Tree Delivery",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28627] = {
+        name = "Seril's Boast",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11193,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28628] = {
+        name = "Ice Delivery",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28629] = {
+        name = "Are We There, Yeti?",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10305,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 577,
+                amount = 250,
+            },
+        },
+    },
+    [28630] = {
+        name = "Echo Three",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10305,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28631] = {
+        name = "The Perfect Horns",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10305,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 577,
+                amount = 150,
+            },
+        },
+    },
+    [28632] = {
+        name = "Fresh From The Hills",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28634] = {
         name = "Extinction",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24503,7 +44885,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28635] = {
         name = "A Haunting in Hillsbrad",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24516,7 +44897,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28636] = {
         name = "Silence of the Dwarves",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24527,9 +44907,101 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28637] = {
+        name = "A Taste for Bear",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49436,
+            locations = {
+                [83] = {
+                    x = 0.55891567468643,
+                    y = 0.28286588191986,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28638] = {
+        name = "The Owls Have It",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49537,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28639] = {
+        name = "Ursius",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    15000, 16000, 17000, 18000, 19000, 19500, 20000, 20500, 21000, 21000, 22000, 22500, 23000, 24000, 24500, 25000, 25500, 26000, 26500, 26500, 27000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28640] = {
+        name = "Fresh Frostsabers",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28641] = {
+        name = "Pride of the Dinner Table",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28643] = {
         name = "The Durnholde Challenge: Zephyrus",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24542,7 +45014,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28644] = {
         name = "The Durnholde Challenge: Teracula",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24555,7 +45026,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28645] = {
         name = "The Durnholde Challenge: Bloodvenom",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24568,7 +45038,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28646] = {
         name = "The Durnholde Challenge: Infernus",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24581,7 +45050,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28647] = {
         name = "The Durnholde Challenge: D-1000",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24600,9 +45068,171 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28656] = {
+        name = "Strange Life Forces",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28666] = {
+        name = "Hero's Call: Burning Steppes!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 10,
+            },
+        },
+    },
+    [28667] = {
+        name = "Warchief's Command: Burning Steppes!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 10,
+            },
+        },
+    },
+    [28671] = {
+        name = "Warchief's Command: Blasted Lands!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 76,
+                amount = 10,
+            },
+        },
+    },
+    [28673] = {
+        name = "Hero's Call: Blasted Lands!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 10,
+            },
+        },
+    },
+    [28674] = {
+        name = "Starfall Village",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 48965,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28675] = {
+        name = "Hero's Call: Swamp of Sorrows!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28676] = {
+        name = "Exterminators at Work",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11079,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28677] = {
+        name = "Warchief's Command: Swamp of Sorrows!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28688] = {
         name = "Warchief's Command: Northern Stranglethorn!",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -24623,7 +45253,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28699] = {
         name = "Hero's Call: Northern Stranglethorn!",
-        level = -1,
         requiredLevel = 25,
         maxLevel = 60,
         rewards = {
@@ -24642,9 +45271,27 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28701] = {
+        name = "Out of Harm's Way",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 11079,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28702] = {
         name = "Hero's Call: The Cape of Stranglethorn!",
-        level = -1,
         requiredLevel = 30,
         maxLevel = 60,
         rewards = {
@@ -24663,9 +45310,148 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28703] = {
+        name = "Step Into My Barrow",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49407,
+            locations = {
+                [83] = {
+                    x = 0.45777750015259,
+                    y = 0.41018295288086,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28706] = {
+        name = "Spray it Forward",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49407,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28707] = {
+        name = "Spray it Again",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49399,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28710] = {
+        name = "Spray it One More Time",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49400,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28718] = {
+        name = "Where There's Smoke, There's Delicious Meat",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49402,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28719] = {
+        name = "A Little Gamy",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28722] = {
+        name = "Yetiphobia",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10305,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 577,
+                amount = 350,
+            },
+        },
+    },
     [28733] = {
         name = "Basic Botany",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 120,
         rewards = {
@@ -24676,12 +45462,26 @@ BtWQuestsDatabase:AddQuestsTable({
                 },
                 minLevel = 15,
                 maxLevel = 120,
+            },
+        },
+    },
+    [28742] = {
+        name = "Shy-Rotam",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
             },
         },
     },
     [28744] = {
         name = "Ghouls Hate My Grains",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 120,
         rewards = {
@@ -24695,9 +45495,23 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28745] = {
+        name = "Screechy Keen",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [28747] = {
         name = "Someone Setup the Pumpkin Bomb",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 120,
         rewards = {
@@ -24713,7 +45527,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28748] = {
         name = "Lawn of the Dead",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 120,
         rewards = {
@@ -24729,7 +45542,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28749] = {
         name = "The Battle for Andorhal",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -24750,7 +45562,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28750] = {
         name = "The Battle for Andorhal",
-        level = -1,
         requiredLevel = 35,
         maxLevel = 60,
         rewards = {
@@ -24771,7 +45582,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28755] = {
         name = "Annals of the Silver Hand",
-        level = -1,
         requiredLevel = 42,
         maxLevel = 60,
         rewards = {
@@ -24784,7 +45594,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [28756] = {
         name = "Aberrations of Bone",
-        level = -1,
         requiredLevel = 38,
         maxLevel = 60,
         rewards = {
@@ -24795,9 +45604,328 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28768] = {
+        name = "Winterspring!",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28782] = {
+        name = "A Bird of Legend",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28828] = {
+        name = "You Gotta Have Eggs",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 49396,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28829] = {
+        name = "Razor Beak and Antlers Pointy",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 50263,
+            locations = {
+                [83] = {
+                    x = 0.61875307559967,
+                    y = 0.74676829576492,
+                },
+            },
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28830] = {
+        name = "Chips off the Old Block",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 50263,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28831] = {
+        name = "Damn You, Frostilicus",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 50263,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28837] = {
+        name = "Altered Beasts",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10929,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28838] = {
+        name = "The Owlbeasts' Defense",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10929,
+        },
+    },
+    [28839] = {
+        name = "Magic Prehistoric",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28840] = {
+        name = "Winterwater",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [28841] = {
+        name = "The Arcane Storm Within",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10929,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    5000, 5500, 5500, 6000, 6500, 6500, 6500, 7000, 7000, 7000, 7500, 7500, 7500, 8000, 8000, 8500, 8500, 8500, 9000, 9000, 9000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28842] = {
+        name = "Umbranse's Deliverance",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10929,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    10000, 11000, 11500, 12000, 12500, 13000, 13000, 13500, 14000, 14000, 14500, 15000, 15500, 16000, 16500, 16500, 17000, 17000, 17500, 18000, 18000, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28847] = {
+        name = "The Pursuit of Umbranse",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 50366,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28848] = {
+        name = "Trailing the Spiritspeaker",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10920,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
+    [28856] = {
+        name = "The Sands of Silithus",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 75,
+            },
+        },
+    },
+    [28857] = {
+        name = "Blasted Lands: The Other Side of the World",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 72,
+                amount = 75,
+            },
+        },
+    },
+    [28858] = {
+        name = "Blasted Lands: The Other Side of the World",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 10,
+            },
+        },
+    },
+    [28859] = {
+        name = "The Dunes of Silithus",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 38269,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    2500, 2500, 3000, 3000, 3000, 3000, 3500, 3500, 3500, 3500, 3500, 4000, 4000, 4000, 4000, 4000, 4000, 4500, 4500, 4500, 4500, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+            {
+                type = "reputation",
+                id = 609,
+                amount = 75,
+            },
+        },
+    },
+    [28865] = {
+        name = "Call of the Warmatron",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 50587,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 76,
+                amount = 25,
+            },
+        },
+    },
+    [28867] = {
+        name = "Nethergarde Needs You!",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 72,
+                amount = 25,
+            },
+        },
+    },
     [28876] = {
         name = "To the Mor'shan Rampart",
-        level = -1,
         requiredLevel = 15,
         maxLevel = 60,
         rewards = {
@@ -24808,15 +45936,32 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [28881] = {
+        name = "Prospector Gunstan",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 39059,
+        },
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    500, 500, 600, 600, 600, 600, 700, 700, 700, 700, 700, 800, 800, 800, 800, 800, 800, 900, 900, 900, 900, 
+                },
+                minLevel = 40,
+                maxLevel = 60,
+            },
+        },
+    },
     [29015] = {
         name = "Miner's Fortune",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [29021] = {
         name = "Samophlange",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24829,7 +45974,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29022] = {
         name = "Samophlange",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24842,7 +45986,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29023] = {
         name = "Samophlange",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24855,7 +45998,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29024] = {
         name = "Samophlange",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24868,7 +46010,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29026] = {
         name = "Wenikee Boltbucket",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24881,7 +46022,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29027] = {
         name = "Nugget Slugs",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24892,15 +46032,106 @@ BtWQuestsDatabase:AddQuestsTable({
             },
         },
     },
+    [29028] = {
+        name = "Into Jaedenar",
+        requiredLevel = 40,
+    },
+    [29032] = {
+        name = "Get Them While They're Young",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10618,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 589,
+                amount = 3000,
+            },
+        },
+    },
+    [29033] = {
+        name = "[PH] Bridle Buy-In",
+        requiredLevel = 40,
+        maxLevel = 60,
+    },
+    [29034] = {
+        name = "They Grow Up So Fast",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 10618,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 589,
+                amount = 42999,
+            },
+        },
+    },
+    [29035] = {
+        name = "A Cub's Cravings",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 589,
+                amount = 1500,
+            },
+        },
+    },
+    [29037] = {
+        name = "'Borrowing' From the Winterfall",
+        requiredLevel = 40,
+        maxLevel = 60,
+        source = {
+            type = "npc",
+            id = 51677,
+        },
+        rewards = {
+            {
+                type = "reputation",
+                id = 589,
+                amount = 1500,
+            },
+        },
+    },
+    [29038] = {
+        name = "Hunting Practice",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 589,
+                amount = 1500,
+            },
+        },
+    },
+    [29040] = {
+        name = "Cub's First Toy",
+        requiredLevel = 40,
+        maxLevel = 60,
+        rewards = {
+            {
+                type = "reputation",
+                id = 589,
+                amount = 1500,
+            },
+        },
+    },
     [29086] = {
         name = "Competition Schmompetition",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [29087] = {
         name = "Sludge Investigation",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24916,7 +46147,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29088] = {
         name = "Hyena Extermination",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24932,7 +46162,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29089] = {
         name = "Sludge Beast!",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24948,7 +46177,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29090] = {
         name = "A Burning Threat",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24964,13 +46192,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29094] = {
         name = "The Short Way Home",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [29095] = {
         name = "Report to Thork",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -24986,7 +46212,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29109] = {
         name = "Mor'shan Caravan Pick-Up",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -25002,13 +46227,11 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29110] = {
         name = "Mor'shan Caravan Rescue",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
     },
     [29111] = {
         name = "Mor'shan Caravan Delivery",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -25024,7 +46247,6 @@ BtWQuestsDatabase:AddQuestsTable({
     },
     [29112] = {
         name = "Demon Seed",
-        level = -1,
         requiredLevel = 10,
         maxLevel = 60,
         rewards = {
@@ -25037,5 +46259,74 @@ BtWQuestsDatabase:AddQuestsTable({
                 maxLevel = 60,
             },
         },
+    },
+    [38890] = {
+        name = "Not Dead Yet!",
+        level = 100,
+        requiredLevel = 100,
+    },
+    [38892] = {
+        name = "Scouting Report",
+        level = 100,
+        requiredLevel = 100,
+    },
+    [38896] = {
+        name = "Tearing down the Legion",
+        level = 100,
+        requiredLevel = 100,
+    },
+    [41394] = {
+        name = "Service with a Smile",
+        level = 110,
+        requiredLevel = 98,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    14600, 15000, 15400, 15800, 16200, 16600, 17000, 17400, 17800, 18200, 18600, 19000, 19400, 
+                },
+                minLevel = 98,
+                maxLevel = 110,
+            },
+        },
+    },
+    [41395] = {
+        name = "Due Reward",
+        level = 110,
+        requiredLevel = 98,
+        rewards = {
+            {
+                type = "money",
+                amounts = {
+                    146000, 150000, 154000, 158000, 162000, 166000, 170000, 174000, 178000, 182000, 186000, 190000, 194000, 
+                },
+                minLevel = 98,
+                maxLevel = 110,
+            },
+        },
+    },
+    [42237] = {
+        name = "Invasion: Tanaris",
+        requiredLevel = 1,
+    },
+    [43243] = {
+        name = "Demon Commander",
+        requiredLevel = 10,
+        maxLevel = 100,
+    },
+    [43244] = {
+        name = "Invasion: Tanaris",
+        requiredLevel = 10,
+        maxLevel = 100,
+    },
+    [43293] = {
+        name = "Defend",
+        requiredLevel = 10,
+        maxLevel = 100,
+    },
+    [43294] = {
+        name = "Repel",
+        requiredLevel = 10,
+        maxLevel = 100,
     },
 })

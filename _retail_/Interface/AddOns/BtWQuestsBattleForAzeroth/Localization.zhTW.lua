@@ -4,6 +4,8 @@ if GetLocale() ~= "zhTW" then
     return
 end
 
+BTWQUESTS_GIFT_OF_NZOTH = "恩若司之賜"
+BTWQUESTS_HATI_REBORN = "哈提重生"
 BTWQUESTS_MAGHAR_ORC = "瑪格哈獸人"
 BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "「黑夜戰士」夜精靈玩家自訂選項"
 BTWQUESTS_THE_WAR_CAMPAIGN = "陣營戰役"

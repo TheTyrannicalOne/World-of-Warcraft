@@ -742,7 +742,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_CHAIN2, {
 	},
 	completed = {
 		type = "quest",
-		id = 26148,
+		ids = {26145, 26148, 26147},
+		count = 3,
 	},
 	items = {
 		{

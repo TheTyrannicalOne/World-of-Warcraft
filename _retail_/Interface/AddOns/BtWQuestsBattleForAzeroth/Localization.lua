@@ -2,6 +2,9 @@
 
 BTWQUESTS_BEGIN_THE_BATTLE_FOR_BRENNADAM = "Begin the Battle for Brennadam"
 BTWQUESTS_COSMETIC_WASTE_OF_TIME = "Cosmetic: Waste of Time"
+BTWQUESTS_GIFT_OF_NZOTH = "Gift of N'Zoth"
+BTWQUESTS_GIFT_OF_NZOTH_BREADCRUMB = "Kill Naga at the Naga Attack! World Quest"
+BTWQUESTS_HATI_REBORN = "Hati Reborn"
 BTWQUESTS_MAGHAR_ORC = "Mag'har Orc"
 BTWQUESTS_MAJO_AND_JOMA = "Majo and Joma"
 BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "'Night Warrior' Night Elf Customization"

@@ -1718,6 +1718,468 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_SOMETHING_SO
         },
     },
 })
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_HATI, {
+    name = { -- Bonds of Thunder
+        type = "quest",
+        id =  54919,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {110,120},
+    restrictions = {
+        {
+            type = "class",
+            id = BTWQUESTS_CLASS_ID_HUNTER,
+        },
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+    },
+    active = {
+        type = "quest",
+        ids = {54913},
+        status = {'active', 'completed'},
+    },
+    rewards = {
+        {
+            name = BTWQUESTS_HATI_REBORN,
+        },
+    },
+    completed = {
+        type = "quest",
+        ids = {55195},
+    },
+    items = {
+        {
+            type = "npc",
+            id = 152002,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54913,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54915,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54916,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54917,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54918,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54919,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54920,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55195,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_HORDE_VOLJIN, {
+    name = { -- The Shadow Hunter
+        type = "achievement",
+        id = 13263,
+    },
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
+    prerequisites = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_JUSTICE_FOR_THE_FALLEN,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
+        },
+        {
+            type = "reputation",
+            id = 2103,
+            standing = 8,
+        },
+    },
+    active = {
+        type = "quest",
+        ids = {53774},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        ids = {53782},
+    },
+    items = {
+        {
+            type = "npc",
+            id = 141555,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53774,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53775,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53776,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53778,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54120,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53777,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53779,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54145,
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53780,
+            x = 2,
+            connections = {
+                3, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53781,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54147,
+            x = 4,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53782,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_XALATATH, {
+    name = BTWQUESTS_GIFT_OF_NZOTH,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+    },
+    active = {
+        type = "quest",
+        ids = {54141, 54172},
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        ids = {54126, 53763},
+    },
+    items = {
+        {
+            name = BTWQUESTS_GIFT_OF_NZOTH_BREADCRUMB,
+            breadcrumb = true,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            ids = {
+                54141, 54172, 
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 54265,
+                    restrictions = {
+                        {
+                            type = "class",
+                            id = BTWQUESTS_CLASS_ID_PRIEST,
+                        },
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54144,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54433,
+                    restrictions = {
+                        type = "class",
+                        id = BTWQUESTS_CLASS_ID_PRIEST,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54174,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 54114,
+                    restrictions = {
+                        {
+                            type = "class",
+                            id = BTWQUESTS_CLASS_ID_PRIEST,
+                        },
+                        {
+                            type = "faction",
+                            id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                        },
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54113,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54118,
+                    restrictions = {
+                        type = "class",
+                        id = BTWQUESTS_CLASS_ID_PRIEST,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54117,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 54058,
+                    restrictions = {
+                        type = "class",
+                        id = BTWQUESTS_CLASS_ID_PRIEST,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 53760,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53761,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 53762,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 54126,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 53763,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 2, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 54438,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 54439,
+                },
+            },
+            x = 2,
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 53765,
+                    restrictions = {
+                        type = "faction",
+                        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 53766,
+                },
+            },
+        },
+    },
+})
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = nil,
@@ -1991,5 +2453,17 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {
         type = "chain",
         id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_SOMETHING_SOMETHING_PARROT,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_HATI,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_HORDE_VOLJIN,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_XALATATH,
     },
 })

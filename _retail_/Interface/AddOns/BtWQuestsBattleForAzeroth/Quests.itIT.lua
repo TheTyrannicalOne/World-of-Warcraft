@@ -1160,9 +1160,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [48896] = {
         name = "La conoscenza del passato",
     },
-    [48897] = {
-        name = "Affare fatto",
-    },
     [48898] = {
         name = "Un amuleto fortunato",
     },
@@ -2786,9 +2783,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50691] = {
         name = "Non sul nostro libro paga",
     },
-    [50694] = {
-        name = "Sangue disgustoso",
-    },
     [50696] = {
         name = "Divertirsi coi magneti",
     },
@@ -3956,12 +3950,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [52013] = {
         name = "Campione: John J. Keeshan",
     },
-    [52023] = {
-        name = "Informare l'Orda",
-    },
-    [52024] = {
-        name = "Informare l'Orda",
-    },
     [52026] = {
         name = "Assassinio internazionale",
     },
@@ -4661,32 +4649,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53433] = {
         name = "Cappello dell'Ordine delle Braci",
     },
-    [53434] = {
-        name = "Es-ser scomparso",
-    },
     [53438] = {
         name = "RICERCATI: Bracconieri di Viverne",
     },
-    [53439] = {
-        name = "Una marea di sangue",
-    },
     [53440] = {
         name = "RICERCATA: La Vespa",
-    },
-    [53442] = {
-        name = "I naufraghi",
-    },
-    [53443] = {
-        name = "Le mie cose preferite",
-    },
-    [53444] = {
-        name = "Il medaglione scintillante",
-    },
-    [53445] = {
-        name = "Silenziare le sorelle",
-    },
-    [53446] = {
-        name = "Sapori locali",
     },
     [53449] = {
         name = "Primati dell'ira",
@@ -4771,6 +4738,51 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [53738] = {
         name = "In difesa di Quel'Danas",
+    },
+    [53760] = {
+        name = "Conseguenze inattese",
+    },
+    [53761] = {
+        name = "Il tesoro dei pirati",
+    },
+    [53762] = {
+        name = "La corona della tempesta",
+    },
+    [53763] = {
+        name = "Girare la lama",
+    },
+    [53765] = {
+        name = "Il suo occhio su di te",
+    },
+    [53766] = {
+        name = "Il suo occhio su di te",
+    },
+    [53774] = {
+        name = "La saggezza del Capoguerra",
+    },
+    [53775] = {
+        name = "Ombre ostacolanti",
+    },
+    [53776] = {
+        name = "Verso la Riva Dispersa",
+    },
+    [53777] = {
+        name = "Dove morì",
+    },
+    [53778] = {
+        name = "Dove cadde",
+    },
+    [53779] = {
+        name = "Le menzogne dei Loa",
+    },
+    [53780] = {
+        name = "Il carceriere dei dannati",
+    },
+    [53781] = {
+        name = "Eyir",
+    },
+    [53782] = {
+        name = "Misteri della morte",
     },
     [53783] = {
         name = "Tra le dune",
@@ -4884,9 +4896,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
         name = "Speranza calante",
     },
     [53850] = {
-        name = "La nostra guerra continua",
-    },
-    [53851] = {
         name = "La nostra guerra continua",
     },
     [53852] = {
@@ -5087,6 +5096,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54050] = {
         name = "Conseguenze",
     },
+    [54058] = {
+        name = "Conseguenze inattese",
+    },
     [54059] = {
         name = "La Guerriera della Notte",
     },
@@ -5132,6 +5144,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54109] = {
         name = "Il favore della regina",
     },
+    [54113] = {
+        name = "Ogni piccola morte può aiutarci",
+    },
+    [54114] = {
+        name = "Ogni piccola morte può aiutarci",
+    },
+    [54117] = {
+        name = "Ogni piccola morte può aiutarci",
+    },
+    [54118] = {
+        name = "Ogni piccola morte può aiutarci",
+    },
+    [54120] = {
+        name = "Verso Orgrimmar",
+    },
     [54121] = {
         name = "L'evasione di Bracescura",
     },
@@ -5141,6 +5168,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54124] = {
         name = "Infortuni sul lavoro",
     },
+    [54126] = {
+        name = "Girare la lama",
+    },
     [54128] = {
         name = "Precauzioni necessarie",
     },
@@ -5149,6 +5179,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54140] = {
         name = "La cavalcata degli Zandalari",
+    },
+    [54141] = {
+        name = "Il Medaglione di Azshara",
+    },
+    [54144] = {
+        name = "Ordini da Azshara",
+    },
+    [54145] = {
+        name = "Il Loa della Morte",
+    },
+    [54147] = {
+        name = "Affrontare le Val'kyr",
     },
     [54156] = {
         name = "Un sentiero di sangue",
@@ -5173,6 +5215,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54171] = {
         name = "Lo Scettro Abissale",
+    },
+    [54174] = {
+        name = "Ordini da Azshara",
     },
     [54175] = {
         name = "Affronta il tuo nemico",
@@ -5258,6 +5303,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54249] = {
         name = "Giustizia Zandalari",
     },
+    [54265] = {
+        name = "Ordini da Azshara",
+    },
     [54269] = {
         name = "Nessuno fuggirà",
     },
@@ -5317,6 +5365,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54421] = {
         name = "Addomesticare le loro bestie",
+    },
+    [54433] = {
+        name = "Ordini da Azshara",
+    },
+    [54438] = {
+        name = "Crogiolo delle Tempeste: Reliquie della Tempesta",
+    },
+    [54439] = {
+        name = "Crogiolo delle Tempeste: Reliquie della Tempesta",
     },
     [54441] = {
         name = "Conquistare la Porta Insanguinata",
@@ -5398,6 +5455,27 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54871] = {
         name = "In arrivo",
+    },
+    [54913] = {
+        name = "Lampo di genio",
+    },
+    [54915] = {
+        name = "Attivare la telemetria",
+    },
+    [54916] = {
+        name = "Il credo del predatore",
+    },
+    [54917] = {
+        name = "Pagare col sangue",
+    },
+    [54918] = {
+        name = "La Scintilla dell'Immaginazione",
+    },
+    [54919] = {
+        name = "Legami del Tuono",
+    },
+    [54920] = {
+        name = "Nostalgia di casa",
     },
     [54925] = {
         name = "Eresia!",
@@ -5518,6 +5596,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55188] = {
         name = "Strappi nel tempo",
+    },
+    [55195] = {
+        name = "Riverbero",
     },
     [55214] = {
         name = "Cucitura allentata",

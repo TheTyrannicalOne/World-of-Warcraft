@@ -1160,9 +1160,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [48896] = {
         name = "Le savoir du passé",
     },
-    [48897] = {
-        name = "Les jeux sont faits",
-    },
     [48898] = {
         name = "Queue porte-bonheur",
     },
@@ -2786,9 +2783,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50691] = {
         name = "Pas de ça ici !",
     },
-    [50694] = {
-        name = "Sanglant carnage",
-    },
     [50696] = {
         name = "Aimants désopilants",
     },
@@ -3956,12 +3950,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [52013] = {
         name = "Champion : John J. Keeshan",
     },
-    [52023] = {
-        name = "Informer la Horde",
-    },
-    [52024] = {
-        name = "Informer la Horde",
-    },
     [52026] = {
         name = "Assassinat outremer",
     },
@@ -4661,32 +4649,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53433] = {
         name = "Chapeau de l’Ordre des Braises",
     },
-    [53434] = {
-        name = "Le seigneur disparu",
-    },
     [53438] = {
         name = "AVIS DE RECHERCHE : braconniers de wyvernes",
     },
-    [53439] = {
-        name = "Marées sanglantes",
-    },
     [53440] = {
         name = "AVIS DE RECHERCHE : le Frelon",
-    },
-    [53442] = {
-        name = "Les naufragés",
-    },
-    [53443] = {
-        name = "Souvenirs égarés",
-    },
-    [53444] = {
-        name = "Le médaillon scintillant",
-    },
-    [53445] = {
-        name = "Un silence de mort",
-    },
-    [53446] = {
-        name = "Spécialité locale",
     },
     [53449] = {
         name = "La colère des singes",
@@ -4771,6 +4738,51 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [53738] = {
         name = "La défense de Quel’Danas",
+    },
+    [53760] = {
+        name = "Conséquences imprévues",
+    },
+    [53761] = {
+        name = "Le trésor du pirate",
+    },
+    [53762] = {
+        name = "La couronne des tempêtes",
+    },
+    [53763] = {
+        name = "Le couteau dans la plaie",
+    },
+    [53765] = {
+        name = "Son œil noir vous regarde",
+    },
+    [53766] = {
+        name = "Son œil noir vous regarde",
+    },
+    [53774] = {
+        name = "La sagesse du chef de guerre",
+    },
+    [53775] = {
+        name = "Les ombres de la discorde",
+    },
+    [53776] = {
+        name = "Vers le rivage Brisé",
+    },
+    [53777] = {
+        name = "Au lieu de sa mort",
+    },
+    [53778] = {
+        name = "Au lieu de sa chute",
+    },
+    [53779] = {
+        name = "Les mensonges d’un Loa",
+    },
+    [53780] = {
+        name = "Le geôlier des damnés",
+    },
+    [53781] = {
+        name = "Eyir",
+    },
+    [53782] = {
+        name = "Les mystères de la mort",
     },
     [53783] = {
         name = "Dans les dunes",
@@ -4884,9 +4896,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
         name = "Espoir déclinant",
     },
     [53850] = {
-        name = "Notre guerre se poursuit",
-    },
-    [53851] = {
         name = "Notre guerre se poursuit",
     },
     [53852] = {
@@ -5087,6 +5096,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54050] = {
         name = "Conséquences",
     },
+    [54058] = {
+        name = "Conséquences imprévues",
+    },
     [54059] = {
         name = "La guerrière de la Nuit",
     },
@@ -5132,6 +5144,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54109] = {
         name = "La faveur de la reine",
     },
+    [54113] = {
+        name = "Chaque mort est un pas en avant",
+    },
+    [54114] = {
+        name = "Chaque mort est un pas en avant",
+    },
+    [54117] = {
+        name = "Chaque mort est un pas en avant",
+    },
+    [54118] = {
+        name = "Chaque mort est un pas en avant",
+    },
+    [54120] = {
+        name = "En route pour Orgrimmar",
+    },
     [54121] = {
         name = "La libération de Corsandre",
     },
@@ -5141,6 +5168,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54124] = {
         name = "Le b.a.-ba de la fraude à l’assurance",
     },
+    [54126] = {
+        name = "Le couteau dans la plaie",
+    },
     [54128] = {
         name = "Précautions d’usage",
     },
@@ -5149,6 +5179,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54140] = {
         name = "La chevauchée des Zandalari",
+    },
+    [54141] = {
+        name = "Le médaillon d’Azshara",
+    },
+    [54144] = {
+        name = "Les ordres d’Azshara",
+    },
+    [54145] = {
+        name = "Le Loa de la mort",
+    },
+    [54147] = {
+        name = "Confrontation avec la Val’kyr",
     },
     [54156] = {
         name = "La voie du sang",
@@ -5173,6 +5215,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54171] = {
         name = "Le sceptre abyssal",
+    },
+    [54174] = {
+        name = "Les ordres d’Azshara",
     },
     [54175] = {
         name = "Face à face avec l’ennemi",
@@ -5258,6 +5303,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54249] = {
         name = "Justice zandalari",
     },
+    [54265] = {
+        name = "Les ordres d’Azshara",
+    },
     [54269] = {
         name = "Nul ne s’échappera",
     },
@@ -5317,6 +5365,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54421] = {
         name = "Re-discombobulation",
+    },
+    [54433] = {
+        name = "Les ordres d’Azshara",
+    },
+    [54438] = {
+        name = "Creuset des Tempêtes : les reliques de l’ombre",
+    },
+    [54439] = {
+        name = "Creuset des Tempêtes : les reliques de l’ombre",
     },
     [54441] = {
         name = "La prise de la porte de Sang",
@@ -5398,6 +5455,27 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54871] = {
         name = "Nous voilà",
+    },
+    [54913] = {
+        name = "Un éclair de génie",
+    },
+    [54915] = {
+        name = "Télémétrie en action",
+    },
+    [54916] = {
+        name = "Le credo du chasseur",
+    },
+    [54917] = {
+        name = "Créance de sang",
+    },
+    [54918] = {
+        name = "Une étincelle d’imagination",
+    },
+    [54919] = {
+        name = "Les liens du tonnerre",
+    },
+    [54920] = {
+        name = "Retour au bercail",
     },
     [54925] = {
         name = "Hérésie !",
@@ -5518,6 +5596,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55188] = {
         name = "Un accroc dans le temps",
+    },
+    [55195] = {
+        name = "Réverbération",
     },
     [55214] = {
         name = "Sous toutes les coutures",

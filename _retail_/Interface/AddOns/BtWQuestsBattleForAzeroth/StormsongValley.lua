@@ -1201,7 +1201,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_STORMSONG_VALLEY_B
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 282457,
             -- name = "Go to the Brambleguard Totem",
             -- onClick = function ()
@@ -1733,7 +1733,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_STORMSONG_VALLEY_C
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 244983,
             -- name = "Go to the Dirty Pocketwatch",
             -- onClick = function ()
@@ -3324,7 +3324,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_STORMSONG_VALLEY_C
         },
 
         {
-            type = "npc",
+            type = "object",
             id = 287958,
             -- name = "Go to the Bulletin Board",
             -- onClick = function ()
@@ -3456,7 +3456,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_STORMSONG_VALLEY_C
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 297492,
             -- name = "Go to the Bulletin Board",
             -- onClick = function ()

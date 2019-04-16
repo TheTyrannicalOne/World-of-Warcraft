@@ -237,7 +237,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 203186,
             x = 6,
             aside = true,
@@ -773,7 +773,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_A_SHORTLIVED_VIC
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 203186,
             x = 6,
             aside = true,

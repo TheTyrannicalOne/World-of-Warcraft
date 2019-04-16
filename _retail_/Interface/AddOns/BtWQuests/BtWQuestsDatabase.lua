@@ -7,6 +7,7 @@ function BtWQuestsDatabaseMixin:OnLoad()
     self.QuestIDToItem = {}
     self.Missions = {}
     self.NPCs = {}
+    self.Objects = {}
     self.MapIDToItem = {}
     self.Continents = {}
     self.Index = {}
@@ -604,7 +605,7 @@ local function CheckStatusCount(amount, item)
     local morethan = item.morethan and true or false
     local notequals = item.notequals and true or false
     local equals = item.equals and true or false
-    local morethanorequals = not lessthen and not morethan and not notequals and not equals
+    local morethanorequals = not lessthan and not morethan and not notequals and not equals
 
     if lessthan and amount < count then
         return true
@@ -679,7 +680,9 @@ BtWQuests_CheckItemRequirement = function (item, character)
         local gender = character:GetSex()
         local standingText = getglobal("FACTION_STANDING_LABEL" .. item.standing .. (gender == 3 and "_FEMALE" or ""))
         
-        if item.amount ~= nil then
+        if standing == nil then
+            return false
+        elseif item.amount ~= nil then
             return standing > item.standing or (standing == item.standing and value - barMin >= item.amount)
         else
             return standing >= item.standing
@@ -783,6 +786,8 @@ BtWQuests_GetItemName = function (item, character)
         return BtWQuests_GetItemName(BtWQuestsDatabase.Missions[item.id or item.ids[1]], character)
     elseif item.type == "npc" then
         return BtWQuests_GetItemName(BtWQuestsDatabase.NPCs[item.id or item.ids[1]], character)
+    elseif item.type == "object" then
+        return BtWQuests_GetItemName(BtWQuestsDatabase.Objects[item.id or item.ids[1]], character)
     elseif item.type == "level" then
         return string.format(BTWQUESTS_LEVEL, item.level)
     elseif item.type == "expansion" then
@@ -1689,6 +1694,11 @@ function BtWQuestsDatabaseKillMixin:GetName()
     return string.format(BTWQUESTS_KILL, BtWQuestsDatabaseItemMixin.GetName(self))
 end
 
+BtWQuestsDatabaseObjectMixin = Mixin({}, BtWQuestsDatabaseNPCMixin)
+function BtWQuestsDatabaseObjectMixin:GetType()
+    return "object"
+end
+
 -- This Mixin is used for an instance of a chain
 BtWQuestsDatabaseChainMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
 function BtWQuestsDatabaseChainMixin:GetSubtext(small)
@@ -2113,34 +2123,47 @@ end
 -- This is the base for items that have an item.type of quest, mission, npc, chain, or category, generally
 -- chain items etc.
 BtWQuestsDatabaseTargetMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
-function BtWQuestsDatabaseTargetMixin:GetTarget()
-    if self.target == nil and self.item.type ~= nil then
+function BtWQuestsDatabaseTargetMixin:GetTarget(index)
+    local index = index or 1
+
+    self.targets = self.targets or {}
+
+    if self.targets[index] == nil and self.item.type ~= nil then
+        local id = self:GetID(index)
+        local target
+
         if self.item.type == "quest" then
-            self.target = self.database:GetQuest(self:GetID(), self.character)
+            target = self.database:GetQuest(id, self.character)
         elseif self.item.type == "mission" then
-            self.target = self.database:GetMission(self:GetID(), self.character)
+            target = self.database:GetMission(id, self.character)
         elseif self.item.type == "npc" then
-            self.target = self.database:GetNPC(self:GetID(), self.character)
+            target = self.database:GetNPC(id, self.character)
+        elseif self.item.type == "object" then
+            target = self.database:GetObject(id, self.character)
         elseif self.item.type == "kill" then
-            self.target = self.database:GetKill(self:GetID(), self.character)
+            target = self.database:GetKill(id, self.character)
         elseif self.item.type == "chain" then
-            self.target = self.database:GetChain(self:GetID(), self.character)
+            target = self.database:GetChain(id, self.character)
         elseif self.item.type == "category" then
-            self.target = self.database:GetCategory(self:GetID(), self.character)
+            target = self.database:GetCategory(id, self.character)
         elseif self.item.type == "expansion" then
-            self.target = self.database:GetExpansion(self:GetID(), self.character)
+            target = self.database:GetExpansion(id, self.character)
         else
             assert(false, string.format("Unsupported item type %s", tostring(self.item.type)))
         end
+
+        self.targets[index] = target
     end
 
-    return self.target
+    return self.targets[index]
 end
 function BtWQuestsDatabaseTargetMixin:GetType()
     return self.item.type
 end
-function BtWQuestsDatabaseTargetMixin:GetID()
-    return self.item.id or self.item.ids and self.item.ids[1]
+function BtWQuestsDatabaseTargetMixin:GetID(index)
+    local ids = self.item.ids or {self.item.id}
+
+    return ids[index or 1]
 end
 function BtWQuestsDatabaseTargetMixin:GetName()
     if self.item.name ~= nil then
@@ -2203,21 +2226,42 @@ function BtWQuestsDatabaseTargetMixin:IsAvailable()
         return BtWQuestsDatabaseItemMixin.IsAvailable(self)
     end
 
-    return self:GetTarget():IsAvailable()
+    local c = self.item.ids and #self.item.ids or 1
+    for i=1,c do
+        if self:GetTarget(i):IsAvailable() then
+            return true
+        end
+    end
+
+    return false
 end
 function BtWQuestsDatabaseTargetMixin:IsActive()
     if self.item.active ~= nil then
         return BtWQuestsDatabaseItemMixin.IsActive(self)
     end
 
-    return self:GetTarget():IsActive()
+    local c = self.item.ids and #self.item.ids or 1
+    for i=1,c do
+        if self:GetTarget(i):IsActive() then
+            return true
+        end
+    end
+
+    return false
 end
 function BtWQuestsDatabaseTargetMixin:IsCompleted()
     if self.item.completed ~= nil then
         return BtWQuestsDatabaseItemMixin.IsCompleted(self)
     end
 
-    return self:GetTarget():IsCompleted()
+    local c = self.item.ids and #self.item.ids or 1
+    for i=1,c do
+        if self:GetTarget(i):IsCompleted() then
+            return true
+        end
+    end
+
+    return false
 end
 function BtWQuestsDatabaseTargetMixin:OnClick(...)
     if type(self.item.onClick) == "table" then
@@ -2403,7 +2447,9 @@ end
 function BtWQuestsDatabaseReputationMixin:IsCompleted()
     local factionName, standing, barMin, _, value = self.character:GetFactionInfoByID(self.item.id)
     
-    if self.item.amount ~= nil then
+    if standing == nil then
+        return false
+    elseif self.item.amount ~= nil then
         return standing > self.item.standing or (standing == self.item.standing and value - barMin >= self.item.amount)
     else
         return standing >= self.item.standing
@@ -3010,6 +3056,15 @@ function BtWQuestsDatabaseMixin:GetKill(id, character)
 
     return Mixin({id = id, item = self.NPCs[id] or {}, database = self, character = character}, BtWQuestsDatabaseKillMixin)
 end
+-- Returns a BtWQuestsDatabaseObjectMixin
+function BtWQuestsDatabaseMixin:GetObject(id, character)
+    local id = tonumber(id)
+    if id == nil then
+        return nil
+    end
+
+    return Mixin({id = id, item = self.Objects[id] or {}, database = self, character = character}, BtWQuestsDatabaseObjectMixin)
+end
 -- Returns a BtWQuestsDatabaseChainMixin
 function BtWQuestsDatabaseMixin:GetChain(id, character)
     local id = tonumber(id)
@@ -3296,17 +3351,6 @@ function BtWQuestsDatabaseMixin:EvalChainItem(item, character)
         tagID = tagID or npc.tagID
 
         breadcrumb = true
-        
-        -- active = active == nil and function (item)
-        --     if npc.prerequisites ~= nil then
-        --         return BtWQuests_EvalRequirement(npc.prerequisites, chain, character)
-        --     end
-
-        --     return true
-        -- end or active
-        -- completed = completed == nil and function ()
-
-        -- end or completed
         
         onClick = onClick or function (self)
             local location = self.userdata.location
@@ -3759,9 +3803,9 @@ function BtWQuestsDatabaseMixin:AddExpansionItems(id, t)
     end
 end
 function BtWQuestsDatabaseMixin:GuessExpansion(character)
-    local playerLevel = character:GetLevel();
+    local playerLevel = character:GetLevel()
 
-    for i=LE_EXPANSION_LEVEL_CURRENT,1,-1 do
+    for i=LE_EXPANSION_LEVEL_CURRENT,0,-1 do
         if BtWQuestsDatabase:HasExpansion(i) and playerLevel >= MAX_PLAYER_LEVEL_TABLE[i] then
             return i
         end
@@ -3863,6 +3907,56 @@ function BtWQuestsDatabaseMixin:GetNPCLocation(id, relativeMapID, relativeX, rel
     end
 end
 
+-- Object
+function BtWQuestsDatabaseMixin:AddObject(id, t)
+    self.Objects[id] = t
+end
+function BtWQuestsDatabaseMixin:AddObjectsTable(t)
+    for k,v in pairs(t) do
+        self.Objects[k] = v
+    end
+end
+function BtWQuestsDatabaseMixin:UpdateObject(id, t)
+    local u = self.Objects[id]
+    for k,v in pairs(t) do
+        u[k] = v
+    end
+end
+function BtWQuestsDatabaseMixin:UpdateObjectsTable(t)
+    for k,v in pairs(t) do
+        self:UpdateObject(k, v)
+    end
+end
+
+-- Attempts to get the location of an NPC that is as close to relative* as possible
+-- Returns mapID, x, y or nil
+function BtWQuestsDatabaseMixin:GetObjectLocation(id, relativeMapID, relativeX, relativeY)
+    local object = self.Objects[id]
+    if object == nil or object.locations == nil then
+        return nil
+    end
+
+    if relativeMapID == nil then
+        local mapID, item = next(object.locations)
+        if item[1] ~= nil then
+            item = item[1]
+        end
+
+        return mapID, item.x, item.y
+    end
+
+    if object.locations[relativeMapID] == nil then -- This'll take a while
+        return self:GetObjectLocation(id) -- @TODO
+    else
+        local item = object.locations[relativeMapID]
+        if item[1] ~= nil then
+            item = item[1]
+        end
+
+        return relativeMapID, item.x, item.y
+    end
+end
+
 -- Achievement
 function BtWQuests_GetAchievementName(achievementID)
     return select(2, GetAchievementInfo(achievementID))
@@ -3917,7 +4011,7 @@ function BtWQuests_CreateItem(item, database, character)
     elseif item.type == nil then
         return Mixin(data, BtWQuestsDatabaseItemMixin)
     else
-        assert(item.type == "quest" or item.type == "mission" or item.type == "npc" or item.type == "chain" or item.type == "category", string.format("Unsupported item type %s", tostring(item.type)))
+        assert(item.type == "quest" or item.type == "mission" or item.type == "npc" or item.type == "object" or item.type == "chain" or item.type == "category", string.format("Unsupported item type %s", tostring(item.type)))
         return Mixin(data, BtWQuestsDatabaseTargetMixin)
     end
 end
@@ -3950,7 +4044,7 @@ function BtWQuests_CreateChainItem(index, item, database, character, chain, pare
         elseif item.type == nil then
             return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseItemMixin)
         else
-            assert(item.type == "quest" or item.type == "mission" or item.type == "npc" or item.type == "kill" or item.type == "chain" or item.type == "category", string.format("Unsupported item type %s in chain %d item %d", tostring(item.type), chain:GetID(), index))
+            assert(item.type == "quest" or item.type == "mission" or item.type == "npc" or item.type == "kill" or item.type == "object" or item.type == "chain" or item.type == "category", string.format("Unsupported item type %s in chain %d item %d", tostring(item.type), chain:GetID(), index))
             return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseTargetMixin)
         end
     end

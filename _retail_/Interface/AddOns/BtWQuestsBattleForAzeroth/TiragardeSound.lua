@@ -137,7 +137,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_FR
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 281551,
             -- name = "Go to the Help Wanted Poster",
             -- onClick = function ()
@@ -1957,7 +1957,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 281230,
             -- name = "Go to Formal Invitation",
             -- onClick = function ()
@@ -2050,7 +2050,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 277199,
             -- name = "Go to Weathered Job List",
             -- onClick = function ()
@@ -2572,7 +2572,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 288641,
             -- name = "Go to the Wanted Poster",
             -- onClick = function ()
@@ -2586,7 +2586,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
             },
         },
         {
-            type = "npc",
+            type = "object",
             id = 281230,
             -- name = "Go to Formal Invitation",
             -- onClick = function ()
@@ -2865,7 +2865,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 289313,
             -- name = "Go to Wanted Sign",
             -- onClick = function ()
@@ -3222,7 +3222,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_TIRAGARDE_SOUND_CH
     },
     items = {
         {
-            type = "npc",
+            type = "object",
             id = 298778,
             -- name = "Go to the Wanted Poster",
             -- onClick = function ()

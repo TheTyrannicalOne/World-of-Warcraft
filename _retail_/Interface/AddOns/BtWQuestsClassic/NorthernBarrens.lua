@@ -340,8 +340,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_DEFEATING_TH
 			type = "level",
 			level = 10,
 		},
-	},
-	prerequisites = {
 		{
 			type = "quest",
 			id = 13992,
@@ -609,34 +607,9 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_BARRENS_RATCHET, {
 		},
 	},
 	completed = {
-		{
-			type = "quest",
-			id = 891,
-		},
-		{
-			type = "quest",
-			id = 14067,
-		},
-		{
-			type = "quest",
-			id = 865,
-		},
-		{
-			type = "quest",
-			id = 895,
-		},
-		{
-			type = "quest",
-			id = 26769,
-		},
-		{
-			type = "quest",
-			id = 887,
-		},
-		{
-			type = "quest",
-			id = 14063,
-		},
+		type = "quest",
+		ids = {14042, 14067, 14063, 14050},
+		count = 4,
 	},
 	items = {
 		{

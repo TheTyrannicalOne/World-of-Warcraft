@@ -56,6 +56,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [3924] = {
         name = "Xamã Pelocardo",
     },
+    [3936] = {
+        name = "Shandris Plumaluna",
+    },
     [3995] = {
         name = "Mandingueiro Jin'Zil",
     },
@@ -64,6 +67,12 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [4079] = {
         name = "Sentinela Tenysil",
+    },
+    [4968] = {
+        name = "Grã-senhora Jaina Proudmore",
+    },
+    [5385] = {
+        name = "Vigia Mahar Ba",
     },
     [8582] = {
         name = "Kadrak",
@@ -124,6 +133,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [17355] = {
         name = "Valusha",
+    },
+    [23569] = {
+        name = "Renato Deguelra",
     },
     [24739] = {
         name = "Benjari Edune",
@@ -248,8 +260,29 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [34604] = {
         name = "Baobosa",
     },
+    [37135] = {
+        name = "Nura Caminheira",
+    },
+    [37717] = {
+        name = "Winnoa Bosque dos Pinheiros",
+    },
+    [38535] = {
+        name = "Kelsey Fagulhaço",
+    },
+    [38704] = {
+        name = "Kelsey Fagulhaço",
+    },
+    [38878] = {
+        name = "Corpo Mutilado",
+    },
+    [39059] = {
+        name = "Kelsey Fagulhaço",
+    },
     [39256] = {
         name = "Kalen Tirocerto",
+    },
+    [40109] = {
+        name = "Prospector Gunstan",
     },
     [40879] = {
         name = "Boog, o \"Encantador de Engrenagens\"",
@@ -386,10 +419,40 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [42106] = {
         name = "Suserano Krom'gar",
     },
+    [42298] = {
+        name = "Kasim Sharim",
+    },
+    [45948] = {
+        name = "Zé Pinel",
+    },
+    [46172] = {
+        name = "Baba Globêbada",
+    },
+    [47779] = {
+        name = "Mouton Flamestrela",
+    },
+    [47811] = {
+        name = "John J. Keeshan",
+    },
+    [48109] = {
+        name = "John J. Keeshan",
+    },
+    [48133] = {
+        name = "General Thorg'izog",
+    },
+    [48208] = {
+        name = "Chocalho de Ossos",
+    },
+    [48306] = {
+        name = "John J. Keeshan",
+    },
+    [48568] = {
+        name = "Eitrigg",
+    },
+    [48569] = {
+        name = "Eitrigg",
+    },
     [49748] = {
         name = "Arauto do Herói",
-    },
-    [203186] = {
-        name = "NÃO ENTRE!!!",
     },
 })

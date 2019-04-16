@@ -1160,9 +1160,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [48896] = {
         name = "Wissen der Vergangenheit",
     },
-    [48897] = {
-        name = "Abgemacht ist abgemacht",
-    },
     [48898] = {
         name = "Glücksbringer",
     },
@@ -2786,9 +2783,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [50691] = {
         name = "Nicht für unser Geld",
     },
-    [50694] = {
-        name = "Eine blutige Angelegenheit",
-    },
     [50696] = {
         name = "Spaß mit Magneten",
     },
@@ -3956,12 +3950,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [52013] = {
         name = "Champion: John J. Keeshan",
     },
-    [52023] = {
-        name = "Die Horde informieren",
-    },
-    [52024] = {
-        name = "Die Horde informieren",
-    },
     [52026] = {
         name = "Attentat in Übersee",
     },
@@ -4661,32 +4649,11 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53433] = {
         name = "Hut des Glutordens",
     },
-    [53434] = {
-        name = "Der verschwundene Fürst",
-    },
     [53438] = {
         name = "GESUCHT: Wyvernwilderer",
     },
-    [53439] = {
-        name = "Blutgetränkte Fluten",
-    },
     [53440] = {
         name = "GESUCHT: Die Hornisse",
-    },
-    [53442] = {
-        name = "Die Schiffbrüchigen",
-    },
-    [53443] = {
-        name = "Meine liebsten Dinge",
-    },
-    [53444] = {
-        name = "Glänzendes Medaillon",
-    },
-    [53445] = {
-        name = "Verstummen der Schwestern",
-    },
-    [53446] = {
-        name = "Lokale Spezialitäten",
     },
     [53449] = {
         name = "Wildgewordene Affenbande",
@@ -4771,6 +4738,51 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [53738] = {
         name = "Die Verteidigung von Quel'Danas",
+    },
+    [53760] = {
+        name = "Unbeabsichtigte Konsequenzen",
+    },
+    [53761] = {
+        name = "Der Schatz der Piratin",
+    },
+    [53762] = {
+        name = "Die Orkanruferkrone",
+    },
+    [53763] = {
+        name = "Das Messer drehen",
+    },
+    [53765] = {
+        name = "Sein Blick ruht auf Euch",
+    },
+    [53766] = {
+        name = "Sein Blick ruht auf Euch",
+    },
+    [53774] = {
+        name = "Weisheit des Kriegshäuptlings",
+    },
+    [53775] = {
+        name = "Störende Schemen",
+    },
+    [53776] = {
+        name = "Zur Verheerten Küste",
+    },
+    [53777] = {
+        name = "Wo der Tod ihn erwartete",
+    },
+    [53778] = {
+        name = "Wo er fiel",
+    },
+    [53779] = {
+        name = "Die Lügen eines Loas",
+    },
+    [53780] = {
+        name = "Wärter der Verdammten",
+    },
+    [53781] = {
+        name = "Eyir",
+    },
+    [53782] = {
+        name = "Geheimnisse des Todes",
     },
     [53783] = {
         name = "In den Dünen",
@@ -4884,9 +4896,6 @@ BtWQuestsDatabase:UpdateQuestsTable({
         name = "Schwindende Hoffnung",
     },
     [53850] = {
-        name = "Unser Krieg geht weiter",
-    },
-    [53851] = {
         name = "Unser Krieg geht weiter",
     },
     [53852] = {
@@ -5087,6 +5096,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54050] = {
         name = "Nachspiel",
     },
+    [54058] = {
+        name = "Unbeabsichtigte Konsequenzen",
+    },
     [54059] = {
         name = "Die Nachtkriegerin",
     },
@@ -5132,6 +5144,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54109] = {
         name = "Gunst der Königin",
     },
+    [54113] = {
+        name = "Jeder kleine Tod hilft",
+    },
+    [54114] = {
+        name = "Jeder kleine Tod hilft",
+    },
+    [54117] = {
+        name = "Jeder kleine Tod hilft",
+    },
+    [54118] = {
+        name = "Jeder kleine Tod hilft",
+    },
+    [54120] = {
+        name = "Nach Orgrimmar",
+    },
     [54121] = {
         name = "Aschenwinds Ausbruch",
     },
@@ -5141,6 +5168,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54124] = {
         name = "Vermeidung von Zivilklagen für Anfänger",
     },
+    [54126] = {
+        name = "Das Messer drehen",
+    },
     [54128] = {
         name = "Notwendige Vorsichtsmaßnahmen",
     },
@@ -5149,6 +5179,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54140] = {
         name = "Marsch der Zandalari",
+    },
+    [54141] = {
+        name = "Das Medaillon von Azshara",
+    },
+    [54144] = {
+        name = "Befehle von Azshara",
+    },
+    [54145] = {
+        name = "Der Loa des Todes",
+    },
+    [54147] = {
+        name = "Die Val'kyr konfrontieren",
     },
     [54156] = {
         name = "Ein blutiger Pfad",
@@ -5173,6 +5215,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54171] = {
         name = "Das Abyssische Szepter",
+    },
+    [54174] = {
+        name = "Befehle von Azshara",
     },
     [54175] = {
         name = "Stellt Euch Eurem Feind",
@@ -5258,6 +5303,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54249] = {
         name = "Zandalarigerechtigkeit",
     },
+    [54265] = {
+        name = "Befehle von Azshara",
+    },
     [54269] = {
         name = "Niemand soll entkommen",
     },
@@ -5317,6 +5365,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54421] = {
         name = "Ihre Bestien zähmen",
+    },
+    [54433] = {
+        name = "Befehle von Azshara",
+    },
+    [54438] = {
+        name = "Der Tiegel der Stürme: Relikte des Schattens",
+    },
+    [54439] = {
+        name = "Der Tiegel der Stürme: Relikte des Schattens",
     },
     [54441] = {
         name = "Das Bluttor einnehmen",
@@ -5398,6 +5455,27 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54871] = {
         name = "Wir kommen",
+    },
+    [54913] = {
+        name = "Geistesblitz",
+    },
+    [54915] = {
+        name = "Telemetrie aktiv",
+    },
+    [54916] = {
+        name = "Bekenntnis des Jägers",
+    },
+    [54917] = {
+        name = "Mit Blut bezahlt",
+    },
+    [54918] = {
+        name = "Funke der Imagination",
+    },
+    [54919] = {
+        name = "Bande des Donners",
+    },
+    [54920] = {
+        name = "Zurück nach Hause",
     },
     [54925] = {
         name = "Ketzerei!",
@@ -5518,6 +5596,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55188] = {
         name = "Die Zerreißprobe",
+    },
+    [55195] = {
+        name = "Nachhall",
     },
     [55214] = {
         name = "Reißende Naht",

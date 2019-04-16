@@ -4,6 +4,8 @@ if GetLocale() ~= "koKR" then
     return
 end
 
+BTWQUESTS_GIFT_OF_NZOTH = "느조스의 선물"
+BTWQUESTS_HATI_REBORN = "다시 태어난 하티"
 BTWQUESTS_MAGHAR_ORC = "마그하르 오크"
 BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "나이트 엘프 '밤 전사' 외형"
 BTWQUESTS_THE_WAR_CAMPAIGN = "전쟁 대장정"
