@@ -3240,7 +3240,26 @@ TradeSkillMaster_AppHelperDB = {
 			"[\"AC\",\"v4.7.6\",1554162982744,1554161710,59,\"UI_NAVIGATION\",\"auction/auctioning\",\"auction/auctioning/scan\"]", -- [3214]
 			"[\"AC\",\"v4.7.6\",1554162982744,1554161710,60,\"UI_NAVIGATION\",\"auction/auctioning/scan\",\"auction/auctioning/scan/log\"]", -- [3215]
 			"[\"AC\",\"v4.7.6\",1554163034983,1554161710,61,\"UI_NAVIGATION\",\"auction/auctioning/scan/log\",\"\"]", -- [3216]
+			"[\"AC\",\"v4.7.6\",1554191031818,1554191027,1,\"ADDON_INITIALIZE\",2858]", -- [3217]
+			"[\"AC\",\"v4.7.6\",1554191046628,1554191027,2,\"ADDON_ENABLE\",2290]", -- [3218]
+			"[\"AC\",\"v4.7.6\",1554191052851,1554191027,3,\"UI_NAVIGATION\",\"\",\"destroying\"]", -- [3219]
+			"[\"AC\",\"v4.7.6\",1554191053851,1554191027,4,\"UI_NAVIGATION\",\"destroying\",\"\"]", -- [3220]
+			"[\"AC\",\"v4.7.6\",1554191056901,1554191027,5,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [3221]
+			"[\"AC\",\"v4.7.6\",1554191056901,1554191027,6,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [3222]
+			"[\"AC\",\"v4.7.6\",1554191062245,1554191027,7,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [3223]
+			"[\"AC\",\"v4.7.6\",1554191094308,1554191027,8,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [3224]
+			"[\"AC\",\"v4.7.6\",1554191094308,1554191027,9,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [3225]
+			"[\"AC\",\"v4.7.6\",1554191108917,1554191027,10,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [3226]
+			"[\"AC\",\"v4.7.6\",1554191342288,1554191027,11,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [3227]
+			"[\"AC\",\"v4.7.6\",1554191342288,1554191027,12,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [3228]
+			"[\"AC\",\"v4.7.6\",1554191353706,1554191027,13,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [3229]
+			"[\"AC\",\"v4.7.6\",1554191363551,1554191027,14,\"UI_NAVIGATION\",\"\",\"crafting\"]", -- [3230]
+			"[\"AC\",\"v4.7.6\",1554191363551,1554191027,15,\"UI_NAVIGATION\",\"crafting\",\"crafting/crafting\"]", -- [3231]
+			"[\"AC\",\"v4.7.6\",1554191415533,1554191027,16,\"UI_NAVIGATION\",\"crafting/crafting\",\"\"]", -- [3232]
+			"[\"AC\",\"v4.7.6\",1554191630665,1554191027,17,\"UI_NAVIGATION\",\"\",\"mailing\"]", -- [3233]
+			"[\"AC\",\"v4.7.6\",1554191630665,1554191027,18,\"UI_NAVIGATION\",\"mailing\",\"mailing/inbox\"]", -- [3234]
+			"[\"AC\",\"v4.7.6\",1554191638136,1554191027,19,\"UI_NAVIGATION\",\"mailing/inbox\",\"\"]", -- [3235]
 		},
-		["updateTime"] = 1554163034,
+		["updateTime"] = 1554191638,
 	},
 }

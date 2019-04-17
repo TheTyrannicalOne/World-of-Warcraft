@@ -111,13 +111,6 @@ X: -3
 Y: -217
 W: 130
 H: 20
-Frame: AllTheThings-Window-CurrentInstance
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 300
-H: 300
 Frame: AllTheThings-Window-Tradeskills
 FrameLevel: 1
 Anchor: RIGHT
@@ -125,3 +118,10 @@ X: 300
 Y: 0
 W: 300
 H: 508
+Frame: AllTheThings-Window-CurrentInstance
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 300
+H: 300

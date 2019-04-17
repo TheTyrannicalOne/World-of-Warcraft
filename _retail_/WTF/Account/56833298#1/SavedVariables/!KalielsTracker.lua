@@ -1,5 +1,13 @@
 
 KalielsTrackerDB = {
+	["char"] = {
+		["Shanyt - Argent Dawn"] = {
+			["collapsed"] = true,
+		},
+		["Vancard - Zul'jin"] = {
+			["collapsed"] = true,
+		},
+	},
 	["global"] = {
 		["helpTutorial"] = 11,
 		["version"] = "3.1.4",

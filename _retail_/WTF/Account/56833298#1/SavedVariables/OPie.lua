@@ -5,7 +5,7 @@ OneRing_Config = {
 		["Black Dragonflight-Durlok-3"] = "default",
 	},
 	["_GameVersion"] = "8.1.5",
-	["_OPieVersion"] = "Walnut 1 (3.97)",
+	["_OPieVersion"] = "Walnut 2 (3.99)",
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
@@ -153,7 +153,7 @@ OneRing_Config = {
 				["limit"] = "Shanyt-ArgentDawn",
 			},
 			["OPieFlagStore"] = {
-				["FlushedDefaultColors"] = true,
+				["StoreVersion"] = 2,
 			},
 			["Mounts2"] = {
 				{

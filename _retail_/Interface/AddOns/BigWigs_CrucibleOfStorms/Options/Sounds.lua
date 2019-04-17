@@ -19,9 +19,9 @@ BigWigs:AddSounds("The Restless Cabal", {
 })
 
 BigWigs:AddSounds("Uu'nat, Harbinger of the Void", {
-	[284583] = "info",
+	[284583] = "long",
 	[284722] = "info",
-	[284804] = "info",
+	[284804] = {"info","long"},
 	[284851] = "alarm",
 	[285185] = "alarm",
 	[285307] = "alert",
@@ -33,5 +33,7 @@ BigWigs:AddSounds("Uu'nat, Harbinger of the Void", {
 	[285562] = "alarm",
 	[285638] = "warning",
 	[285652] = "warning",
+	[285685] = "warning",
 	[285820] = "info",
+	["stages"] = "long",
 })

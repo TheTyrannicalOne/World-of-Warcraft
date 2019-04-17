@@ -21,7 +21,7 @@ BigWigs:AddColors("The Restless Cabal", {
 BigWigs:AddColors("Uu'nat, Harbinger of the Void", {
 	[284583] = {"blue","cyan"},
 	[284722] = {"blue","cyan"},
-	[284804] = {"blue","purple"},
+	[284804] = {"blue","cyan","green"},
 	[284851] = {"blue","purple"},
 	[285185] = "orange",
 	[285307] = "purple",
@@ -33,5 +33,7 @@ BigWigs:AddColors("Uu'nat, Harbinger of the Void", {
 	[285562] = "yellow",
 	[285638] = "orange",
 	[285652] = {"blue","yellow"},
+	[285685] = "orange",
 	[285820] = "cyan",
+	["stages"] = {"cyan","green"},
 })

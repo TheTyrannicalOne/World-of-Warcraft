@@ -45,13 +45,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["ti1"] = 118530,
 				["tt1"] = true,
+				["ti1"] = 118530,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["ti3"] = 127855,
 				["tt3"] = true,
+				["ti3"] = 127855,
 			},
 			["faction"] = "Horde",
 		},
@@ -67,13 +67,13 @@ MasterPlanAG = {
 	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["lastCacheTime"] = 1554068162,
+			["class"] = "WARRIOR",
 			["summary"] = {
 				["lastOilTime"] = 1554007978,
 				["tt2"] = 1553440528,
 				["tt3"] = 1553437529,
-				["tt1"] = 1553318948,
 				["ti1"] = 118531,
+				["tt1"] = 1553318948,
 				["ti3"] = 127854,
 				["inProgress"] = {
 					[131] = 1554071079,
@@ -91,11 +91,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["class"] = "WARRIOR",
-			["curRes"] = 8341,
 			["curOil"] = 75265,
+			["cacheSize"] = 1000,
+			["lastCacheTime"] = 1554068162,
+			["curRes"] = 8341,
+			["faction"] = "Horde",
 		},
 	},
 	["Zul'jin"] = {
@@ -129,7 +129,5 @@ MasterPlanAG = {
 			["class"] = "DRUID",
 			["faction"] = "Alliance",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 }
