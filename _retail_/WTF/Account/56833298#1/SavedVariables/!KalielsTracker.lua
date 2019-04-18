@@ -1,20 +1,12 @@
 
 KalielsTrackerDB = {
-	["char"] = {
-		["Shanyt - Argent Dawn"] = {
-			["collapsed"] = true,
-		},
-		["Vancard - Zul'jin"] = {
-			["collapsed"] = true,
-		},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Default",
+		["Vancard - Zul'jin"] = "Default",
 	},
 	["global"] = {
 		["helpTutorial"] = 11,
 		["version"] = "3.1.4",
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
-		["Vancard - Zul'jin"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

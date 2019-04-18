@@ -200,9 +200,19 @@ function ns.StartConfiguration( external )
 
             v.Backdrop = v.Backdrop or CreateFrame( "Frame", v:GetName().. "_Backdrop", v )
             v.Backdrop:ClearAllPoints()
-            v.Backdrop:SetWidth( v:GetWidth() + 2 )
-            v.Backdrop:SetHeight( v:GetHeight() + 2 )
-    
+            
+            local left, right, top, bottom = v:GetPerimeterButtons()
+            if left and right and top and bottom then
+                v.Backdrop:SetPoint( "LEFT", left, "LEFT", -2, 0 )
+                v.Backdrop:SetPoint( "RIGHT", right, "RIGHT", 2, 0 )
+                v.Backdrop:SetPoint( "TOP", top, "TOP", 0, 2 )
+                v.Backdrop:SetPoint( "BOTTOM", bottom, "BOTTOM", 0, -2 )
+            else
+                v.Backdrop:SetWidth( v:GetWidth() + 2 )
+                v.Backdrop:SetHeight( v:GetHeight() + 2 )
+                v.Backdrop:SetPoint( "CENTER", v, "CENTER" )
+            end
+
             local framelevel = v:GetFrameLevel()
             if framelevel > 0 then
                 v.Backdrop:SetFrameStrata("MEDIUM")
@@ -211,7 +221,6 @@ function ns.StartConfiguration( external )
                 v.Backdrop:SetFrameStrata("LOW")
             end
     
-            v.Backdrop:SetPoint( "CENTER", v, "CENTER" )
             v.Backdrop:Show()            
 
             v.Backdrop:SetBackdrop( {
@@ -220,7 +229,7 @@ function ns.StartConfiguration( external )
                 tile = false,
                 tileSize = 0,
                 edgeSize = 1,
-                insets = { left = -1, right = -1, top = -1, bottom = -1 }
+                insets = { left = 0, right = 0, top = 0, bottom = 0 }
             } )
 
             local ccolor = RAID_CLASS_COLORS[ select(2, UnitClass("player")) ]
@@ -566,6 +575,7 @@ do
         VEHICLE_ANGLE_SHOW = 1,
         VEHICLE_UPDATE = 1,
         UPDATE_VEHICLE_ACTIONBAR = 1,
+        UNIT_FLAGS = 1,
 
         PLAYER_TARGET_CHANGED = 1,
 
@@ -636,16 +646,18 @@ do
         local conf = Hekili.DB.profile.displays[ self.id ]
 
         if conf.keybindings and conf.keybindings.enabled then
+            local cPort = conf.keybindings.cPortOverride and ConsolePort ~= nil
+
             for i, b in ipairs( self.Buttons ) do
                 local r = self.Recommendations[i]
                 if r then
                     local a = r.actionName
 
-                    if a then
-                        r.keybind = Hekili:GetBindingForAction( r.actionName, not conf.keybindings.lowercase == true )
+                    if a then                        
+                        r.keybind = Hekili:GetBindingForAction( r.actionName, conf )
                     end
 
-                    if i == 1 or conf.keybindings.queued then
+                    if i == 1 or ( conf.keybindings.queued and not cPort ) then
                         b.Keybinding:SetText( r.keybind )
                     else
                         b.Keybinding:SetText( nil )
@@ -678,7 +690,13 @@ do
         local profile = Hekili.DB.profile
         local conf = profile.displays[ self.id ]
 
+        self.alphaCheck = self.alphaCheck - elapsed
+
         if self.alpha == 0 then
+            if self.alphaCheck <= 0 then
+                self.alphaCheck = 0.5
+                self:UpdateAlpha()
+            end
             return
         end
 
@@ -740,7 +758,7 @@ do
                         b.Caption:SetText(nil)
                     end
 
-                    if conf.keybindings.enabled and ( i == 1 or conf.keybindings.queued ) then
+                    if conf.keybindings.enabled and ( i == 1 or conf.keybindings.queued and not ( conf.keybindings.cPortOverride and ConsolePort ~= nil ) ) then
                         b.Keybinding:SetText( keybind )
                     else
                         b.Keybinding:SetText(nil)
@@ -785,6 +803,7 @@ do
             self.delayTimer = -1
 
             self.recTimer = 1
+            self.alphaCheck = 0.5
 
             self:RefreshCooldowns()
             self.NewRecommendations = false
@@ -1118,6 +1137,7 @@ do
         if preAlpha > 0 and newAlpha == 0 then
             -- self:Deactivate()
             self:SetAlpha( 0 )
+            self.alphaCheck = 0.5
         else
             if preAlpha == 0 and newAlpha > 0 then                
                 Hekili:ForceUpdate( "DISPLAY_ALPHA_CHANGED" )
@@ -1258,6 +1278,7 @@ do
             self.Recommendations = self.Recommendations or ( ns.queue and ns.queue[ self.id ] )
             self.NewRecommendations = true
 
+            self.alphaCheck = 0
             self.auraTimer = 0
             self.delayTimer = 0
             self.flashTimer = 0
@@ -1316,6 +1337,50 @@ do
     end
 
 
+    function Display_GetPerimeterButtons( self )
+        local left, right, top, bottom
+        local lPos, rPos, tPos, bPos
+
+        for i = 1, self.numIcons do
+            local button = self.Buttons[ i ]
+
+            if i == 1 then
+                lPos = button:GetLeft()
+                rPos = button:GetRight()
+                tPos = button:GetTop()
+                bPos = button:GetBottom()
+
+                left = button
+                right = button
+                top = button
+                bottom = button
+            else
+                if button:GetLeft() < lPos then
+                    lPos = button:GetLeft()
+                    left = button
+                end
+
+                if button:GetRight() > rPos then
+                    rPos = button:GetRight()
+                    right = button
+                end
+
+                if button:GetTop() > tPos then
+                    tPos = button:GetTop()
+                    top = button
+                end
+
+                if button:GetBottom() < bPos then
+                    bPos = button:GetBottom()
+                    bottom = button
+                end
+            end
+        end
+
+        return left, right, top, bottom
+    end    
+
+
     function Hekili:CreateDisplay( id )
         local conf = rawget( self.DB.profile.displays, id )
         if not conf then return end
@@ -1325,6 +1390,7 @@ do
 
         d.id = id
         d.alpha = 0
+        d.numIcons = conf.numIcons
 
         local scale = self:GetScale()
         local border = 2
@@ -1338,6 +1404,7 @@ do
 
         d.Activate = Display_Activate
         d.Deactivate = Display_Deactivate
+        d.GetPerimeterButtons = Display_GetPerimeterButtons
         d.RefreshCooldowns = Display_RefreshCooldowns
         d.UpdateAlpha = Display_UpdateAlpha
         d.UpdateKeybindings = Display_UpdateKeybindings
@@ -1661,16 +1728,14 @@ do
         local kbAnchor = conf.keybindings.anchor or "TOPRIGHT"
         b.Keybinding:ClearAllPoints()
         b.Keybinding:SetPoint( kbAnchor, b, kbAnchor, conf.keybindings.x or 0, conf.keybindings.y or 0 )
-        b.Keybinding:SetSize( b:GetWidth(), b:GetHeight() / 2 )
-        b.Keybinding:SetJustifyH( kbAnchor:match("RIGHT") and "RIGHT" or ( kbAnchor:match("LEFT") and "LEFT" or "CENTER" ) )
-        b.Keybinding:SetJustifyV( kbAnchor:match("TOP") and "TOP" or ( kbAnchor:match("BOTTOM") and "BOTTOM" or "MIDDLE" ) )
+        b.Keybinding:SetSize( 0, 0 )
         b.Keybinding:SetTextColor( 1, 1, 1, 1 )
 
         local kbText = b.Keybinding:GetText()
         b.Keybinding:SetText( nil )
         b.Keybinding:SetText( kbText )
 
-
+        
         -- Cooldown Wheel
         b.Cooldown = b.Cooldown or CreateFrame( "Cooldown", bName .. "_Cooldown", b, "CooldownFrameTemplate" )
         b.Cooldown:ClearAllPoints()

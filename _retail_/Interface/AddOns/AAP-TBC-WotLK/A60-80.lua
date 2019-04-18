@@ -3978,8 +3978,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 4043.5,
 			},
 			["UseFlightPath"] = 11723,
-			["PosX"] = 20.8,
-			["PosY"] = 49.1,
 			["Name"] = "Fizzcrank Airstrip, Borean Tundra",
 			["ETA"] = 88,
 		}, -- [1]
@@ -3998,8 +3996,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 5310.5,
 			},
 			["UseFlightPath"] = 11944,
-			["PosX"] = 29,
-			["PosY"] = 56.9,
 			["Name"] = "Unu'pe, Borean Tundra",
 			["ETA"] = 73,
 		}, -- [1]
@@ -5128,8 +5124,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 907.5,
 			},
 			["UseFlightPath"] = 12107,
-			["PosX"] = 42.2,
-			["PosY"] = 53.1,
 			["Name"] = "Stars' Rest, Dragonblight",
 			["ETA"] = 64,
 		}, -- [1]
@@ -7661,8 +7655,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 244.3,
 			},
 			["UseFlightPath"] = 12478,
-			["PosX"] = 59.6,
-			["PosY"] = 51.8,
 			["Name"] = "Wintergarde Keep, Dragonblight",
 			["ETA"] = 41,
 		}, -- [1]

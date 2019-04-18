@@ -21,7 +21,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "24463f5" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "01e276d" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[===[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -960,9 +960,9 @@ end
 
 do
 	-- This is a crapfest mainly because DBM's actual handling of versions is a crapfest, I'll try explain how this works...
-	local DBMdotRevision = "20190417003356" -- The changing version of the local client, changes with every alpha revision using an SVN keyword.
+	local DBMdotRevision = "20190417004302" -- The changing version of the local client, changes with every alpha revision using an SVN keyword.
 	local DBMdotDisplayVersion = "8.1.18" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration. Unless they fuck up their release and leave the alpha text in it.
-	local DBMdotReleaseRevision = "20190420000000" -- This is manually changed by them every release, they use it to track the highest release version, a new DBM release is the only time it will change.
+	local DBMdotReleaseRevision = "20190417000000" -- This is manually changed by them every release, they use it to track the highest release version, a new DBM release is the only time it will change.
 
 	local timer, prevUpgradedUser = nil, nil
 	local function sendMsg()

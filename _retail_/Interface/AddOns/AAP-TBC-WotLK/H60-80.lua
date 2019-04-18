@@ -5590,8 +5590,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 244.6,
 			},
 			["UseFlightPath"] = 12127,
-			["PosX"] = 45.3,
-			["PosY"] = 50.8,
 			["Name"] = "Agmar's Hammer, Dragonblight",
 			["ETA"] = 54,
 		}, -- [1]
@@ -6163,8 +6161,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 244.3,
 			},
 			["UseFlightPath"] = 12110,
-			["PosX"] = 45.3,
-			["PosY"] = 50.8,
 			["Name"] = "Agmar's Hammer, Dragonblight",
 			["ETA"] = 54,
 		}, -- [1]
@@ -6183,8 +6179,6 @@ AAP.QuestStepList2060 = {
 				["x"] = 1524.9,
 			},
 			["UseFlightPath"] = 12209,
-			["PosX"] = 59.4,
-			["PosY"] = 54.8,
 			["Name"] = "Venomspite, Dragonblight",
 			["ETA"] = 96,
 		}, -- [1]

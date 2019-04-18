@@ -365,6 +365,13 @@ function Hekili:CheckStack()
 end
 
 
+local default_modifiers = {
+    early_chain_if = false,
+    chain = false,
+    interrupt_if = false,
+    interrupt = false
+}
+
 function Hekili:CheckChannel( ability, prio )
     if not state.channeling then return true end
 
@@ -373,7 +380,7 @@ function Hekili:CheckChannel( ability, prio )
     if not aura or not aura.tick_time then return true end
 
     local modifiers = scripts.Channels[ state.system.packName ]
-    modifiers = modifiers and modifiers[ channel ]
+    modifiers = modifiers and modifiers[ channel ] or default_modifiers
 
     local tick_time = aura.tick_time
     local remains = state.channel_remains
@@ -889,10 +896,12 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                     end
 
                                                     if entry.cycle_targets == 1 and state.active_enemies > 1 then
+                                                        self:Debug( "This entry cycles targets and there are %d enemies.", state.active_enemies )
                                                         if not state.settings.cycle then
                                                             if debug then self:Debug( "This entry would cycle through targets but target cycling is disabled." ) end
                                                         else
-                                                            if ability and ability.cycle and state.dot[ ability.cycle ].up and state.active_dot[ ability.cycle ] < ( entry.max_cycle_targets or state.active_enemies ) then
+                                                            local cycleAura = ability and ability.cycle or state.this_action
+                                                            if cycleAura and class.auras[ cycleAura ] and state.dot[ cycleAura ].up and state.active_dot[ cycleAura ] < ( entry.max_cycle_targets or state.active_enemies ) then
                                                                 slot.indicator = 'cycle'
                                                             elseif module and module.cycle then
                                                                 slot.indicator = module.cycle()
@@ -1167,7 +1176,7 @@ function Hekili:ProcessHooks( dispName, packName )
 
             checkstr = checkstr and ( checkstr .. ':' .. action ) or action
 
-            slot.keybind = self:GetBindingForAction( action, not display.keybindings.lowercase == true )
+            slot.keybind = self:GetBindingForAction( action, display )
             slot.resource_type = state.GetResourceType( action )
 
             for k,v in pairs( class.resources ) do

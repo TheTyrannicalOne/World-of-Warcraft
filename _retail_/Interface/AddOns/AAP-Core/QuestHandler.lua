@@ -554,7 +554,35 @@ local function AAP_UseTaxiFunc()
 	if (steps["ETA"]) then
 		AAP.AFK_Timer(steps["ETA"])
 	end
-	local Nodetotake = AAP_TaxiSearchFunc(steps["PosX"], steps["PosY"])
+	if (GetLocale() == "enUS") then
+		local CLi
+		for CLi = 1, NumTaxiNodes() do
+			local aapx,aapy = TaxiNodePosition(CLi)
+			aapx = (floor(aapx * 1000)/10)
+			aapy = (floor(aapy * 1000)/10)
+			if (TaxiNodeGetType(CLi) == "REACHABLE") then
+				if (not AAP.FPs) then
+					AAP.FPs = {}
+				end
+				if (not AAP.FPs[AAPH_Faction]) then
+					AAP.FPs[AAPH_Faction] = {}
+				end
+				if (not AAP.FPs[AAPH_Faction][AAPH.getContinent()]) then
+					AAP.FPs[AAPH_Faction][AAPH.getContinent()] = {}
+				end
+				if (not AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)]) then
+					AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)] = {}
+				end
+				AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["x"] = aapx
+				AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["y"] = aapy
+			end
+		end
+	end
+	local TName = steps["Name"]
+	local TContonent = AAP.getContinent()
+	local TX = AAP.FPs[AAP.Faction][TContonent][TName]["x"]
+	local TY = AAP.FPs[AAP.Faction][TContonent][TName]["y"]
+	local Nodetotake = AAP_TaxiSearchFunc(TX, TY)
 --	TaxiNodeOnButtonEnter(getglobal("TaxiButton"..Nodetotake))
 	TakeTaxiNode(Nodetotake)
 	AAP.BookingList["TestTaxiFunc"] = Nodetotake
