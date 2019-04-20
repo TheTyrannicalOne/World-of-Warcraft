@@ -564,17 +564,17 @@ local function AAP_UseTaxiFunc()
 				if (not AAP.FPs) then
 					AAP.FPs = {}
 				end
-				if (not AAP.FPs[AAPH_Faction]) then
-					AAP.FPs[AAPH_Faction] = {}
+				if (not AAP.FPs[AAP.Faction]) then
+					AAP.FPs[AAP.Faction] = {}
 				end
-				if (not AAP.FPs[AAPH_Faction][AAPH.getContinent()]) then
-					AAP.FPs[AAPH_Faction][AAPH.getContinent()] = {}
+				if (not AAP.FPs[AAP.Faction][AAPH.getContinent()]) then
+					AAP.FPs[AAP.Faction][AAPH.getContinent()] = {}
 				end
-				if (not AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)]) then
-					AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)] = {}
+				if (not AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)]) then
+					AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)] = {}
 				end
-				AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["x"] = aapx
-				AAP.FPs[AAPH_Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["y"] = aapy
+				AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["x"] = aapx
+				AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["y"] = aapy
 			end
 		end
 	end

@@ -10,11 +10,10 @@ BigWigs:AddColors("The Restless Cabal", {
 	[282562] = "blue",
 	[282589] = "orange",
 	[282675] = "red",
-	[282738] = "blue",
-	[282741] = "cyan",
+	[282741] = {"blue","cyan","red"},
 	[282742] = "orange",
-	[282750] = "green",
 	[282914] = {"blue","red"},
+	[283066] = "green",
 	[287876] = "blue",
 })
 

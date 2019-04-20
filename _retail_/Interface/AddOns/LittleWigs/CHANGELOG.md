@@ -1,9 +1,12 @@
 # LittleWigs
 
-## [v8.1.10](https://github.com/BigWigsMods/LittleWigs/tree/v8.1.10) (2019-04-08)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.1.9...v8.1.10)
+## [v8.1.11](https://github.com/BigWigsMods/LittleWigs/tree/v8.1.11) (2019-04-18)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.1.10...v8.1.11)
 
-- BfA: Add option headers and don't show timers for heroic+ spells on normal (#442)  
-- BfA/Freehold/Kragg: Add Vile Bombardment message and fix timer for the remainder of the fight in rare cases where the bird charges sooner than normal (#440)  
-- BfA/WaycrestManor: Add target message for Jagged Nettles and Uproot (#441)  
-- Update deDE (#439)  
+- BfA/TolDagor: Add Viscious Mauling and Deadeye stack message (#448)  
+- BfA/Underrot/Zancha: Improve Shockwave timer (#446)  
+- BfA/TheMotherlode: Add Throw Coins, Pay to Win, and Azerite Catalyst (#445)  
+- BfA/Freehold: Add Captain Jolly and add messages when brews are applied to bosses (#444)  
+- BfA/ShrineOfTheStorm: Throttle Anchor of Binding, add Aqusirr respawn timer (#447)  
+- BfA/AtalDazar: Add boss respawn timers (#449)  
+- Update zhTW (#443)  
