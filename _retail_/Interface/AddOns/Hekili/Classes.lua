@@ -1139,97 +1139,89 @@ all:RegisterAuras( {
     },
 
     dispellable_curse = {
-        generate = function ()
-            local dm = debuff.dispellable_curse
-
+        generate = function( t )
             local i = 1
-            local name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "pLAYER", i )
+            local name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
 
             while( name ) do
-                if debuffType == "Curse" and canDispel then break end
+                if debuffType == "Curse" then break end
 
                 i = i + 1
-                name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "player", i )
+                name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
             end
 
-            if canDispel then
-                dm.count = count > 0 and count or 1
-                dm.expires = expirationTime > 0 and expirationTime or query_time + 5
-                dm.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
-                dm.caster = "nobody"
+            if name then
+                t.count = count > 0 and count or 1
+                t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                t.caster = "nobody"
                 return
             end
 
-            dm.count = 0
-            dm.expires = 0
-            dm.applied = 0
-            dm.caster = "nobody"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = "nobody"
         end,
     },
 
     dispellable_poison = {
-        generate = function ()
-            local dm = debuff.dispellable_poison
-
+        generate = function( t )
             local i = 1
-            local name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "player", i )
+            local name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
 
             while( name ) do
-                if debuffType == "Poison" and canDispel then break end
+                if debuffType == "Poison" then break end
 
                 i = i + 1
-                name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "player", i )
+                name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
             end
 
-            if canDispel then
-                dm.count = count > 0 and count or 1
-                dm.expires = expirationTime > 0 and expirationTime or query_time + 5
-                dm.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
-                dm.caster = "nobody"
+            if name then
+                t.count = count > 0 and count or 1
+                t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                t.caster = "nobody"
                 return
             end
 
-            dm.count = 0
-            dm.expires = 0
-            dm.applied = 0
-            dm.caster = "nobody"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = "nobody"
         end,
     },
 
     dispellable_disease = {
-        generate = function ()
-            local dm = debuff.dispellable_disease
-
+        generate = function( t )
             local i = 1
-            local name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "player", i )
+            local name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
 
             while( name ) do
-                if debuffType == "Disease" and canDispel then break end
+                if debuffType == "Disease" then break end
 
                 i = i + 1
-                name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "player", i )
+                name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
             end
 
-            if canDispel then
-                dm.count = count > 0 and count or 1
-                dm.expires = expirationTime > 0 and expirationTime or query_time + 5
-                dm.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
-                dm.caster = "nobody"
+            if name then
+                t.count = count > 0 and count or 1
+                t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                t.caster = "nobody"
                 return
             end
 
-            dm.count = 0
-            dm.expires = 0
-            dm.applied = 0
-            dm.caster = "nobody"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = "nobody"
         end,
     },
 
     dispellable_magic = {
-        generate = function ()
-            local dm = debuff.dispellable_magic
-
-            if UnitCanAttack( "player", "target" ) then
+        generate = function( t, auraType )
+            if auraType == "buff" then
                 local i = 1
                 local name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitBuff( "target", i )
 
@@ -1241,25 +1233,43 @@ all:RegisterAuras( {
                 end
 
                 if canDispel then
-                    dm.count = count > 0 and count or 1
-                    dm.expires = expirationTime > 0 and expirationTime or query_time + 5
-                    dm.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
-                    dm.caster = "nobody"
+                    t.count = count > 0 and count or 1
+                    t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                    t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                    t.caster = "nobody"
                     return
                 end
+            
+            else
+                local i = 1
+                local name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
+    
+                while( name ) do
+                    if debuffType == "Magic" then break end
+    
+                    i = i + 1
+                    name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
+                end
+    
+                if name then
+                    t.count = count > 0 and count or 1
+                    t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                    t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                    t.caster = "nobody"
+                    return
+                end
+            
             end
 
-            dm.count = 0
-            dm.expires = 0
-            dm.applied = 0
-            dm.caster = "nobody"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = "nobody"
         end,
     },
 
     stealable_magic = {
-        generate = function ()
-            local dm = debuff.stealable_magic
-
+        generate = function( t )
             if UnitCanAttack( "player", "target" ) then
                 local i = 1
                 local name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitBuff( "target", i )
@@ -1280,46 +1290,42 @@ all:RegisterAuras( {
                 end
             end
 
-            dm.count = 0
-            dm.expires = 0
-            dm.applied = 0
-            dm.caster = "nobody"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = "nobody"
         end,
     },
 
     reversible_magic = {
-        generate = function ()
-            local dm = debuff.reversible_magic
-
+        generate = function( t )
             local i = 1
-            local name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "player", i )
+            local name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
 
             while( name ) do
-                if debuffType == "Magic" and canDispel then break end
+                if debuffType == "Magic" then break end
 
                 i = i + 1
-                name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitDebuff( "player", i )
+                name, _, count, debuffType, duration, expirationTime = UnitDebuff( "player", i, "RAID" )
             end
 
-            if canDispel then
-                dm.count = count > 0 and count or 1
-                dm.expires = expirationTime > 0 and expirationTime or query_time + 5
-                dm.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
-                dm.caster = "nobody"
+            if name then
+                t.count = count > 0 and count or 1
+                t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                t.caster = "nobody"
                 return
             end
 
-            dm.count = 0
-            dm.expires = 0
-            dm.applied = 0
-            dm.caster = "nobody"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = "nobody"
         end,
     },
 
     dispellable_enrage = {
-        generate = function ()
-            local dm = debuff.dispellable_enrage
-
+        generate = function( t )
             if UnitCanAttack( "player", "target" ) then
                 local i = 1
                 local name, _, count, debuffType, duration, expirationTime, _, canDispel = UnitBuff( "target", i )
@@ -1332,18 +1338,18 @@ all:RegisterAuras( {
                 end
 
                 if canDispel then
-                    dm.count = count > 0 and count or 1
-                    dm.expires = expirationTime > 0 and expirationTime or query_time + 5
-                    dm.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
-                    dm.caster = "nobody"
+                    t.count = count > 0 and count or 1
+                    t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                    t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                    t.caster = "nobody"
                     return
                 end
             end
 
-            dm.count = 0
-            dm.expires = 0
-            dm.applied = 0
-            dm.caster = "nobody"
+            t.count = 0
+            t.expires = 0
+            t.applied = 0
+            t.caster = "nobody"
         end,
     }
 } )
@@ -1551,7 +1557,7 @@ all:RegisterAbilities( {
             elseif class.file == "WARRIOR" then gain( 15, "rage" )
             elseif class.file == "DEMONHUNTER" then gain( 15, "fury" ) end
 
-            removeDebuff( "target", "dispellable_magic" )
+            removeBuff( "dispellable_magic" )
         end,
     },
 
@@ -1849,9 +1855,199 @@ all:RegisterAuras( {
 } )
 
 
--- BFA TRINKETS
--- ON USE
+-- BFA TRINKETS/ITEMS
+-- Crucible
 
+all:RegisterAbility( "pillar_of_the_drowned_cabal", {
+    cast = 0,
+    cooldown = 30,
+    gcd = "spell", -- ???
+
+    item = 167853,
+    toggle = "defensives", -- ???
+
+    handler = function () applyBuff( "mariners_ward" ) end
+} )
+
+all:RegisterAura( "mariners_ward", {
+    id = 295411,
+    duration = 90,
+    max_stack = 1,
+} )
+
+
+-- Abyssal Speaker's Guantlets (PROC)
+all:RegisterAura( "ephemeral_vigor", {
+    id = 295431,
+    duration = 60,
+    max_stack = 1
+} )
+
+
+-- Fathom Dredgers (PROC)
+all:RegisterAura( "dredged_vitality", {
+    id = 295134,
+    duration = 8,
+    max_stack = 1
+} )
+
+
+-- Gloves of the Undying Pact
+all:RegisterAbility( "gloves_of_the_undying_pact", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 167219,
+    toggle = "defensives", -- ???
+
+    handler = function() applyBuff( "undying_pact" ) end
+} )
+
+all:RegisterAura( "undying_pact", {
+    id = 295193,
+    duration = 6,
+    max_stack = 1
+} )
+
+
+-- Insurgent's Scouring Chain (PROC)
+all:RegisterAura( "scouring_wake", {
+    id = 295141,
+    duration = 20,
+    max_stack = 1
+} )
+
+
+-- Mindthief's Eldritch Clasp (PROC)
+all:RegisterAura( "phantom_pain", {
+    id = 295527,
+    duration = 180,
+    max_stack = 1,
+} )
+
+
+-- Leggings of the Aberrant Tidesage
+-- HoT spell ID not found.
+
+-- Zaxasj's Deepstriders (EFFECT)
+all:RegisterAura( "deepstrider", {
+    id = 295167,
+    duration = 3600,
+    max_stack = 1
+} )
+
+
+-- Trident of Deep Ocean
+-- Custody of the Deep (shield proc)
+all:RegisterAura( "custody_of_the_deep_shield", {
+    id = 292675,
+    duration = 40,
+    max_stack = 1
+} )
+-- Custody of the Deep (mainstat proc)
+all:RegisterAura( "custody_of_the_deep_buff", {
+    id = 292653,
+    duration = 60,
+    max_stack = 3
+} )
+
+
+-- Malformed Herald's Legwraps
+all:RegisterAbility( "malformed_heralds_legwraps", {
+    cast = 0,
+    cooldown = 60,
+    gcd = "off",
+
+    item = 167835,
+    toggle = "cooldowns",
+
+    usable = function () return buff.movement.down end,
+    handler = function () applybuff( "void_embrace" ) end,
+} )
+
+all:RegisterAura( "void_embrace", {
+    id = 295174,
+    duration = 12,
+    max_stack = 1,
+} )
+
+
+-- Stormglide Steps (PROC)
+all:RegisterAura( "untouchable", {
+    id = 167834,
+    duration = 15,
+    max_stack = 10
+} )
+
+
+-- Idol of Indiscriminate Consumption
+all:RegisterAbility( "idol_of_indiscriminate_consumption", {
+    cast = 0,
+    cooldown = 60,
+    gcd = "off",
+
+    item = 167868,
+    toggle = "cooldowns",
+
+    handler = function() gain( 2.5 * 7000 * active_enemies, "health" ) end,
+} )
+
+
+-- Lurker's Insidious Gift
+all:RegisterAbility( "lurkers_insidious_gift", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 167866,
+    toggle = "cooldowns",
+
+    handler = function ()        
+        applyBuff( "insidious_gift" )
+        applyDebuff( "suffering" )
+    end
+} )
+
+all:RegisterAura( "insidious_gift", {
+    id = 295408,
+    duration = 30,
+    max_stack = 1
+} )
+all:RegisterAura( "suffering", {
+    id = 295413,
+    duration = 30,
+    max_stack = 30,
+    meta = {
+        stack = function ()
+            return buff.insidious_gift.up and floor( 30 - buff.insidious_gift.remains ) or 0
+        end
+    }
+} )
+
+
+-- Void Stone
+all:RegisterAbility( "void_stone", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+    
+    item = 167865,
+    toggle = "defensives",
+
+    handler = function ()
+        applyBuff( "umbral_shell" )
+    end,
+} )
+
+all:RegisterAura( "umbral_shell", {
+    id = 295271,
+    duration = 12,
+    max_stack = 1
+} )
+
+
+-- ON USE
 -- Kezan Stamped Bijou
 all:RegisterAbility( "kezan_stamped_bijou", {
     cast = 0,

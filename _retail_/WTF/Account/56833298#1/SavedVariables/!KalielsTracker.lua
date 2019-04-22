@@ -1,7 +1,7 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["Shanyt - Argent Dawn"] = {
+		["Vancard - Zul'jin"] = {
 			["collapsed"] = true,
 		},
 	},

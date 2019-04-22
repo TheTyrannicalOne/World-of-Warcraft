@@ -554,6 +554,13 @@ local function AAP_UseTaxiFunc()
 	if (steps["ETA"]) then
 		AAP.AFK_Timer(steps["ETA"])
 	end
+	local AllyBoatOrNot = "Flight"
+	if (AAP.Faction == "Alliance") then
+		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",UnitGUID("target"))
+		if (npc_id and AAP.AllyBoatNpcs[tonumber(npc_id)]) then
+			AllyBoatOrNot = "Boat"
+		end
+	end
 	if (GetLocale() == "enUS") then
 		local CLi
 		for CLi = 1, NumTaxiNodes() do
@@ -567,25 +574,47 @@ local function AAP_UseTaxiFunc()
 				if (not AAP.FPs[AAP.Faction]) then
 					AAP.FPs[AAP.Faction] = {}
 				end
-				if (not AAP.FPs[AAP.Faction][AAPH.getContinent()]) then
-					AAP.FPs[AAP.Faction][AAPH.getContinent()] = {}
+				if (not AAP.FPs[AAP.Faction][AAP.getContinent()]) then
+					AAP.FPs[AAP.Faction][AAP.getContinent()] = {}
 				end
-				if (not AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)]) then
-					AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)] = {}
+				if (AAP.Faction == "Alliance" and 876 == AAP.getContinent()) then
+					if (not AAP.FPs[AAP.Faction][AAP.getContinent()][AllyBoatOrNot]) then
+						AAP.FPs[AAP.Faction][AAP.getContinent()][AllyBoatOrNot] = {}
+					end
+					if (not AAP.FPs[AAP.Faction][AAP.getContinent()][AllyBoatOrNot][TaxiNodeName(CLi)]) then
+						AAP.FPs[AAP.Faction][AAP.getContinent()][AllyBoatOrNot][TaxiNodeName(CLi)] = {}
+					end
+					AAP.FPs[AAP.Faction][AAP.getContinent()][AllyBoatOrNot][TaxiNodeName(CLi)]["x"] = aapx
+					AAP.FPs[AAP.Faction][AAP.getContinent()][AllyBoatOrNot][TaxiNodeName(CLi)]["y"] = aapy
+				else
+					if (not AAP.FPs[AAP.Faction][AAP.getContinent()][TaxiNodeName(CLi)]) then
+						AAP.FPs[AAP.Faction][AAP.getContinent()][TaxiNodeName(CLi)] = {}
+					end
+					AAP.FPs[AAP.Faction][AAP.getContinent()][TaxiNodeName(CLi)]["x"] = aapx
+					AAP.FPs[AAP.Faction][AAP.getContinent()][TaxiNodeName(CLi)]["y"] = aapy
 				end
-				AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["x"] = aapx
-				AAP.FPs[AAP.Faction][AAPH.getContinent()][TaxiNodeName(CLi)]["y"] = aapy
 			end
 		end
 	end
-	local TName = steps["Name"]
-	local TContonent = AAP.getContinent()
-	local TX = AAP.FPs[AAP.Faction][TContonent][TName]["x"]
-	local TY = AAP.FPs[AAP.Faction][TContonent][TName]["y"]
-	local Nodetotake = AAP_TaxiSearchFunc(TX, TY)
+	if (AAP.Faction == "Alliance" and 876 == AAP.getContinent()) then
+		local TName = steps["Name"]
+		local TContonent = AAP.getContinent()
+		local TX = AAP.FPs[AAP.Faction][TContonent][AllyBoatOrNot][TName]["x"]
+		local TY = AAP.FPs[AAP.Faction][TContonent][AllyBoatOrNot][TName]["y"]
+		local Nodetotake = AAP_TaxiSearchFunc(TX, TY)
 --	TaxiNodeOnButtonEnter(getglobal("TaxiButton"..Nodetotake))
-	TakeTaxiNode(Nodetotake)
-	AAP.BookingList["TestTaxiFunc"] = Nodetotake
+		TakeTaxiNode(Nodetotake)
+		AAP.BookingList["TestTaxiFunc"] = Nodetotake
+	else
+		local TName = steps["Name"]
+		local TContonent = AAP.getContinent()
+		local TX = AAP.FPs[AAP.Faction][TContonent][TName]["x"]
+		local TY = AAP.FPs[AAP.Faction][TContonent][TName]["y"]
+		local Nodetotake = AAP_TaxiSearchFunc(TX, TY)
+--	TaxiNodeOnButtonEnter(getglobal("TaxiButton"..Nodetotake))
+		TakeTaxiNode(Nodetotake)
+		AAP.BookingList["TestTaxiFunc"] = Nodetotake
+	end
 end
 local function AAP_QAskPopWanted()
 	local CurStep = AAP1[AAP.Realm][AAP.Name][AAP.ActiveMap]

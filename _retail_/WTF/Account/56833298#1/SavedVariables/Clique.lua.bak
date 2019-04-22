@@ -5,10 +5,10 @@ CliqueDB3 = {
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
 			["fastooc"] = false,
-			["specswap"] = false,
-			["downclick"] = false,
 			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["downclick"] = false,
 			["spec3_profileKey"] = "Shanyt - Argent Dawn",
+			["specswap"] = false,
 		},
 	},
 	["profileKeys"] = {

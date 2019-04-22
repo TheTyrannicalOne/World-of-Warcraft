@@ -97,13 +97,6 @@ X: 0
 Y: 0
 W: 800
 H: 525
-Frame: AllTheThings-Window-settings
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 300
-H: 300
 Frame: TooltipMover
 FrameLevel: 402
 Anchor: RIGHT

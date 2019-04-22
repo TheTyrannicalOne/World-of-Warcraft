@@ -182,6 +182,23 @@ local oneTimeFixes = {
             end
         end
     end,
+
+    autoconvertDelayTextToSweep_20190420 = function( p )
+        for k, v in pairs( p.displays ) do
+            if v.delays.type == "TEXT" then
+                v.delays.type = "CDSW"
+            end
+        end
+    end,
+
+    autoconvertDelayTextToSweep_20190420_1 = function( p )
+        for k, v in pairs( p.displays ) do
+            if v.delays.type == "CDSW" then
+                v.delays.extend = true
+                v.delays.type = "__NA"
+            end
+        end
+    end,
 }
 
 
@@ -327,8 +344,9 @@ local displayTemplate = {
     },
 
     delays = {
-        type = "TEXT",
+        type = "__NA",
         fade = false,
+        extend = true,
 
         font = ElvUI and 'PT Sans Narrow' or 'Arial Narrow',
         fontSize = 12,
@@ -1747,6 +1765,14 @@ do
                                 },                        
                                 width = "full",
                                 order = 1,
+                            },
+
+                            extend = {
+                                type = "toggle",
+                                name = "Extend Cooldown Sweep",
+                                desc = "If checked, the primary icon's cooldown sweep will continue until the ability should be used.",
+                                width = "full",
+                                order = 1.4,
                             },
 
                             fade = {

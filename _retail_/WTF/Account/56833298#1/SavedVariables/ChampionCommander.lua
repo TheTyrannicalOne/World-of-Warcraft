@@ -46,7 +46,7 @@ dbBFA = {
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
-			["showmenu"] = true,
+			["showmenu"] = false,
 		},
 	},
 }

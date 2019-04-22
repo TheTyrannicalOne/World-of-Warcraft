@@ -26,8 +26,6 @@ BigWigs3DB = {
 		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["namespaces"] = {
-		["BigWigs_Plugins_Victory"] = {
-		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -35,45 +33,25 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Colors"] = {
+		["LibDualSpec-1.0"] = {
+		},
+		["BigWigs_Bosses_Avatar of Sethraliss"] = {
+		},
+		["BigWigs_Bosses_Hadal Darkfathom"] = {
+		},
+		["BigWigs_Bosses_Underrot Trash"] = {
+		},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Bosses_Heartsbane Triad"] = {
+		},
+		["BigWigs_Bosses_King's Rest Trash"] = {
+		},
+		["BigWigs_Bosses_Waycrest Manor Trash"] = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
-		["BigWigs_Plugins_InfoBox"] = {
-		},
-		["BigWigs_Plugins_Bars"] = {
-			["profiles"] = {
-				["Default"] = {
-					["BigWigsAnchor_width"] = 220.000015258789,
-					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
-					["BigWigsEmphasizeAnchor_height"] = 21.9999504089355,
-					["BigWigsAnchor_height"] = 16.0000438690186,
-				},
-			},
-		},
-		["LibDualSpec-1.0"] = {
-		},
-		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Plugins_Wipe"] = {
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["height"] = 119.999977111816,
-					["font"] = "Friz Quadrata TT",
-					["width"] = 140.00016784668,
-				},
-			},
-		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Bosses_The Council of Tribes"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -82,11 +60,85 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Bosses_The Golden Serpent"] = {
+		},
+		["BigWigs_Plugins_Victory"] = {
+		},
+		["BigWigs_Bosses_Soulbound Goliath"] = {
+		},
+		["BigWigs_Bosses_Temple of Sethraliss Trash"] = {
+		},
+		["BigWigs_Bosses_Infested Crawg"] = {
+		},
+		["BigWigs_Bosses_Mchimba the Embalmer"] = {
+		},
+		["BigWigs_Bosses_Gorak Tul"] = {
+		},
+		["BigWigs_Bosses_Dread Captain Lockwood"] = {
+		},
+		["BigWigs_Bosses_Galvazzt"] = {
+		},
+		["BigWigs_Bosses_Viq'Goth"] = {
+		},
+		["BigWigs_Bosses_Merektha"] = {
+		},
+		["BigWigs_Bosses_Elder Leaxa"] = {
+		},
+		["BigWigs_Bosses_Siege of Boralus Trash"] = {
+		},
+		["BigWigs_Bosses_Dazar, The First King"] = {
+		},
+		["BigWigs_Bosses_Vol'zith the Whisperer"] = {
+		},
+		["BigWigs_Bosses_Sergeant Bainbridge"] = {
+		},
+		["BigWigs_Plugins_Colors"] = {
+		},
+		["BigWigs_Plugins_BossBlock"] = {
+		},
+		["BigWigs_Plugins_InfoBox"] = {
+		},
+		["BigWigs_Plugins_Bars"] = {
+			["profiles"] = {
+				["Default"] = {
+					["BigWigsAnchor_width"] = 220.000015258789,
+					["BigWigsEmphasizeAnchor_height"] = 21.9999504089355,
+					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
+					["BigWigsAnchor_height"] = 16.0000438690186,
+				},
+			},
+		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
+		["BigWigs_Plugins_Super Emphasize"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
+		["BigWigs_Bosses_Raal the Gluttonous"] = {
+		},
 		["BigWigs_Plugins_AutoReply"] = {
+		},
+		["BigWigs_Bosses_Lord and Lady Waycrest"] = {
+		},
+		["BigWigs_Bosses_Unbound Abomination"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["width"] = 140.00016784668,
+					["font"] = "Friz Quadrata TT",
+					["height"] = 119.999977111816,
+				},
+			},
+		},
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Bosses_Sporecaller Zancha"] = {
 		},
 	},
 	["wipe80"] = true,

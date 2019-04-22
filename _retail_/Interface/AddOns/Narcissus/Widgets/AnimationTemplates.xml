@@ -1,0 +1,66 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+    <!-- © 2019 Peter Yu All Rights Reserved -->
+    <!--Call: 	self.AnimFrame.Anim:SetScale(scale)   self.AnimFrame.Anim.Bling:Play()-->
+     <Frame name="NarciClickFeedbackTemplate" parentKey="AnimFrame" clipChildren="true" virtual="true">
+        <Anchors>
+            <Anchor point="TOPLEFT" x="0" y="0"/>
+            <Anchor point="BOTTOMRIGHT" x="0" y="0"/>
+        </Anchors>			
+        <Layers>
+            <Layer level="ARTWORK" textureSubLevel="3">
+                <Texture file="Interface\AddOns\Narcissus\Art\BasicShapes\Circle" parentKey="Anim" hidden="false" alphaMode="ADD" Alpha="0">
+                    <Size x="36" y="36"/>
+                    <Anchors>
+                        <Anchor point="CENTER" relativeKey="$parent" relativePoint="CENTER" x="0" y="0"/>
+                    </Anchors>
+                    <Animations>
+                        <AnimationGroup parentKey="Bling" smoothing="IN_OUT">
+                            <Alpha fromAlpha="0" toAlpha="0.25" duration="0.2" order="1"/>
+                            <Scale scaleX="6" scaleY="6" duration="1.1" order="1"/>	
+                            <Alpha startDelay="0.2" fromAlpha="0.25" toAlpha="0" duration="0.8" order="1"/>		
+                            <Scripts>
+                                <OnPlay>
+                                    local mx, my = self:GetParent():GetParent():GetCenter();
+                                    local px, py = GetCursorPosition()
+                                    local scale = self:GetParent():GetParent():GetEffectiveScale()
+                                    px, py = px/scale, py/scale
+                                    self:GetParent():SetPoint("CENTER", px-mx, py-my)
+                                    self:GetParent():Show();
+                                </OnPlay>
+                                <OnStop>
+                                    self:GetParent():Hide();
+                                </OnStop>
+                                <OnFinished>
+                                    self:GetParent():Hide();
+                                </OnFinished>
+                            </Scripts>
+                        </AnimationGroup>
+                    </Animations>
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+
+	<Frame name="NarciAnimContainerFrame" hidden="true" virtual="true">
+		<Scripts>
+			<OnLoad>
+				self.OppoDirection = false;
+				self.Width = self:GetParent():GetWidth();
+				self.TimeSinceLastUpdate = 0;
+
+				self.AnchorPoint, self.relativeTo, self.relativePoint, self.EndPoint, self.EndPointY = self:GetParent():GetPoint();
+				self.EndPointBAK = self.EndPoint;
+			</OnLoad>
+			<OnShow>
+				--print(self.OppoDirection)
+				self:GetParent():Show()
+				Anchor1, _, _, self.StartPoint, self.StartPointY = self:GetParent():GetPoint();
+				--print(Anchor1.." "..self.StartPoint)
+			</OnShow>
+			<OnHide>
+				self.TimeSinceLastUpdate = 0;
+				self.OppoDirection = not self.OppoDirection;
+			</OnHide>
+		</Scripts>
+	</Frame>
+</Ui>
