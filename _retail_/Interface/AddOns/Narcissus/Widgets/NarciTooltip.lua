@@ -49,7 +49,7 @@ local function SetCombatRatingRatio()
 end
 
 local ColorTable = {
-    Green = {r = 124 ,g = 197 ,b = 118},
+    Green = {r = 124 ,g = 197 ,b = 118},    --7cc576
     Red = {r = 255 ,g = 80 ,b = 80},
 }
 

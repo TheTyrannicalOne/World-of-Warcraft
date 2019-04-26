@@ -12,7 +12,7 @@
 			</Font>
 		</Member>
 		<Member alphabet="korean">
-			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="9">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="10">
 				<Shadow>
 					<Offset>
 						<AbsDimension x="0.6" y="-0.6"/>
@@ -22,7 +22,7 @@
 			</Font>
 		</Member>
 		<Member alphabet="simplifiedchinese">
-			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="9">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="10">
 				<Shadow>
 					<Offset>
 						<AbsDimension x="0.6" y="-0.6"/>
@@ -32,7 +32,7 @@
 			</Font>
 		</Member>
 		<Member alphabet="traditionalchinese">
-			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="9">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="10">
 				<Shadow>
 					<Offset>
 						<AbsDimension x="0.6" y="-0.6"/>
@@ -42,7 +42,7 @@
 			</Font>
 		</Member>
 		<Member alphabet="russian">
-			<Font font="Interface\AddOns\Narcissus\Font\NotoSans-Medium.ttf" height="9">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSans-Medium.ttf" height="10">
 				<Shadow>
 					<Offset>
 						<AbsDimension x="0.6" y="-0.6"/>
@@ -224,7 +224,7 @@
 			</Font>
 		</Member>
 		<Member alphabet="korean">
-			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="10">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="11">
 				<Shadow>
 					<Offset>
 						<AbsDimension x="1" y="-1"/>
@@ -244,7 +244,7 @@
 			</Font>
 		</Member>
 		<Member alphabet="traditionalchinese">
-			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="10">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="11">
 				<Shadow>
 					<Offset>
 						<AbsDimension x="1" y="-1"/>
@@ -530,6 +530,58 @@
 		</Member>
 	</FontFamily>
 
+	<FontFamily name="NarciIndicatorTiny" virtual="true">
+		<Member alphabet="roman">
+			<Font font="Interface\AddOns\Narcissus\Font\OpenSans-Semibold.ttf" height="8">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="0.6" y="-0.6"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="korean">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="8">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="0.6" y="-0.6"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="simplifiedchinese">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="8">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="0.6" y="-0.6"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="traditionalchinese">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSansCJKsc-Medium.otf" height="8">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="0.6" y="-0.6"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+		<Member alphabet="russian">
+			<Font font="Interface\AddOns\Narcissus\Font\NotoSans-Medium.ttf" height="8">
+				<Shadow>
+					<Offset>
+						<AbsDimension x="0.6" y="-0.6"/>
+					</Offset>
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</Font>
+		</Member>
+	</FontFamily>
 
 	<Font name="AAAItemName" inherits="ItemNameMedium" virtual="true">
 		<Color r="1" g="1" b="1"/>
@@ -579,6 +631,25 @@
 				<AbsDimension x="1" y="-0.6"/>
 			</Offset>
 			<Color a="0.8" r="1" g="1" b="1"/>
+		</Shadow>
+	</Font>
+
+	<Font name="NarciIndicatorDigit" font="Interface\AddOns\Narcissus\Font\OpenSans-Semibold.ttf" height="8" monochrome="false" virtual="true">
+		<Color r="1" g="1" b="1"/>
+		<Shadow>
+			<Offset>
+				<AbsDimension x="0.6" y="-0.6"/>
+			</Offset>
+			<Color a="0.8" r="0" g="0" b="0"/>
+		</Shadow>
+	</Font>	
+	<Font name="NarciIndicatorLetter" inherits="NarciIndicatorTiny" height="8" monochrome="false" virtual="true">
+		<Color r="1" g="1" b="1"/>
+		<Shadow>
+			<Offset>
+				<AbsDimension x="0.6" y="-0.6"/>
+			</Offset>
+			<Color a="0.8" r="0" g="0" b="0"/>
 		</Shadow>
 	</Font>
 </Ui>

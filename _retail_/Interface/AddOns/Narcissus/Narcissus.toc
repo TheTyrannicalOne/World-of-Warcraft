@@ -8,13 +8,13 @@
 
 ## Author: Peterodox
 ## SavedVariables: NarcissusDB
+## SavedVariablesPerCharacter: NarcissusDB_PC
 
 Initialization.lua
 Locales\Localization.xml
 
-Widgets\AnimationTemplates.xml
-
 NarciDB\NarciAPIs.lua
+NarciDB\NarciUITemplates.xml
 NarciDB\GearBonus.lua
 
 Bridge\Bridge.xml
@@ -22,5 +22,7 @@ Bridge\Bridge.xml
 Font\FontSettings.xml
 
 Narcissus.xml
+Preference.xml
 Widgets\NarciTooltip.xml
 Widgets\TitleManager.xml
+Widgets\PlayerModel.xml

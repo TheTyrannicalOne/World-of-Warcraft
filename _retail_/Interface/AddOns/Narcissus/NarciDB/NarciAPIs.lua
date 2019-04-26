@@ -165,3 +165,86 @@ function NarciAPI_FormatLargeNumbers(value)
     return formatedNumber
 end
 
+
+--------------------
+---Fade Frame API---
+--------------------
+
+local function SetFade_finishedFunc(frame)
+	if frame.fadeInfo.mode == "OUT" then
+		frame:Hide();
+	elseif	frame.fadeInfo.mode == "IN" then
+		frame:Show();
+	end
+end
+
+function NarciAPI_FadeFrame(frame, time, mode)
+	if mode == "IN" then
+		UIFrameFadeIn(frame, time, frame:GetAlpha(), 1)
+	elseif mode == "OUT" then
+		if not frame:IsShown() then
+			return;
+		end
+		UIFrameFadeOut(frame, time, frame:GetAlpha(), 0)
+	elseif mode == "Forced_IN" then
+		UIFrameFadeIn(frame, time, 0, 1)
+	elseif mode == "Forced_OUT" then
+	UIFrameFadeOut(frame, time, 1, 0)
+	end
+
+	if not frame.fadeInfo then
+		return;
+	end
+
+	frame.fadeInfo.finishedArg1 = frame;
+	frame.fadeInfo.finishedFunc = SetFade_finishedFunc
+end
+------------------------------------------------------------------
+
+function NarciAPI_OptimizeBorderThickness(self)
+    local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
+    self:SetPoint(point, relativeTo, relativePoint, math.floor(xOfs + 0.5), math.floor(yOfs + 0.5))
+
+    local scale = string.match(GetCVar( "gxWindowedResolution" ), "%d+x(%d+)" );
+    local uiScale = self:GetEffectiveScale();
+    local rate = 768/scale/uiScale;
+    local borderWeight = 2;
+    local weight = borderWeight * rate;
+    local weight2 = weight * math.sqrt(2);
+    self.Border:SetPoint("TOPLEFT", weight, -weight)
+    self.Border:SetPoint("BOTTOMRIGHT", -weight, weight)
+
+    if self.ThumbBorder then
+        self.ThumbBorder:SetPoint("TOPLEFT", self.VirtualThumb, -weight2, weight2)
+        self.ThumbBorder:SetPoint("BOTTOMRIGHT", self.VirtualThumb,weight2, -weight2)
+    end
+
+    if self.Marks then
+        for i=1, #self.Marks do
+            self.Marks[i]:SetWidth(weight);
+        end
+    end
+end
+
+function NarciAPI_SliderWithSteps_OnLoad(self)
+    self.oldValue = 0;
+    self.Marks = {};
+    local width = self:GetWidth();
+    local step = self:GetValueStep();
+    local sliderMin, sliderMax = self:GetMinMaxValues()
+    local range = sliderMax - sliderMin;
+    local num_Gap = math.floor((range / step) + 0.5);
+    local tex;
+    local markOffset = 5;
+    width = width - 2*markOffset
+    --print(self:GetName().." "..(num_Gap + 1))
+    for i=1, (num_Gap + 1) do
+        tex = self:CreateTexture(nil, "BACKGROUND", nil, 1);
+        --tex:SetAllPoints()
+        tex:SetSize(2, 10)
+        tex:SetColorTexture(0.3, 0.3, 0.3, 1)
+        --print((i-1)*width/num_Gap)
+        tex:SetPoint("LEFT", self, "LEFT", markOffset + (i-1)*width/num_Gap, 0)
+        tinsert(self.Marks, tex);
+    end
+end

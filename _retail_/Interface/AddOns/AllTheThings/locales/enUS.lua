@@ -443,6 +443,7 @@ AllTheThings.L = {
 		[-251] = "Interface\\Icons\\achievement_alliedrace_zandalaritroll",					-- Zandalari Troll
 		[-252] = "Interface\\Icons\\Achievement_AlliedRace_KulTiranHuman",					-- Kul Tiran
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
+		[-254] = "Interface\\Icons\\Ability_warrior_bloodfrenzy",				-- Hostile NPC
 		[-297] = "Interface\\Icons\\inv_letter_17", 							-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 			-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",							-- Battlegrounds
@@ -1112,6 +1113,7 @@ AllTheThings.L = {
 		[-251] = "Zandalari Troll",												-- Zandalari Troll
 		[-252] = "Kul Tiran",													-- Kul Tiran
 		[-253] = "Horde War Campaign",											-- Horde War Campaign
+		[-254] = "Hostile NPC",													-- Hostile NPC
 -- Other
 		[-294] = "Killed First",
 		[-295] = "Killed Second",
@@ -1327,6 +1329,7 @@ AllTheThings.L = {
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
 
 -- Other Sets
+		[-3156] = string.format(PLAYER_V_PLAYER_SEASON, 3),						-- Player vs. Player (Battle for Azeroth Season 3)
 		[-3157] = string.format(PLAYER_V_PLAYER_SEASON, 2),						-- Player vs. Player (Battle for Azeroth Season 2)
 		[-3158] = string.format(PLAYER_V_PLAYER_SEASON, 1),						-- Player vs. Player (Battle for Azeroth Season 1)
 		[-3159] = GARRISON_TIER.." 6.5 "..WARDROBE_SETS,
@@ -3299,19 +3302,19 @@ AllTheThings.L = {
 		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
 		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
-		{6, "|CFF00FFDEMay require Lunar Festival to be active.|r", "Lunar Festival (17)"};--17
-		{7, "|CFF00FFDEMay require Love is In the Air to be active.|r", "Love is In the Air (18)"};--18
-		{8, "|CFF00FFDEMay require Noblegarden to be active.|r", "Noblegarden (19)"};--19
-		{9, "|CFF00FFDEMay require Children's Week to be active.|r", "Children's Week (20)"};--20
-		{10, "|CFF00FFDEMay require Midsummer Fire Festival to be active.|r", "Midsummer Fire Festival (21)"};--21
-		{11, "|CFF00FFDEMay require Trial of Style to be active.|r", "Trial of Style (22)"};--22
-		{12, "|CFF00FFDEMay require Pirate's Day to be active.|r", "Pirate's Day (23)"};--23
-		{13, "|CFF00FFDEMay require Brewfest to be active.|r", "Brewfest (24)"};--24
-		{14, "|CFF00FFDEMay require Harvest Festival to be active.|r", "Harvest Festival (25)"};--25
-		{15, "|CFF00FFDEMay require Hallow's End to be active.|r", "Hallow's End (26)"};--26
-		{16, "|CFF00FFDEMay require Day of the Dead to be active.|r", "Day of the Dead (27)"};--27
-		{17, "|CFF00FFDEMay require Pilgrim's Bounty to be active.|r", "Pilgrim's Bounty (28)"};--28
-		{18, "|CFF00FFDEMay require Feast of Winter Veil to be active.|r", "Feast of Winter Veil (29)"};--29
+		{6, "|CFF00FFDEMay require Lunar Festival to be active to obtain this item.|r", "Lunar Festival (17)"};--17
+		{7, "|CFF00FFDEMay require Love is In the Air to be active to obtain this item.|r", "Love is In the Air (18)"};--18
+		{8, "|CFF00FFDEMay require Noblegarden to be active to obtain this item.|r", "Noblegarden (19)"};--19
+		{9, "|CFF00FFDEMay require Children's Week to be active to obtain this item.|r", "Children's Week (20)"};--20
+		{10, "|CFF00FFDEMay require Midsummer Fire Festival to be active to obtain this item.|r", "Midsummer Fire Festival (21)"};--21
+		{11, "|CFF00FFDEMay require Trial of Style to be active to obtain this item.|r", "Trial of Style (22)"};--22
+		{12, "|CFF00FFDEMay require Pirate's Day to be active to obtain this item.|r", "Pirate's Day (23)"};--23
+		{13, "|CFF00FFDEMay require Brewfest to be active to obtain this item.|r", "Brewfest (24)"};--24
+		{14, "|CFF00FFDEMay require Harvest Festival to be active to obtain this item.|r", "Harvest Festival (25)"};--25
+		{15, "|CFF00FFDEMay require Hallow's End to be active to obtain this item.|r", "Hallow's End (26)"};--26
+		{16, "|CFF00FFDEMay require Day of the Dead to be active to obtain this item.|r", "Day of the Dead (27)"};--27
+		{17, "|CFF00FFDEMay require Pilgrim's Bounty to be active to obtain this item.|r", "Pilgrim's Bounty (28)"};--28
+		{18, "|CFF00FFDEMay require Feast of Winter Veil to be active to obtain this item.|r", "Feast of Winter Veil (29)"};--29
 		{19, "|CFF00FFDEMay require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza (30) "};--30
 		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active.\nIt's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"};--31
 		{4, "|CFFFF0000This is an original reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Reworked Rewards (32)"};--32
@@ -3328,7 +3331,7 @@ AllTheThings.L = {
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{21, "|CFFFF0000May require a specific Micro-Holiday to be active.|r", "Micro-Holiday (44)"}; -- 44
 		{1, "|CFFFF0000With 7.3.2, Blizzard's shifted loot from Princess to various bosses.  In the process made this item no longer drop. |r", "BRD Broken Loot (45)"}; -- 45
-		{2, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
+		{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
 		{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
 };

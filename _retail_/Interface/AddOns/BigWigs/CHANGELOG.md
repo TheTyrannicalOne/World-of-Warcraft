@@ -1,14 +1,11 @@
 # BigWigs
 
-## [v144](https://github.com/BigWigsMods/BigWigs/tree/v144) (2019-04-19)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v143.2...v144)
+## [v146](https://github.com/BigWigsMods/BigWigs/tree/v146) (2019-04-25)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v145.1...v146)
 
 - bump version  
-- CrucibleOfStorms/Cabal: Fix Crushing Doubt say message.  
-- CrucibleOfStorms: Tweak  
-- CrucibleOfStorms/Locales: Update Locale files  
-- CrucibleOfStorms/Cabal: Updates to icons, Relic abilities and options menu  
-- CrucibleOfStorms/Uunat: Add class colour to Ubrall Shell removed message  
-- Update zhTW (#643)  
-- CrucibleOfStorms/Uunat: Fix local error  
-- CrucibleOfStorms/Uunat: Add option to mark Primordial Mindbender  
+- CrucibleOfStorms: Fix some function names  
+- CrucibleOfStorms/Uunat: Fix Mindbender marking speed  
+- CrucibleOfStorms/Cabal: Fix function use  
+- Plugins/BossBlock: Add cinematic skipping after killing the first boss in Crucible of Storms.  
+- CrucibleOfStorms/Cabal: Speed up marking of eldritch adds  

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.1.03 (14th March 2019, www.leatrix.com)
+-- 	Leatrix Plus 8.1.04 (24th April 2019, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.1.03"
+	LeaPlusLC["AddonVer"] = "8.1.04"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -1373,18 +1373,6 @@
 
 		do
 
-			-- Function to show quest dialog for popup quests in the objective tracker
-			local function PopupQuestComplete()
-				if GetNumAutoQuestPopUps() > 0 then
-					local questId, questType = GetAutoQuestPopUp(1)
-					if questType == "COMPLETE" then
-						local index = GetQuestLogIndexByID(questId)
-						ShowQuestComplete(index)
-					end
-					LeaPlusLC.PopupQuestTicker:Cancel()
-				end
-			end
-
 			-- Funcion to ignore specific NPCs
 			local function isNpcBlocked(actionType)
 				local npcGuid = UnitGUID("target") or nil
@@ -1506,7 +1494,7 @@
 			if LeaPlusLC["AutomateQuests"] == "On" then SetupEvents() end
 
 			-- Event handler
-			qFrame:SetScript("OnEvent", function(self, event)
+			qFrame:SetScript("OnEvent", function(self, event, arg1)
 
 				-- Clear progress items when quest interaction has ceased
 				if event == "QUEST_FINISHED" then
@@ -1579,7 +1567,10 @@
 
 				-- Show quest dialog for quests that use the objective tracker (it will be completed automatically)
 				if event == "QUEST_AUTOCOMPLETE" then
-					LeaPlusLC.PopupQuestTicker = C_Timer.NewTicker(0.25, PopupQuestComplete, 20)
+					local index = GetQuestLogIndexByID(arg1)
+					if GetQuestLogIsAutoComplete(index) then
+						ShowQuestComplete(index)
+					end
 				end
 
 				----------------------------------------------------------------------
@@ -1596,44 +1587,33 @@
 
 						-- Select quests
 						if event == "QUEST_GREETING" then
-							-- Select quest greeting available quests
-							local availQuests = GetNumAvailableQuests()
-							if availQuests >= 1 then
-								for i = 1, availQuests do
-									SelectAvailableQuest(i)
-									break
+							-- Select quest greeting completed quests
+							for i = 1, GetNumActiveQuests() do
+								local title, isComplete = GetActiveTitle(i)
+								if title and isComplete then
+									return SelectActiveQuest(i)
 								end
 							end
-							-- Select quest greeting completed quests
-							local activeQuests = GetNumActiveQuests()
-							if activeQuests >= 1 then
-								for i = 1, activeQuests do
-									local void, isComplete = GetActiveTitle(i)
-									if isComplete then
-										SelectActiveQuest(i)
-										break
-									end
+							-- Select quest greeting available quests
+							for i = 1, GetNumAvailableQuests() do
+								local title, isComplete = GetAvailableTitle(i)
+								if title and not isComplete then
+									return SelectAvailableQuest(i)
 								end
 							end
 						else
-							-- Gossip frame
-							local availableCount = GetNumGossipAvailableQuests() + GetNumGossipActiveQuests()
-							if availableCount >= 1 then
-								for i = 1, availableCount do
-									if _G["GossipTitleButton" .. i].type == "Available" then
-										-- Select available quests
-										SelectGossipAvailableQuest(i)
-										break
-									else
-										-- Select completed quests
-										local isComplete = select(i * 6 - 5 + 3, GetGossipActiveQuests()) -- 4th argument of 6 argument line
-										if isComplete then
-											if _G["GossipTitleButton" .. i].type == "Active" then
-												SelectGossipActiveQuest(_G["GossipTitleButton" .. i]:GetID())
-												break
-											end
-										end
-									end
+							-- Select gossip completed quests
+							for i = 1, GetNumGossipActiveQuests() do
+								local title, level, isTrivial, isComplete, isLegendary, isIgnored = select(i * 6 - 5, GetGossipActiveQuests())
+								if title and isComplete then
+									return SelectGossipActiveQuest(i)
+								end
+							end
+							-- Select gossip available quests
+							for i = 1, GetNumGossipAvailableQuests() do
+								local title, level, isTrivial, isDaily, isRepeatable, isLegendary, isIgnored = select(i * 7 - 6, GetGossipAvailableQuests())
+								if title then
+									return SelectGossipAvailableQuest(i)
 								end
 							end
 						end
@@ -2140,27 +2120,36 @@
 			local function SetTitleBarPos()
 				if OrderHallCommandBar then
 					if OrderHallCommandBar:IsShown() then
-						if LeaPlusLC["HideZoneTextBar"] == "On" then
-							MinimapCluster:ClearAllPoints()
-							MinimapCluster:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 0)
-						else
-							MinimapCluster:ClearAllPoints()
-							MinimapCluster:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, -20)
+						-- Order hall command bar is showing so move minimap cluster to top
+						MinimapCluster:ClearAllPoints()
+						MinimapCluster:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 0)
+						if LeaPlusLC["HideZoneTextBar"] == "Off" then
+							-- Zone text bar is showing so hide it as it will be behind the order hall command bar
+							MinimapBorderTop:SetTexture("")
+							MinimapZoneTextButton:Hide()
+							MiniMapWorldMapButton:Hide()
 						end
 					else
+						-- Order hall command bar is not showing
 						if LeaPlusLC["HideZoneTextBar"] == "On" then
+							-- Zone text bar is being hidden so move minimap cluster down below the order hall command bar
 							MinimapCluster:ClearAllPoints()
 							MinimapCluster:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 20)
 						else
+							-- Zone text bar is not being hidden so move order hall command bar to top
 							MinimapCluster:ClearAllPoints()
 							MinimapCluster:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 0)
+							-- Show zone text bar
+							MinimapZoneTextButton:Show()
+							MiniMapWorldMapButton:Show()
+							MinimapBorderTop:SetTexture("Interface\\Minimap\\UI-Minimap-Border")
 						end
 					end
 				else
+					-- Order hall command bar has not been loaded by the game yet
 					if LeaPlusLC["HideZoneTextBar"] == "On" then
 						MinimapCluster:ClearAllPoints()
 						MinimapCluster:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 20)
-
 					else
 						MinimapCluster:ClearAllPoints()
 						MinimapCluster:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", 0, 0)
@@ -5450,6 +5439,9 @@
 			local uframe = CreateFrame("FRAME")
 			local prefol = "|cffffffaa{" .. L["right-click to go back"] .. "}"
 
+			-- These categories will not appear in random track selections
+			local randomBannedList = {"Narration"}
+
 			-- Create a table for each heading
 			ZoneList = {L["Zones"], L["Dungeons"], L["Various"], L["Random"], L["Search"], L["Movies"]}
 			for k, v in ipairs(ZoneList) do
@@ -5781,6 +5773,7 @@
 			})
 			Zn(L["Various"], L["Various"], L["Main Titles"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Main Titles"], prefol, "GS_Retail#10924", "GS_BurningCrusade#10925", "GS_LichKing#12765", "GS_Cataclysm#23640", "MUS_50_HeartofPandaria_MainTitle#28509", "MUS_60_MainTitle#40169", "MUS_70_MainTitle#56353", "MUS_80_MainTitle#113559"}) -- "MUS_1.0_MainTitle_Original#47598"
 			Zn(L["Various"], L["Various"], L["Music Rolls"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Music Rolls"], prefol, "MUS_61_GarrisonMusicBox_01#49511", "MUS_61_GarrisonMusicBox_02#49512", "MUS_61_GarrisonMusicBox_03#49513", "MUS_61_GarrisonMusicBox_04#49514", "MUS_61_GarrisonMusicBox_05#49515", "MUS_61_GarrisonMusicBox_06#49516", "MUS_61_GarrisonMusicBox_07#49529", "MUS_61_GarrisonMusicBox_08#49530", "MUS_61_GarrisonMusicBox_09#49531", "MUS_61_GarrisonMusicBox_10#49533", "MUS_61_GarrisonMusicBox_11#49535", "MUS_61_GarrisonMusicBox_12#49536", "MUS_61_GarrisonMusicBox_13#49538", "MUS_61_GarrisonMusicBox_14#49539", "MUS_61_GarrisonMusicBox_15#49540", "MUS_61_GarrisonMusicBox_16#49541", "MUS_61_GarrisonMusicBox_17#49543", "MUS_61_GarrisonMusicBox_18#49544", "MUS_61_GarrisonMusicBox_19#49545", "MUS_61_GarrisonMusicBox_20#49546", "MUS_61_GarrisonMusicBox_21#49526", "MUS_61_GarrisonMusicBox_22#49528", "MUS_61_GarrisonMusicBox_23_Alliance#49517", "MUS_61_GarrisonMusicBox_24_Alliance#49518", "MUS_61_GarrisonMusicBox_25_Alliance#49519", "MUS_61_GarrisonMusicBox_26_Alliance#49520", "MUS_61_GarrisonMusicBox_27_Alliance#49521", "MUS_61_GarrisonMusicBox_28_Alliance#49522", "MUS_61_GarrisonMusicBox_29_Alliance#49523", "MUS_61_GarrisonMusicBox_30_Alliance#49524", "MUS_61_GarrisonMusicBox_31_Alliance#49525", "MUS_61_GarrisonMusicBox_23_Horde#49555", "MUS_61_GarrisonMusicBox_24_Horde#49554", "MUS_61_GarrisonMusicBox_25_Horde#49553", "MUS_61_GarrisonMusicBox_26_Horde#49552", "MUS_61_GarrisonMusicBox_27_Horde#49551", "MUS_61_GarrisonMusicBox_28_Horde#49550", "MUS_61_GarrisonMusicBox_29_Horde#49549", "MUS_61_GarrisonMusicBox_30_Horde#49548", "MUS_61_GarrisonMusicBox_31_Horde#49547",})
+			Zn(L["Various"], L["Various"], L["Narration"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Narration"], prefol, "BloodElfFlybyNarration#9156", "DeathKnightFlybyNarration#12938", "DraeneiFlybyNarration#9155", "DwarfFlyByNarration#3740", "GnomeFlyByNarration#3841", "GoblinFlybyNarration#23106", "HumanFlyByNarration#3840", "NightElfFlyByNarration#3800", "OrcFlyByNarration#3760", "PandarenFlybyNarration#31699", "TaurenFlyByNarration#4122", "TrollFlyByNarration#4080", "WorgenFlybyNarration#23105", "UndeadFlybyNarration#3358",})
 			Zn(L["Various"], L["Various"], L["Pet Battles"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Pet Battles"], prefol, "MUS_50_PetBattles_01#28753", "MUS_50_PetBattles_02#28754",})
 			Zn(L["Various"], L["Various"], L["Themes"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Themes"], prefol,
 				"|cffffd800", "|cffffd800" .. L["Anduin's Theme"], "MUS_70_Zone_Stormwind_PostBrokenShore_Funeral_01#75552", "MUS_70_Zone_Stormwind_LionsRest_Day#73345", "MUS_70_BrokenShore_ShipIntro#73387", "MUS_72_BrokenShore_Wyrnnfall_Intro#85166", 
@@ -5803,7 +5796,7 @@
 			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
 			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
-			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["Battle for Lordaeron (Horde)"] .. " |r(855)", L["Battle for Lordaeron (Alliance)"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Zandalar Intro"] .. " |r(857)", L["Zandalar Battle"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)",})
+			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)",})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -6175,9 +6168,11 @@
 					local rZone = random(1, #ZoneList[rCategory])
 					-- Get random track within zone
 					local rTrack = ZoneList[rCategory][rZone].tracks[random(1, #ZoneList[rCategory][rZone].tracks)]
-					-- Insert track into ListData if it's not a duplicate
+					-- Insert track into ListData if it's not a duplicate or on the banned list
 					if rTrack and rTrack ~= "" and strfind(rTrack, "#") and not tContains(ListData, "|Cffffffaa" .. ZoneList[rCategory][rZone].zone .. " |r" .. rTrack) then
-						tinsert(ListData, "|Cffffffaa" .. ZoneList[rCategory][rZone].zone .. " |r" .. rTrack)
+						if not tContains(randomBannedList, L[ZoneList[rCategory][rZone].zone]) then
+							tinsert(ListData, "|Cffffffaa" .. ZoneList[rCategory][rZone].zone .. " |r" .. rTrack)
+						end
 					end
 				end
 				-- Refresh the track listing
@@ -8317,7 +8312,7 @@
 								-- Select current button
 								bt[eBtn].line:Show()
 								selectedBtn = b
-								PlaySoundFile("Sound\\Interface\\PlaceHolder.ogg")
+								PlaySound(115, "Master", false, true)
 								-- Print button data
 								eFrame.f:SetText(L["Enigma"] .. " " .. eBtn .. ": |cffffffff" .. eData[eBtn][#eData[eBtn]])
 							end

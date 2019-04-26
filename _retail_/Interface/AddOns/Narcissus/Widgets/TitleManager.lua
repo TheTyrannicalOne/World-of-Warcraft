@@ -664,3 +664,23 @@ function OptionalTitle_OnEnter(self)
 		end
 	end
 end
+
+Test_ToggleAzeriteUI = function(forced)
+    local CogWheel = _G.CogWheel
+    if CogWheel then 
+        local LibFader = CogWheel("LibFader", true)
+        if LibFader then 
+            LibFader:SetObjectFadeOverride(forced)
+        end 
+        local LibModule = CogWheel("LibModule", true)
+        if LibModule then 
+            local AzeriteUI = LibModule:GetModule("AzeriteUI", true)
+            if AzeriteUI then 
+                local ActionBars = AzeriteUI:GetModule("ActionBarMain", true)
+                if (ActionBars) then 
+                    ActionBars:SetForcedVisibility(forced)
+                end 
+            end 
+        end 
+    end 
+end 

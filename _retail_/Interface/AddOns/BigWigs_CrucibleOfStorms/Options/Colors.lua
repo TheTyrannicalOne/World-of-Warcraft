@@ -7,20 +7,21 @@ BigWigs:AddColors("The Restless Cabal", {
 	[282517] = "red",
 	[282540] = {"blue","yellow"},
 	[282561] = {"blue","yellow"},
-	[282562] = "blue",
-	[282589] = "orange",
+	[282566] = {"blue","green"},
+	[282589] = "red",
 	[282675] = "red",
-	[282741] = {"blue","cyan","red"},
+	[282741] = {"blue","cyan","orange"},
 	[282742] = "orange",
+	[282886] = {"cyan","orange"},
 	[282914] = {"blue","red"},
-	[283066] = "green",
 	[287876] = "blue",
 })
 
 BigWigs:AddColors("Uu'nat, Harbinger of the Void", {
 	[284583] = {"blue","cyan"},
 	[284722] = {"blue","cyan"},
-	[284804] = {"blue","cyan","green"},
+	[284804] = {"blue","green"},
+	[284809] = "cyan",
 	[284851] = {"blue","purple"},
 	[285185] = "orange",
 	[285307] = "purple",
@@ -34,5 +35,6 @@ BigWigs:AddColors("Uu'nat, Harbinger of the Void", {
 	[285652] = {"blue","yellow"},
 	[285685] = "orange",
 	[285820] = "cyan",
+	[293653] = {"blue","green","red"},
 	["stages"] = {"cyan","green"},
 })
