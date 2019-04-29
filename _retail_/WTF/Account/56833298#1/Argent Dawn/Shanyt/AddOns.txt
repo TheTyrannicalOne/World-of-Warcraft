@@ -178,3 +178,4 @@ Skada_LeechTrinketTabs: disabled
 WhisperInvite: disabled
 WhisperInviteAdvanced: disabled
 WhisperInviteBasic: disabled
+BigWigs_CommonAuras: enabled

@@ -1,12 +1,11 @@
 # LittleWigs
 
-## [v8.1.11](https://github.com/BigWigsMods/LittleWigs/tree/v8.1.11) (2019-04-18)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.1.10...v8.1.11)
+## [v8.1.12](https://github.com/BigWigsMods/LittleWigs/tree/v8.1.12) (2019-04-29)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.1.11...v8.1.12)
 
-- BfA/TolDagor: Add Viscious Mauling and Deadeye stack message (#448)  
-- BfA/Underrot/Zancha: Improve Shockwave timer (#446)  
-- BfA/TheMotherlode: Add Throw Coins, Pay to Win, and Azerite Catalyst (#445)  
-- BfA/Freehold: Add Captain Jolly and add messages when brews are applied to bosses (#444)  
-- BfA/ShrineOfTheStorm: Throttle Anchor of Binding, add Aqusirr respawn timer (#447)  
-- BfA/AtalDazar: Add boss respawn timers (#449)  
-- Update zhTW (#443)  
+- BfA/TempleOfSethraliss: Improvements (#455)  
+- Update deDE (#457)  
+- BfA: Add player arg to all PlaySound calls with a target (#456)  
+- BfA/WaycrestManor: Improvements (#451)  
+- Update zhTW/zhCN  (#454)  
+- Update zhTW/zhCN (#452)  

@@ -3,45 +3,701 @@ SkadaPerCharDB = {
 	["sets"] = {
 		{
 			["healingabsorbed"] = 0,
+			["endtime"] = 1556491640,
+			["dispells"] = 0,
+			["gotboss"] = true,
+			["ccbreaks"] = 0,
+			["time"] = 9,
+			["interrupts"] = 0,
+			["mobname"] = "Nalak",
+			["ffdamagedone"] = 0,
+			["power"] = {
+				9, -- [1]
+			},
+			["damage"] = 4577153,
+			["players"] = {
+				{
+					["last"] = 1556491640,
+					["healingabsorbed"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Nalak"] = 4577153,
+					},
+					["dispells"] = 0,
+					["ffdamagedonespells"] = {
+					},
+					["role"] = "NONE",
+					["time"] = 8,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+						{
+							["amount"] = 9,
+							["spells"] = {
+								[195707] = 9,
+							},
+						}, -- [1]
+					},
+					["alertDamage"] = 0,
+					["damage"] = 4577153,
+					["damagespells"] = {
+						["Gutripper"] = {
+							["criticalamount"] = 376026,
+							["id"] = 269031,
+							["min"] = 376026,
+							["criticalmax"] = 376026,
+							["critical"] = 1,
+							["criticalmin"] = 376026,
+							["school"] = 1,
+							["max"] = 376026,
+							["totalhits"] = 1,
+							["damage"] = 376026,
+						},
+						["Apothecary's Blight"] = {
+							["hitmin"] = 73192,
+							["id"] = 287638,
+							["min"] = 73192,
+							["hitamount"] = 73192,
+							["hitmax"] = 73192,
+							["hit"] = 1,
+							["school"] = 40,
+							["max"] = 73192,
+							["totalhits"] = 1,
+							["damage"] = 73192,
+						},
+						["Deep Wounds"] = {
+							["hitmin"] = 216429,
+							["id"] = 262115,
+							["min"] = 216429,
+							["hitamount"] = 456759,
+							["hitmax"] = 240330,
+							["hit"] = 2,
+							["school"] = 1,
+							["max"] = 240330,
+							["totalhits"] = 2,
+							["damage"] = 456759,
+						},
+						["Warbreaker"] = {
+							["hitmin"] = 533622,
+							["id"] = 262161,
+							["min"] = 533622,
+							["hitamount"] = 533622,
+							["hitmax"] = 533622,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 533622,
+							["totalhits"] = 1,
+							["damage"] = 533622,
+						},
+						["Bladestorm"] = {
+							["hitmin"] = 258984,
+							["criticalamount"] = 689329,
+							["id"] = 50622,
+							["criticalmin"] = 689329,
+							["hitamount"] = 1466251,
+							["critical"] = 1,
+							["min"] = 258984,
+							["criticalmax"] = 689329,
+							["hitmax"] = 327510,
+							["hit"] = 5,
+							["school"] = 1,
+							["max"] = 689329,
+							["totalhits"] = 6,
+							["damage"] = 2155580,
+						},
+						["Touch of the Grave"] = {
+							["criticalamount"] = 177882,
+							["id"] = 127802,
+							["min"] = 177882,
+							["criticalmax"] = 177882,
+							["critical"] = 1,
+							["criticalmin"] = 177882,
+							["school"] = 32,
+							["max"] = 177882,
+							["totalhits"] = 1,
+							["damage"] = 177882,
+						},
+						["Heroic Throw"] = {
+							["criticalamount"] = 58493,
+							["id"] = 57755,
+							["min"] = 58493,
+							["criticalmax"] = 58493,
+							["critical"] = 1,
+							["criticalmin"] = 58493,
+							["school"] = 1,
+							["max"] = 58493,
+							["totalhits"] = 1,
+							["damage"] = 58493,
+						},
+						["Attack"] = {
+							["hitmin"] = 187889,
+							["id"] = 6603,
+							["min"] = 187889,
+							["hitamount"] = 745599,
+							["hitmax"] = 299852,
+							["hit"] = 3,
+							["school"] = 1,
+							["max"] = 299852,
+							["totalhits"] = 3,
+							["damage"] = 745599,
+						},
+					},
+					["overhealing"] = 181990,
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 277,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
+					["shielding"] = 0,
+					["id"] = "Player-75-058380E2",
+					["first"] = 1556491632,
+					["healingspells"] = {
+						["Self Reliance"] = {
+							["shielding"] = 0,
+							["id"] = 270661,
+							["healing"] = 242,
+							["min"] = 84,
+							["name"] = "Self Reliance",
+							["max"] = 158,
+							["critical"] = 1,
+							["absorbed"] = 0,
+							["overhealing"] = 4143,
+							["hits"] = 2,
+						},
+						["Touch of the Grave"] = {
+							["shielding"] = 0,
+							["id"] = 127802,
+							["healing"] = 35,
+							["min"] = 35,
+							["name"] = "Touch of the Grave",
+							["max"] = 35,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 177847,
+							["hits"] = 1,
+						},
+					},
+					["damagetakenspells"] = {
+						["Static Shield"] = {
+							["crushing"] = 0,
+							["id"] = 136343,
+							["min"] = 35,
+							["school"] = 8,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Static Shield",
+							["blocked"] = 0,
+							["totalhits"] = 7,
+							["resisted"] = 0,
+							["max"] = 36,
+							["damage"] = 247,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["min"] = 48,
+							["school"] = 1,
+							["critical"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+							["name"] = "Attack",
+							["blocked"] = 0,
+							["totalhits"] = 3,
+							["resisted"] = 0,
+							["max"] = 53,
+							["damage"] = 150,
+						},
+					},
+					["ccbreaks"] = 0,
+					["auras"] = {
+						["Taunt"] = {
+							["school"] = 1,
+							["name"] = "Taunt",
+							["active"] = 0,
+							["id"] = 355,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 3,
+						},
+						["Apothecary's Blight"] = {
+							["school"] = 40,
+							["name"] = "Apothecary's Blight",
+							["active"] = 0,
+							["id"] = 287638,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 3,
+						},
+						["Unstable Flames"] = {
+							["school"] = 4,
+							["name"] = "Unstable Flames",
+							["active"] = 0,
+							["id"] = 279902,
+							["auratype"] = "BUFF",
+							["uptime"] = 8,
+						},
+						["Deep Wounds"] = {
+							["school"] = 1,
+							["name"] = "Deep Wounds",
+							["active"] = 0,
+							["id"] = 262115,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 4,
+						},
+						["Bladestorm"] = {
+							["school"] = 1,
+							["name"] = "Bladestorm",
+							["active"] = 0,
+							["id"] = 227847,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
+						},
+						["Gathering Storm"] = {
+							["school"] = 1,
+							["name"] = "Gathering Storm",
+							["active"] = 0,
+							["id"] = 273415,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
+						},
+						["Colossus Smash"] = {
+							["school"] = 1,
+							["name"] = "Colossus Smash",
+							["active"] = 0,
+							["id"] = 208086,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 5,
+						},
+						["In For The Kill"] = {
+							["school"] = 1,
+							["name"] = "In For The Kill",
+							["active"] = 0,
+							["id"] = 248622,
+							["auratype"] = "BUFF",
+							["uptime"] = 6,
+						},
+					},
+					["name"] = "Shanyt",
+					["alertCount"] = 0,
+					["healing"] = 277,
+					["damagetaken"] = 397,
+					["alert"] = {
+					},
+					["maxhp"] = 186700,
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["damagetaken"] = 397,
+			["shielding"] = 0,
+			["alertDamage"] = 0,
+			["healing"] = 277,
+			["mobs"] = {
+				["Nalak"] = {
+					["players"] = {
+						["Shanyt"] = {
+							["taken"] = 4577153,
+							["done"] = 397,
+							["role"] = "NONE",
+							["class"] = "WARRIOR",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 4577153,
+					["done"] = 397,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["overhealing"] = 181990,
+			["mobtaken"] = 4577153,
+			["auras"] = {
+			},
+			["name"] = "Nalak",
+			["alertCount"] = 0,
+			["starttime"] = 1556491631,
+			["mobhdone"] = 0,
+			["last_action"] = 1556491631,
+			["mobdone"] = 397,
+		}, -- [1]
+		{
+			["healingabsorbed"] = 0,
+			["endtime"] = 1556490878,
+			["dispells"] = 0,
+			["gotboss"] = true,
+			["ccbreaks"] = 0,
+			["time"] = 6,
+			["interrupts"] = 0,
+			["mobname"] = "Supreme Lord Kazzak",
+			["ffdamagedone"] = 0,
+			["power"] = {
+			},
+			["damage"] = 3131980,
+			["players"] = {
+				{
+					["last"] = 1556490877,
+					["healingabsorbed"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["class"] = "WARRIOR",
+					["damaged"] = {
+						["Supreme Lord Kazzak"] = 3131980,
+					},
+					["dispells"] = 0,
+					["ffdamagedonespells"] = {
+					},
+					["role"] = "NONE",
+					["time"] = 5,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+					["alertDamage"] = 0,
+					["damage"] = 3131980,
+					["damagespells"] = {
+						["Apothecary's Blight"] = {
+							["hitmin"] = 57576,
+							["id"] = 287638,
+							["min"] = 57576,
+							["hitamount"] = 57576,
+							["hitmax"] = 57576,
+							["hit"] = 1,
+							["school"] = 40,
+							["max"] = 57576,
+							["totalhits"] = 1,
+							["damage"] = 57576,
+						},
+						["Charge"] = {
+							["hitmin"] = 30498,
+							["id"] = 126664,
+							["min"] = 30498,
+							["hitamount"] = 30498,
+							["hitmax"] = 30498,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 30498,
+							["totalhits"] = 1,
+							["damage"] = 30498,
+						},
+						["Deep Wounds"] = {
+							["hitmin"] = 162321,
+							["id"] = 262115,
+							["min"] = 162321,
+							["hitamount"] = 162321,
+							["hitmax"] = 162321,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 162321,
+							["totalhits"] = 1,
+							["damage"] = 162321,
+						},
+						["Aeda Brightdawn: Attack"] = {
+							["hitmin"] = 780,
+							["id"] = 6603,
+							["min"] = 780,
+							["hitamount"] = 2733,
+							["hitmax"] = 1144,
+							["hit"] = 3,
+							["school"] = 1,
+							["max"] = 1144,
+							["totalhits"] = 3,
+							["damage"] = 2733,
+						},
+						["Bladestorm"] = {
+							["hitmin"] = 193639,
+							["criticalamount"] = 928289,
+							["id"] = 50622,
+							["criticalmin"] = 438539,
+							["hitamount"] = 632154,
+							["critical"] = 2,
+							["min"] = 193639,
+							["criticalmax"] = 489750,
+							["hitmax"] = 232072,
+							["hit"] = 3,
+							["school"] = 1,
+							["max"] = 489750,
+							["totalhits"] = 5,
+							["damage"] = 1560443,
+						},
+						["Warbreaker"] = {
+							["hitmin"] = 398983,
+							["id"] = 262161,
+							["min"] = 398983,
+							["hitamount"] = 398983,
+							["hitmax"] = 398983,
+							["hit"] = 1,
+							["school"] = 1,
+							["max"] = 398983,
+							["totalhits"] = 1,
+							["damage"] = 398983,
+						},
+						["Touch of the Grave"] = {
+							["criticalamount"] = 125138,
+							["id"] = 127802,
+							["min"] = 125138,
+							["criticalmax"] = 125138,
+							["critical"] = 1,
+							["criticalmin"] = 125138,
+							["school"] = 32,
+							["max"] = 125138,
+							["totalhits"] = 1,
+							["damage"] = 125138,
+						},
+						["Attack"] = {
+							["hitmin"] = 140589,
+							["criticalamount"] = 448947,
+							["id"] = 6603,
+							["criticalmin"] = 448947,
+							["hitamount"] = 345341,
+							["critical"] = 1,
+							["min"] = 140589,
+							["criticalmax"] = 448947,
+							["hitmax"] = 204752,
+							["hit"] = 2,
+							["school"] = 1,
+							["max"] = 448947,
+							["totalhits"] = 3,
+							["damage"] = 794288,
+						},
+					},
+					["overhealing"] = 125138,
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 0,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
+					["shielding"] = 0,
+					["id"] = "Player-75-058380E2",
+					["first"] = 1556490872,
+					["healingspells"] = {
+						["Touch of the Grave"] = {
+							["shielding"] = 0,
+							["id"] = 127802,
+							["healing"] = 0,
+							["min"] = 0,
+							["name"] = "Touch of the Grave",
+							["max"] = 0,
+							["critical"] = 0,
+							["absorbed"] = 0,
+							["overhealing"] = 125138,
+							["hits"] = 1,
+						},
+					},
+					["damagetakenspells"] = {
+					},
+					["ccbreaks"] = 0,
+					["auras"] = {
+						["Unstable Flames"] = {
+							["school"] = 4,
+							["name"] = "Unstable Flames",
+							["active"] = 0,
+							["id"] = 279902,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
+						},
+						["Sudden Death"] = {
+							["school"] = 1,
+							["name"] = "Sudden Death",
+							["active"] = 0,
+							["id"] = 52437,
+							["auratype"] = "BUFF",
+							["uptime"] = 2,
+						},
+						["Apothecary's Blight"] = {
+							["school"] = 40,
+							["name"] = "Apothecary's Blight",
+							["active"] = 0,
+							["id"] = 287638,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 3,
+						},
+						["Deep Wounds"] = {
+							["school"] = 1,
+							["name"] = "Deep Wounds",
+							["active"] = 0,
+							["id"] = 262115,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 3,
+						},
+						["Bladestorm"] = {
+							["school"] = 1,
+							["name"] = "Bladestorm",
+							["active"] = 0,
+							["id"] = 227847,
+							["auratype"] = "BUFF",
+							["uptime"] = 4,
+						},
+						["Gathering Storm"] = {
+							["school"] = 1,
+							["name"] = "Gathering Storm",
+							["active"] = 0,
+							["id"] = 273415,
+							["auratype"] = "BUFF",
+							["uptime"] = 4,
+						},
+						["Colossus Smash"] = {
+							["school"] = 1,
+							["name"] = "Colossus Smash",
+							["active"] = 0,
+							["id"] = 208086,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 4,
+						},
+						["In For The Kill"] = {
+							["school"] = 1,
+							["name"] = "In For The Kill",
+							["active"] = 0,
+							["id"] = 248622,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
+						},
+					},
+					["name"] = "Shanyt",
+					["alertCount"] = 0,
+					["healing"] = 0,
+					["damagetaken"] = 0,
+					["alert"] = {
+					},
+					["maxhp"] = 186700,
+				}, -- [1]
+				{
+					["last"] = 1556490878,
+					["healingabsorbed"] = 0,
+					["ffdamagedonespells"] = {
+					},
+					["damaged"] = {
+					},
+					["dispells"] = 0,
+					["ffdamagedonetargets"] = {
+					},
+					["role"] = "NONE",
+					["overhealing"] = 0,
+					["interrupts"] = 0,
+					["ffdamagedone"] = 0,
+					["power"] = {
+					},
+					["alertDamage"] = 0,
+					["damage"] = 0,
+					["damagespells"] = {
+					},
+					["first"] = 1556490873,
+					["healed"] = {
+					},
+					["shielding"] = 0,
+					["id"] = "Creature-0-3023-1116-28789-86945-00004627AA",
+					["maxhp"] = 0,
+					["healingspells"] = {
+					},
+					["damagetakenspells"] = {
+					},
+					["ccbreaks"] = 0,
+					["auras"] = {
+						["Agonize"] = {
+							["school"] = 32,
+							["name"] = "Agonize",
+							["active"] = 0,
+							["id"] = 178393,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 3,
+						},
+						["Demonwrath"] = {
+							["school"] = 36,
+							["name"] = "Demonwrath",
+							["active"] = 0,
+							["id"] = 176009,
+							["auratype"] = "BUFF",
+							["uptime"] = 4,
+						},
+					},
+					["name"] = "Aeda Brightdawn",
+					["alertCount"] = 0,
+					["healing"] = 0,
+					["damagetaken"] = 0,
+					["alert"] = {
+					},
+					["time"] = 5,
+				}, -- [2]
+			},
+			["deaths"] = 0,
+			["damagetaken"] = 0,
+			["shielding"] = 0,
+			["alertDamage"] = 0,
+			["healing"] = 0,
+			["mobs"] = {
+				["Supreme Lord Kazzak"] = {
+					["players"] = {
+						["Shanyt"] = {
+							["taken"] = 3129247,
+							["done"] = 0,
+							["role"] = "NONE",
+							["class"] = "WARRIOR",
+						},
+						["Aeda Brightdawn"] = {
+							["taken"] = 2733,
+							["done"] = 0,
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["htakenspell"] = {
+					},
+					["taken"] = 3131980,
+					["done"] = 0,
+					["htaken"] = 0,
+					["hdonespell"] = {
+					},
+				},
+			},
+			["overhealing"] = 125138,
+			["mobtaken"] = 3131980,
+			["auras"] = {
+			},
+			["name"] = "Supreme Lord Kazzak",
+			["alertCount"] = 0,
+			["starttime"] = 1556490872,
+			["mobhdone"] = 0,
+			["last_action"] = 1556490872,
+			["mobdone"] = 0,
+		}, -- [2]
+		{
+			["healingabsorbed"] = 0,
 			["dispells"] = 0,
 			["endtime"] = 1555905896,
 			["ccbreaks"] = 0,
 			["time"] = 33,
 			["interrupts"] = 0,
-			["mobname"] = "Briarback Tunneler",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				67, -- [1]
-			},
-			["damage"] = 490575,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905895,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
 						["Briarback Tunneler"] = 186567,
 						["Foreman Razorgnarl"] = 304008,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 31,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 67,
-							["spells"] = {
-								[195707] = 27,
-								[100] = 40,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 63033,
+					["healing"] = 57051,
+					["first"] = 1555905864,
 					["damage"] = 490575,
 					["damagespells"] = {
 						["Charge"] = {
@@ -116,6 +772,62 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["damage"] = 14513,
 						},
+						["Touch of the Grave"] = {
+							["hitmin"] = 2086,
+							["id"] = 127802,
+							["min"] = 2086,
+							["hitamount"] = 4998,
+							["hitmax"] = 2912,
+							["hit"] = 2,
+							["school"] = 32,
+							["max"] = 2912,
+							["totalhits"] = 2,
+							["damage"] = 4998,
+						},
+						["Victory Rush"] = {
+							["hitmin"] = 2686,
+							["id"] = 34428,
+							["min"] = 2686,
+							["hitamount"] = 7564,
+							["hitmax"] = 4878,
+							["hit"] = 2,
+							["school"] = 1,
+							["max"] = 4878,
+							["totalhits"] = 2,
+							["damage"] = 7564,
+						},
+						["Deep Wounds"] = {
+							["hitmin"] = 3473,
+							["criticalamount"] = 51008,
+							["id"] = 262115,
+							["hitamount"] = 99572,
+							["criticalmin"] = 10157,
+							["hitmax"] = 8321,
+							["min"] = 3473,
+							["criticalmax"] = 15855,
+							["critical"] = 4,
+							["hit"] = 16,
+							["totalhits"] = 20,
+							["school"] = 1,
+							["max"] = 15855,
+							["damage"] = 150580,
+						},
+						["Bladestorm"] = {
+							["hitmin"] = 4418,
+							["criticalamount"] = 48017,
+							["id"] = 50622,
+							["hitamount"] = 105075,
+							["criticalmin"] = 8338,
+							["hitmax"] = 6830,
+							["min"] = 4418,
+							["criticalmax"] = 10508,
+							["critical"] = 5,
+							["hit"] = 20,
+							["totalhits"] = 25,
+							["school"] = 1,
+							["max"] = 10508,
+							["damage"] = 153092,
+						},
 						["Overpower"] = {
 							["hitmin"] = 7091,
 							["id"] = 7384,
@@ -132,104 +844,41 @@ SkadaPerCharDB = {
 							["hitmin"] = 1631,
 							["criticalamount"] = 6490,
 							["id"] = 287638,
-							["criticalmin"] = 2788,
 							["hitamount"] = 3341,
-							["critical"] = 2,
+							["criticalmin"] = 2788,
+							["hitmax"] = 1710,
 							["min"] = 1631,
 							["criticalmax"] = 3702,
-							["hitmax"] = 1710,
+							["critical"] = 2,
 							["hit"] = 2,
+							["totalhits"] = 4,
 							["school"] = 40,
 							["max"] = 3702,
-							["totalhits"] = 4,
 							["damage"] = 9831,
-						},
-						["Deep Wounds"] = {
-							["hitmin"] = 3473,
-							["criticalamount"] = 51008,
-							["id"] = 262115,
-							["criticalmin"] = 10157,
-							["hitamount"] = 99572,
-							["critical"] = 4,
-							["min"] = 3473,
-							["criticalmax"] = 15855,
-							["hitmax"] = 8321,
-							["hit"] = 16,
-							["school"] = 1,
-							["max"] = 15855,
-							["totalhits"] = 20,
-							["damage"] = 150580,
-						},
-						["Bladestorm"] = {
-							["hitmin"] = 4418,
-							["criticalamount"] = 48017,
-							["id"] = 50622,
-							["criticalmin"] = 8338,
-							["hitamount"] = 105075,
-							["critical"] = 5,
-							["min"] = 4418,
-							["criticalmax"] = 10508,
-							["hitmax"] = 6830,
-							["hit"] = 20,
-							["school"] = 1,
-							["max"] = 10508,
-							["totalhits"] = 25,
-							["damage"] = 153092,
-						},
-						["Victory Rush"] = {
-							["hitmin"] = 2686,
-							["id"] = 34428,
-							["min"] = 2686,
-							["hitamount"] = 7564,
-							["hitmax"] = 4878,
-							["hit"] = 2,
-							["school"] = 1,
-							["max"] = 4878,
-							["totalhits"] = 2,
-							["damage"] = 7564,
-						},
-						["Touch of the Grave"] = {
-							["hitmin"] = 2086,
-							["id"] = 127802,
-							["min"] = 2086,
-							["hitamount"] = 4998,
-							["hitmax"] = 2912,
-							["hit"] = 2,
-							["school"] = 32,
-							["max"] = 2912,
-							["totalhits"] = 2,
-							["damage"] = 4998,
 						},
 						["Attack"] = {
 							["hitmin"] = 3487,
 							["criticalamount"] = 25486,
 							["id"] = 6603,
-							["criticalmin"] = 12651,
 							["hitamount"] = 40475,
-							["critical"] = 2,
+							["criticalmin"] = 12651,
+							["hitmax"] = 6302,
 							["min"] = 3487,
 							["criticalmax"] = 12835,
-							["hitmax"] = 6302,
+							["critical"] = 2,
 							["hit"] = 9,
+							["totalhits"] = 11,
 							["school"] = 1,
 							["max"] = 12835,
-							["totalhits"] = 11,
 							["damage"] = 65961,
 						},
 					},
-					["overhealing"] = 63033,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 57051,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 57051,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905864,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Victory Rush"] = {
 							["shielding"] = 0,
@@ -237,9 +886,9 @@ SkadaPerCharDB = {
 							["healing"] = 30777,
 							["min"] = 2055,
 							["name"] = "Victory Rush",
-							["max"] = 28722,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 28722,
 							["overhealing"] = 43903,
 							["hits"] = 2,
 						},
@@ -249,9 +898,9 @@ SkadaPerCharDB = {
 							["healing"] = 24075,
 							["min"] = 1788,
 							["name"] = "Vampiric Speed",
-							["max"] = 8818,
-							["critical"] = 2,
 							["absorbed"] = 0,
+							["critical"] = 2,
+							["max"] = 8818,
 							["overhealing"] = 16331,
 							["hits"] = 4,
 						},
@@ -261,9 +910,9 @@ SkadaPerCharDB = {
 							["healing"] = 2199,
 							["min"] = 113,
 							["name"] = "Touch of the Grave",
-							["max"] = 2086,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 2086,
 							["overhealing"] = 2799,
 							["hits"] = 2,
 						},
@@ -272,11 +921,11 @@ SkadaPerCharDB = {
 						["Brutal Strike"] = {
 							["crushing"] = 0,
 							["id"] = 270295,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 4220,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Brutal Strike",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -287,11 +936,11 @@ SkadaPerCharDB = {
 						["Impaling Quills"] = {
 							["crushing"] = 0,
 							["id"] = 258200,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 82,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Impaling Quills",
 							["blocked"] = 0,
 							["totalhits"] = 18,
@@ -302,11 +951,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 1,
 							["min"] = 1693,
 							["school"] = 1,
-							["critical"] = 1,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 20,
@@ -318,145 +967,145 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 22,
 						},
 						["Charge"] = {
-							["school"] = 1,
 							["name"] = "Charge",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 109128,
 							["auratype"] = "BUFF",
 							["uptime"] = 9,
 						},
 						["Crushing Assault"] = {
-							["school"] = 1,
 							["name"] = "Crushing Assault",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 278826,
 							["auratype"] = "BUFF",
 							["uptime"] = 13,
 						},
 						["Incite the Pack"] = {
-							["school"] = 1,
 							["name"] = "Incite the Pack",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 280412,
 							["auratype"] = "BUFF",
 							["uptime"] = 20,
 						},
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Gathering Storm"] = {
-							["school"] = 1,
 							["name"] = "Gathering Storm",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 273415,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
 						["Victorious"] = {
-							["school"] = 1,
 							["name"] = "Victorious",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 32216,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
 						["Overpower"] = {
-							["school"] = 1,
 							["name"] = "Overpower",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 7384,
 							["auratype"] = "BUFF",
 							["uptime"] = 11,
 						},
 						["Colossus Smash"] = {
-							["school"] = 1,
 							["name"] = "Colossus Smash",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 208086,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
-						["Tactician"] = {
-							["school"] = 1,
-							["name"] = "Tactician",
-							["active"] = 0,
-							["id"] = 199854,
-							["auratype"] = "BUFF",
-							["uptime"] = 7,
-						},
-						["Vampiric Speed"] = {
-							["school"] = 1,
-							["name"] = "Vampiric Speed",
-							["active"] = 0,
-							["id"] = 269239,
-							["auratype"] = "BUFF",
-							["uptime"] = 11,
-						},
-						["Mortal Wounds"] = {
-							["school"] = 1,
-							["name"] = "Mortal Wounds",
-							["active"] = 0,
-							["id"] = 115804,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 10,
-						},
 						["Primal Instinct"] = {
-							["school"] = 1,
 							["name"] = "Primal Instinct",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 273988,
 							["auratype"] = "BUFF",
 							["uptime"] = 14,
 						},
-						["Deep Wounds"] = {
-							["school"] = 1,
-							["name"] = "Deep Wounds",
+						["Tactician"] = {
+							["name"] = "Tactician",
 							["active"] = 0,
-							["id"] = 262115,
+							["school"] = 1,
+							["id"] = 199854,
+							["auratype"] = "BUFF",
+							["uptime"] = 7,
+						},
+						["Mortal Wounds"] = {
+							["name"] = "Mortal Wounds",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 115804,
 							["auratype"] = "DEBUFF",
-							["uptime"] = 19,
+							["uptime"] = 10,
+						},
+						["Vampiric Speed"] = {
+							["name"] = "Vampiric Speed",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 269239,
+							["auratype"] = "BUFF",
+							["uptime"] = 11,
+						},
+						["Apothecary's Blight"] = {
+							["name"] = "Apothecary's Blight",
+							["active"] = 0,
+							["school"] = 40,
+							["id"] = 287638,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 6,
 						},
 						["Bladestorm"] = {
-							["school"] = 1,
 							["name"] = "Bladestorm",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 227847,
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
 						},
 						["Victory Rush"] = {
-							["school"] = 1,
 							["name"] = "Victory Rush",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 118779,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
-						["Apothecary's Blight"] = {
-							["school"] = 40,
-							["name"] = "Apothecary's Blight",
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
 							["active"] = 0,
-							["id"] = 287638,
+							["school"] = 1,
+							["id"] = 262115,
 							["auratype"] = "DEBUFF",
-							["uptime"] = 6,
+							["uptime"] = 19,
 						},
 						["In For The Kill"] = {
-							["school"] = 1,
 							["name"] = "In For The Kill",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 248622,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
@@ -464,17 +1113,35 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["healing"] = 57051,
-					["damagetaken"] = 57051,
+					["power"] = {
+						{
+							["amount"] = 67,
+							["spells"] = {
+								[195707] = 27,
+								[100] = 40,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 57051,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 490575,
+			["starttime"] = 1555905863,
 			["deaths"] = 0,
 			["damagetaken"] = 57051,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Briarback Tunneler",
 			["healing"] = 57051,
 			["mobs"] = {
 				["Foreman Razorgnarl"] = {
@@ -487,10 +1154,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 17109,
+					["taken"] = 304008,
 					["htakenspell"] = {
 					},
-					["taken"] = 304008,
-					["done"] = 17109,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -499,6 +1166,8 @@ SkadaPerCharDB = {
 					["players"] = {
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 0,
 					["htakenspell"] = {
 						["Uprooted"] = {
 							["min"] = 0,
@@ -517,8 +1186,6 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["taken"] = 0,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 						["Uprooted"] = {
@@ -549,10 +1216,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 39942,
+					["taken"] = 186567,
 					["htakenspell"] = {
 					},
-					["taken"] = 186567,
-					["done"] = 39942,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -561,6 +1228,8 @@ SkadaPerCharDB = {
 					["players"] = {
 					},
 					["hdone"] = 47,
+					["done"] = 0,
+					["taken"] = 0,
 					["htakenspell"] = {
 						["Leech"] = {
 							["min"] = 47,
@@ -571,8 +1240,6 @@ SkadaPerCharDB = {
 							["hits"] = 1,
 						},
 					},
-					["taken"] = 0,
-					["done"] = 0,
 					["htaken"] = 47,
 					["hdonespell"] = {
 						["Leech"] = {
@@ -592,11 +1259,13 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Briarback Tunneler (2)",
 			["alertCount"] = 0,
-			["starttime"] = 1555905863,
+			["power"] = {
+				67, -- [1]
+			},
 			["mobhdone"] = 47,
 			["last_action"] = 1555905863,
 			["mobdone"] = 57051,
-		}, -- [1]
+		}, -- [3]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -604,17 +1273,13 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 30,
 			["interrupts"] = 0,
-			["mobname"] = "Albert Rivers",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				39, -- [1]
-			},
-			["damage"] = 4142,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905813,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
@@ -622,22 +1287,14 @@ SkadaPerCharDB = {
 						["Josephine Rivers"] = 686,
 						["Albert Rivers"] = 686,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 28,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 39,
-							["spells"] = {
-								[195707] = 39,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 0,
+					["healing"] = 3546,
+					["first"] = 1555905785,
 					["damage"] = 4142,
 					["damagespells"] = {
 						["Heroic Leap"] = {
@@ -665,19 +1322,12 @@ SkadaPerCharDB = {
 							["damage"] = 2084,
 						},
 					},
-					["overhealing"] = 0,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 3546,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 47767,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905785,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Self Reliance"] = {
 							["shielding"] = 0,
@@ -685,9 +1335,9 @@ SkadaPerCharDB = {
 							["healing"] = 1462,
 							["min"] = 1462,
 							["name"] = "Self Reliance",
-							["max"] = 1462,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 1462,
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
@@ -697,9 +1347,9 @@ SkadaPerCharDB = {
 							["healing"] = 2084,
 							["min"] = 2084,
 							["name"] = "Touch of the Grave",
-							["max"] = 2084,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 2084,
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
@@ -708,11 +1358,11 @@ SkadaPerCharDB = {
 						["Water Spout"] = {
 							["crushing"] = 0,
 							["id"] = 271287,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 4154,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Water Spout",
 							["blocked"] = 0,
 							["totalhits"] = 3,
@@ -723,11 +1373,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 2,
 							["min"] = 1800,
 							["school"] = 1,
-							["critical"] = 2,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 14,
@@ -739,25 +1389,25 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 9,
 						},
 						["Bounding Stride"] = {
-							["school"] = 1,
 							["name"] = "Bounding Stride",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 202164,
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
 						},
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
@@ -765,17 +1415,34 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["healing"] = 3546,
-					["damagetaken"] = 47767,
+					["power"] = {
+						{
+							["amount"] = 39,
+							["spells"] = {
+								[195707] = 39,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 3546,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 4142,
+			["starttime"] = 1555905784,
 			["deaths"] = 0,
 			["damagetaken"] = 47767,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Albert Rivers",
 			["healing"] = 3546,
 			["mobs"] = {
 				["Unbound Stormsurge"] = {
@@ -788,10 +1455,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 34548,
+					["taken"] = 2770,
 					["htakenspell"] = {
 					},
-					["taken"] = 2770,
-					["done"] = 34548,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -800,6 +1467,8 @@ SkadaPerCharDB = {
 					["players"] = {
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 0,
 					["htakenspell"] = {
 						["Lying In Wait"] = {
 							["min"] = 0,
@@ -810,8 +1479,6 @@ SkadaPerCharDB = {
 							["hits"] = 3,
 						},
 					},
-					["taken"] = 0,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 						["Lying In Wait"] = {
@@ -834,10 +1501,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 686,
 					["htakenspell"] = {
 					},
-					["taken"] = 686,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -852,10 +1519,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 13219,
+					["taken"] = 686,
 					["htakenspell"] = {
 					},
-					["taken"] = 686,
-					["done"] = 13219,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -867,11 +1534,13 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Albert Rivers",
 			["alertCount"] = 0,
-			["starttime"] = 1555905784,
+			["power"] = {
+				39, -- [1]
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1555905784,
 			["mobdone"] = 47767,
-		}, -- [2]
+		}, -- [4]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -879,39 +1548,27 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 32,
 			["interrupts"] = 0,
-			["mobname"] = "Squall",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				27, -- [1]
-			},
-			["damage"] = 309917,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905767,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
 						["Yard Dog"] = 66667,
 						["Squall"] = 243250,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 32,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 27,
-							["spells"] = {
-								[195707] = 27,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 1400,
+					["healing"] = 24440,
+					["first"] = 1555905735,
 					["damage"] = 309917,
 					["damagespells"] = {
 						["Warbreaker"] = {
@@ -942,16 +1599,16 @@ SkadaPerCharDB = {
 							["hitmin"] = 755,
 							["criticalamount"] = 4646,
 							["id"] = 199658,
-							["hitmax"] = 813,
 							["hitamount"] = 4646,
 							["criticalmin"] = 1510,
+							["critical"] = 3,
 							["min"] = 755,
 							["criticalmax"] = 1568,
-							["critical"] = 3,
+							["hitmax"] = 813,
 							["hit"] = 6,
+							["totalhits"] = 9,
 							["school"] = 1,
 							["max"] = 1568,
-							["totalhits"] = 9,
 							["damage"] = 9292,
 						},
 						["Gutripper"] = {
@@ -982,49 +1639,49 @@ SkadaPerCharDB = {
 							["hitmin"] = 1505,
 							["criticalamount"] = 11974,
 							["id"] = 287638,
-							["criticalmin"] = 3617,
 							["hitamount"] = 1505,
-							["critical"] = 3,
+							["criticalmin"] = 3617,
+							["hitmax"] = 1505,
 							["min"] = 1505,
 							["criticalmax"] = 4337,
-							["hitmax"] = 1505,
+							["critical"] = 3,
 							["hit"] = 1,
+							["totalhits"] = 4,
 							["school"] = 40,
 							["max"] = 4337,
-							["totalhits"] = 4,
 							["damage"] = 13479,
 						},
 						["Deep Wounds"] = {
 							["hitmin"] = 5900,
 							["criticalamount"] = 9176,
 							["id"] = 262115,
-							["criticalmin"] = 9176,
 							["hitamount"] = 35837,
-							["critical"] = 1,
+							["criticalmin"] = 9176,
+							["hitmax"] = 8321,
 							["min"] = 5900,
 							["criticalmax"] = 9176,
-							["hitmax"] = 8321,
+							["critical"] = 1,
 							["hit"] = 5,
+							["totalhits"] = 6,
 							["school"] = 1,
 							["max"] = 9176,
-							["totalhits"] = 6,
 							["damage"] = 45013,
 						},
 						["Bladestorm"] = {
-							["EVADE"] = 1,
+							["hitamount"] = 25560,
 							["hitmin"] = 5743,
 							["criticalamount"] = 38338,
+							["EVADE"] = 1,
 							["id"] = 50622,
-							["hitmax"] = 7037,
-							["hitamount"] = 25560,
 							["criticalmin"] = 10838,
+							["school"] = 1,
 							["min"] = 5743,
 							["criticalmax"] = 14721,
 							["critical"] = 3,
 							["hit"] = 4,
-							["school"] = 1,
-							["max"] = 14721,
 							["totalhits"] = 8,
+							["hitmax"] = 7037,
+							["max"] = 14721,
 							["damage"] = 63898,
 						},
 						["Overpower"] = {
@@ -1055,32 +1712,25 @@ SkadaPerCharDB = {
 							["hitmin"] = 3484,
 							["criticalamount"] = 47163,
 							["id"] = 6603,
-							["criticalmin"] = 7027,
 							["hitamount"] = 12696,
-							["critical"] = 5,
+							["criticalmin"] = 7027,
+							["hitmax"] = 5671,
 							["min"] = 3484,
 							["criticalmax"] = 12999,
-							["hitmax"] = 5671,
+							["critical"] = 5,
 							["hit"] = 3,
+							["totalhits"] = 8,
 							["school"] = 1,
 							["max"] = 12999,
-							["totalhits"] = 8,
 							["damage"] = 59859,
 						},
 					},
-					["overhealing"] = 1400,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 24440,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 31706,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905735,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Self Reliance"] = {
 							["shielding"] = 0,
@@ -1088,9 +1738,9 @@ SkadaPerCharDB = {
 							["healing"] = 1462,
 							["min"] = 1462,
 							["name"] = "Self Reliance",
-							["max"] = 1462,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 1462,
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
@@ -1100,9 +1750,9 @@ SkadaPerCharDB = {
 							["healing"] = 20202,
 							["min"] = 6734,
 							["name"] = "Vampiric Speed",
-							["max"] = 13468,
-							["critical"] = 1,
 							["absorbed"] = 0,
+							["critical"] = 1,
+							["max"] = 13468,
 							["overhealing"] = 0,
 							["hits"] = 2,
 						},
@@ -1112,9 +1762,9 @@ SkadaPerCharDB = {
 							["healing"] = 2776,
 							["min"] = 686,
 							["name"] = "Touch of the Grave",
-							["max"] = 2090,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 2090,
 							["overhealing"] = 1400,
 							["hits"] = 2,
 						},
@@ -1123,11 +1773,11 @@ SkadaPerCharDB = {
 						["Static Charge"] = {
 							["crushing"] = 0,
 							["id"] = 187117,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1701,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Static Charge",
 							["blocked"] = 0,
 							["totalhits"] = 2,
@@ -1138,11 +1788,11 @@ SkadaPerCharDB = {
 						["Water Spout"] = {
 							["crushing"] = 0,
 							["id"] = 271287,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 4164,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Water Spout",
 							["blocked"] = 0,
 							["totalhits"] = 2,
@@ -1153,11 +1803,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1647,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 9,
@@ -1169,137 +1819,137 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 15,
 						},
 						["Incite the Pack"] = {
-							["school"] = 1,
 							["name"] = "Incite the Pack",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 280412,
 							["auratype"] = "BUFF",
 							["uptime"] = 17,
 						},
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
 						["Sudden Death"] = {
-							["school"] = 1,
 							["name"] = "Sudden Death",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 52437,
 							["auratype"] = "BUFF",
 							["uptime"] = 6,
 						},
 						["Static Charge"] = {
-							["school"] = 8,
 							["name"] = "Static Charge",
 							["active"] = 0,
+							["school"] = 8,
 							["id"] = 187117,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 3,
 						},
 						["Gathering Storm"] = {
-							["school"] = 1,
 							["name"] = "Gathering Storm",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 273415,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
 						["Victorious"] = {
-							["school"] = 1,
 							["name"] = "Victorious",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 32216,
 							["auratype"] = "BUFF",
 							["uptime"] = 14,
 						},
 						["Colossus Smash"] = {
-							["school"] = 1,
 							["name"] = "Colossus Smash",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 208086,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
-						["Tactician"] = {
-							["school"] = 1,
-							["name"] = "Tactician",
-							["active"] = 0,
-							["id"] = 199854,
-							["auratype"] = "BUFF",
-							["uptime"] = 5,
-						},
 						["Overpower"] = {
-							["school"] = 1,
 							["name"] = "Overpower",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 7384,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
-						["Mortal Wounds"] = {
+						["Tactician"] = {
+							["name"] = "Tactician",
+							["active"] = 0,
 							["school"] = 1,
+							["id"] = 199854,
+							["auratype"] = "BUFF",
+							["uptime"] = 5,
+						},
+						["Mortal Wounds"] = {
 							["name"] = "Mortal Wounds",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 115804,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 4,
 						},
 						["Primal Instinct"] = {
-							["school"] = 1,
 							["name"] = "Primal Instinct",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 273988,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
 						["Deep Wounds"] = {
-							["school"] = 1,
 							["name"] = "Deep Wounds",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 262115,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
 						["Bladestorm"] = {
-							["school"] = 1,
 							["name"] = "Bladestorm",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 227847,
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
 						},
 						["Vampiric Speed"] = {
-							["school"] = 1,
 							["name"] = "Vampiric Speed",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 269239,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
 						["Apothecary's Blight"] = {
-							["school"] = 40,
 							["name"] = "Apothecary's Blight",
 							["active"] = 0,
+							["school"] = 40,
 							["id"] = 287638,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 7,
 						},
 						["In For The Kill"] = {
-							["school"] = 1,
 							["name"] = "In For The Kill",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 248622,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
@@ -1307,8 +1957,23 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 1,
-					["healing"] = 24440,
-					["damagetaken"] = 31706,
+					["power"] = {
+						{
+							["amount"] = 27,
+							["spells"] = {
+								[195707] = 27,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 24440,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 						["High"] = {
 							["alertDamage"] = 0,
@@ -1326,13 +1991,15 @@ SkadaPerCharDB = {
 							["alertCount"] = 1,
 						},
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 309917,
+			["starttime"] = 1555905735,
 			["deaths"] = 0,
 			["damagetaken"] = 31706,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Squall",
 			["healing"] = 24440,
 			["mobs"] = {
 				["Unbound Stormsurge"] = {
@@ -1345,10 +2012,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 11929,
+					["taken"] = 0,
 					["htakenspell"] = {
 					},
-					["taken"] = 0,
-					["done"] = 11929,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1357,6 +2024,8 @@ SkadaPerCharDB = {
 					["players"] = {
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 0,
 					["htakenspell"] = {
 						["Uprooted"] = {
 							["min"] = 0,
@@ -1367,8 +2036,6 @@ SkadaPerCharDB = {
 							["hits"] = 5,
 						},
 					},
-					["taken"] = 0,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 						["Uprooted"] = {
@@ -1391,10 +2058,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 9029,
+					["taken"] = 66667,
 					["htakenspell"] = {
 					},
-					["taken"] = 66667,
-					["done"] = 9029,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1409,10 +2076,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 7346,
+					["taken"] = 243250,
 					["htakenspell"] = {
 					},
-					["taken"] = 243250,
-					["done"] = 7346,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1424,11 +2091,13 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Squall",
 			["alertCount"] = 1,
-			["starttime"] = 1555905735,
+			["power"] = {
+				27, -- [1]
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1555905735,
 			["mobdone"] = 28304,
-		}, -- [3]
+		}, -- [5]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -1436,38 +2105,26 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 8,
 			["interrupts"] = 0,
-			["mobname"] = "Briarback Tunneler",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				9, -- [1]
-			},
-			["damage"] = 76736,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905653,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
 						["Briarback Tunneler"] = 76736,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 6,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 9,
-							["spells"] = {
-								[195707] = 9,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 40555,
+					["healing"] = 5605,
+					["first"] = 1555905647,
 					["damage"] = 76736,
 					["damagespells"] = {
 						["Mortal Strike"] = {
@@ -1498,16 +2155,16 @@ SkadaPerCharDB = {
 							["hitmin"] = 11685,
 							["criticalamount"] = 23370,
 							["id"] = 260798,
-							["criticalmin"] = 23370,
 							["hitamount"] = 11685,
-							["critical"] = 1,
+							["criticalmin"] = 23370,
+							["hitmax"] = 11685,
 							["min"] = 11685,
 							["criticalmax"] = 23370,
-							["hitmax"] = 11685,
+							["critical"] = 1,
 							["hit"] = 1,
+							["totalhits"] = 2,
 							["school"] = 1,
 							["max"] = 23370,
-							["totalhits"] = 2,
 							["damage"] = 35055,
 						},
 						["Victory Rush"] = {
@@ -1526,48 +2183,41 @@ SkadaPerCharDB = {
 							["hitmin"] = 3472,
 							["criticalamount"] = 6945,
 							["id"] = 262115,
-							["criticalmin"] = 6945,
 							["hitamount"] = 3472,
-							["critical"] = 1,
+							["criticalmin"] = 6945,
+							["hitmax"] = 3472,
 							["min"] = 3472,
 							["criticalmax"] = 6945,
-							["hitmax"] = 3472,
+							["critical"] = 1,
 							["hit"] = 1,
+							["totalhits"] = 2,
 							["school"] = 1,
 							["max"] = 6945,
-							["totalhits"] = 2,
 							["damage"] = 10417,
 						},
 						["Attack"] = {
 							["hitmin"] = 3488,
 							["criticalamount"] = 7020,
 							["id"] = 6603,
-							["criticalmin"] = 7020,
 							["hitamount"] = 3488,
-							["critical"] = 1,
+							["criticalmin"] = 7020,
+							["hitmax"] = 3488,
 							["min"] = 3488,
 							["criticalmax"] = 7020,
-							["hitmax"] = 3488,
+							["critical"] = 1,
 							["hit"] = 1,
+							["totalhits"] = 2,
 							["school"] = 1,
 							["max"] = 7020,
-							["totalhits"] = 2,
 							["damage"] = 10508,
 						},
 					},
-					["overhealing"] = 40555,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 5605,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 5605,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905647,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Victory Rush"] = {
 							["shielding"] = 0,
@@ -1575,9 +2225,9 @@ SkadaPerCharDB = {
 							["healing"] = 1796,
 							["min"] = 1796,
 							["name"] = "Victory Rush",
-							["max"] = 1796,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 1796,
 							["overhealing"] = 35544,
 							["hits"] = 1,
 						},
@@ -1587,9 +2237,9 @@ SkadaPerCharDB = {
 							["healing"] = 1723,
 							["min"] = 1723,
 							["name"] = "Vampiric Speed",
-							["max"] = 1723,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 1723,
 							["overhealing"] = 5011,
 							["hits"] = 1,
 						},
@@ -1599,9 +2249,9 @@ SkadaPerCharDB = {
 							["healing"] = 2086,
 							["min"] = 2086,
 							["name"] = "Touch of the Grave",
-							["max"] = 2086,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 2086,
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
@@ -1610,11 +2260,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1672,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 3,
@@ -1626,81 +2276,81 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
 						},
 						["Victorious"] = {
-							["school"] = 1,
 							["name"] = "Victorious",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 32216,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Berserker Rage"] = {
-							["school"] = 1,
 							["name"] = "Berserker Rage",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 18499,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
 						},
 						["Vampiric Speed"] = {
-							["school"] = 1,
 							["name"] = "Vampiric Speed",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 269239,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Sudden Death"] = {
-							["school"] = 1,
 							["name"] = "Sudden Death",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 52437,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Mortal Wounds"] = {
-							["school"] = 1,
 							["name"] = "Mortal Wounds",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 115804,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 5,
 						},
 						["Victory Rush"] = {
-							["school"] = 1,
 							["name"] = "Victory Rush",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 118779,
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
 						},
 						["Deep Wounds"] = {
-							["school"] = 1,
 							["name"] = "Deep Wounds",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 262115,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 5,
 						},
 						["Tactician"] = {
-							["school"] = 1,
 							["name"] = "Tactician",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 2,
@@ -1708,17 +2358,34 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["healing"] = 5605,
-					["damagetaken"] = 5605,
+					["power"] = {
+						{
+							["amount"] = 9,
+							["spells"] = {
+								[195707] = 9,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 5605,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 76736,
+			["starttime"] = 1555905646,
 			["deaths"] = 0,
 			["damagetaken"] = 5605,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Briarback Tunneler",
 			["healing"] = 5605,
 			["mobs"] = {
 				["Briarback Tunneler"] = {
@@ -1731,10 +2398,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 5605,
+					["taken"] = 76736,
 					["htakenspell"] = {
 					},
-					["taken"] = 76736,
-					["done"] = 5605,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -1746,11 +2413,13 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Briarback Tunneler",
 			["alertCount"] = 0,
-			["starttime"] = 1555905646,
+			["power"] = {
+				9, -- [1]
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1555905646,
 			["mobdone"] = 5605,
-		}, -- [4]
+		}, -- [6]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -1758,17 +2427,13 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 35,
 			["interrupts"] = 0,
-			["mobname"] = "Vinespeaker Ratha",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				41, -- [1]
-			},
-			["damage"] = 519206,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905644,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
@@ -1776,23 +2441,14 @@ SkadaPerCharDB = {
 						["Briarback Tunneler"] = 128427,
 						["Creeping Brambles"] = 79860,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 33,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 41,
-							["spells"] = {
-								[195707] = 21,
-								[100] = 20,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 44317,
+					["healing"] = 44332,
+					["first"] = 1555905611,
 					["damage"] = 519206,
 					["damagespells"] = {
 						["Charge"] = {
@@ -1835,16 +2491,16 @@ SkadaPerCharDB = {
 							["hitmin"] = 3548,
 							["criticalamount"] = 7098,
 							["id"] = 269031,
-							["criticalmin"] = 7098,
 							["hitamount"] = 10648,
-							["critical"] = 1,
+							["criticalmin"] = 7098,
+							["hitmax"] = 3550,
 							["min"] = 3548,
 							["criticalmax"] = 7098,
-							["hitmax"] = 3550,
+							["critical"] = 1,
 							["hit"] = 3,
+							["totalhits"] = 4,
 							["school"] = 1,
 							["max"] = 7098,
-							["totalhits"] = 4,
 							["damage"] = 17746,
 						},
 						["Mortal Strike"] = {
@@ -1859,6 +2515,70 @@ SkadaPerCharDB = {
 							["totalhits"] = 2,
 							["damage"] = 26273,
 						},
+						["Warbreaker"] = {
+							["hitmin"] = 11166,
+							["criticalamount"] = 44666,
+							["id"] = 262161,
+							["hitamount"] = 33498,
+							["criticalmin"] = 22333,
+							["hitmax"] = 11166,
+							["min"] = 11166,
+							["criticalmax"] = 22333,
+							["critical"] = 2,
+							["hit"] = 3,
+							["totalhits"] = 5,
+							["school"] = 1,
+							["max"] = 22333,
+							["damage"] = 78164,
+						},
+						["Overpower"] = {
+							["hitmin"] = 5628,
+							["criticalamount"] = 18440,
+							["id"] = 7384,
+							["hitamount"] = 5628,
+							["criticalmin"] = 18440,
+							["hitmax"] = 5628,
+							["min"] = 5628,
+							["criticalmax"] = 18440,
+							["critical"] = 1,
+							["hit"] = 1,
+							["totalhits"] = 2,
+							["school"] = 1,
+							["max"] = 18440,
+							["damage"] = 24068,
+						},
+						["Deep Wounds"] = {
+							["hitmin"] = 3472,
+							["criticalamount"] = 23220,
+							["id"] = 262115,
+							["hitamount"] = 64430,
+							["criticalmin"] = 11204,
+							["hitmax"] = 6307,
+							["min"] = 3472,
+							["criticalmax"] = 12016,
+							["critical"] = 2,
+							["hit"] = 12,
+							["totalhits"] = 14,
+							["school"] = 1,
+							["max"] = 12016,
+							["damage"] = 87650,
+						},
+						["Bladestorm"] = {
+							["hitmin"] = 5418,
+							["criticalamount"] = 35108,
+							["id"] = 50622,
+							["hitamount"] = 124554,
+							["criticalmin"] = 11486,
+							["hitmax"] = 6829,
+							["min"] = 5418,
+							["criticalmax"] = 12135,
+							["critical"] = 3,
+							["hit"] = 21,
+							["totalhits"] = 24,
+							["school"] = 1,
+							["max"] = 12135,
+							["damage"] = 159662,
+						},
 						["Victory Rush"] = {
 							["hitmin"] = 3752,
 							["id"] = 34428,
@@ -1871,116 +2591,45 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["damage"] = 3752,
 						},
-						["Warbreaker"] = {
-							["hitmin"] = 11166,
-							["criticalamount"] = 44666,
-							["id"] = 262161,
-							["criticalmin"] = 22333,
-							["hitamount"] = 33498,
-							["critical"] = 2,
-							["min"] = 11166,
-							["criticalmax"] = 22333,
-							["hitmax"] = 11166,
-							["hit"] = 3,
-							["school"] = 1,
-							["max"] = 22333,
-							["totalhits"] = 5,
-							["damage"] = 78164,
-						},
 						["Apothecary's Blight"] = {
 							["hitmin"] = 928,
 							["criticalamount"] = 2724,
 							["id"] = 287638,
-							["criticalmin"] = 2724,
 							["hitamount"] = 10075,
-							["critical"] = 1,
+							["criticalmin"] = 2724,
+							["hitmax"] = 2192,
 							["min"] = 928,
 							["criticalmax"] = 2724,
-							["hitmax"] = 2192,
+							["critical"] = 1,
 							["hit"] = 6,
+							["totalhits"] = 7,
 							["school"] = 40,
 							["max"] = 2724,
-							["totalhits"] = 7,
 							["damage"] = 12799,
-						},
-						["Bladestorm"] = {
-							["hitmin"] = 5418,
-							["criticalamount"] = 35108,
-							["id"] = 50622,
-							["criticalmin"] = 11486,
-							["hitamount"] = 124554,
-							["critical"] = 3,
-							["min"] = 5418,
-							["criticalmax"] = 12135,
-							["hitmax"] = 6829,
-							["hit"] = 21,
-							["school"] = 1,
-							["max"] = 12135,
-							["totalhits"] = 24,
-							["damage"] = 159662,
-						},
-						["Overpower"] = {
-							["hitmin"] = 5628,
-							["criticalamount"] = 18440,
-							["id"] = 7384,
-							["criticalmin"] = 18440,
-							["hitamount"] = 5628,
-							["critical"] = 1,
-							["min"] = 5628,
-							["criticalmax"] = 18440,
-							["hitmax"] = 5628,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 18440,
-							["totalhits"] = 2,
-							["damage"] = 24068,
-						},
-						["Deep Wounds"] = {
-							["hitmin"] = 3472,
-							["criticalamount"] = 23220,
-							["id"] = 262115,
-							["criticalmin"] = 11204,
-							["hitamount"] = 64430,
-							["critical"] = 2,
-							["min"] = 3472,
-							["criticalmax"] = 12016,
-							["hitmax"] = 6307,
-							["hit"] = 12,
-							["school"] = 1,
-							["max"] = 12016,
-							["totalhits"] = 14,
-							["damage"] = 87650,
 						},
 						["Attack"] = {
 							["hitmin"] = 3494,
 							["criticalamount"] = 7685,
 							["id"] = 6603,
-							["hitmax"] = 6381,
 							["hitamount"] = 30657,
 							["criticalmin"] = 7685,
+							["critical"] = 1,
 							["min"] = 3494,
 							["criticalmax"] = 7685,
-							["critical"] = 1,
+							["hitmax"] = 6381,
 							["hit"] = 6,
+							["totalhits"] = 7,
 							["school"] = 1,
 							["max"] = 7685,
-							["totalhits"] = 7,
 							["damage"] = 38342,
 						},
 					},
-					["overhealing"] = 44317,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 44332,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 44332,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905611,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Victory Rush"] = {
 							["shielding"] = 0,
@@ -1988,9 +2637,9 @@ SkadaPerCharDB = {
 							["healing"] = 8760,
 							["min"] = 8760,
 							["name"] = "Victory Rush",
-							["max"] = 8760,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 8760,
 							["overhealing"] = 28580,
 							["hits"] = 1,
 						},
@@ -2000,9 +2649,9 @@ SkadaPerCharDB = {
 							["healing"] = 31401,
 							["min"] = 2205,
 							["name"] = "Vampiric Speed",
-							["max"] = 13468,
-							["critical"] = 2,
 							["absorbed"] = 0,
+							["critical"] = 2,
+							["max"] = 13468,
 							["overhealing"] = 15737,
 							["hits"] = 5,
 						},
@@ -2012,9 +2661,9 @@ SkadaPerCharDB = {
 							["healing"] = 4171,
 							["min"] = 4171,
 							["name"] = "Touch of the Grave",
-							["max"] = 4171,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 4171,
 							["overhealing"] = 0,
 							["hits"] = 1,
 						},
@@ -2023,11 +2672,11 @@ SkadaPerCharDB = {
 						["Rumbling Earth"] = {
 							["crushing"] = 0,
 							["id"] = 270498,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 10089,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Rumbling Earth",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -2038,11 +2687,11 @@ SkadaPerCharDB = {
 						["Spiny Leaves"] = {
 							["crushing"] = 0,
 							["id"] = 270594,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1021,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Spiny Leaves",
 							["blocked"] = 0,
 							["totalhits"] = 2,
@@ -2053,11 +2702,11 @@ SkadaPerCharDB = {
 						["Impaling Quills"] = {
 							["crushing"] = 0,
 							["id"] = 258200,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 95,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Impaling Quills",
 							["blocked"] = 0,
 							["totalhits"] = 6,
@@ -2068,11 +2717,11 @@ SkadaPerCharDB = {
 						["Earth Bolt"] = {
 							["crushing"] = 0,
 							["id"] = 270453,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 6111,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Earth Bolt",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -2083,11 +2732,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1221,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 11,
@@ -2099,145 +2748,145 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 11,
 						},
 						["Charge"] = {
-							["school"] = 1,
 							["name"] = "Charge",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 109128,
 							["auratype"] = "BUFF",
 							["uptime"] = 6,
 						},
 						["Crushing Assault"] = {
-							["school"] = 1,
 							["name"] = "Crushing Assault",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 278826,
 							["auratype"] = "BUFF",
 							["uptime"] = 19,
 						},
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Sudden Death"] = {
-							["school"] = 1,
 							["name"] = "Sudden Death",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 52437,
 							["auratype"] = "BUFF",
 							["uptime"] = 6,
 						},
 						["Overpower"] = {
-							["school"] = 1,
 							["name"] = "Overpower",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 7384,
 							["auratype"] = "BUFF",
 							["uptime"] = 23,
 						},
 						["Victorious"] = {
-							["school"] = 1,
 							["name"] = "Victorious",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 32216,
 							["auratype"] = "BUFF",
 							["uptime"] = 18,
 						},
 						["Gathering Storm"] = {
-							["school"] = 1,
 							["name"] = "Gathering Storm",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 273415,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
 						["Colossus Smash"] = {
-							["school"] = 1,
 							["name"] = "Colossus Smash",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 208086,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 10,
 						},
-						["Tactician"] = {
-							["school"] = 1,
-							["name"] = "Tactician",
-							["active"] = 0,
-							["id"] = 199854,
-							["auratype"] = "BUFF",
-							["uptime"] = 6,
-						},
-						["Vampiric Speed"] = {
-							["school"] = 1,
-							["name"] = "Vampiric Speed",
-							["active"] = 0,
-							["id"] = 269239,
-							["auratype"] = "BUFF",
-							["uptime"] = 15,
-						},
-						["Mortal Wounds"] = {
-							["school"] = 1,
-							["name"] = "Mortal Wounds",
-							["active"] = 0,
-							["id"] = 115804,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 16,
-						},
 						["Primal Instinct"] = {
-							["school"] = 1,
 							["name"] = "Primal Instinct",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 273988,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
-						["Apothecary's Blight"] = {
-							["school"] = 40,
-							["name"] = "Apothecary's Blight",
+						["Tactician"] = {
+							["name"] = "Tactician",
 							["active"] = 0,
-							["id"] = 287638,
+							["school"] = 1,
+							["id"] = 199854,
+							["auratype"] = "BUFF",
+							["uptime"] = 6,
+						},
+						["Mortal Wounds"] = {
+							["name"] = "Mortal Wounds",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 115804,
 							["auratype"] = "DEBUFF",
-							["uptime"] = 10,
+							["uptime"] = 16,
+						},
+						["Vampiric Speed"] = {
+							["name"] = "Vampiric Speed",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 269239,
+							["auratype"] = "BUFF",
+							["uptime"] = 15,
+						},
+						["Deep Wounds"] = {
+							["name"] = "Deep Wounds",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 262115,
+							["auratype"] = "DEBUFF",
+							["uptime"] = 16,
 						},
 						["Bladestorm"] = {
-							["school"] = 1,
 							["name"] = "Bladestorm",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 227847,
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
 						},
 						["Victory Rush"] = {
-							["school"] = 1,
 							["name"] = "Victory Rush",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 118779,
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
 						},
-						["Deep Wounds"] = {
-							["school"] = 1,
-							["name"] = "Deep Wounds",
+						["Apothecary's Blight"] = {
+							["name"] = "Apothecary's Blight",
 							["active"] = 0,
-							["id"] = 262115,
+							["school"] = 40,
+							["id"] = 287638,
 							["auratype"] = "DEBUFF",
-							["uptime"] = 16,
+							["uptime"] = 10,
 						},
 						["In For The Kill"] = {
-							["school"] = 1,
 							["name"] = "In For The Kill",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 248622,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
@@ -2245,17 +2894,35 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["healing"] = 44332,
-					["damagetaken"] = 44332,
+					["power"] = {
+						{
+							["amount"] = 41,
+							["spells"] = {
+								[195707] = 21,
+								[100] = 20,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 44332,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 519206,
+			["starttime"] = 1555905610,
 			["deaths"] = 0,
 			["damagetaken"] = 44332,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Vinespeaker Ratha",
 			["healing"] = 44332,
 			["mobs"] = {
 				["Vinespeaker Ratha"] = {
@@ -2268,10 +2935,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 22808,
+					["taken"] = 310919,
 					["htakenspell"] = {
 					},
-					["taken"] = 310919,
-					["done"] = 22808,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -2286,10 +2953,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 16352,
+					["taken"] = 128427,
 					["htakenspell"] = {
 					},
-					["taken"] = 128427,
-					["done"] = 16352,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -2304,10 +2971,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 5172,
+					["taken"] = 79860,
 					["htakenspell"] = {
 					},
-					["taken"] = 79860,
-					["done"] = 5172,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -2319,11 +2986,13 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Vinespeaker Ratha",
 			["alertCount"] = 0,
-			["starttime"] = 1555905610,
+			["power"] = {
+				41, -- [1]
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1555905610,
 			["mobdone"] = 44332,
-		}, -- [5]
+		}, -- [7]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -2331,38 +3000,26 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 29,
 			["interrupts"] = 0,
-			["mobname"] = "Grasping Thorns",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				3, -- [1]
-			},
-			["damage"] = 67348,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905569,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
 						["Grasping Thorns"] = 67348,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 26,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 3,
-							["spells"] = {
-								[195707] = 3,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 7098,
+					["healing"] = 6946,
+					["first"] = 1555905543,
 					["damage"] = 67348,
 					["damagespells"] = {
 						["Warbreaker"] = {
@@ -2426,19 +3083,12 @@ SkadaPerCharDB = {
 							["damage"] = 3532,
 						},
 					},
-					["overhealing"] = 7098,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 6946,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 6946,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905543,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Self Reliance"] = {
 							["shielding"] = 0,
@@ -2446,9 +3096,9 @@ SkadaPerCharDB = {
 							["healing"] = 2996,
 							["min"] = 135,
 							["name"] = "Self Reliance",
-							["max"] = 1462,
-							["critical"] = 2,
 							["absorbed"] = 0,
+							["critical"] = 2,
+							["max"] = 1462,
 							["overhealing"] = 4314,
 							["hits"] = 3,
 						},
@@ -2458,9 +3108,9 @@ SkadaPerCharDB = {
 							["healing"] = 3950,
 							["min"] = 3950,
 							["name"] = "Vampiric Speed",
-							["max"] = 3950,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 3950,
 							["overhealing"] = 2784,
 							["hits"] = 1,
 						},
@@ -2469,11 +3119,11 @@ SkadaPerCharDB = {
 						["Hurl Seed"] = {
 							["crushing"] = 0,
 							["id"] = 169567,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1399,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Hurl Seed",
 							["blocked"] = 0,
 							["totalhits"] = 3,
@@ -2484,11 +3134,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 2417,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -2500,81 +3150,81 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
 						},
 						["Bounding Stride"] = {
-							["school"] = 1,
 							["name"] = "Bounding Stride",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 202164,
 							["auratype"] = "BUFF",
 							["uptime"] = 3,
 						},
 						["Crushing Assault"] = {
-							["school"] = 1,
 							["name"] = "Crushing Assault",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 278826,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Colossus Smash"] = {
-							["school"] = 1,
 							["name"] = "Colossus Smash",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 208086,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 3,
 						},
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Vampiric Speed"] = {
-							["school"] = 1,
 							["name"] = "Vampiric Speed",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 269239,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Apothecary's Blight"] = {
-							["school"] = 40,
 							["name"] = "Apothecary's Blight",
 							["active"] = 0,
+							["school"] = 40,
 							["id"] = 287638,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 2,
 						},
 						["Sudden Death"] = {
-							["school"] = 1,
 							["name"] = "Sudden Death",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 52437,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["Victorious"] = {
-							["school"] = 1,
 							["name"] = "Victorious",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 32216,
 							["auratype"] = "BUFF",
 							["uptime"] = 1,
 						},
 						["In For The Kill"] = {
-							["school"] = 1,
 							["name"] = "In For The Kill",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 248622,
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
@@ -2582,17 +3232,34 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["healing"] = 6946,
-					["damagetaken"] = 6946,
+					["power"] = {
+						{
+							["amount"] = 3,
+							["spells"] = {
+								[195707] = 3,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 6946,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 67348,
+			["starttime"] = 1555905541,
 			["deaths"] = 0,
 			["damagetaken"] = 6946,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Grasping Thorns",
 			["healing"] = 6946,
 			["mobs"] = {
 				["Grasping Thorns"] = {
@@ -2605,10 +3272,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 6946,
+					["taken"] = 67348,
 					["htakenspell"] = {
 					},
-					["taken"] = 67348,
-					["done"] = 6946,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -2620,11 +3287,13 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Grasping Thorns (5)",
 			["alertCount"] = 0,
-			["starttime"] = 1555905541,
+			["power"] = {
+				3, -- [1]
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1555905541,
 			["mobdone"] = 6946,
-		}, -- [6]
+		}, -- [8]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -2632,38 +3301,26 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 78,
 			["interrupts"] = 0,
-			["mobname"] = "Earthbound Servant",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				6, -- [1]
-			},
-			["damage"] = 30331,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905515,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
 						["Earthbound Servant"] = 30331,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 61,
 					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 6,
-							["spells"] = {
-								[195707] = 6,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 9014,
+					["healing"] = 4193,
+					["first"] = 1555905454,
 					["damage"] = 30331,
 					["damagespells"] = {
 						["Touch of the Grave"] = {
@@ -2682,16 +3339,16 @@ SkadaPerCharDB = {
 							["hitmin"] = 778,
 							["criticalamount"] = 1558,
 							["id"] = 199658,
-							["criticalmin"] = 1558,
 							["hitamount"] = 5450,
-							["critical"] = 1,
+							["criticalmin"] = 1558,
+							["hitmax"] = 780,
 							["min"] = 778,
 							["criticalmax"] = 1558,
-							["hitmax"] = 780,
+							["critical"] = 1,
 							["hit"] = 7,
+							["totalhits"] = 8,
 							["school"] = 1,
 							["max"] = 1558,
-							["totalhits"] = 8,
 							["damage"] = 7008,
 						},
 						["Gutripper"] = {
@@ -2719,19 +3376,12 @@ SkadaPerCharDB = {
 							["damage"] = 14139,
 						},
 					},
-					["overhealing"] = 9014,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 4193,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 4193,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905454,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Self Reliance"] = {
 							["shielding"] = 0,
@@ -2739,9 +3389,9 @@ SkadaPerCharDB = {
 							["healing"] = 1551,
 							["min"] = 89,
 							["name"] = "Self Reliance",
-							["max"] = 1462,
-							["critical"] = 1,
 							["absorbed"] = 0,
+							["critical"] = 1,
+							["max"] = 1462,
 							["overhealing"] = 2835,
 							["hits"] = 2,
 						},
@@ -2751,9 +3401,9 @@ SkadaPerCharDB = {
 							["healing"] = 1660,
 							["min"] = 1660,
 							["name"] = "Vampiric Speed",
-							["max"] = 1660,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 1660,
 							["overhealing"] = 5075,
 							["hits"] = 1,
 						},
@@ -2763,9 +3413,9 @@ SkadaPerCharDB = {
 							["healing"] = 982,
 							["min"] = 982,
 							["name"] = "Touch of the Grave",
-							["max"] = 982,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 982,
 							["overhealing"] = 1104,
 							["hits"] = 1,
 						},
@@ -2774,11 +3424,11 @@ SkadaPerCharDB = {
 						["Hurl Seed"] = {
 							["crushing"] = 0,
 							["id"] = 169567,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1551,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Hurl Seed",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -2789,11 +3439,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 1,
 							["min"] = 982,
 							["school"] = 1,
-							["critical"] = 1,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 2,
@@ -2805,49 +3455,49 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 36,
 						},
 						["Vampiric Speed"] = {
-							["school"] = 1,
 							["name"] = "Vampiric Speed",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 269239,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
 						["Tactician"] = {
-							["school"] = 1,
 							["name"] = "Tactician",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 4,
 						},
 						["Victorious"] = {
-							["school"] = 1,
 							["name"] = "Victorious",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 32216,
 							["auratype"] = "BUFF",
 							["uptime"] = 21,
 						},
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
 						["Sudden Death"] = {
-							["school"] = 1,
 							["name"] = "Sudden Death",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 52437,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
@@ -2855,17 +3505,34 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["healing"] = 4193,
-					["damagetaken"] = 4193,
+					["power"] = {
+						{
+							["amount"] = 6,
+							["spells"] = {
+								[195707] = 6,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 4193,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 30331,
+			["starttime"] = 1555905452,
 			["deaths"] = 0,
 			["damagetaken"] = 4193,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Earthbound Servant",
 			["healing"] = 4193,
 			["mobs"] = {
 				["Earthbound Servant"] = {
@@ -2878,10 +3545,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 2642,
+					["taken"] = 30331,
 					["htakenspell"] = {
 					},
-					["taken"] = 30331,
-					["done"] = 2642,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -2896,10 +3563,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 1551,
+					["taken"] = 0,
 					["htakenspell"] = {
 					},
-					["taken"] = 0,
-					["done"] = 1551,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -2911,11 +3578,13 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Earthbound Servant",
 			["alertCount"] = 0,
-			["starttime"] = 1555905452,
+			["power"] = {
+				6, -- [1]
+			},
 			["mobhdone"] = 0,
 			["last_action"] = 1555905452,
 			["mobdone"] = 4193,
-		}, -- [7]
+		}, -- [9]
 		{
 			["healingabsorbed"] = 0,
 			["dispells"] = 0,
@@ -2923,17 +3592,13 @@ SkadaPerCharDB = {
 			["ccbreaks"] = 0,
 			["time"] = 89,
 			["interrupts"] = 1,
-			["mobname"] = "Briarback Kraultender",
 			["ffdamagedone"] = 0,
-			["power"] = {
-				82.8000000715256, -- [1]
-			},
-			["damage"] = 434323,
+			["alertDamage"] = 0,
 			["players"] = {
 				{
 					["last"] = 1555905422,
 					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
+					["ffdamagedonespells"] = {
 					},
 					["class"] = "WARRIOR",
 					["damaged"] = {
@@ -2942,39 +3607,30 @@ SkadaPerCharDB = {
 						["Earthgrab Totem"] = 3488,
 						["Briarback Kraultender"] = 122183,
 					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
+					["alertDamage"] = 0,
+					["ffdamagedone"] = 0,
 					["role"] = "NONE",
 					["time"] = 88,
 					["interrupts"] = 1,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 82.8000000715256,
-							["spells"] = {
-								[100] = 60,
-								[195707] = 22.8000000715256,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
+					["overhealing"] = 41277,
+					["healing"] = 51280,
+					["first"] = 1555905334,
 					["damage"] = 434323,
 					["damagespells"] = {
 						["Charge"] = {
 							["hitmin"] = 770,
 							["criticalamount"] = 1708,
 							["id"] = 126664,
-							["criticalmin"] = 1708,
 							["hitamount"] = 1540,
-							["critical"] = 1,
+							["criticalmin"] = 1708,
+							["hitmax"] = 770,
 							["min"] = 770,
 							["criticalmax"] = 1708,
-							["hitmax"] = 770,
+							["critical"] = 1,
 							["hit"] = 2,
+							["totalhits"] = 3,
 							["school"] = 1,
 							["max"] = 1708,
-							["totalhits"] = 3,
 							["damage"] = 3248,
 						},
 						["Warbreaker"] = {
@@ -2993,16 +3649,16 @@ SkadaPerCharDB = {
 							["hitmin"] = 2084,
 							["criticalamount"] = 8343,
 							["id"] = 127802,
-							["hitmax"] = 2084,
 							["hitamount"] = 2084,
 							["criticalmin"] = 4171,
+							["critical"] = 2,
 							["min"] = 2084,
 							["criticalmax"] = 4172,
-							["critical"] = 2,
+							["hitmax"] = 2084,
 							["hit"] = 1,
+							["totalhits"] = 3,
 							["school"] = 32,
 							["max"] = 4172,
-							["totalhits"] = 3,
 							["damage"] = 10427,
 						},
 						["Slam"] = {
@@ -3021,33 +3677,65 @@ SkadaPerCharDB = {
 							["hitmin"] = 1088,
 							["criticalamount"] = 4352,
 							["id"] = 199658,
-							["criticalmin"] = 2176,
 							["hitamount"] = 4352,
-							["critical"] = 2,
+							["criticalmin"] = 2176,
+							["hitmax"] = 1088,
 							["min"] = 1088,
 							["criticalmax"] = 2176,
-							["hitmax"] = 1088,
+							["critical"] = 2,
 							["hit"] = 4,
+							["totalhits"] = 6,
 							["school"] = 1,
 							["max"] = 2176,
-							["totalhits"] = 6,
 							["damage"] = 8704,
 						},
 						["Gutripper"] = {
 							["hitmin"] = 3548,
 							["criticalamount"] = 7098,
 							["id"] = 269031,
-							["criticalmin"] = 7098,
 							["hitamount"] = 10648,
-							["critical"] = 1,
+							["criticalmin"] = 7098,
+							["hitmax"] = 3550,
 							["min"] = 3548,
 							["criticalmax"] = 7098,
-							["hitmax"] = 3550,
+							["critical"] = 1,
 							["hit"] = 3,
+							["totalhits"] = 4,
 							["school"] = 1,
 							["max"] = 7098,
-							["totalhits"] = 4,
 							["damage"] = 17746,
+						},
+						["Execute"] = {
+							["hitmin"] = 9874,
+							["criticalamount"] = 23370,
+							["id"] = 260798,
+							["hitamount"] = 46196,
+							["criticalmin"] = 23370,
+							["hitmax"] = 12953,
+							["min"] = 9874,
+							["criticalmax"] = 23370,
+							["critical"] = 1,
+							["hit"] = 4,
+							["totalhits"] = 5,
+							["school"] = 1,
+							["max"] = 23370,
+							["damage"] = 69566,
+						},
+						["Mortal Strike"] = {
+							["hitmin"] = 7992,
+							["criticalamount"] = 17718,
+							["id"] = 12294,
+							["hitamount"] = 29380,
+							["criticalmin"] = 17718,
+							["hitmax"] = 13396,
+							["min"] = 7992,
+							["criticalmax"] = 17718,
+							["critical"] = 1,
+							["hit"] = 3,
+							["totalhits"] = 4,
+							["school"] = 1,
+							["max"] = 17718,
+							["damage"] = 47098,
 						},
 						["Victory Rush"] = {
 							["hitmin"] = 2686,
@@ -3061,100 +3749,68 @@ SkadaPerCharDB = {
 							["totalhits"] = 1,
 							["damage"] = 2686,
 						},
-						["Mortal Strike"] = {
-							["hitmin"] = 7992,
-							["criticalamount"] = 17718,
-							["id"] = 12294,
-							["criticalmin"] = 17718,
-							["hitamount"] = 29380,
-							["critical"] = 1,
-							["min"] = 7992,
-							["criticalmax"] = 17718,
-							["hitmax"] = 13396,
-							["hit"] = 3,
-							["school"] = 1,
-							["max"] = 17718,
-							["totalhits"] = 4,
-							["damage"] = 47098,
-						},
-						["Execute"] = {
-							["hitmin"] = 9874,
-							["criticalamount"] = 23370,
-							["id"] = 260798,
-							["criticalmin"] = 23370,
-							["hitamount"] = 46196,
-							["critical"] = 1,
-							["min"] = 9874,
-							["criticalmax"] = 23370,
-							["hitmax"] = 12953,
-							["hit"] = 4,
-							["school"] = 1,
-							["max"] = 23370,
-							["totalhits"] = 5,
-							["damage"] = 69566,
-						},
 						["Deep Wounds"] = {
 							["hitmin"] = 1779,
 							["criticalamount"] = 19404,
 							["id"] = 262115,
-							["criticalmin"] = 9702,
 							["hitamount"] = 78197,
-							["critical"] = 2,
+							["criticalmin"] = 9702,
+							["hitmax"] = 4852,
 							["min"] = 1779,
 							["criticalmax"] = 9702,
-							["hitmax"] = 4852,
+							["critical"] = 2,
 							["hit"] = 20,
+							["totalhits"] = 22,
 							["school"] = 1,
 							["max"] = 9702,
-							["totalhits"] = 22,
 							["damage"] = 97601,
 						},
 						["Apothecary's Blight"] = {
 							["hitmin"] = 693,
 							["criticalamount"] = 3981,
 							["id"] = 287638,
-							["criticalmin"] = 1135,
 							["hitamount"] = 8531,
-							["critical"] = 2,
+							["criticalmin"] = 1135,
+							["hitmax"] = 1666,
 							["min"] = 693,
 							["criticalmax"] = 2846,
-							["hitmax"] = 1666,
+							["critical"] = 2,
 							["hit"] = 7,
+							["totalhits"] = 9,
 							["school"] = 40,
 							["max"] = 2846,
-							["totalhits"] = 9,
 							["damage"] = 12512,
 						},
 						["Bladestorm"] = {
 							["hitmin"] = 3760,
 							["criticalamount"] = 37050,
 							["id"] = 50622,
-							["criticalmin"] = 8516,
 							["hitamount"] = 28034,
-							["critical"] = 4,
+							["criticalmin"] = 8516,
+							["hitmax"] = 5254,
 							["min"] = 3760,
 							["criticalmax"] = 10009,
-							["hitmax"] = 5254,
+							["critical"] = 4,
 							["hit"] = 6,
+							["totalhits"] = 10,
 							["school"] = 1,
 							["max"] = 10009,
-							["totalhits"] = 10,
 							["damage"] = 65084,
 						},
 						["Overpower"] = {
 							["hitmin"] = 5076,
 							["criticalamount"] = 10153,
 							["id"] = 7384,
-							["hitmax"] = 5078,
 							["hitamount"] = 10154,
 							["criticalmin"] = 10153,
+							["critical"] = 1,
 							["min"] = 5076,
 							["criticalmax"] = 10153,
-							["critical"] = 1,
+							["hitmax"] = 5078,
 							["hit"] = 2,
+							["totalhits"] = 3,
 							["school"] = 1,
 							["max"] = 10153,
-							["totalhits"] = 3,
 							["damage"] = 20307,
 						},
 						["Heroic Throw"] = {
@@ -3173,32 +3829,25 @@ SkadaPerCharDB = {
 							["hitmin"] = 3430,
 							["criticalamount"] = 14784,
 							["id"] = 6603,
-							["hitmax"] = 4965,
 							["hitamount"] = 37681,
 							["criticalmin"] = 6882,
+							["critical"] = 2,
 							["min"] = 3430,
 							["criticalmax"] = 7902,
-							["critical"] = 2,
+							["hitmax"] = 4965,
 							["hit"] = 10,
+							["totalhits"] = 12,
 							["school"] = 1,
 							["max"] = 7902,
-							["totalhits"] = 12,
 							["damage"] = 52465,
 						},
 					},
-					["overhealing"] = 41277,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 51280,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
+					["ffdamagedonetargets"] = {
 					},
+					["damagetaken"] = 51280,
 					["shielding"] = 0,
 					["id"] = "Player-75-058380E2",
-					["first"] = 1555905334,
+					["maxhp"] = 186700,
 					["healingspells"] = {
 						["Self Reliance"] = {
 							["shielding"] = 0,
@@ -3206,9 +3855,9 @@ SkadaPerCharDB = {
 							["healing"] = 3063,
 							["min"] = 140,
 							["name"] = "Self Reliance",
-							["max"] = 1462,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 1462,
 							["overhealing"] = 1322,
 							["hits"] = 3,
 						},
@@ -3218,9 +3867,9 @@ SkadaPerCharDB = {
 							["healing"] = 18771,
 							["min"] = 18771,
 							["name"] = "Victory Rush",
-							["max"] = 18771,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 18771,
 							["overhealing"] = 18569,
 							["hits"] = 1,
 						},
@@ -3230,9 +3879,9 @@ SkadaPerCharDB = {
 							["healing"] = 23622,
 							["min"] = 1737,
 							["name"] = "Vampiric Speed",
-							["max"] = 13468,
-							["critical"] = 2,
 							["absorbed"] = 0,
+							["critical"] = 2,
+							["max"] = 13468,
 							["overhealing"] = 16783,
 							["hits"] = 4,
 						},
@@ -3242,9 +3891,9 @@ SkadaPerCharDB = {
 							["healing"] = 5824,
 							["min"] = 123,
 							["name"] = "Touch of the Grave",
-							["max"] = 4171,
-							["critical"] = 0,
 							["absorbed"] = 0,
+							["critical"] = 0,
+							["max"] = 4171,
 							["overhealing"] = 4603,
 							["hits"] = 3,
 						},
@@ -3253,11 +3902,11 @@ SkadaPerCharDB = {
 						["Earth Bolt"] = {
 							["crushing"] = 0,
 							["id"] = 270453,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 5940,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Earth Bolt",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -3268,11 +3917,11 @@ SkadaPerCharDB = {
 						["Lightning Nova"] = {
 							["crushing"] = 0,
 							["id"] = 270957,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 5458,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Lightning Nova",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -3283,11 +3932,11 @@ SkadaPerCharDB = {
 						["Hurl Seed"] = {
 							["crushing"] = 0,
 							["id"] = 169567,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 1373,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Hurl Seed",
 							["blocked"] = 0,
 							["totalhits"] = 7,
@@ -3298,11 +3947,11 @@ SkadaPerCharDB = {
 						["Swipe"] = {
 							["crushing"] = 0,
 							["id"] = 154828,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 794,
 							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Swipe",
 							["blocked"] = 0,
 							["totalhits"] = 1,
@@ -3313,11 +3962,11 @@ SkadaPerCharDB = {
 						["Lightning Bolt"] = {
 							["crushing"] = 0,
 							["id"] = 224721,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 0,
 							["min"] = 3102,
 							["school"] = 8,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Lightning Bolt",
 							["blocked"] = 0,
 							["totalhits"] = 2,
@@ -3328,11 +3977,11 @@ SkadaPerCharDB = {
 						["Attack"] = {
 							["crushing"] = 0,
 							["id"] = 6603,
+							["absorbed"] = 0,
+							["glancing"] = 0,
+							["critical"] = 1,
 							["min"] = 1737,
 							["school"] = 1,
-							["critical"] = 1,
-							["glancing"] = 0,
-							["absorbed"] = 0,
 							["name"] = "Attack",
 							["blocked"] = 0,
 							["totalhits"] = 10,
@@ -3344,169 +3993,169 @@ SkadaPerCharDB = {
 					["ccbreaks"] = 0,
 					["auras"] = {
 						["Taunt"] = {
-							["school"] = 1,
 							["name"] = "Taunt",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 355,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 3,
 						},
 						["Charge"] = {
-							["school"] = 1,
 							["name"] = "Charge",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 109128,
 							["auratype"] = "BUFF",
 							["uptime"] = 17,
 						},
 						["Crushing Assault"] = {
-							["school"] = 1,
 							["name"] = "Crushing Assault",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 278826,
 							["auratype"] = "BUFF",
 							["uptime"] = 9,
 						},
 						["Incite the Pack"] = {
-							["school"] = 1,
 							["name"] = "Incite the Pack",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 280412,
 							["auratype"] = "BUFF",
 							["uptime"] = 20,
 						},
 						["Self Reliance"] = {
-							["school"] = 1,
 							["name"] = "Self Reliance",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 270661,
 							["auratype"] = "BUFF",
 							["uptime"] = 42,
 						},
 						["Berserker Rage"] = {
-							["school"] = 1,
 							["name"] = "Berserker Rage",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 18499,
 							["auratype"] = "BUFF",
 							["uptime"] = 7,
 						},
 						["Overpower"] = {
-							["school"] = 1,
 							["name"] = "Overpower",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 7384,
 							["auratype"] = "BUFF",
 							["uptime"] = 36,
 						},
-						["Primal Instinct"] = {
-							["school"] = 1,
-							["name"] = "Primal Instinct",
-							["active"] = 0,
-							["id"] = 273988,
-							["auratype"] = "BUFF",
-							["uptime"] = 7,
-						},
-						["Victorious"] = {
-							["school"] = 1,
-							["name"] = "Victorious",
-							["active"] = 0,
-							["id"] = 32216,
-							["auratype"] = "BUFF",
-							["uptime"] = 47,
-						},
 						["Unstable Flames"] = {
-							["school"] = 4,
 							["name"] = "Unstable Flames",
 							["active"] = 0,
+							["school"] = 4,
 							["id"] = 279902,
 							["auratype"] = "BUFF",
 							["uptime"] = 43,
 						},
-						["Deep Wounds"] = {
+						["Victorious"] = {
+							["name"] = "Victorious",
+							["active"] = 0,
 							["school"] = 1,
+							["id"] = 32216,
+							["auratype"] = "BUFF",
+							["uptime"] = 47,
+						},
+						["Gathering Storm"] = {
+							["name"] = "Gathering Storm",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 273415,
+							["auratype"] = "BUFF",
+							["uptime"] = 10,
+						},
+						["Deep Wounds"] = {
 							["name"] = "Deep Wounds",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 262115,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 32,
 						},
 						["Colossus Smash"] = {
-							["school"] = 1,
 							["name"] = "Colossus Smash",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 208086,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 0,
 						},
-						["Gathering Storm"] = {
-							["school"] = 1,
-							["name"] = "Gathering Storm",
+						["Primal Instinct"] = {
+							["name"] = "Primal Instinct",
 							["active"] = 0,
-							["id"] = 273415,
+							["school"] = 1,
+							["id"] = 273988,
+							["auratype"] = "BUFF",
+							["uptime"] = 7,
+						},
+						["Tactician"] = {
+							["name"] = "Tactician",
+							["active"] = 0,
+							["school"] = 1,
+							["id"] = 199854,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
 						},
-						["Sweeping Strikes"] = {
-							["school"] = 1,
-							["name"] = "Sweeping Strikes",
-							["active"] = 0,
-							["id"] = 260708,
-							["auratype"] = "BUFF",
-							["uptime"] = 12,
-						},
 						["Mortal Wounds"] = {
-							["school"] = 1,
 							["name"] = "Mortal Wounds",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 115804,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 29,
 						},
 						["Vampiric Speed"] = {
-							["school"] = 1,
 							["name"] = "Vampiric Speed",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 269239,
 							["auratype"] = "BUFF",
 							["uptime"] = 20,
 						},
 						["Apothecary's Blight"] = {
-							["school"] = 40,
 							["name"] = "Apothecary's Blight",
 							["active"] = 0,
+							["school"] = 40,
 							["id"] = 287638,
 							["auratype"] = "DEBUFF",
 							["uptime"] = 14,
 						},
 						["Bladestorm"] = {
-							["school"] = 1,
 							["name"] = "Bladestorm",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 227847,
 							["auratype"] = "BUFF",
 							["uptime"] = 5,
 						},
 						["Victory Rush"] = {
-							["school"] = 1,
 							["name"] = "Victory Rush",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 118779,
 							["auratype"] = "BUFF",
 							["uptime"] = 6,
 						},
-						["Tactician"] = {
-							["school"] = 1,
-							["name"] = "Tactician",
+						["Sweeping Strikes"] = {
+							["name"] = "Sweeping Strikes",
 							["active"] = 0,
-							["id"] = 199854,
+							["school"] = 1,
+							["id"] = 260708,
 							["auratype"] = "BUFF",
-							["uptime"] = 10,
+							["uptime"] = 12,
 						},
 						["In For The Kill"] = {
-							["school"] = 1,
 							["name"] = "In For The Kill",
 							["active"] = 0,
+							["school"] = 1,
 							["id"] = 248622,
 							["auratype"] = "BUFF",
 							["uptime"] = 10,
@@ -3514,23 +4163,43 @@ SkadaPerCharDB = {
 					},
 					["name"] = "Shanyt",
 					["alertCount"] = 0,
-					["healing"] = 51280,
-					["damagetaken"] = 51280,
+					["power"] = {
+						{
+							["amount"] = 82.8000000715256,
+							["spells"] = {
+								[100] = 60,
+								[195707] = 22.8000000715256,
+							},
+						}, -- [1]
+					},
+					["healed"] = {
+						["Player-75-058380E2"] = {
+							["role"] = "NONE",
+							["name"] = "Shanyt",
+							["amount"] = 51280,
+							["class"] = "WARRIOR",
+							["shielding"] = 0,
+						},
+					},
 					["alert"] = {
 					},
-					["maxhp"] = 186700,
+					["dispells"] = 0,
 				}, -- [1]
 			},
+			["damage"] = 434323,
+			["starttime"] = 1555905333,
 			["deaths"] = 0,
 			["damagetaken"] = 51280,
 			["shielding"] = 0,
-			["alertDamage"] = 0,
+			["mobname"] = "Briarback Kraultender",
 			["healing"] = 51280,
 			["mobs"] = {
 				["Numskull-SteamwheedleCartel"] = {
 					["players"] = {
 					},
 					["hdone"] = 27481,
+					["done"] = 0,
+					["taken"] = 0,
 					["htakenspell"] = {
 						["Impending Victory"] = {
 							["min"] = 15517,
@@ -3557,8 +4226,6 @@ SkadaPerCharDB = {
 							["hits"] = 23,
 						},
 					},
-					["taken"] = 0,
-					["done"] = 0,
 					["htaken"] = 27481,
 					["hdonespell"] = {
 						["Impending Victory"] = {
@@ -3597,10 +4264,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 9442,
+					["taken"] = 122183,
 					["htakenspell"] = {
 					},
-					["taken"] = 122183,
-					["done"] = 9442,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3615,10 +4282,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 26555,
+					["taken"] = 249504,
 					["htakenspell"] = {
 					},
-					["taken"] = 249504,
-					["done"] = 26555,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3633,10 +4300,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 15283,
+					["taken"] = 59148,
 					["htakenspell"] = {
 					},
-					["taken"] = 59148,
-					["done"] = 15283,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3651,10 +4318,10 @@ SkadaPerCharDB = {
 						},
 					},
 					["hdone"] = 0,
+					["done"] = 0,
+					["taken"] = 3488,
 					["htakenspell"] = {
 					},
-					["taken"] = 3488,
-					["done"] = 0,
 					["htaken"] = 0,
 					["hdonespell"] = {
 					},
@@ -3666,906 +4333,33 @@ SkadaPerCharDB = {
 			},
 			["name"] = "Briarback Kraultender (6)",
 			["alertCount"] = 0,
-			["starttime"] = 1555905333,
+			["power"] = {
+				82.8000000715256, -- [1]
+			},
 			["mobhdone"] = 27481,
 			["last_action"] = 1555905333,
 			["mobdone"] = 51280,
-		}, -- [8]
-		{
-			["healingabsorbed"] = 0,
-			["dispells"] = 0,
-			["endtime"] = 1555905324,
-			["ccbreaks"] = 0,
-			["time"] = 12,
-			["interrupts"] = 0,
-			["mobname"] = "Briarback Kraultender",
-			["ffdamagedone"] = 0,
-			["power"] = {
-				12, -- [1]
-			},
-			["damage"] = 100740,
-			["players"] = {
-				{
-					["last"] = 1555905324,
-					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
-					["class"] = "WARRIOR",
-					["damaged"] = {
-						["Earthbound Servant"] = 30756,
-						["Earthgrab Totem"] = 2977,
-						["Briarback Kraultender"] = 67007,
-					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
-					["role"] = "NONE",
-					["time"] = 12,
-					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 12,
-							["spells"] = {
-								[195707] = 12,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
-					["damage"] = 100740,
-					["damagespells"] = {
-						["Charge"] = {
-							["hitmin"] = 768,
-							["id"] = 126664,
-							["min"] = 768,
-							["hitamount"] = 768,
-							["hitmax"] = 768,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 768,
-							["totalhits"] = 1,
-							["damage"] = 768,
-						},
-						["Touch of the Grave"] = {
-							["criticalamount"] = 4172,
-							["id"] = 127802,
-							["min"] = 4172,
-							["criticalmax"] = 4172,
-							["critical"] = 1,
-							["criticalmin"] = 4172,
-							["school"] = 32,
-							["max"] = 4172,
-							["totalhits"] = 1,
-							["damage"] = 4172,
-						},
-						["Execute"] = {
-							["hitmin"] = 16839,
-							["id"] = 260798,
-							["min"] = 16839,
-							["hitamount"] = 16839,
-							["hitmax"] = 16839,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 16839,
-							["totalhits"] = 1,
-							["damage"] = 16839,
-						},
-						["Whirlwind"] = {
-							["hitmin"] = 778,
-							["criticalamount"] = 1557,
-							["id"] = 199658,
-							["criticalmin"] = 1557,
-							["hitamount"] = 3890,
-							["critical"] = 1,
-							["min"] = 778,
-							["criticalmax"] = 1557,
-							["hitmax"] = 778,
-							["hit"] = 5,
-							["school"] = 1,
-							["max"] = 1557,
-							["totalhits"] = 6,
-							["damage"] = 5447,
-						},
-						["Gutripper"] = {
-							["hitmin"] = 3548,
-							["id"] = 269031,
-							["min"] = 3548,
-							["hitamount"] = 3548,
-							["hitmax"] = 3548,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 3548,
-							["totalhits"] = 1,
-							["damage"] = 3548,
-						},
-						["Mortal Strike"] = {
-							["hitmin"] = 12467,
-							["id"] = 12294,
-							["min"] = 12467,
-							["hitamount"] = 12467,
-							["hitmax"] = 12467,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 12467,
-							["totalhits"] = 1,
-							["damage"] = 12467,
-						},
-						["Victory Rush"] = {
-							["hitmin"] = 2977,
-							["id"] = 34428,
-							["min"] = 2977,
-							["hitamount"] = 6848,
-							["hitmax"] = 3871,
-							["hit"] = 2,
-							["school"] = 1,
-							["max"] = 3871,
-							["totalhits"] = 2,
-							["damage"] = 6848,
-						},
-						["Overpower"] = {
-							["hitmin"] = 5078,
-							["id"] = 7384,
-							["min"] = 5078,
-							["hitamount"] = 5078,
-							["hitmax"] = 5078,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 5078,
-							["totalhits"] = 1,
-							["damage"] = 5078,
-						},
-						["Warbreaker"] = {
-							["hitmin"] = 10072,
-							["id"] = 262161,
-							["min"] = 10072,
-							["hitamount"] = 20144,
-							["hitmax"] = 10072,
-							["hit"] = 2,
-							["school"] = 1,
-							["max"] = 10072,
-							["totalhits"] = 2,
-							["damage"] = 20144,
-						},
-						["Attack"] = {
-							["hitmin"] = 3566,
-							["criticalamount"] = 17257,
-							["id"] = 6603,
-							["criticalmin"] = 7105,
-							["hitamount"] = 8172,
-							["critical"] = 2,
-							["min"] = 3566,
-							["criticalmax"] = 10152,
-							["hitmax"] = 4606,
-							["hit"] = 2,
-							["school"] = 1,
-							["max"] = 10152,
-							["totalhits"] = 4,
-							["damage"] = 25429,
-						},
-					},
-					["overhealing"] = 88560,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 8131,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
-					},
-					["shielding"] = 0,
-					["id"] = "Player-75-058380E2",
-					["first"] = 1555905312,
-					["healingspells"] = {
-						["Apothecary's Salve"] = {
-							["shielding"] = 0,
-							["id"] = 287639,
-							["healing"] = 0,
-							["min"] = 0,
-							["name"] = "Apothecary's Salve",
-							["max"] = 0,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 4370,
-							["hits"] = 2,
-						},
-						["Victory Rush"] = {
-							["shielding"] = 0,
-							["id"] = 118779,
-							["healing"] = 0,
-							["min"] = 0,
-							["name"] = "Victory Rush",
-							["max"] = 0,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 74680,
-							["hits"] = 2,
-						},
-						["Vampiric Speed"] = {
-							["shielding"] = 0,
-							["id"] = 269238,
-							["healing"] = 3959,
-							["min"] = 0,
-							["name"] = "Vampiric Speed",
-							["max"] = 3959,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 9510,
-							["hits"] = 2,
-						},
-						["Touch of the Grave"] = {
-							["shielding"] = 0,
-							["id"] = 127802,
-							["healing"] = 4172,
-							["min"] = 4172,
-							["name"] = "Touch of the Grave",
-							["max"] = 4172,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 0,
-							["hits"] = 1,
-						},
-					},
-					["damagetakenspells"] = {
-						["Attack"] = {
-							["crushing"] = 0,
-							["id"] = 6603,
-							["min"] = 915,
-							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-							["name"] = "Attack",
-							["blocked"] = 0,
-							["totalhits"] = 6,
-							["resisted"] = 0,
-							["max"] = 2239,
-							["damage"] = 8131,
-						},
-					},
-					["ccbreaks"] = 0,
-					["auras"] = {
-						["Unstable Flames"] = {
-							["school"] = 4,
-							["name"] = "Unstable Flames",
-							["active"] = 0,
-							["id"] = 279902,
-							["auratype"] = "BUFF",
-							["uptime"] = 10,
-						},
-						["Charge"] = {
-							["school"] = 1,
-							["name"] = "Charge",
-							["active"] = 0,
-							["id"] = 105771,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 1,
-						},
-						["Victorious"] = {
-							["school"] = 1,
-							["name"] = "Victorious",
-							["active"] = 0,
-							["id"] = 32216,
-							["auratype"] = "BUFF",
-							["uptime"] = 3,
-						},
-						["Vampiric Speed"] = {
-							["school"] = 1,
-							["name"] = "Vampiric Speed",
-							["active"] = 0,
-							["id"] = 269239,
-							["auratype"] = "BUFF",
-							["uptime"] = 4,
-						},
-						["Victory Rush"] = {
-							["school"] = 1,
-							["name"] = "Victory Rush",
-							["active"] = 0,
-							["id"] = 118779,
-							["auratype"] = "BUFF",
-							["uptime"] = 2,
-						},
-						["Incite the Pack"] = {
-							["school"] = 1,
-							["name"] = "Incite the Pack",
-							["active"] = 0,
-							["id"] = 280412,
-							["auratype"] = "BUFF",
-							["uptime"] = 11,
-						},
-						["Apothecary's Salve"] = {
-							["school"] = 8,
-							["name"] = "Apothecary's Salve",
-							["active"] = 0,
-							["id"] = 287639,
-							["auratype"] = "BUFF",
-							["uptime"] = 3,
-						},
-						["Self Reliance"] = {
-							["school"] = 1,
-							["name"] = "Self Reliance",
-							["active"] = 0,
-							["id"] = 270661,
-							["auratype"] = "BUFF",
-							["uptime"] = 0,
-						},
-						["Mortal Wounds"] = {
-							["school"] = 1,
-							["name"] = "Mortal Wounds",
-							["active"] = 0,
-							["id"] = 115804,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 1,
-						},
-						["Primal Instinct"] = {
-							["school"] = 1,
-							["name"] = "Primal Instinct",
-							["active"] = 0,
-							["id"] = 273988,
-							["auratype"] = "BUFF",
-							["uptime"] = 5,
-						},
-						["Sudden Death"] = {
-							["school"] = 1,
-							["name"] = "Sudden Death",
-							["active"] = 0,
-							["id"] = 52437,
-							["auratype"] = "BUFF",
-							["uptime"] = 2,
-						},
-						["Deep Wounds"] = {
-							["school"] = 1,
-							["name"] = "Deep Wounds",
-							["active"] = 0,
-							["id"] = 262115,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 1,
-						},
-						["Overpower"] = {
-							["school"] = 1,
-							["name"] = "Overpower",
-							["active"] = 0,
-							["id"] = 7384,
-							["auratype"] = "BUFF",
-							["uptime"] = 3,
-						},
-						["Colossus Smash"] = {
-							["school"] = 1,
-							["name"] = "Colossus Smash",
-							["active"] = 0,
-							["id"] = 208086,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 4,
-						},
-						["In For The Kill"] = {
-							["school"] = 1,
-							["name"] = "In For The Kill",
-							["active"] = 0,
-							["id"] = 248622,
-							["auratype"] = "BUFF",
-							["uptime"] = 6,
-						},
-					},
-					["name"] = "Shanyt",
-					["alertCount"] = 0,
-					["healing"] = 8131,
-					["damagetaken"] = 8131,
-					["alert"] = {
-					},
-					["maxhp"] = 186700,
-				}, -- [1]
-			},
-			["deaths"] = 0,
-			["damagetaken"] = 8131,
-			["shielding"] = 0,
-			["alertDamage"] = 0,
-			["healing"] = 8131,
-			["mobs"] = {
-				["Earthbound Servant"] = {
-					["players"] = {
-						["Shanyt"] = {
-							["taken"] = 30756,
-							["done"] = 4077,
-							["role"] = "NONE",
-							["class"] = "WARRIOR",
-						},
-					},
-					["hdone"] = 0,
-					["htakenspell"] = {
-					},
-					["taken"] = 30756,
-					["done"] = 4077,
-					["htaken"] = 0,
-					["hdonespell"] = {
-					},
-				},
-				["Numskull-SteamwheedleCartel"] = {
-					["players"] = {
-					},
-					["hdone"] = 154,
-					["htakenspell"] = {
-						["Leech"] = {
-							["min"] = 61,
-							["crits"] = 0,
-							["max"] = 93,
-							["healing"] = 154,
-							["overhealing"] = 0,
-							["hits"] = 2,
-						},
-					},
-					["taken"] = 0,
-					["done"] = 0,
-					["htaken"] = 154,
-					["hdonespell"] = {
-						["Leech"] = {
-							["min"] = 61,
-							["crits"] = 0,
-							["max"] = 93,
-							["healing"] = 154,
-							["overhealing"] = 0,
-							["hits"] = 2,
-						},
-					},
-				},
-				["Earthgrab Totem"] = {
-					["players"] = {
-						["Shanyt"] = {
-							["taken"] = 2977,
-							["done"] = 0,
-							["role"] = "NONE",
-							["class"] = "WARRIOR",
-						},
-					},
-					["hdone"] = 0,
-					["htakenspell"] = {
-					},
-					["taken"] = 2977,
-					["done"] = 0,
-					["htaken"] = 0,
-					["hdonespell"] = {
-					},
-				},
-				["Briarback Kraultender"] = {
-					["players"] = {
-						["Shanyt"] = {
-							["taken"] = 67007,
-							["done"] = 4054,
-							["role"] = "NONE",
-							["class"] = "WARRIOR",
-						},
-					},
-					["hdone"] = 0,
-					["htakenspell"] = {
-					},
-					["taken"] = 67007,
-					["done"] = 4054,
-					["htaken"] = 0,
-					["hdonespell"] = {
-					},
-				},
-			},
-			["overhealing"] = 88560,
-			["mobtaken"] = 100740,
-			["auras"] = {
-			},
-			["name"] = "Briarback Kraultender (5)",
-			["alertCount"] = 0,
-			["starttime"] = 1555905312,
-			["mobhdone"] = 154,
-			["last_action"] = 1555905312,
-			["mobdone"] = 8131,
-		}, -- [9]
-		{
-			["healingabsorbed"] = 0,
-			["dispells"] = 0,
-			["endtime"] = 1555905292,
-			["ccbreaks"] = 0,
-			["time"] = 11,
-			["interrupts"] = 0,
-			["mobname"] = "Briarback Kraultender",
-			["ffdamagedone"] = 0,
-			["power"] = {
-				20, -- [1]
-			},
-			["damage"] = 86122,
-			["players"] = {
-				{
-					["last"] = 1555905292,
-					["healingabsorbed"] = 0,
-					["ffdamagedonetargets"] = {
-					},
-					["class"] = "WARRIOR",
-					["damaged"] = {
-						["Earthgrab Totem"] = 5078,
-						["Briarback Kraultender"] = 81044,
-					},
-					["dispells"] = 0,
-					["ffdamagedonespells"] = {
-					},
-					["role"] = "NONE",
-					["time"] = 11,
-					["interrupts"] = 0,
-					["ffdamagedone"] = 0,
-					["power"] = {
-						{
-							["amount"] = 20,
-							["spells"] = {
-								[100] = 20,
-								[195707] = 0,
-							},
-						}, -- [1]
-					},
-					["alertDamage"] = 0,
-					["damage"] = 86122,
-					["damagespells"] = {
-						["Mortal Strike"] = {
-							["criticalamount"] = 21260,
-							["id"] = 12294,
-							["min"] = 21260,
-							["criticalmax"] = 21260,
-							["critical"] = 1,
-							["criticalmin"] = 21260,
-							["school"] = 1,
-							["max"] = 21260,
-							["totalhits"] = 1,
-							["damage"] = 21260,
-						},
-						["Charge"] = {
-							["criticalamount"] = 1708,
-							["id"] = 126664,
-							["min"] = 1708,
-							["criticalmax"] = 1708,
-							["critical"] = 1,
-							["criticalmin"] = 1708,
-							["school"] = 1,
-							["max"] = 1708,
-							["totalhits"] = 1,
-							["damage"] = 1708,
-						},
-						["Touch of the Grave"] = {
-							["criticalamount"] = 4624,
-							["id"] = 127802,
-							["min"] = 4624,
-							["criticalmax"] = 4624,
-							["critical"] = 1,
-							["criticalmin"] = 4624,
-							["school"] = 32,
-							["max"] = 4624,
-							["totalhits"] = 1,
-							["damage"] = 4624,
-						},
-						["Execute"] = {
-							["criticalamount"] = 25906,
-							["id"] = 260798,
-							["min"] = 25906,
-							["criticalmax"] = 25906,
-							["critical"] = 1,
-							["criticalmin"] = 25906,
-							["school"] = 1,
-							["max"] = 25906,
-							["totalhits"] = 1,
-							["damage"] = 25906,
-						},
-						["Overpower"] = {
-							["hitmin"] = 5078,
-							["id"] = 7384,
-							["min"] = 5078,
-							["hitamount"] = 10706,
-							["hitmax"] = 5628,
-							["hit"] = 2,
-							["school"] = 1,
-							["max"] = 5628,
-							["totalhits"] = 2,
-							["damage"] = 10706,
-						},
-						["Victory Rush"] = {
-							["hitmin"] = 2977,
-							["id"] = 34428,
-							["min"] = 2977,
-							["hitamount"] = 2977,
-							["hitmax"] = 2977,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 2977,
-							["totalhits"] = 1,
-							["damage"] = 2977,
-						},
-						["Attack"] = {
-							["hitmin"] = 3437,
-							["criticalamount"] = 15504,
-							["id"] = 6603,
-							["criticalmin"] = 7708,
-							["hitamount"] = 3437,
-							["critical"] = 2,
-							["min"] = 3437,
-							["criticalmax"] = 7796,
-							["hitmax"] = 3437,
-							["hit"] = 1,
-							["school"] = 1,
-							["max"] = 7796,
-							["totalhits"] = 3,
-							["damage"] = 18941,
-						},
-					},
-					["overhealing"] = 46507,
-					["healed"] = {
-						["Player-75-058380E2"] = {
-							["role"] = "NONE",
-							["name"] = "Shanyt",
-							["amount"] = 2191,
-							["class"] = "WARRIOR",
-							["shielding"] = 0,
-						},
-					},
-					["shielding"] = 0,
-					["id"] = "Player-75-058380E2",
-					["first"] = 1555905281,
-					["healingspells"] = {
-						["Victory Rush"] = {
-							["shielding"] = 0,
-							["id"] = 118779,
-							["healing"] = 0,
-							["min"] = 0,
-							["name"] = "Victory Rush",
-							["max"] = 0,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 37340,
-							["hits"] = 1,
-						},
-						["Vampiric Speed"] = {
-							["shielding"] = 0,
-							["id"] = 269238,
-							["healing"] = 0,
-							["min"] = 0,
-							["name"] = "Vampiric Speed",
-							["max"] = 0,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 6734,
-							["hits"] = 1,
-						},
-						["Touch of the Grave"] = {
-							["shielding"] = 0,
-							["id"] = 127802,
-							["healing"] = 2191,
-							["min"] = 2191,
-							["name"] = "Touch of the Grave",
-							["max"] = 2191,
-							["critical"] = 0,
-							["absorbed"] = 0,
-							["overhealing"] = 2433,
-							["hits"] = 1,
-						},
-					},
-					["damagetakenspells"] = {
-						["Attack"] = {
-							["crushing"] = 0,
-							["id"] = 6603,
-							["min"] = 2191,
-							["school"] = 1,
-							["critical"] = 0,
-							["glancing"] = 0,
-							["absorbed"] = 0,
-							["name"] = "Attack",
-							["blocked"] = 0,
-							["totalhits"] = 1,
-							["resisted"] = 0,
-							["max"] = 2191,
-							["damage"] = 2191,
-						},
-					},
-					["ccbreaks"] = 0,
-					["auras"] = {
-						["Unstable Flames"] = {
-							["school"] = 4,
-							["name"] = "Unstable Flames",
-							["active"] = 0,
-							["id"] = 279902,
-							["auratype"] = "BUFF",
-							["uptime"] = 5,
-						},
-						["Charge"] = {
-							["school"] = 1,
-							["name"] = "Charge",
-							["active"] = 0,
-							["id"] = 109128,
-							["auratype"] = "BUFF",
-							["uptime"] = 6,
-						},
-						["Victorious"] = {
-							["school"] = 1,
-							["name"] = "Victorious",
-							["active"] = 0,
-							["id"] = 32216,
-							["auratype"] = "BUFF",
-							["uptime"] = 5,
-						},
-						["Mortal Wounds"] = {
-							["school"] = 1,
-							["name"] = "Mortal Wounds",
-							["active"] = 0,
-							["id"] = 115804,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 2,
-						},
-						["Primal Instinct"] = {
-							["school"] = 1,
-							["name"] = "Primal Instinct",
-							["active"] = 0,
-							["id"] = 273988,
-							["auratype"] = "BUFF",
-							["uptime"] = 7,
-						},
-						["Tactician"] = {
-							["school"] = 1,
-							["name"] = "Tactician",
-							["active"] = 0,
-							["id"] = 199854,
-							["auratype"] = "BUFF",
-							["uptime"] = 5,
-						},
-						["Vampiric Speed"] = {
-							["school"] = 1,
-							["name"] = "Vampiric Speed",
-							["active"] = 0,
-							["id"] = 269239,
-							["auratype"] = "BUFF",
-							["uptime"] = 5,
-						},
-						["Victory Rush"] = {
-							["school"] = 1,
-							["name"] = "Victory Rush",
-							["active"] = 0,
-							["id"] = 118779,
-							["auratype"] = "BUFF",
-							["uptime"] = 6,
-						},
-						["Deep Wounds"] = {
-							["school"] = 1,
-							["name"] = "Deep Wounds",
-							["active"] = 0,
-							["id"] = 262115,
-							["auratype"] = "DEBUFF",
-							["uptime"] = 2,
-						},
-						["Overpower"] = {
-							["school"] = 1,
-							["name"] = "Overpower",
-							["active"] = 0,
-							["id"] = 7384,
-							["auratype"] = "BUFF",
-							["uptime"] = 3,
-						},
-					},
-					["name"] = "Shanyt",
-					["alertCount"] = 0,
-					["healing"] = 2191,
-					["damagetaken"] = 2191,
-					["alert"] = {
-					},
-					["maxhp"] = 186700,
-				}, -- [1]
-			},
-			["deaths"] = 0,
-			["damagetaken"] = 2191,
-			["shielding"] = 0,
-			["alertDamage"] = 0,
-			["healing"] = 2191,
-			["mobs"] = {
-				["Numskull-SteamwheedleCartel"] = {
-					["players"] = {
-					},
-					["hdone"] = 2700,
-					["htakenspell"] = {
-						["Second Wind"] = {
-							["min"] = 217,
-							["crits"] = 0,
-							["max"] = 2375,
-							["healing"] = 2592,
-							["overhealing"] = 2158,
-							["hits"] = 2,
-						},
-						["Leech"] = {
-							["min"] = 22,
-							["crits"] = 0,
-							["max"] = 61,
-							["healing"] = 108,
-							["overhealing"] = 0,
-							["hits"] = 3,
-						},
-					},
-					["taken"] = 0,
-					["done"] = 0,
-					["htaken"] = 2700,
-					["hdonespell"] = {
-						["Second Wind"] = {
-							["min"] = 217,
-							["crits"] = 0,
-							["max"] = 2375,
-							["healing"] = 2592,
-							["overhealing"] = 2158,
-							["hits"] = 2,
-						},
-						["Leech"] = {
-							["min"] = 22,
-							["crits"] = 0,
-							["max"] = 61,
-							["healing"] = 108,
-							["overhealing"] = 0,
-							["hits"] = 3,
-						},
-					},
-				},
-				["Earthgrab Totem"] = {
-					["players"] = {
-						["Shanyt"] = {
-							["taken"] = 5078,
-							["done"] = 0,
-							["role"] = "NONE",
-							["class"] = "WARRIOR",
-						},
-					},
-					["hdone"] = 0,
-					["htakenspell"] = {
-					},
-					["taken"] = 5078,
-					["done"] = 0,
-					["htaken"] = 0,
-					["hdonespell"] = {
-					},
-				},
-				["Briarback Kraultender"] = {
-					["players"] = {
-						["Shanyt"] = {
-							["taken"] = 81044,
-							["done"] = 2191,
-							["role"] = "NONE",
-							["class"] = "WARRIOR",
-						},
-					},
-					["hdone"] = 0,
-					["htakenspell"] = {
-					},
-					["taken"] = 81044,
-					["done"] = 2191,
-					["htaken"] = 0,
-					["hdonespell"] = {
-					},
-				},
-			},
-			["overhealing"] = 46507,
-			["mobtaken"] = 86122,
-			["auras"] = {
-			},
-			["name"] = "Briarback Kraultender (4)",
-			["alertCount"] = 0,
-			["starttime"] = 1555905281,
-			["mobhdone"] = 2700,
-			["last_action"] = 1555905281,
-			["mobdone"] = 2191,
 		}, -- [10]
 	},
 	["total"] = {
 		["healingabsorbed"] = 0,
 		["dispells"] = 1,
 		["ccbreaks"] = 0,
-		["time"] = 5154,
+		["time"] = 5169,
 		["interrupts"] = 3,
 		["ffdamagedone"] = 0,
 		["shielding"] = 34794,
-		["damage"] = 55396324,
+		["damage"] = 63105457,
 		["players"] = {
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 159340,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["auras"] = {
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 					["Impassive Visage"] = {
 						["shielding"] = 0,
@@ -4580,11 +4374,13 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+				},
+				["maxhp"] = 159340,
 				["damage"] = 29488,
 				["damagespells"] = {
 					["Solar Wrath"] = {
@@ -4604,14 +4400,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 2265,
 						["id"] = 164815,
 						["damage"] = 7150,
-						["totalhits"] = 5,
 						["max"] = 2265,
+						["school"] = 8,
 						["min"] = 1221,
 						["criticalmax"] = 2265,
-						["critical"] = 1,
-						["hit"] = 4,
-						["school"] = 8,
 						["hitmax"] = 1222,
+						["hit"] = 4,
+						["totalhits"] = 5,
+						["critical"] = 1,
 						["criticalmin"] = 2265,
 						["hitamount"] = 4885,
 					},
@@ -4620,14 +4416,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 2319,
 						["id"] = 164812,
 						["damage"] = 7209,
-						["totalhits"] = 5,
 						["max"] = 2319,
+						["school"] = 64,
 						["min"] = 1137,
 						["criticalmax"] = 2319,
-						["critical"] = 1,
-						["hit"] = 4,
-						["school"] = 64,
 						["hitmax"] = 1251,
+						["hit"] = 4,
+						["totalhits"] = 5,
+						["critical"] = 1,
 						["criticalmin"] = 2319,
 						["hitamount"] = 4890,
 					},
@@ -4644,7 +4440,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 11342,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Papawclaw",
 				["healed"] = {
 					["Player-3678-0B10A4C5"] = {
 						["role"] = "DAMAGER",
@@ -4654,7 +4450,32 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
+				["deathlog"] = {
+					{
+						["absorb"] = -13397,
+						["amount"] = -6726,
+						["spellid"] = 274829,
+						["srcname"] = "Azurethos",
+						["hp"] = 152614,
+						["ts"] = 1555878901.571,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 4250,
+						["spellid"] = 270117,
+						["srcname"] = "Papawclaw-Thrall",
+						["hp"] = 156864,
+						["ts"] = 1555878901.657,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 2476,
+						["spellid"] = 145110,
+						["srcname"] = "Pownder-Arthas",
+						["hp"] = 159340,
+						["ts"] = 1555878902.011,
+					}, -- [3]
+					["pos"] = 4,
 				},
 				["id"] = "Player-3678-0B10A4C5",
 				["healing"] = 4250,
@@ -4666,56 +4487,30 @@ SkadaPerCharDB = {
 						["damage"] = 6726,
 						["max"] = 6726,
 						["name"] = "Gale Force",
-						["min"] = 6726,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6726,
 						["absorbed"] = 13397,
 					},
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 6726,
-				["name"] = "Papawclaw",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = -13397,
-						["amount"] = -6726,
-						["srcname"] = "Azurethos",
-						["spellid"] = 274829,
-						["hp"] = 152614,
-						["ts"] = 1555878901.571,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 4250,
-						["srcname"] = "Papawclaw-Thrall",
-						["spellid"] = 270117,
-						["hp"] = 156864,
-						["ts"] = 1555878901.657,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 2476,
-						["srcname"] = "Pownder-Arthas",
-						["spellid"] = 145110,
-						["hp"] = 159340,
-						["ts"] = 1555878902.011,
-					}, -- [3]
-					["pos"] = 4,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [1]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 181360,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -4723,17 +4518,17 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Elemental Whirl"] = {
 						["uptime"] = 0,
-						["name"] = "Elemental Whirl",
 						["active"] = 0,
 						["school"] = 8,
+						["name"] = "Elemental Whirl",
 						["auratype"] = "BUFF",
 						["id"] = 268954,
 					},
 					["Arcanic Pulsar"] = {
 						["uptime"] = 0,
-						["name"] = "Arcanic Pulsar",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Arcanic Pulsar",
 						["auratype"] = "BUFF",
 						["id"] = 287790,
 					},
@@ -4746,7 +4541,6 @@ SkadaPerCharDB = {
 						["id"] = 287638,
 					},
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 					["Ysera's Gift"] = {
 						["shielding"] = 0,
@@ -4761,11 +4555,22 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+					[8] = {
+						["spells"] = {
+							[93402] = 3,
+							[202770] = 27.5,
+							[194153] = 24,
+							[190984] = 8,
+						},
+						["amount"] = 62.5,
+					},
+				},
+				["maxhp"] = 181360,
 				["damage"] = 105951,
 				["damagespells"] = {
 					["Lunar Strike"] = {
@@ -4785,14 +4590,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 9089,
 						["id"] = 190984,
 						["damage"] = 14815,
-						["totalhits"] = 2,
 						["max"] = 9089,
+						["school"] = 8,
 						["min"] = 5726,
 						["criticalmax"] = 9089,
-						["hitmax"] = 5726,
-						["hit"] = 1,
-						["school"] = 8,
 						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["hitmax"] = 5726,
 						["criticalmin"] = 9089,
 						["hitamount"] = 5726,
 					},
@@ -4825,14 +4630,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 1667,
 						["id"] = 211545,
 						["damage"] = 6668,
-						["totalhits"] = 7,
 						["max"] = 1667,
+						["school"] = 72,
 						["min"] = 833,
 						["criticalmax"] = 1667,
-						["critical"] = 1,
-						["hit"] = 6,
-						["school"] = 72,
 						["hitmax"] = 834,
+						["hit"] = 6,
+						["totalhits"] = 7,
+						["critical"] = 1,
 						["criticalmin"] = 1667,
 						["hitamount"] = 5001,
 					},
@@ -4841,14 +4646,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 12264,
 						["id"] = 164812,
 						["damage"] = 16038,
-						["totalhits"] = 5,
 						["max"] = 4717,
+						["school"] = 64,
 						["min"] = 1887,
 						["criticalmax"] = 4717,
-						["hitmax"] = 1887,
-						["hit"] = 2,
-						["school"] = 64,
 						["critical"] = 3,
+						["hit"] = 2,
+						["totalhits"] = 5,
+						["hitmax"] = 1887,
 						["criticalmin"] = 3773,
 						["hitamount"] = 3774,
 					},
@@ -4865,7 +4670,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 32762,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Goonkyng",
 				["healed"] = {
 					["Player-3661-08065C35"] = {
 						["role"] = "DAMAGER",
@@ -4875,16 +4680,7 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[8] = {
-						["spells"] = {
-							[93402] = 3,
-							[202770] = 27.5,
-							[194153] = 24,
-							[190984] = 8,
-						},
-						["amount"] = 62.5,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-61-09995023",
 				["healing"] = 5440,
@@ -4893,19 +4689,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Goonkyng",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [2]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 205600,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -4913,17 +4708,17 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Masterful Navigation"] = {
 						["uptime"] = 0,
-						["name"] = "Masterful Navigation",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Masterful Navigation",
 						["auratype"] = "BUFF",
 						["id"] = 268899,
 					},
 					["Lunar Empowerment"] = {
 						["uptime"] = 0,
-						["name"] = "Lunar Empowerment",
 						["active"] = 0,
 						["school"] = 64,
+						["name"] = "Lunar Empowerment",
 						["auratype"] = "BUFF",
 						["id"] = 164547,
 					},
@@ -4937,14 +4732,13 @@ SkadaPerCharDB = {
 					},
 					["Solar Empowerment"] = {
 						["uptime"] = 0,
-						["name"] = "Solar Empowerment",
 						["active"] = 0,
 						["school"] = 8,
+						["name"] = "Solar Empowerment",
 						["auratype"] = "BUFF",
 						["id"] = 164545,
 					},
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 					["Ysera's Gift"] = {
 						["shielding"] = 0,
@@ -4959,11 +4753,21 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 6039,
+				["power"] = {
+					[8] = {
+						["spells"] = {
+							[202770] = 30,
+							[194153] = 12,
+							[8921] = 0,
+						},
+						["amount"] = 42,
+					},
+				},
+				["maxhp"] = 205600,
 				["damage"] = 267373,
 				["damagespells"] = {
 					["Lunar Strike"] = {
@@ -4983,14 +4787,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 5078,
 						["id"] = 272873,
 						["damage"] = 12695,
-						["totalhits"] = 4,
 						["max"] = 5078,
+						["school"] = 64,
 						["min"] = 2539,
 						["criticalmax"] = 5078,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 64,
 						["hitmax"] = 2539,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 5078,
 						["hitamount"] = 7617,
 					},
@@ -4999,14 +4803,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 5435,
 						["id"] = 211545,
 						["damage"] = 26746,
-						["totalhits"] = 18,
 						["max"] = 2737,
+						["school"] = 72,
 						["min"] = 1271,
 						["criticalmax"] = 2737,
-						["critical"] = 2,
-						["hit"] = 16,
-						["school"] = 72,
 						["hitmax"] = 1408,
+						["hit"] = 16,
+						["totalhits"] = 18,
+						["critical"] = 2,
 						["criticalmin"] = 2698,
 						["hitamount"] = 21311,
 					},
@@ -5015,14 +4819,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 5208,
 						["id"] = 164812,
 						["damage"] = 15883,
-						["totalhits"] = 5,
 						["max"] = 5208,
+						["school"] = 64,
 						["min"] = 2489,
 						["criticalmax"] = 5208,
-						["critical"] = 1,
-						["hit"] = 4,
-						["school"] = 64,
 						["hitmax"] = 2939,
+						["hit"] = 4,
+						["totalhits"] = 5,
+						["critical"] = 1,
 						["criticalmin"] = 5208,
 						["hitamount"] = 10675,
 					},
@@ -5031,19 +4835,19 @@ SkadaPerCharDB = {
 						["criticalamount"] = 95953,
 						["id"] = 78674,
 						["damage"] = 197233,
-						["totalhits"] = 3,
 						["max"] = 95953,
+						["school"] = 72,
 						["min"] = 50343,
 						["criticalmax"] = 95953,
-						["critical"] = 1,
-						["hit"] = 2,
-						["school"] = 72,
 						["hitmax"] = 50937,
+						["hit"] = 2,
+						["totalhits"] = 3,
+						["critical"] = 1,
 						["criticalmin"] = 95953,
 						["hitamount"] = 101280,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Pownder",
 				["healed"] = {
 					["Player-3678-0B10A4C5"] = {
 						["role"] = "DAMAGER",
@@ -5060,15 +4864,7 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[8] = {
-						["spells"] = {
-							[202770] = 30,
-							[194153] = 12,
-							[8921] = 0,
-						},
-						["amount"] = 42,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-69-0BFEBF7D",
 				["healing"] = 6297,
@@ -5077,19 +4873,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Pownder",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [3]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 152660,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -5097,14 +4892,13 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Gemhide"] = {
 						["uptime"] = 0,
-						["name"] = "Gemhide",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Gemhide",
 						["auratype"] = "BUFF",
 						["id"] = 270576,
 					},
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 					["Ysera's Gift"] = {
 						["shielding"] = 0,
@@ -5119,11 +4913,13 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 5,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+				},
+				["maxhp"] = 152660,
 				["damage"] = 8062,
 				["damagespells"] = {
 					["Lunar Strike"] = {
@@ -5139,7 +4935,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 8062,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Tikimatorch",
 				["healed"] = {
 					["Player-69-05F14128"] = {
 						["role"] = "HEALER",
@@ -5149,32 +4945,6 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-				},
-				["id"] = "Player-69-05F14128",
-				["healing"] = 4580,
-				["role"] = "HEALER",
-				["damagetakenspells"] = {
-					["Gale Force"] = {
-						["crushing"] = 0,
-						["id"] = 274829,
-						["damage"] = 22468,
-						["max"] = 22468,
-						["name"] = "Gale Force",
-						["min"] = 22468,
-						["totalhits"] = 1,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 8,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 22468,
-				["name"] = "Tikimatorch",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["ts"] = 1555878901.657,
@@ -5186,22 +4956,47 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 4580,
-						["srcname"] = "Tikimatorch-Arthas",
 						["spellid"] = 145109,
+						["srcname"] = "Tikimatorch-Arthas",
 						["hp"] = 134772,
 						["ts"] = 1555878904.585,
 					}, -- [2]
 					["pos"] = 3,
 				},
-				["shielding"] = 0,
-				["alert"] = {
+				["id"] = "Player-69-05F14128",
+				["healing"] = 4580,
+				["role"] = "HEALER",
+				["damagetakenspells"] = {
+					["Gale Force"] = {
+						["crushing"] = 0,
+						["id"] = 274829,
+						["damage"] = 22468,
+						["max"] = 22468,
+						["name"] = "Gale Force",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 22468,
+						["absorbed"] = 0,
+					},
 				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 22468,
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [4]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 69480,
+				["class"] = "ROGUE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -5209,29 +5004,43 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Elaborate Planning"] = {
 						["uptime"] = 0,
-						["name"] = "Elaborate Planning",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Elaborate Planning",
 						["auratype"] = "BUFF",
 						["id"] = 193641,
 					},
 					["Self Reliance"] = {
 						["uptime"] = 0,
-						["name"] = "Self Reliance",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Self Reliance",
 						["auratype"] = "BUFF",
 						["id"] = 270661,
 					},
 				},
-				["class"] = "ROGUE",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[51637] = 72,
+						},
+						["amount"] = 72,
+					},
+					[4] = {
+						["spells"] = {
+							[1329] = 4,
+							[14189] = 0,
+						},
+						["amount"] = 4,
+					},
+				},
+				["maxhp"] = 69480,
 				["damage"] = 30562,
 				["damagespells"] = {
 					["Rupture"] = {
@@ -5263,14 +5072,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 1629,
 						["id"] = 5374,
 						["damage"] = 5578,
-						["totalhits"] = 4,
 						["max"] = 1629,
+						["school"] = 1,
 						["min"] = 815,
 						["criticalmax"] = 1629,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 1567,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 1629,
 						["hitamount"] = 3949,
 					},
@@ -5279,14 +5088,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 2715,
 						["id"] = 2818,
 						["damage"] = 6583,
-						["totalhits"] = 10,
 						["max"] = 1422,
+						["school"] = 8,
 						["min"] = 355,
 						["criticalmax"] = 1422,
-						["hitmax"] = 646,
-						["hit"] = 8,
-						["school"] = 8,
 						["critical"] = 2,
+						["hit"] = 8,
+						["totalhits"] = 10,
+						["hitmax"] = 646,
 						["criticalmin"] = 1293,
 						["hitamount"] = 3868,
 					},
@@ -5312,31 +5121,18 @@ SkadaPerCharDB = {
 						["school"] = 1,
 						["min"] = 548,
 						["criticalmax"] = 2077,
-						["critical"] = 1,
+						["hitmax"] = 1179,
 						["hit"] = 5,
 						["totalhits"] = 8,
-						["hitmax"] = 1179,
+						["critical"] = 1,
 						["MISS"] = 2,
 						["hitamount"] = 4438,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Hulin",
 				["healed"] = {
 				},
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[51637] = 72,
-						},
-						["amount"] = 72,
-					},
-					[4] = {
-						["spells"] = {
-							[1329] = 4,
-							[14189] = 0,
-						},
-						["amount"] = 4,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-1428-05950FDE",
 				["healing"] = 0,
@@ -5345,19 +5141,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Hulin",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [5]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 176820,
+				["class"] = "PRIEST",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -5365,9 +5160,9 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Weal"] = {
 						["uptime"] = 0,
-						["name"] = "Weal",
 						["active"] = 0,
 						["school"] = 2,
+						["name"] = "Weal",
 						["auratype"] = "BUFF",
 						["id"] = 273310,
 					},
@@ -5380,7 +5175,6 @@ SkadaPerCharDB = {
 						["id"] = 208772,
 					},
 				},
-				["class"] = "PRIEST",
 				["healingspells"] = {
 					["Smite"] = {
 						["shielding"] = 13397,
@@ -5419,11 +5213,19 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 28562,
+				["power"] = {
+					[0] = {
+						["spells"] = {
+							[129253] = 244,
+						},
+						["amount"] = 244,
+					},
+				},
+				["maxhp"] = 176820,
 				["damage"] = 56371,
 				["damagespells"] = {
 					["Rezan's Fury"] = {
@@ -5431,14 +5233,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 2798,
 						["id"] = 273794,
 						["damage"] = 9515,
-						["totalhits"] = 5,
 						["max"] = 2798,
+						["school"] = 1,
 						["min"] = 1399,
 						["criticalmax"] = 2798,
-						["critical"] = 1,
-						["hit"] = 4,
-						["school"] = 1,
 						["hitmax"] = 1960,
+						["hit"] = 4,
+						["totalhits"] = 5,
+						["critical"] = 1,
 						["criticalmin"] = 2798,
 						["hitamount"] = 6717,
 					},
@@ -5447,14 +5249,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 9522,
 						["id"] = 47666,
 						["damage"] = 19217,
-						["totalhits"] = 3,
 						["max"] = 9522,
+						["school"] = 2,
 						["min"] = 4847,
 						["criticalmax"] = 9522,
-						["hitmax"] = 4848,
-						["hit"] = 2,
-						["school"] = 2,
 						["critical"] = 1,
+						["hit"] = 2,
+						["totalhits"] = 3,
+						["hitmax"] = 4848,
 						["criticalmin"] = 9522,
 						["hitamount"] = 9695,
 					},
@@ -5507,7 +5309,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 7371,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Priestalari",
 				["healed"] = {
 					["Player-127-08316054"] = {
 						["role"] = "DAMAGER",
@@ -5531,13 +5333,16 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[0] = {
-						["spells"] = {
-							[129253] = 244,
-						},
-						["amount"] = 244,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 127802,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 176820,
+						["ts"] = 1555878906.177,
+					}, -- [1]
+					["pos"] = 2,
 				},
 				["id"] = "Player-1427-0A37EF50",
 				["healing"] = 18634,
@@ -5546,28 +5351,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Priestalari",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 127802,
-						["hp"] = 176820,
-						["ts"] = 1555878906.177,
-					}, -- [1]
-					["pos"] = 2,
-				},
-				["shielding"] = 13397,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 13397,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [6]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 174080,
+				["class"] = "DEMONHUNTER",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -5575,46 +5370,45 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Elemental Whirl"] = {
 						["uptime"] = 0,
-						["name"] = "Elemental Whirl",
 						["active"] = 0,
 						["school"] = 16,
+						["name"] = "Elemental Whirl",
 						["auratype"] = "BUFF",
 						["id"] = 268955,
 					},
 					["Seething Power"] = {
 						["uptime"] = 0,
-						["name"] = "Seething Power",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Seething Power",
 						["auratype"] = "BUFF",
 						["id"] = 275936,
 					},
 					["Resounding Protection"] = {
 						["uptime"] = 0,
-						["name"] = "Resounding Protection",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Resounding Protection",
 						["auratype"] = "BUFF",
 						["id"] = 269279,
 					},
 					["Razorleaf Tempest"] = {
 						["uptime"] = 0,
-						["name"] = "Razorleaf Tempest",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Razorleaf Tempest",
 						["auratype"] = "BUFF",
 						["id"] = 278249,
 					},
 					["Immolation Aura"] = {
 						["uptime"] = 0,
-						["name"] = "Immolation Aura",
 						["active"] = 0,
 						["school"] = 4,
+						["name"] = "Immolation Aura",
 						["auratype"] = "BUFF",
 						["id"] = 258920,
 					},
 				},
-				["class"] = "DEMONHUNTER",
 				["healingspells"] = {
 					["Thrive in Chaos"] = {
 						["shielding"] = 0,
@@ -5629,11 +5423,22 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 9,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 2520,
+				["power"] = {
+					[17] = {
+						["spells"] = {
+							[193840] = 20,
+							[162243] = 45,
+							[258920] = 10,
+							[258922] = 14,
+						},
+						["amount"] = 89,
+					},
+				},
+				["maxhp"] = 174080,
 				["damage"] = 58447,
 				["damagespells"] = {
 					["Trail of Ruin"] = {
@@ -5658,10 +5463,10 @@ SkadaPerCharDB = {
 						["school"] = 1,
 						["min"] = 1230,
 						["criticalmax"] = 2748,
-						["hitmax"] = 2425,
+						["critical"] = 1,
 						["hit"] = 3,
 						["totalhits"] = 6,
-						["critical"] = 1,
+						["hitmax"] = 2425,
 						["MISS"] = 2,
 						["hitamount"] = 5999,
 					},
@@ -5678,11 +5483,11 @@ SkadaPerCharDB = {
 						["hitamount"] = 2241,
 					},
 					["Master of the Glaive"] = {
-						["max"] = 0,
-						["school"] = 1,
-						["id"] = 213405,
-						["IMMUNE"] = 1,
 						["totalhits"] = 1,
+						["id"] = 213405,
+						["school"] = 1,
+						["IMMUNE"] = 1,
+						["max"] = 0,
 						["damage"] = 0,
 					},
 					["Demon's Bite"] = {
@@ -5714,14 +5519,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 8406,
 						["id"] = 222031,
 						["damage"] = 19862,
-						["totalhits"] = 4,
 						["max"] = 8406,
+						["school"] = 127,
 						["min"] = 3526,
 						["criticalmax"] = 8406,
-						["hitmax"] = 4315,
-						["hit"] = 3,
-						["school"] = 127,
 						["critical"] = 1,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["hitmax"] = 4315,
 						["criticalmin"] = 8406,
 						["hitamount"] = 11456,
 					},
@@ -5730,19 +5535,19 @@ SkadaPerCharDB = {
 						["criticalamount"] = 4385,
 						["id"] = 258921,
 						["damage"] = 6613,
-						["totalhits"] = 2,
 						["max"] = 4385,
+						["school"] = 4,
 						["min"] = 2228,
 						["criticalmax"] = 4385,
-						["hitmax"] = 2228,
-						["hit"] = 1,
-						["school"] = 4,
 						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["hitmax"] = 2228,
 						["criticalmin"] = 4385,
 						["hitamount"] = 2228,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Millertiem",
 				["healed"] = {
 					["Player-3678-0AEFFB0E"] = {
 						["role"] = "DAMAGER",
@@ -5752,16 +5557,24 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[17] = {
-						["spells"] = {
-							[193840] = 20,
-							[162243] = 45,
-							[258920] = 10,
-							[258922] = 14,
-						},
-						["amount"] = 89,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 288999,
+						["srcname"] = "Millertiem-Thrall",
+						["hp"] = 174080,
+						["ts"] = 1555878904.497,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 288999,
+						["srcname"] = "Millertiem-Thrall",
+						["hp"] = 174080,
+						["ts"] = 1555878905.638,
+					}, -- [2]
+					["pos"] = 3,
 				},
 				["id"] = "Player-3678-0AEFFB0E",
 				["healing"] = 0,
@@ -5770,36 +5583,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Millertiem",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Millertiem-Thrall",
-						["spellid"] = 288999,
-						["hp"] = 174080,
-						["ts"] = 1555878904.497,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Millertiem-Thrall",
-						["spellid"] = 288999,
-						["hp"] = 174080,
-						["ts"] = 1555878905.638,
-					}, -- [2]
-					["pos"] = 3,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [7]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 195980,
+				["class"] = "DEMONHUNTER",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -5807,25 +5602,25 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Metamorphosis"] = {
 						["uptime"] = 0,
-						["name"] = "Metamorphosis",
 						["active"] = 0,
 						["school"] = 127,
+						["name"] = "Metamorphosis",
 						["auratype"] = "BUFF",
 						["id"] = 162264,
 					},
 					["Vampiric Speed"] = {
 						["uptime"] = 0,
-						["name"] = "Vampiric Speed",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Vampiric Speed",
 						["auratype"] = "BUFF",
 						["id"] = 269239,
 					},
 					["Versatile Navigation"] = {
 						["uptime"] = 0,
-						["name"] = "Versatile Navigation",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Versatile Navigation",
 						["auratype"] = "BUFF",
 						["id"] = 268856,
 					},
@@ -5839,17 +5634,17 @@ SkadaPerCharDB = {
 					},
 					["Immolation Aura"] = {
 						["uptime"] = 3,
-						["name"] = "Immolation Aura",
 						["active"] = 0,
 						["school"] = 4,
+						["name"] = "Immolation Aura",
 						["auratype"] = "BUFF",
 						["id"] = 258920,
 					},
 					["Furious Gaze"] = {
 						["uptime"] = 0,
-						["name"] = "Furious Gaze",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Furious Gaze",
 						["auratype"] = "BUFF",
 						["id"] = 273232,
 					},
@@ -5862,7 +5657,6 @@ SkadaPerCharDB = {
 						["id"] = 198013,
 					},
 				},
-				["class"] = "DEMONHUNTER",
 				["healingspells"] = {
 					["Vampiric Speed"] = {
 						["shielding"] = 0,
@@ -5889,11 +5683,20 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 9,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 40675,
+				["power"] = {
+					[17] = {
+						["spells"] = {
+							[258920] = 10,
+							[258922] = 44,
+						},
+						["amount"] = 54,
+					},
+				},
+				["maxhp"] = 195980,
 				["damage"] = 116944,
 				["damagespells"] = {
 					["Immolation Aura"] = {
@@ -5901,14 +5704,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 6439,
 						["id"] = 258922,
 						["damage"] = 16078,
-						["totalhits"] = 12,
 						["max"] = 2246,
+						["school"] = 4,
 						["min"] = 1039,
 						["criticalmax"] = 2246,
-						["critical"] = 3,
-						["hit"] = 9,
-						["school"] = 4,
 						["hitmax"] = 1095,
+						["hit"] = 9,
+						["totalhits"] = 12,
+						["critical"] = 3,
 						["criticalmin"] = 2079,
 						["hitamount"] = 9639,
 					},
@@ -5982,7 +5785,7 @@ SkadaPerCharDB = {
 						["damage"] = 64173,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Krieton",
 				["healed"] = {
 					["Player-3676-0A38688B"] = {
 						["role"] = "DAMAGER",
@@ -5992,14 +5795,72 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[17] = {
-						["spells"] = {
-							[258920] = 10,
-							[258922] = 44,
-						},
-						["amount"] = 54,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 273,
+						["spellid"] = 143924,
+						["srcname"] = "Krieton-Area52",
+						["hp"] = 184142,
+						["ts"] = 1555878901.099,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 181,
+						["spellid"] = 143924,
+						["srcname"] = "Krieton-Area52",
+						["hp"] = 184323,
+						["ts"] = 1555878902.743,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 2544,
+						["spellid"] = 145110,
+						["srcname"] = "Zulema-CenarionCircle",
+						["hp"] = 186867,
+						["ts"] = 1555878903.738,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 662,
+						["spellid"] = 143924,
+						["srcname"] = "Krieton-Area52",
+						["hp"] = 187529,
+						["ts"] = 1555878903.85,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 256,
+						["spellid"] = 143924,
+						["srcname"] = "Krieton-Area52",
+						["hp"] = 187785,
+						["ts"] = 1555878905.087,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 8195,
+						["spellid"] = 143924,
+						["srcname"] = "Krieton-Area52",
+						["hp"] = 195980,
+						["ts"] = 1555878906.411,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 269238,
+						["srcname"] = "Krieton-Area52",
+						["hp"] = 195980,
+						["ts"] = 1555878907.846,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 269238,
+						["srcname"] = "Krieton-Area52",
+						["hp"] = 195980,
+						["ts"] = 1555878908.417,
+					}, -- [8]
+					["pos"] = 9,
 				},
 				["id"] = "Player-3676-0A38688B",
 				["healing"] = 9567,
@@ -6008,84 +5869,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Krieton",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 273,
-						["srcname"] = "Krieton-Area52",
-						["spellid"] = 143924,
-						["hp"] = 184142,
-						["ts"] = 1555878901.099,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 181,
-						["srcname"] = "Krieton-Area52",
-						["spellid"] = 143924,
-						["hp"] = 184323,
-						["ts"] = 1555878902.743,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 2544,
-						["srcname"] = "Zulema-CenarionCircle",
-						["spellid"] = 145110,
-						["hp"] = 186867,
-						["ts"] = 1555878903.738,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 662,
-						["srcname"] = "Krieton-Area52",
-						["spellid"] = 143924,
-						["hp"] = 187529,
-						["ts"] = 1555878903.85,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 256,
-						["srcname"] = "Krieton-Area52",
-						["spellid"] = 143924,
-						["hp"] = 187785,
-						["ts"] = 1555878905.087,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 8195,
-						["srcname"] = "Krieton-Area52",
-						["spellid"] = 143924,
-						["hp"] = 195980,
-						["ts"] = 1555878906.411,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Krieton-Area52",
-						["spellid"] = 269238,
-						["hp"] = 195980,
-						["ts"] = 1555878907.846,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Krieton-Area52",
-						["spellid"] = 269238,
-						["hp"] = 195980,
-						["ts"] = 1555878908.417,
-					}, -- [8]
-					["pos"] = 9,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [8]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 187360,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -6093,21 +5888,29 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Unstable Flames"] = {
 						["uptime"] = 0,
-						["name"] = "Unstable Flames",
 						["active"] = 0,
 						["school"] = 4,
+						["name"] = "Unstable Flames",
 						["auratype"] = "BUFF",
 						["id"] = 279902,
 					},
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 7,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+					[8] = {
+						["spells"] = {
+							[190984] = 16,
+							[93402] = 3,
+						},
+						["amount"] = 19,
+					},
+				},
+				["maxhp"] = 187360,
 				["damage"] = 24544,
 				["damagespells"] = {
 					["Sunfire"] = {
@@ -6115,14 +5918,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 9384,
 						["id"] = 164815,
 						["damage"] = 14335,
-						["totalhits"] = 6,
 						["max"] = 3128,
+						["school"] = 8,
 						["min"] = 1564,
 						["criticalmax"] = 3128,
-						["critical"] = 3,
-						["hit"] = 3,
-						["school"] = 8,
 						["hitmax"] = 1823,
+						["hit"] = 3,
+						["totalhits"] = 6,
+						["critical"] = 3,
 						["criticalmin"] = 3128,
 						["hitamount"] = 4951,
 					},
@@ -6151,17 +5954,10 @@ SkadaPerCharDB = {
 						["hitamount"] = 6408,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Benqzhor",
 				["healed"] = {
 				},
-				["power"] = {
-					[8] = {
-						["spells"] = {
-							[190984] = 16,
-							[93402] = 3,
-						},
-						["amount"] = 19,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-1428-093B3AC9",
 				["healing"] = 0,
@@ -6170,19 +5966,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Benqzhor",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [9]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 96180,
+				["class"] = "ROGUE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -6190,30 +5985,29 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Master's Sight"] = {
 						["uptime"] = 0,
-						["name"] = "Master's Sight",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Master's Sight",
 						["auratype"] = "BUFF",
 						["id"] = 268602,
 					},
 					["Envenom"] = {
 						["uptime"] = 0,
-						["name"] = "Envenom",
 						["active"] = 0,
 						["school"] = 8,
+						["name"] = "Envenom",
 						["auratype"] = "BUFF",
 						["id"] = 32645,
 					},
 					["Vampiric Speed"] = {
 						["uptime"] = 0,
-						["name"] = "Vampiric Speed",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Vampiric Speed",
 						["auratype"] = "BUFF",
 						["id"] = 269239,
 					},
 				},
-				["class"] = "ROGUE",
 				["healingspells"] = {
 					["Vampiric Speed"] = {
 						["shielding"] = 0,
@@ -6240,11 +6034,19 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 7,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 4027,
+				["power"] = {
+					[3] = {
+						["spells"] = {
+							[51637] = 42,
+						},
+						["amount"] = 42,
+					},
+				},
+				["maxhp"] = 96180,
 				["damage"] = 22878,
 				["damagespells"] = {
 					["Rupture"] = {
@@ -6252,14 +6054,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 2232,
 						["id"] = 1943,
 						["damage"] = 5675,
-						["totalhits"] = 4,
 						["max"] = 2232,
+						["school"] = 1,
 						["min"] = 1116,
 						["criticalmax"] = 2232,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 1211,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 2232,
 						["hitamount"] = 3443,
 					},
@@ -6313,7 +6115,7 @@ SkadaPerCharDB = {
 						["hitamount"] = 2297,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Wasteddays",
 				["healed"] = {
 					["Player-127-08316054"] = {
 						["role"] = "DAMAGER",
@@ -6323,13 +6125,120 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[3] = {
-						["spells"] = {
-							[51637] = 42,
-						},
-						["amount"] = 42,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 857,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 91310,
+						["ts"] = 1555878900.866,
+					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 380,
+						["spellid"] = 143924,
+						["srcname"] = "Wasteddays-Firetree",
+						["hp"] = 91800,
+						["ts"] = 1555878901.099,
+					}, -- [2]
+					{
+						["absorb"] = 0,
+						["amount"] = 4380,
+						["spellid"] = 94472,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878901.099,
+					}, -- [3]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878901.657,
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878902.412,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878902.412,
+					}, -- [6]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878903.738,
+					}, -- [7]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878903.85,
+					}, -- [8]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878904.961,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878905.304,
+					}, -- [10]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878906.177,
+					}, -- [11]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878906.177,
+					}, -- [12]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 81751,
+						["srcname"] = "Priestalari-Ragnaros",
+						["hp"] = 96180,
+						["ts"] = 1555878907.401,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 269238,
+						["srcname"] = "Wasteddays-Firetree",
+						["hp"] = 96180,
+						["ts"] = 1555878907.846,
+					}, -- [14]
+					["pos"] = 15,
 				},
 				["id"] = "Player-127-08316054",
 				["healing"] = 380,
@@ -6338,132 +6247,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Wasteddays",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 857,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 91310,
-						["ts"] = 1555878900.866,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 380,
-						["srcname"] = "Wasteddays-Firetree",
-						["spellid"] = 143924,
-						["hp"] = 91800,
-						["ts"] = 1555878901.099,
-					}, -- [2]
-					{
-						["absorb"] = 0,
-						["amount"] = 4380,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 94472,
-						["hp"] = 96180,
-						["ts"] = 1555878901.099,
-					}, -- [3]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878901.657,
-					}, -- [4]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878902.412,
-					}, -- [5]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878902.412,
-					}, -- [6]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878903.738,
-					}, -- [7]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878903.85,
-					}, -- [8]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878904.961,
-					}, -- [9]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878905.304,
-					}, -- [10]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878906.177,
-					}, -- [11]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878906.177,
-					}, -- [12]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Priestalari-Ragnaros",
-						["spellid"] = 81751,
-						["hp"] = 96180,
-						["ts"] = 1555878907.401,
-					}, -- [13]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Wasteddays-Firetree",
-						["spellid"] = 269238,
-						["hp"] = 96180,
-						["ts"] = 1555878907.846,
-					}, -- [14]
-					["pos"] = 15,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [10]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 198400,
+				["class"] = "WARRIOR",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -6471,17 +6266,17 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Enrage"] = {
 						["uptime"] = 4,
-						["name"] = "Enrage",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Enrage",
 						["auratype"] = "BUFF",
 						["id"] = 184362,
 					},
 					["Infinite Fury"] = {
 						["uptime"] = 0,
-						["name"] = "Infinite Fury",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Infinite Fury",
 						["auratype"] = "BUFF",
 						["id"] = 278134,
 					},
@@ -6494,14 +6289,25 @@ SkadaPerCharDB = {
 						["id"] = 275672,
 					},
 				},
-				["class"] = "WARRIOR",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+					{
+						["spells"] = {
+							[5308] = 20,
+							[85288] = 29.3000001907349,
+							[100] = 6.09999990463257,
+							[278841] = 5,
+							[280283] = 12,
+						},
+						["amount"] = 72.4000000953674,
+					}, -- [1]
+				},
+				["maxhp"] = 198400,
 				["damage"] = 146247,
 				["damagespells"] = {
 					["Charge"] = {
@@ -6547,14 +6353,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 27068,
 						["id"] = 96103,
 						["damage"] = 33832,
-						["totalhits"] = 6,
 						["max"] = 9908,
+						["school"] = 1,
 						["min"] = 2456,
 						["criticalmax"] = 9908,
-						["hitmax"] = 4308,
-						["hit"] = 2,
-						["school"] = 1,
 						["critical"] = 4,
+						["hit"] = 2,
+						["totalhits"] = 6,
+						["hitmax"] = 4308,
 						["criticalmin"] = 4272,
 						["hitamount"] = 6764,
 					},
@@ -6563,14 +6369,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 51585,
 						["id"] = 184707,
 						["damage"] = 57505,
-						["totalhits"] = 5,
 						["max"] = 14986,
+						["school"] = 1,
 						["min"] = 5920,
 						["criticalmax"] = 14986,
-						["hitmax"] = 5920,
-						["hit"] = 1,
-						["school"] = 1,
 						["critical"] = 4,
+						["hit"] = 1,
+						["totalhits"] = 5,
+						["hitmax"] = 5920,
 						["criticalmin"] = 10817,
 						["hitamount"] = 5920,
 					},
@@ -6587,20 +6393,10 @@ SkadaPerCharDB = {
 						["hitamount"] = 6632,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Onewngdangel",
 				["healed"] = {
 				},
-				["power"] = {
-					{
-						["spells"] = {
-							[5308] = 20,
-							[85288] = 29.3000001907349,
-							[100] = 6.09999990463257,
-							[278841] = 5,
-							[280283] = 12,
-						},
-						["amount"] = 72.4000000953674,
-					}, -- [1]
+				["deathlog"] = {
 				},
 				["id"] = "Player-162-09AC52A4",
 				["healing"] = 0,
@@ -6609,19 +6405,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Onewngdangel",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [11]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 197620,
+				["class"] = "DEMONHUNTER",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -6637,25 +6432,25 @@ SkadaPerCharDB = {
 					},
 					["Furious Gaze"] = {
 						["uptime"] = 0,
-						["name"] = "Furious Gaze",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Furious Gaze",
 						["auratype"] = "BUFF",
 						["id"] = 273232,
 					},
 					["Seething Power"] = {
 						["uptime"] = 0,
-						["name"] = "Seething Power",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Seething Power",
 						["auratype"] = "BUFF",
 						["id"] = 275936,
 					},
 					["Self Reliance"] = {
 						["uptime"] = 0,
-						["name"] = "Self Reliance",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Self Reliance",
 						["auratype"] = "BUFF",
 						["id"] = 270661,
 					},
@@ -6692,7 +6487,6 @@ SkadaPerCharDB = {
 						["id"] = 198013,
 					},
 				},
-				["class"] = "DEMONHUNTER",
 				["healingspells"] = {
 					["Thrive in Chaos"] = {
 						["shielding"] = 0,
@@ -6731,11 +6525,20 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 21020,
+				["power"] = {
+					[17] = {
+						["spells"] = {
+							[258922] = 44,
+							[162243] = 27,
+						},
+						["amount"] = 71,
+					},
+				},
+				["maxhp"] = 197620,
 				["damage"] = 181032,
 				["damagespells"] = {
 					["Trail of Ruin"] = {
@@ -6743,14 +6546,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 4025,
 						["id"] = 258883,
 						["damage"] = 18432,
-						["totalhits"] = 8,
 						["max"] = 4025,
+						["school"] = 124,
 						["min"] = 2011,
 						["criticalmax"] = 4025,
-						["critical"] = 1,
-						["hit"] = 7,
-						["school"] = 124,
 						["hitmax"] = 2093,
+						["hit"] = 7,
+						["totalhits"] = 8,
+						["critical"] = 1,
 						["criticalmin"] = 4025,
 						["hitamount"] = 14407,
 					},
@@ -6759,14 +6562,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 11096,
 						["id"] = 210153,
 						["damage"] = 53802,
-						["totalhits"] = 14,
 						["max"] = 10717,
+						["school"] = 1,
 						["min"] = 1550,
 						["criticalmax"] = 7962,
-						["critical"] = 2,
-						["hit"] = 12,
-						["school"] = 1,
 						["hitmax"] = 10717,
+						["hit"] = 12,
+						["totalhits"] = 14,
+						["critical"] = 2,
 						["criticalmin"] = 3134,
 						["hitamount"] = 42706,
 					},
@@ -6811,14 +6614,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 6508,
 						["id"] = 258922,
 						["damage"] = 18262,
-						["totalhits"] = 14,
 						["max"] = 2198,
+						["school"] = 4,
 						["min"] = 994,
 						["criticalmax"] = 2198,
-						["critical"] = 3,
-						["hit"] = 11,
-						["school"] = 4,
 						["hitmax"] = 1099,
+						["hit"] = 11,
+						["totalhits"] = 14,
+						["critical"] = 3,
 						["criticalmin"] = 2112,
 						["hitamount"] = 11754,
 					},
@@ -6839,14 +6642,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 3218,
 						["id"] = 6603,
 						["damage"] = 11392,
-						["totalhits"] = 4,
 						["max"] = 3302,
+						["school"] = 1,
 						["min"] = 1579,
 						["criticalmax"] = 3218,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 3302,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 3218,
 						["hitamount"] = 8174,
 					},
@@ -6863,7 +6666,7 @@ SkadaPerCharDB = {
 						["damage"] = 50458,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Lackingminds",
 				["healed"] = {
 					["Player-3678-0AEB9D9C"] = {
 						["role"] = "DAMAGER",
@@ -6873,53 +6676,20 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[17] = {
-						["spells"] = {
-							[258922] = 44,
-							[162243] = 27,
-						},
-						["amount"] = 71,
-					},
-				},
-				["id"] = "Player-3678-0AEB9D9C",
-				["healing"] = 5855,
-				["role"] = "DAMAGER",
-				["damagetakenspells"] = {
-					["Attack"] = {
-						["crushing"] = 0,
-						["id"] = 6603,
-						["damage"] = 9676,
-						["max"] = 4046,
-						["name"] = "Attack",
-						["min"] = 2754,
-						["totalhits"] = 3,
-						["critical"] = 1,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-				},
-				["ffdamagedone"] = 0,
-				["damagetaken"] = 9676,
-				["name"] = "Lackingminds",
-				["alertCount"] = 0,
 				["deathlog"] = {
 					{
 						["absorb"] = 0,
 						["amount"] = 0,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 288999,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 197620,
 						["ts"] = 1555878900.753,
 					}, -- [1]
 					{
 						["absorb"] = 0,
 						["amount"] = 0,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 288999,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 197620,
 						["ts"] = 1555878901.657,
 					}, -- [2]
@@ -6933,8 +6703,8 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 2876,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 143924,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 197620,
 						["ts"] = 1555878902.263,
 					}, -- [4]
@@ -6948,16 +6718,16 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 750,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 288999,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 195616,
 						["ts"] = 1555878904.155,
 					}, -- [6]
 					{
 						["absorb"] = 0,
 						["amount"] = 1750,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 143924,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 197366,
 						["ts"] = 1555878904.861,
 					}, -- [7]
@@ -6971,46 +6741,71 @@ SkadaPerCharDB = {
 					{
 						["absorb"] = 0,
 						["amount"] = 254,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 143924,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 197620,
 						["ts"] = 1555878906.177,
 					}, -- [9]
 					{
 						["absorb"] = 0,
 						["amount"] = 225,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 288999,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 193799,
 						["ts"] = 1555878906.644,
 					}, -- [10]
 					{
 						["absorb"] = 0,
 						["amount"] = 3821,
-						["srcname"] = "Pownder-Arthas",
 						["spellid"] = 145110,
+						["srcname"] = "Pownder-Arthas",
 						["hp"] = 197620,
 						["ts"] = 1555878906.986,
 					}, -- [11]
 					{
 						["absorb"] = 0,
 						["amount"] = 0,
-						["srcname"] = "Lackingminds-Thrall",
 						["spellid"] = 287674,
+						["srcname"] = "Lackingminds-Thrall",
 						["hp"] = 197620,
 						["ts"] = 1555878908.762,
 					}, -- [12]
 					["pos"] = 13,
 				},
-				["shielding"] = 0,
-				["alert"] = {
+				["id"] = "Player-3678-0AEB9D9C",
+				["healing"] = 5855,
+				["role"] = "DAMAGER",
+				["damagetakenspells"] = {
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 9676,
+						["max"] = 4046,
+						["name"] = "Attack",
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["critical"] = 1,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 2754,
+						["absorbed"] = 0,
+					},
 				},
+				["ffdamagedone"] = 0,
+				["damagetaken"] = 9676,
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [12]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 199020,
+				["class"] = "WARRIOR",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -7033,7 +6828,6 @@ SkadaPerCharDB = {
 						["id"] = 280776,
 					},
 				},
-				["class"] = "WARRIOR",
 				["healingspells"] = {
 					["Gushing Wound"] = {
 						["shielding"] = 0,
@@ -7048,11 +6842,24 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 7,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 5909,
+				["power"] = {
+					{
+						["spells"] = {
+							[5308] = 20,
+							[85288] = 12,
+							[100] = 0,
+							[278841] = 4,
+							[280283] = 6,
+							[23881] = 8,
+						},
+						["amount"] = 50,
+					}, -- [1]
+				},
+				["maxhp"] = 199020,
 				["damage"] = 130792,
 				["damagespells"] = {
 					["Reckless Flurry"] = {
@@ -7060,15 +6867,15 @@ SkadaPerCharDB = {
 						["hitmin"] = 1002,
 						["criticalmin"] = 2671,
 						["id"] = 283810,
-						["totalhits"] = 8,
 						["max"] = 2671,
-						["hitmax"] = 1536,
-						["min"] = 1002,
-						["criticalmax"] = 2671,
 						["critical"] = 2,
+						["totalhits"] = 8,
+						["min"] = 1002,
+						["PARRY"] = 1,
+						["hitmax"] = 1536,
 						["hit"] = 5,
 						["school"] = 1,
-						["PARRY"] = 1,
+						["criticalmax"] = 2671,
 						["criticalamount"] = 5342,
 						["hitamount"] = 6613,
 					},
@@ -7077,14 +6884,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 3547,
 						["id"] = 288091,
 						["damage"] = 5909,
-						["totalhits"] = 2,
 						["max"] = 3547,
+						["school"] = 1,
 						["min"] = 2362,
 						["criticalmax"] = 3547,
-						["hitmax"] = 2362,
-						["hit"] = 1,
-						["school"] = 1,
 						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["hitmax"] = 2362,
 						["criticalmin"] = 3547,
 						["hitamount"] = 2362,
 					},
@@ -7093,14 +6900,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 12999,
 						["id"] = 184707,
 						["damage"] = 31209,
-						["totalhits"] = 4,
 						["max"] = 12999,
+						["school"] = 1,
 						["min"] = 5124,
 						["criticalmax"] = 12999,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 7236,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 12999,
 						["hitamount"] = 18210,
 					},
@@ -7145,14 +6952,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 6560,
 						["id"] = 96103,
 						["damage"] = 14723,
-						["totalhits"] = 4,
 						["max"] = 6560,
+						["school"] = 1,
 						["min"] = 1627,
 						["criticalmax"] = 6560,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 4369,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 6560,
 						["hitamount"] = 8163,
 					},
@@ -7174,19 +6981,19 @@ SkadaPerCharDB = {
 						["criticalamount"] = 10743,
 						["id"] = 6603,
 						["damage"] = 28847,
-						["totalhits"] = 8,
 						["max"] = 4546,
+						["school"] = 1,
 						["min"] = 2304,
 						["criticalmax"] = 4390,
-						["critical"] = 3,
-						["hit"] = 5,
-						["school"] = 1,
 						["hitmax"] = 4546,
+						["hit"] = 5,
+						["totalhits"] = 8,
+						["critical"] = 3,
 						["criticalmin"] = 2679,
 						["hitamount"] = 18104,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Bobö",
 				["healed"] = {
 					["Player-3678-0A6327EC"] = {
 						["role"] = "DAMAGER",
@@ -7196,18 +7003,24 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
+				["deathlog"] = {
 					{
-						["spells"] = {
-							[5308] = 20,
-							[85288] = 12,
-							[100] = 0,
-							[278841] = 4,
-							[280283] = 6,
-							[23881] = 8,
-						},
-						["amount"] = 50,
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 288091,
+						["srcname"] = "Bobö-Thrall",
+						["hp"] = 199020,
+						["ts"] = 1555878900.866,
 					}, -- [1]
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 288091,
+						["srcname"] = "Bobö-Thrall",
+						["hp"] = 199020,
+						["ts"] = 1555878902.743,
+					}, -- [2]
+					["pos"] = 3,
 				},
 				["id"] = "Player-3678-0A6327EC",
 				["healing"] = 0,
@@ -7216,36 +7029,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Bobö",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Bobö-Thrall",
-						["spellid"] = 288091,
-						["hp"] = 199020,
-						["ts"] = 1555878900.866,
-					}, -- [1]
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Bobö-Thrall",
-						["spellid"] = 288091,
-						["hp"] = 199020,
-						["ts"] = 1555878902.743,
-					}, -- [2]
-					["pos"] = 3,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [13]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 166600,
+				["class"] = "ROGUE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -7261,17 +7056,17 @@ SkadaPerCharDB = {
 					},
 					["Blade Rush"] = {
 						["uptime"] = 0,
-						["name"] = "Blade Rush",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Blade Rush",
 						["auratype"] = "BUFF",
 						["id"] = 271896,
 					},
 					["Vampiric Speed"] = {
 						["uptime"] = 0,
-						["name"] = "Vampiric Speed",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Vampiric Speed",
 						["auratype"] = "BUFF",
 						["id"] = 269239,
 					},
@@ -7284,7 +7079,6 @@ SkadaPerCharDB = {
 						["id"] = 185763,
 					},
 				},
-				["class"] = "ROGUE",
 				["healingspells"] = {
 					["Vampiric Speed"] = {
 						["shielding"] = 0,
@@ -7299,11 +7093,27 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 8,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 5993,
+				["power"] = {
+					[4] = {
+						["spells"] = {
+							[193315] = 1,
+							[185763] = 6,
+							[139546] = 1,
+						},
+						["amount"] = 8,
+					},
+					[3] = {
+						["spells"] = {
+							[35546] = 30,
+						},
+						["amount"] = 30,
+					},
+				},
+				["maxhp"] = 166600,
 				["damage"] = 77352,
 				["damagespells"] = {
 					["Main Gauche"] = {
@@ -7311,14 +7121,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 5796,
 						["id"] = 86392,
 						["damage"] = 8694,
-						["totalhits"] = 2,
 						["max"] = 5796,
+						["school"] = 1,
 						["min"] = 2898,
 						["criticalmax"] = 5796,
-						["hitmax"] = 2898,
-						["hit"] = 1,
-						["school"] = 1,
 						["critical"] = 1,
+						["hit"] = 1,
+						["totalhits"] = 2,
+						["hitmax"] = 2898,
 						["criticalmin"] = 5796,
 						["hitamount"] = 2898,
 					},
@@ -7327,14 +7137,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 4072,
 						["id"] = 185763,
 						["damage"] = 29086,
-						["totalhits"] = 4,
 						["max"] = 17889,
+						["school"] = 1,
 						["min"] = 2036,
 						["criticalmax"] = 4072,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 17889,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 4072,
 						["hitamount"] = 25014,
 					},
@@ -7367,14 +7177,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 10658,
 						["id"] = 193315,
 						["damage"] = 13322,
-						["totalhits"] = 3,
 						["max"] = 5329,
+						["school"] = 1,
 						["min"] = 2664,
 						["criticalmax"] = 5329,
-						["hitmax"] = 2664,
-						["hit"] = 1,
-						["school"] = 1,
 						["critical"] = 2,
+						["hit"] = 1,
+						["totalhits"] = 3,
+						["hitmax"] = 2664,
 						["criticalmin"] = 5329,
 						["hitamount"] = 2664,
 					},
@@ -7388,15 +7198,15 @@ SkadaPerCharDB = {
 						["totalhits"] = 8,
 						["min"] = 1057,
 						["criticalmax"] = 2170,
-						["hitmax"] = 2300,
+						["critical"] = 1,
 						["hit"] = 4,
 						["school"] = 1,
-						["critical"] = 1,
+						["hitmax"] = 2300,
 						["MISS"] = 3,
 						["hitamount"] = 6722,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Zondasu",
 				["healed"] = {
 					["Player-57-0B4E8ED2"] = {
 						["role"] = "DAMAGER",
@@ -7406,21 +7216,16 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[4] = {
-						["spells"] = {
-							[193315] = 1,
-							[185763] = 6,
-							[139546] = 1,
-						},
-						["amount"] = 8,
-					},
-					[3] = {
-						["spells"] = {
-							[35546] = 30,
-						},
-						["amount"] = 30,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 269238,
+						["srcname"] = "Zondasu-Illidan",
+						["hp"] = 166600,
+						["ts"] = 1555878907.846,
+					}, -- [1]
+					["pos"] = 2,
 				},
 				["id"] = "Player-57-0B4E8ED2",
 				["healing"] = 0,
@@ -7429,28 +7234,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Zondasu",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zondasu-Illidan",
-						["spellid"] = 269238,
-						["hp"] = 166600,
-						["ts"] = 1555878907.846,
-					}, -- [1]
-					["pos"] = 2,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [14]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 84820,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -7465,7 +7260,6 @@ SkadaPerCharDB = {
 						["id"] = 164812,
 					},
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 					["Ysera's Gift"] = {
 						["shielding"] = 0,
@@ -7492,11 +7286,21 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 7,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 1064,
+				["power"] = {
+					[8] = {
+						["spells"] = {
+							[93402] = 3,
+							[8921] = 3,
+							[202497] = 4,
+						},
+						["amount"] = 10,
+					},
+				},
+				["maxhp"] = 84820,
 				["damage"] = 42249,
 				["damagespells"] = {
 					["Embrace of Bwonsamdi"] = {
@@ -7528,14 +7332,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 1792,
 						["id"] = 164815,
 						["damage"] = 5554,
-						["totalhits"] = 5,
 						["max"] = 1792,
+						["school"] = 8,
 						["min"] = 896,
 						["criticalmax"] = 1792,
-						["hitmax"] = 1074,
-						["hit"] = 4,
-						["school"] = 8,
 						["critical"] = 1,
+						["hit"] = 4,
+						["totalhits"] = 5,
+						["hitmax"] = 1074,
 						["criticalmin"] = 1792,
 						["hitamount"] = 3762,
 					},
@@ -7544,14 +7348,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 1800,
 						["id"] = 164812,
 						["damage"] = 9015,
-						["totalhits"] = 8,
 						["max"] = 1800,
+						["school"] = 64,
 						["min"] = 856,
 						["criticalmax"] = 1800,
-						["critical"] = 1,
-						["hit"] = 7,
-						["school"] = 64,
 						["hitmax"] = 1239,
+						["hit"] = 7,
+						["totalhits"] = 8,
+						["critical"] = 1,
 						["criticalmin"] = 1800,
 						["hitamount"] = 7215,
 					},
@@ -7568,7 +7372,7 @@ SkadaPerCharDB = {
 						["damage"] = 24701,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Zulema",
 				["healed"] = {
 					["Player-1169-08A8B070"] = {
 						["role"] = "DAMAGER",
@@ -7585,15 +7389,16 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
-					[8] = {
-						["spells"] = {
-							[93402] = 3,
-							[8921] = 3,
-							[202497] = 4,
-						},
-						["amount"] = 10,
-					},
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 292380,
+						["srcname"] = "Zulema-CenarionCircle",
+						["hp"] = 84820,
+						["ts"] = 1555878906.177,
+					}, -- [1]
+					["pos"] = 2,
 				},
 				["id"] = "Player-1169-08A8B070",
 				["healing"] = 2544,
@@ -7602,361 +7407,29 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Zulema",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 0,
-						["srcname"] = "Zulema-CenarionCircle",
-						["spellid"] = 292380,
-						["hp"] = 84820,
-						["ts"] = 1555878906.177,
-					}, -- [1]
-					["pos"] = 2,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [15]
 			{
-				["maxhp"] = 186700,
-				["healingabsorbed"] = 0,
-				["role"] = "DAMAGER",
-				["ffdamagedonespells"] = {
-				},
-				["damaged"] = {
-				},
-				["auras"] = {
-					["Taunt"] = {
-						["uptime"] = 30,
-						["active"] = 0,
-						["school"] = 1,
-						["auratype"] = "DEBUFF",
-						["id"] = 355,
-						["name"] = "Taunt",
-					},
-					["Charge"] = {
-						["uptime"] = 810,
-						["active"] = 0,
-						["id"] = 105771,
-						["name"] = "Charge",
-						["school"] = 1,
-						["auratype"] = "DEBUFF",
-					},
-					["Sweeping Strikes"] = {
-						["id"] = 260708,
-						["uptime"] = 270,
-						["started"] = 1555904609,
-						["auratype"] = "BUFF",
-						["name"] = "Sweeping Strikes",
-						["school"] = 1,
-						["active"] = 1,
-					},
-					["Berserker Rage"] = {
-						["started"] = 1555905652,
-						["uptime"] = 50,
-						["active"] = 1,
-						["auratype"] = "BUFF",
-						["name"] = "Berserker Rage",
-						["id"] = 18499,
-						["school"] = 1,
-					},
-					["Grim Seal"] = {
-						["name"] = "Grim Seal",
-						["active"] = 0,
-						["school"] = 32,
-						["uptime"] = 5,
-						["auratype"] = "DEBUFF",
-						["id"] = 280523,
-					},
-					["Chilling Flurry"] = {
-						["name"] = "Chilling Flurry",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 5,
-						["auratype"] = "BUFF",
-						["id"] = 269763,
-					},
-					["Overpower"] = {
-						["started"] = 1555903977,
-						["uptime"] = 11,
-						["name"] = "Overpower",
-						["active"] = 16,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 7384,
-					},
-					["Bounding Stride"] = {
-						["started"] = 1555905141,
-						["uptime"] = 33,
-						["active"] = 1,
-						["id"] = 202164,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["name"] = "Bounding Stride",
-					},
-					["Rallying Cry"] = {
-						["uptime"] = 10,
-						["name"] = "Rallying Cry",
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 97463,
-						["active"] = 0,
-					},
-					["Apothecary's Salve"] = {
-						["started"] = 1555905321,
-						["name"] = "Apothecary's Salve",
-						["active"] = 1,
-						["id"] = 287639,
-						["uptime"] = 6,
-						["school"] = 8,
-						["auratype"] = "BUFF",
-					},
-					["Deep Wounds"] = {
-						["id"] = 262115,
-						["uptime"] = 442,
-						["auratype"] = "DEBUFF",
-						["name"] = "Deep Wounds",
-						["school"] = 1,
-						["active"] = 0,
-					},
-					["Bladestorm"] = {
-						["uptime"] = 71,
-						["active"] = 0,
-						["auratype"] = "BUFF",
-						["name"] = "Bladestorm",
-						["id"] = 227847,
-						["school"] = 1,
-					},
-					["Die by the Sword"] = {
-						["school"] = 1,
-						["uptime"] = 201,
-						["started"] = 1555903943,
-						["id"] = 118038,
-						["auratype"] = "BUFF",
-						["name"] = "Die by the Sword",
-						["active"] = 1,
-					},
-					["Intimidating Shout"] = {
-						["name"] = "Intimidating Shout",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 4,
-						["auratype"] = "DEBUFF",
-						["id"] = 5246,
-					},
-					["Crushing Assault"] = {
-						["started"] = 1555904168,
-						["uptime"] = 33,
-						["name"] = "Crushing Assault",
-						["active"] = 8,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 278826,
-					},
-					["Incite the Pack"] = {
-						["started"] = 1555903854,
-						["uptime"] = 0,
-						["name"] = "Incite the Pack",
-						["active"] = 7,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 280412,
-					},
-					["Sudden Death"] = {
-						["uptime"] = 80,
-						["name"] = "Sudden Death",
-						["started"] = 1555905569,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 52437,
-						["active"] = 1,
-					},
-					["Static Charge"] = {
-						["school"] = 8,
-						["name"] = "Static Charge",
-						["active"] = 0,
-						["id"] = 187117,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 3,
-					},
-					["Gathering Storm"] = {
-						["started"] = 1555904234,
-						["uptime"] = 40,
-						["name"] = "Gathering Storm",
-						["active"] = 1,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 273415,
-					},
-					["Enraging Vapors"] = {
-						["school"] = 1,
-						["name"] = "Enraging Vapors",
-						["active"] = 0,
-						["id"] = 258329,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 10,
-					},
-					["Hoppy Finish"] = {
-						["name"] = "Hoppy Finish",
-						["active"] = 0,
-						["school"] = 8,
-						["uptime"] = 9,
-						["auratype"] = "DEBUFF",
-						["id"] = 264403,
-					},
-					["Unstable Flames"] = {
-						["started"] = 1555903862,
-						["uptime"] = 5,
-						["name"] = "Unstable Flames",
-						["active"] = 19,
-						["school"] = 4,
-						["auratype"] = "BUFF",
-						["id"] = 279902,
-					},
-					["Primal Instinct"] = {
-						["started"] = 1555903864,
-						["uptime"] = 7,
-						["name"] = "Primal Instinct",
-						["active"] = 12,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 273988,
-					},
-					["Hamstring"] = {
-						["name"] = "Hamstring",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 15,
-						["auratype"] = "DEBUFF",
-						["id"] = 1715,
-					},
-					["Victorious"] = {
-						["uptime"] = 42,
-						["name"] = "Victorious",
-						["started"] = 1555903867,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 32216,
-						["active"] = 19,
-					},
-					["Intimidating Presence"] = {
-						["name"] = "Intimidating Presence",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 8,
-						["auratype"] = "DEBUFF",
-						["id"] = 288644,
-					},
-					["Victory Rush"] = {
-						["uptime"] = 18,
-						["name"] = "Victory Rush",
-						["started"] = 1555904170,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 118779,
-						["active"] = 5,
-					},
-					["Colossus Smash"] = {
-						["id"] = 208086,
-						["uptime"] = 193,
-						["auratype"] = "DEBUFF",
-						["name"] = "Colossus Smash",
-						["school"] = 1,
-						["active"] = 0,
-					},
-					["Apothecary's Blight"] = {
-						["id"] = 287638,
-						["uptime"] = 437,
-						["auratype"] = "DEBUFF",
-						["school"] = 40,
-						["name"] = "Apothecary's Blight",
-						["active"] = 0,
-					},
-					["Silvered Weapons"] = {
-						["school"] = 1,
-						["name"] = "Silvered Weapons",
-						["id"] = 276846,
-						["auratype"] = "DEBUFF",
-						["uptime"] = 14,
-						["active"] = 0,
-					},
-					["Mortal Wounds"] = {
-						["uptime"] = 345,
-						["name"] = "Mortal Wounds",
-						["school"] = 1,
-						["auratype"] = "DEBUFF",
-						["id"] = 115804,
-						["active"] = 0,
-					},
-					["Vampiric Speed"] = {
-						["started"] = 1555903867,
-						["uptime"] = 0,
-						["name"] = "Vampiric Speed",
-						["active"] = 27,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 269239,
-					},
-					["Tactician"] = {
-						["uptime"] = 35,
-						["name"] = "Tactician",
-						["started"] = 1555904069,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 199854,
-						["active"] = 3,
-					},
-					["Self Reliance"] = {
-						["started"] = 1555905653,
-						["uptime"] = 1713,
-						["name"] = "Self Reliance",
-						["active"] = 2,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 270661,
-					},
-					["Battle Shout"] = {
-						["uptime"] = 0,
-						["name"] = "Battle Shout",
-						["active"] = 0,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 6673,
-					},
-					["Will of the Forsaken"] = {
-						["name"] = "Will of the Forsaken",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 0,
-						["auratype"] = "BUFF",
-						["id"] = 7744,
-					},
-					["In For The Kill"] = {
-						["started"] = 1555903947,
-						["uptime"] = 21,
-						["name"] = "In For The Kill",
-						["active"] = 7,
-						["school"] = 1,
-						["auratype"] = "BUFF",
-						["id"] = 248622,
-					},
-				},
 				["class"] = "WARRIOR",
+				["healingabsorbed"] = 0,
 				["healingspells"] = {
 					["Self Reliance"] = {
 						["shielding"] = 0,
 						["id"] = 270661,
-						["healing"] = 347942,
+						["healing"] = 348184,
 						["min"] = 58,
 						["name"] = "Self Reliance",
-						["hits"] = 219,
-						["overhealing"] = 35843,
+						["hits"] = 221,
+						["overhealing"] = 39986,
 						["max"] = 2924,
-						["critical"] = 54,
+						["critical"] = 55,
 						["absorbed"] = 0,
 					},
 					["Apothecary's Salve"] = {
@@ -7986,11 +7459,11 @@ SkadaPerCharDB = {
 					["Touch of the Grave"] = {
 						["shielding"] = 0,
 						["id"] = 127802,
-						["healing"] = 531628,
+						["healing"] = 531663,
 						["min"] = 0,
 						["name"] = "Touch of the Grave",
-						["hits"] = 276,
-						["overhealing"] = 203790,
+						["hits"] = 278,
+						["overhealing"] = 506775,
 						["max"] = 5827,
 						["critical"] = 0,
 						["absorbed"] = 0,
@@ -8008,34 +7481,343 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
-				["time"] = 5533,
-				["interrupts"] = 3,
+				["ffdamagedonespells"] = {
+				},
+				["damaged"] = {
+				},
 				["alertDamage"] = 0,
+				["auras"] = {
+					["Taunt"] = {
+						["uptime"] = 33,
+						["active"] = 0,
+						["school"] = 1,
+						["auratype"] = "DEBUFF",
+						["id"] = 355,
+						["name"] = "Taunt",
+					},
+					["Charge"] = {
+						["uptime"] = 810,
+						["active"] = 0,
+						["id"] = 105771,
+						["name"] = "Charge",
+						["school"] = 1,
+						["auratype"] = "DEBUFF",
+					},
+					["Sweeping Strikes"] = {
+						["uptime"] = 270,
+						["active"] = 0,
+						["id"] = 260708,
+						["auratype"] = "BUFF",
+						["name"] = "Sweeping Strikes",
+						["school"] = 1,
+					},
+					["Berserker Rage"] = {
+						["uptime"] = 50,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Berserker Rage",
+						["id"] = 18499,
+						["auratype"] = "BUFF",
+					},
+					["Grim Seal"] = {
+						["name"] = "Grim Seal",
+						["active"] = 0,
+						["school"] = 32,
+						["uptime"] = 5,
+						["auratype"] = "DEBUFF",
+						["id"] = 280523,
+					},
+					["Chilling Flurry"] = {
+						["name"] = "Chilling Flurry",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 5,
+						["auratype"] = "BUFF",
+						["id"] = 269763,
+					},
+					["Overpower"] = {
+						["uptime"] = 11,
+						["active"] = 0,
+						["id"] = 7384,
+						["name"] = "Overpower",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Bounding Stride"] = {
+						["name"] = "Bounding Stride",
+						["active"] = 0,
+						["id"] = 202164,
+						["school"] = 1,
+						["auratype"] = "BUFF",
+						["uptime"] = 33,
+					},
+					["Rallying Cry"] = {
+						["uptime"] = 10,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Rallying Cry",
+						["auratype"] = "BUFF",
+						["id"] = 97463,
+					},
+					["Apothecary's Salve"] = {
+						["name"] = "Apothecary's Salve",
+						["active"] = 0,
+						["auratype"] = "BUFF",
+						["uptime"] = 6,
+						["school"] = 8,
+						["id"] = 287639,
+					},
+					["Deep Wounds"] = {
+						["uptime"] = 449,
+						["active"] = 0,
+						["id"] = 262115,
+						["auratype"] = "DEBUFF",
+						["name"] = "Deep Wounds",
+						["school"] = 1,
+					},
+					["Bladestorm"] = {
+						["started"] = 1556490874,
+						["uptime"] = 71,
+						["active"] = 1,
+						["auratype"] = "BUFF",
+						["name"] = "Bladestorm",
+						["id"] = 227847,
+						["school"] = 1,
+					},
+					["Die by the Sword"] = {
+						["uptime"] = 201,
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 118038,
+						["auratype"] = "BUFF",
+						["name"] = "Die by the Sword",
+					},
+					["Intimidating Shout"] = {
+						["name"] = "Intimidating Shout",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 4,
+						["auratype"] = "DEBUFF",
+						["id"] = 5246,
+					},
+					["Crushing Assault"] = {
+						["uptime"] = 33,
+						["active"] = 0,
+						["id"] = 278826,
+						["name"] = "Crushing Assault",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Incite the Pack"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 280412,
+						["name"] = "Incite the Pack",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Sudden Death"] = {
+						["started"] = 1556490876,
+						["uptime"] = 80,
+						["active"] = 1,
+						["school"] = 1,
+						["name"] = "Sudden Death",
+						["auratype"] = "BUFF",
+						["id"] = 52437,
+					},
+					["Static Charge"] = {
+						["name"] = "Static Charge",
+						["active"] = 0,
+						["school"] = 8,
+						["id"] = 187117,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 3,
+					},
+					["Gathering Storm"] = {
+						["started"] = 1556490874,
+						["uptime"] = 40,
+						["active"] = 2,
+						["id"] = 273415,
+						["name"] = "Gathering Storm",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Enraging Vapors"] = {
+						["name"] = "Enraging Vapors",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 258329,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 10,
+					},
+					["Hoppy Finish"] = {
+						["name"] = "Hoppy Finish",
+						["active"] = 0,
+						["school"] = 8,
+						["uptime"] = 9,
+						["auratype"] = "DEBUFF",
+						["id"] = 264403,
+					},
+					["Unstable Flames"] = {
+						["started"] = 1556490873,
+						["uptime"] = 5,
+						["active"] = 2,
+						["id"] = 279902,
+						["name"] = "Unstable Flames",
+						["auratype"] = "BUFF",
+						["school"] = 4,
+					},
+					["Victory Rush"] = {
+						["uptime"] = 18,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Victory Rush",
+						["auratype"] = "BUFF",
+						["id"] = 118779,
+					},
+					["Hamstring"] = {
+						["name"] = "Hamstring",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 15,
+						["auratype"] = "DEBUFF",
+						["id"] = 1715,
+					},
+					["Victorious"] = {
+						["uptime"] = 42,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Victorious",
+						["auratype"] = "BUFF",
+						["id"] = 32216,
+					},
+					["Intimidating Presence"] = {
+						["name"] = "Intimidating Presence",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 8,
+						["auratype"] = "DEBUFF",
+						["id"] = 288644,
+					},
+					["Silvered Weapons"] = {
+						["name"] = "Silvered Weapons",
+						["active"] = 0,
+						["school"] = 1,
+						["id"] = 276846,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 14,
+					},
+					["Colossus Smash"] = {
+						["uptime"] = 202,
+						["active"] = 0,
+						["id"] = 208086,
+						["auratype"] = "DEBUFF",
+						["name"] = "Colossus Smash",
+						["school"] = 1,
+					},
+					["Apothecary's Blight"] = {
+						["uptime"] = 443,
+						["active"] = 0,
+						["id"] = 287638,
+						["auratype"] = "DEBUFF",
+						["school"] = 40,
+						["name"] = "Apothecary's Blight",
+					},
+					["Primal Instinct"] = {
+						["uptime"] = 7,
+						["active"] = 0,
+						["id"] = 273988,
+						["name"] = "Primal Instinct",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Mortal Wounds"] = {
+						["uptime"] = 345,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Mortal Wounds",
+						["auratype"] = "DEBUFF",
+						["id"] = 115804,
+					},
+					["Vampiric Speed"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["id"] = 269239,
+						["name"] = "Vampiric Speed",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Tactician"] = {
+						["uptime"] = 35,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Tactician",
+						["auratype"] = "BUFF",
+						["id"] = 199854,
+					},
+					["Self Reliance"] = {
+						["uptime"] = 1713,
+						["active"] = 0,
+						["id"] = 270661,
+						["name"] = "Self Reliance",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+					["Battle Shout"] = {
+						["uptime"] = 0,
+						["active"] = 0,
+						["school"] = 1,
+						["name"] = "Battle Shout",
+						["auratype"] = "BUFF",
+						["id"] = 6673,
+					},
+					["Will of the Forsaken"] = {
+						["name"] = "Will of the Forsaken",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 0,
+						["auratype"] = "BUFF",
+						["id"] = 7744,
+					},
+					["In For The Kill"] = {
+						["started"] = 1556490873,
+						["uptime"] = 21,
+						["active"] = 2,
+						["id"] = 248622,
+						["name"] = "In For The Kill",
+						["auratype"] = "BUFF",
+						["school"] = 1,
+					},
+				},
+				["ffdamagedone"] = 0,
+				["overhealing"] = 5995850,
+				["interrupts"] = 3,
+				["role"] = "DAMAGER",
 				["ccbreaks"] = 0,
-				["overhealing"] = 5688722,
-				["damage"] = 53575662,
+				["time"] = 5546,
+				["damage"] = 61284795,
 				["damagespells"] = {
 					["Intimidating Shout"] = {
-						["max"] = 0,
-						["school"] = 1,
-						["id"] = 5246,
-						["IMMUNE"] = 1,
 						["totalhits"] = 1,
+						["id"] = 5246,
+						["school"] = 1,
+						["IMMUNE"] = 1,
+						["max"] = 0,
 						["damage"] = 0,
 					},
 					["Touch of the Grave"] = {
 						["hitmin"] = 1042,
-						["criticalamount"] = 294158,
+						["criticalamount"] = 597178,
 						["id"] = 127802,
-						["damage"] = 755321,
-						["totalhits"] = 278,
-						["max"] = 6279,
-						["min"] = 1042,
-						["criticalmax"] = 6279,
-						["critical"] = 67,
-						["hit"] = 211,
+						["damage"] = 1058341,
+						["max"] = 177882,
 						["school"] = 32,
+						["min"] = 1042,
+						["criticalmax"] = 177882,
 						["hitmax"] = 3139,
+						["hit"] = 211,
+						["totalhits"] = 280,
+						["critical"] = 69,
 						["criticalmin"] = 2084,
 						["hitamount"] = 461163,
 					},
@@ -8044,14 +7826,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 949650,
 						["id"] = 1464,
 						["damage"] = 2207693,
-						["totalhits"] = 192,
 						["max"] = 60306,
+						["school"] = 1,
 						["min"] = 2015,
 						["criticalmax"] = 60306,
-						["critical"] = 47,
-						["hit"] = 145,
-						["school"] = 1,
 						["hitmax"] = 32853,
+						["hit"] = 145,
+						["totalhits"] = 192,
+						["critical"] = 47,
 						["criticalmin"] = 5237,
 						["hitamount"] = 1258043,
 					},
@@ -8060,12 +7842,12 @@ SkadaPerCharDB = {
 						["hitmin"] = 252,
 						["criticalamount"] = 837155,
 						["EVADE"] = 11,
-						["totalhits"] = 2203,
 						["max"] = 3243,
-						["hitmax"] = 1622,
+						["critical"] = 488,
+						["totalhits"] = 2203,
 						["min"] = 252,
 						["criticalmax"] = 3243,
-						["critical"] = 488,
+						["hitmax"] = 1622,
 						["hit"] = 1704,
 						["school"] = 1,
 						["id"] = 199658,
@@ -8078,14 +7860,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 1814569,
 						["id"] = 12294,
 						["damage"] = 4583455,
-						["totalhits"] = 344,
 						["max"] = 35931,
+						["school"] = 1,
 						["min"] = 4319,
 						["criticalmax"] = 35931,
-						["critical"] = 85,
-						["hit"] = 258,
-						["school"] = 1,
 						["hitmax"] = 18768,
+						["hit"] = 258,
+						["totalhits"] = 344,
+						["critical"] = 85,
 						["criticalmin"] = 11987,
 						["hitamount"] = 2768886,
 					},
@@ -8094,35 +7876,45 @@ SkadaPerCharDB = {
 						["criticalamount"] = 1007327,
 						["id"] = 7384,
 						["damage"] = 2637368,
-						["totalhits"] = 370,
 						["max"] = 18440,
+						["school"] = 1,
 						["min"] = 1650,
 						["criticalmax"] = 18440,
-						["critical"] = 90,
-						["hit"] = 280,
-						["school"] = 1,
 						["hitmax"] = 11413,
+						["hit"] = 280,
+						["totalhits"] = 370,
+						["critical"] = 90,
 						["criticalmin"] = 5400,
 						["hitamount"] = 1630041,
 					},
-					["Bladestorm"] = {
-						["DODGE"] = 3,
-						["hitmin"] = 2443,
-						["criticalmin"] = 5535,
-						["totalhits"] = 1470,
-						["MISS"] = 1,
-						["damage"] = 8891177,
-						["criticalamount"] = 3411247,
-						["max"] = 15660,
-						["EVADE"] = 12,
-						["min"] = 2443,
-						["criticalmax"] = 15660,
-						["critical"] = 342,
-						["hit"] = 1112,
+					["Aeda Brightdawn: Attack"] = {
+						["hitmin"] = 780,
+						["id"] = 6603,
+						["min"] = 780,
+						["hitamount"] = 2733,
+						["hitmax"] = 1144,
+						["hit"] = 3,
 						["school"] = 1,
-						["hitmax"] = 7830,
-						["id"] = 50622,
-						["hitamount"] = 5479930,
+						["max"] = 1144,
+						["totalhits"] = 3,
+						["damage"] = 2733,
+					},
+					["Charge"] = {
+						["damage"] = 163338,
+						["hitmin"] = 700,
+						["criticalmin"] = 1508,
+						["id"] = 126664,
+						["IMMUNE"] = 2,
+						["max"] = 30498,
+						["school"] = 1,
+						["min"] = 700,
+						["criticalmax"] = 2151,
+						["hitmax"] = 30498,
+						["hit"] = 106,
+						["totalhits"] = 138,
+						["critical"] = 30,
+						["criticalamount"] = 47819,
+						["hitamount"] = 115519,
 					},
 					["Hamstring"] = {
 						["hitmin"] = 1625,
@@ -8137,51 +7929,51 @@ SkadaPerCharDB = {
 						["hitamount"] = 1625,
 					},
 					["Warbreaker"] = {
-						["damage"] = 3761551,
+						["damage"] = 4694156,
 						["hitmin"] = 6547,
 						["criticalamount"] = 1365161,
 						["EVADE"] = 1,
-						["totalhits"] = 291,
-						["max"] = 30331,
-						["hitmax"] = 17001,
+						["max"] = 533622,
+						["critical"] = 65,
+						["totalhits"] = 293,
 						["min"] = 6547,
 						["criticalmax"] = 30331,
-						["critical"] = 65,
-						["hit"] = 225,
+						["hitmax"] = 533622,
+						["hit"] = 227,
 						["school"] = 1,
 						["id"] = 262161,
 						["criticalmin"] = 13095,
-						["hitamount"] = 2396390,
+						["hitamount"] = 3328995,
 					},
 					["Donk: Attack"] = {
 						["hitmin"] = 1505,
 						["criticalamount"] = 3223,
 						["id"] = 6603,
-						["criticalmin"] = 3223,
 						["hitamount"] = 1505,
-						["critical"] = 1,
+						["criticalmin"] = 3223,
+						["hitmax"] = 1505,
 						["min"] = 1505,
 						["criticalmax"] = 3223,
-						["hitmax"] = 1505,
+						["critical"] = 1,
 						["hit"] = 1,
+						["totalhits"] = 2,
 						["school"] = 1,
 						["max"] = 3223,
-						["totalhits"] = 2,
 						["damage"] = 4728,
 					},
 					["Gutripper"] = {
 						["hitmin"] = 1638,
-						["criticalamount"] = 597009,
+						["criticalamount"] = 973035,
 						["id"] = 269031,
-						["damage"] = 1476082,
-						["totalhits"] = 332,
-						["max"] = 10063,
-						["min"] = 1638,
-						["criticalmax"] = 10063,
-						["hitmax"] = 5031,
-						["hit"] = 249,
+						["damage"] = 1852108,
+						["max"] = 376026,
 						["school"] = 1,
-						["critical"] = 83,
+						["min"] = 1638,
+						["criticalmax"] = 376026,
+						["critical"] = 84,
+						["hit"] = 249,
+						["totalhits"] = 333,
+						["hitmax"] = 5031,
 						["criticalmin"] = 3276,
 						["hitamount"] = 879073,
 					},
@@ -8197,23 +7989,6 @@ SkadaPerCharDB = {
 						["max"] = 3031,
 						["damage"] = 3031,
 					},
-					["Charge"] = {
-						["damage"] = 132840,
-						["hitmin"] = 700,
-						["criticalmin"] = 1508,
-						["id"] = 126664,
-						["IMMUNE"] = 2,
-						["totalhits"] = 137,
-						["max"] = 2151,
-						["min"] = 700,
-						["criticalmax"] = 2151,
-						["critical"] = 30,
-						["hit"] = 105,
-						["school"] = 1,
-						["hitmax"] = 1398,
-						["criticalamount"] = 47819,
-						["hitamount"] = 85021,
-					},
 					["Execute"] = {
 						["DODGE"] = 2,
 						["damage"] = 8808356,
@@ -8225,64 +8000,83 @@ SkadaPerCharDB = {
 						["school"] = 1,
 						["min"] = 4885,
 						["criticalmax"] = 48658,
-						["critical"] = 124,
+						["hitmax"] = 28071,
 						["hit"] = 414,
 						["totalhits"] = 542,
-						["hitmax"] = 28071,
+						["critical"] = 124,
 						["MISS"] = 2,
 						["hitamount"] = 5485109,
 					},
-					["Mortal Wounds"] = {
-						["id"] = 115804,
-						["max"] = 0,
-						["totalhits"] = 1,
-						["IMMUNE"] = 1,
+					["Bladestorm"] = {
+						["DODGE"] = 3,
+						["hitmin"] = 2443,
+						["criticalmin"] = 5535,
+						["totalhits"] = 1481,
+						["MISS"] = 1,
+						["damage"] = 12607200,
+						["criticalamount"] = 5028865,
+						["max"] = 689329,
+						["EVADE"] = 12,
+						["min"] = 2443,
+						["criticalmax"] = 689329,
+						["critical"] = 345,
+						["hit"] = 1120,
 						["school"] = 1,
+						["hitmax"] = 327510,
+						["id"] = 50622,
+						["hitamount"] = 7578335,
+					},
+					["Mortal Wounds"] = {
+						["school"] = 1,
+						["totalhits"] = 1,
+						["max"] = 0,
+						["IMMUNE"] = 1,
+						["id"] = 115804,
 						["damage"] = 0,
 					},
 					["Apothecary's Blight"] = {
 						["hitmin"] = 242,
 						["criticalamount"] = 391690,
 						["id"] = 287638,
-						["damage"] = 995542,
-						["totalhits"] = 508,
-						["max"] = 4574,
+						["damage"] = 1126310,
+						["max"] = 73192,
+						["school"] = 40,
 						["min"] = 242,
 						["criticalmax"] = 4574,
+						["hitmax"] = 73192,
+						["hit"] = 386,
+						["totalhits"] = 510,
 						["critical"] = 124,
-						["hit"] = 384,
-						["school"] = 40,
-						["hitmax"] = 2387,
 						["criticalmin"] = 417,
-						["hitamount"] = 603852,
+						["hitamount"] = 734620,
 					},
 					["Deep Wounds"] = {
 						["hitmin"] = 159,
 						["criticalamount"] = 3636233,
 						["id"] = 262115,
-						["damage"] = 9715754,
-						["totalhits"] = 1703,
-						["max"] = 17936,
+						["damage"] = 10334834,
+						["max"] = 240330,
+						["school"] = 1,
 						["min"] = 159,
 						["criticalmax"] = 17936,
+						["hitmax"] = 240330,
+						["hit"] = 1317,
+						["totalhits"] = 1706,
 						["critical"] = 389,
-						["hit"] = 1314,
-						["school"] = 1,
-						["hitmax"] = 8967,
 						["criticalmin"] = 2895,
-						["hitamount"] = 6079521,
+						["hitamount"] = 6698601,
 					},
 					["Heroic Leap"] = {
 						["damage"] = 4115,
 						["hitmin"] = 686,
 						["criticalamount"] = 1371,
 						["id"] = 52174,
-						["totalhits"] = 6,
 						["max"] = 1371,
-						["critical"] = 1,
+						["hitmax"] = 686,
+						["totalhits"] = 6,
 						["min"] = 686,
 						["criticalmax"] = 1371,
-						["hitmax"] = 686,
+						["critical"] = 1,
 						["hit"] = 4,
 						["school"] = 1,
 						["criticalmin"] = 1371,
@@ -8294,49 +8088,49 @@ SkadaPerCharDB = {
 						["criticalamount"] = 210233,
 						["id"] = 34428,
 						["damage"] = 620244,
-						["totalhits"] = 169,
 						["max"] = 12078,
+						["school"] = 1,
 						["min"] = 1116,
 						["criticalmax"] = 12078,
-						["critical"] = 34,
-						["hit"] = 135,
-						["school"] = 1,
 						["hitmax"] = 4878,
+						["hit"] = 135,
+						["totalhits"] = 169,
+						["critical"] = 34,
 						["criticalmin"] = 2686,
 						["hitamount"] = 410011,
 					},
 					["Heroic Throw"] = {
 						["hitmin"] = 541,
-						["criticalamount"] = 7849,
+						["criticalamount"] = 66342,
 						["id"] = 57755,
-						["damage"] = 13409,
-						["totalhits"] = 17,
-						["max"] = 1225,
-						["min"] = 541,
-						["criticalmax"] = 1225,
-						["hitmax"] = 612,
-						["hit"] = 10,
+						["damage"] = 71902,
+						["max"] = 58493,
 						["school"] = 1,
-						["critical"] = 7,
+						["min"] = 541,
+						["criticalmax"] = 58493,
+						["critical"] = 8,
+						["hit"] = 10,
+						["totalhits"] = 18,
+						["hitmax"] = 612,
 						["criticalmin"] = 1103,
 						["hitamount"] = 5560,
 					},
 					["Attack"] = {
 						["DODGE"] = 1,
 						["hitmin"] = 1747,
-						["criticalamount"] = 2566758,
+						["criticalamount"] = 3015705,
 						["id"] = 6603,
-						["damage"] = 6663113,
-						["totalhits"] = 1301,
-						["max"] = 14669,
-						["min"] = 1747,
-						["criticalmax"] = 14669,
-						["critical"] = 314,
-						["hit"] = 986,
+						["damage"] = 8203000,
+						["max"] = 448947,
 						["school"] = 1,
-						["hitmax"] = 7855,
+						["min"] = 1747,
+						["criticalmax"] = 448947,
+						["hitmax"] = 299852,
+						["hit"] = 991,
+						["totalhits"] = 1307,
+						["critical"] = 315,
 						["criticalmin"] = 2230,
-						["hitamount"] = 4096355,
+						["hitamount"] = 5187295,
 					},
 				},
 				["deaths"] = {
@@ -8439,124 +8233,131 @@ SkadaPerCharDB = {
 						["maxhp"] = 186700,
 					}, -- [1]
 				},
-				["damagetaken"] = 7978735,
+				["healed"] = {
+					["Player-75-058380E2"] = {
+						["role"] = "DAMAGER",
+						["name"] = "Shanyt",
+						["amount"] = 6610653,
+						["class"] = "WARRIOR",
+						["shielding"] = 0,
+					},
+				},
+				["shielding"] = 0,
+				["id"] = "Player-75-058380E2",
+				["healing"] = 6610653,
 				["deathlog"] = {
 					{
-						["absorb"] = 0,
-						["hp"] = 186700,
-						["amount"] = 1788,
-						["spellid"] = 269238,
-						["srcname"] = "Shanyt",
-						["ts"] = 1555905885.449,
+						["spellid"] = 136343,
+						["amount"] = -35,
+						["hp"] = 186665,
+						["srcname"] = "Nalak",
+						["ts"] = 1556491637.222,
 					}, -- [1]
 					{
-						["ts"] = 1555905886.123,
-						["amount"] = -113,
-						["spellid"] = 258200,
-						["srcname"] = "Briarback Tunneler",
-						["hp"] = 186587,
+						["ts"] = 1556491638.174,
+						["amount"] = -35,
+						["spellid"] = 136343,
+						["srcname"] = "Nalak",
+						["hp"] = 186630,
 					}, -- [2]
 					{
-						["absorb"] = 0,
-						["ts"] = 1555905886.398,
-						["amount"] = 113,
-						["hp"] = 186700,
-						["spellid"] = 127802,
-						["srcname"] = "Shanyt",
+						["ts"] = 1556491638.45,
+						["amount"] = -53,
+						["hp"] = 186630,
+						["srcname"] = "Nalak",
+						["spellid"] = 88163,
 					}, -- [3]
 					{
-						["ts"] = 1555905887.508,
-						["amount"] = -2055,
-						["spellid"] = 88163,
-						["hp"] = 186700,
-						["srcname"] = "Foreman Razorgnarl",
+						["ts"] = 1556491639.167,
+						["amount"] = -35,
+						["spellid"] = 136343,
+						["hp"] = 186542,
+						["srcname"] = "Nalak",
 					}, -- [4]
 					{
-						["ts"] = 1555905888.025,
+						["ts"] = 1556491639.332,
 						["absorb"] = 0,
-						["amount"] = 2055,
-						["spellid"] = 118779,
-						["hp"] = 186700,
+						["amount"] = 158,
+						["spellid"] = 270661,
 						["srcname"] = "Shanyt",
+						["hp"] = 186700,
 					}, -- [5]
 					{
-						["ts"] = 1555905891.327,
-						["amount"] = -2254,
-						["hp"] = 186700,
-						["srcname"] = "Foreman Razorgnarl",
-						["spellid"] = 88163,
+						["ts"] = 1556491640.17,
+						["amount"] = -36,
+						["hp"] = 186664,
+						["srcname"] = "Nalak",
+						["spellid"] = 136343,
 					}, -- [6]
 					{
-						["ts"] = 1555905894.54,
-						["amount"] = -2344,
+						["ts"] = 1556491640.518,
+						["amount"] = -48,
 						["spellid"] = 88163,
-						["hp"] = 184446,
-						["srcname"] = "Foreman Razorgnarl",
+						["hp"] = 186664,
+						["srcname"] = "Nalak",
 					}, -- [7]
 					{
-						["ts"] = 1555905895.169,
-						["amount"] = -4220,
-						["hp"] = 177882,
-						["srcname"] = "Foreman Razorgnarl",
-						["spellid"] = 270295,
+						["ts"] = 1556491641.601,
+						["amount"] = -36,
+						["hp"] = 186580,
+						["srcname"] = "Nalak",
+						["spellid"] = 136343,
 					}, -- [8]
 					{
 						["ts"] = 1555905896.716,
-						["absorb"] = 0,
 						["amount"] = 8818,
+						["absorb"] = 0,
 						["spellid"] = 269238,
-						["srcname"] = "Shanyt",
 						["hp"] = 186700,
+						["srcname"] = "Shanyt",
 					}, -- [9]
 					{
-						["spellid"] = 258200,
-						["amount"] = -87,
-						["hp"] = 153687,
-						["srcname"] = "Briarback Tunneler",
-						["ts"] = 1555905882.441,
+						["ts"] = 1556490874.33,
+						["absorb"] = 0,
+						["amount"] = 0,
+						["spellid"] = 127802,
+						["hp"] = 186700,
+						["srcname"] = "Shanyt",
 					}, -- [10]
 					{
-						["ts"] = 1555905882.632,
-						["amount"] = -2356,
+						["ts"] = 1556491634.501,
+						["amount"] = -49,
 						["spellid"] = 88163,
-						["hp"] = 153687,
-						["srcname"] = "Briarback Tunneler",
+						["hp"] = 186700,
+						["srcname"] = "Nalak",
 					}, -- [11]
 					{
-						["absorb"] = 0,
-						["ts"] = 1555905883.063,
-						["amount"] = 6734,
-						["hp"] = 158065,
-						["srcname"] = "Shanyt",
-						["spellid"] = 269238,
+						["ts"] = 1556491635.93,
+						["amount"] = -35,
+						["hp"] = 186616,
+						["spellid"] = 136343,
+						["srcname"] = "Nalak",
 					}, -- [12]
 					{
-						["ts"] = 1555905884.122,
-						["amount"] = -87,
-						["spellid"] = 258200,
-						["srcname"] = "Briarback Tunneler",
-						["hp"] = 157978,
+						["ts"] = 1556491636.328,
+						["absorb"] = 0,
+						["amount"] = 84,
+						["spellid"] = 270661,
+						["srcname"] = "Shanyt",
+						["hp"] = 186700,
 					}, -- [13]
 					{
-						["absorb"] = 0,
-						["ts"] = 1555905884.24,
-						["amount"] = 28722,
-						["hp"] = 186700,
-						["spellid"] = 118779,
-						["srcname"] = "Shanyt",
+						["ts"] = 1556491636.637,
+						["amount"] = -35,
+						["hp"] = 186665,
+						["srcname"] = "Nalak",
+						["spellid"] = 136343,
 					}, -- [14]
 					{
-						["ts"] = 1555905884.663,
-						["amount"] = -1788,
+						["ts"] = 1556491637.084,
+						["absorb"] = 0,
+						["amount"] = 35,
 						["hp"] = 186700,
-						["spellid"] = 88163,
-						["srcname"] = "Briarback Tunneler",
+						["spellid"] = 127802,
+						["srcname"] = "Shanyt",
 					}, -- [15]
-					["pos"] = 10,
+					["pos"] = 9,
 				},
-				["id"] = "Player-75-058380E2",
-				["healing"] = 6610376,
-				["dispells"] = 1,
 				["damagetakenspells"] = {
 					["Lightning Arc"] = {
 						["crushing"] = 0,
@@ -8564,13 +8365,13 @@ SkadaPerCharDB = {
 						["damage"] = 15255,
 						["max"] = 7768,
 						["name"] = "Lightning Arc",
-						["min"] = 7487,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 7487,
 						["absorbed"] = 0,
 					},
 					["Mandible Strike"] = {
@@ -8579,13 +8380,13 @@ SkadaPerCharDB = {
 						["damage"] = 3062,
 						["max"] = 3062,
 						["name"] = "Mandible Strike",
-						["min"] = 3062,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3062,
 						["absorbed"] = 0,
 					},
 					["Crush"] = {
@@ -8594,13 +8395,13 @@ SkadaPerCharDB = {
 						["damage"] = 1339,
 						["max"] = 1339,
 						["name"] = "Crush",
-						["min"] = 1339,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1339,
 						["absorbed"] = 0,
 					},
 					["Brackish Bolt"] = {
@@ -8609,13 +8410,13 @@ SkadaPerCharDB = {
 						["damage"] = 86742,
 						["max"] = 12443,
 						["name"] = "Brackish Bolt",
-						["min"] = 12354,
+						["glancing"] = 0,
 						["totalhits"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 12354,
 						["absorbed"] = 0,
 					},
 					["Rending Whirl"] = {
@@ -8624,13 +8425,13 @@ SkadaPerCharDB = {
 						["damage"] = 8421,
 						["max"] = 2974,
 						["name"] = "Rending Whirl",
-						["min"] = 425,
+						["glancing"] = 0,
 						["totalhits"] = 8,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 425,
 						["absorbed"] = 0,
 					},
 					["Slap & Chop"] = {
@@ -8639,13 +8440,13 @@ SkadaPerCharDB = {
 						["damage"] = 187,
 						["max"] = 134,
 						["name"] = "Slap & Chop",
-						["min"] = 53,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 53,
 						["absorbed"] = 0,
 					},
 					["Vile Webbing"] = {
@@ -8654,13 +8455,13 @@ SkadaPerCharDB = {
 						["damage"] = 21746,
 						["max"] = 1002,
 						["name"] = "Vile Webbing",
-						["min"] = 397,
+						["glancing"] = 0,
 						["totalhits"] = 34,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 397,
 						["absorbed"] = 0,
 					},
 					["Talon Rush"] = {
@@ -8669,13 +8470,13 @@ SkadaPerCharDB = {
 						["damage"] = 1720,
 						["max"] = 1720,
 						["name"] = "Talon Rush",
-						["min"] = 1720,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1720,
 						["absorbed"] = 0,
 					},
 					["Pounce"] = {
@@ -8684,13 +8485,13 @@ SkadaPerCharDB = {
 						["damage"] = 4791,
 						["max"] = 2594,
 						["name"] = "Pounce",
-						["min"] = 2197,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2197,
 						["absorbed"] = 0,
 					},
 					["Jab"] = {
@@ -8699,23 +8500,23 @@ SkadaPerCharDB = {
 						["damage"] = 31873,
 						["max"] = 3015,
 						["name"] = "Jab",
-						["min"] = 2170,
+						["glancing"] = 0,
 						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2170,
 						["absorbed"] = 0,
 					},
 					["Water Spout"] = {
 						["crushing"] = 0,
 						["id"] = 271287,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 4154,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Water Spout",
 						["blocked"] = 0,
 						["totalhits"] = 5,
@@ -8729,23 +8530,38 @@ SkadaPerCharDB = {
 						["damage"] = 3062,
 						["max"] = 1531,
 						["name"] = "Rotten Bolt",
-						["min"] = 1531,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
+						["min"] = 1531,
+						["absorbed"] = 0,
+					},
+					["Static Shield"] = {
+						["crushing"] = 0,
+						["id"] = 136343,
+						["min"] = 35,
+						["school"] = 8,
+						["critical"] = 0,
 						["glancing"] = 0,
 						["absorbed"] = 0,
+						["name"] = "Static Shield",
+						["blocked"] = 0,
+						["totalhits"] = 7,
+						["resisted"] = 0,
+						["max"] = 36,
+						["damage"] = 247,
 					},
 					["Blow Dart"] = {
 						["crushing"] = 0,
 						["id"] = 270302,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 1671,
 						["school"] = 1,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Blow Dart",
 						["blocked"] = 0,
 						["totalhits"] = 4,
@@ -8759,13 +8575,13 @@ SkadaPerCharDB = {
 						["damage"] = 2544,
 						["max"] = 2544,
 						["name"] = "Frost Nova",
-						["min"] = 2544,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2544,
 						["absorbed"] = 0,
 					},
 					["Downward Crash"] = {
@@ -8774,13 +8590,13 @@ SkadaPerCharDB = {
 						["damage"] = 5278,
 						["max"] = 2862,
 						["name"] = "Downward Crash",
-						["min"] = 2416,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2416,
 						["absorbed"] = 0,
 					},
 					["Soul Release"] = {
@@ -8789,13 +8605,13 @@ SkadaPerCharDB = {
 						["damage"] = 2442,
 						["max"] = 2442,
 						["name"] = "Soul Release",
-						["min"] = 2442,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2442,
 						["absorbed"] = 0,
 					},
 					["Fireball"] = {
@@ -8804,23 +8620,23 @@ SkadaPerCharDB = {
 						["damage"] = 19963,
 						["max"] = 7262,
 						["name"] = "Fireball",
-						["min"] = 5781,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5781,
 						["absorbed"] = 0,
 					},
 					["Club Smash"] = {
 						["crushing"] = 0,
 						["id"] = 275882,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 3637,
 						["school"] = 1,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Club Smash",
 						["blocked"] = 0,
 						["totalhits"] = 2,
@@ -8834,13 +8650,13 @@ SkadaPerCharDB = {
 						["damage"] = 1418,
 						["max"] = 1418,
 						["name"] = "Arf Arf",
-						["min"] = 1418,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1418,
 						["absorbed"] = 0,
 					},
 					["Savage Backhand"] = {
@@ -8849,13 +8665,13 @@ SkadaPerCharDB = {
 						["damage"] = 8931,
 						["max"] = 2989,
 						["name"] = "Savage Backhand",
-						["min"] = 2965,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2965,
 						["absorbed"] = 0,
 					},
 					["Wounding Bite"] = {
@@ -8864,13 +8680,13 @@ SkadaPerCharDB = {
 						["damage"] = 17826,
 						["max"] = 1524,
 						["name"] = "Wounding Bite",
-						["min"] = 1066,
+						["glancing"] = 0,
 						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1066,
 						["absorbed"] = 0,
 					},
 					["Blood Bolt"] = {
@@ -8879,13 +8695,13 @@ SkadaPerCharDB = {
 						["damage"] = 4363,
 						["max"] = 4363,
 						["name"] = "Blood Bolt",
-						["min"] = 4363,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4363,
 						["absorbed"] = 0,
 					},
 					["Malfunctioning Jolt"] = {
@@ -8894,13 +8710,13 @@ SkadaPerCharDB = {
 						["damage"] = 4485,
 						["max"] = 1495,
 						["name"] = "Malfunctioning Jolt",
-						["min"] = 1495,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1495,
 						["absorbed"] = 0,
 					},
 					["Fatal Sting"] = {
@@ -8909,13 +8725,13 @@ SkadaPerCharDB = {
 						["damage"] = 3827,
 						["max"] = 2126,
 						["name"] = "Fatal Sting",
-						["min"] = 1701,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1701,
 						["absorbed"] = 0,
 					},
 					["Infesting Injection"] = {
@@ -8924,13 +8740,13 @@ SkadaPerCharDB = {
 						["damage"] = 4590,
 						["max"] = 765,
 						["name"] = "Infesting Injection",
-						["min"] = 765,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 765,
 						["absorbed"] = 0,
 					},
 					["Dark Claw"] = {
@@ -8939,13 +8755,13 @@ SkadaPerCharDB = {
 						["damage"] = 4547,
 						["max"] = 2274,
 						["name"] = "Dark Claw",
-						["min"] = 2273,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2273,
 						["absorbed"] = 0,
 					},
 					["Blistering Bolt"] = {
@@ -8954,13 +8770,13 @@ SkadaPerCharDB = {
 						["damage"] = 75082,
 						["max"] = 5281,
 						["name"] = "Blistering Bolt",
-						["min"] = 1258,
+						["glancing"] = 0,
 						["totalhits"] = 32,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1258,
 						["absorbed"] = 0,
 					},
 					["Manic Slice"] = {
@@ -8969,13 +8785,13 @@ SkadaPerCharDB = {
 						["damage"] = 6654,
 						["max"] = 1720,
 						["name"] = "Manic Slice",
-						["min"] = 1579,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1579,
 						["absorbed"] = 0,
 					},
 					["Shiv"] = {
@@ -8984,13 +8800,13 @@ SkadaPerCharDB = {
 						["damage"] = 38566,
 						["max"] = 1149,
 						["name"] = "Shiv",
-						["min"] = 535,
+						["glancing"] = 0,
 						["totalhits"] = 49,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 535,
 						["absorbed"] = 0,
 					},
 					["Earthen Strike"] = {
@@ -8999,13 +8815,13 @@ SkadaPerCharDB = {
 						["damage"] = 10104,
 						["max"] = 2526,
 						["name"] = "Earthen Strike",
-						["min"] = 2526,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2526,
 						["absorbed"] = 0,
 					},
 					["Dread Mark"] = {
@@ -9014,13 +8830,13 @@ SkadaPerCharDB = {
 						["damage"] = 24689,
 						["max"] = 3635,
 						["name"] = "Dread Mark",
-						["min"] = 1127,
+						["glancing"] = 0,
 						["totalhits"] = 14,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1127,
 						["absorbed"] = 0,
 					},
 					["Frosty Swipe"] = {
@@ -9029,13 +8845,13 @@ SkadaPerCharDB = {
 						["damage"] = 15021,
 						["max"] = 5321,
 						["name"] = "Frosty Swipe",
-						["min"] = 4689,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4689,
 						["absorbed"] = 0,
 					},
 					["Hand Cannon"] = {
@@ -9044,13 +8860,13 @@ SkadaPerCharDB = {
 						["damage"] = 14077,
 						["max"] = 5801,
 						["name"] = "Hand Cannon",
-						["min"] = 3470,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3470,
 						["absorbed"] = 0,
 					},
 					["Snap"] = {
@@ -9059,13 +8875,13 @@ SkadaPerCharDB = {
 						["damage"] = 2560,
 						["max"] = 2560,
 						["name"] = "Snap",
-						["min"] = 2560,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2560,
 						["absorbed"] = 0,
 					},
 					["Manic Cackle"] = {
@@ -9074,13 +8890,13 @@ SkadaPerCharDB = {
 						["damage"] = 2055,
 						["max"] = 2055,
 						["name"] = "Manic Cackle",
-						["min"] = 2055,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2055,
 						["absorbed"] = 0,
 					},
 					["Lethal Deduction"] = {
@@ -9089,13 +8905,13 @@ SkadaPerCharDB = {
 						["damage"] = 392,
 						["max"] = 200,
 						["name"] = "Lethal Deduction",
-						["min"] = 192,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 192,
 						["absorbed"] = 0,
 					},
 					["Rotten Strike"] = {
@@ -9104,13 +8920,13 @@ SkadaPerCharDB = {
 						["damage"] = 13682,
 						["max"] = 1508,
 						["name"] = "Rotten Strike",
-						["min"] = 765,
+						["glancing"] = 0,
 						["totalhits"] = 14,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 765,
 						["absorbed"] = 0,
 					},
 					["Slithering Slime"] = {
@@ -9119,13 +8935,13 @@ SkadaPerCharDB = {
 						["damage"] = 9353,
 						["max"] = 936,
 						["name"] = "Slithering Slime",
-						["min"] = 935,
+						["glancing"] = 0,
 						["totalhits"] = 10,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 935,
 						["absorbed"] = 0,
 					},
 					["Petrifying Breath"] = {
@@ -9134,13 +8950,13 @@ SkadaPerCharDB = {
 						["damage"] = 10070,
 						["max"] = 5217,
 						["name"] = "Petrifying Breath",
-						["min"] = 4853,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4853,
 						["absorbed"] = 0,
 					},
 					["Thorned Burst"] = {
@@ -9149,13 +8965,13 @@ SkadaPerCharDB = {
 						["damage"] = 9074,
 						["max"] = 4484,
 						["name"] = "Thorned Burst",
-						["min"] = 765,
+						["glancing"] = 0,
 						["totalhits"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 765,
 						["absorbed"] = 0,
 					},
 					["Bubble Blast"] = {
@@ -9164,13 +8980,13 @@ SkadaPerCharDB = {
 						["damage"] = 3749,
 						["max"] = 3749,
 						["name"] = "Bubble Blast",
-						["min"] = 3749,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3749,
 						["absorbed"] = 0,
 					},
 					["Triple Slash"] = {
@@ -9179,13 +8995,13 @@ SkadaPerCharDB = {
 						["damage"] = 5483,
 						["max"] = 3199,
 						["name"] = "Triple Slash",
-						["min"] = 456,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 456,
 						["absorbed"] = 0,
 					},
 					["Jagged Claws"] = {
@@ -9194,13 +9010,13 @@ SkadaPerCharDB = {
 						["damage"] = 854,
 						["max"] = 210,
 						["name"] = "Jagged Claws",
-						["min"] = 19,
+						["glancing"] = 0,
 						["totalhits"] = 16,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 19,
 						["absorbed"] = 0,
 					},
 					["Rot Bite"] = {
@@ -9209,13 +9025,13 @@ SkadaPerCharDB = {
 						["damage"] = 4387,
 						["max"] = 2629,
 						["name"] = "Rot Bite",
-						["min"] = 569,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 569,
 						["absorbed"] = 0,
 					},
 					["Siphon Blood"] = {
@@ -9224,13 +9040,13 @@ SkadaPerCharDB = {
 						["damage"] = 10610,
 						["max"] = 2653,
 						["name"] = "Siphon Blood",
-						["min"] = 2652,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2652,
 						["absorbed"] = 0,
 					},
 					["Darkened Fangs"] = {
@@ -9239,13 +9055,13 @@ SkadaPerCharDB = {
 						["damage"] = 16911,
 						["max"] = 2684,
 						["name"] = "Darkened Fangs",
-						["min"] = 1879,
+						["glancing"] = 0,
 						["totalhits"] = 8,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1879,
 						["absorbed"] = 0,
 					},
 					["Leaden Blast"] = {
@@ -9254,13 +9070,13 @@ SkadaPerCharDB = {
 						["damage"] = 9866,
 						["max"] = 4933,
 						["name"] = "Leaden Blast",
-						["min"] = 4933,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4933,
 						["absorbed"] = 0,
 					},
 					["Blistering Orbs"] = {
@@ -9269,13 +9085,13 @@ SkadaPerCharDB = {
 						["damage"] = 3379,
 						["max"] = 3379,
 						["name"] = "Blistering Orbs",
-						["min"] = 3379,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3379,
 						["absorbed"] = 0,
 					},
 					["Bashing Blow"] = {
@@ -9284,13 +9100,13 @@ SkadaPerCharDB = {
 						["damage"] = 6025,
 						["max"] = 3158,
 						["name"] = "Bashing Blow",
-						["min"] = 2867,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2867,
 						["absorbed"] = 0,
 					},
 					["Toxic Fang"] = {
@@ -9299,13 +9115,13 @@ SkadaPerCharDB = {
 						["damage"] = 80370,
 						["max"] = 2297,
 						["name"] = "Toxic Fang",
-						["min"] = 2296,
+						["glancing"] = 0,
 						["totalhits"] = 35,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2296,
 						["absorbed"] = 0,
 					},
 					["Ground Rot"] = {
@@ -9314,13 +9130,13 @@ SkadaPerCharDB = {
 						["damage"] = 6818,
 						["max"] = 3828,
 						["name"] = "Ground Rot",
-						["min"] = 2990,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2990,
 						["absorbed"] = 0,
 					},
 					["Decaying Touch"] = {
@@ -9329,13 +9145,13 @@ SkadaPerCharDB = {
 						["damage"] = 5739,
 						["max"] = 2126,
 						["name"] = "Decaying Touch",
-						["min"] = 1488,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1488,
 						["absorbed"] = 0,
 					},
 					["Tearing Rampage"] = {
@@ -9344,13 +9160,13 @@ SkadaPerCharDB = {
 						["damage"] = 2906,
 						["max"] = 983,
 						["name"] = "Tearing Rampage",
-						["min"] = 956,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 956,
 						["absorbed"] = 0,
 					},
 					["Rotten Discharge"] = {
@@ -9359,13 +9175,13 @@ SkadaPerCharDB = {
 						["damage"] = 4982,
 						["max"] = 2491,
 						["name"] = "Rotten Discharge",
-						["min"] = 2491,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2491,
 						["absorbed"] = 0,
 					},
 					["Talon Rake"] = {
@@ -9374,13 +9190,13 @@ SkadaPerCharDB = {
 						["damage"] = 5520,
 						["max"] = 2763,
 						["name"] = "Talon Rake",
-						["min"] = 2757,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2757,
 						["absorbed"] = 0,
 					},
 					["Broken Bottle"] = {
@@ -9389,13 +9205,13 @@ SkadaPerCharDB = {
 						["damage"] = 2704,
 						["max"] = 2704,
 						["name"] = "Broken Bottle",
-						["min"] = 2704,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2704,
 						["absorbed"] = 0,
 					},
 					["Rimed Fangs"] = {
@@ -9404,13 +9220,13 @@ SkadaPerCharDB = {
 						["damage"] = 3062,
 						["max"] = 1531,
 						["name"] = "Rimed Fangs",
-						["min"] = 1531,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1531,
 						["absorbed"] = 0,
 					},
 					["Rending Talons"] = {
@@ -9419,13 +9235,13 @@ SkadaPerCharDB = {
 						["damage"] = 7654,
 						["max"] = 2043,
 						["name"] = "Rending Talons",
-						["min"] = 388,
+						["glancing"] = 0,
 						["totalhits"] = 11,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 388,
 						["absorbed"] = 0,
 					},
 					["Vile Claws"] = {
@@ -9434,13 +9250,13 @@ SkadaPerCharDB = {
 						["damage"] = 2892,
 						["max"] = 2892,
 						["name"] = "Vile Claws",
-						["min"] = 2892,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2892,
 						["absorbed"] = 0,
 					},
 					["Swipe"] = {
@@ -9449,13 +9265,13 @@ SkadaPerCharDB = {
 						["damage"] = 13348,
 						["max"] = 1828,
 						["name"] = "Swipe",
-						["min"] = 793,
+						["glancing"] = 0,
 						["totalhits"] = 9,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 793,
 						["absorbed"] = 0,
 					},
 					["Ruinous Bolt"] = {
@@ -9464,23 +9280,23 @@ SkadaPerCharDB = {
 						["damage"] = 143781,
 						["max"] = 18109,
 						["name"] = "Ruinous Bolt",
-						["min"] = 4253,
+						["glancing"] = 0,
 						["totalhits"] = 19,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4253,
 						["absorbed"] = 0,
 					},
 					["Lightning Bolt"] = {
 						["crushing"] = 0,
 						["id"] = 224721,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 3102,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Lightning Bolt",
 						["blocked"] = 0,
 						["totalhits"] = 2,
@@ -9494,13 +9310,13 @@ SkadaPerCharDB = {
 						["damage"] = 32708,
 						["max"] = 7489,
 						["name"] = "Heavy Slash",
-						["min"] = 5675,
+						["glancing"] = 0,
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5675,
 						["absorbed"] = 0,
 					},
 					["Jagged Fangs"] = {
@@ -9509,13 +9325,13 @@ SkadaPerCharDB = {
 						["damage"] = 15080,
 						["max"] = 1371,
 						["name"] = "Jagged Fangs",
-						["min"] = 1370,
+						["glancing"] = 0,
 						["totalhits"] = 11,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1370,
 						["absorbed"] = 0,
 					},
 					["Sand Spray"] = {
@@ -9524,13 +9340,13 @@ SkadaPerCharDB = {
 						["damage"] = 1826,
 						["max"] = 1826,
 						["name"] = "Sand Spray",
-						["min"] = 1826,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1826,
 						["absorbed"] = 0,
 					},
 					["Volatile Discharge"] = {
@@ -9539,13 +9355,13 @@ SkadaPerCharDB = {
 						["damage"] = 28899,
 						["max"] = 10375,
 						["name"] = "Volatile Discharge",
-						["min"] = 9051,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 72,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 9051,
 						["absorbed"] = 0,
 					},
 					["Venomous Shiv"] = {
@@ -9554,13 +9370,13 @@ SkadaPerCharDB = {
 						["damage"] = 16550,
 						["max"] = 1811,
 						["name"] = "Venomous Shiv",
-						["min"] = 287,
+						["glancing"] = 0,
 						["totalhits"] = 28,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 287,
 						["absorbed"] = 0,
 					},
 					["Charge"] = {
@@ -9569,13 +9385,13 @@ SkadaPerCharDB = {
 						["damage"] = 4001,
 						["max"] = 2079,
 						["name"] = "Charge",
-						["min"] = 1922,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1922,
 						["absorbed"] = 0,
 					},
 					["Sting"] = {
@@ -9584,23 +9400,23 @@ SkadaPerCharDB = {
 						["damage"] = 7273,
 						["max"] = 2042,
 						["name"] = "Sting",
-						["min"] = 1020,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1020,
 						["absorbed"] = 0,
 					},
 					["Hurl Seed"] = {
 						["crushing"] = 0,
 						["id"] = 169567,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 1371,
 						["school"] = 1,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Hurl Seed",
 						["blocked"] = 0,
 						["totalhits"] = 27,
@@ -9611,11 +9427,11 @@ SkadaPerCharDB = {
 					["Earth Shatter"] = {
 						["crushing"] = 0,
 						["id"] = 270959,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 5338,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Earth Shatter",
 						["blocked"] = 0,
 						["totalhits"] = 2,
@@ -9629,13 +9445,13 @@ SkadaPerCharDB = {
 						["damage"] = 12334,
 						["max"] = 6167,
 						["name"] = "Frosty Howl",
-						["min"] = 6167,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 6167,
 						["absorbed"] = 0,
 					},
 					["Water Bolt"] = {
@@ -9644,13 +9460,13 @@ SkadaPerCharDB = {
 						["damage"] = 41959,
 						["max"] = 5458,
 						["name"] = "Water Bolt",
-						["min"] = 3982,
+						["glancing"] = 0,
 						["totalhits"] = 9,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3982,
 						["absorbed"] = 0,
 					},
 					["Blighted Rouse"] = {
@@ -9659,13 +9475,13 @@ SkadaPerCharDB = {
 						["damage"] = 25589,
 						["max"] = 3700,
 						["name"] = "Blighted Rouse",
-						["min"] = 1515,
+						["glancing"] = 0,
 						["totalhits"] = 14,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1515,
 						["absorbed"] = 0,
 					},
 					["Double Jab"] = {
@@ -9674,13 +9490,13 @@ SkadaPerCharDB = {
 						["damage"] = 6399,
 						["max"] = 1143,
 						["name"] = "Double Jab",
-						["min"] = 914,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 914,
 						["absorbed"] = 0,
 					},
 					["Blighted Discharge"] = {
@@ -9689,13 +9505,13 @@ SkadaPerCharDB = {
 						["damage"] = 13281,
 						["max"] = 1398,
 						["name"] = "Blighted Discharge",
-						["min"] = 1223,
+						["glancing"] = 0,
 						["totalhits"] = 10,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1223,
 						["absorbed"] = 0,
 					},
 					["Ground Crack"] = {
@@ -9704,13 +9520,13 @@ SkadaPerCharDB = {
 						["damage"] = 2677,
 						["max"] = 2677,
 						["name"] = "Ground Crack",
-						["min"] = 2677,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2677,
 						["absorbed"] = 0,
 					},
 					["Mind Flay"] = {
@@ -9719,13 +9535,13 @@ SkadaPerCharDB = {
 						["damage"] = 22640,
 						["max"] = 2801,
 						["name"] = "Mind Flay",
-						["min"] = 1543,
+						["glancing"] = 0,
 						["totalhits"] = 13,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 96,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1543,
 						["absorbed"] = 0,
 					},
 					["Spellfrost Bolt"] = {
@@ -9734,13 +9550,13 @@ SkadaPerCharDB = {
 						["damage"] = 18333,
 						["max"] = 5054,
 						["name"] = "Spellfrost Bolt",
-						["min"] = 4324,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 80,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4324,
 						["absorbed"] = 0,
 					},
 					["Withering Heart"] = {
@@ -9749,13 +9565,13 @@ SkadaPerCharDB = {
 						["damage"] = 14014,
 						["max"] = 758,
 						["name"] = "Withering Heart",
-						["min"] = 530,
+						["glancing"] = 0,
 						["totalhits"] = 20,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 530,
 						["absorbed"] = 0,
 					},
 					["Dread Blight"] = {
@@ -9764,13 +9580,13 @@ SkadaPerCharDB = {
 						["damage"] = 281620,
 						["max"] = 4026,
 						["name"] = "Dread Blight",
-						["min"] = 2590,
+						["glancing"] = 0,
 						["totalhits"] = 85,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2590,
 						["absorbed"] = 0,
 					},
 					["Claw"] = {
@@ -9779,13 +9595,13 @@ SkadaPerCharDB = {
 						["damage"] = 68317,
 						["max"] = 2541,
 						["name"] = "Claw",
-						["min"] = 1372,
+						["glancing"] = 0,
 						["totalhits"] = 37,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1372,
 						["absorbed"] = 0,
 					},
 					["Foul Winds"] = {
@@ -9794,13 +9610,13 @@ SkadaPerCharDB = {
 						["damage"] = 10372,
 						["max"] = 1776,
 						["name"] = "Foul Winds",
-						["min"] = 1657,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1657,
 						["absorbed"] = 0,
 					},
 					["Azerite Shot"] = {
@@ -9809,13 +9625,13 @@ SkadaPerCharDB = {
 						["damage"] = 12485,
 						["max"] = 2731,
 						["name"] = "Azerite Shot",
-						["min"] = 2397,
+						["glancing"] = 0,
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 65,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2397,
 						["absorbed"] = 0,
 					},
 					["Dread Growth"] = {
@@ -9824,13 +9640,13 @@ SkadaPerCharDB = {
 						["damage"] = 8879,
 						["max"] = 4440,
 						["name"] = "Dread Growth",
-						["min"] = 4439,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4439,
 						["absorbed"] = 0,
 					},
 					["Vicious Chomp"] = {
@@ -9839,13 +9655,13 @@ SkadaPerCharDB = {
 						["damage"] = 43414,
 						["max"] = 2285,
 						["name"] = "Vicious Chomp",
-						["min"] = 2284,
+						["glancing"] = 0,
 						["totalhits"] = 19,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2284,
 						["absorbed"] = 0,
 					},
 					["Scratch"] = {
@@ -9854,13 +9670,13 @@ SkadaPerCharDB = {
 						["damage"] = 20632,
 						["max"] = 2554,
 						["name"] = "Scratch",
-						["min"] = 456,
+						["glancing"] = 0,
 						["totalhits"] = 14,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 456,
 						["absorbed"] = 0,
 					},
 					["Lingering Dread"] = {
@@ -9869,13 +9685,13 @@ SkadaPerCharDB = {
 						["damage"] = 12598,
 						["max"] = 1611,
 						["name"] = "Lingering Dread",
-						["min"] = 902,
+						["glancing"] = 0,
 						["totalhits"] = 10,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 902,
 						["absorbed"] = 0,
 					},
 					["Rearing Charge"] = {
@@ -9884,13 +9700,13 @@ SkadaPerCharDB = {
 						["damage"] = 4958,
 						["max"] = 2480,
 						["name"] = "Rearing Charge",
-						["min"] = 2478,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2478,
 						["absorbed"] = 0,
 					},
 					["Hoppy Finish"] = {
@@ -9899,13 +9715,13 @@ SkadaPerCharDB = {
 						["damage"] = 16001,
 						["max"] = 2907,
 						["name"] = "Hoppy Finish",
-						["min"] = 1246,
+						["glancing"] = 0,
 						["totalhits"] = 10,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1246,
 						["absorbed"] = 0,
 					},
 					["Flashing Fangs"] = {
@@ -9914,13 +9730,13 @@ SkadaPerCharDB = {
 						["damage"] = 50018,
 						["max"] = 2296,
 						["name"] = "Flashing Fangs",
-						["min"] = 919,
+						["glancing"] = 0,
 						["totalhits"] = 37,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 919,
 						["absorbed"] = 0,
 					},
 					["Double Strike"] = {
@@ -9929,13 +9745,13 @@ SkadaPerCharDB = {
 						["damage"] = 42415,
 						["max"] = 4726,
 						["name"] = "Double Strike",
-						["min"] = 3826,
+						["glancing"] = 0,
 						["totalhits"] = 10,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3826,
 						["absorbed"] = 0,
 					},
 					["Saber Rattle"] = {
@@ -9944,13 +9760,13 @@ SkadaPerCharDB = {
 						["damage"] = 5609,
 						["max"] = 2909,
 						["name"] = "Saber Rattle",
-						["min"] = 2700,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2700,
 						["absorbed"] = 0,
 					},
 					["Soulsteal"] = {
@@ -9959,13 +9775,13 @@ SkadaPerCharDB = {
 						["damage"] = 2415,
 						["max"] = 805,
 						["name"] = "Soulsteal",
-						["min"] = 805,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 805,
 						["absorbed"] = 0,
 					},
 					["Spore Strike"] = {
@@ -9974,13 +9790,13 @@ SkadaPerCharDB = {
 						["damage"] = 6889,
 						["max"] = 2297,
 						["name"] = "Spore Strike",
-						["min"] = 1148,
+						["glancing"] = 0,
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1148,
 						["absorbed"] = 0,
 					},
 					["Steal Trinket"] = {
@@ -9989,23 +9805,23 @@ SkadaPerCharDB = {
 						["damage"] = 5256,
 						["max"] = 1097,
 						["name"] = "Steal Trinket",
-						["min"] = 410,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 410,
 						["absorbed"] = 0,
 					},
 					["Static Charge"] = {
 						["crushing"] = 0,
 						["id"] = 187117,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 1701,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Static Charge",
 						["blocked"] = 0,
 						["totalhits"] = 2,
@@ -10019,13 +9835,13 @@ SkadaPerCharDB = {
 						["damage"] = 10968,
 						["max"] = 1828,
 						["name"] = "Rocky Bash",
-						["min"] = 1828,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1828,
 						["absorbed"] = 0,
 					},
 					["Saber Slice"] = {
@@ -10034,23 +9850,23 @@ SkadaPerCharDB = {
 						["damage"] = 43925,
 						["max"] = 3510,
 						["name"] = "Saber Slice",
-						["min"] = 2112,
+						["glancing"] = 0,
 						["totalhits"] = 15,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2112,
 						["absorbed"] = 0,
 					},
 					["Lightning Nova"] = {
 						["crushing"] = 0,
 						["id"] = 270957,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 5458,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Lightning Nova",
 						["blocked"] = 0,
 						["totalhits"] = 1,
@@ -10061,11 +9877,11 @@ SkadaPerCharDB = {
 					["Throw Rock"] = {
 						["crushing"] = 0,
 						["id"] = 36645,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 1913,
 						["school"] = 1,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Throw Rock",
 						["blocked"] = 0,
 						["totalhits"] = 1,
@@ -10079,23 +9895,23 @@ SkadaPerCharDB = {
 						["damage"] = 3654,
 						["max"] = 1370,
 						["name"] = "Off with their head!",
-						["min"] = 456,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 456,
 						["absorbed"] = 0,
 					},
 					["Trampling Charge"] = {
 						["crushing"] = 0,
 						["id"] = 210131,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 2433,
 						["school"] = 1,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Trampling Charge",
 						["blocked"] = 0,
 						["totalhits"] = 1,
@@ -10106,11 +9922,11 @@ SkadaPerCharDB = {
 					["Rumbling Earth"] = {
 						["crushing"] = 0,
 						["id"] = 270498,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 10089,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Rumbling Earth",
 						["blocked"] = 0,
 						["totalhits"] = 2,
@@ -10124,23 +9940,23 @@ SkadaPerCharDB = {
 						["damage"] = 20763,
 						["max"] = 2742,
 						["name"] = "Heavy Backhand",
-						["min"] = 1508,
+						["glancing"] = 0,
 						["totalhits"] = 10,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1508,
 						["absorbed"] = 0,
 					},
 					["Earth Bolt"] = {
 						["crushing"] = 0,
 						["id"] = 270453,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 5450,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Earth Bolt",
 						["blocked"] = 0,
 						["totalhits"] = 21,
@@ -10151,11 +9967,11 @@ SkadaPerCharDB = {
 					["Stone Shot"] = {
 						["crushing"] = 0,
 						["id"] = 270419,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 6650,
 						["school"] = 8,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Stone Shot",
 						["blocked"] = 0,
 						["totalhits"] = 3,
@@ -10166,11 +9982,11 @@ SkadaPerCharDB = {
 					["Brutal Strike"] = {
 						["crushing"] = 0,
 						["id"] = 270295,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 3825,
 						["school"] = 1,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Brutal Strike",
 						["blocked"] = 0,
 						["totalhits"] = 8,
@@ -10184,13 +10000,13 @@ SkadaPerCharDB = {
 						["damage"] = 867,
 						["max"] = 170,
 						["name"] = "Steel Jaw Trap",
-						["min"] = 119,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 119,
 						["absorbed"] = 0,
 					},
 					["Screech"] = {
@@ -10199,13 +10015,13 @@ SkadaPerCharDB = {
 						["damage"] = 52527,
 						["max"] = 5952,
 						["name"] = "Screech",
-						["min"] = 2085,
+						["glancing"] = 0,
 						["totalhits"] = 10,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2085,
 						["absorbed"] = 0,
 					},
 					["Razorsharp Teeth"] = {
@@ -10214,13 +10030,13 @@ SkadaPerCharDB = {
 						["damage"] = 1606,
 						["max"] = 930,
 						["name"] = "Razorsharp Teeth",
-						["min"] = 676,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 676,
 						["absorbed"] = 0,
 					},
 					["Stomp"] = {
@@ -10229,13 +10045,13 @@ SkadaPerCharDB = {
 						["damage"] = 22382,
 						["max"] = 3133,
 						["name"] = "Stomp",
-						["min"] = 1868,
+						["glancing"] = 0,
 						["totalhits"] = 9,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1868,
 						["absorbed"] = 0,
 					},
 					["Void Burn"] = {
@@ -10244,13 +10060,13 @@ SkadaPerCharDB = {
 						["damage"] = 5000,
 						["max"] = 3003,
 						["name"] = "Void Burn",
-						["min"] = 324,
+						["glancing"] = 0,
 						["totalhits"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 324,
 						["absorbed"] = 0,
 					},
 					["Soul Burst"] = {
@@ -10259,13 +10075,13 @@ SkadaPerCharDB = {
 						["damage"] = 35291,
 						["max"] = 2220,
 						["name"] = "Soul Burst",
-						["min"] = 1553,
+						["glancing"] = 0,
 						["totalhits"] = 18,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1553,
 						["absorbed"] = 0,
 					},
 					["Lick"] = {
@@ -10274,13 +10090,13 @@ SkadaPerCharDB = {
 						["damage"] = 149531,
 						["max"] = 5302,
 						["name"] = "Lick",
-						["min"] = 717,
+						["glancing"] = 0,
 						["totalhits"] = 104,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 717,
 						["absorbed"] = 0,
 					},
 					["Creaming"] = {
@@ -10289,13 +10105,13 @@ SkadaPerCharDB = {
 						["damage"] = 3658,
 						["max"] = 915,
 						["name"] = "Creaming",
-						["min"] = 914,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 914,
 						["absorbed"] = 0,
 					},
 					["Thorned Claw"] = {
@@ -10304,43 +10120,13 @@ SkadaPerCharDB = {
 						["damage"] = 36253,
 						["max"] = 1006,
 						["name"] = "Thorned Claw",
-						["min"] = 340,
+						["glancing"] = 0,
 						["totalhits"] = 69,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Bite"] = {
-						["crushing"] = 0,
-						["id"] = 255852,
-						["damage"] = 49391,
-						["max"] = 3403,
-						["name"] = "Bite",
-						["min"] = 1716,
-						["totalhits"] = 19,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 8,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Flailing Punch"] = {
-						["crushing"] = 0,
-						["id"] = 269890,
-						["damage"] = 5427,
-						["max"] = 2851,
-						["name"] = "Flailing Punch",
-						["min"] = 2576,
-						["totalhits"] = 2,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 340,
 						["absorbed"] = 0,
 					},
 					["Chilling Flurry"] = {
@@ -10349,28 +10135,13 @@ SkadaPerCharDB = {
 						["damage"] = 8968,
 						["max"] = 2242,
 						["name"] = "Chilling Flurry",
-						["min"] = 2242,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Bone Splinter"] = {
-						["crushing"] = 0,
-						["id"] = 256880,
-						["damage"] = 36001,
-						["max"] = 2742,
-						["name"] = "Bone Splinter",
-						["min"] = 319,
-						["totalhits"] = 43,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2242,
 						["absorbed"] = 0,
 					},
 					["Cold Snap"] = {
@@ -10379,163 +10150,13 @@ SkadaPerCharDB = {
 						["damage"] = 3828,
 						["max"] = 3828,
 						["name"] = "Cold Snap",
-						["min"] = 3828,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Shank"] = {
-						["crushing"] = 0,
-						["id"] = 277296,
-						["damage"] = 5163,
-						["max"] = 2799,
-						["name"] = "Shank",
-						["min"] = 2364,
-						["totalhits"] = 2,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Crippling Bite"] = {
-						["crushing"] = 0,
-						["id"] = 259880,
-						["damage"] = 1465,
-						["max"] = 1465,
-						["name"] = "Crippling Bite",
-						["min"] = 1465,
-						["totalhits"] = 1,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Lumbering Swipe"] = {
-						["crushing"] = 0,
-						["id"] = 277482,
-						["damage"] = 7868,
-						["max"] = 3318,
-						["name"] = "Lumbering Swipe",
-						["min"] = 1869,
-						["totalhits"] = 3,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Cleave"] = {
-						["crushing"] = 0,
-						["id"] = 277471,
-						["damage"] = 50539,
-						["max"] = 5831,
-						["name"] = "Cleave",
-						["min"] = 1472,
-						["totalhits"] = 14,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Chomp"] = {
-						["crushing"] = 0,
-						["id"] = 256504,
-						["damage"] = 25351,
-						["max"] = 3054,
-						["name"] = "Chomp",
-						["min"] = 240,
-						["totalhits"] = 28,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Backstab"] = {
-						["crushing"] = 0,
-						["id"] = 270315,
-						["damage"] = 3884,
-						["max"] = 2285,
-						["name"] = "Backstab",
-						["min"] = 1599,
-						["totalhits"] = 2,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Stab"] = {
-						["crushing"] = 0,
-						["id"] = 271652,
-						["damage"] = 2495,
-						["max"] = 2272,
-						["name"] = "Stab",
-						["min"] = 223,
-						["totalhits"] = 2,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Thrash"] = {
-						["crushing"] = 0,
-						["id"] = 257271,
-						["damage"] = 9148,
-						["max"] = 1116,
-						["name"] = "Thrash",
-						["min"] = 892,
-						["totalhits"] = 9,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Bramble Swipe"] = {
-						["crushing"] = 0,
-						["id"] = 273900,
-						["damage"] = 16832,
-						["max"] = 3124,
-						["name"] = "Bramble Swipe",
-						["min"] = 1370,
-						["totalhits"] = 11,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Mulching Strike"] = {
-						["crushing"] = 0,
-						["id"] = 273450,
-						["damage"] = 4748,
-						["max"] = 2008,
-						["name"] = "Mulching Strike",
-						["min"] = 456,
-						["totalhits"] = 7,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3828,
 						["absorbed"] = 0,
 					},
 					["Overpowering Strike"] = {
@@ -10544,13 +10165,193 @@ SkadaPerCharDB = {
 						["damage"] = 4594,
 						["max"] = 3548,
 						["name"] = "Overpowering Strike",
-						["min"] = 336,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+						["min"] = 336,
+						["absorbed"] = 0,
+					},
+					["Bone Splinter"] = {
+						["crushing"] = 0,
+						["id"] = 256880,
+						["damage"] = 36001,
+						["max"] = 2742,
+						["name"] = "Bone Splinter",
 						["glancing"] = 0,
+						["totalhits"] = 43,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 319,
+						["absorbed"] = 0,
+					},
+					["Lumbering Swipe"] = {
+						["crushing"] = 0,
+						["id"] = 277482,
+						["damage"] = 7868,
+						["max"] = 3318,
+						["name"] = "Lumbering Swipe",
+						["glancing"] = 0,
+						["totalhits"] = 3,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 1869,
+						["absorbed"] = 0,
+					},
+					["Cleave"] = {
+						["crushing"] = 0,
+						["id"] = 277471,
+						["damage"] = 50539,
+						["max"] = 5831,
+						["name"] = "Cleave",
+						["glancing"] = 0,
+						["totalhits"] = 14,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 1472,
+						["absorbed"] = 0,
+					},
+					["Crippling Bite"] = {
+						["crushing"] = 0,
+						["id"] = 259880,
+						["damage"] = 1465,
+						["max"] = 1465,
+						["name"] = "Crippling Bite",
+						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 1465,
+						["absorbed"] = 0,
+					},
+					["Backstab"] = {
+						["crushing"] = 0,
+						["id"] = 270315,
+						["damage"] = 3884,
+						["max"] = 2285,
+						["name"] = "Backstab",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 1599,
+						["absorbed"] = 0,
+					},
+					["Chomp"] = {
+						["crushing"] = 0,
+						["id"] = 256504,
+						["damage"] = 25351,
+						["max"] = 3054,
+						["name"] = "Chomp",
+						["glancing"] = 0,
+						["totalhits"] = 28,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 240,
+						["absorbed"] = 0,
+					},
+					["Flailing Punch"] = {
+						["crushing"] = 0,
+						["id"] = 269890,
+						["damage"] = 5427,
+						["max"] = 2851,
+						["name"] = "Flailing Punch",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 2576,
+						["absorbed"] = 0,
+					},
+					["Stab"] = {
+						["crushing"] = 0,
+						["id"] = 271652,
+						["damage"] = 2495,
+						["max"] = 2272,
+						["name"] = "Stab",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 223,
+						["absorbed"] = 0,
+					},
+					["Bite"] = {
+						["crushing"] = 0,
+						["id"] = 255852,
+						["damage"] = 49391,
+						["max"] = 3403,
+						["name"] = "Bite",
+						["glancing"] = 0,
+						["totalhits"] = 19,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 1716,
+						["absorbed"] = 0,
+					},
+					["Thrash"] = {
+						["crushing"] = 0,
+						["id"] = 257271,
+						["damage"] = 9148,
+						["max"] = 1116,
+						["name"] = "Thrash",
+						["glancing"] = 0,
+						["totalhits"] = 9,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 892,
+						["absorbed"] = 0,
+					},
+					["Bramble Swipe"] = {
+						["crushing"] = 0,
+						["id"] = 273900,
+						["damage"] = 16832,
+						["max"] = 3124,
+						["name"] = "Bramble Swipe",
+						["glancing"] = 0,
+						["totalhits"] = 11,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 1370,
+						["absorbed"] = 0,
+					},
+					["Mulching Strike"] = {
+						["crushing"] = 0,
+						["id"] = 273450,
+						["damage"] = 4748,
+						["max"] = 2008,
+						["name"] = "Mulching Strike",
+						["glancing"] = 0,
+						["totalhits"] = 7,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 456,
 						["absorbed"] = 0,
 					},
 					["Soul Burn"] = {
@@ -10559,13 +10360,28 @@ SkadaPerCharDB = {
 						["damage"] = 10504,
 						["max"] = 5502,
 						["name"] = "Soul Burn",
-						["min"] = 5002,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
+						["min"] = 5002,
+						["absorbed"] = 0,
+					},
+					["Execute"] = {
+						["crushing"] = 0,
+						["id"] = 270122,
+						["damage"] = 1523,
+						["max"] = 1523,
+						["name"] = "Execute",
 						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 1523,
 						["absorbed"] = 0,
 					},
 					["Shell Spin"] = {
@@ -10574,13 +10390,13 @@ SkadaPerCharDB = {
 						["damage"] = 122310,
 						["max"] = 18426,
 						["name"] = "Shell Spin",
-						["min"] = 16537,
+						["glancing"] = 0,
 						["totalhits"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 16537,
 						["absorbed"] = 0,
 					},
 					["Searing Touch"] = {
@@ -10589,13 +10405,13 @@ SkadaPerCharDB = {
 						["damage"] = 8592,
 						["max"] = 1773,
 						["name"] = "Searing Touch",
-						["min"] = 1659,
+						["glancing"] = 0,
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1659,
 						["absorbed"] = 0,
 					},
 					["Strike of the Moon"] = {
@@ -10604,23 +10420,23 @@ SkadaPerCharDB = {
 						["damage"] = 5232,
 						["max"] = 5232,
 						["name"] = "Strike of the Moon",
-						["min"] = 5232,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 64,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 5232,
 						["absorbed"] = 0,
 					},
 					["Spiny Leaves"] = {
 						["crushing"] = 0,
 						["id"] = 270594,
+						["absorbed"] = 0,
+						["glancing"] = 0,
+						["critical"] = 0,
 						["min"] = 1021,
 						["school"] = 1,
-						["critical"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
 						["name"] = "Spiny Leaves",
 						["blocked"] = 0,
 						["totalhits"] = 2,
@@ -10634,13 +10450,13 @@ SkadaPerCharDB = {
 						["damage"] = 28422,
 						["max"] = 2694,
 						["name"] = "Peck",
-						["min"] = 1017,
+						["glancing"] = 0,
 						["totalhits"] = 20,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1017,
 						["absorbed"] = 0,
 					},
 					["Impaling Quills"] = {
@@ -10649,118 +10465,13 @@ SkadaPerCharDB = {
 						["damage"] = 27340,
 						["max"] = 3619,
 						["name"] = "Impaling Quills",
-						["min"] = 57,
+						["glancing"] = 0,
 						["totalhits"] = 62,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Execute"] = {
-						["crushing"] = 0,
-						["id"] = 270122,
-						["damage"] = 1523,
-						["max"] = 1523,
-						["name"] = "Execute",
-						["min"] = 1523,
-						["totalhits"] = 1,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Essence Consumption"] = {
-						["crushing"] = 0,
-						["id"] = 273396,
-						["damage"] = 8140,
-						["max"] = 8140,
-						["name"] = "Essence Consumption",
-						["min"] = 8140,
-						["totalhits"] = 1,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 32,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Venomous Sting"] = {
-						["crushing"] = 0,
-						["id"] = 256468,
-						["damage"] = 23732,
-						["max"] = 3828,
-						["name"] = "Venomous Sting",
-						["min"] = 1531,
-						["totalhits"] = 11,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 8,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Deathstrike Venom"] = {
-						["crushing"] = 0,
-						["id"] = 158939,
-						["damage"] = 1502,
-						["max"] = 341,
-						["name"] = "Deathstrike Venom",
-						["min"] = 141,
-						["totalhits"] = 5,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 8,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Shoot"] = {
-						["crushing"] = 0,
-						["id"] = 6660,
-						["damage"] = 303358,
-						["max"] = 15471,
-						["name"] = "Shoot",
-						["min"] = 888,
-						["totalhits"] = 105,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Doom Shroom"] = {
-						["crushing"] = 0,
-						["id"] = 270156,
-						["damage"] = 7578,
-						["max"] = 3789,
-						["name"] = "Doom Shroom",
-						["min"] = 3789,
-						["totalhits"] = 2,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 32,
-						["resisted"] = 0,
-						["glancing"] = 0,
-						["absorbed"] = 0,
-					},
-					["Crippling Strike"] = {
-						["crushing"] = 0,
-						["id"] = 277491,
-						["damage"] = 2468,
-						["max"] = 980,
-						["name"] = "Crippling Strike",
-						["min"] = 333,
-						["totalhits"] = 5,
-						["critical"] = 0,
-						["blocked"] = 0,
-						["school"] = 1,
-						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 57,
 						["absorbed"] = 0,
 					},
 					["Ferocious Bite"] = {
@@ -10769,13 +10480,118 @@ SkadaPerCharDB = {
 						["damage"] = 4097,
 						["max"] = 4097,
 						["name"] = "Ferocious Bite",
-						["min"] = 4097,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
+						["min"] = 4097,
+						["absorbed"] = 0,
+					},
+					["Essence Consumption"] = {
+						["crushing"] = 0,
+						["id"] = 273396,
+						["damage"] = 8140,
+						["max"] = 8140,
+						["name"] = "Essence Consumption",
 						["glancing"] = 0,
+						["totalhits"] = 1,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 8140,
+						["absorbed"] = 0,
+					},
+					["Shank"] = {
+						["crushing"] = 0,
+						["id"] = 277296,
+						["damage"] = 5163,
+						["max"] = 2799,
+						["name"] = "Shank",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 2364,
+						["absorbed"] = 0,
+					},
+					["Venomous Sting"] = {
+						["crushing"] = 0,
+						["id"] = 256468,
+						["damage"] = 23732,
+						["max"] = 3828,
+						["name"] = "Venomous Sting",
+						["glancing"] = 0,
+						["totalhits"] = 11,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 1531,
+						["absorbed"] = 0,
+					},
+					["Shoot"] = {
+						["crushing"] = 0,
+						["id"] = 6660,
+						["damage"] = 303358,
+						["max"] = 15471,
+						["name"] = "Shoot",
+						["glancing"] = 0,
+						["totalhits"] = 105,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 888,
+						["absorbed"] = 0,
+					},
+					["Deathstrike Venom"] = {
+						["crushing"] = 0,
+						["id"] = 158939,
+						["damage"] = 1502,
+						["max"] = 341,
+						["name"] = "Deathstrike Venom",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 8,
+						["resisted"] = 0,
+						["min"] = 141,
+						["absorbed"] = 0,
+					},
+					["Doom Shroom"] = {
+						["crushing"] = 0,
+						["id"] = 270156,
+						["damage"] = 7578,
+						["max"] = 3789,
+						["name"] = "Doom Shroom",
+						["glancing"] = 0,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 32,
+						["resisted"] = 0,
+						["min"] = 3789,
+						["absorbed"] = 0,
+					},
+					["Crippling Strike"] = {
+						["crushing"] = 0,
+						["id"] = 277491,
+						["damage"] = 2468,
+						["max"] = 980,
+						["name"] = "Crippling Strike",
+						["glancing"] = 0,
+						["totalhits"] = 5,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["min"] = 333,
 						["absorbed"] = 0,
 					},
 					["Soul Curse"] = {
@@ -10784,13 +10600,13 @@ SkadaPerCharDB = {
 						["damage"] = 13640,
 						["max"] = 2274,
 						["name"] = "Soul Curse",
-						["min"] = 2273,
+						["glancing"] = 0,
 						["totalhits"] = 6,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2273,
 						["absorbed"] = 0,
 					},
 					["Opportunistic Strike"] = {
@@ -10799,13 +10615,13 @@ SkadaPerCharDB = {
 						["damage"] = 17336,
 						["max"] = 2814,
 						["name"] = "Opportunistic Strike",
-						["min"] = 2195,
+						["glancing"] = 0,
 						["totalhits"] = 7,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2195,
 						["absorbed"] = 0,
 					},
 					["Void Swipe"] = {
@@ -10814,13 +10630,13 @@ SkadaPerCharDB = {
 						["damage"] = 5560,
 						["max"] = 1933,
 						["name"] = "Void Swipe",
-						["min"] = 1785,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1785,
 						["absorbed"] = 0,
 					},
 					["Cursed Hoof"] = {
@@ -10829,13 +10645,13 @@ SkadaPerCharDB = {
 						["damage"] = 7350,
 						["max"] = 2727,
 						["name"] = "Cursed Hoof",
-						["min"] = 2292,
+						["glancing"] = 0,
 						["totalhits"] = 3,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2292,
 						["absorbed"] = 0,
 					},
 					["Claws of Ice"] = {
@@ -10844,13 +10660,13 @@ SkadaPerCharDB = {
 						["damage"] = 3346,
 						["max"] = 3346,
 						["name"] = "Claws of Ice",
-						["min"] = 3346,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 16,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 3346,
 						["absorbed"] = 0,
 					},
 					["Thrashing Claw"] = {
@@ -10859,13 +10675,13 @@ SkadaPerCharDB = {
 						["damage"] = 6963,
 						["max"] = 2332,
 						["name"] = "Thrashing Claw",
-						["min"] = 1483,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1483,
 						["absorbed"] = 0,
 					},
 					["Swoop"] = {
@@ -10874,13 +10690,13 @@ SkadaPerCharDB = {
 						["damage"] = 3547,
 						["max"] = 1810,
 						["name"] = "Swoop",
-						["min"] = 1737,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1737,
 						["absorbed"] = 0,
 					},
 					["Cutlass Slash"] = {
@@ -10889,13 +10705,13 @@ SkadaPerCharDB = {
 						["damage"] = 23425,
 						["max"] = 2665,
 						["name"] = "Cutlass Slash",
-						["min"] = 1241,
+						["glancing"] = 0,
 						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1241,
 						["absorbed"] = 0,
 					},
 					["Pinch"] = {
@@ -10904,13 +10720,13 @@ SkadaPerCharDB = {
 						["damage"] = 49881,
 						["max"] = 2656,
 						["name"] = "Pinch",
-						["min"] = 1589,
+						["glancing"] = 0,
 						["totalhits"] = 25,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1589,
 						["absorbed"] = 0,
 					},
 					["Loathsome Bite"] = {
@@ -10919,13 +10735,13 @@ SkadaPerCharDB = {
 						["damage"] = 20202,
 						["max"] = 1884,
 						["name"] = "Loathsome Bite",
-						["min"] = 1290,
+						["glancing"] = 0,
 						["totalhits"] = 13,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1290,
 						["absorbed"] = 0,
 					},
 					["Vulpera Fireflask"] = {
@@ -10934,13 +10750,13 @@ SkadaPerCharDB = {
 						["damage"] = 2646,
 						["max"] = 563,
 						["name"] = "Vulpera Fireflask",
-						["min"] = 394,
+						["glancing"] = 0,
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 4,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 394,
 						["absorbed"] = 0,
 					},
 					["Flail"] = {
@@ -10949,13 +10765,13 @@ SkadaPerCharDB = {
 						["damage"] = 4661,
 						["max"] = 1371,
 						["name"] = "Flail",
-						["min"] = 959,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 959,
 						["absorbed"] = 0,
 					},
 					["Dread Superstition"] = {
@@ -10964,13 +10780,13 @@ SkadaPerCharDB = {
 						["damage"] = 10015,
 						["max"] = 5108,
 						["name"] = "Dread Superstition",
-						["min"] = 4907,
+						["glancing"] = 0,
 						["totalhits"] = 2,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 4907,
 						["absorbed"] = 0,
 					},
 					["Pointed Carapace"] = {
@@ -10979,13 +10795,13 @@ SkadaPerCharDB = {
 						["damage"] = 2954,
 						["max"] = 880,
 						["name"] = "Pointed Carapace",
-						["min"] = 678,
+						["glancing"] = 0,
 						["totalhits"] = 4,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 678,
 						["absorbed"] = 0,
 					},
 					["Barbed Strike"] = {
@@ -10994,13 +10810,13 @@ SkadaPerCharDB = {
 						["damage"] = 7516,
 						["max"] = 1190,
 						["name"] = "Barbed Strike",
-						["min"] = 456,
+						["glancing"] = 0,
 						["totalhits"] = 12,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 456,
 						["absorbed"] = 0,
 					},
 					["Dripping Fangs"] = {
@@ -11009,13 +10825,13 @@ SkadaPerCharDB = {
 						["damage"] = 18369,
 						["max"] = 2297,
 						["name"] = "Dripping Fangs",
-						["min"] = 2296,
+						["glancing"] = 0,
 						["totalhits"] = 8,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 8,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2296,
 						["absorbed"] = 0,
 					},
 					["Gore"] = {
@@ -11024,13 +10840,13 @@ SkadaPerCharDB = {
 						["damage"] = 34019,
 						["max"] = 3693,
 						["name"] = "Gore",
-						["min"] = 456,
+						["glancing"] = 0,
 						["totalhits"] = 36,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 456,
 						["absorbed"] = 0,
 					},
 					["Ruinous Volley"] = {
@@ -11039,13 +10855,13 @@ SkadaPerCharDB = {
 						["damage"] = 2590,
 						["max"] = 2590,
 						["name"] = "Ruinous Volley",
-						["min"] = 2590,
+						["glancing"] = 0,
 						["totalhits"] = 1,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 32,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 2590,
 						["absorbed"] = 0,
 					},
 					["Bash"] = {
@@ -11054,54 +10870,46 @@ SkadaPerCharDB = {
 						["damage"] = 5714,
 						["max"] = 1143,
 						["name"] = "Bash",
-						["min"] = 1142,
+						["glancing"] = 0,
 						["totalhits"] = 5,
 						["critical"] = 0,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 1142,
 						["absorbed"] = 0,
 					},
 					["Attack"] = {
 						["crushing"] = 0,
 						["id"] = 6603,
-						["damage"] = 4522891,
+						["damage"] = 4523041,
 						["max"] = 26031,
 						["name"] = "Attack",
-						["min"] = 121,
-						["totalhits"] = 2462,
+						["glancing"] = 0,
+						["totalhits"] = 2465,
 						["critical"] = 184,
 						["blocked"] = 0,
 						["school"] = 1,
 						["resisted"] = 0,
-						["glancing"] = 0,
+						["min"] = 48,
 						["absorbed"] = 0,
 					},
 				},
-				["healed"] = {
-					["Player-75-058380E2"] = {
-						["role"] = "DAMAGER",
-						["name"] = "Shanyt",
-						["amount"] = 6610376,
-						["class"] = "WARRIOR",
-						["shielding"] = 0,
-					},
-				},
-				["ffdamagedone"] = 0,
+				["maxhp"] = 186700,
 				["ffdamagedonetargets"] = {
 				},
+				["name"] = "Shanyt",
 				["alertCount"] = 8,
+				["damagetaken"] = 7979132,
 				["power"] = {
 					{
 						["spells"] = {
-							[195707] = 4930.00000096113,
+							[195707] = 4939.00000096113,
 							[100] = 1138.30000066757,
 						},
-						["amount"] = 6068.30000162869,
+						["amount"] = 6077.30000162869,
 					}, -- [1]
 				},
-				["name"] = "Shanyt",
 				["alert"] = {
 					["High"] = {
 						["alertDamage"] = 0,
@@ -11129,18 +10937,18 @@ SkadaPerCharDB = {
 								["max"] = 0,
 								["alertDamage"] = 0,
 							},
-							["+Trampling Charge"] = {
-								["min"] = 0,
-								["alertCount"] = 1,
-								["id"] = 210131,
-								["alertID"] = "Fail",
-								["max"] = 0,
-								["alertDamage"] = 0,
-							},
 							["+Hoppy Finish"] = {
 								["min"] = 0,
 								["alertCount"] = 2,
 								["id"] = 264403,
+								["alertID"] = "Fail",
+								["max"] = 0,
+								["alertDamage"] = 0,
+							},
+							["+Trampling Charge"] = {
+								["min"] = 0,
+								["alertCount"] = 1,
+								["id"] = 210131,
 								["alertID"] = "Fail",
 								["max"] = 0,
 								["alertDamage"] = 0,
@@ -11158,7 +10966,7 @@ SkadaPerCharDB = {
 						["alertDamage"] = 0,
 					},
 				},
-				["shielding"] = 0,
+				["dispells"] = 1,
 			}, -- [16]
 			{
 				["healingabsorbed"] = 0,
@@ -11169,13 +10977,12 @@ SkadaPerCharDB = {
 				["auras"] = {
 				},
 				["alertDamage"] = 0,
-				["healingspells"] = {
-				},
+				["role"] = "NONE",
 				["time"] = 5,
 				["interrupts"] = 0,
-				["name"] = "Treant",
 				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["dispells"] = 0,
 				["damage"] = 16526,
 				["damagespells"] = {
 					["Attack"] = {
@@ -11183,26 +10990,26 @@ SkadaPerCharDB = {
 						["criticalamount"] = 7083,
 						["id"] = 6603,
 						["damage"] = 16526,
-						["totalhits"] = 11,
 						["max"] = 2361,
+						["school"] = 1,
 						["min"] = 1180,
 						["criticalmax"] = 2361,
-						["critical"] = 3,
-						["hit"] = 8,
-						["school"] = 1,
 						["hitmax"] = 1181,
+						["hit"] = 8,
+						["totalhits"] = 11,
+						["critical"] = 3,
 						["criticalmin"] = 2361,
 						["hitamount"] = 9443,
 					},
 				},
-				["dispells"] = 0,
-				["damagetaken"] = 0,
 				["deathlog"] = {
 				},
+				["healed"] = {
+				},
+				["shielding"] = 0,
 				["id"] = "Treant",
 				["maxhp"] = 0,
-				["power"] = {
-				},
+				["name"] = "Treant",
 				["damagetakenspells"] = {
 				},
 				["healing"] = 0,
@@ -11210,16 +11017,17 @@ SkadaPerCharDB = {
 				["ffdamagedonetargets"] = {
 				},
 				["alertCount"] = 0,
-				["healed"] = {
+				["damagetaken"] = 0,
+				["power"] = {
 				},
-				["shielding"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["healingspells"] = {
+				},
 			}, -- [17]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 174700,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -11227,9 +11035,9 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Quick Navigation"] = {
 						["uptime"] = 0,
-						["name"] = "Quick Navigation",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Quick Navigation",
 						["auratype"] = "BUFF",
 						["id"] = 268893,
 					},
@@ -11243,14 +11051,13 @@ SkadaPerCharDB = {
 					},
 					["Resounding Protection"] = {
 						["uptime"] = 0,
-						["name"] = "Resounding Protection",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Resounding Protection",
 						["auratype"] = "BUFF",
 						["id"] = 269279,
 					},
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 					["Resounding Protection"] = {
 						["shielding"] = 21397,
@@ -11265,11 +11072,19 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 7,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+					[8] = {
+						["spells"] = {
+							[93402] = 6,
+						},
+						["amount"] = 6,
+					},
+				},
+				["maxhp"] = 174700,
 				["damage"] = 25629,
 				["damagespells"] = {
 					["Moonfire"] = {
@@ -11277,14 +11092,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 6246,
 						["id"] = 164812,
 						["damage"] = 9307,
-						["totalhits"] = 4,
 						["max"] = 3123,
+						["school"] = 64,
 						["min"] = 1530,
 						["criticalmax"] = 3123,
-						["critical"] = 2,
-						["hit"] = 2,
-						["school"] = 64,
 						["hitmax"] = 1531,
+						["hit"] = 2,
+						["totalhits"] = 4,
+						["critical"] = 2,
 						["criticalmin"] = 3123,
 						["hitamount"] = 3061,
 					},
@@ -11293,19 +11108,19 @@ SkadaPerCharDB = {
 						["criticalamount"] = 3659,
 						["id"] = 164815,
 						["damage"] = 16322,
-						["totalhits"] = 8,
 						["max"] = 3659,
+						["school"] = 8,
 						["min"] = 1793,
 						["criticalmax"] = 3659,
-						["hitmax"] = 1829,
-						["hit"] = 7,
-						["school"] = 8,
 						["critical"] = 1,
+						["hit"] = 7,
+						["totalhits"] = 8,
+						["hitmax"] = 1829,
 						["criticalmin"] = 3659,
 						["hitamount"] = 12663,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Ohitekah",
 				["healed"] = {
 					["Player-1151-06880CF0"] = {
 						["role"] = "DAMAGER",
@@ -11315,13 +11130,7 @@ SkadaPerCharDB = {
 						["shielding"] = 21397,
 					},
 				},
-				["power"] = {
-					[8] = {
-						["spells"] = {
-							[93402] = 6,
-						},
-						["amount"] = 6,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-1151-06880CF0",
 				["healing"] = 21397,
@@ -11330,19 +11139,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Ohitekah",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 21397,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 21397,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [18]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 142980,
+				["class"] = "DRUID",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -11350,21 +11158,29 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Unstable Flames"] = {
 						["uptime"] = 0,
-						["name"] = "Unstable Flames",
 						["active"] = 0,
 						["school"] = 4,
+						["name"] = "Unstable Flames",
 						["auratype"] = "BUFF",
 						["id"] = 279902,
 					},
 				},
-				["class"] = "DRUID",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 6,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+					[8] = {
+						["spells"] = {
+							[190984] = 8,
+							[194153] = 12,
+						},
+						["amount"] = 20,
+					},
+				},
+				["maxhp"] = 142980,
 				["damage"] = 45906,
 				["damagespells"] = {
 					["Moonfire"] = {
@@ -11404,17 +11220,10 @@ SkadaPerCharDB = {
 						["hitamount"] = 29937,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Darktidings",
 				["healed"] = {
 				},
-				["power"] = {
-					[8] = {
-						["spells"] = {
-							[190984] = 8,
-							[194153] = 12,
-						},
-						["amount"] = 20,
-					},
+				["deathlog"] = {
 				},
 				["id"] = "Player-1071-0ABF764F",
 				["healing"] = 0,
@@ -11423,40 +11232,40 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Darktidings",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [19]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 147420,
+				["class"] = "MAGE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["auras"] = {
 				},
-				["class"] = "MAGE",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+				},
+				["maxhp"] = 147420,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["dispells"] = 0,
+				["name"] = "Sintesi",
 				["healed"] = {
 				},
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Player-1151-022ACD13",
 				["healing"] = 0,
@@ -11465,19 +11274,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Sintesi",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [20]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 86540,
+				["class"] = "ROGUE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -11485,30 +11293,29 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Find Minerals"] = {
 						["uptime"] = 0,
-						["name"] = "Find Minerals",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Find Minerals",
 						["auratype"] = "BUFF",
 						["id"] = 2580,
 					},
 					["Sign of the Skirmisher"] = {
 						["uptime"] = 0,
-						["name"] = "Sign of the Skirmisher",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Sign of the Skirmisher",
 						["auratype"] = "BUFF",
 						["id"] = 186401,
 					},
 					["Resounding Protection"] = {
 						["uptime"] = 0,
-						["name"] = "Resounding Protection",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Resounding Protection",
 						["auratype"] = "BUFF",
 						["id"] = 269279,
 					},
 				},
-				["class"] = "ROGUE",
 				["healingspells"] = {
 					["Resounding Protection"] = {
 						["shielding"] = 0,
@@ -11523,15 +11330,17 @@ SkadaPerCharDB = {
 						["absorbed"] = 0,
 					},
 				},
+				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 11848.2177734375,
+				["power"] = {
+				},
+				["maxhp"] = 86540,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["dispells"] = 0,
+				["name"] = "Taznorama",
 				["healed"] = {
 					["Player-1168-07DBD65C"] = {
 						["role"] = "DAMAGER",
@@ -11541,7 +11350,7 @@ SkadaPerCharDB = {
 						["shielding"] = 0,
 					},
 				},
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Player-1168-07DBD65C",
 				["healing"] = 0,
@@ -11550,19 +11359,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Taznorama",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [21]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 185520,
+				["class"] = "MAGE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -11570,29 +11378,30 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Glacial Spike!"] = {
 						["uptime"] = 1,
-						["name"] = "Glacial Spike!",
 						["active"] = 0,
 						["school"] = 16,
+						["name"] = "Glacial Spike!",
 						["auratype"] = "BUFF",
 						["id"] = 199844,
 					},
 					["Fingers of Frost"] = {
 						["uptime"] = 0,
-						["name"] = "Fingers of Frost",
 						["active"] = 0,
 						["school"] = 16,
+						["name"] = "Fingers of Frost",
 						["auratype"] = "BUFF",
 						["id"] = 44544,
 					},
 				},
-				["class"] = "MAGE",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 2,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+				},
+				["maxhp"] = 185520,
 				["damage"] = 13264,
 				["damagespells"] = {
 					["Icicle"] = {
@@ -11620,10 +11429,19 @@ SkadaPerCharDB = {
 						["hitamount"] = 5057,
 					},
 				},
-				["dispells"] = 0,
+				["name"] = "Demilich",
 				["healed"] = {
 				},
-				["power"] = {
+				["deathlog"] = {
+					{
+						["absorb"] = 0,
+						["amount"] = 5440,
+						["spellid"] = 145110,
+						["srcname"] = "Goonkyng-Zul'jin",
+						["hp"] = 185387,
+						["ts"] = 1555878905.2,
+					}, -- [1]
+					["pos"] = 2,
 				},
 				["id"] = "Player-3661-08065C35",
 				["healing"] = 0,
@@ -11632,49 +11450,40 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Demilich",
-				["alertCount"] = 0,
-				["deathlog"] = {
-					{
-						["absorb"] = 0,
-						["amount"] = 5440,
-						["srcname"] = "Goonkyng-Zul'jin",
-						["spellid"] = 145110,
-						["hp"] = 185387,
-						["ts"] = 1555878905.2,
-					}, -- [1]
-					["pos"] = 2,
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [22]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 180000,
+				["class"] = "MONK",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["auras"] = {
 				},
-				["class"] = "MONK",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+				},
+				["maxhp"] = 180000,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["dispells"] = 0,
+				["name"] = "Ruxan",
 				["healed"] = {
 				},
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Player-162-0A0CA8F3",
 				["healing"] = 0,
@@ -11683,19 +11492,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Ruxan",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [23]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 201780,
+				["class"] = "WARLOCK",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -11703,44 +11511,45 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Find Herbs"] = {
 						["uptime"] = 0,
-						["name"] = "Find Herbs",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Find Herbs",
 						["auratype"] = "BUFF",
 						["id"] = 2383,
 					},
 					["Sign of the Skirmisher"] = {
 						["uptime"] = 0,
-						["name"] = "Sign of the Skirmisher",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Sign of the Skirmisher",
 						["auratype"] = "BUFF",
 						["id"] = 186401,
 					},
 					["Resounding Protection"] = {
 						["uptime"] = 0,
-						["name"] = "Resounding Protection",
 						["active"] = 0,
 						["school"] = 1,
+						["name"] = "Resounding Protection",
 						["auratype"] = "BUFF",
 						["id"] = 269279,
 					},
 				},
-				["class"] = "WARLOCK",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+				},
+				["maxhp"] = 201780,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["dispells"] = 0,
+				["name"] = "Elisangryn",
 				["healed"] = {
 				},
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Player-3209-07FD2FEA",
 				["healing"] = 0,
@@ -11749,19 +11558,18 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Elisangryn",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [24]
 			{
 				["healingabsorbed"] = 0,
-				["maxhp"] = 151335,
+				["class"] = "WARRIOR",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
@@ -11769,28 +11577,29 @@ SkadaPerCharDB = {
 				["auras"] = {
 					["Soul Link"] = {
 						["uptime"] = 0,
-						["name"] = "Soul Link",
 						["active"] = 0,
 						["school"] = 32,
+						["name"] = "Soul Link",
 						["auratype"] = "BUFF",
 						["id"] = 108446,
 					},
 				},
-				["class"] = "WARRIOR",
 				["healingspells"] = {
 				},
+				["ccbreaks"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
-				["alertDamage"] = 0,
-				["ccbreaks"] = 0,
 				["overhealing"] = 0,
+				["power"] = {
+				},
+				["maxhp"] = 151335,
 				["damage"] = 0,
 				["damagespells"] = {
 				},
-				["dispells"] = 0,
+				["name"] = "Unknown",
 				["healed"] = {
 				},
-				["power"] = {
+				["deathlog"] = {
 				},
 				["id"] = "Pet-0-4215-1643-24992-58965-0302327B63",
 				["healing"] = 0,
@@ -11799,15 +11608,14 @@ SkadaPerCharDB = {
 				},
 				["ffdamagedone"] = 0,
 				["damagetaken"] = 0,
-				["name"] = "Unknown",
-				["alertCount"] = 0,
-				["deathlog"] = {
-				},
-				["shielding"] = 0,
-				["alert"] = {
-				},
 				["ffdamagedonetargets"] = {
 				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["dispells"] = 0,
+				["alert"] = {
+				},
+				["alertDamage"] = 0,
 			}, -- [25]
 			{
 				["healingabsorbed"] = 0,
@@ -11817,11 +11625,9 @@ SkadaPerCharDB = {
 				},
 				["alertDamage"] = 0,
 				["dispells"] = 0,
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
 				["overhealing"] = 0,
 				["interrupts"] = 0,
-				["ffdamagedonetargets"] = {
-				},
 				["healingspells"] = {
 					["Tura'aka: Leech"] = {
 						["shielding"] = 0,
@@ -11837,6 +11643,16 @@ SkadaPerCharDB = {
 					},
 				},
 				["time"] = 6,
+				["auras"] = {
+					["Tura'aka: Growl"] = {
+						["name"] = "Tura'aka: Growl",
+						["active"] = 0,
+						["school"] = 1,
+						["uptime"] = 3,
+						["auratype"] = "DEBUFF",
+						["id"] = 2649,
+					},
+				},
 				["damage"] = 23699,
 				["damagespells"] = {
 					["Tura'aka: Kill Command"] = {
@@ -11868,14 +11684,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 2588,
 						["id"] = 6603,
 						["damage"] = 6471,
-						["totalhits"] = 4,
 						["max"] = 2588,
+						["school"] = 1,
 						["min"] = 1293,
 						["criticalmax"] = 2588,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 1295,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 2588,
 						["hitamount"] = 3883,
 					},
@@ -11892,16 +11708,20 @@ SkadaPerCharDB = {
 						["hitamount"] = 9283,
 					},
 				},
-				["auras"] = {
-					["Tura'aka: Growl"] = {
-						["name"] = "Tura'aka: Growl",
-						["active"] = 0,
-						["school"] = 1,
-						["uptime"] = 3,
-						["auratype"] = "DEBUFF",
-						["id"] = 2649,
-					},
+				["shielding"] = 0,
+				["damagetaken"] = 0,
+				["power"] = {
 				},
+				["id"] = "Player-1071-0727BA44",
+				["healing"] = 2112,
+				["ffdamagedonetargets"] = {
+				},
+				["damagetakenspells"] = {
+				},
+				["maxhp"] = 0,
+				["role"] = "NONE",
+				["name"] = "Fenago",
+				["alertCount"] = 0,
 				["healed"] = {
 					["Pet-0-3133-1642-1191-83591-02031BBD60"] = {
 						["shielding"] = 0,
@@ -11910,23 +11730,11 @@ SkadaPerCharDB = {
 						["amount"] = 2112,
 					},
 				},
-				["shielding"] = 0,
-				["id"] = "Player-1071-0727BA44",
-				["healing"] = 2112,
 				["deathlog"] = {
-				},
-				["damagetakenspells"] = {
-				},
-				["maxhp"] = 0,
-				["role"] = "NONE",
-				["name"] = "Fenago",
-				["alertCount"] = 0,
-				["damagetaken"] = 0,
-				["power"] = {
 				},
 				["alert"] = {
 				},
-				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 			}, -- [26]
 			{
 				["healingabsorbed"] = 0,
@@ -11936,11 +11744,9 @@ SkadaPerCharDB = {
 				},
 				["alertDamage"] = 0,
 				["dispells"] = 0,
-				["ffdamagedone"] = 0,
+				["ccbreaks"] = 0,
 				["overhealing"] = 18317,
 				["interrupts"] = 0,
-				["ffdamagedonetargets"] = {
-				},
 				["healingspells"] = {
 					["Ava: Leech"] = {
 						["shielding"] = 0,
@@ -11956,6 +11762,16 @@ SkadaPerCharDB = {
 					},
 				},
 				["time"] = 48,
+				["auras"] = {
+					["Ava: Furious Bite"] = {
+						["uptime"] = 12,
+						["active"] = 0,
+						["auratype"] = "DEBUFF",
+						["id"] = 263840,
+						["name"] = "Ava: Furious Bite",
+						["school"] = 1,
+					},
+				},
 				["damage"] = 234878,
 				["damagespells"] = {
 					["Ava: Kill Command"] = {
@@ -11975,14 +11791,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 46097,
 						["id"] = 17253,
 						["damage"] = 101601,
-						["totalhits"] = 15,
 						["max"] = 12198,
+						["school"] = 1,
 						["min"] = 4792,
 						["criticalmax"] = 12198,
-						["critical"] = 4,
-						["hit"] = 11,
-						["school"] = 1,
 						["hitmax"] = 6099,
+						["hit"] = 11,
+						["totalhits"] = 15,
+						["critical"] = 4,
 						["criticalmin"] = 9723,
 						["hitamount"] = 55504,
 					},
@@ -11991,14 +11807,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 17926,
 						["id"] = 6603,
 						["damage"] = 53061,
-						["totalhits"] = 29,
 						["max"] = 3453,
+						["school"] = 1,
 						["min"] = 1364,
 						["criticalmax"] = 3453,
-						["critical"] = 6,
-						["hit"] = 23,
-						["school"] = 1,
 						["hitmax"] = 1737,
+						["hit"] = 23,
+						["totalhits"] = 29,
+						["critical"] = 6,
 						["criticalmin"] = 2737,
 						["hitamount"] = 35135,
 					},
@@ -12015,16 +11831,20 @@ SkadaPerCharDB = {
 						["hitamount"] = 3434,
 					},
 				},
-				["auras"] = {
-					["Ava: Furious Bite"] = {
-						["uptime"] = 12,
-						["active"] = 0,
-						["auratype"] = "DEBUFF",
-						["id"] = 263840,
-						["name"] = "Ava: Furious Bite",
-						["school"] = 1,
-					},
+				["shielding"] = 0,
+				["damagetaken"] = 0,
+				["power"] = {
 				},
+				["id"] = "Player-162-06D1CB32",
+				["healing"] = 11693,
+				["ffdamagedonetargets"] = {
+				},
+				["damagetakenspells"] = {
+				},
+				["maxhp"] = 0,
+				["role"] = "NONE",
+				["name"] = "Traelil",
+				["alertCount"] = 0,
 				["healed"] = {
 					["Pet-0-3886-1643-12380-10268-060237C2C5"] = {
 						["shielding"] = 0,
@@ -12039,23 +11859,11 @@ SkadaPerCharDB = {
 						["amount"] = 4775,
 					},
 				},
-				["shielding"] = 0,
-				["id"] = "Player-162-06D1CB32",
-				["healing"] = 11693,
 				["deathlog"] = {
-				},
-				["damagetakenspells"] = {
-				},
-				["maxhp"] = 0,
-				["role"] = "NONE",
-				["name"] = "Traelil",
-				["alertCount"] = 0,
-				["damagetaken"] = 0,
-				["power"] = {
 				},
 				["alert"] = {
 				},
-				["ccbreaks"] = 0,
+				["ffdamagedone"] = 0,
 			}, -- [27]
 			{
 				["healingabsorbed"] = 0,
@@ -12077,7 +11885,8 @@ SkadaPerCharDB = {
 				["role"] = "NONE",
 				["overhealing"] = 0,
 				["interrupts"] = 0,
-				["time"] = 11,
+				["healingspells"] = {
+				},
 				["ffdamagedone"] = 0,
 				["alertDamage"] = 0,
 				["damage"] = 145914,
@@ -12087,14 +11896,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 15693,
 						["id"] = 16827,
 						["damage"] = 37258,
-						["totalhits"] = 4,
 						["max"] = 15693,
+						["school"] = 1,
 						["min"] = 6887,
 						["criticalmax"] = 15693,
-						["critical"] = 1,
-						["hit"] = 3,
-						["school"] = 1,
 						["hitmax"] = 7791,
+						["hit"] = 3,
+						["totalhits"] = 4,
+						["critical"] = 1,
 						["criticalmin"] = 15693,
 						["hitamount"] = 21565,
 					},
@@ -12103,14 +11912,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 46883,
 						["id"] = 83381,
 						["damage"] = 60247,
-						["totalhits"] = 3,
 						["max"] = 26727,
+						["school"] = 1,
 						["min"] = 13364,
 						["criticalmax"] = 26727,
-						["hitmax"] = 13364,
-						["hit"] = 1,
-						["school"] = 1,
 						["critical"] = 2,
+						["hit"] = 1,
+						["totalhits"] = 3,
+						["hitmax"] = 13364,
 						["criticalmin"] = 20156,
 						["hitamount"] = 13364,
 					},
@@ -12119,14 +11928,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 29727,
 						["id"] = 6603,
 						["damage"] = 42193,
-						["totalhits"] = 13,
 						["max"] = 4383,
+						["school"] = 1,
 						["min"] = 1969,
 						["criticalmax"] = 4383,
-						["hitmax"] = 2191,
-						["hit"] = 6,
-						["school"] = 1,
 						["critical"] = 7,
+						["hit"] = 6,
+						["totalhits"] = 13,
+						["hitmax"] = 2191,
 						["criticalmin"] = 3938,
 						["hitamount"] = 12466,
 					},
@@ -12143,28 +11952,27 @@ SkadaPerCharDB = {
 						["hitamount"] = 6216,
 					},
 				},
-				["damagetaken"] = 0,
+				["healing"] = 0,
 				["healed"] = {
 				},
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Player-162-09985A5B",
 				["maxhp"] = 0,
-				["healing"] = 0,
+				["ffdamagedonetargets"] = {
+				},
 				["damagetakenspells"] = {
 				},
 				["ccbreaks"] = 0,
 				["power"] = {
 				},
-				["ffdamagedonetargets"] = {
-				},
-				["alertCount"] = 0,
 				["name"] = "Kazanna",
-				["healingspells"] = {
-				},
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["damagetaken"] = 0,
 				["alert"] = {
 				},
-				["deathlog"] = {
-				},
+				["time"] = 11,
 			}, -- [28]
 			{
 				["healingabsorbed"] = 0,
@@ -12178,7 +11986,8 @@ SkadaPerCharDB = {
 				["role"] = "NONE",
 				["overhealing"] = 0,
 				["interrupts"] = 0,
-				["time"] = 3,
+				["healingspells"] = {
+				},
 				["ffdamagedone"] = 0,
 				["alertDamage"] = 0,
 				["damage"] = 16554,
@@ -12188,14 +11997,14 @@ SkadaPerCharDB = {
 						["criticalamount"] = 2527,
 						["id"] = 6603,
 						["damage"] = 7495,
-						["totalhits"] = 5,
 						["max"] = 2527,
+						["school"] = 1,
 						["min"] = 1239,
 						["criticalmax"] = 2527,
-						["critical"] = 1,
-						["hit"] = 4,
-						["school"] = 1,
 						["hitmax"] = 1245,
+						["hit"] = 4,
+						["totalhits"] = 5,
+						["critical"] = 1,
 						["criticalmin"] = 2527,
 						["hitamount"] = 4968,
 					},
@@ -12224,34 +12033,90 @@ SkadaPerCharDB = {
 						["hitamount"] = 3358,
 					},
 				},
-				["damagetaken"] = 0,
+				["healing"] = 0,
 				["healed"] = {
 				},
-				["shielding"] = 0,
+				["deathlog"] = {
+				},
 				["id"] = "Player-1071-076C926C",
 				["maxhp"] = 0,
-				["healing"] = 0,
+				["ffdamagedonetargets"] = {
+				},
 				["damagetakenspells"] = {
 				},
 				["ccbreaks"] = 0,
 				["power"] = {
 				},
+				["name"] = "Gytha",
+				["alertCount"] = 0,
+				["shielding"] = 0,
+				["damagetaken"] = 0,
+				["alert"] = {
+				},
+				["time"] = 3,
+			}, -- [29]
+			{
+				["healingabsorbed"] = 0,
 				["ffdamagedonetargets"] = {
 				},
-				["alertCount"] = 0,
-				["name"] = "Gytha",
-				["healingspells"] = {
+				["ffdamagedonespells"] = {
 				},
-				["alert"] = {
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["ffdamagedone"] = 0,
+				["role"] = "NONE",
+				["overhealing"] = 0,
+				["interrupts"] = 0,
+				["power"] = {
+				},
+				["alertDamage"] = 0,
+				["damage"] = 0,
+				["damagespells"] = {
+				},
+				["shielding"] = 0,
+				["healed"] = {
 				},
 				["deathlog"] = {
 				},
-			}, -- [29]
+				["id"] = "Creature-0-3023-1116-28789-86945-00004627AA",
+				["maxhp"] = 0,
+				["ccbreaks"] = 0,
+				["damagetakenspells"] = {
+				},
+				["auras"] = {
+					["Agonize"] = {
+						["school"] = 32,
+						["name"] = "Agonize",
+						["active"] = 0,
+						["id"] = 178393,
+						["auratype"] = "DEBUFF",
+						["uptime"] = 3,
+					},
+					["Demonwrath"] = {
+						["school"] = 36,
+						["name"] = "Demonwrath",
+						["active"] = 0,
+						["id"] = 176009,
+						["auratype"] = "BUFF",
+						["uptime"] = 4,
+					},
+				},
+				["healingspells"] = {
+				},
+				["name"] = "Aeda Brightdawn",
+				["alertCount"] = 0,
+				["healing"] = 0,
+				["damagetaken"] = 0,
+				["alert"] = {
+				},
+				["time"] = 5,
+			}, -- [30]
 		},
 		["deaths"] = 1,
-		["damagetaken"] = 8017605,
+		["damagetaken"] = 8018002,
 		["power"] = {
-			6190.70000172406, -- [1]
+			6199.70000172406, -- [1]
 			nil, -- [2]
 			144, -- [3]
 			12, -- [4]
@@ -12260,10 +12125,10 @@ SkadaPerCharDB = {
 			[0] = 244,
 		},
 		["alertDamage"] = 0,
-		["healing"] = 6703125,
+		["healing"] = 6703402,
 		["starttime"] = 1555878895,
-		["overhealing"] = 5834696.21777344,
-		["mobtaken"] = 55396324,
+		["overhealing"] = 6141824.21777344,
+		["mobtaken"] = 63105457,
 		["auras"] = {
 		},
 		["name"] = "Total",
@@ -12282,10 +12147,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 303128,
+				["done"] = 62161,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 62161,
 			},
 			["Savage Wendigo"] = {
 				["players"] = {
@@ -12300,10 +12165,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 94330,
+				["done"] = 7010,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 7010,
 			},
 			["Barbthorn Drone"] = {
 				["players"] = {
@@ -12318,10 +12183,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 130999,
+				["done"] = 31478,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 31478,
 			},
 			["Bilefang Mother"] = {
 				["players"] = {
@@ -12336,10 +12201,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 190683,
+				["done"] = 47055,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 47055,
 			},
 			["Hulking Kraulguard"] = {
 				["players"] = {
@@ -12351,10 +12216,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 4081,
+				["taken"] = 49411,
 				["htakenspell"] = {
 				},
-				["taken"] = 49411,
-				["done"] = 4081,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -12372,10 +12237,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 78252,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Tide Lurker"] = {
 				["players"] = {
@@ -12390,10 +12255,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 669429,
+				["done"] = 68492,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 68492,
 			},
 			["Irontide Treasure Counter"] = {
 				["players"] = {
@@ -12408,10 +12273,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 87375,
+				["done"] = 8898,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 8898,
 			},
 			["Fowlmouth"] = {
 				["players"] = {
@@ -12426,10 +12291,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 306098,
+				["done"] = 29409,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 29409,
 			},
 			["Vulpera Gunner"] = {
 				["players"] = {
@@ -12444,10 +12309,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 52795,
+				["done"] = 4429,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 4429,
 			},
 			["Squacks"] = {
 				["players"] = {
@@ -12462,10 +12327,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 303478,
+				["done"] = 19452,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 19452,
 			},
 			["Totes"] = {
 				["players"] = {
@@ -12480,10 +12345,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 247313,
+				["done"] = 4533,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 4533,
 			},
 			["Vigil Hill Marine"] = {
 				["players"] = {
@@ -12498,10 +12363,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 8653,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 8653,
 			},
 			["Hexenwolf Tracker"] = {
 				["players"] = {
@@ -12516,10 +12381,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 67574,
+				["done"] = 3150,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 3150,
 			},
 			["Harbor Gull"] = {
 				["players"] = {
@@ -12534,10 +12399,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 60597,
+				["done"] = 9596,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 9596,
 			},
 			["Earthgrab Totem"] = {
 				["players"] = {
@@ -12549,10 +12414,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 49380,
 				["htakenspell"] = {
 				},
-				["taken"] = 49380,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -12570,10 +12435,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 118083,
+				["done"] = 20175,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 20175,
 			},
 			["Devilsaur"] = {
 				["players"] = {
@@ -12590,6 +12455,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 13122,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 3472,
@@ -12600,8 +12467,6 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 13122,
-				["done"] = 0,
 			},
 			["Rindlewoe"] = {
 				["players"] = {
@@ -12621,10 +12486,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 395768,
+				["done"] = 74532,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 74532,
 			},
 			["Snowdrift Prowler"] = {
 				["players"] = {
@@ -12639,10 +12504,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 197538,
+				["done"] = 35837,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 35837,
 			},
 			["Coastal Scavenger"] = {
 				["players"] = {
@@ -12657,10 +12522,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 77833,
+				["done"] = 8641,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 8641,
 			},
 			["Blacktooth Knuckleduster"] = {
 				["players"] = {
@@ -12675,10 +12540,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 260436,
+				["done"] = 48373,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 48373,
 			},
 			["Odious Familiar"] = {
 				["players"] = {
@@ -12693,10 +12558,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 46406,
+				["done"] = 10990,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 10990,
 			},
 			["Scruffhide Bear"] = {
 				["players"] = {
@@ -12711,10 +12576,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 63375,
+				["done"] = 8434,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 8434,
 			},
 			["Heartsbane Disciple"] = {
 				["players"] = {
@@ -12729,10 +12594,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 178602,
+				["done"] = 55456,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 55456,
 			},
 			["Agitated Snapclaw"] = {
 				["players"] = {
@@ -12747,10 +12612,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 249478,
+				["done"] = 18211,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 18211,
 			},
 			["Irontide Brinecaster"] = {
 				["players"] = {
@@ -12765,10 +12630,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 99799,
+				["done"] = 19047,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 19047,
 			},
 			["Kennings Guard"] = {
 				["players"] = {
@@ -12783,10 +12648,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 12953,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12953,
 			},
 			["Zaknufein-TheScryers"] = {
 				["players"] = {
@@ -12803,6 +12668,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 6256,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -12813,8 +12680,6 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 6256,
-				["done"] = 0,
 			},
 			["Quartermaster Ssylis"] = {
 				["players"] = {
@@ -12829,10 +12694,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 391978,
+				["done"] = 17540,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 17540,
 			},
 			["Venomous Coilscale"] = {
 				["players"] = {
@@ -12847,10 +12712,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 67785,
+				["done"] = 4600,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 4600,
 			},
 			["Irontide Trickshot"] = {
 				["players"] = {
@@ -12865,10 +12730,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 191527,
+				["done"] = 25224,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 25224,
 			},
 			["Baier-EmeraldDream"] = {
 				["players"] = {
@@ -12893,6 +12758,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 2351,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 1390,
@@ -12911,8 +12778,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 2351,
-				["done"] = 0,
 			},
 			["Writhing Cocoon"] = {
 				["players"] = {
@@ -12927,10 +12792,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 241041,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Zoey"] = {
 				["players"] = {
@@ -12947,6 +12812,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 2557,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 347,
@@ -12957,8 +12824,6 @@ SkadaPerCharDB = {
 						["hits"] = 4,
 					},
 				},
-				["htaken"] = 2557,
-				["done"] = 0,
 			},
 			["Grasping Thorns"] = {
 				["players"] = {
@@ -12970,10 +12835,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 65970,
+				["taken"] = 523849,
 				["htakenspell"] = {
 				},
-				["taken"] = 523849,
-				["done"] = 65970,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -12991,10 +12856,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 826607,
+				["done"] = 194160,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 194160,
 			},
 			["Emily Mayville"] = {
 				["players"] = {
@@ -13009,10 +12874,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 363885,
+				["done"] = 20812,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 20812,
 			},
 			["Haywire Golem"] = {
 				["players"] = {
@@ -13027,10 +12892,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 302864,
+				["done"] = 17916,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 17916,
 			},
 			["Briarwood Bulwark"] = {
 				["players"] = {
@@ -13045,10 +12910,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 71773,
+				["done"] = 12983,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12983,
 			},
 			["Vicemaul"] = {
 				["players"] = {
@@ -13063,10 +12928,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 291505,
+				["done"] = 20941,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 20941,
 			},
 			["Avalanche"] = {
 				["players"] = {
@@ -13081,10 +12946,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 307315,
+				["done"] = 14828,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14828,
 			},
 			["Shiprat"] = {
 				["players"] = {
@@ -13099,10 +12964,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 16728,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Pack Mule"] = {
 				["players"] = {
@@ -13117,10 +12982,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 65014,
+				["done"] = 3910,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 3910,
 			},
 			["Hexed Brambleback"] = {
 				["players"] = {
@@ -13135,10 +13000,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 200383,
+				["done"] = 25483,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 25483,
 			},
 			["Hissing Swell"] = {
 				["players"] = {
@@ -13153,10 +13018,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 130119,
+				["done"] = 92755,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 92755,
 			},
 			["Cutwater Reaver"] = {
 				["players"] = {
@@ -13171,10 +13036,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 262043,
+				["done"] = 14890,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14890,
 			},
 			["Blackthorne"] = {
 				["players"] = {
@@ -13189,10 +13054,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 313373,
+				["done"] = 21594,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 21594,
 			},
 			["Zeritarj"] = {
 				["players"] = {
@@ -13217,10 +13082,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 490378,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Coven Hexcaller"] = {
 				["players"] = {
@@ -13235,10 +13100,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 115624,
+				["done"] = 83724,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 83724,
 			},
 			["Mick"] = {
 				["players"] = {
@@ -13253,10 +13118,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 131705,
+				["done"] = 1779,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1779,
 			},
 			["Captain Razorspine"] = {
 				["players"] = {
@@ -13268,10 +13133,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 80932,
+				["taken"] = 496197,
 				["htakenspell"] = {
 				},
-				["taken"] = 496197,
-				["done"] = 80932,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -13289,10 +13154,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 577949,
+				["done"] = 78440,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 78440,
 			},
 			["Irontide Mastiff"] = {
 				["players"] = {
@@ -13307,10 +13172,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 47016,
+				["done"] = 18285,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 18285,
 			},
 			["Sister Lilias"] = {
 				["players"] = {
@@ -13325,10 +13190,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 387326,
+				["done"] = 52236,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 52236,
 			},
 			["Kohola"] = {
 				["players"] = {
@@ -13353,6 +13218,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 23955,
 				["htakenspell"] = {
 					["Regrowth"] = {
 						["min"] = 0,
@@ -13371,8 +13238,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 23955,
-				["done"] = 0,
 			},
 			["Neelzekeel"] = {
 				["players"] = {
@@ -13381,6 +13246,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 583,
 				["htakenspell"] = {
 					["Soul Link"] = {
 						["min"] = 43,
@@ -13391,8 +13258,6 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 583,
-				["done"] = 0,
 			},
 			["Poacher Zane"] = {
 				["players"] = {
@@ -13407,10 +13272,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 304280,
+				["done"] = 12709,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12709,
 			},
 			["Chillmist Prowler"] = {
 				["players"] = {
@@ -13425,10 +13290,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 2764,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 2764,
 			},
 			["Squirgle of the Depths"] = {
 				["players"] = {
@@ -13443,10 +13308,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 312462,
+				["done"] = 26726,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 26726,
 			},
 			["Blighted Horror"] = {
 				["players"] = {
@@ -13461,10 +13326,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 130757,
+				["done"] = 18473,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 18473,
 			},
 			["Osca the Bloodied"] = {
 				["players"] = {
@@ -13476,10 +13341,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 19880,
+				["taken"] = 311672,
 				["htakenspell"] = {
 				},
-				["taken"] = 311672,
-				["done"] = 19880,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -13497,10 +13362,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 260995,
+				["done"] = 86491,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 86491,
 			},
 			["The Caterer"] = {
 				["players"] = {
@@ -13515,10 +13380,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 178635,
+				["done"] = 10278,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 10278,
 			},
 			["Anglepoint Guard"] = {
 				["players"] = {
@@ -13533,10 +13398,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 251665,
+				["done"] = 191991,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 191991,
 			},
 			["Hexcrazed Doe"] = {
 				["players"] = {
@@ -13551,10 +13416,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 350137,
+				["done"] = 75240,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 75240,
 			},
 			["Yard Dog"] = {
 				["players"] = {
@@ -13566,10 +13431,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 9029,
+				["taken"] = 66667,
 				["htakenspell"] = {
 				},
-				["taken"] = 66667,
-				["done"] = 9029,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -13587,10 +13452,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 94888,
+				["done"] = 27470,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 27470,
 			},
 			["Cursed Game-hawk"] = {
 				["players"] = {
@@ -13605,10 +13470,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 141817,
+				["done"] = 44985,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 44985,
 			},
 			["Frenzied Cottontail"] = {
 				["players"] = {
@@ -13623,10 +13488,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 271664,
+				["done"] = 25587,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 25587,
 			},
 			["Bangersnmash-TheScryers"] = {
 				["players"] = {
@@ -13643,6 +13508,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 7056,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -13661,8 +13528,6 @@ SkadaPerCharDB = {
 						["hits"] = 19,
 					},
 				},
-				["htaken"] = 7056,
-				["done"] = 0,
 			},
 			["Ookin Outlaw"] = {
 				["players"] = {
@@ -13677,10 +13542,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 71930,
+				["done"] = 10894,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 10894,
 			},
 			["Tidesage Bankson"] = {
 				["players"] = {
@@ -13695,10 +13560,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 210829,
+				["done"] = 17476,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 17476,
 			},
 			["Charmed Sailor"] = {
 				["players"] = {
@@ -13713,10 +13578,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 210991,
+				["done"] = 56993,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 56993,
 			},
 			["Giant Woodworm"] = {
 				["players"] = {
@@ -13731,10 +13596,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 19611,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Stormsong Hunter"] = {
 				["players"] = {
@@ -13746,10 +13611,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 55056,
+				["taken"] = 64879,
 				["htakenspell"] = {
 				},
-				["taken"] = 64879,
-				["done"] = 55056,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -13767,10 +13632,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 208503,
+				["done"] = 62377,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 62377,
 			},
 			["Falathial-EmeraldDream"] = {
 				["players"] = {
@@ -13787,6 +13652,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 6668,
 				["htakenspell"] = {
 					["Ysera's Gift"] = {
 						["min"] = 2222,
@@ -13797,8 +13664,6 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 6668,
-				["done"] = 0,
 			},
 			["Gytha-Sentinels"] = {
 				["players"] = {
@@ -13815,6 +13680,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 4385,
 				["htakenspell"] = {
 					["Impassive Visage"] = {
 						["min"] = 4385,
@@ -13825,8 +13692,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 4385,
-				["done"] = 0,
 			},
 			["Barbthorn Worker"] = {
 				["players"] = {
@@ -13841,10 +13706,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 62376,
+				["done"] = 6315,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 6315,
 			},
 			["Arvon the Betrayed"] = {
 				["players"] = {
@@ -13859,10 +13724,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 303541,
+				["done"] = 14233,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14233,
 			},
 			["Executioner Blackwell"] = {
 				["players"] = {
@@ -13877,10 +13742,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 305168,
+				["done"] = 37392,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 37392,
 			},
 			["Creeping Brambles"] = {
 				["players"] = {
@@ -13892,10 +13757,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 5172,
+				["taken"] = 79860,
 				["htakenspell"] = {
 				},
-				["taken"] = 79860,
-				["done"] = 5172,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -13913,10 +13778,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 398504,
+				["done"] = 43116,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 43116,
 			},
 			["Bilefang Skitterer"] = {
 				["players"] = {
@@ -13936,10 +13801,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 1046966,
+				["done"] = 148176,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 148176,
 			},
 			["Phrawg-Ravenholdt"] = {
 				["players"] = {
@@ -13980,6 +13845,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 11652,
 				["htakenspell"] = {
 					["Self Reliance"] = {
 						["min"] = 995,
@@ -14014,8 +13881,6 @@ SkadaPerCharDB = {
 						["hits"] = 5,
 					},
 				},
-				["htaken"] = 11652,
-				["done"] = 0,
 			},
 			["Briarback Lookout"] = {
 				["players"] = {
@@ -14027,10 +13892,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 19918,
+				["taken"] = 259610,
 				["htakenspell"] = {
 				},
-				["taken"] = 259610,
-				["done"] = 19918,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -14039,6 +13904,8 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Justicar's Vengeance"] = {
 						["min"] = 0,
@@ -14057,8 +13924,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 					["Justicar's Vengeance"] = {
@@ -14092,10 +13957,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 1013,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1013,
 			},
 			["Ashtail Bandicoon"] = {
 				["players"] = {
@@ -14107,10 +13972,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 6527,
+				["taken"] = 48293,
 				["htakenspell"] = {
 				},
-				["taken"] = 48293,
-				["done"] = 6527,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -14128,10 +13993,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 62238,
+				["done"] = 7015,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 7015,
 			},
 			["Fhanng-Dawnbringer"] = {
 				["players"] = {
@@ -14148,6 +14013,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -14158,8 +14025,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Bellela-EarthenRing"] = {
 				["players"] = {
@@ -14192,6 +14057,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 46277,
 				["htakenspell"] = {
 					["Impassive Visage"] = {
 						["min"] = 3605,
@@ -14218,8 +14085,6 @@ SkadaPerCharDB = {
 						["hits"] = 21,
 					},
 				},
-				["htaken"] = 46277,
-				["done"] = 0,
 			},
 			["Kazanna-EmeraldDream"] = {
 				["players"] = {
@@ -14236,6 +14101,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -14246,8 +14113,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Barman Bill"] = {
 				["players"] = {
@@ -14262,10 +14127,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 303431,
+				["done"] = 18897,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 18897,
 			},
 			["Motor-Ragnaros"] = {
 				["players"] = {
@@ -14282,6 +14147,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 1120,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 166,
@@ -14292,8 +14159,6 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 1120,
-				["done"] = 0,
 			},
 			["Blighted Monstrosity"] = {
 				["players"] = {
@@ -14308,10 +14173,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 1114075,
+				["done"] = 48804,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 48804,
 			},
 			["Tiragarde Gull"] = {
 				["players"] = {
@@ -14326,10 +14191,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 2209,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Ranja"] = {
 				["players"] = {
@@ -14344,10 +14209,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 243326,
+				["done"] = 22625,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 22625,
 			},
 			["Coppertooth Prowler"] = {
 				["players"] = {
@@ -14362,10 +14227,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 225379,
+				["done"] = 27434,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 27434,
 			},
 			["Blacktooth Scrapper"] = {
 				["players"] = {
@@ -14380,10 +14245,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 364450,
+				["done"] = 100580,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 100580,
 			},
 			["Vaperduck-EmeraldDream"] = {
 				["players"] = {
@@ -14408,6 +14273,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 20931,
 				["htakenspell"] = {
 					["Ysera's Gift"] = {
 						["min"] = 6062,
@@ -14426,8 +14293,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 20931,
-				["done"] = 0,
 			},
 			["Fallhaven Pig"] = {
 				["players"] = {
@@ -14442,10 +14307,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 134193,
+				["done"] = 20887,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 20887,
 			},
 			["Barbedclaw Grizzly"] = {
 				["players"] = {
@@ -14460,10 +14325,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 7842,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["V-300 SENTRY"] = {
 				["players"] = {
@@ -14478,10 +14343,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 132982,
+				["done"] = 32383,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 32383,
 			},
 			["Raging Earthguard"] = {
 				["players"] = {
@@ -14496,10 +14361,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 394870,
+				["done"] = 23480,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 23480,
 			},
 			["Hungry Warswine"] = {
 				["players"] = {
@@ -14511,10 +14376,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 11808,
+				["taken"] = 105296,
 				["htakenspell"] = {
 				},
-				["taken"] = 105296,
-				["done"] = 11808,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -14532,10 +14397,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 306555,
+				["done"] = 86742,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 86742,
 			},
 			["The Rime Huntress"] = {
 				["players"] = {
@@ -14550,10 +14415,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 486010,
+				["done"] = 80943,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 80943,
 			},
 			["Drustbat"] = {
 				["players"] = {
@@ -14568,10 +14433,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 1104,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Vengeful Dead"] = {
 				["players"] = {
@@ -14586,10 +14451,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 511180,
+				["done"] = 42824,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 42824,
 			},
 			["Fenago-SteamwheedleCartel"] = {
 				["players"] = {
@@ -14606,6 +14471,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 6906,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 159,
@@ -14616,8 +14483,6 @@ SkadaPerCharDB = {
 						["hits"] = 11,
 					},
 				},
-				["htaken"] = 6906,
-				["done"] = 0,
 			},
 			["Monstrous Grizzly"] = {
 				["players"] = {
@@ -14632,10 +14497,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 1705,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1705,
 			},
 			["Parasitic Mindstealer"] = {
 				["players"] = {
@@ -14650,10 +14515,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 12793,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12793,
 			},
 			["Great Sea Privateer"] = {
 				["players"] = {
@@ -14668,10 +14533,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 255807,
+				["done"] = 36725,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 36725,
 			},
 			["Shiverscale the Toxic"] = {
 				["players"] = {
@@ -14686,10 +14551,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 309887,
+				["done"] = 19324,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 19324,
 			},
 			["Venomous Weaver"] = {
 				["players"] = {
@@ -14704,10 +14569,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 5912,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 5912,
 			},
 			["Heartwood Soldier"] = {
 				["players"] = {
@@ -14722,10 +14587,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 4887,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 4887,
 			},
 			["Hermit Crab"] = {
 				["players"] = {
@@ -14740,10 +14605,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 28559,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Irontide Ruffian"] = {
 				["players"] = {
@@ -14758,10 +14623,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 139505,
+				["done"] = 28548,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 28548,
 			},
 			["Briarback Warcaller"] = {
 				["players"] = {
@@ -14773,10 +14638,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 20602,
+				["taken"] = 131020,
 				["htakenspell"] = {
 				},
-				["taken"] = 131020,
-				["done"] = 20602,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -14824,10 +14689,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 61396,
+				["done"] = 9676,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 9676,
 			},
 			["Cutwater Card Shark"] = {
 				["players"] = {
@@ -14842,10 +14707,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 63025,
+				["done"] = 12251,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12251,
 			},
 			["Alpine Hare"] = {
 				["players"] = {
@@ -14860,10 +14725,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 14280,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Wandering Mouser"] = {
 				["players"] = {
@@ -14878,10 +14743,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 7014,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Gargerrie-EmeraldDream"] = {
 				["players"] = {
@@ -14890,6 +14755,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 2946,
 				["htakenspell"] = {
 					["Azerite"] = {
 						["min"] = 0,
@@ -14900,8 +14767,6 @@ SkadaPerCharDB = {
 						["hits"] = 8,
 					},
 				},
-				["htaken"] = 2946,
-				["done"] = 0,
 			},
 			["Strangemoon-Drak'thul"] = {
 				["players"] = {
@@ -14942,6 +14807,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 20242,
 				["htakenspell"] = {
 					["Ysera's Gift"] = {
 						["min"] = 8704,
@@ -14976,13 +14843,13 @@ SkadaPerCharDB = {
 						["hits"] = 6,
 					},
 				},
-				["htaken"] = 20242,
-				["done"] = 0,
 			},
 			["Lizard"] = {
 				["players"] = {
 				},
 				["hdone"] = 47,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 47,
@@ -14993,8 +14860,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 47,
 				["hdonespell"] = {
 					["Leech"] = {
@@ -15020,10 +14885,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 132540,
+				["done"] = 12097,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12097,
 			},
 			["Bashmu"] = {
 				["players"] = {
@@ -15038,10 +14903,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 306597,
+				["done"] = 16392,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 16392,
 			},
 			["Blighted Manifestation"] = {
 				["players"] = {
@@ -15056,10 +14921,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 282690,
+				["done"] = 56197,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 56197,
 			},
 			["Haegol the Hammer"] = {
 				["players"] = {
@@ -15071,10 +14936,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 7488,
+				["taken"] = 302805,
 				["htakenspell"] = {
 				},
-				["taken"] = 302805,
-				["done"] = 7488,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -15092,10 +14957,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 252860,
+				["done"] = 40485,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 40485,
 			},
 			["Earthen Thrall"] = {
 				["players"] = {
@@ -15107,10 +14972,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 14299,
+				["taken"] = 67241,
 				["htakenspell"] = {
 				},
-				["taken"] = 67241,
-				["done"] = 14299,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -15128,10 +14993,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 243114,
+				["done"] = 26307,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 26307,
 			},
 			["Snowpelt Howler"] = {
 				["players"] = {
@@ -15146,10 +15011,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 538398,
+				["done"] = 73522,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 73522,
 			},
 			["Phanlos"] = {
 				["players"] = {
@@ -15158,6 +15023,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 123770,
 				["htakenspell"] = {
 					["Health Funnel"] = {
 						["min"] = 9189,
@@ -15168,8 +15035,6 @@ SkadaPerCharDB = {
 						["hits"] = 10,
 					},
 				},
-				["htaken"] = 123770,
-				["done"] = 0,
 			},
 			["Marlee-EarthenRing"] = {
 				["players"] = {
@@ -15186,6 +15051,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 					["Touch of the Grave"] = {
 						["min"] = 0,
@@ -15196,8 +15063,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Vinemaster Orgsteen"] = {
 				["players"] = {
@@ -15209,10 +15074,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 26555,
+				["taken"] = 249504,
 				["htakenspell"] = {
 				},
-				["taken"] = 249504,
-				["done"] = 26555,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -15230,10 +15095,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 388539,
+				["done"] = 69053,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 69053,
 			},
 			["Thedodobird-Lightninghoof"] = {
 				["players"] = {
@@ -15250,6 +15115,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 62419,
 				["htakenspell"] = {
 					["Ysera's Gift"] = {
 						["min"] = 5017,
@@ -15268,8 +15135,6 @@ SkadaPerCharDB = {
 						["hits"] = 11,
 					},
 				},
-				["htaken"] = 62419,
-				["done"] = 0,
 			},
 			["Beshol"] = {
 				["players"] = {
@@ -15289,10 +15154,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 434542,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Venomscale Slitherer"] = {
 				["players"] = {
@@ -15307,10 +15172,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 133410,
+				["done"] = 28424,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 28424,
 			},
 			["Irontide Brigand"] = {
 				["players"] = {
@@ -15325,10 +15190,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 460981,
+				["done"] = 97607,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 97607,
 			},
 			["Mountain Doe"] = {
 				["players"] = {
@@ -15343,10 +15208,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 52474,
+				["done"] = 3001,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 3001,
 			},
 			["Brinescale Wavecaller"] = {
 				["players"] = {
@@ -15369,6 +15234,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 115352,
+				["done"] = 43441,
+				["htaken"] = 15490,
 				["htakenspell"] = {
 					["Healing Wave"] = {
 						["min"] = 15490,
@@ -15379,8 +15246,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 15490,
-				["done"] = 43441,
 			},
 			["Earthbound Servant"] = {
 				["players"] = {
@@ -15392,10 +15257,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 14580,
+				["taken"] = 193069,
 				["htakenspell"] = {
 				},
-				["taken"] = 193069,
-				["done"] = 14580,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -15413,10 +15278,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 311634,
+				["done"] = 128226,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 128226,
 			},
 			["Whargarble the Ill-Tempered"] = {
 				["players"] = {
@@ -15431,10 +15296,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 303506,
+				["done"] = 24500,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 24500,
 			},
 			["Brambleguard"] = {
 				["players"] = {
@@ -15449,10 +15314,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 65241,
+				["done"] = 4193,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 4193,
 			},
 			["Shallowsea Whelk"] = {
 				["players"] = {
@@ -15467,10 +15332,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 1104,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Grotesque Thrall"] = {
 				["players"] = {
@@ -15485,10 +15350,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 407965,
+				["done"] = 41001,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 41001,
 			},
 			["Overseer Bates"] = {
 				["players"] = {
@@ -15503,10 +15368,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 243592,
+				["done"] = 22947,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 22947,
 			},
 			["Starving Darkmaw"] = {
 				["players"] = {
@@ -15521,10 +15386,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 67496,
+				["done"] = 9966,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 9966,
 			},
 			["Tura'aka"] = {
 				["players"] = {
@@ -15541,6 +15406,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 4841,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 4841,
@@ -15551,8 +15418,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 4841,
-				["done"] = 0,
 			},
 			["Azurethos"] = {
 				["players"] = {
@@ -15652,11 +15517,10 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["role"] = "HEALER",
 					},
-					["Demilich-Hyjal"] = {
-						["taken"] = 9656,
+					["Treant"] = {
+						["taken"] = 16526,
 						["done"] = 0,
-						["class"] = "MAGE",
-						["role"] = "DAMAGER",
+						["role"] = "NONE",
 					},
 					["Zulema-CenarionCircle"] = {
 						["taken"] = 37122,
@@ -15670,20 +15534,21 @@ SkadaPerCharDB = {
 						["class"] = "WARRIOR",
 						["role"] = "DAMAGER",
 					},
-					["Treant"] = {
-						["taken"] = 16526,
+					["Demilich-Hyjal"] = {
+						["taken"] = 9656,
 						["done"] = 0,
-						["role"] = "NONE",
+						["class"] = "MAGE",
+						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
 				["taken"] = 1477151,
+				["done"] = 29194,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 29194,
 			},
 			["Azshaure-SteamwheedleCartel"] = {
 				["players"] = {
@@ -15716,6 +15581,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 76283,
 				["htakenspell"] = {
 					["Impassive Visage"] = {
 						["min"] = 2391,
@@ -15750,8 +15617,6 @@ SkadaPerCharDB = {
 						["hits"] = 4,
 					},
 				},
-				["htaken"] = 76283,
-				["done"] = 0,
 			},
 			["Irontide Treasure Guard"] = {
 				["players"] = {
@@ -15766,10 +15631,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 202580,
+				["done"] = 30987,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 30987,
 			},
 			["Quillrat Matriarch"] = {
 				["players"] = {
@@ -15784,10 +15649,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 391019,
+				["done"] = 2954,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 2954,
 			},
 			["Wailing Siren"] = {
 				["players"] = {
@@ -15802,15 +15667,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 544852,
+				["done"] = 81531,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 81531,
 			},
 			["Numskull-SteamwheedleCartel"] = {
 				["players"] = {
 				},
 				["hdone"] = 49055,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Impending Victory"] = {
 						["min"] = 5007,
@@ -15837,8 +15704,6 @@ SkadaPerCharDB = {
 						["hits"] = 68,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 49055,
 				["hdonespell"] = {
 					["Impending Victory"] = {
@@ -15880,10 +15745,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 119907,
+				["done"] = 7477,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 7477,
 			},
 			["Barbthorn Queen"] = {
 				["players"] = {
@@ -15898,10 +15763,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 316640,
+				["done"] = 30104,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 30104,
 			},
 			["Thewisejedi-SteamwheedleCartel"] = {
 				["players"] = {
@@ -15926,6 +15791,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 16592,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 3710,
@@ -15944,8 +15811,6 @@ SkadaPerCharDB = {
 						["hits"] = 4,
 					},
 				},
-				["htaken"] = 16592,
-				["done"] = 0,
 			},
 			["Gnarled Brute"] = {
 				["players"] = {
@@ -15960,10 +15825,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 134604,
+				["done"] = 9139,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 9139,
 			},
 			["Marshal Layre"] = {
 				["players"] = {
@@ -15983,10 +15848,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 324787,
+				["done"] = 20873,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 20873,
 			},
 			["Betsy"] = {
 				["players"] = {
@@ -16001,10 +15866,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 315169,
+				["done"] = 9078,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 9078,
 			},
 			["Raging Swell"] = {
 				["players"] = {
@@ -16019,10 +15884,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 242585,
+				["done"] = 13192,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 13192,
 			},
 			["Vale Marmot"] = {
 				["players"] = {
@@ -16037,10 +15902,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 7094,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Pack Leader Asenya"] = {
 				["players"] = {
@@ -16055,10 +15920,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 327794,
+				["done"] = 14774,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14774,
 			},
 			["Vinemaster Smagh"] = {
 				["players"] = {
@@ -16070,10 +15935,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 30161,
+				["taken"] = 495237,
 				["htakenspell"] = {
 				},
-				["taken"] = 495237,
-				["done"] = 30161,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -16091,10 +15956,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 12628,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 12628,
 			},
 			["Dador-KirinTor"] = {
 				["players"] = {
@@ -16111,6 +15976,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 					["Quick Thinking"] = {
 						["min"] = 0,
@@ -16129,8 +15996,6 @@ SkadaPerCharDB = {
 						["hits"] = 13,
 					},
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Mudfisher Crab"] = {
 				["players"] = {
@@ -16145,10 +16010,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 61522,
+				["done"] = 11586,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 11586,
 			},
 			["Alpine Falcon"] = {
 				["players"] = {
@@ -16163,10 +16028,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 76738,
+				["done"] = 7742,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 7742,
 			},
 			["Irontide Overseer"] = {
 				["players"] = {
@@ -16181,10 +16046,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 121696,
+				["done"] = 23000,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 23000,
 			},
 			["Gildurmest-EmeraldDream"] = {
 				["players"] = {
@@ -16225,6 +16090,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 80720,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 1,
@@ -16259,8 +16126,6 @@ SkadaPerCharDB = {
 						["hits"] = 7,
 					},
 				},
-				["htaken"] = 80720,
-				["done"] = 0,
 			},
 			["Blackpowder Smuggler"] = {
 				["players"] = {
@@ -16275,15 +16140,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 34556,
+				["done"] = 1119,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 1119,
 			},
 			["Ironteck-EarthenRing"] = {
 				["players"] = {
 				},
 				["hdone"] = 9717,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Justicar's Vengeance"] = {
 						["min"] = 9717,
@@ -16294,8 +16161,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 9717,
 				["hdonespell"] = {
 					["Justicar's Vengeance"] = {
@@ -16331,6 +16196,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 20400,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 75,
@@ -16349,13 +16216,54 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 20400,
+			},
+			["Nalak"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 4577153,
+						["done"] = 397,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 4577153,
+				["done"] = 397,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Supreme Lord Kazzak"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 3129247,
+						["done"] = 0,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+					["Aeda Brightdawn"] = {
+						["taken"] = 2733,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["htakenspell"] = {
+				},
+				["taken"] = 3131980,
 				["done"] = 0,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
 			},
 			["Sinthome"] = {
 				["players"] = {
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Uprooted"] = {
 						["min"] = 0,
@@ -16366,8 +16274,6 @@ SkadaPerCharDB = {
 						["hits"] = 5,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 					["Uprooted"] = {
@@ -16384,6 +16290,8 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Uprooted"] = {
 						["min"] = 0,
@@ -16402,8 +16310,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 					["Uprooted"] = {
@@ -16437,62 +16343,46 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 302563,
+				["done"] = 16797,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 16797,
 			},
-			["Briarback Packmaster"] = {
+			["Squall"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 196408,
-						["done"] = 30626,
+						["taken"] = 243250,
+						["done"] = 7346,
 						["role"] = "NONE",
 						["class"] = "WARRIOR",
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 7346,
+				["taken"] = 243250,
 				["htakenspell"] = {
 				},
-				["taken"] = 196408,
-				["done"] = 30626,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
-			["Severus the Outcast"] = {
+			["Unbound Stormsurge"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 331886,
-						["done"] = 19461,
-						["class"] = "WARRIOR",
+						["taken"] = 2770,
+						["done"] = 46477,
 						["role"] = "NONE",
+						["class"] = "WARRIOR",
 					},
 				},
-				["hdone"] = 18152,
-				["hdonespell"] = {
-					["Siphon Blood"] = {
-						["min"] = 4538,
-						["crits"] = 0,
-						["max"] = 4538,
-						["healing"] = 18152,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
-				},
-				["taken"] = 331886,
+				["hdone"] = 0,
+				["done"] = 46477,
+				["taken"] = 2770,
 				["htakenspell"] = {
-					["Siphon Blood"] = {
-						["min"] = 4538,
-						["crits"] = 0,
-						["max"] = 4538,
-						["healing"] = 18152,
-						["overhealing"] = 0,
-						["hits"] = 4,
-					},
 				},
-				["htaken"] = 18152,
-				["done"] = 19461,
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
 			},
 			["Foreman Razorgnarl"] = {
 				["players"] = {
@@ -16504,10 +16394,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 17109,
+				["taken"] = 304008,
 				["htakenspell"] = {
 				},
-				["taken"] = 304008,
-				["done"] = 17109,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -16525,10 +16415,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 371738,
+				["done"] = 24995,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 24995,
 			},
 			["Nolpe"] = {
 				["players"] = {
@@ -16543,10 +16433,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 108116,
+				["done"] = 3156,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 3156,
 			},
 			["Ragna"] = {
 				["players"] = {
@@ -16558,85 +16448,13 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 510514,
 				["done"] = 38263,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Squall"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 243250,
-						["done"] = 7346,
-						["role"] = "NONE",
-						["class"] = "WARRIOR",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 243250,
-				["done"] = 7346,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
-			},
-			["Captain Leadfist"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 305403,
-						["done"] = 42706,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 305403,
+				["taken"] = 510514,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 42706,
-			},
-			["Unbound Stormsurge"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 2770,
-						["done"] = 46477,
-						["role"] = "NONE",
-						["class"] = "WARRIOR",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 2770,
-				["done"] = 46477,
-				["htaken"] = 0,
 				["hdonespell"] = {
 				},
-			},
-			["Deep Woods Leaper"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 14280,
-						["done"] = 0,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 14280,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Travéler-EmeraldDream"] = {
 				["players"] = {
@@ -16685,6 +16503,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 26102,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -16727,8 +16547,88 @@ SkadaPerCharDB = {
 						["hits"] = 4,
 					},
 				},
-				["htaken"] = 26102,
+			},
+			["Captain Leadfist"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 305403,
+						["done"] = 42706,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 305403,
+				["done"] = 42706,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Braedan Whitewall"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 331106,
+						["done"] = 34284,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 331106,
+				["done"] = 34284,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Deep Woods Leaper"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 14280,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 14280,
 				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Bradach-SteamwheedleCartel"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Lying In Wait"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 7533,
+						["hits"] = 5,
+					},
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["Lying In Wait"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 7533,
+						["hits"] = 5,
+					},
+				},
 			},
 			["KcatacK"] = {
 				["players"] = {
@@ -16745,6 +16645,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 15846,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 113,
@@ -16763,26 +16665,6 @@ SkadaPerCharDB = {
 						["hits"] = 10,
 					},
 				},
-				["htaken"] = 15846,
-				["done"] = 0,
-			},
-			["Briarback Tunneler"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 391730,
-						["done"] = 61899,
-						["role"] = "NONE",
-						["class"] = "WARRIOR",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 391730,
-				["done"] = 61899,
-				["htaken"] = 0,
-				["hdonespell"] = {
-				},
 			},
 			["Lugeia"] = {
 				["players"] = {
@@ -16797,36 +16679,42 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 150848,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 2073,
-			},
-			["Bradach-SteamwheedleCartel"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
-					["Lying In Wait"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 7533,
-						["hits"] = 5,
+				},
+			},
+			["Severus the Outcast"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 331886,
+						["done"] = 19461,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 0,
+				["hdone"] = 18152,
 				["hdonespell"] = {
-					["Lying In Wait"] = {
-						["min"] = 0,
+					["Siphon Blood"] = {
+						["min"] = 4538,
 						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 7533,
-						["hits"] = 5,
+						["max"] = 4538,
+						["healing"] = 18152,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 331886,
+				["done"] = 19461,
+				["htaken"] = 18152,
+				["htakenspell"] = {
+					["Siphon Blood"] = {
+						["min"] = 4538,
+						["crits"] = 0,
+						["max"] = 4538,
+						["healing"] = 18152,
+						["overhealing"] = 0,
+						["hits"] = 4,
 					},
 				},
 			},
@@ -16840,12 +16728,40 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 8693,
+				["taken"] = 0,
 				["htakenspell"] = {
 				},
-				["taken"] = 0,
-				["done"] = 8693,
 				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+			},
+			["Renormalized-EmeraldDream"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Vampiric Speed"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 8958,
+						["hits"] = 2,
+					},
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+					["Vampiric Speed"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 8958,
+						["hits"] = 2,
+					},
 				},
 			},
 			["Ruby-Toed Tarantula"] = {
@@ -16861,97 +16777,9 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 113567,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 11782,
-			},
-			["Ellsevar-EmeraldDream"] = {
-				["players"] = {
-				},
-				["hdone"] = 10917,
-				["htakenspell"] = {
-					["Siren's Melody"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 520,
-						["healing"] = 3120,
-						["overhealing"] = 6761,
-						["hits"] = 17,
-					},
-					["Victory Rush"] = {
-						["min"] = 3399,
-						["crits"] = 0,
-						["max"] = 3399,
-						["healing"] = 3399,
-						["overhealing"] = 14196,
-						["hits"] = 1,
-					},
-					["Bloodthirst Heal"] = {
-						["min"] = 4398,
-						["crits"] = 0,
-						["max"] = 4398,
-						["healing"] = 4398,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 10917,
-				["hdonespell"] = {
-					["Siren's Melody"] = {
-						["min"] = 0,
-						["crits"] = 2,
-						["max"] = 520,
-						["healing"] = 3120,
-						["overhealing"] = 6761,
-						["hits"] = 17,
-					},
-					["Victory Rush"] = {
-						["min"] = 3399,
-						["crits"] = 0,
-						["max"] = 3399,
-						["healing"] = 3399,
-						["overhealing"] = 14196,
-						["hits"] = 1,
-					},
-					["Bloodthirst Heal"] = {
-						["min"] = 4398,
-						["crits"] = 0,
-						["max"] = 4398,
-						["healing"] = 4398,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-				},
-			},
-			["Renormalized-EmeraldDream"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-					["Vampiric Speed"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 8958,
-						["hits"] = 2,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 0,
-				["hdonespell"] = {
-					["Vampiric Speed"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 8958,
-						["hits"] = 2,
-					},
+				["htakenspell"] = {
 				},
 			},
 			["Briarback Kraultender"] = {
@@ -16964,10 +16792,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 109810,
+				["taken"] = 835750,
 				["htakenspell"] = {
 				},
-				["taken"] = 835750,
-				["done"] = 109810,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -16976,6 +16804,8 @@ SkadaPerCharDB = {
 				["players"] = {
 				},
 				["hdone"] = 64,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 64,
@@ -16986,8 +16816,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 64,
 				["hdonespell"] = {
 					["Leech"] = {
@@ -17000,58 +16828,22 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Gluttonous Yeti"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 307018,
-						["done"] = 29105,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 307018,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 29105,
-			},
-			["Estuarine Snail"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 1104,
-						["done"] = 0,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 1104,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
 			["Phoinexlover"] = {
 				["players"] = {
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-					["Vampiric Speed"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 4711,
-						["hits"] = 1,
-					},
-				},
-				["taken"] = 0,
 				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Vampiric Speed"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 4711,
+						["hits"] = 1,
+					},
+				},
 				["htaken"] = 0,
 				["hdonespell"] = {
 					["Vampiric Speed"] = {
@@ -17062,66 +16854,14 @@ SkadaPerCharDB = {
 						["overhealing"] = 4711,
 						["hits"] = 1,
 					},
-				},
-			},
-			["Harbor Guard"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 0,
-						["done"] = 11125,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 11125,
-			},
-			["Baleful Raven"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 65351,
-						["done"] = 6726,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 65351,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 6726,
-			},
-			["Albert Rivers"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 686,
-						["done"] = 13219,
-						["role"] = "NONE",
-						["class"] = "WARRIOR",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 686,
-				["done"] = 13219,
-				["htaken"] = 0,
-				["hdonespell"] = {
 				},
 			},
 			["Rockhan-EmeraldDream"] = {
 				["players"] = {
 				},
 				["hdone"] = 17,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -17140,8 +16880,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 17,
 				["hdonespell"] = {
 					["Vampiric Speed"] = {
@@ -17162,6 +16900,132 @@ SkadaPerCharDB = {
 					},
 				},
 			},
+			["Gluttonous Yeti"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 307018,
+						["done"] = 29105,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 307018,
+				["done"] = 29105,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Estuarine Snail"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 1104,
+						["done"] = 0,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1104,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Briarback Packmaster"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 196408,
+						["done"] = 30626,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 30626,
+				["taken"] = 196408,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Harbor Guard"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 0,
+						["done"] = 11125,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 11125,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Briarback Geomancer"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 246098,
+						["done"] = 81566,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 81566,
+				["taken"] = 246098,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Albert Rivers"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 686,
+						["done"] = 13219,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 13219,
+				["taken"] = 686,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Wagga Snarltusk"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 309172,
+						["done"] = 51713,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 51713,
+				["taken"] = 309172,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
 			["Fletcher's Hollow Guard"] = {
 				["players"] = {
 					["Shanyt"] = {
@@ -17175,10 +17039,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 167010,
+				["done"] = 169132,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 169132,
 			},
 			["Anglepoint Fisherman"] = {
 				["players"] = {
@@ -17193,233 +17057,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 68053,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 5970,
-			},
-			["Newjack-EmeraldDream"] = {
-				["players"] = {
-				},
-				["hdone"] = 10870,
-				["htakenspell"] = {
-					["Self Reliance"] = {
-						["min"] = 381,
-						["crits"] = 1,
-						["max"] = 972,
-						["healing"] = 3297,
-						["overhealing"] = 1563,
-						["hits"] = 4,
-					},
-					["Leech"] = {
-						["min"] = 39,
-						["crits"] = 0,
-						["max"] = 39,
-						["healing"] = 39,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Impassive Visage"] = {
-						["min"] = 1192,
-						["crits"] = 1,
-						["max"] = 6342,
-						["healing"] = 7534,
-						["overhealing"] = 1979,
-						["hits"] = 2,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 10870,
-				["hdonespell"] = {
-					["Self Reliance"] = {
-						["min"] = 381,
-						["crits"] = 1,
-						["max"] = 972,
-						["healing"] = 3297,
-						["overhealing"] = 1563,
-						["hits"] = 4,
-					},
-					["Leech"] = {
-						["min"] = 39,
-						["crits"] = 0,
-						["max"] = 39,
-						["healing"] = 39,
-						["overhealing"] = 0,
-						["hits"] = 1,
-					},
-					["Impassive Visage"] = {
-						["min"] = 1192,
-						["crits"] = 1,
-						["max"] = 6342,
-						["healing"] = 7534,
-						["overhealing"] = 1979,
-						["hits"] = 2,
-					},
-				},
-			},
-			["Ecolius-EarthenRing"] = {
-				["players"] = {
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-					["Vampiric Speed"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 2601,
-						["hits"] = 1,
-					},
-					["Touch of the Grave"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 929,
-						["hits"] = 1,
-					},
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-					["Vampiric Speed"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 2601,
-						["hits"] = 1,
-					},
-					["Touch of the Grave"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 929,
-						["hits"] = 1,
-					},
-				},
 				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Skittering Spiderling"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 35174,
-						["done"] = 0,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 35174,
 				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Hotsix-EmeraldDream"] = {
-				["players"] = {
-				},
-				["hdone"] = 2210,
-				["htakenspell"] = {
-					["Thrive in Chaos"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 1512,
-						["hits"] = 2,
-					},
-					["Vampiric Speed"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 57165,
-						["hits"] = 2,
-					},
-					["Leech"] = {
-						["min"] = 307,
-						["crits"] = 0,
-						["max"] = 709,
-						["healing"] = 2210,
-						["overhealing"] = 833,
-						["hits"] = 4,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 2210,
-				["hdonespell"] = {
-					["Thrive in Chaos"] = {
-						["min"] = 0,
-						["crits"] = 0,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 1512,
-						["hits"] = 2,
-					},
-					["Vampiric Speed"] = {
-						["min"] = 0,
-						["crits"] = 1,
-						["max"] = 0,
-						["healing"] = 0,
-						["overhealing"] = 57165,
-						["hits"] = 2,
-					},
-					["Leech"] = {
-						["min"] = 307,
-						["crits"] = 0,
-						["max"] = 709,
-						["healing"] = 2210,
-						["overhealing"] = 833,
-						["hits"] = 4,
-					},
-				},
-			},
-			["Bonesquall"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 303526,
-						["done"] = 36995,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 303526,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 36995,
-			},
-			["Wagga Snarltusk"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 309172,
-						["done"] = 51713,
-						["role"] = "NONE",
-						["class"] = "WARRIOR",
-					},
-				},
-				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 309172,
-				["done"] = 51713,
-				["htaken"] = 0,
-				["hdonespell"] = {
 				},
 			},
 			["Hâkumä-KirinTor"] = {
 				["players"] = {
 				},
 				["hdone"] = 21997,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 12141,
@@ -17446,8 +17094,6 @@ SkadaPerCharDB = {
 						["hits"] = 19,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 21997,
 				["hdonespell"] = {
 					["Vampiric Speed"] = {
@@ -17476,64 +17122,152 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Captain Wintersail"] = {
+			["Ecolius-EarthenRing"] = {
 				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 183584,
-						["done"] = 7272,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
+					["Vampiric Speed"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 2601,
+						["hits"] = 1,
+					},
+					["Touch of the Grave"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 929,
+						["hits"] = 1,
+					},
 				},
-				["taken"] = 183584,
-				["htakenspell"] = {
-				},
+				["taken"] = 0,
+				["done"] = 0,
 				["htaken"] = 0,
-				["done"] = 7272,
+				["htakenspell"] = {
+					["Vampiric Speed"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 2601,
+						["hits"] = 1,
+					},
+					["Touch of the Grave"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 929,
+						["hits"] = 1,
+					},
+				},
 			},
-			["Briarback Geomancer"] = {
+			["Skittering Spiderling"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 246098,
-						["done"] = 81566,
-						["role"] = "NONE",
+						["taken"] = 35174,
+						["done"] = 0,
 						["class"] = "WARRIOR",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 246098,
-				["done"] = 81566,
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 35174,
+				["done"] = 0,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
-			["Briarback Reinforcements"] = {
+			["Newjack-EmeraldDream"] = {
+				["players"] = {
+				},
+				["hdone"] = 10870,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Self Reliance"] = {
+						["min"] = 381,
+						["crits"] = 1,
+						["max"] = 972,
+						["healing"] = 3297,
+						["overhealing"] = 1563,
+						["hits"] = 4,
+					},
+					["Leech"] = {
+						["min"] = 39,
+						["crits"] = 0,
+						["max"] = 39,
+						["healing"] = 39,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Impassive Visage"] = {
+						["min"] = 1192,
+						["crits"] = 1,
+						["max"] = 6342,
+						["healing"] = 7534,
+						["overhealing"] = 1979,
+						["hits"] = 2,
+					},
+				},
+				["htaken"] = 10870,
+				["hdonespell"] = {
+					["Self Reliance"] = {
+						["min"] = 381,
+						["crits"] = 1,
+						["max"] = 972,
+						["healing"] = 3297,
+						["overhealing"] = 1563,
+						["hits"] = 4,
+					},
+					["Leech"] = {
+						["min"] = 39,
+						["crits"] = 0,
+						["max"] = 39,
+						["healing"] = 39,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Impassive Visage"] = {
+						["min"] = 1192,
+						["crits"] = 1,
+						["max"] = 6342,
+						["healing"] = 7534,
+						["overhealing"] = 1979,
+						["hits"] = 2,
+					},
+				},
+			},
+			["Bonesquall"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 132872,
-						["done"] = 11088,
-						["role"] = "NONE",
+						["taken"] = 303526,
+						["done"] = 36995,
 						["class"] = "WARRIOR",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 132872,
-				["done"] = 11088,
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 303526,
+				["done"] = 36995,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Hunila-EmeraldDream"] = {
 				["players"] = {
 				},
 				["hdone"] = 14893,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Bloodthirst Heal"] = {
 						["min"] = 12254,
@@ -17552,8 +17286,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 14893,
 				["hdonespell"] = {
 					["Bloodthirst Heal"] = {
@@ -17574,6 +17306,148 @@ SkadaPerCharDB = {
 					},
 				},
 			},
+			["Nikkitas-EmeraldDream"] = {
+				["players"] = {
+				},
+				["hdone"] = 14758,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Vampiric Touch"] = {
+						["min"] = 690,
+						["crits"] = 0,
+						["max"] = 2554,
+						["healing"] = 14758,
+						["overhealing"] = 0,
+						["hits"] = 10,
+					},
+				},
+				["htaken"] = 14758,
+				["hdonespell"] = {
+					["Vampiric Touch"] = {
+						["min"] = 690,
+						["crits"] = 0,
+						["max"] = 2554,
+						["healing"] = 14758,
+						["overhealing"] = 0,
+						["hits"] = 10,
+					},
+				},
+			},
+			["Captain Wintersail"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 183584,
+						["done"] = 7272,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 183584,
+				["done"] = 7272,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Hungry Dewscale"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 305022,
+						["done"] = 40053,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 305022,
+				["done"] = 40053,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Rustfur Wolf"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 125043,
+						["done"] = 28804,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 125043,
+				["done"] = 28804,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Solidtally-TwistingNether"] = {
+				["players"] = {
+				},
+				["hdone"] = 71143,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Crimson Vial"] = {
+						["min"] = 9641,
+						["crits"] = 0,
+						["max"] = 9641,
+						["healing"] = 28923,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Leech"] = {
+						["min"] = 69,
+						["crits"] = 0,
+						["max"] = 1187,
+						["healing"] = 4627,
+						["overhealing"] = 0,
+						["hits"] = 11,
+					},
+					["Impassive Visage"] = {
+						["min"] = 10877,
+						["crits"] = 1,
+						["max"] = 15838,
+						["healing"] = 37593,
+						["overhealing"] = 5917,
+						["hits"] = 3,
+					},
+				},
+				["htaken"] = 71143,
+				["hdonespell"] = {
+					["Crimson Vial"] = {
+						["min"] = 9641,
+						["crits"] = 0,
+						["max"] = 9641,
+						["healing"] = 28923,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Leech"] = {
+						["min"] = 69,
+						["crits"] = 0,
+						["max"] = 1187,
+						["healing"] = 4627,
+						["overhealing"] = 0,
+						["hits"] = 11,
+					},
+					["Impassive Visage"] = {
+						["min"] = 10877,
+						["crits"] = 1,
+						["max"] = 15838,
+						["healing"] = 37593,
+						["overhealing"] = 5917,
+						["hits"] = 3,
+					},
+				},
+			},
 			["Vengeful Bones"] = {
 				["players"] = {
 					["Shanyt"] = {
@@ -17587,37 +17461,27 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 90362,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 16807,
-			},
-			["Nikkitas-EmeraldDream"] = {
-				["players"] = {
-				},
-				["hdone"] = 14758,
+				["htaken"] = 0,
 				["htakenspell"] = {
-					["Vampiric Touch"] = {
-						["min"] = 690,
-						["crits"] = 0,
-						["max"] = 2554,
-						["healing"] = 14758,
-						["overhealing"] = 0,
-						["hits"] = 10,
+				},
+			},
+			["Teres"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 244306,
+						["done"] = 11723,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 14758,
+				["hdone"] = 0,
 				["hdonespell"] = {
-					["Vampiric Touch"] = {
-						["min"] = 690,
-						["crits"] = 0,
-						["max"] = 2554,
-						["healing"] = 14758,
-						["overhealing"] = 0,
-						["hits"] = 10,
-					},
+				},
+				["taken"] = 244306,
+				["done"] = 11723,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Shallows Saurolisk"] = {
@@ -17633,10 +17497,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 941035,
+				["done"] = 293747,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 293747,
 			},
 			["Kojap-EmeraldDream"] = {
 				["players"] = {
@@ -17677,6 +17541,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 15034,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -17719,8 +17585,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 15034,
-				["done"] = 0,
 			},
 			["Awakened Dead"] = {
 				["players"] = {
@@ -17735,10 +17599,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 480716,
+				["done"] = 70373,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 70373,
 			},
 			["Brinescale Gladiator"] = {
 				["players"] = {
@@ -17753,10 +17617,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 304349,
+				["done"] = 15771,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15771,
 			},
 			["Hexthralled Guardsman"] = {
 				["players"] = {
@@ -17771,10 +17635,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 384987,
+				["done"] = 137416,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 137416,
 			},
 			["Galyn-KirinTor"] = {
 				["players"] = {
@@ -17791,6 +17655,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 292,
 				["htakenspell"] = {
 					["Soul Link"] = {
 						["min"] = 21,
@@ -17801,26 +17667,24 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 292,
-				["done"] = 0,
 			},
-			["Rustfur Wolf"] = {
+			["Throgg"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 125043,
-						["done"] = 28804,
-						["class"] = "WARRIOR",
+						["taken"] = 368078,
+						["done"] = 57099,
 						["role"] = "NONE",
+						["class"] = "WARRIOR",
 					},
 				},
 				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 125043,
+				["done"] = 57099,
+				["taken"] = 368078,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 28804,
+				["hdonespell"] = {
+				},
 			},
 			["Lucktail"] = {
 				["players"] = {
@@ -17835,10 +17699,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 66957,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Balethorn"] = {
 				["players"] = {
@@ -17853,76 +17717,16 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 210699,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 33659,
-			},
-			["Solidtally-TwistingNether"] = {
-				["players"] = {
-				},
-				["hdone"] = 71143,
+				["htaken"] = 0,
 				["htakenspell"] = {
-					["Crimson Vial"] = {
-						["min"] = 9641,
-						["crits"] = 0,
-						["max"] = 9641,
-						["healing"] = 28923,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Leech"] = {
-						["min"] = 69,
-						["crits"] = 0,
-						["max"] = 1187,
-						["healing"] = 4627,
-						["overhealing"] = 0,
-						["hits"] = 11,
-					},
-					["Impassive Visage"] = {
-						["min"] = 10877,
-						["crits"] = 1,
-						["max"] = 15838,
-						["healing"] = 37593,
-						["overhealing"] = 5917,
-						["hits"] = 3,
-					},
-				},
-				["taken"] = 0,
-				["done"] = 0,
-				["htaken"] = 71143,
-				["hdonespell"] = {
-					["Crimson Vial"] = {
-						["min"] = 9641,
-						["crits"] = 0,
-						["max"] = 9641,
-						["healing"] = 28923,
-						["overhealing"] = 0,
-						["hits"] = 3,
-					},
-					["Leech"] = {
-						["min"] = 69,
-						["crits"] = 0,
-						["max"] = 1187,
-						["healing"] = 4627,
-						["overhealing"] = 0,
-						["hits"] = 11,
-					},
-					["Impassive Visage"] = {
-						["min"] = 10877,
-						["crits"] = 1,
-						["max"] = 15838,
-						["healing"] = 37593,
-						["overhealing"] = 5917,
-						["hits"] = 3,
-					},
 				},
 			},
-			["Teres"] = {
+			["Mack"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 244306,
-						["done"] = 11723,
+						["taken"] = 134281,
+						["done"] = 5259,
 						["class"] = "WARRIOR",
 						["role"] = "NONE",
 					},
@@ -17930,11 +17734,29 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 244306,
+				["taken"] = 134281,
+				["done"] = 5259,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
+			},
+			["Congealed Blood"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 66760,
+						["done"] = 2533,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 66760,
+				["done"] = 2533,
 				["htaken"] = 0,
-				["done"] = 11723,
+				["htakenspell"] = {
+				},
 			},
 			["Josephine Rivers"] = {
 				["players"] = {
@@ -17946,30 +17768,40 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 686,
 				["htakenspell"] = {
 				},
-				["taken"] = 686,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
 			},
-			["Throgg"] = {
+			["Bilefang Hunter"] = {
 				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 368078,
-						["done"] = 57099,
+					["Fenago-SteamwheedleCartel"] = {
+						["taken"] = 23699,
+						["done"] = 0,
 						["role"] = "NONE",
+					},
+					["Traelil-EmeraldDream"] = {
+						["taken"] = 7264,
+						["done"] = 0,
+						["role"] = "NONE",
+					},
+					["Shanyt"] = {
+						["taken"] = 1003214,
+						["done"] = 141220,
 						["class"] = "WARRIOR",
+						["role"] = "NONE",
 					},
 				},
 				["hdone"] = 0,
-				["htakenspell"] = {
-				},
-				["taken"] = 368078,
-				["done"] = 57099,
-				["htaken"] = 0,
 				["hdonespell"] = {
+				},
+				["taken"] = 1034177,
+				["done"] = 141220,
+				["htaken"] = 0,
+				["htakenspell"] = {
 				},
 			},
 			["Oughtoo-TheVentureCo"] = {
@@ -18019,6 +17851,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 14731,
 				["htakenspell"] = {
 					["Consume Soul"] = {
 						["min"] = 0,
@@ -18061,8 +17895,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 14731,
-				["done"] = 0,
 			},
 			["Auditor Dolp"] = {
 				["players"] = {
@@ -18077,10 +17909,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 303727,
+				["done"] = 16528,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 16528,
 			},
 			["Irontide Cutthroat"] = {
 				["players"] = {
@@ -18095,16 +17927,34 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 314742,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 112219,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
 			},
-			["Mack"] = {
+			["Briarback Tunneler"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 134281,
-						["done"] = 5259,
+						["taken"] = 391730,
+						["done"] = 61899,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 61899,
+				["taken"] = 391730,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["hdonespell"] = {
+				},
+			},
+			["Baleful Raven"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 65351,
+						["done"] = 6726,
 						["class"] = "WARRIOR",
 						["role"] = "NONE",
 					},
@@ -18112,17 +17962,17 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 134281,
+				["taken"] = 65351,
+				["done"] = 6726,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 5259,
 			},
-			["Congealed Blood"] = {
+			["Ensorcelled Bonepicker"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 66760,
-						["done"] = 2533,
+						["taken"] = 100340,
+						["done"] = 48385,
 						["class"] = "WARRIOR",
 						["role"] = "NONE",
 					},
@@ -18130,11 +17980,197 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 66760,
+				["taken"] = 100340,
+				["done"] = 48385,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Chillfur Yeti"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 0,
+						["done"] = 4641,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 4641,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Ellsevar-EmeraldDream"] = {
+				["players"] = {
+				},
+				["hdone"] = 10917,
+				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Siren's Melody"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 520,
+						["healing"] = 3120,
+						["overhealing"] = 6761,
+						["hits"] = 17,
+					},
+					["Victory Rush"] = {
+						["min"] = 3399,
+						["crits"] = 0,
+						["max"] = 3399,
+						["healing"] = 3399,
+						["overhealing"] = 14196,
+						["hits"] = 1,
+					},
+					["Bloodthirst Heal"] = {
+						["min"] = 4398,
+						["crits"] = 0,
+						["max"] = 4398,
+						["healing"] = 4398,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 10917,
+				["hdonespell"] = {
+					["Siren's Melody"] = {
+						["min"] = 0,
+						["crits"] = 2,
+						["max"] = 520,
+						["healing"] = 3120,
+						["overhealing"] = 6761,
+						["hits"] = 17,
+					},
+					["Victory Rush"] = {
+						["min"] = 3399,
+						["crits"] = 0,
+						["max"] = 3399,
+						["healing"] = 3399,
+						["overhealing"] = 14196,
+						["hits"] = 1,
+					},
+					["Bloodthirst Heal"] = {
+						["min"] = 4398,
+						["crits"] = 0,
+						["max"] = 4398,
+						["healing"] = 4398,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+			},
+			["Gilnean Officer"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 523471,
+						["done"] = 56774,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 523471,
+				["done"] = 56774,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Soul Pillar"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 0,
+						["done"] = 35291,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["done"] = 35291,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Briarback Reinforcements"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 132872,
+						["done"] = 11088,
+						["role"] = "NONE",
+						["class"] = "WARRIOR",
+					},
+				},
+				["hdone"] = 0,
+				["done"] = 11088,
+				["taken"] = 132872,
 				["htakenspell"] = {
 				},
 				["htaken"] = 0,
-				["done"] = 2533,
+				["hdonespell"] = {
+				},
+			},
+			["Hunting Hound"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 72227,
+						["done"] = 2236,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 72227,
+				["done"] = 2236,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Bristleback Pounder"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 84455,
+						["done"] = 4638,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 84455,
+				["done"] = 4638,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
+			},
+			["Bonepicker Raven"] = {
+				["players"] = {
+					["Shanyt"] = {
+						["taken"] = 43211,
+						["done"] = 6964,
+						["class"] = "WARRIOR",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 43211,
+				["done"] = 6964,
+				["htaken"] = 0,
+				["htakenspell"] = {
+				},
 			},
 			["Selestiàl-Thunderhorn"] = {
 				["players"] = {
@@ -18151,6 +18187,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 0,
@@ -18161,180 +18199,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 0,
-				["done"] = 0,
-			},
-			["Bilefang Hunter"] = {
-				["players"] = {
-					["Fenago-SteamwheedleCartel"] = {
-						["taken"] = 23699,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-					["Traelil-EmeraldDream"] = {
-						["taken"] = 7264,
-						["done"] = 0,
-						["role"] = "NONE",
-					},
-					["Shanyt"] = {
-						["taken"] = 1003214,
-						["done"] = 141220,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 1034177,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 141220,
-			},
-			["Chillfur Yeti"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 0,
-						["done"] = 4641,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 4641,
-			},
-			["Gilnean Officer"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 523471,
-						["done"] = 56774,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 523471,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 56774,
-			},
-			["Soul Pillar"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 0,
-						["done"] = 35291,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 0,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 35291,
-			},
-			["Braedan Whitewall"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 331106,
-						["done"] = 34284,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 331106,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 34284,
-			},
-			["Ensorcelled Bonepicker"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 100340,
-						["done"] = 48385,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 100340,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 48385,
-			},
-			["Bristleback Pounder"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 84455,
-						["done"] = 4638,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 84455,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 4638,
-			},
-			["Ravenous Gull"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 851695,
-						["done"] = 75765,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 851695,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 75765,
-			},
-			["Bonepicker Raven"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 43211,
-						["done"] = 6964,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 43211,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
-				["done"] = 6964,
 			},
 			["Sylviah-KirinTor"] = {
 				["players"] = {
@@ -18359,6 +18223,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 5340,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 3488,
@@ -18377,8 +18243,6 @@ SkadaPerCharDB = {
 						["hits"] = 5,
 					},
 				},
-				["htaken"] = 5340,
-				["done"] = 0,
 			},
 			["Black-Eyed Bart"] = {
 				["players"] = {
@@ -18393,10 +18257,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 306293,
+				["done"] = 22829,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 22829,
 			},
 			["Hexcrazed Greatstag"] = {
 				["players"] = {
@@ -18411,10 +18275,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 6716,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 6716,
 			},
 			["Wavecaller Smuggler"] = {
 				["players"] = {
@@ -18429,10 +18293,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 35591,
+				["done"] = 792,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 792,
 			},
 			["Rewired Harvester"] = {
 				["players"] = {
@@ -18447,10 +18311,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 374521,
+				["done"] = 51755,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 51755,
 			},
 			["Hexwood Sentry"] = {
 				["players"] = {
@@ -18465,10 +18329,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 125570,
+				["done"] = 6168,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 6168,
 			},
 			["Freshwater Snapper"] = {
 				["players"] = {
@@ -18483,10 +18347,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 70942,
+				["done"] = 14432,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14432,
 			},
 			["Crickette-EarthenRing"] = {
 				["players"] = {
@@ -18503,6 +18367,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 2000,
 				["htakenspell"] = {
 					["Self Reliance"] = {
 						["min"] = 2000,
@@ -18521,8 +18387,6 @@ SkadaPerCharDB = {
 						["hits"] = 11,
 					},
 				},
-				["htaken"] = 2000,
-				["done"] = 0,
 			},
 			["Mind-addled Enforcer"] = {
 				["players"] = {
@@ -18537,10 +18401,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 62551,
+				["done"] = 15997,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15997,
 			},
 			["Scuttlestep Crab"] = {
 				["players"] = {
@@ -18555,10 +18419,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 56478,
+				["done"] = 6169,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 6169,
 			},
 			["Curseformed Familiar"] = {
 				["players"] = {
@@ -18573,10 +18437,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 188067,
+				["done"] = 47449,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 47449,
 			},
 			["Sister Martha"] = {
 				["players"] = {
@@ -18591,15 +18455,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 306224,
+				["done"] = 25128,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 25128,
 			},
 			["Theyadora-KirinTor"] = {
 				["players"] = {
 				},
 				["hdone"] = 16470,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Bloodthirst Heal"] = {
 						["min"] = 8235,
@@ -18610,8 +18476,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 16470,
 				["hdonespell"] = {
 					["Bloodthirst Heal"] = {
@@ -18637,10 +18501,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 191543,
+				["done"] = 26979,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 26979,
 			},
 			["Gorging Raven"] = {
 				["players"] = {
@@ -18655,10 +18519,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 103909,
+				["done"] = 15488,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15488,
 			},
 			["Irontide Bruiser"] = {
 				["players"] = {
@@ -18673,10 +18537,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 373697,
+				["done"] = 107403,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 107403,
 			},
 			["Hexed Howler"] = {
 				["players"] = {
@@ -18691,10 +18555,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 16468,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 16468,
 			},
 			["Duveus-EmeraldDream"] = {
 				["players"] = {
@@ -18719,6 +18583,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 17578,
 				["htakenspell"] = {
 					["Quick Thinking"] = {
 						["min"] = 0,
@@ -18737,8 +18603,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 17578,
-				["done"] = 0,
 			},
 			["Tarpit-TheVentureCo"] = {
 				["players"] = {
@@ -18755,6 +18619,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 0,
 				["htakenspell"] = {
 					["Endless Hunger"] = {
 						["min"] = 0,
@@ -18765,8 +18631,6 @@ SkadaPerCharDB = {
 						["hits"] = 11,
 					},
 				},
-				["htaken"] = 0,
-				["done"] = 0,
 			},
 			["Darkmaw Prowler"] = {
 				["players"] = {
@@ -18781,10 +18645,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 52493,
+				["done"] = 8338,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 8338,
 			},
 			["Heartsbane Sister"] = {
 				["players"] = {
@@ -18799,10 +18663,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 98885,
+				["done"] = 30553,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 30553,
 			},
 			["Vinespeaker Ratha"] = {
 				["players"] = {
@@ -18814,10 +18678,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 22808,
+				["taken"] = 310919,
 				["htakenspell"] = {
 				},
-				["taken"] = 310919,
-				["done"] = 22808,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -18835,16 +18699,16 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 127002,
+				["done"] = 17322,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 17322,
 			},
-			["Hunting Hound"] = {
+			["Ravenous Gull"] = {
 				["players"] = {
 					["Shanyt"] = {
-						["taken"] = 72227,
-						["done"] = 2236,
+						["taken"] = 851695,
+						["done"] = 75765,
 						["class"] = "WARRIOR",
 						["role"] = "NONE",
 					},
@@ -18852,11 +18716,11 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 72227,
+				["taken"] = 851695,
+				["done"] = 75765,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 2236,
 			},
 			["Timber Mongrel"] = {
 				["players"] = {
@@ -18871,10 +18735,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 122274,
+				["done"] = 40851,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 40851,
 			},
 			["Fizzsprings Guard"] = {
 				["players"] = {
@@ -18889,15 +18753,17 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 84989,
+				["done"] = 89964,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 89964,
 			},
 			["Vysania-SteamwheedleCartel"] = {
 				["players"] = {
 				},
 				["hdone"] = 0,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Ace of Blockades"] = {
 						["min"] = 0,
@@ -18916,8 +18782,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 0,
 				["hdonespell"] = {
 					["Ace of Blockades"] = {
@@ -18951,10 +18815,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 197060,
+				["done"] = 17757,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 17757,
 			},
 			["Great Sea Vagrant"] = {
 				["players"] = {
@@ -18969,10 +18833,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 285340,
+				["done"] = 30211,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 30211,
 			},
 			["Lichenjaw Saurolisk"] = {
 				["players"] = {
@@ -18987,10 +18851,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 66790,
+				["done"] = 17202,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 17202,
 			},
 			["Possessed Dockworker"] = {
 				["players"] = {
@@ -19005,10 +18869,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 14586,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14586,
 			},
 			["Borothir-KirinTor"] = {
 				["players"] = {
@@ -19033,6 +18897,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 15471,
 				["htakenspell"] = {
 					["Vampiric Speed"] = {
 						["min"] = 2616,
@@ -19051,8 +18917,6 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 15471,
-				["done"] = 0,
 			},
 			["Thundersnout"] = {
 				["players"] = {
@@ -19064,10 +18928,10 @@ SkadaPerCharDB = {
 					},
 				},
 				["hdone"] = 0,
+				["done"] = 106224,
+				["taken"] = 591266,
 				["htakenspell"] = {
 				},
-				["taken"] = 591266,
-				["done"] = 106224,
 				["htaken"] = 0,
 				["hdonespell"] = {
 				},
@@ -19085,10 +18949,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 63769,
+				["done"] = 15524,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15524,
 			},
 			["Brynnda-KirinTor"] = {
 				["players"] = {
@@ -19113,6 +18977,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 37219,
 				["htakenspell"] = {
 					["Self Reliance"] = {
 						["min"] = 999,
@@ -19131,8 +18997,66 @@ SkadaPerCharDB = {
 						["hits"] = 6,
 					},
 				},
-				["htaken"] = 37219,
+			},
+			["Hotsix-EmeraldDream"] = {
+				["players"] = {
+				},
+				["hdone"] = 2210,
 				["done"] = 0,
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Thrive in Chaos"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 1512,
+						["hits"] = 2,
+					},
+					["Vampiric Speed"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 57165,
+						["hits"] = 2,
+					},
+					["Leech"] = {
+						["min"] = 307,
+						["crits"] = 0,
+						["max"] = 709,
+						["healing"] = 2210,
+						["overhealing"] = 833,
+						["hits"] = 4,
+					},
+				},
+				["htaken"] = 2210,
+				["hdonespell"] = {
+					["Thrive in Chaos"] = {
+						["min"] = 0,
+						["crits"] = 0,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 1512,
+						["hits"] = 2,
+					},
+					["Vampiric Speed"] = {
+						["min"] = 0,
+						["crits"] = 1,
+						["max"] = 0,
+						["healing"] = 0,
+						["overhealing"] = 57165,
+						["hits"] = 2,
+					},
+					["Leech"] = {
+						["min"] = 307,
+						["crits"] = 0,
+						["max"] = 709,
+						["healing"] = 2210,
+						["overhealing"] = 833,
+						["hits"] = 4,
+					},
+				},
 			},
 			["Bristleback Horker"] = {
 				["players"] = {
@@ -19147,10 +19071,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 145541,
+				["done"] = 9031,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 9031,
 			},
 			["Merianae"] = {
 				["players"] = {
@@ -19165,28 +19089,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 306970,
-				["htakenspell"] = {
-				},
-				["htaken"] = 0,
 				["done"] = 24296,
-			},
-			["Hungry Dewscale"] = {
-				["players"] = {
-					["Shanyt"] = {
-						["taken"] = 305022,
-						["done"] = 40053,
-						["class"] = "WARRIOR",
-						["role"] = "NONE",
-					},
-				},
-				["hdone"] = 0,
-				["hdonespell"] = {
-				},
-				["taken"] = 305022,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 40053,
 			},
 			["Wandering Runewraith"] = {
 				["players"] = {
@@ -19201,10 +19107,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 99240,
+				["done"] = 13216,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 13216,
 			},
 			["Harbor Crab"] = {
 				["players"] = {
@@ -19219,10 +19125,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 62995,
+				["done"] = 8997,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 8997,
 			},
 			["Emberayne-EmeraldDream"] = {
 				["players"] = {
@@ -19255,6 +19161,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 46603,
 				["htakenspell"] = {
 					["Drain Life"] = {
 						["min"] = 3373,
@@ -19273,8 +19181,6 @@ SkadaPerCharDB = {
 						["hits"] = 4,
 					},
 				},
-				["htaken"] = 46603,
-				["done"] = 0,
 			},
 			["Aruul"] = {
 				["players"] = {
@@ -19299,6 +19205,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 47057,
 				["htakenspell"] = {
 					["Pack Spirit"] = {
 						["min"] = 1789,
@@ -19317,8 +19225,6 @@ SkadaPerCharDB = {
 						["hits"] = 1,
 					},
 				},
-				["htaken"] = 47057,
-				["done"] = 0,
 			},
 			["Deathcap"] = {
 				["players"] = {
@@ -19333,10 +19239,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 307355,
+				["done"] = 15641,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15641,
 			},
 			["Idej the Wise"] = {
 				["players"] = {
@@ -19351,10 +19257,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 238112,
+				["done"] = 19963,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 19963,
 			},
 			["Rimestone"] = {
 				["players"] = {
@@ -19369,10 +19275,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 314438,
+				["done"] = 22452,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 22452,
 			},
 			["Ernie"] = {
 				["players"] = {
@@ -19387,10 +19293,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 140411,
+				["done"] = 13539,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 13539,
 			},
 			["Stormsong Loyalist"] = {
 				["players"] = {
@@ -19405,10 +19311,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 525792,
+				["done"] = 91502,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 91502,
 			},
 			["Hexthralled Crossbowman"] = {
 				["players"] = {
@@ -19423,10 +19329,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 142056,
+				["done"] = 29652,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 29652,
 			},
 			["Ensorcelled Hare"] = {
 				["players"] = {
@@ -19441,10 +19347,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 75228,
+				["done"] = 14100,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 14100,
 			},
 			["Andorage-KirinTor"] = {
 				["players"] = {
@@ -19501,6 +19407,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 14080,
 				["htakenspell"] = {
 					["Self Reliance"] = {
 						["min"] = 675,
@@ -19551,8 +19459,6 @@ SkadaPerCharDB = {
 						["hits"] = 2,
 					},
 				},
-				["htaken"] = 14080,
-				["done"] = 0,
 			},
 			["Fizzsprings Muscle"] = {
 				["players"] = {
@@ -19567,10 +19473,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 62629,
+				["done"] = 7980,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 7980,
 			},
 			["Kraglos"] = {
 				["players"] = {
@@ -19579,6 +19485,8 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 3944,
 				["htakenspell"] = {
 					["Azerite"] = {
 						["min"] = 0,
@@ -19589,8 +19497,6 @@ SkadaPerCharDB = {
 						["hits"] = 12,
 					},
 				},
-				["htaken"] = 3944,
-				["done"] = 0,
 			},
 			["Awoken Guardian"] = {
 				["players"] = {
@@ -19605,10 +19511,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 153525,
+				["done"] = 28915,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 28915,
 			},
 			["Kickers"] = {
 				["players"] = {
@@ -19623,10 +19529,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 304242,
+				["done"] = 15276,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 15276,
 			},
 			["Tidesage Initiate"] = {
 				["players"] = {
@@ -19641,10 +19547,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 549174,
+				["done"] = 63169,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 63169,
 			},
 			["Manifested Hate"] = {
 				["players"] = {
@@ -19659,10 +19565,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 506061,
+				["done"] = 99717,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 99717,
 			},
 			["Funnyface"] = {
 				["players"] = {
@@ -19695,6 +19601,8 @@ SkadaPerCharDB = {
 					},
 				},
 				["taken"] = 0,
+				["done"] = 0,
+				["htaken"] = 35195,
 				["htakenspell"] = {
 					["Impassive Visage"] = {
 						["min"] = 5889,
@@ -19721,13 +19629,13 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["htaken"] = 35195,
-				["done"] = 0,
 			},
 			["Limbrobber"] = {
 				["players"] = {
 				},
 				["hdone"] = 122,
+				["done"] = 0,
+				["taken"] = 0,
 				["htakenspell"] = {
 					["Leech"] = {
 						["min"] = 33,
@@ -19738,8 +19646,6 @@ SkadaPerCharDB = {
 						["hits"] = 3,
 					},
 				},
-				["taken"] = 0,
-				["done"] = 0,
 				["htaken"] = 122,
 				["hdonespell"] = {
 					["Leech"] = {
@@ -19765,10 +19671,10 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 310821,
+				["done"] = 17923,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 17923,
 			},
 			["Feral Razorclaw"] = {
 				["players"] = {
@@ -19783,14 +19689,14 @@ SkadaPerCharDB = {
 				["hdonespell"] = {
 				},
 				["taken"] = 257588,
+				["done"] = 36843,
+				["htaken"] = 0,
 				["htakenspell"] = {
 				},
-				["htaken"] = 0,
-				["done"] = 36843,
 			},
 		},
 		["mobhdone"] = 1114446,
 		["last_action"] = 1555878895,
-		["mobdone"] = 7723612,
+		["mobdone"] = 7724009,
 	},
 }
