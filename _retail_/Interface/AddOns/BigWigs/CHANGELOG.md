@@ -1,7 +1,6 @@
 # BigWigs
 
-## [v146.1](https://github.com/BigWigsMods/BigWigs/tree/v146.1) (2019-04-29)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v146...v146.1)
+## [v146.1-1-g1f2a968](https://github.com/BigWigsMods/BigWigs/tree/1f2a96863654b02f7b2e144419fa1294cf850191) (2019-04-29)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v146.1...1f2a96863654b02f7b2e144419fa1294cf850191)
 
-- CrucibleOfStorms: Follow add mark settings instead of always marking  
-- BattleOfDazaralor/Jaina: Emphasize Glacial Ray by default.  
+- CrucibleOfStorms/Cabal: Add respawn time, enable emphasize (me only) by default for Crushing Doubt.  

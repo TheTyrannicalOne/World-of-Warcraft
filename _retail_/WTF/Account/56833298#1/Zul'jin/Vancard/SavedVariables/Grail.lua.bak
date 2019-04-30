@@ -2,7 +2,9 @@
 GrailDatabasePlayer = {
 	["controlCompletedQuests"] = {
 	},
-	["serverUpdated"] = "1999-00-00 00:00",
+	["spellsCast"] = {
+		[26] = 8,
+	},
 	["abandonedQuests"] = {
 	},
 	["buffsExperienced"] = {
@@ -10,11 +12,11 @@ GrailDatabasePlayer = {
 		[8829] = 1073741824,
 	},
 	["dailyGroups"] = {
-		["2019-03-11"] = {
+		["2019-03-08"] = {
 			[111] = {
 			},
 		},
-		["2019-03-08"] = {
+		["2019-03-11"] = {
 			[111] = {
 			},
 		},
@@ -142,7 +144,5 @@ GrailDatabasePlayer = {
 	},
 	["actuallyCompletedQuests"] = {
 	},
-	["spellsCast"] = {
-		[26] = 8,
-	},
+	["serverUpdated"] = "1999-00-00 00:00",
 }

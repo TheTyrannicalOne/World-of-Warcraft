@@ -45,13 +45,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["tt1"] = true,
 				["ti1"] = 118530,
+				["tt1"] = true,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["tt3"] = true,
 				["ti3"] = 127855,
+				["tt3"] = true,
 			},
 			["faction"] = "Horde",
 		},
@@ -65,17 +65,15 @@ MasterPlanAG = {
 			["class"] = "PRIEST",
 		},
 	},
-	["IgnoreRewards"] = {
-	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1554068162,
 			["summary"] = {
 				["lastOilTime"] = 1554007978,
 				["tt2"] = 1553440528,
 				["tt3"] = 1553437529,
-				["ti1"] = 118531,
 				["tt1"] = 1553318948,
+				["ti1"] = 118531,
 				["ti3"] = 127854,
 				["inProgress"] = {
 					[131] = 1554071079,
@@ -93,11 +91,11 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["curOil"] = 75265,
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1554068162,
-			["curRes"] = 8341,
 			["faction"] = "Horde",
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 9348,
+			["curOil"] = 75515,
 		},
 	},
 	["Tanaris"] = {
@@ -128,8 +126,8 @@ MasterPlanAG = {
 			["class"] = "PRIEST",
 		},
 		["Vancard"] = {
-			["faction"] = "Horde",
 			["class"] = "MAGE",
+			["faction"] = "Horde",
 		},
 	},
 }
