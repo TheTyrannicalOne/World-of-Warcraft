@@ -21,7 +21,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "1f2a968" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "c781f74" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -326,7 +326,7 @@ local function loadAddons(tbl)
 end
 
 local function loadZone(zone)
-	if not zone then return end
+	if not loadOnZone[zone] then return end
 	loadAddons(loadOnZone[zone])
 end
 

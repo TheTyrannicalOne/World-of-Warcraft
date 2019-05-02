@@ -1,10 +1,8 @@
 
 NarcissusDB = {
 	["AuotoColorTheme"] = true,
+	["EnableDoubleTap"] = false,
 	["FontHeightItemName"] = 10,
-	["MinimapButton"] = {
-		["Position"] = -2.97320069821011,
-	},
 	["PlayerAlias"] = "",
 	["PhotoModeButton"] = {
 		["HideTexts"] = true,
@@ -12,10 +10,12 @@ NarcissusDB = {
 	["GlobalScale"] = 1,
 	["UseAlias"] = false,
 	["CameraOrbit"] = true,
-	["EnableGrainEffect"] = false,
+	["ShowMinimapButton"] = true,
 	["IsSortedByCategory"] = true,
 	["ColorChoice"] = 0,
-	["ShowMinimapButton"] = true,
-	["EnableDoubleTap"] = false,
+	["EnableGrainEffect"] = false,
+	["MinimapButton"] = {
+		["Position"] = -2.97320069821011,
+	},
 	["DetailedIlvlInfo"] = true,
 }

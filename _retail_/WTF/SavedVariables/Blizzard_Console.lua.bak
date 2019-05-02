@@ -1,3386 +1,3385 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
-	["height"] = 300,
 	["messageHistory"] = {
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [1]
-		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [2]
-		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [3]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [4]
-		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
-		}, -- [5]
-		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
-		}, -- [6]
-		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
-		}, -- [7]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [8]
-		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
-			0, -- [2]
-		}, -- [9]
-		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
-			0, -- [2]
-		}, -- [10]
-		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
-			0, -- [2]
-		}, -- [11]
-		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
-			0, -- [2]
-		}, -- [12]
-		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
-			0, -- [2]
-		}, -- [13]
-		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
-			0, -- [2]
-		}, -- [14]
-		{
-			"Proficiency in item class 2 set to 0x000018c480", -- [1]
-			0, -- [2]
-		}, -- [15]
-		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
-			0, -- [2]
-		}, -- [16]
-		{
-			"Proficiency in item class 2 set to 0x000018c480", -- [1]
-			0, -- [2]
-		}, -- [17]
-		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
-			0, -- [2]
-		}, -- [18]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [19]
-		{
-			"Time set to 4/26/2019 (Fri) 16:56", -- [1]
-			0, -- [2]
-		}, -- [20]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [21]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [22]
-		{
-			"Total: 0d 19h 24m 17s", -- [1]
-			0, -- [2]
-		}, -- [23]
-		{
-			"Level: 0d 11h 14m 18s", -- [1]
-			0, -- [2]
-		}, -- [24]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [25]
-		{
-			"[IBN_Login] Requesting change realm list", -- [1]
-			0, -- [2]
-		}, -- [26]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [27]
-		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [28]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [29]
-		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [30]
-		{
-			"[IBN_Login] Requesting realm listsnumSubRegions=\"5\"", -- [1]
-			0, -- [2]
-		}, -- [31]
-		{
-			"[GlueLogin] Realm list ready.", -- [1]
-			0, -- [2]
-		}, -- [32]
-		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
-			0, -- [2]
-		}, -- [33]
-		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [34]
-		{
-			"NetClient::HandleDisconnect()\n", -- [1]
-			0, -- [2]
-		}, -- [35]
-		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
-			0, -- [2]
-		}, -- [36]
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [37]
-		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [38]
-		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [39]
-		{
-			"Got new connection 2", -- [1]
-			0, -- [2]
-		}, -- [40]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [41]
-		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
-		}, -- [42]
-		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
-			0, -- [2]
-		}, -- [43]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [44]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [45]
-		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
-		}, -- [46]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [47]
-		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
-			0, -- [2]
-		}, -- [48]
-		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
-			0, -- [2]
-		}, -- [49]
-		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
-			0, -- [2]
-		}, -- [50]
-		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
-			0, -- [2]
-		}, -- [51]
-		{
-			"Proficiency in item class 2 set to 0x000000009d", -- [1]
-			0, -- [2]
-		}, -- [52]
-		{
-			"Proficiency in item class 2 set to 0x000000019d", -- [1]
-			0, -- [2]
-		}, -- [53]
-		{
-			"Proficiency in item class 2 set to 0x000000059d", -- [1]
-			0, -- [2]
-		}, -- [54]
-		{
-			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
-			0, -- [2]
-		}, -- [55]
-		{
-			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
-			0, -- [2]
-		}, -- [56]
-		{
-			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
-			0, -- [2]
-		}, -- [57]
-		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
-			0, -- [2]
-		}, -- [58]
-		{
-			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
-			0, -- [2]
-		}, -- [59]
-		{
-			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
-			0, -- [2]
-		}, -- [60]
-		{
-			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
-			0, -- [2]
-		}, -- [61]
-		{
-			"Proficiency in item class 4 set to 0x0000000031", -- [1]
-			0, -- [2]
-		}, -- [62]
-		{
-			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
-			0, -- [2]
-		}, -- [63]
-		{
-			"Proficiency in item class 4 set to 0x0000000039", -- [1]
-			0, -- [2]
-		}, -- [64]
-		{
-			"Proficiency in item class 4 set to 0x000000003d", -- [1]
-			0, -- [2]
-		}, -- [65]
-		{
-			"Proficiency in item class 4 set to 0x000000003f", -- [1]
-			0, -- [2]
-		}, -- [66]
-		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
-			0, -- [2]
-		}, -- [67]
-		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
-			0, -- [2]
-		}, -- [68]
-		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
-			0, -- [2]
-		}, -- [69]
-		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
-			0, -- [2]
-		}, -- [70]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [71]
-		{
-			"Time set to 4/26/2019 (Fri) 16:58", -- [1]
-			0, -- [2]
-		}, -- [72]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [73]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [74]
-		{
-			"Total: 221d 8h 19m 7s", -- [1]
-			0, -- [2]
-		}, -- [75]
-		{
-			"Level: 18d 18h 58m 44s", -- [1]
-			0, -- [2]
-		}, -- [76]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [77]
-		{
-			"Total: 221d 8h 19m 10s", -- [1]
-			0, -- [2]
-		}, -- [78]
-		{
-			"Level: 18d 18h 58m 47s", -- [1]
-			0, -- [2]
-		}, -- [79]
-		{
-			"Render scale changed to 1", -- [1]
-			0, -- [2]
-		}, -- [80]
-		{
-			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
-			0, -- [2]
-		}, -- [81]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [82]
-		{
-			"Soft shadows changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [83]
-		{
-			"Water detail changed to 2", -- [1]
-			0, -- [2]
-		}, -- [84]
-		{
-			"Reflection mode changed to 0", -- [1]
-			0, -- [2]
-		}, -- [85]
-		{
-			"Ripple detail changed to 1", -- [1]
-			0, -- [2]
-		}, -- [86]
-		{
-			"SSAO mode set to 3", -- [1]
-			0, -- [2]
-		}, -- [87]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [88]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [89]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [90]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [91]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [92]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [93]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [94]
-		{
-			"Total: 221d 8h 27m 47s", -- [1]
-			0, -- [2]
-		}, -- [95]
-		{
-			"Level: 18d 19h 7m 24s", -- [1]
-			0, -- [2]
-		}, -- [96]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [97]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [98]
-		{
-			"Sorting particles normally.", -- [1]
-			0, -- [2]
-		}, -- [99]
-		{
-			"Multithreaded rendering enabled.", -- [1]
-			0, -- [2]
-		}, -- [100]
-		{
-			"Multithreaded BeginDraw enabled.", -- [1]
-			0, -- [2]
-		}, -- [101]
-		{
-			"Multithread shadows changed to 1.", -- [1]
-			0, -- [2]
-		}, -- [102]
-		{
-			"Multithreaded prepass enabled.", -- [1]
-			0, -- [2]
-		}, -- [103]
-		{
-			"Multithreaded opaque pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [104]
-		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [105]
-		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
-			0, -- [2]
-		}, -- [106]
-		{
-			"Water detail changed to 2", -- [1]
-			0, -- [2]
-		}, -- [107]
-		{
-			"Ripple detail changed to 1", -- [1]
-			0, -- [2]
-		}, -- [108]
-		{
-			"Reflection mode changed to 0", -- [1]
-			0, -- [2]
-		}, -- [109]
-		{
-			"Reflection downscale changed to 0", -- [1]
-			0, -- [2]
-		}, -- [110]
-		{
-			"Sunshafts quality changed to 2", -- [1]
-			0, -- [2]
-		}, -- [111]
-		{
-			"Refraction mode changed to 2", -- [1]
-			0, -- [2]
-		}, -- [112]
-		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
-			0, -- [2]
-		}, -- [113]
-		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
-			0, -- [2]
-		}, -- [114]
-		{
-			"Volume fog enabled.", -- [1]
-			0, -- [2]
-		}, -- [115]
-		{
-			"Projected textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [116]
-		{
-			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
-			0, -- [2]
-		}, -- [117]
-		{
-			"Shadow texture size changed to 2048.", -- [1]
-			0, -- [2]
-		}, -- [118]
-		{
-			"Soft shadows changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [119]
-		{
-			"SSAO mode set to 3", -- [1]
-			0, -- [2]
-		}, -- [120]
-		{
-			"Depth Based Opacity Enabled", -- [1]
-			0, -- [2]
-		}, -- [121]
-		{
-			"SkyCloudLOD set to 0", -- [1]
-			0, -- [2]
-		}, -- [122]
-		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
-			0, -- [2]
-		}, -- [123]
-		{
-			"Terrain mip level changed to 0.", -- [1]
-			0, -- [2]
-		}, -- [124]
-		{
-			"Outline mode changed to 2", -- [1]
-			0, -- [2]
-		}, -- [125]
-		{
-			"LightBuffer mode changed to 2", -- [1]
-			0, -- [2]
-		}, -- [126]
-		{
-			"Physics interaction level changed to 1", -- [1]
-			0, -- [2]
-		}, -- [127]
-		{
-			"Render scale changed to 1", -- [1]
-			0, -- [2]
-		}, -- [128]
-		{
-			"Resample quality changed to 1", -- [1]
-			0, -- [2]
-		}, -- [129]
-		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
-		}, -- [130]
-		{
-			"MSAA for alpha-test enabled.", -- [1]
-			0, -- [2]
-		}, -- [131]
-		{
-			"Component texture lod changed to 0", -- [1]
-			0, -- [2]
-		}, -- [132]
-		{
-			"Component texture lod changed to 0", -- [1]
-			0, -- [2]
-		}, -- [133]
-		{
-			"World preload object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [134]
-		{
-			"World load object sort enabled.", -- [1]
-			0, -- [2]
-		}, -- [135]
-		{
-			"World preload non critical enabled.", -- [1]
-			0, -- [2]
-		}, -- [136]
-		{
-			"World preload high res textures enabled.", -- [1]
-			0, -- [2]
-		}, -- [137]
-		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
-			0, -- [2]
-		}, -- [138]
-		{
-			"Full memory crash dump disabled", -- [1]
-			0, -- [2]
-		}, -- [139]
-		{
-			"Error display disabled", -- [1]
-			0, -- [2]
-		}, -- [140]
-		{
-			"Error display shown", -- [1]
-			0, -- [2]
-		}, -- [141]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [142]
-		{
-			"Displaying errors through fatal errors", -- [1]
-			0, -- [2]
-		}, -- [143]
-		{
-			"Now filtering: all messages", -- [1]
-			0, -- [2]
-		}, -- [144]
-		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [145]
-		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [146]
-		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [147]
-		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
-			0, -- [2]
-		}, -- [148]
-		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
-			0, -- [2]
-		}, -- [149]
-		{
-			"[GlueLogin] Resetting", -- [1]
-			0, -- [2]
-		}, -- [150]
-		{
-			"[IBN_Login] Initializing", -- [1]
-			0, -- [2]
-		}, -- [151]
-		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
-			0, -- [2]
-		}, -- [152]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [153]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [154]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [155]
-		{
-			"[GlueLogin] Logon complete.", -- [1]
-			0, -- [2]
-		}, -- [156]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [157]
-		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
-			0, -- [2]
-		}, -- [158]
-		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [159]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [160]
-		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [161]
-		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
-			0, -- [2]
-		}, -- [162]
-		{
-			"[GlueLogin] Realm list ready.", -- [1]
-			0, -- [2]
-		}, -- [163]
-		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
-			0, -- [2]
-		}, -- [164]
-		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [165]
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [166]
-		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [167]
-		{
-			"Got new connection 2", -- [1]
-			0, -- [2]
-		}, -- [168]
-		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
-			0, -- [2]
-		}, -- [169]
-		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [170]
-		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [171]
-		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
-			0, -- [2]
-		}, -- [172]
-		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [173]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [174]
-		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
-		}, -- [175]
-		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
-		}, -- [176]
-		{
-			"MSAA disabled", -- [1]
-			0, -- [2]
-		}, -- [177]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [178]
-		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
-			0, -- [2]
-		}, -- [179]
-		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
-			0, -- [2]
-		}, -- [180]
-		{
-			"Proficiency in item class 2 set to 0x0000000085", -- [1]
-			0, -- [2]
-		}, -- [181]
-		{
-			"Proficiency in item class 2 set to 0x000000008d", -- [1]
-			0, -- [2]
-		}, -- [182]
-		{
-			"Proficiency in item class 2 set to 0x000000009d", -- [1]
-			0, -- [2]
-		}, -- [183]
-		{
-			"Proficiency in item class 2 set to 0x000000019d", -- [1]
-			0, -- [2]
-		}, -- [184]
-		{
-			"Proficiency in item class 2 set to 0x000000059d", -- [1]
-			0, -- [2]
-		}, -- [185]
-		{
-			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
-			0, -- [2]
-		}, -- [186]
-		{
-			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
-			0, -- [2]
-		}, -- [187]
-		{
-			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
-			0, -- [2]
-		}, -- [188]
-		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
-			0, -- [2]
-		}, -- [189]
-		{
-			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
-			0, -- [2]
-		}, -- [190]
-		{
-			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
-			0, -- [2]
-		}, -- [191]
-		{
-			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
-			0, -- [2]
-		}, -- [192]
-		{
-			"Proficiency in item class 4 set to 0x0000000031", -- [1]
-			0, -- [2]
-		}, -- [193]
-		{
-			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
-			0, -- [2]
-		}, -- [194]
-		{
-			"Proficiency in item class 4 set to 0x0000000039", -- [1]
-			0, -- [2]
-		}, -- [195]
-		{
-			"Proficiency in item class 4 set to 0x000000003d", -- [1]
-			0, -- [2]
-		}, -- [196]
-		{
-			"Proficiency in item class 4 set to 0x000000003f", -- [1]
-			0, -- [2]
-		}, -- [197]
-		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
-			0, -- [2]
-		}, -- [198]
-		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
-			0, -- [2]
-		}, -- [199]
-		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
-			0, -- [2]
-		}, -- [200]
-		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
-			0, -- [2]
-		}, -- [201]
-		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [202]
-		{
-			"Time set to 4/27/2019 (Sat) 0:21", -- [1]
-			0, -- [2]
-		}, -- [203]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [204]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [205]
-		{
-			"Total: 221d 8h 40m 37s", -- [1]
-			0, -- [2]
-		}, -- [206]
-		{
-			"Level: 18d 19h 20m 14s", -- [1]
-			0, -- [2]
-		}, -- [207]
-		{
-			"Test CVar test_cameraDynamicPitch has been set to 1 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [208]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.018619356976196 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [209]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.039078719632693 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [210]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.05578458882258 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [211]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.071521634675534 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [212]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.089969672626644 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [213]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.10466504549743 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [214]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.12020623260899 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [215]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.13475513288684 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [216]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.15011987075291 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [217]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.16448321429448 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [218]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.1796302271069 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [219]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.1937694282482 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [220]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.20865802509503 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [221]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.22426003073656 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [222]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.23883086096503 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [223]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.25323139604291 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [224]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.26745136786133 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [225]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.28148063705958 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [226]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.29450148846017 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [227]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.30892719717539 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [228]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.32232491769042 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [229]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.33549280873462 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [230]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.34842148111944 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [231]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.36110171622796 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [232]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.41050568436293 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [233]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.41650983882296 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [234]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.42177701965062 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [235]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.42762294515946 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [236]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.43274761247656 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [237]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.43717566693191 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [238]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.4421715491385 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [239]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.44709760732503 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [240]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.45195306360974 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [241]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.45673715125972 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [242]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.46144911481199 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [243]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.46608821019283 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [244]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.47065370483523 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [245]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.47458756993071 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [246]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.47956101986254 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [247]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.48390143367902 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [248]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.48816543384231 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [249]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.49235234701727 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [250]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.49646151204173 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [251]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.50049228003082 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [252]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.50395439121258 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [253]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.5073555735811 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [254]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.51116750534018 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [255]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.51443675080096 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [256]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.51809685013919 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [257]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.52167513597104 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [258]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.52517104324364 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [259]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.52900478400171 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [260]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.53191352702947 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [261]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.53515903882625 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [262]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.54101620567169 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [263]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.54401742263641 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [264]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.54729108337562 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [265]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.54976167620757 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [266]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.5525038057297 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [267]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.55483161387447 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [268]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.55709234207636 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [269]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.55959354253668 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [270]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.56200637668122 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [271]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.56433046349547 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [272]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.56656543597914 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [273]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.56844765747719 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [274]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.57051460044592 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [275]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.5722492836491 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [276]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.57414704966098 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [277]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.57595415118938 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [278]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.57767030287199 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [279]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.57949192318333 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [280]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58101392457402 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [281]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58244417712198 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [282]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58378245497374 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [283]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58502854679967 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [284]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58631996457358 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [285]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58724339987294 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [286]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58876990920902 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [287]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58968294207575 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [288]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59039559468321 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [289]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59108588447897 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [290]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59165804210506 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [291]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59211195321224 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [292]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59244752708357 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [293]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59266469665253 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [294]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59276707494041 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [295]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59274367294513 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [296]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.59277 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [297]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.58439019018316 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [298]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.54811852823511 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [299]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.5369854137674 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [300]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.52032413792172 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [301]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.50464143816888 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [302]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.48718859506893 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [303]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.47165214360156 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [304]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.45529614991284 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [305]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.43994950760449 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [306]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.41936188145569 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [307]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.40428890920882 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [308]
-		{
-			"Test CVar test_cameraOverShoulder has been set to 0.38847600431614 (default 0)", -- [1]
-			0, -- [2]
-		}, -- [309]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.37282640893754 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [310]
+		}, -- [1]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.35820746388538 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [311]
+		}, -- [2]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.34122361113431 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [312]
+		}, -- [3]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.32614992140037 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [313]
+		}, -- [4]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.31128936370359 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [314]
+		}, -- [5]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.29665381734786 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [315]
+		}, -- [6]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.28225498176643 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [316]
+		}, -- [7]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.26810436716953 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [317]
+		}, -- [8]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.2549780136894 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [318]
+		}, -- [9]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.24134224588029 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [319]
+		}, -- [10]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.22652133967675 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [320]
+		}, -- [11]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.21349114866714 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [321]
+		}, -- [12]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.20216296800243 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [322]
+		}, -- [13]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.19039726385838 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [323]
+		}, -- [14]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.17758726361645 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [324]
+		}, -- [15]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.16643880229226 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [325]
+		}, -- [16]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.16065924801246 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [326]
+		}, -- [17]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.14997885664975 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [327]
+		}, -- [18]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.13961419158859 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [328]
+		}, -- [19]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.12899218048937 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [329]
+		}, -- [20]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.11930055480434 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [330]
+		}, -- [21]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.11430594073639 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [331]
+		}, -- [22]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.1088685638167 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [332]
+		}, -- [23]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.10407697012437 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [333]
+		}, -- [24]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.099383044756449 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [334]
+		}, -- [25]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.093780027505 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [335]
+		}, -- [26]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.089306472765711 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [336]
+		}, -- [27]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.085414423728244 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [337]
+		}, -- [28]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.080662098144113 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [338]
+		}, -- [29]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.076036127539817 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [339]
+		}, -- [30]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.07198173155203 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [340]
+		}, -- [31]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.067598953941232 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [341]
+		}, -- [32]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.063765213259475 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [342]
+		}, -- [33]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0596295322323 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [343]
+		}, -- [34]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.056019861438281 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [344]
+		}, -- [35]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.051753791493349 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [345]
+		}, -- [36]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.048015675003027 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [346]
+		}, -- [37]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.044766265140548 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [347]
+		}, -- [38]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.041969825493734 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [348]
+		}, -- [39]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.038927817892659 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [349]
+		}, -- [40]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.035677655256879 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [350]
+		}, -- [41]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.032870010115797 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [351]
+		}, -- [42]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.030174264450477 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [352]
+		}, -- [43]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.027590957022364 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [353]
+		}, -- [44]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.024853114604599 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [354]
+		}, -- [45]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.022255397200219 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [355]
+		}, -- [46]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.020037788905545 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [356]
+		}, -- [47]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.017934644685406 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [357]
+		}, -- [48]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.015732576199229 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [358]
+		}, -- [49]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.013872430762175 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [359]
+		}, -- [50]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.012316084854783 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [360]
+		}, -- [51]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.010674770200521 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [361]
+		}, -- [52]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0091497908779891 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [362]
+		}, -- [53]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0074443561486957 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [363]
+		}, -- [54]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0061789569567069 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [364]
+		}, -- [55]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0050307916125297 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [365]
+		}, -- [56]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0041088047776189 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [366]
+		}, -- [57]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0029001593691661 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [367]
+		}, -- [58]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0021311901193977 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [368]
+		}, -- [59]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.0012895431525473 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [369]
+		}, -- [60]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.00079620542249614 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [370]
+		}, -- [61]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.00042117731644087 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [371]
+		}, -- [62]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 0.00016453378606796 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [372]
+		}, -- [63]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 2.6326123174325e-05 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [373]
+		}, -- [64]
 		{
 			"Test CVar test_cameraOverShoulder has been set to 6.5819494159403e-06 (default 0)", -- [1]
 			0, -- [2]
-		}, -- [374]
+		}, -- [65]
 		{
 			"ACTION Camera set to 'off' - 'Disable action cam features'", -- [1]
 			0, -- [2]
-		}, -- [375]
+		}, -- [66]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [376]
+		}, -- [67]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [377]
+		}, -- [68]
 		{
 			"Sorting particles normally.", -- [1]
 			0, -- [2]
-		}, -- [378]
+		}, -- [69]
 		{
 			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
-		}, -- [379]
+		}, -- [70]
 		{
 			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
-		}, -- [380]
+		}, -- [71]
 		{
 			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
-		}, -- [381]
+		}, -- [72]
 		{
 			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
-		}, -- [382]
+		}, -- [73]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [383]
+		}, -- [74]
 		{
 			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [384]
+		}, -- [75]
 		{
 			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [385]
+		}, -- [76]
 		{
 			"Water detail changed to 2", -- [1]
 			0, -- [2]
-		}, -- [386]
+		}, -- [77]
 		{
 			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
-		}, -- [387]
+		}, -- [78]
 		{
 			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
-		}, -- [388]
+		}, -- [79]
 		{
 			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
-		}, -- [389]
+		}, -- [80]
 		{
 			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
-		}, -- [390]
+		}, -- [81]
 		{
 			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [391]
+		}, -- [82]
 		{
 			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
-		}, -- [392]
+		}, -- [83]
 		{
 			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
-		}, -- [393]
+		}, -- [84]
 		{
 			"Volume fog enabled.", -- [1]
 			0, -- [2]
-		}, -- [394]
+		}, -- [85]
 		{
 			"Projected textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [395]
+		}, -- [86]
 		{
 			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
-		}, -- [396]
+		}, -- [87]
 		{
 			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
-		}, -- [397]
+		}, -- [88]
 		{
 			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [398]
+		}, -- [89]
 		{
 			"SSAO mode set to 3", -- [1]
 			0, -- [2]
-		}, -- [399]
+		}, -- [90]
 		{
 			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
-		}, -- [400]
+		}, -- [91]
 		{
 			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
-		}, -- [401]
+		}, -- [92]
 		{
 			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
-		}, -- [402]
+		}, -- [93]
 		{
 			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [403]
+		}, -- [94]
 		{
 			"Outline mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [404]
+		}, -- [95]
 		{
 			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [405]
+		}, -- [96]
 		{
 			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
-		}, -- [406]
+		}, -- [97]
 		{
 			"Render scale changed to 1", -- [1]
 			0, -- [2]
-		}, -- [407]
+		}, -- [98]
 		{
 			"Resample quality changed to 1", -- [1]
 			0, -- [2]
-		}, -- [408]
+		}, -- [99]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [409]
+		}, -- [100]
 		{
 			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
-		}, -- [410]
+		}, -- [101]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [411]
+		}, -- [102]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [412]
+		}, -- [103]
 		{
 			"World preload object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [413]
+		}, -- [104]
 		{
 			"World load object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [414]
+		}, -- [105]
 		{
 			"World preload non critical enabled.", -- [1]
 			0, -- [2]
-		}, -- [415]
+		}, -- [106]
 		{
 			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [416]
+		}, -- [107]
 		{
 			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
-		}, -- [417]
+		}, -- [108]
 		{
 			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
-		}, -- [418]
+		}, -- [109]
 		{
 			"Error display disabled", -- [1]
 			0, -- [2]
-		}, -- [419]
+		}, -- [110]
 		{
 			"Error display shown", -- [1]
 			0, -- [2]
-		}, -- [420]
+		}, -- [111]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [421]
+		}, -- [112]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [422]
+		}, -- [113]
 		{
 			"Now filtering: all messages", -- [1]
 			0, -- [2]
-		}, -- [423]
+		}, -- [114]
 		{
 			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [424]
+		}, -- [115]
 		{
 			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [425]
+		}, -- [116]
 		{
 			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [426]
+		}, -- [117]
 		{
 			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [427]
+		}, -- [118]
 		{
 			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
-		}, -- [428]
+		}, -- [119]
 		{
 			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
-		}, -- [429]
+		}, -- [120]
 		{
 			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
-		}, -- [430]
+		}, -- [121]
 		{
 			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
-		}, -- [431]
+		}, -- [122]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [432]
+		}, -- [123]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [433]
+		}, -- [124]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [434]
+		}, -- [125]
 		{
 			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
-		}, -- [435]
+		}, -- [126]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [436]
+		}, -- [127]
 		{
 			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
-		}, -- [437]
+		}, -- [128]
 		{
 			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [438]
+		}, -- [129]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [439]
+		}, -- [130]
 		{
 			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [440]
+		}, -- [131]
 		{
 			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
-		}, -- [441]
+		}, -- [132]
 		{
 			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
-		}, -- [442]
+		}, -- [133]
 		{
 			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
-		}, -- [443]
+		}, -- [134]
 		{
 			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [444]
+		}, -- [135]
 		{
 			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [445]
+		}, -- [136]
 		{
 			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [446]
+		}, -- [137]
 		{
 			"Got new connection 2", -- [1]
 			0, -- [2]
-		}, -- [447]
+		}, -- [138]
 		{
 			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [448]
+		}, -- [139]
 		{
 			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [449]
+		}, -- [140]
 		{
 			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
-		}, -- [450]
+		}, -- [141]
 		{
 			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
-		}, -- [451]
+		}, -- [142]
 		{
 			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [452]
+		}, -- [143]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [453]
+		}, -- [144]
 		{
 			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [454]
+		}, -- [145]
 		{
 			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [455]
+		}, -- [146]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [456]
+		}, -- [147]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [457]
+		}, -- [148]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [458]
+		}, -- [149]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [459]
+		}, -- [150]
 		{
 			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
-		}, -- [460]
+		}, -- [151]
 		{
 			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
-		}, -- [461]
+		}, -- [152]
 		{
 			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
-		}, -- [462]
+		}, -- [153]
 		{
 			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
-		}, -- [463]
+		}, -- [154]
 		{
 			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
-		}, -- [464]
+		}, -- [155]
 		{
 			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
-		}, -- [465]
+		}, -- [156]
 		{
 			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
-		}, -- [466]
+		}, -- [157]
 		{
 			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
-		}, -- [467]
+		}, -- [158]
 		{
 			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
-		}, -- [468]
+		}, -- [159]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
-		}, -- [469]
+		}, -- [160]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
-		}, -- [470]
+		}, -- [161]
 		{
 			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
-		}, -- [471]
+		}, -- [162]
 		{
 			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
-		}, -- [472]
+		}, -- [163]
 		{
 			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
-		}, -- [473]
+		}, -- [164]
 		{
 			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
-		}, -- [474]
+		}, -- [165]
 		{
 			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
-		}, -- [475]
+		}, -- [166]
 		{
 			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
-		}, -- [476]
+		}, -- [167]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [477]
+		}, -- [168]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [478]
+		}, -- [169]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [479]
+		}, -- [170]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [480]
+		}, -- [171]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [481]
+		}, -- [172]
 		{
 			"Time set to 4/28/2019 (Sun) 7:18", -- [1]
 			0, -- [2]
-		}, -- [482]
+		}, -- [173]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [483]
+		}, -- [174]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [484]
+		}, -- [175]
 		{
 			"Total: 221d 9h 53m 25s", -- [1]
 			0, -- [2]
-		}, -- [485]
+		}, -- [176]
 		{
 			"Level: 18d 20h 33m 2s", -- [1]
 			0, -- [2]
-		}, -- [486]
+		}, -- [177]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [487]
+		}, -- [178]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [488]
+		}, -- [179]
 		{
 			"Sorting particles normally.", -- [1]
 			0, -- [2]
-		}, -- [489]
+		}, -- [180]
 		{
 			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
-		}, -- [490]
+		}, -- [181]
 		{
 			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
-		}, -- [491]
+		}, -- [182]
 		{
 			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
-		}, -- [492]
+		}, -- [183]
 		{
 			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
-		}, -- [493]
+		}, -- [184]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [494]
+		}, -- [185]
 		{
 			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [495]
+		}, -- [186]
 		{
 			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [496]
+		}, -- [187]
 		{
 			"Water detail changed to 2", -- [1]
 			0, -- [2]
-		}, -- [497]
+		}, -- [188]
 		{
 			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
-		}, -- [498]
+		}, -- [189]
 		{
 			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
-		}, -- [499]
+		}, -- [190]
 		{
 			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
-		}, -- [500]
+		}, -- [191]
 		{
 			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
-		}, -- [501]
+		}, -- [192]
 		{
 			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [502]
+		}, -- [193]
 		{
 			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
-		}, -- [503]
+		}, -- [194]
 		{
 			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
-		}, -- [504]
+		}, -- [195]
 		{
 			"Volume fog enabled.", -- [1]
 			0, -- [2]
-		}, -- [505]
+		}, -- [196]
 		{
 			"Projected textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [506]
+		}, -- [197]
 		{
 			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
-		}, -- [507]
+		}, -- [198]
 		{
 			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
-		}, -- [508]
+		}, -- [199]
 		{
 			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [509]
+		}, -- [200]
 		{
 			"SSAO mode set to 3", -- [1]
 			0, -- [2]
-		}, -- [510]
+		}, -- [201]
 		{
 			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
-		}, -- [511]
+		}, -- [202]
 		{
 			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
-		}, -- [512]
+		}, -- [203]
 		{
 			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
-		}, -- [513]
+		}, -- [204]
 		{
 			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [514]
+		}, -- [205]
 		{
 			"Outline mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [515]
+		}, -- [206]
 		{
 			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [516]
+		}, -- [207]
 		{
 			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
-		}, -- [517]
+		}, -- [208]
 		{
 			"Render scale changed to 1", -- [1]
 			0, -- [2]
-		}, -- [518]
+		}, -- [209]
 		{
 			"Resample quality changed to 1", -- [1]
 			0, -- [2]
-		}, -- [519]
+		}, -- [210]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [520]
+		}, -- [211]
 		{
 			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
-		}, -- [521]
+		}, -- [212]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [522]
+		}, -- [213]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [523]
+		}, -- [214]
 		{
 			"World preload object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [524]
+		}, -- [215]
 		{
 			"World load object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [525]
+		}, -- [216]
 		{
 			"World preload non critical enabled.", -- [1]
 			0, -- [2]
-		}, -- [526]
+		}, -- [217]
 		{
 			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [527]
+		}, -- [218]
 		{
 			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
-		}, -- [528]
+		}, -- [219]
 		{
 			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
-		}, -- [529]
+		}, -- [220]
 		{
 			"Error display disabled", -- [1]
 			0, -- [2]
-		}, -- [530]
+		}, -- [221]
 		{
 			"Error display shown", -- [1]
 			0, -- [2]
-		}, -- [531]
+		}, -- [222]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [532]
+		}, -- [223]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [533]
+		}, -- [224]
 		{
 			"Now filtering: all messages", -- [1]
 			0, -- [2]
-		}, -- [534]
+		}, -- [225]
 		{
 			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [535]
+		}, -- [226]
 		{
 			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [536]
+		}, -- [227]
 		{
 			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [537]
+		}, -- [228]
 		{
 			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [538]
+		}, -- [229]
 		{
 			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
-		}, -- [539]
+		}, -- [230]
 		{
 			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
-		}, -- [540]
+		}, -- [231]
 		{
 			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
-		}, -- [541]
+		}, -- [232]
 		{
 			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
-		}, -- [542]
+		}, -- [233]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [543]
+		}, -- [234]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [544]
+		}, -- [235]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [545]
+		}, -- [236]
 		{
 			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
-		}, -- [546]
+		}, -- [237]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [547]
+		}, -- [238]
 		{
 			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
-		}, -- [548]
+		}, -- [239]
 		{
 			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [549]
+		}, -- [240]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [550]
+		}, -- [241]
 		{
 			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [551]
+		}, -- [242]
 		{
 			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
-		}, -- [552]
+		}, -- [243]
 		{
 			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
-		}, -- [553]
+		}, -- [244]
 		{
 			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
-		}, -- [554]
+		}, -- [245]
 		{
 			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [555]
+		}, -- [246]
 		{
 			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [556]
+		}, -- [247]
 		{
 			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [557]
+		}, -- [248]
 		{
 			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [558]
+		}, -- [249]
 		{
 			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [559]
+		}, -- [250]
 		{
 			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
-		}, -- [560]
+		}, -- [251]
 		{
 			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
-		}, -- [561]
+		}, -- [252]
 		{
 			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [562]
+		}, -- [253]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [563]
+		}, -- [254]
 		{
 			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [564]
+		}, -- [255]
 		{
 			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [565]
+		}, -- [256]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [566]
+		}, -- [257]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [567]
+		}, -- [258]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [568]
+		}, -- [259]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [569]
+		}, -- [260]
 		{
 			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
-		}, -- [570]
+		}, -- [261]
 		{
 			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
-		}, -- [571]
+		}, -- [262]
 		{
 			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
-		}, -- [572]
+		}, -- [263]
 		{
 			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
-		}, -- [573]
+		}, -- [264]
 		{
 			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
-		}, -- [574]
+		}, -- [265]
 		{
 			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
-		}, -- [575]
+		}, -- [266]
 		{
 			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
-		}, -- [576]
+		}, -- [267]
 		{
 			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
-		}, -- [577]
+		}, -- [268]
 		{
 			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
-		}, -- [578]
+		}, -- [269]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
-		}, -- [579]
+		}, -- [270]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
-		}, -- [580]
+		}, -- [271]
 		{
 			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
-		}, -- [581]
+		}, -- [272]
 		{
 			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
-		}, -- [582]
+		}, -- [273]
 		{
 			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
-		}, -- [583]
+		}, -- [274]
 		{
 			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
-		}, -- [584]
+		}, -- [275]
 		{
 			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
-		}, -- [585]
+		}, -- [276]
 		{
 			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
-		}, -- [586]
+		}, -- [277]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [587]
+		}, -- [278]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [588]
+		}, -- [279]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [589]
+		}, -- [280]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [590]
+		}, -- [281]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [591]
+		}, -- [282]
 		{
 			"Time set to 4/28/2019 (Sun) 7:59", -- [1]
 			0, -- [2]
-		}, -- [592]
+		}, -- [283]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [593]
+		}, -- [284]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [594]
+		}, -- [285]
 		{
 			"Total: 221d 10h 8m 39s", -- [1]
 			0, -- [2]
-		}, -- [595]
+		}, -- [286]
 		{
 			"Level: 18d 20h 48m 16s", -- [1]
 			0, -- [2]
-		}, -- [596]
+		}, -- [287]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [597]
+		}, -- [288]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [598]
+		}, -- [289]
 		{
 			"Sorting particles normally.", -- [1]
 			0, -- [2]
-		}, -- [599]
+		}, -- [290]
 		{
 			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
-		}, -- [600]
+		}, -- [291]
 		{
 			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
-		}, -- [601]
+		}, -- [292]
 		{
 			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
-		}, -- [602]
+		}, -- [293]
 		{
 			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
-		}, -- [603]
+		}, -- [294]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [604]
+		}, -- [295]
 		{
 			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [605]
+		}, -- [296]
 		{
 			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [606]
+		}, -- [297]
 		{
 			"Water detail changed to 2", -- [1]
 			0, -- [2]
-		}, -- [607]
+		}, -- [298]
 		{
 			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
-		}, -- [608]
+		}, -- [299]
 		{
 			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
-		}, -- [609]
+		}, -- [300]
 		{
 			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
-		}, -- [610]
+		}, -- [301]
 		{
 			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
-		}, -- [611]
+		}, -- [302]
 		{
 			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [612]
+		}, -- [303]
 		{
 			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
-		}, -- [613]
+		}, -- [304]
 		{
 			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
-		}, -- [614]
+		}, -- [305]
 		{
 			"Volume fog enabled.", -- [1]
 			0, -- [2]
-		}, -- [615]
+		}, -- [306]
 		{
 			"Projected textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [616]
+		}, -- [307]
 		{
 			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
-		}, -- [617]
+		}, -- [308]
 		{
 			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
-		}, -- [618]
+		}, -- [309]
 		{
 			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [619]
+		}, -- [310]
 		{
 			"SSAO mode set to 3", -- [1]
 			0, -- [2]
-		}, -- [620]
+		}, -- [311]
 		{
 			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
-		}, -- [621]
+		}, -- [312]
 		{
 			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
-		}, -- [622]
+		}, -- [313]
 		{
 			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
-		}, -- [623]
+		}, -- [314]
 		{
 			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [624]
+		}, -- [315]
 		{
 			"Outline mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [625]
+		}, -- [316]
 		{
 			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [626]
+		}, -- [317]
 		{
 			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
-		}, -- [627]
+		}, -- [318]
 		{
 			"Render scale changed to 1", -- [1]
 			0, -- [2]
-		}, -- [628]
+		}, -- [319]
 		{
 			"Resample quality changed to 1", -- [1]
 			0, -- [2]
-		}, -- [629]
+		}, -- [320]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [630]
+		}, -- [321]
 		{
 			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
-		}, -- [631]
+		}, -- [322]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [632]
+		}, -- [323]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [633]
+		}, -- [324]
 		{
 			"World preload object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [634]
+		}, -- [325]
 		{
 			"World load object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [635]
+		}, -- [326]
 		{
 			"World preload non critical enabled.", -- [1]
 			0, -- [2]
-		}, -- [636]
+		}, -- [327]
 		{
 			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [637]
+		}, -- [328]
 		{
 			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
-		}, -- [638]
+		}, -- [329]
 		{
 			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
-		}, -- [639]
+		}, -- [330]
 		{
 			"Error display disabled", -- [1]
 			0, -- [2]
-		}, -- [640]
+		}, -- [331]
 		{
 			"Error display shown", -- [1]
 			0, -- [2]
-		}, -- [641]
+		}, -- [332]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [642]
+		}, -- [333]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [643]
+		}, -- [334]
 		{
 			"Now filtering: all messages", -- [1]
 			0, -- [2]
-		}, -- [644]
+		}, -- [335]
 		{
 			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [645]
+		}, -- [336]
 		{
 			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [646]
+		}, -- [337]
 		{
 			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [647]
+		}, -- [338]
 		{
 			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [648]
+		}, -- [339]
 		{
 			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
-		}, -- [649]
+		}, -- [340]
 		{
 			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
-		}, -- [650]
+		}, -- [341]
 		{
 			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
-		}, -- [651]
+		}, -- [342]
 		{
 			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
-		}, -- [652]
+		}, -- [343]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [653]
+		}, -- [344]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [654]
+		}, -- [345]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [655]
+		}, -- [346]
 		{
 			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
-		}, -- [656]
+		}, -- [347]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [657]
+		}, -- [348]
 		{
 			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
-		}, -- [658]
+		}, -- [349]
 		{
 			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [659]
+		}, -- [350]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [660]
+		}, -- [351]
 		{
 			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [661]
+		}, -- [352]
 		{
 			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
-		}, -- [662]
+		}, -- [353]
 		{
 			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
-		}, -- [663]
+		}, -- [354]
 		{
 			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
-		}, -- [664]
+		}, -- [355]
 		{
 			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [665]
+		}, -- [356]
 		{
 			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [666]
+		}, -- [357]
 		{
 			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [667]
+		}, -- [358]
 		{
 			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [668]
+		}, -- [359]
 		{
 			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [669]
+		}, -- [360]
 		{
 			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
-		}, -- [670]
+		}, -- [361]
 		{
 			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
-		}, -- [671]
+		}, -- [362]
 		{
 			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [672]
+		}, -- [363]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [673]
+		}, -- [364]
 		{
 			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [674]
+		}, -- [365]
 		{
 			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [675]
+		}, -- [366]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [676]
+		}, -- [367]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [677]
+		}, -- [368]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [678]
+		}, -- [369]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [679]
+		}, -- [370]
 		{
 			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
-		}, -- [680]
+		}, -- [371]
 		{
 			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
-		}, -- [681]
+		}, -- [372]
 		{
 			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
-		}, -- [682]
+		}, -- [373]
 		{
 			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
-		}, -- [683]
+		}, -- [374]
 		{
 			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
-		}, -- [684]
+		}, -- [375]
 		{
 			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
-		}, -- [685]
+		}, -- [376]
 		{
 			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
-		}, -- [686]
+		}, -- [377]
 		{
 			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
-		}, -- [687]
+		}, -- [378]
 		{
 			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
-		}, -- [688]
+		}, -- [379]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
-		}, -- [689]
+		}, -- [380]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
-		}, -- [690]
+		}, -- [381]
 		{
 			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
-		}, -- [691]
+		}, -- [382]
 		{
 			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
-		}, -- [692]
+		}, -- [383]
 		{
 			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
-		}, -- [693]
+		}, -- [384]
 		{
 			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
-		}, -- [694]
+		}, -- [385]
 		{
 			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
-		}, -- [695]
+		}, -- [386]
 		{
 			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
-		}, -- [696]
+		}, -- [387]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [697]
+		}, -- [388]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [698]
+		}, -- [389]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [699]
+		}, -- [390]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [700]
+		}, -- [391]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [701]
+		}, -- [392]
 		{
 			"Time set to 4/28/2019 (Sun) 13:36", -- [1]
 			0, -- [2]
-		}, -- [702]
+		}, -- [393]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [703]
+		}, -- [394]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [704]
+		}, -- [395]
 		{
 			"Total: 221d 10h 12m 17s", -- [1]
 			0, -- [2]
-		}, -- [705]
+		}, -- [396]
 		{
 			"Level: 18d 20h 51m 54s", -- [1]
 			0, -- [2]
-		}, -- [706]
+		}, -- [397]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [707]
+		}, -- [398]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [708]
+		}, -- [399]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [709]
+		}, -- [400]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [710]
+		}, -- [401]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [711]
+		}, -- [402]
 		{
 			"Sorting particles normally.", -- [1]
 			0, -- [2]
-		}, -- [712]
+		}, -- [403]
 		{
 			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
-		}, -- [713]
+		}, -- [404]
 		{
 			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
-		}, -- [714]
+		}, -- [405]
 		{
 			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
-		}, -- [715]
+		}, -- [406]
 		{
 			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
-		}, -- [716]
+		}, -- [407]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [717]
+		}, -- [408]
 		{
 			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [718]
+		}, -- [409]
 		{
 			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [719]
+		}, -- [410]
 		{
 			"Water detail changed to 2", -- [1]
 			0, -- [2]
-		}, -- [720]
+		}, -- [411]
 		{
 			"Ripple detail changed to 1", -- [1]
 			0, -- [2]
-		}, -- [721]
+		}, -- [412]
 		{
 			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
-		}, -- [722]
+		}, -- [413]
 		{
 			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
-		}, -- [723]
+		}, -- [414]
 		{
 			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
-		}, -- [724]
+		}, -- [415]
 		{
 			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [725]
+		}, -- [416]
 		{
 			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
-		}, -- [726]
+		}, -- [417]
 		{
 			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
-		}, -- [727]
+		}, -- [418]
 		{
 			"Volume fog enabled.", -- [1]
 			0, -- [2]
-		}, -- [728]
+		}, -- [419]
 		{
 			"Projected textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [729]
+		}, -- [420]
 		{
 			"Shadow mode changed to 2 - 3 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
-		}, -- [730]
+		}, -- [421]
 		{
 			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
-		}, -- [731]
+		}, -- [422]
 		{
 			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [732]
+		}, -- [423]
 		{
 			"SSAO mode set to 3", -- [1]
 			0, -- [2]
-		}, -- [733]
+		}, -- [424]
 		{
 			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
-		}, -- [734]
+		}, -- [425]
 		{
 			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
-		}, -- [735]
+		}, -- [426]
 		{
 			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
-		}, -- [736]
+		}, -- [427]
 		{
 			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [737]
+		}, -- [428]
 		{
 			"Outline mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [738]
+		}, -- [429]
 		{
 			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
-		}, -- [739]
+		}, -- [430]
 		{
 			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
-		}, -- [740]
+		}, -- [431]
 		{
 			"Render scale changed to 1", -- [1]
 			0, -- [2]
-		}, -- [741]
+		}, -- [432]
 		{
 			"Resample quality changed to 1", -- [1]
 			0, -- [2]
-		}, -- [742]
+		}, -- [433]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [743]
+		}, -- [434]
 		{
 			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
-		}, -- [744]
+		}, -- [435]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [745]
+		}, -- [436]
 		{
 			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
-		}, -- [746]
+		}, -- [437]
 		{
 			"World preload object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [747]
+		}, -- [438]
 		{
 			"World load object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [748]
+		}, -- [439]
 		{
 			"World preload non critical enabled.", -- [1]
 			0, -- [2]
-		}, -- [749]
+		}, -- [440]
 		{
 			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [750]
+		}, -- [441]
 		{
 			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
-		}, -- [751]
+		}, -- [442]
 		{
 			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
-		}, -- [752]
+		}, -- [443]
 		{
 			"Error display disabled", -- [1]
 			0, -- [2]
-		}, -- [753]
+		}, -- [444]
 		{
 			"Error display shown", -- [1]
 			0, -- [2]
-		}, -- [754]
+		}, -- [445]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [755]
+		}, -- [446]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [756]
+		}, -- [447]
 		{
 			"Now filtering: all messages", -- [1]
 			0, -- [2]
-		}, -- [757]
+		}, -- [448]
 		{
 			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [758]
+		}, -- [449]
 		{
 			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [759]
+		}, -- [450]
 		{
 			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [760]
+		}, -- [451]
 		{
 			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [761]
+		}, -- [452]
 		{
 			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
-		}, -- [762]
+		}, -- [453]
 		{
 			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
-		}, -- [763]
+		}, -- [454]
 		{
 			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
-		}, -- [764]
+		}, -- [455]
 		{
 			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
-		}, -- [765]
+		}, -- [456]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [766]
+		}, -- [457]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [767]
+		}, -- [458]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [768]
+		}, -- [459]
 		{
 			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
-		}, -- [769]
+		}, -- [460]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [770]
+		}, -- [461]
 		{
 			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
-		}, -- [771]
+		}, -- [462]
 		{
 			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [772]
+		}, -- [463]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [773]
+		}, -- [464]
 		{
 			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [774]
+		}, -- [465]
 		{
 			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
-		}, -- [775]
+		}, -- [466]
 		{
 			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
-		}, -- [776]
+		}, -- [467]
 		{
 			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
-		}, -- [777]
+		}, -- [468]
 		{
 			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [778]
+		}, -- [469]
 		{
 			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [779]
+		}, -- [470]
 		{
 			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [780]
+		}, -- [471]
 		{
 			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [781]
+		}, -- [472]
 		{
 			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [782]
+		}, -- [473]
 		{
 			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
-		}, -- [783]
+		}, -- [474]
 		{
 			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
-		}, -- [784]
+		}, -- [475]
 		{
 			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [785]
+		}, -- [476]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [786]
+		}, -- [477]
 		{
 			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [787]
+		}, -- [478]
 		{
 			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
 			3, -- [2]
-		}, -- [788]
+		}, -- [479]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [789]
+		}, -- [480]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [790]
+		}, -- [481]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [791]
+		}, -- [482]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [792]
+		}, -- [483]
 		{
 			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
-		}, -- [793]
+		}, -- [484]
 		{
 			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
-		}, -- [794]
+		}, -- [485]
 		{
 			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
-		}, -- [795]
+		}, -- [486]
 		{
 			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
-		}, -- [796]
+		}, -- [487]
 		{
 			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
-		}, -- [797]
+		}, -- [488]
 		{
 			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
-		}, -- [798]
+		}, -- [489]
 		{
 			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
-		}, -- [799]
+		}, -- [490]
 		{
 			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
-		}, -- [800]
+		}, -- [491]
 		{
 			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
-		}, -- [801]
+		}, -- [492]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
-		}, -- [802]
+		}, -- [493]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
-		}, -- [803]
+		}, -- [494]
 		{
 			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
-		}, -- [804]
+		}, -- [495]
 		{
 			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
-		}, -- [805]
+		}, -- [496]
 		{
 			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
-		}, -- [806]
+		}, -- [497]
 		{
 			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
-		}, -- [807]
+		}, -- [498]
 		{
 			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
-		}, -- [808]
+		}, -- [499]
 		{
 			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
-		}, -- [809]
+		}, -- [500]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [810]
+		}, -- [501]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [811]
+		}, -- [502]
 		{
 			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
-		}, -- [812]
+		}, -- [503]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
-		}, -- [813]
+		}, -- [504]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [814]
+		}, -- [505]
 		{
 			"Time set to 4/28/2019 (Sun) 15:21", -- [1]
 			0, -- [2]
-		}, -- [815]
+		}, -- [506]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [816]
+		}, -- [507]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [817]
+		}, -- [508]
 		{
 			"Total: 221d 11h 50m 7s", -- [1]
 			0, -- [2]
-		}, -- [818]
+		}, -- [509]
 		{
 			"Level: 18d 22h 29m 44s", -- [1]
 			0, -- [2]
-		}, -- [819]
+		}, -- [510]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [820]
+		}, -- [511]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [821]
+		}, -- [512]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [822]
+		}, -- [513]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [823]
+		}, -- [514]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [824]
+		}, -- [515]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [825]
+		}, -- [516]
 		{
 			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
-		}, -- [826]
+		}, -- [517]
 		{
 			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
-		}, -- [827]
+		}, -- [518]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [828]
+		}, -- [519]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [829]
+		}, -- [520]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [830]
+		}, -- [521]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [831]
+		}, -- [522]
 		{
 			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
-		}, -- [832]
+		}, -- [523]
 		{
 			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
-		}, -- [833]
+		}, -- [524]
 		{
 			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
-		}, -- [834]
+		}, -- [525]
 		{
 			"Weather changed to 5, intensity 1.000000\n", -- [1]
 			0, -- [2]
-		}, -- [835]
+		}, -- [526]
 		{
 			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
-		}, -- [836]
+		}, -- [527]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [837]
+		}, -- [528]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [838]
+		}, -- [529]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [839]
+		}, -- [530]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [840]
+		}, -- [531]
 		{
 			"Weather changed to 2, intensity 0.800000\n", -- [1]
 			0, -- [2]
-		}, -- [841]
+		}, -- [532]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [842]
+		}, -- [533]
 		{
 			"World transfer pending...", -- [1]
 			0, -- [2]
-		}, -- [843]
+		}, -- [534]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [844]
+		}, -- [535]
 		{
 			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [536]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [537]
+		{
+			"Total: 221d 12h 5m 25s", -- [1]
+			0, -- [2]
+		}, -- [538]
+		{
+			"Level: 18d 22h 45m 2s", -- [1]
+			0, -- [2]
+		}, -- [539]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [540]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [541]
+		{
+			"Weather changed to 3, intensity 0.750000\n", -- [1]
+			0, -- [2]
+		}, -- [542]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [543]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [544]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [545]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [546]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [547]
+		{
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			0, -- [2]
+		}, -- [548]
+		{
+			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			0, -- [2]
+		}, -- [549]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [550]
+		{
+			"Total: 221d 12h 12m 48s", -- [1]
+			0, -- [2]
+		}, -- [551]
+		{
+			"Level: 18d 22h 52m 25s", -- [1]
+			0, -- [2]
+		}, -- [552]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [553]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [554]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [555]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [556]
+		{
+			"Total: 221d 12h 16m 59s", -- [1]
+			0, -- [2]
+		}, -- [557]
+		{
+			"Level: 18d 22h 56m 36s", -- [1]
+			0, -- [2]
+		}, -- [558]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [559]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [560]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [561]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [562]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [563]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [564]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [565]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [566]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [567]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [568]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [569]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [570]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [571]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [572]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [573]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [574]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [575]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [576]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [577]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [578]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [579]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [580]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [581]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [582]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [583]
+		{
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [584]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [585]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [586]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [587]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [588]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [589]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [590]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [591]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [592]
+		{
+			"LightBuffer mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [593]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [594]
+		{
+			"Render scale changed to 1.6", -- [1]
+			0, -- [2]
+		}, -- [595]
+		{
+			"Resample quality changed to 1", -- [1]
+			0, -- [2]
+		}, -- [596]
+		{
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			0, -- [2]
+		}, -- [597]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [598]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [599]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [600]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [601]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [602]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [603]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [604]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [605]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [606]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [607]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [608]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [609]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [610]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [611]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [612]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [613]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [614]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [615]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [616]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [617]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [618]
+		{
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [619]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [620]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [621]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [622]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [623]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [624]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [625]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [626]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [627]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [628]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			0, -- [2]
+		}, -- [629]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [630]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			0, -- [2]
+		}, -- [631]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [632]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [633]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [634]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [635]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [636]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [637]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [638]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [639]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [640]
+		{
+			"[IBN_Login] Requesting change realm list", -- [1]
+			0, -- [2]
+		}, -- [641]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [642]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [643]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [644]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [645]
+		{
+			"[IBN_Login] Requesting realm listsnumSubRegions=\"5\"", -- [1]
+			0, -- [2]
+		}, -- [646]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [647]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			0, -- [2]
+		}, -- [648]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [649]
+		{
+			"NetClient::HandleDisconnect()\n", -- [1]
+			0, -- [2]
+		}, -- [650]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [651]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [652]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [653]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [654]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [655]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [656]
+		{
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [657]
+		{
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [658]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [659]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [660]
+		{
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			0, -- [2]
+		}, -- [661]
+		{
+			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			0, -- [2]
+		}, -- [662]
+		{
+			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			0, -- [2]
+		}, -- [663]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [664]
+		{
+			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			0, -- [2]
+		}, -- [665]
+		{
+			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			0, -- [2]
+		}, -- [666]
+		{
+			"Proficiency in item class 2 set to 0x000018c480", -- [1]
+			0, -- [2]
+		}, -- [667]
+		{
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			0, -- [2]
+		}, -- [668]
+		{
+			"Proficiency in item class 2 set to 0x000018c480", -- [1]
+			0, -- [2]
+		}, -- [669]
+		{
+			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			0, -- [2]
+		}, -- [670]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [671]
+		{
+			"Time set to 4/30/2019 (Tue) 0:44", -- [1]
+			0, -- [2]
+		}, -- [672]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [673]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [674]
+		{
+			"Total: 0d 19h 25m 55s", -- [1]
+			0, -- [2]
+		}, -- [675]
+		{
+			"Level: 0d 11h 15m 56s", -- [1]
+			0, -- [2]
+		}, -- [676]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [677]
+		{
+			"[IBN_Login] Requesting change realm list", -- [1]
+			0, -- [2]
+		}, -- [678]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [679]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [680]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [681]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [682]
+		{
+			"[IBN_Login] Requesting realm listsnumSubRegions=\"5\"", -- [1]
+			0, -- [2]
+		}, -- [683]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [684]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			0, -- [2]
+		}, -- [685]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [686]
+		{
+			"NetClient::HandleDisconnect()\n", -- [1]
+			0, -- [2]
+		}, -- [687]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [688]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [689]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [690]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [691]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [692]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [693]
+		{
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			0, -- [2]
+		}, -- [694]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [695]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [696]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [697]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [698]
+		{
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			0, -- [2]
+		}, -- [699]
+		{
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			0, -- [2]
+		}, -- [700]
+		{
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			0, -- [2]
+		}, -- [701]
+		{
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			0, -- [2]
+		}, -- [702]
+		{
+			"Proficiency in item class 2 set to 0x000000009d", -- [1]
+			0, -- [2]
+		}, -- [703]
+		{
+			"Proficiency in item class 2 set to 0x000000019d", -- [1]
+			0, -- [2]
+		}, -- [704]
+		{
+			"Proficiency in item class 2 set to 0x000000059d", -- [1]
+			0, -- [2]
+		}, -- [705]
+		{
+			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
+			0, -- [2]
+		}, -- [706]
+		{
+			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
+			0, -- [2]
+		}, -- [707]
+		{
+			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
+			0, -- [2]
+		}, -- [708]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [709]
+		{
+			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
+			0, -- [2]
+		}, -- [710]
+		{
+			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
+			0, -- [2]
+		}, -- [711]
+		{
+			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
+			0, -- [2]
+		}, -- [712]
+		{
+			"Proficiency in item class 4 set to 0x0000000031", -- [1]
+			0, -- [2]
+		}, -- [713]
+		{
+			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
+			0, -- [2]
+		}, -- [714]
+		{
+			"Proficiency in item class 4 set to 0x0000000039", -- [1]
+			0, -- [2]
+		}, -- [715]
+		{
+			"Proficiency in item class 4 set to 0x000000003d", -- [1]
+			0, -- [2]
+		}, -- [716]
+		{
+			"Proficiency in item class 4 set to 0x000000003f", -- [1]
+			0, -- [2]
+		}, -- [717]
+		{
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			0, -- [2]
+		}, -- [718]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			0, -- [2]
+		}, -- [719]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			0, -- [2]
+		}, -- [720]
+		{
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			0, -- [2]
+		}, -- [721]
+		{
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [722]
+		{
+			"Time set to 4/30/2019 (Tue) 1:06", -- [1]
+			0, -- [2]
+		}, -- [723]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [724]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [725]
+		{
+			"Total: 221d 12h 22m 24s", -- [1]
+			0, -- [2]
+		}, -- [726]
+		{
+			"Level: 18d 23h 2m 1s", -- [1]
+			0, -- [2]
+		}, -- [727]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [728]
+		{
+			"Total: 221d 12h 22m 27s", -- [1]
+			0, -- [2]
+		}, -- [729]
+		{
+			"Level: 18d 23h 2m 4s", -- [1]
+			0, -- [2]
+		}, -- [730]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [731]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [732]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [733]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [734]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [735]
+		{
+			"Total: 221d 12h 26m 40s", -- [1]
+			0, -- [2]
+		}, -- [736]
+		{
+			"Level: 18d 23h 6m 17s", -- [1]
+			0, -- [2]
+		}, -- [737]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [738]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [739]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [740]
+		{
+			"Multithreaded rendering enabled.", -- [1]
+			0, -- [2]
+		}, -- [741]
+		{
+			"Multithreaded BeginDraw enabled.", -- [1]
+			0, -- [2]
+		}, -- [742]
+		{
+			"Multithread shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [743]
+		{
+			"Multithreaded prepass enabled.", -- [1]
+			0, -- [2]
+		}, -- [744]
+		{
+			"Multithreaded opaque pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [745]
+		{
+			"Multithreaded alpha M2 pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [746]
+		{
+			"Multithreaded opaque WMO pass enabled.", -- [1]
+			0, -- [2]
+		}, -- [747]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [748]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [749]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [750]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [751]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [752]
+		{
+			"Refraction mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [753]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [754]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [755]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [756]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [757]
+		{
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [758]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [759]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [760]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [761]
+		{
+			"Depth Based Opacity Enabled", -- [1]
+			0, -- [2]
+		}, -- [762]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [763]
+		{
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			0, -- [2]
+		}, -- [764]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [765]
+		{
+			"Outline mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [766]
+		{
+			"LightBuffer mode changed to 2", -- [1]
+			0, -- [2]
+		}, -- [767]
+		{
+			"Physics interaction level changed to 1", -- [1]
+			0, -- [2]
+		}, -- [768]
+		{
+			"Render scale changed to 1.6", -- [1]
+			0, -- [2]
+		}, -- [769]
+		{
+			"Resample quality changed to 1", -- [1]
+			0, -- [2]
+		}, -- [770]
+		{
+			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			0, -- [2]
+		}, -- [771]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [772]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [773]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [774]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [775]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [776]
+		{
+			"World preload non critical enabled.", -- [1]
+			0, -- [2]
+		}, -- [777]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [778]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [779]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [780]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [781]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [782]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [783]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [784]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [785]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [786]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [787]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [788]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [789]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [790]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [791]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [792]
+		{
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [793]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [794]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [795]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [796]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [797]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [798]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [799]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [800]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [801]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [802]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			0, -- [2]
+		}, -- [803]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [804]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			0, -- [2]
+		}, -- [805]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [806]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [807]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [808]
+		{
+			"Got new connection 2", -- [1]
+			0, -- [2]
+		}, -- [809]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [810]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [811]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [812]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [813]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [814]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [815]
+		{
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [816]
+		{
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
+		}, -- [817]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [818]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [819]
+		{
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			0, -- [2]
+		}, -- [820]
+		{
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			0, -- [2]
+		}, -- [821]
+		{
+			"Proficiency in item class 2 set to 0x0000000085", -- [1]
+			0, -- [2]
+		}, -- [822]
+		{
+			"Proficiency in item class 2 set to 0x000000008d", -- [1]
+			0, -- [2]
+		}, -- [823]
+		{
+			"Proficiency in item class 2 set to 0x000000009d", -- [1]
+			0, -- [2]
+		}, -- [824]
+		{
+			"Proficiency in item class 2 set to 0x000000019d", -- [1]
+			0, -- [2]
+		}, -- [825]
+		{
+			"Proficiency in item class 2 set to 0x000000059d", -- [1]
+			0, -- [2]
+		}, -- [826]
+		{
+			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
+			0, -- [2]
+		}, -- [827]
+		{
+			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
+			0, -- [2]
+		}, -- [828]
+		{
+			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
+			0, -- [2]
+		}, -- [829]
+		{
+			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			0, -- [2]
+		}, -- [830]
+		{
+			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
+			0, -- [2]
+		}, -- [831]
+		{
+			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
+			0, -- [2]
+		}, -- [832]
+		{
+			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
+			0, -- [2]
+		}, -- [833]
+		{
+			"Proficiency in item class 4 set to 0x0000000031", -- [1]
+			0, -- [2]
+		}, -- [834]
+		{
+			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
+			0, -- [2]
+		}, -- [835]
+		{
+			"Proficiency in item class 4 set to 0x0000000039", -- [1]
+			0, -- [2]
+		}, -- [836]
+		{
+			"Proficiency in item class 4 set to 0x000000003d", -- [1]
+			0, -- [2]
+		}, -- [837]
+		{
+			"Proficiency in item class 4 set to 0x000000003f", -- [1]
+			0, -- [2]
+		}, -- [838]
+		{
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			0, -- [2]
+		}, -- [839]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			0, -- [2]
+		}, -- [840]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			0, -- [2]
+		}, -- [841]
+		{
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			0, -- [2]
+		}, -- [842]
+		{
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
+			0, -- [2]
+		}, -- [843]
+		{
+			"Time set to 4/30/2019 (Tue) 21:01", -- [1]
+			0, -- [2]
+		}, -- [844]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [845]
 		{
@@ -3388,567 +3387,567 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [846]
 		{
-			"Total: 221d 12h 5m 25s", -- [1]
+			"Total: 221d 12h 30m 44s", -- [1]
 			0, -- [2]
 		}, -- [847]
 		{
-			"Level: 18d 22h 45m 2s", -- [1]
+			"Level: 18d 23h 10m 21s", -- [1]
 			0, -- [2]
 		}, -- [848]
 		{
-			"Got new connection 3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [849]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [850]
 		{
-			"Weather changed to 3, intensity 0.750000\n", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [851]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [852]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [853]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [854]
 		{
-			"World transfer pending...", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [855]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"Weather changed to 2, intensity 0.800000\n", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"Time played:", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"Total: 221d 12h 12m 48s", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"Level: 18d 22h 52m 25s", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"World transfer pending...", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"Got new connection 3", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"Time played:", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"Total: 221d 12h 16m 59s", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"Level: 18d 22h 56m 36s", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"Got new connection 3", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"Got new connection 3", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"Got new connection 3", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [873]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [874]
 		{
-			"Sorting particles normally.", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [875]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [876]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [877]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [878]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [879]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Render scale changed to 1.6", -- [1]
 			0, -- [2]
 		}, -- [880]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [881]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [882]
 		{
-			"Water detail changed to 3", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [883]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [884]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [885]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [887]
 		{
-			"Refraction mode changed to 2", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [888]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [889]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [890]
 		{
-			"Volume fog enabled.", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [891]
 		{
-			"Projected textures enabled.", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [892]
 		{
-			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [893]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [894]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [895]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [896]
 		{
-			"Depth Based Opacity Enabled", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [897]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [898]
 		{
-			"Texture filtering mode updated. Pending GxRestart", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [899]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [900]
 		{
-			"Outline mode changed to 2", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [901]
 		{
-			"LightBuffer mode changed to 2", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [902]
 		{
-			"Physics interaction level changed to 1", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [903]
 		{
-			"Render scale changed to 1.6", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [904]
 		{
-			"Resample quality changed to 1", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [905]
 		{
-			"MSAA set to 8 color samples, 8 coverage samples", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [906]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [907]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [908]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [909]
 		{
-			"World preload object sort enabled.", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [910]
 		{
-			"World load object sort enabled.", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [911]
 		{
-			"World preload non critical enabled.", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [912]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [913]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [914]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [915]
 		{
-			"Error display disabled", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
-			"Error display shown", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [917]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [918]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [919]
 		{
-			"Now filtering: all messages", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [920]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [921]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [924]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [925]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [926]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [927]
 		{
-			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [928]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [929]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [930]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [934]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [935]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [939]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			"Refraction mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [940]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Shadow mode changed to 3 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [945]
 		{
-			"Got new connection 2", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [947]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_OK (0)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"Depth Based Opacity Enabled", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
-			"[IBN_Login] Requesting change realm list", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [950]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Texture filtering mode updated. Pending GxRestart", -- [1]
 			0, -- [2]
 		}, -- [951]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [952]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Outline mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [953]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"LightBuffer mode changed to 2", -- [1]
 			0, -- [2]
 		}, -- [954]
 		{
-			"[IBN_Login] Requesting realm listsnumSubRegions=\"5\"", -- [1]
+			"Physics interaction level changed to 1", -- [1]
 			0, -- [2]
 		}, -- [955]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Render scale changed to 1.6", -- [1]
 			0, -- [2]
 		}, -- [956]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-11\"", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [957]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
-			"NetClient::HandleDisconnect()\n", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [959]
 		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [961]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [962]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [963]
 		{
-			"Got new connection 2", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [964]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [965]
 		{
-			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
 		}, -- [966]
 		{
-			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
-			3, -- [2]
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
 		}, -- [967]
 		{
-			"MSAA disabled", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [968]
 		{
-			"Got new connection 3", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [969]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [970]
 		{
-			"Proficiency in item class 2 set to 0x0000000480", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [971]
 		{
-			"Proficiency in item class 2 set to 0x0000008480", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [972]
 		{
-			"Proficiency in item class 4 set to 0x0000000021", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [973]
 		{
-			"Proficiency in item class 2 set to 0x000000c480", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [974]
 		{
-			"Proficiency in item class 2 set to 0x000008c480", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [975]
 		{
-			"Proficiency in item class 2 set to 0x000018c480", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [976]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"us.actual.battle.net\" loginPortal=\"us.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [977]
 		{
-			"Proficiency in item class 2 set to 0x000018c480", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [978]
 		{
-			"Proficiency in item class 4 set to 0x0000000023", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [979]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Attempting logonhost=\"us.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [980]
 		{
-			"Time set to 4/30/2019 (Tue) 0:44", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [981]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [982]
 		{
-			"Time played:", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [983]
 		{
-			"Total: 0d 19h 25m 55s", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [984]
 		{
-			"Level: 0d 11h 15m 56s", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [985]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [986]
 		{
-			"[IBN_Login] Requesting change realm list", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [987]
 		{
@@ -3956,51 +3955,51 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [988]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [989]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"5\"", -- [1]
 			0, -- [2]
 		}, -- [990]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [991]
 		{
-			"[IBN_Login] Requesting realm listsnumSubRegions=\"5\"", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
 			0, -- [2]
 		}, -- [992]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [993]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"1-101-89\" realmAddress=\"1-2-1\"", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [994]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [995]
 		{
-			"NetClient::HandleDisconnect()\n", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [996]
 		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [997]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [998]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [999]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [1000]
 		{
@@ -4008,188 +4007,169 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1001]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeHealth. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [1002]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
-			0, -- [2]
+			"Game table failed consistency check: ChallengeModeDamage. rows: 50, expectedRows: 51, columns: 1, expectedColumns: 1\n", -- [1]
+			3, -- [2]
 		}, -- [1003]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [1004]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [1005]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [1006]
+		}, -- [1004]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [1007]
+		}, -- [1005]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [1008]
+		}, -- [1006]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [1009]
+		}, -- [1007]
 		{
 			"Proficiency in item class 2 set to 0x0000000085", -- [1]
 			0, -- [2]
-		}, -- [1010]
+		}, -- [1008]
 		{
 			"Proficiency in item class 2 set to 0x000000008d", -- [1]
 			0, -- [2]
-		}, -- [1011]
+		}, -- [1009]
 		{
 			"Proficiency in item class 2 set to 0x000000009d", -- [1]
 			0, -- [2]
-		}, -- [1012]
+		}, -- [1010]
 		{
 			"Proficiency in item class 2 set to 0x000000019d", -- [1]
 			0, -- [2]
-		}, -- [1013]
+		}, -- [1011]
 		{
 			"Proficiency in item class 2 set to 0x000000059d", -- [1]
 			0, -- [2]
-		}, -- [1014]
+		}, -- [1012]
 		{
 			"Proficiency in item class 2 set to 0x00000005bd", -- [1]
 			0, -- [2]
-		}, -- [1015]
+		}, -- [1013]
 		{
 			"Proficiency in item class 2 set to 0x00000005bf", -- [1]
 			0, -- [2]
-		}, -- [1016]
+		}, -- [1014]
 		{
 			"Proficiency in item class 2 set to 0x00000085bf", -- [1]
 			0, -- [2]
-		}, -- [1017]
+		}, -- [1015]
 		{
 			"Proficiency in item class 4 set to 0x0000000021", -- [1]
 			0, -- [2]
-		}, -- [1018]
+		}, -- [1016]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bf", -- [1]
 			0, -- [2]
-		}, -- [1019]
+		}, -- [1017]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bf", -- [1]
 			0, -- [2]
-		}, -- [1020]
+		}, -- [1018]
 		{
 			"Proficiency in item class 2 set to 0x000004c5ff", -- [1]
 			0, -- [2]
-		}, -- [1021]
+		}, -- [1019]
 		{
 			"Proficiency in item class 4 set to 0x0000000031", -- [1]
 			0, -- [2]
-		}, -- [1022]
+		}, -- [1020]
 		{
 			"Proficiency in item class 2 set to 0x000014c5ff", -- [1]
 			0, -- [2]
-		}, -- [1023]
+		}, -- [1021]
 		{
 			"Proficiency in item class 4 set to 0x0000000039", -- [1]
 			0, -- [2]
-		}, -- [1024]
+		}, -- [1022]
 		{
 			"Proficiency in item class 4 set to 0x000000003d", -- [1]
 			0, -- [2]
-		}, -- [1025]
+		}, -- [1023]
 		{
 			"Proficiency in item class 4 set to 0x000000003f", -- [1]
 			0, -- [2]
-		}, -- [1026]
+		}, -- [1024]
 		{
 			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			0, -- [2]
+		}, -- [1025]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			0, -- [2]
+		}, -- [1026]
+		{
+			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
 			0, -- [2]
 		}, -- [1027]
 		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			"Proficiency in item class 4 set to 0x000000007f", -- [1]
 			0, -- [2]
 		}, -- [1028]
 		{
-			"Proficiency in item class 2 set to 0x000014e5ff", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [1029]
 		{
-			"Proficiency in item class 4 set to 0x000000007f", -- [1]
+			"Time set to 5/2/2019 (Thu) 0:34", -- [1]
 			0, -- [2]
 		}, -- [1030]
 		{
-			"Weather changed to 1, intensity 0.000000\n", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [1031]
 		{
-			"Time set to 4/30/2019 (Tue) 1:06", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [1032]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Total: 221d 13h 25m 18s", -- [1]
 			0, -- [2]
 		}, -- [1033]
 		{
-			"Time played:", -- [1]
+			"Level: 19d 0h 4m 55s", -- [1]
 			0, -- [2]
 		}, -- [1034]
 		{
-			"Total: 221d 12h 22m 24s", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1035]
 		{
-			"Level: 18d 23h 2m 1s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1036]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 3, intensity 0.362530\n", -- [1]
 			0, -- [2]
 		}, -- [1037]
 		{
-			"Total: 221d 12h 22m 27s", -- [1]
+			"Weather changed to 3, intensity 0.327540\n", -- [1]
 			0, -- [2]
 		}, -- [1038]
 		{
-			"Level: 18d 23h 2m 4s", -- [1]
+			"Weather changed to 1, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [1039]
 		{
-			"World transfer pending...", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [1040]
 		{
-			"Got new connection 3", -- [1]
+			"Weather changed to 3, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [1041]
-		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
-			0, -- [2]
-		}, -- [1042]
-		{
-			"Weather changed to 3, intensity 0.500000\n", -- [1]
-			0, -- [2]
-		}, -- [1043]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [1044]
-		{
-			"Total: 221d 12h 26m 40s", -- [1]
-			0, -- [2]
-		}, -- [1045]
-		{
-			"Level: 18d 23h 6m 17s", -- [1]
-			0, -- [2]
-		}, -- [1046]
 	},
-	["isShown"] = false,
+	["height"] = 300,
 	["fontHeight"] = 14,
+	["isShown"] = false,
 	["commandHistory"] = {
 	},
 }
