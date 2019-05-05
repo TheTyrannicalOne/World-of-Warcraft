@@ -70,19 +70,19 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Raid Icons"] = {
 		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
+				},
+			},
+		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
 					["height"] = 119.999977111816,
 					["font"] = "Friz Quadrata TT",
 					["width"] = 140.00016784668,
-				},
-			},
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
 				},
 			},
 		},

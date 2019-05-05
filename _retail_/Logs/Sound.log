@@ -1,66 +1,66 @@
-5/2 03:33:38.972   - SE3 Init...
-5/2 03:33:38.976  => SI3 Init
-5/2 03:33:38.976  => WoW Version 8.1.5 (29981) Apr  5 2019
-5/2 03:33:38.976   
-5/2 03:33:38.976  => User Settings Report:
-5/2 03:33:38.976   - ========= PLAYBACK =========
-5/2 03:33:38.976   - Enable All Sound         [1]
-5/2 03:33:38.976   - Enable SFX               [1]
-5/2 03:33:38.976   --- Enable Emote Sounds    [1]
-5/2 03:33:38.976   - Enable Music             [1]
-5/2 03:33:38.976   --- Loop Music             [0]
-5/2 03:33:38.976   --- Pet Battle Music       [1]
-5/2 03:33:38.976   - Enable Ambient Sounds    [1]
-5/2 03:33:38.976   - Enable Dialog            [1]
-5/2 03:33:38.976   --- Enable Error Speech    [1]
-5/2 03:33:38.976   - Sound at Character       [1]
-5/2 03:33:38.976   - Sound in Background      [0]
-5/2 03:33:38.976   - Enable Reverb            [1]
-5/2 03:33:38.976   -
-5/2 03:33:38.976   - ========== VOLUME ==========
-5/2 03:33:38.992   - Master Volume         [1.00]
-5/2 03:33:38.992   - SFX Volume            [1.00]
-5/2 03:33:38.992   - Music Volume          [0.40]
-5/2 03:33:38.992   - Ambience Volume       [0.60]
-5/2 03:33:38.992   - Dialog Volume         [1.00]
-5/2 03:33:38.992   -
-5/2 03:33:38.992   - =========== MISC ===========
-5/2 03:33:38.992   - Sound Channels          [64]
-5/2 03:33:38.992   - Sound Cache           [64MB]
-5/2 03:33:38.992   - Mix Mode 2               [0]
-5/2 03:33:38.992   - DSP Buffer Size       [AUTO]
-5/2 03:33:38.992   - Armor Foley SFX (Self)   [1]
-5/2 03:33:38.992   - Armor Foley SFX (Others) [1]
-5/2 03:33:38.992  => End of User Settings Report
-5/2 03:33:38.992   
-5/2 03:33:38.992   - FMOD Memory Init
-5/2 03:33:38.992   - FMOD System Create
-5/2 03:33:38.992   - Setting Output Type
-5/2 03:33:39.059   - 2 Output drivers detected
-5/2 03:33:39.059   --- [0] System Default
-5/2 03:33:39.059   --- [1] Headset Earphone (2- Razer ManO'War)
-5/2 03:33:39.059  ** Using Driver [0] System Default (Headset Earphone (2- Razer ManO'War))
-5/2 03:33:39.059   - DSPBufferSize = AUTO DETECT
-5/2 03:33:39.059   - Setting DSP Buffer Size
-5/2 03:33:39.059   - Using Control Panel Speaker Mode STEREO
-5/2 03:33:39.059   - Setting Software Format (44100, 2, 1).
-5/2 03:33:39.059   - Requested 64 channels.
-5/2 03:33:39.059   - Initializing Software Channels
-5/2 03:33:39.128   - Init FMOD Game System
-5/2 03:33:39.128   - Ok
-5/2 03:33:39.128   - Setting Rolloff Scale
-5/2 03:33:39.128   - Setting Rolloff Callback
-5/2 03:33:39.128   - SE3 EmitterManagerInit Success
-5/2 03:33:39.128   - Setting device callback
-5/2 03:33:39.132   - Sound Bus Init
-5/2 03:33:39.132   - Init Suppressors
-5/2 03:33:39.132   - SE3 Init Success.
-5/2 03:33:39.132  => SI3 Init Complete.
-5/2 03:33:39.132   
-5/2 04:03:14.605   
-5/2 04:03:14.605  => Shutting Down SI3
-5/2 04:03:14.621  => Shutting Down SI3 COMPLETE.
-5/2 04:03:14.621   
-5/2 04:03:14.621   - Shutting Down SE3
-5/2 04:03:14.757   - SE3 EmitterManagerShutdown Success
-5/2 04:03:14.757   - Shutting Down SE3 COMPLETE.
+5/5 02:04:18.587   - SE3 Init...
+5/5 02:04:18.587  => SI3 Init
+5/5 02:04:18.587  => WoW Version 8.1.5 (29981) Apr  5 2019
+5/5 02:04:18.587   
+5/5 02:04:18.587  => User Settings Report:
+5/5 02:04:18.587   - ========= PLAYBACK =========
+5/5 02:04:18.587   - Enable All Sound         [1]
+5/5 02:04:18.587   - Enable SFX               [1]
+5/5 02:04:18.587   --- Enable Emote Sounds    [1]
+5/5 02:04:18.587   - Enable Music             [1]
+5/5 02:04:18.599   --- Loop Music             [0]
+5/5 02:04:18.599   --- Pet Battle Music       [1]
+5/5 02:04:18.599   - Enable Ambient Sounds    [1]
+5/5 02:04:18.599   - Enable Dialog            [1]
+5/5 02:04:18.599   --- Enable Error Speech    [1]
+5/5 02:04:18.599   - Sound at Character       [1]
+5/5 02:04:18.599   - Sound in Background      [0]
+5/5 02:04:18.599   - Enable Reverb            [1]
+5/5 02:04:18.599   -
+5/5 02:04:18.599   - ========== VOLUME ==========
+5/5 02:04:18.599   - Master Volume         [1.00]
+5/5 02:04:18.599   - SFX Volume            [1.00]
+5/5 02:04:18.599   - Music Volume          [0.40]
+5/5 02:04:18.599   - Ambience Volume       [0.60]
+5/5 02:04:18.599   - Dialog Volume         [1.00]
+5/5 02:04:18.599   -
+5/5 02:04:18.599   - =========== MISC ===========
+5/5 02:04:18.599   - Sound Channels          [64]
+5/5 02:04:18.599   - Sound Cache           [64MB]
+5/5 02:04:18.599   - Mix Mode 2               [0]
+5/5 02:04:18.615   - DSP Buffer Size       [AUTO]
+5/5 02:04:18.615   - Armor Foley SFX (Self)   [1]
+5/5 02:04:18.615   - Armor Foley SFX (Others) [1]
+5/5 02:04:18.615  => End of User Settings Report
+5/5 02:04:18.615   
+5/5 02:04:18.615   - FMOD Memory Init
+5/5 02:04:18.615   - FMOD System Create
+5/5 02:04:18.615   - Setting Output Type
+5/5 02:04:18.676   - 2 Output drivers detected
+5/5 02:04:18.676   --- [0] System Default
+5/5 02:04:18.677   --- [1] Headset Earphone (2- Razer ManO'War)
+5/5 02:04:18.677  ** Using Driver [0] System Default (Headset Earphone (2- Razer ManO'War))
+5/5 02:04:18.677   - DSPBufferSize = AUTO DETECT
+5/5 02:04:18.677   - Setting DSP Buffer Size
+5/5 02:04:18.677   - Using Control Panel Speaker Mode STEREO
+5/5 02:04:18.677   - Setting Software Format (44100, 2, 1).
+5/5 02:04:18.677   - Requested 64 channels.
+5/5 02:04:18.677   - Initializing Software Channels
+5/5 02:04:18.770   - Init FMOD Game System
+5/5 02:04:18.772   - Ok
+5/5 02:04:18.772   - Setting Rolloff Scale
+5/5 02:04:18.772   - Setting Rolloff Callback
+5/5 02:04:18.772   - SE3 EmitterManagerInit Success
+5/5 02:04:18.772   - Setting device callback
+5/5 02:04:18.772   - Sound Bus Init
+5/5 02:04:18.772   - Init Suppressors
+5/5 02:04:18.772   - SE3 Init Success.
+5/5 02:04:18.772  => SI3 Init Complete.
+5/5 02:04:18.772   
+5/5 03:19:01.650   
+5/5 03:19:01.650  => Shutting Down SI3
+5/5 03:19:01.671  => Shutting Down SI3 COMPLETE.
+5/5 03:19:01.671   
+5/5 03:19:01.671   - Shutting Down SE3
+5/5 03:19:01.815   - SE3 EmitterManagerShutdown Success
+5/5 03:19:01.815   - Shutting Down SE3 COMPLETE.

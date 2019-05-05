@@ -1,10 +1,10 @@
 
 NarcissusDB = {
 	["AuotoColorTheme"] = true,
-	["FontHeightItemName"] = 10,
 	["MinimapButton"] = {
 		["Position"] = -2.97320069821011,
 	},
+	["EnableDoubleTap"] = false,
 	["PlayerAlias"] = "",
 	["PhotoModeButton"] = {
 		["HideTexts"] = true,
@@ -16,6 +16,6 @@ NarcissusDB = {
 	["IsSortedByCategory"] = true,
 	["ColorChoice"] = 0,
 	["GlobalScale"] = 1,
-	["EnableDoubleTap"] = false,
+	["FontHeightItemName"] = 10,
 	["DetailedIlvlInfo"] = true,
 }

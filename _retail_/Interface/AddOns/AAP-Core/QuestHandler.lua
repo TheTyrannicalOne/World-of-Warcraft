@@ -979,9 +979,12 @@ local function AAP_PrintQStep()
 				end
 			end
 		end
-		if (steps["ExtraLine"] and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQList"] == 1) then
+		if ((steps["ExtraLine"] or steps["ExtraLineText"]) and AAP1[AAP.Realm][AAP.Name]["Settings"]["ShowQList"] == 1) then
 			LineNr = LineNr + 1
 			local AAPExtralk = steps["ExtraLine"]
+			if (steps["ExtraLineText"]) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** "..steps["ExtraLineText"])
+			end
 			if (AAPExtralk == 1) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** "..AAP_Locals["HeFlying"].." **")
 			end
@@ -1254,7 +1257,7 @@ local function AAP_PrintQStep()
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Drakuru mobs drop Lock Openers")
 			end
 			if (AAPExtralk == 84) then
-				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal to Hellfire Peninsula")
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Talk to Thrallmar Mage to go to Dark Portal")
 			end
 			if (AAPExtralk == 85) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("** Use Portal to Hyjal")
@@ -1402,6 +1405,7 @@ local function AAP_PrintQStep()
 			else
 				AAP.QuestList.QuestFrames[LineNr]:SetWidth(410)
 			end
+
 		end
 		if (StepP == "Qpart") then
 			IdList = steps["Qpart"]
@@ -3059,6 +3063,14 @@ local function AAP_UpdateMapId()
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "18-60-80"
 		end
+		if (AAP.ActiveMap == 17) then
+			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
+				LoadAddOn("AAP-TBC-WotLK")
+			end
+			AAPZoneActiveCheck = 1
+			AAP.ActiveMap = "17-60-80"
+		end
+		
 	end
 	if (AAP.Faction == "Horde" and AAP.Level > 59 and AAP.Level < 83) then
 		if (AAP.ActiveMap == 114) then
@@ -3202,6 +3214,13 @@ local function AAP_UpdateMapId()
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A84-Flight-Northrend"
+		end
+		if (AAP.ActiveMap == "A17") then
+			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
+				LoadAddOn("AAP-TBC-WotLK")
+			end
+			AAPZoneActiveCheck = 1
+			AAP.ActiveMap = "A17-60-80"
 		end
 	end
 	if (AAP.Faction == "Alliance" and AAP.Level > 59 and AAP.Level < 83) then

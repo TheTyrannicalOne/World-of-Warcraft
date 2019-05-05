@@ -1,24 +1,24 @@
-5/2 03:33:37.706  LogOpen
-5/2 03:33:38.106  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0bdf) dx11:true dx12:true
-5/2 03:33:38.106  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-5/2 03:33:38.106  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-5/2 03:33:38.206  D3d12 Device Create
-5/2 03:33:38.206  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-5/2 03:33:38.408  Choosing adapter 0
-5/2 03:33:38.569  Detected NvAPI and checking if it's valid...
-5/2 03:33:38.569  AFR Groups: 1/1
-5/2 03:33:38.569  Feature Level: DX=6, MTL=0
-5/2 03:33:38.587  NotifyOnDeviceCreate
-5/2 03:33:38.587  D3d12 Device Create Successful
-5/2 03:33:38.587  Nvidia driver version: r430_00 (43039)
-5/2 03:33:38.587  <IsGPUDriverOutOfDate> No
-5/2 03:33:38.609  CPU Processor Detection: 12 H/W threads
-5/2 03:33:38.609  Memory Detection: 34296328192 bytes of physical memory available
-5/2 03:33:38.609  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-5/2 03:33:38.736  RenderSettings::NotifyChanged
-5/2 03:33:39.291  Nvidia driver version: r430_00 (43039)
-5/2 03:33:45.774  Nvidia driver version: r430_00 (43039)
-5/2 03:33:45.774  Nvidia driver version: r430_00 (43039)
-5/2 04:03:14.453  Nvidia driver version: r430_00 (43039)
-5/2 04:03:14.962  D3d12 Device Destroy
-5/2 04:03:14.962  NotifyOnDeviceDestroy
+5/5 02:04:17.083  LogOpen
+5/5 02:04:17.608  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0bdf) dx11:true dx12:true
+5/5 02:04:17.608  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+5/5 02:04:17.608  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+5/5 02:04:17.701  D3d12 Device Create
+5/5 02:04:17.701  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
+5/5 02:04:17.926  Choosing adapter 0
+5/5 02:04:18.072  Detected NvAPI and checking if it's valid...
+5/5 02:04:18.072  AFR Groups: 1/1
+5/5 02:04:18.072  Feature Level: DX=6, MTL=0
+5/5 02:04:18.099  NotifyOnDeviceCreate
+5/5 02:04:18.100  D3d12 Device Create Successful
+5/5 02:04:18.100  Nvidia driver version: r430_00 (43039)
+5/5 02:04:18.100  <IsGPUDriverOutOfDate> No
+5/5 02:04:18.121  CPU Processor Detection: 12 H/W threads
+5/5 02:04:18.121  Memory Detection: 34296328192 bytes of physical memory available
+5/5 02:04:18.121  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+5/5 02:04:18.257  RenderSettings::NotifyChanged
+5/5 02:04:19.325  Nvidia driver version: r430_00 (43039)
+5/5 02:04:25.890  Nvidia driver version: r430_00 (43039)
+5/5 02:04:25.890  Nvidia driver version: r430_00 (43039)
+5/5 03:19:01.488  Nvidia driver version: r430_00 (43039)
+5/5 03:19:01.982  D3d12 Device Destroy
+5/5 03:19:01.982  NotifyOnDeviceDestroy
