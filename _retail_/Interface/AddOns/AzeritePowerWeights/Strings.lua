@@ -133,6 +133,8 @@ do -- enUS / enGB
 	L.Slash_Command = "/azerite" -- If you need localized slash-command, this doesn't replace the existing /azerite
 	L.Slash_RemindConfig = "Check ESC -> Interface -> AddOns -> %s for settings." -- %s = ADDON_NAME
 	L.Slash_Error_Unkown = "ERROR: Something went wrong!"
+
+	L.Debug_CopyToBugReport = "COPY & PASTE the text above to your bug report if you think it is relevant."
 end
 
 if LOCALE == "deDE" then -- Sinusquell (39), Tiggi2702 (5), Vivan (2), pas06 (2), Cytoph (1), imna1975 (17), Aurielqt (6)
@@ -197,6 +199,8 @@ Die Schlachtzugskraft ist im Waagen-Editor mit einem Stern (*) neben ihrem Namen
 --[[ L["CreatePopup_Error_UnknownError"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["CreatePopup_Title"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
 L["DefaultScaleName_Default"] = "Standard"
 --[[Translation missing --]]
 --[[ L["DefaultScaleName_Defensive"] = ""--]] 
@@ -354,6 +358,8 @@ L["Config_Importing_Title"] = "Importando"
 --[[ L["CreatePopup_Error_UnknownError"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["CreatePopup_Title"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DefaultScaleName_Default"] = ""--]] 
 --[[Translation missing --]]
@@ -552,6 +558,8 @@ elseif LOCALE == "esMX" then
 --[[Translation missing --]]
 --[[ L["CreatePopup_Title"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["DefaultScaleName_Default"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DefaultScaleName_Defensive"] = ""--]] 
@@ -724,6 +732,8 @@ L["Config_WeightEditor_ShowRolesOnlyForOwnSpec"] = "Affiche les traits de Rôle 
 --[[ L["CreatePopup_Error_UnknownError"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["CreatePopup_Title"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DefaultScaleName_Default"] = ""--]] 
 --[[Translation missing --]]
@@ -920,6 +930,8 @@ elseif LOCALE == "itIT" then
 --[[Translation missing --]]
 --[[ L["CreatePopup_Title"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["DefaultScaleName_Default"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DefaultScaleName_Defensive"] = ""--]] 
@@ -1102,6 +1114,8 @@ L["CreatePopup_Error_CreatedNewScale"] = "만들어진 새로운 값 \"%s\""
 --[[Translation missing --]]
 --[[ L["CreatePopup_Error_UnknownError"] = ""--]] 
 L["CreatePopup_Title"] = "값 만들기"
+--[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
 L["DefaultScaleName_Default"] = "기본적"
 L["DefaultScaleName_Defensive"] = "방어적"
 L["DefaultScaleName_Offensive"] = "공격적"
@@ -1240,6 +1254,8 @@ L["CreatePopup_Desc"] = "Criando nova configuração. Selecione a Classe e Espec
 L["CreatePopup_Error_CreatedNewScale"] = "Nova configuração \"%s\" criada!"
 L["CreatePopup_Error_UnknownError"] = "ERRO:  Algo de errado aconteceu ao criar a configuração \"%s\"!"
 L["CreatePopup_Title"] = "Criar configuração"
+--[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
 L["DefaultScaleName_Default"] = "Padrão"
 L["DefaultScaleName_Defensive"] = "Defensivos"
 L["DefaultScaleName_Offensive"] = "Ofensivos"
@@ -1308,7 +1324,7 @@ L["WeightEditor_TooltipText"] = "Mostrar na descrição dos itens"
 L["WeightEditor_VersionText"] = "Versão %s"
 
 
-elseif LOCALE == "ruRU" then -- dartraiden (78), Hubbotu (17), rtim0905 (0), Wolfeg (1), lorientalas (1)
+elseif LOCALE == "ruRU" then -- dartraiden (78), Hubbotu (18), rtim0905 (0), Wolfeg (1), lorientalas (1)
 L["Config_Importing_ImportingCanUpdate"] = "Обновлять уже существующие наборы при импорте"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "При импорте набора, совпадающего с существующим по имени, классу и специализации, вместо создания нового набора будет обновлён уже существующий набор."
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Допустимы наборы с одинаковыми названиями, если они предназначены для разных специализаций или классов."
@@ -1359,6 +1375,7 @@ L["CreatePopup_Desc"] = "Создание нового набора. Выбер�
 L["CreatePopup_Error_CreatedNewScale"] = "Создан новый набор \"%s\""
 L["CreatePopup_Error_UnknownError"] = "ОШИБКА: при создании нового набора \"%s\" что-то пошло не так!"
 L["CreatePopup_Title"] = "Создать набор"
+L["Debug_CopyToBugReport"] = "Скопируйте и вставьте текст выше в ваш отчет об ошибке, если вы считаете, что это актуально."
 L["DefaultScaleName_Default"] = "По умолчанию"
 L["DefaultScaleName_Defensive"] = "Защита"
 L["DefaultScaleName_Offensive"] = "Атака"
@@ -1475,6 +1492,8 @@ L["CreatePopup_Desc"] = "创建新配置。请从下拉列表中选择职业和�
 L["CreatePopup_Error_CreatedNewScale"] = "创建新配置“%s”"
 L["CreatePopup_Error_UnknownError"] = "错误：无法创建新配置“%s”"
 L["CreatePopup_Title"] = "添加配置"
+--[[Translation missing --]]
+--[[ L["Debug_CopyToBugReport"] = ""--]] 
 L["DefaultScaleName_Default"] = "默认"
 L["DefaultScaleName_Defensive"] = "防御"
 L["DefaultScaleName_Offensive"] = "输出"
@@ -1542,7 +1561,7 @@ L["WeightEditor_TooltipText"] = "在鼠标提示中显示"
 L["WeightEditor_VersionText"] = "版本 %s"
 
 
-elseif LOCALE == "zhTW" then -- BNSSNB (95), Sinusquell (1)
+elseif LOCALE == "zhTW" then -- BNSSNB (96), Sinusquell (1)
 L["Config_Importing_ImportingCanUpdate"] = "導入可以更新現有比例"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "當導入具有相同名稱，職業和專精的比例作為預先存在的比例時，現有比例將使用新權值更新，而不是建立新比例。"
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "可以有多個具有相同名稱的比例，只要它們用於不同的專精或職業。"
@@ -1594,6 +1613,7 @@ L["CreatePopup_Desc"] = "建立新的比例。從下拉選單選擇職業與專�
 L["CreatePopup_Error_CreatedNewScale"] = "已建立新比例 \"%s\""
 L["CreatePopup_Error_UnknownError"] = "錯誤：建立新比例“％s”出了點問題！"
 L["CreatePopup_Title"] = "建立比例"
+L["Debug_CopyToBugReport"] = "如果你覺得這有相關請 複製&貼上 文字到錯誤回報中。"
 L["DefaultScaleName_Default"] = "預設"
 L["DefaultScaleName_Defensive"] = "防禦性"
 L["DefaultScaleName_Offensive"] = "攻擊性"
