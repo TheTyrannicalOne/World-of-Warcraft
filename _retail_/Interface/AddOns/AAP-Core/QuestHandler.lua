@@ -1397,6 +1397,9 @@ local function AAP_PrintQStep()
 			if (AAPExtralk == 130) then
 				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Chop down trees to spawn snipers")
 			end
+			if (AAPExtralk == 131) then
+				AAP.QuestList.QuestFrames["FS"..LineNr]:SetText("Talk to Sassy Hardwrench for a ride")
+			end
 			AAP.QuestList.QuestFrames["FS"..LineNr]["Button"]:Hide()
 			AAP.QuestList.QuestFrames[LineNr]:Show()
 			local aapwidth = AAP.QuestList.QuestFrames["FS"..LineNr]:GetStringWidth()
@@ -2704,7 +2707,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance") then
 		AAP.ActiveMap = "A"..AAP.ActiveMap
 	end
-
+	if (AAP.ActiveMap == 194 and AAP.Gender == 2) then
+		AAP.ActiveMap = "194-male"
+	end
+	if (AAP.ActiveMap == 194 and AAP.Gender == 3) then
+		AAP.ActiveMap = "194-female"
+	end
 	if (AAP.ActiveMap == 23 and AAP.Class[3] == 6 and IsQuestFlaggedCompleted(13189) == false) then
 		AAP.ActiveMap = "DK23-H"
 	end
@@ -3654,7 +3662,7 @@ local function AAP_UpdateMapId()
 	end
 --------------------------------
 ---- Legion - Horde ------------
-	if (AAP.Faction == "Horde" and AAP.Level > 99 and AAP.Level < 110) then
+	if ((AAP.Faction == "Horde" and AAP.Level > 99 and AAP.Level < 110) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Horde")) then
 		if (AAP.ActiveMap == 18) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
 				LoadAddOn("AAP-Legion")
@@ -3674,7 +3682,7 @@ local function AAP_UpdateMapId()
 			AAP.ActiveMap = "627-100-110"
 		end
 	end
-	if (AAP.Faction == "Horde" and AAP.Level > 97 and AAP.Level < 113) then
+	if ((AAP.Faction == "Horde" and AAP.Level > 97 and AAP.Level < 113) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Horde")) then
 		if (AAP.ActiveMap == 634) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
 				LoadAddOn("AAP-Legion")
@@ -3723,7 +3731,7 @@ local function AAP_UpdateMapId()
 	end
 --------------------------------
 ---- Legion - Alliance ---------
-	if (AAP.Faction == "Alliance" and AAP.Level > 99 and AAP.Level < 110) then
+	if ((AAP.Faction == "Alliance" and AAP.Level > 99 and AAP.Level < 110) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Alliance")) then
 		if (AAP.ActiveMap == "A84") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
 				LoadAddOn("AAP-Legion")
@@ -3739,7 +3747,7 @@ local function AAP_UpdateMapId()
 			AAP.ActiveMap = "A627-100-110"
 		end
 	end
-	if (AAP.Faction == "Alliance" and AAP.Level > 97 and AAP.Level < 113) then
+	if ((AAP.Faction == "Alliance" and AAP.Level > 97 and AAP.Level < 113) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Alliance")) then
 		if (AAP.ActiveMap == "A634") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
 				LoadAddOn("AAP-Legion")

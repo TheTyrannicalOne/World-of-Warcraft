@@ -337,7 +337,26 @@ function AAP.LoadOptionsFrame()
 		end
 	end)
 	
-	
+	AAP.OptionsFrame.LegionCheckButton = CreateFrame("CheckButton", "AAP_LegionCheckButton", AAP.OptionsFrame.MainFrame.OptionsQuests, "ChatConfigCheckButtonTemplate");
+	AAP.OptionsFrame.LegionCheckButton:SetPoint("TOPLEFT", AAP.OptionsFrame.MainFrame.OptionsQuests, "TOPLEFT", 10, -210)
+	if (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 0) then
+		AAP.OptionsFrame.LegionCheckButton:SetChecked(false)
+	else
+		AAP.OptionsFrame.LegionCheckButton:SetChecked(true)
+	end
+	getglobal(AAP.OptionsFrame.LegionCheckButton:GetName() .. 'Text'):SetText(": Enable Legion Questroutes")
+	getglobal(AAP.OptionsFrame.LegionCheckButton:GetName() .. 'Text'):SetTextColor(1, 1, 1)
+	AAP.OptionsFrame.LegionCheckButton:SetScript("OnClick", function()
+		if (AAP.OptionsFrame.LegionCheckButton:GetChecked() == true) then
+			AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] = 1
+			AAP.BookingList["UpdateMapId"] = 1
+			AAP.BookingList["PrintQStep"] = 1
+		else
+			AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] = 0
+			AAP.BookingList["UpdateMapId"] = 1
+			AAP.BookingList["PrintQStep"] = 1
+		end
+	end)
 	
 	
 	
