@@ -1,50 +1,25 @@
-5/13 20:53:56.365  LogOpen
-5/13 20:53:57.622  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0bf8) dx11:true dx12:true
-5/13 20:53:57.622  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-5/13 20:53:57.622  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-5/13 20:53:57.721  D3d12 Device Create
-5/13 20:53:57.721  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-5/13 20:53:57.925  Choosing adapter 0
-5/13 20:53:58.136  Detected NvAPI and checking if it's valid...
-5/13 20:53:58.136  AFR Groups: 1/1
-5/13 20:53:58.136  Feature Level: DX=6, MTL=0
-5/13 20:53:58.172  NotifyOnDeviceCreate
-5/13 20:53:58.172  D3d12 Device Create Successful
-5/13 20:53:58.172  Nvidia driver version: r430_00 (43064)
-5/13 20:53:58.172  <IsGPUDriverOutOfDate> No
-5/13 20:53:58.202  CPU Processor Detection: 12 H/W threads
-5/13 20:53:58.202  Memory Detection: 34296328192 bytes of physical memory available
-5/13 20:53:58.202  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-5/13 20:53:58.487  RenderSettings::NotifyChanged
-5/13 20:53:59.617  Nvidia driver version: r430_00 (43064)
-5/13 20:54:06.908  Nvidia driver version: r430_00 (43064)
-5/13 20:54:06.908  Nvidia driver version: r430_00 (43064)
-5/13 20:59:27.966  GxRestart
-5/13 20:59:28.058  D3d12 Device Destroy
-5/13 20:59:28.058  NotifyOnDeviceDestroy
-5/13 20:59:28.360  D3d12 Device Create
-5/13 20:59:28.360  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-5/13 20:59:28.498  Choosing adapter 0
-5/13 20:59:28.623  Detected NvAPI and checking if it's valid...
-5/13 20:59:28.623  AFR Groups: 1/1
-5/13 20:59:28.623  Feature Level: DX=6, MTL=0
-5/13 20:59:28.680  NotifyOnDeviceCreate
-5/13 20:59:34.511  D3d12 Device Create Successful
-5/13 20:59:34.511  Nvidia driver version: r430_00 (43064)
-5/13 20:59:34.511  <IsGPUDriverOutOfDate> No
-5/13 20:59:34.511  RenderSettings::NotifyChanged
-5/13 20:59:56.881  GxRestart
-5/13 20:59:56.971  D3d12 Device Destroy
-5/13 20:59:56.971  NotifyOnDeviceDestroy
-5/13 20:59:57.329  D3d12 Device Create
-5/13 20:59:57.329  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
-5/13 20:59:57.466  Choosing adapter 0
-5/13 20:59:57.591  Detected NvAPI and checking if it's valid...
-5/13 20:59:57.591  AFR Groups: 1/1
-5/13 20:59:57.591  Feature Level: DX=6, MTL=0
-5/13 20:59:57.638  NotifyOnDeviceCreate
-5/13 21:00:01.151  D3d12 Device Create Successful
-5/13 21:00:01.151  Nvidia driver version: r430_00 (43064)
-5/13 21:00:01.151  <IsGPUDriverOutOfDate> No
-5/13 21:04:43.655  RenderSettings::NotifyChanged
-5/13 22:11:31.808  Nvidia driver version: r430_00 (43064)
+5/15 03:40:29.126  LogOpen
+5/15 03:40:29.825  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0bf8) dx11:true dx12:true
+5/15 03:40:29.825  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+5/15 03:40:29.825  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+5/15 03:40:29.924  D3d12 Device Create
+5/15 03:40:29.924  Format 2560 x 1440 Fullscreen, ArgbX888, vsync 0
+5/15 03:40:30.137  Choosing adapter 0
+5/15 03:40:30.319  Detected NvAPI and checking if it's valid...
+5/15 03:40:30.319  AFR Groups: 1/1
+5/15 03:40:30.319  Feature Level: DX=6, MTL=0
+5/15 03:40:30.352  NotifyOnDeviceCreate
+5/15 03:40:30.352  D3d12 Device Create Successful
+5/15 03:40:30.352  Nvidia driver version: r430_00 (43064)
+5/15 03:40:30.352  <IsGPUDriverOutOfDate> No
+5/15 03:40:30.376  CPU Processor Detection: 12 H/W threads
+5/15 03:40:30.376  Memory Detection: 34296328192 bytes of physical memory available
+5/15 03:40:30.376  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+5/15 03:40:30.575  RenderSettings::NotifyChanged
+5/15 03:40:31.704  Nvidia driver version: r430_00 (43064)
+5/15 03:40:38.900  Nvidia driver version: r430_00 (43064)
+5/15 03:40:38.900  Nvidia driver version: r430_00 (43064)
+5/15 03:41:17.138  RenderSettings::NotifyChanged
+5/15 04:40:05.347  Nvidia driver version: r430_00 (43064)
+5/15 04:40:06.071  D3d12 Device Destroy
+5/15 04:40:06.071  NotifyOnDeviceDestroy

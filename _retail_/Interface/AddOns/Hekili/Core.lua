@@ -513,7 +513,6 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                 local entry = list[ actID ]
 
                 state.this_action = entry.action
-                state.this_args = nil
                 state.delay = nil
 
                 rDepth = rDepth + 1
@@ -531,10 +530,8 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
 
                 if ability and known and enabled then
                     local scriptID = packName .. ":" .. listName .. ":" .. actID
+                    state.scriptID = scriptID
 
-                    -- Used to notify timeToReady() about an artificial delay for this ability.
-                    -- state.script.entry = entry.whenReady == 'script' and scriptID or nil
-                    scripts:ImportModifiers( scriptID )
                     local script = scripts:GetScript( scriptID )
 
                     wait_time = state:TimeToReady()
@@ -550,6 +547,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                         if state.channeling then
                             if debug then self:Debug( "NOTE:  We are channeling ( %s ) until %.2f.", state.player.channelSpell, state.player.channelEnd - state.query_time ) end
                         end
+
                         -- APL checks.
                         if precombatFilter and not ability.essential then
                             if debug then self:Debug( "We are already in-combat and this pre-combat action is not essential.  Skipping." ) end
@@ -610,23 +608,23 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                             elseif entry.action == 'variable' then
                                 local name = state.args.var_name
 
-                                if name ~= nil then -- and aScriptValue ~= nil then
-                                    local aScriptPass = scripts:CheckScript( scriptID )
-
-                                    if aScriptPass then
-                                        if debug then self:Debug( " - variable.%s will reference this script entry (%s).", name or "MISSING", scriptID ) end
-
-                                        -- We just store the scriptID so that the variable actually gets tested at time of comparison.
-                                        state.variable[ "_" .. name ] = scriptID
-                                    else
-                                        if debug then self:Debug( " - conditions were NOT MET, ignoring (%s).", name ) end
-                                    end
+                                if name ~= nil then
+                                    if debug then self:Debug( " - variable.%s will check this script entry (%s).", name, scriptID ) end                                    
+                                    state:RegisterVariable( name, scriptID, Stack, Block )
+                                else
+                                    if debug then self:Debug( " - variable name not provided, skipping." ) end
                                 end
 
                             elseif state.buff.casting.up and not state.channeling and state.spec.canCastWhileCasting and not state.spec.castableWhileCasting[ entry.action ] then
                                 if debug then self:Debug( "Player is casting and cannot use " .. entry.action .. " while casting." ) end
 
-                            else                                
+                            else
+                                -- Target Cycling.
+                                -- We have to determine *here* whether the ability would be used on the current target or a different target.
+                                if state.args.cycle_targets == 1 and state.settings.cycle and state.spell_targets[ entry.action ] > 1 then
+                                    state.SetupCycle( ability )
+                                end
+
                                 local usable, why = state:IsUsable()
                                 if debug then
                                     if usable then
@@ -769,6 +767,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                         slot.listName = listName
                                                         slot.action = actID
                                                         slot.actionName = state.this_action
+                                                        slot.actionID = -1 * potion.item
 
                                                         slot.texture = select( 10, GetItemInfo( potion.item ) )
                                                         slot.caption = entry.caption
@@ -876,6 +875,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                     slot.listName = listName
                                                     slot.action = actID
                                                     slot.actionName = state.this_action
+                                                    slot.actionID = ability.id
 
                                                     slot.caption = entry.caption
                                                     slot.texture = ability.texture
@@ -895,25 +895,14 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                         self:Debug( "Action chosen:  %s at %.2f!", rAction, state.delay )
                                                     end
 
-                                                    if entry.cycle_targets == 1 and state.active_enemies > 1 then
-                                                        self:Debug( "This entry cycles targets and there are %d enemies.", state.active_enemies )
-                                                        if not state.settings.cycle then
-                                                            if debug then self:Debug( "This entry would cycle through targets but target cycling is disabled." ) end
-                                                        else
-                                                            local cycleAura = ability and ability.cycle or state.this_action
-
-                                                            local targets = state.active_enemies
-                                                            if state.args.max_cycle_targets then targets = min( targets, state.args.max_cycle_targets ) end
-
-                                                            if cycleAura and class.auras[ cycleAura ] and state.dot[ cycleAura ].up and state.active_dot[ cycleAura ] < targets then
-                                                                slot.indicator = 'cycle'
-                                                            elseif module and module.cycle then
-                                                                slot.indicator = module.cycle()
-                                                            end
-                                                        end
+                                                    if state.IsCycling() then
+                                                        slot.indicator = 'cycle'
+                                                    elseif module and module.cycle then
+                                                        slot.indicator = module.cycle()
                                                     end
                                                 end
-                                            end                                                    
+                                            end
+                                            state.ClearCycle()
                                         end
                                     end
                                 end
@@ -962,6 +951,7 @@ function Hekili:GetNextPrediction( dispName, packName, slot )
     for k, v in pairs( listValue ) do wipe( v ) end
 
     self:ResetSpellCaches()
+    state:ResetVariables()
 
     local display = rawget( self.DB.profile.displays, dispName )
     local pack = rawget( self.DB.profile.packs, packName )
@@ -1313,7 +1303,6 @@ Hekili:ProfileCPU( "ProcessHooks", Hekili.ProcessHooks )
 
 
 function Hekili_GetRecommendedAbility( display, entry )
-
     entry = entry or 1
 
     if not rawget( Hekili.DB.profile.displays, display ) then
@@ -1324,12 +1313,13 @@ function Hekili_GetRecommendedAbility( display, entry )
         return nil, "No queue for that display."
     end
 
-    if not ns.queue[ display ][ entry ] or not ns.queue[ display ][ entry ].actionName then
+    local slot = ns.queue[ display ][ entry ]
+
+    if not slot or not slot.actionID then
         return nil, "No entry #" .. entry .. " for that display."
     end
 
-    return class.abilities[ ns.queue[ display ][ entry ].actionName ].id
-
+    return slot.actionID
 end
 
 

@@ -510,6 +510,7 @@ end )
 
 RegisterEvent( "PLAYER_REGEN_DISABLED", function ()
     state.combat = GetTime() - 0.01
+    Hekili:ForceUpdate() -- Force update on entering combat since OOC refresh can be very slow (0.5s).
 end )
 
 
@@ -582,8 +583,13 @@ RegisterUnitEvent( "UNIT_SPELLCAST_SUCCEEDED", function( event, unit, spell, _, 
             lowLevelWarned = true
         end
     end
+    -- Hekili:ForceUpdate( event )
 end )
 
+
+RegisterEvent( "UNIT_SPELLCAST_SENT", function (self, event, unit, target, castID, spellID)
+    state.cast_target = UnitGUID( target )
+end )
 
 
 local power_tick_data = {
@@ -640,9 +646,9 @@ local function UNIT_POWER_FREQUENT( event, unit, power )
         lastPowerUpdate = GetTime()
     end
 end
-Hekili:ProfileCPU( "UNIT_POWER_FREQUENT", UNIT_POWER_FREQUENT )
+Hekili:ProfileCPU( "UNIT_POWER_UPDATE", UNIT_POWER_FREQUENT )
 
-RegisterUnitEvent( "UNIT_POWER_FREQUENT", UNIT_POWER_FREQUENT )
+RegisterUnitEvent( "UNIT_POWER_UPDATE", UNIT_POWER_FREQUENT )
 
 
 local autoAuraKey = setmetatable( {}, {
@@ -687,6 +693,7 @@ RegisterUnitEvent( "UNIT_AURA", function( event, unit )
     elseif UnitIsUnit( unit, "target" ) and state.target.updated then
         Hekili.ScrapeUnitAuras( "target" )
         state.target.updated = false
+    
     end
 end )
 
@@ -713,6 +720,15 @@ RegisterUnitEvent( "UNIT_SPELLCAST_SUCCEEDED", HandleCasts )
 RegisterUnitEvent( "UNIT_SPELLCAST_STOP", HandleCasts )
 RegisterUnitEvent( "UNIT_SPELLCAST_FAILED", HandleCasts )
 RegisterUnitEvent( "UNIT_SPELLCAST_FAILED_QUIET", HandleCasts ) ]]
+
+
+--[[ RegisterEvent( "SPELL_UPDATE_COOLDOWN", function()
+    local gcdStart = GetSpellCooldown( 61304 )
+    if state.gcd.lastStart ~= gcdStart then
+        state.gcd.lastStart = max( state.gcd.lastStart, gcdStart )
+        Hekili:ForceUpdate()
+    end
+end ) ]]
 
 
 local cast_events = {
@@ -837,6 +853,11 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
                     state:AddToHistory( ability.key, destGUID )
                 end
             end
+
+            local gcdStart = GetSpellCooldown( 61304 )
+            if state.gcd.lastStart ~= gcdStart then
+                state.gcd.lastStart = max( state.gcd.lastStart, gcdStart )
+            end            
 
             Hekili:ForceUpdate( subtype )
         end
@@ -969,9 +990,10 @@ local bindingSubs = {
     ["MULTIPLY"] = "*",
     ["DIVIDE"] = "/",
     ["BUTTON"] = "M",
+    ["DOWN"] = "Dn",
+    ["UP"] = "Up",
     ["MOUSEWHEEL"] = "Mw",
-    ["DOWN"] = "D",
-    ["UP"] = "U",
+    ["BACKSPACE"] = "BkSp"
 }
 
 local function improvedGetBindingText( binding )

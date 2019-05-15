@@ -562,14 +562,34 @@ local HekiliSpecMixin = {
     end,
 
 
-    -- info should be an AceOption table.
-    RegisterPref = function( self, info )
-        table.insert( self.prefs, info )
+    GetSetting = function( info )
+        local setting = info[ #info ]
+        return Hekili.DB.profile.specs[ self.id ].settings[ setting ]
     end,
 
-    RegisterPrefs = function( self, prefs )
-        for k, v in pairs( prefs ) do
-            self:RegisterPref( info )
+    SetSetting = function( info, val )
+        local setting = info[ #info ]
+        Hekili.DB.profile.specs[ self.id ].settings[ setting ] = val
+    end,
+
+    -- option should be an AceOption table.
+    RegisterSetting = function( self, key, value, option )        
+        table.insert( self.settings, {
+            name = key,
+            default = value,
+            info = option
+        } )
+
+        option.order = 100 + #self.settings
+        
+        option.get = option.get or function( info )
+            local setting = info[ #info ]
+            return Hekili.DB.profile.specs[ self.id ].settings[ setting ] or value
+        end
+
+        option.set = option.set or function( info, val )
+            local setting = info[ #info ]
+            Hekili.DB.profile.specs[ self.id ].settings[ setting ] = val
         end
     end,
 }
@@ -682,8 +702,7 @@ function Hekili:NewSpecialization( specID, isRanged )
 
         potions = {},
 
-        prefs = {},
-        numPrefs = 0,
+        settings = {},
 
         stateExprs = {}, -- expressions are returned as values and take no args.
         stateFuncs = {}, -- functions can take arguments and can be used as helper functions in handlers.
@@ -1282,10 +1301,10 @@ all:RegisterAuras( {
                 end
 
                 if canDispel then
-                    dm.count = count > 0 and count or 1
-                    dm.expires = expirationTime > 0 and expirationTime or query_time + 5
-                    dm.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
-                    dm.caster = "nobody"
+                    t.count = count > 0 and count or 1
+                    t.expires = expirationTime > 0 and expirationTime or query_time + 5
+                    t.applied = expirationTime > 0 and ( expirationTime - duration ) or query_time
+                    t.caster = "nobody"
                     return
                 end
             end
@@ -1567,7 +1586,7 @@ all:RegisterAbilities( {
         cooldown = 120,
         gcd = "off",
 
-        -- usable = function () return boss and race.night_elf end,
+        usable = function () return boss and group end,
         handler = function ()
             applyBuff( "shadowmeld" )
         end,
@@ -1963,7 +1982,7 @@ all:RegisterAbility( "malformed_heralds_legwraps", {
     toggle = "cooldowns",
 
     usable = function () return buff.movement.down end,
-    handler = function () applybuff( "void_embrace" ) end,
+    handler = function () applyBuff( "void_embrace" ) end,
 } )
 
 all:RegisterAura( "void_embrace", {
@@ -2166,7 +2185,10 @@ all:RegisterAbility( "variable_intensity_gigavolt_oscillating_reactor", {
     toggle = "cooldowns",
 
     buff = "vigor_engaged",
-    usable = function () return buff.vigor_engaged.stack > 5 end,
+    usable = function ()
+        if buff.vigor_engaged.stack < 6 then return false, "has fewer than 6 stacks" end
+        return true
+    end,
     handler = function() applyBuff( "oscillating_overload" ) end
 } )
 
@@ -2278,13 +2300,14 @@ all:RegisterAbility( "ramping_amplitude_gigavolt_engine", {
     item = 165580,
     toggle = "cooldowns",
 
-    handler = function() applyBuff( "rage" ) end
+    handler = function() applyBuff( "r_a_g_e" ) end
 } )
 
 all:RegisterAura( "rage", {
     id = 288156,
     duration = 18,
-    max_stack = 15
+    max_stack = 15,
+    copy = "r_a_g_e"
 } )
 
 
@@ -4142,6 +4165,10 @@ function Hekili:SpecializationChanged()
 
             for k, v in pairs( spec.options ) do
                 if s[ k ] == nil then s[ k ] = v end
+            end
+
+            for k, v in pairs( spec.settings ) do
+                if s.settings[ k ] == nil then s[ k ] = v.default end
             end
         end
     end

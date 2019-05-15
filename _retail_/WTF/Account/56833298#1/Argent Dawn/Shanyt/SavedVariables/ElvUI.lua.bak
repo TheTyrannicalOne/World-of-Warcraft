@@ -24,50 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"I mean I saw a dude using a balista to shoot something else", -- [1]
-			"Scourgesoul-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Scourgesoul-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1440, -- [11]
-			"Player-3676-09F8BFBA", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8686ecScourgesoul-Area52|r",
-			[51] = 1557696329,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"ah", -- [1]
-			"Taenarys-Feathermoon", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Taenarys-Feathermoon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1444, -- [11]
-			"Player-118-0520A567", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeTaenarys-Feathermoon|r",
-			[51] = 1557696349,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [2]
-		{
 			"u nd ", -- [1]
 			"Mindofwrekin-Frostmourne", -- [2]
 			"", -- [3]
@@ -88,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Mindofwrekin-Frostmourne|r",
 			[51] = 1557696882,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [3]
+		}, -- [1]
 		{
 			"Upheaval on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -110,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697237,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [4]
+		}, -- [2]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -132,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697240,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
+		}, -- [3]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -154,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697241,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [6]
+		}, -- [4]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -176,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697242,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
+		}, -- [5]
 		{
 			"Upheaval on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -198,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697261,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
+		}, -- [6]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -220,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697264,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
+		}, -- [7]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -242,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697265,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [10]
+		}, -- [8]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -264,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557697266,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [11]
+		}, -- [9]
 		{
 			"May I please have |cff0070dd|Hitem:159292::::::::120:71::2:3:4778:1542:4782:::|h[Sporecaller's Shroud]|h|r if you don't need it?", -- [1]
 			"Luniz-ShatteredHand", -- [2]
@@ -286,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
 			[51] = 1557697292,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [12]
+		}, -- [10]
 		{
 			"need that pally?", -- [1]
 			"Linedra-Ragnaros", -- [2]
@@ -308,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Linedra-Ragnaros|r",
 			[51] = 1557697296,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [13]
+		}, -- [11]
 		{
 			"yea", -- [1]
 			"Luniz-ShatteredHand", -- [2]
@@ -330,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
 			[51] = 1557697302,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [14]
+		}, -- [12]
 		{
 			"no", -- [1]
 			"Luniz-ShatteredHand", -- [2]
@@ -352,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
 			[51] = 1557697309,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [15]
+		}, -- [13]
 		{
 			"may i have it?", -- [1]
 			"Linedra-Ragnaros", -- [2]
@@ -374,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Linedra-Ragnaros|r",
 			[51] = 1557697319,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
+		}, -- [14]
 		{
 			"I guess roll", -- [1]
 			"Luniz-ShatteredHand", -- [2]
@@ -396,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
 			[51] = 1557697319,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [17]
+		}, -- [15]
 		{
 			"rip", -- [1]
 			"Linedra-Ragnaros", -- [2]
@@ -418,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Linedra-Ragnaros|r",
 			[51] = 1557697341,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [18]
+		}, -- [16]
 		{
 			"worm", -- [1]
 			"Luniz-ShatteredHand", -- [2]
@@ -440,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
 			[51] = 1557697369,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [19]
+		}, -- [17]
 		{
 			"need that, warr?", -- [1]
 			"Linedra-Ragnaros", -- [2]
@@ -462,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Linedra-Ragnaros|r",
 			[51] = 1557697614,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [20]
+		}, -- [18]
 		{
 			"I’ve completed the |cffffff00|Hquest:51613:-1:120:120:0|h[Bloodmaw]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -484,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557698529,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [21]
+		}, -- [19]
 		{
 			"my tractor thinks im sexy", -- [1]
 			"Qwoiesjkdnf-Tichondrius", -- [2]
@@ -506,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
 			[51] = 1557706761,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [22]
+		}, -- [20]
 		{
 			"i was just in iron forge", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -528,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557706789,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [23]
+		}, -- [21]
 		{
 			"well then i guess you are", -- [1]
 			"Aesiz-Bloodhoof", -- [2]
@@ -550,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Aesiz-Bloodhoof|r",
 			[51] = 1557706790,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [24]
+		}, -- [22]
 		{
 			"Yo all!", -- [1]
 			"Todax-BleedingHollow", -- [2]
@@ -572,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTodax-BleedingHollow|r",
 			[51] = 1557706843,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [25]
+		}, -- [23]
 		{
 			"shut up", -- [1]
 			"Qwoiesjkdnf-Tichondrius", -- [2]
@@ -594,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
 			[51] = 1557706862,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [26]
+		}, -- [24]
 		{
 			"lets charge", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -616,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557706864,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [27]
+		}, -- [25]
 		{
 			"i can be off tank, but i have no clue how to tank this fight", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -638,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557706882,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [28]
+		}, -- [26]
 		{
 			"ok", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -660,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557706889,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [29]
+		}, -- [27]
 		{
 			"just teach me and i can do it", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -682,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557706889,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [30]
+		}, -- [28]
 		{
 			"this place drops 340 il itens? why are we all here?", -- [1]
 			"Gravitøn-Azralon", -- [2]
@@ -704,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Gravitøn-Azralon|r",
 			[51] = 1557706897,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [31]
+		}, -- [29]
 		{
 			"there's no taunt swaps needed", -- [1]
 			"Scythiamagoo-Blackrock", -- [2]
@@ -726,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Scythiamagoo-Blackrock|r",
 			[51] = 1557706899,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [32]
+		}, -- [30]
 		{
 			"We ready?", -- [1]
 			"Todax-BleedingHollow", -- [2]
@@ -748,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTodax-BleedingHollow|r",
 			[51] = 1557706900,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [33]
+		}, -- [31]
 		{
 			"idk to never tanked a raid", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -770,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557706907,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [34]
+		}, -- [32]
 		{
 			"you can solo tank in theory", -- [1]
 			"Scythiamagoo-Blackrock", -- [2]
@@ -792,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Scythiamagoo-Blackrock|r",
 			[51] = 1557706907,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
+		}, -- [33]
 		{
 			"theres two minions that spawn second fight do not let them go near eachothher", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -814,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557706910,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
+		}, -- [34]
 		{
 			"r check before pull ^^", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -836,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557706924,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
+		}, -- [35]
 		{
 			"ok", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -858,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557706926,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
+		}, -- [36]
 		{
 			"got it", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -880,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557706927,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
+		}, -- [37]
 		{
 			"This is just trash.", -- [1]
 			"Lewferigno-Blackhand", -- [2]
@@ -902,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lewferigno-Blackhand|r",
 			[51] = 1557706941,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
+		}, -- [38]
 		{
 			"boss will be invincible till we kill them", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -924,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557706945,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [41]
+		}, -- [39]
 		{
 			"jesus", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -946,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557706952,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
+		}, -- [40]
 		{
 			"lag", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -968,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557706984,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [43]
+		}, -- [41]
 		{
 			"im avail if u can res", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -990,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557707122,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [44]
+		}, -- [42]
 		{
 			"im not afk", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1012,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557707126,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [45]
+		}, -- [43]
 		{
 			"Sanguine Static on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1034,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557707145,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
+		}, -- [44]
 		{
 			"Descarga de Plasma em Healaxa", -- [1]
 			"Healaxa-Azralon", -- [2]
@@ -1056,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healaxa-Azralon|r",
 			[51] = 1557707204,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [47]
+		}, -- [45]
 		{
 			"May I please have |cffa335ee|Hitem:160639::::::::120:71::4:3:4801:1462:4786:::|h[Greaves of Unending Vigil]|h|r if you don't need it?", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -1078,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557707217,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [48]
+		}, -- [46]
 		{
 			"mark me as tanke", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -1100,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557707222,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
+		}, -- [47]
 		{
 			"i wish i was a virgin still so god wouldnt be so mad at me", -- [1]
 			"Qwoiesjkdnf-Tichondrius", -- [2]
@@ -1122,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
 			[51] = 1557707229,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
+		}, -- [48]
 		{
 			"i got the green god hates me", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1144,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557707247,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [51]
+		}, -- [49]
 		{
 			"no you can have it", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -1166,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557707250,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [52]
+		}, -- [50]
 		{
 			"trade", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -1188,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557707255,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [53]
+		}, -- [51]
 		{
 			"ty", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -1210,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557707283,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [54]
+		}, -- [52]
 		{
 			"but its a same iL", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -1232,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557707305,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [55]
+		}, -- [53]
 		{
 			"okay", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1254,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557707323,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [56]
+		}, -- [54]
 		{
 			"for this fight", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1276,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557707325,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [57]
+		}, -- [55]
 		{
 			"omg", -- [1]
 			"Scyllua-Goldrinn", -- [2]
@@ -1298,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Scyllua-Goldrinn|r",
 			[51] = 1557707374,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [58]
+		}, -- [56]
 		{
 			"go over in 2/3s", -- [1]
 			"Shoshin-Illidan", -- [2]
@@ -1320,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Shoshin-Illidan|r",
 			[51] = 1557707465,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [59]
+		}, -- [57]
 		{
 			"start going through", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -1342,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557707476,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [60]
+		}, -- [58]
 		{
 			"wo", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1364,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557707485,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [61]
+		}, -- [59]
 		{
 			"Tank Down", -- [1]
 			"Todax-BleedingHollow", -- [2]
@@ -1386,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTodax-BleedingHollow|r",
 			[51] = 1557707505,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [62]
+		}, -- [60]
 		{
 			"u guys got this im sure", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1408,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557707550,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
+		}, -- [61]
 		{
 			"Nice!", -- [1]
 			"Todax-BleedingHollow", -- [2]
@@ -1430,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cTodax-BleedingHollow|r",
 			[51] = 1557707588,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [64]
+		}, -- [62]
 		{
 			"wooohoo, i was useful lol", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -1452,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557707593,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [65]
+		}, -- [63]
 		{
 			"set e as tank lol", -- [1]
 			"Santofu-Kil'jaeden", -- [2]
@@ -1474,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
 			[51] = 1557707600,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [66]
+		}, -- [64]
 		{
 			"May I please have |cffa335ee|Hitem:160638::::::::120:71::4:3:4801:1462:4786:::|h[Decontaminator's Greatbelt]|h|r if you don't need it?", -- [1]
 			"Dredken-Thrall", -- [2]
@@ -1496,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cDredken-Thrall|r",
 			[51] = 1557707606,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [67]
+		}, -- [65]
 		{
 			"i will reconnect fast", -- [1]
 			"Healaxa-Azralon", -- [2]
@@ -1518,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healaxa-Azralon|r",
 			[51] = 1557707852,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [68]
+		}, -- [66]
 		{
 			"i have to poop", -- [1]
 			"Qwoiesjkdnf-Tichondrius", -- [2]
@@ -1540,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
 			[51] = 1557707993,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [69]
+		}, -- [67]
 		{
 			"odrion you suck", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -1562,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557708020,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [70]
+		}, -- [68]
 		{
 			"cant help it if tank cant keep aggro", -- [1]
 			"Odrion-Turalyon", -- [2]
@@ -1584,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOdrion-Turalyon|r",
 			[51] = 1557708044,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [71]
+		}, -- [69]
 		{
 			"thats what tanks do dumbo", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -1606,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557708061,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [72]
+		}, -- [70]
 		{
 			"always trust me", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -1628,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557708078,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [73]
+		}, -- [71]
 		{
 			"then why was I face tanking adds on the trash before boss", -- [1]
 			"Odrion-Turalyon", -- [2]
@@ -1650,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOdrion-Turalyon|r",
 			[51] = 1557708080,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [74]
+		}, -- [72]
 		{
 			"SHHH", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1672,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557708107,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [75]
+		}, -- [73]
 		{
 			"idk", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -1694,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557708111,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [76]
+		}, -- [74]
 		{
 			"deaD PEOPLE ARENT REAL", -- [1]
 			"Celestialnob-Dalaran", -- [2]
@@ -1716,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
 			[51] = 1557708114,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [77]
+		}, -- [75]
 		{
 			"3", -- [1]
 			"Healaxa-Azralon", -- [2]
@@ -1738,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healaxa-Azralon|r",
 			[51] = 1557708115,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
+		}, -- [76]
 		{
 			"2", -- [1]
 			"Healaxa-Azralon", -- [2]
@@ -1760,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Healaxa-Azralon|r",
 			[51] = 1557708116,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [79]
+		}, -- [77]
 		{
 			"and idc", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -1782,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557708120,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [80]
+		}, -- [78]
 		{
 			"lol then dont comment on why Im dead", -- [1]
 			"Odrion-Turalyon", -- [2]
@@ -1804,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcOdrion-Turalyon|r",
 			[51] = 1557708132,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [81]
+		}, -- [79]
 		{
 			"ok then stop dying", -- [1]
 			"Brahurah-Kilrogg", -- [2]
@@ -1826,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Brahurah-Kilrogg|r",
 			[51] = 1557708157,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [82]
+		}, -- [80]
 		{
 			"anyone need |cffa335ee|Hitem:160627::::::::120:253::4:4:4825:1462:4786:5392:::|h[Chainvest of Assured Quality]|h|r?", -- [1]
 			"Dudakai-Tichondrius", -- [2]
@@ -1848,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Dudakai-Tichondrius|r",
 			[51] = 1557708295,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [83]
+		}, -- [81]
 		{
 			"|cffe6cc80|Hitem:128289::142177:155847:152036::::120:71:16777472:9:4:752:1495:1501:1498:160:1:3:3418:1517:3337:3:3611:1497:3528:3:3611:1487:3528|h[Scale of the Earth-Warder]|h|r is all I have lul", -- [1]
 			"Ayunz-Dalaran", -- [2]
@@ -1870,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAyunz-Dalaran|r",
 			[51] = 1557710266,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [84]
+		}, -- [82]
 		{
 			"do we need a second tank or will one suffice?", -- [1]
 			"Ulrock-Wildhammer", -- [2]
@@ -1892,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ulrock-Wildhammer|r",
 			[51] = 1557710268,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [85]
+		}, -- [83]
 		{
 			"the more stacks of determination the better", -- [1]
 			"Dragodruid-Darkspear", -- [2]
@@ -1914,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dragodruid-Darkspear|r",
 			[51] = 1557710272,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [86]
+		}, -- [84]
 		{
 			"kill ads as much as possible and don't stand close if you're going to explode is what i read", -- [1]
 			"Fellodi-WyrmrestAccord", -- [2]
@@ -1936,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Fellodi-WyrmrestAccord|r",
 			[51] = 1557710364,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [87]
+		}, -- [85]
 		{
 			"lets jjust waita", -- [1]
 			"Uriel-Eitrigg", -- [2]
@@ -1958,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Uriel-Eitrigg|r",
 			[51] = 1557710381,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [88]
+		}, -- [86]
 		{
 			"the adds that show up need to be dispelled, priest mass dispell works best", -- [1]
 			"Deadinside-Uldum", -- [2]
@@ -1980,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deadinside-Uldum|r",
 			[51] = 1557710394,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [89]
+		}, -- [87]
 		{
 			"we have for 20 mins while we cleared trash haha", -- [1]
 			"Fellodi-WyrmrestAccord", -- [2]
@@ -2002,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Fellodi-WyrmrestAccord|r",
 			[51] = 1557710401,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [90]
+		}, -- [88]
 		{
 			"So how is everyone's day going?", -- [1]
 			"Dragodruid-Darkspear", -- [2]
@@ -2024,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dragodruid-Darkspear|r",
 			[51] = 1557710415,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [91]
+		}, -- [89]
 		{
 			"slow right now, lol", -- [1]
 			"Jamak-Saurfang", -- [2]
@@ -2046,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jamak-Saurfang|r",
 			[51] = 1557710422,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [92]
+		}, -- [90]
 		{
 			"got my dick stuck in a light socket so pretty good, hbu", -- [1]
 			"Ulrock-Wildhammer", -- [2]
@@ -2068,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ulrock-Wildhammer|r",
 			[51] = 1557710449,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [93]
+		}, -- [91]
 		{
 			"how.... shocking... of you", -- [1]
 			"Jamak-Saurfang", -- [2]
@@ -2090,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jamak-Saurfang|r",
 			[51] = 1557710462,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [94]
+		}, -- [92]
 		{
 			"i just ran g'huun and spouted enough ball jokes to last everyone a lifetime", -- [1]
 			"Deadinside-Uldum", -- [2]
@@ -2112,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deadinside-Uldum|r",
 			[51] = 1557710472,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [95]
+		}, -- [93]
 		{
 			"lol", -- [1]
 			"Jamak-Saurfang", -- [2]
@@ -2134,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jamak-Saurfang|r",
 			[51] = 1557710480,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [96]
+		}, -- [94]
 		{
 			"well, caz we be waitin ill get myself some food", -- [1]
 			"Jamak-Saurfang", -- [2]
@@ -2156,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jamak-Saurfang|r",
 			[51] = 1557710520,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [97]
+		}, -- [95]
 		{
 			"They probably phased the tanks out", -- [1]
 			"Dragodruid-Darkspear", -- [2]
@@ -2178,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Dragodruid-Darkspear|r",
 			[51] = 1557710522,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [98]
+		}, -- [96]
 		{
 			"who was just tanking we did just fine", -- [1]
 			"Magerocky-AeriePeak", -- [2]
@@ -2200,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Magerocky-AeriePeak|r",
 			[51] = 1557710524,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [99]
+		}, -- [97]
 		{
 			"yay 2 tanks", -- [1]
 			"Magerocky-AeriePeak", -- [2]
@@ -2222,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Magerocky-AeriePeak|r",
 			[51] = 1557710543,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [100]
+		}, -- [98]
 		{
 			"full raid. What?", -- [1]
 			"Magerocky-AeriePeak", -- [2]
@@ -2244,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Magerocky-AeriePeak|r",
 			[51] = 1557710556,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [101]
+		}, -- [99]
 		{
 			"my services are no longer needed", -- [1]
 			"Ulrock-Wildhammer", -- [2]
@@ -2266,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ulrock-Wildhammer|r",
 			[51] = 1557710560,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [102]
+		}, -- [100]
 		{
 			"fck", -- [1]
 			"Priestarada-Azralon", -- [2]
@@ -2288,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePriestarada-Azralon|r",
 			[51] = 1557710588,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [103]
+		}, -- [101]
 		{
 			"my bad", -- [1]
 			"Priestarada-Azralon", -- [2]
@@ -2310,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePriestarada-Azralon|r",
 			[51] = 1557710591,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [104]
+		}, -- [102]
 		{
 			"pressed autorun by mistake", -- [1]
 			"Priestarada-Azralon", -- [2]
@@ -2332,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefePriestarada-Azralon|r",
 			[51] = 1557710604,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [105]
+		}, -- [103]
 		{
 			"well, time to sit back and watch", -- [1]
 			"Jamak-Saurfang", -- [2]
@@ -2354,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jamak-Saurfang|r",
 			[51] = 1557710647,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [106]
+		}, -- [104]
 		{
 			"what happened", -- [1]
 			"Uriel-Eitrigg", -- [2]
@@ -2376,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Uriel-Eitrigg|r",
 			[51] = 1557710656,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [107]
+		}, -- [105]
 		{
 			"need to dispell minions of zul", -- [1]
 			"Deadinside-Uldum", -- [2]
@@ -2398,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deadinside-Uldum|r",
 			[51] = 1557710663,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [108]
+		}, -- [106]
 		{
 			"-.-", -- [1]
 			"Ulrock-Wildhammer", -- [2]
@@ -2420,7 +2376,7 @@ ElvCharacterDB = {
 			[52] = "|cffc31d39Ulrock-Wildhammer|r",
 			[51] = 1557710674,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [109]
+		}, -- [107]
 		{
 			"detox doesnt work so not me", -- [1]
 			"Fellodi-WyrmrestAccord", -- [2]
@@ -2442,7 +2398,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Fellodi-WyrmrestAccord|r",
 			[51] = 1557710683,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [110]
+		}, -- [108]
 		{
 			"bloodelvs use arcane tourent", -- [1]
 			"Ayunz-Dalaran", -- [2]
@@ -2464,7 +2420,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAyunz-Dalaran|r",
 			[51] = 1557710685,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [111]
+		}, -- [109]
 		{
 			"priest mass dispell em", -- [1]
 			"Ayunz-Dalaran", -- [2]
@@ -2486,7 +2442,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAyunz-Dalaran|r",
 			[51] = 1557710693,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [112]
+		}, -- [110]
 		{
 			":p", -- [1]
 			"Ayunz-Dalaran", -- [2]
@@ -2508,7 +2464,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAyunz-Dalaran|r",
 			[51] = 1557710694,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [113]
+		}, -- [111]
 		{
 			"priests have mass dispell lol", -- [1]
 			"Uriel-Eitrigg", -- [2]
@@ -2530,7 +2486,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Uriel-Eitrigg|r",
 			[51] = 1557710694,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [114]
+		}, -- [112]
 		{
 			"BadPet: Jamak-Saurfang's pet, Devilsaur, used |cff71d5ff|Hspell:2649:0|h[Growl]|h|r on Bloodthirsty Crawg", -- [1]
 			"Ambal-WyrmrestAccord", -- [2]
@@ -2552,7 +2508,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Ambal-WyrmrestAccord|r",
 			[51] = 1557710709,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [115]
+		}, -- [113]
 		{
 			"could let the tanks pull too", -- [1]
 			"Deadinside-Uldum", -- [2]
@@ -2574,7 +2530,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Deadinside-Uldum|r",
 			[51] = 1557710718,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [116]
+		}, -- [114]
 		{
 			"na cat wanted me to pull", -- [1]
 			"Ayunz-Dalaran", -- [2]
@@ -2596,7 +2552,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cAyunz-Dalaran|r",
 			[51] = 1557710732,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [117]
+		}, -- [115]
 		{
 			"gg", -- [1]
 			"Jamak-Saurfang", -- [2]
@@ -2618,7 +2574,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Jamak-Saurfang|r",
 			[51] = 1557710957,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [118]
+		}, -- [116]
 		{
 			"May I please have |cffa335ee|Hitem:160642::::::::120:71::4:3:4801:1462:4786:::|h[Cloak of Rippling Whispers]|h|r if you don't need it?", -- [1]
 			"Rudëus-Tichondrius", -- [2]
@@ -2640,7 +2596,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecRudëus-Tichondrius|r",
 			[51] = 1557710965,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [119]
+		}, -- [117]
 		{
 			"ty", -- [1]
 			"Knomtseb-Cho'gall", -- [2]
@@ -2662,7 +2618,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Knomtseb-Cho'gall|r",
 			[51] = 1557710978,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [120]
+		}, -- [118]
 		{
 			"gg ty", -- [1]
 			"Rainaria-EmeraldDream", -- [2]
@@ -2684,7 +2640,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Rainaria-EmeraldDream|r",
 			[51] = 1557710985,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [121]
+		}, -- [119]
 		{
 			"anyone want? |cffa335ee|Hitem:160620::::::::120:103::4:4:4825:1462:4786:5394:::|h[Usurper's Bloodcaked Spaulders]|h|r", -- [1]
 			"Wolan-Feathermoon", -- [2]
@@ -2706,7 +2662,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Wolan-Feathermoon|r",
 			[51] = 1557710995,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [122]
+		}, -- [120]
 		{
 			"I wouldn't mind them", -- [1]
 			"Ambal-WyrmrestAccord", -- [2]
@@ -2728,7 +2684,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Ambal-WyrmrestAccord|r",
 			[51] = 1557711006,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [123]
+		}, -- [121]
 		{
 			"I’ve completed the |cffffff00|Hquest:51806:-1:120:120:0|h[Pest Remover Mk. II]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2750,7 +2706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1557718047,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [124]
+		}, -- [122]
 		{
 			"hey all", -- [1]
 			"Allidraepali-TheScryers", -- [2]
@@ -2772,7 +2728,7 @@ ElvCharacterDB = {
 			[52] = "|cfff38bb9Allidraepali|r",
 			[51] = 1557718789,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [125]
+		}, -- [123]
 		{
 			"hey", -- [1]
 			"Pyzemphx-TheScryers", -- [2]
@@ -2794,7 +2750,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Pyzemphx|r",
 			[51] = 1557718840,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [126]
+		}, -- [124]
 		{
 			"how yall doing", -- [1]
 			"Allidraepali-TheScryers", -- [2]
@@ -2815,6 +2771,50 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cfff38bb9Allidraepali|r",
 			[51] = 1557718882,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [125]
+		{
+			"Howdy all =)", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			17, -- [11]
+			"Player-75-009A7F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Jharl|r",
+			[51] = 1557795879,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"hello", -- [1]
+			"Zyborg-ArgentDawn", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			20, -- [11]
+			"Player-75-05EDA3B6", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Zyborg|r",
+			[51] = 1557795894,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},

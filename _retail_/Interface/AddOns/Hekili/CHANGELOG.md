@@ -1,7 +1,6 @@
 # Hekili
 
-## [v8.1.5-13](https://github.com/Hekili/hekili/tree/v8.1.5-13) (2019-04-22)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.5-13-alpha2...v8.1.5-13)
+## [v8.1.5-15](https://github.com/Hekili/hekili/tree/v8.1.5-15) (2019-05-15)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.5-15-alpha1...v8.1.5-15)
 
-- Target Cycling:  Sanitize args.max\_cycle\_targets as it may be 0.  
-- Trinket: VIGOR usable only at 6 stacks because why not?  
+- Arcane:  Remove invalid RegisterPrefs call.  

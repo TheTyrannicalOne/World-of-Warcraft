@@ -48,7 +48,10 @@ state.delayMax = 60
 
 state.false_start = 0
 state.latency = 0
+
 state.filter = "none"
+state.cycle_aura = 'no_aura'
+state.cast_target = 'nobody'
 
 state.arena = false
 state.bg = false
@@ -85,7 +88,6 @@ state.history = {
 }
 
 state.items = {}
-state.perk = {}
 state.pet = {
     fake_pet = {
         name = "Mary-Kate Olsen",
@@ -606,34 +608,60 @@ function state.reduceCooldown( action, time )
 end
 
 
--- Help handle target cycling.
-function state.isCyclingTargets( action, auraName )
-    if not state.settings.cycle then return false end
-    if not state.args.cycle_targets or state.active_enemies == 1 then return false end
+-- Cycling System...
+do
+    local cycle = {}
+    local debug = function( ... ) if Hekili.ActiveDebug then Hekili:Debug( ... ) end end
 
-    action = action or state.this_action
-    local ability = class.abilities[ action ]
-    if not ability then return false end
+    function state.SetupCycle( ability )
+        wipe( cycle )
 
-    auraName = auraName or ability.aura or action
-    if not auraName or not class.auras[ auraName ] then return false end
+        if not ability then
+            debug( " - no ability provided to SetupCycle." )
+            return
+        end
 
-    -- Ability options.
-    -- cycleMinTime, num: the target must live this long to be worth applying the debuff (Doom).
-    -- cycleMaxTime, num: the target should not live longer than this to be worth applying the debuff (Nemesis).
-    -- cycleLowest, bool: should be applied to the target with the least health (Nemesis).
+        local aura = ability.cycle
 
-    local targets = state.active_enemies
-    if state.args.max_cycle_targets then targets = min( targets, state.args.max_cycle_targets ) end
+        if not aura then
+            debug( " - no aura flagged for cycling targets in ability / spec module." )
+            return
+        end
 
-    if ability.cycleMinTime then targets = min( targets, Hekili:GetNumTTDsAfter( ability.cycleMinTime ) ) end
-    if ability.cycleMaxTime then targets = min( targets, Hekili:GetNumTTDsBefore( ability.cycleMaxTime ) ) end
+        local cDebuff = rawget( state.debuff, aura )
 
-    -- We *could be* cycling targets, but may not have more targets to cycle.
-    if state.active_dot[ auraName ] >= targets then return false end
-    if state.debuff[ auraName ].down then return false end
+        if not cDebuff then
+            debug( " - the debuff '%s' was not found in our database.", aura )
+            return
+        end
 
-    return true
+        cycle.expires = cDebuff.expires
+        cycle.minTTD  = ability.min_ttd
+        cycle.maxTTD  = ability.max_ttd
+
+        cycle.aura = aura
+        debug( " - we will use the ability on a different target, if available, until %s expires at %.2f [+%.2f].", cycle.aura, cycle.expires, cycle.expires - state.query_time )
+    end
+
+    function state.IsCycling( aura )
+        if not cycle.aura then return false end
+        if aura and cycle.aura ~= aura then return false end
+        if state.active_enemies == 1 then return false end
+        if cycle.expires < state.query_time then return false end        
+
+        local targets = state.active_enemies
+
+        if cycle.minTTD then targets = min( targets, Hekili:GetNumTTDsAfter( cycle.minTTD + state.delay + state.offset ) ) end
+        if cycle.maxTTD then targets = min( targets, Hekili:GetNumTTDsBefore( cycle.maxTTD + state.delay + state.offset ) ) end
+
+        return state.active_dot[ cycle.aura ] < targets
+    end
+
+    function state.ClearCycle()
+        wipe( cycle )
+    end
+
+    state.cycleInfo = cycle
 end
 
 
@@ -944,16 +972,20 @@ end
 
 
 -- Spell Targets, so I don't have to convert it in APLs any more.
+-- This will also factor in target caps and TTD restrictions.
 state.spell_targets = setmetatable( {}, {
     __index = function( t, k )
         local ability = class.abilities[ k ]
 
-        if ability and ability.max_targets then
-            return min( ability.max_targets, state.active_enemies )
+        if not ability or state.active_enemies == 1 then return state.active_enemies end
+        
+        local n = state.active_enemies
 
-        end
+        if ability.max_targets then n = min( n, ability.max_targets ) end
+        if ability.max_ttd then n = min( n, Hekili:GetNumTTDsBefore( ability.max_ttd + state.offset + state.delay ) ) end
+        if ability.min_ttd then n = min( n, Hekili:GetNumTTDsAfter( ability.min_ttd + state.offset + state.delay ) ) end
 
-        return state.active_enemies
+        return n
     end 
 } )
 
@@ -1224,12 +1256,13 @@ do
 
             if script.Variables then
                 for i, var in ipairs( script.Variables ) do
-                    local key = rawget( state.variable, var )
+                    local varIDs = state:GetVariableIDs( var )
 
-                    if key then
-                        local vr = Hekili.Scripts.DB[ key ].VarRecheck
-
-                        if vr then recheckHelper( times, vr() ) end
+                    if varIDs then
+                        for _, sID in ipairs( varIDs ) do
+                            local vr = scripts.DB[ sID ].VarRecheck
+                            if vr then recheckHelper( times, vr() ) end
+                        end
                     end
                 end
             end
@@ -1359,6 +1392,9 @@ local mt_state = {
         -- First, any values that don't reference an ability or aura.
         elseif k == 'this_action' or k == 'current_action' then
             return 'wait'
+
+        elseif k == 'cast_target' then
+            return 'nobody'
 
         elseif k == 'delay' then
             return 0
@@ -1619,7 +1655,7 @@ local mt_state = {
         elseif k == 'time_to_max_charges' or k == 'full_recharge_time' then
             return t.cooldown[ action ].full_recharge_time
 
-        elseif k == 'max_charges' then
+        elseif k == 'max_charges' or k == 'charges_max' then
             return ability and ability.charges or 1
 
         elseif k == 'recharge' then
@@ -1658,12 +1694,12 @@ local mt_state = {
 
         elseif k == 'refreshable' then
             -- When cycling targets, we want to consider that there may be a valid other target.
-            if t.isCyclingTargets( action, aura_name ) then return true end
+            -- if t.isCyclingTargets( action, aura_name ) then return true end
             if app then return app.remains < 0.3 * duration end
             return true
 
         elseif k == 'time_to_refresh' then
-            if t.isCyclingTargets( action, aura_name ) then return 0 end
+            -- if t.isCyclingTargets( action, aura_name ) then return 0 end
             if app then return max( 0, app.remains - ( 0.3 * app.duration ) ) end
             return 0
 
@@ -1710,11 +1746,11 @@ local mt_state = {
         if t.settings[k] ~= nil then return t.settings[k] end
         if t.toggle[k] ~= nil then return t.toggle[k] end
 
-        local stack = debugstack()
+        --[[ local stack = debugstack()
         -- if stack then stack = stack:match( "^(.-\n?.-\n?.-)\n" ) end
 
         Hekili:Error( "Returned unknown string '" .. k .. "' in state metatable." .. ( stack and ( "\n" .. stack ) or "" ) )
-        return nil
+        return nil ]]
     end,
     __newindex = function(t, k, v)
         rawset(t, k, v)
@@ -1830,11 +1866,17 @@ local mt_stat = {
         elseif k == 'mastery_value' then
             return GetMasteryEffect()
 
-        elseif k == 'multistrike_rating' then
-            return GetCombatRating(CR_MULTISTRIKE)
+        elseif k == 'versatility_atk_rating' then
+            return GetCombatRating(CR_VERSATILITY_DAMAGE_DONE)
 
-        elseif k == 'multistrike_pct' then
-            return GetMultistrike()
+        elseif k == 'versatility_atk_mod' then
+            return GetCombatRatingBonus(CR_VERSATILITY_DAMAGE_DONE)
+
+        elseif k == 'versatility_def_rating' then
+            return GetCombatRating(CR_VERSATILITY_DAMAGE_TAKEN)
+
+        elseif k == 'versatility_def_mod' then
+            return GetCombatRatingBonus(CR_VERSATILITY_DAMAGE_TAKEN)
 
         elseif k == 'mod_haste_pct' then
             return 0
@@ -2029,11 +2071,13 @@ local mt_target = {
             return UnitLevel('target') or UnitLevel('player')
 
         elseif k == 'unit' then
-            if state.args.cycle_target then return UnitGUID( 'target' ) .. 'c' or 'cycle'
+            if state.args.cycle_target == 1 then return UnitGUID( 'target' ) .. 'c' or 'cycle'
             elseif state.args.target then return UnitGUID( 'target' ) .. '+' .. state.args.target or 'unknown' end
             return UnitGUID( 'target' ) or 'unknown'
 
         elseif k == 'time_to_die' then
+            local ttd = Hekili:GetTTD( 'target' )
+            if ttd == 3600 then return ttd end
             return max( 1, Hekili:GetTTD( 'target' ) - ( state.offset + state.delay ) )
 
         elseif k == 'health_current' then
@@ -2209,6 +2253,10 @@ local mt_default_cooldown = {
             local start, duration = 0, 0
 
             if id > 0 then start, duration = GetCooldown( id ) end
+
+            local gcdStart, gcdDuration = GetSpellCooldown( 61304 )
+            if gcdStart == start and gcdDuration == duration then start, duration = 0, 0 end
+
             local true_duration = duration
 
             if t.key == 'ascendance' and state.buff.ascendance.up then
@@ -2356,7 +2404,6 @@ ns.metatables.mt_default_cooldown = mt_default_cooldown
 local mt_cooldowns = {
     -- The action doesn't exist in our table so check the real game state, -- and copy it so we don't have to use the API next time.
     __index = function(t, k)
-
         local entry = class.abilities[ k ]
 
         if not entry then
@@ -2423,6 +2470,10 @@ local mt_gcd = {
             end
 
             return max( 1.5 * state.haste, state.buff.voidform.up and 0.67 or 0.75 )
+        
+        elseif k == "lastStart" then
+            return 0
+        
         end
 
         return
@@ -3083,12 +3134,32 @@ state.artifact = state.azerite
 -- rawset( state.artifact, no_trait, setmetatable( {}, mt_default_trait ) )
 
 
-local mt_perks = {
-    __index = function(t, k)
-        return ( null_talent )
-    end
-}
-ns.metatables.mt_perks = mt_perks
+do
+    local db = scripts.DB
+
+    -- Args table, make it nicer.
+    setmetatable( state.args, {
+        __index = function( t, k )
+            -- No script selected.
+            if not state.scriptID then return end
+
+            local script = db[ state.scriptID ]
+
+            -- No script by that name.
+            if not script then return end
+
+            -- Script has no modifiers.
+            if not script.Modifiers then return end
+
+            local mod = script.Modifiers[ k ]
+
+            if mod then
+                local s, val = pcall( mod )
+                if s then return val end
+            end
+        end,
+    } )
+end
 
 
 -- Table for counting active dots.
@@ -3182,21 +3253,192 @@ local mt_totem = {
 ns.metatables.mt_totem = mt_totem
 
 
-local mt_variable = {
-    __index = function( t, k )
-        local id = rawget( t, "_" .. k )
+do
+    local db = {}
+    local cache = {}
 
-        if id then
-            local value, m = scripts:CheckVariable( id )
-            return value
+    local required = {}
+    local forbidden = {}   
+    local pathCache = {}
+
+    
+    function state:RegisterVariable( key, scriptID, preconditions, preclusions )
+        local data = db[ key ] or {}
+        insert( data, scriptID )
+        db[ key ] = data
+
+        cache[ key ] = cache[ key ] or {}
+        
+        required[ scriptID ] = required[ scriptID ] or {}
+        if preconditions then
+            for i, prereq in ipairs( preconditions ) do
+                if prereq.script ~= 0 then
+                    insert( required[ scriptID ], prereq.script )
+                end
+            end
         end
 
-        return
-    end
-}
-ns.metatables.mt_variable = mt_variable
+        forbidden[ scriptID ] = forbidden[ scriptID ] or {}
+        if preclusions then
+            for i, block in ipairs( preclusions ) do
+                if block.script ~= 0 then                
+                    insert( forbidden[ scriptID ], block.script )
+                end
+            end
+        end
 
-state.variable = setmetatable( {}, mt_variable )
+        pathCache[ scriptID ] = pathCache[ scriptID ] or {}
+    end
+
+
+    function state:ResetVariables()
+        for k, v in pairs( db ) do
+            wipe( v )
+            wipe( cache[ k ] )
+        end
+
+        for k, v in pairs( pathCache ) do
+            wipe( v )
+            wipe( required[ k ] )
+            wipe( forbidden[ k ] )
+        end
+    end
+
+
+    function state:GetVariableIDs( key )
+        return db[ key ]
+    end
+
+
+    state.variable = setmetatable( {}, {
+        __index = function( t, var )
+            -- local debug = Hekili.ActiveDebug
+
+            local data = db[ var ]
+            if not data then
+                -- if debug then Hekili:Debug( "var[%s] :: no data.\n%s", var, debugstack() ) end
+                return 0
+            end
+
+            local value = cache[ var ][ state.query_time ]
+            if value ~= nil then
+                -- if debug then Hekili:Debug( "var[%s] :: using cached value at %.2f (%s).", var, state.query_time, tostring( value ) ) end
+                return value
+            end
+
+            local parent = state.scriptID
+
+            -- If we're checking variable with no script loaded, don't bother.
+            if not parent then return 0 end
+
+            local default = 0
+            local value = 0
+            local now = state.query_time
+
+            for i, scriptID in ipairs( data ) do
+                local path = pathCache[ scriptID ]
+
+                -- Check the requirements/exclusions in the APL stack.
+                if path[ now ] == nil then
+                    path[ now ] = true
+
+                    for r, prereq in ipairs( required[ scriptID ] ) do
+                        state.scriptID = prereq
+                        path[ now ] = scripts:CheckScript( prereq )
+                        if not path[ now ] then break end
+
+                        for e, excl in ipairs( forbidden[ scriptID ] ) do
+                            state.scriptID = excl
+                            path[ now ] = not scripts:CheckScript( excl )
+
+                            if path[ now ] then break end
+                        end
+                    end
+                end
+
+                if path[ now ] then
+                    state.scriptID = scriptID
+                    local op = state.args.op or "set"
+
+                    local passed = scripts:CheckScript( scriptID )
+
+                    --[[    add = "Add Value",
+                            ceil
+                            x default = "Set Default Value",
+                            div = "Divide Value",
+                            floor
+                            max = "Maximum Value",
+                            min = "Minimum Value",
+                            mod = "Modulo Value",
+                            mul = "Multiply Value",
+                            pow = "Raise Value to X Power",
+                            x reset = "Reset to Default",
+                            x set = "Set Value",
+                            x setif = "Set Value If...",
+                            sub = "Subtract Value",]]
+
+                    if op == "set" or op == "setif" then
+                        if passed then value = state.args.value
+                        else
+                            local v2 = state.args.value_else
+                            if v2 ~= nil then value = state.args.value_else end
+                        end
+                    elseif op == "reset" then
+                        value = passed and 0 or value
+                    elseif op == "default" and passed then
+                        default = state.args.value
+                    else
+                        -- Math Ops.
+                        local currType = type( value )
+
+                        if currType == 'number' then
+                            -- Operations on existing value.
+                            if op == "floor" then
+                                value = floor( value )
+                            elseif op == "ceil" then
+                                value = ceil( value )
+                            else
+                                -- Operations with two values.
+                                local newVal = state.args.value
+                                local valType = type( newVal )
+                                
+                                if valType == 'number' then
+                                    if op == "add" then
+                                        value = value + newVal
+                                    elseif op == "div" then
+                                        if newVal == 0 then value = 0
+                                        else value = value / newVal end
+                                    elseif op == "max" then
+                                        value = max( value, newVal )
+                                    elseif op == "min" then
+                                        value = min( value, newVal )
+                                    elseif op == "mod" then
+                                        if newVal == 0 then value = 0
+                                        else value = value % newVal end
+                                    elseif op == "mul" then
+                                        value = value * newVal
+                                    elseif op == "pow" then
+                                        value = value ^ pow
+                                    elseif op == "sub" then
+                                        value = value - sub
+                                    end
+                                end
+                            end
+                        end
+                    end
+
+                    -- if debug then Hekili:Debug( "var[%s] [%02d/%s] :: op: %s, conditions: %s -- [%s]; value: %s", var, i, scriptID, state.args.op or "autoset", scripts:GetConditionsAndValues( scriptID ), tostring( passed ), tostring( value ) ) end
+                end
+            end
+
+            cache[ var ][ now ] = value
+
+            state.scriptID = parent
+            return value
+        end
+    } )
+end
+
 
 
 -- Table of set bonuses. Some string manipulation to honor the SimC syntax.
@@ -3292,6 +3534,38 @@ local default_debuff_values = {
     unit = 'target'
 }
 
+local cycle_debuff = {
+    name = "cycle",
+    count = 0,
+    lastCount = 0,
+    lastApplied = 0,
+    expires = 0,
+    applied = 0,
+    duration = 0,
+    caster = 'nobody',
+    timeMod = 1,
+    v1 = 0,
+    v2 = 0,
+    v3 = 0,
+    unit = 'target',
+
+    down = true,
+    i_up = 0,
+    rank = 0,
+    react = 0,
+    refreshable = true,
+    remains = 0,
+    stack = 0,
+    stack_pct = 0,
+    tick_time_remains = 0,
+    ticking = false,
+    ticks = 0,
+    ticks_remains = 0,
+    time_to_refresh = 0,
+    up = false,
+}
+
+
 -- Table of default handlers for debuffs.
 -- Needs review.
 local mt_default_debuff = {
@@ -3299,6 +3573,11 @@ local mt_default_debuff = {
 
     __index = function( t, k )
         local class_aura = class.auras[ t.key ]
+
+        -- The aura is flagged to get info from a different target.
+        if state.IsCycling( t.key ) and cycle_debuff[ k ] ~= nil then
+            return cycle_debuff[ k ]
+        end
 
         if class_aura and rawget( class_aura, "meta" ) and class_aura.meta[ k ] then
             return class_aura.meta[ k ]( t, "debuff" )
@@ -3348,20 +3627,22 @@ local mt_default_debuff = {
             return not t.up
 
         elseif k == 'remains' then
+            -- if state.isCyclingTargets( nil, t.key ) then return 0 end
             if class_aura and class_aura.strictTiming then
                 return max( 0, t.expires - state.query_time )
             end
             return max( 0, t.expires - state.query_time - ( state.settings.debuffPadding or 0 ) )
 
         elseif k == 'refreshable' then
-            if state.isCyclingTargets( nil, t.key ) then return true end
+            -- if state.isCyclingTargets( nil, t.key ) then return true end
             return t.remains < 0.3 * ( class_aura and class_aura.duration or t.duration or 30 )
 
         elseif k == 'time_to_refresh' then
-            if state.isCyclingTargets( nil, t.key ) then return 0 end
+            -- if state.isCyclingTargets( nil, t.key ) then return 0 end
             return t.up and ( max( 0, state.query_time - ( 0.3 * ( class_aura and class_aura.duration or t.duration or 30 ) ) ) ) or 0
 
         elseif k == 'stack' then
+            -- if state.isCyclingTargets( nil, t.key ) then return 0 end
             if t.up then return ( t.count ) else return 0 end
 
         elseif k == 'react' then
@@ -3715,7 +3996,6 @@ setmetatable( state.debuff, mt_debuffs )
 setmetatable( state.dot, mt_dot )
 setmetatable( state.equipped, mt_equipped )
 -- setmetatable( state.health, mt_resource )
-setmetatable( state.perk, mt_perks )
 setmetatable( state.pet, mt_pets )
 setmetatable( state.pet.fake_pet, mt_default_pet )
 setmetatable( state.prev, mt_prev )
@@ -4418,10 +4698,13 @@ function state.reset( dispName )
 
     state.now = GetTime()
     state.index = 0
+    state.scriptID = nil
     state.offset = 0
     state.delay = 0
     state.cast_start = 0
     state.false_start = 0
+
+    state.ClearCycle()
 
     state.selectionTime = 60
     state.selectedAction = nil
@@ -4474,13 +4757,7 @@ function state.reset( dispName )
         table.remove( state.purge, i )
     end
 
-    for k in pairs( state.args ) do
-        state.args[ k ] = nil
-    end
-
-    for k in pairs( state.variable ) do
-        state.variable[ k ] = nil
-    end
+    state:ResetVariables()
 
     for k in pairs( state.active_dot ) do
         state.active_dot[ k ] = nil

@@ -8,14 +8,6 @@ HHTD_SavedVariables = {
 			["settingsMigrated"] = false,
 		},
 	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-	},
 	["namespaces"] = {
 		["Announcer"] = {
 		},
@@ -23,5 +15,13 @@ HHTD_SavedVariables = {
 		},
 		["NPH"] = {
 		},
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
+	},
+	["profileKeys"] = {
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
 	},
 }

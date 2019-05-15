@@ -295,7 +295,6 @@ function ns.StopConfiguration()
     Hekili.Config = false
 
     local scaleFactor = Hekili:GetScale()
-
     local mouseInteract = Hekili.Pause
 
     for i, v in ipairs( ns.UI.Buttons ) do
@@ -812,15 +811,17 @@ do
 
         self.refreshTimer = self.refreshTimer - elapsed
 
-        local spec = Hekili.DB.profile.specs[ state.spec.id ]
-        local throttle = spec.throttleUpdates and ( 1 / spec.maxRefresh ) or ( 1 / 60 )
-        local refreshRate = max( throttle, state.combat == 0 and oocRefresh or icRefresh )
+        if not Hekili.Pause then
+            local spec = Hekili.DB.profile.specs[ state.spec.id ]
+            local throttle = spec.throttleRefresh and ( 1 / spec.maxRefresh ) or ( 1 / 60 )
+            local refreshRate = max( throttle, state.combat == 0 and oocRefresh or icRefresh )
 
-        if Hekili.freshFrame and ( ( self.criticalUpdate and now - self.lastUpdate > throttle ) or self.refreshTimer < 0 ) then
-            Hekili:ProcessHooks( self.id )
-            self.criticalUpdate = false
-            self.lastUpdate = now
-            self.refreshTimer = refreshRate
+            if self.refreshTimer < 0 or ( Hekili.freshFrame and self.criticalUpdate and ( now - self.lastUpdate > throttle ) ) then
+                Hekili:ProcessHooks( self.id )
+                self.lastUpdate = now
+                self.criticalUpdate = false
+                self.refreshTimer = refreshRate
+            end
         end
 
 
@@ -1177,10 +1178,8 @@ do
                     start, duration = gStart, gDuration
                 end
 
-                if i == 1 and conf.delays.extend and rec.exact_time and rec.exact_time > now and start + duration < rec.exact_time then
-                    if start == 0 then
-                        start = rec.exact_time - max( state.gcd.max, ability.cooldown )
-                    end
+                if i == 1 and conf.delays.extend and rec.exact_time and rec.exact_time > now then
+                    start = state.gcd.lastStart
                     duration = rec.exact_time - start
                 end
 
@@ -1399,6 +1398,7 @@ do
         d.id = id
         d.alpha = 0
         d.numIcons = conf.numIcons
+        d.firstForce = 0
 
         local scale = self:GetScale()
         local border = 2
@@ -1417,7 +1417,6 @@ do
         d.UpdateAlpha = Display_UpdateAlpha
         d.UpdateKeybindings = Display_UpdateKeybindings
 
-        
         ns.queue[id] = ns.queue[id] or {}
         d.Recommendations = ns.queue[id]
 
@@ -1606,9 +1605,12 @@ do
     end
 
 
+    local firstForceRequest = 0
+
     function Hekili:ForceUpdate( event, ... )
         for i, d in pairs( ns.UI.Displays ) do        
             d.criticalUpdate = true
+            if d.firstForce == 0 then d.firstForce = GetTime() end
         end
     end    
 
