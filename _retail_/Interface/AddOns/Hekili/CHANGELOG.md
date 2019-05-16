@@ -1,6 +1,7 @@
 # Hekili
 
-## [v8.1.5-15](https://github.com/Hekili/hekili/tree/v8.1.5-15) (2019-05-15)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.5-15-alpha1...v8.1.5-15)
+## [v8.1.5-17](https://github.com/Hekili/hekili/tree/v8.1.5-17) (2019-05-16)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.5-16...v8.1.5-17)
 
-- Arcane:  Remove invalid RegisterPrefs call.  
+- Variable:  Fix regenerating resource check.  
+- Variable: 'forbidden' table replaced by entry.mustFail.  

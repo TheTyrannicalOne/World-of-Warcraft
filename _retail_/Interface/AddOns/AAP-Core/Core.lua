@@ -2102,6 +2102,13 @@ AAP.CoreEventFrame:RegisterEvent ("CINEMATIC_START")
 
 AAP.CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 	if (event=="ADDON_LOADED") then
+	
+	
+if (IsAddOnLoaded("AAP-Classic") == false) then
+	--LoadAddOn("AAP-Classic")
+end
+	
+	
 		local arg1, arg2, arg3, arg4, arg5 = ...;
 		if (arg1 ~= "AAP-Core") then
 			return

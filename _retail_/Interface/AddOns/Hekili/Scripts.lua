@@ -1127,7 +1127,9 @@ function scripts:LoadScripts()
                         if lua then 
                             -- If resources are checked, it's time-sensitive.
                             for k in pairs( GetResourceInfo() ) do
-                                if lua:find( k ) then script.TimeSensitive = true; break end
+                                local resource = rawget( state, k )
+                                if lua:find( k ) and resource and ( resource.regenModel or resource.regen ~= 0 ) then script.TimeSensitive = true; break end 
+                                -- if lua:find( k ) then script.TimeSensitive = true; break end
                             end
 
                             if lua:find( "rune" ) then script.TimeSensitive = true end

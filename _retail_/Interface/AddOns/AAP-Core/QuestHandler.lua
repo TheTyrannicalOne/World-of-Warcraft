@@ -2744,19 +2744,34 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level == 20) then
 		if (AAP.ActiveMap == 85 and AAP.Race == "MagharOrc") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-MagharOrc"
 		elseif (AAP.ActiveMap == 85 and AAP.Race == "HighmountainTauren") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-HighmountainTauren"
 		elseif (AAP.ActiveMap == 85 and AAP.Race == "Nightborne") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-Nightborne"
@@ -2765,7 +2780,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 19 and AAP.Level < 60) then
 		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (IsQuestFlaggedCompleted(26965) == false) then
 				AAPZoneActiveCheck = 1
@@ -2777,14 +2797,24 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 76) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "76-20-60"
 		end
 		if (AAP.ActiveMap == 90) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (IsQuestFlaggedCompleted(26965) == false and IsQuestFlaggedCompleted(14258)) then
 				AAPZoneActiveCheck = 1
@@ -2793,7 +2823,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 18) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (IsQuestFlaggedCompleted(26965) == false and IsQuestFlaggedCompleted(14258)) then
 				AAPZoneActiveCheck = 1
@@ -2812,7 +2847,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 19 and AAP.Level < 63) then
 		if (AAP.ActiveMap == 22) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (IsQuestFlaggedCompleted(28605) and not (IsQuestFlaggedCompleted(26955) and IsQuestFlaggedCompleted(27367))) then
 				AAPZoneActiveCheck = 1
@@ -2824,7 +2864,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 23) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (AAP.ActiveQuests[26955]) then
 				AAPZoneActiveCheck = 1
@@ -2839,7 +2884,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 217) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "217-20-63"
@@ -2849,7 +2899,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 21) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (IsQuestFlaggedCompleted(14258)) then
 				AAPZoneActiveCheck = 1
@@ -2861,7 +2916,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 25) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (AAP.ActiveQuests[27483]) then
 				AAPZoneActiveCheck = 1
@@ -2877,7 +2937,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 224) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "224-20-63"
@@ -2916,7 +2981,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level == 20) then
 		if (AAP.ActiveMap == "A830" and AAP.Race == "LightforgedDraenei") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A830-20"
@@ -2925,14 +2995,24 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 19 and AAP.Level < 60) then
 		if (AAP.ActiveMap == "A84" and (IsQuestFlaggedCompleted(26504) == false) and (IsQuestFlaggedCompleted(26726) == false)) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A84-LF-20"
 		end
 		if (AAP.ActiveMap == "A37" and (IsQuestFlaggedCompleted(26504) == false) and (IsQuestFlaggedCompleted(26726) == false)) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A37-20"
@@ -2941,7 +3021,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 19 and AAP.Level < 63) then
 		if (AAP.ActiveMap == "A49") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A49-20-63"
@@ -2951,7 +3036,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A47") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A47-20-63"
@@ -2961,7 +3051,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A224") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A224-20-63"
@@ -2971,7 +3066,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A22") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A22-20-63"
@@ -2981,7 +3081,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A23") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A23-20-63"
@@ -2991,7 +3096,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A48") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A48-20-63"
@@ -3001,7 +3111,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A56") then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A56-20-63"
@@ -3011,7 +3126,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A14" and (AAP.ActiveQuests[26139] or IsQuestFlaggedCompleted(26139) == true)) then
 			if (IsAddOnLoaded("AAP-Vanilla") == false) then
-				LoadAddOn("AAP-Vanilla")
+				local loaded, reason = LoadAddOn("AAP-Vanilla")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Vanilla is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A14-20-63"
@@ -3052,28 +3172,48 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 59 and AAP.Level < 80) then
 		if (AAP.ActiveMap == 85 and IsQuestFlaggedCompleted(11585) == false) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-60to80"
 		end
 		if (AAP.ActiveMap == 85 and IsQuestFlaggedCompleted(12792)) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-60to80-2"
 		end
 		if (AAP.ActiveMap == 18) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "18-60-80"
 		end
 		if (AAP.ActiveMap == 17) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "17-60-80"
@@ -3083,7 +3223,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 59 and AAP.Level < 83) then
 		if (AAP.ActiveMap == 114) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "114-60-83"
@@ -3093,7 +3238,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 127) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "127-60-83"
@@ -3103,7 +3253,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 115) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "115-60-83"
@@ -3113,7 +3268,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 116) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "116-60-83"
@@ -3123,7 +3283,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 121) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "121-60-83"
@@ -3133,7 +3298,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 100) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "100-60-83"
@@ -3143,7 +3313,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 102) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "102-60-83"
@@ -3153,7 +3328,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 108) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "108-60-83"
@@ -3163,7 +3343,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 107) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "107-60-83"
@@ -3211,21 +3396,36 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 59 and AAP.Level < 80) then
 		if (AAP.ActiveMap == "A84" and IsQuestFlaggedCompleted(12792)) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A84-Hellfire"
 		end
 		if (AAP.ActiveMap == "A84" and IsQuestFlaggedCompleted(11672) == false) then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A84-Flight-Northrend"
 		end
 		if (AAP.ActiveMap == "A17") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A17-60-80"
@@ -3234,7 +3434,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 59 and AAP.Level < 83) then
 		if (AAP.ActiveMap == "A114") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A114-60-83"
@@ -3244,7 +3449,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A115") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A115-60-83"
@@ -3254,7 +3464,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A127") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A127-60-83"
@@ -3264,7 +3479,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A116") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A116-60-83"
@@ -3274,7 +3494,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A121") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A121-60-83"
@@ -3284,7 +3509,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A100") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A100-60-83"
@@ -3294,7 +3524,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A102") then
 			if (IsAddOnLoaded("AAP-TBC-WotLK") == false) then
-				LoadAddOn("AAP-TBC-WotLK")
+				local loaded, reason = LoadAddOn("AAP-TBC-WotLK")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-TBC-WotLK is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A102-60-83"
@@ -3336,21 +3571,36 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 79 and AAP.Level < 90) then
 		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "1-80to90"
 		end
 		if (AAP.ActiveMap == 18) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "18-80-90"
 		end
 		if (AAP.ActiveMap == 12) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "12-80-90"
@@ -3359,7 +3609,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 79 and AAP.Level < 93) then
 		if (AAP.ActiveMap == 198) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "198-80-93"
@@ -3369,7 +3624,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 371) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "371-80-93"
@@ -3379,7 +3639,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 433) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "433-80-93"
@@ -3389,7 +3654,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 379) then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "379-80-93"
@@ -3420,7 +3690,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 79 and AAP.Level < 90) then
 		if (AAP.ActiveMap == "A84") then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A84-80-90"
@@ -3429,7 +3704,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 79 and AAP.Level < 93) then
 		if (AAP.ActiveMap == "A198") then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A198-80-93"
@@ -3439,7 +3719,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A13") then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A13-80-93"
@@ -3449,7 +3734,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A371") then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A371-80-93"
@@ -3459,7 +3749,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A433") then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A433-80-93"
@@ -3469,7 +3764,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A379") then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A379-80-93"
@@ -3479,7 +3779,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A388") then
 			if (IsAddOnLoaded("AAP-Cata-MoP") == false) then
-				LoadAddOn("AAP-Cata-MoP")
+				local loaded, reason = LoadAddOn("AAP-Cata-MoP")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Cata-MoP is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAPZoneActiveCheck = 1
 			AAP.ActiveMap = "A388-80-93"
@@ -3512,19 +3817,34 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 89 and AAP.Level < 100) then
 		if (AAP.ActiveMap == 18) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "18-90-100"
 		end
 		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "1-90to100"
 		end
 		if (AAP.ActiveMap == 17) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "17-90-100"
 		end
@@ -3532,7 +3852,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 89 and AAP.Level < 103) then
 		if (AAP.ActiveMap == 578) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "578-90-100"
 			if (AAP.Level >	99) then
@@ -3541,7 +3866,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 577) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "577-90-100"
 			if (AAP.Level >	99) then
@@ -3550,7 +3880,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 525) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "525-90-100"
 			if (AAP.Level >	99) then
@@ -3559,7 +3894,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 543) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "543-90-100"
 			if (AAP.Level >	99) then
@@ -3568,7 +3908,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 535) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "535-90-100"
 			if (AAP.Level >	99) then
@@ -3577,7 +3922,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 582) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "582-90-100"
 			if (AAP.Level >	99) then
@@ -3586,7 +3936,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 539) then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "539-90-100"
 			if (AAP.Level >	99) then
@@ -3599,7 +3954,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 89 and AAP.Level < 100) then
 		if (AAP.ActiveMap == "A84") then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A84-90-100"
 		end
@@ -3607,7 +3967,12 @@ local function AAP_UpdateMapId()
 	if (AAP.Level > 89 and AAP.Level < 103) then
 		if (AAP.ActiveMap == "A17") then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A17-90-100"
 			if (AAP.Level >	99) then
@@ -3616,7 +3981,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A578") then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A578-90-100"
 			if (AAP.Level >	99) then
@@ -3625,7 +3995,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A577") then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A577-90-100"
 			if (AAP.Level >	99) then
@@ -3634,7 +4009,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A539") then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A539-90-100"
 			if (AAP.Level >	99) then
@@ -3643,7 +4023,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A543") then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A543-90-100"
 			if (AAP.Level >	99) then
@@ -3652,7 +4037,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A535") then
 			if (IsAddOnLoaded("AAP-WoD") == false) then
-				LoadAddOn("AAP-WoD")
+				local loaded, reason = LoadAddOn("AAP-WoD")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-WoD is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A535-90-100"
 			if (AAP.Level >	99) then
@@ -3665,19 +4055,34 @@ local function AAP_UpdateMapId()
 	if ((AAP.Faction == "Horde" and AAP.Level > 99 and AAP.Level < 110) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Horde")) then
 		if (AAP.ActiveMap == 18) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "18-100-110"
 		end
 		if (AAP.ActiveMap == 85) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "1-100to110"
 		end
 		if (AAP.ActiveMap == 627) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "627-100-110"
 		end
@@ -3685,7 +4090,12 @@ local function AAP_UpdateMapId()
 	if ((AAP.Faction == "Horde" and AAP.Level > 97 and AAP.Level < 113) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Horde")) then
 		if (AAP.ActiveMap == 634) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "634-100-110"
 			if (AAP.Level >	109) then
@@ -3694,7 +4104,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 630) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "630-100-110"
 			if (AAP.Level >	109) then
@@ -3703,7 +4118,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 641) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "641-100-110"
 			if (AAP.Level >	109) then
@@ -3712,7 +4132,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 76) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "76-100-110"
 			if (AAP.Level >	109) then
@@ -3721,7 +4146,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == 650) then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "650-100-110"
 			if (AAP.Level >	109) then
@@ -3734,7 +4164,12 @@ local function AAP_UpdateMapId()
 	if ((AAP.Faction == "Alliance" and AAP.Level > 99 and AAP.Level < 110) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Alliance")) then
 		if (AAP.ActiveMap == "A84") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			if (AAP.ActiveQuests[40519] or AAP.ActiveQuests[42782]) then
 				AAP.ActiveMap = "A84-100-110"
@@ -3742,7 +4177,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A627") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A627-100-110"
 		end
@@ -3750,7 +4190,12 @@ local function AAP_UpdateMapId()
 	if ((AAP.Faction == "Alliance" and AAP.Level > 97 and AAP.Level < 113) or (AAP1[AAP.Realm][AAP.Name]["Settings"]["Legion"] == 1 and AAP.Faction == "Alliance")) then
 		if (AAP.ActiveMap == "A634") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A634-100-110"
 			if (AAP.Level >	109) then
@@ -3759,7 +4204,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A630") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A630-100-110"
 			if (AAP.Level >	109) then
@@ -3768,7 +4218,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A641") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A641-100-110"
 			if (AAP.Level >	109) then
@@ -3777,7 +4232,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A76") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A76-100-110"
 			if (AAP.Level >	109) then
@@ -3786,7 +4246,12 @@ local function AAP_UpdateMapId()
 		end
 		if (AAP.ActiveMap == "A650") then
 			if (IsAddOnLoaded("AAP-Legion") == false) then
-				LoadAddOn("AAP-Legion")
+				local loaded, reason = LoadAddOn("AAP-Legion")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-Legion is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "A650-100-110"
 			if (AAP.Level >	109) then
@@ -3799,25 +4264,45 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Horde" and AAP.Level > 109 and AAP.Level < 120) then
 		if (AAP.ActiveMap == 627) then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
-				LoadAddOn("AAP-BfA")
+				local loaded, reason = LoadAddOn("AAP-BfA")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-BfA is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "627-110"
 		end
 		if (AAP.ActiveMap == 81) then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
-				LoadAddOn("AAP-BfA")
+				local loaded, reason = LoadAddOn("AAP-BfA")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-BfA is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "81-110"
 		end
 		if (AAP.ActiveMap == 249) then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
-				LoadAddOn("AAP-BfA")
+				local loaded, reason = LoadAddOn("AAP-BfA")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-BfA is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "249-110"
 		end
 		if (AAP.ActiveMap == 85 and (AAP.ActiveQuests[53372] or IsQuestFlaggedCompleted(53372) == true)) then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
-				LoadAddOn("AAP-BfA")
+				local loaded, reason = LoadAddOn("AAP-BfA")
+				if (not loaded) then
+					if (reason == "DISABLED") then
+						print("AAP: AAP-BfA is Disabled in your Addon-List!")
+					end
+				end
 			end
 			AAP.ActiveMap = "1-110"
 		end
@@ -3826,17 +4311,32 @@ local function AAP_UpdateMapId()
 		if (AAP.ActiveMap == 862) then
 			if ((AAP.ActiveQuests[47514] or IsQuestFlaggedCompleted(47514) == true) and IsQuestFlaggedCompleted(50963) == false) then
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "862-110-120-3"
 			elseif ((AAP.ActiveQuests[47513] or IsQuestFlaggedCompleted(47513) == true) and IsQuestFlaggedCompleted(47315) == false) then
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "862-110-120-1"
 			elseif ((AAP.ActiveQuests[47512] or IsQuestFlaggedCompleted(47512) == true) and IsQuestFlaggedCompleted(47105) == false) then
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "862-110-120-2"
 			elseif (IsQuestFlaggedCompleted(47105) == true and IsQuestFlaggedCompleted(47315) == true and IsQuestFlaggedCompleted(50963) == true) then
@@ -3844,7 +4344,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "862-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "862-110-120"
 			end
@@ -3854,7 +4359,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "863-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "863-110-120"
 			end
@@ -3864,7 +4374,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "864-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "864-110-120"
 			end
@@ -3874,7 +4389,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "895-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "895-110-120"
 			end
@@ -3884,7 +4404,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "896-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "896-110-120"
 			end
@@ -3894,7 +4419,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "942-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "942-110-120"
 			end
@@ -3905,19 +4435,34 @@ local function AAP_UpdateMapId()
 	if (AAP.Faction == "Alliance" and AAP.Level > 109 and AAP.Level < 120) then
 		if (AAP.ActiveMap == "A84") then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
-				LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 			end
 			AAP.ActiveMap = "A84-110-120"
 		end
 		if (AAP.ActiveMap == "A249") then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
-				LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 			end
 			AAP.ActiveMap = "A249-110-120"
 		end
 		if (AAP.ActiveMap == "A81") then
 			if (IsAddOnLoaded("AAP-BfA") == false) then
-				LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 			end
 			AAP.ActiveMap = "A81-110-120"
 		end
@@ -3926,17 +4471,32 @@ local function AAP_UpdateMapId()
 		if (AAP.ActiveMap == "A895") then
 			if ((AAP.ActiveQuests[47961] or IsQuestFlaggedCompleted(47961) == true) and not IsQuestFlaggedCompleted(48622)) then
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A895-110-120-1"
 			elseif ((AAP.ActiveQuests[47962] or IsQuestFlaggedCompleted(47962) == true) and not IsQuestFlaggedCompleted(51490)) then
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A895-110-120-2"
 			elseif ((AAP.ActiveQuests[47960] or IsQuestFlaggedCompleted(47960) == true) and not IsQuestFlaggedCompleted(50972)) then
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A895-110-120-3"
 			else
@@ -3944,7 +4504,12 @@ local function AAP_UpdateMapId()
 					AAP.ActiveMap = "A895-99"
 				else
 					if (IsAddOnLoaded("AAP-BfA") == false) then
-						LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 					end
 					AAP.ActiveMap = "A895-110-120"
 				end
@@ -3955,7 +4520,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "A942-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A942-110-120"
 			end
@@ -3965,7 +4535,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "A876-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A876-110-120"
 			end
@@ -3975,7 +4550,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "A863-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A863-110-120"
 			end
@@ -3985,7 +4565,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "A862-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A862-110-120"
 			end
@@ -3995,7 +4580,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "A864-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A864-110-120"
 			end
@@ -4005,7 +4595,12 @@ local function AAP_UpdateMapId()
 				AAP.ActiveMap = "A896-99"
 			else
 				if (IsAddOnLoaded("AAP-BfA") == false) then
-					LoadAddOn("AAP-BfA")
+					local loaded, reason = LoadAddOn("AAP-BfA")
+					if (not loaded) then
+						if (reason == "DISABLED") then
+							print("AAP: AAP-BfA is Disabled in your Addon-List!")
+						end
+					end
 				end
 				AAP.ActiveMap = "A896-110-120"
 			end
