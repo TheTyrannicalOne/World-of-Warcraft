@@ -104,6 +104,13 @@ X: -3
 Y: -198
 W: 130
 H: 20
+Frame: AllTheThings-Window-AuctionData
+FrameLevel: 2
+Anchor: TOP
+X: -282
+Y: -126
+W: 300
+H: 427
 Frame: AllTheThings-Window-Tradeskills
 FrameLevel: 1
 Anchor: RIGHT

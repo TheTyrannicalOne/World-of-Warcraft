@@ -33,15 +33,15 @@ SkadaDB = {
 		["Darth Eng"] = {
 			["windows"] = {
 				{
-					["y"] = 20.8342933654785,
-					["x"] = -210.004638671875,
 					["barslocked"] = true,
-					["barwidth"] = 234.166656494141,
+					["y"] = 20.8342933654785,
+					["point"] = "BOTTOMRIGHT",
 					["mode"] = "Damage",
+					["barwidth"] = 234.166656494141,
 					["background"] = {
 						["height"] = 158.333221435547,
 					},
-					["point"] = "BOTTOMRIGHT",
+					["x"] = -210.004638671875,
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -349,15 +349,15 @@ SkadaDB = {
 		["Shanyt - Argent Dawn"] = {
 			["windows"] = {
 				{
-					["barslocked"] = true,
 					["y"] = 25.8662185668945,
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "Threat",
+					["x"] = -209.004638671875,
+					["barslocked"] = true,
 					["barwidth"] = 234.166625976563,
+					["mode"] = "Threat",
 					["background"] = {
 						["height"] = 135.188583374023,
 					},
-					["x"] = -209.004638671875,
+					["point"] = "BOTTOMRIGHT",
 				}, -- [1]
 				{
 					["titleset"] = true,

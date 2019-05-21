@@ -1,2821 +1,2821 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/grail", -- [1]
-		"/cw Lupiefupie-Thrall all good thanks", -- [2]
-		"/omen shoq", -- [3]
-		"/cw Elfomar-Quel'Thalas ty", -- [4]
-		"/cw Palanguatiri-Quel'Thalas TY", -- [5]
-		"/reload", -- [6]
-		"/i TY", -- [7]
-		"/TY", -- [8]
-		"/cw Corgex-Illidan ty", -- [9]
-		"/cw Corgex-Illidan thanks already left so enjoy", -- [10]
-		"/cw Corgex-Illidan oh nice thanks", -- [11]
-		"/cw Corgex-Illidan gotcha", -- [12]
-		"/cw Corgex-Illidan ok  i was about to fly your way i will stand fast", -- [13]
-		"/cw Corgex-Illidan ahh didnt know you could turn it off at inns", -- [14]
-		"/cw Corgex-Illidan wants some gold for the trouble?", -- [15]
-		"/cw Corgex-Illidan thanks!", -- [16]
-		"/dance", -- [17]
-		"/rasp", -- [18]
-		"/roll", -- [19]
-		"/cw Scyllua-Goldrinn ty", -- [20]
+		"/cw Corgex-Illidan thanks!", -- [1]
+		"/dance", -- [2]
+		"/rasp", -- [3]
+		"/roll", -- [4]
+		"/cw Scyllua-Goldrinn ty", -- [5]
+		"/clique", -- [6]
+		"/cw Drybonezz-Onyxia yup sorry", -- [7]
+		"/cw Shlonglord-Muradin yup sorry", -- [8]
+		"/cw Buyavowel-Dalaran ty", -- [9]
+		"/cw Løked-Bloodscalp ty", -- [10]
+		"/cw Flashatron-Area52 ty", -- [11]
+		"/cw Nêlda-Spirestone ty", -- [12]
+		"/cw Aedrius-Scilla np thanks", -- [13]
+		"/cw Hybrïd-Jubei'Thos np thanks", -- [14]
+		"/cw Pockëts-Durotan all good thanks", -- [15]
+		"/i roll", -- [16]
+		"/cw Warbaka-Illidan need them sorry", -- [17]
+		"/cw Sabú-Area52 TY", -- [18]
+		"/cw Meatsandwich-Area52 ok ty", -- [19]
+		"/salute", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"u nd ", -- [1]
-			"Mindofwrekin-Frostmourne", -- [2]
+			"reset", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Mindofwrekin-Frostmourne", -- [5]
+			"Hustlewizard-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1537, -- [11]
-			"Player-3725-032E8A71", -- [12]
+			4214, -- [11]
+			"Player-73-0C0B7226", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Mindofwrekin-Frostmourne|r",
-			[51] = 1557696882,
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558308948,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [1]
 		{
-			"Upheaval on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1582, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697237,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"3", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1584, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697240,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
-			"2", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1586, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697241,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [4]
-		{
-			"1", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1588, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697242,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
-		{
-			"Upheaval on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1593, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697261,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [6]
-		{
-			"3", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1595, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697264,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
-		{
-			"2", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1597, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697265,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
-		{
-			"1", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1599, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557697266,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
-		{
-			"May I please have |cff0070dd|Hitem:159292::::::::120:71::2:3:4778:1542:4782:::|h[Sporecaller's Shroud]|h|r if you don't need it?", -- [1]
-			"Luniz-ShatteredHand", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Luniz-ShatteredHand", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1610, -- [11]
-			"Player-157-07E9C9BE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
-			[51] = 1557697292,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [10]
-		{
-			"need that pally?", -- [1]
-			"Linedra-Ragnaros", -- [2]
+			"reset", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Linedra-Ragnaros", -- [5]
+			"Hustlewizard-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1611, -- [11]
-			"Player-1427-09A9359D", -- [12]
+			4215, -- [11]
+			"Player-73-0C0B7226", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Linedra-Ragnaros|r",
-			[51] = 1557697296,
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558308948,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [2]
+		{
+			"gee appreciate it", -- [1]
+			"Avizu-WyrmrestAccord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Avizu-WyrmrestAccord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4218, -- [11]
+			"Player-1171-08737EB7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Avizu-WyrmrestAccord|r",
+			[51] = 1558308951,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [3]
+		{
+			"omg", -- [1]
+			"Astanor-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Astanor-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4220, -- [11]
+			"Player-3209-0A1CFD9A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cAstanor-Azralon|r",
+			[51] = 1558308954,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [4]
+		{
+			"hey good job Shadowncat", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Hustlewizard-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4224, -- [11]
+			"Player-73-0C0B7226", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558308961,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [5]
+		{
+			"solid pull", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Hustlewizard-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4225, -- [11]
+			"Player-73-0C0B7226", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558308963,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [6]
+		{
+			"just", -- [1]
+			"Avizu-WyrmrestAccord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Avizu-WyrmrestAccord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4235, -- [11]
+			"Player-1171-08737EB7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Avizu-WyrmrestAccord|r",
+			[51] = 1558308983,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [7]
+		{
+			"die", -- [1]
+			"Avizu-WyrmrestAccord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Avizu-WyrmrestAccord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4236, -- [11]
+			"Player-1171-08737EB7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Avizu-WyrmrestAccord|r",
+			[51] = 1558308984,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [8]
+		{
+			"please", -- [1]
+			"Avizu-WyrmrestAccord", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Avizu-WyrmrestAccord", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4238, -- [11]
+			"Player-1171-08737EB7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Avizu-WyrmrestAccord|r",
+			[51] = 1558308985,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [9]
+		{
+			"40 mins wait pog", -- [1]
+			"Creamyboii-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Creamyboii-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4241, -- [11]
+			"Player-3676-09ED0CA0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff38bb9Creamyboii-Area52|r",
+			[51] = 1558308994,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [10]
+		{
+			"go back to twitch chat ", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Hustlewizard-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4243, -- [11]
+			"Player-73-0C0B7226", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558309009,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [11]
 		{
-			"yea", -- [1]
-			"Luniz-ShatteredHand", -- [2]
+			"we lost both our tanks lolllllllllllll", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Luniz-ShatteredHand", -- [5]
+			"Hustlewizard-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1613, -- [11]
-			"Player-157-07E9C9BE", -- [12]
+			4248, -- [11]
+			"Player-73-0C0B7226", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
-			[51] = 1557697302,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558309148,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [12]
 		{
-			"no", -- [1]
-			"Luniz-ShatteredHand", -- [2]
+			"i can tank ", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Luniz-ShatteredHand", -- [5]
+			"Hustlewizard-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1614, -- [11]
-			"Player-157-07E9C9BE", -- [12]
+			4252, -- [11]
+			"Player-73-0C0B7226", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
-			[51] = 1557697309,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558309192,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [13]
 		{
-			"may i have it?", -- [1]
-			"Linedra-Ragnaros", -- [2]
+			"can save us some time", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Linedra-Ragnaros", -- [5]
+			"Hustlewizard-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1615, -- [11]
-			"Player-1427-09A9359D", -- [12]
+			4253, -- [11]
+			"Player-73-0C0B7226", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Linedra-Ragnaros|r",
-			[51] = 1557697319,
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558309195,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [14]
 		{
-			"I guess roll", -- [1]
-			"Luniz-ShatteredHand", -- [2]
+			"GG", -- [1]
+			"Hustlewizard-BleedingHollow", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Luniz-ShatteredHand", -- [5]
+			"Hustlewizard-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1616, -- [11]
-			"Player-157-07E9C9BE", -- [12]
+			4257, -- [11]
+			"Player-73-0C0B7226", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
-			[51] = 1557697319,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffc59a6cHustlewizard-BleedingHollow|r",
+			[51] = 1558309221,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [15]
 		{
-			"rip", -- [1]
-			"Linedra-Ragnaros", -- [2]
+			"brb", -- [1]
+			"Jojoboo-SilverHand", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Linedra-Ragnaros", -- [5]
+			"Jojoboo-SilverHand", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1621, -- [11]
-			"Player-1427-09A9359D", -- [12]
+			4261, -- [11]
+			"Player-12-06B85086", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Linedra-Ragnaros|r",
-			[51] = 1557697341,
+			[52] = "|cffa9d271Jojoboo-SilverHand|r",
+			[51] = 1558309250,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [16]
 		{
-			"worm", -- [1]
-			"Luniz-ShatteredHand", -- [2]
+			"dumb queston, we are queued right?", -- [1]
+			"Streak-TheForgottenCoast", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Luniz-ShatteredHand", -- [5]
+			"Streak-TheForgottenCoast", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1622, -- [11]
-			"Player-157-07E9C9BE", -- [12]
+			4264, -- [11]
+			"Player-71-0BFDA073", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Luniz-ShatteredHand|r",
-			[51] = 1557697369,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffa9d271Streak-TheForgottenCoast|r",
+			[51] = 1558309281,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [17]
 		{
-			"need that, warr?", -- [1]
-			"Linedra-Ragnaros", -- [2]
+			"I am honestly so glad im buzzed right now.", -- [1]
+			"Surprises-Deathwing", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Linedra-Ragnaros", -- [5]
+			"Surprises-Deathwing", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1669, -- [11]
-			"Player-1427-09A9359D", -- [12]
+			4267, -- [11]
+			"Player-155-078820A2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Linedra-Ragnaros|r",
-			[51] = 1557697614,
+			[52] = "|cff3ec5e9Surprises-Deathwing|r",
+			[51] = 1558309336,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [18]
 		{
-			"I’ve completed the |cffffff00|Hquest:51613:-1:120:120:0|h[Bloodmaw]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"yes", -- [1]
+			"Surprises-Deathwing", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Surprises-Deathwing", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1728, -- [11]
-			"Player-75-058380E2", -- [12]
+			4268, -- [11]
+			"Player-155-078820A2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557698529,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cff3ec5e9Surprises-Deathwing|r",
+			[51] = 1558309356,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [19]
 		{
-			"my tractor thinks im sexy", -- [1]
-			"Qwoiesjkdnf-Tichondrius", -- [2]
+			"back", -- [1]
+			"Jojoboo-SilverHand", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Qwoiesjkdnf-Tichondrius", -- [5]
+			"Jojoboo-SilverHand", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			106, -- [11]
-			"Player-11-0A5965D9", -- [12]
+			4292, -- [11]
+			"Player-12-06B85086", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
-			[51] = 1557706761,
+			[52] = "|cffa9d271Jojoboo-SilverHand|r",
+			[51] = 1558309427,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [20]
 		{
-			"i was just in iron forge", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"whos the 2nd tank", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			112, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4294, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557706789,
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309469,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [21]
 		{
-			"well then i guess you are", -- [1]
-			"Aesiz-Bloodhoof", -- [2]
+			"someone qued as tank for faster que", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Aesiz-Bloodhoof", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			113, -- [11]
-			"Player-64-0B161547", -- [12]
+			4298, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Aesiz-Bloodhoof|r",
-			[51] = 1557706790,
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309518,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [22]
 		{
-			"Yo all!", -- [1]
-			"Todax-BleedingHollow", -- [2]
+			"switch ur note to healer or dps who ever you are", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Todax-BleedingHollow", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			125, -- [11]
-			"Player-73-0B9068A3", -- [12]
+			4299, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cTodax-BleedingHollow|r",
-			[51] = 1557706843,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309532,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [23]
 		{
-			"shut up", -- [1]
-			"Qwoiesjkdnf-Tichondrius", -- [2]
+			"so we can get this going and find 2nd tank", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Qwoiesjkdnf-Tichondrius", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			128, -- [11]
-			"Player-11-0A5965D9", -- [12]
+			4300, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
-			[51] = 1557706862,
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309538,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [24]
 		{
-			"lets charge", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"We don't have a second tank, the queue is wrong", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			129, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4302, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557706864,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558309544,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [25]
 		{
-			"i can be off tank, but i have no clue how to tank this fight", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"gonna run to broom while waiting", -- [1]
+			"Restofariàn-Arthas", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Restofariàn-Arthas", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			130, -- [11]
-			"Player-9-0907C283", -- [12]
+			4311, -- [11]
+			"Player-69-03AB7F17", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557706882,
+			[52] = "|cfffe7b09Restofariàn-Arthas|r",
+			[51] = 1558309646,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [26]
 		{
-			"ok", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"need a 2nd tank", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			132, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4312, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557706889,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309671,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [27]
 		{
-			"just teach me and i can do it", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"someone qued as a tank to get in faster and fuckd the que", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			133, -- [11]
-			"Player-9-0907C283", -- [12]
+			4316, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557706889,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309689,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [28]
 		{
-			"this place drops 340 il itens? why are we all here?", -- [1]
-			"Gravitøn-Azralon", -- [2]
+			"finally", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gravitøn-Azralon", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			135, -- [11]
-			"Player-3209-099FD749", -- [12]
+			4317, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Gravitøn-Azralon|r",
-			[51] = 1557706897,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309693,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [29]
 		{
-			"there's no taunt swaps needed", -- [1]
-			"Scythiamagoo-Blackrock", -- [2]
+			"No they didn't lol", -- [1]
+			"Elanore-Zuluhed", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scythiamagoo-Blackrock", -- [5]
+			"Elanore-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			136, -- [11]
-			"Player-10-0AB00285", -- [12]
+			4318, -- [11]
+			"Player-156-09D1B42A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Scythiamagoo-Blackrock|r",
-			[51] = 1557706899,
+			[52] = "|cfff38bb9Elanore-Zuluhed|r",
+			[51] = 1558309696,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [30]
 		{
-			"We ready?", -- [1]
-			"Todax-BleedingHollow", -- [2]
+			"Thats not how that works, my dde", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Todax-BleedingHollow", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			137, -- [11]
-			"Player-73-0B9068A3", -- [12]
+			4319, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cTodax-BleedingHollow|r",
-			[51] = 1557706900,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558309699,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [31]
 		{
-			"idk to never tanked a raid", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"yes they did", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			139, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4320, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557706907,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309699,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [32]
 		{
-			"you can solo tank in theory", -- [1]
-			"Scythiamagoo-Blackrock", -- [2]
+			"dude*", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scythiamagoo-Blackrock", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			140, -- [11]
-			"Player-10-0AB00285", -- [12]
+			4321, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Scythiamagoo-Blackrock|r",
-			[51] = 1557706907,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558309701,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [33]
 		{
-			"theres two minions that spawn second fight do not let them go near eachothher", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"Prove it", -- [1]
+			"Elanore-Zuluhed", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Elanore-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			141, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4322, -- [11]
+			"Player-156-09D1B42A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557706910,
+			[52] = "|cfff38bb9Elanore-Zuluhed|r",
+			[51] = 1558309702,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [34]
 		{
-			"r check before pull ^^", -- [1]
-			"Scyllua-Goldrinn", -- [2]
+			"go tank", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			142, -- [11]
-			"Player-3207-09F1CD56", -- [12]
+			4324, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557706924,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309709,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [35]
 		{
-			"ok", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"thens witch to dps", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			143, -- [11]
-			"Player-9-0907C283", -- [12]
+			4325, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557706926,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309712,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [36]
 		{
-			"got it", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"when your que pops", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			144, -- [11]
-			"Player-9-0907C283", -- [12]
+			4326, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557706927,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309715,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [37]
 		{
-			"This is just trash.", -- [1]
-			"Lewferigno-Blackhand", -- [2]
+			"not rocket science", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Lewferigno-Blackhand", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			146, -- [11]
-			"Player-54-06480433", -- [12]
+			4327, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Lewferigno-Blackhand|r",
-			[51] = 1557706941,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309717,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [38]
 		{
-			"boss will be invincible till we kill them", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"lmao", -- [1]
+			"Elanore-Zuluhed", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Elanore-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			147, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4329, -- [11]
+			"Player-156-09D1B42A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557706945,
+			[52] = "|cfff38bb9Elanore-Zuluhed|r",
+			[51] = 1558309726,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [39]
 		{
-			"jesus", -- [1]
-			"Scyllua-Goldrinn", -- [2]
+			"shhhh", -- [1]
+			"Déi-Dragonmaw", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
+			"Déi-Dragonmaw", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			148, -- [11]
-			"Player-3207-09F1CD56", -- [12]
+			4330, -- [11]
+			"Player-84-0609AFAF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557706952,
+			[52] = "|cfffe7b09Déi-Dragonmaw|r",
+			[51] = 1558309726,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [40]
 		{
-			"lag", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"if you're queued as tank, you get in as tank", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			155, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4331, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557706984,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558309727,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [41]
 		{
-			"im avail if u can res", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"you can't switch your role in LFR", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			167, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4332, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557707122,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558309730,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [42]
 		{
-			"im not afk", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"^", -- [1]
+			"Elanore-Zuluhed", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Elanore-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			169, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4334, -- [11]
+			"Player-156-09D1B42A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557707126,
+			[52] = "|cfff38bb9Elanore-Zuluhed|r",
+			[51] = 1558309733,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [43]
 		{
-			"Sanguine Static on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			176, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557707145,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [44]
-		{
-			"Descarga de Plasma em Healaxa", -- [1]
-			"Healaxa-Azralon", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Healaxa-Azralon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			186, -- [11]
-			"Player-3209-0A1B081A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Healaxa-Azralon|r",
-			[51] = 1557707204,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [45]
-		{
-			"May I please have |cffa335ee|Hitem:160639::::::::120:71::4:3:4801:1462:4786:::|h[Greaves of Unending Vigil]|h|r if you don't need it?", -- [1]
-			"Scyllua-Goldrinn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			202, -- [11]
-			"Player-3207-09F1CD56", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557707217,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [46]
-		{
-			"mark me as tanke", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"yes you can", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			206, -- [11]
-			"Player-9-0907C283", -- [12]
+			4335, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557707222,
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309735,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [44]
+		{
+			"im switching", -- [1]
+			"Yvsaint-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Yvsaint-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4336, -- [11]
+			"Player-3678-0B566F2C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309739,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [45]
+		{
+			"right now", -- [1]
+			"Yvsaint-Thrall", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Yvsaint-Thrall", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4337, -- [11]
+			"Player-3678-0B566F2C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309740,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [46]
+		{
+			"ok bud", -- [1]
+			"Zandalayssa-Area52", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Zandalayssa-Area52", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4338, -- [11]
+			"Player-3676-0A480CF8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558309744,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [47]
 		{
-			"i wish i was a virgin still so god wouldnt be so mad at me", -- [1]
-			"Qwoiesjkdnf-Tichondrius", -- [2]
+			"it's TIME", -- [1]
+			"Montresor-Zuluhed", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Qwoiesjkdnf-Tichondrius", -- [5]
+			"Montresor-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			209, -- [11]
-			"Player-11-0A5965D9", -- [12]
+			4339, -- [11]
+			"Player-156-09B19916", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
-			[51] = 1557707229,
+			[52] = "|cfffef367Montresor-Zuluhed|r",
+			[51] = 1558309750,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [48]
 		{
-			"i got the green god hates me", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"boom im dps", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			215, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4340, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557707247,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309750,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [49]
 		{
-			"no you can have it", -- [1]
-			"Scyllua-Goldrinn", -- [2]
+			"boom you're still labeled as tank", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			216, -- [11]
-			"Player-3207-09F1CD56", -- [12]
+			4341, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557707250,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558309756,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [50]
 		{
-			"trade", -- [1]
-			"Scyllua-Goldrinn", -- [2]
+			"truth", -- [1]
+			"Drunkledab-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
+			"Drunkledab-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			219, -- [11]
-			"Player-3207-09F1CD56", -- [12]
+			4342, -- [11]
+			"Player-57-0B5DFA87", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557707255,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffa22fc8Drunkledab-Illidan|r",
+			[51] = 1558309762,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [51]
 		{
-			"ty", -- [1]
-			"Scyllua-Goldrinn", -- [2]
-			"Orcish", -- [3]
+			"Just pull the boss you fool", -- [1]
+			"Elanore-Zuluhed", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
+			"Elanore-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			223, -- [11]
-			"Player-3207-09F1CD56", -- [12]
+			4343, -- [11]
+			"Player-156-09D1B42A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557707283,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfff38bb9Elanore-Zuluhed|r",
+			[51] = 1558309763,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [52]
 		{
-			"but its a same iL", -- [1]
-			"Scyllua-Goldrinn", -- [2]
+			"thast b.c id idnt switch my noter", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			229, -- [11]
-			"Player-3207-09F1CD56", -- [12]
+			4344, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557707305,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309764,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [53]
 		{
-			"okay", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"duh", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			236, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4345, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557707323,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309766,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [54]
 		{
-			"for this fight", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"lmao", -- [1]
+			"Déi-Dragonmaw", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Déi-Dragonmaw", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			239, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4346, -- [11]
+			"Player-84-0609AFAF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557707325,
+			[52] = "|cfffe7b09Déi-Dragonmaw|r",
+			[51] = 1558309766,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [55]
 		{
-			"omg", -- [1]
-			"Scyllua-Goldrinn", -- [2]
+			"pro off tank", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Scyllua-Goldrinn", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			251, -- [11]
-			"Player-3207-09F1CD56", -- [12]
+			4391, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scyllua-Goldrinn|r",
-			[51] = 1557707374,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309966,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [56]
 		{
-			"go over in 2/3s", -- [1]
-			"Shoshin-Illidan", -- [2]
+			"FFS", -- [1]
+			"Drunkledab-Illidan", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shoshin-Illidan", -- [5]
+			"Drunkledab-Illidan", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			264, -- [11]
-			"Player-57-045864EA", -- [12]
+			4394, -- [11]
+			"Player-57-0B5DFA87", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Shoshin-Illidan|r",
-			[51] = 1557707465,
+			[52] = "|cffa22fc8Drunkledab-Illidan|r",
+			[51] = 1558309968,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [57]
 		{
-			"start going through", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"clown fiesta wipeng ina fkn lfr", -- [1]
+			"Yvsaint-Thrall", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Yvsaint-Thrall", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			266, -- [11]
-			"Player-9-0907C283", -- [12]
+			4401, -- [11]
+			"Player-3678-0B566F2C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557707476,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc31d39Yvsaint-Thrall|r",
+			[51] = 1558309987,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [58]
 		{
-			"wo", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"tank on skull", -- [1]
+			"Shaladiel-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Shaladiel-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			269, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4408, -- [11]
+			"Player-3209-0961EC54", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557707485,
+			[52] = "|cff3ec5e9Shaladiel-Azralon|r",
+			[51] = 1558310011,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [59]
 		{
-			"Tank Down", -- [1]
-			"Todax-BleedingHollow", -- [2]
+			"Who's tanking Zaxxy?", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Todax-BleedingHollow", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			275, -- [11]
-			"Player-73-0B9068A3", -- [12]
+			4419, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cTodax-BleedingHollow|r",
-			[51] = 1557707505,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558310061,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [60]
 		{
-			"u guys got this im sure", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"quick run througth?", -- [1]
+			"Lothari-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Lothari-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			283, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4423, -- [11]
+			"Player-11-0A58681F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557707550,
+			[52] = "|cfff38bb9Lothari-Tichondrius|r",
+			[51] = 1558310077,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [61]
 		{
-			"Nice!", -- [1]
-			"Todax-BleedingHollow", -- [2]
+			"first time", -- [1]
+			"Lothari-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Todax-BleedingHollow", -- [5]
+			"Lothari-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			290, -- [11]
-			"Player-73-0B9068A3", -- [12]
+			4424, -- [11]
+			"Player-11-0A58681F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cTodax-BleedingHollow|r",
-			[51] = 1557707588,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfff38bb9Lothari-Tichondrius|r",
+			[51] = 1558310080,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [62]
 		{
-			"wooohoo, i was useful lol", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"stand in everything ", -- [1]
+			"Montresor-Zuluhed", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Montresor-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			292, -- [11]
-			"Player-9-0907C283", -- [12]
+			4426, -- [11]
+			"Player-156-09B19916", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557707593,
+			[52] = "|cfffef367Montresor-Zuluhed|r",
+			[51] = 1558310090,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [63]
 		{
-			"set e as tank lol", -- [1]
-			"Santofu-Kil'jaeden", -- [2]
+			"tank boss on skull, taunt when 3 stacks", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Santofu-Kil'jaeden", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			300, -- [11]
-			"Player-9-0907C283", -- [12]
+			4427, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Santofu-Kil'jaeden|r",
-			[51] = 1557707600,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558310091,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [64]
 		{
-			"May I please have |cffa335ee|Hitem:160638::::::::120:71::4:3:4801:1462:4786:::|h[Decontaminator's Greatbelt]|h|r if you don't need it?", -- [1]
-			"Dredken-Thrall", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Dredken-Thrall", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			308, -- [11]
-			"Player-3678-07F4A2D7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cDredken-Thrall|r",
-			[51] = 1557707606,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [65]
-		{
-			"i will reconnect fast", -- [1]
-			"Healaxa-Azralon", -- [2]
+			"kk ez", -- [1]
+			"Lothari-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Healaxa-Azralon", -- [5]
+			"Lothari-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			335, -- [11]
-			"Player-3209-0A1B081A", -- [12]
+			4428, -- [11]
+			"Player-11-0A58681F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Healaxa-Azralon|r",
-			[51] = 1557707852,
+			[52] = "|cfff38bb9Lothari-Tichondrius|r",
+			[51] = 1558310096,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [65]
+		{
+			"|cffffff00|Hachievement:13418:Player-61-0AFC0543:1:5:18:19:4294967295:4294967295:4294967295:4294967295|h[Ahead of the Curve: Uu'nat, Harbinger of the Void]|h|r :)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Cenobites-Zul'jin", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4429, -- [11]
+			"Player-61-0AFC0543", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310101,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [66]
 		{
-			"i have to poop", -- [1]
-			"Qwoiesjkdnf-Tichondrius", -- [2]
+			"dodge stuff", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Qwoiesjkdnf-Tichondrius", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			343, -- [11]
-			"Player-11-0A5965D9", -- [12]
+			4430, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecQwoiesjkdnf-Tichondrius|r",
-			[51] = 1557707993,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558310102,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [67]
 		{
-			"odrion you suck", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"dude grats", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			347, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4431, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557708020,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558310109,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [68]
 		{
-			"cant help it if tank cant keep aggro", -- [1]
-			"Odrion-Turalyon", -- [2]
+			"ty", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Odrion-Turalyon", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			349, -- [11]
-			"Player-3685-0717F259", -- [12]
+			4432, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcOdrion-Turalyon|r",
-			[51] = 1557708044,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310115,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [69]
 		{
-			"thats what tanks do dumbo", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"ill take zax to start", -- [1]
+			"Lothari-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Lothari-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			351, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4434, -- [11]
+			"Player-11-0A58681F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557708061,
+			[52] = "|cfff38bb9Lothari-Tichondrius|r",
+			[51] = 1558310131,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [70]
 		{
-			"always trust me", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"Who's range tanking the skinny guy?", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			353, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4435, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557708078,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558310133,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [71]
 		{
-			"then why was I face tanking adds on the trash before boss", -- [1]
-			"Odrion-Turalyon", -- [2]
+			"this dick", -- [1]
+			"Déi-Dragonmaw", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Odrion-Turalyon", -- [5]
+			"Déi-Dragonmaw", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			354, -- [11]
-			"Player-3685-0717F259", -- [12]
+			4437, -- [11]
+			"Player-84-0609AFAF", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcOdrion-Turalyon|r",
-			[51] = 1557708080,
+			[52] = "|cfffe7b09Déi-Dragonmaw|r",
+			[51] = 1558310146,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [72]
 		{
-			"SHHH", -- [1]
-			"Celestialnob-Dalaran", -- [2]
+			"kk", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			357, -- [11]
-			"Player-3683-0AF451A2", -- [12]
+			4438, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557708107,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558310151,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [73]
 		{
-			"idk", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"lmao", -- [1]
+			"Cryptin-Kil'jaeden", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Cryptin-Kil'jaeden", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			359, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4441, -- [11]
+			"Player-9-0A9DAC1A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557708111,
+			[52] = "|cffc31d39Cryptin-Kil'jaeden|r",
+			[51] = 1558310156,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [74]
 		{
-			"deaD PEOPLE ARENT REAL", -- [1]
-			"Celestialnob-Dalaran", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Celestialnob-Dalaran", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			360, -- [11]
-			"Player-3683-0AF451A2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Celestialnob-Dalaran|r",
-			[51] = 1557708114,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [75]
-		{
-			"3", -- [1]
-			"Healaxa-Azralon", -- [2]
+			"Crushing Doubt 1 on {rt1}Felcifer{rt1}", -- [1]
+			"Felcifer-Alexstrasza", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Healaxa-Azralon", -- [5]
+			"Felcifer-Alexstrasza", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			361, -- [11]
-			"Player-3209-0A1B081A", -- [12]
+			4473, -- [11]
+			"Player-1070-04CE2B21", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Healaxa-Azralon|r",
-			[51] = 1557708115,
+			[52] = "|cff006fdcFelcifer-Alexstrasza|r",
+			[51] = 1558310413,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [75]
+		{
+			"Crushing Doubt 1 on {rt1}Wikketa{rt1}", -- [1]
+			"Wikketa-Trollbane", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Wikketa-Trollbane", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			4492, -- [11]
+			"Player-1175-06B587F9", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff3ec5e9Wikketa-Trollbane|r",
+			[51] = 1558310537,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [76]
 		{
-			"2", -- [1]
-			"Healaxa-Azralon", -- [2]
+			"{rt1}3", -- [1]
+			"Wikketa-Trollbane", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Healaxa-Azralon", -- [5]
+			"Wikketa-Trollbane", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			362, -- [11]
-			"Player-3209-0A1B081A", -- [12]
+			4497, -- [11]
+			"Player-1175-06B587F9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Healaxa-Azralon|r",
-			[51] = 1557708116,
+			[52] = "|cff3ec5e9Wikketa-Trollbane|r",
+			[51] = 1558310544,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [77]
 		{
-			"and idc", -- [1]
-			"Brahurah-Kilrogg", -- [2]
-			"", -- [3]
+			"{rt1}2", -- [1]
+			"Wikketa-Trollbane", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Wikketa-Trollbane", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			364, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4499, -- [11]
+			"Player-1175-06B587F9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557708120,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff3ec5e9Wikketa-Trollbane|r",
+			[51] = 1558310545,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [78]
 		{
-			"lol then dont comment on why Im dead", -- [1]
-			"Odrion-Turalyon", -- [2]
-			"", -- [3]
+			"{rt1}1", -- [1]
+			"Wikketa-Trollbane", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Odrion-Turalyon", -- [5]
+			"Wikketa-Trollbane", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			365, -- [11]
-			"Player-3685-0717F259", -- [12]
+			4501, -- [11]
+			"Player-1175-06B587F9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcOdrion-Turalyon|r",
-			[51] = 1557708132,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cff3ec5e9Wikketa-Trollbane|r",
+			[51] = 1558310546,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [79]
 		{
-			"ok then stop dying", -- [1]
-			"Brahurah-Kilrogg", -- [2]
+			"Recount - Healing Done for Zaxasj the Speaker 19:55:53-20:02:42", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Brahurah-Kilrogg", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			369, -- [11]
-			"Player-4-0A48EB54", -- [12]
+			4537, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Brahurah-Kilrogg|r",
-			[51] = 1557708157,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [80]
 		{
-			"anyone need |cffa335ee|Hitem:160627::::::::120:253::4:4:4825:1462:4786:5392:::|h[Chainvest of Assured Quality]|h|r?", -- [1]
-			"Dudakai-Tichondrius", -- [2]
+			"1. Garah-Crushridge  8,097,066 (21136.7, 19.5%)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Dudakai-Tichondrius", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			427, -- [11]
-			"Player-11-0B159C86", -- [12]
+			4538, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Dudakai-Tichondrius|r",
-			[51] = 1557708295,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [81]
 		{
-			"|cffe6cc80|Hitem:128289::142177:155847:152036::::120:71:16777472:9:4:752:1495:1501:1498:160:1:3:3418:1517:3337:3:3611:1497:3528:3:3611:1487:3528|h[Scale of the Earth-Warder]|h|r is all I have lul", -- [1]
-			"Ayunz-Dalaran", -- [2]
+			"2. Déi-Dragonmaw  6,768,822 (17539.4, 16.3%)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ayunz-Dalaran", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			839, -- [11]
-			"Player-3683-0B5CB261", -- [12]
+			4539, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAyunz-Dalaran|r",
-			[51] = 1557710266,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [82]
 		{
-			"do we need a second tank or will one suffice?", -- [1]
-			"Ulrock-Wildhammer", -- [2]
+			"3. Zandalayssa-Area52  5,923,623 (15601.2, 14.2%)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ulrock-Wildhammer", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			841, -- [11]
-			"Player-159-0A016584", -- [12]
+			4540, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ulrock-Wildhammer|r",
-			[51] = 1557710268,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [83]
 		{
-			"the more stacks of determination the better", -- [1]
-			"Dragodruid-Darkspear", -- [2]
+			"4. Beyondbeef  5,611,831 (14846.9, 13.5%)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Dragodruid-Darkspear", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			844, -- [11]
-			"Player-120-08AE00C8", -- [12]
+			4541, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Dragodruid-Darkspear|r",
-			[51] = 1557710272,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [84]
 		{
-			"kill ads as much as possible and don't stand close if you're going to explode is what i read", -- [1]
-			"Fellodi-WyrmrestAccord", -- [2]
+			"5. Shadowfangzz-Mal'Ganis  5,387,856 (16587.2, 12.9%)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fellodi-WyrmrestAccord", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			856, -- [11]
-			"Player-1171-079E1BCE", -- [12]
+			4542, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Fellodi-WyrmrestAccord|r",
-			[51] = 1557710364,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [85]
 		{
-			"lets jjust waita", -- [1]
-			"Uriel-Eitrigg", -- [2]
+			"6. Cenobites  2,472,313 (8052.3, 5.9%)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Uriel-Eitrigg", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			862, -- [11]
-			"Player-47-0740BDE9", -- [12]
+			4543, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Uriel-Eitrigg|r",
-			[51] = 1557710381,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [86]
 		{
-			"the adds that show up need to be dispelled, priest mass dispell works best", -- [1]
-			"Deadinside-Uldum", -- [2]
+			"7. Lothari-Tichondrius  1,543,087 (4850.3, 3.7%)", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Deadinside-Uldum", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			864, -- [11]
-			"Player-116-03F16D9C", -- [12]
+			4544, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Deadinside-Uldum|r",
-			[51] = 1557710394,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310638,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [87]
 		{
-			"we have for 20 mins while we cleared trash haha", -- [1]
-			"Fellodi-WyrmrestAccord", -- [2]
+			"done", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fellodi-WyrmrestAccord", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			865, -- [11]
-			"Player-1171-079E1BCE", -- [12]
+			4545, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Fellodi-WyrmrestAccord|r",
-			[51] = 1557710401,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310643,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [88]
 		{
-			"So how is everyone's day going?", -- [1]
-			"Dragodruid-Darkspear", -- [2]
+			"huh", -- [1]
+			"Garah-Crushridge", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Dragodruid-Darkspear", -- [5]
+			"Garah-Crushridge", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			867, -- [11]
-			"Player-120-08AE00C8", -- [12]
+			4546, -- [11]
+			"Player-1138-07DC4241", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Dragodruid-Darkspear|r",
-			[51] = 1557710415,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffe7b09Garah-Crushridge|r",
+			[51] = 1558310660,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [89]
 		{
-			"slow right now, lol", -- [1]
-			"Jamak-Saurfang", -- [2]
+			"someone asked for it", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jamak-Saurfang", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			868, -- [11]
-			"Player-3729-09F98485", -- [12]
+			4547, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Jamak-Saurfang|r",
-			[51] = 1557710422,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310668,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [90]
 		{
-			"got my dick stuck in a light socket so pretty good, hbu", -- [1]
-			"Ulrock-Wildhammer", -- [2]
+			"Use crown", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ulrock-Wildhammer", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			869, -- [11]
-			"Player-159-0A016584", -- [12]
+			4549, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ulrock-Wildhammer|r",
-			[51] = 1557710449,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558310681,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [91]
 		{
-			"how.... shocking... of you", -- [1]
-			"Jamak-Saurfang", -- [2]
+			"crown", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jamak-Saurfang", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			870, -- [11]
-			"Player-3729-09F98485", -- [12]
+			4550, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Jamak-Saurfang|r",
-			[51] = 1557710462,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310682,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [92]
 		{
-			"i just ran g'huun and spouted enough ball jokes to last everyone a lifetime", -- [1]
-			"Deadinside-Uldum", -- [2]
+			"hunter", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Deadinside-Uldum", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			871, -- [11]
-			"Player-116-03F16D9C", -- [12]
+			4551, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Deadinside-Uldum|r",
-			[51] = 1557710472,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310690,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [93]
 		{
-			"lol", -- [1]
-			"Jamak-Saurfang", -- [2]
+			"why", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jamak-Saurfang", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			873, -- [11]
-			"Player-3729-09F98485", -- [12]
+			4558, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Jamak-Saurfang|r",
-			[51] = 1557710480,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558310727,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [94]
 		{
-			"well, caz we be waitin ill get myself some food", -- [1]
-			"Jamak-Saurfang", -- [2]
+			"lol", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jamak-Saurfang", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			882, -- [11]
-			"Player-3729-09F98485", -- [12]
+			4559, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Jamak-Saurfang|r",
-			[51] = 1557710520,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310729,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [95]
 		{
-			"They probably phased the tanks out", -- [1]
-			"Dragodruid-Darkspear", -- [2]
+			"oh", -- [1]
+			"Tanmanstan-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Dragodruid-Darkspear", -- [5]
+			"Tanmanstan-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			883, -- [11]
-			"Player-120-08AE00C8", -- [12]
+			4560, -- [11]
+			"Player-61-0BB83375", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Dragodruid-Darkspear|r",
-			[51] = 1557710522,
+			[52] = "|cfff38bb9Tanmanstan-Zul'jin|r",
+			[51] = 1558310730,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [96]
 		{
-			"who was just tanking we did just fine", -- [1]
-			"Magerocky-AeriePeak", -- [2]
+			"if you dont know when to use the crown please dont pick it up ", -- [1]
+			"Felcifer-Alexstrasza", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Magerocky-AeriePeak", -- [5]
+			"Felcifer-Alexstrasza", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			884, -- [11]
-			"Player-1426-0A438A8F", -- [12]
+			4564, -- [11]
+			"Player-1070-04CE2B21", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Magerocky-AeriePeak|r",
-			[51] = 1557710524,
+			[52] = "|cff006fdcFelcifer-Alexstrasza|r",
+			[51] = 1558310788,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [97]
 		{
-			"yay 2 tanks", -- [1]
-			"Magerocky-AeriePeak", -- [2]
+			"rawrrr", -- [1]
+			"Tanmanstan-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Magerocky-AeriePeak", -- [5]
+			"Tanmanstan-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			892, -- [11]
-			"Player-1426-0A438A8F", -- [12]
+			4569, -- [11]
+			"Player-61-0BB83375", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Magerocky-AeriePeak|r",
-			[51] = 1557710543,
+			[52] = "|cfff38bb9Tanmanstan-Zul'jin|r",
+			[51] = 1558310806,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [98]
 		{
-			"full raid. What?", -- [1]
-			"Magerocky-AeriePeak", -- [2]
+			"or the void stone....", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Magerocky-AeriePeak", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			921, -- [11]
-			"Player-1426-0A438A8F", -- [12]
+			4570, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Magerocky-AeriePeak|r",
-			[51] = 1557710556,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558310810,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [99]
 		{
-			"my services are no longer needed", -- [1]
-			"Ulrock-Wildhammer", -- [2]
+			"my heals arent good enough for this shit", -- [1]
+			"Garah-Crushridge", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ulrock-Wildhammer", -- [5]
+			"Garah-Crushridge", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			944, -- [11]
-			"Player-159-0A016584", -- [12]
+			4580, -- [11]
+			"Player-1138-07DC4241", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ulrock-Wildhammer|r",
-			[51] = 1557710560,
+			[52] = "|cfffe7b09Garah-Crushridge|r",
+			[51] = 1558310913,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [100]
 		{
-			"fck", -- [1]
-			"Priestarada-Azralon", -- [2]
+			"23k is good dude", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Priestarada-Azralon", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1035, -- [11]
-			"Player-3209-09D3FF85", -- [12]
+			4582, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefePriestarada-Azralon|r",
-			[51] = 1557710588,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310940,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [101]
 		{
-			"my bad", -- [1]
-			"Priestarada-Azralon", -- [2]
+			"relax", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Priestarada-Azralon", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1036, -- [11]
-			"Player-3209-09D3FF85", -- [12]
+			4583, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefePriestarada-Azralon|r",
-			[51] = 1557710591,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310942,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [102]
 		{
-			"pressed autorun by mistake", -- [1]
-			"Priestarada-Azralon", -- [2]
+			"people are doing stupid shit", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Priestarada-Azralon", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1037, -- [11]
-			"Player-3209-09D3FF85", -- [12]
+			4585, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefePriestarada-Azralon|r",
-			[51] = 1557710604,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558310954,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [103]
 		{
-			"well, time to sit back and watch", -- [1]
-			"Jamak-Saurfang", -- [2]
+			"Did you guys know BEWARE", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jamak-Saurfang", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1043, -- [11]
-			"Player-3729-09F98485", -- [12]
+			4593, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Jamak-Saurfang|r",
-			[51] = 1557710647,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558311073,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [104]
 		{
-			"what happened", -- [1]
-			"Uriel-Eitrigg", -- [2]
+			"i have to play dead after that fear lmao", -- [1]
+			"Kûñâì-Zuluhed", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Uriel-Eitrigg", -- [5]
+			"Kûñâì-Zuluhed", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1044, -- [11]
-			"Player-47-0740BDE9", -- [12]
+			4595, -- [11]
+			"Player-156-090E5C49", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Uriel-Eitrigg|r",
-			[51] = 1557710656,
+			[52] = "|cffa9d271Kûñâì-Zuluhed|r",
+			[51] = 1558311102,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [105]
 		{
-			"need to dispell minions of zul", -- [1]
-			"Deadinside-Uldum", -- [2]
+			"Use crown when oozes die", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Deadinside-Uldum", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1047, -- [11]
-			"Player-116-03F16D9C", -- [12]
+			4597, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Deadinside-Uldum|r",
-			[51] = 1557710663,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311160,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [106]
 		{
-			"-.-", -- [1]
-			"Ulrock-Wildhammer", -- [2]
+			"err trident", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ulrock-Wildhammer", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1048, -- [11]
-			"Player-159-0A016584", -- [12]
+			4598, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ulrock-Wildhammer|r",
-			[51] = 1557710674,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311164,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [107]
 		{
-			"detox doesnt work so not me", -- [1]
-			"Fellodi-WyrmrestAccord", -- [2]
+			"tank swap when he puts debuff on yo", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fellodi-WyrmrestAccord", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1049, -- [11]
-			"Player-1171-079E1BCE", -- [12]
+			4605, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Fellodi-WyrmrestAccord|r",
-			[51] = 1557710683,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311197,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [108]
 		{
-			"bloodelvs use arcane tourent", -- [1]
-			"Ayunz-Dalaran", -- [2]
+			"DO NOT USE THE TRIDENT HERE", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ayunz-Dalaran", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1050, -- [11]
-			"Player-3683-0B5CB261", -- [12]
+			4606, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAyunz-Dalaran|r",
-			[51] = 1557710685,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558311207,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [109]
 		{
-			"priest mass dispell em", -- [1]
-			"Ayunz-Dalaran", -- [2]
+			"please", -- [1]
+			"Cenobites-Zul'jin", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ayunz-Dalaran", -- [5]
+			"Cenobites-Zul'jin", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1051, -- [11]
-			"Player-3683-0B5CB261", -- [12]
+			4607, -- [11]
+			"Player-61-0AFC0543", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAyunz-Dalaran|r",
-			[51] = 1557710693,
+			[52] = "|cfffe7b09Cenobites-Zul'jin|r",
+			[51] = 1558311209,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [110]
 		{
-			":p", -- [1]
-			"Ayunz-Dalaran", -- [2]
+			"or the void stone", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ayunz-Dalaran", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1052, -- [11]
-			"Player-3683-0B5CB261", -- [12]
+			4609, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAyunz-Dalaran|r",
-			[51] = 1557710694,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558311211,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [111]
 		{
-			"priests have mass dispell lol", -- [1]
-			"Uriel-Eitrigg", -- [2]
+			"Guardian adds will flock to debuffed tank, they cant be tanked with boss", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Uriel-Eitrigg", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1053, -- [11]
-			"Player-47-0740BDE9", -- [12]
+			4610, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Uriel-Eitrigg|r",
-			[51] = 1557710694,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311213,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [112]
 		{
-			"BadPet: Jamak-Saurfang's pet, Devilsaur, used |cff71d5ff|Hspell:2649:0|h[Growl]|h|r on Bloodthirsty Crawg", -- [1]
-			"Ambal-WyrmrestAccord", -- [2]
+			"and if you don't know how to use the crown, please don't pick it up <3", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ambal-WyrmrestAccord", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1055, -- [11]
-			"Player-1171-08958549", -- [12]
+			4612, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Ambal-WyrmrestAccord|r",
-			[51] = 1557710709,
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558311220,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [113]
 		{
-			"could let the tanks pull too", -- [1]
-			"Deadinside-Uldum", -- [2]
+			"kk", -- [1]
+			"Lothari-Tichondrius", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Deadinside-Uldum", -- [5]
+			"Lothari-Tichondrius", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1056, -- [11]
-			"Player-116-03F16D9C", -- [12]
+			4613, -- [11]
+			"Player-11-0A58681F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Deadinside-Uldum|r",
-			[51] = 1557710718,
+			[52] = "|cfff38bb9Lothari-Tichondrius|r",
+			[51] = 1558311225,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [114]
 		{
-			"na cat wanted me to pull", -- [1]
-			"Ayunz-Dalaran", -- [2]
+			"use crown when adds are < 25% health", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ayunz-Dalaran", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1057, -- [11]
-			"Player-3683-0B5CB261", -- [12]
+			4615, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cAyunz-Dalaran|r",
-			[51] = 1557710732,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311233,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [115]
 		{
-			"gg", -- [1]
-			"Jamak-Saurfang", -- [2]
+			"higher then that you're just nerfing our dps and killing the raid", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Jamak-Saurfang", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1090, -- [11]
-			"Player-3729-09F98485", -- [12]
+			4617, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Jamak-Saurfang|r",
-			[51] = 1557710957,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311248,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [116]
 		{
-			"May I please have |cffa335ee|Hitem:160642::::::::120:71::4:3:4801:1462:4786:::|h[Cloak of Rippling Whispers]|h|r if you don't need it?", -- [1]
-			"Rudëus-Tichondrius", -- [2]
-			"Orcish", -- [3]
+			"oh, and dodge everything", -- [1]
+			"Jigsah-Area52", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Rudëus-Tichondrius", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1100, -- [11]
-			"Player-11-0B08A270", -- [12]
+			4622, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff8686ecRudëus-Tichondrius|r",
-			[51] = 1557710965,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311273,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [117]
 		{
-			"ty", -- [1]
-			"Knomtseb-Cho'gall", -- [2]
+			"lust when he hits 40%", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Knomtseb-Cho'gall", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1111, -- [11]
-			"Player-101-08A0F91E", -- [12]
+			4624, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Knomtseb-Cho'gall|r",
-			[51] = 1557710978,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311279,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [118]
 		{
-			"gg ty", -- [1]
-			"Rainaria-EmeraldDream", -- [2]
+			"I interrupted Dobramentes Primordial's |cff71d5ff|Hspell:285427:0|h[Consumir Essência]|h|r!", -- [1]
+			"Shaladiel-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Rainaria-EmeraldDream", -- [5]
+			"Shaladiel-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1114, -- [11]
-			"Player-162-087BEFE6", -- [12]
+			4648, -- [11]
+			"Player-3209-0961EC54", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Rainaria-EmeraldDream|r",
-			[51] = 1557710985,
+			[52] = "|cff3ec5e9Shaladiel-Azralon|r",
+			[51] = 1558311455,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [119]
 		{
-			"anyone want? |cffa335ee|Hitem:160620::::::::120:103::4:4:4825:1462:4786:5394:::|h[Usurper's Bloodcaked Spaulders]|h|r", -- [1]
-			"Wolan-Feathermoon", -- [2]
+			"dont run in the puddles", -- [1]
+			"Garah-Crushridge", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Wolan-Feathermoon", -- [5]
+			"Garah-Crushridge", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1123, -- [11]
-			"Player-118-0050C8B5", -- [12]
+			4660, -- [11]
+			"Player-1138-07DC4241", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Wolan-Feathermoon|r",
-			[51] = 1557710995,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffe7b09Garah-Crushridge|r",
+			[51] = 1558311514,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
 		}, -- [120]
 		{
-			"I wouldn't mind them", -- [1]
-			"Ambal-WyrmrestAccord", -- [2]
+			"for fuck sakes", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Ambal-WyrmrestAccord", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1125, -- [11]
-			"Player-1171-08958549", -- [12]
+			4676, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Ambal-WyrmrestAccord|r",
-			[51] = 1557711006,
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311646,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [121]
 		{
-			"I’ve completed the |cffffff00|Hquest:51806:-1:120:120:0|h[Pest Remover Mk. II]|h|r WQ. Thanks for your help! (World Quest Party)", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
+			"use crown when adds hit 25%", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			293, -- [11]
-			"Player-75-058380E2", -- [12]
+			4678, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1557718047,
-			[50] = "CHAT_MSG_PARTY",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311654,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [122]
 		{
-			"hey all", -- [1]
-			"Allidraepali-TheScryers", -- [2]
+			"lust now", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			367, -- [11]
-			"Player-75-0C03B742", -- [12]
+			4680, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Allidraepali|r",
-			[51] = 1557718789,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311673,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [123]
 		{
-			"hey", -- [1]
-			"Pyzemphx-TheScryers", -- [2]
+			"Bloodlust used by: Punkpuppy |cff71d5ff|Hspell:80353:0|h[Distorção Temporal]|h|r (30% haste)", -- [1]
+			"Shaladiel-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Shaladiel-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			369, -- [11]
-			"Player-75-0BE9D75E", -- [12]
+			4681, -- [11]
+			"Player-3209-0961EC54", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff3ec5e9Pyzemphx|r",
-			[51] = 1557718840,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3ec5e9Shaladiel-Azralon|r",
+			[51] = 1558311680,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [124]
 		{
-			"how yall doing", -- [1]
-			"Allidraepali-TheScryers", -- [2]
+			"stop attacking adds", -- [1]
+			"Jigsah-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Jigsah-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			372, -- [11]
-			"Player-75-0C03B742", -- [12]
+			4688, -- [11]
+			"Player-3676-0905C1C2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Allidraepali|r",
-			[51] = 1557718882,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cfffef367Jigsah-Area52|r",
+			[51] = 1558311727,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [125]
 		{
-			"Howdy all =)", -- [1]
-			"Jharl-ArgentDawn", -- [2]
+			"if you have the debuff you need to group up because you leech health from people around you, we can't heal you", -- [1]
+			"Zandalayssa-Area52", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Zandalayssa-Area52", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			17, -- [11]
-			"Player-75-009A7F30", -- [12]
+			4691, -- [11]
+			"Player-3676-0A480CF8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffe7b09Jharl|r",
-			[51] = 1557795879,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff00fe95Zandalayssa-Area52|r",
+			[51] = 1558311742,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
 		}, -- [126]
 		{
-			"hello", -- [1]
-			"Zyborg-ArgentDawn", -- [2]
+			"Uu'nat PURPLE", -- [1]
+			"Shaladiel-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Shaladiel", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			20, -- [11]
-			"Player-75-05EDA3B6", -- [12]
+			4692, -- [11]
+			"Player-3209-0961EC54", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Zyborg|r",
-			[51] = 1557795894,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cff3ec5e9Shaladiel-Azralon|r",
+			[51] = 1558311754,
+			[50] = "CHAT_MSG_RAID_WARNING",
 		}, -- [127]
 	},
 }

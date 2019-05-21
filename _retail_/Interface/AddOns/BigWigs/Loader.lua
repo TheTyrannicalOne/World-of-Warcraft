@@ -21,7 +21,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "79591a9" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "8b115ac" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[===[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -165,6 +165,7 @@ do
 		[1861] = bfa, -- Uldir
 		[2070] = bfa, -- Battle Of Dazar'alor
 		[2096] = bfa, -- Crucible of Storms
+		[2164] = bfa, -- The Eternal Palace
 
 		--[[ LittleWigs: Classic ]]--
 		[33] = lw_c, -- Shadowfang Keep
@@ -259,6 +260,7 @@ do
 		[1771] = lw_bfa, -- Tol Dagor
 		[1841] = lw_bfa, -- Underrot
 		[1862] = lw_bfa, -- Waycrest Manor
+		[2097] = lw_bfa, -- Operation: Mechagon
 	}
 
 	public.zoneTblWorld = {
