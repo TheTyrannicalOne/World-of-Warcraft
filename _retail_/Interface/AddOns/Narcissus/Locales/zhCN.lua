@@ -116,11 +116,12 @@ NARCI_GROUND_SHADOW = "模拟地面阴影";
 NARCI_HIDE_PLAYER = "隐藏玩家自身";
 
 --Splash--
-NARCI_PATCH_NOTES = "v1.0.4 补丁说明";
+NARCI_PATCH_NOTES = "v1.0.4b 补丁说明";
 NARCI_SPLASH_CLOSE_AND_CONTINUE = "关闭此窗口并继续"
 NARCI_SHOW_DETAILS = "+ 显示详细内容..."
 NARCI_SPLASH_HEADER1 = "镜头";
 NARCI_SPLASH_HEADER2 = "装备栏";
+NARCI_SPLASH_MESSAGE0 = "|cff40C7EB本次更新修复了以下两个严重问题:|r\n\n1. 当角色为特定种族时无法打开插件。 |cFF959595(光铸德莱尼, 玛格汉兽人, 黑铁矮人, 狼人, 熊猫人)|r\n\n2. 当装备了某些物品时，进入分享幻化模式会报错。"
 NARCI_SPLASH_MESSAGE1 = "|cff40C7EB1. 一个因使用以往版本 (1.0.0, 1.0.1, 1.0.2, 1.0.3) 而导致的镜头问题已得到解决。|r";
 NARCI_SPLASH_MESSAGE1_CONDITIONAL_LINE = "你已经关闭了镜头跟随功能，因此你将不会感受到任何变化。"
 NARCI_SPLASH_MESSAGE1_EXTRA_LINE = "在早期版本中，Narcissus将 |cffffffffcameraSmoothTimeMin|r 这个CVar的值由默认的0.1修改为0.8，以保证镜头能在退出插件后平稳地切换回原先位置。但是这一改变会导致一个问题——当你的镜头只转动了较小的角度，它将需要花费比原先更长的时间来调整到与你人物朝向一致的方向。在本次更新后，此插件所用到的所有镜头相关的CVar都将属于Actioncam这一类别之下，并且它们可以通过输入|cffffffff/console actioncam off|r来彻底关闭。";

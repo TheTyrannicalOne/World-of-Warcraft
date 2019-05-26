@@ -3,7 +3,7 @@ This work is licensed under the Creative Commons Attribution-NonCommercial-Share
 --]]
 
 --Settings storaged in NarcissusDB
-local Current_Version = 10040;
+local Current_Version = 10041;
 local Irrelevant_Attribute_Alpha = 0.5;
 local slotTable = {};
 local statTable = {};
@@ -262,7 +262,7 @@ local ZoomValuebyRaceID = {
 	--[raceID] = {ZoomValue, factor1, factor2, ZoomValue for XmogMode},
 	[0] = {[2] = {2.1, 0.361, 0.1654, 4},},		--Default Value
 
-	[1] = {[2] = {2.1, 0.3283, -0.0217, 4},		--1 Human √
+	[1] = {[2] = {2.1, 0.3283, 0.02, 4},		--1 Human √
 		   [3] = {2.0, 0.38, -0.0311, 3.6}},
 
 	[2] = {[2] = {2.4, 0.2667, 0.1233, 5.2},	--2 Orc √
@@ -349,25 +349,29 @@ local ZoomInValue = ZoomInValue_Default;
 local Shoulder_Factor1 = Shoulder_Factor1_Defalut;
 local Shoulder_Factor2 = Shoulder_Factor2_Defalut;
 
+local function ReIndexRaceID(raceID)
+	if raceID == 25 or raceID == 26 then	--Pandaren A|H
+		raceID = 24;
+	elseif raceID == 30 then				--Lightforged
+		raceID = 11;
+	elseif raceID == 36 then				--Mag'har Orc
+		raceID = 2;
+	elseif raceID == 34 then				--DarkIron
+		raceID = 3;
+	else
+		raceID = raceID;
+	end
+	return raceID
+end
+
+playerRaceID = ReIndexRaceID(playerRaceID)
+
 local function InitializeShoulderFactors()
 	local _, _, raceID = UnitRace("player");
 	raceID = raceID or 0;
 	local GenderID = UnitSex("player")	
+	raceID = ReIndexRaceID(raceID)
 
-	if raceID == 28 then		--Hightmountain
-		--raceID = 6;
-	elseif raceID == 30 then	--Lightforged
-		raceID = 11;
-	elseif raceID == 36 then	--Mag'har Orc
-		raceID = 2;
-	elseif raceID == 34 then	--DarkIron
-		raceID = 3;
-	elseif raceID == 22 then	--Worgen
-		raceID = 1;
-	elseif raceID == 25 or raceID == 26 then --Pandaren A|H
-		raceID = 24
-	end
-	
 	if not ZoomValuebyRaceID[raceID] then
 		raceID = 0;
 	end
@@ -381,6 +385,8 @@ local function InitializeShoulderFactors()
 	Shoulder_Factor2 = ZoomValuebyRaceID[raceID][GenderID][3];
 	ZoomInValue_XmogMode = ZoomValuebyRaceID[raceID][GenderID][4];
 end
+
+InitializeShoulderFactors();
 
 local function ModifyCameraForMounts()
 	if IsMounted() then
@@ -411,10 +417,13 @@ local function ModifyCameraForShapeshifter()
 	end
 
 	local raceID_shouldUse = 1;
+	
 	if playerClassID ~= 11 then
 		local _, inAlternateForm = HasAlternateForm();
 		if not inAlternateForm then						--Is curren in wolf form
 			raceID_shouldUse = "Wolf";
+		else
+			raceID_shouldUse = 1;
 		end
 		ZoomInValue = ZoomValuebyRaceID[raceID_shouldUse][playerGenderID][1];
 		Shoulder_Factor1 = ZoomValuebyRaceID[raceID_shouldUse][playerGenderID][2];
@@ -445,8 +454,6 @@ local function ModifyCameraForShapeshifter()
 		ZoomInValue_XmogMode = ZoomValuebyRaceID[raceID_shouldUse][formID][4];
 	end
 end
-
-InitializeShoulderFactors();
 
 --SetCVar("test_cameraOverShoulder", 0.60)
 --UnitOnTaxi
@@ -1187,27 +1194,28 @@ function Narci_ItemSlotButton_OnLoad(self)
 			local sourceType = sourceInfo.sourceType
 			if sourceType == TRANSMOG_SOURCE_BOSS_DROP then
 				local drops = C_TransmogCollection.GetAppearanceSourceDrops(sourceID)
-				effectiveLvl = drops[1].encounter.." ".."|cFFFFD100"..drops[1].instance.."|r|CFFf8e694";
-				self.sourcePlainText = drops[1].encounter.." "..drops[1].instance;
-				
-				if sourceInfo.itemModID == 0 then 
-					effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY1;
-					self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY1;
-					self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."1"..":1476:|h|r"
-				elseif sourceInfo.itemModID == 1 then 
-					effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY2;
-					self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY2;
-					self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."2"..":1476:|h|r"
-				elseif sourceInfo.itemModID == 3 then 
-					effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY6;
-					self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY6;
-					self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."3"..":1476:|h|r"
-				elseif sourceInfo.itemModID == 4 then
-					effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY3;
-					self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY3;
-					self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."4"..":1476:|h|r"
+				if drops and drops[1] then
+					effectiveLvl = drops[1].encounter.." ".."|cFFFFD100"..drops[1].instance.."|r|CFFf8e694";
+					self.sourcePlainText = drops[1].encounter.." "..drops[1].instance;
+					
+					if sourceInfo.itemModID == 0 then 
+						effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY1;
+						self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY1;
+						self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."1"..":1476:|h|r"
+					elseif sourceInfo.itemModID == 1 then 
+						effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY2;
+						self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY2;
+						self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."2"..":1476:|h|r"
+					elseif sourceInfo.itemModID == 3 then 
+						effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY6;
+						self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY6;
+						self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."3"..":1476:|h|r"
+					elseif sourceInfo.itemModID == 4 then
+						effectiveLvl = effectiveLvl.." "..PLAYER_DIFFICULTY3;
+						self.sourcePlainText = self.sourcePlainText.." "..PLAYER_DIFFICULTY3;
+						self.hyperlink = "|c"..hex.."|Hitem:"..sourceInfo.itemID.."::::::::120::::2:356".."4"..":1476:|h|r"
+					end
 				end
-
 			else
 				if sourceType == 2 then --quest
 					effectiveLvl = TRANSMOG_SOURCE_2
@@ -3330,6 +3338,8 @@ ACL:SetScript("OnEvent",function(self,event,...)
 		AAACameraZoomIn(ZoomInValue);
 	elseif event == "PLAYER_REGEN_DISABLED" then
 		Narci_Character:Hide();
+	elseif event == "PLAYER_STARTED_MOVING" then
+		MoveViewRightStop();
 	end
 end)
 ACL:SetScript("OnShow",function(self)
@@ -3337,6 +3347,7 @@ ACL:SetScript("OnShow",function(self)
 	self:RegisterEvent("COMBAT_RATING_UPDATE");
 	self:RegisterEvent("UNIT_AURA");
 	self:RegisterEvent("PLAYER_MOUNT_DISPLAY_CHANGED");
+	self:RegisterEvent("PLAYER_STARTED_MOVING");
 end)
 ACL:SetScript("OnHide",function(self)
 	self:UnregisterEvent("COMBAT_RATING_UPDATE");
@@ -3344,6 +3355,7 @@ ACL:SetScript("OnHide",function(self)
 	self:UnregisterEvent("UNIT_AURA");
 	self:UnregisterEvent("UPDATE_SHAPESHIFT_FORM");
 	self:UnregisterEvent("PLAYER_MOUNT_DISPLAY_CHANGED");
+	self:UnregisterEvent("PLAYER_STARTED_MOVING");
 end)
 
 --local defaultVolume

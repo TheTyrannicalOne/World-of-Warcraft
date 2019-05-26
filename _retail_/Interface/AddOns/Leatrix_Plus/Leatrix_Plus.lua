@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.1.04 (24th April 2019, www.leatrix.com)
+-- 	Leatrix Plus 8.1.05 (22nd May 2019, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.1.04"
+	LeaPlusLC["AddonVer"] = "8.1.05"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -453,6 +453,7 @@
 		or	(LeaPlusLC["NoBagAutomation"]		~= LeaPlusDB["NoBagAutomation"])		-- Disable bag automation
 		or	(LeaPlusLC["NoPetAutomation"]		~= LeaPlusDB["NoPetAutomation"])		-- Disable pet automation
 		or	(LeaPlusLC["CharAddonList"]			~= LeaPlusDB["CharAddonList"])			-- Show character addons
+		or	(LeaPlusLC["SaveProfFilters"]		~= LeaPlusDB["SaveProfFilters"])		-- Save profession filters
 		or	(LeaPlusLC["FasterLooting"]			~= LeaPlusDB["FasterLooting"])			-- Faster auto loot
 		or	(LeaPlusLC["FasterMovieSkip"]		~= LeaPlusDB["FasterMovieSkip"])		-- Faster movie skip
 		or	(LeaPlusLC["LockoutSharing"]		~= LeaPlusDB["LockoutSharing"])			-- Lockout sharing
@@ -596,6 +597,154 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Isolated()
+
+		----------------------------------------------------------------------
+		-- Save profession filters
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["SaveProfFilters"] == "On" then
+
+			-- Main function
+			local function SetProfFilterFunc()
+
+				local ts = {}
+
+				local tradeEvent = CreateFrame("FRAME")
+				tradeEvent:RegisterEvent("TRADE_SKILL_DATA_SOURCE_CHANGED")
+				tradeEvent:SetScript("OnEvent", function()
+
+					-- Do nothing if trade skill UI is not open and loaded
+					if not C_TradeSkillUI.IsTradeSkillReady() then return end
+
+					-- Get current trade skill
+					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine()
+					if not tradeSkillID then return end
+
+					-- Set has materials checkbox
+					if ts["TradeSkillShowOnlyHasMaterials" .. tradeSkillID] then
+						C_TradeSkillUI.SetOnlyShowMakeableRecipes(ts["TradeSkillShowOnlyHasMaterials" .. tradeSkillID])
+					else
+						C_TradeSkillUI.SetOnlyShowMakeableRecipes(false)
+					end
+
+					-- Set has skill up checkbox
+					if ts["TradeSkillShowOnlySkillUps" .. tradeSkillID] then
+						C_TradeSkillUI.SetOnlyShowSkillUpRecipes(ts["TradeSkillShowOnlySkillUps" .. tradeSkillID])
+					else
+						C_TradeSkillUI.SetOnlyShowSkillUpRecipes(false)
+					end
+
+					-- Set slots filter
+					if ts["TradeSkillInventorySlot" .. tradeSkillID] then
+						C_TradeSkillUI.SetInventorySlotFilter(ts["TradeSkillInventorySlot" .. tradeSkillID], true, true)
+					end
+
+					-- Set category filter
+					if ts["TradeSkillRecipeCategory" .. tradeSkillID] then
+						C_TradeSkillUI.SetRecipeCategoryFilter(ts["TradeSkillRecipeCategory" .. tradeSkillID], ts["TradeSkillRecipeSubCategory" .. tradeSkillID])
+					end
+
+					-- Set source filter
+					local numSources = C_PetJournal.GetNumPetSources()
+					if numSources then
+						for i = 1, numSources do
+							if ts["TradeSkillSource" .. tradeSkillID .. i] then
+								C_TradeSkillUI.SetRecipeSourceTypeFilter(i, ts["TradeSkillSource" .. tradeSkillID .. i])
+							else
+								C_TradeSkillUI.SetRecipeSourceTypeFilter(i, false)
+							end
+						end
+					end
+
+				end)
+
+				-- Save has materials checkbox
+				hooksecurefunc(C_TradeSkillUI, "SetOnlyShowMakeableRecipes", function(state)
+					if not C_TradeSkillUI.IsTradeSkillReady() then return end
+					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine()
+					if tradeSkillID then
+						ts["TradeSkillShowOnlyHasMaterials" .. tradeSkillID] = state
+					end
+				end)
+
+				-- Save has skill up checkbox
+				hooksecurefunc(C_TradeSkillUI, "SetOnlyShowSkillUpRecipes", function(state)
+					if not C_TradeSkillUI.IsTradeSkillReady() then return end
+					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine()
+					if tradeSkillID then
+						ts["TradeSkillShowOnlySkillUps" .. tradeSkillID] = state
+					end
+				end)
+
+				-- Save slots filter
+				hooksecurefunc(C_TradeSkillUI, "SetInventorySlotFilter", function(state)
+					if not C_TradeSkillUI.IsTradeSkillReady() then return end
+					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine()
+					if tradeSkillID then
+						ts["TradeSkillInventorySlot" .. tradeSkillID] = state
+					end
+				end)
+
+				-- Save category filter
+				hooksecurefunc(C_TradeSkillUI, "SetRecipeCategoryFilter", function(categoryID, subCategoryID)
+					if not C_TradeSkillUI.IsTradeSkillReady() then return end
+					if categoryID then
+						local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine()
+						if tradeSkillID then
+							ts["TradeSkillRecipeCategory" .. tradeSkillID] = categoryID
+							ts["TradeSkillRecipeSubCategory" .. tradeSkillID] = subCategoryID
+						end
+					end
+				end)
+
+				-- Save source filter
+				hooksecurefunc(C_TradeSkillUI, "SetRecipeSourceTypeFilter", function(sourceType, filtered)
+					if not C_TradeSkillUI.IsTradeSkillReady() then return end
+					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine()
+					if tradeSkillID then
+						ts["TradeSkillSource" .. tradeSkillID .. sourceType] = filtered
+					end
+				end)
+
+				-- Clear some settings when filter bar is closed
+				TradeSkillFrame.RecipeList.FilterBar.ExitButton:HookScript("OnClick", function()
+					local tradeSkillID = C_TradeSkillUI.GetTradeSkillLine()
+					if tradeSkillID then
+						ts["TradeSkillRecipeCategory" .. tradeSkillID] = nil -- Category
+						ts["TradeSkillRecipeSubCategory" .. tradeSkillID] = nil -- Subcategory
+						ts["TradeSkillInventorySlot" .. tradeSkillID] = nil -- Slots
+						-- Clear sources
+						local numSources = C_PetJournal.GetNumPetSources()
+						if numSources then
+							for i = 1, numSources do
+								ts["TradeSkillSource" .. tradeSkillID .. i] = nil
+							end
+						end
+					end
+				end)
+
+				-- Clear some settings on startup
+				C_TradeSkillUI.SetOnlyShowMakeableRecipes(false) -- Has materials
+				C_TradeSkillUI.SetOnlyShowSkillUpRecipes(false) -- Has skill up
+				C_TradeSkillUI.ClearRecipeSourceTypeFilter() -- Sources
+
+			end
+
+			-- Run function when Blizzard addon has loaded
+			if IsAddOnLoaded("Blizzard_TradeSkillUI") then
+				SetProfFilterFunc()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "Blizzard_TradeSkillUI" then
+						SetProfFilterFunc()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
+
+		end
 
 		----------------------------------------------------------------------
 		-- Faster movie skip
@@ -2999,39 +3148,34 @@
 
 			end
 
-			-- Create minimap button
-			if LibStub and LibStub("LibDBIcon-1.0", true) and LibStub("CallbackHandler-1.0", true) and LibStub("LibDataBroker-1.1", true) then
+			-- Create minimap button using LibDBIcon
+			local ldb = LibStub("LibDataBroker-1.1", true)
+			local miniButton = ldb:NewDataObject("Leatrix_Plus", {
+				type = "launcher",
+				icon = "Interface\\HELPFRAME\\ReportLagIcon-Movement",
+				OnClick = function(self, btn)
+					MiniBtnClickFunc(btn)
+				end,
+				OnTooltipShow = function(tooltip)
+					if not tooltip or not tooltip.AddLine then return end
+					tooltip:AddLine("Leatrix Plus")
+				end,
+			})
+			local icon = LibStub("LibDBIcon-1.0", true)
+			icon:Register("Leatrix_Plus", miniButton, LeaPlusDB)
 
-				-- LibDBIcon is being used so create LibDBIcon button
-				local ldb = LibStub("LibDataBroker-1.1", true)
-				local miniButton = ldb:NewDataObject("Leatrix_Plus", {
-					type = "launcher",
-					icon = "Interface\\HELPFRAME\\ReportLagIcon-Movement",
-					OnClick = function(self, btn)
-						MiniBtnClickFunc(btn)
-					end,
-					OnTooltipShow = function(tooltip)
-						if not tooltip or not tooltip.AddLine then return end
-						tooltip:AddLine("Leatrix Plus")
-					end,
-				})
-				local icon = LibStub("LibDBIcon-1.0", true)
-				icon:Register("Leatrix_Plus", miniButton, LeaPlusDB)
-
-				-- Function to toggle LibDBIcon
-				local function SetLibDBIconFunc()
-					if LeaPlusLC["ShowMinimapIcon"] == "On" then
-						icon:Show("Leatrix_Plus")
-					else
-						icon:Hide("Leatrix_Plus")
-					end
+			-- Function to toggle LibDBIcon
+			local function SetLibDBIconFunc()
+				if LeaPlusLC["ShowMinimapIcon"] == "On" then
+					icon:Show("Leatrix_Plus")
+				else
+					icon:Hide("Leatrix_Plus")
 				end
-
-				-- Set LibDBIcon when option is clicked and on startup
-				LeaPlusCB["ShowMinimapIcon"]:HookScript("OnClick", SetLibDBIconFunc)
-				SetLibDBIconFunc()
-
 			end
+
+			-- Set LibDBIcon when option is clicked and on startup
+			LeaPlusCB["ShowMinimapIcon"]:HookScript("OnClick", SetLibDBIconFunc)
+			SetLibDBIconFunc()
 
 		end
 
@@ -3127,9 +3271,12 @@
 	
 				-- Lock the create auction button if buyout gold box is empty (when using buyout only and gold only)
 				AuctionsCreateAuctionButton:HookScript("OnEnable", function()
+					-- Do nothing if wow token frame is showing
+					if AuctionsWowTokenAuctionFrame:IsShown() then return end
+					-- Lock the create auction button if both checkboxes are enabled and buyout gold price is empty
 					if LeaPlusLC["AhGoldOnly"] == "On" and LeaPlusLC["AhBuyoutOnly"] == "On" then
 						if BuyoutPriceGold:GetText() == "" then
-							AuctionsCreateAuctionButton:Disable();
+							AuctionsCreateAuctionButton:Disable()
 						end
 					end
 				end)
@@ -5763,6 +5910,7 @@
 			Zn(L["Various"], L["Various"], L["Events"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Events"], prefol, 
 				"|cffffd800", "|cffffd800" .. L["Darkmoon Faire"], "MUS_43_DarkmoonFaire_IslandWalk#26536", "MUS_43_DarkmoonFaire_PavillionWalk#26539", "MUS_51_DarkmoonFaire_MerryGoRound_01#34440",
 				"|cffffd800", "|cffffd800" .. L["Plants vs Zombies"], "EVENT_PvZ_Babbling#23487", "EVENT_PvZ_Dadadoo#23488", "EVENT_PvZ_Doobeedoo#23489", "EVENT_PvZ_Lalala#23490", "EVENT_PvZ_Sunflower#23491", "EVENT_PvZ_Zombieonyourlawn#23492",
+				"|cffffd800", "|cffffd800" .. L["Trial of Style"], "MUS_725_Event_Transmog_TrialOfStyle_1_Preparation#85957", "MUS_725_Event_Transmog_TrialOfStyle_2_Competition#85958", "MUS_725_Event_Transmog_TrialOfStyle_4_EndOfCompetition#85960",
 			})
 			Zn(L["Various"], L["Various"], L["Island Expeditions"]						, {	"|cffffd800" .. L["Various"] .. ": " .. L["Island Expeditions"], prefol,
 				"|cffffd800", "|cffffd800" .. L["Adventure"], "MUS_80_Islands_Adventure_Walk#115050", "MUS_80_Islands_Adventure_Invasion_Walk#115414", "MUS_80_Islands_Adventure_Victory#115053",
@@ -6864,6 +7012,7 @@
 				LeaPlusLC:LoadVarChk("CharAddonList", "Off")				-- Show character addons
 				LeaPlusLC:LoadVarChk("NoRaidRestrictions", "Off")			-- Remove raid restrictions
 				LeaPlusLC:LoadVarChk("NoConfirmLoot", "Off")				-- Disable loot warnings
+				LeaPlusLC:LoadVarChk("SaveProfFilters", "Off")				-- Save profession filters
 				LeaPlusLC:LoadVarChk("FasterLooting", "Off")				-- Faster auto loot
 				LeaPlusLC:LoadVarChk("FasterMovieSkip", "Off")				-- Faster movie skip
 				LeaPlusLC:LoadVarChk("LockoutSharing", "Off")				-- Lockout sharing
@@ -7024,6 +7173,7 @@
 			LeaPlusDB["CharAddonList"]			= LeaPlusLC["CharAddonList"]
 			LeaPlusDB["NoRaidRestrictions"]		= LeaPlusLC["NoRaidRestrictions"]
 			LeaPlusDB["NoConfirmLoot"] 			= LeaPlusLC["NoConfirmLoot"]
+			LeaPlusDB["SaveProfFilters"] 		= LeaPlusLC["SaveProfFilters"]
 			LeaPlusDB["FasterLooting"] 			= LeaPlusLC["FasterLooting"]
 			LeaPlusDB["FasterMovieSkip"] 		= LeaPlusLC["FasterMovieSkip"]
 			LeaPlusDB["LockoutSharing"] 		= LeaPlusLC["LockoutSharing"]
@@ -7861,7 +8011,7 @@
 					GameTooltip:HookScript("OnUpdate", function() 
 						local a = _G["GameTooltipTextLeft1"]:GetText() or "" 
 						if a == "Dark Soil" then
-							PlaySound(8959)
+							PlaySound(8959, "Master")
 						end
 					end)
 					LeaPlusLC["DarkScriptlEnabled"] = true
@@ -8693,6 +8843,7 @@
 				LeaPlusDB["CharAddonList"] = "On"				-- Show character addons
 				LeaPlusDB["NoRaidRestrictions"] = "On"			-- Remove raid restrictions
 				LeaPlusDB["NoConfirmLoot"] = "On"				-- Disable loot warnings
+				LeaPlusDB["SaveProfFilters"] = "On"				-- Save profession filters
 				LeaPlusDB["FasterLooting"] = "On"				-- Faster auto loot
 				LeaPlusDB["FasterMovieSkip"] = "On"				-- Faster movie skip
 				LeaPlusDB["LockoutSharing"] = "On"				-- Lockout sharing
@@ -9063,9 +9214,10 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CharAddonList"				, 	"Show character addons"			, 	340, -132, 	true,	"If checked, the addon list (accessible from the game menu) will show character based addons by default.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRaidRestrictions"		, 	"Remove raid restrictions"		,	340, -152, 	false,	"If checked, converting a party group to a raid group will succeed even if there are low level characters in the group.|n|nEveryone in the group needs to have Leatrix Plus installed with this option enabled.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoConfirmLoot"				, 	"Disable loot warnings"			,	340, -172, 	false,	"If checked, confirmations will no longer appear when you choose a loot roll option or attempt to sell or mail a tradable item.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterLooting"				, 	"Faster auto loot"				,	340, -192, 	true,	"If checked, the amount of time it takes to auto loot creatures will be significantly reduced.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterMovieSkip"			, 	"Faster movie skip"				,	340, -212, 	true,	"If checked, you will be able to cancel cinematics without being prompted for confirmation.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "LockoutSharing"			, 	"Lockout sharing"				, 	340, -232, 	true, 	"If checked, the 'Display only character achievements to others' setting in the game options panel ('Social' menu) will be permanently checked and locked.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "SaveProfFilters"			, 	"Save profession filters"		, 	340, -192, 	true, 	"If checked, profession filter settings will be saved for the remainder of your login session.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterLooting"				, 	"Faster auto loot"				,	340, -212, 	true,	"If checked, the amount of time it takes to auto loot creatures will be significantly reduced.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterMovieSkip"			, 	"Faster movie skip"				,	340, -232, 	true,	"If checked, you will be able to cancel cinematics without being prompted for confirmation.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "LockoutSharing"			, 	"Lockout sharing"				, 	340, -252, 	true, 	"If checked, the 'Display only character achievements to others' setting in the game options panel ('Social' menu) will be permanently checked and locked.")
 
 	LeaPlusLC:CfgBtn("ModViewportBtn", LeaPlusCB["ViewPortEnable"])
 

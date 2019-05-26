@@ -1,1088 +1,1704 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/cw Corgex-Illidan wants some gold for the trouble?", -- [1]
-		"/cw Corgex-Illidan thanks!", -- [2]
-		"/dance", -- [3]
-		"/rasp", -- [4]
-		"/roll", -- [5]
-		"/cw Scyllua-Goldrinn ty", -- [6]
-		"/clique", -- [7]
-		"/cw Drybonezz-Onyxia yup sorry", -- [8]
-		"/cw Shlonglord-Muradin yup sorry", -- [9]
-		"/cw Buyavowel-Dalaran ty", -- [10]
-		"/cw Løked-Bloodscalp ty", -- [11]
-		"/cw Flashatron-Area52 ty", -- [12]
-		"/cw Nêlda-Spirestone ty", -- [13]
-		"/cw Aedrius-Scilla np thanks", -- [14]
-		"/cw Hybrïd-Jubei'Thos np thanks", -- [15]
-		"/cw Pockëts-Durotan all good thanks", -- [16]
-		"/i roll", -- [17]
-		"/cw Warbaka-Illidan need them sorry", -- [18]
-		"/cw Sabú-Area52 TY", -- [19]
-		"/cw Meatsandwich-Area52 ok ty", -- [20]
+		"/cw Aedrius-Scilla np thanks", -- [1]
+		"/cw Hybrïd-Jubei'Thos np thanks", -- [2]
+		"/cw Pockëts-Durotan all good thanks", -- [3]
+		"/i roll", -- [4]
+		"/cw Warbaka-Illidan need them sorry", -- [5]
+		"/cw Sabú-Area52 TY", -- [6]
+		"/cw Meatsandwich-Area52 ok ty", -- [7]
+		"/salute", -- [8]
+		"/raid whats up", -- [9]
+		"/cw Flopples-BleedingHollow alrighty", -- [10]
+		"/raid sure", -- [11]
+		"/raid mythic?", -- [12]
+		"/raid says were in heroic", -- [13]
+		"/raid weird on me then", -- [14]
+		"/cw Flopples-BleedingHollow TY", -- [15]
+		"/p hey i tried this earlier with someone and i think i got locked out of mythic it counted everything he did boss wise but wouldnt let me stay in the raid", -- [16]
+		"/p so dont know if this would reset by joining yours", -- [17]
+		"/p i tried that", -- [18]
+		"/p it was weird he booted me after we beat the first boss and apparently that screwed me somehow", -- [19]
+		"/p yeah sorry says mythic is locked for me now", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"Crawling Hex on Ashîle", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"they will come to the shore", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1167, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			5106, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301769,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756063,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [1]
 		{
-			"Crawling Hex on Hukan", -- [1]
-			"Hukan-Chromaggus", -- [2]
-			"Common", -- [3]
+			"let it get to the shore so we dont have to move that much", -- [1]
+			"Totesmcgotes-BleedingHollow", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Hukan-Chromaggus", -- [5]
+			"Totesmcgotes-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1168, -- [11]
-			"Player-1138-0813B69B", -- [12]
+			5108, -- [11]
+			"Player-73-0AA39826", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Hukan-Chromaggus|r",
-			[51] = 1558301769,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcTotesmcgotes-BleedingHollow|r",
+			[51] = 1558756066,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [2]
 		{
-			"Crawling Hex", -- [1]
-			"Vandarkholme-SilverHand", -- [2]
-			"Common", -- [3]
+			"brb gotta mail some stuff", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Vandarkholme-SilverHand", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1169, -- [11]
-			"Player-12-0AA4BD0C", -- [12]
+			5120, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Vandarkholme-SilverHand|r",
-			[51] = 1558301771,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756093,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [3]
 		{
-			"Crawling Hex", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"pleeeease stop mounting on the waterline - you are getting in the way", -- [1]
+			"Noonoo-Caelestrasz", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Noonoo-Caelestrasz", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1170, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			5130, -- [11]
+			"Player-3721-029C994B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301771,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Noonoo-Caelestrasz|r",
+			[51] = 1558756105,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [4]
 		{
-			"Crawling Hex", -- [1]
-			"Vandarkholme-SilverHand", -- [2]
-			"Common", -- [3]
+			"so what does this do for our chances?", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Vandarkholme-SilverHand", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1171, -- [11]
-			"Player-12-0AA4BD0C", -- [12]
+			5194, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Vandarkholme-SilverHand|r",
-			[51] = 1558301772,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558756182,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [5]
 		{
-			"Crawling Hex", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"more people=more minnows=more chances", -- [1]
+			"Totesmcgotes-BleedingHollow", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Totesmcgotes-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1172, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			5226, -- [11]
+			"Player-73-0AA39826", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301772,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcTotesmcgotes-BleedingHollow|r",
+			[51] = 1558756218,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [6]
 		{
-			"Crawling Hex", -- [1]
-			"Vandarkholme-SilverHand", -- [2]
-			"Common", -- [3]
+			"it will come all they way to shore guys", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Vandarkholme-SilverHand", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1173, -- [11]
-			"Player-12-0AA4BD0C", -- [12]
+			5268, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Vandarkholme-SilverHand|r",
-			[51] = 1558301773,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756232,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [7]
 		{
-			"Crawling Hex", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"dude", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Galhun-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1174, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			5317, -- [11]
+			"Player-3675-07DC6729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301773,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558756276,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [8]
 		{
-			"Crawling Hex (2{rt2}) on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"cmon now", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Galhun-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1177, -- [11]
-			"Player-75-058380E2", -- [12]
+			5326, -- [11]
+			"Player-3675-07DC6729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558301795,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558756279,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [9]
 		{
-			"Crawling Hex on Hukan", -- [1]
-			"Hukan-Chromaggus", -- [2]
-			"Common", -- [3]
+			"lol or not", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Hukan-Chromaggus", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1178, -- [11]
-			"Player-1138-0813B69B", -- [12]
+			5329, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Hukan-Chromaggus|r",
-			[51] = 1558301795,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756282,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [10]
 		{
-			"Crawling Hex on Eizen", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"my bad", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1180, -- [11]
-			"Player-84-061467CD", -- [12]
+			5336, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301795,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558756287,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [11]
 		{
-			"Crawling Hex", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"wont do it again", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1183, -- [11]
-			"Player-84-061467CD", -- [12]
+			5339, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301797,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558756290,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [12]
 		{
-			"{rt2} 3", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"helps to let it get to surface", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1185, -- [11]
-			"Player-75-058380E2", -- [12]
+			5346, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558301797,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756300,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [13]
 		{
-			"{rt2} 2", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"sigh...", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Galhun-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1188, -- [11]
-			"Player-75-058380E2", -- [12]
+			5505, -- [11]
+			"Player-3675-07DC6729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558301798,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558756429,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [14]
 		{
-			"Crawling Hex", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"what part of let it come to the surface dont yall get?", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Galhun-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1189, -- [11]
-			"Player-84-061467CD", -- [12]
+			5551, -- [11]
+			"Player-3675-07DC6729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301798,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558756452,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [15]
 		{
-			"{rt2} 1", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"when it spawns there is a slight delay then he charges shore", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1191, -- [11]
-			"Player-75-058380E2", -- [12]
+			5569, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558301799,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756478,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [16]
 		{
-			"Crawling Hex", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"it slows anyone fishing down..so less chances", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1193, -- [11]
-			"Player-84-061467CD", -- [12]
+			5607, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301799,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756527,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [17]
 		{
-			"Kimbul's Wrath on Aniiyon", -- [1]
-			"Aniiyon-Hyjal", -- [2]
-			"Common", -- [3]
+			"we have any good taunts?", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Aniiyon-Hyjal", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1194, -- [11]
-			"Player-3661-07CFCD51", -- [12]
+			5663, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeAniiyon-Hyjal|r",
-			[51] = 1558301804,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756555,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [18]
 		{
-			"Crawling Hex on Eizen", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"ya me", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Galhun-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1196, -- [11]
-			"Player-84-061467CD", -- [12]
+			5671, -- [11]
+			"Player-3675-07DC6729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301819,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558756563,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [19]
 		{
-			"Crawling Hex on Ashîle", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"maybe try to get close to shore to get him to us faster", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1198, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			5685, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301819,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558756584,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [20]
 		{
-			"Crawling Hex", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"brb smoke break", -- [1]
+			"Arianrhod-AeriePeak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Arianrhod-AeriePeak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1200, -- [11]
-			"Player-84-061467CD", -- [12]
+			5686, -- [11]
+			"Player-1426-09ECC033", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301821,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff00fe95Arianrhod-AeriePeak|r",
+			[51] = 1558756587,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [21]
 		{
-			"Crawling Hex", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"i will go smoke with ari", -- [1]
+			"Haromuk-AeriePeak", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Haromuk-AeriePeak", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1202, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			5698, -- [11]
+			"Player-1426-09C4EAB2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301821,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffe7b09Haromuk-AeriePeak|r",
+			[51] = 1558756604,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [22]
 		{
-			"Crawling Hex", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"they need some music in here ", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1203, -- [11]
-			"Player-84-061467CD", -- [12]
+			6046, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301822,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558757002,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [23]
 		{
-			"Crawling Hex", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"thats what spotify is for, lol", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Galhun-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1204, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			6066, -- [11]
+			"Player-3675-07DC6729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301822,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558757026,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [24]
 		{
-			"Crawling Hex", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
+			"brb", -- [1]
+			"Noonoo-Caelestrasz", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
+			"Noonoo-Caelestrasz", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1205, -- [11]
-			"Player-84-061467CD", -- [12]
+			6302, -- [11]
+			"Player-3721-029C994B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558301823,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Noonoo-Caelestrasz|r",
+			[51] = 1558757195,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [25]
 		{
-			"Crawling Hex", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"kk", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1206, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			6304, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301823,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558757200,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [26]
 		{
-			"Mark of Prey on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"WHOA", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1212, -- [11]
-			"Player-75-058380E2", -- [12]
+			6481, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558301835,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558757320,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [27]
 		{
-			"Mark of Prey on Shadeofwar", -- [1]
-			"Shadeofwar-Thrall", -- [2]
-			"Common", -- [3]
+			"grats", -- [1]
+			"Totesmcgotes-BleedingHollow", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shadeofwar-Thrall", -- [5]
+			"Totesmcgotes-BleedingHollow", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1213, -- [11]
-			"Player-3678-0B5E77D4", -- [12]
+			6485, -- [11]
+			"Player-73-0AA39826", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Shadeofwar-Thrall|r",
-			[51] = 1558301835,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cff006fdcTotesmcgotes-BleedingHollow|r",
+			[51] = 1558757324,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [28]
 		{
-			"missing a tank", -- [1]
-			"Normalcollar-Area52", -- [2]
+			"\\", -- [1]
+			"Mostaffa-Galakrond", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Normalcollar-Area52", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1219, -- [11]
-			"Player-3676-09AE3CE0", -- [12]
+			6488, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Normalcollar-Area52|r",
-			[51] = 1558301856,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558757327,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [29]
 		{
-			"Mark of Prey on Ashîle", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"grats", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1220, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			6490, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301857,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558757330,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [30]
 		{
-			"br a healer", -- [1]
-			"Fórsákéñ-BlackwaterRaiders", -- [2]
+			"snap", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Fórsákéñ-BlackwaterRaiders", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1225, -- [11]
-			"Player-125-06B2F9BE", -- [12]
+			6494, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Fórsákéñ-BlackwaterRaiders|r",
-			[51] = 1558301863,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558757336,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [31]
 		{
-			"silenced", -- [1]
-			"Kaboum-Whisperwind", -- [2]
+			"ty", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kaboum-Whisperwind", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1235, -- [11]
-			"Player-55-01B5B3D0", -- [12]
+			6495, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Kaboum-Whisperwind|r",
-			[51] = 1558301893,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558757338,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [32]
 		{
-			"Kimbul's Wrath on Vandarkholme", -- [1]
-			"Vandarkholme-SilverHand", -- [2]
-			"Common", -- [3]
+			"412th mount", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Vandarkholme-SilverHand", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1236, -- [11]
-			"Player-12-0AA4BD0C", -- [12]
+			6498, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Vandarkholme-SilverHand|r",
-			[51] = 1558301894,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558757341,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [33]
 		{
-			"Mark of Prey on Ashîle", -- [1]
-			"Ashîle-Zul'jin", -- [2]
-			"Common", -- [3]
+			"try and let them get closer to the shore please", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1241, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			6912, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558301915,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558757630,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [34]
 		{
-			"silenced", -- [1]
-			"Kaboum-Whisperwind", -- [2]
+			"im taunting but they keep killen em before they get to shore", -- [1]
+			"Galhun-MoonGuard", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Kaboum-Whisperwind", -- [5]
+			"Galhun-MoonGuard", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1242, -- [11]
-			"Player-55-01B5B3D0", -- [12]
+			6944, -- [11]
+			"Player-3675-07DC6729", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Kaboum-Whisperwind|r",
-			[51] = 1558301920,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558757670,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [35]
 		{
-			"dispel me", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
+			"lol where did the raptor come from", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Scythe-Rivendare", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1244, -- [11]
-			"Player-127-054CB919", -- [12]
+			7251, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558301921,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558757928,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [36]
 		{
-			"Mark of Prey on Sultry", -- [1]
-			"Sultry-Turalyon", -- [2]
-			"Common", -- [3]
+			"brb unloading my bags", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Sultry-Turalyon", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1249, -- [11]
-			"Player-3685-0950CDC0", -- [12]
+			7655, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeSultry-Turalyon|r",
-			[51] = 1558301938,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558758204,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [37]
 		{
-			"Akunda's Wrath on Shadeofwar", -- [1]
-			"Shadeofwar-Thrall", -- [2]
-			"Common", -- [3]
+			"np", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shadeofwar-Thrall", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1250, -- [11]
-			"Player-3678-0B5E77D4", -- [12]
+			7662, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Shadeofwar-Thrall|r",
-			[51] = 1558301938,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558758215,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [38]
 		{
-			"damn this boss is hard", -- [1]
-			"Gangties-Dragonmaw", -- [2]
+			"waht is the drop rate for the sea turtle?", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1267, -- [11]
-			"Player-84-0862D39B", -- [12]
+			7806, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558301994,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558758376,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [39]
 		{
-			"ez", -- [1]
-			"Twonio-Zul'jin", -- [2]
+			"|cff71d5ff|Hspell:64731:0|h[Sea Turtle]|h|r?", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Twonio-Zul'jin", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1268, -- [11]
-			"Player-61-0B13964C", -- [12]
+			7813, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Twonio-Zul'jin|r",
-			[51] = 1558301999,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558758384,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [40]
 		{
-			"kill the raptors", -- [1]
-			"Beastowar-Anvilmar", -- [2]
+			"have seen 3 get it so far", -- [1]
+			"Mostaffa-Galakrond", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Beastowar-Anvilmar", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1269, -- [11]
-			"Player-1174-0AD5AE3E", -- [12]
+			7825, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cBeastowar-Anvilmar|r",
-			[51] = 1558302016,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558758403,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [41]
 		{
-			"would be helpful", -- [1]
-			"Sultry-Turalyon", -- [2]
+			"cause apparently that was 2 attempts", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sultry-Turalyon", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1274, -- [11]
-			"Player-3685-0950CDC0", -- [12]
+			7838, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeSultry-Turalyon|r",
-			[51] = 1558302031,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558758424,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [42]
 		{
-			"Crawling Hex on Overdose", -- [1]
-			"Overdose-Firetree", -- [2]
-			"Common", -- [3]
+			"according to rarity", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Overdose-Firetree", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1299, -- [11]
-			"Player-127-04870B81", -- [12]
+			7843, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Overdose-Firetree|r",
-			[51] = 1558302142,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558758431,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [43]
 		{
-			"Crawling Hex (1{rt1}) on Shanyt", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"Ahh, item level 378. I feel less squishy now =o", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1300, -- [11]
-			"Player-75-058380E2", -- [12]
+			8281, -- [11]
+			"Player-75-009A7F30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558302142,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffe7b09Jharl|r",
+			[51] = 1558758826,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [44]
 		{
-			"Crawling Hex", -- [1]
-			"Overdose-Firetree", -- [2]
-			"Common", -- [3]
+			"Later all. Swapping to alt =)", -- [1]
+			"Jharl-ArgentDawn", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Overdose-Firetree", -- [5]
+			"", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1302, -- [11]
-			"Player-127-04870B81", -- [12]
+			8401, -- [11]
+			"Player-75-009A7F30", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Overdose-Firetree|r",
-			[51] = 1558302144,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffe7b09Jharl|r",
+			[51] = 1558758933,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [45]
 		{
-			"{rt1} 3", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"we are no long que'd", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1303, -- [11]
-			"Player-75-058380E2", -- [12]
+			8467, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558302144,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558758981,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [46]
 		{
-			"Crawling Hex", -- [1]
-			"Overdose-Firetree", -- [2]
-			"Common", -- [3]
+			"too bad not on a real boat fishing ", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Overdose-Firetree", -- [5]
+			"Mostaffa-Galakrond", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1304, -- [11]
-			"Player-127-04870B81", -- [12]
+			8469, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Overdose-Firetree|r",
-			[51] = 1558302145,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558758984,
+			[50] = "CHAT_MSG_RAID_LEADER",
 		}, -- [47]
 		{
-			"{rt1} 2", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"*longer", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
+			"Hellspontiff-Sargeras", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1305, -- [11]
-			"Player-75-058380E2", -- [12]
+			8471, -- [11]
+			"Player-76-09412D8B", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558302145,
-			[50] = "CHAT_MSG_SAY",
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558758990,
+			[50] = "CHAT_MSG_RAID",
 		}, -- [48]
 		{
-			"{rt1} 1", -- [1]
+			"oh..how do i requie", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8477, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558758997,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [49]
+		{
+			"click green eye, custom group, create new, type TURTLE MOUNTS FOR ALL and thats it", -- [1]
+			"Arianrhod-AeriePeak", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Arianrhod-AeriePeak", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8498, -- [11]
+			"Player-1426-09ECC033", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Arianrhod-AeriePeak|r",
+			[51] = 1558759057,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [50]
+		{
+			"just port out and join my garrison", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8600, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558759128,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [51]
+		{
+			"join my garrison fellas", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8619, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558759229,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [52]
+		{
+			"brb", -- [1]
+			"Noonoo-Caelestrasz", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Noonoo-Caelestrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			8937, -- [11]
+			"Player-3721-029C994B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Noonoo-Caelestrasz|r",
+			[51] = 1558759358,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [53]
+		{
+			"brb quick bio", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9325, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558759656,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [54]
+		{
+			"alrighty. all filled with disappointment for the night. good luck everyone", -- [1]
+			"Totesmcgotes-BleedingHollow", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Totesmcgotes-BleedingHollow", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9419, -- [11]
+			"Player-73-0AA39826", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff006fdcTotesmcgotes-BleedingHollow|r",
+			[51] = 1558759757,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [55]
+		{
+			"nite", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Hellspontiff-Sargeras", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9421, -- [11]
+			"Player-76-09412D8B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558759767,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [56]
+		{
+			"wm off, forgot to mention in post", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9605, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760172,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [57]
+		{
+			"shit..", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9606, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760178,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [58]
+		{
+			"brb", -- [1]
+			"Noonoo-Caelestrasz", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Noonoo-Caelestrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9707, -- [11]
+			"Player-3721-029C994B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Noonoo-Caelestrasz|r",
+			[51] = 1558760372,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [59]
+		{
+			"kk", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9709, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760376,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [60]
+		{
+			"stupid minnowsss...wher eu at", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9789, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760554,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [61]
+		{
+			"dont forget to use the worms", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9812, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760590,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [62]
+		{
+			"i do thanks though for reminding me", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9820, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760611,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [63]
+		{
+			"FINALLY!", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9847, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760639,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [64]
+		{
+			"Grats", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9856, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760645,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [65]
+		{
+			"thank you!", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9858, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760651,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [66]
+		{
+			"niiiiiiiiiiiiice", -- [1]
+			"Hellspontiff-Sargeras", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Hellspontiff-Sargeras", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9859, -- [11]
+			"Player-76-09412D8B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeHellspontiff-Sargeras|r",
+			[51] = 1558760653,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [67]
+		{
+			"i need the other one lol", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9860, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760657,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [68]
+		{
+			"i got both now! :D", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9865, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760662,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [69]
+		{
+			"Super Grats", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9866, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760668,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [70]
+		{
+			"who has nat pagle unlocked for garrison?", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9869, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760678,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [71]
+		{
+			"I do", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9875, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760684,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [72]
+		{
+			"take care fellas and good luck", -- [1]
+			"Galhun-MoonGuard", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Galhun-MoonGuard", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9892, -- [11]
+			"Player-3675-07DC6729", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cGalhun-MoonGuard|r",
+			[51] = 1558760700,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [73]
+		{
+			"gah", -- [1]
+			"Noonoo-Caelestrasz", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Noonoo-Caelestrasz", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9903, -- [11]
+			"Player-3721-029C994B", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Noonoo-Caelestrasz|r",
+			[51] = 1558760710,
+			[50] = "CHAT_MSG_RAID",
+		}, -- [74]
+		{
+			"need some new beer music", -- [1]
+			"Mostaffa-Galakrond", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mostaffa-Galakrond", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			9933, -- [11]
+			"Player-54-0B2F3FC8", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Mostaffa-Galakrond|r",
+			[51] = 1558760809,
+			[50] = "CHAT_MSG_RAID_LEADER",
+		}, -- [75]
+		{
+			"Hey", -- [1]
+			"Cauroth-Azralon", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Cauroth-Azralon", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10119, -- [11]
+			"Player-3209-0A12936F", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Cauroth-Azralon|r",
+			[51] = 1558763066,
+			[50] = "CHAT_MSG_PARTY_LEADER",
+		}, -- [76]
+		{
+			"hey i tried this earlier with someone and i think i got locked out of mythic it counted everything he did boss wise but wouldnt let me stay in the raid", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
-			"Common", -- [3]
+			"", -- [3]
 			"", -- [4]
 			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
@@ -1090,7 +1706,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1306, -- [11]
+			10123, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -1098,1331 +1714,671 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558302146,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
-		{
-			"[FIS] Interrupted Pa'ku's Aspect's |cff71d5ff|Hspell:290570:0|h[Gift of Wind]|h|r", -- [1]
-			"Beastowar-Anvilmar", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Beastowar-Anvilmar", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1307, -- [11]
-			"Player-1174-0AD5AE3E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cBeastowar-Anvilmar|r",
-			[51] = 1558302157,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
-		{
-			"Mark of Prey on Eizen", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1308, -- [11]
-			"Player-84-061467CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558302164,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [51]
-		{
-			"Mark of Prey on Sultry", -- [1]
-			"Sultry-Turalyon", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Sultry-Turalyon", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1310, -- [11]
-			"Player-3685-0950CDC0", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeSultry-Turalyon|r",
-			[51] = 1558302164,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
-		{
-			"Crawling Hex on Scythe", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Scythe-Rivendare", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1313, -- [11]
-			"Player-127-054CB919", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558302167,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [53]
-		{
-			"Crawling Hex on Gangties", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1314, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302167,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
-		{
-			"Crawling Hex on Eizen", -- [1]
-			"Eizen-Mug'thol", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Eizen-Mug'thol", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1315, -- [11]
-			"Player-84-061467CD", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffef367Eizen-Mug'thol|r",
-			[51] = 1558302167,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
-		{
-			"Crawling Hex", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Scythe-Rivendare", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1317, -- [11]
-			"Player-127-054CB919", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558302169,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
-		{
-			"Crawling Hex", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1318, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302169,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
-		{
-			"Crawling Hex", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Scythe-Rivendare", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1319, -- [11]
-			"Player-127-054CB919", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558302170,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
-		{
-			"Crawling Hex", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1320, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302170,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
-		{
-			"Crawling Hex", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1322, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302171,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
-		{
-			"Crawling Hex on Scythe", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Scythe-Rivendare", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1323, -- [11]
-			"Player-127-054CB919", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558302192,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
-		{
-			"Crawling Hex on Gangties", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1324, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302192,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
-		{
-			"Crawling Hex", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Scythe-Rivendare", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1325, -- [11]
-			"Player-127-054CB919", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558302194,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
-		{
-			"Crawling Hex", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1326, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302194,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
-		{
-			"Crawling Hex", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Scythe-Rivendare", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1327, -- [11]
-			"Player-127-054CB919", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558302195,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
-		{
-			"Crawling Hex", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1328, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302195,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
-		{
-			"Crawling Hex", -- [1]
-			"Scythe-Rivendare", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Scythe-Rivendare", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1329, -- [11]
-			"Player-127-054CB919", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Scythe-Rivendare|r",
-			[51] = 1558302196,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
-		{
-			"Crawling Hex", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1330, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302196,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
-		{
-			"Interrupted Pa'ku's Aspect's |cff71d5ff|Hspell:290570:0|h[Gift of Wind]|h|r!", -- [1]
-			"Warbaka-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Warbaka-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1332, -- [11]
-			"Player-57-0691E237", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cWarbaka-Illidan|r",
-			[51] = 1558302205,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [69]
-		{
-			"Kimbul's Wrath on Aniiyon", -- [1]
-			"Aniiyon-Hyjal", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Aniiyon-Hyjal", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1338, -- [11]
-			"Player-3661-07CFCD51", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeAniiyon-Hyjal|r",
-			[51] = 1558302253,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [70]
-		{
-			"Interrupted Pa'ku's Aspect's |cff71d5ff|Hspell:290570:0|h[Gift of Wind]|h|r!", -- [1]
-			"Warbaka-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Warbaka-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1340, -- [11]
-			"Player-57-0691E237", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cWarbaka-Illidan|r",
-			[51] = 1558302253,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [71]
-		{
-			"Mark of Prey on Gangties", -- [1]
-			"Gangties-Dragonmaw", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1344, -- [11]
-			"Player-84-0862D39B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302284,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [72]
-		{
-			"Mark of Prey on Elivyian", -- [1]
-			"Elivyian-Firetree", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Elivyian-Firetree", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1346, -- [11]
-			"Player-127-083C53AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcElivyian-Firetree|r",
-			[51] = 1558302284,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [73]
-		{
-			"Mark of Prey on Sabú", -- [1]
-			"Sabú-Area52", -- [2]
-			"Common", -- [3]
-			"", -- [4]
-			"Sabú-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1364, -- [11]
-			"Player-3676-06F240A4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcSabú-Area52|r",
-			[51] = 1558302359,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [74]
-		{
-			"gg", -- [1]
-			"Grayven-Perenolde", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Grayven-Perenolde", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1386, -- [11]
-			"Player-122-004AF43A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefeGrayven-Perenolde|r",
-			[51] = 1558302424,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [75]
-		{
-			"May I please have |cffa335ee|Hitem:165512::::::::120:71::4:3:4801:1492:4786:::|h[Loa Exultant's Shroud]|h|r if you don't need it?", -- [1]
-			"Sabú-Area52", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Sabú-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1387, -- [11]
-			"Player-3676-06F240A4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff006fdcSabú-Area52|r",
-			[51] = 1558302424,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [76]
-		{
-			"if you dont need those can i get them?", -- [1]
-			"Warbaka-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Warbaka-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1391, -- [11]
-			"Player-57-0691E237", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cWarbaka-Illidan|r",
-			[51] = 1558302444,
-			[50] = "CHAT_MSG_WHISPER",
+			[51] = 1558763129,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [77]
 		{
-			"need them sorry", -- [1]
-			"Warbaka-Illidan", -- [2]
-			"Orcish", -- [3]
+			"so dont know if this would reset by joining yours", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Warbaka-Illidan", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1393, -- [11]
-			"Player-57-0691E237", -- [12]
+			10124, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cWarbaka-Illidan|r",
-			[51] = 1558302450,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558763146,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [78]
 		{
-			"TY", -- [1]
-			"Sabú-Area52", -- [2]
-			"Orcish", -- [3]
+			"go try ", -- [1]
+			"Cauroth-Azralon", -- [2]
+			"", -- [3]
 			"", -- [4]
-			"Sabú-Area52", -- [5]
+			"Cauroth-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1395, -- [11]
-			"Player-3676-06F240A4", -- [12]
+			10128, -- [11]
+			"Player-3209-0A12936F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcSabú-Area52|r",
-			[51] = 1558302469,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cfffe7b09Cauroth-Azralon|r",
+			[51] = 1558763163,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [79]
 		{
-			"YW", -- [1]
-			"Sabú-Area52", -- [2]
+			"again", -- [1]
+			"Cauroth-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sabú-Area52", -- [5]
+			"Cauroth-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1397, -- [11]
-			"Player-3676-06F240A4", -- [12]
+			10129, -- [11]
+			"Player-3209-0A12936F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcSabú-Area52|r",
-			[51] = 1558302478,
-			[50] = "CHAT_MSG_WHISPER",
+			[52] = "|cfffe7b09Cauroth-Azralon|r",
+			[51] = 1558763166,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [80]
 		{
-			"reset lust", -- [1]
-			"Sabú-Area52", -- [2]
+			"Reset all instances", -- [1]
+			"Cauroth-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sabú-Area52", -- [5]
+			"Cauroth-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1417, -- [11]
-			"Player-3676-06F240A4", -- [12]
+			10130, -- [11]
+			"Player-3209-0A12936F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcSabú-Area52|r",
-			[51] = 1558302803,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffe7b09Cauroth-Azralon|r",
+			[51] = 1558763179,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [81]
 		{
-			"dummys", -- [1]
-			"Gangties-Dragonmaw", -- [2]
+			"i tried that", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Gangties-Dragonmaw", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1430, -- [11]
-			"Player-84-0862D39B", -- [12]
+			10131, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcGangties-Dragonmaw|r",
-			[51] = 1558302930,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558763188,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [82]
 		{
-			"-.-", -- [1]
-			"Sultry-Turalyon", -- [2]
+			"it was weird he booted me after we beat the first boss and apparently that screwed me somehow", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sultry-Turalyon", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1435, -- [11]
-			"Player-3685-0950CDC0", -- [12]
+			10133, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeSultry-Turalyon|r",
-			[51] = 1558302936,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558763223,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [83]
 		{
-			"weren't we resetting?", -- [1]
-			"Grayven-Perenolde", -- [2]
+			"yeah sorry says mythic is locked for me now", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Grayven-Perenolde", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1438, -- [11]
-			"Player-122-004AF43A", -- [12]
+			10140, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeGrayven-Perenolde|r",
-			[51] = 1558302947,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558763284,
+			[50] = "CHAT_MSG_PARTY",
 		}, -- [84]
 		{
-			"ah tehre it goes", -- [1]
-			"Grayven-Perenolde", -- [2]
+			":3", -- [1]
+			"Cauroth-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Grayven-Perenolde", -- [5]
+			"Cauroth-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1439, -- [11]
-			"Player-122-004AF43A", -- [12]
+			10143, -- [11]
+			"Player-3209-0A12936F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffefefeGrayven-Perenolde|r",
-			[51] = 1558302954,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffe7b09Cauroth-Azralon|r",
+			[51] = 1558763289,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [85]
 		{
-			"We just did", -- [1]
-			"Twonio-Zul'jin", -- [2]
+			"Ok", -- [1]
+			"Cauroth-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Twonio-Zul'jin", -- [5]
+			"Cauroth-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1440, -- [11]
-			"Player-61-0B13964C", -- [12]
+			10144, -- [11]
+			"Player-3209-0A12936F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa22fc8Twonio-Zul'jin|r",
-			[51] = 1558302956,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffe7b09Cauroth-Azralon|r",
+			[51] = 1558763293,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [86]
 		{
-			"yes", -- [1]
-			"Sabú-Area52", -- [2]
+			"Thx anyway", -- [1]
+			"Cauroth-Azralon", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"Sabú-Area52", -- [5]
+			"Cauroth-Azralon", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1441, -- [11]
-			"Player-3676-06F240A4", -- [12]
+			10145, -- [11]
+			"Player-3209-0A12936F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff006fdcSabú-Area52|r",
-			[51] = 1558302956,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
+			[52] = "|cfffe7b09Cauroth-Azralon|r",
+			[51] = 1558763296,
+			[50] = "CHAT_MSG_PARTY_LEADER",
 		}, -- [87]
 		{
-			"Scorching Detonation on Warbaka", -- [1]
-			"Warbaka-Illidan", -- [2]
-			"Common", -- [3]
+			"Retched Blackrock on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Warbaka-Illidan", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1462, -- [11]
-			"Player-57-0691E237", -- [12]
+			10242, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cWarbaka-Illidan|r",
-			[51] = 1558303144,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764477,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [88]
 		{
-			"Fire on Hukan", -- [1]
-			"Hukan-Chromaggus", -- [2]
-			"Common", -- [3]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Hukan-Chromaggus", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1475, -- [11]
-			"Player-1138-0813B69B", -- [12]
+			10259, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Hukan-Chromaggus|r",
-			[51] = 1558303283,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764604,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [89]
 		{
-			"Fire on Hukan", -- [1]
-			"Hukan-Chromaggus", -- [2]
-			"Common", -- [3]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
 			"", -- [4]
-			"Hukan-Chromaggus", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1478, -- [11]
-			"Player-1138-0813B69B", -- [12]
+			10262, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffa9d271Hukan-Chromaggus|r",
-			[51] = 1558303311,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764645,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [90]
 		{
-			"May I please have |cffa335ee|Hitem:165577::::::::120:71::4:3:4801:1492:4786:::|h[Bwonsamdi's Bargain]|h|r if you don't need it?", -- [1]
-			"Calamiti-Akama", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Calamiti-Akama", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1513, -- [11]
-			"Player-84-06FBA3E0", -- [12]
+			10264, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00fe95Calamiti-Akama|r",
-			[51] = 1558303334,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764675,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [91]
 		{
-			"anyone not need the ring", -- [1]
-			"Warbaka-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Warbaka-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1532, -- [11]
-			"Player-57-0691E237", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cWarbaka-Illidan|r",
-			[51] = 1558303355,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [92]
-		{
-			"i do", -- [1]
-			"Overdose-Firetree", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Overdose-Firetree", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1535, -- [11]
-			"Player-127-04870B81", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc31d39Overdose-Firetree|r",
-			[51] = 1558303358,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [93]
-		{
-			"|cffa335ee|Hitem:165567::::::::120:104::4:3:4801:1492:4786:::|h[Seal of the Zandalari Empire]|h|r roll", -- [1]
-			"Warss-Tichondrius", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Warss-Tichondrius", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1548, -- [11]
-			"Player-11-0B41D583", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffe7b09Warss-Tichondrius|r",
-			[51] = 1558303372,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [94]
-		{
-			"|cffa335ee|Hitem:165567::::::::120:577::4:3:4801:1492:4786:::|h[Seal of the Zandalari Empire]|h|r\\", -- [1]
-			"Twonio-Zul'jin", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Twonio-Zul'jin", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			1551, -- [11]
-			"Player-61-0B13964C", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa22fc8Twonio-Zul'jin|r",
-			[51] = 1558303378,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [95]
-		{
-			"mage table is down", -- [1]
-			"Adriara-Runetotem", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Adriara-Runetotem", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2355, -- [11]
-			"Player-151-04F3A2DE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Adriara-Runetotem|r",
-			[51] = 1558304549,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [96]
-		{
-			"Interrupted Gnomish Commando's |cff71d5ff|Hspell:289859:0|h[Locked and Loaded]|h|r!", -- [1]
-			"Kalenova-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kalenova-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2366, -- [11]
-			"Player-57-0B4C43AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Kalenova-Illidan|r",
-			[51] = 1558304600,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [97]
-		{
-			"Shrunk", -- [1]
-			"Ashîle-Zul'jin", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Ashîle-Zul'jin", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2458, -- [11]
-			"Player-61-0BC6643F", -- [12]
+			10266, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Ashîle-Zul'jin|r",
-			[51] = 1558304951,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764678,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [92]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10269, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764685,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [93]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10272, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764688,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [94]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10274, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764711,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [95]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10278, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764719,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [96]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10282, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764747,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [97]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10285, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764751,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [98]
 		{
-			"Shrunk", -- [1]
-			"Plagueprime-Kil'jaeden", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Plagueprime-Kil'jaeden", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2460, -- [11]
-			"Player-9-0B5F2493", -- [12]
+			10287, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Plagueprime-Kil'jaeden|r",
-			[51] = 1558304951,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764754,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [99]
 		{
-			"May I please have |cffa335ee|Hitem:165825::::::::120:71::4:4:4825:1492:4786:5412:::|h[Dyno-Sprocket Spaulders]|h|r if you don't need it?", -- [1]
-			"Shmeferoth-Ysera", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Shmeferoth-Ysera", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2476, -- [11]
-			"Player-63-0BFA3D60", -- [12]
+			10291, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Shmeferoth-Ysera|r",
-			[51] = 1558304993,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764780,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [100]
 		{
-			"May I please have |cffa335ee|Hitem:165602::::::::120:71::4:3:4801:1492:4786:::|h[Crash of Tides]|h|r if you don't need it?", -- [1]
-			"Murkwood-Kel'Thuzad", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Murkwood-Kel'Thuzad", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2619, -- [11]
-			"Player-3693-09904424", -- [12]
+			10294, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cMurkwood-Kel'Thuzad|r",
-			[51] = 1558305594,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764784,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [101]
 		{
-			"May I please have |cffa335ee|Hitem:165556::::::::120:71::4:3:4801:1492:4786:::|h[Stormwrought Gauntlets]|h|r if you don't need it?", -- [1]
-			"Plagueprime-Kil'jaeden", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Plagueprime-Kil'jaeden", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2620, -- [11]
-			"Player-9-0B5F2493", -- [12]
+			10296, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc31d39Plagueprime-Kil'jaeden|r",
-			[51] = 1558305594,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764792,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [102]
 		{
-			"if you guys don't need wand, i could definitely use", -- [1]
-			"Phrozett-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Phrozett-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2629, -- [11]
-			"Player-3676-0A0A88F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefePhrozett-Area52|r",
-			[51] = 1558305613,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [103]
-		{
-			"<3", -- [1]
-			"Phrozett-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Phrozett-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2632, -- [11]
-			"Player-3676-0A0A88F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefePhrozett-Area52|r",
-			[51] = 1558305618,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [104]
-		{
-			"Don't use time warp/blood lust until the second intermission when we gotta destroy the ice wall.", -- [1]
-			"Adriara-Runetotem", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Adriara-Runetotem", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2638, -- [11]
-			"Player-151-04F3A2DE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Adriara-Runetotem|r",
-			[51] = 1558305660,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [105]
-		{
-			"don't use lust", -- [1]
-			"Kalenova-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kalenova", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2641, -- [11]
-			"Player-57-0B4C43AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Kalenova-Illidan|r",
-			[51] = 1558305675,
-			[50] = "CHAT_MSG_RAID_WARNING",
-		}, -- [106]
-		{
-			"Avalanche (1{rt1}) on Kalenova", -- [1]
-			"Kalenova-Illidan", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Kalenova-Illidan", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2658, -- [11]
-			"Player-57-0B4C43AE", -- [12]
+			10299, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Kalenova-Illidan|r",
-			[51] = 1558305782,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764795,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [103]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10301, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764818,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [104]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10305, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764827,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [105]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10308, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764831,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [106]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10312, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764852,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [107]
 		{
-			"dodge white balls", -- [1]
-			"Kalenova-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kalenova", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2678, -- [11]
-			"Player-57-0B4C43AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Kalenova-Illidan|r",
-			[51] = 1558305872,
-			[50] = "CHAT_MSG_RAID_WARNING",
-		}, -- [108]
-		{
-			"Interrupted Lady Jaina Proudmoore's |cff71d5ff|Hspell:288199:0|h[Howling Winds]|h|r!", -- [1]
-			"Kalenova-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kalenova-Illidan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2681, -- [11]
-			"Player-57-0B4C43AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Kalenova-Illidan|r",
-			[51] = 1558305906,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [109]
-		{
-			"Broadside (2{rt2}) on Shanyt", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2432,7 +2388,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2728, -- [11]
+			10316, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2440,11 +2396,55 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306006,
+			[51] = 1558764860,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [108]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10319, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764863,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [109]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10321, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558764888,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [110]
 		{
-			"3", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2454,7 +2454,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2733, -- [11]
+			10324, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2462,11 +2462,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306009,
+			[51] = 1558764892,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [111]
 		{
-			"2", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2476,7 +2476,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2735, -- [11]
+			10332, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2484,11 +2484,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306010,
+			[51] = 1558764924,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [112]
 		{
-			"1", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2498,7 +2498,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2737, -- [11]
+			10545, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2506,11 +2506,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306011,
+			[51] = 1558766921,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [113]
 		{
-			"Broadside (1{rt1}) on Shanyt", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2520,7 +2520,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2747, -- [11]
+			10547, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2528,11 +2528,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306048,
+			[51] = 1558766927,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [114]
 		{
-			"3", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2542,7 +2542,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2751, -- [11]
+			10549, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2550,11 +2550,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306051,
+			[51] = 1558766931,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [115]
 		{
-			"2", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2564,7 +2564,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2753, -- [11]
+			10552, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2572,33 +2572,11 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306052,
+			[51] = 1558766973,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [116]
 		{
-			"get to the wall", -- [1]
-			"Adriara-Runetotem", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Adriara-Runetotem", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2755, -- [11]
-			"Player-151-04F3A2DE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff3ec5e9Adriara-Runetotem|r",
-			[51] = 1558306053,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [117]
-		{
-			"1", -- [1]
+			"Bomb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
@@ -2608,7 +2586,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2756, -- [11]
+			10556, -- [11]
 			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2616,206 +2594,228 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1558306053,
+			[51] = 1558766983,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [117]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10559, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558766988,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [118]
 		{
-			"lust", -- [1]
-			"Kalenova-Illidan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kalenova", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2759, -- [11]
-			"Player-57-0B4C43AE", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff38bb9Kalenova-Illidan|r",
-			[51] = 1558306061,
-			[50] = "CHAT_MSG_RAID_WARNING",
-		}, -- [119]
-		{
-			"Broadside 1 on {rt1}Micardi{rt1}", -- [1]
-			"Micardi-Kil'jaeden", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Micardi-Kil'jaeden", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2780, -- [11]
-			"Player-9-0A189F49", -- [12]
+			10561, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Micardi-Kil'jaeden|r",
-			[51] = 1558306184,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767013,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [119]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10564, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767016,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [120]
 		{
-			"{rt1}3", -- [1]
-			"Micardi-Kil'jaeden", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Micardi-Kil'jaeden", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2785, -- [11]
-			"Player-9-0A189F49", -- [12]
+			10567, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfffef367Micardi-Kil'jaeden|r",
-			[51] = 1558306187,
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767022,
 			[50] = "CHAT_MSG_SAY",
 		}, -- [121]
 		{
-			"May I please have |cffa335ee|Hitem:165570::::::::120:71::4:3:4801:1492:4786:::|h[Everchill Anchor]|h|r if you don't need it?", -- [1]
-			"Meatsandwich-Area52", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Meatsandwich-Area52", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2807, -- [11]
-			"Player-3676-093BEDC3", -- [12]
+			10570, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cMeatsandwich-Area52|r",
-			[51] = 1558306210,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767026,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [122]
 		{
-			"May I please have |cffa335ee|Hitem:165823::::::::120:71::4:4:4825:1492:4786:5411:::|h[Glaciercrest Helm]|h|r if you don't need it?", -- [1]
-			"Asdkjhbncxz-Dalaran", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Asdkjhbncxz-Dalaran", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2812, -- [11]
-			"Player-3683-08C5FF1D", -- [12]
+			10573, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cfff38bb9Asdkjhbncxz-Dalaran|r",
-			[51] = 1558306217,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767046,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [123]
 		{
-			"if someone doesn't need the ring", -- [1]
-			"Phrozett-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Phrozett-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2821, -- [11]
-			"Player-3676-0A0A88F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefePhrozett-Area52|r",
-			[51] = 1558306229,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [124]
-		{
-			"i could use", -- [1]
-			"Phrozett-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Phrozett-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2823, -- [11]
-			"Player-3676-0A0A88F4", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cfffefefePhrozett-Area52|r",
-			[51] = 1558306231,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [125]
-		{
-			"need it", -- [1]
-			"Meatsandwich-Area52", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Meatsandwich-Area52", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2825, -- [11]
-			"Player-3676-093BEDC3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cMeatsandwich-Area52|r",
-			[51] = 1558306234,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [126]
-		{
-			"ok ty", -- [1]
-			"Meatsandwich-Area52", -- [2]
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
 			"", -- [4]
-			"Meatsandwich-Area52", -- [5]
+			"Shanyt-ArgentDawn", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			2830, -- [11]
-			"Player-3676-093BEDC3", -- [12]
+			10575, -- [11]
+			"Player-75-058380E2", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffc59a6cMeatsandwich-Area52|r",
-			[51] = 1558306239,
-			[50] = "CHAT_MSG_WHISPER_INFORM",
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767050,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [124]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10580, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767056,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [125]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10586, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767076,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [126]
+		{
+			"Bomb on Shanyt", -- [1]
+			"Shanyt-ArgentDawn", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Shanyt-ArgentDawn", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			10590, -- [11]
+			"Player-75-058380E2", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffc59a6cShanyt|r",
+			[51] = 1558767079,
+			[50] = "CHAT_MSG_SAY",
 		}, -- [127]
 	},
 }

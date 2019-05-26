@@ -79,8 +79,8 @@ H: 20
 Frame: AllTheThings-Window-AuctionData
 FrameLevel: 2
 Anchor: TOP
-X: -282
-Y: -126
+X: -298
+Y: -114
 W: 300
 H: 427
 Frame: AllTheThings-Window-Tradeskills

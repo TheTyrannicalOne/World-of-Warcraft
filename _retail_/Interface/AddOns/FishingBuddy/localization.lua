@@ -132,6 +132,8 @@ FishingTranslations["enUS"] = {
     CONFIG_FISHWATCHCURRENT_INFO = "Display only the fish caught in the current session.",
     CONFIG_FISHWATCHTRASH_ONOFF   = "Hide Trash",
     CONFIG_FISHWATCHTRASH_INFO    = "Don't display trash items.",
+    CONFIG_FISHWARNFISHING_ONOFF  = "Skill Check",
+    CONFIG_FISHWARNFISHING_INFO   = "Warn if we go to a zone where we haven't learned fishing.",
 
     CONFIG_HANDLEQUESTS_ONOFF    = "Handle quests",
     CONFIG_HANDLEQUESTS_INFO     = "If enabled, handle fishing quests and reputation automatically,",
@@ -276,6 +278,8 @@ FishingTranslations["enUS"] = {
     CONFIG_MINIMAPMOVE_INFO    = "If enabled, the minimap icon can be moved by dragging.",
 
     HIDEINWATCHER = "Display this fish in the watcher",
+    CHECKSKILLWINDOW = "Check the Tradeskill window for Fishing (enable the 'Setup Skills' option).",
+    UNLEARNEDSKILLWINDOW = "You have not learned the fishing skill for this zone.",
 
     -- messages
     COMPATIBLE_SWITCHER = "No compatible outfit switcher found.",

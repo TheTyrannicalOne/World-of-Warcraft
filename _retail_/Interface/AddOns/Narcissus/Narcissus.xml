@@ -2208,7 +2208,7 @@
 							<OnClick function="TopQualityButton_OnClick"/>
 						</Scripts>
 					</Button>
-					<Slider name="TopQualityButton_MSAASlider" inherits="NarciHorizontalSliderWithMarksTemplate" Alpha="0" valueStep="1" obeyStepOnDrag="true" minValue="0" maxValue="3" ignoreParentScale="true" hidden="true" scale="0.711111111">
+					<Slider name="TopQualityButton_MSAASlider" inherits="NarciHorizontalSliderWithMarksTemplate" Alpha="0" valueStep="1" obeyStepOnDrag="true" minValue="0" maxValue="3" ignoreParentScale="true" hidden="true" scale="0.8">
 						<Size x="160" y="6"/>
 						<Scripts>
 							<OnHide>
@@ -2216,6 +2216,7 @@
 								self:SetAlpha(0);
 							</OnHide>
 							<OnShow>
+								self.VirtualThumb:SetSize(8, 8)
 								self.Label:SetText(MULTISAMPLE_ANTI_ALIASING);
 								local level = GetCVar("MSAAQuality")
 								local value0 = tonumber(string.sub(level, 1,1))

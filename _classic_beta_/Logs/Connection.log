@@ -1,0 +1,19 @@
+5/23 23:08:00.287  Connection Initialize
+5/23 23:08:04.267  Glue Start Login
+5/23 23:08:04.267  BattleNet Attempt Logon
+5/23 23:08:04.611  BattleNet Front Connected
+5/23 23:08:04.742  BattleNet Logon Queue Update
+5/23 23:08:04.805  BattleNet Logon Complete
+5/23 23:08:04.942  BattleNet Game Account Name
+5/23 23:08:04.943  BattleNet Game Account Name
+5/23 23:08:04.943  BattleNet Attempt Complete Login
+5/23 23:08:05.627  BattleNet Realm List Ticket
+5/23 23:08:05.715  BattleNet Sub Region List
+5/23 23:08:06.162  BattleNet Last Played Char
+5/23 23:08:06.565  BattleNet Realm List
+5/23 23:08:11.461  Glue Script Disconnect From Server
+5/23 23:08:11.461  BattleNet Defer Disconnect
+5/23 23:08:11.461  BattleNet Front Disconnecting
+5/23 23:08:11.461  Glue Cancel WoW Connection
+5/23 23:08:11.541  BattleNet Front Disconnected
+5/23 23:08:13.859  Connection Destroy

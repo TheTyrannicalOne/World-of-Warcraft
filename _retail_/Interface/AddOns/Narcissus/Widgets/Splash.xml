@@ -3,8 +3,11 @@
     <Frame name="Narci_Splash_Template" frameStrata="TOOLTIP" hidden="true" Alpha="0" scale="0.8" virtual="true">
         <Size x="420" y="560"/>
         <Anchors>
-            <Anchor point="CENTER" y="-60"/>
+            <Anchor point="CENTER" y="-30"/>
         </Anchors>
+        <HitRectInsets>
+            <AbsInset left="-30" right="-30" top="-30" bottom="-30"/>
+        </HitRectInsets>
 		<Layers>
 			<Layer level="BACKGROUND" textureSubLevel="1">
 				<Texture setAllPoints="true" parentKey="Black" Alpha="0" ignoreParentAlpha="true">
@@ -54,11 +57,20 @@
 					</Anchors>
 				</FontString>
 
-				<FontString parentKey="Header1" inherits="AAAStatusNameMedium" justifyH="LEFT" justifyV="TOP" text="NARCI_SPLASH_HEADER1" ignoreParentScale="true">
+				<FontString parentKey="Text00" inherits="AAAStatusNameMedium" justifyH="LEFT" justifyV="TOP" text="NARCI_SPLASH_MESSAGE0" spacing="2">
 					<Size x="0" y="0"/>
                     <Color r="1" g="1" b="1" a="1"/>
 					<Anchors>
 						<Anchor point="TOPLEFT" relativeKey="$parent" relativePoint="TOPLEFT" x="16" y="-20"/>
+                        <Anchor point="RIGHT" relativeKey="$parent" relativePoint="RIGHT" x="-16"/>
+					</Anchors>
+				</FontString>
+
+				<FontString parentKey="Header1" inherits="AAAStatusNameMedium" justifyH="LEFT" justifyV="TOP" text="NARCI_SPLASH_HEADER1" ignoreParentScale="true">
+					<Size x="0" y="0"/>
+                    <Color r="1" g="1" b="1" a="1"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.Text00" relativePoint="BOTTOMLEFT" x="0" y="-20"/>
 					</Anchors>
 				</FontString>
 
@@ -219,6 +231,9 @@
             <OnEnter>
 
             </OnEnter>
+            <OnMouseWheel>
+                return;
+            </OnMouseWheel>
         </Scripts>
     </Frame>
 </Ui>

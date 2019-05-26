@@ -1,0 +1,38 @@
+5/23 23:08:00.287  AgentCommunicator::Initialize():  uid = 'wow_classic_beta'
+5/23 23:08:00.287  Reading agent.dat file to determine agent port.
+
+5/23 23:08:00.287  Reading agent.dat file to determine agent port.
+
+5/23 23:08:00.287  Agent communicator initialized.  Agent path:  'C:/ProgramData/Battle.net/Agent/Agent.exe'  URL: '127.0.0.1'
+5/23 23:08:02.295  Connecting to agent on port 1120
+5/23 23:08:02.473  Successfully sent message 1 to agent
+5/23 23:08:02.515  Received response.  MSG 1, response code 200
+5/23 23:08:02.515  Connecting to agent on port 1120
+5/23 23:08:02.515  Successfully sent message 16 to agent
+5/23 23:08:02.619  Received response.  MSG 16, response code 200
+5/23 23:08:02.619  Connecting to agent on port 1120
+5/23 23:08:02.619  Successfully sent message 10 to agent
+5/23 23:08:02.619  Received response.  MSG 10, response code 200
+5/23 23:08:02.619  Connecting to agent on port 1120
+5/23 23:08:02.631  Successfully sent message 12 to agent
+5/23 23:08:02.631  Received response.  MSG 12, response code 200
+5/23 23:08:02.631  Connecting to agent on port 1120
+5/23 23:08:02.631  Successfully sent message 15 to agent
+5/23 23:08:02.631  Received response.  MSG 15, response code 200
+5/23 23:08:02.631  Connecting to agent on port 1120
+5/23 23:08:02.631  Successfully sent message 12 to agent
+5/23 23:08:02.650  Received response.  MSG 12, response code 200
+5/23 23:08:02.650  Connecting to agent on port 1120
+5/23 23:08:02.650  Successfully sent message 15 to agent
+5/23 23:08:02.650  Received response.  MSG 15, response code 200
+5/23 23:08:02.650  Connecting to agent on port 1120
+5/23 23:08:02.650  Successfully sent message 14 to agent
+5/23 23:08:02.668  Received response.  MSG 14, response code 200
+5/23 23:08:02.668  Connecting to agent on port 1120
+5/23 23:08:02.668  Successfully sent message 10 to agent
+5/23 23:08:02.668  Received response.  MSG 10, response code 200
+5/23 23:08:02.668  Backfill complete, detaching from agent.
+5/23 23:08:02.677  Connecting to agent on port 1120
+5/23 23:08:02.677  Successfully sent message 2 to agent
+5/23 23:08:02.677  Received response.  MSG 2, response code 200
+5/23 23:08:13.859  AgentCommunicator::Shutdown()

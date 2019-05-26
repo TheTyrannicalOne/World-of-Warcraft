@@ -433,14 +433,6 @@ FishingBuddy.StartedFishing = nil;
 
 local CastingNow = false;
 
--- Let's wait at least five seconds before we attempt to lure again
-local RELURE_DELAY = 8.0;
-
-local AddingLure = false;
-local DoEscaped = nil;
-local LureState = 0;
-local LastLure = nil;
-local LastUsed = nil;
 local OpenThisFishId = {};
 local DoAutoOpenLoot = nil;
 
@@ -680,20 +672,10 @@ end
 FishingBuddy.CheckCombat = CheckCombat;
 
 local function PostCastUpdate()
-    local stop = true;
+    local LSM = FishingBuddy.LureStateManager;
     if ( not CheckCombat() ) then
         FL:ResetOverride();
-        if ( AddingLure ) then
-            local sp, sub, txt, tex, st, et, trade, int = UnitChannelInfo("player");
-            local _, lure = FL:GetPoleBonus();
-            if ( not sp or not LastLure or (lure and lure == LastLure.b) ) then
-                AddingLure = false;
-                FL:UpdateLureInventory();
-            else
-                stop = false;
-            end
-        end
-        if ( stop ) then
+        if ( LSM:LuringComplete() ) then
             FishingBuddy_PostCastUpdateFrame:Hide();
         end
     end
@@ -777,7 +759,13 @@ end
 
 local function GetUpdateLure()
     local GSB = FishingBuddy.GetSettingBool;
+    local LSM = FishingBuddy.LureStateManager;
     local lureinventory, _ = FL:GetLureInventory();
+
+    -- Let's wait a bit so that the enchant can show up before we lure again
+    if LSM:LuringCheck() then
+        return false, 0, nil
+    end
 
     DoAutoOpenLoot = nil;
 
@@ -816,81 +804,6 @@ local function GetUpdateLure()
         if ( doit ) then
             return doit, id, name, it;
         end
-
-        -- only apply a lure if we're actually fishing with a "real" pole
-        if (FL:IsFishingPole()) then
-            -- Let's wait a bit so that the enchant can show up before we lure again
-            if ( LastLure and LastLure.time and ((LastLure.time - GetTime()) > 0) ) then
-                return false;
-            end
-
-            if ( LastLure ) then
-                LastLure.time = nil;
-            end
-
-            local skill, _, _, _ = FL:GetCurrentSkill();
-            if (skill > 0) then
-                local NextLure, NextState;
-                local pole, tempenchant = FL:GetPoleBonus();
-                local continent = FL:GetCurrentMapContinent()
-                local bigdraenor = (GSB("BigDraenor") and (continent == FBConstants.DRAENOR));
-                local state, bestlure = FL:FindBestLure(tempenchant, LureState, false, bigdraenor);
-                -- If we could use a lure based on skill, or we lost a fish.
-                if ( DoEscaped or not FL:HasLureBuff() ) then
-                    if ( state or bestlure ) then
-                        NextState = state or LureState;
-                        NextLure = bestlure;
-                    else
-                        NextLure = nil;
-                    end
-                elseif ( GSB("AlwaysLure") or bigdraenor) then
-                    -- don't put on a lure if we've already got one
-                    if ( tempenchant == 0 ) then
-                        if ( not state ) then
-                            NextState, NextLure = FL:FindNextLure(nil, 0);
-                        else
-                            NextState = state;
-                            NextLure = bestlure;
-                        end
-                    elseif (state and bestlure) then
-                        NextState = state;
-                        NextLure = bestlure;
-                    else
-                        NextLure = nil -- oscarucb
-                    end
-                elseif ( state and bestlure and tempenchant == 0 and GSB("LastResort") ) then
-                    NextState = state;
-                    NextLure = bestlure;
-                else
-                    NextLure = nil;
-                end
-                if ( not NextLure and GSB("AlwaysHat")) then
-                    local _, hat = FL:FindBestHat()
-                    if (hat) then
-                        return true, hat['id'], hat['n']
-                    end
-                end
-                local DoLure = NextLure;
-                if ( DoLure and DoLure.id ) then
-                    -- if the pole has an enchantment, we can assume it's got a lure on it (so far, anyway)
-                    -- remove the main hand enchantment (since it's a fishing pole, we know what it is)
-                    local startTime, duration, enable = GetItemCooldown(DoLure.id);
-                    if (startTime == 0) then
-                        AddingLure = true;
-                        LastLure = DoLure;
-                        LureState = NextState;
-                        LastLure.time = GetTime() + RELURE_DELAY;
-                        local id = DoLure.id;
-                        local name = DoLure.n;
-                        return true, id, name;
-                    elseif ( LastLure and not LastLure.time ) then
-                        LastLure = nil;
-                        LastState = 0;
-                        AddingLure = false;
-                    end
-                end
-            end
-        end
     end
 
     return false;
@@ -910,8 +823,9 @@ CaptureEvents["TRACKED_ACHIEVEMENT_UPDATE"] = function(id, criterion, actualtime
     end
 end
 
-local function ClearAddingLure()
-    AddingLure = false;
+local function ClearLastLure()
+    local LSM = FishingBuddy.LureStateManager;
+    LSM:ClearLastLure()
 end
 
 -- we don't want to interrupt ourselves if we're casting.
@@ -932,7 +846,7 @@ CaptureEvents["UNIT_SPELLCAST_CHANNEL_STOP"] = function(unit, lineid, spellid)
         SetLastCastTime();
     end
     current_spell_id = nil
-    ClearAddingLure()
+    ClearLastLure()
 end
 
 CaptureEvents["UNIT_SPELLCAST_INTERRUPTED"] = function(unit, lineid, spellid)
@@ -940,11 +854,11 @@ CaptureEvents["UNIT_SPELLCAST_INTERRUPTED"] = function(unit, lineid, spellid)
         SetLastCastTime();
     end
     current_spell_id = nil
-    ClearAddingLure()
+    ClearLastLure()
 end
 
-CaptureEvents["UNIT_SPELLCAST_FAILED"] = ClearAddingLure;
-CaptureEvents["UNIT_SPELLCAST_FAILED_QUIET"] = ClearAddingLure;
+CaptureEvents["UNIT_SPELLCAST_FAILED"] = ClearLastLure;
+CaptureEvents["UNIT_SPELLCAST_FAILED_QUIET"] = ClearLastLure;
 
 CaptureEvents["ACTIONBAR_SLOT_CHANGED"] = function()
     if ( FishingBuddy.GetSettingBool("UseAction") ) then
@@ -956,7 +870,7 @@ CaptureEvents["UNIT_AURA"] = function(arg1)
     if ( arg1 == "player" ) then
         local hmhe,_,_,_,_,_ = GetWeaponEnchantInfo();
         if ( not hmhe ) then
-            LastLure = nil;
+            ClearLastLure();
         end
     end
 end
@@ -985,7 +899,8 @@ FishingBuddy.AreWeFishing = AreWeFishing
 
 local function NormalHijackCheck()
     local GSB = FishingBuddy.GetSettingBool;
-    if ( not AddingLure and
+    local LSM = FishingBuddy.LureStateManager;
+    if ( not LSM:GetLastLure() and
          not CheckCombat() and (not IsMounted() or GSB("MountedCast")) and
          not IsFishingAceEnabled() and
          GSB("EasyCast") and (CastingKeys() or (GSB("KeepOnTruckin") and AreWeFishing()) or ReadyForFishing()) ) then
@@ -1140,11 +1055,10 @@ local function StartFishingMode()
         end
         FishingBuddy.EnhanceFishingSounds(true);
         handlerframe:Show();
-        LureState = 0;	  -- start with the cheapest lure
         local pole, lure = FL:GetPoleBonus();
         if ( not lure or lure == 0 ) then
-            LastLure = {};
-            LastLure.b = lure;
+            local LSM = FishingBuddy.LureStateManager;
+            LSM:SetLure({["b"] = lure})
         end
         FishingBuddy.StartedFishing = GetTime();
         RunHandlers(FBConstants.FISHING_ENABLED_EVT);
@@ -1173,7 +1087,7 @@ local function StopFishingMode(logout)
         resetClickToMove = nil;
     end
 
-    AddingLure = false;
+    ClearLastLure();
 end
 
 local function FishingMode()
@@ -1502,27 +1416,17 @@ FishingBuddy.OnEvent = function(self, event, ...)
             end
 
             -- if we want to autoloot, and Blizz isn't, let's grab stuff
-            local checkloot = LootSlotIsItem or LootSlotHasItem;
             local info = GetLootInfo()
             for index, item in ipairs(info) do
                 local link = GetLootSlotLink(index);
                 -- should we track "locked" items we couldn't loot?'
                 FishingBuddy.AddLootCache(item.texture, item.name, item.quantity, item.quality, link, poolhint)
-                -- not sure this makes sense any more
-                if false then
-                    local _, id, _ = FL:SplitLink(link, true);
-                    -- handle things we can't actually count that might be in our fish (e.g. Garrison Resources)
-                    if (id and quality == 0 and FL:IsMissedFish(id)) then
-                        DoEscaped = 1;
-                    end
-                end
                 if (doautoloot) then
                     LootSlot(index);
                 end
             end
             ClearTooltipText();
             FL:ExtendDoubleClick();
-            LureState = 0;
         elseif (DoAutoOpenLoot) then
             DoAutoOpenLoot = nil;
             for index = 1, GetNumLootItems(), 1 do
