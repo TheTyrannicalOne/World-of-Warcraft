@@ -1,8 +1,17 @@
 
 AzeriteTooltipDB = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
+		["Datgorg - Argent Dawn"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
+		["Vadder - Argent Dawn"] = "Default",
+		["Brotus - Argent Dawn"] = "Default",
+		["Tyran - Argent Dawn"] = "Default",
+		["Tyrannithal - Argent Dawn"] = "Default",
+		["Shanyt - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Mulmok - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

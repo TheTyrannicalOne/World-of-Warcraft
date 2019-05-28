@@ -1,12 +1,56 @@
 
 HHTD_SavedVariables = {
 	["char"] = {
-		["Shanyt - Argent Dawn"] = {
+		["Datgorg - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
 		["Vancard - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
+		["Vadder - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Brotus - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Tyran - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Tyrannithal - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Shanyt - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Jingojaggot - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Cowtastraphy - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Mulmok - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+		["Shaekhan - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
+	},
+	["profileKeys"] = {
+		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
+		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
+		["Vadder - Argent Dawn"] = "Vadder - Argent Dawn",
+		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
+		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
+		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 	},
 	["namespaces"] = {
 		["Announcer"] = {
@@ -15,13 +59,5 @@ HHTD_SavedVariables = {
 		},
 		["NPH"] = {
 		},
-	},
-	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
 	},
 }

@@ -10,14 +10,14 @@ BigWigs3DB = {
 			[-1358] = true,
 			[-557] = true,
 			[-573] = true,
-			[295] = true,
 			[74] = true,
 			[76] = true,
 			[-575] = true,
-			[294] = true,
-			[-607] = true,
-			[-1152] = true,
+			[295] = true,
 			[-514] = true,
+			[-1152] = true,
+			[-607] = true,
+			[-510] = true,
 			[-609] = true,
 			[-563] = true,
 			[-437] = true,
@@ -28,17 +28,15 @@ BigWigs3DB = {
 			[73] = true,
 			[75] = true,
 			[-567] = true,
-			[-510] = true,
+			[-367] = true,
 			[-1352] = {
 				[2] = true,
 			},
-			[-367] = true,
+			[294] = true,
 		},
 	},
 	["namespaces"] = {
 		["BigWigs_Plugins_Victory"] = {
-		},
-		["BigWigs_Bosses_Mannoroth"] = {
 		},
 		["BigWigs_Plugins_Alt Power"] = {
 			["profiles"] = {
@@ -47,17 +45,15 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Bosses_Archimonde"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 			["profiles"] = {
@@ -71,13 +67,11 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
+					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999504089355,
 					["BigWigsAnchor_height"] = 16.0000438690186,
-					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
 				},
 			},
-		},
-		["BigWigs_Bosses_Hellfire Assault"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -86,20 +80,18 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Hellfire Citadel Trash"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
-					["width"] = 140.00016784668,
-					["font"] = "Friz Quadrata TT",
 					["height"] = 119.999977111816,
+					["font"] = "Friz Quadrata TT",
+					["width"] = 140.00016784668,
 				},
 			},
-		},
-		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -108,11 +100,11 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_Statistics"] = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["LibDualSpec-1.0"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 	},
 	["wipe80"] = true,
