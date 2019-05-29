@@ -1,6 +1,6 @@
-5/26 19:50:53.396  Initialize
-5/26 19:50:54.602  Streaming failed -- FileData ID 1140733 [Invalid file handle]. Errorstack: 
+5/28 18:40:14.624  Initialize
+5/28 18:40:15.837  Streaming failed -- FileData ID 1140733 [Invalid file handle]. Errorstack: 
  Can't find file in build manifest
 
 
-5/26 19:51:02.256  Shutdown
+5/28 18:40:21.515  Shutdown

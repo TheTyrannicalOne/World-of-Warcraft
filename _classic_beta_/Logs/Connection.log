@@ -1,18 +1,18 @@
-5/26 19:50:50.131  Connection Initialize
-5/26 19:50:56.529  Glue Start Login
-5/26 19:50:56.529  BattleNet Attempt Logon
-5/26 19:50:56.863  BattleNet Front Connected
-5/26 19:50:56.988  BattleNet Logon Queue Update
-5/26 19:50:57.297  BattleNet Logon Complete
-5/26 19:50:57.447  BattleNet Game Account Name
-5/26 19:50:57.447  BattleNet Game Account Name
-5/26 19:50:57.447  BattleNet Attempt Complete Login
-5/26 19:50:57.761  BattleNet Realm List Ticket
-5/26 19:50:57.840  BattleNet Sub Region List
-5/26 19:50:58.160  BattleNet Last Played Char
-5/26 19:50:58.562  BattleNet Realm List
-5/26 19:50:58.562  Glue Fatal Error: 2147483957
-5/26 19:50:58.562  BattleNet Defer Disconnect
-5/26 19:50:58.562  BattleNet Front Disconnecting
-5/26 19:50:58.629  BattleNet Front Disconnected
-5/26 19:51:02.292  Connection Destroy
+5/28 18:40:11.521  Connection Initialize
+5/28 18:40:17.872  Glue Start Login
+5/28 18:40:17.872  BattleNet Attempt Logon
+5/28 18:40:18.180  BattleNet Front Connected
+5/28 18:40:18.312  BattleNet Logon Queue Update
+5/28 18:40:18.497  BattleNet Logon Complete
+5/28 18:40:18.625  BattleNet Game Account Name
+5/28 18:40:18.625  BattleNet Game Account Name
+5/28 18:40:18.625  BattleNet Attempt Complete Login
+5/28 18:40:19.021  BattleNet Realm List Ticket
+5/28 18:40:19.093  BattleNet Sub Region List
+5/28 18:40:19.524  BattleNet Last Played Char
+5/28 18:40:19.932  BattleNet Realm List
+5/28 18:40:19.932  Glue Fatal Error: 2147483957
+5/28 18:40:19.932  BattleNet Defer Disconnect
+5/28 18:40:19.932  BattleNet Front Disconnecting
+5/28 18:40:19.997  BattleNet Front Disconnected
+5/28 18:40:21.558  Connection Destroy

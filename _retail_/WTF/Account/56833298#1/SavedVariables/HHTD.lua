@@ -22,7 +22,7 @@ HHTD_SavedVariables = {
 		["Shanyt - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Jingojaggot - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
 		["Cowtastraphy - Argent Dawn"] = {
@@ -31,13 +31,17 @@ HHTD_SavedVariables = {
 		["Mulmok - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Jingojaggot - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
 	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
+	["namespaces"] = {
+		["Announcer"] = {
+		},
+		["CM"] = {
+		},
+		["NPH"] = {
+		},
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
@@ -47,17 +51,13 @@ HHTD_SavedVariables = {
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
-		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 	},
-	["namespaces"] = {
-		["Announcer"] = {
-		},
-		["CM"] = {
-		},
-		["NPH"] = {
-		},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 }

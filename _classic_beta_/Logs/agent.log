@@ -1,38 +1,38 @@
-5/26 19:50:50.131  AgentCommunicator::Initialize():  uid = 'wow_classic_beta'
-5/26 19:50:50.131  Reading agent.dat file to determine agent port.
+5/28 18:40:11.521  AgentCommunicator::Initialize():  uid = 'wow_classic_beta'
+5/28 18:40:11.521  Reading agent.dat file to determine agent port.
 
-5/26 19:50:50.131  Reading agent.dat file to determine agent port.
+5/28 18:40:11.521  Reading agent.dat file to determine agent port.
 
-5/26 19:50:50.131  Agent communicator initialized.  Agent path:  'C:/ProgramData/Battle.net/Agent/Agent.exe'  URL: '127.0.0.1'
-5/26 19:50:54.589  Connecting to agent on port 1120
-5/26 19:50:54.757  Successfully sent message 1 to agent
-5/26 19:50:54.800  Received response.  MSG 1, response code 200
-5/26 19:50:54.800  Connecting to agent on port 1120
-5/26 19:50:54.800  Successfully sent message 16 to agent
-5/26 19:50:54.807  Received response.  MSG 16, response code 200
-5/26 19:50:54.807  Connecting to agent on port 1120
-5/26 19:50:54.807  Successfully sent message 10 to agent
-5/26 19:50:54.807  Received response.  MSG 10, response code 200
-5/26 19:50:54.807  Connecting to agent on port 1120
-5/26 19:50:54.807  Successfully sent message 12 to agent
-5/26 19:50:54.819  Received response.  MSG 12, response code 200
-5/26 19:50:54.819  Connecting to agent on port 1120
-5/26 19:50:54.819  Successfully sent message 15 to agent
-5/26 19:50:54.819  Received response.  MSG 15, response code 200
-5/26 19:50:54.819  Connecting to agent on port 1120
-5/26 19:50:54.819  Successfully sent message 12 to agent
-5/26 19:50:54.819  Received response.  MSG 12, response code 200
-5/26 19:50:54.819  Connecting to agent on port 1120
-5/26 19:50:54.819  Successfully sent message 15 to agent
-5/26 19:50:54.838  Received response.  MSG 15, response code 200
-5/26 19:50:54.838  Connecting to agent on port 1120
-5/26 19:50:54.838  Successfully sent message 14 to agent
-5/26 19:50:54.838  Received response.  MSG 14, response code 200
-5/26 19:50:54.838  Connecting to agent on port 1120
-5/26 19:50:54.838  Successfully sent message 10 to agent
-5/26 19:50:54.838  Received response.  MSG 10, response code 200
-5/26 19:50:54.838  Backfill complete, detaching from agent.
-5/26 19:50:54.838  Connecting to agent on port 1120
-5/26 19:50:54.838  Successfully sent message 2 to agent
-5/26 19:50:54.854  Received response.  MSG 2, response code 200
-5/26 19:51:02.292  AgentCommunicator::Shutdown()
+5/28 18:40:11.521  Agent communicator initialized.  Agent path:  'C:/ProgramData/Battle.net/Agent/Agent.exe'  URL: '127.0.0.1'
+5/28 18:40:15.826  Connecting to agent on port 1120
+5/28 18:40:16.062  Successfully sent message 1 to agent
+5/28 18:40:16.119  Received response.  MSG 1, response code 200
+5/28 18:40:16.119  Connecting to agent on port 1120
+5/28 18:40:16.119  Successfully sent message 16 to agent
+5/28 18:40:16.131  Received response.  MSG 16, response code 200
+5/28 18:40:16.131  Connecting to agent on port 1120
+5/28 18:40:16.131  Successfully sent message 10 to agent
+5/28 18:40:16.167  Received response.  MSG 10, response code 200
+5/28 18:40:16.167  Connecting to agent on port 1120
+5/28 18:40:16.167  Successfully sent message 12 to agent
+5/28 18:40:16.167  Received response.  MSG 12, response code 200
+5/28 18:40:16.167  Connecting to agent on port 1120
+5/28 18:40:16.167  Successfully sent message 15 to agent
+5/28 18:40:16.181  Received response.  MSG 15, response code 200
+5/28 18:40:16.181  Connecting to agent on port 1120
+5/28 18:40:16.181  Successfully sent message 12 to agent
+5/28 18:40:16.181  Received response.  MSG 12, response code 200
+5/28 18:40:16.181  Connecting to agent on port 1120
+5/28 18:40:16.181  Successfully sent message 15 to agent
+5/28 18:40:16.194  Received response.  MSG 15, response code 200
+5/28 18:40:16.194  Connecting to agent on port 1120
+5/28 18:40:16.194  Successfully sent message 14 to agent
+5/28 18:40:16.194  Received response.  MSG 14, response code 200
+5/28 18:40:16.194  Connecting to agent on port 1120
+5/28 18:40:16.194  Successfully sent message 10 to agent
+5/28 18:40:16.194  Received response.  MSG 10, response code 200
+5/28 18:40:16.194  Backfill complete, detaching from agent.
+5/28 18:40:16.194  Connecting to agent on port 1120
+5/28 18:40:16.208  Successfully sent message 2 to agent
+5/28 18:40:16.208  Received response.  MSG 2, response code 200
+5/28 18:40:21.558  AgentCommunicator::Shutdown()

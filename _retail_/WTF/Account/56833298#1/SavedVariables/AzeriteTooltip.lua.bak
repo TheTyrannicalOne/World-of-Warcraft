@@ -8,10 +8,10 @@ AzeriteTooltipDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
