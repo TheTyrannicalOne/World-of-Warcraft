@@ -1,2 +1,10 @@
-5/28 18:40:14.676  ---- Startup ----
-5/28 18:40:21.451  ---- Shutdown ----
+5/29 19:56:22.081  ---- Startup ----
+5/29 19:56:29.900  ---- ClientAvailableHotfixes ----
+5/29 19:56:29.900  ---- UserClientHotfixRequest ----
+5/29 19:56:29.900  ---- ApplyingHotfixes from Cache ----
+5/29 19:56:29.900  ---- ApplyingHotfixes from Server ----
+5/29 19:56:40.981  ---- ClientAvailableHotfixes ----
+5/29 19:56:40.981  ---- UserClientHotfixRequest ----
+5/29 19:56:40.981  ---- ApplyingHotfixes from Cache ----
+5/29 19:56:40.981  ---- ApplyingHotfixes from Server ----
+5/29 20:21:25.133  ---- Shutdown ----

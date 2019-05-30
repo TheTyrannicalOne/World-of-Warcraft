@@ -1,2 +1,37 @@
-5/28 18:40:15.269  Client Initialize.
-5/28 18:40:21.451  Client Destroy
+5/29 19:56:22.618  Client Initialize.
+5/29 19:56:29.914  Initial Hotfixes: Received
+5/29 19:56:29.914  Initial Hotfixes: Fake Connect
+5/29 19:56:29.914  Initial Hotfixes: Requested
+5/29 19:56:29.914  Initial Hotfixes: Applied
+5/29 19:56:40.981  Initial Hotfixes: Received
+5/29 19:56:40.981  Initial Hotfixes: Fake Connect
+5/29 19:56:40.981  Initial Hotfixes: Requested
+5/29 19:56:40.981  Initial Hotfixes: Applied
+5/29 20:04:09.605  Loading Screen Enable : 0 - 1
+5/29 20:04:09.745  Client Object Manager Initialized: 0
+5/29 20:04:10.927  Client : Load Map Begin : 0
+5/29 20:04:11.654  Loading Screen : Loading : Files Read 1490 : Bytes Read 112281398 : Elapsed MS 2050 : MBytes Per Sec 52.234
+5/29 20:04:11.654  Loading Screen : XML Loaded 100%
+5/29 20:04:11.654  Loading Screen : World Loaded 61%
+5/29 20:04:11.881  Client : Load Map End
+5/29 20:04:11.881  Start waiting for active player
+5/29 20:04:11.881  Character Login SEND
+5/29 20:04:11.881  Waiting for active player: 3 ms
+5/29 20:04:14.051  Stop waiting for active player
+5/29 20:04:14.058  Loading Screen : Loading : Files Read 826 : Bytes Read 11385938 : Elapsed MS 2403 : MBytes Per Sec 4.519
+5/29 20:04:14.058  Loading Screen : XML Loaded 100%
+5/29 20:04:14.058  Loading Screen : World Loaded 100%
+5/29 20:04:14.058  Loading Screen : Spell Loaded 0%
+5/29 20:04:14.173  Active Player Created
+5/29 20:04:14.173  Player : Exit Loading Screen : World Check Preload Begin
+5/29 20:04:14.173  Player : Exit Loading Screen : World Check Preload End
+5/29 20:04:14.173  Loading Screen : Streaming 0
+5/29 20:04:14.173  Loading Screen : XML Loaded 100%
+5/29 20:04:14.173  Loading Screen : World Loaded 100%
+5/29 20:04:14.173  Loading Screen : Spell Loaded 100%
+5/29 20:04:14.173  Loading Screen Disable
+5/29 20:04:14.178  Spellbook : Make Models Local Begin : 10
+5/29 20:04:14.178  Spellbook : Make Models Local End
+5/29 20:21:24.237  Stop waiting for active player
+5/29 20:21:24.244  Client Object Manager Destroyed
+5/29 20:21:25.133  Client Destroy
