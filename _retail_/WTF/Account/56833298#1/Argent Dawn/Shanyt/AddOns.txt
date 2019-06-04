@@ -179,3 +179,4 @@ WhisperInvite: disabled
 WhisperInviteAdvanced: disabled
 WhisperInviteBasic: disabled
 BigWigs_CommonAuras: enabled
+WeakAurasCompanion: enabled

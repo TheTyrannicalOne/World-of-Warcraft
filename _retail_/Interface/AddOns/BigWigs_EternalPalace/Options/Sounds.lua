@@ -27,3 +27,27 @@ BigWigs:AddSounds("Lady Ashvane", {
 	[298056] = "alarm",
 	["stages"] = "long",
 })
+
+BigWigs:AddSounds("Queen Azshara", {
+	[297371] = "long",
+	[297372] = "long",
+	[297907] = "alarm",
+	[297912] = "alarm",
+	[297934] = "long",
+	[297937] = "long",
+	[297972] = "alarm",
+	[298014] = {"alarm","alert","warning"},
+	[298021] = "alert",
+	[298121] = "info",
+	[298425] = "warning",
+	[298756] = "alert",
+	[298787] = "alert",
+	[299094] = "alert",
+	[299250] = {"alarm","long"},
+	[300518] = "warning",
+	[300743] = "alert",
+	[300807] = "warning",
+	[302999] = "alarm",
+	[303657] = "alert",
+	[303980] = "alert",
+})

@@ -1,7 +1,9 @@
 
 WarfrontRareTrackerDB = {
-	["global"] = {
-		["printCompatibilityMessage1"] = false,
+	["char"] = {
+		["Shanyt - Argent Dawn"] = {
+			["selectedZone"] = 62,
+		},
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
@@ -11,10 +13,13 @@ WarfrontRareTrackerDB = {
 		["Tyran - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+	},
+	["global"] = {
+		["printCompatibilityMessage1"] = false,
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local DT = E:GetModule('DataTexts')
 local GAME_VERSION_LABEL = GAME_VERSION_LABEL
 local displayString = '';
@@ -10,7 +10,7 @@ local function OnEvent(self, event, ...)
 end
 
 local function Click()
-	E:ToggleConfig()
+	E:ToggleOptionsUI()
 	SLE.ACD:SelectGroup("ElvUI", "sle")
 end
 

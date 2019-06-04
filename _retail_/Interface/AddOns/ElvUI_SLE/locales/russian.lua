@@ -1,4 +1,4 @@
-﻿-- English localization file for ruRU.
+-- English localization file for ruRU.
 local L = ElvUI[1].Libs.ACL:NewLocale("ElvUI", "ruRU")
 
 if not L then return; end

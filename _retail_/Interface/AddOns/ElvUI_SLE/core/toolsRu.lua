@@ -1,4 +1,4 @@
-﻿local SLE, T, E, L, V, P, G = unpack(select(2, ...))
+local SLE, T, E, L, V, P, G = unpack(select(2, ...))
 local GetLocale = GetLocale
 
 --GLOBALS: SLASH_RELOADUI3, SLASH_FRAME2, SLASH_FRAMELIST2, SLASH_TEXLIST2
@@ -7,14 +7,14 @@ function SLE:CyrCommands()
 	SLASH_RELOADUI3 = "/кд"
 
 	E:RegisterChatCommand("шт", "DelayScriptCall") --in
-	E:RegisterChatCommand("ус", "ToggleConfig") --ec
-	E:RegisterChatCommand("удмгш", "ToggleConfig") --elvui
+	E:RegisterChatCommand("ус", "ToggleOptionsUI") --ec
+	E:RegisterChatCommand("удмгш", "ToggleOptionsUI") --elvui
 	E:RegisterChatCommand('ипыефеы', 'BGStats') --bgstats
 	E:RegisterChatCommand('руддщлшеен', 'HelloKittyToggle') --hellokitty
 	E:RegisterChatCommand('руддщлшеенашч', 'HelloKittyFix') --hellokittyfix
 	E:RegisterChatCommand('рфкдуьырфлу', 'HarlemShakeToggle') --harlemshake
 	E:RegisterChatCommand('упкшв', 'Grid') --egrid
-	E:RegisterChatCommand("ьщмугш", "ToggleConfigMode") --moveui
+	E:RegisterChatCommand("ьщмугш", "ToggleMoveMode") --moveui
 	E:RegisterChatCommand("куыуегш", "ResetUI") --resetui
 	-- E:RegisterChatCommand('сдуфтпгшдв', 'MassGuildKick') --cleanguild
 	-- E:RegisterChatCommand('фзкшдащщды', 'DisableTukuiMode') --aprilfools

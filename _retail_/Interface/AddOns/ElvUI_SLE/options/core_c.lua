@@ -1,4 +1,4 @@
-﻿local SLE, T, E, _, V, P, G = unpack(select(2, ...))
+local SLE, T, E, _, V, P, G = unpack(select(2, ...))
 local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale or 'enUS')
 local M = SLE:GetModule("Misc")
 local SETTINGS = SETTINGS
@@ -47,7 +47,7 @@ local function configTable()
 				type = 'execute',
 				name = L["Install"],
 				desc = L["Run the installation process."],
-				func = function() E:GetModule("PluginInstaller"):Queue(SLE.installTable); E:ToggleConfig();  end,
+				func = function() E:GetModule("PluginInstaller"):Queue(SLE.installTable); E:ToggleOptionsUI();  end,
 			},
 			infoButton = CreateButton(5, L["About/Help"], "help"),
 			Reset = {

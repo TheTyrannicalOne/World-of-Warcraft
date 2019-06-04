@@ -1,4 +1,4 @@
-﻿local SLE, T, E, _, V, P, G = unpack(select(2, ...))
+local SLE, T, E, _, V, P, G = unpack(select(2, ...))
 local L = E.Libs.ACL:GetLocale('ElvUI', E.global.general.locale or 'enUS')
 local Tools = SLE:GetModule("Toolbars")
 local EXPANSION_NAME4 = EXPANSION_NAME4
