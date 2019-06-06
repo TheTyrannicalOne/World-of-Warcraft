@@ -28,6 +28,23 @@ BigWigs:AddSounds("Lady Ashvane", {
 	["stages"] = "long",
 })
 
+BigWigs:AddSounds("The Queen's Court", {
+	[296716] = "alert",
+	[296851] = "alert",
+	[297325] = "warning",
+	[297566] = "info",
+	[297585] = {"alarm","info"},
+	[297656] = {"alarm","info"},
+	[298050] = {"alert","info"},
+	[299914] = "warning",
+	[300088] = "long",
+	[300545] = "alarm",
+	[301244] = "info",
+	[301807] = "warning",
+	[301830] = "alarm",
+	[301947] = "long",
+})
+
 BigWigs:AddSounds("Queen Azshara", {
 	[297371] = "long",
 	[297372] = "long",

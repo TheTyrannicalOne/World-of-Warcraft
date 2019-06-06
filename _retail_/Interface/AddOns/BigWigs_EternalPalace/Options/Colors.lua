@@ -28,6 +28,23 @@ BigWigs:AddColors("Lady Ashvane", {
 	["stages"] = "orange",
 })
 
+BigWigs:AddColors("The Queen's Court", {
+	[296716] = "red",
+	[296851] = {"blue","yellow"},
+	[297325] = "red",
+	[297566] = "cyan",
+	[297585] = {"blue","cyan"},
+	[297656] = {"blue","cyan"},
+	[298050] = {"cyan","yellow"},
+	[299914] = {"blue","yellow"},
+	[300088] = "cyan",
+	[300545] = "blue",
+	[301244] = "cyan",
+	[301807] = "red",
+	[301830] = {"blue","purple"},
+	[301947] = "yellow",
+})
+
 BigWigs:AddColors("Queen Azshara", {
 	[297371] = "cyan",
 	[297372] = "cyan",
