@@ -105,3 +105,4 @@ AlhanaUI_ElvUI: enabled
 ElvUI_SLE: enabled
 ElvUI_Config: enabled
 ElvUI: enabled
+WeakAurasCompanion: enabled

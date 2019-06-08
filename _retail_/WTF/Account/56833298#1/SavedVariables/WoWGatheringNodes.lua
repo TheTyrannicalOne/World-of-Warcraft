@@ -9,8 +9,9 @@ WoWGatheringNodesConfig = {
 		["Tyrannithal - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Jingojaggot - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
