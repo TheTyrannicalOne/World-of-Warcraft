@@ -9,7 +9,7 @@ FishingBuddy_Info = {
 		[590001] = 19,
 		[863003] = 1,
 		[590002] = 5,
-		[1165000] = 76,
+		[1165000] = 86,
 		[1165001] = 1,
 		[863005] = 1,
 		[862000] = 44,
@@ -19,7 +19,7 @@ FishingBuddy_Info = {
 		[862004] = 2,
 		[862005] = 36,
 		[0] = 1,
-		[1165002] = 75,
+		[1165002] = 85,
 		[863001] = 8,
 		[863002] = 2,
 		[863004] = 3,
@@ -107,8 +107,8 @@ FishingBuddy_Info = {
 		[1165002] = {
 			[162515] = 5,
 			[160927] = 1,
-			[152543] = 33,
-			[152544] = 35,
+			[152543] = 38,
+			[152544] = 40,
 			[154770] = 1,
 		},
 		[1165001] = {
@@ -216,10 +216,10 @@ FishingBuddy_Info = {
 			["quality"] = 0,
 			["texture"] = 132493,
 		},
-		[111651] = {
-			["enUS"] = "Small Fat Sleeper",
+		[111589] = {
+			["enUS"] = "Small Crescent Saberfish",
 			["quality"] = 1,
-			["texture"] = 970821,
+			["texture"] = 970812,
 		},
 		[111601] = {
 			["enUS"] = "Enormous Crescent Saberfish",
@@ -248,10 +248,10 @@ FishingBuddy_Info = {
 			["texture"] = 132589,
 			["quality"] = 0,
 		},
-		[111589] = {
-			["enUS"] = "Small Crescent Saberfish",
+		[111651] = {
+			["enUS"] = "Small Fat Sleeper",
 			["quality"] = 1,
-			["texture"] = 970812,
+			["texture"] = 970821,
 		},
 	},
 	["FishSchools"] = {

@@ -1,6 +1,7 @@
 local pi = math.pi;
 local sin = math.sin;
 local FadeFrame = NarciAPI_FadeFrame;
+local Screenshot = Screenshot;
 local updateThreshold = 2;
 
 -----------------------------------
@@ -10,6 +11,23 @@ local startY = 2;
 local endFacing = -pi/8;
 --/dump Narci_CharacterModelFrame:GetPosition()
 --/run Narci_CharacterModelFrame:SetPortraitZoom()
+local function SetTutorialFrame(self, msg)
+	local frame = Narci_AlertFrame_Static;
+	frame:SetScale(Narci_Character:GetScale())
+	frame.Text:SetText(msg);
+
+	frame:SetParent(self)
+
+	frame:SetPoint("BOTTOM", self, "TOP", 0, -4)
+	frame:SetHeight(frame.Background:GetHeight());
+	frame:SetFrameStrata("TOOLTIP");
+	FadeFrame(frame, 0.25, "IN");
+
+	if NarcissusDB and NarcissusDB.Tutorials and NarcissusDB.Tutorials[self.keyValue] then
+		NarcissusDB.Tutorials[self.keyValue] = false;
+	end
+end
+
 local TranslateValue_Male = {
 	--[raceID] = {ZoomValue, defaultY, defaultZ},
 	[0] = {[1] = {0.05, 0.4, -0.275},		--Default Value
@@ -100,7 +118,7 @@ local TranslateValue_Female = {
 				[2] = {-0.5, 0.35, -0.1653}},		--9 Goblin √
 
 	[10] = {[1] = {0.2, 0.20, -0.25},
-				[2] = {-0.3, 0.75, -0.21}},		--10 BloodElf Female √
+				[2] = {-0.3, 0.75, -0.23}},		--10 BloodElf Female √
 
 	[11] = {[1] = {0.2, 0.35, -0.28},
 				[2] = {-0.3, 0.85, -0.33}},		--11 Goat Female √
@@ -322,12 +340,12 @@ PMAI:SetScript("OnShow", function()
 		UIFrameFadeOut(Narci_Attribute, 0.5, Narci_Attribute:GetAlpha(), 0)
 	end
 
-	Narci_CharacterListener:UnregisterEvent("UNIT_MODEL_CHANGED");
+	--Narci_CharacterListener:UnregisterEvent("UNIT_MODEL_CHANGED");
 	ModelFrame:SetSheathed(true)
 end);
 PMAI:SetScript("OnUpdate", PlayerModelAnimIn_Update);
 PMAI:SetScript("OnHide", function(self)
-	Narci_CharacterListener:RegisterEvent("UNIT_MODEL_CHANGED");
+	--Narci_CharacterListener:RegisterEvent("UNIT_MODEL_CHANGED");
 	self.TimeSinceLastUpdate = 0
 	self.FaceTime = 0
 	self.Trigger = true
@@ -757,27 +775,36 @@ local function HideVignette()
 	end
 end
 
+local function SlotLayerButton_OnClick(self)
+	LayerButton_OnClick(self);
+	Narci_Character:SetShown(self.IsOn);
+end
+
+local function PlayerModelLayerButton_OnClick(self)
+	LayerButton_OnClick(self);
+	if self.IsOn then
+		Narci_CharacterModelFrame:SetAlpha(1);
+	else
+		Narci_CharacterModelFrame:SetAlpha(0);
+	end	
+end
+
+local function PlayerModelLayerButton_Newbee(self)
+	SetTutorialFrame(self, NARCI_TUTORIAL_GREEN_SCREEN);
+	self:SetScript("OnClick", PlayerModelLayerButton_OnClick);
+end
+
 function Narci_LayerButton_OnLoad(self)
 	self.IsOn = true;
 	self:LockHighlight();
 	local ID = self:GetID();
 	if ID == 1 then
 		self.Label:SetText(NARCI_EQUIPMENTSLOTS);
-		self.Icon:SetTexCoord(0.5, 0.703125, 0.703125, 0.890625)
-		self:SetScript("OnClick", function(self)
-			LayerButton_OnClick(self);
-			Narci_Character:SetShown(self.IsOn);	
-		end)
+		self.Icon:SetTexCoord(0.5, 0.703125, 0.703125, 0.890625);
+		self:SetScript("OnClick", SlotLayerButton_OnClick);
 	elseif ID == 2 then
 		self.Label:SetText(NARCI_3DMODEL);
-		self:SetScript("OnClick", function(self)
-			LayerButton_OnClick(self);
-			if self.IsOn then
-				Narci_CharacterModelFrame:SetAlpha(1);
-			else
-				Narci_CharacterModelFrame:SetAlpha(0);
-			end	
-		end)
+		self:SetScript("OnClick", PlayerModelLayerButton_OnClick);
 	end
 	
 	if not self:GetParent().LayerButtons then
@@ -1022,7 +1049,14 @@ function Narci_Model_NextAnimationButton_OnClick(self, button)
 	Narci_Model_IdleButton.IsOn = false;
 	Narci_Model_IdleButton.Highlight:Hide();
 	
+	Narci_AlertFrame_Static:Hide();
 	--Narci_CharacterModelFrame:ApplySpellVisualKit(id, true)
+end
+
+function NextAnimationButton_Newbee(self, button)
+	SetTutorialFrame(self, NARCI_TUTORIAL_ANIMATION_ID);
+	Narci_Model_NextAnimationButton_OnClick(self, button);
+	self:SetScript("OnClick", Narci_Model_NextAnimationButton_OnClick);
 end
 
 function Narci_ModelShadow_SizeSlider_OnValueChanged(self, value, userInput)
@@ -1109,6 +1143,7 @@ local function BeginLayerCapture()
 		end
 		LayersToBeCaptured = -1;
 		Narci_Model_CaptureButton.Value:SetText(0);
+		Narci_Model_CaptureButton:Enable();
 		local button = Narci_SlotLayerButton;
 		button:LockHighlight();
 		button.Label:SetTextColor(1, 1, 1);
@@ -1117,6 +1152,7 @@ local function BeginLayerCapture()
 	else
 		LayersToBeCaptured = -1;
 		Narci_Model_CaptureButton.Value:SetText(0);
+		Narci_Model_CaptureButton:Enable();
 		return;
 	end
 	C_Timer.After(1, function()
@@ -1126,9 +1162,53 @@ local function BeginLayerCapture()
 	LayersToBeCaptured = LayersToBeCaptured - 1;
 end
 
+
+
+local function CaptureButton_Seasoned(self)
+	Narci_AlertFrame_Static:Hide();
+	self:Disable()
+	Narci_VignetteLeft:SetAlpha(0);
+	VignetteRightSmall:SetAlpha(0);
+	LayersToBeCaptured = 5;
+	Screenshot();
+end
+
+local function CaptureButton_Newbee(self)
+	SetTutorialFrame(self, NARCI_TUTORIAL_CAPTUREBUTTON)
+	self:Disable()
+	C_Timer.After(2, function()
+		Narci_Model_CaptureButton:Enable();
+		Narci_Model_CaptureButton:SetScript("OnClick", CaptureButton_Seasoned)
+	end)
+end
+
+function Narci_Model_CaptureButton_OnClick(self)
+	CaptureButton_Seasoned(self)
+end
+
+function Narci_Model_CaptureButton_OnEnter(self)
+	if LayersToBeCaptured == -1 then
+		Narci_Model_CaptureButton.Value:SetText(5);
+	end
+end
+
+function Narci_Model_CaptureButton_OnLeave(self)
+	if LayersToBeCaptured == -1 then
+		Narci_Model_CaptureButton.Value:SetText(0);
+	end
+end
+
+local function EnableButtonTutorial(button, key, func)
+	if NarcissusDB and NarcissusDB.Tutorials and NarcissusDB.Tutorials[key] then
+		button:SetScript("OnClick", func);
+		button.keyValue = key;
+	end
+end
+
 local ScreenshotListener = CreateFrame("Frame");
 ScreenshotListener:RegisterEvent("SCREENSHOT_STARTED")
 ScreenshotListener:RegisterEvent("SCREENSHOT_SUCCEEDED")
+ScreenshotListener:RegisterEvent("VARIABLES_LOADED");
 ScreenshotListener:SetScript("OnEvent",function(self,event,...)
 	if event == "SCREENSHOT_STARTED" then
 		Alpha_Temp1 = PhotoModeController:GetAlpha();
@@ -1143,31 +1223,13 @@ ScreenshotListener:SetScript("OnEvent",function(self,event,...)
 				BeginLayerCapture();
 			end)
 		end
+	elseif event == "VARIABLES_LOADED" then
+		EnableButtonTutorial(Narci_Model_CaptureButton, "CaptureButton", CaptureButton_Newbee);
+		EnableButtonTutorial(Narci_Model_NextAnimationButton, "NextAnimationButton", NextAnimationButton_Newbee);
+		EnableButtonTutorial(Narci_PlayerModelLayerButton, "PlayerModelLayerButton", PlayerModelLayerButton_Newbee);
+		self:UnregisterEvent("VARIABLES_LOADED")
 	end
 end)
-
-function Narci_Model_CaptureButton_OnClick(self)
-	self:Disable()
-	C_Timer.After(5, function()
-		Narci_Model_CaptureButton:Enable();
-	end)
-	Narci_VignetteLeft:SetAlpha(0);
-	VignetteRightSmall:SetAlpha(0);
-	LayersToBeCaptured = 5;
-	Screenshot();
-end
-
-function Narci_Model_CaptureButton_OnEnter(self)
-	if LayersToBeCaptured == -1 then
-		Narci_Model_CaptureButton.Value:SetText(5);
-	end
-end
-
-function Narci_Model_CaptureButton_OnLeave(self)
-	if LayersToBeCaptured == -1 then
-		Narci_Model_CaptureButton.Value:SetText(0);
-	end
-end
 ----------------------------
 --[[
 /run Narci_CharacterModelFrame:SetUseTransmogSkin(false)
@@ -1177,8 +1239,22 @@ end
 82148	Ghost
 73396	Light Orb in hand
 
-
+/run Narci_CharacterModelFrame:SetModel("character\\nightelf\\female\\nightelffemale.mdx")
+/run Narci_CharacterModelFrame:SetModel("spells\\errorcube.mdx")
+/run Narci_CharacterModelFrame:EquipItem(159653)
 /run xxid=Narci_CharacterModelFrame:GetSlotTransmogSources(5);C_TransmogCollection.GetSourceInfo(xxid)
 C_TransmogCollection.GetSourceInfo(Narci_CharacterModelFrame:GetSlotTransmogSources(5))
 /run Narci_CharacterModelFrame:SetUnit("target");
 --]]
+
+function SM(path)
+	path = tostring(path)
+	path = gsub(path, "%/", "\\".."\\")
+	print(path)
+	Narci_CharacterModelFrame:SetModel(path)
+end
+
+function EQ(id)
+	local _, itemLink = GetItemInfo(id)
+	Narci_CharacterModelFrame:TryOn(itemLink)
+end

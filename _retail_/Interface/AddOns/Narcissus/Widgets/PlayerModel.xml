@@ -1196,6 +1196,9 @@
 					<OnClick function="Narci_Model_CaptureButton_OnClick"/>
 					<OnEnter function="Narci_Model_CaptureButton_OnEnter"/>
 					<OnLeave function="Narci_Model_CaptureButton_OnLeave"/>
+					<OnHide>
+						self:Enable();
+					</OnHide>
 				</Scripts>
 			</Button>
 
@@ -1601,7 +1604,7 @@
 						</Scripts>
 					</Button>
 
-					<Button parentKey="Next" inherits="Narci_Model_AnimationControlButtonTemplate" hidden="false" registerForClicks="LeftButtonUp, RightButtonUp">
+					<Button name="Narci_Model_NextAnimationButton" parentKey="Next" inherits="Narci_Model_AnimationControlButtonTemplate" hidden="false" registerForClicks="LeftButtonUp, RightButtonUp">
 						<Anchors>
 							<Anchor point="RIGHT" relativeKey="$parent.Play" relativePoint="LEFT" x="0"/>
 						</Anchors>
@@ -1611,7 +1614,7 @@
 									<TexCoords left="0.0625" right="0.125" top="0.9375" bottom="1"/>
 									<Size x="20" y="20"/>
 									<Anchors>
-										<Anchor point="CENTER"/>
+										<Anchor point="CENTER" x="0.25"/>
 									</Anchors>
 								</Texture>
 							</Layer>
@@ -1693,4 +1696,30 @@
 			</Layer>
 		</Layers>
 	</Frame>
+
+	<Button name="Narci_Tooltip_White" frameStrata="TOOLTIP">
+		<Size x="160" y="120"/>
+		<Layers>
+			<Layer level="ART" textureSubLevel="3">
+				<Texture setAllPoints="true" parentKey="TopBackground">
+					<Color r="1" g="1.0" b="1.0" a="1"/>
+					<Gradient orientation="VERTICAL">
+						<MinColor a="1" r="0.12" g="0.12" b="0.12"/>
+						<MaxColor a="1" r="0.25" g="0.25" b="0.25"/>
+					</Gradient>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativePoint="TOPLEFT"/>
+						<Anchor point="BOTTOMRIGHT" relativePoint="RIGHT" y="30"/>
+					</Anchors>
+				</Texture>
+				<Texture setAllPoints="true">
+					<Color r="0.12" g="0.12" b="0.12" a="1"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeKey="$parent.TopBackground" relativePoint="BOTTOMLEFT"/>
+						<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+	</Button>
 </Ui>

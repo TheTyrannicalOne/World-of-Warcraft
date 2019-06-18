@@ -116,7 +116,6 @@ end
 -- Data Lib
 local AllTheThingsTempData = {}; 	-- For temporary data.
 local AllTheThingsAD = {};			-- For account-wide data.
-local AllTheThingsPCD = {};			-- For character specific data.
 local function SetDataMember(member, data)
 	AllTheThingsAD[member] = data;
 end
@@ -130,13 +129,6 @@ end
 local function GetTempDataMember(member, default)
 	if AllTheThingsTempData[member] == nil then AllTheThingsTempData[member] = default; end
 	return AllTheThingsTempData[member];
-end
-local function SetPersonalDataMember(member, data)
-	AllTheThingsPCD[member] = data;
-end
-local function GetPersonalDataMember(member, default)
-	if AllTheThingsPCD[member] == nil then AllTheThingsPCD[member] = default; end
-	return AllTheThingsPCD[member];
 end
 local function SetDataSubMember(member, submember, data)
 	if AllTheThingsAD[member] then AllTheThingsAD[member][submember] = data; end
@@ -160,107 +152,10 @@ local function GetTempDataSubMember(member, submember, default)
 	end
 	return AllTheThingsTempData[member][submember];
 end
-local function SetPersonalDataSubMember(member, submember, data)
-	if AllTheThingsPCD[member] then AllTheThingsPCD[member][submember] = data; end
-end
-local function GetPersonalDataSubMember(member, submember, default)
-	if not AllTheThingsPCD[member] then AllTheThingsPCD[member] = { }; end
-	if AllTheThingsPCD[member][submember] == nil then AllTheThingsPCD[member][submember] = default; end
-	return AllTheThingsPCD[member][submember];
-end
-local function SetDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsAD[member] and AllTheThingsAD[member][submember] then AllTheThingsAD[member][submember][subsubmember] = data; end
-end
-local function GetDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsAD[member] then
-		AllTheThingsAD[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsAD[member][submember] then
-			AllTheThingsAD[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsAD[member][submember][subsubmember] == nil then
-				AllTheThingsAD[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsAD[member][submember][subsubmember];
-end
-local function SetPersonalDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsPCD[member] and AllTheThingsPCD[member][submember] then AllTheThingsPCD[member][submember][subsubmember] = data; end
-end
-local function GetPersonalDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsPCD[member] then
-		AllTheThingsPCD[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsPCD[member][submember] then
-			AllTheThingsPCD[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsPCD[member][submember][subsubmember] == nil then
-				AllTheThingsPCD[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsPCD[member][submember][subsubmember];
-end
-local function SetTempDataSubSubMember(member, submember, subsubmember, data)
-	if AllTheThingsTempData[member] and AllTheThingsTempData[member][submember] then AllTheThingsTempData[member][submember][subsubmember] = data; end
-end
-local function GetTempDataSubSubMember(member, submember, subsubmember, default)
-	if not AllTheThingsTempData[member] then
-		AllTheThingsTempData[member] = 
-		{
-			[submember] = 
-			{
-				[subsubmember] = default;
-			};
-		};
-		return default;
-	else
-		if not AllTheThingsTempData[member][submember] then
-			AllTheThingsTempData[member][submember] = 
-			{
-				[subsubmember] = default;
-			};
-			return default;
-		else
-			if AllTheThingsTempData[member][submember][subsubmember] == nil then
-				AllTheThingsTempData[member][submember][subsubmember] = default;
-				return default;
-			end
-		end
-	end
-	return AllTheThingsTempData[member][submember][subsubmember];
-end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
-app.SetPersonalDataMember = SetPersonalDataMember;
-app.GetPersonalDataMember = GetPersonalDataMember;
 app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
 
@@ -688,12 +583,7 @@ end
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		-- Play a random complete sound
-		local t = app.Settings.AUDIO_COMPLETE_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
-		end
+		PlayAudio(app.Settings.AUDIO_COMPLETE_TABLE);
 	end
 end
 function app:PlayFanfare()
@@ -702,33 +592,23 @@ function app:PlayFanfare()
 		local now = time();
 		if lastPlayedFanfare and (now - lastPlayedFanfare) < 1 then return nil; end
 		lastPlayedFanfare = now;
-		
-		-- Play a random fanfare
-		local t = app.Settings.AUDIO_FANFARE_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
-		end
+		PlayAudio(app.Settings.AUDIO_FANFARE_TABLE);
 	end
 end
 function app:PlayRareFindSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		-- Play a random rarefind sound
-		local t = app.Settings.AUDIO_RAREFIND_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
-		end
+		PlayAudio(app.Settings.AUDIO_RAREFIND_TABLE);
 	end
 end
 function app:PlayRemoveSound()
 	if app.Settings:GetTooltipSetting("Warn:Removed") then
-		-- Play a random fanfare
-		local t = app.Settings.AUDIO_REMOVE_TABLE;
-		if t and type(t) == "table" then
-			local id = math.random(1, #t);
-			if t[id] then PlaySoundFile(t[id], "master"); end
-		end
+		PlayAudio(app.Settings.AUDIO_REMOVE_TABLE);
+	end
+end
+function PlayAudio(targetAudio)
+	if targetAudio and type(targetAudio) == "table" then
+		local id = math.random(1, #targetAudio);
+		if targetAudio[id] then PlaySoundFile(targetAudio[id], app.Settings:GetTooltipSetting("Channel")); end
 	end
 end
 
@@ -802,13 +682,19 @@ local function GetNumberWithZeros(number, desiredLength)
 		return tostring(floor(number));
 	end
 end
+local function GetProgressTextDefault(progress, total)
+	return tostring(progress) .. " / " .. tostring(total);
+end
+local function GetProgressTextRemaining(progress, total)
+	return tostring(total - progress);
+end
 local function GetProgressColor(p)
 	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
 		local percent = progress / total;
-		return "|c" .. GetProgressColor(percent) .. tostring(progress) .. " / " .. tostring(total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
+		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
 	end
 end
 local function GetCollectionIcon(state)
@@ -841,6 +727,9 @@ local function GetProgressTextForTooltip(data)
 		return GetCompletionText(data.saved);
 	end
 end
+app.GetProgressText = GetProgressTextDefault;
+app.GetProgressTextDefault = GetProgressTextDefault;
+app.GetProgressTextRemaining = GetProgressTextRemaining;
 CS:Hide();
 
 -- Source ID Harvesting Lib
@@ -1140,33 +1029,6 @@ end })
 
 -- Search Caching
 local searchCache = {};
-local function SetNote(key, id, note)
-	wipe(searchCache);
-	collectgarbage();
-	SetDataSubSubMember("Notes", key, id, note);
-end
-local function GetNoteForGroup(group)
-	if group then
-		local key = group.key;
-		if key then
-			return group[key] and GetDataSubSubMember("Notes", key, group[key]);
-		else
-			return GetDataSubMember("Notes", BuildSourceTextForChat(group, 0));
-		end
-	end
-end
-local function SetNoteForGroup(group, note)
-	if group then
-		wipe(searchCache);
-		local key = group.key;
-		if key then
-			SetDataSubSubMember("Notes", key, group[key], note);
-		else
-			SetDataSubMember("Notes", BuildSourceTextForChat(group, 0), note);
-		end
-	end
-end
-app.SetNote = SetNote;
 app.searchCache = searchCache;
 local function CreateObject(t)
 	local s = {};
@@ -1703,7 +1565,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				-- Show the unobtainable source text
 				for i,j in ipairs(group.g or group) do
 					if j.itemID == itemID then
-						if j.u and not j.crs then
+						if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
 							tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
 							break;
 						end
@@ -1964,6 +1826,52 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
+				
+				-- If the item is a relic, then let's compare against equipped relics.
+				if IsArtifactRelicItem(itemID) and app.Settings:GetTooltipSetting("Progress") then
+					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
+					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
+					if myArtifactData then
+						local progress, total = 0, 0;
+						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
+						for itemID,artifactData in pairs(myArtifactData) do
+							local infoString;
+							for relicSlotIndex,relicData in pairs(artifactData) do
+								if relicData.relicType == relicType then
+									if infoString then
+										infoString = infoString .. " | " .. relicData.iLvl;
+									else
+										infoString = relicData.iLvl;
+									end
+									total = total + 1;
+									if relicData.iLvl >= relicItemLevel then
+										progress = progress + 1;
+										infoString = infoString .. " " .. GetCompletionIcon(1);
+									else
+										infoString = infoString .. " " .. GetCompletionIcon();
+									end
+								end
+							end
+							if infoString then
+								local itemLink = select(2, GetItemInfo(itemID));
+								tinsert(info, 1, { 
+									left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA, 
+									right = L["iLvl"] .. " " .. infoString,
+								});
+							end
+						end
+						if total > 0 then
+							group.total = total;
+							group.progress = progress;
+							group.g = {};
+							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
+						end
+					else
+						group.collectible = true;
+						group.collected = false;
+						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
+					end
+				end
 			end
 		end
 		
@@ -2120,13 +2028,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- If the user wants to show the progress of this search result, do so.
 		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
 			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
-		end
-		
-		-- If there is a note for this group, show it.
-		local note = GetNoteForGroup(group);
-		if note then
-			tinsert(info, { left = "Custom Note:" });
-			tinsert(info, { left = "|cffffffff" .. note .. "|r" });
 		end
 		
 		-- If there was any informational text generated, then attach that info.
@@ -2975,15 +2876,17 @@ local function AttachTooltip(self)
 						-- Adventure Guide
 						gf = app:GetWindow("Prime").data.g[1];
 					elseif owner.tooltipText then
-						if owner.tooltipText == DUNGEONS_BUTTON then
-							-- Group Finder
-							gf = app:GetWindow("Prime").data.g[4];
-						elseif owner.tooltipText == BLIZZARD_STORE then
-							-- Shop
-							gf = app:GetWindow("Prime").data.g[15];
-						elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
-							-- Achievements
-							gf = app:GetWindow("Prime").data.g[5];
+						if type(owner.tooltipText) == "string" then 
+							if owner.tooltipText == DUNGEONS_BUTTON then
+								-- Group Finder
+								gf = app:GetWindow("Prime").data.g[4];
+							elseif owner.tooltipText == BLIZZARD_STORE then
+								-- Shop
+								gf = app:GetWindow("Prime").data.g[15];
+							elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
+								-- Achievements
+								gf = app:GetWindow("Prime").data.g[5];
+							end
 						end
 					end
 					if gf then
@@ -3345,8 +3248,6 @@ app.BaseAchievementCriteria = {
 				local m = GetAchievementNumCriteria(t.achievementID);
 				if m and t.criteriaID <= m then
 					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
-				--elseif t.achievementID ~= 12891 and t.achievementID ~= 12479 and t.achievementID ~= 12593 and t.achievementID ~= 12455 then
-				--	print(t.achievementID, t.criteriaID, " > ", m); 
 				end
 			end
 		elseif key == "index" then
@@ -3770,6 +3671,7 @@ app.FACTION_RACES = {
 		36,	-- Mag'har
 	}
 };
+local HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000;
 app.BaseFaction = {
 	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 	-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
@@ -3830,6 +3732,36 @@ app.BaseFaction = {
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
+app.GetFactionStanding = function(reputationPoints)
+	-- total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket
+	-- This math is awful. There's got to be a more sensible way of doing this. [Pr3vention]
+	if not reputationPoints then return 0, 0
+	elseif reputationPoints < HOSTILE then return 1, HATED - reputationPoints
+	elseif reputationPoints < UNFRIENDLY then return 2, HOSTILE - reputationPoints
+	elseif reputationPoints < NEUTRAL then return 3, UNFRIENDLY - reputationPoints
+	elseif reputationPoints < FRIENDLY then return 4, reputationPoints - NEUTRAL
+	elseif reputationPoints < HONORED then return 5, reputationPoints - FRIENDLY
+	elseif reputationPoints < REVERED then return 6, reputationPoints - HONORED
+	elseif reputationPoints < EXALTED then return 7, reputationPoints - REVERED
+	elseif reputationPoints >= EXALTED then return 8, 0
+	else return 0
+	end
+end
+app.GetFactionStandingText = function(standingId, colorCode)
+	local text = getglobal("FACTION_STANDING_LABEL"..standingId)
+	if text then
+		if standingId == 1 and colorCode then return "|c00CC2222" .. text .. "|r"
+		elseif standingId == 2 and colorCode then return "|c00FF0000" .. text .. "|r"
+		elseif standingId == 3 and colorCode then return "|c00EE6622" .. text .. "|r"
+		elseif standingId == 4 and colorCode then return "|c00FFFF00" .. text .. "|r"
+		elseif standingId == 5 and colorCode then return "|c0000FF00" .. text .. "|r"
+		elseif standingId == 6 and colorCode then return "|c0000FF88" .. text .. "|r"
+		elseif standingId == 7 and colorCode then return "|c0000FFCC" .. text .. "|r"
+		elseif standingId == 8 and colorCode then return "|c00FFFFFF" .. text .. "|r"
+		end
+	end
+	return "|cCC222200UNKNOWN|r"
+end
 end)();
 
 -- Flight Path Lib
@@ -3885,17 +3817,17 @@ end)();
 			
 			if app.AccountWideFlightPaths then
 				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+					if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+						SetDataSubMember("CollectedFlightPaths", nodeID, 1);
 						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
 			else
 				for i,nodeID in ipairs(knownNodeIDs) do
-					if not GetPersonalDataSubMember("FlightPaths", nodeID) then
-						SetDataSubMember("FlightPaths", nodeID, 1);
-						SetPersonalDataSubMember("FlightPaths", nodeID, 1);
+					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+					if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+						SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
 						UpdateSearchResults(SearchForField("flightPathID", nodeID));
 					end
 				end
@@ -3911,9 +3843,14 @@ end)();
 				return app.CollectibleFlightPaths;
 			elseif key == "collected" then
 				if app.AccountWideFlightPaths then
-					return GetDataSubMember("FlightPaths", t.flightPathID);
+					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
+						return 1;
+					end
+				else
+					if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
+						return 1;
+					end
 				end
-				return GetPersonalDataSubMember("FlightPaths", t.flightPathID);
 			elseif key == "text" then
 				local info = t.info;
 				return info and info.text or "Visit the Flight Master to cache.";
@@ -4151,7 +4088,13 @@ app.BaseHeirloomLevel = {
 		if key == "collectible" then
 			return app.CollectibleHeirlooms;
 		elseif key == "collected" then
-			return t.level <= (select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID)) or 0);
+			local level = GetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, 0);
+			if t.level <= level then return true; end
+			level = select(5, C_Heirloom.GetHeirloomInfo(t.parent.itemID));
+			if level then
+				SetDataSubMember("HeirloomUpgradeRanks", t.parent.itemID, level);
+				if t.level <= level then return true; end
+			end
 		elseif key == "text" then
 			return t.link or ("Upgrade Level " .. t.level);
 		elseif key == "link" then
@@ -4261,8 +4204,9 @@ app.BaseHeirloom = {
 			return C_Heirloom.GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID));
 		elseif key == "g" then
 			if app.CollectibleHeirlooms then
-				local total = C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
+				local total = GetDataSubMember("HeirloomUpgradeLevels", t.itemID) or C_Heirloom.GetHeirloomMaxUpgradeLevel(t.itemID);
 				if total then
+					SetDataSubMember("HeirloomUpgradeLevels", t.itemID, total);
 					local armorTokens = {
 						app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
 						app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
@@ -4611,6 +4555,10 @@ app.BaseInstance = {
 		--	return select(8, EJ_GetInstanceInfo(t.instanceID)) or "";
 		elseif key == "saved" then
 			return t.locks;
+		elseif key == "back" then
+			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+				return 1;
+			end
 		elseif key == "locks" then
 			local locks = GetTempDataSubMember("lockouts", t.name);
 			if locks then
@@ -4841,6 +4789,10 @@ app.BaseMap = {
 		elseif key == "text" then
 			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
 			return app.GetMapName(t.mapID);
+		elseif key == "back" then
+			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+				return 1;
+			end
 		elseif key == "link" then
 			return t.achievementID and GetAchievementLink(t.achievementID);
 		elseif key == "icon" then
@@ -5511,7 +5463,7 @@ end)();
 		77,		-- Mists
 		90,		-- WoD
 		98,		-- Legion
-		108,	-- Battle For Azeroth
+		110,	-- Battle For Azeroth
 	};
 	local tierDescription = {
 		"Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.", 					-- Classic
@@ -6822,7 +6774,9 @@ local function CreateMinimapButton()
 	
 	-- Create the Button Texture
 	local texture = button:CreateTexture(nil, "BACKGROUND");
-	texture:SetATTSprite("base_36x36", 429, 141, 36, 36, 512, 256);
+	texture:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
+	--texture:SetATTSprite("in_game_logo", 430, 75, 53, 59, 512, 256);
+	--texture:SetScale(53 / 64, 59 / 64);
 	texture:SetPoint("CENTER", 0, 0);
 	texture:SetAllPoints();
 	button.texture = texture;
@@ -6850,7 +6804,7 @@ local function CreateMinimapButton()
 			self.oldtexture:Show();
 			self.border:Show();
 		else
-			self:SetATTHighlightSprite("epic_36x36", 429, 179, 36, 36, 512, 256):SetAlpha(0.2);
+			self:SetATTHighlightSprite("epic_36x36", 297, 215, 36, 36, 512, 256):SetAlpha(0.2);
 			self.texture:Show();
 			self.oldtexture:Hide();
 			self.border:Hide();
@@ -7268,6 +7222,9 @@ local function SetRowData(self, row, data)
 				data.s = s;
 				if data.collected then
 					data.parent.progress = data.parent.progress + 1;
+				end
+				if not AllTheThingsHarvestItems then
+					AllTheThingsHarvestItems = {};
 				end
 				local item = AllTheThingsHarvestItems[data.itemID];
 				if not item then
@@ -7796,6 +7753,30 @@ local function RowOnEnter(self)
 		--	if reference.parent and reference.parent.locks then GameTooltip:AddDoubleLine("Instance Progress", GetCompletionText(reference.saved)); end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
+		if reference.minReputation and not reference.maxReputation then
+			local standingId, offset = app.GetFactionStanding(reference.minReputation)
+			local msg = "Requires a minimum standing of"
+			if offset ~= 0 then msg = msg .. " " .. offset end
+			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. "."
+			GameTooltip:AddLine(msg);
+		end
+		if reference.maxReputation and not reference.minReputation then
+			local standingId, offset = app.GetFactionStanding(reference.maxReputation)
+			local msg = "Requires a standing lower than"
+			if offset ~= 0 then msg = msg .. " " .. offset end
+			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. "."
+			GameTooltip:AddLine(msg);
+		end
+		if reference.minReputation and reference.maxReputation then
+			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation)
+			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation)
+			local msg = "Requires a standing between"
+			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId, true) .. " and"
+			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId, true) .. ".";
+			GameTooltip:AddLine(msg);
+		end
 		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
 		if reference.instanceID then
 			if app.Settings:GetTooltipSetting("instanceID") then GameTooltip:AddDoubleLine(L["INSTANCE_ID"], tostring(reference.instanceID)); end
@@ -8031,14 +8012,6 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine(L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"], 1, 1, 1);
 			end
 		end
-		if not reference.itemID then
-			-- If there is a note for this item, show it.
-			local note = GetNoteForGroup(reference);
-			if note then
-				GameTooltip:AddLine("Custom Note:");
-				GameTooltip:AddLine(note, 1, 1, 1);
-			end
-		end
 		GameTooltip:Show();
 	end
 end
@@ -8252,8 +8225,8 @@ function app:GetDataCache()
 			end
 		});
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content_20190216_1";
-		allData.texcoord = {429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256};
+		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.text = L["TITLE"];
 		allData.description = L["DESCRIPTION"];
@@ -8283,11 +8256,12 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
-		-- World Drops
+		-- World Drops / Bind on Equips
 		if app.Categories.WorldDrops then
 			db = {};
 			db.expanded = false;
 			db.text = TRANSMOG_SOURCE_4;
+			--db.text = ITEM_BIND_ON_EQUIP;
 			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
@@ -8326,18 +8300,9 @@ function app:GetDataCache()
 		
 		-- World Events
 		if app.Categories.WorldEvents then
-			db = app.CreateAchievement(12827, app.Categories.WorldEvents);
+			db = app.CreateDifficulty(18, app.Categories.WorldEvents);
+			db.icon = "Interface\\Icons\\inv_misc_celebrationcake_01";
 			db.expanded = false;
-			db.text = EVENTS_LABEL;
-			db.collectible = false;
-			table.insert(g, db);
-		end
-		
-		-- Anniversary
-		if app.Categories.Anniversary then
-			db = app.CreateAchievement(12827, app.Categories.Anniversary);
-			db.expanded = false;
-			db.text = "WoW Anniversary";
 			db.collectible = false;
 			table.insert(g, db);
 		end
@@ -8755,8 +8720,8 @@ function app:GetDataCache()
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content_20190216_1";
-		allData.texcoord = {429 / 512, (429 + 36) / 512, 141 / 256, (141 + 36) / 256};
+		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
 		allData.text = L["TITLE"];
@@ -9171,6 +9136,13 @@ app:GetWindow("Unsorted");
 end)();
 --[[--
 -- Uncomment this section if you need to enable Debugger:
+app.ModelViewer = GameTooltipModel;
+app.ModelViewer.SetRotation = function(number)
+	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+end
+app.ModelViewer.SetScale = function(number)
+	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
+end
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -9581,6 +9553,10 @@ end):Show();
 						setmetatable(clone, getmetatable(group));
 						group = clone;
 						
+						-- If relative to a difficultyID, then merge it into one.
+						local difficultyID = GetRelativeValue(group, "difficultyID");
+						if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+						
 						-- If this is relative to a holiday, let's do something special
 						if GetRelativeField(group, "npcID", -3) then
 							if group.achievementID then
@@ -9631,6 +9607,8 @@ end):Show();
 							end
 						elseif group.key == "questID" then
 							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+						elseif group.key == "speciesID" then
+							MergeObject(groups, app.CreateNPC(-25, { g = { group } }), 1);
 						else
 							MergeObject(groups, group);
 						end
@@ -9682,6 +9660,39 @@ end):Show();
 						end
 						
 						tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
+					end
+					
+					-- Check for timewalking difficulty objects
+					for i, group in ipairs(groups) do
+						if group.difficultyID and group.difficultyID == 24 and group.g then
+							-- Look for a Common Boss Drop header.
+							local cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == -1 then
+									cbdIndex = j;
+									break;
+								end
+							end
+							
+							-- Push the Common Boss Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							end
+							
+							-- Look for a Zone Drop header.
+							cbdIndex = -1;
+							for j, subgroup in ipairs(group.g) do
+								if subgroup.npcID and subgroup.npcID == 0 then
+									cbdIndex = j;
+									break;
+								end
+							end
+							
+							-- Push the Zone Drop header to the top.
+							if cbdIndex > -1 then
+								table.insert(group.g, 1, table.remove(group.g, cbdIndex));
+							end
+						end
 					end
 					
 					-- Swap out the map data for the header.
@@ -9990,82 +10001,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end
 					end,
 				},
-				{
-					['text'] = "Reset Instances",
-					['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
-					['basedescription'] = "Click here to reset your instances.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						ResetInstances();
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						local locks = GetTempDataMember("lockouts");
-						if locks then
-							local description = data.basedescription .. "\n\nCurrent Instance Locks:";
-							for name, instance in pairs(locks) do
-								description = description .. "\n  " .. name;
-								if instance.shared then
-									-- shared raid lockout
-									local count, total = 0, 0;
-									for i,encounter in ipairs(instance.shared.encounters) do
-										if encounter.isKilled then count = count + 1; end
-										total = total + 1;
-									end
-									description = description .. " (" .. count .. " / " .. total .. ")";
-								else
-									-- specific difficulties
-									description = description .. "\n";
-									for difficultyID,difficulty in pairs(instance) do
-										description = description .. "    " .. "TODO " .. difficultyID;
-										
-										local count, total = 0, 0;
-										for i,encounter in ipairs(difficulty.encounters) do
-											if encounter.isKilled then count = count + 1; end
-											total = total + 1;
-										end
-										description = description .. " (" .. count .. " / " .. total .. ")";
-									end
-								end
-							end
-							data.description = description;
-							UpdateWindow(self, true);
-						elseif not data.description then
-							data.description = data.basedescription;
-							UpdateWindow(self, true);
-						end
-					end,
-				},
-				{
-					['text'] = "Delist Group",
-					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
-					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						C_LFGList.RemoveListing();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-				},
-				{
-					['text'] = "Leave Group",
-					['icon'] = "Interface\\Icons\\Ability_Vanish",
-					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						LeaveParty();
-						if GroupFinderFrame:IsVisible() then
-							PVEFrame_ToggleFrame("GroupFinderFrame")
-						end
-						self.data = raidassistant;
-						UpdateWindow(self, true);
-						return true;
-					end,
-				},
 				app.CreateDifficulty(1, {
 					['title'] = "Dungeon Difficulty",
 					["description"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
@@ -10126,6 +10061,81 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end
 					end,
 				}),
+				{
+					['text'] = "Teleport to/from Dungeon",
+					['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
+					['description'] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						LFGTeleport(IsInLFGDungeon());
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = IsAllowedToUserTeleport();
+					end,
+				},
+				{
+					['text'] = "Reset Instances",
+					['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
+					['description'] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						if IsAltKeyDown() then
+							row.ref.saved = not row.ref.saved;
+							self:Update();
+						else
+							ResetInstances();
+						end
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = not IsInGroup() or UnitIsGroupLeader("player");
+						if data.visible and data.saved then
+							if IsInInstance() or C_Scenario.IsInScenario() then
+								data.shouldReset = true;
+							elseif data.shouldReset then
+								data.shouldReset = nil;
+								C_Timer.After(0.5, ResetInstances);
+							end
+						end
+					end,
+				},
+				{
+					['text'] = "Delist Group",
+					['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+					['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						C_LFGList.RemoveListing();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = C_LFGList.GetActiveEntryInfo();
+					end,
+				},
+				{
+					['text'] = "Leave Group",
+					['icon'] = "Interface\\Icons\\Ability_Vanish",
+					['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						LeaveParty();
+						if GroupFinderFrame:IsVisible() then
+							PVEFrame_ToggleFrame("GroupFinderFrame")
+						end
+						self.data = raidassistant;
+						UpdateWindow(self, true);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = IsInGroup();
+					end,
+				},
 			}
 		};
 		lootspecialization = {
@@ -10283,6 +10293,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		self:RegisterEvent("CHAT_MSG_SYSTEM");
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		self:RegisterEvent("GROUP_ROSTER_UPDATE");
 	end
 	
 	-- Update the window and all of its row data
@@ -11311,23 +11322,6 @@ SlashCmdList["AllTheThingsMAPS"] = function(cmd)
 	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
-SLASH_AllTheThingsNote1 = "/attnote";
-SlashCmdList["AllTheThingsNote"] = function(cmd)
-	cmd = cmd or "";
-	if cmd == "clear" then
-		SetNote("mapID", app.GetCurrentMapID(), nil);
-		return nil;
-	elseif cmd ~= "" then
-		SetNote("mapID", app.GetCurrentMapID(), cmd);
-		return nil;
-	end
-	
-	-- Print out help
-	print("|cff15abff/attnote|r - Usage:");
-	print("|cff15abff/attnote|r |cffff9333clear|r - Clear the note for the current map.");
-	print("|cff15abff/attnote|r |cffff9333<note>|r - Write a note for the current map.");
-end
-
 SLASH_AllTheThingsRA1 = "/attra";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
@@ -11361,21 +11355,40 @@ app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
 app:RegisterEvent("HEIRLOOMS_UPDATED");
 app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
+app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+app:RegisterEvent("ARTIFACT_UPDATE");
 
 -- Define Event Behaviours
+app.events.ARTIFACT_UPDATE = function(...)
+	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
+	if itemID then
+		local count = C_ArtifactUI.GetNumRelicSlots();
+		if count and count > 0 then
+			local actArtifactData = GetDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			local myArtifactData = GetTempDataSubMember("ArtifactRelicItemLevels", itemID, {});
+			for relicSlotIndex=1,count,1 do
+				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
+				local artifactData = {
+					["relicType"] = relicType,
+					["iLvl"] = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
+				};
+				myArtifactData[relicSlotIndex] = artifactData;
+				local existingArtifactData = artifactData[relicSlotIndex];
+				if not existingArtifactData then
+					actArtifactData[relicSlotIndex] = artifactData;
+				elseif existingArtifactData.iLvl < artifactData.iLvl then
+					existingArtifactData.iLvl = artifactData.iLvl;
+				end
+			end
+		end
+	end
+end
 app.events.VARIABLES_LOADED = function()
 	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 	if not AllTheThingsAD then
 		AllTheThingsAD = { };
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	AllTheThingsPCD = _G["AllTheThingsPCD"]; -- For character specific data.
-	if not AllTheThingsPCD then
-		AllTheThingsPCD = { };
-		_G["AllTheThingsPCD"] = AllTheThingsPCD;
-	end
-	AllTheThingsHarvestItems = {};
-	
 	app:UpdateWindowColors();
 	
 	-- Cache information about the player.
@@ -11408,6 +11421,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedBuildings", {});
 	GetDataMember("CollectedFactions", {});
+	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedFollowers", {});
 	GetDataMember("CollectedMusicRolls", {});
 	GetDataMember("CollectedSelfieFilters", {});
@@ -11415,6 +11429,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("SeasonalFilters", {});
 	GetDataMember("UnobtainableItemFilters", {});
+	GetDataMember("ArtifactRelicItemLevels", {});
 	GetDataMember("WaypointFilters", {});
 	
 	-- Cache your character's lockouts.
@@ -11451,6 +11466,30 @@ app.events.VARIABLES_LOADED = function()
 		myBuildings = {};
 		buildings[app.GUID] = myBuildings;
 		SetTempDataMember("CollectedBuildings", myBuildings);
+	end
+	
+	-- Cache your character's flight path data.
+	local flightPaths = GetDataMember("CollectedFlightPathsPerCharacter", {});
+	local myFlightPaths = GetTempDataMember("CollectedFlightPaths", flightPaths[app.GUID]);
+	if not myFlightPaths then
+		myFlightPaths = {};
+		flightPaths[app.GUID] = myFlightPaths;
+		SetTempDataMember("CollectedFlightPaths", myFlightPaths);
+	end
+	
+	-- Migrate Flight Path data to the new containers.
+	if AllTheThingsAD.FlightPaths then
+		for key,value in pairs(AllTheThingsAD.FlightPaths) do
+			SetDataSubMember("CollectedFlightPaths", key, value);
+		end
+	end
+	if AllTheThingsPCD and AllTheThingsPCD.FlightPaths then
+		for key,value in pairs(AllTheThingsPCD.FlightPaths) do
+			if value then
+				myFlightPaths[key] = value;
+				SetDataSubMember("CollectedFlightPaths", key, value);
+			end
+		end
 	end
 	
 	-- Cache your character's follower data.
@@ -11530,14 +11569,64 @@ app.events.VARIABLES_LOADED = function()
 		characters[app.GUID] = app.Me;
 	end
 	
+	-- Cache your character's artifact relic item level data.
+	local artifactRelicItemLevels = GetDataMember("ArtifactRelicItemLevelsPerCharacter", {});
+	local myArtifactRelicItemLevels = GetTempDataMember("ArtifactRelicItemLevels", artifactRelicItemLevels[app.GUID]);
+	if not myArtifactRelicItemLevels then
+		myArtifactRelicItemLevels = {};
+		artifactRelicItemLevels[app.GUID] = myArtifactRelicItemLevels;
+		SetTempDataMember("ArtifactRelicItemLevels", myArtifactRelicItemLevels);
+	end
+	
 	-- Clean up settings
 	local oldsettings = {};
-	for i,key in ipairs({"Categories","Characters","CollectedArtifacts","CollectedBuildings","CollectedBuildingsPerCharacter","CollectedFactions","CollectedFactionBonusReputation","CollectedFactionsPerCharacter","CollectedFollowers","CollectedFollowersPerCharacter","CollectedIllusions","CollectedMusicRolls","CollectedMusicRollsPerCharacter","CollectedSelfieFilters","CollectedSelfieFiltersPerCharacter","CollectedSources","CollectedSpells","CollectedSpellsPerCharacter","CollectedTitles","CollectedToys","FilterSeasonal","CollectedTitlesPerCharacter","FilterUnobtainableItems","FlightPaths","lockouts","Notes","Position","RandomSearchFilter","Reagents","RefreshedCollectionsAlready","SeasonalFilters","Sets","SourceSets","UnobtainableItemFilters","WaypointFilters","EnableTomTomWaypointsOnTaxi","TomTomIgnoreCompletedObjects","WipedCollectedMusicRollsPerCharacter"}) do
+	for i,key in ipairs({
+		"ArtifactRelicItemLevelsPerCharacter",
+		"ArtifactRelicItemLevels",
+		"Categories",
+		"Characters",
+		"CollectedArtifacts",
+		"CollectedBuildings",
+		"CollectedBuildingsPerCharacter",
+		"CollectedFactionBonusReputation",
+		"CollectedFactions",
+		"CollectedFactionsPerCharacter",
+		"CollectedFollowers",
+		"CollectedFollowersPerCharacter",
+		"CollectedFlightPaths",
+		"CollectedFlightPathsPerCharacter",
+		"CollectedIllusions",
+		"CollectedMusicRolls",
+		"CollectedMusicRollsPerCharacter",
+		"CollectedSelfieFilters",
+		"CollectedSelfieFiltersPerCharacter",
+		"CollectedSources",
+		"CollectedSpells",
+		"CollectedSpellsPerCharacter",
+		"CollectedTitles",
+		"CollectedTitlesPerCharacter",
+		"CollectedToys",
+		"FilterSeasonal",
+		"FilterUnobtainableItems",
+		"lockouts",
+		"Position",
+		"RandomSearchFilter",
+		"Reagents",
+		"RefreshedCollectionsAlready",
+		"SeasonalFilters",
+		"Sets",
+		"SourceSets",
+		"UnobtainableItemFilters",
+		"WaypointFilters",
+		"EnableTomTomWaypointsOnTaxi",
+		"TomTomIgnoreCompletedObjects",
+		"WipedCollectedMusicRollsPerCharacter"
+	}) do
 		oldsettings[key] = AllTheThingsAD[key];
 	end
 	wipe(AllTheThingsAD);
 	for key,value in pairs(oldsettings) do
-		AllTheThingsAD[key] = oldsettings[key];
+		AllTheThingsAD[key] = value;
 	end
 
 	-- Tooltip Settings
@@ -11548,6 +11637,7 @@ end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.Spec = GetLootSpecialization();
+	app.CurrentMapID = app.GetCurrentMapID();
 	if not app.Spec or app.Spec == 0 then app.Spec = select(1, GetSpecializationInfo(GetSpecialization())); end
 	local reagentCache = app.GetDataMember("Reagents");
 	if reagentCache then
@@ -11745,7 +11835,7 @@ app.events.ADDON_LOADED = function(addonName)
 		
 		-- The ALL THE THINGS Epic Logo!
 		local f = frame:CreateTexture(nil, "ARTWORK");
-		f:SetATTSprite("base_36x36", 429, 141, 36, 36, 512, 256);
+		f:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
 		f:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 72, 0);
 		f:SetSize(36, 36);
 		f:SetScale(0.8);
@@ -12166,6 +12256,9 @@ app.events.LOOT_CLOSED = function()
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
 end
+app.events.ZONE_CHANGED_NEW_AREA = function()
+	app.CurrentMapID = app.GetCurrentMapID();
+end
 app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, not refresh the saves. :D
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
@@ -12193,7 +12286,6 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	end
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	GetQuestsCompleted(CompletedQuests);
 	CompletedQuests[questID] = true;
 	for questID,completed in pairs(DirtyQuests) do
 		app.QuestCompletionHelper(tonumber(questID));
