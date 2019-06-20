@@ -1,0 +1,16 @@
+6/19 19:16:59.728  ---- Startup ----
+6/19 19:17:09.274  ---- ClientAvailableHotfixes ----
+6/19 19:17:09.274      279, Cfg_Regions
+6/19 19:17:09.274      280, Cfg_Regions
+6/19 19:17:09.274      281, Cfg_Regions
+6/19 19:17:09.274      282, Cfg_Regions
+6/19 19:17:09.274      283, Cfg_Regions
+6/19 19:17:09.274  ---- UserClientHotfixRequest ----
+6/19 19:17:09.274  ---- ApplyingHotfixes from Cache ----
+6/19 19:17:09.274  	279 Table Cfg_Regions RecID 1089 valid
+6/19 19:17:09.274  	280 Table Cfg_Regions RecID 1090 valid
+6/19 19:17:09.274  	281 Table Cfg_Regions RecID 1091 valid
+6/19 19:17:09.274  	282 Table Cfg_Regions RecID 1092 valid
+6/19 19:17:09.274  	283 Table Cfg_Regions RecID 1093 valid
+6/19 19:17:09.274  ---- ApplyingHotfixes from Server ----
+6/19 19:49:36.180  ---- Shutdown ----

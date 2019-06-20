@@ -1,8 +1,0 @@
-Logging initialized.
-[INFO]-[BNL_Browser]: [20190523T03:10:17] {43f8} INF: setting background color 'ff000000'.
-[INFO]-[BNL_Renderer]: [20190523T03:10:18] {274c} INF: browser created
-[INFO]-[BNL_Browser]: [20190523T03:10:18] {43f8} INF: first page load completed
-[INFO]-[BNL_Browser]: [20190523T03:10:18] {43f8} INF: Navigating to 'https://api.twitter.com/oauth/authorize?force_login=true&oauth_token=XCaKZAAAAAAAYK5GAAABauOGt6g&lang=en-US'.
-[INFO]-[BNL_Browser]: [20190523T03:10:19] {43f8} INF: navigating to 'https://api.twitter.com/oauth/authorize?force_login=true&oauth_token=XCaKZAAAAAAAYK5GAAABauOGt6g&lang=en-US'. IsRedirect: 'false'
-[INFO]-[BNL_Browser]: [20190523T03:10:19] {43f8} INF: denied navigation to 'https://api.twitter.com/oauth/authorize?force_login=true&oauth_token=XCaKZAAAAAAAYK5GAAABauOGt6g&lang=en-US'.
-[INFO]-[BNL_Scene]: [20190523T03:10:25] {43f8} INF: received shutdown message from client.

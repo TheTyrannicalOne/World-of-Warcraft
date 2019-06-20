@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.1.05 (22nd May 2019, www.leatrix.com)
+-- 	Leatrix Plus 8.1.06 (19th June 2019, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.1.05"
+	LeaPlusLC["AddonVer"] = "8.1.06"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -1604,6 +1604,9 @@
 										-- Item is a crafting reagent so do nothing
 										return true
 									end
+									if itemID == 104286 then -- Quivering Firestorm Egg
+										return true
+									end
 								end
 							end
 						end
@@ -2234,7 +2237,7 @@
 
 			-- Add slider control
 			LeaPlusLC:MakeTx(SideMinimap, "Scale", 356, -72)
-			LeaPlusLC:MakeSL(SideMinimap, "MinimapScale", "", 1, 2, 0.1, 356, -92, "%.2f")
+			LeaPlusLC:MakeSL(SideMinimap, "MinimapScale", "Drag to set the minimap scale.|n|nNote that if you are using the default action bars, rescaling the minimap will also rescale the right action bars at startup so you may want to leave this at 100%.", 1, 2, 0.1, 356, -92, "%.2f")
 
 			----------------------------------------------------------------------
 			-- Hide the zone text bar
@@ -2550,7 +2553,7 @@
 			local QuestTextPanel = LeaPlusLC:CreatePanel("Quest Text", "QuestTextPanel")
 
 			LeaPlusLC:MakeTx(QuestTextPanel, "Text size", 16, -72)
-			LeaPlusLC:MakeSL(QuestTextPanel, "LeaPlusQuestFontSize", "", 10, 36, 1, 16, -92, "%.0f")
+			LeaPlusLC:MakeSL(QuestTextPanel, "LeaPlusQuestFontSize", "Drag to set the font size of quest text.", 10, 36, 1, 16, -92, "%.0f")
 
 			-- Function to update the font size
 			local function QuestSizeUpdate()
@@ -2608,7 +2611,7 @@
 			local MailTextPanel = LeaPlusLC:CreatePanel("Mail Text", "MailTextPanel")
 
 			LeaPlusLC:MakeTx(MailTextPanel, "Text size", 16, -72)
-			LeaPlusLC:MakeSL(MailTextPanel, "LeaPlusMailFontSize", "", 10, 36, 1, 16, -92, "%.0f")
+			LeaPlusLC:MakeSL(MailTextPanel, "LeaPlusMailFontSize", "Drag to set the font size of mail text.", 10, 36, 1, 16, -92, "%.0f")
 
 			-- Function to set the text size
 			local function MailSizeUpdate()
@@ -3566,7 +3569,7 @@
 			LeaPlusLC["FrameScale"] = 1.00
 
 			-- Create scale slider
-			LeaPlusLC:MakeSL(SideFrames, "FrameScale", "", 0.5, 3.0, 0.05, 16, -92, "%.2f")
+			LeaPlusLC:MakeSL(SideFrames, "FrameScale", "Drag to set the scale of the selected frame.", 0.5, 3.0, 0.05, 16, -92, "%.2f")
 			LeaPlusCB["FrameScale"]:HookScript("OnValueChanged", function(self, value)
 				if currentframe then -- If a frame is selected
 					-- Set real and drag frame scale
@@ -3664,7 +3667,7 @@
 					v:StopMovingOrSizing();
 					-- Save frame positions
 					LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = v:GetPoint();
-					v:SetPoint(LeaPlusDB["Frames"][vf]["Point"], UIParent, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"])
+					-- v:SetPoint(LeaPlusDB["Frames"][vf]["Point"], UIParent, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"])
 					LeaPlusFramesSaveCache(vf)
 				end
 			end
@@ -4602,7 +4605,7 @@
 			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -172, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
 
 			LeaPlusLC:MakeTx(SideTip, "Scale", 356, -72)
-			LeaPlusLC:MakeSL(SideTip, "LeaPlusTipSize", "", 0.50, 2.00, 0.05, 356, -92, "%.2f")
+			LeaPlusLC:MakeSL(SideTip, "LeaPlusTipSize", "Drag to set the tooltip scale.", 0.50, 2.00, 0.05, 356, -92, "%.2f")
 
 			-- Help button hidden
 			SideTip.h:Hide()
@@ -5173,7 +5176,10 @@
 
 					-- Find the level line
 					LT["MobInfoLine"] = 0
-					local line2, line3, line4 = _G["GameTooltipTextLeft2"]:GetText(), _G["GameTooltipTextLeft3"]:GetText(), _G["GameTooltipTextLeft4"]:GetText()
+					local line2, line3, line4
+					if _G["GameTooltipTextLeft2"] then line2 = _G["GameTooltipTextLeft2"]:GetText() end
+					if _G["GameTooltipTextLeft3"] then line3 = _G["GameTooltipTextLeft3"]:GetText() end
+					if _G["GameTooltipTextLeft4"] then line4 = _G["GameTooltipTextLeft4"]:GetText() end
 					if GameLocale == "ruRU" then -- Additional check for ruRU
 						if line2 and string.lower(line2):find(LevelString2) then LT["MobInfoLine"] = 2 end
 						if line3 and string.lower(line3):find(LevelString2) then LT["MobInfoLine"] = 3 end
@@ -5394,23 +5400,23 @@
 
 			-- Create slider controls
 			LeaPlusLC:MakeTx(SideViewport, "Top", 16, -72)
-			LeaPlusLC:MakeSL(SideViewport, "ViewPortTop", "", 0, 300, 5, 16, -92, "%.0f")
+			LeaPlusLC:MakeSL(SideViewport, "ViewPortTop", "Drag to set the size of the top border.", 0, 300, 5, 16, -92, "%.0f")
 			LeaPlusCB["ViewPortTop"]:HookScript("OnValueChanged", RefreshViewport)
 
 			LeaPlusLC:MakeTx(SideViewport, "Bottom", 16, -132)
-			LeaPlusLC:MakeSL(SideViewport, "ViewPortBottom", "", 0, 300, 5, 16, -152, "%.0f")
+			LeaPlusLC:MakeSL(SideViewport, "ViewPortBottom", "Drag to set the size of the bottom border.", 0, 300, 5, 16, -152, "%.0f")
 			LeaPlusCB["ViewPortBottom"]:HookScript("OnValueChanged", RefreshViewport)
 
 			LeaPlusLC:MakeTx(SideViewport, "Left", 186, -72)
-			LeaPlusLC:MakeSL(SideViewport, "ViewPortLeft", "", 0, 300, 5, 186, -92, "%.0f")
+			LeaPlusLC:MakeSL(SideViewport, "ViewPortLeft", "Drag to set the size of the left border.", 0, 300, 5, 186, -92, "%.0f")
 			LeaPlusCB["ViewPortLeft"]:HookScript("OnValueChanged", RefreshViewport)
 
 			LeaPlusLC:MakeTx(SideViewport, "Right", 186, -132)
-			LeaPlusLC:MakeSL(SideViewport, "ViewPortRight", "", 0, 300, 5, 186, -152, "%.0f")
+			LeaPlusLC:MakeSL(SideViewport, "ViewPortRight", "Drag to set the size of the right border.", 0, 300, 5, 186, -152, "%.0f")
 			LeaPlusCB["ViewPortRight"]:HookScript("OnValueChanged", RefreshViewport)
 
 			LeaPlusLC:MakeTx(SideViewport, "Transparency", 356, -132)
-			LeaPlusLC:MakeSL(SideViewport, "ViewPortAlpha", "", 0, 0.9, 0.1, 356, -152, "%.1f")
+			LeaPlusLC:MakeSL(SideViewport, "ViewPortAlpha", "Drag to set the transparency of the borders.", 0, 0.9, 0.1, 356, -152, "%.1f")
 			LeaPlusCB["ViewPortAlpha"]:HookScript("OnValueChanged", RefreshViewport)
 
 			-- Help button tooltip
@@ -5603,6 +5609,7 @@
 			-- Debug
 			-- Zn(L["Zones"], L["Eastern Kingdoms"], "Debug1", {"|cffffd800" .. L["Zones"] .. ": Debug1", "1020#1020", "1021#1021", "1022#1022", "1023#1023", "1024#1024",})
 			-- Zn(L["Zones"], L["Eastern Kingdoms"], "Debug2", {"|cffffd800" .. L["Zones"] .. ": Debug2", "1020#1020",})
+			-- Zn(L["Zones"], L["Eastern Kingdoms"], "Debug3", {"|cffffd800" .. L["Zones"] .. ": Debug2", "1020#1020", "sound/creature/hagara/vo_ds_hagara_crystalhit_01.ogg#574431#1",})
 
 			-- Zones: Eastern Kingdoms
 			Zn(L["Zones"], L["Eastern Kingdoms"], "|cffffd800" .. L["Eastern Kingdoms"], {""})
@@ -5905,6 +5912,106 @@
 			})
 			Zn(L["Various"], L["Various"], L["Arenas"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Arenas"], prefol, "Intro-NagrandDimond#10623", "MUS_50_Scenario_ArenaofAnnihilation#34019", "MUS_51_PVP_BrawlersGuild_Horde#34967", --[["MUS_80_PVP_ZandalarArena#117041", "MUS_80_PVP_KulTirasArena#114680",--]] "PVP-Battle Grounds#8233", "Zone-BladesEdge#9002",})
 			Zn(L["Various"], L["Various"], L["Battlegrounds"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Battlegrounds"], prefol, "Altervac Valley_PVP#8014", "MUS_50_Scenario_TempleofKotmogu#33978", "MUS_815_PVP_ArathiBasin_Intro#129818", "MUS_815_PVP_WarsongGultch_Intro#129817", "MUS_BattleForGilneas_BG#23612", "MUS_TwinPeaks_BG#23613", "PVP-Battle Grounds#8233", "PVP-Battle Grounds--DeepwindGorge#37659", "PVP-Battle Grounds-Pandaria#33714", "PVP-Battle Grounds-SilvershardMines#33713", "PVPVictoryAlliance#8455", "PVPVictoryHorde#8454", "Zone-WintergraspContested#14912",})
+			Zn(L["Various"], L["Various"], L["Cinematics"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Cinematics"], prefol, 
+				-- Cinematic Music: World of Warcraft
+				"|cffffd800", "|cffffd800" .. L["World of Warcraft"], 
+				"|Cffffffff" .. L["Ten Years of Warcraft"] .. " |rinterface/cinematics/logo.mp3#625988#27",
+				"|Cffffffff" .. L["World of Warcraft"] .. " |rinterface/cinematics/wow_intro.mp3#625564#170",
+
+				-- Cinematic Music: The Burning Crusade
+				"|cffffd800", "|cffffd800" .. L["The Burning Crusade"], 
+				"|Cffffffff" .. L["The Burning Crusade"] .. " |rinterface/cinematics/wow_intro_bc.mp3#625565#168",
+
+				-- Cinematic Music: Wrath of the Lich King
+				"|cffffd800", "|cffffd800" .. L["Wrath of the Lich King"], 
+				"|Cffffffff" .. L["Wrath of the Lich King"] .. " |rinterface/cinematics/wow_intro_lk.mp3#457498#198",
+				"|Cffffffff" .. L["Battle of Angrathar the Wrathgate"] .. " |rinterface/cinematics/wow_wrathgate.mp3#458394#265",
+				"|Cffffffff" .. L["Fall of the Lich King"] .. " |rinterface/cinematics/wow_fotlk.mp3#625989#231",
+
+				-- Cinematic Music: Cataclysm
+				"|cffffd800", "|cffffd800" .. L["Cataclysm"], 
+				"|Cffffffff" .. L["Cataclysm"] .. " |rinterface/cinematics/wow3x_intro.mp3#455939#144",
+				"|Cffffffff" .. L["Last Stand"] .. " |rinterface/cinematics/worgen.mp3#455940#101",
+				"|Cffffffff" .. L["Leaving Kezan"] .. " |rinterface/cinematics/goblin.mp3#452603#104",
+				"|Cffffffff" .. L["The Dragon Soul"] .. " |rinterface/cinematics/dsi_act1.mp3#576955#29",
+				"|Cffffffff" .. L["Spine of Deathwing"] .. " |rinterface/cinematics/dsi_act2.mp3#576956#21",
+				"|Cffffffff" .. L["Madness of Deathwing"] .. " |rinterface/cinematics/dsi_act3.mp3#576957#27",
+				"|Cffffffff" .. L["Fall of Deathwing"] .. " |rinterface/cinematics/dsi_act4.mp3#577085#94",
+
+				-- Cinematic Music: Mists of Pandaria
+				"|cffffd800", "|cffffd800" .. L["Mists of Pandaria"], 
+				"|Cffffffff" .. L["Mists of Pandaria"] .. " |rinterface/cinematics/wow_intro_mop.mp3#644071#228",
+				"|Cffffffff" .. L["Risking It All"] .. " |rinterface/cinematics/mop_gse.mp3#644128#62",
+				"|Cffffffff" .. L["Leaving the Wandering Isle"] .. " |rinterface/cinematics/mop_br.mp3#644124#40",
+				"|Cffffffff" .. L["Jade Forest Crash"] .. " |rinterface/cinematics/mop_jade_crash.mp3#654949#18",
+				"|Cffffffff" .. L["The King's Command"] .. " |rinterface/cinematics/mop_wra.mp3#644136#59",
+				"|Cffffffff" .. L["The Art of War"] .. " |rinterface/cinematics/mop_wrh.mp3#644138#56",
+				"|Cffffffff" .. L["Battle of Serpent's Heart"] .. " |rinterface/cinematics/mop_jade.mp3#644134#106",
+				"|Cffffffff" .. L["The Fleet in Krasarang (Horde)"] .. " |rinterface/cinematics/mop_hsl.mp3#668416#27",
+				"|Cffffffff" .. L["The Fleet in Krasarang (Alliance)"] .. " |rinterface/cinematics/mop_asl.mp3#668414#27",
+				"|Cffffffff" .. L["Hellscream's Downfall (Horde)"] .. " |rinterface/cinematics/oro_horde.mp3#916419#161",
+				"|Cffffffff" .. L["Hellscream's Downfall (Alliance)"] .. " |rinterface/cinematics/oro_alliance.mp3#916417#140",
+
+				-- Cinematic Music: Warlords of Draenor
+				"|cffffd800", "|cffffd800" .. L["Warlords of Draenor"], 
+				"|Cffffffff" .. L["Warlords of Draenor"] .. " |rinterface/cinematics/wod_mainintro.mp3#1068826#258",
+				--"|Cffffffff" .. L["Darkness Falls"] .. " |rinterface/cinematics/wod_vel.mp3#1068485#610",
+				--"|Cffffffff" .. L["The Battle of Thunder Pass"] .. " |rinterface/cinematics/wod_fwv.mp3#1068482#43",
+				--"|Cffffffff" .. L["A Taste of Iron"] .. " |rinterface/cinematics/wod_dpo.mp3#1068481#19",
+				--"|Cffffffff" .. L["Bigger is Better (Alliance)"] .. " |rinterface/cinematics/wod_gar_alliance_tier1-2.mp3#1068478#13",
+				--"|Cffffffff" .. L["Gul'dan Ascendant"] .. " |rinterface/cinematics/wod_gto.mp3#1112524#278",
+				--"|Cffffffff" .. L["Shipyard Construction (Horde)"] .. " |rinterface/cinematics/wod_gar_shipyard_lj_h.mp3#1137841#14",
+
+				-- Cinematic Music: Legion
+				"|cffffd800", "|cffffd800" .. L["Legion"], 
+				"|Cffffffff" .. L["Legion"] .. " |rinterface/cinematics/legion_intro.mp3#1487144#225",
+				"|Cffffffff" .. L["The Invasion Begins"] .. " |rinterface/cinematics/legion_dh1.mp3#1487142#64",
+				"|Cffffffff" .. L["Return to the Black Temple"] .. " |rinterface/cinematics/legion_dh2.mp3#1487143#129",
+				"|Cffffffff" .. L["The Demon's Trail"] .. " |rinterface/cinematics/legion_val_yx.mp3#1487148#38",
+				"|Cffffffff" .. L["The Fate of Val'sharah"] .. " |rinterface/cinematics/legion_val_yd.mp3#1487147#82",
+				"|Cffffffff" .. L["Fate of the Horde"] .. " |rinterface/cinematics/legion_org_vs.mp3#1487145#145",
+				"|Cffffffff" .. L["A New Life for Undeath"] .. " |rinterface/cinematics/legion_sth.mp3#1487146#114",
+				"|Cffffffff" .. L["Harbingers Gul'dan"] .. " |rinterface/cinematics/legion_hrb_g.mp3#1487156#364",
+				"|Cffffffff" .. L["Harbingers Khadgar"] .. " |rinterface/cinematics/legion_hrb_k.mp3#1487155#311",
+				"|Cffffffff" .. L["Harbingers Illidan"] .. " |rinterface/cinematics/legion_hrb_i.mp3#1487157#245",
+				"|Cffffffff" .. L["The Nightborne Pact"] .. " |rinterface/cinematics/legion_su_i.mp3#1510277#129",
+				"|Cffffffff" .. L["Stormheim (Horde)"] .. " |rinterface/cinematics/legion_g_h_sth.mp3#1506511#19",
+				"|Cffffffff" .. L["Stormheim (Alliance)"] .. " |rinterface/cinematics/legion_g_a_sth.mp3#1506512#20",
+				"|Cffffffff" .. L["Tomb of Sargeras"] .. " |rinterface/cinematics/legion_bs_i.mp3#1505326#15",
+				"|Cffffffff" .. L["The Battle for Broken Shore (Alliance)"] .. " |rinterface/cinematics/legion_bs_a.mp3#1506318#252",
+				"|Cffffffff" .. L["The Battle for Broken Shore (Horde)"] .. " |rinterface/cinematics/legion_bs_h.mp3#1506319#260",
+				"|Cffffffff" .. L["A Falling Star"] .. " |rinterface/cinematics/legion_iq_lv.mp3#1510075#77",
+				"|Cffffffff" .. L["Destiny Unfulfilled"] .. " |rinterface/cinematics/legion_iq_id.mp3#1510074#50",
+				"|Cffffffff" .. L["The Nighthold"] .. " |rinterface/cinematics/legion_su_r.mp3#1558961#81",
+				"|Cffffffff" .. L["Victory at The Nighthold"] .. " |rinterface/cinematics/legion_72_tst.mp3#1617300#161",
+				"|Cffffffff" .. L["A Found Memento"] .. " |rinterface/cinematics/legion_72_ars.mp3#1617299#164",
+				"|Cffffffff" .. L["Assault on the Broken Shore"] .. " |rinterface/cinematics/legion_72_ots.mp3#1617301#29",
+				"|Cffffffff" .. L["Kil'Jaeden's Downfall"] .. " |rinterface/cinematics/legion_72_tsf.mp3#1671790#137",
+				"|Cffffffff" .. L["Arrival on Argus"] .. " |rinterface/cinematics/legion_73_agi.mp3#1720225#195",
+				"|Cffffffff" .. L["Rejection of the Gift"] .. " |rinterface/cinematics/legion_73_rtg.mp3#1720226#198",
+				"|Cffffffff" .. L["Reincarnation of Alleria Windrunner"] .. " |rinterface/cinematics/legion_73_avt.mp3#1720227#32",
+				"|Cffffffff" .. L["Rise of Argus"] .. " |rinterface/cinematics/legion_73_pan.mp3#1720231#57",
+				"|Cffffffff" .. L["Antorus Ending"] .. " |rinterface/cinematics/legion_73_afn.mp3#1780281#182",
+				"|Cffffffff" .. L["Epilogue (Horde)"] .. " |rinterface/cinematics/legion_735_eph.mp3#1862317#145",
+				"|Cffffffff" .. L["Epilogue (Alliance)"] .. " |rinterface/cinematics/legion_735_epa.mp3#1862316#157",
+
+				-- Cinematic Music: Battle for Azeroth
+				"|cffffd800", "|cffffd800" .. L["Battle for Azeroth"], 
+				"|Cffffffff" .. L["Battle for Azeroth"] .. " |rinterface/cinematics/bfa_800_rb.mp3#2125419#263",
+				"|Cffffffff" .. L["Warbringers Sylvanas"] .. " |rinterface/cinematics/bfa_800_sv.mp3#2175009#232",
+				"|Cffffffff" .. L["The Fall of Lordaeron"] .. " |rinterface/cinematics/bfa_800_ltc_h.mp3#2175023#223",
+				"|Cffffffff" .. L["Jaina Joins the Battle"] .. " |rinterface/cinematics/bfa_800_ltt.mp3#2175028#86",
+				"|Cffffffff" .. L["Embers of War"] .. " |rinterface/cinematics/bfa_800_ltc_a.mp3#2175018#178",
+				"|Cffffffff" .. L["Arrival to Zandalar"] .. " |rinterface/cinematics/bfa_800_stz.mp3#2175033#183",
+				"|Cffffffff" .. L["Vision of Sailor's Memory"] .. " |rinterface/cinematics/bfa_800_zia.mp3#2175038#25",
+				"|Cffffffff" .. L["Jaina Returns to Kul Tiras"] .. " |rinterface/cinematics/bfa_800_kta.mp3#2175043#118",
+				"|Cffffffff" .. L["Jaina's Nightmare"] .. " |rinterface/cinematics/bfa_800_jnm.mp3#2175048#96",
+				"|Cffffffff" .. L["Warbringers Jaina"] .. " |rinterface/cinematics/bfa_800_ja.mp3#2175053#274",
+				"|Cffffffff" .. L["The Return of Hope"] .. " |rinterface/cinematics/bfa_800_ktf.mp3#2175068#152",
+				"|Cffffffff" .. L["Realm Of Torment"] .. " |rinterface/cinematics/bfa_800_rot.mp3#2175073#164",
+				"|Cffffffff" .. L["Terror of Darkshore"] .. " |rinterface/cinematics/bfa_810_tod.mp3#2543204#164",
+				"|Cffffffff" .. L["An Unexpected Reunion"] .. " |rinterface/cinematics/bfa_815_dpr.mp3#2845776#170",
+			})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
 			Zn(L["Various"], L["Various"], L["Events"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Events"], prefol, 
@@ -5941,10 +6048,10 @@
 			Zn(L["Movies"], L["Movies"], L["The Burning Crusade"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["The Burning Crusade"], prefol, L["The Burning Crusade"] .. " |r(27)"})
 			Zn(L["Movies"], L["Movies"], L["Wrath of the Lich King"]					, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Wrath of the Lich King"], prefol, L["Wrath of the Lich King"] .. " |r(18)", L["Battle of Angrathar the Wrathgate"] .. " |r(14)", L["Fall of the Lich King"] .. " |r(16)"})
 			Zn(L["Movies"], L["Movies"], L["Cataclysm"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Cataclysm"], prefol, L["Cataclysm"] .. " |r(23)", L["Last Stand"] .. " |r(21)", L["Leaving Kezan"] .. " |r(22)", L["The Dragon Soul"] .. " |r(73)", L["Spine of Deathwing"] .. " |r(74)", L["Madness of Deathwing"] .. " |r(75)", L["Fall of Deathwing"] .. " |r(76)"})
-			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
+			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["Jade Forest Crash"] .. " |r(121)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
-			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
-			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)",})
+			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["Stormheim (Alliance)"] .. " |r(483)", L["Stormheim (Horde)"] .. " |r(484)", L["Tomb of Sargeras"] .. " |r(486)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["The Nighthold"] .. " |r(549)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Assault on the Broken Shore"] .. " |r(637)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
+			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Warbringers Jaina"] .. " |r(861)", L["The Return of Hope"] .. " |r(864)", L["Realm Of Torment"] .. " |r(865)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)",})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -6142,7 +6249,9 @@
 					LastFolder = ""
 					UpdateList()
 				end
-				-- Lock button and cancel update script
+				-- Cancel sound file music timer
+				if LeaPlusLC.TrackTimer then LeaPlusLC.TrackTimer:Cancel() end
+				-- Lock button and unregister next track events
 				LeaPlusLC:LockItem(stopBtn, true)
 				uframe:UnregisterEvent("SOUNDKIT_FINISHED")
 				uframe:UnregisterEvent("LOADING_SCREEN_DISABLED")
@@ -6155,8 +6264,33 @@
 			local function PlayTrack()
 				-- Play tracks
 				if musicHandle then StopSound(musicHandle) end
-				local file, soundID = playlist[tracknumber]:match("([^,]+)%#([^,]+)")
-				willPlay, musicHandle = PlaySound(soundID, "Master", false, true)
+				local file, soundID, trackTime
+				if playlist[tracknumber]:match("([^,]+)%#([^,]+)%#([^,]+)") then
+					-- Music file with track time
+					file, soundID, trackTime = playlist[tracknumber]:match("([^,]+)%#([^,]+)%#([^,]+)")
+					if ClientVersion == "8.2.0" then
+						willPlay, musicHandle = PlaySoundFile(soundID, "Master", false, true)
+					else
+						willPlay, musicHandle = PlaySoundFile(gsub(file, "|C.-|r", ""), "Master", false, true)
+					end
+				else
+					-- Sound kit without track time
+					file, soundID = playlist[tracknumber]:match("([^,]+)%#([^,]+)")
+					willPlay, musicHandle = PlaySound(soundID, "Master", false, true)
+				end
+				-- Cancel existing music timer for a sound file
+				if LeaPlusLC.TrackTimer then LeaPlusLC.TrackTimer:Cancel() end
+				if playlist[tracknumber]:match("([^,]+)%#([^,]+)%#([^,]+)") then
+					-- Track is a sound file with track time so create track timer
+					LeaPlusLC.TrackTimer = C_Timer.NewTimer(trackTime + 1, function()
+						if musicHandle then StopSound(musicHandle) end
+						if tracknumber == #playlist then
+							-- Playlist is at the end, restart from first track
+							tracknumber = 1
+						end
+						PlayTrack()
+					end)
+				end
 				-- Store its handle for later use
 				LastMusicHandle = musicHandle
 				LastPlayed = playlist[tracknumber]
@@ -6166,12 +6300,25 @@
 					local button = scrollFrame.buttons[index]
 					local item = button:GetText()
 					if item then
-						local item, void = item:match("([^,]+)%#([^,]+)")
-						if item then
-							if item == file and LastFolder == TempFolder then
-								button.s:Show()
-							else
-								button.s:Hide()
+						if item:match("([^,]+)%#([^,]+)%#([^,]+)") then
+							-- Music file with track time
+							local item, void, void = item:match("([^,]+)%#([^,]+)%#([^,]+)")
+							if item then
+								if item == file and LastFolder == TempFolder then
+									button.s:Show()
+								else
+									button.s:Hide()
+								end
+							end
+						else
+							-- Sound kit without track time
+							local item, void = item:match("([^,]+)%#([^,]+)")
+							if item then
+								if item == file and LastFolder == TempFolder then
+									button.s:Show()
+								else
+									button.s:Hide()
+								end
 							end
 						end
 					end
@@ -7429,6 +7576,9 @@
 		Slider:SetWidth(100)
 		Slider:SetHeight(20)
 		Slider:SetHitRectInsets(0, 0, 0, 0);
+		Slider.tiptext = caption
+		Slider:SetScript("OnEnter", LeaPlusLC.TipSee)
+		Slider:SetScript("OnLeave", GameTooltip_Hide)
 
 		-- Remove slider text
 		_G[Slider:GetName().."Low"]:SetText('');
@@ -8315,19 +8465,20 @@
 								for k, v in pairs(b.tracks) do
 									-- Check for bad sound IDs
 									if not strfind(v, "|c") then
-										local temFile, temSoundID = v:match("([^,]+)%#([^,]+)")
-										if temSoundID then
-											local temPlay, temHandle = PlaySound(temSoundID, "Master", false, true)
-											if temHandle then StopSound(temHandle) end
-											temPlay, temHandle = PlaySound(temSoundID, "Master", false, true)
-											if not temPlay and not temHandle then
-												print("|cffff5400" .. L["Bad ID"] .. ": |r" .. e, v)
-												badidfound = true
-											else
+										if not v:match("([^,]+)%#([^,]+)%#([^,]+)") then
+											local temFile, temSoundID = v:match("([^,]+)%#([^,]+)")
+											if temSoundID then
+												local temPlay, temHandle = PlaySound(temSoundID, "Master", false, true)
 												if temHandle then StopSound(temHandle) end
+												temPlay, temHandle = PlaySound(temSoundID, "Master", false, true)
+												if not temPlay and not temHandle then
+													print("|cffff5400" .. L["Bad ID"] .. ": |r" .. e, v)
+													badidfound = true
+												else
+													if temHandle then StopSound(temHandle) end
+												end
 											end
 										end
-
 										-- Check for duplicate IDs
 										if tContains(same, v) and mask == false then 
 											mask = true
@@ -9232,9 +9383,9 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnableHotkey"				, "Enable hotkey"					, 146, -112,	true,	"If checked, you can open Leatrix Plus by pressing CTRL/Z.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Scale", 340, -72);
-	LeaPlusLC:MakeSL(LeaPlusLC[pg], "PlusPanelScale", "", 1, 2, 0.1, 340, -92, "%.1f")
+	LeaPlusLC:MakeSL(LeaPlusLC[pg], "PlusPanelScale", "Drag to set the scale of the Leatrix Plus panel.", 1, 2, 0.1, 340, -92, "%.1f")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Transparency", 340, -132);
-	LeaPlusLC:MakeSL(LeaPlusLC[pg], "PlusPanelAlpha", "", 0, 1, 0.1, 340, -152, "%.1f")
+	LeaPlusLC:MakeSL(LeaPlusLC[pg], "PlusPanelAlpha", "Drag to set the transparency of the Leatrix Plus panel.", 0, 1, 0.1, 340, -152, "%.1f")
 
 	LeaPlusLC:ShowMemoryUsage(LeaPlusLC[pg], "TOPLEFT", 146, -262)
