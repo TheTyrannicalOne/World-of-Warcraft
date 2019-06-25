@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [107574] = {
+        name = "Anduin Wrynn",
+    },
     [108017] = {
         name = "Torv Doppio Colpo",
     },
@@ -2069,6 +2072,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149736] = {
         name = "Immagine di Mimiron",
     },
+    [149815] = {
+        name = "Grizzek Frizzachiavi",
+    },
     [149823] = {
         name = "Magni Barbabronzea",
     },
@@ -2080,6 +2086,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [149870] = {
         name = "Grif Cuorselvaggio",
+    },
+    [150101] = {
+        name = "Dama Jaina Marefiero",
     },
     [150309] = {
         name = "Baine Zoccolo Sanguinario",
@@ -2099,8 +2108,20 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150515] = {
         name = "Cyrus Granscogliera",
     },
+    [150555] = {
+        name = "Waren Cuordentato",
+    },
+    [150573] = {
+        name = "Kerpezz il Riciclatore",
+    },
     [150574] = {
         name = "Dama Jaina Marefiero",
+    },
+    [150630] = {
+        name = "Flip Caricalesta",
+    },
+    [150631] = {
+        name = "Pristy Caricalesta",
     },
     [150633] = {
         name = "Dama Jaina Marefiero",
@@ -2144,6 +2165,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Santuario delle Tempeste",
     },
+    [151000] = {
+        name = "Maestro di Spade Okani",
+    },
     [151061] = {
         name = "Mimiron",
     },
@@ -2174,11 +2198,38 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151287] = {
         name = "Telonis",
     },
+    [151309] = {
+        name = "Esploratore Pinnalga",
+    },
+    [151626] = {
+        name = "Cacciatore Akana",
+    },
+    [151763] = {
+        name = "Isla",
+    },
+    [151848] = {
+        name = "Lor'themar Theron",
+    },
+    [151851] = {
+        name = "Capo Telemante Oculeth",
+    },
     [152002] = {
         name = "Immagine di Mimiron",
     },
+    [152084] = {
+        name = "Mrrl",
+    },
+    [152194] = {
+        name = "M.A.D.R.E.",
+    },
+    [152206] = {
+        name = "Magni Barbabronzea",
+    },
     [152255] = {
         name = "Sef Iwen",
+    },
+    [152295] = {
+        name = "Pascal",
     },
     [152489] = {
         name = "Santuario delle Tempeste",
@@ -2197,5 +2248,35 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152497] = {
         name = "Santuario del Vespro",
+    },
+    [152747] = {
+        name = "Christy Pestaviti",
+    },
+    [153509] = {
+        name = "Artigiano Okata",
+    },
+    [153510] = {
+        name = "Artigiano Itanu",
+    },
+    [153512] = {
+        name = "Cercatore Pruc",
+    },
+    [153514] = {
+        name = "Cercatrice Paltha",
+    },
+    [153617] = {
+        name = "Shandris Piumaluna",
+    },
+    [154248] = {
+        name = "Spadaccino Inowari",
+    },
+    [154257] = {
+        name = "Istruttore Ulooaka",
+    },
+    [154408] = {
+        name = "Rolm",
+    },
+    [154640] = {
+        name = "Gran Maresciallo Fremilama",
     },
 })

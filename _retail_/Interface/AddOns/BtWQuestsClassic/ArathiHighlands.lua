@@ -964,6 +964,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_ARATHI_HIGHLANDS_CHAIN3, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_ARATHI_HIGHLANDS, {
 	name = BtWQuests_GetMapName(MAP_ID),
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851092,
+		texCoords = {0,1,0,1},
+	},
 	items = {
 		{
 			type = "chain",

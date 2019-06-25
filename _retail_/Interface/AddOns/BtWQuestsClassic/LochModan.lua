@@ -992,6 +992,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_LOCH_MODAN_CHAIN3, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_LOCH_MODAN, {
 	name = BtWQuests_GetMapName(MAP_ID),
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851081,
+		texCoords = {0,1,0,1},
+	},
 	restrictions = {
 		{
 			type = "faction",

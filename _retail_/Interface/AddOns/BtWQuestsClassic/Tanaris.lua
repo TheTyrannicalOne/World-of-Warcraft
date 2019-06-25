@@ -2,34 +2,34 @@ local MAP_ID = 71
 local ACHIEVEMENT_ID = 4935
 local CONTINENT_ID = 12
 
-BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE = 13601
-BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE = 13602
-BTWQUESTS_CHAIN_TANARIS_BUG_FREE = 13603
-BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE = 13604
-BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_HORDE = 13605
-BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH = 13607
-BTWQUESTS_CHAIN_TANARIS_THE_TITANS_ALLIANCE = 13608
-BTWQUESTS_CHAIN_TANARIS_THE_TITANS_HORDE = 13609
-BTWQUESTS_CHAIN_TANARIS_CHAIN01 = 13626
-BTWQUESTS_CHAIN_TANARIS_CHAIN02 = 13627
-BTWQUESTS_CHAIN_TANARIS_CHAIN03 = 13623
-BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN01 = 13611
-BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN02 = 13617
-BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN03 = 13618
-BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN04 = 13619
-BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN05 = 13625
-BTWQUESTS_CHAIN_TANARIS_OTHER_ALLIANCE = 13697
-BTWQUESTS_CHAIN_TANARIS_OTHER_HORDE = 13698
-BTWQUESTS_CHAIN_TANARIS_OTHER_BOTH = 13699
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE = 13601
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_HORDE = 13602
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_BUG_FREE = 13603
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE = 13604
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_HORDE = 13605
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_GRUDGE_MATCH = 13607
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_ALLIANCE = 13608
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_HORDE = 13609
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN01 = 13626
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN02 = 13627
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN03 = 13623
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN01 = 13611
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN02 = 13617
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN03 = 13618
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN04 = 13619
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN05 = 13625
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_OTHER_ALLIANCE = 13697
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_OTHER_HORDE = 13698
+BTWQUESTS_CHAIN_CLASSIC_TANARIS_OTHER_BOTH = 13699
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -124,19 +124,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_BUG_FREE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_BUG_FREE,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -231,12 +231,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_BUG_FREE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_BUG_FREE,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_BUG_FREE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_BUG_FREE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -249,11 +249,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_BUG_FREE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_HORDE,
         },
     },
     active = {
@@ -270,11 +270,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_BUG_FREE, {
             variations = {
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
                 },
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_HORDE,
                 },
             },
             x = 3,
@@ -346,14 +346,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_BUG_FREE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -366,7 +366,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_ALLIA
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
         },
     },
     active = {
@@ -434,14 +434,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_ALLIA
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -514,7 +514,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_HORDE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN01,
             aside = true,
             embed = true,
         },
@@ -525,7 +525,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_HORDE
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_GRUDGE_MATCH, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -627,14 +627,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_THE_TITANS_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_THE_TITANS_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -722,14 +722,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_THE_TITANS_ALLIANCE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_THE_TITANS_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_THE_TITANS_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -811,13 +811,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_THE_TITANS_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN01, {
     name = BTWQUESTS_INTRODUCTION,
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_CHAIN02,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN02,
     },
     restrictions = {
         type = "faction",
@@ -837,7 +837,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN01, {
     completed = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_GRUDGE_MATCH,
         },
         {
             type = "quest",
@@ -847,34 +847,34 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN01, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_GRUDGE_MATCH,
             x = -3,
             y = 0,
             embed = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN02,
             x = 2,
             y = 0,
             embed = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN04,
             x = 6,
             y = 0,
             embed = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN02, {
     name = BTWQUESTS_INTRODUCTION,
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_TANARIS_CHAIN01,
+        BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN01,
     },
     restrictions = {
         type = "faction",
@@ -894,7 +894,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN02, {
     completed = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_GRUDGE_MATCH,
         },
         {
             type = "quest",
@@ -904,28 +904,28 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN02, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_GRUDGE_MATCH,
             x = -3,
             y = 0,
             embed = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN03,
             x = 2,
             y = 0,
             embed = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN04,
             x = 6,
             y = 0,
             embed = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN03, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN03, {
     name = { -- Sandsorrow Watch
         type = "quest",
         id = 25091,
@@ -951,7 +951,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN03, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN05,
             aside = true,
             x = 1,
             y = 0,
@@ -997,7 +997,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_CHAIN03, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN01, {
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1026,7 +1026,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN01, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN02, {
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1081,13 +1081,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN02, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
             x = 1,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN03, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN03, {
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1142,13 +1142,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN03, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_HORDE,
             x = 1,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN04, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN04, {
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1193,7 +1193,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN04, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN05, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_EMBED_CHAIN05, {
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1222,7 +1222,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_EMBED_CHAIN05, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1242,7 +1242,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_OTHER_ALLIANCE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1254,7 +1254,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_OTHER_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_TANARIS_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_TANARIS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1314,50 +1314,54 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_TANARIS_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_TANARIS, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851109,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_SOUTHSEA_PIRATES_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_SOUTHSEA_PIRATES_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_BUG_FREE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_BUG_FREE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_ADVANCING_OUR_INTERESTS_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_ADVANCING_OUR_INTERESTS_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_GRUDGE_MATCH,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_GRUDGE_MATCH,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_THE_TITANS_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_THE_TITANS_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_THE_TITANS_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN01,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN02,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_TANARIS_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_TANARIS_CHAIN03,
         },
     },
 })

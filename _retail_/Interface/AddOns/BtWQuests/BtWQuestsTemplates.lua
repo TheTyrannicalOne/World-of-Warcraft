@@ -191,7 +191,13 @@ function BtWQuestsCategoryItemMixin:Set(item)
 
     self.Name:SetText(item:GetName())
 
-    self.Background:SetTexture(item:GetButtonImage())
+    local texture, left, right, top, bottom = item:GetButtonImage()
+    self.Background:SetTexture(texture)
+    if left ~= nil then
+        self.Background:SetTexCoord(left, right, top, bottom)
+    else
+        self.Background:SetTexCoord(0.01953125, 0.66015625, 0.0390625, 0.7109375)
+    end
     self.Acive:SetShown(item:IsActive())
     self.Tick:SetShown(item:IsCompleted())
     self.Major:SetShown(item:IsMajor())
@@ -789,7 +795,7 @@ function BtWQuestsNavBarMixin:GoToItem(item)
         if self.enableExpansions then
             BtWQuestsFrame:SelectExpansion()
         else
-            BtWQuestsFrame:SelectExpansion(item.id)
+            BtWQuestsFrame:SelectExpansion(BtWQuestsFrame.expansionID or BtWQuestsDatabase:GetFirstExpansion())
         end
     elseif item.type == "expansion" then
         BtWQuestsFrame:SelectExpansion(item.id)
@@ -1552,6 +1558,9 @@ end
 function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
     local id = tonumber(id)
     
+    self.character = character
+    self.questID = id
+    
     local _, name = BtWQuestsDatabase:GetQuestByID(id, character)
     local questLogIndex = GetQuestLogIndexByID(id)
     local _, objectiveText = GetQuestLogQuestText(questLogIndex);
@@ -1559,19 +1568,20 @@ function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
     self:ClearLines()
     self:AddDoubleLine(name)
     
-    self:AddLine(GREEN_FONT_COLOR_CODE..QUEST_TOOLTIP_ACTIVE..FONT_COLOR_CODE_CLOSE)
+    if character:IsQuestActive(id) then
+        self:AddLine(GREEN_FONT_COLOR_CODE..QUEST_TOOLTIP_ACTIVE..FONT_COLOR_CODE_CLOSE)
+    end
 
     if objectiveText then
         self:AddLine(" ")
         self:AddLine(objectiveText, 1, 1, 1)
     end
     
-    local requiredMoney = GetQuestLogRequiredMoney(questLogIndex);
-    local numRequirements = GetNumQuestLeaderBoards(questLogIndex);
+    local numRequirements = character:GetNumQuestLeaderBoards(id);
 
     local addedTitle
 	for index = 1,numRequirements do
-        local name, _, completed = GetQuestLogLeaderBoard(index, questLogIndex);
+        local name, _, completed = character:GetQuestLogLeaderBoard(index, id);
         if name then
             if not addedTitle then
                 self:AddLine(" ")
@@ -1590,6 +1600,7 @@ function BtWQuestsTooltipMixin:SetActiveQuest(id, character)
     self:OnSetQuest()
     self:Show()
 end
+
 -- Doing this because TSM and Auctioneer tainted GameTooltip.SetHyperlink without checking if their variables exist
 local dummpGameTooltip = CreateFrame("GameTooltip", "BtWQuestsDummyTooltip", UIParent, "GameTooltipTemplate")
 dummpGameTooltip:Hide()
@@ -1599,12 +1610,10 @@ function BtWQuestsTooltipMixin:SetHyperlink(link, character)
 
     local _, _, type, text = string.find(linkstring, "([^:]+):([^|]+)")
     
-    if type == "quest" and character:IsPlayer() then
+    if type == "quest" then
         local _, _, id = string.find(text, "^(%d+)")
-        if GetQuestLogIndexByID(id) > 0 then
-            self.character = character
-            self.questID = id
-
+        id = tonumber(id);
+        if character:IsQuestActive(id) then
             self:SetActiveQuest(id, character)
         else
             self.character = character

@@ -775,6 +775,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DUSKWOOD_MORLADIM, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_DUSKWOOD, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851098,
+		texCoords = {0,1,0,1},
+	},
     restrictions = {
         type = "faction",
         id = BTWQUESTS_FACTION_ID_ALLIANCE,

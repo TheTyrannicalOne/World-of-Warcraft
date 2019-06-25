@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [107574] = {
+        name = "Anduin Wrynn",
+    },
     [108017] = {
         name = "Torv Dubstampf",
     },
@@ -2069,6 +2072,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149736] = {
         name = "Abbild von Mimiron",
     },
+    [149815] = {
+        name = "Grizzek Zischzang",
+    },
     [149823] = {
         name = "Magni Bronzebart",
     },
@@ -2080,6 +2086,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [149870] = {
         name = "Grif Wildherz",
+    },
+    [150101] = {
+        name = "Lady Jaina Prachtmeer",
     },
     [150309] = {
         name = "Baine Bluthuf",
@@ -2099,8 +2108,20 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150515] = {
         name = "Carsten Jammerthal",
     },
+    [150555] = {
+        name = "Waren Kolbenherz",
+    },
+    [150573] = {
+        name = "Recycler Römms",
+    },
     [150574] = {
         name = "Lady Jaina Prachtmeer",
+    },
+    [150630] = {
+        name = "Flip Blitzlader",
+    },
+    [150631] = {
+        name = "Pristy Blitzlader",
     },
     [150633] = {
         name = "Lady Jaina Prachtmeer",
@@ -2144,6 +2165,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Schrein der Stürme",
     },
+    [151000] = {
+        name = "Klingenmeister Okani",
+    },
     [151061] = {
         name = "Mimiron",
     },
@@ -2174,11 +2198,38 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151287] = {
         name = "Telonis",
     },
+    [151309] = {
+        name = "Kelfinnenspäher",
+    },
+    [151626] = {
+        name = "Jäger Akana",
+    },
+    [151763] = {
+        name = "Isla",
+    },
+    [151848] = {
+        name = "Lor'themar Theron",
+    },
+    [151851] = {
+        name = "Großtelemant Oculeth",
+    },
     [152002] = {
         name = "Abbild von Mimiron",
     },
+    [152084] = {
+        name = "Mrrl",
+    },
+    [152194] = {
+        name = "MUTTER",
+    },
+    [152206] = {
+        name = "Magni Bronzebart",
+    },
     [152255] = {
         name = "Sef Iwen",
+    },
+    [152295] = {
+        name = "Pascal",
     },
     [152489] = {
         name = "Schrein der Stürme",
@@ -2197,5 +2248,35 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152497] = {
         name = "Schrein der Abendflut",
+    },
+    [152747] = {
+        name = "Christy Schlagbolz",
+    },
+    [153509] = {
+        name = "Handwerker Okata",
+    },
+    [153510] = {
+        name = "Handwerker Itanu",
+    },
+    [153512] = {
+        name = "Finder Pruc",
+    },
+    [153514] = {
+        name = "Finderin Palta",
+    },
+    [153617] = {
+        name = "Shandris Mondfeder",
+    },
+    [154248] = {
+        name = "Klingenkämpfer Inowari",
+    },
+    [154257] = {
+        name = "Ausbilder Ulooaka",
+    },
+    [154408] = {
+        name = "Rolm",
+    },
+    [154640] = {
+        name = "Großmarschall Tremblade",
     },
 })

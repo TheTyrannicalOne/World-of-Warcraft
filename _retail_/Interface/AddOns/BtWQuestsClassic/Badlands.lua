@@ -4,25 +4,25 @@ local MAP_ID = 15
 local ACHIEVEMENT_ID = 4900
 local CONTINENT_ID = 13
 
-BTWQUESTS_CHAIN_BADLANDS_RHEA = 12801
-BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE = 12802
-BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE = 12803
-BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE = 12804
-BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE = 12805
-BTWQUESTS_CHAIN_BADLANDS_THE_DAY_THAT_DEATHWING_CAME = 12806
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN04 = 12814
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN09 = 12819
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN10 = 12820
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN11 = 12821
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN12 = 12822
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN13 = 12823
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN14 = 12824
-BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN15 = 12825
-BTWQUESTS_CHAIN_BADLANDS_OTHER_ALLIANCE = 12897
-BTWQUESTS_CHAIN_BADLANDS_OTHER_HORDE = 12898
-BTWQUESTS_CHAIN_BADLANDS_OTHER_BOTH = 12899
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA = 12801
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE = 12802
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE = 12803
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE = 12804
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE = 12805
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_DAY_THAT_DEATHWING_CAME = 12806
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN04 = 12814
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN09 = 12819
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN10 = 12820
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN11 = 12821
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN12 = 12822
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN13 = 12823
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN14 = 12824
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN15 = 12825
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_OTHER_ALLIANCE = 12897
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_OTHER_HORDE = 12898
+BTWQUESTS_CHAIN_CLASSIC_BADLANDS_OTHER_BOTH = 12899
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_RHEA, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -96,7 +96,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_RHEA, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN09,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN09,
             aside = true,
             x = 1,
             y = 1,
@@ -186,7 +186,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_RHEA, {
             variations = {
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
                     restrictions = {
                         type = "faction",
                         id = BTWQUESTS_FACTION_ID_ALLIANCE,
@@ -194,14 +194,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_RHEA, {
                 },
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
                 },
             },
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -218,16 +218,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_A
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
+        id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
     },
     completed = {
         type = "quest",
@@ -236,7 +236,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_A
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
             x = 3,
             y = 0,
             connections = {
@@ -245,7 +245,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_A
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN14,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN14,
             aside = true,
             x = 1,
             y = 1,
@@ -261,7 +261,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_A
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN15,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN15,
             aside = true,
             x = 5,
             y = 1,
@@ -355,7 +355,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_A
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -372,16 +372,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_H
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
+        id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
     },
     completed = {
         type = "quest",
@@ -390,7 +390,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_H
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
             x = 3,
             y = 0,
             connections = {
@@ -399,7 +399,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_H
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN12,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN12,
             aside = true,
             x = 1,
             y = 1,
@@ -415,7 +415,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_H
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN13,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN13,
             aside = true,
             x = 5,
             y = 1,
@@ -506,7 +506,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_H
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -523,12 +523,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANC
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+        id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
     },
     completed = {
         type = "quest",
@@ -537,7 +537,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANC
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
             x = 3,
             y = 0,
             connections = {
@@ -546,7 +546,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANC
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN04,
             x = 0,
             y = 1,
             embed = true,
@@ -624,12 +624,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANC
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -646,12 +646,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE, 
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+        id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
     },
     completed = {
         type = "quest",
@@ -660,7 +660,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE, 
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
             x = 3,
             y = 0,
             connections = {
@@ -669,7 +669,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE, 
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN11,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN11,
             aside = true,
             x = 1,
             y = 1,
@@ -685,7 +685,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE, 
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN10,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN10,
             aside = true,
             x = 5,
             y = 1,
@@ -755,12 +755,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE, 
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_DAY_THAT_DEATHWING_CAME, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_DAY_THAT_DEATHWING_CAME, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -825,7 +825,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_THE_DAY_THAT_DEATHWING_CAME,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN04, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN04, {
     name = "The Good Stuff",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -859,7 +859,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN04, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN09, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN09, {
     name = "It's Goat Time, Baby",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -893,7 +893,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN09, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN10, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN10, {
     name = "Dummy 1",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -915,7 +915,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN10, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN11, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN11, {
     name = "Dummy 2",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -937,7 +937,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN11, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN12, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN12, {
     name = "Dummy 3",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -959,7 +959,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN12, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN13, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN13, {
     name = "Dummy 4",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -981,7 +981,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN13, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN14, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN14, {
     name = "Dummy 5",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1003,7 +1003,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN14, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN15, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_TEMP_CHAIN15, {
     name = "Dummy 6",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1025,7 +1025,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_TEMP_CHAIN15, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1033,7 +1033,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_OTHER_ALLIANCE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1041,7 +1041,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_OTHER_HORDE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BADLANDS_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_BADLANDS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1053,30 +1053,34 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BADLANDS_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_BADLANDS, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851093,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_RHEA,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_RHEA,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_FATE_OF_A_DRAGONFLIGHT_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_TITANS_KNOWLEDGE_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BADLANDS_THE_DAY_THAT_DEATHWING_CAME,
+            id = BTWQUESTS_CHAIN_CLASSIC_BADLANDS_THE_DAY_THAT_DEATHWING_CAME,
         },
     },
 })

@@ -1829,6 +1829,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_1_5_PART_2,
             x = 3,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_2,
+            x = 3,
         },
     },
 })
@@ -1877,6 +1885,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
             x = 3,
+            y = 0,
             connections = {
                 1,
             },
@@ -1892,6 +1901,169 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1
         {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2,
+            x = 3,
+        },
+    },
+})
+
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_2, {
+    name = BTWQUESTS_THE_WAR_CAMPAIGN_8_2,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    buttonImage = 3025320,
+    range = {120,120},
+    crest = "alliance",
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_INTRODUCTION,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN01,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
+        },
+    },
+    active = {
+        type = "chain",
+        ids = {BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5, BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03},
+        count = 2,
+    },
+    completed = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_1,
+    },
+    items = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
+            x = 2,
+            y = 0,
+            connections = {
+                2,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_1,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2, {
+    name = BTWQUESTS_THE_WAR_CAMPAIGN_8_2,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    buttonImage = 3025320,
+    range = {120,120},
+    crest = "horde",
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_2,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_INTRODUCTION,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN02,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
+        },
+    },
+    active = {
+        type = "chain",
+        ids = {BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5, BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04},
+        count = 2,
+    },
+    completed = {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1,
+    },
+    items = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
+            x = 2,
+            y = 0,
+            connections = {
+                2,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
+            connections = {
+                1,
+            },
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1,
             x = 3,
         },
     },
@@ -5982,6 +6154,286 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_1_5_PART_2
 })
 
 
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_1, {
+    name = { -- Stay of Execution
+        type = "quest",
+        id = 55783,
+    },
+    questline = 972,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_1_5,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 55784,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 55783,
+    },
+    items = {
+        {
+            type = "quest",
+            id = 55784,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55783,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_PART_1, {
+    name = { -- Stay of Execution
+        type = "quest",
+        id = 55779,
+    },
+    questline = 973,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_PART_1,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            name = BTWQUESTS_PROGRESS_THE_WAR_CAMPAIGN,
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 55778,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        ids = {55779, 55782},
+    },
+    items = {
+        {
+            type = "quest",
+            id = 55778,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 55780,
+                    restrictions = {
+                        type = "quest",
+                        id = 55780,
+                        status = {
+                            "active",
+                            "completed",
+                        },
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 55781,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            variations = {
+                {
+                    type = "quest",
+                    id = 55782,
+                    restrictions = {
+                        type = "quest",
+                        id = 55780,
+                        status = {
+                            "active",
+                            "completed",
+                        },
+                    },
+                },
+                {
+                    type = "quest",
+                    id = 55779,
+                },
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+    },
+})
+
+-- Not sure what to do with these really
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_8_2_FOLLOWER, {
+    name = { -- The Missing Crew
+        type = "quest",
+        id = 55783,
+    },
+    questline = 972,
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_NAZJATAR,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_TEMP_CHAIN12,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_ALLIANCE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 56378,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 56378,
+    },
+    items = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "npc",
+            id = 135681,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56378,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_8_2_FOLLOWER, {
+    name = { --The Missing Crew
+        type = "quest",
+        id = 55779,
+    },
+    questline = 973,
+    category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_NAZJATAR,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    range = {120,120},
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_TEMP_CHAIN11,
+    },
+    restrictions = {
+        type = "faction",
+        id = BTWQUESTS_FACTION_ID_HORDE,
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 56379,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 56379,
+    },
+    items = {
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "npc",
+            id = 135690,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 56379,
+            x = 3,
+        },
+    },
+})
+
+
 BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {
         type = "chain",
@@ -6017,6 +6469,19 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     {
         type = "chain",
         id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_1_5,
+    },
+    
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIANCE_CAMPAIGN_8_2,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2,
+    },
+    {
+        type = "header",
+        name = "Rise of Azshara Zones",
     },
 })
 

@@ -6,6 +6,8 @@ end
 
 BTWQUESTS_GIFT_OF_NZOTH = "Dono di N'zoth"
 BTWQUESTS_HATI_REBORN = "Rinascita di Hati"
+BTWQUESTS_HERITAGE_OF_THE_BRONZEBEARD = "Retaggio dei Barbabronzea"
+BTWQUESTS_HERITAGE_OF_THE_SINDOREI = "Retaggio dei Sin'dorei"
 BTWQUESTS_MAGHAR_ORC = "Orchi Mag'har"
 BTWQUESTS_NIGHT_WARRIOR_NIGHT_ELF_CUSTOMIZATION = "Personalizzazione \"Guerriera della Notte\" per Elfi della Notte"
 BTWQUESTS_THE_WAR_CAMPAIGN = "Campagna di Guerra"

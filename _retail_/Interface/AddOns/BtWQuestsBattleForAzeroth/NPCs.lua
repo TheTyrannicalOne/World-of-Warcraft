@@ -60,6 +60,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [36648] = {
+        name = "Baine Bloodhoof",
+        locations = {
+            [88] = {
+                {
+                    x = 0.602924,
+                    y = 0.516756,
+                },
+            },
+        },
+    },
+    [107574] = {
+        name = "Anduin Wrynn",
+        locations = {
+            [84] = {
+                {
+                    x = 0.859159,
+                    y = 0.315612,
+                },
+            },
+        },
+    },
     [108017] = {
         name = "Torv Dubstomp",
         locations = {
@@ -274,8 +296,8 @@ BtWQuestsDatabase:AddNPCsTable({
         locations = {
             [862] = {
                 {
-                    x = 0.668,
-                    y = 0.425,
+                    x = 0.668073,
+                    y = 0.4251,
                 },
             },
         },
@@ -905,7 +927,7 @@ BtWQuestsDatabase:AddNPCsTable({
         },
     },
     [124630] = {
-        name = "Taelia",
+        name = "Kul Tiran Guard",
     },
     [124641] = {
         name = "Shadow Hunter Mutumba",
@@ -4881,6 +4903,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [135681] = {
+        name = "Grand Admiral Jes-Tereth",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.679495,
+                    y = 0.266862,
+                },
+            },
+        },
+    },
     [135682] = {
         name = "Patrick Eckhart",
         locations = {
@@ -4888,6 +4921,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.578,
                     y = 0.554,
+                },
+            },
+        },
+    },
+    [135690] = {
+        name = "Dread-Admiral Tattersail",
+        locations = {
+            [862] = {
+                {
+                    x = 0.584592,
+                    y = 0.629857,
                 },
             },
         },
@@ -7509,6 +7553,50 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [147939] = {
+        name = "Ace Pilot Stormcog",
+        locations = {
+            [84] = {
+                {
+                    x = 0.546672,
+                    y = 0.185202,
+                },
+            },
+        },
+    },
+    [147943] = {
+        name = "Captain Tread Sparknozzle",
+        locations = {
+            [469] = {
+                {
+                    x = 0.417768,
+                    y = 0.316318,
+                },
+            },
+        },
+    },
+    [147950] = {
+        name = "Cog Captain Winklespring",
+        locations = {
+            [114] = {
+                {
+                    x = 0.552779,
+                    y = 0.189143,
+                },
+            },
+        },
+    },
+    [147952] = {
+        name = "Fizzi Tinkerbow",
+        locations = {
+            [114] = {
+                {
+                    x = 0.553056,
+                    y = 0.189661,
+                },
+            },
+        },
+    },
     [148015] = {
         name = "Taelia Fordragon",
         locations = {
@@ -7564,6 +7652,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [149084] = {
+        name = "Spiritwalker Ussoh",
+        locations = {
+            [462] = {
+                {
+                    x = 0.121667,
+                    y = 0.312663,
+                },
+            },
+        },
+    },
+    [149088] = {
+        name = "Spiritwalker Isahi",
+        locations = {
+            [85] = {
+                {
+                    x = 0.391346,
+                    y = 0.79014,
+                },
+            },
+        },
+    },
     [149143] = {
         name = "Nathanos Blightcaller",
     },
@@ -7577,6 +7687,39 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.529794,
                     y = 0.943285,
+                },
+            },
+        },
+    },
+    [149503] = {
+        name = "Cog Captain Winklespring",
+        locations = {
+            [1375] = {
+                {
+                    x = 0.500569,
+                    y = 0.126573,
+                },
+            },
+        },
+    },
+    [149528] = {
+        name = "Baine Bloodhoof",
+        locations = {
+            [88] = {
+                {
+                    x = 0.582277,
+                    y = 0.518138,
+                },
+            },
+        },
+    },
+    [149529] = {
+        name = "Spiritwalker Ussoh",
+        locations = {
+            [65] = {
+                {
+                    x = 0.49175,
+                    y = 0.609201,
                 },
             },
         },
@@ -7603,6 +7746,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [149809] = {
+        name = "Gazlowe",
+        locations = {
+            [895] = {
+                {
+                    x = 0.658177,
+                    y = 0.663483,
+                },
+            },
+        },
+    },
+    [149815] = {
+        name = "Grizzek Fizzwrench",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.715588,
+                    y = 0.387642,
+                },
+            },
+        },
+    },
     [149823] = {
         name = "Magni Bronzebeard",
         locations = {
@@ -7625,6 +7790,17 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [149864] = {
+        name = "Tinkmaster Overspark",
+        locations = {
+            [895] = {
+                {
+                    x = 0.655917,
+                    y = 0.650242,
+                },
+            },
+        },
+    },
     [149867] = {
         name = "Magni Bronzebeard",
         locations = {
@@ -7643,6 +7819,127 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.336291,
                     y = 0.585711,
+                },
+            },
+        },
+    },
+    [149877] = {
+        name = "Tinkmaster Overspark",
+        locations = {
+            [895] = {
+                {
+                    x = 0.658198,
+                    y = 0.663654,
+                },
+            },
+        },
+    },
+    [149904] = {
+        name = "Neri Sharpfin",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.497372,
+                    y = 0.646511,
+                },
+            },
+        },
+    },
+    [150086] = {
+        name = "Bolten Springspark",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.631551,
+                    y = 0.392944,
+                },
+            },
+        },
+    },
+    [150101] = {
+        name = "Lady Jaina Proudmoore",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.403184,
+                    y = 0.552403,
+                },
+            },
+        },
+    },
+    [150145] = {
+        name = "Gila Crosswires",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.432245,
+                    y = 0.320047,
+                },
+            },
+        },
+    },
+    [150187] = {
+        name = "Nathanos Blightcaller",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.36795,
+                    y = 0.9352,
+                },
+            },
+        },
+    },
+    [150196] = {
+        name = "First Arcanist Thalyssra",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.419691,
+                    y = 0.806954,
+                },
+            },
+        },
+    },
+    [150206] = {
+        name = "Chief Telemancer Oculeth",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.36686,
+                    y = 0.869361,
+                },
+            },
+        },
+    },
+    [150207] = {
+        name = "Lor'themar Theron",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.363208,
+                    y = 0.820978,
+                },
+            },
+        },
+    },
+    [150208] = {
+        name = "Tinkmaster Overspark",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.672094,
+                    y = 0.157649,
+                },
+            },
+        },
+    },
+    [150209] = {
+        name = "Neri Sharpfin",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.372948,
+                    y = 0.673558,
                 },
             },
         },
@@ -7713,6 +8010,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [150555] = {
+        name = "Waren Gearhart",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.731339,
+                    y = 0.333465,
+                },
+            },
+        },
+    },
+    [150573] = {
+        name = "Recycler Kerchunk",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.714955,
+                    y = 0.387791,
+                },
+            },
+        },
+    },
     [150574] = {
         name = "Lady Jaina Proudmoore",
         locations = {
@@ -7720,6 +8039,28 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.692676,
                     y = 0.271405,
+                },
+            },
+        },
+    },
+    [150630] = {
+        name = "Flip Quickcharge",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.708297,
+                    y = 0.3913,
+                },
+            },
+        },
+    },
+    [150631] = {
+        name = "Pristy Quickcharge",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.707431,
+                    y = 0.384181,
                 },
             },
         },
@@ -7878,6 +8219,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [150956] = {
+        name = "Broken Drill Rig",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.567214,
+                    y = 0.600215,
+                },
+            },
+        },
+    },
+    [151000] = {
+        name = "Blademaster Okani",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.389911,
+                    y = 0.546266,
+                },
+            },
+        },
+    },
     [151061] = {
         name = "Mimiron",
         locations = {
@@ -7885,6 +8248,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.432955,
                     y = 0.387904,
+                },
+            },
+        },
+    },
+    [151100] = {
+        name = "Gila Crosswires",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.672255,
+                    y = 0.159322,
                 },
             },
         },
@@ -7958,6 +8332,28 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [151257] = {
+        name = "Torcali",
+        locations = {
+            [862] = {
+                {
+                    x = 0.683886,
+                    y = 0.293952,
+                },
+            },
+        },
+    },
+    [151283] = {
+        name = "Direhorn Hatchling",
+        locations = {
+            [862] = {
+                {
+                    x = 0.681747,
+                    y = 0.417465,
+                },
+            },
+        },
+    },
     [151285] = {
         name = "Mevris Ghostdancer",
         locations = {
@@ -7965,6 +8361,17 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.535856,
                     y = 0.544027,
+                },
+            },
+        },
+    },
+    [151286] = {
+        name = "Child of Torcali",
+        locations = {
+            [862] = {
+                {
+                    x = 0.681741,
+                    y = 0.417457,
                 },
             },
         },
@@ -7980,6 +8387,185 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [151309] = {
+        name = "Kelfin Scout",
+    },
+    [151319] = {
+        name = "Li'zal",
+        locations = {
+            [862] = {
+                {
+                    x = 0.682034,
+                    y = 0.4175,
+                },
+            },
+        },
+    },
+    [151462] = {
+        name = "Danielle Anglers",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.370348,
+                    y = 0.471562,
+                },
+            },
+        },
+    },
+    [151626] = {
+        name = "Hunter Akana",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.394078,
+                    y = 0.534638,
+                },
+            },
+        },
+    },
+    [151641] = {
+        name = "Spiritwalker Ebonhorn",
+        locations = {
+            [650] = {
+                {
+                    x = 0.495325,
+                    y = 0.683679,
+                },
+            },
+        },
+    },
+    [151682] = {
+        name = "Merithra of the Dream",
+        locations = {
+            [641] = {
+                {
+                    x = 0.51617,
+                    y = 0.572165,
+                },
+            },
+        },
+    },
+    [151693] = {
+        name = "Merithra of the Dream",
+        locations = {
+            [1471] = {
+                {
+                    x = 0.440404,
+                    y = 0.307039,
+                },
+            },
+        },
+    },
+    [151695] = {
+        name = "Spiritwalker Ebonhorn",
+        locations = {
+            [1472] = {
+                {
+                    x = 0.267234,
+                    y = 0.461716,
+                },
+            },
+        },
+    },
+    [151704] = {
+        name = "Valithria Dreamwalker",
+        locations = {
+            [1471] = {
+                {
+                    x = 0.270678,
+                    y = 0.558923,
+                },
+            },
+        },
+    },
+    [151741] = {
+        name = "Apprentice Odari",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.435112,
+                    y = 0.497838,
+                },
+            },
+        },
+    },
+    [151763] = {
+        name = "Isla",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.377641,
+                    y = 0.553306,
+                },
+            },
+        },
+    },
+    [151825] = {
+        name = "Merithra of the Dream",
+        locations = {
+            [1475] = {
+                {
+                    x = 0.465546,
+                    y = 0.396812,
+                },
+            },
+        },
+    },
+    [151848] = {
+        name = "Lor'themar Theron",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.485068,
+                    y = 0.621787,
+                },
+            },
+        },
+    },
+    [151851] = {
+        name = "Chief Telemancer Oculeth",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.485013,
+                    y = 0.623712,
+                },
+            },
+        },
+    },
+    [151887] = {
+        name = "Merithra of the Dream",
+        locations = {
+            [1475] = {
+                {
+                    x = 0.467357,
+                    y = 0.398248,
+                },
+            },
+        },
+    },
+    [151947] = {
+        name = "Prince Erazmin",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.712779,
+                    y = 0.358607,
+                },
+            },
+        },
+    },
+    [151999] = {
+        name = "Jo'nok, Bulwark of Torcali",
+        locations = {
+            [862] = {
+                {
+                    x = 0.682805,
+                    y = 0.416892,
+                },
+            },
+        },
+    },
     [152002] = {
         name = "Image of Mimiron",
         locations = {
@@ -7991,6 +8577,105 @@ BtWQuestsDatabase:AddNPCsTable({
             },
         },
     },
+    [152047] = {
+        name = "Poen Gillbrack",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.388726,
+                    y = 0.424145,
+                },
+            },
+        },
+    },
+    [152066] = {
+        name = "First Arcanist Thalyssra",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.642114,
+                    y = 0.520993,
+                },
+            },
+        },
+    },
+    [152084] = {
+        name = "Mrrl",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.481965,
+                    y = 0.453502,
+                },
+            },
+        },
+    },
+    [152095] = {
+        name = "Magni Bronzebeard",
+        locations = {
+            [198] = {
+                {
+                    x = 0.620267,
+                    y = 0.249188,
+                },
+            },
+        },
+    },
+    [152108] = {
+        name = "Kelfin Scout",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.497049,
+                    y = 0.645367,
+                },
+            },
+        },
+    },
+    [152115] = {
+        name = "Koo'li",
+        locations = {
+            [862] = {
+                {
+                    x = 0.619293,
+                    y = 0.496837,
+                },
+            },
+        },
+    },
+    [152194] = {
+        name = "MOTHER",
+        locations = {
+            [1473] = {
+                {
+                    x = 0.481751,
+                    y = 0.724507,
+                },
+            },
+        },
+    },
+    [152206] = {
+        name = "Magni Bronzebeard",
+        locations = {
+            [1473] = {
+                {
+                    x = 0.501271,
+                    y = 0.591606,
+                },
+            },
+        },
+    },
+    [152238] = {
+        name = "Riathia Silverstar",
+        locations = {
+            [1499] = {
+                {
+                    x = 0.537778,
+                    y = 0.204904,
+                },
+            },
+        },
+    },
     [152255] = {
         name = "Sef Iwen",
         locations = {
@@ -7998,6 +8683,53 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.579984,
                     y = 0.809322,
+                },
+            },
+        },
+    },
+    [152295] = {
+        name = "Pascal",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.712019,
+                    y = 0.323041,
+                },
+            },
+        },
+    },
+    [152316] = {
+        name = "Image of Thalyssra",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.764737,
+                    y = 0.298832,
+                },
+            },
+        },
+    },
+    [152365] = {
+        name = "Kalecgos",
+        locations = {
+            [1473] = {
+                {
+                    x = 0.525616,
+                    y = 0.699304,
+                },
+            },
+        },
+    },
+    [152385] = {
+        name = "Highmountain Shaman",
+    },
+    [152484] = {
+        name = "Tinkmaster Overspark",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.775735,
+                    y = 0.404309,
                 },
             },
         },
@@ -8064,6 +8796,496 @@ BtWQuestsDatabase:AddNPCsTable({
                 {
                     x = 0.341132,
                     y = 0.354265,
+                },
+            },
+        },
+    },
+    [152504] = {
+        name = "Gazlowe",
+        locations = {
+            [1165] = {
+                {
+                    x = 0.420563,
+                    y = 0.878395,
+                },
+            },
+        },
+    },
+    [152505] = {
+        name = "Skaggit",
+        locations = {
+            [1165] = {
+                {
+                    x = 0.42193,
+                    y = 0.878373,
+                },
+            },
+        },
+    },
+    [152522] = {
+        name = "Gazlowe",
+        locations = {
+            [1165] = {
+                {
+                    x = 0.530826,
+                    y = 0.432719,
+                },
+            },
+        },
+    },
+    [152578] = {
+        name = "Gazlowe",
+        locations = {
+            [895] = {
+                {
+                    x = 0.656295,
+                    y = 0.646124,
+                },
+            },
+        },
+    },
+    [152652] = {
+        name = "Gazlowe",
+        locations = {
+            [895] = {
+                {
+                    x = 0.659009,
+                    y = 0.664161,
+                },
+            },
+        },
+    },
+    [152720] = {
+        name = "Kalecgos",
+        locations = {
+            [241] = {
+                {
+                    x = 0.359531,
+                    y = 0.504897,
+                },
+            },
+        },
+    },
+    [152747] = {
+        name = "Christy Punchcog",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.697496,
+                    y = 0.323345,
+                },
+            },
+        },
+    },
+    [152783] = {
+        name = "Gazlowe",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.761654,
+                    y = 0.153089,
+                },
+            },
+        },
+    },
+    [152815] = {
+        name = "Magni Bronzebeard",
+        locations = {
+            [1474] = {
+                {
+                    x = 0.337454,
+                    y = 0.54551,
+                },
+            },
+        },
+    },
+    [152820] = {
+        name = "Prince Erazmin",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.589794,
+                    y = 0.548446,
+                },
+            },
+        },
+    },
+    [152845] = {
+        name = "Gazlowe",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.736934,
+                    y = 0.259431,
+                },
+            },
+        },
+    },
+    [152851] = {
+        name = "Prince Erazmin",
+        locations = {
+            [1462] = {
+                {
+                    x = 0.710925,
+                    y = 0.383232,
+                },
+            },
+        },
+    },
+    [152864] = {
+        name = "Tinkmaster Overspark",
+        locations = {
+            [895] = {
+                {
+                    x = 0.658195,
+                    y = 0.663651,
+                },
+            },
+        },
+    },
+    [152977] = {
+        name = "Thrall",
+        locations = {
+            [86] = {
+                {
+                    x = 0.561251,
+                    y = 0.680566,
+                },
+            },
+        },
+    },
+    [153251] = {
+        name = "Lor'themar Theron",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.506048,
+                    y = 0.241556,
+                },
+            },
+        },
+    },
+    [153253] = {
+        name = "Lady Jaina Proudmoore",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.503851,
+                    y = 0.240887,
+                },
+            },
+        },
+    },
+    [153385] = {
+        name = "Blademaster Okani",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.389008,
+                    y = 0.303783,
+                },
+            },
+        },
+    },
+    [153422] = {
+        name = "Chief Telemancer Oculeth",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.388626,
+                    y = 0.304235,
+                },
+            },
+        },
+    },
+    [153492] = {
+        name = "Fenn",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.389759,
+                    y = 0.303879,
+                },
+            },
+        },
+    },
+    [153496] = {
+        name = "Adaru",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.389967,
+                    y = 0.30371,
+                },
+            },
+        },
+    },
+    [153509] = {
+        name = "Artisan Okata",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.378179,
+                    y = 0.555493,
+                },
+            },
+        },
+    },
+    [153510] = {
+        name = "Artisan Itanu",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.378502,
+                    y = 0.556939,
+                },
+            },
+        },
+    },
+    [153512] = {
+        name = "Finder Pruc",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.490736,
+                    y = 0.621935,
+                },
+            },
+        },
+    },
+    [153514] = {
+        name = "Finder Palta",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.492288,
+                    y = 0.620868,
+                },
+            },
+        },
+    },
+    [153617] = {
+        name = "Shandris Feathermoon",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.402749,
+                    y = 0.553848,
+                },
+            },
+        },
+    },
+    [153670] = {
+        name = "Prince Erazmin",
+    },
+    [153932] = {
+        name = "Genn Greymane",
+        locations = {
+            [1161] = {
+                {
+                    x = 0.706674,
+                    y = 0.271964,
+                },
+            },
+        },
+    },
+    [153936] = {
+        name = "Overseer Hajeer",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.369741,
+                    y = 0.270195,
+                },
+            },
+        },
+    },
+    [154143] = {
+        name = "Collector Kojo",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.66471,
+                    y = 0.473327,
+                },
+            },
+        },
+    },
+    [154208] = {
+        name = "Jonah Lowtide",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.50563,
+                    y = 0.662643,
+                },
+            },
+        },
+    },
+    [154248] = {
+        name = "Bladesman Inowari",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.394629,
+                    y = 0.534275,
+                },
+            },
+        },
+    },
+    [154257] = {
+        name = "Instructor Ulooaka",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.379812,
+                    y = 0.529097,
+                },
+            },
+        },
+    },
+    [154408] = {
+        name = "Rolm",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.493002,
+                    y = 0.618873,
+                },
+            },
+        },
+    },
+    [154514] = {
+        name = "Kelya Moonfall",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.800954,
+                    y = 0.314315,
+                },
+            },
+        },
+    },
+    [154520] = {
+        name = "First Arcanist Thalyssra",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.734505,
+                    y = 0.477901,
+                },
+            },
+        },
+    },
+    [154522] = {
+        name = "Shandris Feathermoon",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.761511,
+                    y = 0.457873,
+                },
+            },
+        },
+    },
+    [154574] = {
+        name = "Kelya Moonfall",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.741541,
+                    y = 0.249254,
+                },
+            },
+        },
+    },
+    [154601] = {
+        name = "Kelya Moonfall",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.802087,
+                    y = 0.318904,
+                },
+            },
+        },
+    },
+    [154607] = {
+        name = "Image of Torcali",
+        locations = {
+            [862] = {
+                {
+                    x = 0.523444,
+                    y = 0.228893,
+                },
+            },
+        },
+    },
+    [154640] = {
+        name = "Grand Marshal Tremblade",
+    },
+    [154660] = {
+        name = "Shandris Feathermoon",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.739781,
+                    y = 0.417481,
+                },
+            },
+        },
+    },
+    [154661] = {
+        name = "First Arcanist Thalyssra",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.739813,
+                    y = 0.417478,
+                },
+            },
+        },
+    },
+    [154673] = {
+        name = "Li'zal",
+        locations = {
+            [862] = {
+                {
+                    x = 0.681988,
+                    y = 0.418892,
+                },
+            },
+        },
+    },
+    [155071] = {
+        name = "Shandris Feathermoon",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.797677,
+                    y = 0.44935,
+                },
+            },
+        },
+    },
+    [155325] = {
+        name = "First Arcanist Thalyssra",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.797645,
+                    y = 0.449342,
+                },
+            },
+        },
+    },
+    [155482] = {
+        name = "Sentinel",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.489212,
+                    y = 0.868744,
                 },
             },
         },

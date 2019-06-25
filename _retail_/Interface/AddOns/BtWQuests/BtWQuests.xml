@@ -134,7 +134,7 @@
 		</Scripts>
 	</Frame>
 
-	<Frame name="BtWQuestsFrame" mixin="BtWQuestsMixin" inherits="PortraitFrameTemplate" toplevel="true" enableMouse="true" parent="UIParent" hidden="true">
+	<Frame name="BtWQuestsFrame" mixin="BtWQuestsMixin" inherits="PortraitFrameTemplate" toplevel="true" enableMouse="true" parent="UIParent" hidden="true" movable="true">
 		<Size x="800" y="496"/>
 		<Anchors>
 			<Anchor point="CENTER" x="0" y="0"/>
@@ -405,6 +405,12 @@
                             </OnMouseUp>
                         </Scripts>
 					</ScrollFrame>
+					
+					<GameTooltip name="BtWQuestsFrameChainTooltip" parentKey="Tooltip" inherits="BtWQuestsTooltipTemplate" frameStrata="MEDIUM">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="5" y="-3"/>
+						</Anchors>
+					</GameTooltip>
 				</Frames>
                 <Scripts>
                     <OnShow function="BtWQuestsChainFrame_OnShow"/>
@@ -420,6 +426,8 @@
 			<OnShow method="OnShow"/>
 			<OnHide method="OnHide"/>
 			<OnEvent method="OnEvent"/>
+			<OnDragStart method="OnDragStart"/>
+			<OnDragStop method="OnDragStop"/>
 		</Scripts>
 	</Frame>
 

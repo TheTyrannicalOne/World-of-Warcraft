@@ -1,3 +1,6 @@
+local BtWQuests = BtWQuests;
+local OUTDATED_LEVEL = 110;
+
 BtWQuestsDatabaseMixin = {}
 function BtWQuestsDatabaseMixin:OnLoad()
     self.Expansions = {}
@@ -356,11 +359,11 @@ function BtWQuestsItem_GetItems(item, character)
     end
 
     if item.type == "chain" then
-        return BtWQuestsDatabase.Chains[item.id].items
+        return BtWQuests.Database.Chains[item.id].items
     elseif item.type == "category" then
-        return BtWQuestsDatabase.Categories[item.id].items
+        return BtWQuests.Database.Categories[item.id].items
     elseif item.type == "expansion" then
-        return BtWQuestsDatabase.Expansions[item.id].items
+        return BtWQuests.Database.Expansions[item.id].items
     end
 
     return nil
@@ -690,9 +693,9 @@ BtWQuests_CheckItemRequirement = function (item, character)
     elseif item.type == "achievement" then
         if item.criteria then
             if item.completed == false then
-                return not select(3, GetAchievementCriteriaInfo(item.id, item.criteria))
+                return not select(3, character:GetAchievementCriteriaInfo(item.id, item.criteria))
             else
-                return select(3, GetAchievementCriteriaInfo(item.id, item.criteria))
+                return select(3, character:GetAchievementCriteriaInfo(item.id, item.criteria))
             end
         elseif item.anyone then
             if item.completed == false then
@@ -702,9 +705,9 @@ BtWQuests_CheckItemRequirement = function (item, character)
             end
         else
             if item.completed == false then
-                return not select(13, GetAchievementInfo(item.id))
+                return not select(13, character:GetAchievementInfo(item.id))
             else
-                return select(13, GetAchievementInfo(item.id))
+                return select(13, character:GetAchievementInfo(item.id))
             end
         end
     elseif item.type == "questline" then
@@ -760,6 +763,16 @@ BtWQuests_CheckItemRequirement = function (item, character)
             index = index + 1
             name, _, count, _, _, _, _, _, _, spellId = UnitAura("player", index)
         end
+    elseif item.type == "heartlevel" then
+        if item.atmost then
+            return character:HeartOfAzerothAtmostLevel(item.level)
+        else
+            return character:HeartOfAzerothAtleastLevel(item.level)
+        end
+    elseif item.type == "friendship" then
+        local friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = character:GetFriendshipReputation(item.id)
+
+        return friendRep >= item.amount
     elseif item.type ~= nil then
         assert(false, "Invalid item type: " .. item.type)
     else
@@ -777,17 +790,17 @@ BtWQuests_GetItemName = function (item, character)
     end
 
     if item.type == "quest" then
-        return BtWQuests_GetItemName(BtWQuestsDatabase.Quests[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemName(BtWQuests.Database.Quests[item.id or item.ids[1]], character)
     elseif item.type == "chain" then
-        return BtWQuests_GetItemName(BtWQuestsDatabase.Chains[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemName(BtWQuests.Database.Chains[item.id or item.ids[1]], character)
     elseif item.type == "category" then
-        return BtWQuests_GetItemName(BtWQuestsDatabase.Categories[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemName(BtWQuests.Database.Categories[item.id or item.ids[1]], character)
     elseif item.type == "mission" then
-        return BtWQuests_GetItemName(BtWQuestsDatabase.Missions[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemName(BtWQuests.Database.Missions[item.id or item.ids[1]], character)
     elseif item.type == "npc" then
-        return BtWQuests_GetItemName(BtWQuestsDatabase.NPCs[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemName(BtWQuests.Database.NPCs[item.id or item.ids[1]], character)
     elseif item.type == "object" then
-        return BtWQuests_GetItemName(BtWQuestsDatabase.Objects[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemName(BtWQuests.Database.Objects[item.id or item.ids[1]], character)
     elseif item.type == "level" then
         return string.format(BTWQUESTS_LEVEL, item.level)
     elseif item.type == "expansion" then
@@ -803,15 +816,23 @@ BtWQuests_GetItemName = function (item, character)
         else
             return string.format(item.name or BTWQUESTS_REPUTATION_STANDING, standingText, factionName)
         end
+    elseif item.type == "friendship" then
+        local factionId = item.id or item.ids[1];
+        local friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionId)
+        -- local currentRank, maxRank = GetFriendshipReputationRanks(friendID)
+        
+        local standingText = string.format(BTWQUESTS_LEVEL, item.standing);
+
+        return string.format(item.name or BTWQUESTS_REPUTATION_STANDING, standingText, factionName)
     elseif item.type == "achievement" then
         if item.criteria then
-            return string.format("%s: %s", select(2, GetAchievementInfo(item.id or item.ids[1])), select(1, GetAchievementCriteriaInfo(item.id or item.ids[1], item.criteria)))
+            return select(1, character:GetAchievementCriteriaInfo(item.id or item.ids[1], item.criteria))
         elseif item.criteriaId then
-            return string.format("%s: %s", select(2, GetAchievementInfo(item.id or item.ids[1])), select(1, GetAchievementCriteriaInfoByID(item.id or item.ids[1], item.criteriaId)))
+            return select(1, character:GetAchievementCriteriaInfoByID(item.id or item.ids[1], item.criteriaId))
         elseif item.reward then
-            return select(11, GetAchievementInfo(item.id or item.ids[1]))
+            return select(11, character:GetAchievementInfo(item.id or item.ids[1]))
         else
-            return select(2, GetAchievementInfo(item.id or item.ids[1]))
+            return select(2, character:GetAchievementInfo(item.id or item.ids[1]))
         end
     elseif item.type == "profession" then
         local name = C_TradeSkillUI.GetTradeSkillDisplayName(item.id or item.ids[1])
@@ -848,6 +869,8 @@ BtWQuests_GetItemName = function (item, character)
         else
             return string.format(BTWQUESTS_COUNTDOWN_S, seconds)
         end
+    elseif item.type == "heartlevel" then
+        return string.format(BTWQUESTS_HEART_OF_AZEROTH_LEVEL, item.level)
     else
         assert(item.type == nil, "Invalid item type: " .. tostring(item.type))
         return "Unnamed"
@@ -864,13 +887,13 @@ local function BtWQuests_GetItemVisible(item, character)
     end
 
     if item.type == "quest" then
-        return BtWQuests_GetItemVisible(BtWQuestsDatabase.Quests[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemVisible(BtWQuests.Database.Quests[item.id or item.ids[1]], character)
     elseif item.type == "chain" then
-        return BtWQuests_GetItemVisible(BtWQuestsDatabase.Chains[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemVisible(BtWQuests.Database.Chains[item.id or item.ids[1]], character)
     elseif item.type == "category" then
-        return BtWQuests_GetItemVisible(BtWQuestsDatabase.Categories[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemVisible(BtWQuests.Database.Categories[item.id or item.ids[1]], character)
     elseif item.type == "mission" then
-        return BtWQuests_GetItemVisible(BtWQuestsDatabase.Missions[item.id or item.ids[1]], character)
+        return BtWQuests_GetItemVisible(BtWQuests.Database.Missions[item.id or item.ids[1]], character)
     else
         return true
     end
@@ -885,14 +908,14 @@ BtWQuests_GetItemSkip = function (item, character)
         return true
     end
 
-    if item.type == "quest" and BtWQuestsDatabase.Quests[item.id or item.ids[1]] ~= nil then
-        return BtWQuests_GetItemSkip(BtWQuestsDatabase.Quests[item.id or item.ids[1]], character)
-    elseif item.type == "chain" and BtWQuestsDatabase.Chains[item.id or item.ids[1]] ~= nil then
-        return BtWQuests_GetItemSkip(BtWQuestsDatabase.Chains[item.id or item.ids[1]], character)
-    elseif item.type == "category" and BtWQuestsDatabase.Categories[item.id or item.ids[1]] ~= nil then
-        return BtWQuests_GetItemSkip(BtWQuestsDatabase.Categories[item.id or item.ids[1]], character)
-    elseif item.type == "mission" and BtWQuestsDatabase.Missions[item.id or item.ids[1]] ~= nil then
-        return BtWQuests_GetItemSkip(BtWQuestsDatabase.Missions[item.id or item.ids[1]], character)
+    if item.type == "quest" and BtWQuests.Database.Quests[item.id or item.ids[1]] ~= nil then
+        return BtWQuests_GetItemSkip(BtWQuests.Database.Quests[item.id or item.ids[1]], character)
+    elseif item.type == "chain" and BtWQuests.Database.Chains[item.id or item.ids[1]] ~= nil then
+        return BtWQuests_GetItemSkip(BtWQuests.Database.Chains[item.id or item.ids[1]], character)
+    elseif item.type == "category" and BtWQuests.Database.Categories[item.id or item.ids[1]] ~= nil then
+        return BtWQuests_GetItemSkip(BtWQuests.Database.Categories[item.id or item.ids[1]], character)
+    elseif item.type == "mission" and BtWQuests.Database.Missions[item.id or item.ids[1]] ~= nil then
+        return BtWQuests_GetItemSkip(BtWQuests.Database.Missions[item.id or item.ids[1]], character)
     else
         return false
     end
@@ -935,7 +958,8 @@ end
 function BtWQuestsDatabaseMixin:AddMapRecursive(id, t, force, replace)
     self:AddMap(id, t, replace)
 
-    for _,map in ipairs(C_Map.GetMapChildrenInfo(id, nil, true)) do
+    local children = C_Map.GetMapChildrenInfo(id, nil, true) or {}
+    for _,map in ipairs(children) do
         if force or self.MapIDToItem[map.mapID] == nil then
             self:AddMap(map.mapID, t, replace)
         end
@@ -967,7 +991,7 @@ function BtWQuests_GetAreaName(areaID)
 end
 
 function BtWQuests_GetMapName(mapID)
-    return C_Map.GetMapInfo(mapID).name
+    return ((C_Map.GetMapInfo(mapID) or {}).name or "Unnamed")
 end
 
 -- Adds quest chains to a list based on the continent they are on, later used to display map indicators
@@ -1334,6 +1358,9 @@ function BtWQuestsDatabaseMixin:AddChain(id, t)
     if t.rewards == nil and t.items ~= nil then
         local rewards = {}
         local reputationRewards = {}
+        local currencyRewards = {}
+        local experienceReward
+        local moneyReward
         for _,item in ipairs(t.items) do
             if item.type == "quest" and item.id ~= nil then
                 local quest = self.Quests[item.id]
@@ -1353,10 +1380,119 @@ function BtWQuestsDatabaseMixin:AddChain(id, t)
                             end
 
                             chainReward.amount = chainReward.amount + reward.amount
+                        elseif reward.type == "currency" then
+                            local chainReward = currencyRewards[reward.id]
+                            if chainReward == nil then
+                                chainReward = {
+                                    type = "currency",
+                                    id = reward.id,
+                                    restrictions = reward.restrictions,
+                                    amount = 0,
+                                }
+                                currencyRewards[reward.id] = chainReward
+                                table.insert(rewards, chainReward)
+                            end
+
+                            chainReward.amount = chainReward.amount + reward.amount
+                        elseif reward.type == "money" then
+                            if reward.amount then
+                                if moneyReward == nil then
+                                    moneyReward = {
+                                        type = "money",
+                                        amounts = {},
+                                        minLevel = quest.requiredLevel or quest.level,
+                                        maxLevel = quest.level or quest.maxLevel,
+                                    }
+                                end
+
+                                for index=1,moneyReward.maxLevel-moneyReward.minLevel+1 do
+                                    moneyReward.amounts[index] = (moneyReward.amounts[index] or 0) + reward.amount;
+                                end
+                            else
+                                if moneyReward == nil then
+                                    moneyReward = {
+                                        type = "money",
+                                        amounts = {},
+                                        minLevel = reward.minLevel,
+                                        maxLevel = reward.maxLevel,
+                                    }
+                                end
+
+                                if moneyReward.minLevel > reward.minLevel then
+                                    for i=reward.minLevel,moneyReward.minLevel do
+                                        table.insert(moneyReward.amounts, 1, 0);
+                                    end
+
+                                    moneyReward.minLevel = reward.minLevel;
+                                end
+
+                                if moneyReward.maxLevel < reward.minLevel then
+                                    moneyReward.maxLevel = reward.minLevel;
+                                end
+
+                                for level=moneyReward.minLevel,moneyReward.maxLevel do
+                                    local index = level - moneyReward.minLevel + 1;
+                                    if level < reward.minLevel then
+                                        moneyReward.amounts[index] = (moneyReward.amounts[index] or 0) + reward.amounts[1];
+                                    elseif level > reward.maxLevel then
+                                        moneyReward.amounts[index] = (moneyReward.amounts[index] or 0) + reward.amounts[#reward.amounts];
+                                    else
+                                        moneyReward.amounts[index] = (moneyReward.amounts[index] or 0) + reward.amounts[level - reward.minLevel + 1];
+                                    end
+                                end
+                            end
+                        elseif reward.type == "experience" then
+                            if reward.amount then
+                                if experienceReward == nil then
+                                    experienceReward = {
+                                        type = "experience",
+                                        amounts = {},
+                                        minLevel = 1,
+                                        maxLevel = MAX_PLAYER_LEVEL,
+                                    }
+                                end
+
+                                for level=1,MAX_PLAYER_LEVEL do
+                                    if level > OUTDATED_LEVEL and reward.outdated then
+                                        experienceReward.amounts[level] = (experienceReward.amounts[level] or 0) + reward.outdated;
+                                    else
+                                        experienceReward.amounts[level] = (experienceReward.amounts[level] or 0) + reward.amount;
+                                    end
+                                end
+                            else
+                                if experienceReward == nil then
+                                    experienceReward = {
+                                        type = "experience",
+                                        amounts = {},
+                                        minLevel = 1,
+                                        maxLevel = MAX_PLAYER_LEVEL - 1,
+                                    }
+                                end
+
+                                for level=1,MAX_PLAYER_LEVEL - 1 do
+                                    if level < reward.minLevel then
+                                        experienceReward.amounts[level] = (experienceReward.amounts[level] or 0) + reward.amounts[1];
+                                    elseif reward.amounts[level - reward.minLevel + 1] then
+                                        experienceReward.amounts[level] = (experienceReward.amounts[level] or 0) + reward.amounts[level - reward.minLevel + 1];
+                                    elseif level > OUTDATED_LEVEL and reward.outdated then
+                                        experienceReward.amounts[level] = (experienceReward.amounts[level] or 0) + reward.outdated;
+                                    else
+                                        experienceReward.amounts[level] = (experienceReward.amounts[level] or 0) + reward.amounts[#reward.amounts];
+                                    end
+                                end
+                            end
                         end
                     end
                 end
             end
+        end
+
+        if experienceReward then
+            table.insert(rewards, 1, experienceReward)
+        end
+
+        if moneyReward then
+            table.insert(rewards, 1, moneyReward)
         end
 
         if #rewards > 0 then
@@ -1369,7 +1505,7 @@ end
 
 --[[
     This is the base for pretty much everthing coming from the database
-    self.item The table from BtWQuestsDatabase.Chains, BtWQuestsDatabaseChain:GetItem(), or BtWQuestsDatabaseChain:GetPrerequsite()
+    self.item The table from BtWQuests.Database.Chains, BtWQuestsDatabaseChain:GetItem(), or BtWQuestsDatabaseChain:GetPrerequsite()
     self.character The character that this is for, a lot of things can vary depending on 
     self.database Is the database the data came from (Probably just BtWQuestsDatabase)
 ]]
@@ -1387,9 +1523,9 @@ function BtWQuestsDatabaseItemMixin:EqualsItem(other)
     end
 
     if type == "chain" or type == "category" or type == "npc" or type == "quest" or type == "achievement" or type == "mission" or type == "faction" or type == "race" or type == "class" then
-        return self:GetID() == other.id
+        return tonumber(self:GetID()) == tonumber(other.id)
     elseif type == "level" then
-        return self:GetLevel() == other.level
+        return tonumber(self:GetLevel()) == tonumber(other.level)
     else
         return false
     end
@@ -1699,6 +1835,14 @@ function BtWQuestsDatabaseObjectMixin:GetType()
     return "object"
 end
 
+BtWQuestsDatabaseLootMixin = Mixin({}, BtWQuestsDatabaseObjectMixin)
+function BtWQuestsDatabaseLootMixin:GetType()
+    return "loot"
+end
+function BtWQuestsDatabaseLootMixin:GetName()
+    return string.format(BTWQUESTS_LOOT, BtWQuestsDatabaseItemMixin.GetName(self))
+end
+
 -- This Mixin is used for an instance of a chain
 BtWQuestsDatabaseChainMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
 function BtWQuestsDatabaseChainMixin:GetSubtext(small)
@@ -1781,7 +1925,11 @@ function BtWQuestsDatabaseChainMixin:IsMajor()
     return self.item.major == true
 end
 function BtWQuestsDatabaseChainMixin:GetButtonImage()
-    return self.item.buttonImage
+    if type(self.item.buttonImage) ~= "table" then
+        return self.item.buttonImage
+    end
+
+    return self.item.buttonImage.texture, unpack(self.item.buttonImage.texCoords)
 end
 function BtWQuestsDatabaseChainMixin:GetListImage()
     if type(self.item.listImage) ~= "table" then
@@ -1842,7 +1990,7 @@ function BtWQuestsDatabaseCategoryMixin:GetProgress()
     for _,v in ipairs(self.item.items) do
         if v.type == 'chain' then
             if not character:IsChainIgnored(v.id) and not BtWQuests_GetItemSkip(v, character) then
-                if v.major or (BtWQuestsDatabase.Chains[v.id] and BtWQuestsDatabase.Chains[v.id].major) then
+                if v.major or (BtWQuests.Database.Chains[v.id] and BtWQuests.Database.Chains[v.id].major) then
                     if BtWQuestsDatabase:IsChainCompleted(v.id, character) then
                         majorProgress = majorProgress + 1
                     end
@@ -2015,7 +2163,11 @@ function BtWQuestsDatabaseCategoryMixin:IsMajor()
     return self.item.major == true
 end
 function BtWQuestsDatabaseCategoryMixin:GetButtonImage()
-    return self.item.buttonImage
+    if type(self.item.buttonImage) ~= "table" then
+        return self.item.buttonImage
+    end
+
+    return self.item.buttonImage.texture, unpack(self.item.buttonImage.texCoords)
 end
 function BtWQuestsDatabaseCategoryMixin:GetListImage()
     if type(self.item.listImage) ~= "table" then
@@ -2142,6 +2294,8 @@ function BtWQuestsDatabaseTargetMixin:GetTarget(index)
             target = self.database:GetObject(id, self.character)
         elseif self.item.type == "kill" then
             target = self.database:GetKill(id, self.character)
+        elseif self.item.type == "loot" then
+            target = self.database:GetLoot(id, self.character)
         elseif self.item.type == "chain" then
             target = self.database:GetChain(id, self.character)
         elseif self.item.type == "category" then
@@ -2401,7 +2555,31 @@ function BtWQuestsDatabasExperienceMixin:GetName()
         return BtWQuestsDatabaseItemMixin.GetName(self)
     end
 
-    return self.item.amount .. " Experience"
+    local amount;
+    if self.item.amounts then
+        local level = math.min(math.max(self.character:GetLevel(), self.item.minLevel), self.item.maxLevel) - self.item.minLevel + 1
+        if level > #self.item.amounts then
+            if self.character:GetLevel() > OUTDATED_LEVEL and self.item.outdated then
+                amount = self.item.outdated;
+            else
+                amount = self.item.amounts[#self.item.amounts];
+            end
+        else
+            amount = self.item.amounts[level];
+        end
+    else
+        amount = self.item.amount;
+    end
+
+    local modifier = 1 + self.character:GetXPModifier();
+    if self.character:IsWarModeDesired() and self.item.noWarModeBonus then
+        modifier = modifier + (self.character:GetWarModeRewardBonus() * 0.01);
+    end
+
+    return format(GAIN_EXPERIENCE, math.floor(amount * modifier + .5))
+end
+function BtWQuestsDatabasExperienceMixin:GetVisible()
+    return self.character:GetLevel() < MAX_PLAYER_LEVEL
 end
 function BtWQuestsDatabasExperienceMixin:IsCompleted()
     return false
@@ -2459,6 +2637,31 @@ function BtWQuestsDatabaseReputationMixin:IsActive()
     return true
 end
 
+BtWQuestsDatabaseFriendshipMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
+function BtWQuestsDatabaseFriendshipMixin:GetType()
+    return "friendship"
+end
+function BtWQuestsDatabaseFriendshipMixin:GetName()
+    local name
+    if self.item.name then
+        name = BtWQuestsDatabaseItemMixin.GetName(self)
+    end
+
+    return name
+end
+function BtWQuestsDatabaseFriendshipMixin:IsCompleted()
+    local friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = self.character:GetFriendshipReputation(self.item.id)
+    
+    return friendRep >= self.item.amount
+end
+function BtWQuestsDatabaseFriendshipMixin:IsActive()
+    if self.item.active ~= nil then
+        return BtWQuests_EvalRequirement(self.item.active, self.item, self.character, true)
+    end
+    
+    return true
+end
+
 BtWQuestsDatabaseAchievementMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
 function BtWQuestsDatabaseAchievementMixin:GetType()
     return "achievement"
@@ -2469,27 +2672,27 @@ function BtWQuestsDatabaseAchievementMixin:GetName()
     end
 
     if self.item.criteria then
-        return string.format("%s: %s", select(2, GetAchievementInfo(self.tem.id or self.item.ids[1])), select(1, GetAchievementCriteriaInfo(item.id or item.ids[1], item.criteria)))
+        return select(1, self.character:GetAchievementCriteriaInfo(self.item.id or self.item.ids[1], self.item.criteria))
     elseif self.item.criteriaId then
-        return string.format("%s: %s", select(2, GetAchievementInfo(self.item.id or self.item.ids[1])), select(1, GetAchievementCriteriaInfoByID(item.id or item.ids[1], item.criteriaId)))
+        return select(1, self.character:GetAchievementCriteriaInfoByID(self.item.id or self.item.ids[1], self.item.criteriaId))
     elseif self.item.reward then
-        return select(11, GetAchievementInfo(self.item.id or self.item.ids[1]))
+        return select(11, self.character:GetAchievementInfo(self.item.id or self.item.ids[1]))
     else
-        return select(2, GetAchievementInfo(self.item.id or self.item.ids[1]))
+        return select(2, self.character:GetAchievementInfo(self.item.id or self.item.ids[1]))
     end
 end
 function BtWQuestsDatabaseAchievementMixin:IsCompleted()
     if self.item.criteria then
         if self.item.completed == false then
-            return not select(3, GetAchievementCriteriaInfo(self.item.id, self.item.criteria))
+            return not select(3, self.character:GetAchievementCriteriaInfo(self.item.id, self.item.criteria))
         else
-            return select(3, GetAchievementCriteriaInfo(self.item.id, self.item.criteria))
+            return select(3, self.character:GetAchievementCriteriaInfo(self.item.id, self.item.criteria))
         end
     elseif self.item.criteriaId then
         if self.item.completed == false then
-            return not select(3, GetAchievementCriteriaInfoByID(self.item.id, self.item.criteriaId))
+            return not select(3, self.character:GetAchievementCriteriaInfoByID(self.item.id, self.item.criteriaId))
         else
-            return select(3, GetAchievementCriteriaInfoByID(self.item.id, self.item.criteriaId))
+            return select(3, self.character:GetAchievementCriteriaInfoByID(self.item.id, self.item.criteriaId))
         end
     elseif self.item.anyone then
         if self.item.completed == false then
@@ -2499,9 +2702,9 @@ function BtWQuestsDatabaseAchievementMixin:IsCompleted()
         end
     else
         if self.item.completed == false then
-            return not select(13, GetAchievementInfo(self.item.id))
+            return not select(13, self.character:GetAchievementInfo(self.item.id))
         else
-            return select(13, GetAchievementInfo(self.item.id))
+            return select(13, self.character:GetAchievementInfo(self.item.id))
         end
     end
 end
@@ -2529,6 +2732,26 @@ function BtWQuestsDatabaseMoneyMixin:IsCompleted()
     return false
 end
 function BtWQuestsDatabaseMoneyMixin:IsActive()
+    return true
+end
+
+BtWQuestsDatabaseCurrencyMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
+function BtWQuestsDatabaseCurrencyMixin:GetType()
+    return "currency"
+end
+function BtWQuestsDatabaseCurrencyMixin:GetName()
+    local name = BTWQUESTS_CURRENCY;
+    if self.item.name then
+        name = BtWQuestsDatabaseItemMixin.GetName(self)
+    end
+
+    local info = C_CurrencyInfo.GetBasicCurrencyInfo(self.item.id, self.item.amount);
+    return format(name, info.icon, info.displayAmount, info.name);
+end
+function BtWQuestsDatabaseCurrencyMixin:IsCompleted()
+    return false
+end
+function BtWQuestsDatabaseCurrencyMixin:IsActive()
     return true
 end
 
@@ -2621,6 +2844,26 @@ function BtWQuestsDatabasePetMixin:IsCompleted()
     return select(1, C_PetJournal.GetNumCollectedInfo(self.item.id or self.item.ids[1])) > 0
 end
 
+BtWQuestsDatabaseMountMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
+function BtWQuestsDatabaseMountMixin:GetType()
+    return "mount"
+end
+function BtWQuestsDatabaseMountMixin:GetName(variation)
+    if self.item.name then
+        return BtWQuestsDatabaseItemMixin.GetName(self)
+    end
+    
+    local name = C_MountJournal.GetMountInfoByID(self.item.id or self.item.ids[1]) or ""
+    if variation == "reward" then
+        return string.format(BTWQUESTS_PREFIX, BTWQUESTS_MOUNT, name)
+    else
+        return name
+    end
+end
+function BtWQuestsDatabaseMountMixin:IsCompleted()
+    return select(11, C_MountJournal.GetMountInfoByID(self.item.id or self.item.ids[1]))
+end
+
 BtWQuestsDatabaseToyMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
 function BtWQuestsDatabaseToyMixin:GetType()
     return "toy"
@@ -2639,6 +2882,58 @@ function BtWQuestsDatabaseToyMixin:GetName(variation)
 end
 function BtWQuestsDatabaseToyMixin:IsCompleted()
     return PlayerHasToy(self.item.id or self.item.ids[1])
+end
+
+BtWQuestsDatabaseHeartOfAzerothLevelMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
+function BtWQuestsDatabaseHeartOfAzerothLevelMixin:GetType()
+    return "heartlevel"
+end
+function BtWQuestsDatabaseHeartOfAzerothLevelMixin:GetName()
+    if self.item.name then
+        return BtWQuestsDatabaseItemMixin.GetName(self)
+    end
+
+    return string.format(BTWQUESTS_HEART_OF_AZEROTH_LEVEL, self.item.level)
+end
+function BtWQuestsDatabaseHeartOfAzerothLevelMixin:IsCompleted()
+    if self.item.atmost then
+        return self.character:HeartOfAzerothAtmostLevel(self.item.level)
+    else
+        return self.character:HeartOfAzerothAtleastLevel(self.item.level)
+    end
+end
+function BtWQuestsDatabaseHeartOfAzerothLevelMixin:IsActive()
+    return true
+end
+
+BtWQuestsDatabaseAzeriteEssenceMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
+function BtWQuestsDatabaseAzeriteEssenceMixin:GetType()
+    return "azessence"
+end
+function BtWQuestsDatabaseAzeriteEssenceMixin:GetName(variation)
+    if self.item.name then
+        return BtWQuestsDatabaseItemMixin.GetName(self)
+    end
+    
+    local id = self.item.id or self.item.ids[1]
+    local rank = self.item.rank
+    local essence = C_AzeriteEssence.GetEssenceInfo(id)
+    local name = essence.name or ""
+    if rank then
+        return string.format(AZERITE_ESSENCE_TOOLTIP_NAME_RANK, name, rank)
+    else
+        return name
+    end
+end
+function BtWQuestsDatabaseAzeriteEssenceMixin:IsCompleted()
+    local id = self.item.id or self.item.ids[1]
+    local rank = self.item.rank
+    local essence = C_AzeriteEssence.GetEssenceInfo(id)
+    if rank then
+        return essence.rank >= rank and essence.unlocked
+    else
+        return essence.unlocked
+    end
 end
 
 BtWQuestsDatabaseHeaderMixin = Mixin({}, BtWQuestsDatabaseItemMixin)
@@ -3065,6 +3360,15 @@ function BtWQuestsDatabaseMixin:GetObject(id, character)
 
     return Mixin({id = id, item = self.Objects[id] or {}, database = self, character = character}, BtWQuestsDatabaseObjectMixin)
 end
+-- Returns a BtWQuestsDatabaseLootMixin
+function BtWQuestsDatabaseMixin:GetLoot(id, character)
+    local id = tonumber(id)
+    if id == nil then
+        return nil
+    end
+
+    return Mixin({id = id, item = self.Objects[id] or {}, database = self, character = character}, BtWQuestsDatabaseLootMixin)
+end
 -- Returns a BtWQuestsDatabaseChainMixin
 function BtWQuestsDatabaseMixin:GetChain(id, character)
     local id = tonumber(id)
@@ -3293,7 +3597,7 @@ function BtWQuestsDatabaseMixin:EvalChainItem(item, character)
         
         userdata.link = format("\124cffffff00\124Hbtwquests:chain:%s\124h[%s]\124h\124r", item.id or item.ids[1], BtWQuests_EvalText(chain.name, chain, character))
     elseif item.type == "category" then
-        local category = BtWQuestsDatabase.Categories[item.id or item.ids[1]] or {}
+        local category = BtWQuests.Database.Categories[item.id or item.ids[1]] or {}
         
         if skip == nil and category.restrictions then
             skip = not BtWQuests_EvalRequirement(category.restrictions, category, character)
@@ -3334,7 +3638,7 @@ function BtWQuestsDatabaseMixin:EvalChainItem(item, character)
         
         userdata.link = format("\124cffffff00\124Hbtwquests:category:%s\124h[%s]\124h\124r", item.id or item.ids[1], BtWQuests_EvalText(category.name, category, character))
     elseif item.type == "npc" then
-        local npc = BtWQuestsDatabase.NPCs[item.id or item.ids[1]] or {}
+        local npc = BtWQuests.Database.NPCs[item.id or item.ids[1]] or {}
         
         if skip == nil and npc.restrictions then
             skip = not BtWQuests_EvalRequirement(npc.restrictions, npc, character)
@@ -3553,7 +3857,7 @@ local function EvalCategoryItem(item, character)
     local hidden, name, category, expansion, buttonImage, onClick, onEnter, onLeave, userdata = item.hidden, item.link, item.category, item.expansion, item.buttomImage, item.onClick, item.onEnter, item.onLeave, (item.userdata or {})
         
     if item.type == "chain" then
-        local chain = BtWQuestsDatabase.Chains[item.id] or {}
+        local chain = BtWQuests.Database.Chains[item.id] or {}
 
         -- assert(chain ~= nil, "Could not find chain with id " .. tostring(item.id))
         
@@ -3593,7 +3897,7 @@ local function EvalCategoryItem(item, character)
         -- userdata.name = userdata.name or name
         userdata.link = userdata.link or format("\124cffffff00\124Hbtwquests:chain:%s\124h[%s]\124h\124r", item.id, BtWQuests_EvalText(chain.name, chain, character))
     elseif item.type == "category" then
-        local category = BtWQuestsDatabase.Categories[item.id] or {}
+        local category = BtWQuests.Database.Categories[item.id] or {}
 
         -- assert(category ~= nil)
         
@@ -3640,13 +3944,13 @@ local function EvalCategoryItem(item, character)
 end
 
 local function UpdateCategoryItem(categoryID, item)
-    local expansionID = BtWQuestsDatabase.Categories[categoryID].expansion
+    local expansionID = BtWQuests.Database.Categories[categoryID].expansion
 
     if item.type == "chain" then
         local ids = item.ids or {item.id}
         local chain
         for _,id in ipairs(ids) do
-            chain = BtWQuestsDatabase.Chains[id]
+            chain = BtWQuests.Database.Chains[id]
             if chain.category == nil then
                 chain.category = categoryID
                 chain.expansion = expansionID
@@ -3656,7 +3960,7 @@ local function UpdateCategoryItem(categoryID, item)
         local ids = item.ids or {item.id}
         local category
         for _,id in ipairs(ids) do
-            category = BtWQuestsDatabase.Categories[id]
+            category = BtWQuests.Database.Categories[id]
             if category.category == nil then
                 category.parent = categoryID
                 category.expansion = expansionID
@@ -3748,13 +4052,13 @@ end
 
 -- Expansion
 local function UpdateExpansionItem(expansionID, item)
-    assert(BtWQuestsDatabase.Expansions[expansionID] ~= nil)
+    assert(BtWQuests.Database.Expansions[expansionID] ~= nil)
 
     if item.type == "chain" then
         local ids = item.ids or {item.id}
         local chain
         for _,id in ipairs(ids) do
-            chain = BtWQuestsDatabase.Chains[id]
+            chain = BtWQuests.Database.Chains[id]
             if chain.category == nil then
                 chain.category = nil
                 chain.expansion = expansionID
@@ -3764,7 +4068,7 @@ local function UpdateExpansionItem(expansionID, item)
         local ids = item.ids or {item.id}
         local category
         for _,id in ipairs(ids) do
-            category = BtWQuestsDatabase.Categories[id]
+            category = BtWQuests.Database.Categories[id]
             if category.category == nil then
                 category.parent = nil
                 category.expansion = expansionID
@@ -4000,14 +4304,22 @@ function BtWQuests_CreateItem(item, database, character)
         return Mixin(data, BtWQuestsDatabaseReputationMixin)
     elseif item.type == "money" then
         return Mixin(data, BtWQuestsDatabaseMoneyMixin)
+    elseif item.type == "currency" then
+        return Mixin(data, BtWQuestsDatabaseCurrencyMixin)
     elseif item.type == "experience" then
         return Mixin(data, BtWQuestsDatabasExperienceMixin)
     elseif item.type == "coords" then
         return Mixin(data, BtWQuestsDatabaseCoordsMixin)
     elseif item.type == "pet" then
         return Mixin(data, BtWQuestsDatabasePetMixin)
+    elseif item.type == "mount" then
+        return Mixin(data, BtWQuestsDatabaseMountMixin)
     elseif item.type == "toy" then
         return Mixin(data, BtWQuestsDatabaseToyMixin)
+    elseif item.type == "heartlevel" then
+        return Mixin(data, BtWQuestsDatabaseHeartOfAzerothLevelMixin)
+    elseif item.type == "azessence" then
+        return Mixin(data, BtWQuestsDatabaseAzeriteEssenceMixin)
     elseif item.type == nil then
         return Mixin(data, BtWQuestsDatabaseItemMixin)
     else
@@ -4035,6 +4347,8 @@ function BtWQuests_CreateChainItem(index, item, database, character, chain, pare
             return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseLevelMixin)
         elseif item.type == "reputation" then
             return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseReputationMixin)
+        elseif item.type == "friendship" then
+            return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseFriendshipMixin)
         elseif item.type == "time" then
             return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseTimeMixin)
         elseif item.type == "pet" then
@@ -4044,7 +4358,7 @@ function BtWQuests_CreateChainItem(index, item, database, character, chain, pare
         elseif item.type == nil then
             return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseItemMixin)
         else
-            assert(item.type == "quest" or item.type == "mission" or item.type == "npc" or item.type == "kill" or item.type == "object" or item.type == "chain" or item.type == "category", string.format("Unsupported item type %s in chain %d item %d", tostring(item.type), chain:GetID(), index))
+            assert(item.type == "quest" or item.type == "mission" or item.type == "npc" or item.type == "kill" or item.type == "object" or item.type == "loot" or item.type == "chain" or item.type == "category", string.format("Unsupported item type %s in chain %d item %d", tostring(item.type), chain:GetID(), index))
             return Mixin(data, BtWQuestsDatabaseChainItemMixin, BtWQuestsDatabaseTargetMixin)
         end
     end
@@ -4067,3 +4381,4 @@ function BtWQuests_CreateDatabase()
 end
 
 BtWQuestsDatabase = BtWQuests_CreateDatabase()
+BtWQuests.Database = BtWQuestsDatabase;

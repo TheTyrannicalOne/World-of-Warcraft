@@ -7,10 +7,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_GREAT_ANIMAL_SP
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_ALLIANCE,
-        },
+		type = "faction",
+		id = BTWQUESTS_FACTION_ID_ALLIANCE,
     },
 	prerequisites = {
 		{
@@ -18,6 +16,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_GREAT_ANIMAL_SP
 			level = 10,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {26385, 26383, 28490, 13518, 13522},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		type = "quest",
 		id = 13569,
@@ -29,32 +32,27 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_GREAT_ANIMAL_SP
 					type = "quest",
 					id = 26385,
 					restrictions = {
-						{
-							type = "race",
-							id = BTWQUESTS_RACE_ID_WORGEN,
-						},
+						type = "quest",
+						id = 26385,
+						status = {'active', 'completed'},
 					},
 				},
 				{
 					type = "quest",
 					id = 26383,
 					restrictions = {
-						{
-							type = "quest",
-							id = 26383,
-							status = {'active', 'completed'},
-						}
+						type = "quest",
+						id = 26383,
+						status = {'active', 'completed'},
 					},
 				},
 				{
 					type = "quest",
 					id = 28490,
 					restrictions = {
-						{
-							type = "quest",
-							id = 28490,
-							status = {'active', 'completed'},
-						}
+						type = "quest",
+						id = 28490,
+						status = {'active', 'completed'},
 					},
 				},
 				{
@@ -277,10 +275,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_SHATTERSPEAR, {
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_ALLIANCE,
-        },
+		type = "faction",
+		id = BTWQUESTS_FACTION_ID_ALLIANCE,
     },
 	prerequisites = {
 		{
@@ -288,6 +284,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_SHATTERSPEAR, {
 			level = 10,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {13589},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		type = "quest",
 		id = 13515,
@@ -445,10 +446,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_EYE_OF_ALL_STOR
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_ALLIANCE,
-        },
+		type = "faction",
+		id = BTWQUESTS_FACTION_ID_ALLIANCE,
     },
 	prerequisites = {
 		{
@@ -456,6 +455,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_EYE_OF_ALL_STOR
 			level = 10,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {13573, 13577, 13579, 13575},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		type = "quest",
 		id = 13588,
@@ -662,10 +666,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_DEVOURER, {
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_ALLIANCE,
-        },
+		type = "faction",
+		id = BTWQUESTS_FACTION_ID_ALLIANCE,
     },
 	prerequisites = {
 		{
@@ -673,6 +675,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_DEVOURER, {
 			level = 10,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {13881},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		type = "quest",
 		id = 13891,
@@ -759,10 +766,8 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_CONSUMED_BY_MADNESS
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
 	range = {10, 60},
     restrictions = {
-        {
-            type = "faction",
-            id = BTWQUESTS_FACTION_ID_ALLIANCE,
-        },
+		type = "faction",
+		id = BTWQUESTS_FACTION_ID_ALLIANCE,
     },
 	prerequisites = {
 		{
@@ -770,6 +775,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_CONSUMED_BY_MADNESS
 			level = 10,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {13526},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		type = "quest",
 		id = 13546,
@@ -839,6 +849,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_BATTLE_FOR_DARK
 			level = 10,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {13892},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		type = "quest",
 		id = 13897,
@@ -1021,6 +1036,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_CHAIN1, {
 			id = BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_THE_SHATTERSPEAR,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {13591},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		{
 			type = "quest",
@@ -1056,18 +1076,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_CHAIN1, {
 			id = 13570,
 			x = 0,
 			y = 1,
-			connections = {
-                
-            },
 		},
 		{
 			type = "quest",
 			id = 13519,
 			x = 2,
 			y = 1,
-			connections = {
-                
-            },
 		},
 		{
 			type = "quest",
@@ -1126,6 +1140,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DARKSHORE_CHAIN2, {
 			level = 10,
 		},
 	},
+    active = {
+        type = "quest",
+		ids = {13547, 13542, 13543, 13605},
+		status = {'active', 'completed'},
+    },
 	completed = {
 		{
 			type = "quest",
@@ -1272,6 +1291,10 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_DARKSHORE, {
             id = BTWQUESTS_FACTION_ID_ALLIANCE,
         },
     },
+	buttonImage = {
+		texture = 1851074,
+		texCoords = {0,1,0,1},
+	},
 	items = {
 		{
 			type = "chain",

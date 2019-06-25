@@ -2,33 +2,33 @@ local MAP_ID = 64
 local ACHIEVEMENT_ID = 4938
 local CONTINENT_ID = 12
 
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE = 13701
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE = 13702
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM = 13703
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE = 13704
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE = 13705
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP = 13706
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW = 13707
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE = 13701
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE = 13702
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM = 13703
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE = 13704
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE = 13705
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_MIND_THE_DROP = 13706
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW = 13707
 
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01 = 13711
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02 = 13712
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04 = 13713
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03 = 13714
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05 = 13715
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_EMBED_CHAIN01 = 13716
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01 = 13711
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02 = 13712
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04 = 13713
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03 = 13714
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05 = 13715
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_EMBED_CHAIN01 = 13716
 
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_ALLIANCE = 13797
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_HORDE = 13798
-BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_BOTH = 13799
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_OTHER_ALLIANCE = 13797
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_OTHER_HORDE = 13798
+BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_OTHER_BOTH = 13799
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -41,7 +41,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_A
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
         },
     },
     active = {
@@ -56,7 +56,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_A
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
             x = 3,
             y = 0,
             connections = {
@@ -101,20 +101,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_A
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -127,7 +127,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_H
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
         },
     },
     active = {
@@ -142,7 +142,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_H
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
             x = 3,
             y = 0,
             connections = {
@@ -185,13 +185,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_H
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -204,11 +204,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREA
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
         },
     },
     active = {
@@ -225,11 +225,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREA
             variations = {
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
                 },
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
                 },
             },
             x = 3,
@@ -286,14 +286,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREA
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -306,11 +306,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
         },
     },
     active = {
@@ -325,7 +325,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03,
             x = 2,
             connections = {
                 2, 
@@ -333,7 +333,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
             connections = {
                 1, 
             },
@@ -455,20 +455,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_MIND_THE_DROP,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -481,11 +481,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
         },
     },
     active = {
@@ -500,7 +500,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04,
             x = 2,
             connections = {
                 2, 
@@ -508,7 +508,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
             connections = {
                 1, 
             },
@@ -633,13 +633,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_MIND_THE_DROP,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_MIND_THE_DROP, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -669,11 +669,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP, {
             variations = {
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
                 },
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
                 },
             },
             x = 3,
@@ -724,13 +724,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -743,7 +743,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_MIND_THE_DROP,
         },
     },
     active = {
@@ -758,7 +758,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_MIND_THE_DROP,
             x = 3,
             y = 0,
             connections = {
@@ -862,13 +862,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW, {
     },
 })
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01, {
     name = BTWQUESTS_INTRODUCTION,
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
     },
     restrictions = {
         type = "faction",
@@ -1003,29 +1003,29 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM,
             aside = true,
             x = 1,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
             aside = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02, {
     name = BTWQUESTS_INTRODUCTION,
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
     },
     restrictions = {
         type = "faction",
@@ -1161,23 +1161,23 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM,
             aside = true,
             x = 1,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
             aside = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03, {
     name = { -- Negotiations
         type = "quest",
         id = 25744,
@@ -1186,7 +1186,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03, {
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04,
     },
     restrictions = {
         type = "faction",
@@ -1199,7 +1199,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
         },
     },
     active = {
@@ -1214,7 +1214,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
             x = 3,
             y = 0,
             connections = {
@@ -1239,7 +1239,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_EMBED_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_EMBED_CHAIN01,
             aside = true,
             x = 5,
             y = 2,
@@ -1302,7 +1302,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
             aside = true,
             connections = {
                 1, 
@@ -1310,13 +1310,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
             x = 4,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04, {
     name = { -- Negotiations
         type = "quest",
         id = 25745,
@@ -1325,7 +1325,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04, {
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03,
+        BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03,
     },
     restrictions = {
         type = "faction",
@@ -1338,7 +1338,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
         },
     },
     active = {
@@ -1353,7 +1353,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
             x = 3,
             y = 0,
             connections = {
@@ -1378,7 +1378,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_EMBED_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_EMBED_CHAIN01,
             aside = true,
             x = 5,
             y = 2,
@@ -1441,7 +1441,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
             aside = true,
             connections = {
                 1, 
@@ -1449,13 +1449,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
             x = 4,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05, {
     name = "The Mad Magus",
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1467,11 +1467,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
         },
     },
     active = {
@@ -1488,11 +1488,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05, {
             variations = {
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
                 },
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
                 },
             },
             x = 3,
@@ -1529,11 +1529,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05, {
             variations = {
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03,
                 },
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04,
                 },
             },
             x = 1,
@@ -1553,11 +1553,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05, {
             variations = {
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
                 },
                 {
                     type = "chain",
-                    id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
+                    id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
                 },
             },
             x = 2,
@@ -1566,7 +1566,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05, {
     },
 })
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_EMBED_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_EMBED_CHAIN01, {
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1588,7 +1588,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_EMBED_CHAIN01, {
     },
 })
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1596,7 +1596,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_ALLIANCE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1604,7 +1604,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_HORDE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1624,54 +1624,58 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_THOUSAND_NEEDLES_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_THOUSAND_NEEDLES, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851110,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN01,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN02,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_TREASURE_TROVE_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_BUGS_IN_THE_ICE_CREAM,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_CHIEF_OF_CHIEFS_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_MIND_THE_DROP,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_MIND_THE_DROP,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_THE_EVIL_YOU_KNOW,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN04,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN03,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_THOUSAND_NEEDLES_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_THOUSAND_NEEDLES_CHAIN05,
         },
     },
 })

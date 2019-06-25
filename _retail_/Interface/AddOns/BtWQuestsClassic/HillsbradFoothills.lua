@@ -1051,6 +1051,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_HILLSBRAD_FOOTHILLS_BRAZIE_FA
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_HILLSBRAD_FOOTHILLS, {
 	name = BtWQuests_GetMapName(MAP_ID),
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851080,
+		texCoords = {0,1,0,1},
+	},
 	restrictions = {
 		type = "faction",
 		id = BTWQUESTS_FACTION_ID_HORDE

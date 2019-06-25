@@ -1028,4 +1028,103 @@ BtWQuestsDatabase:AddObjectsTable({
             },
         },
     },
+    [322533] = {
+        name = "Mardivas's Tome of the Elements",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.606581,
+                    y = 0.332961,
+                },
+            },
+        },
+    },
+    [326393] = {
+        name = "Azerite Weapons Cache",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.461173,
+                    y = 0.520406,
+                },
+            },
+        },
+    },
+    [326418] = {
+        name = "Arcane Chest",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.379572,
+                    y = 0.605494,
+                },
+            },
+        },
+    },
+    [326588] = {
+        name = "Azerite Weapons Cache",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.461162,
+                    y = 0.520484,
+                },
+            },
+        },
+    },
+    [327170] = {
+        name = "Weapon Rack",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.346451,
+                    y = 0.211033,
+                },
+            },
+        },
+    },
+    [327591] = {
+        name = "Preserved Journal",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.814449,
+                    y = 0.454984,
+                },
+            },
+        },
+    },
+    [327592] = {
+        name = "Enchanted Lock",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.789019,
+                    y = 0.411355,
+                },
+            },
+        },
+    },
+    [327596] = {
+        name = "Broken Abyssal Focus",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.381139,
+                    y = 0.370025,
+                },
+            },
+        },
+    },
+    [329805] = {
+        name = "Strange Crystal",
+        locations = {
+            [1355] = {
+                {
+                    x = 0.328074,
+                    y = 0.395909,
+                },
+            },
+        },
+    },
 })

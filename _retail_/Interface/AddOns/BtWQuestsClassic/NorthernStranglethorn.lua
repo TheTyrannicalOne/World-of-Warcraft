@@ -1,4 +1,4 @@
-local MAP_ID = 50
+ MAP_ID = 50
 
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_OHGANANKA, {
     name = function ()
@@ -1072,6 +1072,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_NORTHERN_STRANGLETHORN_HATCHL
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_NORTHERN_STRANGLETHORN, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851104,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",

@@ -3,41 +3,41 @@ local ACHIEVEMENT_ID_HORDE = 4979
 local ACHIEVEMENT_ID_ALLIANCE = 4932
 local CONTINENT_ID = 12
 
-BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_HORDE = 12601
-BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_HORDE = 12602
-BTWQUESTS_CHAIN_FERALAS_MUISEK = 12603
-BTWQUESTS_CHAIN_FERALAS_FREED_HORDE = 12604
-BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE = 12605
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_HORDE = 12601
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_HORDE = 12602
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_MUISEK = 12603
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_HORDE = 12604
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE = 12605
 
-BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE = 12611
-BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE = 12612
-BTWQUESTS_CHAIN_FERALAS_FREED_ALLIANCE = 12613
-BTWQUESTS_CHAIN_FERALAS_FORCES_OF_NATURE = 12614
-BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE = 12615
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE = 12611
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE = 12612
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_ALLIANCE = 12613
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_FORCES_OF_NATURE = 12614
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE = 12615
 
-BTWQUESTS_CHAIN_FERALAS_CHAIN01 = 12627
-BTWQUESTS_CHAIN_FERALAS_CHAIN02 = 12628
-BTWQUESTS_CHAIN_FERALAS_CHAIN03 = 12638
-BTWQUESTS_CHAIN_FERALAS_CHAIN04 = 12639
-BTWQUESTS_CHAIN_FERALAS_CHAIN05 = 12640
-BTWQUESTS_CHAIN_FERALAS_CHAIN06 = 12642
-BTWQUESTS_CHAIN_FERALAS_CHAIN07 = 12643
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN01 = 12627
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN02 = 12628
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN03 = 12638
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN04 = 12639
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN05 = 12640
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN06 = 12642
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN07 = 12643
 
-BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN01 = 12641
-BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN02 = 12637
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_EMBED_CHAIN01 = 12641
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_EMBED_CHAIN02 = 12637
 
-BTWQUESTS_CHAIN_FERALAS_OTHER_ALLIANCE = 12697
-BTWQUESTS_CHAIN_FERALAS_OTHER_HORDE = 12698
-BTWQUESTS_CHAIN_FERALAS_OTHER_BOTH = 12699
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_OTHER_ALLIANCE = 12697
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_OTHER_HORDE = 12698
+BTWQUESTS_CHAIN_CLASSIC_FERALAS_OTHER_BOTH = 12699
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -61,7 +61,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_HORDE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_EMBED_CHAIN01,
             aside = true,
             x = 0,
             y = 0,
@@ -150,14 +150,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -242,14 +242,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_MUISEK, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_MUISEK, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_FORCES_OF_NATURE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_FORCES_OF_NATURE,
     },
     restrictions = {
         type = "faction",
@@ -348,14 +348,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_MUISEK, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_FREED_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_FREED_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -424,14 +424,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_FREED_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_HORDE, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -494,14 +494,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORD
     },
 })
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -562,7 +562,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE, 
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_EMBED_CHAIN02,
             aside = true,
             x = 4,
             y = 0,
@@ -607,14 +607,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE, 
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -698,14 +698,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_FREED_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_FREED_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -774,14 +774,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_FREED_ALLIANCE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_FORCES_OF_NATURE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_FORCES_OF_NATURE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_MUISEK,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_MUISEK,
     },
     restrictions = {
         type = "faction",
@@ -856,14 +856,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_FORCES_OF_NATURE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID_ALLIANCE, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -993,7 +993,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLI
     },
 })
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN01, {
     name = { -- The Mark of Quality
         type = "quest",
         id = 25449,
@@ -1002,7 +1002,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN01, {
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_CHAIN02,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN02,
     },
     restrictions = {
         type = "faction",
@@ -1059,7 +1059,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN01, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN02, {
     name = { -- The Mark of Quality
         type = "quest",
         id = 25452,
@@ -1068,7 +1068,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN02, {
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     alternatives = {
-        BTWQUESTS_CHAIN_FERALAS_CHAIN01,
+        BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN01,
     },
     restrictions = {
         type = "faction",
@@ -1126,7 +1126,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN02, {
     },
 })
 -- Need to take a closer look at this, probably should be attached to the next part
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN03, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN03, {
     name = "Dummy 2 (A)",
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1164,7 +1164,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN03, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN04, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN04, {
     name = { -- Tambre
         type = "npc",
         id = 39723,
@@ -1221,7 +1221,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN04, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN05, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN05, {
     name = { -- Zorbin Fandazzle
         type = "npc",
         id = 14637,
@@ -1266,7 +1266,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN05, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN06, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN06, {
     name = { -- Chief Spirithorn
         type = "npc",
         id = 39847,
@@ -1323,7 +1323,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN06, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN07, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN07, {
     name = { -- Hadoken Swiftstrider
         type = "npc",
         id = 7875,
@@ -1401,7 +1401,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_CHAIN07, {
     },
 })
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_EMBED_CHAIN01, {
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1426,7 +1426,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN01, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_EMBED_CHAIN02, {
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1452,7 +1452,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_EMBED_CHAIN02, {
     },
 })
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1460,7 +1460,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_OTHER_ALLIANCE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1468,7 +1468,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_OTHER_HORDE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_FERALAS_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_FERALAS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1492,74 +1492,78 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_FERALAS_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_FERALAS, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851102,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_MUISEK,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_MUISEK,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_FREED_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_FATE_OF_TAERAR_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_TWILIGHT_SERMON_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_FREED_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_FREED_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_FORCES_OF_NATURE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_FORCES_OF_NATURE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_THE_DRAGONS_OF_NIGHTMARE_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN01,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN02,
         },
         -- {
         --     type = "chain",
-        --     id = BTWQUESTS_CHAIN_FERALAS_CHAIN03,
+        --     id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN03,
         -- },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN04,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_CHAIN06,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN06,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_CHAIN07,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN07,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_FERALAS_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_FERALAS_CHAIN05,
         },
     },
 })

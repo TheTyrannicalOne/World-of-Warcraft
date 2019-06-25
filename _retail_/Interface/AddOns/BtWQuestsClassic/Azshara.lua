@@ -1661,6 +1661,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_AZSHARA_CHAIN3, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_AZSHARA, {
 	name = BtWQuests_GetMapName(MAP_ID),
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851071,
+		texCoords = {0,1,0,1},
+	},
     restrictions = {
         {
             type = "faction",

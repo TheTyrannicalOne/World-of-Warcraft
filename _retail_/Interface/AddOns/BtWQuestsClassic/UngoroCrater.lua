@@ -2,23 +2,23 @@ local MAP_ID = 78
 local ACHIEVEMENT_ID = 4939
 local CONTINENT_ID = 12
 
-BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO = 13801
-BTWQUESTS_CHAIN_UNGORO_CRATER_OBSERVE_THE_WORLD = 13802
-BTWQUESTS_CHAIN_UNGORO_CRATER_THE_BALLAD_OF_MAXIMILLIAN = 13803
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN1 = 13811
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2 = 13812
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN3 = 13813
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN4 = 13814
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN5 = 13815
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN6 = 13816
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN7 = 13817
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN8 = 13818
-BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN9 = 13819
-BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_ALLIANCE = 13897
-BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_HORDE = 13898
-BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_BOTH = 13899
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_PYLONS_OF_UNGORO = 13801
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OBSERVE_THE_WORLD = 13802
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_BALLAD_OF_MAXIMILLIAN = 13803
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN1 = 13811
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN2 = 13812
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN3 = 13813
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN4 = 13814
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN5 = 13815
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN6 = 13816
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN7 = 13817
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN8 = 13818
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN9 = 13819
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OTHER_ALLIANCE = 13897
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OTHER_HORDE = 13898
+BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OTHER_BOTH = 13899
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_PYLONS_OF_UNGORO, {
     name = {
         type = "achievement",
         id = 4939,
@@ -42,15 +42,15 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO, {
     completed = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN1,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN1,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN2,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN3,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN3,
         },
         {
             type = "quest",
@@ -60,7 +60,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN1,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN1,
             x = 0,
             y = 0,
             connections = {
@@ -69,14 +69,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN2,
             connections = {
                 3, 
             },
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN3,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN3,
             connections = {
                 2, 
             },
@@ -95,7 +95,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OBSERVE_THE_WORLD, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OBSERVE_THE_WORLD, {
     name = {
         type = "achievement",
         id = 4939,
@@ -112,12 +112,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OBSERVE_THE_WORLD, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
+        id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
     },
     completed = {
         type = "quest",
@@ -126,7 +126,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OBSERVE_THE_WORLD, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
             x = 3,
             y = 0,
             connections = {
@@ -148,7 +148,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OBSERVE_THE_WORLD, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_THE_BALLAD_OF_MAXIMILLIAN, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_BALLAD_OF_MAXIMILLIAN, {
     name = {
         type = "achievement",
         id = 4939,
@@ -216,7 +216,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_THE_BALLAD_OF_MAXIMILLI
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN1, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN1, {
     name = { -- The Northern Pylon
         type = "quest",
         id = 24722,
@@ -296,7 +296,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN1, {
         
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN9,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN9,
             x = 0,
             embed = true,
             aside = true,
@@ -377,7 +377,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN1, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN2, {
     name = { -- The Eastern Pylon
         type = "quest",
         id = 24721,
@@ -403,7 +403,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN5,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN5,
             x = 1,
             y = 0,
             embed = true,
@@ -436,7 +436,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN6,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN6,
             x = 5,
             y = 0,
             embed = true,
@@ -468,7 +468,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN7,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN7,
             x = 1,
             y = 4,
             embed = true,
@@ -497,7 +497,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN3, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN3, {
     name = { -- The Western Pylon
         type = "quest",
         id = 24723,
@@ -577,7 +577,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN3, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN4, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN4, {
     name = "Marshal's Stand",
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -676,7 +676,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN4, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN5, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN5, {
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -732,7 +732,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN5, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN6, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN6, {
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -784,7 +784,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN6, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN7, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN7, {
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -820,7 +820,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN7, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN8, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN8, {
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -856,7 +856,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN8, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN9, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN9, {
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -892,7 +892,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN9, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -900,7 +900,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_ALLIANCE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -924,7 +924,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -964,34 +964,38 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_UNGORO_CRATER_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_UNGORO_CRATER, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851111,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_PYLONS_OF_UNGORO,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_OBSERVE_THE_WORLD,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_OBSERVE_THE_WORLD,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_THE_BALLAD_OF_MAXIMILLIAN,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_THE_BALLAD_OF_MAXIMILLIAN,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN1,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN1,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN2,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN2,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN3,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN3,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_UNGORO_CRATER_CHAIN4,
+            id = BTWQUESTS_CHAIN_CLASSIC_UNGORO_CRATER_CHAIN4,
         },
     },
 })

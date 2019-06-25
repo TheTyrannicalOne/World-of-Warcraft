@@ -12,6 +12,7 @@ local ResourceRegenerates = ns.ResourceRegenerates
 
 local Error = ns.Error
 
+local orderedPairs = ns.orderedPairs
 local round, roundUp, roundDown = ns.round, ns.roundUp, ns.roundDown
 local safeMin, safeMax = ns.safeMin, ns.safeMax
 
@@ -66,6 +67,7 @@ state.action = {}
 state.active_dot = {}
 state.args = {}
 state.azerite = {}
+state.essence = {}
 state.aura = {}
 state.buff = {}
 state.auras = auras
@@ -86,6 +88,8 @@ state.history = {
     casts = {},
     units = {}
 }
+
+state.holds = {}
 
 state.items = {}
 state.pet = {
@@ -507,24 +511,30 @@ state.setCooldown = setCooldown
 
 
 local function spendCharges( action, charges )
-    if class.abilities[ action ].charges and charges > 0 then
-        state.cooldown[ action ] = state.cooldown[ action ] or {}
+    local ability = class.abilities[ action ]
 
-        if state.cooldown[ action ].next_charge <= state.query_time then
-            state.cooldown[ action ].recharge_began = state.query_time
-            state.cooldown[ action ].next_charge = state.query_time + class.abilities[ action ].recharge
-            state.cooldown[ action ].recharge = class.abilities[ action ].recharge
-        end
+    if not ability.charges or ability.charges == 1 then
+        setCooldown( action, ability.cooldown )
+        return
+    end
 
-        state.cooldown[ action ].charge = max( 0, state.cooldown[ action ].charge - charges )
+    if not state.cooldown[ action ] then state.cooldown[ action ] = {} end
+    local cd = state.cooldown[ action ]
 
-        if state.cooldown[ action ].charge == 0 then
-            state.cooldown[ action ].duration = class.abilities[ action ].recharge
-            state.cooldown[ action ].expires = state.cooldown[ action ].next_charge
-        else
-            state.cooldown[ action ].duration = 0
-            state.cooldown[ action ].expires = 0
-        end
+    if cd.next_charge <= state.query_time then
+        cd.recharge_began = state.query_time
+        cd.next_charge = state.query_time + ( ability.recharge or ability.cooldown )
+        cd.recharge = ability.recharge
+    end
+
+    cd.charge = max( 0, cd.charge - charges )
+
+    if cd.charge == 0 then
+        cd.duration = ability.recharge or ability.cooldown
+        cd.expires = cd.next_charge
+    else
+        cd.duration = 0
+        cd.expires = 0
     end
 end
 state.spendCharges = spendCharges
@@ -622,9 +632,14 @@ do
         end
 
         local aura = ability.cycle
+        
+        if not aura then
+            -- Fallback check, is there an aura with the same name as the ability?
+            aura = class.auras[ ability.key ] and ability.key
+        end
 
         if not aura then
-            debug( " - no aura flagged for cycling targets in ability / spec module." )
+            debug( " - no aura identified for target-cycling and no aura matching " .. ability.key .. " found in ability / spec module; target cycling disabled." )
             return
         end
 
@@ -1190,31 +1205,45 @@ ns.forecastResources = forecastResources
 state.forecastResources = forecastResources
 
 
-local function gain( amount, resource, overcap )
-    if state[ resource ].gain then
-        state[ resource ].gain( amount, resource, overcap )
+local resourceChange = function( amount, resource, overcap )
+    if amount == 0 then return false end
+
+    local r = state[ resource ]
+    local pre = r.current
+
+    if r.gain then r.gain( amount, resource, overcap, clean )
     else
-        -- 080217:  Update actual value to reflect current value + change, this means the forecasted values are used (and then need updated).
-        if overcap then state[ resource ].actual = state[ resource ].current + amount
-        else state[ resource ].actual = min( state[ resource ].max, state[ resource ].current + amount ) end
+        r.actual = max( 0, r.current + amount )
+        if not overcap then r.actual = min( r.max, r.actual ) end
     end
-    if amount ~= 0 and resource ~= "health" then forecastResources( resource ) end
-    ns.callHook( 'gain', amount, resource, overcap )
+
+    return r.actual ~= pre
 end
+
+
+local gain = function( amount, resource, overcap, clean )
+    if resourceChange( amount, resource, overcap ) then
+        local forecasted = false
+        if not clean then _, _, _, _, forecasted = ns.callHook( "gain_preforecast", amount, resource, overcap, true ) end
+        if resource ~= "health" and not forecasted then forecastResources( resource ) end
+        if not clean then ns.callHook( "gain", amount, resource, overcap, true ) end
+    end
+end
+
+
+local spend = function( amount, resource, clean )
+    amount = -amount
+    if resourceChange( amount, resource, false ) then
+        local forecasted = false
+        if not clean then _, _, _, _, forecasted = ns.callHook( "spend_preforecast", amount, resource, true ) end
+        if resource ~= "health" and not forecasted then forecastResources( resource ) end
+        if not clean then ns.callHook( "spend", amount, resource, false, true ) end
+    end
+end
+
 state.gain = gain
-
-
-local function spend( amount, resource, noHook )
-    if state[ resource ].spend then
-        state[ resource ].spend( amount, resource )
-    else
-        -- 080217:  Update actual value to reflect current value + change, this means the forecasted values are used (and then need updated).
-        state[ resource ].actual = max( 0, state[ resource ].actual - amount )
-    end
-    if amount ~= 0 and resource ~= "health" then forecastResources( resource ) end    
-    if not noHook then ns.callHook( 'spend', amount, resource ) end
-end
 state.spend = spend
+
 
 
 do
@@ -2083,6 +2112,10 @@ local mt_toggle = {
         if not db then return end
 
         local toggle = db.profile.toggles[ k ]
+
+        if k == "cooldowns" and toggle.override and state.buff.bloodlust.up then return true end
+        if k == "essences" and toggle.override and state.toggle.cooldowns then return true end
+
         if toggle then return toggle.value end
     end
 }
@@ -3182,7 +3215,11 @@ local mt_artifact_traits = {
 setmetatable( state.azerite, mt_artifact_traits )
 state.azerite.no_trait = { rank = 0 }
 state.artifact = state.azerite
--- rawset( state.artifact, no_trait, setmetatable( {}, mt_default_trait ) )
+
+
+-- Essences
+setmetatable( state.essence, mt_artifact_traits )
+state.essence.no_trait = { rank = 0, major = false, minor = false }
 
 
 do
@@ -5256,6 +5293,107 @@ ns.spendResources = function( ability )
 end
 
 
+do
+    local HOLD_PERMANENT = 1
+    local HOLD_COMBAT    = 2
+    
+    function Hekili:PlaceHold( action, combat, verbose )
+        if not action then return end
+
+        action = action:trim()    
+        local ability = class.abilities[ action ]
+
+        if not ability then
+            action = action:lower()
+            -- Try to auto-complete.
+            for k, v in orderedPairs( class.abilities ) do
+                if type(k) == 'string' and k:sub( 1, action:len() ):lower() == action then
+                    action = v.key
+                    ability = class.abilities[ action ]
+                    break
+                end
+            end
+        end
+
+        if ability then
+            state.holds[ ability.key ] = combat and HOLD_COMBAT or HOLD_PERMANENT
+            if verbose then Hekili:Print( class.abilities[ ability.key ].name .. " placed on hold" .. ( combat and " until end of combat." or "." ) ) end
+            Hekili:ForceUpdate( "HEKILI_HOLD_APPLIED" )
+        end
+    end
+
+    function Hekili:RemoveHold( action, verbose )
+        if not action then return end
+
+        action = action:trim()
+        local ability = class.abilities[ action ]
+
+        if not ability then
+            action = action:lower()
+            -- Try to auto-complete.
+            for k, v in orderedPairs( class.abilities ) do
+                if type(k) == 'string' and k:sub( 1, action:len() ):lower() == action then
+                    action = v.key
+                    ability = class.abilities[ action ]
+                    break
+                end
+            end
+        end
+
+        if ability and state.holds[ ability.key ] then
+            state.holds[ ability.key ] = nil
+            if verbose then Hekili:Print( class.abilities[ ability.key ].name .. " hold removed." ) end
+            Hekili:ForceUpdate( "HEKILI_HOLD_REMOVED" )
+        end
+    end
+
+    function Hekili:ToggleHold( action, combat, verbose )
+        if self:IsHeld( action ) then
+            self:RemoveHold( action, verbose )
+            return
+        end
+
+        self:PlaceHold( action, combat, verbose )
+    end
+
+    function Hekili:IsHeld( action )
+        action = action and action:trim()
+        local ability = class.abilities[ action ]
+
+        if not ability then
+            action = action:lower()
+            -- Try to auto-complete.
+            for k, v in orderedPairs( class.abilities ) do
+                if type(k) == 'string' and k:sub( 1, action:len() ):lower() == action then
+                    action = v.key
+                    ability = class.abilities[ action ]
+                    break
+                end
+            end
+        end
+
+        if ability and state.holds[ ability.key ] then
+            return true, state.holds[ ability.key ]
+        end
+
+        return false
+    end
+
+    function Hekili:ReleaseHolds( combat )
+        local holdRemoved = false
+
+        for k, v in pairs( state.holds ) do
+            if not combat or v == HOLD_COMBAT then
+                state.holds[ k ] = nil
+                holdRemoved = true
+            end
+        end
+
+        if holdRemoved then Hekili:ForceUpdate( "HEKILI_COMBAT_HOLD_REMOVED" ) end
+    end
+end
+
+
 function state:IsKnown( sID, notoggle )
 
     if type(sID) ~= 'number' then sID = class.abilities[ sID ] and class.abilities[ sID ].id or nil end
@@ -5335,7 +5473,7 @@ do
     }
 
     -- If an ability has been manually disabled, don't consider it.    
-    function state:IsDisabled( spell )
+    function state:IsDisabled( spell, strict )
         spell = spell or self.this_action
 
         local ability = class.abilities[ spell ]
@@ -5343,38 +5481,30 @@ do
 
         spell = ability.key
 
+        if self.holds[ spell ] then return true end
+
         local profile = Hekili.DB.profile
         local spec = profile.specs[ state.spec.id ]
 
         local option = ability.item and spec.items[ spell ] or spec.abilities[ spell ]
 
         if option.disabled then return true end
+        if option.boss and not state.boss then return true end
 
-        local toggle = option.toggle
-        if not toggle or toggle == 'default' then toggle = ability.toggle end
+        if not strict then
+            local toggle = option.toggle
+            if not toggle or toggle == 'default' then toggle = ability.toggle end
 
-        if ability.id < -100 or ability.id > 0 or toggleSpells[ spell ] then
-            if state.filter ~= 'none' and state.filter ~= toggle and not ability[ state.filter ] then
-                return true
-            else
-                if toggle and toggle ~= 'none' then
-                    if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle ) then return true end
+            if ability.id < -100 or ability.id > 0 or toggleSpells[ spell ] then
+                if state.filter ~= 'none' and state.filter ~= toggle and not ability[ state.filter ] then
+                    return true
+                else
+                    if toggle and toggle ~= 'none' then
+                        if not self.toggle[ toggle ] or ( profile.toggles[ toggle ].separate and state.filter ~= toggle ) then return true end
+                    end
                 end
             end
         end
-
-        --[[ if ability.defensive and not profile.toggles.defensives.value then
-            return true
-        end ]]
-
-
-        --[[ if toggle and toggle ~= 'none' and not state.toggle[ toggle ] then
-            return true
-        end
-
-        if state.filter ~= 'none' and state.filter ~= toggle then
-            return true
-        end ]]
 
         return false
     end

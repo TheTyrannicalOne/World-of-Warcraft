@@ -636,6 +636,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_REDRIDGE_MOUNTAINS_CHAIN1, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_REDRIDGE_MOUNTAINS, {
 	name = BtWQuests_GetMapName(MAP_ID),
 	expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851085,
+		texCoords = {0,1,0,1},
+	},
 	restrictions = {
 		type = "faction",
 		id = BTWQUESTS_FACTION_ID_ALLIANCE,

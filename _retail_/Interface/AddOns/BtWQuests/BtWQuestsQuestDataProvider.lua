@@ -28,7 +28,6 @@ function BtWQuestsQuestDataProviderMixin:RefreshAllData(fromOnShow)
 end
 
 BtWQuestsQuestPinMixin = CreateFromMixins(MapCanvasPinMixin);
-
 function BtWQuestsQuestPinMixin:OnLoad()
 	self:SetScalingLimits(1, 1.0, 1.2);
 	self:UseFrameLevelType("PIN_FRAME_LEVEL_STORY_LINE");

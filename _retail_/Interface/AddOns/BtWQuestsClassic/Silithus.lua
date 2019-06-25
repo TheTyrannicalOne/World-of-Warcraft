@@ -2,22 +2,22 @@ local MAP_ID = 81
 local ACHIEVEMENT_ID = 4934
 local CONTINENT_ID = 12
 
-BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN = 13401
-BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH = 13402
-BTWQUESTS_CHAIN_SILITHUS_UNRAVELING_THE_MYSTERY = 13403
-BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE = 13404
-BTWQUESTS_CHAIN_SILITHUS_TWILIGHT_LEXICON = 13405
-BTWQUESTS_CHAIN_SILITHUS_CHAIN01 = 13411
-BTWQUESTS_CHAIN_SILITHUS_CHAIN02 = 13412
-BTWQUESTS_CHAIN_SILITHUS_CHAIN03 = 13413
-BTWQUESTS_CHAIN_SILITHUS_CHAIN04 = 13414
-BTWQUESTS_CHAIN_SILITHUS_CHAIN05 = 13415
-BTWQUESTS_CHAIN_SILITHUS_CHAIN06 = 13416
-BTWQUESTS_CHAIN_SILITHUS_OTHER_ALLIANCE = 13497
-BTWQUESTS_CHAIN_SILITHUS_OTHER_HORDE = 13498
-BTWQUESTS_CHAIN_SILITHUS_OTHER_BOTH = 13499
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN = 13401
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_MISTRESS_NATALIA_MARALITH = 13402
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_UNRAVELING_THE_MYSTERY = 13403
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_A_TERRIBLE_PURPOSE = 13404
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHT_LEXICON = 13405
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN01 = 13411
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN02 = 13412
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN03 = 13413
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN04 = 13414
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN05 = 13415
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN06 = 13416
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_OTHER_ALLIANCE = 13497
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_OTHER_HORDE = 13498
+BTWQUESTS_CHAIN_CLASSIC_SILITHUS_OTHER_BOTH = 13499
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -41,7 +41,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN03,
             aside = true,
             x = 1,
             y = 0,
@@ -73,18 +73,18 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_MISTRESS_NATALIA_MARALITH,
             aside = true,
             x = 2,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_A_TERRIBLE_PURPOSE,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_MISTRESS_NATALIA_MARALITH, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -97,12 +97,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+        id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
     },
     completed = {
         type = "quest",
@@ -111,7 +111,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
             x = 3,
             y = 0,
             connections = {
@@ -133,11 +133,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_UNRAVELING_THE_MYSTERY,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_UNRAVELING_THE_MYSTERY,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_UNRAVELING_THE_MYSTERY, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_UNRAVELING_THE_MYSTERY, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -150,7 +150,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_UNRAVELING_THE_MYSTERY, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
         },
         {
             type = "quest",
@@ -168,7 +168,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_UNRAVELING_THE_MYSTERY, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_MISTRESS_NATALIA_MARALITH,
             x = 3,
             y = 0,
             connections = {
@@ -197,7 +197,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_UNRAVELING_THE_MYSTERY, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_A_TERRIBLE_PURPOSE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -210,12 +210,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+        id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
     },
     completed = {
         type = "quest",
@@ -224,7 +224,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
             x = 3,
             y = 0,
             connections = {
@@ -265,11 +265,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHT_LEXICON,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHT_LEXICON,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_TWILIGHT_LEXICON, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHT_LEXICON, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -282,7 +282,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_TWILIGHT_LEXICON, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
         },
         {
             type = "quest",
@@ -300,7 +300,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_TWILIGHT_LEXICON, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_A_TERRIBLE_PURPOSE,
             x = 3,
             y = 0,
             connections = {
@@ -315,7 +315,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_TWILIGHT_LEXICON, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN01, {
     name = "Stepping Up Security",
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -339,7 +339,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN01, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN04,
             x = 2,
             y = 0,
             embed = true,
@@ -420,7 +420,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN01, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN05, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN05, {
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -440,7 +440,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN05, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN03, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN03, {
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -460,7 +460,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN03, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN02, {
     name = "Dummy 3",
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -481,7 +481,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN02, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN04, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN04, {
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -532,7 +532,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN04, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN06, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN06, {
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -553,7 +553,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_CHAIN06, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -562,7 +562,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_OTHER_ALLIANCE, {
 
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -570,7 +570,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_OTHER_HORDE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_SILITHUS_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_SILITHUS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -594,30 +594,34 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_SILITHUS_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_SILITHUS, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851106,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHTS_RUN,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHTS_RUN,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_MISTRESS_NATALIA_MARALITH,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_MISTRESS_NATALIA_MARALITH,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_UNRAVELING_THE_MYSTERY,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_UNRAVELING_THE_MYSTERY,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_A_TERRIBLE_PURPOSE,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_A_TERRIBLE_PURPOSE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_TWILIGHT_LEXICON,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_TWILIGHT_LEXICON,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_SILITHUS_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_SILITHUS_CHAIN01,
         },
     },
 })

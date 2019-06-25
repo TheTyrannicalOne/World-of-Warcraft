@@ -4034,6 +4034,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [52122] = {
         name = "Ser un Renegado",
     },
+    [52127] = {
+        name = "La Guarida del Lobo",
+    },
     [52128] = {
         name = "Boleto de ferry",
     },
@@ -4637,6 +4640,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [53372] = {
         name = "Hora de ajustar cuentas",
     },
+    [53406] = {
+        name = "La Cámara del Corazón",
+    },
     [53430] = {
         name = "Ballesta de la Orden de las Ascuas",
     },
@@ -5051,6 +5057,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54009] = {
         name = "Todo asegurado",
     },
+    [54012] = {
+        name = "Almas afortunadas",
+    },
+    [54015] = {
+        name = "Hacia las profundidades",
+    },
+    [54018] = {
+        name = "Descenso",
+    },
+    [54021] = {
+        name = "La Primera Arcanista",
+    },
     [54022] = {
         name = "Planes de batalla de Mekkatorque",
     },
@@ -5101,6 +5119,18 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54059] = {
         name = "La guerrera nocturna",
+    },
+    [54083] = {
+        name = "Engrasa las ruedas",
+    },
+    [54086] = {
+        name = "El robot indicado para el trabajo",
+    },
+    [54087] = {
+        name = "Tienes que tener esta altura",
+    },
+    [54088] = {
+        name = "La leyenda de Mecalópolis",
     },
     [54094] = {
         name = "La definición de éxito según un goblin",
@@ -5342,6 +5372,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54312] = {
         name = "Niebla de guerra",
     },
+    [54402] = {
+        name = "Cambio de velocidades",
+    },
     [54404] = {
         name = "Maquinaciones de los Hierro Negro",
     },
@@ -5395,6 +5428,27 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54559] = {
         name = "¡Libera a Plumeria!",
+    },
+    [54576] = {
+        name = "Lo mejor de Gnomeregan",
+    },
+    [54577] = {
+        name = "Cámaras sombrías y engranajes polvorientos",
+    },
+    [54580] = {
+        name = "Un enigma boreal",
+    },
+    [54581] = {
+        name = "Ahora con más aves mecánicas",
+    },
+    [54582] = {
+        name = "Más astuto que el trogg promedio",
+    },
+    [54639] = {
+        name = "Una señal de Las Cumbres Tormentosas",
+    },
+    [54642] = {
+        name = "¡A la C.A.R.G.A.!",
     },
     [54703] = {
         name = "Correo urgente",
@@ -5477,8 +5531,14 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54920] = {
         name = "Camino a casa",
     },
+    [54922] = {
+        name = "Tuercas, tornillos y muchos colores",
+    },
     [54925] = {
         name = "¡Herejía!",
+    },
+    [54929] = {
+        name = "Listo para la pelea",
     },
     [54930] = {
         name = "Liberación mecánica",
@@ -5492,6 +5552,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [54940] = {
         name = "La necesidad es la MADRE",
     },
+    [54945] = {
+        name = "Un buen comienzo",
+    },
+    [54946] = {
+        name = "Preséntate ante Gina",
+    },
+    [54947] = {
+        name = "Un equipo pequeño",
+    },
     [54958] = {
         name = "Un encuentro fugaz",
     },
@@ -5503,6 +5572,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [54964] = {
         name = "Un boleto de ida al corazón",
+    },
+    [54965] = {
+        name = "Robots desguazados",
+    },
+    [54969] = {
+        name = "Descenso",
+    },
+    [54972] = {
+        name = "Un camino a casa",
+    },
+    [54975] = {
+        name = "Un breve respiro",
+    },
+    [54992] = {
+        name = "El comienzo de algo más grande",
     },
     [54997] = {
         name = "Atrapado en altamar",
@@ -5521,6 +5605,9 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55039] = {
         name = "Carpintero de barcos maestro",
+    },
+    [55040] = {
+        name = "Un vistazo al interior",
     },
     [55043] = {
         name = "Historias de pescadores y velas lejanas",
@@ -5546,6 +5633,15 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55051] = {
         name = "Una demostración de poder",
     },
+    [55053] = {
+        name = "Un camino a casa",
+    },
+    [55054] = {
+        name = "Levantamiento",
+    },
+    [55055] = {
+        name = "Una trampa para peces más grande",
+    },
     [55087] = {
         name = "La tormenta se cierne",
     },
@@ -5557,6 +5653,21 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55090] = {
         name = "Una congregación de enemigos",
+    },
+    [55092] = {
+        name = "Perturbación de poder",
+    },
+    [55094] = {
+        name = "¡Rápido y sigiloso!",
+    },
+    [55095] = {
+        name = "Levantamiento",
+    },
+    [55096] = {
+        name = "Envíale un mensaje a mi padre",
+    },
+    [55101] = {
+        name = "Guía práctica del arte de la chatarrería",
     },
     [55116] = {
         name = "Consigue una pista",
@@ -5570,14 +5681,23 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55119] = {
         name = "¡Reportándose!",
     },
+    [55121] = {
+        name = "El laboratorio de Mardivas",
+    },
     [55124] = {
         name = "Subsanando errores",
     },
     [55136] = {
         name = "Horrores perros",
     },
+    [55153] = {
+        name = "Construcción colaborativa",
+    },
     [55171] = {
         name = "Espía contra espía",
+    },
+    [55175] = {
+        name = "A donde lleva el camino",
     },
     [55177] = {
         name = "Costuras desgarradas",
@@ -5599,6 +5719,12 @@ BtWQuestsDatabase:UpdateQuestsTable({
     },
     [55195] = {
         name = "Reverberancia",
+    },
+    [55210] = {
+        name = "No incluye baterías",
+    },
+    [55211] = {
+        name = "Pernoxidado recargado",
     },
     [55214] = {
         name = "Puntos y puntadas",
@@ -5654,6 +5780,156 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55235] = {
         name = "Instrumentos de destrucción",
     },
+    [55247] = {
+        name = "La confianza ganada",
+    },
+    [55252] = {
+        name = "Un loa sin templo",
+    },
+    [55253] = {
+        name = "Una prueba de fe",
+    },
+    [55254] = {
+        name = "Un sueño eterno",
+    },
+    [55258] = {
+        name = "Dormir, comer, repetir",
+    },
+    [55298] = {
+        name = "Pesca mayor",
+    },
+    [55339] = {
+        name = "Limpieza mayor",
+    },
+    [55361] = {
+        name = "El chamán perdido",
+    },
+    [55362] = {
+        name = "Furia elemental",
+    },
+    [55363] = {
+        name = "El rescate del clarividente",
+    },
+    [55373] = {
+        name = "Palizas mecánicas",
+    },
+    [55374] = {
+        name = "Perturbaciones subterráneas",
+    },
+    [55384] = {
+        name = "Asentamiento",
+    },
+    [55385] = {
+        name = "Exploración de los recintos",
+    },
+    [55390] = {
+        name = "Sueño en la oscuridad",
+    },
+    [55392] = {
+        name = "Entrada a la Senda de los Sueños",
+    },
+    [55398] = {
+        name = "La larga vigilia",
+    },
+    [55400] = {
+        name = "Toma mi mano",
+    },
+    [55407] = {
+        name = "Calma la Espina",
+    },
+    [55425] = {
+        name = "Dominar lo indómito",
+    },
+    [55462] = {
+        name = "El llamado de la errante",
+    },
+    [55469] = {
+        name = "Hacia Zin-Azshari",
+    },
+    [55481] = {
+        name = "Explorando el Palacio",
+    },
+    [55482] = {
+        name = "En busca de una conexión",
+    },
+    [55485] = {
+        name = "Terror en las profundidades",
+    },
+    [55486] = {
+        name = "Los secretos de la telemancia",
+    },
+    [55488] = {
+        name = "Habla con los muertos",
+    },
+    [55489] = {
+        name = "La historia de la fámula",
+    },
+    [55490] = {
+        name = "Les pincharemos los ojos",
+    },
+    [55497] = {
+        name = "Un rostro aliado",
+    },
+    [55500] = {
+        name = "Salva a una amiga",
+    },
+    [55504] = {
+        name = "Santuarios de Zuldazar",
+    },
+    [55505] = {
+        name = "En memoria de Roo'li",
+    },
+    [55506] = {
+        name = "Un camino termina",
+    },
+    [55507] = {
+        name = "Bendición de Torcali",
+    },
+    [55519] = {
+        name = "Trauma reciente",
+    },
+    [55520] = {
+        name = "Curando Nordrassil",
+    },
+    [55521] = {
+        name = "Al estilo de la azerita",
+    },
+    [55529] = {
+        name = "Sin sobras",
+    },
+    [55530] = {
+        name = "Un lugar más seguro",
+    },
+    [55533] = {
+        name = "Escucha siempre a MADRE",
+    },
+    [55558] = {
+        name = "Un refugio",
+    },
+    [55560] = {
+        name = "La venganza de Utama",
+    },
+    [55561] = {
+        name = "Los restos de Zin-Azshari",
+    },
+    [55565] = {
+        name = "Acumulación de reservas de maná",
+    },
+    [55569] = {
+        name = "Ecos de dolor",
+    },
+    [55570] = {
+        name = "Secretos en la ruinas",
+    },
+    [55571] = {
+        name = "Ayúdalos a conocer la verdad",
+    },
+    [55573] = {
+        name = "La purga de los profanadores",
+    },
+    [55574] = {
+        name = "Las Jabalinas de Azshara",
+    },
     [55585] = {
         name = "Un comienzo prometedor",
     },
@@ -5666,13 +5942,424 @@ BtWQuestsDatabase:UpdateQuestsTable({
     [55592] = {
         name = "Un comienzo prometedor",
     },
+    [55593] = {
+        name = "Información sobre nuestros enemigos",
+    },
     [55594] = {
         name = "Pulido y encerado",
+    },
+    [55595] = {
+        name = "Conocimiento en deterioro",
     },
     [55596] = {
         name = "Reparaciones sagradas",
     },
+    [55597] = {
+        name = "Atados por el honor",
+    },
+    [55598] = {
+        name = "Lo que sabemos de los nagas",
+    },
+    [55599] = {
+        name = "Exploración encubierta",
+    },
+    [55600] = {
+        name = "Cómo saciar a un boca de dragón",
+    },
+    [55601] = {
+        name = "Cristales preciados",
+    },
+    [55608] = {
+        name = "Proyecto de taller",
+    },
+    [55618] = {
+        name = "La Forja del Corazón",
+    },
+    [55622] = {
+        name = "A conducir",
+    },
+    [55630] = {
+        name = "Un buen comienzo",
+    },
+    [55632] = {
+        name = "Tienes que tener esta altura",
+    },
     [55635] = {
         name = "Una voz en el viento",
+    },
+    [55645] = {
+        name = "Visita principesca",
+    },
+    [55646] = {
+        name = "La leyenda de Mecalópolis",
+    },
+    [55647] = {
+        name = "Espionaje veloz",
+    },
+    [55648] = {
+        name = "Ahora es nuestra bóveda",
+    },
+    [55649] = {
+        name = "Maquinaciones para Mecalópolis",
+    },
+    [55650] = {
+        name = "Solo los mejores",
+    },
+    [55651] = {
+        name = "¡A Mecalópolis!",
+    },
+    [55652] = {
+        name = "Bahía de Prospectus",
+    },
+    [55685] = {
+        name = "En busca de paz… y dinero",
+    },
+    [55694] = {
+        name = "Algo en el agua",
+    },
+    [55696] = {
+        name = "Paseo de prueba",
+    },
+    [55697] = {
+        name = "Las dos patitas de atrás",
+    },
+    [55707] = {
+        name = "La primera es gratis",
+    },
+    [55708] = {
+        name = "Mejora",
+    },
+    [55729] = {
+        name = "¡La Resistencia te necesita!",
+    },
+    [55730] = {
+        name = "El rescate de la Resistencia",
+    },
+    [55731] = {
+        name = "Los ejércitos de mi padre",
+    },
+    [55734] = {
+        name = "Construcción de plataforma de excavación",
+    },
+    [55736] = {
+        name = "Bienvenido a la Resistencia",
+    },
+    [55753] = {
+        name = "Esquemas esquemáticos",
+    },
+    [55778] = {
+        name = "Visiones de peligro",
+    },
+    [55779] = {
+        name = "Ejecución pospuesta",
+    },
+    [55780] = {
+        name = "Viejos aliados",
+    },
+    [55781] = {
+        name = "Viejos aliados",
+    },
+    [55782] = {
+        name = "Ejecución pospuesta",
+    },
+    [55783] = {
+        name = "Ejecución pospuesta",
+    },
+    [55784] = {
+        name = "Pago en retribución",
+    },
+    [55795] = {
+        name = "Montaña en movimiento",
+    },
+    [55796] = {
+        name = "Herejía en el Cruce",
+    },
+    [55797] = {
+        name = "La furia de la madre cuernoatroz",
+    },
+    [55798] = {
+        name = "No deambules en soledad",
+    },
+    [55799] = {
+        name = "Cambia la marea",
+    },
+    [55860] = {
+        name = "Liquidación de babosas marinas",
+    },
+    [55861] = {
+        name = "Que los residuos te guíen",
+    },
+    [55862] = {
+        name = "Información sobre nuestros enemigos",
+    },
+    [55863] = {
+        name = "Conocimiento en deterioro",
+    },
+    [55864] = {
+        name = "Pagarán con su vida",
+    },
+    [55865] = {
+        name = "Lo que sabemos de los nagas",
+    },
+    [55866] = {
+        name = "Exploración encubierta",
+    },
+    [55867] = {
+        name = "Cristales preciados",
+    },
+    [55868] = {
+        name = "Que los residuos te guíen",
+    },
+    [55869] = {
+        name = "Limpieza de las reservas",
+    },
+    [55870] = {
+        name = "Liquidación de babosas marinas",
+    },
+    [55937] = {
+        name = "Limpieza de las reservas",
+    },
+    [55967] = {
+        name = "Cómo saciar a un boca de dragón",
+    },
+    [55983] = {
+        name = "Un lugar más seguro",
+    },
+    [55995] = {
+        name = "Podemos repararlo",
+    },
+    [56030] = {
+        name = "La orden de la jefa de guerra",
+    },
+    [56031] = {
+        name = "La ofensiva del lobo",
+    },
+    [56037] = {
+        name = "Robar los secretos de los nagas",
+    },
+    [56038] = {
+        name = "Trabajar con propósito",
+    },
+    [56039] = {
+        name = "Armas desafiladas nunca",
+    },
+    [56043] = {
+        name = "Envía la flota",
+    },
+    [56044] = {
+        name = "Envía la flota",
+    },
+    [56045] = {
+        name = "Robar los secretos de los nagas",
+    },
+    [56046] = {
+        name = "Trabajar con propósito",
+    },
+    [56047] = {
+        name = "Armas desafiladas nunca",
+    },
+    [56063] = {
+        name = "Mareas oscuras",
+    },
+    [56095] = {
+        name = "Legado de Nar'anan",
+    },
+    [56118] = {
+        name = "Contraataque",
+    },
+    [56143] = {
+        name = "El destino de la profesora Elryna",
+    },
+    [56156] = {
+        name = "Una espada templada",
+    },
+    [56164] = {
+        name = "Necesidad desesperada",
+    },
+    [56166] = {
+        name = "Las necesidades del pueblo",
+    },
+    [56168] = {
+        name = "Renovación fabril",
+    },
+    [56175] = {
+        name = "Libre de humo",
+    },
+    [56176] = {
+        name = "Necesidad desesperada",
+    },
+    [56179] = {
+        name = "Las necesidades del pueblo",
+    },
+    [56181] = {
+        name = "Yo invito",
+    },
+    [56210] = {
+        name = "Piedras de detección",
+    },
+    [56211] = {
+        name = "Piedras de detección",
+    },
+    [56234] = {
+        name = "Amigos necesitados",
+    },
+    [56235] = {
+        name = "Hacia Nazjatar",
+    },
+    [56236] = {
+        name = "Un problema menos",
+    },
+    [56239] = {
+        name = "Extraño cuchillo de plata",
+    },
+    [56240] = {
+        name = "Extraño cuchillo de plata",
+    },
+    [56241] = {
+        name = "Pistas conservadas",
+    },
+    [56242] = {
+        name = "Pistas conservadas",
+    },
+    [56243] = {
+        name = "Diarios de los muertos",
+    },
+    [56244] = {
+        name = "Diarios de los muertos",
+    },
+    [56245] = {
+        name = "Candado encantado",
+    },
+    [56246] = {
+        name = "Candado encantado",
+    },
+    [56247] = {
+        name = "Historias de tesoros",
+    },
+    [56248] = {
+        name = "Historias de tesoros",
+    },
+    [56304] = {
+        name = "Búsqueda de vida",
+    },
+    [56305] = {
+        name = "¡Vamos a pescar!",
+    },
+    [56309] = {
+        name = "Ciudad de amigos ahogados",
+    },
+    [56310] = {
+        name = "Ciudad de amigos ahogados",
+    },
+    [56311] = {
+        name = "El ahogo eterno",
+    },
+    [56312] = {
+        name = "El ahogo eterno",
+    },
+    [56313] = {
+        name = "Portento de guerra",
+    },
+    [56314] = {
+        name = "Portento de guerra",
+    },
+    [56315] = {
+        name = "Tomaron una decisión",
+    },
+    [56316] = {
+        name = "Tomaron una decisión",
+    },
+    [56319] = {
+        name = "El contrato Supercarga",
+    },
+    [56320] = {
+        name = "¡La primera carga es gratis!",
+    },
+    [56321] = {
+        name = "Salva a Corin",
+    },
+    [56325] = {
+        name = "Un cambio en la marea",
+    },
+    [56346] = {
+        name = "Tecnología antigua",
+    },
+    [56347] = {
+        name = "Una oportunidad abisal",
+    },
+    [56348] = {
+        name = "El Palacio Eterno: Podemos hacerlo mejor...",
+    },
+    [56349] = {
+        name = "El Palacio Eterno: Hasta el límite",
+    },
+    [56350] = {
+        name = "Explorando el Palacio",
+    },
+    [56351] = {
+        name = "El Palacio Eterno: Hasta el límite",
+    },
+    [56352] = {
+        name = "El Palacio Eterno: Podemos hacerlo mejor...",
+    },
+    [56353] = {
+        name = "Una oportunidad abisal",
+    },
+    [56354] = {
+        name = "Tecnología antigua",
+    },
+    [56356] = {
+        name = "El Palacio Eterno: La estrategia de la reina",
+    },
+    [56358] = {
+        name = "El Palacio Eterno: La estrategia de la reina",
+    },
+    [56378] = {
+        name = "La tripulación faltante",
+    },
+    [56379] = {
+        name = "La tripulación faltante",
+    },
+    [56422] = {
+        name = "Sobre alas fantasmales",
+    },
+    [56429] = {
+        name = "En aprietos",
+    },
+    [56560] = {
+        name = "Un descubrimiento curioso",
+    },
+    [56561] = {
+        name = "Un descubrimiento curioso",
+    },
+    [56640] = {
+        name = "Almas afortunadas",
+    },
+    [56641] = {
+        name = "Perturbación de poder",
+    },
+    [56642] = {
+        name = "Mareas oscuras",
+    },
+    [56643] = {
+        name = "Hacia las profundidades",
+    },
+    [56644] = {
+        name = "En aprietos",
+    },
+    [56739] = {
+        name = "El poder de la oración",
+    },
+    [56741] = {
+        name = "La lanza del destino",
+    },
+    [56803] = {
+        name = "Solo un amigo",
+    },
+    [57006] = {
+        name = "Un aliado valioso",
+    },
+    [57010] = {
+        name = "Inyección de poder",
     },
 })

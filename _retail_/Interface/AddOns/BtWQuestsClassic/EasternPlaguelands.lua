@@ -1186,6 +1186,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_EASTERN_PLAGUELANDS_PLAGUEWOO
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_EASTERN_PLAGUELANDS, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851100,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",

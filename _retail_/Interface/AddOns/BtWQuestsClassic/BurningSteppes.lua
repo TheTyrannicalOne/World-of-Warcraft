@@ -2,26 +2,26 @@ local MAP_ID = 36
 local ACHIEVEMENT_ID = 4901
 local CONTINENT_ID = 13
 
-BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE = 13001
-BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE = 13002
-BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE = 13003
-BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE = 13004
-BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE = 13005
-BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE = 13006
-BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE = 13007
-BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE = 13008
-BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_ALLIANCE = 13097
-BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_HORDE = 13098
-BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_BOTH = 13099
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE = 13001
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE = 13002
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_ALLIANCE = 13003
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_HORDE = 13004
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE = 13005
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_HORDE = 13006
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_ALLIANCE = 13007
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_HORDE = 13008
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_OTHER_ALLIANCE = 13097
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_OTHER_HORDE = 13098
+BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_OTHER_BOTH = 13099
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -156,20 +156,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -308,14 +308,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -328,7 +328,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE,
         },
         {
             type = "quest",
@@ -336,11 +336,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
         },
     },
     active = {
@@ -355,7 +355,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
             x = 3,
             y = 0,
             connections = {
@@ -418,14 +418,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -438,7 +438,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE,
         },
         {
             type = "quest",
@@ -446,11 +446,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_HORDE,
         },
     },
     active = {
@@ -465,7 +465,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_HORDE,
             x = 3,
             y = 0,
             connections = {
@@ -528,14 +528,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -548,7 +548,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE,
         },
         {
             type = "quest",
@@ -567,7 +567,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE,
             x = 3,
             y = 0,
             connections = {
@@ -692,20 +692,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -718,7 +718,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE,
         },
         {
             type = "quest",
@@ -737,7 +737,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE,
             x = 3,
             y = 0,
             connections = {
@@ -866,20 +866,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_HORDE,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -892,7 +892,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE,
         },
         {
             type = "quest",
@@ -900,7 +900,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE,
         },
     },
     active = {
@@ -915,7 +915,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE,
             x = 3,
             y = 0,
             connections = {
@@ -988,20 +988,20 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_ALLIANCE,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -1014,7 +1014,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE,
         },
         {
             type = "quest",
@@ -1022,7 +1022,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_HORDE,
         },
     },
     active = {
@@ -1037,7 +1037,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_HORDE,
             x = 3,
             y = 0,
             connections = {
@@ -1110,13 +1110,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_HORDE,
             aside = true,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1124,7 +1124,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_ALLIANCE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1132,7 +1132,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_HORDE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1144,38 +1144,42 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BURNING_STEPPES_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_BURNING_STEPPES, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851095,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_PREPARATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_PREPARATION_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANNIHILATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANNIHILATION_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_INFILTRATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_INFILTRATION_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BURNING_STEPPES_ANTICIPATION_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_BURNING_STEPPES_ANTICIPATION_HORDE,
         },
     },
 })

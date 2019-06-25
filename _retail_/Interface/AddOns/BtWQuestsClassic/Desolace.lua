@@ -2,37 +2,37 @@ local MAP_ID = 66
 local ACHIEVEMENT_ID = 4930
 local CONTINENT_ID = 12
 
-BTWQUESTS_CHAIN_DESOLACE_THE_NAGA_THREAT = 12301
-BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE = 12302
-BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE = 12303
-BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE = 12304
-BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES = 12305
-BTWQUESTS_CHAIN_DESOLACE_ALLIANCE = 12306
-BTWQUESTS_CHAIN_DESOLACE_ON_BEHALF_OF_THE_HORDE = 12307
-BTWQUESTS_CHAIN_DESOLACE_CHAIN01 = 12311
-BTWQUESTS_CHAIN_DESOLACE_CHAIN02 = 12312
-BTWQUESTS_CHAIN_DESOLACE_CHAIN03 = 12323
-BTWQUESTS_CHAIN_DESOLACE_CHAIN04 = 12324
-BTWQUESTS_CHAIN_DESOLACE_CHAIN05 = 12325
-BTWQUESTS_CHAIN_DESOLACE_CHAIN06 = 12326
-BTWQUESTS_CHAIN_DESOLACE_CHAIN07 = 12327
-BTWQUESTS_CHAIN_DESOLACE_CHAIN08 = 12328
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN01 = 12331
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN02 = 12332
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN03 = 12333
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN04 = 12334
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN05 = 12335
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN06 = 12336
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN07 = 12337
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN08 = 12338
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN09 = 12339
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN10 = 12340
-BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN11 = 12341
-BTWQUESTS_CHAIN_DESOLACE_OTHER_ALLIANCE = 12397
-BTWQUESTS_CHAIN_DESOLACE_OTHER_HORDE = 12398
-BTWQUESTS_CHAIN_DESOLACE_OTHER_BOTH = 12399
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THE_NAGA_THREAT = 12301
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_KARNUMS_GLADE = 12302
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE = 12303
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE = 12304
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_UNITING_THE_TRIBES = 12305
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_ALLIANCE = 12306
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_ON_BEHALF_OF_THE_HORDE = 12307
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN01 = 12311
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN02 = 12312
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN03 = 12323
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN04 = 12324
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN05 = 12325
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN06 = 12326
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN07 = 12327
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN08 = 12328
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN01 = 12331
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN02 = 12332
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN03 = 12333
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN04 = 12334
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN05 = 12335
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN06 = 12336
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN07 = 12337
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN08 = 12338
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN09 = 12339
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN10 = 12340
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN11 = 12341
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_OTHER_ALLIANCE = 12397
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_OTHER_HORDE = 12398
+BTWQUESTS_CHAIN_CLASSIC_DESOLACE_OTHER_BOTH = 12399
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THE_NAGA_THREAT, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THE_NAGA_THREAT, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 1),
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -170,7 +170,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THE_NAGA_THREAT, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_KARNUMS_GLADE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 2),
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -195,7 +195,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN01,
             x = 0,
             y = 0,
             embed = true,
@@ -211,7 +211,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN02,
             x = 6,
             y = 0,
             embed = true,
@@ -288,19 +288,19 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_UNITING_THE_TRIBES,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -346,7 +346,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN03,
             aside = true,
             x = 0,
             embed = true,
@@ -393,14 +393,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 3),
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -424,7 +424,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN07,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN07,
             aside = true,
             x = 0,
             y = 0,
@@ -453,7 +453,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN08,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN08,
             x = 4,
             embed = true,
         },
@@ -475,7 +475,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN03,
             x = 5,
             embed = true,
         },
@@ -486,7 +486,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_UNITING_THE_TRIBES, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -499,7 +499,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_KARNUMS_GLADE,
         },
     },
     active = {
@@ -514,7 +514,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_KARNUMS_GLADE,
             x = 3,
             y = 0,
             connections = {
@@ -531,7 +531,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN04,
             aside = true,
             x = 0,
             embed = true,
@@ -550,7 +550,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN05,
             aside = true,
             x = 6,
             embed = true,
@@ -578,14 +578,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_ALLIANCE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
+        BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
     },
     restrictions = {
         type = "faction",
@@ -671,7 +671,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_ALLIANCE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN06,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN06,
             x = 0,
             embed = true,
         },
@@ -692,7 +692,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_ALLIANCE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN07,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN07,
         },
         {
             type = "quest",
@@ -720,14 +720,14 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_ALLIANCE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_ON_BEHALF_OF_THE_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_ON_BEHALF_OF_THE_HORDE, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(ACHIEVEMENT_ID, 5),
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
     major = true,
     alternatives = {
-        BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE,
+        BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE,
     },
     restrictions = {
         type = "faction",
@@ -752,21 +752,21 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_ON_BEHALF_OF_THE_HORDE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN01,
             x = 1,
             y = 0,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN08,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN08,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN01, {
     name = { -- Rider on the Storm
         type = "quest",
         id = 14198,
@@ -860,7 +860,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN01, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN06,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN06,
             x = 0,
             embed = true,
         },
@@ -913,7 +913,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN01, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN02, {
     name = { -- Heavy Metal
         type = "quest",
         id = 14254,
@@ -965,7 +965,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN02, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN03, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN03, {
     name = { -- Hornizz Brimbuzzle
         type = "npc",
         id = 6019,
@@ -1005,7 +1005,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN03, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN04, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN04, {
     name = {
         type = "npc",
         id = 11596,
@@ -1045,7 +1045,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN04, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN05, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN05, {
     name = {
         type = "npc",
         id = 11438,
@@ -1085,7 +1085,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN05, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN06, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN06, {
     name = {
         type = "npc",
         id = 35757,
@@ -1135,7 +1135,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN06, {
     },
 })
 -- @TODO Alliance only for now
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN07, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN07, {
     name = "Shrines",
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1163,28 +1163,28 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN07, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN09,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN09,
             x = 1,
             y = 0,
             embed = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN10,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN10,
             x = 3,
             y = 0,
             embed = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN11,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN11,
             x = 5,
             y = 0,
             embed = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN08, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN08, {
     name = { -- Shadowprey Village
         type = "quest",
         id = 14337,
@@ -1267,7 +1267,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_CHAIN08, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN01, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN01, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1288,7 +1288,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN01, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN02, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN02, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1317,7 +1317,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN02, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN03, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN03, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1332,7 +1332,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN03, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN04, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN04, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1353,7 +1353,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN04, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN05, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN05, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1374,7 +1374,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN05, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN06, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN06, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1397,7 +1397,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN06, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN07, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN07, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1418,7 +1418,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN07, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN08, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN08, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1443,7 +1443,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN08, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN09, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN09, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1463,7 +1463,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN09, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN10, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN10, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1495,7 +1495,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN10, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN11, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_EMBED_CHAIN11, {
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
     range = {1,60},
@@ -1517,7 +1517,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_EMBED_CHAIN11, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1525,7 +1525,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_OTHER_ALLIANCE, {
     items = {
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1541,7 +1541,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_OTHER_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_DESOLACE_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_DESOLACE,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1565,66 +1565,70 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_DESOLACE_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_DESOLACE, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851097,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_THE_NAGA_THREAT,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THE_NAGA_THREAT,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_KARNUMS_GLADE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_KARNUMS_GLADE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_THREATS_FROM_SARTHERIS_STAND_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_UNITING_THE_TRIBES,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_UNITING_THE_TRIBES,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_ALLIANCE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_ALLIANCE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_ON_BEHALF_OF_THE_HORDE,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_ON_BEHALF_OF_THE_HORDE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN01,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN01,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN08,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN08,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN07,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN07,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN02,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN02,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN03,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN03,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN04,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN04,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN05,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN05,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_DESOLACE_CHAIN06,
+            id = BTWQUESTS_CHAIN_CLASSIC_DESOLACE_CHAIN06,
         },
     },
 })

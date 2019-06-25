@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [107574] = {
+        name = "Anduin Wrynn",
+    },
     [108017] = {
         name = "Torv Doublepas",
     },
@@ -2069,6 +2072,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149736] = {
         name = "Image de Mimiron",
     },
+    [149815] = {
+        name = "Grizzek Moussemolette",
+    },
     [149823] = {
         name = "Magni Barbe-de-Bronze",
     },
@@ -2080,6 +2086,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [149870] = {
         name = "Grif Coeur-Sauvage",
+    },
+    [150101] = {
+        name = "Dame Jaina Portvaillant",
     },
     [150309] = {
         name = "Baine Sabot-de-Sang",
@@ -2099,8 +2108,20 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150515] = {
         name = "Cirrus Lafalaise",
     },
+    [150555] = {
+        name = "Waren Biellecœur",
+    },
+    [150573] = {
+        name = "Recycleur Klakrak",
+    },
     [150574] = {
         name = "Dame Jaina Portvaillant",
+    },
+    [150630] = {
+        name = "Flip Chargéclair",
+    },
+    [150631] = {
+        name = "Pristie Chargéclair",
     },
     [150633] = {
         name = "Dame Jaina Portvaillant",
@@ -2144,6 +2165,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Sanctuaire des Tempêtes",
     },
+    [151000] = {
+        name = "Maître-lame Okani",
+    },
     [151061] = {
         name = "Mimiron",
     },
@@ -2174,11 +2198,38 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151287] = {
         name = "Telonis",
     },
+    [151309] = {
+        name = "Eclaireur goémlin",
+    },
+    [151626] = {
+        name = "Chasseur Akana",
+    },
+    [151763] = {
+        name = "Isla",
+    },
+    [151848] = {
+        name = "Lor'themar Theron",
+    },
+    [151851] = {
+        name = "Télémancien en chef Oculeth",
+    },
     [152002] = {
         name = "Image de Mimiron",
     },
+    [152084] = {
+        name = "Mrrl",
+    },
+    [152194] = {
+        name = "D.A.M.E.",
+    },
+    [152206] = {
+        name = "Magni Barbe-de-Bronze",
+    },
     [152255] = {
         name = "Sef Iwen",
+    },
+    [152295] = {
+        name = "Pascal",
     },
     [152489] = {
         name = "Sanctuaire des Tempêtes",
@@ -2197,5 +2248,35 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152497] = {
         name = "Sanctuaire du Brunant",
+    },
+    [152747] = {
+        name = "Christy Percerouage",
+    },
+    [153509] = {
+        name = "Artisan Okata",
+    },
+    [153510] = {
+        name = "Artisan Itanu",
+    },
+    [153512] = {
+        name = "Trouveur Pruc",
+    },
+    [153514] = {
+        name = "Trouveuse Palta",
+    },
+    [153617] = {
+        name = "Shandris Pennelune",
+    },
+    [154248] = {
+        name = "Maître-lame Inowari",
+    },
+    [154257] = {
+        name = "Instructeur Ulouaka",
+    },
+    [154408] = {
+        name = "Rolm",
+    },
+    [154640] = {
+        name = "Connétable Tremblelame",
     },
 })

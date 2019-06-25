@@ -42,6 +42,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_DARK_
         id = 12515,
         anyone = true,
     },
+    rewards = {
+        {
+            name = BTWQUESTS_ALLIED_RACE_DARK_IRON_DWARF,
+        }
+    },
     items = {
         {
             type = "quest",
@@ -136,6 +141,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ALLIED_RACES_MAGHA
         type = "achievement",
         id = 12518,
         anyone = true,
+    },
+    rewards = {
+        {
+            name = BTWQUESTS_ALLIED_RACE_MAGHAR_ORC,
+        }
     },
     items = {
         {
@@ -236,7 +246,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {120},
     alternatives = {
-        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI_TROLL,
     },
     restrictions = {
         type = "faction",
@@ -273,6 +283,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
         type = "achievement",
         id = 13163,
         anyone = true,
+    },
+    rewards = {
+        {
+            name = BTWQUESTS_ALLIED_RACE_KUL_TIRAN,
+        }
     },
     items = {
         {
@@ -430,7 +445,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI_TROLL, {
     name = { -- Allegiance of the Zandalari
         type = "quest",
         id = 53719,
@@ -478,6 +493,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES
         type = "achievement",
         id = 13161,
         anyone = true,
+    },
+    rewards = {
+        {
+            name = BTWQUESTS_ALLIED_RACE_ZANDALARI_TROLL,
+        }
     },
     items = {
         {
@@ -631,7 +651,7 @@ BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ALLIED_RACES
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI,
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_ALLIED_RACES_ZANDALARI_TROLL,
         },
     },
 })

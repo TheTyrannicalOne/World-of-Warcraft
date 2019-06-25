@@ -3,7 +3,7 @@ local ACHIEVEMENT_ID_ALLIANCE = 4936
 local ACHIEVEMENT_ID_HORDE = 4980
 local CONTINENT_ID = 12
 
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 1)
     end,
@@ -181,13 +181,13 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
             x = 3,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 2)
     end,
@@ -206,12 +206,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH,
+        id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH,
         status = {'active', 'completed'},
     },
     completed = {
@@ -221,7 +221,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH,
             x = 3,
             y = 0,
             connections = {
@@ -286,18 +286,18 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SELDARRIA,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SELDARRIA,
             x = 3,
             aside = true,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_AN_UNCONVENTIONAL_ALLY,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_AN_UNCONVENTIONAL_ALLY,
             aside = true,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SELDARRIA, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SELDARRIA, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 3)
     end,
@@ -316,16 +316,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SELDARRIA, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+        id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
         status = {'active', 'completed'},
     },
     completed = {
@@ -335,7 +335,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SELDARRIA, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
             x = 3,
             y = 0,
             connections = {
@@ -482,7 +482,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SELDARRIA, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_AN_UNCONVENTIONAL_ALLY, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_AN_UNCONVENTIONAL_ALLY, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_ALLIANCE, 4)
     end,
@@ -501,16 +501,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_AN_UNCONVENTIONA
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+        id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
         status = {'active', 'completed'},
     },
     completed = {
@@ -520,7 +520,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_AN_UNCONVENTIONA
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
             x = 3,
             y = 0,
             connections = {
@@ -683,7 +683,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_AN_UNCONVENTIONA
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 1)
     end,
@@ -826,12 +826,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_A_SHORTLIVED_VIC
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNAIRE,
             x = 4,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNAIRE, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 2)
     end,
@@ -850,12 +850,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
+        id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
         status = {'active', 'completed'},
     },
     completed = {
@@ -865,7 +865,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
             x = 3,
             y = 0,
             connections = {
@@ -928,12 +928,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODOO,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODOO, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 3)
     end,
@@ -952,12 +952,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNAIRE,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE,
+        id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNAIRE,
         status = {'active', 'completed'},
     },
     completed = {
@@ -973,7 +973,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO, {
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNAIRE,
             x = 3,
             y = 0,
             connections = {
@@ -1040,12 +1040,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO, {
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_HONOR_NEVER_FORSAKE_IT,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_HONOR_NEVER_FORSAKE_IT,
             x = 3,
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_HONOR_NEVER_FORSAKE_IT, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_HONOR_NEVER_FORSAKE_IT, {
     name = function ()
         return GetAchievementCriteriaInfo(ACHIEVEMENT_ID_HORDE, 4)
     end,
@@ -1064,12 +1064,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_HONOR_NEVER_FORS
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODOO,
         },
     },
     active = {
         type = "chain",
-        id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO,
+        id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODOO,
         status = {'active', 'completed'},
     },
     completed = {
@@ -1079,7 +1079,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_HONOR_NEVER_FORS
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODOO,
             x = 3,
             y = 0,
             connections = {
@@ -1181,7 +1181,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_HONOR_NEVER_FORS
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_OTHER_ALLIANCE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1193,7 +1193,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_OTHER_ALLIANCE, 
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_OTHER_HORDE, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_OTHER_HORDE, {
     name = "Other Horde",
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1213,7 +1213,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_OTHER_HORDE, {
         },
     },
 })
-BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_OTHER_BOTH, {
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_OTHER_BOTH, {
     name = "Other Both",
     category = BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS,
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
@@ -1225,38 +1225,42 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_OTHER_BOTH, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_STONETALON_MOUNTAINS, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851107,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_CLEARING_A_PATH,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_CLEARING_A_PATH,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SLAY_THE_WARLORD,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_SELDARRIA,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_SELDARRIA,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_AN_UNCONVENTIONAL_ALLY,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_AN_UNCONVENTIONAL_ALLY,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_A_SHORTLIVED_VICTORY,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_LEGIONNAIRE,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_LEGIONNAIRE,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_DA_VOODOO,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_DA_VOODOO,
         },
         {
             type = "chain",
-            id = BTWQUESTS_CHAIN_STONETALON_MOUNTAINS_HONOR_NEVER_FORSAKE_IT,
+            id = BTWQUESTS_CHAIN_CLASSIC_STONETALON_MOUNTAINS_HONOR_NEVER_FORSAKE_IT,
         },
     },
 })

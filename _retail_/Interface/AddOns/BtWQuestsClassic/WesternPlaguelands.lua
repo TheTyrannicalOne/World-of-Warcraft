@@ -878,6 +878,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_SECOND_HO
         },
     },
 })
+BtWQuestsCharacters:AddAchievement(4893);
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_STEAD, {
     name = BtWQuests_GetAchievementCriteriaNameDelayed(4893, 4),
     category = BTWQUESTS_CATEGORY_CLASSIC_WESTERN_PLAGUELANDS,
@@ -1098,6 +1099,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_CLASSIC_WESTERN_PLAGUELANDS_STEAD, {
 BtWQuestsDatabase:AddCategory(BTWQUESTS_CATEGORY_CLASSIC_WESTERN_PLAGUELANDS, {
     name = BtWQuests_GetMapName(MAP_ID),
     expansion = BTWQUESTS_EXPANSION_CLASSIC,
+	buttonImage = {
+		texture = 1851112,
+		texCoords = {0,1,0,1},
+	},
     items = {
         {
             type = "chain",

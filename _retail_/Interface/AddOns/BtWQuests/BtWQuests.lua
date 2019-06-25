@@ -1,6 +1,8 @@
 local BtWQuestsDatabase = BtWQuestsDatabase
 local BtWQuestsCharacters = BtWQuestsCharacters
 
+local L = BtWQuests.L;
+
 local BTWQUESTS_CATEGORY_ITEM_WIDTH = 174
 local BTWQUESTS_CATEGORY_ITEM_HEIGHT = 96
 local BTWQUESTS_CATEGORY_ITEM_PADDING = 12
@@ -55,6 +57,11 @@ BtWQuestSettingsData = {
             name = "Group ignored",
             value = "filterIgnored",
             default = false,
+        },
+        {
+            name = "Show quest chain tooltip",
+            value = "showChainTooltip",
+            default = true,
         },
         {
             name = "Spoiler free",
@@ -526,41 +533,6 @@ function BtWQuestsMixin:DisplayItemList(items, scrollTo)
         index = index + 1
     end
 
-    -- local item = expansion:GetItem(i)
-    
-    -- if item == nil then -- Somehow selected an empty expansion, probably means all the BtWQuests modules are disabled
-    --     print(BTWQUESTS_NO_EXPANSION_ERROR)
-    -- end
-
-    -- while item do
-    --     if not item:GetSkip() and item:GetVisible() then
-    --         local categoryButton = self.categoryItemPool:Acquire();
-
-    --         categoryButton:Set(item)
-            
-    --         if previousButton then
-    --             categoryButton:SetPoint("TOP", previousButton, "BOTTOM", 0, 0)
-    --         else
-    --             categoryButton:SetPoint("TOPLEFT", 5, -5)
-    --         end
-            
-    --         categoryButton:Show()
-
-    --         if type(scrollTo) == "number" and index == scrollTo then
-    --             scrollToButton = categoryButton
-    --         elseif type(scrollTo) == "table" and item:EqualsItem(scrollTo) then
-    --             scrollToButton = categoryButton
-    --         end
-
-    --         previousButton = categoryButton
-
-    --         index = index + 1;
-    --     end
-
-    --     i = i + 1
-    --     item = expansion:GetItem(i)
-    -- end
-
     if type(scrollTo) == "table" and scrollTo.type == "coords" then
         questSelect.Scroll:UpdateScrollChildRect()
         -- questSelect.Scroll:SetHorizontalScroll(scrollTo.x)
@@ -574,7 +546,7 @@ function BtWQuestsMixin:DisplayItemList(items, scrollTo)
         end
     end
 
-    ShowUIPanel(self)
+    self:Show();
 end
 function BtWQuestsMixin:DisplayCurrentExpansion(scrollTo)
     local categoryHeaders = BtWQuestSettingsData:GetValue("categoryHeaders")
@@ -607,14 +579,35 @@ function BtWQuestsMixin:DisplayCurrentChain(scrollTo, zoom)
     -- chain.Scroll:SetCharacter(self:GetCharacter())
     chain.Scroll:SetHideSpoilers(BtWQuestSettingsData:GetValue("hideSpoilers"))
     chain.Scroll:SetChain(self:GetChain(), scrollTo, zoom)
+    
+    if BtWQuestSettingsData:GetValue("showChainTooltip") then
+        chain.Tooltip:ClearAllPoints()
+        chain.Tooltip:SetPoint("TOPLEFT", chain, "TOPRIGHT", 5, -3)
+        chain.Tooltip:SetOwner(chain, "ANCHOR_PRESERVE")
+        chain.Tooltip:SetChain(self:GetChain(), self:GetCharacter())
 
-    ShowUIPanel(self)
+        if chain:GetRight() > chain.Tooltip:GetLeft() then
+            chain.Tooltip:ClearAllPoints()
+            chain.Tooltip:SetPoint("TOPRIGHT", chain, "TOPLEFT", -5, -3)
+        end
+    else
+        chain.Tooltip:Hide() -- Just incase it was already visible
+    end
+
+    self:Show();
 end
 function BtWQuestsMixin:UpdateCurrentChain()
     local chain = self.Chain
     
     if chain:IsShown() then
         chain.Scroll:Update()
+    
+        if BtWQuestSettingsData:GetValue("showChainTooltip") then
+            chain.Tooltip:SetOwner(chain, "ANCHOR_PRESERVE")
+            chain.Tooltip:SetChain(self:GetChain(), self:GetCharacter())
+        else
+            chain.Tooltip:Hide() -- Just incase it was already visible
+        end
     end
 end
 
@@ -626,21 +619,16 @@ local function ChainItemPool_HideAndClearAnchors(framePool, frame)
     end
 end
 
-tinsert(UISpecialFrames, "BtWQuestsFrame") 
 function BtWQuestsMixin:OnLoad()
+    tinsert(UISpecialFrames, self:GetName());
+
+    self:RegisterForDrag("LeftButton")
+
     self:RegisterEvent("ADDON_LOADED")
-    self:RegisterEvent("QUEST_LOG_UPDATE")
 
     self:RegisterEvent("ZONE_CHANGED")
     self:RegisterEvent("ZONE_CHANGED_INDOORS")
     self:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-    
-    self:SetAttribute("UIPanelLayout-defined", true)
-    self:SetAttribute("UIPanelLayout-enabled", true)
-    self:SetAttribute("UIPanelLayout-area", "left")
-    self:SetAttribute("UIPanelLayout-pushable", 0)
-    self:SetAttribute("UIPanelLayout-width", 830)
-    self:SetAttribute("UIPanelLayout-whileDead", true)
     
 	self.TitleText:SetText(BTWQUESTS_QUEST_JOURNAL);
     SetPortraitToTexture(self.portrait, "Interface\\QuestFrame\\UI-QuestLog-BookIcon");
@@ -674,7 +662,11 @@ function BtWQuestsMixin:OnLoad()
             label = "BtWQuests",
 			icon = "Interface\\QuestFrame\\UI-QuestLog-BookIcon",
 			OnClick = function(clickedframe, button)
-				ToggleFrame(BtWQuestsFrame)
+                if BtWQuestsFrame:IsShown() then
+                    BtWQuestsFrame:Hide()
+                else
+                    BtWQuestsFrame:Show()
+                end
 			end,
 		})
 	end
@@ -691,15 +683,35 @@ function BtWQuestsMixin:OnEvent(event, ...)
 
             WorldMapFrame:AddDataProvider(CreateFromMixins(BtWQuestsQuestDataProviderMixin));
         end
-    elseif event == "QUEST_LOG_UPDATE" then
-        if BtWQuestsCharacters ~= nil then
-            BtWQuestsCharacters:UpdatePlayer()
-        end
     elseif event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" or event == "ZONE_CHANGED_NEW_AREA" then
         if self:IsShown() then
             self:UpdateHereButton()
         end
     end
+end
+function BtWQuestsMixin:OnDragStart()
+    if self.Chain.Tooltip:IsVisible() then
+        self:SetScript("OnUpdate", function (self)
+            local chain = self.Chain;
+            local point = chain.Tooltip:GetPoint()
+            if point == "TOPRIGHT" then
+                if chain:GetRight() + chain.Tooltip:GetWidth() + 5 < UIParent:GetWidth() then
+                    chain.Tooltip:ClearAllPoints()
+                    chain.Tooltip:SetPoint("TOPLEFT", chain, "TOPRIGHT", 5, -3)
+                end
+            else
+                if chain:GetRight() + chain.Tooltip:GetWidth() + 5 > UIParent:GetWidth() then
+                    chain.Tooltip:ClearAllPoints()
+                    chain.Tooltip:SetPoint("TOPRIGHT", chain, "TOPLEFT", -5, -3)
+                end
+            end
+        end);
+    end
+    self:StartMoving();
+end
+function BtWQuestsMixin:OnDragStop()
+    self:StopMovingOrSizing();
+    self:SetScript("OnUpdate", nil);
 end
 function BtWQuestsMixin:Refresh()
     if self:GetChain() ~= nil then
@@ -856,7 +868,11 @@ SlashCmdList["BTWQUESTS"] = function(msg)
     if msg == "minimap" then
         BtWQuestsMinimapButton_Toggle()
     else
-        ToggleFrame(BtWQuestsFrame)
+        if BtWQuestsFrame:IsShown() then
+            BtWQuestsFrame:Hide()
+        else
+            BtWQuestsFrame:Show()
+        end
     end
 end 
 

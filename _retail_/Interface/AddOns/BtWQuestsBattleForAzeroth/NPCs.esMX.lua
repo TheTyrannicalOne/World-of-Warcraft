@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [107574] = {
+        name = "Anduin Wrynn",
+    },
     [108017] = {
         name = "Torv Pasodoble",
     },
@@ -1313,6 +1316,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [135673] = {
         name = "Explorador McKellis",
     },
+    [135681] = {
+        name = "Gran almirante Jes-Tereth",
+    },
     [135682] = {
         name = "Patrick Eckhart",
     },
@@ -2069,6 +2075,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149736] = {
         name = "Imagen de Mimiron",
     },
+    [149815] = {
+        name = "Grizzek Llavesilbo",
+    },
     [149823] = {
         name = "Magni Barbabronce",
     },
@@ -2080,6 +2089,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [149870] = {
         name = "Grif Corazón Salvaje",
+    },
+    [150101] = {
+        name = "Lady Jaina Valiente",
     },
     [150309] = {
         name = "Baine Pezuña de Sangre",
@@ -2099,8 +2111,20 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150515] = {
         name = "Cyrus Catacresta",
     },
+    [150555] = {
+        name = "Waren Remache",
+    },
+    [150573] = {
+        name = "Reciclador Kerchunk",
+    },
     [150574] = {
         name = "Lady Jaina Valiente",
+    },
+    [150630] = {
+        name = "Flip Supercarga",
+    },
+    [150631] = {
+        name = "Pristy Supercarga",
     },
     [150633] = {
         name = "Lady Jaina Valiente",
@@ -2144,6 +2168,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Altar de las tormentas",
     },
+    [151000] = {
+        name = "Maestro del acero Okani",
+    },
     [151061] = {
         name = "Mimiron",
     },
@@ -2174,11 +2201,35 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [151287] = {
         name = "Telonis",
     },
+    [151626] = {
+        name = "Cazador Akana",
+    },
+    [151763] = {
+        name = "Isla",
+    },
+    [151848] = {
+        name = "Lor'themar Theron",
+    },
+    [151851] = {
+        name = "Jefe Telemante Oculeth",
+    },
     [152002] = {
         name = "Imagen de Mimiron",
     },
+    [152084] = {
+        name = "Mrrl",
+    },
+    [152194] = {
+        name = "MADRE",
+    },
+    [152206] = {
+        name = "Magni Barbabronce",
+    },
     [152255] = {
         name = "Sef Iwen",
+    },
+    [152295] = {
+        name = "Pascal",
     },
     [152489] = {
         name = "Altar de las tormentas",
@@ -2197,5 +2248,38 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152497] = {
         name = "Altar del manto nocturno",
+    },
+    [152522] = {
+        name = "Gazlowe",
+    },
+    [152747] = {
+        name = "Christy Engranazo",
+    },
+    [153509] = {
+        name = "Artesana Okata",
+    },
+    [153510] = {
+        name = "Artesano Itanu",
+    },
+    [153512] = {
+        name = "Buscador Pruc",
+    },
+    [153514] = {
+        name = "Buscadora Palta",
+    },
+    [153617] = {
+        name = "Shandris Plumaluna",
+    },
+    [154248] = {
+        name = "Esgrimidor Inowari",
+    },
+    [154257] = {
+        name = "Instructor Ulooaka",
+    },
+    [154408] = {
+        name = "Rolm",
+    },
+    [154640] = {
+        name = "Gran mariscal Hojatemblorosa",
     },
 })

@@ -1477,10 +1477,14 @@
 			<Layer level="BACKGROUND">
 				<Texture parentKey="Background">
 					<Anchors>
+						<Anchor point="TOPLEFT" x="6" y="-6"/>
+						<Anchor point="BOTTOMRIGHT" x="-6" y="6"/>
+					</Anchors>
+					<!-- <Anchors>
 						<Anchor point="TOPLEFT" x="1" y="-1"/>
 						<Anchor point="BOTTOMRIGHT" x="0" y="1"/>
 					</Anchors>
-					<TexCoords left="0" right="0.68359375" top="0" bottom="0.7421875"/>
+					<TexCoords left="0" right="0.68359375" top="0" bottom="0.7421875"/> -->
 				</Texture>
 			</Layer>
 			<Layer level="OVERLAY">

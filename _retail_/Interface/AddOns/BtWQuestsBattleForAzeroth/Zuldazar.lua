@@ -2790,11 +2790,16 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN5_HO
     },
 })
 -- Completed, horde only, no requirements, 1 breadcrumb
+BtWQuestsCharacters:AddFriendshipReputation(2370)
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
-    name = { -- The Orphaned Hatchling
-        type = "quest",
-        id = 47226,
+    name = { -- How to Train Your Direhorn
+        type = "achievement",
+        id = 13542,
     },
+    -- name = { -- The Orphaned Hatchling
+    --     type = "quest",
+    --     id = 47226,
+    -- },
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_ZULDAZAR,
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     range = {110,120},
@@ -2821,7 +2826,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
     },
     completed = {
         type = "quest",
-        id = 47310,
+        id = 55798,
     },
     items = {
         {
@@ -2996,6 +3001,230 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
         { -- Also completed 55257, which may be a daily quest preventing the next part from being available
             type = "quest",
             id = 52857,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+
+        {
+            type = "quest",
+            id = 55254,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55252,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55253,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        { -- Also completes 55259, probably daily quest for next part of the chain
+            type = "quest",
+            id = 55258,
+            x = 3,
+            connections = {
+                1,
+            },
+        },
+
+        -- { -- Daily quest, also marked 55494 as completed
+        --     type = "quest",
+        --     id = 55250,
+        --     x = 2,
+        -- },
+        -- { -- Daily quest, also marked 55494 as completed, got as the 5th daily quest
+        --     type = "quest",
+        --     id = 55249,
+        -- },
+        -- { -- Daily quest
+        --     type = "quest",
+        --     id = 55251,
+        -- },
+
+        -- GetFriendshipReputation(2370)
+        -- Rank 1: Hatchling
+        -- Rank 2: Juvenile
+        -- Rank 3: Maturity
+        {
+            name = "Raise your Direhorn to a Juvenile",
+            type = "friendship",
+            id = 2370,
+            amount = 4000,
+            active = {
+                type = "quest",
+                id = 55258,
+            },
+            x = 3,
+            connections = {
+                2, 
+            },
+        },
+        {
+            name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+            visible = {
+                {
+                    type = "friendship",
+                    id = 2370,
+                    amount = 4000,
+                },
+                {
+                    type = "quest",
+                    id = 55462,
+                    status = {'notcompleted'},
+                }
+            },
+            active = {
+                type = "quest",
+                id = 55494,
+            },
+            completed = {
+                type = "quest",
+                id = 55494,
+                status = {'notcompleted'},
+            },
+            x = 1,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55462,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        -- {
+        --     type = "quest",
+        --     id = 55503,
+        --     x = 3,
+        --     connections = {
+        --         1, 
+        --     },
+        -- },
+        {
+            type = "quest",
+            id = 55504,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55506,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55505,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55507,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            name = "Raise your Direhorn to Maturity",
+            type = "friendship",
+            id = 2370,
+            amount = 8000,
+            active = {
+                type = "quest",
+                id = 55507,
+            },
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        -- {
+        --     name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
+        --     visible = {
+        --         {
+        --             type = "friendship",
+        --             id = 2370,
+        --             amount = 8000,
+        --         },
+        --         {
+        --             type = "quest",
+        --             id = 55247,
+        --             status = {'notcompleted'},
+        --         }
+        --     },
+        --     active = {
+        --         type = "quest",
+        --         id = 55494,
+        --     },
+        --     completed = {
+        --         type = "quest",
+        --         id = 55494,
+        --         status = {'nocompleted'},
+        --     },
+        --     x = 1,
+        --     connections = {
+        --         1, 
+        --     },
+        -- },
+        {
+            type = "quest",
+            id = 55247,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55795,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55796,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55797,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55798,
             x = 3,
         },
     },

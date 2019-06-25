@@ -20,6 +20,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [29445] = {
         name = "Thorim",
     },
+    [107574] = {
+        name = "Anduin Wrynn",
+    },
     [108017] = {
         name = "Torv Passão",
     },
@@ -2048,6 +2051,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [149736] = {
         name = "Imagem de Mimiron",
     },
+    [149815] = {
+        name = "Grizzek Chave-frouxa",
+    },
     [149823] = {
         name = "Magni Barbabronze",
     },
@@ -2059,6 +2065,9 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [149870] = {
         name = "Grif Selvacuore",
+    },
+    [150101] = {
+        name = "Grã-senhora Jaina Proudmore",
     },
     [150309] = {
         name = "Baine Casco Sangrento",
@@ -2072,8 +2081,20 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150515] = {
         name = "Ciro Desalento",
     },
+    [150555] = {
+        name = "Aren Engrenália",
+    },
+    [150573] = {
+        name = "Reciclador Cataplau",
+    },
     [150574] = {
         name = "Grã-senhora Jaina Proudmore",
+    },
+    [150630] = {
+        name = "Flipo Carga-rápida",
+    },
+    [150631] = {
+        name = "Prisca Carga-rápida",
     },
     [150633] = {
         name = "Grã-senhora Jaina Proudmore",
@@ -2105,14 +2126,44 @@ BtWQuestsDatabase:UpdateNPCsTable({
     [150898] = {
         name = "Altar das Tormentas",
     },
+    [151000] = {
+        name = "Mestre de Espadas Okani",
+    },
     [151061] = {
         name = "Mimiron",
     },
     [151173] = {
         name = "Daniss Bailalma",
     },
+    [151309] = {
+        name = "Batedor Barbatalga",
+    },
+    [151626] = {
+        name = "Caçador Akana",
+    },
+    [151763] = {
+        name = "Isla",
+    },
+    [151848] = {
+        name = "Lor'themar Theron",
+    },
+    [151851] = {
+        name = "Chefe Telemante Oculeth",
+    },
     [152002] = {
         name = "Imagem de Mimiron",
+    },
+    [152084] = {
+        name = "Mrrl",
+    },
+    [152194] = {
+        name = "M.A.D.R.E.",
+    },
+    [152206] = {
+        name = "Magni Barbabronze",
+    },
+    [152295] = {
+        name = "Pascal",
     },
     [152489] = {
         name = "Altar das Tormentas",
@@ -2125,5 +2176,38 @@ BtWQuestsDatabase:UpdateNPCsTable({
     },
     [152497] = {
         name = "Altar do Anoitecer",
+    },
+    [152522] = {
+        name = "Gasganete",
+    },
+    [152747] = {
+        name = "Christy Socapeça",
+    },
+    [153509] = {
+        name = "Artífice Okata",
+    },
+    [153510] = {
+        name = "Artífice Itanu",
+    },
+    [153512] = {
+        name = "Rastreador Pruque",
+    },
+    [153514] = {
+        name = "Rastreadora Palta",
+    },
+    [153617] = {
+        name = "Shandris Plumaluna",
+    },
+    [154248] = {
+        name = "Espadachim Inowari",
+    },
+    [154257] = {
+        name = "Instrutor Ulooaka",
+    },
+    [154408] = {
+        name = "Rolam",
+    },
+    [154640] = {
+        name = "Grã-marechal Tremulâmina",
     },
 })

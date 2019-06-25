@@ -73,6 +73,10 @@ function BtWQuestsMinimapButton_OnClick(self, button)
 	if button == "RightButton" then
 		BtWQuestsOptionsMenu:Toggle(self, 0, 0)
 	else
-		ToggleFrame(BtWQuestsFrame)
+		if BtWQuestsFrame:IsShown() then
+			BtWQuestsFrame:Hide()
+		else
+			BtWQuestsFrame:Show()
+		end
 	end
 end

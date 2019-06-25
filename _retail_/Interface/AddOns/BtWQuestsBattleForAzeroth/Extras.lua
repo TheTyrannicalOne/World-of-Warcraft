@@ -1202,7 +1202,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_JUSTICE_FOR_
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE, {
-    name = {
+    name = { -- The Pride of the Sin'dorei
         type = "quest",
         id = 53791,
     },
@@ -1210,7 +1210,9 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     crest = "blood-elf",
     alternatives = {
-        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_GNOME_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_TAUREN_HERITAGE,
     },
     restrictions = {
         {
@@ -1238,6 +1240,11 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE
         type = "quest",
         id = 54096,
         x = 3,
+    },
+    rewards = {
+        {
+            name = BTWQUESTS_HERITAGE_OF_THE_SINDOREI,
+        }
     },
     range = {110},
     items = {
@@ -1321,7 +1328,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE, {
-    name = {
+    name = { -- Legacy of the Bronzebeard
         type = "quest",
         id = 53846,
     },
@@ -1329,7 +1336,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE, {
     expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
     crest = "dwarf",
     alternatives = {
-        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_GNOME_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_TAUREN_HERITAGE,
     },
     restrictions = {
         {
@@ -1357,7 +1367,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE, {
         type = "quest",
         id = 53846,
     },
-    range = {110},
+    rewards = {
+        {
+            name = BTWQUESTS_HERITAGE_OF_THE_BRONZEBEARD,
+        }
+    },
+    range = {120},
     items = {
         {
             type = "quest",
@@ -1653,6 +1668,12 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_SOMETHING_SO
     completed = {
         type = "quest",
         ids = {53820, 53821},
+    },
+    rewards = {
+        {
+            type = "pet",
+            id = 2526,
+        },
     },
     items = {
         {
@@ -2180,6 +2201,275 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_XALATATH, {
         },
     },
 })
+
+
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_GNOME_HERITAGE, {
+    name = { -- Gnomeregan's Finest
+        type = "quest",
+        id = 54576,
+    },
+    questline = 858,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    crest = "gnome",
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_TAUREN_HERITAGE,
+    },
+    restrictions = {
+        {
+            type = "race",
+            id = BTWQUESTS_RACE_ID_GNOME,
+        },
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "reputation",
+            id = 54,
+            standing = 8,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 54402,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 54642,
+    },
+    rewards = {
+        {
+            name = BTWQUESTS_HERITAGE_OF_GNOMEREGAN,
+        }
+    },
+    range = {120},
+    items = {
+        {
+            type = "npc",
+            id = 147939,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54402,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54576,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54577,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54580,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54581,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54582,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54639,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54640,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54850,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54641,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54642,
+            x = 3,
+        },
+    },
+})
+BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_TAUREN_HERITAGE, {
+    name = { -- The Spiritwalkers
+        type = "quest",
+        id = 54760,
+    },
+    questline = 860,
+    category = nil,
+    expansion = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
+    crest = "tauren",
+    alternatives = {
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_BLOOD_ELF_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_DWARF_HERITAGE,
+        BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_GNOME_HERITAGE,
+    },
+    restrictions = {
+        {
+            type = "race",
+            id = BTWQUESTS_RACE_ID_TAUREN,
+        },
+    },
+    prerequisites = {
+        {
+            type = "level",
+            level = 120,
+        },
+        {
+            type = "reputation",
+            id = 81,
+            standing = 8,
+        },
+        {
+            type = "chain",
+            id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_HORDE_CAMPAIGN_8_2,
+        },
+    },
+    active = {
+        type = "quest",
+        id = 54759,
+        status = {'active', 'completed'},
+    },
+    completed = {
+        type = "quest",
+        id = 54765,
+    },
+    rewards = {
+        {
+            name = BTWQUESTS_HERITAGE_OF_THE_SHUHALO,
+        }
+    },
+    range = {120},
+    items = {
+        {
+            type = "npc",
+            id = 149088,
+            x = 3,
+            y = 0,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54759,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54760,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54761,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54762,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54763,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54764,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54766,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 54765,
+            x = 3,
+        },
+    },
+})
+
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_OTHER_ALLIANCE, {
     name = "Other Alliance",
     category = nil,
@@ -2448,7 +2738,11 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
     },
     {
         type = "chain",
-        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_NECK_LEVEL,
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_GNOME_HERITAGE,
+    },
+    {
+        type = "chain",
+        id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_2_TAUREN_HERITAGE,
     },
     {
         type = "chain",
@@ -2466,4 +2760,9 @@ BtWQuestsDatabase:AddExpansionItems(BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH, {
         type = "chain",
         id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_8_1_5_XALATATH,
     },
+})
+
+BtWQuestsDatabase:AddMap(1473, {
+    type = "expansion",
+    id = BTWQUESTS_EXPANSION_BATTLE_FOR_AZEROTH,
 })
