@@ -19,10 +19,13 @@ HHTD_SavedVariables = {
 		["Tyrannithal - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
+		["Shaekhan - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
 		["Shanyt - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Shaekhan - Argent Dawn"] = {
+		["Durlok - Black Dragonflight"] = {
 			["settingsMigrated"] = false,
 		},
 		["Mulmok - Argent Dawn"] = {
@@ -53,8 +56,9 @@ HHTD_SavedVariables = {
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
+		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
+		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",

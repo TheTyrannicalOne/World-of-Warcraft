@@ -176,7 +176,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
         },
         {
             type = "heartlevel",
-            level = 52,
+            level = 54,
         },
     },
     active = {
@@ -274,6 +274,7 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CHAIN01,
             x = 3,
+            y = 0,
             connections = {
                 1, 
             },
@@ -282,7 +283,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_THE_HEART_FORGE_CH
             type = "quest",
             id = 55390,
             x = 3,
-            y = 0,
             connections = {
                 1, 
             },

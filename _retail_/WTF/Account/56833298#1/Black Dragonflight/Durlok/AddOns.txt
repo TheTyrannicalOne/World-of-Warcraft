@@ -9,3 +9,5 @@ ElvUI_SLE: enabled
 AddonSkins: enabled
 Hermes: enabled
 xCT+: enabled
+WeakAurasCompanion: enabled
+!KalielsTracker: disabled

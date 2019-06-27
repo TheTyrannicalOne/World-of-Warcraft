@@ -1,211 +1,261 @@
 
 WoWDBProfilerData = {
 	["profileKeys"] = {
-		["Shanyt - Argent Dawn"] = "Default",
+		["Durlok - Black Dragonflight"] = "Default",
 	},
 	["region"] = "US",
 	["version"] = 19,
-	["build_num"] = 28724,
+	["build_num"] = 30920,
 	["global"] = {
 		["items"] = {
-			[159865] = {
-				["durability"] = 50,
+			[158319] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 113,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
-			[161179] = {
+			[155259] = {
+				["instance_difficulty_id"] = 25,
+				["upgrade_value"] = 0,
+				["durability"] = 85,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[161125] = {
+				["instance_difficulty_id"] = 18,
+				["upgrade_value"] = 114,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[158668] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 114,
 				["durability"] = 40,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
 			},
-			[87216] = {
+			[158415] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 114,
+				["durability"] = 40,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[161139] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 112,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[161029] = {
+				["instance_difficulty_id"] = 18,
+				["upgrade_value"] = 114,
+				["durability"] = 50,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[160911] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[153290] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 90,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[163865] = {
 				["durability"] = 85,
-			},
-			[5956] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["durability"] = 16,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[134270] = {
-				["instance_difficulty_id"] = 27,
-				["upgrade_value"] = 0,
+			[159338] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 113,
 				["durability"] = 100,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[140192] = {
-				["instance_difficulty_id"] = 11,
+			[155860] = {
+				["instance_difficulty_id"] = 17,
 				["upgrade_value"] = 0,
+				["durability"] = 140,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[84661] = {
-				["durability"] = 50,
-			},
-			[153138] = {
+			[159147] = {
 				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
+				["upgrade_value"] = 112,
+				["durability"] = 55,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[160212] = {
-				["durability"] = 50,
-			},
-			[17905] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
+			[159458] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 111,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[2901] = {
+			[159111] = {
+				["instance_difficulty_id"] = 11,
+				["upgrade_value"] = 114,
+				["durability"] = 85,
+				["unique_id"] = 0,
+				["suffix_id"] = 0,
+			},
+			[85663] = {
 				["instance_difficulty_id"] = 14,
 				["upgrade_value"] = 0,
 				["durability"] = 20,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[129276] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[141605] = {
+			[158075] = {
 				["instance_difficulty_id"] = 11,
 				["upgrade_value"] = 0,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
-			[110560] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[159988] = {
-				["durability"] = 80,
-			},
-			[141652] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[136350] = {
-				["instance_difficulty_id"] = 11,
-				["upgrade_value"] = 0,
-				["durability"] = 16,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[150390] = {
-				["durability"] = 120,
-			},
-			[155385] = {
-				["durability"] = 140,
-			},
-			[160918] = {
-				["durability"] = 85,
-			},
-			[114325] = {
-				["instance_difficulty_id"] = 31,
-				["upgrade_value"] = 0,
-				["durability"] = 50,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[44935] = {
-				["instance_difficulty_id"] = 14,
-				["upgrade_value"] = 0,
-				["unique_id"] = 0,
-				["suffix_id"] = 0,
-			},
-			[150421] = {
-				["instance_difficulty_id"] = 3,
-				["upgrade_value"] = 120,
-				["durability"] = 120,
+			[160984] = {
+				["instance_difficulty_id"] = 17,
+				["upgrade_value"] = 110,
 				["unique_id"] = 0,
 				["suffix_id"] = 0,
 			},
 		},
 		["npcs"] = {
-			["88779"] = {
+			["150191"] = {
 				["encounter_data"] = {
 					["NONE:0:false"] = {
 						["spells"] = {
-							[97097] = 1,
+							[304546] = 2,
 						},
 						["stats"] = {
 						},
 					},
 				},
 			},
+			["133631"] = {
+				["genders"] = {
+					["FEMALE"] = true,
+				},
+				["faction"] = "Undercity",
+				["class"] = "WARRIOR",
+				["encounter_data"] = {
+					["NONE:0:false"] = {
+						["stats"] = {
+							["level_120"] = {
+								["locations"] = {
+									["Zuldazar:1165"] = {
+										["3:498:418"] = true,
+									},
+								},
+								["max_health"] = 650415,
+							},
+						},
+					},
+				},
+				["reaction"] = "115:Horde:FRIENDLY",
+			},
 		},
 		["objects"] = {
-			["242448"] = {
+			["302859"] = {
 				["NONE:0:false"] = {
 					["locations"] = {
-						["Frostwall:590"] = {
-							["6:534:334"] = true,
+						["Zuldazar:1165"] = {
+							["3:496:416"] = true,
 						},
 					},
 				},
 			},
 		},
 		["quests"] = {
-			[50641] = {
-				["can_share"] = true,
-			},
-			[49032] = {
-			},
 			[51421] = {
 				["can_share"] = true,
 			},
-			[43179] = {
-			},
-			[47118] = {
-			},
-			[51772] = {
+			[51555] = {
 				["can_share"] = true,
 			},
-			[24756] = {
-				["can_share"] = true,
+			[42234] = {
 			},
-			[49327] = {
-				["can_share"] = true,
+			[54185] = {
 			},
-			[39501] = {
+			[44989] = {
 			},
-			[43530] = {
+			[42422] = {
 			},
-			[49133] = {
+			[31891] = {
 			},
-			[48840] = {
-				["can_share"] = true,
+			[48641] = {
 			},
-			[49334] = {
-				["can_share"] = true,
+		},
+		["world_quests"] = {
+			[54011] = {
+				["location"] = {
+					["y"] = 50.91722011566162,
+					["world_map_id"] = 896,
+					["x"] = 38.29483389854431,
+				},
+				["rewards"] = {
+					["currency_count"] = 0,
+					["item_count"] = 0,
+					["honor"] = 0,
+					["money"] = 0,
+					["xp"] = 25750,
+				},
+				["estimated_end_time"] = 1561600861,
 			},
-			[49015] = {
-				["can_share"] = true,
+			[54692] = {
+				["location"] = {
+					["y"] = 32.79956579208374,
+					["world_map_id"] = 896,
+					["x"] = 39.48001861572266,
+				},
+				["rewards"] = {
+					["currency_count"] = 0,
+					["item_count"] = 0,
+					["honor"] = 0,
+					["money"] = 0,
+					["xp"] = 25750,
+				},
+				["estimated_end_time"] = 1561600861,
 			},
-			[51165] = {
-				["can_share"] = true,
+			[54472] = {
+				["location"] = {
+					["y"] = 48.17211627960205,
+					["world_map_id"] = 896,
+					["x"] = 33.72838497161865,
+				},
+				["rewards"] = {
+					["currency_count"] = 0,
+					["item_count"] = 0,
+					["honor"] = 0,
+					["money"] = 0,
+					["xp"] = 25750,
+				},
+				["estimated_end_time"] = 1561600861,
 			},
-			[44284] = {
+			[54686] = {
+				["location"] = {
+					["y"] = 41.55773520469666,
+					["world_map_id"] = 896,
+					["x"] = 31.63688182830811,
+				},
+				["rewards"] = {
+					["currency_count"] = 0,
+					["item_count"] = 0,
+					["honor"] = 0,
+					["money"] = 0,
+					["xp"] = 25750,
+				},
+				["estimated_end_time"] = 1561600861,
 			},
-			[48288] = {
+			[54448] = {
+				["location"] = {
+					["y"] = 37.55773305892944,
+					["world_map_id"] = 896,
+					["x"] = 40.31661748886108,
+				},
+				["rewards"] = {
+					["currency_count"] = 0,
+					["item_count"] = 0,
+					["honor"] = 0,
+					["money"] = 0,
+					["xp"] = 25750,
+				},
+				["estimated_end_time"] = 1561600861,
 			},
 		},
 	},

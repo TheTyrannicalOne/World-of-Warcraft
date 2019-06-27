@@ -687,8 +687,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 55608,
+                {
+                    type = "quest",
+                    id = 55608,
+                },
+                {
+                    type = "quest",
+                    id = 54086,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -721,8 +730,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 54086,
+                {
+                    type = "quest",
+                    id = 54086,
+                },
+                {
+                    type = "quest",
+                    id = 54929,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -749,8 +767,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 54929,
+                {
+                    type = "quest",
+                    id = 54929,
+                },
+                {
+                    type = "quest",
+                    id = 55373,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -777,8 +804,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 55373,
+                {
+                    type = "quest",
+                    id = 55373,
+                },
+                {
+                    type = "quest",
+                    id = 55697,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -805,8 +841,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 55697,
+                {
+                    type = "quest",
+                    id = 55697,
+                },
+                {
+                    type = "quest",
+                    id = 54922,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -833,8 +878,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 54922,
+                {
+                    type = "quest",
+                    id = 54922,
+                },
+                {
+                    type = "quest",
+                    id = 56168,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -861,8 +915,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 56168,
+                {
+                    type = "quest",
+                    id = 56168,
+                },
+                {
+                    type = "quest",
+                    id = 54083,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -889,8 +952,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 54083,
+                {
+                    type = "quest",
+                    id = 54083,
+                },
+                {
+                    type = "quest",
+                    id = 56175,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -917,8 +989,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 56175,
+                {
+                    type = "quest",
+                    id = 56175,
+                },
+                {
+                    type = "quest",
+                    id = 55696,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -945,8 +1026,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 55696,
+                {
+                    type = "quest",
+                    id = 55696,
+                },
+                {
+                    type = "quest",
+                    id = 55753,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",
@@ -973,8 +1063,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             id = 55161,
             name = BTWQUESTS_WAIT_FOR_DAILY_RESET,
             visible = {
-                type = "quest",
-                id = 55753,
+                {
+                    type = "quest",
+                    id = 55753,
+                },
+                {
+                    type = "quest",
+                    id = 55622,
+                    status = {
+                        "notcompleted",
+                    },
+                },
             },
             completed = {
                 type = "quest",

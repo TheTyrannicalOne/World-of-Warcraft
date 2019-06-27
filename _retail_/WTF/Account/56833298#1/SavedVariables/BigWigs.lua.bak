@@ -6,14 +6,14 @@ BigWigs3DB = {
 			[-1358] = true,
 			[-557] = true,
 			[-573] = true,
-			[-367] = true,
 			[74] = true,
 			[76] = true,
 			[-575] = true,
 			[294] = true,
-			[-607] = true,
+			[-514] = true,
 			[-1152] = true,
-			[-510] = true,
+			[-607] = true,
+			[-367] = true,
 			[-609] = true,
 			[-563] = true,
 			[-437] = true,
@@ -24,7 +24,7 @@ BigWigs3DB = {
 			[73] = true,
 			[75] = true,
 			[-567] = true,
-			[-514] = true,
+			[-510] = true,
 			[-1352] = {
 				[2] = true,
 			},
@@ -51,10 +51,6 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
-		["BigWigs_Bosses_Nalak"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
 		["BigWigs_Plugins_Colors"] = {
 		},
 		["BigWigs_Plugins_Wipe"] = {
@@ -71,13 +67,11 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsAnchor_width"] = 220.000015258789,
+					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
 					["BigWigsEmphasizeAnchor_height"] = 21.9999504089355,
 					["BigWigsAnchor_height"] = 16.0000438690186,
-					["BigWigsEmphasizeAnchor_width"] = 319.999816894531,
 				},
 			},
-		},
-		["BigWigs_Bosses_Supreme Lord Kazzak"] = {
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 			["profiles"] = {
@@ -86,27 +80,25 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Bosses_Rukhmar"] = {
-		},
 		["BigWigs_Plugins_AutoReply"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Bosses_Salyis's Warband"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["height"] = 119.999977111816,
+					["font"] = "Friz Quadrata TT",
+					["width"] = 140.00016784668,
+				},
+			},
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
 					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["width"] = 140.00016784668,
-					["font"] = "Friz Quadrata TT",
-					["height"] = 119.999977111816,
 				},
 			},
 		},
@@ -740,9 +732,9 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1447] = {
+		[1372] = {
 			["normal"] = {
-				["best"] = 4.31099999999424,
+				["best"] = 6.20100000000093,
 				["kills"] = 1,
 			},
 		},
@@ -762,9 +754,9 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1432] = {
+		[1447] = {
 			["normal"] = {
-				["best"] = 10.9859999999971,
+				["best"] = 4.31099999999424,
 				["kills"] = 1,
 			},
 		},
@@ -792,9 +784,9 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1372] = {
+		[1432] = {
 			["normal"] = {
-				["best"] = 6.20100000000093,
+				["best"] = 10.9859999999971,
 				["kills"] = 1,
 			},
 		},

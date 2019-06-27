@@ -2054,7 +2054,7 @@ AAP.ArrowFrame:SetScript("OnMouseUp", function(self, button)
 		AAP.ArrowFrameM.isMoving = false;
 		AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"] = AAP.ArrowFrameM:GetLeft()
 		AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"] = AAP.ArrowFrameM:GetTop() - GetScreenHeight()
-		AAP.ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
+		--AAP.ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
 	end
 end)
 AAP.ArrowFrame:SetScript("OnHide", function(self)
@@ -2063,7 +2063,7 @@ AAP.ArrowFrame:SetScript("OnHide", function(self)
 		AAP.ArrowFrameM.isMoving = false;
 		AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"] = AAP.ArrowFrameM:GetLeft()
 		AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"] = AAP.ArrowFrameM:GetTop() - GetScreenHeight()
-		AAP.ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
+		--AAP.ArrowFrameM:SetPoint("TOPLEFT", UIParent, "TOPLEFT", AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowleft"], AAP1[AAP.Realm][AAP.Name]["Settings"]["arrowtop"])
 	end
 end)
 

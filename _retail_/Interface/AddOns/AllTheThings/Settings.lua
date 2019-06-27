@@ -77,7 +77,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Illusions"] = true,
 		-- ["AccountWide:Mounts"] = true,
 		["AccountWide:MusicRolls"] = true,
-		-- ["AccountWide:Quests"] = false,
+		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
 		["AccountWide:SelfieFilters"] = true,
@@ -112,6 +112,7 @@ local TooltipSettingsBase = {
 	__index = {
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
+		["Auto:AH"] = true,
 		["Celebrate"] = true,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
@@ -1073,9 +1074,19 @@ QuestsCheckBox:SetPoint("TOPLEFT", MusicRollsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(false);
-	self:Disable();
-	self:SetAlpha(0.2);
+	self:SetChecked(settings:Get("AccountWide:Quests"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Quests", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
 end);
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
@@ -2530,6 +2541,7 @@ DebuggingLabel:Show();
 table.insert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {["achievementID"] = "Achievement ID",
 	["artifactID"] = "Artifact ID",
+	["azeriteEssenceID"] = "Azerite Essence ID",
 	["bonusID"] = "Bonus ID",
 	["creatureID"] = "Creature ID",
 	["creatures"] = "Creatures List",
@@ -2540,6 +2552,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["factionID"] = "Faction ID",
 	["filterID"] = "Filter ID",
 	["fileID"] = "File ID",
+	["flightPathID"] = "Flight Path ID",
 	["illusionID"] = "Illusion ID",
 	["instanceID"] = "Instance ID",
 	["itemID"] = "Item ID",
@@ -2557,7 +2570,7 @@ local ids = {["achievementID"] = "Achievement ID",
 	["visualID"] = "Visual ID",
 };
 local last = nil;
-for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","illusionID","instanceID"}) do
+for _,id in pairs({"achievementID","artifactID","azeriteEssenceID","bonusID","creatureID","creatures","currencyID","difficultyID","displayID","encounterID","factionID","fileID","filterID","flightPathID","illusionID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2574,7 +2587,7 @@ for _,id in pairs({"achievementID","artifactID","bonusID","creatureID","creature
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
+for _,id in pairs({"instanceID","itemID","itemString", "mapID","modID","objectID","questID","QuestGivers","sourceID","speciesID","spellID","tierID","titleID","visualID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2769,6 +2782,7 @@ end);
 OpenRaidAssistantAutomatically:SetATTTooltip("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra");
 OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
 
+
 local OpenWorldQuestsListAutomatically = settings:CreateCheckBox("Automatically Open the World Quests List",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:WorldQuestsList"));
@@ -2788,6 +2802,28 @@ function(self)
 end);
 ShowCurrenciesInWorldQuestsList:SetATTTooltip("Enable this option if you want to treat currencies awarded by World Quests as if all of the Things they are used to acquire counted as +1 in the list.");
 ShowCurrenciesInWorldQuestsList:SetPoint("TOPLEFT", OpenWorldQuestsListAutomatically, "BOTTOMLEFT", 4, 4);
+
+local ShowAuctionHouseModuleTab = settings:CreateCheckBox("Show the Auction House Module Tab",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:AH"));
+end,
+function(self)
+	settings:SetTooltipSetting("Auto:AH", self:GetChecked());
+	if app.Blizzard_AuctionUILoaded then
+		if app.AuctionModuleTabID then
+			if self:GetChecked() then
+				PanelTemplates_EnableTab(AuctionFrame, app.AuctionModuleTabID);
+				if app.OpenAuctionModule then app:OpenAuctionModule(); end
+			else
+				PanelTemplates_DisableTab(AuctionFrame, app.AuctionModuleTabID);
+			end
+		elseif app.OpenAuctionModule then
+			app:OpenAuctionModule();
+		end
+	end
+end);
+ShowAuctionHouseModuleTab:SetATTTooltip("Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.");
+ShowAuctionHouseModuleTab:SetPoint("TOPLEFT", ShowCurrenciesInWorldQuestsList, "BOTTOMLEFT", -4, 4);
 
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -50, -8);

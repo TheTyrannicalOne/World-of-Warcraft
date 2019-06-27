@@ -4,14 +4,14 @@ CliqueDB3 = {
 	["char"] = {
 		["Shanyt - Argent Dawn"] = {
 			["spec1_profileKey"] = "Shanyt - Argent Dawn",
+			["specswap"] = false,
+			["downclick"] = false,
 			["fastooc"] = false,
+			["spec2_profileKey"] = "Shanyt - Argent Dawn",
+			["spec3_profileKey"] = "Shanyt - Argent Dawn",
 			["blacklist"] = {
 				["PetFrame"] = true,
 			},
-			["spec3_profileKey"] = "Shanyt - Argent Dawn",
-			["downclick"] = false,
-			["specswap"] = false,
-			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 		},
 	},
 	["profileKeys"] = {

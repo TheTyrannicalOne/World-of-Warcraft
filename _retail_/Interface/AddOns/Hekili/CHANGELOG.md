@@ -1,70 +1,11 @@
 # Hekili
 
-## [v8.2.0-01](https://github.com/Hekili/hekili/tree/v8.2.0-01) (2019-06-25)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.1.5-20-alpha2...v8.2.0-01)
+## [v8.2.0-02](https://github.com/Hekili/hekili/tree/v8.2.0-02) (2019-06-27)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.2.0-01...v8.2.0-02)
 
-- Add outlined green plus texture.  
-- 8.2 (#149)  
-    8.2  
-- Retribution:  Update APL from Skeletor.  
-- Be more aggressive about updating Use Items APL when swapping Essences.  
-- Havoc, Balance, Fire, Rogues, Shamans - Update APLs.  
-- Flag essence abilities for inclusion in "Use Items" if your essence's on-use ability is not in your APL.  
-- Refresh minimap datatext when a toggle override is changed.  
-- Setup preliminary "heart\_essence" ability that switches when you change your major.  
-- Flag Essences that start combat.  
-- Frost Mage:  Support rotation.X expression and option.  
-    - Update APLs.  
-- Enable Custom #1, Custom #2 keybinding.  
-    - Make the Notify/Print for Custom #1 and Custom #2 less ugly.  
-- Update VoP CDR for Druids.  
-- Divert actions without charges or with only 1 charge to setCooldown rather than spendCharges.  
-    - Add 'Holds' support.  
-- Add Custom toggles to Options UI.  
-- Set up class.abilityByName.  
-- Add the_ to essence IDs.  
-    - Use numeric value for version-checking.  
-    - Fix ReleaseCombatHolds -> ReleaseHolds(true).  
-- Put short CD Essences on the Essences toggle.  
-- Update Minimap DataText depending on whether your Essence toggle is overridden by CDs.  
-- Update Essences starting with "The".  
-    - Keep a clean spell DB by name for the "holds" system.  
-- Update Essence data on all Azerite-related events.  
-- Refine options re: Display Mode, Essences toggle, etc.  
-- Properly flag essence in slot 1 as Major.  
-- Adjust some Snapshot data for readability.  
-- Move DPS Azerite onto "essences" toggle.  
-- Make resource changes (gain/loss) more consistent.  Fix failure to gain/forecast some resources in 8.2 branch.  
-- Destruction:  Crashing Chaos cooldown reduction.  
-- Discipline: Luminous Barrier CD modified by Dome of Light.  
-- Add Bear Form rage generation and increase Mangle rage generation.  
-- Vengeance:  Fracture/Shear changes.  
-- Memory of Lucid Dreams CD / duration updates.  
-- Commit VoP changes to all specs.  
-- Frost:  Change bof\_rp to bos\_rp.  
-- Frost DK:  Implement runes.add.  
-    - BoS is 16 RP/sec.  
-    - BoS gains 2 runes on cast/end.  
-    - Add Chill Streak since it changes in 8.2.  
-    - Add BoS RP as a setting instead of a fixed 50 RP required.  
-- Fix typo in a spacer.  
-- Release Candidate (30827) essence changes.  
-    - Fix RegisterAura typo for anima\_of\_life.  
-    - VoP CDR is 13% across the board.  
-    - Implement resource.add for gain/spend functions that don't need to retrigger forecasting.  
-- Update .gitignore and remove BLPs in favor of TGA textures.  
-- Guardian:  Add setting to bank Rage instead of spending down with Maul.  
-    - Add useful messages for snapshots.  
-- Add tanking essences.  
-- Guardian:  Maul is 40 Rage.  
-- Fix fix to avoid redundant resource forecasting.  
-- Update TOC for 8.2.  
-- - Setup essence.X.major properly w/o regard for table order.  
-    - More adjustments to prevent stack overflow on resource hooks.  
-- Add remaining shared/DPS essences (tank essences to follow).  
-- Prevent stack overflow on resource hooks.  
-- - Remove UI.lua from .gitignore  
-- - Detect equipped Essences; use essence.name.enabled for rank > 0, essence.name.rank for actual rank, essence.name.major to confirm it is a major essence.  
-    - Add several Essences (active ability and auras).  
-    - Update Essences as needed -- TODO: check essence-specific events.  
-    - Setup Druid Conflict and Strife abilities.  
+- Revert to using the BW packager script.  
+- Enhancement: Roiling Storm hasn't done anything interesting since 8.1.  
+- Havoc:  Fix Thirsting Blades cost reduction.  
+- Add ability cost to snapshot debug info.  
+- Fix unscripted essence check (for auto-adding to priority).  
+    Remove deprecated AutoDual toggle in minimap menu.  

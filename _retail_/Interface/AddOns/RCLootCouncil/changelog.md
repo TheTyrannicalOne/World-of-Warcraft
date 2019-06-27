@@ -1,3 +1,14 @@
+### v2.12.1 (no-locale)
+---
+*Due to Curse's fuckups, this release will temporarily be without locales.*
+*A new version will be made available once they get their shit together.*
+
+
+###### Bugfixes  
+* *Fixed library issue causing scrolling tables to unstick and break the UI in 8.2.*
+
+
+
 ### v2.12.0 (patch 8.2)
 ---
 * Added patch 8.2 and Azshara's Eternal Palace as history mass delete options.

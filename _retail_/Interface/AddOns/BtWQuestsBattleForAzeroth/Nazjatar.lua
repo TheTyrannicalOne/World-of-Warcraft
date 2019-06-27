@@ -178,21 +178,21 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN01, 
             aside = true,
             x = 3,
             connections = {
-                1, 2, 3, 4, 
+                1, 2, 3,
             },
         },
         {
             type = "quest",
             id = 56211,
             aside = true,
-            x = 0,
+            x = 1,
         },
         {
             type = "quest",
             id = 54975,
             aside = true,
             connections = {
-                3, 
+                2, 
             },
         },
         {
@@ -201,24 +201,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN01, 
             aside = true,
         },
         {
-            type = "quest",
-            id = 56164,
-            aside = true,
-            connections = {
-                2, 
-            },
-        },
-        {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN03,
             aside = true,
-            x = 2,
-        },
-        {
-            type = "quest",
-            id = 56166,
-            aside = true,
-            x = 6,
+            x = 3,
         },
     },
 })
@@ -402,21 +388,21 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN02, 
             aside = true,
             x = 3,
             connections = {
-                1, 2, 3, 4, 
+                1, 2, 3,
             },
         },
         {
             type = "quest",
             id = 56210,
             aside = true,
-            x = 0,
+            x = 1,
         },
         {
             type = "quest",
             id = 56235,
             aside = true,
             connections = {
-                3, 
+                2, 
             },
         },
         {
@@ -425,24 +411,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN02, 
             aside = true,
         },
         {
-            type = "quest",
-            id = 56176,
-            aside = true,
-            connections = {
-                2, 
-            },
-        },
-        {
             type = "chain",
             id = BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_NAZJATAR_CHAIN04,
             aside = true,
-            x = 2,
-        },
-        {
-            type = "quest",
-            id = 56179,
-            aside = true,
-            x = 6,
+            x = 3,
         },
     },
 })

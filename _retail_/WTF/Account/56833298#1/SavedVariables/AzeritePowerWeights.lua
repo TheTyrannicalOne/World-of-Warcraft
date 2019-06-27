@@ -38,9 +38,10 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
-				["showOnlyUpgrades"] = false,
 				["professionPowers"] = false,
+				["showOnlyUpgrades"] = false,
 				["debug"] = false,
+				["onlyOwnClassCustoms"] = false,
 			},
 		},
 		["Argent Dawn"] = {
