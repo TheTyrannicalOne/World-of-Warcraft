@@ -35,7 +35,7 @@ NarcissusDB = {
 	["EnableDoubleTap"] = false,
 	["FadeMusic"] = true,
 	["MinimapButton"] = {
-		["Position"] = 3.060015360496136,
+		["Position"] = -2.520002840514484,
 	},
 	["DetailedIlvlInfo"] = true,
 }

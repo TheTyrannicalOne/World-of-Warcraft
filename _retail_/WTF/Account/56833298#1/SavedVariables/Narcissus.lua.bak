@@ -7,7 +7,7 @@ NarcissusDB = {
 	["ColorChoice"] = 0,
 	["LetterboxEffect"] = false,
 	["MinimapButton"] = {
-		["Position"] = -2.97320069821011,
+		["Position"] = -2.520002840514484,
 	},
 	["ShowFullBody"] = true,
 	["EnableGrainEffect"] = false,

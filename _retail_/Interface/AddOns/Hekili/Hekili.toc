@@ -1,5 +1,5 @@
 ## Interface: 80200
-## Version: v8.2.0-02
+## Version: v8.2.0-04
 ## Title: Hekili
 ## Author: Hekili
 ## Notes: Priority helper for many DPS and tanking specializations, based on SimulationCraft action lists.

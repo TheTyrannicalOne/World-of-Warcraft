@@ -1528,7 +1528,7 @@ function BtWQuestsTooltipMixin:SetChain(chainID, character)
     self:AddDoubleLine(name)
     
     if BtWQuestsDatabase:IsChainActive(chainID, character) then
-        self:AddLine(BTWQUESTS_QUEST_CHAIN_ACTIVE)
+        self:AddLine(GREEN_FONT_COLOR_CODE..BTWQUESTS_QUEST_CHAIN_ACTIVE..FONT_COLOR_CODE_CLOSE)
     end
     
     local addedPrerequisite

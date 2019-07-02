@@ -2,6 +2,7 @@
 ACP_Data = {
 	["sorter"] = "Group By Name",
 	["NoRecurse"] = false,
+	["NoChildren"] = true,
 	["AddonSet"] = {
 		{
 			"AngryWorldQuests", -- [1]
@@ -207,7 +208,6 @@ ACP_Data = {
 			["name"] = "ZerkinUI",
 		}, -- [2]
 	},
-	["NoChildren"] = true,
 	["collapsed"] = {
 	},
 	["ProtectedAddons"] = {

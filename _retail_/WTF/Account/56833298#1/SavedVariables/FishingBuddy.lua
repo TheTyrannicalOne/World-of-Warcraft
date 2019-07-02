@@ -230,14 +230,14 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 2057316,
 		},
-		[111589] = {
-			["enUS"] = "Small Crescent Saberfish",
-			["texture"] = 970812,
-			["quality"] = 1,
-		},
 		[111651] = {
 			["enUS"] = "Small Fat Sleeper",
 			["texture"] = 970821,
+			["quality"] = 1,
+		},
+		[111589] = {
+			["enUS"] = "Small Crescent Saberfish",
+			["texture"] = 970812,
 			["quality"] = 1,
 		},
 		[154779] = {

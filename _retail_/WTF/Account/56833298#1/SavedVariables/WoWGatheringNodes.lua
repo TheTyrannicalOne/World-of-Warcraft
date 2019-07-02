@@ -11,13 +11,13 @@ WoWGatheringNodesConfig = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Jingojaggot - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["GathermateImport"] = "WoWGatheringNodes 2019-02-18T22:17:04Z",
+			["GathermateImport"] = "WoWGatheringNodes 2019-06-29T21:02:45Z",
 		},
 	},
 }

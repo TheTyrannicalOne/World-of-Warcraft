@@ -6,18 +6,12 @@ local WoWGatheringNodes = LibStub("AceAddon-3.0"):GetAddon("WoWGatheringNodes")
 local L = LibStub("AceLocale-3.0"):NewLocale("WoWGatheringNodes", "ruRU")
 if not L then return end
 
---[[Translation missing --]]
---[[ L["Auto Import Data to Gathermate"] = "Auto Import Data to Gathermate"--]] 
---[[Translation missing --]]
---[[ L["Auto Import New Data"] = "Auto Import New Data"--]] 
---[[Translation missing --]]
---[[ L["Auto Import to Data Gathermate"] = "Auto Import Data to Gathermate"--]] 
---[[Translation missing --]]
---[[ L["Auto Import to Herb Data to Carbonite"] = "Auto Import to Herb Data to Carbonite"--]] 
---[[Translation missing --]]
---[[ L["Auto Import to Mine Data to Carbonite"] = "Auto Import to Mine Data to Carbonite"--]] 
---[[Translation missing --]]
---[[ L["Automaticaly imports data when updated data is found"] = "Automaticaly imports data when updated data is found"--]] 
+L["Auto Import Data to Gathermate"] = "Автоматический импорт данных для Gathermate"
+L["Auto Import New Data"] = "Автоматический импорт новых данных"
+L["Auto Import to Data Gathermate"] = "Автоматический импорт данных для Gathermate"
+L["Auto Import to Herb Data to Carbonite"] = "Автоматический импорт данных по Травничеству в Carbonite"
+L["Auto Import to Mine Data to Carbonite"] = "Автоматический импорт данных по Горному Делу в Carbonite"
+L["Automaticaly imports data when updated data is found"] = "Автоматический импорт данных при обнаружении обновленных данных"
 L["Clear Data"] = "Очистить данные"
 L["Clears data from memory if version has already been imported."] = "Очистка данных из памяти, если версия уже импортирована."
 L["Custom Objects"] = "Пользовательский объект"
@@ -821,3 +815,22 @@ WoWGatheringNodes.NodeIdNames[303] =  "Arcane Vortex"
 WoWGatheringNodes.NodeIdNames[304] =  "Felmist"
 WoWGatheringNodes.NodeIdNames[307] =  "Arctic Cloud"
 WoWGatheringNodes.NodeIdNames[306] =  "Cinder Cloud"
+
+
+WoWGatheringNodes.NodeIdNames[325659] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[325667] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[325660] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[322413] =  "Сверкающий сундук"
+WoWGatheringNodes.NodeIdNames[325661] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[327576] =  "Сверкающий сундук"
+WoWGatheringNodes.NodeIdNames[325662] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[327577] =  "Сверкающий сундук"
+WoWGatheringNodes.NodeIdNames[325873] =  "Богатые залежи осменита"
+WoWGatheringNodes.NodeIdNames[325664] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[325874] =  "Пласт осменита"
+WoWGatheringNodes.NodeIdNames[325665] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[327578] =  "Сверкающий сундук"
+WoWGatheringNodes.NodeIdNames[325668] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[325875] =  "Залежи осменита"
+WoWGatheringNodes.NodeIdNames[325666] =  "Механизированный сундук"
+WoWGatheringNodes.NodeIdNames[326598] =  "Зин'антария"

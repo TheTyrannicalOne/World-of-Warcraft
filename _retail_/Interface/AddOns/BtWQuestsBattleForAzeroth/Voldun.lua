@@ -1456,11 +1456,6 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_CHAIN3, {
                 {
                     type = "npc",
                     id = 124468,
-                    -- name = "Go to Randall Redmond",
-                    -- onClick = function ()
-                    --     BtWQuests_ShowMapWithWaypoint(864, 0.456494, 0.823160, "Randall Redmond")
-                    -- end,
-                    -- breadcrumb = true,
                 }
             },
             x = 3,
@@ -1472,11 +1467,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_CHAIN3, {
         {
             type = "npc",
             id = 128422,
-            -- name = "Go to Keerin",
-            -- onClick = function ()
-            --     BtWQuests_ShowMapWithWaypoint(864, 0.475948, 0.861496, "Keerin")
-            -- end,
-            -- breadcrumb = true,
+            restrictions = {
+                type = "faction",
+                id = BTWQUESTS_FACTION_ID_HORDE,
+            },
             aside = true,
             x = 5,
             y = 0,
@@ -1512,6 +1506,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_CHAIN3, {
         {
             type = "quest",
             id = 47939,
+            restrictions = {
+                type = "faction",
+                id = BTWQUESTS_FACTION_ID_HORDE,
+            },
             aside = true,
             x = 6,
             y = 1,
@@ -1531,6 +1529,10 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_VOLDUN_CHAIN3, {
         {
             type = "quest",
             id = 49227,
+            restrictions = {
+                type = "faction",
+                id = BTWQUESTS_FACTION_ID_HORDE,
+            },
             aside = true,
             x = 6,
             y = 2,

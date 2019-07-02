@@ -1,6 +1,6 @@
 ## Interface: 80200
 ## Title: BtWQuests
-## Version: 1.39
+## Version: 1.40
 ## Notes: 
 ## Author: Breen
 ## SavedVariables: BtWQuests_Characters
@@ -11,6 +11,16 @@ BtWQuestsCharacters.lua
 BtWQuestsDatabase.lua
 
 Localization.lua
+Localization.deDE.lua
+Localization.esES.lua
+Localization.esMX.lua
+Localization.frFR.lua
+Localization.itIT.lua
+Localization.koKR.lua
+Localization.ptBR.lua
+Localization.ruRU.lua
+Localization.zhCN.lua
+Localization.zhTW.lua
 
 BtWQuestsTemplates.xml
 BtWQuests.xml

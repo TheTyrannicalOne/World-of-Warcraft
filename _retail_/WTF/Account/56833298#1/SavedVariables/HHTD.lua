@@ -31,10 +31,10 @@ HHTD_SavedVariables = {
 		["Mulmok - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Fantastiburo - Zul'jin"] = {
+		["Cowtastraphy - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Cowtastraphy - Argent Dawn"] = {
+		["Fantastiburo - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
 		["Jingojaggot - Argent Dawn"] = {
@@ -49,6 +49,10 @@ HHTD_SavedVariables = {
 		["NPH"] = {
 		},
 	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
+	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Datgorg - Argent Dawn",
 		["Vancard - Zul'jin"] = "Vancard - Zul'jin",
@@ -60,12 +64,8 @@ HHTD_SavedVariables = {
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
 		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
+		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
 		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
 	},
 }

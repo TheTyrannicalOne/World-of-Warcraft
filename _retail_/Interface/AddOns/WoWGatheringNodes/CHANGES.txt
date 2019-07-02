@@ -1,13 +1,13 @@
-tag d318d3a3ffb59ee724daa964e0a2c40e0e2d3dcb 02.18.19
+tag 8026c335fd24b6bad503252852f32ae7db2e8450 BFA-8.2-update-v1.0
 Author:	SLOKnightfall <SLOKnightfall@gmail.com>
-Date:	Mon Feb 18 14:18:23 2019 -0800
+Date:	Sat Jun 29 14:05:15 2019 -0700
 
-Toc Update and Data Refresh
+Patch update
 
-commit cd82d8ca192dcb2e7a2e73161903222dbf15101a
+commit 0d570b9f8bc46cc54df9896230ebce777c1da6b4
 Author: SLOKnightfall <SLOKnightfall@gmail.com>
-Date:   Mon Feb 18 14:17:04 2019 -0800
+Date:   Sat Jun 29 14:02:45 2019 -0700
 
-    Toc Update
-    Data Refresh
+    Added new 8.2 nodes
+    Note: No herb/mine data for mechagon
 
