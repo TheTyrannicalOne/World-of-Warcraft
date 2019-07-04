@@ -19,7 +19,7 @@ HHTD_SavedVariables = {
 		["Tyrannithal - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Jingojaggot - Argent Dawn"] = {
+		["Shaekhan - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
 		["Shanyt - Argent Dawn"] = {
@@ -28,17 +28,25 @@ HHTD_SavedVariables = {
 		["Durlok - Black Dragonflight"] = {
 			["settingsMigrated"] = false,
 		},
+		["Mulmok - Argent Dawn"] = {
+			["settingsMigrated"] = false,
+		},
 		["Cowtastraphy - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
 		["Fantastiburo - Zul'jin"] = {
 			["settingsMigrated"] = false,
 		},
-		["Mulmok - Argent Dawn"] = {
+		["Jingojaggot - Argent Dawn"] = {
 			["settingsMigrated"] = false,
 		},
-		["Shaekhan - Argent Dawn"] = {
-			["settingsMigrated"] = false,
+	},
+	["namespaces"] = {
+		["Announcer"] = {
+		},
+		["CM"] = {
+		},
+		["NPH"] = {
 		},
 	},
 	["global"] = {
@@ -52,20 +60,12 @@ HHTD_SavedVariables = {
 		["Brotus - Argent Dawn"] = "Brotus - Argent Dawn",
 		["Tyran - Argent Dawn"] = "Tyran - Argent Dawn",
 		["Tyrannithal - Argent Dawn"] = "Tyrannithal - Argent Dawn",
-		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
+		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
 		["Shanyt - Argent Dawn"] = "Shanyt - Argent Dawn",
 		["Durlok - Black Dragonflight"] = "Durlok - Black Dragonflight",
+		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
 		["Cowtastraphy - Argent Dawn"] = "Cowtastraphy - Argent Dawn",
 		["Fantastiburo - Zul'jin"] = "Fantastiburo - Zul'jin",
-		["Mulmok - Argent Dawn"] = "Mulmok - Argent Dawn",
-		["Shaekhan - Argent Dawn"] = "Shaekhan - Argent Dawn",
-	},
-	["namespaces"] = {
-		["Announcer"] = {
-		},
-		["CM"] = {
-		},
-		["NPH"] = {
-		},
+		["Jingojaggot - Argent Dawn"] = "Jingojaggot - Argent Dawn",
 	},
 }

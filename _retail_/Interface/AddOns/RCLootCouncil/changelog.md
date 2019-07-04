@@ -1,9 +1,5 @@
-### v2.12.1 (no-locale)
+### v2.12.1
 ---
-*Due to Curse's fuckups, this release will temporarily be without locales.*
-*A new version will be made available once they get their shit together.*
-
-
 ###### Bugfixes  
 * *Fixed library issue causing scrolling tables to unstick and break the UI in 8.2.*
 

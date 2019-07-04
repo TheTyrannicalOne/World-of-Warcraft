@@ -504,14 +504,25 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
             x = 3,
             y = 3,
             connections = {
+                2, 
+            },
+        },
+        {
+            type = "reputation",
+            id = 2391,
+            standing = 7,
+            x = 5,
+            y = 3.5,
+            connections = {
                 1, 
             },
         },
-        -- {
-        --     type = "quest",
-        --     id = 55103,
-        --     x = 3,
-        -- },
+        {
+            type = "quest",
+            id = 55103,
+            x = 3,
+            y = 4,
+        },
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CHAIN04, {
@@ -610,9 +621,9 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CH
     },
 })
 BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND_CHAIN05, {
-    name = { -- Shop Project
-        type = "quest",
-        id = 55608,
+    name = { -- Making a Mount
+        type = "achievement",
+        id = 13791,
     },
     questline = 925,
     category = BTWQUESTS_CATEGORY_BATTLE_FOR_AZEROTH_MECHAGON_ISLAND,
