@@ -522,6 +522,8 @@ AllTheThings.L = {
 		[-387] = "Interface\\Icons\\inv_staff_2h_felfireraid_d_03",					-- Relic
 		[-388] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",					-- Main Gate (Stratholme)
 		[-389] = "Interface\\Icons\\INV_MISC_KEY_13",								-- Service Entrance (Stratholme)
+		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",						-- Smuggling Run!
+		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",				-- Stoktron Brewery (alliance)
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",					-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",						-- Miscellaneous
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",					-- WoW Anniversary
@@ -1125,7 +1127,8 @@ AllTheThings.L = {
 		[-387] = GetItemSubClassInfo(3,11),										-- Relic
 		[-388] = "Main Gate",													-- Main Gate (Stratholme)
 		[-389] = "Service Entrance",											-- Service Entrance (Stratholme)
-		
+		[-390] = "Smuggler's Den",												-- Smuggler's Den (Spires of Arak)
+		[-391] = "Stoktron Brewery",											-- Stoktron Brewery (Spires of Arak)
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest
@@ -1256,7 +1259,7 @@ AllTheThings.L = {
 		[-659] = "Gladiator Gear",												-- Gladiator PvP Gear
 		[-660] = "Elite Gear",													-- Elite PvP Gear
 		
--- Warlods Pvp Seasons
+-- Warlords Pvp Seasons
 		[-661] = select(2, GetAchievementInfo(9232)),							-- Primal Gladiator: Warlords Season 1
 		[-662] = select(2, GetAchievementInfo(10096)),							-- Wild Gladiator: Warlords Season 2
 		[-663] = select(2, GetAchievementInfo(10097)),							-- Warmongering Gladiator: Warlords Season 3
@@ -1269,6 +1272,8 @@ AllTheThings.L = {
 -- Pet Battles
 		[-700] = "Celestial Tournament",										-- Celestial Tournament (Scenario)
 		
+-- Mechagon
+		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
@@ -2678,11 +2683,15 @@ AllTheThings.L = {
 		[232596] = "Ancestral Greataxe",
 		[232621] = "Strange Spore",
 		[232624] = "Mikkal's Chest",
+		[232986] = "Hidden Stash",
+		[232989] = "Basket of Arakkoa Goods",
 		[233101] = "Sunken Fishing Boat",
 		[233126] = "Shadowmoon Treasure",
+		[233134] = "Golden Kaliri Egg",
 		[233137] = "Burning Blade Cache",
 		[233139] = "Ancient Titan Chest",
 		[233149] = "Laughing Skull Cache",
+		[233157] = "Abu'gar's Vitality",
 		[233206] = "Abandoned Cargo",
 		[233218] = "Adventurer's Pack",
 		[233241] = "Glowing Cave Mushroom",
@@ -2694,6 +2703,7 @@ AllTheThings.L = {
 		[233501] = "Mysterious Petrified Pod",
 		[233504] = "Remains of Grimnir Ashpick",
 		[233505] = "Unknown Petrified Egg",
+		[233506] = "Abu'gar's Missing Reel",
 		[233507] = "Forgotten Ogre Cache",
 		[233511] = "Adventurer's Pack",
 		[233513] = "Forgotten Skull Cache",
@@ -2715,6 +2725,8 @@ AllTheThings.L = {
 		[233613] = "Telaar Defender Shield",
 		[233618] = "Ogre Beads",
 		[233623] = "Adventurer's Pouch",
+		[233626] = "Grizzlemaw's Bonepile",
+		[233642] = "Abu'Gar's Favorite Lure",
 		[233645] = "Warsong Helm",
 		[233650] = "Adventurer's Mace",
 		[233651] = "Lost Pendant",
@@ -2725,19 +2737,35 @@ AllTheThings.L = {
 		[233975] = "Rooby's Roo",
 		[234054] = "Warm Goren Egg",
 		[234147] = "Outcast's Belongings",
+		[234155] = "Relics of the Outcasts",
+		[234446] = "Relics of the Outcasts",
+		[234449] = "Relics of the Outcasts",
+		[234451] = "Relics of the Outcasts",
+		[234454] = "Relics of the Outcasts",
+		[234455] = "Relics of the Outcasts",
 		[234456] = "Shattered Hand Lockbox",
+		[234473] = "Campaign Contributions",
 		[234474] = "Saberon Stash",
 		[234618] = "Gift of Anzu",
+		[234703] = "Elixir of Shadow Sight",
+		[234704] = "Elixir of Shadow Sight",
+		[234705] = "Elixir of Shadow Sight",
+		[234734] = "Elixir of Shadow Sight",
+		[234735] = "Elixir of Shadow Sight",
+		[234736] = "Elixir of Shadow Sight",
 		[234740] = "Orchish Signaling Horn",
 		[235091] = "Lost Ring",
 		[235097] = "Ephial's Dark Grimoire",
+		[235104] = "Sun-Touched Cache",
+		[235105] = "Sun-Touched Cache",
 		[235127] = "Mysterious Petrified Pod",
 		[235129] = "Enriched Seeds",
+		[235135] = "Smuggled Apexis Artifacts",
 		[235143] = "Assassin's Spear",
 		[235168] = "Outcast's Pouch",
 		[235172] = "Outcast's Belongings",
 		[235289] = "Garrison Workman's Hammer",
-		[235307] = "Waterlogged Satchel",
+		[235307] = "Watertight Bag",
 		[235313] = "Abandoned Mining Pick",
 		[235859] = "Brokor's Sack",
 		[235860] = "Orc Skeleton",
@@ -2822,6 +2850,7 @@ AllTheThings.L = {
 		[241521] = "Snake Charmer's Flute",
 		[241522] = "The Perfect Blossom",
 		[241533] = "Forgotten Champion's Blade",
+		[241561] = "Jewel of the Fallen Star",
 		[241563] = "Censer of Torment",
 		[241565] = "Looted Bleeding Hollow Treasure",
 		[241566] = "Rune Etched Femur",
@@ -2844,6 +2873,7 @@ AllTheThings.L = {
 		[241841] = "Looted Mystical Staff",
 		[241847] = "The Commander's Shield",
 		[241848] = "Dazzling Rod",
+		[242649] = "Fel-Tainted Apexis Formation",
 		[243334] = "Withered Herb",
 		[243392] = "Alchemy Book",
 		[243911] = "Snow Mound",
@@ -3330,7 +3360,7 @@ AllTheThings.L = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}; -- 44
-		{1, "|CFFFF0000With 7.3.2 & 8.0 Blizzard's Loot changes made several Items unable to drop.  Currently affects Items from Gruul (BC), Angerforge (BRD) & Warpwood (DM West). |r", "Broken Loot (45)"}; -- 45
+		{1, "|CFFFF0000Blizzard's Legacy Loot changes broke several Items and made them Unobtainable.\nGruul (BC), Angerforge (BRD), Warpwood (DM West), Kara (Chess Event), and Halls of Stone (Tribunal of Ages)\nare all currently broken and need to be fixed.|r", "Broken Loot (45)"}; -- 45
 		{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
 	--	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};

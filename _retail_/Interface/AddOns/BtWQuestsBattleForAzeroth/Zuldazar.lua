@@ -3108,17 +3108,17 @@ BtWQuestsDatabase:AddChain(BTWQUESTS_CHAIN_BATTLE_FOR_AZEROTH_ZULDAZAR_CHAIN4, {
                 1, 
             },
         },
-        -- {
-        --     type = "quest",
-        --     id = 55503,
-        --     x = 3,
-        --     connections = {
-        --         1, 
-        --     },
-        -- },
         {
             type = "quest",
             id = 55504,
+            x = 3,
+            connections = {
+                1, 
+            },
+        },
+        {
+            type = "quest",
+            id = 55503,
             x = 3,
             connections = {
                 1, 

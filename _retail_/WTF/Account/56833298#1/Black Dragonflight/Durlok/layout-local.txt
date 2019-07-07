@@ -48,6 +48,13 @@ X: 0
 Y: 0
 W: 365
 H: 240
+Frame: AAP_AfkFrames
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -2
+Y: -202
+W: 120
+H: 40
 Frame: AllTheThings-Window-Prime
 FrameLevel: 1
 Anchor: CENTER
@@ -132,10 +139,3 @@ X: 1
 Y: 0
 W: 300
 H: 300
-Frame: AAP_AfkFrames
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -2
-Y: -202
-W: 120
-H: 40
