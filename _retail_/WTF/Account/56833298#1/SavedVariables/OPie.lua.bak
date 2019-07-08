@@ -67,10 +67,10 @@ OneRing_Config = {
 					["id"] = 75973,
 					["sliceToken"] = "ABuedW477KwC",
 				}, -- [10]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 			["Utility1"] = {
 				{

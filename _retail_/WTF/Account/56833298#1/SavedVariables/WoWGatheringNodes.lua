@@ -11,8 +11,8 @@ WoWGatheringNodesConfig = {
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
-		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
+		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Jingojaggot - Argent Dawn"] = "Default",
 	},
 	["profiles"] = {

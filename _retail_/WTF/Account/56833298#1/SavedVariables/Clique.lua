@@ -8,9 +8,9 @@ CliqueDB3 = {
 			["blacklist"] = {
 				["PetFrame"] = true,
 			},
-			["specswap"] = false,
-			["downclick"] = false,
 			["spec3_profileKey"] = "Shanyt - Argent Dawn",
+			["downclick"] = false,
+			["specswap"] = false,
 			["spec2_profileKey"] = "Shanyt - Argent Dawn",
 		},
 	},

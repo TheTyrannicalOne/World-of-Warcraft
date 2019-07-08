@@ -11,3 +11,4 @@ Hermes: enabled
 xCT+: enabled
 WeakAurasCompanion: enabled
 !KalielsTracker: disabled
+BigWigs_CommonAuras: enabled
