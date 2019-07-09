@@ -58,8 +58,8 @@ WhisperInviteCoreDB = {
 							},
 							["fullMatch"] = false,
 							["bnet_channels"] = {
-								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
 								["CHAT_MSG_BN_WHISPER"] = true,
+								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
 							},
 							["keyword"] = "inv",
 							["maxGroupSize"] = 25,
@@ -76,21 +76,21 @@ WhisperInviteCoreDB = {
 								["CHAT_MSG_WHISPER"] = true,
 								["CHAT_MSG_GUILD"] = false,
 							},
-							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
 							["bnet_channels"] = {
 								["CHAT_MSG_BN_CONVERSATION"] = false,
 								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
 								["CHAT_MSG_BN_WHISPER"] = true,
 							},
+							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
 							["keyword"] = "invite",
 							["maxGroupSize"] = 20,
 						},
 						["auto invite0"] = {
-							["name"] = "auto invite",
+							["keyword"] = "auto invite",
 							["bnet_channels"] = {
 								["CHAT_MSG_BN_WHISPER"] = true,
 							},
-							["keyword"] = "auto invite",
+							["name"] = "auto invite",
 							["channels"] = {
 								["CHAT_MSG_WHISPER"] = true,
 							},

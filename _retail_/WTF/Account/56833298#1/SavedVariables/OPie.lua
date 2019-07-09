@@ -48,8 +48,8 @@ OneRing_Config = {
 					["sliceToken"] = "OPCTA4",
 				}, -- [4]
 				{
-					["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
 					["sliceToken"] = "OPCTAc",
+					["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
 				}, -- [5]
 				{
 					"item", -- [1]
@@ -88,64 +88,64 @@ OneRing_Config = {
 			},
 			["Mounts"] = {
 				{
-					["sliceToken"] = "ABuede=1Sr19",
 					["id"] = 150544,
+					["sliceToken"] = "ABuede=1Sr19",
 				}, -- [1]
 				{
-					["sliceToken"] = "ABuede=1Sr1A",
 					["id"] = 64731,
+					["sliceToken"] = "ABuede=1Sr1A",
 				}, -- [2]
 				{
-					["sliceToken"] = "ABuede=1Sr1P",
 					["id"] = 118089,
+					["sliceToken"] = "ABuede=1Sr1P",
 				}, -- [3]
 				{
-					["sliceToken"] = "ABuede=1Sr1O",
 					["id"] = 223018,
+					["sliceToken"] = "ABuede=1Sr1O",
 				}, -- [4]
 				{
-					["sliceToken"] = "ABuede=1Sr1I",
 					["id"] = 98718,
+					["sliceToken"] = "ABuede=1Sr1I",
 				}, -- [5]
 				{
-					["sliceToken"] = "ABuede=1Sr18",
 					["id"] = 228919,
+					["sliceToken"] = "ABuede=1Sr18",
 				}, -- [6]
 				{
-					["sliceToken"] = "ABuede=1Sr1U",
 					["id"] = 122708,
+					["sliceToken"] = "ABuede=1Sr1U",
 				}, -- [7]
 				{
-					["sliceToken"] = "ABuede=1Sr1Y",
 					["id"] = 17481,
+					["sliceToken"] = "ABuede=1Sr1Y",
 				}, -- [8]
 				{
-					["sliceToken"] = "ABuede=1Sr1T",
 					["id"] = 272472,
+					["sliceToken"] = "ABuede=1Sr1T",
 				}, -- [9]
 				{
-					["sliceToken"] = "ABuede=1Sr1R",
 					["id"] = 139595,
+					["sliceToken"] = "ABuede=1Sr1R",
 				}, -- [10]
 				{
-					["sliceToken"] = "ABuede=1Sr17",
 					["id"] = 213115,
+					["sliceToken"] = "ABuede=1Sr17",
 				}, -- [11]
 				{
-					["sliceToken"] = "ABuede=1Sr1E",
 					["id"] = 72286,
+					["sliceToken"] = "ABuede=1Sr1E",
 				}, -- [12]
 				{
-					["sliceToken"] = "ABuede=1Sr1W",
 					["id"] = 229388,
+					["sliceToken"] = "ABuede=1Sr1W",
 				}, -- [13]
 				{
-					["sliceToken"] = "ABuede=1Sr1Q",
 					["id"] = 245725,
+					["sliceToken"] = "ABuede=1Sr1Q",
 				}, -- [14]
 				{
-					["sliceToken"] = "ABuede=1Sr1m",
 					["id"] = 75973,
+					["sliceToken"] = "ABuede=1Sr1m",
 				}, -- [15]
 				["limit"] = "Shanyt-ArgentDawn",
 				["save"] = true,
@@ -275,44 +275,44 @@ OneRing_Config = {
 			},
 			["Mounts3"] = {
 				{
-					["id"] = 150544,
 					["sliceToken"] = "ABuedW477Ker",
+					["id"] = 150544,
 				}, -- [1]
 				{
-					["id"] = 64731,
 					["sliceToken"] = "ABuedW477Kee",
+					["id"] = 64731,
 				}, -- [2]
 				{
-					["id"] = 118089,
 					["sliceToken"] = "ABuedW477Kew",
+					["id"] = 118089,
 				}, -- [3]
 				{
-					["id"] = 98718,
 					["sliceToken"] = "ABuedW477Keq",
+					["id"] = 98718,
 				}, -- [4]
 				{
-					["id"] = 228919,
 					["sliceToken"] = "ABuedW477KwM",
+					["id"] = 228919,
 				}, -- [5]
 				{
-					["id"] = 223018,
 					["sliceToken"] = "ABuedW477KwN",
+					["id"] = 223018,
 				}, -- [6]
 				{
-					["id"] = 272770,
 					["sliceToken"] = "ABuedW477KwB",
+					["id"] = 272770,
 				}, -- [7]
 				{
-					["id"] = 122708,
 					["sliceToken"] = "ABuedW477Kw/",
+					["id"] = 122708,
 				}, -- [8]
 				{
-					["id"] = 245725,
 					["sliceToken"] = "ABuedW477KwV",
+					["id"] = 245725,
 				}, -- [9]
 				{
-					["id"] = 75973,
 					["sliceToken"] = "ABuedW477KwC",
+					["id"] = 75973,
 				}, -- [10]
 				["limit"] = "Durlok-BlackDragonflight",
 				["save"] = true,

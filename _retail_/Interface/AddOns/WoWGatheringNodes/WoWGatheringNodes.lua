@@ -161,6 +161,7 @@ WoWGatheringNodes.CustomNodesList = {
 		["NodeID"] = 273900,
 		["IconID"] = 1125255,
 	},
+	--[[
 	[322413] = {
 		["Name"] = WoWGatheringNodes.NodeIdNames[322413], --"Glimmering Chest",
 		["Icon"] = "Interface\\AddOns\\GatherMate2\\Artwork\\Treasure\\treasure.tga",--.."Treasure\\footlocker.tga",
@@ -203,6 +204,7 @@ WoWGatheringNodes.CustomNodesList = {
 		["NodeID"] = 326598,
 		["IconID"] = 2563958,
 	},
+	]]--
 
 }
 
@@ -269,6 +271,9 @@ function WoWGatheringNodes:OnEnable()
 			WoWGatheringNodes:ImportGathermate()
 		--else
 		end
+
+		--renames node ids to match updated gathermate2 ids for 8.2 tracked nodes
+		if not WoWGatheringNodesConfig["8.2_Update"] then WoWGatheringNodes:DataUpdate_8_2() end
 	end
 
 	if IsAddOnLoaded("Carbonite") then
@@ -344,10 +349,11 @@ function WoWGatheringNodes:AddCustomGathermateNodes(reset)
 	end
 	if reset then 
 
-		WoWGatheringNodes:RoutesHook(false)
-	else
 		WoWGatheringNodes:RoutesHook(true)
+	else
+		WoWGatheringNodes:RoutesHook(false)
 	end
+
 end
 
 
@@ -416,6 +422,7 @@ local translate_db_type = {
 	["Archaeology"] = "Archaeology",
 	["Logging"] = "Logging",
 }
+local Routes_hook 
 
 local function Gathermate_AppendNodes(node_list, zone, db_type, node_type)
 	--return hook.hooks[Routes.plugins["GatherMate2"]]["AppendNodes"](node_list, zone, db_type, node_type)
@@ -434,7 +441,7 @@ local function Gathermate_AppendNodes(node_list, zone, db_type, node_type)
 
 end
 
-local Routes_hook 
+
 
 if IsAddOnLoaded("Routes") then 
 	Routes_hook = Routes.plugins["GatherMate2"]["AppendNodes"]
