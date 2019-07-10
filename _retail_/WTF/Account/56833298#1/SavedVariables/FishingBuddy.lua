@@ -9,7 +9,7 @@ FishingBuddy_Info = {
 		[590001] = 19,
 		[863003] = 1,
 		[590002] = 5,
-		[1165000] = 86,
+		[1165000] = 95,
 		[1165001] = 1,
 		[863005] = 1,
 		[862000] = 44,
@@ -21,7 +21,7 @@ FishingBuddy_Info = {
 		[863004] = 3,
 		[863002] = 2,
 		[863001] = 8,
-		[1165002] = 85,
+		[1165002] = 94,
 		[0] = 1,
 	},
 	["HiddenFishies"] = {
@@ -84,11 +84,13 @@ FishingBuddy_Info = {
 			[152549] = 2,
 		},
 		[1165002] = {
-			[162515] = 5,
+			[162515] = 6,
 			[160927] = 1,
-			[152543] = 38,
-			[152544] = 40,
 			[154770] = 1,
+			[152543] = 41,
+			[152544] = 43,
+			[154792] = 1,
+			[160934] = 1,
 		},
 		[863005] = {
 			[152547] = 1,
@@ -225,20 +227,15 @@ FishingBuddy_Info = {
 			["texture"] = 630618,
 			["quality"] = 2,
 		},
-		[152544] = {
-			["enUS"] = "Slimy Mackerel",
-			["quality"] = 1,
-			["texture"] = 2057316,
-		},
-		[111651] = {
-			["enUS"] = "Small Fat Sleeper",
-			["texture"] = 970821,
-			["quality"] = 1,
-		},
 		[111589] = {
 			["enUS"] = "Small Crescent Saberfish",
 			["texture"] = 970812,
 			["quality"] = 1,
+		},
+		[152544] = {
+			["enUS"] = "Slimy Mackerel",
+			["quality"] = 1,
+			["texture"] = 2057316,
 		},
 		[154779] = {
 			["color"] = "ff9d9d9d",
@@ -252,6 +249,23 @@ FishingBuddy_Info = {
 			["quality"] = 2,
 			["texture"] = 237302,
 		},
+		[111651] = {
+			["enUS"] = "Small Fat Sleeper",
+			["texture"] = 970821,
+			["quality"] = 1,
+		},
+		[154792] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Unraveling Cloth Cord",
+			["texture"] = 132511,
+			["quality"] = 0,
+		},
+		[160934] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Mud-Soaked Crossbow",
+			["texture"] = 135531,
+			["quality"] = 0,
+		},
 		[111672] = {
 			["enUS"] = "Enormous Sea Scorpion",
 			["texture"] = 970817,
@@ -262,16 +276,16 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 132852,
 		},
-		[111601] = {
-			["enUS"] = "Enormous Crescent Saberfish",
-			["texture"] = 970814,
-			["quality"] = 1,
-		},
 		[154770] = {
 			["color"] = "ff9d9d9d",
 			["enUS"] = "Cracked Hide Belt",
 			["texture"] = 132493,
 			["quality"] = 0,
+		},
+		[111601] = {
+			["enUS"] = "Enormous Crescent Saberfish",
+			["texture"] = 970814,
+			["quality"] = 1,
 		},
 	},
 	["KnownZones"] = {

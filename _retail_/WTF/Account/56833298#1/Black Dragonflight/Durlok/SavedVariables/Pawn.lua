@@ -1,9 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0244,
-	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 160911,
@@ -27,9 +24,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:159330::::::::116:104::18:4:5116:1452:4785:4775:::|h[Gore-Splattered Vest]|h|r",
 		}, -- [5]
 		{
-			["ID"] = 158668,
-			["Level"] = 241,
-			["Link"] = "|cff1eff00|Hitem:158668::::::::116:104:512:11:1:4790:114:::|h[Jambani Cord]|h|r",
+			["ID"] = 159325,
+			["Level"] = 252,
+			["Link"] = "|cff0070dd|Hitem:159325::::::::116:104:512:18:1:4776:116:::|h[Bloodfeaster Belt]|h|r",
 		}, -- [6]
 		{
 			["ID"] = 122255,
@@ -81,6 +78,9 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:140773::::::::116:104:::1:5805:::|h[Eagletalon Spear]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

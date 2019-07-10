@@ -2,7 +2,7 @@
 AzeritePowerWeightsDB = {
 	["customScales"] = {
 	},
-	["dbVersion"] = 2,
+	["dbVersion"] = 3,
 	["char"] = {
 		["Black Dragonflight"] = {
 			["Durlok"] = {
@@ -38,6 +38,7 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
+				["outlineScores"] = true,
 				["onlyOwnClassCustoms"] = false,
 				["showOnlyUpgrades"] = false,
 				["debug"] = false,

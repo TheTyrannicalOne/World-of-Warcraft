@@ -45,13 +45,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["tt1"] = true,
 				["ti1"] = 118530,
+				["tt1"] = true,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["tt3"] = true,
 				["ti3"] = 127855,
+				["tt3"] = true,
 			},
 			["faction"] = "Horde",
 		},
@@ -65,19 +65,17 @@ MasterPlanAG = {
 			["class"] = "PRIEST",
 		},
 	},
-	["IgnoreRewards"] = {
-	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1562630610,
 			["summary"] = {
 				["lastOilTime"] = 1562630514,
 				["ti2"] = 122486,
 				["inProgress"] = {
-					[541] = 1562644921,
-					[126] = 1562644905,
-					[177] = 1562633158,
 					[586] = 1562644917,
+					[126] = 1562644905,
+					[132] = 1562641256,
+					[541] = 1562644921,
 					[663] = 1562644893,
 					[695] = 1562644923,
 					[194] = 1562635861,
@@ -88,19 +86,19 @@ MasterPlanAG = {
 					[677] = 1562666466,
 					[212] = 1562637203,
 					[175] = 1562633163,
-					[132] = 1562641256,
+					[177] = 1562633158,
 				},
 				["ti3"] = 127854,
-				["tt1"] = 1561820157,
 				["ti1"] = 118531,
+				["tt1"] = 1561820157,
 				["tt3"] = 1561863089,
 				["tt2"] = 1561866090,
 			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1562630610,
-			["curRes"] = 8949,
 			["curOil"] = 75240,
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 8949,
+			["faction"] = "Horde",
 		},
 	},
 	["Tanaris"] = {
@@ -111,8 +109,8 @@ MasterPlanAG = {
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["faction"] = "Horde",
 			["class"] = "DRUID",
+			["faction"] = "Horde",
 		},
 	},
 	["Sargeras"] = {

@@ -1,9 +1,91 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0243,
+	["LastVersion"] = 2.0244,
 	["LastPlayerFullName"] = "Shanyt-Argent Dawn",
 	["AutoSelectScales"] = true,
 	["UpgradeTracking"] = false,
+	["ItemLevels"] = {
+		{
+			["ID"] = 166696,
+			["Level"] = 405,
+			["Link"] = "|cffa335ee|Hitem:166696::::::::120:71::3:5:5478:1517:4786:5417:4775:::|h[Petrified Ironbark Crown]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 158075,
+			["Level"] = 431,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:71::11:4:4936:4929:5814:1568:::|h[Heart of Azeroth]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 157900,
+			["Level"] = 390,
+			["Link"] = "|cffa335ee|Hitem:157900::::::::120:71::28:4:1577:4786:5415:4775:::|h[Bone-Fetished Shoulderplates]|h|r",
+		}, -- [3]
+		nil, -- [4]
+		{
+			["ID"] = 157958,
+			["Level"] = 405,
+			["Link"] = "|cffa335ee|Hitem:157958::::::::120:71::28:4:1592:4786:5416:4775:::|h[Dunecrawler Chestplate]|h|r",
+		}, -- [5]
+		{
+			["ID"] = 163461,
+			["Level"] = 395,
+			["Link"] = "|cffa335ee|Hitem:163461::::::::120:71::28:3:5125:1587:4786:::|h[Honorbound Centurion's Greatbelt]|h|r",
+		}, -- [6]
+		{
+			["ID"] = 163455,
+			["Level"] = 395,
+			["Link"] = "|cffa335ee|Hitem:163455::::::::120:71::28:4:5125:4802:1587:4784:::|h[Honorbound Centurion's Legplates]|h|r",
+		}, -- [7]
+		{
+			["ID"] = 163460,
+			["Level"] = 395,
+			["Link"] = "|cffa335ee|Hitem:163460::::::::120:71::28:3:5125:1587:4786:::|h[Honorbound Centurion's Greaves]|h|r",
+		}, -- [8]
+		{
+			["ID"] = 163307,
+			["Level"] = 395,
+			["Link"] = "|cffa335ee|Hitem:163307::::::::120:71::28:3:5125:1587:4786:::|h[Honorbound Centurion's Vambraces]|h|r",
+		}, -- [9]
+		{
+			["ID"] = 159413,
+			["Level"] = 405,
+			["Link"] = "|cffa335ee|Hitem:159413::::::::120:71::23:3:4779:1577:4784:::|h[Gauntlets of the Avian Sentinel]|h|r",
+		}, -- [10]
+		{
+			["ID"] = 165680,
+			["Level"] = 395,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cffa335ee|Hitem:165680::::::::120:71::28:3:4803:1587:4786:::|h[Igneous Winterskorn Loop]|h|r",
+		}, -- [11]
+		{
+			["ID"] = 159462,
+			["Level"] = 370,
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cff0070dd|Hitem:159462::::::::120:71::2:3:4778:1542:4782:::|h[Footbomb Championship Ring]|h|r",
+		}, -- [12]
+		{
+			["ID"] = 158154,
+			["Level"] = 370,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cffa335ee|Hitem:158154::::::::120:71::27:3:4803:1562:4786:::|h[Emblem of Zandalar]|h|r",
+		}, -- [13]
+		{
+			["ID"] = 158155,
+			["Level"] = 360,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff0070dd|Hitem:158155::::::::120:71::27:3:4803:1552:4785:::|h[Dinobone Charm]|h|r",
+		}, -- [14]
+		{
+			["ID"] = 166763,
+			["Level"] = 400,
+			["Link"] = "|cffa335ee|Hitem:166763::::::::120:71::6:3:5126:1517:4786:::|h[Deathstalker's Cloak]|h|r",
+		}, -- [15]
+		{
+			["ID"] = 158124,
+			["Level"] = 385,
+			["Link"] = "|cffa335ee|Hitem:158124::::::::120:71::28:3:4803:1577:4786:::|h[Dinobone Cracker]|h|r",
+		}, -- [16]
+	},
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

@@ -2,7 +2,7 @@
 AzeritePowerWeightsDB = {
 	["customScales"] = {
 	},
-	["dbVersion"] = 2,
+	["dbVersion"] = 3,
 	["char"] = {
 		["Black Dragonflight"] = {
 			["Durlok"] = {
@@ -39,9 +39,10 @@ AzeritePowerWeightsDB = {
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
 				["professionPowers"] = false,
-				["showOnlyUpgrades"] = false,
 				["debug"] = false,
+				["showOnlyUpgrades"] = false,
 				["onlyOwnClassCustoms"] = false,
+				["outlineScores"] = true,
 			},
 		},
 		["Argent Dawn"] = {
@@ -74,6 +75,7 @@ AzeritePowerWeightsDB = {
 				["defensivePowers"] = true,
 				["scaleByAzeriteEmpowered"] = false,
 				["onlyOwnClassDefaults"] = true,
+				["outlineScores"] = true,
 				["professionPowers"] = false,
 				["showOnlyUpgrades"] = false,
 				["debug"] = false,

@@ -146,3 +146,10 @@ X: 0
 Y: 0
 W: 300
 H: 300
+Frame: FishingWatchFrame
+FrameLevel: 1
+Anchor: TOP
+X: -570
+Y: 0
+W: 159
+H: 71

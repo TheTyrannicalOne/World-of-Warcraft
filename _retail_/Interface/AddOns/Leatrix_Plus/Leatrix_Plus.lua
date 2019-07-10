@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.01 (3rd July 2019, www.leatrix.com)
+-- 	Leatrix Plus 8.2.02 (10th July 2019, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.01"
+	LeaPlusLC["AddonVer"] = "8.2.02"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -390,6 +390,7 @@
 		LeaPlusLC:LockOption("FrmEnabled", "MoveFramesButton", true)			-- Manage frames
 		LeaPlusLC:LockOption("ShowPlayerChain", "ModPlayerChain", true)			-- Show player chain
 		LeaPlusLC:LockOption("ViewPortEnable", "ModViewportBtn", true)			-- Enable viewport
+		LeaPlusLC:LockOption("MuteGameSounds", "MuteGameSoundsBtn", false)		-- Mute game sounds
 	end
 
 ----------------------------------------------------------------------
@@ -597,6 +598,108 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Isolated()
+
+		----------------------------------------------------------------------
+		-- Mute game sounds (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			-- Create soundtable
+			local muteTable = {
+
+				["MuteFizzle"] = {			"sound/spells/fizzle/fizzlefirea.ogg#569773", "sound/spells/fizzle/FizzleFrostA.ogg#569775", "sound/spells/fizzle/FizzleHolyA.ogg#569772", "sound/spells/fizzle/FizzleNatureA.ogg#569774", "sound/spells/fizzle/FizzleShadowA.ogg#569776",},
+				["MuteInterface"] = {		"sound/interface/iUiInterfaceButtonA.ogg#567481", "sound/interface/uChatScrollButton.ogg#567407", "sound/interface/uEscapeScreenClose.ogg#567464", "sound/interface/uEscapeScreenOpen.ogg#567490",},
+				["MuteSniffing"] = {		"sound/creature/worgenfemale/worgenfemale_emotesniff_01.ogg#564422", "sound/creature/worgenfemale/worgenfemale_emotesniff_02.ogg#564378", "sound/creature/worgenfemale/worgenfemale_emotesniff_03.ogg#564383", "sound/creature/worgenfemale/worgenmale_emotesniff_01.ogg#564560", "sound/creature/worgenfemale/worgenmale_emotesniff_02.ogg#564544", "sound/creature/worgenfemale/worgenmale_emotesniff_03.ogg#564536",},
+
+			}
+
+			-- Give table file level scope (its used during logout and for wipe and admin commands)
+			LeaPlusLC["muteTable"] = muteTable
+
+			-- Load saved settings or set default values
+			for k, v in pairs(muteTable) do
+				if LeaPlusDB[k] and type(LeaPlusDB[k]) == "string" and LeaPlusDB[k] == "On" or LeaPlusDB[k] == "Off" then
+					LeaPlusLC[k] = LeaPlusDB[k]
+				else
+					LeaPlusLC[k] = "Off"
+					LeaPlusDB[k] = "Off"
+				end
+			end
+
+			-- Create configuration panel
+			local SoundPanel = LeaPlusLC:CreatePanel("Mute Game Sounds", "SoundPanel")
+
+			-- Add checkboxes
+			LeaPlusLC:MakeTx(SoundPanel, "Settings", 16, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteFizzle", "Fizzle", 16, -92, false, "If checked, the spell fizzle sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteInterface", "Interface", 16, -112, false, "If checked, the interface button sound, the chat frame tab click sound and the game menu toggle sound will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteSniffing", "Sniffing", 16, -132, false, "If checked, the worgen sniffing sounds will be muted.")
+
+			-- Function to mute and unmute sounds
+			local function SetupMute()
+				for k, v in pairs(muteTable) do
+					if LeaPlusLC["MuteGameSounds"] == "On" and LeaPlusLC[k] == "On" then
+						for i, e in pairs(v) do
+							local file, soundID = e:match("([^,]+)%#([^,]+)")
+							MuteSoundFile(soundID)
+						end
+					else
+						for i, e in pairs(v) do
+							local file, soundID = e:match("([^,]+)%#([^,]+)")
+							UnmuteSoundFile(soundID)
+						end
+					end
+				end
+			end
+
+			-- Setup mute on startup if option is enabled
+			if LeaPlusLC["MuteGameSounds"] == "On" then SetupMute() end
+
+			-- Setup mute when options are clicked
+			for k, v in pairs(muteTable) do
+				LeaPlusCB[k]:HookScript("OnClick", SetupMute)
+			end
+			LeaPlusCB["MuteGameSounds"]:HookScript("OnClick", SetupMute)
+
+			-- Help button hidden
+			SoundPanel.h:Hide()
+
+			-- Back button handler
+			SoundPanel.b:SetScript("OnClick", function() 
+				SoundPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page7"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			SoundPanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				for k, v in pairs(muteTable) do
+					LeaPlusLC[k] = "Off"
+				end
+				SetupMute()
+
+				-- Refresh panel
+				SoundPanel:Hide(); SoundPanel:Show()
+
+			end)
+
+			-- Show panal when options panel button is clicked
+			LeaPlusCB["MuteGameSoundsBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					for k, v in pairs(muteTable) do
+						LeaPlusLC[k] = "On"
+					end
+					SetupMute()
+				else
+					SoundPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+		end
 
 		----------------------------------------------------------------------
 		-- Save profession filters
@@ -2686,12 +2789,12 @@
 
 				if where == "tip" then
 					-- Creare layout
+					GameTooltip:AddLine("|cffffffff")
+					GameTooltip:AddLine("|cffffffff")
+					GameTooltip:AddLine("|cffffffff")
 					_G["GameTooltipTextLeft1"]:SetText("|cffffffff"); _G["GameTooltipTextRight1"]:SetText("|cffffffff")
 					_G["GameTooltipTextLeft2"]:SetText("|cffffffff"); _G["GameTooltipTextRight2"]:SetText("|cffffffff")
 					_G["GameTooltipTextLeft3"]:SetText("|cffffffff"); _G["GameTooltipTextRight3"]:SetText("|cffffffff")
-					GameTooltip:AddLine("|cffffffff")
-					GameTooltip:AddLine("|cffffffff")
-					GameTooltip:AddLine("|cffffffff")
 				end
 
 				local validItems = false
@@ -3502,8 +3605,26 @@
 			local buffSetPos = BuffFrame.SetPoint
 			local powerBarAltSetPos = PlayerPowerBarAlt.SetPoint
 
+			-- Create and manage container for UIWidgetTopCenterContainerFrame
+			local topCenterHolder = CreateFrame("Frame", "LeaPlusTopCenterContainerHolder", UIParent)
+			topCenterHolder:SetPoint("TOP", UIParent, "TOP", 0, -30)
+			topCenterHolder:SetSize(10, 58)
+
+			local topCenterContainer = _G.UIWidgetTopCenterContainerFrame
+			topCenterContainer:ClearAllPoints()
+			topCenterContainer:SetPoint('CENTER', topCenterHolder)
+
+			hooksecurefunc(topCenterContainer, 'SetPoint', function(self, void, b)
+				local holder = _G.LeaPlusTopCenterContainerHolder
+				if b and (b ~= holder) then
+					self:ClearAllPoints()
+					self:SetPoint('CENTER', holder)
+					self:SetParent(holder)
+				end
+			end)
+
 			-- Create frame table (used for local traversal)
-			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragGhostFrame = GhostFrame, DragMirrorTimer1 = MirrorTimer1, DragUIWidgetTopCenterContainerFrame = UIWidgetTopCenterContainerFrame, DragBuffFrame = BuffFrame, DragPlayerPowerBarAlt = PlayerPowerBarAlt}
+			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragGhostFrame = GhostFrame, DragMirrorTimer1 = MirrorTimer1, DragLeaPlusTopCenterContainerHolder = LeaPlusTopCenterContainerHolder, DragBuffFrame = BuffFrame, DragPlayerPowerBarAlt = PlayerPowerBarAlt}
 
 			-- Create main table structure in saved variables if it doesn't exist
 			if (LeaPlusDB["Frames"]) == nil then
@@ -3512,14 +3633,14 @@
 
 			-- Create frame based table structure in saved variables if it doesn't exist and set initial scales
 			for k,v in pairs(FrameTable) do
-				local vf = v:GetName();
+				local vf = v:GetName()
 				-- Create frame table structure if it doesn't exist
 				if not LeaPlusDB["Frames"][vf] then
 					LeaPlusDB["Frames"][vf] = {}
 				end
 				-- Set saved scale value to default if it doesn't exist
 				if not LeaPlusDB["Frames"][vf]["Scale"] then
-					LeaPlusDB["Frames"][vf]["Scale"] = 1.00;
+					LeaPlusDB["Frames"][vf]["Scale"] = 1.00
 				end
 				-- Set frame scale to saved value
 				_G[vf]:SetScale(LeaPlusDB["Frames"][vf]["Scale"])
@@ -3527,17 +3648,18 @@
 
 			-- Set cached status
 			local function LeaPlusFramesSaveCache(frame)
+				_G[frame]:SetMovable(true)
 				if frame == "PlayerFrame" or frame == "TargetFrame" then
-					_G[frame]:SetUserPlaced(true);
+					_G[frame]:SetUserPlaced(true)
 				else
-					_G[frame]:SetUserPlaced(false);
+					_G[frame]:SetUserPlaced(false)
 				end
 			end
 
 			-- Set frames to manual values
 			local function LeaFramesSetPos(frame, point, parent, relative, xoff, yoff)
-				frame:SetMovable(true);
-				frame:ClearAllPoints();
+				frame:SetMovable(true)
+				frame:ClearAllPoints()
 				if frame:GetName() == "BuffFrame" then
 					buffSetPos(BuffFrame, point, parent, relative, xoff, yoff)
 				elseif frame:GetName() == "PlayerPowerBarAlt" then
@@ -3553,7 +3675,7 @@
 				LeaFramesSetPos(TargetFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	, 250, -4)
 				LeaFramesSetPos(GhostFrame						, "TOP"		, UIParent, "TOP"		, -5, -29)
 				LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		, -5, -96)
-				LeaFramesSetPos(UIWidgetTopCenterContainerFrame	, "TOP"		, UIParent, "TOP"		, 0, -15)
+				LeaFramesSetPos(LeaPlusTopCenterContainerHolder	, "TOP"		, UIParent, "TOP"		, 0, -15)
 				LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	, -205, -13)
 				LeaFramesSetPos(PlayerPowerBarAlt				, "BOTTOM"	, UIParent, "BOTTOM"	, 0, 115)
 			end
@@ -3575,16 +3697,20 @@
 			LeaPlusCB["FrameScale"]:HookScript("OnValueChanged", function(self, value)
 				if currentframe then -- If a frame is selected
 					-- Set real and drag frame scale
-					LeaPlusDB["Frames"][currentframe]["Scale"] = value;
-					_G[currentframe]:SetScale(LeaPlusDB["Frames"][currentframe]["Scale"]);
-					LeaPlusLC["Drag" .. currentframe]:SetScale(LeaPlusDB["Frames"][currentframe]["Scale"]);
+					LeaPlusDB["Frames"][currentframe]["Scale"] = value
+					_G[currentframe]:SetScale(LeaPlusDB["Frames"][currentframe]["Scale"])
+					LeaPlusLC["Drag" .. currentframe]:SetScale(LeaPlusDB["Frames"][currentframe]["Scale"])
 					-- If target frame scale is changed, also change combo point frame
 					if currentframe == "TargetFrame" then
-						ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"]);
+						ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
 					end
 					-- If buff frame scale is changed, also change temporary enchant frame
 					if currentframe == "BuffFrame" then
-						TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"]);
+						TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
+					end
+					-- If widget top holder scale is changed, also change real widget top center frame
+					if currentframe == "LeaPlusTopCenterContainerHolder" then
+						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
 					end
 					-- Set slider formatted text
 					LeaPlusCB["FrameScale"].f:SetFormattedText("%.0f%%", LeaPlusLC["FrameScale"] * 100)
@@ -3610,14 +3736,14 @@
 			-- Back button handler
 			SideFrames.b:SetScript("OnClick", function()
 				-- Hide outer control frame
-				SideFrames:Hide();
+				SideFrames:Hide()
 				-- Hide drag frames
 				for k, void in pairs(FrameTable) do
-					LeaPlusLC[k]:Hide();
+					LeaPlusLC[k]:Hide()
 				end
 				-- Show options panel at frame section
-				LeaPlusLC["PageF"]:Show();
-				LeaPlusLC["Page6"]:Show();
+				LeaPlusLC["PageF"]:Show()
+				LeaPlusLC["Page6"]:Show()
 			end) 
 
 			-- Reset button handler
@@ -3627,49 +3753,54 @@
 					return
 				else
 					-- Set frames to default positions (presets)
-					LeaPlusFramesDefaults();
+					LeaPlusFramesDefaults()
 					for k,v in pairs(FrameTable) do
 						local vf = v:GetName()
 						-- Store frame locations
-						LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = _G[vf]:GetPoint();
+						LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = _G[vf]:GetPoint()
 						-- Reset real frame scales and save them
-						LeaPlusDB["Frames"][vf]["Scale"] = 1.00;
-						_G[vf]:SetScale(LeaPlusDB["Frames"][vf]["Scale"]);
+						LeaPlusDB["Frames"][vf]["Scale"] = 1.00
+						_G[vf]:SetScale(LeaPlusDB["Frames"][vf]["Scale"])
 						-- Reset drag frame scales
-						LeaPlusLC[k]:SetScale(LeaPlusDB["Frames"][vf]["Scale"]);
+						LeaPlusLC[k]:SetScale(LeaPlusDB["Frames"][vf]["Scale"])
 					end
 					-- Set combo frame scale to match target frame scale
-					ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"]);
+					ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
 					-- Set temporary enchant frame scale to match buff frame scale
-					TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"]);
+					TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
+					-- Set real widget top center frame scale to match holder frame
+					UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+					LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
 					-- Set the scale slider value to the selected frame scale
-					LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"]);
+					LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"])
 					-- Refresh the panel
-					SideFrames:Hide();SideFrames:Show();
+					SideFrames:Hide(); SideFrames:Show()
 				end
 			end)
 
 			-- Show drag frames with configuration panel
 			SideFrames:HookScript("OnShow", function()
 				for k, void in pairs(FrameTable) do
-					LeaPlusLC[k]:Show();
+					LeaPlusLC[k]:Show()
 				end
 			end)
 			SideFrames:HookScript("OnHide", function()
 				for k, void in pairs(FrameTable) do
-					LeaPlusLC[k]:Hide();
+					LeaPlusLC[k]:Hide()
 				end
 			end)
 
 			-- Save frame positions
 			local function SaveAllFrames()
 				for k, v in pairs(FrameTable) do
-					local vf = v:GetName();
+					local vf = v:GetName()
 					-- Stop real frames from moving
-					v:StopMovingOrSizing();
+					v:StopMovingOrSizing()
 					-- Save frame positions
-					LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = v:GetPoint();
-					-- v:SetPoint(LeaPlusDB["Frames"][vf]["Point"], UIParent, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"])
+					LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = v:GetPoint()
+					v:SetMovable(true)
+					v:ClearAllPoints()
+					v:SetPoint(LeaPlusDB["Frames"][vf]["Point"], UIParent, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"])
 					LeaPlusFramesSaveCache(vf)
 				end
 			end
@@ -3678,19 +3809,19 @@
 			SideFrames:RegisterEvent("PLAYER_REGEN_DISABLED")
 			SideFrames:SetScript("OnEvent", function()
 				-- Hide controls frame
-				SideFrames:Hide();
+				SideFrames:Hide()
 				-- Hide drag frames
 				for k,void in pairs(FrameTable) do
-					LeaPlusLC[k]:Hide();
+					LeaPlusLC[k]:Hide()
 				end
 				-- Save frame positions
-				SaveAllFrames();
+				SaveAllFrames()
 			end)
 
 			-- Create drag frames
 			local function LeaPlusMakeDrag(dragframe,realframe)
 
-				local dragframe = CreateFrame("Frame", nil);
+				local dragframe = CreateFrame("Frame", nil)
 				LeaPlusLC[dragframe] = dragframe
 				dragframe:SetSize(realframe:GetSize())
 				if realframe:GetName() == "BuffFrame" then
@@ -3700,12 +3831,13 @@
 				else
 					dragframe:SetPoint("TOP", realframe, "TOP", 0, 2.5)
 				end
-				dragframe:SetBackdropColor(0.0, 0.5, 1.0);
+				dragframe:SetBackdropColor(0.0, 0.5, 1.0)
 				dragframe:SetBackdrop({ 
 					edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
 					tile = false, tileSize = 0, edgeSize = 16,
-					insets = { left = 0, right = 0, top = 0, bottom = 0 }});
+					insets = { left = 0, right = 0, top = 0, bottom = 0 }})
 				dragframe:SetToplevel(true)
+				dragframe:SetFrameStrata("HIGH")
 
 				-- Set frame clamps
 				if realframe:GetName() == "BuffFrame" or realframe:GetName() == "PlayerPowerBarAlt" then
@@ -3716,13 +3848,14 @@
 
 				-- Hide the drag frame and make real frame movable
 				dragframe:Hide()
-				realframe:SetMovable(true);
+				realframe:SetMovable(true)
 
 				-- Click handler
 				dragframe:SetScript("OnMouseDown", function(self, btn)
 
 					-- Start dragging if left clicked
 					if btn == "LeftButton" then
+						realframe:SetMovable(true)
 						realframe:StartMoving()
 					end
 
@@ -3734,7 +3867,7 @@
 
 					-- Set currentframe variable to selected frame and set the scale slider value
 					currentframe = realframe:GetName();
-					LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"]);
+					LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"])
 
 				end)
 
@@ -3756,7 +3889,7 @@
 				if realframe:GetName() == "TargetFrame" 					then dragframe.f:SetText(L["Target"]) end
 				if realframe:GetName() == "MirrorTimer1" 					then dragframe.f:SetText(L["Timer"]) end
 				if realframe:GetName() == "GhostFrame" 						then dragframe.f:SetText(L["Ghost"]) end
-				if realframe:GetName() == "UIWidgetTopCenterContainerFrame" then dragframe.f:SetText(L["Widget"] .. "|n" .. L["Top Center"]) end
+				if realframe:GetName() == "LeaPlusTopCenterContainerHolder" then dragframe.f:SetText(L["Widget"] .. "|n" .. L["Top Center"]) end
 				if realframe:GetName() == "BuffFrame" 						then dragframe.f:SetText(L["Buffs"]) end
 				if realframe:GetName() == "PlayerPowerBarAlt" 				then dragframe.f:SetText(L["Power"]) end
 				return LeaPlusLC[dragframe]
@@ -3769,22 +3902,25 @@
 
 			-- Set frame scales
 			for k,v in pairs(FrameTable) do
-				local vf = v:GetName();
-				_G[vf]:SetScale(LeaPlusDB["Frames"][vf]["Scale"]);
-				LeaPlusLC[k]:SetScale(LeaPlusDB["Frames"][vf]["Scale"]);
+				local vf = v:GetName()
+				_G[vf]:SetScale(LeaPlusDB["Frames"][vf]["Scale"])
+				LeaPlusLC[k]:SetScale(LeaPlusDB["Frames"][vf]["Scale"])
 			end
 			ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"]);
-			TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"]);
+			TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
+			UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+			LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
 
 			-- Load defaults first then overwrite with saved values if they exist
-			LeaPlusFramesDefaults();
+			LeaPlusFramesDefaults()
 			if LeaPlusDB["Frames"] then
 				for k,v in pairs(FrameTable) do
 					local vf = v:GetName()
 					if LeaPlusDB["Frames"][vf] then
 						if LeaPlusDB["Frames"][vf]["Point"] and LeaPlusDB["Frames"][vf]["Relative"] and LeaPlusDB["Frames"][vf]["XOffset"] and LeaPlusDB["Frames"][vf]["YOffset"] then
 							LeaPlusFramesSaveCache(vf)
-							_G[vf]:ClearAllPoints();
+							_G[vf]:SetMovable(true)
+							_G[vf]:ClearAllPoints()
 							_G[vf]:SetPoint(LeaPlusDB["Frames"][vf]["Point"], UIParent, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"])
 						end
 					end
@@ -3794,6 +3930,7 @@
 			-- Prevent changes to buff frame position
 			hooksecurefunc(BuffFrame, "SetPoint", function()
 				if LeaPlusDB["Frames"]["BuffFrame"]["Point"] and LeaPlusDB["Frames"]["BuffFrame"]["Relative"] and LeaPlusDB["Frames"]["BuffFrame"]["XOffset"] and LeaPlusDB["Frames"]["BuffFrame"]["YOffset"] then
+					BuffFrame:SetMovable(true)
 					BuffFrame:ClearAllPoints()
 					buffSetPos(BuffFrame, LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
 				end
@@ -3802,6 +3939,7 @@
 			-- Prevent changes to player power bar alt frame position
 			hooksecurefunc(PlayerPowerBarAlt, "SetPoint", function()
 				if LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Point"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Relative"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["XOffset"] and LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["YOffset"] then
+					PlayerPowerBarAlt:SetMovable(true)
 					PlayerPowerBarAlt:ClearAllPoints()
 					powerBarAltSetPos(PlayerPowerBarAlt, LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Point"], UIParent, LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Relative"], LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["XOffset"], LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["YOffset"])
 				end
@@ -3818,33 +3956,42 @@
 						LeaFramesSetPos(TargetFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	,	"190"	, "-14")
 						LeaFramesSetPos(GhostFrame						, "CENTER"	, UIParent, "CENTER"	,	"3"		, "-142")
 						LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		,	"0"		, "-120")
-						LeaFramesSetPos(UIWidgetTopCenterContainerFrame	, "TOP"		, UIParent, "TOP"		,	"0"		, "-542")
+						LeaFramesSetPos(LeaPlusTopCenterContainerHolder	, "TOP"		, UIParent, "TOP"		,	"0"		, "-432")
 						LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	,	"-271"	, "0")
 						LeaFramesSetPos(PlayerPowerBarAlt				, "CENTER"	, UIParent, "CENTER"	,	"0"		, "-160")
+						-- Player
 						LeaPlusDB["Frames"]["PlayerFrame"]["Scale"] = 1.20;
-						PlayerFrame:SetScale(LeaPlusDB["Frames"]["PlayerFrame"]["Scale"]);
-						LeaPlusLC["DragPlayerFrame"]:SetScale(LeaPlusDB["Frames"]["PlayerFrame"]["Scale"]);
+						PlayerFrame:SetScale(LeaPlusDB["Frames"]["PlayerFrame"]["Scale"])
+						LeaPlusLC["DragPlayerFrame"]:SetScale(LeaPlusDB["Frames"]["PlayerFrame"]["Scale"])
+						-- Target
 						LeaPlusDB["Frames"]["TargetFrame"]["Scale"] = 1.20;
-						TargetFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"]);
-						LeaPlusLC["DragTargetFrame"]:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"]);
+						TargetFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
+						LeaPlusLC["DragTargetFrame"]:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
+						-- LeaPlusTopCenterContainerHolder
+						LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"] = 1.25
+						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+						LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+						LeaPlusLC["DragLeaPlusTopCenterContainerHolder"]:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
+						-- Buff
 						LeaPlusDB["Frames"]["BuffFrame"]["Scale"] = 0.80
 						BuffFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
-						LeaPlusLC["DragBuffFrame"]:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"]);
+						LeaPlusLC["DragBuffFrame"]:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
+						-- PlayerPowerBarAlt
 						LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"] = 1.25
 						PlayerPowerBarAlt:SetScale(LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"])
-						LeaPlusLC["DragPlayerPowerBarAlt"]:SetScale(LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"]);
+						LeaPlusLC["DragPlayerPowerBarAlt"]:SetScale(LeaPlusDB["Frames"]["PlayerPowerBarAlt"]["Scale"])
 						-- Set the slider to the selected frame (if there is one)
 						if currentframe then LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"]); end
 						-- Save locations
 						for k,v in pairs(FrameTable) do
-							local vf = v:GetName();
-							LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = _G[vf]:GetPoint();
-							LeaPlusFramesSaveCache(vf);
+							local vf = v:GetName()
+							LeaPlusDB["Frames"][vf]["Point"], void, LeaPlusDB["Frames"][vf]["Relative"], LeaPlusDB["Frames"][vf]["XOffset"], LeaPlusDB["Frames"][vf]["YOffset"] = _G[vf]:GetPoint()
+							LeaPlusFramesSaveCache(vf)
 						end
 					else
 						-- Show mover frame
-						SideFrames:Show();
-						LeaPlusLC:HideFrames();
+						SideFrames:Show()
+						LeaPlusLC:HideFrames()
 
 						-- Find out if the UI has a non-standard scale
 						if GetCVar("useuiscale") == "1" then
@@ -3860,11 +4007,11 @@
 						end
 
 						-- Set specific scaled sizes for stubborn frames
-						LeaPlusLC["DragMirrorTimer1"]:SetSize(206 * LeaPlusLC["gscale"], 50 * LeaPlusLC["gscale"]);
-						LeaPlusLC["DragGhostFrame"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"]);
-						LeaPlusLC["DragUIWidgetTopCenterContainerFrame"]:SetSize(160 * LeaPlusLC["gscale"], 79 * LeaPlusLC["gscale"]);
-						LeaPlusLC["DragBuffFrame"]:SetSize(280 * LeaPlusLC["gscale"], 225 * LeaPlusLC["gscale"]);
-						LeaPlusLC["DragPlayerPowerBarAlt"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"]);
+						LeaPlusLC["DragMirrorTimer1"]:SetSize(206 * LeaPlusLC["gscale"], 50 * LeaPlusLC["gscale"])
+						LeaPlusLC["DragGhostFrame"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"])
+						LeaPlusLC["DragLeaPlusTopCenterContainerHolder"]:SetSize(160 * LeaPlusLC["gscale"], 79 * LeaPlusLC["gscale"])
+						LeaPlusLC["DragBuffFrame"]:SetSize(280 * LeaPlusLC["gscale"], 225 * LeaPlusLC["gscale"])
+						LeaPlusLC["DragPlayerPowerBarAlt"]:SetSize(130 * LeaPlusLC["gscale"], 46 * LeaPlusLC["gscale"])
 					end
 				end
 			end)
@@ -6057,7 +6204,7 @@
 			Zn(L["Movies"], L["Movies"], L["Mists of Pandaria"]							, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Mists of Pandaria"], prefol, L["Mists of Pandaria"] .. " |r(115)", L["Risking It All"] .. " |r(117)", L["Leaving the Wandering Isle"] .. " |r(116)", L["Jade Forest Crash"] .. " |r(121)", L["The King's Command"] .. " |r(119)", L["The Art of War"] .. " |r(120)", L["Battle of Serpent's Heart"] .. " |r(118)", L["The Fleet in Krasarang (Horde)"] .. " |r(128)", L["The Fleet in Krasarang (Alliance)"] .. " |r(127)", L["Hellscream's Downfall (Horde)"] .. " |r(151)", L["Hellscream's Downfall (Alliance)"] .. " |r(152)"})
 			Zn(L["Movies"], L["Movies"], L["Warlords of Draenor"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Warlords of Draenor"], prefol, L["Warlords of Draenor"] .. " |r(195)", L["Darkness Falls"] .. " |r(167)", L["The Battle of Thunder Pass"] .. " |r(168)", L["And Justice for Thrall"] .. " |r(177)", L["Into the Portal"] .. " |r(185)", L["A Taste of Iron"] .. " |r(187)", L["The Battle for Shattrath"] .. " |r(188)", L["Establish Your Garrison (Horde)"] .. " |r(189)", L["Establish Your Garrison (Alliance)"] .. " |r(192)", L["Bigger is Better (Horde)"] .. " |r(190)", L["Bigger is Better (Alliance)"] .. " |r(193)", L["My Very Own Castle (Horde)"] .. " |r(191)", L["My Very Own Castle (Alliance)"] .. " |r(194)", L["Gul'dan Ascendant"] .. " |r(270)", L["Shipyard Construction (Horde)"] .. " |r(292)", L["Shipyard Construction (Alliance)"] .. " |r(293)", L["Gul'dan's Plan"] .. "  |r(294)", L["Victory in Draenor!"] .. "  |r(295)"})
 			Zn(L["Movies"], L["Movies"], L["Legion"]									, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Legion"], prefol, L["Legion"] .. " |r(470)", L["The Invasion Begins"] .. " |r(469)", L["Return to the Black Temple"] .. " |r(471)", L["The Demon's Trail"] .. " |r(473)", L["The Fate of Val'sharah"] .. " |r(472)", L["Fate of the Horde"] .. " |r(474)", L["A New Life for Undeath"] .. " |r(475)", L["Harbingers Gul'dan"] .. " |r(476)", L["Harbingers Khadgar"] .. " |r(477)", L["Harbingers Illidan"] .. " |r(478)", L["The Nightborne Pact"] .. " |r(485)", L["Stormheim (Alliance)"] .. " |r(483)", L["Stormheim (Horde)"] .. " |r(484)", L["Tomb of Sargeras"] .. " |r(486)", L["The Battle for Broken Shore"] .. " |r(487)", L["A Falling Star"] .. " |r(489)", L["Destiny Unfulfilled"] .. " |r(490)", L["The Nighthold"] .. " |r(549)", L["Victory at The Nighthold"] .. " |r(635)", L["A Found Memento"] .. " |r(636)", L["Assault on the Broken Shore"] .. " |r(637)", L["Kil'jaeden's Downfall"] .. " |r(656)", L["Arrival on Argus"] .. " |r(677)", L["Rejection of the Gift"] .. " |r(679)", L["Reincarnation of Alleria Windrunner"] .. " |r(682)", L["Rise of Argus"] .. " |r(687)", L["Antorus Ending"] .. " |r(689)", L["Epilogue (Horde)"] .. " |r(717)", L["Epilogue (Alliance)"] .. " |r(716)"})
-			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Warbringers Jaina"] .. " |r(861)", L["The Return of Hope"] .. " |r(864)", L["Realm Of Torment"] .. " |r(865)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)", L["Warbringers Azshara"] .. " |r(884)", L["Welcome to Nazjata"] .. " |r(894)",})
+			Zn(L["Movies"], L["Movies"], L["Battle for Azeroth"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Battle for Azeroth"], prefol, L["Battle for Azeroth"] .. " |r(852)", L["Warbringers Sylvanas"] .. " |r(853)", L["The Fall of Lordaeron"] .. " |r(855)", L["Jaina Joins the Battle"] .. " |r(856)", L["Embers of War"] .. " |r(854)", L["Arrival to Zandalar"] .. " |r(857)", L["Vision of Sailor's Memory"] .. " |r(858)", L["Jaina Returns to Kul Tiras"] .. " |r(859)", L["Jaina's Nightmare"] .. " |r(860)", L["Warbringers Jaina"] .. " |r(861)", L["The Return of Hope"] .. " |r(864)", L["Realm Of Torment"] .. " |r(865)", L["Terror of Darkshore"] .. " |r(874)", L["An Unexpected Reunion"] .. " |r(879)", L["Siege of Dazar'alor"] .. " |r(876)", L["Battle of Dazar'alor"] .. " |r(875)", L["Warbringers Azshara"] .. " |r(884)", L["Rise of Azshara"] .. " |r(894)",})
 
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -7155,6 +7302,7 @@
 				LeaPlusLC:LoadVarNum("ViewPortAlpha", 0, 0, 0.9)			-- Border alpha
 
 				LeaPlusLC:LoadVarChk("NoRestedEmotes", "Off")				-- Silence rested emotes
+				LeaPlusLC:LoadVarChk("MuteGameSounds", "Off")				-- Mute game sounds
 
 				LeaPlusLC:LoadVarChk("NoBagAutomation", "Off")				-- Disable bag automation
 				LeaPlusLC:LoadVarChk("NoPetAutomation", "Off")				-- Disable pet automation
@@ -7316,6 +7464,7 @@
 			LeaPlusDB["ViewPortAlpha"]			= LeaPlusLC["ViewPortAlpha"]
 
 			LeaPlusDB["NoRestedEmotes"]			= LeaPlusLC["NoRestedEmotes"]
+			LeaPlusDB["MuteGameSounds"]			= LeaPlusLC["MuteGameSounds"]
 
 			LeaPlusDB["NoBagAutomation"]		= LeaPlusLC["NoBagAutomation"]
 			LeaPlusDB["NoPetAutomation"]		= LeaPlusLC["NoPetAutomation"]
@@ -7343,12 +7492,17 @@
 			-- Start page
 			LeaPlusDB["LeaStartPage"]			= LeaPlusLC["LeaStartPage"]
 
+			-- Mute game sounds (LeaPlusLC["MuteGameSounds"])
+			for k, v in pairs(LeaPlusLC["muteTable"]) do
+				LeaPlusDB[k] = LeaPlusLC[k]
+			end
+
 		end
 
 	end
 
 --	Register event handler
-	LpEvt:SetScript("OnEvent", eventHandler);
+	LpEvt:SetScript("OnEvent", eventHandler)
 
 ----------------------------------------------------------------------
 --	L70: Player logout
@@ -7383,8 +7537,13 @@
 			ChangeChatColor("INSTANCE_CHAT", 1, 0.50, 0)
 			ChangeChatColor("INSTANCE_CHAT_LEADER", 1, 0.28, 0.04)
 
-			-- Enable map fade
-			SetCVar("mapFade", "1")
+			-- Mute game sounds (LeaPlusLC["MuteGameSounds"])
+			for k, v in pairs(LeaPlusLC["muteTable"]) do
+				for i, e in pairs(v) do
+					local file, soundID = e:match("([^,]+)%#([^,]+)")
+					UnmuteSoundFile(soundID)
+				end
+			end
 
 		end
 
@@ -7405,7 +7564,9 @@
 
 		-- Prevent frame caching if frame customisation is enabled
 		if LeaPlusDB["FrmEnabled"] == "On" then
+			PlayerFrame:SetMovable(true)
 			PlayerFrame:SetUserPlaced(false)
+			TargetFrame:SetMovable(true)
 			TargetFrame:SetUserPlaced(false)
 		end
 
@@ -8948,11 +9109,12 @@
 				LeaPlusDB["Frames"]["MirrorTimer1"]["XOffset"] = 0
 				LeaPlusDB["Frames"]["MirrorTimer1"]["YOffset"] = -120
 
-				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"] = {}
-				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Point"] = "TOP"
-				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["Relative"] = "TOP"
-				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["XOffset"] = 0
-				LeaPlusDB["Frames"]["UIWidgetTopCenterContainerFrame"]["YOffset"] = -542
+				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"] = {}
+				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Point"] = "TOP"
+				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Relative"] = "TOP"
+				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["XOffset"] = 0
+				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["YOffset"] = -432
+				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"] = 1.25
 
 				LeaPlusDB["Frames"]["BuffFrame"] = {}
 				LeaPlusDB["Frames"]["BuffFrame"]["Point"] = "TOPRIGHT"
@@ -8990,6 +9152,7 @@
 				LeaPlusDB["MaxCameraZoom"] = "On"				-- Max camera zoom
 				LeaPlusDB["ViewPortEnable"] = "On"				-- Enable viewport
 				LeaPlusDB["NoRestedEmotes"] = "On"				-- Silence rested emotes
+				LeaPlusDB["MuteGameSounds"] = "On"				-- Mute game sounds
 
 				LeaPlusDB["NoBagAutomation"] = "On"				-- Disable bag automation
 				LeaPlusDB["NoPetAutomation"] = "On"				-- Disable pet automation
@@ -9077,6 +9240,11 @@
 
 				setIcon("DEMONHUNTER", 	1, --[[Havoc]]  		--[[1]] 0, 0, 		--[[2]] 0, 0, 		--[[3]] 0, 0, 		--[[4]] 0, 0, 		--[[5]] 0, 0)
 				setIcon("DEMONHUNTER", 	2, --[[Vengeance]]  	--[[1]] 0, 0, 		--[[2]] 0, 0, 		--[[3]] 0, 0, 		--[[4]] 0, 0, 		--[[5]] 0, 0)
+
+				-- Mute game sounds (LeaPlusLC["MuteGameSounds"])
+				for k, v in pairs(LeaPlusLC["muteTable"]) do
+					LeaPlusDB[k] = "On"
+				end
 
 				-- Reload
 				ReloadUI()
@@ -9360,6 +9528,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -132, 	false,	"If checked, you will be able to zoom out to a greater distance.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ViewPortEnable"			,	"Enable viewport"				,	146, -152, 	true,	"If checked, you will be able to create a viewport.  A viewport adds adjustable black borders around the game world.|n|nThe borders are placed on top of the game world but under the UI so you can place UI elements over them.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -172, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -192, 	false,	"If checked, you will be able to mute a selection of game sounds.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	340, -92, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant, bank or mailbox.")
@@ -9373,6 +9542,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "LockoutSharing"			, 	"Lockout sharing"				, 	340, -252, 	true, 	"If checked, the 'Display only character achievements to others' setting in the game options panel ('Social' menu) will be permanently checked and locked.")
 
 	LeaPlusLC:CfgBtn("ModViewportBtn", LeaPlusCB["ViewPortEnable"])
+	LeaPlusLC:CfgBtn("MuteGameSoundsBtn", LeaPlusCB["MuteGameSounds"])
 
 ----------------------------------------------------------------------
 -- 	LC8: Settings
