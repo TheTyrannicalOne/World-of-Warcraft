@@ -5,7 +5,7 @@ BigWigs:AddColors("Abyssal Commander Sivara", {
 	[294726] = "blue",
 	[295332] = "purple",
 	[295601] = {"blue","orange"},
-	[295791] = {"blue","orange","yellow"},
+	[295791] = {"blue","orange"},
 	[296551] = "red",
 })
 
@@ -36,7 +36,7 @@ BigWigs:AddColors("Blackwater Behemoth", {
 
 BigWigs:AddColors("Lady Ashvane", {
 	[-20096] = {"blue","yellow"},
-	[296569] = {"cyan","yellow"},
+	[296662] = "cyan",
 	[296725] = {"blue","purple"},
 	[297397] = {"blue","red"},
 	[298056] = "orange",

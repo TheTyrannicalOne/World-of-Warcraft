@@ -1,7 +1,7 @@
 # BigWigs
 
-## [v151](https://github.com/BigWigsMods/BigWigs/tree/v151) (2019-07-10)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v150.1...v151)
+## [v152.1](https://github.com/BigWigsMods/BigWigs/tree/v152.1) (2019-07-11)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v152...v152.1)
 
-- bump version  
-- EternalPalace: Add some backup NPC ids  
+- EternalPalace/LadyAshvane: Fix option keys  
+- EternalPalace: Updates for timers for Abyssal Commander, Blackwater Behemoth, Lady Ashvane, Orgozoa, The Queens Court and Za'qul  

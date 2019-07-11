@@ -236,7 +236,7 @@ L["ImportPopup_Error_OldStringVersion"] = "ERROR: \"Import-String\" -Version ist
 L["ImportPopup_Title"] = "Importiere Skalierung"
 L["ImportPopup_UpdatedScale"] = "Skalierung \"%s\" wurde aktualisiert"
 L["ItemToolTip_AzeriteLevel"] = "Azeritlevel: %1$d / %2$d"
-L["ItemToolTip_Legend"] = "Aktuelle Wertung / Aktuell beste Wertung / Maximale Wertung"
+L["ItemToolTip_Legend"] = "Aktuelle Wertung / Aktuelles Potenzial / Maximale Wertung"
 --[[Translation missing --]]
 --[[ L["MassImportPopup_Desc"] = ""--]] 
 --[[Translation missing --]]
@@ -261,7 +261,7 @@ L["ScalesList_CustomGroupName"] = "Benutzerdefinierte Skalierung"
 L["ScalesList_DefaultGroupName"] = "Standardskalierungen"
 L["ScaleWeightEditor_Title"] = "%s Editor"
 L["Slash_Command"] = "/azerite"
-L["Slash_Error_Unkown"] = "ERROR: Irgendwas war fehlerhaft! "
+L["Slash_Error_Unkown"] = "FEHLER: Etwas ist schief gelaufen!"
 L["Slash_RemindConfig"] = "Siehe ESC -> Interface -> Addons -> %s für weitere Einstellungen."
 L["WeightEditor_CreateNewText"] = "Neu erstellen"
 L["WeightEditor_CurrentScale"] = "Aktuelle Skalierung: %s"
@@ -701,39 +701,29 @@ elseif LOCALE == "esMX" then
 
 
 elseif LOCALE == "frFR" then -- tthegarde (19), Marechoux (9), follower4jas (1)
-L["Config_Importing_ImportingCanUpdate"] = "Importer peut metre au jour les échelles existantes."
-L["Config_Importing_ImportingCanUpdate_Desc"] = "Quand vous importez une échelle avec les mêmes nom, classe et spécialisation qu'une échelle pré-définie, l'échelle pré-définie sera mise à jour avec les nouveaux poids au lieu qu'une nouvelle échelle soit créée."
-L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Il peut y avoir plusieurs échelles avec le même nom tant qu'elles sont pour des classes ou spécialisations différentes."
+L["Config_Importing_ImportingCanUpdate"] = "L'importation pourra mettre à jour les coefficients existants."
+L["Config_Importing_ImportingCanUpdate_Desc"] = "Quand vous importez les coefficients avec les mêmes nom, classe et spécialisation qu'un coefficient prédéfini, celui-ci sera mise à jour avec les nouveaux coefficients au lieu qu'un nouveau coefficient soit créée."
+L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "Il peut y avoir plusieurs coefficients avec le même nom tant qu'elles sont pour des classes ou spécialisations différentes."
 L["Config_Importing_Title"] = "Import"
---[[Translation missing --]]
---[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
-L["Config_Scales_OwnClassDefaultsOnly"] = "N'afficher que les échelles par défaut de votre classe"
-L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Cache les échelles par défaut qui ne correspondent pas à votre classe au lieu de toutes les afficher."
-L["Config_Scales_Title"] = "Liste des échelles"
+L["Config_Scales_OwnClassCustomsOnly"] = "Uniquement pour lister ses propres coefficients de classe "
+L["Config_Scales_OwnClassCustomsOnly_Desc"] = "Répertorie uniquement les coefficients de votre propre classe, à la place de toutes les énumérer."
+L["Config_Scales_OwnClassDefaultsOnly"] = "N'afficher que les coefficients par défaut de votre classe"
+L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "Cache les coefficients par défaut qui ne correspondent pas à votre classe au lieu de toutes les afficher."
+L["Config_Scales_Title"] = "Liste des coefficients"
 L["Config_Score_AddItemLevelToScore"] = "Ajouter le niveau d'objet à tous les scores"
 L["Config_Score_AddItemLevelToScore_Desc"] = "Ajouter le niveau d'objet des objets azéritiques au calcul des scores actuels, potentiels et maximaux."
-L["Config_Score_AddPrimaryStatToScore"] = "Ajouter la stat principale à tous les scores"
---[[Translation missing --]]
---[[ L["Config_Score_AddPrimaryStatToScore_Desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_OutlineScores"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_OutlineScores_Desc"] = ""--]] 
+L["Config_Score_AddPrimaryStatToScore"] = "Ajouter la statistique principale à tous les scores"
+L["Config_Score_AddPrimaryStatToScore_Desc"] = "Ajoute le montant de la statistique principale de l'objet azérique (%s/%s/%s) à tous les scores actuels, potentiels ainsi qu'au score maximum."
+L["Config_Score_OutlineScores"] = "Scores de configuration"
+L["Config_Score_OutlineScores_Desc"] = "Tracez un petit contour autour des coefficients sur les traits/essences azéritiques pour faciliter la lecture des valeurs sur les icônes de traits/essences de moindre valeur."
 L["Config_Score_RelativeScore"] = "Afficher des valeurs relatives dans les infobulles à la place des valeurs absolues"
 L["Config_Score_RelativeScore_Desc"] = "À la place de montrer la valeur absolue des échelles dans les infobulles, calculer la valeur relative comparée aux objets actuellement équipés et les montrer en pourcentage."
---[[Translation missing --]]
---[[ L["Config_Score_ScaleByAzeriteEmpowered"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_ScaleByAzeriteEmpowered_Desc"] = ""--]] 
+L["Config_Score_ScaleByAzeriteEmpowered"] = "Graduation du score du niveau de l'objet par le poids de %s dans le classement"
+L["Config_Score_ScaleByAzeriteEmpowered_Desc"] = "Lors de l'ajout du niveau de l'objet aux scores, le poids %s est utilisé à l'échelonnement pour calculer la valeur de +1 niveau d'objet au lieu d'utiliser +1 niveau de l'objet = score +1."
 L["Config_Score_ShowOnlyUpgrades"] = "N'afficher les infobulles que pour les améliorations"
---[[Translation missing --]]
---[[ L["Config_Score_ShowOnlyUpgrades_Desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_ShowTooltipLegend"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_ShowTooltipLegend_Desc"] = ""--]] 
+L["Config_Score_ShowOnlyUpgrades_Desc"] = "Afficher les valeurs d'échelonnement dans les infobulles uniquement s'il s'agit d'une mise à niveau par rapport à l'objet actuellement équipé. Cela ne fonctionne qu'avec les valeurs relatives activées."
+L["Config_Score_ShowTooltipLegend"] = "Afficher la légende dans l'infobulle"
+L["Config_Score_ShowTooltipLegend_Desc"] = "Afficher le rappel des \"Score actuel / potentiel / maximal\" dans l'infobulle."
 L["Config_Score_Title"] = "Score"
 --[[Translation missing --]]
 --[[ L["Config_SettingsAddonExplanation"] = ""--]] 
@@ -1528,10 +1518,8 @@ L["Config_Importing_ImportingCanUpdate"] = "允许导入覆盖现有配置"
 L["Config_Importing_ImportingCanUpdate_Desc"] = "当导入配置名称相同并且职业专精一致时，将覆盖现有配置，而不是新建配置。"
 L["Config_Importing_ImportingCanUpdate_Desc_Clarification"] = "可以有多个同名配置，只要它们用于不同的专精或职业。"
 L["Config_Importing_Title"] = "导入"
---[[Translation missing --]]
---[[ L["Config_Scales_OwnClassCustomsOnly"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Scales_OwnClassCustomsOnly_Desc"] = ""--]] 
+L["Config_Scales_OwnClassCustomsOnly"] = "只显示自己职业的自定义配置"
+L["Config_Scales_OwnClassCustomsOnly_Desc"] = "只显示自己职业的自定义配置，而不是显示所有配置。"
 L["Config_Scales_OwnClassDefaultsOnly"] = "只显示自己职业的默认配置"
 L["Config_Scales_OwnClassDefaultsOnly_Desc"] = "只显示您自己职业的默认配置，而不是显示所有的默认配置。"
 L["Config_Scales_Title"] = "配置列表"
@@ -1539,10 +1527,8 @@ L["Config_Score_AddItemLevelToScore"] = "将物品等级计入所有分数中"
 L["Config_Score_AddItemLevelToScore_Desc"] = "将艾泽里特护甲的物品等级计入到所有当前已选分数、当前可选最高分和全部解锁最高分的计算中。"
 L["Config_Score_AddPrimaryStatToScore"] = "将主属性计入到所有分数中"
 L["Config_Score_AddPrimaryStatToScore_Desc"] = "将艾泽里特护甲的主属性值(%s/%s/%s)计入所有当前已选分数、当前可选最高分和全部解锁最高分的计算中。"
---[[Translation missing --]]
---[[ L["Config_Score_OutlineScores"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_OutlineScores_Desc"] = ""--]] 
+L["Config_Score_OutlineScores"] = "给分数描边"
+L["Config_Score_OutlineScores_Desc"] = "给艾泽里特特质/精华图标上的分数描绘边框，从而更轻松地阅读艾泽里特特质/精华图标上的数字。"
 L["Config_Score_RelativeScore"] = "在鼠标提示中显示相对值而不是绝对值"
 L["Config_Score_RelativeScore_Desc"] = "不在鼠标提示中显示权值的绝对值，而是计算与当前装备相比的相对值，并以百分比显示。"
 L["Config_Score_ScaleByAzeriteEmpowered"] = "按％s的权值计算物品等级分数"
@@ -1581,8 +1567,7 @@ L["CreatePopup_Desc"] = "创建新配置。请从下拉列表中选择职业和�
 L["CreatePopup_Error_CreatedNewScale"] = "创建新配置“%s”"
 L["CreatePopup_Error_UnknownError"] = "错误：无法创建新配置“%s”"
 L["CreatePopup_Title"] = "添加配置"
---[[Translation missing --]]
---[[ L["Debug_CopyToBugReport"] = ""--]] 
+L["Debug_CopyToBugReport"] = "如果您认为以上文本与bug有关联，请复制并粘贴到bug回报中。"
 L["DefaultScaleName_Default"] = "默认"
 L["DefaultScaleName_Defensive"] = "防御"
 L["DefaultScaleName_Offensive"] = "输出"
@@ -1600,17 +1585,15 @@ L["ImportPopup_CreatedNewScale"] = "导入新配置“%s”"
 L["ImportPopup_Desc"] = [=[正在从字符串导入配置
 按下 %1$sCtrl+V%2$s 来粘贴字符串到编辑框并点击 %3$s]=]
 L["ImportPopup_Error_MalformedString"] = "错误：导入的字符串格式错误"
---[[Translation missing --]]
---[[ L["ImportPopup_Error_OldStringRetry"] = ""--]] 
+L["ImportPopup_Error_OldStringRetry"] = "错误：旧版或格式错误的“导入字符串”-版本已使用，尝试将其作为新配置导入！"
 L["ImportPopup_Error_OldStringVersion"] = "错误：\"导入字符串\" -版本太旧或是导入字符串格式错误！"
 L["ImportPopup_Title"] = "导入配置"
 L["ImportPopup_UpdatedScale"] = "更新现有的配置 \"%s\""
 L["ItemToolTip_AzeriteLevel"] = "艾泽里特等级: %1$d / %2$d"
 L["ItemToolTip_Legend"] = "当前已选分数/当前可选最高分/全部解锁最高分"
---[[Translation missing --]]
---[[ L["MassImportPopup_Desc"] = ""--]] 
---[[Translation missing --]]
---[[ L["MassImportPopup_Title"] = ""--]] 
+L["MassImportPopup_Desc"] = [=[从字符串一次导入多个配置
+在输入框中按下 %1$sCtrl+V%2$s 粘贴字符串并按下 %3$s]=]
+L["MassImportPopup_Title"] = "批量导入配置"
 L["PowersScoreString"] = [=[当前已选分数: %1$s/%2$s
 全部解锁最高分: %3$s
 艾泽里特等级: %4$d/%5$d]=]
@@ -1639,19 +1622,13 @@ L["WeightEditor_DeleteText"] = "删除"
 L["WeightEditor_EnableScaleText"] = "启用配置"
 L["WeightEditor_ExportText"] = "导出"
 L["WeightEditor_ImportText"] = "导入"
---[[Translation missing --]]
---[[ L["WeightEditor_Major"] = ""--]] 
---[[Translation missing --]]
---[[ L["WeightEditor_MassImportText"] = ""--]] 
---[[Translation missing --]]
---[[ L["WeightEditor_Minor"] = ""--]] 
+L["WeightEditor_Major"] = "主要"
+L["WeightEditor_MassImportText"] = "批量导入"
+L["WeightEditor_Minor"] = "次要"
 L["WeightEditor_RenameText"] = "重命名"
---[[Translation missing --]]
---[[ L["WeightEditor_TimestampText_Created"] = ""--]] 
---[[Translation missing --]]
---[[ L["WeightEditor_TimestampText_Imported"] = ""--]] 
---[[Translation missing --]]
---[[ L["WeightEditor_TimestampText_Updated"] = ""--]] 
+L["WeightEditor_TimestampText_Created"] = "创建于 %s"
+L["WeightEditor_TimestampText_Imported"] = "导入于 %s"
+L["WeightEditor_TimestampText_Updated"] = "更新于 %s"
 L["WeightEditor_TooltipText"] = "在鼠标提示中显示"
 L["WeightEditor_VersionText"] = "版本 %s"
 
@@ -1670,10 +1647,8 @@ L["Config_Score_AddItemLevelToScore"] = "添加物品等級到所有分數"
 L["Config_Score_AddItemLevelToScore_Desc"] = "添加艾澤萊護甲的物品等級到所有當前分數，當前潛力與最高分數計算。"
 L["Config_Score_AddPrimaryStatToScore"] = "主屬性計入所有分數"
 L["Config_Score_AddPrimaryStatToScore_Desc"] = "將艾澤萊護甲的主屬性值(%s/%s/%s)計算加入當前分數，當前潛力以及最大分數。"
---[[Translation missing --]]
---[[ L["Config_Score_OutlineScores"] = ""--]] 
---[[Translation missing --]]
---[[ L["Config_Score_OutlineScores_Desc"] = ""--]] 
+L["Config_Score_OutlineScores"] = "分數描邊"
+L["Config_Score_OutlineScores_Desc"] = "在艾澤萊特質/精華上圍繞分數描繪邊框，以便能更輕鬆的閱讀光亮特質/精華圖示上的數字。"
 L["Config_Score_RelativeScore"] = "在工具提示中顯示相對值而不是絕對值"
 L["Config_Score_RelativeScore_Desc"] = "不是在工具提示中顯示比例的絕對值，而是計算與當前裝備物品相比的相對值，並以百分比顯示差異。"
 L["Config_Score_ScaleByAzeriteEmpowered"] = "按比例中的％s權值縮放物品等級計分"
@@ -1730,8 +1705,7 @@ L["ImportPopup_CreatedNewScale"] = "導入新的比例 \"%s\""
 L["ImportPopup_Desc"] = [=[正從字串導入比例
 按下 %1$sCtrl+V%2$s 來貼上字串到編輯框並按下 %3$s]=]
 L["ImportPopup_Error_MalformedString"] = "錯誤：導入的字串格式錯誤"
---[[Translation missing --]]
---[[ L["ImportPopup_Error_OldStringRetry"] = ""--]] 
+L["ImportPopup_Error_OldStringRetry"] = "錯誤：舊的或格式錯誤的\"匯入字串\" -版本已經使用，嘗試將其匯入為新的比重！"
 L["ImportPopup_Error_OldStringVersion"] = "錯誤：\"導入字串\" -版本太舊或是導入字串格式錯誤！"
 L["ImportPopup_Title"] = "導入比例"
 L["ImportPopup_UpdatedScale"] = "更新現有的比例 \"%s\""
@@ -1768,11 +1742,9 @@ L["WeightEditor_DeleteText"] = "刪除"
 L["WeightEditor_EnableScaleText"] = "使用此比例"
 L["WeightEditor_ExportText"] = "導出"
 L["WeightEditor_ImportText"] = "導入"
---[[Translation missing --]]
---[[ L["WeightEditor_Major"] = ""--]] 
+L["WeightEditor_Major"] = "主要"
 L["WeightEditor_MassImportText"] = "批量匯入"
---[[Translation missing --]]
---[[ L["WeightEditor_Minor"] = ""--]] 
+L["WeightEditor_Minor"] = "次要"
 L["WeightEditor_RenameText"] = "重命名"
 L["WeightEditor_TimestampText_Created"] = "建立於%s"
 L["WeightEditor_TimestampText_Imported"] = "匯入於%s"

@@ -36,7 +36,7 @@ BigWigs:AddSounds("Blackwater Behemoth", {
 
 BigWigs:AddSounds("Lady Ashvane", {
 	[-20096] = {"alert","warning"},
-	[296569] = {"alert","long"},
+	[296662] = "long",
 	[296725] = "alert",
 	[297397] = "warning",
 	[298056] = "alarm",
