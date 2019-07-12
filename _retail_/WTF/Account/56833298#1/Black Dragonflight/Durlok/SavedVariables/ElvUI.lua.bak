@@ -1,1150 +1,28 @@
 
 ElvCharacterDB = {
 	["ChatEditHistory"] = {
-		"/i thanks", -- [1]
-		"/i healers internet crapped out", -- [2]
-		"/i she trying to fix but no eta", -- [3]
-		"/i they like to cut lines like its cool", -- [4]
-		"/i cool", -- [5]
-		"/dance", -- [6]
-		"/skada toggle", -- [7]
-		"/omen show", -- [8]
-		"/i healer is setting up her keys", -- [9]
-		"/i g2g", -- [10]
-		"/i ready", -- [11]
-		"/i TY", -- [12]
-		"/sleep", -- [13]
-		"/questc", -- [14]
-		"/qc", -- [15]
-		"/wa", -- [16]
-		"/flirt", -- [17]
-		"/train", -- [18]
-		"/moo", -- [19]
-		"/cw Siniste-Skullcrusher nope thanks though", -- [20]
+		"/i healers internet crapped out", -- [1]
+		"/i she trying to fix but no eta", -- [2]
+		"/i they like to cut lines like its cool", -- [3]
+		"/i cool", -- [4]
+		"/dance", -- [5]
+		"/skada toggle", -- [6]
+		"/omen show", -- [7]
+		"/i healer is setting up her keys", -- [8]
+		"/i g2g", -- [9]
+		"/i ready", -- [10]
+		"/i TY", -- [11]
+		"/sleep", -- [12]
+		"/questc", -- [13]
+		"/qc", -- [14]
+		"/wa", -- [15]
+		"/flirt", -- [16]
+		"/train", -- [17]
+		"/moo", -- [18]
+		"/cw Siniste-Skullcrusher nope thanks though", -- [19]
+		"/fb", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"thanks", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			560, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1541303147,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [1]
-		{
-			"thx duder", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			561, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541303151,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [2]
-		{
-			"healers internet crapped out", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			562, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1541303159,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [3]
-		{
-			"its comcastic", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			563, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541303168,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [4]
-		{
-			"she trying to fix but no eta", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			564, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1541303173,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [5]
-		{
-			"Ha yah they are bad", -- [1]
-			"Gliceas-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gliceas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			565, -- [11]
-			"Player-74-071A8E91", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGliceas|r",
-			[51] = 1541303184,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [6]
-		{
-			"I mean it's under ground wtf  is ALWAYS the problem?!", -- [1]
-			"Gliceas-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gliceas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			566, -- [11]
-			"Player-74-071A8E91", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGliceas|r",
-			[51] = 1541303247,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [7]
-		{
-			"to the door is often still suspended", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			567, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541303279,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [8]
-		{
-			"they like to cut lines like its cool", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			568, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1541303289,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [9]
-		{
-			"that too", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			569, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541303299,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [10]
-		{
-			"if you put a don't dig call first they'll surely dig there first", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			570, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541303316,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [11]
-		{
-			"well, what was that?", -- [1]
-			"Gliceas-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gliceas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			575, -- [11]
-			"Player-74-071A8E91", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGliceas|r",
-			[51] = 1541303390,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [12]
-		{
-			"that was failure", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			578, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541303396,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [13]
-		{
-			"I switch back to Mon", -- [1]
-			"Gliceas-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gliceas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			584, -- [11]
-			"Player-74-071A8E91", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGliceas|r",
-			[51] = 1541303483,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [14]
-		{
-			"moon", -- [1]
-			"Gliceas-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gliceas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			585, -- [11]
-			"Player-74-071A8E91", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGliceas|r",
-			[51] = 1541303500,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [15]
-		{
-			"cool", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			586, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1541303500,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [16]
-		{
-			"never go ass to mouth", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			587, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541303512,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [17]
-		{
-			"come on DPS gotta focus ADDS", -- [1]
-			"Gliceas-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Gliceas", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			605, -- [11]
-			"Player-74-071A8E91", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGliceas|r",
-			[51] = 1541303692,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [18]
-		{
-			"thx for heal", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			654, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1541304009,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [19]
-		{
-			"TOP Guild is selling Heroic Uldir and G'huun kills! Get your Ahead of the Curve today! Also doing Mythic+ carries. /w for info", -- [1]
-			"Qunorduri-Skullcrusher", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Qunorduri-Skullcrusher", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			230, -- [11]
-			"Player-74-0BD4846E", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff8787edQunorduri-Skullcrusher|r",
-			[51] = 1541899693,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [20]
-		{
-			"’s Spirit Beast LilHealer casually zaps a nearby critter with a white beam of light.", -- [1]
-			"Firegate-Gul'dan", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Firegate-Gul'dan", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			283, -- [11]
-			"Player-74-074A33D3", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Firegate-Gul'dan|r",
-			[51] = 1542854564,
-			[50] = "CHAT_MSG_EMOTE",
-		}, -- [21]
-		{
-			"Skada: Damage for Wildtusk: 22:35 (26 Sec):", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			186, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030586,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [22]
-		{
-			" 1. Baldrick   59.4K (2374, 42.4%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			187, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030586,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [23]
-		{
-			" 2. Gisela   44.7K (2630, 31.9%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			188, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030586,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [24]
-		{
-			" 3. Durlok   19.0K (759, 13.6%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			189, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030586,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [25]
-		{
-			" 4. Mistic   17.0K (895, 12.1%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			190, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030586,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [26]
-		{
-			"Skada: Damage for Total: 22:21 (19 Min 59 Sec):", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			280, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030913,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [27]
-		{
-			" 1. Baldrick   557.8K (1799, 39.6%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			281, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030913,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [28]
-		{
-			" 2. Gisela   401.0K (2035, 28.5%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			282, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030913,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [29]
-		{
-			" 3. Durlok   356.1K (1343, 25.3%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			283, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030913,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [30]
-		{
-			" 4. Mistic   93.8K (501, 6.7%)", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			284, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543030913,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [31]
-		{
-			"an i still beat grandma", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			455, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543031425,
-			[50] = "CHAT_MSG_WHISPER",
-		}, -- [32]
-		{
-			"Dark Omen on Durlok", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			584, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1543032074,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
-		{
-			"Dark Omen on Durlok", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			593, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1543032165,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
-		{
-			"uh oh", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			604, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032248,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [35]
-		{
-			"hai donkeyman", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			605, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543032249,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [36]
-		{
-			"someone didnt make the cut", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			606, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032252,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [37]
-		{
-			"looks like", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			607, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032255,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [38]
-		{
-			"naw, we're just garbage", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			608, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543032263,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [39]
-		{
-			"bummer", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			609, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032268,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [40]
-		{
-			"healer is setting up her keys", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			610, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1543032287,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [41]
-		{
-			":-p", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			611, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543032288,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [42]
-		{
-			"g2g", -- [1]
-			"Durlok-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Durlok", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			612, -- [11]
-			"Player-74-0BD37336", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aDurlok|r",
-			[51] = 1543032292,
-			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [43]
-		{
-			"see! pure garbage!", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			627, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543032354,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [44]
-		{
-			"lust", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			673, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032621,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [45]
-		{
-			"lust", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			718, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032927,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [46]
-		{
-			"one of t hese days", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			719, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032930,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [47]
-		{
-			"what spell are you asking for?", -- [1]
-			"Baldrick-BlackDragonflight", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Baldrick", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			723, -- [11]
-			"Player-74-0BD372C7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Baldrick|r",
-			[51] = 1543032989,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [48]
-		{
-			"time", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			724, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032993,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [49]
-		{
-			"warp", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			725, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032994,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [50]
-		{
-			"mage", -- [1]
-			"Donkeybrains-Vek'nilash", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Donkeybrains-Vek'nilash", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			726, -- [11]
-			"Player-1184-0B295F2D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
-			[51] = 1543032997,
-			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [51]
 		{
 			"ready", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1166,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1543033006,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [52]
+		}, -- [1]
 		{
 			"5min cd, save till boss fights ", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1188,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543033011,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [53]
+		}, -- [2]
 		{
 			"follow me", -- [1]
 			"Donkeybrains-Vek'nilash", -- [2]
@@ -1210,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
 			[51] = 1543033097,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [54]
+		}, -- [3]
 		{
 			"follow me", -- [1]
 			"Donkeybrains-Vek'nilash", -- [2]
@@ -1232,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
 			[51] = 1543033128,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [55]
+		}, -- [4]
 		{
 			"coulda avoided all that", -- [1]
 			"Donkeybrains-Vek'nilash", -- [2]
@@ -1254,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Donkeybrains-Vek'nilash|r",
 			[51] = 1543033208,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [56]
+		}, -- [5]
 		{
 			"mistakes happen.", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1276,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543033214,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [57]
+		}, -- [6]
 		{
 			"TY", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1298,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1543033438,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [58]
+		}, -- [7]
 		{
 			"Eternál Welcomes  Durlok to join a laid back crew for raids, lvling, pvp and more! ", -- [1]
 			"Ceceliá", -- [2]
@@ -1320,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cff3fc6eaCeceliá|r",
 			[51] = 1543033694,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [59]
+		}, -- [8]
 		{
 			"casting Power Word: Radiance on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -1342,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffMistic|r",
 			[51] = 1543034938,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [60]
+		}, -- [9]
 		{
 			"Pursuit on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1364,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1543035704,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
+		}, -- [10]
 		{
 			"californians. shesh", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1386,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543035756,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [62]
+		}, -- [11]
 		{
 			"avoid purple jizz plz thx kk ", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1408,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543035823,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [63]
+		}, -- [12]
 		{
 			"druids purple muff is different", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1430,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543035835,
 			[50] = "CHAT_MSG_INSTANCE_CHAT",
-		}, -- [64]
+		}, -- [13]
 		{
 			"tank him back here", -- [1]
 			"Cerees-Garona", -- [2]
@@ -1452,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddCerees-Garona|r",
 			[51] = 1543035847,
 			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
-		}, -- [65]
+		}, -- [14]
 		{
 			"Interrupted Yazma's |cff71d5ff|Hspell:250096:0|h[Wracking Pain]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1474,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1543036077,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [15]
 		{
 			"was going afer teh tittehs with ice", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1496,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543038862,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [67]
+		}, -- [16]
 		{
 			"Interrupted Avatar of Xolotal's |cff71d5ff|Hspell:263607:0|h[Arc Lightning]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1518,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aDurlok|r",
 			[51] = 1543040576,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [17]
 		{
 			"not just th feet!", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1540,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543375183,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [69]
+		}, -- [18]
 		{
 			"slob on the knob like corn on the cob", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1562,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Baldrick|r",
 			[51] = 1543375193,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [70]
+		}, -- [19]
 		{
 			"|cffffff00The Sliver is under attack!|r", -- [1]
 			"", -- [2]
@@ -1584,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1543378097,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [71]
+		}, -- [20]
 		{
 			"|cffffff00Zuldazar is under attack!|r", -- [1]
 			"", -- [2]
@@ -1606,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1543379218,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [72]
+		}, -- [21]
 		{
 			"|cffffff00Terrace of the Speakers is under attack!|r", -- [1]
 			"", -- [2]
@@ -1628,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1543896519,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [22]
 		{
 			"Skada: Damage for Total: 22:30 (4 Min 44 Sec):", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1650,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561602940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [74]
+		}, -- [23]
 		{
 			" 1. Baldrick   357.4K (2007, 43.8%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1672,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561602940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [75]
+		}, -- [24]
 		{
 			" 2. Durlok   330.8K (1901, 40.5%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1694,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561602940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [76]
+		}, -- [25]
 		{
 			" 3. Gisela   128.3K (936, 15.7%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1716,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561602940,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [77]
+		}, -- [26]
 		{
 			"Skada: Damage for Total: 22:30 (7 Min 17 Sec):", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1738,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [78]
+		}, -- [27]
 		{
 			" 1. Baldrick   534.7K (2104, 42.9%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1760,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [79]
+		}, -- [28]
 		{
 			" 2. Durlok   421.0K (1768, 33.8%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1782,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [80]
+		}, -- [29]
 		{
 			" 3. Gisela   291.6K (1510, 23.4%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1804,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603093,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [81]
+		}, -- [30]
 		{
 			"Skada: Damage for Total: 22:30 (8 Min 41 Sec):", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1826,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [82]
+		}, -- [31]
 		{
 			" 1. Baldrick   733.3K (2502, 44.3%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1848,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [83]
+		}, -- [32]
 		{
 			" 2. Durlok   516.7K (1865, 31.2%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1870,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [84]
+		}, -- [33]
 		{
 			" 3. Gisela   383.7K (1654, 23.2%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1892,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [85]
+		}, -- [34]
 		{
 			" 4. Mistic   23.1K (123, 1.4%)", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -1914,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1561603177,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [86]
+		}, -- [35]
 		{
 			"|cffffff00Warbeast Kraal is under attack!|r", -- [1]
 			"", -- [2]
@@ -1936,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1562469028,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [36]
 		{
 			"casting Penance on you, but you're not in line of sight!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -1958,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562474838,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [88]
+		}, -- [37]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -1980,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562474877,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [89]
+		}, -- [38]
 		{
 			"casting Penance on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -2002,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562474992,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [90]
+		}, -- [39]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2024,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475088,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [91]
+		}, -- [40]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2046,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475154,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [92]
+		}, -- [41]
 		{
 			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2068,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475254,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [93]
+		}, -- [42]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2090,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475312,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [94]
+		}, -- [43]
 		{
 			"casting Power Word: Shield on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -2112,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562475320,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [95]
+		}, -- [44]
 		{
 			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2134,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475461,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [96]
+		}, -- [45]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2156,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475931,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [97]
+		}, -- [46]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2178,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475941,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [47]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2200,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475972,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [48]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2222,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562475985,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [100]
+		}, -- [49]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2244,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476034,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [50]
 		{
 			"Dark Omen on Durlok", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2266,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476041,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [102]
+		}, -- [51]
 		{
 			"Interrupted Bloodsworn Defiler's |cff71d5ff|Hspell:265433:0|h[Withering Curse]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2288,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476185,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [103]
+		}, -- [52]
 		{
 			"Upheaval on Lillys", -- [1]
 			"Lillys-Blackhand", -- [2]
@@ -2310,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffa9d271Lillys-Blackhand|r",
 			[51] = 1562476269,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [53]
 		{
 			"Upheaval on Baldrick", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2332,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476270,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [105]
+		}, -- [54]
 		{
 			"3", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2354,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476273,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [55]
 		{
 			"2", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2376,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476274,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [56]
 		{
 			"1", -- [1]
 			"Baldrick-BlackDragonflight", -- [2]
@@ -2398,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cff00fe95Baldrick|r",
 			[51] = 1562476275,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [57]
 		{
 			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2420,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562476825,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [109]
+		}, -- [58]
 		{
 			"Hey Durlok, noticed you did not have a guild. Are you shopping around by chance? Damage Mafia is recruiting and could use another druid", -- [1]
 			"Siniste-Skullcrusher", -- [2]
@@ -2442,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSiniste-Skullcrusher|r",
 			[51] = 1562638994,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [110]
+		}, -- [59]
 		{
 			"nope thanks though", -- [1]
 			"Siniste-Skullcrusher", -- [2]
@@ -2464,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSiniste-Skullcrusher|r",
 			[51] = 1562639016,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [111]
+		}, -- [60]
 		{
 			"10-4! Hit me up if you change your mind", -- [1]
 			"Siniste-Skullcrusher", -- [2]
@@ -2486,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cff006fdcSiniste-Skullcrusher|r",
 			[51] = 1562639026,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [112]
+		}, -- [61]
 		{
 			"casting Power Word: Shield on you, but you're not in line of sight!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -2508,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562639920,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [113]
+		}, -- [62]
 		{
 			"Interrupted Dazar'ai Augur's |cff71d5ff|Hspell:253562:0|h[Wildfire]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2530,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640107,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [114]
+		}, -- [63]
 		{
 			"Interrupted Dazar'ai Augur's |cff71d5ff|Hspell:253562:0|h[Wildfire]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2552,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640423,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [115]
+		}, -- [64]
 		{
 			"Interrupted Dazar'ai Augur's |cff71d5ff|Hspell:253562:0|h[Wildfire]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2574,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640443,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [116]
+		}, -- [65]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2596,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640549,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [117]
+		}, -- [66]
 		{
 			"casting Power Word: Shield on you, but you're not in line of sight!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -2618,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562640639,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [118]
+		}, -- [67]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2640,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640808,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [119]
+		}, -- [68]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2662,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640825,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [69]
 		{
 			"Interrupted Feasting Skyscreamer's |cff71d5ff|Hspell:255041:0|h[Terrifying Screech]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2684,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640843,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [121]
+		}, -- [70]
 		{
 			"Interrupted Zanchuli Witch-Doctor's |cff71d5ff|Hspell:252923:0|h[Venom Blast]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2706,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562640953,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [122]
+		}, -- [71]
 		{
 			"casting Power Word: Shield on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -2728,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562641319,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [123]
+		}, -- [72]
 		{
 			"casting Penance on you, but you're out of range!", -- [1]
 			"Mistic-BlackDragonflight", -- [2]
@@ -2750,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cfffefefeMistic|r",
 			[51] = 1562641392,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [124]
+		}, -- [73]
 		{
 			"Interrupted Charged Dust Devil's |cff71d5ff|Hspell:265968:0|h[Healing Surge]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2772,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562642056,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [125]
+		}, -- [74]
 		{
 			"Interrupted Charged Dust Devil's |cff71d5ff|Hspell:268703:0|h[Lightning Bolt]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2794,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562642158,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [126]
+		}, -- [75]
 		{
 			"Interrupted Agitated Nimbus's |cff71d5ff|Hspell:265912:0|h[Accumulate Charge]|h|r!", -- [1]
 			"Durlok-BlackDragonflight", -- [2]
@@ -2816,6 +1694,1128 @@ ElvCharacterDB = {
 			[52] = "|cfffe7b09Durlok|r",
 			[51] = 1562642945,
 			[50] = "CHAT_MSG_SAY",
+		}, -- [76]
+		{
+			"Hello! Are you interested in joining a casual guild? (Warpig)", -- [1]
+			"Snarl-Skullcrusher", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Snarl-Skullcrusher", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			22, -- [11]
+			"Player-74-0C01FAFB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Snarl-Skullcrusher|r",
+			[51] = 1562721908,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [77]
+		{
+			"Dark Omen on Durlok", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			165, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723260,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [78]
+		{
+			"Dark Omen on Durlok", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			167, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723283,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [79]
+		{
+			"Dark Omen on Durlok", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			172, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723336,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [80]
+		{
+			"Dark Omen on Durlok", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			175, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723362,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [81]
+		{
+			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			215, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723784,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [82]
+		{
+			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			218, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723815,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [83]
+		{
+			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			221, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723831,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [84]
+		{
+			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			224, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723848,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [85]
+		{
+			"Interrupted Living Rot's |cff71d5ff|Hspell:265668:0|h[Wave of Decay]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			249, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723947,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [86]
+		{
+			"Interrupted Diseased Lasher's |cff71d5ff|Hspell:278961:0|h[Decaying Mind]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			252, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562723970,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [87]
+		{
+			"Details!: Damage Done for Current [0:12 EF]", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			274, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724044,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [88]
+		{
+			"1. Baldrick .................. 184.6K (4.3k, 22.6%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			275, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724044,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [89]
+		{
+			"2. Feral Bloodswarmer  149.4K (4.2k, 18.3%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			276, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724044,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [90]
+		{
+			"3. Lillys ...................... 147.9K (3.4k, 18.1%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			277, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724044,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [91]
+		{
+			"4. Durlok .................... 89.1K (2.1k, 10.9%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			278, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724044,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [92]
+		{
+			"5. Baldrick <Baldrick> . 86.1K (6.1k, 10.5%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			279, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724045,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [93]
+		{
+			"Details!: Damage Done for Current [0:15 EF]", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			280, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724047,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [94]
+		{
+			"1. Baldrick .................. 184.6K (4.3k, 22.6%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			281, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724047,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [95]
+		{
+			"2. Feral Bloodswarmer  149.4K (4.2k, 18.3%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			282, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724047,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [96]
+		{
+			"3. Lillys ...................... 147.9K (3.4k, 18.1%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			283, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724047,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [97]
+		{
+			"4. Durlok .................... 89.1K (2.1k, 10.9%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			284, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724047,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [98]
+		{
+			"5. Baldrick <Baldrick> . 86.1K (6.1k, 10.5%)", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			285, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724048,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [99]
+		{
+			"Interrupted Reanimated Guardian's |cff71d5ff|Hspell:266201:0|h[Bone Shield]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			299, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562724193,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [100]
+		{
+			"casting Penance on you, but you're out of range!", -- [1]
+			"Mistic-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mistic-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			310, -- [11]
+			"Player-74-0BD37321", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeMistic|r",
+			[51] = 1562724295,
+			[50] = "CHAT_MSG_WHISPER",
+		}, -- [101]
+		{
+			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			311, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562724298,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [102]
+		{
+			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			319, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562724358,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [103]
+		{
+			"Interrupted Grotesque Horror's |cff71d5ff|Hspell:272180:0|h[Death Bolt]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			326, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562724502,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [104]
+		{
+			"Interrupted Bloodsworn Defiler's |cff71d5ff|Hspell:265487:0|h[Shadow Bolt Volley]|h|r!", -- [1]
+			"Durlok-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Durlok-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			328, -- [11]
+			"Player-74-0BD37336", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffe7b09Durlok|r",
+			[51] = 1562724520,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [105]
+		{
+			"Upheaval on Lillys", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			349, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724615,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [106]
+		{
+			"Upheaval on Baldrick", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			351, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724721,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [107]
+		{
+			"3", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			352, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724724,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [108]
+		{
+			"2", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			353, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724725,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [109]
+		{
+			"1", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			354, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724726,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [110]
+		{
+			"Upheaval on Baldrick", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			355, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724737,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [111]
+		{
+			"Upheaval on Lillys", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			356, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724737,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [112]
+		{
+			"3", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			357, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724740,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [113]
+		{
+			"3", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			358, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724740,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [114]
+		{
+			"2", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			359, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724741,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [115]
+		{
+			"2", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			360, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724741,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [116]
+		{
+			"1", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			361, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724742,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [117]
+		{
+			"1", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			362, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724742,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [118]
+		{
+			"Upheaval on Lillys", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			364, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724767,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [119]
+		{
+			"Upheaval on Baldrick", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			365, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724767,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [120]
+		{
+			"3", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			366, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724770,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [121]
+		{
+			"3", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			367, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724770,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [122]
+		{
+			"2", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			368, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724771,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [123]
+		{
+			"2", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			369, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724771,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [124]
+		{
+			"1", -- [1]
+			"Lillys-Blackhand", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Lillys-Blackhand", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			370, -- [11]
+			"Player-54-0AD15E94", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa9d271Lillys-Blackhand|r",
+			[51] = 1562724772,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [125]
+		{
+			"1", -- [1]
+			"Baldrick-BlackDragonflight", -- [2]
+			"Orcish", -- [3]
+			"", -- [4]
+			"Baldrick-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			371, -- [11]
+			"Player-74-0BD372C7", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff00fe95Baldrick|r",
+			[51] = 1562724772,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [126]
+		{
+			"casting Power Word: Shield on you, but you're out of range!", -- [1]
+			"Mistic-BlackDragonflight", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Mistic-BlackDragonflight", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			421, -- [11]
+			"Player-74-0BD37321", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeMistic|r",
+			[51] = 1562725138,
+			[50] = "CHAT_MSG_WHISPER",
 		}, -- [127]
 	},
 }

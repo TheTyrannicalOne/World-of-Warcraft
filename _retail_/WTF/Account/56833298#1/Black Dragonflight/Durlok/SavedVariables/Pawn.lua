@@ -1,6 +1,9 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0244,
+	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 160911,
@@ -78,9 +81,6 @@ PawnOptions = {
 			["Link"] = "|cff00ccff|Hitem:140773::::::::116:104:::1:5805:::|h[Eagletalon Spear]|h|r",
 		}, -- [16]
 	},
-	["AutoSelectScales"] = true,
-	["UpgradeTracking"] = false,
-	["LastPlayerFullName"] = "Durlok-Black Dragonflight",
 	["LastKeybindingsSet"] = 1,
 }
 PawnMrRobotScaleProviderOptions = {

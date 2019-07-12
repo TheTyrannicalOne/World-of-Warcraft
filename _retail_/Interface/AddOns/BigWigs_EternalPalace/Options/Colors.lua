@@ -15,7 +15,7 @@ BigWigs:AddColors("Radiance of Azshara", {
 	[296459] = "yellow",
 	[296546] = {"blue","purple"},
 	[296701] = "orange",
-	[296737] = {"blue","yellow"},
+	[296737] = {"blue","green","yellow"},
 	[296894] = "yellow",
 })
 
@@ -52,7 +52,7 @@ BigWigs:AddColors("Orgozoa", {
 	[298242] = "yellow",
 	[298465] = "cyan",
 	[298548] = "cyan",
-	[305048] = "red",
+	[305048] = {"blue","red"},
 	["stages"] = {"cyan","green"},
 })
 

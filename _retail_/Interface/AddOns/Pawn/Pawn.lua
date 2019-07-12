@@ -7,7 +7,7 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-PawnVersion = 2.0244
+PawnVersion = 2.0246
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.10
@@ -1317,14 +1317,17 @@ function PawnUpdateTooltip(TooltipName, MethodName, Param1, ...)
 				local LeftLine = _G[TooltipName .. "TextLeft" .. i]
 				if LeftLine then
 					local LeftLineText = LeftLine:GetText()
-					if strfind(LeftLineText, ItemLevelSearchPattern1) or strfind(LeftLineText, ItemLevelSearchPattern2) then
+					if LeftLineText and LeftLineText ~= "" and (strfind(LeftLineText, ItemLevelSearchPattern1) or strfind(LeftLineText, ItemLevelSearchPattern2)) then
 						-- This is the line.  Add an arrow to the end.
 						AnnotatedItemLevel = true
 						LeftLine:SetText(LeftLineText .. "  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+" .. ItemLevelIncrease)
 					end
 				end
 			end
-			VgerCore.Assert(AnnotatedItemLevel, "This is an item level upgrade, but we didn't find it in the tooltip.")
+			if not AnnotatedItemLevel then
+				--VgerCore.Assert(AnnotatedItemLevel, "This is an item level upgrade, but we didn't find it in the tooltip.")
+				PawnAddTooltipLine(Tooltip, PawnLocal.ItemLevelTooltipLine .. ":  |TInterface\\AddOns\\Pawn\\Textures\\UpgradeArrow:0|t|cff00ff00+" .. ItemLevelIncrease, VgerCore.Color.OrangeR, VgerCore.Color.OrangeG, VgerCore.Color.OrangeB)
+			end
 			TooltipWasUpdated = true
 		end
 
