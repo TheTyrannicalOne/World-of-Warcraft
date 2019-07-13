@@ -38,6 +38,7 @@ BigWigs:AddSounds("Lady Ashvane", {
 	[-20096] = {"alert","warning"},
 	[296662] = "long",
 	[296725] = "alert",
+	[296752] = "alarm",
 	[297397] = "warning",
 	[298056] = "alarm",
 	["stages"] = "long",
@@ -75,11 +76,12 @@ BigWigs:AddSounds("The Queen's Court", {
 
 BigWigs:AddSounds("Za'qul, Herald of Ny'alotha", {
 	[292963] = "alert",
-	[292971] = {"alarm","alert"},
+	[292971] = "alarm",
 	[292996] = "info",
 	[293509] = "alert",
 	[294535] = "alert",
 	[295099] = "long",
+	[295444] = "alert",
 	[295814] = "warning",
 	[296018] = "alert",
 	[298192] = "alarm",

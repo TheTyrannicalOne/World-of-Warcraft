@@ -86,9 +86,9 @@ FishingBuddy_Info = {
 		[1165002] = {
 			[162515] = 6,
 			[160927] = 1,
-			[154770] = 1,
-			[152543] = 41,
 			[152544] = 43,
+			[152543] = 41,
+			[154770] = 1,
 			[154792] = 1,
 			[160934] = 1,
 		},
@@ -238,9 +238,9 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 2057316,
 		},
-		[111589] = {
-			["enUS"] = "Small Crescent Saberfish",
-			["texture"] = 970812,
+		[111651] = {
+			["enUS"] = "Small Fat Sleeper",
+			["texture"] = 970821,
 			["quality"] = 1,
 		},
 		[162515] = {
@@ -249,9 +249,9 @@ FishingBuddy_Info = {
 			["quality"] = 2,
 			["texture"] = 237302,
 		},
-		[111651] = {
-			["enUS"] = "Small Fat Sleeper",
-			["texture"] = 970821,
+		[111589] = {
+			["enUS"] = "Small Crescent Saberfish",
+			["texture"] = 970812,
 			["quality"] = 1,
 		},
 		[154792] = {

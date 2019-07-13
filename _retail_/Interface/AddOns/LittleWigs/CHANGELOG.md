@@ -1,7 +1,6 @@
 # LittleWigs
 
-## [v8.2.2](https://github.com/BigWigsMods/LittleWigs/tree/v8.2.2) (2019-07-09)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.2.1...v8.2.2)
+## [v8.2.3](https://github.com/BigWigsMods/LittleWigs/tree/v8.2.3) (2019-07-13)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.2.2...v8.2.3)
 
-- BfA/Mechagon/Trash: Fix typo  
-- BfA/Mechagon/Trash: Add locales  
+- BfA/Mechagon: Fix timers and add hard mode timers (#465)  

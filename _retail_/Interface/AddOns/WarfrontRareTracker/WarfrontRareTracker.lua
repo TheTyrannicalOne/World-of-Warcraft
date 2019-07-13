@@ -194,26 +194,31 @@ local rareDB = {
         minimapIcons = {},
         index = 3,
         rares = {
-            -- Checked in World
+            -- Fully Checked!!!
             -- Bosses
             [152566] = { name = "Anemonar", npcid = 152566, questId = { 56281 }, type = TYPE_WORLDBOSS, faction = FACTION_ALL, coord = { 58605320 }, bothphases = true, note = "You need to kite a \"Colossal Sky Ray\" and kill it in front of Anemonar.", loot = { { droptype = DROP_ITEM, itemID = 170184, isKnown = false } } }, -- Moved from Mechagon!!!
             [152567] = { name = "Kelpwillow", npcid = 152567, questId = { 56287 }, type = TYPE_WORLDBOSS, faction = FACTION_ALL, coord = { 50206950 }, bothphases = true, note = "You need to charm a \"Muck Slug\" by using a \"Prismatic Crystal\" and then bring the charmed Muck Slug to Kelpwillow's foot.", loot = { { droptype = DROP_ITEM, itemID = 170184, isKnown = false } } }, -- Moved from Mechagon!!!
             [152397] = { name = "Oronu", npcid = 152397, questId = { 56288 }, type = TYPE_WORLDBOSS, faction = FACTION_ALL, coord = { 78102490 }, bothphases = true, note = "Yyou need to bring a \"Drowned Hatchling\" and summon the battle pet on top of him.", loot = { { droptype = DROP_ITEM, itemID = 170184, isKnown = false } } }, -- Moved from Mechagon!!!
             [152568] = { name = "Urduu", npcid = 152568, questId = { 56299 }, type = TYPE_WORLDBOSS, faction = FACTION_ALL, coord = { 31302660 }, bothphases = true, note = "You need to kite a \"Staghorn Reefwalker\" to Urduu's location, then kill it in front of Urduu.", loot = { { droptype = DROP_ITEM, itemID = 170184, isKnown = false } } }, -- Moved from Mechagon!!!
-
+            
             -- Gear Only
             [152416] = { name = "Allseer Oma'kil", npcid = 152416, questId = { 56280 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 65433921 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } }, -- Also Quest 56603?. could be horde of other mob!
-            
+
+            -- Pet drop
+            [152795] = { name = "Sandclaw Stoneshell", npcid = 152795, questId = { 56277 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 73504584 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169350, petID = 154823, speciesID = 2684, isKnown = false } } }, -- old coords:64804060, found myself at 73504584
+                        
+
+            -- Updated:
             -- Pet drop
                 [152464] = { name = "Caverndark Terror", npcid = 152464, questId = { 56283 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 40800950 }, bothphases = true, note = "Inside cave",loot = { { droptype = DROP_PET, itemID = 169356, petID = 154829, speciesID = 2690, isKnown = false } } }, -- coords update, mob too strong to check questID
-            [152795] = { name = "Sandclaw Stoneshell", npcid = 152795, questId = { 56277 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 73504584 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169350, petID = 154823, speciesID = 2684, isKnown = false } } }, -- old coords:64804060, found myself at 73504584
             
             -- Item Drop
                 [152360] = { name = "Toxigore the Alpha", npcid = 152360, questId = { 56278 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 67804620 }, bothphases = true, loot = { { droptype = DROP_ITEM, itemID = 170178, isKnown = false } } }, -- Only changed Coords. Has 3 spawm coords: 64804640, 67804620, 65205020
+                [152360] = { name = "Siltstalker the Packmother", npcid = 152360, questId = { 56278 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 72205550 }, bothphases = true, loot = { { droptype = DROP_ITEM, itemID = 170179, isKnown = false } } }, -- Only changed Coords. Old=64604700
             
             -- Unchecked
             [151870] = { name = "Sandcastle", npcid = 151870, questId = { 56276 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 78003280 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169369, petID = 154842, speciesID = 2703, isKnown = false } } },
-            [152360] = { name = "Siltstalker the Packmother", npcid = 152360, questId = { 56278 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 64604700 }, bothphases = true, loot = { { droptype = DROP_ITEM, itemID = 170179, isKnown = false } } },
+            
             [152561] = { name = "Banescale the Packfather", npcid = 152561, questId = { 0 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 71605420 }, bothphases = true, note="Spawns after you kill Siltstalker", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
             [152291] = { name = "Tidelord", npcid = 152291, questId = { 0 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 56204360 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
             [152323] = { name = "Deepglider", npcid = 152323, questId = { 55671 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 28802900 }, bothphases = true, loot = { { droptype = DROP_ITEM, itemID = 167077, isKnown = false } } },
@@ -284,9 +289,28 @@ local rareDB = {
         minimapIcons = {},
         index = 4,
         rares = {
+            -- Fully Checked!!!
+
+
+
+            -- Updated:
+
+            -- Pet drops
+            [152113] = { name = "The Kleptoboss", npcid = 152113, questId = { 55858 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 68865435 }, bothphases = true, cave = { 68384814 }, note = "Inside cave", loot = { { droptype = DROP_PET, itemID = 169886, petID = 155600, speciesID = 2753, isKnown = false } } }, -- in cave, coord=68, 48
+
+            -- Quest drops
+            [153200] = { name = "Boilburn", npcid = 153200, questId = { 55857 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 51205000 }, bothphases = true, cave = { 51445025 }, note = "Inside cave", loot = { { droptype = DROP_QUEST, itemID = 167042, isKnown = false } } },
+                [151884] = { name = "Fungarian Furor", npcid = 151884, questId = { 0 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 48704760 }, bothphases = true, note = "Only available when Mylune's daily quest is active!", loot = { { droptype = DROP_QUEST, itemID = 167793, isKnown = false } } }, -- questID=55367. Set to 0 until I can read out if the WQ is enabled!!!
+            [154153] = { name = "Enforcer KX-T57", npcid = 154153, questId = { 56207 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 55555555 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 169174, isKnown = false } } }, -- Coord update only, Old=53806180
+            [153205] = { name = "Gemicide", npcid = 153205, questId = { 55855 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 59606730 }, bothphases = true, cave = { 59656720 }, note = "Inside cave", loot = { { droptype = DROP_QUEST, itemID = 168908, isKnown = false } } },
+            [154701] = { name = "Gorged Gear-Cruncher", npcid = 154701, questId = { 56367 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 69205340 }, bothphases = true, cave = { 72635385 }, note = "Inside cave", loot = { { droptype = DROP_QUEST, itemID = 167846, isKnown = false } } }, -- in cave, coord=79, 52
+            [153206] = { name = "Ol' Big Tusk", npcid = 153206, questId = { 55853 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 56103600 }, bothphases = true, cave = { 56153632 }, note = "Inside cave", loot = { { droptype = DROP_QUEST, itemID = 169691, isKnown = false } } },
+            [150342] = { name = "Earthbreaker Gulroc", npcid = 150342, questId = { 55814 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 62802600 }, bothphases = true, cave = { 63532500 }, note = "Inside cave", loot = { { droptype = DROP_QUEST, itemID = 167042, isKnown = false } } },--qx1
+            -- Gear Only
+            [154739] = { name = "Caustic Mechaslime", npcid = 154739, questId = { 56368 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 66505870 }, bothphases = true, cave = { 66405884 }, note = "Inside cave", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },--q + punchcards
 
             -- Unchecked
-            [150342] = { name = "Earthbreaker Gulroc", npcid = 150342, questId = { 55814 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 62802600 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 167042, isKnown = false } } },--qx1
+            
             [150394] = { name = "Armored Vaultbot", npcid = 150394, questId = { 55546 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 60604460 }, bothphases = true, note="Only drops the pet when kited to the Magnet in Bondo's Scrap Yard", loot = { { droptype = DROP_ITEM, itemID = 168001, petID = 155829, speciesID = 2547, isKnown = false } } },-- petID + speciesID
             [150575] = { name = "Rumblerocks", npcid = 150575, questId = { 55368 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 38805320 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 168001, isKnown = false } } },--q>pet
             [150937] = { name = "Seaspit", npcid = 150937, questId = { 55545 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 19207940 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 168063, isKnown = false } } },
@@ -300,26 +324,26 @@ local rareDB = {
             [151672] = { name = "Mecharantula", npcid = 151672, questId = { 55386 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 86801940 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169393, petID = 154894, speciesID = 2720, isKnown = false } } },--q
             [151684] = { name = "Jawbreaker", npcid = 151684, questId = { 55399 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 75404400 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 198908, isKnown = false } } },
             [151702] = { name = "Paol Pondwader", npcid = 151702, questId = { 55405 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 23006860 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
-            [151884] = { name = "Fungarian Furor", npcid = 151884, questId = { 55367 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 48704760 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 167793, isKnown = false } } },
+            
             [151933] = { name = "Malfunctioning Beastbot", npcid = 151933, questId = { 55544 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 61004120 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169382, petID = 154854, speciesID = 2715, isKnown = false } } },--q
             [151934] = { name = "Arachnoid Harvester", npcid = 151934, questId = { 55512 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 51604160 }, bothphases = true, loot = { { droptype = DROP_MOUNT, itemID = 168823, mountID = 1229, isKnown = false } } },-- mountID
             [151940] = { name = "Uncle T'Rogg", npcid = 151940, questId = { 55538 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 57002140 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
             [152001] = { name = "Bonepicker", npcid = 152001, questId = { 55537 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 65202320 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169392, petID = 154893, speciesID = 2719, isKnown = false } } },--
             [152007] = { name = "Killsaw", npcid = 152007, questId = { 55369 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 43404900 }, bothphases = true, loot = { { droptype = DROP_TOY, itemID = 167931, isKnown = false } } },-- +q
-            [152113] = { name = "The Kleptoboss", npcid = 152113, questId = { 55858 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 68905430 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169886, petID = 155600, speciesID = 2753, isKnown = false } } },
+            
             [152182] = { name = "Rustfeather", npcid = 152182, questId = { 55811 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 63807800 }, bothphases = true, loot = { { droptype = DROP_MOUNT, itemID = 168370, mountID = 1248, isKnown = false } } },--mountID
             [149847] = { name = "Crazed Trogg", npcid = 149847, questId = { 55812 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 82202100 }, bothphases = true, loot = { { droptype = DROP_ITEM, itemID = 169167, isKnown = false } } },--q x 3, OLDnpcid = 152570
             [152764] = { name = "Oxidized Leachbeast", npcid = 152764, questId = { 55856 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 57206260 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
             [153000] = { name = "Sparkqueen P'Emp", npcid = 153000, questId = { 0 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 82202300 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
-            [153200] = { name = "Boilburn", npcid = 153200, questId = { 55857 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 51205000 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 167042, isKnown = false } } },--q Drop Starts Quest, more available. Onload check quest completed!
-            [153205] = { name = "Gemicide", npcid = 153205, questId = { 55855 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 59606730 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 168908, isKnown = false } } },
-            [153206] = { name = "Ol' Big Tusk", npcid = 153206, questId = { 55853 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 56103600 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 169691, isKnown = false } } }, 
+            --q Drop Starts Quest, more available. Onload check quest completed!
+            
+            
             [153226] = { name = "Steel Singer Freza", npcid = 153226, questId = { 55854 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 24807720 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 168062, isKnown = false } } },
             [153228] = { name = "Gear Checker Cogstar", npcid = 153228, questId = { 55852 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 40203960 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 167847, isKnown = false } } },
-            [154153] = { name = "Enforcer KX-T57", npcid = 154153, questId = { 56207 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 53806180 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 169174, isKnown = false } } },
+            
             [154225] = { name = "The Rusty Prince", npcid = 154225, questId = { 56182 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 58305690 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
-            [154701] = { name = "Gorged Gear-Cruncher", npcid = 154701, questId = { 56367 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 69205340 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 167846, isKnown = false } } },
-            [154739] = { name = "Caustic Mechaslime", npcid = 154739, questId = { 56368 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 66505870 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },--q + punchcards
+            
+            
             [155060] = { name = "Doppel Ganger", npcid = 155060, questId = { 0 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 80902020 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
             [155583] = { name = "Scrapclaw", npcid = 155583, questId = { 56737 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 82677740 }, bothphases = true, loot = { { droptype = DROP_QUEST, itemID = 168490, isKnown = false } } },
         },
@@ -340,6 +364,18 @@ local colors = {
     orange = { 1, 0.49, 0.04, 1 },
     lightcyan = { 0, 1 , 0.59, 1 },
 }
+
+-- Test new filter system
+local HIDE_ALREADY_KNOWN = "AlreadyKnown"
+local HIDE_UNKNOWN_LOOT = "UnknowLoot"
+local HIDE_UNTRACKABLE = "Untrackable"
+local HIDE_GOLIATHS = "Goliaths"
+local HIDE_UNAVAILABLE = "Unavailable"
+local HIDE_GEAR_ONLY = "GearOnly"
+local HIDE_QUEST_ONLY = "QuestOnly"
+local HIDE_ITEM_ONLY = "ItemOnly"
+
+
 -- Default options
 local dbDefaults = {
     profile = {
@@ -367,6 +403,7 @@ local dbDefaults = {
             hideGoliaths = false,
             hideGearOnly = false,
             hideQuestOnly = false,
+            hideItemOnly = false,
             showAtMaxLevel = false,
             showWarfrontOnZoneName = true,
             showWarfrontTitle = "all",
@@ -384,6 +421,7 @@ local dbDefaults = {
             alwaysShowWorldboss = true,
         },
         masterfilter = {
+            hide = { [HIDE_ALREADY_KNOWN] = false, [HIDE_UNKNOWN_LOOT] = false, [HIDE_UNTRACKABLE] = false, [HIDE_GOLIATHS] = false, [HIDE_UNAVAILABLE] = false, [HIDE_GEAR_ONLY] = false, [HIDE_QUEST_ONLY] = false, [HIDE_ITEM_ONLY] = false },
             hideAlreadyKnown = false,
             hideUnknowLoot = false,
             hideUntrackable = false,
@@ -391,6 +429,7 @@ local dbDefaults = {
             hideUnavailable = false,
             hideGearOnly = false,
             hideQuestOnly = false,
+            hideItemOnly = false,
             whitelist = { [DROP_MOUNT] = false, [DROP_PET] = false, [DROP_QUEST] = false },
             worldmapShowOnlyAtPhase = true,
             worldmapShowOnlyAtMaxLevel = false,
@@ -441,6 +480,7 @@ local dbDefaults = {
             hideGoliaths = false,
             hideGearOnly = false,
             hideQuestOnly = false,
+            hideItemOnly = false,
             whitelist = { [DROP_MOUNT] = false, [DROP_PET] = false, [DROP_QUEST] = false },
             alwaysShowWorldboss = true,
         },
@@ -958,7 +998,7 @@ local function rareHasLegitQuests(mapid, npcid)
     end
 end
 
-local function showRare(mapid, npcid, mode)
+local function showRare(mapid, npcid, mode)  --  
     if isNPCPlayerFaction(mapid, npcid) then
         if mode == "worldmap" and not WarfrontRareTracker.db.profile.worldmapicons.useMasterfilter then
             if WarfrontRareTracker.db.profile.worldmapicons.showOnlyAtPhase == true and rareDB[mapid].hidden == true  then
@@ -984,6 +1024,8 @@ local function showRare(mapid, npcid, mode)
                 return false
             elseif WarfrontRareTracker.db.profile.worldmapicons.hideQuestOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_QUEST then
                 return false
+            elseif WarfrontRareTracker.db.profile.worldmapicons.hideItemOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_ITEM then
+                return false
             elseif WarfrontRareTracker.db.profile.worldmapicons.hideAlreadyKnown and rareHasLoot(mapid, npcid) and rareHasAllLoot(mapid, npcid) then
                 return rareHasLootType(mapid, npcid, WarfrontRareTracker.db.profile.worldmapicons.whitelist)
             else
@@ -1005,6 +1047,8 @@ local function showRare(mapid, npcid, mode)
             elseif WarfrontRareTracker.db.profile.menu.hideGearOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_GEAR_ONLY then
                 return false
             elseif WarfrontRareTracker.db.profile.menu.hideQuestOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_QUEST then
+                return false
+            elseif WarfrontRareTracker.db.profile.menu.hideItemOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_ITEM then
                 return false
             elseif WarfrontRareTracker.db.profile.menu.hideAlreadyKnown and rareHasLoot(mapid, npcid) and rareHasAllLoot(mapid, npcid) then
                 return rareHasLootType(mapid, npcid, WarfrontRareTracker.db.profile.menu.whitelist)
@@ -1036,6 +1080,8 @@ local function showRare(mapid, npcid, mode)
             elseif WarfrontRareTracker.db.profile.masterfilter.hideGearOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_GEAR_ONLY then
                 return false
             elseif WarfrontRareTracker.db.profile.masterfilter.hideQuestOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_QUEST then
+                return false
+            elseif WarfrontRareTracker.db.profile.masterfilter.hideItemOnly and rareHasLoot(mapid, npcid) and #rareDB[mapid].rares[npcid].loot == 1 and rareDB[mapid].rares[npcid].loot[1].droptype == DROP_ITEM then
                 return false
             elseif WarfrontRareTracker.db.profile.masterfilter.hideAlreadyKnown and rareHasLoot(mapid, npcid) and rareHasAllLoot(mapid, npcid) then
                 return rareHasLootType(mapid, npcid, WarfrontRareTracker.db.profile.masterfilter.whitelist)
@@ -1236,12 +1282,12 @@ local function getCoordsForPhase(mapid, npcid, tomtom)
     return x, y
 end
 
-local function announceTomTom(mapid, npcid, clicked)
+local function announceRare(mapid, npcid, mode)
+    if mode == nil or mapid == nil and npcid == nil then return end
     if type(rareDB[mapid].rares[npcid]) ~= "table" then return end
-    if clicked ~= nil and clicked == true then
-        -- Announce
-        local x, y = getCoordsForPhase(mapid, npcid)
-        if x <= 0 or y <= 0 then return end
+    local x, y = getCoordsForPhase(mapid, npcid)
+    if x <= 0 or y <= 0 then return end
+    if mode == "group" then
         if WarfrontRareTracker.db.profile.tomtom.tomtomAnnounceLeader == true and UnitIsGroupLeader("player") or WarfrontRareTracker.db.profile.tomtom.tomtomAnnounceLeader == false then
             if IsInRaid() then
                 SendChatMessage(format("We're now heading to  '%s'! Coords x = %.2f, y = %.2f", rareDB[mapid].rares[npcid].name, x, y), "RAID", nil, nil)
@@ -1249,7 +1295,15 @@ local function announceTomTom(mapid, npcid, clicked)
                 SendChatMessage(format("We're now heading to  '%s'! Coords x = %.2f, y = %.2f", rareDB[mapid].rares[npcid].name, x, y), "PARTY", nil, nil)
             end
         end
-    else
+    elseif mode == "local" then
+        -- Local announce in /1
+        if isPlayerInWarfront() and mapid == currentPlayerMapid then
+            --print(format("%s is up. /way %.0f, %.0f", rareDB[mapid].rares[npcid].name, x, y))
+            SendChatMessage(format("%s is up. /way %.0f, %.0f", rareDB[mapid].rares[npcid].name, x, y), "CHANNEL", nil, 1)
+        else
+            print(colorText("Warning: ", colors.orange) .. colorText("The rare you've selected is from a different zone. Message isn't send to prevent spam!", colors.yellow))
+        end
+    elseif mode == "tomtom" then
         -- Chat Message
         if WarfrontRareTracker.db.profile.tomtom.enableChatMessage then
             WarfrontRareTracker:Print(colorText("Added waypoint to: ", colors.turqoise) .. getColoredRareName(mapid, npcid))
@@ -1297,7 +1351,7 @@ local function addToTomTom(mapid, npcid)
                 world = true,
             })
         end
-        announceTomTom(mapid, npcid)
+        announceRare(mapid, npcid, "tomtom")
     end
 end
 
@@ -1811,6 +1865,7 @@ function WarfrontRareTracker:ShowMenu(self)
     WarfrontRareTracker:UpdateMenuToolTip(menuTooltip)
 
 	if menuTooltip:GetLineCount() >= 1 then
+        menuTooltip:UpdateScrolling()
         menuTooltip:Show()
     end
 end
@@ -1874,26 +1929,30 @@ function WarfrontRareTracker:UpdateMenuToolTip(menuTooltip)
             menuTooltip:SetCell(line, 1, colorText("Shift Left-Click to announce in Party Chat.", colors.turqoise), "LEFT", 3)
         end
     end
-
+    
     line = menuTooltip:AddLine()
     menuTooltip:SetCell(line, 1, colorText("Right-Click the icon to open Options.", colors.turqoise), "LEFT", 3)
+    line = menuTooltip:AddLine()
+    menuTooltip:SetCell(line, 1, colorText("Shift Right-Click to announce in /1.", colors.turqoise), "LEFT", 3)
     line = menuTooltip:AddLine()
     menuTooltip:SetCell(line, 1, colorText("Shift Left-Click the icon to cycle Warfront.", colors.turqoise), "LEFT", 3)
 end
 
 function WarfrontRareTracker:MenuTooltipOnLineClick(self, info, button)
+    local mapid, npcid = strsplit(':', info)
+    mapid = tonumber(mapid)
+    npcid = tonumber(npcid)
+    if mapid == nil or npcid == nil then return end
     if button == "LeftButton" then
-        local mapid, npcid = strsplit(':', info)
-        mapid = tonumber(mapid)
-        npcid = tonumber(npcid)
-
-        if isTomTomloaded and WarfrontRareTracker.db.profile.tomtom.enableIntegration then
+       if isTomTomloaded and WarfrontRareTracker.db.profile.tomtom.enableIntegration then
             if IsShiftKeyDown() then
-                announceTomTom(mapid, npcid, true)
+                announceRare(mapid, npcid, "group")
             else
                 addToTomTom(mapid, npcid)
             end
         end
+    elseif button == "RightButton" and IsShiftKeyDown() then
+        announceRare(mapid, npcid, "local")
     end
 end
 
@@ -2076,6 +2135,8 @@ function WarfrontRareTracker:MenuTooltipOnLineEnter(self, info)
             lootTooltip:SetCell(line, 1, colorText("Shift Left-Click to announce in Party Chat.", colors.turqoise), "LEFT", 2)
         end
     end
+    line = lootTooltip:AddLine()
+    lootTooltip:SetCell(line, 1, colorText("Shift Right-Click to announce in /1.", colors.turqoise), "LEFT", 2)
 
     if lootTooltip:GetLineCount() > 1 then
         lootTooltip:Show()
@@ -2232,14 +2293,17 @@ end
 -------------------
 -- Worldmap Tooltip
 function WarfrontRareTracker:WorldmapTooltipOnClick(self, mapid, npcid, button)
-    if isTomTomloaded and WarfrontRareTracker.db.profile.tomtom.enableIntegration then
-        if button == "LeftButton" then
+    if mapid == nil or npcid == nil then return end
+    if button == "LeftButton" then
+       if isTomTomloaded and WarfrontRareTracker.db.profile.tomtom.enableIntegration then
             if IsShiftKeyDown() then
-                announceTomTom(mapid, npcid, true)
+                announceRare(mapid, npcid, "group")
             else
                 addToTomTom(mapid, npcid)
             end
         end
+    elseif button == "RightButton" and IsShiftKeyDown() then
+        announceRare(mapid, npcid, "local")
     end
 end
 
@@ -2262,7 +2326,7 @@ local function checkItemNameIsValid(itemname, drop)
     end
 end
 
-function WarfrontRareTracker:WorldmapTooltipOnEnter(self, mapid, npcid, NPC, minimap)
+function WarfrontRareTracker:WorldmapTooltipOnEnter(self, mapid, npcid, cave, minimap)
     if LibQTip:IsAcquired("WarfrontRareTrackerWorldmapTip") and worldmapTooltip then
         LibQTip.Release(worldmapTooltip)
         worldmapTooltip = nil
@@ -2273,7 +2337,10 @@ function WarfrontRareTracker:WorldmapTooltipOnEnter(self, mapid, npcid, NPC, min
     worldmapTooltip:SetPoint("TOPRIGHT", self, "BOTTOM")
 
     local line
-    if NPC then
+    if cave then
+        worldmapTooltip:AddLine(colorText("Cave entrance for: " .. getColoredRareName(mapid, npcid), colors.yellow))
+        worldmapTooltip:Show()
+    else
         local itemName, itemLink, itemTexture
         if minimap and WarfrontRareTracker.db.profile.minimapIcons.onMinimapHoover then
             if WarfrontRareTracker.db.profile.minimapIcons.minimapIconsCompactMode then
@@ -2379,6 +2446,8 @@ function WarfrontRareTracker:WorldmapTooltipOnEnter(self, mapid, npcid, NPC, min
                         worldmapTooltip:SetCell(line, 1, colorText("Shift Left-Click to announce in Party Chat.", colors.turqoise), "LEFT", 2)
                     end
                 end
+                line = worldmapTooltip:AddLine()
+                worldmapTooltip:SetCell(line, 1, colorText("Shift Right-Click to announce in /1.", colors.turqoise), "LEFT", 2)
             end
         elseif not minimap then
             worldmapTooltip:AddHeader(getColoredRareName(mapid, npcid))
@@ -2431,6 +2500,8 @@ function WarfrontRareTracker:WorldmapTooltipOnEnter(self, mapid, npcid, NPC, min
                     worldmapTooltip:SetCell(line, 1, colorText("Shift Left-Click to announce in Party Chat.", colors.turqoise), "LEFT", 2)
                 end
             end
+            line = worldmapTooltip:AddLine()
+            worldmapTooltip:SetCell(line, 1, colorText("Shift Right-Click to announce in /1.", colors.turqoise), "LEFT", 2)
         else
             if rareDB[mapid].rares[npcid].warning then
                 if worldmapTooltip:GetLineCount() > 1 then
@@ -2448,9 +2519,6 @@ function WarfrontRareTracker:WorldmapTooltipOnEnter(self, mapid, npcid, NPC, min
         if worldmapTooltip:GetLineCount() >= 1 then
             worldmapTooltip:Show()
         end
-    else
-        worldmapTooltip:AddLine(colorText("Cave entrance for: " .. getColoredRareName(mapid, npcid), colors.yellow))
-        worldmapTooltip:Show()
     end
 end
 
@@ -2642,7 +2710,7 @@ function WarfrontRareTracker:CreateNewMapIcon(mapid, npcid, caveicon)
         worldmapicon.mapid = mapid
         worldmapicon.cave = caveicon
         worldmapicon:SetScript("OnClick", function(self, button) WarfrontRareTracker:WorldmapTooltipOnClick(self, worldmapicon.mapid, worldmapicon.npcid, button) end)
-        worldmapicon:SetScript("OnEnter", function(self) WarfrontRareTracker:WorldmapTooltipOnEnter(self, worldmapicon.mapid, worldmapicon.npcid, true, false) end)
+        worldmapicon:SetScript("OnEnter", function(self) WarfrontRareTracker:WorldmapTooltipOnEnter(self, worldmapicon.mapid, worldmapicon.npcid, caveicon, false) end)
         worldmapicon:SetScript("OnLeave", function() WarfrontRareTracker:WorldmapTooltipOnLeave() end)
         table.insert(rareDB[mapid].worldmapIcons, worldmapicon)
         HBDPins:AddWorldMapIconMap("WarfrontRareTracker"..rareDB[mapid].zonename, worldmapicon, mapid, x, y, 1)
@@ -2660,7 +2728,7 @@ function WarfrontRareTracker:CreateNewMapIcon(mapid, npcid, caveicon)
         minimapIcon.mapid = mapid
         minimapIcon.cave = caveicon
         if self.db.profile.minimapIcons.onMinimapHoover then
-            minimapIcon:SetScript("OnEnter", function(self) WarfrontRareTracker:WorldmapTooltipOnEnter(self, minimapIcon.mapid, minimapIcon.npcid, true, true) end)
+            minimapIcon:SetScript("OnEnter", function(self) WarfrontRareTracker:WorldmapTooltipOnEnter(self, minimapIcon.mapid, minimapIcon.npcid, false, true) end)
             minimapIcon:SetScript("OnLeave", function() WarfrontRareTracker:WorldmapTooltipOnLeave() end)
         end
         table.insert(rareDB[mapid].minimapIcons, minimapIcon)

@@ -172,8 +172,8 @@ end
 
 function mod:MindTetherApplied(args) -- XXX Make it better perhaps? this is very simple atm.
 	if self:Me(args.destGUID) then
-		self:PersonalMessage(292971, CL.link:format(args.sourceName))
-		self:PlaySound(292971, "alert")
+		self:PersonalMessage(295444, CL.link:format(args.sourceName))
+		self:PlaySound(295444, "alert")
 	end
 end
 
@@ -254,7 +254,7 @@ function mod:DeliriumsDescent(args)
 
 	self:Message2(args.spellId, "orange")
 	self:PlaySound(args.spellId, "long")
-	self:Bar(args.spellId, 20)
+	self:Bar(args.spellId, 35)
 end
 
 -- Stage 4
