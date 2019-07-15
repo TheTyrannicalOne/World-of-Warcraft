@@ -288,9 +288,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541308945.74706,
 								["amount"] = -64,
+								["hp"] = 2378,
 								["srcname"] = "Deviate Venomwing",
 								["spellid"] = 7951,
-								["hp"] = 2378,
 							}, -- [6]
 							{
 								["ts"] = 1541308954.94607,
@@ -335,9 +335,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309080.58912,
 								["amount"] = -1046,
+								["hp"] = 2107,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 2107,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -876,23 +876,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309145.8691,
 								["amount"] = -273,
+								["hp"] = 2320,
 								["spellid"] = 8142,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 2320,
 							}, -- [10]
 							{
 								["ts"] = 1541309149.37011,
 								["amount"] = -561,
+								["hp"] = 2320,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 2320,
 							}, -- [11]
 							{
 								["ts"] = 1541309153.37312,
 								["amount"] = -810,
+								["hp"] = 1596,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 1596,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -905,9 +905,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309156.88614,
 								["amount"] = -1504,
+								["hp"] = 1499,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 1499,
 							}, -- [14]
 							{
 								["spellname"] = "Spinalis dies",
@@ -1186,16 +1186,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309159.383,
 								["spellname"] = "Spirit of Redemption dies",
+								["hp"] = 0,
 								["spellid"] = 41220,
 								["srcname"] = "Lumael",
-								["hp"] = 0,
 							}, -- [1]
 							{
 								["ts"] = 1541309127.30102,
 								["amount"] = -756,
+								["hp"] = 1380,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 1380,
 							}, -- [2]
 							{
 								["ts"] = 1541309128.48603,
@@ -1216,9 +1216,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309130.81505,
 								["amount"] = -940,
+								["hp"] = 1370,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 1370,
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -1247,9 +1247,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309134.31309,
 								["amount"] = -928,
+								["hp"] = 1549,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 1549,
 							}, -- [9]
 							{
 								["absorb"] = 0,
@@ -1270,9 +1270,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309137.81612,
 								["amount"] = -863,
+								["hp"] = 1367,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 1367,
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -1285,9 +1285,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541309144.34214,
 								["amount"] = -1007,
+								["hp"] = 876,
 								["spellid"] = 88163,
 								["srcname"] = "Verdan the Everliving",
-								["hp"] = 876,
 							}, -- [14]
 							{
 								["spellname"] = "Lumael dies",
@@ -1305,9 +1305,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541308600.48301,
 								["amount"] = -183,
+								["hp"] = 1606,
 								["spellid"] = 88163,
 								["srcname"] = "Deviate Shambler",
-								["hp"] = 1606,
 							}, -- [1]
 							{
 								["absorb"] = 0,
@@ -1320,16 +1320,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541308601.55603,
 								["amount"] = -512,
+								["hp"] = 1276,
 								["spellid"] = 9532,
 								["srcname"] = "Druid of the Fang",
-								["hp"] = 1276,
 							}, -- [3]
 							{
 								["ts"] = 1541308602.48704,
 								["amount"] = -178,
+								["hp"] = 1276,
 								["spellid"] = 88163,
 								["srcname"] = "Deviate Shambler",
-								["hp"] = 1276,
 							}, -- [4]
 							{
 								["absorb"] = 0,
@@ -1342,51 +1342,51 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541308604.48406,
 								["amount"] = -177,
+								["hp"] = 1463,
 								["spellid"] = 88163,
 								["srcname"] = "Deviate Shambler",
-								["hp"] = 1463,
 							}, -- [6]
 							{
 								["ts"] = 1541308605.01407,
 								["amount"] = -205,
+								["hp"] = 1286,
 								["spellid"] = 88163,
 								["srcname"] = "Druid of the Fang",
-								["hp"] = 1286,
 							}, -- [7]
 							{
 								["ts"] = 1541308606.02208,
 								["amount"] = -129,
+								["hp"] = 1081,
 								["spellid"] = 88163,
 								["srcname"] = "Druid of the Fang",
-								["hp"] = 1081,
 							}, -- [8]
 							{
 								["ts"] = 1541308607.02409,
 								["amount"] = -396,
+								["hp"] = 952,
 								["spellid"] = 88163,
 								["srcname"] = "Druid of the Fang",
-								["hp"] = 952,
 							}, -- [9]
 							{
 								["ts"] = 1541308608.0191,
 								["amount"] = -115,
+								["hp"] = 556,
 								["spellid"] = 88163,
 								["srcname"] = "Druid of the Fang",
-								["hp"] = 556,
 							}, -- [10]
 							{
 								["ts"] = 1541308609.02611,
 								["amount"] = -245,
+								["hp"] = 441,
 								["spellid"] = 88163,
 								["srcname"] = "Druid of the Fang",
-								["hp"] = 441,
 							}, -- [11]
 							{
 								["ts"] = 1541308611.03212,
 								["amount"] = -237,
+								["hp"] = 196,
 								["spellid"] = 88163,
 								["srcname"] = "Druid of the Fang",
-								["hp"] = 196,
 							}, -- [12]
 							{
 								["spellname"] = "Lumael dies",
@@ -1397,9 +1397,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1541308598.47114,
 								["amount"] = -212,
+								["hp"] = 1453,
 								["spellid"] = 88163,
 								["srcname"] = "Deviate Shambler",
-								["hp"] = 1453,
 							}, -- [14]
 							{
 								["absorb"] = 0,
@@ -1413,9 +1413,9 @@ SkadaPerCharDB = {
 						},
 					}, -- [2]
 				},
-				["shielding"] = 0,
-				["deathlog"] = {
+				["power"] = {
 				},
+				["shielding"] = 0,
 				["id"] = "Player-61-0BAB1A8A",
 				["healed"] = {
 					["Player-120-0892A140"] = {
@@ -1574,7 +1574,7 @@ SkadaPerCharDB = {
 				},
 				["alertCount"] = 0,
 				["ffdamagedone"] = 0,
-				["power"] = {
+				["deathlog"] = {
 				},
 				["alert"] = {
 				},
@@ -2281,16 +2281,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309159.383,
 									["spellname"] = "Spirit of Redemption dies",
+									["hp"] = 0,
 									["spellid"] = 41220,
 									["srcname"] = "Lumael",
-									["hp"] = 0,
 								}, -- [1]
 								{
 									["ts"] = 1541309127.30102,
 									["amount"] = -756,
+									["hp"] = 1380,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 1380,
 								}, -- [2]
 								{
 									["ts"] = 1541309128.48603,
@@ -2311,9 +2311,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309130.81505,
 									["amount"] = -940,
+									["hp"] = 1370,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 1370,
 								}, -- [5]
 								{
 									["absorb"] = 0,
@@ -2342,9 +2342,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309134.31309,
 									["amount"] = -928,
+									["hp"] = 1549,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 1549,
 								}, -- [9]
 								{
 									["absorb"] = 0,
@@ -2365,9 +2365,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309137.81612,
 									["amount"] = -863,
+									["hp"] = 1367,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 1367,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -2380,9 +2380,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309144.34214,
 									["amount"] = -1007,
+									["hp"] = 876,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 876,
 								}, -- [14]
 								{
 									["spellname"] = "Lumael dies",
@@ -2518,34 +2518,6 @@ SkadaPerCharDB = {
 							["max"] = 296,
 							["damage"] = 780,
 						},
-						["Arcane Missiles"] = {
-							["hitmin"] = 95,
-							["criticalamount"] = 2302,
-							["id"] = 7268,
-							["hitamount"] = 5540,
-							["criticalmin"] = 191,
-							["hitmax"] = 98,
-							["min"] = 95,
-							["criticalmax"] = 193,
-							["critical"] = 12,
-							["hit"] = 58,
-							["totalhits"] = 70,
-							["school"] = 64,
-							["max"] = 193,
-							["damage"] = 7842,
-						},
-						["Frost Nova"] = {
-							["hitmin"] = 9,
-							["id"] = 122,
-							["min"] = 9,
-							["hitamount"] = 9,
-							["hitmax"] = 9,
-							["hit"] = 1,
-							["school"] = 16,
-							["max"] = 9,
-							["totalhits"] = 1,
-							["damage"] = 9,
-						},
 						["Arcane Barrage"] = {
 							["hitmin"] = 152,
 							["criticalamount"] = 618,
@@ -2562,13 +2534,17 @@ SkadaPerCharDB = {
 							["max"] = 337,
 							["damage"] = 1967,
 						},
-						["Counterspell"] = {
-							["school"] = 2,
+						["Frost Nova"] = {
+							["hitmin"] = 9,
+							["id"] = 122,
+							["min"] = 9,
+							["hitamount"] = 9,
+							["hitmax"] = 9,
+							["hit"] = 1,
+							["school"] = 16,
+							["max"] = 9,
 							["totalhits"] = 1,
-							["max"] = 0,
-							["IMMUNE"] = 1,
-							["id"] = 2139,
-							["damage"] = 0,
+							["damage"] = 9,
 						},
 						["Slow"] = {
 							["school"] = 2,
@@ -2577,6 +2553,30 @@ SkadaPerCharDB = {
 							["IMMUNE"] = 1,
 							["id"] = 31589,
 							["damage"] = 0,
+						},
+						["Counterspell"] = {
+							["school"] = 2,
+							["totalhits"] = 1,
+							["max"] = 0,
+							["IMMUNE"] = 1,
+							["id"] = 2139,
+							["damage"] = 0,
+						},
+						["Arcane Missiles"] = {
+							["hitmin"] = 95,
+							["criticalamount"] = 2302,
+							["id"] = 7268,
+							["hitamount"] = 5540,
+							["criticalmin"] = 191,
+							["hitmax"] = 98,
+							["min"] = 95,
+							["criticalmax"] = 193,
+							["critical"] = 12,
+							["hit"] = 58,
+							["totalhits"] = 70,
+							["school"] = 64,
+							["max"] = 193,
+							["damage"] = 7842,
 						},
 						["Arcane Explosion"] = {
 							["hitmin"] = 114,
@@ -2702,9 +2702,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541308945.74706,
 									["amount"] = -64,
+									["hp"] = 2378,
 									["srcname"] = "Deviate Venomwing",
 									["spellid"] = 7951,
-									["hp"] = 2378,
 								}, -- [6]
 								{
 									["ts"] = 1541308954.94607,
@@ -2749,9 +2749,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309080.58912,
 									["amount"] = -1046,
+									["hp"] = 2107,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 2107,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -3121,23 +3121,23 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309145.8691,
 									["amount"] = -273,
+									["hp"] = 2320,
 									["spellid"] = 8142,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 2320,
 								}, -- [10]
 								{
 									["ts"] = 1541309149.37011,
 									["amount"] = -561,
+									["hp"] = 2320,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 2320,
 								}, -- [11]
 								{
 									["ts"] = 1541309153.37312,
 									["amount"] = -810,
+									["hp"] = 1596,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 1596,
 								}, -- [12]
 								{
 									["absorb"] = 0,
@@ -3150,9 +3150,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541309156.88614,
 									["amount"] = -1504,
+									["hp"] = 1499,
 									["spellid"] = 88163,
 									["srcname"] = "Verdan the Everliving",
-									["hp"] = 1499,
 								}, -- [14]
 								{
 									["spellname"] = "Spinalis dies",
@@ -6250,9 +6250,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541308600.48301,
 									["amount"] = -183,
+									["hp"] = 1606,
 									["spellid"] = 88163,
 									["srcname"] = "Deviate Shambler",
-									["hp"] = 1606,
 								}, -- [1]
 								{
 									["absorb"] = 0,
@@ -6265,16 +6265,16 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541308601.55603,
 									["amount"] = -512,
+									["hp"] = 1276,
 									["spellid"] = 9532,
 									["srcname"] = "Druid of the Fang",
-									["hp"] = 1276,
 								}, -- [3]
 								{
 									["ts"] = 1541308602.48704,
 									["amount"] = -178,
+									["hp"] = 1276,
 									["spellid"] = 88163,
 									["srcname"] = "Deviate Shambler",
-									["hp"] = 1276,
 								}, -- [4]
 								{
 									["absorb"] = 0,
@@ -6287,51 +6287,51 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541308604.48406,
 									["amount"] = -177,
+									["hp"] = 1463,
 									["spellid"] = 88163,
 									["srcname"] = "Deviate Shambler",
-									["hp"] = 1463,
 								}, -- [6]
 								{
 									["ts"] = 1541308605.01407,
 									["amount"] = -205,
+									["hp"] = 1286,
 									["spellid"] = 88163,
 									["srcname"] = "Druid of the Fang",
-									["hp"] = 1286,
 								}, -- [7]
 								{
 									["ts"] = 1541308606.02208,
 									["amount"] = -129,
+									["hp"] = 1081,
 									["spellid"] = 88163,
 									["srcname"] = "Druid of the Fang",
-									["hp"] = 1081,
 								}, -- [8]
 								{
 									["ts"] = 1541308607.02409,
 									["amount"] = -396,
+									["hp"] = 952,
 									["spellid"] = 88163,
 									["srcname"] = "Druid of the Fang",
-									["hp"] = 952,
 								}, -- [9]
 								{
 									["ts"] = 1541308608.0191,
 									["amount"] = -115,
+									["hp"] = 556,
 									["spellid"] = 88163,
 									["srcname"] = "Druid of the Fang",
-									["hp"] = 556,
 								}, -- [10]
 								{
 									["ts"] = 1541308609.02611,
 									["amount"] = -245,
+									["hp"] = 441,
 									["spellid"] = 88163,
 									["srcname"] = "Druid of the Fang",
-									["hp"] = 441,
 								}, -- [11]
 								{
 									["ts"] = 1541308611.03212,
 									["amount"] = -237,
+									["hp"] = 196,
 									["spellid"] = 88163,
 									["srcname"] = "Druid of the Fang",
-									["hp"] = 196,
 								}, -- [12]
 								{
 									["spellname"] = "Lumael dies",
@@ -6342,9 +6342,9 @@ SkadaPerCharDB = {
 								{
 									["ts"] = 1541308598.47114,
 									["amount"] = -212,
+									["hp"] = 1453,
 									["spellid"] = 88163,
 									["srcname"] = "Deviate Shambler",
-									["hp"] = 1453,
 								}, -- [14]
 								{
 									["absorb"] = 0,

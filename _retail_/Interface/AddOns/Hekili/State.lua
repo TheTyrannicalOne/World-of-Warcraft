@@ -435,6 +435,7 @@ state.Enum = Enum
 state.FindUnitBuffByID = ns.FindUnitBuffByID
 state.FindUnitDebuffByID = ns.FindUnitDebuffByID
 state.GetItemCount = GetItemCount
+state.GetItemGem = GetItemGem
 state.GetShapeshiftForm = GetShapeshiftForm
 state.GetShapeshiftFormInfo = GetShapeshiftFormInfo
 state.GetSpellCount = GetSpellCount
@@ -449,14 +450,21 @@ state.IsSpellKnown = IsSpellKnown
 state.IsSpellKnownOrOverridesKnown = IsSpellKnownOrOverridesKnown
 state.IsUsableSpell = IsUsableSpell
 state.UnitBuff = UnitBuff
-state.UnitDebuff = UnitDebuff
 state.UnitCanAttack = UnitCanAttack
 state.UnitCastingInfo = UnitCastingInfo
 state.UnitChannelInfo = UnitChannelInfo
 state.UnitClassification = UnitClassification
+state.UnitDebuff = UnitDebuff
+state.UnitExists = UnitExists
+state.UnitHealth = UnitHealth
+state.UnitHealthMax = UnitHealthMax
+state.UnitName = UnitName
+state.UnitIsFriend = UnitIsFriend
 state.UnitIsUnit = UnitIsUnit
 state.UnitIsPlayer = UnitIsPlayer
 state.UnitLevel = UnitLevel
+state.UnitPower = UnitPower
+state.UnitPowerMax = UnitPowerMax
 state.abs = math.abs
 state.ceil = math.ceil
 state.floor = math.floor
@@ -599,7 +607,7 @@ function state.gainChargeTime( action, time, debug )
         else
             cooldown.recharge_began = cooldown.next_charge
             cooldown.next_charge = cooldown.next_charge + ability.recharge
-            cooldown.recharge = cooldown.next_charge - ( state.time + time )
+            cooldown.recharge = cooldown.next_charge - ( state.query_time + time )
         end    
     end
 end
@@ -651,7 +659,7 @@ do
         end
 
         cycle.expires = cDebuff.expires
-        cycle.minTTD  = ability.min_ttd
+        cycle.minTTD  = max( state.settings.cycle_min, ability.min_ttd or 0 )
         cycle.maxTTD  = ability.max_ttd
 
         cycle.aura = aura
@@ -1712,12 +1720,6 @@ local mt_state = {
             local start = t.combat > 0 and t.combat or ( t.false_start > 0 and t.false_start or t.query_time )
             return t.query_time - start
 
-            --[[ if ability and ability.passive then return 0 end
-                return t.offset
-            end
-            return t.now + ( t.offset or 0 ) - ( t.combat > 0 and t.combat or t.false_start ) + ( ( t.combat > 0 or t.false_start ) and t.delay or 0 ) ]]
-
-            -- These are all action-related keywords, use 'this_action' to reference the relevant action.
         elseif k == 'cast_time' then
             return ability and ability.cast or 0
 
@@ -2331,7 +2333,7 @@ local mt_default_cooldown = {
 
         if ability and rawget( ability, "item" ) then
             GetCooldown = _G.GetItemCooldown
-            id = ability.item
+            id = ability.itemCd or ability.item
         end
 
         local raw = false
@@ -3412,7 +3414,7 @@ do
 
     state.variable = setmetatable( {}, {
         __index = function( t, var )
-            -- local debug = Hekili.ActiveDebug
+            local debug = Hekili.ActiveDebug
 
             local data = db[ var ]
             if not data then
@@ -3524,16 +3526,16 @@ do
                                     elseif op == "mul" then
                                         value = value * newVal
                                     elseif op == "pow" then
-                                        value = value ^ pow
+                                        value = value ^ newVal
                                     elseif op == "sub" then
-                                        value = value - sub
+                                        value = value - newVal
                                     end
                                 end
                             end
                         end
                     end
 
-                    -- if debug then Hekili:Debug( "var[%s] [%02d/%s] :: op: %s, conditions: %s -- [%s]; value: %s", var, i, scriptID, state.args.op or "autoset", scripts:GetConditionsAndValues( scriptID ), tostring( passed ), tostring( value ) ) end
+                    if debug then Hekili:Debug( "var[%s] [%02d/%s] :: op: %s, conditions: %s -- [%s]; value: %s", var, i, scriptID, state.args.op or "autoset", scripts:GetConditionsAndValues( scriptID ), tostring( passed ), tostring( value ) ) end
                 end
             end
 
@@ -4806,6 +4808,8 @@ function state.reset( dispName )
     state.cast_start = 0
     state.false_start = 0
 
+    state.resetting = true
+
     state.ClearCycle()
 
     state.selectionTime = 60
@@ -5070,6 +5074,19 @@ function state.reset( dispName )
         ability = class.abilities[ castID ]
 
         casting = ability and ability.key or formatKey( state.buff.casting.name )
+
+        if castID == class.abilities.cyclotronic_blast.id then
+            -- Set up Pocket-Sized Computation Device.
+            if state.buff.casting.v3 then
+                -- We are in the channeled part of the cast.
+                setCooldown( "pocketsized_computation_device", state.buff.casting.applied + 120 - state.now )
+                setCooldown( "global_cooldown", cast_time )
+            else
+                -- This is the casting portion.
+                casting = class.abilities.pocketsized_computation_device.key
+                state.buff.casting.v1 = class.abilities.pocketsized_computation_device.id
+            end
+        end
     end
 
     ns.callHook( "reset_precast" )
@@ -5139,6 +5156,8 @@ function state.reset( dispName )
             state.advance( delay )
         end
     end
+
+    state.resetting = nil
 end
 
 
@@ -5164,7 +5183,7 @@ function state.advance( time )
     if Hekili.ActiveDebug then Hekili:Debug( "Advancing clock by %.2f...", time ) end
 
     time = ns.callHook( 'advance', time ) or time
-    time = roundUp( time, 2 )
+    if not state.resetting then time = roundUp( time, 2 ) end
 
     state.delay = 0
 
@@ -5645,16 +5664,6 @@ end
 local power_tick_rate = 0.115
 
 
-local cacheTTR = {}
-local TTRtime = 0
-
-
-local flowControl = {
-    call_action_list = true,
-    run_action_list = true,
-    variable = true,
-}
-
 
 -- Needs to be expanded to handle energy regen before Rogue, Monk, Druid will work.
 function state:TimeToReady( action, pool )
@@ -5714,13 +5723,17 @@ function state:TimeToReady( action, pool )
         wait = max( wait, self.buff[ ability.nobuff ].remains )
     end
 
+    -- Need to house this in an encounter module, really.
+    if self.debuff.repeat_performance.up and self.prev[1][ action ] then
+        wait = max( wait, self.debuff.repeat_performance.remains )
+    end
+
     -- If ready is a function, it returns time.
     -- Ignore this if we are just checking pool_resources.
     if not pool and ability.readyTime then
         wait = max( wait, ability.readyTime )
     end
 
-    -- cacheTTR[ action ] = wait
     return max( wait, self.delayMin )
 end
 

@@ -1,8 +1,8 @@
 
 OneRing_Config = {
 	["CharProfiles"] = {
-		["Argent Dawn-Shanyt"] = "Shanyt",
 		["Black Dragonflight-Durlok-3"] = "default",
+		["Argent Dawn-Shanyt"] = "Shanyt",
 	},
 	["_GameVersion"] = "8.2.0",
 	["_OPieVersion"] = "Walnut 3 (3.100)",
@@ -11,69 +11,66 @@ OneRing_Config = {
 			["Bindings"] = {
 				["OPieAutoQuest"] = false,
 				["Mounts2"] = "ALT-Q",
-				["Utility2"] = "ALT-E",
-				["Mounts3"] = "ALT-Q",
 				["Utility1"] = "ALT-E",
+				["Mounts3"] = "ALT-Q",
+				["Utility2"] = "ALT-E",
 			},
 		},
 		["Shanyt"] = {
 			["Bindings"] = {
 				["Mounts"] = "ALT-Q",
-				["Utility"] = "ALT-E",
 				["OPieAutoQuest"] = false,
+				["Utility"] = "ALT-E",
 			},
 		},
 	},
 	["PersistentStorage"] = {
 		["RingKeeper"] = {
-			["SpecMenu"] = {
+			["Mounts3"] = {
 				{
-					"specset", -- [1]
-					1, -- [2]
-					["sliceToken"] = "OPCTA1",
+					["sliceToken"] = "ABuedW477Ker",
+					["id"] = 150544,
 				}, -- [1]
 				{
-					"specset", -- [1]
-					2, -- [2]
-					["sliceToken"] = "OPCTA2",
+					["sliceToken"] = "ABuedW477Kee",
+					["id"] = 64731,
 				}, -- [2]
 				{
-					"specset", -- [1]
-					3, -- [2]
-					["sliceToken"] = "OPCTA3",
+					["sliceToken"] = "ABuedW477Kew",
+					["id"] = 118089,
 				}, -- [3]
 				{
-					"specset", -- [1]
-					4, -- [2]
-					["sliceToken"] = "OPCTA4",
+					["sliceToken"] = "ABuedW477Keq",
+					["id"] = 98718,
 				}, -- [4]
 				{
-					["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
-					["sliceToken"] = "OPCTAc",
+					["sliceToken"] = "ABuedW477KwM",
+					["id"] = 228919,
 				}, -- [5]
 				{
-					"item", -- [1]
-					110560, -- [2]
-					["sliceToken"] = "OPCTAg",
+					["sliceToken"] = "ABuedW477KwN",
+					["id"] = 223018,
 				}, -- [6]
 				{
-					"item", -- [1]
-					140192, -- [2]
-					["sliceToken"] = "OPCTAd",
+					["sliceToken"] = "ABuedW477KwB",
+					["id"] = 272770,
 				}, -- [7]
 				{
-					"item", -- [1]
-					6948, -- [2]
-					["sliceToken"] = "OPCTAh",
+					["sliceToken"] = "ABuedW477Kw/",
+					["id"] = 122708,
 				}, -- [8]
 				{
-					"toy", -- [1]
-					64488, -- [2]
-					["sliceToken"] = "OPCTAi",
+					["sliceToken"] = "ABuedW477KwV",
+					["id"] = 245725,
 				}, -- [9]
-				["name"] = "Specializations and Travel",
+				{
+					["sliceToken"] = "ABuedW477KwC",
+					["id"] = 75973,
+				}, -- [10]
+				["name"] = "Mounts",
 				["save"] = true,
-				["hotkey"] = "ALT-H",
+				["hotkey"] = "ALT-Q",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 			["Utility1"] = {
 				{
@@ -81,10 +78,10 @@ OneRing_Config = {
 					64488, -- [2]
 					["sliceToken"] = "ABuedyqmNB16",
 				}, -- [1]
-				["name"] = "Utility",
+				["limit"] = "Vancard-Zul'jin",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Utility",
 			},
 			["Mounts"] = {
 				{
@@ -157,85 +154,85 @@ OneRing_Config = {
 			},
 			["Mounts2"] = {
 				{
-					["sliceToken"] = "ABuedyqmNB1k",
 					["id"] = 150544,
+					["sliceToken"] = "ABuedyqmNB1k",
 				}, -- [1]
 				{
-					["sliceToken"] = "ABuedyqmNB1r",
 					["id"] = 64731,
+					["sliceToken"] = "ABuedyqmNB1r",
 				}, -- [2]
 				{
-					["sliceToken"] = "ABuedyqmNB1h",
 					["id"] = 118089,
+					["sliceToken"] = "ABuedyqmNB1h",
 				}, -- [3]
 				{
-					["sliceToken"] = "ABuedyqmNB1s",
 					["id"] = 223018,
+					["sliceToken"] = "ABuedyqmNB1s",
 				}, -- [4]
 				{
-					["sliceToken"] = "ABuedyqmNB1e",
 					["id"] = 98718,
+					["sliceToken"] = "ABuedyqmNB1e",
 				}, -- [5]
 				{
-					["sliceToken"] = "ABuedyqmNB1a",
 					["id"] = 122708,
+					["sliceToken"] = "ABuedyqmNB1a",
 				}, -- [6]
 				{
-					["sliceToken"] = "ABuedyqmNB1f",
 					["id"] = 88990,
+					["sliceToken"] = "ABuedyqmNB1f",
 				}, -- [7]
 				{
-					["sliceToken"] = "ABuedyqmNB13",
 					["id"] = 142878,
+					["sliceToken"] = "ABuedyqmNB13",
 				}, -- [8]
 				{
-					["sliceToken"] = "ABuedyqmNB1p",
 					["id"] = 215159,
+					["sliceToken"] = "ABuedyqmNB1p",
 				}, -- [9]
 				{
-					["sliceToken"] = "ABuedyqmNB12",
 					["id"] = 180545,
+					["sliceToken"] = "ABuedyqmNB12",
 				}, -- [10]
 				{
-					["sliceToken"] = "ABuedyqmNB1i",
 					["id"] = 258845,
+					["sliceToken"] = "ABuedyqmNB1i",
 				}, -- [11]
 				{
-					["sliceToken"] = "ABuedyqmNB1j",
 					["id"] = 230987,
+					["sliceToken"] = "ABuedyqmNB1j",
 				}, -- [12]
 				{
-					["sliceToken"] = "ABuedyqmNB1o",
 					["id"] = 247402,
+					["sliceToken"] = "ABuedyqmNB1o",
 				}, -- [13]
 				{
-					["sliceToken"] = "ABuedyqmNB1y",
 					["id"] = 35018,
+					["sliceToken"] = "ABuedyqmNB1y",
 				}, -- [14]
 				{
-					["sliceToken"] = "ABuedyqmNB1v",
 					["id"] = 41516,
+					["sliceToken"] = "ABuedyqmNB1v",
 				}, -- [15]
 				{
-					["sliceToken"] = "ABuedyqmNB1c",
 					["id"] = 39801,
+					["sliceToken"] = "ABuedyqmNB1c",
 				}, -- [16]
 				{
-					["sliceToken"] = "ABuedyqmNB1t",
 					["id"] = 130092,
+					["sliceToken"] = "ABuedyqmNB1t",
 				}, -- [17]
 				{
-					["sliceToken"] = "ABuedyqmNB1u",
 					["id"] = 245725,
+					["sliceToken"] = "ABuedyqmNB1u",
 				}, -- [18]
 				{
-					["sliceToken"] = "ABuedyqmNBrM",
 					["id"] = 75973,
+					["sliceToken"] = "ABuedyqmNBrM",
 				}, -- [19]
-				["limit"] = "Vancard-Zul'jin",
+				["name"] = "Mounts",
 				["save"] = true,
 				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["limit"] = "Vancard-Zul'jin",
 			},
 			["Utility"] = {
 				{
@@ -268,56 +265,59 @@ OneRing_Config = {
 					"BattlePet-0-0000064BC55A", -- [2]
 					["sliceToken"] = "ABuede=1Srtr",
 				}, -- [6]
-				["limit"] = "Shanyt-ArgentDawn",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Shanyt-ArgentDawn",
 			},
-			["Mounts3"] = {
+			["SpecMenu"] = {
 				{
-					["id"] = 150544,
-					["sliceToken"] = "ABuedW477Ker",
+					"specset", -- [1]
+					1, -- [2]
+					["sliceToken"] = "OPCTA1",
 				}, -- [1]
 				{
-					["id"] = 64731,
-					["sliceToken"] = "ABuedW477Kee",
+					"specset", -- [1]
+					2, -- [2]
+					["sliceToken"] = "OPCTA2",
 				}, -- [2]
 				{
-					["id"] = 118089,
-					["sliceToken"] = "ABuedW477Kew",
+					"specset", -- [1]
+					3, -- [2]
+					["sliceToken"] = "OPCTA3",
 				}, -- [3]
 				{
-					["id"] = 98718,
-					["sliceToken"] = "ABuedW477Keq",
+					"specset", -- [1]
+					4, -- [2]
+					["sliceToken"] = "OPCTA4",
 				}, -- [4]
 				{
-					["id"] = 228919,
-					["sliceToken"] = "ABuedW477KwM",
+					["sliceToken"] = "OPCTAc",
+					["id"] = "/cast {{spell:50977}}; {{spell:193753}}; {{spell:126892}}; {{spell:193759}}",
 				}, -- [5]
 				{
-					["id"] = 223018,
-					["sliceToken"] = "ABuedW477KwN",
+					"item", -- [1]
+					110560, -- [2]
+					["sliceToken"] = "OPCTAg",
 				}, -- [6]
 				{
-					["id"] = 272770,
-					["sliceToken"] = "ABuedW477KwB",
+					"item", -- [1]
+					140192, -- [2]
+					["sliceToken"] = "OPCTAd",
 				}, -- [7]
 				{
-					["id"] = 122708,
-					["sliceToken"] = "ABuedW477Kw/",
+					"item", -- [1]
+					6948, -- [2]
+					["sliceToken"] = "OPCTAh",
 				}, -- [8]
 				{
-					["id"] = 245725,
-					["sliceToken"] = "ABuedW477KwV",
+					"toy", -- [1]
+					64488, -- [2]
+					["sliceToken"] = "OPCTAi",
 				}, -- [9]
-				{
-					["id"] = 75973,
-					["sliceToken"] = "ABuedW477KwC",
-				}, -- [10]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Specializations and Travel",
 				["save"] = true,
-				["hotkey"] = "ALT-Q",
-				["name"] = "Mounts",
+				["hotkey"] = "ALT-H",
 			},
 			["Utility2"] = {
 				{
@@ -330,10 +330,10 @@ OneRing_Config = {
 					140192, -- [2]
 					["sliceToken"] = "ABuedW477Kes",
 				}, -- [2]
-				["limit"] = "Durlok-BlackDragonflight",
+				["name"] = "Utility",
 				["save"] = true,
 				["hotkey"] = "ALT-E",
-				["name"] = "Utility",
+				["limit"] = "Durlok-BlackDragonflight",
 			},
 		},
 	},

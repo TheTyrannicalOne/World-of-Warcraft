@@ -1,9 +1,7 @@
 # BigWigs
 
-## [v153.2](https://github.com/BigWigsMods/BigWigs/tree/v153.2) (2019-07-13)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v153.1...v153.2)
+## [v154.1](https://github.com/BigWigsMods/BigWigs/tree/v154.1) (2019-07-14)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v154...v154.1)
 
-- EternalPalace/Zaqul: Fix Mind Tether messages  
-- EternalPalace/LadyAshvane: Fix an oops  
-- EternalPalace/LadyAshvane: Add Cutting Coral warnings when standing inside of it  
-- EternalPalace/AbyssalCommander: Throttle Mark warnings to reduce spam  
+- EternalPalace/QueenAzshara: Adjust intermission 1 trigger  
+- EternalPalace/QueenAzshara: Fix Arcane Burst say countdown being too fast  

@@ -580,6 +580,28 @@ do
             end
         end
 
+        -- Improve Pocket-Sized Computronic Device.
+        if state.equipped.pocketsized_computation_device then
+            local tName = GetItemInfo( 167555 )
+            local redName, redLink = GetItemGem( tName, 1 )
+            
+            if redName and redLink then
+                local redID = tonumber( redLink:match("item:(%d+)") )
+                local action = class.itemMap[ redID ]
+
+                if action then
+                    state.set_bonus[ action ] = 1
+                    state.set_bonus[ redID ] = 1
+                    class.abilities.pocketsized_computation_device = class.abilities[ action ]
+                    class.abilities[ tName ] = class.abilities[ action ]
+                    insert( state.items, "pocketsized_computation_device" )
+                end
+            else
+                class.abilities.pocketsized_computation_device = class.abilities.inactive_red_punchcard
+                class.abilities[ tName ] = class.abilities.inactive_red_punchcard
+            end
+        end
+
         ns.updatePowers()
         ns.updateTalents()
 
@@ -677,7 +699,7 @@ function state:AddToHistory( spellID, destGUID )
     player.lastcast = key
     player.casttime = now
 
-    if ability then
+    if ability and not ability.essence then
         local history = self.prev.history
         insert( history, 1, key )
         history[6] = nil
@@ -896,7 +918,7 @@ local dmg_events = {
 local death_events = {
     UNIT_DIED               = true,
     UNIT_DESTROYED          = true,
-    UNIT_DISSSIPATES        = true,
+    UNIT_DISSIPATES        = true,
     PARTY_KILL              = true,
     SPELL_INSTAKILL         = true,
 }
@@ -1036,7 +1058,7 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
         if aura then            
             if hostile and sourceGUID ~= destGUID and not aura.friendly then
                 -- Aura Tracking
-                if subtype == 'SPELL_AURA_APPLIED'  or subtype == 'SPELL_AURA_REFRESH' or subtype == 'SPELL_AURA_APPLIED_DOSE' then
+                if subtype == 'SPELL_AURA_APPLIED' or subtype == 'SPELL_AURA_REFRESH' or subtype == 'SPELL_AURA_APPLIED_DOSE' then
                     ns.trackDebuff( spellID, destGUID, time, true )
                     ns.updateTarget( destGUID, time, sourceGUID == state.GUID )
 
@@ -1072,12 +1094,12 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
 
         if hostile and dmg_events[ subtype ] and not dmg_filtered[ spellID ] then
             -- Don't wipe overkill targets in rested areas (it is likely a dummy).
+            -- Interrupt is actually overkill.
             if not IsResting( "player" ) and ( ( ( subtype == "SPELL_DAMAGE" or subtype == "SPELL_PERIODIC_DAMAGE" ) and interrupt > 0 ) or ( subtype == "SWING_DAMAGE" and spellName > 0 ) ) and ns.isTarget( destGUID ) then
-                -- Interrupt is actually overkill.
                 ns.eliminateUnit( destGUID, true )
                 ns.forceRecount()
                 Hekili:ForceUpdate( "SPELL_DAMAGE_OVERKILL" )
-            else
+            elseif not ( subtype == "SPELL_MISSED" and amount == "IMMUNE" ) then
                 ns.updateTarget( destGUID, time, sourceGUID == state.GUID )
             end
 

@@ -4006,6 +4006,20 @@ do
                                     order = 8
                                 },
 
+                                cycle_min = {
+                                    type = "range",
+                                    name = "Minimum Target Time-to-Die",
+                                    desc = "When |cffffd100Recommend Target Swaps|r is checked, this value determines which targets are counted for target swapping purposes.  If set to 5, the addon will " ..
+                                            "not recommend swapping to a target that will die in fewer than 5 seconds.  This can be beneficial to avoid applying damage-over-time effects to a target that will die " ..
+                                            "too quickly to be damaged by them.\n\nSet to 0 to count all detected targets.",
+                                    width = "full",
+                                    min = 0,
+                                    max = 15,
+                                    step = 1,
+                                    hidden = function() return not self.DB.profile.specs[ id ].cycle end,
+                                    order = 9
+                                },
+
                                 aoe = {
                                     type = "range",
                                     name = "AOE Display:  Minimum Targets",
@@ -4014,7 +4028,7 @@ do
                                     min = 2,
                                     max = 5,
                                     step = 1,
-                                    order = 9,
+                                    order = 10,
                                 },
                             }
                         },
@@ -8539,60 +8553,10 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'pet.X.Y.Z...' to 'Z...' (" .. times .. "x)." )
     end
 
-    --[[ i, times = i:gsub( "gcd%.max", "gcd" )
+    --[[ Reverting; this should be a warning and not an autoconversion.
+    i, times = i:gsub( "target%.?1?%.?time_to_die", "time_to_die" )
     if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Converted 'gcd.max' to 'gcd' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "gcd%.remains", "cooldown.global_cooldown.remains" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Converted gcd.remains to cooldown.global_cooldown.remains (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "[!+-%*]?raid_event[.a-z0-9_><=~%-%+*]+", "" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Removed 'raid_event' check(s) (" .. times .. "x)." )
-
-        local cleaning = true
-        i = i:gsub( "||", "|" )
-        while( cleaning ) do
-
-            cleaning = false
-            i, times = i:gsub( "%(%)", "" )
-            cleaning = cleaning or times > 0
-
-            i, times = i:gsub( "^[|&]+", "" )
-            cleaning = cleaning or times > 0
-
-            i, times = i:gsub( "[|&]+$", "" )
-            cleaning = cleaning or times > 0
-
-            i, times = i:gsub( "%([|&]+", "(" )
-            cleaning = cleaning or times > 0
-
-            i, times = i:gsub( "[|&]+%)", ")" )
-            cleaning = cleaning or times > 0
-
-            i = i:gsub( "||", "|" )
-            i = i:gsub( "|&", "|" )
-            i = i:gsub( "&|", "&" )
-            i = i:gsub( "&&", "&" )
-
-            -- i, times = i:gsub( "([|&])[|&]", "%1" )
-            -- cleaning = cleaning or times > 0
-
-        end
-        i = i:gsub( "|", "||" )
-    end ]]
-
-    --[[ i, times = i:gsub( "debuff%.judgment%.up", "judgment_override" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'debuff.judgment.up' with 'judgment_override' (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "desired_targets", "1" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'desired_targets' with '1' (" .. times .. "x)." )
+        table.insert( warnings, "Line " .. line .. ": Converted 'target[.1].time_to_die' to 'time_to_die' (" .. times .."x)." )
     end ]]
 
     i, times = i:gsub( "min:[a-z0-9_%.]+(,?$?)", "%1" )
@@ -8604,394 +8568,6 @@ local function Sanitize( segment, i, line, warnings )
     if times > 0 then
         table.insert( warnings, "Line " .. line .. ": Removed max:X check (not available in emulation) -- (" .. times .. "x)." )
     end
-
-    --[[ i, times = i:gsub( "buff.out_of_range.up", "!target.in_range" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'buff.out_of_range.up' with '!target.in_range' (" .. times .. "x)." )
-    end
-
-    i, times = i:gsub( "buff.out_of_range.down", "target.in_range" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'buff.out_of_range.down' with 'target.in_range' (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "movement.distance", "target.distance" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'movement.distance' with 'target.distance' (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "buff.metamorphosis.extended_by_demonic", "buff.demonic_extended_metamorphosis.up" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'buff.metamorphosis.extended_by_demonic' with 'buff.demonic_extended_metamorphosis.up' (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "buff.active_uas", "unstable_afflictions" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'buff.active_uas' with 'unstable_afflictions' (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "rune%.([a-z0-9_]+)", "runes.%1")
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'rune.X' with 'runes.X' (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "cooldown%.strike%.", "cooldown.stormstrike." )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Replaced 'cooldown.strike' with 'cooldown.stormstrike' (" .. times .. "x)." )
-    end ]]
-
-    --[[ i, times = i:gsub( "spell_targets%.[a-zA-Z0-9_]+", "active_enemies" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Converted spell_targets.X syntax to active_enemies(" .. times .. "x)." )
-    end ]]
-
-
-    --[[ for token in i:gmatch( "incoming_damage_%d+m?s" ) do
-        local times = 0
-        while (i:find(token)) do
-            local strpos, strend = i:find(token)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            if not operators[pre] and not operators[post] then
-                i = i:sub( 1, strpos - 1 ) .. '\v' .. '>0' .. i:sub( strend + 1 )
-                times = times + 1
-            else
-                i = i:sub( 1, strpos - 1 ) .. '\v' .. i:sub( strend + 1 )
-            end
-        end
-
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted unconditional '" .. token .. "' to '" .. token .. ">0' (" .. times .. "x)." )
-        end
-        i = i:gsub( '\v', token )
-    end ]]
-
-
-    --[[ for token in i:gmatch( "set_bonus%.[%a%d_]+" ) do
-        local times = 0
-        while (i:find(token)) do
-            local strpos, strend = i:find(token)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            if not operators[pre] and not operators[post] then
-                i = i:sub( 1, strpos - 1 ) .. '\v' .. '>0' .. i:sub( strend + 1 )
-                times = times + 1
-            else
-                i = i:sub( 1, strpos - 1 ) .. '\v' .. i:sub( strend + 1 )
-            end
-        end
-
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted unconditional '" .. token .. "' to '" .. token .. "=1' (" .. times .. "x)." )
-        end
-        i = i:gsub( '\v', token )
-    end ]]
-
-
-    --[[ for token in i:gmatch( "cooldown%.[%a_]+%.remains" ) do
-        local times = 0
-        while (i:find(token)) do
-            local strpos, strend = i:find(token)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if not operators[pre] and not operators[post] then
-                i = start .. '\v' .. '>0' .. finish
-                times = times + 1
-            else
-                i = start .. '\v' .. finish
-            end
-        end
-
-        i = i:gsub( '\v', token )
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted unconditional '" .. token .. "' to '" .. token .. ">0' (" .. times .. "x)." )
-        end
-        table.insert( warnings, "Line " .. line .. ": This entry checks the cooldown for '" .. token .. "' which can be result in odd behavior if '" .. token .. "' is toggled off/disabled." )
-    end ]]
-
-
-    --[[ for token in i:gmatch( "artifact%.[%a_]+%.rank" ) do
-        local times = 0
-        while (i:find(token)) do
-            local strpos, strend = i:find(token)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if not operators[pre] and not operators[post] then
-                i = start .. '\v' .. '>0' .. finish
-                times = times + 1
-            else
-                i = start .. '\v' .. finish
-            end
-        end
-
-        i = i:gsub( '\v', token )
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted unconditional '" .. token .. "' to '" .. token .. ">0' (" .. times .. "x)." )
-        end
-    end ]]
-
-    --[[ for token, attr in i:gmatch( "(d?e?buff%.[%a_]+%.)(remains)" ) do
-        local times = 0
-        while (i:find(token..attr)) do
-            local strpos, strend = i:find(token..attr)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if not operators[pre] and not operators[post] then
-                i = start .. '\v' .. 'up' .. finish
-                times = times + 1
-            else
-                i = start .. '\v' .. attr .. finish
-            end
-        end
-
-        i = i:gsub( '\v', token )
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted unconditional '" .. token .. attr .. "' to '" .. token .. "up' (" .. times .. "x)." )
-        end
-    end ]]
-
-
-    --[[ for token, attr in i:gmatch( "(d?e?buff%.[%a_]+%.)(react)" ) do
-        local times = 0
-        while (i:find(token..attr)) do
-            local strpos, strend = i:find(token..attr)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if not operators[pre] and not operators[post] then
-                i = start .. '\v' .. 'up' .. finish
-                times = times + 1
-            else
-                i = start .. '\v' .. attr .. finish
-            end
-        end
-
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted unconditional '" .. token .. attr .. "' to '" .. token .. "up' (" .. times .. "x)." )
-        end
-        i = i:gsub( '\v', token )
-    end ]]
-
-
-    --[[ for token, attr in i:gmatch( "(trinket%.[%a%._]+%.)(react)" ) do
-        local times = 0
-        while (i:find(token..attr)) do
-            local strpos, strend = i:find(token..attr)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if not operators[pre] and not operators[post] then
-                i = start .. '\v' .. 'up' .. finish
-                times = times + 1
-            else
-                i = start .. '\v' .. attr .. finish
-            end
-        end
-
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted unconditional '" .. token .. attr .. "' to '" .. token .. "up' (" .. times .. "x)." )
-        end
-        i = i:gsub( '\v', token )
-    end ]]
-
-
-    --[[ for token, attr in i:gmatch( "(talent%.[%a%._]+%.)(enabled)" ) do
-        local times = 0
-        while (i:find(token..attr)) do
-            local strpos, strend = i:find(token..attr)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if maths[pre] or maths[post] then
-                i = start .. '\a' .. finish
-                times = times + 1
-            else
-                i = start .. '\v' .. finish
-            end
-        end
-
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted '" .. token .. attr .. "' to '" .. token .. "rank' for mathematical comparison (" .. times .. "x)." )
-        end
-        i = i:gsub( '\a', token .. 'rank' ) 
-        i = i:gsub( '\v', token .. attr )
-    end ]]
-
-
-    --[[ for token, attr in i:gmatch( "(d?e?buff%.[%a%._]+%.)(up)" ) do
-        local times = 0
-        while (i:find(token..attr)) do
-            local strpos, strend = i:find(token..attr)
-
-            local pre = i:sub( strpos - 1, strpos - 1 )
-            local j = 2
-
-            while ( pre == '(' and strpos - j > 0 ) do
-                pre = i:sub( strpos - j, strpos - j )
-                j = j + 1
-            end
-
-            local post = i:sub( strend + 1, strend + 1 )
-            j = 2
-
-            while ( post == ')' and strend + j < i:len() ) do
-                post = i:sub( strend + j, strend + j )
-                j = j + 1
-            end
-
-            local start = strpos > 1 and i:sub( 1, strpos - 1 ) or ''
-            local finish = strend < i:len() and i:sub( strend + 1 ) or ''
-
-            if maths[pre] or maths[post] then
-                i = start .. '\a' .. finish
-                times = times + 1
-            else
-                i = start .. '\v' .. finish
-            end
-        end
-
-        if times > 0 then
-            table.insert( warnings, "Line " .. line .. ": Converted '" .. token .. attr .. "' to '" .. token .. "rank' for mathematical comparison (" .. times .. "x)." )
-        end
-        i = i:gsub( '\a', token .. 'rank' ) 
-        i = i:gsub( '\v', token .. attr )
-    end ]]
-
 
     if segment == 'c' then
         for token in i:gmatch( "target" ) do
@@ -9039,15 +8615,6 @@ local function Sanitize( segment, i, line, warnings )
         end
         i = i:gsub( '\v', token )
     end
-
-    --[[ i,times = i:gsub( "(set_bonus%.[^%.=|&]+)=1", "%1" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Converted set_bonus.X=1 to set_bonus.X (" .. times .. "x)." )
-    end
-    i,times = i:gsub( "(set_bonus%.[^%.=|&]+)=0", "!%1" )
-    if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Converted set_bonus.X=0 to !set_bonus.X (" .. times .. "x)." )
-    end ]]
 
     return i
 end

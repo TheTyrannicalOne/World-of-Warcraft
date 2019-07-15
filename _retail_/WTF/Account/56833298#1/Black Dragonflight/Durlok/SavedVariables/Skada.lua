@@ -4002,13 +4002,13 @@ SkadaPerCharDB = {
 							["auratype"] = "DEBUFF",
 							["id"] = 6795,
 						},
-						["Survival Instincts"] = {
-							["name"] = "Survival Instincts",
+						["Thrash"] = {
+							["name"] = "Thrash",
 							["active"] = 0,
 							["school"] = 1,
-							["uptime"] = 6,
-							["auratype"] = "BUFF",
-							["id"] = 61336,
+							["uptime"] = 59,
+							["auratype"] = "DEBUFF",
+							["id"] = 192090,
 						},
 						["Ironfur"] = {
 							["name"] = "Ironfur",
@@ -4018,14 +4018,6 @@ SkadaPerCharDB = {
 							["auratype"] = "BUFF",
 							["id"] = 192081,
 						},
-						["Thrash"] = {
-							["name"] = "Thrash",
-							["active"] = 0,
-							["school"] = 1,
-							["uptime"] = 59,
-							["auratype"] = "DEBUFF",
-							["id"] = 192090,
-						},
 						["Gore"] = {
 							["name"] = "Gore",
 							["active"] = 0,
@@ -4033,6 +4025,14 @@ SkadaPerCharDB = {
 							["uptime"] = 26,
 							["auratype"] = "BUFF",
 							["id"] = 93622,
+						},
+						["Survival Instincts"] = {
+							["name"] = "Survival Instincts",
+							["active"] = 0,
+							["school"] = 1,
+							["uptime"] = 6,
+							["auratype"] = "BUFF",
+							["id"] = 61336,
 						},
 						["Earthwarden"] = {
 							["name"] = "Earthwarden",
@@ -8580,10 +8580,10 @@ SkadaPerCharDB = {
 					},
 					["Attack"] = {
 						["damage"] = 952223,
-						["max"] = 3182,
+						["EVADE"] = 5,
 						["hitmin"] = 8,
 						["criticalamount"] = 306184,
-						["id"] = 6603,
+						["max"] = 3182,
 						["hitmax"] = 3182,
 						["totalhits"] = 899,
 						["hit"] = 672,
@@ -8593,7 +8593,7 @@ SkadaPerCharDB = {
 						["ABSORB"] = 53,
 						["school"] = 1,
 						["criticalmin"] = 379,
-						["EVADE"] = 5,
+						["id"] = 6603,
 						["hitamount"] = 646039,
 					},
 					["Filthy Transfusion"] = {
@@ -8722,30 +8722,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562725155.15103,
 								["amount"] = -6852,
+								["srcname"] = "Unbound Abomination",
 								["hp"] = 58531,
 								["spellid"] = 88163,
-								["srcname"] = "Unbound Abomination",
 							}, -- [3]
 							{
 								["ts"] = 1562725155.75904,
 								["amount"] = -10658,
+								["srcname"] = "Unbound Abomination",
 								["hp"] = 41021,
 								["spellid"] = 269301,
-								["srcname"] = "Unbound Abomination",
 							}, -- [4]
 							{
 								["ts"] = 1562725157.14305,
 								["amount"] = -8245,
+								["srcname"] = "Unbound Abomination",
 								["hp"] = 41125,
 								["spellid"] = 88163,
-								["srcname"] = "Unbound Abomination",
 							}, -- [5]
 							{
 								["ts"] = 1562725159.76006,
 								["amount"] = -10658,
+								["srcname"] = "Unbound Abomination",
 								["hp"] = 22325,
 								["spellid"] = 269301,
-								["srcname"] = "Unbound Abomination",
 							}, -- [6]
 							{
 								["ts"] = 1562725159.77507,
@@ -8774,9 +8774,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562725163.7621,
 								["amount"] = -11480,
+								["srcname"] = "Unbound Abomination",
 								["hp"] = 17470,
 								["spellid"] = 269301,
-								["srcname"] = "Unbound Abomination",
 							}, -- [10]
 							{
 								["absorb"] = 0,
@@ -8789,9 +8789,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562725167.76212,
 								["amount"] = -11835,
+								["srcname"] = "Unbound Abomination",
 								["hp"] = 8636,
 								["spellid"] = 269301,
-								["srcname"] = "Unbound Abomination",
 							}, -- [12]
 							{
 								["absorb"] = 0,
@@ -8849,9 +8849,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724605.57204,
 								["amount"] = -6601,
+								["srcname"] = "Sporecaller Zancha",
 								["hp"] = 27994,
 								["spellid"] = 88163,
-								["srcname"] = "Sporecaller Zancha",
 							}, -- [4]
 							{
 								["spellid"] = 273226,
@@ -8862,9 +8862,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724607.08406,
 								["amount"] = -4668,
+								["srcname"] = "Sporecaller Zancha",
 								["hp"] = 8728,
 								["spellid"] = 88163,
-								["srcname"] = "Sporecaller Zancha",
 							}, -- [6]
 							{
 								["ts"] = 1562724607.39907,
@@ -8921,16 +8921,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724602.75514,
 								["amount"] = -7256,
+								["srcname"] = "Sporecaller Zancha",
 								["hp"] = 37155,
 								["spellid"] = 88163,
-								["srcname"] = "Sporecaller Zancha",
 							}, -- [14]
 							{
 								["ts"] = 1562724604.08615,
 								["amount"] = -7924,
+								["srcname"] = "Sporecaller Zancha",
 								["hp"] = 21975,
 								["spellid"] = 259732,
-								["srcname"] = "Sporecaller Zancha",
 							}, -- [15]
 							["pos"] = 13,
 						},
@@ -8942,44 +8942,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724372.79401,
 								["amount"] = -6902,
+								["srcname"] = "Bloodsworn Defiler",
 								["hp"] = 57157,
 								["spellid"] = 88163,
-								["srcname"] = "Bloodsworn Defiler",
 							}, -- [1]
 							{
 								["ts"] = 1562724373.01002,
 								["amount"] = -8276,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 48881,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [2]
 							{
 								["ts"] = 1562724373.18403,
 								["amount"] = -5217,
+								["spellid"] = 88163,
 								["hp"] = 41979,
 								["srcname"] = "Reanimated Guardian",
-								["spellid"] = 88163,
 							}, -- [3]
 							{
 								["ts"] = 1562724373.72204,
 								["amount"] = -4269,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 32596,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [4]
 							{
 								["ts"] = 1562724374.00505,
 								["amount"] = -6845,
+								["spellid"] = 88163,
 								["hp"] = 32596,
 								["srcname"] = "Bloodsworn Defiler",
-								["spellid"] = 88163,
 							}, -- [5]
 							{
 								["ts"] = 1562724374.72306,
 								["amount"] = -3100,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 22651,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [6]
 							{
 								["ts"] = 1562724374.86407,
@@ -9000,16 +9000,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724375.41909,
 								["amount"] = -6040,
+								["spellid"] = 272180,
 								["hp"] = 15236,
 								["srcname"] = "Grotesque Horror",
-								["spellid"] = 272180,
 							}, -- [9]
 							{
 								["ts"] = 1562724375.7101,
 								["amount"] = -4213,
+								["spellid"] = 272180,
 								["hp"] = 11128,
 								["srcname"] = "Grotesque Horror",
-								["spellid"] = 272180,
 							}, -- [10]
 							{
 								["absorb"] = -1602,
@@ -9022,9 +9022,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724376.18412,
 								["amount"] = -15725,
+								["srcname"] = "Bloodsworn Defiler",
 								["hp"] = 1,
 								["spellid"] = 265487,
-								["srcname"] = "Bloodsworn Defiler",
 							}, -- [12]
 							{
 								["spellname"] = "Durlok dies",
@@ -9035,16 +9035,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724371.70914,
 								["amount"] = -3066,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 59460,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [14]
 							{
 								["ts"] = 1562724372.72715,
 								["amount"] = -2303,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 57157,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [15]
 							["pos"] = 14,
 						},
@@ -9799,16 +9799,16 @@ SkadaPerCharDB = {
 						["absorb"] = 0,
 					}, -- [4]
 					{
-						["hp"] = 93079,
-						["ts"] = 1562729735.998,
-						["srcname"] = "Mindslaved Gurubashi",
 						["spellid"] = 88163,
+						["ts"] = 1562729735.998,
+						["hp"] = 93079,
+						["srcname"] = "Mindslaved Gurubashi",
 					}, -- [5]
 					{
-						["hp"] = 93079,
-						["ts"] = 1562729738.375,
-						["srcname"] = "Mindslaved Gurubashi",
 						["spellid"] = 88163,
+						["ts"] = 1562729738.375,
+						["hp"] = 93079,
+						["srcname"] = "Mindslaved Gurubashi",
 					}, -- [6]
 					{
 						["ts"] = 1562729739.509,
@@ -9851,10 +9851,10 @@ SkadaPerCharDB = {
 						["ts"] = 1562729743.165,
 					}, -- [11]
 					{
-						["hp"] = 92970,
-						["ts"] = 1562729731.537,
-						["spellid"] = 88163,
 						["srcname"] = "Mindslaved Gurubashi",
+						["ts"] = 1562729731.537,
+						["hp"] = 92970,
+						["spellid"] = 88163,
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -9886,10 +9886,10 @@ SkadaPerCharDB = {
 					{
 						["spells"] = {
 							[204031] = 521.4000073447824,
-							[17057] = 200,
-							[77758] = 361.2999999523163,
-							[195707] = 1712.400000721216,
 							[33917] = 3362.300003349781,
+							[17057] = 200,
+							[195707] = 1712.400000721216,
+							[77758] = 361.2999999523163,
 						},
 						["amount"] = 6157.400011368096,
 					}, -- [1]
@@ -10292,30 +10292,30 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724365.71301,
 								["amount"] = -4725,
+								["hp"] = 20781,
 								["srcname"] = "Grotesque Horror",
 								["spellid"] = 272180,
-								["hp"] = 20781,
 							}, -- [1]
 							{
 								["ts"] = 1562724366.70902,
 								["amount"] = -659,
+								["hp"] = 20432,
 								["srcname"] = "Grotesque Horror",
 								["spellid"] = 272180,
-								["hp"] = 20432,
 							}, -- [2]
 							{
 								["ts"] = 1562724367.17103,
 								["amount"] = -4834,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 20432,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [3]
 							{
 								["ts"] = 1562724367.17104,
 								["amount"] = -4776,
+								["hp"] = 20432,
 								["srcname"] = "Reanimated Guardian",
 								["spellid"] = 88163,
-								["hp"] = 20432,
 							}, -- [4]
 							{
 								["ts"] = 1562724367.28705,
@@ -10328,58 +10328,58 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724367.68006,
 								["amount"] = -5093,
+								["spellid"] = 88163,
 								["srcname"] = "Reanimated Guardian",
 								["hp"] = 16953,
-								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["ts"] = 1562724367.72807,
 								["amount"] = -731,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 16566,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [7]
 							{
 								["ts"] = 1562724368.10008,
 								["amount"] = -5454,
+								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 13870,
 								["spellid"] = 88163,
-								["srcname"] = "Fallen Deathspeaker",
 							}, -- [8]
 							{
 								["ts"] = 1562724368.14209,
 								["amount"] = -5643,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 10883,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [9]
 							{
 								["ts"] = 1562724368.7331,
 								["amount"] = -1751,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 7069,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [10]
 							{
 								["ts"] = 1562724369.17111,
 								["amount"] = -4912,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 7069,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [11]
 							{
 								["ts"] = 1562724369.17112,
 								["amount"] = -5669,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 7069,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [12]
 							{
 								["ts"] = 1562724369.70913,
 								["amount"] = -9748,
+								["spellid"] = 88163,
 								["srcname"] = "Reanimated Guardian",
 								["hp"] = 1468,
-								["spellid"] = 88163,
 							}, -- [13]
 							{
 								["spellname"] = "Jizzinator dies",
@@ -10390,9 +10390,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724365.17115,
 								["amount"] = -5036,
+								["hp"] = 28470,
 								["srcname"] = "Reanimated Guardian",
 								["spellid"] = 88163,
-								["hp"] = 28470,
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -11176,9 +11176,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562729722.773,
 						["amount"] = -1532,
+						["srcname"] = "Mindslaved Gurubashi",
 						["hp"] = 39060,
 						["spellid"] = 88163,
-						["srcname"] = "Mindslaved Gurubashi",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -11191,9 +11191,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562730153.687,
 						["amount"] = -683,
+						["srcname"] = "Howling Voodoo Mask",
 						["hp"] = 39060,
 						["spellid"] = 88163,
-						["srcname"] = "Howling Voodoo Mask",
 					}, -- [3]
 					{
 						["absorb"] = 0,
@@ -11222,9 +11222,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562729656.049,
 						["amount"] = -1741,
+						["spellid"] = 88163,
 						["hp"] = 39060,
 						["srcname"] = "Mindslaved Gurubashi",
-						["spellid"] = 88163,
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -11237,9 +11237,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562729672.641,
 						["amount"] = -1394,
+						["spellid"] = 88163,
 						["srcname"] = "Jambani Chosen",
 						["hp"] = 39060,
-						["spellid"] = 88163,
 					}, -- [9]
 					{
 						["ts"] = 1562729672.803,
@@ -11252,16 +11252,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562729675.537,
 						["amount"] = -1299,
+						["srcname"] = "Jambani Chosen",
 						["hp"] = 38372,
 						["spellid"] = 243575,
-						["srcname"] = "Jambani Chosen",
 					}, -- [11]
 					{
 						["ts"] = 1562729678.241,
 						["amount"] = -1318,
+						["srcname"] = "Jambani Chosen",
 						["hp"] = 37674,
 						["spellid"] = 243575,
-						["srcname"] = "Jambani Chosen",
 					}, -- [12]
 					{
 						["absorb"] = 0,
@@ -11274,9 +11274,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562729681.233,
 						["amount"] = -1377,
+						["srcname"] = "Jambani Chosen",
 						["hp"] = 38331,
 						["spellid"] = 243575,
-						["srcname"] = "Jambani Chosen",
 					}, -- [14]
 					{
 						["absorb"] = 0,
@@ -11859,16 +11859,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723273.34501,
 								["amount"] = -4070,
+								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 38760,
 								["spellid"] = 88163,
-								["srcname"] = "Fanatical Headhunter",
 							}, -- [1]
 							{
 								["ts"] = 1562723274.22002,
 								["amount"] = -7240,
+								["srcname"] = "Befouled Spirit",
 								["hp"] = 22268,
 								["spellid"] = 265625,
-								["srcname"] = "Befouled Spirit",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -11881,16 +11881,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723274.90104,
 								["amount"] = -6824,
+								["srcname"] = "Devout Blood Priest",
 								["hp"] = 15532,
 								["spellid"] = 265084,
-								["srcname"] = "Devout Blood Priest",
 							}, -- [4]
 							{
 								["ts"] = 1562723275.33105,
 								["amount"] = -4273,
+								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 15532,
 								["spellid"] = 88163,
-								["srcname"] = "Fanatical Headhunter",
 							}, -- [5]
 							{
 								["absorb"] = 0,
@@ -11935,23 +11935,23 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723278.55511,
 								["amount"] = -6849,
+								["srcname"] = "Devout Blood Priest",
 								["hp"] = 15674,
 								["spellid"] = 265084,
-								["srcname"] = "Devout Blood Priest",
 							}, -- [11]
 							{
 								["ts"] = 1562723279.57012,
 								["amount"] = -7098,
+								["srcname"] = "Befouled Spirit",
 								["hp"] = 5325,
 								["spellid"] = 265625,
-								["srcname"] = "Befouled Spirit",
 							}, -- [12]
 							{
 								["ts"] = 1562723281.08113,
 								["amount"] = -7342,
+								["srcname"] = "Befouled Spirit",
 								["hp"] = 1,
 								["spellid"] = 265625,
-								["srcname"] = "Befouled Spirit",
 							}, -- [13]
 							{
 								["spellname"] = "Lillys dies",
@@ -11962,9 +11962,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723272.72415,
 								["amount"] = -7338,
+								["srcname"] = "Befouled Spirit",
 								["hp"] = 38760,
 								["spellid"] = 265625,
-								["srcname"] = "Befouled Spirit",
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -12561,9 +12561,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562727807.825,
 						["amount"] = -187,
+						["srcname"] = "Gahz'ragon",
 						["hp"] = 74582,
 						["spellid"] = 266144,
-						["srcname"] = "Gahz'ragon",
 					}, -- [1]
 					{
 						["absorb"] = 0,
@@ -12584,9 +12584,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562727810.798,
 						["amount"] = -252,
+						["srcname"] = "Gahz'ragon",
 						["hp"] = 83350,
 						["spellid"] = 266144,
-						["srcname"] = "Gahz'ragon",
 					}, -- [4]
 					{
 						["absorb"] = 0,
@@ -12607,9 +12607,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562727813.809,
 						["amount"] = -198,
+						["srcname"] = "Gahz'ragon",
 						["hp"] = 94076,
 						["spellid"] = 266144,
-						["srcname"] = "Gahz'ragon",
 					}, -- [7]
 					{
 						["absorb"] = 0,
@@ -12622,9 +12622,9 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562727816.817,
 						["amount"] = -257,
+						["srcname"] = "Gahz'ragon",
 						["hp"] = 98269,
 						["spellid"] = 266144,
-						["srcname"] = "Gahz'ragon",
 					}, -- [9]
 					{
 						["absorb"] = 0,
@@ -12661,16 +12661,16 @@ SkadaPerCharDB = {
 					{
 						["ts"] = 1562727806.118,
 						["amount"] = -2410,
+						["srcname"] = "Sandfury Axe Thrower",
 						["hp"] = 77438,
 						["spellid"] = 268800,
-						["srcname"] = "Sandfury Axe Thrower",
 					}, -- [14]
 					{
 						["ts"] = 1562727806.118,
 						["amount"] = -1770,
+						["srcname"] = "Sandfury Axe Thrower",
 						["hp"] = 74856,
 						["spellid"] = 268800,
-						["srcname"] = "Sandfury Axe Thrower",
 					}, -- [15]
 					["pos"] = 14,
 				},
@@ -12695,14 +12695,14 @@ SkadaPerCharDB = {
 				["auras"] = {
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -12745,29 +12745,30 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [4]
 			{
-				["auras"] = {
-				},
-				["ccbreaks"] = 0,
-				["class"] = "WARRIOR",
-				["healingabsorbed"] = 0,
-				["time"] = 0,
+				["ffdamagedone"] = 0,
 				["ffdamagedonespells"] = {
 				},
+				["auras"] = {
+				},
+				["healingabsorbed"] = 0,
+				["role"] = "NONE",
+				["class"] = "WARRIOR",
 				["damaged"] = {
 				},
 				["dispells"] = 0,
-				["leech"] = 0,
-				["ffdamagedone"] = 0,
+				["time"] = 0,
+				["ccbreaks"] = 0,
 				["overhealing"] = 0,
 				["interrupts"] = 0,
 				["ffdamagedonetargets"] = {
 				},
 				["healed"] = {
 				},
-				["shielding"] = 0,
+				["power"] = {
+				},
 				["damage"] = 2357,
 				["damagespells"] = {
 					["Claw"] = {
@@ -12797,14 +12798,13 @@ SkadaPerCharDB = {
 				},
 				["maxhp"] = 105118,
 				["damagetaken"] = 0,
-				["deathlog"] = {
-				},
+				["shielding"] = 0,
 				["id"] = "Pet-0-3886-1642-41-151096-010322AFE7",
 				["healing"] = 0,
 				["alertDamage"] = 0,
 				["damagetakenspells"] = {
 				},
-				["power"] = {
+				["deathlog"] = {
 				},
 				["leeched"] = {
 				},
@@ -12815,7 +12815,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["role"] = "NONE",
+				["leech"] = 0,
 			}, -- [5]
 			{
 				["healingabsorbed"] = 8472,
@@ -13459,9 +13459,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562725111.75411,
 								["amount"] = -2237,
+								["srcname"] = "Unbound Abomination",
 								["hp"] = 14511,
 								["spellid"] = 269301,
-								["srcname"] = "Unbound Abomination",
 							}, -- [11]
 							{
 								["spellid"] = 269838,
@@ -13509,9 +13509,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724604.08702,
 								["amount"] = -7691,
+								["srcname"] = "Sporecaller Zancha",
 								["hp"] = 32888,
 								["spellid"] = 259732,
-								["srcname"] = "Sporecaller Zancha",
 							}, -- [2]
 							{
 								["ts"] = 1562724605.47403,
@@ -13552,9 +13552,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724608.81608,
 								["amount"] = -17039,
+								["srcname"] = "Sporecaller Zancha",
 								["hp"] = 9768,
 								["spellid"] = 88163,
-								["srcname"] = "Sporecaller Zancha",
 							}, -- [8]
 							{
 								["spellname"] = "Baldrick dies",
@@ -13628,9 +13628,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724366.70902,
 								["amount"] = -695,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 25718,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -13643,72 +13643,72 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724367.72804,
 								["amount"] = -817,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 31105,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [4]
 							{
 								["ts"] = 1562724368.14205,
 								["amount"] = -5546,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 25559,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [5]
 							{
 								["ts"] = 1562724368.73306,
 								["amount"] = -1277,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 24282,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [6]
 							{
 								["ts"] = 1562724369.73207,
 								["amount"] = -1685,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 22597,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [7]
 							{
 								["ts"] = 1562724370.58308,
 								["amount"] = -6506,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 16091,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [8]
 							{
 								["ts"] = 1562724370.72609,
 								["amount"] = -2749,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 13342,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [9]
 							{
 								["ts"] = 1562724371.7101,
 								["amount"] = -2517,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 10825,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [10]
 							{
 								["ts"] = 1562724371.79711,
 								["amount"] = -5920,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 10825,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [11]
 							{
 								["ts"] = 1562724371.79712,
 								["amount"] = -6090,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 10825,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [12]
 							{
 								["ts"] = 1562724371.79713,
 								["amount"] = -6192,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 10825,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [13]
 							{
 								["spellname"] = "Baldrick dies",
@@ -13719,9 +13719,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724363.23715,
 								["amount"] = -553,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 26947,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [15]
 							["pos"] = 15,
 						},
@@ -13752,9 +13752,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723835.50104,
 								["amount"] = -6901,
+								["srcname"] = "Feral Bloodswarmer",
 								["hp"] = 42655,
 								["spellid"] = 266109,
-								["srcname"] = "Feral Bloodswarmer",
 							}, -- [4]
 							{
 								["absorb"] = 6485,
@@ -13765,10 +13765,10 @@ SkadaPerCharDB = {
 								["ts"] = 1562723837.49505,
 							}, -- [5]
 							{
-								["hp"] = 42655,
-								["ts"] = 1562723837.49506,
-								["spellid"] = 88163,
 								["srcname"] = "Feral Bloodswarmer",
+								["ts"] = 1562723837.49506,
+								["hp"] = 42655,
+								["spellid"] = 88163,
 							}, -- [6]
 							{
 								["absorb"] = 5755,
@@ -13797,9 +13797,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723843.5681,
 								["amount"] = -8036,
+								["srcname"] = "Feral Bloodswarmer",
 								["hp"] = 41032,
 								["spellid"] = 88163,
-								["srcname"] = "Feral Bloodswarmer",
 							}, -- [10]
 							{
 								["spellid"] = 278789,
@@ -13882,18 +13882,6 @@ SkadaPerCharDB = {
 						["critical"] = 7,
 						["absorbed"] = 0,
 					},
-					["Good Karma"] = {
-						["shielding"] = 0,
-						["id"] = 285594,
-						["healing"] = 94475,
-						["min"] = 0,
-						["name"] = "Good Karma",
-						["hits"] = 26,
-						["overhealing"] = 10119,
-						["max"] = 12929,
-						["critical"] = 0,
-						["absorbed"] = 5507,
-					},
 					["Touch of Karma"] = {
 						["shielding"] = 150892,
 						["id"] = 122470,
@@ -13917,6 +13905,18 @@ SkadaPerCharDB = {
 						["max"] = 1393,
 						["critical"] = 0,
 						["absorbed"] = 695,
+					},
+					["Good Karma"] = {
+						["shielding"] = 0,
+						["id"] = 285594,
+						["healing"] = 94475,
+						["min"] = 0,
+						["name"] = "Good Karma",
+						["hits"] = 26,
+						["overhealing"] = 10119,
+						["max"] = 12929,
+						["critical"] = 0,
+						["absorbed"] = 5507,
 					},
 					["Eye of the Tiger"] = {
 						["shielding"] = 0,
@@ -14379,14 +14379,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -14417,7 +14417,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [7]
 			{
 				["alertDamage"] = 0,
@@ -14432,14 +14432,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -14470,7 +14470,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [8]
 			{
 				["healingabsorbed"] = 105359,
@@ -14734,9 +14734,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724370.58202,
 								["amount"] = -7594,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 25425,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [2]
 							{
 								["absorb"] = 0,
@@ -14749,9 +14749,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724370.72504,
 								["amount"] = -3051,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 26002,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [4]
 							{
 								["ts"] = 1562724370.99005,
@@ -14772,16 +14772,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724372.72707,
 								["amount"] = -1973,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 27707,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [7]
 							{
 								["ts"] = 1562724372.83108,
 								["amount"] = -6369,
+								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 21904,
 								["spellid"] = 266265,
-								["srcname"] = "Fallen Deathspeaker",
 							}, -- [8]
 							{
 								["absorb"] = 0,
@@ -14794,44 +14794,44 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562724373.0091,
 								["amount"] = -6151,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 22785,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [10]
 							{
 								["ts"] = 1562724373.72111,
 								["amount"] = -2739,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 20289,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [11]
 							{
 								["ts"] = 1562724373.81412,
 								["amount"] = -10106,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 20289,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [12]
 							{
 								["ts"] = 1562724373.83213,
 								["amount"] = -6369,
+								["srcname"] = "Fallen Deathspeaker",
 								["hp"] = 5278,
 								["spellid"] = 266265,
-								["srcname"] = "Fallen Deathspeaker",
 							}, -- [13]
 							{
 								["ts"] = 1562724374.72214,
 								["amount"] = -3946,
+								["srcname"] = "Grotesque Horror",
 								["hp"] = 1682,
 								["spellid"] = 272180,
-								["srcname"] = "Grotesque Horror",
 							}, -- [14]
 							{
 								["ts"] = 1562724374.80715,
 								["amount"] = -9237,
+								["srcname"] = "Reanimated Guardian",
 								["hp"] = 1682,
 								["spellid"] = 88163,
-								["srcname"] = "Reanimated Guardian",
 							}, -- [15]
 							["pos"] = 2,
 						},
@@ -14843,16 +14843,16 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723292.79501,
 								["amount"] = -5326,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 2986,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [1]
 							{
 								["ts"] = 1562723293.14202,
 								["amount"] = -6115,
+								["srcname"] = "Befouled Spirit",
 								["hp"] = 1,
 								["spellid"] = 265625,
-								["srcname"] = "Befouled Spirit",
 							}, -- [2]
 							{
 								["spellname"] = "Mistic dies",
@@ -14863,9 +14863,9 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723286.46804,
 								["amount"] = -2871,
+								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 46900,
 								["spellid"] = 265377,
-								["srcname"] = "Fanatical Headhunter",
 							}, -- [4]
 							{
 								["ts"] = 1562723286.54805,
@@ -14878,72 +14878,72 @@ SkadaPerCharDB = {
 							{
 								["ts"] = 1562723288.46106,
 								["amount"] = -2872,
+								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 50882,
 								["spellid"] = 265377,
-								["srcname"] = "Fanatical Headhunter",
 							}, -- [6]
 							{
 								["ts"] = 1562723288.54807,
 								["amount"] = -5325,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 46030,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [7]
 							{
 								["ts"] = 1562723289.53008,
 								["amount"] = -5326,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 41177,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [8]
 							{
 								["ts"] = 1562723289.68109,
 								["amount"] = -4633,
+								["srcname"] = "Fanatical Headhunter",
 								["hp"] = 36955,
 								["spellid"] = 265376,
-								["srcname"] = "Fanatical Headhunter",
 							}, -- [9]
 							{
 								["ts"] = 1562723289.7851,
 								["amount"] = -5326,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 32102,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [10]
 							{
 								["ts"] = 1562723290.53411,
 								["amount"] = -5325,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 27250,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [11]
 							{
 								["ts"] = 1562723290.78812,
 								["amount"] = -5325,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 22398,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [12]
 							{
 								["ts"] = 1562723291.53413,
 								["amount"] = -5326,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 17545,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [13]
 							{
 								["ts"] = 1562723291.78614,
 								["amount"] = -5326,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 12692,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [14]
 							{
 								["ts"] = 1562723292.53115,
 								["amount"] = -5326,
+								["srcname"] = "Chosen Blood Matron",
 								["hp"] = 7839,
 								["spellid"] = 265019,
-								["srcname"] = "Chosen Blood Matron",
 							}, -- [15]
 							["pos"] = 4,
 						},
@@ -15590,10 +15590,10 @@ SkadaPerCharDB = {
 						["ts"] = 1562729739.509,
 					}, -- [6]
 					{
-						["hp"] = 55020,
-						["ts"] = 1562730154.881,
-						["spellid"] = 88163,
 						["srcname"] = "Howling Voodoo Mask",
+						["ts"] = 1562730154.881,
+						["hp"] = 55020,
+						["spellid"] = 88163,
 					}, -- [7]
 					{
 						["ts"] = 1562729582.932,
@@ -15686,14 +15686,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -15724,7 +15724,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [10]
 			{
 				["alertDamage"] = 0,
@@ -15739,14 +15739,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -15777,7 +15777,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [11]
 			{
 				["alertDamage"] = 0,
@@ -15792,14 +15792,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -15830,7 +15830,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [12]
 			{
 				["alertDamage"] = 0,
@@ -15845,14 +15845,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -15883,7 +15883,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [13]
 			{
 				["alertDamage"] = 0,
@@ -15898,14 +15898,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -15936,7 +15936,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [14]
 			{
 				["alertDamage"] = 0,
@@ -15951,14 +15951,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -15989,21 +15989,21 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [15]
 			{
 				["alertDamage"] = 0,
 				["auras"] = {
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16046,7 +16046,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [16]
 			{
 				["alertDamage"] = 0,
@@ -16061,14 +16061,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16099,7 +16099,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [17]
 			{
 				["alertDamage"] = 0,
@@ -16114,14 +16114,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16152,7 +16152,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [18]
 			{
 				["alertDamage"] = 0,
@@ -16167,14 +16167,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16205,7 +16205,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [19]
 			{
 				["alertDamage"] = 0,
@@ -16220,14 +16220,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16258,7 +16258,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [20]
 			{
 				["alertDamage"] = 0,
@@ -16273,14 +16273,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16311,7 +16311,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [21]
 			{
 				["alertDamage"] = 0,
@@ -16326,14 +16326,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16364,7 +16364,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [22]
 			{
 				["alertDamage"] = 0,
@@ -16379,14 +16379,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16417,7 +16417,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [23]
 			{
 				["alertDamage"] = 0,
@@ -16432,14 +16432,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16470,7 +16470,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [24]
 			{
 				["alertDamage"] = 0,
@@ -16485,14 +16485,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16523,7 +16523,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [25]
 			{
 				["alertDamage"] = 0,
@@ -16538,14 +16538,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16576,7 +16576,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [26]
 			{
 				["alertDamage"] = 0,
@@ -16591,14 +16591,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16629,7 +16629,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [27]
 			{
 				["alertDamage"] = 0,
@@ -16644,14 +16644,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16682,7 +16682,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [28]
 			{
 				["alertDamage"] = 0,
@@ -16697,14 +16697,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16735,7 +16735,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [29]
 			{
 				["alertDamage"] = 0,
@@ -16750,14 +16750,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16788,7 +16788,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [30]
 			{
 				["alertDamage"] = 0,
@@ -16803,14 +16803,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16841,7 +16841,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [31]
 			{
 				["alertDamage"] = 0,
@@ -16856,14 +16856,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16894,7 +16894,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [32]
 			{
 				["alertDamage"] = 0,
@@ -16909,14 +16909,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -16947,7 +16947,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [33]
 			{
 				["alertDamage"] = 0,
@@ -16962,14 +16962,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17000,7 +17000,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [34]
 			{
 				["alertDamage"] = 0,
@@ -17015,14 +17015,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17053,7 +17053,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [35]
 			{
 				["alertDamage"] = 0,
@@ -17068,14 +17068,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17106,21 +17106,21 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [36]
 			{
 				["alertDamage"] = 0,
 				["auras"] = {
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17163,7 +17163,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [37]
 			{
 				["alertDamage"] = 0,
@@ -17178,14 +17178,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17216,7 +17216,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [38]
 			{
 				["alertDamage"] = 0,
@@ -17231,14 +17231,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17269,7 +17269,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [39]
 			{
 				["alertDamage"] = 0,
@@ -17284,14 +17284,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17322,7 +17322,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [40]
 			{
 				["alertDamage"] = 0,
@@ -17337,14 +17337,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17375,7 +17375,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [41]
 			{
 				["alertDamage"] = 0,
@@ -17390,14 +17390,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17428,7 +17428,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [42]
 			{
 				["alertDamage"] = 0,
@@ -17443,14 +17443,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17481,7 +17481,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [43]
 			{
 				["alertDamage"] = 0,
@@ -17496,14 +17496,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17534,7 +17534,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [44]
 			{
 				["alertDamage"] = 0,
@@ -17549,14 +17549,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17587,21 +17587,21 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [45]
 			{
 				["alertDamage"] = 0,
 				["auras"] = {
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17644,7 +17644,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [46]
 			{
 				["alertDamage"] = 0,
@@ -17659,14 +17659,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17697,7 +17697,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [47]
 			{
 				["alertDamage"] = 0,
@@ -17712,14 +17712,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17750,7 +17750,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [48]
 			{
 				["alertDamage"] = 0,
@@ -17765,14 +17765,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17803,7 +17803,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [49]
 			{
 				["alertDamage"] = 0,
@@ -17818,14 +17818,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17856,7 +17856,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [50]
 			{
 				["alertDamage"] = 0,
@@ -17871,14 +17871,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17909,7 +17909,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [51]
 			{
 				["alertDamage"] = 0,
@@ -17924,14 +17924,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -17962,7 +17962,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [52]
 			{
 				["alertDamage"] = 0,
@@ -17977,14 +17977,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -18015,7 +18015,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [53]
 			{
 				["alertDamage"] = 0,
@@ -18030,14 +18030,14 @@ SkadaPerCharDB = {
 					},
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 0,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -18068,21 +18068,21 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [54]
 			{
 				["alertDamage"] = 0,
 				["auras"] = {
 				},
 				["leech"] = 0,
-				["healingabsorbed"] = 0,
+				["role"] = "NONE",
 				["ffdamagedonespells"] = {
 				},
 				["damaged"] = {
 				},
 				["dispells"] = 0,
 				["overhealing"] = 0,
-				["role"] = "NONE",
+				["ffdamagedone"] = 0,
 				["time"] = 3,
 				["interrupts"] = 0,
 				["deathlog"] = {
@@ -18126,7 +18126,7 @@ SkadaPerCharDB = {
 				["leechTaken"] = 0,
 				["alert"] = {
 				},
-				["ffdamagedone"] = 0,
+				["healingabsorbed"] = 0,
 			}, -- [55]
 		},
 		["deaths"] = 11,
@@ -18144,16 +18144,16 @@ SkadaPerCharDB = {
 		["mobs"] = {
 			["Abyssal Reach"] = {
 				["players"] = {
+					["Lillys-Blackhand"] = {
+						["taken"] = 0,
+						["done"] = 16130,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
 					["Jizzinator"] = {
 						["taken"] = 0,
 						["done"] = 25888,
 						["class"] = "PALADIN",
-						["role"] = "DAMAGER",
-					},
-					["Baldrick"] = {
-						["taken"] = 0,
-						["done"] = 41826,
-						["class"] = "MONK",
 						["role"] = "DAMAGER",
 					},
 					["Mistic"] = {
@@ -18162,10 +18162,10 @@ SkadaPerCharDB = {
 						["class"] = "PRIEST",
 						["role"] = "HEALER",
 					},
-					["Lillys-Blackhand"] = {
+					["Baldrick"] = {
 						["taken"] = 0,
-						["done"] = 16130,
-						["class"] = "HUNTER",
+						["done"] = 41826,
+						["class"] = "MONK",
 						["role"] = "DAMAGER",
 					},
 				},
@@ -18564,44 +18564,32 @@ SkadaPerCharDB = {
 					},
 				},
 			},
-			["Blood Tick"] = {
+			["Jambani Spirit Twister"] = {
 				["players"] = {
-					["Lillys-Blackhand"] = {
-						["taken"] = 389,
-						["done"] = 0,
-						["class"] = "HUNTER",
-						["role"] = "DAMAGER",
-					},
-					["Mistic"] = {
-						["taken"] = 0,
-						["done"] = 4141,
-						["class"] = "PRIEST",
-						["role"] = "HEALER",
-					},
 					["Durlok"] = {
-						["taken"] = 12091,
-						["done"] = 6358,
+						["taken"] = 275823,
+						["done"] = 167449,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
 					["Jizzinator"] = {
-						["taken"] = 0,
-						["done"] = 3966,
+						["taken"] = 176897,
+						["done"] = 35495,
 						["class"] = "PALADIN",
 						["role"] = "DAMAGER",
 					},
-					["Baldrick"] = {
-						["taken"] = 12616,
-						["done"] = 0,
-						["class"] = "MONK",
-						["role"] = "DAMAGER",
+					["Mistic"] = {
+						["taken"] = 26105,
+						["done"] = 4248,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 25096,
-				["done"] = 14465,
+				["taken"] = 478825,
+				["done"] = 207192,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -18653,23 +18641,23 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Jambani Spirit Twister"] = {
+			["Howling Voodoo Mask"] = {
 				["players"] = {
 					["Durlok"] = {
-						["taken"] = 275823,
-						["done"] = 167449,
+						["taken"] = 146082,
+						["done"] = 32213,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
 					["Jizzinator"] = {
-						["taken"] = 176897,
-						["done"] = 35495,
+						["taken"] = 80702,
+						["done"] = 6941,
 						["class"] = "PALADIN",
 						["role"] = "DAMAGER",
 					},
 					["Mistic"] = {
-						["taken"] = 26105,
-						["done"] = 4248,
+						["taken"] = 8575,
+						["done"] = 0,
 						["class"] = "PRIEST",
 						["role"] = "HEALER",
 					},
@@ -18677,8 +18665,8 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 478825,
-				["done"] = 207192,
+				["taken"] = 235359,
+				["done"] = 39154,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -19354,32 +19342,38 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Sandfury Axe Thrower"] = {
+			["Mosquito"] = {
 				["players"] = {
 					["Durlok"] = {
-						["taken"] = 102604,
-						["done"] = 69850,
+						["taken"] = 3267,
+						["done"] = 0,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
-					["Jizzinator"] = {
-						["taken"] = 107058,
-						["done"] = 23286,
-						["class"] = "PALADIN",
+					["Lillys-Blackhand"] = {
+						["taken"] = 826,
+						["done"] = 0,
+						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
-					["Lillys-Blackhand"] = {
-						["taken"] = 63437,
-						["done"] = 26209,
-						["class"] = "HUNTER",
+					["Mistic"] = {
+						["taken"] = 681,
+						["done"] = 0,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
+					["Jizzinator"] = {
+						["taken"] = 6728,
+						["done"] = 0,
+						["class"] = "PALADIN",
 						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 273099,
-				["done"] = 119345,
+				["taken"] = 11502,
+				["done"] = 0,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -19456,38 +19450,32 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Mosquito"] = {
+			["Amani Warrior"] = {
 				["players"] = {
 					["Durlok"] = {
-						["taken"] = 3267,
-						["done"] = 0,
+						["taken"] = 48961,
+						["done"] = 23379,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
-					["Lillys-Blackhand"] = {
-						["taken"] = 826,
-						["done"] = 0,
-						["class"] = "HUNTER",
+					["Jizzinator"] = {
+						["taken"] = 106814,
+						["done"] = 5271,
+						["class"] = "PALADIN",
 						["role"] = "DAMAGER",
 					},
-					["Mistic"] = {
-						["taken"] = 681,
+					["Lillys-Blackhand"] = {
+						["taken"] = 95033,
 						["done"] = 0,
-						["class"] = "PRIEST",
-						["role"] = "HEALER",
-					},
-					["Jizzinator"] = {
-						["taken"] = 6728,
-						["done"] = 0,
-						["class"] = "PALADIN",
+						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 11502,
-				["done"] = 0,
+				["taken"] = 250808,
+				["done"] = 28650,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -19780,23 +19768,23 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Amani Warrior"] = {
+			["Sandfury Axe Thrower"] = {
 				["players"] = {
 					["Durlok"] = {
-						["taken"] = 48961,
-						["done"] = 23379,
+						["taken"] = 102604,
+						["done"] = 69850,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
 					["Jizzinator"] = {
-						["taken"] = 106814,
-						["done"] = 5271,
+						["taken"] = 107058,
+						["done"] = 23286,
 						["class"] = "PALADIN",
 						["role"] = "DAMAGER",
 					},
 					["Lillys-Blackhand"] = {
-						["taken"] = 95033,
-						["done"] = 0,
+						["taken"] = 63437,
+						["done"] = 26209,
 						["class"] = "HUNTER",
 						["role"] = "DAMAGER",
 					},
@@ -19804,8 +19792,8 @@ SkadaPerCharDB = {
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 250808,
-				["done"] = 28650,
+				["taken"] = 273099,
+				["done"] = 119345,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},
@@ -20060,32 +20048,44 @@ SkadaPerCharDB = {
 				["htakenspell"] = {
 				},
 			},
-			["Howling Voodoo Mask"] = {
+			["Blood Tick"] = {
 				["players"] = {
+					["Lillys-Blackhand"] = {
+						["taken"] = 389,
+						["done"] = 0,
+						["class"] = "HUNTER",
+						["role"] = "DAMAGER",
+					},
+					["Mistic"] = {
+						["taken"] = 0,
+						["done"] = 4141,
+						["class"] = "PRIEST",
+						["role"] = "HEALER",
+					},
 					["Durlok"] = {
-						["taken"] = 146082,
-						["done"] = 32213,
+						["taken"] = 12091,
+						["done"] = 6358,
 						["class"] = "DRUID",
 						["role"] = "TANK",
 					},
 					["Jizzinator"] = {
-						["taken"] = 80702,
-						["done"] = 6941,
+						["taken"] = 0,
+						["done"] = 3966,
 						["class"] = "PALADIN",
 						["role"] = "DAMAGER",
 					},
-					["Mistic"] = {
-						["taken"] = 8575,
+					["Baldrick"] = {
+						["taken"] = 12616,
 						["done"] = 0,
-						["class"] = "PRIEST",
-						["role"] = "HEALER",
+						["class"] = "MONK",
+						["role"] = "DAMAGER",
 					},
 				},
 				["hdone"] = 0,
 				["hdonespell"] = {
 				},
-				["taken"] = 235359,
-				["done"] = 39154,
+				["taken"] = 25096,
+				["done"] = 14465,
 				["htaken"] = 0,
 				["htakenspell"] = {
 				},

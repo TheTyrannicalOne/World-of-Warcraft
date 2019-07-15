@@ -208,16 +208,12 @@ Die Schlachtzugskraft ist im Waagen-Editor mit einem Stern (*) neben ihrem Namen
 --[[ L["CreatePopup_Error_UnknownError"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["CreatePopup_Title"] = ""--]] 
---[[Translation missing --]]
---[[ L["Debug_CopyToBugReport"] = ""--]] 
+L["Debug_CopyToBugReport"] = "Kopiere den obrigen Text in deine Fehlermeldung, wenn du denkst es ist relevant."
 L["DefaultScaleName_Default"] = "Standard"
---[[Translation missing --]]
---[[ L["DefaultScaleName_Defensive"] = ""--]] 
---[[Translation missing --]]
---[[ L["DefaultScaleName_Offensive"] = ""--]] 
+L["DefaultScaleName_Defensive"] = "Defensive"
+L["DefaultScaleName_Offensive"] = "Offensive"
 L["DeletePopup_DeletedDefaultScale"] = "Die gelöschte Skala wurde verwendet, sodass Sie für Ihre Klasse und Ihre Spezialisierung wieder auf die Default-Option zurückgreifen können!"
---[[Translation missing --]]
---[[ L["DeletePopup_DeletedScale"] = ""--]] 
+L["DeletePopup_DeletedScale"] = "Gelöschte Skala \"%s\""
 --[[Translation missing --]]
 --[[ L["DeletePopup_Desc"] = ""--]] 
 L["DeletePopup_Title"] = "Skala löschen"
@@ -273,8 +269,7 @@ L["WeightEditor_ImportText"] = "Importieren"
 --[[ L["WeightEditor_Major"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WeightEditor_MassImportText"] = ""--]] 
---[[Translation missing --]]
---[[ L["WeightEditor_Minor"] = ""--]] 
+L["WeightEditor_Minor"] = "Geringer"
 L["WeightEditor_RenameText"] = "Umbenennen"
 --[[Translation missing --]]
 --[[ L["WeightEditor_TimestampText_Created"] = ""--]] 

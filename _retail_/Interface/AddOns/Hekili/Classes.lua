@@ -37,6 +37,7 @@ local specTemplate = {
 
     aoe = 2,
     cycle = false,
+    cycle_min = 6,
     gcdSync = true,
 
     buffPadding = 0,
@@ -393,7 +394,7 @@ local HekiliSpecMixin = {
 
             a.name = name or ability
             a.link = link or ability
-            a.texture = texture or "Interface\\ICONS\\Spell_Nature_BloodLust"
+            -- a.texture = texture or "Interface\\ICONS\\Spell_Nature_BloodLust"
 
             class.itemMap[ data.item ] = ability
 
@@ -419,7 +420,7 @@ local HekiliSpecMixin = {
                 if name then
                     a.name = name
                     a.link = link
-                    a.texture = texture
+                    a.texture = a.texture or texture
 
                     if a.suffix then
                         a.actualName = name
@@ -432,8 +433,8 @@ local HekiliSpecMixin = {
                     self.abilities[ a.id ] = self.abilities[ a.link ] or a
 
                     if not a.unlisted then
-                        class.abilityList[ ability ] = "|T" .. texture .. ":0|t " .. link
-                        class.itemList[ data.item ] = "|T" .. texture .. ":0|t " .. link
+                        class.abilityList[ ability ] = "|T" .. a.texture .. ":0|t " .. link
+                        class.itemList[ data.item ] = "|T" .. a.texture .. ":0|t " .. link
 
                         class.abilityByName[ a.name ] = a
                     end
@@ -1101,6 +1102,12 @@ all:RegisterAuras( {
             m.applied = 0
             m.caster = "nobody"
         end,
+
+        repeat_performance = {
+            id = 304409,
+            duration = 30,
+            max_stack = 1,
+        }
     },
 
     -- Why do we have this, again?
@@ -1895,8 +1902,259 @@ all:RegisterAuras( {
 
 
 -- BFA TRINKETS/ITEMS
--- Crucible
+-- Azshara's EP
+all:RegisterAbility( "azsharas_font_of_power", {
+    cast = 4,
+    channeled = true,
+    cooldown = 120,
+    gcd = "spell",
 
+    item = 169314,
+    toggle = "cooldowns",
+
+    handler = function ()
+        applyBuff( "latent_arcana" )
+    end,
+} )
+
+all:RegisterAura( "latent_arcana", {
+    id = 296962,
+    duration = 30,
+    max_stack = 5
+} )
+
+
+all:RegisterAbility( "shiver_venom_relic", {
+    cast = 0,
+    cooldown = 60,
+    gcd = "spell",
+
+    item = 168905,
+    toggle = "cooldowns",
+
+    usable = function () return debuff.shiver_venom.up end,
+
+    handler = function()
+        removeDebuff( "target", "shiver_venom" )
+    end,
+} )
+
+all:RegisterAura( "shiver_venom", {
+    id = 301624,
+    duration = 20,
+    max_stack = 5
+} )
+
+
+-- Ashvane's Razor Coral, 169311
+all:RegisterAbility( "ashvanes_razor_coral", {
+    cast = 0,
+    cooldown = 20,
+    gcd = "off",
+
+    item = 169311,
+    toggle = "cooldowns",
+
+    handler = function ()
+        if debuff.razor_coral.up then
+            removeDebuff( "target", "razor_coral" )
+            applyBuff( "razor_coral_crit" )
+            setCooldown( "ashvanes_razor_coral", 20 )
+        else
+            applyDebuff( "target", "razor_coral" )
+        end
+    end
+} )
+
+all:RegisterAuras( {
+    razor_coral = {
+        id = 303568,
+        duration = 120,
+        max_stack = 10 -- ???
+    },
+
+    razor_coral_crit = {
+        id = 303570,
+        duration = 20,
+        max_stack = 1,
+    }
+} )
+
+
+-- Edicts of the Faithless, 169315
+
+-- Vision of Demise, 169307
+all:RegisterAbility( "vision_of_demise", {
+    cast = 0,
+    cooldown = 60,
+    gcd = "off",
+
+    item = 169307,
+    toggle = "cooldowns",
+
+    handler = function ()
+        applyBuff( "vision_of_demise" )
+    end
+} )
+
+all:RegisterAura( "vision_of_demise", {
+    id = 303431,
+    duration = 10,
+    max_stack = 1
+} )
+
+
+-- Aquipotent Nautilus, 169305
+all:RegisterAbility( "aquipotent_nautilus", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 169305,
+    toggle = "cooldowns",
+
+    handler = function ()
+        applyDebuff( "target", "surging_flood" )
+    end
+} )
+
+all:RegisterAura( "surging_flood", {
+    id = 302580,
+    duration = 4,
+    max_stack = 1
+} )
+
+
+-- Chain of Suffering, 169308
+all:RegisterAbility( "chain_of_suffering", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 169308,
+    toggle = "defensives",
+
+    handler = function ()
+        applyBuff( "chain_of_suffering" )
+    end,
+} )
+
+all:RegisterAura( "chain_of_suffering", {
+    id = 297036,
+    duration = 25,
+    max_stack = 1
+} )
+
+
+-- Mechagon
+do
+    all:RegisterGear( "pocketsized_computation_device", 167555 )
+    all:RegisterGear( "cyclotronic_blast", 167672 )
+    all:RegisterGear( "harmonic_dematerializer", 167677 )
+    
+    all:RegisterAura( "cyclotronic_blast", {
+        id = 293491,
+        duration = function () return 2.5 * haste end,
+        max_stack = 1
+    } )    
+
+    all:RegisterAbility( "pocketsized_computation_device", {
+        cast = 0,
+        cooldown = 120,
+        gcd = "spell",
+
+        item = 167555,
+        texture = 2115322,
+
+        usable = function() return false, "no supported red punchcard installed" end,
+        copy = "inactive_red_punchcard"
+    } )
+
+    all:RegisterAbility( "cyclotronic_blast", {
+        id = 293491,
+        key = "pocketsized_computation_device",
+        cast = function () return 1.5 * haste end,
+        channeled = function () return cooldown.cyclotronic_blast.remains > 0 end,
+        cooldown = 120,
+        gcd = "spell",
+
+        item = 167672,
+        itemCd = 167555,
+        texture = 2115322,
+
+        toggle = "cooldowns",
+
+        usable = function ()
+            return equipped.cyclotronic_blast
+        end,
+
+        handler = function()
+            setCooldown( "global_cooldown", 2.5 * haste )
+            applyBuff( "casting", 2.5 * haste )
+        end
+    } )
+
+    all:RegisterAura( "harmonic_dematerializer", {
+        id = 293512,
+        duration = 300,
+        max_stack = 99
+    } )
+
+    all:RegisterAbility( "harmonic_dematerializer", {
+        id = 293512,
+        key = "pocketsized_computation_device",
+        cast = 0,
+        cooldown = 15,
+        gcd = "off",
+
+        item = 167677,
+        itemCd = 167555,
+        texture = 2115322,
+
+        usable = function ()
+            return equipped.harmonic_dematerializer
+        end,
+
+        handler = function ()
+            addStack( "harmonic_dematerializer", nil, 1 )
+        end
+    } )
+end
+
+
+-- Remote Guidance Device, 169769
+all:RegisterAbility( "remote_guidance_device", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 169769,
+    toggle = "cooldowns",    
+} )
+
+
+-- Modular Platinum Plating, 168965
+all:RegisterAbility( "modular_platinum_plating", {
+    cast = 0,
+    cooldown = 120,
+    gcd = "off",
+
+    item = 168965,
+    toggle = "defensives",
+
+    handler = function ()
+        applyBuff( "platinum_plating", nil, 4 )
+    end
+} )
+
+all:RegisterAura( "platinum_plating", {
+    id = 299869,
+    duration = 30,
+    max_stack = 4
+} )
+
+
+-- Crucible
 all:RegisterAbility( "pillar_of_the_drowned_cabal", {
     cast = 0,
     cooldown = 30,
@@ -2489,27 +2747,6 @@ all:RegisterAura( "barkspines", {
 } )
 
 
-all:RegisterAbility( "knot_of_spiritual_fury", {
-    cast = 0,
-    cooldown = 60,
-    gcd = "off",
-
-    item = 161413,
-
-    toggle = "cooldowns",
-
-    handler = function ()
-        applyBuff( "spiritual_fury" )
-    end,
-} )
-
-all:RegisterAura( "spiritual_fury", {
-    id = 278231,
-    duration = 12,
-    max_stack = 1,
-} )
-
-
 all:RegisterAbility( "sandscoured_idol", {
     cast = 0,
     cooldown = 60,
@@ -2531,7 +2768,7 @@ all:RegisterAura( "secrets_of_the_sands", {
 } )
 
 
-all:RegisterAbility( "dunewalkers_survival_kit", {
+all:RegisterAbility( "deployable_vibro_enhancer", {
     cast = 0,
     cooldown = 105,
     gcd = "off",
@@ -2541,11 +2778,11 @@ all:RegisterAbility( "dunewalkers_survival_kit", {
     toggle = "cooldowns",
 
     handler = function ()
-        applyBuff( "dune_survival_kit" )
+        applyBuff( "vibro_enhanced" )
     end,
 } )
 
-all:RegisterAura( "dune_survival_kit", {
+all:RegisterAura( "vibro_enhanced", {
     id = 278260,
     duration = 12,
     max_stack = 4,
@@ -7374,13 +7611,18 @@ all:RegisterAura( "strife", {
 -- Essence of the Focusing Iris
 all:RegisterAbility( "focused_azerite_beam", {
     id = 295258,
-    cast = function () return 2.5 + essence.essence_of_the_focusing_iris.rank > 1 and 1.1 or 1.7 end,
-    channeled = true,
+    cast = function () return essence.essence_of_the_focusing_iris.rank > 1 and 1.1 or 1.7 end,
+    channeled = function () return cooldown.focused_azerite_beam.remains > 0 end,
     cooldown = 90,
 
     startsCombat = true,
     toggle = "essences",
     essence = true,
+
+    handler = function()
+        setCooldown( "global_cooldown", 2.5 * haste )
+        applyBuff( "casting", 2.5 * haste )
+    end
 } )
 
 all:RegisterAura( "focused_energy", {
@@ -7524,12 +7766,12 @@ all:RegisterAuras( {
         duration = 2,
         max_stack = 1
     },
-    reckless_force = {
+    reckless_force_counter = {
         id = 302917,
         duration = 3600,
         max_stack = 20
     },
-    reckless_force_crit = {
+    reckless_force = {
         id = 302932,
         duration = function () return essence.the_unbound_force.rank > 2 and 4 or 3 end,
         max_stack = 1
