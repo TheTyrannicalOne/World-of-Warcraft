@@ -1,66 +1,66 @@
-7/15 01:10:15.488   - SE3 Init...
-7/15 01:10:15.488  => SI3 Init
-7/15 01:10:15.488  => WoW Version 8.2.0 (30993) Jul  2 2019
-7/15 01:10:15.488   
-7/15 01:10:15.488  => User Settings Report:
-7/15 01:10:15.488   - ========= PLAYBACK =========
-7/15 01:10:15.488   - Enable All Sound         [1]
-7/15 01:10:15.488   - Enable SFX               [1]
-7/15 01:10:15.488   --- Enable Emote Sounds    [1]
-7/15 01:10:15.488   - Enable Music             [1]
-7/15 01:10:15.488   --- Loop Music             [0]
-7/15 01:10:15.488   --- Pet Battle Music       [1]
-7/15 01:10:15.488   - Enable Ambient Sounds    [1]
-7/15 01:10:15.504   - Enable Dialog            [1]
-7/15 01:10:15.504   --- Enable Error Speech    [1]
-7/15 01:10:15.504   - Sound at Character       [1]
-7/15 01:10:15.504   - Sound in Background      [0]
-7/15 01:10:15.504   - Enable Reverb            [1]
-7/15 01:10:15.504   -
-7/15 01:10:15.504   - ========== VOLUME ==========
-7/15 01:10:15.504   - Master Volume         [1.00]
-7/15 01:10:15.504   - SFX Volume            [0.80]
-7/15 01:10:15.504   - Music Volume          [0.40]
-7/15 01:10:15.504   - Ambience Volume       [0.60]
-7/15 01:10:15.504   - Dialog Volume         [1.00]
-7/15 01:10:15.504   -
-7/15 01:10:15.504   - =========== MISC ===========
-7/15 01:10:15.504   - Sound Channels          [64]
-7/15 01:10:15.519   - Sound Cache           [64MB]
-7/15 01:10:15.519   - Mix Mode 2               [0]
-7/15 01:10:15.519   - DSP Buffer Size       [AUTO]
-7/15 01:10:15.519   - Armor Foley SFX (Self)   [1]
-7/15 01:10:15.519   - Armor Foley SFX (Others) [1]
-7/15 01:10:15.519  => End of User Settings Report
-7/15 01:10:15.519   
-7/15 01:10:15.519   - FMOD Memory Init
-7/15 01:10:15.519   - FMOD System Create
-7/15 01:10:15.519   - Setting Output Type
-7/15 01:10:15.562   - 2 Output drivers detected
-7/15 01:10:15.562   --- [0] System Default
-7/15 01:10:15.562   --- [1] Headset Earphone (3- Razer ManO'War)
-7/15 01:10:15.562  ** Using Driver [0] System Default (Headset Earphone (3- Razer ManO'War))
-7/15 01:10:15.562   - DSPBufferSize = AUTO DETECT
-7/15 01:10:15.567   - Setting DSP Buffer Size
-7/15 01:10:15.567   - Using Control Panel Speaker Mode STEREO
-7/15 01:10:15.567   - Setting Software Format (44100, 2, 1).
-7/15 01:10:15.567   - Requested 64 channels.
-7/15 01:10:15.567   - Initializing Software Channels
-7/15 01:10:15.644   - Init FMOD Game System
-7/15 01:10:15.644   - Ok
-7/15 01:10:15.644   - Setting Rolloff Scale
-7/15 01:10:15.644   - Setting Rolloff Callback
-7/15 01:10:15.644   - SE3 EmitterManagerInit Success
-7/15 01:10:15.644   - Setting device callback
-7/15 01:10:15.644   - Sound Bus Init
-7/15 01:10:15.644   - Init Suppressors
-7/15 01:10:15.644   - SE3 Init Success.
-7/15 01:10:15.644  => SI3 Init Complete.
-7/15 01:10:15.644   
-7/15 01:32:03.187   
-7/15 01:32:03.187  => Shutting Down SI3
-7/15 01:32:03.206  => Shutting Down SI3 COMPLETE.
-7/15 01:32:03.207   
-7/15 01:32:03.207   - Shutting Down SE3
-7/15 01:32:03.345   - SE3 EmitterManagerShutdown Success
-7/15 01:32:03.345   - Shutting Down SE3 COMPLETE.
+7/15 23:56:41.098   - SE3 Init...
+7/15 23:56:41.098  => SI3 Init
+7/15 23:56:41.098  => WoW Version 8.2.0 (30993) Jul  2 2019
+7/15 23:56:41.098   
+7/15 23:56:41.098  => User Settings Report:
+7/15 23:56:41.098   - ========= PLAYBACK =========
+7/15 23:56:41.098   - Enable All Sound         [1]
+7/15 23:56:41.098   - Enable SFX               [1]
+7/15 23:56:41.098   --- Enable Emote Sounds    [1]
+7/15 23:56:41.098   - Enable Music             [1]
+7/15 23:56:41.098   --- Loop Music             [0]
+7/15 23:56:41.098   --- Pet Battle Music       [1]
+7/15 23:56:41.098   - Enable Ambient Sounds    [1]
+7/15 23:56:41.098   - Enable Dialog            [1]
+7/15 23:56:41.098   --- Enable Error Speech    [1]
+7/15 23:56:41.098   - Sound at Character       [1]
+7/15 23:56:41.098   - Sound in Background      [0]
+7/15 23:56:41.098   - Enable Reverb            [1]
+7/15 23:56:41.098   -
+7/15 23:56:41.114   - ========== VOLUME ==========
+7/15 23:56:41.114   - Master Volume         [1.00]
+7/15 23:56:41.114   - SFX Volume            [0.80]
+7/15 23:56:41.114   - Music Volume          [0.40]
+7/15 23:56:41.114   - Ambience Volume       [0.60]
+7/15 23:56:41.114   - Dialog Volume         [1.00]
+7/15 23:56:41.114   -
+7/15 23:56:41.114   - =========== MISC ===========
+7/15 23:56:41.114   - Sound Channels          [64]
+7/15 23:56:41.114   - Sound Cache           [64MB]
+7/15 23:56:41.114   - Mix Mode 2               [0]
+7/15 23:56:41.114   - DSP Buffer Size       [AUTO]
+7/15 23:56:41.114   - Armor Foley SFX (Self)   [1]
+7/15 23:56:41.114   - Armor Foley SFX (Others) [1]
+7/15 23:56:41.114  => End of User Settings Report
+7/15 23:56:41.114   
+7/15 23:56:41.114   - FMOD Memory Init
+7/15 23:56:41.114   - FMOD System Create
+7/15 23:56:41.114   - Setting Output Type
+7/15 23:56:41.164   - 2 Output drivers detected
+7/15 23:56:41.164   --- [0] System Default
+7/15 23:56:41.164   --- [1] Headset Earphone (3- Razer ManO'War)
+7/15 23:56:41.164  ** Using Driver [0] System Default (Headset Earphone (3- Razer ManO'War))
+7/15 23:56:41.164   - DSPBufferSize = AUTO DETECT
+7/15 23:56:41.164   - Setting DSP Buffer Size
+7/15 23:56:41.164   - Using Control Panel Speaker Mode STEREO
+7/15 23:56:41.164   - Setting Software Format (44100, 2, 1).
+7/15 23:56:41.164   - Requested 64 channels.
+7/15 23:56:41.164   - Initializing Software Channels
+7/15 23:56:41.225   - Init FMOD Game System
+7/15 23:56:41.225   - Ok
+7/15 23:56:41.225   - Setting Rolloff Scale
+7/15 23:56:41.225   - Setting Rolloff Callback
+7/15 23:56:41.225   - SE3 EmitterManagerInit Success
+7/15 23:56:41.225   - Setting device callback
+7/15 23:56:41.225   - Sound Bus Init
+7/15 23:56:41.225   - Init Suppressors
+7/15 23:56:41.225   - SE3 Init Success.
+7/15 23:56:41.225  => SI3 Init Complete.
+7/15 23:56:41.225   
+7/15 23:56:55.660   
+7/15 23:56:55.662  => Shutting Down SI3
+7/15 23:56:55.662  => Shutting Down SI3 COMPLETE.
+7/15 23:56:55.662   
+7/15 23:56:55.662   - Shutting Down SE3
+7/15 23:56:55.688   - SE3 EmitterManagerShutdown Success
+7/15 23:56:55.688   - Shutting Down SE3 COMPLETE.

@@ -1,34 +1,21 @@
-7/15 01:10:14.240  LogOpen
-7/15 01:10:14.669  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0c40) dx11:true dx12:true
-7/15 01:10:14.669  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
-7/15 01:10:14.669  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
-7/15 01:10:14.712  D3d12 Device Create
-7/15 01:10:14.842  Choosing adapter 0
-7/15 01:10:15.002  Detected NvAPI and checking if it's valid...
-7/15 01:10:15.002  AFR Groups: 1/1
-7/15 01:10:15.002  Feature Level: DX=6, MTL=0
-7/15 01:10:15.019  NotifyOnDeviceCreate
-7/15 01:10:15.019  D3d12 Device Create Successful
-7/15 01:10:15.019  Nvidia driver version: r431_31 (43136)
-7/15 01:10:15.019  <IsGPUDriverOutOfDate> No
-7/15 01:10:15.044  CPU Processor Detection: 12 H/W threads
-7/15 01:10:15.044  Memory Detection: 34296328192 bytes of physical memory available
-7/15 01:10:15.044  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
-7/15 01:10:15.144  RenderSettings::NotifyChanged
-7/15 01:10:15.748  Nvidia driver version: r431_31 (43136)
-7/15 01:10:42.872  Nvidia driver version: r431_31 (43136)
-7/15 01:10:42.872  Nvidia driver version: r431_31 (43136)
-7/15 01:11:32.167  Nvidia driver version: r431_31 (43136)
-7/15 01:12:58.758  RenderSettings::NotifyChanged
-7/15 01:13:52.375  Nvidia driver version: r431_31 (43136)
-7/15 01:14:23.649  Nvidia driver version: r431_31 (43136)
-7/15 01:16:25.451  Nvidia driver version: r431_31 (43136)
-7/15 01:17:22.646  Nvidia driver version: r431_31 (43136)
-7/15 01:18:30.826  RenderSettings::NotifyChanged
-7/15 01:18:31.121  CharacterComponent Texture Level change
-7/15 01:27:13.169  RenderSettings::NotifyChanged
-7/15 01:27:17.446  CharacterComponent Texture Level change
-7/15 01:32:03.047  Nvidia driver version: r431_31 (43136)
-7/15 01:32:03.926  D3d12 Device Destroy
-7/15 01:32:03.926  NotifyOnDeviceDestroy
-7/15 01:32:04.509  GxShutdown
+7/15 23:56:39.788  LogOpen
+7/15 23:56:40.167  Adapter 0: "NVIDIA GeForce RTX 2080 Ti" vendor:0x10de device:0x1e07 driver(0x1a0015, 0xe0c40) dx11:true dx12:true
+7/15 23:56:40.167  	Monitor 0 "\\.\DISPLAY2" (2560x1440)
+7/15 23:56:40.167  	Monitor 1 "\\.\DISPLAY1" (1920x1080)
+7/15 23:56:40.233  D3d12 Device Create
+7/15 23:56:40.391  Choosing adapter 0
+7/15 23:56:40.582  Detected NvAPI and checking if it's valid...
+7/15 23:56:40.583  AFR Groups: 1/1
+7/15 23:56:40.583  Feature Level: DX=6, MTL=0
+7/15 23:56:40.602  NotifyOnDeviceCreate
+7/15 23:56:40.602  D3d12 Device Create Successful
+7/15 23:56:40.602  Nvidia driver version: r431_31 (43136)
+7/15 23:56:40.602  <IsGPUDriverOutOfDate> No
+7/15 23:56:40.630  CPU Processor Detection: 12 H/W threads
+7/15 23:56:40.630  Memory Detection: 34296328192 bytes of physical memory available
+7/15 23:56:40.630  Detected Graphics Defaults: 6 (CPU = 6, GPU = 6, MEM = 6)
+7/15 23:56:40.731  RenderSettings::NotifyChanged
+7/15 23:56:41.318  Nvidia driver version: r431_31 (43136)
+7/15 23:56:56.338  D3d12 Device Destroy
+7/15 23:56:56.338  NotifyOnDeviceDestroy
+7/15 23:56:56.452  GxShutdown
