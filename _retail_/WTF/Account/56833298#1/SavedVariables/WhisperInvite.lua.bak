@@ -52,36 +52,9 @@ WhisperInviteCoreDB = {
 			["profiles"] = {
 				["ZerkinUI"] = {
 					["keywords"] = {
-						["invite0"] = {
-							["showInviteBlockMessage"] = true,
-							["name"] = "invite",
-							["channels"] = {
-								["CHAT_MSG_OFFICER"] = false,
-								["CHAT_MSG_WHISPER"] = true,
-								["CHAT_MSG_GUILD"] = false,
-							},
-							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_CONVERSATION"] = false,
-								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
-								["CHAT_MSG_BN_WHISPER"] = true,
-							},
-							["keyword"] = "invite",
-							["maxGroupSize"] = 20,
-						},
 						["autoinvite0"] = {
 							["keyword"] = "autoinvite",
 							["name"] = "autoinvite",
-						},
-						["auto invite0"] = {
-							["name"] = "auto invite",
-							["bnet_channels"] = {
-								["CHAT_MSG_BN_WHISPER"] = true,
-							},
-							["keyword"] = "auto invite",
-							["channels"] = {
-								["CHAT_MSG_WHISPER"] = true,
-							},
 						},
 						["inv0"] = {
 							["channels"] = {
@@ -98,6 +71,33 @@ WhisperInviteCoreDB = {
 							["listType"] = 2,
 							["name"] = "inv",
 							["customBlockMessage"] = "Erorr filtering \"inv\" - Zerkin",
+						},
+						["auto invite0"] = {
+							["name"] = "auto invite",
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["keyword"] = "auto invite",
+							["channels"] = {
+								["CHAT_MSG_WHISPER"] = true,
+							},
+						},
+						["invite0"] = {
+							["showInviteBlockMessage"] = true,
+							["name"] = "invite",
+							["channels"] = {
+								["CHAT_MSG_OFFICER"] = false,
+								["CHAT_MSG_WHISPER"] = true,
+								["CHAT_MSG_GUILD"] = false,
+							},
+							["customBlockMessage"] = "Erorr filtering \"invite\" - Zerkin",
+							["bnet_channels"] = {
+								["CHAT_MSG_BN_CONVERSATION"] = false,
+								["CHAT_MSG_BN_INLINE_TOAST_BROADCAST"] = false,
+								["CHAT_MSG_BN_WHISPER"] = true,
+							},
+							["keyword"] = "invite",
+							["maxGroupSize"] = 20,
 						},
 					},
 				},

@@ -13,7 +13,7 @@ BigWigs:AddColors("Radiance of Azshara", {
 	[295916] = "cyan",
 	[296428] = "yellow",
 	[296459] = "yellow",
-	[296546] = {"blue","purple"},
+	[296566] = {"blue","purple"},
 	[296701] = "orange",
 	[296737] = {"blue","green","yellow"},
 	[296894] = "yellow",

@@ -13,7 +13,7 @@ BigWigs:AddSounds("Radiance of Azshara", {
 	[295916] = "long",
 	[296428] = "alarm",
 	[296459] = "long",
-	[296546] = {"alarm","alert"},
+	[296566] = {"alarm","alert"},
 	[296701] = "warning",
 	[296737] = "alert",
 	[296894] = "alert",

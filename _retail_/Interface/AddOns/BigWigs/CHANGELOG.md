@@ -1,7 +1,12 @@
 # BigWigs
 
-## [v154.1](https://github.com/BigWigsMods/BigWigs/tree/v154.1) (2019-07-14)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v154...v154.1)
+## [v155](https://github.com/BigWigsMods/BigWigs/tree/v155) (2019-07-17)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v154.1...v155)
 
-- EternalPalace/QueenAzshara: Adjust intermission 1 trigger  
-- EternalPalace/QueenAzshara: Fix Arcane Burst say countdown being too fast  
+- bump version  
+- EternalPalace: Code fixes  
+- EternalPalace/RadianceofAszhara: Update Tide Fist option key  
+- EternalPalace/RadianceofAszhara: Fix Tide Fist not showing a bar  
+- EternalPalace/QueenAzshara: Improve timers on pull, add cast bar for Arcane Detonation  
+- EternalPalace/Orgozoa: Remove intermission timer as it's based on % now, improve tank debuff timer  
+- EternalPalace/LadyAshvane: Fix Barnacle Bash timers in stage 2  

@@ -24,8 +24,8 @@
 -- f:AddChild(btn)
 -- @class file
 -- @name AceGUI-3.0
--- @release $Id: AceGUI-3.0.lua 1216 2019-07-10 02:36:51Z funkydude $
-local ACEGUI_MAJOR, ACEGUI_MINOR = "AceGUI-3.0", 37
+-- @release $Id: AceGUI-3.0.lua 1218 2019-07-15 08:29:52Z nevcairiel $
+local ACEGUI_MAJOR, ACEGUI_MINOR = "AceGUI-3.0", 38
 local AceGUI, oldminor = LibStub:NewLibrary(ACEGUI_MAJOR, ACEGUI_MINOR)
 
 if not AceGUI then return end -- No upgrade needed
@@ -177,6 +177,7 @@ end
 -- @param widget The widget to release
 function AceGUI:Release(widget)
 	safecall(widget.PauseLayout, widget)
+	widget.frame:Hide()
 	widget:Fire("OnRelease")
 	safecall(widget.ReleaseChildren, widget)
 
