@@ -54,6 +54,7 @@ BigWigs:AddColors("Orgozoa", {
 	[298465] = "cyan",
 	[298548] = "cyan",
 	[305048] = {"blue","red"},
+	[305057] = "cyan",
 	["stages"] = {"cyan","green"},
 })
 

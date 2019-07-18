@@ -13,7 +13,7 @@ local mod, CL = BigWigs:NewBoss("Queen Azshara", 2164, 2361)
 if not mod then return end
 mod:RegisterEnableMob(152910, 153059, 153060) -- Queen Azshara, Aethanel, Cyranus
 mod.engageId = 2299
---mod.respawnTime = 31
+mod.respawnTime = 30
 
 --------------------------------------------------------------------------------
 -- Local
@@ -21,6 +21,8 @@ mod.engageId = 2299
 
 local stage = 1
 local portalCount = 1
+local hulkCollection = {}
+local drainedSoulList = {}
 
 --------------------------------------------------------------------------------
 -- Localization
@@ -35,7 +37,7 @@ function mod:GetOptions()
 	return {
 		"stages",
 		300074, -- Pressure Surge
-		298569, -- Drained Soul
+		{298569, "INFOBOX"}, -- Drained Soul
 		297937, -- Painful Memories
 		297934, -- Longing
 		297912, -- Torment
@@ -85,6 +87,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_DAMAGE", "PressureSurge", 300074)
 	self:Log("SPELL_AURA_APPLIED", "DrainedSoulApplied", 298569)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "DrainedSoulApplied", 298569)
+	self:Log("SPELL_AURA_REMOVED", "DrainedSoulRemoved", 298569)
 
 	-- Stage 1
 	self:Log("SPELL_CAST_START", "PainfulMemories", 297937)
@@ -149,24 +152,33 @@ end
 function mod:OnEngage()
 	stage = 1
 	portalCount = 1
+	hulkCollection = {}
+	drainedSoulList = {}
+	self:RegisterEvent("INSTANCE_ENCOUNTER_ENGAGE_UNIT")
 
 	self:CDBar(297937, 14.2) -- Painful Memories
 	self:CDBar(298121, 18.5) -- Lightning Orbs
 	self:Bar(299094, 49.5) -- Beckon
 	self:Bar(298787, 65) -- Arcane Orbs
-	--self:CDBar(-20480, 64, nil, "achievement_boss_nagabruteboss") -- Overzealous Hulk
+	self:CDBar(-20480, 35, nil, "achievement_boss_nagabruteboss") -- Overzealous Hulk
 end
 
 --------------------------------------------------------------------------------
 -- Event Handlers
 --
 
+function mod:INSTANCE_ENCOUNTER_ENGAGE_UNIT()
+	local unit, guid = self:GetBossId(153064) -- Overzealous Hulk
+	if unit and not hulkCollection[guid] then
+		hulkCollection[guid] = true
+		self:Message2(-20480, "cyan", self:SpellName(-20480), "achievement_boss_nagabruteboss")
+		self:PlaySound(-20480, "long")
+		self:CDBar(-20480, self:Easy() and 84 or 59, nil, "achievement_boss_nagabruteboss") -- Overzealous Hulk
+	end
+end
+
 function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, _, spellId)
-	if spellId == 298496 then -- Rush Ancient Ward (Overzealous Hulk)
-		self:Message2(-20480, "cyan", self:SpellName(-20480), "achievement_boss_nagabruteboss") -- Overzealous Hulk
-		self:PlaySound("stages", "long")
-		self:CDBar(-20480, 64, nil, "achievement_boss_nagabruteboss") -- Overzealous Hulk
-	elseif spellId == 297371 then -- Reversal of Fortune
+	if spellId == 297371 then -- Reversal of Fortune
 		self:PlaySound(spellId, "long")
 		self:Message2(spellId, "cyan")
 		self:CDBar(spellId, 80)
@@ -230,6 +242,8 @@ do
 end
 
 function mod:DrainedSoulApplied(args)
+	drainedSoulList[args.destName] = args.amount or 1
+	self:SetInfoByTable(args.spellId, drainedSoulList)
 	if self:Me(args.destGUID) then
 		local amount = args.amount or 1
 		if amount % 2 == 0 or amount >= 7 then
@@ -237,6 +251,11 @@ function mod:DrainedSoulApplied(args)
 			self:PlaySound(args.spellId, amount > 7 and "warning" or "alarm", nil, args.destName)
 		end
 	end
+end
+
+function mod:DrainedSoulRemoved(args)
+	drainedSoulList[args.destName] = nil
+	self:SetInfoByTable(args.spellId, drainedSoulList)
 end
 
 -- Stage 1

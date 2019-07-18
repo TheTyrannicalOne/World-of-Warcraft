@@ -6,7 +6,7 @@ local mod, CL = BigWigs:NewBoss("Blackwater Behemoth", 2164, 2347)
 if not mod then return end
 mod:RegisterEnableMob(150653) -- Blackwater Behemoth
 mod.engageId = 2289
---mod.respawnTime = 31
+mod.respawnTime = 30
 
 --------------------------------------------------------------------------------
 -- Local
@@ -50,7 +50,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "ToxicSpine", 292159)
 	self:Log("SPELL_AURA_APPLIED", "ToxicSpineApplied", 292167)
 	self:Log("SPELL_CAST_START", "ShockPulse", 292270)
-	self:Log("SPELL_CAST_SUCCESS", "PiercingBarb", 301477)
+	self:Log("SPELL_CAST_SUCCESS", "PiercingBarb", 301494)
 	self:Log("SPELL_AURA_APPLIED", "PiercingBarbApplied", 301494)
 
 	self:Log("SPELL_AURA_APPLIED", "SlipstreamApplied", 301180)
@@ -65,7 +65,7 @@ function mod:OnEngage()
 	self:Bar(292270, 23) -- Shock Pulse
 
 	if self:Mythic() then
-		self:Bar(301494, 11) -- Piercing Barb
+		self:Bar(301494, 13) -- Piercing Barb
 	end
 
 	intermissionTime = GetTime() + 100
@@ -159,7 +159,7 @@ end
 function mod:PiercingBarb(args)
 	local timeToIntermission = intermissionTime - GetTime()
 	if stage == 3 or timeToIntermission > 30 then
-		self:Bar(301494, 30)
+		self:Bar(args.spellId, 30)
 	end
 end
 
@@ -190,7 +190,7 @@ function mod:Interupted(args)
 		self:Bar(292270, 23) -- Shock Pulse
 
 		if self:Mythic() then
-			self:Bar(301494, 11) -- Piercing Barb
+			self:Bar(301494, 13) -- Piercing Barb
 		end
 
 		if stage < 3 then -- Does not move again at stage 3

@@ -1,12 +1,7 @@
 # BigWigs
 
-## [v155](https://github.com/BigWigsMods/BigWigs/tree/v155) (2019-07-17)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v154.1...v155)
+## [v157.1](https://github.com/BigWigsMods/BigWigs/tree/v157.1) (2019-07-18)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v157...v157.1)
 
-- bump version  
-- EternalPalace: Code fixes  
-- EternalPalace/RadianceofAszhara: Update Tide Fist option key  
-- EternalPalace/RadianceofAszhara: Fix Tide Fist not showing a bar  
-- EternalPalace/QueenAzshara: Improve timers on pull, add cast bar for Arcane Detonation  
-- EternalPalace/Orgozoa: Remove intermission timer as it's based on % now, improve tank debuff timer  
-- EternalPalace/LadyAshvane: Fix Barnacle Bash timers in stage 2  
+- EternalPalace/LadyAshvane: Fix an error and fix Briny Bubble to use the correct id on normal  
+- EternalPalace/Orgozoa: Fix lua error on pull  
