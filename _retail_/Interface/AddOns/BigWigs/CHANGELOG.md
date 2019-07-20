@@ -1,7 +1,11 @@
 # BigWigs
 
-## [v157.1](https://github.com/BigWigsMods/BigWigs/tree/v157.1) (2019-07-18)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v157...v157.1)
+## [v158](https://github.com/BigWigsMods/BigWigs/tree/v158) (2019-07-19)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v157.1...v158)
 
-- EternalPalace/LadyAshvane: Fix an error and fix Briny Bubble to use the correct id on normal  
-- EternalPalace/Orgozoa: Fix lua error on pull  
+- bump version  
+- EternalPalace/QueenAzshara: Remove stray commas  
+- EternalPalace/QueenAzshara: Fix option key  
+- EternalPalace/QueenAzshara: Clarify the decrees and add a yell for stand together.  
+- EternalPalace/QueenAzshara: Sort the InfoBox in reverse.  
+- Plugins/InfoBox: Add reverse order functionality for setting the list via a table.  

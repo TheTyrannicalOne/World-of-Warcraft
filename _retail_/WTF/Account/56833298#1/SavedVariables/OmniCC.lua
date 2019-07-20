@@ -1,6 +1,6 @@
 
 OmniCC4Config = {
-	["version"] = "8.1.1",
+	["version"] = "8.2.2",
 	["groupSettings"] = {
 		["base"] = {
 			["minDuration"] = 2,

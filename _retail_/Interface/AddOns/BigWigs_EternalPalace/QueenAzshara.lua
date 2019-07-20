@@ -28,6 +28,16 @@ local drainedSoulList = {}
 -- Localization
 --
 
+local L = mod:GetLocale()
+if L then
+	L[299249] = "%s (Soak Orbs)"
+	L[299251] = "%s (Avoid Orbs)"
+	L[299254] = "%s (Hug Others)"
+	L[299255] = "%s (Avoid Everyone)"
+	L[299252] = "%s (Keep Moving)"
+	L[299253] = "%s (Stand Still)"
+end
+
 --------------------------------------------------------------------------------
 -- Initialization
 --
@@ -53,7 +63,7 @@ function mod:GetOptions()
 		300428, -- Infuriated
 		298787, -- Arcane Orbs
 		{299094, "SAY", "FLASH", "PULSE"}, -- Beckon
-		299250, -- Queen's Decree
+		{299250, "SAY"}, -- Queen's Decree
 		302999, -- Arcane Vulnerability
 		{304475, "TANK"}, -- Arcane Jolt
 		300519, -- Arcane Detonation
@@ -161,6 +171,15 @@ function mod:OnEngage()
 	self:Bar(299094, 49.5) -- Beckon
 	self:Bar(298787, 65) -- Arcane Orbs
 	self:CDBar(-20480, 35, nil, "achievement_boss_nagabruteboss") -- Overzealous Hulk
+	self:OpenInfo(298569, self:SpellName(298569)) -- Drained Soul
+	for unit in self:IterateGroup() do
+		local _, _, _, tarInstanceId = UnitPosition(unit)
+		local name = self:UnitName(unit)
+		if name and tarInstanceId == 2164 then
+			drainedSoulList[name] = 0
+		end
+	end
+	self:SetInfoByTable(298569, drainedSoulList, true) -- Drained Soul
 end
 
 --------------------------------------------------------------------------------
@@ -243,7 +262,7 @@ end
 
 function mod:DrainedSoulApplied(args)
 	drainedSoulList[args.destName] = args.amount or 1
-	self:SetInfoByTable(args.spellId, drainedSoulList)
+	self:SetInfoByTable(args.spellId, drainedSoulList, true)
 	if self:Me(args.destGUID) then
 		local amount = args.amount or 1
 		if amount % 2 == 0 or amount >= 7 then
@@ -254,8 +273,8 @@ function mod:DrainedSoulApplied(args)
 end
 
 function mod:DrainedSoulRemoved(args)
-	drainedSoulList[args.destName] = nil
-	self:SetInfoByTable(args.spellId, drainedSoulList)
+	drainedSoulList[args.destName] = 0
+	self:SetInfoByTable(args.spellId, drainedSoulList, true)
 end
 
 -- Stage 1
@@ -409,9 +428,12 @@ do
 
 	function mod:PersonalDecrees(args)
 		if self:Me(args.destGUID) then
-			debuffs[#debuffs+1] = args.spellName
+			debuffs[#debuffs+1] = L[args.spellId]:format(args.spellName)
 			if #debuffs == 1 then
 				self:SimpleTimer(announce, 0.1)
+			end
+			if args.spellId == 299254 then -- Stand Together!
+				self:Yell2(299250, args.spellName)
 			end
 		end
 	end

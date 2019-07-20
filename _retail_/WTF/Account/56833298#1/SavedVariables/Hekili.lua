@@ -2562,13 +2562,13 @@ HekiliDB = {
 					["damage"] = true,
 					["throttleRefresh"] = false,
 					["package"] = "Protection Warrior",
-					["nameplates"] = true,
 					["potionsReset"] = 20180919.1,
+					["aoe"] = 2,
 					["nameplateRange"] = 8,
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["debuffPadding"] = 0,
-					["aoe"] = 2,
+					["nameplates"] = true,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["buffPadding"] = 0.25,
@@ -2579,13 +2579,13 @@ HekiliDB = {
 					["damage"] = true,
 					["throttleRefresh"] = false,
 					["debuffPadding"] = 0,
-					["potionsReset"] = 20180919.1,
 					["nameplates"] = true,
+					["aoe"] = 2,
 					["nameplateRange"] = 8,
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["package"] = "Arms",
-					["aoe"] = 2,
+					["potionsReset"] = 20180919.1,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["buffPadding"] = 0.25,
@@ -2596,13 +2596,13 @@ HekiliDB = {
 					["damage"] = true,
 					["throttleRefresh"] = false,
 					["package"] = "Fury",
-					["nameplates"] = true,
 					["potionsReset"] = 20180919.1,
+					["aoe"] = 2,
 					["nameplateRange"] = 8,
 					["cycle"] = false,
 					["potion"] = "potion_of_bursting_blood",
 					["debuffPadding"] = 0,
-					["aoe"] = 2,
+					["nameplates"] = true,
 					["damageExpiration"] = 8,
 					["damageDots"] = false,
 					["buffPadding"] = 0.25,
@@ -3518,15 +3518,15 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [15]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "pocketsized_computation_device",
 								["action"] = "pocketsized_computation_device",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [16]
 							{
 								["action"] = "frostbolt",
@@ -3640,15 +3640,15 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [12]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "pocketsized_computation_device",
 								["action"] = "pocketsized_computation_device",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [13]
 							{
 								["action"] = "frostbolt",
@@ -3798,15 +3798,15 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [12]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "pocketsized_computation_device",
 								["action"] = "pocketsized_computation_device",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [13]
 							{
 								["action"] = "frostbolt",
@@ -3891,15 +3891,15 @@ HekiliDB = {
 							}, -- [14]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [15]
 							{
 								["enabled"] = true,
+								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 								["name"] = "pocketsized_computation_device",
 								["action"] = "pocketsized_computation_device",
-								["criteria"] = "buff.icy_veins.down & buff.rune_of_power.down",
 							}, -- [16]
 							{
 								["action"] = "frostbolt",
@@ -4046,9 +4046,9 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
+								["criteria"] = "! cooldown.cyclotronic_blast.duration",
 								["name"] = "pocketsized_computation_device",
 								["action"] = "pocketsized_computation_device",
-								["criteria"] = "! cooldown.cyclotronic_blast.duration",
 							}, -- [2]
 						},
 						["default"] = {
@@ -4092,9 +4092,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
+								["criteria"] = "cooldown.combustion.remains > 55",
 								["name"] = "malformed_heralds_legwraps",
 								["action"] = "malformed_heralds_legwraps",
-								["criteria"] = "cooldown.combustion.remains > 55",
 							}, -- [10]
 							{
 								["enabled"] = true,
@@ -4521,15 +4521,15 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
+								["criteria"] = "cooldown.combustion.remains > 20 || talent.firestarter.enabled & firestarter.remains > 20",
 								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
-								["criteria"] = "cooldown.combustion.remains > 20 || talent.firestarter.enabled & firestarter.remains > 20",
 							}, -- [12]
 							{
 								["enabled"] = true,
+								["criteria"] = "cooldown.cyclotronic_blast.duration & ( cooldown.combustion.remains > 20 || talent.firestarter.enabled & firestarter.remains > 20 )",
 								["name"] = "pocketsized_computation_device",
 								["action"] = "pocketsized_computation_device",
-								["criteria"] = "cooldown.cyclotronic_blast.duration & ( cooldown.combustion.remains > 20 || talent.firestarter.enabled & firestarter.remains > 20 )",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -4622,15 +4622,15 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
+								["action"] = "tidestorm_codex",
 								["criteria"] = "buff.rune_of_power.down & ! buff.arcane_power.react & cooldown.arcane_power.remains > 20",
 								["name"] = "tidestorm_codex",
-								["action"] = "tidestorm_codex",
 							}, -- [6]
 							{
 								["enabled"] = true,
+								["action"] = "pocketsized_computation_device",
 								["criteria"] = "buff.rune_of_power.down & ! buff.arcane_power.react & cooldown.arcane_power.remains > 20",
 								["name"] = "pocketsized_computation_device",
-								["action"] = "pocketsized_computation_device",
 							}, -- [7]
 							{
 								["enabled"] = true,
@@ -4639,9 +4639,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
+								["action"] = "arcane_missiles",
 								["chain"] = "1",
 								["criteria"] = "mana.pct <= 95 & buff.clearcasting.react & active_enemies < 3",
-								["action"] = "arcane_missiles",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -4795,9 +4795,9 @@ HekiliDB = {
 							}, -- [9]
 							{
 								["enabled"] = true,
+								["action"] = "pocketsized_computation_device",
 								["criteria"] = "( buff.arcane_power.up || ( boss & time_to_die < cooldown.arcane_power.remains )",
 								["name"] = "pocketsized_computation_device",
-								["action"] = "pocketsized_computation_device",
 							}, -- [10]
 							{
 								["action"] = "blood_fury",
@@ -4838,9 +4838,9 @@ HekiliDB = {
 							}, -- [18]
 							{
 								["enabled"] = true,
+								["action"] = "arcane_missiles",
 								["chain"] = "1",
 								["criteria"] = "buff.clearcasting.react & active_enemies < 3 & ( talent.amplification.enabled || ( ! talent.overpowered.enabled & azerite.arcane_pummeling.rank >= 2 ) || buff.arcane_power.down )",
-								["action"] = "arcane_missiles",
 							}, -- [19]
 							{
 								["enabled"] = true,
@@ -5469,9 +5469,9 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
+								["criteria"] = "equipped.azsharas_font_of_power & dot.moonfire.ticking & dot.sunfire.ticking & ( ! talent.stellar_flare.enabled || dot.stellar_flare.ticking )",
 								["name"] = "azsharas_font_of_power",
 								["action"] = "azsharas_font_of_power",
-								["criteria"] = "equipped.azsharas_font_of_power & dot.moonfire.ticking & dot.sunfire.ticking & ( ! talent.stellar_flare.enabled || dot.stellar_flare.ticking )",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -5480,21 +5480,21 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
+								["criteria"] = "equipped.tidestorm_codex",
 								["name"] = "tidestorm_codex",
 								["action"] = "tidestorm_codex",
-								["criteria"] = "equipped.tidestorm_codex",
 							}, -- [11]
 							{
 								["enabled"] = true,
+								["criteria"] = "equipped.pocketsized_computation_device & dot.moonfire.ticking & dot.sunfire.ticking & ( ! talent.stellar_flare.enabled || dot.stellar_flare.ticking )",
 								["name"] = "pocketsized_computation_device",
 								["action"] = "pocketsized_computation_device",
-								["criteria"] = "equipped.pocketsized_computation_device & dot.moonfire.ticking & dot.sunfire.ticking & ( ! talent.stellar_flare.enabled || dot.stellar_flare.ticking )",
 							}, -- [12]
 							{
 								["enabled"] = true,
+								["criteria"] = "equipped.shiver_venom_relic & cooldown.ca_inc.remains > 30 & ! buff.ca_inc.up",
 								["name"] = "shiver_venom_relic",
 								["action"] = "shiver_venom_relic",
-								["criteria"] = "equipped.shiver_venom_relic & cooldown.ca_inc.remains > 30 & ! buff.ca_inc.up",
 							}, -- [13]
 							{
 								["enabled"] = true,
@@ -5982,13 +5982,13 @@ HekiliDB = {
 					["damage"] = true,
 					["package"] = "Shadow",
 					["debuffPadding"] = 0,
-					["aoe"] = 3,
 					["potionsReset"] = 20180919.1,
+					["nameplates"] = false,
 					["throttleRefresh"] = false,
 					["cycle"] = false,
 					["potion"] = "potion_of_rising_death",
 					["nameplateRange"] = 8,
-					["nameplates"] = false,
+					["aoe"] = 3,
 					["damageExpiration"] = 6,
 					["damageDots"] = false,
 					["buffPadding"] = 0.25,

@@ -24,72 +24,6 @@ ElvCharacterDB = {
 	},
 	["ChatHistoryLog"] = {
 		{
-			"3", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			659, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1563118553,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [1]
-		{
-			"2", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			660, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1563118554,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [2]
-		{
-			"1", -- [1]
-			"Shanyt-ArgentDawn", -- [2]
-			"Orcish", -- [3]
-			"", -- [4]
-			"Shanyt-ArgentDawn", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			661, -- [11]
-			"Player-75-058380E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc59a6cShanyt|r",
-			[51] = 1563118555,
-			[50] = "CHAT_MSG_SAY",
-		}, -- [3]
-		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
 			"Orcish", -- [3]
@@ -110,7 +44,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118566,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [4]
+		}, -- [1]
 		{
 			"{rt3} Branded {rt3} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -132,7 +66,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118566,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [5]
+		}, -- [2]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -154,7 +88,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118635,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [6]
+		}, -- [3]
 		{
 			"{rt6} Branded {rt6} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -176,7 +110,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118641,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [7]
+		}, -- [4]
 		{
 			"Shield of Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -198,7 +132,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118700,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [8]
+		}, -- [5]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -220,7 +154,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118702,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [9]
+		}, -- [6]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -242,7 +176,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118704,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [10]
+		}, -- [7]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -264,7 +198,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118705,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [11]
+		}, -- [8]
 		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -286,7 +220,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118716,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [12]
+		}, -- [9]
 		{
 			"{rt6} Branded {rt6} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -308,7 +242,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118716,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [13]
+		}, -- [10]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -330,7 +264,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118730,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [14]
+		}, -- [11]
 		{
 			"Shield of Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -352,7 +286,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118776,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [15]
+		}, -- [12]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -374,7 +308,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118778,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [16]
+		}, -- [13]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -396,7 +330,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118779,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [17]
+		}, -- [14]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -418,7 +352,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118780,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [18]
+		}, -- [15]
 		{
 			"{rt4} Branded {rt4} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -440,7 +374,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118791,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [19]
+		}, -- [16]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -462,7 +396,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118805,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [20]
+		}, -- [17]
 		{
 			"Shield of Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -484,7 +418,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118851,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [21]
+		}, -- [18]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -506,7 +440,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118852,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [22]
+		}, -- [19]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -528,7 +462,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118854,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [23]
+		}, -- [20]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -550,7 +484,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118855,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [24]
+		}, -- [21]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -572,7 +506,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118860,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [25]
+		}, -- [22]
 		{
 			"{rt4} Branded {rt4} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -594,7 +528,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118866,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [26]
+		}, -- [23]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -616,7 +550,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118880,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [27]
+		}, -- [24]
 		{
 			"{rt4} Branded {rt4} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -638,7 +572,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118941,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [28]
+		}, -- [25]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -660,7 +594,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563118955,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [29]
+		}, -- [26]
 		{
 			"{rt6} Branded {rt6} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -682,7 +616,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119016,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [30]
+		}, -- [27]
 		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -704,7 +638,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119016,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [31]
+		}, -- [28]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -726,7 +660,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119031,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [32]
+		}, -- [29]
 		{
 			"{rt2} Branded {rt2} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -748,7 +682,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119091,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [33]
+		}, -- [30]
 		{
 			"{rt3} Branded {rt3} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -770,7 +704,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119091,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [34]
+		}, -- [31]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -792,7 +726,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119106,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [35]
+		}, -- [32]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -814,7 +748,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119161,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [36]
+		}, -- [33]
 		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -836,7 +770,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119166,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [37]
+		}, -- [34]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -858,7 +792,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119180,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [38]
+		}, -- [35]
 		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -880,7 +814,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119241,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [39]
+		}, -- [36]
 		{
 			"{rt4} Branded {rt4} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -902,7 +836,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119241,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [40]
+		}, -- [37]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -924,7 +858,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119256,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [41]
+		}, -- [38]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -946,7 +880,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119311,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [42]
+		}, -- [39]
 		{
 			"{rt4} Branded {rt4} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -968,7 +902,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119316,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [43]
+		}, -- [40]
 		{
 			"Shield of Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -990,7 +924,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119376,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [44]
+		}, -- [41]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1012,7 +946,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119378,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [45]
+		}, -- [42]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1034,7 +968,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119379,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [46]
+		}, -- [43]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1056,7 +990,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119380,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [47]
+		}, -- [44]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1078,7 +1012,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119386,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [48]
+		}, -- [45]
 		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1100,7 +1034,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119391,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [49]
+		}, -- [46]
 		{
 			"{rt3} Branded {rt3} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1122,7 +1056,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119391,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [50]
+		}, -- [47]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1144,7 +1078,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119406,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [51]
+		}, -- [48]
 		{
 			"{rt4} Branded {rt4} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1166,7 +1100,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119466,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [52]
+		}, -- [49]
 		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1188,7 +1122,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119466,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [53]
+		}, -- [50]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1210,7 +1144,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119481,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [54]
+		}, -- [51]
 		{
 			"Shield of Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1232,7 +1166,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119526,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [55]
+		}, -- [52]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1254,7 +1188,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119528,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [56]
+		}, -- [53]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1276,7 +1210,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119529,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [57]
+		}, -- [54]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1298,7 +1232,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119530,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [58]
+		}, -- [55]
 		{
 			"{rt2} Branded {rt2} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1320,7 +1254,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119541,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [59]
+		}, -- [56]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1342,7 +1276,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119556,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [60]
+		}, -- [57]
 		{
 			"Shield of Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1364,7 +1298,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119601,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [61]
+		}, -- [58]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1386,7 +1320,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119603,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [62]
+		}, -- [59]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1408,7 +1342,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119604,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [63]
+		}, -- [60]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1430,7 +1364,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119605,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [64]
+		}, -- [61]
 		{
 			"{rt3} Branded {rt3} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1452,7 +1386,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119616,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [65]
+		}, -- [62]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1474,7 +1408,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119631,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [66]
+		}, -- [63]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1496,7 +1430,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119686,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [67]
+		}, -- [64]
 		{
 			"{rt4} Branded {rt4} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1518,7 +1452,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119691,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [68]
+		}, -- [65]
 		{
 			"{rt3} Branded {rt3} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1540,7 +1474,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119691,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [69]
+		}, -- [66]
 		{
 			"Expel Light on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1562,7 +1496,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119761,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [70]
+		}, -- [67]
 		{
 			"{rt2} Branded {rt2} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1584,7 +1518,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119766,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [71]
+		}, -- [68]
 		{
 			"{rt1} Branded {rt1} on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1606,7 +1540,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119766,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [72]
+		}, -- [69]
 		{
 			"Storm of Justice on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1628,7 +1562,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119843,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [73]
+		}, -- [70]
 		{
 			"Stormforged Spear on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1650,7 +1584,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563119848,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [74]
+		}, -- [71]
 		{
 			"Flame Lick on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1672,7 +1606,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563120125,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [75]
+		}, -- [72]
 		{
 			"Taint on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1694,7 +1628,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563120296,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [76]
+		}, -- [73]
 		{
 			"Orb on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1716,7 +1650,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563120371,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [77]
+		}, -- [74]
 		{
 			"Taint on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1738,7 +1672,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563120384,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [78]
+		}, -- [75]
 		{
 			"Unstable Decay on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1760,7 +1694,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563121270,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [79]
+		}, -- [76]
 		{
 			"Rot on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1782,7 +1716,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563121333,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [80]
+		}, -- [77]
 		{
 			"Volatile Rot on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1804,7 +1738,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563121337,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [81]
+		}, -- [78]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1826,7 +1760,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563121339,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [82]
+		}, -- [79]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1848,7 +1782,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563121340,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [83]
+		}, -- [80]
 		{
 			"Cursed Blood on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1870,7 +1804,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563122195,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [84]
+		}, -- [81]
 		{
 			"Necrotic Venom on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1892,7 +1826,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563122366,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [85]
+		}, -- [82]
 		{
 			"3", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1914,7 +1848,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563122373,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [86]
+		}, -- [83]
 		{
 			"2", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1936,7 +1870,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563122374,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [87]
+		}, -- [84]
 		{
 			"1", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -1958,7 +1892,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563122375,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [88]
+		}, -- [85]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -1980,7 +1914,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563124842,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [89]
+		}, -- [86]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2002,7 +1936,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563124910,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [90]
+		}, -- [87]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2024,7 +1958,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563124971,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [88]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2046,7 +1980,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563125044,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [92]
+		}, -- [89]
 		{
 			"|cffffff00Darkfollow's Spire is under attack!|r", -- [1]
 			"", -- [2]
@@ -2068,7 +2002,7 @@ ElvCharacterDB = {
 			[52] = "",
 			[51] = 1563125119,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [93]
+		}, -- [90]
 		{
 			"Starg!", -- [1]
 			"Crukarn-TheScryers", -- [2]
@@ -2090,7 +2024,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCrukarn|r",
 			[51] = 1563142964,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [94]
+		}, -- [91]
 		{
 			"Starg!", -- [1]
 			"Crukarn-TheScryers", -- [2]
@@ -2112,7 +2046,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCrukarn|r",
 			[51] = 1563143233,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [95]
+		}, -- [92]
 		{
 			":-O", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2134,7 +2068,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563143246,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [96]
+		}, -- [93]
 		{
 			"WELP I GOT MY OKAY SEE YALL IN A DAY OR TWO", -- [1]
 			"Crukarn-TheScryers", -- [2]
@@ -2156,7 +2090,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cCrukarn|r",
 			[51] = 1563144883,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [97]
+		}, -- [94]
 		{
 			"Artillery on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2178,7 +2112,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563145834,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [98]
+		}, -- [95]
 		{
 			"Focused Fire on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2200,7 +2134,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563145996,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [99]
+		}, -- [96]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2222,7 +2156,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563146009,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [100]
+		}, -- [97]
 		{
 			"Reap on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2244,7 +2178,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563146298,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [101]
+		}, -- [98]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2266,7 +2200,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563146316,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [102]
+		}, -- [99]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2288,7 +2222,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563146464,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [103]
+		}, -- [100]
 		{
 			"Touch of Doom on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2310,7 +2244,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563146641,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [104]
+		}, -- [101]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2332,7 +2266,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563146662,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [105]
+		}, -- [102]
 		{
 			"Fel Chakram on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2354,7 +2288,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563146751,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [106]
+		}, -- [103]
 		{
 			"Fel Incineration on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2376,7 +2310,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563146769,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [107]
+		}, -- [104]
 		{
 			"Fel Incineration on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2398,7 +2332,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563146797,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [108]
+		}, -- [105]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2420,7 +2354,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563147123,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [109]
+		}, -- [106]
 		{
 			"so much looting", -- [1]
 			"Halcyoni-ArgentDawn", -- [2]
@@ -2442,7 +2376,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Halcyoni|r",
 			[51] = 1563147152,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [110]
+		}, -- [107]
 		{
 			"hehe", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2464,7 +2398,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563147200,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [111]
+		}, -- [108]
 		{
 			"Fel Surge on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2486,7 +2420,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563147461,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [112]
+		}, -- [109]
 		{
 			"Lotsa achievments today", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2508,7 +2442,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563147575,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [113]
+		}, -- [110]
 		{
 			"Anyone wanna come help me kill this guy in Vol'dun for a quest?", -- [1]
 			"Halcyoni-ArgentDawn", -- [2]
@@ -2530,7 +2464,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Halcyoni|r",
 			[51] = 1563147612,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [114]
+		}, -- [111]
 		{
 			"I'll love you forever", -- [1]
 			"Halcyoni-ArgentDawn", -- [2]
@@ -2552,7 +2486,7 @@ ElvCharacterDB = {
 			[52] = "|cff3ec5e9Halcyoni|r",
 			[51] = 1563147619,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [115]
+		}, -- [112]
 		{
 			"Curse of the Legion on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2574,7 +2508,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563147699,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [116]
+		}, -- [113]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2596,7 +2530,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563147712,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [117]
+		}, -- [114]
 		{
 			"Wrath (1{rt8}) on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2618,7 +2552,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563147715,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [118]
+		}, -- [115]
 		{
 			"Mark (1{rt1}) on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2640,7 +2574,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563147853,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [119]
+		}, -- [116]
 		{
 			"Fel Incineration on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2662,7 +2596,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563148991,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [120]
+		}, -- [117]
 		{
 			"Fel Incineration on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2684,7 +2618,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563149008,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [121]
+		}, -- [118]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2706,7 +2640,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563149088,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [122]
+		}, -- [119]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2728,7 +2662,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563149252,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [123]
+		}, -- [120]
 		{
 			"thanks", -- [1]
 			"Daniela-ArgentDawn", -- [2]
@@ -2750,7 +2684,7 @@ ElvCharacterDB = {
 			[52] = "|cffa22fc8Daniela|r",
 			[51] = 1563149259,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [124]
+		}, -- [121]
 		{
 			"Curse of the Legion on Shanyt", -- [1]
 			"Shanyt-ArgentDawn", -- [2]
@@ -2772,7 +2706,7 @@ ElvCharacterDB = {
 			[52] = "|cffc59a6cShanyt|r",
 			[51] = 1563149647,
 			[50] = "CHAT_MSG_SAY",
-		}, -- [125]
+		}, -- [122]
 		{
 			"Congrats", -- [1]
 			"Geenon-TheScryers", -- [2]
@@ -2794,7 +2728,7 @@ ElvCharacterDB = {
 			[52] = "|cff8686ecGeenon|r",
 			[51] = 1563153346,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [126]
+		}, -- [123]
 		{
 			"grats name", -- [1]
 			"Fartherin-ArgentDawn", -- [2]
@@ -2815,6 +2749,72 @@ ElvCharacterDB = {
 			false, -- [17]
 			[52] = "|cfffefefeFartherin|r",
 			[51] = 1563153581,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [124]
+		{
+			"back", -- [1]
+			"Holymoley-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			416, -- [11]
+			"Player-75-0BFFD4F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeHolymoley|r",
+			[51] = 1563506686,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [125]
+		{
+			"im up to 392 herb", -- [1]
+			"Holymoley-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			494, -- [11]
+			"Player-75-0BFFD4F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeHolymoley|r",
+			[51] = 1563506763,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"KP do you know if Kit got her Alch maxed yet", -- [1]
+			"Holymoley-TheScryers", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			1729, -- [11]
+			"Player-75-0BFFD4F1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffefefeHolymoley|r",
+			[51] = 1563508195,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},

@@ -38,10 +38,10 @@ SkadaDB = {
 					["barslocked"] = true,
 					["barwidth"] = 234.166656494141,
 					["mode"] = "Damage",
-					["point"] = "BOTTOMRIGHT",
 					["background"] = {
 						["height"] = 158.333221435547,
 					},
+					["point"] = "BOTTOMRIGHT",
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -88,7 +88,7 @@ SkadaDB = {
 						["texture"] = "Solid",
 					},
 					["strata"] = "LOW",
-					["point"] = "BOTTOMRIGHT",
+					["classcolortext"] = false,
 					["spellschoolcolors"] = true,
 					["barbgcolor"] = {
 						["a"] = 0.6,
@@ -102,8 +102,8 @@ SkadaDB = {
 						["g"] = 0.3,
 						["r"] = 0.3,
 					},
-					["barfontsize"] = 13,
 					["returnaftercombat"] = false,
+					["barfontsize"] = 13,
 					["title"] = {
 						["textcolor"] = {
 							["a"] = 1,
@@ -132,15 +132,22 @@ SkadaDB = {
 						["texture"] = "Armory",
 					},
 					["version"] = 1,
-					["snapto"] = true,
+					["mode"] = "Healing taken",
 					["roleicons"] = false,
 					["barorientation"] = 1,
-					["mode"] = "Healing taken",
+					["snapto"] = true,
 					["enabletitle"] = true,
 					["reversegrowth"] = false,
 					["smoothing"] = false,
-					["fixedbarwidth"] = false,
+					["textcolor"] = {
+						["b"] = 0.9,
+						["g"] = 0.9,
+						["r"] = 0.9,
+					},
 					["modeincombat"] = "",
+					["bartexture"] = "BantoBar",
+					["barwidth"] = 209.166473388672,
+					["barspacing"] = 0,
 					["buttons"] = {
 						["report"] = true,
 						["menu"] = true,
@@ -148,21 +155,14 @@ SkadaDB = {
 						["segment"] = true,
 						["reset"] = true,
 					},
-					["barwidth"] = 209.166473388672,
-					["barspacing"] = 0,
-					["bartexture"] = "BantoBar",
 					["width"] = 600,
-					["textcolor"] = {
-						["b"] = 0.9,
-						["g"] = 0.9,
-						["r"] = 0.9,
-					},
+					["fixedbarwidth"] = false,
 					["scale"] = 1,
 					["isonnewline"] = false,
 					["classcolorbars"] = true,
 					["isusingclasscolors"] = true,
 					["showself"] = true,
-					["classcolortext"] = false,
+					["point"] = "BOTTOMRIGHT",
 					["barfont"] = "Accidental Presidency",
 				}, -- [2]
 			},
@@ -177,6 +177,7 @@ SkadaDB = {
 			},
 		},
 		["Default"] = {
+			["showtotals"] = true,
 			["modeclicks"] = {
 				["DPS"] = 1,
 				["Damage"] = 2,
@@ -188,16 +189,18 @@ SkadaDB = {
 				["Threat"] = true,
 				["Power"] = false,
 			},
-			["showtotals"] = true,
-			["report"] = {
-				["number"] = 9,
-				["target"] = "Seroin-Bloodhoof",
-				["channel"] = "raid",
-			},
 			["windows"] = {
 				{
 					["titleset"] = false,
 					["barheight"] = 17,
+					["classicons"] = false,
+					["barslocked"] = true,
+					["wipemode"] = "Focus gained",
+					["y"] = 28.00163269042969,
+					["x"] = -179.000244140625,
+					["name"] = "Damage",
+					["modeincombat"] = "Focus gained",
+					["point"] = "BOTTOMRIGHT",
 					["barbgcolor"] = {
 						["a"] = 1,
 						["r"] = 0.149019607843137,
@@ -209,9 +212,13 @@ SkadaDB = {
 						["g"] = 0.63921568627451,
 						["b"] = 0,
 					},
+					["barfont"] = "Trebuchet MS",
 					["barfontsize"] = 10,
-					["classicons"] = false,
-					["barslocked"] = true,
+					["mode"] = "Focus gained",
+					["buttons"] = {
+						["stop"] = true,
+					},
+					["barwidth"] = 234.000549316406,
 					["background"] = {
 						["color"] = {
 							["a"] = 0.89495262503624,
@@ -219,36 +226,24 @@ SkadaDB = {
 							["g"] = 0.0627450980392157,
 							["b"] = 0.0627450980392157,
 						},
-						["bordertexture"] = "None",
 						["borderthickness"] = 0,
 						["height"] = 155.000244140625,
+						["bordertexture"] = "None",
 					},
-					["wipemode"] = "Focus gained",
-					["buttons"] = {
-						["stop"] = true,
-					},
-					["barwidth"] = 234.000549316406,
-					["barfont"] = "Trebuchet MS",
-					["y"] = 28.00163269042969,
-					["x"] = -179.000244140625,
-					["name"] = "Damage",
-					["modeincombat"] = "Focus gained",
 					["bartexture"] = "Minimalist",
-					["mode"] = "Focus gained",
 					["title"] = {
-						["font"] = "Arial Narrow",
-						["fontsize"] = 20,
 						["color"] = {
 							["a"] = 0,
 							["b"] = 0.125490196078431,
 							["g"] = 0.125490196078431,
 							["r"] = 0.125490196078431,
 						},
+						["font"] = "Arial Narrow",
+						["fontsize"] = 20,
 						["height"] = 13,
 						["borderthickness"] = 0,
 						["texture"] = "Graphite",
 					},
-					["point"] = "BOTTOMRIGHT",
 				}, -- [1]
 				{
 					["titleset"] = false,
@@ -333,13 +328,18 @@ SkadaDB = {
 					["mode"] = "Healing",
 				}, -- [2]
 			},
+			["icon"] = {
+				["minimapPos"] = 192.079530184408,
+			},
+			["report"] = {
+				["number"] = 9,
+				["channel"] = "raid",
+				["target"] = "Seroin-Bloodhoof",
+			},
 			["versions"] = {
 				["1.6.3"] = true,
 				["1.6.4"] = true,
 				["1.6.7"] = true,
-			},
-			["icon"] = {
-				["minimapPos"] = 192.079530184408,
 			},
 			["reset"] = {
 				["instance"] = 2,
@@ -349,15 +349,15 @@ SkadaDB = {
 		["Shanyt - Argent Dawn"] = {
 			["windows"] = {
 				{
-					["barslocked"] = true,
 					["y"] = 25.86621856689453,
-					["point"] = "BOTTOMRIGHT",
-					["mode"] = "Threat",
+					["x"] = -209.004638671875,
+					["barslocked"] = true,
 					["barwidth"] = 234.166625976563,
+					["mode"] = "Threat",
+					["point"] = "BOTTOMRIGHT",
 					["background"] = {
 						["height"] = 135.188583374023,
 					},
-					["x"] = -209.004638671875,
 				}, -- [1]
 				{
 					["titleset"] = true,
@@ -383,9 +383,9 @@ SkadaDB = {
 					["x"] = -1.01123046875,
 					["barfontflags"] = "",
 					["isusingelvuiskin"] = true,
-					["point"] = "BOTTOMRIGHT",
-					["strata"] = "LOW",
 					["classcolortext"] = false,
+					["strata"] = "LOW",
+					["point"] = "BOTTOMRIGHT",
 					["spellschoolcolors"] = true,
 					["barbgcolor"] = {
 						["a"] = 0.6,
@@ -400,7 +400,7 @@ SkadaDB = {
 						["b"] = 0.8,
 					},
 					["showself"] = true,
-					["returnaftercombat"] = false,
+					["barfontsize"] = 13,
 					["title"] = {
 						["textcolor"] = {
 							["a"] = 1,
@@ -432,15 +432,16 @@ SkadaDB = {
 					["isonnewline"] = false,
 					["roleicons"] = false,
 					["barorientation"] = 1,
-					["mode"] = "Damage",
+					["snapto"] = true,
 					["scale"] = 1,
-					["fixedbarwidth"] = false,
-					["width"] = 600,
 					["textcolor"] = {
 						["r"] = 0.9,
 						["g"] = 0.9,
 						["b"] = 0.9,
 					},
+					["width"] = 600,
+					["fixedbarwidth"] = false,
+					["bartexture"] = "BantoBar",
 					["buttons"] = {
 						["segment"] = true,
 						["menu"] = true,
@@ -448,17 +449,16 @@ SkadaDB = {
 						["report"] = true,
 						["reset"] = true,
 					},
-					["bartexture"] = "BantoBar",
 					["barwidth"] = 208.160583496094,
 					["barspacing"] = 0,
 					["modeincombat"] = "",
 					["smoothing"] = false,
 					["reversegrowth"] = false,
 					["enabletitle"] = true,
-					["snapto"] = true,
+					["mode"] = "Damage",
 					["classcolorbars"] = true,
 					["isusingclasscolors"] = true,
-					["barfontsize"] = 13,
+					["returnaftercombat"] = false,
 					["background"] = {
 						["height"] = 135.015777587891,
 						["bordercolor"] = {

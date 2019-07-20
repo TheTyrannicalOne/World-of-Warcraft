@@ -31,8 +31,8 @@ GrailDatabasePlayer = {
 		[5825] = 32,
 		[3834] = 524288,
 		[5937] = 8192,
-		[1920] = 64,
 		[8829] = 1073741824,
+		[1920] = 64,
 		[7380] = 1048576,
 		[6351] = 1,
 	},
@@ -170,5 +170,5 @@ GrailDatabasePlayer = {
 	},
 	["actuallyCompletedQuests"] = {
 	},
-	["serverUpdated"] = "2019-07-16 19:31",
+	["serverUpdated"] = "2019-07-20 13:23",
 }
