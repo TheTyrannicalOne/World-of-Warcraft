@@ -13,11 +13,11 @@ BigWigs3DB = {
 			[74] = true,
 			[76] = true,
 			[-575] = true,
-			[-510] = true,
-			[-607] = true,
-			[-1152] = true,
-			[-514] = true,
 			[295] = true,
+			[-514] = true,
+			[-1152] = true,
+			[-607] = true,
+			[-510] = true,
 			[-609] = true,
 			[-563] = true,
 			[-437] = true,
@@ -84,19 +84,19 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Common Auras"] = {
 		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
 		["BigWigs_Plugins_Proximity"] = {
 			["profiles"] = {
 				["Default"] = {
 					["height"] = 119.9999771118164,
 					["font"] = "Friz Quadrata TT",
 					["width"] = 140.0001678466797,
+				},
+			},
+		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["font"] = "Friz Quadrata TT",
 				},
 			},
 		},
@@ -778,17 +778,17 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1372] = {
+		[1447] = {
 			["mythic"] = {
-				["best"] = 25.16399999999976,
+				["best"] = 23.77999999999975,
 				["kills"] = 1,
 			},
 			["normal"] = {
-				["best"] = 6.20100000000093,
+				["best"] = 4.31099999999424,
 				["kills"] = 1,
 			},
 			["heroic"] = {
-				["best"] = 6.95299999999952,
+				["best"] = 6.475000000000364,
 				["kills"] = 1,
 			},
 		},
@@ -820,17 +820,17 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1447] = {
+		[1432] = {
 			["mythic"] = {
-				["best"] = 23.77999999999975,
+				["best"] = 26.29099999999926,
 				["kills"] = 1,
 			},
 			["normal"] = {
-				["best"] = 4.31099999999424,
+				["best"] = 10.9859999999971,
 				["kills"] = 1,
 			},
 			["heroic"] = {
-				["best"] = 6.475000000000364,
+				["best"] = 7.530999999999949,
 				["kills"] = 1,
 			},
 		},
@@ -890,17 +890,17 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1432] = {
+		[1372] = {
 			["mythic"] = {
-				["best"] = 26.29099999999926,
+				["best"] = 25.16399999999976,
 				["kills"] = 1,
 			},
 			["normal"] = {
-				["best"] = 10.9859999999971,
+				["best"] = 6.20100000000093,
 				["kills"] = 1,
 			},
 			["heroic"] = {
-				["best"] = 7.530999999999949,
+				["best"] = 6.95299999999952,
 				["kills"] = 1,
 			},
 		},

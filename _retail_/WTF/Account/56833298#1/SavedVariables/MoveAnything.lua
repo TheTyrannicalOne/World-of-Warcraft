@@ -44,10 +44,10 @@ MADB = {
 				["TooltipMover"] = {
 					["orgPos"] = {
 						"BOTTOMRIGHT", -- [1]
-						"RightChatToggleButton", -- [2]
+						"ElvUIParent", -- [2]
 						"BOTTOMRIGHT", -- [3]
-						0, -- [4]
-						0, -- [5]
+						-286, -- [4]
+						255.0000152587891, -- [5]
 					},
 					["name"] = "TooltipMover",
 					["pos"] = {

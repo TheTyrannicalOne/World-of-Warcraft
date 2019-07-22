@@ -1,8 +1,6 @@
 # LittleWigs
 
-## [v8.2.4](https://github.com/BigWigsMods/LittleWigs/tree/v8.2.4) (2019-07-17)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.2.3...v8.2.4)
+## [v8.2.5](https://github.com/BigWigsMods/LittleWigs/tree/v8.2.5) (2019-07-21)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v8.2.4...v8.2.5)
 
-- Cataclysm/WellOfEternity/Azshara: Rename module name  
-- BfA/KingsRest/Dazar: Remove self:CheckForEncounterEngage() use  
-- update zhCN (#466)  
+- BfA/Mechagon/KingMechagon: Add Stage 2 Recalibrate timer (#467)  

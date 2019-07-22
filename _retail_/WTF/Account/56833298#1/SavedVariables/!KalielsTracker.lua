@@ -1,10 +1,5 @@
 
 KalielsTrackerDB = {
-	["char"] = {
-		["Shanyt - Argent Dawn"] = {
-			["collapsed"] = true,
-		},
-	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
 		["Vancard - Zul'jin"] = "Default",
@@ -15,8 +10,8 @@ KalielsTrackerDB = {
 		["Jingojaggot - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Fantastiburo - Zul'jin"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
+		["Fantastiburo - Zul'jin"] = "Default",
 		["Mulmok - Argent Dawn"] = "Default",
 		["Shaekhan - Argent Dawn"] = "Default",
 	},
