@@ -1,6 +1,6 @@
-7/22 01:21:14.848  Voice Log Initialize.
-7/22 01:21:14.848  VoiceProxy attempting to listen on 127.0.0.1:6724
-7/22 01:21:22.404  WoW client has connected to proxy
-7/22 01:30:03.185  Transport disconnected.  Error [7], Reason [connected disconnected unexpectedly]
-7/22 01:30:03.185  Last client closed, stopping proxy.
-7/22 01:30:03.291  Voice Log Destroy.
+7/22 18:56:01.294  Voice Log Initialize.
+7/22 18:56:01.294  VoiceProxy attempting to listen on 127.0.0.1:6724
+7/22 18:56:08.422  WoW client has connected to proxy
+7/22 19:01:30.391  Transport disconnected.  Error [7], Reason [connected disconnected unexpectedly]
+7/22 19:01:30.391  Last client closed, stopping proxy.
+7/22 19:01:30.498  Voice Log Destroy.
