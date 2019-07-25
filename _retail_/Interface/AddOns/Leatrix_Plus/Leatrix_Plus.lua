@@ -1,5 +1,5 @@
-----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.02 (10th July 2019, www.leatrix.com)
+﻿----------------------------------------------------------------------
+-- 	Leatrix Plus 8.2.04 (25th July 2019, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.02"
+	LeaPlusLC["AddonVer"] = "8.2.04"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -3428,7 +3428,7 @@
 							local name = GetAuctionSellItemInfo()
 							BrowseName:SetText(name)
 							ExactMatchCheckButton:SetChecked(true) -- Necessary for scrolling through results pages with exact match
-							QueryAuctionItems(name, 0, 0, 0, 0, 0, false, true, 0)
+							QueryAuctionItems(name, 0, 0, 0, false, 0, false, true)
 							AuctionFrameTab1:Click()
 						end
 					end
@@ -4152,8 +4152,8 @@
 			local hideUI = false
 			local function HideRecentChatFrame() if editFrame:IsShown() then hideUI = true editFrame:Hide() end	end
 			local function ShowRecentChatFrame() if hideUI and not PetBattleFrame:IsShown() then editFrame:Show() hideUI = false end end
-			hooksecurefunc(UIParent, "Hide", HideRecentChatFrame)
-			hooksecurefunc(UIParent, "Show", ShowRecentChatFrame)
+			UIParent:HookScript("OnHide", HideRecentChatFrame)
+			UIParent:HookScript("OnShow", ShowRecentChatFrame)
 			hooksecurefunc("PetBattleFrame_Display", HideRecentChatFrame)
 			hooksecurefunc("PetBattleFrame_Remove", ShowRecentChatFrame)
 
@@ -4180,17 +4180,9 @@
 
 			-- Create editbox
 			local editBox = editFrame.EditBox
-			editBox:SetFontObject("ChatFontNormal")
-			editBox:SetFont(editBox:GetFont(), 18 * UIParent:GetEffectiveScale())
 			editBox:SetAltArrowKeyMode(false)
 			editBox:SetTextInsets(4, 4, 4, 4)
 			editBox:SetWidth(editFrame:GetWidth() - 30)
-
-			-- Set font size when UI scale is changed
-			editFrame:RegisterEvent("UI_SCALE_CHANGED")
-			editFrame:SetScript("OnEvent", function()
-				editBox:SetFont(editBox:GetFont(), 18 * UIParent:GetEffectiveScale())
-			end)
 
 			-- Close frame with right-click of editframe or editbox
 			local function CloseRecentChatWindow()
@@ -4205,11 +4197,6 @@
 
 			editBox:SetScript("OnMouseDown", function(self, btn)
 				if btn == "RightButton" then CloseRecentChatWindow() end
-			end)
-
-			-- Maintain editbox effective height
-			editFrame:HookScript("OnVerticalScroll", function(self, offset)
-				editBox:SetHitRectInsets(0, 0, offset, editBox:GetHeight() - offset - editBox:GetHeight())
 			end)
 
 			-- Disable text changes while still allowing editing controls to work
@@ -5902,7 +5889,7 @@
 			-- Zones: Zandalar
 			Zn(L["Zones"], L["Zandalar"], "|cffffd800", {""})
 			Zn(L["Zones"], L["Zandalar"], "|cffffd800" .. L["Zandalar"], {""})
-			Zn(L["Zones"], L["Zandalar"], L["Nazjtar"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Nazjtar"], prefol, "MUS_82_Nazjatar_GeneralWalk_01#137770", "MUS_82_Nazjatar_AzsharaWalk_01#138519", "MUS_82_Nazjatar_CaveWalk_01#138516", "MUS_82_Nazjatar_HubWalk_01#138520", "MUS_82_Nazjatar_LandingWalk_01#138506", "MUS_82_Nazjatar_SeaweedWalk_01#138513", "MUS_82_Nazjatar_ZinAzshariWalk_01#138508",})
+			Zn(L["Zones"], L["Zandalar"], L["Nazjatar"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Nazjatar"], prefol, "MUS_82_Nazjatar_GeneralWalk_01#137770", "MUS_82_Nazjatar_AzsharaWalk_01#138519", "MUS_82_Nazjatar_CaveWalk_01#138516", "MUS_82_Nazjatar_HubWalk_01#138520", "MUS_82_Nazjatar_LandingWalk_01#138506", "MUS_82_Nazjatar_SeaweedWalk_01#138513", "MUS_82_Nazjatar_ZinAzshariWalk_01#138508",})
 			Zn(L["Zones"], L["Zandalar"], L["Nazmir"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Nazmir"], prefol, "MUS_80_Nazmir_GeneralWalk_Day#93666", "MUS_80_Nazmir_GeneralWalk_Night#116065", "MUS_80_Nazmir_Jurassic#116224", "MUS_80_Nazmir_Naga#116115", "MUS_80_Nazmir_Necropolis#116108", "MUS_80_Nazmir_Sethrak#116116", "MUS_80_Nazmir_Void#93672",})
 			Zn(L["Zones"], L["Zandalar"], L["Vol'dun"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Vol'dun"], prefol, "MUS_80_Vol'dun_GeneralWalk_Day#116281", --[["MUS_80_Vol'dun_GeneralWalk_Night#116284",]] "MUS_80_Vol'dun_Ashvane#116538", "MUS_80_Vol'dun_Azerite#116567", "MUS_80_Vol'dun_Distorted#116561", "MUS_80_Vol'dun_Naga#116486", "MUS_80_Vol'dun_Sethrak#116484", "MUS_80_Vol'dun_Tortollan#116485", "MUS_80_Nazmir_Necropolis#116108",})
 			Zn(L["Zones"], L["Zandalar"], L["Zuldazar"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Zuldazar"], prefol, "MUS_80_Zuldazar_GeneralWalk_Day#116611", --[["MUS_80_Zuldazar_GeneralWalk_Night#116629",]] "MUS_80_Zuldazar_Atal'Dazar#117049", "MUS_80_Zuldazar_Azerite#116609", "MUS_80_Zuldazar_BloodMagic#117025", "MUS_80_Zuldazar_Dazar'alor_Day#116674", "MUS_80_Zuldazar_Dazar'alor_Night#116986", --[["MUS_80_Zuldazar_Gral'sGrotto#117011",]] "MUS_80_Zuldazar_Naga#116962", "MUS_80_Zuldazar_Sethrak#116951", "MUS_80_Zuldazar_Tortollan#116964", "MUS_80_DGN_CityofGold_Grand#93663",})
@@ -6068,102 +6055,106 @@
 			Zn(L["Various"], L["Various"], L["Cinematics"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Cinematics"], prefol, 
 				-- Cinematic Music: World of Warcraft
 				"|cffffd800", "|cffffd800" .. L["World of Warcraft"], 
-				"|Cffffffff" .. L["Ten Years of Warcraft"] .. " |rinterface/cinematics/logo.mp3#625988#27",
-				"|Cffffffff" .. L["World of Warcraft"] .. " |rinterface/cinematics/wow_intro.mp3#625564#170",
+				"|Cffffffff" .. L["Ten Years of Warcraft"] .. " |r#625988#27", -- interface/cinematics/logo.mp3
+				"|Cffffffff" .. L["World of Warcraft"] .. " |r#625564#170", -- interface/cinematics/wow_intro.mp3
 
 				-- Cinematic Music: The Burning Crusade
 				"|cffffd800", "|cffffd800" .. L["The Burning Crusade"], 
-				"|Cffffffff" .. L["The Burning Crusade"] .. " |rinterface/cinematics/wow_intro_bc.mp3#625565#168",
+				"|Cffffffff" .. L["The Burning Crusade"] .. " |r#625565#168", -- interface/cinematics/wow_intro_bc.mp3
 
 				-- Cinematic Music: Wrath of the Lich King
 				"|cffffd800", "|cffffd800" .. L["Wrath of the Lich King"], 
-				"|Cffffffff" .. L["Wrath of the Lich King"] .. " |rinterface/cinematics/wow_intro_lk.mp3#457498#198",
-				"|Cffffffff" .. L["Battle of Angrathar the Wrathgate"] .. " |rinterface/cinematics/wow_wrathgate.mp3#458394#265",
-				"|Cffffffff" .. L["Fall of the Lich King"] .. " |rinterface/cinematics/wow_fotlk.mp3#625989#231",
+				"|Cffffffff" .. L["Wrath of the Lich King"] .. " |r#457498#198", -- interface/cinematics/wow_intro_lk.mp3
+				"|Cffffffff" .. L["Battle of Angrathar the Wrathgate"] .. " |r#458394#265", -- interface/cinematics/wow_wrathgate.mp3
+				"|Cffffffff" .. L["Fall of the Lich King"] .. " |r#625989#231", -- interface/cinematics/wow_fotlk.mp3
 
 				-- Cinematic Music: Cataclysm
 				"|cffffd800", "|cffffd800" .. L["Cataclysm"], 
-				"|Cffffffff" .. L["Cataclysm"] .. " |rinterface/cinematics/wow3x_intro.mp3#455939#144",
-				"|Cffffffff" .. L["Last Stand"] .. " |rinterface/cinematics/worgen.mp3#455940#101",
-				"|Cffffffff" .. L["Leaving Kezan"] .. " |rinterface/cinematics/goblin.mp3#452603#104",
-				"|Cffffffff" .. L["The Dragon Soul"] .. " |rinterface/cinematics/dsi_act1.mp3#576955#29",
-				"|Cffffffff" .. L["Spine of Deathwing"] .. " |rinterface/cinematics/dsi_act2.mp3#576956#21",
-				"|Cffffffff" .. L["Madness of Deathwing"] .. " |rinterface/cinematics/dsi_act3.mp3#576957#27",
-				"|Cffffffff" .. L["Fall of Deathwing"] .. " |rinterface/cinematics/dsi_act4.mp3#577085#94",
+				"|Cffffffff" .. L["Cataclysm"] .. " |r#455939#144", -- interface/cinematics/wow3x_intro.mp3
+				"|Cffffffff" .. L["Last Stand"] .. " |r#455940#101", -- interface/cinematics/worgen.mp3
+				"|Cffffffff" .. L["Leaving Kezan"] .. " |r#452603#104", -- interface/cinematics/goblin.mp3
+				"|Cffffffff" .. L["The Dragon Soul"] .. " |r#576955#29", -- interface/cinematics/dsi_act1.mp3
+				"|Cffffffff" .. L["Spine of Deathwing"] .. " |r#576956#21", -- interface/cinematics/dsi_act2.mp3
+				"|Cffffffff" .. L["Madness of Deathwing"] .. " |r#576957#27", -- interface/cinematics/dsi_act3.mp3
+				"|Cffffffff" .. L["Fall of Deathwing"] .. " |r#577085#94", -- interface/cinematics/dsi_act4.mp3
 
 				-- Cinematic Music: Mists of Pandaria
 				"|cffffd800", "|cffffd800" .. L["Mists of Pandaria"], 
-				"|Cffffffff" .. L["Mists of Pandaria"] .. " |rinterface/cinematics/wow_intro_mop.mp3#644071#228",
-				"|Cffffffff" .. L["Risking It All"] .. " |rinterface/cinematics/mop_gse.mp3#644128#62",
-				"|Cffffffff" .. L["Leaving the Wandering Isle"] .. " |rinterface/cinematics/mop_br.mp3#644124#40",
-				"|Cffffffff" .. L["Jade Forest Crash"] .. " |rinterface/cinematics/mop_jade_crash.mp3#654949#18",
-				"|Cffffffff" .. L["The King's Command"] .. " |rinterface/cinematics/mop_wra.mp3#644136#59",
-				"|Cffffffff" .. L["The Art of War"] .. " |rinterface/cinematics/mop_wrh.mp3#644138#56",
-				"|Cffffffff" .. L["Battle of Serpent's Heart"] .. " |rinterface/cinematics/mop_jade.mp3#644134#106",
-				"|Cffffffff" .. L["The Fleet in Krasarang (Horde)"] .. " |rinterface/cinematics/mop_hsl.mp3#668416#27",
-				"|Cffffffff" .. L["The Fleet in Krasarang (Alliance)"] .. " |rinterface/cinematics/mop_asl.mp3#668414#27",
-				"|Cffffffff" .. L["Hellscream's Downfall (Horde)"] .. " |rinterface/cinematics/oro_horde.mp3#916419#161",
-				"|Cffffffff" .. L["Hellscream's Downfall (Alliance)"] .. " |rinterface/cinematics/oro_alliance.mp3#916417#140",
+				"|Cffffffff" .. L["Mists of Pandaria"] .. " |r#644071#228", -- interface/cinematics/wow_intro_mop.mp3
+				"|Cffffffff" .. L["Risking It All"] .. " |r#644128#62", -- interface/cinematics/mop_gse.mp3
+				"|Cffffffff" .. L["Leaving the Wandering Isle"] .. " |r#644124#40", -- interface/cinematics/mop_br.mp3
+				"|Cffffffff" .. L["Jade Forest Crash"] .. " |r#654949#18", -- interface/cinematics/mop_jade_crash.mp3
+				"|Cffffffff" .. L["The King's Command"] .. " |r#644136#59", -- interface/cinematics/mop_wra.mp3
+				"|Cffffffff" .. L["The Art of War"] .. " |r#644138#56", -- interface/cinematics/mop_wrh.mp3
+				"|Cffffffff" .. L["Battle of Serpent's Heart"] .. " |r#644134#106", -- interface/cinematics/mop_jade.mp3
+				"|Cffffffff" .. L["The Fleet in Krasarang (Horde)"] .. " |r#668416#27", -- interface/cinematics/mop_hsl.mp3
+				"|Cffffffff" .. L["The Fleet in Krasarang (Alliance)"] .. " |r#668414#27", -- interface/cinematics/mop_asl.mp3
+				"|Cffffffff" .. L["Hellscream's Downfall (Horde)"] .. " |r#916419#161", -- interface/cinematics/oro_horde.mp3
+				"|Cffffffff" .. L["Hellscream's Downfall (Alliance)"] .. " |r#916417#140", -- interface/cinematics/oro_alliance.mp3
 
 				-- Cinematic Music: Warlords of Draenor
 				"|cffffd800", "|cffffd800" .. L["Warlords of Draenor"], 
-				"|Cffffffff" .. L["Warlords of Draenor"] .. " |rinterface/cinematics/wod_mainintro.mp3#1068826#258",
-				--"|Cffffffff" .. L["Darkness Falls"] .. " |rinterface/cinematics/wod_vel.mp3#1068485#610",
-				--"|Cffffffff" .. L["The Battle of Thunder Pass"] .. " |rinterface/cinematics/wod_fwv.mp3#1068482#43",
-				--"|Cffffffff" .. L["A Taste of Iron"] .. " |rinterface/cinematics/wod_dpo.mp3#1068481#19",
-				--"|Cffffffff" .. L["Bigger is Better (Alliance)"] .. " |rinterface/cinematics/wod_gar_alliance_tier1-2.mp3#1068478#13",
-				--"|Cffffffff" .. L["Gul'dan Ascendant"] .. " |rinterface/cinematics/wod_gto.mp3#1112524#278",
-				--"|Cffffffff" .. L["Shipyard Construction (Horde)"] .. " |rinterface/cinematics/wod_gar_shipyard_lj_h.mp3#1137841#14",
+				"|Cffffffff" .. L["Warlords of Draenor"] .. " |r#1068826#258", -- interface/cinematics/wod_mainintro.mp3
+				--"|Cffffffff" .. L["Darkness Falls"] .. " |r#1068485#610", -- interface/cinematics/wod_vel.mp3
+				--"|Cffffffff" .. L["The Battle of Thunder Pass"] .. " |r#1068482#43", -- interface/cinematics/wod_fwv.mp3
+				--"|Cffffffff" .. L["A Taste of Iron"] .. " |r#1068481#19", -- interface/cinematics/wod_dpo.mp3
+				--"|Cffffffff" .. L["Bigger is Better (Alliance)"] .. " |r#1068478#13", -- interface/cinematics/wod_gar_alliance_tier1-2.mp3
+				--"|Cffffffff" .. L["Gul'dan Ascendant"] .. " |r#1112524#278", -- interface/cinematics/wod_gto.mp3
+				--"|Cffffffff" .. L["Shipyard Construction (Horde)"] .. " |r#1137841#14", -- interface/cinematics/wod_gar_shipyard_lj_h.mp3
 
 				-- Cinematic Music: Legion
 				"|cffffd800", "|cffffd800" .. L["Legion"], 
-				"|Cffffffff" .. L["Legion"] .. " |rinterface/cinematics/legion_intro.mp3#1487144#225",
-				"|Cffffffff" .. L["The Invasion Begins"] .. " |rinterface/cinematics/legion_dh1.mp3#1487142#64",
-				"|Cffffffff" .. L["Return to the Black Temple"] .. " |rinterface/cinematics/legion_dh2.mp3#1487143#129",
-				"|Cffffffff" .. L["The Demon's Trail"] .. " |rinterface/cinematics/legion_val_yx.mp3#1487148#38",
-				"|Cffffffff" .. L["The Fate of Val'sharah"] .. " |rinterface/cinematics/legion_val_yd.mp3#1487147#82",
-				"|Cffffffff" .. L["Fate of the Horde"] .. " |rinterface/cinematics/legion_org_vs.mp3#1487145#145",
-				"|Cffffffff" .. L["A New Life for Undeath"] .. " |rinterface/cinematics/legion_sth.mp3#1487146#114",
-				"|Cffffffff" .. L["Harbingers Gul'dan"] .. " |rinterface/cinematics/legion_hrb_g.mp3#1487156#364",
-				"|Cffffffff" .. L["Harbingers Khadgar"] .. " |rinterface/cinematics/legion_hrb_k.mp3#1487155#311",
-				"|Cffffffff" .. L["Harbingers Illidan"] .. " |rinterface/cinematics/legion_hrb_i.mp3#1487157#245",
-				"|Cffffffff" .. L["The Nightborne Pact"] .. " |rinterface/cinematics/legion_su_i.mp3#1510277#129",
-				"|Cffffffff" .. L["Stormheim (Horde)"] .. " |rinterface/cinematics/legion_g_h_sth.mp3#1506511#19",
-				"|Cffffffff" .. L["Stormheim (Alliance)"] .. " |rinterface/cinematics/legion_g_a_sth.mp3#1506512#20",
-				"|Cffffffff" .. L["Tomb of Sargeras"] .. " |rinterface/cinematics/legion_bs_i.mp3#1505326#15",
-				"|Cffffffff" .. L["The Battle for Broken Shore (Alliance)"] .. " |rinterface/cinematics/legion_bs_a.mp3#1506318#252",
-				"|Cffffffff" .. L["The Battle for Broken Shore (Horde)"] .. " |rinterface/cinematics/legion_bs_h.mp3#1506319#260",
-				"|Cffffffff" .. L["A Falling Star"] .. " |rinterface/cinematics/legion_iq_lv.mp3#1510075#77",
-				"|Cffffffff" .. L["Destiny Unfulfilled"] .. " |rinterface/cinematics/legion_iq_id.mp3#1510074#50",
-				"|Cffffffff" .. L["The Nighthold"] .. " |rinterface/cinematics/legion_su_r.mp3#1558961#81",
-				"|Cffffffff" .. L["Victory at The Nighthold"] .. " |rinterface/cinematics/legion_72_tst.mp3#1617300#161",
-				"|Cffffffff" .. L["A Found Memento"] .. " |rinterface/cinematics/legion_72_ars.mp3#1617299#164",
-				"|Cffffffff" .. L["Assault on the Broken Shore"] .. " |rinterface/cinematics/legion_72_ots.mp3#1617301#29",
-				"|Cffffffff" .. L["Kil'Jaeden's Downfall"] .. " |rinterface/cinematics/legion_72_tsf.mp3#1671790#137",
-				"|Cffffffff" .. L["Arrival on Argus"] .. " |rinterface/cinematics/legion_73_agi.mp3#1720225#195",
-				"|Cffffffff" .. L["Rejection of the Gift"] .. " |rinterface/cinematics/legion_73_rtg.mp3#1720226#198",
-				"|Cffffffff" .. L["Reincarnation of Alleria Windrunner"] .. " |rinterface/cinematics/legion_73_avt.mp3#1720227#32",
-				"|Cffffffff" .. L["Rise of Argus"] .. " |rinterface/cinematics/legion_73_pan.mp3#1720231#57",
-				"|Cffffffff" .. L["Antorus Ending"] .. " |rinterface/cinematics/legion_73_afn.mp3#1780281#182",
-				"|Cffffffff" .. L["Epilogue (Horde)"] .. " |rinterface/cinematics/legion_735_eph.mp3#1862317#145",
-				"|Cffffffff" .. L["Epilogue (Alliance)"] .. " |rinterface/cinematics/legion_735_epa.mp3#1862316#157",
+				"|Cffffffff" .. L["Legion"] .. " |r#1487144#225", -- interface/cinematics/legion_intro.mp3
+				"|Cffffffff" .. L["The Invasion Begins"] .. " |r#1487142#64", -- interface/cinematics/legion_dh1.mp3
+				"|Cffffffff" .. L["Return to the Black Temple"] .. " |r#1487143#129", -- interface/cinematics/legion_dh2.mp3
+				"|Cffffffff" .. L["The Demon's Trail"] .. " |r#1487148#38", -- interface/cinematics/legion_val_yx.mp3
+				"|Cffffffff" .. L["The Fate of Val'sharah"] .. " |r#1487147#82", -- interface/cinematics/legion_val_yd.mp3
+				"|Cffffffff" .. L["Fate of the Horde"] .. " |r#1487145#145", -- interface/cinematics/legion_org_vs.mp3
+				"|Cffffffff" .. L["A New Life for Undeath"] .. " |r#1487146#114", -- interface/cinematics/legion_sth.mp3
+				"|Cffffffff" .. L["Harbingers Gul'dan"] .. " |r#1487156#364", -- interface/cinematics/legion_hrb_g.mp3
+				"|Cffffffff" .. L["Harbingers Khadgar"] .. " |r#1487155#311", -- interface/cinematics/legion_hrb_k.mp3
+				"|Cffffffff" .. L["Harbingers Illidan"] .. " |r#1487157#245", -- interface/cinematics/legion_hrb_i.mp3
+				"|Cffffffff" .. L["The Nightborne Pact"] .. " |r#1510277#129", -- interface/cinematics/legion_su_i.mp3
+				"|Cffffffff" .. L["Stormheim (Horde)"] .. " |r#1506511#19", -- interface/cinematics/legion_g_h_sth.mp3
+				"|Cffffffff" .. L["Stormheim (Alliance)"] .. " |r#1506512#20", -- interface/cinematics/legion_g_a_sth.mp3
+				"|Cffffffff" .. L["Tomb of Sargeras"] .. " |r#1505326#15", -- interface/cinematics/legion_bs_i.mp3
+				"|Cffffffff" .. L["The Battle for Broken Shore (Alliance)"] .. " |r#1506318#252", -- interface/cinematics/legion_bs_a.mp3
+				"|Cffffffff" .. L["The Battle for Broken Shore (Horde)"] .. " |r#1506319#260", -- interface/cinematics/legion_bs_h.mp3
+				"|Cffffffff" .. L["A Falling Star"] .. " |r#1510075#77", -- interface/cinematics/legion_iq_lv.mp3
+				"|Cffffffff" .. L["Destiny Unfulfilled"] .. " |r#1510074#50", -- interface/cinematics/legion_iq_id.mp3
+				"|Cffffffff" .. L["The Nighthold"] .. " |r#1558961#81", -- interface/cinematics/legion_su_r.mp3
+				"|Cffffffff" .. L["Victory at The Nighthold"] .. " |r#1617300#161", -- interface/cinematics/legion_72_tst.mp3
+				"|Cffffffff" .. L["A Found Memento"] .. " |r#1617299#164", -- interface/cinematics/legion_72_ars.mp3
+				"|Cffffffff" .. L["Assault on the Broken Shore"] .. " |r#1617301#29", -- interface/cinematics/legion_72_ots.mp3
+				"|Cffffffff" .. L["Kil'Jaeden's Downfall"] .. " |r#1671790#137", -- interface/cinematics/legion_72_tsf.mp3
+				"|Cffffffff" .. L["Arrival on Argus"] .. " |r#1720225#195", -- interface/cinematics/legion_73_agi.mp3
+				"|Cffffffff" .. L["Rejection of the Gift"] .. " |r#1720226#198", -- interface/cinematics/legion_73_rtg.mp3
+				"|Cffffffff" .. L["Reincarnation of Alleria Windrunner"] .. " |r#1720227#32", -- interface/cinematics/legion_73_avt.mp3
+				"|Cffffffff" .. L["Rise of Argus"] .. " |r#1720231#57", -- interface/cinematics/legion_73_pan.mp3
+				"|Cffffffff" .. L["Antorus Ending"] .. " |r#1780281#182", -- interface/cinematics/legion_73_afn.mp3
+				"|Cffffffff" .. L["Epilogue (Horde)"] .. " |r#1862317#145", -- interface/cinematics/legion_735_eph.mp3
+				"|Cffffffff" .. L["Epilogue (Alliance)"] .. " |r#1862316#157", -- interface/cinematics/legion_735_epa.mp3
 
 				-- Cinematic Music: Battle for Azeroth
 				"|cffffd800", "|cffffd800" .. L["Battle for Azeroth"], 
-				"|Cffffffff" .. L["Battle for Azeroth"] .. " |rinterface/cinematics/bfa_800_rb.mp3#2125419#263",
-				"|Cffffffff" .. L["Warbringers Sylvanas"] .. " |rinterface/cinematics/bfa_800_sv.mp3#2175009#232",
-				"|Cffffffff" .. L["The Fall of Lordaeron"] .. " |rinterface/cinematics/bfa_800_ltc_h.mp3#2175023#223",
-				"|Cffffffff" .. L["Jaina Joins the Battle"] .. " |rinterface/cinematics/bfa_800_ltt.mp3#2175028#86",
-				"|Cffffffff" .. L["Embers of War"] .. " |rinterface/cinematics/bfa_800_ltc_a.mp3#2175018#178",
-				"|Cffffffff" .. L["Arrival to Zandalar"] .. " |rinterface/cinematics/bfa_800_stz.mp3#2175033#183",
-				"|Cffffffff" .. L["Vision of Sailor's Memory"] .. " |rinterface/cinematics/bfa_800_zia.mp3#2175038#25",
-				"|Cffffffff" .. L["Jaina Returns to Kul Tiras"] .. " |rinterface/cinematics/bfa_800_kta.mp3#2175043#118",
-				"|Cffffffff" .. L["Jaina's Nightmare"] .. " |rinterface/cinematics/bfa_800_jnm.mp3#2175048#96",
-				"|Cffffffff" .. L["Warbringers Jaina"] .. " |rinterface/cinematics/bfa_800_ja.mp3#2175053#274",
-				"|Cffffffff" .. L["The Return of Hope"] .. " |rinterface/cinematics/bfa_800_ktf.mp3#2175068#152",
-				"|Cffffffff" .. L["Realm Of Torment"] .. " |rinterface/cinematics/bfa_800_rot.mp3#2175073#164",
-				"|Cffffffff" .. L["Terror of Darkshore"] .. " |rinterface/cinematics/bfa_810_tod.mp3#2543204#164",
-				"|Cffffffff" .. L["An Unexpected Reunion"] .. " |rinterface/cinematics/bfa_815_dpr.mp3#2845776#170",
+				"|Cffffffff" .. L["Battle for Azeroth"] .. " |r#2125419#263", -- interface/cinematics/bfa_800_rb.mp3
+				"|Cffffffff" .. L["Warbringers Sylvanas"] .. " |r#2175009#232", -- interface/cinematics/bfa_800_sv.mp3
+				"|Cffffffff" .. L["The Fall of Lordaeron"] .. " |r#2175023#223", -- interface/cinematics/bfa_800_ltc_h.mp3
+				"|Cffffffff" .. L["Jaina Joins the Battle"] .. " |r#2175028#86", -- interface/cinematics/bfa_800_ltt.mp3
+				"|Cffffffff" .. L["Embers of War"] .. " |r#2175018#178", -- interface/cinematics/bfa_800_ltc_a.mp3
+				"|Cffffffff" .. L["Arrival to Zandalar"] .. " |r#2175033#183", -- interface/cinematics/bfa_800_stz.mp3
+				"|Cffffffff" .. L["Vision of Sailor's Memory"] .. " |r#2175038#25", -- interface/cinematics/bfa_800_zia.mp3
+				"|Cffffffff" .. L["Jaina Returns to Kul Tiras"] .. " |r#2175043#118", -- interface/cinematics/bfa_800_kta.mp3
+				"|Cffffffff" .. L["Jaina's Nightmare"] .. " |r#2175048#96", -- interface/cinematics/bfa_800_jnm.mp3
+				"|Cffffffff" .. L["Warbringers Jaina"] .. " |r#2175053#274", -- interface/cinematics/bfa_800_ja.mp3
+				"|Cffffffff" .. L["The Return of Hope"] .. " |r#2175068#152", -- interface/cinematics/bfa_800_ktf.mp3
+				"|Cffffffff" .. L["Realm Of Torment"] .. " |r#2175073#164", -- interface/cinematics/bfa_800_rot.mp3
+				"|Cffffffff" .. L["Terror of Darkshore"] .. " |r#2543204#164", -- interface/cinematics/bfa_810_tod.mp3
+				"|Cffffffff" .. L["An Unexpected Reunion"] .. " |r#2845776#170", -- interface/cinematics/bfa_815_dpr.mp3
+				"|Cffffffff" .. L["Siege of Dazar'alor"] .. " |r#2565179#128", -- interface/cinematics/bfa_810_akt.mp3
+				"|Cffffffff" .. L["Battle of Dazar'alor"] .. " |r#2543223#121", -- interface/cinematics/bfa_810_dor.mp3
+				"|Cffffffff" .. L["Warbringers Azshara"] .. " |r#2991597#425",
+				"|Cffffffff" .. L["Rise of Azshara"] .. " |r#3039647#133",
 			})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
@@ -8596,6 +8587,23 @@
 				end
 				LeaPlusLC:Print("Total movies: |cffffffff" .. count)
 				return
+			elseif str == "movietime" then
+				-- Show movie length
+				if not LeaPlusLC.movieTimeLoaded then
+					hooksecurefunc(MovieFrame, "Show", function()
+						LeaPlusLC.startMovieTime = GetTime()
+					end)
+					hooksecurefunc(MovieFrame, "Hide", function()
+						LeaPlusLC.endMovieTime = GetTime()
+						local ttime = LeaPlusLC.endMovieTime - LeaPlusLC.startMovieTime
+						print(string.format("%0.0f", ttime))
+					end)
+					LeaPlusLC.movieTimeLoaded = true
+					LeaPlusLC:Print("MovieTime loaded.")
+				else
+					LeaPlusLC:Print("MovieTime is already loaded.")
+				end
+				return
 			elseif str == "movie" then
 				-- Playback movie by ID
 				arg1 = tonumber(arg1)
@@ -9331,10 +9339,10 @@
 	function LeaPlusLC:MakePage(name, title, menu, menuname, menuparent, menuanchor, menux, menuy, menuwidth, menuheight)
 
 		-- Create frame
-		local oPage = CreateFrame("Frame", nil, LeaPlusLC["PageF"]); 
+		local oPage = CreateFrame("Frame", nil, LeaPlusLC["PageF"])
 		LeaPlusLC[name] = oPage
 		oPage:SetAllPoints(LeaPlusLC["PageF"])
-		oPage:Hide();
+		oPage:Hide()
 
 		-- Add page title
 		oPage.s = oPage:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
@@ -9348,7 +9356,7 @@
 			LeaPlusLC[name]:SetScript("OnHide", function() LeaPlusLC[menu .. ".s"]:Hide(); end)
 		end
 
-		return oPage;
+		return oPage
 	
 	end
 
@@ -9368,8 +9376,8 @@
 	for i = 0, LeaPlusLC["NumberOfPages"] do
 		LeaPlusLC["LeaPlusNav"..i]:SetScript("OnClick", function()
 			LeaPlusLC:HideFrames()
-			LeaPlusLC["PageF"]:Show();
-			LeaPlusLC["Page"..i]:Show();
+			LeaPlusLC["PageF"]:Show()
+			LeaPlusLC["Page"..i]:Show()
 			LeaPlusLC["LeaStartPage"] = i
 		end)
 	end
@@ -9381,28 +9389,28 @@
 -- 	LC0: Welcome
 ----------------------------------------------------------------------
 
-	pg = "Page0";
+	pg = "Page0"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Welcome to Leatrix Plus.", 146, -72);
-	LeaPlusLC:MakeWD(LeaPlusLC[pg], "To begin, choose an options page.", 146, -92);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Welcome to Leatrix Plus.", 146, -72)
+	LeaPlusLC:MakeWD(LeaPlusLC[pg], "To begin, choose an options page.", 146, -92)
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Support", 146, -132);
-	LeaPlusLC:MakeWD(LeaPlusLC[pg], "www.leatrix.com", 146, -152);
+	LeaPlusLC:MakeWD(LeaPlusLC[pg], "www.curseforge.com/wow/addons/leatrix-plus", 146, -152)
 
 ----------------------------------------------------------------------
 -- 	LC1: Automation
 ----------------------------------------------------------------------
 
-	pg = "Page1";
+	pg = "Page1"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Character"					, 	146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Character"					, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateQuests"			,	"Automate quests"				,	146, -92, 	false,	"If checked, quests will be selected, accepted and turned-in automatically.|n|nQuests which have a gold, currency or crafting reagent requirement will not be turned-in automatically.|n|nYou can hold the shift key down when you talk to a quest giver to override this setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateGossip"			,	"Automate gossip"				,	146, -112, 	false,	"If checked, you can hold down the alt key while opening a gossip window to automatically select a single gossip option.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptSummon"			,	"Accept summon"					, 	146, -132, 	false,	"If checked, summon requests will be accepted automatically unless you are in combat.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptRes"				,	"Accept resurrection"			, 	146, -152, 	false,	"If checked, resurrection requests will be accepted automatically as long as the player resurrecting you is not in combat.|n|nResurrection requests from a Brazier of Awakening or a Failure Detection Pylon will not be accepted automatically.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoReleasePvP"			,	"Release in PvP"				, 	146, -172, 	false,	"If checked, you will release automatically after you die in Ashran, Tol Barad (PvP), Wintergrasp or any battleground.|n|nYou will not release automatically if you have the ability to self-resurrect (soulstone, reincarnation, etc).")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Vendors"					, 	340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Vendors"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoSellJunk"				,	"Sell junk automatically"		,	340, -92, 	false,	"If checked, all grey items in your bags will be sold automatically when you visit a merchant.|n|nYou can hold the shift key down when you talk to a merchant to override this setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoRepairGear"			, 	"Repair automatically"			,	340, -112, 	false,	"If checked, your gear will be repaired automatically when you visit a suitable merchant.|n|nYou can hold the shift key down when you talk to a merchant to override this setting.")
 
@@ -9412,15 +9420,15 @@
 -- 	LC2: Social
 ----------------------------------------------------------------------
 
-	pg = "Page2";
+	pg = "Page2"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Blocks"					, 	146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Blocks"					, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoDuelRequests"			, 	"Block duels"					,	146, -92, 	false,	"If checked, duel requests will be blocked unless the player requesting the duel is in your friends list or guild.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoPetDuels"				, 	"Block pet battle duels"		,	146, -112, 	false,	"If checked, pet battle duel requests will be blocked unless the player requesting the duel is in your friends list or guild.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoPartyInvites"			, 	"Block party invites"			, 	146, -132, 	false,	"If checked, party invitations will be blocked unless the player inviting you is in your friends list or guild.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoFriendRequests"			, 	"Block friend requests"			, 	146, -152, 	false,	"If checked, BattleTag and Real ID friend requests will be automatically declined.|n|nEnabling this option will automatically decline any pending requests.")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AcceptPartyFriends"		, 	"Party from friends"			, 	340, -92, 	false,	"If checked, party invitations from friends or guild members will be automatically accepted unless you are queued in Dungeon Finder.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoConfirmRole"			, 	"Queue from friends"			,	340, -112, 	false,	"If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is in your friends list or guild.|n|nThis option requires that you have selected a role for your character in the Dungeon Finder window.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -132,	false,	"If checked, a group invite will be sent to anyone who whispers you with the keyword INV.|n|nYou need to be either ungrouped or party leader in your own group for this to work.")
@@ -9429,9 +9437,9 @@
 -- 	LC3: Chat
 ----------------------------------------------------------------------
 
-	pg = "Page3";
+	pg = "Page3"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Chat Frame"				, 	146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Chat Frame"				, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UseEasyChatResizing"		,	"Use easy resizing"				,	146, -92,	true,	"If checked, dragging the General chat tab while the chat frame is locked will expand the chat frame upwards.|n|n\If the chat frame is unlocked, dragging the General chat tab will move the chat frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoCombatLogTab" 			, 	"Hide the combat log"			, 	146, -112, 	true,	"If checked, the combat log will be hidden.|n|nThe combat log must be docked in order for this option to work.|n|nIf the combat log is undocked, you can dock it by dragging the tab (and reloading your UI) or by resetting the chat windows (from the chat menu).")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoChatButtons"				,	"Hide chat buttons"				,	146, -132,	true,	"If checked, chat frame buttons will be hidden.|n|nClicking chat tabs will automatically show the latest messages.|n|nUse the mouse wheel to scroll through the chat history.  Hold down SHIFT for page jump or CTRL to jump to the top or bottom of the chat history.")
@@ -9439,7 +9447,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnclampChat"				,	"Unclamp chat frame"			,	146, -172,	true,	"If checked, you will be able to drag the chat frame to the edge of the screen.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MoveChatEditBoxToTop" 		, 	"Move editbox to top"			,	146, -192, 	true,	"If checked, the editbox will be moved to the top of the chat frame.")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Mechanics"					, 	340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Mechanics"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoStickyChat"				, 	"Disable sticky chat"			,	340, -92,	true,	"If checked, sticky chat will be disabled.|n|nNote that this does not apply to temporary chat windows.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UseArrowKeysInChat"		, 	"Use arrow keys in chat"		, 	340, -112, 	true,	"If checked, you can press the arrow keys to move the insertion point left and right in the chat frame.|n|nIf unchecked, the arrow keys will use the default keybind setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoChatFade"				, 	"Disable chat fade"				, 	340, -132, 	true,	"If checked, chat text will not fade out after a time period.")
@@ -9451,15 +9459,15 @@
 -- 	LC4: Text
 ----------------------------------------------------------------------
 
-	pg = "Page4";
+	pg = "Page4"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Visibility"				, 	146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Visibility"				, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "HideErrorMessages"			, 	"Hide error messages"			,	146, -92, 	true,	"If checked, most error messages (such as 'Not enough rage') will not be shown.  Some important errors are excluded.|n|nIf you have the minimap button enabled, you can hold down the control key and right-click it to toggle error messages without affecting this setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoHitIndicators"			, 	"Hide portrait numbers"			,	146, -112, 	true,	"If checked, damage and healing numbers in the player and pet portrait frames will be hidden.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "HideCraftedNames"			, 	"Hide crafted names"			,	146, -132, 	true,	"If checked, crafted items will no longer show the name of the crafter.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "HideZoneText"				,	"Hide zone text"				,	146, -152, 	true,	"If checked, zone text will not be shown (eg. 'Ironforge').")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Text Size"					, 	340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Text Size"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MailFontChange"			,	"Resize mail text"				, 	340, -92, 	true,	"If checked, you will be able to change the font size of standard mail text.|n|nThis does not affect mail created using templates (such as auction house invoices).")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "QuestFontChange"			,	"Resize quest text"				, 	340, -112, 	true,	"If checked, you will be able to change the font size of quest text.|n|nEnabling this option will also change the text size of other frames which inherit the same font (such as the Dungeon Finder frame).")
 
@@ -9470,14 +9478,14 @@
 -- 	LC5: Interface
 ----------------------------------------------------------------------
 
-	pg = "Page5";
+	pg = "Page5"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Enhancements"				, 	146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Enhancements"				, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MinimapMod"				,	"Customise minimap"				, 	146, -92, 	true,	"If checked, you will be able to customise the minimap.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "TipModEnable"				,	"Manage tooltip"				,	146, -112, 	true,	"If checked, the tooltip will be color coded and you will be able to modify the tooltip layout and scale.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnhanceDressup"			, 	"Enhance dressup"				,	146, -132, 	true,	"If checked, additional functionality will be added to the dressup frame.|n|nNude and tabard toggle buttons will be added, model positioning controls will be removed and special model animations will be disabled.")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Extras"					, 	340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Extras"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowVolume"				, 	"Show volume slider"			, 	340, -92, 	true,	"If checked, a master volume slider will be shown on the character sheet.|n|nThe volume slider can be placed in either of two locations on the character sheet.  To toggle between them, hold the shift key down and right-click the slider.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AhExtras"					, 	"Show auction controls"			, 	340, -112, 	true,	"If checked, additional functionality will be added to the auction house.|n|nBuyout only - create buyout auctions without filling in the starting price.|n|nGold only - set the copper and silver prices at 99 to speed up new auctions.|n|nFind item - search the auction house for the item you are selling.|n|nIn addition, the auction price type and duration settings will be saved account-wide.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowCooldowns"				, 	"Show cooldowns"				, 	340, -132, 	true,	"If checked, you will be able to place up to five beneficial cooldown icons above the target frame.")
@@ -9493,16 +9501,16 @@
 -- 	LC6: Frames
 ----------------------------------------------------------------------
 
-	pg = "Page6";
+	pg = "Page6"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Features"					, 	146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Features"					, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FrmEnabled"				,	"Manage frames"					, 	146, -92, 	true,	"If checked, you will be able to change the position and scale of the following frames:|n|n- Player frame|n- Target frame|n- Buffs frame|n- Widget top center frame|n- Ghost frame|n- Timer bar|n- Player power bar")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColFrames"			, 	"Class colored frames"			,	146, -112, 	true,	"If checked, class coloring will be used in the player frame, target frame and focus frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPlayerChain"			, 	"Show player chain"				,	146, -132, 	true,	"If checked, you will be able to show a rare, elite or rare elite chain around the player frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowRaidToggle"			, 	"Raid frame toggle"				,	146, -152, 	true,	"If checked, the button to toggle the raid container frame will be shown just above the raid management frame (left side of the screen) instead of in the raid management frame itself.|n|nThis allows you to toggle the raid container frame without needing to open the raid management frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	146, -172, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Visibility"				, 	340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Visibility"				, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoAlerts"					,	"Hide alerts"					, 	340, -92, 	true,	"If checked, alert frames will not be shown.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "HideBodyguard"				, 	"Hide bodyguard gossip"			, 	340, -112, 	true,	"If checked, the gossip window will not be shown when you talk to an active garrison bodyguard.|n|nYou can hold the shift key down when you talk to a bodyguard to override this setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "HideTalkingFrame"			, 	"Hide talking frame"			, 	340, -132, 	true,	"If checked, the talking frame will not be shown.|n|nThe talking frame normally appears in the lower portion of the screen when certain NPCs communicate with you.")
@@ -9520,9 +9528,9 @@
 -- 	LC7: System
 ----------------------------------------------------------------------
 
-	pg = "Page7";
+	pg = "Page7"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Graphics and Sound"		, 	146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Graphics and Sound"		, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenGlow"				, 	"Disable screen glow"			, 	146, -92, 	false,	"If checked, the screen glow will be disabled.|n|nEnabling this option will also disable the drunken haze effect.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenEffects"			, 	"Disable screen effects"		, 	146, -112, 	false,	"If checked, the grey screen of death and the netherworld effect will be disabled.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -132, 	false,	"If checked, you will be able to zoom out to a greater distance.")
@@ -9530,7 +9538,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -172, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MuteGameSounds"			, 	"Mute game sounds"				,	146, -192, 	false,	"If checked, you will be able to mute a selection of game sounds.")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Game Options"				, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoBagAutomation"			, 	"Disable bag automation"		, 	340, -92, 	true,	"If checked, your bags will not be opened or closed automatically when you interact with a merchant, bank or mailbox.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoPetAutomation"			, 	"Disable pet automation"		, 	340, -112, 	true, 	"If checked, battle pets which are automatically summoned will be dismissed within a few seconds.|n|nThis includes dragging a pet onto the first team slot in the pet journal and entering a battle pet team save command.|n|nNote that pets which are automatically summoned during combat will be dismissed when combat ends.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CharAddonList"				, 	"Show character addons"			, 	340, -132, 	true,	"If checked, the addon list (accessible from the game menu) will show character based addons by default.")
@@ -9548,16 +9556,16 @@
 -- 	LC8: Settings
 ----------------------------------------------------------------------
 
-	pg = "Page8";
+	pg = "Page8"
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Addon"						, 146, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Addon"						, 146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowMinimapIcon"			, "Show minimap button"				, 146, -92,		false,	"If checked, a minimap button will be available.|n|nClick - Toggle options panel.|n|nSHIFT/Left-click - Toggle music.|n|nSHIFT/Right-click - Toggle stopwatch.|n|nCTRL/Left-click - Toggle minimap target tracking.|n|nCTRL/Right-click - Toggle errors (if enabled).|n|nCTRL/SHIFT/Left-click - Toggle Zygor (if installed).|n|nCTRL/SHIFT/Right-click - Toggle windowed mode.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnableHotkey"				, "Enable hotkey"					, 146, -112,	true,	"If checked, you can open Leatrix Plus by pressing CTRL/Z.")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Scale", 340, -72);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Scale", 340, -72)
 	LeaPlusLC:MakeSL(LeaPlusLC[pg], "PlusPanelScale", "Drag to set the scale of the Leatrix Plus panel.", 1, 2, 0.1, 340, -92, "%.1f")
 
-	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Transparency", 340, -132);
+	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Transparency", 340, -132)
 	LeaPlusLC:MakeSL(LeaPlusLC[pg], "PlusPanelAlpha", "Drag to set the transparency of the Leatrix Plus panel.", 0, 1, 0.1, 340, -152, "%.1f")
 
 	LeaPlusLC:ShowMemoryUsage(LeaPlusLC[pg], "TOPLEFT", 146, -262)

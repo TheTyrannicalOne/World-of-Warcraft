@@ -257,11 +257,10 @@ FishingBuddy_Info = {
 			["texture"] = 2057316,
 			["quality"] = 1,
 		},
-		[23380] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Broken Power Core",
-			["texture"] = 134096,
-			["quality"] = 0,
+		[111651] = {
+			["enUS"] = "Small Fat Sleeper",
+			["quality"] = 1,
+			["texture"] = 970821,
 		},
 		[162515] = {
 			["color"] = "ff1eff00",
@@ -269,10 +268,11 @@ FishingBuddy_Info = {
 			["texture"] = 237302,
 			["quality"] = 2,
 		},
-		[111589] = {
-			["enUS"] = "Small Crescent Saberfish",
-			["quality"] = 1,
-			["texture"] = 970812,
+		[23380] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Broken Power Core",
+			["texture"] = 134096,
+			["quality"] = 0,
 		},
 		[154792] = {
 			["color"] = "ff9d9d9d",
@@ -286,10 +286,10 @@ FishingBuddy_Info = {
 			["quality"] = 0,
 			["texture"] = 135531,
 		},
-		[111651] = {
-			["enUS"] = "Small Fat Sleeper",
+		[111589] = {
+			["enUS"] = "Small Crescent Saberfish",
 			["quality"] = 1,
-			["texture"] = 970821,
+			["texture"] = 970812,
 		},
 		[138777] = {
 			["enUS"] = "Drowned Mana",

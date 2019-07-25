@@ -46,6 +46,7 @@ local arcaneBurstMarker = mod:AddMarkerOption(false, "player", 1, 303657, 1, 2, 
 function mod:GetOptions()
 	return {
 		"stages",
+		"berserk",
 		300074, -- Pressure Surge
 		{298569, "INFOBOX"}, -- Drained Soul
 		297937, -- Painful Memories
@@ -171,15 +172,16 @@ function mod:OnEngage()
 	self:Bar(299094, 49.5) -- Beckon
 	self:Bar(298787, 65) -- Arcane Orbs
 	self:CDBar(-20480, 35, nil, "achievement_boss_nagabruteboss") -- Overzealous Hulk
+	self:Berserk(840)
 	self:OpenInfo(298569, self:SpellName(298569)) -- Drained Soul
 	for unit in self:IterateGroup() do
 		local _, _, _, tarInstanceId = UnitPosition(unit)
 		local name = self:UnitName(unit)
-		if name and tarInstanceId == 2164 then
-			drainedSoulList[name] = 0
+		if name and tarInstanceId == 2164 and not self:Tank(unit) then
+			drainedSoulList[name] = {0, 0, 110}
 		end
 	end
-	self:SetInfoByTable(298569, drainedSoulList, true) -- Drained Soul
+	self:SetInfoBarsByTable(298569, drainedSoulList, true) -- Drained Soul
 end
 
 --------------------------------------------------------------------------------
@@ -261,8 +263,13 @@ do
 end
 
 function mod:DrainedSoulApplied(args)
-	drainedSoulList[args.destName] = args.amount or 1
-	self:SetInfoByTable(args.spellId, drainedSoulList, true)
+	if not drainedSoulList[args.destName] then
+		drainedSoulList[args.destName] = {args.amount or 1, GetTime()+110, 110}
+	else
+		drainedSoulList[args.destName][1] = args.amount or 1
+		drainedSoulList[args.destName][2] = GetTime()+110
+	end
+	self:SetInfoBarsByTable(args.spellId, drainedSoulList, true)
 	if self:Me(args.destGUID) then
 		local amount = args.amount or 1
 		if amount % 2 == 0 or amount >= 7 then
@@ -273,8 +280,13 @@ function mod:DrainedSoulApplied(args)
 end
 
 function mod:DrainedSoulRemoved(args)
-	drainedSoulList[args.destName] = 0
-	self:SetInfoByTable(args.spellId, drainedSoulList, true)
+	if self:Tank(args.destName) then
+		drainedSoulList[args.destName] = nil
+	else
+		drainedSoulList[args.destName][1] = 0
+		drainedSoulList[args.destName][2] = 0
+	end
+	self:SetInfoBarsByTable(args.spellId, drainedSoulList, true)
 end
 
 -- Stage 1

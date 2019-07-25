@@ -215,6 +215,8 @@ local rareDB = {
             [152568] = { name = "Urduu", npcid = 152568, questId = { 56299 }, type = TYPE_WORLDBOSS, faction = FACTION_ALL, coord = { 31302940 }, bothphases = true, note = "You need to kite a \"Staghorn Reefwalker\" to Urduu's location, then kill it in front of Urduu.", loot = { { droptype = DROP_ITEM, itemID = 170184, isKnown = false } } }, -- Moved from Mechagon!!!
             -- ===============
 
+            -- QuestID: 56894, Coords: 73.82, 31.26 = Prob one of the Commanders as I killed one!
+
             -- Updated:
             -- Pet drop
             [152464] = { name = "Caverndark Terror", npcid = 152464, questId = { 56283 }, type = TYPE_ELITE, faction = FACTION_ALL, coord = { 40800950 }, bothphases = true, note = "Inside cave",loot = { { droptype = DROP_PET, itemID = 169356, petID = 154829, speciesID = 2690, isKnown = false } } }, -- coords update, mob too strong to check questID
@@ -225,10 +227,13 @@ local rareDB = {
             
             -- Unchecked
             [151870] = { name = "Sandcastle", npcid = 151870, questId = { 56276 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 78003280 }, bothphases = true, note = "Multiple spawn points. Has a random chance to spawn when using Scrying Stone.", loot = { { droptype = DROP_PET, itemID = 169369, petID = 154842, speciesID = 2703, isKnown = false } } },
-            [152561] = { name = "Banescale the Packfather", npcid = 152561, questId = { 56282 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 71605420 }, bothphases = true, note="Has a chance to spawn after killing Siltstalker the Packmother.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
-            [152291] = { name = "Tidelord", npcid = 152291, questId = { 0 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 56204360 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
-            [152323] = { name = "Deepglider", npcid = 152323, questId = { 55671 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 28802900 }, bothphases = true, note = "Spawns in multiple places south of Azsh'ari Terrace. mostly in Coral Forest.", loot = { { droptype = DROP_ITEM, itemID = 167077, isKnown = false } } },
-            [152359] = { name = "King Gakula", npcid = 152359, questId = { 56297 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 71405480 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169371, petID = 154820, speciesID = 2681, isKnown = false } } },
+            [152561] = { name = "Banescale the Packfather", npcid = 152561, questId = { 56282 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 73995395 }, bothphases = true, note="Has a chance to spawn after killing Siltstalker the Packmother.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
+            
+            [152291] = { name = "Deepglider", npcid = 152291, questId = { 0 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 56204360 }, bothphases = true, note = "Spawns in multiple places south of Azsh'ari Terrace. mostly in Coral Forest.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } }, -- OLD Tidelord
+
+            [152323] = { name = "King Gakula", npcid = 152323, questId = { 55671 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 28802900 }, bothphases = true, note = "Spawns after a number of Bloodfin Tadpoles are clicked on to shoo them.", loot = { { droptype = DROP_ITEM, itemID = 167077, isKnown = false } } }, -- OLD Deepglider
+        [152359] = { name = "Tidelord?", npcid = 152359, questId = { 56297 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 71405480 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169371, petID = 154820, speciesID = 2681, isKnown = false } } }, -- OLD King Gakula
+            
             [152414] = { name = "Elder Unu", npcid = 152414, questId = { 56284 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 63803260 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
             [152415] = { name = "Alga the Eyeless", npcid = 152415, questId = { 56279 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 52404200 }, bothphases = true, loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } },
             [152448] = { name = "Iridescent Glimmershell", npcid = 152448, questId = { 56286 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 47205500 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169352, petID = 154825, speciesID = 2686, isKnown = false } } },
@@ -292,11 +297,11 @@ local rareDB = {
         index = 4,
         rares = {
             -- Mount Drops:
-            [151934] = { name = "Arachnoid Harvester", npcid = 151934, questId = { 55512 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 51604160 }, bothphases = true, loot = { { droptype = DROP_MOUNT, itemID = 168823, mountID = 1229, isKnown = false } } },-- mountID
+            [151934] = { name = "Arachnoid Harvester", npcid = 151934, questId = { 55512 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 51604160 }, bothphases = true, cave = { 63123921 }, caveNote = "Kite \"Arachnoid Harvester\" here to get a chance for a drop!", loot = { { droptype = DROP_MOUNT, itemID = 168823, mountID = 1229, isKnown = false } } },-- mountID
             [152182] = { name = "Rustfeather", npcid = 152182, questId = { 55811 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 63807800 }, bothphases = true, loot = { { droptype = DROP_MOUNT, itemID = 168370, mountID = 1248, isKnown = false } } }, -- Mount: Junkheap Drifter
 
             -- Pet Drops:
-            [150394] = { name = "Armored Vaultbot", npcid = 150394, questId = { 55546 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 60604460 }, bothphases = true, note="Only drops the pet if kited to the Robot Cruncher Zapper at Bondo's yard or by using a \"Armored Vaultbot Key\".", loot = { { droptype = DROP_PET, itemID = 170072, petID = 155829, speciesID = 2766, isKnown = false }, { droptype = DROP_BLUEPRINT, itemID = 167843, checkId = 55058, isKnown = false }, { droptype = DROP_QUEST, itemID = 167796, checkId = 55455, isKnown = false } } }, -- pet: Snowsoft Nibbler, Blueprint: Vaultbot Key, Paint Vial: Mechagon Gold
+            [150394] = { name = "Armored Vaultbot", npcid = 150394, questId = { 55546 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 57564801 }, bothphases = true, note="Only drops the pet if kited to the Robot Cruncher Zapper at Bondo's yard or by using a \"Armored Vaultbot Key\".", loot = { { droptype = DROP_PET, itemID = 170072, petID = 155829, speciesID = 2766, isKnown = false }, { droptype = DROP_BLUEPRINT, itemID = 167843, checkId = 55058, isKnown = false }, { droptype = DROP_QUEST, itemID = 167796, checkId = 55455, isKnown = false } } }, -- pet: Snowsoft Nibbler, Blueprint: Vaultbot Key, Paint Vial: Mechagon Gold
             [152001] = { name = "Bonepicker", npcid = 152001, questId = { 55537 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 65202320 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169392, petID = 154893, speciesID = 2719, isKnown = false } } }, -- Pet: Bonebiter
             [151933] = { name = "Malfunctioning Beastbot", npcid = 151933, questId = { 55544 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 61004120 }, bothphases = true, note = "Requires \"Beastbot Powerpack\" to activate.", loot = { { droptype = DROP_PET, itemID = 169382, petID = 154854, speciesID = 2715, isKnown = false } } },  -- Pet: Lost Robogrip
             [151672] = { name = "Mecharantula", npcid = 151672, questId = { 55386 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 86801940 }, bothphases = true, loot = { { droptype = DROP_PET, itemID = 169393, petID = 154894, speciesID = 2720, isKnown = false } } }, -- Pet: Arachnoid Skitterbot
@@ -307,7 +312,7 @@ local rareDB = {
             [154225] = { name = "The Rusty Prince", npcid = 154225, questId = { 56182 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 58305690 }, bothphases = true, note = "Only available in the alternate future of Mechagon. Accept the daily quest \"The Other Place\" in Rustbolt or use \"Personal Time Displacer\" to displace you in time.", loot = { { droptype = DROP_TOY, itemID = 169347, isKnown = false } } }, -- Judgment of Mechagon
 
             -- Gear Only:
-            [155060] = { name = "TheDoppel Ganger", npcid = 155060, questId = { 55623 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 80902020 }, bothphases = true, note = "Requires 3 pieces of \"Pressure Relief Valve\" from the quest \"Cogfrenzy's Construction Frenzy\" to start the event.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } }, -- Event
+            [155060] = { name = "The Doppel Ganger", npcid = 155060, questId = { 55623 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 80902020 }, bothphases = true, note = "Requires 3 pieces of \"Pressure Relief Valve\" from the quest \"Cogfrenzy's Construction Frenzy\" to start the event.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } }, -- Event
             [151702] = { name = "Paol Pondwader", npcid = 151702, questId = { 55405 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 23006860 }, bothphases = true, note = "Likely available only when Reclamation Rig daily construction project is up.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } }, -- Supervolt Zapper { droptype = DROP_ITEM, itemID = 170468, isKnown = false }
             [152764] = { name = "Oxidized Leachbeast", npcid = 152764, questId = { 55856 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 57206260 }, bothphases = true, note = "When it's raining small oxidized slimes spawn in Junkwatt Depot. Kill those until the rare mob spawns.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } }, -- Oxidized Refuse Remover { droptype = DROP_ITEM, itemID = 170273, isKnown = false }
             [153000] = { name = "Sparkqueen P'Emp", npcid = 153000, questId = { 55810 }, type = TYPE_RARE, faction = FACTION_ALL, coord = { 82202300 }, bothphases = true, note = "Only available when Razak Ironsides is in Rustbolt.", loot = { { droptype = DROP_GEAR_ONLY, itemID = 0, isKnown = false } } }, -- Yellow punchcards
@@ -1348,7 +1353,11 @@ local function addToTomTom(mapid, npcid)
             if #rare.cave > 1 and factionControlling == FACTION_HORDE then
                 coord = rare.cave[2]
             end
-            name = name .. " Cave Entrance"
+            if rare.caveNote and type(caveNote) == "string" then
+                name = name .. rare.caveNote
+            else
+                name = name .. " Cave Entrance"
+            end
             x, y = floor(coord / 10000) / 10000, (coord % 10000) / 10000
             TomTom:AddWaypoint(mapid, x, y, {
                 title = name,
@@ -2344,8 +2353,13 @@ function WarfrontRareTracker:WorldmapTooltipOnEnter(self, mapid, npcid, cave, mi
 
     local line
     if cave then
-        worldmapTooltip:AddLine(colorText("Cave entrance for: " .. getColoredRareName(mapid, npcid), colors.yellow))
-        worldmapTooltip:Show()
+        if rareDB[mapid].rares[npcid].caveNote and type(rareDB[mapid].rares[npcid].caveNote) == "string" then
+            worldmapTooltip:AddLine(colorText(rareDB[mapid].rares[npcid].caveNote, colors.orange))
+            worldmapTooltip:Show()
+        else
+            worldmapTooltip:AddLine(colorText("Cave entrance for: " .. getColoredRareName(mapid, npcid), colors.yellow))
+            worldmapTooltip:Show()
+        end
     else
         local itemName, itemLink, itemTexture
         if minimap and WarfrontRareTracker.db.profile.minimapIcons.onMinimapHoover then
@@ -2583,7 +2597,11 @@ end
 
 local function getWorldMapIconForRare(mapid, npcid, caveicon)
     if caveicon ~= nil and caveicon == true then
-        return "Interface\\MINIMAP\\Suramar_Door_Icon"
+        if rareDB[mapid].rares[npcid].caveNote and type(rareDB[mapid].rares[npcid].caveNote) == "string" then
+            return "Interface\\ICONS\\Ability_Hunter_MarkedForDeath"
+        else
+            return "Interface\\MINIMAP\\Suramar_Door_Icon"
+        end
     end
     if not WarfrontRareTracker.db.profile.worldmapicons.useMasterfilter and WarfrontRareTracker.db.profile.worldmapicons.handleDefeated == "change" and isQuestCompleted(mapid, npcid) then
         return "Interface\\Worldmap\\X_Mark_64Grey"
@@ -2716,7 +2734,7 @@ function WarfrontRareTracker:CreateNewMapIcon(mapid, npcid, caveicon)
         worldmapicon.mapid = mapid
         worldmapicon.cave = caveicon
         worldmapicon:SetScript("OnClick", function(self, button) WarfrontRareTracker:WorldmapTooltipOnClick(self, worldmapicon.mapid, worldmapicon.npcid, button) end)
-        worldmapicon:SetScript("OnEnter", function(self) WarfrontRareTracker:WorldmapTooltipOnEnter(self, worldmapicon.mapid, worldmapicon.npcid, caveicon, false) end)
+        worldmapicon:SetScript("OnEnter", function(self) WarfrontRareTracker:WorldmapTooltipOnEnter(self, worldmapicon.mapid, worldmapicon.npcid, worldmapicon.cave, false) end)
         worldmapicon:SetScript("OnLeave", function() WarfrontRareTracker:WorldmapTooltipOnLeave() end)
         table.insert(rareDB[mapid].worldmapIcons, worldmapicon)
         HBDPins:AddWorldMapIconMap("WarfrontRareTracker"..rareDB[mapid].zonename, worldmapicon, mapid, x, y, 1)

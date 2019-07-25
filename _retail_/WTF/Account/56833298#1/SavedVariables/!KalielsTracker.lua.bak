@@ -1,8 +1,9 @@
 
 KalielsTrackerDB = {
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "3.1.10",
+	["char"] = {
+		["Shanyt - Argent Dawn"] = {
+			["collapsed"] = true,
+		},
 	},
 	["profileKeys"] = {
 		["Datgorg - Argent Dawn"] = "Default",
@@ -11,13 +12,17 @@ KalielsTrackerDB = {
 		["Brotus - Argent Dawn"] = "Default",
 		["Tyran - Argent Dawn"] = "Default",
 		["Tyrannithal - Argent Dawn"] = "Default",
-		["Shaekhan - Argent Dawn"] = "Default",
+		["Jingojaggot - Argent Dawn"] = "Default",
 		["Shanyt - Argent Dawn"] = "Default",
 		["Durlok - Black Dragonflight"] = "Default",
-		["Mulmok - Argent Dawn"] = "Default",
 		["Cowtastraphy - Argent Dawn"] = "Default",
 		["Fantastiburo - Zul'jin"] = "Default",
-		["Jingojaggot - Argent Dawn"] = "Default",
+		["Mulmok - Argent Dawn"] = "Default",
+		["Shaekhan - Argent Dawn"] = "Default",
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "3.1.10",
 	},
 	["profiles"] = {
 		["Default"] = {
