@@ -95,6 +95,9 @@ BigWigs:AddColors("Za'qul, Herald of Ny'alotha", {
 
 BigWigs:AddColors("Queen Azshara", {
 	[-20480] = "cyan",
+	[-20410] = "yellow",
+	[-20408] = "yellow",
+	[-20355] = "yellow",
 	[297371] = "cyan",
 	[297372] = "cyan",
 	[297907] = "blue",
@@ -113,6 +116,7 @@ BigWigs:AddColors("Queen Azshara", {
 	[299250] = {"blue","cyan"},
 	[300074] = "orange",
 	[300428] = "cyan",
+	[300478] = "orange",
 	[300492] = {"blue","yellow"},
 	[300519] = "red",
 	[300620] = {"blue","yellow"},

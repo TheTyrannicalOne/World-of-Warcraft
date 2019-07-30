@@ -21,8 +21,8 @@ local format = string.format
 
 local HasVehicleActionBar, HasOverrideActionBar, IsInPetBattle, UnitHasVehicleUI, UnitOnTaxi = HasVehicleActionBar, HasOverrideActionBar, C_PetBattles.IsInBattle, UnitHasVehicleUI, UnitOnTaxi
 
-
 local Masque, MasqueGroup
+local _
 
 
 function Hekili:GetScale()
@@ -48,27 +48,23 @@ local function stopScreenMovement(frame)
     local monitor = (tonumber(GetCVar("gxMonitor")) or 0) + 1
     local resolutions = {GetScreenResolutions()}
     local resolution = resolutions[GetCurrentResolution()] or GetCVar("gxWindowedResolution")
-
     local scrW, scrH = resolution:match("(%d+)x(%d+)")
-    local scale = Hekili:GetScale()
 
-    scrW = scrW * scale
-    scrH = scrH * scale
+    local scale, pScale = Hekili:GetScale(), UIParent:GetScale()
 
-    local limitX = (scrW - frame:GetWidth()) / 2
+    scrW = scrW / ( scale * pScale )
+    scrH = scrH / ( scale * pScale )
+
+    local limitX = (scrW - frame:GetWidth() ) / 2
     local limitY = (scrH - frame:GetHeight()) / 2
 
     _, _, _, movementData.toX, movementData.toY = frame:GetPoint()
     frame:StopMovingOrSizing()
     frame.Moving = false
     frame:ClearAllPoints()
-    frame:SetPoint(
-        "CENTER",
-        Screen,
-        "CENTER",
+    frame:SetPoint( "CENTER", nil, "CENTER",
         max(-limitX, min(limitX, movementData.origX + (movementData.toX - movementData.fromX))),
-        max(-limitY, min(limitY, movementData.origY + (movementData.toY - movementData.fromY)))
-    )
+        max(-limitY, min(limitY, movementData.origY + (movementData.toY - movementData.fromY))) )
     Hekili:SaveCoordinates()
 end
 
@@ -162,7 +158,8 @@ function ns.StartConfiguration( external )
     ns.UI.Notification.Mover:SetBackdropBorderColor( ccolor.r, ccolor.g, ccolor.b, 1 )
     ns.UI.Notification.Mover:Show()
 
-    f = ns.UI.Notification.Mover
+    local f = ns.UI.Notification.Mover
+
     if not f.Header then
         f.Header = f:CreateFontString( "HekiliNotificationHeader", "OVERLAY", "GameFontNormal" )
         local path, size = f.Header:GetFont()
@@ -184,10 +181,6 @@ function ns.StartConfiguration( external )
             GameTooltip:SetText( "Hekili: Notifications" )
             GameTooltip:AddLine( "Left-click and hold to move.", 1, 1, 1 )
             GameTooltip:Show()
-
-        elseif ( H.Pause and ns.queue[ dispID ] and ns.queue[ dispID ][ id ] ) then
-            H:ShowDiagnosticTooltip( ns.queue[ dispID ][ id ] )
-
         end
     end )
     HekiliNotification:SetScript( "OnLeave", function(self)
@@ -446,9 +439,11 @@ local function menu_Potions()
     ns.UI.Minimap:RefreshDataText()
 end
 
-Hekili_Menu = CreateFrame( "Frame", "HekiliMenu" )
-Hekili_Menu.displayMode = "MENU"
-Hekili_Menu.initialize = function(self, level)
+ns.UI.Menu = CreateFrame( "Frame", "HekiliMenu", UIParent, "UIDropDownMenuTemplate" )
+
+local menu = ns.UI.Menu
+menu.displayMode = "MENU"
+menu.initialize = function(self, level)
     if not level then
         return
     end
@@ -910,9 +905,9 @@ do
                     if conf.range.enabled then
                         if conf.range.type == "melee" and UnitExists( "target" ) then
                             outOfRange = ( LRC:GetRange( "target" ) or 50 ) > 7
-                        elseif conf.range.type == "ability" then
+                        elseif conf.range.type == "ability" and UnitExists( "target" ) and UnitCanAttack( "player", "target" ) then
                             if a.item then
-                                outOfRange = UnitExists( "target" ) and UnitCanAttack( "player", "target" ) and IsItemInRange( a.item, "target" ) == false
+                                outOfRange = IsItemInRange( a.item, "target" ) == false
                             else
                                 local name = a.range and class.abilities[ a.range ] and class.abilities[ a.range ].name
                                 name = name or a.actualName or a.name
@@ -932,7 +927,7 @@ do
                     end
 
                     if not b.outOfRange then
-                        local unusable
+                        local _, unusable
 
                         if a.itemCd or a.item then
                             unusable = not IsUsableItem(a.itemCd or a.item)
@@ -1033,7 +1028,7 @@ do
                     elseif mode == 'aoe' then tMin = spec and spec.aoe or 3 end
                 elseif self.id == 'AOE' then tMin = spec and spec.aoe or 3 end
 
-                local detected = max( 1, ns.getNumberTargets() )
+                local detected = ns.getNumberTargets()
                 local shown = detected
 
                 if tMin > 0 then
@@ -1362,7 +1357,7 @@ do
     end
 
 
-    function Display_GetPerimeterButtons( self )
+    local function Display_GetPerimeterButtons( self )
         local left, right, top, bottom
         local lPos, rPos, tPos, bPos
 
@@ -1422,7 +1417,7 @@ do
         local border = 2
 
         d:SetSize( scale * ( border + ( conf.primaryWidth or 50 ) ), scale * ( border + ( conf.primaryHeight or 50 ) ) )
-        d:SetPoint( "CENTER", Screen, "CENTER", conf.x or 0, conf.y or -225 )
+        d:SetPoint( "CENTER", nil, "CENTER", conf.x or 0, conf.y or -225 )
         d:SetFrameStrata( "MEDIUM" )
         d:SetClampedToScreen( true )
         d:EnableMouse( false )
@@ -1471,7 +1466,7 @@ do
         local border = 2
 
         d:SetSize( scale * ( border + conf.primaryWidth ), scale * (border + conf.primaryHeight ) )
-        d:SetPoint( "CENTER", Screen, "CENTER", conf.x, conf.y )
+        d:SetPoint( "CENTER", nil, "CENTER", conf.x, conf.y )
         d:SetFrameStrata( "MEDIUM" )
         d:SetClampedToScreen( true )
         d:EnableMouse( false )
@@ -2002,7 +1997,7 @@ function Hekili:BuildUI()
     f:SetSize( notif.width * scaleFactor, notif.height * scaleFactor )
     f:SetClampedToScreen( true )
     f:ClearAllPoints()
-    f:SetPoint("CENTER", Screen, "CENTER", notif.x, notif.y )
+    f:SetPoint("CENTER", nil, "CENTER", notif.x, notif.y )
 
     f.Text = f.Text or f:CreateFontString( "HekiliNotificationText", "OVERLAY" )
     f.Text:SetAllPoints( f )
@@ -2018,8 +2013,7 @@ function Hekili:BuildUI()
     -- End Notification Panel
 
     -- Dropdown Menu.
-    ns.UI.Menu = ns.UI.Menu or CreateFrame("Frame", "Hekili_Menu", UIParent, "UIDropDownMenuTemplate")
-
+    ns.UI.Menu = ns.UI.Menu or CreateFrame("Frame", "HekiliMenu", UIParent, "UIDropDownMenuTemplate")
 
     -- Displays
     for disp in pairs( self.DB.profile.displays ) do
@@ -2203,7 +2197,7 @@ function Hekili:ShowDiagnosticTooltip( q )
 
         if q.HookScript and q.HookScript ~= "" then
             local Text = Format(q.HookScript)
-            tt:AddLine(fmt:ColorString(Text, SyntaxColors), 1, 1, 1, 1)
+            tt:AddLine(fmt.FormatCode(Text, 0, SyntaxColors), 1, 1, 1, 1)
         end
 
         if q.HookElements then
@@ -2224,7 +2218,7 @@ function Hekili:ShowDiagnosticTooltip( q )
         tt:AddLine("\nTime Script")
 
         local Text = Format(q.ReadyScript)
-        tt:AddLine(fmt:ColorString(Text, SyntaxColors), 1, 1, 1, 1)
+        tt:AddLine(fmt.FormatCode(Text, 0, SyntaxColors), 1, 1, 1, 1)
 
         if q.ReadyElements then
             tt:AddLine("Values")
@@ -2240,7 +2234,7 @@ function Hekili:ShowDiagnosticTooltip( q )
         tt:AddLine("\nAction Criteria")
 
         local Text = Format(q.ActScript)
-        tt:AddLine(fmt:ColorString(Text, SyntaxColors), 1, 1, 1, 1)
+        tt:AddLine(fmt.FormatCode(Text, 0, SyntaxColors), 1, 1, 1, 1)
 
         if q.ActElements then
             tt:AddLine("Values")

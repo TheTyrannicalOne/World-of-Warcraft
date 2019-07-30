@@ -70,8 +70,6 @@ function Hekili:OnInitialize()
     self.DB.RegisterCallback( self, "OnProfileCopied", "TotalRefresh" )
     self.DB.RegisterCallback( self, "OnProfileReset", "TotalRefresh" )
 
-    _G.onInitStart = self.DB.profile.enabled
-
     local AceConfig = LibStub( "AceConfig-3.0" )
     AceConfig:RegisterOptionsTable( "Hekili", self.Options )
 
@@ -101,7 +99,7 @@ function Hekili:OnInitialize()
                         end )
                         hookOnce = true
                     end
-                    ToggleDropDownMenu( 1, nil, Hekili_Menu, "cursor", 0, 0 )
+                    ToggleDropDownMenu( 1, nil, ns.UI.Menu, "cursor", 0, 0 )
                 end
                 GameTooltip:Hide()
             end,
@@ -538,12 +536,12 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                 local wait_time = 60
                 local clash = 0
 
-                local known = self:IsSpellKnown( state.this_action )
+                local known, reason = self:IsSpellKnown( state.this_action )
                 local enabled = self:IsSpellEnabled( state.this_action )
 
                 if debug then
                     local d = format( "\n[%03d] %s ( %s - %d )", rDepth, entry.action, listName, actID )
-                    if not known then d = d .. " - ability unknown"
+                    if not known then d = d .. " - " .. ( reason or "ability unknown" )
                     elseif not enabled then d = d .. " - ability disabled." end
                     self:Debug( d )
                 end
@@ -600,7 +598,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                         if debug then self:Debug( "Returned from Use Items; current recommendation is %s (+%.2f).", rAction or "NO ACTION", rWait ) end
                                         -- self:PopStack()
                                     else
-                                        name = state.args.list_name
+                                        local name = state.args.list_name
 
                                         if InUse[ name ] then
                                             if debug then self:Debug( "Action list (%s) was found, but would cause a loop.", name ) end
@@ -853,7 +851,7 @@ function Hekili:GetPredictionFromAPL( dispName, packName, listName, slot, action
                                                                 if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but there is no need to wait.  Skipping.", next_action ) end
                                                             elseif next_wait >= rWait then
                                                                 if debug then self:Debug( "The currently chosen action ( %s ) is ready at or before the next action ( %.2fs <= %.2fs ).  Skipping.", ( rAction or "???" ), rWait, next_wait ) end
-                                                            elseif time_ceiling and next_wait >= time_ceiling - state.now - state.offset then
+                                                            elseif state.delayMax and next_wait >= state.delayMax then
                                                                 if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but we would exceed our time ceiling in %.2fs.  Skipping.", next_action, next_wait ) end
                                                             elseif next_wait >= 10 then
                                                                 if debug then self:Debug( "Attempted to Pool Resources for Next Entry ( %s ), but we'd have to wait much too long ( %.2f ).  Skipping.", next_action, next_wait ) end
@@ -1053,7 +1051,7 @@ function Hekili:ProcessHooks( dispName, packName )
     end
 
     if dispName == "AOE" and self:GetToggleState( "mode" ) == "reactive" then
-        if self:GetNumTargets() < ( spec and spec.aoe or 3 ) then
+        if ns.getNumberTargets() < ( spec and spec.aoe or 3 ) then
             UI.RecommendationsStr = nil
             UI.NewRecommendations = true
             return

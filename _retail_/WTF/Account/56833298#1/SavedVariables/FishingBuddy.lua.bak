@@ -90,9 +90,9 @@ FishingBuddy_Info = {
 		[1165002] = {
 			[162515] = 6,
 			[160927] = 1,
-			[154770] = 1,
-			[152543] = 44,
 			[152544] = 47,
+			[152543] = 44,
+			[154770] = 1,
 			[154792] = 1,
 			[160934] = 2,
 		},
@@ -267,16 +267,16 @@ FishingBuddy_Info = {
 			["quality"] = 0,
 			["texture"] = 132589,
 		},
-		[111672] = {
-			["enUS"] = "Enormous Sea Scorpion",
-			["texture"] = 970817,
-			["quality"] = 1,
-		},
 		[112633] = {
 			["color"] = "ff1eff00",
 			["enUS"] = "Frostdeep Minnow",
 			["texture"] = 630618,
 			["quality"] = 2,
+		},
+		[111672] = {
+			["enUS"] = "Enormous Sea Scorpion",
+			["texture"] = 970817,
+			["quality"] = 1,
 		},
 		[154770] = {
 			["color"] = "ff9d9d9d",
@@ -342,11 +342,11 @@ FishingBuddy_Info = {
 	["KnownZones"] = {
 		[0] = "Port of Zandalar",
 		[85] = "Valley of Strength",
-		[863] = "Razorjaw River",
+		[590] = "Galhun's Garrison",
 		[619] = "Margoss's Retreat",
 		[1165] = "Port of Zandalar",
 		[862] = "Port of Zandalar",
 		[1355] = "Chitterspine Caverns",
-		[590] = "Galhun's Garrison",
+		[863] = "Razorjaw River",
 	},
 }

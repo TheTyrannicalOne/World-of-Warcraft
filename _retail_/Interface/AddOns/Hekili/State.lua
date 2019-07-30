@@ -43,6 +43,10 @@ state.ptr = PTR and 1 or 0
 state.now = 0
 state.offset = 0
 
+state.encounterID = 0
+state.encounterName = "None"
+state.encounterDifficulty = 0
+
 state.delay = 0
 state.delayMin = 0
 state.delayMax = 60
@@ -491,7 +495,6 @@ state.safebool = function( val )
     return val ~= 0 and true or false
 end
 
-state.inEncounter = false
 state.combat = 0
 state.faction = UnitFactionGroup( 'player' )
 state.race[ formatKey( UnitRace('player') ) ] = true
@@ -690,19 +693,23 @@ end
 
 -- Apply a buff to the current game state.
 local function applyBuff( aura, duration, stacks, value )
+    if not aura then
+        Error( "Attempted to apply/remove a nameless aura '%s'.\n%s", aura or "nil", debugstack(2) )
+        return
+    end
+
     local auraInfo = class.auras[ aura ]
 
     if not auraInfo then
-        Error( "Attempted to apply/remove unknown aura '%s'.", aura )
         local spec = class.specs[ state.spec.id ]
         if spec then
             spec:RegisterAura( aura, { duration = duration } )
             class.auras[ aura ] = spec.auras[ aura ]
             -- Hekili:SpecializationChanged()
         end
-
-        if not class.auras[ aura ] then return end
+        
         auraInfo = class.auras[ aura ]
+        if not auraInfo then return end
     end
 
     if auraInfo.alias then
@@ -1247,7 +1254,7 @@ end
 
 
 local spend = function( amount, resource, clean )
-    amount, resource, overcap = ns.callHook( "prespend", amount, resource, overcap )
+    amount, resource = ns.callHook( "prespend", amount, resource )
     resourceChange( -amount, resource, overcap )
     if resource ~= "health" then forecastResources( resource ) end
     ns.callHook( "spend", amount, resource, overcap, true )
@@ -1504,8 +1511,11 @@ local mt_state = {
         elseif k == 'desired_targets' then
             return 1
 
+        elseif k == 'inEncounter' or k == 'encounter' then
+            return t.encounterID > 0
+
         elseif k == 'boss' then
-            return ( t.inEncounter or ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) ) ) == true
+            return ( t.encounterID > 0 or ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) ) ) == true
 
         elseif k == 'cycle' then
             return false
@@ -2228,6 +2238,9 @@ local mt_target = {
         elseif k == 'is_player' then
             return UnitIsPlayer( 'target' )
 
+        elseif k == 'is_boss' then
+            return ( UnitCanAttack( "player", "target" ) and ( UnitClassification( "target" ) == "worldboss" or UnitLevel( "target" ) == -1 ) )
+
         elseif k:sub(1, 6) == 'within' then
             local maxR = k:match( "^within(%d+)$" )
 
@@ -2331,7 +2344,7 @@ local mt_default_cooldown = {
         local profile = Hekili.DB.profile
         local id = ability.id
 
-        if ability and rawget( ability, "item" ) then
+        if ability and ability.item then
             GetCooldown = _G.GetItemCooldown
             id = ability.itemCd or ability.item
         end
@@ -2426,7 +2439,7 @@ local mt_default_cooldown = {
             return ability.recharge or ability.cooldown or 0
 
         elseif k == 'time_to_max_charges' or k == 'full_recharge_time' then
-            return ( ( ability.charges or 1 ) - t.charges_fractional ) * ability.recharge
+            return ( ( ability.charges or 1 ) - t.charges_fractional ) * ( ability.recharge or ability.cooldown )
 
         elseif k == 'remains' then            
             if t.key == 'global_cooldown' then
@@ -4834,8 +4847,6 @@ function state.reset( dispName )
 
     -- Projectiles
     state:ResetQueueData()
-
-    if ns.recountRequired() then ns.recountTargets() end
 
     local p = Hekili.DB.profile
 

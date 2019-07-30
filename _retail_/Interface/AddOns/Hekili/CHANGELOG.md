@@ -1,6 +1,9 @@
 # Hekili
 
-## [v8.2.0-05.03](https://github.com/Hekili/hekili/tree/v8.2.0-05.03) (2019-07-15)
-[Full Changelog](https://github.com/Hekili/hekili/compare/v8.2.0-05.02...v8.2.0-05.03)
+## [v8.2.0-06.03](https://github.com/Hekili/hekili/tree/v8.2.0-06.03) (2019-07-29)
+[Full Changelog](https://github.com/Hekili/hekili/compare/v8.2.0-06.02...v8.2.0-06.03)
 
-- More adjustments to Pocket-Sized Computation Device.  
+- Elemental:  Add funneling related options, integrate into base priority.  
+    - Update APL for MOTE, funneling.  
+- Revise profile hotfixes for delay settings.  
+- Fix item cooldowns for items with multiple IDs.  

@@ -32,10 +32,8 @@ local handlers = {}
 local unitEvents = CreateFrame( "Frame" )
 local unitHandlers = {}
 local itemCallbacks = {}
-
-local timerRecount = 0
-
 local activeDisplays = {}
+
 
 function Hekili:GetActiveDisplays()
     return activeDisplays
@@ -65,13 +63,6 @@ function ns.StartEventHandler()
 
     events:SetScript( "OnUpdate", function( self, elapsed )
         Hekili.freshFrame = true
-        timerRecount = timerRecount - elapsed
-
-        if timerRecount < 0 then
-            ns.recountTargets()
-            if ns.targetsChanged() then Hekili:ForceUpdate( "TARGET_COUNT_CHANGED" ) end
-            timerRecount = 0.1
-        end
     end )
 
     Hekili:RunItemCallbacks()
@@ -323,8 +314,17 @@ end ) ]]
 
 
 -- TBD:  Consider making `boss' a check to see whether the current unit is a boss# unit instead.
-RegisterEvent( "ENCOUNTER_START", function () state.inEncounter = true end )
-RegisterEvent( "ENCOUNTER_END", function () state.inEncounter = false end )
+RegisterEvent( "ENCOUNTER_START", function ( _, id, name, difficulty )
+    state.encounterID = id
+    state.encounterName = name
+    state.encounterDifficulty = difficulty
+end )
+
+RegisterEvent( "ENCOUNTER_END", function ()
+    state.encounterID = 0
+    state.encounterName = "None"
+    state.encounterDifficulty = 0
+end )
 
 
 do
@@ -912,6 +912,10 @@ local dmg_events = {
     SPELL_PERIODIC_MISSED   = true,
     SWING_DAMAGE            = true,
     SWING_MISSED            = true,
+    RANGE_DAMAGE            = true,
+    RANGE_MISSED            = true,
+    ENVIRONMENTAL_DAMAGE    = true,
+    ENVIRONMENTAL_MISSED    = true
 }
 
 
@@ -944,7 +948,6 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
     if death_events[ subtype ] then
         if ns.isTarget( destGUID ) then
             ns.eliminateUnit( destGUID, true )
-            ns.forceRecount()
             Hekili:ForceUpdate( subtype )
         elseif ns.isMinion( destGUID ) then
             ns.updateMinion( destGUID )
@@ -962,22 +965,47 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
     local hostile = ( bit.band( destFlags, COMBATLOG_OBJECT_REACTION_FRIENDLY ) == 0 ) and not IsActuallyFriend( destName )
 
     if dmg_events[ subtype ] and destGUID == state.GUID then
-        local damage, damageType = amount, school
+        local damage, damageType
 
-        if subtype == "SWING_DAMAGE" then
-            damage = spellID
+        if subtype:sub( 1, 13 ) == "ENVIRONMENTAL" then
             damageType = 1
-        elseif subtype == "SWING_MISSED" then
-            damage = school
-            damageType = 1
-        elseif subtype == "SPELL_MISSED" or subtype == "SPELL_PERIODIC_MISSED" then
-            if amount == "ABSORB" then
-                damage = a
-                damageType = school or 1
-            else
-                damage = 0
+
+            if subtype:sub(-7) == "_DAMAGE" then
+                damage = spellName
+            
+            elseif spellName == "ABSORB" then
+                damage = amount
+            
             end
+        
+        elseif subtype:sub( 1, 5 ) == "SWING" then
+            damageType = 1
+
+            if subtype == "SWING_DAMAGE" then
+                damage = spellID
+
+            else
+                if spellID == "ABSORB" then
+                    damage = interrupt
+                end
+            
+            end
+
+        else -- SPELL_x
+            if subtype:find( "_MISSED" ) then
+                if amount == "ABSORB" then
+                    damage = a
+                    damageType = school or 1
+                end
+
+            else
+                damage = amount
+                damageType = school
+
+            end
+
         end
+
 
         if damage and damage > 0 then
             ns.storeDamage( time, damage, bit.band( damageType, 0x1 ) == 1 )
@@ -1097,7 +1125,6 @@ local function CLEU_HANDLER( event, _, subtype, _, sourceGUID, sourceName, _, _,
             -- Interrupt is actually overkill.
             if not IsResting( "player" ) and ( ( ( subtype == "SPELL_DAMAGE" or subtype == "SPELL_PERIODIC_DAMAGE" ) and interrupt > 0 ) or ( subtype == "SWING_DAMAGE" and spellName > 0 ) ) and ns.isTarget( destGUID ) then
                 ns.eliminateUnit( destGUID, true )
-                ns.forceRecount()
                 Hekili:ForceUpdate( "SPELL_DAMAGE_OVERKILL" )
             elseif not ( subtype == "SPELL_MISSED" and amount == "IMMUNE" ) then
                 ns.updateTarget( destGUID, time, sourceGUID == state.GUID )
@@ -1148,7 +1175,8 @@ local bindingSubs = {
     ["DOWN"] = "Dn",
     ["UP"] = "Up",
     ["MOUSEWHEEL"] = "Mw",
-    ["BACKSPACE"] = "BkSp"
+    ["BACKSPACE"] = "BkSp",
+    ["DECIMAL"] = "."
 }
 
 local function improvedGetBindingText( binding )
@@ -1209,17 +1237,33 @@ local function StoreKeybindInfo( page, key, aType, id, console )
         if ability.bind then
             local bind = ability.bind
 
-            keys[ bind ] = keys[ bind ] or {
-                lower = {},
-                upper = {},
-                console = {}
-            }
+            if type( bind ) == 'table' then
+                for _, b in ipairs( bind ) do
+                    keys[ b ] = keys[ b ] or {
+                        lower = {},
+                        upper = {},
+                        console = {}
+                    }
 
-            keys[ bind ].lower[ page ] = keys[ ability ].lower[ page ]
-            keys[ bind ].upper[ page ] = keys[ ability ].upper[ page ]
-            keys[ bind ].console[ page ] = keys[ ability ].console[ page ]
+                    keys[ b ].lower[ page ] = keys[ ability ].lower[ page ]
+                    keys[ b ].upper[ page ] = keys[ ability ].upper[ page ]
+                    keys[ b ].console[ page ] = keys[ ability ].console[ page ]
+        
+                    updatedKeys[ b ] = true
+                end
+            else
+                keys[ bind ] = keys[ bind ] or {
+                    lower = {},
+                    upper = {},
+                    console = {}
+                }
 
-            updatedKeys[ bind ] = true
+                keys[ bind ].lower[ page ] = keys[ ability ].lower[ page ]
+                keys[ bind ].upper[ page ] = keys[ ability ].upper[ page ]
+                keys[ bind ].console[ page ] = keys[ ability ].console[ page ]
+
+                updatedKeys[ bind ] = true
+            end
         end
     end
 end        
@@ -1324,19 +1368,34 @@ local function ReadKeybindings()
         end
     end 
 
-    for k in pairs( keys ) do
+    for k, v in pairs( keys ) do
         local ability = class.abilities[ k ]
 
         if ability and ability.bind then
-            for page, value in pairs( keys[ k ].lower ) do
-                keys[ ability.bind ] = keys[ ability.bind ] or {
-                    lower = {},
-                    upper = {},
-                    console = {}
-                }
-                keys[ ability.bind ].lower[ page ] = value
-                keys[ ability.bind ].upper[ page ] = keys[ k ].upper[ page ]
-                keys[ ability.bind ].console[ page ] = keys[ k ].console[ page ]
+            if type( ability.bind ) == 'table' then
+                for _, b in ipairs( ability.bind ) do
+                    for page, value in pairs( v.lower ) do
+                        keys[ b ] = keys[ b ] or {
+                            lower = {},
+                            upper = {},
+                            console = {}
+                        }
+                        keys[ b ].lower[ page ] = value
+                        keys[ b ].upper[ page ] = v.upper[ page ]
+                        keys[ b ].console[ page ] = v.console[ page ]
+                    end
+                end
+            else
+                for page, value in pairs( v.lower ) do
+                    keys[ ability.bind ] = keys[ ability.bind ] or {
+                        lower = {},
+                        upper = {},
+                        console = {}
+                    }
+                    keys[ ability.bind ].lower[ page ] = value
+                    keys[ ability.bind ].upper[ page ] = v.upper[ page ]
+                    keys[ ability.bind ].console[ page ] = v.console[ page ]
+                end
             end
         end
     end

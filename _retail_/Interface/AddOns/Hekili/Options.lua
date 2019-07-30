@@ -158,41 +158,6 @@ local oneTimeFixes = {
         end
     end,
 
-    autoconvertDelayFadeToCheckbox_20190418 = function( p )
-        for k, v in pairs( p.displays ) do
-            if v.delays.type == "FADE" then
-                v.delays.type = "__NA"
-                v.delays.fade = true
-            end
-        end
-    end,
-
-    autoconvertDelayTextToSweep_20190420 = function( p )
-        for k, v in pairs( p.displays ) do
-            if v.delays.type == "TEXT" then
-                v.delays.type = "CDSW"
-            end
-        end
-    end,
-
-    autoconvertDelayTextToSweep_20190420_1 = function( p )
-        for k, v in pairs( p.displays ) do
-            if v.delays.type == "CDSW" then
-                v.delays.extend = true
-                v.delays.type = "__NA"
-            end
-        end
-    end,
-
-    autoconvertDelayBackToText_20190422 = function( p )
-        for k, v in pairs( p.displays ) do
-            if v.delays.type == "__NA" and v.delays.extend then
-                v.delays.extend = false
-                v.delays.type = "TEXT"
-            end
-        end
-    end,
-
     autoconvertDisplayToggle_20190621_1 = function( p )
         local m = p.toggles.mode
         local types = m.type
@@ -228,6 +193,28 @@ local oneTimeFixes = {
         end
     end,
 
+    resetPotionsToDefaults_20190717 = function( p )
+        for _, v in pairs( p.specs ) do
+            v.potion = nil
+        end
+    end,
+
+    resetAberrantPackageDates_20190728_1 = function( p )
+        for _, v in pairs( p.packs ) do
+            if type( v.date ) == 'string' then v.date = tonumber( v.date ) or 0 end
+            if type( v.version ) == 'string' then v.date = tonumber( v.date ) or 0 end
+            if v.date then while( v.date > 21000000 ) do v.date = v.date / 10 end end
+            if v.version then while( v.version > 21000000 ) do v.version = v.version / 10 end end
+        end
+    end,
+
+    autoconvertDelaySweepToExtend_20190729 = function( p )
+        for k, v in pairs( p.displays ) do
+            if v.delays.type == "CDSW" then
+                v.delays.type = "__NA"
+            end
+        end
+    end,
 }
 
 
@@ -538,11 +525,13 @@ function Hekili:GetDefaults()
                 custom1 = {
                     key = "",
                     value = false,
+                    name = "Custom #1"
                 },
 
                 custom2 = {
                     key = "",
                     value = false,
+                    name = "Custom #2"
                 }
             },
 
@@ -922,7 +911,15 @@ do
         local width, height = resolution:match( "(%d+)x(%d+)" )
 
         width = tonumber( width )
-        height = tonumber( height ) 
+        height = tonumber( height )
+
+        for i, str in ipairs( resolutions ) do
+            local w, h = str:match( "(%d+)x(%d+)" )
+            w, h = tonumber( w ), tonumber( h )
+
+            if w > width then width = w end
+            if h > height then height = h end
+        end
 
         tab.args.x.min = -1 * width
         tab.args.x.max = width
@@ -3230,6 +3227,15 @@ do
         if not spec then return end
 
         self.DB.profile.specs[ spec ] = self.DB.profile.specs[ spec ] or {}
+
+        if option == "potion" then
+            local p = self.DB.profile.specs[ spec ].potion
+
+            if not class.potionList[ p ] then
+                return class.potions[ p ] and class.potions[ p ].key or p
+            end
+        end 
+
         return self.DB.profile.specs[ spec ][ option ]
     end
 
@@ -3940,6 +3946,9 @@ do
                                     hidden = function()
                                         return self.DB.profile.specs[ id ].nameplates == false
                                     end,
+                                    min = 5,
+                                    max = 100,
+                                    step = 1,
                                     order = 2,
                                 },
 
@@ -3973,6 +3982,18 @@ do
                                     width = "full",
                                     hidden = function () return self.DB.profile.specs[ id ].damage == false end,
                                     order = 5,
+                                },
+
+                                damageRange = {
+                                    type = "range",
+                                    name = "Filter Damaged Enemies by Range",
+                                    desc = "If set above 0, the addon will attempt to avoid counting targets that have were out of range when last seen.  This is based on cached data and may be inaccurate.",
+                                    width = "full",
+                                    hidden = function () return self.DB.profile.specs[ id ].damage == false end,
+                                    min = 0,
+                                    max = 100,
+                                    step = 1,
+                                    order = 5.1,
                                 },
 
                                 damageExpiration = {
@@ -4234,7 +4255,12 @@ do
 
         if option == "op" and not data.op then return "set" end
 
-        if option == "potion" and not data.potion then return "default" end
+        if option == "potion" then
+            if not data.potion then return "default" end
+            if not class.potionList[ data.potion ] then
+                return class.potions[ data.potion ] and class.potions[ data.potion ].key or data.potion
+            end
+        end
 
         if toggleToNumber[ option ] then return data[ option ] == 1 end
         return data[ option ]
@@ -4383,7 +4409,6 @@ do
                         packControl.newPackSpec = ""
                     end,
                 },
-
 
                 shareHeader = {
                     type = "header",
@@ -4913,7 +4938,6 @@ do
                                     name = "",
                                     order = 0.3,
                                     width = "full",
-                                    hidden = data.builtIn
                                 },
 
                                 spec = {
@@ -5090,7 +5114,7 @@ do
                                             if Hekili.Scripts and Hekili.Scripts.DB then
                                                 local scriptHead = "^" .. pack .. ":" .. k .. ":"
                                                 for k, v in pairs( Hekili.Scripts.DB ) do                                                            
-                                                    if k:sub( 1, scriptHead:len() ) == scriptHead and v.Error then err = true; break end
+                                                    if k:match( scriptHead ) and v.Error then err = true; break end
                                                 end
                                             end
 
@@ -6063,7 +6087,8 @@ do
         if not toggle then return end
 
         if option == 'value' then
-            if bind == 'pause' then self:TogglePause()            
+            if bind == 'pause' then self:TogglePause()
+            elseif bind == 'mode' then toggle.value = val
             else self:FireToggle( bind ) end
 
         elseif option == 'type' then
@@ -6290,6 +6315,13 @@ do
                             desc = "If checked, abilities linked to Custom #1 can be recommended.",
                             order = 2,
                         },
+
+                        name = {
+                            type = "input",
+                            name = "Custom #1 Name",
+                            desc = "Specify a descriptive name for this custom toggle.",
+                            order = 3
+                        }
                     }
                 },
 
@@ -6312,6 +6344,13 @@ do
                             desc = "If checked, abilities linked to Custom #2 can be recommended.",
                             order = 2,
                         },
+
+                        name = {
+                            type = "input",
+                            name = "Custom #1 Name",
+                            desc = "Specify a descriptive name for this custom toggle.",
+                            order = 3
+                        }
                     }
                 },
 
@@ -6344,7 +6383,7 @@ do
                         value = {
                             type = "select",
                             name = "Current Display Mode",
-                            desc = "Select the your current Display Mode.",
+                            desc = "Select your current Display Mode.",
                             values = {
                                 automatic = "Automatic",
                                 single = "Single-Target",
@@ -6723,10 +6762,6 @@ do
 
                                 if talent then a.talent = token end
 
-                                if talents[ sKey ] then
-                                    a.talent = sKey
-                                end
-
                                 a.startsCombat = not helpful
 
                                 a.cooldown = cooldown
@@ -6769,7 +6804,7 @@ do
                                 for k, v in pairs( costs ) do
                                     if not v.hasRequiredAura or IsPlayerSpell( v.requiredAuraID ) then
                                         cost = v.costPercent > 0 and v.costPercent / 100 or v.cost
-                                        cost_per_sec = v.costPerSecond
+                                        spendPerSec = v.costPerSecond
                                         resource = key( v.name )
                                         break
                                     end
@@ -6805,17 +6840,13 @@ do
                                 a.id = spellID
                                 a.spend = cost
                                 a.spendType = resource
-                                a.spendPerSec = cost_per_sec
+                                a.spendPerSec = spendPerSec
                                 a.cast = castTime
                                 a.gcd = "spell"
 
                                 a.texture = texture
 
                                 if talent then a.talent = token end
-
-                                if talents[ sKey ] then
-                                    a.talent = sKey
-                                end
 
                                 a.startsCombat = not helpful
 
@@ -6916,9 +6947,6 @@ do
         skeletonHandler( listener, "SPELLS_CHANGED" )
     end
 
-    local SpecInfo = ""
-
-
 
     function Hekili:EmbedSkeletonOptions( db )
         db = db or self.Options
@@ -6935,7 +6963,7 @@ do
                     desc = "A rough skeleton of your current spec, for development purposes only.",
                     order = 1,
                     get = function( info )
-                        return skeleton or ""
+                        return Hekili.Skeleton or ""
                     end,
                     multiline = 25,
                     width = "full"
@@ -7010,7 +7038,7 @@ do
                         append( "spec:RegisterAbilities( {" )
                         increaseIndent()
 
-                        count = 1
+                        local count = 1
                         for k, a in orderedPairs( abilities ) do
                             if count > 1 then append( "\n" ) end
                             count = count + 1
@@ -7059,7 +7087,7 @@ do
                         decreaseIndent()
                         append( "} )\n" )
 
-                        skeleton = table.concat( output, "\n" )
+                        Hekili.Skeleton = table.concat( output, "\n" )
                     end,
                 }
             },
@@ -7622,7 +7650,7 @@ end
 
 function Hekili:SetOption( info, input, ... )
     local category, depth, option, subcategory = info[1], #info, info[#info], nil
-    local Rebuild, RebuildUI, RebuiltScripts, RebuildOptions, RebuildCache, Select
+    local Rebuild, RebuildUI, RebuildScripts, RebuildOptions, RebuildCache, Select
     local profile = Hekili.DB.profile
 
     if category == 'general' then
@@ -7663,52 +7691,6 @@ function Hekili:SetOption( info, input, ... )
 
         -- General options do not need add'l handling.
         return
-
-    --[[ elseif category == 'class' then
-        subcategory = info[2]
-
-        if subcategory == 'toggles' then
-            if option:match("State:") then
-                Hekili:ClassToggle( option:match("State: (.-)$") )
-            else
-                profile[ 'Toggle ' .. option ] = input
-                Hekili:OverrideBinds()
-            end
-
-        elseif subcategory == 'settings' then
-            profile[ 'Class Option: '..option] = input
-
-        end ]]
-
-    --[[ elseif category == 'abilities' then
-        local ability = info[2]
-
-        if option == 'exclude' then profile.blacklist[ ability ] = input
-        elseif option == 'clash' then profile.clashes[ ability ] = tonumber( input ) or 0
-        elseif option == 'toggle' then profile.toggles[ ability ] = input or 'default'
-        elseif option:match( "^(%d+):(%d+)$" ) then
-            local list, action = option:match( "^(%d+):(%d+)$" )
-
-            list = tonumber( list )
-            action = tonumber( action )
-
-            profile.actionLists[ list ].Actions[ action ].Enabled = not input
-            Hekili:UpdateDisplayVisibility()
-        elseif profile.trinkets[ ability ] ~= nil then
-            profile.trinkets[ ability ][ option ] = input
-        end
-
-        Hekili:ForceUpdate()
-        return ]]
-
-    --[[ elseif category == 'notifs' then
-        profile[ option ] = input
-
-        if option == 'Notification X' or option == 'Notification Y' then
-            profile[ option ] = tonumber( input )
-        end
-
-        RebuildUI = true ]]
 
     elseif category == 'bindings' then
 
@@ -7783,13 +7765,13 @@ function Hekili:SetOption( info, input, ... )
         -- Bindings do not need add'l handling.
         return
 
-    elseif category == 'displays' then
+    --[[ elseif category == 'displays' then
 
         -- This is a generic display option/function.
         if depth == 2 then
 
             if option == 'newDisplay' then
-                self.DB.profile.displays[ key ] = {}
+                self.DB.profile.displays[ input ] = {}
                 self:EmbedDisplayOptions()
 
                 C_Timer.After( 0.25, self[ 'ProcessDisplay'..index ] )
@@ -7925,7 +7907,7 @@ function Hekili:SetOption( info, input, ... )
                 end
 
             end
-        end
+        end ]]
 
     elseif category == 'actionLists' then
 
@@ -8119,7 +8101,7 @@ function Hekili:CmdLine( input )
             self:StartListeningForSkeleton()
             self:Print( "Addon will now gather specialization information.  Select all talents and use all abilities for best results." )
             self:Print( "See the Skeleton tab for more information. ")
-            Hekili.Skeleton = true
+            Hekili.Skeleton = ""
         end
         ns.StartConfiguration()
 
@@ -8176,7 +8158,7 @@ local B64tobyte = {
 -- Credit goes to Galmok (galmok@gmail.com)
 local encodeB64Table = {};
 
-function encodeB64(str)
+local function encodeB64(str)
     local B64 = encodeB64Table;
     local remainder = 0;
     local remainder_length = 0;
@@ -8203,7 +8185,7 @@ end
 
 local decodeB64Table = {}
 
-function decodeB64(str)
+local function decodeB64(str)
     local bit8 = decodeB64Table;
     local decoded_size = 0;
     local ch;
@@ -8234,7 +8216,7 @@ local Encoder = Compresser:GetChatEncodeTable()
 local Serializer = LibStub:GetLibrary("AceSerializer-3.0");
 
 
-function TableToString(inTable, forChat)
+local function TableToString(inTable, forChat)
     local serialized = Serializer:Serialize(inTable);
     local compressed = Compresser:CompressHuffman(serialized);
     if(forChat) then
@@ -8245,7 +8227,7 @@ function TableToString(inTable, forChat)
 end
 
 
-function StringToTable(inString, fromChat)
+local function StringToTable(inString, fromChat)
     local decoded;
     if(fromChat) then
         decoded = decodeB64(inString);
@@ -8404,7 +8386,6 @@ local ignore_actions = {
 
 
 local function make_substitutions( i, swaps, prefixes, postfixes ) 
-
     if not i then return nil end
 
     for k,v in pairs( swaps ) do
@@ -8452,7 +8433,6 @@ local function make_substitutions( i, swaps, prefixes, postfixes )
     return i
 
 end
-ns.accomm = accommodate_targets
 
 
 local function accommodate_targets( targets, ability, i, line, warnings )
@@ -8479,6 +8459,7 @@ local function accommodate_targets( targets, ability, i, line, warnings )
 
     return make_substitutions( i, swaps )
 end
+ns.accomm = accommodate_targets
 
 
 local function Sanitize( segment, i, line, warnings )
@@ -8553,11 +8534,11 @@ local function Sanitize( segment, i, line, warnings )
         table.insert( warnings, "Line " .. line .. ": Converted 'pet.X.Y.Z...' to 'Z...' (" .. times .. "x)." )
     end
 
-    --[[ Reverting; this should be a warning and not an autoconversion.
-    i, times = i:gsub( "target%.?1?%.?time_to_die", "time_to_die" )
+    -- target.1.time_to_die is basically the end of an encounter.
+    i, times = i:gsub( "target%.1%.time_to_die", "time_to_die" )
     if times > 0 then
-        table.insert( warnings, "Line " .. line .. ": Converted 'target[.1].time_to_die' to 'time_to_die' (" .. times .."x)." )
-    end ]]
+        table.insert( warnings, "Line " .. line .. ": Converted 'target.1.time_to_die' to 'time_to_die' (" .. times .."x)." )
+    end
 
     i, times = i:gsub( "min:[a-z0-9_%.]+(,?$?)", "%1" )
     if times > 0 then
@@ -8849,8 +8830,12 @@ do
                 result.target_if = nil
             end
 
-            if result.action == 'use_item' and result.name and class.abilities[ result.name ] then
-                result.action = result.name
+            if result.action == 'use_item' then
+                if result.effect_name and class.abilities[ result.effect_name ] then
+                    result.action = class.abilities[ result.effect_name ].key
+                elseif result.name and class.abilities[ result.name ] then
+                    result.action = result.name
+                end
             end
 
             if result.action == 'variable' and not result.op then
@@ -9020,6 +9005,8 @@ do
 
         else
             toggle.value = not toggle.value
+
+            if toggle.name then toggles[ name ] = toggle.name end
 
             if self.DB.profile.notifications.enabled then
                 self:Notify( toggles[ name ] .. ": " .. ( toggle.value and "ON" or "OFF" ) )

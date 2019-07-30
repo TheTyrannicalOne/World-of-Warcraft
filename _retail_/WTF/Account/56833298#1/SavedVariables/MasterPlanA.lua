@@ -45,13 +45,13 @@ MasterPlanAG = {
 			["class"] = "SHAMAN",
 			["lastCacheTime"] = 1462930208,
 			["summary"] = {
-				["tt1"] = true,
 				["ti1"] = 118530,
+				["tt1"] = true,
 				["inProgress"] = {
 					[265] = 1459257399,
 				},
-				["tt3"] = true,
 				["ti3"] = 127855,
+				["tt3"] = true,
 			},
 			["faction"] = "Horde",
 		},
@@ -65,11 +65,14 @@ MasterPlanAG = {
 			["class"] = "PRIEST",
 		},
 	},
+	["IgnoreRewards"] = {
+	},
 	["Argent Dawn"] = {
 		["Shanyt"] = {
-			["class"] = "WARRIOR",
+			["lastCacheTime"] = 1563934654,
 			["summary"] = {
 				["lastOilTime"] = 1563926852,
+				["ti2"] = 122486,
 				["inProgress"] = {
 					[565] = 1563991653,
 					[397] = 1563962842,
@@ -80,34 +83,23 @@ MasterPlanAG = {
 					[267] = 1563941239,
 					[745] = 1563991652,
 					[360] = 1563952616,
-					[689] = 1563941256,
+					[259] = 1563941230,
 					[129] = 1563949028,
 					[539] = 1563991655,
-					[259] = 1563941230,
 					[379] = 1563955628,
+					[689] = 1563941256,
 				},
 				["ti3"] = 127855,
-				["ti2"] = 122486,
-				["tt1"] = 1562989744,
 				["ti1"] = 118531,
+				["tt1"] = 1562989744,
 				["tt3"] = 1563506460,
 				["tt2"] = 1563068099,
 			},
-			["faction"] = "Horde",
-			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1563934654,
-			["curRes"] = 6788,
 			["curOil"] = 76425,
-		},
-	},
-	["Zul'jin"] = {
-		["Tyrann"] = {
+			["cacheSize"] = 1000,
+			["class"] = "WARRIOR",
+			["curRes"] = 6788,
 			["faction"] = "Horde",
-			["class"] = "PRIEST",
-		},
-		["Vancard"] = {
-			["faction"] = "Horde",
-			["class"] = "MAGE",
 		},
 	},
 	["Tanaris"] = {
@@ -118,8 +110,8 @@ MasterPlanAG = {
 	},
 	["Black Dragonflight"] = {
 		["Durlok"] = {
-			["class"] = "DRUID",
 			["faction"] = "Horde",
+			["class"] = "DRUID",
 		},
 	},
 	["Sargeras"] = {
@@ -132,6 +124,14 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 	},
-	["IgnoreRewards"] = {
+	["Zul'jin"] = {
+		["Tyrann"] = {
+			["faction"] = "Horde",
+			["class"] = "PRIEST",
+		},
+		["Vancard"] = {
+			["class"] = "MAGE",
+			["faction"] = "Horde",
+		},
 	},
 }

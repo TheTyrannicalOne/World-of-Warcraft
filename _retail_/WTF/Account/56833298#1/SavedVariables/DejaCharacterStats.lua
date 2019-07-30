@@ -413,8 +413,8 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
@@ -775,12 +775,15 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hidden"] = true,
 			["hideAt"] = 0,
+			["hidden"] = true,
 			["roles"] = {
 				"TANK", -- [1]
 			},
 		}, -- [49]
+		{
+			["statKey"] = "DCS_MOVESPEED",
+		}, -- [50]
 		["uniqueKey"] = "Vancard:Zul'jin:1",
 	},
 	["Shanyt:Argent Dawn:1"] = {
@@ -969,12 +972,15 @@ DCS_ClassSpecDB = {
 		}, -- [48]
 		{
 			["statKey"] = "STAGGER",
-			["hideAt"] = 0,
 			["hidden"] = true,
+			["hideAt"] = 0,
 			["roles"] = {
 				"TANK", -- [1]
 			},
 		}, -- [49]
+		{
+			["statKey"] = "DCS_MOVESPEED",
+		}, -- [50]
 		["uniqueKey"] = "Shanyt:Argent Dawn:1",
 	},
 	["Durlok:Black Dragonflight:3"] = {
@@ -1109,8 +1115,8 @@ DCS_ClassSpecDB = {
 			["roles"] = {
 				"TANK", -- [1]
 			},
-			["hideAt"] = 0,
 			["hidden"] = false,
+			["hideAt"] = 0,
 		}, -- [38]
 		{
 			["statKey"] = "RatingCategory",
@@ -1166,6 +1172,9 @@ DCS_ClassSpecDB = {
 			["hideAt"] = 0,
 			["hidden"] = true,
 		}, -- [49]
+		{
+			["statKey"] = "DCS_MOVESPEED",
+		}, -- [50]
 		["uniqueKey"] = "Durlok:Black Dragonflight:3",
 	},
 }

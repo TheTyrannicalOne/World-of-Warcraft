@@ -49,6 +49,7 @@ local specTemplate = {
     damage = true,
     damageExpiration = 8,
     damageDots = false,
+    damageRange = 0,
 
     throttleRefresh = false,
     maxRefresh = 10,
@@ -327,6 +328,8 @@ local HekiliSpecMixin = {
     RegisterPotion = function( self, potion, data )
         self.potions[ potion ] = data
 
+        data.key = potion
+
         if data.copy then
             if type( data.copy ) == "table" then
                 for _, key in ipairs( data.copy ) do
@@ -389,16 +392,22 @@ local HekiliSpecMixin = {
             end
         end
 
-        if data.item then
-            local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( data.item )
+        local item = data.item
+        if item and type( item ) == 'function' then
+            setfenv( item, state )
+            item = item()
+        end
+
+        if item then
+            local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( item )
 
             a.name = name or ability
             a.link = link or ability
             -- a.texture = texture or "Interface\\ICONS\\Spell_Nature_BloodLust"
 
-            class.itemMap[ data.item ] = ability
+            class.itemMap[ item ] = ability
 
-            Hekili:ContinueOnItemLoad( data.item, function( success )
+            Hekili:ContinueOnItemLoad( item, function( success )
                 if not success then
                     -- Assume the item is not presently in-game.
                     for key, entry in pairs( class.abilities ) do
@@ -415,7 +424,7 @@ local HekiliSpecMixin = {
                     return
                 end
 
-                local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( data.item )
+                local name, link, _, _, _, _, _, _, _, texture = GetItemInfo( item )
 
                 if name then
                     a.name = name
@@ -434,9 +443,19 @@ local HekiliSpecMixin = {
 
                     if not a.unlisted then
                         class.abilityList[ ability ] = "|T" .. a.texture .. ":0|t " .. link
-                        class.itemList[ data.item ] = "|T" .. a.texture .. ":0|t " .. link
+                        class.itemList[ item ] = "|T" .. a.texture .. ":0|t " .. link
 
                         class.abilityByName[ a.name ] = a
+                    end
+
+                    if data.copy then
+                        if type( data.copy ) == 'string' or type( data.copy ) == 'number' then
+                            self.abilities[ data.copy ] = a
+                        elseif type( data.copy ) == 'table' then
+                            for _, key in ipairs( data.copy ) do
+                                self.abilities[ key ] = a
+                            end
+                        end
                     end
 
                     class.abilities[ ability ] = a
@@ -523,11 +542,13 @@ local HekiliSpecMixin = {
 
             if not a.unlisted then class.abilityList[ ability ] = class.abilityList[ ability ] or a.listName or a.name end
 
-            if type( data.copy ) == 'string' or type( data.copy ) == 'number' then
-                self.abilities[ data.copy ] = a
-            elseif type( data.copy ) == 'table' then
-                for _, key in ipairs( data.copy ) do
-                    self.abilities[ key ] = a
+            if data.copy then
+                if type( data.copy ) == 'string' or type( data.copy ) == 'number' then
+                    self.abilities[ data.copy ] = a
+                elseif type( data.copy ) == 'table' then
+                    for _, key in ipairs( data.copy ) do
+                        self.abilities[ key ] = a
+                    end
                 end
             end
         end
@@ -583,12 +604,12 @@ local HekiliSpecMixin = {
     end,
 
 
-    GetSetting = function( info )
+    GetSetting = function( self, info )
         local setting = info[ #info ]
         return Hekili.DB.profile.specs[ self.id ].settings[ setting ]
     end,
 
-    SetSetting = function( info, val )
+    SetSetting = function( self, info, val )
         local setting = info[ #info ]
         Hekili.DB.profile.specs[ self.id ].settings[ setting ] = val
     end,
@@ -605,7 +626,10 @@ local HekiliSpecMixin = {
         
         option.get = option.get or function( info )
             local setting = info[ #info ]
-            return Hekili.DB.profile.specs[ self.id ].settings[ setting ] or value
+            local val = Hekili.DB.profile.specs[ self.id ].settings[ setting ]
+
+            if val ~= nil then return val end
+            return value
         end
 
         option.set = option.set or function( info, val )
@@ -685,11 +709,12 @@ end
 
 function Hekili:NewSpecialization( specID, isRanged )
 
-    local id = specID
+    if not specID or specID < 0 then return end
 
-    if specID > 0 then
-        id, name, _, texture, role, pClass = GetSpecializationInfoByID( specID )
-    end
+    local id, name, _, texture, role, pClass
+    
+    if specID > 0 then id, name, _, texture, role, pClass = GetSpecializationInfoByID( specID )
+    else id = specID end
 
     if not id then
         Hekili:Error( "Unable to generate specialization DB for spec ID #" .. specID .. "." )
@@ -1104,7 +1129,7 @@ all:RegisterAuras( {
         end,
 
         repeat_performance = {
-            id = 304409,
+            id = 304410,
             duration = 30,
             max_stack = 1,
         }
@@ -1152,7 +1177,6 @@ all:RegisterAuras( {
         duration = 15,
         alias = { "ferocity_of_the_frostwolf", "might_of_the_blackrock", "zeal_of_the_burning_blade", "rictus_of_the_laughing_skull" },
         aliasMode = "first",
-        duration = 15,
     },
 
     arcane_pulse = {
@@ -1401,19 +1425,45 @@ all:RegisterAuras( {
 } )
 
 
-all:RegisterPotions( {
-    old_war = {
-        item = 127844,
-        buff = 'old_war'
+all:RegisterPotions( {    
+    -- 8.2
+    potion_of_empowered_proximity = {
+        item = 168529,
+        buff = 'potion_of_empowered_proximity',
+        copy = 'empowered_proximity'
     },
-    deadly_grace = {
-        item = 127843,
-        buff = 'deadly_grace'
+    potion_of_focused_resolve = {
+        item = 168506,
+        buff = 'potion_of_focused_resolve',
+        copy = 'focused_resolve'
     },
-    prolonged_power = {
-        item = 142117,
-        buff = 'prolonged_power'
+    potion_of_unbridled_fury = {
+        item = 169299,
+        buff = 'potion_of_unbridled_fury',
+        copy = 'unbridled_fury'
     },
+    superior_battle_potion_of_agility = {
+        item = 168489,
+        buff = 'superior_battle_potion_of_agility',
+    },
+    superior_battle_potion_of_intellect = {
+        item = 168498,
+        buff = 'superior_battle_potion_of_intellect',
+    },
+    superior_battle_potion_of_stamina = {
+        item = 168499,
+        buff = 'superior_battle_potion_of_stamina',
+    },
+    superior_battle_potion_of_strength = {
+        item = 168500,
+        buff = 'superior_battle_potion_of_strength',
+    },
+    superior_steelskin_potion = {
+        item = 168501,
+        buff = 'superior_steelskin_potion',        
+    },
+    
+    -- 8.0
     battle_potion_of_agility = {
         item = 163223,
         buff = 'battle_potion_of_agility',
@@ -1430,7 +1480,7 @@ all:RegisterPotions( {
         item = 163224,
         buff = 'battle_potion_of_strength',
     },
-    potion_of_bursting_blood = {
+    bursting_blood = {
         item = 152560,
         buff = 'potion_of_bursting_blood',
         copy = "bursting_blood",
@@ -1444,10 +1494,67 @@ all:RegisterPotions( {
         item = 152557,
         buff = 'steelskin_potion',
     },
+
+    -- Legion
+    old_war = {
+        item = 127844,
+        buff = 'old_war'
+    },
+    deadly_grace = {
+        item = 127843,
+        buff = 'deadly_grace'
+    },
+    prolonged_power = {
+        item = 142117,
+        buff = 'prolonged_power'
+    },
 } )
 
 
 all:RegisterAuras( {
+    -- 8.2
+    potion_of_empowered_proximity = {
+        id = 298225,
+        duration = 25,
+        max_stack = 1
+    },
+    potion_of_focused_resolve = {
+        id = 298317,
+        duration = 25,
+        max_stack = 1
+    },
+    potion_of_unbridled_fury = {
+        id = 300714,
+        duration = 60,
+        max_stack = 1
+    },
+    superior_battle_potion_of_agility = {
+        id = 298146,
+        duration = 25,
+        max_stack = 1
+    },
+    superior_battle_potion_of_intellect = {
+        id = 298152,
+        duration = 25,
+        max_stack = 1
+    },
+    superior_battle_potion_of_stamina = {
+        id = 298153,
+        duration = 25,
+        max_stack = 1
+    },
+    superior_battle_potion_of_strength = {
+        id = 298154,
+        duration = 25,
+        max_stack = 1
+    },
+    superior_steelskin_potion = {
+        id = 298155,
+        duration = 25,
+        max_stack = 1
+    },
+
+    -- 8.0
     battle_potion_of_agility = {
         id = 279152,
         duration = 25,
@@ -1915,6 +2022,8 @@ all:RegisterAbility( "azsharas_font_of_power", {
     handler = function ()
         applyBuff( "latent_arcana" )
     end,
+
+    copy = "latent_arcana"
 } )
 
 all:RegisterAura( "latent_arcana", {
@@ -1932,7 +2041,10 @@ all:RegisterAbility( "shiver_venom_relic", {
     item = 168905,
     toggle = "cooldowns",
 
-    usable = function () return debuff.shiver_venom.up end,
+    usable = function ()
+        if debuff.shiver_venom.stack < 5 then return false, "shiver_venom is not at max stacks" end
+        return true
+    end,
 
     handler = function()
         removeDebuff( "target", "shiver_venom" )
@@ -1970,7 +2082,8 @@ all:RegisterAuras( {
     razor_coral = {
         id = 303568,
         duration = 120,
-        max_stack = 10 -- ???
+        max_stack = 10, -- ???
+        copy = "razor_coral_debuff"
     },
 
     razor_coral_crit = {
@@ -1978,6 +2091,15 @@ all:RegisterAuras( {
         duration = 20,
         max_stack = 1,
     }
+} )
+
+
+-- Dribbling Inkpod
+all:RegisterAura( "conductive_ink", {
+    id = 302565,
+    duration = 60,
+    max_stack = 999, -- ???
+    copy = "conductive_ink_debuff"
 } )
 
 
@@ -2065,6 +2187,8 @@ do
 
         item = 167555,
         texture = 2115322,
+        bind = { "cyclotronic_blast", "harmonic_dematerializer" },
+        startsCombat = true,
 
         usable = function() return false, "no supported red punchcard installed" end,
         copy = "inactive_red_punchcard"
@@ -2081,6 +2205,8 @@ do
         item = 167672,
         itemCd = 167555,
         texture = 2115322,
+        bind = { "cyclotronic_blast", "harmonic_dematerializer" },
+        startsCombat = true,
 
         toggle = "cooldowns",
 
@@ -2105,11 +2231,13 @@ do
         key = "pocketsized_computation_device",
         cast = 0,
         cooldown = 15,
-        gcd = "off",
+        gcd = "spell",
 
         item = 167677,
         itemCd = 167555,
         texture = 2115322,
+        bind = { "cyclotronic_blast", "harmonic_dematerializer" },
+        startsCombat = true,
 
         usable = function ()
             return equipped.harmonic_dematerializer
@@ -2120,6 +2248,25 @@ do
         end
     } )
 end
+
+
+-- Shockbiter's Fang
+all:RegisterAbility( "shockbiters_fang", {
+    cast = 0,
+    cooldown = 90,
+    gcd = "off",
+
+    item = 169318,
+    toggle = "cooldowns",
+
+    handler = function () applyBuff( "shockbitten" ) end
+} )
+
+all:RegisterAura( "shockbitten", {
+    id = 303953,
+    duration = 12,
+    max_stack = 1
+} )
 
 
 -- Remote Guidance Device, 169769
@@ -2747,6 +2894,7 @@ all:RegisterAura( "barkspines", {
 } )
 
 
+--[[ Redundant Ancient Knot of Wisdom???
 all:RegisterAbility( "sandscoured_idol", {
     cast = 0,
     cooldown = 60,
@@ -2765,7 +2913,7 @@ all:RegisterAura( "secrets_of_the_sands", {
     id = 278267,
     duration = 20,
     max_stack = 1,
-} )
+} ) ]]
 
 
 all:RegisterAbility( "deployable_vibro_enhancer", {
@@ -3458,12 +3606,17 @@ all:RegisterAbility( "dread_aspirants_badge", {
 } )
 
 
-all:RegisterAbility( "knot_of_ancient_wisdom", {
+all:RegisterGear( "ancient_knot_of_wisdom", 161417, 166793 )
+
+all:RegisterAbility( "ancient_knot_of_wisdom", {
     cast = 0,
     cooldown = 60,
     gcd = "off",
 
-    item = 166793,
+    item = function ()
+        if equipped[161417] then return 161417 end
+        return 166793
+    end,
     toggle = "cooldowns",
 
     handler = function ()
@@ -3498,15 +3651,23 @@ all:RegisterAura( "fury_of_the_forest_lord", {
 } )
 
 
-all:RegisterAbility( "sinister_gladiators_medallion", {
+all:RegisterGear( "notorious_gladiators_medallion", 167377 )
+all:RegisterGear( "sinister_gladiators_medallion", 165055 )
+
+all:RegisterAbility( "gladiators_medallion", {
     cast = 0,
     cooldown = 120,
     gcd = "off",
 
-    item = 165055,
+    item = function ()
+        if equipped.sinister_gladiators_medallion then return 165055 end
+        return 167377
+    end,
     toggle = "cooldowns",
 
-    handler = function() applyBuff( "gladiators_medallion" ) end
+    handler = function() applyBuff( "gladiators_medallion" ) end,
+
+    copy = { "notorious_gladiators_medallion", "sinister_gladiators_medallion" }
 } )
 
 all:RegisterAura( "gladiators_medallion", {
@@ -3516,15 +3677,23 @@ all:RegisterAura( "gladiators_medallion", {
 } )
 
 
-all:RegisterAbility( "sinister_gladiators_emblem", {
+all:RegisterGear( "notorious_gladiators_emblem", 167378 )
+all:RegisterGear( "sinister_gladiators_emblem", 165056 )
+
+all:RegisterAbility( "gladiators_emblem", {
     cast = 0,
     cooldown = 90,
     gcd = "off",
 
-    item = 165056,
+    item = function ()
+        if equipped.sinister_gladiators_emblem then return 165056 end
+        return 167378
+    end,
     toggle = "cooldowns",
 
-    handler = function() applyBuff( "gladiators_emblem" ) end
+    handler = function() applyBuff( "gladiators_emblem" ) end,
+
+    copy = { "notorious_gladiators_emblem", "sinister_gladiators_emblem" }
 } )
 
 all:RegisterAura( "gladiators_emblem", {
@@ -3542,15 +3711,23 @@ all:RegisterAura( "gladiators_insignia", {
 } )
 
 
-all:RegisterAbility( "sinister_gladiators_badge", {
+all:RegisterGear( "sinister_gladiators_badge", 165058 )
+all:RegisterGear( "notorious_gladiators_badge", 167380 )
+
+all:RegisterAbility( "gladiators_badge", {
     cast = 0,
     cooldown = 120,
     gcd = "off",
 
-    item = 165058,
+    item = function ()
+        if equipped.sinister_gladiators_badge then return 165058 end
+        return 167380
+    end,
     toggle = "cooldowns",
 
-    handler = function() applyBuff( "gladiators_badge" ) end
+    handler = function() applyBuff( "gladiators_badge" ) end,
+
+    copy = { "sinister_gladiators_badge", "notorious_gladiators_badge" }
 } )
 
 all:RegisterAura( "gladiators_badge", {
@@ -4092,7 +4269,7 @@ end
 -- For Trinket Settings.
 class.itemSettings = {}
 
-function addItemSettings( key, itemID, options )
+local function addItemSettings( key, itemID, options )
 
     options = options or {}
 
@@ -4502,7 +4679,7 @@ do
                 local buff = GetSpellInfo( buffs )
                 if buff then
                     all:RegisterAura( ns.formatKey( buff ), {
-                        id = i,
+                        id = buff,
                         stat = v.stat,
                         duration = v.duration
                     } )
@@ -7528,6 +7705,32 @@ all:RegisterPowers( {
         triggers = {
             wracking_brilliance = { 272893, 272891 },
         },
+    },
+
+
+    -- 8.2
+    -- Arcane Heart
+    arcane_heart = {
+        id = 303006,
+        triggers = {
+            arcane_heart = { 303211, 303209, 303210 },
+        }
+    },
+    
+    -- Loyal to the End
+    loyal_to_the_end = {
+        id = 303007,
+        triggers = {
+            loyal_to_the_end = { 303250, 303365 },
+        }
+    },
+
+    -- Undulating Tides
+    undulating_tides = {
+        id = 303008,
+        triggers = {
+            undulating_tides = { 303438, 303390 }
+        }
     }
 } )
 

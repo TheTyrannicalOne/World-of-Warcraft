@@ -795,8 +795,6 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
             cooldown = function () return ( pvptalent.sigil_mastery.enabled and 0.75 or 1 ) * 60 end,
             gcd = "spell",
 
-            toggle = "cooldowns",
-
             startsCombat = true,
             texture = 1418288,
 
@@ -958,7 +956,7 @@ if UnitClassBase( 'player' ) == 'DEMONHUNTER' then
         damage = true,
         damageExpiration = 8,
 
-        potion = "steelskin_potion",
+        potion = "superior_steelskin_potion",
 
         package = "Vengeance",
     } )

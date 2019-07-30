@@ -94,7 +94,10 @@ BigWigs:AddSounds("Za'qul, Herald of Ny'alotha", {
 })
 
 BigWigs:AddSounds("Queen Azshara", {
-	[-20480] = "long",
+	[-20480] = {"info","long"},
+	[-20410] = "long",
+	[-20408] = "long",
+	[-20355] = "long",
 	[297371] = "long",
 	[297372] = "long",
 	[297907] = "alarm",
@@ -113,6 +116,7 @@ BigWigs:AddSounds("Queen Azshara", {
 	[299250] = {"alarm","long"},
 	[300074] = "alarm",
 	[300428] = "info",
+	[300478] = "warning",
 	[300492] = "alert",
 	[300519] = "warning",
 	[300620] = "long",

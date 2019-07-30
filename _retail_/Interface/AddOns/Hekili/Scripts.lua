@@ -90,7 +90,7 @@ local function forgetMeNots( str )
       str = format( "%s not ( %s ) %s", str:sub( 1, start - 1 ) or "", substring, str:sub( finish + 1, str:len() ) or "" )
 
       i = i + 1
-      if i >= 100 then self:Debug( "Was unable to convert '!' to 'not' in string [%s].", str ); break end
+      if i >= 100 then Hekili:Debug( "Was unable to convert '!' to 'not' in string [%s].", str ); break end
    end
 
    str = str:gsub( "%s%s", " " )
@@ -105,11 +105,7 @@ local mathBreak = {
     ["="] = true,
     ["&"] = true,
     ["|"] = true,
-    --[[ ["*"] = true,
-    ["/"] = true,
-    ["%"] = true,
-    ["+"] = true,
-    ["-"] = true ]]
+    [","] = true
 }
 
 local function HandleDeprecatedOperators( str, opStr, prefix  )
@@ -133,7 +129,7 @@ local function HandleDeprecatedOperators( str, opStr, prefix  )
                 if char == ")" then
                     -- Grab the full bracketed pair and move on.
                     i = i + left:sub( 1, 1 + leftLen - i ):match( "(%b())$" ):len()
-                elseif mathBreak[ char ] then
+                elseif mathBreak[ char ] or char == "(" then
                     eos = i - 1
                     break
                 end
@@ -163,7 +159,7 @@ local function HandleDeprecatedOperators( str, opStr, prefix  )
 
                 if char == "(" then
                     i = i + right:sub( i ):match("^(%b())" ):len()
-                elseif mathBreak[char] then
+                elseif mathBreak[char] or char == ")" then
                     eos = i - 1
                     break
                 end
@@ -185,6 +181,7 @@ local function HandleDeprecatedOperators( str, opStr, prefix  )
 
     return str
 end
+scripts.HandleDeprecatedOperators = HandleDeprecatedOperators
 
 
 local invalid = "([^a-zA-Z0-9_.[])"
@@ -283,6 +280,7 @@ local function SimToLua( str, modifier )
     str = str:gsub("[(][%s+]", "("):gsub("[%s+][)]", ")")
 
     -- Address equipped.number => equipped[number]
+    str = str:gsub("%.(%d+)%.", "[%1].")
     str = str:gsub("equipped%.(%d+)", "equipped[%1]")
     str = str:gsub("lowest_vuln_within%.(%d+)", "lowest_vuln_within[%1]")
     str = str:gsub("%.in([^a-zA-Z0-9_])", "['in']%1" )
@@ -410,6 +408,7 @@ do
         { "^(debuff%.[a-z0-9_]+)%.ss_buffed",
                                                 "%1.remains" }, -- Assassination
         { "^(dot%.[a-z0-9_]+)%.ss_buffed",      "%1.remains" }, -- Assassination
+        { "^consecration.up",                   "consecration.remains" } -- Prot Paladin
 
     }
 
@@ -822,6 +821,9 @@ local function stripScript( str, thorough )
   -- Remove the 'return ' that was added during conversion.
   str = str:gsub("^return ", "")
 
+  -- Remove min/max/safenum/safebool.
+  str = str:gsub("%Amin ?%(?", " "):gsub("%Amax ?%(?", " "):gsub("%Asafebool ?%(?", " "):gsub("%Asafenum ?%(?", " ")
+
   -- Remove comments and parentheses.
   str = str:gsub("%-%-.-\n", ""):gsub("[()]", "")
 
@@ -832,7 +834,7 @@ local function stripScript( str, thorough )
     -- Collapse whitespace around comparison operators.
     str = str:gsub("[%s-]==[%s-]", "=="):gsub("[%s-]>=[%s-]", ">="):gsub("[%s-]<=[%s-]", "<="):gsub("[%s-]~=[%s-]", "~="):gsub("[%s-]<[%s-]", "<"):gsub("[%s-]>[%s-]", ">")
   else
-    str = str:gsub("[=+]", " "):gsub("[><~]", " "):gsub("[%*//%-%+]", " ")
+    str = str:gsub("[=+]", " "):gsub("[><~]%??", " "):gsub("[%*//%-%+]", " ")
   end
 
   -- Collapse the rest of the whitespace.
@@ -891,6 +893,7 @@ local function GetScriptElements( script )
 
     return e
 end
+scripts.GetScriptElements = GetScriptElements
 
 
 -- newModifiers, key is the name of the element, value is whether to babyproof it or not.
@@ -1002,7 +1005,7 @@ local function ConvertScript( node, hasModifiers, header )
         Error = e,
         Recheck = rc,
         RecheckScript = rs,
-        RecheckError = rce,
+        RecheckError = erc,
         Elements = se,
         Modifiers = {},
         ModElements = {},
