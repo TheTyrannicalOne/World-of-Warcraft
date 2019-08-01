@@ -1,5 +1,5 @@
-﻿----------------------------------------------------------------------
--- 	Leatrix Plus 8.2.04 (25th July 2019, www.leatrix.com)
+----------------------------------------------------------------------
+-- 	Leatrix Plus 8.2.05 (31st July 2019, www.leatrix.com)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.2.04"
+	LeaPlusLC["AddonVer"] = "8.2.05"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -5729,7 +5729,7 @@
 			local prefol = "|cffffffaa{" .. L["right-click to go back"] .. "}"
 
 			-- These categories will not appear in random track selections
-			local randomBannedList = {"Narration"}
+			local randomBannedList = {L["Narration"], L["Cinematics"], "MUS_51_DarkmoonFaire_MerryGoRound_01#34440"}
 
 			-- Create a table for each heading
 			ZoneList = {L["Zones"], L["Dungeons"], L["Various"], L["Random"], L["Search"], L["Movies"]}
@@ -6605,7 +6605,7 @@
 					local rTrack = ZoneList[rCategory][rZone].tracks[random(1, #ZoneList[rCategory][rZone].tracks)]
 					-- Insert track into ListData if it's not a duplicate or on the banned list
 					if rTrack and rTrack ~= "" and strfind(rTrack, "#") and not tContains(ListData, "|Cffffffaa" .. ZoneList[rCategory][rZone].zone .. " |r" .. rTrack) then
-						if not tContains(randomBannedList, L[ZoneList[rCategory][rZone].zone]) then
+						if not tContains(randomBannedList, L[ZoneList[rCategory][rZone].zone]) and not tContains(randomBannedList, rTrack) then
 							tinsert(ListData, "|Cffffffaa" .. ZoneList[rCategory][rZone].zone .. " |r" .. rTrack)
 						end
 					end

@@ -92,9 +92,9 @@ FishingBuddy_Info = {
 			[160927] = 1,
 			[160934] = 2,
 			[152543] = 44,
-			[152544] = 47,
-			[154792] = 1,
 			[154770] = 1,
+			[154792] = 1,
+			[152544] = 47,
 		},
 		[862001] = {
 			[152543] = 2,
@@ -133,8 +133,8 @@ FishingBuddy_Info = {
 	},
 	["KnownZones"] = {
 		[0] = "Port of Zandalar",
-		[863] = "Razorjaw River",
 		[590] = "Galhun's Garrison",
+		[863] = "Razorjaw River",
 		[1355] = "Chitterspine Caverns",
 		[1165] = "Port of Zandalar",
 		[862] = "Port of Zandalar",
@@ -241,11 +241,10 @@ FishingBuddy_Info = {
 			["quality"] = 1,
 			["texture"] = 970814,
 		},
-		[112633] = {
-			["color"] = "ff1eff00",
-			["enUS"] = "Frostdeep Minnow",
-			["quality"] = 2,
-			["texture"] = 630618,
+		[111672] = {
+			["enUS"] = "Enormous Sea Scorpion",
+			["quality"] = 1,
+			["texture"] = 970817,
 		},
 		[154770] = {
 			["color"] = "ff9d9d9d",
@@ -258,10 +257,11 @@ FishingBuddy_Info = {
 			["texture"] = 2057316,
 			["quality"] = 1,
 		},
-		[111651] = {
-			["enUS"] = "Small Fat Sleeper",
-			["quality"] = 1,
-			["texture"] = 970821,
+		[23380] = {
+			["color"] = "ff9d9d9d",
+			["enUS"] = "Broken Power Core",
+			["texture"] = 134096,
+			["quality"] = 0,
 		},
 		[162515] = {
 			["color"] = "ff1eff00",
@@ -269,11 +269,10 @@ FishingBuddy_Info = {
 			["texture"] = 237302,
 			["quality"] = 2,
 		},
-		[23380] = {
-			["color"] = "ff9d9d9d",
-			["enUS"] = "Broken Power Core",
-			["texture"] = 134096,
-			["quality"] = 0,
+		[111589] = {
+			["enUS"] = "Small Crescent Saberfish",
+			["quality"] = 1,
+			["texture"] = 970812,
 		},
 		[154792] = {
 			["color"] = "ff9d9d9d",
@@ -287,20 +286,21 @@ FishingBuddy_Info = {
 			["quality"] = 0,
 			["texture"] = 135531,
 		},
-		[111589] = {
-			["enUS"] = "Small Crescent Saberfish",
+		[111651] = {
+			["enUS"] = "Small Fat Sleeper",
 			["quality"] = 1,
-			["texture"] = 970812,
+			["texture"] = 970821,
 		},
 		[138777] = {
 			["enUS"] = "Drowned Mana",
 			["texture"] = 132852,
 			["quality"] = 1,
 		},
-		[111672] = {
-			["enUS"] = "Enormous Sea Scorpion",
-			["quality"] = 1,
-			["texture"] = 970817,
+		[112633] = {
+			["color"] = "ff1eff00",
+			["enUS"] = "Frostdeep Minnow",
+			["quality"] = 2,
+			["texture"] = 630618,
 		},
 		[154779] = {
 			["color"] = "ff9d9d9d",
